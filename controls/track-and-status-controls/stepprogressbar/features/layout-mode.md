@@ -83,7 +83,7 @@ End Sub
 
 {{endregion}}  
 
-![stepprogressbar-layout 001](images/stepprogressbar-features-layout001.png)
+![WinForms RadStepProgressBar Orientation](images/stepprogressbar-features-layout001.png)
 
 ## Flow Direction
 
@@ -155,7 +155,7 @@ Private Sub CreateHorizontalStepProgressBar_RightToLeft()
 
 {{endregion}}
 
-![stepprogressbar-layout 002](images/stepprogressbar-features-layout002.png)
+![WinForms RadStepProgressBar Horizontal Flow Direction](images/stepprogressbar-features-layout002.png)
 
 The same property is applicable in vertical orientation. 
 
@@ -227,7 +227,7 @@ End Sub
 
 {{endregion}}
 
-![stepprogressbar-layout 003](images/stepprogressbar-features-layout003.png)
+![WinForms RadStepProgressBar Vertical Flow Direction](images/stepprogressbar-features-layout003.png)
 
 ## LayoutMode
 
@@ -237,19 +237,19 @@ Using the __LayoutMode__ property of the RadStepProgressBar, you can control how
 
 In this mode the steps are arranged according to the specified spacing and connection lengths. In case there is not enough space, the spacing is decreased so that all steps remain visible. This is the __default value__ of the __LayoutMode__ property. 
 
-![stepprogressbar-layout 004](images/stepprogressbar-features-layout004.gif)
+![WinForms RadStepProgressBar Auto](images/stepprogressbar-features-layout004.gif)
 
 ### Absolute
 
 In this mode the steps are always arranged according to the specified spacing and connection lengths. In case the available space cannot fit all the steps, the navigation buttons become visible.
 
-![stepprogressbar-layout 005](images/stepprogressbar-features-layout005.gif)
+![WinForms RadStepProgressBar Absolute](images/stepprogressbar-features-layout005.gif)
 
 ### Stretched
 
 In this mode the step spacing is adjusted dynamically to fit at an equal distance all steps in the available space.
 
-![stepprogressbar-layout 006](images/stepprogressbar-features-layout006.gif)
+![WinForms RadStepProgressBar Stretched](images/stepprogressbar-features-layout006.gif)
 
 ## See Also
 

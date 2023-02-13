@@ -14,49 +14,49 @@ This article demonstrates how to populate __RadListControl__ with data at design
 
 >caption Figure 1: RadListDataItem Collection Editor
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-design-time 001](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time001.png)
+![WinForms RadListControl RadListDataItem Collection Editor](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time001.png)
 
 
 You can access it through the *Smart tag >> Edit Items* option:
 
 >caption Figure 2: Smart tag options
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-design-time 002](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time002.png)
+![WinForms RadListControl Smart Tag Options](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time002.png)
 
 Another possibility to open the editor is via the __Items__ collection in the *Properties* Visual Studio section:
 
 >caption Figure 3:  Visual Studio Properties window
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-design-time 003](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time003.png)
+![WinForms RadListControl Visual Studio Properties Window](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time003.png)
 
 You can add two item types:
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-design-time 008](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time008.png)
+![WinForms RadListControl RadListDataItem Collection Editor Item Types](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time008.png)
 
 * __RadListDataItem__ – it represents a logical data item which can display specific text and image.You can customize its look through the *Properties* section on the right side of the item in the *RadListDataItem Collection Editor*.
 
 >caption Figure 4: Sample RadListDataItem
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-design-time 004](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time004.png)
+![WinForms RadListControl Sample RadListDataItem](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time004.png)
 
 Below you can find the properties associated with the __RadListDataItem__:
 
 >caption Figure 5:  RadListDataItem's properties
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-design-time 005](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time005.png)
+![WinForms RadListControl RadListDataItem's properties](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time005.png)
 
 * __DescriptionTextListDataItem__ – similar to the __RadListDataItem__. In addition, it displays some description below the item’s text.
 
 >caption Figure 6:  Sample DescriptionTextListDataItem
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-design-time 006](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time006.png)
+![WinForms RadListControl Sample DescriptionTextListDataItem](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time006.png)
 
 
 You have two additional properties: __DescriptionFont__ and __DescriptionText__ which specifies the font and the text associated with the item’s description.
 
 >caption Figure 7:  DescriptionTextListDataItem's properties
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-design-time 007](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time007.png)
+![WinForms RadListControl DescriptionTextListDataItem's Properties](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time007.png)
 
 # See Also
 

@@ -15,15 +15,15 @@ The PageViewMode.*Stack* supports three types of selection modes which define ho
 
 * *Standard* (default): used by default and implies that the content area is positioned right next to the stack (according to the stack position as well) regardless of the currently selected item.
 
-	![](images/pageview-stackview-customizing-the-selection-mode003.png)
+	![WinForms RadPageView ](images/pageview-stackview-customizing-the-selection-mode003.png)
 
 * *ContentWithSelected*: implies that the content area is positioned with the selected item (before it in the stack direction).
 	
-	![](images/pageview-stackview-customizing-the-selection-mode001.png)
+	![WinForms RadPageView ](images/pageview-stackview-customizing-the-selection-mode001.png)
 
 * *ContentAfterSelected*: The selected item is highlighted and its content is displayed after it according to the stack orientation.
 	
-	![](images/pageview-stackview-customizing-the-selection-mode002.png)
+	![WinForms RadPageView ](images/pageview-stackview-customizing-the-selection-mode002.png)
 
 To set the selection mode you should use the *ItemSelectionMode* property of the **RadPageViewStackElement** as demonstrated in the code snippet below:
 

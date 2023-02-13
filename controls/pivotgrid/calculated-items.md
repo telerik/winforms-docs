@@ -88,7 +88,7 @@ localProvider.ColumnGroupDescriptions.Add(salesPersonGroupDescription)
 
 >caption Figure 1: RadPivotGrid Calculated Item
 
-![pivotgrid-calculated-items 001](images/pivotgrid-calculated-items001.png)
+![WinForms RadPivotGrid Calculated Item](images/pivotgrid-calculated-items001.png)
 
 ## Add Calculated Items at Run-time
 
@@ -181,13 +181,13 @@ Here is the result:
 
 >caption Figure 1: SolveOrder Example 1
 
-![pivotgrid-calculated-items 002](images/pivotgrid-calculated-items002.png)
+![WinForms RadPivotGrid SolveOrder Example 1](images/pivotgrid-calculated-items002.png)
 
 As you can see the intersected cell between the two calculated items has value 500 as the CA calculated item has higher solve order. If we change the solve order of Men Average Sales to a higher value, for example 5, here is how __RadPivotGrid__ will look like:
 
 >caption Figure 2: SolveOrder Example 2
 
-![pivotgrid-calculated-items 003](images/pivotgrid-calculated-items003.png)
+![WinForms RadPivotGrid SolveOrder Example 2](images/pivotgrid-calculated-items003.png)
 
 # See Also
 

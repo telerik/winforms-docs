@@ -404,9 +404,9 @@ Me.radRichTextEditor1.RichTextBoxElement.MentionContext.Templates.Add(template)
 
 {{endregion}}
 
-#### Custom mentions
+#### Custom Mentions
 
-![richtexteditor-features-mentions-custom-provider001](images/richtexteditor-features-mentions-custom-provider001.gif)
+![WinForms RadRichTextEditor Custom Mentions](images/richtexteditor-features-mentions-custom-provider001.gif)
 
 ## Customize the Insert Action
 
@@ -447,7 +447,7 @@ End Class
 
 {{endregion}}
 
-![richtexteditor-features-mentions-custom-provider002](images/richtexteditor-features-mentions-custom-provider002.gif)
+![WinForms RadRichTextEditor Customize Insert Action](images/richtexteditor-features-mentions-custom-provider002.gif)
 
 ## Customize the Filtering
 
@@ -455,7 +455,7 @@ After typing the mention character in the beginning of a span, the drop-down men
 
 The example shows how to implement filtering that matches only the items that start with the content inserted by the customer no matter of their casing.
 
-#### Custom filtering
+#### Custom Filtering
 
 {{source=..\SamplesCS\RichTextEditor\Features\Mentions.cs region=Filtering}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Mentions.vb region=Filtering}}
@@ -503,10 +503,10 @@ End Class
 
 {{endregion}}
 
-![richtexteditor-features-mentions-custom-provider003](images/richtexteditor-features-mentions-custom-provider003.gif)
+![WinForms RadRichTextEditor Custom Filtering](images/richtexteditor-features-mentions-custom-provider003.gif)
 
 ## Using Multiple Mention Providers
 
 Through the **MentionContext**, you can register as many providers as you need and invoke their lists of items through the associated mention character.
 
-![richtexteditor-features-mentions-custom-provider004](images/richtexteditor-features-mentions-custom-provider004.gif)
+![WinForms RadRichTextEditor Multiple Mention Providers](images/richtexteditor-features-mentions-custom-provider004.gif)

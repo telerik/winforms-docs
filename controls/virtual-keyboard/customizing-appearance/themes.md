@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select **ToggleKey** in *Controls Structure* on the left side. The **ToggleKey** in the *Elements* section is also selected.
 
-	![virtual-keyboard-themes 001](images/virtual-keyboard-themes001.png)
+	![WinForms RadVirtualKeyboard Select ToggleKey](images/virtual-keyboard-themes001.png)
 
 2. Expand the **ToggleKey** *Element* and modify the applied **BackColor** property and set the **GradientStyle** to *Solid* for the *ToggleState=On* *Element State*. 
 
-	![virtual-keyboard-themes 002](images/virtual-keyboard-themes002.png)
+	![WinForms RadVirtualKeyboard Customize ToggleKey](images/virtual-keyboard-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

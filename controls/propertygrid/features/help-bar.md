@@ -15,7 +15,7 @@ previous_url: propertygrid-features-helpbar
 
 >caption Figure 1: RadPropertyGrid Description Area
  
-![propertygrid-features-helpbar](images/propertygrid-features-helpbar.png)
+![WinForms RadPropertyGrid Description Area](images/propertygrid-features-helpbar.png)
 
 #### Enabling the Help Bar
 

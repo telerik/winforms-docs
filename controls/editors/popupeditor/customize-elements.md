@@ -36,7 +36,7 @@ radPopupEditor1.ForeColor = ColorTranslator.FromHtml("#008de7")
 
 >caption Figure 1: Customizing the text box Font and ForeColor.
 
-![editors-popupeditor-customize-elements 001](images/editors-popupeditor-customize-elements001.png)
+![WinForms RadPopupEditor Customizing Font and ForeColor](images/editors-popupeditor-customize-elements001.png)
 
 ## Customizing the Arrow Button
 
@@ -65,7 +65,7 @@ radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = Teler
 
 >caption Figure 2: Set Arrow Button BackColor.
 
-![editors-popupeditor-customize-elements 002](images/editors-popupeditor-customize-elements002.png)
+![WinForms RadPopupEditor Arrow Button BackColor](images/editors-popupeditor-customize-elements002.png)
 
 ## Customizing the Popup
 
@@ -95,7 +95,7 @@ End Sub
 
 >caption Figure 3: Change Popup BackColor.
 
-![editors-popupeditor-customize-elements 003](images/editors-popupeditor-customize-elements003.png)
+![WinForms RadPopupEditor Change Popup BackColor](images/editors-popupeditor-customize-elements003.png)
 
 # See Also
 

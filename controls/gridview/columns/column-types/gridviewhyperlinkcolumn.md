@@ -46,7 +46,7 @@ Me.radGridView1.Rows.Add("http://www.wikipedia.com")
 
 {{endregion}} 
 
-![gridview-columns-gridviewhyperlinkcolumn 001](images/gridview-columns-gridviewhyperlinkcolumn001.png)
+![WinForms RadGridView GridViewHyperlinkColumn](images/gridview-columns-gridviewhyperlinkcolumn001.png)
 
 ## Behavior customization
 

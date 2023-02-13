@@ -29,7 +29,7 @@ Me.radButton1.Text = "&radButton1"
 
 {{endregion}} 
 
-![buttons-mnemonics](images/buttons-mnemonics001.png)
+![WinForms RadButtons buttons-mnemonics](images/buttons-mnemonics001.png)
 
 The __UseMnemonic__ property is a boolean property which controls whether the __&__ character is displayed as the symbol itself or whether it is used to designate a mnemonic (visualized as an underscore). Its default value is *true* i.e. mnemonics are used by default.
 

@@ -13,7 +13,7 @@ previous_url: gridview-design-time-support-property-builder
 
 To quickly create and arrange node structure and appearance invoke the Property Builder from the context menu or the [Smart Tag]({%slug winforms/gridview/design-time-support/smart-tag%}). The figure below diagrams the general layout and functions of the Property Builder:
 
-![gridview-design-time-support-property-builder 001](images/gridview-design-time-support-property-builder001.png)
+![WinForms RadGridView Property Builder](images/gridview-design-time-support-property-builder001.png)
 
 ### __Command Bar__
 
@@ -23,7 +23,7 @@ The command bar shows the following Property Builder commands:
 
 * __Save__ and __Load__ will save/load the current GridView layout into XML format. This allows for fine-grained control over which settings you want to include/exclude from the generated xml file. Thus, if you are using multiple grids, you can use the same settings over and over again which saves time. See [Save/Load layout buttons in the Property Grid]({%slug winforms/gridview/save-and-load-layout/load-layout-buttons-in-the-property-grid%}) for more information;
 
-* __New__ gives you the ability to add a custom unbound column or a new template to the GridView. The command will change its visibility based on selection in object tree. It is not visible when RadGridView is selected from the *Object Tree:*<br>![gridview-design-time-support-property-builder 002](images/gridview-design-time-support-property-builder002.png)  ****
+* __New__ gives you the ability to add a custom unbound column or a new template to the GridView. The command will change its visibility based on selection in object tree. It is not visible when RadGridView is selected from the *Object Tree:*<br>![WinForms RadGridView gridview-design-time-support-property-builder 002](images/gridview-design-time-support-property-builder002.png)  ****
 
 * __Delete__ will delete the currently selected item in the *Object Tree*. The command will change its visibility based on selection in object tree. It is not visible when RadGridView is selected from the *Object Tree*.
 

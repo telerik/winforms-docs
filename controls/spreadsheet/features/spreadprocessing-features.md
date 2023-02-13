@@ -18,11 +18,11 @@ Hyperlinks enable quick access to web pages, places in the workbook or email add
 
 >caption Figure 1: Hyperlink option in context menu
 
-![radspreadsheet-features-spreadprocessing-features 001](images/radspreadsheet-features-spreadprocessing-features001.png) 
+![WinForms RadSpreadsheet Hyperlink option in context menu](images/radspreadsheet-features-spreadprocessing-features001.png) 
 
 >caption Figure 2: Hyperlink dialog
 
-![radspreadsheet-features-spreadprocessing-features 002](images/radspreadsheet-features-spreadprocessing-features002.gif) 
+![WinForms RadSpreadsheet Hyperlink dialog](images/radspreadsheet-features-spreadprocessing-features002.gif) 
 
 Additional information how to manipulate hyperlinks is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/hyperlink). 
 
@@ -34,13 +34,13 @@ Additional information how to manipulate hyperlinks is available [here](https://
 
 The image is a kind of a shape which is characterized by having an image source.
 
-![radspreadsheet-features-spreadprocessing-features 003](images/radspreadsheet-features-spreadprocessing-features003.png) 
+![WinForms RadSpreadsheet radspreadsheet-features-spreadprocessing-features 003](images/radspreadsheet-features-spreadprocessing-features003.png) 
 
 You can easily add an image via the **RadSpreadsheetRibbonBar**. It is necessary to select the **Insert** tab and click the **Pictures** button.
 
 >caption Figure 4: Insert image
 
-![radspreadsheet-features-spreadprocessing-features 004](images/radspreadsheet-features-spreadprocessing-features004.png) 
+![WinForms RadSpreadsheet Insert image](images/radspreadsheet-features-spreadprocessing-features004.png) 
 
 
 Additional information how to manipulate images is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images). 

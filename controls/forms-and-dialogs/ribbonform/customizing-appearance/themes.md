@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadRibbonBarCaption__ in *Controls Structure* on the left side under __RadRibbonBar__. Then, select __RadRibbonBarCaption__ in the *Elements* section. Modify the applied *BackColor* property. 
 
-	![forms-and-dialogs-ribbonform-customizing-appearance-themes 001](images/forms-and-dialogs-ribbonform-customizing-appearance-themes001.png)
+	![WinForms RadRibbonForm RibbonBarCaption](images/forms-and-dialogs-ribbonform-customizing-appearance-themes001.png)
 
 1. Select RadRibbonForm in *Controls Structure* on the left side. 
 
-	![forms-and-dialogs-ribbonform-customizing-appearance-themes 002](images/forms-and-dialogs-ribbonform-customizing-appearance-themes002.png)
+	![WinForms RadRibbonForm Controls Structure](images/forms-and-dialogs-ribbonform-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

@@ -16,7 +16,7 @@ It will be useful if you can set the column heading name when the first row is n
 
 >caption Figure 1: Column with custom heading name
 
-![Rad Spreadsheet How To Customize Row and Column Headers 01](images/spreadsheet-how-to-customize-row-and-column-headers001.png)
+![WinForms RadSpreadsheet Column with custom heading name](images/spreadsheet-how-to-customize-row-and-column-headers001.png)
 
 ## Change the Row and Column Headings
 
@@ -106,13 +106,13 @@ The headings of the rows and columns have different states. You can use these st
     * **Normal**: The control is not selected.
     
         >caption Figure 2: SelectAllControl in normal state
-        ![Rad Spreadsheet SelectAllControl - not selected](images/spreadsheet-how-to-customize-row-and-column-headers002.png)
+        ![WinForms RadSpreadsheet SelectAllControl in normal state](images/spreadsheet-how-to-customize-row-and-column-headers002.png)
 
     
     * **Selected**: The control is selected.
     
 >       >caption **Figure 3: SelectAllControl in selected state**
-        ![Rad Spreadsheet SelectAllControl - selected](images/spreadsheet-how-to-customize-row-and-column-headers003.png)
+        ![WinForms RadSpreadsheet SelectAllControl in selected state](images/spreadsheet-how-to-customize-row-and-column-headers003.png)
 
 -->
 

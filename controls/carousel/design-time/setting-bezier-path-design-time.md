@@ -15,13 +15,13 @@ You can set the bezier path for the carousel using the Visual Studio designer.
 
 1. Drag the __RadCarousel__ control in your form. 
 
-2. In Properties, set __CarouselPath__ to __newCarouselBezierPath:__
+2. In Properties, set __CarouselPath__ to __new CarouselBezierPath:__
 
-	![carousel-design-time-setting-bezier-path-design-time 001](images/carousel-design-time-setting-bezier-path-design-time001.png)
+	![WinForms RadCarousel CarouselPath ](images/carousel-design-time-setting-bezier-path-design-time001.png)
 
 3. Drag the four control points and set the bezier as desired:
 
-	![carousel-design-time-setting-bezier-path-design-time 002](images/carousel-design-time-setting-bezier-path-design-time002.png)
+	![WinForms RadCarousel Design Time Bezier Path](images/carousel-design-time-setting-bezier-path-design-time002.png)
 
 >note  __Note__ : You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
 >You can drag the bezier points over the whole designer area, i.e. you are not limited to the form only.

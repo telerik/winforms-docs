@@ -13,7 +13,7 @@ previous_url: treeview-data-binding-load-on-demand-with-crud-operations
 
 If you have a complex hierarchy, which includes business objects of different types, some of them have children and some do not, and you need to visualize it using RadTreeView while keeping the __CRUD__ operations, then this article is for you.
 
-![treeview-data-binding-load-on-demand-with-crud-operations 001](images/treeview-data-binding-load-on-demand-with-crud-operations001.png)
+![WinForms RadTreeView Load On Demand with CRUD operations](images/treeview-data-binding-load-on-demand-with-crud-operations001.png)
 
 In this example, we will use the following scenario: A hierarchy, which has __Teams__, each __Team__ has __TeamMembers__ and __Tasks__, and each __TeamMember__ has his own __Tasks__. Every __Team__, __TeamMember__ and __Task__ have names which will be displayed in the __RadTreeView__.
 
@@ -422,7 +422,7 @@ End Sub
 
 {{endregion}} 
 
-![treeview-data-binding-load-on-demand-with-crud-operations 002](images/treeview-data-binding-load-on-demand-with-crud-operations002.png) 
+![WinForms RadTreeView NodesNeeded](images/treeview-data-binding-load-on-demand-with-crud-operations002.png) 
 
 If you run the application now, you will notice that the nodes are loading their children, however there is something which we do not really like. We know that the __Tasks__ do not have any children, yet, they have expanders in front of them. We can easily correct that by using the __NodeFormatting__ event. In the event handler we simply check if the node’s __Tag__ is a __Task__ and if it is __TeamMember__, whether it has any __Tasks__, and if it is a __Team__, whether it has any __TeamMembers__ or __Tasks__ and hide the expander appropriately.
 

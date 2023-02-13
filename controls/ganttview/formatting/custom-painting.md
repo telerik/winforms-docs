@@ -9,7 +9,7 @@ position: 3
 previous_url: ganttview-formatting-custom-paiting
 ---
 
-# Custom painting
+# Custom Painting
 
 __RadGanttView__ offers several method of customizing the looks of the elements it is displaying. One of these methods is allowing developers to directly draw over the control through its `Graphics` object. To enable this functionality you have to set the  __EnableCustomPainting__ property of the control to __true__ and to subscribe to the __ItemPaint__ event.
         
@@ -59,7 +59,7 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-formatting-custom-paiting 001](images/ganttview-formatting-custom-paiting001.png)
+![WinForms RadGanttView Custom Painting](images/ganttview-formatting-custom-paiting001.png)
 
 Another example demonstrating how to draw a colored rectangle which would be 10 hours in duration and will "start" 18 hours before each summary task.
 
@@ -104,7 +104,7 @@ End Sub
 {{endregion}} 
 
 
-![ganttview-formatting-custom-paiting 002](images/ganttview-formatting-custom-paiting002.png)
+![WinForms RadGanttView Draw Rectangle](images/ganttview-formatting-custom-paiting002.png)
 
 # See Also
 

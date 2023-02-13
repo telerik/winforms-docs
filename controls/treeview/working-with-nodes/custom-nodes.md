@@ -14,7 +14,7 @@ previous_url: treeview-working-with-nodes-custom-nodes
 
 With __RadTreeView__ you can create custom nodes and display them instead of the default ones. This can be done by creating a custom __TreeNodeElement__, which will replace the default one in the __CreateNodeElement__ event handler. This article demonstrates how this approach can be implemented.
 
-![treeview-working-with-nodes-custom-nodes 001](images/treeview-working-with-nodes-custom-nodes001.png)
+![WinForms RadTreeView Custom Nodes](images/treeview-working-with-nodes-custom-nodes001.png)
 
 To create this example you can first prepare a project by following the steps in [this article]({%slug winforms/treeview/data-binding/binding-to-database-data%})
 

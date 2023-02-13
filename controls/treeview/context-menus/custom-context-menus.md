@@ -29,7 +29,7 @@ You can also assign a RadContextMenu instance to an individual node. However, yo
 
 7. Run the project. As you can notice below, when you right click on a RadTreeNode we get the second RadContextMenu instance shown and when we right click just on the RadTreeView, the first RadContextMenu instance is shown.
     
-    ![treeview-design-time-context-menus 001](images/treeview-design-time-context-menus001.png)
+    ![WinForms RadTreeView Custom Context Menus](images/treeview-design-time-context-menus001.png)
 
 
 

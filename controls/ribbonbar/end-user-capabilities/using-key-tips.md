@@ -16,12 +16,12 @@ Key tips allow the user to easily discover the keyboard shortcuts for any item o
 For example, when the user presses the __Alt__ key with the control on this **RadRibbonBar**, the top-level key tips are displayed:
 
 >caption Figure 1: Top-Level Key Tips
-![ribbonbar-end-user-capabilities-using-key-tips 001](images/ribbonbar-end-user-capabilities-using-key-tips001.png)
+![WinForms RadRibbonBar Top-Level Key Tips](images/ribbonbar-end-user-capabilities-using-key-tips001.png)
 
 Furthermore, pressing the __7__ key selects the __Write__ tab and displays the key tips for the elements on that tab:
 
 >caption Figure 2: Text Tab Key Tips
-![ribbonbar-end-user-capabilities-using-key-tips 002](images/ribbonbar-end-user-capabilities-using-key-tips002.png)
+![WinForms RadRibbonBar Text Tab Key Tips](images/ribbonbar-end-user-capabilities-using-key-tips002.png)
 
 ## See Also
 

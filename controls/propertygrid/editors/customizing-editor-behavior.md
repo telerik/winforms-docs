@@ -15,7 +15,7 @@ The appearance and behavior of property grid editors can be changed programmatic
 
 >caption Figure 1: Customize Editor
 
-![propertygrid-editors-customize-editor](images/propertygrid-editors-customize-editor.png)
+![WinForms RadPropertyGrid Customize Editor](images/propertygrid-editors-customize-editor.png)
 
 The following sample demonstrates how to change the default font of __PropertyGridTextBoxEditor__:
 

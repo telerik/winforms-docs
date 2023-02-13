@@ -15,7 +15,7 @@ This article demonstrates how you can implement drag and drop operation between 
 
 Figure 1: The final result.
 
-![dropdown-and-listcontrol-listcontrol-drag-and-drop 001](images/dropdown-and-listcontrol-listcontrol-drag-and-drop001.gif)
+![WinForms RadListControl Drag Drop Bound Mode](images/dropdown-and-listcontrol-listcontrol-drag-and-drop001.gif)
 
 The drag and drop functionality is achieved with the help of four events: __MouseDown__, __MouseMove__, __DragEnter__, __DragDrop__:
 

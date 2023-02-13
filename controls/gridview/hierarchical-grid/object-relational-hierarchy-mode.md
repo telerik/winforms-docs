@@ -13,9 +13,9 @@ previous_url: gridview-hierarchical-grid-object-relational-hierarchy-mode
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Creating Object Relational Hierarchies in RadGridView](http://tv.telerik.com/watch/winforms/creating-object-relational-hierarchies-in-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-object-relational-hierarchy-mode 005](images/gridview-hierarchical-grid-object-relational-hierarchy-mode005.png)|
+|[Creating Object Relational Hierarchies in RadGridView](http://tv.telerik.com/watch/winforms/creating-object-relational-hierarchies-in-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![WinForms RadGridView Relational Hierarchy Mode Tutorial](images/gridview-hierarchical-grid-object-relational-hierarchy-mode005.png)|
 
-## Auto generating hierarchy mode 
+## Auto Generating Hierarchy Mode 
 
 The Object-Relational Hierarchy mode is used to show hierarchy based on a complex `IList` (IEnumarable) object that contains inner `ILits` (IEnumerable) properties.
 
@@ -23,7 +23,7 @@ In order to create an Object-Relational Hierarchy automatically in this scenario
 
 Here is an example with an entity model using the Northwind database:
 
-![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode001.png)
+![WinForms RadGridView Generating Hierarchy Mode](images/gridview-hierarchical-grid-object-relational-hierarchy-mode001.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.cs region=AutoGenerateObjectRelationHierarchyMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.vb region=AutoGenerateObjectRelationHierarchyMode}} 
@@ -51,9 +51,9 @@ End Sub
 {{endregion}} 
 
 
-![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode002.png)
+![WinForms RadGridView Auto Generating Hierarchy Mode](images/gridview-hierarchical-grid-object-relational-hierarchy-mode002.png)
 
-## Manually generating hierarchy mode 
+## Manually Generating Hierarchy Mode 
 
 The Object-Relational hierarchy mode can be setup manually by creating the child `GridViewTemplate` and adding `GridViewRelation` between `GridViewTemplates`. This special relation should contain the name of the property that belongs to the parent object and that returns an `IList` (IEnumerable) of sub-objects. RadGridView uses the name of the property to load the necessary data for the child `GridViewTemplate` when the user expands a parent row.
 
@@ -63,7 +63,7 @@ The Object-Relational hierarchy mode can be setup manually by creating the child
 
 The following example demonstrates how you can manually build an object-relational hierarchy using the "Customers" entity model from the Northwind database:
 
-![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode006.png)
+![WinForms RadGridView Manually Generating Hierarchy Mode](images/gridview-hierarchical-grid-object-relational-hierarchy-mode006.png)
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.cs region=ManualGenerateObjectRelationalMode}} 
 {{source=..\SamplesVB\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.vb region=ManualGenerateObjectRelationalMode}} 
@@ -134,7 +134,7 @@ End Function
 {{endregion}} 
 
 
-![](images/gridview-hierarchical-grid-object-relational-hierarchy-mode004.png)
+![WinForms RadGridView Generating Hierarchy Mode](images/gridview-hierarchical-grid-object-relational-hierarchy-mode004.png)
 
 >important As you can notice, we can perform all data operations on the child templates – grouping, sorting and filtering. RadGridView processes only the amount of data required for a particular data operation (lazy data loading). This provides us with better performance and small memory footprint.
 >
@@ -142,7 +142,7 @@ End Function
 >note Since the R3 2015 SP1 release __RadGridView__ supports CRUD operations for its inner levels. The __AutoUpdateObjectRelationalSource__ defines whether CRUD should be managed by the API or not, by default its value is set to *true* . In case one needs to handle these operations manually the property needs to be set to *false* .
 >
 
-# See Also
+## See Also
 
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 

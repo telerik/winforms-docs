@@ -14,7 +14,7 @@ The __Smart Tag__ of __RadDock__ lets you quickly access common tasks like addin
 
 >caption Figure 1: SmartTag 
  
-![raddock-smart-tag001](images/raddock-smart-tag001.png) 
+![WinForms RadDock Smart Tag](images/raddock-smart-tag001.png) 
 
 * __Common Tasks:__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

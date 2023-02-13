@@ -80,7 +80,7 @@ End Sub
 
 >caption Figure 1: Nodes formated with the above code.
 
-![treeview-formatting-nodes 001](images/treeview-formatting-nodes001.png)
+![WinForms RadTreeView Nodes formated with the above code](images/treeview-formatting-nodes001.png)
 
 >note Please note that you should always provide an 'else' clause for each 'if' clause that you have in the implementation of the NodeFormatting event. Skipping this operation will lead to incorrect images applied to the inappropriate nodes.
 >

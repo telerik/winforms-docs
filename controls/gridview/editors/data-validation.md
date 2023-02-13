@@ -27,7 +27,7 @@ __DataError:__ Fires when an error on the **DataSource** side occurs, e.g. *Cons
 
 >caption Figure 1: Data error.
 
-![gridview-editors-data-validation 001](images/gridview-editors-data-validation001.gif)
+![WinForms RadGridView Data error](images/gridview-editors-data-validation001.gif)
 
 You can handle this case by subscribing to the **DataError** event. In the **GridViewDataErrorEventArgs** you have access to the row/column index and the exception. The **ThrowException** argument controls whether the exception will be thrown or not.
 
@@ -86,7 +86,7 @@ The following properties are controlling the errors visibility:
 
 **RadGridView** also offers the **CloseEditorWhenValidationFails** property which indicates whether the active editor should close when validation process fails.
 
-# See Also
+## See Also
 
 * [API]({%slug winforms/gridview/editors/api%})
 

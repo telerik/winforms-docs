@@ -31,11 +31,11 @@ toolWindow1.AllowedDockState = AllowedDockState.Docked Or AllowedDockState.Float
  
 This automatically will remove the caption buttons that may be responsible for an unwanted state, for example *Closed*. In addition, the unwanted menu items from the context menu will be disabled:
 
-![dock-object-model-allowed-dock-states 001](images/dock-object-model-allowed-dock-states001.png)
+![WinForms RadDock AllowedDockStates](images/dock-object-model-allowed-dock-states001.png)
 
 The following setting will disable the __Floating__ option:
 
-#### Disable the floating dock state.
+#### Disable the floating dock state
 
 {{source=..\SamplesCS\Dock\CreatingRadDock.cs region=notFloating}} 
 {{source=..\SamplesVB\Dock\CreatingRadDock.vb region=notFloating}} 
@@ -52,7 +52,7 @@ toolWindow1.AllowedDockState = Not AllowedDockState.Floating
 {{endregion}} 
 
 
-![dock-object-model-allowed-dock-states 002](images/dock-object-model-allowed-dock-states002.png)
+![WinForms RadDock Disable the Floating Dock State](images/dock-object-model-allowed-dock-states002.png)
 
 # See Also
 

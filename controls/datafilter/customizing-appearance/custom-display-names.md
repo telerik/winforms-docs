@@ -14,7 +14,7 @@ The names behind each of the descriptor items are extracted from the data-bound 
 
 >caption Figure 1: Custom Display Names
 
-![datafilter-customizing-appearance-custom-display-names 001](images/datafilter-customizing-appearance-custom-display-names001.png)
+![WinForms RadDataFilter Custom Display Names](images/datafilter-customizing-appearance-custom-display-names001.png)
 
 #### PropertyDisplayNameNeeded Event
 

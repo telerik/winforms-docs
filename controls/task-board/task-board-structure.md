@@ -12,7 +12,7 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build **RadTaskBoard**.
 
-![task-board-structure 001](images/task-board-structure001.png)
+![WinForms RadTaskBoard Structure](images/task-board-structure001.png)
 
 **RadTaskBoard** is composed of column elements. Each **RadTaskBoardColumnElement** contains a header, task card elements and a button at the bottom for adding more task cards. Every **RadTaskCardElement** contains 9 containers: 3 x 3. This allows adding different elements top-left, top-center, top-right, middle-left, middle-center, middle-right, bottom-left, bottom-center, bottom-right. The RadTaskCardElement.**ElementsCollections** offers a dictionary which Value is **ContentAlignment** allowing you easily to access the **RadItemOwnerCollection** for the respective container.
 
@@ -34,11 +34,11 @@ This article describes the inner structure and organization of the elements whic
 
 Each **RadTaskCardElement** offers accent color, title, description, user info, tags, sub tasks. The sub tasks are displayed in the following format: "Number of Completed Tasks/ Total number of tasks". 
 
-![task-board-structure 003](images/task-board-structure003.png)
+![WinForms RadTaskBoard RadTaskCardElement](images/task-board-structure003.png)
 
 ## Elements Hierarchy
  
-![task-board-structure 002](images/task-board-structure002.png)
+![WinForms RadTaskBoard's Elements Hierarchy](images/task-board-structure002.png)
  
 # See Also
 

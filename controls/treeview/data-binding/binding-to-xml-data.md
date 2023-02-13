@@ -30,7 +30,7 @@ RadTreeView can consume XML data both by directly loading it ([see Serialize/Des
 
 Assuming that "toc.xml" is in the TreeView\DataBinding directory which is relative to the directory of the the executable, the following code can be run from the form __Load__ event handler. A new __DataSet__ object is created and the __DataSet__. __ReadXml()__ method consumes the sample data. The element being shown is the __DisplayMember__ property "Title". The ValueMember property is set to the "id" element and it will be available in the __Value__ property of each RadTreeNode at runtime. The __ParentMember__ and __ChildMember__ properties define the relation between the records in the data source object:
 
-![treeview-data-binding-binding-to-xml-data 001](images/treeview-data-binding-binding-to-xml-data001.png)
+![WinForms RadTreeView Binding to XML Data](images/treeview-data-binding-binding-to-xml-data001.png)
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToXmlData.cs region=toc}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToXmlData.vb region=toc}} 

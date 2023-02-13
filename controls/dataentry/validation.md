@@ -174,9 +174,9 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 {{endregion}} 
 
->caption Figure 1. RadDataEntry is initialized.
+>caption Figure 1: RadDataEntry is initialized.
 
-![dataentry-validation 001](images/dataentry-validation001.png)
+![WinForms RadDataEntry Initialized](images/dataentry-validation001.png)
 
 2\. Set the __ShowValidationPanel__ property to true. This will display the panel below the editors:
             
@@ -336,7 +336,7 @@ End Sub
 
 >caption Figure 2. The Validation panels shows the error message.
 
-![dataentry-validation 002](images/dataentry-validation002.png)
+![WinForms RadDataEntry Validation Panels Shows the Error Message](images/dataentry-validation002.png)
 
 In this tutorial we also used and Error provider to show error icon next to the editors. You can read more about Microsoft Error provider here - [ErrorProvider Class](http://msdn.microsoft.com/en-us/library/system.windows.forms.errorprovider%28v=vs.110%29.aspx)
 

@@ -18,7 +18,7 @@ previous_url: panorama-overview
 {% include cta-panel-overview.html %}
 {% endif %}
  
-![panorama-overview](images/panorama-overview001.gif)
+![WinForms RadPanorama Overview Image](images/panorama-overview001.gif)
 
 Main features of the control are:
 

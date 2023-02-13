@@ -13,7 +13,7 @@ previous_url: listview-features-filtering
 
 __RadListView__ allows filtering operations in all views. To enable filtering operations use the __EnableFiltering__ property of the control: 
 
-#### Enable filtering
+#### Enable Filtering
 
 {{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=EnableFiltering}} 
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=EnableFiltering}} 
@@ -31,7 +31,7 @@ RadListView1.EnableFiltering = True
 
 Once the filtering is enabled, we have to create a new __FilterDescriptor__ and assign its __PropertyName__, __FilterOperator__ and __SearchCriteria__. First, let’s filter the items by their value and look for items starting with *“Local”*.
 
-#### Filter by value
+#### Filter by Value
 
 {{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor}} 
 {{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor}} 
@@ -49,9 +49,9 @@ RadListView1.FilterDescriptors.Add(valueFilter)
 
 {{endregion}} 
 
-|Before filtering|After filtering|
+|Before Filtering|After Filtering|
 |----|----|
-|![listview-features-filtering 001](images/listview-features-filtering001.png)|![listview-features-filtering 003](images/listview-features-filtering003.png)|
+|![WinForms RadListView Before Filtering](images/listview-features-filtering001.png)|![WinForms RadListView After Filtering](images/listview-features-filtering003.png)|
  
 When a column name is specified as __PropertyName__ of the filter descriptor, **RadListView** will filter by the values of the specified column:
 
@@ -75,7 +75,7 @@ RadListView1.FilterDescriptors.Add(typeFilter)
 
 |Before|After|
 |----|----|
-|![listview-features-filtering 002](images/listview-features-filtering002.png)|![listview-features-filtering 004](images/listview-features-filtering004.png)|
+|![WinForms RadListView Before](images/listview-features-filtering002.png)|![WinForms RadListView After](images/listview-features-filtering004.png)|
 
 ## Custom Filtering
 
@@ -125,9 +125,9 @@ Me.RadListView1.ListViewElement.DataView.Filter = AddressOf MyFilter
 
 {{endregion}} 
 
->caption Figure 3: Custom filtering
+>caption Figure 3: Custom Filtering
 
-![listview-features-filtering 005](images/listview-features-filtering005.png)
+![WinForms RadListView Custom Filtering](images/listview-features-filtering005.png)
 
 # See Also
 

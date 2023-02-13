@@ -16,25 +16,25 @@ position: 6
 
 Select RadTreeMap and click the small arrow on the top right position in order to open the Smart Tag.
 
-![treemap-design-time 001](images/treemap-design-time001.png)
+![WinForms RadTreeMap SmartTag](images/treemap-design-time001.png)
 
 In the **RadTreeMap Specific Actions** section, there are options for adding items/groups:
 
 * Edit Items - opens the *TreeMapDataItem Collection Editor* which allows adding tree map items at design time. Specify the **Text** and **Value** for each item. 
 
-![treemap-design-time 002](images/treemap-design-time002.png)
+![WinForms RadTreeMap TreeMapDataItem Collection Editor](images/treemap-design-time002.png)
 
-![treemap-unbound-mode 001](images/treemap-unbound-mode001.png)
+![WinForms RadTreeMap Edit Items](images/treemap-unbound-mode001.png)
 	
 * Edit Groups - opens the *TreeMapDataItemGroup Collection Editor* allows adding tree map groups at design time. 
 
-![treemap-design-time 003](images/treemap-design-time003.png)
+![WinForms RadTreeMap TreeMapDataItemGroup Collection Editor](images/treemap-design-time003.png)
 
 Then, you can click the *Edit Items* option and specify the **Group** for each added item:
 
-![treemap-unbound-mode 002](images/treemap-unbound-mode002.png)
+![WinForms RadTreeMap Edit Items Option](images/treemap-unbound-mode002.png)
 
-![treemap-unbound-mode 003](images/treemap-unbound-mode003.png)
+![WinForms RadTreeMap Specify Group](images/treemap-unbound-mode003.png)
 
 ### Populating with Data at Run Time
  
@@ -125,7 +125,7 @@ Me.radTreeMap1.Items.AddRange(New Telerik.WinControls.UI.TreeMap.TreeMapDataItem
 
 {{endregion}}
 
-![treemap-unbound-mode 004](images/treemap-unbound-mode004.png)
+![WinForms RadTreeMap Unbound Mode Result](images/treemap-unbound-mode004.png)
  
 # See Also
 

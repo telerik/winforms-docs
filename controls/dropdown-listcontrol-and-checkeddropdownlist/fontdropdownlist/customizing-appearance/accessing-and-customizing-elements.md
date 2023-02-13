@@ -21,7 +21,7 @@ You can access and modify the style for the different elements in the editable a
 
 >caption Figure 1: Element hierarchy editor
 
-![editors-fontdropdownlist-accessing-and-customizing-elements 001](images/editors-fontdropdownlist-accessing-and-customizing-elements001.png)
+![WinForms RadFontDropDownList Element Hierarchy Editor](images/editors-fontdropdownlist-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
@@ -29,7 +29,7 @@ You can customize the nested elements at run time as well:
 
 >caption Figure 2: Customize elements
 
-![editors-fontdropdownlist-accessing-and-customizing-elements 002](images/editors-fontdropdownlist-accessing-and-customizing-elements002.png)
+![WinForms RadFontDropDownList Customize Elements](images/editors-fontdropdownlist-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

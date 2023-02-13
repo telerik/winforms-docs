@@ -12,7 +12,7 @@ position: 0
 
 To start recording a video you can press the "Start recording" button or call the **StartRecording** method of **RadWebCam** control.
 
-![webcam-recording-video 001](images/webcam-recording-video001.png)
+![WinForms RadWebcam Recording Video](images/webcam-recording-video001.png)
 
 To enable video recording set the **RecordingFilePath** property of the control. This is the path to the video where the recording will be stored.
 
@@ -60,7 +60,7 @@ You can indicate that the camera control is recording via its **IsRecording** pr
 
 The control allows you to replace the default elapsed date-time format. To do this, set the **VideoRecordingElapsedTimeFormat** property of the **RadWebCam** control.
 
-![webcam-recording-video 002](images/webcam-recording-video002.png)
+![WinForms RadWebcam Elapsed Time](images/webcam-recording-video002.png)
 
 {{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=EllapsedTimeFormat}} 
 {{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=EllapsedTimeFormat}} 

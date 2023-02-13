@@ -19,7 +19,7 @@ Here is an example demonstrating how you can implement a *Save Layout* button ev
 
 Initially the layout looks like this:
 
-![command-bar-save-and-load-layout 001](images/command-bar-save-and-load-layout001.png) 
+![WinForms RadCommandBar command-bar-save-and-load-layout 001](images/command-bar-save-and-load-layout001.png) 
  
 {{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=saveLayout}} 
 {{source=..\SamplesVB\CommandBar\SaveAndLoadLayout.vb region=saveLayout}} 
@@ -57,7 +57,7 @@ End Sub
 {{endregion}} 
  
 
-Now we are going to set some of the items __VisibleInStrip__ properties to *false*![command-bar-save-and-load-layout 002](images/command-bar-save-and-load-layout002.png)
+Now we are going to set some of the items __VisibleInStrip__ properties to *false*![WinForms RadCommandBar command-bar-save-and-load-layout 002](images/command-bar-save-and-load-layout002.png)
 
 The code snippets below demonstrate how you can implement a *Load Layout* button event handler:  
 {{source=..\SamplesCS\CommandBar\SaveAndLoadLayout1.cs region=loadLayout}} 
@@ -95,7 +95,7 @@ End Sub
 
 {{endregion}} 
 
-After loading the layout it will reload the initial settings of the existing items:![command-bar-save-and-load-layout 001](images/command-bar-save-and-load-layout001.png)
+After loading the layout it will reload the initial settings of the existing items:![WinForms RadCommandBar Save Load Layout](images/command-bar-save-and-load-layout001.png)
 
 >important When loading the layout it will only load the settings for the items that were there by the time when the layout was saved. If some of the items (i.e. CommandBarButton, CommandBarToggleButton) were deleted - the layout loading will not recreate them and if some items were added the layout will not effect them either.
 >

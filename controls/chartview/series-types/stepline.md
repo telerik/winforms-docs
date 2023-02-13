@@ -52,7 +52,7 @@ Me.RadChartView1.Series.Add(lineSeries2)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup
-![chartview-series-types-stepline 001](images/chartview-series-types-stepline001.png)
+![WinForms RadChartView Stepline Initial Setup](images/chartview-series-types-stepline001.png)
 
 The essential properties of SteplineSeries are:
 
@@ -65,13 +65,13 @@ The essential properties of SteplineSeries are:
 * __CombineMode:__ А common property for all categorical series, which introduces a mechanism for combining data points that reside in different series but have the same category. The combine mode can be None, __Cluster__, __Stack__ and __Stack100__. In the case of stepline series, __None__ and __Cluster__ mean that the series will be plotted independently of each other, so that they are overlapping. __Stack__ plots the points on top of each other and __Stack100__ presents the values of one series as a percentage of the other series. The combine mode is best described by a picture:
 
 >caption Figure 2: None/Cluster
-![chartview-series-types-stepline 001](images/chartview-series-types-stepline001.png)
+![WinForms RadChartView Stepline None/Cluster](images/chartview-series-types-stepline001.png)
 
 >caption Figure 3: Stack
-![chartview-series-types-stepline 002](images/chartview-series-types-stepline002.png)
+![WinForms RadChartView Stepline Stack](images/chartview-series-types-stepline002.png)
 
 >caption Figure 4: Stack100
-![chartview-series-types-stepline 003](images/chartview-series-types-stepline003.png)
+![WinForms RadChartView Stepline Stack00](images/chartview-series-types-stepline003.png)
 
 # See Also
 

@@ -20,11 +20,11 @@ The example bellow demonstrates how to bind __RadGridView__ to an `ObservableCol
 
 The example creates an `ObservableCollection` of `Person`, initializes the collection and assigns it to the grid's __DataSource__ property. There are also three buttons allowing the user to add, remove and move items from and in the collection. The changes in the collection are automatically reflected by the grid.
 
-![gridview-populating-with-data-binding-to- observable-collection 001](images/gridview-populating-with-data-binding-to- observable-collection001.png)
+![WinForms RadGridView Binding to ObservableCollection](images/gridview-populating-with-data-binding-to- observable-collection001.png)
 
 1\. First place a RadGridView and 3 buttons on a blank form. Name the buttons accordingly:
 
-![gridview-populating-with-data-binding-to- observable-collection 002](images/gridview-populating-with-data-binding-to- observable-collection002.png)
+![WinForms RadGridView Create Structure](images/gridview-populating-with-data-binding-to- observable-collection002.png)
 
 2\. Add the following sample class to the project:
 

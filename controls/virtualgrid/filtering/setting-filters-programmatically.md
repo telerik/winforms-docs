@@ -30,7 +30,7 @@ __FilterDescriptor__'s major properties:
 
 When you add a new descriptor to the collection, the data is automatically filtered according to it.
 
-![virtualgrid-setting-filters-programmatically 001](images/setting-filters-programmatically001.png)
+![WinForms RadVirtualGrid Simple Filter Descriptors](images/setting-filters-programmatically001.png)
 
 #### Using simple filter descriptor 
 
@@ -64,7 +64,7 @@ Me.RadVirtualGrid1.FilterDescriptors.Add(filter)
 To filter a single data field by multiple values, you have to use the __CompositeFilterDescriptor__ object. It contains a collection of filter descriptors objects and the logical operator for that filters.
 
 
-![virtualgrid-setting-filters-programmatically 002](images/setting-filters-programmatically002.png)
+![WinForms RadVirtualGrid Composite Filter Descriptors](images/setting-filters-programmatically002.png)
 
 #### Using CompositeFilterDescriptor
 

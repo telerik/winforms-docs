@@ -10,16 +10,16 @@ position: 1
 
 # Structure
 
->caption Fig.1 RadClock's elements hierarchy
+>caption Figure 1: RadClock's elements hierarchy
 
-![clock-structure 001](images/clock-structure001.png)
+![WinForms RadClock Elements Hierarchy](images/clock-structure001.png)
 
 1. __ArrowElement__: represents the seconds, minutes and hours arrows.
 2. __LightVisualElement__: represents the central dot. 
 
->caption Fig.2 RadClock's structure
+>caption Figure 2: RadClock's structure
 
-![clock-structure 002](images/clock-structure002.png)
+![WinForms RadClock Structure](images/clock-structure002.png)
 
 # See Also
 

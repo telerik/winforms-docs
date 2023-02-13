@@ -18,7 +18,7 @@ Select **RadTrackBar** and click the small arrow on the top right position in or
 
 >caption Figure 1: Smart Tag
 
-![trackbar-design-time 001](images/trackbar-design-time001.png)
+![WinForms RadTrackBar Smart Tag](images/trackbar-design-time001.png)
 
 * __New Theme Manager__: adds a new __RadThemeManager__ component to the form.
             
@@ -36,7 +36,7 @@ Select **RadTrackBar** and click the small arrow on the top right position in or
 
 * __Edit Ranges__: opens the *TrackBarRabge Collection Editor*.
 
-![trackbar-design-time 002](images/trackbar-design-time002.png)
+![WinForms RadTrackBar TrackBarRabge Collection Editor](images/trackbar-design-time002.png)
            
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 

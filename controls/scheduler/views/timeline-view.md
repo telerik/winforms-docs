@@ -19,7 +19,7 @@ The [Timeline View]({%slug winforms/scheduler/views/timeline-view%}) of the sch
 
 >caption Figure 1: RadScheduler in Timeline View
 
-![scheduler-views-timeline-view 001](images/scheduler-views-timeline-view001.gif)
+![WinForms RadScheduler RadScheduler in Timeline View](images/scheduler-views-timeline-view001.gif)
 
 ## Set The Timeline View
 
@@ -264,7 +264,7 @@ viewElement.ViewHeaderHeight = 35
 The following picture demonstrates the result of setting the header sizes and resizing the column with index 1.
 
 >caption Figure 2: Headers Size
-![scheduler-views-timeline-view 002](images/scheduler-views-timeline-view002.png)
+![WinForms RadScheduler Headers Size](images/scheduler-views-timeline-view002.png)
 
 # See Also
 

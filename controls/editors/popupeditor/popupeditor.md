@@ -18,7 +18,7 @@ __RadPopupEditor__ allows you to show any predefined or custom controls in its p
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![editors-popupeditor 001](images/editors-popupeditor001.png)
+![WinForms RadPopupEditor Overview](images/editors-popupeditor001.png)
 
 __Features:__
 

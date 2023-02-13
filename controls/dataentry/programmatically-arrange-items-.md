@@ -173,9 +173,9 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 {{endregion}} 
 
->caption Figure 1. RadDataEntry is initialized.
+>caption Figure 1: RadDataEntry is initialized.
 
-![dataentry-overview-programmatically-arrange-items 001](images/dataentry-overview-programmatically-arrange-items001.png)
+![WinForms RadDataEntry Is Initialized](images/dataentry-overview-programmatically-arrange-items001.png)
 
 2\. To arrange the items we will subscribe to the *ItemInitialized* event of __RadDataEntry__. This event is triggered when an item is initialized, so it is suitable to introduce changes.
 
@@ -223,9 +223,9 @@ End Sub
 
 {{endregion}} 
 
->caption Figure 2. The whole name is now displayed in the first row. 
+>caption Figure 2: The whole name is now displayed in the first row. 
 
-![dataentry-overview-programmatically-arrange-items 002](images/dataentry-overview-programmatically-arrange-items002.png)
+![WinForms RadDataEntry The whole name is now displayed in the first row](images/dataentry-overview-programmatically-arrange-items002.png)
 
 # See Also
 

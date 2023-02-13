@@ -13,7 +13,7 @@ previous_url: dropdown-and-listcontrol-listcontrol-getting-started
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadListControl](http://www.telerik.com/videos/winforms/getting-started-with-radlistcontrol)<br>In this video, you will learn how to bind data to the new RadListControl.|![dropdown-and-listcontrol-listcontrol-getting-started 003](images/dropdown-and-listcontrol-listcontrol-getting-started003.png)|
+|[Getting Started with RadListControl](http://www.telerik.com/videos/winforms/getting-started-with-radlistcontrol)<br>In this video, you will learn how to bind data to the new RadListControl.|![WinForms RadListControl Getting Started Tutorial](images/dropdown-and-listcontrol-listcontrol-getting-started003.png)|
 
 
 This tutorial demonstrates how to manually populate __RadListControl__ and how to react to a user's choice in code.
@@ -30,7 +30,7 @@ This tutorial demonstrates how to manually populate __RadListControl__ and how 
 
 >caption Figure 1: RadListDataItem Collection Editor
 
-![dropdown-and-listcontrol-listcontrol-getting-started 001](images/dropdown-and-listcontrol-listcontrol-getting-started001.png)
+![WinForms RadListControl RadListDataItem Collection Editor](images/dropdown-and-listcontrol-listcontrol-getting-started001.png)
 
 6\. Add five more ListItems to the RadListControl. Set their __Text__ properties to "RadDock", "RadMenu", "RadRibbonBar", "RadGridView", and "RadPageView".
 
@@ -68,7 +68,7 @@ End Sub
 
 11\. Press __F5__ to run the project. Select an item in the list box and note the value of the label.
 
-![dropdown-and-listcontrol-listcontrol-getting-started 002](images/dropdown-and-listcontrol-listcontrol-getting-started002.png)
+![WinForms RadListControl Selection Event](images/dropdown-and-listcontrol-listcontrol-getting-started002.png)
 
 # See Also
 

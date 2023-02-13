@@ -14,7 +14,7 @@ previous_url: scheduler-appointments-and-dialogs-recurrence-rule-walkthrough
 This example will create a single appointment, then define a recurrence rule that occurs every two hours for ten occurrences. In the example you will change the background and status for a subset of appointments that occur after 10AM.
 
 >caption Figure 1: Recurring Appointment 
-![scheduler-appointments-and-dialogs-recurrence-rule-walkthrough 001](images/scheduler-appointments-and-dialogs-recurrence-rule-walkthrough001.png)
+![WinForms RadScheduler Recurring Appointment](images/scheduler-appointments-and-dialogs-recurrence-rule-walkthrough001.png)
 
 1\. In a new application, add a RadScheduler and two RadListControls to the form. Place the RadScheduler on the left half of the form and the two RadListControls on the right half of the form, one above the other. Name the  first list box "lcAll" and the second "lcAfter10".
             

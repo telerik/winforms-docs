@@ -68,7 +68,7 @@ Me.Controls.Add(radChart)
             
 >caption 
 
-![chart-advanced-topics-localization-example-using-local-resources-implicit-expression 001](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression001.png)
+![WinForms RadChart New Resource Entry](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression001.png)
 
 5\. Set the radChart.ChartTitle.TextBlock.Text to the RadChart1ChartTitleTextBlockText key: 
           
@@ -96,7 +96,7 @@ radChart.ChartTitle.TextBlock.Text = Resource.RadChart1ChartTitleTextBlockText
             
 >caption 
 
-![chart-advanced-topics-localization-example-using-local-resources-implicit-expression 002](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression002.png)
+![WinForms RadChart New Resource Value](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression002.png)
 
 9\. Run the application. The chart title should still be "Sales". Stop the application. 
 		
@@ -124,7 +124,7 @@ Thread.CurrentThread.CurrentUICulture = New CultureInfo("fr-FR")
             
 >caption 
 
-![chart-advanced-topics-localization-example-using-local-resources-implicit-expression 003](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression003.png)
+![WinForms RadChart Show Custom Resource Entry](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression003.png)
 
 12\. Stop the application. 
 		
@@ -170,13 +170,13 @@ chartSeries.Items(2).Label.TextBlock.Text = Resource.RadChart1Series1Element3Lab
             
 >caption 
 
-![chart-advanced-topics-localization-example-using-local-resources-implicit-expression 004](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression004.png)
+![WinForms RadChart Add Custom Strings in Resource File](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression004.png)
 
 16\. Copy these items to the Resource.fr-FR.resx file and provide the translated values as shown in the screen shot below.  You can delete the old entries and copy and paste from Resource.resx.
           
 >caption 
 
-![chart-advanced-topics-localization-example-using-local-resources-implicit-expression 005](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression005.png)
+![WinForms RadChart Add Custom Strings Value in Resource File](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression005.png)
 
 >caution If you copy and paste, the designer may rename resource entries by appending a number.  You may need to rename these back so they match the values of the other resource file.
 >
@@ -185,4 +185,4 @@ chartSeries.Items(2).Label.TextBlock.Text = Resource.RadChart1Series1Element3Lab
           
 >caption 
 
-![chart-advanced-topics-localization-example-using-local-resources-implicit-expression 006](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression006.png)
+![WinForms RadChart Apply Custom Localization Strings](images/chart-advanced-topics-localization-example-using-local-resources-implicit-expression006.png)

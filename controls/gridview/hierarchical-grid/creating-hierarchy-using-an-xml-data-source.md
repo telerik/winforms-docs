@@ -9,11 +9,11 @@ position: 4
 previous_url: gridview-hirarchical-grid-creating-hierarchy-using-an-xml-data-source
 ---
 
-# Creating hierarchy using an XML data source
+# Creating Hierarchy Using an XML Data Source
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![gridview-hierarchical-grid-binding-to-hierarchical-data 001](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)|
+|[RadGridView for WinForms Hierarchy Overview](http://tv.telerik.com/watch/winforms/radgrid/radgridview-winforms-hierarchy-overview)<br>In this video you will learn the various ways you can display hierarchical data in a RadGridView. (Runtime: 12:13)|![WinForms RadGridView Hierarchy Using an XML Data Source Tutorial](images/gridview-hierarchical-grid-binding-to-hierarchical-data001.png)|
 
 Please refer to this [topic]({%slug winforms/gridview/populating-with-data/bind-to-xml%}) before proceeding to this article.
 
@@ -157,7 +157,8 @@ Private Sub CreatingHierarchyUsingXmlDataSource_Load(ByVal sender As System.Obje
 
 	
 {{endregion}} 
-# See Also
+
+## See Also
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 
 * [Binding to Hierarchical Data Programmatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})

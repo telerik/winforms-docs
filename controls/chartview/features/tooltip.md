@@ -116,7 +116,7 @@ radChartView1.ShowToolTip = True
 {{endregion}} 
 
 >caption Figure 1: ToolTip
-![chartview-features-tooltips 001](images/chartview-features-tooltips001.png)
+![WinForms RadChartView ToolTip](images/chartview-features-tooltips001.png)
 
 The __ChartTooltipController__ also exposes a tooltip event. The event handler is a suitable place for changing the precalculated text.
 
@@ -164,7 +164,7 @@ End Sub
 {{endregion}}
 
 >caption Figure 2: Modified ToolTip
-![chartview-features-tooltips 002](images/chartview-features-tooltips002.png)
+![WinForms RadChartView Modified ToolTip](images/chartview-features-tooltips002.png)
 
 # See Also
 

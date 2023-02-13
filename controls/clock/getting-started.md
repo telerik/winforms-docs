@@ -36,13 +36,13 @@ Me.Controls.Add(clock)
 
 The control has three important properties:
 
-* __Value__ - used to get or set the value of the control
+* __Value__: Used to get or set the value of the control
             
 
-* __ShowSystemTime__ - indicated whether the control will display the system time
+* __ShowSystemTime__: Indicated whether the control will display the system time
             
 
-* __Offset__ - allows you to set time offset - useful to display different time zones
+* __Offset__: Allows you to set time offset - useful to display different time zones
             
 
 Now let's create a simple application. 
@@ -74,12 +74,12 @@ tokyoClock.Offset = New TimeSpan(-6, 0, 0)
 
 Here is the result:
 
-![clock-getting-started 001](images/clock-getting-started001.png)
+![WinForms RadClock Getting Started Example](images/clock-getting-started001.png)
 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadTimePicker and RadClock for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>In this video, we are going to demonstrate the new RadTimePicker and RadClock controls as well as several properties you should be aware of.|![clock-getting-started 002](images/clock-getting-started002.png)|
+|[WinForms RadClock Getting Started with RadTimePicker and RadClock for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>In this video, we are going to demonstrate the new RadTimePicker and RadClock controls as well as several properties you should be aware of.|![WinForms RadClock clock-getting-started 002](images/clock-getting-started002.png)|
 
 # See Also
 

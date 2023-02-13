@@ -25,7 +25,7 @@ Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways o
 1. In the scheduler surface, select the __start time__ when you want the appointment to occur.
 
 1. Double-click on the time and an “Edit Appointment Dialog” will appear. 
-    ![scheduler-end-user-functionality-adding-appointments 001](images/scheduler-end-user-functionality-adding-appointments001.png)
+    ![WinForms RadScheduler Edit Appointment Dialog](images/scheduler-end-user-functionality-adding-appointments001.png)
 
 1. In the dialog the end user can do the following:
 
@@ -50,13 +50,13 @@ Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways o
     - Enter or change the __Description__
 
     - To create a recurring appointment, press the Recurrence button and the "Edit Recurrence Dialog" will appear.
-       ![scheduler-end-user-functionality-adding-appointments 002](images/scheduler-end-user-functionality-adding-appointments002.png)
+       ![WinForms RadScheduler scheduler-end-user-functionality-adding-appointments 002](images/scheduler-end-user-functionality-adding-appointments002.png)
 
     - In the __recurrence dialog__ you can do the following:
 
     - Specify appointment hours and duration
      
-	![scheduler-end-user-functionality-adding-appointments 003](images/scheduler-end-user-functionality-adding-appointments003.png)
+	![WinForms RadScheduler Specify appointment hours and duration](images/scheduler-end-user-functionality-adding-appointments003.png)
 
     	- Specify how often the appointment recurs. Recurrence can be Daily, Weekly, Monthly, or Yearly.
 
@@ -64,7 +64,7 @@ Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways o
 
     	- Specify when the recurrence ends
     	
-        ![scheduler-end-user-functionality-adding-appointments 004](images/scheduler-end-user-functionality-adding-appointments004.png)
+        ![WinForms RadScheduler Specify when the recurrence ends](images/scheduler-end-user-functionality-adding-appointments004.png)
 
     - When you are ready press the Ok button to accept the changes or press the Cancel button to cancel them.
 
@@ -72,7 +72,7 @@ Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways o
 
 #### EditAppointmentDialog with multiple resources
 
-![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler Edit Dialog](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
 ## Adding an Appointment by Using the Context Menu
 
@@ -80,13 +80,13 @@ Much like Microsoft Outlook, __RadScheduler__ for WinForms offers several ways o
 
 1. Right-click on the selection to invoke the context menu. Select the desired option.
 
-![scheduler-end-user-functionality-adding-appointments 006](images/scheduler-end-user-functionality-adding-appointments006.png)
+![WinForms RadScheduler Context Menu](images/scheduler-end-user-functionality-adding-appointments006.png)
 
 ## Adding an Appointment through Inline Editors
 
 The __RadScheduler__ supports inline editors. Their purpose is to create an appointment without using the EditAppointmentDialog form. When the user selects a cell or sequence of cells and start typing in them the __RadScheduler__ creates a temp appointment in the active view. This appointment will be added to __RadScheduler__ if the user presses button “Enter” or the active editor looses its focus.
 
-![scheduler-end-user-functionality-adding-appoingments 005](images/scheduler-end-user-functionality-adding-appoingments005.png)
+![WinForms RadScheduler Inline Editors](images/scheduler-end-user-functionality-adding-appoingments005.png)
 
 ## Logical View
 

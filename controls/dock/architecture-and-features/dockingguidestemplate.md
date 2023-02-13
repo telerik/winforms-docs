@@ -15,19 +15,19 @@ __RadDock__ comes with four predefined docking guides templates:
 
 * __Visual Studio 2008__ 
 
-![dock-architecture-and-features-docking-guides-template 001](images/dock-architecture-and-features-docking-guides-template001.png)
+![WinForms RadDock DockingGuidesTemplate VS 2008](images/dock-architecture-and-features-docking-guides-template001.png)
 
 * __Visual Studio 2010__ 
 
-![dock-architecture-and-features-docking-guides-template 002](images/dock-architecture-and-features-docking-guides-template002.png)
+![WinForms RadDock DockingGuidesTemplate VS 2010](images/dock-architecture-and-features-docking-guides-template002.png)
 
 * __Control Default__
 
-![dock-architecture-and-features-docking-guides-template 016](images/dock-architecture-and-features-docking-guides-template016.png)
+![WinForms RadDock DockingGuidesTemplate VS 2008 Control Default](images/dock-architecture-and-features-docking-guides-template016.png)
 
 * __Office2010__
 
-![dock-architecture-and-features-docking-guides-template 017](images/dock-architecture-and-features-docking-guides-template017.png)
+![WinForms RadDock DockingGuidesTemplate Office 2010](images/dock-architecture-and-features-docking-guides-template017.png)
 
 By default, __RadDock__ uses the VS2010 template. In order to use the VS2008 template, you can set it as shown below: 
 
@@ -54,9 +54,9 @@ For our custom **DockingGuidesTemplate** we will use the following images (used 
 
 ||||||
 |----|----|----|----|----|
-| __Left__ ![dock-architecture-and-features-docking-guides-template 003](images/dock-architecture-and-features-docking-guides-template003.png)| __Top__ ![dock-architecture-and-features-docking-guides-template 004](images/dock-architecture-and-features-docking-guides-template004.png)| __Right__ ![dock-architecture-and-features-docking-guides-template 005](images/dock-architecture-and-features-docking-guides-template005.png)| __Bottom__ ![dock-architecture-and-features-docking-guides-template 006](images/dock-architecture-and-features-docking-guides-template006.png)| __Fill__ ![dock-architecture-and-features-docking-guides-template 007](images/dock-architecture-and-features-docking-guides-template007.png)|
-| __Left Hot__ ![dock-architecture-and-features-docking-guides-template 008](images/dock-architecture-and-features-docking-guides-template008.png)| __Top Hot__ ![dock-architecture-and-features-docking-guides-template 009](images/dock-architecture-and-features-docking-guides-template009.png)| __Right Hot__ ![dock-architecture-and-features-docking-guides-template 011](images/dock-architecture-and-features-docking-guides-template011.png)| __Bottom Hot__ ![dock-architecture-and-features-docking-guides-template 012](images/dock-architecture-and-features-docking-guides-template012.png)| __Fill Hot__ ![dock-architecture-and-features-docking-guides-template 013](images/dock-architecture-and-features-docking-guides-template013.png)|
-| __Center Background__ ![dock-architecture-and-features-docking-guides-template 014](images/dock-architecture-and-features-docking-guides-template014.png)|||||
+| __Left__ ![WinForms RadDock Custom Template Left](images/dock-architecture-and-features-docking-guides-template003.png)| __Top__ ![WinForms RadDock Custom Template Top](images/dock-architecture-and-features-docking-guides-template004.png)| __Right__ ![WinForms RadDock Custom Template Right](images/dock-architecture-and-features-docking-guides-template005.png)| __Bottom__ ![WinForms RadDock Custom Template Bottom](images/dock-architecture-and-features-docking-guides-template006.png)| __Fill__ ![WinForms RadDock Custom Template Fill](images/dock-architecture-and-features-docking-guides-template007.png)|
+| __Left Hot__ ![WinForms RadDock Custom Template Left Hot](images/dock-architecture-and-features-docking-guides-template008.png)| __Top Hot__ ![WinForms RadDock Custom Template Top Hot](images/dock-architecture-and-features-docking-guides-template009.png)| __Right Hot__ ![WinForms RadDock Custom Template Right Hot](images/dock-architecture-and-features-docking-guides-template011.png)| __Bottom Hot__ ![WinForms RadDock Bottom Hot](images/dock-architecture-and-features-docking-guides-template012.png)| __Fill Hot__ ![WinForms RadDock Custom Template Fill Hot](images/dock-architecture-and-features-docking-guides-template013.png)|
+| __Center Background__ ![WinForms RadDock Custom Template Center Background](images/dock-architecture-and-features-docking-guides-template014.png)|||||
 
 We should first create a **DockingGuidesTemplate** object and then set the images and their locations on the center background image. **RadDock** will define its hot mouse areas on the **CenterBackground** image depending on the images' locations that we set. The left, top, right and bottom images are reused for the outer guides (outside the center "compass"): 
 
@@ -128,7 +128,7 @@ End Sub
 
 As you can see in the code snippet, we are setting the __DockingHintBackColor__ and __DockingHintBorderColor__ properties which determine the colors of the docking hint area. The result is shown on the figure below:
 
-![dock-architecture-and-features-docking-guides-template 015](images/dock-architecture-and-features-docking-guides-template015.png)
+![WinForms RadDock DockingHintBackColor and DockingHintBorderColor](images/dock-architecture-and-features-docking-guides-template015.png)
 
 # See Also
 

@@ -14,7 +14,7 @@ This article demonstrates a sample approach how to create and replace the defaul
 
 >caption Figure 1: Custom track bar editor
 
-![listview-editors-custom-editors 001](images/listview-editors-custom-editors001.png)
+![WinForms RadListView Custom track bar editor](images/listview-editors-custom-editors001.png)
 
 #### Custom editor
 

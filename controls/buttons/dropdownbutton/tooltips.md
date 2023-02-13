@@ -30,7 +30,7 @@ Me.radDropDownButton1.DropDownButtonElement.ToolTipText = "Click me"
 
 >note In order to assign different tooltips for the action part and the arrow button, you must specify the __ToolTipText__ property of the DropDownButtonElement.__ActionButton__ or DropDownButtonElement.__ArrowButton__ element.
 
-![buttons-dropdownbutton-tooltips 001](images/buttons-dropdownbutton-tooltips001.gif)
+![WinForms RadButtons buttons-dropdownbutton-tooltips 001](images/buttons-dropdownbutton-tooltips001.gif)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
@@ -68,7 +68,7 @@ End Sub
 
 {{endregion}} 
 
-![buttons-dropdownbutton-tooltips 002](images/buttons-dropdownbutton-tooltips002.gif)
+![WinForms RadButtons buttons-dropdownbutton-tooltips 002](images/buttons-dropdownbutton-tooltips002.gif)
 
 >note The __ToolTipTextNeeded__ event has higher priority and overrides the tool tips set in  the __ToolTipText__ property.
 

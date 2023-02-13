@@ -20,7 +20,7 @@ Below you will find an example on how to implement a custom editor and use it wi
 
 In this example we will implement an editor, showing a US state name with text and its abbreviation in a drop down next to the text.
 
-![treeview-editing-custom-editors 001](images/treeview-editing-custom-editors001.png)
+![WinForms RadTreeView Custom Editors](images/treeview-editing-custom-editors001.png)
 
 Our editor and its element will derive from __BaseTextBoxEditor__ and __BaseTextBoxEditorElement__ respectively.
         

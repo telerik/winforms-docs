@@ -12,7 +12,7 @@ position: 1
 
 The example bellow demonstrates how one can use __RadVirtualGrid__ with a list which contains large amount of data. The example shows how you can use the control events to add or remove rows as well.
 
-![virtualgrid-getting-started001](images/virtualgrid-getting-started001.png)
+![WinForms RadVirtualGrid Getting Started](images/virtualgrid-getting-started001.png)
 
 >note In order to use __RadVirtualGrid__ you should add reference to the __Telerik.WinControls.GridView__ assembly.
 >

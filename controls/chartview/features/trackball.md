@@ -122,7 +122,7 @@ RadChartView1.ShowTrackBall = True
 {{endregion}} 
 
 >caption Figure 1: Trackball
-![chartview-features-trackball 001](images/chartview-features-trackball001.png)
+![WinForms RadChartView Trackball](images/chartview-features-trackball001.png)
 
 ## Customizing the Trackball
 
@@ -171,7 +171,7 @@ RadChartView1.ShowTrackBall = True
 
 >caption Figure 2: Customizing the Trackball
 
-![chartview-features-trackball 002](images/chartview-features-trackball002.png)
+![WinForms RadChartView Customizing the Trackball](images/chartview-features-trackball002.png)
 
 
 # See Also

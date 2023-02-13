@@ -19,15 +19,15 @@ This help article will demonstrate a step by step tutorial how to customize the 
 1. Load a desired theme from the just exported files by selecting *File >> Open Package*
 
 1. Navigate to __RadRibbonBar__ in `Controls Structure` on the left side. Then, expand to and select __RibbonTabStripElement__.
-    ![radribbonbar-customizing-appearance-themes 001](images/radribbonbar-customizing-appearance-themes001.png)
+    ![WinForms RadRibbonBar Controls Structure](images/radribbonbar-customizing-appearance-themes001.png)
 
 1. Modify the applied fill repository item.
-    ![radribbonbar-customizing-appearance-themes 002](images/radribbonbar-customizing-appearance-themes002.png)
+    ![WinForms RadRibbonBar Fill Repository](images/radribbonbar-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 
 1. Now, you can apply your custom theme to __RadRibbonBar__ by using the approach demonstrated in the following link: [Using custom themes]({%slug winforms/themes/using-custom-themes%})
-    ![radribbonbar-customizing-appearance-themes 004](images/radribbonbar-customizing-appearance-themes004.png)
+    ![WinForms RadRibbonBar Custom Theme](images/radribbonbar-customizing-appearance-themes004.png)
 
 # See Also
 

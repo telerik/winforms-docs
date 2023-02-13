@@ -13,7 +13,7 @@ previous_url: ganttview-designtime-smart-tag
 
 The Smart Tag for __RadGanttView__ lets you quickly access common tasks involved with customizing __RadGanttView__ elements, data binding and customizing its appearance through themes.
         
-![ganttview-designtime-smart-tag 001](images/ganttview-designtime-smart-tag001.png)
+![WinForms RadGanttView Smart Tag](images/ganttview-designtime-smart-tag001.png)
 
 * __New Theme Manager:__ Adds a new RadThemeManager component to the form.
             

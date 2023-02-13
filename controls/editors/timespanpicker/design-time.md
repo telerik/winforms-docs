@@ -11,7 +11,7 @@ position: 2
 # Smart Tag
 
 >caption Figure 1: RadTimeSpanPicker smart tag.
-![radtimespanpicker-design-time001](images/radtimespanpicker-design-time001.png)
+![WinForms RadTimeSpanPicker Smart Tag](images/radtimespanpicker-design-time001.png)
 
 
 * __Common Tasks__

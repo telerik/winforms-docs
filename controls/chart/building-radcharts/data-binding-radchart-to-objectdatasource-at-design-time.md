@@ -22,22 +22,22 @@ Use the Data Source Configuration Wizard to bind [ObjectDataSource](http://msdn2
 
 	>caption 
 
-	![chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time 001](images/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time001.png)
+	![WinForms RadChart Smart Tag](images/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time001.png)
 
 1. From the "Choose a data source type" page of the wizard select "Object" and click "OK". 
 
 
 	>caption 
 
-	![chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time 002](images/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time002.png)
+	![WinForms RadChart Choose a Data Source Type](images/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time002.png)
 
 1. From the "Choose a Business Object" page of the wizard, select your business object from the drop down list.  Click Next. 
 
 
 	>caption 
 
-	![chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time 003](images/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time003.png)
+	![WinForms RadChart Choose a Business Object](images/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time003.png)
 
 1. On the "Define data methods" page choose the select method from the drop down list.  Click Finish.  A new [ObjectDataSource](http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.aspx) component will be visible on the page and the RadChart __DataSource__ property will point to it. 
 
-	![chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time 004](images/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time004.png)
+	![WinForms RadChart Define Data Methods](images/chart-building-radcharts-data-binding-radchart-data-binding-radchart-to-objectdatasource-at-design-time004.png)

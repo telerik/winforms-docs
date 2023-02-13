@@ -36,7 +36,7 @@ radLayoutControl1.ContainerElement.PreviewRectangleStroke = ColorTranslator.From
 {{endregion}} 
 
 >caption Figure 1:Changed Fill and Stroke
-![layoutcontrol-customize-appearance 001](images/layoutcontrol-customize-appearance001.gif)
+![WinForms RadLayoutControl Changed Fill and Stroke](images/layoutcontrol-customize-appearance001.gif)
 
 ## Customizing Items
 

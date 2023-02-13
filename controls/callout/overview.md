@@ -13,7 +13,7 @@ CTAControlName: Callout
 
 **RadCallout** is like a tool tip with an arrow that can be used to display additional information, warnings, hints, or to highlight relevant data. The appearance of the control can be fully customized to satisfy the needs of your scenarios. RadCallout's form is based on our [ShapedForm]({%slug winforms/forms-and-dialogs/shapedform%}), which allows users to define different shapes. 
 
-![winforms/callout-overview 001](images/callout-overview001.png) 
+![WinForms RadCallout Overview](images/callout-overview001.png) 
 
 
 ## Key Features

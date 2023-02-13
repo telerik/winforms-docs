@@ -15,7 +15,7 @@ __RadPivotFieldList__ is a control which provides functionality similar to the P
 
 >caption Figure 1: RadPivotFieldList
 
-![pivotgrid-radpivotfieldlist 001](images/pivotgrid-radpivotfieldlist001.png)
+![WinForms RadPivotGrid RadPivotFieldList Overview](images/pivotgrid-radpivotfieldlist001.png)
 
 ## Associating with RadPivotGrid
 
@@ -31,7 +31,7 @@ By using the drop-down menu of the items in the __Value__s list, you can modify 
 
 >caption Figure 2: Value Options Dialog
 
-![pivotgrid-radpivotfieldlist 002](images/pivotgrid-radpivotfieldlist002.png)
+![WinForms RadPivotGrid Value Options Dialog](images/pivotgrid-radpivotfieldlist002.png)
 
 ## Label Options
 
@@ -39,7 +39,7 @@ By using the drop-down menu of the items in the __Row/Column Labels__ lists, you
 
 >caption Figure 3: Label Options Dialog
 
-![pivotgrid-radpivotfieldlist 003](images/pivotgrid-radpivotfieldlist003.png)
+![WinForms RadPivotGrid Label Options Dialog](images/pivotgrid-radpivotfieldlist003.png)
 
 # See Also
 

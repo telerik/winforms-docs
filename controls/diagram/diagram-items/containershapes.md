@@ -18,9 +18,9 @@ This article will walk you through the functionality and the main features of th
 
 __RadDiagramContainerShape__ allows you to place multiple shapes into one container shape. __RadDiagramContainerShapes__ are much like groups , a way to logically combine other shapes but add to this the capability to have a visual wrapper including a header. You can drag shapes in and out of a container shape at run-time and take advantage of its built-in auto-sizing logic that can extend the size of a container to wrap a shape. __RadDiagram__ provides a visual feedback when a shape is being dragged over a  __RadDiagramContainerShape__ and even if part  of the shape is outside the bounds of the container, the framework internally handles the drop and expands the size of the container to place the shape inside the content area of the container.
         
->caption Fig.1 Illustration of the ContainerShape auto-sizing capabilities
+>caption Figure 1: Illustration of the ContainerShape auto-sizing capabilities
 
-![diagram-diagram-items-container-shapes 001](images/diagram-diagram-items-container-shapes001.gif)
+![WinForms RadDiagram Illustration of the ContainerShape auto-sizing capabilities](images/diagram-diagram-items-container-shapes001.gif)
 
 A container can be connected and handled like other shapes.
 
@@ -53,9 +53,9 @@ Me.RadDiagram1.Items.Add(container)
 
 
 
->caption Fig.2 ContainerShape's content
+>caption Figure 2: ContainerShape's content
 
-![diagram-diagram-items-container-shapes 002](images/diagram-diagram-items-container-shapes002.png)
+![WinForms RadDiagram ContainerShape's content](images/diagram-diagram-items-container-shapes002.png)
 
 ## Edit Mode
 
@@ -110,9 +110,9 @@ containerShape.Items.Add(shape)
 {{endregion}} 
 
 
->caption Fig.3 RadDiagramContainerShape.Items
+>caption Figure 3: RadDiagramContainerShape.Items
 
-![diagram-diagram-items-container-shapes 003](images/diagram-diagram-items-container-shapes003.png)
+![WinForms RadDiagram RadDiagramContainerShape Items](images/diagram-diagram-items-container-shapes003.png)
 
 ## Container Bounds
 
@@ -122,9 +122,9 @@ You can get the bounds of the __RadDiagramContainerShape__ through the __Bounds_
 
 By default, __RadDiagramContainerShape__ is collapsible. It is controlled by the __IsCollapsible__ property.
         
->caption Fig.4 RadDiagramContainerShape.Items
+>caption Figure 4: RadDiagramContainerShape.Items
 
-![diagram-diagram-items-container-shapes 004](images/diagram-diagram-items-container-shapes004.gif)
+![WinForms RadDiagram Collapsible ContainerShapes](images/diagram-diagram-items-container-shapes004.gif)
 
 Below you can find a list of all __RadDiagramContainerShape__ members that are related to the collapsible feature of the shape:
 
@@ -191,7 +191,7 @@ container.BorderBrush = New System.Drawing.SolidBrush(Color.Fuchsia)
 
 >caption Fig.5 RadDiagramContainerShape's appearance
 
-![diagram-diagram-items-container-shapes 005](images/diagram-diagram-items-container-shapes005.png)
+![WinForms RadDiagram ContainerShape's Appearance](images/diagram-diagram-items-container-shapes005.png)
 
 # See Also
   	

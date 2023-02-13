@@ -124,7 +124,7 @@ Me.radRichTextEditor1.Document = document
 
 Here is a snapshot of the result.
 
-![richtexteditor-document-elements-table 001](images/richtexteditor-document-elements-table001.png)
+![WinForms RadRichTextEditor Table](images/richtexteditor-document-elements-table001.png)
 
 The __RadRichTextEditor__ exposes the following methods that regard the creation or deletion of a table:
         
@@ -153,20 +153,20 @@ The __RadRichTextEditor__ exposes the following methods that regard the creation
 
 You can enable the user to create a table via the built-in UI of __RadRichTextEditor__. This is done by using the __RadRichTextEditorRibbonUI__, which exposes two different ways of creating a table by selection in the UI or on button click. 
 
-![richtexteditor-document-elements-table 002](images/richtexteditor-document-elements-table002.png)
+![WinForms RadRichTextEditor Table From Build-in UI](images/richtexteditor-document-elements-table002.png)
 
 You can also use the __InsertTableDialog__, which comes out of the box. To show it upon a user action just call the __ShowInsertTableDialog()__ method of the __RadRichTextEditor__. Here is a snapshot of it.
         
 >note **RichTextEditorRibbonBar** also uses this dialog.
 
-![richtexteditor-document-elements-table 003](images/richtexteditor-document-elements-table003.png)
+![WinForms RadRichTextEditor InsertTableDialog](images/richtexteditor-document-elements-table003.png)
 
 >caution Inserting a table through the UI applies to it a __TableGrid__ style, which has a predefined set of borders. However, a table created in code-behind is applied the __TableNormal__ style and does not have predefined borders.
 >
 
 A table could be deleted or modified via the *Table tools'* contextual tab __Layout__. There are UI buttons for each of the API methods used for deleting and modifying a table. 
 
-![richtexteditor-document-elements-table 004](images/richtexteditor-document-elements-table004.png)
+![WinForms RadRichTextEditor Table tools Contextual Tab](images/richtexteditor-document-elements-table004.png)
 
 ## Formatting a Table at Runtime via RadRichTextEditor's API
 
@@ -196,15 +196,15 @@ __RadRichTextEditor__ exposes a rich API, which allows you to use various method
 
 You can enable the user to modify a table via the built-in UI of the __RadRichTextEditor__. This is done by using the __RadRichTextEditorRibbonUI__, which exposes a __Table Tools__ contextual menu with two tabs –  __Design__ and __Layout__. They expose UI buttons for all API methods used for formatting and modifying a table. To learn more about how to use the __RadRichTextEditorRibbonUI__ read  [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}). 
 
-![richtexteditor-document-elements-table 005](images/richtexteditor-document-elements-table005.png)
+![WinForms RadRichTextEditor Formatting Table](images/richtexteditor-document-elements-table005.png)
 
 The __Design__ contextual tab allows you to use a predefined set of formatting options called *Table Styles*. The __TableStylesGallery__ offers a way to easily create, delete, modify and apply table styles in a document. To  learn more about how to use the **TableStylesGallery** read [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/table-styles-gallery%}). 
 
-![richtexteditor-document-elements-table 006](images/richtexteditor-document-elements-table006.png)
+![WinForms RadRichTextEditor TableStylesGallery](images/richtexteditor-document-elements-table006.png)
 
 Additionally, the built-in context menu of the __RadRichTextEditor__ gives the user the possibility to open the   __Table Properties__ and __Table Borders__ dialogs.
 
-![richtexteditor-document-elements-table 007](images/richtexteditor-document-elements-table007.png)
+![WinForms RadRichTextEditor Table Borders/Properties](images/richtexteditor-document-elements-table007.png)
 
 >tip To wire these dialogs to your own UI you can use the __ShowTablePropertiesDialog()__ method of __RadRichTextEditor__ or the __ShowTablePropertiesCommand__ method.
 >

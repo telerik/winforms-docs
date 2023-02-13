@@ -45,7 +45,7 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
 
 >caption Figure 1: RadMaskedEditBox German Culture
 
-![editors-maskededitbox-properties-and-events 001](images/editors-maskededitbox-properties-and-events001.png) 
+![WinForms RadMaskedEditBox German Culture](images/editors-maskededitbox-properties-and-events001.png) 
 
 {{source=..\SamplesCS\Editors\MaskEditBox1.cs region=workingWithRadMaskedEditBox}} 
 {{source=..\SamplesVB\Editors\MaskEditBox1.vb region=workingWithRadMaskedEditBox}} 

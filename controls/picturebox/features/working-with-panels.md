@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Working with panels
+# Working With Panels
 
 **RadPictureBox** offers a set of predefind panels *TopPanel*, *BottomPanel*, *LeftPanel*, and *RightPanel* that allows adding different elements to its item's collections in order to achieve a better user experience. 
 
@@ -16,7 +16,7 @@ position: 4
 **LeftPanel** and **RightPanel** have TopItems, BottomItems, and CenterItems collectios.
 >
 
-#### Adding buttons to panels
+#### Adding Buttons to Panels
 
 {{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=Panels}} 
 {{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=Panels}} 
@@ -59,7 +59,7 @@ Me.RadPictureBox1.TopPanel.CenterItems.Add(button)
 {{endregion}}
 
 
-![picturebox-getting-started3](images/customizing-appearance001.png)
+![WinForms RadPictureBox Adding Buttons to Panels](images/customizing-appearance001.png)
 
 ### Panel Display Mode
 

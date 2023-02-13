@@ -14,11 +14,11 @@ The scale indicators use two measures - imperial and metric. Depending on the sc
 
 >caption Figure 1: Large Scale
 
-![map features scale indicators 001](images/map-features-scale-indicators001.png)
+![WinForms RadMap Large Scale](images/map-features-scale-indicators001.png)
 
 >caption Figure 2: Small Scale
 
-![map features scale indicators 002](images/map-features-scale-indicators002.png)
+![WinForms RadMap Small Scale](images/map-features-scale-indicators002.png)
 
 # Customizing Appearance
 
@@ -26,7 +26,7 @@ The scaling indicators expose several properties allowing modification of the wa
 
 >caption Figure 3: Custom Text, Color and Bar Height 
 
-![map features scale indicators 003](images/map-features-scale-indicators003.png)
+![WinForms RadMap Custom Text, Color and Bar Height](images/map-features-scale-indicators003.png)
 
 #### Customizing Appearance
 

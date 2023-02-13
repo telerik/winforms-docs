@@ -22,7 +22,7 @@ The control exposes an API for panning and zooming programmatically. The respons
 
 >caption Figure 1: Programmatic Pan and Zoom
 
-![map features pan and zoom 001](images/map-features-pan-and-zoom001.gif)
+![WinForms RadMap Programmatic Pan and Zoom](images/map-features-pan-and-zoom001.gif)
 
 ## Customizing Appearance
 

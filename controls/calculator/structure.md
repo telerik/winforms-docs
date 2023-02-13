@@ -12,7 +12,7 @@ position: 0
 
 This article describes the inner structure and organization of the elements which build **RadCalculator**.
 
-![calculator-structure 001](images/calculator-structure001.png)
+![WinForms RadCalculator Structure](images/calculator-structure001.png)
 
 * **RadCalculatorElement**
 	* **RadCalculatorTextAreaElement** - represents the area at the top of the control that displays the calculated value.
@@ -33,7 +33,7 @@ This article describes the inner structure and organization of the elements whic
 
 ## Elements Hierarchy
 
-![calculator-structure 002](images/calculator-structure002.png)
+![WinForms RadCalculator Elements Hierarchy](images/calculator-structure002.png)
  
 
 # See Also

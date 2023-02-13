@@ -14,11 +14,11 @@ position: 5
 
 #### Adding Users at Design time
  
-![task-board-adding-user-and-tasks 001](images/task-board-adding-user-and-tasks001.png)
+![WinForms RadTaskBoard Adding Users at Design time](images/task-board-adding-user-and-tasks001.png)
 
 Once, there are users in the RadTaskBoard.**Users** collection at design time, they will be available for adding to the task cards:
 
-![task-board-adding-user-and-tasks 002](images/task-board-adding-user-and-tasks002.png)
+![WinForms RadTaskBoard Users](images/task-board-adding-user-and-tasks002.png)
 
 #### Adding Users at Run time
 
@@ -62,11 +62,11 @@ Me.radTaskBoard1.Users.Add(user2)
 
 #### Adding Tags at Design time
 
-![task-board-adding-user-and-tasks 003](images/task-board-adding-user-and-tasks003.png)
+![WinForms RadTaskBoard Adding Tags at Design time](images/task-board-adding-user-and-tasks003.png)
 
 Once, there are tags in the RadTaskBoard.**Tags** collection at design time, they will be available for adding to the task cards:
 
-![task-board-adding-user-and-tasks 004](images/task-board-adding-user-and-tasks004.png)
+![WinForms RadTaskBoard Tags](images/task-board-adding-user-and-tasks004.png)
 
 #### Adding Tags at Run time
 

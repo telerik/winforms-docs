@@ -20,7 +20,7 @@ __RadGridView__ is a grid component developed on top of [Telerik Presentation Fr
 
 >caption Figure 1: RadGridView layout. 
 
-![gridview-overview 001](images/gridview-overview001.png)
+![WinForms RadGridView RadGridView Layout](images/gridview-overview001.png)
 
 ## Key Features
 
@@ -63,7 +63,7 @@ __RadGridView__ is a grid component developed on top of [Telerik Presentation Fr
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Webinar](http://tv.telerik.com/watch/winforms/webinar/radgridview-for-winforms-webinar)<br>This video provides an in-depth overview of Telerik's RadGridView for WinForms|![gridview-overview 002](images/gridview-overview002.png)|
+|[RadGridView for WinForms Webinar](http://tv.telerik.com/watch/winforms/webinar/radgridview-for-winforms-webinar)<br>This video provides an in-depth overview of Telerik's RadGridView for WinForms|![WinForms RadGridView Webinar](images/gridview-overview002.png)|
 
 # See Also
 

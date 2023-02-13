@@ -9,7 +9,7 @@ position: 4
 previous_url: ganttview-working-with-data-link-type-converter
 ---
 
-# Link type converter
+# Link Type Converter
 
 When binding __RadGanttView__ there are a number of possible formats for storing data. For most of the standard .NET types used in gantt view (int, string, DateTime, decimal) there are built-in converters to help you when binding. For the types of the link, you have to convert your data to the __TasksLinkType__ enumeration. To help you achieve this we have provided a basic implementation to convert integer data to the enumeration. Here is the mapping:
         

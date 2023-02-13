@@ -14,7 +14,7 @@ RadSpreadsheet comes with pre-defined UI that is automatically wired with all of
 
 #### Figure 1: RadSpreadsheet with default UI and context menu
 
-![RadSpreadsheet_Ribbon_01](images/RadSpreadsheet_Ribbon_01.png)
+![WinForms RadSpreadsheet with default Ribbon UI and context menu](images/RadSpreadsheet_Ribbon_01.png)
 
 
 ## Add RadSpreadsheet with Predefined UI to Your Application
@@ -23,7 +23,7 @@ RadSpreadsheet comes with pre-defined UI that is automatically wired with all of
 
 The Smart Tag allows you to associate the **RadSpreadsheet** with the **RadSpreadsheetRibbonBar**
 
-![RadSpreadsheet_Ribbon_02](images/RadSpreadsheet_Ribbon_02.png)
+![WinForms RadSpreadsheetRibbonBar Smart Tag](images/RadSpreadsheet_Ribbon_02.png)
 
 
 ## See Also

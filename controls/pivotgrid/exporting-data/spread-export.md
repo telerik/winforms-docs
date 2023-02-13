@@ -27,7 +27,7 @@ Here is how the following grid, looks when exported.
       
 >caption Figure 1: Exporting RadPivotGrid
 
-![pivotgrid-export-srpead-export 001](images/pivotgrid-export-srpead-export001.png)
+![WinForms RadPivotGrid Exporting RadPivotGrid](images/pivotgrid-export-srpead-export001.png)
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly.You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
@@ -220,7 +220,7 @@ __CellFormatting__: This event is used to format the cells to be exported. The e
 This is how the displayed in Fig. 1 pivot grid looks after handling the __CellFormatting__ event.
         
 >caption Figure 2: Applying Styles
-![pivotgrid-export-srpead-export 002](images/pivotgrid-export-srpead-export002.png)
+![WinForms RadPivotGrid Applying Styles](images/pivotgrid-export-srpead-export002.png)
 
 #### CellFormatting Event
 

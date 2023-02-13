@@ -25,10 +25,10 @@ __BarWidthPercent__ controls how much space each bar takes up so that a __BarWid
 
 See the examples below to see how these two properties work together.
 
-![chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent 001](images/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent001.png)
+![WinForms RadChart BarOverlapPercent 0 BarWidthPercent 100](images/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent001.png)
 
-![chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent 002](images/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent002.png)
+![WinForms RadChart BarOverlapPercent 0 BarWidthPercent 50](images/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent002.png)
 
-![chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent 003](images/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent003.png)
+![WinForms RadChart BarOverlapPercent -20 BarWidthPercent 50](images/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent003.png)
 
-![chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent 004](images/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent004.png)
+![WinForms RadChart BarOverlapPercent 50 BarWidthPercent 50](images/chart-undestanding-radchart-elements-baroverlappercent-and-barwidthpercent004.png)

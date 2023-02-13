@@ -21,14 +21,14 @@ You can set the ellipse path for the carousel using the Visual Studio designer.
 
 	>caption 
 
-	![carousel-design-time-setting-ellipse-path-design-time 001](images/carousel-design-time-setting-ellipse-path-design-time001.png)
+	![WinForms RadCarousel Design Time Ellipse Path](images/carousel-design-time-setting-ellipse-path-design-time001.png)
 
 3. Drag the two control points (__U__ and __V__) and the center point to set the ellipse as desired:
 
 
 	>caption 
 
-	![carousel-design-time-setting-ellipse-path-design-time 002](images/carousel-design-time-setting-ellipse-path-design-time002.png)
+	![WinForms RadCarousel Design Time Ellipse Path](images/carousel-design-time-setting-ellipse-path-design-time002.png)
 
 >note  __Note__ : You can arrange the points only in 2D. The Z coordinate (if needed) should be set programmatically.
 >

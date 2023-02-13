@@ -12,7 +12,7 @@ position: 5
 
 **RadDataFilterDialog** can be used as a standalone dialog in order to provide the user an easy way to build an expression without the necessity to have a **RadDataFilter** on the form. 
 
-![data-filter-dialog 001](images/datafilter-dialog001.png)
+![WinForms RadDataFilter DataFilter Dialog](images/datafilter-dialog001.png)
 
 You can find below a sample code snippet how to show the filter dialog and get its expression after the dialog is closed:
 

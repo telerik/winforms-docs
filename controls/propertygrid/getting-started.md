@@ -13,7 +13,7 @@ previous_url: propertygrid-getting-started
 
 | RELATED VIDEOS |  |
 | ----- | --- |
-|RadPropertyGrid provides an easy and versatile approach to processing data objects' properties. Utilizing its autogeneration features and the intuitive custom editors apabilities, users would be able either to display data in a way that best fits their needs or modify it with minimal effort. RadPropertyGrid can be bound to an item with just a single line of code and you may start exploring or editing its properties. The property editor controls are auto generated - text fields for string properties, DateTimePickers for dates, ComboBoxes for enums and Booleans, RadColorPicker for colors. In addition, RadPropertyGrid allows flexible manual settings and customization of editors. RadPropertyGrid also supports scrolling operations via touch interface.|[ Getting started with RadPropertyGrid ](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radpropertygrid)<br>![propertygrid-getting-started 000](images/propertygrid-getting-started000.png)|
+|RadPropertyGrid provides an easy and versatile approach to processing data objects' properties. Utilizing its autogeneration features and the intuitive custom editors apabilities, users would be able either to display data in a way that best fits their needs or modify it with minimal effort. RadPropertyGrid can be bound to an item with just a single line of code and you may start exploring or editing its properties. The property editor controls are auto generated - text fields for string properties, DateTimePickers for dates, ComboBoxes for enums and Booleans, RadColorPicker for colors. In addition, RadPropertyGrid allows flexible manual settings and customization of editors. RadPropertyGrid also supports scrolling operations via touch interface.|[WinForms RadPropertyGrid  Getting started with RadPropertyGrid ](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radpropertygrid)<br>![WinForms RadPropertyGrid Getting Started Overview](images/propertygrid-getting-started000.png)|
 
 The following example will demonstrate the basic functionalities of **RadPropertyGrid** control. Let’s start with adding **RadPropertyGrid** control to a **RadForm**. In the code behind we will set the **SelectedObject** property of the control to an object, which properties we  want to display. For the sake of this example we will use the element of the control – **PropertyGridElement**. 
 
@@ -36,7 +36,7 @@ Me.RadPropertyGrid1.SelectedObject = New PropertyGridElement()
 It is all set and **RadProperyGrid** reads all public properties of the given object and displays them:
 
 >caption Figure 1: Selected Object
-![propertygrid-getting-started 001](images/propertygrid-getting-started001.png)
+![WinForms RadPropertyGrid Selected Object](images/propertygrid-getting-started001.png)
 
 Now, let’s customize the example a bit and take advantage of some of its features. As you can see in the image above, on the bottom of the control a help section is displayed. This section reads the name and the content of the __Description__ attribute of the selected property. The section visibility is controlled by the __HelpVisible__ property and it is turned on by default.
 
@@ -180,7 +180,7 @@ The selection of the items is controlled by either setting a certain item to the
 Accessing and modifying the default context menu, can be achieved by accessing the __RadContextMenu__ property of the control. For more information on how to work with menu items, please refer to our [Menu]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%}) section. 
 
 >caption Figure 2: Context Menu
-![propertygrid-getting-started 002](images/propertygrid-getting-started002.png)
+![WinForms RadPropertyGrid Context Menu](images/propertygrid-getting-started002.png)
 
 There are a few properties that you can set in order to change the item appearance:  
 
@@ -212,7 +212,7 @@ Me.RadPropertyGrid1.ItemSpacing = 1
 {{endregion}}
 
 >caption Figure 3: Selected Object
-![propertygrid-getting-started 003](images/propertygrid-getting-started003.png)
+![WinForms RadPropertyGrid Selected Object](images/propertygrid-getting-started003.png)
 
 At the end, if you want to expand all groups automatically, you can set the **AutoExpandGroups** to *true* (which is also the default setting).
 

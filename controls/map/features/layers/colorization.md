@@ -18,13 +18,13 @@ __RadMap__ utilizes three different colorization objects expecting a collection 
 * [ChoroplethColorizationStrategy](#choropleth-colorization)
 * [PropertyColorizationStrategy](#property-colorization)
 
-# Graph Colorization
+## Graph Colorization
 
 The __GraphColorizationStrategy__ internally arranges the predefined colors so that there are no shapes with the same color next to each other.
 
 >caption Figure 1: Graph Colorization
 
-![map features layers colorization 001](images/map-features-layers-colorization001.png)
+![WinForms RadMap Graph Colorization](images/map-features-layers-colorization001.png)
 
 #### Setting up GraphColorizationStrategy
 
@@ -64,13 +64,13 @@ End Sub
 
 {{endregion}}
 
-# Choropleth Colorization
+## Choropleth Colorization
 
 The __ChoroplethColorizationStrategy__ arranges the predefined colors according to a collection range stops against which each of the shape objects will be evaluated.
 
 >caption Figure 2: Choropleth Colorization
 
-![map features layers colorization 002](images/map-features-layers-colorization002.png)
+![WinForms RadMap Choropleth Colorization](images/map-features-layers-colorization002.png)
 
 #### Setting up ChoroplethColorizationStrategy
 
@@ -140,13 +140,13 @@ End Sub
 
 {{endregion}}
 
-# Property Colorization
+## Property Colorization
 
 >caption Figure 3: Property Colorization
 
 The __PropertyColorizationStrategy__ evaluates the values of a certain property defined in the shape file. Depending on the result the engine assigns one of the predefined colors.
 
-![map features layers colorization 003](images/map-features-layers-colorization003.png)
+![WinForms RadMap Property Colorization](images/map-features-layers-colorization003.png)
 
 #### Setting up PropertyColorizationStrategy
 

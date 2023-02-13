@@ -51,7 +51,7 @@ The information about a digital signature in a document is stored in a signature
 
 When a document containing a signature field is loaded in **RadPdfViewer**, you can apply a signature to it. This is done through the **SignSignatureDialog**. This dialog gives you the ability to choose a .pfx file representing the certificate and enter the password for it. Clicking the Sign button prompts you to save the signed document to a new file. The newly saved file then opens in **RadPdfViewer**.
 
-![pdfviewer-digital-signature003](images/pdfviewer-digital-signature003.gif)
+![WinForms RadPdfViewer Signing](images/pdfviewer-digital-signature003.gif)
 
 >note As of R1 2021 RadPdfViewerElement offers the cancelable **SignatureDialogShowing** and **SignSignatureDialogShowing** events. They allow customizing or changing the signature dialogs in **RadPdfViewer**.
 
@@ -64,7 +64,7 @@ In the PDF document model, the validation is performed per signature. For a vali
 The signature panel of RadPdfViewer detects when the imported document contains a signature, validates the document and shows the final result to the user. 
 
 >caption Figure 1: SignaturePanel showing signature status
-![pdfviewer-digital-signature001](images/pdfviewer-digital-signature001.png)
+![WinForms RadPdfViewer SignaturePanel showing signature status](images/pdfviewer-digital-signature001.png)
 
 >note You can use the __PdfViewerElement.AllowSignatureDialog__ property to enable/disable the dialog.
 
@@ -75,7 +75,7 @@ The SignaturePanel detects if any signatures are present and validates them. How
 **Figure 2** shows how it looks like the SignaturePropertiesDialog when visualizing a signature whose validation result is Unknown.
 
 >caption Figure 2: SignaturePropertiesDialog showing the status of a signature
-![pdfviewer-digital-signature002](images/pdfviewer-digital-signature002.png)
+![WinForms RadPdfViewer SignaturePropertiesDialog showing the status of a signature](images/pdfviewer-digital-signature002.png)
 
 
 ### Validate a Signature in Code-Behind

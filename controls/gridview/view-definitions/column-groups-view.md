@@ -19,31 +19,31 @@ Since R3 2015 you can add and configure the groups view definition in the [prope
             
 	>caption Figure 2: Add the default columns.
 
-	![gridview-viewdefinitions-column-groups-view 003](images/gridview-viewdefinitions-column-groups-view003.gif)
+	![WinForms RadGridView Add the default columns](images/gridview-viewdefinitions-column-groups-view003.gif)
 
 1. The next step is to change the __ViewDefinition__ to __ColumnGroups View__. `Figure 3` shows where you can find this property. Changing the view will add the default root group.
             
 	>caption Figure 3: Change the ViewDefinition
 
-	![gridview-viewdefinitions-column-groups-view 002](images/gridview-viewdefinitions-column-groups-view002.png)
+	![WinForms RadGridView Change the ViewDefinition](images/gridview-viewdefinitions-column-groups-view002.png)
 
 1. Now you are ready to add the groups. This can be achieved by selecting the __Columns groups__ node which will show the button for adding groups.
             
 	>caption Figure 4: Add Groups
 
-	![gridview-viewdefinitions-column-groups-view 004](images/gridview-viewdefinitions-column-groups-view004.gif)
+	![WinForms RadGridView Add Groups](images/gridview-viewdefinitions-column-groups-view004.gif)
 
 1. The final step is to arrange the groups. This can easily achieved by just drag and drop columns or groups to the desired position.
             
 	>caption Figure 5: Arrange the columns and groups
 
-	![gridview-viewdefinitions-column-groups-view 005](images/gridview-viewdefinitions-column-groups-view005.gif)
+	![WinForms RadGridView Arrange the columns and groups](images/gridview-viewdefinitions-column-groups-view005.gif)
 
 The property builder allows you to edit the groups properties as well. Once a particular group is selected you will be able to change its properties.
         
 >caption Figure 6 Change the group properties
 
-![gridview-viewdefinitions-column-groups-view 006](images/gridview-viewdefinitions-column-groups-view006.png)
+![WinForms RadGridView 6 Change the group properties](images/gridview-viewdefinitions-column-groups-view006.png)
 
 ## 
 
@@ -135,7 +135,7 @@ The result is:
         
 >caption Figure 1: ColumnGroups ViewDefinition
 
-![gridview-viewdefinitions-column-groups-view 001](images/gridview-viewdefinitions-column-groups-view001.png)
+![WinForms RadGridView ColumnGroups ViewDefinition](images/gridview-viewdefinitions-column-groups-view001.png)
 
 >caution In order to pin a certain group, you should do it after the RadGridView.__ViewDefinition__ property is set and the grid is populated with data.
 

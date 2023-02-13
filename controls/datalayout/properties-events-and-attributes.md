@@ -3,7 +3,7 @@ title: Properties, Events and Attributes
 page_title: Properties, Events and Attributes - WinForms DataLayout Control
 description: Learn the most used properties, events and attributes of RadDataLayout.
 slug: winforms/datalayout/properties,-events-and-attributes
-tags: properties,,events,and,attributes
+tags: properties,events,and,attributes
 published: True
 position: 4
 previous_url: datalayout-properties-event-and-attributes
@@ -56,7 +56,7 @@ __RadDataLayout__ has support for several attributes that can be used to change 
 
 >caption Figure 1: Model With Attributes
 
-![datalayout-properties-event-and-attributes 001](images/datalayout-properties-event-and-attributes001.png)
+![WinForms RadDataLayout Model With Attributes](images/datalayout-properties-event-and-attributes001.png)
 
 #### Using attributes.
 

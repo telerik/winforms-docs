@@ -14,7 +14,7 @@ Like other standard WinForms controls **RadRichTextEditor** also supports drag a
 
 >caption Figure 1: Drag and Drop Between RadListView and RadRichTextEditor 
 
-![richtexteditor-how-to-drag-and-drop 001](images/richtexteditor-how-to-drag-and-drop001.gif)
+![WinForms RadRichTextEditor Drag and Drop Between RadListView and RadRichTextEditor](images/richtexteditor-how-to-drag-and-drop001.gif)
 
 >note In RadRichTextEditor drop operation can be allowed by accessing the **RadRichTextBox** object and setting its **AllowDrop** property to *true*.
 

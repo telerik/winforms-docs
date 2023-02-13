@@ -14,11 +14,11 @@ The **RadSplashScreenManager** offers an overload of the **Show** method that ac
 
 >caption Custom Splash
 
-![splashscreen-custom-splash 001](images/splashscreen-custom-splash001.gif) 
+![WinForms RadSplashScreen Custom Splash](images/splashscreen-custom-splash001.gif) 
 
 1\. Create a new UserControl to your project, e.g. RestartRequiredUserControl.cs
 
-![splashscreen-custom-splash 002](images/splashscreen-custom-splash002.png) 
+![WinForms RadSplashScreen RestartRequiredUserControl](images/splashscreen-custom-splash002.png) 
 
 2\. Construct the UI according to the specific design you may have. For the above splash, it is necessary to add:
 

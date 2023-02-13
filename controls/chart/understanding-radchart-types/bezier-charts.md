@@ -26,7 +26,7 @@ To create a simple vertical Bezier Chart set the __SeriesOrientation__ property 
 
 >caption 
 
-![chart-undestanding-radchart-types-bezier 001](images/chart-undestanding-radchart-types-bezier001.png)
+![WinForms RadChart Bezier Charts](images/chart-undestanding-radchart-types-bezier001.png)
 
 To create a simple horizontal Bezier Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Bezier__. Create a series and add four chart items with X and Y values.
 
@@ -41,7 +41,7 @@ To create a simple horizontal Bezier Chart set the __SeriesOrientation__ propert
 
 >caption 
 
-![chart-undestanding-radchart-types-bezier 002](images/chart-undestanding-radchart-types-bezier002.png)
+![WinForms RadChart Bezier Charts Sample](images/chart-undestanding-radchart-types-bezier002.png)
 
 
 
@@ -55,4 +55,4 @@ To create a simple horizontal Bezier Chart set the __SeriesOrientation__ propert
 |80|50|
 >caption 
 
-![chart-undestanding-radchart-types-bezier 003](images/chart-undestanding-radchart-types-bezier003.png)
+![WinForms RadChart Sample Bezier Charts](images/chart-undestanding-radchart-types-bezier003.png)

@@ -18,19 +18,19 @@ You can set the **DataSource** property either via the **Smart Tag** or by the *
 
 >caption Figure 1: DataSource property in Smart Tag
 
-![datafilter-bound-mode 001](images/datafilter-bound-mode001.png)
+![WinForms RadDataFilter DataSource property in Smart Tag](images/datafilter-bound-mode001.png)
 
 After specifying the **DataSource** property, the **Descriptors** collection will be automatically populated with descriptor items considering the available fields in the source object.
 
 >caption Figure 2: Automatically populated Descriptors collection
 
-![datafilter-bound-mode 003](images/datafilter-bound-mode003.png)
+![WinForms RadDataFilter Automatically populated Descriptors collection](images/datafilter-bound-mode003.png)
 
 Then, if you open the *RadDataFilter Design Time Editor*, you can select the desired items in order to build a filter expression.
 
 >caption Figure 3: RadDataFilter Design Time Editor
 
-![datafilter-bound-mode 002](images/datafilter-bound-mode002.png)
+![WinForms RadDataFilter RadDataFilter Design Time Editor](images/datafilter-bound-mode002.png)
 
 ## Run Time
 
@@ -64,7 +64,7 @@ After setting the **DataSource** property, the **Descriptors** collection is fil
 
 >caption Figure 4: RadDataFilter bound at run time
 
-![datafilter-bound-mode 004](images/datafilter-bound-mode004.png)
+![WinForms RadDataFilter RadDataFilter bound at run time](images/datafilter-bound-mode004.png)
 
 # See Also
 

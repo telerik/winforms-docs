@@ -32,7 +32,7 @@ RadGridView1.AllowColumnReorder = True
 
 >caption Figure 1: Reorder columns in RadGridView
 
-![gridview-columns-reordering-columns 001](images/gridview-columns-reordering-columns001.png)
+![WinForms RadGridView Reorder Columns in RadGridView](images/gridview-columns-reordering-columns001.png)
 
 ## Reordering Columns Programmatically
 

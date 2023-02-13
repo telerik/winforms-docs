@@ -14,7 +14,7 @@ position: 8
 
 >caption Figure 1: RadFormConverter
 
-![forms-and-dialogs-form-converter 001](images/forms-and-dialogs-form-converter001.gif)
+![WinForms RadFormConverter Overview](images/forms-and-dialogs-form-converter001.gif)
 
 The actual conversion process is executed after selecting an item from the component`s action list. The available options are: 
 
@@ -28,9 +28,9 @@ The actual conversion process is executed after selecting an item from the compo
 
 If you have at least one control from the Telerik UI for WinForms suite on the standard MS Form, you can also use the Form's smart tag in order to convert it to a **RadForm**, **RadRibbonForm**, **RadTabbedForm** or **RadToolbarForm**. 
 
->caption Figure 2: Form's smart tag
+>caption Figure 2: Form's Smart Tag
 
-![forms-and-dialogs-form-converter 002](images/forms-and-dialogs-form-converter002.png)
+![WinForms RadFormConverter Smart Tag](images/forms-and-dialogs-form-converter002.png)
 
 # See Also 
 

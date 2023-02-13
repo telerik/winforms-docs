@@ -17,7 +17,7 @@ CTAControlName: ButtonTextBox
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![editors-buttontextbox-overview 001](images/editors-buttontextbox-overview001.png)
+![WinForms RadButtonTextBox Overview](images/editors-buttontextbox-overview001.png)
 
 ## Key Features
 

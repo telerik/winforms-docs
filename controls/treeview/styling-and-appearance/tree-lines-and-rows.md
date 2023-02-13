@@ -33,7 +33,7 @@ RadTreeView1.LineStyle = TreeLineStyle.DashDot
 {{endregion}} 
 
 
-![treeview-styling-and-appearance-tree-lines-and-rows 001](images/treeview-styling-and-appearance-tree-lines-and-rows001.png)
+![WinForms RadTreeView Tree Lines and Rows](images/treeview-styling-and-appearance-tree-lines-and-rows001.png)
 
 To select rows spanning the entire width of RadTreeView (rather than just the node label), set the __FullRowSelect__ property to *true* and __ShowLines__ to *false*. In addition you can set the alternating row color by setting the __AllowAlternatingRowColor__ and __AlternatingRowColor__ properties.
 
@@ -55,7 +55,7 @@ RadTreeView1.TreeViewElement.AlternatingRowColor = Color.LightBlue
 {{endregion}} 
 
 
-![treeview-styling-and-appearance-tree-lines-and-rows 002](images/treeview-styling-and-appearance-tree-lines-and-rows002.png)
+![WinForms AlternatingRowColor](images/treeview-styling-and-appearance-tree-lines-and-rows002.png)
 
 # See Also
 * [Themes]({%slug winforms/treeview/styling-and-appearance/themes%})

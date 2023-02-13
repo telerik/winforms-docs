@@ -124,15 +124,15 @@ End Sub
 
 >caption Figure 1: Text and Media Items 
 
-![winforms/chat-formatting 001](images/chat-formatting001.png)
+![WinForms RadChat Text and Media Items](images/chat-formatting001.png)
 
 >caption Figure 2: Card Items
 
-![winforms/chat-formatting 002](images/chat-formatting002.png)
+![WinForms RadChat Card Items](images/chat-formatting002.png)
 
 >caption Figure 3: Carousel Item
 
-![winforms/chat-formatting 003](images/chat-formatting003.png)
+![WinForms RadChat Carousel Item Sample](images/chat-formatting003.png)
 
 #### Customizing the Child Items
 
@@ -201,7 +201,7 @@ End Sub
 
 >caption Figure 4: Customizing the Child Elements
 
-![winforms/chat-formatting 003](images/chat-formatting004.png)
+![WinForms RadChat Customizing the Child Elements](images/chat-formatting004.png)
 # See Also
 
 * [Structure]({%slug winforms/chat/structure%})

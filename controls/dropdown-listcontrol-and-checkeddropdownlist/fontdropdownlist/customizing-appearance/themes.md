@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select **RadListView** in *Controls Structure* on the left side. Then, right click to open the context menu and select *DetailsView mode*.
 
-	![fontdropdownlist-customizing-appearance-themes 001](images/fontdropdownlist-customizing-appearance-themes001.png)
+	![WinForms RadFontDropDownList VisualStyleBuilder](images/fontdropdownlist-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item for the **DetailListViewVisualItem** for the **Current.Selected** state. 
 
-	![fontdropdownlist-customizing-appearance-themes 002](images/fontdropdownlist-customizing-appearance-themes002.png)
+	![WinForms RadFontDropDownList Modify Fill Repository](images/fontdropdownlist-customizing-appearance-themes002.png)
 	
 1. Save the theme by selecting *File >> Save As*.
 
@@ -32,7 +32,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 >note If you need to customize the elements in some of the other views, you can switch the view by right click on **RadListView**:
 
-![fontdropdownlist-customizing-appearance-themes 003](images/fontdropdownlist-customizing-appearance-themes003.png)
+![WinForms RadFontDropDownList Customize Elements](images/fontdropdownlist-customizing-appearance-themes003.png)
 
 # See Also 
 

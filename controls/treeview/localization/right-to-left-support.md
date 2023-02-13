@@ -28,7 +28,7 @@ Me.RadTreeView1.RightToLeft = Windows.Forms.RightToLeft.Yes
 
 {{endregion}} 
 
-![treeview-localization-rtl 001](images/treeview-localization-rtl001.png)
+![WinForms RadTreeView RTL](images/treeview-localization-rtl001.png)
 
 # See Also
 * [Localization]({%slug winforms/treeview/localization/localization%})

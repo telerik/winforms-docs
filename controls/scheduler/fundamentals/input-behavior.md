@@ -118,7 +118,7 @@ scheduler.SchedulerInputBehavior = New MySchedulerInputBehavior(scheduler)
 You can see the result below:
 
 >caption Figure 1: Custom Input Behavior
-![scheduler-fundamentals-input-behavior 001](images/scheduler-fundamentals-input-behavior001.gif)
+![WinForms RadScheduler Custom Input Behavior](images/scheduler-fundamentals-input-behavior001.gif)
 
 # See Also
 

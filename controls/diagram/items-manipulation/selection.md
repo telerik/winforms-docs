@@ -38,13 +38,13 @@ In order to change the way the Selection Adorner Rectangle behaves, you can use 
 
 * __Partial__ - the user selects all items that are completely or partially covered by the selection rectangle.
 
-![diagram-items-manipulation-selection 004](images/diagram-items-manipulation-selection004.gif)
+![WinForms RadDiagram RectSelectionMode](images/diagram-items-manipulation-selection004.gif)
 
 ## Selection in code behind
 
 In order to select items programmatically, you only need to set their __IsSelected__ property to *true*:
 
-![diagram-items-manipulation-selection 001](images/diagram-items-manipulation-selection001.png) 
+![WinForms RadDiagram Selection in Code Behind](images/diagram-items-manipulation-selection001.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=IsSelected}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsSelected}} 
@@ -93,7 +93,7 @@ RadDiagram1.AddShape(shape2)
 
 When multiple items are selected, they are automatically added in one Selection Adorner: 
 
-![diagram-items-manipulation-selection 002](images/diagram-items-manipulation-selection002.png) 
+![WinForms RadDiagram Selection Adorner](images/diagram-items-manipulation-selection002.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=MultipleSelection}} 
@@ -149,7 +149,7 @@ RadDiagram1.AddShape(shape2)
 
 You may also want to use the __SelectedIndex__ or the __SelectedItem__ property of the __RadDiagram__:
 
-![diagram-items-manipulation-selection 003](images/diagram-items-manipulation-selection003.png) 
+![WinForms RadDiagram SelectedIndex or SelectedItem](images/diagram-items-manipulation-selection003.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SelectedIndex}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SelectedIndex}} 

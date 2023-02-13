@@ -12,13 +12,13 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build the __RadRibbonForm__ control.
         
->caption Figure 1: RadRibbonForm's elements hierarchy
+>caption Figure 1: RadRibbonForm's Elements Hierarchy
 
-![forms-and-dialogs-ribbonform-structure 001](images/forms-and-dialogs-ribbonform-structure001.png)
+![WinForms RadRibbonForm Elements Hierarchy](images/forms-and-dialogs-ribbonform-structure001.png)
 
 >caption Figure 2: RadRibbonForm's structure
 
-![forms-and-dialogs-ribbonform-structure 002](images/forms-and-dialogs-ribbonform-structure002.png)
+![WinForms RadRibbonForm Structure](images/forms-and-dialogs-ribbonform-structure002.png)
 
  1. __RibbonFormElement__  
   1.1 __RibbonFormBorderPrimitive__: represents the form's border  

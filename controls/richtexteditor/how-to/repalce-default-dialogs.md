@@ -13,11 +13,11 @@ previous_url: richtexteditor-how-to-repalce-default-dialogs
 
 This article will demonstrate how you can replace the default __FindAndRepacle__ dialog with a custom one. It will show which dialogs can be replaced as well.
 
-## Create custom dialog
+## Create Custom Dialog
 
 1\. Let's start by adding a simple **RadForm** to our project (the main form of the project should contain at least one **RadRichTextEditor**). Make the form to look like in the following picture (you can leave the default control names).
 
-![richtexteditor-how-to-repalce-default-dialogs 001](images/richtexteditor-how-to-repalce-default-dialogs001.png)
+![WinForms RadRichTextEditor Custom Dialog](images/richtexteditor-how-to-repalce-default-dialogs001.png)
 
 2\. Open the code behind and add event handler for the button. You can add a method that will perform the search as well:
 

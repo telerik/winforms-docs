@@ -30,7 +30,7 @@ Dim ruler As RulerPrimitive = TryCast(Me.scheduler.SchedulerElement.ViewElement,
 {{endregion}} 
 
 >caption Figure 1: RadScheduler Ruler
-![scheduler-fundamentals-ruler 001](images/scheduler-fundamentals-ruler001.png)
+![WinForms RadScheduler RadScheduler Ruler](images/scheduler-fundamentals-ruler001.png)
 
 * __TimePointerStyle__ - Sets the style of the pointer which shows the current time. Can be *Arrow, Line or SimpleLine*.
 
@@ -49,7 +49,7 @@ ruler.TimePointerStyle = RulerCurrentTimePointer.Arrow
 {{endregion}} 
 
 >caption Figure 2: Time Pointer Style
-![scheduler-fundamentals-ruler 002](images/scheduler-fundamentals-ruler002.png)
+![WinForms RadScheduler Time Pointer Style](images/scheduler-fundamentals-ruler002.png)
 
 * __Start__ and __EndScale__ - Sets the time when the ruler starts and ends.
 
@@ -70,7 +70,7 @@ ruler.EndScale = 9
 {{endregion}} 
 
 >caption Figure 3: Start and End Scales
-![scheduler-fundamentals-ruler 003](images/scheduler-fundamentals-ruler003.png)
+![WinForms RadScheduler Start and End Scales](images/scheduler-fundamentals-ruler003.png)
 
 * __RangeFactor__ - The range factor determines whether the units in the ruler will be devided in *FiveMinutes, HalfHour, Hour, QuarterHour, SixMinutes or TenMinutes*.
 
@@ -89,7 +89,7 @@ ruler.RangeFactor = ScaleRange.FiveMinutes
 {{endregion}} 
 
 >caption Figure 4: Ruler Range
-![scheduler-fundamentals-ruler 004](images/scheduler-fundamentals-ruler004.png)
+![WinForms RadScheduler Ruler Range](images/scheduler-fundamentals-ruler004.png)
 
 * __CurrentTimePointerWidth__ and __CurrentTimePointerColor__ - Sets the size and the color of the pointer which shows the current time.
 
@@ -110,7 +110,7 @@ ruler.CurrentTimePointerColor = Color.Red
 {{endregion}} 
 
 >caption Figure 5: Time Pointer Width 
-![scheduler-fundamentals-ruler 005](images/scheduler-fundamentals-ruler005.png)
+![WinForms RadScheduler Time Pointer Width](images/scheduler-fundamentals-ruler005.png)
 
 * __RulerFormatStrings__ and the __RulerTextFormatting__ event - They are used to format the text in the ruler. For example here is how to display the hours in a 12 hours format:
 
@@ -129,7 +129,7 @@ ruler.FormatStrings = New RulerFormatStrings("hh", "mm", "hh", "mm")
 {{endregion}} 
 
 >caption Figure 6: Ruler Format String
-![scheduler-fundamentals-ruler 006](images/scheduler-fundamentals-ruler006.png)
+![WinForms RadScheduler Ruler Format String](images/scheduler-fundamentals-ruler006.png)
 
 The RulerTextFormatting event can be used to manually format the text. You can prepend a "0" in front of the text if it contains only one digit:
 
@@ -189,7 +189,7 @@ ruler.RulerWidth = 100
 {{endregion}} 
 
 >caption Figure 7: Ruler Width
-![scheduler-fundamentals-ruler 007](images/scheduler-fundamentals-ruler007.png)
+![WinForms RadScheduler Ruler Width](images/scheduler-fundamentals-ruler007.png)
 
 # See Also
 

@@ -60,7 +60,7 @@ Me.RadChartView1.Series.Add(barSeries2)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup
-![chartview-series-types-bar 001](images/chartview-series-types-bar001.png)
+![WinForms RadChartView Bar Initial Setup](images/chartview-series-types-bar001.png)
 
 __BarSeries__ could be customized using the following properties:
 
@@ -74,7 +74,7 @@ __BarSeries__ could be customized using the following properties:
 * __CombineMode__: A common property for all categorical series, which introduces a mechanism for combining data points that reside in different series but have the same category. The combine mode can be __None__, __Cluster__, __Stack__ and __Stack100__. __None__ means that the series will be plotted independently of each other, so that they are overlapping. __Cluster__ displays data points in the same category  huddled close together. __Stack__ plots the points on top of each other and __Stack100__ will display the value as percent. The combine mode is best described by a picture (Left - Stack, Right – Stack100).
 
 >caption Figure 2: Combine Mode 
-![chartview-series-types-bar 002](images/chartview-series-types-bar002.png)
+![WinForms RadChartView Combine Mode](images/chartview-series-types-bar002.png)
 
 * __GapLength__: A property exposed by both __CategoricalAxis__ and __DateTimeContinuousAxis__, which controls the distance between bar groups as percent. Note that the value should be between 0 and 1, where a value of 0 means that a bar would take the entire space between two ticks, while a value of 1 means the bar will have zero width as all the space should appear as gap. Here is how to set the GapLength.
 
@@ -97,12 +97,12 @@ TryCast(barSeries.HorizontalAxis, CategoricalAxis).GapLength = 0.75
 The following image demonstrates how different values of the __GapLength__ property change the __BarSeries__:
 
 >caption Figure 3: Gap Length
-![chartview-series-types-bar 003](images/chartview-series-types-bar003.png)
+![WinForms RadChartView Gap Length](images/chartview-series-types-bar003.png)
 
 * __StackGroupKey__ all cartesian series that support stacking can be grouped in separate stacks. Here are four __BarSeries__ stacked into two groups:
 
 >caption Figure 4: Stacked BarSeries
-![chartview-series-types-bar 004](images/chartview-series-types-bar004.png)
+![WinForms RadChartView Stacked BarSeries](images/chartview-series-types-bar004.png)
 
 To achieve this add four __BarSeries__ and set the __StackGroupKey__ property of two of them to 1.
             

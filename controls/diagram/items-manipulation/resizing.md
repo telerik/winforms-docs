@@ -17,7 +17,7 @@ __RadDiagram__ gives you the ability to resize shapes by dragging their __Resizi
 
 By default, the __RadDiagram__ is enabled for resizing manipulation. In order to disable this functionality, you can set the __IsResizingEnabled__ property to *false*.
 
-![diagram-items-manipulation-resizing 001](images/diagram-items-manipulation-resizing001.png) 
+![WinForms RadDiagram Enable/Disable Resizing](images/diagram-items-manipulation-resizing001.png) 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EnableResizing}} 
 {{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableResizing}} 
@@ -42,7 +42,7 @@ The __IsManipulationAdornerVisible__ property controls whether the manipulation 
 
 You can resize shapes by using their __Width__ and __Height__ properties:
 
-![diagram-items-manipulation-resizing 002](images/diagram-items-manipulation-resizing002.png) 
+![WinForms RadDiagram Width and Height](images/diagram-items-manipulation-resizing002.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=ResizeShape}} 

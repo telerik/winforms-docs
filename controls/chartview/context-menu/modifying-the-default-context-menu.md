@@ -17,7 +17,7 @@ The default __RadChartView__ context menu can be customized in the __ContextMen
 In order to add custom menu items to the default context menu, you should create menu item instances in the __ContextMenuOpening__ event handler and add them to the __e.ContextMenu.Items__ collection. The following example adds an item responsible for exporting the chart to an image.
 
 >caption Figure 1: Modified Context Menu
-![modifying-the-default-context-menu 001](images/modifying-the-default-context-menu001.png)
+![WinForms RadChartView Modified Context Menu](images/modifying-the-default-context-menu001.png)
 
 #### Subscribe to Event
 

@@ -58,7 +58,7 @@ End Sub
 
 >caption Figure 1: Formatting group rows.
 
-![gridview-cells-formatting-cells-group-rows 001](images/gridview-cells-formatting-cells-group-rows001.png)
+![WinForms RadGridView Formatting group rows](images/gridview-cells-formatting-cells-group-rows001.png)
 # See Also
 * [Hiding Child Tabs when no Data is Available]({%slug winforms/gridview/cells/formatting-child-tabs%})
 

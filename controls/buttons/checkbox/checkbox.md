@@ -20,5 +20,5 @@ __RadCheckBox__ supports three states. This is controlled by the __IsThreeState_
 {% endif %}
 
 
-![buttons-checkbox-overview001](images/buttons-checkbox-overview001.png)
+![WinForms RadButtons buttons-checkbox-overview001](images/buttons-checkbox-overview001.png)
         

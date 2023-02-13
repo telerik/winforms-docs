@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select RadClockElement.__MinutesArrow__ in *Controls Structure* on the left side. Then, select __MinutesArrow__ in the *Elements* section.
 
-	![clock-customizing-appearance-themes 001](images/clock-customizing-appearance-themes001.png)
+	![WinForms RadClock MinutesArrow](images/clock-customizing-appearance-themes001.png)
 
 1. Modify the applied *image* repository item. 
 
-	![clock-customizing-appearance-themes 002](images/clock-customizing-appearance-themes002.png)
+	![WinForms RadClock Modify Applied Image](images/clock-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

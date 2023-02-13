@@ -15,7 +15,7 @@ You can easily change the styles of the border in the `Element Hierarchy Editor`
 1. Open the `Element Hierarchy Editor` from the smart tag.
 2. Select __BorderPrimitive__. 
 3. Change the __ForeColor__ and the __BoxStyle__ properties:
-    ![editors-spineditor-customizing appearance 001](images/spineditor-customizing-appearance001.png)
+    ![WinForms RadSpinEditor Customizing Appearance](images/spineditor-customizing-appearance001.png)
 
 
 # See Also

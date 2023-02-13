@@ -18,7 +18,7 @@ Most of the grid editors inherit from __BaseVirtualGridEditor__. The following s
 4. Override the __Value__ property and manage the editor's value considering the RadMultiColumnComboBoxElement.__SelectedValue__ property.
 5. Subscribe to the RadVirtualGrid.__EditorRequired__ event and replace the default editor for the desired column with your custom one.
 
-![virtualgrid-editing-using-custom-editors010](images/virtualgrid-editing-using-custom-editors010.gif)
+![WinForms RadVirtualGrid Using Custom Editors](images/virtualgrid-editing-using-custom-editors010.gif)
 
 #### Creating MultiColumnComboBoxVirtualGridEditor 
 

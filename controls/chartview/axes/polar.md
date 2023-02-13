@@ -72,7 +72,7 @@ axis.Maximum = 12
 {{endregion}}
 
 >caption Figure 1: PolarAxis Setup
-![chartview-axes-polar 001](images/chartview-axes-polar001.png) 
+![WinForms RadChartView PolarAxis Setup](images/chartview-axes-polar001.png) 
 
 # See Also
 

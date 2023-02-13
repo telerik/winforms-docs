@@ -17,7 +17,7 @@ __RadTimeSpanPicker__ is a UI component that provides a full control over pickin
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![radtimespanpicker-overview001](images/radtimespanpicker-overview001.png)        
+![WinForms RadTimeSpanPicker Overview](images/radtimespanpicker-overview001.png)        
 ## Key Features
 
 * __TimeSpanComponents__ - __RadTimeSpanPicker__ supports built-in components for picking days, hours, minutes, seconds and milliseconds. A specific minimum/maximum ranges and value step could be set for each component separately. The user can directly enter the value in the editor as well.

@@ -125,7 +125,7 @@ It is possible to build a **RadToastNotification** at run time, passing the [Rad
 
 >important [Obsolete as of R3 2021 SP 1] **RadToastActivated** event is **not** fired on the main UI thread. Hence, you should be cautious when interacting with the controls on the form. Note that all UI controls are not thread safe controls in the whole Windows Forms platform (not just Telerik controls, but all controls out there). You should use [Invoke](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invoke?redirectedfrom=MSDN&view=net-5.0#System_Windows_Forms_Control_Invoke_System_Delegate_) to update the controls in cross threading scenario.
 
-![winforms/toast-notification-adding-toast-notifications-programmatically001](images/toast-notification-adding-toast-notifications-programmatically001.png)
+![WinForms Adding Toast Notifications Programmatically](images/toast-notification-adding-toast-notifications-programmatically001.png)
 
 # See Also
 

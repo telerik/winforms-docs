@@ -43,9 +43,9 @@ The **Smart Tag** for **RadPageView** lets you quickly access common tasks invo
 
 There are also view-specific properties as shown below:
 
-## Strip view mode
+## Strip View Mode
 
-![](images/pageview-design-time001.png)
+![WinForms RadPageView Strip View Mode](images/pageview-design-time001.png)
 
 * __Strip Alignment__: Determines the position of the tab items in **RadPageView** in relation to the content area. It can be *Top*, *Left*, *Bottom* or *Right*.
 
@@ -55,30 +55,30 @@ There are also view-specific properties as shown below:
 
 * __Strip Buttons__: Determines the style of the navigation buttons. The available styles are *None, Auto, LeftScroll, RightScroll, Scroll, VS2005Style, Close, ItemList, VS2008Style, All*.
 
-## Stack view mode
+## Stack View Mode
 
-![](images/pageview-design-time002.png)
+![WinForms RadPageView Stack View Mode](images/pageview-design-time002.png)
 
 * __Stack Position__: Determines the location of the items in relation to the content area.
           
 
 * __Item Selection Mode__: Determines how the items in Stack view are selected and positioned.
 
-## Outlook view mode
+## Outlook View Mode
 
-![](images/pageview-design-time003.png)
+![WinForms RadPageView Outlook View Mode](images/pageview-design-time003.png)
 
 There are no Outlook view related properties in the Action Menu of **RadPageView**.
 
 ## ExplorerBar
 
-![](images/pageview-design-time004.png)
+![WinForms RadPageView ExplorerBar](images/pageview-design-time004.png)
 
 * **Content Size Mode**: Gets or sets a value that defines how the content areas for each item are sized. The available options are: *FixedLength, AutoSizeToBestFit, EqualLength*.
 
 ## Backstage
 
-![](images/pageview-design-time005.png)
+![WinForms RadPageView Backstage](images/pageview-design-time005.png)
 
 * __Strip Alignment__: Determines the position of the tab items in **RadPageView** in relation to the content area. It can be *Top*, *Left*, *Bottom* or *Right*.
 * __Item Alignment__: Determines the alignment of items within the strip layout.
@@ -90,7 +90,7 @@ There are no Outlook view related properties in the Action Menu of **RadPageView
 
 ## NavigationView
 
-![](images/pageview-design-time006.png)
+![WinForms RadPageView NavigationView](images/pageview-design-time006.png)
 
 * __Item Alignment__: Determines the alignment of items within the items container.
 * __Item Fit Mode__:Determines the fit mode of the items. The available modes are *None*, *Fill*, *Shrink*, *ShrinkAndFill*, *FullHeight* and *MultiLine*.
@@ -103,7 +103,7 @@ There are no Outlook view related properties in the Action Menu of **RadPageView
 
 ## OfficeNavigationBar
 
-![winforms/officenavigationbar-design-time 001](images/officenavigationbar-design-time001.png) 
+![WinForms RadPageView OfficeNavigationBar](images/officenavigationbar-design-time001.png) 
 
 * __New Theme Manager__: Adds a new RadThemeManager component to the form.
 * __Edit UI elements__: Opens a dialog that displays the Element Hierarchy Editor. This editor lets you browse all the elements in the control.

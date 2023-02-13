@@ -36,7 +36,7 @@ Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500
 
 >caption Figure 1: DropDownWidth
 
-![multicolumncombobox-drop-down-properties 001](images/multicolumncombobox-drop-down-properties001.png)
+![WinForms RadMultiColumnComboBox DropDownWidth](images/multicolumncombobox-drop-down-properties001.png)
 
 ## DropDownHeight
 
@@ -61,7 +61,7 @@ Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500
 
 >caption Figure 2: DropDownHeight
 
-![multicolumncombobox-drop-down-properties 002](images/multicolumncombobox-drop-down-properties002.png)
+![WinForms RadMultiColumnComboBox DropDownHeight](images/multicolumncombobox-drop-down-properties002.png)
 
 ## AutoSizeDropDownToBestFit
 
@@ -69,7 +69,7 @@ It determines whether the drop-down portion of the control will be auto-sized to
 
 >caption Figure 3: AutoSizeDropDownToBestFit
 
-![multicolumncombobox-drop-down-properties 003](images/multicolumncombobox-drop-down-properties003.png)
+![WinForms RadMultiColumnComboBox AutoSizeDropDownToBestFit](images/multicolumncombobox-drop-down-properties003.png)
 
 #### AutoSizeDropDownToBestFit
 

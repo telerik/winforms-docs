@@ -19,9 +19,9 @@ CTAControlName: BarcodeView
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![barcodeview-overview 001](images/barcodeview-overview001.png)
+![WinForms RadBarcodeView Sample Overview](images/barcodeview-overview001.png)
 
-![barcodeview-overview 002](images/barcodeview-overview002.png)
+![WinForms RadBarcodeView Overview Sample](images/barcodeview-overview002.png)
 
 ## Key Features
 

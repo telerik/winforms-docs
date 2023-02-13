@@ -78,7 +78,7 @@ The event arguments are of type **CameraErrorEventArgs** and they expose an **Er
 
 >caption Customized error message
 
-![webcam-events 001](images/webcam-events001.png)
+![WinForms RadWebcam Customized error message](images/webcam-events001.png)
 
 
 

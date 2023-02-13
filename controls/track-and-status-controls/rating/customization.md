@@ -51,11 +51,11 @@ Next
 
 >caption Figure 1: Default look
 
-![rating-customization 001](images/rating-customization001.png)
+![WinForms RadRating Default look](images/rating-customization001.png)
 
 >caption Figure 2: Customized look
 
-![rating-customization 002](images/rating-customization002.png)
+![WinForms RadRating Customized look](images/rating-customization002.png)
 
 ## Custom Shape
 
@@ -158,4 +158,4 @@ End Class
 
 {{endregion}} 
 
-![rating-customization 003](images/rating-customization003.png)
+![WinForms RadRating rating-customization 003](images/rating-customization003.png)

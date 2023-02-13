@@ -20,7 +20,7 @@ __RadDock__ helps you manage multiple windows in your application with a docking
 
 >caption Figure 1: RadDock 
 
-![dock-overview 000](images/dock-overview000.png)
+![WinForms RadDock Overview](images/dock-overview000.png)
 
 ## Features
 
@@ -48,7 +48,7 @@ __RadDock__ helps you manage multiple windows in your application with a docking
             
 This sample RSS Reader implements __RadDock__ and several other Telerik UI for WinForms controls. Docked tool windows contain "*Feed Subscriptions*" and "*Feed Items*". A floating tool window contains the "*Behavior*" options. At bottom left, the "*Output*" tool window is shown collapsed against the bottom edge. The lower right side of the application displays tabbed documents containing articles.
 
-![dock-overview 001](images/dock-overview001.png)
+![WinForms RadDock Tabbed Documents Containing Articles](images/dock-overview001.png)
 
 ## Tool Windows and Tabbed Documents
 
@@ -57,24 +57,24 @@ This sample RSS Reader implements __RadDock__ and several other Telerik UI for W
 * Horizontal or vertical splits between groups of DockPanels.
 
 * Full drag and drop support including the docking compass and docking hints for visual feedback
-    ![dock-overview 002](images/dock-overview002.png)
+    ![WinForms RadDock Drag and Drop Support](images/dock-overview002.png)
 
 * Tool windows can be "AutoHidden" (collapsed) or pinned open.  
 
-    ![dock-overview 003](images/dock-overview003.png)
-    ![dock-overview 004](images/dock-overview004.png)
+    ![WinForms RadDock AutoHidden](images/dock-overview003.png)
+    ![WinForms RadDock Collapsed](images/dock-overview004.png)
 
 * Fully interactive design-time layout management.
 
-    ![dock-overview 005](images/dock-overview005.png)
+    ![WinForms RadDock Layout Management](images/dock-overview005.png)
 
 * Ctrl+Tab support for navigating between DockWindows.
  
-     ![dock-overview 006](images/dock-overview006.png)
+     ![WinForms RadDock Navigating Between DockWindows](images/dock-overview006.png)
 
 * Tabbed documents (DocumentWindows) can be dragged and rearranged within the tabbed document container.
 
-    ![dock-overview 007](images/dock-overview007.png)
+    ![WinForms RadDock DocumentWindows Dragged](images/dock-overview007.png)
 
 * Automatic MDI Support. As MDI children are added to a parent form the MDI children are added to the **RadDock** as tabbed documents.
 
@@ -84,7 +84,7 @@ This sample RSS Reader implements __RadDock__ and several other Telerik UI for W
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|The new and improved __RadDock__ for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[ Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![dock-overview 009](images/dock-overview009.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize your RadDock layouts. (Runtime: 09:42)<br>[ Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![dock-overview 010](images/dock-overview010.png)|
+|The new and improved __RadDock__ for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![WinForms RadDock Overview Getting Started](images/dock-overview009.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize your RadDock layouts. (Runtime: 09:42)<br>[Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![WinForms RadDock Getting Started Advanced Layout](images/dock-overview010.png)|
 
 # See Also
 

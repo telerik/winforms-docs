@@ -13,7 +13,7 @@ previous_url: desktopalert-getting-started
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadDesktopAlert](http://tv.telerik.com/watch/winforms/getting-started-with-raddesktopalert)<br>In this video, you will learn how to get started with RadDesktopAlert.| ![desktopalert-overview 001](images/desktopalert-overview001.png)|
+|[WinForms RadDesktopAlert Getting Started with RadDesktopAlert](http://tv.telerik.com/watch/winforms/getting-started-with-raddesktopalert)<br>In this video, you will learn how to get started with RadDesktopAlert.| ![WinForms RadDesktopAlert Getting Started](images/desktopalert-overview001.png)|
 
 Follow the described steps below:
 
@@ -63,7 +63,7 @@ By default, the desktop alert will remain visible for 10 seconds. The __AutoClos
 
 The __RadDesktopAlert__ is initially shown with opacity set to *80%* whereas it is changed to *100%& when the mouse enters its bounds. The alert can also be moved over the screen by using the grip at its upper part as shown on the picture below. At the upper right part of the desktop alert there are three buttons which allow for closing it, pinning it to the screen and displaying a list of options. You can also add custom buttons to the alert by using the __ButtonItems__ collection.
 
-![desktopalert-overview 002](images/desktopalert-overview002.png)
+![WinForms RadDesktopAlert Custom Elements](images/desktopalert-overview002.png)
 
 To understand how to fully utilize the __RadDesktopAlert__, take a look at the [Properties, Methods, Events]({%slug winforms/desktopalert/properties,methods,events%}) help article.
 		

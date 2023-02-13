@@ -16,7 +16,7 @@ previous_url: multicolumncombobox-filtering
 >important The built-in filtering mechanism relies on the field names of the columns in the underlying grid. The property name of an applied filter descriptor needs to match the **FieldName** property of an existing column in the grid.
 >
 
-## Using simple FilterDescriptors
+## Using Simple FilterDescriptors
 
 Filtering operation in __RadMultiColumnComboBox__ is controlled by the Boolean __AutoFilter__ property. The data is filtered by the field specified as __DisplayMember__. In addition, you should set the filter expression (notifying the control about the rules it should use to filter the data) and add that expression to the __MasterTemplate__.
 
@@ -54,7 +54,7 @@ The code snippet above will result in the following multi-column combobox:
 
 >caption Figure 1: Basic filtering
 
-![multicolumncombobox-filtering 001](images/multicolumncombobox-filtering001.png)
+![WinForms RadMultiColumnComboBox Basic filtering](images/multicolumncombobox-filtering001.png)
 
 ## Using CompositeFilterDescriptor
 
@@ -62,7 +62,7 @@ You can filter data records by multiple values. For this purpose you have to use
 
 >caption Figure 2: Filtering with CompositeFilterDescriptors
 
-![multicolumncombobox-filtering 002](images/multicolumncombobox-filtering002.gif)
+![WinForms RadMultiColumnComboBox Filtering with CompositeFilterDescriptors](images/multicolumncombobox-filtering002.gif)
 
 {{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=CompositeFilters}} 
 {{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=CompositeFilters}} 

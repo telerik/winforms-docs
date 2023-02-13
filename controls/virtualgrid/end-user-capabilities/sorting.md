@@ -25,7 +25,7 @@ The screenshot below shows sorting by the "ProductName" column:
 
 | Ascending | Descending | Natural Sort (Unsorted) |
 | ------ | ------ | ------ |
-|![gridview-end-user-capabilities-sorting 001](images/gridview-end-user-capabilities-sorting001.png)|![gridview-end-user-capabilities-sorting 002](images/gridview-end-user-capabilities-sorting002.png)|![gridview-end-user-capabilities-sorting 003](images/gridview-end-user-capabilities-sorting003.png)|
+|![WinForms RadVirtualGrid Ascending Sorting](images/gridview-end-user-capabilities-sorting001.png)|![WinForms RadVirtualGrid Descending Sorting](images/gridview-end-user-capabilities-sorting002.png)|![WinForms RadVirtualGrid Natural Sort (Unsorted)](images/gridview-end-user-capabilities-sorting003.png)|
 
 ## Sorting in Hierarchical Tables
 
@@ -35,7 +35,7 @@ The default behavior of the grid is to allow all views of the data to be sorted,
 
 Sorting can be invoked through right clicking the column heading to display the context menu. The menu will allow you to choose from Sort Ascending, Sort Descending and to Clear Sorting.
 
-![gridview-end-user-capabilities-sorting 006](images/virtualgrid-end-user-capabilities-sorting006.png)
+![WinForms RadVirtualGrid Sorting Context Menus](images/virtualgrid-end-user-capabilities-sorting006.png)
 
 # See Also
 * [Editing Behavior]({%slug winforms/gridview/end-user-capabilities/editing-behavior%})

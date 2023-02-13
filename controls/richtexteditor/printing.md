@@ -17,7 +17,7 @@ In order to take advantage of the printing functionality, the document you want 
       
 ## Using UI 
 
-![richtexteditor-printing 001](images/richtexteditor-printing001.png)
+![WinForms RadRichTextEditor Printing Option](images/richtexteditor-printing001.png)
 
 **RadRichTextEditor**'s predefined UI – [RibbonUI]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}), allows you to directly *Print* by pressing the backstage item of the ribbon.
         

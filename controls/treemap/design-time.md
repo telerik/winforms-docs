@@ -17,7 +17,7 @@ To start using **RadTreeMap**, just drag it from the toolbox and drop it onto th
 Select RadTreeMap and click the small arrow on the top right position in order to open the Smart Tag.
 
 
-![treemap-design-time 001](images/treemap-design-time001.png)
+![WinForms RadTreeMap Smart Tag](images/treemap-design-time001.png)
 
 * **Common Tasks**
 
@@ -31,11 +31,11 @@ Select RadTreeMap and click the small arrow on the top right position in order t
 
 	* Edit Items - allows adding tree map items at design time.
 
-	![treemap-design-time 002](images/treemap-design-time002.png)
+	![WinForms RadTreeMap Edit Items Action](images/treemap-design-time002.png)
 	
 	* Edit Groups - allows adding tree map groups at design time. 
 
-	![treemap-design-time 003](images/treemap-design-time003.png)
+	![WinForms RadTreeMap Edit Groups Action](images/treemap-design-time003.png)
 
 * **Data Binding** - It is possible to bind RadTreeMap at design time by specifying the DataSource, ValueMember and DisplayMember properties. The DisplayMember property specifies the particular field in the data source which will be used from the items in RadTreeMap for their Text. The ValueMember property specifies the particular field in the data source which is used as a value for the item.
 

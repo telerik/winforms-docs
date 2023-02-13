@@ -14,8 +14,8 @@ previous_url: chartview-overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[What is new in Q3 2012 Telerik UI for WinForms](http://www.telerik.com/videos/winforms/what-is-new-in-q3-2012-radcontrols-for-winforms)<br>This webinar examines the new features found in Telerik UI for WinForms. Included in the Q3 2012 release is RadPivotGrid (Beta), Coded UI Testing Support, touch, legend and financial charts for __RadChartView__, Visual Studio 2012 compliance and much much more. See what's new in the design-time capabilities of RadChartView. (19:12 - 24:12)|![webinar Q 32012](images/webinarQ32012.png)|
-|[Getting Started with RadChartView for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radchartview-for-winforms) <br>Telerik ChartView control facilitates data visualization, achieving stunning visual effects. This chart component sets no limits on your data visualization needs. It can easily turn into Bar, Pie, Line, Area, Polar, Radar and Scatter with only a few clicks at design time. The input data is contained in a set of series classes. Each series have a collection of data points, that is, a data source which it displays according to the series’ type.|![chartview-overview 002](images/chartview-overview001.png)|
+|[WinForms RadChartView What is new in Q3 2012 Telerik UI for WinForms](http://www.telerik.com/videos/winforms/what-is-new-in-q3-2012-radcontrols-for-winforms)<br>This webinar examines the new features found in Telerik UI for WinForms. Included in the Q3 2012 release is RadPivotGrid (Beta), Coded UI Testing Support, touch, legend and financial charts for __RadChartView__, Visual Studio 2012 compliance and much much more. See what's new in the design-time capabilities of RadChartView. (19:12 - 24:12)|![WinForms RadChartView webinar Q 32012](images/webinarQ32012.png)|
+|[WinForms RadChartView Getting Started with RadChartView for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radchartview-for-winforms) <br>Telerik ChartView control facilitates data visualization, achieving stunning visual effects. This chart component sets no limits on your data visualization needs. It can easily turn into Bar, Pie, Line, Area, Polar, Radar and Scatter with only a few clicks at design time. The input data is contained in a set of series classes. Each series have a collection of data points, that is, a data source which it displays according to the series’ type.|![WinForms RadChartView chartview-overview 002](images/chartview-overview001.png)|
 
 * [Overview](#overview)
 
@@ -46,7 +46,7 @@ __RadChartView__ works with three area types - __Cartesian__, __Polar__ and __Pi
 As the name hints, this concrete chart uses the Cartesian coordinate system to plot the data points in its chart series. The X and Y axes define how each point’s coordinates in the plot area are calculated.
 
 >caption Figure 1: Cartesian Area Chart
-![radchartview-overview 002](images/chartview-overview002.png)
+![WinForms RadChartView Cartesian Area Chart](images/chartview-overview002.png)
 
 ### Axes Types
 Available are the following axes:
@@ -102,7 +102,7 @@ Each of the above series of same type may be combined in either stacks or cluste
 This area setups a polar coordinate system, where each value is positioned using a value-angle couple. Additionally, the Polar area renders Radar series, which splits the polar area into equal-size category sectors.
 
 >caption Figure 2: Polar Area Chart
-![radchartview-overview 002](images/chartview-overview003.png)
+![WinForms RadChartView Polar Area Chart](images/chartview-overview003.png)
 
 ### Axes Types
 This area setups a polar coordinate system, where each value is positioned using a value-angle couple.
@@ -128,7 +128,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 This concrete chart control visualizes its data points using radial coordinate system. Each point is represented as an arc segment where the arc’s length is actually the percentage this point’s value is from the total sum.
 
 >caption Figure 2: Pie Area Chart
-![radchartview-overview 003](images/chartview-overview004.png)
+![WinForms RadChartView Pie Area Chart](images/chartview-overview004.png)
 
 ### Series Types
 Pie Area supports __Pie__ and __Donut__ series and it does not use axes.

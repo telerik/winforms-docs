@@ -14,7 +14,7 @@ previous_url: gridview-exporting-data-export-to-csv
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Exporting to CSV with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-csv-with-radgridview-for-winforms)<br>In this video, you will learn how to export RadGridView for WinForms to the CSV file format.|![exporting-to-csv-with-radgridview-for-winforms 001](images/exporting-to-csv-with-radgridview-for-winforms001.png)|
+|[Exporting to CSV with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/exporting-to-csv-with-radgridview-for-winforms)<br>In this video, you will learn how to export RadGridView for WinForms to the CSV file format.|![WinForms RadGridView Export to CSV Tutorial](images/exporting-to-csv-with-radgridview-for-winforms001.png)|
 
 ## Overview
 
@@ -190,7 +190,7 @@ End Sub
 
 
 
-# See Also
+## See Also
 * [Export Data in a Group to Excel]({%slug winforms/gridview/exporting-data/export-data-in-a-group-to-excel%})
 
 * [Export to Excel via ExcelML Format]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%})

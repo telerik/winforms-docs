@@ -135,4 +135,4 @@ s
 
 The result looks like this:
         
-![forms-and-dialogs-messagebox-parameters 001](images/forms-and-dialogs-messagebox-parameters001.png)
+![WinForms RadMessageBox Details Section](images/forms-and-dialogs-messagebox-parameters001.png)

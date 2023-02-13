@@ -14,7 +14,7 @@ Each column element in **RadTaskBoard** has a button at the bottom for adding ne
 
 However, if the button is enabled, the default **RadTaskCardElement** that is generated is almost empty and it contains only a title:
 
-![task-board-adding-task-cards 001](images/task-board-adding-task-cards001.png)
+![WinForms RadTaskBoard Adding Empty Task Cards](images/task-board-adding-task-cards001.png)
 
 **RadTaskBoardColumnElement** offers the **TaskCardAdding** event which allows you to define default values for the new task card of a certain column element.
 
@@ -76,7 +76,7 @@ End Sub
 
 {{endregion}}  
 
-![task-board-adding-task-cards 002](images/task-board-adding-task-cards002.png)
+![WinForms RadTaskBoard Adding Task Cards](images/task-board-adding-task-cards002.png)
   
 # See Also
 

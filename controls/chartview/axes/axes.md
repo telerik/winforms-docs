@@ -52,7 +52,7 @@ Each __RadChartView__ area type uses a different set of axes to plot its data po
 >note The EnableElementCache property is by default set to *true*. In scenarios requiring frequent updates in the chart`s data points it is recommended to set the property to *false*.
 
 >caption Figure 1: Axes Types
-![chartview-axes 001](images/chartview-axes001.png)
+![WinForms RadChartView Axes Types](images/chartview-axes001.png)
 
 The following example demonstrates how some of the above properties are set: 
 
@@ -149,7 +149,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 2: Property Settings
-![chartview-axes 002](images/chartview-axes002.png)
+![WinForms RadChartView Property Settings](images/chartview-axes002.png)
 
 ## See Also
 

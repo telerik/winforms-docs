@@ -13,7 +13,7 @@ previous_url: gridview-rows-drag-and-drop
 
 Sometimes applications need to allow users to split items up into separate groupings. One way to handle this scenario is through moving data back and forth between several RadGridView controls. In order to achieve a better user experience, you can implement drag and drop functionality between the grids.
 
-![gridview-rows-drag-and-drop 002](images/gridview-rows-drag-and-drop002.png)
+![WinForms RadGridView Two Controls](images/gridview-rows-drag-and-drop002.png)
 
 This help article demonstrates how to extend the RadGridView control to enable drag and drop functionality between two grids, whether it be an unbound grid, bound to a binding list of objects, or bound to a DataSet. It supports the ability to drag and drop multiple rows at a time.
 
@@ -151,7 +151,7 @@ End Class
 
 It is important to register this behavior in our grid. Build the solution and our custom grid is now setup and ready to use. You can locate it in the Visual Studio toolbox when in the design view of a form.
 
-![gridview-rows-drag-and-drop 003](images/gridview-rows-drag-and-drop003.png)
+![WinForms RadGridView Toolbox](images/gridview-rows-drag-and-drop003.png)
 
 ## Drag and Drop events
 
@@ -423,7 +423,7 @@ End Sub
 
 Open the designer for Form1 and layout your form by dragging two instances of our __DragAndDropRadGrid__ control (name them leftGrid and rightGrid respectively). Then drag three RadButton instances and name them `btnUnbound`, `btnBoundObjects`, and `btnBoundDataSet`. Visually layout the form and label your form elements in the designer as follows:
 
-![gridview-rows-drag-and-drop 004](images/gridview-rows-drag-and-drop004.png)
+![WinForms RadGridView Custom Form](images/gridview-rows-drag-and-drop004.png)
 
 Initialize some settings of the grids in the default constructor of the form as follows, we’ll also add a method to reset the grids:
 

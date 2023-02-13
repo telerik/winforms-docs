@@ -19,7 +19,7 @@ Select **RadGroupBox** and click the small arrow on the top right position in or
 
 >caption Figure 1: Smart Tag
 >
-![panels-and-labels-groupbox-design-time 001](images/panels-and-labels-groupbox-design-time001.png)
+![WinForms RadGroupBox Smart Tag](images/panels-and-labels-groupbox-design-time001.png)
 
 * __Common Tasks__
 

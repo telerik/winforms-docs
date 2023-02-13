@@ -18,7 +18,7 @@ __RadRadialGauge__ supports Save/Load layout functionality which gives you the o
 You can easily save/load the layout with the smart tag.
 
 >caption Figure 1: Smart Tag
-![radialgauge-save-and-load-layout 001](images/radialgauge-save-and-load-layout001.png)
+![WinForms RadRadialGauge Smart Tag](images/radialgauge-save-and-load-layout001.png)
 
 ## Run Time
 

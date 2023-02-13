@@ -26,14 +26,14 @@ position: 10
 |**PeekPopup**|Gets the peek pop-up, which is represented by a RadCallout.|
 |**PeekPopupInterval**|Gets or sets the interval needed to show a PeekPopup after a RadPageViewItem is hovered.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |**EnsurePageVisible**|Ensures that the passed page as an argument will be visible.|
 |**ShowPeekPopup**|Shows a peek pop-up over a RadPageViewItem. The content of the peek pop-up needs to be set in the __RadPageViewElement.PeekPopupOpening__ event.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|

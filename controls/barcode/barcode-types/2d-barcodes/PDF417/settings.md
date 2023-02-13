@@ -12,7 +12,7 @@ position: 0
 
 This article explains the specific PDF417 code settings.
 
-![winforms/barcode-2d-barcodes-pdf417-settings 001](images/barcode-2d-barcodes-pdf417-settings001.png)
+![WinForms RadBarcode PDF417 Settings](images/barcode-2d-barcodes-pdf417-settings001.png)
 
 >note Depending on the mode and error correction levels, any invalid characters, entered by the user, as well as any characters, which surpass the maximum number of symbols, which can be accommodated, will be discarded.
 
@@ -23,18 +23,18 @@ This is an enumeration, which determines the types of symbols, which will be acc
 * **Auto** - This specifies no particular encoding mode. This means that the barcode control will determine internally how to encode each particular symbol, according to the ISO specification.
 * **Byte** - The Byte Compaction mode enables a sequence of 8-bit bytes to be encoded into a sequence of codewords. It is accomplished by a Base 256 to Base 900 conversion, which achieves a compaction ratio of six bytes to five codewords. Characters with ascii codes from 0 to 255 are acceptable. The table below lists all the characters and their values.
 
-	![winforms/barcode-2d-barcodes-pdf417-settings 003](images/barcode-2d-barcodes-pdf417-settings003.png)
+	![WinForms RadBarcode PDF417 Encoding Mode Byte](images/barcode-2d-barcodes-pdf417-settings003.png)
 
 * **Numeric** - The numeric mode allows encoding of numeric symbols only [0-9]. Any other characters are discarded.
 * **Text** - The text mode allows encoding of text characters – upper and lowercase letters, as well as digits, punctuation and some additional characters. The complete character table is listed below:
 
-	![winforms/barcode-2d-barcodes-pdf417-settings 004](images/barcode-2d-barcodes-pdf417-settings004.png)
+	![WinForms RadBarcode PDF417 Encoding Mode Text](images/barcode-2d-barcodes-pdf417-settings004.png)
 
 ## Error Correction Level
 
 This is an integer value from 0 to 8. This value determines how many error correction clusters will be added to the rendered data. The table below lists the values for each level of error correction:
 
-![winforms/barcode-2d-barcodes-pdf417-settings 002](images/barcode-2d-barcodes-pdf417-settings002.png)
+![WinForms RadBarcode PDF417 Error Correction Level](images/barcode-2d-barcodes-pdf417-settings002.png)
 
 ## Rows and Columns
 

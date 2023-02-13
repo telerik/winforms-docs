@@ -13,7 +13,7 @@ position: 0
 [HTML](http://en.wikipedia.org/wiki/HTML) (HyperText Markup Language) is a markup language used to create web pages.
 
 >caption Figure1: Html Document
-![RadRichTextBox Formats And Conversion Html 01](images/RadRichTextBox_Formats_And_Conversion_Html_01.png)
+![WinForms RadRichTextEditor Html Document](images/RadRichTextBox_Formats_And_Conversion_Html_01.png)
 
 __HtmlFormatProvider__ is compliant with [HTML5 specification](http://www.w3.org/TR/html5/), developed by W3C.
 

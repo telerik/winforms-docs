@@ -18,7 +18,7 @@ Select **RadDataFilter** and click the small arrow on the top right position in 
 
 >caption Figure 1: Smart Tag
 
-![datafilter-design-time 001](images/datafilter-design-time001.png)
+![WinForms RadDataFilter Smart Tag](images/datafilter-design-time001.png)
 
 * __New Theme Manager__: adds a new [RadThemeManager]({%slug winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form%}) component to the form.
             
@@ -30,7 +30,7 @@ Select **RadDataFilter** and click the small arrow on the top right position in 
 
 >caption Figure 2: RadDataFilter Design Time Editor
 
-![datafilter-design-time 002](images/datafilter-design-time002.png)
+![WinForms RadDataFilter Design Time Editor](images/datafilter-design-time002.png)
 
 * __Edit Descriptors__ – opens the *RadItem Collection Editor* which allows you to add/remove/modify **DataFilterDescriptorItems** specifying the **DescriptorName** and **DescriptorType**.
 
@@ -46,21 +46,21 @@ The *RadItem Collection Editor* can be shown either via the **Smart Tag** or by 
 
 >caption Figure 3: Descriptors collection
 
-![datafilter-design-time 004](images/datafilter-design-time004.png) 
+![WinForms RadDataFilter Descriptors collection](images/datafilter-design-time004.png) 
 
 >caption Figure 4: RadItem Collection Editor
 
-![datafilter-design-time 003](images/datafilter-design-time003.png) 
+![WinForms RadDataFilter RadItem Collection Editor](images/datafilter-design-time003.png) 
 
 After you already have some **DataFilterDescriptorItems**, you can add a *Group* or an *Expression* for composing the desired filters via the *RadDataFilter Design Time Editor*. The logical operation is controlled by the *Any* or *All* root node.
 
 >caption Figure 5: Applied filters
 
-![datafilter-design-time 005](images/datafilter-design-time005.png) 
+![WinForms RadDataFilter Applied filters](images/datafilter-design-time005.png) 
 
 >caption Figure 6: Logical operator
 
-![datafilter-design-time 006](images/datafilter-design-time006.png) 
+![WinForms RadDataFilter Logical operator](images/datafilter-design-time006.png) 
 
 
 # See Also

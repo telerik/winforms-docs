@@ -54,7 +54,7 @@ Me.Controls.Add(radDropDownButton)
 
 {{endregion}} 
 
-![buttons-dropdownbutton-overview 001](images/buttons-dropdownbutton-overview001.png)
+![WinForms RadButtons buttons-dropdownbutton-overview 001](images/buttons-dropdownbutton-overview001.png)
 
 Similarly, you can create item hierarchies in code by adding new __RadMenuItem__ objects to the __Items__ collection of your existing __RadMenuItem__.
 
@@ -113,11 +113,11 @@ End Namespace
 
 You can display images and text on your menu items.
 
-![buttons-dropdownbutton-working-with-raddropdownbutton-items 003](images/buttons-dropdownbutton-working-with-raddropdownbutton-items003.png)
+![WinForms RadButtons buttons-dropdownbutton-working-with-raddropdownbutton-items 003](images/buttons-dropdownbutton-working-with-raddropdownbutton-items003.png)
 
 To add an image to your menu item, click in the __Image__ property of the __RadMenuItem__, and then click the ellipsis button to launch the __Select Resource__ dialog. From this dialog you can select an image file from a project resource file or from an image resource on your local hard drive. 
 
-![buttons-dropdownbutton-working-with-raddropdownbutton-items 004](images/buttons-dropdownbutton-working-with-raddropdownbutton-items004.png)
+![WinForms RadButtons buttons-dropdownbutton-working-with-raddropdownbutton-items 004](images/buttons-dropdownbutton-working-with-raddropdownbutton-items004.png)
 
 ## Using the Click Event
 

@@ -15,7 +15,7 @@ When __RadListView__ is in bound mode, it does not support drag and drop functio
 
 >caption Figure 1: Drag and drop in bound mode
 
-![listview-drag-and-drop-drag-and-drop-in-bound-mode 001](images/listview-drag-and-drop-drag-and-drop-in-bound-mode001.gif)
+![WinForms RadListView Drag and drop in bound mode](images/listview-drag-and-drop-drag-and-drop-in-bound-mode001.gif)
 
 1\. Let’s start with populating the __RadListView__ with data. For this purpose we will create a class **Item** and fill a **BindingList** with items:
 

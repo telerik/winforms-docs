@@ -59,7 +59,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 1: Binding to BindingList
-![chartview-databinding-binding-to-bindinglist 001](images/chartview-databinding-binding-to-bindinglist001.png)
+![WinForms RadChartView Binding to BindingList](images/chartview-databinding-binding-to-bindinglist001.png)
 
 In order to allow __RadChartView__ to automatically reflect changes in the data source, your object should implement the INotifyPropertyChanged interface: 
 
@@ -171,7 +171,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 2: Reflect Object Changes
-![chartview-databinding-binding-to-bindinglist 002](images/chartview-databinding-binding-to-bindinglist002.png)
+![WinForms RadChartView Reflect Object Changes](images/chartview-databinding-binding-to-bindinglist002.png)
 
 # See Also
 

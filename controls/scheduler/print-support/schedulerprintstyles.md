@@ -148,7 +148,7 @@ schedulerPrintStyle.HeadingAreaHeight = 100
 ## DailyStyle
 
 >caption Figure 1: SchedulerDailyPrintStyle
-![scheduler-print-support-schedulerprintstyle-dailystyle](images/scheduler-print-support-schedulerprintstyle-dailystyle.png)
+![WinForms RadScheduler SchedulerDailyPrintStyle](images/scheduler-print-support-schedulerprintstyle-dailystyle.png)
 
 The __SchedulerDailyPrintStyle__ class defines printing of RadScheduler in a daily manner. Each day is displayed on a separate page. The appointments are arranged in a grid similarly to the __SchedulerDayView__. The SchedulerDailyPrintStyle provides properties for changing the size of its specific visual parts: the hours column on the left and the area for all day appointments. Additionally, you can allow printing two pages per day. The second page in the mode is reserved for notes.
 
@@ -179,7 +179,7 @@ dailyStyle.TwoPagesPerDay = True
 ## WeeklyCalendarStyle
 
 >caption Figure 2: SchedulerWeeklyCalendarPrintStyle
-![scheduler-print-support-schedulerprintstyle 001](images/scheduler-print-support-schedulerprintstyle001.png)
+![WinForms RadScheduler SchedulerWeeklyCalendarPrintStyle](images/scheduler-print-support-schedulerprintstyle001.png)
 
 In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where each column represents a day. And each row represents a specific time frame.  This style provides properties for changing the dimensions of its visual parts and the font for the header cells. 
 
@@ -218,7 +218,7 @@ weeklyCalendarStyle.HoursColumnWidth = 30
 ## WeeklyStyle
 
 >caption Figure 3: SchedulerWeeklyPrintStyle
-![scheduler-print-support-schedulerprintstyle-weeklystyle](images/scheduler-print-support-schedulerprintstyle-weeklystyle.png)
+![WinForms RadScheduler SchedulerWeeklyPrintStyle](images/scheduler-print-support-schedulerprintstyle-weeklystyle.png)
 
 The SchedulerWeeklyPrintStyle class defines printing of RadScheduler in a weekly manner. Each week is displayed on a separate page. The appointments are arranged in a grid in which each cell represents a day of the week. The SchedulerWeeklyPrint provides properties for changing the height of the appointments and the layout of its visual parts.
         
@@ -253,7 +253,7 @@ weeklyStyle.TwoPagesPerWeek = True
 ## MonthlyStyle
 
 >caption Figure 4: SchedulerMonthlyPrintStyle
-![scheduler-print-support-schedulerprintstyle-monthlystyle](images/scheduler-print-support-schedulerprintstyle-monthlystyle.png)
+![WinForms RadScheduler SchedulerMonthlyPrintStyle](images/scheduler-print-support-schedulerprintstyle-monthlystyle.png)
 
 The SchedulerMonthlyPrintStyle class defines printing of RadScheduler in a monthly manner. Each month is displayed on a separate page. The appointments are arranged in a grid in  which each cell represents a day of the month.
         
@@ -306,7 +306,7 @@ monthlyStyle.VerticalHeaderWidth = 100
 ## DetailsStyle
 
 >caption Figure 5: SchedulerDetailsPrintStyle
-![scheduler-print-support-schedulerprintstyle-detailsstyle](images/scheduler-print-support-schedulerprintstyle-detailsstyle.png)
+![WinForms RadScheduler SchedulerDetailsPrintStyle](images/scheduler-print-support-schedulerprintstyle-detailsstyle.png)
 
 The __SchedulerDetailsPrintStyle__ defines printing of RadScheduler in a continuous manner. Appointments are printed in ascending order of their start date. This mode does not provide page headers.        
 

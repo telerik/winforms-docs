@@ -47,7 +47,7 @@ position: 7
 |**BackColor**|RadPropertyGrid consists of multiple visual elements and separate settings are provided to customize their appearance. Current BackColor property might be ignored.|
 |**ForeColor**|RadPropertyGrid consists of multiple visual elements and separate settings are provided to customize their appearance. Current ForeColor property might be ignored.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|
@@ -60,7 +60,7 @@ position: 7
 |**EndEdit**|Commits any changes and ends the edit operation on the current item.|
 |**CancelEdit**|Close the currently active editor and discard changes.|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|
@@ -90,7 +90,7 @@ position: 7
 |**ValueChanging**|Fires before the value in an editor is being changed. The action can be canceled.|
 |**ValueChanged**|Fires when the value of an editor changes.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpropertygrid.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radpropertygrid.html#methods)

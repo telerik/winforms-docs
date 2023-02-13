@@ -19,19 +19,19 @@ The **RowGroupDescriptions** and **ColumnGroupDescriptions** can be sorted ascen
 
 >caption Figure 1: Ascending Rows
 
-![pivotgrid-sorting 001](images/pivotgrid-sorting001.png)
+![WinForms RadPivotGrid Ascending Rows](images/pivotgrid-sorting001.png)
 
 The **RowGroupDescription** in this **RadPivotGrid** is the Product field. By default the sorting of the columns is ascending (from A to Z) based on the headers: Copy holder, Glare filter, Mouse pad, Printer stand. You can easily change the sorting of the Product description and set it to descending (from Z to A). One of the ways to achieve this is to simply click the “Product” element. This will lead to the result below. The row headers are reordered based on their names.
 
 >caption Figure 2: Descending Rows
 
-![pivotgrid-sorting 002](images/pivotgrid-sorting002.png)
+![WinForms RadPivotGrid Descending Rows](images/pivotgrid-sorting002.png)
 
 You can also apply sorting based on some of the **PropertyAggregateDescription** you are using. In the example above you can apply sorting of the Product names in ascending (from A to Z) or descending (from Z to A) format based on the Total Sum of Quantity (green rectangle). Here is the new view of **RadPivotGrid** when the Product **RowGroupDescription** is sorted in descending order based on the Total Sum of Quantity:
 
 >caption Figure 3: Descending Totals
 
-![pivotgrid-sorting 003](images/pivotgrid-sorting003.png)
+![WinForms RadPivotGrid Descending Totals](images/pivotgrid-sorting003.png)
 
 >note The sorting is set on the **ColumnGroupDescriptions** or **RowGroupDescriptions**. You cannot set sorting on the **AggregateDescriptions**, but you can sort the columns or rows based on the aggregated values.
 >
@@ -97,13 +97,13 @@ Me.radPivotGrid1.ReloadData()
 
 >caption Figure 4: Pivot Field
 
-![pivotgrid-sorting 004](images/pivotgrid-sorting004.png)
+![WinForms RadPivotGrid Pivot Field](images/pivotgrid-sorting004.png)
 
 If you want to change the property based on which the sort is applied, then you can use the third option - More Sorting Options. A new dialog will be opened in which you can choose Ascending or Descending order of the sort. When you click the dropdown button you'll see a full list of the possible sorting basis:
 
 >caption Figure 5: Pivot Field Sort Options
 
-![pivotgrid-sorting 005](images/pivotgrid-sorting005.png)
+![WinForms RadPivotGrid Pivot Field Sort Options](images/pivotgrid-sorting005.png)
 
 # See Also
 

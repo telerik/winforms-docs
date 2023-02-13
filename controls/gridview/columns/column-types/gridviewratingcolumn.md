@@ -15,7 +15,7 @@ This article describes how setup and use __GridViewRatingColumn__ in __RadGridVi
 
 __GridViewRatingColumn__ allows you to represent and edit numeric value as rating elements. Each cell in __GridViewRatingColumn__ contains permanent editor from type RadRatingElement. 
 
-![gridview-columns-gridviewratingcolumn 001](images/gridview-columns-gridviewratingcolumn001.png)
+![WinForms RadGridView GridViewRatingColumn](images/gridview-columns-gridviewratingcolumn001.png)
 
 The following code snippet demonstrates how to create and add __GridViewRatingColumn__ to RadGridView and also add some sample data in it:
 

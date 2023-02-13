@@ -20,16 +20,16 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadCalculatorArrowButtonElement__ in *Controls Structure* on the left side. Then, select __RadArrowButtonFill__ in the *Elements* section.
 
-	![editors-calculatordropdown-themes 001](images/editors-calculatordropdown-themes001.png)
+	![WinForms RadCalculatorDropDown VisualStyleBuilder RadArrowButtonFill](images/editors-calculatordropdown-themes001.png)
 
 1. Modify the applied back color. 
 
-	![editors-calculatordropdown-themes 002](images/editors-calculatordropdown-themes002.png)
+	![WinForms RadCalculatorDropDown RadArrowButtonFill Color](images/editors-calculatordropdown-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 
 1. Now, you can apply your custom theme to __RadCalculatorDropDown__ by using the demonstrated approach in the following link: [Using custom themes]({%slug winforms/themes/using-custom-themes%})<br>
-	![editors-calculatordropdown-themes 003](images/editors-calculatordropdown-themes003.png)
+	![WinForms RadCalculatorDropDown Customized RadArrowButtonFill](images/editors-calculatordropdown-themes003.png)
 
 # See Also 
 

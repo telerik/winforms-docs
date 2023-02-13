@@ -12,9 +12,9 @@ position: 0
 
 The drag and drop feature of the file dialogs allows you to grab items (file and folders) and move them to a different location. The feature supports copy and move operations and it is enabled by default. 
 
-#### Figure 1: Drag drop files
+#### Figure 1: Drag-Drop Files
 
-![](images/filedialogs-drag-drop-overview001.png) ![](images/filedialogs-drag-drop-overview002.png)
+![WinForms RadFileDialogs DragDrop Overview Source](images/filedialogs-drag-drop-overview001.png) ![WinForms RadFile-Dialogs DragDrop Overview Target](images/filedialogs-drag-drop-overview002.png)
 
 The dialog gives you the ability to drag and drop in the main pane and the tree navigation pane, and also between them.
 

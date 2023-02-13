@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __CommandBarStripElement__ in *Controls Structure* on the left side. 
 
-	![commandbar-customizing-appearance-themes 001](images/commandbar-customizing-appearance-themes001.png)
+	![WinForms RadCommandBar Select CommandBarStripElement](images/commandbar-customizing-appearance-themes001.png)
 
 1. Expand the __CommandBarStripElement__ in the *Elements* section. Modify the applied back color and gradient style. 
 
-	![commandbar-customizing-appearance-themes 002](images/commandbar-customizing-appearance-themes002.png)
+	![WinForms RadCommandBar Expand CommandBarStripElement](images/commandbar-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

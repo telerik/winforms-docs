@@ -19,7 +19,7 @@ This example demonstrates binding __RadDataLayout__ to a single object or a coll
             
 >caption Figure 1: RadDataLayout Control
 
-![datalayout-getting-started 001](images/datalayout-getting-started001.png)
+![WinForms RadDataLayout Getting Started](images/datalayout-getting-started001.png)
 
 2\. Let`s define the layout of our data control.
 
@@ -145,7 +145,7 @@ Me.RadDataLayout1.DataSource = New EmployeeModel() With {
             
 >caption Figure 2: Bound to Single Object
 
-![datalayout-getting-started 002](images/datalayout-getting-started002.png)
+![WinForms RadDataLayout Bound to Single Object](images/datalayout-getting-started002.png)
 
 ## Binding RadDataLayout to multiple objects
 
@@ -153,7 +153,7 @@ Besides a __RadDataLayout__ we are also going to need a __RadBindingNavigator__ 
         
 >caption Figure 3: Added RadBindingNavigator
 
-![datalayout-getting-started 003](images/datalayout-getting-started003.png)
+![WinForms RadDataLayout Added RadBindingNavigator](images/datalayout-getting-started003.png)
 
 Compared to the previously shown example only the data binding is different. This time we are going to bind the __RadDataLayout__ control to a list of our model objects. The same list will also provide data to the **BindingSource** component.
 
@@ -241,7 +241,7 @@ Press __F5__ to run the project and you should see the following:
         
 >caption Figure 4: Bound to Multiple Objects
 
-![datalayout-getting-started 004](images/datalayout-getting-started004.gif)
+![WinForms RadDataLayout Bound to Multiple Objects](images/datalayout-getting-started004.gif)
 
 
 # See Also

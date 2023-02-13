@@ -39,7 +39,7 @@ __RadDataEntry__ control generates various editors depending on the type of prop
 In addition __RadDataEntry__ allows manual setting and customization of editors and their layouts via the standard for windows forms practices. It is highly customizable, allowing the user to modify the default look in easy and intuitive manner.
 
 >caption Figure 1: RadDataEntry
-![dataentry-overview 001](images/dataentry-overview001.png)
+![WinForms RadDataEntry Overview](images/dataentry-overview001.png)
 
 # See Also
 

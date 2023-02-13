@@ -22,7 +22,7 @@ The following image show how the indicator look with different kind of series.
 
 >caption Figure 1: Indicators 
 
-![](images/sparkline-indicators001.png)
+![WinForms RadSparkline Indicators](images/sparkline-indicators001.png)
 
 When the indicators are enabled the color of the respected point will be changed. You can customize the style of the indicators. The indicators properties are listed in the following article [Series Overview]({%slug radsparkline-series-overview%}).
 
@@ -73,5 +73,5 @@ End Sub
 
 >caption Figure 2: Show and Customize Indicators
 
-![](images/sparkline-indicators002.png)
+![WinForms RadSparkline Show and Customize Indicators](images/sparkline-indicators002.png)
 

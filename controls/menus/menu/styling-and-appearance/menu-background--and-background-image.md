@@ -22,7 +22,7 @@ The RadMenu's __BackgroundImage__ and __BackgroundImageLayout__ properties let y
 
 To provide an image to the background of __RadMenu__, use a standard Windows __Panel__ control, set the __BackGroundImage__ property to the image for your menu and finally set the RadMenu.__BackColor__ property to *Transparent*. See the *Demo application >> Menu >> Menu First look example* that ships with the Telerik UI for WinForms. 
 
-![menus-menu-styling-and-appearance-menu-background-and-background-image 001](images/menus-menu-styling-and-appearance-menu-background-and-background-image001.png)
+![WinForms RadMenu Menu Background Image](images/menus-menu-styling-and-appearance-menu-background-and-background-image001.png)
 
 # See Also
 

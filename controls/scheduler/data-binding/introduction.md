@@ -14,8 +14,8 @@ previous_url: scheduler-data-binding-introduction
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)<br/>In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)|![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)
-|[Introduction to RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/introduction-radscheduler-winforms) <br>In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)|
+|[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)<br/>In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)|![WinForms RadScheduler Codeless Bind Video](images/scheduler-data-binding-codeless-data-binding001.png)
+|[Introduction to RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/introduction-radscheduler-winforms) <br>In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![WinForms RadScheduler Video](images/scheduler-data-binding-codeless-data-binding002.png)|
 
 | RELATED BLOGS |
 | ------ |
@@ -30,7 +30,7 @@ Here are some of the other helpful properties that can be set at design time:
 
 * __AccessibleInterval__ is a the duration of time that the user is allowed to use.
 
-![scheduler-data-binding-introduction 001](images/scheduler-data-binding-introduction001.png)
+![WinForms RadScheduler Data Bind Introduction](images/scheduler-data-binding-introduction001.png)
 
 >note The active view cannot be changed if the new view is not in the accessible interval.
 >

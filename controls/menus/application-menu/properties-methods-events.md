@@ -20,13 +20,13 @@ position: 5
 |**ShowItemToolTips**|Gets or sets a value indicating whether ToolTips are shown for the RadItem objects contained in the RadControl.|
 |**DropDownButtonElement**|Gets the instance of RadApplicationMenuButtonElement wrapped by this control. RadApplicationMenuButtonElement is the main element in the hierarchy tree and encapsulates the actual functionality of RadApplicationMenu.|
 
-# Methods
+## Methods
 |Method|Description|
 |----|----|
 |DropDownButtonElement.**ShowDropDown**|Shows the drop down menu.|
 |DropDownButtonElement.**HideDropDown**|Hides the drop down menu.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|

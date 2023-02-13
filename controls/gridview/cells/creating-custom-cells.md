@@ -220,7 +220,7 @@ Me.RadGridView1.Columns.Add(customColumn)
 
 >caption Figure 1: The custom column is now added to the grid.
 
-![gridview-cells-custom-cell 001](images/gridview-cells-custom-cell001.png)
+![WinForms RadGridView The custom column is now added to the grid](images/gridview-cells-custom-cell001.png)
 
 ## Extending the custom data cell example
 
@@ -324,7 +324,7 @@ End Function
 
 >caption Figure 2: The new custom cell is shown in RadgridView.
 
-![gridview-cells-custom-cell 002](images/gridview-cells-custom-cell002.png)
+![WinForms RadGridView The new custom cell is shown](images/gridview-cells-custom-cell002.png)
 
 ## Custom group cell example
 
@@ -332,7 +332,7 @@ When the __EnableGrouping__ property is set to *true* the __GroupPanelElement__ 
 
 >caption Figure 3: The custom group cell contains a drop down list.
 
-![gridview-cells-custom-cell 003](images/gridview-cells-custom-cell003.png)
+![WinForms RadGridView The custom group cell contains a drop down list](images/gridview-cells-custom-cell003.png)
 
 1\. Create a class that inherits the __GridGroupContentCellElement__. In its __CreateChildElements__ method we will use a __RadDropDownListElement__ which contains the aggregate functions and a __LightVisualElement__ to display the calculated result. In the __SetContent__ method we should display the cell information considering for which row it is currently being used:
 

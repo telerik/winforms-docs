@@ -45,7 +45,7 @@ position: 5
 |__CloseButton__|Gets or sets if the ribbon bar has close button in its caption.|
 |__LocalizationSettings__|Gets the localization settings associated with this control.|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|
@@ -55,7 +55,7 @@ position: 5
 |__KeyTipActivating__|Occurs when the user is press Key tip.|
 |__KeyTipShowing__|Occurs when the RadRibbonBar is painting Key tips.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radribbonbar.html#properties)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radribbonbar.html#events)

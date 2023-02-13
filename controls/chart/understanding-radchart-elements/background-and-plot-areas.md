@@ -42,7 +42,7 @@ The plot area is the working rectangular area between X and Y axes where data is
 
 >caption 
 
-![chart-undestanding-radchart-elements-background-and-plot-areas 001](images/chart-undestanding-radchart-elements-background-and-plot-areas001.png)
+![WinForms RadChart Plot Area EmptySeriesMessage](images/chart-undestanding-radchart-elements-background-and-plot-areas001.png)
 
 Like the __RadChart__ as a whole, __PlotArea__ has an __Appearance__ property allowing customization:
 

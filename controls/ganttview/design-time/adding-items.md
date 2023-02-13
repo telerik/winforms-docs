@@ -9,11 +9,11 @@ position: 2
 previous_url: ganttview-designtime-adding-items
 ---
 
-# Adding items
+# Adding Items
 
 The __GanttViewDataItem__ Collection Editor allows you to add tasks to the gantt view in design time.
         
-![ganttview-designtime-adding-items 001](images/ganttview-designtime-adding-items001.png)
+![WinForms RadGanttView Adiing Items Design Time](images/ganttview-designtime-adding-items001.png)
 
 The more important properties of the item you need to set up are:
 

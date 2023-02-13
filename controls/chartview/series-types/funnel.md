@@ -14,7 +14,7 @@ previous_url: chartview-series-types-funnel
 A funnel chart displays a single series of data in progressively decreasing or increasing proportions, organized in segments, where each segment represents the value for the particular item from the series. The items' values can also influence the height and the shape of the corresponding segments. 
 
 >caption Figure 1: FunnelSeries
-![chartview-series-types-funnel 001](images/chartview-series-types-funnel001.png)
+![WinForms RadChartView FunnelSeries Initial Setup](images/chartview-series-types-funnel001.png)
 
 The funnel series has several properties that control the way a chart's segments are rendered.
 

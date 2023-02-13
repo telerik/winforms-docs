@@ -15,7 +15,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 
 >caption Figure 1: The final application layout.
 
-![dock-getting-started 003](images/dock-getting-started003.png)
+![WinForms RadDock The final Application Layout](images/dock-getting-started003.png)
 
 ## Configure the RadDock
 
@@ -27,7 +27,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 
 4\. In the **RadRibbonBar** on top, click the left green arrow to dock a new __ToolWindow__ to the left.
 
-![dock-getting-started 001](images/dock-getting-started001.png)
+![WinForms RadDock RibbonBar ToolWindow](images/dock-getting-started001.png)
 
 >note The list on the left side of the preview displays all created windows. From this list you can set the __Visibility__ of the **ToolWindows** to *false*, if you do not need some of them visible at run time initially.
 >
@@ -36,7 +36,7 @@ This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on 
 
 6\. Click __Save and Close__ button to close the dialog and save the layout to the __RadDock__. 
 
-![dock-getting-started 002](images/dock-getting-started002.png)
+![WinForms RadDock Save and Close Button](images/dock-getting-started002.png)
 
 For more complex scenarios the advanced layout designer provides full drag and drop and user interaction support in the preview __RadDock__ control.
 
@@ -171,7 +171,7 @@ Press __F5__ to run the application. Try experimenting with...
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|The new and improved RadDock for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[ Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![dock-getting-started 004](images/dock-getting-started004.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize yoru RadDock layouts. (Runtime: 09:42)<br>[ Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![dock-getting-started 005](images/dock-getting-started005.png)|
+|The new and improved RadDock for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![WinForms RadDock Getting Started](images/dock-getting-started004.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize yoru RadDock layouts. (Runtime: 09:42)<br>[Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![WinForms RadDock Advanced Layout](images/dock-getting-started005.png)|
 
 # See Also
 

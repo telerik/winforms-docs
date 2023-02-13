@@ -19,7 +19,7 @@ The __ListView__ view has much the same look as **RadListControl**. It uses the 
 
 >caption Figure 1: ListView
 
-![listview-views 001](images/listview-views001.png)
+![WinForms RadListView List View](images/listview-views001.png)
 
 ## IconsView
 
@@ -27,11 +27,11 @@ The __IconView__ displays the list items in icons, a manner that you surely are 
         
 >caption Figure 2: IconView with Vertical orientation 
 
-![listview-views 002](images/listview-views002.png)
+![WinForms RadListView IconView with Vertical orientation](images/listview-views002.png)
 
 >caption Figure 3: IconView with Horizontal orientation 
 
-![listview-views 004](images/listview-views004.png)
+![WinForms RadListView Icon View with Horizontal orientation](images/listview-views004.png)
 
 
 ## DetailsView
@@ -40,4 +40,4 @@ The __DetailsView__ provides a grid-like interface for displaying items with mor
 
 >caption Figure 4: DetailView
 
-![listview-views 003](images/listview-views003.png)
+![WinForms RadListView Detail View](images/listview-views003.png)

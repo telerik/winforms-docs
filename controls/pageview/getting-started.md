@@ -14,7 +14,7 @@ To use **RadPageView**, you can simply drag it from Toolbox and drop it onto you
 
 >caption Figure 1: Adding pages via Smart Tag
 
-![pageview-getting-started001](images/pageview-getting-started001.png)
+![WinForms RadPageView Adding pages via Smart Tag](images/pageview-getting-started001.png)
 
 To adjust properties of the specific view, you should find the __ViewElement__ property in the property grid and expand its sub-properties where you can find settings specific to the currently active view. This is the general approach to set up the **RadPageView** control in the designer without considering the view mode.
 

@@ -14,7 +14,7 @@ position: 1
 
 >caption Figure 1: Drag and Drop Between RadMap and RadListView 
 
-![radmap-drag-and-drop-ole-drag-and-drop 001](images/radmap-drag-and-drop-ole-drag-and-drop001.gif)
+![WinForms RadMap Drag and Drop Between RadMap and RadListView](images/radmap-drag-and-drop-ole-drag-and-drop001.gif)
 
 In order to achieve the desired result the MouseMove, MouseUp, and DragEnter events need to be handled by **RadMap**. The drag operation will be started in the handler of the MouseMove event. **RadListView** needs to be subscribed to the DragEnter and DragDrop events.
 

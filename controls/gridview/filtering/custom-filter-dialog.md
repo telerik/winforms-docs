@@ -15,13 +15,13 @@ When you select the *Custom* item from the filter menu (*Available Filter* menu 
 
 >caption Figure 1: Custom filter
 
-![gridview-filtering-composite-filter-dialog 003](images/gridview-filtering-composite-filter-dialog003.png)
+![WinForms RadGridView Custom filter](images/gridview-filtering-composite-filter-dialog003.png)
 
 Since *R1 2017 SP*, a **CompositeDataFilterForm** is shown. This dialog uses a [RadDataFilter]({%slug winforms/datafilter/overview%}) allowing the user to compose a complex filter expression.
 
 >caption Figure 2: CompositeDataFilterForm
 
-![gridview-filtering-composite-filter-dialog 002](images/gridview-filtering-composite-filter-dialog002.png)
+![WinForms RadGridView CompositeDataFilterForm](images/gridview-filtering-composite-filter-dialog002.png)
 
  In the previous versions a __CompositeFilterForm__ is displayed. The __CreateCompositeFilterDialog__ event is fired before the custom filter dialog is created. It allows you to create the default dialog and customize it or initialize your own implementation of the composite filter dialog.
 
@@ -55,9 +55,9 @@ End Sub
 
 >caption Figure 3: CompositeFilterForm
 
-![gridview-filtering-composite-filter-dialog 001](images/gridview-filtering-composite-filter-dialog001.png)
+![WinForms RadGridView CompositeFilterForm](images/gridview-filtering-composite-filter-dialog001.png)
 
-# See Also
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Custom Filtering]({%slug winforms/gridview/filtering/custom-filtering%})

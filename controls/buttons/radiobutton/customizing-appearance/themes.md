@@ -21,11 +21,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadRadioButtonElement__ in *Controls Structure* on the left side. Then, select __RadRaiomark__ in the *Elements* section.
 
-	![radiobutton-customizing-appearance-themes 001](images/radiobutton-customizing-appearance-themes001.png)
+	![WinForms RadRadioButtonElement VisualStyleBuilder RadRiomark](images/radiobutton-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![radiobutton-customizing-appearance-themes 002](images/radiobutton-customizing-appearance-themes002.png)
+	![WinForms RadRadioButtonElement VisualStyleBuilder Fill Repository](images/radiobutton-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

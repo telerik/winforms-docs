@@ -248,7 +248,7 @@ Me.RadTextBoxControl1.Text = "Please, click here"
 
 >caption Figure 1: The "here" word is replaced with a button.
 
-![editors-textboxcontrol-creatng-custom-blocks 001](images/editors-textboxcontrol-creatng-custom-blocks001.png)
+![WinForms RadTextBoxControl The "here" word is replaced with a button](images/editors-textboxcontrol-creatng-custom-blocks001.png)
 
 # See Also
 

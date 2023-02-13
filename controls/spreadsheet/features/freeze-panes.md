@@ -14,7 +14,7 @@ position: 2
 
 To avoid this problem you can use the **Freeze Panes** feature so specific rows and columns of the spreadsheet remains visible at all times. If you have a company budget, for example, you may want to see the months and the budget items at all times:
 
-![spreadsheet-features-freeze-panes 001](images/spreadsheet-features-freeze-panes001.png)
+![WinForms RadSpreadsheet Freeze Panes](images/spreadsheet-features-freeze-panes001.png)
 
 In the scenario shown above the dark lines shows where the panes are frozen. If you scroll up or down the cells above the dark line will stay frozen and will not move, but the cells below it will be scrolled. If you scroll left or right, the column A will stay frozen and the cells on the right from the dark line will be scrolled.
 
@@ -24,7 +24,7 @@ You can achieve this behavior using the **FreezePanes()** method of the active w
 
 The following code will produce freeze panes like the example below:
 
-![spreadsheet-features-freeze-panes 002](images/spreadsheet-features-freeze-panes002.png)
+![WinForms RadSpreadsheet FreezePanes method](images/spreadsheet-features-freeze-panes002.png)
 
 #### Freeze Panes
 
@@ -48,19 +48,19 @@ worksheetEditor.FreezePanes(New Telerik.Windows.Documents.Spreadsheet.Model.Cell
 
 If you want to freeze panes so there are only two panes you have to freeze using a cell index located at the top or left edge of the visible area. For example if you want to split visible area vertically like shown on the image below you have to freeze on cell F1:
 
-![spreadsheet-features-freeze-panes 003](images/spreadsheet-features-freeze-panes003.png)
+![WinForms RadSpreadsheet Freeze F1](images/spreadsheet-features-freeze-panes003.png)
 
 But if you want to split the visible area horizontally you like shown on the image bellow you have to freeze on cell A8:
 
-![spreadsheet-features-freeze-panes 004](images/spreadsheet-features-freeze-panes004.png)
+![WinForms RadSpreadsheet Freeze A8](images/spreadsheet-features-freeze-panes004.png)
 
 Here is an example showing what happens when frozen panes splits merged cells:
 
-![spreadsheet-features-freeze-panes 005](images/spreadsheet-features-freeze-panes005.png)
+![WinForms RadSpreadsheet Freeze Merged Cells](images/spreadsheet-features-freeze-panes005.png)
 
 Here is the same scenario but when scrolled with one cell to the right:
 
-![spreadsheet-features-freeze-panes 006](images/spreadsheet-features-freeze-panes006.png)
+![WinForms RadSpreadsheet Scrolled Freeze](images/spreadsheet-features-freeze-panes006.png)
 
 ## Unfreeze Panes
 
@@ -84,9 +84,9 @@ Me.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor.UnfreezePanes()
 
 Alternatively, you can freeze/unfreeze panes from the **RadSpreadsheetRibbonBar** as well:
 
-![spreadsheet-features-freeze-panes 007](images/spreadsheet-features-freeze-panes008.png)
+![WinForms RadSpreadsheet Freeze](images/spreadsheet-features-freeze-panes008.png)
 
-![spreadsheet-features-freeze-panes 007](images/spreadsheet-features-freeze-panes007.png)
+![WinForms RadSpreadsheet Unfreeze](images/spreadsheet-features-freeze-panes007.png)
 
  
           

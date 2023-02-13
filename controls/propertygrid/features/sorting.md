@@ -15,7 +15,7 @@ The sorting capabilities can be controlled either by using the predefined sortin
 
 >caption Figure 1: Default Sorting
 
-![propertygrid-features-sorting 001](images/propertygrid-features-sorting001.png)
+![WinForms RadPropertyGrid Default Sorting](images/propertygrid-features-sorting001.png)
 
 #### Default Sorting
 
@@ -57,7 +57,7 @@ Here is an example of sorting the items by their value in ascending order.
 
 >caption Figure 2: SortDescriptors
 
-![propertygrid-features-sorting 002](images/propertygrid-features-sorting002.png)
+![WinForms RadPropertyGrid SortDescriptors](images/propertygrid-features-sorting002.png)
 
 #### Sorting with SortDescriptors
 

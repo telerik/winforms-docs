@@ -16,16 +16,16 @@ This help article will demonstrate a step by step tutorial how to customize the 
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File` >> `Open Package`.
 4. Expand __RadTextBoxControl__ and select  `RadTextBoxControlElement` and the select the __Disabled__ state in the `Element States` window. 
-    ![radtextboxcontrol-themes001](images/radtextboxcontrol-themes001.png)
+    ![WinForms RadTextBoxControl Visual Style Builder](images/radtextboxcontrol-themes001.png)
 
 5. Open the `Edit Repository Item` dialog and change the `BackColor` and the `GradientStyle`:
-   ![radtextboxcontrol-themes002](images/radtextboxcontrol-themes002.png)
+   ![WinForms RadTextBoxControl Edit Repository Item](images/radtextboxcontrol-themes002.png)
 
 6. Select `RadTextBoxControl` and change the __UseDefaultDisabledPaint__ property to *false*.
-   ![radtextboxcontrol-themes004](images/radtextboxcontrol-themes004.png)
+   ![WinForms RadTextBoxControl UseDefaultDisabledPaint False](images/radtextboxcontrol-themes004.png)
 
 7. Go back to RadTextBoxControlElement and change the __UseDefaultDisabledPaint__ for it as well.
-   ![radtextboxcontrol-themes003](images/radtextboxcontrol-themes003.png)
+   ![WinForms RadTextBoxControl Element UseDefaultDisabledPaint False](images/radtextboxcontrol-themes003.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 

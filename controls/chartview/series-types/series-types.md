@@ -27,9 +27,9 @@ Each series type contains a __DataPoints__ collection that contains specific dat
 
 >caption Figure 1: Series Types
 
-![chartview series types overview 001](images/chartview-series-types-overview001.png)
+![WinForms RadChartView All Series Types](images/chartview-series-types-overview001.png)
 
-![chartview series types overview 002](images/chartview-series-types-overview002.png)
+![WinForms RadChartView Series All Types](images/chartview-series-types-overview002.png)
 
 Chart series support both bound and unbound mode. All series contain the following two binding properties - __DataSource__ and __ValueMember__. Once a __DataSource__ is assigned, the __ValueMember__ property is used to resolve the property of the data records visualized by the data points. Different series types introduce additional data binding properties, related to the specific of the contained data. These are __CategoricalMember__, __AngleMember__, __XValueMember__, __YValueMember__. In unbound mode, categorical series can be populated with data manually using the __DataPoints__ collection.
 

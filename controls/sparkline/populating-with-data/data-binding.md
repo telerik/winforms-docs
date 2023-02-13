@@ -83,6 +83,6 @@ End Sub
 
 The bellow image show the result from the above code.
 
- ![](images/sparkline-data-binding001.png)
+ ![WinForms RadSparkline Data Binding DataTable](images/sparkline-data-binding001.png)
 
  

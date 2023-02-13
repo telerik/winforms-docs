@@ -17,11 +17,11 @@ The heart of RadDropDownButton is the __Items__ collection. This collection defi
 
 To add menu items at Design Time, click on the __Items__ property(the ellipsis button) to launch the __RadElement Collection Editor__. Click the arrow next to the __Add__ button to add items to the menu. You can add a variety of items to the collection.
 
-![buttons-dropdownbutton-working-with-raddropdownbutton-items 001](images/buttons-dropdownbutton-working-with-raddropdownbutton-items001.png)
+![WinForms RadButtons buttons-dropdownbutton-working-with-raddropdownbutton-items 001](images/buttons-dropdownbutton-working-with-raddropdownbutton-items001.png)
 
 Once you have added a __RadMenuItem__ to the collection, it will appear in the list on the left side of the dialog. Click the __RadMenuItem__ to edit its properties in the corresponding property grid on the right of the dialog.
 
-![buttons-dropdownbutton-working-with-raddropdownbutton-items 002](images/buttons-dropdownbutton-working-with-raddropdownbutton-items002.png)
+![WinForms RadButtons buttons-dropdownbutton-working-with-raddropdownbutton-items 002](images/buttons-dropdownbutton-working-with-raddropdownbutton-items002.png)
 
 In the property grid you will find many of the standard control properties, including __Text__, to control the display text of the item and __ToolTipText__ that displays when the mouse hovers over an item. Each __RadMenuItem__ you add also contains an __Items__ collection of its own, allowing you to create menu hierarchies in the __RadDropDownButton__. You can also do the following with each item:
 
@@ -130,11 +130,11 @@ End Namespace
 
 You can display images and text on your menu items.
 
-![buttons-dropdownbutton-working-with-raddropdownbutton-items 003](images/buttons-dropdownbutton-working-with-raddropdownbutton-items003.png)
+![WinForms RadButtons buttons-dropdownbutton-working-with-raddropdownbutton-items 003](images/buttons-dropdownbutton-working-with-raddropdownbutton-items003.png)
 
 To add an image to your menu item, click in the __Image__ property of the __RadMenuItem__, and then click the ellipsis button to launch the __Select Resource__ dialog. From this dialog you can select an image file from a project resource file or from an image resource on your local hard drive. 
 
-![buttons-dropdownbutton-working-with-raddropdownbutton-items 004](images/buttons-dropdownbutton-working-with-raddropdownbutton-items004.png)
+![WinForms RadButtons buttons-dropdownbutton-working-with-raddropdownbutton-items 004](images/buttons-dropdownbutton-working-with-raddropdownbutton-items004.png)
 
 ## Using the Click Event
 

@@ -13,7 +13,7 @@ previous_url: dropdown-and-listcontrol-checkeddropdownlist-theming
 
 __RadCheckedDropDownList__, as other RadControls, reuses some components and respectively their theming. It consists of 4 different controls:
         
-![dropdown-and-listcontrol-checkeddropdownlist-theming 001](images/dropdown-and-listcontrol-checkeddropdownlist-theming001.png)
+![WinForms RadCheckedDropDownList Components](images/dropdown-and-listcontrol-checkeddropdownlist-theming001.png)
 
 1. __RadAutoCompleteBox__ - Provides theming for the text area and the tokens
             
@@ -31,7 +31,7 @@ You can see where to find each control in Visual Style Builder on the image belo
         
 >caution If you want to use separate themes for __RadCheckedDropDownList__ and __RadAutoCompleteBox__ for example, you need to create two different themes. Use the *ThemeResolutionService.ApplyThemeToControlTree* method to apply a theme to a single control.
 
-![dropdown-and-listcontrol-checkeddropdownlist-theming 002](images/dropdown-and-listcontrol-checkeddropdownlist-theming002.png)
+![WinForms RadCheckedDropDownList ThemeResolutionService ApplyThemeToControlTree](images/dropdown-and-listcontrol-checkeddropdownlist-theming002.png)
 
 # See Also 
 

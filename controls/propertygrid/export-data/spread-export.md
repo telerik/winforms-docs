@@ -25,7 +25,7 @@ Here is how the following __RadPropertyGrid__, looks when it is exported.
       
 >caption Figure 1: Before and After Export
 
-![propertygrid-export-data-spreadexport 001](images/propertygrid-export-data-spreadexport001.png)<br>![propertygrid-export-data-spreadexport 002](images/propertygrid-export-data-spreadexport002.png)
+![WinForms RadPropertyGrid Before and After Export](images/propertygrid-export-data-spreadexport001.png)<br>![WinForms RadPropertyGrid Before and After Export](images/propertygrid-export-data-spreadexport002.png)
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
@@ -161,7 +161,7 @@ End Sub
 
 >caption Figure 2: Export Using Formating
 
-![propertygrid-export-data-spreadexport 004](images/propertygrid-export-data-spreadexport004.png)
+![WinForms RadPropertyGrid Export Using Formating](images/propertygrid-export-data-spreadexport004.png)
 
 * __ExportCompleted__: This event is triggered when the export operation completes.
 
@@ -177,7 +177,7 @@ The following example will demonstrate how the async spread export feature can b
         
 >caption Fig.3 Exporting Data Asynchronously
 
-![propertygrid-export-data-spreadexport 003](images/propertygrid-export-data-spreadexport003.png)
+![WinForms RadPropertyGrid Exporting Data Asynchronously](images/propertygrid-export-data-spreadexport003.png)
 
 1\. The following code shows how you can subscribe to the notification events and start the async export operation.
 

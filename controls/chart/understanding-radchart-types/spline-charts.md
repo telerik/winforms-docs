@@ -20,7 +20,7 @@ Spline charts allow you to take a limited set of known data points and approxima
 To create a simple vertical Spline Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Spline__. Create a series and add chart items with Y or X and Y values.
 >caption 
 
-![chart-undestanding-radchart-types-spline-charts 001](images/chart-undestanding-radchart-types-spline-charts001.png)
+![WinForms RadChart Spline Chart Vertical](images/chart-undestanding-radchart-types-spline-charts001.png)
 
 To create a simple horizontal Spline Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __Spline__. Create a series and add 3 or more chart items with X and Y values. 
 
@@ -34,7 +34,7 @@ To create a simple horizontal Spline Chart set the __SeriesOrientation__ proper
 |80|50|
 >caption 
 
-![chart-undestanding-radchart-types-spline-charts 002](images/chart-undestanding-radchart-types-spline-charts002.png)
+![WinForms RadChart Spline Chart Horizontal](images/chart-undestanding-radchart-types-spline-charts002.png)
 
 Another example showing the same Y data points as above, but with no X values defined displays an automatic even progression over the X axis.
 
@@ -48,4 +48,4 @@ Another example showing the same Y data points as above, but with no X values de
 |80|
 >caption 
 
-![chart-undestanding-radchart-types-spline-charts 003](images/chart-undestanding-radchart-types-spline-charts003.png)
+![WinForms RadChart Spline Charts Sample](images/chart-undestanding-radchart-types-spline-charts003.png)

@@ -13,7 +13,7 @@ previous_url: ribbonbar-backstage-view-working-with-backstage-view
 
 To enable the Backstage View in __RadRibbonBar__ change the __ApplicationMenuStyle__ property to *BackstageView*.
 
-#### Enable Backstage view mode
+#### Enable Backstage View Mode
 
 {{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=ApplicationMenuStyle}} 
 {{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=ApplicationMenuStyle}} 
@@ -29,14 +29,12 @@ RadRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle
 
 {{endregion}}
 
-![ribbonbar-backstage-view-working-with-backstage-view 001](images/ribbonbar-backstage-view-working-with-backstage-view001.png)
+![WinForms RadRibbonBar Backstage View Mode](images/ribbonbar-backstage-view-working-with-backstage-view001.png)
 
 
 At design time you can access the __ApplicationMenuStyle__ property through the Properties window and set it to *BackstageView*. Thus, when you click on the __ApplicationMenuButton__, the __RadRibbonBar__ will automatically create an instance of __RadRibbonBarBackstageView__ class (radRibbonBarBackstageView1). The __RadRibbonBarBackstageView__ represents a BackStageView control that may contain tabs, pages, buttons, etc.
 
-![ribbonbar-backstage-view-working-with-backstage-view 005](images/ribbonbar-backstage-view-working-with-backstage-view006.png)
-
-
+![WinForms RadRibbonBar Properties Dialog](images/ribbonbar-backstage-view-working-with-backstage-view006.png)
 
 ## Adding and editing items and controls at design time
 
@@ -48,22 +46,22 @@ You have three options to add these items to the BackstageView at design time:
 
 The first one is by using the __Smart Tag__. The __Smart Tag__ would appear when you click on the  __ApplicationMenuButton__. A dotted rectangle shows the radRibbonBarBackstageView1. By clicking on its smart tag a RadRibbonBarBackstageView Tasks window will appear, so you can further edit items, add tabs, etc.
 
-![ribbonbar-backstage-view-working-with-backstage-view 002](images/ribbonbar-backstage-view-working-with-backstage-view002.png)
+![WinForms RadRibbonBar Smart Tag](images/ribbonbar-backstage-view-working-with-backstage-view002.png)
 
 
 * By using the __RadItem Collection Editor__
 
 The second one is using the __RadItem Collection Editor__ to edit the Items collection. 
 
-![ribbonbar-backstage-view-working-with-backstage-view 003](images/ribbonbar-backstage-view-working-with-backstage-view003.png)
+![WinForms RadRibbonBar RadItem Collection Editor](images/ribbonbar-backstage-view-working-with-backstage-view003.png)
 
 * By using the context menu
 
 The third one is using the context menu:
 
-![ribbonbar-backstage-view-working-with-backstage-view 004](images/ribbonbar-backstage-view-working-with-backstage-view004.png)
+![WinForms RadRibbonBar Context Menu](images/ribbonbar-backstage-view-working-with-backstage-view004.png)
 
-## Adding and editing items and controls at runtime
+## Adding and Editing Items and Controls at Runtime
 
 You can also add these items as well as any other RadItem to the backstageview’s left panel at runtime via the __Items collection__:
 
@@ -87,11 +85,11 @@ RadRibbonBarBackstageView1.Items.Add(New RadDropDownListElement())
 
 {{endregion}}
 
-## Adding controls to the pages
+## Adding Controls to the Pages
 
 When you add __BackstageTabItem__ to the backstage view’s left panel and select it, on the right side you have a __BackstageViewPage__ on which you can arrange any type of controls.
 
-![ribbonbar-backstage-view-working-with-backstage-view 005](images/ribbonbar-backstage-view-working-with-backstage-view005.png)
+![WinForms RadRibbonBar BackstageTabItem](images/ribbonbar-backstage-view-working-with-backstage-view005.png)
 
 ## See Also
 

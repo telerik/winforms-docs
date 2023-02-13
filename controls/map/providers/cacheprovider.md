@@ -8,13 +8,15 @@ published: True
 position: 5 
 ---
 
+# CacheProvider
+
 The __IMapCacheProvider__ is a provider which doesn't connect to any real imagery services. It is used by an __IMapTileProvider__ to allow data caching and improve performance. 
 
-# MemoryCacheProvider
+## MemoryCacheProvider
 
 By default, a __MemoryCacheProvider__ is assigned to the __IMapTileProvider__ to cache data into memory.
 
-# LocalFileCacheProvider
+## LocalFileCacheProvider
 
 The LocalFileCacheProvider.__CacheDirectoryPath__ property gets or sets the cache directory path. 
 

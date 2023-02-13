@@ -33,7 +33,7 @@ The **RadMenuItem** represents a standard menu item. Some of its properties incl
 |__AngleTransform__|Sets the angle offset from horizontal with which the item will be displayed. |
 |__CommandBinding__|Allows you to configure keyboard shortcuts to fire a given menu item. See the [Getting Started]({%slug winforms/menus/menu/getting-started%}) topic for an example. |
 |__DisplayStyle__|Lets you choose whether to show an image, text, or both on the item. |
-|__DescriptionText__|Contains the text for the description that appears just below the __Text__. __DescriptionFont__ controls the font characteristics of the __DescriptionText__ display. See the example menu item in the figure below. </br> ![menus-menu-working-with-radmenu-items-radmenuitem 001](images/menus-menu-working-with-radmenu-items-radmenuitem001.png)|
+|__DescriptionText__|Contains the text for the description that appears just below the __Text__. __DescriptionFont__ controls the font characteristics of the __DescriptionText__ display. See the example menu item in the figure below. </br> ![WinForms RadMenus menus-menu-working-with-radmenu-items-radmenuitem 001](images/menus-menu-working-with-radmenu-items-radmenuitem001.png)|
 |__Enabled__|When set to *false* shows the menu item as grayed out and does not react to mouse clicks. To allow non-standard painting when the menu item is not enabled set the __UseDefaultDisabledPaint__ property to *false* and then use the __Visual Style Builder__ to customize the appearance of this state.|
 |__FlipText__|Flips the text of the item vertically if set to *true*. |
 |__BackColor__ and __ForeColor__|Set the colors of the background and text.|

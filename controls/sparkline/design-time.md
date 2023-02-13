@@ -14,7 +14,7 @@ Select **RadSparkline** and click the small arrow on the top right position in o
 
 >caption Figure 1: Smart Tag
 
-![sparkline-design-time 001](images/sparkline-design-time001.png)
+![WinForms RadSparkline Smart Tag](images/sparkline-design-time001.png)
 
 **Common Tasks:**
 

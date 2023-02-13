@@ -14,11 +14,11 @@ This article describes the inner structure and organization of the elements whic
 
 >caption Figure 1: RadDesktopAlert's elements hierarchy
 
-![desktopalert-structure 002](images/desktopalert-structure002.png)
+![WinForms RadDesktopAlert Elements Hierarchy](images/desktopalert-structure002.png)
 
 >caption Figure 2: RadDesktopAlert's structure
 
-![desktopalert-structure 001](images/desktopalert-structure001.png)
+![WinForms RadDesktopAlert Structure](images/desktopalert-structure001.png)
 
 
 1. __RadDesktopAlertElement__: represents the main element of a __RadDesktopAlert__  

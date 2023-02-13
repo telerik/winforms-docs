@@ -15,7 +15,7 @@ RadPdfViewer can be used with [RadPrintDocument]({%slug winforms/telerik-present
 
 >caption Figure 1: Design Time
 
-![pdfviewer-printing-support](images/pdfviewer-printing-support001.png)
+![WinForms RadPdfViewer Design Time](images/pdfviewer-printing-support001.png)
 
 As such, __RadPdfViewer__ allows you to benefit from the features that __RadPrintDocument__ provides: header, footer, watermark, preview and settings dialogs.
 
@@ -25,7 +25,7 @@ __RadPdfViewerNavigator__ allows you to print the currently shown PDF document w
 
 >caption Figure 2: Using RadPdfViewerNavigator 
 
-![pdfviewer-printing-support](images/pdfviewer-printing-support002.png)
+![WinForms RadPdfViewer Using RadPdfViewerNavigator](images/pdfviewer-printing-support002.png)
 
 >note As of R2 2021 RadPdfViewer offers the **UseBufferedPrinting** property. If it is set to **true**, the page will be printed in an image that will be send to the printer at once. Loss of quality is possible.
 

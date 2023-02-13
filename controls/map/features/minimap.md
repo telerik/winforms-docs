@@ -14,7 +14,7 @@ The mini map feature is responsible for displaying a certain part of the world a
 
 >caption Figure 1: MiniMap
 
-![map features minimap 001](images/map-features-minimap001.png)
+![WinForms RadMap MiniMap](images/map-features-minimap001.png)
 
 The RadMap.__ShowMiniMap__ property is responsible for showing or hiding the mini map control.
 
@@ -66,7 +66,7 @@ End If
 {{endregion}}
 
 
-# Mini Map Modes
+## Mini Map Modes
 
 The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
@@ -74,23 +74,23 @@ The mini map behavior can be altered by setting the __MiniMapMode__ property.
 
 >caption Figure 2: WholeWorld
 
-![map features minimap 002](images/map-features-minimap002.gif)
+![WinForms RadMap WholeWorld](images/map-features-minimap002.gif)
 
 * __MiniMapMode__.*StaticZoom*: The mini map will show a fixed zoom level at all times. Use the __BringIntoView__ method to position the map at the required location and zoom level.
 
 >caption Figure 3: StaticZoom 
 
-![map features minimap 003](images/map-features-minimap003.gif)
+![WinForms RadMap StaticZoom](images/map-features-minimap003.gif)
 
 * __MiniMapMode__.*OffsetZoom*: The mini map will show a dynamic zoom level offset from the main map view. Use the __ZoomLevelOffset__ property to define the offset.
 
 >caption Figure 4: OffsetZoom 
 
-![map features minimap 004](images/map-features-minimap004.gif)
+![WinForms RadMap OffsetZoom](images/map-features-minimap004.gif)
 
 The __MiniMapElement__ can be easily accessed via the RadMap.__MapElement__ object. The table below lists the exposed properties and methods.
 
-# Properties
+## Properties
 
 |Property|Description|
 |------|------|
@@ -104,7 +104,7 @@ The __MiniMapElement__ can be easily accessed via the RadMap.__MapElement__ obje
 |__ViewportControlBackColor__|Gets or sets the back color of the view port control.|
 |__ViewportControlBorderColor__|Gets or sets the border color of the view port control.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|

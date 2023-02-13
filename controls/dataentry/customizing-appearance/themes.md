@@ -16,13 +16,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File` >> `Open Package`.
 4. Expand RadDataEntry and select the `ValidationPanel`. Then select the fill element in the `Elemnts` window:
-    ![dataentry-themes001](images/dataentry-themes001.png)
+    ![WinForms RadDataEntry ValidationPanel](images/dataentry-themes001.png)
 
 5. Open the `Edit Repository Item` dialog:
-   ![dataentry-themes002](images/dataentry-themes002.png)
+   ![WinForms RadDataEntry Edit Repository Item](images/dataentry-themes002.png)
 
 6. Change the BackColor:
-   ![dataentry-themes003](images/dataentry-themes003.png)
+   ![WinForms RadDataEntry Change the BackColor](images/dataentry-themes003.png)
 
 # See Also
 

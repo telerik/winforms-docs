@@ -17,7 +17,7 @@ contains a collection of **TruckWaypoints** defining the start/end points of the
 
 >caption Figure 1: Truck route
 
-![truck-route 001](images/truck-route001.png)
+![WinForms RadMap Truck route](images/truck-route001.png)
 
 ## TruckRouteRequest
 

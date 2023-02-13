@@ -61,7 +61,7 @@ End Sub
 
 >caption Figure 1: Styling the command cell button. 
 
-![gridview-cells-formatting-cells-command-cell 001](images/gridview-cells-formatting-cells-command-cell001.png)
+![WinForms RadGridView Styling Command Cell Button](images/gridview-cells-formatting-cells-command-cell001.png)
 
 # See Also
 

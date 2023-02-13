@@ -18,7 +18,7 @@ Select **RadWebCam** and click the small arrow at the top right position in orde
 
 >caption Figure 1: RadWebCam's Smart Tag
 
-![webcam-design-time 001](images/webcam-design-times001.png)
+![WinForms RadWebCam's Smart Tag](images/webcam-design-times001.png)
 
 * Common Tasks
 

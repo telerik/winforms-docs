@@ -31,4 +31,4 @@ To set a ToolTip, select an item that you are interested in.  Then navigate to 
 Below is the __ActiveRegion__ for a [chart series item]({%slug winforms/chart/understanding-radchart-elements/series-items%}). If the mouse hovers over that area in the chart the tool tip "Sales - January" will display.
 >caption 
 
-![chart-advanced-topics-active-regions-and-showing-tooltips 001](images/chart-advanced-topics-active-regions-and-showing-tooltips001.png)
+![WinForms RadChart ToolTips](images/chart-advanced-topics-active-regions-and-showing-tooltips001.png)

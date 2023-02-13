@@ -14,7 +14,7 @@ previous_url: scheduler-fundamentals-scheduler-element-provider
 The __SchedulerElementProvider__ class provides means for changing the default __RadScheduler__ elements.
 
 >caption Figure 1: Custom Appointments
-![scheduler-fundamentals-scheduler-element-provider 002](images/scheduler-fundamentals-scheduler-element-provider002.png)
+![WinForms RadScheduler Custom Appointments](images/scheduler-fundamentals-scheduler-element-provider002.png)
 
 If you need to customize any of the  __RadSheduler__ elements you can use the __SchedulerElementProvider__ class. It allows you to replace the default elements with custom ones. This can be achieved by creating  __SchedulerElementProvider__ descendant class and overriding the corresponding methods.
 

@@ -28,19 +28,19 @@ You can set the **DataSource** property at design time in the *Properties* windo
 
 1. Click the *Add Project Data Source…* link and follow the instructions in the *Data Source Configuration Wizard*  to add a data source to your project. You can use a single database table. 
 
-	>caption Figure: 1 Setting the DataSource at Design time
+	>caption Figure: 1 Setting the DataSource at Design Time
 
-	![domainupdown-populating-with-data-data-binding 001](images/domainupdown-populating-with-data-data-binding001.png)
+	![WinForms RadDomainUpDown DataSource Design Time](images/domainupdown-populating-with-data-data-binding001.png)
 
 1. Afterwards, you need to specify the __DisplayMember__ and __ValueMember__ properties.
 
 	>caption Figure: 2 Setting the DisplayMember and ValueMember properties at Design time
 
-	![domainupdown-populating-with-data-data-binding 002](images/domainupdown-populating-with-data-data-binding002.png)
+	![WinForms RadDomainUpDown DisplayMember ValueMember Design time](images/domainupdown-populating-with-data-data-binding002.png)
 
 	>caption Figure: 3 RadDomainUpDown bound at Design time
 
-	![domainupdown-populating-with-data-data-binding 003](images/domainupdown-populating-with-data-data-binding003.gif)
+	![WinForms RadDomainUpDown Bound at Design time](images/domainupdown-populating-with-data-data-binding003.gif)
 
 ## Data binding at run time
 
@@ -126,7 +126,7 @@ You can bind **RadDomainUpDown** programmatically as well. The following code sn
  
 >caption Figure: 4 RadDomainUpDown bound at Run time
 
-![domainupdown-populating-with-data-data-binding 004](images/domainupdown-populating-with-data-data-binding004.gif)
+![WinForms RadDomainUpDown Bound at Run Time](images/domainupdown-populating-with-data-data-binding004.gif)
 
 # See Also
 

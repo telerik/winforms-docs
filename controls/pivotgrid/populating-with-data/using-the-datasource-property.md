@@ -84,7 +84,7 @@ Me.RadPivotGrid1.DataSource = bs
 
 >caption Figure 1: RadPivot Data Binding
 
-![pivotgrid-populating-with-datausing-the-datasource-property](images/pivotgrid-populating-with-datausing-the-datasource-property.png)
+![WinForms RadPivotGrid RadPivot Data Binding](images/pivotgrid-populating-with-datausing-the-datasource-property.png)
 
 # Localizing the Data Provider
 

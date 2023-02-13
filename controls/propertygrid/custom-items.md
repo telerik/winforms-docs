@@ -14,7 +14,7 @@ previous_url: propertygrid-custom-items
 __RadPropertyGrid__ allows you to create and use your own custom value items, allowing you to add the desired editors to fit your business need. In the following example, we will add two radio buttons as value editor for a property grid item.
 
 >caption Figure 1: Custom Property Grid Item
-![propertygrid-custom-items 001](images/propertygrid-custom-items001.gif)
+![WinForms RadPropertyGrid Custom Property Grid Item](images/propertygrid-custom-items001.gif)
 
 Let’s start by specifying the RadPropertyGrid.__SelectedObject__ property, so out controls gets populated with some data. For this purpose, we will use the *Item* class which is defined below:
 

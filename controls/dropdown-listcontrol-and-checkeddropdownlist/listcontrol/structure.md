@@ -14,11 +14,11 @@ This article describes the inner structure and organization of the elements whic
         
 >caption Figure 1: RadListControl's elements hierarchy
 
-![dropdown-and-listcontrol-listcontrol-structure 001](images/dropdown-and-listcontrol-listcontrol-structure001.png)
+![WinForms RadListControl Elements Hierarchy](images/dropdown-and-listcontrol-listcontrol-structure001.png)
 
 >caption Figure 2: RadListControl's structure
 
-![dropdown-and-listcontrol-listcontrol-structure 002](images/dropdown-and-listcontrol-listcontrol-structure002.png)
+![WinForms RadListControl Structure](images/dropdown-and-listcontrol-listcontrol-structure002.png)
 
  1. RadListElement  
   1.1 DefaultListControlStackContainer   

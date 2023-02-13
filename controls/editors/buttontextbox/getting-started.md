@@ -20,11 +20,11 @@ The following tutorial demonstrates how to add buttons with images to a **RadBut
 2. Add three images to the project as resources.
 3. Select the **RadButtonTextBox** and click the small arrow on the top right position in order to open the __Smart Tag__. Find the **Buttons Left** property and click the ellipsis button to open the *RadItem Collection Editor*.
 
-	![editors-buttontextbox-getting-started 001](images/editors-buttontextbox-getting-started001.png)
+	![WinForms RadButtonTextBox Design Time](images/editors-buttontextbox-getting-started001.png)
 
 4.  Click the **Add** button three times to create three **RadButtonElement**s. Clear the text of the first, second and third button elements respectively. Set the resource images to the **Image** property of the items.
 
-	![editors-buttontextbox-getting-started 002](images/editors-buttontextbox-getting-started002.png)
+	![WinForms RadButtonTextBox Design Time Add Items](images/editors-buttontextbox-getting-started002.png)
 
 5. Click **OK** to close the *RadItem Collection Editor*.
 
@@ -32,6 +32,6 @@ The following tutorial demonstrates how to add buttons with images to a **RadBut
 
 7. Locate and double-click the RadButtonElement. Click the event to create an event handler.
 	
-	![editors-buttontextbox-getting-started 003](images/editors-buttontextbox-getting-started003.png)
+	![WinForms RadButtonTextBox Click Event Handler](images/editors-buttontextbox-getting-started003.png)
 
 You can place any custom code that you wish to be performed when the user clicks the first button element in **RadButtonTextBox**.

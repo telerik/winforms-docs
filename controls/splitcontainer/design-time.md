@@ -18,7 +18,7 @@ Select **RadSplitContainer** and click the small arrow on the top right position
 
 >caption Figure 1: Smart Tag
 
-![splitcontainer-design-time 001](images/splitcontainer-design-time001.png)
+![WinForms RadSplitContainer Smart Tag](images/splitcontainer-design-time001.png)
 
 * __New Theme Manager__: adds a new __RadThemeManager__ component to the form.
             

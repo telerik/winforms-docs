@@ -13,7 +13,7 @@ previous_url: chartview-axes-multiple-axes
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Multi-Axes Support in RadChartView](http://tv.telerik.com/watch/radcontrols-for-winforms/multi-axes-support-in-radchartview) The Multi-Axes feature of __RadChartView__ introduces a whole new realm of data visualization possibilities.  Now you can visualize data from multiple sources plotted against a common axis all in the same chart. This allows you to make better decisions with the data, identify patterns and relationships, or simply save form real estate in your application by combining multiple charts into one.|![chartview-axes-multiple-axes 001](images/chartview-axes-multiple-axes001.png)|RadChartView allows you to easily set up a chart with multiple axes. There are three types of multi axes charts one can create:
+|[WinForms RadChartView Multi-Axes Support in RadChartView](http://tv.telerik.com/watch/radcontrols-for-winforms/multi-axes-support-in-radchartview) The Multi-Axes feature of __RadChartView__ introduces a whole new realm of data visualization possibilities.  Now you can visualize data from multiple sources plotted against a common axis all in the same chart. This allows you to make better decisions with the data, identify patterns and relationships, or simply save form real estate in your application by combining multiple charts into one.|![WinForms RadChartView chartview-axes-multiple-axes 001](images/chartview-axes-multiple-axes001.png)|RadChartView allows you to easily set up a chart with multiple axes. There are three types of multi axes charts one can create:
 
 * The first is a chart where two or more series share one axis and have different second axes.
 
@@ -30,7 +30,7 @@ There are several things to consider when setting up a multi axis chart. Each se
 The following example shows how to create a chart with two series sharing their categorical axis. The most common use case for this type of chart is when you have to plot data of different dimensions.
 
 >caption Figure 1: One Common Axis
-![chartview-axes-multiple-axes 002](images/chartview-axes-multiple-axes002.png)
+![WinForms RadChartView One Common Axis](images/chartview-axes-multiple-axes002.png)
 
 #### One Common Axis
 
@@ -105,10 +105,10 @@ Me.radChartView1.Series.Add(line2)
 If you need series to have different axes but still plot them on one chart view you can assign the axes to the series and add them to the chart view
 
 >caption Figure 2: All Sides
-![chartview-axes-multiple-axes 003](images/chartview-axes-multiple-axes003.png) 
+![WinForms RadChartView All Sides](images/chartview-axes-multiple-axes003.png) 
 
 >caption Figure 3: Two Sides
-![chartview-axes-multiple-axes 004](images/chartview-axes-multiple-axes004.png)
+![WinForms RadChartView Two Sides](images/chartview-axes-multiple-axes004.png)
 
 #### Setup Four Axes
 
@@ -181,7 +181,7 @@ Me.radChartView1.Series.Add(line2)
 Mixing the above two modes:
 
 >caption Figure 4: Mixed Multi Axes
-![chartview-axes-multiple-axes 005](images/chartview-axes-multiple-axes005.png)
+![WinForms RadChartView Mixed Multi Axes](images/chartview-axes-multiple-axes005.png)
 
 {{source=..\SamplesCS\ChartView\Axes\MultiAxes.cs region=SetupMixed}} 
 {{source=..\SamplesVB\ChartView\Axes\MultiAxes.vb region=SetupMixed}} 

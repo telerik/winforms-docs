@@ -13,7 +13,7 @@ CTAControlName: TreeMap
 
 **RadTreeMap** is a data visualization control used to display hierarchical data as a set of nested rectangles. Each rectangle has an area proportional to a specified dimension on the data. It is useful in scenarios where a lot of items have to be compared in a limited space. When the color and size dimensions are correlated in some way with the tree structure, you can easily see patterns that would be difficult to spot in other ways.
 
-![treemap-overview 001](images/treemap-overview001.png)
+![WinForms RadTreeMap Overview](images/treemap-overview001.png)
 
 ## Key Features:
 

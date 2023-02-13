@@ -14,10 +14,10 @@ The caret of **RadSyntaxEditor** is a vertical 'blinking' line that represents t
 
 #### Figure 1: Caret's display mode
 
-* **Normal** - ![features-caret001](images/caret001.png)
-* **Block** -  ![features-caret001](images/caret002.png)
-* **HalfBlock** - ![features-caret001](images/caret003.png)
-* **QuarterBlock** - ![features-caret004](images/caret004.png)
+* **Normal** - ![WinForms RadSyntaxEditor Normal Caret](images/caret001.png)
+* **Block** -  ![WinForms RadSyntaxEditor Block Caret](images/caret002.png)
+* **HalfBlock** - ![WinForms RadSyntaxEditor HalfBlock Caret](images/caret003.png)
+* **QuarterBlock** - ![WinForms RadSyntaxEditor QuarterBlock Caret](images/caret004.png)
 
 #### Setting the caret's display mode
 
@@ -78,7 +78,7 @@ Me.RadSyntaxEditor1.CaretColor = Color.Red
 {{endregion}} 
 
 #### Figure 2: RadSyntaxEditor caret with red color
-![features-caret001](images/caret005.png)
+![WinForms RadSyntaxEditor with Red Caret](images/caret005.png)
 
 ## Caret Position
 

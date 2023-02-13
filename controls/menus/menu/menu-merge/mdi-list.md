@@ -19,7 +19,7 @@ If the user clicks on Form1 in the menu, Form1 gets activated.
 
 >caption Figure 1: MDI List
 
-![menus-menu-menu-merge-mdi-list 002](images/menus-menu-menu-merge-mdi-list002.gif)
+![WinForms RadMenus MDI List](images/menus-menu-menu-merge-mdi-list002.gif)
 
 
 # See Also

@@ -63,7 +63,7 @@ End Class
 Now let’s create a new __DI__ indicator instance and add it to our __RadChartView__. In order to do that, however, we will need some sample data. The snippet below creates a __BindingList__ of __ClosingPriceObjects__. Each __ClosingPriceObject__ is a simple structure that holds the closing price and date it was registered. The class implements __INotifyPropertyChanged__ in order to make sure that any changes in the object's data will be reflected in the indicator’s values. 
 
 >caption Figure 1: DI Indicator
-![chartview series types indicators custom indicators 001](images/chartview-series-types-indicators-custom-indicators001.png)
+![WinForms RadChartView Custom Indicators DI Indicator](images/chartview-series-types-indicators-custom-indicators001.png)
 
 #### Custom Object
 
@@ -227,7 +227,7 @@ Where U% is the Upper Percentage and L% is the lower percentage
 All two-line indicators in RadChartView follow a specific pattern – the main indicator implements the __IParentIndicator__ interface and the nested indicator implements the __IChildIndicator__ interface. Once you have implemented these two interfaces, RadChartView will be in charge of attaching and rendering the two lines correctly.
 
 >caption Figure 2: Moving Average indicator
-![chartview series types indicators custom indicators 002](images/chartview-series-types-indicators-custom-indicators002.png)        
+![WinForms RadChartView Custom Indicators Moving Average indicator](images/chartview-series-types-indicators-custom-indicators002.png)        
 
 Because __Moving Average Envelopes__ requires a property that sets the bands percent (assuming that both bands will use the same percent), we will create a __MAE__ base that inherits the __Moving Average indicator__and adds a __Percent__ property. Here is a sample snippet: 
 

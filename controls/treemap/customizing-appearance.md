@@ -102,7 +102,7 @@ End Sub
 
 {{endregion}}
 
-![customizing-appearance 001](images/customizing-appearance001.png)
+![WinForms RadTreeMap GroupPainted](images/customizing-appearance001.png)
 
 
 ### ItemPainting 
@@ -128,7 +128,7 @@ It is fired right after an item is already painted. It is appropriate if you nee
 * **Graphics**: Gets the System.Drawing.Graphics object. 
 * **Bounds**: Gets the Rectangle bounds of the item.
 
-![customizing-appearance 002](images/customizing-appearance002.png)
+![WinForms RadTreeMap ItemPainted](images/customizing-appearance002.png)
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=ItemPainting}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=ItemPainting}} 

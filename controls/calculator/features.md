@@ -45,11 +45,11 @@ RadCalculator supports all native clear functionality the end user is accustomed
 * **Delete** - deletes the last digit from the displayed number.
 * **Clear Entry (CE)** - clears the current input value:
 
-	![calculator-features 001](images/calculator-features001.png)
+	![WinForms RadCalculator Clear Entry](images/calculator-features001.png)
 
 * **Clear (C)** - clears the input value, the calculated value and the history:
 
-	![calculator-features 002](images/calculator-features002.png)
+	![WinForms RadCalculator Clear C](images/calculator-features002.png)
 
 ## Keyboard Support
 RadCalculator does allow you to use all relevant keys on your keyboard and insert any valid input or perform easily the operations.

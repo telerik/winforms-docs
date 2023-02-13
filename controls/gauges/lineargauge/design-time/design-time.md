@@ -15,7 +15,7 @@ When you drag a __RadLinearGauge__ from the Toolbox and drop it onto the form, t
 
 >caption Figure 1: Gallery Types
 
-![lineargauge-design-time 001](images/lineargauge-design-time001.png)
+![WinForms RadGauges Gallery Types](images/lineargauge-design-time001.png)
 
 # Smart Tag
 
@@ -23,7 +23,7 @@ The smart tag allows you to change the control styles, save/load its layout and 
 
 >caption Figure 2: Smart Tag
 
-![lineargauge-design-time 002](images/lineargauge-design-time002.png)
+![WinForms RadGauges LinearGauge Smart Tag](images/lineargauge-design-time002.png)
 
 * __Common Tasks__
 
@@ -55,7 +55,7 @@ The __RadLinearGauge__ control supports precise design time selection of the gau
 
 >caption Figure 3: Elements Selection
 
-![lineargauge-design-time 003](images/lineargauge-design-time003.png)
+![WinForms RadGauges LinearGauge Elements Selection](images/lineargauge-design-time003.png)
 
 # See Also
 

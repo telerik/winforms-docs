@@ -1,7 +1,7 @@
 ---
-title: Formatting blocks
-page_title: Formatting blocks - RadTextBoxControl
-description: Formatting blocks
+title: Formatting Blocks
+page_title: Formatting Blocks - RadTextBoxControl
+description: Formatting Blocks
 slug: winforms/editors/textboxcontrol/formatting-blocks
 tags: formatting,blocks
 published: True
@@ -9,7 +9,7 @@ position: 2
 previous_url: editors-textboxcontrol-formatting-blocks, editors/textboxcontrol/formatting-blocks
 ---
 
-# Formatting blocks
+# Formatting Blocks
 
 The RadTextBoxControl allow appearance customization of each instance of __ITextBlock__. This can be easily achieved by subscribing to the __FormattingTextBlock__ event: 
 
@@ -61,7 +61,7 @@ End Sub
 {{endregion}} 
 
 
-![editors-textboxcontrol-formatting-blocks 001](images/editors-textboxcontrol-formatting-blocks001.png)
+![WinForms RadTextBoxControl Formatting Blocks](images/editors-textboxcontrol-formatting-blocks001.png)
 
 >note Notice that the event occurs when the text blocks are repositioned. This happens in different cases: editing, control resizing and etc. Hence, you should subscribe to the event before initializing the __Text__ property.
 

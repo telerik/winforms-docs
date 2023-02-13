@@ -15,7 +15,7 @@ __GridViewTextBoxColumn__ displays and allows editing of text data. Each cell in
 
 When a user begins editing a cell, a textbox editor is provided to handle the user’s input. The length of the text the user can enter is restricted to the value of __MaxLength__ property.
 
-![gridview-columns-gridviewtextboxcolumn 001](images/gridview-columns-gridviewtextboxcolumn001.png)
+![WinForms RadGridView GridViewTextBoxColumn](images/gridview-columns-gridviewtextboxcolumn001.png)
 
 #### Add GridViewTextBoxColumn to the grid.
 

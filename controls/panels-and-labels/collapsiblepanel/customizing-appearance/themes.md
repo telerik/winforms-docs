@@ -19,10 +19,10 @@ This help article will demonstrate a step by step tutorial how to customize the 
 1. Load a desired theme from the just exported files by selecting *File >> Open Package*
 
 1. Navigate to **CollapsiblePanelHeaderElment** in `Controls Structure` on the left side. 
-    ![collapsiblepanel-customizing-appearance-themes 001](images/collapsiblepanel-customizing-appearance-themes001.png)
+    ![WinForms RadCollapsiblePanel Visual Style Builder](images/collapsiblepanel-customizing-appearance-themes001.png)
 
 1. Modify the applied BackColors of the HeaderLineElement.
-    ![collapsiblepanel-customizing-appearance-themes 002](images/collapsiblepanel-customizing-appearance-themes002.png)
+    ![WinForms RadCollapsiblePanel HeaderLineElement](images/collapsiblepanel-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

@@ -14,11 +14,11 @@ This article will show the internal elements structure of **RadBreadCrumb**.
 
 >caption Figure 1: RadBreadCrumb's elements hierarchy
 
-![breadcrumb-structure 001](images/breadcrumb-structure001.png)
+![WinForms RadBreadCrumb Elements Hierarchy](images/breadcrumb-structure001.png)
 
 >caption Figure 2: RadBreadCrumb's structure
 
-![breadcrumb-structure 002](images/breadcrumb-structure002.png)
+![WinForms RadBreadCrumb Structure](images/breadcrumb-structure002.png)
 
 **RadBreadCrumb** has one main element: **RadBreadCrumbElement**. It hosts three element containers and a text box: 
 

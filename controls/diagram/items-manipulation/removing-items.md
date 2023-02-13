@@ -19,7 +19,7 @@ You can remove the selected __RadDiagramItems__ by pressing the Delete Key.
 
 Below you can see the result of delete operation over the selected __RadDiagramItems__:
 
-![diagram-items-manipulation-removing-items 001](images/diagram-items-manipulation-removing-items001.gif)
+![WinForms RadDiagram Removing Items Interactively](images/diagram-items-manipulation-removing-items001.gif)
 
 ## Removing Items in code behind
 

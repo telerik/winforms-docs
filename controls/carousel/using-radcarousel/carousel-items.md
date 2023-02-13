@@ -17,7 +17,7 @@ You can add items to __RadCarousel__ control by using the __Items__ collection (
 
 To add items to the carousel without [data binding]({%slug winforms/carousel/using-radcarousel/data-binding%}), use the __Add__ method of the carousel collection. The example below adds a number of different RadItem types.
 
-![carousel-using-radcorousel-carousel-items 001](images/carousel-using-radcorousel-carousel-items001.png)
+![WinForms RadCarousel Adding Carousel Items](images/carousel-using-radcorousel-carousel-items001.png)
 
 #### Adding Items 
 

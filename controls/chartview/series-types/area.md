@@ -52,7 +52,7 @@ Me.RadChartView1.Series.Add(series2)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup
-![chartview-series-types-area 001](images/chartview-series-types-area001.png)
+![WinForms RadChartView Area Initial Setup](images/chartview-series-types-area001.png)
 
 The essential properties of AreaSeries coincide with these of LineSeries:
 
@@ -67,7 +67,7 @@ The essential properties of AreaSeries coincide with these of LineSeries:
 * __CombineMode__: A common property for all categorical series, which introduces a mechanism for combining data points that reside in different series, but have the same category. The combine mode can be *None*, *Cluster*,  *Stack* and *Stack100*. In the case of *AreaSeries*, *None* and *Cluster* mean that the series will be plotted independently of each other, so that they are overlapping. *Stack* plots the points on top of each other and *Stack100* presents the values of one series as a percentage of the other series. The combine mode is best described by a picture: 
 
 >caption Figure 2: Combine Mode
-![chartview-series-types-area 002](images/chartview-series-types-area002.png)
+![WinForms RadChartView Area Combine Mode](images/chartview-series-types-area002.png)
 
 # See Also
 

@@ -12,7 +12,7 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build **RadFilterView**.
 
-![filter-view-structure 001](images/filter-view-structure001.png)
+![WinForms RadFilterView Structure](images/filter-view-structure001.png)
 
 **RadFilterView** is build of different filter view group elements. The control uses a **FilterViewCategoriesFactory** that creates the necessary category element considering the property data type:
 
@@ -23,7 +23,7 @@ This article describes the inner structure and organization of the elements whic
  
 ## Elements Hierarchy
 
-![filter-view-structure 002](images/filter-view-structure002.png) 
+![WinForms RadFilterView Elements Hierarchy](images/filter-view-structure002.png) 
  
 # See Also
 

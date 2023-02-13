@@ -14,12 +14,12 @@ This article will get you familiar with the internal elements structure of **Rad
 
 >caption Figure 1: RadChat's elements hierarchy
 
-![winforms/chat-structure 001](images/chat-structure001.png) 
+![WinForms RadChat Elements Hierarchy](images/chat-structure001.png) 
 
 
 >caption Figure 2: RadChat's visual structure
 
-![winforms/chat-structure 002](images/chat-structure002.png) 
+![WinForms RadChat Visual Structure](images/chat-structure002.png) 
 
 1. **RadChatElement** - the main element in **RadChat**.
 2. **ChatMessagesViewElement** - the main container that hosts the messages.
@@ -33,7 +33,7 @@ This article will get you familiar with the internal elements structure of **Rad
 
 >caption Figure 3: ChatImageCardElement's visual structure
 
-![winforms/chat-structure 003](images/chat-structure003.png) 
+![WinForms RadChat ChatImageCardElement's visual structure](images/chat-structure003.png) 
 
 1. **ChatImageCardElement** - represents an image card.
 2. **StackLayoutPanel** - the container that host all information elements.
@@ -43,16 +43,16 @@ This article will get you familiar with the internal elements structure of **Rad
 
 >caption Figure 4: ChatProductCardElement's visual structure
 
-![winforms/chat-structure 005](images/chat-structure005.png) 
+![WinForms RadChat ChatProductCardElement's Visual Structure](images/chat-structure005.png) 
 
 >caption Figure 5: ChatWeatherCardElement's visual structure
 
-![winforms/chat-structure 006](images/chat-structure006.png) 
+![WinForms RadChat ChatWeatherCardElement's Visual Structure](images/chat-structure006.png) 
 
 
 >caption Figure 6: ChatFlightCardElement's visual structure
 
-![winforms/chat-structure 004](images/chat-structure004.png) 
+![WinForms RadChat ChatFlightCardElement's Visual Structure](images/chat-structure004.png) 
 
  1. **ChatFlightCardElement** - represents a flight card.
  2. **FlightStackLayoutPanel** - the container that hosts the flight information elements.

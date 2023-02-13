@@ -25,7 +25,7 @@ You can use one of the following item types:
 
 >caption Figure 1: Sample RadListDataItem and DescriptionTextListDataItem
 
-![dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically 001](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically001.png)
+![WinForms RadDropDownList Sample RadListDataItem and DescriptionTextListDataItem](images/dropdown-and-listcontrol-dropdownlist-populating-with-data-adding-items-programmatically001.png)
 
 #### Add items programmatically 
 

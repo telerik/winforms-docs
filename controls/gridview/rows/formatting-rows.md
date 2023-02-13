@@ -17,7 +17,7 @@ Use the __RowFormatting__ event to apply custom formatting to __RadGridView's_
 
 The code snippet below demonstrates changing the background color of rows, which *"BMP"* cell value is set to *true*:
 
-![](images/grid-rows-formatting-rows001.png)
+![WinForms RadGridView Formatted Rows](images/grid-rows-formatting-rows001.png)
 
 {{source=..\SamplesCS\GridView\Rows\FormattingRows.cs region=rowFormatting}} 
 {{source=..\SamplesVB\GridView\Rows\FormattingRows.vb region=rowFormatting}} 
@@ -66,7 +66,7 @@ End Sub
 >note Please refer to the Fundamentals [topic]({%slug winforms/gridview/fundamentals/logical-vs.-visual-grid-structure%}) for more information about the UI Virtualization.
 >  
 
-## Customize the non-data rows appearance
+## Customize the Non-Data Rows Appearance
 
 To customize the non-data rows (header row, new row, filtering row, etc) of **RadGridView**, you need to handle the __ViewRowFormatting__ event.
 
@@ -114,7 +114,7 @@ End Sub
 {{endregion}} 
 
 
-![grid-rows-formatting-rows 002](images/grid-rows-formatting-rows002.png)
+![WinForms RadGridView Customized Non-Data Rows](images/grid-rows-formatting-rows002.png)
 
 # See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})

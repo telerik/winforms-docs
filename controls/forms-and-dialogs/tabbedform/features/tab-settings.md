@@ -14,7 +14,7 @@ position: 0
 
 >caption Figure 1: Tab Settings
 
-![radtabbedform-tab-settings001](images/radtabbedform-tab-settings001.gif)
+![WinForms RadTabbedForm Tab Settings](images/radtabbedform-tab-settings001.gif)
 
 **RadTabbedFormControl**'s properties:
 
@@ -81,4 +81,4 @@ The below image demonstrates the result after applying the above code in the Tel
 
 >caption Figure 2: Changed Default Settings
 
-![radtabbedform-tab-settings001](images/radtabbedform-tab-settings002.png)
+![WinForms RadTabbedForm Changed Default Settings](images/radtabbedform-tab-settings002.png)

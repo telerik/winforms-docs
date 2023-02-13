@@ -18,7 +18,7 @@ __RadStatusStrip__ provides a status area that can be composed of any number of 
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![forms-and-dialogs-statusstrip-getting-started 001](images/forms-and-dialogs-statusstrip-getting-started001.gif)
+![WinForms RadStatusStrip Overview](images/forms-and-dialogs-statusstrip-getting-started001.gif)
 
 # See Also
 

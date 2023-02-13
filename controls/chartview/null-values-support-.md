@@ -47,7 +47,7 @@ radChartView1.Series.Add(barSeries)
 {{endregion}}
 
 >caption Figure 1: BarSeries With Null DataPoint
-![chartview-null-values-support 001](images/chartview-null-values-support001.png)
+![WinForms RadChartView BarSeries With Null DataPoint](images/chartview-null-values-support001.png)
 
 The empty X value is skipped from drawing. NullValues is supported only for Cartesian series like Bar, Line, Spline, Area and SplineArea.
 

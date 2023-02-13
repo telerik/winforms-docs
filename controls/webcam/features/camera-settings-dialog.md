@@ -12,7 +12,7 @@ position: 5
 
 **RadWebCam** allows you to control the settings of the connected camera. You can do this using the settings dialog which opens when you press the [Open settings dialog button]({%slug webcam-structure%}).
 
-![camera-settings-dialog 001](images/camera-settings-dialog001.png)
+![WinForms RadWebCam Settings Dialog](images/camera-settings-dialog001.png)
 
 >important The changes applied via the settings dialog reflects the settings of the camera device. This means that when you close the application, the settings will be still applied to the device.
 

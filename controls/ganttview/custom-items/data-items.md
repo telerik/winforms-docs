@@ -18,7 +18,7 @@ The example in this article will handle a scenario of a *Duration* column displa
 
 >caption Figure 1: Custom Data Item 
 
-![ganttview-formatting-creating-custom-cells 001](images/ganttview-custom-items-data-items001.gif)
+![WinForms RadGanttView Custom Data Item](images/ganttview-custom-items-data-items001.gif)
 
 #### Setup the Control and Add Data
 

@@ -16,7 +16,7 @@ The matched tags are then processed by the [UI layers]({%slug syntax-editor-feat
 
 >caption RadSyntaxEditor with a registered CSharpTagger
 
-![syntax-editor-taggers-overview001](images/syntax-editor-taggers-overview001.png)
+![WinForms RadSyntaxEditor with a registered CSharpTagger](images/syntax-editor-taggers-overview001.png)
 
 ## Predefined Taggers
 

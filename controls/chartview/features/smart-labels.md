@@ -50,24 +50,24 @@ Me.radChartView1.ShowSmartLabels = True
 Automatic label placement is one the most complex and time consuming operations in a chart that is NP-hard ([http://en.wikipedia.org/wiki/NP-Hard](http://en.wikipedia.org/wiki/NP-Hard)). There is no universal solution for all chart types and there is no solution that can guarantee solution for 100% of the label collisions in every case.
 
 >caption Figure 1: Without Smart Labels
-![chartview-features-smart-labels 001](images/chartview-features-smart-labels001.png)
+![WinForms RadChartView Without Smart Labels](images/chartview-features-smart-labels001.png)
 
 >caption Figure 2: With Smart Labels
-![chartview-features-smart-labels 002](images/chartview-features-smart-labels002.png)
+![WinForms RadChartView With Smart Labels](images/chartview-features-smart-labels002.png)
 
 __RadChartView__’s __SmartLabelsController__ uses strategies specific to different chart types to resolve label overlaps. Since label overlapping can be quite time consuming with more generalized methods, the more concrete a strategy is the better the performance that can be expected out of it. You do not need to be concerned with the strategy, __RadChartView__ will choose the best of the built-in strategies to be used in your chart.
 
 >caption Figure 3: Without Smart Labels
-![chartview-features-smart-labels 003](images/chartview-features-smart-labels003.png)
+![WinForms RadChartView BarSeries Without Smart Labels](images/chartview-features-smart-labels003.png)
 
 >caption Figure 4: With Smart Labels
-![chartview-features-smart-labels 004](images/chartview-features-smart-labels004.png)
+![WinForms RadChartView BarSeries With Smart Labels](images/chartview-features-smart-labels004.png)
 
 >caption Figure 5: Without Smart Labels
-![chartview-features-smart-labels 005](images/chartview-features-smart-labels005.png)
+![WinForms RadChartView Point Series Without Smart Labels](images/chartview-features-smart-labels005.png)
 
 >caption Figure 6: With Smart Labels
-![chartview-features-smart-labels 006](images/chartview-features-smart-labels006.png)
+![WinForms RadChartView Point Series With Smart Labels](images/chartview-features-smart-labels006.png)
 
 # Custom labels strategy
 
@@ -214,7 +214,7 @@ Me.radChartView1.Controllers.Add(controler)
 
 |Before|After|
 |----|----|
-|![chartview-features-smart-labels 007](images/chartview-features-smart-labels007.png)|![chartview-features-smart-labels 008](images/chartview-features-smart-labels008.png)|
+|![WinForms RadChartView Without Custom Smart Label Stategy](images/chartview-features-smart-labels007.png)|![WinForms RadChartView With Custom Smart Label Stategy](images/chartview-features-smart-labels008.png)|
 
 # See Also
 

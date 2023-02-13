@@ -15,7 +15,7 @@ This article will walk you through the process of changing the default editor to
       
 >caption Figure 1: DropDownListEditor
 
-![datalayout-how-to-change-editor-to-drop-down-list 001](images/datalayout-how-to-change-editor-to-drop-down-list001.png)
+![WinForms RadDataLayout DropDownListEditor](images/datalayout-how-to-change-editor-to-drop-down-list001.png)
 
 1\. First you can subscribe to the __BindingCreating__, __BindingCreated__ and __EditorInitializing__ events of __RadDataLayout__ (please note that this should be done before the control has been bound).
 

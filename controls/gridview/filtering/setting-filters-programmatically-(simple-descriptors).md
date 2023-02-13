@@ -51,7 +51,7 @@ Me.RadGridView1.FilterDescriptors.Add(filter)
 
 {{endregion}} 
 
-![gridview-filtering-setting-filters-programmatically-simple-descriptors 001](images/gridview-filtering-setting-filters-programmatically-simple-descriptors001.png)
+![WinForms RadGridView FilterDescriptor](images/gridview-filtering-setting-filters-programmatically-simple-descriptors001.png)
 
 ### FilterDescriptor Properties
 
@@ -133,8 +133,9 @@ Me.RadGridView1.FilterDescriptors.Add(filterProductName)
 
 {{endregion}} 
 
-![gridview-filtering-setting-filters-programmatically-simple-descriptors 002](images/gridview-filtering-setting-filters-programmatically-simple-descriptors002.png)
-# See Also
+![WinForms RadGridView Setting Multiple Filters](images/gridview-filtering-setting-filters-programmatically-simple-descriptors002.png)
+
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

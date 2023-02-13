@@ -28,13 +28,13 @@ Me.RadGridView1.AllowSearchRow = True
 {{endregion}} 
 
 
-![gridview-rows-search-row 001](images/gridview-rows-search-row001.png)
+![WinForms RadGridView Search Row](images/gridview-rows-search-row001.png)
 
 >note As of **R2 2019 SP** **GridViewSearchRowInfo** offers the **DeferredSearch** property which indicates whether the grid control will wait until the `Enter` key is pressed before a new search operation is started. Its default value is *false*.
 
 The end user can select in which columns to perform searching by the provided *Search in columns* drop down. Thus, the highlighted result will be displayed in the specified columns only. You can specify whether the search functionality is enabled for a given column by setting the column's **AllowSearching** property.
 
-![gridview-rows-search-row 002](images/gridview-rows-search-row002.png)
+![WinForms RadGridView Search in columns drop down](images/gridview-rows-search-row002.png)
 
 >important Since **R2 2018 SP1** RadGridView has a property **IsSearchAsync** which controls whether the search will be performed on a background thread [*true*] or on the main thread [*false*].
 

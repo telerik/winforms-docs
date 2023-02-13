@@ -15,4 +15,4 @@ __RadRibbonForm__ comes pre-configured with a __RadRibbonBar__ and a __RadStatus
 
 >caption Figure 1: radRibbonForm
 
-![forms-and-dialogs-templates-radribbonform-overview 001](images/forms-and-dialogs-templates-radribbonform-overview001.png)
+![WinForms RadRibbonForm Template](images/forms-and-dialogs-templates-radribbonform-overview001.png)

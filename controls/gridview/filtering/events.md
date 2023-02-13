@@ -103,7 +103,7 @@ End Sub
 
 The arguments of this event provide the same data as the __FilterChanged__ event.
         
-# See Also
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

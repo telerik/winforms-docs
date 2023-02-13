@@ -76,7 +76,7 @@ End Sub
 
 3\. Press `F5` to run the application. You can use the button or directly click the items in order to select particular item.
 
-![carousel-getting-started 001](images/carousel-getting-started001.gif)
+![WinForms RadCarousel Getting Started](images/carousel-getting-started001.gif)
 
 # See Also
 

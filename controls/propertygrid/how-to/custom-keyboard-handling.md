@@ -29,7 +29,7 @@ The example below will handle a scenario in which the *Tab* key is captured and 
 
 >caption Figure 1: Custom Tab Key Behavior
 
-![propertygrid-custom-keyaborad-handling 001](images/propertygrid-custom-keyaborad-handling.gif)
+![WinForms RadPropertyGrid Custom Tab Key Behavior](images/propertygrid-custom-keyaborad-handling.gif)
 
 ## Custom RadPropertyGrid Control
 

@@ -33,7 +33,7 @@ Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Down
 
 {{endregion}}
 
-![panels-and-labels-radcollapsiblepanel-methods-and-properties 001](images/panels-and-labels-radcollapsiblepanel-methods-and-properties001.png)
+![WinForms RadCollapsiblePanel RadDirection Down](images/panels-and-labels-radcollapsiblepanel-methods-and-properties001.png)
 
 #### RadDirection.Left
 
@@ -52,7 +52,7 @@ Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Left
 {{endregion}} 
 
 
-![panels-and-labels-radcollapsiblepanel-methods-and-properties 002](images/panels-and-labels-radcollapsiblepanel-methods-and-properties002.png)
+![WinForms RadCollapsiblePanel RadDirection Left](images/panels-and-labels-radcollapsiblepanel-methods-and-properties002.png)
 
 #### RadDirection.Right
 
@@ -71,7 +71,7 @@ Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Right
 {{endregion}} 
 
 
-![panels-and-labels-radcollapsiblepanel-methods-and-properties 003](images/panels-and-labels-radcollapsiblepanel-methods-and-properties003.png)
+![WinForms RadCollapsiblePanel RadDirection Right](images/panels-and-labels-radcollapsiblepanel-methods-and-properties003.png)
 
 #### RadDirection.Up
 
@@ -90,7 +90,7 @@ Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Up
 {{endregion}} 
 
 
-![panels-and-labels-radcollapsiblepanel-methods-and-properties 004](images/panels-and-labels-radcollapsiblepanel-methods-and-properties004.png)
+![WinForms RadCollapsiblePanel RadDirection Up](images/panels-and-labels-radcollapsiblepanel-methods-and-properties004.png)
 
 __EnableAnimation__ - Indicates whether to use animation to expand or collapse the control.
 
@@ -125,7 +125,7 @@ Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.Fi
 {{endregion}} 
 
 
-![panels-and-labels-radcollapsiblepanel-methods-and-properties 005](images/panels-and-labels-radcollapsiblepanel-methods-and-properties005.png)
+![WinForms RadCollapsiblePanel FitToContentWidth](images/panels-and-labels-radcollapsiblepanel-methods-and-properties005.png)
 
 {{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ContentSizingMode2}} 
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ContentSizingMode2}} 
@@ -141,7 +141,7 @@ Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.Fi
 
 {{endregion}} 
 
-![panels-and-labels-radcollapsiblepanel-methods-and-properties 006](images/panels-and-labels-radcollapsiblepanel-methods-and-properties006.png)
+![WinForms RadCollapsiblePanel FitToContentHeight](images/panels-and-labels-radcollapsiblepanel-methods-and-properties006.png)
 
 {{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ContentSizingMode3}} 
 {{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ContentSizingMode3}} 
@@ -158,11 +158,11 @@ Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.Fi
 {{endregion}} 
 
 
-![panels-and-labels-radcollapsiblepanel-methods-and-properties 007](images/panels-and-labels-radcollapsiblepanel-methods-and-properties007.png)
+![WinForms RadCollapsiblePanel FitToContentWidth or FitToContentHeight](images/panels-and-labels-radcollapsiblepanel-methods-and-properties007.png)
 
 **ShowHeaderLine** - If *true*, a line will be displayed in the header which will fill the available space, otherwise it will not be displayed.
 
-![panels-and-labels-radcollapsiblepanel-methods-and-properties 008](images/panels-and-labels-radcollapsiblepanel-methods-and-properties008.png)
+![WinForms RadCollapsiblePanel ShowHeaderLine](images/panels-and-labels-radcollapsiblepanel-methods-and-properties008.png)
 
 __HorizontalHeaderAlignment__ -Determines how the elements in the header to be aligned when it is in a horizontal position:
 
@@ -188,11 +188,11 @@ __AnimationType__ - Determines the type of the animation when expanding or colla
 
 * Reveal
 
-![panels-and-labels-collapsible-panel-methods-and-properties 010](images/panels-and-labels-collapsible-panel-methods-and-properties010.gif)
+![WinForms RadCollapsiblePanel Reveal](images/panels-and-labels-collapsible-panel-methods-and-properties010.gif)
 
 * Slide
 
-![panels-and-labels-collapsible-panel-methods-and-properties 011](images/panels-and-labels-collapsible-panel-methods-and-properties011.gif)
+![WinForms RadCollapsiblePanel Slide](images/panels-and-labels-collapsible-panel-methods-and-properties011.gif)
 
 # See Also
 

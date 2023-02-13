@@ -16,7 +16,7 @@ __RadScheduler__ uses a logical layer for storing appointments and view data, an
 This event is fired after a __SchedulerCellElement__ has been created, and when the cell needs to be displayed. The arguments of this event contain a reference to the cell element itself, so you can modify its properties. The samples below demonstrate how you can programmatically change various properties of the __RadScheduler__ cells. Before these samples, we are going to provide some useful information about the __RadScheduler__ cells types.
 
 >caption Figure 1: Visual Elements
-![scheduler-views-formatting-cells 001](images/scheduler-views-formatting-cells001.png)
+![WinForms RadScheduler Visual Elements](images/scheduler-views-formatting-cells001.png)
 
 ## RadScheduler Data Cells
 
@@ -79,12 +79,12 @@ End Sub
 We have the desired result. The data cells of April 13 are red.
 
 >caption Figure 2: Formatted Cells
-![scheduler-views-formatting-cells 002](images/scheduler-views-formatting-cells002.png)
+![WinForms RadScheduler Formatted Cells](images/scheduler-views-formatting-cells002.png)
 
 However, what will happen if we navigate left or right in order to see the next/previous days of the  days that are currently into view? Here is the result. 
 
 >caption Figure 3: Formatting Incorrect Result
-![scheduler-views-formatting-cells 003](images/scheduler-views-formatting-cells003.png)
+![WinForms RadScheduler Formatting Incorrect Result](images/scheduler-views-formatting-cells003.png)
 
 As you can see, undesired cells become red as well. RadScheduler is using elements recycling which means that the elements are reused and this is why other cells appear red also. To avoid this you should add an 'else' clause that will reset the BackColor property:
 
@@ -133,7 +133,7 @@ End Sub
 As you can see in the screenshot below, the styling is now correct, because if the red cells now represent a day different from April 13, the red color is removed.
 
 >caption Figure 4: Formatting Correct Result
-![scheduler-views-formatting-cells 004](images/scheduler-views-formatting-cells004.png)
+![WinForms RadScheduler Formatting Correct Result](images/scheduler-views-formatting-cells004.png)
 
 ## Formatting Header Cells.
 
@@ -211,7 +211,7 @@ End Sub
 
 The result of the code snippet above is shown below:
 >caption Figure 5: Formatted Header Cells
-![scheduler-views-formatting-cells 005](images/scheduler-views-formatting-cells005.png)
+![WinForms RadScheduler Formatted Header Cells](images/scheduler-views-formatting-cells005.png)
 
 # See Also
 

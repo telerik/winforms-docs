@@ -31,7 +31,7 @@ The **RadSplashScreenElement** is the main element in **RadSplashScreenControl**
 * Footer Logo represented by a **SplashScreenLightVisualElement**.
 * Footer Image represented by a **SplashScreenLightVisualElement**.
 	
-![splashscreen-structure 001](images/splashscreen-structure001.png) 
+![WinForms RadSplashScreen Structure](images/splashscreen-structure001.png) 
 
 # See Also
 

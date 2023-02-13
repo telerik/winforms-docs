@@ -344,7 +344,7 @@ Me.radScheduler1.DataSource = dataSource
 When you run the application, a series of CustomAppointment objects will show up in the scheduler.
 
 >caption Figure 1: Custom Appointments
-![scheduler-data-binding-binding-to-business-objects 001](images/scheduler-data-binding-binding-to-business-objects001.png)
+![WinForms RadScheduler Custom Appointments](images/scheduler-data-binding-binding-to-business-objects001.png)
 
 ## Grouping by Resources
 
@@ -597,7 +597,7 @@ Me.radScheduler1.GroupType = GroupType.Resource
 {{endregion}} 
 
 >caption Figure 2: One-to-Many Relation
-![scheduler-data-binding-binding-to-business-objects 002](images/scheduler-data-binding-binding-to-business-objects002.png)
+![WinForms RadScheduler One-to-Many Relation](images/scheduler-data-binding-binding-to-business-objects002.png)
 
 ## Many-to-many Relation
 
@@ -684,7 +684,7 @@ myAppointment.Resources.Add(New EventId(resources(i Mod 3).Id))
 {{endregion}} 
 
 >caption Figure 3: Many-to-Many Relation
-![scheduler-data-binding-binding-to-business-objects 003](images/scheduler-data-binding-binding-to-business-objects003.png)
+![WinForms RadScheduler Many-to-Many Relation](images/scheduler-data-binding-binding-to-business-objects003.png)
 
 # See Also
 

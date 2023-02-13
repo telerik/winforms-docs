@@ -17,14 +17,14 @@ You can access and modify the style for different elements in __RadToggleSwitch_
         
 >caption Figure 1: Element hierarchy editor
 
-![buttons-toggleswitch-accessing-and-customizing-elements 001](images/buttons-toggleswitch-accessing-and-customizing-elements001.png)
+![WinForms RadButtons Element hierarchy editor](images/buttons-toggleswitch-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 >caption Figure 2:
 
-![buttons-toggleswitch-accessing-and-customizing-elements 002](images/buttons-toggleswitch-accessing-and-customizing-elements002.gif)
+![WinForms RadButtons ](images/buttons-toggleswitch-accessing-and-customizing-elements002.gif)
 
 __Customizing elements at run time__
 

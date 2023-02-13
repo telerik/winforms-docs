@@ -13,7 +13,7 @@ previous_url: gridview-columns-gridviewmaskboxcolumn
 
 __GridViewMaskBoxColumn__ allows *restricted* editing of text data. Each cell in __GridViewMaskBoxColumn__ column displays the text of the cell __Value__ property according to the settings of the __TextAlignment__ (default is __ContentAlignment.MiddleLeft__), __WrapText__ (default is *false*) and __FormatString__ properties. 
 
-![gridview-columns-gridviewmaskboxcolumn 001](images/gridview-columns-gridviewmaskboxcolumn001.png)
+![WinForms RadGridView GridViewMaskBoxColumn](images/gridview-columns-gridviewmaskboxcolumn001.png)
 
 You can set a *mask* to GridViewMaskBoxColumn using its __Mask__ and __MaskType__ properties. You can find further information about the possible values for these properties in RadMaskEditBox documentation section.
 

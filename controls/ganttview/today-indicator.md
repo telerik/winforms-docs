@@ -13,7 +13,7 @@ previous_url: ganttview-today-indicator
  
 The today indicator represents the current date and time in the graphical view of __RadGanttView__. There are two indicators you can show. One is positioned over the timeline and the other is directly over the graphical view. 
 
-![ganttview-today-indicator 001](images/ganttview-today-indicator001.png)
+![WinForms RadGanttView Today Indicator](images/ganttview-today-indicator001.png)
 
 You can control which one is visible through the __ShowTodayIndicator__ and the __ShowTimelineTodayIndicator__ properties.
 

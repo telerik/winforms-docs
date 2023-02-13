@@ -16,7 +16,7 @@ This article demonstrates a sample approach how to host a [RadMultiColumnComboBo
 
 >caption Figure 1: Custom overlay with a RadMultiColumnComboBox
 
-![winforms/chat-items-custom-overlays 001](images/chat-items-custom-overlays001.png) 
+![WinForms RadChat Custom overlay with a RadMultiColumnComboBox](images/chat-items-custom-overlays001.png) 
 
 To achieve this goal, you need to create a derivative of the **BaseChatItemOverlay** class:
 

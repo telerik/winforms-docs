@@ -127,7 +127,7 @@ End Sub
 {{endregion}} 
 
 
-![richtexteditor-getting-started 001](images/richtexteditor-getting-started001.png)
+![WinForms RadRichTextEditor Format](images/richtexteditor-getting-started001.png)
 
 ## Creating a Document at run time
 
@@ -263,7 +263,7 @@ Me.radRichTextEditor1.Document = document
 
 {{endregion}} 
 
-![richtexteditor-getting-started 002](images/richtexteditor-getting-started002.png)
+![WinForms RadRichTextEditor Sample Document](images/richtexteditor-getting-started002.png)
 
 This document is editable. To make it read only you have to set the __IsReadOnly__ property of the __RadRichTextEditor__ to *true*.
 

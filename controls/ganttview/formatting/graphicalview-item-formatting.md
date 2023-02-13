@@ -1,6 +1,6 @@
 ---
-title: GraphicalView item formatting
-page_title: GraphicalView item formatting - RadGanttView
+title: GraphicalView Item Formatting
+page_title: GraphicalView Item Formatting - RadGanttView
 description: The GraphicalViewItemFormatting event allows you to change the style and looks of the items displayed in the graphical view. 
 slug: winforms/ganttview-/formatting/graphicalview-item-formatting
 tags: graphicalview,item,formatting
@@ -9,7 +9,7 @@ position: 1
 previous_url: ganttview-formatting-graphicalviewitem-formatting
 ---
 
-# GraphicalView item formatting
+# GraphicalView Item Formatting
 
 The __GraphicalViewItemFormatting__ event allows you to change the style and looks of the items displayed in the graphical view. The following example demonstrates how to format all tasks that involve some selection e.g. their title starts with "Select".
         
@@ -44,7 +44,7 @@ End Sub
 {{endregion}} 
 
 
-![ganttview-formatting-graphicalviewitem-formatting 001](images/ganttview-formatting-graphicalviewitem-formatting001.png)
+![WinForms RadGanttView GraphicalView Item Formatting](images/ganttview-formatting-graphicalviewitem-formatting001.png)
 
 # See Also
 

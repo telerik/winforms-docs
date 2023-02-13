@@ -12,7 +12,7 @@ position: 1
 
 When using the unbound mode you need to create the series and manually add data points. Then you need to set the __Series__ property of the RadSparkline. This is demonstrated in the following example. 
 
-#### Create series manually
+#### Create Series Manually
 
 {{source=..\SamplesCS\Sparkline\SparklineCode.cs region=Unbound}} 
 {{source=..\SamplesVB\Sparkline\SparklineCode.vb region=Unbound}}
@@ -65,7 +65,7 @@ Me.radSparkline1.Series = barSeries
 
 You can see the result in the following image.
 
- ![](images/sparkline-unbound-mode001.png)
+ ![WinForms RadSparkline Unbound Mode](images/sparkline-unbound-mode001.png)
 
 
  

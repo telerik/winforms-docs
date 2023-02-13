@@ -104,7 +104,7 @@ RadDiagram1.Items.Add(connection2)
 {{endregion}} 
 
 
-![diagram-populating-with-data 001](images/diagram-populating-with-data001.png)
+![WinForms RadDiagram Adding Items in Code Behind](images/diagram-populating-with-data001.png)
 
 ## Load items from XML
 

@@ -20,7 +20,7 @@ This library enables you to work with spreadsheet documents – create ones from
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![RadSpreadProcessing Overview image](images/RadSpreadProcessing_Overview_01.png)
+![WinForms RadSpreadProcessing Overview](images/RadSpreadProcessing_Overview_01.png)
 
 **RadSpreadProcessing** comes with support for:
 

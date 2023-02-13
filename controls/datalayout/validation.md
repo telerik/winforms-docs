@@ -126,8 +126,7 @@ Me.RadDataLayout1.DataSource = New Employee() With {
 {{endregion}} 
 
 >caption Figure 1: RadDataLayout Initialized
-
-![datalayout-validation 001](images/datalayout-validation001.png)
+![WinForms RadDataLayout Initialized](images/datalayout-validation001.png)
 
 2\. Set the __ShowValidationPanel__ property to *true*. This will display the panel below the editors:
 
@@ -303,8 +302,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 2: Validaton Errors
-
-![datalayout-validation 002](images/datalayout-validation002.png)
+![WinForms RadDataLayout Validaton Errors](images/datalayout-validation002.png)
 
 In this tutorial we also used an error provider to show error icon next to the editors. You can read more about Microsoft Error provider here - [ErrorProvider Class](http://msdn.microsoft.com/en-us/library/system.windows.forms.errorprovider%28v=vs.110%29.aspx)
 

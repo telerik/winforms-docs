@@ -12,18 +12,17 @@ position: 2
 
 At design time you can directly type on the left or right part to add buttons.
 
->caption Figure 1: RadTabbedForm add buttons to the left or right.
+>caption Figure 1: RadTabbedForm Add Buttons to the Left or Right
 
-
-![radtabbedform-design-time002](images/radtabbedform-design-time002.png)
+![WinForms RadTabbedForm Design Time](images/radtabbedform-design-time002.png)
 
 >important When the content area or a tab is selected you cannot resize the form. Just pres __Esc__ and the parent form will be selected. 
 
 ## Smart Tag
 
->caption Figure 2: RadTabbedForm smart tag.
+>caption Figure 2: RadTabbedForm Smart Tag
 
-![radtabbedform-design-time001](images/radtabbedform-design-time001.png)
+![WinForms RadTabbedForm Smart Tag](images/radtabbedform-design-time001.png)
 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

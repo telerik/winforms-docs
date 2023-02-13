@@ -28,7 +28,7 @@ Here is how the GridLine annotation looks like.
 
 >caption Figure 1: CartesianSparkGridLineAnnotation
 
-![](images/sparkline-annotations001.png)
+![WinForms RadSparkline CartesianSparkGridLineAnnotation](images/sparkline-annotations001.png)
 
 The following example shows how you can create a Grid Line annotation.
 
@@ -96,7 +96,7 @@ Here is how the Plot Band annotation looks like.
 
 >caption Figure 2: CartesianSparkPlotBandAnnotation
 
-![](images/sparkline-annotations002.png)
+![WinForms RadSparkline CartesianSparkPlotBandAnnotation](images/sparkline-annotations002.png)
 
 The following example shows how you can create a Plot Band annotation.
 

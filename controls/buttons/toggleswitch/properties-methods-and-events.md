@@ -17,19 +17,19 @@ previous_url: buttons-toggleswitch-properties-methods-events
 
 |Property|Description|Result|
 |----|----|----|
-|__OnText__|Gets or sets the text displayed when the state is On. The default string is *"ON"*.|![buttons-toggleswitch-properties-methods-events 001](images/buttons-toggleswitch-properties-methods-events001.png)|
-|__OffText__|Gets or sets the text displayed when the state is Off. The default string is *"OFF"*.|![buttons-toggleswitch-properties-methods-events 002](images/buttons-toggleswitch-properties-methods-events002.png)|
-|__ThumbTickness__|Gets or sets width of the thumb. Its default value is *20*.|![buttons-toggleswitch-properties-methods-events 003](images/buttons-toggleswitch-properties-methods-events003.png)|
+|__OnText__|Gets or sets the text displayed when the state is On. The default string is *"ON"*.|![WinForms RadToggleSwitch OnText](images/buttons-toggleswitch-properties-methods-events001.png)|
+|__OffText__|Gets or sets the text displayed when the state is Off. The default string is *"OFF"*.|![WinForms RadToggleSwitch Off Text](images/buttons-toggleswitch-properties-methods-events002.png)|
+|__ThumbTickness__|Gets or sets width of the thumb. Its default value is *20*.|![WinForms RadToggleSwitch ThumbTickness](images/buttons-toggleswitch-properties-methods-events003.png)|
 |__SwitchElasticity__|Determines how far the switch needs to be dragged before it snaps to the opposite side. Its default value is *0.5*||
 |__Value__|Gets or sets a boolean value. Its default value is *true*.||
-|__AllowAnimation__|Gets or sets a value indicating whether to use animation when changing its state. The first RadToggleSwitch is with disabled animation.|![buttons-toggleswitch-properties-methods-events 004](images/buttons-toggleswitch-properties-methods-events004.gif)|
+|__AllowAnimation__|Gets or sets a value indicating whether to use animation when changing its state. The first RadToggleSwitch is with disabled animation.|![WinForms AllowAnimation](images/buttons-toggleswitch-properties-methods-events004.gif)|
 |__AnimationFrames__|Gets or sets the animation frames. Its default value is *20*.||
 |__IsAnimating__|Gets a value indicating whether the control is currently animating.||
 |__OnElement__|Gets the on element of __RadToggleSwitch__.||
 |__OffElement__|Gets the off element of __RadToggleSwitch__.||
 |__Thumb__|Gets the thumb of __RadToggleSwitch__.||
-|__Width__|Gets or sets the width of __RadToggleSwitch__.|![buttons-toggleswitch-properties-methods-events 005](images/buttons-toggleswitch-properties-methods-events005.png) |
-|__Height__|Gets or sets the height of __RadToggleSwitch__.|![buttons-toggleswitch-properties-methods-events 006](images/buttons-toggleswitch-properties-methods-events006.png)|
+|__Width__|Gets or sets the width of __RadToggleSwitch__.|![WinForms RadToggleSwitch Width](images/buttons-toggleswitch-properties-methods-events005.png) |
+|__Height__|Gets or sets the height of __RadToggleSwitch__.|![WinForms RadToggleSwitch Height](images/buttons-toggleswitch-properties-methods-events006.png)|
 |__ToggleStateMode__|Determines how ToggleSwitch button should handle mouse click and drag.|
 
 ## Methods

@@ -12,7 +12,7 @@ position: 0
 
 **RadChat** offers different cards to display data in a structured layout. Thus, the visually ordered information is easier to digest for the user. In addition, it may respond to users' action.
 
-![winforms/chat-overview 003](images/chat-overview003.gif) 
+![WinForms RadChat winforms/chat-overview 003](images/chat-overview003.gif) 
 
 Depending on the information that is presented, the cards can be one of the following types:
 
@@ -22,7 +22,7 @@ Depending on the information that is presented, the cards can be one of the foll
 
 >caption Figure 1: ChatImageCardElement
 
-![winforms/chat-items-cards 001](images/chat-items-cards001.png) 
+![WinForms RadChat Chat Image Card Element](images/chat-items-cards001.png) 
 
 #### Adding a ChatImageCardElement programmatically
 
@@ -52,13 +52,13 @@ Me.radChat1.AddMessage(message)
 
 {{endregion}}
 
-## ChatProductCardElement
+## Chat Product Card Element
 
 **ChatProductCardElement** illustrates an image and several fields with additional information. It resembles a product brochure.
 
 >caption Figure 2: ChatProductCardElement
 
-![winforms/chat-items-cards 002](images/chat-items-cards002.png) 
+![WinForms RadChat Chat Product Card Element](images/chat-items-cards002.png) 
 
 #### Adding a ChatProductCardElement programmatically
 
@@ -93,7 +93,7 @@ Me.radChat1.AddMessage(message)
 
 >caption Figure 3: ChatWeatherCardElement
 
-![winforms/chat-items-cards 003](images/chat-items-cards003.png) 
+![WinForms RadChat Chat Weather Card Element](images/chat-items-cards003.png) 
 
 #### Adding a ChatWeatherCardElement programmatically
 
@@ -125,7 +125,7 @@ Me.radChat1.AddMessage(message)
 
 >caption Figure 4: ChatFlightCardElement
 
-![winforms/chat-items-cards 003](images/chat-items-cards004.png) 
+![WinForms RadChat Chat Flight Card Element](images/chat-items-cards004.png) 
 
 #### Adding a ChatFlightCardElement programmatically
 
@@ -160,7 +160,7 @@ The above examples demonstrates how to add the different card types in a simple 
 
 >caption Figure 5: ChatCarouselMessage
 
-![winforms/chat-items-cards 005](images/chat-items-cards005.gif) 
+![WinForms RadChat Carousel Message](images/chat-items-cards005.gif) 
 
 ## Card Actions
 
@@ -235,7 +235,7 @@ End Sub
 
 >caption Figure 6: Handling ChatCardActions
 
-![winforms/chat-items-cards 006](images/chat-items-cards006.gif) 
+![WinForms RadChat Handling Chat Card Actions](images/chat-items-cards006.gif) 
 
  
 # See Also

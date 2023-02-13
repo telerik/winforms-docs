@@ -39,7 +39,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 1: Set the text at runtime.
-![editors-textboxcontrol-getting-started 001](images/editors-textboxcontrol-getting-started001.png)
+![WinForms RadTextBoxControl Text Runtime](images/editors-textboxcontrol-getting-started001.png)
 
 You can also define the lines in the text box at run time: 
 
@@ -71,7 +71,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 2: Set the lines of a multiline text box.
-![editors-textboxcontrol-getting-started 002](images/editors-textboxcontrol-getting-started002.png)
+![WinForms RadTextBoxControl Multiline](images/editors-textboxcontrol-getting-started002.png)
 
 By setting the __NullText__ property, the control will display a custom string when the __Text__ property is empty or null: 
 
@@ -96,7 +96,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 3: Setting the null text.
-![editors-textboxcontrol-getting-started 003](images/editors-textboxcontrol-getting-started003.png)
+![WinForms RadTextBoxControl Null Text](images/editors-textboxcontrol-getting-started003.png)
 
 Based on the value set to the __TextAlign__ property, the control will display its content aligned to the left, center or right: 
 
@@ -121,7 +121,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 4: Aligning the text to different positions.
-![editors-textboxcontrol-getting-started 004](images/editors-textboxcontrol-getting-started004.png)
+![WinForms RadTextBoxControl Aligning Text](images/editors-textboxcontrol-getting-started004.png)
 
 # See Also
 

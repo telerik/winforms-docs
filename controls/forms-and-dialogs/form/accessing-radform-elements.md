@@ -44,7 +44,7 @@ End Sub
 
 >caption Figure 1: TitleBar
   
-![forms-and-dialogs-accessing-radform-elements 001](images/forms-and-dialogs-accessing-radform-elements001.png)
+![WinForms RadForm TitleBar](images/forms-and-dialogs-accessing-radform-elements001.png)
 
 
 >note By default, the __HelpButton__ is not shown. Set the __HelpButton__ property to *true* to display a Help button in the form's caption bar.The value of the __HelpButton__ property is ignored if the Maximize or Minimize buttons are shown.

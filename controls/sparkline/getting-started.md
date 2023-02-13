@@ -12,7 +12,7 @@ position: 3
 
 1\. To start using the RadSparkLine first you need to place the control on the form. By default the control should look like a regular panel.
 
-![](images/sparkline-getting-started001.png)
+![WinForms RadSparkline Sample](images/sparkline-getting-started001.png)
 
 2\. Once the control is on the form go to the code behind and create a new __SparkBarSeries__. 
 
@@ -91,5 +91,5 @@ End Function
 
 4\. The RadSparkline now shows the data and indicates the high an low points.
 
-![](images/sparkline-getting-started002.png)
+![WinForms RadSparkline SparkBarSeries](images/sparkline-getting-started002.png)
 

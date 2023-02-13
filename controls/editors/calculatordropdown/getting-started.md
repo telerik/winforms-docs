@@ -13,7 +13,7 @@ position: 3
 The following example demonstrates how to set up __RadCalculatorDropDown__ with a minmum popup width and height.
 
 >caption Figure 1: Before
-![editors-calculator-getting-started 001](images/editors-calculator-getting-started001.png)
+![WinForms RadCalculatorDropDown Before](images/editors-calculator-getting-started001.png)
 
 1\. Drag a __RadCalculatorDropDown__ on a form.
 
@@ -40,7 +40,7 @@ Me.RadCalculatorDropDown1.CalculatorElement.MinPopupHeight = desiredWidth
 3\. Press __F5__ to run the application. Click the arrow button to open the drop-down. Notice its size equaling that of the editor.
 
 >caption Figure 2: After
-![editors-calculator-getting-started 002](images/editors-calculator-getting-started002.png)
+![WinForms RadCalculatorDropDown After](images/editors-calculator-getting-started002.png)
 
 ## See Also
 

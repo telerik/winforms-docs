@@ -16,7 +16,7 @@ previous_url: scheduler-views-day-view
 The Day view shows one or more days at a time. To move to the next or previous day, you can use the back and forward keyboard arrows, or the [SchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control.
         
 >caption Figure 1: Day View
-![scheduler-views-day-view 001](images/scheduler-views-day-view001.png)
+![WinForms RadScheduler Day View](images/scheduler-views-day-view001.png)
 
 ## Setting Day View
 
@@ -129,7 +129,7 @@ dayView.WorkTime = TimeInterval.DefaultWorkTime
 Example when you set a 4 hour working day:
 
 >caption Figure 2: Four Hour Working Day
-![scheduler-views-day-view 002](images/scheduler-views-day-view002.png)
+![WinForms RadScheduler Four Hour Working Day](images/scheduler-views-day-view002.png)
 
 Additionally, you can specify which week days are part of the working week. This can be achieved by setting the __WorkWeekStart__ and __WorkWeekEnd__ properties.
 
@@ -273,7 +273,7 @@ dayView.RulerEndScaleMinutes = 45
 {{endregion}} 
 
 >caption Figure 3: Ruler Scaling
-![scheduler-views-day-view 003](images/scheduler-views-day-view003.png)
+![WinForms RadScheduler Ruler Scaling](images/scheduler-views-day-view003.png)
 
 ## Ruler Time Format (am/pm)
 
@@ -300,7 +300,7 @@ dayView.RulerFormatStrings = New RulerFormatStrings("%h", "mm", "", "")
 {{endregion}} 
 
 >caption Figure 4: 12 Hour Time Format
-![scheduler-views-day-view 005](images/scheduler-views-day-view005.png)
+![WinForms RadScheduler Hour Time Format](images/scheduler-views-day-view005.png)
 
 #### Set 24 Hour Time Format
 
@@ -323,7 +323,7 @@ dayView.RulerFormatStrings = New RulerFormatStrings("%H", "mm", "", "")
 {{endregion}} 
 
 >caption Figure 5: 24 Hour Time Format
-![scheduler-views-day-view 006](images/scheduler-views-day-view006.png)
+![WinForms RadScheduler 4 Hour Time Format](images/scheduler-views-day-view006.png)
 
 ## Showing and Hiding the Ruler
 
@@ -434,7 +434,7 @@ dayViewElement.SetColumnWidth(2, 2)
 {{endregion}} 
 
 >caption Figure 6: Column Size
-![scheduler-views-day-view 007](images/scheduler-views-day-view007.png)
+![WinForms RadScheduler Column Size](images/scheduler-views-day-view007.png)
 
 # See Also
 

@@ -15,7 +15,7 @@ Thank you for choosing __RadOverlay__!
 
 Overlay control enables you to display a notification whenever a longer-running background process is being handled by the application. This makes the UI more informative and the user experience smoother.
 
-![overlay-overview 001](images/overlay-overview001.gif)
+![WinForms RadOverlay Overview](images/overlay-overview001.gif)
 
 ## Key Features
 

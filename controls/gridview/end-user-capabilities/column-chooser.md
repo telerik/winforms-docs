@@ -15,14 +15,15 @@ The visibility of all columns can be managed by the end-user at runtime using __
 
 >caption Figure 1: Opening the Column Chooser from the context menu.
 
-![gridview-end-user-capabilities-column-chooser1](images/gridview-end-user-capabilities-column-chooser1.png)
+![WinForms RadGridView Opening the Column Chooser from the context menu](images/gridview-end-user-capabilities-column-chooser1.png)
 
 The user can then drag column headings to the __Column Chooser__ window and drop them there. This will remove the column from RadGridView and will place it in the __Column Chooser Window__. Columns can be dragged back to RadGridView.
 
 >caption Figure 2: Using the Column Chooser.
 
-![](images/gridview-end-user-capabilities-column-chooser2.gif)  
-# See Also
+![WinForms RadGridView Using the Column Chooser](images/gridview-end-user-capabilities-column-chooser2.gif)  
+
+## See Also
 * [Editing Behavior]({%slug winforms/gridview/end-user-capabilities/editing-behavior%})
 
 * [Filtering]({%slug winforms/gridview/end-user-capabilities/filtering%})

@@ -14,7 +14,7 @@ Similar to Outlook calendar, in **R1 2018** we introduced search functionality i
 
 >caption Figure 1: Search box in RadSchedulerNavigator
 
-![scheduler-scheduler-navigator-search 001](images/scheduler-scheduler-navigator-search001.gif)
+![WinForms RadScheduler Search box in RadSchedulerNavigator](images/scheduler-scheduler-navigator-search001.gif)
 
 The user can enter some search criteria in the text box. Then, a [RadGridView]({%slug winforms/gridview%}) with the search results will be displayed in **RadScheduler**.
  

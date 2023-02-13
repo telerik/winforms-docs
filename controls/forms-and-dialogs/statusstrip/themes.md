@@ -21,11 +21,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadStatusBarElement__ in *Controls Structure* on the left side. Then, select __StatusBarFill__ in the *Elements* section.
 
-	![forms-and-dialogs-statusstrip-themes 001](images/forms-and-dialogs-statusstrip-themes001.png)
+	![WinForms RadStatusStrip VisualStyleBuilder](images/forms-and-dialogs-statusstrip-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![forms-and-dialogs-statusstrip-themes 002](images/forms-and-dialogs-statusstrip-themes002.png)
+	![WinForms RadStatusStrip Fill Repository](images/forms-and-dialogs-statusstrip-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

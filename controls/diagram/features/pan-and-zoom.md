@@ -39,9 +39,9 @@ Me.RadDiagram1.IsPanEnabled = True
 
 
 
->caption Figure.1 Pan
+>caption Figure 1: Pan
 
-![diagram-features-pan-and-zoom 001](images/diagram-features-pan-and-zoom001.gif)
+![WinForms RadDiagram Pan](images/diagram-features-pan-and-zoom001.gif)
 
 
 ## Pan Methods
@@ -106,9 +106,9 @@ Me.RadDiagram1.IsZoomEnabled = True
 
 
 
->caption Figure.2 Zoom
+>caption Figure 2: Zoom
 
-![diagram-features-pan-and-zoom 002](images/diagram-features-pan-and-zoom002.gif)
+![WinForms RadDiagram Zoom](images/diagram-features-pan-and-zoom002.gif)
 
 The zoom range is controlled through two __DiagramConstants__:
 

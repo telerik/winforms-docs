@@ -16,13 +16,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File` >> `Open Package`.
 4. Expand __RadColorBox__ and select the `ColorEditorColorBox`. 
-    ![colorbox-themes001](images/colorbox-themes001.png)
+    ![WinForms RadColorBox VisualStyleBuilder ColorEditorColorBox](images/colorbox-themes001.png)
 
 5. Open the `Edit Repository Item` dialog and change the `Margin`:
-   ![colorbox-themes002](images/colorbox-themes002.png)
+   ![WinForms RadColorBox Edit Repository Item](images/colorbox-themes002.png)
 
 6. The Margin is now changed, the result is that the color box is smaller:
-   ![colorbox-themes003](images/colorbox-themes003.png)
+   ![WinForms RadColorBox Margin](images/colorbox-themes003.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 

@@ -15,13 +15,13 @@ This article will demonstrate the basic capabilities of **RadListView**, like fi
 
 >caption Figure 1: Getting started with RadListView
 
-![listview-getting-started 001](images/listview-getting-started001.png)
+![WinForms RadListView Getting started with RadListView](images/listview-getting-started001.png)
 
 For the sake of this example, we are going to use a DataTable containing data about Artists, Albums, Songs and Image. 
 
 >caption Figure 2: Songs DataTable
 
-![listview-getting-started 002](images/listview-getting-started002.png)
+![WinForms RadListView Songs DataTable](images/listview-getting-started002.png)
 
 1\. First let’s create a form with [RadCommandBar]({%slug winforms/commandbar%}) docked *Top* and **RadListView** docked *Fill*. Add a __Strip__ to [RadCommandBar]({%slug winforms/commandbar%}) and populate it with the following items:
 
@@ -41,7 +41,7 @@ For the sake of this example, we are going to use a DataTable containing data ab
 
 At this point the form should like something similar to this:
 
-![listview-getting-started 003](images/listview-getting-started003.png)
+![WinForms RadListView Getting Started](images/listview-getting-started003.png)
 
 2\. Now, lets continue with setting the control __DataSource__, allow edit and remove operations and subscribe to the events that we are going to use in this example.
 
@@ -548,4 +548,4 @@ End Sub
 
 9\. Run the application and try the different functionalities: 
 
-![listview-getting-started 005](images/listview-getting-started005.png)
+![WinForms RadListView Getting Started Sample](images/listview-getting-started005.png)

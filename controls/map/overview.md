@@ -17,9 +17,9 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![map-overview 001](images/map-overview001.png)
+![WinForms RadMap Overview](images/map-overview001.png)
 
-# Key Features
+## Key Features
 
 * Pan and Zoom
 * Bing Maps and OpenStreetMaps imagery services
@@ -35,7 +35,7 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 * Legend
 * Built-in pins, callouts, routes, air routes, labels, paths
 
-![map-overview 002](images/map-overview002.png)
+![WinForms RadMap BingRestProvider](images/map-overview002.png)
 
 >important RadMap control does not license right of use to any map provider. You must obtain and/or follow the licensing requirements set forth by each map provider. 
 >

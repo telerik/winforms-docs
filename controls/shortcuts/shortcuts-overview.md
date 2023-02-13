@@ -24,7 +24,7 @@ The following diagram illustrates the object model and class hierarchy that lie 
 
 >caption Figure 1: Shortcuts model
 
-![images/ShortcutsStructure001.png](images/ShortcutsStructure001.png)
+![WinForms RadShortcuts Shortcuts model](images/ShortcutsStructure001.png)
 
 The entire mechanism is controlled by several interfaces and classes which provide very easy and intuitive way to register different shortcuts.
 

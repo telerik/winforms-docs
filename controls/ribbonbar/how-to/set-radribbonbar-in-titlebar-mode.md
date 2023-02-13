@@ -35,7 +35,7 @@ The result is shown on the screenshot below:
 
 >caption Figure 1: Titlebar Mode
 
-![ribbonbar-how-to-set-radribbonbar-in-titlebar-mode 001](images/ribbonbar-how-to-set-radribbonbar-in-titlebar-mode001.png)
+![WinForms RadRibbonBar Titlebar Mode](images/ribbonbar-how-to-set-radribbonbar-in-titlebar-mode001.png)
 
 ## See Also
 

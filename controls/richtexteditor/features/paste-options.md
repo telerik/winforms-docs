@@ -94,7 +94,7 @@ When the users paste content in **RadRichTextEditor** using the Ctrl+V keyboard 
 
 #### Figure 1: Paste Options Popup in RadRichTextEditor
 
-![Paste Options Popup in RadRichTextEditor](images/radrichtexteditor-features-paste-options001.png)
+![WinForms RadRichTextEditor Paste Options Popup in RadRichTextEditor](images/radrichtexteditor-features-paste-options001.png)
 
 
 ## See Also

@@ -14,7 +14,7 @@ __RadMap__ provides support for stunning map overlays through its KML-import fea
 
 >caption Figure 1: KML Reader
 
-![map-file-readers-kml-reader 001](images/map-file-readers-kml-reader001.png)
+![WinForms RadMap KML Reader](images/map-file-readers-kml-reader001.png)
 
 To read your data you have to use a __KmlReader__.
 

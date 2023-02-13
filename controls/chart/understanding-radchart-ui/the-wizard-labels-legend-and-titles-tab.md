@@ -25,4 +25,4 @@ On the __Labels, Legend and Titles__ Tab:
 
 >caption 
 
-![chart-understanding-radchart-ui-the-wizard-labels-legend-and-titles-tab 001](images/chart-understanding-radchart-ui-the-wizard-labels-legend-and-titles-tab001.png)
+![WinForms RadChart Wizard Labels Legend and Titles Tab](images/chart-understanding-radchart-ui-the-wizard-labels-legend-and-titles-tab001.png)

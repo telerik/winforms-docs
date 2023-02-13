@@ -14,7 +14,7 @@ This article will demonstrate how you can create shapes in __RadDiagram__ after 
 
 >caption Figure 1: Grid to Diagram Drag and Drop
 
-![diagram-drag-and-drop-from-another-control 001](images/diagram-drag-and-drop-from-another-control001.gif)
+![WinForms RadDiagram Grid to Diagram Drag and Drop](images/diagram-drag-and-drop-from-another-control001.gif)
 
 ## Preparing RadGridView for Drag and Drop
 

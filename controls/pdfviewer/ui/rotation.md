@@ -12,7 +12,7 @@ position: 3
 
 **RadPdfViewer** provides functionality for rotating the pages of the loaded document. You can programmatically rotate the document pages through the **RadPdfViewer** class.
 
-![pdfviewer-ui-rotation 001](images/pdfviewer-ui-rotation001.png) 
+![WinForms RadPdfViewer Rotation](images/pdfviewer-ui-rotation001.png) 
 
 ## Rotation Using RadPdfViewer
 

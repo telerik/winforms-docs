@@ -15,7 +15,7 @@ In this article we will describe the design time abilities of __RadBulletGrpaph_
 Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: Smart Tag
-![radbulletgraph design time 001](images/radbulletgraph-design-time001.png)
+![WinForms RadGauges Smart Tag](images/radbulletgraph-design-time001.png)
 
 * __Common Tasks__
 

@@ -13,11 +13,11 @@ previous_url: lineargauge-structure
 
 This article describes the inner structure and organization of the elements which build the __RadLinearGauge__ control.
 
->caption Figure 1: RadBulletGraph`s Element Hierarchy
-![lineargauge structure 001](images/lineargauge-structure001.png)
+>caption Figure 1: RadLinearGauge`s Element Hierarchy
+![WinForms RadGauges RadLinearGaugeh`s Element Hierarchy](images/lineargauge-structure001.png)
 
->caption Figure 2: RadBulletGraph`s Structure
-![lineargauge structure 002](images/lineargauge-structure002.png)
+>caption Figure 2: RadLinearGauge`s Structure
+![WinForms RadGauges RadLinearGauge`s Structure](images/lineargauge-structure002.png)
 
 1. [LinearGaugeBar]({%slug winforms/gauges/lineargauge/elements/working-with-bars%}): This element represents a bar that can be used for indicating a specific value or as a scale for other indicators.
 

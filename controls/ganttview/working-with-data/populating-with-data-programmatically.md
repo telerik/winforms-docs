@@ -166,7 +166,7 @@ Me.RadGanttView1.Links.Add(link3)
 {{endregion}} 
 
 
-![ganttview-working-with-data-populating-with-data-programmatically 001](images/ganttview-working-with-data-populating-with-data-programmatically001.png)
+![WinForms RadGanttView ganttview-working-with-data-populating-with-data-programmatically 001](images/ganttview-working-with-data-populating-with-data-programmatically001.png)
 
 Now we can just add the desired columns to be displayed in __GanttViewTextViewElement__. During the column initialization we will pass a string to specify the __FieldName__ so the column will know which fields of the tasks to display. In addition this string will also be used as header text.
 
@@ -196,7 +196,7 @@ Me.RadGanttView1.GanttViewElement.Columns.Add(endColumn)
 
 {{endregion}} 
 
-![ganttview-working-with-data-populating-with-data-programmatically 002](images/ganttview-working-with-data-populating-with-data-programmatically002.png)
+![WinForms RadGanttView Populating Data Programmatically](images/ganttview-working-with-data-populating-with-data-programmatically002.png)
 
 # See Also  
 

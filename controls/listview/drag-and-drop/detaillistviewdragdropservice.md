@@ -14,7 +14,7 @@ When **RadListView** is in *DetailsView* it provides a grid-like interface for d
 
 >caption Figure 1: Reorder columns
 
-![listview-detaillistviewdragdropservice 001](images/listview-detaillistviewdragdropservice001.gif)
+![WinForms RadListView Reorder columns](images/listview-detaillistviewdragdropservice001.gif)
 
 As a descendant of [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%}), **DetailListViewDragDropService** exposes the same events as its parent. Thus, you can customize the default functionality according to the specific requirements.
 

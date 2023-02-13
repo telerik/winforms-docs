@@ -14,7 +14,7 @@ The Smart Tag for __RadBindingNavigator__ lets you quickly access common tasks i
 
 >caption Figure 1: The RadBindingNavigator Smart Tag.
 
-![bindingnavigator-smart-tag001.png](images/bindingnavigator-smart-tag001.png) 
+![WinForms RadBindingNavigator Smart Tag](images/bindingnavigator-smart-tag001.png) 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.
     - __Edit UI elements:__ Opens a dialog that displays the __Element Hierarchy Editor.__ This editor lets you browse all the elements in the control.

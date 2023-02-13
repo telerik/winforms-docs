@@ -30,4 +30,4 @@ The RadChart Interface consists of tabs:
 * [Axis]({%slug winforms/chart/understanding-radchart-ui/the-wizard-axis-tab%})
 
 * [Values Data Table]({%slug winforms/chart/understanding-radchart-ui/understanding-wizard-values-data-table-tab%})
-* ![chart-understanding-radchart-ui-radchart-wizard 001](images/chart-understanding-radchart-ui-radchart-wizard001.png)
+* ![WinForms RadChart Wizard Sample](images/chart-understanding-radchart-ui-radchart-wizard001.png)

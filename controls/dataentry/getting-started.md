@@ -17,7 +17,7 @@ This tutorial demonstrates how bind __RadDataEntry__ to business object and to a
 
 1\. Place a __RadDataEntry__ control on a form. 
 
-![dataentry-overview-getting-started 001](images/dataentry-overview-getting-started001.png)
+![WinForms RadDataEntry Getting Started Binding RadDataEntry to a single object](images/dataentry-overview-getting-started001.png)
 
 2\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties
             
@@ -181,7 +181,7 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 4\. Press <b>F5</b> to run the project and you should see the following:
  
-![dataentry-overview-getting-started 002](images/dataentry-overview-getting-started002.png)
+![WinForms RadDataEntry Getting Started](images/dataentry-overview-getting-started002.png)
 
 >note  In case you want to be notified for changes made on the data item, the class Employee should implement [INotifyPropertyChanged ]( http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged%28v=vs.110%29.aspx ) Interface and raise the  __PropertyChanged__  event every time a property value changes.
  
@@ -193,7 +193,7 @@ The following tutorial will demonstrate how to bind __RadDataEntry__ to a collec
 
 1\. Place __RadDataEntry__, __RadBindingNavigator__  and a BindingSource component on a form. Dock the navigator to *Top* and the data entry to *Fill*.
  
-![dataentry-overview-getting-started 003](images/dataentry-overview-getting-started003.png)
+![WinForms RadDataEntry RadBindingNavigator](images/dataentry-overview-getting-started003.png)
 
 2\. Create List of business objects and set it as data source of BindingSource.
              
@@ -275,7 +275,7 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 
 4\. Press __F5__ to run the project and you should see the following:
  
-![dataentry-overview-getting-started 004](images/dataentry-overview-getting-started004.png)
+![WinForms RadDataEntry Getting Started BindingSource](images/dataentry-overview-getting-started004.png)
 
 >note **RadDataEntry** allows you to set the **DataSource** property at design time as well, e.g. to a **BindingSource** that is available. Thus, the respective editors will be generated inside **RadDataEntry**.
 

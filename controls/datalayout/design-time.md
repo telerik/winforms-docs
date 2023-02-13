@@ -19,7 +19,7 @@ The smart tag allows you to open the layout editor, change the theme and open th
         
 >caption Figure 1: Smart Tag.
 
-![datalayout-design-time 001](images/datalayout-design-time001.png)
+![WinForms RadDataLayout Smart Tag](images/datalayout-design-time001.png)
 
 ## Design Time Data Binding
 
@@ -27,7 +27,7 @@ For the purpose of this example we will bind our data layout control to the **Ca
         
 >caption Figure 2: Data Binding.
 
-![datalayout-design-time 002](images/datalayout-design-time002.png)
+![WinForms RadDataLayout Data Binding](images/datalayout-design-time002.png)
 
 ## Layout Editor
 
@@ -35,7 +35,7 @@ This editor allows us to rearrange the generated editors. Additional elements ca
         
 >caption Figure 3: The design time Layout Editor.
 
-![datalayout-design-time 003](images/datalayout-design-time003.png)
+![WinForms RadDataLayout The design Time Layout Editor](images/datalayout-design-time003.png)
 
 
 ## Selection Glyph
@@ -44,7 +44,7 @@ The selection glyph is an arrow that is shown when a control in the layout panel
         
 >caption Figure 4: Selection Glyph.
 
-![datalayout-design-time 005](images/datalayout-design-time005.png)
+![WinForms RadDataLayout Selection Glyph](images/datalayout-design-time005.png)
 
 # See Also
 

@@ -18,7 +18,7 @@ __RadDropDownButton__ provides a menu-like interface opened from a button.
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![buttons-dropdownbutton-overview 001](images/buttons-dropdownbutton-overview001.png)
+![WinForms RadButtons buttons-dropdownbutton-overview 001](images/buttons-dropdownbutton-overview001.png)
 
 Each of the items of __RadDropDownButton__ can be set to perform an action when it is clicked. In addition, the items can contain other items, allowing you to create any hierarchy that fits your needs of sub-items. 
 

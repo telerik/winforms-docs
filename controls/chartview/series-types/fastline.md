@@ -50,7 +50,7 @@ RadChartView1.Series.Add(series1)
 
 >caption Figure 1: Initial Setup
 
-![chartview-series-types-line 004](images/chartview-series-types-line004.png)
+![WinForms RadChartView FastLine Initial Setup](images/chartview-series-types-line004.png)
 
 # See Also
 

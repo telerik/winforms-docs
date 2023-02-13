@@ -16,7 +16,7 @@ All editors inherit from **BaseInputEditor**. So, you have to inherit from this 
 
 >caption Figure 1: Replace the default editor with a custom editor
 
-![datafilter-custom-editors 001](images/datafilter-custom-editors001.png)
+![WinForms RadDataFilter Replace the default editor with a custom editor](images/datafilter-custom-editors001.png)
 
 #### Custom editor
 

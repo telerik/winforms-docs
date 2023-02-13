@@ -17,7 +17,7 @@ CTAControlName: DomainUpDown
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![domainupdown-overview 001](images/domainupdown-overview001.gif)
+![WinForms RadDomainUpDown Overview](images/domainupdown-overview001.gif)
 
 ## Key Features
 

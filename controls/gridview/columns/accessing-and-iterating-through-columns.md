@@ -76,7 +76,7 @@ Next
 
 >caption Figure 1: Iterating columns and setting their HeaderText.
 
-![gridview-columns-iterating-columns 001](images/gridview-columns-iterating-columns001.png)
+![WinForms RadGridView Iterating columns and setting their HeaderText](images/gridview-columns-iterating-columns001.png)
 
 ## Iterating through Hierarchical Columns
 

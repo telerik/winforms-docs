@@ -9,7 +9,7 @@ position: 0
 previous_url: ganttview-formatting-textviewitem-cellformatting
 ---
 
-# TextView item formatting
+# TextView Item Formatting
 
 __RadGanttView__ offers two events for formatting the text view part. The __TextViewItemFormatting__ event  is fired for each item (row) and the __TextViewCellFormatting__ is fired for every cell.
 
@@ -64,7 +64,7 @@ End Sub
 {{endregion}} 
 
 
-![ganttview-formatting-textviewitem-cellformatting 001](images/ganttview-formatting-textviewitem-cellformatting001.png)
+![WinForms RadGanttView TextView Item Formatting](images/ganttview-formatting-textviewitem-cellformatting001.png)
 
 Another example showing how to change the fore color of the cells in the `Title` column for all types of tasks that start on an even day of the month.
         
@@ -98,7 +98,7 @@ End Sub
 
 {{endregion}} 
 
-![ganttview-formatting-textviewitem-cellformatting 002](images/ganttview-formatting-textviewitem-cellformatting002.png)
+![WinForms RadGanttView Cells Color](images/ganttview-formatting-textviewitem-cellformatting002.png)
 
 
 # See Also

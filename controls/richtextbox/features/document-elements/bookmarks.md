@@ -15,7 +15,7 @@ __Bookmarks__ are a powerful tool for marking parts of the document, which can b
 
 ## Adding Bookmarks via the UI
 
-__Bookmarks__ can be inserted in the document and removed through the __ManageBookmarksDialog__ of RadRichTextBox.![richtextbox-features-document-elements-bookmarks 001](images/richtextbox-features-document-elements-bookmarks001.png)
+__Bookmarks__ can be inserted in the document and removed through the __ManageBookmarksDialog__ of RadRichTextBox.![WinForms RadRichTextBox richtextbox-features-document-elements-bookmarks 001](images/richtextbox-features-document-elements-bookmarks001.png)
 
 ## Using Bookmarks Programmatically
 

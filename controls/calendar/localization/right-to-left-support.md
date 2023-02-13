@@ -15,11 +15,11 @@ __RadCalendar__ fully supports right-to-left (RTL) language locales. You can ena
 
 >caption Figure 1: RightToleft = No
 
-![calendar-localization-right-to-left-support 001](images/calendar-localization-right-to-left-support001.png)
+![WinForms RadCalendar RightToleft = No](images/calendar-localization-right-to-left-support001.png)
 
 >caption Figure 2: RightToleft = Yes
 
-![calendar-localization-right-to-left-support 002](images/calendar-localization-right-to-left-support002.png)
+![WinForms RadCalendar RightToleft = Yes](images/calendar-localization-right-to-left-support002.png)
 
 
 #### Setting RightToLeft

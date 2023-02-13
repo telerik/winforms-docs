@@ -50,7 +50,7 @@ Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, B
 {{endregion}} 
 
 >caption Figure 1: HTML-like Text
-![panels-and-labels-label-html-like-text-formatting 001](images/panels-and-labels-label-html-like-text-formatting001.png)
+![WinForms RadLabel HTML-like Text](images/panels-and-labels-label-html-like-text-formatting001.png)
 
 # See Also
 

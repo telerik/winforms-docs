@@ -20,7 +20,7 @@ __RadWizard__ will help you differentiate a complex process into separate steps 
 {% include cta-panel-overview.html %}
 {% endif %}
        
-![wizard-overview](images/wizard-overview.png)
+![WinForms RadWizard Overview Image](images/wizard-overview.png)
 
 The [design time]({%slug winforms/wizard/design-time%}) capabilities of the **RadWizard** control are rich and intuitive to use. They allow the developers to create and manage the control and its pages. Handful [events]({%slug winforms/wizard/events%}) help you to follow the state of the control at run time, implement custom pages sequence and page processing validation.
 

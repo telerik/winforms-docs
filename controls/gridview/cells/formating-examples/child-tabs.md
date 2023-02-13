@@ -16,7 +16,7 @@ When __RadGridView__ displays hierarchical data, you expand/collapse child level
 
 >caption Figure 1: Using formatting event to hide empty tabs.
 
-![gridview-cells-formatting-cells 001](images/gridview-cells-formatting-cells001.png)
+![WinForms RadGridView Using formatting event to hide empty tabs](images/gridview-cells-formatting-cells001.png)
 
 
 #### Accessing the child tabs in the ViewCellFormatting event.

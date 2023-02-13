@@ -204,7 +204,7 @@ End Sub
 >note You can find a working version of this sample in our Demo application ( *GridView -> Custom Editors* ). To access the Live Demo simply click on the Windows Start button and type WinForms Demo. If you are not able to find the Live Demos using that approach you can also download it directly from [here](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe).
 >
 
-# See Also
+## See Also
 * [API]({%slug winforms/gridview/editors/api%})
 
 * [Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})

@@ -14,7 +14,7 @@ previous_url: chartview-customization-formatting-trackball-labels
 This article demonstrates how to customize the trackball labels text and styles. This can be achieved in the __TextNeeded__ event of the trackball controller. This event is fired when the user hover over a particular data point with the mouse and can be used to set any styles and text, depending on your preferences.
 
 >caption Figure 1: Formatting TrackBall
-![chartview-customization-formatting-trackball-labels 001](images/chartview-customization-formatting-trackball-labels001.png)
+![WinForms RadChartView Formatting TrackBall](images/chartview-customization-formatting-trackball-labels001.png)
 
 1\. You should subscribe to the __TextNeeded__ event and add the __ChartTrackballController__ to the chart as follows. 
 

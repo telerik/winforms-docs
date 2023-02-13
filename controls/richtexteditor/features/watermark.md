@@ -24,11 +24,11 @@ Watermarks are text or pictures that appear behind document's text. They often a
 
 You can easily insert bookmarks, for example you can use the __RichTextEditor__ and choose from several predefined watermarks: 
 
-![richtexteditor-features-watermark 001](images/richtexteditor-features-watermark001.png)
+![WinForms RadRichTextEditor Watermark](images/richtexteditor-features-watermark001.png)
 
 Alternatively, you can create your custom watermark from text or picture through the *Insert custom watermark* option. 
 
-![richtexteditor-features-watermark 002](images/richtexteditor-features-watermark002.png)
+![WinForms RadRichTextEditor Custom Watermark](images/richtexteditor-features-watermark002.png)
 
 ## Manipulating Watermarks Programatically
 

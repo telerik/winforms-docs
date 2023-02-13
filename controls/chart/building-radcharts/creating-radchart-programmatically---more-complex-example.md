@@ -18,7 +18,7 @@ previous_url: chart-building-radcharts-creating-radchart-programmatically-more-c
 
 >caption 
 
-![chart-building-radcharts-creating-radchart-programmatically-more-complex-example 001](images/chart-building-radcharts-creating-radchart-programmatically-more-complex-example001.png)
+![WinForms RadChart Created Programmatically Complex Example](images/chart-building-radcharts-creating-radchart-programmatically-more-complex-example001.png)
 
 The figure above shows a more complex chart than the [minimal example of programmatically created RadChart]({%slug winforms/chart/building-radcharts/creating-radchart-programmatically%}).  This example demonstrates how to:
 

@@ -43,13 +43,13 @@ The following are the available __GridViewDataColumn__ descendants column types 
 
 This column appears when the grid data is grouped or has a hierarchical structure. The GridViewIndentColumn facilitates expand and collapse functionality. The expand column is always placed in front of all other grid content columns and can not be moved.
 
-![gridview-fundamentals-overview-of-radgridview-structure 005](images/gridview-fundamentals-overview-of-radgridview-structure005.png)
+![WinForms RadGridView GridViewIndentColumn](images/gridview-fundamentals-overview-of-radgridview-structure005.png)
 
 ### GridViewRowHeaderColumn
 
 This column facilitates row resizing. When you move the cursor to an line in this column, the cursor changes to an arrow and you can resize the respective row. 
 
-![gridview-fundamentals-columns 001](images/gridview-fundamentals-columns001.png)
+![WinForms RadGridView GridViewRowHeaderColumn](images/gridview-fundamentals-columns001.png)
 # See Also
 * [Binding the Grid]({%slug winforms/gridview/fundamentals/binding-the-grid%})
 

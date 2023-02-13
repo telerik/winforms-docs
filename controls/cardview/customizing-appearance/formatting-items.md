@@ -18,8 +18,8 @@ Items appearance in __RadCardView__ can be customized by making use of the __Car
 
 The appearance of the visual items can be fully customized by handling the __CardViewItemFormatting__ event. 
 
->caption Fig.1 Formatting the Visual Item
-![cardview-customzing-appearance-formatting-items 001](images/cardview-customizing-appearance-formatting-items001.png)
+>caption Figure 1: Formatting the Visual Item
+![WinForms RadCardView Formatting the Visual Item](images/cardview-customizing-appearance-formatting-items001.png)
 
 #### Formatting the Visual Item
 
@@ -75,8 +75,8 @@ End Sub
 
 By handling the __CardViewItemFormatting__ event each of the individual card view items can be customized as well.
 
->caption Fig.2 Formatting CardViewItiem
-![cardview-customzing-appearance-formatting-items 001](images/cardview-customizing-appearance-formatting-items002.png)
+>caption Figure 2: Formatting CardViewItiem
+![WinForms RadCardView Formatting CardViewItiem](images/cardview-customizing-appearance-formatting-items002.png)
 
 #### Formatting CardViewItiem
 

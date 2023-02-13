@@ -18,7 +18,7 @@ Since **RadBreadCrumb** internally uses a **RadTreeView**, you can use the [data
 
 >caption RadBreadCrumb bound to the MusicCollection database
 
-![breadcrumb-breadcrumb-data-binding 001](images/breadcrumb-data-binding001.gif)
+![WinForms RadBreadCrumb RadBreadCrumb Bound to the MusicCollection Database](images/breadcrumb-data-binding001.gif)
 
 
 ````C#

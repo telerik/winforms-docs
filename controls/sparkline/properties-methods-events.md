@@ -25,7 +25,7 @@ position: 6
 |__ShowAxis__|Shows or hides the horizontal axis in the sparkline.|
 |__AxisDrawMode__|Gets or sets whether the horizontal axis will be painted on top of the series.|
 
-# Methods
+## Methods
 
 |__Method__|__Description__|
 |---|---|
@@ -34,7 +34,7 @@ position: 6
 |__ResumeRefresh__|Resumes the layout property notifications.|
 
 
-# Events
+## Events
 
 |__Event__|__Description__|
 |---|---|

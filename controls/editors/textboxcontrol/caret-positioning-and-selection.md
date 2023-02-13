@@ -74,7 +74,7 @@ End Sub
  
 The both approaches produce same result:
 
-![editors-textboxcontrol-caret-positioning-and-selection 001](images/editors-textboxcontrol-caret-positioning-and-selection001.png)
+![WinForms RadTextBoxControl Caret Position Selection](images/editors-textboxcontrol-caret-positioning-and-selection001.png)
 
 You can access the selected text through the __SelectedText__ property. To select the whole text use the __SelectAll__ method.
 		

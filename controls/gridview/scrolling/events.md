@@ -13,7 +13,7 @@ previous_url: gridview-scrolling-events
 
 There are a vertical and a horizontal scroll bar objects for the vertical and horizontal scroll bars respectively. 
 
-![gridview-scrolling-events 001](images/gridview-scrolling-events001.png)
+![WinForms RadGridView Scroll Bars](images/gridview-scrolling-events001.png)
 
 They can be accessed via the TableElement.**VScrollBar** and TableElement.**HScrollBar** properties. You can detect when one of the scroll bar's value changes by handling the **ValueChanged** event of the respective **RadScrollBarElement**.
 

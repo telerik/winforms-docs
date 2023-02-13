@@ -23,17 +23,17 @@ Here is how to start building CAB application in just a few steps, by using the 
 
 1. Open Visual Studio 2010 and create a new WinForms application.
 	
-	![telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit 001](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit001.png)
+	![WinForms Create New Project](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit001.png)
 
 1. Make sure that you have NuGet Package Manager extension for VS2010 installed.
    
 1. In VS2010 navigate to *Tools > Library Package Manager > Manage NuGet Packages for Solution…*
 	
-	![telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit 002](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit002.png)
+	![WinForms Manage NuGet Packages for Solution](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit002.png)
 
 1. Search for __TelerikWinCompositeUI__ package and click install.
 
-    ![telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit 003](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit003.png)
+    ![WinForms TelerikWinCompositeUI](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit003.png)
 
 1. Select the project(s) where you want to install this package and click OK.
  
@@ -47,4 +47,4 @@ Here is how to start building CAB application in just a few steps, by using the 
 
 9\. Now you can start using Telerik CAB Enabling Kit.
 
-![telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit 004](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit004.png)
+![WinForms Start Using Telerik CAB Enabling Kit](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit004.png)

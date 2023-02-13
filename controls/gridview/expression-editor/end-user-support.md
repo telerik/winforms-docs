@@ -17,7 +17,7 @@ End-users have two options for getting the __RadExpressionEditor__ shown at run 
 
 End-users can open the editor by navigating to a built-in menu item from the context menu of RadGridView. In order to enable this menu item, the developer has to set the __EnableExpressionEditor__ property *true*. Please note that the expression column should be an unbound column:
 
-![gridview-expressioneditor-end-user-support 001](images/gridview-expressioneditor-end-user-support001.png)
+![WinForms RadGridView ExpressionEditor](images/gridview-expressioneditor-end-user-support001.png)
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=enableExpressionEditor}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=enableExpressionEditor}} 
@@ -63,7 +63,7 @@ RadExpressionEditorForm.Show(Me.RadGridView1, Me.RadGridView1.Columns("expressio
 
 
 
-# See Also
+## See Also
 * [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%})
 
 * [Design-time]({%slug winforms/gridview/expression-editor/design-time%})

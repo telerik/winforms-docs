@@ -26,7 +26,7 @@ The sorting dialog provides access to all sorting functionality. Through it you 
 
 >caption Figure 1: Sorting dialog
 
-![spreadsheet-features-sorting 001](images/spreadsheet-features-sorting001.png) 
+![WinForms RadSpreadsheet Sorting dialog](images/spreadsheet-features-sorting001.png) 
 
 On top of the dialog shown in Figure 1 you can take advantage of the following options.
 
@@ -52,7 +52,7 @@ Another option to add a values sort condition is to use the sorting buttons next
 
 >caption Figure 2: Sorting buttons
 
-![spreadsheet-features-sorting 002](images/spreadsheet-features-sorting002.png) 
+![WinForms RadSpreadsheet Sorting buttons](images/spreadsheet-features-sorting002.png) 
 
 These buttons in Figure 2 automatically add a values sort condition to the first column of the selected range. If you use the first button the order will be ascending, and for the second - descending.
 
@@ -69,7 +69,7 @@ You can add a custom sort condition through the sorting dialog. You need to perf
 
 	>caption Figure 3: Custom Lists Dialog
 
-	![spreadsheet-features-sorting 003](images/spreadsheet-features-sorting003.png)
+	![WinForms RadSpreadsheet Custom Lists Dialog](images/spreadsheet-features-sorting003.png)
 * Press OK to go back to the sorting dialog.
 * Press OK to close the dialog and apply the sorting
 
@@ -85,7 +85,7 @@ You can add a fill or fore color sort condition through the sorting dialog by fo
 
 	>caption Figure 4:  Sorting Dialog Color Condition
 
-	![spreadsheet-features-sorting 004](images/spreadsheet-features-sorting004.png)
+	![WinForms RadSpreadsheet Sorting Dialog Color Condition](images/spreadsheet-features-sorting004.png)
 
 * Use the first of the drop down menus to specify the color
 * Use the second of the drop down menus to specify whether rows with this color should be ordered on the top or on the bottom of the sort order.
@@ -95,7 +95,7 @@ The other way to add a sort condition is through the filtering popup. When you o
 
 >caption Figure 5: Filtering Popus Sorting by Color
 
-![spreadsheet-features-sorting 005](images/spreadsheet-features-sorting005.png)
+![WinForms RadSpreadsheet Filtering Popup Sorting by Color](images/spreadsheet-features-sorting005.png)
 
 ## See Also
 

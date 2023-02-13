@@ -14,7 +14,7 @@ This article will show the internal elements structure of __RadDropDownButton__:
 
 >caption Figure 1: RadDropDownButton's elements hierarchy
 
-![buttons-dropdownbutton-structure 001](images/buttons-dropdownbutton-structure001.png)
+![WinForms RadButtons RadDropDownButton's elements hierarchy](images/buttons-dropdownbutton-structure001.png)
 
 1. __RadArrowButtonElement__: represents the arrow button that opens the popup
 2. __ActionButtonElement__: represents the action button element
@@ -23,5 +23,5 @@ This article will show the internal elements structure of __RadDropDownButton__:
 
 >caption Figure 2: RadDropDownButton's structure
 
-![buttons-dropdownbutton-structure 002](images/buttons-dropdownbutton-structure002.png)
+![WinForms RadButtons RadDropDownButton's structure](images/buttons-dropdownbutton-structure002.png)
 

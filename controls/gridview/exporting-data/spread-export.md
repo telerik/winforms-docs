@@ -23,7 +23,7 @@ This article explains in detail the **SpreadExport** abilities and demonstrates 
 
 * [Async Spread Export](#async-spread-export)
 
-The following images show how a grid looks when you export it:<br>![gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
+The following images show how a grid looks when you export it:<br>![WinForms RadGridView gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![WinForms RadGridView gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
 
 >note The spread export functionality requires the __TelerikExport.dll__ assembly. To access the types in TelerikExport, you must include the assembly in your project and reference the __Telerik.WinControls.Export__ namespace.
 
@@ -125,9 +125,9 @@ End Using
 >
 
 
->caption Figure: Image export
+>caption Figure: Image Export
 
-![gridview-exporting-data-spread-export 006](images/gridview-exporting-data-spread-export006.png)
+![WinForms RadGridView Image Export](images/gridview-exporting-data-spread-export006.png)
 
 
 ## Properties
@@ -301,7 +301,7 @@ End Sub
 
 {{endregion}} 
 
-![gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
+![WinForms RadGridView gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
 
 ### WorkbookCreated 
 
@@ -321,7 +321,7 @@ __RadGridView__ can export its grouped content by simply setting the __ExportChi
 
 >caption Figure: Exporting Grouped Data
 
-![gridview-exporting-data-spread-export 005](images/gridview-exporting-data-spread-export005.png)
+![WinForms RadGridView Exporting Grouped Data](images/gridview-exporting-data-spread-export005.png)
 
 #### Exporting Grouped Data
 
@@ -375,7 +375,7 @@ This example demonstrates how to combine the async spread export feature with a 
         
 >caption Figure: Exporting Data Asynchronously
 
-![gridview-exporting-data-async-spread-export 001](images/gridview-exporting-data-async-spread-export001.gif)
+![WinForms RadGridView Exporting Data Asynchronously](images/gridview-exporting-data-async-spread-export001.gif)
 
 1\. Bind __RadGridView__ and define the initial settings.
 
@@ -545,7 +545,7 @@ End Sub
 {{endregion}} 
 
 
-# See Also
+## See Also
 * [Export Data in a Group to Excel]({%slug winforms/gridview/exporting-data/export-data-in-a-group-to-excel%})
 
 * [Export to CSV]({%slug winforms/gridview/exporting-data/export-to-csv%})

@@ -12,13 +12,13 @@ position: 1
 
 This article will show the internal elements structure of RadNavigationView.
 
->caption Figure 1: RadNavigationView's elements hierarchy
+>caption Figure 1: RadNavigationView's Elements Hierarchy
 
-![navigationview-structure 001](images/navigationview-structure001.png)
+![WinForms RadNavigationView Elements Hierarchy](images/navigationview-structure001.png)
 
 >caption Figure 2: RadNavigationView's structure
 
-![navigationview-structure 002](images/navigationview-structure002.png)
+![WinForms RadNavigationView Structure](images/navigationview-structure002.png)
 
 **RadPageViewNavigationViewElement** is the main element of RadNavigationView. It contains:
 

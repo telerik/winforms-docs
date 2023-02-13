@@ -24,7 +24,7 @@ By default, **RadTreeView** supports nodes drag and drop functionality in unboun
 
 >caption Figure 1: Drag and drop in bound mode
 
-![treeview-drag-and-drop-treeviewdragdropservice 001](images/treeview-drag-and-drop-treeviewdragdropservice001.gif)
+![WinForms RadTreeView Drag and drop in bound mode](images/treeview-drag-and-drop-treeviewdragdropservice001.gif)
 
 
 ## Drag and Drop in Bound Mode

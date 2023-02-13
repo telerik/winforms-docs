@@ -19,7 +19,7 @@ You can access the control element by opening the [Element Hierarchy Editor]({%s
 
 >caption Figure 1: Change the BackColor and the BorderColor.
 
-![bindingnavigator-overview-customizing-radbindingnavigator 001](images/bindingnavigator-overview-customizing-radbindingnavigator001.png)
+![WinForms RadBindingNavigator Change the BackColor and the BorderColor](images/bindingnavigator-overview-customizing-radbindingnavigator001.png)
 
 ### Customize Buttons
 
@@ -42,7 +42,7 @@ radBindingNavigator1.BindingNavigatorElement.NextButton.GradientStyle = Telerik.
 
 >caption The NextButton background is changed:
 
-![bindingnavigator-overview-customizing-radbindingnavigator 002](images/bindingnavigator-overview-customizing-radbindingnavigator002.png)
+![WinForms RadBindingNavigator Modify NextButton Background](images/bindingnavigator-overview-customizing-radbindingnavigator002.png)
 
 
 ### Using glyphs
@@ -80,7 +80,7 @@ radBindingNavigator1.BindingNavigatorElement.DeleteButton.Text = "\ue301"
 
 >caption The AddNewButton and DeleteButton are customized with custom glyphs:
 
-![bindingnavigator-overview-customizing-radbindingnavigator 003](images/bindingnavigator-overview-customizing-radbindingnavigator003.png)
+![WinForms RadBindingNavigator Customized AddNewButton And DeleteButton](images/bindingnavigator-overview-customizing-radbindingnavigator003.png)
 
 ## See Also
 

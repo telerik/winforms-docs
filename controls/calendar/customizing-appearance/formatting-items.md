@@ -48,7 +48,7 @@ End Sub
 {{endregion}}
 
 >caption Figure 1: RadCalendar with custom cells border.
-![calendar-formatting-items 001](images/calendar-formatting-items001.png)
+![WinForms RadCalendar With custom Cells Border](images/calendar-formatting-items001.png)
 
 ## Refresh the visual elements at runtime.
 

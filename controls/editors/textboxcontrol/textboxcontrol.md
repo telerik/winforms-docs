@@ -21,7 +21,7 @@ __RadTextBoxControl__ provides similar to the standard .NET Framework text box f
 
 >caption Figure 1: RadTextBoxControl
         
-![editors-textboxcontrol-overview 001](images/editors-textboxcontrol-overview001.png)
+![WinForms RadTextBoxControl Overview](images/editors-textboxcontrol-overview001.png)
 
 ## Key Features:
 

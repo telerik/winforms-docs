@@ -15,7 +15,7 @@ You can add **RadPivotGrid** to your form from the toolbox of Visual Studio. The
 
 >caption Figure 1: Design Time Data Binding
 
-![pivotgrid-design-time-data-binding 001](images/pivotgrid-populating-with-data-design-time-data-binding001.png)
+![WinForms RadPivotGrid Design Time Data Binding](images/pivotgrid-populating-with-data-design-time-data-binding001.png)
 
 ## Adding Aggregate and Group Descriptors
 
@@ -23,7 +23,7 @@ To define how your data will be displayed, you should edit the ColumnGroupDescri
 
 >caption Figure 2: Aggregate and Group Descriptors
 
-![pivotgrid-design-time-data-binding 002](images/pivotgrid-populating-with-data-design-time-data-binding002.png)
+![WinForms RadPivotGrid Aggregate and Group Descriptors](images/pivotgrid-populating-with-data-design-time-data-binding002.png)
 
 ## Adding Report Filters
 
@@ -31,7 +31,7 @@ Report filters are added via the same Smart Tag menu by editing the FilterDescri
 
 >caption Figure 3: Report Filters
 
-![pivotgrid-design-time-data-binding 003](images/pivotgrid-populating-with-data-design-time-data-binding003.png)
+![WinForms RadPivotGrid Report Filters](images/pivotgrid-populating-with-data-design-time-data-binding003.png)
 
 ## Use Case Scenario
 
@@ -49,7 +49,7 @@ And this is how the fields of our custom TableAdapter are arranged:
 
 >caption Figure 4: Generated View
 
-![pivotgrid-design-time-data-binding 004](images/pivotgrid-populating-with-data-design-time-data-binding004.png)
+![WinForms RadPivotGrid Generated View](images/pivotgrid-populating-with-data-design-time-data-binding004.png)
 
 Now let’s say we want to see a statistic of how much of each product has each employee sold. Additionally, we want to allow those who preview the statistics to filter the results by country. To do this, we take the following steps:
 
@@ -71,7 +71,7 @@ The result is shown on the following picture:
 
 >caption Figure 5: RadPivotGrid *OrdersView* Data
 
-![pivotgrid-design-time-data-binding 005](images/pivotgrid-populating-with-data-design-time-data-binding005.png)
+![WinForms RadPivotGrid RadPivotGrid *OrdersView* Data](images/pivotgrid-populating-with-data-design-time-data-binding005.png)
 
 # See Also
 

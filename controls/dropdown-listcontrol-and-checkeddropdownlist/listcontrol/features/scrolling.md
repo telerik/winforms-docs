@@ -14,9 +14,9 @@ If the __RadListDataItems__ cannot fit in the pop up, a vertical scroll bar appe
 
 |ScrollMode|Description|Scrolling Behavior|
 |----|----|----|
-|__Discrete__|Defines scrolling by only one item at a time.|![dropdown-and-listcontrol-listcontrol-features-scrolling 001](images/dropdown-and-listcontrol-listcontrol-features-scrolling001.gif)|
-|__Smooth__|Sets scrolling by pixel, meaning that an item can be partially visible.|![dropdown-and-listcontrol-listcontrol-features-scrolling 002](images/dropdown-and-listcontrol-listcontrol-features-scrolling002.gif)|
-|__Deferred__|Does not cause GUI updates until the user finishes the scrolling operation.|![dropdown-and-listcontrol-listcontrol-features-scrolling 003](images/dropdown-and-listcontrol-listcontrol-features-scrolling003.gif)|
+|__Discrete__|Defines scrolling by only one item at a time.|![WinForms RadListControl Discrete ScrollMode](images/dropdown-and-listcontrol-listcontrol-features-scrolling001.gif)|
+|__Smooth__|Sets scrolling by pixel, meaning that an item can be partially visible.|![WinForms RadListControl Smooth ScrollMode](images/dropdown-and-listcontrol-listcontrol-features-scrolling002.gif)|
+|__Deferred__|Does not cause GUI updates until the user finishes the scrolling operation.|![WinForms RadListControl Deferred ScrollMode](images/dropdown-and-listcontrol-listcontrol-features-scrolling003.gif)|
 
 ## KineticScrolling
 
@@ -24,7 +24,7 @@ This feature ensures that the control is ready for modern touch-screen applicati
         
 >caption Figure 1: Enable Kinetic Scrolling
 
-![dropdown-and-listcontrol-listcontrol-features-scrolling 004](images/dropdown-and-listcontrol-listcontrol-features-scrolling004.gif)
+![WinForms RadListControl Enable Kinetic Scrolling](images/dropdown-and-listcontrol-listcontrol-features-scrolling004.gif)
 
 ## Programmatically Scrolling
 

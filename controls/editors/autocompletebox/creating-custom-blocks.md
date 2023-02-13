@@ -115,13 +115,12 @@ Me.RadAutoCompleteBox1.Text = "Euro;USD;GBP;"
 
 The following image demonstrates the final result:
 
-![editors-autocompletebox-creating-custom-blocks 001](images/editors-autocompletebox-creating-custom-blocks001.png)
+![WinForms RadAutoCompleteBox Creating Custom Blocks](images/editors-autocompletebox-creating-custom-blocks001.png)
 
 
 # See Also
 
-* [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%})
- 
+* [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%}) 
 * [Element Structure and Document Object Model]({%slug winforms/editors/autocompletebox/element-structure-and-document-object-model%})
 * [Properties and Events]({%slug winforms/editors/autocompletebox/formatting-blocks%})
 * [Text Editing]({%slug winforms/editors/autocompletebox/text-editing%})

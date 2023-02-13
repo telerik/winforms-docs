@@ -21,7 +21,7 @@ Group nodes can be formatted to handle custom scenarios. The root node in the ex
 
 >caption Figure 1: Hidden Expander Item
 
-![datafilter-customizing-appearance-formatting-nodes 001](images/datafilter-customizing-appearance-formatting-nodes001.png)
+![WinForms RadDataFilter Hidden Expander Item](images/datafilter-customizing-appearance-formatting-nodes001.png)
 
 #### Group Nodes
 
@@ -64,7 +64,7 @@ The appearance of the expression nodes can also be modified to change their visu
 
 >caption Figure 2: Changed Back Color
 
-![datafilter-customizing-appearance-formatting-nodes 002](images/datafilter-customizing-appearance-formatting-nodes002.png)
+![WinForms RadDataFilter Changed Back Color](images/datafilter-customizing-appearance-formatting-nodes002.png)
 
 #### Expression Nodes
 
@@ -107,7 +107,7 @@ The button responsible for adding a new expression can also be customized in a f
 
 >caption Figure 3: Add Button Text
 
-![datafilter-customizing-appearance-formatting-nodes 003](images/datafilter-customizing-appearance-formatting-nodes003.png)
+![WinForms RadDataFilter Add Button Text](images/datafilter-customizing-appearance-formatting-nodes003.png)
 
 #### Button Nodes
 
@@ -150,7 +150,7 @@ Each of the nodes holding the expressions has three editor elements which can be
 
 >caption Figure 3: Add Button Text
 
-![datafilter-customizing-appearance-formatting-nodes 004](images/datafilter-customizing-appearance-formatting-nodes004.png)
+![WinForms RadDataFilter Add Button Text](images/datafilter-customizing-appearance-formatting-nodes004.png)
 
 #### Child Expression Elements
 

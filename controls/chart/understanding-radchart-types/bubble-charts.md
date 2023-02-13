@@ -22,9 +22,9 @@ To change the size of all bubbles in a series, but to not distort the dimensions
 To create a vertical Bubble Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.TypeBubble__. Add one or more chart series to the __Series__ collection.  Add one or more chart items to the series __Items__ collection. Populate numeric values for __XValue__, __XValue2__, __YValue__ and __YValue2__ properties of each chart series item.
 >caption 
 
-![chart-undestanding-radchart-types-bubble-charts 001](images/chart-undestanding-radchart-types-bubble-charts001.png)
+![WinForms RadChart Bubble SeriesOrientation Vertical](images/chart-undestanding-radchart-types-bubble-charts001.png)
 
-To create a vertical Bubble Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.TypeBubble__. Add one or more chart series to the __Series__ collection.  Add one or more chart items to the series __Items__ collection. Populate numeric values for __XValue__, __XValue2__, __YValue__ and __YValue2__ properties of each chart series item.
+To create a horizontal Bubble Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.TypeBubble__. Add one or more chart series to the __Series__ collection.  Add one or more chart items to the series __Items__ collection. Populate numeric values for __XValue__, __XValue2__, __YValue__ and __YValue2__ properties of each chart series item.
 >caption 
 
-![chart-undestanding-radchart-types-bubble-charts 002](images/chart-undestanding-radchart-types-bubble-charts002.png)
+![WinForms RadChart Bubble SeriesOrientation Horizontal](images/chart-undestanding-radchart-types-bubble-charts002.png)

@@ -26,9 +26,9 @@ The __Values Data Table__ tab of the Wizard controls the general look and positi
 Use the __Align__ drop down list to place the chart data table in a predefined position (e.g. Top, Bottom, BottomRight, etc.)  To place the data table at exact coordinates, uncheck __Auto__ and enter values for __X__ and __Y__.
 >caption 
 
-![chart-understanding-radchart-ui-understanding-wizard-values-data-table-tab 001](images/chart-understanding-radchart-ui-understanding-wizard-values-data-table-tab001.png)
+![WinForms RadChart Wizard Values Data Table Tab](images/chart-understanding-radchart-ui-understanding-wizard-values-data-table-tab001.png)
 
 As a result you will get the following chart:
 >caption 
 
-![chart-understanding-radchart-ui-understanding-wizard-values-data-table-tab 002](images/chart-understanding-radchart-ui-understanding-wizard-values-data-table-tab002.png)
+![WinForms RadChart Wizard Values Data Table Tab Alignment](images/chart-understanding-radchart-ui-understanding-wizard-values-data-table-tab002.png)

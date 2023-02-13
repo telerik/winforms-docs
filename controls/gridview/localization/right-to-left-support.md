@@ -27,7 +27,7 @@ Me.RadGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 {{endregion}} 
 
-![gridview-localization-rtl 001](images/gridview-localization-rtl001.png)
+![WinForms RadGridView Right-To-Left Support](images/gridview-localization-rtl001.png)
 # See Also
 * [Localization]({%slug winforms/gridview/localization/localization%})
 

@@ -12,7 +12,7 @@ position: 12
 
 Since R3 2018 SP1 RadGridView supports displaying a Title(Caption). By default the Title is displayed on top. The position and the alignment of the title text can be easily changed. 
 
-![gridview-caption 001](images/gridview-caption001.png)
+![WinForms RadGridView Title Text](images/gridview-caption001.png)
 
 ## Showing the Title
 

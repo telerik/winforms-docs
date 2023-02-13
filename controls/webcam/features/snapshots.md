@@ -12,7 +12,7 @@ position: 1
 
 **RadWebCam** allows you to snapshot the currently displayed video feed. This can be done via the "Take snapshot" button of the control, or the **TakeSnapshot** method. This will fire the **SnapshotTaken** event where you can get the Image object.
 
-![webcam-snapshots 001](images/webcam-snapshots001.png)
+![WinForms RadWebcam Snapshots](images/webcam-snapshots001.png)
 
 #### Taking a snapshot in code
 

@@ -23,7 +23,7 @@ The __SizingMode__ enumeration has the following members:
             
 >caption Figure 1: SizingMode.None
 
-![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 001](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing001.png)
+![WinForms RadDropDownList SizingMode None](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing001.png)
 
 #### SizingMode.None 
 
@@ -45,7 +45,7 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.None
             
 >caption Figure 2: SizingMode.RightBottom
 
-![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 002](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing002.png)
+![WinForms RadDropDownList SizingMode RightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing002.png)
 
 #### SizingMode.RightBottom 
 
@@ -68,7 +68,7 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom
             
 >caption Figure 3: SizingMode.UpDown
 
-![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 003](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing003.png)
+![WinForms RadDropDownList SizingMode UpDown](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing003.png)
 
 #### SizingMode.UpDown 
 
@@ -91,7 +91,7 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDown
             
 >caption Figure 4: SizingMode.UpDownAndRightBottom
 
-![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 004](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing004.png)
+![WinForms RadDropDownList SizingMode UpDownAndRightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing004.png)
 
 #### SizingMode.UpDownAndRightBottom 
 
@@ -116,7 +116,7 @@ You can specify a fixed height or width of the drop-down by setting the __DropDo
         
 >caption Figure 5: DropDownHeight
 
-![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 005](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing005.png)
+![WinForms RadDropDownList DropDownHeight](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing005.png)
 
 #### DropDownHeight 
 
@@ -136,7 +136,7 @@ Me.radDropDownList1.DropDownListElement.DropDownHeight = 400
  
 >caption Figure 6: DropDownWidth
 
-![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 007](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing007.png)
+![WinForms RadDropDownList DropDownWidth](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing007.png)
 
 #### DropDownWidth 
 
@@ -159,7 +159,7 @@ You can set the __DropDownMinSize__ property in order to specify the exact minim
         
 >caption Figure 7: DropDownMinSize
 
-![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 006](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing006.png)
+![WinForms RadDropDownList DropDownMinSize](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing006.png)
 
 #### DropDownMinSize 
 
@@ -231,7 +231,7 @@ End Function
 
 |Default pop up size|Auto sized popup|
 |----|----|
-|![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 009](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing009.png)|![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 010](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing010.png)|
+|![WinForms RadDropDownList Default Popup Size](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing009.png)|![WinForms RadDropDownList Auto sized Popup](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing010.png)|
 
 ## Displayed items
 
@@ -239,7 +239,7 @@ By default, __RadDropDownList__ displays 6 items in the pop-up. In case you need
       
 >caption Figure 8: DefaultItemsCountInDropDown
 
-![dropdown-and-listcontrol-dropdownlist-dropdown-resizing 008](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing008.png)
+![WinForms RadDropDownList DefaultItemsCountInDropDown](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing008.png)
 
 #### DefaultItemsCountInDropDown 
 

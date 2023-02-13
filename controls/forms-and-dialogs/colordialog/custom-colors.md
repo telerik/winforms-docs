@@ -14,7 +14,7 @@ position: 3
 
 >caption Figure 1: Custom Colors
 
-![color-dialog-custom-colors 001](images/color-dialog-custom-colors001.png)
+![WinForms RadColorDialog Custom Colors](images/color-dialog-custom-colors001.png)
 
 The RadColorSelector.**CustomColorsConfigLocationNeeded** event fires when custom colors configuration is about to be saved and loaded at a later moment. In the **CustomColorsEventArgs** you have the option to change the location  of the **custom_colors.cfg**. When creating the CustomColors, **RadColorDialog** checks whether a **custom_colors.cfg** file exists to load the colors. The default location is **C:\Users\'User Name'\AppData\Local**. You can create a default file with a predefined set of colors at the specified location. Thus, the desired colors will be loaded. 
 

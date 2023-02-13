@@ -47,9 +47,9 @@ When change tracking is enabled all changes made in the document will be tracked
 
 * adding and removing images, hyperlinks, tables, etc.
 
-![richtexteditor-features-track-changes 001](images/richtexteditor-features-track-changes001.png)
+![WinForms RadRichTextEditor Track Changes](images/richtexteditor-features-track-changes001.png)
 
-## Customizing Changes Visualization
+## Customizing Change Visualization
 
 As you can see tracked changes are visualized inside the rich text box with different colors. You can modify these colors by using the __TrackChangesOptions__ property of __RadRichTextEditor__. Here is for example how to customize the look of the tracked changes so that insertions are shown in green, deletions are shown in underlined orange and the vertical line indicating changes is red:
  
@@ -77,7 +77,7 @@ Me.radRichTextEditor1.RichTextBoxElement.TrackChangesOptions.ChangedLinesDecorat
 
 The result is:
 
-![richtexteditor-features-track-changes 002](images/richtexteditor-features-track-changes002.png)
+![WinForms RadRichTextEditor Change Visualization](images/richtexteditor-features-track-changes002.png)
 
 ## Changing Current User
 
@@ -99,7 +99,7 @@ Me.radRichTextEditor1.CurrentUser = New UserInfo("Group", "Boby", "Boby", "bobby
 
 Here is the result:
 
-![richtexteditor-features-track-changes 003](images/richtexteditor-features-track-changes003.gif)
+![WinForms RadRichTextEditor Current User](images/richtexteditor-features-track-changes003.gif)
 
 By default, insert and delete changes by different authors will be displayed in different colors. This can be changed through the __TrackChangesOptions__ as described in the previous section.        
 

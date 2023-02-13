@@ -20,12 +20,12 @@ Stacked Areas 100% charts are a variation of Stacked Area charts that present 
 To create a Vertical Stacked Area 100% Chart set the __SeriesOrientation__ property to __Vertical__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedArea100__.
 >caption 
 
-![chart-undestanding-radchart-types-stacked-area-100-charts 001](images/chart-undestanding-radchart-types-stacked-area-100-charts001.png)
+![WinForms RadChart Stacked Area 100 Charts Vertical](images/chart-undestanding-radchart-types-stacked-area-100-charts001.png)
 
 To create a Horizontal Stacked Area 100% Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedArea100__.
 >caption 
 
-![chart-undestanding-radchart-types-stacked-area-100-charts 002](images/chart-undestanding-radchart-types-stacked-area-100-charts002.png)
+![WinForms RadChart Stacked Area 100 Charts Horizontal](images/chart-undestanding-radchart-types-stacked-area-100-charts002.png)
 
 To display the label values as percentages, change the __DefaultLabelValue__ for each chart series from "#Y" (the numeric value for each data point) to "#%" (the percentage of each data point to the category).
         

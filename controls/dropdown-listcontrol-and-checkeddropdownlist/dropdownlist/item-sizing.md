@@ -17,7 +17,7 @@ By default, all items in __RadDropDownList__ have equal height, *18px*. You can 
 
 >caption Figure 1: ItemHeight
 
-![dropdown-and-listcontrol-dropdownlist-item-sizing 001](images/dropdown-and-listcontrol-dropdownlist-item-sizing001.png)
+![WinForms RadDropDownList ItemHeight](images/dropdown-and-listcontrol-dropdownlist-item-sizing001.png)
 
 #### ItemHeight 
 
@@ -45,7 +45,7 @@ The RadDropDownList.__AutoSizeItems__ property indicates whether items will be s
       
 >caption Figure 2: AutoSizeItems
 
-![dropdown-and-listcontrol-dropdownlist-item-sizing 002](images/dropdown-and-listcontrol-dropdownlist-item-sizing002.png)
+![WinForms RadDropDownList AutoSizeItems](images/dropdown-and-listcontrol-dropdownlist-item-sizing002.png)
 
 #### AutoSizeItems 
 
@@ -70,7 +70,7 @@ If this property is set to *false* the user can set the __Height__ property of e
         
 >caption Figure 3: Custom height for each item
 
-![dropdown-and-listcontrol-dropdownlist-item-sizing 003](images/dropdown-and-listcontrol-dropdownlist-item-sizing003.gif)
+![WinForms RadDropDownList Custom Height for Each Item](images/dropdown-and-listcontrol-dropdownlist-item-sizing003.gif)
 
 #### Height 
 
@@ -119,7 +119,7 @@ When the RadDropDownList.__AutoCompleteMode__ property is set to *Suggest* or *S
         
 >caption Figure 4: AutoCompleteSuggest.DropDownList.ListElement.ItemHeight
 
-![dropdown-and-listcontrol-dropdownlist-item-sizing 004](images/dropdown-and-listcontrol-dropdownlist-item-sizing004.png)
+![WinForms RadDropDownList AutoCompleteSuggest DropDownList ListElement ItemHeight](images/dropdown-and-listcontrol-dropdownlist-item-sizing004.png)
 
 #### Auto-complete items height 
 

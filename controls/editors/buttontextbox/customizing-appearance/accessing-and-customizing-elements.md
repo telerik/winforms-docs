@@ -22,7 +22,7 @@ You can access and modify the style for the different elements in the editable a
 
 >caption Figure 1: Element hierarchy editor
 
-![editors-buttontextbox-customizing-elements 001](images/editors-buttontextbox-customizing-elements001.png)
+![WinForms RadButtonTextBox Element Hierarchy Editor](images/editors-buttontextbox-customizing-elements001.png)
 
 ## Programmatically
 
@@ -30,7 +30,7 @@ You can customize the nested elements at run time as well:
 
 >caption Figure 2: Customize elements
 
-![editors-buttontextbox-customizing-elements 002](images/editors-buttontextbox-customizing-elements002.png)
+![WinForms RadButtonTextBox Customize elements](images/editors-buttontextbox-customizing-elements002.png)
 
 #### Customize elements 
 

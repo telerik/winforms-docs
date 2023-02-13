@@ -12,13 +12,13 @@ position: 1
 
 This article illustrates the inner structure and organization of the elements which build the **RadPanorama** control.
 
->caption Figure 1: RadPanorama's elements hierarchy
+>caption Figure 1: RadPanorama's Elements Hierarchy
 
-![panorama-structure 001](images/panorama-structure001.png)
+![WinForms RadPanorama RadPanorama's Elements Hierarchy](images/panorama-structure001.png)
 
->caption Figure 2: RadPanorama's visual structure
+>caption Figure 2: RadPanorama's Visual Structure
 
-![panorama-structure 002](images/panorama-structure002.png)
+![WinForms RadPanorama RadPanorama's Visual Structure](images/panorama-structure002.png)
  
 # See Also
 

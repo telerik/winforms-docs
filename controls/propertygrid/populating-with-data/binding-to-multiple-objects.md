@@ -13,9 +13,9 @@ previous_url: propertygrid-bindiing-to-multiple-objects
 
 You can set an array of objects as **SelectedObjects** of **RadPropertyGrid**. When you do so, the **RadPropertyGrid** will display only the common properties of all the objects in the array. A common property is considered a property that has the same name and type across all the objects. If the values of the properties in all objects match, this value will be displayed, otherwise there will be no value displayed for the given property. When you set a property in the **RadPropertyGrid** the value is set in all the objects.
 
->caption Figure 1: RadPropertyGrid Multiple Objects
+>caption Figure 1: Multiple Objects
 
-![propertygrid-bindiing-to-multiple-objects 001](images/propertygrid-bindiing-to-multiple-objects001.png)
+![WinForms RadPropertyGrid Multiple Objects](images/propertygrid-bindiing-to-multiple-objects001.png)
 
 Here is how to use this feature:
 

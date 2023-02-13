@@ -38,7 +38,7 @@ previous_url: multicolumncombobox-selectedindexchanged
 |**DropDownMinSize**|Gets or sets the minimum size allowed for the drop-down of the control.|
 |**DropDownMaxSize**|Gets or sets the maximum size allowed for the drop-down of the control.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
@@ -46,7 +46,7 @@ previous_url: multicolumncombobox-selectedindexchanged
 |**BestFitColumns()**|Widens / shrinks all columns based on the space required by the text in the columns. Applies only on the visible rows.|
 |**BestFitColumns(bool adjustComboBoxSize, bool bestFitAllRows)**|Widens / shrinks all columns based on the space required by the text in the columns.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|

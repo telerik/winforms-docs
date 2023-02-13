@@ -14,7 +14,7 @@ previous_url: treeview-design-time-smart-tag
 
 The Smart Tag for RadTreeView lets you quickly access common tasks involved with building RadTreeView elements and customizing appearance through themes.
 
-![treeview-design-time-smart-tag 001](images/treeview-design-time-smart-tag001.png)
+![WinForms RadTreeView Smart Tag](images/treeview-design-time-smart-tag001.png)
 
 * __Common Tasks__
     

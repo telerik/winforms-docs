@@ -18,19 +18,19 @@ __RadScheduler__ supports functionality to arrange appointments according to the
 
 >caption Figure 1: Day View
 
-![scheduler-views-exact-time-rendering 001](images/scheduler-views-exact-time-rendering001.png)
+![WinForms RadScheduler Day View](images/scheduler-views-exact-time-rendering001.png)
 
 >caption Figure 2: Week View
 
-![scheduler-views-exact-time-rendering 002](images/scheduler-views-exact-time-rendering002.png)
+![WinForms RadScheduler Week View](images/scheduler-views-exact-time-rendering002.png)
 
 >caption Figure 3: Month View
 
-![scheduler-views-exact-time-rendering 003](images/scheduler-views-exact-time-rendering003.png)
+![WinForms RadScheduler Month View](images/scheduler-views-exact-time-rendering003.png)
 
 >caption Figure 4: Timeline View
 
-![scheduler-views-exact-time-rendering 004](images/scheduler-views-exact-time-rendering004.png)
+![WinForms RadScheduler Timeline View](images/scheduler-views-exact-time-rendering004.png)
 
 >important Agenda view doesn't support exact time rendering since it uses RadGridView to display appointments.
 

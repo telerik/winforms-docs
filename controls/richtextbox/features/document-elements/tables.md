@@ -92,7 +92,7 @@ Me.RadRichTextBox1.Document.Sections.Add(_section)
 
 {{endregion}}
 
-![richtextbox-features-document-elements-tables 001](images/richtextbox-features-document-elements-tables001.png)
+![WinForms RadRichTextBox richtextbox-features-document-elements-tables 001](images/richtextbox-features-document-elements-tables001.png)
 
 Additionally you can span cells in columns and rows. This is done by using the __RowSpan__ and __ColumnSpan__ properties of the __TableCell__ object. Also you can specify the layout mode for the table via the __LayoutMode__ property. it can have one of the following values:
 
@@ -131,7 +131,7 @@ You can use the __InsertTableDialog__, which comes out of the box. To show it up
 >note The __RadRichTextBoxUI__ also uses this dialog.
 >
 
-![richtextbox-features-document-elements-tables 002](images/richtextbox-features-document-elements-tables002.png)
+![WinForms RadRichTextBox richtextbox-features-document-elements-tables 002](images/richtextbox-features-document-elements-tables002.png)
 
 ## Formatting a Table at Runtime via RadRichTextBox's API
 

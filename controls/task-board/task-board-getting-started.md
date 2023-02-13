@@ -104,7 +104,7 @@ c1.TaskCardCollection.Add(card)
 
 {{endregion}} 
 
-![ task-board-getting-started 001](images/task-board-getting-started001.png)
+![WinForms RadTaskBoard Getting Started](images/task-board-getting-started001.png)
  
  
 # See Also

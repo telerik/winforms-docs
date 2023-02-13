@@ -14,11 +14,11 @@ __RadPivotGrid__ is designed to aggregate data and it provides an API for assign
 
 >caption Figure 1: Using the Built-in *Sum* function
 
-![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation001.png)
+![WinForms RadPivotGrid Using the Built-in *Sum* function](images/pivotgrid-custom-aggregation001.png)
 
 >caption Figure 2: Using the Custom *Sqrt Of Sum* function
 
-![pivotgrid-custom-aggregation 001](images/pivotgrid-custom-aggregation002.png)
+![WinForms RadPivotGrid Using the Custom *Sqrt Of Sum* function](images/pivotgrid-custom-aggregation002.png)
 
 ## Defining a Custom Aggregation Function
 
@@ -246,7 +246,7 @@ Me.RadPivotGrid1.DataProvider = dataProvider
 
 >caption Figure 2: Calculated Field in RadPivotGrid
 
-![pivotgrid-calculated-fields 002](images/pivotgrid-calculated-fields002.png)
+![WinForms RadPivotGrid Calculated Field in RadPivotGrid](images/pivotgrid-calculated-fields002.png)
 
 
 # See Also

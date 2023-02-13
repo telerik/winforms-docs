@@ -57,9 +57,9 @@ RadListView1.SortDescriptors.Add(sort)
 
 Here is the sorted data:
 
-|Before sorting|After sorting|
+|Before Sorting|After Sorting|
 |----|----|
-|![listview-features-sorting](images/listview-features-sorting.png)|![listview-features-sorting 002](images/listview-features-sorting002.png)|
+|![WinForms RadListView Before Sorting](images/listview-features-sorting.png)|![WinForms RadListView After Sorting](images/listview-features-sorting002.png)|
 
 ## Custom sorting
 
@@ -159,9 +159,9 @@ End Class
 
 {{endregion}} 
 
-|Basic sorting|Custom sorting|
+|Basic Sorting|Custom Sorting|
 |----|----|
-|![listview-features-sorting 003](images/listview-features-sorting003.png)|![listview-features-sorting 004](images/listview-features-sorting004.png)|
+|![WinForms RadListView Basic Sorting|](images/listview-features-sorting003.png)|![WinForms RadListView Custom Sorting](images/listview-features-sorting004.png)|
 
 Note that the entire sort operation is defined by this comparer. This means that you should take into account the contents of the **SortDescriptors** collection the **RadListView** when implementing this custom comparer (that is why the **RadListViewElement** is passed as an argument to the constructor of the above comparer). 
 

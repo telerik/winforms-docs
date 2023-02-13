@@ -57,7 +57,7 @@ The *RadItem Collection Editor* that allows you to edit the items at design time
 
 >caption Figure 1: Adding DataFilterComboDescriptorItem at design time
 
-![datafilter-combo-descriptor-item 001](images/datafilter-combo-descriptor-item001.png)
+![WinForms RadDataFilter Adding DataFilterComboDescriptorItem at design time](images/datafilter-combo-descriptor-item001.png)
 
 ### Adding DataFilterComboDescriptorItem programmatically
 
@@ -97,7 +97,7 @@ When this is done you can add new expression item and choose from the list:
 
 >caption Figure 2: DataFilterComboDescriptorItem at runtime.
 
-![datafilter-combo-descriptor-item 002](images/datafilter-combo-descriptor-item002.png)
+![WinForms RadDataFilter DataFilterComboDescriptorItem at Runtime](images/datafilter-combo-descriptor-item002.png)
 
 # See Also
 

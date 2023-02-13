@@ -140,7 +140,7 @@ End Sub
  
 >caption Figure 1: Only DockPosition.Bottom is allowed.
 
-![dock-architecture-and-features-using-the-dragdropservice 001](images/dock-architecture-and-features-using-the-dragdropservice001.png)
+![WinForms RadDock Only DockPositionBottom is allowed](images/dock-architecture-and-features-using-the-dragdropservice001.png)
 
 ## Allowed Dock Manager Edges
 
@@ -171,7 +171,7 @@ End Sub
 
 >caption Figure 2: Only DockPosition.Left and DockPosition.Right are available.
 
-![dock-architecture-and-features-using-the-dragdropservice 002](images/dock-architecture-and-features-using-the-dragdropservice002.png)
+![WinForms RadDock Only DockPositionLeft and DockPositionRight are available](images/dock-architecture-and-features-using-the-dragdropservice002.png)
 
 # See Also
 

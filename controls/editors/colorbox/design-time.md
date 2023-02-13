@@ -14,7 +14,7 @@ The __Smart Tag__ of __RadColorBox__ lets you quickly access common tasks involv
 
 >caption Figure 1: The Smart Tag of RadColorBox
 
-![colorbox-smart-tag001.png](images/colorbox-smart-tag001.png) 
+![WinForms RadColorBox Smart Tag](images/colorbox-smart-tag001.png) 
 
 * __Common Tasks__
     - __New Theme Manager:__ Adds a new __RadThemeManager__ component to the form.

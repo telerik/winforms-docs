@@ -44,7 +44,7 @@ Me.RadChartView1.Series.Add(series)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup
-![chartview-series-types-pie001](images/chartview-series-types-pie001.png)
+![WinForms RadChartView Pie Initial Setup](images/chartview-series-types-pie001.png)
 
 __PieSeries__ can be customized using the following properties:        
 
@@ -67,7 +67,7 @@ series.Range = range
 {{endregion}}
 
 >caption Figure 2: Angle Range
-![](images/chartview-series-types-pie002.png)
+![WinForms RadChartView Pie Angle Range](images/chartview-series-types-pie002.png)
 
 * __ShowLabels:__ The property determines whether the labels above each point will be visible.
 
@@ -103,7 +103,7 @@ End If
 {{endregion}} 
 
 >caption Figure 3: Offset Segment
-![chartview-series-types-pie003](images/chartview-series-types-pie003.png)
+![WinForms RadChartView Pie Offset Segment](images/chartview-series-types-pie003.png)
 
 # See Also
 

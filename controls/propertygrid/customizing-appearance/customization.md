@@ -27,7 +27,7 @@ Customizing the appearance of the items in RadPropertyGrid is controlled by a nu
 
 >caption Figure 1: Customizing Items
 
-![propertygrid-customization](images/propertygrid-customization.png)
+![WinForms RadPropertyGrid Customizing Items](images/propertygrid-customization.png)
 
 Here is an example on how you can change the back color of the subitems and also to change the colors of the items with values *True* and *False*:
 

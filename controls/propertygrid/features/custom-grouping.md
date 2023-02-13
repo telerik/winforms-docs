@@ -31,7 +31,7 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 >caption Figure 1: Custom Grouping
 
-![propertygrid-features-custom-grouping 001](images/propertygrid-features-custom-grouping001.png)
+![WinForms RadPropertyGrid Custom Grouping](images/propertygrid-features-custom-grouping001.png)
 
 #### Custom Grouping
 

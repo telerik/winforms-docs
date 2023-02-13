@@ -38,7 +38,7 @@ The table below is a sample list of the names and identifiers found in the Cult
 
 >caption Figure: 1 Setting Arabic Culture
 
-![editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics 001](images/editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics001.png)
+![WinForms RadDateTimePicker Setting Arabic Culture](images/editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics001.png)
 
 {{source=..\SamplesCS\Editors\DateTimePicker1.cs region=SetPashtoCulture}} 
 {{source=..\SamplesVB\Editors\DateTimePicker1.vb region=SetPashtoCulture}} 

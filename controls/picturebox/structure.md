@@ -12,9 +12,9 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build the **RadPictureBox** control.
 
-Figure 1: RadPictureBox visual structure
+Figure 1: RadPictureBox Visual Structure
 
-![picturebox-structure](images/picturebox-structure001.png)
+![WinForms RadPictureBox Visual Structure](images/picturebox-structure001.png)
 
 ## Element Hierarchy
 
@@ -28,7 +28,7 @@ Figure 1: RadPictureBox visual structure
 
 Figure 2: RadPictureBox elements hierarchy
 
-![picturebox-structure](images/picturebox-structure002.png)
+![WinForms RadPictureBox Elements Hierarchy](images/picturebox-structure002.png)
 
 # See Also
 

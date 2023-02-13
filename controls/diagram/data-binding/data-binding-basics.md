@@ -162,4 +162,4 @@ Me.RadDiagram1.ConnectionTargetConnectorMember = "TargetConnector"
 {{endregion}} 
 
 
-![diagram-data-binding-basics 001](images/diagram-data-binding-basics001.png)
+![WinForms RadDiagram Data Binding Basics](images/diagram-data-binding-basics001.png)

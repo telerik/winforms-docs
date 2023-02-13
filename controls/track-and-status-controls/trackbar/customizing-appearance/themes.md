@@ -20,13 +20,13 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select **TrackBarThumbElement** in *Controls Structure* on the left side. Then, the **TrackBarThumbElement** in the *Elements* section will be automatically selected.
 
-	![trackbar-customizing-appearance-themes 001](images/trackbar-customizing-appearance-themes001.png)
+	![WinForms RadTrackBar Controls Structure](images/trackbar-customizing-appearance-themes001.png)
 
 1. Modify the applied *TrackBarThumbFill* repository item. 
 
-	![trackbar-customizing-appearance-themes 002](images/trackbar-customizing-appearance-themes002.png)
+	![WinForms RadTrackBar TrackBarThumbFill](images/trackbar-customizing-appearance-themes002.png)
 	
-	![trackbar-customizing-appearance-themes 003](images/trackbar-customizing-appearance-themes003.png)
+	![WinForms RadTrackBar BackColor](images/trackbar-customizing-appearance-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

@@ -17,7 +17,7 @@ To start using **RadStepProgressBar**, just drag it from the toolbox and drop it
 
 Select **RadStepProgressBar** and click the small arrow on the top right position in order to open the Smart Tag.
 
-![winforms/stepprogressbar-design-time 001](images/stepprogressbar-design-time001.png) 
+![WinForms RadStepProgressBar Smart Tag](images/stepprogressbar-design-time001.png) 
 
 * **Common Tasks**
 
@@ -31,14 +31,14 @@ Select **RadStepProgressBar** and click the small arrow on the top right positio
 
 Click the browse button next to the **Steps** property in the Smart Tag. This will show the Collection Editor allowing you to add **StepProgressItem**. The collection editor allows you to add as many step items as needed:
 
-![stepprogressbar-design-time 002](images/stepprogressbar-design-time002.png)
+![WinForms RadStepProgressBar Adding Step Progress Items](images/stepprogressbar-design-time002.png)
 
 
 ## Customize Step Progress Items
 
 You can further customize each StepProgressBar to implement your visaul requirements.
 
-![stepprogressbar-design-time 002](images/stepprogressbar-design-time003.png)
+![WinForms RadStepProgressBar Customize Step Progress Items](images/stepprogressbar-design-time003.png)
 
 # See Also
 

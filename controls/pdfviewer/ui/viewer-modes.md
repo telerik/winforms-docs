@@ -18,20 +18,20 @@ There are three __FixedDocumentViewerModes__ which specify the behavior of __Rad
 
 >caption Figure 1: Pan
 
-![pdfviewer-overview 001](images/pdfviewer-ui-viewer-modes001.gif)
+![WinForms RadPdfViewer Pan](images/pdfviewer-ui-viewer-modes001.gif)
 
 * *TextSelection* – selection is initiated, which stops when you release the button of the mouse;
 
 >caption Figure 2: TextSelection
 
-![pdfviewer-overview 001](images/pdfviewer-ui-viewer-modes002.gif)
+![WinForms RadPdfViewer TextSelection](images/pdfviewer-ui-viewer-modes002.gif)
 
 ## Specify the Viewer Mode Using UI
 
 The viewer mode can be changed using the __RadPdfViewerNavigator__ (as shown in the picture).
 >caption Figure 3: Using the UI
 
-![pdfviewer-overview 001](images/pdfviewer-ui-viewer-modes003.png)
+![WinForms RadPdfViewer Using the UI](images/pdfviewer-ui-viewer-modes003.png)
 
 ## Specify the  Viewer Mode in Code
 

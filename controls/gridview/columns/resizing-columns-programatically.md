@@ -13,11 +13,11 @@ previous_url: gridview-columns-resizing-columns-programatically
 
 You can control if and how users can resize the Grid columns. You can also set the column size through code.
 
-## Resizing columns manually
+## Resizing Columns Manually
 
 By default, the columns inside **RadGridView** are resizable. The users can easily change the column's width by positioning the mouse over the column's vertical grid line and dragging it until they achieve the desired size.
 
-![gridview-columns-rezise-columns001](images/gridview-columns-rezise-columns001.gif)
+![WinForms RadGridView Resizing Columns Manually](images/gridview-columns-rezise-columns001.gif)
 
 ## Disabling manual resizing
 
@@ -123,7 +123,7 @@ When you configure the desired best fit method, users can execute the best fit o
 
 * double-clicking the left or right header edge 
 
-![](images/gridview-columns-rezise-columns003.png)
+![WinForms RadGridView Best Fit](images/gridview-columns-rezise-columns003.png)
 
 ## Resizing events
 

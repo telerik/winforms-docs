@@ -19,7 +19,7 @@ previous_url: menus-menu-overview
 {% endif %}
 
 >caption Figure 1: RadMenu
-![menus-menu-overview 001](images/menus-menu-overview001.png)
+![WinForms RadMenu Overview](images/menus-menu-overview001.png)
 
 In addition to all the capabilities of the standard Windows Forms MenuStrip control, **RadMenu** enables additional       advanced capabilities for your applications. 
 
@@ -27,23 +27,23 @@ In addition to all the capabilities of the standard Windows Forms MenuStrip cont
 
 * Full support for the Telerik UI for WinForms theming engine allowing you to easily construct a variety of stunning visual effects. The drop down can be animated with a number of predefined effects.
 
-![menus-menu-overview 002](images/menus-menu-overview002.png)
+![WinForms RadMenu Dark Theme](images/menus-menu-overview002.png)
 
-![menus-menu-overview 007](images/menus-menu-overview007.png)
+![WinForms RadMenus Light Theme](images/menus-menu-overview007.png)
 
 * Nesting of any other Telerik RadControl within a **RadMenu**, allowing you to create a menu with an embedded text box or combo box.
 
-![menus-menu-overview 003](images/menus-menu-overview003.png)
+![WinForms RadMenu Nesting](images/menus-menu-overview003.png)
 
 * Menu item text displayed in a variety of formats, such as using multi-line text, and vertical or horizontal orientation.
             
-![menus-menu-overview 004](images/menus-menu-overview004.png)
+![WinForms RadMenu Multi-line Text](images/menus-menu-overview004.png)
 
-![menus-menu-overview 005](images/menus-menu-overview005.png)
+![WinForms RadMenu Vertical Orientation](images/menus-menu-overview005.png)
 
 * Images can be displayed in the background of the menu as a whole and for each menu item.
 
-![menus-menu-overview 006](images/menus-menu-overview006.png)
+![WinForms RadMenu Images as Background](images/menus-menu-overview006.png)
 
 
 # See Also

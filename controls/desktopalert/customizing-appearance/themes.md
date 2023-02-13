@@ -20,15 +20,15 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __AlertWindowTextAndSysemButtonsElement__ in *Controls Structure* on the left side. Then, select __AlertWindowTextAndSystemButtonsElement__ in the *Elements* section.
 
-	![desktopalert-themes 001](images/desktopalert-themes001.png)
+	![WinForms RadDesktopAlert AlertWindowTextAndSysemButtonsElement](images/desktopalert-themes001.png)
 
 1. Modify the applied *text* repository item. 
 
-	![desktopalert-themes 002](images/desktopalert-themes002.png)
+	![WinForms RadDesktopAlert Text](images/desktopalert-themes002.png)
 
 1. You can see the result directly in the Visual Style Builder.
 	
-	![desktopalert-themes 003](images/desktopalert-themes003.png)
+	![WinForms RadDesktopAlert VisualStyleBuilder](images/desktopalert-themes003.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

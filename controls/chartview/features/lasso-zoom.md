@@ -73,17 +73,17 @@ End Sub
 {{endregion}} 
 
 >caption Figure 1: Initial Chart
-![chartview-features-lasso-selection 001](images/chartview-features-lasso-selection001.png)
+![WinForms RadChartView Initial Chart](images/chartview-features-lasso-selection001.png)
 
 Now, let’s select some area:
 
 >caption Figure 2: Lasso Selection
-![chartview-features-lasso-selection 002](images/chartview-features-lasso-selection002.png)
+![WinForms RadChartView Lasso Selection Area](images/chartview-features-lasso-selection002.png)
 
 And the chart will automatically zoom to the selected area:
 
 >caption Figure 3: Zoom to Selection
-![chartview-features-lasso-selection 003](images/chartview-features-lasso-selection003.png)
+![WinForms RadChartView Zoom to Selection](images/chartview-features-lasso-selection003.png)
 
 __LassoZoomController__ supports zoom and pan functionality programmatically via the *ZoomAndPan*  method, which allows specifying the exact *from* and *to* percentage. The following code will zoom the first half of the chart: 
 
@@ -116,7 +116,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 4: Zoom and Pan
-![chartview-features-lasso-selection 004](images/chartview-features-lasso-selection004.png)
+![WinForms RadChartView Zoom and Pan](images/chartview-features-lasso-selection004.png)
 
 Using this approach you can zoom any area in the chart using the 0-100 percentage scale.
 

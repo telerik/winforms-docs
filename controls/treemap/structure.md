@@ -12,7 +12,7 @@ position: 1
 
 This article describes the inner structure and organization of the elements which build **RadTreeMap**.
 
-![treemap-structure 001](images/treemap-structure001.png)
+![WinForms RadTreeMap Structure](images/treemap-structure001.png)
 
 * **TreeMapDataItem** - represents the colored piece of RadTreeMap which size depends on the value it stores.
 
@@ -29,7 +29,7 @@ RadTreeMap doesn't use visual elements for its items. It directly paints the dat
 
 ## Elements Hierarchy
 
-![treemap-structure 002](images/treemap-structure002.png)
+![WinForms RadTreeMap Elements Hierarchy](images/treemap-structure002.png)
 
  
 # See Also

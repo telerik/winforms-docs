@@ -224,7 +224,7 @@ End Sub
 >
 
 >caption Figure 1: Drag and Drop from RadGridView to RadScheduler
-![scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice 001](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice001.gif)
+![WinForms RadScheduler Drag and Drop from RadGridView to RadScheduler](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice001.gif)
 
 ## Drag and Drop from RadScheduler to RadGridView
 
@@ -383,7 +383,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 2: Drag and Drop from RadScheduler to RadGridView 
-![scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice 002](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)
+![WinForms RadScheduler Drag and Drop from RadScheduler to RadGridView](images/scheduler-drag-and-drop-drag-and-drop-using-raddragdropservice002.gif)
 
 # See Also
 

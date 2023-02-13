@@ -14,7 +14,7 @@ position: 1
 
 >caption Figure 1: Tile XY coordinates at level 3
 
-![map-tiles 001](images/map-tiles001.png)
+![WinForms RadMap Tile XY coordinates at level](images/map-tiles001.png)
 
 In order to optimize the tiles indexing, the two-dimensional tile XY coordinates are combined into one-dimensional strings called quadtree keys, or “quadkeys” for short. Each quadkey uniquely identifies a tile and it can be used as a key in common database B-tree indexes. To convert tile coordinates into a quadkey, the bits of the Y and X coordinates are interleaved, and the result is interpreted as a base-4 number (with leading zeros maintained) and converted into a string. For instance, given tile XY coordinates of (3, 5) at level 3, the quadkey is determined as follows:
 
@@ -26,7 +26,7 @@ quadkey = 100111<sub>2</sub> = 213<sub>4</sub> = “213”
 
 >caption Figure 2: Tile Quadkeys 
 
-![map-tiles 002](images/map-tiles002.png)
+![WinForms RadMap Tile Quadkeys](images/map-tiles002.png)
 
 Finally, tiles that are close to each other have quadkeys that are relatively close together. This is important for optimizing performance, because neighboring tiles are usually requested in groups.
 

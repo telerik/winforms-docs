@@ -15,6 +15,6 @@ __RadForm__ carries forward standard Windows Form class functionality, including
 
 >caption Figure 1: Right-To-Left
 
-![forms-and-dialogs-form-rtl 001](images/forms-and-dialogs-form-rtl001.png)
+![WinForms RadForm Right-To-Left](images/forms-and-dialogs-form-rtl001.png)
 
 

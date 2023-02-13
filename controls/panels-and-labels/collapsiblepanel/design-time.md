@@ -19,7 +19,7 @@ Select **RadCollapsiblePanel** and click the small arrow on the top right positi
 
 >caption Figure 1: Smart Tag
 
-![panels-and-labels-collapsiblepanel-design-time 001](images/panels-and-labels-collapsiblepanel-design-time001.png)
+![WinForms RadTemplates Smart Tag](images/panels-and-labels-collapsiblepanel-design-time001.png)
 
 * **Common Tasks**
 

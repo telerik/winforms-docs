@@ -50,7 +50,7 @@ End Sub
 
 |Default Context Menu|Modified Context Menu|
 |----|----|
-|![virtualgrid-modifying-the-default-context-menu 001](images/virtualgrid-modifying-the-default-context-menu001.png)|![virtualgrid-modifying-the-default-context-menu 002](images/virtualgrid-modifying-the-default-context-menu002.png)|
+|![WinForms RadVirtualGrid Default Context Menu](images/virtualgrid-modifying-the-default-context-menu001.png)|![WinForms RadVirtualGrid Modified Context Menu with Removed Item](images/virtualgrid-modifying-the-default-context-menu002.png)|
 
 # Adding menu items to the default RadVirtualGrid context menu
  
@@ -88,7 +88,7 @@ End Sub
 
 |Default Context Menu|Modified Context Menu|
 |----|----|
-|![virtualgrid-modifying-the-default-context-menu 001](images/virtualgrid-modifying-the-default-context-menu001.png)|![virtualgrid-modifying-the-default-context-menu 003](images/virtualgrid-modifying-the-default-context-menu003.png)|
+|![WinForms RadVirtualGrid ContextMenu](images/virtualgrid-modifying-the-default-context-menu001.png)|![WinForms RadVirtualGrid Modified Context Menu with Added item](images/virtualgrid-modifying-the-default-context-menu003.png)|
 
 # See Also
 * [Overview]({%slug winforms/virtualgrid/context-menu/context-menu%})

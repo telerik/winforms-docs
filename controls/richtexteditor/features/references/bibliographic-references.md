@@ -13,7 +13,7 @@ previous_url: richtexteditor-features-references-biliographic-references
 
 Bibliographic references represent links (in the form of text) to documents, books, films and everything that can be cited in a Word document. You can manage those in __RadRichTextEditor__ by going to References -> Citations & Bibliography. It looks like this:
 
-![richtexteditor-features-references-biliographic-references 001](images/richtexteditor-features-references-biliographic-references001.png)
+![WinForms RadRichTextEditor Bibliographic References](images/richtexteditor-features-references-biliographic-references001.png)
 
 This article covers:
 
@@ -37,7 +37,7 @@ This is what describes the source you want to refer. We named the class represen
 
 * __All other fields__ – there are a number of Fields that an object of type __BibliographicSource__ possesses like Author, Title, Year, City, etc. Those properties are a lot and we won’t enumerate them all now, but you have to know that every type of source includes some subset of those properties. When you open the __AddNewBibliographicSourceDialog__, upon changing the type only the necessary properties will be shown. The dialog looks like this:
 
-![richtexteditor-features-references-biliographic-references 002](images/richtexteditor-features-references-biliographic-references002.png)
+![WinForms RadRichTextEditor Source](images/richtexteditor-features-references-biliographic-references002.png)
 
 ### Style
 
@@ -53,17 +53,17 @@ This is how the source is represented when inserted in the document. There are a
 
 You already saw how the __AddNewBibliographicSourceDialog__ looks like. It is used to insert a new Source. After you have inserted all the sources you need, you can manage them through the __ManageBibliographicSourcesDialog__. It looks like so:
 
-![richtexteditor-features-references-biliographic-references 003](images/richtexteditor-features-references-biliographic-references003.png)
+![WinForms RadRichTextEditor User Interface](images/richtexteditor-features-references-biliographic-references003.png)
 
 As you can see you can edit an existing source, delete an existing source or create a new one.
 
 You can insert a bibliography on the caret position using the following button:
 
-![richtexteditor-features-references-biliographic-references 004](images/richtexteditor-features-references-biliographic-references004.png)
+![WinForms RadRichTextEditor Insert CaretPosition](images/richtexteditor-features-references-biliographic-references004.png)
 
 When you click on the "*Insert Citation*" drop down button you will get a list with all the available sources. Clicking on one will insert a Citation in the document. At the bottom there is another button that allows you to create new __BibliographicSource__ object (it shows the __AddNewBibliographicSource__ dialog):
 
-![richtexteditor-features-references-biliographic-references 005](images/richtexteditor-features-references-biliographic-references005.png)
+![WinForms RadRichTextEditor Add New Source On Caret Position](images/richtexteditor-features-references-biliographic-references005.png)
 
 ## Using Bibliographic References API
 

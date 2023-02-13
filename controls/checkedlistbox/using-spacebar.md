@@ -15,7 +15,7 @@ The space bar allows you to toggle selected items check state with a single hit.
 
 * Toggle selected items, if all items CheckStates are equal.
 
-* Check selected items, if at least one item has different CheckState. ![checkedlistbox-features 001](images/checkedlistbox-features001.gif)
+* Check selected items, if at least one item has different CheckState. ![WinForms RadCheckedListBox Using Space Bar](images/checkedlistbox-features001.gif)
 
 1. Initially there are three selected items and another one is focused.
 

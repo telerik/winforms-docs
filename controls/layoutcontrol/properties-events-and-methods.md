@@ -21,7 +21,7 @@ previous_url: layoutcontrol-properties-events-and-methods
 |__DragOverlayVisible__|Gets a value which indicates if the [drag overlay]({%slug winforms/layoutcontrol/customize-layout-mode%}) is visible.|
 |__CustomizeDialog__|Gives you access to the customize dialog instance. You can use it to assign custom dialog as well.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|
@@ -33,7 +33,7 @@ previous_url: layoutcontrol-properties-events-and-methods
 |__GetAllItems__|Returns IEnumerable collection of all the items. With the parameter you can include or exclude the hidden ones. This includes items nested within groups or tabbed groups.|
 |__FindItemByControl__|Returns the item in which specific control is hosted in.|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|

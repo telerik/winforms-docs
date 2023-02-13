@@ -33,7 +33,7 @@ If you want to use RadToastNotificationManager in .NET5/.NET6, please make sure 
 
 By using the [RadToastNotifications Editor]({%slug toast-notification-design-time%}) you can add different toast notifications to the manager at design time. They are serialized as Telerik toasts which generate Windows system toasts. 
 
-![winforms/toast-notification-design-time003](images/toast-notification-design-time003.png) 
+![WinForms RadToastNotifications Editor](images/toast-notification-design-time003.png) 
 
 Then, if you want to show a toast notification at run time, e.g. when clicking a button, you must call **ShowNotification** method.
 Register RadToastNotificationManager and Show a Notification
@@ -90,7 +90,7 @@ End Sub
   
 As a result, the toast notification is successfully shown when you click the button:
 
-![winforms/toast-notification-getting-started001](images/toast-notification-getting-started001.png) 
+![WinForms RadToastNotification Getting Started](images/toast-notification-getting-started001.png) 
 
 >important Windows has "Focus Assist' settings where you can choose which notifications you would like to see and hear. The possible options are:
 >

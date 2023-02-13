@@ -18,7 +18,7 @@ The user is able to select the content inside **RadSyntaxEditor** in the same wa
 
 #### Figure 1: RadSyntaxEditor with selected text
 
-![features-intellipropmpts001](images/selection001.png)
+![WinForms RadSyntaxEditor with selected text](images/selection001.png)
 
 The UI selection is enabled by default. To enable or disable it use the **IsSelectionEnabled** property
 
@@ -79,7 +79,7 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.SelectionStroke = New SolidBrush(Color.D
 
 #### Figure 2: RadSyntaxEditor with custom selection color
 
-![features-intellipropmpts001](images/selection002.png)
+![WinForms RadSyntaxEditor with custom selection color](images/selection002.png)
 
 ## Programmatic Selection
 

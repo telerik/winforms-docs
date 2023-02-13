@@ -16,16 +16,16 @@ This help article will demonstrate a step by step tutorial how to customize the 
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File` >> `Open Package`.
 4. Expand **RadSparkLine** and select the `SparkLineSeries`. 
-   ![sparkline-themes 001](images/sparkline-themes001.png)
+   ![WinForms RadSparkline SparkLineSeries](images/sparkline-themes001.png)
 
 5. For the `Elements` window, navigate to the __HighPointBackColor__ property, and change its value.
-   ![sparkline-themes 002](images/sparkline-themes002.png)
+   ![WinForms RadSparkline HighPointBackColor](images/sparkline-themes002.png)
 
 6. Change the __HighPointBorderColor__ as well.
-   ![sparkline-themes 003](images/sparkline-themes003.png)
+   ![WinForms RadSparkline HighPointBorderColor](images/sparkline-themes003.png)
 
 7.  The bellow image shows the result.
-   ![sparkline-themes 007](images/sparkline-themes004.png)
+   ![WinForms RadSparkline Modify Theme](images/sparkline-themes004.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 

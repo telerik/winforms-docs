@@ -28,7 +28,7 @@ The following steps demonstrates how to populate two **RadListViews** with items
 
 >caption Figure 1: Drag and drop in unbound mode
 
-![listview-listviewdragdropservice 001](images/listview-listviewdragdropservice001.gif)
+![WinForms RadListView Drag and drop in unbound mode](images/listview-listviewdragdropservice001.gif)
 
 ## Drag and drop in bound mode by using ListViewDragDropService
 

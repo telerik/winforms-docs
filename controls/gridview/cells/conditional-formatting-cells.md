@@ -69,7 +69,7 @@ Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
 
 >caption Figure 1: Rule based formatting objects.
 
-![gridview-cells-conditional-formatting-cells 001](images/gridview-cells-conditional-formatting-cells001.png)
+![WinForms RadGridView Rule based formatting objects](images/gridview-cells-conditional-formatting-cells001.png)
 
 ## Expression based formatting objects
 
@@ -101,7 +101,7 @@ Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
 
 >caption Figure 2: Expression based formatting objects.
 
-![gridview-cells-conditional-formatting-cells 002](images/gridview-cells-conditional-formatting-cells002.png)
+![WinForms RadGridView Expression Based Formatting Objects](images/gridview-cells-conditional-formatting-cells002.png)
 
 ## Customize ConditionalFormattingForm
 
@@ -109,7 +109,7 @@ __RadGridView__ provides a convenient form which the end user could use to creat
 
 >caption Figure 3: Conditional Formatting Form.
 
-![gridview-cells-conditional-formatting-cells 003](images/gridview-cells-conditional-formatting-cells003.png)
+![WinForms RadGridView Conditional Formatting Form](images/gridview-cells-conditional-formatting-cells003.png)
 
 To access and customize the dialog, you can use the  __ConditionalFormattingFormShown__ event. For example, here is how to disallow displaying of non-visible columns in the drop down and also, specify the format of displaying the columns as __name and header text__:
 

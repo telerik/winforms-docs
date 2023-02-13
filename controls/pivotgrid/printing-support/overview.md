@@ -35,7 +35,7 @@ Me.radPivotGrid1.Print(True)
 
 >caption Figure 1: Print Dialog
 
-![pivotgrid-printing-support 001](images/pivotgrid-printing-support001.png)
+![WinForms RadPivotGrid Print Dialog](images/pivotgrid-printing-support001.png)
 
 The other available method is __PrintPreview__. It opens a new **RadPrintPreviewDialog** which is discussed in details [here]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%}).
 
@@ -57,7 +57,7 @@ Me.radPivotGrid1.PrintPreview()
 
 >caption Figure 2: RadPrintPreviewDialog
 
-![pivotgrid-printing-support 002](images/pivotgrid-printing-support002.png)
+![WinForms RadPivotGrid RadPrintPreviewDialog](images/pivotgrid-printing-support002.png)
 
 # See Also
 

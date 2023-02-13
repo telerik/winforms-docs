@@ -111,6 +111,6 @@ position: 10
 
 >caption Disable dropping over "Telerik" 
 
-![syntax-editor-selection-drag-drop](images/syntax-editor-selection-drag-drop.gif)
+![WinForms RadSyntaxEditor Disable dropping over Telerik](images/syntax-editor-selection-drag-drop.gif)
 
 

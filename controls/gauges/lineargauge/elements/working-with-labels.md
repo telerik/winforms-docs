@@ -18,7 +18,7 @@ __LinearGaugeLabels__ element represents the scale labels displayed next to the 
 The smart tag allows you to configure the most commonly used properties.
 
 >caption Figure 1: Design Time
-![lineargauge-elements-working-with-labels 001](images/lineargauge-elements-working-with-labels001.png)
+![WinForms RadGauges LinearGaugeLabels Design Time](images/lineargauge-elements-working-with-labels001.png)
 
 ## Properties
 

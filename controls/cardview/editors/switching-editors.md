@@ -14,8 +14,8 @@ When edit operation is about to begin, the __EditorRequired__ event is fired. By
 
 The following example shows how you can change the editor type:
 
->caption Fig. 1: Changed Editors
-![cardview-editors-overview 001](images/cardview-editors-switching-editors001.gif)
+>caption Figure 1: Changed Editors
+![WinForms RadCardView Changed Editors](images/cardview-editors-switching-editors001.gif)
 
 #### Changing Editor Type
 

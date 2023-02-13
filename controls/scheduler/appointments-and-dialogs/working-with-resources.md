@@ -48,7 +48,7 @@ One **Appointment** may refer to one or many resources. Each **Appoinment** offe
 {{endregion}} 
 
 
-![winforms-scheduler-working-with-resources 001](images/winforms-scheduler-working-with-resources001.png)
+![WinForms RadScheduler Appointment Resource](images/winforms-scheduler-working-with-resources001.png)
 
 
 #### Apply multiple resources to an appointment
@@ -73,17 +73,17 @@ One **Appointment** may refer to one or many resources. Each **Appoinment** offe
 
 {{endregion}}
 
-![winforms-scheduler-working-with-resources 002](images/winforms-scheduler-working-with-resources002.png)
+![WinForms RadScheduler Multiple Resources](images/winforms-scheduler-working-with-resources002.png)
 
 When multiple resources are associated with an appointment, the **Resource** field in the **EditAppointmentDialog** shows **Any**:
 
-![winforms-scheduler-working-with-resources 003](images/winforms-scheduler-working-with-resources003.png)
+![WinForms RadScheduler EditAppointmentDialog Resource](images/winforms-scheduler-working-with-resources003.png)
 
 >important As of **R1 2021** the EditAppointmentDialog provides UI for selecting multiple resources per appointment. In certain cases (e.g. unbound mode), the *Resource* **RadDropDownList** is replaced with a **RadCheckedDropDownList**. Otherwise, the default drop down with single selection for resources is shown. To enable the multiple resources selection in bound mode, it is necessary to specify the AppointmentMappingInfo. **Resources** property. The **Resources** property should be set to the name of the relation that connects the **Appointments** and the **AppointmentsResources** tables. 
 
-#### EditAppointmentDialog with multiple resources
+#### EditAppointmentDialog with multiple Resources
 
-![scheduler-winforms-scheduler-dialogs-editappointmentdialog 003](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
+![WinForms RadScheduler EditAppointmentDialog Multiple Resources](images/scheduler-winforms-scheduler-dialogs-editappointmentdialog003.png)
 
             
 # See Also

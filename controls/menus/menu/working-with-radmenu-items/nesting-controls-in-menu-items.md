@@ -15,7 +15,7 @@ The __RadMenuContentItem__ is a container menu item that allows you to build up 
 
 >caption Figure 1: Hosting RadElements in menu items
 
-![menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items 001](images/menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items001.png)
+![WinForms RadMenus Hosting RadElements in menu items](images/menus-menu-working-with-radmenu-items-nesting-controls-in-menu-items001.png)
 
 #### Adding content items
 
@@ -74,7 +74,7 @@ This tutorial demonstrates adding a **RadPageView** to a **RadMenu**. Each page 
 
 >caption Figure 2: Hosting RadControls in menu items
 
-![menus-menu-working-with-radmenu-items-nesting-controls-tutorial 001](images/menus-menu-working-with-radmenu-items-nesting-controls-tutorial001.gif)
+![WinForms RadMenus Hosting RadControls in menu items](images/menus-menu-working-with-radmenu-items-nesting-controls-tutorial001.gif)
 
 1\. Add a __RadMenu__ to the form. No other design time work needs to be done.
 

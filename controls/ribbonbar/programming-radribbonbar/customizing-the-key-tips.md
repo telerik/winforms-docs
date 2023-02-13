@@ -13,10 +13,10 @@ position: 6
 The key tips displayed by **RadRibbonBar** can be customized so that they are shown at special locations with modified styles.
 
 >caption Figure 1: Custom Key Tips
-![ribbonbar-programming-radribbonbar-customizing-the-key-tips 001](images/ribbonbar-programming-radribbonbar-customizing-the-key-tips001.png)
+![WinForms RadRibbonBar Custom Key Tips](images/ribbonbar-programming-radribbonbar-customizing-the-key-tips001.png)
 
 >caption Figure 2: Default Key Tips
-![ribbonbar-programming-radribbonbar-customizing-the-key-tips 002](images/ribbonbar-programming-radribbonbar-customizing-the-key-tips002.png)
+![WinForms RadRibbonBar Default Key Tips](images/ribbonbar-programming-radribbonbar-customizing-the-key-tips002.png)
 
 ## KeyTipShowing Event
 

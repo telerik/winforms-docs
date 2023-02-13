@@ -48,7 +48,7 @@ Me.RadGridView1.MasterTemplate.AllowAddNewRow = False
 
 The result from the code above is on the screenshot below:
 
-![gridview-populating-with-data-unbound-mode 001](images/gridview-populating-with-data-unbound-mode001.png)
+![WinForms RadGridView Empty Grid](images/gridview-populating-with-data-unbound-mode001.png)
 
 ## Adding rows programmatically (through Cells collection)
 
@@ -87,7 +87,7 @@ End Sub
 
 The code above results in the following grid:
 
-![gridview-populating-with-data-unbound-mode 002](images/gridview-populating-with-data-unbound-mode002.png)
+![WinForms RadGridView Unbound Mode](images/gridview-populating-with-data-unbound-mode002.png)
 
 ## Adding rows programmatically (through Rows collection)
 

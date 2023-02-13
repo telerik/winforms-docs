@@ -88,7 +88,7 @@ If you need to show icons next to the popup items in **PropertyGridDropDownListE
 
 |Default PropertyGridDropDownListEditor|PropertyGridDropDownListEditor with Icons|
 |----|----|
-|![propertygrid-editors-handling-editors-events 001](images/propertygrid-editors-handling-editors-events001.png)|![propertygrid-editors-handling-editors-events 002](images/propertygrid-editors-handling-editors-events002.png)|
+|![WinForms RadPropertyGrid Default PropertyGridDropDownListEditor](images/propertygrid-editors-handling-editors-events001.png)|![WinForms RadPropertyGrid PropertyGridDropDownListEditor with Icons](images/propertygrid-editors-handling-editors-events002.png)|
 
 #### How to Handle Events
 

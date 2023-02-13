@@ -16,16 +16,17 @@ Accessing and customizing elements can be performed either at design time, or at
 
 You can access and modify the style for different elements in __RadBrowseEditor__ by using the Element hierarchy editor.
 
->caption Fig.1 Element Hierarchy Editor
+>caption Figure 1: Element Hierarchy Editor
 
-![browseeditor customizing appearance customizing appearance 001](images/browseeditor-customizing-appearance-customizing-appearance001.png)
+![WinForms RadBrowseEditor Element Hierarchy Editor](images/browseeditor-customizing-appearance-customizing-appearance001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
->caption Fig.2 Customize Elements
 
-![browseeditor customizing appearance customizing appearance 002](images/browseeditor-customizing-appearance-customizing-appearance002.png)
+>caption Figure 2: Customize Elements
+
+![WinForms RadBrowseEditor Customize Elements](images/browseeditor-customizing-appearance-customizing-appearance002.png)
 
 #### Customize elements 
 

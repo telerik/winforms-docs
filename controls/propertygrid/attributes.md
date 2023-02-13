@@ -44,7 +44,7 @@ Private m_FileLocation As String
 
 >caption Figure 1: EditorAttribute
 
-![propertygrid-attributes 001](images/propertygrid-attributes001.png)
+![WinForms RadPropertyGrid EditorAttribute](images/propertygrid-attributes001.png)
 
 ## RadRangeAttribute 
 
@@ -77,7 +77,7 @@ Private m_DoorsCount As Byte
 
 >caption Figure 2: RadRangeAttribute
 
-![propertygrid-attributes 001](images/propertygrid-attributes009.png)
+![WinForms RadPropertyGrid RadRangeAttribute](images/propertygrid-attributes009.png)
 
 ## BrowsableAttribute  
 
@@ -121,7 +121,7 @@ Private m_MyBrowsableProperty As Integer
 
 >caption Figure 3: BrowsableAttribute
 
-![propertygrid-attributes 002](images/propertygrid-attributes002.png)
+![WinForms RadPropertyGrid BrowsableAttribute](images/propertygrid-attributes002.png)
 
 ## ReadOnlyAttribute   
 
@@ -183,7 +183,7 @@ Private m_PropertyName As Double
 
 >caption Figure 4: DisplayNameAttribute
 
-![propertygrid-attributes 003](images/propertygrid-attributes003.png)
+![WinForms RadPropertyGrid DisplayNameAttribute](images/propertygrid-attributes003.png)
 
 ## DescriptionAttribute
 
@@ -216,7 +216,7 @@ Private m_Manufacturer As String
 
 >caption Figure 5: DisplayNameAttribute
 
-![propertygrid-attributes 004](images/propertygrid-attributes004.png)
+![WinForms RadPropertyGrid DisplayNameAttribute](images/propertygrid-attributes004.png)
 
 ## PasswordPropertyTextAttribute
 
@@ -259,7 +259,7 @@ Private m_Password As String
 
 >caption Figure 6: PasswordPropertyTextAttribute
 
-![propertygrid-attributes 005](images/propertygrid-attributes005.png)
+![WinForms RadPropertyGrid PasswordPropertyTextAttribute](images/propertygrid-attributes005.png)
 
 ## DefaultValueAttribute
 
@@ -291,7 +291,7 @@ Private m_Length As Decimal
 
 >caption Figure 7: DefaultValueAttribute
 
-![propertygrid-attributes 006](images/propertygrid-attributes006.png)
+![WinForms RadPropertyGrid DefaultValueAttribute](images/propertygrid-attributes006.png)
 
 ## CategoryAttribute
 
@@ -335,7 +335,7 @@ Private m_UncategorizedProperty As String
 
 >caption Figure 8: CategoryAttribute
 
-![propertygrid-attributes 007](images/propertygrid-attributes007.png)
+![WinForms RadPropertyGrid CategoryAttribute](images/propertygrid-attributes007.png)
 
 ## RadSortOrderAttribute
 
@@ -392,7 +392,7 @@ Private m_CProperty As String
 
 >caption Figure 9: RadSortOrderAttribute
 
-![propertygrid-attributes 008](images/propertygrid-attributes008.png)
+![WinForms RadPropertyGrid RadSortOrderAttribute](images/propertygrid-attributes008.png)
 
 ## RadCheckBoxThreeStateAttribute
 
@@ -436,7 +436,7 @@ Private m_BProperty As ToggleState
 
 >caption Figure 10: RadCheckBoxThreeStateAttribute
 
-![propertygrid-attributes 010](images/propertygrid-attributes010.gif)
+![WinForms RadPropertyGrid RadCheckBoxThreeStateAttribute](images/propertygrid-attributes010.gif)
 
 ## TypeConverterAttribute
 

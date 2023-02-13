@@ -18,7 +18,7 @@ previous_url: chart-building-radcharts-data-binding-radchart-to-a-database-objec
 To bind to a database, create a data source object, assign the data source to the __RadChart__ and call the RadChart __DataBind()__ method.
 >caption 
 
-![chart-building-radcharts-data-binding-radchart-to-a-database-object 001](images/chart-building-radcharts-data-binding-radchart-to-a-database-object001.png)
+![WinForms RadChart Binding to Database](images/chart-building-radcharts-data-binding-radchart-to-a-database-object001.png)
 
 The figure above shows a running example that starts with a default __RadChart__ with a single Series. The example code: 
 

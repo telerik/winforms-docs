@@ -32,27 +32,27 @@ Please note that this feature reorders not only the system buttons, but it also 
 
 >caption Figure 1: *RadPageView in StripView mode with RightToLeft = No*
 
-![pageview-localization-rtl 001](images/pageview-localization-rtl001.png)
+![WinForms RadPageView *RadPageView in StripView mode with RightToLeft = No*](images/pageview-localization-rtl001.png)
 
 >caption Figure 2: *RadPageView in StripView mode with RightToLeft = Yes*
 
-![pageview-localization-rtl 002](images/pageview-localization-rtl002.png)
+![WinForms RadPageView *RadPageView in StripView mode with RightToLeft = Yes*](images/pageview-localization-rtl002.png)
 
 >caption Figure 3: *RadPageView in OutlookView mode with RightToLeft = No*
 
-![pageview-localization-rtl 003](images/pageview-localization-rtl003.png)
+![WinForms RadPageView *RadPageView in OutlookView mode with RightToLeft = No*](images/pageview-localization-rtl003.png)
 
 >caption Figure 4: *RadPageView in OutlookView mode with RightToLeft = Yes*
 
-![pageview-localization-rtl 004](images/pageview-localization-rtl004.png)
+![WinForms RadPageView *RadPageView in OutlookView mode with RightToLeft = Yes*](images/pageview-localization-rtl004.png)
 
 >caption Figure 5: *RadPageView in StackView mode with RightToLeft = No*
 
-![pageview-localization-rtl 005](images/pageview-localization-rtl005.png)
+![WinForms RadPageView *RadPageView in StackView mode with RightToLeft = No*](images/pageview-localization-rtl005.png)
 
 >caption Figure 6: *RadPageView in StackView mode with RightToLeft = Yes*
 
-![pageview-localization-rtl 006](images/pageview-localization-rtl006.png)
+![WinForms RadPageView *RadPageView in StackView mode with RightToLeft = Yes*](images/pageview-localization-rtl006.png)
 
 # See Also
 

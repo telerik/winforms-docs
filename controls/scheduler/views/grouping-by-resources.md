@@ -243,7 +243,7 @@ CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).S
 
 >caption Figure 1: Resource Size
 
-![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource001.png)
+![WinForms RadScheduler Resource Size](images/scheduler-views-grouping-by-resource001.png)
 
 ## Accessing Child Elements
 
@@ -255,7 +255,7 @@ The example below demonstrates how each of the child view elements can be access
 
 >caption Figure 2: SchedulerViewElement Settings 
 
-![scheduler-views-grouping-by-resource 006](images/scheduler-views-grouping-by-resource006.gif)
+![WinForms RadScheduler SchedulerViewElement Settings](images/scheduler-views-grouping-by-resource006.gif)
 
 #### Customize Child Views
 
@@ -389,23 +389,23 @@ End Sub
 
 >caption Figure 3: Day View
 
-![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource002.png)
+![WinForms RadScheduler Day View](images/scheduler-views-grouping-by-resource002.png)
 
 >caption Figure 4: Week View
 
-![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource003.png)
+![WinForms RadScheduler Week View](images/scheduler-views-grouping-by-resource003.png)
 
 >caption Figure 5: Month View
 
-![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource004.png)
+![WinForms RadScheduler Month View](images/scheduler-views-grouping-by-resource004.png)
 
 >caption Figure 6: Timeline View
 
-![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource005.png)
+![WinForms RadScheduler Timeline View](images/scheduler-views-grouping-by-resource005.png)
 
 >caption Figure 7: Agenda View
 
-![scheduler-views-grouping-by-resource 001](images/scheduler-views-grouping-by-resource006.png)
+![WinForms RadScheduler Agenda View](images/scheduler-views-grouping-by-resource006.png)
 
 # See Also
 

@@ -12,7 +12,7 @@ position: 0
 
 After you populate **RadDataFilter** with descriptor items, you are ready to build a filter expression. For each filter condition, a filter node is added. Each filter node is composed of a field name, a filter operator and a value. As soon as you click one of the filter node's elements, the editor for this element is activated.
 
-![datafilter-default-editors 001](images/datafilter-default-editors001.png)
+![WinForms RadDataFilter Default Editors](images/datafilter-default-editors001.png)
 
 The default editor for the field name element and for the operator element is **TreeViewDropDownListEditor** offering you to select an option from a predefined list of available items. When you try to add a new filter node or modify an existing one, the appropriate editor is activated for the value element considering the DataFilterDescriptorItem.**DescriptorType**. You can find the default editor types listed below:
 

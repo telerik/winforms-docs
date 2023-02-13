@@ -25,23 +25,23 @@ You can bind **RadListView** at design time by specifying the **DataSource**, **
 
 >caption Figure 1: Data Binding at Design Time
 
-![listview-databinding 008](images/listview-databinding008.png)
+![WinForms RadListView Data Binding at Design Time](images/listview-databinding008.png)
 
 To set the __DataSource__:
 
 1\. Select the __DataSource__ property and click the drop-down arrow to display all existing data sources on the form.   
 
-![listview-databinding 009](images/listview-databinding009.png)
+![WinForms RadListView DataSource](images/listview-databinding009.png)
 
 2\. Click the __Add Project Data Source__ link and follow the instructions in the __Data Source Configuration Wizard__ to add a data source to your project. You can use databases, web services, or objects as data sources.
 
 3\. When you set the __DataSource__ property, you can choose a __DisplayMember__ and __ValueMember__. The __DisplayMember__ specifies the particular data to be displayed in **RadListView**’s items. The __ValueMember__ specifies the particular data to be returned by the **Value** property in **RadListView**’s items.
 
 >caption Figure 2: Setting DisplayMember and ValueMember properties
-![listview-databinding 002](images/listview-databinding002.png)
+![WinForms RadListView Setting DisplayMember and ValueMember properties](images/listview-databinding002.png)
 
 >caption Figure 3: Data-bound RadListView
-![listview-databinding 003](images/listview-databinding003.png)
+![WinForms RadListView Data-bound RadListView](images/listview-databinding003.png)
 
 ### Manipulating Columns
 
@@ -95,7 +95,7 @@ The following tutorial will demonstrate how to bind a **RadListView** to a list 
 
 1\. First let's create our business object. Note that it is important that our custom object implements the **INotifyPropertyChanged** interface, since this will allow notifications between the object and the control:
 
-#### Person class
+#### Person Class
 
 {{source=..\SamplesCS\ListView\ListViewDataBinding.cs region=person}} 
 {{source=..\SamplesVB\ListView\ListViewDataBinding.vb region=person}} 
@@ -333,7 +333,7 @@ Me.RadListView1.ValueMember = "ID"
 
 As a result you will get the **RadListView** populated with items that display the value __Name__ property of the business objects and have the __ID__ property of the business object returned as value. Opening an item for editing will display the id.
 
-![listview-databinding 005](images/listview-databinding005.png)
+![WinForms RadListView Images](images/listview-databinding005.png)
 
 4\. We can extend this example by handling the __ItemDataBound__ event, which is fired when the __ListViewDataItem__ is assigned an object from your data source. In the event handler we can access the data bound object properties and assign an image to the item:
 
@@ -364,11 +364,11 @@ End Sub
 {{endregion}} 
 
 >caption Figure 4: Displying images
-![listview-databinding 006](images/listview-databinding006.png)
+![WinForms RadListView Displying images](images/listview-databinding006.png)
 
 When **RadListView** is in __DetailView__ mode and is bound to this collection, as a result, you will get all the properties of the business object displayed in columns. In this case the **Picture** column is hidden:
 
-![listview-databinding 007](images/listview-databinding007.png)
+![WinForms RadListView DetailView Mode](images/listview-databinding007.png)
 
 # See Also
 

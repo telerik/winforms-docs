@@ -12,9 +12,9 @@ position: 3
 
 When there is no enough space and not all tabs are visible, two buttons will appear. They will allow you to navigate through the tabs and select the desired one. 
 
->caption Figure 1: Tabs Navigation.
+>caption Figure 1: Tabs Navigation
 
-![radtabbedform-navigation001](images/radtabbedform-navigation001.gif)
+![WinForms RadTabbedForm Tabs Navigation](images/radtabbedform-navigation001.gif)
 
 >tip The navigation appearance depends of the tabs count, their width and the available space.
 

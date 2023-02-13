@@ -15,7 +15,7 @@ The following example demonstrates how to change the image of a __RadButton__ us
 
 >caption Figure 1: Browsed Image
 
-![editors-browse-editor-getting-started 001](images/editors-browse-editor-getting-started001.png)
+![WinForms RadBrowseEditor Browsed Image](images/editors-browse-editor-getting-started001.png)
 
 1\. Drag a __RadBrowseEditor__ and a __RadButton__ on a form.
 

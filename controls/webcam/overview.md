@@ -17,7 +17,7 @@ CTAControlName: WebCam
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![webcam-overview 001](images/webcam-overview001.png)
+![WinForms RadWebcam Overview](images/webcam-overview001.png)
 
 ## Key Features
 

@@ -13,7 +13,7 @@ ElevationType.*SeaLevel* __ElevationRequest__  gets the offset of the geoid sea 
 
 >caption Figure 1: SeaLevel ElevationRequest 
 
-![map-providers-elevation-sealevel 001](images/map-providers-elevation-sealevel001.png)
+![WinForms RadMap SeaLevel ElevationRequest](images/map-providers-elevation-sealevel001.png)
 
 #### SeaLevel ElevationType request
 

@@ -15,7 +15,7 @@ As many other RadControls, __RadCheckedDropDownList__ can also be used as [edito
 
 >caption Figure 1: RadCheckedDropDownList as an editor in RadGridView 
 
-![dropdown-and-listcontrol-checkeddropdownlist-how-to-use-as-radgridview-editor 001](images/dropdown-and-listcontrol-checkeddropdownlist-how-to-use-as-radgridview-editor001.png)
+![WinForms RadCheckedDropDownList as an editor in RadGridView](images/dropdown-and-listcontrol-checkeddropdownlist-how-to-use-as-radgridview-editor001.png)
 
 1\. Add a __RadGridView__ to a Form and add a regular text box column which will use the new editor. You can bind the grid to a list of sample data and create the data source for __RadCheckedDropDownList__:
         

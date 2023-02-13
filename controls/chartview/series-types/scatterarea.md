@@ -58,7 +58,7 @@ Me.radChartView1.Series.Add(scatterSeries2)
 {{endregion}} 
 
 >caption Figure 1: Initial Setup
-![chartview-series-scatterarea 001](images/chartview-series-scatterarea001.png)
+![WinForms RadChartView ScatterArea Initial Setup](images/chartview-series-scatterarea001.png)
 
 ## Properties
 
@@ -91,7 +91,7 @@ scatterSeries2.StrokeMode = AreaSeriesStrokeMode.Points
 {{endregion}}
 
 >caption Figure 2: Stroke Mode
-![chartview-series-scatterarea 002](images/chartview-series-scatterarea002.png) 
+![WinForms RadChartView ScatterArea Stroke Mode](images/chartview-series-scatterarea002.png) 
 
 # See Also
 

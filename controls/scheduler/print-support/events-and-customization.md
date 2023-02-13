@@ -32,7 +32,7 @@ __PaintEvents__
 Here is an example. The comments are inline:
 
 >caption Figure 1: Customized Print Elements
-![scheduler-print-support-events](images/scheduler-print-support-events.png)
+![WinForms RadScheduler Customized Print Elements](images/scheduler-print-support-events.png)
 
 #### Handle Formatting and Paint Events
 

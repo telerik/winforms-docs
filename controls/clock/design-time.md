@@ -12,9 +12,9 @@ position: 2
 
 ## Smart Tag
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
-![clock-desing-time 001](images/clock-design-time001.png)
+![WinForms RadClock Smart Tag](images/clock-design-time001.png)
 
 * __Common Tasks__
 

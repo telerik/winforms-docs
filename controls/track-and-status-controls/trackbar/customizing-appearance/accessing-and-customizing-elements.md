@@ -19,7 +19,7 @@ You can access and modify the style for different elements in **RadTrackBar** by
 
 >caption Figure 1: Element hierarchy editor
 
-![trackbar-accessing-and-customizing-elements 001](images/trackbar-accessing-and-customizing-elements001.png)
+![WinForms RadTrackBar Element hierarchy editor](images/trackbar-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
@@ -27,7 +27,7 @@ You can customize the nested elements at run time as well:
 
 >caption Fig.2 Customize elements
 
-![trackbar-accessing-and-customizing-elements 002](images/trackbar-accessing-and-customizing-elements002.png)
+![WinForms RadTrackBar Customize elements](images/trackbar-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

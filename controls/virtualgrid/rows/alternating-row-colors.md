@@ -13,7 +13,7 @@ position: 2
 __RadVirtualGrid__ supports an alternating row color. It can be enabled by simply setting the __EnableAlternatingRowColor__ to *true*.
 
 >caption Fig.1 Alternating Row color
-![virtualgrid-rows-alternating-row-color001](images/virtualgrid-rows-alternating-row-color001.png)
+![WinForms RadVirtualGrid Alternating Row color](images/virtualgrid-rows-alternating-row-color001.png)
 
 {{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridRowsAlternatingRownColor.cs region=Settings}} 
 {{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridRowsAlternatingRownColor.vb region=Settings}} 

@@ -84,11 +84,11 @@ End Sub
 
 >caption Figure 1:  Unfiltered Directories
 
-![winforms/file-dialogs-eventss 001](images/file-dialogs-events001.png) 
+![WinForms RadFile-Dialogs Unfiltered Directories](images/file-dialogs-events001.png) 
 
 >caption Figure 2: Filtered Directories Based on Example 3  
 
-![winforms/file-dialogs-eventss 002](images/file-dialogs-events002.png) 
+![WinForms RadFile-Dialogs Filtered Directories Based on Example](images/file-dialogs-events002.png) 
 
 * **OpenFileDialogForm.DirectoryNavigating**: As of R1 2020 SP1, **RadFileDialogs** offer the **DirectoryNavigating** event. It occurs when the current folder is about to change. In the **DirectoryNavigatingEventArgs** you have access to the new directory path to be navigated via the **DirectoryPath** property. This event can be canceled. Hence, if the end-user doesn't have permissions for a specific folder, set the Cancel argument to *true*.
 

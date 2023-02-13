@@ -16,7 +16,7 @@ previous_url: scheduler-views-multiday-view
 __MultidayView__ shows multiple date-time intervals with appointments arranged one next to another. In the screenshot below we have __MultidayView__ with two intervals – the first one starts from November 07 with duration of two days and the second on starts from November 11 with duration of 3 days.
 
 >caption Figure 1: Multi Day View
-![scheduler-views-multiday-view 001](images/scheduler-views-multiday-view001.png)
+![WinForms RadScheduler Multi Day View](images/scheduler-views-multiday-view001.png)
 
 ## Using MultidayView
 

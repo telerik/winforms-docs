@@ -79,7 +79,7 @@ End Sub
 {{endregion}}
 
 >caption Figure 1: Formatting Appointments
-![scheduler-appearance-formatting-appointments 001](images/scheduler-appearance-formatting-appointments001.png)
+![WinForms RadScheduler Formatting Appointments](images/scheduler-appearance-formatting-appointments001.png)
 
 It is possible to change the appointments’ shape setting the SchedulerElement.__AppointmentShape__ property to the desired shape. Changing the __AppointmentShape__ will also change the shape of the shadow and the appointment type indicator (tentative/busy).#_[C#] _
 
@@ -99,7 +99,7 @@ Me.RadScheduler1.SchedulerElement.AppointmentShape = New HeartShape()
 {{endregion}} 
 
 >caption Figure 2: Custom Shapes
-![scheduler-appearance-formatting-appointments 002](images/scheduler-appearance-formatting-appointments002.png)
+![WinForms RadScheduler Custom Shapes](images/scheduler-appearance-formatting-appointments002.png)
 
 # See Also
 

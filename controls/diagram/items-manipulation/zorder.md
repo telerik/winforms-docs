@@ -86,7 +86,7 @@ radDiagram1.AddShape(shape3)
 
 We have reversed the natural ZOrder of the 3 Shapes. 
 
-![diagram-items-manipulation-zorder 001](images/diagram-items-manipulation-zorder001.png)
+![WinForms RadDiagram ZOrder](images/diagram-items-manipulation-zorder001.png)
 
 ## Using the RadDiagram Commands
 
@@ -201,11 +201,11 @@ radDiagram1.Items.Add(connection2)
 
 This way configured, the items in __RadDiagram__ are ordered as illustrated below: 
 
-![diagram-items-manipulation-zorder 002](images/diagram-items-manipulation-zorder002.png)
+![WinForms RadDiagram Shapes ](images/diagram-items-manipulation-zorder002.png)
 
 Here is the result of selecting the first shape and executing the DiagramCommands.__BringToFront__:
 
-![diagram-items-manipulation-zorder 003](images/diagram-items-manipulation-zorder003.png) 
+![WinForms RadDiagram diagram-items-manipulation-zorder 003](images/diagram-items-manipulation-zorder003.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=BringToFront}} 
@@ -228,7 +228,7 @@ Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.BringToFront, ""
 
 Here is the result of selecting the third shape and executing the DiagramCommands.__SendToBack__:
 
-![diagram-items-manipulation-zorder 004](images/diagram-items-manipulation-zorder004.png) 
+![WinForms RadDiagram DiagramCommands SendToBack](images/diagram-items-manipulation-zorder004.png) 
 
 
 {{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SendToBack}} 

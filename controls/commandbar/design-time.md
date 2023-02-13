@@ -17,9 +17,9 @@ To start using __RadCommandBar__ just drag it from the toolbox and drop it at th
 
 Select __RadCommandBar__ and click the small arrow on the top right position in order to open the Smart Tag.
 
->caption Fig.1 Smart Tag
+>caption Figure 1: Smart Tag
 
-![commandbar-design-time 009](images/commandbar-design-time009.png)
+![WinForms RadCommandBar Smart Tag](images/commandbar-design-time009.png)
 
 * __Common Tasks__
 
@@ -42,7 +42,7 @@ Select __RadCommandBar__ and click the small arrow on the top right position in 
 
 ## Adding a Telerik RadCommandBar to a Form
 
-To add a __RadCommandBar__ to a form, drag it from the toolbox and drop it on the form. By default, the control is oriented horizontally and docked to the top of the form. You can change the orientation, dock style and size from the property grid.![commandbar-design-time 001](images/commandbar-design-time001.png)
+To add a __RadCommandBar__ to a form, drag it from the toolbox and drop it on the form. By default, the control is oriented horizontally and docked to the top of the form. You can change the orientation, dock style and size from the property grid.![WinForms RadCommandBar Add to a Form](images/commandbar-design-time001.png)
 
 ## Adding a RadCommandBarRowElement to RadCommandBarElement
 
@@ -60,15 +60,15 @@ Alternatively, follow these steps to edit line elements:
 
 1. Click OK.
 
-![commandbar-design-time 002](images/commandbar-design-time002.png)
+![WinForms RadCommandBar Add Row](images/commandbar-design-time002.png)
 
-![commandbar-design-time 003](images/commandbar-design-time003.png)
+![WinForms RadCommandBar Modify Row](images/commandbar-design-time003.png)
 
 ## Adding a RadCommandBarStripElement to a RadCommandBarRowElement
 
 To add a strip element to a row element, click on the button marked with *+*.
 
-![commandbar-design-time 004](images/commandbar-design-time004.png)
+![WinForms RadCommandBar Add Strip Element](images/commandbar-design-time004.png)
 
 Alternatively, follow these steps to edit strip elements:
 
@@ -82,15 +82,15 @@ Alternatively, follow these steps to edit strip elements:
 
 * Click OK.
 
-![commandbar-design-time 005](images/commandbar-design-time005.png)
+![WinForms RadCommandBar Add New Strip Element](images/commandbar-design-time005.png)
 
-![commandbar-design-time 006](images/commandbar-design-time006.png)
+![WinForms RadCommandBar Modify Newly Added Strip Element](images/commandbar-design-time006.png)
 
 ## Adding an item to a RadCommandBarStripElement
 
 To add an item to a strip element, click on the down arrow button, placed in the strip and choose the item type to add.
 
-![commandbar-design-time 007](images/commandbar-design-time007.png)
+![WinForms RadCommandBar RadCommandBarStripElement](images/commandbar-design-time007.png)
 
 Alternatively, follow these steps to edit items:
 
@@ -100,13 +100,13 @@ Alternatively, follow these steps to edit items:
 
 1. Select *Edit Items* to open Collection Editor.
 
-	![commandbar-design-time 010](images/commandbar-design-time010.png)
+	![WinForms RadCommandBar CommandBarStripElement Edit Items](images/commandbar-design-time010.png)
 
 1. Click the *Add* button in the RadElement Collection Editor to add one of the possible items.
 
 1. Click OK.
 
-![commandbar-design-time 008](images/commandbar-design-time008.png)
+![WinForms RadCommandBar CommandBarStripElement Collection Editor](images/commandbar-design-time008.png)
 
 # See Also
 

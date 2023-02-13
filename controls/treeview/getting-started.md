@@ -29,7 +29,7 @@ The following tutorial will help you get started working with the __RadTreeView_
 
 1. In the `Properties` window  for the __RadBreadCrumb__ set the __DefaultTreeView__ property to point to the __RadTreeView__. The design should now look like this.
     
-    ![treeview-getting-started 001](images/treeview-getting-started001.png)
+    ![WinForms RadTreeView Properties](images/treeview-getting-started001.png)
 
 1. Drop the __TelerikMetro__ theme form the tool box and set all controls __ThemeName__ property to __TelerikMetro__.
 
@@ -52,7 +52,7 @@ The following tutorial will help you get started working with the __RadTreeView_
 
 1. Click OK to close the Property Builder.The design should now look like the screenshot below.
 
-    ![treeview-getting-started 002](images/treeview-getting-started002.png)
+    ![WinForms RadTreeView PropertyBuilder](images/treeview-getting-started002.png)
 
 1. In the form code add a "using" statement for Telerik.WinControls.UI
 
@@ -98,7 +98,7 @@ node = RadTreeView1.Nodes("Reports").Nodes.Add("Second Quarter Summary")
 
 14\. Run the application.
 
-![treeview-getting-started 003](images/treeview-getting-started003.png)
+![WinForms RadTreeView Getting Started Run](images/treeview-getting-started003.png)
 
 # See Also
 * [Breadcrumb]({%slug winforms/treeview/breadcrumb%})

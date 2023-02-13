@@ -15,7 +15,7 @@ CTAControlName: Callout
 
 * **CalloutType.Rectangle**:
 
-![callout-shapes 001](images/callout-shapes001.png)
+![WinForms RadCallout Rectangle](images/callout-shapes001.png)
 
 {{source=..\SamplesCS\Callout\CalloutSettings.cs region=Rectangle}} 
 {{source=..\SamplesVB\Callout\CalloutSettings.vb region=Rectangle}} 
@@ -34,7 +34,7 @@ CTAControlName: Callout
 
 * **CalloutType.RoundedRectangle**:
 
-![callout-shapes 002](images/callout-shapes002.png)
+![WinForms RadCallout RoundedRectangle](images/callout-shapes002.png)
 
 {{source=..\SamplesCS\Callout\CalloutSettings.cs region=RoundedRectangle}} 
 {{source=..\SamplesVB\Callout\CalloutSettings.vb region=RoundedRectangle}} 
@@ -177,7 +177,7 @@ End Class
 
 >caption Custom Cloud Shape
 
-![callout-shapes 003](images/callout-shapes003.png)
+![WinForms RadCallout Custom Cloud Shape](images/callout-shapes003.png)
 
 #### Kaboom Shape
 
@@ -243,7 +243,7 @@ End Class
 
 >caption Custom Kaboom Shape
 
-![callout-shapes 004](images/callout-shapes004.png)
+![WinForms RadCallout Custom Kaboom Shape](images/callout-shapes004.png)
 
 The last needed step is to apply the custom shape to the CalloutForm:
 

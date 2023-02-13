@@ -34,7 +34,7 @@ Me.RadTileElement1.Column = 0
 
 {{endregion}}
 
-![panorama-tiles 001](images/panorama-tiles001.png)
+![WinForms RadPanorama Row Column Property](images/panorama-tiles001.png)
 
 >caution **RadPanorama** uses dynamic number of columns, so you can set the __Column__ property of a tile with a value, greater than the __ColumnsCount__ value. However, setting the __Row__ property with a value, greater than the __RowsCount__ value, will result in an exception.
 >
@@ -72,7 +72,7 @@ Me.RadTileElement3.CellPadding = New Padding(5)
 
 {{endregion}}
 
-![panorama-tiles 002](images/panorama-tiles002.png)
+![WinForms RadPanorama CellPadding](images/panorama-tiles002.png)
 
 ## Live Tiles
 
@@ -125,7 +125,7 @@ RadLiveTileElement1.Items.Add(New LightVisualElement() With { _
 
 The following properties are responsible for controlling the behavior of the transition between content elements:
 
-#### Customize animation
+#### Customize Animation
 
 {{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=AnimationProperties}} 
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=AnimationProperties}} 
@@ -148,15 +148,15 @@ Me.RadLiveTileElement1.TransitionType = ContentTransitionType.SlideUp 'sets the 
 
 {{endregion}}
 
-![panorama-tiles 003](images/panorama-tiles003.gif)
+![WinForms RadPanorama Custom Animation](images/panorama-tiles003.gif)
 
-## Populating with Tiles/Groups programmatically
+## Populating with Tiles/Groups Programmatically
 
 You can find below a sample code snippet demonstrating how to add groups to **RadPanorama** and fill the groups with tiles.
 
-![panorama-tiles 004](images/panorama-tiles004.png)
+![WinForms RadPanorama Populating With Data Programmatically](images/panorama-tiles004.png)
 
-#### Populating with data programmatically
+#### Populating With Data Programmatically
 
 {{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=PopulateWithData}} 
 {{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=PopulateWithData}} 

@@ -20,7 +20,7 @@ The __CellFormatting__ event is used to add formatting to grid systems cells: he
 
 For example, the code sample below changes the __ForeColor__, __BackColor__ and __GradientStyle__  for the *ContactTitle* header cell, *CompanyName* new row cell and *City* filter cell:
 
-![virtualgrid-cells-formatting-system-cells001](images/virtualgrid-cells-formatting-system-cells001.png)
+![WinForms RadVirtualGrid Formatting System Cells](images/virtualgrid-cells-formatting-system-cells001.png)
 
 {{source=..\SamplesCS\VirtualGrid\Cells\VirtualGridFormattingCells.cs region=SystemCellsFormatting}} 
 {{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridFormattingCells.vb region=SystemCellsFormatting}} 

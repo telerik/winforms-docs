@@ -18,7 +18,7 @@ __RadTrackBar__, sometimes called a slider control, can be used for navigating 
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![track-and-status-controls-trackbar-overview 001](images/track-and-status-controls-trackbar-overview001.png)
+![WinForms RadTrackBar Overview](images/track-and-status-controls-trackbar-overview001.png)
 
 # Key features
 

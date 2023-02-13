@@ -12,7 +12,7 @@ position: 0
 
 The __CellFormatting__ event is used to add formatting to grid cells. For example, the code sample below changes the __ForeColor__, __BackColor__ and __GradientStyle__ in all data cells in the *ContactTitle* column if the cell value is *Owner*:
 
-![virtualgrid-cells-formatting-data-cells001](images/virtualgrid-cells-formatting-data-cells001.png)
+![WinForms RadVirtualGrid Formatting Data Cells](images/virtualgrid-cells-formatting-data-cells001.png)
 
 {{source=..\SamplesCS\VirtualGrid\Cells\VirtualGridFormattingCells.cs region=FormattingCells}} 
 {{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridFormattingCells.vb region=FormattingCells}} 

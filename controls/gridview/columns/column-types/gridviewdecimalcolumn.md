@@ -13,7 +13,7 @@ previous_url: gridview-columns-gridviewdecimalcolumn
 
 __GridViewDecimalColumn__ allows decimal data to be displayed and edited. __GridViewDecimalColumn__ can be bound to fields of any numeric type. 
 
-![gridview-columns-gridviewdecimalcolumn 001](images/gridview-columns-gridviewdecimalcolumn001.png)
+![WinForms RadGridView GridViewDecimalColumn](images/gridview-columns-gridviewdecimalcolumn001.png)
 
 #### Add GridViewDecimalColumn to the grid.
 

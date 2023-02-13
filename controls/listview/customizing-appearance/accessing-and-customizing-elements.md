@@ -15,20 +15,21 @@ Accessing and customizing elements can be performed either at design time, or at
 ## Design time
 
 You can access and modify the style for different elements in __RadListView__ by using the *Element hierarchy editor*, which can accessed by clicking Edit UI Elements link.
->caption Fig.1 Element hierarchy editor
+>caption Figure 1: Element Hierarchy Editor
 
-![listview-accessing-and-customizing-elements 001](images/listview-accessing-and-customizing-elements001.png)
+![WinForms RadListView Element Hierarchy Editor](images/listview-accessing-and-customizing-elements001.png)
 
-![listview-accessing-and-customizing-elements 003](images/listview-accessing-and-customizing-elements003.png)
+![WinForms RadListView Element Hierarchy Editor Window](images/listview-accessing-and-customizing-elements003.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
->caption Fig.2 Customize elements
 
-![listview-accessing-and-customizing-elements 002](images/listview-accessing-and-customizing-elements002.png)
+>caption Figure 2: Customize Elements
 
-#### Customize elements 
+![WinForms RadListView Customize Elements](images/listview-accessing-and-customizing-elements002.png)
+
+#### Customize Elements 
 
 {{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=CustomizeElements}} 
 {{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=CustomizeElements}} 

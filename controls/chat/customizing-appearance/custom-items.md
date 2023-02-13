@@ -24,7 +24,7 @@ The following example demonstrates a sample code snippet how to add a button ele
 
 >caption Figure 1. Custom message
 
-![winforms/chat-custom-items 001](images/chat-custom-items001.gif) 
+![WinForms RadChat Custom Message](images/chat-custom-items001.gif) 
 
 #### Creating a custom message
 

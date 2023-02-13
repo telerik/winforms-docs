@@ -19,7 +19,7 @@ This feature ensures that the control is ready for modern touch-screen applicati
         
 >caption Figure 1: Enable Kinetic Scrolling
 
-![dropdown-and-listcontrol-dropdownlist-scrolling 001](images/dropdown-and-listcontrol-dropdownlist-scrolling001.gif)
+![WinForms RadDropDownList Enable Kinetic Scrolling](images/dropdown-and-listcontrol-dropdownlist-scrolling001.gif)
 
 #### Enabling Kinetic Scrolling 
 
@@ -49,7 +49,7 @@ __RadDropDownList__ provides out of the box functionality for programmatically s
             
 >caption Figure 2: Scroll to Item
 
-![dropdown-and-listcontrol-dropdownlist-scrolling 002](images/dropdown-and-listcontrol-dropdownlist-scrolling002.gif)
+![WinForms RadDropDownList Scroll to Item](images/dropdown-and-listcontrol-dropdownlist-scrolling002.gif)
 
 #### Scroll to Item 
 
@@ -70,7 +70,7 @@ Me.RadDropDownList1.DropDownListElement.ListElement.ScrollToItem(Me.RadDropDownL
 
 >caption Figure 3: Scroll to Active Item
 
-![dropdown-and-listcontrol-dropdownlist-scrolling 003](images/dropdown-and-listcontrol-dropdownlist-scrolling003.gif)
+![WinForms RadDropDownList Scroll to Active Item](images/dropdown-and-listcontrol-dropdownlist-scrolling003.gif)
 
 #### Scroll to Active Item 
 
@@ -104,7 +104,7 @@ The __ListElement__ contained in the popup of __RadDropDownList__ supports three
             
 >caption Figure 4: Discrete Scrolling
 
-![dropdown-and-listcontrol-dropdownlist-scrolling 004](images/dropdown-and-listcontrol-dropdownlist-scrolling004.gif)
+![WinForms RadDropDownList Discrete Scrolling](images/dropdown-and-listcontrol-dropdownlist-scrolling004.gif)
 
 #### Discrete Scrolling 
 
@@ -124,7 +124,7 @@ Me.RadDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScr
 
 >caption Figure 5: Smooth Scrolling
 
-![dropdown-and-listcontrol-dropdownlist-scrolling 005](images/dropdown-and-listcontrol-dropdownlist-scrolling005.gif)
+![WinForms RadDropDownList Smooth Scrolling](images/dropdown-and-listcontrol-dropdownlist-scrolling005.gif)
 
 #### Smooth Scrolling 
 
@@ -144,7 +144,7 @@ Me.RadDropDownList1.DropDownListElement.ListElement.ScrollMode = ItemScrollerScr
  
 >caption Figure 6: Deferred Scrolling
 
-![dropdown-and-listcontrol-dropdownlist-scrolling 006](images/dropdown-and-listcontrol-dropdownlist-scrolling006.gif)
+![WinForms RadDropDownList Deferred Scrolling](images/dropdown-and-listcontrol-dropdownlist-scrolling006.gif)
 
 #### Deferred Scrolling 
 

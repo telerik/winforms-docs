@@ -14,7 +14,7 @@ RadTreeMap has built-in support for a legend – descriptions about the treemap 
 
 >caption RadTreeMap's legend
 
-![winforms-treemap-legend 001](images/winforms-treemap-legend001.png)
+![WinForms RadTreeMap's legend](images/winforms-treemap-legend001.png)
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Legend}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Legend}} 
@@ -86,7 +86,7 @@ End Sub
 {{endregion}} 
 
 
-![winforms-treemap-legend 002](images/winforms-treemap-legend002.png)
+![WinForms RadTreeMap Customize the default LegendItemElement](images/winforms-treemap-legend002.png)
  
 # See Also
 

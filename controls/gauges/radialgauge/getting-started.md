@@ -18,7 +18,7 @@ This article shows how you can add the control at design time or with code
 When you drag a __RadRadialGauge__ from the Toolbox and drop it onto the form, the gauge gallery will offer you to pick up the desired type:
 
 >caption Figure 1: Gallery Types
-![radialgauge-getting-started 001](images/radialgauge-getting-started001.png)
+![WinForms RadRadialGauge Gallery Types](images/radialgauge-getting-started001.png)
 
 >note If you do not choose a gauge's style and just close the gallery, an empty __RadRadialGauge__ will be created.
 >
@@ -26,14 +26,14 @@ When you drag a __RadRadialGauge__ from the Toolbox and drop it onto the form, t
 You can change the gauge's style via the Smart tag's option *Open Gallery* as well.
 
 >caption Figure 2: Change Style
-![radialgauge-getting-started 002](images/radialgauge-getting-started002.png)
+![WinForms RadRadialGauge Change Style](images/radialgauge-getting-started002.png)
 
 ## Adding Items Programmatically
 
 You can create your own gauge's style programmatically from the scratch by adding the desired labels, ticks, needles, arcs to the RadRadialGauge.__Items__ collection. Here is a sample code snippet:
 
 >caption Figure 3: Programmatically Added Items
-![radialgauge-getting-started 003](images/radialgauge-getting-started003.png)
+![WinForms RadRadialGauge Programmatically Added Items](images/radialgauge-getting-started003.png)
 
 #### Add Items
 
@@ -102,7 +102,7 @@ radRadialGauge1.Items.Add(arc)
 Drag a __RadRadialGauge__ from the Toolbox and drop it onto the form. The gauge gallery will offer you to pick up the desired type. Select the first gauge type. Now, we will customize the gauge in order to obtain the result illustrated on the screen-shot below:
 
 >caption Figure 4: Additional Element
-![radialgauge-getting-started 004](images/radialgauge-getting-started004.gif) 
+![WinForms RadRadialGauge Additional Element](images/radialgauge-getting-started004.gif) 
 
 #### Additional Element
 
@@ -303,7 +303,7 @@ End Sub
 The following code snippet is purposed to demonstrate how to create a simple clock. For this purpose we will add the necessary clock's elements to the RadRadialGauge.__Items__ collection. Afterwards, we need to drag a timer from the Toolbox and drop it onto the form. Set the timer's __Interval__ property to *1000*. Subscribe to its __Tick__ event where we should  update the time.
 
 >caption Figure 5: Clock
-![radialgauge-getting-started 005](images/radialgauge-getting-started005.gif) 
+![WinForms RadRadialGauge Clock](images/radialgauge-getting-started005.gif) 
 
 #### Clock
 

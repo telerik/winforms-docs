@@ -40,7 +40,7 @@ Next
 
 >caption Figure 1: Unbound mode
 
-![multicolumncombobox-unbound-mode 001](images/multicolumncombobox-unbound-mode001.png)
+![WinForms RadMultiColumnComboBox Unbound mode](images/multicolumncombobox-unbound-mode001.png)
 
 
 # See Also

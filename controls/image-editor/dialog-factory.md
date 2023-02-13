@@ -8,7 +8,7 @@ published: True
 position: 10
 ---
 
-# Dialog factory
+# Dialog Factory
 
 **RadImageEditor** uses **ImageEditorDialogFactory** to create objects that represent the dialogs. It requires only the **CreateDialog** method's implementation.
 
@@ -59,4 +59,4 @@ this.radImageEditor1.ImageEditorElement.DialogFactory = new CustomImageEditorDia
 Me.RadImageEditor1.ImageEditorElement.DialogFactory = New CustomImageEditorDialogFactory()
 
 ```` 
-![](images/dialog-factory001.png)
+![WinForms RadImageEditor Custom Dialog](images/dialog-factory001.png)

@@ -19,7 +19,7 @@ previous_url: panels-and-labels-collapsible-panel-overview
 {% endif %}
 
 >caption Figure 1: RadCollapsiblePanel
-![panels-and-labels-collapsible-panel 001](images/panels-and-labels-collapsible-panel001.gif)
+![WinForms RadCollapsiblePanel Overview](images/panels-and-labels-collapsible-panel001.gif)
 
 # See Also
 

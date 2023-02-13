@@ -102,7 +102,7 @@ End Sub
 In order to use this feature, we will need to find the scheduler cell when the item is dropped onto the scheduler surface. Once you have the scheduler cell you can get the date and create an appointment for it.
 
 >caption Figure 1: Dragging from a ListBox
-![scheduler-drag-and-drop-drag-and-drop-from-another-control 001](images/scheduler-drag-and-drop-drag-and-drop-from-another-control001.gif)
+![WinForms RadScheduler Dragging from a ListBox](images/scheduler-drag-and-drop-drag-and-drop-from-another-control001.gif)
 
 In the RadScheduler __DragDrop__ event handler you need to get the location of the mouse and convert it to a point that the scheduler can use to get the cell element underneath the mouse. This __MonthCellElement__ is passed to a private method __GetCellAppointment()__ that we will write next.
 
@@ -359,7 +359,7 @@ End Sub
 {{endregion}} 
 
 >caption Figure 2: Dragging from a RadScheduler
-![scheduler-drag-and-drop-drag-and-drop-from-another-control 002](images/scheduler-drag-and-drop-drag-and-drop-from-another-control002.gif)
+![WinForms RadScheduler Dragging from a RadScheduler](images/scheduler-drag-and-drop-drag-and-drop-from-another-control002.gif)
 
 # See Also
 

@@ -19,17 +19,17 @@ You can access and modify the style for different elements in __RadCheckedDropDo
 
 >note In order to access the *Element hierarchy editor* select RadCheckedDropDownList and click the small arrow on the top right position in order to open the Smart Tag. Then, click the *Edit UI Elements*.
 
->caption Figure 1: Element hierarchy editor
+>caption Figure 1: Element Hierarchy Editor
 
-![dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements 001](images/dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements001.png)
+![WinForms RadCheckedDropDownList Element Hierarchy Editor](images/dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 
->caption Figure 2: Customize elements
+>caption Figure 2: Customize Elements
 
-![dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements 002](images/dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements002.png)
+![WinForms RadCheckedDropDownList Customize Elements](images/dropdown-and-listcontrol-checkeddropdownlist-accessing-and-customizing-elements002.png)
 
 #### Customize elements 
 

@@ -28,4 +28,4 @@ The title for the chart as a whole is controlled by the RadChart.ChartTitle obje
 
 * The __TextBlock__ properties provides fine tune control over the text and text background.
 
-In the example below the title is customized so that the position is aligned to the top left, corners are rounded, the fill is a gradient fill radiating from the center and a shadow makes it stand out from the background.![chart-undestanding-radchart-elements-titles 001](images/chart-undestanding-radchart-elements-titles001.png)
+In the example below the title is customized so that the position is aligned to the top left, corners are rounded, the fill is a gradient fill radiating from the center and a shadow makes it stand out from the background.![WinForms RadChart Titles TextBlock](images/chart-undestanding-radchart-elements-titles001.png)

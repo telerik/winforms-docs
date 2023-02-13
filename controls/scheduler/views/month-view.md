@@ -21,7 +21,7 @@ The [Month View]({%slug winforms/scheduler/views/month-view%}) of the scheduler 
 
 >caption Figure 1: Month View
 
-![scheduler-views-month-view 008](images/scheduler-views-month-view008.png)
+![WinForms RadScheduler Month View](images/scheduler-views-month-view008.png)
 
 ## Set the Month View
 
@@ -130,8 +130,8 @@ monthView.WorkWeekEnd = DayOfWeek.Saturday
 
 >caption Figure 2: Shown Weekends
 
-![scheduler-views-month-view 001](images/scheduler-views-month-view001.png)
-![scheduler-views-month-view 002](images/scheduler-views-month-view002.png)
+![WinForms RadScheduler Shown Weekends False](images/scheduler-views-month-view001.png)
+![WinForms RadScheduler Shown Weekends True](images/scheduler-views-month-view002.png)
 
 ## Setting The Number Of Weeks
 
@@ -193,7 +193,7 @@ monthView.ShowFullMonth = True
 {{endregion}} 
 
 >caption Figure 3: Show Full Month
-![scheduler-views-month-view 003](images/scheduler-views-month-view003.png)
+![WinForms RadScheduler Show Full Month](images/scheduler-views-month-view003.png)
 
 ## Showing/Hiding The Vertical Navigator
 
@@ -234,7 +234,7 @@ monthView.RangeEndDate = New DateTime(2016, 7, 20)
 {{endregion}} 
 
 >caption Figure 4: Navigator Range
-![scheduler-views-month-view 004](images/scheduler-views-month-view004.gif)
+![WinForms RadScheduler Navigator Range](images/scheduler-views-month-view004.gif)
 
 ## Showing And Hiding The Week (Row) Headers
 
@@ -345,7 +345,7 @@ monthView.EnableAppointmentsScrolling = True
 {{endregion}} 
 
 >caption Figure 5: Appointments Scrolling
-![scheduler-views-month-view 005](images/scheduler-views-month-view005.png)
+![WinForms RadScheduler Appointments Scrolling](images/scheduler-views-month-view005.png)
 
 ## Modifying The Size Of Rows And Columns In MonthView
 
@@ -372,7 +372,7 @@ monthViewElement.SetColumnWidth(1, 2)
 {{endregion}} 
 
 >caption Figure 6: Row Height
-![scheduler-views-month-view 006](images/scheduler-views-month-view006.png)
+![WinForms RadScheduler Row Height](images/scheduler-views-month-view006.png)
 
 ## Modifying The Size Of The Headers In MonthView
 
@@ -397,7 +397,7 @@ monthViewElement.Header.HeaderHeight = 50
 {{endregion}} 
 
 >caption Figure 7: Headers Size
-![scheduler-views-month-view 007](images/scheduler-views-month-view007.png)
+![WinForms RadScheduler Headers Size](images/scheduler-views-month-view007.png)
 
 # See Also
 

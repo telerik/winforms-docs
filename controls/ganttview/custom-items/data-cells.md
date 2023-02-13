@@ -14,7 +14,7 @@ position: 1
 
 >caption Figure 1: Checkbox Cell 
 
-![ganttview-formatting-creating-custom-cells 001](images/ganttview-custom-items-data-cells001.png)
+![WinForms RadGanttView Checkbox Cell](images/ganttview-custom-items-data-cells001.png)
 
 #### Custom Cell Implementation
 

@@ -18,7 +18,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 
 ## Spreadsheet UI Visual Structure
 
-![Rad Spreadsheet Visual Structure 01](images/radspreadsheet-structure001.png)
+![WinForms RadSpreadsheet Visual Structure](images/radspreadsheet-structure001.png)
 
 * __Ribbon View:__ An instance of RadRibbonView filled with controls which allow you to perform different actions on RadSpreadsheet. Some of the commands include open/save different types of files, undo/redo, copy/paste, apply different types of format or styles, even insert complex formulas.
             
@@ -32,7 +32,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 
 ## RadSpradsheet's Ribbon View Visual Structure
 
-![Rad Spreadsheet Visual Structure 02](images/radspreadsheet-structure002.png)
+![WinForms RadSpreadsheet Ribbon UI Visual Structure](images/radspreadsheet-structure002.png)
 
 * __Title__: The title allows you to specify the name of the application or the current document. In this case we have chosen the name "Spreadsheet".
             
@@ -51,7 +51,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 
 ## RadSpreadsheet's Formula Bar Visual Structure
 
-![Rad Spreadsheet Visual Structure 03](images/radspreadsheet-structure003.png)
+![WinForms RadSpreadsheet Formula Bar Visual Structure](images/radspreadsheet-structure003.png)
 
 * __Name Box__: It displays the cell reference of the active cell or the active cell range.
             
@@ -63,7 +63,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 
 ## RadSpreadsheet's Status Bar Visual Structure
 
-![Rad Spreadsheet Visual Structure 05](images/radspreadsheet-structure004.png)
+![WinForms RadSpreadsheet Status Bar Visual Structure](images/radspreadsheet-structure004.png)
 
 * __Label__: Indicates the current status of the loaded document.
             
@@ -71,7 +71,7 @@ __RadSpreadsheet__ is a control that allows editing tabular data utilizing a var
 
 ## RadSpreadsheet Visual Structure
 
-![Rad Spreadsheet Visual Structure 04](images/radspreadsheet-structure005.png)
+![WinForms RadSpreadsheet Structure](images/radspreadsheet-structure005.png)
 
 1. __Select All Control__: Allows you to quickly select all cells in a worksheet. It is located in the top left corner of the worksheet where the row header and column header meet.
 

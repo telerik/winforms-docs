@@ -172,7 +172,7 @@ You will notice that the __BodyTemperature__ property displays the property type
 
 >caption Figure 1: BodyTemperature Property
 
-![propertygrid-type-converters 001](images/propertygrid-type-converters001.png)
+![WinForms RadPropertyGrid BodyTemperature Property](images/propertygrid-type-converters001.png)
 
 In order to visualize the __BodyTemperature__ value with a custom formatted string you need to implement a __TypeConverter__ which should convert the *Temperature* value to the desired string.
 
@@ -390,7 +390,7 @@ Private m_BodyTemperature As Temperature
 
 >caption Figure 2: RadPropertyGrid TypeConverterAttribute
 
-![propertygrid-type-converters 002](images/propertygrid-type-converters002.png)
+![WinForms RadPropertyGrid TypeConverterAttribute](images/propertygrid-type-converters002.png)
 
 ## Display a predefined list of values for a property with TypeConverter 
 
@@ -474,7 +474,7 @@ Private m_BloodType As String
 
 >caption Figure 3: BloodTypeConverter
 
-![propertygrid-type-converters 003](images/propertygrid-type-converters003.png)
+![WinForms RadPropertyGrid BloodTypeConverter](images/propertygrid-type-converters003.png)
 
 ## Culture Aware TypeConverter
 
@@ -644,7 +644,7 @@ Private m_TotalLungCapacity As Double
 
 >caption Figure 4: TotalLungCapacity Property
 
-![propertygrid-type-converters 004](images/propertygrid-type-converters004.gif)
+![WinForms RadPropertyGrid TotalLungCapacity Property](images/propertygrid-type-converters004.gif)
 
 # See Also
 

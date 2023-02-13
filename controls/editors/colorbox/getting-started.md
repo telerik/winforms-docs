@@ -15,7 +15,7 @@ The following example demonstrates how to change the __ForeColor__  of __RadLabe
 		
 >caption Figure 1: Synchronize Color.
 
-![editors-color-box-getting-started 001](images/editors-color-box-getting-started001.png)
+![WinForms RadColorBox Synchronize Color](images/editors-color-box-getting-started001.png)
  
 1\. Drag __RadLabel__ and __RadColorBox__ to a form.
 

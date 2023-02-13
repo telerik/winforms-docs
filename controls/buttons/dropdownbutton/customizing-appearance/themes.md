@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __DropDownButton__ in *Controls Structure* on the left side. Then, select __DropDownButtonActionPartFill__ in the *Elements* section.
 
-	![dropdownbutton-customizing-appearance-themes 001](images/dropdownbutton-customizing-appearance-themes001.png)
+	![WinForms RadButtons dropdownbutton-customizing-appearance-themes 001](images/dropdownbutton-customizing-appearance-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![dropdownbutton-customizing-appearance-themes 002](images/dropdownbutton-customizing-appearance-themes002.png)
+	![WinForms RadButtons dropdownbutton-customizing-appearance-themes 002](images/dropdownbutton-customizing-appearance-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

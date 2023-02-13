@@ -22,7 +22,7 @@ The **RadSplashScreenManager** is responsible for showing/closing a splash scree
 
 By default, the RadSplashScreenManager shows the default RadSplashScreenControl:
 
-![splashscreen-getting-started 001](images/splashscreen-getting-started001.gif) 
+![WinForms RadSplashScreen Getting Started](images/splashscreen-getting-started001.gif) 
 
 {{source=..\SamplesCS\SplashScreens\SplashScreen\SplashScreenSettings.cs region=ShowDefaultSplash}}
 {{source=..\SamplesVB\SplashScreens\SplashScreen\SplashScreenSettings.vb region=ShowDefaultSplash}}

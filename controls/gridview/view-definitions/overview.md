@@ -39,11 +39,11 @@ All view definitions implement the __IViewDefinition__ interface and you could c
 
 >caption Figure 1: ColumnGroupsViewDefinition
 
-![gridview-viewdefinitions-overview 001](images/gridview-viewdefinitions-overview001.png)
+![WinForms RadGridView ColumnGroupsViewDefinition](images/gridview-viewdefinitions-overview001.png)
 
 >caption Figure 2: HtmlViewDefinition
 
-![gridview-viewdefinitions-overview 002](images/gridview-viewdefinitions-overview002.png)
+![WinForms RadGridView HtmlViewDefinition](images/gridview-viewdefinitions-overview002.png)
 
 # See Also
 * [Column Groups View]({%slug winforms/gridview/view-definitions/column-groups-view%})

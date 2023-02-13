@@ -27,6 +27,7 @@
 /_plugins/
 /_templates/
 /_templates/
+/_tools/RemoveHtmlExtensionFromApiRefSitemap/
 /docs-watcher/
 /docs-watcher/
 /favicon.ico
@@ -37,16 +38,19 @@
 /styles/
 _site
 _site.zip
+_tempconfig.yml
 bs-config.js
 bs-config.js
 build-docs.sh
 build-docs.sh
+CODEOWNERS
 copy_content.sh
 copy_content.sh
 copy_local.sh
 copy_local.sh
 Dockerfile
 Dockerfile
+exclude.txt
 Gemfile
 Gemfile
 Gemfile.lock

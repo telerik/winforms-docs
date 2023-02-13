@@ -25,7 +25,7 @@ position: 4
 
 For the boolean fields in the applied DataSource, **RadFilterView** generates a **FilterViewBooleanCategoryElement**. It contains a group of two check boxes, true/false:
 
-![filter-view-changing-default-editors 001](images/filter-view-changing-default-editors001.png)
+![WinForms RadFilterView FilterViewBooleanCategoryElement](images/filter-view-changing-default-editors001.png)
 
 The **CategoryCreating** event gives you the possibility to replace the default **FilterViewBooleanCategoryElement** with another one, e.g. **FilterViewTextCategoryElement** with radio buttons:
 
@@ -61,7 +61,7 @@ End Sub
 
 {{endregion}}   
 
-![filter-view-changing-default-editors 003](images/filter-view-changing-default-editors003.png)
+![WinForms RadFilterView FilterViewTextCategoryElement](images/filter-view-changing-default-editors003.png)
 
 ### Change the default ItemType for FilterViewTextCategoryElement
 
@@ -95,17 +95,17 @@ End Sub
 
 {{endregion}}   
 
-![filter-view-changing-default-editors 002](images/filter-view-changing-default-editors002.png)
+![WinForms RadFilterView Default ItemType](images/filter-view-changing-default-editors002.png)
 
 ### Customize FilterViewDateTimeCategoryElement
 
 Another case is to replace the default editor controls with more appropriate ones. For example, the **FilterViewDateTimeCategoryElement** generates two **RadDateTimePicker** controls:
 
-![filter-view-changing-default-editors 004](images/filter-view-changing-default-editors004.png)
+![WinForms RadFilterView Customize FilterViewDateTimeCategoryElement](images/filter-view-changing-default-editors004.png)
 
 You may want to replace them with two **RadCalendar** controls. The following example demonstrates how to do it:
 
-![filter-view-changing-default-editors 005](images/filter-view-changing-default-editors005.png)
+![WinForms RadFilterView Replace RadCalendar](images/filter-view-changing-default-editors005.png)
 
 {{source=..\SamplesCS\FilterView\FilterViewGettingStarted.cs region=CalendarCategory}} 
 {{source=..\SamplesVB\FilterView\FilterViewGettingStarted.vb region=CalendarCategory}} 

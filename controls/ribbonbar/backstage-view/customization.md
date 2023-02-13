@@ -16,7 +16,7 @@ The appearance of the Backstage View can be customized by using one of the prede
 The following image demonstrates the Backstage view Element tree, which can help you to access the desired elements.
 
 >caption Figure 1: BackstageViewElement
-![ribbonbar-backstage-view-customization 001](images/ribbonbar-backstage-view-customization001.png)
+![WinForms RadRibbonBar BackstageViewElement](images/ribbonbar-backstage-view-customization001.png)
 
 * __BackstageViewElement__ - main control element, which contains the UI and the logic of the control
 

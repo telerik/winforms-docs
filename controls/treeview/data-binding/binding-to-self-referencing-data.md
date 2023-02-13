@@ -167,7 +167,7 @@ End Function
 
 As a result we get the hierarchy of nodes shown below:
 
-![treeview-data-binding-binding-to-self-referencing-data 001](images/treeview-data-binding-binding-to-self-referencing-data001.png)
+![WinForms RadTreeView Self Reference Hierarchy](images/treeview-data-binding-binding-to-self-referencing-data001.png)
 
 # See Also
 * [Binding to Database Data]({%slug winforms/treeview/data-binding/binding-to-database-data%})

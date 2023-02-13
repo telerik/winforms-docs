@@ -18,13 +18,13 @@ You can add items at design time by using the *RadItem Collection Editor*.
 
 >caption Figure 1: RadApplicationMenu's  RadItem Collection Editor
 
-![menus-application-menu-populating-with-data-design-time 001](images/menus-application-menu-populating-with-data-design-time001.png)
+![WinForms RadApplicationMenu RadItem Collection Editor](images/menus-application-menu-populating-with-data-design-time001.png)
 
 You can access it through the *Smart tag >> Edit Items* option:
 
 >caption Figure 2: Smart tag options
 
-![menus-application-menu-populating-with-data-design-time 002](images/menus-application-menu-populating-with-data-design-time002.png)
+![WinForms RadApplicationMenu Smart Tag Options](images/menus-application-menu-populating-with-data-design-time002.png)
 
 By using the *Edit RightColumnItems* and *Edit ButtonItems* options you can add items to the menu's right column and bottom buttons container respectively.
 
@@ -32,7 +32,7 @@ Another possibility to open the editor is via the __Items__ collection in the *P
 
 >caption Figure 3:  Visual Studio Properties window
 
-![menus-application-menu-populating-with-data-design-time 003](images/menus-application-menu-populating-with-data-design-time003.png)print
+![WinForms RadApplicationMenu Visual Studio Properties window](images/menus-application-menu-populating-with-data-design-time003.png)print
 
 
 ## Adding Items Programmatically
@@ -127,6 +127,6 @@ End Sub
 
 ````
 
->caption Figure 4:  Add items programmatically 
+>caption Figure 4:  Add Items Programmatically 
 
-![menus-application-menu-populating-with-data-design-time 004](images/menus-application-menu-populating-with-data-design-time004.png)
+![WinForms RadApplicationMenu Add Items Programmatically](images/menus-application-menu-populating-with-data-design-time004.png)

@@ -13,7 +13,7 @@ position: 4
 __RadVirtualGrid__ has three system rows.
 
 
-![virtualgrid-rows-formatting-system-rows001](images/virtualgrid-rows-system-rows001.png)
+![WinForms RadVirtualGrid System Rows](images/virtualgrid-rows-system-rows001.png)
 
 1. 	__VirtualGridHeaderRowElement__: Displays the columns header text.
 2. 	__VirtualGridNewRowElement__: Allows the end user to add a row.

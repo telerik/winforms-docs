@@ -14,7 +14,7 @@ previous_url: editors-popupeditor-structure
 This article shows the control element structure.
 >caption Figure 1: The RadPopupEditor structure.
 
-![editors-popupeditor-structure 001](images/editors-popupeditor-structure001.png)
+![WinForms RadPopupEditor Structure](images/editors-popupeditor-structure001.png)
 
 1. __Text Box__ - displays a text value.
 

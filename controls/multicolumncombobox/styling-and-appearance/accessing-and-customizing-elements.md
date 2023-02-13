@@ -16,19 +16,19 @@ Accessing and customizing elements can be performed either at design time, or at
 
 You can access and modify the style for different elements in **RadMultiColumnComboBox** by using the Element hierarchy editor.
 
->caption Figure 1: Element hierarchy editor
+>caption Figure 1: Element Hierarchy Editor
 
-![multicolumncombobox-accessing-and-customizing-elements 001](images/multicolumncombobox-accessing-and-customizing-elements001.png)
+![WinForms RadMultiColumnComboBox Smart Tag](images/multicolumncombobox-accessing-and-customizing-elements001.png)
 
-![multicolumncombobox-accessing-and-customizing-elements 002](images/multicolumncombobox-accessing-and-customizing-elements002.png)
+![WinForms RadMultiColumnComboBox Element Hierarchy Editor](images/multicolumncombobox-accessing-and-customizing-elements002.png)
 
 ## Programmatically
 
 You can customize the nested elements at run time as well:
 
->caption Figure 2: Customize elements
+>caption Figure 2: Customize Elements
 
-![multicolumncombobox-accessing-and-customizing-elements 003](images/multicolumncombobox-accessing-and-customizing-elements003.png)
+![WinForms RadMultiColumnComboBox Customize Elements](images/multicolumncombobox-accessing-and-customizing-elements003.png)
 
 #### Customize elements 
 

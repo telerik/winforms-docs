@@ -18,7 +18,7 @@ Select __RadCheckedDropDownList__ and click the small arrow on the top right pos
 
 >caption Figure 1: Smart Tag
 
-![dropdown-and-listcontrol-checkedropdownlist-design-time 001](images/dropdown-and-listcontrol-checkedropdownlist-design-time001.png)
+![WinForms RadCheckedDropDownList Smart Tag](images/dropdown-and-listcontrol-checkedropdownlist-design-time001.png)
 
 * __New Theme Manager__: Adds a new __RadThemeManager__ component to the form.
             
@@ -27,7 +27,7 @@ Select __RadCheckedDropDownList__ and click the small arrow on the top right pos
             
 >caption Figure 2: Element hierarchy editor
 
-![dropdown-and-listcontrol-checkedropdownlist-design-time 002](images/dropdown-and-listcontrol-checkedropdownlist-design-time002.png)
+![WinForms RadCheckedDropDownList Element Hierarchy Editor](images/dropdown-and-listcontrol-checkedropdownlist-design-time002.png)
 
 * __Theme Name__: Select a theme name from the drop down list of themes available for that control. Selecting a theme allows you to change all aspects of the control's visual style at one time.
             

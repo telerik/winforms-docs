@@ -33,4 +33,4 @@ Me.RadCommandBar1.RightToLeft = Windows.Forms.RightToLeft.Yes
 {{endregion}} 
 
 
-![commandbar-localization-right-to-left-support 001](images/commandbar-localization-right-to-left-support001.png)
+![WinForms RadCommandBar Right-to-Left Support](images/commandbar-localization-right-to-left-support001.png)

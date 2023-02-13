@@ -13,8 +13,8 @@ previous_url: pageview-upgrading-to-radpageview
  
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Converting from RadPanelBar to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radpanelbar-to-radpageview)<br>In this video, you will learn how to convert a RadPanelBar to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![pageview-upgrading-to-radpageview 003](images/pageview-upgrading-to-radpageview003.png)|
-|[Converting from RadTabStrip to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radtabstrip-to-radpageview)<br>In this video, you will learn how to convert a RadTabStrip to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![pageview-upgrading-to-radpageview 004](images/pageview-upgrading-to-radpageview004.png)|
+|[Converting from RadPanelBar to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radpanelbar-to-radpageview)<br>In this video, you will learn how to convert a RadPanelBar to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![WinForms RadPageView Upgrading Tutorial](images/pageview-upgrading-to-radpageview003.png)|
+|[Converting from RadTabStrip to RadPageView](http://tv.telerik.com/watch/winforms/converting-from-radtabstrip-to-radpageview)<br>In this video, you will learn how to convert a RadTabStrip to the new RadPageView control introduced in the R2 2010 release of RadControls for WinForms.|![WinForms RadPageView Converting from RadTabStrip to RadPageView Tutorial](images/pageview-upgrading-to-radpageview004.png)|
 
 ## 
 
@@ -33,13 +33,13 @@ In order to encourage our users to use the new controls, we have removed all the
 
 >caption Figure 1: Conversion Wizard in Smart Tag
 
-![pageview-upgrading-to-radpageview 001](images/pageview-upgrading-to-radpageview001.png)
+![WinForms RadPageView Conversion Wizard in Smart Tag](images/pageview-upgrading-to-radpageview001.png)
 
 *The “Conversion Wizard…” command will open the wizard dialog.* 
 
 >caption Figure 2: Telerik Conversion Wizard
 
-![pageview-upgrading-to-radpageview 002](images/pageview-upgrading-to-radpageview002.png)
+![WinForms RadPageView Telerik Conversion Wizard](images/pageview-upgrading-to-radpageview002.png)
 
 *On the left side are listed all the controls, available for conversion, while on the right side are all the controls that will be actually converted. The two lists can be organized using the buttons in the middle.*
 

@@ -13,7 +13,7 @@ previous_url: editors-spineditor-getting-started
 
 The following tutorial demonstrates changing the thumb position on a __RadTrackBar__ to reflect changes in a __RadSpinEditor__.
 
-![editors-spineditor-getting-started 001](images/editors-spineditor-getting-started001.png)
+![WinForms RadSpinEditor Getting Started](images/editors-spineditor-getting-started001.png)
 
 1\. Drop a __RadSpinEditor__ and a __RadTrackbar__ on a form.
 

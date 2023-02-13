@@ -20,13 +20,13 @@ The following article shows how you can change the calendar cells styles in [Vis
 2. Export the built-in themes in a specific folder by selecting `File >> Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File >> Open Package`.
 4. Select __RadCalendar__ and expand the elements up to `CalendarCellElement`.
-   ![calendar-themes001](images/calendar-themes001.png)
+   ![WinForms RadCalendar VisualStyleBuilder CalendarCellElement](images/calendar-themes001.png)
 5. Select the `Today` state in the `Element States` window.Then open `CalCellTodayFill` repository item.
-   ![calendar-themes002](images/calendar-themes002.png)
+   ![WinForms RadCalendar VisualStyleBuilder Today CalCellTodayFill](images/calendar-themes002.png)
 6. Once the item is opened change the BackColor and close the item.
-   ![calendar-themes003](images/calendar-themes003.png)
+   ![WinForms RadCalendar VisualStyleBuilder BackColor](images/calendar-themes003.png)
 7. In the `Elements` window select the Font and change its style and sizе. The result can be seen in the bellow image.
-   ![calendar-themes004](images/calendar-themes004.png)
+   ![WinForms RadCalendar VisualStyleBuilder Font](images/calendar-themes004.png)
 
 
 ### Common Styling Properties

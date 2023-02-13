@@ -18,9 +18,9 @@ __RadWaitingBar__ is designed to indicate that a long-running operation with ind
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![track-and-status-controls-waitingbar-overview 001](images/track-and-status-controls-waitingbar-overview001.gif)
+![WinForms RadWaitingBar Circular Style](images/track-and-status-controls-waitingbar-overview001.gif)
 
-![track-and-status-controls-waitingbar-overview 002](images/track-and-status-controls-waitingbar-overview002.gif)
+![WinForms RadWaitingBar Default Waiting Style](images/track-and-status-controls-waitingbar-overview002.gif)
 
 >tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/track-and-status-controls/waitingbar/getting-started) article you can find how to use the control with a sample scenario.
 

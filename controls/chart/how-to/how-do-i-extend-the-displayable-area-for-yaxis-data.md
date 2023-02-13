@@ -26,7 +26,7 @@ CS
 
 >caption 
 
-![chart-how-to-extend-the-displayable-area-for-yaxus-data 001](images/chart-how-to-extend-the-displayable-area-for-yaxus-data001.png)
+![WinForms RadChart Displayable AxisMode Normal](images/chart-how-to-extend-the-displayable-area-for-yaxus-data001.png)
 
 
 
@@ -37,4 +37,4 @@ myChart.PlotArea.YAxis.AxisMode = ChartYAxisMode.Extended;
 CS
 >caption 
 
-![chart-how-to-extend-the-displayable-area-for-yaxus-data 002](images/chart-how-to-extend-the-displayable-area-for-yaxus-data002.png)
+![WinForms RadChart Displayable AxisMode Extended](images/chart-how-to-extend-the-displayable-area-for-yaxus-data002.png)

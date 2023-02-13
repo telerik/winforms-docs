@@ -34,7 +34,7 @@ The following image illustrates the desired outcome:
 
 >caption Figure 1: Custom Rendering
 
-![chartview-customization-custom-rendering 001](images/chartview-customization-custom-rendering001.png)
+![WinForms RadChartView Custom Rendering](images/chartview-customization-custom-rendering001.png)
 
 The starting point of the article is a form with one __RadChartView__ on it. In the form’s Load event handler create a __LineSeries__ instance and add categorical data points. The current example generates random values that fall in the range of 0 – 30. After adding the series to the __RadChartView.Series__ collection, set the __LabelFormat__ and __LabelFitMode__ of the __HorizontalAxis__ and __VerticalAxis__ properties of 
 the series to appropriate values. Further, subscribe to the __CreateRenderer__ of the chart and instantiate the __Renderer__ property of the event arguments to a new __CustomCartesianRederer__ instance. The __CreateRenderer__ event allows you to plug any custom implementation of chart renderer. Here is how your snippet should look like: 
@@ -427,7 +427,7 @@ End Class
 After you compile the project, you should get a result similar to the screenshot below:
 
 >caption Figure 2: Rendering Implementation Result
-![chartview-customization-custom-rendering 002](images/chartview-customization-custom-rendering002.png)
+![WinForms RadChartView Rendering Implementation Result](images/chartview-customization-custom-rendering002.png)
 
 # See Also
 

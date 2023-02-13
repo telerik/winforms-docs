@@ -22,4 +22,4 @@ To create a simple vertical Stacked Spline Area Chart set the __SeriesOrientatio
 To create a simple vertical Stacked Spline Area Chart set the __SeriesOrientation__ property to __Horizontal__. Set the RadChart __DefaultType__ property or __ChartSeries.Type__ to __StackedSplineArea__. Create multiple chart series and add chart items with Y or X and Y values.
 >caption 
 
-![chart-undestanding-radchart-types-stacked-spline-area-charts 001](images/chart-undestanding-radchart-types-stacked-spline-area-charts001.png)
+![WinForms RadChart Stacked Spline Area Horizontal](images/chart-undestanding-radchart-types-stacked-spline-area-charts001.png)

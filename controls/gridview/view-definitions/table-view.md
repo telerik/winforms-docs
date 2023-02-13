@@ -14,7 +14,7 @@ previous_url: gridview-viewdefinitions-table-view
 
 This is the default view definition. The data is presented like a table and you can reorder, hide and pin columns. This is a typical table view:
 
-![gridview-viewdefinitions-table-view 001](images/gridview-viewdefinitions-table-view001.png)
+![WinForms RadGridView Table View](images/gridview-viewdefinitions-table-view001.png)
 
 You need do not need to set this view manually and the view does not contain any properties to configure.
 		

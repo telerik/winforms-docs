@@ -18,7 +18,7 @@ __RadRibbonBar__ has a very well developed Visual Studio designer allowing addin
 
 >caption Figure 1: Smart Tag
 
-![radribbonbar-design-time 001](images/radribbonbar-design-time001.png)
+![WinForms RadRibbonBar Smart Tag](images/radribbonbar-design-time001.png)
 
 * __Common Tasks__
 

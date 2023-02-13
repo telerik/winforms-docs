@@ -14,7 +14,7 @@ previous_url: editors-timepicker-overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with RadTimePicker for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>This video demonstrates the new RadTimePicker control as well as several properties you should be aware of.|![editors-timepicker-overview 003](images/editors-timepicker-overview003.png)|
+|[Getting Started with RadTimePicker for WinForms](http://tv.telerik.com/watch/winforms/getting-started-with-radtimepicker-for-winforms)<br>This video demonstrates the new RadTimePicker control as well as several properties you should be aware of.|![WinForms RadDateTimePicker Getting Started Tutorial](images/editors-timepicker-overview003.png)|
 
 __RadTimePicker__ control allows the end user to enter a time value to the editable area of the control, or pick the time from the drop down by selecting both the hours and the minutes. The drop down by default contains __RadClock__ on the left side and two tables on the right side – for picking hours and minutes respectively. The control has null value support, 12 and 24-hour time formats according to the culture, allows formatting and customization. 
 
@@ -24,11 +24,11 @@ __RadTimePicker__ control allows the end user to enter a time value to the edita
 
 >caption Figure 1: Collapsed:
 
-![editors-timepicker-overview 001](images/editors-timepicker-overview001.png)
+![WinForms RadDateTimePicker Collapsed](images/editors-timepicker-overview001.png)
 
 >caption Figure 2: Expanded:
 
-![editors-timepicker-overview 002](images/editors-timepicker-overview002.png)
+![WinForms RadDateTimePicker Expanded](images/editors-timepicker-overview002.png)
 
 # See Also
 

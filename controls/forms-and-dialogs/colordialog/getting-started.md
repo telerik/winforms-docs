@@ -13,9 +13,9 @@ previous_url: forms-and-dialogs-colordialog-getting-started
 
 The following tutorial demonstrates configuring the __RadColorDialog__, localizing tab labeling and responding to the __OK__ button click.
 
->caption Figure 1: Getting started with RadColorDialog
+>caption Figure 1: Getting Started with RadColorDialog
 
-![forms-and-dialogs-colordialog-getting-started 001](images/forms-and-dialogs-colordialog-getting-started001.png)
+![WinForms RadColorDialog Getting Started](images/forms-and-dialogs-colordialog-getting-started001.png)
 
 1\. Drop a __RadColorDialog__ on the form.
 

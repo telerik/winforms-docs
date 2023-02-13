@@ -28,7 +28,7 @@ You can combine the two properties to achieve the desired result. The default va
 
 >caption Figure 1: Group Levels
 
-![pivotgrid-expand-behavior 001](images/pivotgrid-expand-behavior001.png)
+![WinForms RadPivotGrid Group Levels](images/pivotgrid-expand-behavior001.png)
 
 ## Set Expand Behavior
 

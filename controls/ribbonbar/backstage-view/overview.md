@@ -9,7 +9,7 @@ position: 0
 previous_url: ribbonbar-backstage-view-overview
 ---
 
-# BackStage View
+# Backstage View
 
 Backstage View is the Office 2010 replacement of the Application Menu. It is a menu that covers the whole window area and contains buttons and tabs. Each tab have a content area, which can be populated with any type of Controls. To enable the Backstage View in RadRibbonBar change the __ApplicationMenuStyle__ property to *BackstageView*.
 
@@ -29,7 +29,7 @@ RadRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle
 
 {{endregion}} 
 
-![ribbonbar-backstage-view-overview 001](images/ribbonbar-backstage-view-overview001.png)
+![WinForms RadRibbonBar Backstage Overview](images/ribbonbar-backstage-view-overview001.png)
 
 ## See Also
 

@@ -14,7 +14,7 @@ __RadMap__ can visualize data from the [OpenStreetMaps](http://wiki.openstreetma
 
 >caption Figure 1: OpenStreetMapProvider 
 
-![map-openstreetmapprovider 001](images/map-openstreetmapprovider001.png)
+![WinForms RadMap OpenStreetMapProvider](images/map-openstreetmapprovider001.png)
 
 #### Using OpenStreetMapProvider
 

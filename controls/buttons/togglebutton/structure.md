@@ -14,7 +14,7 @@ This article will show the internal elements structure of __RadToggleButton__:
 
 >caption Figure 1: RadToggleButton's elements hierarchy
 >
-![buttons-togglebutton-structure 001](images/buttons-togglebutton-structure001.png)
+![WinForms RadToggleButton's Elements Hierarchy](images/buttons-togglebutton-structure001.png)
 
 1. __FillPrimitive__: represents the toggle button's filling
 1. __ImageAndTextLayoutPanel__ <br>
@@ -24,4 +24,4 @@ This article will show the internal elements structure of __RadToggleButton__:
 
 >caption Figure 2: RadToggleButton's structure
 
-![buttons-togglebutton-structure 002](images/buttons-togglebutton-structure002.png)
+![WinForms RadToggleButton's Structure](images/buttons-togglebutton-structure002.png)

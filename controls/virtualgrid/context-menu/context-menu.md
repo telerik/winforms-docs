@@ -14,15 +14,15 @@ __RadVirtualGrid__ provides default context menu for its cells. This context men
 
 >caption Figure 1: Default context menu for data cells
  
-![virtualgrid-context-menu 001](images/virtualgrid-context-menu001.png)
+![WinForms RadVirtualGrid Default context menu for data cells](images/virtualgrid-context-menu001.png)
 
 >caption Figure 2: Default context menu for header cells
 
-![virtualgrid-context-menu 002](images/virtualgrid-context-menu002.png)
+![WinForms RadVirtualGrid Default context menu for header cells](images/virtualgrid-context-menu002.png)
 
 >caption Figure 3: Default context menu for new row
 
-![virtualgrid-context-menu 003](images/virtualgrid-context-menu003.png)
+![WinForms RadVirtualGrid Default context menu for new row](images/virtualgrid-context-menu003.png)
 
 You can control whether the context menu will be displayed by the __AllowColumnHeaderContextMenu__ property for the header cells and the __AllowCellContextMenu__ property for the rest of the cells.
 

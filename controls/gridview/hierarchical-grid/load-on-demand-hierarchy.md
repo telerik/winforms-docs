@@ -13,7 +13,8 @@ previous_url: gridview-hierarchical-grid-load-on-demand-hierarchy
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Event Based Hierarchies with RadGridView for WinForms](https://www.telerik.com/videos/winforms/event-based-hierarchies-with-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)|
+
+|[Event Based Hierarchies with RadGridView for WinForms](https://www.telerik.com/videos/winforms/event-based-hierarchies-with-radgridview-for-winforms)<br>In this video, you will learn how to automatically and manually create object relational hierarchies in RadGridView for WinForms.|![WinForms RadGridView Load-On-Demand Hierarchy Tutorial](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)|
 
 ## 
 
@@ -30,11 +31,11 @@ In many cases you may need to load your data not when RadGridView is being initi
 
 >note Calling the the __BestFitColumns__ method may cause the grid to load all the data explicitly. Call this method with the for the visual cells only.
 
-## Sample load-on-demand scenario
+## Sample Load-On-Demand Scenario
 
 The following example shows a load-on-demand scenario using a typed DataSet. Let's load the following `Products` data from the AdventureWorks database:
 
-![gridview-hierarchical-grid-load-on-demand-hierarchy 001](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)
+![WinForms RadGridView Load-On-Demand](images/gridview-hierarchical-grid-load-on-demand-hierarchy001.png)
 
 Steps to create a Load-On-Demand hierarchy mode:
 
@@ -184,7 +185,8 @@ End Sub
 {{endregion}} 
 
 This new event based hierarchy mode can be used in different lazy loading scenarios including ORM frameworks, WCF services or complex business objects.
-# See Also
+
+## See Also
 * [Binding to Hierarchical Data Automatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically%})
 
 * [Binding to Hierarchical Data Programmatically]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})

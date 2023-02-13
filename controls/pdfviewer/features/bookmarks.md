@@ -17,7 +17,7 @@ position: 0
 
 >caption Figure 1: Bookmarks in RadPdfViewer
 
-![RadPdfViewer_Bookmarks_01](images/RadPdfViewer_Bookmarks_01.png)
+![WinForms RadPdfViewer Bookmarks in RadPdfViewer](images/RadPdfViewer_Bookmarks_01.png)
 
 
 ## Visualizing Bookmarks

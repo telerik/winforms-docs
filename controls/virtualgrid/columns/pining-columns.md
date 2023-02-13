@@ -30,7 +30,7 @@ radVirtualGrid1.VirtualGridElement.SetColumnPinPosition(2, PinnedColumnPosition.
 
 The result is that the column is pined to the right.
 
-![virtualgrid-pinned-columns001](images/virtualgrid-pinned-columns001.png)
+![WinForms RadVirtualGrid Pinned Columns](images/virtualgrid-pinned-columns001.png)
 
 To unpin a row you just need to set its pin position to *none*.
 

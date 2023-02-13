@@ -12,11 +12,11 @@ position: 0
 
 You can use the __Resize__ button which will open the resize dialog. In this dialog you can enter the new size of the image.
 
-![](images/image-editor-resize002.png)
-![](images/image-editor-resize001.png)
+![WinForms RadImage-Editor Resize Option](images/image-editor-resize002.png)
+![WinForms RadImage-Editor Resize Dialog](images/image-editor-resize001.png)
 
 
-# Resize Programmatically
+## Resize Programmatically
 
 You can resize an image that is loaded inside the image editor with code as well. This can be achieved with the Resize method. The following snippet demonstrates this.
 

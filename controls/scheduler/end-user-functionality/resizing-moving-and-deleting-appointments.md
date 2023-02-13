@@ -19,13 +19,13 @@ To change the duration of an appointment, select the appointment and move the cu
 
 >caption Figure 1: Start Resizing
 
-![scheduler-end-user-functionality-resizing-moving-and-deleting-appointments 001](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments001.png)
+![WinForms RadScheduler Start Resizing](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments001.png)
 
 It is also allowed to resize a recurring appointment. This would lead to automatically creating an exception.
 
 >caption Figure 2: Resizing a Recurring Appointment
 
-![scheduler-end-user-functionality-resizing-moving-and-deleting-appointments 003](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments003.gif)
+![WinForms RadScheduler Resizing a Recurring Appointment](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments003.gif)
 
 ## Moving Appointments
 
@@ -37,7 +37,7 @@ You can drag a recurring appointment and drop it onto a new time slot as well. A
 
 >caption Figure 3: Moving a Recurring Appointment
 
-![scheduler-end-user-functionality-resizing-moving-and-deleting-appointments 004](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments004.gif)
+![WinForms RadScheduler Moving a Recurring Appointment](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments004.gif)
 
 ## Deleting Appointments
 
@@ -49,13 +49,13 @@ The user can delete an appointment:
 
 >caption Figure 4: Deleting an Appointment
 
-![scheduler-end-user-functionality-resizing-moving-and-deleting-appointments 002](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments002.png)
+![WinForms RadScheduler Deleting an Appointment](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments002.png)
 
 When you try to delete a recurring appointment, you are asked to confirm whether the delete operation should affect the whole series or just the selected appointment.
 
 >caption Figure 5: Deleting a Recurring Appointment
 
-![scheduler-end-user-functionality-resizing-moving-and-deleting-appointments 005](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments005.gif)
+![WinForms RadScheduler Deleting a Recurring Appointment](images/scheduler-end-user-functionality-resizing-moving-and-deleting-appointments005.gif)
 
 # See Also
 

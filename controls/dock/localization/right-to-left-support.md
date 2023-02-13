@@ -27,7 +27,7 @@ Me.radDock1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 {{endregion}} 
 
-![dock-localization-rtl 001](images/dock-localization-rtl001.png)
+![WinForms RadDock Right-to-Left Support](images/dock-localization-rtl001.png)
 
 # See Also
 

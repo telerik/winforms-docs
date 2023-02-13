@@ -20,13 +20,13 @@ A QR code uses four standardized encoding modes (numeric, alphanumeric, byte/bin
 
 There are a total of 40 versions available in the QR code, from 21 by 21 modules to 177 by 177 modules, increasing in steps of 4 modules per side. Naturally, higher versions are used to encode larger amounts of data:
 
-![winforms/barcode-2d-barcodes-qrcode-overview 001](images/barcode-2d-barcodes-qrcode-overview001.png)
+![WinForms RadBarcode QR 21 to 21](images/barcode-2d-barcodes-qrcode-overview001.png)
 
-![winforms/barcode-2d-barcodes-qrcode-overview 002](images/barcode-2d-barcodes-qrcode-overview002.png)
+![WinForms RadBarcode QR 177 to 177](images/barcode-2d-barcodes-qrcode-overview002.png)
 
 Disregarding the data, which consists of the actual encoded data, along with the error correction bits, the structure of the code includes the module groups listed below:
 
-![winforms/barcode-2d-barcodes-qrcode-overview 003](images/barcode-2d-barcodes-qrcode-overview003.png)
+![WinForms RadBarcode QR Visual Structure](images/barcode-2d-barcodes-qrcode-overview003.png)
 
 * **Finder Pattern** - The finder pattern is a concentric square of alternating colors, located in all corners of the symbol except the bottom right. They are used by decoders establish orientation. The center is a 3x3 black square and it is surrounded by a one-module-thick white box, which is surrounded by a one-module-thick black box, making the full pattern 7x7 modules.
 * **Alignment Pattern** - The alignment pattern is only included in the rendered QR code in version 2 and above. Its purpose is to allow the decoder to scan a skewed image, and convert it to the virtual grid of black and white modules, representing the encoded data. The alignment pattern is made of concentric squares, much like the finder patterns, with the center being a single black module.
@@ -37,6 +37,6 @@ The format data is encoded in 15 bits. One full copy of the format data is locat
 * **Version Data** - The version data includes information on which version the QR code is. This data is encoded into 18 modules, in a 6 by 3 matrix. Two copies of the version data matrix are included in the QR code - one next to the upper right finder pattern, and the other next to the lower left one.
 * **Blank Space** - Additionally, around each QR code, there is an obligatory 4-modules-wide white space area:
 
-![winforms/barcode-2d-barcodes-qrcode-overview 004](images/barcode-2d-barcodes-qrcode-overview004.png)
+![WinForms RadBarcode winforms/barcode-2d-barcodes-qrcode-overview 004](images/barcode-2d-barcodes-qrcode-overview004.png)
 
 * **Data** - The data occupies all available modules, not occupied by any of the formatting data segments mentioned above. If the data is smaller than the capacity of the remaining modules, it is padded, in order to ensure that all modules are used. Additionally, the data consists of the actual encoded data, entered by the user, and the error correction bits, calculated on that data.

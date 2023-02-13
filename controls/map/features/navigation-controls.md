@@ -14,7 +14,7 @@ __RadMap__ incorporates a navigation tool allowing the end to user to easily zoo
 
 >caption Figure 1: Navigation Bar
 
-![map features navigation controls 001](images/map-features-navigation-controls001.png)
+![WinForms RadMap Navigation Bar](images/map-features-navigation-controls001.png)
 
 The __RadMap.ShowNavigationBar__ property is responsible for showing or hiding the navigation bar. By default this property is set to *true* and the location of the navigation bar is set to *BottomRight*.
 
@@ -42,31 +42,31 @@ The location of the __MapNavigationBarElement__ is controlled by the RadMap.MapE
 
 >caption Figure 2: TopRight
 
-![map features navigation controls 002](images//map-features-navigation-controls002.png)
+![WinForms RadMap TopRight](images//map-features-navigation-controls002.png)
 
 * __MapNavigationBarLocation__.*TopLeft*: The location is set to the top left part of the view port.
 
 >caption Figure 3: TopLeft
 
-![map features navigation controls 003](images//map-features-navigation-controls003.png)
+![WinForms RadMap TopLeft](images//map-features-navigation-controls003.png)
 
 * __MapNavigationBarLocation__.*BottomLeft*: The location is set to the bottom left part of the view port.
 
 >caption Figure 4: BottomLeft
 
-![map features navigation controls 004](images//map-features-navigation-controls004.png)
+![WinForms RadMap BottomLeft](images//map-features-navigation-controls004.png)
 
 * __MapNavigationBarLocation__.*BottomCenter*: The location is set to the bottom center part of the view port.
 
 >caption Figure 5: BottomCenter
 
-![map features navigation controls 005](images//map-features-navigation-controls005.png)
+![WinForms RadMap BottomCenter](images//map-features-navigation-controls005.png)
 
 * __MapNavigationBarLocation__.*BottomRight*: The location is set to the bottom right part of the view port.
 
 >caption Figure 6: BottomRight
 
-![map features navigation controls 006](images//map-features-navigation-controls006.png)
+![WinForms RadMap BottomRight](images//map-features-navigation-controls006.png)
 
 # View Modes
 
@@ -76,7 +76,7 @@ The navigation control allows an easy selection of the currently displayed view.
 
 >caption Figure 7: BingRestMapProvider Views
 
-![map features navigation controls 007](images//map-features-navigation-controls007.gif)
+![WinForms RadMap BingRestMapProvider Views](images//map-features-navigation-controls007.gif)
 
 # Zoom and Pan
 
@@ -84,11 +84,11 @@ The navigation control allows the end user to easily zoom and pan to a particula
 
 >caption Figure 8: Zoom and Pan
 
-![map features navigation controls 008](images//map-features-navigation-controls008.gif)
+![WinForms RadMap Zoom and Pan](images//map-features-navigation-controls008.gif)
 
 The __MapNavigationBarElement__ can be accessed through the __RadMap.MapElement.NavigationBarElement__. The table below lists the exposed properties.
 
-# Properties
+## Properties
 
 |Property|Description|
 |------|------|

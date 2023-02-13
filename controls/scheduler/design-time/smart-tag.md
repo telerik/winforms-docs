@@ -17,7 +17,7 @@ In this article we will describe the design time abilities of __RadScheduler__ a
 Here is how the control's Smart Tag looks like:
 
 >caption Figure 1: RadScheduler Smart Tag
-![radscheduler design time 001](images/radscheduler-design-time001.png)
+![WinForms RadScheduler Smart Tag](images/radscheduler-design-time001.png)
 
 * __Common Tasks__
 
@@ -52,7 +52,7 @@ The __SchedulerBindingDataSource__ object can be dragged onto the form straight 
 	* __Edit Resource Mappings__: Maps the properties coming from the data source to __RadScheduler__ resource properties.
 
 >caption Figure 2: SchedulerBindingDataSource Smart Tag
-![radscheduler design time 002](images/radscheduler-design-time002.png)
+![WinForms RadScheduler SchedulerBindingDataSource Smart Tag](images/radscheduler-design-time002.png)
 
 Complete tutorials on how data binding can be setup at design time are availalble in the following articles: [Data Binding Walkthrough]({%slug winforms/scheduler/data-binding/data-binding-walkthrough%}) and [Codeless Data Binding]({%slug winforms/scheduler/data-binding/codeless-data-binding%}).
 

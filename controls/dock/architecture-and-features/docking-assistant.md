@@ -25,7 +25,7 @@ To use the __Docking Assistant__, use the mouse to select the title bar of the s
 
 In addition to the drop target icons, the docking assistant displays docking hints. A docking hint is a visual preview of what space will be occupied by a **DockWindow**. Drop hints are enabled when you are in the process of moving the **DockWindow** and while the mouse pointer is positioned over one of the drop targets.
  
-![dock-architecture-and-features-docking-assistant 001](images/dock-architecture-and-features-docking-assistant001.gif) 
+![WinForms RadDock Docking Hints](images/dock-architecture-and-features-docking-assistant001.gif) 
 
 ## Tabbing/Un-tabbing DockWindows
 
@@ -33,11 +33,11 @@ In addition to moving **ToolWindows** from one docking container to another, you
 
 To place a __ToolWindow__ as a tab, use the drop target icon at the center of the __RadDock__ compass when you drag a __ToolWindow__ to its destination. The two __ToolWindows__ will overlap each other at the site of the destination. Other docking containers and __ToolWindow__ will resize themselves automatically to fill the available space, subject to any minimum or maximum size specifications set at design time.
 
-![dock-architecture-and-features-docking-assistant 002](images/dock-architecture-and-features-docking-assistant002.gif)
+![WinForms RadDock Tabbing/Un-tabbing DockWindows](images/dock-architecture-and-features-docking-assistant002.gif)
 
 To un-tab a **ToolWindow**, drag the **ToolWindow** tab into a docking container using the docking assistant.
 
-![dock-architecture-and-features-docking-assistant 003](images/dock-architecture-and-features-docking-assistant003.gif)
+![WinForms RadDock un-tab ToolWindow](images/dock-architecture-and-features-docking-assistant003.gif)
 
 # See Also
 

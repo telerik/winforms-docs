@@ -17,7 +17,7 @@ __Bookmarks__ are a powerful tool for marking parts of the document, which can b
 
 __Bookmarks__ can be inserted in the document and removed through the __ManageBookmarksDialog__, which is opened on pressing the **Bookmark** button in the **Insert** tab of the default **RadRichTextEditorRibbonUI**.
 
-![richtexteditor-features-bookmarks 001](images/richtexteditor-features-bookmarks001.png)
+![WinForms RadRichTextEditor Adding Bookmarks ](images/richtexteditor-features-bookmarks001.png)
 
 As all pop-ups that **RadRichTextEditor** uses, the **ManageBookmarksDialog** can be completely replaced by another, user-defined dialog implementing an interface.
 

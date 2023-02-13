@@ -19,7 +19,7 @@ You can access and modify the style for the different elements in the editable a
 
 >tip In order to access the Element hierarchy editor select **RadFontDropDownList** and click the small arrow on the top right position in order to open the Smart Tag. Then, click the Edit UI Elements.
 
-![radtimespanpicker-appearance001](images/radtimespanpicker-appearance001.png)
+![WinForms RadTimeSpanPicker Design Time](images/radtimespanpicker-appearance001.png)
 
 
 ## Formating Items
@@ -94,7 +94,7 @@ End Sub
 
 Here is the result.
 
-![radtimespanpicker-appearance002](images/radtimespanpicker-appearance002.png)
+![WinForms RadTimeSpanPicker Formating Items](images/radtimespanpicker-appearance002.png)
 
 # See Also
 

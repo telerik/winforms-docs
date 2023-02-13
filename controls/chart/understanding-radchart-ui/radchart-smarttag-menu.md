@@ -18,7 +18,7 @@ previous_url: chart-understanding-radchart-ui-radchart-smarttag-menu
 To easily access common tasks and properties click the SmartTag at the upper right corner of the RadChart.
 >caption 
 
-![chart-understanding-radchart-ui-radchart-smarttag-menu 001](images/chart-understanding-radchart-ui-radchart-smarttag-menu001.png)
+![WinForms RadChart SmartTag Menu](images/chart-understanding-radchart-ui-radchart-smarttag-menu001.png)
 
 Here you can find the most significant properties for the chart without navigating to the Properties Window.  RadChart Tasks are divided into four sections: 
 

@@ -197,4 +197,4 @@ Upon loading some Python code in the editor you will observe a result similar to
 
 >caption Figure 1: The custom Python tagger
 
-![syntax-editor-custom-language001](images/syntax-editor-custom-language001.png)
+![WinForms RadSyntaxEditor with custom Python tagger](images/syntax-editor-custom-language001.png)

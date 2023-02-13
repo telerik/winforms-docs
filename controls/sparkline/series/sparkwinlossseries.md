@@ -55,6 +55,6 @@ End Sub
 
 >caption Figure 1: SparkBarSeries
 
-![](images/sparkwinlossseries001.png)
+![WinForms RadSparkline SparkBarSeries](images/sparkwinlossseries001.png)
 
 

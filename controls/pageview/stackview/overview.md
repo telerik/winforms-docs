@@ -15,15 +15,15 @@ The PageViewMode.*Stack* displays a stack of items whereby the content of the se
 
 >caption Figure 1: *Bottom stack* position and standard selection mode:
 
-![](images/pageview-stackview-overview001.png)
+![WinForms RadPageView *Bottom stack* position and standard selection mode](images/pageview-stackview-overview001.png)
 
 >caption Figure 2: *Right stack*
 
-![](images/pageview-stackview-overview002.png)
+![WinForms RadPageView *Right stack*](images/pageview-stackview-overview002.png)
 
 >caption Figure 3: *Bottom stack* *ContentWithSelected*
 
-![](images/pageview-stackview-overview003.png)
+![WinForms RadPageView *Bottom stack* *ContentWithSelected*](images/pageview-stackview-overview003.png)
 
 # See Also
 

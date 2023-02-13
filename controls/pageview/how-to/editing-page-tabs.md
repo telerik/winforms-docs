@@ -43,11 +43,11 @@ RadPageView1.ViewElement.BeginEdit()
 
 {{endregion}} 
 
->caption Figure 1: Page tab's editing
+>caption Figure 1: Page Tab's Editing
 
-![pageview-how-to-editing-radpageviewelement 001](images/pageview-how-to-editing-radpageviewelement001.png)
+![WinForms RadPageView Page Tab's Editing](images/pageview-how-to-editing-radpageviewelement001.png)
 
-## The Editing process and events
+## The Editing Process and Events
 
 * A page that is being displayed by the __RadPageView__ is selected and the user presses the `F2` key to bring the page tab into edit mode.
 
@@ -145,10 +145,10 @@ End Sub
 
 {{endregion}}
 
->caption Figure 2: Validation fails
+>caption Figure 2: Validation Fails
 
-![pageview-how-to-editing-radpageviewelement 002](images/pageview-how-to-editing-radpageviewelement002.gif)
+![WinForms RadPageView Validation Fails](images/pageview-how-to-editing-radpageviewelement002.gif)
 
->caption Figure 3: Successful edit operation
+>caption Figure 3: Successful Edit Operation
 
-![pageview-how-to-editing-radpageviewelement 003](images/pageview-how-to-editing-radpageviewelement003.gif)
+![WinForms RadPageView Successful Edit Operation](images/pageview-how-to-editing-radpageviewelement003.gif)

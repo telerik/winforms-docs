@@ -14,7 +14,7 @@ previous_url: ribbonbar-overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadRibbonBar Overview](http://tv.telerik.com/watch/winforms/radribbonbar/radribbonbar-overview)<br>This video contains a brief overview of the RadRibbonBar. (Runtime: 02:15)|![overview-video 001](images/ribbonbar-overview001.png)|
+|[RadRibbonBar Overview](http://tv.telerik.com/watch/winforms/radribbonbar/radribbonbar-overview)<br>This video contains a brief overview of the RadRibbonBar. (Runtime: 02:15)|![WinForms RadRibbonBar Overview Tutorial](images/ribbonbar-overview001.png)|
 
 With the __RadRibbonBar__ control you can build user interfaces similar to those used in Microsoft Office. The figure below shows an example of a __RadRibbonBar__ usage scenario: 
 
@@ -23,7 +23,7 @@ With the __RadRibbonBar__ control you can build user interfaces similar to thos
 {% endif %}
 
 >caption Figure 1: RadRibbonBar
-![ribbonbar-overview 001](images/ribbonbar-overview002.png)
+![WinForms RadRibbonBar Overview](images/ribbonbar-overview002.png)
 
 __RadRibbonBar__ control provides a flexible way for organizing all the functionality of your application:
         

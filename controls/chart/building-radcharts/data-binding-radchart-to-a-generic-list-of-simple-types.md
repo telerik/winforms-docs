@@ -16,7 +16,7 @@ previous_url: chart-building-radcharts-data-binding-radchart-to-a-generic-list-o
 The example below is the result of binding a [generic List<>](http://msdn2.microsoft.com/en-us/library/6sh2ey19.aspx) of double to the __RadChart__ __DataSource__ property and calling the DataBind() method.
 >caption 
 
-![chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-simple-types 001](images/chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-simple-types001.png)
+![WinForms RadChart Binding to a Generic List of Simple Types](images/chart-building-radcharts-data-binding-radchart-to-a-generic-list-of-simple-types001.png)
 
 
 {{source=..\SamplesCS\Chart\DataBindingToGenericListOfSimpleTypes.cs region=bindToGenericListOfSimpleTypes}} 

@@ -13,10 +13,10 @@ position: 1
 This article describes the inner structure and organization of the elements which build the __RadMaskedEditBox__ control.
 
 >caption Figure 1: RadMaskedEditBox`s Element Hierarchy
-![radmaskededitbox structure 001](images/radmaskededitbox-structure001.png)
+![WinForms RadMaskedEditBox Element Hierarchy](images/radmaskededitbox-structure001.png)
 
 >caption Figure 2: RadMaskedEditBox`s Structure
-![radmaskededitbox structure 002](images/radmaskededitbox-structure002.png)
+![WinForms RadMaskedEditBox Structure](images/radmaskededitbox-structure002.png)
 
 1. __RadMaskedEditBoxElement:__ Represents the main element of __RadMaskedEditBox__.
 1. __RadTextBoxItem:__ Text box handling user input.

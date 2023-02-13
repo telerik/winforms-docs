@@ -50,7 +50,7 @@ Me.RadPanorama1.ScrollBarThickness = 16
 
 To change the background image of the view, set the __PanelImage__ property with the desired image. To enable scrolling the background image along with the view, set the __ScrollingBackground__ property to *true*. You will also need to set the __PanelImageSize__ property. Usually, to achieve smooth background scrolling, the width of the panel image should be larger than the client width of the control and smaller than the total width of the tile layout. To edit more properties of the image, you can access its element via the PanoramaElement.__BackgroundImagePrimitive__ property. The following code demonstrates how to setup a tiling background image and a background scrolling:
 
-![panorama-scrolling 001](images/panorama-scrolling001.gif)   
+![WinForms RadPanorama Scrolling](images/panorama-scrolling001.gif)   
 
 #### Set tiling backgroung image
 

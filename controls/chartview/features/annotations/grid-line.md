@@ -28,7 +28,7 @@ In the case of the Cartesian chart, the grid line represents a vertical or horiz
 Here is what __CartesianGridLineAnnotation__ looks like:
 
 >caption Figure 1: CartesianGridLineAnnotation
-![chartview-annotations-gridline-annotations 001](images/chartview-annotations-gridline-annotations001.png)
+![WinForms RadChartView Cartesian Grid Line Annotation](images/chartview-annotations-gridline-annotations001.png)
 
 #### Cartesian Grid Line Setup
 
@@ -88,7 +88,7 @@ Polar axis grid lines represent concentric circles that cross the Polar axis at 
 Here is what __PolarAxisGridLineAnnotation__ looks like:
 
 >caption Figure 2: PolarAxisGridLineAnnotation
-![chartview-annotations-gridline-annotations 002](images/chartview-annotations-gridline-annotations002.png)
+![WinForms RadChartView Polar Axis Grid Line Annotation](images/chartview-annotations-gridline-annotations002.png)
 
 #### Plar Grid Line Setup
 
@@ -151,7 +151,7 @@ Radial axis grid lines basically represent the radius of the polar chart.
 Here is what __RadialAxisGridLineAnnotation__ looks like:
 
 >capion Figure 3: RadialAxisGridLineAnnotation
-![chartview-annotations-gridline-annotations 003](images/chartview-annotations-gridline-annotations003.png)
+![WinForms RadChartView Radial Axis Grid Line Annotation](images/chartview-annotations-gridline-annotations003.png)
 
 {{source=..\SamplesCS\ChartView\Annotations\GridLine.cs region=RadialGridLine}} 
 {{source=..\SamplesVB\ChartView\Annotations\GridLine.vb region=RadialGridLine}} 

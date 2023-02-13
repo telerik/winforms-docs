@@ -13,8 +13,8 @@ previous_url: scheduler-data-binding-codeless-data-binding
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)<br>In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)|![scheduler-data-binding-codeless-data-binding 001](images/scheduler-data-binding-codeless-data-binding001.png)|
-|[Introduction to RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/introduction-radscheduler-winforms)<br>In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![scheduler-data-binding-codeless-data-binding 002](images/scheduler-data-binding-codeless-data-binding002.png)|
+|Codeless Data Binding with RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/codeless-data-binding-with-radscheduler-winforms)<br>In this video, you will learn how to use the SchedulerBindingDataSource with the RadScheduler for WinForms to quickly and codelessly data bind a RadScheduler. You will also be introduced to the RadSchedulerNavigator, a simple control that makes it easy for users navigate a RadScheduler. (Runtime: 07:04)|![WinForms RadScheduler Codeless Data Binding](images/scheduler-data-binding-codeless-data-binding001.png)|
+|[Introduction to RadScheduler for WinForms](http://tv.telerik.com/watch/winforms/radscheduler/introduction-radscheduler-winforms)<br>In this webinar, Telerik Developer Support Specialist Robert Shoemate will introduce RadScheduler and demonstrate how to utilize its powerful feature set in your own applications. By attending this webinar, you will learn about features such as codeless data binding, adding custom fields, and UI customization. (Runtime: 55:58)|![WinForms RadScheduler Tutorial](images/scheduler-data-binding-codeless-data-binding002.png)|
 
 This tutorial will show you how to bind __RadScheduler__ from the Visual Studio design time surface, by only using the __RadScheduler__ design-time support, and without writing any code. The tutorial uses the data base which comes with the installation of Telerik UI for WinForms.
 
@@ -26,15 +26,15 @@ This tutorial will show you how to bind __RadScheduler__ from the Visual Studio 
 
 4\. Select __RadScheduler__ and open its action list (smart tag). In it, there is a __DataSource__ property, which is used to specify the __SchedulerBindingDataSource__ component which will be used as a data source in __RadScheduler__. Select the instance of the __SchedulerBindingDataSource__ that we just added and close the smart tag:
 
-![scheduler-data-binding-codeless-data-binding 003](images/scheduler-data-binding-codeless-data-binding003.png) 
+![WinForms RadScheduler Smart Tag](images/scheduler-data-binding-codeless-data-binding003.png) 
 
 5\. Open the __SchedulerBindingDataSource__ smart tag. It shows two types of provider properties, which can be used for setting the data sources for the __Appointments__ (EventProvider) and the __Resources__ (ResourceProvider):
 
-![scheduler-data-binding-codeless-data-binding 004](images/scheduler-data-binding-codeless-data-binding004.png)
+![WinForms RadScheduler Smart Tag Data Source](images/scheduler-data-binding-codeless-data-binding004.png)
 
 6\. Set the __Appointments__ and the __Resources__ data sources. To do that, in the *Properties* window, open the __EventProvider__ property. Drop down the __DataSource__ sub-property list and select __Add Project DataSource...__ This step will display the Data Source Configuration Wizard dialog. 
 
-![scheduler-data-binding-codeless-data-binding 005](images/scheduler-data-binding-codeless-data-binding005.png) 
+![WinForms RadScheduler EventProvider](images/scheduler-data-binding-codeless-data-binding005.png) 
 
 7\. In the "Choose a Data Source Type" page of the wizard, select the __Database__ type and click the __Next__ button to continue.
 
@@ -80,11 +80,11 @@ This tutorial will show you how to bind __RadScheduler__ from the Visual Studio 
 
 In our case we should set the __DataMember__ properties for both the *EventProvider* and *ResourceProvider* to __Appointments__ and __Resources__ respectively: 
 
-![scheduler-data-binding-codeless-data-binding 006](images/scheduler-data-binding-codeless-data-binding006.png) 
+![WinForms RadScheduler SchedulerBindingDataSource](images/scheduler-data-binding-codeless-data-binding006.png) 
 
 16\. While still in the __SchedulerBindingDataSource__ ActionList, click on the *Edit Appointment Mapping* link.
 
-![scheduler-data-binding-codeless-data-binding 007](images/scheduler-data-binding-codeless-data-binding007.png) 
+![WinForms RadScheduler Mapping](images/scheduler-data-binding-codeless-data-binding007.png) 
 
 This will invoke the *Appointment Mapping Dialog* which provides you with an easy and intuitive UI for mapping __Appointment__ properties with __DataSource__ properties. Map all of the properties with their respective counterpart, whereas:
 
@@ -96,15 +96,15 @@ This will invoke the *Appointment Mapping Dialog* which provides you with an eas
 
 At the end the *Appointment Mapping Dialog* should look like the following screen shot. Save and Close the dialog when done:
 
-![scheduler-data-binding-codeless-data-binding 008](images/scheduler-data-binding-codeless-data-binding008.png)  
+![WinForms RadScheduler Appointment Mapping Dialog](images/scheduler-data-binding-codeless-data-binding008.png)  
 
 17\. By using the __SchedulerBindingDataSource__ ActionList, click on the *Edit Resource Mapping* link to edit the ResourceMappingInfo:
 
-![scheduler-data-binding-codeless-data-binding 009](images/scheduler-data-binding-codeless-data-binding009.png)
+![WinForms RadScheduler Edit Resource Mapping](images/scheduler-data-binding-codeless-data-binding009.png)
 
 18\. Select the ID and ResourceName for the respective properties and close the dialog:
 
-![scheduler-data-binding-codeless-data-binding 010](images/scheduler-data-binding-codeless-data-binding010.png)
+![WinForms RadScheduler Resource Mapping Dialog](images/scheduler-data-binding-codeless-data-binding010.png)
 
 19\. Fill the data tables in the data set:
 

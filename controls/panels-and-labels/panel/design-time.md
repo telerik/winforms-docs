@@ -18,7 +18,7 @@ Select **RadPanel** and click the small arrow on the top right position in order
 
 >caption Figure 1: Smart Tag
 >
-![panels-and-labels-panel-design-time 001](images/panels-and-labels-panel-design-time001.png)
+![WinForms RadPanel Smart Tag](images/panels-and-labels-panel-design-time001.png)
 
 * __Common Tasks__
 

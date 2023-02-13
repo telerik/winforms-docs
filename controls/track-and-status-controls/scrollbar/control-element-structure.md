@@ -14,11 +14,11 @@ This article illustrates the inner structure and organization of the elements wh
 
 >caption Figure 1: RadScrollBar's elements hierarchy
 
-![track-and-status-controls-scrollbar-structure 001](images/track-and-status-controls-scrollbar-structure001.png)
+![WinForms RadScrollBar's elements hierarchy](images/track-and-status-controls-scrollbar-structure001.png)
 
 >caption Figure 2: RadScrollBar's visual structure
 
-![track-and-status-controls-scrollbar-structure 002](images/track-and-status-controls-scrollbar-structure002.png) 
+![WinForms RadScrollBar's visual structure](images/track-and-status-controls-scrollbar-structure002.png) 
  
 As every control which is build with Telerik Presentation Framework, __RadVScrollBar__ and __RadHScrollBar__ consist of building elements ordered in a tree where property values are inherited in direction from the root to the leaves. The rest of the article discusses the most important nodes for the scroll bar controls.
 

@@ -83,19 +83,19 @@ The following figures provide the end-user experience with **RadSpellChecker** a
 
 1. The end-user types '*Sales Representativ*':
 
-    ![spellchecker-spellchecking-radgridview 001](images/spellchecker-spellchecking-radgridview001.png)
+    ![WinForms RadSpellChecker Editing Cell](images/spellchecker-spellchecking-radgridview001.png)
 
 1. Then the end-user tries to commit the misspelled value by pressing the Enter key. As a consequence, the **RadSpellChecker** form is invoked:
 
-    ![spellchecker-spellchecking-radgridview 002](images/spellchecker-spellchecking-radgridview002.png)
+    ![WinForms RadSpellChecker Form](images/spellchecker-spellchecking-radgridview002.png)
 
 1. After the user chooses one of the suggestions and presses the `Change` button, the **RadSpellChecker** form disappears, leaving an informative message box that the spell checking operation is completed:
 
-    ![spellchecker-spellchecking-radgridview 003](images/spellchecker-spellchecking-radgridview003.png)
+    ![WinForms RadSpellChecker Success Dialog](images/spellchecker-spellchecking-radgridview003.png)
 
 1. The end-user pressed the `OK` button. Then, the message box disappears, the editor closes and the corrected value is saved in the cell:
 
-    ![spellchecker-spellchecking-radgridview 004](images/spellchecker-spellchecking-radgridview004.png)
+    ![WinForms RadSpellChecker Cell Text After Correcting the Value](images/spellchecker-spellchecking-radgridview004.png)
 
 # See Also
 

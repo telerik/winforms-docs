@@ -129,7 +129,7 @@ Me.RadChartView1.Series.Add(dryHoles)
 {{endregion}}
 
 >caption Figure 1: Inverse Axis
-![chartview-axes-inverse-axis 001](images/chartview-axes-inverse-axis001.png)
+![WinForms RadChartView Inverse Axis](images/chartview-axes-inverse-axis001.png)
 
 # See Also
 

@@ -15,7 +15,7 @@ Radar Column series visualize data in radial columns starting from one center po
 
 >caption Figure: 1 RadarColumn series. 
 
-![chartview series types radar 001](images/chartview-series-types-radar-column001.png)
+![WinForms RadChartView Radar Column series](images/chartview-series-types-radar-column001.png)
 
 
 The following example shows how you can add RadarColumnSeries to RadChartView:
@@ -94,4 +94,4 @@ Figure 2 shows the the result from the above code.
 
 >caption Figure: 2 RadarColumn series. 
 
- ![chartview series types radar 001](images/chartview-series-types-radar-column002.png)
+ ![WinForms RadChartView Radar Column Series](images/chartview-series-types-radar-column002.png)

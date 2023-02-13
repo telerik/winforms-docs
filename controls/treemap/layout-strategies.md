@@ -20,7 +20,7 @@ Currently there are two Layout Strategies to visualize the data:
 
 It creates rectangles with best aspect ratio:
 
-![treemap-layout-strategies 001](images/treemap-layout-strategies001.png)
+![WinForms RadTreeMap Squarified](images/treemap-layout-strategies001.png)
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Squarified}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Squarified}} 
@@ -45,7 +45,7 @@ this.radTreeMap1.Algorithm = squarifiedAlgorithm;
 
 It creates rectangles with high aspect ratio and displays them sorted either horizontally or vertically:
 
-![treemap-layout-strategies 002](images/treemap-layout-strategies002.png)
+![WinForms RadTreeMap Slice and Dice](images/treemap-layout-strategies002.png)
 
 For the **Slice and Dice** algorithm you can specify **Orientation** (*Horizontal*, *Vertical* or *Smart*) and **SortDirection** (*Ascending* or *Descending*):
 
@@ -96,7 +96,7 @@ Me.radTreeMap1.Algorithm = sliceDiceAlgorithmSmart
 
 #### Vertical Slice and Dice
 
-![treemap-layout-strategies 003](images/treemap-layout-strategies003.png)
+![WinForms RadTreeMap Vertical Slice and Dice](images/treemap-layout-strategies003.png)
  
 # See Also
 

@@ -13,7 +13,7 @@ previous_url: scheduler-views-time-zones
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Using Time Zones in RadScheduler for WinForms](http://www.telerik.com/videos/winforms/using-time-zones-in-radscheduler-for-winforms)<br>In this video, you will learn how to display appointments contained in RadScheduler in different time zones. You will also learn how to add time zone rulers to RadScheduler.|![scheduler-views-time-zones 009](images/scheduler-views-time-zones009.png)|
+|[Using Time Zones in RadScheduler for WinForms](http://www.telerik.com/videos/winforms/using-time-zones-in-radscheduler-for-winforms)<br>In this video, you will learn how to display appointments contained in RadScheduler in different time zones. You will also learn how to add time zone rulers to RadScheduler.|![WinForms RadScheduler Time Zones](images/scheduler-views-time-zones009.png)|
 
 
 The Time Zones feature of __RadScheduler__ allows the user to see a ruler representing an hour scale set according to a time zone different than the local time zone. In addition, the user can see not just one time ruler, but several rulers for several time zones at once. Two important properties determine the behavior of the Time Zones feature: SystemTimeZone and DefaultTimeZone.
@@ -66,7 +66,7 @@ Me.RadScheduler1.Appointments.Add(New Appointment(Date.Now.Date.AddHours(1), New
  By default, this appointment will be shown from 10:00 AM to 11:00 AM:
 
 >caption Figure 1: Default SystemTimeZone
-![scheduler-views-time-zones 001](images/scheduler-views-time-zones001.png)
+![WinForms RadScheduler Default SystemTimeZone](images/scheduler-views-time-zones001.png)
 
 2\. Let's now set the SystemTimeZone property to "UTC" time zone:
 
@@ -89,7 +89,7 @@ Me.RadScheduler1.SystemTimeZone = utcTimeZone
 This will change the representation of the appointment according to the time zone set to the client machine. Please note that the start time, end time and duration of the logical appointment are not changed. Only the representation of the appointment in the active view is changed. For example, if we start the RadScheduler on a client machine where the time zone is "UTC + 02:00", our appointment will look as shown on the screenshot below:
 
 >caption Figure 2: UTC SystemTimeZone
-![scheduler-views-time-zones 002](images/scheduler-views-time-zones002.png)
+![WinForms RadScheduler UTC SystemTimeZone](images/scheduler-views-time-zones002.png)
 
 This is a normal behavior, because when it is ten o'clock at the "UTC" time zone, locally ("UTC +02:00") it is twelve o'clock.
 
@@ -116,7 +116,7 @@ Me.RadScheduler1.Appointments.Add(New Appointment(Date.Now.Date.AddHours(1), New
 By default, this appointment will be shown from 10:00 AM to 11:00 AM:
 
 >caption Figure 3: Default Time Zone                
-![scheduler-views-time-zones 001](images/scheduler-views-time-zones001.png)
+![WinForms RadScheduler Default Time Zone](images/scheduler-views-time-zones001.png)
 
 2\. Let's now set the DefaultTimeZone property of the ActiveDayView to "UTC + 1" time zone:
 
@@ -139,11 +139,11 @@ Me.RadScheduler1.GetDayView().DefaultTimeZone = utcPlusOneTimeZone
 Again, this will change the representation of the appointment according to the time zone of the client machine. However, this time the appointment will be represented according to the time scale of the "UTC + 1" time zone. Since we are running the RadScheduler instance on a machine where the time zone set is "UTC + 2", an appointment starting at 10 o'clock will be represented as an appointment starting at 9:
 
 >caption Figure 4: UTC Default Time Zone    
-![scheduler-views-time-zones 004](images/scheduler-views-time-zones004.png)
+![WinForms RadScheduler UTC Default Time Zone](images/scheduler-views-time-zones004.png)
 
 ### Combining SystemTimeZone with DefaultTimeZone
           
-The combination of using both SystemTimeZone and DefaultTimeZone will result in the following representation:![scheduler-views-time-zones 003](images/scheduler-views-time-zones003.png)
+The combination of using both SystemTimeZone and DefaultTimeZone will result in the following representation:![WinForms RadScheduler SystemTimeZone with DefaultTimeZone](images/scheduler-views-time-zones003.png)
 
 ### TimeZones
           
@@ -291,16 +291,16 @@ Me.RadScheduler1.GetDayView().RulerWidth = 50
 After all these steps are performed, let's try to create an appointment starting at 10 o'clock on Jan 12 on a client machine where the local time zone is "(UTC +09:00) Osaka, Sapporo, Tokyo". Here is how this appointment will look like on client machines having different local time zones set:
 
 >caption Figure 1: RadScheduler started in Tokyo (or "(UTC +09:00) Osaka, Sapporo, Tokyo") 
-![scheduler-views-time-zones 005](images/scheduler-views-time-zones005.png)
+![WinForms RadScheduler RadScheduler started in Tokyo (or "(UTC +0900) Osaka, Sapporo, Tokyo")](images/scheduler-views-time-zones005.png)
 
 >caption Figure 2: RadScheduler started in Paris (or "(UTC +01:00) Brussels, Copenhagen, Madrid, Paris")
-![scheduler-views-time-zones 006](images/scheduler-views-time-zones006.png)
+![WinForms RadScheduler RadScheduler started in Paris (or "(UTC +000) Brussels, Copenhagen, Madrid, Paris")](images/scheduler-views-time-zones006.png)
 
 >caption Figure 3: RadScheduler started in London (or "(UTC) Dublin, Edinburgh, Lisbon, London")
-![scheduler-views-time-zones 007](images/scheduler-views-time-zones007.png)
+![WinForms RadScheduler RadScheduler started in London (or "(UTC) Dublin, Edinburgh, Lisbon, London")](images/scheduler-views-time-zones007.png)
 
 >caption Figure 4: RadScheduler started in New York (or "(UTC -04:00) Eastern Time (US and Canada)")
-![scheduler-views-time-zones 008](images/scheduler-views-time-zones008.png)
+![WinForms RadScheduler RadScheduler started in New York (or "(UTC -0400) Eastern Time (US and Canada)")](images/scheduler-views-time-zones008.png)
 
 # See Also
 

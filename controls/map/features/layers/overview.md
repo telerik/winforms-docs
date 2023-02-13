@@ -15,7 +15,7 @@ Layers provide an easy way to present meaningful information to the end user. A 
 
 >caption Figure 1: Map Layers 
 
-![map features layers overview 001](images/map-features-layers-overview001.png)
+![WinForms RadMap Map Layers](images/map-features-layers-overview001.png)
 
 The example below  uses the [BingRestMapProvider]({%slug winforms/map/providers/bingrestmapprovider%}) and adds pin and label elements to a couple of layers defined within the __RadMap__ control.
 

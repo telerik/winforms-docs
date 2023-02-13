@@ -14,7 +14,7 @@ This topic aims to get you familiar with all types of colorizers you may use to 
 
 Let's get started with creating a sample RadTreeMap, bound to the Northwind.Products table. You can read more on this topic in the [Data Binding]({%slug treemap-data-binding%}) article. The result is shown bellow: 
 
-![treemap-colorizers 001](images/treemap-colorizers001.png)
+![WinForms RadTreeMap Colorizers](images/treemap-colorizers001.png)
 
 By default, RadTreeMap uses a **PaletteColorizer** with a default palette.
 
@@ -24,7 +24,7 @@ Colorizes RadTreeMap per predefined collection of 8 palette colors. Each item in
 
 >caption Grouped RadTreeMap with PaletteColorizer
 
-![treemap-colorizers 004](images/treemap-colorizers004.png)
+![WinForms RadTreeMap Grouped RadTreeMap with PaletteColorizer](images/treemap-colorizers004.png)
 
 The available palettes for the PaletteColorizer are:
 
@@ -78,7 +78,7 @@ Me.radTreeMap1.Colorizer = paletteColorizer
 
 >caption TreeMapPalette.Arctic
 
-![treemap-colorizers 005](images/treemap-colorizers005.png)
+![WinForms RadTreeMap TreeMapPaletteArctic](images/treemap-colorizers005.png)
 
 ### RangeColorizer
 
@@ -86,7 +86,7 @@ This RangeColorizer contains a set of ranges defined by the **Stops** collection
 
 >note If no values are added to the **Stops** collection, the RangeColorizer gets the minimum/maximum values among the items and calculates default ranges.
 
-![treemap-colorizers 002](images/treemap-colorizers002.png)
+![WinForms RadTreeMap RangeColorizer](images/treemap-colorizers002.png)
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=RangeColorizer}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=RangeColorizer}} 
@@ -121,7 +121,7 @@ Me.radTreeMap1.Colorizer = rangeColorizer
 
 A colorizer, which contains a set of gradient stops. It chooses the color to be applied according to the TreeMapDataItem's value and colorizer's gradient stops. Values with higher values than the maximum will be colored as the **StartColor** and values with lower values than the minimum will be colored as the **EndColor**.  
 
-![treemap-colorizers 003](images/treemap-colorizers003.png)
+![WinForms RadTreeMap GradientColorizer](images/treemap-colorizers003.png)
 
 {{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=GradientColorizer}} 
 {{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=GradientColorizer}} 
@@ -175,7 +175,7 @@ Me.radTreeMap1.Colorizer = groupGradientColorizer
 
 {{endregion}} 
 
-![treemap-colorizers 006](images/treemap-colorizers006.png)
+![WinForms RadTreeMap Start/End Palette](images/treemap-colorizers006.png)
  
  
 # See Also

@@ -15,13 +15,13 @@ When __RadTreeView__ is in bound mode, it supports a basic drag and drop behavio
 
 >caption Figure 1: Default drag and drop behavior in bound mode
 
-![drag-and-drop-in-bound-mode 001](images/drag-and-drop-in-bound-mode001.gif)
+![WinForms RadTreeView Default drag and drop behavior in bound mode](images/drag-and-drop-in-bound-mode001.gif)
 
 In order to enable this functionality, you should set the __AllowDragDrop__ property to *true*. However, due to the specificity of  the __RadTreeView__’s [data binding]({%slug winforms/treeview/data-binding/data-binding-basics%})  and the set up hierarchical data structure, it is necessary to handle manually the drag and drop operation to obtain correct nodes order. 
 
 >caption Figure 2: Custom drag and drop behavior in bound mode
 
-![drag-and-drop-in-bound-mode 002](images/drag-and-drop-in-bound-mode002.gif)
+![WinForms RadTreeView Custom drag and drop behavior in bound mode](images/drag-and-drop-in-bound-mode002.gif)
 
 For this purpose, it is necessary to create a custom __TreeViewDragDropService__. This article demonstrates a sample approach how to achieve it.
 

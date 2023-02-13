@@ -18,4 +18,4 @@ The Visual Studio templates that install with Telerik UI for WinForms let you ad
 {% include cta-panel-overview.html %}
 {% endif %}
         
-![forms-and-dialogs-templates-overview 001](images/forms-and-dialogs-templates-overview001.png)
+![WinForms RadTemplates Overview](images/forms-and-dialogs-templates-overview001.png)

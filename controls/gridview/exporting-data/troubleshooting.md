@@ -15,7 +15,7 @@ previous_url: gridview-exporting-data-export-to-troubleshooting
 
 Check for invalid DateTime values, such as "0001-01-01T00:00:00.000". MS Excel does not support DateTime values before "1900-01-01". UPDATE: Since R1 2010 the __ExportToExcelML__ method validates the date values and throws a FormatException with message: "The DateTime value is not supported in Excel!".
 
-## RadGridView cannot export images
+## RadGridView Cannot Export Images
 
 Images cannot be exported to MS Excel, because Excel does not support embedded images in cells. In addition, the [ExportToExcelML]({%slug winforms/gridview/exporting-data/export-to-excel-via-excelml-format%}) method uses a special XML format which cannot include images by specification.
 

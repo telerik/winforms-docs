@@ -14,7 +14,7 @@ Since **RadFontDropDownList** internally uses a **RadListView** in *DetailsView*
 
 You can access the hosted **RadListView** control by the RadFontDropDownList.**FontListView** property and subscribe to its **CellFormatting** event in order to customize cell elements:
 
-![editors-fontdropdownlist-formatting-items 001](images/editors-fontdropdownlist-formatting-items001.png)
+![WinForms RadFontDropDownList Formatting Items](images/editors-fontdropdownlist-formatting-items001.png)
 
 #### Formatting the cell elements
 

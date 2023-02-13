@@ -20,11 +20,11 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Select __RadWaitingBarIndicatorElement__ in *Controls Structure* on the left side.
 
-	![button-customizing-appearance-themes 001](images/track-and-status-controls-waitingbar-accessing-and-customizing-elements-themes001.png)
+	![WinForms RadWaitingBar Controls Structure](images/track-and-status-controls-waitingbar-accessing-and-customizing-elements-themes001.png)
 
 1. Modify the applied *fill* repository item. 
 
-	![button-customizing-appearance-themes 002](images/track-and-status-controls-waitingbar-accessing-and-customizing-elements-themes002.png)
+	![WinForms RadWaitingBar Fill Repository](images/track-and-status-controls-waitingbar-accessing-and-customizing-elements-themes002.png)
 
 1. Save the theme by selecting *File >> Save As*.
 

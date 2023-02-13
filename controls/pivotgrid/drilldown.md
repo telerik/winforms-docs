@@ -16,9 +16,9 @@ The __LocalDataSourceProvider__ exposes a __GetUnderlyingData__ method which all
 
 In the example below we will handle RadPivotGrid.__MouseDoubleClick__ event and use the retrieved IEnumerable object to bind [RadGridView]({%slug winforms/gridview%}) and display the result.
 
->caption Figure 1: RadPivotGrid Drill Down Data
+>caption Figure 1: Drill Down Data
 
-![pivotgrid-drilldown 001](images/pivotgrid-drilldown001.gif)
+![WinForms RadPivotGrid Drill Down Data](images/pivotgrid-drilldown001.gif)
 
 #### GetUnderlyingData Method
 

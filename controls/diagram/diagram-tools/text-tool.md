@@ -33,11 +33,11 @@ Me.RadDiagram1.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool
 
 Let's consider we already have a shape in __RadDiagram__. As soon as you click on the shape, you will enter its edit mode. This way you can easily modify its content.
         
->caption Fig.1 Edit shape
+>caption Figure 1: Edit shape
 
-![diagram-tools-text-tool 001](images/diagram-tools-text-tool001.gif)
+![WinForms RadDiagram Edit Shape](images/diagram-tools-text-tool001.gif)
 
 And what is more, as soon as you activate the __TextTool__, you can dynamically create a text shape by dragging a rectangle on the diagramming surface:
->caption Fig.2 Create shape
+>caption Figure 2: Create shape
 
-![diagram-tools-text-tool 002](images/diagram-tools-text-tool002.gif)
+![WinForms RadDiagram Create shape](images/diagram-tools-text-tool002.gif)

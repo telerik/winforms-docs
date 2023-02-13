@@ -29,17 +29,17 @@ You can set the __DataSource__ property at design time in the *Properties* windo
 
 	>caption Figure: 1 Setting the DataSource at Design time
 
-	![dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding 001](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding001.png)
+	![WinForms RadListControl Setting the DataSource at Design time](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding001.png)
 
 1. Afterwards, you need to specify the __DisplayMember__ and __ValueMember__ properties.
 
 	>caption Figure: 2 Setting the DisplayMember and ValueMember properties at Design time
 
-	![dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding 002](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding002.png)
+	![WinForms RadListControl Setting the DisplayMember and ValueMember properties at Design time](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding002.png)
 
 	>caption Figure: 3 RadListControl bound at Design time
 
-	![dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding 003](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding003.png)
+	![WinForms RadListControl RadListControl Bound at Design time](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding003.png)
 
 ## Data binding at run time
 
@@ -116,7 +116,7 @@ End Sub
 
 >caption Figure: 4 RadListControl bound at Run time
 
-![dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding 004](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding004.png)
+![WinForms RadListControl 4 RadListControl bound at Run time](images/dropdown-and-listcontrol-listcontrol-populating-with-data-data-binding004.png)
 
 # See Also
 

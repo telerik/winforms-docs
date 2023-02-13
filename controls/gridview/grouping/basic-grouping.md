@@ -31,7 +31,7 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 
 >caption Figure 1: The grid is grouped by several fields.
  
-![gridview-grouping-basic-grouping 001](images/gridview-grouping-basic-grouping001.png)
+![WinForms RadGridView The grid is grouped by several fields](images/gridview-grouping-basic-grouping001.png)
 
 
 #### Setting grouping properties
@@ -93,7 +93,7 @@ Me.RadGridView1.ShowGroupPanelScrollbars = True
 {{endregion}} 
 |ShowGroupPanelScrollbars = *false* |ShowGroupPanelScrollbars = *true* |
 | ------ | ------ |
-|![gridview-grouping-basic-grouping 002](images/gridview-grouping-basic-grouping002.png)|![gridview-grouping-basic-grouping 003](images/gridview-grouping-basic-grouping003.png)|
+|![WinForms RadGridView ShowGroupPanelScrollbars False](images/gridview-grouping-basic-grouping002.png)|![WinForms RadGridView ShowGroupPanelScrollbars True](images/gridview-grouping-basic-grouping003.png)|
 # See Also
 * [Custom Grouping]({%slug winforms/gridview/grouping/custom-grouping%})
 

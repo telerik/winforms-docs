@@ -15,7 +15,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 The following picture shows the final result produced by the code of this tutorial.
 
-![officenavigationbar-getting-started 001](images/officenavigationbar-getting-started001.png)
+![WinForms RadOfficeNavigationBar Sample Overview](images/officenavigationbar-getting-started001.png)
 
 >note The design may vary according to the applied theme to the application. 
 

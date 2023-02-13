@@ -16,10 +16,10 @@ This article describes the inner structure and organization of the elements whic
 There are two main types of bullet graphs - __horizontal__ and __vertical__, depending on the direction in which the control is drawn.
 
 >caption Figure 1: RadBulletGraph`s Element Hierarchy
-![radbulletgraph-structure 001](images/radbulletgraph-structure001.png)
+![WinForms RadGauges RadBulletGraph`s Element Hierarchy](images/radbulletgraph-structure001.png)
 
 >caption Figure 2: RadBulletGraph`s Structure
-![radbulletgraph structure 002](images/radbulletgraph-structure002.png)
+![WinForms RadGauges RadBulletGraph`s Structure](images/radbulletgraph-structure002.png)
 
 1. __RadLinearGaugeElement:__ Represents the main element of __RadBulletGraph__.
 1. __BulletGraphQualitiveBar:__ Each of the bars building __RadBulletGraph__.

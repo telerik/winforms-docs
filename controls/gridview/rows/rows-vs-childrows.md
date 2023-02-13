@@ -19,7 +19,7 @@ RadGridView exposes two collections that contain data rows:
 
 ## Rows vs. ChildRows Example
 
-![gridview-rows-rows-vs-childrows 004](images/gridview-rows-rows-vs-childrows004.png)
+![WinForms RadGridView Rows vs. ChildRows](images/gridview-rows-rows-vs-childrows004.png)
 
 Let's start with a RadGridView bound to the `Employees` data table of the well-known Northwind data base. We will add two columns - one that will represent the indices of the rows in the context of the Rows collection and one that will represent the indices of the rows in the context of the __ChildRows__ collection. Then, we will execute some data operations on the RadGridView instance to demonstrate how this reflects on the __ChildRows__ collection.
 
@@ -93,7 +93,7 @@ End Sub
 
 {{endregion}} 
 
-![gridview-rows-rows-vs-childrows 001](images/gridview-rows-rows-vs-childrows001.png) 
+![WinForms RadGridView Populating the Grid](images/gridview-rows-rows-vs-childrows001.png) 
 
 As you can see in the screenshot above, in a grid with no data operations applied, the indices of the rows in the context of the __Rows__ and the indices of the rows in the context of the __ChildRows__ match.
               
@@ -120,7 +120,7 @@ End Sub
 {{endregion}} 
 
 
-![gridview-rows-rows-vs-childrows 002](images/gridview-rows-rows-vs-childrows002.png) 
+![WinForms RadGridView Filter the Control](images/gridview-rows-rows-vs-childrows002.png) 
 
 As you can see in the screenshot above, the indices of the rows do not match anymore. While the indices of the __ChildRows__ column are still consequent numbers, the indices of the Rows column are not. This is, because the __ChildRows__ collection is based on what you get from RadGridView on the screen, while the __Rows__ collection contains all the rows that RadGridView contains, but which may not be presented to the user, because of some data operation.
               
@@ -146,7 +146,7 @@ End Sub
 
 {{endregion}} 
 
-![gridview-rows-rows-vs-childrows 003](images/gridview-rows-rows-vs-childrows003.png)
+![WinForms RadGridView Filtered Data](images/gridview-rows-rows-vs-childrows003.png)
 
 The result is expected and follows the explanation in step 3. The rows in the __ChildRows__ collection are only the rows that are displayed by RadGridView and are ordered in the order they are represented. On the other hand, the row instances and their order in the __Rows__ collection is not changed.
               
@@ -172,7 +172,7 @@ End Sub
 
 {{endregion}}
 
-![gridview-rows-rows-vs-childrows 005](images/gridview-rows-rows-vs-childrows005.png)
+![WinForms RadGridView Grouping the Control](images/gridview-rows-rows-vs-childrows005.png)
 
 However, as you can see, something seems wrong, because the data in the ChildRows IDs cells does not make sense. Why is this so? This is, because now the ChildRows collection of RadGridView has four rows and they are the group header rows. Each of these groups rows has a ChildRows collection which contains the actual grouped data rows. So, if we slightly modify the body of the SetIDs method as shown below, we will get the correct and expected result. In short, we access the group header rows and change their text according to the order in which they appear in the ChildRows collections. Further, we iterate over the ChildRows collections of the group header rows and set the indices to the data rows:
 
@@ -223,7 +223,7 @@ End Sub
 
 {{endregion}} 
 
-![gridview-rows-rows-vs-childrows 006](images/gridview-rows-rows-vs-childrows006.png)
+![WinForms RadGridView Modify Group Headers](images/gridview-rows-rows-vs-childrows006.png)
 
 ## Index properties
       

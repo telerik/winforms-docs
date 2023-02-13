@@ -18,7 +18,7 @@ previous_url: splitcontainer-overview
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![splitcontainer-overview 001](images/splitcontainer-overview001.png)
+![WinForms RadSplitContainer Overview](images/splitcontainer-overview001.png)
 
 The design of the control is simple, yet flexible enough to handle virtually any complex layout scenario. The layout consists of one or more **SplitPanel** instances, organized in containers. A container has “Orientation”, which defines the direction in which each child panel will be laid-out. It also composes a **SplitContainerLayoutStrategy** instance, which handles all layout requests from its owning container. Each **SplitPanel** instance has a member of type **SplitPanelSizeInfo**, which is used by the strategy to determine the size and position of this panel on its hosting container. Available are four different sizing modes per panel basis:
 

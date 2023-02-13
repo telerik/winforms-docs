@@ -18,7 +18,7 @@ Select __RadButton__ and click the small arrow at the top right position in orde
 
 >caption Figure 1: Smart Tag
 
-![buttons-toggleswitch-desing-time 001](images/buttons-button-design-time001.png)
+![WinForms RadButtons Smart Tag](images/buttons-button-design-time001.png)
 
 * __Common Tasks__
 

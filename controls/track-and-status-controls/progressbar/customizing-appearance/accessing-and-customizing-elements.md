@@ -19,7 +19,7 @@ You can access and modify the style for different elements in **RadProgressBar**
 
 >caption Figure 1: Element hierarchy editor
 
-![progressbar-accessing-and-customizing-elements 001](images/progressbar-accessing-and-customizing-elements001.png)
+![WinForms RadProgressBar Element hierarchy editor](images/progressbar-accessing-and-customizing-elements001.png)
 
 ## Programmatically
 

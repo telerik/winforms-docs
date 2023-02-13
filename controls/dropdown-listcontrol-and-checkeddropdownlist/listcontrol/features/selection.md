@@ -57,7 +57,7 @@ Me.radListControl1.SelectedValue = "MP3"
 
 {{endregion}}
 
-![listcontrol-selectitems001](images/listcontrol-selectitems001.png)
+![WinForms RadListControl Select Items Programmatically ](images/listcontrol-selectitems001.png)
 
 >note **SelectedItems** property gets the collection of selected items.
 

@@ -55,7 +55,7 @@ verticalAxis.ScaleBreaks.Add(scaleBreakItem1)
 {{endregion}}  
 
 >caption Figure 1: ScaleBreak
-![chartview-axes-scale-breaks 001](images/chartview-axes-scale-breaks001.png)
+![WinForms RadChartView ScaleBreak](images/chartview-axes-scale-breaks001.png)
 
 ## Scale Breaks Settings
 
@@ -102,7 +102,7 @@ verticalAxis.ScaleBreakSize = 10
 {{endregion}} 
 
 >caption Figure 2: ScaleBreaks Settings
-![chartview-axes-scale-breaks 002](images/chartview-axes-scale-breaks002.png)
+![WinForms RadChartView ScaleBreaks Settings](images/chartview-axes-scale-breaks002.png)
 
 # See Also
 

@@ -28,7 +28,7 @@ After the steps specified above are performed, drop-down arrows will appear in t
 
 >caption Figure 1: Enable Filtering
 
-![spreadsheet-features-filtering 001](images/spreadsheet-features-filtering001.png) 
+![WinForms RadSpreadsheet Enable Filtering](images/spreadsheet-features-filtering001.png) 
 
 At this point the filtering is enabled but no filters are applied. In order to remove the filtering, use the toggle button again.
 
@@ -38,7 +38,7 @@ By clicking the arrow found in each column header, you can open the filtering po
 
 >caption Figure 2: Filtering Popup
 
-![spreadsheet-features-filtering 002](images/spreadsheet-features-filtering002.png) 
+![WinForms RadSpreadsheet Filtering Popup](images/spreadsheet-features-filtering002.png) 
 
 The top section is devoted to sorting. The rest of the filtering popup exposes the following options:
 
@@ -58,11 +58,11 @@ You can apply a filter by using the options provided by the filtering popup. The
 
 >caption Figure 3: Custom Filter Dialog
 
-![spreadsheet-features-filtering 003](images/spreadsheet-features-filtering003.png) 
+![WinForms RadSpreadsheet Custom Filter Dialog](images/spreadsheet-features-filtering003.png) 
 
 >caption Figure 4: Top Filter Dialog
 
-![spreadsheet-features-filtering 004](images/spreadsheet-features-filtering004.png) 
+![WinForms RadSpreadsheet Top Filter Dialog](images/spreadsheet-features-filtering004.png) 
 
 When a filter is applied the respective option in the filtering popup will be checked, to signify which type of filter is applied and the *Clear Filter* option will become available.
 
@@ -88,19 +88,19 @@ Figure 5 shows a document with a filtered range with two columns, before a filte
 
 >caption Figure 5: Initial State
 
-![spreadsheet-features-filtering 005](images/spreadsheet-features-filtering005.png)
+![WinForms RadSpreadsheet Initial State](images/spreadsheet-features-filtering005.png)
 
 If we apply a top filter on the second column, so as to show only the three largest numbers, this will hide rows 2 and 3.
 
 Figure 6: Apply Top Filter 
 
-![spreadsheet-features-filtering 006](images/spreadsheet-features-filtering006.png)
+![WinForms RadSpreadsheet Apply Top Filter](images/spreadsheet-features-filtering006.png)
 
 This will completely hide the respective values from the filtering tree of the first column.
 
 Figure 7: Result
 
-![spreadsheet-features-filtering 007](images/spreadsheet-features-filtering007.png)
+![WinForms RadSpreadsheet Result](images/spreadsheet-features-filtering007.png)
 
 ## Apply Filters Programmatically
 

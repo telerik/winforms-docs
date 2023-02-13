@@ -31,13 +31,13 @@ This tutorial demonstrates configuring __RadRotator__ at design-time, then runni
 
 5\. Locate and click the __RadImageItem__.
 
-![rotator-getting-started 001](images/rotator-getting-started001.png)
+![WinForms RadRotator Rotator Design Time](images/rotator-getting-started001.png)
 
 6\. In the __Rad Items Collection Editor__ properties, click the Image property ellipses.
 
 7\. In the __Select Resource__ dialog, click the __Local Resource__ radio button, click the __Import__ button and open any image file. The "Sample Pictures" distributed with Windows can be used too.
 
-![rotator-getting-started 002](images/rotator-getting-started002.png)
+![WinForms RadRotator Select Resource Window](images/rotator-getting-started002.png)
 
 8\. Click __OK__ to close the __Select Resource__ dialog.
             
@@ -50,7 +50,7 @@ This tutorial demonstrates configuring __RadRotator__ at design-time, then runni
 
 12\. In the designer, notice the controls in the upper left of the __RadRotator__. Click the ">" button and observe that you can navigate through the items at design time.
 
-![rotator-getting-started 003](images/rotator-getting-started003.png)
+![WinForms RadRotator Rotator Review](images/rotator-getting-started003.png)
 
 13\. In the __Properties__ window for the __RadRotator__, set the __Running__ property to __true__.
 

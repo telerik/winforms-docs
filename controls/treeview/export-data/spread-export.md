@@ -25,9 +25,9 @@ Here is how the following RadTreeView, looks when it is exported.
       
 >caption Figure 1: Before and after export
 
-![treeview-export-data-spread-export 001](images/treeview-export-data-spread-export001.png)
+![WinForms RadTreeView Before export](images/treeview-export-data-spread-export001.png)
 
-![treeview-export-data-spread-export 002](images/treeview-export-data-spread-export002.png)
+![WinForms RadTreeView After export](images/treeview-export-data-spread-export002.png)
 
 >note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
 * Telerik.WinControls.TelerikExport
@@ -183,7 +183,7 @@ End Sub
 
 >caption Figure 2: Export using formating
 
-![treeview-export-data-spread-export 003](images/treeview-export-data-spread-export003.png)
+![WinForms RadTreeView Export using formating](images/treeview-export-data-spread-export003.png)
 
 * __ExportCompleted__: This event is triggered when the export operation completes.
 
@@ -200,7 +200,7 @@ The following example will demonstrate how the async spread export feature can b
         
 >caption Fig.3 Exporting Data Asynchronously
 
-![treeview-export-data-spread-export 004](images/treeview-export-data-spread-export004.png)
+![WinForms RadTreeView Exporting Data Asynchronously](images/treeview-export-data-spread-export004.png)
 
 1. The following code shows how you can subscribe to the notification events and start the async export operation.
 

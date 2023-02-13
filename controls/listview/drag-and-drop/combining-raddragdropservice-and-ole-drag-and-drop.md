@@ -57,7 +57,7 @@ Me.RadListView1.ViewType = Telerik.WinControls.UI.ListViewType.IconsView
 
 >caption Figure 1: Drag and drop from RadListView to RadListControl using RadDragDropService
 
-![listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 001](images/listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop001.gif)
+![WinForms RadListView Drag and drop from RadListView to RadListControl using RadDragDropService](images/listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop001.gif)
 
 To implement drag and drop functionality for this scenario, we will use the ListViewElement.__DragDropService__, which is a derivative of the In the __PreviewDragOver__ event allow dropping over a __RadListElement__. The __PreviewDragDrop__  event performs the actual inserting of the dragged item into the RadListControl.__Items__ collection:
 
@@ -133,7 +133,7 @@ End Sub
 
 >caption Figure 2: Drag and drop from RadListControl to RadListView using the OLE drag-and-drop
 
-![listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop 002](images/listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop002.gif)
+![WinForms RadListView Drag and drop from RadListControl to RadListView using the OLE drag-and-drop](images/listview-drag-and-drop-combining-raddragdropservice-and-ole-drag-and-drop002.gif)
 
 1\. Firstly, we should start the drag and drop operation using the RadListControl.__MouseMove__ event when the left mouse button is pressed. We should keep the mouse down location in the RadListControl.__MouseDown__ event. Afterwards, allow dragging over the __RadListView__ via the __Effect__ argument of the __DragEventArgs__  in the RadListView.__DragEnter__ event handler:
 

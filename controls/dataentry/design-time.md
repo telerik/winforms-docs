@@ -14,7 +14,7 @@ This article shows what you can achieve using the smart tag of RadDataEntry.
 
 >caption Figure 1: RadDataEntry Smart Tag
 
-![dataentry-design-time001](images/dataentry-design-time001.png)
+![WinForms RadDataEntry Smart Tag](images/dataentry-design-time001.png)
 
 * __Common Tasks__
 

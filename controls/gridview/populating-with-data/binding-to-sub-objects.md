@@ -177,7 +177,7 @@ RadGridView1.DataSource = list
 
 {{endregion}} 
 
-![gridview-populating-with-data-binding-to-subobjects 001](images/gridview-populating-with-data-binding-to-subobjects001.png)
+![WinForms RadGridView Defining Classes](images/gridview-populating-with-data-binding-to-subobjects001.png)
 
 Now to setup the sub-property binding of the `Car` column, all you have to do is to declare in the __FieldName__ property of the column, the name of the Car object property that you want to bind the column to (Model or Year), using the __dot__ notation:
 
@@ -197,7 +197,7 @@ RadGridView1.Columns(2).FieldName = "Car.Model"
 
 The result is that the `Car` column is now bound to the __Model__ property of the `Car` object
 
-![gridview-populating-with-data-binding-to-subobjects 002](images/gridview-populating-with-data-binding-to-subobjects002.png)
+![WinForms RadGridView Binding to Sub Objects](images/gridview-populating-with-data-binding-to-subobjects002.png)
 # See Also
 * [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})
 

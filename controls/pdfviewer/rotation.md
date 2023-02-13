@@ -12,7 +12,7 @@ position: 13
 
 __RadPdfViewer__ control provides functionality for rotating the pages of the loaded document. You can programmatically rotate the document pages through the __Rotate__ method or the __RotationAngle__ property.   
 
-![pdfviewer-rotation001](images/pdfviewer-rotation001.png)        
+![WinForms RadPdfViewer Rotation Overview](images/pdfviewer-rotation001.png)        
 
 The __Rotate__ method is intended to rotate the pages of the loaded document at the specified angle relative to its initial position. The method takes a single argument of type __RotationAngle__. The __RotationAngle__ is an enumeration that specifies the angle at which the document should be rotated. The possible values are: *Degrees0, Degrees90, Degrees180, Degrees270*.
 

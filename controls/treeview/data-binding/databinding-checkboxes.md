@@ -12,7 +12,7 @@ position: 8
 
 Since R3 2014 __RadTreeView__ supports binding the check-boxes of the nodes to a field in the data. You just need to specify   the RadTreeView. __CheckedMember__ property. The following code snippet demonstrates how to setup hierarchical tree by using two separate DataTables:
 
-![treeview-data-binding-data-binding-basics 003](images/treeview-data-binding-data-binding-basics003.png)
+![WinForms RadTreeView Binding check boxes](images/treeview-data-binding-data-binding-basics003.png)
 
 {{source=..\SamplesCS\TreeView\DataBinding\BasicsHierarchyForm.cs region=CheckedMember}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BasicsHierarchyForm.vb region=CheckedMember}} 
@@ -87,7 +87,7 @@ radTreeView1.CheckBoxes = True
 ## Binding CheckBoxes with Object Relational Hierarchy
 
 
-Consider the following diagram which can be illustrated with the sample classes below: ![treeview-data-binding-binding-to-object-relational-data 002](images/treeview-data-binding-binding-to-object-relational-data002.png)
+Consider the following diagram which can be illustrated with the sample classes below: ![WinForms RadTreeView Sample Classes](images/treeview-data-binding-binding-to-object-relational-data002.png)
 
 Note that the __IsActive__ and the __Status__ properties represent boolean data. 
 
@@ -231,7 +231,7 @@ End Class
 
 The code snippet below illustrates how to bind the check-boxes coming from the described properties:
 
-![treeview-data-binding-binding-to-object-relational-data 003](images/treeview-data-binding-binding-to-object-relational-data003.png)
+![WinForms RadTreeView Binding CheckBoxes with Object Relational Hierarchy](images/treeview-data-binding-binding-to-object-relational-data003.png)
 
 {{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=CheckedMember}} 
 {{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=CheckedMember}} 

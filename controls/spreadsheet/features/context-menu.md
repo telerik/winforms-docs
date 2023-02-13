@@ -17,7 +17,7 @@ By default the WorksheetEditor of RadSpreadsheet have a context menu. The contro
 
 >caption Figure 1: Worksheet Editor's Context Menu
 
-![Rad Spreadsheet UI Worksheet Editor Context Menu 01](images/RadSpreadsheet_UI_Worksheet_Editor_Context_Menu_01.png)
+![WinForms RadSpreadsheet Worksheet Editor's Context Menu](images/RadSpreadsheet_UI_Worksheet_Editor_Context_Menu_01.png)
 
 ## Modifying the default Context Menu
 
@@ -76,5 +76,5 @@ End Sub
 
 >caption Figure 2: RadSpreadsheetSheetSelector's Context Menu
 
-![Rad Spreadsheet UI Worksheet Editor Context Menu 02](images/RadSpreadsheet_UI_Worksheet_Editor_Context_Menu_02.png)
+![WinForms RadSpreadsheet RadSpreadsheetSheetSelector's Context Menu](images/RadSpreadsheet_UI_Worksheet_Editor_Context_Menu_02.png)
 

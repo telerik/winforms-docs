@@ -20,13 +20,13 @@ previous_url: panels-and-labels-separator
 
 >caption Figure 1: RadSeparator
 
-![panels-and-labels-separator 001](images/panels-and-labels-separator001.png)
+![WinForms RadTemplates Overview](images/panels-and-labels-separator001.png)
 
 The control have several properties that you might find interesting:
 
 * __Orientation__ - gets or sets the control orientation to Vertical or Horizontal
 
-    ![panels-and-labels-separator 002](images/panels-and-labels-separator002.png)
+    ![WinForms RadSeparator Orientation](images/panels-and-labels-separator002.png)
 
 * __ShadowOffset__ - gets or sets the offset of the both lines, both horizontal and vertical
 
@@ -88,7 +88,7 @@ Here is the result of the following code:
 
 >caption Figure 2: RadSeparator Customization
 
-![panels-and-labels-separator 003](images/panels-and-labels-separator003.png)
+![WinForms RadSeparator Customization](images/panels-and-labels-separator003.png)
 
 # See Also
 

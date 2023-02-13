@@ -73,6 +73,6 @@ End Sub
 
 >caption Figure 1: Custom Paint
 
-![](images/sparkline-custom-paint001.png)
+![WinForms RadSparkline Custom Paint](images/sparkline-custom-paint001.png)
 
 

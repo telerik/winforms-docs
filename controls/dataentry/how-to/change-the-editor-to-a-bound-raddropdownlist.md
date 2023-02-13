@@ -13,9 +13,9 @@ previous_url: dataentry-how-to-change-editor-to-drop-down-list
 
 This article will walk you through the process of changing the default editor to a bound drop down list, where the current value corresponds to a value within the drop down list data source. The case where the corresponding values are nullable is also handled. 
 
->caption Figure 1. Custom Editor
+>caption Figure 1: Custom Editor
 
-![dataentry-how-to-change-editor-to-drop-down-list 001](images/dataentry-how-to-change-editor-to-drop-down-list001.png)
+![WinForms RadDataEntry Custom Editor](images/dataentry-how-to-change-editor-to-drop-down-list001.png)
 
 1\. First you can subscribe to the __BindingCreating__, __BindingCreated__ and __EditorInitializing__ events of __RadDataEntry__ (please note that this should be done before the data entry control is being data bound). 
 

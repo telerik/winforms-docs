@@ -21,7 +21,7 @@ __GridViewImageColumn__ displays *read-only* images for database columns of **Im
 
 Supported image formats are those supported by the `Image` class of the .NET Framework. 
 
-![gridview-columns-gridviewimagecolumn 001](images/gridview-columns-gridviewimagecolumn001.png)
+![WinForms RadGridView GridViewImageColumn](images/gridview-columns-gridviewimagecolumn001.png)
 
 #### Create GridViewImageColumn
 

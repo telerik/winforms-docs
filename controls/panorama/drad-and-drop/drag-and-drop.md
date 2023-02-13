@@ -16,7 +16,7 @@ position: 1
 
 By default, **RadPanorama** supports drag and drop functionality of the tiles within the same **RadPanorama**. The following example demonstrates a sample approach how to handle the aforementioned events and achieve drag and drop behavior between two **RadPanorama** controls. There is a **TileGroupElement** added to each **RadPanorama**.
 
-![panorama-drag-and-drop 001](images/panorama-drag-and-drop001.gif)
+![WinForms RadPanorama Drag Drop](images/panorama-drag-and-drop001.gif)
 
 {{source=..\SamplesCS\Panorama\PanoramaDragDrop.cs region=CustomTileDragDropService}} 
 {{source=..\SamplesVB\Panorama\PanoramaDragDrop.vb region=CustomTileDragDropService}} 

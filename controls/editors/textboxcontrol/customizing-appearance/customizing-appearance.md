@@ -15,7 +15,7 @@ You can easily change the styles of the border and the BackColor in the `Element
 1. Open the `Element Hierarchy Editor` from the smart tag.
 2. Select __RadTextBoxControlElement__. 
 3. Change the __BackColor__ and the __BorderColor__ properties:
-    ![editors-textboxcontrol-customizing-appearance 001](images/editors-textboxcontrol-customizing-appearance001.png)
+    ![WinForms RadTextBoxControl Customizing Appearance](images/editors-textboxcontrol-customizing-appearance001.png)
 
 
 # See Also

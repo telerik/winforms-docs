@@ -13,11 +13,11 @@ previous_url: gridview-filtering-excel-like-filtering
 
 Excel-Like filtering offers another way for filtering data in RadGridView by the end user. It is built in a way to mimic the standard excel filtering functionality and offers a dialog, which contains a list with distinct column values, from which the end user can chose.
 
-![gridview-filtering-excel-like-filtering 001](images/gridview-filtering-excel-like-filtering001.png)
+![WinForms RadGridView Excel-like filtering](images/gridview-filtering-excel-like-filtering001.png)
 
 In addition Excel-Like filtering supports the default filters available thorough "Available Filter" menu item and custom filter form.
 
-![gridview-filtering-excel-like-filtering 002](images/gridview-filtering-excel-like-filtering002.png)
+![WinForms RadGridView Available Filter](images/gridview-filtering-excel-like-filtering002.png)
 
 Enabling the excel-like filtering is quite easy. You have to set the grid's properties __EnableFiltering__ and __ShowHeaderCellButtons__:
 
@@ -60,7 +60,7 @@ Me.RadGridView1.Columns("ContactName").AllowFiltering = False
 
 {{endregion}} 
 
-![gridview-filtering-excel-like-filtering 003](images/gridview-filtering-excel-like-filtering003.png)
+![WinForms RadGridView AllowFiltering](images/gridview-filtering-excel-like-filtering003.png)
 
 ## Customizing Excel-like filtering popup
 
@@ -70,7 +70,7 @@ __Calendar filter popup__
 
 This popup allows convenient selection of specific date, or period. It will be shown for DateTime columns automatically  and by default it contains three custom menu items – *Today*, *Yestarday* and *During last 7 days*. A customization of the custom items is possible through following methods: __ClearCustomMenuItems__, __AddCustomMenuItem__ and __RemoveCustomMenuItem__. Here is how the default popup for DateTime column looks like:
 
-![gridview-filtering-excel-like-filtering 004](images/gridview-filtering-excel-like-filtering004.png)
+![WinForms RadGridView Customizing Excel-like filtering popup](images/gridview-filtering-excel-like-filtering004.png)
 
 The following code demonstrates how to clear the default custom items, and how to add your own item to this popup:
 
@@ -104,7 +104,7 @@ End Sub
 
 Here is how the customized popup looks like
 
-![gridview-filtering-excel-like-filtering 005](images/gridview-filtering-excel-like-filtering005.png)
+![WinForms RadGridView Customized popup](images/gridview-filtering-excel-like-filtering005.png)
 
 ### Simple list filter popup
 
@@ -137,9 +137,9 @@ End Sub
 >note As of R1 2021 **RadSimpleListFilterPopup** can filter the time part more precisely. It is possible through GridViewDateTimeColumn.**FilteringTimePrecision** property that allows to specify how the time part of the DateTime value will be evaluated while filtering. The possible values are *Hour*, *Minute*, *Second*, and *All*. **FilteringTimePrecision** property works with **FilteringMode** property of the column set to GridViewTimeFilteringMode.**DateTime** or GridViewTimeFilteringMode.**Time**.
 >
 
-![gridview-filtering-excel-like-filtering 006](images/gridview-filtering-excel-like-filtering006.png)
+![WinForms RadGridView Simple list filter popup](images/gridview-filtering-excel-like-filtering006.png)
 
-### Grouped dates popup
+### Grouped Dates Popup
 
 This pop allows representation of date values grouped by year and month in a list. This simplifies the process of selecting more than one filtering criteria based on month or year.
 
@@ -170,9 +170,9 @@ End Sub
 
 {{endregion}} 
 
-![gridview-filtering-excel-like-filtering 007](images/gridview-filtering-excel-like-filtering007.png)
+![WinForms RadGridView Grouped Dates Popup](images/gridview-filtering-excel-like-filtering007.png)
 
-# See Also
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

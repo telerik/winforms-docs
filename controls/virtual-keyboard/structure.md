@@ -25,11 +25,11 @@ This article shows the inner structure and organization of the elements which bu
 
 >caption Figure 1: RadVirtualKeyboard's elements hierarchy
 
-![winforms/virtual-keyboard-structure 001](images/virtual-keyboard-structure001.png) 
+![WinForms RadVirtualKeyboard's elements hierarchy](images/virtual-keyboard-structure001.png) 
 
 >caption Figure 2: RadVirtualKeyboard's visual structure
 
-![winforms/virtual-keyboard-structure 002](images/virtual-keyboard-structure002.png) 
+![WinForms RadVirtualKeyboard's visual structure](images/virtual-keyboard-structure002.png) 
 
 
  

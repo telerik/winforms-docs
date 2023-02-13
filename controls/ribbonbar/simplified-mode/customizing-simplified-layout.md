@@ -53,7 +53,7 @@ End Sub
 
 The bellow image shows the difference.
 
-![](images/customizing-simplified-layout001.png)
+![WinForms RadRibbonBar Before After Custom Simplified Layout](images/customizing-simplified-layout001.png)
 
 # See Also
 

@@ -1,6 +1,6 @@
 ---
-title: GettingStarted
-page_title: GettingStarted - WinForms StatusStrip Control
+title: Getting Started
+page_title: Getting Started - WinForms StatusStrip Control
 description: WinForms StatusStrip provides a status area that can be composed of any number of RadElement types - buttons, repeat buttons, image buttons, labels, panels, progress bars and separators.
 slug: winforms/forms-and-dialogs/statusstrip/gettingstarted
 tags: gettingstarted
@@ -9,11 +9,11 @@ position: 2
 previous_url: forms-and-dialogs-statusstrip-getting-started
 ---
 
-# GettingStarted
+# Getting Started
  
 The following tutorial demonstrates configuring __RadStatusStrip__ at design-time and programmatic access of individual status bar items at run-time. The status bar contains label, separator, buttons and progress bar elements. One of the button elements increments the __RadListControl__ selected index. The label and one of the button elements reflect the current selection in the __RadListControl__ while the progress bar mimics a process against the upcoming item.
         
-![forms-and-dialogs-statusstrip-getting-started 001](images/forms-and-dialogs-statusstrip-getting-started001.png)
+![WinForms RadStatusStrip Getting Started](images/forms-and-dialogs-statusstrip-getting-started001.png)
 
 1\. Add a __RadStatusStrip,__ and a __RadListControl__ to a form. 
         
@@ -25,7 +25,7 @@ The following tutorial demonstrates configuring __RadStatusStrip__ at design-tim
 
 >note Setting the **Spring** property to *true* will stretch horizontally the respective element. Thus, this element will occupy the free space and the rest of the elements will be positioned on the right most side when resizing the **RadStatusStrip**. 
             
-![forms-and-dialogs-statusstrip-getting-started 002](images/forms-and-dialogs-statusstrip-getting-started002.png)
+![WinForms RadStatusStrip Spring](images/forms-and-dialogs-statusstrip-getting-started002.png)
 
 5\. In the *Type here* element click the downward arrow. Add the following elements:
             

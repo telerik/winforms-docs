@@ -101,7 +101,7 @@ Me.RadGridView1.SortDescriptors.Add(descriptorFreight)
 
 >caption Figure 1: Sorting by Two Columns
 
-![gridview-sorting-setting-sorting-programmatically 001](images/gridview-sorting-setting-sorting-programmatically001.png)
+![WinForms RadGridView Sorting by Two Columns](images/gridview-sorting-setting-sorting-programmatically001.png)
 
 >note The order of adding the sort expressions to the SortDescriptors collections matters. In the example above, the grid will be first sorted by the `ShipName` column and then each group will be sorted according to the `Freight` column.
 >

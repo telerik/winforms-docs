@@ -15,11 +15,11 @@ This article describes the inner structure and organization of the elements whic
 
 >caption Figure 1: RadCollapsiblePanel`s Element Hierarchy
 >
-![panels-and-labels-collapsible-panel-structure001](images/panels-and-labels-collapsible-panel-structure001.png)
+![WinForms RadCollapsiblePanel`s Element Hierarchy](images/panels-and-labels-collapsible-panel-structure001.png)
 
 >caption Figure 2: RadCollapsiblePanel`s Structure
 >
-![panels-and-labels-collapsible-panel-structure002](images/panels-and-labels-collapsible-panel-structure002.png)
+![WinForms RadCollapsiblePanel`s Structure](images/panels-and-labels-collapsible-panel-structure002.png)
 
 1. **RadCollapsiblePanelElement**: Main element of the **RadCollapsiblePanel** control.
 

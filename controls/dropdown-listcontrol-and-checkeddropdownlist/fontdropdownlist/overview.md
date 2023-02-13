@@ -17,7 +17,7 @@ CTAControlName: FontDropDownList
 {% include cta-panel-overview.html %}
 {% endif %}
 
-![editors-fontdropdownlist-overview 001](images/editors-fontdropdownlist-overview001.png)
+![WinForms RadFontDropDownList Overview](images/editors-fontdropdownlist-overview001.png)
 
 ## Key Features
 

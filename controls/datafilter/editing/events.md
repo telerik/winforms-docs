@@ -43,7 +43,7 @@ The following code snippet demonstrates how to replace the default editor with a
 
 >caption Figure 1: Replace default editor with drop down
 
-![datafilter-events 001](images/datafilter-events001.png)
+![WinForms RadDataFilter Replace default editor with drop down](images/datafilter-events001.png)
 
 #### Replace and customize the default editor
 

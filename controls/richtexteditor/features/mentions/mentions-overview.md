@@ -31,9 +31,9 @@ For your convenience, RadRichTextEditor comes with a default implementation of a
 * Comes with a predefined mention template that shows the image and the name of a person (as shown in **Figure 1**), so you shouldn't take care about that.
 * Inserts the mention character and the item that has been selected as a hyperlink with the `PersonMentionItem.Name` as text and `PersonMentionItem.Mail` as URL.
 
-#### Figure 1: Default mention template
+#### Figure 1: Default Mention Template
 
-![Default mention template](images/richtexteditor-features-mentions-overview001.png)
+![WinForms RadRichTextEditor Default Mention Template](images/richtexteditor-features-mentions-overview001.png)
 
 **Example 1** demonstrates how to populate data and enable the mentions using **PersonMentionProvider**.
 
@@ -98,9 +98,9 @@ Me.radRichTextEditor1.MentionContext.Providers.Add(personMentionProvider)
 
 Figure 2 shows how the result of Example 1 would look like in RadRichTextEditor.
 
-#### Figure 2: Default mention template
+#### Figure 2: Person Mention Provider
 
-![richtexteditor-features-mentions-overview002](images/richtexteditor-features-mentions-overview002.gif)
+![WinForms RadRichTextEditor PersonMentionProvider](images/richtexteditor-features-mentions-overview002.gif)
 
 ## Custom Mention Character
 

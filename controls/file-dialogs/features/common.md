@@ -61,7 +61,7 @@ Dim dr As DialogResult = saveFileDialog.ShowDialog()
 
 >caption Figure 1: RadOpenFileDialog in Tile view mode
 
-![winforms/file-dialogs-features-common 001](images/file-dialogs-features-common001.png) 
+![WinForms RadFileDialogs RadOpenFileDialog in Tile View Mode](images/file-dialogs-features-common001.png) 
 
 The layout is determined by the LayoutType enum that provides the following modes:
 
@@ -83,23 +83,23 @@ The layout is determined by the LayoutType enum that provides the following mode
 
 You can add a new folder in all the dialog controls with the **New Folder** button. The created folder enters edit mode in all [Layout View Modes](#setting-the-initial-layout-of-the-tiles). 
 
->caption Figure 2: New folder button and new folder
+>caption Figure 2: New Folder Button and New Folder
 
-![winforms/file-dialogs-features-common 002](images/file-dialogs-features-common002.png) 
+![WinForms RadFileDialogs New Folder Button and New Folder](images/file-dialogs-features-common002.png) 
 
 ## Edit Mode
 
 In order to edit the selected file/folder, you can press the `F2` key. Alternatively, you can click on the text block which holds the file/folder name in all layouts except the *Details* layout where you can click on the cell holding the file/folder name. If you try to add a reserved character in a file/folder name, you will receive the warning illustrated in Figure 3:
 
->caption Figure 3: Reserved character warning 
+>caption Figure 3: Reserved Character Warning 
 
-![winforms/file-dialogs-features-common 003](images/file-dialogs-features-common003.png) 
+![WinForms RadFileDialogs Reserved Character Warning](images/file-dialogs-features-common003.png) 
 
 Trying to change the file extension prompts the message box shown in Figure 4:
 
->caption Figure 4: Changing file extension message box 
+>caption Figure 4: Changing File Extension Message Box 
 
-![winforms/file-dialogs-features-common 004](images/file-dialogs-features-common004.png) 
+![WinForms RadFileDialogs Changing File Extension Message Box ](images/file-dialogs-features-common004.png) 
 
 ## Using the ContextMenu
 
@@ -107,7 +107,7 @@ Trying to change the file extension prompts the message box shown in Figure 4:
 
 >caption Figure 5: Showing the ContextMenu
 
-![winforms/file-dialogs-features-common 005](images/file-dialogs-features-common005.png) 
+![WinForms RadFileDialogs Showing the ContextMenu](images/file-dialogs-features-common005.png) 
 
 ## Disable the Automatic Expanding to Current Directory
 
@@ -150,9 +150,9 @@ Dim dr As DialogResult = openFileDialog.ShowDialog()
 
 ````
 
->caption Figure 6: Showing hidden files 
+>caption Figure 6: Showing Hidden Files 
 
-![winforms/file-dialogs-features-common 006](images/file-dialogs-features-common006.png) 
+![WinForms RadFileDialogs Showing Hidden Files](images/file-dialogs-features-common006.png) 
 
 # See Also
 

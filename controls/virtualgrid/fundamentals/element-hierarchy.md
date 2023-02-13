@@ -12,7 +12,7 @@ position: 1
 
 __RadVirtualGrid__ uses the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%})  which enables rich experiences like advanced styling and animations. Just like WPF it uses elements ordered in a visual tree called element hierarchy. This article describes the element hierarchy used in __RadVirtualGrid__:
 
-![virtualgrid-fundamentals-element-hierarchy001](images/virtualgrid-fundamentals-element-hierarchy001.png)    
+![WinForms RadVirtualGrid Elements Hierarchy](images/virtualgrid-fundamentals-element-hierarchy001.png)    
 
 * __VirtualGridElement:__ This is the root element in grid hierarchy. It contains all other grid elements.
 

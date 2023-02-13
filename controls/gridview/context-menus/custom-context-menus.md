@@ -15,7 +15,7 @@ __RadGridView__ provides a straightforward way to use custom context menus, inst
 
 >caption Figure 1: Custom Context Menu.
 
-![gridview-context-menus-custom-context-menus 001](images/gridview-context-menus-custom-context-menus001.png)
+![WinForms RadGridView Custom Context Menu](images/gridview-context-menus-custom-context-menus001.png)
 
 Start by creating the context menu, initializing its items, and subscribing for the events that you want to handle to achieve the desired behavior. Note: You will need Telerik.WinControls.UI namespace added to your "Using" (C#) or "Imports" (VB).
 

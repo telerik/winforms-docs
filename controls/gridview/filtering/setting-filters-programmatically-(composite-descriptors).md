@@ -41,11 +41,11 @@ Me.RadGridView1.FilterDescriptors.Add(compositeFilter)
 
 The __CompositeFilterDescriptors__ supports *__And__* and *__Or__* logical operators. Result of the above example using *__And__* logical operator:
 
-![gridview-filtering-setting-filters-programmatically-composite-descriptors 001](images/gridview-filtering-setting-filters-programmatically-composite-descriptors001.png)
+![WinForms RadGridView CompositeFilterDescriptors](images/gridview-filtering-setting-filters-programmatically-composite-descriptors001.png)
 
 Result of the above example using *__Or__* logical operator:
 
-![gridview-filtering-setting-filters-programmatically-composite-descriptors 002](images/gridview-filtering-setting-filters-programmatically-composite-descriptors002.png)
+![WinForms RadGridView CompositeFilterDescriptors With LogicalOperator](images/gridview-filtering-setting-filters-programmatically-composite-descriptors002.png)
 
 ## More Complex Composite Filters
 
@@ -124,7 +124,7 @@ Me.RadGridView1.MasterTemplate.ExcelFilteredColumns.Add(Me.RadGridView1.Columns(
 
 {{endregion}} 
 
-# See Also
+## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
 
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

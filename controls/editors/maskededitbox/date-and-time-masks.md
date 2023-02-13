@@ -37,7 +37,7 @@ Where standard date codes are too restrictive, create your own custom formats u
 
 Full list of the supported masks can be found in the following MSDN article: [Custom DateTime masks](http://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.71).aspx)
 
-For example, a DateFormat of "ddd, MMMM yyyy - dd" might display:![editors-maskededitbox-date-and-time-masks 001](images/editors-maskededitbox-date-and-time-masks001.png)
+For example, a DateFormat of "ddd, MMMM yyyy - dd" might display:![WinForms RadMaskedEditBox editors-maskededitbox-date-and-time-masks 001](images/editors-maskededitbox-date-and-time-masks001.png)
  
 
 | __Format Pattern__ | __Description__ |

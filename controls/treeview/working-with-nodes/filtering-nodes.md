@@ -15,7 +15,7 @@ RadTreeView supports filtering of its nodes according to their __Text__ property
         
 For example, if we have this RadTreeView instance:
 
-![treeview-working-with-nodes-filtering 001](images/treeview-working-with-nodes-filtering001.png)
+![WinForms RadTreeView Filtering Nodes](images/treeview-working-with-nodes-filtering001.png)
 
 and we set the __Filter__ property as shown below:
 
@@ -35,7 +35,7 @@ Me.RadTreeView1.Filter = "new"
 
 we will get this look of RadTreeView at the end:
 
-![treeview-working-with-nodes-filtering 002](images/treeview-working-with-nodes-filtering002.png)
+![WinForms RadTreeView Filter Property](images/treeview-working-with-nodes-filtering002.png)
 
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})

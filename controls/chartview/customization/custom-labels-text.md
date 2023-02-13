@@ -94,7 +94,7 @@ horizontalAxis.LabelFormatProvider = New MyFormatProvider()
 {{endregion}}
 
 >caption Figure 1: Format Provider
-![chartview-customization-custom-labels 001](images/chartview-customization-custom-labels001.png)
+![WinForms RadChartView Format Provider](images/chartview-customization-custom-labels001.png)
 
 ##  Example 2: Showing the date part of a label only on day changes 
 
@@ -167,7 +167,7 @@ dateTimeAxis.LabelFormatProvider = New DateTimeFormatProvider()
 {{endregion}}
 
 >caption Figure 2: DateTime Format Provider
-![chartview-customization-custom-labels 002](images/chartview-customization-custom-labels002.png)
+![WinForms RadChartView DateTime Format Provider](images/chartview-customization-custom-labels002.png)
 
 >note The above provider implementation is applicable only to axes working with __DateTime__ objects  ( __DateTimeContinuousAxis__ and __DateTimeCategoricalAxis__ ).
 >

@@ -13,11 +13,11 @@ previous_url: propertygrid-touch-support
 
 **RadPropertyGrid** supports scrolling operations via touch interface. Simply drag the screen to the desired position in order to performs scrolling.
 
->caption Figure 1: RadPropertyGrid Touch Support
+>caption Figure 1: Touch Support
 
-![propertygrid-touch-support 001](images/propertygrid-touch-support001.png)
+![WinForms RadPropertyGrid Touch Support](images/propertygrid-touch-support001.png)
 
-As you can see on the following image, the control is scrolled down.<br>![propertygrid-touch-support 002](images/propertygrid-touch-support002.png)
+As you can see on the following image, the control is scrolled down.<br>![WinForms RadPropertyGrid propertygrid-touch-support 002](images/propertygrid-touch-support002.png)
 
 # See Also
 

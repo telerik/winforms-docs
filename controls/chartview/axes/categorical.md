@@ -63,7 +63,7 @@ End If
 {{endregion}} 
 
 >caption Figure 1: Categorical Axes Setup
-![chartview-axes-categorical 001](images/chartview-axes-categorical001.png)
+![WinForms RadChartView Categorical Axes Setup](images/chartview-axes-categorical001.png)
 
 # See Also
 
