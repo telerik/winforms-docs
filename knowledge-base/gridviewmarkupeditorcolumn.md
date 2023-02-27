@@ -20,6 +20,8 @@ res_type: kb
 A common requirement is to have a column in **RadGridView** that allows text formatting such as bold, italics, underline, link, etc. The following example demonstrates how you can achieve such custom column that uses **RadMarkupEditor**. Once, you enter the cell in edit mode the dialog is shown and you are able to format the text according to your needs.
 
 ![gridviewmarkupeditorcolumn.png](images/gridviewmarkupeditorcolumn.png)
+
+>caution As of R1 2023 the Microsoft.mshtml assembly is excluded from Telerik.WinControls.RadMarkupEditor.dll. For .NET Core (.NET 6, .NET 7 or newer) projects, it is necessary to add the reference explicitly to use RadMarkupupEditor since it uses the MS WebBrowser internally.
  
 ## Solution 
 
