@@ -1,5 +1,5 @@
 ---
-title: Properties and Events
+title: Properties, Methods and Events
 page_title: Properties and Events - WinForms Flyout Screen
 description: Learn the most important properties for changing the Flyout Screen appearance and behavior.
 slug: flyout-properties-events
@@ -16,6 +16,7 @@ position: 3
 |----|----|
 |**FlyoutInstance**|Return instance of FlyoutScreen|
 |**IsActive**|Get whether the Flyout is currently active or not|
+|**ActivateAssociatedFormOnClose**|Gets or sets a value indicating whether the associated form will be activated(focused) when the flyout is closed.|
 
 ## RadFlyoutManager's Methods
 
