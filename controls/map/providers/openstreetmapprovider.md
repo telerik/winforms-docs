@@ -56,7 +56,7 @@ private void RadForm1_Load(object sender, EventArgs e)
 	MapTileDownloader tileDownloader = osmProvider.TileDownloader as MapTileDownloader;
 	tileDownloader.WebHeaders.Add(System.Net.HttpRequestHeader.UserAgent, "your application name");
 	osmProvider.EnableCaching = false;
-	this.RadMap1.MapElement.Providers.Add(osmProvider);
+	this.radMap1.MapElement.Providers.Add(osmProvider);
 }
 
 public class CustomMapTileDownloader : MapTileDownloader
@@ -77,7 +77,7 @@ Private Sub RadForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 	Dim tileDownloader As MapTileDownloader = TryCast(osmProvider.TileDownloader, MapTileDownloader)
 	tileDownloader.WebHeaders.Add(System.Net.HttpRequestHeader.UserAgent, "your application name")
 	osmProvider.EnableCaching = False 
-	Me.RadMap1.MapElement.Providers.Add(osmProvider)
+	Me.radMap1.MapElement.Providers.Add(osmProvider)
 End Sub
 
 Public Class CustomMapTileDownloader
@@ -89,6 +89,12 @@ Public Class CustomMapTileDownloader
 	End Sub
 End Class
 
+
 ````
 
-{{endregion}} 
+
+{{endregion}}
+
+
+
+
