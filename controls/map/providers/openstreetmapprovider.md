@@ -42,7 +42,7 @@ Me.radMap1.MapElement.Providers.Add(osmProvider)
 
 ## Using Encrypted HTTP Version
 
-A __TLS 1.2 SecurityProtocol__ will be required when modifying the RadMap to use REST service. This protocol automatically comes with .NET Framework 4.7.  For older .NET Frameworks, or because of some other Windows settings, it may be necessary to explicitly choose TLS 1.2 for your application by setting the __System.Net.ServicePointManager.SecurityProtocol__ property to __SecurityProtocolType.Tls12__. Otherwise the tiles won't be donwload while using __https://__. This is further described in the [Transport Layer Security (TLS) best practices with the .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls) MSDN article.
+A __TLS 1.2 SecurityProtocol__ will be required when modifying the RadMap URL to use __https:\\__ while using OpenStreetMapProvider. This protocol automatically comes with .NET Framework 4.7.  For older .NET Frameworks, or because of some other Windows settings, it may be necessary to explicitly choose TLS 1.2 for your application by setting the __System.Net.ServicePointManager.SecurityProtocol__ property to __SecurityProtocolType.Tls12__. Otherwise the tiles won't be donwload while using __https://__. This is further described in the [Transport Layer Security (TLS) best practices with the .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls) MSDN article.
 
 {{source=..\SamplesCS\Map\OSMProvider.cs region=SecurityProtocol}} 
 {{source=..\SamplesVB\Map\OSMProvider.vb region=SecurityProtocol}}
