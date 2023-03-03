@@ -8,6 +8,8 @@ published: True
 position: 4  
 ---
 
+# Properties, Methods and Events
+
 ## SplashScreen's Properties
 
 |Property|Description|

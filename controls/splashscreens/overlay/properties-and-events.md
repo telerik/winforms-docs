@@ -1,5 +1,5 @@
 ---
-title: Properties and Events
+title: Properties, Methods and Events
 page_title: Properties and Events - WinForms Overlay Screen
 description: Learn the most important properties for changing the Overlay Screen appearance and behavior.
 slug: overlay-properties-events
@@ -15,6 +15,7 @@ position: 2
 |Property|Description|
 |----|----|
 |**OverlayInstance**|Return instance of OverlayScreen|
+|**ActivateAssociatedFormOnClose**|Gets or sets a value indicating whether the associated form will be activated(focused) when the overlay is closed.|
 
 ## RadOverlayManager's Methods
 
