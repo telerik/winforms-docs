@@ -11,7 +11,7 @@ previous_url: installation-deployment-and-distribution-vsx-automatic-latest-vers
 
 # Download New Version
 
-With the Telerik Visual Studio Extensions you keep your projects in an up-to-date state. The __Latest Version Acquirer__ tool automatically retrieves the freshest Telerik UI for WinForms distribution, available on the Telerik website. Running the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) as a next step makes the task of latest Telerik UI for WinForms package utilization extremely easy.
+With the Telerik Visual Studio Extensions you keep your projects in an up-to-date state. The __Latest Version Acquirer__ tool automatically retrieves the latest Telerik UI for WinForms distribution, available on the Telerik website. Running the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) as a next step makes the task of latest Telerik UI for WinForms package utilization extremely easy.
 
 When a solution containing an Telerik UI for WinForms project is loaded in Visual Studio, the Telerik WinForms VSExtension checks the Telerik website for a new version of Telerik UI for WinForms. A dialog gets displayed when a new version is available:
 
@@ -24,7 +24,13 @@ Clicking the __Update Now__ button starts the Latest Version Acquirer tool, prom
 
 ![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 002](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer002.png)
 
-You can use the __Save my password__ checkbox to save having to enter your Telerik credentials multiple times. The persistence is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
+![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 006](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer006.png)
+
+![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 007](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer007.png)
+
+![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 008](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer008.png)
+
+You can use the **Remember me** check-box to save having to enter your Telerik credentials multiple times. The persistence is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
 
 If your subscription has expired, you could either proceed with downloading a trial distribution  or you could renew it and initiate the download again.
 
@@ -34,7 +40,7 @@ You can check the additional information about the release by clicking the __Rel
 
 ![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 004](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer004.png)
 
-![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 005](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer005.png)
+
 
 Once the download succeeds, the latest version of the Telerik UI for WinForms will be available for use in the [Upgrade Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}) and the [New Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation%}).
 
