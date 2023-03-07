@@ -20,9 +20,9 @@ There are several appropriate resources which our customers can use to find most
 
 * [Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base): There are introduced different implementations of common problems/questions.
 
-* [Forums](http://www.telerik.com/community/forums/winforms.aspx): I would like to note that the forum is reviewed not only by the community. Our support engineers answer the questions there as well.
+* [Forums](https://www.telerik.com/forums/winforms): I would like to note that the forum is reviewed not only by the community. Our support engineers answer the questions there as well.
 
-* [Code Library](http://www.telerik.com/community/code-library/winforms.aspx): The community shares their specific implementation for a certain problem. 
+* [Code Library](https://www.telerik.com/support/code-library/winforms): The community shares their specific implementation for a certain problem. 
 
 * Demo application: We have introduced a considerable list of demos to help you. Not only does this showcase the capabilities of UI for WinForms, but it doubles as a invaluable resource of code and "how did they do that" samples. To access the Live Demo simply click on the Windows Start button and type WinForms Demo. If you are not able to find the Live Demos using that approach you can also download it directly from [here](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe).
 
@@ -32,7 +32,7 @@ Telerik has an exceptional history of support. It is unparalleled in the industr
 
 Let's continue with a few steps how to contact the Telerik WinForms Support if none of the above listed resource helped you:
 
-1. You can submit your support ticket after you [login in your Telerik.com account](https://www.telerik.com/account/support-tickets). Then, select the product **UI for WinForms**:
+1. You can submit your support ticket after you [login in your Telerik.com account](https://www.telerik.com/account/support-center). Then, select the product **UI for WinForms**:
 
 	![submit-support-tickets 001](images/submit-support-tickets001.png)
 
@@ -64,7 +64,7 @@ The trick of obtaining a "one response resolution", is to give as much informati
 
 * Specify clearly ordered steps to follow.
 
-* Provide screen shots and explanations of the expected and actual state of the application. An alternative option is to provide a screen recording of the issue. Download [Jing](http://www.techsmith.com/jing.html) for free, upload the recording to their server, and provide the link.
+* Provide screen shots and explanations of the expected and actual state of the application. An alternative option is to provide a screen recording of the issue. Download [TechSmith Capture](https://www.techsmith.com/jing-tool.html) for free, upload the recording to their server, and provide the link.
 
 * In case of obtaining an error message, copy/paste the entire message and/or provide a screen shot of it.
 	
@@ -81,8 +81,3 @@ The trick of obtaining a "one response resolution", is to give as much informati
 >important In case of multiple, unrelated questions please open a separate thread for each question with the appropriate Product (RadGridView for WinForms) and avoid mixing different subjects in the same thread. This will also give you the opportunity to track the different cases easily in your account. 
 
 Last, but not least, do not forget that [we are always here to help you](https://www.telerik.com/best-tech-support). We are only successful when you are successful. We will stick with you as long as it takes to get your ticket resolved. We want you to help you be as productive as possible. 
-
-
- 
- 
-
