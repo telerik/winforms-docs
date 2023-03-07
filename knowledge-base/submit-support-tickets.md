@@ -30,25 +30,27 @@ You will be surprised at how many of your issues can be resolved by a quick read
 
 Telerik has an exceptional history of support. It is unparalleled in the industry. You usually have a 24 hour guaranteed response time on your ticket ([depending on product and package](https://www.telerik.com/purchase/support-plans)). That's fast considering you are getting direct access to an engineer, but every back and forth that you have with the support team takes up valuable time. You need to make the most of your ticket the first time. You need that first response from the team to contain your answer, not a request for more information.
 
-Let's continue with a few steps how to contact the Telerik WinForms Support if none of the above listed resource helped you:
+Let's continue with a few steps how to contact the Telerik WinForms Technical Support if none of the above listed resource helped you:
 
-1. You can submit your support ticket after you [login in your Telerik.com account](https://www.telerik.com/account/support-center). Then, select the product **UI for WinForms**:
+1. Log into your Telerik.com account and navigate to the [Support Center - Contact Us](https://www.telerik.com/account/support-center/contact-us) page.
+2. Select the [Get Technical Support](https://www.telerik.com/account/support-center/contact-us/technical-support) option for technical help (use the [Get Licensing Support](https://www.telerik.com/account/support-center/contact-us/licensing-support) option for product license questions).
+3. Next, select the product **UI for WinForms**:
 
 	![submit-support-tickets 001](images/submit-support-tickets001.png)
 
-2. Pick up the **RadControl** for which you need assistance, e.g. **RadGridView**:
+4. Pick up the **RadControl** for which you need assistance, e.g. **RadGridView**:
 
 	![submit-support-tickets 002](images/submit-support-tickets002.png)
 
-3. Try to search for a possible solution for your inquiry, e.g. *"how to enable paging"*
+5. Try to search for a possible solution for your inquiry, e.g. *"how to enable paging"*
 
 	![submit-support-tickets 003](images/submit-support-tickets003.png)
 
-4. Have a look at the found results. You may find a suitable solution for your question:
+6. Have a look at the found results. You may find a suitable solution for your question:
 
 	![submit-support-tickets 004](images/submit-support-tickets004.png)
 
-5. If you are still not discovering what you are looking for, then our Support engineers would gladly assist you. Here comes the important part - what exactly to be included in the support ticket so that the agent that will be assigned to this thread to understand what you are trying to achieve.
+7. If you are still not discovering what you are looking for, then click the Contact Support button at the bottom to contact our Support engineers. Here comes the important part - what exactly to be included in the support ticket so that the agent that will be assigned to this thread to understand what you are trying to achieve.
 
 	![submit-support-tickets 005](images/submit-support-tickets005.png)
 
@@ -72,11 +74,11 @@ The trick of obtaining a "one response resolution", is to give as much informati
 
 >note Total attached files size should be smaller than 20MB.
 	
->important In case you decide to provide your original project, you can be certain that it will be used only for investigation purposes of this case and your privacy will be respected. Confidentiality is also described in our product EULA - See Section 11 of the [WinForms EULA](http://www.telerik.com/purchase/license-agreement/winforms-dlw-s) and Article V Section 11 of the DevCraft Complete and DevCraft Ultimate EULAs.
+>important In case you decide to provide your original project, you can be certain that it will be used only for investigation purposes of this case and your privacy will be respected. Confidentiality is also described in our product EULA - See Section 11 of the [WinForms EULA](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s) and Article V Section 11 of the DevCraft Complete and DevCraft Ultimate EULAs.
 
 * Specify the **Version** you are using since it will facilitate reproducing the issue. It is possible that a fix is available in a newer version.
 
-* The **.Net Framework** is also important as there may have some differences between the full framework and .NET Core/.NET 5.
+* The **.NET Framework** is also important as there may have some differences between the full framework and .NET Core/.NET 5.
 
 >important In case of multiple, unrelated questions please open a separate thread for each question with the appropriate Product (RadGridView for WinForms) and avoid mixing different subjects in the same thread. This will also give you the opportunity to track the different cases easily in your account. 
 
