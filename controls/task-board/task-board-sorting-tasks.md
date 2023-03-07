@@ -20,13 +20,13 @@ The **SortColumns** method sorts all columns in the Columns collection using the
 
 By default, the columns are displayed in the order of adding the columns. Let's consider that the columns are added in this way: "In Development", "Done", "Ready for Test", "Deleted":
 
->Default Columns Order
+>caption Default Columns Order
 
 ![WinForms RadTaskBoard Default Tasks Order](images/task-board-sorting-tasks001.png)
 
 If the **SortColumns** method is called, the column's title is considered and the columns are ordered alphabetically:
 
->Default Columns Sort Order
+>caption Default Columns Sort Order
 
 ![WinForms RadTaskBoard Default Sort Order](images/task-board-sorting-tasks002.png)
 
@@ -93,7 +93,7 @@ End Class
 
 {{endregion}}  
 
->Custom Columns Sort Order
+>caption Custom Columns Sort Order
 
 ![WinForms RadTaskBoard Default Sort Order](images/task-board-sorting-tasks003.png)
 
