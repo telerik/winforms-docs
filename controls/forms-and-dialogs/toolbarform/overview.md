@@ -23,8 +23,10 @@ position: 0
 ## Key Features
 
 * Straight-forward API for adding various UI elements - labels, buttons, text boxes, etc.
-* Adjustable height of the titlebar.
-* Horizontally separated title bar into three areas: Left, Middle, Right. 
+* Adjustable height of the title bar.
+* Horizontally separated title bar into three areas: Left, Middle, and Right.
+* Right-to-Left support.
+* Predefined text position.
 
 
 # See Also
