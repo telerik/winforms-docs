@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-When a single cell is copied in RadGridView with sufficient number of records (e.g. 50 000), the UI stays frozen and eventually leads to this error:
+When a single cell is copied in RadGridView with a sufficient number of records (e.g. 50 000), the UI stays frozen and eventually leads to this error:
 
 ![Windows11 Clipboard Error](images/windows11-clipboard-error.png)
 
