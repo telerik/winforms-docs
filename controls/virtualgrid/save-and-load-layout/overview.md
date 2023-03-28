@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Save and Load Layout Overview
+# WinForms VirtualGrid Overview
 
 Save/Load layout functionality gives your applications the opportunity to preserve user grid settings such as column order and restore them later. Those layout settings are written in a XML file.
 

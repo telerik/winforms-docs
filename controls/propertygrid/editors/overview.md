@@ -9,7 +9,7 @@ position: 0
 previous_url: propertygrid-editors
 ---
 
-# Editors
+# WinForms PropertyGrid Overview
 
 When RadPropertyGrid is not in read-only mode users can edit the contents of the selected item. Usually this process starts by pressing __Enter__ or __F2 key__. All of the following conditions should be met to put an item in edit mode:
 

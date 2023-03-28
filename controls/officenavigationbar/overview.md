@@ -9,7 +9,7 @@ position: 0
 CTAControlName: OfficeNavigationBar 
 ---
 
-# OfficeNavigationBar
+# WinForms OfficeNavigationBar Overview
 
 **RadOfficeNavigationBar** represents the control available in the MS Outlook 2013-2019 navigation style. 
 

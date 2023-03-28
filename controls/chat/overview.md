@@ -8,7 +8,7 @@ published: True
 position: 0 
 ---
 
-# Chat UI
+# WinForms Chat Overview
 
 Since **R2 2018** Telerik UI for WinForms suite offers **RadChat** control. This control provides rich conversational experience that goes beyond the natural language understanding and personality of your chatbot. This allows developers to easily implement conversational UI in their applications by utilizing AI powered framework that works with natural language processing, by following a predefined logical tree, or just for integrating P2P chat capabilities in their applications. 
 

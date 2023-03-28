@@ -10,7 +10,7 @@ CTAControlName: PdfViewer
 previous_url: pdfviewer-overview, pdfviewer-manipulating-programatically
 ---
 
-# PdfViewer
+# WinForms PdfViewer Overview
 
 | RELATED VIDEOS |  |
 | ------ | --- |

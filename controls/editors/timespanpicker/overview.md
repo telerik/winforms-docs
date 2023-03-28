@@ -9,7 +9,7 @@ position: 0
 CTAControlName: TimeSpanPicker
 ---
 
-# RadTimeSpanPicker
+# WinForms BrowseEditor Overview
 
 __RadTimeSpanPicker__ is a UI component that provides a full control over picking a specific time span and duration using the built-in components for days, hours, minutes, seconds and milliseconds. You can easily define some minimum/maximum ranges and specific value step for the components. **RadTimeSpanPicker** also provides the ability to create custom components to meet any specific user scenarios.
 

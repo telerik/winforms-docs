@@ -9,7 +9,7 @@ position: 0
 ---
 
 
-# Overview 
+# WinForms PageView Overview
 
 As of R2 2022 SP1 Telerik UI for WinForms suite offers a standalone [RadNavigationView]({%slug navigationview-overview%}) control which brings your application the well-known hamburger menu experience. 
  

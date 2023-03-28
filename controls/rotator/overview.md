@@ -10,7 +10,7 @@ CTAControlName: Rotator
 previous_url: rotator-overview
 ---
 
-# Rotator
+# WinForms Rotator Overview
 
 ## 
 

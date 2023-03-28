@@ -9,7 +9,7 @@ position: 0
 CTAControlName: DataFilter
 ---
 
-# RadDataFilter
+# WinForms DataFilter Overview
 
 Building complex filter expressions is a breeze with __RadDataFilter__. The control allows specifying expressions based on the fields.properties available in the data source. The intuitive UI of the control is designed to facilitate the end-user while empowering the developer to create related expressions with a few clicks.
 

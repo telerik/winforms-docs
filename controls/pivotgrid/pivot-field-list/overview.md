@@ -9,7 +9,7 @@ position: 0
 previous_url: pivotgrid-radpivotfieldlist
 ---
 
-# RadPivotFieldList
+# WinForms PivotGrid Overview
 
 __RadPivotFieldList__ is a control which provides functionality similar to the PivotTable Field List panel in MS Excel. Using RadPivotFieldList the end user can change the way of representing aggregated data in RadPivotGrid by modifying the column/row group descriptions, the aggregate descriptions or the report filters. The end users can do this by dragging fields across the four list boxes in RadPivotFieldList or by reordering the items in a single list.
 

@@ -8,7 +8,7 @@ published: True
 position: 0 
 ---
 
-# Providers Overview
+# WinForms Map Overview
 
 The __RadMap__ control needs a provider of imagery data in order to display a map. Currently, __RadMap__ supports the following providers:
 

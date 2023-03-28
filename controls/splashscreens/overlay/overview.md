@@ -9,7 +9,7 @@ position: 0
 CTAControlName: Overlay
 ---
 
-# Overlay
+# WinForms Flyout Overview
 
 Thank you for choosing __RadOverlay__!
 

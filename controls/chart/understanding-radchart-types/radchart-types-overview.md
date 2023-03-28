@@ -9,7 +9,7 @@ position: 0
 previous_url: chart-undestanding-radchart-types-radchart-types-overview
 ---
 
-# RadChart Types Overview
+# WinForms Chart Overview
 
 
 

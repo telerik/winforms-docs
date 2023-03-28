@@ -9,7 +9,7 @@ position: 0
 previous_url: richtexteditor-document-elements-annotations
 ---
 
-# Annotations
+# WinForms RichTextEditor Overview
 
 The structure of a **RadDocument** is normally determined by the content in it, i.e. the text is distributed in **Paragraphs** and **Sections** depending on the layout desired by the end user.The same applies to the presence of **Hyperlinks** and **Images**.
       

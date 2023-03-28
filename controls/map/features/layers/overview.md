@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Layers Overview
+# WinForms Map Overview
 
 Layers provide an easy way to present meaningful information to the end user. A __RadMap__ control may have many layers each responsible for a different part of the presentation logic. The layer object represents a collection holding __MapVisualElements__. The __RadMap.Layers__ property is responsible for exposing the layers allowing easy access and manipulation.
 

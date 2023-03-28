@@ -9,11 +9,10 @@ position: 8
 previous_url: chart-undestanding-radchart-elements-series-overview
 ---
 
-# Series Overview
 
 
 
-## 
+# WinForms Chart Overview
 
 Series refers to a series of data points displayed in the chart. The RadChart Series object is a collection of [ChartSeriesItem]({%slug winforms/chart/understanding-radchart-elements/series-items%}) objects.  The number of series used depends on the type of chart.  A Pie chart type only uses a single series. "Stacked" charts like the Stacked Area chart use several series.
 

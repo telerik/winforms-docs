@@ -9,7 +9,7 @@ position: 0
 previous_url: pageview-backstageview-getting-started
 ---
 
-# Getting Started
+# WinForms PageView Overview
  
 The PageViewMode.*Backstage* is designed as an answer to the introduced in Microsoft Office2010 view mode. This is an extended StripView mode, which means that all customizations that apply to strip view apply here as well. In this mode the items (**RadPageViewPage** items) are displayed on the left side (by default), but this can be easily customized. Orientation supports all four modes and defines the relation between the content and the item area.  Additionally, you can add group header items.
 

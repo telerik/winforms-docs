@@ -9,7 +9,7 @@ position: 0
 CTAControlName: CardView
 ---
 
-# CardView
+# WinForms Cardview Overview
 
 With __RadCardView__, users can display and edit text data organized in a card layout. This powerful control incorporates a __RadLayoutControl__ that allows you to modify the layout both in the Visual Studio designer and during run-time.
 

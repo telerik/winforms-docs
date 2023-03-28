@@ -9,7 +9,7 @@ position: 0
 CTAControlName: Overlay
 ---
 
-# Splash Screen
+# WinForms Flyout Overview
 
 The WinForms SplashScreen allows you to display a Telerik themed control that notifies the user that the program is loading. You can customize the image of the splash screen, its animations and loading process visualization.
 

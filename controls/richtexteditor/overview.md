@@ -10,7 +10,7 @@ CTAControlName: RichTextEditor
 previous_url: richtexteditor, richtexteditor-troubleshooting, richtexteditor-styles-and-templates-template-structure, richtexteditor-styles-and-templates-styling-the-richtexteditor, richtexteditor-styles-and-templates   
 ---
 
-# RichTextEditor
+# WinForms RichTextEditor Overview
 
 __RadRichTextEditor__ is a control that allows you to bring word-processing to your applications. It can display and edit rich-text content, including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
 

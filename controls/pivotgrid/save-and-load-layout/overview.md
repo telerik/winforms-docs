@@ -9,7 +9,7 @@ position: 0
 previous_url: pivotgrid-save-and-load-layout
 ---
 
-# Save and Load Layout
+# WinForms PivotGrid Overview
 
 __RadPivotGrid__ supports save and load layout functionality, which gives your applications the opportunity to preserve user  __RadPivotGrid__ settings such as group descriptors and restore them later. Those layout settings are written in a xml file.
 

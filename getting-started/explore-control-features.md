@@ -1,6 +1,6 @@
 ---
-title: Explore Control Features
-page_title: Explore Control Features
+title: Explore UI for WinForms Control Features
+page_title: Explore UI for WinForms Control Features
 description: This article provides a short overview of how to get started with finding WinForms control functionality and use them.
 slug: winforms/getting-started/explore-control-features
 tags: get,started,explore,control,features
@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Explore Control Features
+# Explore UI for WinForms Control Features
 Once you have the controls [working in your project] ({%slug winforms/getting-started/first-steps%}), it's time to see what they can do. This article provides a short overview of how to get started with finding control functionality and use them.
 
 ## Demos

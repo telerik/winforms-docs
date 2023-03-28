@@ -9,7 +9,7 @@ position: 0
 CTAControlName: Map
 ---
 
-# Map
+# WinForms Map Overview
 
 __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsportal.com/) and the [OpenStreetMaps](http://wiki.openstreetmap.org/wiki/API) REST services as well as from the local file system. 
 

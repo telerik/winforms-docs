@@ -9,7 +9,7 @@ position: 0
 CTAControlName: Spreadsheet
 ---
 
-# RadSpreadsheet
+# WinForms Spreadsheet Overview
 
 Thank you for choosing Telerik __RadSpreadsheet__!
 

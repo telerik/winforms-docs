@@ -10,7 +10,7 @@ CTAControlName: RibbonBar
 previous_url: ribbonbar-overview
 ---
 
-# Overview
+# WinForms RibbonBar Overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

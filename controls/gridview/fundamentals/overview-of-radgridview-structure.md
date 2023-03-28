@@ -9,7 +9,7 @@ position: 2
 previous_url: gridview-fundamentals-overview-of-radgridview-structure
 ---
 
-# Overview of RadGridView Structure
+# WinForms GridView Overview
 
 ## Row
 

@@ -9,7 +9,7 @@ position: 0
 CTAControlName: NavigationView 
 ---
 
-# RadNavigationView
+# WinForms NavigationView Overview
 
 As of **R2 2022 SP1** Telerik UI for WinForms suite offers a standalone **RadNavigationView** control. It provides a collapsible navigation pane that helps implement the hamburger menu pattern and automatically adapts the pane's display mode to different control sizes. The idea of the control is to be a top-level container and to contain all the controls and views that would be typically placed on a form. The menu pane is for navigation between different views and is not meant to contain actions.
 
