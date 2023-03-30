@@ -18,8 +18,7 @@ The NuGet package takes too long to install or update on Visual Studio. How to i
 
 ### Solution
 
-* Disable the auto-sync in the `_references.js` file by modifying the following `/// <autosync enabled="false" />` line.
-* You can also disconnect the project from the source control before running the Update Wizard.
+You can disconnect the project from the source control before running the Update Wizard.
 
 ## Issue: Telerik NuGet Returns 401 Logon Failed after Password Change
 
