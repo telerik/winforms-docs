@@ -18,7 +18,7 @@ The NuGet package takes too long to install or update on Visual Studio. How to i
 
 ### Solution
 
-You can disconnect the project from the source control before running the Update Wizard.
+You can disconnect the project from the source control before running the **Update Wizard**.
 
 ## Issue: Telerik NuGet Returns 401 Logon Failed after Password Change
 
