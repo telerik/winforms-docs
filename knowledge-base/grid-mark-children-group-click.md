@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
  
-When performing a grouping operation you may need to format specific child cells. For example, when the user clicks on a group cell, you may want to highlight important cell values. 
+When performing a grouping operation you may need to format specific child cells. For example, when the user right mouse clicks on a group cell, you may want to highlight important cell values. 
 
 ![RadGridView Format Group Child Cells](images/grid-format-group-cell-click.gif)
 
