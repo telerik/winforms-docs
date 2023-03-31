@@ -25,25 +25,29 @@ Telerik UI for Winforms suite contains two themes that are optimized for a touch
 
 The below images are showing the how the themes are looking with some of our controls.
 
->caption Figure 1: The Material theme
+>caption Figure 1: The Material Theme
 
 ![themes-touch-themes001](images/themes-touch-themes001.png)    
 
->caption Figure 2: The MaterialPink theme
+>caption Figure 2: The MaterialPink Theme
 
 ![themes-touch-themes002](images/themes-touch-themes002.png)
 
->caption Figure 3: The MaterialBlueGrey theme
+>caption Figure 3: The MaterialBlueGrey Theme
 
 ![themes-touch-themes003](images/themes-touch-themes003.png)
 
->caption Figure 4: The MaterialTeal theme
+>caption Figure 4: The MaterialTeal Theme
 
 ![themes-touch-themes004](images/themes-touch-themes004.png)
 
->caption Figure 5: The TelerikMetroTouch theme
+>caption Figure 5: The TelerikMetroTouch Theme
 
-![themes-touch-themes005](images/themes-touch-themes005.png)    
+![themes-touch-themes005](images/themes-touch-themes005.png)  
+
+>caption Figure 6: The Windows11 Theme
+
+![themes-touch-themes005](images/themes-touch-themes006.png)   
 
 # See Also
 

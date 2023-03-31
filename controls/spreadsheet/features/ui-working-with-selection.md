@@ -188,7 +188,7 @@ selection.ActiveCellMode = ActiveCellMode.Edit
  
 {{endregion}} 
 
-<!--- A similar logic applies to the Select() methods which take shapes as their parameters.
+A similar logic applies to the Select() methods which take shapes as their parameters.
 
 The following result can be achieved with the sample code below:
 
@@ -200,13 +200,13 @@ The following result can be achieved with the sample code below:
 {{source=..\SamplesVB\Spreadsheet\SelectionCode.vb region=Selection_5}}
 ````C#
 Selection selection_5 = this.radSpreadsheet.SpreadsheetElement.ActiveWorksheetEditor.Selection;
-var image = this.radSpreadsheet.SpreadsheetElement.ActiveWorksheet.Shapes.First() as FloatingShapeBase;
+var image = this.radSpreadsheet.SpreadsheetElement.ActiveWorksheet.Images.First() as FloatingShapeBase;
 selection_5.Select(image);
 
 ````
 ````VB.NET
 Dim selection_5 = Me.radSpreadsheet.SpreadsheetElement.ActiveWorksheetEditor.Selection
-Dim image = TryCast(Me.radSpreadsheet.SpreadsheetElement.ActiveWorksheet.Shapes.First(), FloatingShapeBase)
+Dim image = TryCast(Me.radSpreadsheet.SpreadsheetElement.ActiveWorksheet.Images.First(), FloatingShapeBase)
 selection_5.Select(image)
 
 ```` 
@@ -223,13 +223,13 @@ If you would like to select the second image while deselecting the first one, th
 {{source=..\SamplesVB\Spreadsheet\SelectionCode.vb region=Selection_6}}
 ````C#
 Selection selection_6 = this.radSpreadsheet.SpreadsheetElement.ActiveWorksheetEditor.Selection;
-var image2 = this.radSpreadsheet.SpreadsheetElement.ActiveWorksheet.Shapes.ElementAt(1) as FloatingShapeBase;
+var image2 = this.radSpreadsheet.SpreadsheetElement.ActiveWorksheet.Images.ElementAt(1) as FloatingShapeBase;
 selection_6.Select(image2, true);
 
 ````
 ````VB.NET
 Dim selection_6 = Me.radSpreadsheet.SpreadsheetElement.ActiveWorksheetEditor.Selection
-Dim image2 = TryCast(Me.radSpreadsheet.SpreadsheetElement.ActiveWorksheet.Shapes.ElementAt(1), FloatingShapeBase)
+Dim image2 = TryCast(Me.radSpreadsheet.SpreadsheetElement.ActiveWorksheet.Images.ElementAt(1), FloatingShapeBase)
 selection_6.Select(image2, True)
 
 ```` 
@@ -242,7 +242,6 @@ The result will be the following:
 ![WinForms RadSpreadsheet Select Next Image](images/RadSpreadsheet_UI_Selection_06.png)
 
 Note that even though the clearSelection parameter is set to true, this will clear only the shape selection. The underlying cell selection will remain intact and will become visible in its previous state if the shape selection becomes empty.
--->
 
 >important The static class [NameConverter](https://docs.telerik.com/devtools/document-processing/api/telerik.windows.documents.spreadsheet.utilities.nameconverter) provides some methods for converting cell names to indexes and vice versa. You could use the method NameConverter.**ConvertCellNameToIndex** which takes the cell name (e.g. "a3") and returns the row and column index of the cell. 
 
