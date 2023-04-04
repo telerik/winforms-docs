@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms Sparkline
 
 1\. To start using the RadSparkLine first you need to place the control on the form. By default the control should look like a regular panel.
 

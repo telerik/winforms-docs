@@ -9,7 +9,7 @@ position: 2
 CTAControlName: Calculator
 ---
 
-# Getting Started
+# Getting Started with WinForms Calculator
 
 This tutorial will walk you through the creation of a sample application that contains __RadCalculator__.
 

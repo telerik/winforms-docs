@@ -9,7 +9,7 @@ position: 1
 previous_url: shortcuts-getting-started-(radmenuitems)
 ---
 
-# Getting Started (RadMenuItems)
+# Getting Started with WinForms Shortcuts (RadMenuItems)
 
 1\. In a new Windows Application add a **RadMenu** to the form.
 

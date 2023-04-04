@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms DataFilter
 
 __RadDataFilter__ is a control that allows you to filter your data. It allows you to create complex filter criteria by using unlimited number of filter conditions combined by logical operators. This article will show you how to start using this control.
 

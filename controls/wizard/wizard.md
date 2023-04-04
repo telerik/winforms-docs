@@ -10,7 +10,7 @@ CTAControlName: Wizard
 previous_url: wizard-overview
 ---
 
-# Wizard
+# WinForms Wizard Overview
 
 __RadWizard__ will help you differentiate a complex process into separate steps and provide your users with the ability to govern the process upon their decisions. It is useful for creating  installation, registration and other types of wizards.    
 

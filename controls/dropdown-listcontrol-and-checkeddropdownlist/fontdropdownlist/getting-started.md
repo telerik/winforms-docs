@@ -8,7 +8,7 @@ published: True
 position: 3 
 ---
 
-# Getting Started
+# Getting Started with WinForms FontDropDownList
  
 The following tutorial demonstrates how to add a **RadFontDropDownList** and how to retrieve the selected font.
 

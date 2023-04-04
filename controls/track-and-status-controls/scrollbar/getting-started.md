@@ -9,7 +9,7 @@ position: 2
 previous_url: track-and-status-controls-scrollbar-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms ScrollBar
 
 Using Telerik scroll bars is a bit more intricate compared to using the standard scroll bars because you have to handle scroll event manually. The rest of this article demonstrates how you can use two panels to implement scrolling for the content of the second panel.
 

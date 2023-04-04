@@ -10,7 +10,7 @@ CTAControlName: TimePicker
 previous_url: editors-timepicker-overview
 ---
 
-# Time Picker
+# WinForms TimePicker Overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

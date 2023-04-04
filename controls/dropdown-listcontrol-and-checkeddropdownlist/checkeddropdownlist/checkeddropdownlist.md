@@ -10,7 +10,7 @@ CTAControlName: CheckedDropDownList
 previous_url: dropdown-and-listcontrol-checkedropdownlist
 ---
 
-# CheckedDropDownList
+# WinForms CheckedDropDownList Overview
 
 __RadCheckedDropDownList__ combines [RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist%}) and [RadAutoCompleteBox]({%slug winforms/editors/autocompletebox%}) in order to provide functionality to check items in the drop down area and tokenize them in the text area. All previous functionality is preserved, such as visual formatting and data binding, which is now extended. 
 

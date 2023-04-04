@@ -10,7 +10,7 @@ CTAControlName: ApplicationMenu
 previous_url: menus-application-menu-overview
 ---
 
-# ApplicationMenu
+# WinForms ApplicationMenu Overview
 
 **RadRibbonBar** combines the functions of menus, tab strips and tool bars to make an interface similar to those introduced in Microsoft Office 2007. With **RadRibbonBar** you can organize all of the functionality of your application into a single compact ribbon. When it is resized, the ribbon bar efficiently shows more or less details as space becomes available. If you use a Multiple Document Interface (MDI) layout, the ribbon bar will automatically manage the child forms.
 

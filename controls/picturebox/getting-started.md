@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms PictureBox
 
 To start using the control you only need to add a **RadPictureBox** control to the form either at design time by dragging it from the toolbox and dropping it into the form or via code. From the smart tag you can dock the control in parent's container.
 

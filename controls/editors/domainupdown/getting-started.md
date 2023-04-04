@@ -7,7 +7,9 @@ tags: domainupdown, getting, started
 published: True
 position: 3 
 ---
- 
+
+# Getting Started with WinForms DomainUpDown
+
 The following tutorial demonstrates how to add items and images to a **RadDomainUpDown** and how to retrieve the selected text and image.
 >caption Figure 1: Select a country from RadDomainUpDown
 

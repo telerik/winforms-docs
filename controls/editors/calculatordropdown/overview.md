@@ -10,7 +10,7 @@ CTAControlName: CalculatorDropDown
 previous_url: editors-calculatordropdown-overview
 ---
 
-# WinForms BrowseEditor Overview
+# WinForms CalculatorDropDown Overview
 
 __RadCalculatorDropDown__ has a simple easy-to-use interface enabling the end user to perform all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate.
 

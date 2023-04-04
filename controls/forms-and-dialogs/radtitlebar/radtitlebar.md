@@ -10,7 +10,7 @@ CTAControlName: TitleBar
 previous_url: forms-and-dialogs-radtitlebar-overview
 ---
 
-# RadTitleBar
+# WinForms TitleBar Overview
   
 __RadTitleBar__ control is used in forms and provides functionality for dragging, minimizing, maximizing and closing the form. This control is internally used by  __RadForm__.
 

@@ -8,7 +8,7 @@ published: True
 position: 4 
 ---
 
-# Getting Started
+# Getting Started with WinForms PageView
 
 To use **RadPageView**, you can simply drag it from Toolbox and drop it onto your form in the Visual Studio designer and use its [Smart Tag]({%slug winforms/pageview/design-time%}) to add pages. To switch between the different view modes, you can set the **ViewMode** property in the *Properties* window of the control. 
 

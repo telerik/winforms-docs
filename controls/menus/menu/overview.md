@@ -10,7 +10,7 @@ CTAControlName: Menu
 previous_url: menus-menu-overview
 ---
 
-# WinForms Menus Overview
+# WinForms Menu Overview
 
 **RadMenu** enables you to integrate attractive and flexible menus on Forms within your Windows applications.
 

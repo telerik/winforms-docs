@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms CalculatorDropDown
 
 The following example demonstrates how to set up __RadCalculatorDropDown__ with a minmum popup width and height.
 

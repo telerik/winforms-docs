@@ -8,7 +8,7 @@ published: True
 position: 0 
 ---
 
-# WinForms Forms and Dialogs Overview
+# WinForms ToolbarForm Overview
 
 **RadToolbarForm** allows you to build modern UI. Having items in the non-client area of the window is crucial to saving valuable space. With RadToolbarForm, you will be able to create modern applications that can mimic the Visual Studio title bar experience, thanks to the ability to add buttons, drop-down menus, text boxes and more.   
 

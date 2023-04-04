@@ -9,7 +9,7 @@ position: 0
 CTAControlName: ButtonTextBox
 ---
 
-# RadButtonTextBox
+# WinForms ButtonTextBox Overview
 
 **RadButtonTextBox** is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box. It exposes proper design time support to add button elements (and other elements). Once new buttons are added, you will be able to select the elements at design time and work with their properties.
 

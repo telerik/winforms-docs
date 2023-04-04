@@ -9,7 +9,7 @@ position: 2
 CTAControlName: OfficeNavigationBar
 ---
 
-# Getting Started
+# Getting Started with WinForms OfficeNavigationBar
 
 This tutorial will walk you through the creation of a sample application that contains __RadOfficeNavigationBar__.
 

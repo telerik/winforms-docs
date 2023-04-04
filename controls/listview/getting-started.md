@@ -9,7 +9,7 @@ position: 3
 previous_url: listview-getting-started
 ---
 
-# Getting started
+# Getting Started with WinForms ListView
  
 This article will demonstrate the basic capabilities of **RadListView**, like filtering, grouping, sorting, customizing items, etc. and it will show you in a step-by-step manner how to start creating applications with **RadListView**. 
 

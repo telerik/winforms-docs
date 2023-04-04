@@ -9,7 +9,7 @@ position: 3
 previous_url: bulletgraph-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms BulletGraph
 
 When you drag a __RadBulletGraph__ from the Toolbox and drop it onto the form, the gauge gallery will offer you to pick up the desired type:
 

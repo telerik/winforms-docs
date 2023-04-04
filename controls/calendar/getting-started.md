@@ -9,7 +9,7 @@ position: 3
 previous_url: calendar-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms Calendar
 
 
 This tutorial will demonstrate adding selected and special days to the calendar at design time, then iterating and displaying those dates at runtime.![WinForms RadCalendar Getting Started](images/calendar-getting-started004.gif)

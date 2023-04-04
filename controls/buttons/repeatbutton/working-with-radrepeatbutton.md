@@ -9,7 +9,7 @@ position: 3
 previous_url: buttons-repeatbutton-working-with-radrepeatbutton
 ---
 
-# Getting Started
+# Getting Started with WinForms RepeatButton
 
 You can add __RadRepeatButton__ either at design time or at run time:
 

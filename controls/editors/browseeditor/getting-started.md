@@ -9,7 +9,7 @@ position: 3
 previous_url: editors-browse-editor-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms BrowseEditor
 
 The following example demonstrates how to change the image of a __RadButton__ using the __RadBrowseEditor__.
 

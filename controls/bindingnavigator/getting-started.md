@@ -9,7 +9,7 @@ position: 1
 previous_url: bindingnavigator-overview-gettingstarted
 ---
 
-# Getting Started
+# Getting Started with WinForms BindingNavigator
 
 The following tutorial will demonstrate how to get __RadBindingNavigator__ up and running: 
 

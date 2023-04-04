@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Getting Started
+# Getting Started with WinForms ChartView
 
 The example below demonstrates setting up __RadChartView__ to display data from the *Northwind* database.
 

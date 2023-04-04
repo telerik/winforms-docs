@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Getting Started
+# Getting Started with WinForms Spreadsheet
 
 This article explains how to add a __RadSpreadsheet__ control to a form and wire it with __UI__.
       

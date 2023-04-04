@@ -9,7 +9,7 @@ position: 2
 previous_url: pdfviewer-getting-started
 ---
 
-# Getting started
+# Getting Started with WinForms PdfViewer
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

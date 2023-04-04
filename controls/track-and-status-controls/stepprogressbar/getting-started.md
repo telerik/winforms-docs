@@ -9,7 +9,7 @@ position: 3
 CTAControlName: StepProgressBar
 ---
 
-# Getting Started
+# Getting Started with WinForms StepProgressBar
 
 This tutorial will walk you through the creation of a sample application that contains __RadStepProgressBar__.
 

@@ -10,7 +10,7 @@ position: 4
 previous_url: panorama-getting-started
 ---
 
-# Getting Started 
+# Getting Started with WinForms Panorama
 
 | RELATED VIDEOS |  |
 | --- | ------ |

@@ -9,7 +9,7 @@ position: 3
 previous_url: track-and-status-controls-trackbar-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms TrackBar
 
 This tutorial demonstrates connecting a **RadTrackBar** to a **RadTextBox** control. Setting the track bar slider position changes the value in the text box.
         

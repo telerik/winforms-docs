@@ -9,7 +9,7 @@ position: 2
 previous_url: forms-and-dialogs-messagebox-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms MessageBox
 
 The following tutorial will show you a simple usage of __RadMessageBox__:
 

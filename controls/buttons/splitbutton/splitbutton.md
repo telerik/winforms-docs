@@ -10,7 +10,7 @@ CTAControlName: SplitButton
 previous_url: buttons-splitbutton-overview
 ---
 
-# SplitButton
+# WinForms SplitButton Overview
 
 __RadSplitButton__ provides a menu-like interface contained within a button that can be placed anywhere on a form.
 

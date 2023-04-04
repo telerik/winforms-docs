@@ -8,7 +8,7 @@ published: True
 position: 8
 ---
 
-# Form Converter
+# WinForms FormConverter Overview
 
 **RadFormConverter** is a component which can be used in the designer of Visual Studio. It allows an easy conversion between **RadForm**, **RadRibbonForm**, and the standard **Form**.
 

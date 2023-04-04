@@ -9,7 +9,7 @@ position: 2
 previous_url: track-and-status-controls-progressbar-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms ProgressBar
 
 In this tutorial, you will use a **RadProgressBar** to show the progress of a long-running operation. The long-running operation is simulated with a **Timer** control.
 

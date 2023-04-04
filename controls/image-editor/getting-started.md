@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with WinForms ImageEditor
 
 __RadImageEditor__ control encapsulates the entire image editing logic. In order to use it in your application you have to add references to:
 

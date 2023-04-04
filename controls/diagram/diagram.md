@@ -10,7 +10,7 @@ CTAControlName: Diagram
 previous_url: diagram-overview
 ---
 
-# Diagram 
+# WinForms Diagram Overview
 
 __RadDiagram__ offers flexible and interactive diagramming layouts for your rich data-visualization applications. The framework tool set enables you to:
 

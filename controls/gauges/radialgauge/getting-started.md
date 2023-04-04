@@ -9,7 +9,7 @@ position: 3
 previous_url: radialgauge-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms RadialGauge
 
 This article shows how you can add the control at design time or with code
 

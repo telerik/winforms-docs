@@ -10,7 +10,7 @@ CTAControlName: MaskedEditBox
 previous_url: editors-maskededitbox-overview
 ---
 
-# MaskedEditBox
+# WinForms MaskedEditBox Overview
 
 __RadMaskedEditBox__ is a themeable text box that formats and constrains text to a predefined pattern or a pattern you define. __RadMaskedEditBox__ also handles globalization for date and time edits. Date and Time masks allow the user to navigate using the up and down arrow keys.
 

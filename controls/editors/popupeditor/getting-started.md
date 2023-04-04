@@ -9,7 +9,7 @@ position: 1
 previous_url: eidtors-popupeditor-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms PopupEditor
 
 This article shows how you can start using __RadPopupEditor__. Go ahead and add __RadPopupEditor__ and __RadPopupContainer__ to a form. The result should look like in Figure 1.
       

@@ -9,9 +9,7 @@ position: 2
 previous_url: treeview-getting-started
 ---
 
-# Getting Started
-
-
+# Getting Started with WinForms TreeView
 
 The following tutorial will help you get started working with the __RadTreeView__ at design time and programmatically. Topics included are: 
 

@@ -9,7 +9,7 @@ position: 0
 CTAControlName: StepProgressBar
 ---
 
-# WinForms ProgressBar Overview
+# WinForms StepProgressBar Overview
 
 __RadStepProgressBar__ enables you to set up a visual element that displays a multi-step process via a number of different steps and a progress track bar between each step. This control can be used to track the progress of an ongoing process, booking transport tickets, user registration, etc.
 

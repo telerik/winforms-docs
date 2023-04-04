@@ -9,7 +9,7 @@ position: 1
 CTAControlName: Flyout
 ---
 
-# Getting Started
+# Getting Started with WinForms Flyout Screen
 
 This tutorial will walk you through how you can use __Flyout Screen__. 
 

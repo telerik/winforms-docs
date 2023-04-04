@@ -10,7 +10,7 @@ CTAControlName: ColorBox
 previous_url: editors-color-box-overview
 ---
 
-# ColorBox
+# WinForms ColorBox Overview
 
 The main purpose of the control is to allow the user to select a color from a [color dialog]({%slug winforms/forms-and-dialogs/colordialog%}) with preset colors or to type the color directly into the text field. The control then displays the color name if it is a named color or the RGB values of the selected color. A small rectangle filled with the selected color is displayed as well. The __RadColorBox__ supports input in the following formats:
 

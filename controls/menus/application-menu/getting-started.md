@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms ApplicationMenu
  
 The following tutorial demonstrates how to populate **RadApplicationMenu** and how to react to a user's choice in code.
 

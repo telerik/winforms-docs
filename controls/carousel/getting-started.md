@@ -9,7 +9,7 @@ position: 2
 previous_url: carousel-getting-started
 ---
 
-# Getting Stared
+# Getting Started with WinForms Carousel
 
 The minimum required to use __RadCarousel__ is:
 

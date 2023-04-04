@@ -11,7 +11,6 @@ CTAControlName: ZipLibrary
 
 # WinForms ZipLibrary Overview
 
-
 >note **RadZipLibrary** is part of the **Telerik Document Processing** libraries. The full documentation for this component is available at [https://docs.telerik.com/devtools/document-processing/libraries/radziplibrary](https://docs.telerik.com/devtools/document-processing/libraries/radziplibrary/overview).
 
 

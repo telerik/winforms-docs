@@ -9,7 +9,7 @@ position: 1
 CTAControlName: Overlay
 ---
 
-# Getting Started
+# Getting Started with WinForms Overlay Screen
 
 This tutorial will walk you through how you can use the __Overlay Screen__. 
 

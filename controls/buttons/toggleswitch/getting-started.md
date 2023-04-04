@@ -9,7 +9,7 @@ position: 3
 previous_url: buttons-toggleswitch-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms ToggleSwitch
 
 You can add a __RadToggleSwitch__ to your form either at design time or at run time:
         

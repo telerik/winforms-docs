@@ -9,7 +9,7 @@ position: 1
 previous_url: spellchecker-getting-started
 ---
 
-# Getting Started 
+# Getting Started with WinForms SpellChecker
 
 The following tutorial demonstrates how you can make **RadSpellChecker** check a simple text-editing control - **RadTextBox**.
        

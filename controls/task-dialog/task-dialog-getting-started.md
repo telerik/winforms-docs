@@ -8,7 +8,7 @@ published: True
 position: 2 
 ---
 
-# Getting Started
+# Getting Started with WinForms TaskDialog
 
 Before proceeding further with this article, it is recommended to get familiar with the internal structure of **RadTaskDialog** and how the elements are being organized: [Task Dialog's Structure]({%slug task-dialog-structure%})
 

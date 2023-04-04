@@ -9,7 +9,7 @@ position: 2
 previous_url: shortcuts-getting-started-(radbuttons)
 ---
 
-# Getting Started (RadButtons)
+# Getting Started with WinForms Shortcuts (RadButtons)
 
 As stated in the [Overview]({%slug winforms/shortcuts%}) article, **RadShortcuts** are assigned at **RadItem** level. That said, you can't assign a shortcut directly to a **RadControl** (**RadButton** for example). Instead, you should assign the shortcut to the main element of a **RadControl**. For example, considering our buttons, you can assign shortcuts to them as it is shown below:
 

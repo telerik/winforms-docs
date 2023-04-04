@@ -9,7 +9,7 @@ position: 3
 previous_url: editors-spineditor-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms SpinEditor
 
 The following tutorial demonstrates changing the thumb position on a __RadTrackBar__ to reflect changes in a __RadSpinEditor__.
 

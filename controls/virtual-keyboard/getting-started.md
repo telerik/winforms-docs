@@ -8,7 +8,7 @@ published: True
 position: 3 
 ---
 
-# Getting Started
+# Getting Started with WinForms VirtualKeyboard
 
 This article will give you getting started experience with **RadVirtualKeyboard** which is used for the user's input in a **RadTextBox**.
 

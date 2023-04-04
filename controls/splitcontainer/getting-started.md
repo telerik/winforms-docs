@@ -9,7 +9,7 @@ position: 3
 previous_url: splitcontainer-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms SplitContainer
 
 In this example we will position several **RadControls** in a specific layout using the **RadSplitContainer**:
 

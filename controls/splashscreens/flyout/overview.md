@@ -9,7 +9,7 @@ position: 0
 CTAControlName: flyout
 ---
 
-# WinForms Flyout Overview
+# WinForms Flyout Screen Overview
 
 Thank you for choosing __Flyout Screen__!
 

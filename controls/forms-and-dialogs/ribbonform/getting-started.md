@@ -9,7 +9,7 @@ position: 2
 previous_url: forms-and-dialogs-ribbonform-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms RibbonForm
 
 There are three ways in which you can use the __RadRibbonForm__ control:
 

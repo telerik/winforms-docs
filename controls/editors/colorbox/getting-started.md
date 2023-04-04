@@ -9,7 +9,7 @@ position: 3
 previous_url: editors-color-box-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms ColorBox
 
 The following example demonstrates how to change the __ForeColor__  of __RadLabel__ by using the __RadColorBox__.
 		

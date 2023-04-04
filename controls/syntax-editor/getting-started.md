@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with WinForms SyntaxEditor
 
 This tutorial will walk you through the creation of a sample application that contains a **RadSyntaxEditor** control.
 

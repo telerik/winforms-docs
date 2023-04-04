@@ -10,7 +10,7 @@ CTAControlName: AutoCompleteBox
 previous_url: editors-autocompletebox-overview
 ---
 
-# AutoCompleteBox
+# WinForms AutoCompleteBox Overview
 
 __RadAutoCompleteBox__ allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the "To" field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a message:
 

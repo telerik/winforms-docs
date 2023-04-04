@@ -10,7 +10,7 @@ CTAControlName: TextBox
 previous_url: editors-textbox-overview
 ---
 
-# TextBox
+# WinForms TextBox Overview
 
 __RadTextBox__ is a [themeable]({%slug winforms/editors/textbox/themes%}) alternative to the standard Windows Forms text box control. It allows you to include a text box in your applications that is consistent in look and feel with the other Telerik UI for WinForms controls you use. In addition, it allows you to set a default text to be displayed when there is no actual data in the text box. You can also use [Smart Tags]({%slug winforms/editors/textbox/designtime%}), set [Properties]({%slug winforms/editors/textbox/programming-radtextbox%}) and [Customize its Appearance]({%slug winforms/editors/textbox/customizing-appearance%}).
 

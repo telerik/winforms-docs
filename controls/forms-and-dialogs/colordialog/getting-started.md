@@ -9,7 +9,7 @@ position: 3
 previous_url: forms-and-dialogs-colordialog-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms ColorDialog
 
 The following tutorial demonstrates configuring the __RadColorDialog__, localizing tab labeling and responding to the __OK__ button click.
 

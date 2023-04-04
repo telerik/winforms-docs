@@ -10,7 +10,7 @@ CTAControlName: LayoutControl
 previous_url: layoutcontrol-overview
 ---
 
-# LayoutControl
+# WinForms LayoutControl Overview
 
 With __RadLayoutControl__ you can quickly design and arrange your controls in complex layouts and it will automatically keep the layout consistent at run-time. __RadLayoutControl__ has an intuitive and straight-forward design time experience. When resizing the form, it keeps its layout consistent by proportionally resizing the controls in it while considering their *MinSize* and *MaxSize* settings. __RadLayoutControl__ also allows end-user customizations and Save/Load layout via the *Customize* context menu.
 

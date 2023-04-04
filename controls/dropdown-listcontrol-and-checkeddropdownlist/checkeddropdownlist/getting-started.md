@@ -9,7 +9,7 @@ position: 3
 previous_url: dropdown-and-listcontrol-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms CheckedDropDownList
  
 The following tutorial demonstrates how to populate __RadCheckedDropDownList__ and how to react to a user's choice in code.
 

@@ -9,7 +9,7 @@ position: 3
 previous_url: layoutcontrol-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms LayoutControl
 
 In this article, you will learn how to use __RadLayoutControl__. The example below shows how you can create a layout that will fill the entire form and will be resized along with it.
 

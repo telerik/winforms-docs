@@ -10,7 +10,7 @@ CTAControlName: Separator
 previous_url: panels-and-labels-separator
 ---
 
-# Separator
+# WinForms Separator Overview
 
 **RadSeparator** is a control that gives you the ability to divide your forms into logical parts. By default it contains of two lines.
 

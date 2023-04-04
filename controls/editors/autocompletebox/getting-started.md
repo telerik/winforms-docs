@@ -9,7 +9,7 @@ position: 3
 previous_url: editors-autocompletebox-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms AutoCompleteBox
  
 
 | RELATED VIDEOS |  |

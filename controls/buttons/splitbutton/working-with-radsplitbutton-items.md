@@ -9,7 +9,7 @@ position: 2
 previous_url: buttons-splitbutton-working-with-radsplitbutton-items
 ---
 
-# Getting Started
+# Getting Started with WinForms SplitButton
 
 You can add ____ either at design time or at run time:
 
