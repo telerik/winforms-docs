@@ -10,7 +10,7 @@ CTAControlName: CommandBar
 previous_url: commandbar-overview
 ---
 
-# CommandBar
+# WinForms CommandBar Overview
 
 __RadCommandBar__ is a fully themeable tool strip that provides unprecedented flexibility. More than just a collection of buttons, __RadCommandBar__ hosts any RadControl, including combo boxes, text boxes, split buttons, drop-down buttons, toggle buttons and more. CommandBar can be moved, rearranged and resized at run time for easy end-user customization. __RadCommandBar__ can be styled to match any user interface using a predefined theme or a theme you design yourself using the Visual Style Builder. 
 

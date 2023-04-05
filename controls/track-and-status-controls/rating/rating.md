@@ -10,7 +10,7 @@ CTAControlName: Rating
 previous_url: track-and-status-controls-rating-overview
 ---
 
-# Rating
+# WinForms Rating Overview
 
 __RadRating__ is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts). The developers can fully customize the control by configuring its orientation, rating precision, direction etc.
 

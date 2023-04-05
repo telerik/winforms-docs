@@ -8,7 +8,7 @@ published: True
 position: 4 
 ---
 
-# Getting Started
+# Getting Started with WinForms Button
 
 You can add __RadButton__ either at design time or at run time:
 

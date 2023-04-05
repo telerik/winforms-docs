@@ -9,7 +9,7 @@ position: 0
 CTAControlName: ToastNotification
 ---
 
-# Toast Notification 
+# WinForms ToastNotification Overview
 
 With Windows 8 Microsoft introduced [Toast Notifications](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/toast-ux-guidance) - a notification system like the one in a mobile OS. The **RadToastNotificationManager** component builds notifications on that notification system and expand it, making it easier for our customers to create and manage notifications.  
 

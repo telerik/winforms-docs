@@ -9,7 +9,7 @@ position: 3
 previous_url: track-and-status-controls-waitingbar-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms WaitingBar
 
 * To add a __RadWaitingBar__ to your form, drag a __RadWaitingBar__ from the toolbox onto the surface of the form designer.
 

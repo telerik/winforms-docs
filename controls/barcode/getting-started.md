@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with WinForms Barcode
 
 1. To start using **RadBarcode** just drag it from the toolbox and drop it at the form.
 

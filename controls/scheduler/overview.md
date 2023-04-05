@@ -10,7 +10,7 @@ CTAControlName: Scheduler
 previous_url: scheduler-introduction,scheduler/scheduler
 ---
 
-# Scheduler
+# WinForms Scheduler Overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

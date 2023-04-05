@@ -8,7 +8,7 @@ published: True
 position: 2  
 ---
 
-# Getting Started
+# Getting Started with WinForms FilterView
 
 This article shows how you can start using **RadFilterView** and using it for filtering a **RadGridView** control.
 

@@ -10,7 +10,7 @@ CTAControlName: CheckedListBox
 previous_url: checkedlistbox-overview
 ---
 
-# CheckedListBox
+# WinForms CheckedListBox Overview
 
 __RadCheckedListBox__ is an enhanced alternative to the standard Windows Forms checked list box control. __RadCheckedListBox__ uses a [RadListView]({%slug winforms/listview%}) as a foundation. All previous functionality is preserved (visual formatting and data binding) and is now extended. The control also has a very powerful Visual Studio designer.
 

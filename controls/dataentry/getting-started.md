@@ -9,7 +9,7 @@ position: 3
 previous_url: dataentry-overview-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms DataEntry
 
 This tutorial demonstrates how bind __RadDataEntry__ to business object and to a collection of objects.
 

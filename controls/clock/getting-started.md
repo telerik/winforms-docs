@@ -9,7 +9,7 @@ position: 3
 previous_url: clock-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms Clock
 
 * To add a __RadClock__ to your form, drag a __RadClock__ from the toolbox onto the surface of the form designer.
 

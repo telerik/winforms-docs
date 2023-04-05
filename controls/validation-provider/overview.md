@@ -9,7 +9,7 @@ position: 0
 CTAControlName: ValidationProvider
 ---
 
-#  Validation Provider
+# WinForms ValidationProvider Overview
 
 **RadValidationProvider** is a component which provides data validation management for editors in bound and unbound mode. 
 It allows users to create various validation rules and associate them with editors derived from the **RadEditorControl** class. With **RadValidationProvider** users are not required to write any code for validation. 

@@ -8,7 +8,7 @@ published: True
 position: 2 
 ---
 
-# Getting Started 
+# Getting Started with WinForms File Dialogs 
 
 The following tutorial demonstrates how to specify a file name by using a **RadSaveFileDialog**, how to allow you to specify one or multiple folder names to open with the **RadOpenFolderDialog** and how to specify one or multiple file names to open with a **RadOpenFileDialog**.
 

@@ -9,7 +9,7 @@ position: 3
 previous_url: checkedlistbox-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms CheckedListBox
 
 You can add __RadCheckedListBox__ either at design time or at run time:
 

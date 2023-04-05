@@ -9,7 +9,7 @@ position: 3
 previous_url: editors-timepicker-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms TimePicker
 
 
 | RELATED VIDEOS |  |

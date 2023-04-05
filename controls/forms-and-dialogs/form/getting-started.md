@@ -9,7 +9,7 @@ position: 2
 previous_url: forms-and-dialogs-form-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms Form
  
 ## Adding RadForm to your Project
 

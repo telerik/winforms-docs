@@ -9,7 +9,7 @@ position: 3
 previous_url: menus-menu-getting-started
 ---
 
-# Getting Started 
+# Getting Started with WinForms Menu
 
 The following tutorial demonstrates creating a **RadMenu** with standard **RadMenuItems** with shortcuts and **RadMenuComboItems**.
 

@@ -9,7 +9,7 @@ position: 3
 previous_url: propertygrid-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms PropertyGrid
 
 | RELATED VIDEOS |  |
 | ----- | --- |

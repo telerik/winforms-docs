@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Series Overview
+# WinForms Sparkline Overview
 
 >caption Figure 1: Supported Series
 

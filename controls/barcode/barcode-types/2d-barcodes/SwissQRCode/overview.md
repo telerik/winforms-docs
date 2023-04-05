@@ -8,7 +8,7 @@ published: True
 position: 0 
 ---
 
-# Swiss QR Barcode
+# WinForms SwissQR Barcode Overview
 
 The QR-bill makes issuing and paying invoices simpler, and is being introduced throughout Switzerland to modernize payment transactions. Its most striking feature is the Swiss QR code, which contains all the payment information in a digital format, which can be read using a smart phone or a slip scanner.
 

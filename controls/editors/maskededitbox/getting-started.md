@@ -9,7 +9,7 @@ position: 3
 previous_url: editors-maskededitbox-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms MaskedEditBox
 
 Here is how to quickly configure two __RadMaskedEditBox__ controls. One uses a custom phone number mask, the second as a predefined short date pattern.
 

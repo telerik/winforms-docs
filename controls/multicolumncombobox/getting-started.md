@@ -8,7 +8,7 @@ published: True
 position: 3 
 ---
 
-# Getting Started
+# Getting Started with WinForms MultiColumnComboBox
 
 The following tutorial demonstrates how to setup **RadMultiColumnComboBox** and retrieve the selected text and image.
 

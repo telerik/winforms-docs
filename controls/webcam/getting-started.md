@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms WebCam
 
 This tutorial will walk you through the creation of a sample application that contains a **RadWebCam**.
 

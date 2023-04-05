@@ -9,7 +9,7 @@ position: 0
 previous_url: scheduler-views-overview-and-structure
 ---
 
-# Overview and Structure
+# WinForms Scheduler Overview
 
 ## Overview
 

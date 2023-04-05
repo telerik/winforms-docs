@@ -9,11 +9,7 @@ position: 1
 previous_url: rotator-getting-started
 ---
 
-# Getting Started
-
-
-
-## 
+# Getting Started with WinForms Rotator
 
 This tutorial demonstrates configuring __RadRotator__ at design-time, then running the animation at design time and run time. This example displays a series of images and one web site.
         

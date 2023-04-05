@@ -11,8 +11,6 @@ previous_url: telerik-cab-enabling-kit-starting-the-sample-application
 
 # Starting the Sample application
 
-## 
-
 Besides the TelerikCompositeUI project, the Telerik CAB Enabling Kit solution contains two demo applications projects - Finance and Bankteller. After downloading the solution from  [CodePlex](http://telerikcab.codeplex.com/)   open it and change the StartUp project to either BankTeller\BankShell or Finance\Shell. Run it and the choosen sample application will start.
 		
 

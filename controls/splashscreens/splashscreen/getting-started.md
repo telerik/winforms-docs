@@ -8,7 +8,7 @@ published: True
 position: 2  
 ---
 
-# Getting Started
+# Getting Started with WinForms SplashScreen
 
 The splash screen is represented by a **RadSplashScreenForm**. Actually, it is a [ShapedForm]({%slug winforms/forms-and-dialogs/shapedform%}) which content is displayed as a splash. There are two modes of the splash:
 

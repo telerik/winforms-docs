@@ -9,7 +9,7 @@ position: 0
 previous_url: pivotgrid-dialogs
 ---
 
-# Dialogs
+# WinForms PivotGrid Overview
 
 There are several different dialogs which allow the end user to modify various settings in **RadPivotGrid**. The dialogs can be opened from the menus in **RadPivotGrid** or **RadPivotFieldList**. Each dialog implements a specific interface which will allow you to replace the default dialogs with custom implemented ones.
 

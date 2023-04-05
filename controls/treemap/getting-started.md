@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Getting Started
+# Getting Started with WinForms TreeMap
 
 This article shows how you can start using **RadTreeMap**. Just drag a RadTreeMap from the toolbox and drop it onto the form. Then, define the sample data in a DataTable and bind the control:
 

@@ -10,7 +10,7 @@ CTAControlName: GroupBox
 previous_url: panels-and-labels-groupbox-overview
 ---
 
-# Overview
+# WinForms GroupBox Overview
 
 __RadGroupBox__ control is a group box control with advanced styling options. The primarily usage of this control is to hold a single radio buttons group.
 

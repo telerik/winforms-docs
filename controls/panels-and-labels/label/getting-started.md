@@ -9,7 +9,7 @@ position: 3
 previous_url: panels-and-labels-label-programming-radlabel
 ---
 
-# Getting Started
+# Getting Started with WinForms Label
 
 You can add a **Radlabel** either at design time or at run-time:
 

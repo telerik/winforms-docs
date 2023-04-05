@@ -9,7 +9,7 @@ position: 0
 previous_url: gridview-exporting-data-overview
 ---
 
-# Exporting Data Overview
+# WinForms GridView Overview
 
 |RELATED VIDEOS|
 | ------ |

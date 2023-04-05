@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms Panel
 
 You can add a **RadPanel** either at design time or at run-time:
 

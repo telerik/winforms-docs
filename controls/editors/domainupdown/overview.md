@@ -9,7 +9,7 @@ position: 0
 CTAControlName: DomainUpDown
 ---
 
-# DomainUpDown
+# WinForms DomainUpDown Overview
  
 **RadDomainUpDown** is a combination of a text-box and a pair of moving up and down arrow buttons to navigate through a predefined list of items. The control displays a text from a list of string available options. By clicking the up or down arrow button, the user can navigate backward or forward in the items list.
 

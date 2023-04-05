@@ -8,7 +8,7 @@ published: True
 position: 2 
 ---
 
-# Getting Started
+# Getting Started with WinForms NavigationView
 
 To start using **RadNavigationView**, just drag it from the toolbox and drop it onto the form.
 

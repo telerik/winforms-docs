@@ -10,7 +10,7 @@ CTAControlName: Carousel
 previous_url: carousel-overview, carousel-how-to-implement-keyboard-navigation
 ---
 
-# Carousel
+# WinForms Carousel Overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

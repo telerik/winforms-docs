@@ -10,7 +10,7 @@ CTAControlName: ToggleButton
 previous_url: buttons-togglebutton-overview
 ---
 
-# ToggleButton
+# WinForms ToggleButton Overview
 
 
 __RadToggleButton__ is designed to manage states on your form. It shares many features with the [RadCheckBox]({%slug winforms/buttons/checkbox%}), but provides a different visual effect than the standard check mark. 

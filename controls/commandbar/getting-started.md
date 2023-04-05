@@ -8,7 +8,7 @@ published: True
 position: 3 
 ---
 
-# Getting Started
+# Getting Started with WinForms CommandBar
 
 You can add __RadCommandBar__ either at design time or at run time:
 

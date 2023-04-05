@@ -10,7 +10,7 @@ CTAControlName: ListControl
 previous_url: dropdown-and-listcontrol-listcontrol-overview
 ---
 
-# ListControl
+# WinForms ListControl Overview
 
 __RadListControl__ is the an alternative to the Microsoft ListBox control. Due to the innovative and specially designed architecture of __RadListControl__, this control allows for superior data binding speed and a visual (GUI) representation that allows for a responsive control even when working with huge data sets.
 

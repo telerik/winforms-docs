@@ -8,7 +8,7 @@ published: True
 position: 2 
 ---
 
-# Getting Started
+# Getting Started with WinForms Map
 
 This tutorial will help you to quickly get started using the control.
 

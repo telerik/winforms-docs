@@ -9,7 +9,7 @@ position: 2
 previous_url: dropdown-and-listcontrol-listcontrol-getting-started
 ---
 
-# Getting Started 
+# Getting Started with WinForms ListControl
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms TimeSpanPicker
 
 This topic will walk you through the process of creating of __RadTimeSpanPicker__.
 

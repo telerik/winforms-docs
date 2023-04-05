@@ -9,7 +9,7 @@ position: 0
 previous_url: forms-and-dialogs-overview
 ---
 
-# Forms and Dialogs Overview
+# WinForms Forms and Dialogs Overview
  
 When dealing with complex control types that have multiple nested elements, such as a __RadRibbonBar__ control, you want the ability to set properties at multiple levels of the class hierarchy. For example, in the case of a __RadRibbonBar__ you can set properties of the __RadRibbonBarElement__ or you can set the properties of one of its __RadTabStripElement__ elements or possibly one of its __RadDropDownButtonElement__ elements.
       

@@ -10,7 +10,7 @@ CTAControlName: Shortcut
 previous_url: shortcuts-overview
 ---
 
-# Shortcuts
+# WinForms Shortcuts Overview
 
 Almost each application uses the so-called “*Shortcuts*” – a keyboard combination that triggers a specific action. For a valid shortcut is considered any keyboard combination where a Modifier Key (`Ctrl`, `Alt` and `Shift` or a combination of these) is down and other key(s) is pressed. This semantic is available out-of-the-box in our framework and allows you to seamlessly plug any valid keys combination as an action accelerator. Supported are also the so-called multiple keys shortcuts where the Keys member of each shortcut may be more than one key – e.g. `Ctrl` + `A`, `S` is recognized by the framework. Shortcuts without modifier keys are also supported, but they should be used with caution, since they may be in conflict with other controls which intercept keyboard input.
 

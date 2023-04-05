@@ -8,7 +8,7 @@ published: True
 position: 2 
 ---
 
-# Getting Started 
+# Getting Started with WinForms Chat
 
 This article will give you getting started experience with **RadChat**. 
 

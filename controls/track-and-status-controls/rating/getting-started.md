@@ -9,7 +9,7 @@ position: 3
 previous_url: track-and-status-controls-rating-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms Rating
 
 Below are the basic steps needed to get started with __RadRating__ control in Visual Studio:
 

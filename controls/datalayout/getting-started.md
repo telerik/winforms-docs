@@ -9,7 +9,7 @@ position: 3
 previous_url: datalayout-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms DataLayout
 
 This example demonstrates binding __RadDataLayout__ to a single object or a collection of objects. For the purpose of the tutorial we will also use a __RadBindingNavigator__.
 

@@ -9,7 +9,7 @@ position: 0
 ---
 
 
-## Paging Overview
+# WinForms VirtualGrid Overview
 
 The data layer of __RadVirtualGrid__ supports pagination of data natively. Enabling the paging does not change the way the virtual grid works. There is a number of features, which will allow you to easily configure and manage the paging of the data.
 

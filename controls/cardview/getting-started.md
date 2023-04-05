@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms CardView
 
 The example below demonstrates setting up __RadCardView__ to display data from the *Northwind* database.
 

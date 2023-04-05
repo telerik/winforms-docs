@@ -10,7 +10,7 @@ CTAControlName: Clock
 previous_url: clock-overview
 ---
 
-# Clock
+# WinForms Clock Overview
 
 __RadClock__ is a control which allows the developers to use it in their applications to display time to the users. 
 

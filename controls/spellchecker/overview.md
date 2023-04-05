@@ -10,7 +10,7 @@ CTAControlName: SpellChecker
 previous_url: spellchecker-overview
 ---
 
-# SpellChecker
+# WinForms SpellChecker Overview
 
 **RadSpellChecker** enables developers to add multilingual spell checking capabilities to their WinForms applications. The component is completely customizable and can be attached to any text-editing **RadControl**. You can also use it together with the standard Microsoft text-editing controls. It currently supports dozens of languages and can have custom user dictionaries for every language.
 

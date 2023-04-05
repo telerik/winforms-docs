@@ -9,7 +9,7 @@ position: 2
 CTAControlName: ToastNotification
 ---
 
-# Getting Started
+# Getting Started with WinForms ToastNotification
 
 To start using **RadToastNotificationManager** just drag it from the toolbox and drop it on the form.
 

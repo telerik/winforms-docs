@@ -9,7 +9,7 @@ position: 0
 previous_url: treeview-data-binding-data-binding-basics
 ---
 
-# Data Binding Overview
+# WinForms TreeView Overview
 
 RadTreeView binds to any object that implements `IList`, `IListSource` or `IBindingList` interface. This includes generic lists and `BindingSource` for example. 
 

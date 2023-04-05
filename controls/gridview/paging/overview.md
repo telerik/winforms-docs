@@ -9,7 +9,7 @@ position: 0
 previous_url: gridview-paging-overview
 ---
 
-# Paging Overview
+# WinForms GridView Overview
 
 The data layer of __RadGridView__ supports pagination of data natively as of **R1 2014 (version 2014.1.226)**. You can still bind __RadGridView__ to the same [data providers]({%slug winforms/gridview/populating-with-data/bindable-types%}) as before with the addition of the paging option. There is a number of features, which will allow you to easily configure and manage the paging of the data.
 

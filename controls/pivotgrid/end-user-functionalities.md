@@ -1,6 +1,6 @@
 ---
-title: End-user Functionalities
-page_title: End-user Functionalities - RadPivotGrid
+title: End-User Functionalities
+page_title: End-User Functionalities - RadPivotGrid
 description: This articles describes the end-user functionalities provided by RadPivotGrid
 slug: winforms/pivotgrid/end-user-functionalities
 tags: end-user,functionalities
@@ -9,7 +9,7 @@ position: 18
 previous_url: pivotgrid-end-user-functionalities
 ---
 
-# End-user Functionalities
+# End-User Functionalities
 
 * __Expand/Collapse__: Using the expander button which appears in the header cells, the end-user can expand or collapse each group which will allow to easily see the summarized data for the sub groups of the collapsed group.
 	![WinForms RadPivotGrid Expand/Collapse](images/pivotgrid-end-user-functionalities001.gif)

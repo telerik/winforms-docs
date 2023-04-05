@@ -9,7 +9,7 @@ position: 0
 previous_url: gridview-viewdefinitions-overview
 ---
 
-# View Definitions Overview
+# WinForms GridView Overview
 
 You can change __RadGridView__ visual appearance and behavior by using a view definition. To define the view definition you have to set the __ViewDefinition__.
 

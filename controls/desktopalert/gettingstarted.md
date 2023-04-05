@@ -9,7 +9,7 @@ position: 3
 previous_url: desktopalert-getting-started
 ---
 
-# GettingStarted
+# Getting Started with WinForms DesktopAlert
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

@@ -9,7 +9,7 @@ position: 4
 previous_url: editors-textboxcontrol-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms TextBoxControl
 
 The __RadTextBoxControl__ is used to get input from the user or to display text. The control can display multiple lines, wrap text to the size of the control, add basic formatting, use themes, and the main differences with RadTextBox - can be transparent and use gradients. The text box control provides a single format style for the text displayed or entered.
          

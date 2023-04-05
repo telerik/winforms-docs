@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-# Getting Started
+# Getting Started with WinForms ToolbarForm
 
 This topic will walk you through the creating process of RadToolbarForm.
 

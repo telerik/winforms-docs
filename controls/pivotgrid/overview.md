@@ -10,7 +10,7 @@ CTAControlName: PivotGrid
 previous_url: pivotgrid-overview
 ---
 
-# PivotGrid
+# WinForms PivotGrid Overview
 
 | RELATED VIDEOS |  |
 | ------ | --- |

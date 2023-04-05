@@ -10,7 +10,7 @@ CTAControlName: ToggleSwitch
 previous_url: buttons-toggleswitch-overview
 ---
 
-# ToggleSwitch
+# WinForms ToggleSwitch Overview
 
 __RadToggleSwitch__ is a control designed to represent two states: e.g. *true*/*false*, *On*/*Off*, etc.
 >caption Figure 1: RadToggleSwitch

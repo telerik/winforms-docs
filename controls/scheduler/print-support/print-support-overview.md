@@ -9,7 +9,7 @@ position: 0
 previous_url: scheduler-print-support
 ---
 
-# Print Support
+# WinForms Scheduler Overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

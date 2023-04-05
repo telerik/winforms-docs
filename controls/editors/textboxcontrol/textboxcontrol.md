@@ -10,7 +10,7 @@ CTAControlName: TextBoxControl
 previous_url: editors-textboxcontrol-overview
 ---
 
-# RadTextBoxControl
+# WinForms TextBoxControl Overview
 
 
 __RadTextBoxControl__ provides similar to the standard .NET Framework text box features. In addition it allows easy customizations and enhancements. It is generally used for editing text, although it can be used to display text, when in read-only mode. The control can display multiple lines, wrap text to the size of the control and perform text block formatting and replacement.

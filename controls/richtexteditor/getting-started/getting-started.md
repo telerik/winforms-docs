@@ -9,7 +9,7 @@ position: 0
 previous_url: richtexteditor-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms RichTextEditor
 
 **RadRichTextEditor** is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc. This topic will help you to quickly get started using the control. It will focus on the following:
 

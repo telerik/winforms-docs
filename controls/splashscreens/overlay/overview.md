@@ -9,7 +9,7 @@ position: 0
 CTAControlName: Overlay
 ---
 
-# Overlay
+# WinForms Overlay Screen Overview
 
 Thank you for choosing __RadOverlay__!
 

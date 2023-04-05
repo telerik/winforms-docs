@@ -9,7 +9,7 @@ position: 3
 previous_url: buttons-radiobutton-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms RadioButton
 
 You can add __RadRadioButton__ either at design time or at run time:
 

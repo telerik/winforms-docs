@@ -10,7 +10,6 @@ position: 0
 
 # Simplified Mode
 
-
 When the simplified layout is switched on all elements in the RibbonBar are automatically arranged on a single row. This aims to provide the user with a compact layout which is taking half the height of the standard ribbon. This functionality can be used with new or existing ribbon bars ([RichTextEditorRibbonBar]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}), [SpreadSheetRibbonBar]({%slug radspreadsheet-getting-started-spreadsheet-ui%}), and [DiagramRibbonBar]({%slug winforms/diagram/ribbonui%}) are supported out of the box). It automatically changes the items' properties in order to fit them on a single line. The process can be customized as well. If the width is not enough the items are shown in a popup just link in the default ribbon layout.  
 
 ![WinForms RadRibbonBar Simplified Mode](images/simplified-mode001.gif)

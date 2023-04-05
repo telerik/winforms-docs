@@ -10,7 +10,7 @@ CTAControlName: ChartView
 previous_url: chartview-overview
 ---
 
-# ChartView
+# WinForms ChartView Overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

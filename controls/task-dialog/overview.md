@@ -9,7 +9,7 @@ position: 0
 CTAControlName: TaskDialog
 ---
 
-# Task Dialog
+# WinForms TaskDialog Overview
 
 **RadTaskDialog** is a themable alternative of the windows [dialog box](https://docs.microsoft.com/en-us/windows/win32/controls/task-dialogs-overview) and the newly released TaskDialog for .NET 5. The dialog box is a window that allows users to perform a command, ask the users a question, provide users with information or indicate the progress of an ongoing task. 
 

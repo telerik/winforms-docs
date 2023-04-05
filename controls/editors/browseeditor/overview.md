@@ -10,7 +10,7 @@ CTAControlName: BrowseEditor
 previous_url: editors-browse-editor-overview
 ---
 
-# Browse Editor
+# WinForms BrowseEditor Overview
 
 __RadBrowseEditor__ is a themable control which allows users to select a file or a directory from the file system or directly type the full path to it in the editor.
 

@@ -9,9 +9,7 @@ position: 2
 previous_url: diagram-getting-started
 ---
 
-# Getting Started
-
-
+# Getting Started with WinForms Diagram
 
 Telerik __RadDiagram__ are powerful diagramming framework that can bring to life your rich data-visualization scenarios. In order to use the Telerik Diagramming Framework in your projects you have to add references to the following assemblies:
    

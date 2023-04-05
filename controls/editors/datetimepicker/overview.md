@@ -10,7 +10,7 @@ CTAControlName: DateTimePicker
 previous_url: editors-datetimepicker-overview
 ---
 
-# DateTimePicker
+# WinForms DateTimePicker Overview
 
 
 __RadDateTimePicker__ allows interactive selection of dates using a drop down calendar. Features of __RadDateTimePicker__ include:

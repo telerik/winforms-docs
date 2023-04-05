@@ -9,7 +9,7 @@ position: 0
 CTAControlName: Barcode
 ---
 
-# Barcode
+# WinForms Barcode Overview
 
 **RadBarcode** can be used to create and show barcodes. You can generate and visualize barcodes in a machine-readable format via the **RadBarcode** control by providing numeric or character data. 
 

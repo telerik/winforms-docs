@@ -8,7 +8,7 @@ published: True
 position: 2  
 ---
 
-# Getting Started
+# Getting Started with WinForms TaskBoard
 
 This article shows how you can start using **RadTaskBoard**. Just drag a **RadTaskBoad** from the toolbox and drop it onto the form. Then, define the columns you need in the control and the task cards contained in each column:
 

@@ -10,7 +10,7 @@ CTAControlName: PageView
 previous_url: pageview-overview
 ---
 
-# PageView
+# WinForms PageView Overview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |

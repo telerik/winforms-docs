@@ -9,7 +9,7 @@ position: 3
 CTAControlName: Callout
 ---
 
-# Getting Started
+# Getting Started with WinForms Callout
 
 This article shows how you can start using **RadCallout**. The following result will be achieved at the end of this tutorial:
 

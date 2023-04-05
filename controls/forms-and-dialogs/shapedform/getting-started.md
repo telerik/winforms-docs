@@ -9,7 +9,7 @@ position: 1
 previous_url: forms-and-dialogs-shapedform-getting-started
 ---
 
-# Getting Started 
+# Getting Started with WinForms ShapedForm 
 
 To add a __ShapedForm__ to your project: 
 

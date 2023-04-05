@@ -10,7 +10,7 @@ CTAControlName: ListView
 previous_url: listview-overview
 ---
 
-# ListView
+# WinForms ListView Overview
 
 **RadListView** is created as a result of the concord of the powerful data layer used by [RadGridView]({%slug winforms/gridview%}) and [RadListControl]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%}), together with the outstanding [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}). The data layer provides very high performance when working with data and also different types of binding options. Additionally, it provides features like grouping, sorting and filtering. Thanks to the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}), the control customization is very flexible and intuitive.
 

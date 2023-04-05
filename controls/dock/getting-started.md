@@ -9,7 +9,7 @@ position: 1
 previous_url: dock-getting-started
 ---
 
-# Getting Started 
+# Getting Started with WinForms Dock
 
 This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on the left represents a list of reports. The right side of the form in __RadDock__ contains three __DocumentWindows__, each representing a report. This tutorial demonstrates the layout of __ToolWindow__ and __DocumentWindows__. It also demonstrates adding a **RadTreeView** control to one of the created windows and synchronizing the active **DockWindow** with the selection in the **RadTreeView** instance. 
 

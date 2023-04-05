@@ -10,7 +10,7 @@ CTAControlName: DataLayout
 previous_url: datalayout-overview
 ---
 
-# Data Layout
+# WinForms DataLayout Overview
 
 The __RadDataLayout__ control provides means for displaying data in a highly customizable layout by automatically creating the items and editors and further allowing easy creating of complex layouts at design-time as well as at run-time.
 

@@ -9,7 +9,7 @@ position: 2
 previous_url: forms-and-dialogs-statusstrip-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms StatusStrip
  
 The following tutorial demonstrates configuring __RadStatusStrip__ at design-time and programmatic access of individual status bar items at run-time. The status bar contains label, separator, buttons and progress bar elements. One of the button elements increments the __RadListControl__ selected index. The label and one of the button elements reflect the current selection in the __RadListControl__ while the progress bar mimics a process against the upcoming item.
         

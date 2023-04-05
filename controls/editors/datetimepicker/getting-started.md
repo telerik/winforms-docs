@@ -9,7 +9,7 @@ position: 3
 previous_url: editors-datetimepicker-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms DateTimePicker
 
 The following tutorial demonstrates basic usage of __RadDateTimePicker__, formatting and applying themes.
 

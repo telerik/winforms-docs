@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Overview
+# WinForms Cardview Editors Overview
 
 __RadCardView__ supports editing of its content out of the box. This operation can be started by clicking with the mouse on the value of a particular item. This functionality is controlled by the __AllowEdit__ property and by default it is set to *true*.
 

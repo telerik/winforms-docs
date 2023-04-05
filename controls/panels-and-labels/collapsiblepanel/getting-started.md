@@ -9,7 +9,7 @@ position: 3
 previous_url: panels-and-labels-collapsible-panel-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms CollapsiblePanel
 
 __RadCollapsiblePanel__ can host many controls in its controls container area, which then can be collapsed. This way you will be able to save space in your application as the control can use as much space as it needs for its header. 
 

@@ -9,7 +9,7 @@ position: 3
 previous_url: ribbonbar-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms RibbonBar
 
 This section will help you in creating your first Telerik __RadRibbonBar__ with some basic functionality (test formatting).
 

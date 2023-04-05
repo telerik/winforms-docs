@@ -8,7 +8,7 @@ published: True
 position: 3  
 ---
 
-# Getting Started   
+# Getting Started with WinForms Taskbar   
 
 Before proceeding further with this article, it is recommended to get familiar with the Windows Taskbar's structure and how the different parts are being organized: [Structure]({%slug taskbar-button-structure%}).
 

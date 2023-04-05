@@ -9,7 +9,7 @@ position: 3
 previous_url: rangeselector-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms RangeSelector
 
 This tutorial demonstrates how to use __RadRangeSelector__ to get a fine grain view of the data represented in __RadChartView__.
 

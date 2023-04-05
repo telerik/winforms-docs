@@ -9,7 +9,7 @@ position: 1
 previous_url: gridview-getting-started
 ---
 
-# Getting Started
+# Getting Started with WinForms GridView
 
 | RELATED VIDEOS |  
 | ------ |

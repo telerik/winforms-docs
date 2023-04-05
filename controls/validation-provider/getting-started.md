@@ -8,7 +8,7 @@ published: True
 position: 3 
 ---
 
-#  Getting Started
+# Getting Started with WinForms ValidationProvider
 
 This article will give you getting started experience with **RadValidationProvider** without using any code.
 
