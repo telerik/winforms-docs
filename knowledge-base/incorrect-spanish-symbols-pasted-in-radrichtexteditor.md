@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-When the end-users copy some Spanish text from a web pages and paste it in RadRichTextEditor, weird symbols are inserted:
+When the end-users copy some Spanish text from a web page and paste it in RadRichTextEditor, weird symbols are inserted:
 
 ![incorrect-spanish-symbols-pasted-in-radrichtexteditor003](images/incorrect-spanish-symbols-pasted-in-radrichtexteditor003.png)
 
