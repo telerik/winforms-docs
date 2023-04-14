@@ -8,7 +8,7 @@ published: True
 position: 0 
 ---
 
-# WinForms ListView Overview
+# Design Time
 
 To start using __RadListView__ just drag it from the toolbox and drop it at the form.
 
