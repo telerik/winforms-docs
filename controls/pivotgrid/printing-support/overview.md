@@ -9,7 +9,7 @@ position: 0
 previous_url: pivotgrid-printing-support
 ---
 
-# WinForms PivotGrid Overview
+# Printing Support
 
 **RadPivotGrid** provides printing support out of the box and this functionality can be customized through a style object, events or with inheritance. **RadPivotGrid** uses the same printing mechanism as RadGridView and RadScheduler and therefore shares the common features provided by [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}). You can modify the appearance and the layout of the printed pages by using the variety of options provided by the __PivotGridPrintStyle__ class.
 
