@@ -9,7 +9,7 @@ position: 0
 previous_url: scheduler-scheduler-navigator-overview
 ---
 
-# WinForms Scheduler Overview
+# Scheduler Navigator Overview
 
 __RadSchedulerNavigator__ is a stand-alone control used for navigation in RadScheduler control. 
 
