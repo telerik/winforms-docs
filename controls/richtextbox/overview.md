@@ -10,7 +10,7 @@ CTAControlName: RichTextBox
 previous_url: richtextbox-overview
 ---
 
-# WinForms RichTextBox Overview
+# WinForms RichTextBox Overview (Obsolete)
 
 RadRichTextBox is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), etc.
 
