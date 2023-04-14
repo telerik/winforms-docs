@@ -8,7 +8,7 @@ published: True
 position: 0 
 ---
 
-# WinForms RichTextEditor Overview
+# Mentions (Suggestions)
 
 This functionality enables you to show a predefined list of suggestions to be inserted into the document content when the users type a specific mention character. You can use a default provider for the mentions or define a custom one that suits your needs. Multiple providers are also supported while they have different mention characters. The flexibility of the feature also provides you with the ability to control how the selected item is inserted, how it is visualized, and how it is being matched inside the same collection.
 
