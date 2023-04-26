@@ -20,7 +20,7 @@ res_type: kb
 
 The RadSyntaxEditor control provides a set of predefined taggers to style specific words in the document. In this article, we will demonstrate how we can add keywords to a predefined tagger without creating a custom tagger from scratch. In the following image, you can observe how the __Telerik__ word is marked by the tagger.
 
-![syntaxeditor-extend-default-tagger](images/syntaxeditor-extend-default-tagger.gif)
+![syntaxeditor-extend-default-tagger](images/syntaxeditor-extend-default-tagger.PNG)
 
 ## Solution 
 
