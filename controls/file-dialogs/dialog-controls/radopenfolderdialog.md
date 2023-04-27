@@ -146,6 +146,11 @@ openFolderDialog.RestoreDirectory = True
 
 After setting this property to *True* and opening a folder the **InitialDirectory** of this **RadOpenFolderDialog** instance will be set to the parent of the opened folder.
 
+>important Note that the directory restoring feature works per dialog instance and only in memory. This means that the previously selected directory will be stored in a private string field of the RadOpenFolderDialog instance. In other words, to use the feature the following requirements should be met:
+* The same dialog instance should be used every time you open the dialog.
+* In order for the directory to be saved the directory should be opened. Clicking cancel or the X button won't save the directory.
+* Closing the application and then opening it again, or generally when you create a new dialog instance, the last saved directory will get lost.
+
 # See Also
 
 * [Error Handling]({%slug winforms/file-dialogs/features/error-handling%})

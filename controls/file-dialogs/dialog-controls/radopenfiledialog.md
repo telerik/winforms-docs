@@ -181,6 +181,11 @@ openFileDialog.RestoreDirectory = True
 
 {{endregion}}
 
+>important Note that the directory restoring feature works per dialog instance and only in memory. This means that the previously selected directory will be stored in a private string field of the RadOpenFolderDialog instance. In other words, to use the feature the following requirements should be met:
+* The same dialog instance should be used every time you open the dialog.
+* In order for the directory to be saved the directory should be opened. Clicking cancel or the X button won't save the directory.
+* Closing the application and then opening it again, or generally when you create a new dialog instance, the last saved directory will get lost.
+
 ## Enabling ReadOnly CheckBox
 
 You can display a checkbox to control whether the file should be opened in readonly mode with the **ShowReadOnly** property of the **RadOpenFileDialog**. You can control the state of that checkbox by using the **ReadOnlyChecked** property of the **RadOpenFileDialog**.
