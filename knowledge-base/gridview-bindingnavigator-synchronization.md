@@ -1,5 +1,5 @@
 ---
-title: Synchronize RadGridView and RadBindingNavigaor after Filtering and Sorting
+title: Synchronize RadGridView and RadBindingNavigator after Filtering and Sorting
 description: This article shows how you can sync gridview and binding navigator after filtering and sorting is applied. 
 type: how-to
 page_title: How to synchronize RadGridView and RadBindingNavigator after filtering and sorting
@@ -35,70 +35,79 @@ It is necessary to handle the RadGridView.**FilterExpressionChanged** event and 
 
 ````C#
 
-            private void RadForm1_Load(object sender, EventArgs e)
-        { 
-            this.productsTableAdapter.Fill(this.nwindDataSet.Products);
-            this.radGridView1.DataSource = this.productsBindingSource;
-            this.radGridView1.BestFitColumns();
-            this.radGridView1.EnableFiltering = true;
+private void RadForm1_Load(object sender, EventArgs e)
+{ 
+	this.productsTableAdapter.Fill(this.nwindDataSet.Products);
+	this.radGridView1.DataSource = this.productsBindingSource;
+	this.radGridView1.BestFitColumns();
+	this.radGridView1.EnableFiltering = true;
 
-            this.radBindingNavigator1.BindingSource = this.productsBindingSource;
+	this.radBindingNavigator1.BindingSource = this.productsBindingSource;
 
-            this.radGridView1.FilterExpressionChanged += Grid_FilterExpressionChanged;
-        }
-        public class CustomBindingNavigator : RadBindingNavigator
-        {
-            protected override RadBindingNavigatorElement CreateNavigatorElement()
-            {
-                return new CustomBindingNavigatorElement();
-            }
+	this.radGridView1.FilterExpressionChanged += Grid_FilterExpressionChanged;
+	this.radGridView1.SortChanged += radGridView1_SortChanged;
+}
 
-            public class CustomBindingNavigatorElement : RadBindingNavigatorElement
-            {
-                protected override void FirstButton_Click(object sender, EventArgs e)
-                {
-                    Form f = this.ElementTree.Control.FindForm();
-                    if (f != null)
-                    {
-                        RadGridView grid = f.Controls[0] as RadGridView;
-                        grid.GridNavigator.SelectFirstRow();
-                    }
-                }
-                protected override void LastButton_Click(object sender, EventArgs e)
-                {
-                    Form f = this.ElementTree.Control.FindForm();
-                    if (f != null)
-                    {
-                        RadGridView grid = f.Controls[0] as RadGridView;
-                        grid.GridNavigator.SelectLastRow();
-                    }
-                }
-                protected override void PreviousButton_Click(object sender, EventArgs e)
-                {
-                    Form f = this.ElementTree.Control.FindForm();
-                    if (f != null)
-                    {
-                        RadGridView grid = f.Controls[0] as RadGridView;
-                        grid.GridNavigator.SelectPreviousRow(1);
-                    }
-                }
+private void Grid_FilterExpressionChanged(object sender, FilterExpressionChangedEventArgs e)
+{
+	this.productsBindingSource.Filter = e.FilterExpression;
+}      
+         
+private void radGridView1_SortChanged(object sender, GridViewCollectionChangedEventArgs e)
+{
+    this.productsBindingSource.Sort = e.GridViewTemplate.SortDescriptors.Expression;
+}
 
-                protected override void NextButton_Click(object sender, EventArgs e)
-                {
-                    Form f = this.ElementTree.Control.FindForm();
-                    if (f != null)
-                    {
-                        RadGridView grid = f.Controls[0] as RadGridView;
-                        grid.GridNavigator.SelectNextRow(1);
-                    }
-                }
-            }
-        }
+public class CustomBindingNavigator : RadBindingNavigator
+{
+	protected override RadBindingNavigatorElement CreateNavigatorElement()
+	{
+		return new CustomBindingNavigatorElement();
+	}
 
-        private void Grid_FilterExpressionChanged(object sender, FilterExpressionChangedEventArgs e)
-        {
-            this.productsBindingSource.Filter = e.FilterExpression;
-        }               
+	public class CustomBindingNavigatorElement : RadBindingNavigatorElement
+	{
+		protected override void FirstButton_Click(object sender, EventArgs e)
+		{
+			Form f = this.ElementTree.Control.FindForm();
+			if (f != null)
+			{
+				RadGridView grid = f.Controls[0] as RadGridView;
+				grid.GridNavigator.SelectFirstRow();
+			}
+		}
+		protected override void LastButton_Click(object sender, EventArgs e)
+		{
+			Form f = this.ElementTree.Control.FindForm();
+			if (f != null)
+			{
+				RadGridView grid = f.Controls[0] as RadGridView;
+				grid.GridNavigator.SelectLastRow();
+			}
+		}
+		protected override void PreviousButton_Click(object sender, EventArgs e)
+		{
+			Form f = this.ElementTree.Control.FindForm();
+			if (f != null)
+			{
+				RadGridView grid = f.Controls[0] as RadGridView;
+				grid.GridNavigator.SelectPreviousRow(1);
+			}
+		}
+
+		protected override void NextButton_Click(object sender, EventArgs e)
+		{
+			Form f = this.ElementTree.Control.FindForm();
+			if (f != null)
+			{
+				RadGridView grid = f.Controls[0] as RadGridView;
+				grid.GridNavigator.SelectNextRow(1);
+			}
+		}
+	}
+}
+
+
        
 ````
 ````VB.NET
@@ -113,9 +122,19 @@ It is necessary to handle the RadGridView.**FilterExpressionChanged** event and 
         Me.RadBindingNavigator1.BindingSource = Me.ProductsBindingSource
 
         AddHandler Me.RadGridView1.FilterExpressionChanged, AddressOf Grid_FilterExpressionChanged
+		AddHandler Me.RadGridView1.SortChanged, AddressOf radGridView1_SortChanged
     End Sub
-
-    Public Class CustomBindingNavigator
+	
+	Private Sub Grid_FilterExpressionChanged(sender As Object, e As FilterExpressionChangedEventArgs)
+        Me.ProductsBindingSource.Filter = e.FilterExpression
+    End Sub 
+    
+	Private Sub Grid_FilterExpressionChanged(sender As Object, e As FilterExpressionChangedEventArgs)
+        Me.ProductsBindingSource.Sort = e.GridViewTemplate.SortDescriptors.Expression
+    End Sub
+	
+    
+	Public Class CustomBindingNavigator
         Inherits RadBindingNavigator
 
         Protected Overrides Function CreateNavigatorElement() As RadBindingNavigatorElement
