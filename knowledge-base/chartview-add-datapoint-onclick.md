@@ -2,7 +2,7 @@
 title: How to add DataPoint on mouse click location.
 description: This article shows how to add DataPoint on mouse click location.
 type: how-to
-page_title: Aad DataPoint on mouse click location
+page_title: Add DataPoint on mouse click location
 slug: chartview-add-datapoint-onclick
 position: 0
 tags: chartview, datapoint,click,mousedown,mouseclick,location,
