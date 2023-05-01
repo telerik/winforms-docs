@@ -40,7 +40,7 @@ This means that in the installation folder of the Telerik UI for WinForms suite 
 
 Telerik UI for WinForms controls are automatically added to Visual Studio's Toolbox during the [installation]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}) process when using **.NET 2.0 (up to 4.8) Framework** in your project. This means that the Toolbox population relies on the Telerik WinForms version available in the Global Assembly Cache:
 
->Toolbox Version
+>caption Toolbox Version
 
 ![toolbox-error005](images/toolbox-error005.png)
 
