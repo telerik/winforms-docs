@@ -20,7 +20,7 @@ __Esc:__ Cancels a drag operation, but does not revert to the initial state. I.
 
 ## Mouse Support
 
-__Double click:__ Double-clicking the title bar of a **ToolWindow** un-docks the panel so that it floats. Double-clicking the title bar of a floating window docks the **ToolWindow**.
+__Double click:__ Double-clicking the title bar of a **ToolWindow** un-docks the panel so that it floats. Double-clicking the title bar of a floating window maximizes the **ToolWindow**.
 
 # See Also
 
