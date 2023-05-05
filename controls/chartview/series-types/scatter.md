@@ -107,3 +107,4 @@ scatterSeries2.Shape = shape
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})
 * [How to Plot Error Bars (x-y) on a Scatter Plot]({%slug how-to-plot-error-bars-on-scatter-plot%})
+* [How to Detect if Mouse Click Location Belongs to ScatterLineSeries]({%slug detect-if-mouse-location-belongs-to-scatterlineseries%})
