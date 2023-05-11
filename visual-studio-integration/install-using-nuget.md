@@ -42,7 +42,9 @@ This article describes how you can install the WinForms suite using a NuGet pack
 	
 	![installation-deployment-and-distribution-install-using-nuget 003](images/installation-deployment-and-distribution-install-using-nuget003.png)
 
-1. The final step is to select and install the desired packages. Please note that there are two versions, one for .NET 2.0 to 3.5 and one for 2.0 or newer. 
+1. The final step is to select and install the desired packages. Please note that there are several versions, corresponding to the target framework used in the project, one for .NET 4.0, one for 4.8, one for .NET 6.0 or newer. 
+
+	![installation-deployment-and-distribution-install-using-nuget 00](images/installation-deployment-and-distribution-install-using-nuget008.png)
 
 ## Download from the NuGet server
 
@@ -65,6 +67,10 @@ You need to add the Telerik package server (**https://nuget.telerik.com/v3/index
 1. Then you can just select and install the desired NuGet packages.
 
     ![installation-deployment-and-distribution-install-using-nuget 006](images/installation-deployment-and-distribution-install-using-nuget006.png)
+
+It is necessary to choose this Nuget package which corresponds to the respective [target framework]({%slug assemblies-version%}) selected in your project:
+
+   ![installation-deployment-and-distribution-install-using-nuget 007](images/installation-deployment-and-distribution-install-using-nuget007.png)
 
 # See Also
 
