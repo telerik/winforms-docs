@@ -105,6 +105,8 @@ Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple,
 	* 10 = Anniversary
 	
 	* 11 = PhoneCall
+
+>caution As of **R2 2023** RadScheduler offers *Modern* style for its appointments. This functionality is enabled by default and it can be controlled by the **UseModernAppointmentStyles** property. If you want to bring back the *Classic* style, it is necessary to set explicitly the **UseModernAppointmentStyles** property to *false*. [Read More]({%slug scheduler-appointment-styles%}).
 	
 * To extend/replace the __Backgrounds__ collection, use the __AppointmentBackgroundInfo__ class:
             
