@@ -24,7 +24,7 @@ The **Background** items represented in the *Edit Appointment Dialog* match the 
 |----|----|
 |![scheduler-appointment-styles 003](images/scheduler-appointment-styles003.png)|![scheduler-appointment-styles 004](images/scheduler-appointment-styles004.png)|
 
->note Since the Background information is stored as an integer in the appointments, the changes affects only the visual representation and color for the existing events. Changes in the code are not required unless you need to [localize]({%slug winforms/scheduler/localization/translating-strings%}) the new strings.
+>note Since the Background information is stored as an integer in the appointments, the changes affect only the visual representation and color for the existing events. Changes in the code are not required unless you need to [localize]({%slug winforms/scheduler/localization/translating-strings%}) the new strings.
 
 You can find below a matching table between the background values when using the Modern vs Classic style:
 
