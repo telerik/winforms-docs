@@ -52,6 +52,7 @@ With the introduction of modern styles, a set of color properties are offered as
 |**ModernAppointmentBackColor2**|Gets or sets the second back color of the appointment when it has a linear gradient in the default None category.|
 |**ModernAppointmentForeColor**|Gets or sets the fore color of the appointment.|
 |**ModernAppointmentBorderColor**|Gets or sets the border color of the appointment when it has the default None category.|
+|**PaintModernApppointmentsBorders**|Gets or sets whether the borders of the appointment element will be painted. This color set via the RadScheduler.ModernAppointmentBorderColor property is applied only for appointments with modern styles.|
 |**ModernAppointmentYellowColor**|Gets or sets the back color of the appointment when it has the Yellow category.|
 |**ModernAppointmentPurpleColor**|Gets or sets the back color of the appointment when it has the Purple category.|
 |**ModernAppointmentGreenColor**|Gets or sets the back color of the appointment when it has the Green category.|
