@@ -8,6 +8,8 @@ published: True
 position: 0
 ---
 
+# WinForms HeatMap Overview
+
 **RadHeatMap** can be used to visualize numeric data in a matrix like representation along two axes. Its purpose is to present the data in colored rectangles where the color of each represents the rectangle's value and makes it quite easy to perceive and compare all values.
 
 ![heatmap-overview001](images/heatmap-overview001.png)
