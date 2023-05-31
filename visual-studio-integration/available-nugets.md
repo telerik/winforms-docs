@@ -10,7 +10,7 @@ position: 5
 
 # Available NuGet Packages
 
-Telerik UI for WinForms comes with a several different packages that can be [installed via the Telerik server or from a local package source]({%slug winforms/nuget%}):
+Telerik UI for WinForms comes with several different packages that can be [installed via the Telerik server or from a local package source]({%slug winforms/nuget%}):
 
 ![winforms-available-nugets001](images/winforms-available-nugets001.png)
 
