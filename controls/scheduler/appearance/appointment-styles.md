@@ -16,8 +16,6 @@ As of **R2 2023** RadScheduler offers *Modern* style for its appointments. This 
 |----|----|
 |![scheduler-appointment-styles 001](images/scheduler-appointment-styles001.png)|![scheduler-appointment-styles 002](images/scheduler-appointment-styles002.png)|
 
->caution Changing the value of the **UseModernAppointmentStyles** property clears the RadScheduler.**Backgrounds** collection and refills it with the respective colors for the Modern/Classic style respectively. 
-
 The **Background** items represented in the *Edit Appointment Dialog* match the applied theme when using the *Modern* style:
 
 |Classic|Modern|
