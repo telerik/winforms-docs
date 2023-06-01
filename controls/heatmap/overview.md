@@ -12,7 +12,7 @@ position: 0
 
 **RadHeatMap** can be used to visualize numeric data in a matrix like representation along two axes. Its purpose is to present the data in colored rectangles where the color of each represents the rectangle's value and makes it quite easy to perceive and compare all values.
 
-![heatmap-overview001](images/heatmap-overview001.png)
+![heatmap-overview002](images/heatmap-overview002.gif)
 
 ## Key Features
 
@@ -35,6 +35,8 @@ Read more about this in the *Colorizers* article.
 * **Custom panting**: RadHeatMap allows you to customize the appearance of the control as well as its elements.
 
 >tip Get started with the control with its [Getting Started]({%slug heatmap-getting-started%}) help article that shows how to use it in a basic scenario.
+
+![heatmap-overview001](images/heatmap-overview001.png)
 
 ## See Also
 
