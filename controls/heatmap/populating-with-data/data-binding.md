@@ -202,17 +202,150 @@ End Sub
 
 {{endregion}}
 
-![WinForms RadHeatMapMap Data Binding CategoricalDefinition](images/heatmap-data-binding01.png)
+![WinForms RadHeatMapMap Data Binding Categorical Definition](images/heatmap-data-binding01.png)
 
 ### Vertical Definition
 
 Alternatively, we can also use a __VerticalDefinition__. We'll set the months as HeaderPath of our HeatMap. Thus the months supplied by the Month property of our underlying source will be visualized as column headers. For each row we'll display the Temperature and Rain values of the corresponding month.
 
+{{source=..\SamplesCS\TreeMap\HeatMapGettingStarted.cs region=Bind_SampleData_VerticalDefinition}} 
+{{source=..\SamplesVB\TreeMap\HeatMapGettingStarted.vb region=Bind_SampleData_VerticalDefinition}} 
+
+````C#
+
+private void Bind_VerticalDefinition()
+{
+	HeatMapGradientColorizer heatMapGradientColorizer = new HeatMapGradientColorizer();
+	ColorConverter colorConverter = new ColorConverter();
+	heatMapGradientColorizer.GradientStops = new List<GradientStop>()
+	{
+		new GradientStop() { Color=(Color)new ColorConverter().ConvertFromString("#D9E7F1"), Position=0 },
+		new GradientStop() { Color=(Color)new ColorConverter().ConvertFromString("#01518C"), Position=1 }
+	};
+	VerticalDefinition verticalDefinition = new VerticalDefinition();
+	verticalDefinition.DataSource = PrepareData();
+	verticalDefinition.HeaderMember = "Month";
+	verticalDefinition.MemberMappings = new MemberMappingsCollection() {
+		new MemberMapping() { Header = "Temperature in Celsius", ValueMember = "Temperature",},
+		new MemberMapping() { Header = "Rain in Centimeters", ValueMember = "Rain", Colorizer = heatMapGradientColorizer }               
+	};
+	this.radHeatMap1.HeatMapElement.RowHeaderWidth = 130;
+	this.radHeatMap1.Definition = verticalDefinition;
+}
+
+
+````
+````VB.NET
+
+Private Sub Bind_VerticalDefinition()
+    Dim heatMapGradientColorizer As HeatMapGradientColorizer = New HeatMapGradientColorizer()
+    Dim colorConverter As ColorConverter = New ColorConverter()
+    heatMapGradientColorizer.GradientStops = New List(Of GradientStop)() From {
+        New GradientStop() With {
+            .Color = CType(New ColorConverter().ConvertFromString("#D9E7F1"), Color),
+            .Position = 0
+        },
+        New GradientStop() With {
+            .Color = CType(New ColorConverter().ConvertFromString("#01518C"), Color),
+            .Position = 1
+        }
+    }
+    Dim verticalDefinition As VerticalDefinition = New VerticalDefinition()
+    verticalDefinition.DataSource = PrepareData()
+    verticalDefinition.HeaderMember = "Month"
+    verticalDefinition.MemberMappings = New MemberMappingsCollection() From {
+        New MemberMapping() With {
+            .Header = "Temperature in Celsius",
+            .ValueMember = "Temperature"
+        },
+        New MemberMapping() With {
+            .Header = "Rain in Centimeters",
+            .ValueMember = "Rain",
+            .Colorizer = heatMapGradientColorizer
+        }
+    }
+    Me.radHeatMap1.HeatMapElement.RowHeaderWidth = 130
+    Me.radHeatMap1.Definition = verticalDefinition
+End Sub
 
 
 
+````
+
+{{endregion}}
+
+![WinForms RadHeatMapMap Data Binding Vertical Definition](images/heatmap-data-binding02.png)
+
+### Horizontal Definition
+
+This definition is similar to the VerticalDefinition, except the fact that the property value of our underlying source set to the HeaderMember property will be visualized as row headers.
+
+{{source=..\SamplesCS\TreeMap\HeatMapGettingStarted.cs region=Bind_SampleData_HorizontalDefinition}} 
+{{source=..\SamplesVB\TreeMap\HeatMapGettingStarted.vb region=Bind_SampleData_HorizontalDefinition}} 
+
+````C#
+
+private void Bind_HorizontalDefinition()
+{
+    HeatMapGradientColorizer heatMapGradientColorizer = new HeatMapGradientColorizer();
+    ColorConverter colorConverter = new ColorConverter();
+    heatMapGradientColorizer.GradientStops = new List<GradientStop>()
+    {
+        new GradientStop() { Color=(Color)new ColorConverter().ConvertFromString("#D9E7F1"), Position=0 },
+        new GradientStop() { Color=(Color)new ColorConverter().ConvertFromString("#01518C"), Position=1 }
+    };
+    HorizontalDefinition horizontalDefinition = new HorizontalDefinition();
+    horizontalDefinition.DataSource = PrepareData();
+    horizontalDefinition.HeaderMember = "Month";
+    horizontalDefinition.MemberMappings = new MemberMappingsCollection() {
+        new MemberMapping() { Header = "Temperature in Celsius", ValueMember = "Temperature",},
+        new MemberMapping() { Header = "Rain in Centimeters", ValueMember = "Rain", Colorizer = heatMapGradientColorizer }
+    };
+    this.radHeatMap1.Definition = horizontalDefinition;
+}
 
 
+
+````
+````VB.NET
+
+Private Sub Bind_HorizontalDefinition()
+    Dim heatMapGradientColorizer As HeatMapGradientColorizer = New HeatMapGradientColorizer()
+    Dim colorConverter As ColorConverter = New ColorConverter()
+    heatMapGradientColorizer.GradientStops = New List(Of GradientStop)() From {
+        New GradientStop() With {
+            .Color = CType(New ColorConverter().ConvertFromString("#D9E7F1"), Color),
+            .Position = 0
+        },
+        New GradientStop() With {
+            .Color = CType(New ColorConverter().ConvertFromString("#01518C"), Color),
+            .Position = 1
+        }
+    }
+    Dim horizontalDefinition As HorizontalDefinition = New HorizontalDefinition()
+    horizontalDefinition.DataSource = PrepareData()
+    horizontalDefinition.HeaderMember = "Month"
+    horizontalDefinition.MemberMappings = New MemberMappingsCollection() From {
+        New MemberMapping() With {
+            .Header = "Temperature in Celsius",
+            .ValueMember = "Temperature"
+        },
+        New MemberMapping() With {
+            .Header = "Rain in Centimeters",
+            .ValueMember = "Rain",
+            .Colorizer = heatMapGradientColorizer
+        }
+    }
+    Me.radHeatMap1.Definition = horizontalDefinition
+End Sub
+
+
+
+````
+
+{{endregion}}
+
+![WinForms RadHeatMapMap Data Binding Horizontal Definition](images/heatmap-data-binding03.png)
 
 ## Design Time
 
