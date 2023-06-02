@@ -16,7 +16,7 @@ position: 0
 
 ## Key Features
 
-* **Different visualization set up mechanisms**: You can visualize the data differently based on the heat map definition. There are two definitions types - **Categorical** and **Horizontal/Vertical**. Read more about this in the *Definition Types* article.
+* **Different visualization set up mechanisms**: You can visualize the data differently based on the heat map definition. There are two definitions types - **Categorical** and **Horizontal/Vertical**. Read more about this in the [Definition Types]({%slug heatmap-definition-types%}) article.
 
 * **Colorizers**: Each colorizer produces a collection of colors. RadHeatMap applies these colors to its children according to their values.  You can choose from the following list of available colorizers to customize the way your HeatMap looks:
 	* **HeatMapGradientColorizer**: Represents a colorizer, which contains a set of GradientStops. It chooses the color to be applied to the RadHeatMap item's value and colorizer's gradient stops. Each GradientStop.Offset value can be absolute or relative (between 0 and 1) depending on the IsAbsolute property value.
