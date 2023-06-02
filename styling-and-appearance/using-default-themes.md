@@ -29,6 +29,8 @@ If you have installed the suite from the provided installation files, you will s
 
 >note Since R1 2021 Telerik UI for Winforms suite has introduced the brand new **Office2019Light** theme. Inspired by the latest Microsoft Office application, the **Office2019Light** theme is here to help delivering that fresh look and feel to your WinForms application. As of **R2 2021** there are Gray and Dark variations of the Office2019 theme.
 
+>note Since R2 2023 Telerik UI for WinForms suite introduced **VisualStudio2022Dark** theme.
+
 >note Since R1 2022 Telerik UI for WinForms suite introduced **VisualStudio2022** theme inspired by the last released version of Visual Studio.
 
 In order to use the Theme components, just drag and drop them from the VS Toolbox to the form. This will add a reference to the corresponding theme assembly in the project and will enable the theme in the ThemeName drop-down of all Telerik controls on the form. All you have to do afterwards is to set the needed theme from the __ThemeName__ drop-down (in the smart tag) or programmatically.
