@@ -197,8 +197,11 @@ The following list shows all available __RadRichTextEditor__ commands.
 |**GoToNextEndnoteCommand**|Go To Next Endnote Command.|
 |**GoToPreviousEndnoteCommand**|Go To Previous Endnote Command.|
 |**IncrementPageWidthCommand**|Increment Page Width Command.|
-|**DecrementPageWidthCommand**|Decrement Page Width Command.|
-        
+|**DecrementPageWidthCommand**|Decrement Page Width Command.|        
+|**InsertLineNumberingCommand**|Adds line numbering to the selected sections.|
+|**SuppressLineNumberingForCurrentParagraphCommand**|Disables the numbering for the currently selected paragraph(s).|
+|**ShowLineNumberingDialogCommand**|Opens the dialog enabling users to set different line numbering options.|	
+		
 Here is an example with a __RadToggleButton__ control.
 
 {{source=..\SamplesCS\RichTextEditor\Features\Commands.cs region=init}} 

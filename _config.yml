@@ -817,6 +817,12 @@ navigation:
     controls/gridview/printing-support:
         title: Printing Support
         position: 27
+    controls/heatmap:
+        title: HeatMap
+        position: 265
+    controls/heatmap/populating-with-data:
+        title: Populating with Data
+        position: 6
     controls/image-editor:
         title: Image Editor
         position: 269	
@@ -1725,6 +1731,7 @@ intro_columns:
       "PropertyGrid": "winforms/propertygrid"
       "TreeView": "winforms/treeview"
       "TreeMap": "winforms-treemap-overview"
+      "HeatMap": "heatmap-overview"
       "VirtualGrid": "winforms/virtualgrid"
       "DataFilter": "winforms/datafilter/overview"
       "FilterView": "filter-view-overview"
