@@ -10,7 +10,7 @@ position: 2
 
 # Getting Started with WinForms HeatMap
 
-This article shows how you can start using **RadHeatMap**. Just drag a RadHeatMap from the toolbox and drop it onto the form. Then, you can define a sample data and bind the control:
+This article shows how you can start using **RadHeatMap**. Just drag a RadHeatMap from the toolbox and drop it onto the form. Then, you can define sample data and bind the control:
 
 ![WinForms RadHeatMap Getting Started](images/heatmap-getting-started001.png)
 
@@ -46,8 +46,7 @@ End Class
 
 ## Setting up the Control
 
-The control works with few different definitions that describe how to data will be shown. In this example we will use the __CategoricalDefinition__. The definition provides few properties to define what data should be used.
-
+The control works with a few different definitions that describe how to data will be shown. In this example, we will use the __CategoricalDefinition__. The definition provides few properties to define what data should be used.
 * __RowGroupMember__: Contains the name of the property in the custom model that will be used to generate the rows.
 * __ColumnGroupMember__: Contains the name of the property in the custom model that will be used to generate the columns.
 * __ValueMember__: Contains the name of the property in the custom model that will be used to generate the cells. Based on that value the cell will be colored differently.
@@ -79,6 +78,7 @@ private void PrepareData()
     categoricalDefinition.ColumnGroupMember = "Month";
     categoricalDefinition.ValueMember = "Temperature";
     categoricalDefinition.DataSource= source;
+	this.radHeatMap1.DisplayCellText = true;
     this.radHeatMap1.Definition = categoricalDefinition;
 }  
 
@@ -109,7 +109,8 @@ Private Sub PrepareData()
     categoricalDefinition.ColumnGroupMember = "Month"
     categoricalDefinition.ValueMember = "Temperature"
     categoricalDefinition.DataSource = source
-    Me.radHeatMap1.Definition = categoricalDefinition
+	Me.RadHeatMap1.DisplayCellText = True
+    Me.RadHeatMap1.Definition = categoricalDefinition
 End Sub
 
 
