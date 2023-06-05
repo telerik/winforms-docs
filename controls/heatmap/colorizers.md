@@ -519,4 +519,5 @@ And the result is illustrated below:
 ## See Also
 
 * [Structure]({%slug heatmap-structure%}) 
+* [Custom Painting]({%slug heatmap-custom-painting%})  
 

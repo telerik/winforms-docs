@@ -57,5 +57,7 @@ RadHeatMap supports data binding either at design time or at run time.
 
 ## See Also
 
-* [Structure]({%slug heatmap-structure%}) 
+* [Structure]({%slug heatmap-structure%})  
+* [Custom Painting]({%slug heatmap-custom-painting%}) 
+* [Colorizers]({%slug heatmap-colorizers%})
 

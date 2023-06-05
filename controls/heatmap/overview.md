@@ -41,4 +41,6 @@ Read more about this in the *Colorizers* article.
 ## See Also
 
 * [Structure]({%slug heatmap-structure%}) 
+* [Custom Painting]({%slug heatmap-custom-painting%}) 
+* [Colorizers]({%slug heatmap-colorizers%})
 
