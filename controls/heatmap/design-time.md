@@ -18,7 +18,7 @@ To start using **RadHeatMap**, just drag it from the toolbox and drop it onto th
 
 Select **RadHeatMap** and click the small arrow on the top right position in order to open the Smart Tag.
  
-![heatmap-desing-time001](images/heatmap-desing-time001.png)
+![WinForms RadHeatMap SmartTag](images/heatmap-desing-time001.png)
 
 * **Common Tasks**
 
@@ -34,21 +34,21 @@ Select **RadHeatMap** and click the small arrow on the top right position in ord
 
 * **Data Binding** - It is possible to bind RadHeatMap at design time by specifying the DataSource. According to the selected *Definition type*, different members should be set respectively. 
 
-![heatmap-desing-time002](images/heatmap-desing-time002.png) 
+![WinForms RadHeatMap DataBinding Design Time](images/heatmap-desing-time002.png) 
 
-	* **CategoricalDefinition**: requires specifying the following members:
-		* **RowGroupMember**: Gets or sets the name of the property which determines the row-category of a cell. 
-		* **ColumnGroupMember**: Gets or sets the name of the property which determines the column-category of a cell.  
-		* **ValueMember**: Gets or sets the name of the property which determines the value of a cell. 
-	
-	* **VerticalDefinition** and **HorizontalDefinition**: require specifying the following member:
-		* **HeaderMember**: Gets or sets the name of the property which determines the header-string.
+* **CategoricalDefinition**: requires specifying the following members:
+	* **RowGroupMember**: Gets or sets the name of the property which determines the row-category of a cell. 
+	* **ColumnGroupMember**: Gets or sets the name of the property which determines the column-category of a cell.  
+	* **ValueMember**: Gets or sets the name of the property which determines the value of a cell. 
 
-	* **Edit Member Mappings**: opens the MemberMapping Collection Editor
+* **VerticalDefinition** and **HorizontalDefinition**: require specifying the following member:
+	* **HeaderMember**: Gets or sets the name of the property which determines the header-string.
 
-![heatmap-desing-time003](images/heatmap-desing-time003.png) 
+* **Edit Member Mappings**: opens the MemberMapping Collection Editor
 
-RadHeatMap supports data binding either at design time or at run time.
+![WinForms RadHeatMap MemberMapping Design Time](images/heatmap-desing-time003.png) 
+
+RadHeatMap supports data binding either at design time, or run time.
 
 * **Learning Center**: Navigate to the Telerik help, code library projects or support forum.
 

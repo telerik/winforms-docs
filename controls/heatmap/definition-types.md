@@ -10,7 +10,7 @@ position: 4
 
 # Definition Types
 
-You can visualize the data differently based on the heat map definition. There are two main definitions types - Categorical and Horizontal/Vertical. 
+You can visualize the data differently based on the heat map definition. There are two main definition types - Categorical and Horizontal/Vertical. 
 
 ## CategoricalDefinition
 
@@ -67,12 +67,12 @@ Me.radHeatMap1.Definition = categoricalDefinition1
 
 {{endregion}} 
 
-![heatmap-definition-types001](images/heatmap-definition-types001.png)
+![WinForms RadHeatMap Categorical Definition](images/heatmap-definition-types001.png)
 
 
 ## HorizontalDefinition
 
-Each column is represented by a **MemberMapping**. The latter has **Header**, **ValueMember** and **Colorizer** properties that allow you to have different value member and colorizer for each column of data. The default Colorizer created for the MemberMapping is a **HeatMapGradientColorizer** with two **GradientStop**s.
+Each column is represented by a **MemberMapping**. The latter has **Header**, **ValueMember** and **Colorizer** properties that allow you to have different value members and colorizer for each column of data. The default Colorizer created for the MemberMapping is a **HeatMapGradientColorizer** with two **GradientStop**s.
 
 {{source=..\SamplesCS\HeatMap\HeatMapDefinitions.cs region=HorizontalDefinition}} 
 {{source=..\SamplesVB\HeatMap\HeatMapDefinitions.vb region=HorizontalDefinition}} 
@@ -147,7 +147,7 @@ horizontalDefinition1.MemberMappings.Add(memberMapping3)
 
 {{endregion}}
 
-![heatmap-definition-types002](images/heatmap-definition-types002.png)
+![WinForms RadHeatMap Horizontal Definition](images/heatmap-definition-types002.png)
 
 ## VerticalDefinition
 
@@ -226,7 +226,7 @@ verticalDefinition1.MemberMappings.Add(memberMapping3)
 
 {{endregion}}
 
-![heatmap-definition-types003](images/heatmap-definition-types003.png)
+![WinForms RadHeatMap Horizontal Definition](images/heatmap-definition-types003.png)
 
 ## See Also
 

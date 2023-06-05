@@ -2,7 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms HeatMap Control
 description: Get familiar with the public API of the RadHeatMap WinForms control.
-slug: properties-methods-events
+slug: heatmap-properties-methods-events
 tags: heatmap, properties, methods, events
 published: True
 position: 7
@@ -107,7 +107,7 @@ The __HeatMapDefinition__ serves as the base class for definition types: Categor
 |**ColumnIndex**| Gets the column index of the cell.|
 |**IsDataCell**| Determine whether the current cell represents a data cell.|
 |**IsHeaderCell**| Determine whether the current cell represents a header cell.|
-|**ColumnIndex**| Determine whether the current cell represents an empty cell.|
+|**IsEmpty**| Determine whether the current cell represents an empty cell.|
 
 ## See Also
 

@@ -81,10 +81,10 @@ When the mouse cursor hovers over a cell, it will be visually highlighted to not
 
 Here is a list of properties related to the mouse over effect:
 
-|**HeaderCellHoverBackColor**|Gets or sets the header cell mouse over background color.| 
-|**HeaderCellHoverForeColor**|Gets or sets the header cell mouse over foreground color.| 
-|**HoveredCellBorderColor**|Gets or sets the hovered cell border color.| 
-|**HoveredCellBorderWidth**|Gets or sets the hovered cell border width.| 
+* __HeaderCellHoverBackColor__: Gets or sets the header cell mouse over background color.| 
+* __HeaderCellHoverForeColor__: Gets or sets the header cell mouse over foreground color.| 
+* __HoveredCellBorderColor__: Gets or sets the hovered cell border color.| 
+* __HoveredCellBorderWidth__: Gets or sets the hovered cell border width.| 
 
 By modifying these properties, you can customize the hover state appearance in your __RadHeatMap__ control, making it more visually appealing and interactive for users.
 

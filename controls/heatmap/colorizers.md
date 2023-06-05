@@ -10,7 +10,7 @@ position: 6
 
 # Colorizers
 
-This topic aims to get you familiar with all types of colorizers you may use to change the visualization of RadHeatMap. Depending on the heatmap's [Definition]({%slug heatmap-definition-types%}), the colorizer may be different according to the data that should be displayed. By default, **RadTreeMap** uses a **HeatMapGradientColorizer** with with two **GradientStop**s.
+This topic aims to get you familiar with all types of colorizers you may use to change the visualization of RadHeatMap. Depending on the heatmap's [Definition]({%slug heatmap-definition-types%}), the colorizer may be different according to the data that should be displayed. By default, **RadTreeMap** uses a **HeatMapGradientColorizer** with two **GradientStop**s.
 
 ## Colorizers in a Horizontal/Vertical Definition
 
@@ -251,13 +251,13 @@ End Function
 
 >caption Default HeatMapGradientColorizer
 
-![heatmap-colorizers001](images/heatmap-colorizers001.png)
+![WinForms RadHeatMap HeatMapGradientColorizer](images/heatmap-colorizers001.png)
 
 As you may have already noticed, there is no colorizer to be seen in the provided code so far. When there is no colorizer specified, RadHeatMap uses a default one. It is a **HeatMapGradientColorizer**.
 
 ### HeatMapValueGradientColorizer
 
-A colorizer, which contains a set of **GradientStops**. It chooses a color to be applied according to the values of the items in RadHeatMap and the colorizer’s gradient stops. Depending on the **IsAbsolute** property value, each GradientStop.**Position** value can be absolute or relative. A colorizer is relative when **IsAbsolute** is **false**, which is its default value. In this mode, the colorizer scans all values to find the smallest and greatest ones. In the same manner, these two correspond to GradientStop.**Position** 0 and 1. Also, by setting the RangeMinimum and RangeMaximum properties, you are specifying which are the actual minimum and maximum values , i.e. you are defining some values to correspond to offsets 0 and 1. In absolute mode, the offsets are set to the actual values, which are expected for the items in RadHeatMap.
+A colorizer, which contains a set of **GradientStops**. It chooses a color to be applied according to the values of the items in RadHeatMap and the colorizer’s gradient stops. Depending on the **IsAbsolute** property value, each GradientStop.**Position** value can be absolute or relative. A colorizer is relative when **IsAbsolute** is **false**, which is its default value. In this mode, the colorizer scans all values to find the smallest and greatest ones. In the same manner, these two correspond to GradientStop.**Position** 0 and 1. Also, by setting the RangeMinimum and RangeMaximum properties, you are specifying which are the actual minimum and maximum values, i.e. you are defining some values to correspond to offsets 0 and 1. In absolute mode, the offsets are set to the actual values, which are expected for the items in RadHeatMap.
 
 >note When the same instance of any relative colorizer is applied to more than one row or column, the colorizer shares the minimum and maximum between all the assigned rows or columns.
 
@@ -332,7 +332,7 @@ horizontalDefinition1.MemberMappings.Add(memberMapping3);
 
 Here is the observed result:
 
-![heatmap-colorizers002](images/heatmap-colorizers002.png)
+![WinForms RadHeatMap HeatMapValueGradientColorizer](images/heatmap-colorizers002.png)
 
 ### HeatMapRangeColorizer
 
@@ -440,11 +440,11 @@ horizontalDefinition1.MemberMappings.Add(memberMapping4);
 
 Here is the observed result:
 
-![heatmap-colorizers003](images/heatmap-colorizers003.png)
+![WinForms RadHeatMap HeatMapRangeColorizer](images/heatmap-colorizers003.png)
 
 ### HeatMapDesaturationColorizer
 
-It reduces the level of saturation of a given **StartColor** depending on the HeatMapItem's value. The level of desaturation can be controlled using **From** and **To** properties. When the From property equals 0 it means that you can get a completely white color for the smallest value. If it is set to a value greater than 0, for example 0.1, the smallest value will have a really faded StartColor but not completely white. On the other hand if To is set to 0.8, you will get a somewhat faded StartColor for the greatest value. Like the other colorizers, the **HeatMapDesaturationColorizer** has relative and absolute modes which are set again through the IsAbsolute property. In relative, the colorizer looks for the smallest and greatest values from the items, or they can be set through the **RangeMinimum** and **RangeMaximum** colors. In absolute mode, these two properties have to be set or, otherwise RadHeatMap will throw an exception.
+It reduces the level of saturation of a given **StartColor** depending on the HeatMapItem's value. The level of desaturation can be controlled using **From** and **To** properties. When the From property equals 0 it means that you can get a completely white color for the smallest value. If it is set to a value greater than 0, for example 0.1, the smallest value will have a really faded StartColor but not completely white. On the other hand, if To is set to 0.8, you will get a somewhat faded StartColor for the greatest value. Like the other colorizers, the **HeatMapDesaturationColorizer** has relative and absolute modes which are set again through the IsAbsolute property. In relative, the colorizer looks for the smallest and greatest values from the items, or they can be set through the **RangeMinimum** and **RangeMaximum** colors. In absolute mode, these two properties have to be set or, otherwise, RadHeatMap will throw an exception.
 
 This is how HeatMapDesaturationColorizer is defined and applied:
 
@@ -485,28 +485,29 @@ horizontalDefinition1.MemberMappings.Add(memberMapping3);
 ````
 ````VB.NET
 
-        Dim horizontalDefinition1 As HorizontalDefinition = New HorizontalDefinition()
-        horizontalDefinition1.DataSource = CreateData()
-        horizontalDefinition1.HeaderMember = "Name"
-        radHeatMap1.Definition = horizontalDefinition1
-        radHeatMap1.DescriptionContent = "Cars"
-        Dim desaturationColorizer1 As HeatMapDesaturationColorizer = New HeatMapDesaturationColorizer() With {
-        .StartColor = Color.FromArgb(255, 1, 81, 140),
-        .[To] = 0.1
-    }
-        Dim memberMapping1 As MemberMapping = New MemberMapping()
-        memberMapping1.Header = "Price"
-        memberMapping1.ValueMember = "Price"
-        memberMapping1.Colorizer = desaturationColorizer1
-        Dim memberMapping2 As MemberMapping = New MemberMapping()
-        memberMapping2.Header = "HorsePower"
-        memberMapping2.ValueMember = "HorsePower"
-        Dim memberMapping3 As MemberMapping = New MemberMapping()
-        memberMapping3.Header = "TopSpeed"
-        memberMapping3.ValueMember = "TopSpeed"
-        horizontalDefinition1.MemberMappings.Add(memberMapping1)
-        horizontalDefinition1.MemberMappings.Add(memberMapping2)
-        horizontalDefinition1.MemberMappings.Add(memberMapping3)
+Dim horizontalDefinition1 As HorizontalDefinition = New HorizontalDefinition()
+horizontalDefinition1.DataSource = CreateData()
+horizontalDefinition1.HeaderMember = "Name"
+radHeatMap1.Definition = horizontalDefinition1
+radHeatMap1.DescriptionContent = "Cars"
+Dim desaturationColorizer1 As HeatMapDesaturationColorizer = New HeatMapDesaturationColorizer() With 
+{
+.StartColor = Color.FromArgb(255, 1, 81, 140),
+.[To] = 0.1
+}
+Dim memberMapping1 As MemberMapping = New MemberMapping()
+memberMapping1.Header = "Price"
+memberMapping1.ValueMember = "Price"
+memberMapping1.Colorizer = desaturationColorizer1
+Dim memberMapping2 As MemberMapping = New MemberMapping()
+memberMapping2.Header = "HorsePower"
+memberMapping2.ValueMember = "HorsePower"
+Dim memberMapping3 As MemberMapping = New MemberMapping()
+memberMapping3.Header = "TopSpeed"
+memberMapping3.ValueMember = "TopSpeed"
+horizontalDefinition1.MemberMappings.Add(memberMapping1)
+horizontalDefinition1.MemberMappings.Add(memberMapping2)
+horizontalDefinition1.MemberMappings.Add(memberMapping3)
 
 ````
 
@@ -514,7 +515,7 @@ horizontalDefinition1.MemberMappings.Add(memberMapping3);
 
 And the result is illustrated below:
 
-![heatmap-colorizers004](images/heatmap-colorizers004.png)
+![WinForms RadHeatMap HeatMapDesaturationColorizers](images/heatmap-colorizers004.png)
 
 ## See Also
 

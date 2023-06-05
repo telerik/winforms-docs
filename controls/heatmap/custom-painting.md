@@ -19,88 +19,88 @@ Let's start the example with the following initial setup:
 
 ````C#
 
-        public void PopulateHeatMap()
-        {
-            CategoricalDefinition categoricalDefinition1 = new CategoricalDefinition();
-            categoricalDefinition1.ColumnGroupMember = "District";
-            categoricalDefinition1.DataSource = AddData();
-            categoricalDefinition1.RowGroupMember = "Month";
-            categoricalDefinition1.ValueMember = "CallsNumber";
+	public void PopulateHeatMap()
+	{
+		CategoricalDefinition categoricalDefinition1 = new CategoricalDefinition();
+		categoricalDefinition1.ColumnGroupMember = "District";
+		categoricalDefinition1.DataSource = AddData();
+		categoricalDefinition1.RowGroupMember = "Month";
+		categoricalDefinition1.ValueMember = "CallsNumber";
 
-            HeatMapGradientColorizer colorizer = new HeatMapGradientColorizer()
-            {
-                RangeMinimum = 2,
-                RangeMaximum = 108,
-                GradientStops =
-                {
-                    new Telerik.WinControls.Drawing.GradientStop(){ Position = 0.0f , Color = ColorTranslator.FromHtml("#FFFFFFFF")},
-                    new Telerik.WinControls.Drawing.GradientStop(){ Position = 0.2f , Color = ColorTranslator.FromHtml("#FFFFEA84")},
-                    new Telerik.WinControls.Drawing.GradientStop(){ Position = 1.0f , Color = ColorTranslator.FromHtml("#FFED4506")},
-                }
-            };
+		HeatMapGradientColorizer colorizer = new HeatMapGradientColorizer()
+		{
+			RangeMinimum = 2,
+			RangeMaximum = 108,
+			GradientStops =
+			{
+				new Telerik.WinControls.Drawing.GradientStop(){ Position = 0.0f , Color = ColorTranslator.FromHtml("#FFFFFFFF")},
+				new Telerik.WinControls.Drawing.GradientStop(){ Position = 0.2f , Color = ColorTranslator.FromHtml("#FFFFEA84")},
+				new Telerik.WinControls.Drawing.GradientStop(){ Position = 1.0f , Color = ColorTranslator.FromHtml("#FFED4506")},
+			}
+		};
 
-            categoricalDefinition1.Colorizer = colorizer;
-            this.radHeatMap1.Definition = categoricalDefinition1;
+		categoricalDefinition1.Colorizer = colorizer;
+		this.radHeatMap1.Definition = categoricalDefinition1;
 
-        }
+	}
 
-        public BindingSource AddData()
-        {
-            BindingSource data = new BindingSource();
-            data.Add(new PlotInfo("Parksley", "January", 103));
-            data.Add(new PlotInfo("Parksley", "February", 78));
-            data.Add(new PlotInfo("Parksley", "March", 89));
-            data.Add(new PlotInfo("Parksley", "April", 88));
-            data.Add(new PlotInfo("Parksley", "May", 89));
-            data.Add(new PlotInfo("Parksley", "June", 102));
-            data.Add(new PlotInfo("Parksley", "July", 90));
-            data.Add(new PlotInfo("Parksley", "August", 108));
-            data.Add(new PlotInfo("Parksley", "September", 98));
-            data.Add(new PlotInfo("Parksley", "October", 81));
-            data.Add(new PlotInfo("Parksley", "November", 88));
-            data.Add(new PlotInfo("Parksley", "December", 99));
+	public BindingSource AddData()
+	{
+		BindingSource data = new BindingSource();
+		data.Add(new PlotInfo("Parksley", "January", 103));
+		data.Add(new PlotInfo("Parksley", "February", 78));
+		data.Add(new PlotInfo("Parksley", "March", 89));
+		data.Add(new PlotInfo("Parksley", "April", 88));
+		data.Add(new PlotInfo("Parksley", "May", 89));
+		data.Add(new PlotInfo("Parksley", "June", 102));
+		data.Add(new PlotInfo("Parksley", "July", 90));
+		data.Add(new PlotInfo("Parksley", "August", 108));
+		data.Add(new PlotInfo("Parksley", "September", 98));
+		data.Add(new PlotInfo("Parksley", "October", 81));
+		data.Add(new PlotInfo("Parksley", "November", 88));
+		data.Add(new PlotInfo("Parksley", "December", 99));
 
-            data.Add(new PlotInfo("Oak Hall", "January", 103));
-            data.Add(new PlotInfo("Oak Hall", "February", 85));
-            data.Add(new PlotInfo("Oak Hall", "March", 84));
-            data.Add(new PlotInfo("Oak Hall", "April", 91));
-            data.Add(new PlotInfo("Oak Hall", "May", 96));
-            data.Add(new PlotInfo("Oak Hall", "June", 87));
-            data.Add(new PlotInfo("Oak Hall", "July", 97));
-            data.Add(new PlotInfo("Oak Hall", "August", 81));
-            data.Add(new PlotInfo("Oak Hall", "September", 60));
-            data.Add(new PlotInfo("Oak Hall", "October", 82));
-            data.Add(new PlotInfo("Oak Hall", "November", 78));
-            data.Add(new PlotInfo("Oak Hall", "December", 70));
+		data.Add(new PlotInfo("Oak Hall", "January", 103));
+		data.Add(new PlotInfo("Oak Hall", "February", 85));
+		data.Add(new PlotInfo("Oak Hall", "March", 84));
+		data.Add(new PlotInfo("Oak Hall", "April", 91));
+		data.Add(new PlotInfo("Oak Hall", "May", 96));
+		data.Add(new PlotInfo("Oak Hall", "June", 87));
+		data.Add(new PlotInfo("Oak Hall", "July", 97));
+		data.Add(new PlotInfo("Oak Hall", "August", 81));
+		data.Add(new PlotInfo("Oak Hall", "September", 60));
+		data.Add(new PlotInfo("Oak Hall", "October", 82));
+		data.Add(new PlotInfo("Oak Hall", "November", 78));
+		data.Add(new PlotInfo("Oak Hall", "December", 70));
 
-            data.Add(new PlotInfo("Chincoteague", "January", 66));
-            data.Add(new PlotInfo("Chincoteague", "February", 56));
-            data.Add(new PlotInfo("Chincoteague", "March", 48));
-            data.Add(new PlotInfo("Chincoteague", "April", 53));
-            data.Add(new PlotInfo("Chincoteague", "May", 87));
-            data.Add(new PlotInfo("Chincoteague", "June", 85));
-            data.Add(new PlotInfo("Chincoteague", "July", 100));
-            data.Add(new PlotInfo("Chincoteague", "August", 107));
-            data.Add(new PlotInfo("Chincoteague", "September", 87));
-            data.Add(new PlotInfo("Chincoteague", "October", 72));
-            data.Add(new PlotInfo("Chincoteague", "November", 48));
-            data.Add(new PlotInfo("Chincoteague", "December", 57));
+		data.Add(new PlotInfo("Chincoteague", "January", 66));
+		data.Add(new PlotInfo("Chincoteague", "February", 56));
+		data.Add(new PlotInfo("Chincoteague", "March", 48));
+		data.Add(new PlotInfo("Chincoteague", "April", 53));
+		data.Add(new PlotInfo("Chincoteague", "May", 87));
+		data.Add(new PlotInfo("Chincoteague", "June", 85));
+		data.Add(new PlotInfo("Chincoteague", "July", 100));
+		data.Add(new PlotInfo("Chincoteague", "August", 107));
+		data.Add(new PlotInfo("Chincoteague", "September", 87));
+		data.Add(new PlotInfo("Chincoteague", "October", 72));
+		data.Add(new PlotInfo("Chincoteague", "November", 48));
+		data.Add(new PlotInfo("Chincoteague", "December", 57));
 
-            return data;
-        }
-        public class PlotInfo
-        {
-            public PlotInfo(string district, string month, double calls)
-            {
-                this.District = district;
-                this.Month = month;
-                this.CallsNumber = calls;
-            }
+		return data;
+	}
+	public class PlotInfo
+	{
+		public PlotInfo(string district, string month, double calls)
+		{
+			this.District = district;
+			this.Month = month;
+			this.CallsNumber = calls;
+		}
 
-            public string District { get; set; }
-            public string Month { get; set; }
-            public double CallsNumber { get; set; }
-        }
+		public string District { get; set; }
+		public string Month { get; set; }
+		public double CallsNumber { get; set; }
+	}
 
 ````
 ````VB.NET
@@ -183,7 +183,7 @@ Let's start the example with the following initial setup:
 
 The achieved result is illustrated below:
 
-![heatmap-custom-painting001](images/heatmap-custom-painting001.png)
+![WinForms RadHeatMap Custom Painting](images/heatmap-custom-painting001.png)
 
 ## CellPainting 
 
@@ -234,7 +234,7 @@ End Sub
 {{endregion}}
 
 
-![heatmap-custom-painting002](images/heatmap-custom-painting002.gif)
+![WinForms RadHeatMap CellPainting](images/heatmap-custom-painting002.gif)
 
 The **CellPainted** event occurs when a cell has already been painted.
 
@@ -314,7 +314,7 @@ End Sub
 {{endregion}}
 
 
-![heatmap-custom-painting003](images/heatmap-custom-painting003.gif)
+![WinForms RadHeatMap WinForms RadHeatMap](images/heatmap-custom-painting003.gif)
 
 The **HeaderCellPainted** event occurs when a row/column header cell has already been painted.
 
