@@ -27,28 +27,28 @@ In this example, we will showcase the usage of the CategoricalDefinition to illu
 CategoricalDefinition def = new CategoricalDefinition();
 HeatMapGradientColorizer colorizer = new HeatMapGradientColorizer();
 colorizer.GradientStops.Add(new GradientStop(ColorTranslator.FromHtml("#FFF8696B"), 0.0f));
-colorizer.GradientStops.Add(new GradientStop(ColorTranslator.FromHtml("#FFFFEB84"), 0.5f));
+colorizer.GradientStops.Add(new GradientStop(ColorTranslator.FromHtml("#FFFFEB84"), 0.3f));
 colorizer.GradientStops.Add(new GradientStop(ColorTranslator.FromHtml("#FF63BE7B"), 1.0f));
 def.Colorizer = colorizer;
-def.Items.Add(new CategoricalHeatMapItem("China", "Computer", -151.9));
-def.Items.Add(new CategoricalHeatMapItem("China", "Oil, Gas, Minerals", 1.9));
-def.Items.Add(new CategoricalHeatMapItem("China", "Transportation", 10.9));
-def.Items.Add(new CategoricalHeatMapItem("China", "Furniture", double.NaN));
-def.Items.Add(new CategoricalHeatMapItem("China", "Machinery", 14));
-def.Items.Add(new CategoricalHeatMapItem("China", "Primary Metals", 250));
-def.Items.Add(new CategoricalHeatMapItem("Euro Area", "Computer", 3.4));
-def.Items.Add(new CategoricalHeatMapItem("Euro Area", "Oil, Gas, Minerals", 6.4));
-def.Items.Add(new CategoricalHeatMapItem("Euro Area", "Transportation", -30.9));
-def.Items.Add(new CategoricalHeatMapItem("Euro Area", "Furniture", 15));
-def.Items.Add(new CategoricalHeatMapItem("Euro Area", "Machinery", 40));
-def.Items.Add(new CategoricalHeatMapItem("Euro Area", "Primary Metals", 200));
-def.Items.Add(new CategoricalHeatMapItem("Japan", "Computer", 0));
-def.Items.Add(new CategoricalHeatMapItem("Japan", "Oil, Gas, Minerals", double.NaN));
-def.Items.Add(new CategoricalHeatMapItem("Japan", "Transportation", -1.8));
-def.Items.Add(new CategoricalHeatMapItem("Japan", "Furniture", 30));
-def.Items.Add(new CategoricalHeatMapItem("Japan", "Machinery", 90));
-def.Items.Add(new CategoricalHeatMapItem("Japan", "Primary Metals", 150));
-this.radHeatMap1.RowHeaderWidth = 80;
+def.Items.Add(new CategoricalHeatMapItem("Sweden", 1950, 7015));
+def.Items.Add(new CategoricalHeatMapItem("Sweden", 1960, 7481));
+def.Items.Add(new CategoricalHeatMapItem("Sweden", 1970, 8043));
+def.Items.Add(new CategoricalHeatMapItem("Sweden", 1980, double.NaN));
+def.Items.Add(new CategoricalHeatMapItem("Sweden", 1990, 8601));
+def.Items.Add(new CategoricalHeatMapItem("Sweden", 2000, 8925));
+def.Items.Add(new CategoricalHeatMapItem("Denmark", 1950, 4272));
+def.Items.Add(new CategoricalHeatMapItem("Denmark", 1960, 4582));
+def.Items.Add(new CategoricalHeatMapItem("Denmark", 1970, 4929));
+def.Items.Add(new CategoricalHeatMapItem("Denmark", 1980, 5124));
+def.Items.Add(new CategoricalHeatMapItem("Denmark", 1990, 5141));
+def.Items.Add(new CategoricalHeatMapItem("Denmark", 2000, 5338));
+def.Items.Add(new CategoricalHeatMapItem("Switzerland", 1950, 4695));
+def.Items.Add(new CategoricalHeatMapItem("Switzerland", 1960, double.NaN));
+def.Items.Add(new CategoricalHeatMapItem("Switzerland", 1970, 6268));
+def.Items.Add(new CategoricalHeatMapItem("Switzerland", 1980, 6386));
+def.Items.Add(new CategoricalHeatMapItem("Switzerland", 1990, 6844));
+def.Items.Add(new CategoricalHeatMapItem("Switzerland", 2000, 7278));
+this.radHeatMap1.RowHeaderWidth = 100;
 this.radHeatMap1.Definition = def;
 
 
@@ -58,28 +58,28 @@ this.radHeatMap1.Definition = def;
 Dim def As CategoricalDefinition = New CategoricalDefinition()
 Dim colorizer As HeatMapGradientColorizer = New HeatMapGradientColorizer()
 colorizer.GradientStops.Add(New GradientStop(ColorTranslator.FromHtml("#FFF8696B"), 0.0F))
-colorizer.GradientStops.Add(New GradientStop(ColorTranslator.FromHtml("#FFFFEB84"), 0.5F))
+colorizer.GradientStops.Add(New GradientStop(ColorTranslator.FromHtml("#FFFFEB84"), 0.3F))
 colorizer.GradientStops.Add(New GradientStop(ColorTranslator.FromHtml("#FF63BE7B"), 1.0F))
 def.Colorizer = colorizer
-def.Items.Add(New CategoricalHeatMapItem("China", "Computer", -151.9))
-def.Items.Add(New CategoricalHeatMapItem("China", "Oil, Gas, Minerals", 1.9))
-def.Items.Add(New CategoricalHeatMapItem("China", "Transportation", 10.9))
-def.Items.Add(New CategoricalHeatMapItem("China", "Furniture", Double.NaN))
-def.Items.Add(New CategoricalHeatMapItem("China", "Machinery", 14))
-def.Items.Add(New CategoricalHeatMapItem("China", "Primary Metals", 250))
-def.Items.Add(New CategoricalHeatMapItem("Euro Area", "Computer", 3.4))
-def.Items.Add(New CategoricalHeatMapItem("Euro Area", "Oil, Gas, Minerals", 6.4))
-def.Items.Add(New CategoricalHeatMapItem("Euro Area", "Transportation", -30.9))
-def.Items.Add(New CategoricalHeatMapItem("Euro Area", "Furniture", 15))
-def.Items.Add(New CategoricalHeatMapItem("Euro Area", "Machinery", 40))
-def.Items.Add(New CategoricalHeatMapItem("Euro Area", "Primary Metals", 200))
-def.Items.Add(New CategoricalHeatMapItem("Japan", "Computer", 0))
-def.Items.Add(New CategoricalHeatMapItem("Japan", "Oil, Gas, Minerals", Double.NaN))
-def.Items.Add(New CategoricalHeatMapItem("Japan", "Transportation", -1.8))
-def.Items.Add(New CategoricalHeatMapItem("Japan", "Furniture", 30))
-def.Items.Add(New CategoricalHeatMapItem("Japan", "Machinery", 90))
-def.Items.Add(New CategoricalHeatMapItem("Japan", "Primary Metals", 150))
-Me.radHeatMap1.RowHeaderWidth = 80
+def.Items.Add(New CategoricalHeatMapItem("Sweden", 1950, 7015))
+def.Items.Add(New CategoricalHeatMapItem("Sweden", 1960, 7481))
+def.Items.Add(New CategoricalHeatMapItem("Sweden", 1970, 8043))
+def.Items.Add(New CategoricalHeatMapItem("Sweden", 1980, Double.NaN))
+def.Items.Add(New CategoricalHeatMapItem("Sweden", 1990, 8601))
+def.Items.Add(New CategoricalHeatMapItem("Sweden", 2000, 8925))
+def.Items.Add(New CategoricalHeatMapItem("Denmark", 1950, 4272))
+def.Items.Add(New CategoricalHeatMapItem("Denmark", 1960, 4582))
+def.Items.Add(New CategoricalHeatMapItem("Denmark", 1970, 4929))
+def.Items.Add(New CategoricalHeatMapItem("Denmark", 1980, 5124))
+def.Items.Add(New CategoricalHeatMapItem("Denmark", 1990, 5141))
+def.Items.Add(New CategoricalHeatMapItem("Denmark", 2000, 5338))
+def.Items.Add(New CategoricalHeatMapItem("Switzerland", 1950, 4695))
+def.Items.Add(New CategoricalHeatMapItem("Switzerland", 1960, Double.NaN))
+def.Items.Add(New CategoricalHeatMapItem("Switzerland", 1970, 6268))
+def.Items.Add(New CategoricalHeatMapItem("Switzerland", 1980, 6386))
+def.Items.Add(New CategoricalHeatMapItem("Switzerland", 1990, 6844))
+def.Items.Add(New CategoricalHeatMapItem("Switzerland", 2000, 7278))
+Me.radHeatMap1.RowHeaderWidth = 100
 Me.radHeatMap1.Definition = def
 
 
