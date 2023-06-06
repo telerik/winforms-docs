@@ -43,8 +43,7 @@ Select **RadHeatMap** and click the small arrow on the top right position in ord
 
 * **VerticalDefinition** and **HorizontalDefinition**: require specifying the following member:
 	* **HeaderMember**: Gets or sets the name of the property which determines the header-string.
-
-* **Edit Member Mappings**: opens the MemberMapping Collection Editor
+    * **Edit Member Mappings**: opens the MemberMapping Collection Editor
 
 ![WinForms RadHeatMap MemberMapping Design Time](images/heatmap-desing-time003.png) 
 
