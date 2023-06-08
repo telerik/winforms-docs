@@ -33,7 +33,7 @@ This solution requires the following steps:
 
 3. Extend the **EditAppointmentDialog** and hide the Backgrounds drop down. Then, add a new checked drop down for the categories: [Adding a Custom Field to the EditAppointment Dialog]({%slug winforms/scheduler/appointments-and-dialogs/adding-a-custom-field-to-the-editappointment-dialog%})
 
->note A complete solution providing a C# and VB.NET project is available [here]({%slug https://github.com/telerik/winforms-sdk/tree/master/Scheduler/MultipleCategoriesInAppointments%}).
+>note A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Scheduler/MultipleCategoriesInAppointments).
 
 # See Also
 
