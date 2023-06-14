@@ -1,5 +1,5 @@
 ---
-title: How To Deal with Exception related to NuGet.VisualStudio.Contracts Version=5.11.3.1
+title: How To Deal with Exceptions Related to NuGet.VisualStudio.Contracts Version=5.11.3.1
 description: Upgrade Wizard fails with error Could not load file or assembly NuGet.VisualStudio.Contracts. 
 type: how-to
 page_title: How To Deal with Exception related to NuGet.VisualStudio.Contracts Version=5.11.3.1
@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-We have invested some time to improve the performance experience with the Visual Studio Extensions for the Telerik UI for WinForms suite. The fix was officially released in **R2 2023**. However, after upgrading the version, the following error message may be observed:
+We have invested some time to improve the performance experience with the Visual Studio Extensions for the Telerik UI for the WinForms suite. The fix was officially released in **R2 2023**. However, after upgrading the version, the following error message may be observed:
 
 >caption Exception related to NuGet.VisualStudio.Contracts, Version=5.11.3.1
 
@@ -28,7 +28,7 @@ We have invested some time to improve the performance experience with the Visual
 
 The described behavior is a known issue in our Visual Studio extensions and it is mostly reproducible when the version of the Visual Studio is not latest. 
 
-The easiest way to fix the problematic behavior by your side is to update the Visual Studio version to the latest one. First, check if there are available updates for your Visual Studio (Visual Studio -> Tools -> Get Tools and Features... menu):
+The easiest way to fix the problematic behavior on your side is to update the Visual Studio version to the latest one. First, check if there are available updates for your Visual Studio (Visual Studio -> Tools -> Get Tools and Features... menu):
 
 ![nuget-visualstudio-contract002](images/nuget-visualstudio-contract002.png)    
 
@@ -44,11 +44,11 @@ Please make sure that your Telerik UI for WinForms VS Extension is updated corre
 
 ![nuget-visualstudio-contract004](images/nuget-visualstudio-contract004.png) 
 
-3\. Expand **Installed** tab and select **Progress Telerik UI for WinForms Extension** - the latest version of the extension is 2023.2.606.53
+3\. Expand the **Installed** tab and select **Progress Telerik UI for WinForms Extension** - the latest version of the extension is 2023.2.606.53
 
 ![nuget-visualstudio-contract005](images/nuget-visualstudio-contract005.png) 
 
-4\. If the version is old, please expand the **Online** tab and press **Update** button on the Progress Telerik UI for WinForms Extension
+4\. If the version is old, please expand the **Online** tab and press the **Update** button on the Progress Telerik UI for WinForms Extension
 
 5\.Restart your Visual Studio
 
