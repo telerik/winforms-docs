@@ -26,7 +26,7 @@ We have invested some time to improve the performance experience with the Visual
 
 ## Solution
 
-The described behavior is a known issue in our Visual Studio extensions and it is mostly reproducible when the version of the Visual Studio is not latest. However, we are currently working on improving the user experience in such cases and we will release it in one of our future releases.
+The described behavior is a known issue in our Visual Studio extensions and it is mostly reproducible when the version of the Visual Studio is not latest. 
 
 The easiest way to fix the problematic behavior by your side is to update the Visual Studio version to the latest one. First, check if there are available updates for your Visual Studio (Visual Studio -> Tools -> Get Tools and Features... menu):
 
