@@ -22,13 +22,13 @@ The properties can be set directly in the smart tag window.
 
 ## Properties
 
-* __ThickThickness:__ Specifies how thick the ticks will be rendered.
+* __TickThickness:__ Specifies how thick the ticks will be rendered.
 
 * __TicksCount:__ Specifies how many ticks will be displayed.
 
-* __ThicksLengthPercentage:__ Controls the tick’s length.
+* __TicksLengthPercentage:__ Controls the tick’s length.
 
-* __ThickColor:__ Specifies the color of the ticks.
+* __TickColor:__ Specifies the color of the ticks.
 
 * __TicksOffset:__ Specifies how far to the left/bottom the control will be shifted.
 
