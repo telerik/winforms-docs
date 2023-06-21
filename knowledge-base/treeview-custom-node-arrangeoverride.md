@@ -228,13 +228,107 @@ public class CustomContentElement : TreeNodeContentElement
 ````
 ````VB.NET
 
+Public Class CustomTreeNodeElement
+    Inherits TreeNodeElement
 
+    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
+        Get
+            Return GetType(TreeNodeElement)
+        End Get
+    End Property
+
+    Protected Overrides Function CreateContentElement() As TreeNodeContentElement
+        Return New CustomContentElement()
+    End Function
+End Class
+
+Public Class CustomContentElement
+    Inherits TreeNodeContentElement
+
+    Private numberElement As LightVisualElement
+    Private nameElement As TextPrimitive
+    Private saveStatusImage As ImagePrimitive
+    Private errorImage As ImagePrimitive
+    Private timeImage As ImagePrimitive
+    Private priceText As TextPrimitive
+    Private detailsButton As RadDropDownButtonElement
+
+    Public Overrides Sub Synchronize()
+        Dim treeNodeElement As TreeNodeElement = Me.NodeElement
+        Dim node As RadTreeNode = treeNodeElement.Data
+        Dim dataItem As TreeItem = CType(node.DataBoundItem, TreeItem)
+        numberElement.Text = dataItem.Id & ""
+        nameElement.Text = dataItem.Name
+        priceText.Text = dataItem.Price & ""
+    End Sub
+
+    Protected Overrides Sub CreateChildElements()
+        Me.StretchHorizontally = True
+        Me.numberElement = New LightVisualElement()
+        Me.Children.Add(Me.numberElement)
+        Me.nameElement = New TextPrimitive() With {
+            .TextWrap = True,
+            .AutoEllipsis = True
+        }
+        Me.Children.Add(Me.nameElement)
+        Me.saveStatusImage = New ImagePrimitive() With {
+            .Image = Resources.save_as1
+        }
+        Me.Children.Add(Me.saveStatusImage)
+        Me.errorImage = New ImagePrimitive() With {
+            .Image = Resources.[error]
+        }
+        Me.Children.Add(Me.errorImage)
+        Me.timeImage = New ImagePrimitive() With {
+            .Image = Resources.Alarm
+        }
+        Me.Children.Add(Me.timeImage)
+        Me.priceText = New TextPrimitive()
+        Me.Children.Add(Me.priceText)
+        Me.detailsButton = New RadDropDownButtonElement() With {
+            .Text = "...",
+            .ShowArrow = False
+        }
+        Me.Children.Add(Me.detailsButton)
+    End Sub
+
+    Protected Overrides Function ArrangeOverride(ByVal finalSize As SizeF) As SizeF
+        Dim availableSize = MyBase.ArrangeOverride(finalSize)
+        Dim width = Me.numberElement.DesiredSize.Width + Me.saveStatusImage.DesiredSize.Width + Me.errorImage.DesiredSize.Width + Me.timeImage.DesiredSize.Width + Me.priceText.DesiredSize.Width + Me.detailsButton.DesiredSize.Width
+
+        If width < availableSize.Width Then
+            Dim topLeftCorner As PointF = New PointF(0, 0)
+            Me.numberElement.Arrange(New RectangleF(topLeftCorner, numberElement.DesiredSize))
+            topLeftCorner = New PointF(topLeftCorner.X + Me.numberElement.DesiredSize.Width, 0)
+            Dim nameWidth = availableSize.Width - width
+            nameElement.Arrange(New RectangleF(topLeftCorner, New SizeF(nameWidth, nameElement.DesiredSize.Height)))
+            topLeftCorner = New PointF(topLeftCorner.X + nameWidth, 0)
+            saveStatusImage.Arrange(New RectangleF(topLeftCorner, saveStatusImage.DesiredSize))
+            topLeftCorner = New PointF(topLeftCorner.X + Me.saveStatusImage.DesiredSize.Width, 0)
+            errorImage.Arrange(New RectangleF(topLeftCorner, errorImage.DesiredSize))
+            topLeftCorner = New PointF(topLeftCorner.X + Me.errorImage.DesiredSize.Width, 0)
+            timeImage.Arrange(New RectangleF(topLeftCorner, timeImage.DesiredSize))
+            topLeftCorner = New PointF(topLeftCorner.X + Me.timeImage.DesiredSize.Width, 0)
+            priceText.Arrange(New RectangleF(topLeftCorner, priceText.DesiredSize))
+            topLeftCorner = New PointF(topLeftCorner.X + Me.priceText.DesiredSize.Width, 0)
+            detailsButton.Arrange(New RectangleF(topLeftCorner, detailsButton.DesiredSize))
+        End If
+
+        Return availableSize
+    End Function
+
+    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
+        Get
+            Return GetType(TreeNodeContentElement)
+        End Get
+    End Property
+End Class
 
 
 
 ````
 
-# See Also
+## See Also
 
  * [TreeView Overview]({%slug winforms/treeview%})
  * [Binding to Database Data]({%slug winforms/treeview/data-binding/binding-to-database-data%})
