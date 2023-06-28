@@ -40,7 +40,7 @@ You can calculate the potential height considering the number of generated contr
                 StartingDate = new DateTime(2005, 04, 12),
                 IsMarried = true
             };
-            int height = this.radDataLayout1.LayoutControl.Controls.Count * 20;
+            int height = (this.radDataLayout1.LayoutControl.Controls.Count - 2) * 30;
             this.radDataLayout1.LayoutControl.MaximumSize = new Size(0, height);
         }
 
@@ -56,8 +56,29 @@ You can calculate the potential height considering the number of generated contr
 ````
 ````VB.NET
 
+    Public Sub New()
+        InitializeComponent()
+        Me.RadDataLayout1.DataSource = New Employee() With {
+            .FirstName = "Sarah",
+            .LastName = "Blake",
+            .Occupation = "Supplied Manager",
+            .StartingDate = New DateTime(2005, 4, 12),
+            .IsMarried = True
+        }
+        Dim height As Integer = (Me.RadDataLayout1.LayoutControl.Controls.Count - 2) * 30
+        Me.RadDataLayout1.LayoutControl.MaximumSize = New Size(0, height)
+    End Sub
+    Protected Overrides Sub OnLoad(e As EventArgs)
+        MyBase.OnLoad(e)
+    End Sub
 
-
+    Public Class Employee
+        Public Property FirstName As String
+        Public Property LastName As String
+        Public Property Occupation As String
+        Public Property StartingDate As DateTime
+        Public Property IsMarried As Boolean
+    End Class
     
 ````
 
