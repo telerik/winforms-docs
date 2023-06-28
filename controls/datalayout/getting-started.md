@@ -251,3 +251,4 @@ Press __F5__ to run the project and you should see the following:
  * [Properties, events and attributes]({%slug winforms/datalayout/properties,-events-and-attributes%})
  * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
  * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})
+ * [Eliminate the Last Item's stretching in DataLayout]({%slug stretched-last-item-in-datalayout%})
