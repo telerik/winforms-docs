@@ -25,7 +25,7 @@ The SplashScreen from the Telerik UI for WinForms suite offers the possibility t
  
 ## Solution 
 
-The **RadSplashScreenManager** internally uses a background Thread for showing the splash. Make sure that you don't access the RadSplashScreenControl or its elements from the main UI thread. Note that all UI controls are not thread safe controls in the whole Windows Forms platform (not just Telerik controls, but all controls out there). You should use an [Invoke](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invoke?view=windowsdesktop-7.0&redirectedfrom=MSDN#System_Windows_Forms_Control_Invoke_System_Delegate_) to update the controls in cross threading scenario.
+The **RadSplashScreenManager** internally uses a background Thread for showing the splash. Make sure that you don't access the RadSplashScreenControl or its elements outside the main UI thread. Note that all UI controls are not thread safe controls in the whole Windows Forms platform (not just Telerik controls, but all controls out there). You should use an [Invoke](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.invoke?view=windowsdesktop-7.0&redirectedfrom=MSDN#System_Windows_Forms_Control_Invoke_System_Delegate_) to update the controls in cross threading scenario.
 
 ````C#
 
