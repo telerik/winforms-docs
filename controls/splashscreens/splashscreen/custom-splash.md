@@ -362,5 +362,6 @@ RadSplashScreenManager.Show(GetType(RestartRequiredUserControl))
 
 * [Structure]({%slug splashscreen-structure%}) 
 * [Getting Started]({%slug splashscreen-getting-started%}) 
+* [How to Update the Custom UserControl of the SplashScreen]({%slug update-splash-screen-control%})
  
         
