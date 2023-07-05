@@ -51,3 +51,4 @@ The following tutorial demonstrates basic usage of __RadDateTimePicker__, format
 * [MaskDateTimeProvider]({%slug winforms/editors/maskeddatetimeprovider%})
 * [Properties]({%slug winforms/editors/datetimepicker/raddatetimepicker-properties%})
 * [Structure]({%slug winforms/editors/datetimepicker%})
+* [Specify the Minutes/Hours Step in DateTimePicker's Popup]({%slug winforms/editors/datetimepicker/getting-started%})
