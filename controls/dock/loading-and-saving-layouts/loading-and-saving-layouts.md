@@ -79,7 +79,8 @@ Me.RadDock1.LoadFromXml("c:\layout1.xml")
 ````
 
 {{endregion}} 
- 
+
+>note With the introduction of the __R3 2023 SP1__ version of our controls, the __LoadFromXml()__ expose second (optional) parameter. This parameter provides the option to specify whether to remove all existing dock windows or not. By default, the second parameter is set to __false__.
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
