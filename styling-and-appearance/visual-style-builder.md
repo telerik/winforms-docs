@@ -26,7 +26,12 @@ previous_url: themes-visualstylebuilder
 
 For additional information about Visual Style Builder, please refer to [this documentation section]({%slug winforms/tools/visual-style-builder/getting-started%}). Bellow the image you can find some videos as well.
 
+# Default Theme
+
+As of R2 2023 SP1 Visual Style Builder uses the **VisualStudio2022Dark** theme as its default theme:
+
 >caption Figure 1: Visual Style Builder
+
 ![themes-visualstylebuilder 010](images/themes-visualstylebuilder010.png)
 
 | RELATED VIDEOS |  |
