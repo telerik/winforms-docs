@@ -245,6 +245,8 @@ CType(Me.RadScheduler1.ViewElement, SchedulerViewGroupedByResourceElementBase).S
 
 ![WinForms RadScheduler Resource Size](images/scheduler-views-grouping-by-resource001.png)
 
+>note By default, the ActiveView.**GroupSeparatorWidth** property is set to 3. If you need to remove the resources separator, it is necessary to set the GroupSeparatorWidth property to 0.
+
 ## Accessing Child Elements
 
 When grouped by resources the type of the RadScheduler.__ViewElement__ is a descendant of the __SchedulerViewGroupedByResourceElement__ class. This element is built of descendants of the base __SchedulerViewElement__ class and their count is determined by the count of the resources per view. The exact type of the child __SchedulerViewElement__ instances is determined by state of the currently chosen __SchedulerViewType__.
