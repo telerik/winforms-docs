@@ -34,6 +34,8 @@ Read more about this in the [Colorizers]({%slug heatmap-colorizers%}) article.
 
 * **Custom painting**: RadHeatMap allows you to customize the appearance of the control as well as its elements. Read more about this in the [Custom Painting]({%slug heatmap-custom-painting%}) article.
 
+* **Legend**: RadHeatMap offers built-in support for legend items – descriptions about the colorized values on the plot (released in R2 2023 SP1). 
+
 >tip Get started with the control with its [Getting Started]({%slug heatmap-getting-started%}) help article that shows how to use it in a basic scenario.
 
 ![WinForms RadHeatMap Overview Sample](images/heatmap-overview001.png)

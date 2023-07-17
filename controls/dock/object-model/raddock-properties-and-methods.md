@@ -12,7 +12,9 @@ previous_url: dock-object-model-raddock-properties-and-methods
 # RadDock Properties, Methods and Events
 
 __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindows__ that it manages. This includes enabling basic capabilities of docking, floating and hiding, handling tabbed document behavior, serialization of layout and providing access to collections of managed dockable objects.
- 
+
+## Properties 
+
 |__Properties__|Description|
 |---|---|
 |__ActiveWindow__|Sets or gets the currently active DockWindow (ToolWindow or DocumentWindow)|
@@ -31,6 +33,8 @@ __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindo
 
 >note The tabs and captions properties are listed in the following article: [Tabs and Captions]({%slug winforms/dock/object-model/tabs-and-captions%})
 
+## Methods
+
 |__Methods__|Description|
 |---|---|
 |__ActivateWindow(DockWindow window)__| Activates a DockWindow.|
@@ -42,8 +46,13 @@ __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindo
 |__DockWindow(DockWindow window, DockPosition position)__| Docks a DockWindow (ToolWindow/DocumentWindow) at the specified position.|
 |__DockWindow(DockWindow window, DockWindow target, DockPosition position)__|Docks a DockWindow at a position relative to the specified target DockWindow.|
 |__FloatToolTabStrip(ToolTabStrip strip, Rectangle bounds)__|Floats a ToolTabStrip with ToolWindows in a new form. The form has bounds specified by the __bounds__ parameter.|
-| __FloatWindow(DockWindow window)__|Floats the specified DockWindow in a new form.|
+|__FloatWindow(DockWindow window)__|Floats the specified DockWindow in a new form.|
 |__RemoveWindow(DockWindow window)__|Removes a __ToolWindow__ or __DocumentWindow__ from the list of managed windows.|
+|__RemoveAllDocumentWindows__|Removes all DocumentWindows, without disposing it.|
+|__RemoveAllWindows__|Removes all DockWindows, without disposing them.|
+|__RemoveAllToolWindows(DockWindowCloseAction.Close, AllowedDockState.Docked | AllowedDockState.Hidden)__|Removes all ToolWindows with the specified DockState, using the specified close action.|
+
+## Events
 
 |__Events__|Description|
 |---|---|
@@ -61,7 +70,7 @@ __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindo
 |__SelectedTabChanging__|Occurs before the selected tab is changed.|
 |__FloatingWindowCreated__|Notifies that a FloatingWindow instance is internally created by the framework. Allows listeners to examine and optionally change the window itself.|
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})
