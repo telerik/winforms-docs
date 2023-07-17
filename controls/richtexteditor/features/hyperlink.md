@@ -220,6 +220,31 @@ When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextEd
 
 ![WinForms RadRichTextEditor Hyperlink Click Even Handler](images/richtexteditor-features-hyperlink002.png)
 
+## HyperlinkNavigationMode
+
+This property allows you to control what action should trigger the opening of a hyperlink. The possible options are:
+
+* **CtrlClick**: Triggers the hyperlink when users hold the Ctrl key and click on the hyperlink.
+* **Click**: Triggers the hyperlink when users click on the hyperlink.
+
+#### Change the default hyperlink navigation mode
+
+{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=HyperlinkMode}} 
+{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=HyperlinkMode}} 
+
+````C#
+
+this.radRichTextEditor1.HyperlinkNavigationMode = Telerik.WinForms.Documents.UI.HyperlinkNavigationMode.Click;
+
+````
+````VB.NET
+Me.radRichTextEditor1.HyperlinkNavigationMode = Telerik.WinForms.Documents.UI.HyperlinkNavigationMode.Click
+
+````
+
+{{endregion}} 
+
+
 # See Also
 
  * [Document Elements]({%slug winforms/richtexteditor-/document-elements%})
