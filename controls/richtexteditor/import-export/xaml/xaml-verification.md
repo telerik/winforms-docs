@@ -16,7 +16,7 @@ Since R2 2023 SP1 the __XamlFormatProvider__ automatically verifies the types us
 
 If you are sure that the imported XAML can be trusted for example it comes internally form your organization you can disable the default verification. This can be achieved by using the __PreProcessingXaml__ event.
 
-####  Disable the default XAML validation__
+####  Disable the default XAML validation
 
 {{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=SkipVerification}} 
 {{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=SkipVerification}}
@@ -45,7 +45,7 @@ AddHandler provider.ImportSettings.PreProcessingXaml, Function(s, args)
  
 If you have a custom types that are saved in your XAML you can include them in the allowed assemblies collection. This way the verification process will succeed. 
 
-#### Add assemblies to the AllowedAssemblies collection__
+#### Add assemblies to the AllowedAssemblies collection
 
 {{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=AllowedAssemblies}} 
 {{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=AllowedAssemblies}}
