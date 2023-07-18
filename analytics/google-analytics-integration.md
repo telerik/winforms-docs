@@ -4,7 +4,7 @@ page_title: Google Analytics Integration - UI for WinForms Documentation
 description: When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution.
 slug: winforms/analytics/google-analytics-integration
 tags: telerik,analytics,google,integration
-published: True
+published: False
 position: 1
 ---
 
