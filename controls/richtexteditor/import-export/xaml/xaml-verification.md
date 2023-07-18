@@ -39,7 +39,7 @@ AddHandler provider.ImportSettings.PreProcessingXaml, Function(s, args)
 
 ````
 
-{{endregion}}}
+{{endregion}}
 
 ### Add custom assembly to the allowed assemblies.  
  
@@ -63,7 +63,7 @@ provider.ImportSettings.AllowedAssemblies.Add("MyAssemblyName")
 
 ````
 
-{{endregion}}}
+{{endregion}}
 
 ## See Also
 
