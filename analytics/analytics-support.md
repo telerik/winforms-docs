@@ -153,6 +153,4 @@ Currently only few controls support analytics out of the box. Note that only use
 |**RadWaitingBar**|StartWaiting, EndWaiting|
 |**Exporting features in controls**|All export providers(including async exports) - when export operation is completed|
 
-# See Also
 
-* [Google Analytics Integration]({%slug winforms/analytics/google-analytics-integration%})
