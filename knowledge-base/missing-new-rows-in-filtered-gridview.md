@@ -18,24 +18,17 @@ res_type: kb
 
 ## Description
 
-  
-
+When filtering is applied and the user modifies a certain cell value from the filtered column, this automatically may hide the edited row according to the filter criterion.  
  
 ## Solution 
 
-When filtering is applied and the user modifies a certain cell value from the filtered column, this automatically may hide the edited row according to the filter criterion. 
+Adding a FilterDescriptor to RadGridView doesn't perform a one time filtering operation. While the FilterDescriptor is present in the grid, it is responsible to keep the rows visible or not according to the filtering condition. Even newly added rows will be hidden if they don't meet the filter requirements. They won't be displayed until the filter is cleared. 
 
-Please have in mind that adding a FilterDescriptor to RadGridView doesn't perform a one time filtering operation. While the FilterDescriptor is present in the grid, it is responsible to keep the rows visible or not according to the filtering condition. Even newly added rows will be hidden if they don't meet the filter requirements. They won't be displayed until the filter is cleared. 
-
-The possible solution for hiding/showing the rows to any certain logic that is different than the default behavior described above is to use the custom filtering functionality that RadGridView offers. Thus, you can implement any rows filtering  logic that fits your needs. A sample approach is demonstrated in the following help article: Custom Filtering.
+The possible solution for hiding/showing the rows to any certain logic that is different than the default behavior described above is to use the custom filtering functionality that RadGridView offers. Thus, you can implement any rows filtering  logic that fits your needs. A sample approach is demonstrated in the following help article: [Custom Filtering]({%slug winforms/gridview/filtering/custom-filtering%}).
  
-
- 
-
-
 # See Also
 
-* [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})  
+* [Custom Filtering]({%slug winforms/gridview/filtering/custom-filtering%})  
 
 
 
