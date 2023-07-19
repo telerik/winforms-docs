@@ -26,7 +26,7 @@ The **HeatMapLegendElement** consists of a **LegendTitleElement** and a **WrapLa
 
 >note The LegendGradientItemElement.**ValueFormat** property allows you to format how the from/to values are formatted.
 
-* **LegendRangeItemElement**: used with a **HeatMapRangeColorizer**. It contains a **LegendItemTitle** and a **LegendItemMarker** with therespective from/to values.
+* **LegendRangeItemElement**: used with a **HeatMapRangeColorizer**. It contains a **LegendItemTitle** and a **LegendItemMarker** with the respective from/to values.
 
 >caption LegendRangeItemElement
 
