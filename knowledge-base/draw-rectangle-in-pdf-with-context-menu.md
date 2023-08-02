@@ -1,6 +1,6 @@
 ---
 title: How to Get the Context Menu's Coordinates and Draw a Rectangle in PdfViewer 
-description: This article shows how you can get top left location of the context menu and draw a rectangle in the WinForms PdfViewer.
+description: This article shows how you can get the top left location of the context menu and draw a rectangle in the WinForms PdfViewer.
 type: how-to
 page_title: How to Get the Context Menu's Coordinates and Draw a Rectangle in PdfViewer  
 slug: draw-rectangle-in-pdf-with-context-menu
@@ -17,7 +17,7 @@ res_type: kb
 
 ## Problem
 
-For a regular WinForms control painting a rectangle would be straight-forward task assuming you have calculated the coordinates. In the RadPdfViewer, however, this is more complex because the control is working with a document, and any custom rendering needs to be applied on the document itself. This way these settings will be preserved and still available when you save or print the document.
+For a regular WinForms control painting a rectangle would be a straightforward task assuming you have calculated the coordinates. In the RadPdfViewer, however, this is more complex because the control works with a document, and any custom rendering must be applied to the document itself. This way these settings will be preserved and still available when you save or print the document.
 This article shows how you can get the top left location of the context menu and draw a rectangle in the WinForms PdfViewer.
 
 ![draw-rectangle-in-pdf-with-context-menu](images/draw-rectangle-in-pdf-with-context-menu.gif)  
@@ -205,7 +205,7 @@ End Sub
 
 ````
 
-# See Also
+#№ See Also
 
 * [RadPdfViewer]({%slug winforms/pdfviewer%})
 
