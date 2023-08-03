@@ -19,7 +19,7 @@ res_type: kb
 
 An example demonstrating how to sort fields section in the RadPivotFieldList.
 
-![pivotgrid-sort-fielddlist 001](images/pivotgrid-sort-fielddlist.png)
+![pivotgrid-sort-fielddlist 001](images/pivotgrid-sort-fielddlist.PNG)
 
 ## Solution
 
@@ -27,18 +27,23 @@ The RadPivotFieldList internally hosts a RadTreeView control responsible for dis
 
 ````C#
 
-private void radPivotGrid1_UpdateCompleted(object sender, EventArgs e)
-{
-	this.radPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.Ascending;
-}
+
+	private void radPivotGrid1_UpdateCompleted(object sender, EventArgs e)
+	{
+		this.radPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.Ascending;
+	}
 
 
 ````
 ````VB.NET
 
-Private Sub radPivotGrid1_UpdateCompleted(sender As Object, e As EventArgs)
-    Me.RadPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.Ascending
-End Sub
+
+	Private Sub radPivotGrid1_UpdateCompleted(sender As Object, e As EventArgs)
+	    Me.RadPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.Ascending
+	End Sub
+
 
 
 ````
+
+
