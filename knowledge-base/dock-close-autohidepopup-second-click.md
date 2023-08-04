@@ -113,19 +113,20 @@ You can subscribe to several methods to interfere with the auto-hide logic and c
 			Dim bottomRightWindow As ToolWindow = New ToolWindow()
 			bottomRightWindow.Text = "Right Window"
 			radDock1.DockWindow(bottomRightWindow, topRightWindow, DockPosition.Right)
-			Me.radDock1.DockStateChanged += AddressOf RadDock1_DockStateChanged
+			AddHandler Me.radDock1.DockStateChanged, AddressOf RadDock1_DockStateChanged
 		End Sub
 
 		Private Sub RadDock1_DockStateChanged(ByVal sender As Object, ByVal e As DockWindowEventArgs)
 			If e.DockWindow.DockState = DockState.AutoHide Then
-				Me.radDock1.AutoHideWindowDisplaying -= AddressOf RadDock_AutoHideWindowDisplaying
-				Me.radDock1.AutoHideWindowDisplayed -= AddressOf RadDock_AutoHideWindowDisplayed
-				Me.radDock1.AutoHideWindowHidden -= AddressOf RadDock_AutoHideWindowHidden
-				e.DockWindow.AutoHideTab.MouseDown -= AddressOf TabStripMouseDown
-				Me.radDock1.AutoHideWindowDisplaying += AddressOf RadDock_AutoHideWindowDisplaying
-				Me.radDock1.AutoHideWindowDisplayed += AddressOf RadDock_AutoHideWindowDisplayed
-				Me.radDock1.AutoHideWindowHidden += AddressOf RadDock_AutoHideWindowHidden
-				e.DockWindow.AutoHideTab.MouseDown += AddressOf TabStripMouseDown
+				RemoveHandler Me.radDock1.AutoHideWindowDisplaying, AddressOf RadDock_AutoHideWindowDisplaying
+				RemoveHandler Me.radDock1.AutoHideWindowDisplayed, AddressOf RadDock_AutoHideWindowDisplayed
+				RemoveHandler Me.radDock1.AutoHideWindowHidden, AddressOf RadDock_AutoHideWindowHidden
+				RemoveHandler e.DockWindow.AutoHideTab.MouseDown, AddressOf TabStripMouseDown
+
+				AddHandler Me.radDock1.AutoHideWindowDisplaying, AddressOf RadDock_AutoHideWindowDisplaying
+				AddHandler Me.radDock1.AutoHideWindowDisplayed, AddressOf RadDock_AutoHideWindowDisplayed
+				AddHandler Me.radDock1.AutoHideWindowHidden, AddressOf RadDock_AutoHideWindowHidden
+				AddHandler e.DockWindow.AutoHideTab.MouseDown, AddressOf TabStripMouseDown
 			End If
 		End Sub
 
@@ -161,8 +162,8 @@ You can subscribe to several methods to interfere with the auto-hide logic and c
 	End Class
 
 
-
-
 ````
+
+
 
 
