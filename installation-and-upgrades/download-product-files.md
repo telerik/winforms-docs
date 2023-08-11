@@ -53,3 +53,4 @@ When you purchase a UI for WinForms license, you can download the following file
 
 * [Latest Internal Builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%})
 * [How to Attach the Telerik Source Code to Your Project]({%slug attach-telerik-source-code-to-your-project%}) 
+* [How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%})

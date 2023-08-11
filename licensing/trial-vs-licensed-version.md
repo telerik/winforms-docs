@@ -27,3 +27,6 @@ There are 2 versions of the assemblies (trial and licensed). This is why to upgr
 
 	![trial-vs-licensed-version002](images/trial-vs-licensed-version002.png) 
 
+# See Also
+
+* [How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%})
