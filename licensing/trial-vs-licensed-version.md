@@ -25,5 +25,10 @@ There are 2 versions of the assemblies (trial and licensed). This is why to upgr
 
 * To check if your current version is trial you can examine the assemblies properties.
 
-	![trial-vs-licensed-version002](images/trial-vs-licensed-version002.png) 
+![trial-vs-licensed-version002](images/trial-vs-licensed-version002.png) 
 
+>note A step by step tutorial is available here:  [How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%}).
+
+# See Also
+
+* [How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%})
