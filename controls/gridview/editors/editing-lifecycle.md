@@ -40,3 +40,5 @@ By default, **RadGridView** starts [editing]({%slug winforms/gridview/editors/ed
 
 * [How to AutoSize GridView's Row While Editing]({%slug row-autosizing-while-editing%})
 
+* [Indicate Errors in RadGridView]({%slug How to Indicate Errors in RadGridView%})
+
