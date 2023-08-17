@@ -100,3 +100,5 @@ The following properties are controlling the errors visibility:
 
 * [Using custom editors]({%slug winforms/gridview/editors/using-custom-editors%})
 
+* [Indicate Errors in RadGridView]({%slug How to Indicate Errors in RadGridView%})
+
