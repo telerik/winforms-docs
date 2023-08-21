@@ -145,8 +145,7 @@ The [IDataErrorInfo](https://learn.microsoft.com/en-us/previous-versions/windows
                     PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
                 }
             }
-        }
-         
+        }        
 
 ````
 ````VB.NET
@@ -302,6 +301,7 @@ The [IDataErrorInfo](https://learn.microsoft.com/en-us/previous-versions/windows
     End Sub   
     
 ````
+
 As a result the cell containing a wrong value will be highlighted with a red border:
 
 ![indicate-errors-in-gridview002](images/indicate-errors-in-gridview002.png)
