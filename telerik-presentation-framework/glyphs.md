@@ -152,3 +152,4 @@ The bellow image shows the results:
 * [Font Awesome Cheatsheet](https://fontawesome.com/cheatsheet)
 * [How to insert glyphs easily at design time]({%slug insert-glyphs-easily%})
 * [Glyphs Reference Sheet]({%slug tpf-glyphs-reference-sheet%})
+* [How to apply a Glyph from the TelerikWebUI Font at Design Time]({%slug apply-glyphs-at-design-time%}) 

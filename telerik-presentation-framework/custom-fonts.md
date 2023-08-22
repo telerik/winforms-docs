@@ -81,3 +81,4 @@ The below image shows the result:
 # See Also
 
 * [Shadows]({%slug winforms/tpf/shadows%})
+* [How to apply a Glyph from the TelerikWebUI Font at Design Time]({%slug apply-glyphs-at-design-time%}) 
