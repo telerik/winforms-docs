@@ -20,7 +20,7 @@ RadGridView is an essential user interface control used to display data in tabul
 
 * __Pinned Columns__: By using the pinned (frozen) columns you will be able to stop your columns from horizontally  scrolling. Just right-click the column header and select the left or right pin option. [Read more]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%}).
 
-* __Rows__: Another essential building block of the control, represented by __GridViewRow__ objects. Improve the way your data is presented using Row Details inside the grid or outside it using Details Presenter. Moreover, you can control the data editing using the methods and events exposed by the GridViewRow object. [Read more]({%slug gridview-rows-overview%}).
+* __Rows__: Another essential building block of the control, represented by __GridViewRow__ objects. Improve the way your data is presented using Row Details inside the grid or outside it using Details Presenter. Moreover, you can control the data editing using the methods and events exposed by the GridViewRow object. [Read more]({%slug winforms/gridview/rows/gridviewrowinfo%}).
 
 * __Cells__: Cells are the visual elements that do the actual representation of your data. They are represented by the __GridViewCellInfo__ object. They are also responsible for validating the data entered by the user against the underlying data type.
             
