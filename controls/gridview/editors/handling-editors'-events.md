@@ -80,7 +80,7 @@ End Sub
 
 ## See Also
 
-* [API]({%slug winforms/gridview/editors/api%})
+* [How to Move the Current Row with Arrow Keys while RadGridView is in Edit Mode]({%slug move-current-row-with-arrow-keys-in-edit-mode%})
 
 * [Customizing editor behavior]({%slug winforms/gridview/editors/customizing-editor-behavior%})
 
