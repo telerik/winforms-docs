@@ -101,4 +101,5 @@ Navigate to the folder in which the extracted source code is located and select 
 # See Also
 
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%}) 
+* [How to Build Custom Telerik Assemblies when Using .NET Core and Enable Design Time Experience]({%slug build-custom-assemblies-for-net-core%})
 
