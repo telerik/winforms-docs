@@ -9,7 +9,7 @@ position: 4
 previous_url: checkedlistbox-data-binding
 ---
 
-# Data Biniding
+# Data Binding
 
 ## Supported Bindable Types
 
@@ -49,7 +49,7 @@ The result is data bound __CheckedListBox__
 The following example demonstrates how you can bind the control by using the __CheckedMember__ property. This example uses the __CheckState__ property of the business object.
           
 
-1\. Initially let’s create collection of objects.
+1\. Initially let’s create a collection of objects.
 
 {{source=..\SamplesCS\ListView\CheckedListBox\CheckedListBoxDataBinding.cs region=SimpleObject}} 
 {{source=..\SamplesVB\ListView\CheckedListBox\CheckedListBoxDataBinding.vb region=SimpleObject}} 
