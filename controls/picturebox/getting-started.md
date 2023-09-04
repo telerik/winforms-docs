@@ -5,7 +5,7 @@ description: WinForms PictureBox is a control used to display images in differen
 slug: radpicturebox-getting-started
 tags: getting-started
 published: True
-position: 3
+position: 2
 ---
 
 # Getting Started with WinForms PictureBox
@@ -77,7 +77,7 @@ Me.RadPictureBox1.SvgImage = RadSvgImage.FromFile("..//..//PictureBox//emoticon-
 ![WinForms RadPictureBox Load an Image](images/picturebox-getting-started002.png)
 
 
-# See Also
+## See Also
 
 * [Overview]({%slug radpicturebox-overview%})
 * [Structure]({%slug radpicturebox-structure%})
