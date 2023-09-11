@@ -402,7 +402,68 @@ End Class
 
 {{endregion}} 
 
-Finally, we should handle the __CellCreating__ event and substitute the default cell element with our own:
+Due to the virtualization mechanism of the RadListView control, the default cell of the control is compatible with all columns. When the control is scrolled, the default cell could override the custom one. To apply the custom cell when the control is scrolled is necessary to create another __DetailListViewDataCellElement__ which is not compatible with your custom item.
+
+{{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=DefaultCell}} 
+{{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=DefaultCell}} 
+
+````C#
+
+public class DefaultCell : DetailListViewDataCellElement
+{
+    public DefaultCell(DetailListViewVisualItem owner, ListViewDetailColumn column) : base(owner, column)
+    {
+    }
+    protected override Type ThemeEffectiveType
+    {
+        get
+        {
+            return typeof(DetailListViewHeaderCellElement);
+        }
+    }
+    public override bool IsCompatible(ListViewDetailColumn data, object context)
+    {
+        if (data.Name != "Name")
+        {
+            return true;
+        }
+        return false;
+    }
+}      
+
+
+````
+````VB.NET
+
+Public Class DefaultCell
+    Inherits DetailListViewDataCellElement
+
+    Public Sub New(ByVal owner As DetailListViewVisualItem, ByVal column As ListViewDetailColumn)
+        MyBase.New(owner, column)
+    End Sub
+
+    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
+        Get
+            Return GetType(DetailListViewHeaderCellElement)
+        End Get
+    End Property
+
+    Public Overrides Function IsCompatible(ByVal data As ListViewDetailColumn, ByVal context As Object) As Boolean
+        If data.Name <> "Name" Then
+            Return True
+        End If
+
+        Return False
+    End Function
+End Class
+
+
+````
+
+{{endregion}} 
+
+
+Finally, we should handle the __CellCreating__ event and substitute the default cell element with our own or return the default cell for the other columns:
 
 {{source=..\SamplesCS\ListView\ListViewCustomItems.cs region=ReplaceCell}} 
 {{source=..\SamplesVB\ListView\ListViewCustomItems.vb region=ReplaceCell}} 
@@ -416,14 +477,21 @@ private void radListView1_CellCreating(object sender, ListViewCellElementCreatin
     {
         e.CellElement = new CustomDetailListViewDataCellElement(cell.RowElement, e.CellElement.Data);
     }
+    else if (cell != null && cell.Data.Name != "Name")
+    {
+        e.CellElement = new DefaultCell(cell.RowElement, e.CellElement.Data);
+    }
 }
 
 ````
 ````VB.NET
-Private Sub radListView1_CellCreating(sender As Object, e As ListViewCellElementCreatingEventArgs)
+Private Sub radListView1_CellCreating(ByVal sender As Object, ByVal e As ListViewCellElementCreatingEventArgs)
     Dim cell As DetailListViewDataCellElement = TryCast(e.CellElement, DetailListViewDataCellElement)
+
     If cell IsNot Nothing AndAlso cell.Data.Name = "Name" Then
         e.CellElement = New CustomDetailListViewDataCellElement(cell.RowElement, e.CellElement.Data)
+    ElseIf cell IsNot Nothing AndAlso cell.Data.Name <> "Name" Then
+        e.CellElement = New DefaultCell(cell.RowElement, e.CellElement.Data)
     End If
 End Sub
 
