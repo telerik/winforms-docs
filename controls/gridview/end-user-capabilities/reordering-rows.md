@@ -14,10 +14,10 @@ previous_url: gridview-rows-reordering-rows
 RadGridView supports row reordering and it can be done by the user at runtime. The user just has to drag the desired row at the desired position between two other rows and drop it there. In the RadGridView control, the RadGridView.AllowRowReorder property value determines whether users can move rows to different positions.
       
 >important 
-* Row reordering is only available for grids in unbound mode.
-* After row reordering is enabled any sorting, grouping and filtering operations will be cleared and will not be available
+* __Row reordering is only available for grids in unbound mode.__
+* After row reordering is enabled any sorting, grouping, and filtering operations will be cleared and will not be available
 
->note The __RowsChanged__ event will be fired when reorder operation is performed.
+>note The __RowsChanged__ event will be fired when the reorder operation is performed.
 
 
 ![WinForms RadGridView Reordering Rows](images/gridview-rows-reordering-rows001.gif)
