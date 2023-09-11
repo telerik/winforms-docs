@@ -16,8 +16,6 @@ This article provides reference tables with the [Properties](#properties), [Meth
 
 |Property|Description|
 |----|----| 
-|**CanvasElement**|Gets the element that is responsible for painting the image.|
-
 |**TopPanel**|Gets or sets a value indicating whether column names which differ only in the casing are allowed.|
 |**BottomPanel**|Gets the bottom panel element. This panel allows adding buttons label and other elements in three collections - left, center and right items.|
 |**LeftPanel**| Gets the left panel element. This panel allows adding buttons label and other elements in three collections - top, center and bottom items.|
