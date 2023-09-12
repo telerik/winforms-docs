@@ -4,343 +4,270 @@ page_title: Google Analytics Integration - UI for WinForms Documentation
 description: When you are creating an application for a broad audience, integrating some kind of analytics framework is crucial, because you will need to analyze the usage data of the application and its features and most probably you will need to know about any application crashes or other errors occurred during the execution.
 slug: winforms/analytics/google-analytics-integration
 tags: telerik,analytics,google,integration
-published: False
+published: True
 position: 1
 ---
 
 # Google Analytics Integration
 
-If you wish to analyze the usage data of the application using **Google Analytics**, you can check the [Windows SDK for Google Analytics GitHub repository](https://github.com/dotnet/windows-sdk-for-google-analytics) and build the project located in **GoogleAnalytics.Core**. You then need to add a reference to the generated assembly (**GoogleAnalytics.Core.dll**) to your custom project.
+This article shows how to use the Telerik Analytics API to implement a custom Google Analytics provider and send information to it.
 
->important The GoogleAnalytics.Core.dll assembly has a dependency against .NET Framework 4.5.1 which should be targeted in the client`s application. 
+## Setting up Google Analytics Dashboard
 
-This article demonstrates a simple implementation according to the API provided by the Windows SDK for Google Analytics.
+>tip This information is relevant at the time of writing of this article (September 2023) and it may not be up-to-date at the moment you read the article.
 
-#### IPlatformInfoProvider Implementation
+1. [Create a new Google Analytics 4 Property](https://support.google.com/analytics/answer/9744165?hl=en#upgrade&zippy=%2Cin-this-article) in your google.com account.
 
-{{source=..\SamplesCS\Analytics\AnalyticsForm.cs region=IPlatformInfoProviderImplementation}} 
-{{source=..\SamplesVB\Analytics\AnalyticsForm.vb region=IPlatformInfoProviderImplementation}}
+2. Go to the __Admin__ menu and [create a new web data stream](https://support.google.com/analytics/answer/9304153?hl=en). It can point to a dummy website address.
+
+3. Open the data stream details and copy its [MEASUREMENT ID](https://support.google.com/analytics/answer/12270356?hl=en).
+
+4. [Create a Measurement Protocol API secret](https://support.google.com/analytics/thread/78848659/ga4-how-create-api-secret-for-measurement-protocol?hl=en) and copy the secret value.
+
+5. In order to test the data you send, disable the __Internal Traffic__ filter from the following menu, __Admin &mdash;> Data Settings &mdash;> Data Filters__. Also, event sending can be tested with the [Google Analytics Event Builder](https://ga-dev-tools.google/ga4/event-builder/).
+
+The Measurement Id and API secret copied in setps 3 and 4 will be used in the .NET API shown in the [Implementing the Analytics Provider](#implementing-the-analytics-provider) section of this article.
+
+## Setting up the Project
+
+To send information to the Google Analytics dashboard manually, use the [Measurement Protocol (Google Analytics 4)](https://developers.google.com/analytics/devguides/collection/protocol/ga4) API provided by Google. The API allows you to send http requests with the required event information. The following example uses the [GoogleAnalytics.Ga4-Dotnet.Sdk](https://github.com/DAIMTO/GoogleAnalytics.Ga4.Dotnet.Sdk) unofficial GA4 SDK to send information to the dashboard.
+
+>important The __GoogleAnalytics.Ga4.DotNet.Sdk__ is build against .NET 6, which means the example in this article is relevant to projects targeting .NET 6 and later.
+
+1. Download the source code of the [GoogleAnalytics.Ga4-Dotnet.Sdk](https://github.com/DAIMTO/GoogleAnalytics.Ga4.Dotnet.Sdk).
+
+2. Open the solution and build the __GoogleAnalytics.Ga4.DotNet.Sdk__ project. This will produce the __GoogleAnalytics.Ga4.DotNet.Sdk.dll__.
+
+3. Create a new WinForms project (or use an existing one) targeting __.NET 6__. Then reference __GoogleAnalytics.Ga4.DotNet.Sdk.dll__.
+
+4. Add a reference to __Telerik.Windows.Controls.dll__.
+
+5. Install the __Microsoft.Extensions.Http__ nuget package.
+
+## Implementing the Analytics Provider
+
+To implement analytics provider that sends data to the Google dashboard, create a trace monitor class that implements the `ITraceMonitor` interface. To apply the new monitor use the `TrackerManager` class.
+
+The following example demonstrates a simple implementation of the `ITraceMonitor` interface that uses the `MeasurementService` class from the __GoogleAnalytics.Ga4-Dotnet.Sdk__ project to send events to the Google Analytics 4 property.
+
+
+#### __[C#] IHttpClientFactory implementation needed by the MeasurementService__  
+
 ````C#
-public class PlatformInfoProvider : IPlatformInfoProvider
+
+public class HttpClientFactory : IHttpClientFactory
 {
-    private string anonymousClientId;
-    private int? screenColors;
-    private Dimensions? screenResolution;
-    private string userAgent;
-    private string userLanguage;
-    private Dimensions? viewPortResolution;
-    public PlatformInfoProvider()
-    {
-        InitializeWindow();
-    }
-    public string AnonymousClientId
-    {
-        get
-        {
-            return this.anonymousClientId;
-        }
-        private set
-        {
-            this.anonymousClientId = value;
-        }
-    }
-    public int? ScreenColors
-    {
-        get
-        {
-            return this.screenColors;
-        }
-        private set
-        {
-            this.screenColors = value;
-        }
-    }
-    public Dimensions? ScreenResolution
-    {
-        get
-        {
-            return this.screenResolution;
-        }
-        private set
-        {
-            this.screenResolution = value;
-            if (ScreenResolutionChanged != null)
-            {
-                ScreenResolutionChanged(this, EventArgs.Empty);
-            }
-        }
-    }
-    public string UserAgent
-    {
-        get
-        {
-            return this.userAgent;
-        }
-        private set
-        {
-            this.userAgent = value;
-        }
-    }
-    public string UserLanguage
-    {
-        get
-        {
-            return this.userLanguage;
-        }
-        private set
-        {
-            this.userLanguage = value;
-        }
-    }
-    public Dimensions? ViewPortResolution
-    {
-        get { return this.viewPortResolution; }
-        private set
-        {
-            this.viewPortResolution = value;
-            if (ViewPortResolutionChanged != null)
-            {
-                ViewPortResolutionChanged(this, EventArgs.Empty);
-            }
-        }
-    }
-    public event EventHandler ScreenResolutionChanged;
-    public event EventHandler ViewPortResolutionChanged;
-    public void OnTracking()
-    { }
-    private void InitializeWindow()
-    {
-        this.AnonymousClientId = "b597d28a-0d6c-42ed-9dcb-f89e98006b37"; // Random UUID
-        this.ScreenResolution = new Dimensions(1920, 1080);
-        this.UserAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko";
-        this.UserLanguage = "en-us";
-        this.ViewPortResolution = new Dimensions(1920, 1080);
-    }
+	private readonly string _baseAddress = "https://www.google-analytics.com";
+	public HttpClient CreateClient(string name)
+	{
+		return new HttpClient()
+		{
+			BaseAddress = new Uri(_baseAddress),
+			DefaultRequestHeaders =
+			{
+				{ "Accept", "application/json" },
+				{ "User-Agent", "My Project Name" }
+			}
+		};
+	}
 }
+
 
 ````
 ````VB.NET
-Public Class PlatformInfoProvider
-    Implements IPlatformInfoProvider
-    Private m_anonymousClientId As String
-    Private m_screenColors As System.Nullable(Of Integer)
-    Private m_screenResolution As System.Nullable(Of Dimensions)
-    Private m_userAgent As String
-    Private m_userLanguage As String
-    Private m_viewPortResolution As System.Nullable(Of Dimensions)
-    Public Sub New()
-        InitializeWindow()
-    End Sub
-    Public ReadOnly Property AnonymousClientId() As String Implements IPlatformInfoProvider.AnonymousClientId
-        Get
-            Return Me.m_anonymousClientId
-        End Get
-    End Property
-    Public ReadOnly Property ScreenColors() As System.Nullable(Of Integer) Implements IPlatformInfoProvider.ScreenColors
-        Get
-            Return Me.m_screenColors
-        End Get
-    End Property
-    Public ReadOnly Property ScreenResolution() As System.Nullable(Of Dimensions) Implements IPlatformInfoProvider.ScreenResolution
-        Get
-            Return Me.m_screenResolution
-        End Get
-    End Property
-    Public ReadOnly Property UserAgent() As String Implements IPlatformInfoProvider.UserAgent
-        Get
-            Return Me.m_userAgent
-        End Get
-    End Property
-    Public ReadOnly Property UserLanguage() As String Implements IPlatformInfoProvider.UserLanguage
-        Get
-            Return Me.m_userLanguage
-        End Get
-    End Property
-    Public ReadOnly Property ViewPortResolution() As System.Nullable(Of Dimensions) Implements IPlatformInfoProvider.ViewPortResolution
-        Get
-            Return Me.m_viewPortResolution
-        End Get
-    End Property
-    Public Event ScreenResolutionChanged As EventHandler Implements IPlatformInfoProvider.ScreenResolutionChanged
-    Public Event ViewPortResolutionChanged As EventHandler Implements IPlatformInfoProvider.ViewPortResolutionChanged
-    Public Sub OnTracking() Implements IPlatformInfoProvider.OnTracking
-    End Sub
-    Private Sub InitializeWindow()
-        Me.m_anonymousClientId = "b597d28a-0d6c-42ed-9dcb-f89e98006b37"
-        ' Random UUID
-        Me.m_screenResolution = New Dimensions(1920, 1080)
-        Me.m_userAgent = "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko"
-        Me.m_userLanguage = "en-us"
-        Me.m_viewPortResolution = New Dimensions(1920, 1080)
-    End Sub
+
+Public Class HttpClientFactory
+    Implements IHttpClientFactory
+    Private ReadOnly _baseAddress As String = "https://www.google-analytics.com"
+    Public Function CreateClient(name As String) As HttpClient Implements IHttpClientFactory.CreateClient
+        Dim httpClient As HttpClient = New HttpClient()
+        httpClient.BaseAddress = New Uri(_baseAddress)
+        httpClient.DefaultRequestHeaders.Add("Accept", "application/json")
+        httpClient.DefaultRequestHeaders.Add("User-Agent", "My Project Name")
+        Return httpClient
+    End Function
 End Class
+
+
 
 ```` 
 
 
+#### __[C#] ITraceMonitor implementation__  
 
-{{endregion}}
-
-You can then use this provider in your custom implementation of the **ITraceMonitor** interface. Please note that you have to pass your own **Google Analytics tracking ID** in the **CreateTracker** method of the **TrackerManager**.
-
-#### Custom ITraceMonitor Implementation
-
-{{source=..\SamplesCS\Analytics\AnalyticsForm.cs region=CustomITraceMonitorImplementation}} 
-{{source=..\SamplesVB\Analytics\AnalyticsForm.vb region=CustomITraceMonitorImplementation}}
 ````C#
-public class CustomAnalitycsMonitor : ITraceMonitor
+
+public class GoogleAnalyticsMonitor : ITraceMonitor
 {
-    private Tracker tracker;
-    public CustomAnalitycsMonitor()
-    {
-        this.CreateGoogleTracker();
-    }
-    public void CreateGoogleTracker()
-    {
-        var trackerManager = new TrackerManager(new PlatformInfoProvider());
-        tracker = trackerManager.CreateTracker("YOUR_PROPERTY_ID"); // your GoogleAnalytics property ID goes here
-        tracker.AppName = "WinForms App";
-    }
-    public void TrackAtomicFeature(string feature)
-    {
-        string category;
-        string eventAction;
-        this.SplitFeatureName(feature, out category, out eventAction);
-        var data = HitBuilder.CreateCustomEvent(category, eventAction + " event", feature.ToString(), 1).Build();
-        tracker.Send(data);
-    }
-    public void TrackError(string feature, Exception exception)
-    {
-        var data = HitBuilder.CreateException(feature + ":" + exception.ToString(), true).Build();
-        tracker.Send(data);
-    }
-    public void TrackFeatureCancel(string feature)
-    {
-        string category;
-        string eventAction;
-        this.SplitFeatureName(feature, out category, out eventAction);
-        var data = HitBuilder.CreateCustomEvent(category, eventAction + " event.Cancelled", feature.ToString(), 1).Build();
-        tracker.Send(data);
-    }
-    public void TrackFeatureStart(string feature)
-    {
-        // Measuring timings provides a native way to measure a period of time in Google Analytics. 
-        // This can be useful to measure resource load times, for example.
-        TimeSpan ts = TimeSpan.FromSeconds(2.2);
-        var loadTiming = HitBuilder.CreateTiming("Loaded", "MainWindow", ts).Build();
-        tracker.Send(loadTiming);
-    }
-    public void TrackFeatureEnd(string feature)
-    {
-        TimeSpan ts = TimeSpan.FromSeconds(2.2);
-        var unLoadTiming = HitBuilder.CreateTiming("Loaded", "MainWindow", ts).Build();
-        tracker.Send(unLoadTiming);
-    }
-    public void TrackValue(string feature, long value)
-    {
-        string category;
-        string eventAction;
-        this.SplitFeatureName(feature, out category, out eventAction);
-        var data = HitBuilder.CreateCustomEvent(category, eventAction + " event", feature.ToString(), value).Build();
-        tracker.Send(data);
-    }
-    private void SplitFeatureName(string feature, out string category, out string eventAction)
-    {
-        string[] parameters = feature.Split('.');
-        category = parameters[0];
-        eventAction = parameters[1];
-    }
+	private MeasurementService service;
+	private string uniqueClienId;
+
+	public GoogleAnalyticsMonitor(string measurementId, string appSecret)
+	{
+		var options = Options.Create(new GoogleAnalyticsClientSettings()
+		{
+			MeasurementId = measurementId,
+			AppSecret = appSecret
+		});
+		var client = new BasicHttpClient(new HttpClientFactory(), options);
+		service = new MeasurementService(client);
+		uniqueClienId = "UniqueClientIdHere";
+	}
+		   
+	public async void TrackAtomicFeature(string feature)
+	{
+		// "atomic_feature" is a custom event name that will be send to Google Analytics
+		// "tracked_atomic_feature" is a custom parameter name that will be send to Google Anlaytics
+		var gaEvent = EventBuilders.BuildCustomEvent("atomic_feature", new Dictionary<string, object>());
+		gaEvent.AddParameters("tracked_atomic_feature", feature);
+		var request = new EventRequest(uniqueClienId);
+		request.AddEvent(gaEvent);
+		EventResponse result = await service.CreateEventRequest(request).Execute(false);            
+	}
+
+	public async void TrackError(string feature, Exception exception)
+	{
+		var gaEvent = EventBuilders.BuildCustomEvent("exception", new Dictionary<string, object>());
+		gaEvent.AddParameters("tracked_exception", exception.Message);
+		var request = new EventRequest(uniqueClienId);
+		request.AddEvent(gaEvent);
+		EventResponse result = await service.CreateEventRequest(request).Execute(false);
+	}
+
+	public async void TrackFeatureCancel(string feature)
+	{
+		var gaEvent = EventBuilders.BuildCustomEvent("feature_cancel", new Dictionary<string, object>());
+		gaEvent.AddParameters("tracked_feature_cancel", feature);
+		var request = new EventRequest(uniqueClienId);
+		request.AddEvent(gaEvent);
+		EventResponse result = await service.CreateEventRequest(request).Execute(false);
+	}
+
+	public async void TrackFeatureEnd(string feature)
+	{
+		var gaEvent = EventBuilders.BuildCustomEvent("feature_end", new Dictionary<string, object>());
+		gaEvent.AddParameters("tracked_feature_end", feature);
+		var request = new EventRequest(uniqueClienId);
+		request.AddEvent(gaEvent);
+		EventResponse result = await service.CreateEventRequest(request).Execute(false);
+	}
+
+	public async void TrackFeatureStart(string feature)
+	{
+		var gaEvent = EventBuilders.BuildCustomEvent("feature_start", new Dictionary<string, object>());
+		gaEvent.AddParameters("tracked_feature_start", feature);
+		var request = new EventRequest(uniqueClienId);
+		request.AddEvent(gaEvent);
+		EventResponse result = await service.CreateEventRequest(request).Execute(false);
+	}
+
+	public async void TrackValue(string feature, long value)
+	{
+		var gaEvent = EventBuilders.BuildCustomEvent("value_event", new Dictionary<string, object>());
+		gaEvent.AddParameters("tracked_value", feature);
+		var request = new EventRequest(uniqueClienId);
+		request.AddEvent(gaEvent);
+		EventResponse result = await service.CreateEventRequest(request).Execute(false);
+	}
 }
+
 
 ````
 ````VB.NET
-Public Class CustomAnalitycsMonitor
+
+Public Class GoogleAnalyticsMonitor
     Implements ITraceMonitor
-    Private tracker As Tracker
-    Public Sub New()
-        Me.CreateGoogleTracker()
+
+    Private service As MeasurementService
+    Private uniqueClienId As String
+    Public Sub New(ByVal measurementId As String, ByVal appSecret As String)
+        Dim clientOptions = Options.Create(New GoogleAnalyticsClientSettings() With {
+            .MeasurementId = measurementId,
+            .AppSecret = appSecret
+        })
+        Dim client = New BasicHttpClient(New HttpClientFactory(), clientOptions)
+        service = New MeasurementService(client)
+        uniqueClienId = "UniqueClientIdHere"
     End Sub
-    Public Sub CreateGoogleTracker()
-        ' Random UUID
-        Dim trackerManager = New TrackerManager(New PlatformInfoProvider())
-        tracker = trackerManager.CreateTracker("YOUR_PROPERTY_ID")
-        ' your GoogleAnalytics property ID goes here
-        tracker.AppName = "WinForms App"
+    Public Async Sub TrackAtomicFeature(feature As String) Implements ITraceMonitor.TrackAtomicFeature
+        Dim gaEvent = EventBuilders.BuildCustomEvent("atomic_feature", New Dictionary(Of String, Object)())
+        gaEvent.AddParameters("tracked_atomic_feature", feature)
+        Dim request = New EventRequest(uniqueClienId)
+        request.AddEvent(gaEvent)
+        Dim result As EventResponse = Await service.CreateEventRequest(request).Execute(False)
     End Sub
-    Public Sub TrackAtomicFeature(feature As String) Implements ITraceMonitor.TrackAtomicFeature
-        Dim category As String
-        Dim eventAction As String
-        Me.SplitFeatureName(feature, category, eventAction)
-        Dim data = HitBuilder.CreateCustomEvent(category, eventAction & Convert.ToString(" event"), feature.ToString(), 1).Build()
-        tracker.Send(data)
+
+    Public Async Sub TrackFeatureStart(feature As String) Implements ITraceMonitor.TrackFeatureStart
+        Dim gaEvent = EventBuilders.BuildCustomEvent("feature_start", New Dictionary(Of String, Object)())
+        gaEvent.AddParameters("tracked_feature_start", feature)
+        Dim request = New EventRequest(uniqueClienId)
+        request.AddEvent(gaEvent)
+        Dim result As EventResponse = Await service.CreateEventRequest(request).Execute(False)
     End Sub
-    Public Sub TrackError(feature As String, exception As Exception) Implements ITraceMonitor.TrackError
-        Dim data = HitBuilder.CreateException((feature & Convert.ToString(":")) + exception.ToString(), True).Build()
-        tracker.Send(data)
+
+    Public Async Sub TrackFeatureEnd(feature As String) Implements ITraceMonitor.TrackFeatureEnd
+        Dim gaEvent = EventBuilders.BuildCustomEvent("feature_end", New Dictionary(Of String, Object)())
+        gaEvent.AddParameters("tracked_feature_end", feature)
+        Dim request = New EventRequest(uniqueClienId)
+        request.AddEvent(gaEvent)
+        Dim result As EventResponse = Await service.CreateEventRequest(request).Execute(False)
     End Sub
-    Public Sub TrackFeatureCancel(feature As String) Implements ITraceMonitor.TrackFeatureCancel
-        Dim category As String
-        Dim eventAction As String
-        Me.SplitFeatureName(feature, category, eventAction)
-        Dim data = HitBuilder.CreateCustomEvent(category, eventAction & Convert.ToString(" event.Cancelled"), feature.ToString(), 1).Build()
-        tracker.Send(data)
+
+    Public Async Sub TrackFeatureCancel(feature As String) Implements ITraceMonitor.TrackFeatureCancel
+        Dim gaEvent = EventBuilders.BuildCustomEvent("feature_cancel", New Dictionary(Of String, Object)())
+        gaEvent.AddParameters("tracked_feature_cancel", feature)
+        Dim request = New EventRequest(uniqueClienId)
+        request.AddEvent(gaEvent)
+        Dim result As EventResponse = Await service.CreateEventRequest(request).Execute(False)
     End Sub
-    Public Sub TrackFeatureStart(feature As String) Implements ITraceMonitor.TrackFeatureStart
-        ' Measuring timings provides a native way to measure a period of time in Google Analytics. 
-        ' This can be useful to measure resource load times, for example.
-        Dim ts As TimeSpan = TimeSpan.FromSeconds(2.2)
-        Dim loadTiming = HitBuilder.CreateTiming("Loaded", "MainWindow", ts).Build()
-        tracker.Send(loadTiming)
+
+    Public Async Sub TrackError(feature As String, exception As Exception) Implements ITraceMonitor.TrackError
+        Dim gaEvent = EventBuilders.BuildCustomEvent("exception", New Dictionary(Of String, Object)())
+        gaEvent.AddParameters("tracked_exception", exception.Message)
+        Dim request = New EventRequest(uniqueClienId)
+        request.AddEvent(gaEvent)
+        Dim result As EventResponse = Await service.CreateEventRequest(request).Execute(False)
     End Sub
-    Public Sub TrackFeatureEnd(feature As String) Implements ITraceMonitor.TrackFeatureEnd
-        Dim ts As TimeSpan = TimeSpan.FromSeconds(2.2)
-        Dim unLoadTiming = HitBuilder.CreateTiming("Loaded", "MainWindow", ts).Build()
-        tracker.Send(unLoadTiming)
-    End Sub
-    Public Sub TrackValue(feature As String, value As Long) Implements ITraceMonitor.TrackValue
-        Dim category As String
-        Dim eventAction As String
-        Me.SplitFeatureName(feature, category, eventAction)
-        Dim data = HitBuilder.CreateCustomEvent(category, eventAction & Convert.ToString(" event"), feature.ToString(), value).Build()
-        tracker.Send(data)
-    End Sub
-    Private Sub SplitFeatureName(feature As String, ByRef category As String, ByRef eventAction As String)
-        Dim parameters As String() = feature.Split("."c)
-        category = parameters(0)
-        eventAction = parameters(1)
+
+    Public Async Sub TrackValue(feature As String, value As Long) Implements ITraceMonitor.TrackValue
+        Dim gaEvent = EventBuilders.BuildCustomEvent("value_event", New Dictionary(Of String, Object)())
+        gaEvent.AddParameters("tracked_value", feature)
+        Dim request = New EventRequest(uniqueClienId)
+        request.AddEvent(gaEvent)
+        Dim result As EventResponse = Await service.CreateEventRequest(request).Execute(False)
     End Sub
 End Class
 
+
+
 ```` 
 
 
+To apply the custom monitor, set the static `ControlTraceMonitor.AnalyticsMonitor` property, possibly in the constructor of your application.
 
-{{endregion}}
 
-All that is left is to set the static **ControlTraceMonitor.AnalyticsMonitor** property, possibly in the constructor of your application.
-
-#### Set AnalyticsMonitor
-
-{{source=..\SamplesCS\Analytics\AnalyticsForm.cs region=ITraceMonitorInstance}} 
-{{source=..\SamplesVB\Analytics\AnalyticsForm.vb region=ITraceMonitorInstance}}
 ````C#
-ControlTraceMonitor.AnalyticsMonitor = new CustomAnalitycsMonitor();
+
+void SetGoogleAnalyticsMonitor()
+{
+    ControlTraceMonitor.AnalyticsMonitor = new GoogleAnalyticsMonitor("G-NWGCDXW4TJ", "wkl43C69QSqEphQxQsW0vA");
+}
+
 
 ````
 ````VB.NET
-ControlTraceMonitor.AnalyticsMonitor = New CustomAnalitycsMonitor()
+
+Private Sub SetGoogleAnalyticsMonitor()
+    ControlTraceMonitor.AnalyticsMonitor = New GoogleAnalyticsMonitor("G-NWGCDXW4TJ", "wkl43C69QSqEphQxQsW0vA")
+End Sub
+
 
 ```` 
 
 
+>tip Read in details how to setup the Google Analytics dashboards in its [documentation](https://support.google.com/analytics/).
 
-{{endregion}}
 
-If you then go to the Google Analytics dashboard after some user interaction has took place, you will find information and statistics for the registered features similar to the ones shown below.
-
->caption Figure 1: Google Analytics Dashboard 
-![Google Analytics Dashboard](images/google-analytics-dashboard.png)
-
-# See Also
+## See Also
 
 * [Analytics Support]({%slug winforms/analytics/analytics-support%})
