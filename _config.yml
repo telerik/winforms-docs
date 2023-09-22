@@ -931,6 +931,9 @@ navigation:
     controls/navigationview:
         title: NavigationView
         position: 303
+    controls/notifyicon:
+        title: NotifyIcon
+        position: 304        
     controls/officenavigationbar:
         title: OfficeNavigationBar
         position: 305
@@ -1846,6 +1849,7 @@ intro_columns:
       "ContextMenu": "winforms/menus/contextmenu/context-menus"
       "Menu": "winforms/menus/menu"
       "PageView": "winforms/pageview"
+      "NotifyIcon": "notifyicon-overview"
       "NavigationView": "navigationview-overview"     
       "OfficeNavigationBar": "officenavigationbar-overview"
       "Panorama": "winforms/panorama"
