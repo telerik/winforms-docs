@@ -924,16 +924,18 @@ navigation:
         position: 5
     controls/multicolumncombobox/styling-and-appearance:
         title: Styling and Appearance
-        position: 8		
+        position: 8
     controls/multicolumncombobox/how-to:
         title: How-To
-        position: 9	
+        position: 9
     controls/navigationview:
         title: NavigationView
         position: 303
     controls/notifyicon:
         title: NotifyIcon
-        position: 304        
+        position: 304
+    controls/notifyicon/features:
+        title: Features          
     controls/officenavigationbar:
         title: OfficeNavigationBar
         position: 305

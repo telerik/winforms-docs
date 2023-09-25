@@ -43,5 +43,5 @@ End Sub
 
 ![RadNotifyIcon with tooltip](images/radnotifyicon-features-tooltip_001.png)
 
-## See Also 
+
 

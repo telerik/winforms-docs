@@ -15,7 +15,6 @@ The __RadNotifyIcon__ allows for displaying a popup upon interacting with the ic
 
 The __PopupContent__ property allow for setting the popup's content and changing its default look. The **PopupContent** property is of type **Control**. This way you can design your Form, UserControl, etc. and set it as a content of the popup.
 
-#### __Example 1: Setting PopupContent__
 {{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupContent}} 
 {{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupContent}}
 ````C#
@@ -46,21 +45,20 @@ End Sub
 
 #### __Figure 1: RadNotifyIcon with Popup__
 
-![RadNotifyIcon with activated popup](images/adnotifyicon-features-popup_001.png)
+![RadNotifyIcon with activated popup](images/radnotifyicon-features-tooltip_001.png)
 
 ## PopupActivationMouseEvent
 
 The __PopupActivationMouseEvent__ property determines when the popup will be shown. The default value is __LeftClick__. This property is enumeration and it expose the following values:
-\* __LeftClick__: Triggered on left mouse click.
-\* __RightClick__: Triggered on right mouse click.
-\* __MiddleClick__: Triggered on middle mouse click.
-\* __LeftDoubleClick__: Triggered on left mouse double click.
-\* __RightDoubleClick__: Triggered on right mouse double click.
-\* __MiddleDoubleClick__: Triggered on middle mouse double click.
-\* __All__: Triggered on any mouse click action.
+* __LeftClick__: Triggered on left mouse click.
+* __RightClick__: Triggered on right mouse click.
+* __MiddleClick__: Triggered on middle mouse click.
+* __LeftDoubleClick__: Triggered on left mouse double click.
+* __RightDoubleClick__: Triggered on right mouse double click.
+* __MiddleDoubleClick__: Triggered on middle mouse double click.
+* __All__: Triggered on any mouse click action.
 
 
-#### __Example 2: Setting PopupActivationMouseEvent__
 {{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupActivationMouseEvent}} 
 {{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupActivationMouseEvent}}
 ````C#
@@ -82,9 +80,8 @@ radNotifyIcon.PopupActivationMouseEvent = MouseActivationEvent.All
 
 The __PopupShowDuration__ specifies the amount of time in __milliseconds__ after which the popup will begin to close automatically. The default value is __5000__ milliseconds (5s). 
 
-#### __Example 3: Setting PopupActivationMouseEvent__
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupActivationMouseEvent}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupActivationMouseEvent}}
+{{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupShowDuration}} 
+{{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupShowDuration}}
 ````C#
 
 radNotifyIcon.PopupShowDuration = 3000;
@@ -115,7 +112,6 @@ The RadNotifyIcon allows for programmatically showing a popup through the __Show
 * **void ShowPopup()**: Shows the popup on top of the notify icon.
 * **void ShowPopup(Point location)**: Shows the popup at the provided location.
 
-#### __Example 4: Programmatically Show the Popup__
 {{source=..\SamplesCS\NotifyIcon\Features.cs region=ShowPopup}} 
 {{source=..\SamplesVB\NotifyIcon\Features.vb region=ShowPopup}}
 ````C#
@@ -137,7 +133,6 @@ radNotifyIcon.ShowPopup()
 
 You can manually hide the popup with the __HidePopup__ method as shown in __Example 6__.
 
-#### __Example 5: Programmatically Hide the Popup__
 {{source=..\SamplesCS\NotifyIcon\Features.cs region=HidePopup}} 
 {{source=..\SamplesVB\NotifyIcon\Features.vb region=HidePopup}}
 ````C#
@@ -155,14 +150,13 @@ radNotifyIcon.HidePopup()
 
 {{endregion}}
 
-## Popup animations
+## Popup Animations
 
 You can control the opening and closing animation with the __PopupShowAnimation__ and __PopupHideAnimation__ properties respectively. These properties are enumeration (**NotifyIconAnimationType**) and it expose the following values:
 * **None**: No animation.
 * **Fade**: A Fade animation is applied.
 * **Timeout**: A 'Slide' animation is applied.
 
-#### __Example 6: Programmatically Hide the Popup__
 {{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupAnimation}} 
 {{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupAnimation}}
 ````C#
@@ -187,7 +181,6 @@ radNotifyIcon.PopupHideAnimation = NotifyIconAnimationType.Fade
 ## IsPopupOpen
 
 The __IsPopupOpen__ property allows you to check whether a popup is currently open.
-
 
 
 ## See Also 
