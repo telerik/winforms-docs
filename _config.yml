@@ -935,7 +935,8 @@ navigation:
         title: NotifyIcon
         position: 304
     controls/notifyicon/features:
-        title: Features          
+        title: Features    
+        position: 4      
     controls/officenavigationbar:
         title: OfficeNavigationBar
         position: 305
