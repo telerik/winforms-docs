@@ -1780,6 +1780,7 @@ intro_columns:
       "WaitingBar": "winforms/track-and-status-controls/waitingbar"
       "VirtualKeyboard": "winforms-virtual-keyboard-overview"
       "Callout": "callout-overview"
+      "NotifyIcon": "notifyicon-overview"
   -
     title: "Forms & Dialogs"
     items:
@@ -1852,7 +1853,6 @@ intro_columns:
       "ContextMenu": "winforms/menus/contextmenu/context-menus"
       "Menu": "winforms/menus/menu"
       "PageView": "winforms/pageview"
-      "NotifyIcon": "notifyicon-overview"
       "NavigationView": "navigationview-overview"     
       "OfficeNavigationBar": "officenavigationbar-overview"
       "Panorama": "winforms/panorama"
