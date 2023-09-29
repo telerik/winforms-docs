@@ -6,7 +6,6 @@ slug: winforms-gridview-scrolling-scroll-modes
 tags: scrolling
 published: True
 position: 1
-previous_url: gridview-scrolling-scrolling-programmatically
 ---
 
 # Scroll Modes
