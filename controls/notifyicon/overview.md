@@ -21,11 +21,11 @@ CTAControlName: NotifyIcon
 
 ### Key features:
 
-Add an icon in the Windows taskbar notification area. Learn more in the Getting Started article.
+Add an icon in the Windows taskbar notification area. Learn more in the [Getting Started]({%slug notifyicon-getting-started%}) article.
 
 * **Popup**: Display a popup upon user interaction with the icon or by manually calling the exposed methods. Learn more in the [Popup]({%slug radnotifyicon-features-popup%}) article.
 
-* **ContextMenu**: Show a popup to present the user with some options. Learn more in the ContextMenu article.
+* **ContextMenu**: Show a popup to present the user with some options. Learn more in the [ContextMenu]({%slug radnotifyicon-features-contextmenu%}) article.
 
 * **Tooltip**: Display a tooltip when the icon is hovered and customize it. Check out the [Tooltip]({%slug radnotifyicon-features-tooltip%}) article for more information.
 
