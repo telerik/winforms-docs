@@ -35,5 +35,7 @@ Add an icon in the Windows taskbar notification area. Learn more in the [Getting
 
 ## See Also
 
+* [Design Time]({%slug notifyicon-design-time%})
+* [Getting Started]({%slug notifyicon-getting-started%})
 * [Tooltip]({%slug radnotifyicon-features-tooltip%})
 
