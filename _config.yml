@@ -1045,6 +1045,9 @@ navigation:
     controls/picturebox/localization:
         title: Localization
         position: 10    
+    controls/pipspager:
+        title: PipsPager
+        position: 357
     controls/pivotgrid:
         title: PivotGrid 
         position: 360
@@ -1270,6 +1273,9 @@ navigation:
     controls/shortcuts:
         title: Shortcuts
         position: 440
+    controls/slideview:
+        title: SlideView
+        position: 443
     controls/sparkline:
         title: Sparkline
         position: 445
@@ -1857,6 +1863,8 @@ intro_columns:
       "OfficeNavigationBar": "officenavigationbar-overview"
       "Panorama": "winforms/panorama"
       "RibbonBar": "winforms/ribbonbar"
+      "SlideView": "slideview-overview"
+      "PipsPager": "pipspager-overview"
   -
     title: "Layout"
     items:
