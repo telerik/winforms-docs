@@ -20,8 +20,10 @@ position: 4
 |__DisplayStyle__|Defines the display image and text style of an item. <br> *None*: Specifies that neither image nor text is rendered. <br> *Text*: Specifies that only text is rendered. <br> *Image*: Specifies that only an image is rendered. <br> *ImageAndText*: Specifies that both an image and text are to be rendered. |![WinForms RadRadioButton DisplayStyle](images/buttons-radiobutton-properties-methods-events005.png)|
 |__ButtonElement__|Gets the instance of __RadRadioButtonElement__ wrapped by this control. __RadRadioButtonElement__ is the main element in the hierarchy tree and encapsulates the actual functionality of __RadRadioButton__.||
 |__ToggleState__|Gets or sets the toggle state. Toggle state enumeration defines the following values: Off, Indeterminate, and On.
-|__CheckState__ \*|Gets or sets the check state. Check state enumeration defines the following values: Uncheck, Indeterminate, and Check.||
+|__CheckState__ \*|Gets or sets the check state. Check state enumeration defines the following values: Uncheck, Indeterminate, and Check.|
+|__AutoCheck__|Gets or sets a value indicating whether the **IsChecked** value and the appearance of the control automatically change when the control is clicked. |
 
+>note **AutoCheck** property is available as of R3 2023. When the **RadRadioButton** is part of a group and the **AutoCheck** property is set to *true*, this ensures that only one radio button is checked at a given time. If the **AutoCheck** property is set to *false*, the group of buttons will not act as a mutually exclusive group and the **IsChecked** property should be updated in code.
 
 # Methods
 
