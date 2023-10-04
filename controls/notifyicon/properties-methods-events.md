@@ -69,8 +69,8 @@ CTAControlName: RadNotifyIcon
 
 
 # See Also
-
-* [Getting Started]()
-* [Design Time]()
- 
+	
+* [Overview]({%slug notifyicon-overview%})	
+* [Getting Started]({%slug notifyicon-getting-started%})
+* [Design Time]({%slug notifyicon-design-time%})	
     

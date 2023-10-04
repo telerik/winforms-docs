@@ -10,19 +10,24 @@ position: 1
 
 # Structure
 
-This article describes the inner structure and organization of the elements which build **RadNotifyIcon**.
+This article describes the structure of **RadNotifyIcon**.
 
+![RadNotifyIcon](images/radnotifyicon-structure001.png)
 
+**RadNotifyIcon** is a component that adds an icon to the Windows notification area inside the taskbar.
 
+**PopupContent** appear upon interacting with the icon and can host any Control.
 
-# Elements Hierarchy
+## Balloon
+
+The balloon has a native Windows look and feel.
+
+![RadNotifyIcon](images/radnotifyicon-structure002.png)
 
 
 # See Also
 
-* [View Modes]({%slug officenavigationbar-view-modes%})	
-* [Design Time]({%slug officenavigationbar-design-time%})	
-* [Getting Started]({%slug officenavigationbar-getting-started%})	
-
-
+* [Overview]({%slug notifyicon-overview%})	
+* [Design Time]({%slug notifyicon-design-time%})	
+* [Getting Started]({%slug notifyicon-getting-started%})	
 

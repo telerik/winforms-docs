@@ -97,7 +97,7 @@ Its design depends on the exact requirement a developer may have. Then, set the 
 
 ![RadNotifyIcon PopupContent](images/radnotifyicon-getting-started006.png)
 
->note The __PopupContent__ property accept any value of type Control.
+>note The __PopupContent__ property accepts any value of type Control.
 
 ![RadNotifyIcon PopupContent](images/radnotifyicon-getting-started004.gif)
  
