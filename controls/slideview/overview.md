@@ -11,7 +11,7 @@ CTAControlName: SlideView
 
 # WinForms SlideView Overview
 
-__RadSlideView__ is a flexible navigation control that allows you to slide between different views, thus providing an interactive navigation. With it, you can build a gallery display to show your images and content efficiently.
+__RadSlideView__ is a flexible navigation control that allows you to slide between different views, thus providing an interactive navigation. With it, you can build a gallery display to show your images and content efficiently. It is suitable for browsing images or other items in a collection, such as photos in an album or items in a product details page, one item at a time.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -29,4 +29,9 @@ __RadSlideView__ is a flexible navigation control that allows you to slide betwe
 
 * __Customizing navigation buttons__: The SlideView component provides the ability to customize the navigation buttons. You can learn more about this functionality in the Navigation Buttons article.
 
+
+## See Also
+
+* [Structure]({%slug slideview-structure%})
+* [Getting Started]({%slug slideview-getting-started%})
 
