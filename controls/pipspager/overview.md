@@ -27,4 +27,6 @@ __RadPipsPager__  lets the user navigate a linearly paginated collection using g
 
 * __Customizing navigation buttons__: The PipsPager component provides the ability to customize the navigation buttons. You can learn more about this functionality in the Navigation Buttons article.
 
+## See Also
 
+* [Structure]({%slug pipspager-structure%})
