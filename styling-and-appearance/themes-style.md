@@ -85,10 +85,6 @@ This article lists all of the available themes that come with the installation o
 
 ![themes-style 015](images/themes-style015.png)
 
-## Windows7
-
-![themes-style 016](images/themes-style016.png)
-
 ## TelerikMetroTouch
 
 ![themes-style 017](images/themes-style017.png)
@@ -120,6 +116,10 @@ This article lists all of the available themes that come with the installation o
 ## Office2010Black
 
 ![themes-style 024](images/themes-style024.png)
+
+## Windows7
+
+![themes-style 016](images/themes-style016.png)
 
 ## Office2007Silver
 
