@@ -30,7 +30,7 @@ position: 4
 
 ## Controlling the Position of the Navigation Buttons
 
-RadSlideView allows you to control the navigation buttons' position. They can be displayed either over the content or next to it. This behavior is controlled via the _ShowButtonsOverContent__ property. The default value is *true*, with which the buttons will be displayed over the content.
+RadSlideView allows you to control the navigation buttons' position. They can be displayed either over the content or next to it. This behavior is controlled via the __ShowButtonsOverContent__ property. The default value is *true*, with which the buttons will be displayed over the content.
 
 ## Setting an Auto-Hide Interval for the Navigation Buttons
 

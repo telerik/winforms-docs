@@ -21,7 +21,9 @@ Follow the steps:
 2\. Set __DataSource__ for the BindingSource to a collection of records where the object should contain at least one Image field. 
 
 3\. Define __TemplateElement__ for the RadSlideView. This is actually the visual element that represents the UI for the current item. For simplicity of this example, we will use a LightVisualElement for displaying the Photo.
+
 4\. Define a __Mapping__ for RadSlideView to link the TemplateElement with the respective data field. 
+
 5\. Set the __BindingSource__ property of RadSlideView. 
 
 {{source=..\SamplesCS\SlideView\GettingStartedGallery.cs region=GettingStarted}} 
