@@ -29,4 +29,5 @@ __RadPipsPager__  lets the user navigate a linearly paginated collection using g
 
 ## See Also
 
+* [Getting Started]({%slug pipspager-getting-started%})
 * [Structure]({%slug pipspager-structure%})

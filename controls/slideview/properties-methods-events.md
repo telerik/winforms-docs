@@ -21,7 +21,7 @@ position: 5
 |__SelectedIndex__|Gets or sets the index of the selected slide view item.|
 |__ShowButtonsOverContent__|Gets or sets a boolean value indicating whether previous and next buttons will be shown over content or outside it. The default value is true, with which the buttons will be displayed over the content.|
 |__BindingSource__|Gets or sets the data source.|
-|__Orientation__|Gets or sets a value indicating how to orient the navigation buttons - horizontally or vertically.|
+|__Orientation__|Gets or sets a value indicating how to orientate the navigation buttons - horizontally or vertically.|
 |__AllowAnimation__|Gets or sets a value indicating whether to use animation when changing its state.|
 |__AnimationInterval__|Gets or sets the animation interval.|
 |__AnimationFrames__|Gets or sets the animation frames.|
