@@ -30,7 +30,7 @@ Figure 2: RadPictureBox elements hierarchy
 
 ![WinForms RadPictureBox Elements Hierarchy](images/picturebox-structure002.png)
 
-# See Also
+## See Also
 
 * [Overview]({%slug radpicturebox-overview%})
 * [Getting Started]({%slug radpicturebox-getting-started%})

@@ -12,13 +12,18 @@ position: 2
 
 This article lists all of the available themes that come with the installation of the Telerik UI for WinForms suite and illustrates the design for each of them.
 
-## VisualStudio2022Dark
 
-![themes-style 033](images/themes-style033.png)
+## Windows11Dark
+
+![Windows11 Theme](images/themes-style034.png)
 
 ## Windows11
 
 ![Windows11 Theme](images/themes-style032.png)
+
+## VisualStudio2022Dark
+
+![themes-style 033](images/themes-style033.png)
 
 ## VisualStudio2022
 
@@ -80,10 +85,6 @@ This article lists all of the available themes that come with the installation o
 
 ![themes-style 015](images/themes-style015.png)
 
-## Windows7
-
-![themes-style 016](images/themes-style016.png)
-
 ## TelerikMetroTouch
 
 ![themes-style 017](images/themes-style017.png)
@@ -115,6 +116,10 @@ This article lists all of the available themes that come with the installation o
 ## Office2010Black
 
 ![themes-style 024](images/themes-style024.png)
+
+## Windows7
+
+![themes-style 016](images/themes-style016.png)
 
 ## Office2007Silver
 

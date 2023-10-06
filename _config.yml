@@ -924,13 +924,19 @@ navigation:
         position: 5
     controls/multicolumncombobox/styling-and-appearance:
         title: Styling and Appearance
-        position: 8		
+        position: 8
     controls/multicolumncombobox/how-to:
         title: How-To
-        position: 9	
+        position: 9
     controls/navigationview:
         title: NavigationView
         position: 303
+    controls/notifyicon:
+        title: NotifyIcon
+        position: 304
+    controls/notifyicon/features:
+        title: Features    
+        position: 4      
     controls/officenavigationbar:
         title: OfficeNavigationBar
         position: 305
@@ -1039,6 +1045,9 @@ navigation:
     controls/picturebox/localization:
         title: Localization
         position: 10    
+    controls/pipspager:
+        title: PipsPager
+        position: 357
     controls/pivotgrid:
         title: PivotGrid 
         position: 360
@@ -1264,6 +1273,9 @@ navigation:
     controls/shortcuts:
         title: Shortcuts
         position: 440
+    controls/slideview:
+        title: SlideView
+        position: 443
     controls/sparkline:
         title: Sparkline
         position: 445
@@ -1774,6 +1786,7 @@ intro_columns:
       "WaitingBar": "winforms/track-and-status-controls/waitingbar"
       "VirtualKeyboard": "winforms-virtual-keyboard-overview"
       "Callout": "callout-overview"
+      "NotifyIcon": "notifyicon-overview"
   -
     title: "Forms & Dialogs"
     items:
@@ -1850,6 +1863,8 @@ intro_columns:
       "OfficeNavigationBar": "officenavigationbar-overview"
       "Panorama": "winforms/panorama"
       "RibbonBar": "winforms/ribbonbar"
+      "SlideView": "slideview-overview"
+      "PipsPager": "pipspager-overview"
   -
     title: "Layout"
     items:

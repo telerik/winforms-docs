@@ -5,7 +5,7 @@ description: Localization
 slug: radpicturebox-localization
 tags: localization
 published: True
-position: 8
+position: 4
 ---
 
 # Localization

@@ -34,7 +34,7 @@ __RadPictureBox__ is a control used to display images in different formats. The 
 
 >note SVG image support is available only in .NET 4.0 and above.
 
-# See Also
+## See Also
 
 * [Structure]({%slug radpicturebox-structure%})
 * [Getting Started]({%slug radpicturebox-getting-started%})
