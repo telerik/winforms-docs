@@ -18,10 +18,9 @@ The __ShapedForm__ control allows you to design and display a Windows form wit
 {% include cta-panel-overview.html %}
 {% endif %}
 
-
-
 ![WinForms RadShapedForm Overview](images/forms-and-dialogs-shapedform-overview001.png)
 
+>note  By default, the rounded corners are not enabled on OS Windows 11. They can be enabled by setting the ShapedForm.WindowsSettings.EnableRoundedCorners property to true.
 
 # See Also
 
