@@ -49,6 +49,8 @@ position: 5
 |__AnimationStarted__|Occurs when the animation is started.|
 |__AnimationFinished__|Occurs when the animation is finished.|
 
+>note The pips pager items are destroyed when they go outside the view. For each new index that needs to be shown, a new pips pager item is created and the __CreatePipItem__ event is fired, where you can modify or replace the default pip.
+
 ## See Also
 
 * [Getting Started]({%slug pipspager-getting-started%})
