@@ -25,7 +25,7 @@ __RadPipsPager__  lets the user navigate a linearly paginated collection using g
 
 * __Orientation__: PipsPager allows you to customize how the data will be navigated. The possible options are vertically or horizontally.
 
-* __Customizing navigation buttons__: The PipsPager component provides the ability to customize the navigation buttons. You can learn more about this functionality in the Navigation Buttons article.
+* __Customizing navigation buttons__: The PipsPager component provides the ability to customize the navigation buttons. You can learn more about this functionality in the [Navigation Buttons]({%slug pipspager-navigation-buttons%}) article.
 
 ## See Also
 
