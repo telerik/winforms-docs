@@ -34,7 +34,6 @@ void ShowBallonNotification()
     radNotifyIcon.ShowTrayIcon = true;
     radNotifyIcon.BalloonText = "Balloon Text";
     radNotifyIcon.BalloonTitle = "Balloon Title";
-    radNotifyIcon.AddIcon();
     radNotifyIcon.ShowBalloonTip();
 }
 
@@ -48,7 +47,6 @@ Private Sub ShowBallonNotification()
     radNotifyIcon.ShowTrayIcon = True
     radNotifyIcon.BalloonText = "Balloon Text"
     radNotifyIcon.BalloonTitle = "Balloon Title"
-    radNotifyIcon.AddIcon()
     radNotifyIcon.ShowBalloonTip()
 End Sub
 
@@ -57,6 +55,10 @@ End Sub
 
 {{endregion}}
 
+
+#### __Figure 1: Balloon Notification__
+
+![Balloon Notification](images/radnotifyicon-features-balloon-notifications001.png)
 
 ## ShowBalloonTip Overloads
 
@@ -82,23 +84,25 @@ Me.radNotifyIcon.ShowBalloonTip("Warning", "Emergency", BalloonTipIcon.Warning, 
 
 {{endregion}}
 
+#### __Figure 2: Warning Notification__
 
+![Warning Notification](images/radnotifyicon-features-balloon-notifications002.png)
 
-* **void ShowBalloonTip(string title, string text, System.Drawing.Icon icon, bool useLargeIcon = true, bool doNotPlaySound = false, int timeout = 10)**: This overload allows for passing a title, text and a __System.Drawing.Icon__ instance. Optionally you can specify whether the large version of the provided icon should be used, whether sound should be played and the amount of seconds to wait before the balloon auto hides (The system minimum and maximum are 10 and 30 seconds). 
+* **void ShowBalloonTip(string title, string text, System.Drawing.Icon icon, bool doNotPlaySound = false, int timeout = 10)**: This overload allows for passing a title, text and a __System.Drawing.Icon__ instance. Optionally you can specify whether sound should be played and the amount of seconds to wait before the balloon auto hides (The system minimum and maximum are 10 and 30 seconds). 
 
 {{source=..\SamplesCS\NotifyIcon\Features.cs region=BalloonCustomIcon}} 
 {{source=..\SamplesVB\NotifyIcon\Features.vb region=BalloonCustomIcon}}
 ````C#
 
 var icon = new System.Drawing.Icon("../../WinForms128x28.ico");
-this.radNotifyIcon.ShowBalloonTip("Balloon Title", "Balloon Text", icon, true, false, 15);
+this.radNotifyIcon.ShowBalloonTip("Balloon Title", "Balloon Text", icon, false, 15);
 
 
 ````
 ````VB.NET
 
 Dim icon = New System.Drawing.Icon("../../WinForms128x28.ico")
-Me.radNotifyIcon.ShowBalloonTip("Balloon Title", "Balloon Text", icon, True, False, 15)
+Me.radNotifyIcon.ShowBalloonTip("Balloon Title", "Balloon Text", icon, False, 15)
 
 
 ```` 
