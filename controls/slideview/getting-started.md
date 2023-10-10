@@ -22,7 +22,7 @@ Follow the steps:
 
 3\. Define __TemplateElement__ for the RadSlideView. This is actually the visual element that represents the UI for the current item. For simplicity of this example, we will use a LightVisualElement for displaying the Photo.
 
->note If you have a simple scenario with Image and Text you can use the default TemplateElement (LightVisualElement). For more complex scenarios you can build an elements hierarchy that fits your needs. ([READ MORE]({%%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%%}))
+>note If you have a simple scenario with Image and Text you can use the default TemplateElement (LightVisualElement). For more complex scenarios you can build an elements hierarchy that fits your needs. ([READ MORE]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}))
 
 4\. Define a __Mapping__ for RadSlideView to link the TemplateElement with the respective data field. 
 

@@ -14,9 +14,9 @@ position: 3
 
 ![WinForms PipsPager Getting Started](images/pipspager-getting-started.gif)
 
->important When using Bound Mode the PipsPager automatically changes the __Position__ of the BindingSource. In unbound mode the __NumberOfPages__ property determines the amount of items and the __SelectedIndexChanged__ events needs to be handled to get notified when the user changes the selected Pips Pager Item.
+>important When using Bound Mode the PipsPager automatically changes the __Position__ of the BindingSource. In unbound mode, the __NumberOfPages__ property determines the amount of items and the __SelectedIndexChanged__ events need to be handled to get notified when the user changes the selected Pips Pager Item.
 
-RadPipsPager allows you to navigate the records of any collection by settings its __BindingSource__ property. Usually, it is used together with a [RadSlideView]({%slug slideview-overview%}).
+RadPipsPager allows you to navigate the records of any collection by setting its __BindingSource__ property. Usually, it is used together with a [RadSlideView]({%slug slideview-overview%}).
 
 Follow the steps:
 

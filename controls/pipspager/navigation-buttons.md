@@ -22,7 +22,7 @@ The visibility of the navigation buttons is controlled via the __ButtonVisibilit
 
 * __VisibleOnMouseOver__: This option is the default one. With it, the buttons will be visible when the mouse is over the RadSlideView control.
 
-* __HiddenWhenDisabled__: When this option is chosen, each button will be hidden when it is in disabled state.
+* __HiddenWhenDisabled__: When this option is chosen, each button will be hidden when it is in a disabled state.
 
 ## Setting an Auto-Hide Interval for the Navigation Buttons
 

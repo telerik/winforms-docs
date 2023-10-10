@@ -10,13 +10,13 @@ position: 1
 
 # Structure
 
-This article describes the inner structure and organization of the elements which build __RadSlideView__. 
+This article describes the inner structure and organization of the elements that build __RadSlideView__. 
 
 ![WinForms SlideView Structure](images/slideview-structure001.png)
 
 * __GalleryTemplate__: Displays the currently selected item. It may also contain a StackLayoutElement composed of nested StackLayoutElements and LightVisualElements to offer the above UI with information about the % views and number of downloads
 
-* __NavigationButtonElement__: Navigation buttons used for moving forward/backward the current item.
+* __NavigationButtonElement__: Navigation buttons are used for moving forward/backward the current item.
 
 ## Elements Hierarchy
 
