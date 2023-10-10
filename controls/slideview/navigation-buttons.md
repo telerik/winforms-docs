@@ -12,7 +12,7 @@ position: 4
 
  The navigation buttons allow you to navigate through the data. RadSlideView provides the ability to control their visibility, position, and style. Furthermore, you can also specify an auto-hide period, after which the buttons will be automatically hidden, as well as enable or disable infinite scrolling.
 
- ## Controlling the Visibility of the Buttons
+## Controlling the Visibility of the Buttons
 
  The visibility of the navigation buttons is controlled via the __ButtonVisibility__ property of RadSlideView. This property is of the type ButtonVisibility and it exposes the following options:
 
@@ -22,7 +22,7 @@ position: 4
 
 * __VisibleOnMouseOver__: This option is the default one. With it, the buttons will be visible when the mouse is over the RadSlideView control.
 
-* __HiddenWhenDisabled__: When this option is chosen, each button will be hidden when it is in disabled state.
+* __HiddenWhenDisabled__: When this option is chosen, each button will be hidden when it is in a disabled state.
 
 >caption VisibleOnMouseOver
 

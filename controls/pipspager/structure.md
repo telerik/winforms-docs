@@ -10,7 +10,7 @@ position: 1
 
 # Structure
 
-This article describes the inner structure and organization of the elements which build __RadPipsPager__.
+This article describes the inner structure and organization of the elements that build __RadPipsPager__.
 
 ![WinForms PipsPager Structure](images/pipspager-structure001.png)
 

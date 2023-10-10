@@ -10,7 +10,7 @@ position: 3
 
 # Animation
 
- __RadSlideView__ offers built-in support for animations which are enabled out-of-the-box. Setting the __AllowAnimation__ property allows you to turn on/off the animation functionality.
+ __RadSlideView__ offers built-in support for animations that are enabled out-of-the-box. Setting the __AllowAnimation__ property allows you to turn on/off the animation functionality.
 
 The public API allows customizing the animation type, frames, intervals, etc. The relevant properties are listed below:
 

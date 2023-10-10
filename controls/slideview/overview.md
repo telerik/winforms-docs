@@ -23,7 +23,7 @@ __RadSlideView__ is a flexible navigation control that allows you to slide betwe
 
 * __Navigation__: The SlideView control allows you to navigate through the data either in a loop or from end to end.
 
-* __Animation__: This compoment comes out of the box with support for animations when navigating the data. Learn more in the [Animation]({%slug slideview-animation%}) article.
+* __Animation__: This component comes out of the box with support for animations when navigating the data. Learn more in the [Animation]({%slug slideview-animation%}) article.
 
 * __Orientation__: SlideView allows you to customize how the data will be navigated. The possible options are vertically or horizontally.
 

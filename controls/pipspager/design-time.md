@@ -36,7 +36,7 @@ Select RadPipsPager and click the small arrow on the top right position in order
 
     * __Max Visible Pips__: Gets or sets the number of visible pips displayed in the control.
 
-    * __Item Size__: Gets or sets size of the items(pips).
+    * __Item Size__: Gets or sets the size of the items(pips).
 
     * __Enable Infinite Scrolling__: Determines whether infinite scrolling from last to first pip item and vice versa is enabled.
 
@@ -44,7 +44,7 @@ Select RadPipsPager and click the small arrow on the top right position in order
 
     * __Buttons Visibility__: Determines whether and how to display the navigation buttons.
 
-    * __AutoHide Buttons Delay__: Determines how long it takes to the navigation buttons to be hidden after the mouse leaves the control(in milliseconds). Used only when the ButtonsVisibility is VisibleOnMouseOver.
+    * __AutoHide Buttons Delay__: Determines how long it takes for the navigation buttons to be hidden after the mouse leaves the control(in milliseconds). Used only when the ButtonsVisibility is VisibleOnMouseOver.
 
 * __Learning Center__: Navigate to the Telerik help, code library projects or support forum.
 
