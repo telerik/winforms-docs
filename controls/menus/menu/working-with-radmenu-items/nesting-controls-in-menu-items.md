@@ -11,7 +11,7 @@ previous_url: menus-menu-working-with-radmenu-items-nesting-controls-in-menu-ite
 
 # Nesting RadElements in Menu Items
 
-The __RadMenuContentItem__ is a container menu item that allows you to build up custom menu items from other elements. You can assign any **RadElement** to the __ContentElement__ property of a **RadMenuContentItem**. The example below demonstrates dynamically creating of two main menu items that contain __RadTextBoxElement__ and __RadButtonElement__. When the button is clicked a message box displays the text.
+The __RadMenuContentItem__ is a container menu item that allows you to build up custom menu items from other elements. You can assign any **RadElement** to the __ContentElement__ property of a **RadMenuContentItem**. The example below demonstrates how to dynamically create two main menu items that contain __RadTextBoxElement__ and __RadButtonElement__. When the button is clicked a message box displays the text.
 
 >caption Figure 1: Hosting RadElements in menu items
 
@@ -68,7 +68,7 @@ End Sub
 
 {{endregion}} 
 
-# Nesting RadCotrols in Menu Items
+# Nesting RadControls in Menu Items
  
 This tutorial demonstrates adding a **RadPageView** to a **RadMenu**. Each page will contain a populated drop down list. Clicking the drop down list items displays a message box with the current selection text. 
 
@@ -78,7 +78,7 @@ This tutorial demonstrates adding a **RadPageView** to a **RadMenu**. Each page 
 
 1\. Add a __RadMenu__ to the form. No other design time work needs to be done.
 
-2\. Add the necessary items definitions along with string array for the months and seasons.
+2\. Add the necessary items definitions along with a string array for the months and seasons.
 
 {{source=..\SamplesCS\Menus\Menu\NestingControlsTutorial.cs region=data}} 
 {{source=..\SamplesVB\Menus\Menu\NestingControlsTutorial.vb region=data}} 
@@ -261,7 +261,7 @@ This **Load** event handler performs the main work of the application.
 Press `F5` to run the application. Notice the behavior when clicking the tabs and when clicking the items in the combo boxes.
  
 
-# See Also
+## See Also
 
 * [RadMenuItem]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%})
 * [Adding and Removing Items]({%slug winforms/menus/menu/working-with-radmenu-items/adding-and-removing-items%})
