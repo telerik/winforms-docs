@@ -205,7 +205,7 @@ End Sub
 
 ````
 
-#№ See Also
+## See Also
 
 * [RadPdfViewer]({%slug winforms/pdfviewer%})
 
