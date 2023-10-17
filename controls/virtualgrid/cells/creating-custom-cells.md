@@ -26,7 +26,11 @@ You can use the following approach to create a custom data cell with a check box
 
 4\. The custom cell will have no styles, because there are no defined styles for its type in the themes. You can apply the __VirtualGridCellElement__’s styles to it by defining its __ThemeEffectiveType__.
 
-5\. Thanks to the UI virtualization mechanism of __RadVirtualGrid__, only the currently visible cells are created and they are further reused when needed. A cell element is reused in other rows or columns if it is compatible for them. Override the __IsCompatible__ method and return *true* only for the compatible column and rows. This will prevent the cell from being unintentionally reused by other columns.
+5\. Override the __IsCompatible__ method and return *true* only for the compatible column and rows. This will prevent the cell from being unintentionally reused by other columns.
+
+>note Thanks to the UI virtualization mechanism of __RadVirtualGrid__, only the currently visible cells are created and they are further reused when needed during operations like scrolling, filtering, etc. It is necessary to specify that our custom cell is applicable only to the desired column, e.g. ColumnIndex = 3. For this purpose, it is necessary to override the **IsCompatible** method and return *true* only if the cell is relevant for this column and row. This will ensure that the custom cell will be used only in this particular column and it won't be reused in other columns. However, the cell elements belonging to the rest of the columns, by default, are applicable to the custom column as well. This requires creating a default VirtualGridCellElement which IsCompatible with all the columns but our custom column with ColumnIndex = 3.
+
+ A cell element is reused in other rows or columns if it is compatible for them. 
 
 6\. In order to center the check box within the cell element, you should override the __ArrangeOverride__ method and arrange the __RadCheckBoxElement__ in the middle.
 
@@ -158,7 +162,51 @@ End Class
 
 {{endregion}}
 
-8\. Subscribe to the __CreateCellElement__ event where we should replace the default __VirtualGridCellElement__ with the custom one:
+8\. Once, you are ready with the implementation for the custom data cell, you should create the default cell:
+
+{{source=..\SamplesCS\VirtualGrid\Cells\VirtualGridCustomCells.cs region=UsingDefaultCustomCell}} 
+{{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridCustomCells.vb region=UsingDefaultCustomCell}}
+
+````C#
+public class DefaultVirtualGridCellElement : VirtualGridCellElement
+{
+    public override bool IsCompatible(int data, object context)
+    {
+        VirtualGridRowElement rowElement = context as VirtualGridRowElement;
+
+        return data != 3 && rowElement.RowIndex >= 0;
+    }
+    protected override Type ThemeEffectiveType
+    {
+        get
+        {
+            return typeof(VirtualGridCellElement);
+        }
+    }
+}        
+
+````
+````VB.NET
+Public Class DefaultVirtualGridCellElement
+    Inherits VirtualGridCellElement
+
+    Public Overrides Function IsCompatible(ByVal data As Integer, ByVal context As Object) As Boolean
+        Dim rowElement As VirtualGridRowElement = TryCast(context, VirtualGridRowElement)
+        Return data <> 3 AndAlso rowElement.RowIndex >= 0
+    End Function
+
+    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
+        Get
+            Return GetType(VirtualGridCellElement)
+        End Get
+    End Property
+End Class
+
+```` 
+
+{{endregion}}
+
+9\. Subscribe to the __CreateCellElement__ event where we should replace the default __VirtualGridCellElement__ with the custom one:
 
 #### Apply the custom cell
 
@@ -167,22 +215,33 @@ End Class
 
 
 ````C#
-        
 private void radVirtualGrid1_CreateCellElement(object sender, VirtualGridCreateCellEventArgs e)
 {
-    if (e.ColumnIndex == 3 && e.RowIndex >= 0)
+    if (e.CellType == typeof(VirtualGridCellElement))
     {
-        e.CellElement = new MyVirtualGridCheckBoxCellElement();
+        if (e.ColumnIndex == 3 && e.RowIndex >= 0)
+        {
+            e.CellElement = new MyVirtualGridCheckBoxCellElement();
+        }
+        else
+        {
+            e.CellElement = new DefaultVirtualGridCellElement();
+        }
     }
-}
+}        
 
 ````
 ````VB.NET
-Private Sub radVirtualGrid1_CreateCellElement(sender As Object, e As VirtualGridCreateCellEventArgs)
-    If e.ColumnIndex = 3 AndAlso e.RowIndex >= 0 Then
-        e.CellElement = New MyVirtualGridCheckBoxCellElement()
+Private Sub radVirtualGrid1_CreateCellElement(ByVal sender As Object, ByVal e As VirtualGridCreateCellEventArgs)
+    If e.CellType = GetType(VirtualGridCellElement) Then
+        If e.ColumnIndex = 3 AndAlso e.RowIndex >= 0 Then
+            e.CellElement = New MyVirtualGridCheckBoxCellElement()
+        Else
+            e.CellElement = New DefaultVirtualGridCellElement()
+        End If
     End If
 End Sub
+
 
 ```` 
 
