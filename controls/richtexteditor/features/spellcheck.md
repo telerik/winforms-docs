@@ -177,8 +177,6 @@ End Sub
 
 If you want to have a temporary custom dictionary, that will only be available for a single application session, you can use the __RadNonPersistentCustomDictionary__ object.
 
-If you want to have a temporary custom dictionary, that will only be available for a single application session, you can use the __RadNonPersistentCustomDictionary__ object.
-
 ## Adding a Word
 
 To add a word to a dictionary you can either use the __AddWord__ method of the __DocumentSpellChecker__ or of the dictionary itself. Using the first one you can add a word to multiple dictionaries associated to the same culture. This is done by passing the desired culture as parameter to the method.
@@ -237,7 +235,7 @@ End Sub
 
 {{endregion}}
 
-# See Also
+## See Also
  	
 * [How to Extract the Words Added to the Dictionary in RadSpellChecker]({%slug extract-words-added-to-dictionary%})
 * [How to Share Localization Providers and Spell Checking Dictionaries]({%slug share-localization-providers-and-dictionaries%})
