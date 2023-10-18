@@ -14,6 +14,8 @@ position: 3
 
  ![RadNotifyIcon Getting Started](images/radnotifyicon-getting-started002.png)
 
+ >note The screenshot above is captured under OS Windows 11. The design of RadNotifyIcon and its elements may differ according to the operating system (and OS style theme) that shows it.
+
  Follow the steps:
 
 1\. Go ahead and add a __RadNotifyIcon__ and a __RadButton__ from the toolbox.

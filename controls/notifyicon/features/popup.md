@@ -43,9 +43,9 @@ End Sub
 {{endregion}}
 
 
-#### __Figure 1: RadNotifyIcon with Popup__
+#### __Figure 1: RadNotifyIcon with Popup__ (Windows 11 OS)
 
-![RadNotifyIcon with activated popup](images/radnotifyicon-features-tooltip_001.png)
+![RadNotifyIcon with activated popup](images/radnotifyicon-features-popup_001.png)
 
 ## PopupActivationMouseEvent
 
@@ -115,15 +115,11 @@ The RadNotifyIcon allows for programmatically showing a popup through the __Show
 {{source=..\SamplesCS\NotifyIcon\Features.cs region=ShowPopup}} 
 {{source=..\SamplesVB\NotifyIcon\Features.vb region=ShowPopup}}
 ````C#
-
 radNotifyIcon.ShowPopup();
-
 
 ````
 ````VB.NET
-
 radNotifyIcon.ShowPopup()
-
 
 ```` 
 
@@ -139,12 +135,10 @@ You can manually hide the popup with the __HidePopup__ method as shown in __Exam
 
 radNotifyIcon.HidePopup();
 
-
 ````
 ````VB.NET
 
 radNotifyIcon.HidePopup()
-
 
 ```` 
 
@@ -164,17 +158,18 @@ You can control the opening and closing animation with the __PopupShowAnimation_
 radNotifyIcon.PopupShowAnimation = NotifyIconAnimationType.Slide;
 radNotifyIcon.PopupHideAnimation = NotifyIconAnimationType.Fade;
 
-
 ````
 ````VB.NET
 
 radNotifyIcon.PopupShowAnimation = NotifyIconAnimationType.Slide
 radNotifyIcon.PopupHideAnimation = NotifyIconAnimationType.Fade
 
-
 ```` 
 
 {{endregion}}
+
+#### __Figure 2: Show/Hide Animation__ (Windows 10 OS)
+
 
 ![RadNotifyIcon show/hide animation](images/radnotifyicon-features-popup_002.GIF)
 
