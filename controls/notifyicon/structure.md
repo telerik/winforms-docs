@@ -24,6 +24,15 @@ This article describes the structure of **RadNotifyIcon**.
 
 ![RadNotifyIcon](images/radnotifyicon-structure002.png)
 
+## Context Menu and Tooltip
+
+* The context menu and tooltip also have a native Windows look and feel.
+
+![RadNotifyIcon's Context Menu](images/radnotifyicon-structure003.png)
+
+![RadNotifyIcon's Tooltip](images/radnotifyicon-structure004.png)
+ 
+##
 
 # See Also
 
