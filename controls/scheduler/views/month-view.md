@@ -11,7 +11,7 @@ previous_url: scheduler-views-month-view
 
 # Month View
 
-## Month View Overview
+## Overview
 
 The Month view shows one month at a time, or a preset number of weeks. To move to the next day or previous month, you can use the back and forward keyboard arrows, or the [SchedulerNavigator]({%slug winforms/scheduler/scheduler-navigator/overview%}) control.
 
