@@ -8,6 +8,8 @@ published: True
 position: 4
 ---
 
+# Data Binding
+
 **RadBreadCumb** internally uses an invisible **RadTreeView** to manage the hierarchical structure if there is not associated tree view via the RadBreadCrumb.**DefaultTreeView** property. You can access it via the **InternalTreeViewElement** property of the **RadBreadCrumbElement**. 
 
 >note When the RadBreadCrumbElement.**DefaultTreeViewElement** property is set (which means that you have an associated tree view), the **InternalTreeViewElement** will be ignored.
