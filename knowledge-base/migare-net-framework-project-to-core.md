@@ -50,7 +50,7 @@ In general, you are not expected to experience any difficulties when it comes to
 
 ![migare-net-framework-project-to-core005](images/migare-net-framework-project-to-core005.png)   
 
-# See Also
+## See Also
 
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%}) 
 * [Available NuGet Packages]({%slug winforms-available-nugets%})
