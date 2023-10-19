@@ -103,12 +103,7 @@ End Function
 
 ![WinForms RadMultiColumnComboBox Getting Started](images/multicolumncombobox-getting-started002.gif)
 
-# See Also
-
+## See Also
 * [Design Time]({%slug winforms/multicolumncombobox/design-time%})	
 * [Data Binding]({%slug winforms/multicolumncombobox/databinding%})	
-
- 
-
-
 
