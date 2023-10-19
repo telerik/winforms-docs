@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Prevent Applying Formatting To Other Columns In RadGridView CellElements
 slug: customize-grid-data-cell-element
 position: 5
-tags: grid, data, row , column , cell element
+tags: grid, data, row, column, cell element
 res_type: kb
 ---
 
@@ -17,16 +17,16 @@ res_type: kb
 
 ## Description
 
-A common requirement is to apply style settings to the RadGridView's cell elements. Using the CellFormatting event is a good approach to achieve it. However, the applied style settings might be applied to undesired cell elmenets after operations like scrolling, grouping, etc. 
+A common requirement is to apply style settings to the RadGridView's cell elements. Using the CellFormatting event is a good approach to achieve it. However, the applied style settings might be applied to undesired cell elements after operations like scrolling, grouping, etc. 
 
 >caption Undesired formatting
 ![radgridview-applying-formatting](images/radgridview-applying-formatting.gif) 
 
 ## Solution
 
-Due to UI virtualization in RadGridView, the cell elements are created for only visible cells and they are being reused during operations like scrolling, filtering, grouping and so on. 
+Due to UI virtualization in RadGridView, the cell elements are created for only visible cells and reused during operations like scrolling, filtering, grouping, etc. 
 In order to prevent applying the formatting to other columns cell elements all customization should be reset for the rest of the cell elements in the CellFormatting event, which is used to access and change the styles of the data cells  in the RadGridView. In other words, each "if" statement that applies certain style settings should have the respective "else" clause for resetting these settings.
-Here is presented a .gif example after reseting all customization of the cell elements:
+Here is presented a .gif example after resetting all customization of the cell elements:
 
 ![radgridview-applying-formating-after-reset](images/radgridview-applying-formating-after-reset.gif) 
 
