@@ -62,8 +62,7 @@ Once this is done you will see the following message.
 
 ![core-migration005](images/core-migration005.png)
 
-# See Also
-
+## See Also
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%}) 
 * [How to Migrate a WinForms .NET Framework Project to .NET Core]({%slug migare-net-framework-project-to-core%})
 
