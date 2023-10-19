@@ -59,7 +59,7 @@ This article will guide you through the conversion process:
 
 	![net-core-project-converter 015](images/net-core-project-converter015.png)
 
-# See Also
+## See Also
 
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%}) 
 * [How to Migrate a WinForms .NET Framework Project to .NET Core]({%slug migare-net-framework-project-to-core%})
