@@ -1,6 +1,6 @@
 ---
 title: How to Migrate a WinForms .NET Framework Project to .NET Core
-description: This article demonstrates a step by step tutorial how to migrate your WinForms project that uses .NET Framework to .NET Core. 
+description: This article demonstrates a step by step tutorial on how to migrate your WinForms project that uses .NET Framework to .NET Core. 
 type: how-to
 page_title: How to Migrate a WinForms .NET Framework Project to .NET Core
 slug: migare-net-framework-project-to-core
@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-If you currently have a WinForms project that uses .NET Framework 4.8 (or older version) and you need to migrate it to .NET Core (or newer), this tutorial demonstrates a few steps how to do this in an easy way. 
+If you currently have a WinForms project that uses .NET Framework 4.8 (or older version) and you need to migrate it to .NET Core (or newer), this tutorial demonstrates a few steps on how to do this in an easy way. 
 
 Let's have the following project ("NetFrameworkDemo") that uses .NET Framework 4.7.2. and has a single RadForm with a RadGridView control:
 
