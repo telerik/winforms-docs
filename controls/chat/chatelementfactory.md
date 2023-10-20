@@ -190,9 +190,9 @@ End Class
 
 {{endregion}}
 
-# See Also
+## See Also
 
-* [Overview]({%slug winforms/chat/overview%})
+* [How to Select and Copy Text in Chat Messages]({%slug how-to-select-and-copy-text-in-chat-messages%})
 * [Messages]({%slug winforms/chat/chat-items/messages%})
 * [Cards]({%slug winforms/chat/chat-items/cards%})
 * [Overlays]({%slug winforms/chat/chat-items/overlays%})

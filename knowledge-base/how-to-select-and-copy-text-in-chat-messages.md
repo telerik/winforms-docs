@@ -255,7 +255,11 @@ End Class
 
 ```` 
 
+## See Also
 
+* [How to Display Code Snippets in Chat Messages]({%slug how-to-display-code-snippet-in-chat-messages%})
+* [Messages]({%slug winforms/chat/chat-items/messages%})
+* [ChatElementFactory]({%slug winforms/chat/chatelementfactory%})
 
 
 
