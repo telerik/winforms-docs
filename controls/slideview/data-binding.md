@@ -199,6 +199,166 @@ position: 3
 ````
 ````VB.NET
 
+    Private Sub BindSlideView()
+        Dim employees As BindingList(Of Employee) = New BindingList(Of Employee)()
+        employees.Add(New Employee(1, "Laura Callahan", "Inside Sales Coordinator", My.Resources.laura))
+        employees.Add(New Employee(2, "Michael Suyama", "Sales Representative", My.Resources.michael))
+        employees.Add(New Employee(1, "Anne Dodsworth", "Sales Manager", My.Resources.anne))
+        Dim bs As BindingSource = New BindingSource()
+        bs.DataSource = employees
+        Me.radSlideView1.BindingSource = bs
+        Dim template As GalleryTemplate = New GalleryTemplate()
+        Me.radSlideView1.Mappings.Add(New Mapping(template, LightVisualElement.BackgroundImageProperty, NameOf(Employee.Photo)))
+        Me.radSlideView1.Mappings.Add(New Mapping(template.LabelId, LightVisualElement.TextProperty, NameOf(Employee.Id)))
+        Me.radSlideView1.Mappings.Add(New Mapping(template.LabelName, LightVisualElement.TextProperty, NameOf(Employee.Name)))
+        Me.radSlideView1.Mappings.Add(New Mapping(template.LabelTitle, LightVisualElement.TextProperty, NameOf(Employee.Title)))
+        AddHandler Me.radSlideView1.MappedPropertyUpdating, AddressOf RadSlideView1_MappedPropertyUpdating
+        Me.radSlideView1.TemplateElement = template
+    End Sub
+
+    Private Sub RadSlideView1_MappedPropertyUpdating(ByVal sender As Object, ByVal e As MappedPropertyUpdatingEventArgs)
+        If e.PropertyName = NameOf(Employee.Id) Then
+            e.Value = $"ID = {e.Value}"
+        End If
+    End Sub
+
+    Friend Class GalleryTemplate
+        Inherits LightVisualElement
+
+        Public Property Panel As StackLayoutElement
+        Public Property LabelsPanel As StackLayoutElement
+        Public Property LabelId As LightVisualElement
+        Public Property LabelName As LightVisualElement
+        Public Property ButtonsPanel As StackLayoutElement
+        Public Property LabelTitle As LightVisualElement
+        Public Property ButtonLike As GlyphButtonElement
+
+        Protected Overrides Sub CreateChildElements()
+            MyBase.CreateChildElements()
+            Me.BackgroundImageLayout = ImageLayout.Tile
+            Me.Panel = New StackLayoutElement() With {
+                .Alignment = ContentAlignment.BottomCenter,
+                .Orientation = Orientation.Vertical,
+                .Margin = New Padding(30),
+                .StretchHorizontally = False,
+                .StretchVertically = False,
+                .MinSize = New Size(150, 75)
+            }
+            Me.Children.Add(Me.Panel)
+            Me.LabelsPanel = New StackLayoutElement With {
+                .Orientation = Orientation.Vertical,
+                .DrawFill = True,
+                .GradientStyle = GradientStyles.Solid,
+                .StretchHorizontally = True,
+                .Padding = New Padding(6, 4, 6, 4),
+                .BackColor = Color.FromArgb(200, Color.White)
+            }
+            Me.Panel.Children.Add(Me.LabelsPanel)
+            Dim font As Font = New Font("Segoe UI Semibold", 10.0F)
+            Me.LabelId = New LightVisualElement With {
+                .Font = font,
+                .ForeColor = Color.Black,
+                .TextAlignment = ContentAlignment.BottomLeft
+            }
+            Me.LabelName = New LightVisualElement() With {
+                .Font = font,
+                .ForeColor = Color.Black,
+                .TextAlignment = ContentAlignment.TopLeft
+            }
+            Me.LabelsPanel.Children.Add(Me.LabelId)
+            Me.LabelsPanel.Children.Add(Me.LabelName)
+            Me.ButtonsPanel = New StackLayoutElement With {
+                .Orientation = Orientation.Horizontal,
+                .DrawFill = True,
+                .GradientStyle = GradientStyles.Solid,
+                .BackColor = Color.FromArgb(200, Color.DarkGray),
+                .Padding = New Padding(10, 4, 10, 4),
+                .ElementSpacing = 10,
+                .StretchHorizontally = True,
+                .StretchVertically = True
+            }
+            Me.Panel.Children.Add(Me.ButtonsPanel)
+            Me.LabelTitle = New LightVisualElement() With {
+                .Alignment = ContentAlignment.MiddleLeft,
+                .Padding = New Padding(6, 0, 6, 0),
+                .StretchHorizontally = False,
+                .StretchVertically = False,
+                .MinSize = New Size(0, 30)
+            }
+            Me.LabelTitle.UnbindProperty(RadElement.StretchVerticallyProperty)
+            Me.LabelTitle.StretchVertically = True
+            Me.ButtonsPanel.Children.Add(Me.LabelTitle)
+            Me.ButtonLike = New GlyphButtonElement(TelerikWebUIFont.GlyphHeartOutline)
+            AddHandler Me.ButtonLike.Click, AddressOf Me.ButtonLike_Click
+            Me.ButtonsPanel.Children.Add(Me.ButtonLike)
+        End Sub
+
+        Private Sub ButtonLike_Click(ByVal sender As Object, ByVal e As EventArgs)
+            Dim button As RadButtonElement = TryCast(sender, RadButtonElement)
+
+            If button IsNot Nothing Then
+
+                If button.Text = TelerikWebUIFont.GlyphHeart Then
+                    button.Text = TelerikWebUIFont.GlyphHeartOutline
+                    button.ResetLocalValue(ForeColorProperty)
+                Else
+                    button.Text = TelerikWebUIFont.GlyphHeart
+                    button.ForeColor = Color.FromArgb(225, 19, 20)
+                End If
+            End If
+        End Sub
+
+        Friend Class GlyphButtonElement
+            Inherits RadButtonElement
+
+            Public Sub New(ByVal glyph As String, ByVal Optional circleShape As Boolean = False)
+                MyBase.New(glyph)
+
+                If circleShape Then
+                    Me.SetThemeValueOverride(ShapeProperty, New CircleShape(), String.Empty)
+                End If
+            End Sub
+
+            Protected Overrides Sub OnLoaded()
+                MyBase.OnLoaded()
+                Dim glyphFont As Font = New Font(ThemeResolutionService.GetCustomFont(ThemeResolutionService.WebComponentsIconsFontName), 12.0F)
+                Me.SetThemeValueOverride(FontProperty, glyphFont, String.Empty, GetType(TextPrimitive))
+                Me.Alignment = ContentAlignment.MiddleLeft
+                Me.Padding = New Padding(3, 6, 3, 4)
+                Me.StretchHorizontally = False
+                Me.StretchVertically = False
+                Me.MinSize = New Size(30, 30)
+                Me.MaxSize = New Size(30, 30)
+
+                If Me.Shape?.[GetType]() = GetType(CircleShape) Then
+                    Me.EnableBorderHighlight = False
+                    Me.ButtonFillElement.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias
+                End If
+            End Sub
+
+            Protected Overrides ReadOnly Property ThemeEffectiveType As Type
+                Get
+                    Return GetType(RadButtonElement)
+                End Get
+            End Property
+
+        End Class
+
+    End Class
+
+    Public Class Employee
+        Public Sub New(ByVal _id As Integer, ByVal _name As String, ByVal _title As String, ByVal _photo As Bitmap)
+            Id = _id
+            Name = _name
+            Title = _title
+            Photo = _photo
+        End Sub
+
+        Public Property Id As Integer
+        Public Property Name As String
+        Public Property Title As String
+        Public Property Photo As Image
+    End Class
  
 ```` 
 
