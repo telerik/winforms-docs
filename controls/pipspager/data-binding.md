@@ -200,5 +200,5 @@ End Sub
 
 
 ## See Also
-* [Getting Started]({%slug pipspager-overview%}) 
+* [Overview]({%slug pipspager-overview%}) 
 * [Getting Started]({%slug pipspager-getting-started%}) 
