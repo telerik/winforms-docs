@@ -37,7 +37,7 @@ Another approach is to:
 4. Delete all *.tbd files.
 5. Start Visual Studio 2017 and check if the issue still persists.
 
-If there is no Telerik controls in the toolbox please use [Toolbox Configuration Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/toolbox-configurator}%) to set them.
+If there is no Telerik controls in the toolbox please use [Toolbox Configuration Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/toolbox-configurator%}) to set them.
 
 ## See Also
 
