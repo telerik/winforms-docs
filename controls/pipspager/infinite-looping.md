@@ -29,4 +29,4 @@ Me.radPipsPager1.IsInfiniteScrollingEnabled = True
 
 * [Getting Started]({%slug pipspager-getting-started%})
 * [Structure]({%slug pipspager-structure%})
-* [Structure]({%slug pipspager-orientation%})
+* [Orientation]({%slug pipspager-orientation%})
