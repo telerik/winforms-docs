@@ -14,7 +14,7 @@ position: 3
 
 ![WinForms SlideView Data Binding](images/slideview-data-binding.gif)
 
-1\. First, set the **BindingSource** property to the desired collection. The navigation arrow buttons iterates the collection but the UI is empty yet. 
+1\. First, set the **BindingSource** property to the desired collection. The navigation arrow buttons iterate the collection but the UI is empty yet. 
 
 2\. Define a template to be used for the visual illustration of the collection and set the **TemplateElement** property of RadSlideView. This is actually the visual element that represents the UI for the current item. 
 
@@ -24,7 +24,7 @@ position: 3
 
 >note The mapping is a class used to connect a property from the visual element (Template) to the data bound object that is currently selected. The property type of the element and the data bound object must match. 
 
->important When the types of the mapped property and the property of the visual element do not match the **MappedPropertyUpdating** event has to be used to convert the value type to the visual element property type. If not converted, the property will not be mapped. In example below the mapped property is of type Integer(Id), but the visual element property is of type String(Text) and in the MappedPropertyUpdating event we convert the value to string type and format the string.
+>important When the types of the mapped property and the property of the visual element do not match the **MappedPropertyUpdating** event has to be used to convert the value type to the visual element property type. If not converted, the property will not be mapped. In the example below the mapped property is of type Integer(Id), but the visual element property is of type String(Text), and in the MappedPropertyUpdating event we convert the value to string type and format the string.
  
 {{source=..\SamplesCS\SlideView\SlideViewBinding.cs region=DataBinding}} 
 {{source=..\SamplesVB\SlideView\SlideViewBinding.vb region=DataBinding}}
