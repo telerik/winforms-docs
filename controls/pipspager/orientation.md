@@ -10,7 +10,7 @@ position: 7
 
 # Orientation
 
-The **RadPipsPager** offers **Orientation** property. This property indicates how to orient the pips - horizontally or vertically. By default, the pips are horizontally aligned.
+The **RadPipsPager** offers **Orientation** property. This property indicates how to rotate the pips - horizontally or vertically. By default, the pips are horizontally aligned.
 
 #### Setting vertical orientation
 
@@ -31,4 +31,4 @@ Me.radPipsPager1.Orientation = Orientation.Vertical
 
 * [Getting Started]({%slug pipspager-getting-started%})
 * [Structure]({%slug pipspager-structure%})
-* [Structure]({%slug pipspager-infinite-scrolling%})
+* [Infinite Scrolling]({%slug pipspager-infinite-scrolling%})
