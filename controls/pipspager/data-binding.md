@@ -12,7 +12,7 @@ position: 4
 
 ## Bound mode
 
-**RadPipsPager** provides built-in option to bind the control to any collection by using the **BindingSource** property. When in bound mode the **RadPipsPager** automatically changes the **Position** of the **BindingSource**. The number of the pips are also calculated automatically based on the used data.
+**RadPipsPager** provides built-in option to bind the control to any collection by using the **BindingSource** property. When in bound mode the **RadPipsPager** automatically changes the **Position** of the **BindingSource**. The number of the pips is also calculated automatically based on the used data.
 
 The following example demonstrates a basic scenario where **RadPipsPager** is used with **RadSlideView**. Here, **RadPipsPager** is bound to a BindingList<T> of a custom object:
 
@@ -181,7 +181,7 @@ Me.radPipsPager1.NumberOfPages = 2
 
 ```` 
 
-Then, you can handle the **SelectedIndexChanged** event to get notified when the user changes the selected **PipsPagerItem**. The **SelectedPipChangedEventArgs** give access to the new and old pip.
+Then, you can handle the **SelectedIndexChanged** event to get notified when the user changes the selected **PipsPagerItem**. The **SelectedPipChangedEventArgs** gives access to the new and old pip.
 
 ````C#
 private void RadPipsPager1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.PipsPager.SelectedPipChangedEvent
