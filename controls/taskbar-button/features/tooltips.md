@@ -13,6 +13,10 @@ CTAControlName: TaskbarButton
 
 RadTaskbarButton exposes Microsoft API to set tooltip text on its thumbnail preview container or its thumbnail buttons.
 
+>caption Figure 1: ThumbnailTooltip
+
+![WinForms RadTaskbarButton Thumbnail Tooltip](images/winforms-radtaskbarbutton-thumbnailtooltip.png)
+
 To set a ToolTip on the thumbnail preview part of the control, you can use the __ThumbnailTooltip__ property of __RadTaskbarButton__.
 
 {{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=ThumbnailTooltip}} 
@@ -31,11 +35,8 @@ Me.RadTaskbarButton1.ThumbnailTooltip = "My RadTaskbar Button ToolTip"
 
 {{endregion}}
  
->caption Figure 1: ThumbnailTooltip
-
-![WinForms RadTaskbarButton Thumbnail Tooltip](images/winforms-radtaskbarbutton-thumbnailtooltip.png)
  
-To set ToolTip to the thumbnail buttons, you can dirrectly use their ToolTip property.
+To set ToolTip to the thumbnail buttons, you can directly use their **ToolTip** property.
 
 {{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=ThumbnailButtonTooltip}} 
 {{source=..\SamplesVB\TaskbarButton\TaskbarButtonGettingStarted.vb region=ThumbnailButtonTooltip}}
@@ -51,11 +52,7 @@ Me.RadTaskbarButton1.ThumbnailButtons[1].ToolTip = "Telerik WinForms"
 
 ````
 
-{{endregion}}
- 
->caption Figure 2: Thumbnail Buttons Tooltip
-
-![WinForms RadTaskbarButton Thumbnail Buttons Tooltip](images/winforms-radtaskbarbutton-thumbnail-buttons-tooltip.png)
+{{endregion}} 
  
 ## See Also
 
