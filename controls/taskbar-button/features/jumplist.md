@@ -1,7 +1,7 @@
 ---
 title: Jump List
 page_title: Jump List - Taskbar Button
-description: This article shows how you can assign tooltips on taskbar.  
+description: A JumpList is a list of associated files, actions or links associated with your application.  
 slug: taskbar-button-features-jumplist
 tags: taskbarbutton, jumplist
 published: True
@@ -90,6 +90,8 @@ list.Refresh()
 {{endregion}}
 
 ![WinForms TaskbarButton Define Jump List](images/taskbar-button-features-jumplist002.png)
+
+>note The Jump List section in the [Keep Your Users Notified with the Brand-New WinForms TaskbarButton blog](https://www.telerik.com/blogs/keep-users-notified-brand-new-winforms-taskbarbutton) is useful for getting better understanding of the jump lists.
  
 ## See Also
 

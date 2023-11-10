@@ -1,6 +1,6 @@
 ---
-title: Progress
-page_title: Progress - Taskbar Button
+title: Progress Indication
+page_title: Progress Indication - Taskbar Button
 description: This article shows how you can set progress state on taskbar.  
 slug: taskbar-button-features-progress
 tags: taskbar, manager
@@ -9,7 +9,7 @@ position: 0
 CTAControlName: TaskbarButton
 ---
 
-# Progress OR Progress Indication
+# Progress Indication
 
 The RadTaskbarButton component provides you with the possibility to display the progress of a task in the taskbar. To set the progress you need to use the __ProgressPercentage__ property. Its value should be between 0 and 100. You can control the progress by increasing this property.
 
@@ -52,9 +52,7 @@ End Sub
 
 {{endregion}}
 
-![WinForms RadTaskbarButton ProgressPercentage](images/winforms-radtaskbarbutton-progresspercentage.gif)
-
-### ProgressState
+### Progress State
 
 The progress visualization of the taskbar can be also controlled by the ProgressState property. This way you can add more information to the end user regarding the currently running task progress state. The __ProgressState__ property is an enumeration and it exposes the following values.
 
@@ -80,7 +78,7 @@ In this state the progress bar won't respect the __ProgressPercentage__ property
 
 In this state, the progress will appear in its default visualization.
 
-![WinForms RadTaskbarButton ProgressState Normal](images/winforms-radtaskbarbutton-progresspercentage.gif)
+![WinForms RadTaskbarButton ProgressState Normal](images/winforms-radtaskbarbutton-progresspercentage.png)
 
 #### Pause
 In this state, the color of the progress will turn into yellow. In this state, the __ProgressPercentage__ property value change should be stopped to show that the currently running task is on pause.
