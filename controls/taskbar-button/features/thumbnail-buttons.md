@@ -21,6 +21,10 @@ This is the main part of the thumbnail representing a small preview of the appli
 
 ![WinForms RadTaskbarButton Thumbnail Preview Control](images/winforms-radtaskbarbutton-thumbnail-preview-control.png) 
 
+The **ClipRectangle** property allows you to specify a specific part of the control to be displayed in the preview.  
+
+>caution Note that when the **ClipRectangle** property is assigned the **ClipControl** property will be reset.
+
 ## Thumbnail Buttons
 
 RadTaskbarButton can display buttons in its thumbnail part. Adding buttons to your thumbnail preview will be an excellent enhancement to your application. This way the user can call commands in your application without restoring or activating the application's window. To add thumbnail button, you can populate the __ThumbnailButtons__ collection of the control.
