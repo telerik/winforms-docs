@@ -45,6 +45,14 @@ When you click the Finish button:
 
 * An app.manifest file is included to the project if you have selected the "Enable HDPI" option.
 
+As of **R3 2023** a new step is available in the wizard, called **Toolbox Configuration**, which allows you to specify what version of UI for WinForms suite to be used for the toolbox:
+
+![installation-deployment-and-distribution-vsx-create-project 005](images/installation-deployment-and-distribution-vsx-create-project005.png) 
+
+If the selected version from the drop down in the previous step matches the toolbox version, the step is expected to look like this: 
+
+![installation-deployment-and-distribution-vsx-create-project 003](images/installation-deployment-and-distribution-vsx-create-project003.png) 
+
 # See Also
 
  * [Automatic Dependency Resolving]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-dependency-resolving%})
