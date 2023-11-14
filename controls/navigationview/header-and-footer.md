@@ -14,7 +14,7 @@ position: 8
 
 ### Add items to the Header area
 
-In order to pin items into the header area you can use on of the following options:
+In order to pin items into the header area you can use any of the following options:
 * **PinPostion** - Determines whether to pin the item into the header or into the footeer.
 * **PinPage** - Pins the page item into the specified pin position.
 * **PinItem** - Pins the item into the specified pin position.
@@ -53,7 +53,7 @@ Me.radNavigationView1.AddHeaderItem(Me.inboxPage.Item)
 
 ### Add itms to the Footer area
 
-In order to pin items into the footer area you can use on of the following options:
+In order to pin items into the footer area you can use any of the following options:
 * **PinPostion** - Determines whether to pin the item into the header or into the footeer.
 * **PinPage** - Pins the page item into the specified pin position.
 * **PinItem** - Pins the item into the specified pin position.
