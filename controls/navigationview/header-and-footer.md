@@ -23,7 +23,7 @@ In order to pin items into the header area you can use any of the following opti
 
 The following examples demonstrate how to manage the item's position using the hierarchy setup shown [here]({%slug navigation-view-hierarchy-support%}).
 
-#### Add items to header
+#### Add items to the Header
 
 {{source=..\SamplesCS\PageView\NavigationView.cs region=PinHeaderItems}} 
 {{source=..\SamplesVB\PageView\NavigationView.vb region=PinHeaderItems}} 
@@ -49,7 +49,7 @@ Me.radNavigationView1.AddHeaderItem(Me.inboxPage.Item)
 
 ![WinForms RadNavigationView Header/Footer](images/navigationview-header-and-footer001.png)
 
->note PinPostion, PinPage, PinItem can be used for pinning items in both Header/Footer, as well as unpin items.
+>note PinPostion, PinPage, and PinItem can be used for pinning items in both Header/Footer, as well as unpin items.
 
 ### Add items to the Footer area
 
@@ -60,7 +60,7 @@ In order to pin items into the footer area you can use any of the following opti
 * **AddFooterPage** - Adds a page to the footer area.
 * **AddFooterItem** - Adds an item to the footer area.
 
-#### Add items to footer
+#### Add items to the Footer
 
 {{source=..\SamplesCS\PageView\NavigationView.cs region=PinFooterItems}} 
 {{source=..\SamplesVB\PageView\NavigationView.vb region=PinFooterItems}} 
@@ -90,14 +90,14 @@ Me.radNavigationView1.AddFooterItem(Me.deletedPage.Item)
 
 >note Drag and drop can be used to reorder items in the Header/Footer area.
 
-### Unpin items
+### Unpin Items
 
 In order to unpin items that have already been pinned, you can use again **PinPostion**, **PinPage**, **PinItem** and specify **NavigationViewItemPinPosition.None**. You can use also the following methods:
 
 * **UnpinPage** -  Unpins a page.
 * **UnpinItem** -  Unpins a page item.
 
-#### Unpin items
+#### Unpin Items
 
 {{source=..\SamplesCS\PageView\NavigationView.cs region=UnpinItems}} 
 {{source=..\SamplesVB\PageView\NavigationView.vb region=UnpinItems}} 
