@@ -123,6 +123,7 @@ Me.radNavigationView1.UnpinItem(Me.draftsPage.Item)
 
 ![WinForms RadNavigationView Header/Footer](images/navigationview-header-and-footer003.png)
 
+# See Also
 
 * [Navigation View]({%slug winforms/pageview/navigationview%})	 
 * [Structure]({%slug navigationview-structure%})
