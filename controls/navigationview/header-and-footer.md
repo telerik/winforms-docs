@@ -15,13 +15,13 @@ position: 8
 ### Add items to the Header area
 
 In order to pin items into the header area you can use any of the following options:
-* **PinPostion** - Determines whether to pin the item into the header or into the footeer.
+* **PinPostion** - Determines whether to pin the item into the header or into the footer.
 * **PinPage** - Pins the page item into the specified pin position.
 * **PinItem** - Pins the item into the specified pin position.
 * **AddHeaderPage** - Adds a page to the header area.
 * **AddHeaderItem** - Adds an item to the header area.
 
-The following examples demonstrates how to manage the item's position using the hierarcy setup shown [here]({%slug navigation-view-hierarchy-support%}).
+The following examples demonstrate how to manage the item's position using the hierarchy setup shown [here]({%slug navigation-view-hierarchy-support%}).
 
 #### Add items to header
 
@@ -49,12 +49,12 @@ Me.radNavigationView1.AddHeaderItem(Me.inboxPage.Item)
 
 ![WinForms RadNavigationView Header/Footer](images/navigationview-header-and-footer001.png)
 
->note PinPostion, PinPage, PinItem can be used be used for pinning items in both Header/Footer, as well as unpin items.
+>note PinPostion, PinPage, PinItem can be used for pinning items in both Header/Footer, as well as unpin items.
 
-### Add itms to the Footer area
+### Add items to the Footer area
 
 In order to pin items into the footer area you can use any of the following options:
-* **PinPostion** - Determines whether to pin the item into the header or into the footeer.
+* **PinPostion** - Determines whether to pin the item into the header or into the footer.
 * **PinPage** - Pins the page item into the specified pin position.
 * **PinItem** - Pins the item into the specified pin position.
 * **AddFooterPage** - Adds a page to the footer area.
