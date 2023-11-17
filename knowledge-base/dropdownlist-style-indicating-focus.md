@@ -28,7 +28,7 @@ res_type: kb
 
 ## Solution
 
-The **AllowShowFocusCues** property of the control needs to be set to true. The control also needs to be subscribed to its **GotFocus** and **LostFocus** where the its *Back* and *Fore* colors will be changed using the [Override Theme Settings at Run-time API](({%slug winforms/telerik-presentation-framework/override-theme-settings-at-run-time%})). 
+The **AllowShowFocusCues** property of the control needs to be set to true. The control also needs to be subscribed to its **GotFocus** and **LostFocus** where the its *Back* and *Fore* colors will be changed using the [Override Theme Settings at Run-time API]({%slug winforms/telerik-presentation-framework/override-theme-settings-at-run-time%}). 
 
 >caption Figure 1: Indicating Focus
 ![dropdownlist-style-indicating-focus 001](images/dropdownlist-style-indicating-focus.gif)
