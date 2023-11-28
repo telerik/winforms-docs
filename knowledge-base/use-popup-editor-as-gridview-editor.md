@@ -17,7 +17,7 @@ res_type: kb
  
 ## Description
 
-This tutorial demonstrates a sample approach how to create a [custom editor](({%slug winforms/gridview/editors/using-custom-editors%}) ) in RadGridView that uses a RadPopupEditor hosting a grid. Typing into the editable part of RadPopupEditor filters the popup grid:
+This tutorial demonstrates a sample approach how to create a [custom editor]({%slug winforms/gridview/editors/using-custom-editors%}) in RadGridView that uses a RadPopupEditor hosting a grid. Typing into the editable part of RadPopupEditor filters the popup grid:
  
 ![use-popup-editor-as-gridview-editor](images/use-popup-editor-as-gridview-editor.gif)
 
