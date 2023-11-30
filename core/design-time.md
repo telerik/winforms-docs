@@ -83,9 +83,6 @@ The design time assemblies in .NET Core are resolved via the installed in the pr
 |R3 2020 SP1 v2020.3.1020|VS2019 v16.8.+; VS2019 v16.8 Preview 4|
 |R3 2020 v2020.3.915|VS2019 v16.8 Preview 3|
 
->note The Hotfix NuGet packages are uploaded to the Telerik NuGet server as part of our [Latest Internal Builds](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/latest-internal-builds#latest-internal-builds).
->
-
 >note The toolbox is populated from the UI controls added to the referenced NuGet package/s.  
 >
 
@@ -98,7 +95,7 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
 >important The new architecture is described in more details in our [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5) blog.
 >
 
-# See Also
+## See Also
 
 * [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5)
 * [Migrating to .NET Core]({%slug core-migration%})

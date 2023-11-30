@@ -50,17 +50,7 @@ Each of these packages contain the corresponding Telerik dll for all available .
 
 There is an [online package source]({%slug winforms/nuget%}) that can be used to get Telerik NuGets. 
 
-## Installing Latest Internal Build NuGet Packages
-
-You can install and test the [Latest Internal Build]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%}) (LIB) dlls provided on a occasional basis, via the NuGet Package Manager. 
-
-![winforms-available-nugets002](images/winforms-available-nugets002.png)
-
-The LIB NuGets are available only as .nupkg files that can be downloaded from your telerik.com account as well: 
-
-![winforms-available-nugets003](images/winforms-available-nugets003.png)
-
-# See Also
+## See Also
 
 * [Installing On Your Computer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
 * [How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})
