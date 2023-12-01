@@ -33,10 +33,6 @@ __Copy referenced assemblies to solution and integrate with source control__ - W
 
 	![installation-deployment-and-distribution-vsx-options-dialog 004](images/installation-deployment-and-distribution-vsx-options-dialog004.png)
 
-* **Include Internal builds in Latest Version update and retrieval** - When enabled, the [Latest Internal Builds] ({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%}) will also be included when prompting to upgrade upon opening a project, which is not using the latest version of Telerik UI for WinForms installed on your system.
-
-![installation-deployment-and-distribution-vsx-options-dialog 003](images/installation-deployment-and-distribution-vsx-options-dialog003.png)
-
 All settings under the WinForms category affect only the Telerik UI for WinForms Visual Studio Extensions.
 
 >note As of **R2 2021** in the **Options** dialog, there is a setting that controls whether the message for changing the default theme will be shown. 
