@@ -10,7 +10,7 @@ position: 4
 
 # Updating Assemblies in a Project
 
-The following topic will show you how to use a specific version of the Telerik UI for WinForms suite in your project. The same instructions should be followed when applying a [Latest Internal Build]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%}).
+The following topic will show you how to use a specific version of the Telerik UI for WinForms suite in your project. 
 
 ![updating-assemblies-in-a-project 001](images/updating-assemblies-in-a-project001.png)
 
@@ -39,6 +39,5 @@ Now, you are ready to build and run your project with the downloaded version fro
 # See Also
 
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
-* [Latest Internal Builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%})
 * [How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})
 * [How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%})

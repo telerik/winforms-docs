@@ -29,7 +29,6 @@ Installation
 * [Installing On Your Computer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
 * [Major and Minor releases]({%slug winforms/getting-started/next-steps%})
-* [Latest Internal Builds]({%slug winforms/installation-deployment-and-distribution/latest-internal-builds%})
 * [Updating Assemblies in a Project]({%slug winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project%})
 * [Versions Upgrade]({%slug winforms/installation-deployment-and-distribution/versions-upgrade%})
 * [Upgrade API Analyzer tool]({%slug upgrade-api-analyzer%})
