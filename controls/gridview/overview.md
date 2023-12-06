@@ -12,7 +12,7 @@ previous_url: gridview-overview
 
 # WinForms GridView Overview
 
-__RadGridView__ is a grid component developed on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) which provides a combination of performance, extensibility and ease of use. Its flexible hierarchy model allows using different data providers and creating highly interactive interfaces for display and management of large data without performance lost.
+__RadGridView__ is a grid component developed on top of [Telerik Presentation Framework]({%slug winforms/telerik-presentation-framework/overview%}) which provides a combination of performance, extensibility, and ease of use. Its flexible hierarchy model allows the use of different data providers and the creation of highly interactive interfaces for the display and management of large data without performance loss.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -48,7 +48,7 @@ __RadGridView__ is a grid component developed on top of [Telerik Presentation Fr
 
 * Row and column reordering
 
-* Column grouping and HTML table like layouts
+* Column grouping and HTML table-like layouts
 
 * In-place data editing with validation and error indication
 
@@ -63,9 +63,10 @@ __RadGridView__ is a grid component developed on top of [Telerik Presentation Fr
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[RadGridView for WinForms Webinar](http://tv.telerik.com/watch/winforms/webinar/radgridview-for-winforms-webinar)<br>This video provides an in-depth overview of Telerik's RadGridView for WinForms|![WinForms RadGridView Webinar](images/gridview-overview002.png)|
 
-# See Also
+|[RadGridView for WinForms Webinar](https://www.telerik.com/videos/radgridview-for-winforms-webinar)<br>This video provides an in-depth overview of Telerik's RadGridView for WinForms|![WinForms RadGridView Webinar](images/gridview-overview002.png)|
+
+#№ See Also
 
  * [Getting started]({%slug winforms/gridview/getting-started%})
  * [Key features]({%slug winforms/gridview/fundamentals/key-features%})
