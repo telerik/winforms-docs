@@ -1,0 +1,143 @@
+---
+title: Generating a Bar Code Image outside WinForms
+description: Learn how to generate a bar code image in a non-Winforms project using RadBarcodeView for WinForms.
+type: how-to
+page_title: Generating a Bar Code Image outside WinForms | RadBarcodeView for WinForms | Telerik
+slug: generating-barcode-image-non-winforms
+tags: winforms, barcode, image, generate, non-winforms
+res_type: kb
+---
+# Environment
+| Key | Value |
+| ---- | ------ |
+| Product | RadBarcodeView for WinForms |
+| Version | 2023.1.314 |
+
+# Description
+I need to generate a bar code image in a non-Winforms project using RadBarcodeView for WinForms. Is this possible?
+
+# Solution
+To generate a bar code image in a non-Winforms project, you can follow these steps:
+
+1. Modify the project file to enable the use of WinForms assemblies by adding the following code:
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="UI.for.WinForms.AllControls.Net70" Version="2023.3.1114" />
+	</ItemGroup>
+
+</Project>
+```
+
+2. Add the RadBarcodeView control to your code and export it to an image using the following code:
+```csharp
+using System.Drawing;
+using Telerik.WinControls.UI.Barcode;
+using Telerik.WinControls.UI.Barcode.Symbology;
+
+Telerik.WinControls.UI.Barcode.QRCode qrCode1 = new Telerik.WinControls.UI.Barcode.QRCode();
+RadBarcodeView radBarcodeView = new RadBarcodeView();
+radBarcodeView.BindingContext = new BindingContext();
+qrCode1.Version = 1;
+radBarcodeView.Symbology = qrCode1;
+radBarcodeView.Text = "radBarcodeView1";
+radBarcodeView.Value = "1234567";
+radBarcodeView.Invalidate();
+Form form = new Form();
+form.Visible= false;
+form.Controls.Add(radBarcodeView);
+form.Show();
+Image img = radBarcodeView.ExportToImage();
+img.Save("TestImage.png", System.Drawing.Imaging.ImageFormat.Png);
+```
+
+Please note that generating images from RadBarcodeView control for WinForms requires the use of WinForms assemblies, and it may not be supported in non-Winforms projects.
+
+# Notes
+- This solution assumes that you have the necessary references and packages installed.
+- Make sure to replace "TestImage.png" with the desired file name and path for the generated image.
+
+## See Also
+- [RadBarcodeView for WinForms Documentation](https://docs.telerik.com/devtools/winforms/controls/barcode/barcodeview)
+
+---
+title: Generating a Bar Code Image outside WinForms
+description: Learn how to generate a bar code image in a non-Winforms project using RadBarcodeView for WinForms.
+type: how-to
+page_title: Generating a Bar Code Image outside WinForms | RadBarcodeView for WinForms | Telerik
+slug: generating-barcode-image-non-winforms
+tags: winforms, barcode, image, generate, non-winforms
+res_type: kb
+---
+# Environment
+| Key | Value |
+| ---- | ------ |
+| Product | RadBarcodeView for WinForms |
+| Version | 2023.1.314 |
+
+# Description
+I need to generate a bar code image in a non-Winforms project using RadBarcodeView for WinForms. Is this possible?
+
+# Solution
+To generate a bar code image in a non-Winforms project, you can follow these steps:
+
+1. Modify the project file to enable the use of WinForms assemblies by adding the following code:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="UI.for.WinForms.AllControls.Net70" Version="2023.3.1114" />
+	</ItemGroup>
+
+</Project>
+```
+
+2. Add the RadBarcodeView control to your code and export it to an image using the following code:
+
+```csharp
+using System.Drawing;
+using Telerik.WinControls.UI.Barcode;
+using Telerik.WinControls.UI.Barcode.Symbology;
+
+Telerik.WinControls.UI.Barcode.QRCode qrCode1 = new Telerik.WinControls.UI.Barcode.QRCode();
+RadBarcodeView radBarcodeView = new RadBarcodeView();
+radBarcodeView.BindingContext = new BindingContext();
+qrCode1.Version = 1;
+radBarcodeView.Symbology = qrCode1;
+radBarcodeView.Text = "radBarcodeView1";
+radBarcodeView.Value = "1234567";
+radBarcodeView.Invalidate();
+Form form = new Form();
+form.Visible= false;
+form.Controls.Add(radBarcodeView);
+form.Show();
+Image img = radBarcodeView.ExportToImage();
+img.Save("TestImage.png", System.Drawing.Imaging.ImageFormat.Png);
+```
+
+Please note that generating images from RadBarcodeView control for WinForms requires the use of WinForms assemblies, and it may not be supported in non-Winforms projects.
+
+# Notes
+- This solution assumes that you have the necessary references and packages installed.
+- Make sure to replace "TestImage.png" with the desired file name and path for the generated image.
+
+## See Also
+- [RadBarcodeView for WinForms Documentation](https://docs.telerik.com/devtools/winforms/controls/barcode/barcodeview)
