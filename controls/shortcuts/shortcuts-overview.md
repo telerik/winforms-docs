@@ -34,6 +34,16 @@ The entire mechanism is controlled by several interfaces and classes which provi
 
 * RadItem.__Shortcuts__: Each **RadItem** implements the **IShortcutProvider** interface and allows a number of shortcuts to be associated with it. When a keyboard combination matches any of the item’s shortcuts, the item’s **Click** event is raised.
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms Shortcut Homepage](https://www.telerik.com/products/winforms/shortcuts.aspx)
+* [Get Started with the Telerik UI for WinForms Shortcut]({%slug winforms/shortcuts/getting-started-(radbuttons)%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Getting Started (RadMenuItems)]({%slug winforms/shortcuts/getting-started-(radmenuitems)%})	

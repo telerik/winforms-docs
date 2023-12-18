@@ -42,6 +42,16 @@ Here are a few of the **RadToastNotificationManager**'s main features:
 * If a user is using Windows 10 Anniversary Update (Redstone 1, build 1607) or later, we can make use of the Generic Template, which is a powerful template for creating rich toasts. [Read more](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts?tabs=builder-syntax) 
  
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms ToastNotification Homepage](https://www.telerik.com/products/winforms/toast-notification.aspx)
+* [Get Started with the Telerik UI for WinForms ToastNotification]({%slug toast-notification-getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Getting Started]({%slug toast-notification-getting-started%})

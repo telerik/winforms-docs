@@ -36,6 +36,16 @@ The end-user can check a given text for errors using one of the following modes:
 
 * Support multiple languages – you can add dictionaries in any language and use them with **RadSpellChecker**.
           
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms SpellChecker Homepage](https://www.telerik.com/products/winforms/spellchecker.aspx)
+* [Get Started with the Telerik UI for WinForms SpellChecker]({%slug winforms/spellchecker/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Getting Started]({%slug winforms/spellchecker/getting-started%})	

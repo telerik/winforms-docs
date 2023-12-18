@@ -27,6 +27,16 @@ __RadDesktopAlert__ component displays a small pop-up window on the screen to n
 ![WinForms RadDesktopAlert Overview Sample](images/desktopalert-overview002.png)
 
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms DesktopAlert Homepage](https://www.telerik.com/products/winforms/desktopalert.aspx)
+* [Get Started with the Telerik UI for WinForms DesktopAlert]({%slug winforms/desktopalert/gettingstarted%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Design Time]({%slug winforms/desktopalert/designtime%})

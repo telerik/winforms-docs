@@ -33,6 +33,16 @@ __RadVirtualGrid__ is a grid component developed on top of Telerik Presentation 
 * Selection and navigation
 * Flexible API 
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms VirtualGrid Homepage](https://www.telerik.com/products/winforms/virtualgrid.aspx)
+* [Get Started with the Telerik UI for WinForms VirtualGrid]({%slug winforms/virtualgrid/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 * [Busy Indicators]({%slug winforms/virtualgrid/busy-indicators%})
 

@@ -27,6 +27,16 @@ __RadPipsPager__  lets the user navigate a linearly paginated collection using g
 
 * __Customizing navigation buttons__: The PipsPager component provides the ability to customize the navigation buttons. You can learn more about this functionality in the [Navigation Buttons]({%slug pipspager-navigation-buttons%}) article.
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms PipsPager Homepage](https://www.telerik.com/products/winforms/pipspager.aspx)
+* [Get Started with the Telerik UI for WinForms PipsPager]({%slug pipspager-getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 ## See Also
 
 * [Getting Started]({%slug pipspager-getting-started%})

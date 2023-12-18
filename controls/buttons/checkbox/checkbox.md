@@ -21,4 +21,14 @@ __RadCheckBox__ supports three states. This is controlled by the __IsThreeState_
 
 
 ![WinForms RadButtons buttons-checkbox-overview001](images/buttons-checkbox-overview001.png)
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms CheckBox Homepage](https://www.telerik.com/products/winforms/checkbox.aspx)
+* [Get Started with the Telerik UI for WinForms CheckBox]({%slug winforms/buttons/checkbox/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
         

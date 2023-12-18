@@ -33,6 +33,16 @@ Add an icon in the Windows taskbar notification area. Learn more in the [Getting
 
 * **DPI Support**: RadNotifyIcon provides support for high DPI environments.
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms NotifyIcon Homepage](https://www.telerik.com/products/winforms/notifyicon.aspx)
+* [Get Started with the Telerik UI for WinForms NotifyIcon]({%slug notifyicon-getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 ## See Also
 
 * [Design Time]({%slug notifyicon-design-time%})

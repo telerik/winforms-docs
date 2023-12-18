@@ -175,6 +175,16 @@ __RadChartView__ can be exported to a Bitmap image.
 #### Chart Grid
 The chart may be optionally decorated with grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes – the area between two adjacent ticks. Such visuals are available for both Cartesian and Polar coordinates via Cartesian Grid and Polar Grid respectively.
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms ChartView Homepage](https://www.telerik.com/products/winforms/chartview.aspx)
+* [Get Started with the Telerik UI for WinForms ChartView]({%slug winforms/chartview/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Design Time]({%slug winforms/chartview/design-time/smart-tag%})

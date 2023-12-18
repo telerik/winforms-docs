@@ -52,6 +52,16 @@ You can review below the [Key Features]({%slug winforms/listview%}#key-features)
 
 > Download and check out the online demo at [demos.telerik.com](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe)
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms ListView Homepage](https://www.telerik.com/products/winforms/listview.aspx)
+* [Get Started with the Telerik UI for WinForms ListView]({%slug winforms/listview/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Getting Started]({%slug winforms/listview/getting-started%})

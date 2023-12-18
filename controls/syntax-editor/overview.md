@@ -32,3 +32,13 @@ As of **R1 2020** Telerik UI for WinForms suite offers a **RadSyntaxEditor** con
 * **Keyboard Shortcuts** - **RadSyntaxEditor** supports the most widely-spread keyboard hotkeys which can also be found in other text editors.
 
 
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms SyntaxEditor Homepage](https://www.telerik.com/products/winforms/syntax-editor.aspx)
+* [Get Started with the Telerik UI for WinForms SyntaxEditor]({%slug syntax-editor-getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
+

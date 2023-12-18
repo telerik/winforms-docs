@@ -32,4 +32,14 @@ The __RadSparkline__ control is lightweight chart that aims to present key infor
 * [Indicators]({%slug radsparkline-indicators%})
 * [Export To Image]({%slug radsparkline-export-to-image%})
 * [Printing]({%slug radsparkline-printing%})
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms Sparkline Homepage](https://www.telerik.com/products/winforms/sparkline.aspx)
+* [Get Started with the Telerik UI for WinForms Sparkline]({%slug radsparkline-getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 * [Null Values Support]({%slug radsparkline-null-values%})

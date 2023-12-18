@@ -68,6 +68,16 @@ Here is a list with short descriptions of the top-of-the-line features of __RadD
 * __Diagram commands__ - __RadDiagram__ exposes a set of commands that allow you to easily implement interaction logic in MVVM solutions.
 
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms Diagram Homepage](https://www.telerik.com/products/winforms/diagram.aspx)
+* [Get Started with the Telerik UI for WinForms Diagram]({%slug winforms/diagram/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Structure]({%slug winforms/diagram/structure%})

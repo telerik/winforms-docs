@@ -33,6 +33,16 @@ CTAControlName: TaskBoard
 
 * **Scrolling**: Every column offers a vertical scrollbar allowing the end users to scroll the task cards within the column. Using the Mouse wheel also scrolls the view. Shift + Mouse wheel scrolls the main element.
  
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms TaskBoard Homepage](https://www.telerik.com/products/winforms/task-board.aspx)
+* [Get Started with the Telerik UI for WinForms TaskBoard]({%slug task-board-getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Getting Started]({%slug task-board-getting-started%})

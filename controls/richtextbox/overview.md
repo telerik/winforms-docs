@@ -55,4 +55,14 @@ RadRichTextBox is a control that is able to display and edit rich-text content i
 
 * __Multi-region selection__ - the built-in multi-region support enables you to perform various operations for more than one selection simultaneously.
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms RichTextBox Homepage](https://www.telerik.com/products/winforms/richtextbox.aspx)
+* [Get Started with the Telerik UI for WinForms RichTextBox]({%slug winforms/richtextbox-(obsolete)/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 * __Import/export__ - with Telerik RadRichTextBox control you can load XAML, HTML, RTF, DocX (rich-text) or TXT (plain text) into the control, you can format and edit it and then export it back to any of the above formats or PDF.

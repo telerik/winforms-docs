@@ -33,6 +33,16 @@ __RadTabbedForm__ allows you to display tabs in the title bar, just like in most
 * Supports standard Windows title bar styles
 
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms TabbedForm Homepage](https://www.telerik.com/products/winforms/tabbedform.aspx)
+* [Get Started with the Telerik UI for WinForms TabbedForm]({%slug radtabbedform-getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Structure]({%slug radtabbedform-structure%})

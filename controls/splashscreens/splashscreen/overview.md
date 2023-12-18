@@ -28,6 +28,16 @@ The WinForms SplashScreen allows you to display a Telerik themed control that no
 
 * Rich set of themes: You can use the Telerik themes to modernize your UI or implement different designs that can be changed at runtime. 
  
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms Overlay Homepage](https://www.telerik.com/products/winforms/splashscreen.aspx)
+* [Get Started with the Telerik UI for WinForms Overlay]({%slug splashscreen-getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Custom Splash]({%slug splashscreen-custom-splash%}) 

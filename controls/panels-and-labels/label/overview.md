@@ -22,6 +22,16 @@ __RadLabel__ is a themeable alternative to the standard Windows Forms label cont
 
 ![WinForms RadLabel Overview](images/panels-and-labels-label-overview001.png)
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms Label Homepage](https://www.telerik.com/products/winforms/label.aspx)
+* [Get Started with the Telerik UI for WinForms Label]({%slug winforms/panels-and-labels/label/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 # See Also
 
 * [Design Time]({%slug winforms/panels-and-labels/label/design-time%})

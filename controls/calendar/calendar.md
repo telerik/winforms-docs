@@ -24,6 +24,16 @@ __RadCalendar__ supports all common features you would find in the standard Mont
 
 ![WinForms RadCalendar Overview](images/calendar-overview001.png)
 
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms Calendar Homepage](https://www.telerik.com/products/winforms/calendar.aspx)
+* [Get Started with the Telerik UI for WinForms Calendar]({%slug winforms/calendar/getting-started%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
 ## See Also
 
 * [Getting Started]({%slug winforms/calendar/getting-started%})
