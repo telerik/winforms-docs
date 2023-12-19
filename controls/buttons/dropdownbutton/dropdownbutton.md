@@ -24,7 +24,7 @@ Each of the items of __RadDropDownButton__ can be set to perform an action when 
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms DropDownButton Homepage](https://www.telerik.com/products/winforms/dropdownbutton.aspx)
+* [Telerik UI for WinForms DropDownButton Homepage](https://www.telerik.com/products/winforms/buttons.aspx)
 * [Get Started with the Telerik UI for WinForms DropDownButton]({%slug winforms/buttons/dropdownbutton/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
