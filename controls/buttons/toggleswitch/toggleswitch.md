@@ -23,7 +23,7 @@ __RadToggleSwitch__ is a control designed to represent two states: e.g. *true*/*
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms ToggleSwitch Homepage](https://www.telerik.com/products/winforms/toggleswitch.aspx)
+* [Telerik UI for WinForms ToggleSwitch Homepage](https://www.telerik.com/products/winforms/buttons.aspx)
 * [Get Started with the Telerik UI for WinForms ToggleSwitch]({%slug winforms/buttons/toggleswitch/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
