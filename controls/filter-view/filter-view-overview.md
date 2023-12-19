@@ -28,7 +28,7 @@ CTAControlName: FilterView
  
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms FilterView Homepage](https://www.telerik.com/products/winforms/filter-view.aspx)
+* [Telerik UI for WinForms FilterView Homepage](https://www.telerik.com/products/winforms/filterview.aspx)
 * [Get Started with the Telerik UI for WinForms FilterView]({%slug filter-view-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -36,7 +36,7 @@ CTAControlName: FilterView
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug filter-view-getting-started%})
 * [Structure]({%slug filter-view-structure%})
