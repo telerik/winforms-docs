@@ -30,7 +30,7 @@ Since **R2 2018** Telerik UI for WinForms suite offers **RadChat** control. This
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms Chat Homepage](https://www.telerik.com/products/winforms/chat.aspx)
+* [Telerik UI for WinForms Chat Homepage](https://www.telerik.com/products/winforms/conversational-ui.aspx)
 * [Get Started with the Telerik UI for WinForms Chat]({%slug winforms/chat/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
