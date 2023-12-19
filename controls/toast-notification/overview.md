@@ -44,7 +44,7 @@ Here are a few of the **RadToastNotificationManager**'s main features:
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms ToastNotification Homepage](https://www.telerik.com/products/winforms/toast-notification.aspx)
+* [Telerik UI for WinForms ToastNotification Homepage](https://www.telerik.com/products/winforms/toast-notification-manager.aspx)
 * [Get Started with the Telerik UI for WinForms ToastNotification]({%slug toast-notification-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
