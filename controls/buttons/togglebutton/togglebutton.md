@@ -23,7 +23,7 @@ __RadToggleButton__ is designed to manage states on your form. It shares many f
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms ToggleButton Homepage](https://www.telerik.com/products/winforms/togglebutton.aspx)
+* [Telerik UI for WinForms ToggleButton Homepage](https://www.telerik.com/products/winforms/buttons.aspx)
 * [Get Started with the Telerik UI for WinForms ToggleButton]({%slug winforms/buttons/togglebutton/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
