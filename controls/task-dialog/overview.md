@@ -37,7 +37,7 @@ Here are a few of the **RadTaskDialog**'s main features:
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms TaskDialog Homepage](https://www.telerik.com/products/winforms/task-dialog.aspx)
+* [Telerik UI for WinForms TaskDialog Homepage](https://www.telerik.com/products/winforms/taskdialog.aspx)
 * [Get Started with the Telerik UI for WinForms TaskDialog]({%slug task-dialog-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
