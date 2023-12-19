@@ -23,7 +23,7 @@ previous_url: panels-and-labels-collapsible-panel-overview
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms CollapsiblePanel Homepage](https://www.telerik.com/products/winforms/collapsiblepanel.aspx)
+* [Telerik UI for WinForms CollapsiblePanel Homepage](https://www.telerik.com/products/winforms/collapsablepanel.aspx)
 * [Get Started with the Telerik UI for WinForms CollapsiblePanel]({%slug winforms/panels-and-labels/collapsiblepanel/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -31,7 +31,7 @@ previous_url: panels-and-labels-collapsible-panel-overview
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/panels-and-labels/collapsiblepanel/structure%})
 * [Design Time]({%slug winforms/panels-and-labels/collapsiblepanel/design-time%})
