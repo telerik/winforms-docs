@@ -36,7 +36,7 @@ You can review below the [Key Features]({%slug winforms/dropdown-listcontrol-and
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms DropDownList Homepage](https://www.telerik.com/products/winforms/dropdownlist.aspx)
+* [Telerik UI for WinForms DropDownList Homepage](https://www.telerik.com/products/winforms/dropdown-and-list.aspx)
 * [Get Started with the Telerik UI for WinForms DropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -44,7 +44,7 @@ You can review below the [Key Features]({%slug winforms/dropdown-listcontrol-and
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/getting-started%})
 * [Structure]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/structure%})
