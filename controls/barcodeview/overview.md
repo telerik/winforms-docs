@@ -31,7 +31,7 @@ CTAControlName: BarcodeView
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms BarcodeView Homepage](https://www.telerik.com/products/winforms/barcodeview.aspx)
+* [Telerik UI for WinForms BarcodeView Homepage](https://www.telerik.com/products/winforms/barcode.aspx)
 * [Get Started with the Telerik UI for WinForms BarcodeView]({%slug barcodeview-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
