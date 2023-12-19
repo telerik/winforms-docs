@@ -42,7 +42,7 @@ The colors and styles of the progress indication come from the system and cannot
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms TaskbarButton Homepage](https://www.telerik.com/products/winforms/taskbar-button.aspx)
+* [Telerik UI for WinForms TaskbarButton Homepage](https://www.telerik.com/products/winforms/taskbarbutton.aspx)
 * [Get Started with the Telerik UI for WinForms TaskbarButton]({%slug taskbar-button-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
