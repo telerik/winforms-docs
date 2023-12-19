@@ -41,7 +41,6 @@ __RadTextBoxControl__ provides similar to the standard .NET Framework text box f
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms TextBoxControl Homepage](https://www.telerik.com/products/winforms/textboxcontrol.aspx)
 * [Get Started with the Telerik UI for WinForms TextBoxControl]({%slug winforms/editors/textboxcontrol/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -49,7 +48,7 @@ __RadTextBoxControl__ provides similar to the standard .NET Framework text box f
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
