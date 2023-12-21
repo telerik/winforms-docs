@@ -22,9 +22,10 @@ __RadDropDownButton__ provides a menu-like interface opened from a button.
 
 Each of the items of __RadDropDownButton__ can be set to perform an action when it is clicked. In addition, the items can contain other items, allowing you to create any hierarchy that fits your needs of sub-items. 
 
+__RadDropDownButton__ is visually indistinguishable from __RadSplitButton__, but there is an important programmatic distinction. On __RadSplitButton__ the __DefaultItem__ property indicates the item whose __Click__ event should be triggered when the button is clicked. If you want a button that does something when clicked as well as when a selection is made from the menu, you should use a __RadSplitButton__ instead of a __RadDropDownButton__.
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms DropDownButton Homepage](https://www.telerik.com/products/winforms/dropdownbutton.aspx)
+* [Telerik UI for WinForms DropDownButton Homepage](https://www.telerik.com/products/winforms/buttons.aspx)
 * [Get Started with the Telerik UI for WinForms DropDownButton]({%slug winforms/buttons/dropdownbutton/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -32,4 +33,4 @@ Each of the items of __RadDropDownButton__ can be set to perform an action when 
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-__RadDropDownButton__ is visually indistinguishable from __RadSplitButton__, but there is an important programmatic distinction. On __RadSplitButton__ the __DefaultItem__ property indicates the item whose __Click__ event should be triggered when the button is clicked. If you want a button that does something when clicked as well as when a selection is made from the menu, you should use a __RadSplitButton__ instead of a __RadDropDownButton__.
+

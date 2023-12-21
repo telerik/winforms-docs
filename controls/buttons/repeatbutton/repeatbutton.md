@@ -19,3 +19,12 @@ __RadRepeatButton__ provides press-and-hold functionality. While the mouse butt
 {% endif %}
 
 ![WinForms RadRepeatButton Overview](images/buttons-repeatbutton-overview001.gif)
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms RepeatButton Homepage](https://www.telerik.com/products/winforms/buttons.aspx)
+* [Get Started with the Telerik UI for WinForms RepeatButton]({%slug winforms/buttons/repeatbutton/working-with-radrepeatbutton%})
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)

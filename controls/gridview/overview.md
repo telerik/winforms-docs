@@ -76,7 +76,7 @@ __RadGridView__ is a grid component developed on top of [Telerik Presentation Fr
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-#№ See Also
+## See Also
 
  * [Getting started]({%slug winforms/gridview/getting-started%})
  * [Key features]({%slug winforms/gridview/fundamentals/key-features%})
