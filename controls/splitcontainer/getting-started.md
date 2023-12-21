@@ -35,7 +35,7 @@ In this example we will position several **RadControls** in a specific layout us
 * [Design Time]({%slug winforms/splitcontainer/design-time%})	
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms SplitContainer Component](https://www.telerik.com/products/winforms/splitcontainer.aspx)
+* [Telerik UI for WinForms SplitContainer Component](https://www.telerik.com/products/winforms/split-container.aspx)
 * [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
 * [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
 * [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
