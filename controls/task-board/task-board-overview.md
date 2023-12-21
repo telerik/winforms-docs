@@ -35,7 +35,7 @@ CTAControlName: TaskBoard
  
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms TaskBoard Homepage](https://www.telerik.com/products/winforms/task-board.aspx)
+* [Telerik UI for WinForms TaskBoard Homepage](https://www.telerik.com/products/winforms/taskboard.aspx)
 * [Get Started with the Telerik UI for WinForms TaskBoard]({%slug task-board-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -43,7 +43,7 @@ CTAControlName: TaskBoard
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug task-board-getting-started%})
 * [Structure]({%slug task-board-structure%})

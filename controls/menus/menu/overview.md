@@ -48,7 +48,7 @@ In addition to all the capabilities of the standard Windows Forms MenuStrip cont
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms Menu Homepage](https://www.telerik.com/products/winforms/menu.aspx)
+* [Telerik UI for WinForms Menu Homepage](https://www.telerik.com/products/winforms/menus.aspx)
 * [Get Started with the Telerik UI for WinForms Menu]({%slug winforms/menus/menu/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -56,7 +56,7 @@ In addition to all the capabilities of the standard Windows Forms MenuStrip cont
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/menus/menu/structure%})	
 * [Getting Started]({%slug winforms/menus/menu/getting-started%})	

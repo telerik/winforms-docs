@@ -31,7 +31,7 @@ As to the editing capabilities, **RadPropertyGrid** allows you to control the pr
         
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms PropertyGrid Homepage](https://www.telerik.com/products/winforms/propertygrid.aspx)
+* [Telerik UI for WinForms PropertyGrid Homepage](https://www.telerik.com/products/winforms/property-grid.aspx)
 * [Get Started with the Telerik UI for WinForms PropertyGrid]({%slug winforms/propertygrid/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})

@@ -34,7 +34,7 @@ Having all these sizing modes, combined with the **Orientation** setting, availa
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms SplitContainer Homepage](https://www.telerik.com/products/winforms/splitcontainer.aspx)
+* [Telerik UI for WinForms SplitContainer Homepage](https://www.telerik.com/products/winforms/split-container.aspx)
 * [Get Started with the Telerik UI for WinForms SplitContainer]({%slug winforms/splitcontainer/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -42,7 +42,7 @@ Having all these sizing modes, combined with the **Orientation** setting, availa
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/splitcontainer/structure%})	
 * [Getting Started]({%slug winforms/splitcontainer/getting-started%})	

@@ -23,7 +23,7 @@ __RadHSrollBar__ and __RadVScrollBar__ are themeable alternatives to the standar
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms ScrollBar Homepage](https://www.telerik.com/products/winforms/scrollbar.aspx)
+* [Telerik UI for WinForms ScrollBar Homepage](https://www.telerik.com/products/winforms/radvscrollbar.aspx)
 * [Get Started with the Telerik UI for WinForms ScrollBar]({%slug winforms/track-and-status-controls/scrollbar/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -31,7 +31,7 @@ __RadHSrollBar__ and __RadVScrollBar__ are themeable alternatives to the standar
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/track-and-status-controls/scrollbar/control-element-structure%})	
 * [Getting Started]({%slug winforms/track-and-status-controls/scrollbar/getting-started%})	

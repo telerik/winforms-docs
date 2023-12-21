@@ -28,7 +28,7 @@ previous_url: menus-application-menu-overview
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms ApplicationMenu Homepage](https://www.telerik.com/products/winforms/application-menu.aspx)
+* [Telerik UI for WinForms ApplicationMenu Homepage](https://www.telerik.com/products/winforms/applicationmenu.aspx)
 * [Get Started with the Telerik UI for WinForms ApplicationMenu]({%slug winforms/menus/applicationmenu/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})

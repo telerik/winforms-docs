@@ -28,7 +28,7 @@ __RadButton__ is a [themable] ({%slug winforms/buttons/button/customizing-appear
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms Button Homepage](https://www.telerik.com/products/winforms/button.aspx)
+* [Telerik UI for WinForms Button Homepage](https://www.telerik.com/products/winforms/buttons.aspx)
 * [Get Started with the Telerik UI for WinForms Button]({%slug winforms/buttons/button/getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
@@ -36,7 +36,7 @@ __RadButton__ is a [themable] ({%slug winforms/buttons/button/customizing-appear
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/buttons/button/getting-started%})
 * [Structure]({%slug winforms/buttons/button/structure%})
