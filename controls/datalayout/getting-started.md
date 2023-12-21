@@ -252,3 +252,14 @@ Press __F5__ to run the project and you should see the following:
  * [Change the editor to RadDropDownList]({%slug  winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist%})
  * [Customizing Appearance ]({%slug winforms/raddatalayout/customizing-appearance%})
  * [Eliminate the Last Item's stretching in DataLayout]({%slug stretched-last-item-in-datalayout%})
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms DataLayout Component](https://www.telerik.com/products/winforms/datalayout.aspx)
+* [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
+* [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
+* [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
+* [Telerik UI for WinForms Visual Studio Templates](https://docs.telerik.com/devtools/winforms/visual-studio-integration/visual-studio-templates)
+* [Deploy Telerik UI for WinForms Applications](https://docs.telerik.com/devtools/winforms/deployment-and-distribution/application-deployment)
+* [Telerik UI for WinForms Virtual Classroom(Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/telerik-ui-for-winforms)
+* [Telerik UI for WinForms License Agreement)](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s)
+

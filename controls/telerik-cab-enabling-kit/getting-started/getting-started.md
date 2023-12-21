@@ -48,3 +48,14 @@ Here is how to start building CAB application in just a few steps, by using the 
 9\. Now you can start using Telerik CAB Enabling Kit.
 
 ![WinForms Start Using Telerik CAB Enabling Kit](images/telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit004.png)
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms Getting-started Component](https://www.telerik.com/products/winforms/getting-started.aspx)
+* [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
+* [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
+* [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
+* [Telerik UI for WinForms Visual Studio Templates](https://docs.telerik.com/devtools/winforms/visual-studio-integration/visual-studio-templates)
+* [Deploy Telerik UI for WinForms Applications](https://docs.telerik.com/devtools/winforms/deployment-and-distribution/application-deployment)
+* [Telerik UI for WinForms Virtual Classroom(Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/telerik-ui-for-winforms)
+* [Telerik UI for WinForms License Agreement)](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s)
+

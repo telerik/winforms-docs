@@ -72,3 +72,14 @@ This way when __Submit__ is pressed the name will be displayed in the control's 
 # See Also
 
 * [How to Use RadPopupEditor as a Custom Editor in RadGridView]({%slug use-popup-editor-as-gridview-editor%})
+
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms PopupEditor Component](https://www.telerik.com/products/winforms/popupeditor.aspx)
+* [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
+* [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
+* [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
+* [Telerik UI for WinForms Visual Studio Templates](https://docs.telerik.com/devtools/winforms/visual-studio-integration/visual-studio-templates)
+* [Deploy Telerik UI for WinForms Applications](https://docs.telerik.com/devtools/winforms/deployment-and-distribution/application-deployment)
+* [Telerik UI for WinForms Virtual Classroom(Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/telerik-ui-for-winforms)
+* [Telerik UI for WinForms License Agreement)](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s)
+
