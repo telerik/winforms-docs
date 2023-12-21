@@ -11,7 +11,7 @@ previous_url: pageview-stripview-getting-started
 
 # Getting Started with WinForms Strip View
 
-In this tutorial we are going to create a simple **RadPageView** in PageViewMode.*Strip*.
+In this tutorial, we are going to create a simple **RadPageView** in PageViewMode.*Strip*.
 
 In order to achieve this, you should follow these steps:
 
@@ -44,14 +44,3 @@ In order to achieve this, you should follow these steps:
 * [Scrolling and Overflow (strip buttons)]({%slug winforms/pageview/stripview/scrolling-and-overflow-(strip-buttons)%})	
 * [Strip Element Properties]({%slug winforms/pageview/stripview/strip-element-properties%})	
 * [New Item]({%slug winforms/pageview/stripview/new-item%})	
-
-## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms Stripview Component](https://www.telerik.com/products/winforms/stripview.aspx)
-* [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
-* [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
-* [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
-* [Telerik UI for WinForms Visual Studio Templates](https://docs.telerik.com/devtools/winforms/visual-studio-integration/visual-studio-templates)
-* [Deploy Telerik UI for WinForms Applications](https://docs.telerik.com/devtools/winforms/deployment-and-distribution/application-deployment)
-* [Telerik UI for WinForms Virtual Classroom(Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/telerik-ui-for-winforms)
-* [Telerik UI for WinForms License Agreement)](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s)
-
