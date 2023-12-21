@@ -63,7 +63,6 @@ End Sub
 * [End-user functionality]({%slug winforms/datafilter/end-user-functionality%})
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms DataFilter Component](https://www.telerik.com/products/winforms/datafilter.aspx)
 * [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
 * [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
 * [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
