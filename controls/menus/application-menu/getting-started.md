@@ -64,7 +64,7 @@ End Sub
 * [Populating with Data]({%slug winforms/menus/applicationmenu/populating-with-data%})
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms ApplicationMenu Component](https://www.telerik.com/products/winforms/application-menu.aspx)
+* [Telerik UI for WinForms ApplicationMenu Component](https://www.telerik.com/products/winforms/applicationmenu.aspx)
 * [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
 * [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
 * [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
