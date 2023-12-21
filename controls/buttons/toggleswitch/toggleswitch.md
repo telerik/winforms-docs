@@ -31,6 +31,17 @@ __RadToggleSwitch__ is a control designed to represent two states: e.g. *true*/*
 * [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
 * [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
+
+## Telerik UI for WinForms Additional Resources
+* [Telerik UI for WinForms Product Overview](https://www.telerik.com/products/winforms.aspx)
+* [Telerik UI for WinForms Blog](https://www.telerik.com/blogs/desktop-winforms)
+* [Telerik UI for WinForms Videos](https://www.telerik.com/videos/product/winforms)
+* [Telerik UI for WinForms Roadmap](https://www.telerik.com/support/whats-new/winforms/roadmap)
+* [Telerik UI for WinForms Pricing](https://www.telerik.com/purchase/individual/winforms.aspx)
+* [Telerik UI for WinForms Code Library](https://www.telerik.com/support/code-library/winforms)
+* [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
+* [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
+
 # See Also
 
 * [How to Convert a GridViewCheckBoxColumn to a Custom ToggleSwitch Column]({%slug convert-checkboxcolumn-to-toggleswitchcolumn%})
