@@ -76,7 +76,7 @@ End Sub
 This is it! Now the change in the selection of the __RadDropDownList__ instance will be reflected on __RadStatusStrip__.
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms DropDownList Component](https://www.telerik.com/products/winforms/dropdownlist.aspx)
+* [Telerik UI for WinForms DropDownList Component](https://www.telerik.com/products/winforms/dropdown-and-list.aspx)
 * [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
 * [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
 * [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
