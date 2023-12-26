@@ -9,11 +9,10 @@ res_type: kb
 ---
 
 ## Environment
-
-| Property | Value              |
-| -------- | ------------------ |
-| Product  | RadPageView        |
-| Version  | [current version]  |
+ 
+|Product Version|Product|Author|
+|----|----|----|
+|2023.2.1114|UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
@@ -25,13 +24,25 @@ To collapse all subpage items in RadPageView Navigation Mode with Hierarchy, fol
 
 1. Add the following code snippet in the Form Load event:
 
-```csharp
+````C#
+
 RadPageViewNavigationViewElement navigationElement = this.radPageView1.ViewElement as RadPageViewNavigationViewElement;
 foreach (RadPageViewNavigationViewItem item in navigationElement.Items)
 {
     item.IsExpanded = false;
 }
-```
+
+````
+````VB.NET
+
+Dim navigationElement As RadPageViewNavigationViewElement = TryCast(Me.radPageView1.ViewElement, RadPageViewNavigationViewElement)
+
+For Each item As RadPageViewNavigationViewItem In navigationElement.Items
+    item.IsExpanded = False
+Next
+
+
+````
 
 2. Run your application.
 
