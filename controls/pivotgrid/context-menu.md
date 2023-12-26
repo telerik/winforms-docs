@@ -52,12 +52,14 @@ End Sub
 ````C#
 public class MyPivotGridContextMenu : PivotGridContextMenu
 {
-    public MyPivotGridContextMenu(RadPivotGrid pivotGrid)
-        : base(pivotGrid.PivotGridElement)
-    { }
+    public MyPivotGridContextMenu(RadPivotGrid pivotGrid) : base(pivotGrid.PivotGridElement)
+    {
+    }
+
     protected override void AdjustItemsForContext()
     {
         base.AdjustItemsForContext();
+
         if (this.Context is PivotCellElement)
         {
             RadMenuItem customMenuItem = new RadMenuItem();
@@ -68,9 +70,17 @@ public class MyPivotGridContextMenu : PivotGridContextMenu
             this.Items.Add(customMenuItem);
         }
     }
+
     private void customMenuItem_Click(object sender, EventArgs e)
     {
-        RadMessageBox.Show("Export to Excel");
+        RadMenuItem item = sender as RadMenuItem;
+
+        if (this.Context is PivotCellElement)
+        {
+            PivotCellElement pivotCell = this.Context as PivotCellElement;
+            RadPivotGrid pivot = pivotCell.ElementTree.Control as RadPivotGrid;
+            RadMessageBox.Show("Export to Excel");
+        }
     }
 }
 
@@ -78,22 +88,32 @@ public class MyPivotGridContextMenu : PivotGridContextMenu
 ````VB.NET
 Public Class MyPivotGridContextMenu
     Inherits PivotGridContextMenu
-    Public Sub New(pivotGrid As RadPivotGrid)
+
+    Public Sub New(ByVal pivotGrid As RadPivotGrid)
         MyBase.New(pivotGrid.PivotGridElement)
     End Sub
+
     Protected Overrides Sub AdjustItemsForContext()
         MyBase.AdjustItemsForContext()
+
         If TypeOf Me.Context Is PivotCellElement Then
-            Dim customMenuItem As New RadMenuItem()
+            Dim customMenuItem As RadMenuItem = New RadMenuItem()
             customMenuItem.Text = "Export to Excel"
-            Dim separator As New RadMenuSeparatorItem()
+            Dim separator As RadMenuSeparatorItem = New RadMenuSeparatorItem()
             Me.Items.Add(separator)
-            AddHandler customMenuItem.Click, AddressOf customMenuItem_Click
+            customMenuItem.Click += AddressOf customMenuItem_Click
             Me.Items.Add(customMenuItem)
         End If
     End Sub
-    Private Sub customMenuItem_Click(sender As Object, e As EventArgs)
-        RadMessageBox.Show("Export to Excel")
+
+    Private Sub customMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
+
+        If TypeOf Me.Context Is PivotCellElement Then
+            Dim pivotCell As PivotCellElement = TryCast(Me.Context, PivotCellElement)
+            Dim pivot As RadPivotGrid = TryCast(pivotCell.ElementTree.Control, RadPivotGrid)
+            RadMessageBox.Show("Export to Excel")
+        End If
     End Sub
 End Class
 
