@@ -59,7 +59,7 @@ descriptor.GroupNames.Add("ShipName", ListSortDirection.Ascending);
 descriptor.Aggregates.Add("Count(ShipName)");
 descriptor.Aggregates.Add("Max(Freight)");
 descriptor.Aggregates.Add("Avg(Freight)");
-descriptor.Format = "The ship {1} has {2} item(s) with maximum freight {3} and avarage freight of {4:c2} per ship.";
+descriptor.Format = "The ship {1} has {2} item(s) with maximum freight {3} and average freight of {4:c2} per ship.";
 this.radGridView1.GroupDescriptors.Add(descriptor);
 
 ````
@@ -69,7 +69,7 @@ descriptor.GroupNames.Add("ShipName", ListSortDirection.Ascending)
 descriptor.Aggregates.Add("Count(ShipName)")
 descriptor.Aggregates.Add("Max(Freight)")
 descriptor.Aggregates.Add("Avg(Freight)")
-descriptor.Format = "The ship {1} has {2} item(s) with maximum freight {3} and avarage freight of {4:c2} per ship."
+descriptor.Format = "The ship {1} has {2} item(s) with maximum freight {3} and average freight of {4:c2} per ship."
 Me.RadGridView1.GroupDescriptors.Add(descriptor)
 
 ````
