@@ -1,9 +1,9 @@
 ---
-title: How to arrange elements in custom RadTreeView node
-description: How to arrange several elements in custom RadTreeView node .
+title: How to arrange elements in a custom RadTreeView node
+description: How to arrange several elements in a custom RadTreeView node.
 type: how-to
 page_title: How to arrange elements in custom RadTreeView node
-slug: treeview-different-custom-nodes
+slug: treeview-custom-node-arrange
 position: 0 
 tags: custom nodes, treeview , arrangeoverride
 ticketid: 1605661
