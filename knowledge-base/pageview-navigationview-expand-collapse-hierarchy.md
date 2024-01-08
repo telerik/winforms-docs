@@ -12,7 +12,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2023.2.1114|UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2023.3.1114|UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
