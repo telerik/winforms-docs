@@ -13,12 +13,12 @@ res_type: kb
 |----|----|----|
 |2023.3.1114|RadTreeView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
-# Description
+## Description
 In the following tutorial, we will demonstrate how to drag-drop text from an external source while moving the cursor to the desired drop position.
 
 ![syntaxeditor-dragdrop-cursor-position 001](images/syntaxeditor-dragdrop-cursor-position.gif)
 
-# Solution
+## Solution
 To achieve this, you can follow the steps below:
 
 1. Set the `AllowDrop` property of the `RadSyntaxEditor` control to `true`.
