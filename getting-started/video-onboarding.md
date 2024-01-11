@@ -24,12 +24,12 @@ Additionally, you will learn about other important Telerik UI for WinForms built
 ## Course Overview
 
 The next video shares a glimpse of the format and structure of the whole training and provides a brief overview of what will be accomplished through the steps. 
-<iframe width="560" height="315" src="https://learn.telerik.com/learn/course/17/play/162/course-overview" title="Telerik UI for WinForms - Overview of the Onboarding Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=OXpwQwGta8c" title="Telerik UI for WinForms - Overview of the Onboarding Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Project Overview
 
 This video explains the details around the project you will be modifying&mdash;what it is, what needs to be added, and what the accomplished state will look like.
-<iframe width="560" height="315" src="https://learn.telerik.com/learn/course/17/play/442/application-prerequisites" title="Telerik UI for WinForms - Project Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=HW3_3WL092M" title="Telerik UI for WinForms - Project Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Onboarding Modules
 
