@@ -20,6 +20,8 @@ By default, the application title in the RadNotifyIcon balloon notifications wil
 
 ![notifyicon-change-application-name 001](images/notifyicon-change-application-name_1.png)
 
+## Solution
+
 To change the application name for balloon notifications in RadNotifyIcon for WinForms, you need to modify the `AssemblyTitle` attribute in the `AssemblyInfo.cs` file of your project. Follow these steps:
 
 1. In your project, expand the Properties item.
