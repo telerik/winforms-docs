@@ -90,7 +90,15 @@ Here is the result of the following code:
 
 ![WinForms RadSeparator Customization](images/panels-and-labels-separator003.png)
 
-# See Also
+## Telerik UI for WinForms Learning Resources
+* [Telerik UI for WinForms Separator Homepage](https://www.telerik.com/products/winforms/separator.aspx)
+* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
+* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
+
+## See Also
 
 * [Panel]({%slug winforms/panels-and-labels/panel%})
 * [Collapsible Panel]({%slug winforms/panels-and-labels/collapsiblepanel%})

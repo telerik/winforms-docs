@@ -11,7 +11,7 @@ previous_url: pageview-stripview-getting-started
 
 # Getting Started with WinForms Strip View
 
-In this tutorial we are going to create a simple **RadPageView** in PageViewMode.*Strip*.
+In this tutorial, we are going to create a simple **RadPageView** in PageViewMode.*Strip*.
 
 In order to achieve this, you should follow these steps:
 

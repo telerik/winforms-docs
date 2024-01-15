@@ -24,3 +24,5 @@ To use the __RadSchedulerNavigator__ control you should add it to your form and 
 * [Views]({%slug winforms/scheduler/views/overview-and-structure%})
 * [Visual Style Builder]({%slug winforms/themes/visual-style-builder%})
 * [Default Themes]({%slug winforms/themes/using-default-themes%})
+
+

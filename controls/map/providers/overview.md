@@ -19,6 +19,6 @@ The __RadMap__ control needs a provider of imagery data in order to display a ma
 
 >note If your application targets .Net Framework version below 4.7, some providers will require explicitly to choose __TLS 1.2 SecurityProtocol__. This protocol can be set through the System.Net.ServicePointManager.**SecurityProtocol** property. More information is available here: [Transport Layer Security (TLS) best practices with the .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls).
 
-# See Also
+## See Also
 
 * [How to Create Map Image Silently]({%slug create-map-image-silently%})

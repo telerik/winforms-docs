@@ -11,7 +11,7 @@ previous_url: telerik-cab-enabling-kit-getting-started
 
 # Getting Started with WinForms Telerik CAB Enabling Kit
 
-Telerik CAB Enabling Kit gives you several Composite UI Application Block (CAB) Extensions for building smart client application with CAB and Telerik UI for WinForms. It allows developers take the full advantage of the flexibility that the modular structure of CAB architectural framework provides. Using Telerik CAB Enabling Kit for creating separate UI modules for Windows applications speeds up the development improves testability and reduces costs.
+Telerik CAB Enabling Kit gives you several Composite UI Application Block (CAB) Extensions for building smart client applications with CAB and Telerik UI for WinForms. It allows developers to take full advantage of the flexibility that the modular structure of CAB architectural framework provides. Using Telerik CAB Enabling Kit for creating separate UI modules for Windows applications speeds up the development improves testability and reduces costs.
 
 ## Start using Telerik CAB Enabling Kit (via NuGet package)
 
