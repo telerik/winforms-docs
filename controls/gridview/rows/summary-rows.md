@@ -181,6 +181,40 @@ Me.RadGridView1.SummaryRowsTop.Add(summaryRowItem)
 
 ![WinForms RadGridView Summary rows when groupped](images/gridview-rows-summary-rows004.png)
 
+As of the **R1 2024** version, the template in **RadGridView** offers the **ShowCollapsedGroupSummaries** property. Its value indicates whether summary rows will be shown for each group when they are **collapsed**. The property is only relevant when the grid is grouped.
+
+![WinForms RadGridView Summary rows when group are collapsed](images/gridview-rows-summary-rows010.png)
+
+In scenario in which we have nested grouping, the group summary row will appear for each nested group. To show the group summary row on a specific group, we can set the same ShowCollapsedGroupSummaries property which was expose on a group row level. It has higher priority than the ShowCollapsedGroupSummaries that comes from the template. The group row ShowCollapsedGroupSummaries property can be set in the CreateRowInfo event handler.
+
+{{source=..\SamplesCS\GridView\Rows\SummaryRows.cs region=summaryGroup}} 
+{{source=..\SamplesVB\GridView\Rows\SummaryRows.vb region=summaryGroup}} 
+
+````C#
+private void RadGridView1_CreateRowInfo(object sender, GridViewCreateRowInfoEventArgs e)
+{
+    if (e.RowInfo is GridViewGroupRowInfo)
+    {
+        GridViewGroupRowInfo groupRowInfo = e.RowInfo as GridViewGroupRowInfo;      
+        groupRowInfo.ShowCollapsedGroupSummaries = groupRowInfo.GroupLevel == 0;
+    }
+}
+
+````
+````VB.NET
+Private Sub RadGridView1_CreateRowInfo(ByVal sender As Object, ByVal e As GridViewCreateRowInfoEventArgs)
+    If TypeOf e.RowInfo Is GridViewGroupRowInfo Then
+        Dim groupRowInfo As GridViewGroupRowInfo = TryCast(e.RowInfo, GridViewGroupRowInfo)
+        groupRowInfo.ShowCollapsedGroupSummaries = groupRowInfo.GroupLevel = 0
+    End If
+End Sub
+
+````
+
+{{endregion}} 
+
+![WinForms RadGridView Summary rows when group are collapsed](images/gridview-rows-summary-rows011.png)
+
 ## Summary rows in a hierarchical RadGridView
 
 You can add summary rows in hierarchical views. They are calculated for the child rows in the current view.   
