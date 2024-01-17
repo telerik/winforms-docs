@@ -1,96 +1,109 @@
-****---
-title: Overview
-page_title: Columns - RadGridView
-description: The Columns in RadGridView are the fundamental meta-objects for data source representation.
-slug: winforms/gridview/columns
-tags: columns
+---
+title: Column
+page_title: Column Events
+description: Learn more about the column events of Telerik's {{ site.framework_name }} DataGrid that you can subscribe to declaratively or at runtime.
+slug: gridview-column-events
+tags: column, events
 published: True
-position: 0
-previous_url: gridview-columns
+position: 6
 ---
 
-# Columns
+# Column Events
 
-The __Columns__ in **RadGridView** are the fundamental meta-objects for data source representation. They provide the structure according to which the __rows__ are composed. The term __cell__ is often used interchangeably with __column__, although many consider it more correct to use __cell__ to refer specifically to the single item that refers to a specific row and column. [Rows]({%slug winforms/gridview/rows/gridviewrowinfo%}) and [Cells]({%slug winforms/gridview/cells/gridviewcellinfo%}) topics are quire useful on this topic).
+In this article we discuss RadGridView events related to its **columns**:
 
-This chapter gives you detailed information about the RadGridView columns. The covered topics are:
+* [AutoGeneratingColumn](#autogeneratingcolumn)
 
-* [GridViewColumn Base Class]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
+* [CurrentColumnChanged](#currentcolumnchanged)
 
-* [GridViewDataColumn Base Class]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
+* [ColumnWidthChanging](#columnwidthchanging)
 
-* __Column types:__
+* [ColumnWidthChanged](#columnwidthchanged)
 
-  * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
+* [ColumnChooserCreated](#columnwidthchanged)
 
-  * [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
+## AutoGeneratingColumn
 
-  * [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%})
+When you set RadGridView's **AutoGenerateColumns** property to **True** (the default value), RadGridView creates a column for each public property of the bound objects and the **AutoGeneratingColumn** event is triggered for each of those columns.
 
-  * [GridViewColorColumn]({%slug winforms/gridview/columns/column-types/gridviewcolorcolumn%})
+You can use the following properties of the **GridViewAutoGeneratingColumnEventArgs** class:
 
-  * [GridViewComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcomboboxcolumn%})
+* **Cancel**: Setting this to **True** cancels the creation of the current column.
 
-  * [GridViewCommandColumn]({%slug winforms/gridview/columns/column-types/gridviewcommandcolumn%})
+* **Column**: The column that is being generated.
 
-  * [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%})
-  
-  * [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%})
-  
-  * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
-  
-  * [GridViewImageColumn]({%slug winforms/gridview/columns/column-types/gridviewimagecolumn%})
-  
-  * [GridViewMaskBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmaskboxcolumn%})
-  
-  * [GridViewMultiComboBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn%})
-  
-  * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
+The following example demonstrates how you can cancel the creation of a specific column:
 
-  * [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%})
-  
-  * [GridViewRatingColumn]({%slug winforms/gridview/columns/column-types/gridviewratingcolumn%})
+{{source=..\SamplesCS\GridView\Columns\Columns.cs region=AutoGeneratingColumn}} 
+{{source=..\SamplesVB\GridView\Columns\Columns.vb region=AutoGeneratingColumn}} 
 
-* [Generating columns ]({%slug winforms/gridview/columns/generating-columns%}) - define columns programmatically or automatically (Auto-generated and manually added columns)
-            
+````C#
+private void RadGridView1_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
+{
+    if (e.Column.HeaderText  == "CreationDate")
+    {
+        e.Cancel = true;
+    }
+}
 
-* [Data type conversion ]({%slug winforms/gridview/columns/converting-data-types%}) – convert your data using the data conversion layer
-            
+````
+````VB.NET
 
-* [Accessing and Iterating through Columns ]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%}) – accessing and iterating through columns and hierarchical columns
-            
+Private Sub RadGridView1_AutoGeneratingColumn(ByVal sender As Object, ByVal e As GridViewAutoGeneratingColumnEventArgs)
+    If e.Column.HeaderText = "CreationDate" Then
+        e.Cancel = True
+    End If
+End Sub
 
-* [Column expressions ]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%}) - find out more about the supported aggregate functions and calculated columns
-            
+````
 
-* [Resizing Columns ]({%slug winforms/gridview/columns/resizing-columns-programatically%}) – everything about the different sizing modes
-            
+{{endregion}}
 
-* [Pinned columns ]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%}) - find out how to pin/unpin columns or how to disable this functionality
-            
+>Changing the DataType property of the column will not be respected in the AutoGeneratingColumn event handler.
 
-* [Column Chooser ]({%slug winforms/gridview/columns/working-with-columnchooser%}) - find out how to hide or show columns
-            
+## CurrentColumnChanged
 
-* [Column text properties ]({%slug winforms/gridview/columns/data-formatting%})
-  - __WrapText__: Wraps text if the text is wider than the column width.
-  - __TextAlignment__: Defines the text alignment.
+This event will be triggered when the CurrentColumn property is changed. Through the __CurrentColumnChangedEventArgs__ of its event handler you can access the following:
 
-# See Also
+* __CurrentColumn__: Gets the current column.
 
-* [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
+* __NewColumn__: Gets the new column.
 
-* [Calculated Columns (Column Expressions)]({%slug winforms/gridview/columns/calculated-columns-(column-expressions)%})
+## ColumnWidthChanging
 
-* [Converting Data Types]({%slug winforms/gridview/columns/converting-data-types%})
+A __ColumnWidthChanging__ event occurs when you resize a column programmatically or through the UI.
 
-* [Data Formatting]({%slug winforms/gridview/columns/data-formatting%})
+>You can resize columns only if __AllowColumnResize__ is set to __True__ (which is the default value). 
 
-* [Generating Columns]({%slug winforms/gridview/columns/generating-columns%})
+Through the __ColumnWidthChangingEventArgs__ of its event handler you can access the following:
 
-* [GridViewColumn]({%slug winforms/gridview/columns/column-types/gridviewcolumn%})
+* __Cancel__: Setting this to **True** cancels the resizing of the current column.
 
-* [GridViewDataColumn]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
+* __Column__: The column that is being resized.
 
-* [Pinning and Unpinning Columns]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
+* __ColumnIndex__: Gets the index of the column whose width is changing.
+
+* __NewWidth__: Gets or sets the new width for the column.
+
+>If you cancel __ColumnWidthChanging__, the column's width does not change and the __ColumnWidthChanged__ event is not triggered. 
+
+## ColumnWidthChanged
+
+The __ColumnWidthChanged__ event occurs after the resize of a column is complete. It also triggers when the user double-clicks the header cell gripper to resize the column to fit its content.
+
+You can access the following properties of the __ColumnWidthChangedEventArgs__ object: 
+
+* __ColumnIndex__: Gets the index of the column whose width is changing.
+
+## ColumnChooserCreated
+
+The __ColumnChooserCreated__ event occurs when a column is hidden and added to the column chooser form.
+
+You can access the following properties of the __ColumnChooserCreatedEventArgs__ object:
+
+* __ColumnChooser__: Gets or sets the GridViewColumnChooser form.
+
+
+
+
 
