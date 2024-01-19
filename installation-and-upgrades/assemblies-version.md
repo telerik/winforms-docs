@@ -14,26 +14,9 @@ After installing the Telerik UI for WinForms suite, you will notice the followin
 
 ![assemblies-version 001](images/assemblies-version001.png)
 
->caution We strive to distribute assemblies only for the currently supported .NET versions. If a certain .NET version is not available as a separate Bin folder, check if the respective version is still officially supported: [.NET and .NET Core Support Policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core).
-
-We do provide several builds of our assemblies - one for **.NET 2.0**, one for **.NET 4.0** or higher, one for **.NET Core** (Since **R1 2020** .NET Core 3.1 is also supported), one for **.NET 5.0** (Since **R2 2020** .NET Core 5 is also supported) and one for **.NET 6** (Since **R2 2021** .NET 6 is also supported). The suffix (**.20**, **.40**, etc.) indicates the assembly version. 
-
->caution As of R3 2022 Telerik UI for WinForms suite offers .NET 4.8 distribution and the .NET 2.0 distribution is removed. 
-
-![assemblies-version 004](images/assemblies-version004.png)
-
->caution As of **R3 2022 SP2** Telerik UI for WinForms suite offers **.NET 7** distribution. 
-
-![assemblies-version 005](images/assemblies-version005.png)
-
-
 Right-click over the .dll file and select *Properties*. Then, navigate to the *Details* tab:
 
 ![assemblies-version 002](images/assemblies-version002.png)
-
-You should pick up this version of the assemblies to refer in your project that corresponds to the .NET Framework that you are using in your project and that is available on your computer. 
-
-![assemblies-version 003](images/assemblies-version003.png)
 
 
 
