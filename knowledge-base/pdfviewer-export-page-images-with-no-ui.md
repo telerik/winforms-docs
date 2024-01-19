@@ -13,7 +13,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2023.3.1106|RadPdfViewer for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
+|2023.3.1114|RadPdfViewer for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
  
 ## Description
 
@@ -25,10 +25,10 @@ res_type: kb
 
 ## Solution 
 
-**RadPdfViewer** exposes two methods that allows you to export singe page or the entire document to an image:
+**RadPdfViewer** exposes two methods that allow you to export a single page or the entire document to an image:
 
-* **ExportPage**: exports the specified page to an image.
-* **ExportPages**: exports the entire document to an image.
+* **ExportPage**: Exports the specified page to an image.
+* **ExportPages**: Exports the entire document to an image.
 
 The ExportPage method will be used in the following code snippet:
 
