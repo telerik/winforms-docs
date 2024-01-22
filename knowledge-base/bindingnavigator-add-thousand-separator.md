@@ -15,18 +15,26 @@ res_type: kb
 |2023.3.1114|UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 # Description
-I would like to display a thousand separator in the RadBindingNavigator control for WinForms. Currently, I have successfully added a thousand separator to the CountItem part, but I also want to include it in the PositionItem part where the user can enter a number to scroll to another row.
+In this tutorial, we will demonstrate how we can add a thousand separators in the current page input text box.
 
 # Solution
 To achieve this, you can subscribe to the `TextChanged` event of the `CurrentNumberTextBox` and modify the text by adding a thousand separator. Here's an example of how you can do this:
 
 1. Subscribe to the `TextChanged` event of the `CurrentNumberTextBox`:
-```csharp
+````C#
+
 radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.TextChanged += BindingNavigatorElement_TextChanged;
-```
+
+````
+````VB.NET
+
+AddHandler radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.TextChanged, AddressOf BindingNavigatorElement_TextChanged;
+
+````
 
 2. In the event handler, add the logic to add a thousand separator to the text:
-```csharp
+   
+````C#
 private void BindingNavigatorElement_TextChanged(object sender, EventArgs e)
 {
     if (radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.Text == "" ||
@@ -42,10 +50,28 @@ private void BindingNavigatorElement_TextChanged(object sender, EventArgs e)
     radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.SelectionStart = 
         radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.Text.Length;
 }
-```
 
-3. Override the `currentNumberTextBox_KeyDown` method to exclude the comma sign when the user presses the Enter key to navigate to the specified page:
-```csharp
+````
+````VB.NET
+
+Private Sub BindingNavigatorElement_TextChanged(ByVal sender As Object, ByVal e As EventArgs)
+    If radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.Text = "" OrElse radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.Text = "0" Then
+        Return
+    End If
+
+    Dim number As Decimal
+    number = Decimal.Parse(radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.Text, System.Globalization.NumberStyles.Currency)
+    radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.Text = number.ToString("#,#")
+    radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.SelectionStart = radBindingNavigator1.BindingNavigatorElement.CurrentNumberTextBox.Text.Length
+End Sub
+
+````
+
+3. Now the internal logic will not be able to parse the number with the thousand separator. To do that we will need to create a custom class that derives from RadBindingNavigator. Then we will need to override the `currentNumberTextBox_KeyDown` method to exclude the comma sign when the user presses the Enter key to navigate to the specified page.
+
+
+````C#
+
 public class MyBindingNavigatorControl : RadBindingNavigator
 {
     protected override RadBindingNavigatorElement CreateNavigatorElement()
@@ -78,6 +104,42 @@ public class MyNavigatorElement : RadBindingNavigatorElement
         this.CurrentNumberTextBox.SelectAll();
     }
 }
-```
+
+````
+````VB.NET
+
+Public Class MyBindingNavigatorControl
+    Inherits RadBindingNavigator
+
+    Protected Overrides Function CreateNavigatorElement() As RadBindingNavigatorElement
+        Return New MyNavigatorElement()
+    End Function
+End Class
+
+Public Class MyNavigatorElement
+    Inherits RadBindingNavigatorElement
+
+    Protected Overrides Sub currentNumberTextBox_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+        If e.KeyCode <> Keys.Enter Then
+            Return
+        End If
+
+        Dim pageNumber As Integer = -1
+        Dim newText = Me.CurrentNumberTextBox.Text.Replace(",", "")
+
+        If Integer.TryParse(newText, pageNumber) AndAlso Me.BindingSource IsNot Nothing Then
+
+            If pageNumber > 0 AndAlso pageNumber <= Me.BindingSource.Count Then
+                Me.BindingSource.Position = pageNumber - 1
+                Me.CurrentNumberTextBox.SelectAll()
+            End If
+        End If
+
+        Me.CurrentNumberTextBox.Text = (Me.BindingSource.Position + 1).ToString()
+        Me.CurrentNumberTextBox.SelectAll()
+    End Sub
+End Class
+
+````
 
 Note: The provided solution overrides the `currentNumberTextBox_KeyDown` method to handle the Enter key press and remove the comma sign before parsing the entered number.
