@@ -4,7 +4,7 @@ page_title: Major and Minor releases
 description: Major and Minor releases
 slug: winforms/installation-deployment-and-distribution/major-and-minor-releases
 tags: major,and,minor,releases
-published: True
+published: False
 position: 2
 previous_url: installation-deployment-and-distribution-vsx-major-and-minor-releases
 ---
