@@ -26,7 +26,7 @@ In order to develop applications with Telerik UI for WinForms you need to have i
 	
 ## Distributions
 
-Please, check the [Distributions]({%slug %}) article to get familiar with the target versions that are currently distributed.
+Please, check the [Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}) article to get familiar with the target versions that are currently distributed.
 
 ## See Also
 
