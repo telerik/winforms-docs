@@ -14,7 +14,8 @@ This article dives into UI controls, focusing on their compatibility with Micros
 
 ## .NET Framework
 
-|Distribution|Versions|Supported Runtime|
+|Telerik Distribution|Telerik Versions|Supported Runtime|
+|----|----|----|
 |.NET Framework 2.0 | Q3 2006 - R3 2022|.NET Framework 2.0 and later|
 |.NET Framework 4.0 | Q1 2012 - present|.NET Framework 4.0 and later|
 |.NET Framework 4.8 | R3 2022 - present|.NET Framework 4.8 and later|
@@ -22,7 +23,8 @@ This article dives into UI controls, focusing on their compatibility with Micros
 
 ## .NET
 
-|Distribution|Versions|Supported Runtime	|
+|Telerik Distribution|Telerik Versions|Supported Runtime|
+|----|----|----|
 |.NET Core 3.0| R1 2019 - R3 2019 SP1|.NET Core 3.0|
 |.NET Core 3.1| R1 2020 - present|.NET Core 3.1 and later|
 |.NET 5| R2 2020 - R3 2022 SP2|.NET 5 and later|
