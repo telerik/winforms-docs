@@ -11,17 +11,22 @@ previous_url: installation-deployment-and-distribution-system-requirements
 
 # System Requirements
 
-The following page describes the system requirements needed by Telerik UI for WinForms: [Telerik UI for WinForms - System requirements](http://www.telerik.com/winforms/tech-sheets/system-requirements).
+The following topic describes the system requirements needed by Telerik UI for WinForms.
 
-The following table lists the Telerik UI for WinForms version since which the respective .NET version is supported:
+The hardware and operating systems required to use Telerik UI for WinForms controls match the [system requirements of Visual Studio](https://learn.microsoft.com/en-us/visualstudio/releases/2022/system-requirements). If you can use Visual Studio on your machine, you will be able to use our controls after obtaining our license.
 
-|UI for WinForms version|.NET version|
-|----|----|
-|R1 2019|.NET Core 3 - Download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.0)|
-|R1 2020|.NET Core 3.1 - Download it from [here](https://dotnet.microsoft.com/download/dotnet-core/3.1)|
-|R2 2020|.NET 5 - Download it from [here](https://dotnet.microsoft.com/download/dotnet/5.0)|
-|R2 2021 SP1|.NET 6 - Download it from [here](https://dotnet.microsoft.com/download/dotnet/6.0)|
-|R3 2022 SP2|.NET 7 - Download it from [here](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)|
+## Development Environment
+
+In order to develop applications with Telerik UI for WinForms you need to have installed the following development tools:
+
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/): 2012 and above.
+        
+* __.NET Framework__: .NET Framework 4.0 and above.
+*__.NET__: .NET Core 3.1, .NET 5, .NET 6, .NET 7, .NET 8 and later.
+	
+## Distributions
+
+Please, check the [Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}) article to get familiar with the target versions that are currently distributed.
 
 ## See Also
 
