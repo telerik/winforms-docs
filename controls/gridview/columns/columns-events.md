@@ -1,5 +1,5 @@
 ---
-title: Column
+title: Column Events
 page_title: Column Events
 description: Learn more about the column events of Telerik's {{ site.framework_name }} DataGrid that you can subscribe to declaratively or at runtime.
 slug: gridview-column-events
