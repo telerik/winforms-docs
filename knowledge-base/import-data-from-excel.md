@@ -72,5 +72,5 @@ private void radButton1_Click(object sender, EventArgs e)
 }
 
 ````
->This functionality is now available out-of-the-box with the [Document Processing](https://docs.telerik.com/devtools/document-processing/introduction#welcome-to-telerik-document-processing-libraries)'s [DataTableFormatProvider](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/data-table/using-data-table-format-provider#using-the-datatableformatprovider) API.
+>note This functionality is now available out-of-the-box with the [Document Processing](https://docs.telerik.com/devtools/document-processing/introduction#welcome-to-telerik-document-processing-libraries)'s [DataTableFormatProvider](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/data-table/using-data-table-format-provider#using-the-datatableformatprovider) API.
 
