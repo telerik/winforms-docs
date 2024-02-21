@@ -23,7 +23,9 @@ RadGridView provides two mechanisms for custom sorting:
 
 ## Using the CustomSorting event
 
-The __CustomSorting__ event is fired if custom sorting is enabled. The arguments of the event provide the following properties:
+>note Use __EnableCustomSorting__ property to enable the custom sorting functionality.
+
+The __CustomSorting__ event is fired if custom sorting is enabled. It requires __EnableCustomSorting__ property to be *true*. The arguments of the event provide the following properties:
 
 * __Template:__ The template that holds the rows which are going to be sorted.
 
