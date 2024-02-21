@@ -3,26 +3,27 @@ title: Filtering GridView by Multiple Values in RadGridView for WinForms
 description: Learn how to filter a GridView in RadGridView for WinForms by multiple values copied from an Excel column without using the "is in list" option.
 type: how-to
 page_title: Filtering GridView by Multiple Values in RadGridView for WinForms | Telerik UI for WinForms
-slug: filtering-gridview-multiple-values-radgridview-winforms
-tags: radgridview, filtering, multiple values, excel
+slug: gridview-custom-filter-multiple-values
+tags: radgridview, custom, filtering, multiple values, excel
 res_type: kb
 ---
 
 ## Environment
-
-| Product | Version |
-|---------|---------|
-| RadGridView for WinForms | 2023.3.1114 |
+|Product Version|Product|Author|
+|----|----|----|
+|2024.1.130|UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
-I want to filter a GridView in RadGridView for WinForms by a list of values copied from an Excel column without having to use the "is in list" option. I have seen the option in the Custom Filtering demo, but it only allows searching for one value in the entire GridView. Is it possible to filter by multiple values?
+In this tutorial we will demonstrate how to filter RadGridView by a list of values copied from an Excel column without having to use the "is in list" option. We will modify the Custom Filtering demo from our WinForms Demos Application.
+
+![gridview-custom-filter-multiple-values 001](images/gridview-custom-filter-multiple-values_1.png)
 
 ## Solution
 
-To filter a GridView in RadGridView for WinForms by multiple values, you can modify the code from the Custom Filtering demo. Follow these steps:
+To filter RadGridView by multiple values, you can modify the code from the Custom Filtering demo, by following these steps:
 
-1. Handle the `radGridView1_CustomFiltering` event.
+1. Modify the `radGridView1_CustomFiltering` event.
 2. Check if the filter text is empty. If it is, reset the styles of all cells and make all rows visible.
 3. If the filter text is not empty, split it into multiple values using a comma as the separator.
 4. Iterate through each cell in the row and compare its value to each of the filter values.
@@ -87,4 +88,4 @@ private void radGridView1_CustomFiltering(object sender, GridViewCustomFiltering
 }
 ```
 
-Now you can use this modified code to filter a GridView in RadGridView for WinForms by multiple values copied from an Excel column.
+Now you can use this modified code to filter the RadGridView by multiple values.
