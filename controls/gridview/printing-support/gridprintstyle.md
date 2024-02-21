@@ -13,17 +13,47 @@ previous_url: gridview-printing-support-gridprintstyle
 
 You can customize the settings of the grid print job by setting the __PrintStyle__ property of the RadGridView to a new instance of the __GridPrintStyle__ class or editing the current one. The available properties are:
 
-* __PrintGrouping:__ determines if grouping will be printed.
+* __CellFont_: Gets or sets the font that will be used for the cells.
 
-* __PrintSummaries:__ determines if summary rows will be printed.
+* __GroupRowFont__: Gets or sets the font that will be used for the group cells.
 
-* __PrintHiddenRows:__ determines if hidden rows will be printed.
+* __HeaderCellFont__: Gets or sets the font that will be used for the header cells.
 
-* __PrintHiddenColumns:__ determines if hidden columns will be printed.
+* __SummaryCellFont__: Gets or sets the font that will be used for the summary cells.
+ 
+* __HierarchyIndent__: Gets or sets a indent in pixels when printing a hierarchicle grid.
 
-* __PrintHeaderOnEachPage:__ determines if header cells will be printed on each page.
+* __PrintGrouping:__ Determines if grouping will be printed.
 
-* __FitWidthMode:__ determines how the RadGridView will be positioned on the page. There are three possible settings for this property:
+* __PrintSummaries:__ Determines if summary rows will be printed.
+
+* __PrintHiddenRows__: Gets or sets a value indicating whether hidden rows will be printed.
+
+* __PrintHiddenRows:__ Determines if hidden rows will be printed.
+
+* __PrintHiddenColumns:__ Determines if hidden columns will be printed.
+
+* __PrintAlternatingRowColor__: Gets or sets a value indicating whether alternating row color is printed.
+
+* __PrintHeaderOnEachPage:__ Determines if header cells will be printed on each page.
+
+* __PrintAllPages__: Gets or sets a value indicating whether all pages will be printed when paging is enabled.
+
+* __CellBackColor__: Gets or sets the default back color for data cells.
+
+* __HeaderCellBackColor__: Gets or sets the default back color of header cells.
+
+* __GroupRowBackColor__: Gets or sets the default back color of group rows.
+
+* __SummaryCellBackColor__: Gets or sets the default back color of summary cells.
+
+* __AlternatingRowColor__: Gets or sets a value indidcating the alternating row color for odd rows.
+
+* __BorderColor__: Gets or sets the default color of all borders.
+
+* __CellPadding__: Gets or sets the default padding for all cells.
+
+* __FitWidthMode:__ Determines how the RadGridView will be positioned on the page. There are three possible settings for this property:
 
     * NoFit – the grid is aligned to the left and its size is not changed
 
@@ -32,7 +62,21 @@ You can customize the settings of the grid print job by setting the __PrintStyle
     * FitPageWidth – the grid is resized, keeping the columns width ratios, so it would fill the whole page.
 
     * You can also set the header cells font, data cells font, group cells font and summary cells font.
+	
+* __ChildViewPrintMode__: Gets or sets a value indicating how child views are printed when printing a hierarchical grid.
 
+	* PrintFirstView - Always prints the first view.
+	
+	* PrintCurrentlyActiveView - Prints the view that is active in the grid.
+	
+	* SelectViewToPrint - In this mode the ChildViewPrinting event is fired. The event allows to choose the view to export on a row by row basis.
+	
+* __GridView__: Gets the <see cref="RadGridView"/> that this print styles is assigned to.
+
+* __PrintTraverser__: Gets the traverser that is used to traverse the RadGridView.
+
+* __PrintRenderer__: Gets or sets the print renderer that is used for print rendering.
+	
 ## Customizing GridPrintStyle
 
 {{source=..\SamplesCS\GridView\Printing support\GridPrintStyle1.cs region=PrintStyle}} 
@@ -121,7 +165,7 @@ You should note that one column can appear on several pages. Here is the result 
 
 ![WinForms RadGridView PrintPreview Page 4](images/gridview-printing-support-gridprintstyle006.png)
 
-# See Also
+## See Also
 * [Events and Customization]({%slug winforms/gridview/printing-support/events-and-customization%})
 
 * [Printing Hierarchical Grid]({%slug winforms/gridview/printing-support/printing-hierarchical-grid%})
