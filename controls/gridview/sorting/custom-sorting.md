@@ -25,17 +25,17 @@ RadGridView provides two mechanisms for custom sorting:
 
 >note Use __EnableCustomSorting__ property to enable the custom sorting functionality.
 
-The __CustomSorting__ event is fired if custom sorting is enabled. It requires __EnableCustomSorting__ property to be *true*. The arguments of the event provide the following properties:
+The __CustomSorting__ event is fired if custom sorting is enabled. It requires the __EnableCustomSorting__ property to be *true*. The arguments of the event, provide the following properties:
 
-* __Template:__ The template that holds the rows which are going to be sorted.
+* __Template:__ The template that holds the rows that are going to be sorted.
 
 * __Row1, Row2:__ The rows to be compared.
 
-* __SortResult:__ returns negative value when `Row1` is before `Row2`, positive value if `Row1` is after `Row2` and zero if the rows are have equal values in a specified column.
+* __SortResult:__ returns a negative value when `Row1` is before `Row2`, a positive value if `Row1` is after `Row2`, and zero if the rows have equal values in a specified column.
 
 * __Handled:__ defines if the comparison of the two rows is processed by the custom algorithm or by the applied sort descriptors.
 
-The following example demonstrates how to handle the __CustomSorting__ event sorting the RadGridView rows ascending by the values of the `Freight` column. The defined __SortOrder__ for the `Freight` column in this example assumes that rows sorting is not applied. All RadGridView rows are processed by the custom logic.
+The following example demonstrates how to handle the __CustomSorting__ event sorting the RadGridView rows ascending by the values of the `Freight` column. The defined __SortOrder__ for the `Freight` column in this example assumes that row sorting is not applied. All RadGridView rows are processed by the custom logic.
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting.cs region=usingCustomSorting}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting.vb region=usingCustomSorting}} 
@@ -193,7 +193,7 @@ Me.RadGridView1.MasterTemplate.SortComparer = New CustomComparer()
 
 ## Create Custom Sort Order Criteria for a Particular Column.
 
-You can use the custom sorting functionality to change the default sorting behavior for a particular column. This will leave the sorting functionality for the other columns intact and the user will be able to sort them in the usual way. However when the user presses the column header cell for the column that we have changed the sort criteria, it will be sorted by the custom criteria. To achieve this we can use the __SortDescriptors__ collection of __RadGridView__. For example you can order the rows by the text length in the *Customer* column with the following code:
+You can use the custom sorting functionality to change the default sorting behavior for a particular column. This will leave the sorting functionality for the other columns intact and the user will be able to sort them in the usual way. However, when the user presses the column header cell for the column that we have changed the sort criteria, it will be sorted by the custom criteria. To achieve this we can use the __SortDescriptors__ collection of __RadGridView__. For example, you can order the rows by the text length in the *Customer* column with the following code:
 
 {{source=..\SamplesCS\GridView\Sorting\CustomSorting2.cs region=SortByCustomCriteria}} 
 {{source=..\SamplesVB\GridView\Sorting\CustomSorting2.vb region=SortByCustomCriteria}} 
@@ -261,7 +261,8 @@ void radGridView1_CustomSorting(object sender, Telerik.WinControls.UI.GridViewCu
 
 
 ![WinForms RadGridView Column Custom Sort Order Criteria](images/gridview-sorting-custom-sorting005.png)
-# See Also
+
+## See Also
 * [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})
 
 * [Events]({%slug winforms/gridview/sorting/events%})
