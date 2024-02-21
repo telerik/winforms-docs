@@ -45,11 +45,15 @@ private void radButton1_Click(object sender, EventArgs e)
 
 private static void RViewer_DocumentLoaded(object sender, EventArgs e)
 {
-    RadPrintDocument document = new RadPrintDocument();
 
+    var radPdfViewerElement = (RadPdfViewerElement)sender;
+    radPdfViewerElement.PrintScalePageToPaperSize = true;
+
+    RadPrintDocument document = new RadPrintDocument();
     document.Landscape = false;
+    document.Margins = new Margins(0, 0, 0, 0);
     document.DefaultPageSettings.PrinterSettings.Copies = 1;
-    document.AssociatedObject = (sender as RadPdfViewerElement);
+    document.AssociatedObject = radPdfViewerElement;
 
     document.Print();
 }
@@ -65,11 +69,14 @@ Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 
 Private Shared Sub RViewer_DocumentLoaded(ByVal sender As Object, ByVal e As EventArgs)
-    Dim document As New RadPrintDocument()
+    Dim radPdfViewerElement = CType(sender, RadPdfViewerElement)
+    radPdfViewerElement.PrintScalePageToPaperSize = True
 
+    Dim document As New RadPrintDocument()
     document.Landscape = False
+    document.Margins = New Margins(0, 0, 0, 0)
     document.DefaultPageSettings.PrinterSettings.Copies = 1
-    document.AssociatedObject = (TryCast(sender, RadPdfViewerElement))
+    document.AssociatedObject = radPdfViewerElement
 
     document.Print()
 End Sub
