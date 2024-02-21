@@ -1803,6 +1803,7 @@ intro_columns:
       "ShapedForm": "winforms/forms-and-dialogs/shapedform"
       "StatusStrip": "winforms/forms-and-dialogs/statusstrip"
       "TabbedForm": "radtabbedform-overview"
+      "TaskDialog": "task-dialog-overview"
       "ToolbarForm": "radtoolbarform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
       "ToastNotification": "toast-notification-overview"
@@ -1894,7 +1895,7 @@ intro_columns:
       "RadialGauge": "winforms/gauges/radialgauge"
       "RangeSelector": "winforms/rangeselector/overview"
       "Sparkline": "radsparkline-overview"
-      "Task Board": "task-board-overview"
+      "TaskBoard": "task-board-overview"
 
 ## Do not edit below this line
 safe: false
