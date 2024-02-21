@@ -21,6 +21,8 @@ You can find listed below the required references for using a **RadToastNotifica
 
 * Microsoft.Toolkit.Uwp.Notifications
 
+>important Toast Notifications are unsupported in __Windows Server 2016__. Our Toast Notifications rely on the [NotificationData](https://learn.microsoft.com/en-us/uwp/api/windows.ui.notifications.notificationdata?view=winrt-22621) class, which triggers a runtime error when attempting to display a toast notification on __Windows Server 2016__.
+
 >important As of **R2 2021** Toast Notifications are supported in .NET5 and the Microsoft.Toolkit.Uwp.Notifications.dll is upgraded to [version 7](https://github.com/CommunityToolkit/WindowsCommunityToolkit/releases/tag/v7.0.0).
 
 If you want to use RadToastNotificationManager in .NET5/.NET6, please make sure that the following requirements are fulfilled: [How to Use ToastNotification in .NET 5/.NET6]({%slug toast-notification-in-net-core%}) 
