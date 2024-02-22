@@ -10,7 +10,7 @@ position: 1
 
 # Structure
 
-This article describes the inner structure and organization of the elements which build the __RadDesktopAlert__ control.
+This article describes the inner structure and organization of the elements which build the __RadDesktopAlert__ component.
 
 >caption Figure 1: RadDesktopAlert's elements hierarchy
 
