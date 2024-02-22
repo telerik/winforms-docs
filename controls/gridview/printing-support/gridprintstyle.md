@@ -13,7 +13,7 @@ previous_url: gridview-printing-support-gridprintstyle
 
 You can customize the settings of the grid print job by setting the __PrintStyle__ property of the RadGridView to a new instance of the __GridPrintStyle__ class or editing the current one. The available properties are:
 
-* __CellFont_: Gets or sets the font that will be used for the cells.
+* __CellFont__: Gets or sets the font that will be used for the cells.
 
 * __GroupRowFont__: Gets or sets the font that will be used for the group cells.
 
