@@ -139,7 +139,9 @@ Me.dbContext.SaveChanges()
 
 Now, if you run your application you should see the hierarchical data.
 
-# See Also
+A complete solution in C# and VB.NET is available in our SDK repository [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/EFCodeFirstInHierarchy).
+
+## See Also
 * [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})
 
 * [Bindable Types]({%slug winforms/gridview/populating-with-data/bindable-types%})
