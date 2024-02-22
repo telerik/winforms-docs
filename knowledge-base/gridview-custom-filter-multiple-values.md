@@ -1,10 +1,10 @@
 ---
-title: Filtering GridView by Multiple Values in RadGridView for WinForms
-description: Learn how to filter a GridView in RadGridView for WinForms by multiple values copied from an Excel column without using the "is in list" option.
+title: Filtering RadGridView by Multiple Values
+description: Learn how to filter the RadGridView control by multiple values without using the "is in list" option.
 type: how-to
 page_title: Filtering GridView by Multiple Values in RadGridView for WinForms | Telerik UI for WinForms
 slug: gridview-custom-filter-multiple-values
-tags: radgridview, custom, filtering, multiple values, excel
+tags: radgridview, custom, filtering, multiple values
 res_type: kb
 ---
 
