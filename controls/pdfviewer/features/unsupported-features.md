@@ -19,8 +19,6 @@ The unsupported features include:
 
 * Lab, ICCBased color spaces;
 
-* Password protection.
-
 * JPXDecode filter: This filter does not work out of the box. However, there is API allowing to plug-in custom user-defined filters. This API is described in the [Customize PDF Rendering]({%slug winforms/pdfviewer/customize-and-extensibility/customize-pdf-rendering%}) article.
 
 * Annotations: Full support for Widget and Link annotations. All other types of annotations are supported in read-only mode.
