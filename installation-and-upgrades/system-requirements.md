@@ -19,10 +19,9 @@ The hardware and operating systems required to use Telerik UI for WinForms contr
 
 In order to develop applications with Telerik UI for WinForms you need to have installed the following development tools:
 
-* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/): 2012 and above.
-        
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/): 2012 and above.      
 * __.NET Framework__: .NET Framework 4.0 and above.
-*__.NET__: .NET Core 3.1, .NET 5, .NET 6, .NET 7, .NET 8 and later.
+* __.NET__: .NET Core 3.1, .NET 5, .NET 6, .NET 7, .NET 8 and later.
 	
 ## Distributions
 
