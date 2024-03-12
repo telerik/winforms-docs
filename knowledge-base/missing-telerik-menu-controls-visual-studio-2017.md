@@ -7,6 +7,7 @@ slug: missing-telerik-menu-controls-visual-studio-2017
 tags: telerik, visual-studio, winforms, menu, controls
 res_type: kb
 ---
+
 # Environment
 | Version | Product | Author | 
 | --- | --- | ---- | 
@@ -16,8 +17,9 @@ res_type: kb
 The issue is that the respective extensions for Telerik UI for WinForms are missing from Visual Studio 2017 after upgrading to 2024 Q1. 
 
 ## Solution
-The issue is caused by how the upgrade mechanism works when using the Progress Control Panel. It first schedules the uninstall of the old product version and then installs the new one. When the old version was removed, its features were removed too, including the Visual Studio 2017 extension. When the new version was installed it didn't have any extensions for Visual Studio 2017. Therefore the menu entry, the project items and the toolbox items were missing. 
-We are currently in the process of modernizing our product line which includes stopping support for old frameworks and Visual Studio versions. More on that is available here: [Product Update for Enhanced Performance and Security](https://www.telerik.com/blogs/embracing-future-product-update-enhanced-performance-and-security). So if you can migrate to Visual Studio 2022 in future I believe it will make the upgrade process more straightforward.
+The issue is caused by how the upgrade mechanism works when using the Progress Control Panel. It first schedules the uninstall of the old product version and then installs the new one. When the old version was removed, its features were removed too, including the Visual Studio 2017 extension. When the new version was installed it didn't have any extensions for Visual Studio 2017. Therefore the menu entry, the project items, and the toolbox items were missing. 
+
+We are currently in the process of modernizing our product line which includes stopping support for old frameworks and Visual Studio versions. More on that is available here: [Product Update for Enhanced Performance and Security](https://www.telerik.com/blogs/embracing-future-product-update-enhanced-performance-and-security). So if you can migrate to Visual Studio 2022 in the future I believe it will make the upgrade process more straightforward.
 
 To resolve the issue of missing Telerik menu and controls in Visual Studio 2017, follow these steps:
 
