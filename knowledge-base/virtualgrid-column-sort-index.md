@@ -1,6 +1,6 @@
 ---
 title: How to show column sort index in RadVirtualGrid
-description: This article shows column sort index in RadVirtualGrid.
+description: This article shows how to add a column sort index in RadVirtualGrid.
 type: how-to
 page_title: How to Show Column Sort Index in VirtualGrid
 slug: virtualgrid-column-sort-index
@@ -14,10 +14,9 @@ res_type: kb
 |----|----|----|
 |2024.1.312|VirtualGrid for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
  
-
 ## Description
 
-Marking the column sort number is not supported out of the box. In this article we will demonstrate how you can add custom element in the header cell to show the sort index of the column.
+Marking the column sort number is not supported out of the box. In this article, we will demonstrate how you can add a custom element in the header cell to show the sort index of the column.
 
 ![virtualgrid-column-sort-index](images/virtualgrid-column-sort-index.gif)
 
@@ -125,10 +124,7 @@ End Sub
 
 ````
 
-
 Then we can subscribe to the SortChanged event. Inside the event handler, we can get the header cells to check if they are sorted by comparing them with the sort Expression.
-
-
 
 ````C#
 
