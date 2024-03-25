@@ -13,7 +13,7 @@ res_type: kb
 
 |Product Version|Product|Author|
 |----|----|----|
-|2024.1.312|VirtualGrid for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2024.1.312|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
  
 
 ## Description
