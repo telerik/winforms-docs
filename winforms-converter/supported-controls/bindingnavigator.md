@@ -10,7 +10,7 @@ position: 1
 
 # BindingNavigator
 
-The BindingNavigator control in your application will be converted to [RadBindingNavigator]({%slug winforms/calendar%}). The following tables describe which properties and methods are removed and which are replaced with similar equivalents.
+The BindingNavigator control in your application will be converted to [RadBindingNavigator]({%slug winforms/bindingnavigator%}). The following tables describe which properties and methods are removed and which are replaced with similar equivalents.
 
 |Properties|Action|RadControls Equivalent|
 |---|---|---|
