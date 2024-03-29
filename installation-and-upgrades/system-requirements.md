@@ -19,9 +19,11 @@ The hardware and operating systems required to use Telerik UI for WinForms contr
 
 In order to develop applications with Telerik UI for WinForms you need to have installed the following development tools:
 
-* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/): 2012 and above.      
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/): 2019 and above.      
 * __.NET Framework__: .NET Framework 4.0 and above.
 * __.NET__: .NET Core 3.1, .NET 5, .NET 6, .NET 7, .NET 8 and later.
+
+>important In 2024 Q1 (version 2024.1.130) the __Visual Studio Extensions__ for Visual Studio 2015 and 2017 is removed and is no longer distributed with the __Telerik UI for WinForms__ installer. The extension for these Visual Studio versions can be used with Telerik version prior to 2024 Q1. The extension for Visual Studio 2015 and 2017 is still available as a separate integration package in the marketplace and can be downloaded from [here](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions). 
 	
 ## Distributions
 
