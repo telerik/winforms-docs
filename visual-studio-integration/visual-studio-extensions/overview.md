@@ -25,7 +25,7 @@ The extensions handle the following major points in the development with __Teler
 
 __Visual Studio Extensions__ for __Telerik UI for WinForms__ are distributed with the __Telerik UI for WinForms__ installer. They can be downloaded and installed as separate product from the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/) for Visual Studio 2019 and later. The extensions support Visual Studio 2019 and 2022, handling .NET 4.0+ applications.
 
->note In 2024 Q1 (version 2024.1.130) the __Visual Studio Extensions__ for Visual Studio 2015 and 2017 is removed and is no longer distributed with the __Telerik UI for WinForms__ installer. The extension for Visual Studio 2015 and 2017 is still available as a separate integration package in the marketplace and can be downloaded from [here](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions).
+>important In 2024 Q1 (version 2024.1.130) the __Visual Studio Extensions__ for Visual Studio 2015 and 2017 is removed and is no longer distributed with the __Telerik UI for WinForms__ installer. The extension for Visual Studio 2015 and 2017 is still available as a separate integration package in the marketplace and can be downloaded from [here](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions).
 
 The __Visual Studio Extensions__ can be accessed through the __Telerik | Telerik UI for WinForms__ menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a WinForms Application as well.
 
