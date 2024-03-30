@@ -27,23 +27,24 @@ __Visual Studio Extensions__ for __Telerik UI for WinForms__ are distributed wit
 
 The __Visual Studio Extensions__ can be accessed through the __Telerik | Telerik UI for WinForms__ menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a WinForms Application as well.
 
-For Visual Studio 2019 **Visual Studio Extensions** can be accessed through the **Extensions | Telerik UI for WinForms menu**:
+For Visual Studio 2022 **Visual Studio Extensions** can be accessed through the **Extensions | Telerik | Telerik UI for WinForms menu**.
 
-![installation-deployment-and-distribution-vsx-overview 005](images/installation-deployment-and-distribution-vsx-overview005.png)
-
-__No selected project in Visual Studio__
+#### Figure 1: __Access Telerik UI for WinForms menu__
 
 ![installation-deployment-and-distribution-vsx-overview 001](images/installation-deployment-and-distribution-vsx-overview001.png)
 
-__Selected project in Visual Studio is Standard WinForms Application__
+#### Figure 2: __Selected project in Visual Studio is Standard WinForms Application__
 
-![installation-deployment-and-distribution-vsx-overview 002](images/installation-deployment-and-distribution-vsx-overview002.png)
+![installation-deployment-and-distribution-vsx-overview 2](images/installation-deployment-and-distribution-vsx-overview002.png)
 
-__Selected project in Visual Studio is Telerik WinForms Application__
+#### Figure 3: __Selected project in Visual Studio is Telerik WinForms Application__
 
 ![installation-deployment-and-distribution-vsx-overview 003](images/installation-deployment-and-distribution-vsx-overview003.png)
 
-When installed, the extensions add several project templates to the New Project dialog of Visual Studio:
+
+After installed, the extensions add several project templates to the New Project dialog of Visual Studio:
+
+#### Figure 4: __Telerik new project templates__
 
 ![installation-deployment-and-distribution-vsx-overview 004](images/installation-deployment-and-distribution-vsx-overview004.png)
 
