@@ -57,11 +57,7 @@ radBarcodeView.Symbology = qrCode1;
 radBarcodeView.Text = "radBarcodeView1";
 radBarcodeView.Value = "1234567";
 radBarcodeView.Invalidate();
-Form form = new Form();
-form.Visible= false;
-form.Controls.Add(radBarcodeView);
-form.Show();
-Image img = radBarcodeView.ExportToImage();
+Image img = radBarcodeView.ExportToImage(200,200);
 img.Save("TestImage.png", System.Drawing.Imaging.ImageFormat.Png);
 
 ````
@@ -79,11 +75,7 @@ radBarcodeView.Symbology = qrCode1
 radBarcodeView.Text = "radBarcodeView1"
 radBarcodeView.Value = "1234567"
 radBarcodeView.Invalidate()
-Dim form As Form = New Form()
-form.Visible = False
-form.Controls.Add(radBarcodeView)
-form.Show()
-Dim img As Image = radBarcodeView.ExportToImage()
+Dim img As Image = radBarcodeView.ExportToImage(200,200)
 img.Save("TestImage.png", System.Drawing.Imaging.ImageFormat.Png)
 
 ````
