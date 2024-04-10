@@ -1,6 +1,6 @@
 ﻿<div id="footer" class="container-fluid pb-40">
-                <input id="hidden-sheet-id" type="hidden" value="14RypVB61J1Zbq7JjxBay2Pf3seiLOlwrK08jbfNL64M">
-{{>partials/feedback}}
+    <feedback-form product-code="RCWF" icon-url="../assets/Avatar-DevCraft-big.svg">
+    </feedback-form>
   <div class="row mt-60">
     <div class="col-lg-8 col-lg-offset-2">
       <div class="row">
