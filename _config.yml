@@ -1669,8 +1669,8 @@ defaults:
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 
-# Feedback Form Google Sheet ID
-ff-sheet-id: 14RypVB61J1Zbq7JjxBay2Pf3seiLOlwrK08jbfNL64M 
+# Feedback Form Product code
+productCode: RCWF
 
 # The google services configuration
 google_analytics: UA-1119090:eblhnfskwrk'
