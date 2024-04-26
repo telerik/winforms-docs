@@ -38,7 +38,7 @@ This is all that is required and now you can continue with your application.
 >
 >* A version for __.Net Standard 2.0__
 >
->Both versions are available as [NuGet packages](https://docs.telerik.com/devtools/document-processing/getting-started/installation/nuget-packages). Make sure that the (Assemblies for .NET Framework)(https://docs.telerik.com/devtools/document-processing/getting-started/getting-started#assemblies-for-net-framework) are used in a WinForms project.
+>Both versions are available as [NuGet packages](https://docs.telerik.com/devtools/document-processing/getting-started/installation/nuget-packages). Make sure that the [Assemblies for .NET Framework](https://docs.telerik.com/devtools/document-processing/getting-started/getting-started#assemblies-for-net-framework) are used in a WinForms project.
 
 
 
