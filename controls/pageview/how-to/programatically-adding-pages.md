@@ -9,7 +9,7 @@ position: 1
 previous_url: pageview-how-to-programmatically-adding-pages
 ---
 
-# Programatically adding pages
+# Programmatically adding pages
 
 This help article will demonstrate how __RadPageViewPages__ can be added to __RadPageView__ programmatically.
  
