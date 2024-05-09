@@ -23,6 +23,12 @@ As of **R1 2018 RadChartView** offers two new palettes: *Material* and *Fluent*.
 
 ![WinForms RadChartView Material and Fluent palettes](images/chartview-customization-palettes006.png)
 
+As of **R2 2024 RadChartView** offers four new palettes: *Crystal*, *VisualStudio2019*, *Office2019*, *Windows11*.
+
+>caption Crystal, VisualStudio2019, Office2019, Windows11 palettes
+
+![WinForms RadChartView Crystal, VisualStudio2019, Office2019, Windows11 palettes](images/chartview-customization-palettes007.png)
+
 To apply one of these predefined palettes all you have to do is execute the following line of code:
 
 #### Apply a Palette
