@@ -19,6 +19,9 @@ navigation:
     visual-studio-integration/visual-studio-extensions:
         title: Visual Studio Extensions 
         position: 4
+    integration-with-other-telerik-products:
+        title: Integration with Other Telerik Products 
+        position: 10
     deployment-and-distribution:
         title: Deployment and Distribution 
         position: 11
