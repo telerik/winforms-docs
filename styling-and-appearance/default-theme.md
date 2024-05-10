@@ -86,8 +86,36 @@ Once the necessary assembly is referred, the designer loads with the correct des
 
 >note In order to use the Theme components, just drag and drop them from the VS Toolbox to the form. This will add a reference to the corresponding theme assembly in the project and will enable the theme in the **ThemeName** drop-down of all Telerik controls on the form. 
 
+## Custom theme as Default
 
-# See Also
+Since it is possible to build your own [custom style]({%slug winforms/themes/using-custom-themes%}), it is possible to specify this theme as default. We will use the same API to load client's themes defined in their own assemblies: [Creating a theme component]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component%}) 
+
+>note With the __2024 Q2__ version of our controls it is necessary to use the assembly fully qualified name when defining it inside the App.config.
+
+Imagine a client creates a theme with name **LightCoral**. Besides the theme name, the App.config will also need the theme type and theme assembly name. 
+
+![default-theme006](images/default-theme006.png)
+
+````XML
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+
+  <appSettings>
+    <add key="TelerikWinFormsThemeName" value="LightCoral" />
+    <add key="TelerikWinFormsThemeType" value="LightCoralClassLibrary.LightCoralTheme"/>
+    <add key="TelerikWinFormsThemeAssemblyName" value="LightCoralClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9aa2a467bbfe794e"/>
+  </appSettings>
+</configuration>
+
+````
+
+Thus, if you drag a new **RadButton** from the Toolbox, it will be with the LightCoral theme applied. 
+
+## See Also
 
 * [Using Themes]({%slug winforms/themes/using-default-themes%})
 
