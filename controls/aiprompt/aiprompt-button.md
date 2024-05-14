@@ -10,14 +10,13 @@ position: 5
 
 # AIPrompt Button
 
-The AIPrompt component can also be displayed as a button that will show a `RadAIPrompt` when interacted with it. To display the component as a button, create a new `RadAIPromptButton` instance.
+The AIPrompt component can also be displayed as a button that will show a `RadAIPrompt` in a popup container when interacted with it. To use it, you can drag-drop the __RadAIPromptButton__ from Visual Studio ToolBox into your form. 
 
-The RadAIPromptButton provides the following properties:
 
-* `AIPrompt`&mdash;Allows you to set an RadAIPrompt instance that will be displayed when the RadAIPromptButton is open.
-* `PopupWidth`&mdash;Provides the ability to specify the width of the popup of RadAIPromptButton.
-* `PopupHeight`&mdash;Provides the ability to specify the height of the popup of RadAIPromptButton.
-* `IsPopupOpen`&mdash;Allows you to open/close the popup holding the RadAIPrompt.
+![WinForms RadAIPromptButton](images/aiprompt-prompt-button001.png)
+
+
+
 
 
 

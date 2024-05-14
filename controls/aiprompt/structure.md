@@ -10,19 +10,20 @@ position: 1
 
 # Structure
 
-This article will show the internal elements structure of __RadButton__.
+This article will show the internal elements structure of __RadAIPrompt__.
 
->caption Figure 1: RadButton's elements hierarchy
+>caption Figure 1: RadAIPrompt's structure
 
-![WinForms RadButtons Elements Hierarchy](images/buttons-button-structure001.png)
+![WinForms RadAIPrompt Structure](images/aiprompt-structure001.png)
+![WinForms RadAIPrompt Structure](images/aiprompt-structure002.png)
 
-1. __FillPrimitive__: represents the button's filling
-1. __ImageAndTextLayoutPanel__ <br>
-	2\.1\. __ImagePrimitive__: represents the button's image<br>
-	2\.2\. __TextPrimitive__: represents the button's text
-3. __BorderPrimitive__: represents's the button's border
-
->caption Figure 2: RadButton's structure
-
-![WinForms RadButtons Structure](images/buttons-button-structure002.png)
-
+* __Input view__: This navigates to the input view of RadAIPrompt. This view displays an input textbox and the custom suggestions.
+* __Output view__: This navigates to the output view of RadAIPrompt. This view displays the generated response, which can be interacted with.
+* __More Actions view__: This navigates to the actions view items of RadAIPrompt.
+* __Prompt request button__: This button prompts the RadAIPrompt to request a response.
+* __Title Text__: Title text of the AI response.
+* __Input Text__: Input text of the user.
+* __Response Text__: The text of the AI response.
+* __Copy button__: This button copies the response.
+* __Retry button__: This button requests another response from your AI model using the same input text.
+* __Rating buttons__: These buttons rate the response returned from your AI model.

@@ -40,4 +40,14 @@ position: 4
 |**PopupShowAnimation**|Gets or sets the animation played when opening the popup.|
 |**PopupHideAnimation**|Gets or sets the animation played when hiding the popup.|
 
+## AIPromptOutputItem's Properties
+
+|Property|Description|
+|----|----|
+|**Title**|Gets or sets the title of the output response item.|
+|**InputText**|Gets or sets the input text (the end-user's request) that was sent to the AI model.|
+|**ResponseText**|Gets or sets the text response from the AI model.|
+|**Rating**|Gets or sets the end-user rating for this response.|
+|**Tag**|Gets or sets an object associated with this item. The developer can use this property to store information related to a specific response.|
+
 
