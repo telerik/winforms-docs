@@ -29,7 +29,7 @@ The AIPrompt component allows you to write prompts and execute predefined comman
 
 * __Views__: The component provides different views that you can include in it. This allows the users to have more control over when interacting with the AIPrompt.
 * __Prompt button__: The AIPrompt component provides the ability to display it as a button, which when interacted with, will display the prompt. To learn more about the AIPrompt button, check this [article]({%slug aiprompt-prompt-button%}).
-* __Events__: The control expose three events that gives you the ability to populate the different views of the component. Check this [article]({%slug aiprompt-events%}) to learn more about these events.
+* __Events__: The control exposes two events that give you the ability to populate the different views of the component. 
 
 ## Telerik UI for WinForms Learning Resources
 * [Telerik UI for WinForms Button Homepage](https://www.telerik.com/products/winforms/aiprompt.aspx)
