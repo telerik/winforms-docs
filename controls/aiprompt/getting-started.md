@@ -63,6 +63,13 @@ The __AIPromptOutputItem__ element gives the end user ability to interact with t
 {{source=..\SamplesVB\AIPrompt\AIPrompt.vb region=PromptRequest}} 
 
 ````C#
+private void AIPrompt_OutputItemAction(object sender, OutputItemActionEventArgs e)
+{
+    if (e.OutputItem.Rating != 0)
+	{
+		MyAIService.UpVoteResponse(e.OutputItem.Rating);
+	}
+}
 
 ````
 ````VB.NET

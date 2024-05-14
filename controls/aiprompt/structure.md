@@ -12,9 +12,12 @@ position: 1
 
 This article will show the internal elements structure of __RadAIPrompt__.
 
->caption Figure 1: RadAIPrompt's structure
+>caption Figure 1: RadAIPrompt's Input View structure
 
 ![WinForms RadAIPrompt Structure](images/aiprompt-structure001.png)
+
+>caption Figure 1: RadAIPrompt's Output View structure
+
 ![WinForms RadAIPrompt Structure](images/aiprompt-structure002.png)
 
 * __Input view__: This navigates to the input view of RadAIPrompt. This view displays an input textbox and the custom suggestions.
