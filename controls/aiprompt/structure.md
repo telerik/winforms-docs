@@ -3,7 +3,7 @@ title: Structure
 page_title: Structure - WinForms AIPrompt Control
 description: RadAIPrompt uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
 slug: aiprompt-structure
-tags: structure, structure
+tags: structure
 published: True
 position: 1 
 ---
