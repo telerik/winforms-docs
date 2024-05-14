@@ -21,7 +21,7 @@ The AIPrompt component allows you to write prompts and execute predefined comman
 
 ![WinForms RadAiPrompt Overview](images/aiprompt-overview001.png)
 
->tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/aiprompt/getting-started) article you can find how to use the control with a sample scenario.
+>tip In the related [Getting Started]({%slug aiprompt-getting-started%}) article you can find how to use the control with a sample scenario.
 
 > Download and check out the online demo at [demos.telerik.com](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe)
 
@@ -32,8 +32,8 @@ The AIPrompt component allows you to write prompts and execute predefined comman
 * __Events__: The control exposes two events that give you the ability to populate the different views of the component. 
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms Button Homepage](https://www.telerik.com/products/winforms/aiprompt.aspx)
-* [Get Started with the Telerik UI for WinForms Button]({%slug aiprompt-getting-started%})
+* [Telerik UI for WinForms AIPrompt Homepage](https://www.telerik.com/products/winforms/aiprompt.aspx)
+* [Get Started with the Telerik UI for WinForms AIPrompt]({%slug aiprompt-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
 * [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 

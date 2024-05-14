@@ -5,7 +5,7 @@ description: AIPrompt views
 slug: aiprompt-views
 tags: aiprompt, view, inputview, outputview, moreactionsview, response,rating
 published: True
-position: 3
+position: 6
 ---
 
 # Views
