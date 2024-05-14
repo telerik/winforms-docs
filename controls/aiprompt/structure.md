@@ -16,7 +16,7 @@ This article will show the internal elements structure of __RadAIPrompt__.
 
 ![WinForms RadAIPrompt Structure](images/aiprompt-structure001.png)
 
->caption Figure 1: RadAIPrompt's Output View structure
+>caption Figure 2: RadAIPrompt's Output View structure
 
 ![WinForms RadAIPrompt Structure](images/aiprompt-structure002.png)
 
