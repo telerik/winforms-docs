@@ -1777,6 +1777,7 @@ intro_columns:
   -
     title: "Interactivity & UX"
     items:
+      "AIPrompt": "aiprompt-overview"
       "Buttons": "winforms/buttons/button"
       "Carousel": "winforms/carousel"
       "Chat UI": "winforms/chat/overview"
