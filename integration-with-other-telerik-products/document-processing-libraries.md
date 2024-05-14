@@ -2,7 +2,8 @@
 title: Telerik Document Processing  Libraries 
 page_title: Document Processing Libraries - Integration with Telerik Products
 description: "Get started with Telerik UI for {{ site.framework }} and learn how to work with the PdfProcessing, SpreadStreamProcessing, WordsProcessing, and ZipLibrary libraries as part of the Telerik Document Processing Libraries."
-slug: document, processing, pdf, word, spread, stream, zip, doc, cross-platform
+slug: document-processing-libraries-overview
+tags: document, processing, pdf, word, spread, stream, zip, doc, cross-platform
 position: 11
 ---
 
