@@ -1653,7 +1653,9 @@ navigation:
     controls/track-and-status-controls/stepprogressbar/customizing-appearance:
         title: Customizing Appearance
         position: 6
-        
+    controls/aiprompt:
+        title: AIPrompt
+        position: 1 
     
     "*customizing-appearance":
         title: Customizing Appearance
