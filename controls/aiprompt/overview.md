@@ -6,7 +6,7 @@ slug: aiprompt-overview
 tags: AIPrompt
 published: True
 position: 0
-CTAControlName: AI1Prompt
+CTAControlName: AIPrompt
 ---
 
 # WinForms AIPrompt Overview
