@@ -3,18 +3,18 @@ title: Views
 page_title: Views - WinForms AIPrompt Control
 description: AIPrompt views
 slug: aiprompt-views
-tags: aiprompt, view
+tags: aiprompt, view, inputview, outputview, moreactionsview, response,rating
 published: True
 position: 3
 ---
 
 # Views
 
-The RadAIPrompt control provides 3 default items that have as their content the dfault views. They will need to be included in its Items collection. The control supports only one instance of each view to be defined in this collection.
+The RadAIPrompt control provides 3 default items that have as their content the default views. They will need to be included in its Items collection. The control supports only one instance of each view to be defined in this collection.
 
 ## Input view
 
-The input view is represented by the __AIPromptInputView__. This view contains an input textbox that the user can type their request in. It also may display the custom suggestions that user can add in RadAIPrompt control.
+The input view is represented by the __AIPromptInputView__. This view contains an input textbox that the user can type their request in. It also may display the custom suggestions that the user can add in the RadAIPrompt control.
 
 >caption Figure 1: Input view
 
@@ -22,7 +22,7 @@ The input view is represented by the __AIPromptInputView__. This view contains a
 
 ## Output view
 
-The output view is represented by the __AIPromptOutputView__ . This view displays the responses from your AI service. Each response is represented by an __AIPromptOutputItem__ and represent the responses from the AI. AIPromptOutputItems are added to __OutputItems__ collection. 
+The output view is represented by the __AIPromptOutputView__. This view displays the responses from your AI service. Each response is represented by an __AIPromptOutputItem__ and represent the responses from the AI. AIPromptOutputItems are added to __OutputItems__ collection. 
 
 >caption Figure 2: Output view
 
@@ -38,9 +38,9 @@ The __AIPromptOutputItem__ provides the following properties:
 
 ## More Actions view
 
-The More actions view is an additional view in the toolbar that will display further actions defined by the user. This view is repsented by a __AIPromptMoreActionsView__. It uses __RadAIPromptMoreActionsItem__ which can be added to __RadAIPrompt.Items__ collection. __RadAIPromptMoreActionsItem__ offers:
+The More Actions View is an additional view in the toolbar that will display further actions defined by the user. This view is represented by a __AIPromptMoreActionsView__. It uses __RadAIPromptMoreActionsItem__ which can be added to __RadAIPrompt.Items__ collection. __RadAIPromptMoreActionsItem__ offers:
 * __ItemText__: Gets or sets the text of the item in the toolbar.
-* __ItemSvgImage__: Gets or sets the Svg image of the item in the toolbar.
+* __ItemSvgImage__: Gets or sets the SVG image of the item in the toolbar.
 * __ItemImage__: Gets or sets the image of the item in the toolbar.
 
 The following code snippet demonstrates how to add __RadAIPromptMoreActionsItem__ to __AIPromptMoreActionsView__:
@@ -107,19 +107,6 @@ private RadButtonElement CreateAction(string text)
     End Function    
 
 ````
-
-{{endregion}} 
-
-
-## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms AIPrompt Component](https://www.telerik.com/products/winforms/aiprompt.aspx)
-* [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
-* [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
-* [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
-* [Telerik UI for WinForms Visual Studio Templates](https://docs.telerik.com/devtools/winforms/visual-studio-integration/visual-studio-templates)
-* [Deploy Telerik UI for WinForms Applications](https://docs.telerik.com/devtools/winforms/deployment-and-distribution/application-deployment)
-* [Telerik UI for WinForms Virtual Classroom(Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/telerik-ui-for-winforms)
-* [Telerik UI for WinForms License Agreement)](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s)
 
 ## See Also
 
