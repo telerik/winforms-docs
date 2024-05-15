@@ -36,6 +36,8 @@ The __AIPromptOutputItem__ provides the following properties:
 * __Rating__: Gets or sets the rating of the end-user for the response returned by your AI model.
 * __Tag__: Gets or sets an object associated with this AIPromptOutputItem.
 
+>note When an output from the AI is generated, the Output view shows Copy, Retry, and Rating buttons. Please check the [Structure]({%slug aiprompt-structure%}) article.
+
 ## More Actions view
 
 The More Actions View is an additional view in the toolbar that will display further actions defined by the user. This view is represented by a __AIPromptMoreActionsView__. It uses __RadAIPromptMoreActionsItem__ which can be added to __RadAIPrompt.Items__ collection. __RadAIPromptMoreActionsItem__ offers:
