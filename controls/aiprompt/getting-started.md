@@ -5,7 +5,7 @@ description: AIPrompt
 slug: aiprompt-getting-started
 tags: aiprompt, getting-started, design, programmatically
 published: True
-position: 4 
+position: 3 
 ---
 
 # Getting Started with WinForms AIPrompt
