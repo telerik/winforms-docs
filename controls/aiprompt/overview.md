@@ -10,8 +10,9 @@ CTAControlName: AIPrompt
 ---
 
 # WinForms AIPrompt Overview
+#### WinForms AIPrompt component bridges the gap between an app and the next-generation AI language model applications.
 
-The AIPrompt component allows you to write prompts and execute predefined commands as well as look and interact with the output from the AI.
+The AIPrompt component allows you to write prompts and execute predefined commands as well as look and interact with the output from the AI. Use the AIPrompt to provide your users with pre-determined ways to interact with a trained language model of your choice.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
