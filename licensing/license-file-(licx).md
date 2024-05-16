@@ -13,7 +13,7 @@ previous_url: licensing-license-file
 
 >caution  As of __Q2 2024__, __Telerik UI for WinForms__ suite does not generate anymore the License file (licx).
 
-As of __Q1 2015__, the __Telerik UI for WinForms__ suite uses the standard .NET licensing mechanism, which means that using the controls in design-time causes Visual Studio to add a  [__license.licx file__](https://docs.microsoft.com/en-us/dotnet/framework/tools/lc-exe-license-compiler) to the solution. This file is used only in design-mode and is not needed for deployment.
+Тhe __Telerik UI for WinForms__ suite uses the standard .NET licensing mechanism, which means that using the controls in design-time causes Visual Studio to add a  [__license.licx file__](https://docs.microsoft.com/en-us/dotnet/framework/tools/lc-exe-license-compiler) to the solution. This file is used only in design-mode and is not needed for deployment.
       
 
 The purpose of the license file is to:
