@@ -17,11 +17,11 @@ res_type: kb
  
 ## Description
  
-A common requirement is to populate [RadSpreadsheet]({%slug radspreadsheet-overview%}) with data coming from a **DataTable**. 
+A common requirement is to populate [RadSpreadsheet]({%slug document-processing-libraries-overview%}) with data coming from a **DataTable**. 
 
 ## Solution 
 
-It is necessary to iterate the columns and rows in the **DataTable** and insert the respective [cell's value](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/cell-value-types) to the **ActiveWorksheet** in [RadSpreadsheet]({%slug radspreadsheet-overview%}).
+It is necessary to iterate the columns and rows in the **DataTable** and insert the respective [cell's value](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/cell-value-types) to the **ActiveWorksheet** in [RadSpreadsheet]({%slug document-processing-libraries-overview%}).
  
 
 ````C#

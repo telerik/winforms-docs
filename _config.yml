@@ -1760,7 +1760,7 @@ intro_columns:
       "Element Hierarchy Editor": "winforms/tools/element-hierarchy-editor"
       "Shape Editor": "winforms/tools/shapeeditor"
       "Visual Style Builder": "winforms/tools/visual-style-builder"
-      "Zip library": "radziplibrary-overview"
+      "Zip library": "document-processing-libraries-overview"
   -
     title: "Media"
     items: 
@@ -1770,10 +1770,10 @@ intro_columns:
   -
     title: "Document Processing"
     items:
-      "PdfProcessing": "radpdfprocessing-overview"
-      "SpreadProcessing": "radspreadprocessing-overview"
-      "SpreadStreamProcessing": "radspreadstreamprocessing-overview"
-      "WordsProcessing": "radwordsprocessing-overview"
+      "PdfProcessing": "document-processing-libraries-overview"
+      "SpreadProcessing": "document-processing-libraries-overview"
+      "SpreadStreamProcessing": "document-processing-libraries-overview"
+      "WordsProcessing": "document-processing-libraries-overview"
 -
   categories:
   -
