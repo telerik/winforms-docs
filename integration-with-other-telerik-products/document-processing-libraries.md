@@ -43,7 +43,7 @@ The [RadSpreadsheet]({%slug radspreadsheet-overview%}) control allows editing ta
 
 #### RadGridView 
 
-The [RadGridView]({%slug winforms/gridview%}) enables you to create fully customizable and highly interactive interfaces for display and management of large data. The utilizes diffenrent parts of Telerik Document Processing Libraries, thus allowing you to export the control into different formats: xlsx, csv, pdf or txt.
+The [RadGridView]({%slug winforms/gridview%}) enables you to create fully customizable and highly interactive interfaces for display and management of large data. The control utilize different parts of Telerik Document Processing Libraries, thus allowing you to export the control into different formats: xlsx, csv, pdf or txt.
 
 #### RadTreeView
 
