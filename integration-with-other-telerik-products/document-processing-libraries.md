@@ -23,11 +23,31 @@ position: 11
 
 ## Available Versions
 
-Telerik Document Processing  Libraries are available in **.NET Framework** and **.NET Standard (.NET Core)** compatible versions. Both versions are [available as NuGet packages](https://docs.telerik.com/devtools/document-processing/getting-started/installation/nuget-packages). Read more in the *[Getting Started with Telerik Document Processing Libraries](https://docs.telerik.com/devtools/document-processing/getting-started/getting-started)* article.
+Telerik Document Processing Libraries are available in **.NET Framework** and **.NET Standard (.NET Core)** compatible versions. Both versions are [available as NuGet packages](https://docs.telerik.com/devtools/document-processing/getting-started/installation/nuget-packages). Read more in the *[Getting Started with Telerik Document Processing Libraries](https://docs.telerik.com/devtools/document-processing/getting-started/getting-started)* article.
 
 ## Configuration Wizard
 
 Telerik Document Processing Libraries' [Configuration Wizard](https://docs.telerik.com/devtools/document-processing/integration/integration-with-visual-studio) comes with the Visual Studio Extensions of several Telerik bundles. 
+
+## Telerik UI for WinForms Integration
+
+As other frameworks, Telerik UI for WinForms controls utilize document processing libraries to take most of its capabilities. In the following section we will list which controls are using these libraries.
+
+#### RadPdfViewer
+
+[RadPdfViewer]({%slug winforms/pdfviewer%}) enables you to easily load and display PDF documents natively in your application without using any third-party tools except Telerik’s WinForms toolbox. The control is optimized to work together with [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library model.
+
+#### RadSpreadsheet
+
+The [RadSpreadsheet]({%slug radspreadsheet-overview%}) control allows editing tabular data utilizing a variety of cell formatting options, styles and themes. The control utilizes the API defined in the [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library.
+
+#### RadGridView 
+
+The [RadGridView]({%slug winforms/gridview%}) enables you to create fully customizable and highly interactive interfaces for display and management of large data. The utilizes diffenrent parts of Telerik Document Processing Libraries, thus allowing you to export the control into different formats: xlsx, csv, pdf or txt.
+
+#### RadTreeView
+
+The [RadTreeView] control facilitates display, management, and navigation of hierarchical data structures. The [__TreeViewSpreadExport__]({%slug winforms/treeview/export-data/spread-export%}) class utilize the [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library. Thus allowing you to export the control into different formats: xlsx, csv, pdf or txt.
 
 
 ## See Also
