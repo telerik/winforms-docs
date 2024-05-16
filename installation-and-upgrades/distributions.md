@@ -33,8 +33,7 @@ This article dives into UI controls, focusing on their compatibility with Micros
 |.NET 7| R3 2022 SP2 - present|.NET 7 and later|
 |.NET 8| 2024 Q2 - present|NET 8 and later|
 
->Note Important Deprecation .NET Framework 4.0 and .NET Core 3.1 and link to blog: [Embracing the Future: Product Update for Enhanced Performance and Security](https://www.telerik.com/blogs/embracing-future-product-update-enhanced-performance-and-security)
-
+>important Important Deprecation .NET 7 and link to the blog: [Embracing the Future: Product Update for Enhanced Performance and Security](https://www.telerik.com/blogs/embracing-future-product-update-enhanced-performance-and-security)
 
 ## See Also
 
