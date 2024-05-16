@@ -120,6 +120,6 @@ The provided approach inserts the cells' values as string. If you want to insert
 
 # See Also
 
-* [RadSpreadProcessing]({%slug radspreadprocessing-overview%})
-* [RadSpreadsheet]({%slug radspreadsheet-overview%})
+* [RadSpreadProcessing]({%slug document-processing-libraries-overview%})
+* [RadSpreadsheet]({%slug document-processing-libraries-overview%})
 
