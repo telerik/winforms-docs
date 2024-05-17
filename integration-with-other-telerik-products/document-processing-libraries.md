@@ -50,6 +50,18 @@ The [RadGridView]({%slug winforms/gridview%}) enables you to create fully custom
 The [RadTreeView] control facilitates display, management, and navigation of hierarchical data structures. The [__TreeViewSpreadExport__]({%slug winforms/treeview/export-data/spread-export%}) class utilize the [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library. Thus allowing you to export the control into different formats: xlsx, csv, pdf or txt.
 
 
+#### RadPivotGrid
+
+[RadPivotGrid]({%slug winforms/pivotgrid%}) for WinForms is a control which provides functionality similar to the functionality of PivotTables in MS Excel. It takes large chunks of data and summarizes it in a human readable way by the help of aggregates and field descriptors. The control utilizes the API defined in the [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library to export the control into different formats: xlsx, csv, pdf and txt. 
+
+#### RadListView
+
+[RadListView]({%slug winforms/listview%}) is a bindable control for representing and editing list data with lots of customization abilities. The control utilizes the API defined in the [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library to export the control into different formats: xlsx, csv, pdf and txt. 
+
+#### PropertyGrid
+
+[RadPropertyGrid]({%slug winforms/propertygrid%}) for WinForms displays the properties of a given object in a user-friendly way allowing the end-user to edit these properties using our editors. The control utilizes the API defined in the [RadSpreadProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) library to export the control into different formats: xlsx, csv, pdf and txt.
+
 ## See Also
 
 * [Getting Started with Telerik Document Processing Libraries](https://docs.telerik.com/devtools/document-processing/getting-started/getting-started#getting-started-with-telerik-document-processing)
