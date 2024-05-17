@@ -116,9 +116,9 @@ End Sub
 
 ```` 
 
-The provided approach inserts the cells' values as string. If you want to insert a value in a specific format, you can benefit the [RadSpreadProcessing]({%slug radspreadprocessing-overview%}) library and supported [cell value types](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/cell-value-types).
+The provided approach inserts the cells' values as string. If you want to insert a value in a specific format, you can benefit the [RadSpreadProcessing]({%slug document-processing-libraries-overview%}) library and supported [cell value types](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/working-with-cells/cell-value-types).
 
-# See Also
+## See Also
 
 * [RadSpreadProcessing]({%slug document-processing-libraries-overview%})
 * [RadSpreadsheet]({%slug document-processing-libraries-overview%})
