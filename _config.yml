@@ -7,6 +7,9 @@ exclude_navigation: [knowledge-base/*]
 
 navigation:
 ## List your directory names and order here, like this:
+    winformslab:
+        title: "WinForms Labs"
+        position: 0
     installation-and-upgrades:
         title: Installation and Upgrades 
         position: 3
@@ -1655,8 +1658,8 @@ navigation:
         position: 6
     controls/aiprompt:
         title: AIPrompt
-        position: 1 
-    
+        position: 1
+        
     "*customizing-appearance":
         title: Customizing Appearance
 ## Api Reference End
