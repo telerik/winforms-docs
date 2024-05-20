@@ -17,16 +17,19 @@ Telerik UI for WinForms comes with several different packages that can be [insta
 The Telerik assemblies are built against [different versions]({%slug assemblies-version%}) of .NET starting from .NET 4 to the latest official .NET. You should pick up this version of the NuGet package to install in your project that corresponds to the Target Framework that you are using in your project and that is available on your computer. 
 
 >important The last NuGet package for .NET 2.0 is version 2022.2.622. 
+>important The last NuGet package for .NET 4.0 is version 2024.1.312.
+>important The last NuGet package for .NetCore is version 2024.1.312.
 
 ## Full Packages
 
 `Telerik_UI_for_WinForms_<version number>_NuGet_Dev.zip` contains `.nupkg` files for the following full packages:
 
-* `UI.for.WinForms.AllControls.Net40`
+* `UI.for.WinForms.AllControls.Net462`
 * `UI.for.WinForms.AllControls.Net48`
 * `UI.for.WinForms.AllControls.Net60`
 * `UI.for.WinForms.AllControls.Net70`
-* `UI.for.WinForms.AllControls.NetCore`
+* `UI.for.WinForms.AllControls.Net80`
+* `UI.for.WinForms.AllControls' : Contains all available [Telerik .NET Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}) 
 
 Each of these packages contains all Telerik UI for WinForms assemblies for the corresponding .NET framework/ .NET Core/ .NET version. 
 
@@ -42,7 +45,7 @@ Each of these packages contains all Telerik UI for WinForms assemblies for the c
 * `UI.for.WinForms.SyntaxEditor`
 *  .etc
 
-Each of these packages contain the corresponding Telerik dll for all available .NET frameworks (.40, .45, 4.8, etc.), .NET Core versions (3.0, 3.1, etc.), .NET 5.0, 6.0, 7.0 or newer . In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
+Each of these packages contain the corresponding  assemblies for all available [Telerik .NET Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
 
 >note As the AllControls package contains all UI controls and themes it should not be installed in projects having other packages containing the UI controls (e.g. UI.for.WinForms.Common etc.) or the UI.for.WinForms.Themes package. Either use the AllControls package or the packages of the separate controls and the themes.
 
