@@ -29,7 +29,7 @@ The Telerik assemblies are built against [different versions]({%slug assemblies-
 * `UI.for.WinForms.AllControls.Net60`
 * `UI.for.WinForms.AllControls.Net70`
 * `UI.for.WinForms.AllControls.Net80`
-* `UI.for.WinForms.AllControls' : Contains all available [Telerik .NET Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}) 
+* `UI.for.WinForms.AllControls` : Contains all available [Telerik .NET Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}) 
 
 Each of these packages contains all Telerik UI for WinForms assemblies for the corresponding .NET framework/ .NET Core/ .NET version. 
 
