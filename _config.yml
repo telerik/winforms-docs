@@ -1812,6 +1812,7 @@ intro_columns:
       "ShapedForm": "winforms/forms-and-dialogs/shapedform"
       "StatusStrip": "winforms/forms-and-dialogs/statusstrip"
       "TabbedForm": "radtabbedform-overview"
+      "TaskDialog": "task-dialog-overview"
       "ToolbarForm": "radtoolbarform-overview"
       "TitleBar": "winforms/forms-and-dialogs/statusstrip"
       "ToastNotification": "toast-notification-overview"
