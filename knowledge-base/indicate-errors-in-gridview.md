@@ -306,6 +306,8 @@ As a result the cell containing a wrong value will be highlighted with a red bor
 
 ![indicate-errors-in-gridview002](images/indicate-errors-in-gridview002.png)
 
+>note Complete SDK project in C# and VB is available [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/IDataErrorInfoExample).
+
 # See Also
 
  * [Data validation]({%slug winforms/gridview/editors/data-validation%})
