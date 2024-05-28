@@ -179,7 +179,7 @@ End Sub
 
 __ExportFormat__: Defines the format the grid will be exported to. The available values are __Xslx, Pdf, Csv, Txt__. The default value of the property is __Xslx__, hence if not other specified, the exporter will export to __Xslx__.
 
-__ExportVisualSettings__: Allows you to export the visual settings (themes) to the exported file. RadGridView will also export all formatting to the Excel file. The column width and row height will also be matched in the exported file.
+__ExportVisualSettings__: Allows you to export the visual settings (themes) to the exported file. RadPivotGrid will also export all formatting to the Excel file. The column width and row height will also be matched in the exported file.
 
 __SheetMaxRows__: Тhe exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this SheetMaxRows property. Available options are:
 
