@@ -110,8 +110,10 @@ namespace TelerikWinFormsApp9
         }
     }
 }
+
 ````
 ````VB.NET
+
 Me.RadTreeView1.MultiSelect = True
 RadTreeView1.AllowDragDrop = True
 
@@ -168,6 +170,8 @@ Private Sub RadTreeView1_MouseDown(ByVal sender As Object, ByVal e As MouseEvent
 End Sub
 
 ````
+
+
 This solution enables the drag and drop of multiple selected nodes from RadTreeView to another control (e.g., RadTextBox), with the `DragEnter` and `DragDrop` events firing as expected. 
 
 ## Notes
