@@ -18,14 +18,6 @@ This article describes how you can install the WinForms suite using a NuGet pack
 
 * [Get the packages from the Telerik NuGet server](#download-from-the-nuget-server)
 
-
->important The NuGet packages for Telerik UI for WinForms are created with a newer version of nuget.exe since R1 2018. If Visual Studio 2012 is used and the version of NuGet Package Manager is below 2.8, it won`t be able to install the NuGet packages. The possible solution is to update the version of NuGet Package Manager following these steps: 
-1\. Open Visual Studio 2012 
-2\. Tools >> Extensions and Updates 
-3\. Updates >> Visual Studio gallery 
-4\. NuGet Package Manager >> Update 
->
-
 ## Manually Download NuGet Packages
 
 1. First you need to log in using your licensed account. This way you will be able to download the packages:
@@ -50,7 +42,7 @@ This article describes how you can install the WinForms suite using a NuGet pack
 
 You need to add the Telerik package server (**https://nuget.telerik.com/v3/index.json**) to the package sources in visual studio.
 
->caution The old **https://nuget.telerik.com/nuget** server will be deprecated and we encourage our clients to switch to the v3 API. The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients.  
+> The NuGet v2 server at https://nuget.telerik.com/nuget will be sunset in November 2024. The new v3 protocol offers faster package searches and restores, improved security, and more reliable infrastructure. To redirect your feed to the NuGet v3 protocol, all you have to do is to change your NuGet package source URL to https://nuget.telerik.com/v3/index.json.
 
 1. First open the __Options__ window: 
 
