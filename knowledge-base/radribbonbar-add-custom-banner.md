@@ -17,24 +17,24 @@ ticketid: 1653851
 
 ## Description
 
-It is often required to display custom messages or banners in the header of the RadRibbonBar to notify users about certain conditions or information, such as running the program in offline mode. This article demonstrates how to add a custom message banner to the header of the RadRibbonBar component in a WinForms application.
+It is often required to display custom messages or banners in the header of the RadRibbonBar to notify users about certain conditions or information, such as running the program in offline mode or warning about a period expiry date. This article demonstrates how to add a custom message banner to the header of the RadRibbonBar component in a WinForms application.
 
-This KB article also answers the following questions:
-- How can I display a custom message in the RadRibbonBar header?
-- Is it possible to add interactive elements to the RadRibbonBar header?
-- How to customize the appearance of elements added to the RadRibbonBar header?
+>caption RadRibbonBar Banner
+
+![WinForms RadRibbonBar Banner](images/add-banner-in-ribbonbar.png)
+
 
 ## Solution
 
-To add a custom banner with a message and an interactive element to the RadRibbonBar header, follow these steps:
+To add a custom banner to the RadRibbonBar header, follow these steps:
 
-1. Create two `LightVisualElement` objects for the message text and the interactive part (e.g., a "Details" link).
+1. Use `LightVisualElement` objects for the message text.
 2. Add these elements into a `StackLayoutElementLite`.
-3. Customize the appearance of the `StackLayoutElementLite` and its children.
-4. Add the stack to the header's children of the `RadRibbonBar`.
-5. Adjust the margin of the application button element based on the header size.
+3. Customize the appearance of the `StackLayoutElementLite` .
+4. Add the stack to the Header.Children collection of the `RadRibbonBar`.
+5. Adjust the margin of the application button element based on the header size so that it do not overlap the message.
 
-Here is a code snippet illustrating these steps:
+Here is a code snippet illustrating this example:
 
 ```csharp
 public RadForm1()
@@ -94,10 +94,6 @@ private void TabStrip_PropertyChanged(object sender, PropertyChangedEventArgs e)
 }
 ```
 
-## Notes
-
-- The `LightVisualElement` allows for flexible styling and interaction, making it suitable for displaying custom text and handling click events.
-- Adjusting the `RadApplicationMenuButtonElement` margin ensures that the application button aligns properly with the custom header.
 
 ## See Also
 
