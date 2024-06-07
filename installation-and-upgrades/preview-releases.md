@@ -3,7 +3,7 @@ title: Preview Release
 page_title: Preview Release
 description: This article describes the Telerik WinForms Preview release and how to download it to get the latest bug fixes. 
 slug: winforms/installation-deployment-and-distribution/preview-releases
-tags: using,the,hotfix,(dlls,only), lib, latest, internal, build, preview
+tags: using,the,hotfix,dlls,only, lib, latest, internal, build, preview
 published: True
 position: 4
 ---
