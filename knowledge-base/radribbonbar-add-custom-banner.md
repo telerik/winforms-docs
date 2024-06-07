@@ -11,9 +11,9 @@ ticketid: 1653851
 
 ## Environment
 
-| Product | Version |
+| Product | Version | Author |
 | --- | --- |
-| RadRibbonBar for WinForms | 2024.2.514 |
+| RadRibbonBar for WinForms | 2024.2.514 | Nadya Todorova|
 
 ## Description
 
@@ -36,7 +36,7 @@ To add a custom banner to the RadRibbonBar header, follow these steps:
 
 Here is a code snippet illustrating this example:
 
-```csharp
+````C#
 public RadForm1()
 {
     InitializeComponent();
@@ -92,8 +92,8 @@ private void TabStrip_PropertyChanged(object sender, PropertyChangedEventArgs e)
         appBtn.Margin = new Padding(0, (int)tabStrip.Header.DesiredSize.Height, 0, 0);
     }
 }
-```
 
+````
 
 ## See Also
 
