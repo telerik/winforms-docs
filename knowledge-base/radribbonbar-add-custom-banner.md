@@ -13,7 +13,7 @@ ticketid: 1653851
 
 | Product | Version |
 | --- | --- |
-| RadRibbonBar for WinForms | Current |
+| RadRibbonBar for WinForms | 2024.2.514 |
 
 ## Description
 
@@ -98,5 +98,3 @@ private void TabStrip_PropertyChanged(object sender, PropertyChangedEventArgs e)
 ## See Also
 
 - [RadRibbonBar Documentation](https://docs.telerik.com/devtools/winforms/controls/ribbonbar/overview)
-- [LightVisualElement Documentation](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.lightvisualelement)
-- [StackLayoutElementLite Documentation](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.stacklayoutelementlite)
