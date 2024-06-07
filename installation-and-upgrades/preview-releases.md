@@ -28,6 +28,6 @@ The Preview is __available as a NuGet__ package. Alternatively, you can __downlo
 
 ## See Also
 
-* [Installing On Your Computer]({%winforms/installation-deployment-and-distribution/installing-on-your-computer%}) 
-* [Updating Assemblies in a Project]({%winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project%})
+* [Installing On Your Computer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}) 
+* [Updating Assemblies in a Project]({%slug winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project%})
 
