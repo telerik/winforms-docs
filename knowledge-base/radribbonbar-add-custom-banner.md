@@ -12,7 +12,7 @@ ticketid: 1653851
 ## Environment
 
 | Product | Version | Author |
-| --- | --- |
+| --- | --- | --- |
 | RadRibbonBar for WinForms | 2024.2.514 | Nadya Todorova|
 
 ## Description
