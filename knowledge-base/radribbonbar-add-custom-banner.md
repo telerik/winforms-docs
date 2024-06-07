@@ -13,7 +13,7 @@ ticketid: 1653851
 
 | Product | Version | Author |
 | --- | --- | --- |
-| RadRibbonBar for WinForms | 2024.2.514 | Nadya Todorova|
+| RadRibbonBar for WinForms | 2024.2.514 | [Nadya Todorova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
