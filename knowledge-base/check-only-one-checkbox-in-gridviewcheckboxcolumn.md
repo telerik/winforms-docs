@@ -4,6 +4,7 @@ description: Check only one checkbox in GridViewCheckBoxColumn. Check it now!
 type: how-to
 page_title: Check only one checkbox in GridViewCheckBoxColumn
 slug: check-only-one-checkbox-in-gridviewcheckboxcolumn
+tags: gridview
 res_type: kb
 ---
 

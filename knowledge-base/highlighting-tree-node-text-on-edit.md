@@ -4,6 +4,7 @@ description: Highlighting tree node text on edit. Check it now!
 type: how-to
 page_title: Highlighting tree node text on edit
 slug: highlighting-tree-node-text-on-edit
+tags: treeview
 res_type: kb
 ---
 

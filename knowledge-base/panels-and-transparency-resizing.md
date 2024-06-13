@@ -4,6 +4,7 @@ description: Panels and Transparency - Resizing. Check it now!
 type: how-to
 page_title: Panels and Transparency - Resizing
 slug: panels-and-transparency-resizing
+tags: common, doublebuffered
 res_type: kb
 ---
 

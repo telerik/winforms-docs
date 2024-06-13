@@ -5,7 +5,7 @@ type: how-to
 page_title: How To Deal with Exception related to NuGet.VisualStudio.Contracts Version=5.11.3.1
 slug: nuget-visualstudio-contract
 position: 5
-tags: contracts, error, nuget, vsx, extension
+tags: common, contracts, error, nuget, vsx, extension
 ticketid: 1612432
 res_type: kb
 ---

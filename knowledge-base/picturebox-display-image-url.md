@@ -4,7 +4,7 @@ description: Learn how to display an image from a URL in the RadPictureBox contr
 type: how-to
 page_title: How to Display Image from URL in RadPictureBox
 slug: picturebox-display-image-url
-tags: radpicturebox, winforms, url, image
+tags: picturebox, winforms, url, image
 res_type: kb
 ---
 
@@ -12,7 +12,7 @@ res_type: kb
 
 |Product Version|Product|Author|
 |----|----|----|
-|2023.3.1114|UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2023.3.1114|RadPictureBox for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 To display an image from a URL in the RadPictureBox control, you can follow these steps:

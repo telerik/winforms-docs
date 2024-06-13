@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Paste a Single Value to All Selected Cells in RadGridView
 slug: paste-a-value-to-all-selected-cells-in-the-grid
 position: 0
-tags: edit, grid, dialog
+tags: gridview, edit, grid, dialog
 res_type: kb
 ---
 

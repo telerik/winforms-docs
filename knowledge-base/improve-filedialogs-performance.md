@@ -5,7 +5,7 @@ type: how-to
 page_title:  
 slug: improve-filedialogs-performance
 position: 0
-tags: file, dialogs, performance, slow
+tags: filedialogs, file, dialogs, performance, slow
 res_type: kb
 ---
 

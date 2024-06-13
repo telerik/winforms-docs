@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Attach Telerik Source Code to Your Project 
 slug: attach-telerik-source-code-to-your-project
 position: 0
-tags: grid, custom, cell
+tags: common, grid, custom, cell
 res_type: kb
 ---
 

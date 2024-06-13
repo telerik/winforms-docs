@@ -3,7 +3,8 @@ title: Installing local documentation for MS Help viewer (Help3) in Visual Studi
 description: Installing local documentation for MS Help viewer (Help3) in Visual Studio 2010. Check it now!
 type: how-to
 page_title: Installing local documentation for MS Help viewer (Help3) in Visual Studio 2010
-slug: installing-local-documentation-for-ms-help-viewer-help3-in-visual-studio-2010
+slug: installing-local-documentation-for-ms-help-viewer-help3-in-visual-studio-2010 
+tags: common, help3
 res_type: kb
 ---
 

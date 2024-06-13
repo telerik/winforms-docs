@@ -3,7 +3,7 @@ title: “Check all” functionality in group rows
 description: “Check all” functionality in group rows. Check it now!
 type: how-to
 page_title: “Check all” functionality in group rows
-slug: check-all-functionality-in-group-rows
+slug: gridview, check-all-functionality-in-group-rows
 res_type: kb
 ---
 

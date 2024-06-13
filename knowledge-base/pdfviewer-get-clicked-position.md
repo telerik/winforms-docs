@@ -5,7 +5,7 @@ type: how-to
 page_title: PdfViewer get the clicked position on the page
 slug: pdfviewer-get-clicked-position
 position: 0
-tags:  pdf, position, page
+tags:  pdfviewer, position, page
 res_type: kb
 ---
 

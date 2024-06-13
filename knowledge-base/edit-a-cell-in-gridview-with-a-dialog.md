@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Edit a Cell in RadGridView with a Dialog
 slug: edit-a-cell-in-gridview-with-a-dialog
 position: 0
-tags: edit, grid, dialog
+tags: gridview, edit, grid, dialog
 res_type: kb
 ---
 

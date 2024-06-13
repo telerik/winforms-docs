@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Get the Most Out of the Telerik UI for WinForms Support      
 slug: submit-support-tickets
 position: 0
-tags: support, submit, ticket
+tags: common, support, submit, ticket
 res_type: kb
 ---
 

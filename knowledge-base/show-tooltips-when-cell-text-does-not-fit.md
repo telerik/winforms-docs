@@ -5,7 +5,7 @@ type: how-to
 page_title: How to show tool tips when the cell's text doesn't fit
 slug: show-tooltips-when-cell-text-does-not-fit
 position: 0
-tags: tooltip, text, grid
+tags: gridview, tooltip, text, grid
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Double Buffered Table Layout Panel
 slug: double-Buffered-table-layout-panel
 position: 
-tags: 
+tags: common, doublebufferedtablelayoutpanel, flick
 ticketid: 1180909
 res_type: kb
 ---

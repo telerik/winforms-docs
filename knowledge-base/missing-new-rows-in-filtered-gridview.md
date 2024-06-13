@@ -5,7 +5,7 @@ type: how-to
 page_title: Newly Added Rows in GridView Disappear If Filtering is Applied
 slug: missing-new-rows-in-filtered-gridview
 position: 0
-tags: splash, control, update, external
+tags: gridview, splash, control, update, external
 res_type: kb
 ---
 

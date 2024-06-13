@@ -5,7 +5,7 @@ type: how-to
 page_title: How to use different custom nodes in RadTreeView
 slug: treeview-different-custom-nodes
 position: 0 
-tags: custom nodes, treeview 
+tags: treeview, custom nodes, treeview 
 ticketid: 1172209
 res_type: kb
 ---

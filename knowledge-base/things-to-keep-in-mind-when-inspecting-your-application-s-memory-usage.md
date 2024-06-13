@@ -4,6 +4,7 @@ description: Things to keep in mind when inspecting your application's memory us
 type: how-to
 page_title: Things to keep in mind when inspecting your application's memory usage
 slug: things-to-keep-in-mind-when-inspecting-your-application-s-memory-usage
+tags: common
 res_type: kb
 ---
 

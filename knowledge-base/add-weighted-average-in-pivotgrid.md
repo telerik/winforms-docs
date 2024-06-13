@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add Weighted Average in RadPivotGrid    
 slug: add-weighted-average-in-pivotgrid
 position: 0
-tags: pivot, sum, average, weight
+tags: pivotgrid, pivot, sum, average, weight
 res_type: kb
 ---
 

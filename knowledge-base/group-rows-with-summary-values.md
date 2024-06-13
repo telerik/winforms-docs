@@ -5,7 +5,7 @@ type: how-to
 page_title: Show Summary Values for Collapsed Groups in RadGridView 
 slug: group-rows-with-summary-values
 position: 0
-tags: grid, custom, cell
+tags: gridview, custom, cell
 res_type: kb
 ---
 

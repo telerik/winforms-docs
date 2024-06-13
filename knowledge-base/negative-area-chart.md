@@ -5,7 +5,7 @@ type: how-to
 page_title: Negative Area Chart
 slug: chartview-negetive-area
 position: 0
-tags: chart, area
+tags: chartview, area, negative
 ticketid: 0
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add elements indicating the applied filters
 slug: filtering-indicators-in-gridview
 position: 18
-tags: radgridview, filtering, custom
+tags: gridview, filtering, custom
 res_type: kb
 ---
 

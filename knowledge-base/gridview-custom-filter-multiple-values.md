@@ -4,14 +4,14 @@ description: Learn how to filter the RadGridView control by multiple values with
 type: how-to
 page_title: Filtering GridView by Multiple Values in RadGridView for WinForms | Telerik UI for WinForms
 slug: gridview-custom-filter-multiple-values
-tags: radgridview, custom, filtering, multiple values
+tags: gridview, custom, filtering, multiple values
 res_type: kb
 ---
 
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2024.1.130|UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2024.1.130|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 

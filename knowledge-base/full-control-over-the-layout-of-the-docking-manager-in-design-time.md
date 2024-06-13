@@ -4,6 +4,7 @@ description: Full control over the layout of the docking manager in design-time.
 type: how-to
 page_title: Full control over the layout of the docking manager in design-time
 slug: full-control-over-the-layout-of-the-docking-manager-in-design-time
+tags: dock
 res_type: kb
 ---
 

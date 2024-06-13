@@ -5,7 +5,7 @@ type: how-to
 page_title: Indicate the Editor Type in RadGridView Columns
 slug: indicate-editor-type
 position: 0
-tags: screentips
+tags: gridview, screentips
 res_type: kb
 ---
 

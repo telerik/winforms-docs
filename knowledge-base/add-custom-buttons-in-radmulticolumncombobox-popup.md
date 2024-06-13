@@ -5,7 +5,7 @@ type: how-to
 page_title: Add custom buttons in RadMultiColumnComboBox popup
 slug: add-custom-buttons-in-radmulticolumncombobox-popup
 position: 0
-tags: popup, custom, buttons, radmulticolumncombobox
+tags: multicolumncombobox, popup, custom, buttons, radmulticolumncombobox
 res_type: kb
 ---
 

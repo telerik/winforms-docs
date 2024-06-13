@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Deal with AntiVirus Alerts
 slug: antivirus-alert
 position: 5
-tags: alert, virus, malware
+tags: common, alert, virus, malware
 ticketid: 1450364
 res_type: kb
 ---

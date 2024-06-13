@@ -4,6 +4,7 @@ description: Adding a WinForms control to a Ribbon Bar. Check it now!
 type: how-to
 page_title: Adding a WinForms control to a Ribbon Bar
 slug: adding-a-winforms-control-to-a-ribbon-bar
+tags: ribbonbar
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Edit a Multi-page TIFF Image
 slug: edit-multi-page-tiff-image
 position: 39
-tags: image, tiff, editor
+tags: imageeditor, image, tiff, editor
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Change the Font of Telerik RadControls   
 slug: change-the-font
 position: 5
-tags: control, font
+tags: common, control, font
 ticketid: 1526097
 res_type: kb
 ---

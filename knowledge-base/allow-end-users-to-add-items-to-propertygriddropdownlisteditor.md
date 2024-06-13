@@ -5,7 +5,7 @@ type: how-to
 page_title: How to allow end-users to add custom items to PropertyGridDropDownListEditor 
 slug: allow-end-users-to-add-items-to-propertygriddropdownlisteditor
 position: 0
-tags: edit, propertygridgrid, dialog
+tags: propertygrid, edit, propertygridgrid, dialog
 res_type: kb
 ---
 

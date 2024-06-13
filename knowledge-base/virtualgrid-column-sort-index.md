@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Show Column Sort Index in VirtualGrid
 slug: virtualgrid-column-sort-index
 position: 0
-tags: column,index,sort, virtualgrid,
+tags: virtualgrid, column,index,sort, virtualgrid,
 res_type: kb
 ---
 

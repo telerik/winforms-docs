@@ -5,7 +5,7 @@ type: how-to
 page_title: Emulate Cell Merge in RadGridView
 slug:  emulate-cell-merge-in-radgridview
 position: 0
-tags: cell, merge, radgridview
+tags: gridview, cell, merge, radgridview
 res_type: kb
 ---
 

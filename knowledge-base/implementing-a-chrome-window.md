@@ -4,6 +4,7 @@ description: Implementing a chrome window. Check it now!
 type: how-to
 page_title: Implementing a chrome window
 slug: implementing-a-chrome-window
+tags: common, chrome, window
 res_type: kb
 ---
 

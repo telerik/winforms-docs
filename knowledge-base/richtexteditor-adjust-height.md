@@ -5,7 +5,7 @@ type: how-to
 page_title: How To Dynamically Adjust RadRichTextEditor Height To Fit Its Content
 slug:  richtexteditor-adjust-height
 position: 75
-tags: fit, height, richtexteditor
+tags: richtexteditor, fit, height, 
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Bind GridView to a Local SQL Server 
 slug: gridview-databinding-tutorial-sql-server
 position: 39
-tags: grid, binding, sql, serve, data
+tags: gridview, binding, sql, serve, data
 res_type: kb
 ---
 

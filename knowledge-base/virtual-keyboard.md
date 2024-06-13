@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create a Virtual Keyboard
 slug: virtual-keyboard
 position: 0
-tags: keyboard
+tags: common, virtualkeyboard
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: Add two or more controls in one cell in RadGridView
 slug: add-two-or-more-controls-in-one-cell-in-grid
 position: 0
-tags: custom, cell, radgridview
+tags: gridview, custom, cell, radgridview
 res_type: kb
 ---
 

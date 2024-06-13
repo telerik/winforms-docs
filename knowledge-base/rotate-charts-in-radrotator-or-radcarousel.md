@@ -4,6 +4,7 @@ description: Rotate charts in RadRotator or RadCarousel. Check it now!
 type: how-to
 page_title: Rotate charts in RadRotator or RadCarousel
 slug: rotate-charts-in-radrotator-or-radcarousel
+tags: carousel
 res_type: kb
 ---
 

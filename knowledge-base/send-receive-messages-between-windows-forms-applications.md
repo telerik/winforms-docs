@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Send and Receive Messages Between Windows Forms Applications
 slug: send-receive-messages-between-windows-forms-applications
 position: 5
-tags: send, receive, message, process, applications
+tags: common, send, receive, message, process, applications
 ticketid: 1584372
 res_type: kb
 ---

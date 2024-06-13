@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Prevent Applying Formatting To Other Columns In RadGridView CellElements
 slug: customize-grid-data-cell-element
 position: 5
-tags: grid, data, row, column, cell element
+tags: gridview, data, row, column, cell element
 res_type: kb
 ---
 

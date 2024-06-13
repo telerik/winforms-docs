@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Migrate a WinForms .NET Framework Project to .NET Core
 slug: migare-net-framework-project-to-core
 position: 0
-tags: migrate, project, framework, core, net
+tags: common, migrate, project, framework, core, net
 res_type: kb
 ---
 

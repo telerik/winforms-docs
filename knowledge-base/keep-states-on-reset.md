@@ -5,7 +5,7 @@ type: how-to
 page_title: Save and Restore the rows states when resetting. 
 slug: keep-states-on-reset
 position: 0
-tags: grid, 
+tags: gridview, save, restore, load 
 ticketid: 1414148
 res_type: kb
 ---

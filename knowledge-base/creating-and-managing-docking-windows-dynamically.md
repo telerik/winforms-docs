@@ -4,6 +4,7 @@ description: Creating and managing docking windows dynamically. Check it now!
 type: how-to
 page_title: Creating and managing docking windows dynamically
 slug: creating-and-managing-docking-windows-dynamically
+tags: dock
 res_type: kb
 ---
 

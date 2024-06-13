@@ -5,7 +5,7 @@ type: how-to
 page_title: Mixing BestFit and Fill Modes for the GridView's Columns  
 slug: mixing-bestfit-and-fill-mode-in-gridview
 position: 5
-tags: grid, column, size, bestfit, fill
+tags: gridview, column, size, bestfit, fill
 ticketid: 1510029
 res_type: kb
 ---

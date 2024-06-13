@@ -4,6 +4,7 @@ description: Printing RadGridView via Telerik Reporting. Check it now!
 type: how-to
 page_title: Printing RadGridView via Telerik Reporting
 slug: printing-radgridview-via-telerik-reporting
+tags: gridview, reporting, print
 res_type: kb
 ---
 

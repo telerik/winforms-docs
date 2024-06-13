@@ -4,6 +4,7 @@ description: Grouping by GridViewImageColumn. Check it now!
 type: how-to
 page_title: Grouping by GridViewImageColumn
 slug: grouping-by-gridviewimagecolumn
+tags: gridview, group, gridviewimagecolumn
 res_type: kb
 ---
 

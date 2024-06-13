@@ -5,7 +5,7 @@ type: how-to
 page_title: Appointment is not deleted from the AppointmentsResources Table
 slug: scheduler-delete-appointments
 position: 0
-tags: gridview, copy, drag
+tags: scheduler, appointment, appointmentsresources
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: Clickable Screentips in RadGridView
 slug: clickable-screentips
 position: 0
-tags: screentips
+tags: gridview, screentips
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: User-Defined Values in RadMultiColumnComboBox
 slug: user-defined-values-in-multicolumncombobox
 position: 39
-tags: multicolumn, filter, custom, input, defined
+tags: multicolumncombobox, filter, custom, input, defined
 res_type: kb
 ---
 

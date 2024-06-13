@@ -4,6 +4,7 @@ description: Search box. Check it now!
 type: how-to
 page_title: Search box
 slug: search-box
+tags: common
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to drag a file from the File Explorer and drop it to RadGridView
 slug: drag-drop-from-file-explorer-to-Telerik-controls
 position: 0
-tags: drag, drop, grid, winforms
+tags: gridview, drag, drop, grid, winforms, fileexplorer
 res_type: kb
 ---
 

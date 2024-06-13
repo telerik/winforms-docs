@@ -5,7 +5,7 @@ type: how-to
 page_title: 
 slug: validate-user-action-when-removing-items-from-radautocompletebox
 position: 0
-tags: virtualkeyboard, customize
+tags: autocompletebox, customize
 res_type: kb
 ---
 

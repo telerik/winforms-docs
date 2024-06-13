@@ -5,7 +5,7 @@ type: how-to
 page_title: How to keep the sort order after grouping in RadGridView
 slug: sort-order-after-grouping-in-gridview
 position: 0
-tags: sort, grouping, grid, winforms
+tags: gridview, sort, grouping, grid, winforms
 res_type: kb
 ---
 

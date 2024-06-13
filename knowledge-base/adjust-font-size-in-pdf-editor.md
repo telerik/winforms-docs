@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Adjust Font Size for the Text Fields in PDF Forms
 slug: adjust-font-size-in-pdf-editor
 position: 0
-tags: edit, pdf, viewer, font, size, auto, scale, shrink
+tags: pdfviewer, edit, pdf, viewer, font, size, auto, scale, shrink
 res_type: kb
 ---
 

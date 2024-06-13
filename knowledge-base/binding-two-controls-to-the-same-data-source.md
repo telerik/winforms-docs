@@ -4,6 +4,7 @@ description: Binding two controls to the same data source. Check it now!
 type: how-to
 page_title: Binding two controls to one and the same data source
 slug: binding-two-controls-to-the-same-data-source
+tags: common
 res_type: kb
 ---
 

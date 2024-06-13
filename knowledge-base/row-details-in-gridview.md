@@ -5,7 +5,7 @@ type: how-to
 page_title: Show Row Details in RadGridView
 slug: row-details-in-gridview
 position: 0
-tags: grid, row, details
+tags: gridview, row, details
 res_type: kb
 ---
 

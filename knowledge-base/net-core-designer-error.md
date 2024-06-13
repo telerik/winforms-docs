@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: Form's Designer doesn't Open in .NET Core   
 slug: net-core-designer-error
 position: 0
-tags: syntaxeditor, intelliprompts
+tags: common, designer, netcore, intelliprompts
 res_type: kb
 ---
 

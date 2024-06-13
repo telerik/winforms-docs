@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Achieve Custom Save Button in RichTextEditorRibbonBar
 slug: richtext-ribbon-ui-custom-save
 position: 39
-tags: richtext, ribbon, save, custom
+tags: richtexteditor, ribbon, save, custom
 res_type: kb
 ---
 

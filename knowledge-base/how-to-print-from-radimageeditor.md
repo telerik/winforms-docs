@@ -5,7 +5,7 @@ type: how-to
 page_title: 
 slug: how-to-print-from-radimageeditor
 position: 0
-tags: radimageeditor, print, image
+tags: imageeditor, print, image
 res_type: kb
 ---
 

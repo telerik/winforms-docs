@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Filter a GridViewComboBoxColumn by DisplayMember 
 slug: filter-gridviewcomboboxcolumn-by-display-member
 position: 0
-tags: grid, combo, filter
+tags: gridview, combo, filter
 res_type: kb
 ---
 

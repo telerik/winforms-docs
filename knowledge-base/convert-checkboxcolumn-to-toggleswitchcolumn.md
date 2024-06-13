@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Convert a GridViewCheckBoxColumn to a Custom ToggleSwitch Column
 slug: convert-checkboxcolumn-to-toggleswitchcolumn
 position: 5
-tags: grid, checkbox, toggle, toggleswitch, column
+tags: gridview, checkbox, toggle, toggleswitch, column
 ticketid: 1583715
 res_type: kb
 ---

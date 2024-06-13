@@ -5,7 +5,7 @@ type: how-to
 page_title: How to get all filtered rows in RadGridView with paging
 slug: get-all-filtered-rows-in-gridview-with-paging
 position: 0
-tags: filter, paging, grid
+tags: gridview, filter, paging, grid
 res_type: kb
 ---
 

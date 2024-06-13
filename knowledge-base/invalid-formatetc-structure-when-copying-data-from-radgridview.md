@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Deal with "Invalid FORMATETC structure" Error when Copying Data from RadGridView
 slug: invalid-formatetc-structure-when-copying-data-from-radgridview
 position: 5
-tags: grid, copy, invalid, formatetc
+tags: gridview, copy, invalid, formatetc
 ticketid: 1492104
 res_type: kb
 ---

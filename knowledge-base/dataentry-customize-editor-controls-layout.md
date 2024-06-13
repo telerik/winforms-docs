@@ -5,7 +5,7 @@ type: how-to
 page_title: How to customize DataEntry Item Label and Editor controls
 slug: dataentry-customize-editor-controls-layout
 position: 0
-tags: RadDataentry, DataEntry, Editor, UI for Winforms, Winforms, Customize Editor, Customize Layout
+tags: dataentry, RadDataEntry, Editor, UI for Winforms, Winforms, Customize Editor, Customize Layout
 ticketid: 1167646
 res_type: kb
 ---

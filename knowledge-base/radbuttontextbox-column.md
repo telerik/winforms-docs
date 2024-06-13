@@ -5,7 +5,7 @@ type: how-to
 page_title: RadButtonTextBoxColumn in RadGridView
 slug: radButtontextboxcolumn
 position: 0
-tags: radgridview, column, winforms
+tags: gridview, column, winforms, buttontextboxcolumn
 res_type: kb
 ---
 

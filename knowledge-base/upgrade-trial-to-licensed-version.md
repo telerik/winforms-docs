@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Upgrade Trial to Licensed Version
 slug: upgrade-trial-to-licensed-version
 position: 
-tags: 
+tags: common
 ticketid: 1619579
 res_type: kb
 ---

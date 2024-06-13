@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Build GridView Hierarchy with Multiple Tabs 
 slug: grid-hierarchy-with-multiple-tabs
 position: 39
-tags: grid, hierarchy, multiple, tab
+tags: gridview, hierarchy, multiple, tab
 res_type: kb
 ---
 

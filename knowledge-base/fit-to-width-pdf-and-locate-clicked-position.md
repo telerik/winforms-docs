@@ -5,7 +5,7 @@ type: how-to
 page_title: Fit to Width RadPdfViewer and Scroll to the Clicked Position   
 slug: fit-to-width-pdf-and-locate-clicked-position 
 position: 1517959
-tags: pdf, click, position, fit
+tags: pdfviewer, click, position, fit
 ticketid: 0
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to AutoSize GridView's Row While Editing
 slug: row-autosizing-while-editing
 position: 5
-tags: grid, autosize, edit, multiline
+tags: gridview, autosize, edit, multiline
 ticketid: 1521435
 res_type: kb
 ---

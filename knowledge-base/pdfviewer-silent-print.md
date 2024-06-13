@@ -5,7 +5,7 @@ type: how-to
 page_title: PDF Silent Print
 slug: pdfviewer-silent-print
 position: 0
-tags: pdf, print
+tags: pdfviewer, print
 ticketid: 0
 res_type: kb
 ---

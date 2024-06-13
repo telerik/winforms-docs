@@ -5,7 +5,7 @@ type: how-to
 page_title: Tutorial - Create a Custom Theme Component
 slug: tutorial-custom-theme-component
 position: 5
-tags: theme, component, custom, style
+tags: common, theme, component, custom, style
 ticketid: 1585781
 res_type: kb
 ---
@@ -14,7 +14,7 @@ res_type: kb
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2022.3.913|RadGridView for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
+|2022.3.913|UI for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
 
 ## Description
 

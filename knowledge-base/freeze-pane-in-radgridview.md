@@ -4,12 +4,13 @@ description: Freeze Pane in RadGridView. Check it now!
 type: how-to
 page_title: Freeze Pane in RadGridView
 slug: freeze-pane-in-radgridview
+tags: gridview, freeze, pane
 res_type: kb
 ---
 
 |Date Posted|Product|Author|
 |----|----|----|
-|March 17, 2016|RadGridView|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
+|March 17, 2016|RadGridView for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Problem
 

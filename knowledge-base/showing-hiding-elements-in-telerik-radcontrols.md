@@ -4,6 +4,7 @@ description: Showing/hiding elements in Telerik RadControls. Check it now!
 type: how-to
 page_title: Showing/hiding elements in Telerik RadControls
 slug: showing-hiding-elements-in-telerik-radcontrols
+tags: common
 res_type: kb
 ---
 

@@ -4,6 +4,7 @@ description: RadScheduler with multiple resources. Check it now!
 type: how-to
 page_title: RadScheduler with multiple resources
 slug: radscheduler-with-multiple-resources
+tags: scheduler, multiple, resources
 res_type: kb
 ---
 

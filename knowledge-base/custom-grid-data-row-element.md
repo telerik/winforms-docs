@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create a Custom Data Row Element in RadGridView
 slug: custom-grid-data-row-element
 position: 39
-tags: grid, data, row, element
+tags: gridview, data, row, element
 res_type: kb
 ---
 

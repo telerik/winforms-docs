@@ -5,7 +5,7 @@ type: how-to
 page_title: How to drag and drop task items from RadGanttView to RadScheduler.
 slug: drag-and-drop-from-ganttview-to-scheduler
 position: 0
-tags: gantt, scheduler, drag, drop
+tags: ganttview, scheduler, drag, drop
 res_type: kb
 ---
 

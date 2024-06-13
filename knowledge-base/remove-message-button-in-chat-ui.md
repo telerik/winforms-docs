@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add a remove button in ChatUI's messages.
 slug: remove-message-button-in-chat-ui
 position: 0
-tags: listview, wrap
+tags: chat, wrap, remove, button
 res_type: kb
 ---
 

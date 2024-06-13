@@ -5,7 +5,7 @@ type: how-to
 page_title: Formatting Priority Order in RadGridView
 slug: gridview-cells-rows-formatting-priority
 position: 39
-tags: grid, formatting, priority, style
+tags: gridview, formatting, priority, style
 res_type: kb
 ---
 

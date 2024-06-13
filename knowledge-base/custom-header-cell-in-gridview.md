@@ -5,7 +5,7 @@ type: how-to
 page_title: Create Custom Header Cells in RadGridView  
 slug: custom-header-cell-in-gridview
 position: 5
-tags: grid, column, cell, header, custom
+tags: gridview, column, cell, header, custom
 ticketid: 1504254
 res_type: kb
 ---

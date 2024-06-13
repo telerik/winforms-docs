@@ -4,6 +4,7 @@ description: Performance considerations. Check it now!
 type: how-to
 page_title: Performance considerations
 slug: performance-considerations
+tags: common, performance, considerations, improve
 res_type: kb
 ---
 

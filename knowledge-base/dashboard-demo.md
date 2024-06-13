@@ -5,7 +5,7 @@ type: how-to
 page_title: Dashboard Demo  
 slug: dashboard-demo
 position: 34
-tags: dashboard, kanban 
+tags: common, dashboard, kanban 
 res_type: kb
 ---
 

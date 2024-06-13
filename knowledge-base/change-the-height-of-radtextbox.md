@@ -4,6 +4,7 @@ description: Change the height of RadTextBox. Check it now!
 type: how-to
 page_title: Change the height of RadTextBox
 slug: change-the-height-of-radtextbox
+tags: textbox
 res_type: kb
 ---
 

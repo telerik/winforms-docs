@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Deal with Disappearing Event Handlers after Opening the Designer for a Converted WinForms Project   
 slug: missing-event-handlers-after-converting-the-project-and-opening-the-designer
 position: 5
-tags: converter, winforms, missing, event, designer
+tags: common, converter, winforms, missing, event, designer
 ticketid: 1512756
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Translate the Month Names in RadPivotGrid
 slug: translate-month-names-in-pivotgrid
 position: 0
-tags: pivot, translate, month, localize, culture
+tags: pivotgrid, translate, month, localize, culture
 res_type: kb
 ---
 

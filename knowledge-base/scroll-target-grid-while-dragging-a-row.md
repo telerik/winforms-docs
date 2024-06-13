@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Scroll the Target Grid while Dragging a Row
 slug: scroll-target-grid-while-dragging-a-row
 position: 5
-tags: grid, scroll, drag
+tags: gridview, scroll, drag
 ticketid: 1587346
 res_type: kb
 ---

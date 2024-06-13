@@ -5,7 +5,7 @@ type: how-to
 page_title: Use RadPopupEditor in RadGridView
 slug: gridpopupeditor
 position: 0
-tags: radgridview, popupeditor
+tags: gridview, popupeditor
 res_type: kb
 ---
 

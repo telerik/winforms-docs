@@ -5,14 +5,14 @@ type: how-to
 page_title: How to Add Backspace Key to VirtualKeyboard in Numpad Mode
 slug: virtual-keyboard-add-key
 position: 0
-tags: keyboard
+tags: virtualkeyboard
 res_type: kb
 ---
  
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2022.2.511|RadChartView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2022.2.511|RadVirtualKeyboard for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
  
 
 ## Description

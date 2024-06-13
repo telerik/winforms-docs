@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Customize a Theme    
 slug: customize-a-theme
 position: 5
-tags: theme, update, style, customize
+tags: common, theme, update, style, customize
 ticketid: 1514055
 res_type: kb
 ---

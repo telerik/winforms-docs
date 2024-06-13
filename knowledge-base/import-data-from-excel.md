@@ -5,7 +5,7 @@ type: how-to
 page_title: Import data from excel
 slug: import-data-from-excel
 position: 0
-tags: import,data excel
+tags: gridview, import,data excel
 res_type: kb
 ---
 

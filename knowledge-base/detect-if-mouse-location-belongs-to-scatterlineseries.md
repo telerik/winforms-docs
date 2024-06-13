@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Detect if Mouse Click Location Belongs to ScatterLineSeries
 slug: detect-if-mouse-location-belongs-to-scatterlineseries
 position: 0
-tags: edit, propertygridgrid, dialog, confirm, dialog, message
+tags: chartview, scatterlineseries, mouse, location
 res_type: kb
 ---
 

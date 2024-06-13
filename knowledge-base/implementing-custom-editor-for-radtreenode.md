@@ -4,6 +4,7 @@ description: Implementing custom editor for RadTreeNode. Check it now!
 type: how-to
 page_title: Implementing custom editor for RadTreeNode
 slug: implementing-custom-editor-for-radtreenode
+tags: treeview, custom, editor, treenode
 res_type: kb
 ---
 

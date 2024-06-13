@@ -4,6 +4,7 @@ description: Use Gauge Element Inside other Controls. . Check it now!
 type: how-to
 page_title: Use Gauge Element Inside other Controls. 
 slug: use-gauge-element-inside-other-controls
+tags: radialgauge
 res_type: kb
 ---
 

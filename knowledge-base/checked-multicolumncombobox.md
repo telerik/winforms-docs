@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Achieve Checked RadMultiColumnComboBox       
 slug: checked-multicolumncombobox
 position: 0
-tags: gridview, print
+tags: multicolumncombobox, print
 res_type: kb
 ---
 

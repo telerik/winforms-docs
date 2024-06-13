@@ -4,6 +4,7 @@ description: Mixing default and custom sorting in multisort scenario. Check it n
 type: how-to
 page_title: Mixing default and custom sorting in multisort scenario
 slug: mixing-default-and-custom-sorting-in-multisort-scenario
+tags: gridview, sorting, custom, mix, default
 res_type: kb
 ---
 

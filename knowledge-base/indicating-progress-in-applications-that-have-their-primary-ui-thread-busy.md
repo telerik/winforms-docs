@@ -4,6 +4,7 @@ description: Indicating progress in applications that have their primary UI thre
 type: how-to
 page_title: Indicating progress in applications that have their primary UI thread busy
 slug: indicating-progress-in-applications-that-have-their-primary-ui-thread-busy
+tags: gridview, ui, thread, primary
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: Auto-Fit RadRichTextEditor
 slug:  auto-fit-richtexteditor
 position: 0
-tags: fit, width, richtexteditor
+tags: richtexteditor, fit, width
 res_type: kb
 ---
 

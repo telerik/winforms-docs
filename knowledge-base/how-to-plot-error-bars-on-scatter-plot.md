@@ -5,7 +5,7 @@ type: how-to
 page_title: How to error bars (x-y) on a scatter plot  
 slug: how-to-plot-error-bars-on-scatter-plot
 position: 5
-tags: chart, image, scatter, error, bars
+tags: chartview, image, scatter, error, bars
 ticketid: 1503128
 res_type: kb
 ---

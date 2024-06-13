@@ -5,7 +5,7 @@ type: how-to
 page_title: How to create GridViewMarkupEditorColumn
 slug: create-gridview-markupeditor-column
 position: 0
-tags: radgridview, markupeditor, column,
+tags: gridview, markupeditor, column,
 res_type: kb
 ---
 

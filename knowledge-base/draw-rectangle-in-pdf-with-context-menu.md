@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Get the Context Menu's Coordinates and Draw a Rectangle in PdfViewer  
 slug: draw-rectangle-in-pdf-with-context-menu
 position: 1613686
-tags: pdf, click, position, draw, rect
+tags: pdfviewer, click, position, draw, rect
 ticketid: 0
 res_type: kb
 ---

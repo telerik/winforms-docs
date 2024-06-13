@@ -4,6 +4,7 @@ description: How to play video files. Check it now!
 type: how-to
 page_title: How to play video files
 slug: how-to-play-video-files
+tags: common, video, play
 res_type: kb
 ---
 

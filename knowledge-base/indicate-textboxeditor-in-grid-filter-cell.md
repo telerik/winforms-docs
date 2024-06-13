@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Indicate RadTextBoxEditor in Grid Filter Cells
 slug: indicate-textboxeditor-in-grid-filter-cell
 position: 39
-tags: grid, filter, textbox, editor
+tags: gridview, filter, textbox, editor
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to DragDrop from MS TreeView to RadSyntaxEditor
 slug: syntaxeditor-dragdrop-ms-treeview
 position: 
-tags: microsoft,native,ms,treeview, radsyntaxeditor, dragdrop,ole dragdrop,itemdrag,dragover,dragdrop
+tags: syntaxeditor, microsoft,native,ms,treeview, radsyntaxeditor, dragdrop,ole dragdrop,itemdrag,dragover,dragdrop
 ticketid: 1605384
 res_type: kb
 ---

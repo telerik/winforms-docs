@@ -5,7 +5,7 @@ type: how-to
 page_title: Restricting Zoom Interval in RadChartView
 slug: radchartview-restrict-zoom-interval
 position: 36
-tags: chart, restrict, zoom, interval
+tags: chartview, restrict, zoom, interval
 ticketid: 1380584
 res_type: kb
 ---

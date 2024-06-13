@@ -5,7 +5,7 @@ type: how-to
 page_title: How to display async screentip in RadGridView
 slug: gridview-async-screentip
 position: 
-tags: grid,screentip,backgroundworker
+tags: gridview,screentip,backgroundworker
 ticketid: 628455
 res_type: kb
 ---

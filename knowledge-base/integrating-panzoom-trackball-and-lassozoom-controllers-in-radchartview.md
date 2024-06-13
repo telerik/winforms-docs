@@ -4,6 +4,7 @@ description: Integrating PanZoom, TrackBall and LassoZoom Controllers in RadChar
 type: how-to
 page_title: Integrating PanZoom, TrackBall and LassoZoom Controllers in RadChartView
 slug: integrating-panzoom-trackball-and-lassozoom-controllers-in-radchartview
+tags: chartview, panzoom, lassozoom, trackball
 res_type: kb
 ---
 

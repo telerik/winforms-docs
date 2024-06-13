@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Properly Search Numeric Values in RadGridView
 slug: grid-searching-in-formated-decimal-columns
 position: 39
-tags: grid, search, numeric, number, decimal, format
+tags: gridview, search, numeric, number, decimal, format
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Change PageViewMode for the Nested Levels in RadGridView   
 slug: pageview-mode-in-nested-gridview-levels
 position: 5
-tags: grid, nested, hierarchy
+tags: gridview, nested, hierarchy
 ticketid: 1500326
 res_type: kb
 ---

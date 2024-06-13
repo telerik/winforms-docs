@@ -5,7 +5,7 @@ type: how-to
 page_title: Task Card Edit Dialog
 slug: task-board-edit-dialog
 position: 5
-tags: kanban, taskboard, edit, dialog, task, card 
+tags: taskboard, kanban, edit, dialog, task, card 
 res_type: kb
 ---
 

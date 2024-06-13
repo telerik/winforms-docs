@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Display and Edit HTML Text in GridView Cells
 slug: display-and-edit-html-text-in-grid-cells
 position: 39
-tags: grid, html, display, edit, markup
+tags: gridview, html, display, edit, markup
 res_type: kb
 ---
 

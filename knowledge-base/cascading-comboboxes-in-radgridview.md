@@ -4,6 +4,7 @@ description: Cascading ComboBoxes in RadGridView. Check it now!
 type: how-to
 page_title: Cascading ComboBoxes in RadGridView
 slug: cascading-comboboxes-in-radgridview
+tags: gridview
 res_type: kb
 ---
 

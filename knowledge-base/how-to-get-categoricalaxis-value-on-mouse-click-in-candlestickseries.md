@@ -5,7 +5,7 @@ type: how-to
 page_title: How to get CategoricalAxis value on mouse click in CandleStickSeries
 slug: how-to-get-categoricalaxis-value-on-mouse-click-in-candlestickseries
 position: 0
-tags: radchartciew, candlestickseries, value
+tags: chartview, candlestickseries, value, categoricalaxis
 res_type: kb
 ---
 

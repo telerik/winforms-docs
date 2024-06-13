@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Draw Rectangles over Pdf Documents
 slug: draw-rectangles-over-pdf-document
 position: 0
-tags: pdf, draw, rectangle
+tags: pdfviewer, draw, rectangle
 res_type: kb
 ---
 

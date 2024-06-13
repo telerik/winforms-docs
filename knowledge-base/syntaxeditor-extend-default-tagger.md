@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add New Keyword to Existing Tagger
 slug: syntaxeditor-extend-default-tagger
 position: 
-tags: radsyntaxeditor, csharptagger,extend,keyword
+tags: syntaxeditor, csharptagger, extend, keyword
 ticketid: 1601098
 res_type: kb
 ---
@@ -13,7 +13,7 @@ res_type: kb
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2023.1.314|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2023.1.314|RadSyntaxEditor for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 
 ## Description

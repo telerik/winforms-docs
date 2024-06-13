@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Modify Themes Programmatically    
 slug: modify-themes-programmatically
 position: 5
-tags: theme, modify, style, customize, 
+tags: common, theme, modify, style, customize, 
 ticketid: 1514055
 res_type: kb
 ---

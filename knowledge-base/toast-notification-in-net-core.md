@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Use ToastNotification in .NET 5/.NET 6 
 slug: toast-notification-in-net-core
 position: 0
-tags: net, core, toast, notification
+tags: toastnotification, net, core, toast, notification
 res_type: kb
 ---
 

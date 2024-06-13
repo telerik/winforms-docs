@@ -4,6 +4,7 @@ description: Installing local documentation for MS Help viewer (Help3) in Visual
 type: how-to
 page_title: Installing local documentation for MS Help viewer (Help3) in Visual Studio 2012 and 2013
 slug: installing-local-documentation-for-ms-help-viewer-(help3)-in-visual-studio-2012-and-2013
+tags: common, help3
 res_type: kb
 ---
 

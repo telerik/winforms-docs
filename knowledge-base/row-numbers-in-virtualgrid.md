@@ -5,7 +5,7 @@ type: how-to
 page_title: Row Numbers in RadVirtualGrid
 slug: row-numbers-in-virtualgrid
 position: 0
-tags: treeview, search, highlight
+tags: virtualgrid, search, highlight
 res_type: kb
 ---
 

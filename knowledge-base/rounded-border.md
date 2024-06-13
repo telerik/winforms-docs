@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Achieve Rounded Shape and Border for RadTextBox
 slug: rounded-border
 position: 5
-tags: rounded, shape, border
+tags: textbox, rounded, shape, border
 ticketid: 1521435
 res_type: kb
 ---

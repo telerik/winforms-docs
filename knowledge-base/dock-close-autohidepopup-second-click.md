@@ -5,7 +5,7 @@ type: how-to
 page_title:  How to Close the AutoHide Popup By Double-Clicking its TabStripItem
 slug: dock-close-autohidepopup-second-click
 position: 29
-tags: dock,autohidepopup,popup,dockstate, doubleclick, double
+tags: dock, autohidepopup,popup,dockstate, doubleclick, double
 res_type: kb
 ---
 

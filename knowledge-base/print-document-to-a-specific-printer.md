@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Print Documents to a Specific Printer
 slug: print-document-to-a-specific-printer
 position: 5
-tags: print, document, printer, name
+tags: common, print, document, printer, name
 ticketid: 1583027
 res_type: kb
 ---

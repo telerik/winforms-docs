@@ -5,7 +5,7 @@ type: how-to
 page_title: How to format the group key of a DateTime valuer in RadGridView
 slug: grid-format-group-key
 position: 30
-tags: radgridview, grouping, key, datetime
+tags: gridview, grouping, key, datetime
 res_type: kb
 ---
 

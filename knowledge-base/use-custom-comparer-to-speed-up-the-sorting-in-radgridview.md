@@ -4,6 +4,7 @@ description: Use Custom Comparer to Speed up the Sorting in RadGridView. Check i
 type: how-to
 page_title: Use Custom Comparer to Speed up the Sorting in RadGridView
 slug: use-custom-comparer-to-speed-up-the-sorting-in-radgridview
+tags: gridview
 res_type: kb
 ---
 

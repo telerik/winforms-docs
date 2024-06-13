@@ -5,7 +5,7 @@ type: how-to
 page_title: Filter RadGridView by custom types
 slug:  filter-grid-by-custom-type
 position: 0
-tags: filter, grid, custom type
+tags: gridview, filter, grid, custom type
 res_type: kb
 ---
 

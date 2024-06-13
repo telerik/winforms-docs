@@ -5,7 +5,7 @@ type: how-to
 page_title: How to show tooltip on disabled element in RibbonBar
 slug: ribbon-disabled-tooltip
 position: 0
-tags: disabled, tooltip
+tags: ribbonbar, disabled, tooltip
 ticketid: 1339897 
 res_type: kb
 ---

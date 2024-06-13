@@ -4,6 +4,7 @@ description: Notification Button. Check it now!
 type: how-to
 page_title: Notification Button
 slug: notification-button
+tags: button, notification
 res_type: kb
 ---
 

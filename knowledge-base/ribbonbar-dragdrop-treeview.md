@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add Drag-Drop functionalities from RadRibbonBar to RadTreeView.
 slug: ribbonbar-dragdrop-treeview
 position: 0
-tags: ribbonbar, dragdrop,drag-drop,
+tags: ribbonbar, dragdrop,drag-drop, treeview
 res_type: kb
 ---
 

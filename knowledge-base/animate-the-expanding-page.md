@@ -4,6 +4,7 @@ description: Animate the page expanding in RadPageView with ExplorerBar view . C
 type: how-to
 page_title: Animate the page expanding in RadPageView with ExplorerBar view 
 slug: animate-the-expanding-page
+tags: pageview
 res_type: kb
 ---
 

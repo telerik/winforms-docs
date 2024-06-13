@@ -5,7 +5,7 @@ type: how-to
 page_title: App becomes DPI-aware at runtime
 slug: app-becomes-dpi-aware
 position: 0
-tags: dpi, hdpi
+tags: common, dpi, hdpi
 res_type: kb
 ---
 

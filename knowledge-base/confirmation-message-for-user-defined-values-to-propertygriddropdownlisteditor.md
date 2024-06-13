@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Show Confirmation Message for User-Defined Values to PropertyGridDropDownListEditor
 slug: confirmation-message-for-user-defined-values-to-propertygriddropdownlisteditor
 position: 0
-tags: edit, propertygridgrid, dialog, confirm, dialog, message
+tags: propertygrid, edit, dialog, confirm, dialog, message
 res_type: kb
 ---
 

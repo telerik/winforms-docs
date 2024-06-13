@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create Custom Cells with Input Elements
 slug: custom-gridview-cells-with-input-elements
 position: 0
-tags: cell, input, gridview
+tags: gridview, cell, input, gridview
 res_type: kb
 ---
 

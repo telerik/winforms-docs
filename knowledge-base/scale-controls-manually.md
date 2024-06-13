@@ -5,6 +5,7 @@ description: Scale Controls Manually
 slug: scale-controls-manually
 tags: scale, controls, hdpi
 published: True
+tags: common, scale
 res_type: kb
 position: 0
 ---

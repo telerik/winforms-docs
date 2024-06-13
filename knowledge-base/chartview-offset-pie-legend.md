@@ -5,7 +5,7 @@ type: how-to
 page_title: How to offset PieSeries slice by clicking on a LegendItemElement
 slug: chartview-offset-pie-legend
 position: 0
-tags: legend, chartview, offset, legenditem,click
+tags: chartview, legend, offset, legenditem,click
 ticketid: 1080106
 res_type: kb
 ---

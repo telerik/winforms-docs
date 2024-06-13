@@ -5,7 +5,7 @@ type: how-to
 page_title: Customizing the default rendering mechanism of a MapPin
 slug: radmap-custom-pins
 position: 3
-tags: radmap, pins
+tags: map, pins
 ticketid: 1156263
 res_type: kb
 ---

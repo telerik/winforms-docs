@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: WinForms Converter crashes with Visual Studio 15.8
 slug:  troubleshoot-winforms-converter
 position: 0
-tags: Winforms, converter, VisualStudio
+tags: common, Winforms, converter, VisualStudio
 res_type: kb
 ---
 

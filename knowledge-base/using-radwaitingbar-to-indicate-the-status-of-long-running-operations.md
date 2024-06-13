@@ -4,6 +4,7 @@ description: Using RadWaitingBar to indicate the status of long-running operatio
 type: how-to
 page_title: Using RadWaitingBar to indicate the status of long-running operations
 slug: using-radwaitingbar-to-indicate-the-status-of-long-running-operations
+tags: waitingbar
 res_type: kb
 ---
 
