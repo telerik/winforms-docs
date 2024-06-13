@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add Callout for StepProgressBar
 slug: callout-for-stepprogresbar
 position: 39
-tags: callout, step, progress
+tags: stepprogresbar, callout, step, progress
 res_type: kb
 ---
 

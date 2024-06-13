@@ -5,7 +5,7 @@ type: how-to
 page_title: Show Tooltips for Clipped Cell's Text
 slug: show-tooltips-for-clipped-cell-text
 position: 0
-tags: grid, custom, cell
+tags: gridview, custom, cell, tooltip
 res_type: kb
 ---
 

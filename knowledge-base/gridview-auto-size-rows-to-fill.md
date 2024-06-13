@@ -5,7 +5,7 @@ type: how-to
 page_title: How to auto-size the rows to fill the grid's height
 slug: gridview-auto-size-rows-to-fill
 position: 
-tags: grid
+tags: gridview
 ticketid: 1342664
 res_type: kb
 ---

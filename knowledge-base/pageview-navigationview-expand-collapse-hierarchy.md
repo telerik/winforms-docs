@@ -4,7 +4,7 @@ description: Learn how to collapse all subpage items in RadPageView Navigation M
 type: how-to
 page_title: How to Collapse SubPage Items in RadPageView Navigation Mode with Hierarchy
 slug: collapse-subpage-items-radpageview-navigation-mode-hierarchy
-tags: radpageview, winforms, navigation, collapse, subpage items, hierarchy
+tags: pageview, winforms, navigation, collapse, subpage items, hierarchy
 res_type: kb
 ---
 
@@ -12,7 +12,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2023.3.1114|UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2023.3.1114|RadPageView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 

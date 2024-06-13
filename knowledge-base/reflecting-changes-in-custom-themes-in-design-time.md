@@ -4,6 +4,7 @@ description: Reflecting changes in custom themes in design time. Check it now!
 type: how-to
 page_title: Reflecting changes in custom themes in design time
 slug: reflecting-changes-in-custom-themes-in-design-time
+tags: common, theme
 res_type: kb
 ---
 

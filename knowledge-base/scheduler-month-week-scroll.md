@@ -5,7 +5,7 @@ type: how-to
 page_title: How to modify mouse wheel scroll value in RadScheduler's MonthView 
 slug: scheduler-month-week-scroll
 position: 0
-tags: Scheduler, mouse, wheel, weeks, scroll
+tags: scheduler, mouse, wheel, weeks, scroll
 ticketid: 1593385
 res_type: kb
 ---

@@ -4,6 +4,7 @@ description: Create Standalone RadExpressionEditor Form. Check it now!
 type: how-to
 page_title: Create Standalone RadExpressionEditor Form
 slug: create-standalone-radexpressioneditor-form
+tags: gridview
 res_type: kb
 ---
 

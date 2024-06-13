@@ -4,6 +4,7 @@ description: GridView with visible summary cells in a collapsed group. Check it 
 type: how-to
 page_title: GridView with visible summary cells in a collapsed group
 slug: gridview-with-visible-summary-cells-in-a-collapsed-group
+tags: gridview, summary, cell, collapsed, group
 res_type: kb
 ---
 

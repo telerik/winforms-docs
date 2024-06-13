@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Embed RadRichTextEditor in GridView Cells
 slug: embed-richtexteditor-in-grid-cells
 position: 39
-tags: grid, html, display, edit, richtext
+tags: gridview, html, display, edit, richtexteditor
 res_type: kb
 ---
 

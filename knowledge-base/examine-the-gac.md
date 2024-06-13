@@ -5,7 +5,7 @@ type: how-to
 page_title: Examine the GAC and remove old assemblies
 slug: radcontrols-examine-the-gac
 position: 0
-tags: gac, assemblies, remove
+tags: common, gac, assemblies, remove
 res_type: kb
 ---
 

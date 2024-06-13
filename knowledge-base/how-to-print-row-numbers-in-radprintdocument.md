@@ -5,7 +5,7 @@ type: how-to
 page_title: 
 slug: how-to-print-row-numbers-in-radprintdocument
 position: 0
-tags: radgridview, radprintdocument, print, row, numbers
+tags: gridview, radprintdocument, print, row, numbers
 res_type: kb
 ---
 

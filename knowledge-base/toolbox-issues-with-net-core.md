@@ -5,7 +5,7 @@ type: how-to
 page_title: Handle Toolbox Issues with .NET Core   
 slug: toolbox-issues-with-net-core
 position: 0
-tags: net, core, toolbox
+tags: common, net, core, toolbox
 res_type: kb
 ---
 

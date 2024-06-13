@@ -5,7 +5,7 @@ type: how-to
 page_title: How to adopt Telerik.SvgIcons in Telerik UI for WinForms
 slug: how-to-adobt-teleik-svgicons-in-telerik-winforms
 position: 0
-tags: svg, icons, winforms
+tags: common, svg, icons, winforms
 res_type: kb
 ---
 

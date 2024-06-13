@@ -5,7 +5,7 @@ type: how-to
 page_title: How to change font in RadSaveFileDialog
 slug: change-font-radsavefiledialog
 position: 0
-tags: font, radsavefiledialog, winforms
+tags: filedialogs, font, radsavefiledialog, winforms
 res_type: kb
 ---
 

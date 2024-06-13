@@ -5,7 +5,7 @@ type: how-to
 page_title: Custom Excel-like filter popup with time part
 slug: custom-excel-like-filter-popup-with-time-part
 position: 0
-tags: filter, popup, grid, time, winforms
+tags: gridview, filter, popup, grid, time, winforms
 res_type: kb
 ---
 

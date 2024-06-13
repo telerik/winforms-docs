@@ -4,6 +4,7 @@ description: RadControls with no themes, RadControls with replaced ControlDefaul
 type: how-to
 page_title: RadControls with no themes, RadControls with replaced ControlDefault theme
 slug: radcontrols-with-no-themes-radcontrols-with-replaced-controldefault-theme
+tags: common, theme
 res_type: kb
 ---
 

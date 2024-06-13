@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Skip Rounding Decimal Values in GridView 
 slug: skip-decimal-rounding-in-gridview
 position: 39
-tags: grid, decimal, numeric, round
+tags: gridview, decimal, numeric, round
 res_type: kb
 ---
 

@@ -4,7 +4,7 @@ description: Learn how to implement drag and drop functionality for multiple sel
 type: how-to
 page_title: How to Enable Drag and Drop for MultiSelection in RadTreeView
 slug: treeview-drag-drop-preserve-multiselection
-tags: radtreeview, winforms, dragdrop, multiselect, dragdrop-effects, allowdragdrop, mousedown, mousemove
+tags: treeview, winforms, dragdrop, multiselect, dragdrop-effects, allowdragdrop, mousedown, mousemove
 res_type: kb
 category: knowledge-base
 ticketid: 1651843

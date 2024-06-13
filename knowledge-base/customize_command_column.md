@@ -5,7 +5,7 @@ type: how-to
 page_title: Customize GridViewCommandColumn 
 slug:  customize-gridviewcommandcolumn
 position: 0
-tags: RadGridView, CommandColumn 
+tags: gridview, CommandColumn 
 Res_type: kb
 ---
 

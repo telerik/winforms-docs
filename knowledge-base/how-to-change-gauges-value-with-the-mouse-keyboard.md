@@ -6,7 +6,7 @@ type: how-to
 page_title: How to change radial gauge's value with the mouse/keyboard 
 slug: radialgauge-value-changes
 position: 0 
-tags: gauge, radialgauge, value, mouse
+tags: radialgauge, gauge, value, mouse
 res_type: kb
 ---
 

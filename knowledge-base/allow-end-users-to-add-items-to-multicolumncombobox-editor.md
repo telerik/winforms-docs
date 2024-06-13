@@ -5,7 +5,7 @@ type: how-to
 page_title: Allow End-Users to Add Items to MultiColumnCombobox Editor
 slug: allow-end-users-to-add-items-to-multicolumncombobox-editor
 position: 0
-tags: grid, multicolumncombobox,custom value
+tags: gridview, grid, multicolumncombobox,custom value
 res_type: kb
 ---
 

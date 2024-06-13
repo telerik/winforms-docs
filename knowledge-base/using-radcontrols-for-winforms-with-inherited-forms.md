@@ -4,6 +4,7 @@ description: Using RadControls for WinForms with inherited forms. Check it now!
 type: how-to
 page_title: Using RadControls for WinForms with inherited forms
 slug: using-radcontrols-for-winforms-with-inherited-forms
+tags: common
 res_type: kb
 ---
 

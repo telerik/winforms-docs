@@ -4,6 +4,7 @@ description: Using RadControls for WinForms inside a WinForms validation process
 type: how-to
 page_title: Using RadControls for WinForms inside a WinForms validation process
 slug: using-radcontrols-for-winforms-inside-a-winforms-validation-process
+tags: common
 res_type: kb
 ---
 

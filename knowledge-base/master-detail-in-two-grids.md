@@ -4,6 +4,7 @@ description: Master/Detail in two grids. Check it now!
 type: how-to
 page_title: Master/Detail in two grids
 slug: master-detail-in-two-grids
+tags: gridview
 res_type: kb
 ---
 

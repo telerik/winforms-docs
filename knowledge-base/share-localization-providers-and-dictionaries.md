@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Share Localization Providers and SpellChecking Dictionaries
 slug: share-localization-providers-and-dictionaries
 position: 39
-tags: localization, provider, dictionary, spellcheck
+tags: common, localization, provider, dictionary, spellcheck
 res_type: kb
 ---
 

@@ -4,6 +4,7 @@ description: Could not load file or assembly Telerik.WinControls.XmlSerializers.
 type: how-to
 page_title: Could not load file or assembly Telerik.WinControls.XmlSerializers
 slug: could-not-load-file-or-assembly-telerik-wincontrols-xmlserializers
+tags: common
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: Reorder Columns in RadVirtualGrid
 slug: reorder-columns-in-radvirtual-grid
 position: 0
-tags: gridview, custom, cells
+tags: virtualgrid, reorder, columns
 res_type: kb
 ---
 

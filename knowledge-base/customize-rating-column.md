@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Customize Rating column
 slug: customize-rating-column
 position: 0
-tags: RadGridView, rating, heart shape 
+tags: gridview, rating, heart shape 
 res_type: kb
 ---
 

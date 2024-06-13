@@ -5,7 +5,7 @@ type: how-to
 page_title: Highlight Locked Files and Display Tooltip 
 slug: filedialogs-highlight-locked-files
 position: 
-tags: lock, process, filedialogs, tooltip
+tags: filedialogs, lock, process, filedialogs, tooltip
 ticketid: 1564699
 res_type: kb
 ---

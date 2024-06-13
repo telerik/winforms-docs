@@ -5,7 +5,7 @@ type: how-to
 page_title: Sorting group rows by date in RadGridView
 slug: sorting-group-rows-by-date-in-grid
 position: 0
-tags: sorting, group, datetime, radgridview
+tags: gridview, sorting, group, datetime, radgridview
 res_type: kb
 ---
 

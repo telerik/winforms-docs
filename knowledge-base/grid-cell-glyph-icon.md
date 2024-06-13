@@ -12,7 +12,7 @@ res_type: kb
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2022.2.622|Scheduler for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2022.2.622|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
  
 
 ## Description

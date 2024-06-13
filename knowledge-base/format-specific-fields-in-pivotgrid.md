@@ -5,7 +5,7 @@ type: how-to
 page_title: Format Specific Fields in RadPivotGrid 
 slug: format-specific-fields-in-pivotgrid
 position: 5
-tags: control, font
+tags: pivotgrid, control, font
 ticketid: 1526097
 res_type: kb
 ---

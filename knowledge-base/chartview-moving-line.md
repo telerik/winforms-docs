@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Draw a Moving Line Under the Mouse in RadChartView
 slug: chartview-moving-marker
 position: 0
-tags: mouse, annotation, chartview
+tags: chartview, mouse, annotation
 res_type: kb
 ---
 

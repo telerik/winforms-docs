@@ -4,8 +4,8 @@ description: How to show incorrect cells' values after editing the WinForms RadG
 type: how-to
 page_title: How to Indicate Errors in RadGridView
 slug: indicate-errors-in-gridview
-position: 
-tags: 
+position: 0
+tags: gridview, errors
 ticketid: 1619797
 res_type: kb
 ---

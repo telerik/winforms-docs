@@ -5,7 +5,7 @@ type: how-to
 page_title: How to create sine wave using RadChartView spline AreaSeries
 slug: chartview-sine-wave
 position: 0
-tags:  chartview, sine, area, sinus
+tags: chartview, sine, area, sinus
 ticketid: 1556729
 res_type: kb
 ---

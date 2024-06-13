@@ -5,7 +5,7 @@ type: how-to
 page_title: Pan and Zoom Control
 slug: pan-and-zoom-image-control
 position: 0
-tags: screentips
+tags: imageeditor, pan, zoom
 res_type: kb
 ---
 
@@ -13,7 +13,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2018.1.220|UI for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
+|2018.1.220|RadImageEditor for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
  
 
 ## Description

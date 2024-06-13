@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Rotate Annotation's Label in ChartView  
 slug: rotate-chart-annotation-label
 position: 0
-tags: chart, annotation, label, rotate
+tags: chartview, annotation, label, rotate
 res_type: kb
 ---
 

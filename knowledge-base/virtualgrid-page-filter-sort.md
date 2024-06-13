@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add Apply Paging with Filter and Sort Functionalities in VirtualGrid
 slug: virtualgrid-page-filter-sort
 position: 0
-tags: page,paging,filter,sort, virtualgrid
+tags: virtualgrid, page,paging,filter,sort, virtualgrid
 res_type: kb
 ---
 

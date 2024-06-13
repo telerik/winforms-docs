@@ -5,7 +5,7 @@ type: how-to
 page_title: How to find a RadTreeNode by the value
 slug: treeview-find-node-by-value
 position: 
-tags: radtreeview
+tags: treeview
 ticketid: 1174915
 res_type: kb
 ---

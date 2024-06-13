@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Achieve Barcode Column in RadGridView
 slug: barcode-column-in-gridview
 position: 5
-tags: grid, image, copy, cell
+tags: gridview, image, copy, cell
 ticketid: 1521435
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Live Data in RadVirtualGrid
 slug: live-data-in-virtualgrid
 position: 5
-tags: virtual, grid, live, data
+tags: virtualgrid, grid, live, data
 ticketid: 1591400
 res_type: kb
 ---

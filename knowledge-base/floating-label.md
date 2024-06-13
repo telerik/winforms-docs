@@ -5,7 +5,7 @@ type: how-to
 page_title: Floating RadLabel
 slug: floating-label
 position: 0
-tags: floating, label, winforms
+tags: label, floating, label, winforms
 res_type: kb
 ---
 

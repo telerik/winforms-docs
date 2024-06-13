@@ -5,7 +5,7 @@ type: how-to
 page_title: Duplicated Korean Characters in RichTextEditor
 slug: duplicated-korean-characters-in-richtexteditor
 position: 5
-tags: richtext, ime, korean, duplicate
+tags: richtexteditor, ime, korean, duplicate
 ticketid: 1500730
 res_type: kb
 ---

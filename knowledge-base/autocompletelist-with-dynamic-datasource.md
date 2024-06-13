@@ -5,7 +5,7 @@ type: how-to
 page_title: How to simulate server side autocomplete functionality in RadAutoCompleteBox/RadDropDownList
 slug: autocompletelist-with-dynamic-datasource
 position: 0
-tags: autocomplete, dropdown, dynamic, datasource
+tags: autocompletebox, dropdownlist, dropdown, dynamic, datasource
 res_type: kb
 ---
 

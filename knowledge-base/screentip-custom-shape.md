@@ -13,7 +13,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2020.2.512|RadGridView for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
+|2020.2.512|RadScreenTip for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
  
 ## Description
 

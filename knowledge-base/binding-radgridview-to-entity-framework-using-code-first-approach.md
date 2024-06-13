@@ -4,6 +4,7 @@ description: Binding RadGridView to Entity Framework Using Code First Approach. 
 type: how-to
 page_title: Binding RadGridView to Entity Framework Using Code First Approach
 slug: binding-radgridview-to-entity-framework-using-code-first-approach
+tags: gridview
 res_type: kb
 ---
 

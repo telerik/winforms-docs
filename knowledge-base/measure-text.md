@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Measure Text
 slug: measure-text
 position: 5
-tags: text, measure, font
+tags: common, text, measure, font
 ticketid: 1521435
 res_type: kb
 ---

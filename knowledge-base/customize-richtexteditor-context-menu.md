@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Customize the RichTextEditor's Context Menu items
 slug: customize-richtexteditor-context-menu
 position: 39
-tags: richtext, context, menu, items
+tags: richtexteditor, context, menu, items
 res_type: kb
 ---
 

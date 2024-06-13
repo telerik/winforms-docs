@@ -5,7 +5,7 @@ type: how-to
 page_title: How to reorder rows in bound RadGridView
 slug: gridview-drag-drop-bound-mode
 position: 
-tags: 
+tags: gridview, reorder, rows, bound, mode, drag, drop
 ticketid: 1180909
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title:  Custom Values in GridViewComboBoxColumn
 slug: free-text-in-combobox-column
 position: 0
-tags: radgridview
+tags: gridview, gridviewcomboboxcolumn
 ticketid: 111111
 res_type: kb
 ---

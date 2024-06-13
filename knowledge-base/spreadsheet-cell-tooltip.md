@@ -13,7 +13,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2023.2.606|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2023.2.606|RadSpreadsheet for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
  
 
 ## Description

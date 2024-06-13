@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create a Header CheckBox in VirtualGrid
 slug: virtualgrid-header-checkbox
 position: 0
-tags: header, checkbox, virtualgrid
+tags: virtualgrid, header, checkbox, virtualgrid
 res_type: kb
 ---
 

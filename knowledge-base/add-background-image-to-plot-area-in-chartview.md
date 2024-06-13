@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add Background Image to the Plot Area in ChartView     
 slug: add-background-image-to-plot-area-in-chartview 
 position: 5
-tags: chart, image, background
+tags: chartview, image, background
 ticketid: 1505894
 res_type: kb
 ---

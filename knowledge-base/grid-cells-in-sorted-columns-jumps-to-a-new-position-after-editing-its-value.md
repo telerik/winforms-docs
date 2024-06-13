@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: GridView Cells In Sorted Columns Jumps to a New Position After Editing Its Value  
 slug: grid-cells-in-sorted-columns-jumps-to-a-new-position-after-editing-its-value
 position: 5
-tags: grid, column, cell, sort, position
+tags: gridview, column, cell, sort, position
 ticketid: 788714
 res_type: kb
 ---

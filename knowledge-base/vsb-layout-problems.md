@@ -5,7 +5,7 @@ type: troubleshooting
 page_title: How to Deal with Layout Issues in Visual Style Builder    
 slug: vsb-layout-problems
 position: 5
-tags: vsb, layout, xml, dpi, scale
+tags: common, vsb, layout, xml, dpi, scale
 ticketid: 1464721
 res_type: kb
 ---

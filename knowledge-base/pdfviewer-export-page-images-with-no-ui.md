@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Export Each Page as an Image in PDF Documents
 slug: pdfviewer-export-page-images-with-no-ui
 position: 0
-tags: pdf, draw, rectangle
+tags: pdfviewer, draw, rectangle
 res_type: kb
 ---
 

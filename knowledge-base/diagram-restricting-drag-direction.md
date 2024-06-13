@@ -5,7 +5,7 @@ type: how-to
 page_title: How to restrict the direction in which shapes are dragged in RadDiagram
 slug: diagram-restricting-drag-direction
 position: 5
-tags: diagram, drag
+tags: diagram, drag, restricting, restriction
 ticketid: 1162881
 res_type: kb
 ---

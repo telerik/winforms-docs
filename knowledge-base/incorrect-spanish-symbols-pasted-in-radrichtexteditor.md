@@ -5,7 +5,7 @@ type: how-to
 page_title: Incorrect Spanish Symbols are Pasted in RadRichTextEditor
 slug: incorrect-spanish-symbols-pasted-in-radrichtexteditor
 position: 5
-tags: richtext, html, clipboard, windows, net4, encoding, utf8
+tags: richtexteditor, html, clipboard, windows, net4, encoding, utf8, spanish
 ticketid: 1602936
 res_type: kb
 ---

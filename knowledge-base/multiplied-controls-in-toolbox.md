@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Deal with Multiplied Controls in Toolbox  
 slug: multiplied-controls-in-toolbox
 position: 39
-tags: multiple, multiplied, twice, controls, toolbox
+tags: common, multiple, multiplied, twice, controls, toolbox
 res_type: kb
 ---
 

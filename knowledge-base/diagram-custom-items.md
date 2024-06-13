@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add Custom Items to RadDiagramRibbonBar
 slug: diagram-custom-items
 position: 39
-tags: propertygrid, combo, cascading
+tags: diagram, combo, cascading, raddiagramribbonBar, custom, item
 res_type: kb
 ---
 

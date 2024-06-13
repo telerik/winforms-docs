@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Filter GridViewCommandColumn in RadGridView
 slug: filter-commandcolumn-in-gridview
 position: 5
-tags: grid, filter, command, button
+tags: gridview, filter, command, button
 ticketid: 1585948
 res_type: kb
 ---

@@ -4,6 +4,7 @@ description: Failed to create component design time exception. Check it now!
 type: how-to
 page_title: Failed to create component design time exception
 slug: failed-to-create-component-design-time-exception
+tags: common
 res_type: kb
 ---
 

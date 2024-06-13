@@ -4,6 +4,7 @@ description: SpellCheck As You Type with RadRichTextBox. Check it now!
 type: how-to
 page_title: SpellCheck As You Type with RadRichTextBox
 slug: spellcheck-as-you-type-with-radrichtextbox
+tags: richtextbox
 res_type: kb
 ---
 

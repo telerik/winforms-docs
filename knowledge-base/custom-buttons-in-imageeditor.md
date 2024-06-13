@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add Custom Buttons to RadImageEditor
 slug: custom-buttons-in-imageeditor
 position: 39
-tags: image, editor, button
+tags: imageeditor, editor, button
 res_type: kb
 ---
 

@@ -4,6 +4,7 @@ description: How to migrate to new two columns menu. Check it now!
 type: how-to
 page_title: How to migrate to new two columns menu
 slug: how-to-migrate-to-new-two-columns-menu
+tags: menu
 res_type: kb
 ---
 

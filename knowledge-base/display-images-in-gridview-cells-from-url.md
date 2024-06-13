@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Display Images in GridView Cells from URL    
 slug: display-images-in-gridview-cells-from-url
 position: 0
-tags: filter, grid, operator
+tags: gridview, filter, grid, operator
 res_type: kb
 ---
 

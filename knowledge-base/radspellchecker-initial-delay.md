@@ -5,7 +5,7 @@ type: how-to
 page_title: Initial Spell-Checking Delay in RadSpellChecker
 slug: radspellchecker-initial-delay
 position: 5
-tags: grid, sort, slow, fast, performance
+tags: spellchecker, delay
 ticketid: 1584372
 res_type: kb
 ---

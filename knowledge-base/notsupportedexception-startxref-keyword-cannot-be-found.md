@@ -4,6 +4,7 @@ description: NotSupportedException “Startxref keyword cannot be found” when 
 type: how-to
 page_title: NotSupportedException “Startxref keyword cannot be found” when loading pdf file in RadPdfViewer for WinForms
 slug: notsupportedexception-startxref-keyword-cannot-be-found
+tags: pdfviewer, startxref, notsupportedexception
 res_type: kb
 ---
 

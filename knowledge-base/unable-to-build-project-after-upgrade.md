@@ -4,6 +4,7 @@ description: Unable to build project after upgrade. Now what?. Check it now!
 type: how-to
 page_title: Unable to build project after upgrade. Now what?
 slug: unable-to-build-project-after-upgrade
+tags: common
 res_type: kb
 ---
 

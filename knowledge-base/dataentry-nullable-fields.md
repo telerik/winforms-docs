@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Use RadSpinEditor for Nullable Numeric Fields in RadDataEntry
 slug: dataentry-nullable-fields
 position: 39
-tags: grid, data, row, element
+tags: dataentry, data, row, element
 res_type: kb
 ---
 

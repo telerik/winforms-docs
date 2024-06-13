@@ -4,6 +4,7 @@ description: How to use Inking in a WinForms application. Check it now!
 type: how-to
 page_title: How to use Inking in a WinForms application
 slug: how-to-use-inking-in-a-winforms-application
+tags: gridview, inking
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Handle Build Errors After Using a Telerik WinForms .NET Core Template
 slug: netsdk1141-error
 position: 39
-tags: net, sdk, build, project
+tags: common, net, core, sdk, build, project
 res_type: kb
 ---
 

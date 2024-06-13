@@ -5,7 +5,7 @@ type: how-to
 page_title: 
 slug: customize-specific-cell-while-another-cell-value-is-changing
 position: 0
-tags: radgridview, customize, cell, color
+tags: gridview, customize, cell, color
 res_type: kb
 ---
 

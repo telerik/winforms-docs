@@ -5,7 +5,7 @@ type: how-to
 page_title: Notification badge for nodes in RadTreeView
 slug: notification-badge-for-nodes-in-radrreeview
 position: 0
-tags: notification, badge, button, nodes, radtreeview
+tags: treeview, notification, badge, button, nodes, radtreeview
 res_type: kb
 ---
 
@@ -13,7 +13,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2021.1.223|RadGridView for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
+|2021.1.223|RadTreeView for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
  
 ## Description
 

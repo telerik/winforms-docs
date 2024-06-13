@@ -5,7 +5,7 @@ type: how-to
 page_title: How to arrange elements in custom RadTreeView node
 slug: treeview-custom-node-arrange
 position: 0 
-tags: custom nodes, treeview , arrangeoverride
+tags: treeview, custom nodes, treeview , arrangeoverride
 ticketid: 1605661
 res_type: kb
 ---

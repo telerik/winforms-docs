@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Filter a GridViewCommandColumn 
 slug: gridview-filter-command-column
 position: 39
-tags: grid, command, column, filter
+tags: gridview, command, column, filter
 res_type: kb
 ---
 

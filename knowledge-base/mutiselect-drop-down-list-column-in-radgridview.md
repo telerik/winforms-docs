@@ -4,6 +4,7 @@ description: Mutiselect drop down list column in RadGridView. Check it now!
 type: how-to
 page_title: Mutiselect drop down list column in RadGridView
 slug: mutiselect-drop-down-list-column-in-radgridview
+tags: gridview, multiselect, dropdownlist, column
 res_type: kb
 ---
 

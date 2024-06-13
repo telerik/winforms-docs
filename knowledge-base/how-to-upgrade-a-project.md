@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Upgrade a Telerik UI for WinForms Project
 slug: how-to-upgrade-a-project
 position: 39
-tags: upgrade, project, winforms, version
+tags: common, upgrade, project, winforms, version
 res_type: kb
 ---
 

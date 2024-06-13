@@ -5,7 +5,7 @@ type: how-to
 page_title: Synchronize scrollbars in grid hierarchy levels
 slug: synchronize-scrollbars-in-hierarchy-levels
 position: 0
-tags: filter, grid, scrollbar
+tags: gridview, filter, grid, scrollbar
 res_type: kb
 ---
 

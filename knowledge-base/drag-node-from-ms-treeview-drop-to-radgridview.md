@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Drag a Node from the MS TreeView and Drop it onto RadGridView
 slug: drag-node-from-ms-treeview-drop-to-radgridview
 position: 
-tags: 
+tags: gridview, treeview, drag, node
 ticketid: 1619326
 res_type: kb
 ---

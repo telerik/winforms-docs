@@ -5,7 +5,7 @@ type: how-to
 page_title: HDPI Tips and Tricks
 slug: hdpi-tips-and-tricks
 position: 0
-tags: dpi, scaling
+tags: common, dpi, scaling
 ticketid: 0
 res_type: kb
 ---

@@ -4,6 +4,7 @@ description: Manage namespaces in VB.NET class library projects. Check it now!
 type: how-to
 page_title: Manage namespaces in VB.NET class library projects
 slug: manage-namespaces-in-vb-net-class-library-projects
+tags: common, namespace, vb, net
 res_type: kb
 ---
 

@@ -4,6 +4,7 @@ description: Use custom filtering to search in all columns of RadMultiColumnComb
 type: how-to
 page_title: Use custom filtering to search in all columns of RadMultiColumnComboBox.
 slug: use-custom-filtering-to-search-in-radmulticolumncombobox
+tags: multicolumncombobox
 res_type: kb
 ---
 

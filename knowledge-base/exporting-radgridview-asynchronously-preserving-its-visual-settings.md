@@ -4,6 +4,7 @@ description: Exporting RadGridView Asynchronously Preserving Its Visual Settings
 type: how-to
 page_title: Exporting RadGridView Asynchronously Preserving Its Visual Settings
 slug: exporting-radgridview-asynchronously-preserving-its-visual-settings
+tags: gridview, asynchronously, exporting
 res_type: kb
 ---
 

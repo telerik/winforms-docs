@@ -4,6 +4,7 @@ description: RadChartView Drag and Drop. Check it now!
 type: how-to
 page_title: RadChartView Drag and Drop
 slug: radchartview-drag-and-drop
+tags: chartview
 res_type: kb
 ---
 

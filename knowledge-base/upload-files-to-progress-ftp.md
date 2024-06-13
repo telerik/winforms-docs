@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Upload Files to Progress FTP
 slug: upload-files-to-progress-ftp
 position: 5
-tags: upload, files, ftp
+tags: common, upload, files, ftp
 ticketid: 1592544
 res_type: kb
 ---

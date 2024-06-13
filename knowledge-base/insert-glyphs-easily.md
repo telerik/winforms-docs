@@ -5,7 +5,7 @@ type: how-to
 page_title: Accessing RadGridView Elements
 slug:  insert-glyphs-easily
 position: 0
-tags: glyphs, designtime
+tags: common, glyphs, designtime
 res_type: kb
 ---
 

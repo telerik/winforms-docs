@@ -5,7 +5,7 @@ type: how-to
 page_title: Change the color of bar depending on the value
 slug:  chart-style-bars
 position: 0
-tags: RadGridView, PDF, Header, Export
+tags: gridview, PDF, Header, Export, radgridview
 res_type: kb
 ---
 

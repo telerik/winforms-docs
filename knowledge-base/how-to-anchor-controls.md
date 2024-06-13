@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Anchor Controls
 slug: how-to-anchor-controls
 position: 39
-tags: control, anchor, size
+tags: common, control, anchor, size
 res_type: kb
 ---
 

@@ -4,6 +4,7 @@ description: Docking controls on a form in a Windows Forms application. Check it
 type: how-to
 page_title: Docking controls on a form in a Windows Forms application
 slug: docking-controls-on-a-form-in-a-windows-forms-application
+tags: common
 res_type: kb
 ---
 

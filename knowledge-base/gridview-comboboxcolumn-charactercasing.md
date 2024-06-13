@@ -5,7 +5,7 @@ type: how-to
 page_title: How to set GridViewComboBoxColumn characterCasing
 slug: gridview-comboboxcolumn-charactercasing
 position: 0
-tags: GridView, GridViewComboBoxColumn, ComboBoxColumn, Default Editors, Custom Editors, TextBox, CharacterCasing
+tags: gridview, GridViewComboBoxColumn, ComboBoxColumn, Default Editors, Custom Editors, TextBox, CharacterCasing
 res_type: kb
 ---
 

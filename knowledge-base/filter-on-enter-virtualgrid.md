@@ -5,7 +5,7 @@ type: how-to
 page_title: Filter on Enter in RadVirtualGrid
 slug: filter-on-enter-virtualgrid
 position: 0
-tags: RadVirtualGrid, filter
+tags: virtualgrid, RadVirtualGrid, filter, enter, press 
 res_type: kb
 ---
 

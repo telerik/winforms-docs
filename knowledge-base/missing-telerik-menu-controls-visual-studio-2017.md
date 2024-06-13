@@ -4,7 +4,7 @@ description: This article provides step-by-step instructions for resolving the i
 type: troubleshooting
 page_title: Missing Telerik Menu and Controls in Visual Studio 2017
 slug: missing-telerik-menu-controls-visual-studio-2017
-tags: telerik, visual-studio, winforms, menu, controls
+tags: common, telerik, visual-studio, winforms, menu, controls
 res_type: kb
 ---
 

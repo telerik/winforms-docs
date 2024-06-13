@@ -4,7 +4,7 @@ description: This article provides a solution for dragging and dropping text int
 type: how-to
 page_title: How to Drag and Drop Text with Cursor Movement in RadSyntaxEditor for WinForms
 slug: syntaxeditor-dragdrop-cursor-position
-tags: radsyntaxeditor, winforms, drag-and-drop, cursor, position, movetoposition
+tags: syntaxeditor, winforms, drag-and-drop, cursor, position, movetoposition
 res_type: kb
 ---
 

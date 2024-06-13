@@ -4,6 +4,7 @@ description: Limiting the text length in RadGridView's cell. Check it now!
 type: how-to
 page_title: Limiting the text length in RadGridView's cell
 slug: limiting-the-text-length-in-radgridview-s-cell
+tags: gridview, limit, text, length
 res_type: kb
 ---
 

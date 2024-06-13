@@ -4,6 +4,7 @@ description: Load theme components in a separate thread. Check it now!
 type: how-to
 page_title: Load theme components in a separate thread
 slug: load-theme-components-in-a-separate-thread
+tags: common, theme, separate, thread
 res_type: kb
 ---
 

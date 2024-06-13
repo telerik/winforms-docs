@@ -5,7 +5,7 @@ type: how-to
 page_title: How to apply a Glyph from the TelerikWebUI Font at Design Time
 slug: apply-glyphs-at-design-time
 position: 0
-tags: glyphs, designtime, telerik, webui, font
+tags: common, glyphs, designtime, telerik, webui, font
 res_type: kb
 ---
 

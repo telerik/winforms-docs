@@ -5,7 +5,7 @@ type: how-to
 page_title: Display Text for Invalid Values in GridView's Combobox Column 
 slug: display-text-for-invalid-values-in-grid-combobox-column
 position: 5
-tags: grid, column, cell, sort, position
+tags: gridview, column, cell, sort, position
 ticketid: 1515865
 res_type: kb
 ---

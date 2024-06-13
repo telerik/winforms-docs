@@ -5,7 +5,7 @@ type: how-to
 page_title: Insert footer area in the TaskCardElement
 slug: howto-add-footer-taskcardelement
 position: 0
-tags: taskboard,taskcardelement,footer
+tags: taskboard, taskcardelement, footer
 ticketid: 1540861
 res_type: kb
 ---

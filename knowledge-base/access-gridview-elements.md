@@ -5,7 +5,7 @@ type: how-to
 page_title: Accessing RadGridView Elements
 slug:  gridview-accessing-elements
 position: 0
-tags: RadGridView, IndexOutOfRangeException
+tags: gridview, IndexOutOfRangeException
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Copy the Image in a GridView's Cell 
 slug: copy-image-in-grid-cells
 position: 5
-tags: grid, image, copy, cell
+tags: gridview, image, copy, cell
 ticketid: 1521435
 res_type: kb
 ---

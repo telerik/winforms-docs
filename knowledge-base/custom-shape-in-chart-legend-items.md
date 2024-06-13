@@ -5,7 +5,7 @@ type: how-to
 page_title: How to apply a custom Shape to ChartView's legend items
 slug: custom-shape-in-chart-legend-items
 position: 0
-tags: chart, legend, shape
+tags: chartview, legend, shape
 res_type: kb
 ---
 

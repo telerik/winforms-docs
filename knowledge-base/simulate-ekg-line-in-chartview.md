@@ -5,7 +5,7 @@ type: how-to
 page_title: Simulate EKG line in ChartView
 slug: simulate-ekg-line-in-chartview
 position: 0
-tags: chart, line, ekg
+tags: chartview, line, ekg
 res_type: kb
 ---
 

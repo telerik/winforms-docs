@@ -6,6 +6,7 @@ slug: non-rtl-crystal-theme
 tags: crystal, theme, rtl
 published: True
 position: 0
+tags: common, theme, crystal
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: Paste Plain Text in RadRichTextBoxEditor
 slug: paste-plain-text
 position: 0
-tags: paste, plain, text 
+tags: richtexteditor, paste, plain, text 
 res_type: kb
 ---
 

@@ -4,6 +4,7 @@ description: Binding to a result of query. Check it now!
 type: how-to
 page_title: Binding to a result of query
 slug: binding-to-a-result-of-query
+tags: gridview
 res_type: kb
 ---
 

@@ -5,14 +5,14 @@ type: how-to
 page_title: How to Create Column Chooser in VirtualGrid
 slug: virtualgrid-column-chooser
 position: 0
-tags: column,chooser,sort, virtualgrid
+tags: virtualgrid, column, chooser, sort 
 res_type: kb
 ---
 
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2022.2.622|Scheduler for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2022.2.622|RadVirtualGrid for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
  
 
 ## Description

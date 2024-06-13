@@ -4,6 +4,7 @@ description: How to embed Chrome browser in a WinForms application . Check it no
 type: how-to
 page_title: How to embed Chrome browser in a WinForms application 
 slug: how-to-embed-chrome-browser-in-a-winforms-application
+tags: common, chrome, browser, 
 res_type: kb
 ---
 

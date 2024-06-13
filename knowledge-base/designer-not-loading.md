@@ -5,7 +5,7 @@ type: how-to
 page_title: Designer is Not Loading  
 slug: designer-not-loading
 position: 39
-tags: designer, ribbon, version
+tags: common, designer, ribbon, version
 res_type: kb
 ---
 

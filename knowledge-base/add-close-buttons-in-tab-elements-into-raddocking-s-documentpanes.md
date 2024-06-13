@@ -4,6 +4,7 @@ description: Add close buttons in tab elements into RadDocking's DocumentPanes. 
 type: how-to
 page_title: Add close buttons in tab elements into RadDocking's DocumentPanes
 slug: add-close-buttons-in-tab-elements-into-raddocking-s-documentpanes
+tags: dock
 res_type: kb
 ---
 

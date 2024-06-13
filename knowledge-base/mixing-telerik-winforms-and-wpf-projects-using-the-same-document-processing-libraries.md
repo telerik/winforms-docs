@@ -4,6 +4,7 @@ description: Mixing Telerik UI for WinForms and Telerik UI for WPF projects, usi
 type: how-to
 page_title: Mixing Telerik UI for WinForms and Telerik UI for WPF projects, using the same Document Processing Libraries but with different version
 slug: mixing-telerik-winforms-and-wpf-projects-using-the-same-document-processing-libraries
+tags: common, wpf, wf, winforms,
 res_type: kb
 ---
 

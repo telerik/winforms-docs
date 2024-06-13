@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Build Custom Telerik Assemblies when Using .NET Core and Enable Design Time Experience
 slug: build-custom-assemblies-for-net-core
 position: 0
-tags: build, code, source, core, net
+tags: common, build, code, source, core, net
 res_type: kb
 ---
 

@@ -4,6 +4,7 @@ description: RadGridView – RadChartView integration. Check it now!
 type: how-to
 page_title: RadGridView – RadChartView integration
 slug: radgridview-radchartview-integration
+tags: gridview, chartview, integration
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: ClickOnce Application is Broken
 slug: clickonce-application-is-broken
 position: 0
-tags: clickonce, deploy, broken
+tags: common, clickonce, deploy, broken
 res_type: kb
 ---
 

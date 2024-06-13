@@ -5,7 +5,7 @@ type: how-to
 page_title: Create custom header when exporting RadGridView to PDF
 slug:  customize-pdf-export-header
 position: 0
-tags: RadGridView, PDF, Header, Export
+tags: gridview, PDF, Header, Export
 res_type: kb
 ---
 

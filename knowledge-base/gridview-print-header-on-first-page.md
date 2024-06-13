@@ -5,7 +5,7 @@ type: how-to
 page_title: Hot to Print Header in RadGridView Only on the First Page     
 slug: gridview-print-header-on-first-page
 position: 0
-tags: gridview, print
+tags: gridview, print, header, first, page
 res_type: kb
 ---
 

@@ -4,6 +4,7 @@ description: Increasing the execution speed of Telerik assemblies. Check it now!
 type: how-to
 page_title: Increasing the execution speed of Telerik assemblies
 slug: increasing-the-execution-speed-of-telerik-assemblies
+tags: common, speed, execution, assemblies
 res_type: kb
 ---
 

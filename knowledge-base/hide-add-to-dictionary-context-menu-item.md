@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Hide the 'Add to dictionary" Context Menu Item 
 slug: hide-add-to-dictionary-context-menu-item 
 position: 0
-tags: textbox, textboxcontrol, spellcheck
+tags: spellchecker, textbox, textboxcontrol,
 res_type: kb
 ---
 

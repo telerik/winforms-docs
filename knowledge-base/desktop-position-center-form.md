@@ -5,7 +5,7 @@ type: how-to
 page_title: Position the RadDesktopAlert Control in the Center of a Form
 slug: desktop-position-center-form
 position: 1
-tags: desktop, manual, position,location,center
+tags: desktopalert, manual, position,location,center
 ticketid: 1588288
 res_type: kb
 ---

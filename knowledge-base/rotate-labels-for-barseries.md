@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Rotate the Labels for BarSeries
 slug: rotate-labels-for-barseries
 position: 39
-tags: chart, bar, label, rotate
+tags: chartview, bar, label, rotate
 res_type: kb
 ---
 

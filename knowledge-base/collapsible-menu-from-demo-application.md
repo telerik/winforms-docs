@@ -4,6 +4,7 @@ description: Collapsible menu from Demo application. Check it now!
 type: how-to
 page_title: Collapsible menu from Demo application
 slug: collapsible-menu-from-demo-application
+tags: collapsiblepanel
 res_type: kb
 ---
 

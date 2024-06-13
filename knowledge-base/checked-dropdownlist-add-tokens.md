@@ -5,7 +5,7 @@ type: how-to
 page_title: Add Non-existing Items as Tokens in RadCheckedDropDownList  
 slug: checked-dropdownlist-add-tokens
 position: 34
-tags: scheduler, resize
+tags: checkeddropdownlist, resize
 ticketid: 1546558 
 res_type: kb
 ---

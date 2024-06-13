@@ -4,6 +4,7 @@ description: Drag and drop functionality from RadGridView to RadTreeView. Check 
 type: how-to
 page_title: Drag and drop functionality from RadGridView to RadTreeView
 slug: drag-and-drop-functionality-from-radgridview-to-radtreeview
+tags: gridview, treeview, drag, drop
 res_type: kb
 ---
 

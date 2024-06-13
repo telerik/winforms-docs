@@ -5,7 +5,7 @@ type: how-to
 page_title: How to DragDrop from RadTreeView to RadSyntaxEditor in DocumentWindow
 slug: treeview-dragdrop-dock-syntaxeditor
 position: 
-tags: radtreeview, raddock, radsyntaxeditor, dragdrop,treeviewdragdropservice
+tags: treeview, raddock, radsyntaxeditor, dragdrop,treeviewdragdropservice
 ticketid: 1174915
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Improve GridView Sorting for Columns with Similar Values
 slug: improve-gridview-sorting
 position: 5
-tags: grid, sort, slow, fast, performance
+tags: gridview, sort, slow, fast, performance
 ticketid: 1584372
 res_type: kb
 ---

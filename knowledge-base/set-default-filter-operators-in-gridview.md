@@ -5,7 +5,7 @@ type: how-to
 page_title: Set default filter operators in RadGridView
 slug: default-filter-operator-gridview
 position: 0
-tags: filter, grid, operator
+tags: gridview, filter, grid, operator
 res_type: kb
 ---
 

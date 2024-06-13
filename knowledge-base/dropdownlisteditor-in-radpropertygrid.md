@@ -13,7 +13,7 @@ res_type: kb
  
 |Product Version|Product|Author|
 |----|----|----|
-|2019.1.219|RadGridView for WinForms|[Dimitar Karamfilov](https://www.telerik.com/blogs/author/Dimitar-Karamfilov)|
+|2019.1.219|RadPropertyGrid for WinForms|[Dimitar Karamfilov](https://www.telerik.com/blogs/author/Dimitar-Karamfilov)|
  
 
 ## Description

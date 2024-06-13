@@ -5,7 +5,7 @@ type: how-to
 page_title: Exporting the currently visible portion of the map to an image.
 slug: radmap-export-image
 position: 24
-tags: radmap, pins
+tags: map, pins
 ticketid: 1119896
 res_type: kb
 ---

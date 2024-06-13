@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Move the Current Row with Arrow Keys while RadGridView is in Edit Mode
 slug: move-current-row-with-arrow-keys-in-edit-mode
 position: 
-tags: 
+tags: gridview, edit mode, arrow, keys, current, row
 ticketid: 1619797
 res_type: kb
 ---

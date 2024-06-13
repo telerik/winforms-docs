@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Filter a GridViewComboBoxColumn by DisplayMember 
 slug: how-to-check-incorrect-words-in-radtextbox
 position: 0
-tags: grid, combo, filter
+tags: textbox, check, spellchecker, Incorrect, word
 res_type: kb
 ---
 

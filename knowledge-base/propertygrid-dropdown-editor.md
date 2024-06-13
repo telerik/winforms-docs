@@ -5,7 +5,7 @@ type: how-to
 page_title: How to populate a PropertyGridDropDownListEditor data source
 slug: propertygrid-dropdown-editor
 position: 0 
-tags: Customize Editor, PropertyGrid, PropertyGridDropDownListEditor, PropertyGrid Editor Cusomtization
+tags: propertygrid, Customize Editor, PropertyGridDropDownListEditor, PropertyGrid Editor Cusomtization
 ticketid: 1168968
 res_type: kb
 ---

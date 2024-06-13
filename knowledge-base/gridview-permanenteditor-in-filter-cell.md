@@ -5,7 +5,7 @@ type: how-to
 page_title: Permanent editor in a filter cell
 slug: gridview-permaneneditor-in-filter-cell
 position: 2
-tags: grid
+tags: gridview
 res_type: kb
 ---
 

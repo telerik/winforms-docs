@@ -5,7 +5,7 @@ type: how-to
 page_title: Move ListView Items Between Groups in Unbound Mode  
 slug: move-listview-items-between-groups-in-unbound-mode
 position: 24
-tags: listview, drag, drop, groups
+tags: listview, drag, drop, groups, ubound, mode
 ticketid: 1520955
 res_type: kb
 ---

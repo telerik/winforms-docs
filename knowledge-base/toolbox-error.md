@@ -5,7 +5,7 @@ type: how-to
 page_title: Toolbox Error in a .NET Framework Project
 slug: toolbox-error
 position: 5
-tags: toolbox, error, comexception, interop, services
+tags: common, toolbox, error, comexception, interop, services
 ticketid: 1602936
 res_type: kb
 ---

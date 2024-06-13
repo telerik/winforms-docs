@@ -4,6 +4,7 @@ description: Performance Boost with Virtual RadMultiColumnComboBox - Quick Loadi
 type: how-to
 page_title: Performance Boost with Virtual RadMultiColumnComboBox - Quick Loading and Fast Filtering using Trie
 slug: performance-boots-with-virtual-radmulticolumncombobox
+tags: multicolumncombobox, virtual, performance, fast, slow, boost, load
 res_type: kb
 ---
 

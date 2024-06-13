@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Load SVG Images in RadGridView Column
 slug: svg-image-column-in-gridview
 position: 5
-tags: grid, svg, vector, image
+tags: gridview, svg, vector, image
 ticketid: 1587399
 res_type: kb
 ---

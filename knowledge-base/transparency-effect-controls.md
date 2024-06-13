@@ -5,7 +5,7 @@ type: how-to
 page_title: How to achieve trasparency effect in Winforms cotrols
 slug: transparency-effect-winforms-controls
 position: 0
-tags: transparency, radpanel, winforms, controls
+tags: panel, transparency, radpanel, winforms, controls
 res_type: kb
 ---
 

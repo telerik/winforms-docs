@@ -5,7 +5,7 @@ type: how-to
 page_title: Customize the Color for SVG Images
 slug: customize-the-color-for-svg-images
 position: 0
-tags: svg, vector, image
+tags: common, svg, vector, image
 res_type: kb
 ---
 

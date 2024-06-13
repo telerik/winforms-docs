@@ -4,7 +4,7 @@ description: Assemblies targeting Net80 are missing.
 type: troubleshooting
 page_title: Assemblies targeting Net80 are missing
 slug: common-target-net8-version
-tags: winforms, nuget,assemblies,dll,net7, download, Telerik UI, AllControls.Net80
+tags: common, winforms, nuget,assemblies,dll,net7, download, Telerik UI, AllControls.Net80
 res_type: kb
 ---
 

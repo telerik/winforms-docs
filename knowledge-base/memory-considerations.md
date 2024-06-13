@@ -5,7 +5,7 @@ type: how-to
 page_title: Memory Considerations when Using Telerik UI for WinForms Suite
 slug: memory-considerations
 position: 5
-tags: memory, leak, garbage
+tags: common, memory, leak, garbage
 ticketid: 1595836
 res_type: kb
 ---

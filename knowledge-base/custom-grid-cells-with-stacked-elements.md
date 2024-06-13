@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Build Custom GridView Cells with Stacked Elements
 slug: custom-grid-cells-with-stacked-elements
 position: 39
-tags: grid, custom, cell, stack
+tags: gridview, custom, cell, stack
 res_type: kb
 ---
 
