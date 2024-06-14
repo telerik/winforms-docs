@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Show ToolTip for RadSpreadsheet Cell
 slug: spreadsheet-cell-tooltip
 position: 0
-tags: tooltip,cell, spreadsheet
+tags: spreadsheet, tooltip, cell, 
 res_type: kb
 ---
 
