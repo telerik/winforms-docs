@@ -3,10 +3,9 @@ title: Non RTL Crystal Theme
 page_title: Non RTL Crystal Theme
 description: Non RTL Crystal Theme
 slug: non-rtl-crystal-theme
-tags: crystal, theme, rtl
+tags: common, crystal, theme, rtl
 published: True
 position: 0
-tags: common, theme, crystal
 res_type: kb
 ---
 
