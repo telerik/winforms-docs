@@ -5,7 +5,7 @@ type: how-to
 page_title: Modify the default ContextMenu of the RadCheckedDropDownList  
 slug: checked-dropdownlist-contextmenu
 position: 34
-tags: checkeddropdownlist 
+tags: checkeddropdownlist, 
 ticketid: 1586242 
 res_type: kb
 ---
