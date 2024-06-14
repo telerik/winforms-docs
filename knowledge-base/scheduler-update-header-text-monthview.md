@@ -68,7 +68,7 @@ private void RadScheduler1_ElementInvalidated(object sender, EventArgs e)
     Public Sub New()
         InitializeComponent()
         Me.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Month
-        Me.radScheduler1.ElementInvalidated += AddressOf RadScheduler1_ElementInvalidated
+        AddHandler Me.radScheduler1.ElementInvalidated, AddressOf RadScheduler1_ElementInvalidated
     End Sub
 
     Private Sub RadScheduler1_ElementInvalidated(ByVal sender As Object, ByVal e As EventArgs)
