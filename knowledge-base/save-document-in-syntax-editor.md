@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Save Document in SyntaxEditor
 slug: save-document-in-syntax-editor
 position: 0
-tags: save, syntaxeditor
+tags: syntaxeditor, save
 res_type: kb
 ---
 
