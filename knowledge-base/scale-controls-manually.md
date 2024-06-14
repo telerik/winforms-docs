@@ -3,9 +3,8 @@ title: Scale Controls Manually
 page_title: Scale Controls Manually 
 description: Scale Controls Manually
 slug: scale-controls-manually
-tags: scale, controls, hdpi
+tags: common, scale, controls, hdpi
 published: True
-tags: common, scale
 res_type: kb
 position: 0
 ---
