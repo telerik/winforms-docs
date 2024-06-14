@@ -5,7 +5,7 @@ type: how-to
 page_title: Show Screen Tips above the Controls
 slug: screentip-above-controls
 position: 0
-tags: screentips
+tags: screentip,
 res_type: kb
 ---
 
