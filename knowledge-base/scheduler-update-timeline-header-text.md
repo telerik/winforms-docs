@@ -133,3 +133,4 @@ End Class
 
 # See Also
 * [Timeline View]({%slug winforms/scheduler/views/timeline-view%})
+* [Updating the Header Text of RadScheduler in Month View]({%slug scheduler-update-header-text-monthview%})
