@@ -5,7 +5,7 @@ type: how-to
 page_title: Validate Input and Play Error Sound
 slug: masked-edit-box-play-sound
 position: 35
-tags: maskededitbox, mask, edit-box, error, sound
+tags: editors, maskededitbox, mask, edit-box, error, sound
 ticketid: 1380388
 res_type: kb
 ---

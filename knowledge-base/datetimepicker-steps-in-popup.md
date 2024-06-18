@@ -5,7 +5,7 @@ type: how-to
 page_title: How to specify the Minutes/Hours Step in DateTimePicker's Popup
 slug: datetimepicker-steps-in-popup
 position: 0
-tags: datetimepicker, step, minutes, hours, calendar
+tags: editors, datetimepicker, step, minutes, hours, calendar
 res_type: kb
 ---
 

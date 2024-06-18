@@ -5,7 +5,7 @@ type: how-to
 page_title: Open multiple flyout screens
 slug: flyout-open-several-screens
 position: 0
-tags: flyout, static, several,multiple, screens,forms, windows
+tags: splashscreens, flyout, static, several,multiple, screens,forms, windows
 ticketid: 1589221
 res_type: kb
 ---

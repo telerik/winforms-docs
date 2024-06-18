@@ -5,7 +5,7 @@ type: how-to
 page_title: Disable Backspace and Delete Keyboard Buttons
 slug: datetimepicker-disable-backspace-delete
 position: 1
-tags: datetimepicker, delete, backspace, disable
+tags: editors, datetimepicker, delete, backspace, disable
 ticketid: 1586673
 res_type: kb
 ---

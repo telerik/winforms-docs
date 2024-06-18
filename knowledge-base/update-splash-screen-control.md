@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Update the Custom UserControl of the SplashScreen
 slug: update-splash-screen-control
 position: 0
-tags: splashscreen, control, update, external
+tags: splashscreens, control, update, external
 res_type: kb
 ---
 

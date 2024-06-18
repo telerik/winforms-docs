@@ -4,7 +4,7 @@ description: Customizing RadMessageBox with custom theme. Check it now!
 type: how-to
 page_title: Customizing RadMessageBox with custom theme
 slug: customizing-radmessagebox-with-custom-theme
-tags: messagebox
+tags: forms, messagebox
 res_type: kb
 ---
 
