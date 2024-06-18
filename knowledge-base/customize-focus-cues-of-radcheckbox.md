@@ -5,7 +5,7 @@ type: how-to
 page_title: Change the Color of Focus Cue Border for RadCheckBox
 slug: customize-focus-cues-of-radcheckbox
 position: 0
-tags: checkbox, focus, cue, border, dot, tab
+tags: button, checkbox, focus, cue, border, dot, tab
 res_type: kb
 ---
 
