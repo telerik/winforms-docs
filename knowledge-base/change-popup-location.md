@@ -5,7 +5,7 @@ type: how-to
 page_title: Change popup default location
 slug: change-popup-location
 position: 0
-tags: dropdownbutton, popup, location
+tags: button, dropdownbutton, popup, location
 res_type: kb
 ---
 
