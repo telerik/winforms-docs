@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add User-Defined Values in RadDropDownList
 slug: user-defined-values-in-dropdownlist
 position: 0
-tags: dropdownlist
+tags: dropdownandlist, dropdownlist
 res_type: kb
 ---
 

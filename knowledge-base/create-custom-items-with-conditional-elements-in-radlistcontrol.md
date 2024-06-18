@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create Custom Items with Conditional Elements in RadListControl  
 slug: create-custom-items-with-conditional-elements-in-radlistcontrol
 position: 0
-tags: listcontrol, custom, items
+tags: dropdownandlist, listcontrol, custom, items
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: The thread has exited with code 0 (0x0) 
 slug: thread-has-exit-with-code
 position: 39
-tags: dropdownlist, output, thread, exit
+tags: dropdownandlist, dropdownlist, output, thread, exit
 res_type: kb
 ---
 
