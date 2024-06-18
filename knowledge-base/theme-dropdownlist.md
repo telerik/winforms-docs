@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create Theme Picker Control
 slug: theme-dropdownlist
 position: 0
-tags: dropdownlist, theme, picker, dropdown,
+tags: dropdownandlist, dropdownlist, theme, picker, dropdown,
 res_type: kb
 ---
 

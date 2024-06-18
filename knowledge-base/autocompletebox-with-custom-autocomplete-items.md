@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create Custom AutoComplete Items in RadAutoCompleteBox
 slug: autocompletebox-with-custom-autocomplete-items
 position: 0
-tags: autocompletebox, custom, item
+tags: editors, autocompletebox, custom, item
 res_type: kb
 ---
 

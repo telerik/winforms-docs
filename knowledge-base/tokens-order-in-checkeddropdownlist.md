@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Order the Tokens Based on the Items Collection
 slug: tokens-order-in-checkeddropdownlist
 position: 5
-tags: checkeddropdownlist, token, order, sort, check, dropdown
+tags: dropdownandlist, checkeddropdownlist, token, order, sort, check, dropdown
 ticketid: 1581422
 res_type: kb
 ---

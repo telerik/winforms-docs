@@ -4,7 +4,7 @@ description: Server side auto complete for RadDropDownList. Check it now!
 type: how-to
 page_title: Server side auto complete for RadDropDownList
 slug: server-side-auto-complete-for-raddropdownlist
-tags: dropdownlist, server, side, auto, complete
+tags: dropdownandlist, dropdownlist, server, side, auto, complete
 res_type: kb
 ---
 

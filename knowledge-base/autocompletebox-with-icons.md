@@ -5,7 +5,7 @@ type: how-to
 page_title: How to add image icons to RadAutoCompleteBox
 slug: autocompletebox-with-icons  
 position: 0
-tags: autocompletebox, image, icon
+tags: editors, autocompletebox, image, icon
 res_type: kb
 ---
 

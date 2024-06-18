@@ -4,7 +4,7 @@ description: Multi select drop down list. Check it now!
 type: how-to
 page_title: Multi select drop down list
 slug: multi-select-drop-down-list
-tags: dropdownlist, multi, select
+tags: dropdownandlist, dropdownlist, multi, select
 res_type: kb
 ---
 

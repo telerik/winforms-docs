@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Search in Description Text in RadDropDownList
 slug: dropdownlist-autcomplete-in-description-text
 position: 0
-tags: dropdownlist, autocomplete, description
+tags: dropdownandlist, dropdownlist, autocomplete, description
 res_type: kb
 ---
 
