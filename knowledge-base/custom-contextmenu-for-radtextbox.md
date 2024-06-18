@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Add Custom ContextMenu for RadTextBox
 slug: custom-contextmenu-for-radtextbox
 position: 39
-tags: textbox, context, menu, radtextbox
+tags: editors, textbox, context, menu, radtextbox
 res_type: kb
 ---
 

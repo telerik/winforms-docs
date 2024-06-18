@@ -4,7 +4,7 @@ description: Add SplashScreen to your application. Check it now!
 type: how-to
 page_title: Add SplashScreen to your application
 slug: add-splashscreen-to-your-application
-tags: splashscreen
+tags: splashscreens
 res_type: kb
 ---
 

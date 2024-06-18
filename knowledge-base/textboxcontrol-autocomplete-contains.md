@@ -5,7 +5,7 @@ type: how-to
 page_title: Show auto-complete items which text "starts with" the user's input in RadTextBoxControl
 slug: textboxcontrol-autocomplete-contains
 position: 
-tags: textboxcontrol
+tags: editors, textboxcontrol
 ticketid: 1021919
 res_type: kb
 ---

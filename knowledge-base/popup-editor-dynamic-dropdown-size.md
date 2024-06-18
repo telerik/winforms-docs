@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Achieve Dynamic DropDown Size for RadPopupEditor
 slug: popup-editor-dynamic-dropdown-size
 position: 39
-tags: popupeditor, dropdown, size
+tags: editors, popupeditor, dropdown, size
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to customize the text in the editor to display scientific notation or leading zeros
 slug: scientific-notation-leading-zeros-spineditor
 position: 12
-tags: spineditor, text, format
+tags: editors, spineditor, text, format
 res_type: kb
 ---
 
