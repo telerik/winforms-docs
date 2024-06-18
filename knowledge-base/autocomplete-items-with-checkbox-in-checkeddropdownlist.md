@@ -5,7 +5,7 @@ type: how-to
 page_title: How to create auto-complete items with a check-box in RadCheckedDropDownList
 slug: autocomplete-items-with-checkbox-in-checkeddropdownlist
 position: 0
-tags: checkeddropdownlist, autocomplete
+tags: dropdownandlist, checkeddropdownlist, autocomplete
 res_type: kb
 ---
 
