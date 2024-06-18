@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Include Multiple Fields in the RadDropDownList's DisplayMember 
 slug: multiple-display-members-in-dropdownlist
 position: 39
-tags: dropdownandlist, dropdownlist, combobox, displaymember, datasource
+tags: dropdownlistcontrolandcheckeddropdownlist, dropdownlist, combobox, displaymember, datasource
 res_type: kb
 ---
 

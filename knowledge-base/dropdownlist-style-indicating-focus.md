@@ -5,7 +5,7 @@ type: how-to
 page_title: How to indicate focus in RadDropDownList when the its DropDownStyle property is set to DropDownList
 slug: dropdownlist-style-indicating-focus
 position: 37
-tags: dropdownandlist, dropdownlist, style, focus
+tags: dropdownlistcontrolandcheckeddropdownlist, dropdownlist, style, focus
 res_type: kb
 ---
 

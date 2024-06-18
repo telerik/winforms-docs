@@ -5,7 +5,7 @@ type: how-to
 page_title: How to create RadLinkLabel
 slug: link-label
 position: 0
-tags: label, hyperlink, winforms
+tags: panelsandlabels, label, hyperlink, winforms
 res_type: kb
 ---
 

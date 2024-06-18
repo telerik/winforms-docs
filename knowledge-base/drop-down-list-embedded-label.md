@@ -5,7 +5,7 @@ type: how-to
 page_title: Show Embedded Label for RadDropDownList
 slug: drop-down-list-embedded-label
 position: 39
-tags: dropdownandlist, dropdownlist, combo, label, embedded
+tags: dropdownlistcontrolandcheckeddropdownlist, dropdownlist, combo, label, embedded
 res_type: kb
 ---
 

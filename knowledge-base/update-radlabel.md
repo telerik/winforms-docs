@@ -5,7 +5,7 @@ type: how-to
 page_title: Update the Text of Rad Label
 slug: update-label-layout
 position: 0
-tags: label, update
+tags: panelsandlabels, label, update
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Change the CheckBox's Size   
 slug: change-checkbox-size
 position: 34
-tags: button, checkbox, size
+tags: buttons, checkbox, size
 ticketid: 232308 
 res_type: kb
 ---
