@@ -5,7 +5,7 @@ type: how-to
 page_title: How to distinguish the source control of a RadContextMenu  
 slug: distinguishing-the-source-control-of-radcontextmenu
 position: 12
-tags: contextmenu, source, control
+tags: menus, contextmenu, source, control
 ticketid: 1167410
 res_type: kb
 ---

@@ -5,7 +5,7 @@ type: how-to
 page_title: Close Application after Closing All RadTabbedForms
 slug: close-application-after-closing-the-last-tabbedform
 position: 0
-tags: tabbedform, form, close, application
+tags: forms, tabbedform, form, close, application
 res_type: kb
 ---
 

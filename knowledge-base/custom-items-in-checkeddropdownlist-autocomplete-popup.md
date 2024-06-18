@@ -5,7 +5,7 @@ type: how-to
 page_title: Custom Items in RadCheckedDropDownList's AutoComplete Popup       
 slug: custom-items-in-checkeddropdownlist-autocomplete-popup
 position: 0
-tags: dropdownandlist, checkeddropdownlist, autocomplete, custom
+tags: dropdownlistcontrolandcheckeddropdownlist, checkeddropdownlist, autocomplete, custom
 res_type: kb
 ---
 

@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Hide the New Tab Button for the Popped out Forms
 slug: tabbedform-keep-show-new-tab-button
 position: 39
-tags: tabbedform, new, button
+tags: forms, tabbedform, new, button
 res_type: kb
 ---
 
