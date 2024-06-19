@@ -4,7 +4,7 @@ description: Changing the size of the thumb of RadScrollBar. Check it now!
 type: how-to
 page_title: Changing the size of the thumb of RadScrollBar
 slug: changing-the-size-of-the-thumb-of-radscrollbar
-tags: trackandstatus, scrollbar
+tags: trackandstatuscontrols, scrollbar
 res_type: kb
 ---
 

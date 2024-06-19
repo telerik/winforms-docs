@@ -5,7 +5,7 @@ type: how-to
 page_title: RadForm is Not Recognized in Solution Explorer
 slug: radform-is-not-recognized
 position: 0
-tags: forms, designer, recognize
+tags: formsanddialogs, designer, recognize
 res_type: kb
 ---
 

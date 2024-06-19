@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create a Circular ProgressBar
 slug: circular-progressbar
 position: 0
-tags: trackandstatus, progressbar, circular
+tags: trackandstatuscontrols, progressbar, circular
 res_type: kb
 ---
 
