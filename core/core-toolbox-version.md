@@ -52,7 +52,7 @@ In Visual Studio 2022 navigate to *Tools >> Options >> Windows Forms Designer*:
 
 ![core-toolbox-version004](images/core-toolbox-version004.png)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug core-design-time%})
 * [Migrating to .NET Core]({%slug core-migration%})
