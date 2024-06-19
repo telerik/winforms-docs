@@ -5,7 +5,7 @@ type: how-to
 page_title: Update RadProgressBar while a Long-Lasting Operation is Ongoing
 slug: update-progressbar-while-a-long-lasting-operation-is-ongoing
 position: 0
-tags: trackandstatus, progressbar, update
+tags: trackandstatuscontrols, progressbar, update
 res_type: kb
 ---
 
