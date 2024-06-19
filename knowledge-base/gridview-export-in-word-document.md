@@ -20,8 +20,8 @@ res_type: kb
 RadGridView supports exporting its content to Excel, CSV, HTML, and PDF. For more information see [Exporting Data]({%slug winforms/gridview/exporting-data/overview%}). RadGridView doesn't support exporting to a .docx file out of the box. The following example describes how you can achieve such format conversion and export the grid to .docx document.
 
 ## Solution
-
-Use the [GridViewSpreadExport]({%slug winforms/controls/gridview/exporting-data/spread-export%}) to export the data to xlsx file. Then use the [RadWordsProcessing library](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview) to import the exported file and then export it to .docx format. Please refer to the following code snippet: 
+                                        
+Use the [GridViewSpreadExport]({%slug winforms/gridview/exporting-data/spread-export%}) to export the data to xlsx file. Then use the [RadWordsProcessing library](https://docs.telerik.com/devtools/document-processing/libraries/radwordsprocessing/overview) to import the exported file and then export it to .docx format. Please refer to the following code snippet: 
 
 
 #### Export RadGridView in Docx document
