@@ -16,9 +16,9 @@ Telerik UI for WinForms comes with several different packages that can be [insta
 
 The Telerik assemblies are built against [different versions]({%slug assemblies-version%}) of .NET starting from .NET 4 to the latest official .NET. You should pick up this version of the NuGet package to install in your project that corresponds to the Target Framework that you are using in your project and that is available on your computer. 
 
->important The last NuGet package for .NET 2.0 is version 2022.2.622. 
->important The last NuGet package for .NET 4.0 is version 2024.1.312.
->important The last NuGet package for .NetCore is version 2024.1.312.
+>important .NET 2.0 is last supported in the NuGet package version 2022.2.622.          
+> .NET 4.0 is last supported in the NuGet package version 2024.1.312.        
+> .NetCore is last supported in the NuGet package version 2024.1.312.    
 
 ## Full Packages
 
