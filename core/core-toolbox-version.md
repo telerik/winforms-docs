@@ -38,6 +38,20 @@ For example, if you have the UI.for.WinForms.AllControls.NetCore and you want to
 
 >note The same approach is also valid for the other Telerik UI for WinForms packages, e.g. UI.for.WinForms.AllControls.Net60, UI.for.WinForms.Common, etc.
 
+## Troubleshooting Visual Studio Toolbox
+
+#### Issue: Telerik controls for UI for WinForms are not visible in Toolbox after upgrade
+
+After installing or updating the Telerik NuGet, controls will automatically appear in the Toolbox, with no further action required by you. However, you may experience issues with missing Telerik items in the Toolbox at design time. 
+
+#### Solution
+
+The *Automatically Populate Toolbox* option affects whether controls are populated in the .NET Core designer. If set to *false* the Telerik controls are not visible in the Toolbox. It is necessary to ensure that ***Automatically Populate Toolbox*** is set to ***True*** in the Visual Studio. 
+
+In Visual Studio 2022 navigate to *Tools >> Options >> Windows Forms Designer*:
+
+![core-toolbox-version004](images/core-toolbox-version004.png)
+
 # See Also
 
 * [Design Time]({%slug core-design-time%})
