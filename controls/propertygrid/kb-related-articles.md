@@ -15,7 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Cascading ComboBoxes in PropertyGrid]({%slug cascading-comboboxes-in-property-grid%})|
 |[FlagEnumEditor in RadPropertyGrid]({%slug flagenumeditor-in-radpropertygrid%})|
 |[How to allow end-users to add custom items to PropertyGridDropDownListEditor]({%slug allow-end-users-to-add-items-to-propertygriddropdownlisteditor%})|
-|[How to give PropertyGrid Label more width than the Editor]({%slug %})|
+|[How to give PropertyGrid Label more width than the Editor]({%slug propertygrid-bestfit-options%})|
 |[How to Show Confirmation Message for User-Defined Values to PropertyGridDropDownListEditor]({%slug confirmation-message-for-user-defined-values-to-propertygriddropdownlisteditor%})|
 |[How to Show Nested Collections in RadPropertyGrid]({%slug show-nested-collections-in-propertygrid%})|
 |[How to Specify Displayed Enum Values in RadPropertyGrid]({%slug specify-displayed-enum-values-in-propertygrid%})|
