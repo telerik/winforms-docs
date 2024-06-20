@@ -7,6 +7,9 @@ tags: kb, sdk, examples
 position: 1000
 published: True
 ---
+
+# Knowledge Base Related Articles
+
 The following article list Knowledge Base articles related to this section of control/s.
 <!--KB Articles Table-->
 
