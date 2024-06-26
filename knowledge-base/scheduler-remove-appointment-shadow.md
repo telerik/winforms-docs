@@ -26,13 +26,16 @@ To remove the appointment shadow, you will need to access all the `IAppointmentB
 1. Access the background storage of the scheduler. Then you can iterate the `AppointmentBackgroundInfo` items and set the `ShadowColor` to transparent:
 
 ````C#
+
 ISchedulerStorage<IAppointmentBackgroundInfo> backGroundStorage = this.radScheduler1.GetBackgroundStorage();
 foreach (AppointmentBackgroundInfo item in backGroundStorage)
 {
     item.ShadowColor = Color.Transparent;
 }
+
 ````
 ````VB.NET
+
 Dim backGroundStorage As ISchedulerStorage(Of IAppointmentBackgroundInfo) = Me.radScheduler1.GetBackgroundStorage()
 
     For Each item As AppointmentBackgroundInfo In backGroundStorage
@@ -44,4 +47,4 @@ Dim backGroundStorage As ISchedulerStorage(Of IAppointmentBackgroundInfo) = Me.r
 
 ## See Also
 
-- [Working with Appointments in RadScheduler for WinForms](https://docs.telerik.com/devtools/winforms/controls/scheduler/appointments-and-dialogs/working-with-appointments)
+* [Working with Appointments in RadScheduler for WinForms](https://docs.telerik.com/devtools/winforms/controls/scheduler/appointments-and-dialogs/working-with-appointments)
