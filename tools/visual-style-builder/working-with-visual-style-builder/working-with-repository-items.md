@@ -88,9 +88,10 @@ The ‘Edit Repository Item ‘ dialog is automatically adjusted to show specifi
 ![tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items 006](images/tools-visual-style-builder-working-with-visual-style-builder-working-with-repository-items006.png)
 
 >caution The properties in bold have values defined in the repository item while the others have their default values.
->
+
+
 >note When defining repository item key you should make sure that the key is unique in order to create/save the item.
->
+
 
 The `Animate State Transition` checkbox determines whether the repository item’s property values will be animated when a state of the element, to which the item is associated, is activated. For instance, all color properties of the repository item, displayed in the dialog above, will be animated from the values present when the corresponding element state occurs, to the values defined in the property grid on the right. After editing the repository item, you can either cancel the modifications by pressing `Cancel`, save the modifications by pressing the `OK` , or save a new repository item by pressing the `Save As New`. The `Save As New` button is only visible when an already existing repository item is opened for edit.
 
