@@ -10,7 +10,7 @@ position: 2
 
 ## Installing from Progress Control Panel
 
-The Telerik UI for WinForms controls can also be installed via the Progress Control Panel.
+The Telerik UI for WinForms controls can also be installed via the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction).
 
 ![installing-from-progress-control-panel 001](images/installing-from-progress-control-panel001.png)
 
