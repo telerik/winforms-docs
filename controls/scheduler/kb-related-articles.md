@@ -30,6 +30,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Simulate Outlook-like Multiple Categories in Scheduler's Appointments]({%slug outlook-like-multiple-categories-scheduler-appointments%})|
 |[Minutely Recurrence Pattern in RadScheduler]({%slug scheduler-minutely-recurrence-pattern%})|
 |[RadScheduler with multiple resources]({%slug radscheduler-with-multiple-resources%})|
+|[Removing Appointment Shadow in RadScheduler for WinForms]({%slug remove-appointment-shadow%})|
 |[Resize Columns in RadScheduler]({%slug scheduler-resize-columns%})|
 |[Scheduler Data Binding Tutorial]({%slug scheduler-databinding-tutorial%})|
 |[Updating the Header Text of RadScheduler in Month View]({%slug scheduler-update-header-text-monthview%})|
