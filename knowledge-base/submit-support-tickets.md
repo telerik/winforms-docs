@@ -82,4 +82,7 @@ The trick of obtaining a "one response resolution", is to give as much informati
 
 >important In case of multiple, unrelated questions please open a separate thread for each question with the appropriate Product (RadGridView for WinForms) and avoid mixing different subjects in the same thread. This will also give you the opportunity to track the different cases easily in your account. 
 
-Last, but not least, do not forget that [we are always here to help you](https://www.telerik.com/best-tech-support). We are only successful when you are successful. We will stick with you as long as it takes to get your ticket resolved. We want you to help you be as productive as possible. 
+Last, but not least, do not forget that [we are always here to help you](https://www.telerik.com/best-tech-support). We are only successful when you are successful. We will stick with you as long as it takes to get your ticket resolved. We want you to help you be as productive as possible.
+
+## See Also
+* [How to Write a Support Ticket That Gets a Prompt Response](https://www.telerik.com/blogs/how-write-support-ticket-gets-prompt-response?utm_campaign=How+to+Write+a+Support+Ticket+That+Gets+a+Prompt+Response&utm_source=twitter&utm_medium=social&utm_content=1719487870) 
