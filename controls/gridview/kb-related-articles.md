@@ -146,6 +146,7 @@ The following article list Knowledge Base articles related to this section of co
 |[RadGridView CRUD in Object Relational Hierarchy Mode]({%slug radgridview-crud-in-object-relational-hierarchy-mode%})|
 |[RadGridView Deferred Search on Tab key]({%slug gridview-deferred-search-on-tab%})|
 |[RadGridView Merge Cells]({%slug radgridview-merge-cells%})|
+|[Resizing the Header Row in RadGridView for WinForms]({%slug resize-header-row-radgridview-winforms%})|
 |[Save and Restore the rows states when resetting.]({%slug keep-states-on-reset%})|
 |[Set CharacterCasing for GridViewComboBoxColumn]({%slug gridview-comboboxcolumn-charactercasing%})|
 |[Set default filter operators in RadGridView]({%slug default-filter-operator-gridview%})|
