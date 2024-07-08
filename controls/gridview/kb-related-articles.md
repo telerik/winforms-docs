@@ -51,6 +51,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Custom Values in GridViewComboBoxColumn]({%slug free-text-in-combobox-column%})|
 |[Customize GridViewCommandColumn]({%slug customize-gridviewcommandcolumn%})|
 |[Customize the header checkbox behavior in GridViewCheckBoxColumn]({%slug customize-header-checkbox-behavior%})|
+|[Difference between GridViewInfo.Rows and GridViewTemplate.Rows]({%slug difference-between-gridviewinfo-rows-and-gridviewtemplate-rows%})|
 |[Display Images in GridView Cells from URL]({%slug display-images-in-gridview-cells-from-url%})|
 |[Display Text for Invalid Values in GridView's Combobox Column]({%slug display-text-for-invalid-values-in-grid-combobox-column%})|
 |[Drag and drop functionality from RadGridView to RadTreeView]({%slug drag-and-drop-functionality-from-radgridview-to-radtreeview%})|
@@ -146,6 +147,7 @@ The following article list Knowledge Base articles related to this section of co
 |[RadGridView CRUD in Object Relational Hierarchy Mode]({%slug radgridview-crud-in-object-relational-hierarchy-mode%})|
 |[RadGridView Deferred Search on Tab key]({%slug gridview-deferred-search-on-tab%})|
 |[RadGridView Merge Cells]({%slug radgridview-merge-cells%})|
+|[Resizing the Header Row in RadGridView for WinForms]({%slug resize-header-row-radgridview-winforms%})|
 |[Save and Restore the rows states when resetting.]({%slug keep-states-on-reset%})|
 |[Set CharacterCasing for GridViewComboBoxColumn]({%slug gridview-comboboxcolumn-charactercasing%})|
 |[Set default filter operators in RadGridView]({%slug default-filter-operator-gridview%})|
