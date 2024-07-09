@@ -24,20 +24,23 @@ From the View object of the cell, we can call the GetResource() method to get th
 ## Solution
 
 ````C#
-SchedulerHeaderCellElement schedulerHeaderCellElement = this.radScheduler1.ElementTree.GetElementAtPoint(e.Location) as SchedulerHeaderCellElement;
-if (schedulerHeaderCellElement != null)
+private void RadScheduler1_MouseDown(object sender, MouseEventArgs e)
 {
-    if (e.Button == MouseButtons.Left)
+    SchedulerHeaderCellElement schedulerHeaderCellElement = this.radScheduler1.ElementTree.GetElementAtPoint(e.Location) as SchedulerHeaderCellElement;
+    if (schedulerHeaderCellElement != null)
     {
-        var date = schedulerHeaderCellElement.Date;
-        var resource = schedulerHeaderCellElement.View.GetResource();
-        var resourceID = schedulerHeaderCellElement.View.GetResourceId();
+        if (e.Button == MouseButtons.Left)
+        {
+            var date = schedulerHeaderCellElement.Date;
+            var resource = schedulerHeaderCellElement.View.GetResource();
+            var resourceID = schedulerHeaderCellElement.View.GetResourceId();
+        }
+        else if (e.Button == MouseButtons.Right)
+        {
+            // Right-click logic can be added here
+        }
+        return;
     }
-    else if (e.Button == MouseButtons.Right)
-    {
-        // Right-click logic can be added here
-    }
-    return;
 }
 ````
 
