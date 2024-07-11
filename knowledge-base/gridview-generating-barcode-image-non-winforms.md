@@ -89,3 +89,4 @@ Please note that generating images from RadBarcodeView control for WinForms requ
 
 ## See Also
 - [RadBarcodeView for WinForms Documentation](https://docs.telerik.com/devtools/winforms/controls/barcode/barcodeview)
+- [Adding a Barcode to a PDF Document using PdfProcessing and the WinForms BarcodeView](https://docs.telerik.com/devtools/document-processing/knowledge-base/add-barcode-to-pdf-telerik)
