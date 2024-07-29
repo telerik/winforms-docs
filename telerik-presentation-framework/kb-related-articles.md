@@ -15,6 +15,8 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+
+|[Adding a Canvas for Free Hand Typing in WinForms Apps]({%slug free-hand-typing-canvas-winforms%})|
 |[Adding a control to the GAC (Global Assembly Cache) for WinForms]({%slug adding-a-control-to-the-gac-(global-assembly-cache)-for-winforms%})|
 |[App becomes DPI-aware at runtime]({%slug app-becomes-dpi-aware%})|
 |[Assemblies targeting Net80 are missing]({%slug common-target-net8-version%})|

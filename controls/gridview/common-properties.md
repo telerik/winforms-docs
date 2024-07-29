@@ -20,6 +20,7 @@ position: 11
 |__IsCurrentRowDirty__|Gets a value indicating whether the current row has changes that are not committed.|
 |__StandardTab__|Gets or sets a value indicating whether the TAB key moves the focus to the next control in the tab order rather than moving focus to the next cell in the control.|
 |__EnterKeyMode__|Gets or sets value specifying the behavior when the user presses Enter.|
+|__NewRowEnterKeyMode__|Gets or sets value specifying the behavior when the user presses Enter while adding new row.|
 |__AutoSizeRows__|Gets or sets a value indicating whether row height in a RadGridView will expand for multiline cell text.|
 
 ## GridViewTemplate
