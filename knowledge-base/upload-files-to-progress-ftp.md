@@ -1,8 +1,8 @@
 ---
-title: How to Upload Files to Progress FTP
-description: Learn how to upload files to Progress FTP. 
+title: How to Upload Files to Progress SFTP
+description: Learn how to upload files to Progress SFTP. 
 type: how-to
-page_title: How to Upload Files to Progress FTP
+page_title: How to Upload Files to Progress SFTP
 slug: upload-files-to-progress-ftp
 position: 5
 tags: common, upload, files, ftp
