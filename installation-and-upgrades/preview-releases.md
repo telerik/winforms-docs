@@ -14,17 +14,17 @@ The Preview is a minor release of the **Telerik UI for WinForms** assemblies, th
 
 ## Downloading the Preview Release
 
-The Preview is __available as a NuGet__ package. Alternatively, you can __download the Preview assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
+The Preview is __available as a NuGet__ package. Alternatively, you can __download the Preview assemblies__ from [your telerik.com account](https://www.telerik.com/account/). To download these files follow the steps below:
+ 
+1. From your Telerik account, go to the **Downloads** tab and choose Telerik UI for WinForms product [download page](https://www.telerik.com/account/downloads/product-download?product=RCWF).
 
-1.Go to the Telerik UI for WinForms product [download page](https://www.telerik.com/account/downloads/product-download?product=RCWF).
+    ![Telerik UI for WinForms Latest Internal Build Button](images/preview-releases001.png)
 
-2.Click on the __Latest Internal Build__ button. This will download an archive with the Telerik UI for WinForms assemblies.
+1. This will navigate you to a Telerik UI for WinForms page showing **Latest Public Version** and **Latest Preview**.
 
-![Telerik UI for WinForms Latest Internal Build Button](images/preview-releases001.png)
+1. To get a specific version of the Preview, click on the Preview tab on the download page. Then select a version from the **Version** list. To start downloading click on the file name or use the **Download** button.
 
-3.To get a specific version of the Preview, open the __Internal Bulds__ tab on the download page. Then select a version from the **Version** list.
-
-![Telerik UI for WinForms Latest Internal Build Button](images/preview-releases002.png)
+    ![Telerik UI for WinForms Latest Internal Build Button](images/preview-releases002.png)
 
 ## See Also
 
