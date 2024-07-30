@@ -22,7 +22,7 @@ The Preview is __available as a NuGet__ package. Alternatively, you can __downlo
 
 1. This will navigate you to a Telerik UI for WinForms page showing **Latest Public Version** and **Latest Preview**.
 
-1. To get a specific version of the Preview, click on the Preview tab on the download page. Then select a version from the **Version** list. To start downloading click on the file name or use the **Download** button.
+1. To get a specific version of the Preview, click on the **Previews** tab on the download page. Then select a version from the **Version** list. To start downloading click on the file name or use the **Download** button.
 
     ![Telerik UI for WinForms Latest Internal Build Button](images/preview-releases002.png)
 
