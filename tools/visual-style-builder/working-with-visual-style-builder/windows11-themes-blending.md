@@ -30,55 +30,53 @@ The Windows11 themes are designed to work with predefined set of colors. The tut
 ![tools-visual-style-builder-working-with-visual-style-builder-windows11compact-themes-blending 003](images/tools-visual-style-builder-windows11compact-themes-blending003.png)
 
 >caption Figure 4: Windows11CompactDark Theme
-![tools-visual-style-builder-working-with-visual-style-builder-windows11compactdark-themes-blending 003](images/tools-visual-style-builder-windows11compactdark-themes-blending004.png)
-
-
+![tools-visual-style-builder-working-with-visual-style-builder-windows11compactdark-themes-blending 004](images/tools-visual-style-builder-windows11compactdark-themes-blending004.png)
 
 
 ## Generate Windows11 Variation
 
-[Visual Style Builder]({%slug winforms/tools/visual-style-builder%}) provides an easy way to generate different color variations of the above Windows11 themes. Office2019Light theme blending uses the basic Office2019Light theme by executing a series of predefined commands.
+[Visual Style Builder]({%slug winforms/tools/visual-style-builder%}) provides an easy way to generate different color variations of the above Windows11 themes. Windows11 theme blending uses the basic Windows11 theme by executing a series of predefined commands. 
 
-Select *Tools >> Generate Office2019Light Variation* menu item:
+To start generating theme blending select *Tools >> Generate Windows11 Theme Variation* menu item:
+ Below you can find the other options available:
 
->caption Figure 4: Generate Office2019Light Variation
-![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending004.png)
+    * **Generate Windows11Dark Theme Variation**
+    * **Generate Windows11Compact Theme Variation**
+    * **Generate Windows11CompactDark Theme Variation**
+
+>caption Figure 5: Generate Windows11 Theme Variation
+
+![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 005](images/tools-visual-style-builder-windows11-themes-blending005.png)
+
+![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 006](images/tools-visual-style-builder-windows11-themes-blending006.png)
+
+>note If you already have loaded a customized Windows11 theme (but not a Windows11 theme  variation) it will remain loaded when generating a Windows11 variation. This will open the **Windows11 Blend Dialog** from which you can create a new palette or modify the selected one.
 
 
-![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending005.png)
+>caption Figure : Windows11 Blend Dialog
 
->note If you already have loaded a customized Office2019Light theme (but not a Office2019Light variation) it will remain loaded when generating a Office2019Light variation. This will open the **Office2019 Blend Dialog** from which you can create a new palette or modify the selected one.
+![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 007](images/tools-visual-style-builder-windows11-themes-blending007.png)
 
->caption Figure 5: Office2019 Blend Dialog
+If you want to create a brand new palette you can click on the *Create New palette* button and it will open **New Palette Dialog**.
 
-![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending006.png)
+If you want to edit the existing pallete then click on the *Modify selected palette* button and it will open **Modify Palette Dialog**. You will be able to modify any of the existing colors.
 
-If you want to create a brand new palette you can click on the *Create New palette* button and it will open **New Palette Dialog**:
-
-![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending009.png)
-
-If you want to edit the existing pallete then click on the *Modify selected palette* button and it will open **Modify Palette Dialog**. You will be able to modify any of the existing colors:
-
-![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending010.png)
-
-When you are ready with picking colors for the palette you can click the **Generate theme** button. A new variation of the Office2019Light theme will be exported using the selected colors.
+Once you get ready with picking colors for the palette you can click the **Generate theme** button. A new variation of the Windows11 theme will be exported using the selected colors. Then, save the theme:
 
 
 >caption Figure 6: Save the Theme
-![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending007.png)
+![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 008](images/tools-visual-style-builder-windows11-themes-blending008.png)
 
+Your custom theme variation is ready to use. After loading the custom theme in [Theme Viewer]({%slug winforms/tools/themeviewer%}) the primary/accent colors are replaced:
 
-After loading the custom theme in [Theme Viewer]({%slug winforms/tools/themeviewer%}) the primary/accent colors are replaced:
+>caption Figure 7: Load Windows11LightBlue theme variation
+![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 009](images/tools-visual-style-builder-windows11-themes-blending009.png)
 
->caption Figure 7: Load Office2019LightGreen theme variation
-![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending008.png)
+>note You can use the same approach for all the other Windows11 themes.
 
->note You can use the same approach for the Office2019Gray and Office2019Dark themes.
+>caption Figure 8: Load Windows11CompactDarkYellow theme variation
 
->caption Figure 8: Load Office2019DarkOrange theme variation
-
-![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending011.png)
-
+![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 003](images/tools-visual-style-builder-windows11-themes-blending010.png)
 
 
 # See Also
