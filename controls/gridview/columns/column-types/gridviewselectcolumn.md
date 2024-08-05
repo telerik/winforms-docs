@@ -15,7 +15,9 @@ previous_url: gridview-columns-gridviewselectcolumn
 
 #### Show GridViewSelectColumn
 
-The **ShowSelectColumn** property indicates whether the select column is visible. The default value of this property is *false*. To show **GridViewSelectColumn** it is necessary to set the **ShowSelectColumn** property to *true*. 
+The **ShowSelectColumn** property indicates whether the select column is visible. The default value of this property is *false*. Also, this column is not auto generated. 
+
+To show **GridViewSelectColumn** it is necessary to set the **ShowSelectColumn** property to *true*. 
 
 >caption Figure 1: Show GridViewSelectColumn
 
@@ -30,7 +32,6 @@ this.radGridView1.ShowSelectColumn = true;
 Me.RadGridView1.ShowSelectColumn = True
 ````
 
-{{endregion}} 
 
 >note **GridViewSelectColumn** is only supported in GridViewSelectionMode.**FullRowSelect**. In *FullRowSelect* mode the user is able to select full rows in grid, while in *CellSelect* mode it is possible to select single cells. For more information see [Row selection]({%slug winforms/gridview/selection/basic-selection%}).
 
@@ -56,7 +57,6 @@ Me.RadGridView1.MasterTemplate.Templates(0).ShowSelectColumn = True
 
 ````
 
-{{endregion}} 
 
 >note This feature is also available in other functionalities that RadGridView offers such as grouping, filtering, searching, paging.
 
