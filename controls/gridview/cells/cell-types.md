@@ -130,7 +130,7 @@ Note that if the row and the respective cell are not specified for a certain col
 |----|----|
 |GridViewDataRowInfo|GridMergeCellElement|
 
-* [Merge Cells]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%})
+* [Merge Cells]({%slug gridview-merged-cells%})
 
 # See Also
 * [Columns]({%slug winforms/gridview/columns/converting-data-types%})
