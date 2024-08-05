@@ -23,6 +23,8 @@ To show **GridViewSelectColumn** it is necessary to set the **ShowSelectColumn**
 
 ![WinForms RadGridView GridViewSelectColumn](images/gridview-columns-gridviewselectcolumn001.png)
 
+{{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=ShowSelectColumn}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=ShowSelectColumn}} 
 
 ````C#
 this.radGridView1.ShowSelectColumn = true;
@@ -30,7 +32,10 @@ this.radGridView1.ShowSelectColumn = true;
 ````
 ````VB.NET
 Me.RadGridView1.ShowSelectColumn = True
+
 ````
+
+{{endregion}} 
 
 
 >note **GridViewSelectColumn** is only supported in GridViewSelectionMode.**FullRowSelect**. In *FullRowSelect* mode the user is able to select full rows in grid, while in *CellSelect* mode it is possible to select single cells. For more information see [Row selection]({%slug winforms/gridview/selection/basic-selection%}).
@@ -47,6 +52,8 @@ If the *MultiSelect* property is enabled, users can make a [multiple selection i
 
 ![WinForms RadGridView GridViewSelectColumn](images/gridview-columns-gridviewselectcolumn002.png)
 
+{{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=SelectColumninHierarchy}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=SelectColumninHierarchy}} 
 
 ````C#
 this.radGridView1.MasterTemplate.Templates[0].ShowSelectColumn = true;
@@ -57,8 +64,28 @@ Me.RadGridView1.MasterTemplate.Templates(0).ShowSelectColumn = True
 
 ````
 
+{{endregion}} 
 
 >note This feature is also available in other functionalities that RadGridView offers such as grouping, filtering, searching, paging.
+
+#### SelectColumnWidth
+
+**SelectColumnWidth** property gets or sets the width of the GridViewSelectColumn.
+
+{{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=SetSelectColumnWidth}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=SetSelectColumnWidth}} 
+
+````C#
+this.radGridView1.TableElement.SelectColumnWidth = 50;
+
+````
+````VB.NET
+Me.RadGridView1.TableElement.SelectColumnWidth = 50
+
+````
+
+{{endregion}} 
+
 
 #### Events
 
@@ -66,7 +93,6 @@ Every time when а row is checked/unchecked and the selection has changed, RadGr
 
 * **SelectionChanging**: Fires when the current selection is about to be changing. Allows to be canceled. 
 * **SelectionChanged**: Fires when the current selection is changed.
-
 
 
 # See Also
