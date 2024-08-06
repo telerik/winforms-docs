@@ -30,6 +30,8 @@ Me.RadNavigationView1.EnableUIAutomation = False
 
 {{endregion}}
 
+![navigationview-ui-automation](images/navigationview-ui-automation001.png)
+
 ## Relevant Properties 
 
 The table below outlines the __UI Automation__ properties most important for understanding and interacting with RadNavigationView control.
