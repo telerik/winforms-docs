@@ -10,7 +10,13 @@ position: 2
 
 # Folding Taggers
 
-The folding taggers are used when you want to create collapsible (foldable) sections of code in a document. The base class responsible for this functionality is the **FoldingTaggerBase** class with concrete implementations provided out of the box being the **BracketFoldingTagger**, **CSharpFoldingTagger** and **VisualBasicFoldingTagger**.
+The folding taggers are used when you want to create collapsible (foldable) sections of code in a document. **FoldingTaggerBase** class is the base class responsible for this functionality. The following folder taggers are available in our suite:
+
+* **CSharpFoldingTagger**
+* **VisualBasicFoldingTagger**
+* **XmlFoldingTagger**
+* **JavaScriptFoldingTagger**
+* **BracketFoldingTagger**
 
 >caption RadSyntaxEditor with a registered CSharpFoldingTagger
 
