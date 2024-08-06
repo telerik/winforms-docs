@@ -17,17 +17,17 @@ res_type: kb
  
 ## Description
 
-By default, the messages in **RadChat** visualize the text content but it doesn't support shortcurs such as Ctrl+V and Ctrl+V to copy/paste text, etc. How to achieve text selection in RadChat is demonstrated in the [How to Select and Copy Text in Chat Messages]({%slug how-to-select-and-copy-text-in-chat-messages%}) article.
+By default, the messages in **RadChat** visualize the text content but it doesn't support shortcuts such as Ctrl+V and Ctrl+V to copy/paste text, etc. How to achieve text selection in RadChat is demonstrated in the [How to Select and Copy Text in Chat Messages]({%slug how-to-select-and-copy-text-in-chat-messages%}) article.
 
-This tutorial demonstrates how to achieve using shortcuts in chat messages.
+This tutorial demonstrates how to use shortcuts in chat messages.
 
 ![how-to-use-shortcuts-in-chat-messages](images/how-to-use-shortcuts-in-chat-messages.gif) 
 
 ## Solution 
 
-It is necessary to create a derivative of **TextMessageItemElement** and replace its **ChatMessageBubbleElement** with a custom one which hosts a read-only **RadTextBoxControlElement**. Thus, you will acquire the shortcuts that comes from the **RadTextBoxControlElement** and benefit from it. 
+It is necessary to create a derivative of **TextMessageItemElement** and replace its **ChatMessageBubbleElement** with a custom one that hosts a read-only **RadTextBoxControlElement**. Thus, you will acquire the shortcuts that comes from the **RadTextBoxControlElement** and benefit from it. 
 
-You should create a custom [Chat Factory]({%slug winforms/chat/chatelementfactory%}) and integrate the custom message element. Also you should create a custom **RadChat** control and override the **OnGotFocus()**. A complete solution in C# and VB is available below:
+You should create a custom [Chat Factory]({%slug winforms/chat/chatelementfactory%}) and integrate the custom message element. Also, you should create a custom **RadChat** control and override the **OnGotFocus()**. A complete solution in C# and VB is available below:
  
 
 ````C#
