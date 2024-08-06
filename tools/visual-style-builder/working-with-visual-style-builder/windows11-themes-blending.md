@@ -12,10 +12,10 @@ position: 12
 
 Telerik UI for WinForms suite offers a touch-optimized theme that provides additional features such as custom fonts, built-in animations, and shadows. The Visual Style Builder tool provides a functionality to blend the colors of an existing theme so that a completely new theme can be created in a couple of minutes. We also have four different Windows11 themes that share similar design but have different colors:
 
- * **Windows11**
- * **Windows11Dark**
- * **Windows11Compact**
- * **Windows11CompactDark**
+ * Windows11
+ * Windows11Dark
+ * Windows11Compact
+ * Windows11CompactDark
 
 The Windows11 themes are designed to work with a predefined set of colors. The tutorial here will demonstrate how a new **Windows11** theme can be created. The same steps can be also followed with the other Windows11 themes.
 
