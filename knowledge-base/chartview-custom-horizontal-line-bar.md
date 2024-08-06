@@ -17,7 +17,9 @@ ticketid: 1652661
 
 ## Description
 
-In the following example, we will add a horizontal line at the bottom of a bar series of rectangle points. This customization will visually enhance the bar chart by marking specific data points or thresholds.
+In the following example, we will add a horizontal line at the bottom of the bar series data points. This customization will visually enhance the bar chart by marking specific data points or thresholds.
+
+![chartview-custom-horizontal-line-bar  001](images/chartview-custom-horizontal-line-bar001.png)
 
 ## Solution
 
