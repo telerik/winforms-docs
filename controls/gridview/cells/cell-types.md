@@ -126,6 +126,11 @@ Note that if the row and the respective cell are not specified for a certain col
 
 * [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%}) - refer to the **GridViewDataColumn**.  
 
+|RowType|Cell Type|
+|----|----|
+|GridViewDataRowInfo|GridMergeCellElement|
+
+* [Merge Cells]({%slug gridview-merged-cells%})
 
 # See Also
 * [Columns]({%slug winforms/gridview/columns/converting-data-types%})

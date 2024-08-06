@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+
 |[Adding a Canvas for Free Hand Typing in WinForms Apps]({%slug free-hand-typing-canvas-winforms%})|
 |[Adding a control to the GAC (Global Assembly Cache) for WinForms]({%slug adding-a-control-to-the-gac-(global-assembly-cache)-for-winforms%})|
 |[App becomes DPI-aware at runtime]({%slug app-becomes-dpi-aware%})|
@@ -26,7 +27,6 @@ The following article list Knowledge Base articles related to this section of co
 |[Customize the Color for SVG Images]({%slug customize-the-color-for-svg-images%})|
 |[Dashboard Demo]({%slug dashboard-demo%})|
 |[Designer is Not Loading]({%slug designer-not-loading%})|
-|[Difference between GridViewInfo.Rows and GridViewTemplate.Rows]({%slug difference-between-gridviewinfo-rows-and-gridviewtemplate-rows%})|
 |[Distinguishing between versions – Dev/Trial]({%slug distinguishing-between-versions-dev-trial%})|
 |[Docking controls on a form in a Windows Forms application]({%slug docking-controls-on-a-form-in-a-windows-forms-application%})|
 |[Double Buffered Table Layout Panel]({%slug double-Buffered-table-layout-panel%})|

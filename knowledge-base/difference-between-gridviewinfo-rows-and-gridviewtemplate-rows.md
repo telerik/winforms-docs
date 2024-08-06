@@ -4,7 +4,7 @@ description: Difference between GridViewInfo.Rows and GridViewTemplate.Rows. Che
 type: how-to
 page_title: Difference between GridViewInfo.Rows and GridViewTemplate.Rows
 slug: difference-between-gridviewinfo-rows-and-gridviewtemplate-rows
-tags: common
+tags: gridview
 res_type: kb
 ---
 
