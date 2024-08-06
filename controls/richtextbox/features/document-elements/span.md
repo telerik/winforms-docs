@@ -23,7 +23,7 @@ This topic demonstrates how to:
 
 ## Use Spans
 
-The __Spans__can be used only in the context of the [Paragraph]({%slug winforms/richtextbox-(obsolete)/features/document-elements/paragraph%}) element. The __Paragraph__ exposes a collection of Inlines, to which the spans can be added.
+The __Spans__ can be used only in the context of the [Paragraph]({%slug winforms/richtextbox-(obsolete)/features/document-elements/paragraph%}) element. The __Paragraph__ exposes a collection of Inlines, to which the spans can be added.
 
 {{source=..\SamplesCS\RichTextBox\Features\Document Elements\RichTextBoxSpan.cs region=UseSpans}} 
 {{source=..\SamplesVB\RichTextBox\Features\Document Elements\RichTextBoxSpan.vb region=UseSpans}}
