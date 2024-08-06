@@ -15,7 +15,7 @@ previous_url: gridview-columns-gridviewselectcolumn
 
 #### Show GridViewSelectColumn
 
-The **ShowSelectColumn** property indicates whether the select column is visible. The default value of this property is *false*. Also, this column is not auto generated. 
+The **ShowSelectColumn** property indicates whether the select column is visible. The default value of this property is *false*. Also, this column is not auto-generated. 
 
 To show **GridViewSelectColumn** it is necessary to set the **ShowSelectColumn** property to *true*. 
 
@@ -38,15 +38,15 @@ Me.RadGridView1.ShowSelectColumn = True
 {{endregion}} 
 
 
->note **GridViewSelectColumn** is only supported in GridViewSelectionMode.**FullRowSelect**. In *FullRowSelect* mode the user is able to select full rows in grid, while in *CellSelect* mode it is possible to select single cells. For more information see [Row selection]({%slug winforms/gridview/selection/basic-selection%}).
+>note **GridViewSelectColumn** is only supported in GridViewSelectionMode.**FullRowSelect**. In *FullRowSelect* mode the user is able to select full rows in the grid, while in *CellSelect* mode it is possible to select single cells. For more information see [Row selection]({%slug winforms/gridview/selection/basic-selection%}).
 
 #### Multiple Selection
 
-If the *MultiSelect* property is enabled, users can make a [multiple selection in RadGridView]({%slug winforms/gridview/selection/multiple-selection%}). When using the selection UI through GridViewSelectColumn, the users will be able to select multiple rows by simply checking a chechbox. If *MultiSelect* property is *false*, the users can select only a single row/cell. 
+If the *MultiSelect* property is enabled, users can make a [multiple selection in RadGridView]({%slug winforms/gridview/selection/multiple-selection%}). When using the selection UI through GridViewSelectColumn, the users will be able to select multiple rows by simply checking a checkbox. If *MultiSelect* property is *false*, the users can select only a single row/cell. 
 
 #### Hierarchy mode
 
-**GridViewSelectColumn** is also supported when RadGridView is bound to hierarchical data and child templates in hierarchy view are shown. In case you would like to enable this setting in hierarchy, it is necessary to set **ShowSelectColumn** to the respective child template:
+**GridViewSelectColumn** is also supported when RadGridView is bound to hierarchical data and child templates in the hierarchy view are shown. In case you would like to enable this setting in a hierarchy, it is necessary to set **ShowSelectColumn** to the respective child template:
 
 >caption Figure 2: Show GridViewSelectColumn in Hierarchy
 
@@ -91,11 +91,11 @@ Me.RadGridView1.TableElement.SelectColumnWidth = 50
 
 Every time when а row is checked/unchecked and the selection has changed, RadGridView triggers the following events:
 
-* **SelectionChanging**: Fires when the current selection is about to be changing. Allows to be canceled. 
+* **SelectionChanging**: Fires when the current selection is about to be changed. Allows to be canceled. 
 * **SelectionChanged**: Fires when the current selection is changed.
 
 
-# See Also
+## See Also
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 
 * [GridViewCalculatorColumn]({%slug winforms/gridview/columns/column-types/gridviewcalculatorcolumn%})
