@@ -10,14 +10,14 @@ position: 12
 
 # Windows11 Themes Blending
 
-Telerik UI for WinForms suite offers a touch optimized theme which provides additional features such as custom fonts, built-in animations and shadows. The Visual Style Builder tool provides a functionality to blend the colors of an existing theme so that a completely new theme can be created for couple of minutes. We also have four different Windows11 themes that share similar design but have different colors:
+Telerik UI for WinForms suite offers a touch-optimized theme that provides additional features such as custom fonts, built-in animations, and shadows. The Visual Style Builder tool provides a functionality to blend the colors of an existing theme so that a completely new theme can be created in a couple of minutes. We also have four different Windows11 themes that share similar design but have different colors:
 
  * **Windows11**
  * **Windows11Dark**
  * **Windows11Compact**
  * **Windows11CompactDark**
 
-The Windows11 themes are designed to work with predefined set of colors. The tutorial here will demonstrate how a new **Windows11** theme can be created. The same steps can be also followed with the other Windows11 themes.
+The Windows11 themes are designed to work with a predefined set of colors. The tutorial here will demonstrate how a new **Windows11** theme can be created. The same steps can be also followed with the other Windows11 themes.
 
 >caption Figure 1: Windows11 Theme
 ![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 001](images/tools-visual-style-builder-windows11-themes-blending001.png)
@@ -59,7 +59,7 @@ To start generating theme blending select *Tools >> Generate Windows11 Theme Var
 
 If you want to create a brand new palette you can click on the *Create New palette* button and it will open **New Palette Dialog**.
 
-If you want to edit the existing pallete then click on the *Modify selected palette* button and it will open **Modify Palette Dialog**. You will be able to modify any of the existing colors.
+If you want to edit the existing palette then click on the *Modify selected palette* button and it will open **Modify Palette Dialog**. You will be able to modify any of the existing colors.
 
 Once you get ready with picking colors for the palette you can click the **Generate theme** button. A new variation of the Windows11 theme will be exported using the selected colors. Then, save the theme:
 
@@ -79,7 +79,7 @@ Your custom theme variation is ready to use. After loading the custom theme in [
 ![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 003](images/tools-visual-style-builder-windows11-themes-blending010.png)
 
 
-# See Also
+## See Also
 
 * [Color Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%})
 * [Material Theme Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/material-themes-blending%})
