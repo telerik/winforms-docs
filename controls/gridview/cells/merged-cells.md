@@ -52,7 +52,7 @@ The merge cell mechanism exposes two ways to edit the cells that are currently m
 
 ## Merge Cells Event
 
-When the merge cells functionality is enabled for the RadGridView, the control exposes a __CellMerging__ event which will be triggered when two cells are going to be merged. This event can be used to determine when two cells can be merged or not. Using this event we could merge specific cells on a custom condition. To do that we can first subscribe to the __CellMerging__ event, handle the event by setting the __Handle__ property to true, and set the ____Result property from the event arguments to whether the incoming cells can be merged or not on some condition.
+When the merge cells functionality is enabled for the RadGridView, the control exposes a __CellMerging__ event which will be triggered when two cells are going to be merged. This event can be used to determine when two cells can be merged or not. Using this event we could merge specific cells on a custom condition. To do that we can first subscribe to the __CellMerging__ event, handle the event by setting the __Handle__ property to true, and set the __Result__ property from the event arguments to whether the incoming cells can be merged or not based on some condition.
 
 In the following example, we will merge the cells in one column depending on the value in the other column:
 
@@ -79,6 +79,7 @@ private void RadGridView1_CellMerging(object sender, Telerik.WinControls.UI.Grid
 Private Sub RadGridView1_CellMerging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellMergingEventArgs)
     If e.Cell1.ColumnInfo.FieldName = "FirstName" Then
         e.Handled = True
+        ' Get next cell and compare them by family name
         Dim familyNameValue1 = e.Cell1.RowInfo.Cells("LastName").Value
         Dim familyNameValue2 = e.Cell2.RowInfo.Cells("LastName").Value
         e.Result = Object.Equals(familyNameValue1, familyNameValue2)
@@ -172,6 +173,7 @@ radGridView1.MasterTemplate.Templates.Add(template);
 
 Dim template As GridViewTemplate = New GridViewTemplate()
 template.MergeCellsMode = MergeCellsMode.None
+' template settings
 radGridView1.MasterTemplate.Templates.Add(template)
 
 ````
@@ -181,7 +183,7 @@ radGridView1.MasterTemplate.Templates.Add(template)
 
 ## Known Limitations
 
-* Currently, merge cells functionality will ignore pinned columns and rows.
+* Currently, merge cells functionality ignores pinned columns and rows.
 
 * Selection is currently not supported for the merged cells. When selecting a row, all the cells except for the merged one will show as selected.
 
