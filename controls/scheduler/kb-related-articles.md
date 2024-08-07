@@ -19,6 +19,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Copy/Paste custom fields in RadScheduler]({%slug scheduler-copy-paste-custom-fields%})|
 |[Custom Time Scale in RadScheduler]({%slug scheduler-custom-time-scale%})|
 |[Customize Appointment Backgrounds and Statuses in RadScheduler]({%slug customize-appointment-backgrounds-and-statuses%})|
+|[Determining Header Cell and its Resource ID in MouseDown Events in RadScheduler]({%slug radscheduler-header-cell-click%})|
 |[How to Confirm Appointment's Resizing in RadScheduler]({%slug custom-resizing-behavior-in-radscheduler%})|
 |[How to customize Print Settings Dialog in RadScheduler]({%slug customize-print-settings-dialog%})|
 |[How to Display Multiple Resources in EditAppointmentDialog]({%slug scheduler-multiple-resource-in-edit-dialog%})|

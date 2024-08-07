@@ -16,6 +16,7 @@ The following article list Knowledge Base articles related to this section of co
 |KB Article|
 |----|
 |[3D Bar Chart]({%slug chartview-3d-bar-chart%})|
+|[Adding a Custom Horizontal Line at the Bottom of a Bar in RadChartView]({%slug chartview-custom-horizontal-line-bar%})|
 |[Apply a Custom Shape to ChartView's Legend Items]({%slug custom-shape-in-chart-legend-items%})|
 |[Edit or Delete a message using RadContextMenu]({%slug chat-edit-delete-message%})|
 |[Hide/Show a Chart Series by Clicking a Legend Item]({%slug hide-chart-series%})|

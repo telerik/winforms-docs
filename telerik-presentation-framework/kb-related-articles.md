@@ -15,7 +15,6 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
-
 |[Adding a Canvas for Free Hand Typing in WinForms Apps]({%slug free-hand-typing-canvas-winforms%})|
 |[Adding a control to the GAC (Global Assembly Cache) for WinForms]({%slug adding-a-control-to-the-gac-(global-assembly-cache)-for-winforms%})|
 |[App becomes DPI-aware at runtime]({%slug app-becomes-dpi-aware%})|
@@ -65,7 +64,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Share Localization Providers and Spell Checking Dictionaries]({%slug share-localization-providers-and-dictionaries%})|
 |[How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})|
 |[How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%})|
-|[How to Upload Files to Progress FTP]({%slug upload-files-to-progress-ftp%})|
+|[How to Upload Files to Progress SFTP]({%slug upload-files-to-progress-ftp%})|
 |[Implementing a chrome window]({%slug implementing-a-chrome-window%})|
 |[Increasing the execution speed of Telerik assemblies]({%slug increasing-the-execution-speed-of-telerik-assemblies%})|
 |[Installing local documentation for MS Help viewer (Help3) in Visual Studio 2010]({%slug installing-local-documentation-for-ms-help-viewer-help3-in-visual-studio-2010%})|

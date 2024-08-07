@@ -19,6 +19,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Display Code Snippets in Chat Messages]({%slug how-to-display-code-snippet-in-chat-messages%})|
 |[How to Format the Time Separator in RadChat]({%slug format-chat-time-separator%})|
 |[How to Select and Copy Text in Chat Messages]({%slug how-to-select-and-copy-text-in-chat-messages%})|
+|[How to Use Shortcuts in Chat Messages]({%slug how-to-use-shortcuts-in-chat-messages%})|
 |[Preserve Text Message History Per User]({%slug chat-preserve-user-text-message-history%})|
 |[Reversed Order of Chat Messages]({%slug chat-messages-in-reversed-order%})|
 
