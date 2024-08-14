@@ -3,7 +3,7 @@ title: Properties and Events
 page_title: Properties End events - WinForms StatusBar Control
 description: RadStatusStrip provides a status area that can be composed of any number of RadElement types - buttons, repeat buttons, image buttons, labels, panels, progress bars and separators.
 slug: winforms/forms-and-dialogs/statusstrip/properties-events
-tags: radstatusbar,properties
+tags: radstatusbar,properties, methods, events
 published: True
 position: 3
 previous_url: forms-and-dialogs-statusstrip-radstatusbar-properties, winforms/forms-and-dialogs/statusstrip/radstatusbar-properties
@@ -22,6 +22,13 @@ previous_url: forms-and-dialogs-statusstrip-radstatusbar-properties, winforms/fo
 |StatusBarElement.__Orientation__|Gets or sets RadStatusBarElement's orienatation.|
 |StatusBarElement.__GripStyle__|Shows or hides the Grip element in RadStatusStrip.|
 |StatusBarElement.__RotateGripOnRightToLeft__|Gets or sets a value indicating whether the grip is rotated in RightToLeft mode.|
+
+# Methods
+
+|Method|Description|
+|----|----|
+|__SetSpring__(RadItem control, bool value)|Sets Spring property of specified RadItem indicating whether the item will automatically fills the available space on the RadStatusStrip as the form is resized.|
+|__GetSpring__ (RadItem control)|Gets Spring property of specified RadItem.|
 
 # Events
 
