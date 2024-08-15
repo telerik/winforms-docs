@@ -17,7 +17,7 @@ ticketid: 1661136
 
 ## Description
 
-By default, when the user starts dragging a window in RadDock, Docking Assistant appears. Docking Assistant uses DockingGuidesTemplates to show hints to help the user to relocate the window. For more information please refer to [Using the DragDropService]({%slug winforms/controls/dock/architecture-and-features/using-the-dragdropservice%})
+By default, when the user starts dragging a window in RadDock, Docking Assistant appears. Docking Assistant uses DockingGuidesTemplates to show hints to help the user to relocate the window. For more information please refer to [Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%})
 
 >caption Figure 1: Before.
 
