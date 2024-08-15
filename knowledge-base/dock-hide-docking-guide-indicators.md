@@ -65,6 +65,6 @@ Private Sub Service_PreviewDockPosition(ByVal sender As Object, ByVal e As DragD
 
 
 ## See Also
-
-[Using the DragDropService]({%slug winforms/controls/dock/architecture-and-features/using-the-dragdropservice%})
-[DockingGuidesTemplate]({%slug winforms/controls/dock/architecture-and-features/dockingguidestemplate%})
+                                
+[Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%})
+[DockingGuidesTemplate]({%slug winforms/dock/architecture-and-features/dockingguidestemplate%})
