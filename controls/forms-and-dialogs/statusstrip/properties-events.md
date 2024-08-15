@@ -23,14 +23,14 @@ previous_url: forms-and-dialogs-statusstrip-radstatusbar-properties, winforms/fo
 |StatusBarElement.__GripStyle__|Shows or hides the Grip element in RadStatusStrip.|
 |StatusBarElement.__RotateGripOnRightToLeft__|Gets or sets a value indicating whether the grip is rotated in RightToLeft mode.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |__SetSpring__(RadItem control, bool value)|Sets Spring property of specified RadItem indicating whether the item will automatically fills the available space on the RadStatusStrip as the form is resized.|
 |__GetSpring__ (RadItem control)|Gets Spring property of specified RadItem.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
@@ -38,7 +38,7 @@ previous_url: forms-and-dialogs-statusstrip-radstatusbar-properties, winforms/fo
 |__LayoutStyleChanging__|Fires before LayoutStyle is changed.|
 |__LayoutStyleChanged__|Fires after LayoutStyle is changed.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radstatusstrip.html#properties)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radstatusstrip.html#events)
