@@ -1,6 +1,6 @@
 ---
 title: How to Hide DockingGuide Indicators
-description: Learn how to hide DockingGuide Indicators that appear in center and manage their position.
+description: Learn how to hide DockingGuide Indicators that appear in the center and manage their position.
 type: how-to
 page_title: How to Hide DockingGuide Indicators that Appear in Center in RadDock for WinForms
 slug: dock-hide-docking-guide-indicators
@@ -17,13 +17,13 @@ ticketid: 1661136
 
 ## Description
 
-By default, when the user stars dragging a window in RadDock, Docking Assistant appears. Docking Assistant uses DockingGuidesTemplates to show hints helping the user to relocate the window. For more information please refer to [Using the DragDropService]({%slug winforms/controls/dock/architecture-and-features/using-the-dragdropservice%})
+By default, when the user starts dragging a window in RadDock, Docking Assistant appears. Docking Assistant uses DockingGuidesTemplates to show hints to help the user to relocate the window. For more information please refer to [Using the DragDropService]({%slug winforms/controls/dock/architecture-and-features/using-the-dragdropservice%})
 
 >caption Figure 1: Before.
 
 ![dock-hide-docking-guide-indicators](images/dock-hide-docking-guide-indicators001.png)
 
-Commom requirement is to hide some of the docking guide indicators. This article demonstrates how one can manage the docking hints appearance and achieve the look as the image below:
+A common requirement is to hide some of the docking guide indicators. This article demonstrates how one can manage the docking hints appearance and achieve the look as the image below:
 
 >caption Figure 2: After
 
