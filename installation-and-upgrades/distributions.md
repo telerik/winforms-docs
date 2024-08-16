@@ -10,7 +10,7 @@ position: 1
 
 # Distributions
 
-This article dives into UI controls, focusing on their compatibility with Microsoft Framework versions. We will break down the current distributions, ensuring you stay in sync with the latest updates for a seamless integration into your projects.
+This article dives into UI controls, focusing on their compatibility with Microsoft Framework versions. We will break down the current distributions, ensuring you stay in sync with the latest updates for seamless integration into your projects.
 
 ## .NET Framework
 
