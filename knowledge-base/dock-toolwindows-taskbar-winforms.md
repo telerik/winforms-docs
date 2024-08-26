@@ -4,7 +4,7 @@ description: Learn how to make detached ToolWindows in your WinForms application
 type: how-to
 page_title: How to Display ToolWindows on the Taskbar in WinForms
 slug: dock-toolwindows-taskbar-winforms
-tags: radDock, toolwindow, floatingwindowcreated, showintaskbar
+tags: dock, toolwindow, floatingwindowcreated, showintaskbar
 res_type: kb
 ticketid: 1662442
 ---
@@ -18,6 +18,8 @@ ticketid: 1662442
 ## Description
 
 In a WinForms application that uses RadDock, the DocumentWindow can be detached and displayed on the taskbar, but the ToolWindow, when detached, does not show up on the taskbar. This article explains how to make ToolWindows visible on the taskbar.
+
+![WinForms RadDock ToolWindow Taskbar](images/dock-toolwindows-taskbar-winforms001.png)
 
 ## Solution
 
