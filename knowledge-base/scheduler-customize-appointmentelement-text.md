@@ -88,6 +88,7 @@ public partial class CustomAppElement : AppointmentElement
         return styleBuilder.ToString();
     }
 }
+
 ````
 
 ### Applying the Custom Appointment Element
