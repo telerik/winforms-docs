@@ -53,7 +53,9 @@ Dim info As New HyperlinkInfo() With {.NavigateUri = "http://www.telerik.com", .
 Me.radRichTextEditor1.InsertHyperlink(info, "RichTextBox demo")
 
 ````
+
 {{endregion}} 
+
 
 A link to a bookmark is inserted by specifying the bookmark's name as **NavigateUri** and setting the **IsAnchor** property to *true*:
 
@@ -81,7 +83,7 @@ You can also use the overloaded methods for inserting a hyperlink:
             
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, StyleDefinition hyperlinkStyle) - create a hyperlink from the currently selected part of the document and change the style of the text to the style passed as second argument.
 
-Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking.
+Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=remove}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=remove}} 
@@ -205,7 +207,7 @@ Next link
 
 ## Other Customization Options
 
-__ToolTip__
+### ToolTip
 
 By default, hyperlinks take a fixed string as a tool tip. The default format is:
 
@@ -214,20 +216,67 @@ By default, hyperlinks take a fixed string as a tool tip. The default format is:
 
 You have control over it using the __HyperlinkToolTipFormatString__ of **RadRichTextEditor**, which will set the format for all hyperlinks in the document.
         
-__HyperlinkClicked__
+### HyperlinkClicked event
 
-When you click on a hyperlink, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, which you have clicked, e.g. a **Span**, an **Image**, **InlineUIContainer**, etc. The event args on the other hand, provide the possibility to mark the event as handled and prevent the default action. Custom logic can also be implemented depending on the __HyperlinkTarget__ and __URL__, which are also visible as properties of the event args.
+When a hyperlink is clicked, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, which you have clicked, e.g. a **Span**, an **Image**, **InlineUIContainer**, etc. The __HyperlinkClickedEventArgs__ provide the possibility either to cancel or replace the navigation action. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecure address or from starting a local process.
 
-![WinForms RadRichTextEditor Hyperlink Click Even Handler](images/richtexteditor-features-hyperlink002.png)
+With the 2024 Q4 release, the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be cancelled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
 
-## HyperlinkNavigationMode
+Here is an example of using the HyperlinkClicked event prompting that the clicked hyperlink might be unsafe and allows to cancel the navigation process upon receiving the end user confirmation:
 
-This property allows you to control what action should trigger the opening of a hyperlink. The possible options are:
+{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=HyperlinkClickedEvent}} 
+{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=HyperlinkClickedEvent}} 
+
+````C#
+void radRichTextEditor1_HyperlinkClicked(object sender, HyperlinkClickedEventArgs e)
+{
+   var link = e.URL;
+    if (link.EndsWith("exe"))
+    { 
+        e.Handled = true; MessageBoxResult Result = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
+        if (Result == MessageBoxResult.Yes)
+        {
+            Process.Start(new ProcessStartInfo()
+            {
+                FileName = link,
+                UseShellExecute = true
+            });
+        }
+    }
+}
+
+
+````
+````VB.NET
+Private Sub radRichTextEditor1_HyperlinkClicked(ByVal sender As Object, ByVal e As HyperlinkClickedEventArgs)
+    Dim link = e.URL
+
+    If link.EndsWith("exe") Then
+        e.Handled = True
+        Dim Result As MessageBoxResult = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question)
+        If Result = MessageBoxResult.Yes Then
+            Process.Start(New ProcessStartInfo() With {
+                .FileName = link,
+                .UseShellExecute = True
+            })
+        End If
+    End If
+End Sub
+
+
+````
+
+{{endregion}} 
+
+
+### HyperlinkNavigationMode
+
+The __HyperlinkNavigationMode__ allows you to control what action should trigger the opening of a hyperlink. The possible options are:
 
 * **CtrlClick**: Triggers the hyperlink when users hold the Ctrl key and click on the hyperlink.
 * **Click**: Triggers the hyperlink when users click on the hyperlink.
 
-#### Change the default hyperlink navigation mode
+Below is demonstrated how to change the default hyperlink navigation mode:
 
 {{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=HyperlinkMode}} 
 {{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=HyperlinkMode}} 
