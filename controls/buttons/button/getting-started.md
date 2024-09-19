@@ -25,7 +25,7 @@ To programmatically add a __RadButton__ to a form, create a new instance of a _
 
 #### Adding a RadButton at runtime 
 
-{{source=..\SamplesCS\Buttons\Button.cs region=creatingbutton}} 
+{{source=..\SamplesCS\Buttons\Button.cs region=creatingbuttonTEST}} 
 {{source=..\SamplesVB\Buttons\Button.vb region=creatingbutton}} 
 
 ````C#
