@@ -57,7 +57,7 @@ End Sub
 
 {{endregion}}
 
-* __HyperlinkClicked__ event of RadPdfViewer: This event is similar to AnnotationClicked, but it is raised only when you click on the hyperlink type annotations. It allows you to cancel the navigation to the associated URI or to modify the click action. The HyperlinkClickedEventArgs gives access to the URL, which can be manually checked if it is trusted. The navigation can be canceled by either setting the __Handled__ property of the event args to _true_ or the __IsTrustedUrl__ property to _false_. Below is an example of using this event to prompt that the clicked hyperlink might be unsafe and provide the opportunity to cancel the navigation process upon receiving the end user confirmation:
+* __HyperlinkClicked__ event of RadPdfViewer: This event is similar to AnnotationClicked, but it is raised only when you click on the hyperlink type annotations. It allows you to cancel the navigation to the associated URI or to modify the click action. The HyperlinkClickedEventArgs gives access to the URL, which can be manually checked if it is trusted. With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. If needed, the navigation can be canceled by either setting the __Handled__ property of the event args to _true_ or the __IsTrustedUrl__ property to _false_. Below is an example of using this event to prompt that the clicked hyperlink might be unsafe and provide the opportunity to cancel the navigation process upon receiving the end user confirmation:
 
 #### HyperlinkClicked Event Handler 
 
