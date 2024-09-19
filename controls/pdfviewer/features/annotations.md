@@ -57,6 +57,52 @@ End Sub
 
 {{endregion}}
 
+* __HyperlinkClicked__ event of RadPdfViewer: This event is similar to AnnotationClicked, but it is raised only when you click on the hyperlink type annotations. It allows you to cancel the navigation to the associated URI or to modify the click action. The HyperlinkClickedEventArgs gives access to the URL, which can be manually checked if it is trusted. The navigation can be canceled by either setting the __Handled__ property of the event args to _true_ or the __IsTrustedUrl__ property to _false_. Below is an example of using this event to prompt that the clicked hyperlink might be unsafe and provide the opportunity to cancel the navigation process upon receiving the end user confirmation:
+
+#### HyperlinkClicked Event Handler 
+
+{{source=..\SamplesCS\PdfViewer\PdfAnnotations.cs region=HyperlinkClicked}} 
+{{source=..\SamplesVB\PdfViewer\PdfAnnotations.vb region=HyperlinkClicked}} 
+
+````C#
+private void RadPdfViewer1_HyperlinkClicked(object sender, Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs e)
+{
+    var link = e.URL;
+    if (link.EndsWith("exe"))
+    {
+        e.Handled = true; MessageBoxResult Result = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
+        if (Result == MessageBoxResult.Yes)
+        {
+            Process.Start(new ProcessStartInfo()
+            {
+                FileName = link,
+                UseShellExecute = true
+            });
+        }
+    }
+}
+
+````
+````VB.NET
+Private Sub RadPdfViewer1_HyperlinkClicked(sender As Object, e As HyperlinkClickedEventArgs)
+    Dim link = e.URL
+    If link.EndsWith("exe") Then
+        e.Handled = True
+        Dim Result As MessageBoxResult = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question)
+        If Result = MessageBoxResult.Yes Then
+            Process.Start(New ProcessStartInfo() With {
+                .FileName = link,
+                .UseShellExecute = True
+            })
+        End If
+    End If
+End Sub
+
+````
+
+{{endregion}}
+
+
 * __Annotations__ property of __RadFixedDocument__ – A collection which returns all annotations in the document. For example you can retrieve all links using the following code:
 
 #### Get Annotation Links
