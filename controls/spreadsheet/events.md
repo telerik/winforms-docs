@@ -154,7 +154,8 @@ End Sub
 
 * **ActivePresenterChanged**: Occurs when the active presenter is changed.
 
-* **HyperlinkClicked**: Occurs when a hyperlink in the document gets clicked. The event allows you to either cancel or replace the navigation logic. HyperlinkClicked event can be used as a confirmation from the end-user whether to proceed or not with opening a hyperlink due to security reasons. 
+* **HyperlinkClicked**: Occurs when a hyperlink in the document gets clicked. The event allows you to either cancel or replace the navigation logic. HyperlinkClicked event can be used as a confirmation from the end-user whether to proceed or not with opening a hyperlink due to security reasons.
+  With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be cancelled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
 
 #### Example 3: Using the HyperlinkClicked event to implement confirmation for the clicked links in the document
 
