@@ -1,7 +1,7 @@
 ---
 title: Hyperlink
 page_title: Hyperlink - WinForms RichTextEditor Control
-description: WinForms RichTextEditor supports having a hyperlink span several paragraphs and being able to embed all kind of elements inside hyperlinks, e.g. images, tables and table elements.
+description: WinForms RichTextEditor supports having a hyperlink span several paragraphs and being able to embed all kinds of elements inside hyperlinks, e.g. images, tables, and table elements.
 slug: winforms/richtexteditor-/features/hyperlink
 tags: hyperlink
 published: True
@@ -15,13 +15,13 @@ The following functionality is supported in the __RadRichTextEditor__:
 
 * having a hyperlink span several paragraphs;
 
-* being able to embed all kind of elements inside hyperlinks, e.g. images, tables and table elements;
+* being able to embed all kinds of elements inside hyperlinks, e.g. images, tables, and table elements;
 
 * making bookmarks in the document the targets of hyperlinks.
 
 The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo),[HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).      
 
-[Other customization options](#othercustomizationoptions) include setting the tool tip format and detecting the click of hyperlinks.
+[Other customization options](#othercustomizationoptions) include setting the tooltip format and detecting the click of hyperlinks.
       
 ## HyperlinkInfo
 
@@ -174,7 +174,7 @@ The result (`Ctrl` + `Click` to follow):
 
 ![WinForms RadRichTextEditor Hyperlink Review](images/richtexteditor-features-hyperlink001.png)
 
-You will also need to use **HyperlinkRangeStart** and **HyperlinkRangeEnd**, if you are using hyperlinks for the implementation of a custom logic and want to get all hyperlinks from the document, manipulate the properties of the **HyperlinkInfo** or the whole part of the document that is included in the hyperlink.
+You will also need to use **HyperlinkRangeStart** and **HyperlinkRangeEnd**, if you are using hyperlinks for the implementation of custom logic and want to get all hyperlinks from the document, manipulate the properties of the **HyperlinkInfo** or the whole part of the document that is included in the hyperlink.
         
 For instance, here is how you can delete all hyperlinks in the document and replace them with some text:
 
@@ -209,18 +209,18 @@ Next link
 
 ### ToolTip
 
-By default, hyperlinks take a fixed string as a tool tip. The default format is:
+By default, hyperlinks take a fixed string as a tooltip. The default format is:
 
->note "{0}{1} to follow link" - The first parameter is the URL, the second is "Ctrl + Click" which is taken from the localization file.  
+>note "{0}{1} to follow link" - The first parameter is the URL, and the second is "Ctrl + Click" which is taken from the localization file.  
 >
 
 You have control over it using the __HyperlinkToolTipFormatString__ of **RadRichTextEditor**, which will set the format for all hyperlinks in the document.
         
 ### HyperlinkClicked event
 
-When a hyperlink is clicked, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, which you have clicked, e.g. a **Span**, an **Image**, **InlineUIContainer**, etc. The __HyperlinkClickedEventArgs__ provide the possibility either to cancel or replace the navigation action. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecure address or from starting a local process.
+When a hyperlink is clicked, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, that you have clicked, e.g. a **Span**, an **Image**, **InlineUIContainer**, etc. The __HyperlinkClickedEventArgs__ provides the possibility either to cancel or replace the navigation action. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecured address or from starting a local process.
 
-With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be cancelled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
+With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be canceled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
 
 Here is an example of using the HyperlinkClicked event prompting that the clicked hyperlink might be unsafe and allows to cancel the navigation process upon receiving the end user confirmation:
 
@@ -294,7 +294,7 @@ Me.radRichTextEditor1.HyperlinkNavigationMode = Telerik.WinForms.Documents.UI.Hy
 {{endregion}} 
 
 
-# See Also
+## See Also
 
  * [Document Elements]({%slug winforms/richtexteditor-/document-elements%})
 
