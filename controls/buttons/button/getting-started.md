@@ -25,16 +25,11 @@ To programmatically add a __RadButton__ to a form, create a new instance of a _
 
 #### Adding a RadButton at runtime 
 
-{{source=..\SamplesCS\Buttons\Button.cs region=creatingbuttonTEST}} 
+{{source=..\SamplesCS\Buttons\Button.cs region=WRONGREGION}} 
 {{source=..\SamplesVB\Buttons\Button.vb region=creatingbutton}} 
 
 ````C#
-RadButton myNewRadButton = new RadButton();
-myNewRadButton.Text = "My New RadButton";
-myNewRadButton.Width = 150;
-myNewRadButton.Height = 50;
-this.Controls.Add(myNewRadButton);
-myNewRadButton.Click+=myNewRadButton_Click;
+
 
 ````
 ````VB.NET
