@@ -154,13 +154,60 @@ End Sub
 
 * **ActivePresenterChanged**: Occurs when the active presenter is changed.
 
+* **HyperlinkClicked**: Occurs when a hyperlink in the document gets clicked. The event allows you to either cancel or replace the navigation logic. HyperlinkClicked event can be used as a confirmation from the end-user whether to proceed or not with opening a hyperlink due to security reasons.
+  With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be canceled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
+
+#### Example 3: Using the HyperlinkClicked event to implement confirmation for the clicked links in the document
+
+{{source=..\SamplesCS\Spreadsheet\Events.cs region=HyperlinkClickedEvent}} 
+{{source=..\SamplesVB\Spreadsheet\Events.vb region=HyperlinkClickedEvent}}
+````C#
+private void ActiveWorksheetEditor_HyperlinkClicked(object sender, Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs e)
+{
+    if (e.URL.EndsWith("exe"))
+    {
+        e.Handled = true;
+        MessageBoxResult Result = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+        if (Result == MessageBoxResult.Yes)
+        {
+            Process.Start(new ProcessStartInfo()
+            {
+                FileName = e.URL,
+                UseShellExecute = true
+            });
+        }
+    }
+}
+
+````
+````VB.NET
+Private Sub ActiveWorksheetEditor_HyperlinkClicked(ByVal sender As Object, ByVal e As Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs)
+    If e.URL.EndsWith("exe") Then
+        e.Handled = True
+        Dim Result As MessageBoxResult = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question)
+
+        If Result = MessageBoxResult.Yes Then
+            Process.Start(New ProcessStartInfo() With {
+                .FileName = e.URL,
+                .UseShellExecute = True
+            })
+        End If
+    End If
+End Sub
+
+```` 
+ 
+{{endregion}} 
+
+
 >The events related to selection in RadSpreadsheet are described in the [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%}) topic.
 
 ## Cells Events
 
 * **CellPropertyChanged**: Occurs when a property of a cell is changed. The event arguments are of type **CellPropertyChangedEventArgs** and expose information about the exact property that was changed as well as the affected cell range. **Example 3** demonstrates how you can use the event to get a notification when the users change the fill of a cell.
 
-#### Example 3: Using the CellPropertyChangedEvent
+#### Example 4: Using the CellPropertyChangedEvent
 
 {{source=..\SamplesCS\Spreadsheet\Events.cs region=radspreadsheet-events_3}} 
 {{source=..\SamplesVB\Spreadsheet\Events.vb region=radspreadsheet-events_3}}

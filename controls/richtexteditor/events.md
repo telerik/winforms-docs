@@ -87,11 +87,15 @@ The __RadRichTextEditor__ control raises the following specific events:
                 
 	* An __EventArgs__ object.                
 
-* __HyperlinkClicked__ - occurs when the current page has changed. The event handler receives two arguments:
-            
-	* The sender argument contains the __RadRichTextEditor__. This argument is of type object, but can be cast to the __RadRichTextEditor__ type.
+* __HyperlinkClicked__ - Occurs when the users clicks on a hyperlink in the current document. The event allows you to either cancel or replace the navigation logic. HyperlinkClicked event can be used as a confirmation from the end-user whether to proceed or not with opening a hyperlink due to security reasons. The event handler receives two arguments:
+       
+	* The sender argument contains the __Span__ containing the hyperlink's content. This argument is of type object, but can be cast to the __Span__ type.
                 
-	* A __HyperlinkClickedEventArgs__ object. This argument allows you to access the URL and the target of the hyperlink.
+	* A __HyperlinkClickedEventArgs__ object. This argument allows you to access the following properties:
+		- __Handled__: Get or set a value indicating whether the event is handled.
+		- __HyperlinkTarget__: Gets the target hyperlink. 
+		- __URL__: Gets the URL of the hyperlink.
+		- __IsTrustedUrl__: Gets a value tha indicates if the URL passes the validation. If the URL is not trusted, the hyperlink will not be opened. Set this property to true to open the hyperlink. For more information see [Hyperlink]({%slug winforms/richtexteditor-/features/hyperlink%}) article.
                 
 * __IsReadOnlyChanged__ - occurs when __IsReadOnly__ value has changed. The event handler receives two arguments:
             
