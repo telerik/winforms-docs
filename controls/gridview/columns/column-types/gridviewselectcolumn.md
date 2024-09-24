@@ -46,7 +46,7 @@ If the *MultiSelect* property is enabled, users can make a [multiple selection i
 
 #### Row selection via checkboxes only
 
-In some cases the user may need to use multiple row selection through the **GridViewSelectColumn** only. The **UseCheckboxRowSelectionOnly** property defines whether the user can select rows only via the checkboxes. When **UseCheckboxRowSelectionOnly** is set to *true*, the selection only via checkboxes is allowed. Thus, if you click with the mouse over different rows they will not get selected, until you check the corresponding checkbox from the **GridViewSelectColumn**. 
+In some cases, the user may need to use multiple row selection through the **GridViewSelectColumn** only. The **UseCheckboxRowSelectionOnly** property defines whether the user can select rows only via the checkboxes. When **UseCheckboxRowSelectionOnly** is set to *true*, the selection only via checkboxes is allowed. Thus, if you click with the mouse over different rows they will not get selected, until you check the corresponding checkbox from the **GridViewSelectColumn**. 
 
 {{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=CheckboxRowSelection}} 
 {{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=CheckboxRowSelection}} 
