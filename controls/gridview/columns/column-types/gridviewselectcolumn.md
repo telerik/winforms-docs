@@ -44,6 +44,27 @@ Me.RadGridView1.ShowSelectColumn = True
 
 If the *MultiSelect* property is enabled, users can make a [multiple selection in RadGridView]({%slug winforms/gridview/selection/multiple-selection%}). When using the selection UI through GridViewSelectColumn, the users will be able to select multiple rows by simply checking a checkbox. If *MultiSelect* property is *false*, the users can select only a single row/cell. 
 
+#### Row selection via checkboxes only
+
+In some cases the user may need to use multiple row selection through the **GridViewSelectColumn** only. The **UseCheckboxRowSelectionOnly** property defines whether the user can select rows only via the checkboxes. When **UseCheckboxRowSelectionOnly** is set to *true*, the selection only via checkboxes is allowed. Thus, if you click with the mouse over different rows they will not get selected, until you check the corresponding checkbox from the **GridViewSelectColumn**. 
+
+{{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=CheckboxRowSelection}} 
+{{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=CheckboxRowSelection}} 
+
+````C#
+this.radGridView1.MasterTemplate.UseCheckboxRowSelectionOnly = true;
+
+````
+````VB.NET
+Me.RadGridView1.MasterTemplate.UseCheckboxRowSelectionOnly = True
+
+````
+
+{{endregion}} 
+
+
+>note The **UseCheckboxRowSelectionOnly** will only be considered if **ShowSelectColumn** is set to *true*.
+
 #### Hierarchy mode
 
 **GridViewSelectColumn** is also supported when RadGridView is bound to hierarchical data and child templates in the hierarchy view are shown. In case you would like to enable this setting in a hierarchy, it is necessary to set **ShowSelectColumn** to the respective child template:
