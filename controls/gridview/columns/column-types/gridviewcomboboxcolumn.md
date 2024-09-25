@@ -475,7 +475,16 @@ End Class
 >caption Figure 2: The items styles are now changed.
 
 ![WinForms RadGridView The items styles are now changed](images/gridview-columns-gridviewcomboboxcolumn004.png)
-# See Also
+
+## Examples
+
+You can check the following SDK project which demonstrates how you can use the GridViewComboBoxColumn in different scenarios:
+
+* [CascadingComboboxes](https://github.com/telerik/winforms-sdk/tree/master/GridView/CascadingComboboxes)
+* [GridViewComboxColumnCustomValue](https://github.com/telerik/winforms-sdk/tree/master/GridView/GridViewComboxColumnCustomValue)
+* [LoadOnDemandComboBoxInGrid](https://github.com/telerik/winforms-sdk/tree/master/GridView/LoadOnDemandComboBoxInGrid)
+
+## See Also
 
 * [How to Filter a GridViewComboBoxColumn by DisplayMember]({%slug filter-gridviewcomboboxcolumn-by-display-member%})
 
