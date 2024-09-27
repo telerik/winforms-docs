@@ -1,8 +1,8 @@
 ---
-title: Adjusting Font Size and Width of ComboBox in RadGridView for WinForms
-description: Learn how to customize the font size and dropdown width of a ComboBox column in RadGridView for WinForms to match your UI requirements.
+title: Adjusting GridViewComboBoxColumn Editor DropDown Width to the Longest Text in RadGridView
+description: Learn how to customize the dropdown width of a GridViewComboBoxColumn editor to match the longest item text width.
 type: how-to
-page_title: How to Customize ComboBox Column Appearance in RadGridView for WinForms
+page_title: How to Customize GridViewComboBoxColumn Editor in RadGridView for WinForms
 slug: gridview-combobox-popup-width-longest-text
 tags: gridview,  dropdownlisteditor, font, width, combobox, longest text
 res_type: kb
@@ -17,57 +17,45 @@ ticketid: 1665670
 
 ## Description
 
-Adjusting the font size of the ComboBox on a dropdown grid in RadGridView is essential for aligning it with the rest of the grid's appearance. Additionally, customizing the width of the ComboBox dropdown grid to accommodate the longest text or to a specified width enhances the UI experience. This KB article also answers the following questions:
-- How can I change the font size of a dropdown in RadGridView?
-- Is it possible to auto-adjust the width of a ComboBox dropdown in RadGridView to fit the longest item?
-- Can I set a fixed width for the dropdown of a GridViewComboBoxColumn?
+By default, the dropdown part width of the GridViewComboBoxColumn will match the size of the column. This way, items with text bigger than the size of the column will be clipped. In this article, we will demonstrate how we can adjust the popup size to the longest item text in the dropdown.
 
 ## Solution
 
-To customize the font size of the ComboBox in a GridViewComboBoxColumn, handle the `CellEditorInitialized` event of RadGridView. Access the `EditorElement` of the active editor and modify the `Font` property of the `ListElement`.
+To customize the GridViewComboBoxColumn editor, handle the `CellEditorInitialized` event of RadGridView. For adjusting the width of the dropdown to either auto width based on the longest text or to a set width, implement custom logic within the `CellEditorInitialized` event. Use the `AutoSizeItems` property and measure the text size of each item to determine the dropdown width.
 
-```vb
-Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
-    Dim editor As RadDropDownListEditor = TryCast(e.ActiveEditor, RadDropDownListEditor)
+````C#
+private void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
+{
+    RadDropDownListEditor editor = e.ActiveEditor as RadDropDownListEditor;
+    if (editor == null)
+    {
+        return;
+    }
 
-    If editor Is Nothing Then
-        Return
-    End If
+    RadDropDownListElement element = editor.EditorElement as RadDropDownListEditorElement;
+    element.AutoSizeItems = true;
 
-    Dim element As RadDropDownListElement = TryCast(editor.EditorElement, RadDropDownListEditorElement)
-    element.ListElement.Font = New Font(element.Font.FontFamily, 16)
-End Sub
-```
+    int scrollBarWidth = 0;
 
-For adjusting the width of the dropdown to either auto width based on the longest text or to a set width, implement custom logic within the `CellEditorInitialized` event. Use the `AutoSizeItems` property and measure the text size of each item to determine the dropdown width.
+    if (element.DefaultItemsCountInDropDown < element.Items.Count)
+    {
+        scrollBarWidth = 35;
+    }
 
-```vb
-Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
-    Dim editor As RadDropDownListEditor = TryCast(e.ActiveEditor, RadDropDownListEditor)
+    foreach (RadListDataItem item in element.Items)
+    {
+        string text = item.Text;
+        item.TextAlignment = ContentAlignment.MiddleCenter;
+        Size size = TextRenderer.MeasureText(text, element.ListElement.Font);
 
-    If editor Is Nothing Then
-        Return
-    End If
+        if (element.DropDownWidth < size.Width)
+        {
+            element.DropDownWidth = size.Width + scrollBarWidth;
+        }
+    }
+}
 
-    Dim element As RadDropDownListElement = TryCast(editor.EditorElement, RadDropDownListEditorElement)
-    element.AutoSizeItems = True
-    Dim scrollBarWidth As Integer = 0
-
-    If element.DefaultItemsCountInDropDown < element.Items.Count Then
-        scrollBarWidth = 35 ' Considering scrollbar width
-    End If
-
-    For Each item As RadListDataItem In element.Items
-        Dim text As String = item.Text
-        Dim size As Size = TextRenderer.MeasureText(text, element.ListElement.Font)
-
-        If element.DropDownWidth < size.Width Then
-            element.DropDownWidth = size.Width + scrollBarWidth
-        End If
-    Next
-End Sub
-```
-
+````
 
 ## See Also
 
