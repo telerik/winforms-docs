@@ -17,7 +17,7 @@ ticketid: 1665670
 
 ## Description
 
-By default, the dropdown part width of the GridViewComboBoxColumn will match the size of the column. This way, items with text bigger than the size of the column will be clipped. In this article, we will demonstrate how we can adjust the popup size to the longest item text in the dropdown.
+By default, the width of the dropdown popup in the GridViewComboBoxColumn will match the size of the column. This way, items which text is bigger than the size of the column will be clipped. In this article, we will demonstrate how we can adjust the popup size to the longest item text in the dropdown.
 
 ## Solution
 
