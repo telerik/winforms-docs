@@ -1,7 +1,7 @@
 ---
 title: Export to Excel with GridViewSpreadStreamExport
 page_title: Export to Excel with GridViewSpreadStreamExport - WinForms GridView Control
-description: WinForms GridView utilizes the RadSpreadStreamProcessing library to export grids that contain significant amount of data.
+description: WinForms GridView utilizes the RadSpreadStreamProcessing library to export grids that contain a significant amount of data.
 slug: winforms/gridview/exporting-data/stream-export
 tags: spread,export,excel,xlsx
 published: True
@@ -29,7 +29,7 @@ The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http
 
 # Exporting
 
-To use the spread export functionality create an instance of the __GridViewSpreadStreamExport__ object. Pass as parameter the __RadGridView__ instance to export. Afterwards, the __RunExport__ method will trigger the export process. The latter method accepts as parameter the filename of the file to be exported and a [SpreadStreamExportRenderer](%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%) instance. 
+To use the spread export functionality create an instance of the __GridViewSpreadStreamExport__ object. Pass as a parameter the __RadGridView__ instance to export. Afterward, the __RunExport__ method will trigger the export process. The latter method accepts as a parameter the filename of the file to be exported and a [SpreadStreamExportRenderer](%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%) instance. 
 
 #### Exporting the grid. 
 
@@ -80,7 +80,7 @@ Each column in RadGridView has __ExcelExportType__ property which can be used fo
 
 ### CellFormatting
 
-This event occurs for every cell that is being exported. It can be used for styling the cells or applying custom format to the cells values.
+This event occurs for every cell that is being exported. It can be used for styling the cells or applying a custom format to the cells values.
 
 #### Using the CellFormatting event
 
@@ -197,6 +197,10 @@ End Sub
 ### ExportCompleted
 
 Occurs when the export process completes. This event is suitable for notifying the user that the exported operation is now completed.
+
+### ChildViewExporting
+
+Occurs when a child view will be exported. This event is suitable for checking whether a child view will be exported or not.
 
 # Asynchronous Export
 
