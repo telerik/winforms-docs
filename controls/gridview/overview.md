@@ -60,7 +60,7 @@ __RadGridView__ is a grid component developed on top of [Telerik Presentation Fr
 
 * __In-place data editing with validation and error indication__: The control offers intuitive in-cell data editing, with a flexible API that allows developers to easily customize the built-in editors. It also supports seamless integration of data validation mechanisms, enabling developers to provide real-time error feedback for invalid inputs. [Read more]({%slug winforms/gridview/editors/editors%})
 
-* __Selection and navigation__: The control supports single and multiple record selections that can be manipulated both with the mouse and with the keyboard. [Read more]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
+* __Selection and navigation__: The control supports single and multiple record selection that can be manipulated both with the mouse and with the keyboard. [Read more]({%slug winforms/gridview/columns/pinning-and-unpinning-columns%})
 
 * __Exporting data in different file formats__: RadGridView provides built-in methods for exporting its data to various formats. [Read more]({%slug winforms/gridview/exporting-data/overview%})
 
