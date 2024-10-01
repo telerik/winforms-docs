@@ -13,7 +13,7 @@ previous_url: gridview-populating-with-data-databinding-radgridview
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Binding RadGridView for WinForms to OpenAccess](http://tv.telerik.com/watch/winforms/binding-radgridview-for-winforms-to-openaccess)<br>In this video, you will learn how to bind RadGridView for WinForms to OpenAccess entities.|![WinForms RadGridView Databinding](images/gridview-populating-with-data-databinding-radgridview001.png)|
+|[Binding RadGridView for WinForms to OpenAccess](https://www.telerik.com/videos/winforms/binding-radgridview-for-winforms-to-openaccess)<br>In this video, you will learn how to bind RadGridView for WinForms to OpenAccess entities.|![WinForms RadGridView Databinding](images/gridview-populating-with-data-databinding-radgridview001.png)|
 
 ## 
 
@@ -30,7 +30,8 @@ previous_url: gridview-populating-with-data-databinding-radgridview
 **RadGridView** can bind to a single level of data or multiple levels of [hierarchical data]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data%}). 
 
 **RadGridView** can work in so called [Unbound mode]({%slug winforms/gridview/populating-with-data/unbound-mode%}), where the grid is not bound to any data and using the grid API, you specify the data (columns and rows) that will be displayed  dynamically at runtime. 
-# See Also
+
+## See Also
 * [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})
 
 * [Bindable Types]({%slug winforms/gridview/populating-with-data/bindable-types%})
@@ -46,4 +47,8 @@ previous_url: gridview-populating-with-data-databinding-radgridview
 * [Binding to EntityFramework using Database first approach]({%slug winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach%})
 
 * [Binding to Generic Lists]({%slug winforms/gridview/populating-with-data/binding-to-generic-lists%})
+
+* [Binding to Sub Objects]({%slug winforms/gridview/populating-with-data/binding-to-sub-objects%})
+
+* [Binding to ObservableCollection]({%slug winforms/gridview/populating-with-data/binding-to-sub-objects%})
 
