@@ -32,8 +32,8 @@ this.radTreeMap1.Algorithm = squarifiedAlgorithm;
 
 ````
 ````VB.NET
-SquarifiedAlgorithm squarifiedAlgorithm = new SquarifiedAlgorithm(); 
-this.radTreeMap1.Algorithm = squarifiedAlgorithm;
+Dim squarifiedAlgorithm As SquarifiedAlgorithm = New SquarifiedAlgorithm()
+Me.radTreeMap1.Algorithm = squarifiedAlgorithm
 
 ````
 
