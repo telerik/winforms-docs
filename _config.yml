@@ -724,40 +724,48 @@ navigation:
     controls/gauges/radialgauge/understanding-gauge-elements:
         title: Understanding Gauge Elements
         position: 4
+        
     controls/gridview:
         title: GridView
         position: 260
+        
     controls/gridview/fundamentals:
         title: Fundamentals
         position: 2
-    controls/gridview/columns:
+    controls/gridview/features:
+        title: Features
+        position: 2
+    controls/gridview/visual-elements:
+        title: Visual Elements
+        position: 2
+    controls/gridview/visual-elements/columns:
         title: Columns
         position: 3
-    controls/gridview/columns/column-types:
+    controls/gridview/visual-elements/columns/column-types:
         title: Column Types
         position: 3     
-    controls/gridview/rows:
+    controls/gridview/visual-elements/rows:
         title: Rows
         position: 4
-    controls/gridview/rows/how-to:
+    controls/gridview/visual-elements/rows/how-to:
         title: How To
         position: 19  
-    controls/gridview/cells:
+    controls/gridview/visual-elements/cells:
         title: Cells
         position: 5
-    controls/gridview/cells/formating-examples:
+    controls/gridview/visual-elements/cells/formating-examples:
         title: Formatting Examples
         position: 10
-    controls/gridview/drag-and-drop:
+    controls/gridview/features/drag-and-drop:
         title: Drag and Drop
         position: 5
-    controls/gridview/editors:
+    controls/gridview/features/editing/editors:
         title: Editors
         position: 6
-    controls/gridview/editors/how-to:
+    controls/gridview/features/editing/editors/how-to:
         title: How-To
         position: 7
-    controls/gridview/context-menus:
+    controls/gridview/features/context-menus:
         title: Context Menus
         position: 7
     controls/gridview/populating-with-data:
@@ -769,40 +777,40 @@ navigation:
     controls/gridview/hierarchical-grid/how-to:
         title: How-To
         position: 10
-    controls/gridview/selection:
+    controls/gridview/features/selection:
         title: Selection
         position: 10
-    controls/gridview/scrolling:
+    controls/gridview/features/scrolling:
         title: Scrolling
         position: 12
-    controls/gridview/sorting:
+    controls/gridview/features/sorting:
         title: Sorting
         position: 13
-    controls/gridview/grouping:
+    controls/gridview/features/grouping:
         title: Grouping
         position: 14
-    controls/gridview/filtering:
+    controls/gridview/features/filtering:
         title: Filtering
         position: 15
-    controls/gridview/paging:
+    controls/gridview/features/paging:
         title: Paging
         position: 16
-    controls/gridview/expression-editor:
+    controls/gridview/features/editing/expression-editor:
         title: Expression Editor
         position: 17
-    controls/gridview/insert-update-delete-records:
+    controls/gridview/features/editing/insert-update-delete-records:
         title: Insert/Update/Delete Records
         position: 18
     controls/gridview/view-definitions:
         title: View Definitions
         position: 19
-    controls/gridview/virtual-mode:
+    controls/gridview/features/virtual-mode:
         title: Virtual Mode
         position: 20
-    controls/gridview/exporting-data:
+    controls/gridview/features/exporting-data:
         title: Exporting Data
         position: 21
-    controls/gridview/exporting-data/how-to:
+    controls/gridview/features/exporting-data/how-to:
         title: How-To
         position: 21
     controls/gridview/design-time-support:
@@ -817,10 +825,10 @@ navigation:
     controls/gridview/localization:
         title: Localization
         position: 25
-    controls/gridview/save-and-load-layout:
+    controls/gridview/features/save-and-load-layout:
         title: Save and Load Layout
         position: 26
-    controls/gridview/printing-support:
+    controls/gridview/features/printing-support:
         title: Printing Support
         position: 27
     controls/heatmap:
