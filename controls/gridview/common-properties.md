@@ -5,7 +5,7 @@ description: Describes the most commonly used properties of RadGridView
 slug: winforms/gridview/common-properties
 tags: copy/paste/cut
 published: True
-position: 11
+position: 5
 ---
 
 # Commonly Used Properties

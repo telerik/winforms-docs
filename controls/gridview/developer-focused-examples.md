@@ -5,7 +5,7 @@ description: Additional examples built on top the WinForms GridView control.
 slug: winforms/gridview/developer-focused-examples
 tags: developer, sdk, examples
 published: True
-position: 2
+position: 14
 ---
 
 # Developer Focused Examples
