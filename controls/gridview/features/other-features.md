@@ -4,8 +4,8 @@ page_title: Other Features - RadGridView
 description: 
 slug: winforms/gridview/other-features
 tags: gridview, searching
-published: True
-position: 12
+published: False
+position: 18
 ---
 
 ## Other Features

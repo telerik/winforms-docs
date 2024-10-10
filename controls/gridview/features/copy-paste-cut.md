@@ -5,7 +5,7 @@ description: Describes how you can use the built-in Copy, Paste, Cut functionali
 slug: winforms/gridview/cut-copy-paste
 tags: copy/paste/cut
 published: True
-position: 11
+position: 14
 previous_url: gridview-copy-paste-cut
 ---
 

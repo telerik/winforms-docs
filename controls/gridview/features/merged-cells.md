@@ -5,7 +5,7 @@ description: Learn how to merge the cells in the WinForms GridView.
 slug: gridview-merged-cells
 tags: merged,cells,grid,gridmergecellelement
 published: True
-position: 10
+position: 13
 ---
 
 # Merged Cells

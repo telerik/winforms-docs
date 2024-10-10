@@ -5,7 +5,7 @@ description: Describes how you can use the Split view to display tow grid within
 slug: winforms/gridview/split-view
 tags: splitview
 published: True
-position: 12
+position: 16
 ---
 
 # Split View

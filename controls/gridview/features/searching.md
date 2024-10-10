@@ -4,7 +4,7 @@ page_title: Searching - RadGridView
 description: 
 slug: winforms/gridview/Searching
 tags: gridview, searching
-published: True
+published: False
 position: 12
 ---
 

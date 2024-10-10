@@ -5,7 +5,7 @@ description: Use the virtual mode when you need to shows large amount of data wi
 slug: winforms/gridview/virtual-mode/virtual-mode
 tags: virtual,mode
 published: True
-position: 0
+position: 17
 previous_url: gridview-virtual-mode
 ---
 

@@ -5,7 +5,7 @@ description: WinForms GridView is a grid component developed on top of Telerik P
 slug: winforms/gridview/getting-started
 tags: getting,started
 published: True
-position: 1
+position: 3
 previous_url: gridview-getting-started
 ---
 

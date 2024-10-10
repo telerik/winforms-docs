@@ -5,7 +5,7 @@ description: Describes how you can show the grid view caption label.
 slug: winforms/gridview/caption
 tags: gridview, caption, title
 published: True
-position: 12
+position: 15
 ---
 
 ## Title
