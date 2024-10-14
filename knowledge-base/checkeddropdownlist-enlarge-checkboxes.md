@@ -13,7 +13,7 @@ ticketid: 1666283
 
 |Product Version|Product|Author|
 |----|----|----|
-|2024.3.806|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2024.3.806|RadCheckedDropDownList for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 Adjusting the size of checkboxes within the dropdown items of a RadCheckedDropDownList can enhance the visual appeal and usability of the application. This article demonstrates how to increase the size of checkboxes alongside adjusting the height of the dropdown items for better alignment and visibility.
