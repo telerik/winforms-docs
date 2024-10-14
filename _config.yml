@@ -724,85 +724,106 @@ navigation:
     controls/gauges/radialgauge/understanding-gauge-elements:
         title: Understanding Gauge Elements
         position: 4
+        
     controls/gridview:
         title: GridView
         position: 260
+        
     controls/gridview/fundamentals:
         title: Fundamentals
-        position: 2
-    controls/gridview/columns:
+        position: 4
+    controls/gridview/features:
+        title: Features
+        position: 8
+    controls/gridview/visual-elements:
+        title: Visual Elements
+        position: 9
+    controls/gridview/visual-elements/columns:
         title: Columns
         position: 3
-    controls/gridview/columns/column-types:
+    controls/gridview/visual-elements/columns/column-types:
         title: Column Types
         position: 3     
-    controls/gridview/rows:
+    controls/gridview/visual-elements/rows:
         title: Rows
         position: 4
-    controls/gridview/rows/how-to:
+    controls/gridview/visual-elements/rows/how-to:
         title: How To
         position: 19  
-    controls/gridview/cells:
+    controls/gridview/visual-elements/cells:
         title: Cells
         position: 5
-    controls/gridview/cells/formating-examples:
+    controls/gridview/visual-elements/cells/formating-examples:
         title: Formatting Examples
         position: 10
-    controls/gridview/drag-and-drop:
-        title: Drag and Drop
-        position: 5
-    controls/gridview/editors:
+    controls/gridview/features/editing/editors:
         title: Editors
         position: 6
-    controls/gridview/editors/how-to:
+    controls/gridview/features/editing/editors/how-to:
         title: How-To
         position: 7
-    controls/gridview/context-menus:
-        title: Context Menus
-        position: 7
-    controls/gridview/populating-with-data:
-        title: Populating with Data
-        position: 8
     controls/gridview/hierarchical-grid:
         title: Hierarchical Grid
-        position: 9
+        position: 10
     controls/gridview/hierarchical-grid/how-to:
         title: How-To
         position: 10
-    controls/gridview/selection:
-        title: Selection
-        position: 10
-    controls/gridview/scrolling:
-        title: Scrolling
-        position: 12
-    controls/gridview/sorting:
-        title: Sorting
-        position: 13
-    controls/gridview/grouping:
-        title: Grouping
-        position: 14
-    controls/gridview/filtering:
+        
+    controls/gridview/features/filtering:
         title: Filtering
-        position: 15
-    controls/gridview/paging:
+        position: 0
+    controls/gridview/features/grouping:
+        title: Grouping
+        position: 1
+    controls/gridview/features/sorting:
+        title: Sorting
+        position: 2
+    controls/gridview/features/editing:
+        title: Editing
+        position: 3
+    controls/gridview/features/selection:
+        title: Selection
+        position: 4
+    controls/gridview/features/paging:
         title: Paging
-        position: 16
-    controls/gridview/expression-editor:
+        position: 5    
+    controls/gridview/features/drag-and-drop:
+        title: Drag and Drop
+        position: 6    
+    controls/gridview/features/save-and-load-layout:
+        title: Save and Load Layout
+        position: 7
+    controls/gridview/features/exporting-data:
+        title: Exporting Data
+        position: 8        
+    controls/gridview/features/scrolling:
+        title: Scrolling
+        position: 9
+    controls/gridview/features/context-menus:
+        title: Context Menus
+        position: 10  
+    controls/gridview/features/printing-support:
+        title: Printing Support
+        position: 11
+        
+        
+    controls/gridview/populating-with-data:
+        title: Populating with Data
+        position: 10
+    controls/gridview/features/editing/expression-editor:
         title: Expression Editor
         position: 17
-    controls/gridview/insert-update-delete-records:
+    controls/gridview/features/editing/insert-update-delete-records:
         title: Insert/Update/Delete Records
         position: 18
     controls/gridview/view-definitions:
         title: View Definitions
-        position: 19
-    controls/gridview/virtual-mode:
+        position: 7
+    controls/gridview/features/virtual-mode:
         title: Virtual Mode
         position: 20
-    controls/gridview/exporting-data:
-        title: Exporting Data
-        position: 21
-    controls/gridview/exporting-data/how-to:
+    
+    controls/gridview/features/exporting-data/how-to:
         title: How-To
         position: 21
     controls/gridview/design-time-support:
@@ -810,19 +831,17 @@ navigation:
         position: 2
     controls/gridview/end-user-capabilities:
         title: End-user Capabilities
-        position: 23
+        position: 13
     controls/gridview/styling-and-appearance:
         title: Styling and Appearance
-        position: 24
+        position: 11
     controls/gridview/localization:
         title: Localization
-        position: 25
-    controls/gridview/save-and-load-layout:
-        title: Save and Load Layout
-        position: 26
-    controls/gridview/printing-support:
-        title: Printing Support
-        position: 27
+        position: 12
+    
+    
+        
+        
     controls/heatmap:
         title: HeatMap
         position: 265
