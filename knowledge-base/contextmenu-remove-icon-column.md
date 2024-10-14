@@ -13,7 +13,7 @@ ticketid: 1627322
 
 |Product Version|Product|Author|
 |----|----|----|
-|2024.3.806|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2024.3.806|RadContextMenu for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
