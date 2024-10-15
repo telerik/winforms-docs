@@ -1,6 +1,6 @@
 ---
-title: Preventing Column Dragging Over Pinned Columns in RadGridView for WinForms
-description: Learn how to restrict the reordering of RadGridView columns in WinForms by preventing columns from being dragged over pinned columns.
+title: Prevent Column Dragging Over Pinned Columns in RadGridView for WinForms
+description: Learn how to restrict reordering of RadGridView columns by preventing columns from being dragged over pinned columns.
 type: how-to
 page_title: How to Restrict Column Dragging Over Pinned Columns in RadGridView for WinForms
 slug: prevent-column-drag-over-pinned-radgridview-winforms
@@ -11,23 +11,13 @@ ticketid: 1667283
 
 ## Environment
 
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>RadGridView for WinForms</td>
-</tr>
-</tbody>
-</table>
+|Product Version|Product|Author|
+|----|----|----|
+|2024.3.924|RadGridView for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
-When working with pinned columns in RadGridView, I want to prevent the user from dragging unpinned columns over or between the pinned columns. This issue arises when the first two columns are pinned, but an unpinned column can still be moved to the leftmost position or between pinned columns, effectively increasing the number of pinned columns. 
-
-This KB article also answers the following questions:
-- How can I restrict column reordering in RadGridView with pinned columns?
-- Is it possible to disable dragging columns over pinned columns in RadGridView for WinForms?
-- What method can prevent a column from being moved over pinned columns in RadGridView?
+When working with pinned columns in RadGridView, the client may want to prevent dragging unpinned columns over or between the pinned columns. Currently unpinned column can be moved to the leftmost position or between pinned columns, effectively increasing the number of pinned columns. 
 
 ## Solution
 
@@ -35,13 +25,7 @@ To achieve the desired behavior, leverage the [RadDragDropService](https://docs.
 
 Follow these steps to implement the solution:
 
-1. Access the `RadDragDropService` from your `RadGridView` instance.
-2. Subscribe to the `PreviewDragOver` event of the `RadDragDropService`.
-3. In the event handler, check if the target of the drag operation is a pinned column. If so, set `e.CanDrop` to `false` to prevent the drop.
-
-Here is a code snippet illustrating the process:
-
-```csharp
+````C#
 // Access the RadDragDropService
 RadDragDropService svc = this.radGridView1.GridViewElement.GetService<RadDragDropService>();
 
@@ -61,9 +45,8 @@ private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
         }
     }
 }
-```
 
-By implementing this solution, you ensure that users cannot drag unpinned columns over or between pinned columns, maintaining the integrity of your column layout in RadGridView.
+````
 
 ## See Also
 
