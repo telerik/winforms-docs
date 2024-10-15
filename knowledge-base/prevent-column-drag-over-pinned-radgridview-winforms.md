@@ -13,11 +13,11 @@ ticketid: 1667283
 
 |Product Version|Product|Author|
 |----|----|----|
-|2024.3.924|RadGridView for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
+|2024.3.924|RadGridView for WinForms|[Nadya Todorova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
-When working with pinned columns in RadGridView, the client may want to prevent dragging unpinned columns over or between the pinned columns. Currently unpinned column can be moved to the leftmost position or between pinned columns, effectively increasing the number of pinned columns. 
+When working with pinned columns in RadGridView, the client may want to prevent dragging unpinned columns over or between the pinned columns. Currently unpinned column can be moved and placed between pinned columns, effectively increasing the number of pinned columns. 
 
 ## Solution
 
