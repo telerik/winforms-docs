@@ -12,11 +12,12 @@ position: 2
 
 The folding taggers are used when you want to create collapsible (foldable) sections of code in a document. **FoldingTaggerBase** class is the base class responsible for this functionality. The following folder taggers are available in our suite:
 
-* **CSharpFoldingTagger**
-* **VisualBasicFoldingTagger**
-* **XmlFoldingTagger**
-* **JavaScriptFoldingTagger**
-* **BracketFoldingTagger**
+* **CSharpFoldingTagger**: A tagger responsible for code folding in C# files, allowing sections of code to be collapsed or expanded.
+* **VisualBasicFoldingTagger**: A tagger responsible for code folding in Visual Basic files, enabling structured code navigation.
+* **XmlFoldingTagger**: A tagger responsible for folding XML markup, allowing hierarchical data to be collapsed for easier reading.
+* **JavaScriptFoldingTagger**: A tagger responsible for code folding in JavaScript files, helping to collapse/expand functions and blocks.
+* **BracketFoldingTagger**: A tagger responsible for folding sections of code enclosed in standard curly brackets {} used in many programming languages.
+* **SquareBracketFoldingTagger**:  Introduced with the Q4 2024 version, this tagger is responsible for folding sections enclosed in square brackets [], typically used in array definitions and attributes.
 
 >caption RadSyntaxEditor with a registered CSharpFoldingTagger
 
