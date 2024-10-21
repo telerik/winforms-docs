@@ -25,9 +25,11 @@ The matched tags are then processed by the [UI layers]({%slug syntax-editor-feat
 * **CSharpTagger**: A tagger responsible for syntax highlighting in the C# programming language.
 * **VisualBasicTagger**: A tagger responsible for syntax highlighting in the Visual Basic programming language.
 * **JavaScriptTagger**: A tagger responsible for syntax highlighting in the JavaScript programming language.
-* **XmlTagger**: A tagger responsible for syntax highlighting in the XML programming language.
+* **XmlTagger**: A tagger responsible for syntax highlighting in the XML markup.
 * **SqlTagger**: A tagger responsible for syntax highlighting in the T-SQL (Transact-SQL) programming language.
+* **JsonTagger**: A tagger responsible for syntax highlighting in the JSON format.
 * **BracketFoldingTagger**: A tagger responsible for creating collapsible (folding) regions in the code. Can be used for the JavaScript language.
+* **SquareBracketFoldingTagger**: A tagger responsible for creating collapsible (folding) regions in the code. Can be used for the JSON format.
 * **CSharpFoldingTagger**: A tagger responsible for creating folding regions in C# code.
 * **VisualBasicFoldingTagger**: A tagger responsible for creating folding regions in Visual Basic code.
 * **XmlFoldingTagger**: A tagger responsible for creating collapsible (folding) regions in XML, XAML, and HTML code documents.
