@@ -25,7 +25,7 @@ ticketid: 1668564
 
 ## Description
 
-When using a [RadMenu](https://docs.telerik.com/devtools/winforms/controls/menus/menu/overview) or a [RadDropDownButton](https://docs.telerik.com/devtools/winforms/controls/dropdown-and-listcontrol/dropdownbutton) in Telerik UI for WinForms, you might have items with long text that doesn't fit comfortably within the viewable area. This article demonstrates how to wrap such text to ensure it's completely visible.
+When using a [RadMenu](https://docs.telerik.com/devtools/winforms/controls/menus/menu/overview) or a [RadDropDownButton](https://docs.telerik.com/devtools/winforms/controls/buttons/dropdownbutton/dropdownbutton) in Telerik UI for WinForms, you might have items with long text that doesn't fit comfortably within the viewable area. This article demonstrates how to wrap such text to ensure it's completely visible.
 
 This KB article also answers the following questions:
 - How to use text wrapping for menu items in WinForms applications?
@@ -55,6 +55,6 @@ Adjust the `MaxSize` property according to your requirements to ensure the text 
 
 ## See Also
 
-- [RadDropDownButton Documentation](https://docs.telerik.com/devtools/winforms/controls/dropdown-and-listcontrol/dropdownbutton)
-- [RadMenu Overview](https://docs.telerik.com/devtools/winforms/controls/menu/overview)
+- [RadMenu Documentation](https://docs.telerik.com/devtools/winforms/controls/menus/menu/overview)
+- [RadDropDownButton Documentation](https://docs.telerik.com/devtools/winforms/controls/buttons/dropdownbutton/dropdownbutton)
 - [TextPrimitive API Reference](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.primitives.textprimitive)
