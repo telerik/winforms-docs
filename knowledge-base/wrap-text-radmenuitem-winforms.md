@@ -49,6 +49,8 @@ menuItem.Text = "START Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,";
 ```
 
+![menuitem-text-wrap](images/menuitem-text-wrap.png) 
+
 Adjust the `MaxSize` property according to your requirements to ensure the text fits well within the available space.
 
 ## See Also
