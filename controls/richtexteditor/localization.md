@@ -65,6 +65,11 @@ public class MyRichTextBoxLocalizationProvider : RichTextBoxLocalizationProvider
                 return "Der Suchbegriff wurde nicht gefunden";
             case "RibbonUI_BackstageButtonPrint":
                 return "Druck";
+            case "Invalid_Hyperlink_Message":
+                return "Ungültige oder bösartiger Hyperlink. Sei vorsichtig:";
+            case "Invalid_Hyperlink_Caption":
+                return "Ungültige Hyperlink Beschriftung";
+
         }
     
         return base.GetLocalizedString(id);
@@ -95,6 +100,10 @@ Public Class MyRichTextBoxLocalizationProvider
                 Return "Der Suchbegriff wurde nicht gefunden"
             Case "RibbonUI_BackstageButtonPrint"
                 Return "Druck"
+            Case "Invalid_Hyperlink_Message"
+                Return "Ungültige oder bösartiger Hyperlink. Sei vorsichtig:"
+            Case "Invalid_Hyperlink_Caption"
+                Return "Ungültige Hyperlink Beschriftung"
         End Select
         Return MyBase.GetLocalizedString(id)
     End Function
