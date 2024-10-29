@@ -67,5 +67,5 @@ We leverage leading commercial tools to automatically monitor and update third-p
 
 We closely monitor the [OWASP Top 10](https://owasp.org/www-project-top-ten/) list of security risks and align our security practices with these industry-leading standards. Regular updates ensure that our products address evolving security threats and vulnerabilities.
 
-For more detailed answers to common security-related questions, please refer to our [Security FAQ page]({%slug security/security-faq%}).      
+For more detailed answers to common security-related questions, please refer to our [Security FAQ page]({%slug security-faq%}).      
  
