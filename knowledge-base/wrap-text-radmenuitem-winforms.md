@@ -3,25 +3,17 @@ title: Wrapping Text in RadMenu and RadDropDownButton Items in WinForms
 description: Learn how to wrap long text for items within RadMenu and RadDropDownButton in Telerik UI for WinForms to ensure text visibility.
 type: how-to
 page_title: How to Wrap Text of RadMenuItem in Telerik UI for WinForms
-slug: wrap-text-radmenuitem-winforms
-tags: textwrap, radmenu, raddropdownbutton, winforms, autosize, item text
+slug: menuitem-wrap-text
+tags: menus, textwrap, radmenu, raddropdownbutton, winforms, autosize, item text
 res_type: kb
 ticketid: 1668564
 ---
 
 ## Environment
 
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® UI for WinForms</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>2024.3.924</td>
-</tr>
-</table>
+|Product Version|Product|Author|
+|----|----|----|
+|2024.3.924|RadDropDownButton for WinForms|[Hristo Krastev](https://www.telerik.com/blogs/author/hristo-merdjanov)|
 
 ## Description
 
@@ -35,7 +27,7 @@ This KB article also answers the following questions:
 
 To wrap the text of a `RadMenuItem`, access the `TextPrimitive` object responsible for painting the text. Then set its `MaxSize` and `TextWrap` properties to enable text wrapping. 
 
-```csharp
+````C#
 // Create or access the RadMenuItem
 RadMenuItem menuItem = (RadMenuItem)this.radDropDownButton1.Items[0];
 
@@ -47,7 +39,8 @@ menuItem.Layout.Text.TextWrap = true;
 menuItem.Text = "START Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
     " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." +
     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,";
-```
+
+````
 
 ![menuitem-text-wrap](images/menuitem-text-wrap.png) 
 
