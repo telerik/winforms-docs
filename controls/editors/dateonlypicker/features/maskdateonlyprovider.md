@@ -48,4 +48,4 @@ The __MaskProviderCreated__ event will be fired each time when new provider inst
 
 * [Design Time]({%slug editors-dateonlypicker-design-time%})
 * [Properties]({%slug editors-dateonlypicker-properties%})
-* [Structure]({%slug editors-dateonlypicker-structure})
+* [Structure]({%slug editors-dateonlypicker-structure%})
