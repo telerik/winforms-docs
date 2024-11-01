@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Overview - RadDateOnlyPicker Net Core
+page_title: Overview - RadDateOnlyPicker
 description: RadDateOnlyPicker allows interactive selection of DateOnly using a drop down calendar. 
 slug: editors-dateonlypicker-overview
 tags: dateonlypicker, netcore
@@ -20,8 +20,6 @@ __RadDateOnlyPicker__ control for WinForms in .NET Core (or .NET 6/7/8 etc.) wou
 
 >caption Figure 1: RadDateOnlyPicker
 ![WinForms RadDateOnlyPicker Overview](images/editors-dateonlypicker-overview001.png)
-
-
 
 ## Telerik UI for WinForms Learning Resources
 * [Get Started with the Telerik UI for WinForms DateTimePicker]({%slug editors-dateonlypicker-getting-started%})

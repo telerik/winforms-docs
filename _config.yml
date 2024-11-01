@@ -620,15 +620,17 @@ navigation:
         title: Customizing Appearance
         position: 9
         
-    controls/editors/dateonly:
+    controls/editors/dateonlypicker:
         title: DateOnlyPicker(.Net Core)
         position: 11        
-    controls/editors/dateonly/features/internationalization:
+    controls/editors/dateonlypicker/features/internationalization:
         title: Internationalization 
-    controls/editors/dateonly/how-to:
+    controls/editors/dateonlypicker/how-to:
         title: How-to 
         position: 9
-    controls/editors/dateonly/customizing-appearance:
+    controls/editors/dateonlypicker/features:
+        title: Features
+    controls/editors/dateonlypicker/customizing-appearance:
         title: Customzing Appearance
         position: 10
         

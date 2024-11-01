@@ -30,4 +30,4 @@ This help article will demonstrate a step by step tutorial how to customize the 
 ## See Also
 
 * [Customize Calendar]({%slug editors-dateonlypicker-customize-calendar-programmatically%})
-* [Customizing Appearance]({%slug winforms/editors/datetimepicker/customizing-appearance%})
+* [Customizing Appearance]({%slug editors-dateonlypicker-customizing-appearance%})
