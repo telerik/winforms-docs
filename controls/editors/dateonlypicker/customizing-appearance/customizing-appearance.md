@@ -25,5 +25,5 @@ Me.RadDateOnlyPicker1.DateOnlyPickerElement.TextBoxElement.BackColor = Color.Bis
 
 ## See Also
 
-* [Customize Calendar]({%slug editors-datetimepicker-customize-calendar-programmatically%})
+* [Customize Calendar]({%slug editors-dateonlypicker-customize-calendar-programmatically%})
 * [Themes]({%slug editors-dateonlypicker-themes%})

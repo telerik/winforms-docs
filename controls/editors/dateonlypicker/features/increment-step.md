@@ -32,7 +32,7 @@ Me.radDateOnlyPicker1.ShowUpDown = True
 
 ## See Also
 
-[Design Time]({%slug editors-dateonlypicker-design-time})
+[Design Time]({%slug editors-dateonlypicker-design-time%})
 [MaskDateOnlyProvider]({%slug editors-features-maskdateonlyprovider%})
 [Properties]({%slug editors-dateonlypicker-properties%})
 [Structure]({%slug editors-dateonlypicker-structure%})
