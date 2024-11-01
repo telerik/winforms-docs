@@ -618,7 +618,22 @@ navigation:
         position: 7
     controls/editors/timespanpicker/customizing-appearance:
         title: Customizing Appearance
-        position: 9		
+        position: 9
+        
+    controls/editors/dateonly:
+        title: DateOnlyPicker(.Net Core)
+        position: 11        
+    controls/editors/dateonly/features/internationalization:
+        title: Internationalization 
+    controls/editors/dateonly/how-to:
+        title: How-to 
+        position: 9
+    controls/editors/dateonly/customizing-appearance:
+        title: Customzing Appearance
+        position: 10
+        
+        
+        
     controls/file-dialogs:
         title: File Dialogs
         position: 225
