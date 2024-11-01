@@ -24,7 +24,7 @@ __RadDateOnlyPicker__ control for WinForms in .NET Core (or .NET 6/7/8 etc.) wou
 
 
 ## Telerik UI for WinForms Learning Resources
-* [Get Started with the Telerik UI for WinForms DateTimePicker]({%slug editors-dateonlypicker/getting-started%})
+* [Get Started with the Telerik UI for WinForms DateTimePicker]({%slug editors-dateonlypicker-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
 * [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
