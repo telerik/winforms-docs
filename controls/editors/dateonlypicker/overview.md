@@ -44,8 +44,7 @@ __RadDateOnlyPicker__ control for WinForms in .NET Core (or .NET 6/7/8 etc.) wou
 
 ## See Also
 
-* [Design Time]({%slug winforms/editors/datetimepicker/designtime%})
-* [Free Form Date Time Parsing]({%slug winforms/editors/datetimepicker/free-form-date-time-parsing%})
-* [MaskDateTimeProvider]({%slug winforms/editors/maskeddatetimeprovider%})
-* [Properties]({%slug winforms/editors/datetimepicker/raddatetimepicker-properties%})
-* [Structure]({%slug winforms/editors/datetimepicker%})
+* [Design Time]({%slug editors-dateonlypicker-design-time%})
+* [MaskDateOnlyProvider]({%slug editors-features-maskdateonlyprovider%})
+* [Properties]({%slug editors-dateonlypicker-properties%})
+* [Structure]({%slug editors-dateonlypicker-structure%})
