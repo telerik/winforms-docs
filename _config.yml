@@ -618,10 +618,9 @@ navigation:
         position: 7
     controls/editors/timespanpicker/customizing-appearance:
         title: Customizing Appearance
-        position: 9
-        
+        position: 9        
     controls/editors/dateonlypicker:
-        title: DateOnlyPicker(.Net Core)
+        title: DateOnlyPicker(.NET Only)
         position: 11        
     controls/editors/dateonlypicker/features/internationalization:
         title: Internationalization 
@@ -630,11 +629,16 @@ navigation:
         position: 9
     controls/editors/dateonlypicker/features:
         title: Features
+        position: 5
     controls/editors/dateonlypicker/customizing-appearance:
         title: Customzing Appearance
         position: 10
-        
-        
+    controls/editors/timeonlypicker:
+        title: TimeOnlyPicker(.NET Only)
+        position: 12  
+    controls/editors/timeonlypicker/customizing-appearance:
+        title: Customzing Appearance
+        position: 10    
         
     controls/file-dialogs:
         title: File Dialogs

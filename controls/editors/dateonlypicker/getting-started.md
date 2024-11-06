@@ -26,7 +26,7 @@ The following tutorial demonstrates basic usage of __RadDateOnlyPicker__, format
 
 1. Press __F5__ to run the application. You will only be able to pick dates that are within the current month.
 
->caption Figure 1: RadDateOnlyPicker with the Office2010Black theme.
+>caption Figure 1: RadDateOnlyPicker with the Fluent theme.
  
 ![WinForms RadDateOnlyPicker With The Office00Black Theme](images/editors-dateonlypicker-getting-started004.png)
 
