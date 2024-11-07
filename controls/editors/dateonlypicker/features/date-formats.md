@@ -39,9 +39,6 @@ The table below shows a list of patterns that can be combined to create custo
 
 >note It is possible to define your own format and set the RadDateOnlyPicker.**Format** property to **Custom** . Then, specify the desired **CustomFormat**, e.g. "**dd/MM/yyyy**".
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=customFormat}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=customFormat}} 
-
 ````C#
 this.radDateOnlyPicker1.Format = DateTimePickerFormat.Custom;
 this.radDateOnlyPicker1.CustomFormat = "yyyy/MM/dd";
@@ -53,7 +50,6 @@ Me.RadDateOnlyPicker1.CustomFormat = "yyyy/MM/dd"
 
 ````
 
-{{endregion}}
 
 ## See Also
 

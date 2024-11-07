@@ -147,6 +147,7 @@ private void RadGridView1_RowSourceNeeded(object sender, GridViewRowSourceNeeded
 
 ````
 ````VB.NET
+
 Private Sub RadGridView1_RowSourceNeeded(sender As Object, e As GridViewRowSourceNeededEventArgs)
     If e.ParentRow Is Nothing Then
         Dim data = GetData(-1)
@@ -185,7 +186,9 @@ Private Sub RadGridView1_RowSourceNeeded(sender As Object, e As GridViewRowSourc
     End If
 End Sub
 
+
 ````
+
 {{endregion}} 
 
 4\. Load data that is passed in the RowSourceNeeded event.
@@ -194,6 +197,7 @@ End Sub
 {{source=..\SamplesVB\GridView\HierarchicalGrid\LoadOnDemandInSelfRefGrid.vb region=GetData}} 
 
 ````C#
+
 private static List<FileSystemItem> GetData(int parentId)
 {
     var collection = new List<FileSystemItem>();
@@ -254,6 +258,7 @@ public class FileSystemItem
 
 ````
 ````VB.NET
+
 Private Shared Function GetData(ByVal parentId As Integer) As List(Of FileSystemItem)
     Dim collection = New List(Of FileSystemItem)()
     If parentId < 0 Then
@@ -300,7 +305,9 @@ Public Class FileSystemItem
     Public Property IsExpandable As Boolean
 End Class
 
+
 ````
+
 {{endregion}} 
 
 >note Full example in C# and VB is available in our ***Demo >> RadGridView >> Hierarchy*** examples.
