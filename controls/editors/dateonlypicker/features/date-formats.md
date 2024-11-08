@@ -10,7 +10,7 @@ position: 4
 
 # Date Formats
 
->A details explanation about the default date format strings can be found in this [MSDN article](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
+>A detail explanation about the default date format strings can be found in this [MSDN article](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings).
 
 The table below displays a list of the standard format characters supported by __RadDateOnlyPicker__.
  
@@ -37,7 +37,7 @@ The table below shows a list of patterns that can be combined to create custo
 |yyyy|The year in four digits, including the century.|
 |gg|The period or era. This pattern is ignored if the date to be formatted does not have an associated period or era string.|
 
->note It is possible to define your own format and set the RadDateOnlyPicker.**Format** property to **Custom** . Then, specify the desired **CustomFormat**, e.g. "**dd/MM/yyyy**".
+>note It is possible to define your own format and set the RadDateOnlyPicker.**Format** property to **Custom**. Then, specify the desired **CustomFormat**, e.g. "**dd/MM/yyyy**".
 
 ````C#
 this.radDateOnlyPicker1.Format = DateTimePickerFormat.Custom;
