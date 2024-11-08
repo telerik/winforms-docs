@@ -22,7 +22,9 @@ The self-reference mode allows to build a hierarchy using a flat collection of o
 
 Load on Demand in Self-Reference Hierarchy is a new mehanism that combines the **Load on Demand** and **Self Reference** features. Thus, users can achieve a hierarchy in self referance mode while loading the data on demand, at a later moment when it is requested. The data is populated in the **RowSourceNeeded** event of RadGridView.
 
-[image](images/gridview-hirarchical-grid-hierarchy-load-on-demand-self-ref.PNG)
+
+[gridview-hirarchical-grid-hierarchy-load-on-demand-self-ref.PNG](images/gridview-hirarchical-grid-hierarchy-load-on-demand-self-ref.PNG)
+
 
 ### How to use
 
