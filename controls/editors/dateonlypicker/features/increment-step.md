@@ -10,7 +10,7 @@ position: 5
 
 # Increment Step
  
-The rich API of __RadDateOnlyPicker__ allows you to replace the dropdown button with increment/decrement buttons step. This way the user can click on one of the buttons to incease or decreased the date part.
+The rich API of __RadDateOnlyPicker__ allows you to replace the dropdown button with increment/decrement buttons step. This way the user can click on one of the buttons to incease or decrease the date part.
 
 
 {{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=incrementStep}} 
