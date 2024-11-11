@@ -19,9 +19,6 @@ The embedded __RadCalendar__ has `HeaderNavigationMode` property, which determin
 
 #### Setting the value of RadDateOnlyPicker 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=HeaderNavigationMode}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=HeaderNavigationMode}} 
-
 ````C#
 this.radDateOnlyPicker1.DateOnlyPickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom;
 
@@ -30,8 +27,6 @@ this.radDateOnlyPicker1.DateOnlyPickerElement.Calendar.HeaderNavigationMode = He
 Me.RadDateOnlyPicker1.DateOnlyPickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom
 
 ````
-
-{{endregion}} 
 
 ![WinForms RadDateOnlyPicker Value Property](images/editors-dateonlypicker-navigation-modes002.gif)
 

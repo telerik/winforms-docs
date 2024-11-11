@@ -50,7 +50,6 @@ Me.RadDateOnlyPicker1.CustomFormat = "yyyy/MM/dd"
 
 ````
 
-
 ## See Also
 
 * [CultureInfo and RegionInfo Basics]({%slug editors-dateonlypicker-features-cultureinfo-and-regioninfo-basics%})

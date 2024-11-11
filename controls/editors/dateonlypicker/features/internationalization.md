@@ -14,9 +14,6 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 \* The __Culture__ property can be set using the drop down list in the Properties Window or set in code. The screenshot below shows the __Culture__ property set to "German(Germany)". 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=culture}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=culture}} 
-
 ````C#
 this.radDateOnlyPicker1.Culture = new System.Globalization.CultureInfo("de-DE");
 
@@ -24,9 +21,7 @@ this.radDateOnlyPicker1.Culture = new System.Globalization.CultureInfo("de-DE");
 ````VB.NET
 Me.RadDateOnlyPicker1.Culture = New System.Globalization.CultureInfo("de-DE")
 
-````
-
-{{endregion}} 
+```` 
 
 >caption Figure 1: The culture is changed to German.
 
@@ -37,9 +32,6 @@ Me.RadDateOnlyPicker1.Culture = New System.Globalization.CultureInfo("de-DE")
 
 * Right-to-Left = No (default value) 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=rightNo}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=rightNo}} 
-
 ````C#
 this.radDateOnlyPicker1.RightToLeft = RightToLeft.No;
 
@@ -49,26 +41,20 @@ Me.RadDateOnlyPicker1.RightToLeft = RightToLeft.No
 
 ````
 
-{{endregion}} 
 
 >caption Figure 2: The right to left support is turned off.
 ![WinForms RadDateOnlyPicker Right to Left Off](images/editors-dateonlypicker-internationalization002.png)
 
 \*  Right-to-Left = Yes 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=rightYes}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=rightYes}} 
-
 ````C#
-this.radDateTimePicker1.RightToLeft = RightToLeft.Yes;
+this.radDateOnlyPicker1.RightToLeft = RightToLeft.Yes;
 
 ````
 ````VB.NET
-Me.RadDateTimePicker1.RightToLeft = RightToLeft.Yes
+Me.RadDateOnlyPicker1.RightToLeft = RightToLeft.Yes
 
 ````
-
-{{endregion}} 
 
 >caption Figure 3: The right to left support is turned on.
 
@@ -78,21 +64,16 @@ Me.RadDateTimePicker1.RightToLeft = RightToLeft.Yes
 
 > The __Time__ option of the __DateTimePickerFormat__ enumeration is not applicable for the RadDateOnlyPicker control. The __Time__ option will be ignored when set to the RadDateOnlyPicker control Format property. 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=customFormat}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=customFormat}} 
-
 ````C#
-this.radDateTimePicker1.Format = DateTimePickerFormat.Custom;
-this.radDateTimePicker1.CustomFormat = "MMM - dd - yyyy";
+this.radDateOnlyPicker1.Format = DateTimePickerFormat.Custom;
+this.radDateOnlyPicker1.CustomFormat = "MMM - dd - yyyy";
 
 ````
 ````VB.NET
-Me.RadDateTimePicker1.Format = DateTimePickerFormat.Custom
-Me.RadDateTimePicker1.CustomFormat = "MMM - dd - yyyy"
+Me.RadDateOnlyPicker1.Format = DateTimePickerFormat.Custom
+Me.RadDateOnlyPicker1.CustomFormat = "MMM - dd - yyyy"
 
 ````
-
-{{endregion}} 
 
 >caption Figure 4: Using Custom Format
 

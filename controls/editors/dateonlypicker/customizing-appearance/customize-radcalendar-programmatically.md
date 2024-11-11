@@ -15,8 +15,6 @@ In order to customize __RadCalendar__ in __RadDateOnlyPicker__, you should first
 
 #### Changing the font of RadCalendar navigation title 
  
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=customizeRadCalendarProgramatically}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=customizeRadCalendarProgramatically}} 
 
 ````C#
 Font headerFont = new Font("Arial", 9.0f, FontStyle.Bold);
@@ -61,8 +59,6 @@ Next
 
 ````
 
-{{endregion}} 
- 
 
 >caption Figure 1: The result from the above code:
 
@@ -72,9 +68,6 @@ Next
 
 The Clear and Today buttons of the calendar are located in its footer. The footer of the calendar is hidden in the RadDateOnlyPicker control. To show it, we need to call the  __GetCurrentBehavior__() method to gen an instance of the RadCalendar inside the RadDateOnlyPicker control.
 
-
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=showCalendarFooter}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=showCalendarFooter}} 
 
 ````C#
 RadDateOnlyPickerCalendar calendarBehavior = this.radDateOnlyPicker1.DateOnlyPickerElement.GetCurrentBehavior() as RadDateOnlyPickerCalendar;
@@ -86,8 +79,6 @@ Dim calendarBehavior As RadDateOnlyPickerCalendar = TryCast(Me.radDateOnlyPicker
 calendarBehavior.Calendar.ShowFooter = True
 
 ````
-
-{{endregion}}
 
 ![WinForms RadDateOnlyPicker Show Clear Today Buttons](images/editors-dateonlypicker-customize-calendar-programmatically002.png)
 

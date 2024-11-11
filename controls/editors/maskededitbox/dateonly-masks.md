@@ -1,5 +1,5 @@
 ---
-title: DateOnly(.Net Only) Masks
+title: DateOnly Masks (.Net Only)
 page_title: DateOnly Masks - RadMaskedEditBox
 description: The following tables  describe the mask characters that can be used when the MaskType is DateOnly. Note that the format characters are case sensitive.
 slug: editors-maskededitbox-dateonly-masks

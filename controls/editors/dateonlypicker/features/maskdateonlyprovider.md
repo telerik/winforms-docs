@@ -24,9 +24,6 @@ The MaskDateOnlyProvider is responsible for the parsing of the dates. The MaskDa
 
 The following code spinet demonstrates how one can access and use the provider:     
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=provider}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=provider}} 
-
 ````C#
 MaskDateOnlyProvider provider = this.radDateOnlyPicker1.DateOnlyPickerElement.TextBoxElement.Provider as MaskDateOnlyProvider;
 provider.AutoSelectNextPart = true;
@@ -37,8 +34,6 @@ Dim provider As MaskDateOnlyProvider = TryCast(Me.radDateOnlyPicker1.DateOnlyPic
 provider.AutoSelectNextPart = True
 
 ````
-
-{{endregion}} 
 
 >note 
 The __MaskProviderCreated__ event will be fired each time when new provider instance is created. For example when the MaskType is changed.

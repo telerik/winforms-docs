@@ -18,9 +18,6 @@ When the user clicks the up/down arrow buttons or presses the arrow keys, the __
 
 As a prerequisite for the example, __RadDateOnlyPicker__ should show up/down arrow buttons instead of a dropdown button. To these customizations, we need to add the following code: 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=prerequisite}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=prerequisite}} 
-
 ````C#
 this.radDateOnlyPicker1.ShowUpDown = true;
 
@@ -29,15 +26,11 @@ this.radDateOnlyPicker1.ShowUpDown = true;
 Me.RadDateOnlyPicker1.ShowUpDown = True
 
 ````
-
-{{endregion}} 
  
 Here is the approach divided into separate steps:
 
 1\. In the form's `Load` event handler subscribe to the __ValueChanged__ event of RadDateOnlyPicker. Define a DateOnly variable globally which holds the initial value: 
-
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=initialization}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=initialization}} 
+ 
 
 ````C#
 DateOnly initialDateOnly;
@@ -55,14 +48,10 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.
     AddHandler RadDateOnlyPicker1.ValueChanged, AddressOf radDateOnlyPicker1_ValueChanged
 End Sub
 
-````
-
-{{endregion}} 
+```` 
  
 2\. Here comes the ValueChanged handler implementation. In this part we are first checking whether the new value of RadDateOnlyPicker is bigger than the old one or not. Then, we are getting the MaskDateOnlyProvider responsible for the navigation between the date/time parts - hours, months, and years. If the provider states that the currently selected date part is day, we, depending on the the direction in which we want to change the value, call the __Up/Down__ method four times, so that we can have a step of 5 days as a result. Please note that we are setting and resetting the boolean flag __suspendValueChanged__ so that we can safely call __Up/Down__ methods: 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=valueChanged}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=valueChanged}} 
 
 ````C#
 bool suspendValueChanged = false;
@@ -133,10 +122,8 @@ End Sub
 
 
 ````
-
-{{endregion}} 
  
-The result is shown below. Just with a single click of the up arrow key, we increase the value of the minutes by 5:
+The result is shown below. Just with a single click of the up arrow key, we increase the value of the day by 5:
 
 ![WinForms RadDateOnlyPicker Tweak Increment Step](images/editors-maskededitbox-how-to-tweak-increment-step001.gif)
 

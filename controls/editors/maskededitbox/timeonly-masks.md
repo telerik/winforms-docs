@@ -1,5 +1,5 @@
 ---
-title: TimeOnly(.Net Only) Masks
+title: TimeOnly Masks (.Net Only)
 page_title: TimeSpan Masks - RadMaskedEditBox
 description: The following tables  describe the mask characters that can be used when the MaskType is TimeOnly. Note that the format characters are case sensitive.
 slug: editors-maskededitbox-timeonly-masks

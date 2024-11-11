@@ -39,25 +39,20 @@ The table below is a sample list of the names and identifiers found in the Cult
 
 ![WinForms RadDateOnlyPicker Setting Arabic Culture](images/editors-dateonlypicker-features-cultureinfo-and-regioninfo-basics001.png)
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=SetPashtoCulture}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=SetPashtoCulture}} 
-
 ````C#
-this.radDateOnlyPicker1.Culture = new System.Globalization.CultureInfo("ps-AF");
+this.radDateOnlyPicker1.Culture = new System.Globalization.CultureInfo("ar-SA");
 
 ````
 ````VB.NET
-Me.RadDateOnlyPicker1.Culture = New System.Globalization.CultureInfo("ps-AF")
+Me.RadDateOnlyPicker1.Culture = New System.Globalization.CultureInfo("ar-SA")
 
 ````
-
-{{endregion}}
 
 ## RegionInfo
 
 The __RegionInfo__ class contains information about the country/region.  In contrast to __CultureInfo__, __RegionInfo__ does not represent preferences of the user and does not depend on the user's language or culture. The __RegionInfo__ name is one of the two-letter codes defined in ISO 3166 for country/region. Case is not significant; however, the __Name__, the __TwoLetterISORegionName__, and the __ThreeLetterISORegionName__ properties return the appropriate code in uppercase.
 
-# See Also
+## See Also
 
 * [Internationalization]({%slug editors-dateonlypicker-internationalization%})
 * [Date Formats]({%slug editors-dateonlypicker-features-date-formats%})

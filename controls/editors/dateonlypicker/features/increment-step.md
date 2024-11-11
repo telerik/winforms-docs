@@ -13,9 +13,6 @@ position: 5
 The rich API of __RadDateOnlyPicker__ allows you to replace the dropdown button with increment/decrement buttons step. This way the user can click on one of the buttons to incease or decrease the date part.
 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=incrementStep}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=incrementStep}} 
-
 ````C#
 this.radDateOnlyPicker1.ShowUpDown = true;
 
@@ -24,8 +21,6 @@ this.radDateOnlyPicker1.ShowUpDown = true;
 Me.radDateOnlyPicker1.ShowUpDown = True
 
 ````
-
-{{endregion}}
   
 
 ![WinForms RadDateOnlyPicker Increment Step](images/editors-dateonlypicker-features-increment-step.gif)
