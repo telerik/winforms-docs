@@ -21,12 +21,6 @@ The following image demonstrates the structure of __RadTimeOnlyPicker__ control,
 ![WinForms RadTimeOnlyPicker Elements Hierarchy]images/editors-timeonlypicker-structure002.png)
 
 
-# PopupContentElement Hierarchy 
-
->caption Figure 3: The hierarchy of the popup element.
-
-![WinForms RadTimeOnlyPicker PopupContentElement Hierarchy](images/editors-timeonlypicker-structure003.png)
-
 ## See Also
 
 * [Properties and Events]({%slug editors-timeonlypicker-properties-and-events%})

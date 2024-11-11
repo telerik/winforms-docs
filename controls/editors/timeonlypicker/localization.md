@@ -20,10 +20,8 @@ To localize __RadTimeOnlyPicker__ to display control text and messages in a spec
 
 Below is a sample implementation of an English localization provider:
 
-#### Localizing RadTimePicker Strings 
+#### Localizing RadTimeOnlyPicker Strings 
 
-{{source=..\SamplesCS\Editors\TimePicker1.cs region=LocalizationProvider}} 
-{{source=..\SamplesVB\Editors\TimePicker1.vb region=LocalizationProvider}} 
 
 ````C#
 class MyTimePickerLocalizationProvider : RadTimePickerLocalizationProvider
@@ -59,16 +57,11 @@ Class MyTimePickerLocalizationProvider
 End Class
 
 ````
-
-{{endregion}} 
  
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
 #### Assigning the Current Localization Provider 
-
-{{source=..\SamplesCS\Editors\TimePicker1.cs region=settingTheLocalizationProvider}} 
-{{source=..\SamplesVB\Editors\TimePicker1.vb region=settingTheLocalizationProvider}} 
 
 ````C#
 RadTimePickerLocalizationProvider.CurrentProvider = new MyTimePickerLocalizationProvider();
@@ -79,8 +72,6 @@ RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalization
 
 ````
 
-{{endregion}} 
- 
 
 The code provided above illustrates the approach to be used to localize the __RadTimeOnlyPicker__ and is not intended as a full translation.
 
