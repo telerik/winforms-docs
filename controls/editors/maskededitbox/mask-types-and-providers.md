@@ -17,7 +17,7 @@ The following table lists the available mask types that **RadMaskedEditBox** off
 |MaskType.**None**|TextBoxProvider|
 |MaskType.**DateTime**|[**MaskDateTimeProvider**]({%slug winforms/editors/maskededitbox/date-and-time-masks%})|
 |MaskType.**Numeric**|[**NumericMaskTextBoxProvider**]({%slug winforms/editors/maskededitbox/numeric-masks%})|
-|MaskType.**Standard**|[**StandartMaskTextBoxProvider**]({%slug winforms/editors/maskededitbox/standard-masks%})|
+|MaskType.**Standard**|[**StandardMaskTextBoxProvider**]({%slug winforms/editors/maskededitbox/standard-masks%})|
 |MaskType.**Regex**|**RegexMaskTextBoxProvider** - you can define [Regex expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions) as masks.|
 |MaskType.**IP**|**IPMaskTextBoxProvider** - used for IP validation)|
 |MaskType.**EMail**|**EMailMaskTextBoxProvider** - used for email validation|
@@ -26,8 +26,24 @@ The following table lists the available mask types that **RadMaskedEditBox** off
 |MaskType.**DateOnly** (.Net Only)|[**MaskDateOnlyProvider**]({%slug winforms/editors/maskededitbox/timespan-masks%})|
 |MaskType.**TimeOnly** (.Net Only)|[**MaskTimeOnlyProvider**]({%slug editors-maskededitbox-timeonly-masks%})|
 
-The provider can be accessed by the MaskedEditBoxElement.**Provider** property. You should cast it to the respective type in order to access the relevant API that the specific provider offers. 
+### Access provider
 
+The provider can be accessed by the MaskedEditBoxElement.**Provider** property. You should cast it to the respective type in order to access the relevant API that the specific provider offers. For example:
+
+
+````C#
+this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
+StandardMaskTextBoxProvider provider = this.radMaskedEditBox1.MaskedEditBoxElement.Provider as StandardMaskTextBoxProvider;
+
+````
+````VB.NET
+Me.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
+Dim provider As StandardMaskTextBoxProvider = TryCast(Me.radMaskedEditBox1.MaskedEditBoxElement.Provider, StandardMaskTextBoxProvider)
+
+````
+
+{{endregion}} 
+ 
 
 ## See Also
 
