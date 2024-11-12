@@ -35,6 +35,38 @@ The table below describe the mask characters that can be used when the __MaskTyp
 | \\ |Escape. Escapes a mask character, turning it into a literal. "\\" is the escape sequence for a backslash.|
 |All other characters|All non-mask elements will appear as themselves within __RadMaskedEditBox__ . Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user|
 
+### Accessing the StandardMaskTextBoxProvider
+
+When the mask type is set to *Standard* you can access the **StandardMaskTextBoxProvider** by casting to that appropriate type.
+
+{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=StandardProvider}} 
+{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=StandardProvider}} 
+
+````C#
+this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
+StandardMaskTextBoxProvider provider = this.radMaskedEditBox1.MaskedEditBoxElement.Provider as StandardMaskTextBoxProvider;
+
+````
+````VB.NET
+Me.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
+Dim provider As StandardMaskTextBoxProvider = TryCast(Me.radMaskedEditBox1.MaskedEditBoxElement.Provider, StandardMaskTextBoxProvider)
+
+````
+
+{{endregion}} 
+
+### Useful properties
+
+**StandardMaskTextBoxProvider** exposes the following useful properties: 
+
+* **Mask**: Gets the mask.
+* **Value**: Gets or sets the value.
+* **MaskCompleted**: Gets a value indicating whether all required inputs have been entered into the formatted string.
+* **MaskFull**: Gets a value indicating whether all required and optional inputs have been entered into the formatted string.
+* **PromptChar**: Gets or sets the character used to prompt the user for input.
+* **ResetOnPrompt**: Gets or sets a value that determines how an input character that matches the prompt character should be handled. When *true*, the prompt character entered as input causes the current editable position in the mask to be reset. Otherwise, if *false*, the entered prompt character will be processed as a normal input character. The default is *true*.
+* **ResetOnSpace**: Gets or sets a value that determines how a space input character should be handled. When *true*, entering the space input character causes the current editable position in the mask to be reset. Otherwise, if *false*, the entered space character will be processed as a normal input character. The default is *true*.
+
 >note By default, when the user is typing before already typed text, the text is overridden. If the *Insert* key is pressed you can insert characters instead of replacing them.
 >
 

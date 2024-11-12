@@ -12,6 +12,10 @@ position: 2
 
 This article lists all of the available themes that come with the installation of the Telerik UI for WinForms suite and illustrates the design for each of them.
 
+## Windows11HighContrast
+
+![Windows11HighContrast Theme](images/themes-style038.png)
+
 ## Windows11CompactDark
 
 ![Windows11CompactDark Theme](images/themes-style036.png)

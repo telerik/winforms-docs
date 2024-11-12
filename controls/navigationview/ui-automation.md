@@ -91,6 +91,7 @@ The following section outlines the supported automation patterns for the __RadNa
 
 * [Selection Control Pattern](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-implementingselection)
 * [ExpandCollapse Control Pattern](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-implementingexpandcollapse)
+* [Scroll Control Pattern](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-implementingscroll)
 
 #### Hamburger Button Element
 

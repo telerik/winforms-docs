@@ -19,6 +19,8 @@ Implementing UI Automation for custom WinForms controls requires a distinct appr
 Here is a list of the controls which support __UI Automation__. 
 
 * [RadNavigationView]({%slug navigationview-ui-automation%})
+* [RadDropDownList]({%slug dropdown-listcontrol-and-checkeddropdownlist-dropdownlist-ui-automation%})
+* [RadListControl]({%slug dropdown-listcontrol-and-checkeddropdownlist-listcontrol-ui-automation%})
 
 ## UI Accessibility
 

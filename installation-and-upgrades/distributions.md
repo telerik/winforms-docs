@@ -30,8 +30,9 @@ This article dives into UI controls, focusing on their compatibility with Micros
 |.NET Core 3.1| R1 2020 - R1 2024|.NET Core 3.1 and later|
 |.NET 5| R2 2020 - R3 2022 SP2|.NET 5 and later|
 |.NET 6| R3 2021 SP1 - present|.NET 6 and later	|
-|.NET 7| R3 2022 SP2 - present|.NET 7 and later|
+|.NET 7| R3 2022 SP2 - 2024 Q3|.NET 7 and later|
 |.NET 8| 2024 Q2 - present|NET 8 and later|
+|.NET 9| 2024 Q4 - present|NET 9 and later|
 
 >important As of 2024 Q4 (November), we will deprecate the Telerik DLLs built against .NET 7. This decision is rooted in our dedication to align with Microsoft’s recommended framework versions so that our [products leverage the latest advancements in technology, security, and performance](https://www.telerik.com/blogs/embracing-future-product-update-enhanced-performance-and-security). 
 
