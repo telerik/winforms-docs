@@ -35,6 +35,27 @@ The table below describe the mask characters that can be used when the __MaskTyp
 | \\ |Escape. Escapes a mask character, turning it into a literal. "\\" is the escape sequence for a backslash.|
 |All other characters|All non-mask elements will appear as themselves within __RadMaskedEditBox__ . Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user|
 
+### Accessing the StandardMaskTextBoxProvider
+
+When the mask type is set to *Standard* you can access the **StandardMaskTextBoxProvider** by casting to that appropriate type.
+
+{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=StandardProvider}} 
+{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=StandardProvider}} 
+
+````C#
+this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
+StandardMaskTextBoxProvider provider = this.radMaskedEditBox1.MaskedEditBoxElement.Provider as StandardMaskTextBoxProvider;
+
+````
+````VB.NET
+Me.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
+Dim provider As StandardMaskTextBoxProvider = TryCast(Me.radMaskedEditBox1.MaskedEditBoxElement.Provider, StandardMaskTextBoxProvider)
+
+````
+
+{{endregion}} 
+
+
 >note By default, when the user is typing before already typed text, the text is overridden. If the *Insert* key is pressed you can insert characters instead of replacing them.
 >
 

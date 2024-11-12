@@ -28,22 +28,8 @@ The following table lists the available mask types that **RadMaskedEditBox** off
 
 ### Access provider
 
-The provider can be accessed by the MaskedEditBoxElement.**Provider** property. You should cast it to the respective type in order to access the relevant API that the specific provider offers. For example:
+The provider can be accessed by the MaskedEditBoxElement.**Provider** property. You should cast it to the respective type in order to access the relevant API that the specific provider offers.
 
-
-````C#
-this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
-StandardMaskTextBoxProvider provider = this.radMaskedEditBox1.MaskedEditBoxElement.Provider as StandardMaskTextBoxProvider;
-
-````
-````VB.NET
-Me.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
-Dim provider As StandardMaskTextBoxProvider = TryCast(Me.radMaskedEditBox1.MaskedEditBoxElement.Provider, StandardMaskTextBoxProvider)
-
-````
-
-{{endregion}} 
- 
 
 ## See Also
 
