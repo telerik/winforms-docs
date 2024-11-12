@@ -18,32 +18,32 @@ Each of the control's elements can be accessed and customized. At the [Structure
 For example the editable area of the control consist of __RadTextBoxItem__ hosted in __RadMaskedEditBoxElement__. So in order to customize the text box __BackColor__ you need to set both the __BackColor__ of the __RadTextBoxItem__ and of the __RadMaskedEditBoxElement__ `FillPrimitive`:  
 
 ````C#
-radTimePicker1.TimePickerElement.MaskedEditBox.Fill.BackColor = Color.Red;
-radTimePicker1.TimePickerElement.MaskedEditBox.TextBoxItem.BackColor = Color.Red;
+this.radTimeOnlyPicker1.TimeOnlyPickerElement.MaskedEditBox.Fill.BackColor = Color.Red;
+this.radTimeOnlyPicker1.TimeOnlyPickerElement.MaskedEditBox.TextBoxItem.BackColor = Color.Red;
 
 ````
 ````VB.NET
-RadTimePicker1.TimePickerElement.MaskedEditBox.Fill.BackColor = Color.Red
-RadTimePicker1.TimePickerElement.MaskedEditBox.TextBoxItem.BackColor = Color.Red
+Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.MaskedEditBox.Fill.BackColor = Color.Red
+Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.MaskedEditBox.TextBoxItem.BackColor = Color.Red
 
 ````
 
-![WinForms RadTimeOnlyPicker Customize Text Box](images/editors-timepicker-customization001.png)
+![WinForms RadTimeOnlyPicker Customize Text Box](images/editors-timeonlypicker-customization001.png)
 
 ## Customize Dropdown Button
 
 Here is how you can set some left and right padding of the drop down button: 
 
 ````C#
-radTimePicker1.TimePickerElement.DropDownButton.Padding = new Padding(10,0,10,0);
+this.radTimeOnlyPicker1.TimeOnlyPickerElement.DropDownButton.Padding = new Padding(10, 0, 10, 0);
 
 ````
 ````VB.NET
-RadTimePicker1.TimePickerElement.DropDownButton.Padding = New Windows.Forms.Padding(10, 0, 10, 0)
+Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.DropDownButton.Padding = New Windows.Forms.Padding(10, 0, 10, 0)
 
 ````
 
-![WinForms RadTimeOnlyPicker Customize DropDown Button](images/editors-timepicker-customization002.png)
+![WinForms RadTimeOnlyPicker Customize DropDown Button](images/editors-timeonlypicker-customization002.png)
 
 ## Customize up/down buttons
 
@@ -70,7 +70,7 @@ Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.DownButton.Border.Visibility = Eleme
 ````
 
 
-![WinForms RadTimeOnlyPicker Customize Up/Down Buttons](images/editors-timepicker-customization003.png)
+![WinForms RadTimeOnlyPicker Customize Up/Down Buttons](images/editors-timeonlypicker-customization003.png)
 
 ## Customize clock element appearance
 
@@ -99,7 +99,7 @@ Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.ClockElement.Sec
 
 {{endregion}} 
 
-![WinForms RadTimeOnlyPicker Customize Clock Element Appearance](images/editors-timepicker-customization004.png)
+![WinForms RadTimeOnlyPicker Customize Clock Element Appearance](images/editors-timeonlypicker-customization004.png)
 
 ## Customize hours and minutes headers
 
@@ -129,7 +129,7 @@ Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.MinutesTable.Tab
 
 ````
 
-![WinForms RadTimeOnlyPicker Customize Hours and Minutes Headers](images/editors-timepicker-customization005.png)
+![WinForms RadTimeOnlyPicker Customize Hours and Minutes Headers](images/editors-timeonlypicker-customization005.png)
 
 ## Customize hours and minutes cells appearance
 
@@ -168,7 +168,7 @@ End Sub
 
 ````
 
-![WinForms RadTimeOnlyPicker Customize Hours and Minutes Cells Appearance](images/editors-timepicker-customization006.png)
+![WinForms RadTimeOnlyPicker Customize Hours and Minutes Cells Appearance](images/editors-timeonlypicker-customization006.png)
 
 ## Customize hours and minutes tables 
 
@@ -199,27 +199,23 @@ Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.MinutesTable.Bac
 
 {{endregion}} 
 
-![WinForms RadDateTimePicker Customize Hours and Minutes Tables](images/editors-timepicker-customization007.png)
+![WinForms RadTimeOnlyPicker Customize Hours and Minutes Tables](images/editors-timeonlypicker-customization007.png)
 
 ## Customize Button Panel
 
 Here is how to change the BackColor of the FooterPanel:
 
-{{source=..\SamplesCS\Editors\TimePicker1.cs region=CustomizeFooterPanel}} 
-{{source=..\SamplesVB\Editors\TimePicker1.vb region=CustomizeFooterPanel}} 
-
 ````C#
-radTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond;
+this.radTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond;
 
 ````
 ````VB.NET
-RadTimePicker1.TimePickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
+Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.FooterPanel.BackColor = Color.BlanchedAlmond
 
 ````
 
-{{endregion}} 
 
-![WinForms RadDateTimePicker Customize Button Panel](images/editors-timepicker-customization008.png)
+![WinForms RadTimeOnlyPicker Customize Button Panel](images/editors-timeonlypicker-customization008.png)
 
 ## See Also
 
