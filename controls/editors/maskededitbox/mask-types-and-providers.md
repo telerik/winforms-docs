@@ -14,7 +14,7 @@ The following table lists the available mask types that **RadMaskedEditBox** off
 
 |MaskType|IMaskProvider|
 |----|----|
-|MaskType.**None**|TextBoxProvider|
+|MaskType.**None**|**TextBoxProvider**|
 |MaskType.**DateTime**|[**MaskDateTimeProvider**]({%slug winforms/editors/maskededitbox/date-and-time-masks%})|
 |MaskType.**Numeric**|[**NumericMaskTextBoxProvider**]({%slug winforms/editors/maskededitbox/numeric-masks%})|
 |MaskType.**Standard**|[**StandardMaskTextBoxProvider**]({%slug winforms/editors/maskededitbox/standard-masks%})|
