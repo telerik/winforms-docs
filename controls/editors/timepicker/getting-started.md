@@ -27,8 +27,6 @@ This tutorial will demonstrate how to get started with __RadTimePicker__ control
 
 * Set the __ClockPosition__ property to *ClockAboveTables* to display the clock on the top of the popup.
 
-* Set the __CloseButtonText__ to some string – *“Close window”*
-
 * If needed you can set the __NullText__ property  this is the text which will be displayed in the control value is *null*
 
 Here is how the control will look like, after the modifications:
