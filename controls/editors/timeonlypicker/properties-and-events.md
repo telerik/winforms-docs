@@ -35,7 +35,6 @@ position: 4
 |__MinValue__|Get or set the minimal time value assigned to the control.|
 |__RowHeight__|Gets or sets the height of the rows in the hour/minutes tables in the drop down.|
 |__Culture__|Determines the language of the drop down and the editable area. From here you can control if the format is 12 ("en-US") or 24 hours ("en-UK").|
-|__CloseButtonText__|Gets or sets the text of the button in the drop down|
 |__TimeOnlyPickerElement__|Gives access the RadTimeOnlyPickerElement.|
  
 ## Events
