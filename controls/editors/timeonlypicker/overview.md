@@ -11,7 +11,7 @@ CTAControlName: TimeOnlyPicker
 
 # WinForms TimeOnlyPicker Overview
 
-The __RadTimeOnlyPicker__ control, designed specifically for handling __TimeOnly__ values in .NET Core, enables users to enter or select time values easily. It features an editable area for direct time entry and a dropdown with a __RadClock__ for hour and minute selection, supporting null values, 12- and 24-hour formats based on culture settings, and customizable formatting. This makes it ideal for applications that require precise time management without date components.
+The __RadTimeOnlyPicker__ control, designed specifically for handling __TimeOnly__ values in .NET (.NET 6/7/8/9 and later), enables users to enter or select __TimeOnly__ values easily. It features an editable area for direct time entry and a dropdown with a __RadClock__ for hour and minute selection, supporting null values, 12- and 24-hour formats based on culture settings, and customizable formatting. This makes it ideal for applications that require precise time management without date components.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -27,6 +27,7 @@ The __RadTimeOnlyPicker__ control, designed specifically for handling __TimeOnly
 
 
 ## Telerik UI for WinForms Learning Resources
+* [Get Started with the Telerik UI for WinForms TimeOnlyPicker]({%slug editors-timeonlypicker-getting-started%})
 * [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
 * [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
 * [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 

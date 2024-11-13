@@ -9,10 +9,10 @@ position: 0
 CTAControlName: DateOnlyPicker
 ---
 
-# WinForms DateOnlyPicker Net Core Overview
+# WinForms DateOnlyPicker Overview
 
 
-__RadDateOnlyPicker__ control for WinForms in .NET Core (or .NET 6/7/8 etc.) would serve as a specialized date picker that exclusively deals with __DateOnly__ objects instead of DateTime. In .NET, __DateOnly__ is a new struct introduced to represent dates without time, which is especially useful in applications like scheduling, reporting, or any scenario where only the date is relevant.
+__RadDateOnlyPicker__ control for WinForms in .NET (.NET 6/7/8/9 and later) would serve as a specialized date picker that exclusively deals with __DateOnly__ objects instead of DateTime. In .NET, __DateOnly__ is a new struct introduced to represent dates without time, which is especially useful in applications like scheduling, reporting, or any scenario where only the date is relevant.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
