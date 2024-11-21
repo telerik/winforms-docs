@@ -17,6 +17,8 @@ The following article list Knowledge Base articles related to this section of co
 |----|
 |[Distinguishing the Source Control of RadContextMenu]({%slug distinguishing-the-source-control-of-radcontextmenu%})|
 |[How to migrate to new two columns menu]({%slug how-to-migrate-to-new-two-columns-menu%})|
+|[Removing the Icon Column in RadContextMenu for WinForms]({%slug contextmenu-remove-icon-column%})|
+|[Wrapping Text in RadMenu and RadDropDownButton Items in WinForms]({%slug menuitem-wrap-text%})|
 
 ## See Also
 
