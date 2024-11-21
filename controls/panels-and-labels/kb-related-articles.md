@@ -19,6 +19,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Floating RadLabel]({%slug floating-label%})|
 |[How to achieve transparency effect in Winforms cotrols]({%slug transparency-effect-winforms-controls%})|
 |[How to create RadLinkLabel]({%slug link-label%})|
+|[Preventing Scrollbars from Moving When Clicking on the ScrollablePanel]({%slug scrollablepanel-prevent-scrollbars-moving%})|
 |[Update the Text of Rad Label]({%slug update-label-layout%})|
 
 ## See Also

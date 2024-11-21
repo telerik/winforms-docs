@@ -20,6 +20,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Add "Check All" in the header cell for a GridViewCheckBoxColumn]({%slug add-check-all-in-the-header-cell-for-a-gridviewcheckboxcolumn%})|
 |[Add two or more controls in one cell in RadGridView]({%slug add-two-or-more-controls-in-one-cell-in-grid%})|
 |[Adding custom elements inside a cell when it is in edit mode]({%slug adding-custom-elements-inside-a-cell-when-it-is-in-edit-mode%})|
+|[Adjusting GridViewComboBoxColumn Editor DropDown Width to the Longest Text in RadGridView]({%slug gridview-combobox-popup-width-longest-text%})|
 |[Allow End-Users to Add Items to MultiColumnCombobox Editor]({%slug allow-end-users-to-add-items-to-multicolumncombobox-editor%})|
 |[Application Hangs When a Single GridView Cell is Copied in Windows 11]({%slug windows11-clipboard-freeze%})|
 |[Barcode Column in RadGridView]({%slug barcode-column-in-gridview%})|
@@ -56,6 +57,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Display Text for Invalid Values in GridView's Combobox Column]({%slug display-text-for-invalid-values-in-grid-combobox-column%})|
 |[Drag and drop functionality from RadGridView to RadTreeView]({%slug drag-and-drop-functionality-from-radgridview-to-radtreeview%})|
 |[Emulate Cell Merge in RadGridView]({%slug emulate-cell-merge-in-radgridview%})|
+|[End Edit Mode When Navigating to Another Cell in RadGridView for WinForms]({%slug end-editing-on-cell-navigation-radgridview-winforms%})|
 |[Export RadGridView in Docx document using RadWordsProcessing]({%slug gridview-export-in-docx%})|
 |[Export Selected Rows in RadGridView]({%slug gridview-export-selected-rows%})|
 |[Export two or more grids to a single sheet]({%slug export-to-single-sheet%})|
@@ -103,6 +105,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to filter RadGridView by custom types]({%slug filter-grid-by-custom-type%})|
 |[How to get all filtered rows in RadGridView with paging]({%slug get-all-filtered-rows-in-gridview-with-paging%})|
 |[How to Improve Scrolling Performance with Down Arrow Key in RadGridView]({%slug gridview-improve-down-arrow-key-performance%})|
+|[How to Indent Select Column Checkbox for Grouped Rows]({%slug gridview-indent-selectcolumn-group-winforms%})|
 |[How to Indicate Errors in RadGridView]({%slug indicate-errors-in-gridview%})|
 |[How to Indicate RadTextBoxEditor in Grid Filter Cells]({%slug indicate-textboxeditor-in-grid-filter-cell%})|
 |[How to keep the sort order after grouping in RadGridView]({%slug sort-order-after-grouping-in-gridview%})|
@@ -139,6 +142,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Newly Added Rows in GridView Disappear If Filtering is Applied]({%slug missing-new-rows-in-filtered-gridview%})|
 |[Node drag and drop between RadTreeView and RadGridView]({%slug node-drag-and-drop-between-radtreeview-and-radgridview%})|
 |[Permanent editor in a filter cell]({%slug gridview-permaneneditor-in-filter-cell%})|
+|[Prevent Column Dragging Over Pinned Columns in RadGridView for WinForms]({%slug gridview-prevent-column-drag-over-pinned%})|
 |[Print Header in RadGridView Only on the First Page]({%slug gridview-print-header-on-first-page%})|
 |[Printing RadGridView via Telerik Reporting]({%slug printing-radgridview-via-telerik-reporting%})|
 |[Quick Filter Bar for RadGridView]({%slug grid-quick-filter-bar%})|

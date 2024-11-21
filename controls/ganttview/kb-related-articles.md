@@ -16,6 +16,7 @@ The following article list Knowledge Base articles related to this section of co
 |KB Article|
 |----|
 |[Custom Input Behavior]({%slug ganttview-custom-input-behavior%})|
+|[Disabling Task Resizing in RadGanttView for WinForms]({%slug ganttview-disable-resizing%})|
 |[Drag and Drop Behavior from GanttView to Scheduler]({%slug drag-and-drop-from-ganttview-to-scheduler%})|
 |[How to Build a Truck System with Custom Task Elements in GanttView]({%slug truck-system-with-custom-items-in-ganttview%})|
 |[Indicate Special Days in RadGanttView]({%slug indicate-special-days-in-radganttview%})|

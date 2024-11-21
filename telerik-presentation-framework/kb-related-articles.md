@@ -22,6 +22,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Binding two controls to the same data source]({%slug binding-two-controls-to-the-same-data-source%})|
 |[Building applications for x64 (or AnyCPU at 64-bit OS)]({%slug building-applications-for-x64-(or-anycpu-at-64-bit-os)%})|
 |[ClickOnce Application is Broken]({%slug clickonce-application-is-broken%})|
+|[Command Injection Vulnerability]({%slug command-injection-vulnerability-cve-2024-7679%})|
 |[Could not load file or assembly Telerik.WinControls.XmlSerializers]({%slug could-not-load-file-or-assembly-telerik-wincontrols-xmlserializers%})|
 |[Customize the Color for SVG Images]({%slug customize-the-color-for-svg-images%})|
 |[Dashboard Demo]({%slug dashboard-demo%})|
@@ -82,6 +83,7 @@ The following article list Knowledge Base articles related to this section of co
 |[RadControls with no themes, RadControls with replaced ControlDefault theme]({%slug radcontrols-with-no-themes-radcontrols-with-replaced-controldefault-theme%})|
 |[Reflecting changes in custom themes in design time]({%slug reflecting-changes-in-custom-themes-in-design-time%})|
 |[Resolving Missing Telerik Menu and Controls in Visual Studio 2017]({%slug missing-telerik-menu-controls-visual-studio-2017%})|
+|[Resolving Visual Studio 2022 Crash with Telerik Extensions]({%slug resolve-visual-studio-2022-crash-telerik-extensions%})|
 |[Resources in resx files are lost when the form is modified]({%slug resources-in-resx-files-are-lost-when-the-form-is-modified%})|
 |[Restore row values when row validation fails]({%slug restore-row-values-when-row-validation-fails%})|
 |[Reusing the command pattern implemented in TPF]({%slug reusing-the-command-pattern-implemented-in-tpf%})|
@@ -93,6 +95,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Tutorial - Create a Custom Theme Component]({%slug tutorial-custom-theme-component%})|
 |[Unable to build project after upgrade. Now what?]({%slug unable-to-build-project-after-upgrade%})|
 |[Unblock .resx Files Downloaded in Telerik WinForms Source Code]({%slug unblock-resx-files-downloaded-in-source-code%})|
+|[Unsafe Deserialization Vulnerability (10013)]({%slug unsafe-deserialization-vulnerability-cve-2024-10013%})|
 |[Using RadControls for WinForms inside a WinForms validation process]({%slug using-radcontrols-for-winforms-inside-a-winforms-validation-process%})|
 |[Using RadControls for WinForms with inherited forms]({%slug using-radcontrols-for-winforms-with-inherited-forms%})|
 |[Using RadEditor for ASP.NET AJAX in a Windows application]({%slug using-radeditor-for-asp-net-ajax-in-a-windows-application%})|
