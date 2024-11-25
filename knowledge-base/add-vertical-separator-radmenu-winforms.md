@@ -19,6 +19,8 @@ ticketid: 1668864
 
 In the following example, we will demonstrate how you can add a vertical separator in the RadMenu control.
 
+![WinForms RadMenu Vertical Separator](images/add-vertical-separator-radmenu-winforms001.png)
+
 ## Solution
 
 To add a vertical separator to a RadMenu, use the `RadMenuSeparatorItem` class. You can customize the separator's orientation. The following code snippet demonstrates how to insert a vertical separator item between RadMenuItems upon form load. Ensure to adjust the index in the `Items.Insert` method according to where you want to place the separator in your menu.
