@@ -32,9 +32,10 @@ this.FormElement.TitleBar.CaptionElement.Alignment = ContentAlignment.MiddleCent
 To center the text in the RadTitleBar as a stand-alone control, set the `Alignment` property of the `CaptionElement` to `ContentAlignment.MiddleCenter`. This adjustment aligns the title bar text to the middle center. 
 
 ````C#
+
 this.radTitleBar1.TitleBarElement.CaptionElement.Alignment = ContentAlignment.MiddleCenter;
 
-```
+````
 
 By applying this code, the text in the RadTitleBar will be centered, providing a visually appealing and balanced appearance for the title bar of your WinForms application.
 
