@@ -10,7 +10,6 @@ navigation:
     winformslab:
         title: "WinForms Labs"
         position: 0
-        
     getting-started:
         title: Getting Started 
         position: 2         
@@ -1501,15 +1500,12 @@ navigation:
     controls/treeview/usability:
         title: Usability
         position: 12
-        
-        
     controls/virtualgrid:
         title: VirtualGrid
         position: 500 
     controls/virtualgrid/design-time:
         title: Design Time
         position: 1       
-        
     controls/virtualgrid/fundamentals:
         title: Fundamentals
         position: 3
@@ -1518,12 +1514,10 @@ navigation:
         position: 5
     controls/virtualgrid/visual-elements:
         title: Visual Elements
-        position: 6
-        
+        position: 6        
     controls/virtualgrid/working-with-data:
         title: Working with Data
-        position: 8
-        
+        position: 8        
     controls/virtualgrid/visual-elements/columns:
         title: Columns
         position: 5
@@ -1532,8 +1526,7 @@ navigation:
         position: 6
     controls/virtualgrid/visual-elements/cells:
         title: Cells
-        position: 7
-        
+        position: 7        
     controls/virtualgrid/features/filtering:
         title: Filtering
         position: 1
@@ -1570,9 +1563,6 @@ navigation:
     controls/virtualgrid/localization:
         title: Localization
         position: 10
-    
-        
-        
     controls/virtual-keyboard:
         title: Virtual Keyboard
         position: 503 
