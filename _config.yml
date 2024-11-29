@@ -1509,7 +1509,7 @@ navigation:
     controls/virtualgrid/fundamentals:
         title: Fundamentals
         position: 3
-     controls/virtualgrid/features:
+    controls/virtualgrid/features:
         title: Features
         position: 5
     controls/virtualgrid/visual-elements:
