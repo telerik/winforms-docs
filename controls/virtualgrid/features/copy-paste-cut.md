@@ -5,7 +5,7 @@ description: WinForms VirtualGrid supports built-in Copy/Paste functionality, wh
 slug: winforms/virtualgrid/copy-paste-cut
 tags: virtualgrid, copy, paste, cut
 published: True
-position: 15
+position: 10
 ---
 
 # Copy/Paste/Cut

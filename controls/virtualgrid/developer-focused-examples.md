@@ -5,7 +5,7 @@ description: Additional examples built on top of the WinForms VirtualGrid contro
 slug: winforms/virtualgrid/developer-focused-examples
 tags: developer, sdk, examples
 published: True
-position: 2
+position: 13
 ---
 
 # Developer Focused Examples

@@ -5,7 +5,7 @@ description: Get familiar with the different supported scrolling modes in WinFor
 slug: winforms/virtualgrid/scrolling
 tags: virtualgrid, scrolling
 published: True
-position: 17
+position: 9
 ---
 
 # Scrolling

@@ -5,7 +5,7 @@ description: The TableElement allows to to set a lot of useful styling and layou
 slug: winforms/radvirtualgrid/customizing-appearance/themes
 tags: virtualgrid, themes
 published: True
-position: 13 
+position: 4
 ---
 
 # TableElement Properties

@@ -5,7 +5,7 @@ description: This article describes how one can create custom InputBehavior and 
 slug: winforms/virtualgrid/handling-user-input/input-behavior
 tags: virtualgrid
 published: True
-position: 0
+position: 11
 ---
 
 # InputBehavior

@@ -5,7 +5,7 @@ description: Learn how you can use the built-in busy indicators functionality in
 slug: winforms/virtualgrid/busy-indicators
 tags: virtualgrid, busy, indicators
 published: True
-position: 16
+position: 8
 ---
 
 # Busy Indicators
