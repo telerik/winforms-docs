@@ -57,8 +57,8 @@ The current implementation of UI Automation for the RadListDataItem control is i
 
 * AutomationElementIdentifiers.AutomationIdProperty.Id 
 * AutomationElementIdentifiers.BoundingRectangleProperty.Id 
-* AutomationElementIdentifiers.ControlTypeProperty => ControlType.List.Id
-* AutomationElementIdentifiers.LocalizedControlTypeProperty => "list"
+* AutomationElementIdentifiers.ControlTypeProperty => ControlType.ListItem.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty => "list item"
 * AutomationElementIdentifiers.HelpTextProperty.Id 
 * AutomationElementIdentifiers.IsContentElementProperty.Id 
 * AutomationElementIdentifiers.IsControlElementProperty.Id 
@@ -69,7 +69,7 @@ The current implementation of UI Automation for the RadListDataItem control is i
 
 ### RadListDataItem Available Patterns
 
-* [Selection Control Pattern](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-implementingselection)
+* [SelectionItem Control Pattern](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-implementingselectionitem)
 * [ScrollItem Control Pattern](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-implementingscrollitem)
 
 ## RadScrollbarElement
