@@ -10,7 +10,6 @@ navigation:
     winformslab:
         title: "WinForms Labs"
         position: 0
-        
     getting-started:
         title: Getting Started 
         position: 2         
@@ -1506,61 +1505,64 @@ navigation:
         position: 500 
     controls/virtualgrid/design-time:
         title: Design Time
-        position: 1
+        position: 1       
     controls/virtualgrid/fundamentals:
         title: Fundamentals
         position: 3
+    controls/virtualgrid/features:
+        title: Features
+        position: 5
+    controls/virtualgrid/visual-elements:
+        title: Visual Elements
+        position: 6        
     controls/virtualgrid/working-with-data:
         title: Working with Data
-        position: 4
-    controls/virtualgrid/columns:
+        position: 8        
+    controls/virtualgrid/visual-elements/columns:
         title: Columns
         position: 5
-    controls/virtualgrid/rows:
+    controls/virtualgrid/visual-elements/rows:
         title: Rows
         position: 6
-    controls/virtualgrid/cells:
+    controls/virtualgrid/visual-elements/cells:
         title: Cells
-        position: 7
-    controls/virtualgrid/editing:
-        title: Editing
-        position: 8
-    controls/virtualgrid/sorting:
-        title: Sorting
-        position: 9	
-    controls/virtualgrid/filtering:
+        position: 7        
+    controls/virtualgrid/features/filtering:
         title: Filtering
-        position: 10
-    controls/virtualgrid/paging:
-        title: Paging
-        position: 11
-    controls/virtualgrid/selection:
+        position: 1
+    controls/virtualgrid/features/sorting:
+        title: Sorting
+        position: 2          
+    controls/virtualgrid/features/editing:
+        title: Editing
+        position: 3
+    controls/virtualgrid/features/selection:
         title: Selection
-        position: 12
-    controls/virtualgrid/context-menu:
+        position: 4	
+    controls/virtualgrid/features/context-menu:
         title: Context Menu
-        position: 13
+        position: 5        
+    controls/virtualgrid/features/paging:
+        title: Paging
+        position: 6
+    controls/virtualgrid/features/save-and-load-layout:
+        title: Save and Load Layout
+        position: 7    
     controls/virtualgrid/customizing-apearance:
         title: Customizing Apearance
-        position: 13
+        position: 9
     controls/virtualgrid/hierarchical-virtual-grid:
         title: Hierarchical Virtual Grid
-        position: 14
-    controls/virtualgrid/handling-user-input:
-        title: Handling User Input
-        position: 18
+        position: 7
     controls/virtualgrid/how-to:
         title: How-To
-        position: 19	 
+        position: 12 
     controls/virtualgrid/end-user-capabilities:
         title: End User Capabilities
-        position: 20
+        position: 11
     controls/virtualgrid/localization:
         title: Localization
-        position: 20
-    controls/virtualgrid/save-and-load-layout:
-        title: Save and Load Layout
-        position: 21
+        position: 10
     controls/virtual-keyboard:
         title: Virtual Keyboard
         position: 503 

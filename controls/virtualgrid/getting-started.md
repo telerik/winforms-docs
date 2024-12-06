@@ -5,7 +5,7 @@ description: Learn how one can use WinForms VirtualGrid with a list which contai
 slug: winforms/virtualgrid/getting-started
 tags: virtualgrid, started
 published: True
-position: 1
+position: 2
 ---
 
 # Getting Started with WinForms VirtualGrid
