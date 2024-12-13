@@ -32,15 +32,19 @@ The Telerik UI for WinForms suite includes a limited run time royalty-free licen
 For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug winforms/licensing/license-agreement%}). For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
         
 
-## .Net Redistributions
+## .NET Redistributions
 
-.NET Core allows you to publish applications as self-contained, bundling the runtime and dependencies into a single folder, or even as a single file executable. This approach eliminates the need for additional tools, as everything is already packaged together during the publish process, simplifying deployment and reducing complexity. Deploying your .Net project is futher described in the [Deploying WinForms .NET Core Application]{%slug winforms/virtualgrid/getting-started%})
+.NET Core allows you to publish applications as self-contained, bundling the runtime and dependencies into a single folder, or even as a single file executable. This approach eliminates the need for additional tools, as everything is already packaged together during the publish process, simplifying deployment and reducing complexity. Deploying your .NET project is futher described in the [Deploying WinForms .NET Core Application]({%slug winforms/virtualgrid/getting-started%})
 
-## .Net Framework Redistributions
+## .NET Framework Redistributions
 
 In the following section, we will demonstrate various methods to protect assemblies in the .NET Framework.
 
 ### Merging all assemblies into one
+
+#### Using ILRepack
+
+__ILRepack__ is similar to ILMerge tool. __ILMerge__ and __ILRepack__ are tools used to merge multiple .NET assemblies into a single output assembly, but ILRepack is the preferred choice for modern development. While __ILMerge__, developed by Microsoft, works well for older .NET Framework projects, it lacks support for newer .NET versions and is no longer actively maintained. In contrast, __ILRepack__ is an open-source, offering compatibility with .NET Core, .NET 5+, and even non-Windows platforms. Its active development ensures support for the latest .NET ecosystems, providing greater flexibility and reliability. For more information regarding ILRepack tool set-up, please refer to its GitHub repository. [ILRepack](https://github.com/gluck/il-repack)
 
 #### Using ILMerge 
 
@@ -122,10 +126,6 @@ Next, you should build your solution and then ILMerge the built application exec
 
 The MergedApplicationExecutable.exe is now a stand-alone application executable that does not need any additional references to the Telerik assemblies.
 
-#### Using ILRepack
-
-__ILRepack__ is similar to ILMerge tool. __ILMerge__ and __ILRepack__ are tools used to merge multiple .NET assemblies into a single output assembly, but ILRepack is the preferred choice for modern development. While __ILMerge__, developed by Microsoft, works well for older .NET Framework projects, it lacks support for newer .NET versions and is no longer actively maintained. In contrast, __ILRepack__ is an open-source, offering compatibility with .NET Core, .NET 5+, and even non-Windows platforms. Its active development ensures support for the latest .NET ecosystems, providing greater flexibility and reliability. For more information regarding ILRepack tool set-up, please refer to its GitHub repository. [ILRepack](https://github.com/gluck/il-repack)
-
 ### Building the Telerik assemblies from Source Code
 
 #### Using the OemAssemblyName
@@ -195,6 +195,7 @@ This section demonstrates how to deploy a project with a public token key. We wi
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 006](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows006.png)
 
     After: 
+
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 007](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows007.png)
 
 1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\ RadControl.cs in a text editor (notepad, Visual Studio etc).
@@ -203,8 +204,11 @@ This section demonstrates how to deploy a project with a public token key. We wi
 1. Delete the value of the OemPublicKeyToken:
             
     Before:
+	
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 008](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows008.png)
-    After:            
+	
+    After:    
+	
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 009](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows009.png)
 
 1. Open your project and go to *Properties*, then select the *Signing* tab.
@@ -220,10 +224,10 @@ This section demonstrates how to deploy a project with a public token key. We wi
 1. Execute the following command with a parameter the route to your assembly.
             ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 012](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows012.png)
 
-1. Copy the generated public key token.
+1. Copy the generated public key token.                                    
             ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 013](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows013.png)
 
-1. Return to the RadControlsVS2010 solution, open the RadControl.cs file and set the OemPublicKeyToken to equal the value of the newly generated key token.
+1. Return to the RadControlsVS2010 solution, open the RadControl.cs file and set the OemPublicKeyToken to equal the value of the newly generated key token.                                                
             ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 014](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows014.png)
 
 1. Build the solution.
