@@ -18,7 +18,7 @@ The following image demonstrates the structure of __RadTimeOnlyPicker__ control,
 # Elements Hierarchy
 
 >caption Figure 2: The Elements hierarchy of RadTimeOnlyPicker.
-![WinForms RadTimeOnlyPicker Elements Hierarchy]images/editors-timeonlypicker-structure002.png)
+![WinForms RadTimeOnlyPicker Elements Hierarchy](images/editors-timeonlypicker-structure002.png)
 
 
 ## See Also
