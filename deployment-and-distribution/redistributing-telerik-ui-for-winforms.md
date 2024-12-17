@@ -32,7 +32,23 @@ The Telerik UI for WinForms suite includes a limited run time royalty-free licen
 For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug winforms/licensing/license-agreement%}). For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
         
 
-## ILMerge Telerik WinForms assemblies
+## .NET Redistributions
+
+.NET Core allows you to publish applications as self-contained, bundling the runtime and dependencies into a single folder, or even as a single file executable. This approach eliminates the need for additional tools, as everything is already packaged together during the publish process, simplifying deployment and reducing complexity. Deploying your .NET project is futher described in the [Deploying WinForms .NET Core Application]({%slug winforms/virtualgrid/getting-started%})
+
+## .NET Framework Redistributions
+
+In the following section, we will demonstrate various methods to protect assemblies in the .NET Framework.
+
+### Merging all assemblies into one
+
+#### Using ILRepack
+
+__ILRepack__ is similar to ILMerge tool. __ILMerge__ and __ILRepack__ are tools used to merge multiple .NET assemblies into a single output assembly, but ILRepack is the preferred choice for modern development. While __ILMerge__, developed by Microsoft, works well for older .NET Framework projects, it lacks support for newer .NET versions and is no longer actively maintained. In contrast, __ILRepack__ is an open-source, offering compatibility with .NET Core, .NET 5+, and even non-Windows platforms. Its active development ensures support for the latest .NET ecosystems, providing greater flexibility and reliability. For more information regarding ILRepack tool set-up, please refer to its GitHub repository. [ILRepack](https://github.com/gluck/il-repack)
+
+#### Using ILMerge 
+
+>caution The ILMerge project is deprecated and is no longer maintained. You can consider using its successor: [ILRepack]({%slug installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows/ILRepack%})
 
 |RELATED VIDEOS||
 |----|----|
@@ -110,7 +126,9 @@ Next, you should build your solution and then ILMerge the built application exec
 
 The MergedApplicationExecutable.exe is now a stand-alone application executable that does not need any additional references to the Telerik assemblies.
 
-## Building the Telerik Assemblies from Source Code - Using the OemAssemblyName
+### Building the Telerik assemblies from Source Code
+
+#### Using the OemAssemblyName
 
 |RELATED VIDEOS||
 |----|----|
@@ -158,7 +176,7 @@ Once you finish these steps, and if you or someone else tries to use that assemb
 
 ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 005](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows005.png)
 
-## Building the Telerik assemblies from Source Code - Using the OemPublicKeyToken
+#### Using the OemPublicKeyToken
 
 |RELATED VIDEOS||
 |----|----|
@@ -177,6 +195,7 @@ This section demonstrates how to deploy a project with a public token key. We wi
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 006](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows006.png)
 
     After: 
+
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 007](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows007.png)
 
 1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\ RadControl.cs in a text editor (notepad, Visual Studio etc).
@@ -185,8 +204,11 @@ This section demonstrates how to deploy a project with a public token key. We wi
 1. Delete the value of the OemPublicKeyToken:
             
     Before:
+	
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 008](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows008.png)
-    After:            
+	
+    After:    
+	
     ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 009](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows009.png)
 
 1. Open your project and go to *Properties*, then select the *Signing* tab.
@@ -202,10 +224,10 @@ This section demonstrates how to deploy a project with a public token key. We wi
 1. Execute the following command with a parameter the route to your assembly.
             ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 012](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows012.png)
 
-1. Copy the generated public key token.
+1. Copy the generated public key token.                                    
             ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 013](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows013.png)
 
-1. Return to the RadControlsVS2010 solution, open the RadControl.cs file and set the OemPublicKeyToken to equal the value of the newly generated key token.
+1. Return to the RadControlsVS2010 solution, open the RadControl.cs file and set the OemPublicKeyToken to equal the value of the newly generated key token.                                                
             ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 014](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows014.png)
 
 1. Build the solution.
@@ -335,492 +357,14 @@ When you install the suite together with the installation we deploy a few differ
 
 ## Telerik UI for WinForms Assemblies
 
-When deploying your application on customer machines, you should make sure that the following assemblies are included in the distribution, being merged with the application executable or being recompiled with the special symbol set:
-        
+When deploying your application on customer machines, you should make sure that the following assemblies are included in the distribution, being merged with the application executable or being recompiled with the special symbol set:    
 
-__Assemblies that you should redistribute in all scenarios:__
+__Assemblies that you should redistribute in all scenarios are listed below. The rest of our assemblies depend on these ones.:__
 
 * TelerikCommon.dll
             
 
 * Telerik.WinControls.dll
-            
-__Assemblies that you need to redistribute depending on which controls you use in your application__
 
-<table><th>Control Name</th><th>Assembly</th><tr><td>
-
-<b>CustomShape</b></td><td>
-
-Telerik.WinControls.dll</td></tr><tr><td>
-
-<b>RadApplicationMenu</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadBarcode</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadBreadCrumb</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadBulletGraph</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadButton</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadButtonTextBox </b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadCalendar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadCarousel</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadCheckBox</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadCheckedListBox</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadColorDialog</b></td><td>
-
-Telerik.WinControls.dll</td></tr><tr><td>
-
-<b>RadContextMenu</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadContextMenuManager</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadChart</b></td><td>
-
-Telerik.WinControls.RadChart.dll</td></tr><tr><td>
-
-<b>RadDataFilter</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadDateTimePicker</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadDiagram</b></td><td>
-
-Telerik.WinControls.RadDiagram.dll</td></tr><tr><td>
-
-<b>RadDock</b></td><td>
-
-Telerik.WinControls.RadDock.dll</td></tr><tr><td>
-
-<b>RadDropDownButton</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadFontDropDownList </b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadForm</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadGridView</b></td><td>
-
-Telerik.WinControls.GridView.dll</td></tr><tr><td>
-
-<b>RadHScrollBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadLabel</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadLinearGauge</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadMaskedEditBox</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadMenu</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadMultiColumnComboBox</b></td><td>
-
-Telerik.WinControls.GridView.dll</td></tr><tr><td>
-
-<b>RadProgressBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRadioButton</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRepeatButton</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRibbonBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRibbonForm</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadTabbedForm</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRotator</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadScheduler</b></td><td>
-
-Telerik.WinControls.Scheduler.dll</td></tr><tr><td>
-
-<b>RadSpinEditor</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadSplitButton</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadStatusStrip</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadTextBox</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadThemeManager</b></td><td>
-
-Telerik.WinControls.dll</td></tr><tr><td>
-
-<b>RadTitleBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadToggleButton</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadTrackBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadVScrollBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadWaitingBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRating</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>ShapedForm</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>SchedulerBindingDataSource</b></td><td>
-
-Telerik.WinControls.Scheduler.dll</td></tr><tr><td>
-
-<b>RadShortcuts</b></td><td>
-
-Telerik.WinControls.dll</td></tr><tr><td>
-
-<b>AquaTheme</b></td><td>
-
-Telerik.WinControls.Themes.Aqua.dll</td></tr><tr><td>
-
-<b>FluentTheme</b></td><td>
-
-Telerik.WinControls.Themes.Fluent.dll</td></tr><tr><td>
-
-<b>FluentDarkTheme</b></td><td>
-
-Telerik.WinControls.Themes.FluentDark.dll</td></tr><tr><td>
-
-<b>CrystalTheme</b></td><td>
-
-Telerik.WinControls.Themes.Crystal.dll</td></tr><tr><td>
-
-<b>CrystalDarkTheme</b></td><td>
-
-Telerik.WinControls.Themes.CrystalDark.dll</td></tr><tr><td>
-
-<b>DesertTheme</b></td><td>
-
-Telerik.WinControls.Themes.Desert.dll</td></tr><tr><td>
-
-<b>Office2007Black</b></td><td>
-
-Telerik.WinControls.Themes.Office2007Black.dll</td></tr><tr><td>
-
-<b>Office2007Silver</b></td><td>
-
-Telerik.WinControls.Themes.Office2007Silver.dll</td></tr><tr><td>
-
-<b>TelerikMetroTheme</b></td><td>
-
-Telerik.WinControls.Themes.TelerikMetro.dll</td></tr><tr><td>
-
-<b>BreezeTheme</b></td><td>
-
-Telerik.WinControls.Themes.Breeze.dll</td></tr><tr><td>
-
-<b>HighContrastBlackTheme</b></td><td>
-
-Telerik.WinControls.Themes.HighContrastBlack.dll</td></tr><tr><td>
-
-<b>Office2010Black</b></td><td>
-
-Telerik.WinControls.Themes.Office2010BlackTheme.dll</td></tr><tr><td>
-
-<b>Office2010Blue</b></td><td>
-
-Telerik.WinControls.Themes.Office2010BlueTheme.dll</td></tr><tr><td>
-
-<b>Office2010Silver</b></td><td>
-
-Telerik.WinControls.Themes.Office2010SilverTheme.dll</td></tr><tr><td>
-
-<b>Office2010Black</b></td><td>
-
-Telerik.WinControls.Themes.Office2010BlackTheme.dll</td></tr><tr><td>
-
-<b>Windows7</b></td><td>
-
-Telerik.WinControls.Themes.Windows7.dll</td></tr><tr><td>
-
-<b>RadMarkupDialog</b></td><td>
-
-Telerik.WinControls.UI.RadMarkupDialog.dll</td></tr><tr><td>
-
-<b>RadDropDownList</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadListControl</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadListView</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadTreeView</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadDesktopAlert</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadSeparator</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadWizard</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadPageView</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadSplitContainer</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadGroupBox</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadPanel</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadScrollablePanel</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRichTextBox</b></td><td>
-
-Telerik.WinControls.RichTextBox.dll</td></tr><tr><td>
-
-<b>RadRichTextEditor</b></td><td>
-
-Telerik.WinControls.RichTextEditor.dll</td></tr><tr><td>
-
-<b>RadSpellChecker</b></td><td>
-
-Telerik.WinControls.SpellChecker.dll</td></tr><tr><td>
-
-<b>RadPropertyGrid</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRangeSelector</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadReminder</b></td><td>
-
-Telerik.WinControls.Scheduler.dll</td></tr><tr><td>
-
-<b>RadSchedulerReminder</b></td><td>
-
-Telerik.WinControls.Scheduler.dll</td></tr><tr><td>
-
-<b>RadSchedulerNavigator</b></td><td>
-
-Telerik.WinControls.Scheduler.dll</td></tr><tr><td>
-
-<b>RadTimeSpanPicker</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadCommandBar</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadMessageBox</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadAutoCompleteBox</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadTextBoxControl</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadChartView</b></td><td>
-
-Telerik.WinControls.ChartView.dll</td></tr><tr><td>
-
-<b>RadPivotGrid</b></td><td>
-
-Telerik.WinControls.RadPivotGrid.dll</td></tr><tr><td>
-
-<b>RadFieldList</b></td><td>
-
-Telerik.WinControls.RadPivotGrid.dll</td></tr><tr><td>
-
-<b>RadPdfViewer</b></td><td>
-
-Telerik.WinControls.PdfViewer.dll</td></tr><tr><td>
-
-<b>RadGanttView</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadBindingNavigator</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadCollapsiblePanel</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadDataEntry</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadRadialGauge</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>RadCheckedDropDownList</b></td><td>
-
-Telerik.WinControls.UI.dll</td></tr><tr><td>
-
-<b>Office2013Dark</b></td><td>
-
-Telerik.WinControls.Themes.Office2013Dark.dll</td></tr><tr><td>
-
-<b>Office2013Light</b></td><td>
-
-Telerik.WinControls.Themes.Office2013Light.dll</td></tr><tr><td>
-
-<b>TelerikMetroBlue</b></td><td>
-
-Telerik.WinControls.Themes.TelerikMetroBlue.dll</td></tr><tr><td>
-
-<b>TelerikMetroTouch</b></td><td>
-
-Telerik.WinControls.Themes.TelerikMetroTouch.dll</td></tr><tr><td>
-<b>Material</b></td><td>
-Telerik.WinControls.Themes.Material.dll</td></tr><tr><td>
-<b>MaterialPink</b></td><td>
-Telerik.WinControls.Themes.MaterialPink.dll</td></tr><tr><td>
-<b>MaterialTeal</b></td><td>
-Telerik.WinControls.Themes.MaterialTeal.dll</td></tr><tr><td>
-<b>MaterialBlueGray</b></td><td>
-Telerik.WinControls.Themes.MaterialBlueGray.dll</td></tr><tr><td>
-<b>VisualStudio2012Dark</b></td><td>
-
-Telerik.WinControls.Themes.VisualStudio2012Dark.dll</td></tr><tr><td>
-
-<b>VisualStudio2012Light</b></td><td>
-
-Telerik.WinControls.Themes.VisualStudio2012Light.dll</td></tr><tr><td>
-
-<b>Windows8</b></td><td>
-
-Telerik.WinControls.Themes.Windows8.dll</td></tr>
-<tr><td><b>RadToggleSwitch</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadLayoutControl</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadPopupEditor</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadDataLayout</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadVirtualGrid</b></td><td>Telerik.WinControls.GridView.dll</td></tr>
-
-<tr><td><b>RadPanorama</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadBrowseEditor</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadCalculatorDropDown</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadColorBox</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadTimePicker</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadClock</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadPdfViewerNavigator</b></td><td>Telerik.WinControls.PdfViewer.dll</td></tr>
-<tr><td><b>RadCardView</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadMap</b></td><td>Telerik.WinControls.RadMap.dll</td></tr>
-<tr><td><b>RadSpreadsheet</b></td><td>Telerik.WinControls.RadSpreadsheet.dll</td></tr>
-<tr><td><b>RadDomainUpDown</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>ExplorerControl</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadOpenFileDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadOpenFolderDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadSaveFileDialog</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadWebCam</b></td><td>Telerik.WinControls.RadWebCam.dll</td></tr>
-<tr><td><b>RadSparkline</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadVirtualKeyboard</b></td><td>Telerik.WinControls.UI.dll</td></tr>
-<tr><td><b>RadSyntaxEditor</b></td><td>Telerik.WinControls.SyntaxEditor.dll</td></tr>
-</table>
-
-You can find all these assemblies in the __/bin__ folder of your installation.
+The rest of the assemblies that will be distributed depend on the controls used in your project and if they are referenced inside your project. You can find all referenced assemblies in the __/bin__ folder of your installation.
         
