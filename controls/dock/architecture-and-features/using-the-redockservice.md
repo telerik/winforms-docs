@@ -58,11 +58,10 @@ End Sub
  
 ![WinForms RadDock Redock Floating ToolWindows](images/dock-architecture-and-features-using-the-redockservice001.png)
 
-# See Also
-
-[Getting Started]({%slug winforms/dock/getting-started%})
-[Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})
-[Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
-[Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%})
-[Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})
-[Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})
+## See Also
+* [Getting Started]({%slug winforms/dock/getting-started%})
+* [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})
+* [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})
+* [Using the DragDropService]({%slug winforms/dock/architecture-and-features/using-the-dragdropservice%})
+* [Document Manager]({%slug winforms/dock/architecture-and-features/document-manager%})
+* [Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%})
