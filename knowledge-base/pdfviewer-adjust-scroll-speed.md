@@ -13,11 +13,11 @@ ticketid: 1674244
 
 |Product Version|Product|Author|
 |----|----|----|
-|2024.4.1113|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2024.4.1113|RadPdfViewer for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
-Adjusting the default scroll speed of RadPdfViewer is essential when needing to navigate through documents more quickly. This knowledge base article also answers the following questions:
+Adjusting the default scroll speed of RadPdfViewer is essential when need to navigate through documents more quickly. This knowledge-base article also answers the following questions:
 
 - How can I increase the mouse wheel scroll speed in RadPdfViewer?
 - Is there a way to customize scrolling behavior in RadPdfViewer for WinForms?
