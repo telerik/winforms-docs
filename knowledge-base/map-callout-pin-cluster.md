@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-While hit testing a particular layer, RadMap returns the cluster object assuming that this layer has an applied cluster strategy. This behavior is by design as even a single pin may form a cluster. Still it is possible to know when you have clicked on a single pin or a cluster having multiple pins. This article demonstrates how we can show MapCallout when clicking on a single pin or a cluster.
+While hit testing a particular layer, RadMap returns the cluster object assuming that this layer has an applied cluster strategy. This behavior is by design as even a single pin may form a cluster. Still, it is possible to know when you have clicked on a single pin or a cluster having multiple pins. This article demonstrates how we can show MapCallout when clicking on a single pin or a cluster.
 
 ## Solution
 
