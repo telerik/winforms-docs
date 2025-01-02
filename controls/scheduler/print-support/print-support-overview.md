@@ -13,7 +13,7 @@ previous_url: scheduler-print-support
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Getting Started with Printing for RadScheduler](http://tv.telerik.com/watch/winforms/getting-started-with-printing-for-radscheduler)<br>This video demonstrates how to use the new Print features of RadScheduler. It includes a tour of new end-user printing features as well as how to accomplish it programmatically.|![WinForms RadScheduler Print Tutorial](images/scheduler-print-support003.png)|
+|[Getting Started with Printing for RadScheduler](https://www.telerik.com/videos/getting-started-with-printing-for-winforms-radscheduler)<br>This video demonstrates how to use the new Print features of RadScheduler. It includes a tour of new end-user printing features as well as how to accomplish it programmatically.|![WinForms RadScheduler Print Tutorial](images/scheduler-print-support003.png)|
 
 The printing support of __RadScheduler__, allows the end user to directly pass the RadScheduler data to the printer. Common features of the printing support in Telerik UI for WinForms suite are:
 
