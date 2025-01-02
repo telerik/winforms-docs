@@ -11,10 +11,6 @@ previous_url: scheduler-importing-and-exporting-appointments-import-from-icalend
 
 # Import from ICalendar
 
-|RELATED VIDEOS|
-|----|
-|Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs.[(Runtime: 32:46)](http://www.telerik.com/videos/winforms/using-radscheduler-for-winforms)|
-
 __RadScheduler__ allows you to import appointments from the industry-standard ICalendar format by using the __Import__ method of the __RadScheduler__ class. Using this method you can very easily Import the appointments from a given SchedulerICalendarImporter instance and a string:
 
 #### Import with String
