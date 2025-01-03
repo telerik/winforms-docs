@@ -107,7 +107,7 @@ private void ReplaceContentOfBookmark(string bookmarkName)
 {
     BookmarkRangeStart bookmark = this.radRichTextEditor1.Document.GetBookmarkByName(bookmarkName);
     this.radRichTextEditor1.Document.Selection.SelectAnnotationRange(bookmark);
-    this.radRichTextEditor1.Document.Delete(false);
+    this.radRichTextEditor1.Delete(false);
     this.radRichTextEditor1.Insert("new text");
 }
 
@@ -116,7 +116,7 @@ private void ReplaceContentOfBookmark(string bookmarkName)
 Private Sub ReplaceContentOfBookmark(ByVal bookmarkName As String)
     Dim bookmark As BookmarkRangeStart = Me.radRichTextEditor1.Document.GetBookmarkByName(bookmarkName)
     Me.radRichTextEditor1.Document.Selection.SelectAnnotationRange(bookmark)
-    Me.radRichTextEditor1.Document.Delete(False)
+    Me.radRichTextEditor1.Delete(False)
     Me.radRichTextEditor1.Insert("new text")
 End Sub
 

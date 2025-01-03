@@ -134,13 +134,13 @@ The Citation field is a field not different from every other field. You can use 
 ````C#
 CitationField citationField = new CitationField();
 citationField.SourceName = "test";
-this.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result);
+this.radRichTextEditor1.InsertField(citationField, FieldDisplayMode.Result);
 
 ````
 ````VB.NET
 Dim citationField As New CitationField()
 citationField.SourceName = "test"
-Me.radRichTextEditor1.Document.InsertField(citationField, FieldDisplayMode.Result)
+Me.radRichTextEditor1.InsertField(citationField, FieldDisplayMode.Result)
 
 ````
 
@@ -157,12 +157,12 @@ The Bibliography field is a field not different from every other field. You can 
 
 ````C#
 BibliographyField bibliographyField = new BibliographyField();
-this.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result);
+this.radRichTextEditor1.InsertField(bibliographyField, FieldDisplayMode.Result);
 
 ````
 ````VB.NET
 Dim bibliographyField As New BibliographyField()
-Me.radRichTextEditor1.Document.InsertField(bibliographyField, FieldDisplayMode.Result)
+Me.radRichTextEditor1.InsertField(bibliographyField, FieldDisplayMode.Result)
 
 ````
 

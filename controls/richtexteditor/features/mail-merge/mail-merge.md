@@ -157,17 +157,13 @@ This fields will look for the value of the **FirstName** property of the Employe
 
 ````C#
 field.DisplayMode = FieldDisplayMode.Result;
-this.radRichTextEditor1.Document.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result);
 this.radRichTextEditor1.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result);
-this.radRichTextEditor1.Document.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result);
 this.radRichTextEditor1.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result);
 
 ````
 ````VB.NET
 field.DisplayMode = FieldDisplayMode.Result
-Me.radRichTextEditor1.Document.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result)
 Me.radRichTextEditor1.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result)
-Me.radRichTextEditor1.Document.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result)
 Me.radRichTextEditor1.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result)
 
 ````
