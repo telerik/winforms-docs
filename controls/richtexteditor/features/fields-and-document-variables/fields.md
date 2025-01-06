@@ -120,11 +120,11 @@ Priority can be specified through the __FieldsUpdateManager__ static class. The 
 {{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=register}} 
 
 ````C#
-FieldsUpdateManager.RegisterFieldUpdatePriority(typeof(ReferenceField), 1000);
+FieldsUpdateManager.RegisterFieldUpdateInfo(typeof(ReferenceField), new FieldTypeUpdateInfo() { Priority = 1000 });
 
 ````
 ````VB.NET
-FieldsUpdateManager.RegisterFieldUpdatePriority(GetType(ReferenceField), 1000)
+FieldsUpdateManager.RegisterFieldUpdateInfo(GetType(ReferenceField), New FieldTypeUpdateInfo() With {.Priority = 1000})
 
 ````
 
