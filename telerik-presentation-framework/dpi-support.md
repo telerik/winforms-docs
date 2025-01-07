@@ -10,37 +10,33 @@ position: 12
 
 # DPI Support
 
-Telerik UI for WinForms suite gives your Windows Forms applications a new power today - built-in support for high resolution DPI monitors.
+**Telerik UI for WinForms** suite gives your Windows Forms applications a new power today - built-in support for high resolution DPI monitors.
 
-In **R2 2017** we introduced built-in HDPI support in the Telerik UI for WinForms suite. This coincides with the HDPI improvements [Microsoft is bringing with .NET 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) and the *Windows 10 Creators Update*. The best part is that you will get this support no matter which .NET framework you are targeting (currently supported from .NET 2.0 and up).
+In **R2 2017** we introduced built-in high DPI support in the Telerik UI for WinForms suite. This coincides with the HDPI improvements [Microsoft is bringing with .NET 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) and the *Windows 10 Creators Update*. The best part is that Microsoft constantly improves the DPI support and provides HDPI improvements when announcing updates in the different frameworks. When using Telerik UI for WinForms, our clients can develop applications with automatic scaling for high DPI accross various .NET versions (starting with .NET Framework 2.0 and up to the latest .NET). 
 
->important With **R2 2022** we have introduced some improvements in the HDPI scalling in Telerik UI for WinForms suite. [Read More](#hdpi-scale-improvements)
+### DPI awareness
 
-All you will have to do is to declare your application as DPI aware and all RadControls will scale their UI elements in accordance to the current DPI settings automatically. To do that, you have to add an **app.manifest** file and/or an **app.config** file with several lines of code. You can see examples of that in our blog post on the [High DPI in WinForms](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-) matter. We will look into the technical details further down this article.
+To configure your application as DPI aware you need to mark it as such so the OS would know how to handle it. Desktop applications must tell Windows if they support DPI scaling. Furthermore, you can have DPI awareness per process or per thread. When an application is declared as DPI-aware, all RadControls will scale automatically their UI elements in accordance to the current DPI settings. Doing so, your desktop application can handle display scale factor (dots per inch, or DPI) changes dynamically, making the application looks crisp and clear on any display it is rendered on.
 
-With the changes we have introduced, the common problem of bad scaling when your applications run on high resolution monitors goes away. So, your app will ship with higher quality on more systems instantly. The problem with the blurry fonts and unreadable texts will be eliminated and the potential of modern hardware will be utilized fully.
-
->important In order to produce as good layout as possible when running your application on monitors with different DPI scaling, it is important to have some thoughts in mind before you start designing the application: [HDPI Tips and Tricks]({%slug hdpi-tips-and-tricks%}).
-
-Although it is a bit tricky to demonstrate HDPI support with a single image, here is an example with screen shots of the same application on two different monitors. You will notice that the first image will become blurry, unlike the second one.
+Although it is a bit tricky to demonstrate HDPI support with a single image, here is an example with screen shots of the same application on two different monitors. You can notice that the first image becomes blurry on 250% scalling, while the second one remains crisp and looks modern.
 
 |Resolution: 3840 x 2160 - Scaling: 250%|
 |----|
 |![dpi-support 001](images/dpi-support001.png)|
 |![dpi-support 002](images/dpi-support002.png)|
 
-There are four different DPI awareness modes in Windows.
+>important To produce as good layout as possible when running your desktop application on monitors with different DPI scaling, it is important to have some thoughts in mind before you start designing the application. Please check [HDPI Tips and Tricks]({%slug hdpi-tips-and-tricks%}).
 
-* **Unaware** – bitmap stretching is used.
-* **System** – Introduced in Windows Vista. The OS treats all displays with same DPI of the primary display. Bitmap stretching is used.
+There are four different [DPI awareness modes in Windows](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows#dpi-awareness-mode).
+
+* **Unaware** – DPI unaware applications render at a fixed DPI value of 96 (100%). Whenever these applications are run on a screen with a display scale greater than 96 DPI, Windows will stretch the application bitmap to the expected physical size. This results in the application appearing blurry.
+* **System** – Introduced in Windows Vista. The OS treats all displays with same DPI of the primary display. Bitmap stretching is used. System DPI-aware desktop applications only render crisply at a single display scale factor, becoming blurry whenever the DPI changes.
 * **Per-Monitor** – Introduced in Windows 8.1. Every display has its own DPI and the application window is notified of DPI change.
 * **Per-Monitor V2** – Introduced with Windows 10 Creators Update (1703). On top of the previous mode there is automatic scaling of the non-client area and certain controls and dialogs.
 
-## How to Enable HDPI Support in Your Application
+## How to Enable high DPI Support in Your Application
 
-When building a DPI-aware application, firstly you must declare it as such, so the OS would know how to handle it. Furthermore, you can have DPI awareness per process or per thread.
-
-There are two main approaches for making your application DPI aware:
+There are two main approaches to configure your application DPI-aware: using an **app.manifest** file and/or an **app.config** file with several lines of code. More detailed technical topics you can find in our blog post on the [High DPI in WinForms](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-).
 
 ### Application Manifest File
 
@@ -97,9 +93,10 @@ You can use both settings in the manifest file. If so, Windows 10, version 1607,
 
 >caution Note that declaring DPI awareness in the app.manifest file breaks ClickOnce applications. The following KB article demonstrates how to deal with this problem: [ClickOnce Application is Broken]({%slug clickonce-application-is-broken%}).
 
+
 ### App.Config File
 
-Another way that was introduced for Windows Forms in .NET Framework 4.7 is in the app.config file. Microsoft added a new element to add different features to a Windows Forms app called <System.Windows.Forms.ApplicationConfigurationSection>. In order to use it you need to do the following:
+Another way that was introduced for Windows Forms in .NET Framework 4.7 is using the  the **app.config** file. Microsoft added a new element to add different features to a Windows Forms app called [<System.Windows.Forms.ApplicationConfigurationSection>](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/winforms/). In order to use it you need to do the following:
 
 * Declare compatibility with Windows 10 in the **app.manifest** file:
 
@@ -114,7 +111,7 @@ Another way that was introduced for Windows Forms in .NET Framework 4.7 is in th
 
 ````
 
-* Use the new element in the **app.config** file:
+* Enable DPI awareness in the **app.config** file:
 
 ````XML
 
@@ -124,37 +121,49 @@ Another way that was introduced for Windows Forms in .NET Framework 4.7 is in th
 
 ````
 
+>caution In previous versions of the .NET Framework prior to 4.7, you used the manifest to add high DPI support. This approach is no longer recommended, since it overrides settings defined on the app.config file.
+
 * Call the static method in your application’s entry point: [Application.EnableVisualStyles();](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.enablevisualstyles?view=netcore-3.1)
 
+This should be the first method call in your application entry point. For example:
+
+````C#
+static void Main()
+{
+    Application.EnableVisualStyles();
+    Application.SetCompatibleTextRenderingDefault(false);
+    Application.Run(new Form2());
+}
+
+````
+
 With the <System.Windows.Forms.ApplicationConfigurationSection> element you can set other DPI features as well. For more information you can check [this article](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element).
-
->caution Using <b>&lt;dpiAware&gt;</b>/<b>&lt;dpiAwareness&gt;</b> in the manifest file overrides the settings defined in the app.config file.
-
->important In **R3 2017** we introduced the __EnableDpiScaling__ property that allows you to enable/disable this on a global level. This is a static property of __RadControl__ and must set before any controls are initialized. For example in the form's constructor. 
-
->important In **R2 2020 SP1** we introduced the **EnableImageDpiScaling** property indicating whether the RadControls scaling logic will be used to resize the images when the application is run in a high DPI environment. This is a static property of __RadControl__ and must set before any controls are initialized. For example in the form's constructor. 
 
 ### Native API 
 
 Even though it is not a common approach, there are several native API calls that can set awareness. Additional information is available in [this](https://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-#dpiAwareness) blog post.
 
-## Static Method in .NET Core 3.0/.NET5 Preview
+## High DPI support in an Application targeting .NET 9
 
 With .NET Core 3.0 Microsoft introduced a new way to set a high DPI mode for Windows Forms. A static method called [Application.SetHighDpiMode(HighDpiMode)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.sethighdpimode), where [HighDpiMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.highdpimode) is enum with the following values:
 
-* DpiUnaware
-* SystemAware
-* PerMonitor
-* PerMonitorV2
-* DpiUnawareGdiScaled
+* **DpiUnaware** - The application window does not scale for DPI changes and always assumes a scale factor of 100%.
+* **SystemAware** - The window queries for the DPI of the primary monitor once and uses this for the application on all monitors.
+* **PerMonitor** - The window checks for DPI when it's created and adjusts scale factor when the DPI changes.
+* **PerMonitorV2** - Similar to PerMonitor, but enables child window DPI change notification, improved scaling of comctl32 controls, and dialog scaling.
+* **DpiUnawareGdiScaled** - 	Similar to DpiUnaware, but improves the quality of GDI/GDI+ based content.
 
 The call must be done at the application entry point. If you have used a manifest file to set the DPI awareness mode, this method call will fail.
 
-## HDPI Scale Improvements
+## Common HDPI Scale Properties and Improvements in RadControl
 
-With the **R2 2022** we have added some improvements to how our controls are scaled in their parent Forms/RadForms. The introduced improvements are listed below.
+In addition of the dpi support, here are listed several properties of RadControl that can be set manually:
 
-> These new functionalities are controlled by the static __RadControl.EnableRadAutoScale__ property. In a case, you want to disable these improvements you can set it false.
+* __EnableDpiScaling__ property allows you to enable/disable dpi scaliing on a global level. This is a static property of __RadControl__ and must set before any controls are initialized. For example in the form's constructor. Available as of R3 2017.
+
+* **EnableImageDpiScaling** property indicating whether the RadControls scaling logic will be used to resize the images when the application is run in a high DPI environment. This is a static property of __RadControl__ and must set before any controls are initialized. For example in the form's constructor. Available as of R2 2020 SP1.
+
+With the **R2 2022** we have added some improvements to how our controls are scaled in their parent Forms/RadForms. The introduced improvements are listed below. These new functionalities are controlled by the static __RadControl.EnableRadAutoScale__ property. In a case, you want to disable these improvements you can set it false.
 
 * RadControl is dynamically scaled now when it is added runtime.
 * RadControl is scaled correctly in a __System.Windows.Forms.Form__.
