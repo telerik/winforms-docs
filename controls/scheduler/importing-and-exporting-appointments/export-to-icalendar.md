@@ -11,12 +11,6 @@ previous_url: scheduler-importing-and-exporting-appointments-export-to-icalendar
 
 # Export to ICalendar
 
-## 
-
-|RELATED VIDEOS|
-|-----|
-|Have you had a need to build scheduler functionality into your applications? If so, then this webinar is for you, where Telerik Evangelist John Kellar shows a variety of features like iCal support, multiple view options, strong data binding support, and an out of the box appointment dialogs.[(Runtime: 32:46)](http://www.telerik.com/videos/winforms/using-radscheduler-for-winforms)|
-
 __RadScheduler__ allows you to export appointments in the industry-standard ICalendar format. For that purpose you need to use the __Export__ method of the RadScheduler class. By using this method you can easily export the appointments in a given SchedulerICalendarExporter instance to a string:
 
 #### Export to String
