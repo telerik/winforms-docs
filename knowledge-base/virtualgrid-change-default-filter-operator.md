@@ -1,10 +1,10 @@
 ---
 title: Change default filter operator in RadVirtualGrid for WinForms
-description: Learn how to change default filter operator in RadVirtualGrid
+description: Learn how to change the default filter operator in RadVirtualGrid
 type: how-to
 page_title: How to Change default filter operator in RadVirtualGrid
 slug: virtualgrid-change-default-filter-operator
-tags: virtual, grid, winforms, filtering, filter operator
+tags: virtualgrid, grid, winforms, filtering, filter operator
 res_type: kb
 ---
 
@@ -16,13 +16,13 @@ res_type: kb
 
 ## Description
 
-When perform filtering in RadVirtualGrid, the client may want to change the FilterOperator that is shown by default. 
+When performing filtering in RadVirtualGrid, the client may want to change the FilterOperator that is shown by default. 
 
 ## Solution
 
 In order to change the default filter operator for a particular column in RadVirtualGrid, you can use a custom **VirtualGridFilterCellElement**. Please refer to the following article for more information about how to create a custom cells: [Creating custom cells](https://docs.telerik.com/devtools/winforms/controls/virtualgrid/cells/creating-custom-cells)
 
-In this case, you need to create custom VirtualGridFilterCellElement and override its UpdateInfo(). Follow these steps to implement the solution where the **FilterOperatorText** is changed to *DoesNotContain*:
+In this case, you need to create a custom VirtualGridFilterCellElement and override its UpdateInfo(). Follow these steps to implement the solution where the **FilterOperatorText** is changed to *DoesNotContain*:
 
 ````C#
 private void RadVirtualGrid1_CreateCellElement(object sender, VirtualGridCreateCellEventArgs e)
@@ -62,5 +62,5 @@ public class CustomVirtualGridFilterCellElement : VirtualGridFilterCellElement
 
 ## See Also
 
-- [RadVirtualGrid for WinForms Documentation - Filtering](https://docs.telerik.com/devtools/winforms/controls/virtualgrid/filtering/filtering)
-- [RadVirtualGrid for WinForms Documentation - Creating custom cells](https://docs.telerik.com/devtools/winforms/controls/virtualgrid/cells/creating-custom-cells)
+* [Filtering](https://docs.telerik.com/devtools/winforms/controls/virtualgrid/filtering/filtering)
+* [Creating custom cells](https://docs.telerik.com/devtools/winforms/controls/virtualgrid/cells/creating-custom-cells)
