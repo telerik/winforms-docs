@@ -12,15 +12,15 @@ position: 12
 
 **Telerik UI for WinForms** suite gives your Windows Forms applications a new power today - built-in support for high resolution DPI monitors.
 
-In **R2 2017** we introduced built-in high DPI support in the Telerik UI for WinForms suite. This coincides with the HDPI improvements [Microsoft is bringing with .NET 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) and the *Windows 10 Creators Update*. The best part is that Microsoft constantly improves the DPI support and provides HDPI improvements when announcing updates in the different frameworks. When using Telerik UI for WinForms, our clients can develop applications with automatic scaling for high DPI accross various .NET versions (starting with .NET Framework 2.0 and up to the latest .NET). 
+In **R2 2017** we introduced built-in high DPI support in the Telerik UI for WinForms suite. This coincides with the HDPI improvements [Microsoft is bringing with .NET 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) and the *Windows 10 Creators Update*. The best part is that Microsoft constantly improves the DPI support and provides HDPI improvements when announcing updates in the different frameworks. When using Telerik UI for WinForms, our clients can develop applications with automatic scaling for high DPI accross various .NET versions (starting with .NET Framework 4.6.2 and up to the latest .NET). 
 
 ### DPI awareness
 
-To configure your application as DPI aware you need to mark it as such so the OS would know how to handle it. Desktop applications must tell Windows if they support DPI scaling. Furthermore, you can have DPI awareness per process or per thread. When an application is declared as DPI-aware, all RadControls will scale automatically their UI elements in accordance to the current DPI settings. Doing so, your desktop application can handle display scale factor (dots per inch, or DPI) changes dynamically, making the application looks crisp and clear on any display it is rendered on.
+To configure your application as DPI aware you need to mark it as such so the OS would know how to handle it. Desktop applications must tell Windows if they support DPI scaling. Furthermore, you can have DPI awareness per process or per thread. When an application is declared as DPI-aware, all RadControls will scale automatically their UI elements in accordance to the current DPI settings. Doing so, your desktop application can handle display scale factor (dots per inch, or DPI) changes dynamically, making the application looks crisp and clear on any display it is rendered on. The following blog post about [High DPI in WinForms](https://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-) provides in-depth knowledge about the DPI concept.
 
-Although it is a bit tricky to demonstrate HDPI support with a single image, here is an example with screen shots of the same application on two different monitors. You can notice that the first image becomes blurry on 250% scalling, while the second one remains crisp and looks modern.
+Although it is a bit tricky to demonstrate HDPI support with a single image, here is an example with screen shots of the same application on two different monitors. You can notice that the first image becomes blurry on 200% scalling, while the second one remains crisp and looks modern.
 
-|Resolution: 3840 x 2160 - Scaling: 250%|
+|Resolution: 3840 x 2160 - Scaling: 200%|
 |----|
 |![dpi-support 001](images/dpi-support001.png)|
 |![dpi-support 002](images/dpi-support002.png)|
@@ -143,7 +143,7 @@ With the <System.Windows.Forms.ApplicationConfigurationSection> element you can 
 
 Even though it is not a common approach, there are several native API calls that can set awareness. Additional information is available in [this](https://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-#dpiAwareness) blog post.
 
-## High DPI support in an Application targeting .NET 9
+## High DPI support in an Application targeting .NET
 
 With .NET Core 3.0 Microsoft introduced a new way to set a high DPI mode for Windows Forms. A static method called [Application.SetHighDpiMode(HighDpiMode)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.application.sethighdpimode), where [HighDpiMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.highdpimode) is enum with the following values:
 
