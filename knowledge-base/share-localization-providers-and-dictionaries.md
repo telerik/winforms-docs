@@ -18,7 +18,7 @@ res_type: kb
 
 ## How To
 
-[This](https://www.telerik.com/support/code-library/winforms/localization-providers) is the place where our community used to share localization providers and spell checking dictionaries for different languages for the controls in the Telerik UI for WinForms suite. They are currently closed for posting new replies since we are intending to migrate the Code Library.
+[This](https://github.com/telerik/winforms-sdk/tree/master/Localization%20Providers%20and%20Dictionaries) is the place where our community used to share localization providers and spell-checking dictionaries for different languages for the controls in the Telerik UI for WinForms suite. They are currently closed for posting new replies since we are intending to migrate the Code Library.
 
 Currently, you can share the localization provider or dictionary with the community via the [Telerik WinForms forum](https://www.telerik.com/forums/winforms). It is just necessary to use the correct forum tags that are specifically created for this purpose: "**LocalizationProvider**" and "**Dictionary**".
 
