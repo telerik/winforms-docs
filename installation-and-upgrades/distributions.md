@@ -34,7 +34,6 @@ This article dives into UI controls, focusing on their compatibility with Micros
 |.NET 8| 2024 Q2 - present|NET 8 and later|
 |.NET 9| 2024 Q4 - present|NET 9 and later|
 
->important As of 2024 Q4 (November), we will deprecate the Telerik DLLs built against .NET 7. This decision is rooted in our dedication to align with Microsoft’s recommended framework versions so that our [products leverage the latest advancements in technology, security, and performance](https://www.telerik.com/blogs/embracing-future-product-update-enhanced-performance-and-security). 
 
 ## See Also
 
