@@ -101,6 +101,8 @@ To learn more about the __DocumentPosition__ read the [Positioning]({%slug winfo
         
 Here is an example of how to select the current word.
 
+#### Select current word
+
 {{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=position}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=position}} 
 
@@ -179,6 +181,8 @@ The selection in **RadRichTextEditor** consists of selection ranges. These range
 	* **TableRow**: The range consists of a TableRow.
 	* **TableCell**: TableCell selection range.
 
+#### Check the type of the elements inside the selection
+
 {{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=ElementType}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=ElementType}} 
 
@@ -207,6 +211,8 @@ The selection in **RadRichTextEditor** consists of selection ranges. These range
 You can implement Multi-Range Selection by either calling multiple times the __AddSelectionStart()__ and   __AddSelectionEnd()__ methods or by working with the __Ranges__ collection.
         
 Here is an example of selecting each "*RadRichTextEditor*" word in the text. This example uses the first approach.
+
+#### Select all occurrences of the "RadRichTextBox" word
 
 {{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=multiselect}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=multiselect}} 
@@ -247,6 +253,140 @@ Loop While position.MoveToNextWordStart()
 {{endregion}} 
 
 ![WinForms RadRichTextEditor Multi-Range Selection](images/richtexteditor-features-selection001.png)
+
+## Customize Mouse Selection Behavior 
+
+The mouse selection behavior in the RadRichTextEditor control is defined in **MouseSelectionHandler**. MouseSelectionHandler is the base class that controls the selection made through mouse moving, dragging, etc. 
+
+As of 2025 Q1 the default mouse selection behavior can be customized by creating a class that derives from MouseSelectionHandler and override its methods. The customized handler, can be assigned to the **MouseSelectionHandler** property of the **ActiveEditorPresenter** of RadRichTextEditor. Thus it can replace the default mouse behavior offering the desired customized one that fulfil client's needs.
+
+The following example shows how to implement a custom selection behavior which selects words on a single click even when there are more that one empty spaces. The default behavior selects specific word when the user double click the word.
+
+#### Creating a Custom MouseSelectionHandler
+
+{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=CustomMouseSelectionHandler}} 
+{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=CustomMouseSelectionHandler}} 
+
+````C#
+    
+public class CustomMouseSelectionHandler : MouseSelectionHandler
+{
+    RadDocument currentDocument;
+    public CustomMouseSelectionHandler(RadDocument document, DocumentPresenterBase presenter)
+        : base(document, presenter)
+    {
+        currentDocument = document;
+    }
+
+    protected override void RegisterDocumentSingleMouseDown(bool ctrlPressed, bool shiftPressed, Telerik.WinControls.RichTextEditor.UI.Point position, UIElement originalSource)
+    {
+        base.RegisterDocumentSingleMouseDown(ctrlPressed, shiftPressed, position, originalSource);
+    }
+
+    public override void RegisterDocumentMouseUp(SourceType source = SourceType.Mouse, Telerik.WinControls.RichTextEditor.UI.Point? position = null)
+    {
+        base.RegisterDocumentMouseUp(source, position);
+        SelectEmptyAnnotation();
+    }
+
+    public void SelectEmptyAnnotation()
+    {
+        var position = currentDocument.CaretPosition;
+        var span = position.GetCurrentInline() as Span;
+
+        if (span != null && span.Text.Contains("   "))
+        {
+            var start = new DocumentPosition(currentDocument);
+            var end = new DocumentPosition(currentDocument);
+
+            start.MoveToDocumentElementStart(span);
+            end.MoveToDocumentElementEnd(span);
+            end.MoveToNext();
+
+            this.currentDocument.Selection.SetSelectionStart(start);
+            this.currentDocument.Selection.AddSelectionEnd(end);
+        }
+    }
+}
+
+````
+````VB.NET
+Public Class CustomMouseSelectionHandler
+    Inherits MouseSelectionHandler
+
+    Private currentDocument As RadDocument
+    Public Sub New(ByVal document As RadDocument, ByVal presenter As DocumentPresenterBase)
+        MyBase.New(document, presenter)
+        currentDocument = document
+    End Sub
+    Protected Overrides Sub RegisterDocumentSingleMouseDown(ByVal ctrlPressed As Boolean, ByVal shiftPressed As Boolean, ByVal position As Telerik.WinControls.RichTextEditor.UI.Point, ByVal originalSource As UIElement)
+        MyBase.RegisterDocumentSingleMouseDown(ctrlPressed, shiftPressed, position, originalSource)
+    End Sub
+    Public Overrides Sub RegisterDocumentMouseUp(ByVal Optional source As SourceType = SourceType.Mouse, ByVal Optional position As Telerik.WinControls.RichTextEditor.UI.Point? = Nothing)
+        MyBase.RegisterDocumentMouseUp(source, position)
+        SelectEmptyAnnotation()
+    End Sub
+    Public Sub SelectEmptyAnnotation()
+        Dim position = currentDocument.CaretPosition
+        Dim span = TryCast(position.GetCurrentInline(), Span)
+
+        If span IsNot Nothing AndAlso span.Text.Contains("   ") Then
+            Dim start = New DocumentPosition(currentDocument)
+            Dim [end] = New DocumentPosition(currentDocument)
+            start.MoveToDocumentElementStart(span)
+            [end].MoveToDocumentElementEnd(span)
+            [end].MoveToNext()
+            Me.currentDocument.Selection.SetSelectionStart(start)
+            Me.currentDocument.Selection.AddSelectionEnd([end])
+        End If
+    End Sub
+End Class
+
+````
+
+{{endregion}} 
+
+#### Assign the custom MouseSelectionHandler to the ActiveEditorPresenter
+
+{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=AssignCustomMouseSelectionHandler}} 
+{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=AssignCustomMouseSelectionHandler}} 
+
+````C#
+private void RadRichTextEditor1_DocumentChanged(object sender, EventArgs e)
+{
+    DocumentPresenterBase presenter = this.radRichTextEditor1.RichTextBoxElement.ActiveEditorPresenter as DocumentPresenterBase;
+    if (presenter != null)
+    {
+        presenter.MouseSelectionHandler = new CustomMouseSelectionHandler(this.radRichTextEditor1.Document, presenter);
+    }
+} 
+
+````
+````VB.NET
+Private Sub RadRichTextEditor1_DocumentChanged(ByVal sender As Object, ByVal e As EventArgs)
+    Dim presenter As DocumentPresenterBase = TryCast(Me.radRichTextEditor1.RichTextBoxElement.ActiveEditorPresenter, DocumentPresenterBase
+    If presenter IsNot Nothing Then
+        presenter.MouseSelectionHandler = New CustomMouseSelectionHandler(Me.radRichTextEditor1.Document, presenter)
+    End If
+End Sub
+
+````
+
+{{endregion}} 
+
+#### Custom Selection Behavior
+![WinForms RadRichTextEditor custom MouseSelectionHandler](images/richtexteditor-features-selection003.png)
+
+## MouseSelectionHandler Settings
+
+The following static mouse selection properties are helpful to customize settings of **MouseSelectionHandler** in case you have more specific requirements:
+
+* **MouseSelectionHandler.DoubleClickTime**: This static property controls the double click speed of the RadRichTextEditor. The default value is 400ms. It is different from the default value in .NET which is 500ms. This property allows you to set the value that best suits your case. You can set it in your code usually when initializing the RadRichTextEditor control.
+
+* **MouseSelectionHandler.MouseDragThreshold**: This static property controls the number of pixels that the mouse needs to travel so that the action is considered a drag operation. The default value is 3.
+
+* **MouseSelectionHandler.MouseDoubleClickThreshold**: This static property controls the number of pixels that are allowed for the mouse to move when double-clicking. The default value of this property is 1.
+
 
 # See Also
 
