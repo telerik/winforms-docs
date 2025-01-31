@@ -789,7 +789,7 @@ navigation:
         title: GridViewTimeOnlyColumn (.NET Only)
         position: 20
     controls/gridview/visual-elements/columns/column-types/gridviewdateonlycolumn:
-        title: GridViewDateOnlycolumn (.NET Only)
+        title: GridViewDateOnlyColumn (.NET Only)
         position: 22      
     controls/gridview/visual-elements/rows:
         title: Rows
