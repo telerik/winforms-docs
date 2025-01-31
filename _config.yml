@@ -785,10 +785,10 @@ navigation:
     controls/gridview/visual-elements/columns/column-types:
         title: Column Types
         position: 3  
-    controls/gridview/visual-elements/columns/column-types/gridviewtimeonlycolumn
+    controls/gridview/visual-elements/columns/column-types/gridviewtimeonlycolumn:
         title: GridViewTimeOnlyColumn (.NET Only)
         position: 20
-    controls/gridview/visual-elements/columns/column-types/gridviewdateonlycolumn
+    controls/gridview/visual-elements/columns/column-types/gridviewdateonlycolumn:
         title: GridViewDateOnlycolumn (.NET Only)
         position: 22      
     controls/gridview/visual-elements/rows:
