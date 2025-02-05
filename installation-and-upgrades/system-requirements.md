@@ -11,23 +11,36 @@ previous_url: installation-deployment-and-distribution-system-requirements
 
 # System Requirements
 
-The following topic describes the system requirements needed by Telerik UI for WinForms.
+The following topic provides information about the system requirements to install and use Telerik UI for WinForms.
 
-The hardware and operating systems required to use Telerik UI for WinForms controls match the [system requirements of Visual Studio](https://learn.microsoft.com/en-us/visualstudio/releases/2022/system-requirements). If you can use Visual Studio on your machine, you will be able to use our controls after obtaining our license.
+## Operating System
+
+- Windows 7 
+- Windows 8.1 
+- Windows 10 
+- Windows 11 
+
+## .NET Framework and .NET  
+
+- [.NET Framework 4.6.2 and .NET Framework 4.8.1 and later](https://learn.microsoft.com/en-us/dotnet/framework/get-started/system-requirements) 
+- [.NET 6, .NET 8, .NET 9 and later](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) 
 
 ## Development Environment
 
-In order to develop applications with Telerik UI for WinForms you need to have installed the following development tools:
+The hardware and operating systems required by Telerik UI for WinForms controls match the [Visual Studio System Requirements](https://learn.microsoft.com/en-us/visualstudio/releases/2022/system-requirements). Once, your machine is prepared to install and run Visual Studio, you will be able to [Install Telerik UI for WinForms]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}) and start using Telerik controls after acquiring a license from us.
 
-* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/): 2019 and above.      
-* __.NET Framework__: .NET Framework 4.6.2 and above.
-* __.NET__: .NET 6, .NET 7, .NET 8, .NET 9 and later.
+In order to develop applications with Telerik UI for WinForms you need to have installed Visual Studio IDE:
+
+* [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/): 2019, 2022 and above.      
+    For both .NET and .NET Framework application development you need to install the .NET desktop development workload in Visual Studio. See this article for more information: [Modify Visual Studio workloads and components](https://learn.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
+
+* Other .NET Framework only IDEs: Progress OpenEdge, JetBrains Rider   
 
 >important In 2024 Q1 (version 2024.1.130) the __Visual Studio Extensions__ for Visual Studio 2015 and 2017 is removed and is no longer distributed with the __Telerik UI for WinForms__ installer. The extension for these Visual Studio versions can be used with Telerik version prior to 2024 Q1. The extension for Visual Studio 2015 and 2017 is still available as a separate integration package in the marketplace and can be downloaded from [here](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions). 
 	
 ## Distributions
 
-Please, check the [Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}) article to get familiar with the target versions that are currently distributed.
+For a complete list of distributions and supported runtimes, please refer to [Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}).
 
 ## See Also
 
