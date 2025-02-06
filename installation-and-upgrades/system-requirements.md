@@ -24,7 +24,7 @@ Telerik UI for WinForms can be installed on any operating system that supports .
 
 ## .NET Framework and .NET  
 
-- [.NET Framework 4.6.2 and .NET Framework 4.8.1 and later](https://learn.microsoft.com/en-us/dotnet/framework/get-started/system-requirements) 
+- [.NET Framework 4.6.2, .NET Framework 4.8 and later](https://learn.microsoft.com/en-us/dotnet/framework/get-started/system-requirements) 
 - [.NET 6, .NET 8, .NET 9 and later](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md) 
 
 ## Development Environment
