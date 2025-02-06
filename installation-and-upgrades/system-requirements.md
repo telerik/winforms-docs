@@ -15,6 +15,8 @@ The following topic provides information about the system requirements to instal
 
 ## Operating System
 
+Telerik UI for WinForms can be installed on any operating system that supports .NET Framework 4.6.2 and above:
+
 - Windows 7 
 - Windows 8.1 
 - Windows 10 
@@ -29,7 +31,7 @@ The following topic provides information about the system requirements to instal
 
 The hardware and operating systems required by Telerik UI for WinForms controls match the [Visual Studio System Requirements](https://learn.microsoft.com/en-us/visualstudio/releases/2022/system-requirements). Once, your machine is prepared to install and run Visual Studio, you will be able to [Install Telerik UI for WinForms]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}) and start using Telerik controls after acquiring a license from us.
 
-In order to develop applications with Telerik UI for WinForms you need to have installed Visual Studio IDE:
+To develop applications with Telerik UI for WinForms you need to have installed Visual Studio IDE:
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/): 2019, 2022 and above.      
     For both .NET and .NET Framework application development you need to install the .NET desktop development workload in Visual Studio. See this article for more information: [Modify Visual Studio workloads and components](https://learn.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
