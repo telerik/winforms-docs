@@ -22,7 +22,7 @@ Prior to the TimeOnly type being introduced, programmers typically used either t
 
 ![WinForms RadGridView GridViewTimeOnlyColumn](images/gridview-columns-gridviewtimeonlycolumn001.png)
 
-#### Add GridViewTimeOnlyColumn to the grid.
+#### Add GridViewTimeOnlyColumn to the grid
 
 ````C#
 GridViewTimeOnlyColumn timeOnlyColumn = new GridViewTimeOnlyColumn();
@@ -45,7 +45,7 @@ Me.radGridView1.Columns.Add(timeOnlyColumn)
 
 ````
 
-#### Editing GridViewTimeOnlyColumn 
+### Editing GridViewTimeOnlyColumn 
 
 When the user starts editing a GridTimeOnlyCellElement, **RadTimeOnlyEditor** activates automatically. RadTimeOnlyEditor shows a time picker element in a popup allowing free time entry. It also offers up/down arrow buttons to allow fast navigation.
 
@@ -61,7 +61,7 @@ To customize the behavior of RadTimeOnlyEditor, you need to subsribe to **CellEd
 * **Format**: Gets or sets the time format string for the editor.
 * **IsModified**: Indicate whether the editor is modified.
 
-## Define time range in RadTimeOnlyEditor
+#### Define time range in RadTimeOnlyEditor
 
 ````C#
  private void RadGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
@@ -92,7 +92,7 @@ End Sub
 
 ````
 
-## FilteringTimePrecision
+### FilteringTimePrecision
 
 **GridViewTimeOnlyColumn** offers **FilteringTimePrecision** property that determines the time part weight of the TimeOnly value while filtering. GridViewTimeOnlyPrecisionMode enum determines how the time part is evaluated. You can choose from the following options:
 
