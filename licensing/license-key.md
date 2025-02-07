@@ -23,7 +23,7 @@ To download a license key for Telerik UI for .NET WinForms, you must have either
 
     ![Download a Telerik UI for .NET WinForms License Key](./images/download-license-key.png)
 
-The [Progress Control Panel]({%slug control-panel%}), [automated installers]({%slug automated-installer%}), and the [Visual Studio Extensions]({%slug vs-integration-overview%}) will automatically download and store your license key in your home directory. This makes it available for all projects that you develop on your local machine.
+The [Progress Control Panel]({%slug installing-from-progress-control-panel%}), [automated installers]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}), and the [Visual Studio Extensions]({%slug winforms-installation-deployment-and-distribution-visual-studio-extensions%}) will automatically download and store your license key in your home directory. This makes it available for all projects that you develop on your local machine.
 
 ## Activating the Telerik UI for .NET WinForms Components
 

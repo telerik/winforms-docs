@@ -30,7 +30,7 @@ When using Telerik UI for .NET WinForms in a project with an expired or missing 
 |----------------------------------------|-----------------------------------------------------------------------------------------------|
 | `No license key is detected` | [Set up a license key]({%slug license-key%}) to activate the UI controls and remove the error message. | 
 | `Invalid license key` | [Download a new license key]({%slug license-key%}#downloading-the-license-key) and use it to activate the UI controls and remove the error message. |
-| `Your subscription license has expired.` | Renew your subscription and [download a new license key]({%slug set-up-your-license%}#downloading-the-license-key). |
+| `Your subscription license has expired.` | Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key). |
 | `Your perpetual license is invalid.` | You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following: |
 |                                        | - Renew your license, then download a new license key and use it to activate the controls. |
 |                                        | - Downgrade to a product version included in your perpetual license as indicated in the message. |

@@ -46,7 +46,7 @@ If none of the above conditions are met, the following behaviors occur:
 The most likely cause is that the new Telerik UI for .NET WinForms version was released after the expiration date of your current license or license key. To fix this issue:
 
 1. Renew your Telerik UI for .NET WinForms license if necessary.
-1. Download a new [license key file]({%slug set-up-your-license%}) and use it to activate the components.
+1. Download a new [license key file]({%slug license-key%}) and use it to activate the components.
 
 ## Can I use the same license key in multiple builds?
 
