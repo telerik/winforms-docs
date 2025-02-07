@@ -16,7 +16,7 @@ When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet pack
 > If you cannot use NuGet packages in your project, see the workaround in the [Adding Your License Key to CI Platforms as a Code Snippet]({%slug add-license-as-snippet-ci-cd%}) KB article.
 The license activation process in a CI/CD environment involves the following steps:
 
-1. [Download]({%slug set-up-your-license%}) a license key from your Telerik account.
+1. [Download]({%slug license-key%}) a license key from your Telerik account.
 
 1. Add the `Telerik.Licensing` NuGet package as a project dependency.
 
