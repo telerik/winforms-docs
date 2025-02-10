@@ -29,7 +29,7 @@ The Telerik UI for WinForms suite includes a limited run time royalty-free licen
             
 * Open source products.
 
-For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug winforms/licensing/license-key%}). For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
+For additional usage requirements, development restrictions and, defined term definitions, please refer to the WinForms [license agreement]({%slug licensing/license-key%}). For uses that require additional review, please send e-mail to <a href="mailto:sales@telerik.com?subject=Redistributing Telerik UI for WinForms">sales@telerik.com</a> to discuss your planned use of the controls.
         
 
 ## .NET Redistributions
