@@ -18,7 +18,6 @@ res_type: kb
  
 ## Description
 
-This tutorial explains in details how to upgrade your [Telerik Trial to a Licensed version]({%slug winforms/licensing/trial-vs-license%}).
 
 Let's start with having a trial version installed on your machine and a project that uses the trial version:
 
@@ -56,7 +55,6 @@ Once you purchase a Telerik license, you will have access to the *Purchase* **Li
 
 # See Also
 
-* [Trial vs Licensed version]({%slug winforms/licensing/trial-vs-license%})
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%}):
 
 
