@@ -21,6 +21,12 @@ Here is a list of the controls which support __UI Automation__.
 * [RadNavigationView]({%slug navigationview-ui-automation%})
 * [RadDropDownList]({%slug dropdown-listcontrol-and-checkeddropdownlist-dropdownlist-ui-automation%})
 * [RadListControl]({%slug dropdown-listcontrol-and-checkeddropdownlist-listcontrol-ui-automation%})
+* [RadButton]({%slug button-ui-automation%})
+* [RadRepeatButton]({%slug repeatbutton-ui-automation%})
+* [RadLabel]({%slug label-ui-automation%})
+* [RadToggleButton]({%slug togglebutton-ui-automation%})
+* [RadRadioButton]({%slug radiobutton-ui-automation%})
+* [RadCheckBox]({%slug checkbox-ui-automation%})
 
 ## UI Accessibility
 
