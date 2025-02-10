@@ -9,7 +9,7 @@ position: 1
 
 # Setting Up Your Telerik UI for .NET WinForms License Key
 
-Starting with the Q1 2025 release, the UI components from the Telerik UI for .NET WinForms library require activation through a license key (trial or commercial). This article describes how to download your personal license key and use it to activate the Telerik UI for .NET WinForms components.
+Starting with the __Q1 2025 release__, the UI components from the Telerik UI for .NET WinForms library require activation through a license key (trial or commercial). This article describes how to download your personal license key and use it to activate the Telerik UI for .NET WinForms components.
 
 An invalid license results in [errors and warnings]({%slug license-errors-warnings%}) during build and run-time indicators such as watermarks and banners.
 
@@ -39,6 +39,7 @@ To activate the Telerik UI for .NET WinForms controls:
 When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the WinForms controls.
 
 > If your project doesn’t use NuGet packages, see the [next document section](#installing-a-license-key-in-projects-without-nuget-references).
+
 ## Installing a License Key in Projects without NuGet References
 
 Telerik strongly recommends the use of NuGet packages whenever possible. Only include the license key as a code snippet when NuGet packages are not an option.
@@ -55,7 +56,8 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 
 1. Add the `TelerikLicense.cs` file to your project.
 
->Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
+>important Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
+
 
 ## See Also
 

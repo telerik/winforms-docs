@@ -33,6 +33,8 @@ Telerik strongly recommends the use of NuGet packages whenever possible. If NuGe
 1. Add a reference to the `Telerik.Licensing.Runtime.dll`.
 
 >Do not publish the script license key snippet in publicly accessible repositories. This is your personal license key.
+
+
 ## See Also
 
 * [Setting Up Your License Key]({%slug license-key%})
