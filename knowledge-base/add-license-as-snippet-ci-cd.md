@@ -22,7 +22,7 @@ I work in a CI/CD environment and need to activate my Telerik UI for .NET MAUI l
 
 Telerik strongly recommends the use of NuGet packages whenever possible. If NuGet is not an option, configure your CI/CD tools to create a C# license file during build:
 
-1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys/new) in your Telerik account.
+1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys) in your Telerik account.
 
 1. On the Telerik UI for .NET MAUI row, click the **View key** link in the **SCRIPT KEY** column.
 
