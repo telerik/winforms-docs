@@ -10,6 +10,9 @@ navigation:
     winformslab:
         title: "WinForms Labs"
         position: 0
+    licensing:
+        title: Licensing
+        position: 1     
     getting-started:
         title: Getting Started 
         position: 2         
@@ -51,10 +54,7 @@ navigation:
          position: 12         
     deployment-and-distribution:
         title: Deployment and Distribution 
-        position: 13
-    licensing:
-        title: Licensing
-        position: 14    
+        position: 13       
     security:
         title: Security
         position: 15
@@ -784,7 +784,13 @@ navigation:
         position: 3
     controls/gridview/visual-elements/columns/column-types:
         title: Column Types
-        position: 3     
+        position: 3  
+    controls/gridview/visual-elements/columns/column-types/gridviewtimeonlycolumn:
+        title: GridViewTimeOnlyColumn (.NET Only)
+        position: 20
+    controls/gridview/visual-elements/columns/column-types/gridviewdateonlycolumn:
+        title: GridViewDateOnlyColumn (.NET Only)
+        position: 22      
     controls/gridview/visual-elements/rows:
         title: Rows
         position: 4
