@@ -9,13 +9,13 @@ position: 20
 previous_url: gridview-columns-gridviewtimeonlycolumn
 ---
 
-# GridViewTimeOnlyColumn
+# GridViewTimeOnlyColumn (.NET Only)
 
-**GridViewTimeOnlyColumn** can display and edit values of TimeOnly type. TimeOnly structures was introduced with .NET 6 and represent a specific time-of-day value, such as a daily alarm clock. TimeOnly is limited to the range of 00:00:00.0000000 - 23:59:59.9999999, showing a specific time of day.
+**GridViewTimeOnlyColumn** can display and edit values of TimeOnly type. TimeOnly structure was introduced with .NET 6 and represent a specific time-of-day value, such as a daily alarm clock. TimeOnly is limited to the range of 00:00:00.0000000 - 23:59:59.9999999, showing a specific time of day.
 
 Prior to the TimeOnly type being introduced, programmers typically used either the [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%}) (using DateTime type)  or the [GridViewTimeSpanColumn]({%slug winforms/gridview/columns/column-types/gridviewtimespancolumn%}) (using TimeSpan type) to represent a specific time of day. Now, the **GridViewTimeOnlyColumn** enables users to manage TimeOnly values effectively and organize their tasks precisely in a time format.
 
->important GridViewTimeOnlyColumn requires .NET 6 or later. [TymeOnly](https://learn.microsoft.com/en-us/dotnet/api/system.timeonly?view=net-9.0) type isn't available for .NET Framework.
+>important GridViewTimeOnlyColumn requires .NET 6 or later. [TimeOnly](https://learn.microsoft.com/en-us/dotnet/api/system.timeonly?view=net-9.0) type isn't available for .NET Framework.
 
 
 >caption Figure 1: GridViewTimeOnlyColumn

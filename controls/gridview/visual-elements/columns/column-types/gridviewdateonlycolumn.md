@@ -9,7 +9,7 @@ position: 22
 previous_url: gridview-columns-gridviewdateonlycolumn
 ---
 
-# GridViewDateOnlyColumn 
+# GridViewDateOnlyColumn (.NET Only)
 
 **GridViewDateOnlyColumn** can display and edit values of DateOnly type. DateOnly structure was introduced with .NET 6 and represent a specific date, such as a birth date. Since it has no time component, it represents a date from the start of the day to the end of the day. DateOnly has a range from 0001-01-01 through 9999-12-31, just like DateTime. 
 
