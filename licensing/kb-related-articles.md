@@ -1,16 +1,16 @@
 ---
 title: KB Related Articles
 page_title: KB Related Articles - Telerik UI for WinForms
-description: Custom examples built on top of the Telerik UI for WinForms control.
-slug: licesing-kb-related-articles
-tags: kb, sdk, examples
+description: Topics related to the Licensing mechanism of Telerik UI for WinForms.
+slug: licensing-kb-related-articles
+tags: kb, sdk, examples, licensing
 position: 1000
 published: true
 ---
 
 # Knowledge Base Related Articles
 
-The following article list Knowledge Base articles related to the License .
+The following article list Knowledge Base articles related to the License mechanism of Telerik UI for WinForms.
 <!--KB Articles Table-->
 
 |KB Article|
