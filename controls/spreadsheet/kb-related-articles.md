@@ -15,6 +15,8 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Exporting FloatingChartShape to Bitmap in RadSpreadsheet for WinForms]({%slug convert-floatingchartshape-to-bitmap-radspreadsheet-winforms%})|
+|[Exporting FloatingImage from RadSpreadsheet Worksheet]({%slug radspreadsheet-export-floatingimage%})|
 |[Fill RadSpreadsheet with DataTable]({%slug fill-spreadsheet-with-datatable%})|
 |[How to Access RadSpreadsheet's Editor]({%slug access-editor-in-spreadsheet%})|
 |[How to Show ToolTip for RadSpreadsheet Cell]({%slug spreadsheet-cell-tooltip%})|

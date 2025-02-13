@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Aligning Text in RadTitleBar]({%slug form-titlebar-align-text-winforms%})|
 |[Close Application after Closing All RadTabbedForms]({%slug close-application-after-closing-the-last-tabbedform%})|
 |[Customizing RadMessageBox with custom theme]({%slug customizing-radmessagebox-with-custom-theme%})|
 |[How to Hide the New Tab Button for the Popped out Forms]({%slug tabbedform-keep-show-new-tab-button%})|

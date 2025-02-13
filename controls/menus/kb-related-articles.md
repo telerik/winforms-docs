@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Adding a Vertical Separator to RadMenuItem in RadMenu for WinForms]({%slug add-vertical-separator-radmenu-winforms%})|
 |[Distinguishing the Source Control of RadContextMenu]({%slug distinguishing-the-source-control-of-radcontextmenu%})|
 |[How to migrate to new two columns menu]({%slug how-to-migrate-to-new-two-columns-menu%})|
 |[Removing the Icon Column in RadContextMenu for WinForms]({%slug contextmenu-remove-icon-column%})|

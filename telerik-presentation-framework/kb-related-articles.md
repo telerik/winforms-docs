@@ -78,6 +78,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Mixing Telerik UI for WinForms and Telerik UI for WPF projects, using the same Document Processing Libraries but with different version]({%slug mixing-telerik-winforms-and-wpf-projects-using-the-same-document-processing-libraries%})|
 |[Non RTL Crystal Theme]({%slug non-rtl-crystal-theme%})|
 |[Panels and Transparency - Resizing]({%slug panels-and-transparency-resizing%})|
+|[Path Traversal Vulnerability (0332)]({%slug kb-security-path-traversal-cve-2025-0332%})|
 |[Performance considerations]({%slug performance-considerations%})|
 |[RadControls for WinForms are not loaded at design-time]({%slug radcontrols-for-winforms-are-not-loaded-at-design-time%})|
 |[RadControls with no themes, RadControls with replaced ControlDefault theme]({%slug radcontrols-with-no-themes-radcontrols-with-replaced-controldefault-theme%})|
