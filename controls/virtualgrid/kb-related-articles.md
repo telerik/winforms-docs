@@ -15,12 +15,14 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Change default filter operator in RadVirtualGrid for WinForms]({%slug virtualgrid-change-default-filter-operator%})|
 |[Filter by using a CheckBox in RadVirtualGrid]({%slug filter-by-checkbox-in-virtualgrid%})|
 |[Filter when Enter is pressed in RadVirtualGrid]({%slug filter-on-enter-virtualgrid%})|
 |[How to apply paging with filter and sort functionalities in VirtualGrid]({%slug virtualgrid-page-filter-sort%})|
 |[How to Create a Header CheckBox in VirtualGrid]({%slug virtualgrid-header-checkbox%})|
 |[How to create column chooser in VirtualGrid]({%slug virtualgrid-column-chooser%})|
 |[How to show column sort index in RadVirtualGrid]({%slug virtualgrid-column-sort-index%})|
+|[Identifying Cut, Copy, or Paste Operations in RadVirtualGrid for WinForms]({%slug virtualgrid-identify-cut-copy-paste%})|
 |[Live Data in RadVirtualGrid]({%slug live-data-in-virtualgrid%})|
 |[Reorder Columns in RadVirtualGrid]({%slug reorder-columns-in-radvirtual-grid%})|
 |[Row Numbers in RadVirtualGrid]({%slug row-numbers-in-virtualgrid%})|

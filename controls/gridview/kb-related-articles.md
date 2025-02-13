@@ -104,6 +104,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Filter GridViewCommandColumn in RadGridView]({%slug filter-commandcolumn-in-gridview%})|
 |[How to filter RadGridView by custom types]({%slug filter-grid-by-custom-type%})|
 |[How to get all filtered rows in RadGridView with paging]({%slug get-all-filtered-rows-in-gridview-with-paging%})|
+|[How to get selected rows in the Child Grid of RadGridView for WinForms]({%slug how-to-access-selected-hierarchy-row-radgridview-winforms%})|
 |[How to Improve Scrolling Performance with Down Arrow Key in RadGridView]({%slug gridview-improve-down-arrow-key-performance%})|
 |[How to Indent Select Column Checkbox for Grouped Rows]({%slug gridview-indent-selectcolumn-group-winforms%})|
 |[How to Indicate Errors in RadGridView]({%slug indicate-errors-in-gridview%})|

@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Adjusting Scroll Speed in RadPdfViewer for WinForms]({%slug pdfviewer-adjust-scroll-speed%})|
 |[Fit to Width RadPdfViewer and Scroll to the Clicked Position]({%slug fit-to-width-pdf-and-locate-clicked-position%})|
 |[Highlight Form Fields in RadPdfViewer]({%slug pdfviewer-highlight-form-fields%})|
 |[How to Adjust Font Size for the Text Fields in PDF Forms]({%slug adjust-font-size-in-pdf-editor%})|

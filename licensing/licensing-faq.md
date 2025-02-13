@@ -25,21 +25,29 @@ You need to download and install a new license key after:
 * Renewing an existing license.
 * Upgrading an existing license.
 
-An expired [perpetual license](https://www.telerik.com/purchase/faq/licensing-purchasing#licensing) key is valid for all Telerik UI for .NET WinForms versions published before the license's expiration date.
+> An expired [perpetual license](https://www.telerik.com/purchase/faq/licensing-purchasing#licensing) key is valid for all Telerik UI for .NET WinForms versions published before the license's expiration date.
 
 ## Will Telerik UI for .NET WinForms function with an expired license key?
 
 This depends on the [Telerik UI for .NET WinForms license type (perpetual, subscription, or trial)](https://www.telerik.com/purchase/faq/licensing-purchasing#licensing):
 
-* *Perpetual licenses* function normally with an expired license key, as long as the application is using a Telerik UI for .NET WinForms version that was released before the expiration date of the license.
-* *Subscription licenses* function normally in already deployed applications, but you cannot rebuild and republish the app.
-* *Trial licenses* function normally only within the 30-day trial period.
+* __Perpetual licenses__ will continue to function normally with an expired license key. However, the following will happen if you update or install a package version which is released after the expiration date of the license:
 
-If none of the above conditions are met, the following behaviors occur:
+	* A watermark appears on application startup.
+	* A modal dialog appears on application startup.
+	* A warning message is logged in the build log.	
+		
+	See the [Invalid License]({%slug license-errors-warnings%}#invalid-license) section for more information.
 
-* A modal dialog appears on application startup.
-* A watermark appears on Telerik UI .NET WinForms components.
-* A warning message appears in the application's build log.
+* __Subscription licenses__ will prevent you from building the application with an expired license key. Deployed applications will continue to function normally.
+
+* __Trial licenses__ will prevent the applications from functioning normally once the trial period has expired. The following will happen if you try to build or run the application:
+	
+	* A watermark appears on application startup.
+	* A modal dialog appears on application startup.
+	* A warning message is logged in the build log.	
+		
+	See the [Invalid License]({%slug license-errors-warnings%}#invalid-license) section for more information.
 
 ## I updated the Telerik UI for .NET WinForms version in my project and license errors appeared. Why?
 
@@ -60,7 +68,9 @@ No, the license activation and validation are performed entirely offline.
 
 No, you do not have to add the `telerik-license.txt` license key file or its contents to source control.
 
-Do not store the license key in plain text, for example, in a GitHub Actions Workflow definition. Build servers must use the `TELERIK_LICENSE` environment variable described in [Adding the License Key to CI Services]({%slug add-license-to-ci-cd%}).
+Build servers must use the `TELERIK_LICENSE` environment variable described in [Adding the License Key to CI Services]({%slug add-license-to-ci-cd%}).
+
+> Do not store the license key in plain text, for example, in a GitHub Actions Workflow definition.
 
 ## What happens if both the environment variable and the license key file are present?
 
