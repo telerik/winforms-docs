@@ -61,7 +61,7 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 
 ## Updating Your License Key
 
-Whenever you purchase a new Telerik UI for WPF license or renew an existing one, always [download a new license key](#downloading-the-license-key). The new license key includes information about all previous license purchases. This process is referred to as a license key update. Once you have the new license key, use it to [activate the components](#activating-the-telerik-ui-for-net-winforms-components).
+Whenever you purchase a new Telerik UI for WinForms license or renew an existing one, always [download a new license key](#downloading-the-license-key). The new license key includes information about all previous license purchases. This process is referred to as a license key update. Once you have the new license key, use it to [activate the components](#activating-the-telerik-ui-for-net-winforms-components).
 
 ## See Also
 
