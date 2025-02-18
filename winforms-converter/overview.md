@@ -12,6 +12,9 @@ position: 0
 
 This tool allows you to convert the standard .NET Windows Forms controls for all projects in a particular solution to their equivalent in Telerik UI for WinForms. It aims to speed up the conversion process and save time when such projects are modernized. The tool is built on top of the [Roslyn](https://roslyn.codeplex.com/) compiler platform. 
 
+>caution The WinForms Converter is not supported in Visual Studio 2022. This means that running it in Visual Studio 2022 will lead to errors. The last supported version of Visual Studio is 2019.
+>
+
 >caption Figure 1: Sample application converted to use the Telerik controls. 
  
 ![winforms-converter-overview001](images/winforms-converter-overview001.png)
