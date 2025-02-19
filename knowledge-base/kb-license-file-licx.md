@@ -13,7 +13,7 @@ res_type: kb
 
 |Product Version|Product|Author|
 |----|----|----|
-|2024.4.1113|RadSpreadsheet for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2024.4.1113|Telerik UI for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 
 ## Description
