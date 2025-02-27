@@ -1,7 +1,7 @@
 ---
 title: Dictionaries
 page_title: Dictionaries - WinForms SpellChecker
-description: WinForms SpellChecker comes with one predefined dictionary which checks the English language. Check what dictonaries are available. 
+description: WinForms SpellChecker comes with one predefined dictionary that checks the English language. Check what dictionaries are available. 
 slug: winforms/spellchecker/dictionaries
 tags: dictionaries
 published: True
@@ -11,7 +11,7 @@ previous_url: spellchecker-dictionaries
 
 # Dictionaries
 
-**RadSpellChecker** comes with one predefined dictionary which checks the English language. In case you need a dictionary for another language, you check the [Dictionaries for RadSpellChecker](http://www.telerik.com/community/code-library/winforms/localization-providers/dictionaries-for-radspellchecker.aspx) article where our customers have provided their own implementation of dictionaries for the different languages. The following section demonstrates how you can load one of these dictionaries in your own project.     
+**RadSpellChecker** comes with one predefined dictionary that checks the English language. In case you need a dictionary for another language, you check the [Dictionaries for RadSpellChecker](https://github.com/telerik/winforms-sdk/tree/master/Localization%20Providers%20and%20Dictionaries) article where our customers have provided their own implementation of dictionaries for the different languages. The following section demonstrates how you can load one of these dictionaries in your own project.     
 
 >note If you are experiencing any difficulties with downloading the dictionaries from the Code Library, feel free to download them from [this](https://www.telerik.com/forums/dictionaries-for-radspellchecker) forum post.
 
@@ -24,7 +24,7 @@ previous_url: spellchecker-dictionaries
             
 2. Now let's load the dictionary file (*.TDF) in our project as a [project resource](http://msdn.microsoft.com/en-us/library/3bka19x4(v=vs.100).aspx).
             
-3. Further, we should create a **WordDictionary** descendant. Let's call the descendant **GermanDictionary**. In this class we should override the **EnsureDictionaryLoadedOverride** method, create a **MemoryStream** based on the TDF resource and call the **Load** method of the **WordDictionary** class passing the **MemoryStream** as a parameter. The code looks as shown below:
+3. Further, we should create a **WordDictionary** descendant. Let's call the descendant **GermanDictionary**. In this class, we should override the **EnsureDictionaryLoadedOverride** method, create a **MemoryStream** based on the TDF resource and call the **Load** method of the **WordDictionary** class passing the **MemoryStream** as a parameter. The code looks as shown below:
 
 #### Creating a custom WordDictionary
 
