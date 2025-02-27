@@ -31,14 +31,3 @@ To add the required references, you need to:
 ![core-project-and-document-processing-library004](images/core-project-and-document-processing-library004.png)
 
 This is all that is required and now you can continue with your application. 
-
->important The Telerik Document Processing libraries are available in two versions:
->
->* A version for __.Net Framework 4.0__ or later
->
->* A version for __.Net Standard 2.0__
->
->Both versions are available as [NuGet packages](https://docs.telerik.com/devtools/document-processing/getting-started/installation/nuget-packages). Make sure that the [Assemblies for .NET Framework](https://docs.telerik.com/devtools/document-processing/getting-started/getting-started#assemblies-for-net-framework) are used in a WinForms project.
-
-
-
