@@ -45,7 +45,10 @@ To apply this custom behavior, register it with your RadGridView. This custom be
 
 ````C#
 // Example of how to register the custom behavior
-gridView.GridBehavior = new CustomGridDataRowBehavior();
+BaseGridBehavior gridBehavior = this.radGridView1.GridBehavior as BaseGridBehavior;
+gridBehavior.UnregisterBehavior(typeof(GridViewDataRowInfo));
+gridBehavior.RegisterBehavior(typeof(GridViewDataRowInfo), new CustomGridDataRowBehavior());
+
 ````
 
 ## See Also
