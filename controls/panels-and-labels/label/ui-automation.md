@@ -26,8 +26,6 @@ Me.RadLabel1.EnableUIAutomation = False
 
 ````
 
-![label-ui-automation](images/label-ui-automation001.png)
-
 ## Relevant Properties 
 
 The table below outlines the __UI Automation__ properties most important for understanding and interacting with RadLabel control.
