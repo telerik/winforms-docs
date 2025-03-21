@@ -191,6 +191,10 @@ radGridView1.MasterTemplate.Templates.Add(template)
 
 * Copy, paste, and cut operations do not support merge cells.
 
+* Merge Cell functionality only works with __Table View Definition__.
+
+* Merge Cell functionality is only applicable to the data cells. Column header cells won't be merged.
+
 
 ## See Also
 * [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})
