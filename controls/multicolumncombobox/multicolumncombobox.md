@@ -22,18 +22,12 @@ previous_url: multicolumncombobox-overview
 
 ## Key Featues
 
-* Easily customizable appearance and theming mechanism.
+* Easily customizable appearance and theming mechanism
 * Binding to a wide set of binding sources
-* Filtering
+* Filtering that allows typing text in the text area of RadDropDownList and filtering the data in grid
+* RadMultiColumnComboBox can use the filtering, grouping and sorting functionalities that are available in the RadGridView hosted in the drop-down
 * Selection and navigation
 * Flexible API
-
-The current version has some limitations that you should consider: 
-
-* The **RadGridView** hosted in the drop-down does not allow editing operations.
-
-* The **RadGridView** hosted in the drop-down does not support filtering, grouping and sorting operations.
-
 
 
 ## Telerik UI for WinForms Learning Resources
