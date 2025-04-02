@@ -17,7 +17,7 @@ Telerik UI for WinForms are automatically added to Visual Studio 2019/2022 Toolb
       
 ## Using the Visual Studio menus
 
-1. Run Visual Studio 2019/2022.
+1. Run Visual Studio.
 
 1. Open any windows forms project/solution.
 
@@ -36,7 +36,7 @@ Telerik UI for WinForms are automatically added to Visual Studio 2019/2022 Toolb
 
 ## Using the drag-drop approach
 
-1. Run Visual Studio 2019/2022.
+1. Run Visual Studio.
 
 1. Open any windows forms project/solution.
 
