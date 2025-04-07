@@ -11,22 +11,17 @@ ticketid: 1683831
 
 ## Environment
 
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>RadRichTextEditor for WinForms</td>
-</tr>
-</tbody>
-</table>
+|Product Version|Product|Author|
+|----|----|----|
+|2025.1.211|RadRichTextEditor for WinForms|[Nadya Todorova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
-This knowledge base article also answers how to define custom dimensions of a document in RadRichTextEditor. Baically, RadRichTextEditor provides **Telerik.WinForms.Documents.Model.PaperTypes** enumeration, but it does not allow users to define custom sizes such as 3"x3" dimensions.
+This knowledge base article shows how to define custom dimensions of a document in RadRichTextEditor. Baically, RadRichTextEditor provides **Telerik.WinForms.Documents.Model.PaperTypes** enumeration, but it does not allow users to define custom sizes such as 3"x 3" dimensions.
 
 ## Solution
 
-To set a custom page size in RadRichTextEditor, such as 3"x 3", use the `ChangeSectionPageSize()` method. This method should be called after the document is loaded. Follow the steps below to implement custom page sizing:
+To set a custom page size in RadRichTextEditor, such as 3"x 3", use the `ChangeSectionPageSize()` method. This method should be called after the document is loaded. Use the following code snippet to implement custom page sizing:
 
 ````C#
 
