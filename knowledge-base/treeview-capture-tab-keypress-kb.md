@@ -16,7 +16,7 @@ When a node is selected in the RadTreeView control and the Tab key is pressed, i
 
 |Product Version|Product|Author|
 |----|----|----|
-|2025.1.211|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.1.211|RadTreeView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Solution
 To handle the Tab keypress in RadTreeView, create a custom class that inherits from `RadTreeView` and override the `IsInputKey` method. This method checks if the pressed key is the Tab key and allows you to perform a specific action if it is.
