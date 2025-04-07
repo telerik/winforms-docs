@@ -12,9 +12,9 @@ ticketid: 1651843
 
 ## Environment
 
-| Product | Version |
-| --- | --- |
-| 2024.2.514 | RadTreeView for WinForms | [Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|Product Version|Product|Author|
+|----|----|----|
+|2024.2.514|RadTreeView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
