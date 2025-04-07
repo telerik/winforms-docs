@@ -6,7 +6,7 @@ slug: common-google-cloud-overview
 position: 0
 ---
 
-## Google Cloud Overview
+# Google Cloud Overview
 
 [Google Cloud Platform](https://cloud.google.com/) is a solution which allows businesses to leverage Google's infrastructure. The platform provides different services similar to those of the other most famous and widely-used providers such as Microsoft and Amazon. This section aims to provide an overview of some of the available services and show simple scenarios on how the platform can be integrated with the **Telerik UI for WinForms** controls.
  
