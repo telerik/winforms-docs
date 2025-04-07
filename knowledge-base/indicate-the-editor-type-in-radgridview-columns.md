@@ -8,6 +8,12 @@ tags: gridview, editor, type, columns, comboboxcolumn
 res_type: kb
 ---
 
+## Environment
+
+|Product Version|Product|Author|
+|----|----|----|
+|2021.2.511|RadGridView for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
+
 ## Problem   
  You want to indicate the column type when the grid is first shown. For example, if you have **GridViewComboBoxColumn** you will want the user to know that he or she can choose from a list of predefined items.  
  
