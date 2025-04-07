@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-## RadSyntaxEditor's Properties
+# RadSyntaxEditor's Properties
 
 |**Property**|**Description**|
 |----|----|

@@ -8,7 +8,7 @@ published: True
 position: 7
 ---
 
-## Displaying Multiple RadDesktopAlert Instances on the Screen
+# Displaying Multiple RadDesktopAlert Instances on the Screen
  
 You can easily display multiple alerts on the screen thanks to the __DesktopAlertManager__ which takes care to calculate the alerts’ location so that they do not overlap. When shown on the screen, an alert is first registered in the __DesktopAlertManager__ which calculates its location based on the __ScreenPosition__ setting and the other desktop alerts shown on the screen having the same __ScreenPosition__ setting. In this way, alerts with the same screen position are stacked on the screen in the order of their appearance. When an alert is closed, all related alerts visible are automatically relocated to optimally utilize the screen estate.
 

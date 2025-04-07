@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-## Using the Space Bar
+# Using the Space Bar
 
 The space bar allows you to toggle selected items check state with a single hit. Pressing space bar selects current item if it is not selected. When current item is selected and the space bar key is pressed there are two cases:
         
