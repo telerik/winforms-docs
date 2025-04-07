@@ -8,9 +8,11 @@ tags: gridview, summary, cell, collapsed, group
 res_type: kb
 ---
 
-|Article relates to|Last modified|Product|Author|
+## Environment
+
+|Product Version|Product|Author|
 |----|----|----|
-|Q1 2012|20.07.2015|Telerik UI for WinForms|Ivan Petrov| 
+|Q1 2012|RadGridView for WinForms|[Ivan Petrov](https://www.telerik.com/blogs/author/ivan-petrov)|
 
 ## Problem
 
