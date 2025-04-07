@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-## Properties
+# Properties
 
 |**Property**|**Description**|
 |----|----|

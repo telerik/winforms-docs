@@ -8,8 +8,7 @@ published: True
 position: 9
 ---
 
-
-## Customizing composite filter dialog
+# Customizing composite filter dialog
 
 When you select the *Custom* item from the filter menu (*Available Filter* menu in Excel-like filtering), an appropriate dialog for creating a custom filter is shown. 
 

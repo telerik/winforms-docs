@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-## Design time
+# Design time
 
 You can access and modify the style for different elements in __RadCommandBar__ by selecting the element and customizing its look by the *Properties* section in Visual Studio 
 

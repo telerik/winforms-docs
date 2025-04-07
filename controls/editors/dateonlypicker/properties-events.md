@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-## Properties
+# Properties
 
 The significant properties for __RadDateOnlyPicker__ are:        
 

@@ -8,7 +8,7 @@ published: True
 position: 3 
 ---
 
-## Custom Colors
+# Custom Colors
 
 **RadColorDialog** displays a row of slots where selected custom colors can be saved:
 

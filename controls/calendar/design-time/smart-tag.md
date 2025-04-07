@@ -7,6 +7,9 @@ tags: RadCalendar, SmartTag
 published: True
 position: 2
 ---
+
+# Smart Tag
+
 The Smart Tag of __RadCalendar__ lets you quickly access common tasks involved with customizing appearance or setting the theme.
 
 >caption Figure 1: The smart tag of RadCalendar.

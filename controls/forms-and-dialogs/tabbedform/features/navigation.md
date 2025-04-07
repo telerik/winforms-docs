@@ -8,7 +8,7 @@ published: True
 position: 3
 ---
 
-## Navigation
+# Navigation
 
 When there is no enough space and not all tabs are visible, two buttons will appear. They will allow you to navigate through the tabs and select the desired one. 
 
