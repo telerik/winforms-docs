@@ -9,6 +9,12 @@ res_type: kb
 position: 0
 ---
 
+## Environment
+
+|Product Version|Product|Author|
+|----|----|----|
+|2019.3.917|RadButtonTextBox for WinForms|[Dimitar Karamfilov](https://www.telerik.com/blogs/author/dimitar-karamfilov)|
+
 ## Description
 
 This article  shows how you can create a password textbox that is capable to show the password. This is done by pressing and holding a button. Figure 1 shows the result. For this example I am using the Fluent theme and a [RadButtonTextBox]({%slug winforms/editors/buttontextbox%}).
