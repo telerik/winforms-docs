@@ -14,7 +14,9 @@ Starting with the __2025 Q1 release__, using Telerik UI for .NET WinForms withou
 A missing, expired, or invalid license will result in:
   - A watermark appearing on application startup.
   - A modal dialog appearing on application startup. Clicking the **OK** button of the dialog closes the dialog and removes the banner until the next application startup.
-  - A warning message can appear in the build log.
+  - A warning message similar to the following appearing in the build log:
+
+![warning messages](images/license-errors-warnings001.png) 
 
 ## Invalid License
 
