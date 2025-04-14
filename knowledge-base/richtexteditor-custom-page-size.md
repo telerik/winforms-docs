@@ -4,7 +4,7 @@ description: Learn how to configure a custom page size, such as 3"x3", for docum
 type: how-to
 page_title: How to Configure Custom Page Sizes in RadRichTextEditor for WinForms
 slug: radrichtexteditor-winforms-custom-page-size
-tags: radrichtexteditor, winforms, custom, page size
+tags: richtexteditor, winforms, custom, page size
 res_type: kb
 ticketid: 1683831
 ---
