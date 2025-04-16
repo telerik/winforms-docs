@@ -1,7 +1,7 @@
 ---
 title: Adding RadControls to Visual Studio Toolbox in .NET Framework Projects
 page_title: Adding RadControls to Visual Studio Toolbox
-description: Telerik UI for WinForms are automatically added to Visual Studio Toolbox during installation. But there are also two ways to manually do that.
+description: Telerik UI for WinForms is automatically added to Vthe isual Studio Toolbox during installation. But there are also two ways to manually do that.
 slug: winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox
 tags: adding,radcontrols,to,visual,studio,toolbox,net framework
 published: True
@@ -38,7 +38,7 @@ Telerik UI for WinForms are automatically added to Visual Studio 2019/2022 Toolb
 
 1. Run Visual Studio.
 
-1. Open any windows forms project/solution.
+1. Open any Windows Forms project/solution.
 
 1. Expand the Toolbox.
 
@@ -59,7 +59,7 @@ __Telerik assemblies do not appear in Visual Studio's Add reference dialog__
 
 Make sure that the Telerik WinForms controls are added in the Global Assembly Cache (GAC) as described in the [Add/Remove RadControls to the Global Assembly Cache (GAC)]({%slug winforms/installation-deployment-and-distribution/application-deploymentadd-remove-radcontrols-to-the-global-assembly-cache-(gac)%}) topic. 
 
-__Telerik assemblies do not appear in Visual Studio's Add reference dialog although they are added in the GAC__
+__Telerik assemblies do not appear in Visual Studio's Add reference dialog, although they are added in the GAC__
 
 To display your assembly in the __Add Reference__ dialog box, you can add a registry key, such as the following, which points to the location of the assembly:
 
@@ -67,7 +67,7 @@ To display your assembly in the __Add Reference__ dialog box, you can add a regi
               
 Change this according to your installation and version specifics. Restart Visual Studio .NET after you have added the key.
 
-> note You can create the this registry entry under the __HKEY_LOCAL_MACHINE__ hive. This will change the setting for all of the users on the system. If you create this registry entry under __HKEY_CURRENT_USER__, this entry will affect the setting for only the current user. 
+> note You can create this registry entry under the __HKEY_LOCAL_MACHINE__ hive. This will change the setting for all of the users on the system. If you create this registry entry under __HKEY_CURRENT_USER__, this entry will affect the setting for only the current user. 
                 
 More information about this topic you could find in Microsoft Support Center: [How to display an assembly in the "Add Reference" dialog box](http://support.microsoft.com/?kbid=306149) 
 
@@ -89,7 +89,7 @@ Below are the different kinds of occurrences and their possible fixes:
 
      * Right-click the Toolbox inside Visual Studio and click Reset
 
-* Multiple entries per control, number increasing with each start of the IDE: this is the worst scenario we have come across. All the registry entries and files on the customer machine seemed fine in this case. The only fix we were able to apply was a complete uninstall of Telerik UI for WinForms and Visual Studio 2010, followed by a clean install of the IDE and the suite.
+* Multiple entries per control, number increasing with each start of the IDE: this is the worst scenario we have come across. All the registry entries and files on the customer machine seemed fine in this case. The only fix we were able to apply was a complete uninstall of Telerik UI for WinForms and Visual Studio 2022, followed by a clean install of the IDE and the suite.
 
 ## See Also
 
