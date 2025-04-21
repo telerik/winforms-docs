@@ -146,40 +146,40 @@ Me.RadDateOnlyPicker1.NullText = "No date selected"
 
 * __ArrowButton__: Gets an instance of RadArrowButtonElement.
 
-*__CheckBox__: Gets an instance of RadCheckBoxElement.
+* __CheckBox__: Gets an instance of RadCheckBoxElement.
 
-*__CurrentBehavior__: Gets an instance of RadDateOnlyPickerCalendar.
+* __CurrentBehavior__: Gets an instance of RadDateOnlyPickerCalendar.
 
-*__AutoSelectNextPart__: This property controls whether or not the next date part will be automatically selected when the user types.
+* __AutoSelectNextPart__: This property controls whether or not the next date part will be automatically selected when the user types.
 
-*__ReadOnly__: Gets or sets a value indicating whether RadDateOnlyPicker is read-only.
+* __ReadOnly__: Gets or sets a value indicating whether RadDateOnlyPicker is read-only.
 
-*__ShowUpDown__: Indicates whether a spin box rather than a drop down calendar is displayed for editing the control's value.
+* __ShowUpDown__: Indicates whether a spin box rather than a drop down calendar is displayed for editing the control's value.
 
-* __Culture:__ Determines the language that the drop down calendar and text box will display.  See the [Internationalization]({%slug editors-dateonlypicker-internationalization%}) and [Date Formats]({%slug editors-dateonlypicker-features-date-formats%}) topic for more information.   
+* __Culture__: Determines the language that the drop down calendar and text box will display.  See the [Internationalization]({%slug editors-dateonlypicker-internationalization%}) and [Date Formats]({%slug editors-dateonlypicker-features-date-formats%}) topic for more information.   
 
-*__NullDate__: The DateOnly value assigned to the date picker when the Value is null.
+* __NullDate__: The DateOnly value assigned to the date picker when the Value is null.
 
-*__IsDropDownShown__: Gets if the dropdown is shown.
+* __IsDropDownShown__: Gets if the dropdown is shown.
 
-*__Checked__: When ShowCheckBox is true, determines that the user has selected a value.
+* __Checked__: When ShowCheckBox is true, determines that the user has selected a value.
 
-*__CustomFormat:__ A format string that determines the display of the date in the picker edit. See the [Internationalization]({%slug editors-dateonlypicker-internationalization%}) and [Date Formats]({%slug editors-dateonlypicker-features-date-formats%}) topic for more information.
+* __CustomFormat:__ A format string that determines the display of the date in the picker edit. See the [Internationalization]({%slug editors-dateonlypicker-internationalization%}) and [Date Formats]({%slug editors-dateonlypicker-features-date-formats%}) topic for more information.
  
-* __Format:__ The __DateOnlyPickerFormat__ enumeration values are __Long__, __Short__, __Time__ and __Custom__. Set __Format__ to __Custom__ to enable the __CustomFormat__ property.
+* __Format__: The __DateOnlyPickerFormat__ enumeration values are __Long__, __Short__, __Time__ and __Custom__. Set __Format__ to __Custom__ to enable the __CustomFormat__ property.
 
 > The __Time__ option of the __DateTimePickerFormat__ enumeration is not applicable for the RadDateOnlyPicker control. The __Time__ option will be ignored when set to the RadDateOnlyPicker control Format property.         
 
-* __ThemeName:__ Sets the overall look of the control. Choose from a list of predefined themes or create your own using the __Visual Style Builder__ available from the RadDateOnlyPicker's __Smart Tag__.          
+* __ThemeName__: Sets the overall look of the control. Choose from a list of predefined themes or create your own using the __Visual Style Builder__ available from the RadDateOnlyPicker's __Smart Tag__.          
 
-* __CalendarSize:__ Gets or sets the size of the **RadCalendar** in the **RadDateOnlyPicker** drop-down.
+* __CalendarSize__: Gets or sets the size of the **RadCalendar** in the **RadDateOnlyPicker** drop-down.
 
-* __CalendarLocation:__ Gets or sets the location of the drop down showing the calendar.
+* __CalendarLocation__: Gets or sets the location of the drop down showing the calendar.
 
-* __Calendar:__ Get nested RadCalendar in the popup part of the RadDateOnlyPicker.
+* __Calendar__: Get nested RadCalendar in the popup part of the RadDateOnlyPicker.
 
 
-## RadNotifyIcon's Events
+## Events
 
 |Event|Description|
 |----|----|
