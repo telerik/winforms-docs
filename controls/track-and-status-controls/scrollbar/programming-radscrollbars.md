@@ -16,7 +16,7 @@ __RadHScrollBar__ and __RadVScrollBar__ share the same properties. The only diff
 |Property|Description|
 |----|----|
 |**ScrollBarElement**|Gets the instance of RadScrollBarElement wrapped by this control. RadScrollBarElement is the main element in the hierarchy tree and encapsulates the actual functionality of both RadHScrollBar and RadVScrollBar.|
-|**ThumbLengthProportion**|ets or sets a value between 0.0 and 1.0 that indicates what part of the scrollable area can be occupied by the thumb. If the value is 0.0 then the thumb should be with length 0 but the property MinThumbLength will cause the thumb to be larger. If the value is 1.0 the the thumb takes the whole area between the two scrolling buttons. Negative value means that the thumb length should be calculated automatically based on Minimum, Maximum and LargeChange values.|
+|**ThumbLengthProportion**|Gets or sets a value between 0.0 and 1.0 that indicates what part of the scrollable area can be occupied by the thumb. If the value is 0.0 then the thumb should be with length 0 but the property MinThumbLength will cause the thumb to be larger. If the value is 1.0 the the thumb takes the whole area between the two scrolling buttons. Negative value means that the thumb length should be calculated automatically based on Minimum, Maximum and LargeChange values.|
 |**MinThumbLength**|Gets or sets the minimum length of the scrolling thumb.|
 |**ThumbLength**|Gets the length of the scrolling thumb. Thumb length is the thumb's height for vertical scroll bar and the thumb's width for horizontal scroll bar.|
 |**Minimum**|Gets or sets the lower limit for the values of the scrollable range.|
