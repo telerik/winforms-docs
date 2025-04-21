@@ -13,7 +13,7 @@ ticketid: 1677692
 
 |Product Version|Product|Author|
 |----|----|----|
-|2025.1.211|RadMaskedEditBox  for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.1.211|RadMaskedEditBox for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
