@@ -24,7 +24,7 @@ To disable the video recording button in RadWebCam and restrict the control to o
 
 ```csharp
 
-radWebCam.WebCamElement.ToggleRecordingButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+this.radWebCam.WebCamElement.ToggleRecordingButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
 
 ```
 
