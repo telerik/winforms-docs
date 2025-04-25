@@ -5,7 +5,7 @@ description: Learn how you can easily add buttons to the WinForms RadTextBox.
 slug: winforms/editors/textbox/adding-buttons-to-radtextbox
 tags: adding,buttons,to,radtextbox
 published: True
-position: 4
+position: 5
 previous_url: editors-textbox-adding-buttons-to-radtextbox
 ---
 

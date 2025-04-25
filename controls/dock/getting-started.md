@@ -11,13 +11,37 @@ previous_url: dock-getting-started
 
 # Getting Started with WinForms Dock
 
+This article shows how you can start using **RadDock**.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadDock` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.RadDock__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadDock
+
 This tutorial creates a shell for a report viewer/explorer. A __ToolWindow__ on the left represents a list of reports. The right side of the form in __RadDock__ contains three __DocumentWindows__, each representing a report. This tutorial demonstrates the layout of __ToolWindow__ and __DocumentWindows__. It also demonstrates adding a **RadTreeView** control to one of the created windows and synchronizing the active **DockWindow** with the selection in the **RadTreeView** instance. 
 
 >caption Figure 1: The final application layout.
 
 ![WinForms RadDock The final Application Layout](images/dock-getting-started003.png)
 
-## Configure the RadDock
+### Configure the RadDock
 
 1\. Drop a __RadDock__ control on the form.
 
@@ -173,7 +197,7 @@ Press __F5__ to run the application. Try experimenting with...
 | ------ | ------ |
 |The new and improved RadDock for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![WinForms RadDock Getting Started](images/dock-getting-started004.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize yoru RadDock layouts. (Runtime: 09:42)<br>[Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![WinForms RadDock Advanced Layout](images/dock-getting-started005.png)|
 
-# See Also
+## See Also
 
 * [Smart Tag]({%slug winforms/raddock/smart-tag%})
 * [Structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     

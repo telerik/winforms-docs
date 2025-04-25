@@ -10,43 +10,40 @@ position: 1
 
 # Getting Started with WinForms Spreadsheet
 
-This article explains how to add a __RadSpreadsheet__ control to a form and wire it with __UI__.
-      
+This tutorial will help you to quickly get started using the control.
 
-It contains the following sections:
+## Adding Telerik Assemblies Using NuGet
 
-* [Assembly References](#assembly-references)
+To use `RadSpreadsheet` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
 
-* [Spreadsheet and Ribbon UI](#spreadsheet-and-ribbonbar)
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
 
-## Assembly References
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
 
-The assemblies that contain the implementation of __RadSpreadsheet__ and must be referenced in order to use the control are:
+## Adding Assembly References Manually
 
-* Telerik.WinControls.RadSpreadsheet
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
 
-* Telerik.WinControls
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.ChartView__
+* __Telerik.WinControls.GridView__
+* __Telerik.WinControls.RadSpreadsheet__
+* __Telerik.WinControls.UI__
+* __Telerik.Windows.Documents.Core__
+* __Telerik.Windows.Documents.Spreadsheet__
+* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml__
+* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf__
+* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls__
+* __TelerikCommon__
 
-* TelerikCommon
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
-* Telerik.WinControls.UI
+## Defining the RadSpreadsheet
 
-* Telerik.WinControls.GridView.dll
+This section explains how to add a __RadSpreadsheet__ control to a form and wire it with __UI__.
 
-
-For export and import to XLSX:
-
-* Telerik.Windows.Zip.dll
-
-* Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
-
-To export a document to PDF, you will need to add a reference to the corresponding assembly:
-
-* Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll
-
-## Spreadsheet and RibbonBar
-
-Now add the __RadSpreadsheet__ control to the form.After that add __RadSpreadsheetRibbonBar__ to the form. Dock it to the top and then Dock the __RadSpreadsheet__ to fill the remaining space. Your layout should look like this.
+Now add the __RadSpreadsheet__ control to the form. After that add __RadSpreadsheetRibbonBar__ to the form. Dock it to the top and then Dock the __RadSpreadsheet__ to fill the remaining space. Your layout should look like this.
 
 ![WinForms RadSpreadsheet with Ribbon UI](images/spreadsheet-getting-started001.png) 
 

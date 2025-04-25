@@ -11,15 +11,34 @@ CTAControlName: ToastNotification
 
 # Getting Started with WinForms ToastNotification
 
+This tutorial will help you to quickly get started using the control.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadToastNotification` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Microsoft.Toolkit.Uwp.Notifications__
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.RadToastNotification__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadToastNotification
+
 To start using **RadToastNotificationManager** just drag it from the toolbox and drop it on the form.
 
 ### Assembly References
-
-You can find listed below the required references for using a **RadToastNotificationManager** which are automatically added after you drag the **RadToastNotificationManager** from the toolbox:
-
-* Telerik.WinControls.RadToastNotification
-
-* Microsoft.Toolkit.Uwp.Notifications
 
 >important Toast Notifications are unsupported in __Windows Server 2016__. Our Toast Notifications rely on the [NotificationData](https://learn.microsoft.com/en-us/uwp/api/windows.ui.notifications.notificationdata?view=winrt-22621) class, which triggers a runtime error when attempting to display a toast notification on __Windows Server 2016__.
 
@@ -103,7 +122,7 @@ As a result, the toast notification is successfully shown when you click the but
 If a user has Focus Assist set to Alarms only, he will only see and hear Alarm notifications.
 
 
-# See Also
+## See Also
 
 * [Notification Templates]({%slug toast-notification-templates%})
 * [Design Time]({%slug toast-notification-design-time%})

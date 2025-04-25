@@ -10,6 +10,32 @@ position: 3
 
 # Getting Started with WinForms WebCam
 
+This article will help you to quickly get started using the control.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadWebCam` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __MediaFoundation__
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.RadWebCam__
+* __Telerik.WinControls.UI__
+* __Telerik.Windows.MediaFoundation__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadWebCam
+
 This tutorial will walk you through the creation of a sample application that contains a **RadWebCam**.
 
 >caution **RadWebCam** requires .NET Framework 4.0 and cannot be used with an older version.

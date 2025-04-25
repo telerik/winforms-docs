@@ -11,6 +11,29 @@ previous_url: panels-and-labels-collapsible-panel-getting-started
 
 # Getting Started with WinForms CollapsiblePanel
 
+This tutorial will help you to quickly get started using the control.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadCollapsiblePanel` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadCollapsiblePanel
+
 __RadCollapsiblePanel__ can host many controls in its controls container area, which then can be collapsed. This way you will be able to save space in your application as the control can use as much space as it needs for its header. 
 
 In this article you will learn the basics of how to use RadCollapsiblePanel. We will recreate a scenario where you have a [RadGridView]({%slug winforms/gridview%}) which you do not want to show at all times. This is how our Form will look like when we finish if **RadCollapsiblePanel** is collapsed.

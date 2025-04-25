@@ -10,6 +10,29 @@ position: 2
 
 # Getting Started with WinForms VirtualGrid
 
+This tutorial will help you to quickly get started using the control.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadVirtualGrid` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadVirtualGrid
+
 The example bellow demonstrates how one can use __RadVirtualGrid__ with a list which contains large amount of data. The example shows how you can use the control events to add or remove rows as well.
 
 ![WinForms RadVirtualGrid Getting Started](images/virtualgrid-getting-started001.png)
@@ -283,7 +306,7 @@ End Sub
 {{endregion}}
 
 
-# See Also
+## See Also
 * [Busy Indicators]({%slug winforms/virtualgrid/busy-indicators%})
 
 * [Copy/Paste/Cut]({%slug winforms/virtualgrid/copy-paste-cut%})

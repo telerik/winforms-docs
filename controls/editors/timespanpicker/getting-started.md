@@ -10,6 +10,29 @@ position: 3
 
 # Getting Started with WinForms TimeSpanPicker
 
+This article shows how you can start using **RadTimeSpanPicker**.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadTimeSpanPicker` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadTimeSpanPicker
+
 This topic will walk you through the process of creating of __RadTimeSpanPicker__.
 
 
@@ -36,7 +59,7 @@ Me.radTimeSpanPicker1.Value = TimeSpan.FromDays(5)
 
 ![WinForms RadTimeSpanPicker Getting Started](images/radtimespanpicker-getting-started002.png)
 
-# See Also
+## See Also
 
 * [Structure]({%slug radtimespanpicker-structure%})
 * [Properties Methods and Events]({%slug radtimespanpicker-properties%})

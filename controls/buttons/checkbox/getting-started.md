@@ -10,16 +10,39 @@ position: 3
 
 # Getting Started with WinForms CheckBox
 
+This article shows how you can start using `RadCheckBox`.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadCheckBox` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadCheckBox
+
 You can add __RadCheckBox__ either at design time or at run time:
 
-## Design Time
+### Design Time
 
 1. To add a __RadCheckBox__ to your form, drag a __RadCheckBox__ from the toolbox onto the surface of the form designer.
 2. In the *Properties* section of Visual Studio you can change the displayed text next to the check-box by setting the __Text__ property.
 3. Double click the check-box in the designer in order to generate the __ToggleStateChanged__ event.
 4. Click `F5` to start the application.
 
-## Run Time
+### Run Time
 
 To programmatically add a __RadCheckBox__ to a form, create a new instance of a __RadCheckBox__, and add it to the form __Controls__ collection.
 
@@ -50,14 +73,9 @@ End Sub
 
 {{endregion}} 
 
-# See Also
+## See Also
 
 * [How to Change the CheckBox's Size]({%slug change-checkbox-size%})
-
-
-
-
-
 
 ## Telerik UI for WinForms Learning Resources
 * [Telerik UI for WinForms CheckBox Component](https://www.telerik.com/products/winforms/buttons.aspx)

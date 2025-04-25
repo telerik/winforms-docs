@@ -11,7 +11,28 @@ CTAControlName: StepProgressBar
 
 # Getting Started with WinForms StepProgressBar
 
-This tutorial will walk you through the creation of a sample application that contains __RadStepProgressBar__.
+This tutorial will help you to quickly get started using the control.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadStepProgressBar` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadStepProgressBar
 
 The following picture shows the final result produced by the code of this tutorial.
 
@@ -89,7 +110,7 @@ End Sub
 
 When you run the project, you can observe that the first step is complete. While the second one is half completed. Each step has two headers and two descriptions thus allowing you to add detailed information about each step.
 
-# See Also
+## See Also
 
 * [Layout]({%slug stepprogressbar-features-layout%})
 * [Step Progress Mode]({%slug stepprogressbar-features-progressmode%})

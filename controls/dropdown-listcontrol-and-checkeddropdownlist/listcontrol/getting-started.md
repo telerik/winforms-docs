@@ -11,10 +11,32 @@ previous_url: dropdown-and-listcontrol-listcontrol-getting-started
 
 # Getting Started with WinForms ListControl
 
+This article shows how you can start using **RadListControl**.
+
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Getting Started with RadListControl](http://www.telerik.com/videos/winforms/getting-started-with-radlistcontrol)<br>In this video, you will learn how to bind data to the new RadListControl.|![WinForms RadListControl Getting Started Tutorial](images/dropdown-and-listcontrol-listcontrol-getting-started003.png)|
 
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadListControl` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadListControl
 
 This tutorial demonstrates how to manually populate __RadListControl__ and how to react to a user's choice in code.
 
@@ -70,7 +92,7 @@ End Sub
 
 ![WinForms RadListControl Selection Event](images/dropdown-and-listcontrol-listcontrol-getting-started002.png)
 
-# See Also
+## See Also
 
 * [Adding Items Programmatically]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/adding-items-programmatically%})
 * [Data Binding]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/data-binding%})

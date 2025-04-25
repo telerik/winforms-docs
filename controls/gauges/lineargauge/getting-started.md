@@ -11,9 +11,32 @@ previous_url: lineargauge-getting-started
 
 # Getting Started with WinForms LinearGauge
 
+This article shows how you can start using **RadLinearGauge**.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadLinearGauge` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadLinearGauge
+
 This article shows how you can add the control at design time or with code
 
-## Design Time
+### Design Time
 
 When you drag a __RadLinearGauge__ from the Toolbox and then drop it on the form, the gauge gallery will offer you to pick up the desired type:
 
@@ -28,7 +51,7 @@ You can open the gallery from the smart tag as well.
 >caption Figure 2: Smart Tag Gallery Option 
 ![WinForms RadGauges LinearGauge Smart Tag Gallery Option](images/lineargauge-getting-started002.png)
 
-## Adding Items Programmatically
+### Adding Items Programmatically
 
 This example demonstrates how to programmatically setup a linear gauge.
 
@@ -123,7 +146,7 @@ radLinearGauge1.Items.Add(linearGaugeLabels1)
 
 {{endregion}} 
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/gauges/lineargauge/structure%})
 * [Smart Tag]({%slug winforms/gauges/lineargauge/design-time%})

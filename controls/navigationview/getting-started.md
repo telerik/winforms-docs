@@ -10,6 +10,29 @@ position: 2
 
 # Getting Started with WinForms NavigationView
 
+This tutorial will help you to quickly get started using the control.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadNavigationView` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadNavigationView
+
 To start using **RadNavigationView**, just drag it from the toolbox and drop it onto the form.
 
 1\. Select the RadNavigationView control and click the small arrow on the top right position in order to open the Smart Tag. It allows you to add/remove pages and adjust the settings relevant for the [NavigationView]({%slug winforms/pageview/navigationview%})	 
@@ -30,7 +53,7 @@ It is possible to add/remove pages, change the page's text, image, etc.
 
 Now, each page has an associated content area (on the right) where the developer can build whatever design is required for the page. Just select the page and drag the necessary controls.  
 
-# See Also
+## See Also
 
 * [Navigation View]({%slug winforms/pageview/navigationview%})	 
 * [Structure]({%slug navigationview-structure%})

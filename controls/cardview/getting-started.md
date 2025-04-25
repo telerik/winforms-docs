@@ -12,14 +12,34 @@ position: 3
 
 The example below demonstrates setting up __RadCardView__ to display data from the *Northwind* database.
 
-## Setting up the Form 
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadCardView` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadCardView
+
+### Setting up the Form 
 
 1. Create a new __Windows Forms Application__ project.
             
 1. Drop a __RadCardView__ control on the form.
             
-
-## Connecting to Data
+### Connecting to Data
 
 1. Open the __Smart Tag__ of the control and in the __Choose DataSource__ drop down select *Add Project Data Source..*
 ![WinForms RadCardView Choose DataSource](images/radcardview-getting-started001.png)
@@ -54,7 +74,7 @@ The example below demonstrates setting up __RadCardView__ to display data from t
 1. Press __F5__ to run the application.
 ![WinForms RadCardView Getting Started](images/radcardview-getting-started005.gif)
             
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/cardview/structure%})
 * [Design Time]({%slug winforms/cardview/design-time%})

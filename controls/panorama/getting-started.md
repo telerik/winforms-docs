@@ -12,9 +12,32 @@ previous_url: panorama-getting-started
 
 # Getting Started with WinForms Panorama
 
+This tutorial will help you to quickly get started using the control.
+
 | RELATED VIDEOS |  |
 | --- | ------ |
 |[Getting started with RadPanorama ](http://www.telerik.com/videos/winforms/radpanorama-getting-started)![WinForms RadPanorama Tutorial](images/panorama-getting-started000.png)|In this video, we are going to see what it takes to get started with the RadPanorama. RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner. This control is inspired by the Metro Start Menu screen of Windows 8.|
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadPanorama` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadPanorama
 
 This article will demonstrate how to get started with **RadPanorama**. You will be guided through the process of creating a sample application step-by-step.
 
@@ -50,7 +73,7 @@ This article will demonstrate how to get started with **RadPanorama**. You will 
 
 10\. The layout is done. You can customize each item according to your needs and also you can subscribe to the __Click__ event of each of them, in order to perform some action upon click. To customize **RadLiveTileElements**, you can use the [Live Tile Editor]({%slug winforms/panorama/live-tile-editor%}).
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/panorama/structure%})	
 * [Design Time]({%slug winforms/panorama/design-time%})		

@@ -10,12 +10,33 @@ previous_url: editors-autocompletebox-getting-started
 ---
 
 # Getting Started with WinForms AutoCompleteBox
- 
+
+This article shows how you can start using **RadAutoCompleteBox**.
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Getting Started with RadAutoCompleteBox for WinForms](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-radautocompletebox-for-winforms)<br>RadAutoCompleteBox allows the end-user to easily fill-in text thanks to auto-complete functionality and tokens of text. This behavior is similar to the “To” field of Outlook and Facebook where you are filling-in the recipients to which you are going to send a new message.|![WinForms RadAutoCompleteBox Getting Started Tutorial](images/editors-autocompletebox-getting-started004.png)|
 
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadAutoCompleteBox` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadAutoCompleteBox
 
 The __RadAutoCompleteBox__ allows your users to select multiple items from a predefined list, using auto completion as they type. You may have seen a similar type of text entry when filling in the recipient’s field, while sending messages on Facebook. __RadAutoCompleteBox__ inherits all features of [RadTextBoxControl]({%slug winforms/editors/textboxcontrol%}).
         
@@ -68,7 +89,7 @@ Me.RadAutoCompleteBox1.ShowRemoveButton = False
 ![WinForms RadAutoCompleteBox Tokenized Items Not showing the Close Button](images/editors-autocompletebox-getting-started002.png)
 
 
-# See Also
+## See Also
 
 * [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%})
 * [Creating Custom Blocks]({%slug winforms/editors/autocompletebox/creating-custom-blocks%})

@@ -11,9 +11,33 @@ previous_url: gridview-getting-started
 
 # Getting Started with WinForms GridView
 
+This article shows how you can start using **RadGridView**.
+
 | RELATED VIDEOS |  
 | ------ |
 |[RadGridView for WinForms Webinar](https://www.telerik.com/videos/winforms/radgridview-for-winforms-webinar)<br>Lino Tadros from Falalel provides an in-depth overview of Telerik's RadGridView for WinForms (Runtime: 01:45:11)|
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadGridView` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.GridView__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadGridView
 
 The following tutorial demonstrates how to create a hierarchical grid that presents two tables: *Product Category* and *Product Information*.
 
@@ -21,7 +45,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 ![WinForms RadGridView Hierarchical Grid With Two Table](images/grid-getting-started001.png)
 
-## Setting up the Form
+### Setting up the Form
 
 1. Create a new __Windows Forms Application__ project.
 
@@ -29,7 +53,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 1. In the __Properties__ window for __RadGridView__, set the `RadGridView.Dock` property to *Fill*.
 
-## Connecting to Data
+### Connecting to Data
 
 1. In the __Properties__ window for __RadGridView__, locate the `DataSource` property drop-down.
 
@@ -86,7 +110,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
     ![WinForms RadGridView NwindDataSet](images/grid-getting-started005.png)
 
-## Setting Properties
+### Setting Properties
 
 1. In the __Properties__ window for __RadGridView__, select the `DataMember` property.
 
@@ -106,7 +130,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 1. Press __F5__ to run the application. Notice that the grid displays the product categories first. Each category has an icon that you can click to expand that category and show a child template with the corresponding products.
 
-## See Also
+### See Also
 
 * [Property Builder]({%slug winforms/gridview/design-time-support/property-builder%})
 

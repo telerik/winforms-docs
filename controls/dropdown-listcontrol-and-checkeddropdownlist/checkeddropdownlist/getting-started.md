@@ -10,7 +10,30 @@ previous_url: dropdown-and-listcontrol-getting-started
 ---
 
 # Getting Started with WinForms CheckedDropDownList
- 
+
+This article shows how you can start using **RadCheckedDropDownList**.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadCheckedDropDownList` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadCheckedDropDownList
+
 The following tutorial demonstrates how to populate __RadCheckedDropDownList__ and how to react to a user's choice in code.
 
 >caption Figure 1: Adding items at design time
@@ -55,7 +78,7 @@ End Sub
 
 ![WinForms RadCheckedDropDownList Handling ItemCheckedChanged](images/dropdown-and-listcontrol-checkeddropdownlist-getting-started002.png)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/control-element-structure%})
 * [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/design-time%})

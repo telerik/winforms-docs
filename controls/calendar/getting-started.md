@@ -11,8 +11,30 @@ previous_url: calendar-getting-started
 
 # Getting Started with WinForms Calendar
 
+This tutorial will demonstrate adding selected and special days to the calendar at design time, then iterating and displaying those dates at runtime.
 
-This tutorial will demonstrate adding selected and special days to the calendar at design time, then iterating and displaying those dates at runtime.![WinForms RadCalendar Getting Started](images/calendar-getting-started004.gif)
+![WinForms RadCalendar Getting Started](images/calendar-getting-started004.gif)
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadCalendar` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadCalendar
 
 1. In a new Windows Application form drop a __RadCalendar__ control. Set the __AllowMultipleSelect__ property to *true*.
           
