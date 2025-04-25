@@ -23,13 +23,11 @@ This article explains how to disable video recording in RadWebCam and use only s
 
 To disable the video recording button in RadWebCam and specify the control to only use the snapshot feature, set the visibility of the recording button to `Collapsed`. This action hides the recording button from the UI.
 
-```csharp
+````C#
 
 this.radWebCam1.WebCamElement.ToggleRecordingButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
 
-```
+````
 
 ## See Also
-
-- [RadWebCam Overview](https://docs.telerik.com/devtools/winforms/controls/radwebcam/overview)
-- [Customizing RadWebCam UI](https://docs.telerik.com/devtools/winforms/controls/radwebcam/customizing-appearance)
+* [Overview](https://docs.telerik.com/devtools/winforms/controls/webcam/overview)
