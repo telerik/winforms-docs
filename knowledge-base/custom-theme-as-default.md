@@ -16,7 +16,7 @@ res_type: kb
 
 ## Description
 
-As you may already know, Telerik Presentation Framework allows users to customize any pre-defined themes that Telerik UI for WinForms offers. We provide an opportunity thanks to [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}) tool to customize the appearance of our controls to achieve the desired style for your application.
+Telerik Presentation Framework allows users to customize any pre-defined themes that Telerik UI for WinForms offers. We provide an opportunity thanks to [Visual Style Builder]({%slug winforms/tools/visual-style-builder%}) tool to customize the appearance of our controls to achieve the desired style for your application.
 
 Let's pretend, we already have applied customizations and there is a custom theme already setup. For the perpose of this example, I prepared my custom **Windows11CompactLightBlue** theme which overrides the **Windows11Compact** theme. I generate variation by using [Windows11CompactTheme Blending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/windows11-themes-blending%}) feature. I created a theme variation and use LightBlue accent color to provide my theme new fresh look. Now, it is time to start using my custom theme.
 
@@ -89,6 +89,8 @@ namespace Windows11LightBlueClassLibrary
 
 ````
 
+>important It is important to specify the exact TelerikWinFormsThemeAssemblyName, Version, Culture and PublicKeyToken values. These values defined in the app.config should strictly match the same values from the custom theme assembly in order to make sure that the theme should be correctly applied at design time as well as at run time.
+
 5. Build the whole solution. Now, we can find our Windows11CompactLightBlue theme in the VS Toolbox at design time and simply drag-drop it onto RadForm as any other component. You can see the Windows11LightBlue instance in the compoenent tray. From now on, any Telerik control that you add to RadForm would have the custom theme applied automatically.
 
 ![custom-theme-as-default002](images/custom-theme-as-default002.png)
@@ -114,11 +116,11 @@ internal static class Program
 
 ````
 
-We are finished :partying_face:!  The Windows11CompactLightBlue theme is now used as default for entire application both at design time or run time.
-
+We are finished :partying_face:!  The Windows11CompactLightBlue theme is now used as default for entire application both at design time and run time.
 
 > [!TIP] 
-> Complete projects on .NET9 and NET Framework 48 are available in our SDK repo [here].
+> Complete projects in .NET9 and NET Framework 48 are available in our SDK repo [here](https://github.com/telerik/winforms-sdk/tree/master/Themes/CustomThemeAsDefault).
+
 
 ## See Also
 
