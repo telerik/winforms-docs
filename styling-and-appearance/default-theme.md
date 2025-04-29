@@ -18,8 +18,6 @@ All RadControls from the Telerik UI for WinForms suite get the **ControlDefault*
 
 ![default-theme002](images/default-theme002.png)
 
-
-
 ## Fluent theme as Default
 
 As of **R1 2021**, Telerik UI for WinForms starts using **Fluent** theme as default as it provides more modern and fresh look. If you create a new Telerik Windows Forms Application, then drag any RadControl from the Toolbox and drop it onto RadForm, the **Fluent** theme should be automatically applied .
@@ -93,7 +91,9 @@ It is also possible to set a client's custom theme as default theme in an applic
 
 >note To use a custom theme as default it is necessary to use the assembly fully qualified name inside the App.config. Also, it is important to create an instance of the newly created theme. 
 
-Imagine a client creates a theme with name **LightCoral**. Besides the theme name, the App.config will also need the theme type and theme assembly name. 
+Let's say there is a custom **Windows11CompactLightBlue** theme created, which is a variation of the basic Windows11Compact theme. Besides the theme name, the App.config will also need the theme type and theme assembly name, version, culture, and public key token:
+
+>caption Design time - Custom Windows11CompactLightBlue theme
 
 ![default-theme006](images/default-theme006.png)
 
@@ -104,7 +104,6 @@ Imagine a client creates a theme with name **LightCoral**. Besides the theme nam
   <startup>
   </startup>
   <appSettings>
-    <!--define the custom Windows11CompactLightBlue for the entire application-->
     <add key="TelerikWinFormsThemeName" value="Windows11CompactLightBlue" />
     <add key="TelerikWinFormsThemeType" value="Windows11LightBlueClassLibrary.Windows11LightBlue"/>
     <add key="TelerikWinFormsThemeAssemblyName" value="Windows11LightBlueClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
@@ -113,7 +112,8 @@ Imagine a client creates a theme with name **LightCoral**. Besides the theme nam
 
 ````
 
-Thus, if you drag a new **RadButton** from the Toolbox, it will be with the LightCoral theme applied. 
+>important Full tutorial demonstrating how the above examle is setup is available in the following KB article: [Custom theme as default](https://testdocs.telerik.com/devtools/winforms/knowledge-base/custom-theme-as-default).
+Complete projects in .NET9 and NET Framework 48 are available in our SDK repo [here](https://github.com/telerik/winforms-sdk/tree/master/Themes/CustomThemeAsDefault).
 
 ## See Also
 
