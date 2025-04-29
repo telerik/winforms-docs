@@ -10,6 +10,8 @@ position: 0
 
 # Elevation
 
+>important Please note that [Bing Maps](https://www.bingmapsportal.com/) __will be deprecated effective June 30, 2025__. As an alternative, users can refer to the [SDK example available in our GitHub repository](https://github.com/telerik/winforms-sdk/tree/master/Map/Custom%20Azure%20Provider), which demonstrates how to create a __custom provider__ using the __Azure Maps API__. A __valid Azure Maps subscription key__ is required to use this functionality.
+
 The Bing Elevation service will enable you to query for elevation information for a set of points, polyline or a region on the Earth described by latitude and longitude pairs.
 
 To use the Elevation API, it is necessary to create an __ElevationRequest__.
