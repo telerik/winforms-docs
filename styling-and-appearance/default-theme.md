@@ -112,7 +112,7 @@ Let's say there is a custom **Windows11CompactLightBlue** theme created, which i
 
 ````
 
->important Full tutorial demonstrating how the above examle is setup is available in the following KB article: [Custom theme as default](https://testdocs.telerik.com/devtools/winforms/knowledge-base/custom-theme-as-default).
+>important Full tutorial demonstrating the exact setup of the above example is available in the following KB article: [Custom theme as default](https://testdocs.telerik.com/devtools/winforms/knowledge-base/custom-theme-as-default).
 Complete projects in .NET9 and NET Framework 48 are available in our SDK repo [here](https://github.com/telerik/winforms-sdk/tree/master/Themes/CustomThemeAsDefault).
 
 ## See Also
