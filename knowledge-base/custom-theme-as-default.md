@@ -4,7 +4,7 @@ description: Learn how to use a custom defined theme as default for the Entire A
 type: how-to
 page_title: How to Use a Custom Theme as Default for the Entire Application
 slug: custom-theme-as-default
-tags: custom, theme, default, application, winforms, telerik
+tags: common, theme, default, application, winforms, telerik
 res_type: kb
 ---
 
