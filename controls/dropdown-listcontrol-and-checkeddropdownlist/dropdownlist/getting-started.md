@@ -9,14 +9,35 @@ position: 3
 previous_url: dropdown-and-listcontrol-dropdownlist-getting-started
 ---
 
-# Getting Started
- 
+# Getting Started with WinForms DropDownList
+
+This article shows how you can start using **RadDropDownList**.
+
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Getting Started with RadDropDownList](http://tv.telerik.com/watch/winforms/getting-started-with-raddropdownlist)
 In this video, you will learn how to bind data to the new RadDropDownList control.|![WinForms RadDropDownList Getting Started Tutorial](images/dropdown-and-listcontrol-dropdownlist-getting-started003.png)|
 
-## 
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadDropDownList` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadDropDownList
 
 The following tutorial demonstrates how to add items and images to a __RadDropDownList__ and how to retrieve selected text and images.
 

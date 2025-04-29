@@ -11,16 +11,39 @@ previous_url: buttons-repeatbutton-working-with-radrepeatbutton
 
 # Getting Started with WinForms RepeatButton
 
+This article shows how you can start using `RadRepeatButton`.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadRepeatButton` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadRepeatButton
+
 You can add __RadRepeatButton__ either at design time or at run time:
 
-## Design Time
+### Design Time
 
 1. To add a __RadRepeatButton__ to your form, drag a __RadRepeatButton__ from the toolbox onto the surface of the form designer.
 2. In the *Properties* section in Visual Studio you can change the __Text__ property.
 3. Double click the __RadRepeatButton__ at design time in order to generate the __Click__ event handler.
 4. Click `F5` to start the application.
 
-## Run Time
+### Run Time
 
 To programmatically add a __RadRepeatButton__ to a form, create a new instance of a __RadRepeatButton__, and add it to the form __Controls__ collection.
 
@@ -44,7 +67,7 @@ Me.Controls.Add(repeatButton)
 
 {{endregion}} 
 
-# Working with RadRepeatButton
+### Working with RadRepeatButton
 
 In addition to the standard properties shared by all buttons, notice a new property named __Interval__. This property determines the time, in milliseconds, between button click events after the control begins repeating events. The default value is 33.
 

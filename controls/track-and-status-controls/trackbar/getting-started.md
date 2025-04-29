@@ -11,6 +11,29 @@ previous_url: track-and-status-controls-trackbar-getting-started
 
 # Getting Started with WinForms TrackBar
 
+This tutorial will help you to quickly get started using the control.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadTrackBar` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadTrackBar
+
 This tutorial demonstrates connecting a **RadTrackBar** to a **RadTextBox** control. Setting the track bar slider position changes the value in the text box.
         
 
@@ -56,7 +79,7 @@ End Sub
 
 ![WinForms RadTrackBar Getting Started](images/track-and-status-controls-trackbar-getting-started001.png)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/track-and-status-controls/trackbar/control-element-structure%})	
 * [Design Time]({%slug winforms/track-and-status-controls/trackbar/design-time%}) 

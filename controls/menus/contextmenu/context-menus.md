@@ -12,7 +12,7 @@ previous_url: menus-context-menu-getting-started
 
 # WinForms ContextMenu Overview
 
-To implement context menus use __RadContextMenu__ in your application. __RadContextMenu__ is a non-visual component that sits in the component tray located below the form design surface. __RadContextMenu__, like __RadMenu__, can be themed and has **Items** collection that accepts __RadMenuItem__, __RadMenuComboBoxItem__, __RadMenuSeparatorItem__ and __RadMenuContextItem__. You can subscribe to the **Click** event of each menu item and execute the desired logic.
+To add context menus in your application, you can use __RadContextMenu__. The control is a non-visual component that sits in the component tray located below the form design surface. __RadContextMenu__, like __RadMenu__, can be themed and has **Items** collection that accepts __RadMenuItem__, __RadMenuComboBoxItem__, __RadMenuSeparatorItem__ and __RadMenuContextItem__. You can subscribe to the **Click** event of each menu item and execute the desired logic.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}

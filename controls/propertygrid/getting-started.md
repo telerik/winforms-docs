@@ -11,9 +11,32 @@ previous_url: propertygrid-getting-started
 
 # Getting Started with WinForms PropertyGrid
 
+This tutorial will help you to quickly get started using the control.
+
 | RELATED VIDEOS |  |
 | ----- | --- |
 |RadPropertyGrid provides an easy and versatile approach to processing data objects' properties. Utilizing its autogeneration features and the intuitive custom editors apabilities, users would be able either to display data in a way that best fits their needs or modify it with minimal effort. RadPropertyGrid can be bound to an item with just a single line of code and you may start exploring or editing its properties. The property editor controls are auto generated - text fields for string properties, DateTimePickers for dates, ComboBoxes for enums and Booleans, RadColorPicker for colors. In addition, RadPropertyGrid allows flexible manual settings and customization of editors. RadPropertyGrid also supports scrolling operations via touch interface.|[WinForms RadPropertyGrid  Getting started with RadPropertyGrid ](http://tv.telerik.com/watch/winforms/getting-started-with-teleriks-radpropertygrid)<br>![WinForms RadPropertyGrid Getting Started Overview](images/propertygrid-getting-started000.png)|
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadPropertyGrid` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadPropertyGrid
 
 The following example will demonstrate the basic functionalities of **RadPropertyGrid** control. Let’s start with adding **RadPropertyGrid** control to a **RadForm**. In the code behind we will set the **SelectedObject** property of the control to an object, which properties we  want to display. For the sake of this example we will use the element of the control – **PropertyGridElement**. 
 
@@ -216,7 +239,7 @@ Me.RadPropertyGrid1.ItemSpacing = 1
 
 At the end, if you want to expand all groups automatically, you can set the **AutoExpandGroups** to *true* (which is also the default setting).
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/propertygrid/structure%})
 * [Design Time]({%slug winforms/propertygrid/design-time%})

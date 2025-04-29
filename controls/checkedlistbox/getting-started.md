@@ -13,14 +13,37 @@ previous_url: checkedlistbox-getting-started
 
 You can add __RadCheckedListBox__ either at design time or at run time:
 
-## Design Time
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadCheckedListBox` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadCheckedListBox
+
+You can add __RadCheckedListBox__ either at design time or at run time:
+
+### Design Time
 
 1. To add a __RadCheckedListBox__ to your form, drag a __RadCheckedListBox__ from the toolbox onto the surface of the form designer.
 2. In the *Properties* section in Visual Studio open the __Items__ property.
 3. Add several items by clicking the `Add` button.
 4. Click `F5` to start the application.
 
-## Run Time
+### Run Time
 
 To programmatically add a __RadCheckedListBox__ to a form, create a new instance of a __RadCheckedListBox__, and add it to the form __Controls__ collection.
 

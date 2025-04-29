@@ -11,6 +11,29 @@ previous_url: eidtors-popupeditor-getting-started
 
 # Getting Started with WinForms PopupEditor
 
+This article shows how you can start using **RadPopupEditor**.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadPopupEditor` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadPopupEditor
+
 This article shows how you can start using __RadPopupEditor__. Go ahead and add __RadPopupEditor__ and __RadPopupContainer__ to a form. The result should look like in Figure 1.
       
 >caption Figure 1: RadPopupEditor and RadPopupCintainer at design time.
@@ -69,7 +92,7 @@ This way when __Submit__ is pressed the name will be displayed in the control's 
 
 ![WinForms RadPopupEditor Getting Started](images/eidtors-popupeditor-getting-started003.gif)
 
-# See Also
+## See Also
 
 * [How to Use RadPopupEditor as a Custom Editor in RadGridView]({%slug use-popup-editor-as-gridview-editor%})
 

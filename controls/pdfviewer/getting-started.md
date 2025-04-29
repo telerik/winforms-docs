@@ -11,9 +11,35 @@ previous_url: pdfviewer-getting-started
 
 # Getting Started with WinForms PdfViewer
 
+This tutorial will help you to quickly get started using the control.
+
 | RELATED VIDEOS |  |
 | ------ | ------ |
 |[Getting Started with the WinForms RadPdfViewer](http://tv.telerik.com/watch/radcontrols-for-winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox. Thanks to its built-in UI virtualization, RadPdfViewer delivers a performant solution in every scenario. This component will come as a nice addition to your Content Management Systems and Reporting applications, let’s see what __RadPdfViewer__ provides as a feature set.|![WinForms RadPdfViewer Tutorial](images/pdfviewer-getting-started003.png)|
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadPdfViewer` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.PdfViewer__
+* __Telerik.WinControls.UI__
+* __Telerik.Windows.Documents.Core__
+* __Telerik.Windows.Documents.Fixed__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadPdfViewer
 
 This article will help you quickly get started with __RadPdfViewer__. To start off, drag and drop __RadPdfViewer__ the control from the toolbox to your form. 
 
@@ -142,7 +168,7 @@ If you add the __RadPdfViewer__ at run time you need to add references to the fo
 
 * Telerik.Windows.Zip.dll
 
-# See Also
+## See Also
 
 * [Logical Structure]({%slug winforms/pdfviewer/structure/logical-structure%})
 * [Visual Structure]({%slug winforms/pdfviewer/structure/visual-structure%})

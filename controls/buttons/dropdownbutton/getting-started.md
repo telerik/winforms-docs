@@ -10,15 +10,38 @@ position: 3
 
 # Getting Started with WinForms DropDownButton
 
+This article shows how you can start using `RadDropDownButton`.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadDropDownButton` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadDropDownButton
+
 You can add __RadDropDownButton__ either at design time or at run time:
 
-## Design Time
+### Design Time
 
 1. To add a __RadDropDownButton__ to your form, drag a __RadDropDownButton__ from the toolbox onto the surface of the form designer.
 2. Like a standard button, you can control the displayed text by setting the __Text__ property.
 3. Unlike a standard button, __RadDropDownButton__ displays drop-down items when clicked. So handling the __Click__ event of this button is not appropriate. Instead, work directly with the events for each item.
 
-## Run Time
+### Run Time
 
 To programmatically add a __RadDropDownButton__ to a form, create a new instance of a __RadDropDownButton__, and add it to the form __Controls__ collection.
 
@@ -109,7 +132,7 @@ End Namespace
 {{endregion}} 
  
 
-## Displaying Images with Items
+### Displaying Images with Items
 
 You can display images and text on your menu items.
 
@@ -119,14 +142,9 @@ To add an image to your menu item, click in the __Image__ property of the __RadM
 
 ![WinForms RadButtons buttons-dropdownbutton-working-with-raddropdownbutton-items 004](images/buttons-dropdownbutton-working-with-raddropdownbutton-items004.png)
 
-## Using the Click Event
+### Using the Click Event
 
 To handle the __Click__ event of individual RadMenuItems on the drop down menu at Design Time, locate the  __RadMenuItem__ in the drop down list in the __Properties__ window of the Windows Form designer. Click the events button, then double-click the __Click__ event to generate an event handler. Then fill in your event-handling code.
-
-
-
-
-
 
 
 ## Telerik UI for WinForms Learning Resources

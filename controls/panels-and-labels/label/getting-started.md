@@ -11,19 +11,42 @@ previous_url: panels-and-labels-label-programming-radlabel
 
 # Getting Started with WinForms Label
 
-You can add a **Radlabel** either at design time or at run-time:
+This tutorial will help you to quickly get started using the control.
+
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadLabel` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadLabel
+
+You can add a **RadLabel** either at design time or at run-time:
 
 ## Design Time
 
-1. To add a **Radlabel** to your form, drag a **Radlabel** from the toolbox onto the surface of the form designer.
-2. In the *Properties* section in Visual Studio change the __Text__ property of **Radlabel**.
+1. To add a **RadLabel** to your form, drag a **RadLabel** from the toolbox onto the surface of the form designer.
+2. In the *Properties* section in Visual Studio change the __Text__ property of **RadLabel**.
 4. Click `F5` to start the application.
 
 ## Run Time
 
-To programmatically add a **Radlabel** to a form, create a new instance of a **Radlabel**, and add it to the form`s __Controls__ collection. Change its **Text** and **ForeColor** properties.
+To programmatically add a **RadLabel** to a form, create a new instance of a **RadLabel**, and add it to the form`s __Controls__ collection. Change its **Text** and **ForeColor** properties.
 
-#### Adding a Radlabel at Run-time 
+#### Adding a RadLabel at Run-time 
 
 {{source=..\SamplesCS\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.cs region=AddLabel}} 
 {{source=..\SamplesVB\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.vb region=AddLabel}}
@@ -63,7 +86,7 @@ The example below has the BackgroundImage property set to "BlueHills.jpg" (avail
 >caption Figure 1: RadLabel BackgroundImage
 ![WinForms RadLabel BackgroundImage](images/panels-and-labels-label-programming-radlabel001.png)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/panels-and-labels/label/design-time%})
 * [Structure]({%slug winforms/panels-and-labels/label/structure%})

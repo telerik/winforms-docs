@@ -5,7 +5,7 @@ description: Get familiar the most commonly used properties and events of WinFor
 slug: winforms/editors/textbox/programming-radtextbox
 tags: programming,radtextbox
 published: True
-position: 3
+position: 4
 previous_url: editors-textbox-programming-radtextbox
 ---
 

@@ -13,7 +13,28 @@ previous_url: dataentry-overview-getting-started
 
 This tutorial demonstrates how bind __RadDataEntry__ to business object and to a collection of objects.
 
-## Binding RadDataEntry to a single object
+## Adding Telerik Assemblies Using NuGet
+
+To use `RadDataEntry` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+
+Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
+
+>tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+
+## Adding Assembly References Manually
+
+When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
+
+* __Telerik.Licensing.Runtime__
+* __Telerik.WinControls__
+* __Telerik.WinControls.UI__
+* __TelerikCommon__
+
+The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
+## Defining the RadDataEntry
+
+### Binding RadDataEntry to a single object
 
 1\. Place a __RadDataEntry__ control on a form. 
 
@@ -185,7 +206,7 @@ Me.radDataEntry1.DataSource = New Employee() With { _
 
 >note  In case you want to be notified for changes made on the data item, the class Employee should implement [INotifyPropertyChanged ]( http://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged%28v=vs.110%29.aspx ) Interface and raise the  __PropertyChanged__  event every time a property value changes.
  
-##  Binding RadDataEntry to collection from objects
+###  Binding RadDataEntry to collection from objects
       
 
 The following tutorial will demonstrate how to bind __RadDataEntry__ to a collection of objects and navigate through it. In order to navigate through the collection we will use  [RadBindingNavigator]({%slug winforms/bindingnavigator%}). __RadBindingNavigator__ is designed to use as data source a [ BindingSource ]( http://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource%28v=vs.110%29.aspx ) component. 
@@ -279,7 +300,7 @@ Me.radBindingNavigator1.BindingSource = Me.bindingSource1
 
 >note **RadDataEntry** allows you to set the **DataSource** property at design time as well, e.g. to a **BindingSource** that is available. Thus, the respective editors will be generated inside **RadDataEntry**.
 
-# See Also
+## See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
  * [Properties, events and attributes]({%slug  winforms/dataentry/properties,-events-and-attributes%})
