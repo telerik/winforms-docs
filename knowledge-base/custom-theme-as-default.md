@@ -48,6 +48,7 @@ namespace Windows11LightBlueClassLibrary
         {
             ThemeRepository.RegisterTheme(this);
         }
+
         public override void Load()
         {
             if (!loaded || this.IsDesignMode)
@@ -57,6 +58,7 @@ namespace Windows11LightBlueClassLibrary
                 this.LoadResource(resourceAssembly, "Windows11LightBlueClassLibrary.Windows11CompactLightBlue.tssp");
             }
         }
+
         public override string ThemeName
         {
             get { return "Windows11CompactLightBlue"; }
@@ -71,7 +73,7 @@ namespace Windows11LightBlueClassLibrary
 
 ![custom-theme-as-default001](images/custom-theme-as-default001.png)
 
-4. Once the Windows11LightBlueClassLibrary gets ready, we should define the custom Windows11CompactLightBlue theme as default in the entire application. This can be done inside the App.config file of our application. For more information, follow the instrucions defined here: [Custom theme as Default](https://docs.telerik.com/devtools/winforms/styling-and-appearance/default-theme#custom-theme-as-default)
+4.Once the Windows11LightBlueClassLibrary gets ready, we should define the custom Windows11CompactLightBlue theme as default in the entire application. This can be done inside the App.config file of our application. For more information, follow the instrucions defined here: [Custom theme as Default](https://docs.telerik.com/devtools/winforms/styling-and-appearance/default-theme#custom-theme-as-default)
 
 ````XML
 
@@ -89,13 +91,13 @@ namespace Windows11LightBlueClassLibrary
 
 ````
 
->important It is important to specify the exact TelerikWinFormsThemeAssemblyName, Version, Culture and PublicKeyToken values. These values defined in the app.config should strictly match the same values from the custom theme assembly in order to make sure that the theme should be correctly applied at design time as well as at run time.
+>note It is important to specify the exact **TelerikWinFormsThemeAssemblyName**, **Version**, **Culture** and **PublicKeyToken** values. These values defined in the app.config should strictly match the same values from the custom theme assembly in order to make sure that the theme should be correctly applied at design time as well as at run time.
 
-5. Build the whole solution. Now, we can find our Windows11CompactLightBlue theme in the VS Toolbox at design time and simply drag-drop it onto RadForm as any other component. You can see the Windows11LightBlue instance in the compoenent tray. From now on, any Telerik control that you add to RadForm would have the custom theme applied automatically.
+5.Build the whole solution. Now, we can find our Windows11CompactLightBlue theme in the VS Toolbox at design time and simply drag-drop it onto RadForm as any other component. You can see the Windows11LightBlue instance in the compoenent tray. From now on, any Telerik control that you add to RadForm would have the custom theme applied automatically.
 
 ![custom-theme-as-default002](images/custom-theme-as-default002.png)
 
-6. If you do not want to add the theme at design time, you can create an instance of the theme in the start up of the application, for example in Program.cs:
+6.If you do not want to add the theme at design time, you can create an instance of the theme in the start up of the application, for example in Program.cs:
 
 ````C#
 
@@ -116,9 +118,8 @@ internal static class Program
 
 ````
 
-We are finished :partying_face:!  The Windows11CompactLightBlue theme is now used as default for entire application both at design time and run time.
+We are finished! The Windows11CompactLightBlue theme is now used as default for entire application both at design time and run time.
 
-> [!TIP] 
 > Complete projects in .NET9 and NET Framework 48 are available in our SDK repo [here](https://github.com/telerik/winforms-sdk/tree/master/Themes/CustomThemeAsDefault).
 
 
