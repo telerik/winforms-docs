@@ -32,25 +32,25 @@ In the following tutorial we will demonstrate how to set-up your license key in 
 
 1. On the Telerik UI for .NET WinForms row, click the **View key** link in the **SCRIPT KEY** column. Copy only the string in the first Telerik.Licensing.EvidenceAttribute("key"). 
 
-![copy-license-key](images/add-license-key-openedge.png)
+	![copy-license-key](images/add-license-key-openedge.png)
 
 1. Now we need to register the copied license key above.
 
-````ABL
+	````ABL
 
-CONSTRUCTOR PUBLIC Form1 (  ):        
-	// ActivePerpetual script key	
-	Telerik.Licensing.TelerikLicensing:Register("Your License Key").
-	
-	InitializeComponent().
+	CONSTRUCTOR PUBLIC Form1 (  ):        
+		// ActivePerpetual script key	
+		Telerik.Licensing.TelerikLicensing:Register("Your License Key").
+		
+		InitializeComponent().
 
-	THIS-OBJECT:ComponentsCollection:Add(THIS-OBJECT:components).
-	CATCH e AS Progress.Lang.Error:
-		UNDO, THROW e.
-	END CATCH.
+		THIS-OBJECT:ComponentsCollection:Add(THIS-OBJECT:components).
+		CATCH e AS Progress.Lang.Error:
+			UNDO, THROW e.
+		END CATCH.
 
-END CONSTRUCTOR.
-````
+	END CONSTRUCTOR.
+	````
 
 1. Add a reference to the `Telerik.Licensing.Runtime.dll`.
 
