@@ -24,6 +24,8 @@ This tutorial demonstrates how draw rectangle and ellipse shapes in the WinForms
 
 ## Solution 
  
+>important Please note that [Bing Maps](https://www.bingmapsportal.com/) __will be deprecated effective June 30, 2025__. As an alternative, users can refer to the [SDK example available in our GitHub repository](https://github.com/telerik/winforms-sdk/tree/master/Map/Custom%20Azure%20Provider), which demonstrates how to create a __custom provider__ using the __Azure Maps API__. A __valid Azure Maps subscription key__ is required to use this functionality.
+ 
 Telerik UI for WinForms suite does not provide MapRectangle and MapEllipse shapes in RadMap out of the box. However, you can create your own MapRectangle and MapEllipse classes that inherit MapPoint and add your custom logic. Then you can use them as follows: 
 
 ````C#

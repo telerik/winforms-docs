@@ -23,6 +23,8 @@ This article shows how to handle this unexpected behavior and load the map tiles
 
 ## Solution
 
+>important Please note that [Bing Maps](https://www.bingmapsportal.com/) __will be deprecated effective June 30, 2025__. As an alternative, users can refer to the [SDK example available in our GitHub repository](https://github.com/telerik/winforms-sdk/tree/master/Map/Custom%20Azure%20Provider), which demonstrates how to create a __custom provider__ using the __Azure Maps API__. A __valid Azure Maps subscription key__ is required to use this functionality.
+
 **BingRestMapProvider** internally loads tile data from the [Bing Maps](https://www.bingmapsportal.com/) REST service which requires **TLS 1.2** coming automatically with .NET Framework 4.7. It is necessary to ensure the version explicitly by setting the System.Net.ServicePointManager.**SecurityProtocol** property to SecurityProtocolType.**Tls12**. More information is available here: [Transport Layer Security (TLS) best practices with the .NET Framework](https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls).
 
 

@@ -10,6 +10,8 @@ position: 1
 
 # Tiles
 
+>important Please note that [Bing Maps](https://www.bingmapsportal.com/) __will be deprecated effective June 30, 2025__. As an alternative, users can refer to the [SDK example available in our GitHub repository](https://github.com/telerik/winforms-sdk/tree/master/Map/Custom%20Azure%20Provider), which demonstrates how to create a __custom provider__ using the __Azure Maps API__. A __valid Azure Maps subscription key__ is required to use this functionality.
+
 [Bing Maps](https://www.bingmapsportal.com/) provide a world map that users can easily pan and zoom. In order to achieve smooth users interaction, the map is pre-rendered at many detailed levels where each level is cut into tiles of 256 x 256 pixels each. Each tile is given XY coordinates ranging from (0, 0) in the upper left to (2<sup>level</sup>–1, 2<sup>level</sup>–1) in the lower right. For example, at level 3 the tile coordinates range from (0, 0) to (7, 7) as follows:
 
 >caption Figure 1: Tile XY coordinates at level 3

@@ -10,6 +10,8 @@ position: 2
 
 # Search
 
+>important Please note that [Bing Maps](https://www.bingmapsportal.com/) __will be deprecated effective June 30, 2025__. As an alternative, users can refer to the [SDK example available in our GitHub repository](https://github.com/telerik/winforms-sdk/tree/master/Map/Custom%20Azure%20Provider), which demonstrates how to create a __custom provider__ using the __Azure Maps API__. A __valid Azure Maps subscription key__ is required to use this functionality.
+
 __RadMap__ allows you to implement search functionality, that will let the user search for a specific location on the map. The search is performed through an __IMapSearchProvider__, which communicates with the respective map provider's services. __BingRestMapProvider__ implements the __IMapSearchProvider__ interface.
 
 >caption Figure 1: Bing search
