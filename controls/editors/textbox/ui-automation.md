@@ -51,7 +51,7 @@ The table below outlines the __UI Automation__ properties most important for und
 The following section outlines the supported automation patterns for the __RadTextBox__ control and its constituent elements.
 
 * [Text Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.textpattern?view=windowsdesktop-9.0)
-* [ValuePattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.valuepattern?view=windowsdesktop-9.0)
+* [Value Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.valuepattern?view=windowsdesktop-9.0)
 
 ## Events
 
