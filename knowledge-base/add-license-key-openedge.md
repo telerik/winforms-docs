@@ -51,6 +51,7 @@ In the following tutorial we will demonstrate how to set-up your license key in 
 
 	END CONSTRUCTOR.
 	````
+	>important The license key needs to be registered before initializing our controls. In the above scenario, the license key is registered before the InitializeComponent() method is executed.
 
 1. Add a reference to the `Telerik.Licensing.Runtime.dll`.
 
