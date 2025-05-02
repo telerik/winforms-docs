@@ -16,13 +16,11 @@ res_type: kb
 
 ## Description
 
-I work in a OpenEdge environment and need to activate my Telerik UI for .NET WinForms license key. My projects, however, do not use NuGet packages. How can I activate the Telerik UI for .NET WinForms without using the `Telerik.Licensing` package?
+I work in an OpenEdge environment and need to activate my Telerik UI for .NET WinForms license key. My projects, however, do not use NuGet packages. How can I activate the Telerik UI for .NET WinForms without using the `Telerik.Licensing` package?
 
 ## Solution
 
-Telerik strongly recommends the use of NuGet packages whenever possible. If NuGet is not an option, configure your CI/CD tools to create a C# license file during build:
-
-In the following tutorial we will demonstrate how to set-up your license key in OpenEdge environment.
+The following tutorial will demonstrate how to set up your license key in the OpenEdge environment.
 
 1. Go to the [Setting Up Your Telerik UI for .NET WinForms License Key](https://docs.telerik.com/devtools/winforms/licensing/license-key#downloading-the-license-key) and follow the first two sections of the article.
 	1. Downloading the License Key
