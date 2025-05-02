@@ -66,8 +66,5 @@ This section list the events raised by the RadTextBox control.
 	
 * __OnEnabledChanged__: Raises the [UIA AutomationElementIdentifiers.IsEnabledProperty Field](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.automationelementidentifiers.isenabledproperty?view=windowsdesktop-9.0#system-windows-automation-automationelementidentifiers-isenabledproperty)
 
-TextPatternIdentifiers.TextSelectionChangedEvent - raised after the selection in the textbox changes
-TextPatternIdentifiers.TextChangedEvent - raised after the text in the texbox changes
-ValuePatternIdentifiers.ValueProperty - property changed event raised after the text in the texbbox changes
 
 
