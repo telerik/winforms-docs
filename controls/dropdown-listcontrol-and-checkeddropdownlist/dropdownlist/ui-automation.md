@@ -55,11 +55,27 @@ The following section outlines the supported automation patterns for the __RadDr
 
 ## Editor or TextElement
 
-The __DropDownStyle__ property of the control determines if direct text input is allowed inside the editor or not. When the style is set to DropDown we allow input which is handled by a hosted Microsoft TextBox control. In this case, the default TextBox implementation is responsible for handling UI Automation.
+The __DropDownStyle__ property of the control determines if direct text input is allowed inside the editor or not. 
 
 ### Editor
 
-The current implementation of UI Automation for the hosted Microsoft TextBox control is implemented as the UIA [Edit control type](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-supporteditcontroltype)
+The current implementation of UI Automation for the RadDropDownList RadTextBoxItem control inside the editable area of the control is implemented as the UIA [Edit control type](https://learn.microsoft.com/en-us/windows/win32/winauto/uiauto-supporteditcontroltype)
+
+#### Editor Available Properties
+
+* AutomationElementIdentifiers.AutomationIdProperty.Id 
+* AutomationElementIdentifiers.BoundingRectangleProperty.Id
+* AutomationElementIdentifiers.ClickablePointProperty.Id
+* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
+* AutomationElementIdentifiers.NameProperty.Id 
+* AutomationElementIdentifiers.ControlTypeProperty.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "edit"
+* AutomationElementIdentifiers.HelpTextProperty.Id
+* AutomationElementIdentifiers.IsContentElementProperty.Id
+* AutomationElementIdentifiers.IsControlElementProperty.Id
+* AutomationElementIdentifiers.IsPasswordProperty.Id
+* AutomationElementIdentifiers.IsTextPatternAvailableProperty.Id
+* AutomationElementIdentifiers.IsValuePatternAvailableProperty.Id
 
 ### TextElement
 
