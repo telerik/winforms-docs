@@ -51,25 +51,23 @@ As of **R1 2021**, Telerik UI for WinForms starts using **Fluent** theme as defa
 All Telerik themes that Telerik UI for WinForms offers, can be used as default theme in the application either at design time and run time. You can check other themes styles [here](https://docs.telerik.com/devtools/winforms/styling-and-appearance/themes-style).
 
 To use any Telerik theme you should follow these two steps below : 
+
 1. Add the relevant theme assembly to the project references. For example, if you prefer using the Windows11Compact theme in your application, you should add a reference to the **Telerik.WinControls.Themes.Windows11** in your project. You can do this by either drag-drop the theme from the Toolbox or reference it from your installation folder. 
 
->note When you use the **UI.for.WinForms.AllControls** Telerik NuGet package, all the available themes are included in the package.
+  >note When you use the **UI.for.WinForms.AllControls** Telerik NuGet package, all the available themes are included in the package.
 
 2. Specify the TelerikWinFormsThemeName in the **App.config** file:
 
-````XML
-
-<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <startup>
-    
-  </startup>
-  <appSettings>
-    <add key="TelerikWinFormsThemeName" value="Windows11Compact" />
-  </appSettings>
-</configuration>
-
-````
+  ````XML
+  
+  <?xml version="1.0" encoding="utf-8" ?>
+  <configuration>
+    <appSettings>
+      <add key="TelerikWinFormsThemeName" value="Windows11Compact" />
+    </appSettings>
+  </configuration>
+  
+  ````
 
 Once, the two steps are completed, you can close and reopen the designer file again to ensure the theme is applied:
 
@@ -101,8 +99,6 @@ Let's say there is a custom **Windows11CompactLightBlue** theme created, which i
 
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-  <startup>
-  </startup>
   <appSettings>
     <add key="TelerikWinFormsThemeName" value="Windows11CompactLightBlue" />
     <add key="TelerikWinFormsThemeType" value="Windows11LightBlueClassLibrary.Windows11LightBlue"/>
