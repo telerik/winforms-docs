@@ -13,7 +13,7 @@ ticketid: 1686235
 
 |Product Version|Product|Author|
 |----|----|----|
-|2025.1.211|RadTreeView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.1.211|RadChartView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
