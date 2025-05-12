@@ -19,6 +19,8 @@ ticketid: 1686235
 
 This article will demonstrate how to determine the nearest ScatterDataPoint to a mouse click location using the mouse click position. 
 
+![WinForms RadChartView ClosestDataPoint](images/chartView-closestdatapoint.png)
+
 ## Solution
 
 To achieve this, calculate the axis values corresponding to the mouse click position on the chart. Then iterate over the data points in the series and determine the closest one. 
