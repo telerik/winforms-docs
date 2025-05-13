@@ -66,10 +66,12 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})|
 |[How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%})|
 |[How to Upload Files to Progress SFTP]({%slug upload-files-to-progress-ftp%})|
+|[How to Use a Custom Theme as Default for the Entire Application]({%slug custom-theme-as-default%})|
 |[Implementing a chrome window]({%slug implementing-a-chrome-window%})|
 |[Increasing the execution speed of Telerik assemblies]({%slug increasing-the-execution-speed-of-telerik-assemblies%})|
 |[Installing local documentation for MS Help viewer (Help3) in Visual Studio 2010]({%slug installing-local-documentation-for-ms-help-viewer-help3-in-visual-studio-2010%})|
 |[Installing local documentation for MS Help viewer (Help3) in Visual Studio 2012 and 2013]({%slug installing-local-documentation-for-ms-help-viewer-(help3)-in-visual-studio-2012-and-2013%})|
+|[License file (licx)]({%slug kb-license-file-licx%})|
 |[Load theme components in a separate thread]({%slug load-theme-components-in-a-separate-thread%})|
 |[Local Code Execution Vulnerability]({%slug local-code-execution-vulnerability%})|
 |[Make your Telerik WinForms-enabled applications start instantly]({%slug make-your-telerik-winforms-enabled-applications-start-instantly%})|

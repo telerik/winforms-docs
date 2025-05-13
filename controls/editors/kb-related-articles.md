@@ -25,6 +25,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Check Incorrect Words in RadTextBox]({%slug how-to-check-incorrect-words-in-radtextbox%})|
 |[How to Create Custom AutoComplete Items in RadAutoCompleteBox]({%slug autocompletebox-with-custom-autocomplete-items%})|
 |[How to disable backspace and delete keyboard buttons]({%slug datetimepicker-disable-backspace-delete%})|
+|[Preventing RadMaskedEditBox from Losing Focus on Validation Failure]({%slug maskededitbox-prevent-losing-focus-validation-failure%})|
 |[Scientific Notation and Leading Zeros in Spin Editor]({%slug scientific-notation-leading-zeros-spineditor%})|
 |[Show auto-complete items which text contains the user's input in RadTextBoxControl]({%slug textboxcontrol-autocomplete-contains%})|
 |[Specify the Minutes/Hours Step in DateTimePicker's Popup]({%slug datetimepicker-steps-in-popup%})|

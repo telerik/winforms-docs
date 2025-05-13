@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Disabling Video Recording Button in RadWebCam for WinForms]({%slug webcam-disable-video-recording%})|
 |[How to Deal with Slow WebCam Preview on Start]({%slug deal-with-slow-webcam-preview-on-start%})|
 
 ## See Also
