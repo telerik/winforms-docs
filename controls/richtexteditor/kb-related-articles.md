@@ -25,6 +25,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Search and Highlight Text in RichTextEditor]({%slug rte-highligh-search-text%})|
 |[Paste Plain Text in RadRichTextBoxEditor]({%slug paste-plain-text%})|
 |[Print Silently Documents with RadRichTextEditor]({%slug silent-documents-printing-in-richtexteditor%})|
+|[Setting Custom Page Size on Document in RadRichTextEditor]({%slug radrichtexteditor-winforms-custom-page-size%})|
 
 ## See Also
 

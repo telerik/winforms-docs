@@ -36,6 +36,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Negative Area Chart]({%slug chartview-negetive-area%})|
 |[Populate RadChartView from Access Database]({%slug chartview-access-database%})|
 |[RadChartView Drag and Drop]({%slug radchartview-drag-and-drop%})|
+|[Reducing Space Around RadChartView in WinForms]({%slug reduce-space-radchartview-winforms%})|
 |[Restricting Zoom Interval in RadChartView]({%slug radchartview-restrict-zoom-interval%})|
 |[Simulate EKG signal in RadChartView]({%slug simulate-ekg-line-in-chartview%})|
 |[Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})|
