@@ -58,9 +58,36 @@ Me.RadMap1.MapElement.CopyrightLabelElement.Alignment = ContentAlignment.MiddleC
 
 All three left alignments __ContentAlignment.MiddleLeft__, __ContentAlignment.TopLeft__, __ContentAlignment.BottomLeft__ result in the screenshot below:
 
+````C#
+
+this.radMap1.MapElement.CopyrightLabelElement.Alignment = ContentAlignment.MiddleLeft;
+
+````
+````VB.NET
+
+Me.RadMap1.MapElement.CopyrightLabelElement.Alignment = ContentAlignment.MiddleLeft
+
+````
+
 ![WinForms RadMap Copyright Label Aligment Left](images/map-features-copyright-label-aligment-left.png)
 
 
+### Margin
+
+The Margin property of the copyright label element is especially useful for fine-tuning its position relative to surrounding elements. For example, you can adjust the margin values to "stick" the label closer to the bottom edge of the map, if such a design is desired.
+
+````C#
+
+this.radMap1.MapElement.Margin = new Padding(0, 8, 20, 0);
+
+````
+````VB.NET
+
+Me.RadMap1.MapElement.Margin = new Padding(0, 8, 20, 0)
+
+````
+
+![WinForms RadMap Copyright Label Margin](images/map-features-copyright-label-aligment-margin.png)
 
 ## See Also
 
