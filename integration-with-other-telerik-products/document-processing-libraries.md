@@ -66,5 +66,4 @@ The [RadTreeView] control facilitates display, management, and navigation of hie
 
 * [Getting Started with Telerik Document Processing Libraries](https://docs.telerik.com/devtools/document-processing/getting-started/getting-started#getting-started-with-telerik-document-processing)
 * [Installing on Your Computer](https://docs.telerik.com/devtools/document-processing/getting-started/installation/installing-on-your-computer)
-* [Trial Version and Commercial License](https://docs.telerik.com/devtools/document-processing/introduction#trial-version-and-commercial-license)
 * [System Requirements](https://docs.telerik.com/devtools/document-processing/getting-started/installation/system-requirements)
