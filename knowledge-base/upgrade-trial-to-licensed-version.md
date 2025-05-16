@@ -7,6 +7,7 @@ slug: upgrade-trial-to-licensed-version
 position: 
 tags: common
 ticketid: 1619579
+published: false
 res_type: kb
 ---
 

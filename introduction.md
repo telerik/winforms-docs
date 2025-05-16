@@ -28,7 +28,7 @@ Here are quick links to the control-specific sections of our documentation:
 
 {% include intro-page-table.html %}
 
-## Trial Version and Commercial License
+## Trial and Commercial License
 
 Telerik UI for WinForms suite is a commercial UI library. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase.aspx). Feel free to review the Telerik UI for WinForm [License Agreement](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s) to get acquainted with the full terms of use.  
 
