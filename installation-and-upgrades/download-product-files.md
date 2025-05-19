@@ -11,7 +11,7 @@ previous_url: installation-deployment-and-distribution-download-product-files
 
 # Download Product Files
 
-When you purchase a Telerik UI for WinForms license, you can download the following files:
+When you purchase a **Telerik UI for WinForms** license, you can download the following files from your **Telerik account**:
 
 * Standalone MSI installer
 
@@ -25,7 +25,9 @@ When you purchase a Telerik UI for WinForms license, you can download the follow
 
 * Source code
 
-* Documentation files
+* Offline documentation in PDF files, including separate files for:
+	- Telerik UI for WinForms 
+	- Telerik Document Processing
 
 Тo download these files follow the steps below:
 
