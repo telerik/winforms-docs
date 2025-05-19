@@ -21,6 +21,8 @@ The Telerik UI for WinForms suite includes a limited run time royalty-free licen
 
 * WinForms applications that offer a trial or free version of Your application. __If offering a free or trial version of Your Integrated Product, redistribution of the assemblies is not permitted. You are required to protect all Telerik assemblies by using one of the methods below (ILMerge to merge the Telerik WinForms assemblies with the executable file (this does not apply to the Document processing assemblies, see below) of your application OR build the Telerik.WinControls.dll assembly from source code using one of the approaches described below)__
 
+> With the introduction of our new licensing mechanism, Telerik UI for WinForms has simplified deployment requirements. Starting from 2025 Q2 users are no longer required to protect the Telerik assemblies using the methods described below. Instead, the product now requires a license key that can be [downloaded from Telerik account]({%slug license-key%})). Applications without a valid license will continue to function normally, but will display a watermark.
+
 ## Examples of Uses that Require Discussion
 
 * Products that expose the design-time functionality of the Telerik RadControls or the VisualStyleBuilder.
