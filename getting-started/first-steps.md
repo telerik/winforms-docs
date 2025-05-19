@@ -12,15 +12,37 @@ position: 0
 This article explains how to get the Telerik UI for WinForms controls in your project and start using them quickly.
 The process consists of the following steps:
 
-- [First Steps](#first-steps)
-  - [Download the Controls](#download-the-controls)
-  - [Create a new WinForms Telerik Project](#create-a-new-winforms-telerik-project)
-  - [Add Telerik Control to a Form](#add-telerik-control-to-a-form)
-  - [Next Steps](#next-steps)
+- [Start Your Free Trial](#first-steps)
+- [Download the Controls](#download-the-controls)
+- [Create a new WinForms Telerik Project](#create-a-new-winforms-telerik-project)
+- [Add Telerik Control to a Form](#add-telerik-control-to-a-form)
+- [Next Steps](#next-steps)
 
-Once you have your first simple control up and running, take a look at the [next steps](#next-steps) section to start exploring the control functionality in more detail.
+## Start Your Free Trial
+
+* If you already have an [active license](https://www.telerik.com/account/your-licenses) for Telerik UI for WinForms, skip this step and continue with the next step.
+* If you don't have an active license, follow the steps below to activate your free trial:
+
+    1. [Download](https://www.telerik.com/try/ui-for-winforms) the WinForms Installer and start the installation.
+
+    1. Make sure that **Telerik UI for .NET WinForms** is selected and continue with the setup.
+
+    1. Log in with your Telerik account and complete the installation.
+
+    After the successful installation of Telerik UI for Winforms, the Installer activates your 30 day free trial. The installer also downloads your license key file, so you can skip the next step and continue with [Create a new WinForms Telerik Project](#create-a-new-winforms-telerik-project).
+	
+## Download Your License Key File
+
+To download and install your Telerik [license key file]({%slug set-up-your-license%}):
+
+1. Go to the <a href="https://www.telerik.com/account/your-licenses/license-keys" target="_blank">License Keys page</a> in your Telerik account.
+1. Click the **Download License Key** button.
+1. Save the `telerik-license.txt` file to `%AppData%\Telerik\telerik-license.txt`.
+
+This will make the license key available to all Telerik .NET apps that you develop on your local machine.
 
 ## Download the Controls
+
 The easiest way to get the controls to your development machine is to use the [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) or to download the automated MSI installer from [your telerik.com account](https://www.telerik.com/account/product-download?product=RCWF). 
 
 >caption Figure 1: Download automated (.msi) installer
