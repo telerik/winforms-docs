@@ -1,6 +1,6 @@
 ---
 title: Unblock .resx Files Downloaded in Telerik WinForms Source Code
-description: This tutorial explains in details how to upgrade your Telerik trial to a licensed version.
+description: This tutorial explains how to unblock .resx files downloaded in Telerik WinForms Source Code.
 type: how-to
 page_title: How to Unblock .resx Files Downloaded in Telerik WinForms Source Code
 slug: unblock-resx-files-downloaded-in-source-code 

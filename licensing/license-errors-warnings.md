@@ -29,6 +29,35 @@ An invalid license can be caused by any of the following:
 - Not installing a license key in your application.
 - Not updating the license key after renewing your Telerik UI for .NET WinForms license.
 
+## License Warnings
+
+If you use Telerik UI for WinForms in a project with an invalid license, the UI components exhibit the following invalid license attributes:
+
+* A [watermark](#watermark) appears over a number of selected components.
+* A [banner](#banner) is rendered on pages that use the Telerik UI for WinForms components.
+* A [modal dialog](#modal-dialog) appears on pages when your Telerik UI for WinForms license has expired.
+
+### Watermark
+
+A watermark appearing on the form using Telerik UI for WinForms controls:
+
+![Watermark in the Light Theme](/images/watermark.png)
+
+### Banner
+
+A banner appears on pages that use unlicensed Telerik UI for WinForms components:
+
+![Banner](/images/banner.png)
+
+* Clicking the ? button of the banner takes you to the Telerik licensing price page.
+* Clicking the x button of the banner closes it until the page is reloaded or a license is activated.
+
+### Modal Dialog
+
+A modal dialog appears on pages when your Telerik UI for WinForms license has expired:
+
+![Modal Dialog](/images/modal-dialog.png)
+
 ## License Warnings and Errors
 
 When using Telerik UI for .NET WinForms in a project with an expired or missing license, the `Telerik.Licensing` build task will indicate the following errors or conditions:
