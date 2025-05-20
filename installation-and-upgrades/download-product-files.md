@@ -51,6 +51,5 @@ When you purchase a **Telerik UI for WinForms** license, you can download the fo
 ## See Also
 
 * [How to Attach the Telerik Source Code to Your Project]({%slug attach-telerik-source-code-to-your-project%}) 
-* [How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%})
 * [Preview Releases]({%slug winforms/installation-deployment-and-distribution/preview-releases%})
 

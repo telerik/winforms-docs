@@ -27,7 +27,6 @@ The following article list Knowledge Base articles related to this section of co
 |[Customize the Color for SVG Images]({%slug customize-the-color-for-svg-images%})|
 |[Dashboard Demo]({%slug dashboard-demo%})|
 |[Designer is Not Loading]({%slug designer-not-loading%})|
-|[Distinguishing between versions – Dev/Trial]({%slug distinguishing-between-versions-dev-trial%})|
 |[Docking controls on a form in a Windows Forms application]({%slug docking-controls-on-a-form-in-a-windows-forms-application%})|
 |[Double Buffered Table Layout Panel]({%slug double-Buffered-table-layout-panel%})|
 |[Examine the GAC and remove old assemblies]({%slug radcontrols-examine-the-gac%})|
@@ -64,12 +63,11 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Send and Receive Messages Between Windows Forms Applications]({%slug send-receive-messages-between-windows-forms-applications%})|
 |[How to Share Localization Providers and Spell Checking Dictionaries]({%slug share-localization-providers-and-dictionaries%})|
 |[How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})|
-|[How to Upgrade Trial to Licensed Version]({%slug upgrade-trial-to-licensed-version%})|
 |[How to Upload Files to Progress SFTP]({%slug upload-files-to-progress-ftp%})|
+|[How to Use a Custom Theme as Default for the Entire Application]({%slug custom-theme-as-default%})|
 |[Implementing a chrome window]({%slug implementing-a-chrome-window%})|
 |[Increasing the execution speed of Telerik assemblies]({%slug increasing-the-execution-speed-of-telerik-assemblies%})|
-|[Installing local documentation for MS Help viewer (Help3) in Visual Studio 2010]({%slug installing-local-documentation-for-ms-help-viewer-help3-in-visual-studio-2010%})|
-|[Installing local documentation for MS Help viewer (Help3) in Visual Studio 2012 and 2013]({%slug installing-local-documentation-for-ms-help-viewer-(help3)-in-visual-studio-2012-and-2013%})|
+|[License file (licx)]({%slug kb-license-file-licx%})|
 |[Load theme components in a separate thread]({%slug load-theme-components-in-a-separate-thread%})|
 |[Local Code Execution Vulnerability]({%slug local-code-execution-vulnerability%})|
 |[Make your Telerik WinForms-enabled applications start instantly]({%slug make-your-telerik-winforms-enabled-applications-start-instantly%})|

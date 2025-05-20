@@ -46,6 +46,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Create custom header when exporting RadGridView to PDF]({%slug customize-pdf-export-header%})|
 |[Create Pasted event in RadGridView]({%slug gridview-pasted-event%})|
 |[Create pop-up user control for row editing]({%slug create-pop-up-user-control-for-row-editing%})|
+|[Create RadRadioButtonColumn in RadGridView]({%slug creating-a-radradiobuttoncellelement%})|
 |[Create Standalone RadExpressionEditor Form]({%slug create-standalone-radexpressioneditor-form%})|
 |[Creating a RadRadioButtonCellElement]({%slug creating-a-radradiobuttoncellelement%})|
 |[Custom Excel-like filter popup with time part]({%slug custom-excel-like-filter-popup-with-time-part%})|

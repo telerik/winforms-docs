@@ -33,7 +33,7 @@ The process consists of the following steps:
 	
 ## Download Your License Key File
 
-To download and install your Telerik [license key file]({%slug set-up-your-license%}):
+To download and install your Telerik [license key file]({%slug license-key%}):
 
 1. Go to the <a href="https://www.telerik.com/account/your-licenses/license-keys" target="_blank">License Keys page</a> in your Telerik account.
 1. Click the **Download License Key** button.
