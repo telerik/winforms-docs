@@ -25,10 +25,8 @@ res_type: kb
 ## Solution
 
 A complete C# and VB.NET project is available in the Telerik WinForms SDK [here](https://github.com/telerik/winforms-sdk/tree/master/PropertyGrid/PropertyGridNestedCollections).
-
-The sample solution is based on the following article: [Customized Display of Collection Data in a PropertyGrid](https://www.codeproject.com/Articles/4448/Customized-Display-of-Collection-Data-in-a-Propert).  
  
-# See Also
+## See Also
 
 * [Type Converters]({%slug winforms/propertygrid/type-converters%})
 * [Attributes]({%slug winforms/propertygrid/attributes%})

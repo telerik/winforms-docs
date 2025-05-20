@@ -4,7 +4,7 @@ page_title: .NET Core Project Converter - NET Core
 description:   
 slug: net-core-project-converter
 tags: convert, WinForms application, .NET Core
-published: True
+published: False
 position: 3
 ---
 

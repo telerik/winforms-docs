@@ -10,7 +10,7 @@ position: 8
 
 # Manage Extensions
 
-**Progress Teletik UI for WinForms Extensions** can be installed / enabled / disabled by the **Extensions** menu in Visual Studio. It is necessary to select the **Manage Extensions** menu item: 
+**Progress Telerik UI for WinForms Extensions** can be installed / enabled / disabled by the **Extensions** menu in Visual Studio. It is necessary to select the **Manage Extensions** menu item: 
 
 ![manage-extensions 001](images/manage-extensions001.png)
 

@@ -99,7 +99,6 @@ Note that the design-time assemblies are resolved from the installed NuGet packa
 
 * [New Telerik UI for WinForms Designers for .NET Core and .NET 5.0](https://www.telerik.com/blogs/new-telerik-ui-for-winforms-designers-dotnet-core-dotnet-5)
 * [Migrating to .NET Core]({%slug core-migration%})
-* [.NET Core Project Converter]({%slug net-core-project-converter%})
 * [Windows Forms Designer for .NET Core Released](https://devblogs.microsoft.com/dotnet/windows-forms-designer-for-net-core-released/)
 * [How to Handle NETSDK1141 Error]({%slug netsdk1141-error%})
 * [How to Build Custom Telerik Assemblies when Using .NET Core and Enable Design Time Experience]({%slug build-custom-assemblies-for-net-core%})
