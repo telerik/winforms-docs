@@ -31,11 +31,11 @@ This article dives into UI controls, focusing on their compatibility with Micros
 |.NET 5| R2 2020 - R3 2022 SP2|.NET 5 and later|
 |.NET 6| R3 2021 SP1 - 2025 Q1|.NET 6 and later	|
 |.NET 7| R3 2022 SP2 - 2024 Q3|.NET 7 and later|
-|.NET 8| 2024 Q2 - present|NET 8 and later|
-|.NET 9| 2024 Q4 - present|NET 9 and later|
+|.NET 8| 2024 Q2 - present|.NET 8 and later|
+|.NET 9| 2024 Q4 - present|.NET 9 and later|
 
 
->note .NET 6 distribution is discontinued in 2025 Q2. For more informstion see [Microsoft .NET and .NET Core Support Policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core).
+>note .NET 6 distribution is discontinued in 2025 Q2. For more information see [Microsoft .NET and .NET Core Support Policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core).
 
 ## See Also
 
