@@ -4,7 +4,7 @@ description: Learn how to add your Telerik UI for WinForms license OpenEdge envi
 type: how-to
 page_title: Set Your License Key in OpenEdge Project
 slug: add-license-as-snippet-ci-cd
-tags: licensing , winforms,wf, cd, cd, code, snippet, openedge
+tags: licensing ,informs, wf, cd, cd, code, snippet, openedge
 res_type: kb
 ---
 
@@ -16,19 +16,19 @@ res_type: kb
 
 ## Description
 
-I work in an OpenEdge environment and need to activate my Telerik UI for WinForms license key. My projects, however, do not use NuGet packages. How can I activate the Telerik UI for .NET WinForms without using the `Telerik.Licensing` package?
+I work in an OpenEdge environment and need to activate my Telerik UI for WinForms license key. My projects, however, do not use NuGet packages. How can I activate the Telerik UI for WinForms without using the `Telerik.Licensing` package?
 
 ## Solution
 
 The following tutorial will demonstrate how to set up your license key in the OpenEdge environment.
 
-1. Go to the [Setting Up Your Telerik UI for .NET WinForms License Key](https://docs.telerik.com/devtools/winforms/licensing/license-key#downloading-the-license-key) and follow the first two sections of the article.
+1. Go to the [Setting Up Your Telerik UI for WinForms License Key](https://docs.telerik.com/devtools/winforms/licensing/license-key#downloading-the-license-key) and follow the first two sections of the article.
 	1. Downloading the License Key
-	1. Activating the Telerik UI for .NET WinForms Components
+	1. Activating the Telerik UI for WinForms Components
 	
 1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys) in your Telerik account.
 
-1. On the Telerik UI for .NET WinForms row, click the **View key** link in the **SCRIPT KEY** column. Copy only the string in the first Telerik.Licensing.EvidenceAttribute("key"). 
+1. On the Telerik UI for WinForms row, click the **View key** link in the **SCRIPT KEY** column. Copy only the string in the first Telerik.Licensing.EvidenceAttribute("key"). 
 
 	![copy-license-key](images/add-license-key-openedge.png)
 
@@ -61,5 +61,5 @@ END CONSTRUCTOR.
 
 * [Setting Up Your License Key]({%slug license-key%})
 * [License Activation Errors and Warnings]({%slug license-errors-warnings%})
-* [Frequently Asked Questions about Your Telerik UI for .NET WinForms License Key]({%slug licensing-faq%})
+* [Frequently Asked Questions about Your Telerik UI for WinForms License Key]({%slug licensing-faq%})
 * [Adding the License Key to CI Services]({%slug add-license-to-ci-cd%})
