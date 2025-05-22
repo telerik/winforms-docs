@@ -34,7 +34,7 @@ The following tutorial will demonstrate how to set up your license key in the Op
 
 1. Now we need to register the copied license key above.
 
-````C#
+````ABL
 
 CONSTRUCTOR PUBLIC Form1 (  ):        
 	// ActivePerpetual script key	
@@ -50,7 +50,8 @@ CONSTRUCTOR PUBLIC Form1 (  ):
 END CONSTRUCTOR.
 
 ````
-	>important The license key needs to be registered before initializing our controls. In the above scenario, the license key is registered before the InitializeComponent() method is executed.
+
+>important The license key needs to be registered before initializing our controls. In the above scenario, the license key is registered before the InitializeComponent() method is executed.
 
 1. Add a reference to the `Telerik.Licensing.Runtime.dll`.
 
