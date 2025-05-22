@@ -1,6 +1,6 @@
 ---
 title: Set Your License Key in OpenEdge Project
-description: Learn how to add your Telerik UI for .NET WinForms license OpenEdge environment.
+description: Learn how to add your Telerik UI for WinForms license OpenEdge environment.
 type: how-to
 page_title: Set Your License Key in OpenEdge Project
 slug: add-license-as-snippet-ci-cd
@@ -12,11 +12,11 @@ res_type: kb
 
 | Product | Version
 | ---- | ---- |
-| Telerik UI for .NET WinForms | 2025 Q1 or later |
+| Telerik UI for WinForms | 2025 Q1 or later |
 
 ## Description
 
-I work in an OpenEdge environment and need to activate my Telerik UI for .NET WinForms license key. My projects, however, do not use NuGet packages. How can I activate the Telerik UI for .NET WinForms without using the `Telerik.Licensing` package?
+I work in an OpenEdge environment and need to activate my Telerik UI for WinForms license key. My projects, however, do not use NuGet packages. How can I activate the Telerik UI for .NET WinForms without using the `Telerik.Licensing` package?
 
 ## Solution
 
@@ -34,21 +34,22 @@ The following tutorial will demonstrate how to set up your license key in the Op
 
 1. Now we need to register the copied license key above.
 
-	````ABL
+````C#
 
-	CONSTRUCTOR PUBLIC Form1 (  ):        
-		// ActivePerpetual script key	
-		Telerik.Licensing.TelerikLicensing:Register("Your License Key").
-		
-		InitializeComponent().
+CONSTRUCTOR PUBLIC Form1 (  ):        
+	// ActivePerpetual script key	
+	Telerik.Licensing.TelerikLicensing:Register("Your License Key").
+	
+	InitializeComponent().
 
-		THIS-OBJECT:ComponentsCollection:Add(THIS-OBJECT:components).
-		CATCH e AS Progress.Lang.Error:
-			UNDO, THROW e.
-		END CATCH.
+	THIS-OBJECT:ComponentsCollection:Add(THIS-OBJECT:components).
+	CATCH e AS Progress.Lang.Error:
+		UNDO, THROW e.
+	END CATCH.
 
-	END CONSTRUCTOR.
-	````
+END CONSTRUCTOR.
+
+````
 	>important The license key needs to be registered before initializing our controls. In the above scenario, the license key is registered before the InitializeComponent() method is executed.
 
 1. Add a reference to the `Telerik.Licensing.Runtime.dll`.
