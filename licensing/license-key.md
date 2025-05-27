@@ -29,12 +29,13 @@ To download a license key for Telerik UI for .NET WinForms, you must have either
 
 To activate the Telerik UI for .NET WinForms controls:
 
-* Copy the [downloaded](#downloading-the-license-key) `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer:
+1. Copy the [downloaded](#downloading-the-license-key) `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer:
 
     * For Windows: `%AppData%\Telerik\telerik-license.txt`
     * For Mac/Linux: `~/.telerik/telerik-license.txt`
+    * Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
 
-* Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
+1. Download the `Telerik.Licensing` NuGet package from [NuGet.org](https://www.nuget.org/). It will add the **Telerik.Licensing.Runtime** assembly in your project which is required to activate the WinForms controls.
 
 When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the WinForms controls.
 
