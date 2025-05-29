@@ -12,7 +12,7 @@ ticketid: 1687869
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2025.2.250|RadDropDownList for WinForms|[Nadya Todorova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
+|2025.2.520|RadDropDownList for WinForms|[Nadya Todorova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
