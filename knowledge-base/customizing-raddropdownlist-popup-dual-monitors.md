@@ -23,7 +23,7 @@ When RadDropDownList is stretched across two monitors, the dropdown part may exh
 To customize the behavior of RadDropDownList when stretched across two monitors, you can create a custom solution to control the pop-up location. Follow these steps:
 
 1. Create a custom class that inherits from `RadDropDownList`.
-2. Override the necessary methods to customize the dropdown pop-up behavior.
+2. Override the following methods to customize the dropdown pop-up behavior.
 
 ### Example Implementation
 
