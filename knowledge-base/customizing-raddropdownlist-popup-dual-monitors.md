@@ -3,34 +3,20 @@ title: Customizing RadDropDownList Pop-Up Location Across Dual Monitors in UI fo
 description: Learn how to customize the pop-up location of RadDropDownList when stretched across two monitors in Telerik UI for WinForms.
 type: how-to
 page_title: Adjusting RadDropDownList Pop-Up Behavior on Dual Monitors
-slug: customizing-raddropdownlist-popup-dual-monitors
+slug: dropdownlist-popup-dual-monitors
 tags: raddropdownlist, dual-monitors, pop-up-location, ui-for-winforms
 res_type: kb
 ticketid: 1687869
 ---
 
 ## Environment
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>RadDropDownList for Telerik UI for WinForms</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>2024.2.514</td>
-</tr>
-</tbody>
-</table>
+|Product Version|Product|Author|
+|----|----|----|
+|2025.2.250|RadDropDownList for WinForms|[Nadya Todorova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
 When RadDropDownList is stretched across two monitors, the dropdown part may exhibit unexpected behavior, such as shifting upon opening. This behavior occurs because controls like RadDropDownList are designed to operate within one monitor, scaling automatically to the monitor's DPI and resolution settings. Stretching the form across two monitors introduces complexities that may require custom handling.
-
-This knowledge base article also answers the following questions:
-- How can I adjust the RadDropDownList to work properly across dual monitors?
-- Is there a way to control the dropdown pop-up position in RadDropDownList?
-- How can I customize RadDropDownList to avoid shifting issues across monitors?
 
 ## Solution
 
@@ -41,90 +27,106 @@ To customize the behavior of RadDropDownList when stretched across two monitors,
 
 ### Example Implementation
 
-```vb.net
-Public Class CustomDropDownList
-    Inherits RadDropDownList
+````C#
 
-    Protected Overrides Function CreateDropDownListElement() As RadDropDownListElement
-        Return New CustomDropDownListElement
-    End Function
+public class CustomDropDownList : RadDropDownList
+{
+    protected override RadDropDownListElement CreateDropDownListElement()
+    {
+        return new CustomDropDownListElement();
+    }
+    public override string ThemeClassName
+    {
+        get
+        {
+            return typeof(RadDropDownList).FullName;
+        }
+        set
+        {
+            base.ThemeClassName = value;
+        }
+    }
+}
 
-    Public Overrides Property ThemeClassName As String
-        Get
-            Return GetType(RadDropDownList).FullName
-        End Get
-        Set(value As String)
-            MyBase.ThemeClassName = value
-        End Set
-    End Property
-End Class
+public class CustomDropDownListElement : RadDropDownListElement
+{
+    protected override Type ThemeEffectiveType
+    {
+        get
+        {
+            return typeof(RadDropDownListElement);
+        }
+    }
 
-Public Class CustomDropDownListElement
-    Inherits RadDropDownListElement
+    public class MyDropDownPopupForm : DropDownPopupForm
+    {
+        public MyDropDownPopupForm(RadDropDownListElement ownerDropDownListElement) : base(ownerDropDownListElement)
+        {
+        }
 
-    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
-        Get
-            Return GetType(RadDropDownListElement)
-        End Get
-    End Property
+        public override string ThemeClassName
+        {
+            get
+            {
+                return typeof(RadSizablePopupControl).FullName;
+            }
+            set
+            {
+                base.ThemeClassName = value;
+            }
+        }
 
-    Public Class MyDropDownPopupForm
-        Inherits DropDownPopupForm
+        protected override Point GetCorrectedLocation(Screen currentScreen, Rectangle alignmentRectangle, Size popupSize)
+        {
+            // MyBase.GetCorrectedLocation(currentScreen, alignmentRectangle, popupSize)
+            return alignmentRectangle.Location;
+        }
+    }
 
-        Public Sub New(ownerDropDownListElement As RadDropDownListElement)
-            MyBase.New(ownerDropDownListElement)
-        End Sub
+    protected override RadPopupControlBase CreatePopupForm()
+    {
+        MyDropDownPopupForm popup = new MyDropDownPopupForm(this);
 
-        Public Overrides Property ThemeClassName As String
-            Get
-                Return GetType(RadSizablePopupControl).FullName
-            End Get
-            Set(value As String)
-                MyBase.ThemeClassName = value
-            End Set
-        End Property
+        popup.VerticalAlignmentCorrectionMode = AlignmentCorrectionMode.SnapToOuterEdges;
+        popup.SizingMode = this.DropDownSizingMode;
+        popup.Height = this.DropDownHeight;
+        popup.HorizontalAlignmentCorrectionMode = AlignmentCorrectionMode.Smooth;
+        this.WirePopupFormEvents(popup);
 
-        Protected Overrides Function GetCorrectedLocation(currentScreen As Screen, alignmentRectangle As Rectangle, popupSize As Size) As Point
-            Return alignmentRectangle.Location
-        End Function
-    End Class
+        this.Popup = popup;
+        return popup;
+    }
 
-    Protected Overrides Function CreatePopupForm() As RadPopupControlBase
-        Dim popup As MyDropDownPopupForm = New MyDropDownPopupForm(Me)
-        popup.VerticalAlignmentCorrectionMode = AlignmentCorrectionMode.SnapToOuterEdges
-        popup.SizingMode = Me.DropDownSizingMode
-        popup.Height = Me.DropDownHeight
-        popup.HorizontalAlignmentCorrectionMode = AlignmentCorrectionMode.Smooth
-        Me.WirePopupFormEvents(popup)
-        Me.Popup = popup
-        Return popup
-    End Function
+    protected override Point GetPopupLocation(RadPopupControlBase popup)
+    {
+        var form1 = this.ElementTree.Control.FindForm();
+        var formBounds = form1.Bounds;
+        var controlLocationInScreen = this.ElementTree.Control.Location;
+        Control parentControl = this.ElementTree.Control.Parent;
+        while (parentControl != null)
+        {
+            controlLocationInScreen.X += parentControl.Location.X;
+            controlLocationInScreen.Y += parentControl.Location.Y;
+            parentControl = parentControl.Parent;
+        }
 
-    Protected Overrides Function GetPopupLocation(popup As RadPopupControlBase) As Point
-        Dim form1 = Me.ElementTree.Control.FindForm()
-        Dim formBounds = form1.Bounds
-        Dim controlLocationInScreen = Me.ElementTree.Control.Location
-        Dim parentControl As Control = Me.ElementTree.Control.Parent
-        While parentControl IsNot Nothing
-            controlLocationInScreen.X += parentControl.Location.X
-            controlLocationInScreen.Y += parentControl.Location.Y
-            parentControl = parentControl.Parent
-        End While
+        controlLocationInScreen.X += form1.Size.Width - form1.ClientSize.Width;
+        controlLocationInScreen.Y += form1.Size.Height - form1.ClientSize.Height;
 
-        controlLocationInScreen.X += form1.Size.Width - form1.ClientSize.Width
-        controlLocationInScreen.Y += form1.Size.Height - form1.ClientSize.Height
-        controlLocationInScreen.Y += Me.Bounds.Height
+        controlLocationInScreen.Y += this.Bounds.Height;
 
-        Return controlLocationInScreen
-    End Function
+        return controlLocationInScreen;
+    }
+    protected override Size GetPopupSize(RadPopupControlBase popup, bool measure)
+    {
+        Size size = base.GetPopupSize(popup, measure);
+        size.Width = this.BoundingRectangle.Width;
+        // Adjust the size as needed
+        return size;
+    }
+}
 
-    Protected Overrides Function GetPopupSize(popup As RadPopupControlBase, measure As Boolean) As Size
-        Dim size As Size = MyBase.GetPopupSize(popup, measure)
-        size.Width = Me.BoundingRectangle.Width
-        Return size
-    End Function
-End Class
-```
+````
 
 3. Replace the standard `RadDropDownList` with the custom class `CustomDropDownList` in your project.
 
@@ -132,5 +134,4 @@ This solution allows you to define a custom location for the dropdown pop-up and
 
 ## See Also
 
-- [RadDropDownList Documentation](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol/dropdownlist/overview)
-- [Customizing DropDowns in Telerik UI for WinForms](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol/dropdownlist/customizing-raddropdownlist)
+- [RadDropDownList Documentation](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/overview)
