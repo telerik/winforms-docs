@@ -4,7 +4,7 @@ description: Learn how to customize the pop-up location of RadDropDownList when 
 type: how-to
 page_title: Adjusting RadDropDownList Pop-Up Behavior on Dual Monitors
 slug: dropdownlist-popup-dual-monitors
-tags: raddropdownlist, dual-monitors, pop-up-location, ui-for-winforms
+tags: dropdownlistcontrolandcheckeddropdownlist, dual-monitors, pop-up-location, ui-for-winforms
 res_type: kb
 ticketid: 1687869
 ---
@@ -134,4 +134,4 @@ This solution allows you to define a custom location for the dropdown pop-up and
 
 ## See Also
 
-- [RadDropDownList Documentation](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/overview)
+* [RadDropDownList Documentation](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/overview)
