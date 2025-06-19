@@ -29,6 +29,6 @@ Basically you need make both versions of the assemblies to match. From this poin
 1. Remove all versions of Telerik UI for WinForms from your computer and install just the latest one. Than update your project references to this. This should fix all issues by replacing the assemblies in your [GAC](http://msdn.microsoft.com/en-us/library/yf1d93sz%28v=vs.110%29.aspx) and Toolbox.
 2. Update the items in your Toolbox. This can be done automatically or manually:
     1. The automatic process is described in the following article VSX – [Toolbox Configurator](https://docs.telerik.com/devtools/winforms/visual-studio-integration/visual-studio-extensions/toolbox-configurator).
-    2. Description of the manual process can be found in the following KB article - [Manually add RadControls for WinForms to the VS Toolbox](/support/kb/winforms/details/manually-add-radcontrols-for-winforms-to-the-vs-toolbox).
+    2. Description of the manual process can be found in the following KB article - [Manually add RadControls for WinForms to the VS Toolbox](https://docs.telerik.com/devtools/winforms/visual-studio-integration/adding-radcontrols-to-visual-studio-toolbox).
 3. Change the referenced assemblies in your project to match the ones in your Toolbox. Information about this is available in the MSDN article [Managing Project References](http://msdn.microsoft.com/en-us/library/ez524kew.aspx).
 
