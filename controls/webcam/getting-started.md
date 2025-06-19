@@ -107,7 +107,7 @@ By default, the camera control will start automatically if a camera device is co
 ````
 ````VB.NET
 
-        radWebCam1.AutoStart = Falses
+        radWebCam1.AutoStart = False
 
 ````
 
