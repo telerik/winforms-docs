@@ -3,7 +3,7 @@ title: Set Your License Key in OpenEdge Project
 description: Learn how to add your Telerik UI for WinForms license OpenEdge environment.
 type: how-to
 page_title: Set Your License Key in OpenEdge Project
-slug: add-license-as-snippet-ci-cd
+slug: set-up-license-key-openedge
 tags: licensing, winforms, wf, cd, cd, code, snippet, openedge
 res_type: kb
 ---
