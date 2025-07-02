@@ -1,14 +1,21 @@
 ---
 title: Versions Upgrade
-page_title: Versions Upgrade - Installation Deployment and Distribution
-description: Learn how you can deal with one of the most common errors, after installing a new version of Telrik UI for WinForms. 
-slug: winforms/installation-deployment-and-distribution/versions-upgrade
-tags: install,nuget
-published: False
-position: 4
+description: Versions Upgrade - Installation Deployment and Distribution
+type: how-to
+page_title: Versions Upgrade Error
+slug: versions-upgrade
+position: 0
+tags: upgrade, project, version, installation
+res_type: kb
 redirect_to: /knowledge-base/versions-upgrade
 ---
 
+## Environment
+ 
+|Product Version|Product|Author|
+|----|----|----|
+|2025.2.520|Telerik UI for WinForms|[Nadya Todorova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
+ 
 # Versions Upgrade 
 
 In a .NET Framework project, after [installing a new version]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}) of the Telerik UI for WinForms suite, you may encounter design-time errors and an inability to build your project.
