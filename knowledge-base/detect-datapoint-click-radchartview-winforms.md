@@ -1,11 +1,11 @@
 ---
-title: How to detect DataPoint of RadBarSeries on Click in RadChartView
-description: Learn how to detect the underlying datapoint of a RadBarSeries when clicking on a specific bar in RadChartView.
+title: How to detect DataPoint of RadBarSeries on Mouse Click in RadChartView
+description: Learn how to detect the underlying datapoint of a BarSeries when clicking on a specific bar in RadChartView.
 type: how-to
 page_title: How to Detect DataPoint on Click in RadChartView for WinForms
 meta_title: How to Detect DataPoint on Click in RadChartView for WinForms
 slug: chartview-get-datapoint-mouse-click
-tags: radchartview, winforms, radbarseries, datapoint, mouseclick, hit-test
+tags: chartview, winforms, barseries, datapoint, mouseclick, hit-test
 res_type: kb
 ticketid: 1691155
 ---
@@ -26,6 +26,7 @@ To achieve this, handle the `MouseClick` event of RadChartView and use the `HitT
 Here is the code example:
 
 ````C#
+
 this.radChartView1.MouseClick += RadChartView1_MouseClick;
 
 private void RadChartView1_MouseClick(object sender, MouseEventArgs e)
@@ -44,9 +45,9 @@ private void RadChartView1_MouseClick(object sender, MouseEventArgs e)
     }
 }
 
-```
+````
 
 ## See Also
 
-- [RadChartView Documentation](https://docs.telerik.com/devtools/winforms/controls/chartview/overview)
-- [BarSeries](https://docs.telerik.com/devtools/winforms/controls/chartview/series-types/bar)
+* [RadChartView Documentation](https://docs.telerik.com/devtools/winforms/controls/chartview/overview)
+* [BarSeries](https://docs.telerik.com/devtools/winforms/controls/chartview/series-types/bar)
