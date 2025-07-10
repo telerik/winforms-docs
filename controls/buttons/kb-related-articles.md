@@ -18,6 +18,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Change popup default location]({%slug change-popup-location%})|
 |[Change the Color of Focus Cue Border for RadCheckBox]({%slug customize-focus-cues-of-radcheckbox%})|
 |[Creating a DropDownButton / SplitButton which shows the selected item’s text]({%slug creating-a-dropdownbutton-splitbutton-which-shows-the-selected-item-s-text%})|
+|[Displaying RadDropDownButton as an SVG Image in WinForms]({%slug dropdownbutton-display-svg-image%})|
 |[How to Change the CheckBox's Size]({%slug change-checkbox-size%})|
 |[Notification Button]({%slug notification-button%})|
 

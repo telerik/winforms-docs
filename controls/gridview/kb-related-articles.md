@@ -145,6 +145,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Node drag and drop between RadTreeView and RadGridView]({%slug node-drag-and-drop-between-radtreeview-and-radgridview%})|
 |[Permanent editor in a filter cell]({%slug gridview-permaneneditor-in-filter-cell%})|
 |[Prevent Column Dragging Over Pinned Columns in RadGridView for WinForms]({%slug gridview-prevent-column-drag-over-pinned%})|
+|[Preventing Focus on RadGridView in WinForms]({%slug gridview-prevent-focus%})|
 |[Print Header in RadGridView Only on the First Page]({%slug gridview-print-header-on-first-page%})|
 |[Printing RadGridView via Telerik Reporting]({%slug printing-radgridview-via-telerik-reporting%})|
 |[Quick Filter Bar for RadGridView]({%slug grid-quick-filter-bar%})|
@@ -157,6 +158,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Save and Restore the rows states when resetting.]({%slug keep-states-on-reset%})|
 |[Set CharacterCasing for GridViewComboBoxColumn]({%slug gridview-comboboxcolumn-charactercasing%})|
 |[Set default filter operators in RadGridView]({%slug default-filter-operator-gridview%})|
+|[Setting ToolTip Text for GridViewSparklineColumn in RadGridView for WinForms]({%slug gridview-sparkline-tooltip-text%})|
 |[Show a Tooltip for the RadGridView's Editor]({%slug show-tooltip-for-grid-editor%})|
 |[Show Row Details in RadGridView]({%slug row-details-in-gridview%})|
 |[Show Summary Values for Collapsed Groups in RadGridView]({%slug group-rows-with-summary-values%})|
