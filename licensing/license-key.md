@@ -9,9 +9,7 @@ position: 1
 
 # Setting Up Your Telerik UI for WinForms License Key
 
-Starting with the __Q1 2025 release__, the UI components from the Telerik UI for WinForms library require activation through a license key (trial or commercial). This article describes how to download your personal license key and use it to activate the Telerik UI for WinForms components.
-
-An invalid license results in [errors and warnings]({%slug license-errors-warnings%}) during build and run-time indicators such as watermarks and banners.
+Starting with the __Q1 2025 release__, the UI components from the Telerik UI for WinForms library require activation through a license key (trial or commercial). This article describes how to download your personal license key and use it to activate the Telerik UI for WinForms components. An invalid license results in [errors and warnings]({%slug license-errors-warnings%}) during build and run-time indicators such as watermarks and banners.
 
 ## Downloading the License Key
 
@@ -24,12 +22,12 @@ Depending on your development environment and preferences, you can install your 
 
 >note Update your license key whenever you [renew or purchase a new Telerik license](#updating-your-license-key).
 
-### Automatic License Key Installation
+## Automatic License Key Installation
 
 To download and install your Telerik license key automatically, you can use either of the following Telerik productivity tools. They can automatically download and store the license key in your home directory (`%appdata%\Telerik`) and make it available for all projects that you develop on your local machine. 
 These tools include [Telerik UI for WinForms Visual Studio extensions](#installing-a-license-key-with-the-vs-extensions) and [Telerik Control Panel](#installing-a-license-key-with-the-progress-control-panel)
 
-#### Installing a License Key with the VS Extensions
+### Installing a License Key with the VS Extensions
 
 To install your license key by using the [Telerik UI for WinForms Visual Studio extensions]({%slug winforms-installation-deployment-and-distribution-visual-studio-extensions%}):
 
@@ -39,14 +37,14 @@ To install your license key by using the [Telerik UI for WinForms Visual Studio 
     ![Installing a License Key with the VS Extensions](./images/install-license-key-VS-extensions.png)
 1. You might be asked to enter your Telerik credentials to log into your [Telerik account](https://www.telerik.com/account/).
 
- The Visual Studio extension automatically downloads the license key file to your home directory (`%appdata%\Telerik`), which activates the Telerik WinForms components.
+The Visual Studio extension automatically downloads the license key file to your home directory (`%appdata%\Telerik`), which activates the Telerik WinForms components.
 
 
-#### Installing a License Key with the Progress Control Panel
+### Installing a License Key with the Progress Control Panel
 
 To install your Telerik License Key by using the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction), start the application. It automatically downloads the license key file to your home directory (`%appdata%\Telerik`), which activates the Telerik WinForms components.
 
-### Manual License Key Installation
+## Manual License Key Installation
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 
