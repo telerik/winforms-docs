@@ -37,7 +37,7 @@ To install your license key by using the [Telerik UI for WinForms Visual Studio 
 1. Go to **Extensions > Telerik > Licensing > Download Key**.
 
     ![Installing a License Key with the VS Extensions](./images/install-license-key-VS-extensions.png)
-1. You mignt be asked to enter your Telerik credentials to log into your [Telerik account](https://www.telerik.com/account/).
+1. You might be asked to enter your Telerik credentials to log into your [Telerik account](https://www.telerik.com/account/).
 
  The Visual Studio extension automatically downloads the license key file to your home directory (`%appdata%\Telerik`), which activates the Telerik WinForms components.
 
@@ -63,9 +63,9 @@ To activate the Telerik UI for WinForms controls:
 
     * For Windows: `%AppData%\Telerik\telerik-license.txt`
     * For Mac/Linux: `~/.telerik/telerik-license.txt`
-    * Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
+    * Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control, as this is your personal license key.
 
-1. Download the `Telerik.Licensing` NuGet package from [NuGet.org](https://www.nuget.org/). It will add the **Telerik.Licensing.Runtime** assembly in your project which is required to activate the WinForms controls.
+1. Download the `Telerik.Licensing` NuGet package from [NuGet.org](https://www.nuget.org/). It will add the **Telerik.Licensing.Runtime** assembly in your project, which is required to activate the WinForms controls.
 
 When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the WinForms controls.
 
