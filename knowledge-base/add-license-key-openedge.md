@@ -30,7 +30,7 @@ In OpenEdge ABL applications, it is crucial to register the Telerik WinForms lic
 	
 1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys) in your Telerik account.
 
-1. On the Telerik UI for WinForms row, click the **View key** link in the **SCRIPT KEY** column. Copy only the string in the first Telerik.Licensing.EvidenceAttribute("key"). 
+1. On the Telerik UI for WinForms row, click the **View key** link in the **SCRIPT KEY** column. __Copy ONLY the key string in the first Telerik.Licensing.EvidenceAttribute("key").__ 
 
 	![copy-license-key](images/add-license-key-openedge.png)
 
