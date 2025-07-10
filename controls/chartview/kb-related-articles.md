@@ -24,6 +24,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Add Background Image to the Plot Area in ChartView]({%slug add-background-image-to-plot-area-in-chartview%})|
 |[How to add DataPoint on mouse click location.]({%slug chartview-add-datapoint-onclick%})|
 |[How to create sine wave using RadChartView spline AreaSeries]({%slug chartview-sine-wave%})|
+|[How to detect DataPoint of RadBarSeries on Mouse Click in RadChartView]({%slug chartview-get-datapoint-mouse-click%})|
 |[How to Detect if Mouse Click Location Belongs to ScatterLineSeries]({%slug detect-if-mouse-location-belongs-to-scatterlineseries%})|
 |[How to Draw a Moving Line Under the Mouse in RadChartView]({%slug chartview-moving-marker%})|
 |[How to get CategoricalAxis value on mouse click in CandleStickSeries]({%slug how-to-get-categoricalaxis-value-on-mouse-click-in-candlestickseries%})|

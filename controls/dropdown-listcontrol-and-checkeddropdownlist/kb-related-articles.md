@@ -18,6 +18,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Add Non-existing Items as Tokens in RadCheckedDropDownList]({%slug checked-dropdownlist-add-tokens%})|
 |[Auto-complete items with a check-box in RadCheckedDropDownList]({%slug autocomplete-items-with-checkbox-in-checkeddropdownlist%})|
 |[Custom Items in RadCheckedDropDownList's AutoComplete Popup]({%slug custom-items-in-checkeddropdownlist-autocomplete-popup%})|
+|[Customizing RadDropDownList Pop-Up Location Across Dual Monitors in UI for WinForms]({%slug dropdownlist-popup-dual-monitors%})|
 |[Enlarging Checkboxes Within RadCheckedDropDownList Items]({%slug checkeddropdownlist-enlarge-checkboxes%})|
 |[How to Add User-Defined Values in RadDropDownList]({%slug user-defined-values-in-dropdownlist%})|
 |[How to AutoComplete Items Considering the Description Text in RadDropDownList]({%slug dropdownlist-autcomplete-in-description-text%})|
