@@ -20,7 +20,9 @@ I work in an OpenEdge environment and need to activate my Telerik UI for WinForm
 
 ## Solution
 
-The following tutorial will demonstrate how to set up your license key in the OpenEdge environment.
+In OpenEdge ABL applications, it is crucial to register the Telerik WinForms license key before any Telerik control, form, or component is initialized — especially if your application starts with a Telerik form. The following tutorial demonstrates how to set up your license key in the OpenEdge environment, either in a Form or in a procedure file.
+
+### Registering the License Key in the Form
 
 1. Go to the [Setting Up Your Telerik UI for WinForms License Key](https://docs.telerik.com/devtools/winforms/licensing/license-key#downloading-the-license-key) and follow the first two sections of the article.
 	1. Downloading the License Key
@@ -56,6 +58,14 @@ END CONSTRUCTOR.
 1. Add a reference to the `Telerik.Licensing.Runtime.dll`.
 
 >Do not publish the script license key snippet in publicly accessible repositories. This is your personal license key.
+
+### Registering the License Key in a Procedure File
+
+Unlike standard .NET applications, OpenEdge GUI applications always start from a procedure file (.p), not a class (.cls). This means there is always a non-GUI entry point where initialization code can safely run before any UI is loaded. 
+
+If registering the key inside a Form does not work — for example, when the first screen is a Telerik form — you should register the key earlier in your application's startup sequence. 
+
+For more advanced scenarios, including customizing the startup of your project, refer to the [Progress Developer Studio for OpenEdge Online Help](https://docs.progress.com/bundle/openedge-developer-studio-help/page/Customize-project-startup.html).
 
 
 ## See Also
