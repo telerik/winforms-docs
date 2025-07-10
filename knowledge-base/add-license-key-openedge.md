@@ -39,7 +39,6 @@ In OpenEdge ABL applications, it is crucial to register the Telerik WinForms lic
 ````ABL
 
 CONSTRUCTOR PUBLIC Form1 (  ):        
-	// ActivePerpetual script key	
 	Telerik.Licensing.TelerikLicensing:Register("Your License Key").
 	
 	InitializeComponent().
