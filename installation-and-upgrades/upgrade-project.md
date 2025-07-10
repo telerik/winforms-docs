@@ -34,7 +34,7 @@ If you are using NuGet packages, upgrade as follows:
 
 ## Upgrade via Telerik Visual Studio Extensions
 
-You can easily upgrade your Telerik UI for WinForms project using the [Visual Studio Extensions for Telerik UI for WinForms]({%slug winforms-installation-deployment-and-distribution-visual-studio-extensions%}). The Telerik extensions provide a user-friendly interface for managing Telerik references and resources directly within Visual Studio. Make sure you have the latest version of the Telerik Extensions installed for better user experience.
+You can easily upgrade your Telerik UI for WinForms project using the [Visual Studio Extensions for Telerik UI for WinForms]({%slug winforms-installation-deployment-and-distribution-visual-studio-extensions%}). The Telerik extensions provide a user-friendly interface for managing Telerik references and resources directly within Visual Studio. Make sure you have the latest version of the Telerik Extensions installed for a better user experience.
 
 To upgrade using Telerik Visual Studio Extensions:
 
@@ -48,14 +48,14 @@ To upgrade using Telerik Visual Studio Extensions:
 
 ## Manual Assembly Upgrade
 
-If you are using local assemblies or you just installed Telerik UI for WinForms using the msi installer, you should update manually your Telerik assemblies in the project. Follow the steps below to do so:
+If you are using local assemblies or have just installed Telerik UI for WinForms using the MSI installer, you should manually update your Telerik assemblies in the project. Follow the steps below to do so:
 
-1. Navigate to the folder containing all latest Telerik assemblies for the desired version. If using msi installer, it usually creates a folder at `C:\Program Files (x86)\Progress\Telerik UI for WinForms 2025 Q2`.
+1. Navigate to the folder containing all the latest Telerik assemblies for the desired version. If using msi installer, it usually creates a folder at `C:\Program Files (x86)\Progress\Telerik UI for WinForms 2025 Q2`.
 1. Remove old Telerik assemblies from your project references. In Visual Studio, open your project and expand the References section in Solution Explorer. Select and delete the existing Telerik assemblies.
 1. Right-click on References and select *Add Reference...*. Navigate to the folder of your fresh installation and select the required Telerik assemblies.
 1. Clean, then rebuild your project to ensure it uses the new version.
 
-> **Tip** For more information please check [Updating Assemblies in a Project]({%slug winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project%})
+> **Tip** For more information, please check [Updating Assemblies in a Project]({%slug winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project%})
 
 ## Upgrade using Progress Control Panel
 
