@@ -3,7 +3,7 @@ title: Setting Up Your License Key
 page_title: Setting Up Your License Key
 description: Learn how to activate the Telerik UI for WinForms components by downloading and setting up your Telerik components license key.
 slug: license-key
-tags: WinForms,components,license,activate,download
+tags: WinForms,components,license,activate,download,key,telerik,
 position: 1
 ---
 
@@ -51,7 +51,6 @@ To install your Telerik License Key by using the [Progress Control Panel](https:
 1. Click the **Download License Key** button.
 
     ![Download a Telerik UI for WinForms License Key](./images/download-license-key.png)
-
 
 ## Activating the Telerik UI for WinForms Components
 
