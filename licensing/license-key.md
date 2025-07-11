@@ -66,13 +66,13 @@ To activate the Telerik UI for WinForms controls:
 
 When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the WinForms controls.
 
-> If your project doesn’t use NuGet packages, see the [next document section](#installing-a-license-key-in-projects-without-nuget-references).
+> If your project doesn't use NuGet packages, see the [Adding a License Key to Projects without NuGet references](#installing-a-license-key-in-projects-by-using-telerik-assembly-references-without-nuget-packages).
 
-## Installing a License Key in Projects without NuGet References
+## Installing a License Key in Projects by Using Telerik Assembly References (without NuGet packages)
 
 Telerik strongly recommends the use of NuGet packages whenever possible. Only include the license key as a code snippet when NuGet packages are not an option.
 
-If you cannot use NuGet packages in your project, add the license as a code snippet:
+If you add the Telerik components to your project by referencing the Telerik assemblies, you must add the license to the project as a code snippet:
 
 1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys) in your Telerik account.
 
@@ -80,16 +80,38 @@ If you cannot use NuGet packages in your project, add the license as a code snip
 
     ![Download a Telerik UI for WinForms Script Key](./images/download-script-key.png)
 
-1. Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.
+1. A new Script Key window is shown with your C#/VB Script License Key. The code snippet from the Script Key contains an assembly attribute called EvidenceAttribute that holds information about the license key.
+- For C#: Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.  
+- For VB: Copy the VB code snippet into a new file, for example, `TelerikLicense.vb`.
 
-1. Add the `TelerikLicense.cs` file to your project.
+1. Add the `TelerikLicense.cs` (or `TelerikLicense.vb`) file to your project. 
+
+>caption TelerikLicense.cs file example using Script Key
+
+````C#
+
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WINFORMS-script-key-here")]
+        
+````
+
+In case you use multiple Telerik products in the same application (e.g. Wpf, Telerik Document Processing, Telerik Reporting), you will need to add seperate license script keys for all products that you use.
+
+>caption TelerikLicense.cs file with multiple Script Keys for different products
+
+````C#
+
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WPF-script-key-here")] 
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-Document-Processing-script-key-here")] 
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")] 
+        
+````
 
 >important Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
 
 
 ## Updating Your License Key
 
-Whenever you purchase a new Telerik UI for WinForms license or renew an existing one, always [download a new license key](#downloading-the-license-key). The new license key includes information about all previous license purchases. This process is referred to as a license key update. Once you have the new license key, use it to [activate the components](#activating-the-telerik-ui-for-net-winforms-components).
+Whenever you purchase a new Telerik UI for WinForms license or renew an existing one, always [download a new license key](#downloading-the-license-key), either automatically or manually. The new license key includes information about all previous license purchases. This process is referred to as a license key update. Once you have the new license key, use it to [activate the components](#activating-the-telerik-ui-for-net-winforms-components).
 
 ## See Also
 
