@@ -14,7 +14,7 @@ This article explains how to upgrade your Telerik UI for WinForms project to a n
 
 - [Upgrade using NuGet Package Manager](#upgrade-via-nuget-package-manager)
 - [Upgrade using Telerik Visual Studio Extensions](#upgrade-via-telerik-visual-studio-extensions)
-- [Manual Assembly Update](#manual-assembly-upgrade)
+- [Manual Assembly Upgrade](#manual-assembly-upgrade)
 - [Upgrade using Progress Control Panel](#upgrade-using-progress-control-panel)
 
 ## Upgrade via NuGet Package Manager
