@@ -30,7 +30,6 @@ Installation
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
 * [Major and Minor releases]({%slug winforms/getting-started/next-steps%})
 * [Updating Assemblies in a Project]({%slug winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project%})
-* [Versions Upgrade]({%slug winforms/installation-deployment-and-distribution/versions-upgrade%})
 * [Upgrade API Analyzer tool]({%slug upgrade-api-analyzer%})
 
 Appearance
