@@ -81,17 +81,16 @@ If you add the Telerik components to your project by referencing the Telerik ass
     ![Download a Telerik UI for WinForms Script Key](./images/download-script-key.png)
 
 1. A new Script Key window is shown with your C#/VB Script License Key. The code snippet from the Script Key contains an assembly attribute called EvidenceAttribute that holds information about the license key.
-- For C#: Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.  
-- For VB: Copy the VB code snippet into a new file, for example, `TelerikLicense.vb`.
+    - For C#: Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.  
+    - For VB: Copy the VB code snippet into a new file, for example, `TelerikLicense.vb`.
 
 1. Add the `TelerikLicense.cs` (or `TelerikLicense.vb`) file to your project. 
 
 >caption TelerikLicense.cs file example using Script Key
 
 ````C#
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WINFORMS-script-key-here")] 
 
-[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WINFORMS-script-key-here")]
-        
 ````
 
 In case you use multiple Telerik products in the same application (e.g. Wpf, Telerik Document Processing, Telerik Reporting), you will need to add seperate license script keys for all products that you use.
@@ -99,11 +98,10 @@ In case you use multiple Telerik products in the same application (e.g. Wpf, Tel
 >caption TelerikLicense.cs file with multiple Script Keys for different products
 
 ````C#
-
 [assembly: global::Telerik.Licensing.EvidenceAttribute("your-WPF-script-key-here")] 
 [assembly: global::Telerik.Licensing.EvidenceAttribute("your-Document-Processing-script-key-here")] 
-[assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")] 
-        
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")]     
+
 ````
 
 >important Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
