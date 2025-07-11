@@ -12,10 +12,10 @@ position: 4
 
 This article explains how to upgrade your Telerik UI for WinForms project to a newer version. You may upgrade your project using one of the following methods:
 
-- [NuGet Package Manager](#upgrade-via-nuget-package-manager)
-- [Telerik Visual Studio Extensions](#update-via-telerik-visual-studio-extensions)
-- [Manual Assembly Update](#manual-assembly-update)
-- [Updating with Progress Control Panel](#updating-with-progress-control-panel)
+- [Upgrade using NuGet Package Manager](#upgrade-via-nuget-package-manager)
+- [Upgrade using Telerik Visual Studio Extensions](#upgrade-via-telerik-visual-studio-extensions)
+- [Manual Assembly Update](#manual-assembly-upgrade)
+- [Upgrade using Progress Control Panel](#upgrade-using-progress-control-panel)
 
 ## Upgrade via NuGet Package Manager
 
@@ -44,7 +44,7 @@ To upgrade using Telerik Visual Studio Extensions:
 1. The extension will automatically update the references and resources in your project.
 1. Rebuild your project to ensure everything is up to date.
 
-> **Tip** For more information check [Upgrade Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%})
+> **Tip** For more information check [Telerik VS Extensions > Upgrade Project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%})
 
 ## Manual Assembly Upgrade
 
