@@ -15,7 +15,7 @@ The **Project Upgrade Wizard** is an essential feature of the Telerik Visual Stu
 
 ## Overview
 
-The Upgrade Wizard accessible by **Extensions > Telerik > Telerik UI for WinForms > Upgrade Wizard** menu item, simplifies the process of changing the Telerik UI for WinForms version used in your projects. This tool ensures a smooth transition between versions while maintaining project integrity.
+The Upgrade Wizard can be accessed in Visual Studio by **Extensions > Telerik > Telerik UI for WinForms > Upgrade Wizard**. It simplifies the process of changing the Telerik UI for WinForms version used in your projects. This tool ensures a smooth transition between versions while maintaining project integrity.
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ The wizard displays all projects in your solution that use Telerik UI for WinFor
 ![installation-deployment-and-distribution-vsx-upgrade-project 002](images/installation-deployment-and-distribution-vsx-upgrade-project002.png)
 
 
-### Step 3: Configure Toolbox and Backup Options
+### Step 4: Configure Toolbox and Backup Options
 
 The final configuration screen allows you to:
 
@@ -75,7 +75,7 @@ The final configuration screen allows you to:
 ![installation-deployment-and-distribution-vsx-upgrade-project 003](images/installation-deployment-and-distribution-vsx-upgrade-project003.png)
 
 
-### Step 4: Visual Studio Restart
+### Step 5: Visual Studio Restart
 
 Visual Studio will restart automatically to complete the toolbox update. If automatic restart fails, manually restart Visual Studio to finish the upgrade process. This ensures all new controls are properly registered in the toolbox.
 
@@ -95,7 +95,8 @@ Visual Studio will restart automatically to complete the toolbox update. If auto
 #### Distribution Content
 
 - Documentation and Live Examples are not included in wizard downloads
-- For complete installations with documentation, use the full MSI installer
+- For complete installations with documentation, use the full [MSI installer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
+
 
 # See Also
 
