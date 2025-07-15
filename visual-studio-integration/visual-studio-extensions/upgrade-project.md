@@ -11,52 +11,96 @@ previous_url: installation-deployment-and-distribution-vsx-upgrade-wizard,/devto
 
 # Upgrade project
 
-##
+The **Project Upgrade Wizard** is an essential feature of the Telerik Visual Studio Extensions that streamlines the process of upgrading your Telerik UI for WinForms projects to newer versions.
 
-An important feature in the Visual Studio Extensions is the __Project Upgrade Wizard__.
+## Overview
 
-The Upgrade Wizard (started by using the __Telerik > Telerik UI for WinForms > Upgrade Wizard__ menu item) is used to change the version of __Telerik UI for WinForms__ your projects use.
+The Upgrade Wizard can be accessed in Visual Studio by **Extensions > Telerik > Telerik UI for WinForms > Upgrade Wizard**. It simplifies the process of changing the Telerik UI for WinForms version used in your projects. This tool ensures a smooth transition between versions while maintaining project integrity.
 
-In addition to the pure assembly reference change, the upgrade wizard provides several important features:
+## Prerequisites
 
-* Check if a new version of __Telerik UI for WinForms__ is available on the Telerik website.
+Before using the Project Upgrade Wizard, ensure that:
 
-* Download of a newly discovered version.
+- You have the latest version of Telerik Visual Studio Extensions installed
+- Your project currently uses Telerik UI for WinForms controls
+- Visual Studio is closed for any projects you plan to upgrade (recommended)
 
-* Visual Studio toolbox update.
+## Key Features
 
-* Project themes upgrade.
+In addition to updating assembly references, the upgrade wizard provides several important additional features:
 
-* Current project backup.
+- **Version Detection**: Automatically checks if a new version of Telerik UI for WinForms is available on the Telerik website
+- **Automatic Download**: Downloads newly discovered versions directly from the wizard
+- **Toolbox Integration**: Updates the Visual Studio toolbox with the new control versions
+- **Theme Upgrade**: Upgrades project themes to be compatible with the new version
+- **Backup Creation**: Creates a backup of your current project before making changes
+- **Batch Processing**: Upgrades multiple projects in a solution simultaneously
 
-On the first step the wizard provides basic update process information:
+## Step-by-Step Upgrade Process
+
+### Step 1: Initialize the Upgrade Wizard
+
+You can find the Upgrade Wizard when you select the solution file in Visual Studio, then go to **Extensions > Telerik > Telerik UI for WinForms > Upgrade Wizard**.
+
+![installation-deployment-and-distribution-vsx-upgrade-project 000](images/installation-deployment-and-distribution-vsx-upgrade-project000.png)
+
+Alternatively, you can right-click on a project file with the mouse, then select **Telerik UI for WinForms > Upgrade Wizard** from the menu.
+
+### Step 2: Upgrade Wizard Information
+
+The wizard starts with an overview of the upgrade process, providing essential information about what will be updated and any important considerations.
 
 ![installation-deployment-and-distribution-vsx-upgrade-project 001](images/installation-deployment-and-distribution-vsx-upgrade-project001.png)
 
-On the next step the wizard lists all projects from the solution, which use Telerik UI for WinForms. You can choose which projects will be updated (it is recommended to upgrade all projects to the chosen version, not just part of them) and the version which they will be upgraded to. The Compatibility button will invoke the [Upgrade API Analyzer tool](http://docs.telerik.com/devtools/winforms/api-analyzer):
+### Step 3: Select Projects and Target Version
+
+The wizard displays all projects in your solution that use Telerik UI for WinForms. Here you can:
+
+- **Select Projects**: Choose which projects to upgrade. It's recommended to upgrade all projects to maintain version consistency in your solution.
+- **Choose Target Version**: Select the Telerik UI for WinForms version to upgrade.
+- **Check Compatibility**: Use the **Compatibility** button to invoke the [Upgrade API Analyzer tool](http://docs.telerik.com/devtools/winforms/api-analyzer) to identify potential breaking changes.
+
+>note Upgrading all projects in a solution to the same version prevents compatibility issues and ensures consistent behavior across your application.
 
 ![installation-deployment-and-distribution-vsx-upgrade-project 002](images/installation-deployment-and-distribution-vsx-upgrade-project002.png)
 
-The next screen allows you to update the Visual Studio Toolbox with the newly selected controls, so that you avoid accidental reference change during a control drag and drop, as well as creating a backup of your project:
+
+### Step 4: Configure Toolbox and Backup Options
+
+The final configuration screen allows you to:
+
+- **Update Toolbox**: Update the Visual Studio Toolbox with the newly selected control versions to prevent accidental reference mismatches during drag-and-drop operations.
+- **Create Backup**: Create a backup of your current project before applying changes (highly recommended).
 
 ![installation-deployment-and-distribution-vsx-upgrade-project 003](images/installation-deployment-and-distribution-vsx-upgrade-project003.png)
 
-Notes:
 
-* The Telerik UI for WinForms distribution selection screen lists all the versions that can be detected automatically. These are versions, installed by using the Windows Installer MSI package, versions, downloaded by the Upgrade Wizard and versions, available in the GAC. Hotfixes, downloaded manually cannot be detected.
+### Step 5: Visual Studio Restart
 
-* You can use the __GET LATEST__ button to access the Latest Version Acquirer and download the latest available version on our website.
+Visual Studio will restart automatically to complete the toolbox update. If automatic restart fails, manually restart Visual Studio to finish the upgrade process. This ensures all new controls are properly registered in the toolbox.
 
-* The distribution, downloaded by the Upgrade Wizard contains only the "hotfix" files, e.g. the barebone files, needed for a project to run correctly. It does not contain the documentation or the Live Examples.
+## Important Notes and Considerations
 
-* A Visual Studio restart will be required in order to update your toolbox. If the automatic restart fails, a restart should be initiated manually in order to complete the toolbox upgrade.
+#### Version Detection
+- The distribution selection screen automatically detects versions installed via Windows Installer MSI package
+- Versions downloaded by the Upgrade Wizard are detected
+- Versions available in the Global Assembly Cache (GAC) are detected
+- **Limitation**: Manually downloaded hotfixes cannot be automatically detected
 
-# See Also
+#### Latest Version Access
+- Use the **GET LATEST** button to access the [Latest Version Acquirer]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
+- This feature downloads the most recent version available from the Telerik website
+- Ensures you always have access to the newest features and bug fixes
+
+#### Distribution Content
+
+- Documentation and Live Examples are not included in wizard downloads
+- For complete installations with documentation, use the full [MSI installer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
+
+
+## See Also
 
 * [Configure Project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/configure-project%})
-
 * [Automatic Dependency Resolving]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-dependency-resolving%})
-
 * [Download New Version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
-
-* [How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})
+* [How to Upgrade a Telerik UI for WinForms Project]({%slug winforms/installation-deployment-and-distribution/upgrade-project%})
