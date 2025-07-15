@@ -81,6 +81,7 @@ If you add the Telerik components to your project by referencing the Telerik ass
     ![Download a Telerik UI for WinForms Script Key](./images/download-script-key.png)
 
 1. A new Script Key window is shown with your C#/VB Script License Key. The code snippet from the Script Key contains an assembly attribute called EvidenceAttribute that holds information about the license key.
+
     - For C#: Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.  
     - For VB: Copy the VB code snippet into a new file, for example, `TelerikLicense.vb`.
 
