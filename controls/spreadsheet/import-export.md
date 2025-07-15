@@ -69,18 +69,19 @@ End Using
 XlsxFormatProvider formatProvider = new XlsxFormatProvider();
 using (Stream output = new FileStream(fileName, FileMode.Create))
 {
-    formatProvider.Export(this.radSpreadsheet.Workbook, output);
+    // formatProvider.Export(this.radSpreadsheet.Workbook, output); //This method is obsolete since Q4 2024. 
+    formatProvider.Export(this.radSpreadsheet.Workbook, output, TimeSpan.FromSeconds(10));
 }
 
 ````
 ````VB.NET
 Dim formatProvider As New XlsxFormatProvider()
 Using output As Stream = New FileStream(fileName, FileMode.Create)
-    formatProvider.Export(Me.radSpreadsheet.Workbook, output)
+    ' formatProvider.Export(Me.radSpreadsheet.Workbook, output) This method is obsolete since Q4 2024. 
+    formatProvider.Export(Me.radSpreadsheet.Workbook, output, TimeSpan.FromSeconds(10))
 End Using
 
 ```` 
-
  
 {{endregion}} 
 
