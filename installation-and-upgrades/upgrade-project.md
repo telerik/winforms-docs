@@ -5,7 +5,7 @@ description: Learn how to use a specific version of the Telerik UI for WinForms 
 slug: winforms/installation-deployment-and-distribution/upgrade-project
 tags: upgrade, update,Telerik, project, assemblies, NuGet, packages
 published: True
-position: 4 
+position: 6 
 ---
 
 # How to Upgrade Telerik UI for WinForms Project
