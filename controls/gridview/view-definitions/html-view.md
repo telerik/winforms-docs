@@ -149,13 +149,13 @@ RadGridView1.ViewDefinition = view
 
 {{endregion}} 
 
->caution You need to assign the view definition to the *ViewDefinition* property of RadGridView as described in the[overview section]({%slug winforms/gridview/view-definitions/overview%}).
+>caution You need to assign the view definition to the *ViewDefinition* property of RadGridView as described in the [overview section]({%slug winforms/gridview/view-definitions/overview%}).
 >
 
 >caution You need to either create the columns manually or supply a data source which will generate them.
 >
 
-# See Also
+## See Also
 * [Column Groups View]({%slug winforms/gridview/view-definitions/column-groups-view%})
 
 * [Overview]({%slug winforms/gridview/view-definitions/overview%})
