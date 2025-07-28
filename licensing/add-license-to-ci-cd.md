@@ -36,8 +36,24 @@ The recommended approach for providing your license key to the `Telerik.Licensin
 
 ### Azure Pipelines (Classic)
 
-1. Create a new [user-defined variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=classic%2Cbatch) named `TELERIK_LICENSE`.
+In Classic Pipelines, the user-defined variables can only hold up t0 4k characters. This is too small for the full key, as an alternative there are two more popular options.
+
+#### Option 1. Azure KeyVault Linked Variable
+
+1. In Azure Key Vault, create a new variable named `TELERIK_LICENSE`
 1. Paste the contents of the license key file as a value.
+1. In the classic pipeline, use the linked variable
+
+#### Option 2. Secure File
+
+1. Upload your telerik-license.txt file as a Secure File in your AzDO project. See [Secure Files](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops) for instructions.
+1. In the pipeline, use the Download Secure File task
+    1. Important: Set the Output Variables reference name, otherwise you cannot reference it in a later step.
+        - <img width="246" height="193" alt="image" src="https://github.com/user-attachments/assets/6ae039a4-de0b-4457-8cc0-4ce3e618f976" />
+1. Just prior the build task, add a PowerShell step to move the file to `$(Build.Repository.LocalPath)` and we will automatically locate it.
+    1. Example: `Move-Item -Path $(telerik.secureFilePath)  -Destination $(Build.Repository.LocalPath)`
+
+For a walkthrough example and more details, see [DevOps Examples - Telerik License with Secure File in Classic Pipeline](https://github.com/LanceMcCarthy/DevOpsExamples?tab=readme-ov-file#classic-pipeline)
 
 ### GitHub Actions
 
