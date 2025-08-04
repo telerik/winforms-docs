@@ -32,7 +32,7 @@ Here is a list of the controls which support __UI Automation__.
 
 As of Q3 2025 UI Automation can be controlled globally for all Telerik UI for WinForms controls through the static **RadControl.EnableUIAutomationDefaultValue** property. This allows you to enable or disable UI Automation support for RadControls across your entire application.
 
->note UI Automation is enabled by default.
+>note UI Automation is enabled by default. If you need to disable it globally for all RadControls see [Disable UI Automation](#disable-ui-automation)
 
 ### Disable UI Automation
 
