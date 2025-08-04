@@ -115,9 +115,9 @@ The __RadRichTextEditor__ control raises the following specific events:
                 
 	* A __SelectedLayoutBoxChangedEventArgs__ object.
 
-* __BeforeOpenFile__ - occurs before a file is opened, before the open file dialog is shown. Subscribe to this event to customize the OpenFileDialog properties (like FileName, Title, Filter, InitialDirectory, etc.) before it is displayed to the user. Allows to be canceled.
+* __BeforeOpenFile__ - occurs before a file is opened, before the open file dialog is shown. Subscribe to this event to customize the OpenFileDialog properties (like FileName, Title, Filter, InitialDirectory, etc.) before it is displayed to the user. Allows to be canceled by setting e.Cancel to true.
 
-* __BeforeSaveFile__ -  occurs before the file is saved, before the save file dialog is shown. Subscribe to this event to customize the SaveFileDialog properties (like FileName, Title, Filter, InitialDirectory, etc.) before it is displayed to the user. Allows to be canceled.
+* __BeforeSaveFile__ -  occurs before the file is saved, before the save file dialog is shown. Subscribe to this event to customize the SaveFileDialog properties (like FileName, Title, Filter, InitialDirectory, etc.) before it is displayed to the user. Allows to be canceled by setting e.Cancel to true.
 
 
 # See Also

@@ -106,9 +106,36 @@ End Sub
 
 * **WorkbookContentChanged**: Occurs when the content of the workbook is changed.
 
+* **BeforeOpenFile**: Occurs before a file is opened, before the open file dialog is shown. Subscribe to this event to customize the OpenFileDialog properties (like FileName, Title, Filter, InitialDirectory, etc.) before it is displayed to the user. Allows to be canceled by setting e.Cancel to true.
+
+* **BeforeSaveFile**: Occurs before the file is saved, before the save file dialog is shown. Subscribe to this event to customize the SaveFileDialog properties (like FileName, Title, Filter, InitialDirectory, etc.) before it is displayed to the user. Allows to be canceled by setting e.Cancel to true.
+
+#### Example 3: Specify FileName, Title, Filter properties before saving a file in SaveFileDialog 
+
+{{source=..\SamplesCS\Spreadsheet\Events.cs region=radspreadsheet-events_4}} 
+{{source=..\SamplesVB\Spreadsheet\Events.vb region=radspreadsheet-events_4}}
+````C#
+private void RadSpreadsheet_BeforeSaveFile(object sender, Telerik.WinForms.Controls.Spreadsheet.Worksheets.SaveFileDialogEventArgs e)
+{
+    e.Dialog.FileName = "TelerikSpreadsheet.xlsx"; // Default file name
+    e.Dialog.Title = "Open Spreadsheet File";     // Title of the dialog
+    e.Dialog.Filter = "Spreadsheet files (*.xlsx)|*.xlsx|All files (*.*)|*.*"; // Filter for the file types
+}
+
+````
+````VB.NET
+Private Sub RadSpreadsheet_BeforeSaveFile(ByVal sender As Object, ByVal e As Telerik.WinForms.Controls.Spreadsheet.Worksheets.SaveFileDialogEventArgs)
+    e.Dialog.FileName = "TelerikSpreadsheet.xlsx" ' Default file name
+    e.Dialog.Title = "Open Spreadsheet File"      ' Title of the dialog
+    e.Dialog.Filter = "Spreadsheet files (*.xlsx)|*.xlsx|All files (*.*)|*.*" ' Filter the file types
+End Sub
+
+```` 
+
+{{endregion}} 
+
 
 ## Workbook Events
-
 
 * **ActiveSheetChanged**: Occurs when the active sheet is changed.
 
