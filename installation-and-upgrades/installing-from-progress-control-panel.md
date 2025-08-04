@@ -5,7 +5,7 @@ description: Installing and Removing from Progress Control Panel
 slug: installing-from-progress-control-panel
 tags: installing, control, panel
 published: True
-position: 2 
+position: 3 
 ---
 
 # Installing from Progress Control Panel

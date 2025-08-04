@@ -5,7 +5,7 @@ description: Assembly Version
 slug: assemblies-version
 tags: install,nuget
 published: True
-position: 4
+position: 5
 ---
 
 # Assembly Version 

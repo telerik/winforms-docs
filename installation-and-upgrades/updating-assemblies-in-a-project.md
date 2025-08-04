@@ -5,7 +5,7 @@ description: Learn how to use a specific version of the Telerik UI for WinForms 
 slug: winforms/installation-deployment-and-distribution/updating-assemblies-in-a-project
 tags: update, assemblies, project
 published: True
-position: 4 
+position: 8
 ---
 
 # Updating Assemblies in a Project
