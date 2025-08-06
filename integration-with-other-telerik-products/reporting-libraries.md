@@ -30,7 +30,7 @@ Once the installation is successful, you can add the Telerik ReportViewer to you
 
 The item template is available in the __Add New Item__ dialog box under the Windows Form category.
 
-![Telerik ReportViewer Form](images/telerik_reporting_1.png) 
+![Telerik ReportViewer Form](images/telerik_reporting_2.png) 
 
 * Build the project and check that the project is using a compatible .NET version.
 * Open the Add New Report Viewer dialog to choose a report definition for the report viewer.
