@@ -1,9 +1,9 @@
 ---
 title: Design Time 
-page_title: NET Core Design Time
+page_title: NET Design Time
 description:   
 slug: core-design-time
-tags: core, designer
+tags: core, designer, net, winforms
 published: True
 position: 1
 ---
