@@ -184,7 +184,7 @@ End Sub
 * **HyperlinkClicked**: Occurs when a hyperlink in the document gets clicked. The event allows you to either cancel or replace the navigation logic. HyperlinkClicked event can be used as a confirmation from the end-user whether to proceed or not with opening a hyperlink due to security reasons.
   With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be canceled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
 
-#### Example 3: Using the HyperlinkClicked event to implement confirmation for the clicked links in the document
+#### Example 4: Using the HyperlinkClicked event to implement confirmation for the clicked links in the document
 
 {{source=..\SamplesCS\Spreadsheet\Events.cs region=HyperlinkClickedEvent}} 
 {{source=..\SamplesVB\Spreadsheet\Events.vb region=HyperlinkClickedEvent}}
@@ -234,7 +234,7 @@ End Sub
 
 * **CellPropertyChanged**: Occurs when a property of a cell is changed. The event arguments are of type **CellPropertyChangedEventArgs** and expose information about the exact property that was changed as well as the affected cell range. **Example 3** demonstrates how you can use the event to get a notification when the users change the fill of a cell.
 
-#### Example 4: Using the CellPropertyChangedEvent
+#### Example 5: Using the CellPropertyChangedEvent
 
 {{source=..\SamplesCS\Spreadsheet\Events.cs region=radspreadsheet-events_3}} 
 {{source=..\SamplesVB\Spreadsheet\Events.vb region=radspreadsheet-events_3}}
