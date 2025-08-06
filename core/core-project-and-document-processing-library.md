@@ -1,18 +1,18 @@
 ---
-title: Document Processing Library and WinForms .NET Core application
-page_title: Document Processing Library and WinForms .NET Core application
+title: Document Processing Library and WinForms .NET application
+page_title: Document Processing Library and WinForms .NET application
 description:  
 slug: core-project-and-document-processing-library
-tags: document processing, WinForms application, .NET Core
+tags: document processing, WinForms application, .NET
 published: True
 position: 5
 ---
 
-# Telerik Document Processing Libraries and WinForms .NET Core application. 
+# Telerik Document Processing Libraries and WinForms .NET application
 
 Since the Telerik Document Processing Libraries depend on some types from WPF using any library in a WinForms application requires making changes in the project file. This is not necessary in the .NET framework projects where you can just add the references in Visual Studio. 
 
-By default, when creating a WinForms .NET Core application the **Microsoft.WindowsDesktop.App.WindowsForms** framework is added. This does not include the required WPF references. 
+By default, when creating a WinForms .NET application the **Microsoft.WindowsDesktop.App.WindowsForms** framework is added. This does not include the required WPF references. 
 
 ![core-project-and-document-processing-library001](images/core-project-and-document-processing-library001.png)
 
