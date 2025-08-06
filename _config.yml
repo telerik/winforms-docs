@@ -26,7 +26,7 @@ navigation:
         title: Visual Studio Extensions 
         position: 4
     core:
-        title: NET Core
+        title: .NET Support
         position: 5
     winforms-converter:
         title: WinForms application modernization wizard
