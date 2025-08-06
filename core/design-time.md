@@ -30,8 +30,8 @@ The design time assemblies in .NET are resolved via the installed in the project
 >caption Figure 2: TelerikWinFormsApp in .NET using UI.for.WinForms.AllControls.Net90
 
 ![core-designer002](images/core-designer002.png)
-  
-    >caution Even though you may have an installation of the Telerik UI for WinForms suite, it is not enough to load the designer. It requires installing Telerik UI for WinForms NuGet package.
+
+>caution Even though you may have an installation of the Telerik UI for WinForms suite, it is not enough to load the designer. It requires installing Telerik UI for WinForms NuGet package.
 
 
 ## Tips and Tricks

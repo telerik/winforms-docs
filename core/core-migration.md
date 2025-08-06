@@ -8,14 +8,14 @@ published: True
 position: 3
 ---
 
-# Migrating to .NET Core  
+# Migrating to .NET
 
-## Requirements
+This article shows how to migrate from an existing WinForms .NET Framework project to a .NET project (.NET 8 or later).
 
 Before proceeding with this article please make sure that the following requirements are met:
+
 * **Visual Studio 2022 v17.0 and newer**
-   
-* **Telerik UI for WinForms NuGet package installed**:
+* **Telerik UI for WinForms NuGet package installed**
 
 ## Example 
 

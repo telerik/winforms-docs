@@ -16,7 +16,7 @@ Telerik provides sets of assemblies built against each supported .NET version. T
 
 If you are interested in migrating your app to .NET, see the [Migrating to .NET]({%slug core-migration%}) article.
 
-### .NET 8 Requirements
+## .NET 8 Requirements
 
 To use the Telerik UI for WinForms assemblies targeting .NET 8, the following prerequisites must be installed.
 
@@ -26,7 +26,7 @@ To use the Telerik UI for WinForms assemblies targeting .NET 8, the following pr
 
 * The latest version of **Telerik UI for WinForms NuGet package** available at [Telerik NuGet server](https://nuget.telerik.com/v3/index.json).
 
-### .NET 9 Requirements
+## .NET 9 Requirements
 
 To use the Telerik UI for WinForms assemblies targeting .NET 9, the following prerequisites must be installed.
 
@@ -36,7 +36,7 @@ To use the Telerik UI for WinForms assemblies targeting .NET 9, the following pr
 
 * The latest version of **Telerik UI for WinForms NuGet package** available at [Telerik NuGet server](https://nuget.telerik.com/v3/index.json).
 
-### Design-Time Support and Visual Studio ToolBox
+## Design-Time Support and Visual Studio ToolBox
 
 The Telerik controls can be drag/dropped from the Visual Studio Toolbox. To enable this under .NET you will need to reference the Telerik dlls via nuget package. Installing the nuget packages will add the corresponding controls in the toolbox. Drag and drop from the toolbox is available only for the projects that have the Telerik nuget packages installed.
 
