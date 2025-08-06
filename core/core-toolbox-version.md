@@ -1,20 +1,20 @@
 ---
-title: Adding RadControls to Visual Studio Toolbox in .NET Core Projects
-page_title: NET Core Toolbox Version
+title: Adding RadControls to Visual Studio Toolbox in .NET Projects
+page_title: NET Toolbox Version
 description:   
 slug: core-toolbox-version
-tags: core, designer, toolbox, net core
+tags: core, designer, toolbox, net, .NET, winforms
 published: True
 position: 1
 ---
 
-# Adding RadControls to Visual Studio Toolbox in .NET Core Projects
+# Adding RadControls to Visual Studio Toolbox in .NET Projects
 
-Telerik UI for WinForms controls used to be automatically added to Visual Studio's Toolbox during the [installation]({%slug winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox%}) process when using **.NET 2.0 (up to 4.8)** Framework in your project. This means that the Toolbox population relies on the Telerik WinForms version available in the Global Assembly Cache.
+Telerik UI for WinForms controls used to be automatically added to Visual Studio's Toolbox during the [installation]({%slug winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox%}) process when using **.NET Framework (up to 4.8)** in your project. This means that the Toolbox population relies on the Telerik WinForms version available in the Global Assembly Cache.
 
-With the introduction of .NET Core/.NET 5 and the WinForms designer, the Toolbox configuration doesn't rely on the GAC anymore and it is not necessary to have an installation of the Telerik UI for WinForms suite. 
+With the introduction of .NET and the Visual Studio .NET WinForms designer, the Toolbox configuration doesn't rely on the GAC anymore and it is not necessary to have an installation of the Telerik UI for WinForms suite. The design time assemblies in .NET are resolved via the installed in the project NuGet packages.
 
->important In order to enable the WinForms Designer, please get familiar with the requirements you need to meet: [Design Time]({%slug core-design-time%}).
+>important In order to enable the .NET WinForms Designer, please get familiar with the requirements here: [Design Time]({%slug core-design-time%}).
 
 ## Toolbox Version
 
@@ -26,17 +26,18 @@ The Toolbox version depends on the version of installed NuGet package:
 
 For example, if you have the UI.for.WinForms.AllControls.NetCore and you want to get another version in the Toolbox, it is necessary to:
 
-1\. Remove the current version of the **UI.for.WinForms.AllControls.NetCore** package:
+1\. Remove the current version of the **UI.for.WinForms.AllControls.Net** package:
 
 ![core-toolbox-version002](images/core-toolbox-version002.png)
 
 2\. Install the desired NuGet version: [Install using NuGet Packages]({%slug winforms/nuget%})
 
+>caption Install UI.for.WinForms.AllControls.Net90 vQ2 2025 (2025.2.520)
 ![core-toolbox-version003](images/core-toolbox-version003.png)
 
 3\. Rebuild the project.
 
->note The same approach is also valid for the other Telerik UI for WinForms packages, e.g. UI.for.WinForms.AllControls.Net60, UI.for.WinForms.Common, etc.
+>note The same approach is also valid for the other Telerik UI for WinForms packages, e.g. UI.for.WinForms.AllControls.Net80, UI.for.WinForms.Common, etc.
 
 ## Troubleshooting Visual Studio Toolbox
 
