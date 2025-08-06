@@ -1,7 +1,7 @@
 ---
 title: Design Time 
-page_title: NET Design Time
-description:   
+page_title: .NET Design Time
+description: Telerik UI for WinForms supports the Visual Studio .NET WinForms designer.
 slug: core-design-time
 tags: designer, .net, winforms
 published: True
