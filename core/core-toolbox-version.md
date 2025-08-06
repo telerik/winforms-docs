@@ -5,7 +5,7 @@ description:
 slug: core-toolbox-version
 tags: core, designer, toolbox, net, .NET, winforms
 published: True
-position: 1
+position: 4
 ---
 
 # Adding RadControls to Visual Studio Toolbox in .NET Projects
