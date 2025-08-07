@@ -16,7 +16,9 @@ ticketid: 1691649
 
 ## Description
 
-I am dynamically adding pages to the [RadNavigationView](https://docs.telerik.com/devtools/winforms/controls/navigationview/overview) control. I want users to reorder pages by dragging and dropping them without creating nested pages. All pages should remain in a single level. Additionally, I need a footer page pinned to the bottom that cannot be dragged or have other pages dropped below it or into it.
+By default, the RadNavigationView control allows you to reorder the navigation view items according to your preferences. The drag-drop behavior of the RadNavigationView control is achieved by the RadPageViewDragDropService, which can be accessed by the RadNavigationView1.NavigationViewElement.ItemDragService property. If customization is required, we will need to create  a custom class that derives from RadPageViewDragDropService and override the methods of the drag-drop service.
+
+In the following scenario, the drag-drop should be performed on the first level only, thus disabling the option to have nested drag-drop. Also, the footer item should not be draggable. 
 
 ## Solution
 
@@ -26,6 +28,7 @@ To achieve this, create a custom drag-and-drop service and override specific met
    Implement a custom class that derives from `RadPageViewDragDropService`. Override the `CanDragOver` method to restrict drop positions and prevent nested pages.
 
 ````C#
+
 public class CustomDragDropService : RadPageViewDragDropService
 {
     public CustomDragDropService(RadPageViewElement owner) : base(owner)
