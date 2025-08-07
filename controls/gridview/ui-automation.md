@@ -40,16 +40,16 @@ The table below outlines the __UI Automation__ properties most important for und
 
 #### DataRowUIAutomationProvider
 
-	* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.DataItem.Id
-	* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "data item"
-	* AutomationElementIdentifiers.NameProperty.Id
-	* AutomationElementIdentifiers.OrientationProperty.Id
-	* AutomationElementIdentifiers.IsContentElementProperty.Id
-	* AutomationElementIdentifiers.HasKeyboardFocusProperty.Id	
-	* AutomationElementIdentifiers.IsSelectionItemPatternAvailableProperty.Id
-	* AutomationElementIdentifiers.IsScrollItemPatternAvailableProperty.Id
-	* AutomationElementIdentifiers.IsGridItemPatternAvailableProperty.Id
-	* AutomationElementIdentifiers.IsTableItemPatternAvailableProperty.Id
+* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.DataItem.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "data item"
+* AutomationElementIdentifiers.NameProperty.Id
+* AutomationElementIdentifiers.OrientationProperty.Id
+* AutomationElementIdentifiers.IsContentElementProperty.Id
+* AutomationElementIdentifiers.HasKeyboardFocusProperty.Id	
+* AutomationElementIdentifiers.IsSelectionItemPatternAvailableProperty.Id
+* AutomationElementIdentifiers.IsScrollItemPatternAvailableProperty.Id
+* AutomationElementIdentifiers.IsGridItemPatternAvailableProperty.Id
+* AutomationElementIdentifiers.IsTableItemPatternAvailableProperty.Id
 
 [Selection Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iselectionitemprovider?view=windowsdesktop-9.0)
 [Scroll Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iscrollitemprovider?view=windowsdesktop-9.0)
@@ -58,22 +58,22 @@ The table below outlines the __UI Automation__ properties most important for und
 
 #### NewRowUIAutomationProvider
 
-	* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.DataItem.Id
-	* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "data item"
-	* AutomationElementIdentifiers.NameProperty.Id => "TableAddNewRow"
-	* AutomationElementIdentifiers.OrientationProperty.Id
-	* AutomationElementIdentifiers.IsContentElementProperty.Id
-	* AutomationElementIdentifiers.HasKeyboardFocusProperty.Id
+* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.DataItem.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "data item"
+* AutomationElementIdentifiers.NameProperty.Id => "TableAddNewRow"
+* AutomationElementIdentifiers.OrientationProperty.Id
+* AutomationElementIdentifiers.IsContentElementProperty.Id
+* AutomationElementIdentifiers.HasKeyboardFocusProperty.Id
 	
 #### TableHeaderRowUIAutomationProvider
 
-	* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Header.Id
-	* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "header"
-	* AutomationElementIdentifiers.NameProperty.Id => "TableHeaderRow"
-	* AutomationElementIdentifiers.OrientationProperty.Id
-	* AutomationElementIdentifiers.IsContentElementProperty.Id
-	* AutomationElementIdentifiers.HasKeyboardFocusProperty.Id	
-	* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
+* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Header.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "header"
+* AutomationElementIdentifiers.NameProperty.Id => "TableHeaderRow"
+* AutomationElementIdentifiers.OrientationProperty.Id
+* AutomationElementIdentifiers.IsContentElementProperty.Id
+* AutomationElementIdentifiers.HasKeyboardFocusProperty.Id	
+* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
 
 
 ### Cells 
@@ -102,41 +102,41 @@ The table below outlines the __UI Automation__ properties most important for und
 
 #### DataRowHeaderItemUIAutomationProvider
  
-	* AutomationElementIdentifiers.ControlTypeProperty.Id => "header item"
-	* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "header item"
-	* AutomationElementIdentifiers.IsOffscreenProperty.Id
-	* AutomationElementIdentifiers.NameProperty.Id
-	* AutomationElementIdentifiers.IsContentElementProperty.Id
-	* AutomationElementIdentifiers.IsControlElementProperty.Id
-	* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
-	* AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
+* AutomationElementIdentifiers.ControlTypeProperty.Id => "header item"
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "header item"
+* AutomationElementIdentifiers.IsOffscreenProperty.Id
+* AutomationElementIdentifiers.NameProperty.Id
+* AutomationElementIdentifiers.IsContentElementProperty.Id
+* AutomationElementIdentifiers.IsControlElementProperty.Id
+* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
+* AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
 		
 [InvokePattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iinvokeprovider?view=windowsdesktop-9.0)
 	
 #### DataRowSelectCellUIAutomationProvider
 
-	* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.CheckBox.Id
-	* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "check box"
-	* AutomationElementIdentifiers.IsOffscreenProperty.Id
-	* AutomationElementIdentifiers.NameProperty.Id
-	* AutomationElementIdentifiers.IsContentElementProperty.Id
-	* AutomationElementIdentifiers.IsControlElementProperty.Id
-	* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
-	* AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
+* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.CheckBox.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "check box"
+* AutomationElementIdentifiers.IsOffscreenProperty.Id
+* AutomationElementIdentifiers.NameProperty.Id
+* AutomationElementIdentifiers.IsContentElementProperty.Id
+* AutomationElementIdentifiers.IsControlElementProperty.Id
+* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
+* AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
 
 [TogglePattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.itoggleprovider?view=windowsdesktop-9.0)
 
 #### DataCellUIAutomationProvider
 
-	* AutomationElementIdentifiers.AutomationIdProperty.Id 
-	* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.CheckBox.Id
-	* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "data item"
-	* AutomationElementIdentifiers.IsOffscreenProperty.Id
-	* AutomationElementIdentifiers.NameProperty.Id
-	* AutomationElementIdentifiers.IsContentElementProperty.Id
-	* AutomationElementIdentifiers.IsControlElementProperty.Id
-	* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
-	* AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
+* AutomationElementIdentifiers.AutomationIdProperty.Id 
+* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.CheckBox.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "data item"
+* AutomationElementIdentifiers.IsOffscreenProperty.Id
+* AutomationElementIdentifiers.NameProperty.Id
+* AutomationElementIdentifiers.IsContentElementProperty.Id
+* AutomationElementIdentifiers.IsControlElementProperty.Id
+* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
+* AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
 
 [Invoke Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iinvokeprovider?view=windowsdesktop-9.0)
 [Value Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.valuepattern?view=windowsdesktop-9.0)
@@ -147,13 +147,14 @@ The table below outlines the __UI Automation__ properties most important for und
 
 #### DataCellEditUIAutomationProvider
 
-	* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Edit.Id
-	* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "edit"
-	* AutomationElementIdentifiers.IsControlElementProperty.Id => true
+* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Edit.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "edit"
+* AutomationElementIdentifiers.IsControlElementProperty.Id => true
 
 #### DataCellSpinnerUIAutomationProvider 
 
-	* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Spinner.Id
-	* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "spinner"
+* AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Spinner.Id
+* AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "spinner"
+	
 
 
