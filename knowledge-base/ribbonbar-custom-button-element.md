@@ -1,5 +1,5 @@
 ---
-title: Theming Derived RadButtonElement Instances in RadRibbonBar
+title: Apply Theming to custom RadButtonElement in RadRibbonBar
 description: Learn how to apply consistent themes to derived RadButtonElement instances in RadRibbonBar for UI for WinForms.
 type: how-to
 page_title: Applying Themes to Custom RadButtonElements in RadRibbonBar
