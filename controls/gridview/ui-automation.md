@@ -2,8 +2,8 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadGridView
 description: UI Automation Support (UI Accessibility) for RadGridView.   
-slug: RadGridView-ui-automation
-tags: RadGridView,ui,automation
+slug: gridview-ui-automation
+tags: radgridview,ui,automation
 published: True
 position: 15
 ---
@@ -32,6 +32,8 @@ The table below outlines the __UI Automation__ properties most important for und
 
 ### Rows
 
+This table describes the UI Automation support for different types of rows within RadGridView. Each row type is associated with a corresponding provider implementation, making them accessible to screen readers and automation tools.
+
 |Row Element|UIA Row Provider|Specific Implementation|
 |------|------|------|
 |Data Row|DataRowHeaderItemUIAutomationProvider|✅|
@@ -39,6 +41,8 @@ The table below outlines the __UI Automation__ properties most important for und
 |Table Header Row|DataRowHeaderItemUIAutomationProvider|✅|
 
 #### DataRowUIAutomationProvider
+
+This provider supports automation for standard data rows. 
 
 * AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.DataItem.Id
 * AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "data item"
@@ -51,12 +55,16 @@ The table below outlines the __UI Automation__ properties most important for und
 * AutomationElementIdentifiers.IsGridItemPatternAvailableProperty.Id
 * AutomationElementIdentifiers.IsTableItemPatternAvailableProperty.Id
 
-[Selection Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iselectionitemprovider?view=windowsdesktop-9.0)
-[Scroll Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iscrollitemprovider?view=windowsdesktop-9.0)
-[Grid Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.igriditemprovider?view=windowsdesktop-9.0)
-[Table Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.itableitemprovider?view=windowsdesktop-9.0)
+The following items outlines the supported automation patterns by the **DataRowUIAutomationProvider**.
+
+* [Selection Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iselectionitemprovider?view=windowsdesktop-9.0)
+* [Scroll Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iscrollitemprovider?view=windowsdesktop-9.0)
+* [Grid Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.igriditemprovider?view=windowsdesktop-9.0)
+* [Table Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.itableitemprovider?view=windowsdesktop-9.0)
 
 #### NewRowUIAutomationProvider
+
+This provider targets the "Add New Row" functionality.
 
 * AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.DataItem.Id
 * AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "data item"
@@ -66,6 +74,8 @@ The table below outlines the __UI Automation__ properties most important for und
 * AutomationElementIdentifiers.HasKeyboardFocusProperty.Id
 	
 #### TableHeaderRowUIAutomationProvider
+
+This provider targets the table header row.
 
 * AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Header.Id
 * AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "header"
@@ -78,6 +88,8 @@ The table below outlines the __UI Automation__ properties most important for und
 
 ### Cells 
 		
+This section provides a breakdown of the supported cell types in RadGridView and their corresponding UI Automation providers. Each cell type is linked to a provider responsible for handling its accessibility representation and available patterns.
+
 |Column Cells|UIA Cell Provider|Specific Implementation|
 |------|------|------|
 |GridViewRowHeaderColumn|DataRowHeaderItemUIAutomationProvider|✅|
@@ -102,6 +114,8 @@ The table below outlines the __UI Automation__ properties most important for und
 
 #### DataRowHeaderItemUIAutomationProvider
  
+Used primarily for row header cells, this provider ensures that header elements are correctly announced and interactable through assistive technologies.
+ 
 * AutomationElementIdentifiers.ControlTypeProperty.Id => "header item"
 * AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "header item"
 * AutomationElementIdentifiers.IsOffscreenProperty.Id
@@ -110,10 +124,14 @@ The table below outlines the __UI Automation__ properties most important for und
 * AutomationElementIdentifiers.IsControlElementProperty.Id
 * AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
 * AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
+
+The following items outlines the supported automation patterns by the **DataRowHeaderItemUIAutomationProvider**.
 		
-[InvokePattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iinvokeprovider?view=windowsdesktop-9.0)
+* [InvokePattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iinvokeprovider?view=windowsdesktop-9.0)
 	
 #### DataRowSelectCellUIAutomationProvider
+
+this provider enables UI Automation support for selection cells, typically rendered as checkboxes.
 
 * AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.CheckBox.Id
 * AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "check box"
@@ -124,9 +142,13 @@ The table below outlines the __UI Automation__ properties most important for und
 * AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
 * AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
 
-[TogglePattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.itoggleprovider?view=windowsdesktop-9.0)
+The following items outlines the supported automation patterns by the **DataRowSelectCellUIAutomationProvider**.
+
+* [TogglePattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.itoggleprovider?view=windowsdesktop-9.0)
 
 #### DataCellUIAutomationProvider
+
+A general-purpose provider used for various content cells. 
 
 * AutomationElementIdentifiers.AutomationIdProperty.Id 
 * AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.CheckBox.Id
@@ -138,20 +160,26 @@ The table below outlines the __UI Automation__ properties most important for und
 * AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
 * AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id
 
-[Invoke Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iinvokeprovider?view=windowsdesktop-9.0)
-[Value Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.valuepattern?view=windowsdesktop-9.0)
-[Selection Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iselectionitemprovider?view=windowsdesktop-9.0)
-[Scroll Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iscrollitemprovider?view=windowsdesktop-9.0)
-[Grid Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.igriditemprovider?view=windowsdesktop-9.0)
-[Table Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.itableitemprovider?view=windowsdesktop-9.0)
+The following items outlines the supported automation patterns by the base **DataCellUIAutomationProvider**.
+
+* [Invoke Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iinvokeprovider?view=windowsdesktop-9.0)
+* [Value Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.valuepattern?view=windowsdesktop-9.0)
+* [Selection Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iselectionitemprovider?view=windowsdesktop-9.0)
+* [Scroll Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iscrollitemprovider?view=windowsdesktop-9.0)
+* [Grid Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.igriditemprovider?view=windowsdesktop-9.0)
+* [Table Item Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.itableitemprovider?view=windowsdesktop-9.0)
 
 #### DataCellEditUIAutomationProvider
+
+This provider handles editable cells and reports them as ControlType.Edit.
 
 * AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Edit.Id
 * AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "edit"
 * AutomationElementIdentifiers.IsControlElementProperty.Id => true
 
 #### DataCellSpinnerUIAutomationProvider 
+
+Spinner cells, such as those in numeric columns, are handled by this provider. 
 
 * AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Spinner.Id
 * AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "spinner"
