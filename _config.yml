@@ -43,18 +43,21 @@ navigation:
     styling-and-appearance:
         title: Styling and Appearance
         position: 9
+    ai-coding-assistant:
+        title: AI Coding Assistant
+        position: 10
     tools:
         title: Tools
-        position: 10
+        position: 11
     integration-with-other-telerik-products:
         title: Integration with Other Telerik Products 
-        position: 11
+        position: 12
     testing:
          title: Testing
-         position: 12         
+         position: 13         
     deployment-and-distribution:
         title: Deployment and Distribution 
-        position: 13       
+        position: 14       
     security:
         title: Security
         position: 15
