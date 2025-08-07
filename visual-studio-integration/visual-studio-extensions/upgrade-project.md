@@ -11,13 +11,9 @@ previous_url: installation-deployment-and-distribution-vsx-upgrade-wizard,/devto
 
 # Upgrade project
 
-The **Project Upgrade Wizard** is an essential feature of the Telerik Visual Studio Extensions that streamlines the process of upgrading your Telerik UI for WinForms projects to newer versions.
+The **Project Upgrade Wizard** is an essential feature of the Telerik Visual Studio Extensions that streamlines the process of upgrading your Telerik UI for WinForms projects to newer versions. The Upgrade Wizard can be accessed in Visual Studio by **Extensions > Telerik > Telerik UI for WinForms > Upgrade Wizard**. It simplifies the process of changing the Telerik UI for WinForms version used in your projects. This tool ensures a smooth transition between versions while maintaining project integrity.
 
-## Overview
-
-The Upgrade Wizard can be accessed in Visual Studio by **Extensions > Telerik > Telerik UI for WinForms > Upgrade Wizard**. It simplifies the process of changing the Telerik UI for WinForms version used in your projects. This tool ensures a smooth transition between versions while maintaining project integrity.
-
-## Prerequisites
+### Prerequisites
 
 Before using the Project Upgrade Wizard, ensure that:
 
@@ -25,9 +21,9 @@ Before using the Project Upgrade Wizard, ensure that:
 - Your project currently uses Telerik UI for WinForms controls
 - Visual Studio is closed for any projects you plan to upgrade (recommended)
 
-## Key Features
+### Key Features
 
-In addition to updating assembly references, the upgrade wizard provides several important additional features:
+In addition to updating assembly references, the upgrade wizard provides also the following important features:
 
 - **Version Detection**: Automatically checks if a new version of Telerik UI for WinForms is available on the Telerik website
 - **Automatic Download**: Downloads newly discovered versions directly from the wizard
@@ -71,6 +67,7 @@ The final configuration screen allows you to:
 
 - **Update Toolbox**: Update the Visual Studio Toolbox with the newly selected control versions to prevent accidental reference mismatches during drag-and-drop operations.
 - **Create Backup**: Create a backup of your current project before applying changes (highly recommended).
+- **Show upgrade log when the Upgrade wizard finishes the upgrade**: The upgrade log can be checked/unchecked according to user preferences.
 
 ![installation-deployment-and-distribution-vsx-upgrade-project 003](images/installation-deployment-and-distribution-vsx-upgrade-project003.png)
 
