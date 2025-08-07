@@ -1,9 +1,9 @@
 ---
-title: MCP Server
-page_title: Telerik WinForms MCP Server
-description: Learn how to add and use the Telerik WinForms MCP Server as a WinForms AI coding assistant and code generator for better developer productivity. The Telerik WinForms MCP server provides proprietary context about Telerik UI for WinFormsto AI-powered software.
-slug: ai-mcp-server
-tags: telerik,WinForms,ai,ai server,coding assistant
+title: Copilot Extension
+page_title: Telerik WinForms GitHub Copilot Extension
+description: Learn how to add and use the Telerik WinForms GitHub Copilot extension as a WinForms AI coding assistant and code generator for better developer productivity. The Telerik WinForms GitHub Copilot extension provides proprietary context about Telerik UI for WinForms to AI-powered software.
+slug: ai-copilot-extension
+tags: telerik, WinForms, ai, coding assistant, ai server
 position: 1
 ---
 
