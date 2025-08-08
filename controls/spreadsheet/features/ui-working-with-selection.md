@@ -394,6 +394,58 @@ If a formula is already entered and you would like to see the references used in
 
 ![WinForms RadSpreadsheet Formula](images/RadSpreadsheet_UI_Selection_12.png)
 
+## Working with the Current Region
+
+The current region concept is represented by a **CellRange** object that contains all adjacent non-empty cells around the active cell of the **Selection** object. The range expands around the active cell in all directions, until it reaches empty cells.
+
+![WinForms RadSpreadsheet Current Region](images/RadSpreadsheet_UI_Selection_14.png)
+
+#### Get current region
+
+{{source=..\SamplesCS\Spreadsheet\SelectionCode.cs region=selection_14}} 
+{{source=..\SamplesVB\Spreadsheet\SelectionCode.vb region=selection_14}}
+````C#
+Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
+CellRange currentRegion = selection.CurrentRegion;
+
+````
+````VB.NET
+Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
+Dim currentRegion As CellRange = selection.CurrentRegion
+
+```` 
+ 
+{{endregion}} 
+
+To select the current region, call the SelectCurrentRegion method of the CellPosition instance.
+
+#### Select current region programmatically
+{{source=..\SamplesCS\Spreadsheet\SelectionCode.cs region=selection_15}} 
+{{source=..\SamplesVB\Spreadsheet\SelectionCode.vb region=selection_15}}
+````C#
+Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
+CellPosition activePosition = selection.ActiveRange.ActivePosition;
+
+bool result = activePosition.SelectCurrentRegion();
+//or 
+selection.Select(selection.CurrentRegion);
+
+
+````
+````VB.NET
+Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
+Dim activePosition As CellPosition = selection.ActiveRange.ActivePosition
+
+Dim result As Boolean = activePosition.SelectCurrentRegion()
+'or 
+selection.Select(selection.CurrentRegion)
+
+```` 
+ 
+{{endregion}} 
+
+The current region can also be selected also using the following keyboard combination: `Ctrl+Shift+Asterisk sign(8*) ` 
+
 # See Also
 
 * [How to Access RadSpreadsheet's Editor]({%slug access-editor-in-spreadsheet%}) 
