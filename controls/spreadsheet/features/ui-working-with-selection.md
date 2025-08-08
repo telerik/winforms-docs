@@ -425,17 +425,14 @@ To select the current region, call the SelectCurrentRegion method of the CellPos
 ````C#
 Selection selection = this.radSpreadsheet.ActiveWorksheetEditor.Selection;
 CellPosition activePosition = selection.ActiveRange.ActivePosition;
-
 bool result = activePosition.SelectCurrentRegion();
 //or 
 selection.Select(selection.CurrentRegion);
-
 
 ````
 ````VB.NET
 Dim selection As Selection = Me.radSpreadsheet.ActiveWorksheetEditor.Selection
 Dim activePosition As CellPosition = selection.ActiveRange.ActivePosition
-
 Dim result As Boolean = activePosition.SelectCurrentRegion()
 'or 
 selection.Select(selection.CurrentRegion)
@@ -444,7 +441,7 @@ selection.Select(selection.CurrentRegion)
  
 {{endregion}} 
 
-The current region can also be selected also using the following keyboard combination: `Ctrl+Shift+Asterisk sign(8*) ` 
+The current region can also be selected using the following keyboard combination: `Ctrl+Shift+Asterisk sign(8*)` 
 
 # See Also
 
