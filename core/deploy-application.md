@@ -1,29 +1,29 @@
 ---
-title: Deploying WinForms .NET Core Application
-page_title: Deploying WinForms .NET Core Application  - NET Core
+title: Deploying WinForms .NET Application
+page_title: Deploying WinForms .NET Application
 description:   
 slug: core-getting-started
-tags: deploy, WinForms application, .NET Core
+tags: deploy, WinForms application, .NET
 published: True
 position: 4
 ---
 
-# Deploying WinForms .NET Core Application
+# Deploying WinForms .NET Application
 
-This article shows how to deploy a WinForms .NET Core Application using Visual Studio.
+This article shows how to deploy a WinForms .NET Application using Visual Studio.
 
 >tip Read more about the deployment approaches, their benefits and differences, in the [3 Ways to Deploy a WinForms or WPF .NET Core Application](https://www.telerik.com/blogs/3-ways-to-deploy-a-winforms-or-wpf-net-core-application) blog post.
 
-## Create an Application
+## Create .NET Application
 
 >tip This step is described only for testing purposes. If you prefer, you can go directly to the [Deploy the Application](#deploy-the-application) section of this article.
 
-1\. Create a new WinForms project using the [Telerik Visual Studio Extensions]({%slug winforms-installation-deployment-and-distribution-visual-studio-extensions%}). If the VSX is installed you will see the **Telerik C# WinForms Application (.NET Core)** template in the Visual Studio's project templates list.
+1\. Create a new WinForms project using the [Telerik Visual Studio Extensions]({%slug winforms-installation-deployment-and-distribution-visual-studio-extensions%}). If the VSX is installed you will see the **Telerik C# WinForms Application (.NET)** template in the Visual Studio's project templates list.
    
 ![create-new-project-001](images/deploy-application001.png)
 
 2\. Select one of the application templates from the New Project Wizard. For this example, I use the Excel-Inspired template.
-Currently, Telerik WinForms .NET Core project templates support both .NET Core assembly references (2020.3.915.310) and .NET Core package references (2020.3.915.310 NuGet). 
+Currently, Telerik WinForms .NET project templates support both .NET assembly references (2020.3.915.310) and .NET package references (2020.3.915.310 NuGet). 
 
 ![choose-template](images/deploy-application002.png)
 
@@ -43,7 +43,7 @@ Currently, Telerik WinForms .NET Core project templates support both .NET Core a
 
 ## Deploy the Application
 
->important The approach shown here is available with the official Visual Studio 2019 and later versions. If you use a previous build of VS, check the [Deploy .NET Core apps with Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs?tabs=vs156) MSDN article.
+>important The approach shown here is available with the official Visual Studio 2019 and later versions. If you use a previous build of VS, check the [Deploy .NET apps with Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs?tabs=vs156) MSDN article.
 
 1\. Right click the project in Visual Studio and select the **Publish** option. This will open the **Pick a publish taget** dialog.
    

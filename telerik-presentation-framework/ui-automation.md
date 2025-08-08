@@ -28,9 +28,24 @@ Here is a list of the controls which support __UI Automation__.
 * [RadRadioButton]({%slug radiobutton-ui-automation%})
 * [RadCheckBox]({%slug checkbox-ui-automation%})
 
+## Enable/Disable UI Automation Globally
+
+As of Q3 2025 UI Automation can be controlled globally for all Telerik UI for WinForms controls through the static **RadControl.EnableUIAutomationDefaultValue** property. This allows you to enable or disable UI Automation support for RadControls across your entire application.
+
+>note UI Automation is enabled by default. If you need to disable it globally for all RadControls see [Disable UI Automation](#disable-ui-automation)
+
+### Disable UI Automation
+
+To disable UI Automation globally (if accessibility features are not required in your application) you can set **EnableUIAutomationDefaultValue** to *false*. This setting should be configured early in your application lifecycle, preferably before creating any Telerik control.
+
+```csharp
+RadControl.EnableUIAutomationDefaultValue = false;
+
+```
+
 ## UI Accessibility
 
-Each control inside Telerik UI for WinForms suite is tested with the [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/) tool. This application executes tests, which check whether the controls have the right UI Automation properties. We've tested all of the controls from the our suite to ensure that there aren't any failed tests.
+Each control in the Telerik UI for WinForms suite is tested with the [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/) tool. This application executes tests which check whether the controls have the right UI Automation properties. We've tested all of the controls from our suite to ensure that there aren't any failed tests.
 
 
 
