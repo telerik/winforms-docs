@@ -14,7 +14,7 @@ __Configure Telerik WinForms Application__
 
 You can access the Project Configuration Wizard through the Telerik menu when you need to configure your Telerik WinForms application:
 
-![installation-deployment-and-distribution-vsx-overview 003](images/installation-deployment-and-distribution-vsx-overview003.png)
+![installation-deployment-and-distribution-vsx-overview 003](images/installation-deployment-and-distribution-vsx-configure-project000.png)
 
 The wizard could be also reached through the context menu counterparts accessed by right clicking on the project you want to convert.
 
