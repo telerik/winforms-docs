@@ -21,7 +21,7 @@ This functionality is enabled by default. To disable it, you can set the __Enabl
 |  ├─ [Header](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-header-control-type) (Table Header Row) |
 |   └─ [HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type) (Header Cells)|
 |  ├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row)|
-|   └─[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row Cells)|
+|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row Cells)|
 |  ├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Data Row)|
 |   └─ [HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type) (Row Header Cells)|
 |   └─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type) (Row Select Cells)|
