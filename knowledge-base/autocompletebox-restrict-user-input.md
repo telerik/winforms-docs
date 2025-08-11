@@ -14,7 +14,7 @@ ticketid: 1691827
 
 |Product Version|Product|Author|
 |----|----|----|
-|2025.2.520|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.2.520|RadAutoCompleteBox for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
