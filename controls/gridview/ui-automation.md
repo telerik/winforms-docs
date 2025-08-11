@@ -15,6 +15,24 @@ With the __Q3 2025__ version of our controls, RadGridView supports UI Automation
 This functionality is enabled by default. To disable it, you can set the __EnableUIAutomation__ property to false.
 
 
+| **UI Automation Tree - Control View**|**UI Automation Tree - Content View**|
+|------------------------|------------------------|
+| **RadGridView**     | **RadGridView**|
+| ├─ Table Header Row | Header Item    |
+| │  └─ Header Item   | New Item       |
+| ├─ New Item         | Data Item      |
+| ├─ Data Item        |                |
+| │  ├─ Text Box Item |                |
+| │  ├─ CheckBox Item |                |
+| │  ├─ Decimal Item  |                |
+| │  ├─ Hyperlink Item|                |
+| │  ├─ Command Item  |                |
+| │  ├─ Browse Item   |                |
+| │  ├─ MaskBox Item  |                |
+| │  ├─ Image Item    |                |
+| │  ├─ ComboBox Item |                |
+
+
 ````C#
 
 this.radGridView1.EnableUIAutomation = false;
@@ -34,11 +52,11 @@ The table below outlines the __UI Automation__ properties most important for und
 
 This table describes the UI Automation support for different types of rows within RadGridView. Each row type is associated with a corresponding provider implementation, making them accessible to screen readers and automation tools.
 
-|Row Element|UIA Row Provider|Specific Implementation|
+|Row Element|UIA Row Provider|
 |------|------|------|
-|Data Row|DataRowHeaderItemUIAutomationProvider|✅|
-|New Row|DataRowHeaderItemUIAutomationProvider|✅|
-|Table Header Row|DataRowHeaderItemUIAutomationProvider|✅|
+|Data Row|DataRowHeaderItemUIAutomationProvider|
+|New Row|NewRowUIAutomationProvider|
+|Table Header Row|TableHeaderRowUIAutomationProvider|
 
 #### DataRowUIAutomationProvider
 
@@ -90,27 +108,30 @@ This provider targets the table header row.
 		
 This section provides a breakdown of the supported cell types in RadGridView and their corresponding UI Automation providers. Each cell type is linked to a provider responsible for handling its accessibility representation and available patterns.
 
-|Column Cells|UIA Cell Provider|Specific Implementation|
+Several provider classes in this list: **DataRowHeaderItemUIAutomationProvider, DataCellSpinnerUIAutomationProvider, DataRowSelectCellUIAutomationProvider, and DataCellEditUIAutomationProvider** — derive from the base **DataCellUIAutomationProvider** class. This base class defines the core automation behavior that these providers extend for their specific cell types.
+
+|Column Cells|UIA Cell Provider|
 |------|------|------|
-|GridViewRowHeaderColumn|DataRowHeaderItemUIAutomationProvider|✅|
-|GridViewSelectColumn|DataRowSelectCellUIAutomationProvider|✅|
-|GridViewTextBoxColumn|DataCellEditUIAutomationProvider|✅|
-|GridViewDecimalColumn|DataCellSpinnerUIAutomationProvider|✅|
-|GridViewDateTimeColumn|DataCellUIAutomationProvider|❌|
-|GridViewCheckBoxColumn|DataCellCheckboxUIAutomationProvider|✅|
-|GridViewHyperlinkColumn|DataCellHyperLinkUIAutomationProvider|✅|
-|GridViewCommandColumn|DataCellCommandUIAutomationProvider|✅|
-|GridViewComboBoxColumn|DataCellComboBoxUIAutomationProvider|✅|
-|GridViewBrowseColumn|DataCellEditUIAutomationProvider|✅|
-|GridViewCalculatorColumn|DataCellUIAutomationProvider|❌|
-|GridViewColorColumn|DataCellUIAutomationProvider|❌|
-|GridViewTimeSpanColumn|DataCellUIAutomationProvider|❌|
-|GridViewImageColumn|DataCellImageUIAutomationProvider|✅|
-|GridViewMaskBoxColumn|DataCellEditUIAutomationProvider|✅|
-|GridViewColorColumn|DataCellUIAutomationProvider|❌|
-|RadMultiColumnComboBoxElement|DataCellUIAutomationProvider|❌|
-|GridViewRatingColumn|DataCellUIAutomationProvider|❌|
-|GridViewSparklineColumn|DataCellUIAutomationProvider|❌|
+|GridViewRowHeaderColumn|DataRowHeaderItemUIAutomationProvider|
+|GridViewSelectColumn|DataRowSelectCellUIAutomationProvider|
+|GridViewTextBoxColumn|DataCellEditUIAutomationProvider|
+|GridViewDecimalColumn|DataCellSpinnerUIAutomationProvider|
+|GridViewDateTimeColumn|DataCellUIAutomationProvider|
+|GridViewCheckBoxColumn|DataCellCheckboxUIAutomationProvider|
+|GridViewHyperlinkColumn|DataCellHyperLinkUIAutomationProvider|
+|GridViewCommandColumn|DataCellCommandUIAutomationProvider|
+|GridViewComboBoxColumn|DataCellComboBoxUIAutomationProvider|
+|GridViewBrowseColumn|DataCellEditUIAutomationProvider|
+|GridViewCalculatorColumn|DataCellUIAutomationProvider|
+|GridViewColorColumn|DataCellUIAutomationProvider|
+|GridViewTimeSpanColumn|DataCellUIAutomationProvider|
+|GridViewImageColumn|DataCellImageUIAutomationProvider|
+|GridViewMaskBoxColumn|DataCellEditUIAutomationProvider|
+|GridViewColorColumn|DataCellUIAutomationProvider|
+|RadMultiColumnComboBoxElement|DataCellUIAutomationProvider|
+|GridViewRatingColumn|DataCellUIAutomationProvider|
+|GridViewSparklineColumn|DataCellUIAutomationProvider|
+
 
 #### DataRowHeaderItemUIAutomationProvider
  
