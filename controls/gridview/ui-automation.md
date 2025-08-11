@@ -42,6 +42,8 @@ This functionality is enabled by default. To disable it, you can set the __Enabl
 |   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Rating Column Data Cell)|
 |   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Sparkline Column Data Cell)|
 |   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Calculator Column Data Cell)|
+|  ├─ [ScrollBar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type) (Vertical ScrollBar)|
+|  ├─ [ScrollBar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type) (Horizontal ScrollBar)|
 
 ````C#
 
