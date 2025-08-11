@@ -12,38 +12,39 @@ position: 15
 
 With the __Q3 2025__ version of our controls, RadGridView supports UI Automation. The current implementation of UI Automation for RadGridView is similar to the __MS WinForms RadGridView Control Type__ implementation with some extended functionality. The main goal of this implementation is to ensure compliance with accessibility standards and to provide a common practice for automated testing. 
 
-This functionality is enabled by default. To disable it, you can set the __EnableUIAutomation__ property to false.
+>caption Figure 1:  RadGridView UI Automation Tree Structure
 
-
-| **UI Automation Tree - RadGridView Control View**|
+| **Control View**|
 |------------------------|
 | ├─ [DataGrid](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-datagrid-control-type) (RadGridView Control  )|
-|  ├─ [Header](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-header-control-type) (Table Header Row) |
-|   └─ [HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type) (Header Cells)|
-|  ├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row)|
-|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row Cells)|
-|  ├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Data Row)|
-|   └─ [HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type) (Row Header Cells)|
-|   └─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type) (Row Select Cells)|
-|   └─ [Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type) (TextBox Column Data Cell)|
-|     └─ [Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type) (Cell TextBox Editor)|
-|   └─ [Spinner](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-spinner-control-type) (Decimal Column Data Cell)|
-|     └─ [Spinner](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-spinner-control-type) (Cell Spin Editor)|
-|   └─ [ComboBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-combobox-control-type) (ComboBox Column Data Cell)|
-|     └─ [ComboBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-combobox-control-type) (DropDownList Editor)|
-|   └─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type) (CheckBox Column Data Cell)|
-|   └─ [Button](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-button-control-type) (Command Column Data Cell)|
-|   └─ [Image](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-image-control-type) (Image Column Data Cell)|
-|   └─ [Hyperlink](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-hyperlink-control-type) (Hyperlink Column Data Cell)|
-|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (DateTime Column Data Cell)|
-|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Color Column Data Cell)|
-|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (TimeSpan Column Data Cell)|
-|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (MultiColumnComboBox Column Data Cell)|
-|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Rating Column Data Cell)|
-|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Sparkline Column Data Cell)|
-|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Calculator Column Data Cell)|
-|  ├─ [ScrollBar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type) (Vertical ScrollBar)|
-|  ├─ [ScrollBar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type) (Horizontal ScrollBar)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [Header](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-header-control-type) (Table Header Row) |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type) (Header Cells)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row Cells)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Data Row)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type) (Row Header Cells)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type) (Row Select Cells)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type) (TextBox Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type) (Cell TextBox Editor)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [Spinner](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-spinner-control-type) (Decimal Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Spinner](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-spinner-control-type) (Cell Spin Editor)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [ComboBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-combobox-control-type) (ComboBox Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [ComboBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-combobox-control-type) (DropDownList Editor)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type) (CheckBox Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [Button](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-button-control-type) (Command Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [Image](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-image-control-type) (Image Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [Hyperlink](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-hyperlink-control-type) (Hyperlink Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (DateTime Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Color Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (TimeSpan Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (MultiColumnComboBox Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Rating Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Sparkline Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Calculator Column Data Cell)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [ScrollBar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type) (Vertical ScrollBar)|
+| &nbsp;&nbsp;&nbsp;&nbsp;└─ [ScrollBar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type) (Horizontal ScrollBar)|
+
+This functionality is enabled by default. To disable it, you can set the __EnableUIAutomation__ property to false.
 
 ````C#
 
