@@ -15,23 +15,33 @@ With the __Q3 2025__ version of our controls, RadGridView supports UI Automation
 This functionality is enabled by default. To disable it, you can set the __EnableUIAutomation__ property to false.
 
 
-| **UI Automation Tree - Control View**|**UI Automation Tree - Content View**|
-|------------------------|------------------------|
-| **RadGridView**     | **RadGridView**|
-| ├─ Table Header Row | Header Item    |
-| │  └─ Header Item   | New Item       |
-| ├─ New Item         | Data Item      |
-| ├─ Data Item        |                |
-| │  ├─ Text Box Item |                |
-| │  ├─ CheckBox Item |                |
-| │  ├─ Decimal Item  |                |
-| │  ├─ Hyperlink Item|                |
-| │  ├─ Command Item  |                |
-| │  ├─ Browse Item   |                |
-| │  ├─ MaskBox Item  |                |
-| │  ├─ Image Item    |                |
-| │  ├─ ComboBox Item |                |
-
+| **UI Automation Tree - RadGridView Control View**|
+|------------------------|
+| ├─ [DataGrid](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-datagrid-control-type) (RadGridView Control  )|
+|  ├─ [Header](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-header-control-type) (Table Header Row) |
+|   └─ [HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type) (Header Cells)|
+|  ├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row)|
+|   └─[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (New Row Cells)|
+|  ├─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Data Row)|
+|   └─ [HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type) (Row Header Cells)|
+|   └─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type) (Row Select Cells)|
+|   └─ [Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type) (TextBox Column Data Cell)|
+|     └─ [Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type) (Cell TextBox Editor)|
+|   └─ [Spinner](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-spinner-control-type) (Decimal Column Data Cell)|
+|     └─ [Spinner](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-spinner-control-type) (Cell Spin Editor)|
+|   └─ [ComboBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-combobox-control-type) (ComboBox Column Data Cell)|
+|     └─ [ComboBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-combobox-control-type) (DropDownList Editor)|
+|   └─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type) (CheckBox Column Data Cell)|
+|   └─ [Button](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-button-control-type) (Command Column Data Cell)|
+|   └─ [Image](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-image-control-type) (Image Column Data Cell)|
+|   └─ [Hyperlink](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-hyperlink-control-type) (Hyperlink Column Data Cell)|
+|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (DateTime Column Data Cell)|
+|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Color Column Data Cell)|
+|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (TimeSpan Column Data Cell)|
+|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (MultiColumnComboBox Column Data Cell)|
+|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Rating Column Data Cell)|
+|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Sparkline Column Data Cell)|
+|   └─ [DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type) (Calculator Column Data Cell)|
 
 ````C#
 
@@ -52,11 +62,11 @@ The table below outlines the __UI Automation__ properties most important for und
 
 This table describes the UI Automation support for different types of rows within RadGridView. Each row type is associated with a corresponding provider implementation, making them accessible to screen readers and automation tools.
 
-|Row Element|UIA Row Provider|
+|Row Element|Telerik UIA Row Provider|UIA Control Type|
 |------|------|------|
-|Data Row|DataRowHeaderItemUIAutomationProvider|
-|New Row|NewRowUIAutomationProvider|
-|Table Header Row|TableHeaderRowUIAutomationProvider|
+|Data Row|DataRowHeaderItemUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|New Row|NewRowUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|Table Header Row|TableHeaderRowUIAutomationProvider|[Header](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-header-control-type)|
 
 #### DataRowUIAutomationProvider
 
@@ -110,27 +120,27 @@ This section provides a breakdown of the supported cell types in RadGridView and
 
 Several provider classes in this list: **DataRowHeaderItemUIAutomationProvider, DataCellSpinnerUIAutomationProvider, DataRowSelectCellUIAutomationProvider, and DataCellEditUIAutomationProvider** — derive from the base **DataCellUIAutomationProvider** class. This base class defines the core automation behavior that these providers extend for their specific cell types.
 
-|Column Cells|UIA Cell Provider|
+|Column Cells|Telerik UIA Cell Provider|UIA Control Type|
 |------|------|------|
-|GridViewRowHeaderColumn|DataRowHeaderItemUIAutomationProvider|
-|GridViewSelectColumn|DataRowSelectCellUIAutomationProvider|
-|GridViewTextBoxColumn|DataCellEditUIAutomationProvider|
-|GridViewDecimalColumn|DataCellSpinnerUIAutomationProvider|
-|GridViewDateTimeColumn|DataCellUIAutomationProvider|
-|GridViewCheckBoxColumn|DataCellCheckboxUIAutomationProvider|
-|GridViewHyperlinkColumn|DataCellHyperLinkUIAutomationProvider|
-|GridViewCommandColumn|DataCellCommandUIAutomationProvider|
-|GridViewComboBoxColumn|DataCellComboBoxUIAutomationProvider|
-|GridViewBrowseColumn|DataCellEditUIAutomationProvider|
-|GridViewCalculatorColumn|DataCellUIAutomationProvider|
-|GridViewColorColumn|DataCellUIAutomationProvider|
-|GridViewTimeSpanColumn|DataCellUIAutomationProvider|
-|GridViewImageColumn|DataCellImageUIAutomationProvider|
-|GridViewMaskBoxColumn|DataCellEditUIAutomationProvider|
-|GridViewColorColumn|DataCellUIAutomationProvider|
-|RadMultiColumnComboBoxElement|DataCellUIAutomationProvider|
-|GridViewRatingColumn|DataCellUIAutomationProvider|
-|GridViewSparklineColumn|DataCellUIAutomationProvider|
+|GridViewRowHeaderColumn|DataRowHeaderItemUIAutomationProvider|[HeaderItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type)|
+|GridViewSelectColumn|DataRowSelectCellUIAutomationProvider|[CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type)|
+|GridViewTextBoxColumn|DataCellEditUIAutomationProvider|[Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type)|
+|GridViewDecimalColumn|DataCellSpinnerUIAutomationProvider|[Spinner](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-spinner-control-type)|
+|GridViewDateTimeColumn|DataCellUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|GridViewCheckBoxColumn|DataCellCheckboxUIAutomationProvider|[CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type)|
+|GridViewHyperlinkColumn|DataCellHyperLinkUIAutomationProvider|[Hyperlink](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-hyperlink-control-type)|
+|GridViewCommandColumn|DataCellCommandUIAutomationProvider|[Button](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-button-control-type)|
+|GridViewComboBoxColumn|DataCellComboBoxUIAutomationProvider|[ComboBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-combobox-control-type)|
+|GridViewBrowseColumn|DataCellEditUIAutomationProvider|[Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type)|
+|GridViewCalculatorColumn|DataCellUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|GridViewColorColumn|DataCellUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|GridViewTimeSpanColumn|DataCellUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|GridViewImageColumn|DataCellImageUIAutomationProvider|[Image](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-image-control-type)|
+|GridViewMaskBoxColumn|DataCellEditUIAutomationProvider|[Edit](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-edit-control-type)|
+|GridViewColorColumn|DataCellUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|RadMultiColumnComboBoxElement|DataCellUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|GridViewRatingColumn|DataCellUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
+|GridViewSparklineColumn|DataCellUIAutomationProvider|[DataItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-dataitem-control-type)|
 
 
 #### DataRowHeaderItemUIAutomationProvider
