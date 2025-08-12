@@ -13,7 +13,7 @@ ticketid: 1695200
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2025.2.520|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.2.520|RadTimeOnlyPicker for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
