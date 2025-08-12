@@ -29,21 +29,21 @@ To hide the sheet selector and stretch the scrollbar in RadSpreadsheet, follow t
 Use the following code snippets:
 
 ````C#
-
 private void radSpreadsheet1_SizeChanged(object sender, EventArgs e)
-        {            
-this.radSpreadsheet1.SpreadsheetElement.SheetSelector.ScrollBar.Margin = new Padding(-1 * this.radSpreadsheet1.SpreadsheetElement.Size.Width / 2 - 20, -2, 0, 0);
-        }
+{            
+	this.radSpreadsheet1.SpreadsheetElement.SheetSelector.ScrollBar.Margin = new Padding(-1 * this.radSpreadsheet1.SpreadsheetElement.Size.Width / 2 - 20, -2, 0, 0);
+}
 
-        private void RadForm1_Load(object sender, EventArgs e)
-        {
-            while (this.radSpreadsheet1.SpreadsheetElement.SheetSelector.Children.Count>1)
-            {
-                this.radSpreadsheet1.SpreadsheetElement.SheetSelector.Children.RemoveAt(0);
-            }
-            this.radSpreadsheet1.SpreadsheetElement.SheetSelector.ScrollBar.MinSize = new Size(0, 20);
-            this.radSpreadsheet1.SpreadsheetElement.SheetSelector.ScrollBar.Margin = new Padding(-1 * this.radSpreadsheet1.Size.Width / 2 -20,-2, 0, 0);
-        }
+private void RadForm1_Load(object sender, EventArgs e)
+{
+	while (this.radSpreadsheet1.SpreadsheetElement.SheetSelector.Children.Count>1)
+	{
+		this.radSpreadsheet1.SpreadsheetElement.SheetSelector.Children.RemoveAt(0);
+	}
+	
+	this.radSpreadsheet1.SpreadsheetElement.SheetSelector.ScrollBar.MinSize = new Size(0, 20);
+	this.radSpreadsheet1.SpreadsheetElement.SheetSelector.ScrollBar.Margin = new Padding(-1 * this.radSpreadsheet1.Size.Width / 2 -20,-2, 0, 0);
+}
 
 ````
 
