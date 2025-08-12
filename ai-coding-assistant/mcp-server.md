@@ -99,67 +99,6 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 Add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`).
 
-## Visual Studio Code
-
-For complete setup instructions, see [Use MCP servers in Visual Studio Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
-
-> Visual Studio Code 1.102.1 or newer is required to use the Telerik MCP Server
-
-The basic setup in Visual Studio Code follows these steps:
-
-1. Enable [`chat.mcp.enabled`](vscode://settings/chat.mcp.enabled) in Visual Studio Code settings.
-2. Create `.vscode/mcp.json` in your workspace root (or user folder for global setup):
-
- ```json
- {
-   "servers": {
-     "telerik-winforms-assistant": {
-       "type": "stdio",
-       "command": "npx",
-       "args": ["-y", "@progress/telerik-winforms-mcp@latest"],
-       "env": {
-         "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-         // or
-         "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-       }
-     }
-   }
- }
- ```
-
-3. For global discovery, enable [`chat.mcp.discovery.enabled`](vscode://settings/chat.mcp.discovery.enabled) in `settings.json`:
-
- ```json
- {
-   "chat.mcp.discovery.enabled": true
- }
- ```
-
-4. Restart Visual Studio Code.
-
-## Cursor
-
-For complete setup instructions, see [Model Context Protocol](https://docs.cursor.com/context/mcp).
-
-Create `.cursor/mcp.json` in your workspace root (or user folder for global setup):
-
-```json
-{
-  "mcpServers": {
-    "telerikWinFormsAssistant": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@progress/telerik-winforms-mcp@latest"],
-      "env": {
-        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE",
-        // or
-        "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
-      }
-    }
-  }
-}
-```
-
 ## Usage
 
 To use the Telerik MCP Server:
