@@ -9,29 +9,35 @@ position: 0
 previous_url: installation-deployment-and-distribution-vsx-overview
 ---
 
-# Visual Studio Extensions
+# Visual Studio Extensions Overview
 
-__Visual Studio Extensions__ for __Telerik UI for WinForms__ aim to help developers when creating WinForms Application with __Telerik UI for WinForms__.
+[Visual Studio Extensions for Telerik UI for WinForms](https://marketplace.visualstudio.com/items?itemName=TelerikInc.TelerikWinFormsVSExtensions) are designed to streamline and enhance the development experience when creating desktop applications with **Telerik UI for WinForms**. These extensions provide comprehensive tooling support that simplifies common development tasks and accelerates project delivery.
 
-The extensions handle the following major points in the development with __Telerik UI for WinForms__:
+The extensions provide robust support across the entire development lifecycle with **Telerik UI for WinForms**:
 
-* __Project creation, conversion and configuration__ – reference management.
+* **Project creation, conversion and configuration** – Streamlined reference management and project setup.
 
-* __Project Upgrade__ - upgrading __Telerik UI for WinForms__ to a new version.
+* **License Key Management** – Automatically downloads the license key file from your account to your home directory (`%appdata%\Telerik`).
 
-* __Common scenario page creation__ - aid creating pages with basic scenarios in the usage of __Telerik UI for WinForms__.
+* **Project Upgrade** – Seamless upgrading of **Telerik UI for WinForms** to newer versions with dependency management.
 
-* __Toolbox configuration__ – select what version of Telerik UI to be populated in the Toolbox.
+* **Common scenario page creation** – Wizards and templates for creating frequently-used **Telerik UI for WinForms** scenarios.
 
-__Visual Studio Extensions__ for __Telerik UI for WinForms__ are distributed with the __Telerik UI for WinForms__ installer. They can be downloaded and installed as separate product from the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/) for Visual Studio 2019 and later. The extensions support Visual Studio 2019 and 2022, handling .NET 4.0+ applications.
+* **Toolbox configuration** – Easy selection and configuration of Telerik UI versions to populate in the Visual Studio Toolbox.
 
->important In 2024 Q1 (version 2024.1.130) the __Visual Studio Extensions__ for Visual Studio 2015 and 2017 is removed and is no longer distributed with the __Telerik UI for WinForms__ installer. The extension for Visual Studio 2015 and 2017 is still available as a separate integration package in the marketplace and can be downloaded from [here](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions).
+### Installation and Compatibility
 
-The __Visual Studio Extensions__ can be accessed through the __Telerik | Telerik UI for WinForms__ menu which has different menu items depending on the selected project in Visual Studio. The extensions can be accessed through the context menu of a WinForms Application as well.
+**Visual Studio Extensions for Telerik UI for WinForms** are distributed with the **Telerik UI for WinForms** installer and can also be downloaded separately from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TelerikInc.TelerikWinFormsVSExtensions) for Visual Studio 2019 and later versions.
 
-For Visual Studio 2022 **Visual Studio Extensions** can be accessed through the **Extensions | Telerik | Telerik UI for WinForms menu**.
+>important **Visual Studio Extensions for Telerik UI for WinForms** for Visual Studio 2015 and 2017 were discontinued in 2024 Q1 (version 2024.1.130) and are no longer distributed with the **Telerik UI for WinForms** installer. However, the extensions for Visual Studio 2015 and 2017 remain available as a separate package in the marketplace and can be downloaded [here](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions).
 
-#### Figure 1: __Access Telerik UI for WinForms menu__
+### Accessing the Extensions
+
+The Visual Studio Extensions can be accessed through the **Telerik | Telerik UI for WinForms** menu which has different menu items depending on the selected project in Visual Studio. The extensions are also accessible through the context menu when right-clicking on a WinForms application project in Solution Explorer. For Visual Studio 2022, access the extensions through **Extensions | Telerik | Telerik UI for WinForms**.
+
+Telerik menu adapts its available options based on your current project context:
+
+#### Figure 1: **Telerik UI for WinForms menu (no project selected)**
 
 ![installation-deployment-and-distribution-vsx-overview 001](images/installation-deployment-and-distribution-vsx-overview001.png)
 
@@ -44,10 +50,13 @@ For Visual Studio 2022 **Visual Studio Extensions** can be accessed through the 
 ![installation-deployment-and-distribution-vsx-overview 003](images/installation-deployment-and-distribution-vsx-overview003.png)
 
 
-After installed, the extensions add several project templates to the New Project dialog of Visual Studio:
+### Project Templates
+
+When the extensions are installed, they add several specialized project templates to Visual Studio's New Project dialog, providing quick-start options for different types of Telerik WinForms applications:
 
 #### Figure 4: __Telerik new project templates__
 
 ![installation-deployment-and-distribution-vsx-overview 004](images/installation-deployment-and-distribution-vsx-overview004.png)
 
->tip These are available in the language specific nodes of the dialog as well. New Project dialog contains __Telerik WinForms Application__ under both CSharp\Windows and Visual Basic\ Windows nodes.
+
+
