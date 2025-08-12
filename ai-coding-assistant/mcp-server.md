@@ -77,6 +77,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
  ```json
  {
+ "inputs": [],
    "servers": {
      "telerikWinFormsAssistant": {
        "type": "stdio",
