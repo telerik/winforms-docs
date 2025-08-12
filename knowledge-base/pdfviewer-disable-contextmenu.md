@@ -31,6 +31,7 @@ To disable the right-click context menu in PdfViewer for UI for WinForms, set th
 this.radPdfViewer1.RadContextMenu = null;
 
 ````
+
 In some cases, the default menu items need to be modified, and the [RadPdfViewer Context Menu]({%slug winforms/pdfviewer/ui/context-menu%}) article demonstrates how to do that.
 
 ## See Also
