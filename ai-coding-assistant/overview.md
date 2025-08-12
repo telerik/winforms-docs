@@ -7,7 +7,7 @@ tags: telerik,winforms,ai,coding assistant
 position: 0
 ---
 
-# Telerik UI for WinForms AI Coding Assistant
+# Telerik UI for WinForms AI Coding Assistant (Preview)
 
 The Telerik UI for WinForms AI Coding Assistant enhances your developer experience and increases productivity when building WinForms applications with Telerik UI for WinForms components.
 
