@@ -47,7 +47,7 @@ To use the Telerik WinForms Copilot extension:
 
 1. Open the GitHub Copilot chat window in your [Copilot-enabled app](https://docs.github.com/en/copilot/building-copilot-extensions/about-building-copilot-extensions#supported-clients-and-ides) (for example, Visual Studio or VS Code).
 1. Ensure you are in **Chat** mode and not in **Edit** or **Agent** mode. The Edit and Agent modes do not use the Telerik Copilot extension. However, the Agent mode can use the [Telerik WinForms MCP server]({%slug ai-mcp-server%}).
-1. Start your prompt with `@telerikmaui` and type your request. Verify that `@telerikmaui` is recognized and highlighted; otherwise, the extension may not be properly installed.
+1. Start your prompt with `@telerikwinforms` and type your request. Verify that `@telerikwinforms` is recognized and highlighted; otherwise, the extension may not be properly installed.
 1. Look for a status label such as **Telerik WinForms working...** or **Telerik WinForms generating response...** in the output to confirm the extension is active.
 1. Grant permission to the Telerik WinForms extension to read your workspace files when prompted.
 1. For unrelated queries, start a new chat session in a new window to avoid context pollution from previous conversations.
