@@ -14,7 +14,7 @@ ticketid: 1561729
 
 |Product Version|Product|Author|
 |----|----|----|
-|2025.2.520|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.2.520|RadSyntaxEditor for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
