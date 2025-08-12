@@ -38,10 +38,10 @@ As of Q3 2025 UI Automation can be controlled globally for all Telerik UI for Wi
 
 To disable UI Automation globally (if accessibility features are not required in your application) you can set **EnableUIAutomationDefaultValue** to *false*. This setting should be configured early in your application lifecycle, preferably before creating any Telerik control.
 
-```csharp
+````C#
 RadControl.EnableUIAutomationDefaultValue = false;
 
-```
+````
 
 ## UI Accessibility
 
