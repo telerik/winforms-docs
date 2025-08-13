@@ -5,7 +5,7 @@ description: WinForms Map can visualize data from the OpenStreetMaps.
 slug: winforms/map/providers/openstreetmapprovider
 tags: map, providers
 published: True
-position: 2 
+position: 3
 ---
 
 # OpenStreetMapProvider

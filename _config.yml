@@ -940,9 +940,12 @@ navigation:
     controls/map/providers:
         title: Providers
         position: 3
+    controls/map/providers/azure-map:
+        title: Azure Maps
+        position: 1
     controls/map/providers/bingmaps:
         title: Bing Maps
-        position: 1
+        position: 2
     controls/map/providers/bingmaps/elevation:
         title: Elevation
         position: 4
@@ -961,6 +964,7 @@ navigation:
     controls/map/how-to:
         title: How-To
         position: 9
+    
     controls/menus:
         title: Menus
         position: 290

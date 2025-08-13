@@ -5,7 +5,7 @@ description: WinForms Map can visualize data from local image files by using a L
 slug: winforms/map/providers/localmapprovider
 tags: map, providers
 published: True
-position: 3 
+position: 4
 ---
 
 # LocalMapProvider
