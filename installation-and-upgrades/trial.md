@@ -39,7 +39,7 @@ Trial license provides comprehensive access to evaluate Telerik UI for WinForms 
 
 ### During Active Trial Period
 
-During the active trial period, a popup message appears on application startup indicating that the application is using a trial version of Telerik UI for WinForms and also show the expiration days. All functionality during trial period remains fully accessible without restrictions.
+During the active trial period, a popup message appears on application startup indicating that the application is using a trial version of Telerik UI for WinForms and also shows the expiration days. All functionality during the Trial period remains fully accessible without restrictions.
 
 ![Banner](images/banner.png)
 
@@ -53,7 +53,7 @@ Once the trial period expires, the following trial indicators are displayed:
 
 ## Upgrading your Trial License to Commercial License
 
-To remove all trial limitations and enable production deployment, purchase and upgrade your trial license to a commercial Developer license. The commercial license eliminates all trial indicators and provides full rights for distribution and deployment of applications using Telerik UI for WinForms.
+To remove all trial limitations and enable production deployment, purchase and upgrade your trial license to a commercial Developer license. The commercial license eliminates all trial indicators and provides full rights for the distribution and deployment of applications using Telerik UI for WinForms.
 
 >important To upgrade your trial licence, please check [Updating Your License Key](https://docs.telerik.com/devtools/winforms/licensing/license-key#updating-your-license-key)
 
