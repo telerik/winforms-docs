@@ -5,7 +5,7 @@ description: This article show how you can use the  Upgrade API Analyzer tool in
 slug: upgrade-api-analyzer
 tags: api, analyzer, upgrade
 published: True
-position: 9
+position: 11
 ---
 
 # Telerik Upgrade API Analyzer 

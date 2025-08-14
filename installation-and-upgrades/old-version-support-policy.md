@@ -5,7 +5,7 @@ description: "Learn about the support policy on old versions, how bug fixes and 
 slug: old_versions_support_policy
 tags: old, policy
 published: True
-position: 10
+position: 12
 ---
 
 # Earlier Versions Support Policy in UI for WinForms
