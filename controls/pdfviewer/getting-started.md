@@ -21,6 +21,8 @@ This tutorial will help you to quickly get started using the control.
 
 To use `RadPdfViewer` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
 
+If you don’t need all controls, you can instead install a more lightweight package targeting only RadPdfViewer: **UI.for.WinForms.PdfViewer**. This package has a dependency on **UI.for.WinForms.Common**, **Telerik.Windows.Documents.Core**, and **Telerik.Windows.Documents.Fixed**, that will be automatically installed when adding the **PdfViewer NuGet**.
+
 Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
 
 >tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).

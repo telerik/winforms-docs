@@ -16,6 +16,17 @@ This tutorial will help you to quickly get started using the control.
 
 To use `RadSpreadsheet` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
 
+If you don’t need all controls, you can instead install a more lightweight package targeting only RadSpreadsheet: **UI.for.WinForms.RadSpreadsheet**. This package has a dependency on the following NuGets, that will be automatically installed when adding the **RadSpreadsheet NuGet**.
+
+* __UI.for.WinForms.Common__
+* __UI.for.WinForms.GridView__
+* __UI.for.WinForms.ChartView__
+* __Telerik.Windows.Documents.Core__
+* __Telerik.Windows.Documents.Spreadsheet__
+* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml__
+* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf__
+* __Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls__
+
 Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
 
 >tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
