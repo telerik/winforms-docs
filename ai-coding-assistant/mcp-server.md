@@ -41,7 +41,7 @@ Use these settings when configuring the server in your MCP client:
 | Type | `stdio` (standard input/output transport) |
 | Command | `npx` |
 | Arguments | `-y` |
-| Server Name | `telerikWinFormsAssistant` (customizable) |
+| Server Name | `telerik-winforms-mcp` (customizable) |
 
 ### License Configuration
 
