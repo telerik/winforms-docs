@@ -59,6 +59,28 @@ The Telerik UI for WinForms AI Coding Assistant currently covers the following a
 * Telerik.WinControls.RadDock
 * Telerik.WinControls.RichTextEditor
 
+## Usage Limits
+
+Access to the Telerik UI for WinForms AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
+
+#### Subscription License
+
+* A Subscription is the primary license that grants full access to the AI Coding Assistant.
+* Includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day.
+* Best for ongoing and high-volume usage.
+
+#### Perpetual License (Limited Access)
+
+* Perpetual licenses include limited access of 50 requests per year.
+* Intended for exploring and trying out the AI Coding Assistant.
+* For continued or higher-volume access, upgrade to a Subscription license.
+
+#### Trial License
+
+* Trial licenses include 300 requests per trial per year.
+* Reactivating the same trial for a new release does not grant additional requests.
+* Designed for evaluating the feature before purchasing.
+
 ## Recommendations
 
 Consider the following recommendations when working with the AI Coding Assistant:
@@ -83,15 +105,18 @@ The Telerik WinForms AI Coding Assistant allows the following maximum number of 
 The Telerik WinForms AI Coding Assistant operates under strict privacy guidelines:
 
 Data Access:
+
 * No access to your workspace and application code.
 * Exception: when using the Telerik MCP server (or any other MCP server), the LLM generates parameters for the MCP server request, which may include parts of your application code.
 
 Data Usage:
+
 * Your prompts are not used to train Telerik AI models.
 * Does not generate or access AI responses.
 * Provides enhanced context to improve responses from your chosen AI model (GPT, Gemini, Claude, etc.).
 
 Data Storage:
+
 * Prompts and context are anonymized and stored only for statistical analysis and troubleshooting.
 * No association between prompts and your Telerik user account.
 * Usage metrics are collected to ensure [license compliance](#number-of-requests).
