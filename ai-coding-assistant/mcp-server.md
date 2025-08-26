@@ -111,7 +111,7 @@ To use the Telerik MCP Server:
 1. Start your prompt with one of these triggers:
    - `/telerik` / `@telerik` / `#telerik`
    - `/telerikwinforms` / `@telerikwinforms` / `#telerikwinforms`
-   - `#telerik-winforms-mcp`
+   - `#telerik_winforms_mcp`
 
 2. Verify server activation by looking for these messages:
    - Visual Studio: `Running telerik-winforms-mcp`
