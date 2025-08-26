@@ -111,7 +111,7 @@ To use the Telerik MCP Server:
 1. Start your prompt with one of these triggers:
    - `/telerik` / `@telerik` / `#telerik`
    - `/telerikwinforms` / `@telerikwinforms` / `#telerikwinforms`
-   - `#telerik-winforms-assistant`
+   - `#telerik-winforms-mcp`
 
 2. Verify server activation by looking for these messages:
    - Visual Studio: `Running telerik-winforms-mcp`
@@ -136,7 +136,7 @@ To increase the likelihood of the Telerik MCP server being used, add custom inst
 
 The following examples demonstrate useful prompts for the Telerik WinForms MCP Server:
 
-* "`/telerik` Generate a RadGridView with sorting and paging. Bind it to a Person model with sample ViewModel."
+* "`/telerik` Generate a RadGridView with sorting and paging. Bind it to a Person model with a sample ViewModel."
 * "`/telerikwinforms` Create a RadDropDownList showing a product list of 20 items. Include Product class and sample data."
 * "`/telerik` Build a RadListView with sorting and filtering capabilities."
 
