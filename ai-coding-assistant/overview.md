@@ -46,13 +46,13 @@ You can use the AI Coding Assistant for:
 
 * **Initial code generation**: Quickly add components to your app to speed up the initial development.
 * **Basic component configuration**: Enable or disable specific component features, or fine tune the configuration through prompting. More complex configurations are possible but may require additional manual work to be production-ready.
-* ** Dummy data generation and data binding**: Quickly add data to your app for testing and prototyping purposes. Avoid exposing or providing access to your proprietary or production data to AI-enabled tools.
+* **Dummy data generation and data binding**: Quickly add data to your app for testing and prototyping purposes. Avoid exposing or providing access to your proprietary or production data to AI-enabled tools.
 * **Step-by-step explanations**: Understand the solutions provided by the AI Coding Assistant through the detailed explanations (depends on the tool, mode, and model used). To further develop your knowledge, check the respective documentation.
 * **Preliminary troubleshooting**: Resolve obvious and easy-to-solve issues affecting your code. For more complex issues, look for assistance by contacting our support team.
 
-## Supported Assemblies
+## Coverage
 
-The Telerik UI for WinForms AI Coding Assistant currently covers the following assemblies:
+The Telerik AI Coding Assistant is trained on the Telerik UI for WinForms API reference, official documentation, and purpose-built code examples for the controls in the assemblies listed below:
 
 * Telerik.WinControls.UI
 * Telerik.WinControls.GridView
@@ -122,6 +122,11 @@ Data Storage:
 * Usage metrics are collected to ensure [license compliance](#number-of-requests).
 
 > Make sure also to review the terms and privacy policies of your selected AI model and AI client.
+
+## Telerik Document Processing AI Coding Assistant
+
+You can also use the AI Coding Assistant for **Telerik Document Processing** to generate high-quality code samples and speed up your development.
+Read the full guide in the dedicated [DPL AI Coding Assistant article](https://docs.telerik.com/devtools/document-processing/ai-coding-assistant/overview).
 
 ## Next Steps
 

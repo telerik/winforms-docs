@@ -40,23 +40,41 @@ The __Telerik.Telerik.WinControls.UI__ assembly exposes many components. One of 
 
 <table>
 <tr>
-<th>DataBound the RadDropDownList to a custom collection</th>
-<th>DataBound the RadDropDownList and allow multiple selection</th>
+<th>Databind the RadDropDownList to a custom collection</th>
+<th>Databind the RadCheckedDropDownList and allow multiple selection</th>
 </tr>
 <tr>  
 <td>
 <pre><code>
-\#telerik_winforms_assistant Add RadDropDownList data bound to a collection of business objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI.
+#telerik_winforms_assistant Add combobox data bound to a collection of business objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI
 </code></pre>
 </td>
 <td>
 <pre><code>
-\#telerik_winforms_assistant Add RadDropDownList (WinForms) data bound to a collection of business objects. Each object should have a Name, Address, City and Country property. Use the Name to display the items in the UI. Show all of the properties in the drop down and allow multipe selection.
+#telerik_winforms_assistant Create a RadDropDownList bound to some sample data. The control should allow multiple selection 
+        
 </code></pre>
 </td>
 </tr>   
-</table>  
-
+</table>
+<table>
+<tr>
+<th>Dynamically add pages in RadPageView</th>
+<th>Preselect a page in RadPageView</th>
+</tr>
+<tr>  
+<td>
+<pre><code>
+#telerik_winforms_assistant Add pages dynamically to the pageview and change the page text when selecting the page
+</code></pre>
+</td>
+<td>
+<pre><code>
+#telerik_winforms_assistant Create PageView with 3 tabs and preselect the second tab
+</code></pre>
+</td>
+</tr>   
+</table> 
 
 ### GridView Assembly
 
@@ -70,36 +88,34 @@ The __Telerik.Windows.Controls.GridView__ assembly provides the [Telerik UI for 
 <tr>
 <td>
 <pre><code>
-\#telerik_winforms_assistant Create a RadGridView with 100 records each having Id, Name and Company. Group the data by Company. Sort by name. Add aggregate count function for the company column.
+#telerik_winforms_assistant Create a RadGridView with 100 records each having Id, Name and Company. Group the data by Company. Sort by name. Add aggregate count function for the company column.
 </code></pre>
 </td>
 <td>
 <pre><code>
-\#telerik_winforms_assistant Data bind the RadGridView control to a collection of items. Add columns for stocks data manually where one of the columns should use a combobox.
+#telerik_winforms_assistant Data bind the RadGridView control to a collection of items. Add columns for stocks data manually where one of the columns should use a combobox.
 </code></pre>
 </td>
 </tr>   
-</table>  
-
+</table>
 <table>
 <tr>
-<th>DataBound the RadGridView and customize it.</th>
-<th>DataBound the RadGridView and cancel the editing.</th>
+<th>DataBound the RadGridView and customize it</th>
+<th>Merge Cells in RadGridView</th>
 </tr>
 <tr>
 <td>
 <pre><code>
-\#telerik_winforms_assistant Create a RadGridView with 3 columns - Name, Country, City. Add the corresponding business object in the code behind and populate is with sample data. Add 20 entries to the data. Change the selection text color and mouse over color of the datagrid cells and rows. Apply different color for rows based on a condition (alternating rows).
+#telerik_winforms_assistant Create a RadGridView and bind it to a sample data. Change the selection text color and mouse over color of the datagrid cells and rows. Apply different color for rows based on a condition (alternating rows)
 </code></pre>
 </td>
 <td>
 <pre><code>
-\#telerik_winforms_assistant Create a RadGridView with 3 columns - Name, Country, City. Add the corresponding business object in the code behind and populate is with sample data. Add 20 entries to the data. And show me how to cancel the editing of the datagrid cell.
+#telerik_winforms_assistant Bind the RadGridView to sample data. Demonstrate how to merge cells in control
 </code></pre>
 </td>
 </tr>   
-</table>  
-
+</table>
 
 #### RadDock Assembly
 
@@ -107,18 +123,18 @@ The __Telerik.WinControls.RadDock__ assembly provides the Telerik UI for WinForm
 
 <table>
 <tr>
-<th>Create basic RadDock with 2 panels.</th>
-<th>Save and load the layout.</th>
+<th>Create basic RadDock with 2 panels</th>
+<th>Save and load the layout</th>
 </tr>
 <tr>
 <td>
 <pre><code>
-\#telerik_winforms_assistant Create a basic RadDocking layout with two panes docked on the left, one on the right and two on the bottom of the control.
+#telerik_winforms_assistant Create a basic RadDocking layout with two panes docked on the left, one on the right and two on the bottom of the control
 </code></pre>
 </td>
 <td>
 <pre><code>
-\#telerik_winforms_assistant How to save and load the current docking layout.
+#telerik_winforms_assistant How to save and load the current docking layout
 </code></pre>
 </td>
 </tr>   
@@ -131,18 +147,18 @@ The __Telerik.WinControls.RichTextEditor__ assembly enables you to use the Teler
 
 <table>
 <tr>
-<th>Import or export different formats.</th>
-<th>How to insert element like images or text in the document. </th>
+<th>RadRichTextEditor and RichTextEditorRiboonBar integration</th>
+<th>Allow export in various formats</th>
 </tr>
 <tr>
 <td>
 <pre><code>
-\#telerik_winforms_assistant How to import and export different formats in the rich text editor. Add toolbar items for import and export options.
+#telerik_winforms_assistant Create a RadRichTextEditor and load a document. Associate the RichTextEditorRiboonBar to control editing and styling
 </code></pre>
 </td>
 <td>
 <pre><code>
-\#telerik_winforms_assistant How to Insert element like images, text in the document. 
+#telerik_winforms_assistant I have a document already loaded inside RadRichTextEditor. I want to allow exporting in various formats
 </code></pre>
 </td>
 </tr>   
