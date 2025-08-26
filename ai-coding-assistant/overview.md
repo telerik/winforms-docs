@@ -50,6 +50,15 @@ You can use the AI Coding Assistant for:
 * **Step-by-step explanations**: Understand the solutions provided by the AI Coding Assistant through the detailed explanations (depends on the tool, mode, and model used). To further develop your knowledge, check the respective documentation.
 * **Preliminary troubleshooting**: Resolve obvious and easy-to-solve issues affecting your code. For more complex issues, look for assistance by contacting our support team.
 
+## Supported Assemblies
+
+The Telerik UI for WinForms AI Coding Assistant currently covers the following assemblies:
+
+* Telerik.WinControls.UI
+* Telerik.WinControls.GridView
+* Telerik.WinControls.RadDock
+* Telerik.WinControls.RichTextEditor
+
 ## Recommendations
 
 Consider the following recommendations when working with the AI Coding Assistant:
