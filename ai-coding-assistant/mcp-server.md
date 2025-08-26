@@ -28,7 +28,7 @@ To use the Telerik WinForms MCP server, you need:
 Install the Telerik WinForms MCP server using npm:
 
 ```bash
-npm i @progress/telerik-winforms-mcp
+npm i @progress/telerik-winforms-mcp@latest
 ```
 
 ### Configuration
