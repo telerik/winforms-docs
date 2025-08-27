@@ -1,10 +1,10 @@
 ---
-title: Removing the RadGridView Border and Shadow
-description: Learn how to remove the control border and shadow of RadGridView in UI for WinForms
+title: Removing the RadGridView Border
+description: Learn how to remove the control border of RadGridView in UI for WinForms
 type: how-to
-page_title: How to Remove RadGridView Control Border and Shadow in UI for WinForms
-meta_title: How to Remove RadGridView Control Border and Shadow in UI for WinForms
-slug: gridview-remove-border-shadow
+page_title: How to Remove RadGridView Control Border in UI for WinForms
+meta_title: How to Remove RadGridView Control Border in UI for WinForms
+slug: gridview-remove-border
 tags: gridview, ui-for-winforms, enableelementshadow, draw,border
 res_type: kb
 ticketid: 1684037
