@@ -104,18 +104,18 @@ The Telerik WinForms AI Coding Assistant allows the following maximum number of 
 
 The Telerik WinForms AI Coding Assistant operates under strict privacy guidelines:
 
-Data Access:
+#### Data Access:
 
 * No access to your workspace and application code.
 * Exception: when using the Telerik MCP server (or any other MCP server), the LLM generates parameters for the MCP server request, which may include parts of your application code.
 
-Data Usage:
+#### Data Usage:
 
 * Your prompts are not used to train Telerik AI models.
 * Does not generate or access AI responses.
 * Provides enhanced context to improve responses from your chosen AI model (GPT, Gemini, Claude, etc.).
 
-Data Storage:
+#### Data Storage:
 
 * Prompts and context are anonymized and stored only for statistical analysis and troubleshooting.
 * No association between prompts and your Telerik user account.
