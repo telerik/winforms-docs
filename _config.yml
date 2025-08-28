@@ -5,10 +5,6 @@ site_name: WinForms
 exclude: [README.md,Gemfile,Gemfile.lock]
 exclude_navigation: [knowledge-base/*]
 
-Introduction
-Getting  started
-Licensing
-Ai Coding
 navigation:
 ## List your directory names and order here, like this:
     winformslab:
