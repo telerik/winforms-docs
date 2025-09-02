@@ -41,7 +41,7 @@ Use these settings when configuring the server in your MCP client:
 | Type | `stdio` (standard input/output transport) |
 | Command | `npx` |
 | Arguments | `-y` |
-| Server Name | `telerik-winforms-mcp` (customizable) |
+| Server Name | `telerik-winforms-assistant` (customizable) |
 
 ### License Configuration
 
@@ -81,7 +81,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
  {
    "inputs": [],
    "servers": {
-     "telerik-winforms-mcp": {
+     "telerik-winforms-assistant": {
        "type": "stdio",
        "command": "npx",
        "args": ["-y", "@progress/telerik-winforms-mcp@latest"],
@@ -96,7 +96,7 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
  ```
 
 2. Restart Visual Studio.
-3. Enable the `telerik-winforms-mcp` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+3. Enable the `telerik-winforms-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 ![WinForms AI Assistance MCP Server](images/ai-mcp-server001.png)
 
@@ -111,12 +111,12 @@ To use the Telerik MCP Server:
 1. Start your prompt with one of these triggers:
    - `/telerik` / `@telerik` / `#telerik`
    - `/telerikwinforms` / `@telerikwinforms` / `#telerikwinforms`
-   - `#telerik_winforms_mcp`
+   - `#telerik-winforms-assistant`
 
 2. Verify server activation by looking for these messages:
-   - Visual Studio: `Running telerik-winforms-mcp`
+   - Visual Studio: `Running telerik-winforms-assistant`
    - Visual Studio Code: `Running telerik-winforms-assistant`
-   - Cursor: `Calling MCP tool telerik-winforms-mcp`
+   - Cursor: `Calling MCP tool telerik-winforms-assistant`
 
 3. Grant permissions when prompted (per session, workspace, or always).
 
