@@ -38,7 +38,6 @@ First, it would be necessary to create theme a component. Following the instruct
 
 
 ````C#
-
 namespace Windows11LightBlueClassLibrary
 {
     public class Windows11LightBlue : RadThemeComponentBase
@@ -66,7 +65,6 @@ namespace Windows11LightBlueClassLibrary
     }
 }
 
-
 ````
 
 >caption Figure 1: Here is how my ClassLibrary looks:
@@ -75,18 +73,18 @@ namespace Windows11LightBlueClassLibrary
 
 4.Once the Windows11LightBlueClassLibrary gets ready, we should define the custom Windows11CompactLightBlue theme as default in the entire application. This can be done inside the App.config file of our application. For more information, follow the instrucions defined here: [Custom theme as Default](https://docs.telerik.com/devtools/winforms/styling-and-appearance/default-theme#custom-theme-as-default)
 
-````XML
 
+````XML
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-  <startup>
-  </startup>
-  <appSettings>
-    <!--define the custom Windows11CompactLightBlue for the entire application-->
-    <add key="TelerikWinFormsThemeName" value="Windows11CompactLightBlue" />
-    <add key="TelerikWinFormsThemeType" value="Windows11LightBlueClassLibrary.Windows11LightBlue"/>
-    <add key="TelerikWinFormsThemeAssemblyName" value="Windows11LightBlueClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-  </appSettings>
+    <startup>
+    </startup>
+    <appSettings>
+        <!--define the custom Windows11CompactLightBlue for the entire application-->
+        <add key="TelerikWinFormsThemeName" value="Windows11CompactLightBlue" />
+        <add key="TelerikWinFormsThemeType" value="Windows11LightBlueClassLibrary.Windows11LightBlue"/>
+        <add key="TelerikWinFormsThemeAssemblyName" value="Windows11LightBlueClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    </appSettings>
 </configuration>
 
 ````
@@ -100,7 +98,6 @@ namespace Windows11LightBlueClassLibrary
 6.If you do not want to add the theme at design time, you can create an instance of the theme in the start up of the application, for example in Program.cs:
 
 ````C#
-
 internal static class Program
 {
     /// <summary>
