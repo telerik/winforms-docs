@@ -14,13 +14,13 @@ Res_type: kb
 |----|----|----|
 |2019.2.618|RadGridView for WinForms|[Dimitar Karamfilov]|
 
-# Problem 
+## Problem 
 
 You want to make the button in the command column smaller and show other value. 
 
 ![](images/customize-gridviewcommandcolumn001.png)
 
-# Solution
+## Solution
 
 You can use the __CellFormatting__ event to achieve this. Here is a complete example that shows this.
 

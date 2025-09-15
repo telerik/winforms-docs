@@ -13,13 +13,13 @@ res_type: kb
 |----|----|----|
 |March 27, 2015|RadCollapsiblePanel for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
 
-# Problem
+## Problem
  
 This article demonstrates how to achieve the collapsible menu from the Demo application.  
 
 ![collapsiblemenudemoapplication](images/collapsiblemenudemoapplication.gif)
  
-# Solution 
+## Solution 
  
 Firstly, you should create a new project with a **RadForm**. Afterwards, drag a [RadCollapsiblePanel](https://docs.telerik.com/devtools/winforms/panels-and-labels/collapsiblepanel/overview) and a [RadPanorama](https://docs.telerik.com/devtools/winforms/panorama/overview) from the Toolbox and drop them onto the form. You need to insert a [RadListControl](https://docs.telerik.com/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/listcontrol) in the **RadCollapsiblePanel**.
  
