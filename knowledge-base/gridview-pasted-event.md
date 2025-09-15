@@ -29,7 +29,7 @@ However, this article will offer a solution how to create your own **Pasted** ev
 In order to create a custom **Pasted** event in **RadGridView**, you need to:
 
 * Create your own **EventArgs** (let's call the class **PastedEventArgs**) with the necessary properties, e.g. **ClipboardData**.
-* Raise and consume an event that provides data. The **EventHandler<TEventArgs>** delegate is associated with the event, and an instance of a custom event data object is provided.
+* Raise and consume an event that provides data. The **EventHandler<EventArgs>** delegate is associated with the event, and an instance of a custom event data object is provided.
 * Create a derivative of **RadGridView** and replace the default **MasterGridViewTemplate** with a custom one in which **Paste** method you should raise the **Pasted** event that is just defined.
 * Replace the default **RadGridView** with the custom one in your project.
 
