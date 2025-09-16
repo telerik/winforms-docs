@@ -150,7 +150,7 @@ public partial class MainForm : RadForm
 
     2\. Assuming that the executable file of our RadControls-enabled application is named RadControlsApp and this file is located at "C:\Program Files (x86)\Telerik\", you should type the following text in the text file:  
      
-	````
+	````XML
 	Windows Registry Editor Version 5.00
 	[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
 	"RadControlsApp"="\"C:\\Program Files (x86)\\Telerik\\RadControlsApp.exe\""
@@ -167,11 +167,13 @@ To make a quick test of the described approach, follow these steps:
 2. Build the downloaded solution and move the built executable file to C:\ .
 
 3. Run the Registry file that you will find in the downloaded zip file and choose Yes. Please note that this action will put the following following Registry Key into your Registry:
-````
+
+````XML
 Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
 "RadControlsApp"="\"C:\\RadControlsApp.exe\""
 ````
+
 If you want to remove the added Registry Key after you test the sample application (complete steps 4 and 5), please follow [these intructions](http://pcsupport.about.com/od/windowsvista/ht/deleterkeyvista.htm).
 
 4. Restart your machine.
