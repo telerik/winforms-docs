@@ -25,20 +25,19 @@ Read more about NuGet installation in the [Install using NuGet Packages]({%slug 
 
 When dragging and dropping a control from the Visual Studio (VS) Toolbox onto the Form Designer, VS automatically adds the necessary assemblies. However, if you're adding the control programmatically, you'll need to manually reference the following assemblies:
 
-* __Telerik.Licensing.Runtime__
-* __Telerik.WinControls__
-* __Telerik.WinControls.UI__
-* __TelerikCommon__
+````text
+Telerik.Licensing.Runtime
+Telerik.WinControls
+Telerik.WinControls.UI
+TelerikCommon
+````
 
 The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
-## Defining the RadForm
- 
 ### Adding RadForm to your Project
 
 The following tutorial shows the different ways to utilize the __RadForm__ control.
         
-
 To add a __RadForm__ control to your project you can either choose the __RadForm Template__ from the project's *'Add New Item...'* dialog or create a standard Windows Form and change its base class to __Telerik.WinControls.UI.RadForm__. In the following example we will create a __RadForm__ by manually changing the base class of a standard Windows Form:
         
 
@@ -48,9 +47,12 @@ Changing the base class of a standard Windows Form to RadForm in C#:
 
 1. Make sure that your project includes references to the following assemblies:
 
-* **Telerik.WinControls**
+````text
+Telerik.WinControls
 	
-* **Telerik.WinControls.UI**
+Telerik.WinControls.UI
+
+````
 
 1. Right-click the default form created in the project and select the __View Code__ option.
             
@@ -76,13 +78,13 @@ Changing the base class of a standard Windows Form to **RadForm** in VB.NET:
 1. Change the declaration in the __Form1.Designer.vb__ file so that it derives from the __Telerik.WinControls.UI.RadForm__ class:
 
 ````VB.NET
-		Partial Class Form1
-    		Inherits Telerik.WinControls.UI.RadForm
+	Partial Class Form1
+    	Inherits Telerik.WinControls.UI.RadForm
 ````
 
 Return to the __Design View__ of the form. Visual Studio will repaint the form and the __ControlDefault (Office2007Blue)__ theme will be applied to the form. __RadForm__ is ready for use:
 
-	![WinForms RadForm Design View](images/forms-and-dialogs-form-getting-started001.png)
+![WinForms RadForm Design View](images/forms-and-dialogs-form-getting-started001.png)
 
 ### Applying a Theme to your Form
 
@@ -90,11 +92,11 @@ To apply a theme to RadForm, you should first drag-and-drop the desired Theme Co
 
 1. From the Visual Studio Toolbox drag the __Office2007Black__ component and drop it on your __RadForm__ 
 	
-	![WinForms RadForm VS Toolbox Office2007Black](images/forms-and-dialogs-form-getting-started002.png)
+![WinForms RadForm VS Toolbox Office2007Black](images/forms-and-dialogs-form-getting-started002.png)
 
 1. In the Properties Window set the __ThemeName__ property of the Form to *'Office2007Black'*
 	
-	![WinForms RadForm ThemeName](images/forms-and-dialogs-form-getting-started003.png)
+![WinForms RadForm ThemeName](images/forms-and-dialogs-form-getting-started003.png)
 
 
 ## See Also 
