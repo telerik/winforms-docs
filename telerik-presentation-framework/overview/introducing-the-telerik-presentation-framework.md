@@ -20,12 +20,12 @@ Every control in the Telerik UI for WinForms suite is derived from the __RadCont
 
 For example, schematically, the overall architecture for a RadTabStrip looks as follows:
 
-```
+````text
 RadTabStrip
     RootRadElement
         RadTabStripElement
             tree of RadElement instances
-```
+````
 
 
 ## Specific Internal Structure
