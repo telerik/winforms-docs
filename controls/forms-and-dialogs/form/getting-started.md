@@ -48,20 +48,19 @@ Changing the base class of a standard Windows Form to RadForm in C#:
 
 1. Make sure that your project includes references to the following assemblies:
 
-	1. **Telerik.WinControls**
+* **Telerik.WinControls**
 	
-	1. **Telerik.WinControls.UI**
+* **Telerik.WinControls.UI**
 
 1. Right-click the default form created in the project and select the __View Code__ option.
             
 
 1. If you are working in C#: Change the declaration of the form so that it derives from the __Telerik.WinControls.UI.RadForm__ class
-            
+        
+````C#
+partial class Form1 : Telerik.WinControls.UI.RadForm
 
-	````C#
-	    partial class Form1 : Telerik.WinControls.UI.RadForm
-	````
-
+````
 
 Changing the base class of a standard Windows Form to **RadForm** in VB.NET:
 
@@ -76,10 +75,10 @@ Changing the base class of a standard Windows Form to **RadForm** in VB.NET:
 
 1. Change the declaration in the __Form1.Designer.vb__ file so that it derives from the __Telerik.WinControls.UI.RadForm__ class:
 
-	````VB.NET
+````VB.NET
 		Partial Class Form1
     		Inherits Telerik.WinControls.UI.RadForm
-	````
+````
 
 Return to the __Design View__ of the form. Visual Studio will repaint the form and the __ControlDefault (Office2007Blue)__ theme will be applied to the form. __RadForm__ is ready for use:
 
@@ -104,6 +103,7 @@ To apply a theme to RadForm, you should first drag-and-drop the desired Theme Co
 * [Properties, Methods and Events]({%slug winforms/forms-and-dialogs/form/properties-methods-events%})
 
 ## Telerik UI for WinForms Learning Resources
+
 * [Telerik UI for WinForms Form Component](https://www.telerik.com/products/winforms/form.aspx)
 * [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
 * [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
