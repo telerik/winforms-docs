@@ -92,10 +92,7 @@ End Sub
 
 ```` 
 
-
-
 {{endregion}} 
-
   
 For example, you can keep a **Dictionary<string, string>** mapping each bookmark name to another string and substitute a bookmark with the corresponding text using the following method:
 
@@ -129,8 +126,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 {{source=..\SamplesCS\RichTextEditor\Features\Bookmarks.cs region=change}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Bookmarks.vb region=change}} 
 
-````C#
-        
+````C#        
 private void ChangeAllBookmarks(RadRichTextEditor radRichTextEditor)
 {
     BookmarkRangeStart[] bookmarks = radRichTextEditor.Document.GetAllBookmarks().ToArray<BookmarkRangeStart>();
