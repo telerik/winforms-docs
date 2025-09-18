@@ -40,9 +40,9 @@ The Windows11 themes are designed to work with a predefined set of colors. The t
 To start generating theme blending select *Tools >> Generate Windows11 Theme Variation* menu item:
  Below you can find the other options available:
 
-    * **Generate Windows11Dark Theme Variation**
-    * **Generate Windows11Compact Theme Variation**
-    * **Generate Windows11CompactDark Theme Variation**
+* **Generate Windows11Dark Theme Variation**
+* **Generate Windows11Compact Theme Variation**
+* **Generate Windows11CompactDark Theme Variation**
 
 >caption Figure 5: Generate Windows11 Theme Variation
 
@@ -62,7 +62,6 @@ If you want to create a brand new palette you can click on the *Create New palet
 If you want to edit the existing palette then click on the *Modify selected palette* button and it will open **Modify Palette Dialog**. You will be able to modify any of the existing colors.
 
 Once you get ready with picking colors for the palette you can click the **Generate theme** button. A new variation of the Windows11 theme will be exported using the selected colors. Then, save the theme:
-
 
 >caption Figure 6: Save the Theme
 ![tools-visual-style-builder-working-with-visual-style-builder-windows11-themes-blending 008](images/tools-visual-style-builder-windows11-themes-blending008.png)
