@@ -15,7 +15,6 @@ The embedded __RadCalendar__ has `HeaderNavigationMode` property, which determin
 |HeaderNavigationMode|Design|
 |----|----|
 |Zoom|![WinForms RadDateOnlyPicker Zoom](images/editors-dateonlypicker-navigation-modes001.png)|
-|Popup|![WinForms RadDateOnlyPicker Popup](images/editors-dateonlypicker-navigation-modes003.png)|
 
 #### Setting the value of RadDateOnlyPicker 
 
