@@ -2,7 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
-slug: winforms/listview/using-checkboxes
+slug: winforms/listview/properties-methods-events
 tags: listview
 published: True
 position: 10 

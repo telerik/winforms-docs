@@ -2,7 +2,7 @@
 title: Using Spacebar key
 page_title: Using Spacebar key - WinForms CheckedListBox Control
 description: Lear how to use the spacebar in WinForms CheckedListBox. 
-slug: winforms/checkedlistbox/structure
+slug: winforms/checkedlistbox-using-spacebar-key
 tags: checkedlistbox
 published: True
 position: 5

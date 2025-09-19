@@ -2,7 +2,7 @@
 title: Structure
 page_title: Structure - WinForms DateTimePicker Control
 description: Get familiar with the internal elements structure of the WinForms DateTimePicker.
-slug: winforms/editors/datetimepicker
+slug: winforms/editors/datetimepicker-structure
 tags: datetimepicker
 published: True
 position: 2
