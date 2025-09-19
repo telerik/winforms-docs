@@ -60,7 +60,7 @@ private void RadSlideView1_TemplateUpdated(object sender, TemplateUpdatedEventAr
     
 ```` 
 
->note For more detailed information please refer to [Unbound mode]({%slug slideview-unbound-mode%}).
+>note For more detailed information please refer to [Unbound mode](#unbound-mode).
 
 >important TemplateUpdate event can be used in both bound/unbound mode.
 
@@ -68,7 +68,7 @@ private void RadSlideView1_TemplateUpdated(object sender, TemplateUpdatedEventAr
 
 In bound mode you can use mappings, but it is important that the property type of the element and the data bound object should match. Otherwise the property will not be set (if we try to set a value of different type the RadProperty setter will throw an exception). In this case the **MappedPropertyUpdating** event needs to be handled and set the Value of the EventArgs to match the destination type.
 
->note For more detailed information please refer to [Data Binding]({%slideview-data-binding%}).
+>note For more detailed information please refer to [Data Binding]({%slug slideview-data-binding%}).
 
 ## See Also
 

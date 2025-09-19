@@ -21,7 +21,7 @@ The following functionality is supported in the __RadRichTextEditor__:
 
 The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo),[HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).      
 
-[Other customization options](#othercustomizationoptions) include setting the tooltip format and detecting the click of hyperlinks.
+[Other customization options](#other-customization-options) include setting the tooltip format and detecting the click of hyperlinks.
       
 ## HyperlinkInfo
 
