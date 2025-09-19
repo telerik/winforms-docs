@@ -18,7 +18,7 @@ In **RadRichtextBox**, you can insert a line break using the [Break element]({%s
 
 * [Insert a Line Break Before/After a Merge Field If the Field Result Isn't Empty](#insert-a-line-break-beforeafter-a-merge-field-if-the-field-result-isnt-empty)
 
-* [Using Vertical Tab in a DocumentVariableField](#using-vertical-tab-in-a-documentvariablefield)
+* [Using Vertical Tab in a DocumentVariableField](#using-the-vertical-tab-in-a-documentvariablefield)
 
 ## What is the Vertical Tab Symbol?
 
