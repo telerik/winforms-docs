@@ -2,7 +2,7 @@
 title: Cap Types
 page_title: Cap Types - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
-slug: winforms/diagram/diagram-items/connections
+slug: winforms/diagram/diagram-items/cap-types
 tags: connections
 published: True
 position: 2

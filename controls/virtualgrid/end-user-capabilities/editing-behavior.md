@@ -2,7 +2,7 @@
 title: Editing Behavior
 page_title: Editing Behavior - RadVirtualGrid
 description: This article describes the steps that you need to perform in order to edit a value in RadVirtualGrid.
-slug: winforms/gridview/end-user-capabilities/editing-behavior
+slug: winforms/virtualgrid/end-user-capabilities/editing-behavior
 tags: editing,behavior
 published: True
 position: 1
