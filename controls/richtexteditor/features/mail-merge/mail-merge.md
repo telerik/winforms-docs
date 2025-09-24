@@ -109,7 +109,7 @@ Me.radRichTextEditor1.Document.MailMergeDataSource.ItemsSource = (New ExamplesDa
 
 ## Performing Mail Merge
 
-MailMerge can be done both [using the UI](#mailmerging-using-the-ui:) and [programmatically.](#programmatic-mail-merge)
+MailMerge can be done both [using the UI](#mailmerging-using-the-ui) and [programmatically.](#programmatic-mail-merge)
 
 ### MailMerging using the UI
 

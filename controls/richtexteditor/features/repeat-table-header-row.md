@@ -14,7 +14,7 @@ When working with large tables, they are visualized in more than one page. Heade
 
 * [Overview](#overview)
 
-* [How to Use Repeat Table Header Row](#how-to-use-repeat-table-header-row)
+* [How to Use Repeat Table Header Row](#how-to-use-a-repeat-table-header-row)
 
     * [Programmatically via the RadRichTextBox API](#programmatically-via-the-radrichtextbox-api)
     * [Via the Built-in UI](#via-the-built-in-ui)
