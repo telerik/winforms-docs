@@ -1,7 +1,7 @@
 ---
 title: Localization
 page_title: Localization - RadSyntaxEditor
-description:   
+description: Learn how to localize the Telerik SyntaxEditor in WinForms, enabling language-specific content.
 slug: syntax-editor-localization
 tags: syntax-editor
 published: True

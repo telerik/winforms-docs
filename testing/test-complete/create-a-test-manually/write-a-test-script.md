@@ -65,7 +65,7 @@ Now that All Controls are sorted alphabetically you can get the location of the 
 listViewAllControls = layoutPanelAllControls["WinFormsObject"]("allControlsListView")
 ````
 
-One approach is to write a **"ClickListViewItem"** function in **"HelpFunctions"** TestComplete class. The idea is to write a function that clicks specific ListView item based on a given index. The function will accept 2 arguments: **ListView object** and **int itemIndex**. Using the Object Spy you can navigate through the ListView elements until you find a specific ListView item. Then you will need the X and Y coordinates in pixels in order to call listView[“Click”](x, y) method. Your function will look like this:
+One approach is to write a **"ClickListViewItem"** function in **"HelpFunctions"** TestComplete class. The idea is to write a function that clicks specific ListView item based on a given index. The function will accept 2 arguments: **ListView object** and **int itemIndex**. Using the Object Spy you can navigate through the ListView elements until you find a specific ListView item. Then you will need the X and Y coordinates in pixels in order to call listView Click(x, y) method. Your function will look like this:
 
 ````C#
 function ClickListViewItem(listView, itemIndex)

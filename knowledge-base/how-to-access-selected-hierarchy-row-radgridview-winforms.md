@@ -41,5 +41,4 @@ This approach enables you to distinguish between selected rows in the main grid 
 
 ## See Also
 
-- [RadGridView for WinForms Documentation - Selection](https://docs.telerik.com/devtools/winforms/controls/gridview/selection/selection-basics)
-- [RadGridView for WinForms Documentation - Hierarchical Grid](https://docs.telerik.com/devtools/winforms/controls/gridview/hierarchical-grid/hierarchical-grid)
+* [RadGridView for WinForms Documentation - Selection](https://docs.telerik.com/devtools/winforms/controls/gridview/features/selection/basic-selection)

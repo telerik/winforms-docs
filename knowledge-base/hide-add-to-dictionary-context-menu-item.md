@@ -1,8 +1,8 @@
 ---
-title: How to Hide the 'Add to dictionary' Context Menu Item
-description: This article demonstrates how to hide the 'Add to dictionary' option in the spell-check menu
+title: How to Hide the Add to dictionary Context Menu Item
+description: This article demonstrates how to hide the Add to dictionary option in the spell-check menu
 type: how-to
-page_title: How to Hide the 'Add to dictionary" Context Menu Item 
+page_title: How to Hide the Add to dictionary Context Menu Item 
 slug: hide-add-to-dictionary-context-menu-item 
 position: 0
 tags: spellchecker, textbox, textboxcontrol,

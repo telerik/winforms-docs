@@ -34,8 +34,6 @@ Combining the performance and productivity of C#/.NET with the familiarity of HT
 
 2\. Update the Windows Forms app to target **.NET 6**.
 
->note Since R2 2020 Telerik UI for WinForms suite provides tooling in Visual Studio 2019, via our Visual Studio Extensions, that will convert client projects that use .NET Framework 4.8 (or lower) into .NET Core projects to ease out the migration: [.NET Core Project Converter](https://docs.telerik.com/devtools/winforms/core/net-core-project-converter).
-
 ![host-blazor-in-winforms002](images/host-blazor-in-winforms002.png)
 
 Make sure that the correct Telerik NuGet is installed as well:

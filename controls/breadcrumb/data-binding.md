@@ -1,7 +1,7 @@
 ---
 title: Data Binding
 page_title: Data Binding - RadBreadCrumb
-description:   
+description: Bind data to the Telerik BreadCrumb control in WinForms to create dynamic navigation paths and improve user navigation in your applications.
 slug: breadcrumb-data-binding
 tags: breadcrumb
 published: True

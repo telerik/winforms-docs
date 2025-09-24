@@ -1,7 +1,7 @@
 ---
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadBreadCrumb
-description:   
+description: Explore the properties, methods, and events of the Telerik Breadcrumb control for WinForms to customize and extend navigation.  
 slug: breadcrumb-properties-methods-events
 tags: breadcrumb
 published: True

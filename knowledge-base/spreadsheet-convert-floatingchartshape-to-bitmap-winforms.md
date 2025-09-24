@@ -38,6 +38,5 @@ In this example, the `ExportChartToImage` method retrieves the first chart from 
 
 ## See Also
 
-- [RadSpreadsheet Documentation](https://docs.telerik.com/devtools/winforms/controls/radspreadsheet/overview)
-- [RadSpreadsheet Workbook Overview](https://docs.telerik.com/devtools/winforms/controls/radspreadsheet/model/workbook)
-- [RadSpreadsheet Chart Shapes](https://docs.telerik.com/devtools/winforms/controls/radspreadsheet/features/chart-shapes)
+* [RadSpreadsheet Documentation](https://docs.telerik.com/devtools/winforms/controls/spreadsheet/overview)
+* [RadSpreadsheet Chart Shapes](https://docs.telerik.com/devtools/winforms/controls/spreadsheet/features/ui-charts)

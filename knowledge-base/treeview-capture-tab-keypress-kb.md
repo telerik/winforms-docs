@@ -46,4 +46,5 @@ class MyTreeView : RadTreeView
 This solution is valid for controls that do not have explicit handling of the Tab key internally and for standard .NET controls as well.
 
 ## See Also
-- [RadTreeView Overview](https://docs.telerik.com/devtools/winforms/controls/treeview/overview)
+
+* [RadTreeView Overview](https://docs.telerik.com/devtools/winforms/controls/treeview/treeview)

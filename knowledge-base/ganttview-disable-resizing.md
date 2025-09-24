@@ -60,5 +60,5 @@ By applying this solution, users will be able to move tasks without being able t
 
 ## See Also
 
-- [RadGanttView Input Behavior Documentation](https://docs.telerik.com/devtools/winforms/controls/ganttview/input-behavior)
-- [RadGanttView Overview](https://docs.telerik.com/devtools/winforms/controls/ganttview/overview)
+* [RadGanttView Input Behavior Documentation](https://docs.telerik.com/devtools/winforms/controls/ganttview/input-behavior)
+* [RadGanttView Overview](https://docs.telerik.com/devtools/winforms/controls/ganttview/ganttview-)

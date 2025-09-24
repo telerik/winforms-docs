@@ -23,7 +23,7 @@ This article describes the inner structure and organization of the elements whic
 
 ## Cartesian Area
 
-The featured example illustrates the hierarchy defined by two [BarSeries](%slug winforms/chartview-/series-types/bar%}) added to __RadChartView__.
+The featured example illustrates the hierarchy defined by two [BarSeries]({%slug winforms/chartview-/series-types/bar%}) added to __RadChartView__.
 
 >caption Figure 1: RadChartView`s Element Hierarchy
 ![WinForms RadChartView Element Hierarchy Cartesian Area](images/radchartview-structure001.png)
@@ -42,7 +42,7 @@ The featured example illustrates the hierarchy defined by two [BarSeries](%slug 
 
 ## Polar Area
 
-The featured example illustrates the hierarchy defined by one [RadarSeries](%slug winforms/chartview-/series-types/radar%}) added to __RadChartView__.
+The featured example illustrates the hierarchy defined by one [RadarSeries]({%slug winforms/chartview-/series-types/radar%}) added to __RadChartView__.
 
 >caption Figure 3: RadChartView`s Element Hierarchy
 ![WinForms RadChartView Element Hierarchy Polar Area](images/radchartview-structure003.png)
@@ -59,7 +59,7 @@ The featured example illustrates the hierarchy defined by one [RadarSeries](%slu
 
 ## Pie Area
 
-The featured example illustrates the hierarchy defined by three [PieSeries](%slug winforms/chartview-/series-types/pie%}) added to __RadChartView__.
+The featured example illustrates the hierarchy defined by three [PieSeries]({%slug winforms/chartview-/series-types/pie%}) added to __RadChartView__.
 
 >caption Figure 5: RadChartView`s Element Hierarchy
 ![WinForms RadChartView Pie Area Element Hierarchy](images/radchartview-structure005.png)
