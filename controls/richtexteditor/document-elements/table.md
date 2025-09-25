@@ -19,7 +19,7 @@ The __RadRichTextEditor__ is capable of displaying tables. To add a table to the
 
 The same approaches can be adopted when formatting the table:
 
-* [Runtime via RadRichTextEditor's API](#formatting-a-table-at-runtime-via-radrichtexteditor's-api)
+* [Runtime via RadRichTextEditor's API](#formatting-a-table-at-runtime-via-radrichtexteditors-api)
 
 * [Via the built-in UI](#formatting-a-table-via-the-built-in-ui)
 
