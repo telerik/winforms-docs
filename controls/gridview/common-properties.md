@@ -46,7 +46,7 @@ position: 5
 |**SummaryRowsTop**|Gets the collection containing summary rows placed on top of each DataGroup.|
 |**CaseSensitive**|Indicates whether string comparisons of data are case-sensitive. |
 |**PinnedColumns**|Gets a read-only collection of GridViewColumns containing the pinned rows in this template.|
-|**DataMember**|Gets or sets the name of the list or table in the data source for which the <see cref="GridViewTemplate"/> is displaying data.|
+|**DataMember**|Gets or sets the name of the list or table in the data source for which the GridViewTemplate is displaying data.|
 |**DataSource**|Gets or sets the data source that the GridViewTemplate is displaying data for.|
 |**Templates**|Gets or sets the data source that the GridViewTemplate is displaying data for.|
 |**MasterViewInfo**|Gets the master view info.|

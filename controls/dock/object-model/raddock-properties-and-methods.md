@@ -40,7 +40,7 @@ __RadDock__ controls the overall behavior of __ToolWindows__ and __DocumentWindo
 |__ActivateWindow(DockWindow window)__| Activates a DockWindow.|
 |__AddDocument(DockWindow window)__| Adds a DockWindow as a DocumentWindow.|
 |__AutoHideWindow(DockWindow window)__| Makes the specified DockWindow auto-hidden.|
-|__AutoHideWindows(IEnumerable<DockWindow> windows, AutoHidePosition position)__|Makes the specified DockWindow collection auto-hidden.|
+|__AutoHideWindows(IEnumerable&lt;DockWindow&gt; windows, AutoHidePosition position)__|Makes the specified DockWindow collection auto-hidden.|
 |__CloseAllWindows()__|Closes all DockWindows. The __[CloseAction]({%slug winforms/dock/object-model/removing-toolwindow-and-documentwindow-at-runtime%})__ property specifies whether a __ToolWindow/DocumentWindow__ will be *Closed*, *ClosedAndDisposed* or just *Hidden*.|
 |__CloseWindow(DockWindow window)__|Closes a specified ToolWindow or DocumentWindow.|
 |__DockWindow(DockWindow window, DockPosition position)__| Docks a DockWindow (ToolWindow/DocumentWindow) at the specified position.|

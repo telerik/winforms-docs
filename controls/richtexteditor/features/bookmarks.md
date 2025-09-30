@@ -33,7 +33,7 @@ The document elements that encapsulate the bookmarks functionality are __Bookmar
             
 * __DeleteBookmark__(__string bookmarkName__) / __DeleteBookmark__(__BookmarkRangeStart bookmarkRangeStart__): These two methods remove the bookmark. The text in the document between the **BookmarkRangeStart** and **BookmarkRangeEnd** is __not__ deleted.
             
-* Document.__GetAllBookmarks__() – returns an **IEnumerable<BookmarkRangeStart>** containing all **BookmarkRangeStarts**.
+* Document.__GetAllBookmarks__() – returns an **IEnumerable&lt;BookmarkRangeStart&gt;** containing all **BookmarkRangeStarts**.
             
 * Document.__EnumerateChildrenOfType&lt;BookmarkRangeStart&gt;()__ – returns all bookmarks in the document. This method can be used on document elements other than **RadDocument**, in case you want to detect all bookmarks in a limited part of the document, e.g. a **Paragraph** or a **Table**.
             
