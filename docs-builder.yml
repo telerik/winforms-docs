@@ -11,7 +11,7 @@ product-name: Telerik UI for WinForms
 product-url: https://www.telerik.com/products/winforms
 product-trial-url: https://www.telerik.com/try/ui-for-winforms
 contribute-url: https://github.com/telerik/winforms-docs/edit/master
-search-engine-id: 4729071e3f011471f ## ?
+search-engine-id: 4729071e3f011471f wf # wf search engine id ?
 avatar-path: ./images/avatar-ninja.svg
 no-results-image-path: ./images/ninja-no-results.svg
 img-max-width: 100%
@@ -25,6 +25,8 @@ cta-overview: The @Subject component is part of @ProductLink, a professional gra
 cta-intro: "@ProductLink is a professional grade UI library with 160+ native components for building modern and feature-rich applications. To try it out sign up for a free 30-day trial."
 
 
+excluded-files:
+- "**/README.md"
 
 meta:
   "*customizing-appearance":
