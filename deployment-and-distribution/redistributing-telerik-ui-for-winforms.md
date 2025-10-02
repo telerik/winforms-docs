@@ -50,7 +50,7 @@ __ILRepack__ is similar to ILMerge tool. __ILMerge__ and __ILRepack__ are tools 
 
 #### Using ILMerge 
 
->caution The ILMerge project is deprecated and is no longer maintained. You can consider using its successor: [ILRepack](#using-ilrepack)
+>caution The ILMerge project is deprecated and is no longer maintained. You can consider using its successor: [ILRepack](https://github.com/gluck/il-repack)
 
 |RELATED VIDEOS||
 |----|----|
