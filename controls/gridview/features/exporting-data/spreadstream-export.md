@@ -29,7 +29,7 @@ The __GridViewSpreadStreamExport__ uses the [__RadSpreadStreamProcessing__](http
 
 # Exporting
 
-To use the spread export functionality create an instance of the __GridViewSpreadStreamExport__ object. Pass as a parameter the __RadGridView__ instance to export. Afterward, the __RunExport__ method will trigger the export process. The latter method accepts as a parameter the filename of the file to be exported and a [SpreadStreamExportRenderer](%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%) instance. 
+To use the spread export functionality create an instance of the __GridViewSpreadStreamExport__ object. Pass as a parameter the __RadGridView__ instance to export. Afterward, the __RunExport__ method will trigger the export process. The latter method accepts as a parameter the filename of the file to be exported and a [SpreadStreamExportRenderer]({%slug winforms/telerik-presentation-framework/export-renderers/spreadstreamexportrenderer%}) instance. 
 
 #### Exporting the grid. 
 

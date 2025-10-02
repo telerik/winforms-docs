@@ -27,11 +27,10 @@ The WinForms designer in .NET Core is still in its preview and currently it miss
 
 I can suggest referring the official Microsoft documentation for details on porting a project built on the full .NET framework to .NET Core: [Overview of porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/). Please bear in mind that the project file format in .NET Core is different so it will be necessary to update the old .csproj files. Microsoft have developed a tool to automate this process: [Try-Convert](https://github.com/dotnet/try-convert).
 
-Since **R2 2020** Telerik UI for WinForms suite provides tooling in Visual Studio 2019, via our Visual Studio Extensions, that will convert client projects that use .NET Framework 4.8 (or lower) into .NET Core projects to ease out the migration: [.NET Core Project Converter](https://docs.telerik.com/devtools/winforms/core/net-core-project-converter).
   
 As for the designer, please note that even the Microsoft implementation is still limited and only available as a preview in Visual Studio. If you need to target .NET Core and have complex designers you may consider trying the workaround as explained here: [Windows Forms .NET Core Designer](https://github.com/dotnet/winforms/blob/master/docs/winforms-designer.md). With this approach you can still target .NET Core and at the same time achieve the design-time experience you are already used to. 
 
-# See Also
+## See Also
 * [NET Core Design Time]({%slug core-design-time%})
 * [Migrating to .NET Core]({%slug core-migration%})
 * [Deploying WinForms .NET Core Application]({%slug core-getting-started%})

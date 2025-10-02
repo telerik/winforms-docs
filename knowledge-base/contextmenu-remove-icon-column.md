@@ -37,5 +37,4 @@ This code removes the space on the left side of the drop-down menu that is typic
 
 ## See Also
 
-- [RadContextMenu Overview](https://docs.telerik.com/devtools/winforms/controls/contextmenu/contextmenu)
-- [Customizing RadContextMenu](https://docs.telerik.com/devtools/winforms/controls/contextmenu/customizing-contextmenu)
+* [RadContextMenu Overview](https://docs.telerik.com/devtools/winforms/controls/menus/contextmenu/context-menus)

@@ -59,5 +59,4 @@ private void radGridView1_CellEditorInitialized(object sender, GridViewCellEvent
 
 ## See Also
 
-- [GridViewComboBoxColumn](https://docs.telerik.com/devtools/winforms/controls/gridview/columns/column-types/gridviewcomboboxcolumn)
-- [Customizing Appearance](https://docs.telerik.com/devtools/winforms/controls/gridview/styling-and-appearance/styling-and-appearance)
+* [GridViewComboBoxColumn](https://docs.telerik.com/devtools/winforms/controls/gridview/columns/column-types/gridviewcomboboxcolumn)

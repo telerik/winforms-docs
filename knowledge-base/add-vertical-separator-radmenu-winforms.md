@@ -43,5 +43,4 @@ This approach allows you to dynamically add a vertical separator to your RadMenu
 
 ## See Also
 
-- [RadMenu Overview](https://docs.telerik.com/devtools/winforms/controls/menu/radmenu/overview)
-- [RadMenuSeparatorItem Class](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radmenuseparatoritem)
+* [RadMenu Overview](https://docs.telerik.com/devtools/winforms/controls/menus/menu/overview

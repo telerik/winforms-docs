@@ -1,7 +1,7 @@
 ---
 title: Adding RadControls to Visual Studio Toolbox in .NET Projects
 page_title: NET Toolbox Version
-description:   
+description: Learn how to manage and update toolbox versions in Telerik UI for WinForms to ensure compatibility and smooth integration in your projects.
 slug: core-toolbox-version
 tags: core, designer, toolbox, net, .NET, winforms
 published: True

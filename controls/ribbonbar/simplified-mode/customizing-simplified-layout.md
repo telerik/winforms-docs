@@ -1,7 +1,7 @@
 ---
 title: Customizing Simplified Layout
 page_title: Customizing Simplified Layout - RadRibbonBar
-description:  
+description: Learn how to customize the Simplified RibbonBar layout in Telerik UI for WinForms to fit your application’s specific needs.
 slug: winforms/ribbonbar/customizing-simplified-layout
 tags: radribbonbar. simplified, mode
 published: True

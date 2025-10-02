@@ -1,7 +1,7 @@
 ---
 title: Environment Variables
 page_title: Environment Variables - File Dialogs
-description:  
+description: Enable environment variables in Telerik FileDialogs for WinForms to simplify file navigation and improve user workflows.
 slug: file-dialogs-environment-variables
 tags: filedialogs
 published: True
@@ -54,7 +54,7 @@ Depending on whether the environment variable points to a folder or a file, the 
 
 * **USERNAME**: It is possible to include an environment variable in the middle of a file path. "C:\Users\%USERNAME%\", followed by a valid path is a supported scenario.
 
-* **userdomain**: When typing this environment variable and hitting enter, an **InvalidOperationException** will be thrown and the [ExceptionRaised](%slug winforms/file-dialogs/features/error-handling%) event will be raised, since this environment variable does not point to a file or folder.
+* **userdomain**: When typing this environment variable and hitting enter, an **InvalidOperationException** will be thrown and the [ExceptionRaised]({%slug winforms/file-dialogs/features/error-handling%}) event will be raised, since this environment variable does not point to a file or folder.
 
 The examples above assume that the default paths of the listed system environment variables have not been changed.
 
