@@ -1745,3 +1745,1672 @@ redirects:
 -
     from: "^/?$"
     to: "/introduction"
+    type: Permanent
+-
+    from: "^/devtools/winforms/(barcode|bindingnavigator|buttons|calendar|cardview|carousel|chart|chartview|chat|checkedlistbox|clock|codedui|commandbar|dataentry|datafilter|datalayout|desktopalert|diagram|dock|dropdown-listcontrol-and-checkeddropdownlist|editors|forms-and-dialogs|ganttview|gauges|gridview|image-editor|layoutcontrol|listview|map|menus|multicolumncombobox|pageview|panels-and-labels|panorama|pdfprocessing|pdfviewer|pivotgrid|propertygrid|rangeselector|ribbonbar|richtextbox|richtexteditor|rotator|scheduler|shortcuts|spellchecker|splitcontainer|spreadprocessing|spreadsheet|spreadstreamprocessing|telerik-cab-enabling-kit|themes|track-and-status-controls|treeview|virtualgrid|wizard|wordsprocessing|ziplibrary)/(.*)$"
+    to: "/devtools/winforms/controls/$1/$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-latest-version-retrieval$"
+    to: "/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/add-remove-radcontrols-to-the-global-assembly-cache-\\(gac\\)$"
+    to: "/devtools/winforms/visual-studio-integration/add-remove-radcontrols-to-the-global-assembly-cache-(gac)"
+    type: Permanent
+-
+    from: "^/devtools/winforms/q3_2007/radtreedatabasics$"
+    to: "/devtools/winforms/treeview/treeview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-wizard$"
+    to: "/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation,-deployment-and-distribution/download-product-files$"
+    to: "/devtools/winforms/installation-deployment-and-distribution/download-product-files"
+    type: Permanent
+-
+    from: "^/devtools/winforms/calendar/customizing-behavior/column-and-row-headers$"
+    to: "/devtools/winforms/calendar/features/column-and-row-headers"
+    type: Permanent
+-
+    from: "^/devtools/winforms/calendar/important-events$"
+    to: "/devtools/winforms/calendar/properties-and-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/filtering\\.html$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/features/filtering"
+    type: Permanent
+-
+    from: "^/devtools/winforms/dropdown,-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started"
+    type: Permanent
+-
+    from: "^/devtools/winforms/dropdown,-listcontrol-and-checkeddropdownlist/dropdownlist/selection$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/features/selection"
+    type: Permanent
+-
+    from: "^/devtools/winforms/architecture_themesoverview$"
+    to: "/devtools/winforms/themes/using-default-themes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/architecture_handlinguserinputcommandbindings$"
+    to: "/devtools/winforms/introduction"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-databinding-assigning-image-data-from-a-database$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-databinding-basics$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-databinding-custom-effects-based-on-data$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-databinding-itemdatabound-event$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-databinding-text-format$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-databinding-tutorial-assign-image-data-from-database$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-working-with-items-finding-an-item$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-working-with-items-selecting-an-item$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-combobox-working-with-radcombobox-dropdownstyle$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-listbox-programming-radlistbox$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/combobox-and-listbox-\\(obsolete\\)-listbox-using-the-itemdatabound-event$"
+    to: "/devtools/winforms/dropdown-listcontrol-and-checkeddropdownlist/upgrading-to-dropdownlist-and-listcontrol"
+    type: Permanent
+-
+    from: "^/devtools/winforms/dock-object-model-dockwindows-property$"
+    to: "/devtools/winforms/dock/object-model/raddock-properties-and-methods"
+    type: Permanent
+-
+    from: "^/devtools/winforms/dropdown-and-listcontrol-listcontrol-features$"
+    to: "/winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features/sorting"
+    type: Permanent
+-
+    from: "^/devtools/winforms/forms-and-dialogs-shapedform-using-radtitlebar$"
+    to: "/devtools/winforms/forms-and-dialogs/shapedform/customizing-shapedform"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ganttview-printing-support-printing$"
+    to: "/devtools/winforms/ganttview/printing-support/printing-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/gridview-copy-paste$"
+    to: "/devtools/winforms/gridview/copy-paste-cut"
+    type: Permanent
+-
+    from: "^/devtools/winforms/gridview-populating-with-data-binding-to- observable-collection$"
+    to: "/devtools/winforms/gridview/populating-with-data/binding-to-observablecollection"
+    type: Permanent
+-
+    from: "^/devtools/winforms/gridview-rows-new-row-custom-text$"
+    to: "/devtools/winforms/gridview/rows/new-row"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/m_telerik_wincontrols_componentelementtree_getelementatpoint\\.htm$"
+    to: "/devtools/winforms/api/html/m_telerik_wincontrols_radelementtree_getelementatpoint.htm"
+    type: Permanent
+-
+    from: "^/devtools/winforms/menus-context-menu$"
+    to: "/devtools/winforms/menus/contextmenu/context-menus"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/n_telerik_wincontrols_ui_combobox\\.htm$"
+    to: "/devtools/winforms/api/html/t_telerik_wincontrols_ui_raddropdownlist.htm"
+    type: Permanent
+-
+    from: "^/devtools/winforms/pageview_overview$"
+    to: "/devtools/winforms/pageview/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panelbar-appearance-and-styling-creating-a-theme-for-radpanelbar$"
+    to: "/devtools/winforms/themes/visual-style-builder"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panelbar-design-time-nested-radpanelbar-tutorial$"
+    to: "/devtools/winforms/pageview/upgrading-to-radpageview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panelbar-getting-started$"
+    to: "/devtools/winforms/pageview/upgrading-to-radpageview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panelbar-programming-radpanelbar-creating-panelbar-and-group-elements$"
+    to: "/devtools/winforms/pageview/upgrading-to-radpageview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panelbar-upgrading-to-radpageview$"
+    to: "/devtools/winforms/pageview/upgrading-to-radpageview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/pdfprocessing-overview$"
+    to: "/devtools/winforms/pdfprocessing/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/q1_2007/ribbonbarprogrammingmanagingcontextualtabgroups$"
+    to: "/devtools/winforms/ribbonbar/programming-radribbonbar/managing-contextual-tab-groups"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/r_project\\.htm$"
+    to: "/devtools/winforms/api/html/r_project_telerik_ui_for_winforms_documentation.htm"
+    type: Permanent
+-
+    from: "^/devtools/winforms/scheduler_creating_a_custom_editappointment_dialog$"
+    to: "/devtools/winforms/scheduler/appointments-and-dialogs/adding-a-custom-field-to-the-editappointment-dialog"
+    type: Permanent
+-
+    from: "^/devtools/winforms/scheduler-data-binding-declarative-databinding$"
+    to: "/devtools/winforms/scheduler/data-binding/introduction"
+    type: Permanent
+-
+    from: "^/devtools/winforms/selecter_rows_and_current_row$"
+    to: "/devtools/winforms/introduction"
+    type: Permanent
+-
+    from: "^/devtools/winforms/spreadprocessing-overview$"
+    to: "/devtools/winforms/spreadprocessing/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/t_telerik_wincontrols_ui_radcombobox\\.htm$"
+    to: "/devtools/winforms/api/html/t_telerik_wincontrols_ui_raddropdownlist.htm"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tabstrip-appearance-and-styling-build-in-themes$"
+    to: "/devtools/winforms/pageview/upgrading-to-radpageview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tabstrip-overview$"
+    to: "/devtools/winforms/pageview/upgrading-to-radpageview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tabstrip-tabs-add-and-remove-tabs-programmatically$"
+    to: "/devtools/winforms/pageview/upgrading-to-radpageview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tabstrip-tabs-drag-and-drop$"
+    to: "/devtools/winforms/pageview/upgrading-to-radpageview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/telerik\\.wincontrols\\.ui-telerik\\.wincontrols\\.ui\\.desktopalertmanager-getregisteredalerts$"
+    to: "/devtools/winforms/desktopalert/desktopalertmanager"
+    type: Permanent
+-
+    from: "^/devtools/winforms/telerik\\.wincontrols\\.ui-telerik\\.wincontrols\\.ui\\.lightvisualelement$"
+    to: "/devtools/winforms/telerik-presentation-framework/primitives/lightvisualelement"
+    type: Permanent
+-
+    from: "^/devtools/winforms/telerik\\.wincontrols-telerik\\.wincontrols\\.radhostitem$"
+    to: "/devtools/winforms/api/html/t_telerik_wincontrols_radhostitem.htm"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes_overview$"
+    to: "/devtools/winforms/themes/using-default-themes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes_thememanageradding$"
+    to: "/devtools/winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/adding-radthememanager-to-a-form"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes_thememanagerloadresource$"
+    to: "/devtools/winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes_uistateeditor$"
+    to: "/devtools/winforms/tools/visual-style-builder/visual-style-builder"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes_workingcustomizingelements$"
+    to: "/devtools/winforms/themes/using-custom-themes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes_workingstateprecedence$"
+    to: "/devtools/winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes-advanced-topics-theme-color-blending$"
+    to: "/devtools/winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tools-controlspy-using-the-control-spy-inspecting-properties$"
+    to: "/devtools/winforms/tools/controlspy/controlspy"
+    type: Permanent
+-
+    from: "^/devtools/winforms/toolstrip-localization-provider$"
+    to: "/devtools/winforms/commandbar/commandbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/toolstrip-styling-and-appearance-radtoolstrip-control-element-structure$"
+    to: "/devtools/winforms/commandbar/commandbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tools-visual-style-builder-working-with-radthememanager-load-themes-from-a-resource$"
+    to: "/devtools/winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/load-themes-from-a-resource"
+    type: Permanent
+-
+    from: "^/devtools/winforms/treeview-commands-the-findbytextcommand$"
+    to: "/devtools/winforms/treeview/working-with-nodes/finding-nodes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/treeview-working-with-nodes-responding-to-mouse-click$"
+    to: "/devtools/winforms/treeview/working-with-nodes/events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/vsb_uielementhiearchyeditor$"
+    to: "/devtools/winforms/tools/element-hierarchy-editor"
+    type: Permanent
+-
+    from: "^/devtools/winforms/vsb_uistateeditor$"
+    to: "/devtools/winforms/tools/visual-style-builder/visual-style-builder"
+    type: Permanent
+-
+    from: "^/devtools/winforms/vsb_workingstarting$"
+    to: "/devtools/winforms/tools/visual-style-builder/starting-vsb"
+    type: Permanent
+-
+    from: "^/devtools/winforms/vsb_workingstateprecedence$"
+    to: "/devtools/winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules"
+    type: Permanent
+-
+    from: "^/devtools/winforms/vsbloadpredefinedthemes$"
+    to: "/devtools/winforms/themes/using-default-themes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/wordsprocessing-overview$"
+    to: "/devtools/winforms/wordsprocessing/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/listview/features/working-with-items$"
+    to: "/devtools/winforms/listview/features/selection"
+    type: Permanent
+-
+    from: "^/devtools/winforms/editors/time-picker/free-form-date-time-parsing$"
+    to: "/devtools/winforms/editors/timepicker/free-form-date-time-parsing"
+    type: Permanent
+-
+    from: "^/devtools/winforms/listview/databinding$"
+    to: "/devtools/winforms/listview/populating-with-data/data-binding"
+    type: Permanent
+-
+    from: "^/devtools/winforms/listview/programmatically-populating-with-data$"
+    to: "/devtools/winforms/listview/unbound-mode"
+    type: Permanent
+-
+    from: "^/devtools/winforms/listview/checkboxes-and-editors$"
+    to: "/devtools/winforms/listview/editors/editors"
+    type: Permanent
+-
+    from: "^/devtools/winforms/menus/menu/working-with-radmenu-items/nesting-controls-tutorial$"
+    to: "/devtools/winforms/menus/menu/working-with-radmenu-items/nesting-controls-in-menu-items"
+    type: Permanent
+-
+    from: "^/devtools/winforms/multicolumncombobox/selectedindexchanged$"
+    to: "/devtools/winforms/multicolumncombobox/properties-methods-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/wizard/events$"
+    to: "/devtools/winforms/wizard/properties-methods-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/track-and-status-controls/progressbar/programming-radprogressbar$"
+    to: "/devtools/winforms/track-and-status-controls/progressbar/properties-methods-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/rangeselector/rangeselector-$"
+    to: "/devtools/winforms/rangeselector/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/rangeselector/control-element-structure--$"
+    to: "/devtools/winforms/rangeselector/structure"
+    type: Permanent
+-
+    from: "^/devtools/winforms/rangeselector/integration-with-radchartview-$"
+    to: "/devtools/winforms/rangeselector/integration-with-radchartview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/rangeselector/customizing-radrangeselector-$"
+    to: "/devtools/winforms/rangeselector/customizing-radrangeselector"
+    type: Permanent
+-
+    from: "^/devtools/winforms/track-and-status-controls/trackbar/programming-radtrackbar$"
+    to: "/devtools/winforms/track-and-status-controls/trackbar/properties-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/structure-of-radribbonbar$"
+    to: "/devtools/winforms/ribbonbar/structure"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/styling-radribbonbar/radribbonbar-control-element-structure$"
+    to: "/devtools/winforms/ribbonbar/structure"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/getting-started$"
+    to: "/devtools/winforms/ribbonbar/getting-started"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/customizing-radribbonbar$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/customizing-radribbonbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/creating-the-start-menu-quick-access-toolbar-and-shortcuts$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/ccreating-the-start-menu-quick-access-toolbar-and-shortcuts"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/adding-and-removing-tabs-and-ribbonbar-groups$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/adding-and-removing-tabs-and-ribbonbar-groups"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/adding-and-removing-groups-and-buttons$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/adding-and-removing-groups-and-buttons"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/using-different-elements-on-a-radribbonbars$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/using-different-elements-on-a-radribbonbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/adding-other-controls-to-the-ribbonbar$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/adding-other-controls-to-the-ribbonbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/creating-and-using-contextual-tab-groups$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/creating-and-using-contextual-tab-groups"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/customizing-the-start-menu$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/customizing-the-start-menu"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/customizing-the-quick-access-toolbar$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/customizing-the-quick-access-toolbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/creating-a-gallery$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/creating-a-gallery"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/adding-screen-tips$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/adding-screen-tips"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/adding-key-tips$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/adding-key-tips"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/using-large-and-small-images$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/using-large-and-small-images"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ribbonbar/getting-started/using-drag-and-drop-to-move-items$"
+    to: "/devtools/winforms/ribbonbar/designing-radribbonbar/using-drag-and-drop-to-move-items"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panels-and-labels/groupbox/advanced/tpf-structure$"
+    to: "/devtools/winforms/panels-and-labels/groupbox/structure"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panels-and-labels/groupbox/smart-tag$"
+    to: "/devtools/winforms/panels-and-labels/groupbox/design-time"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panels-and-labels/label/control-element-structure$"
+    to: "/devtools/winforms/panels-and-labels/label/structure"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panels-and-labels/label/programming-radlabel$"
+    to: "/devtools/winforms/panels-and-labels/label/getting-started"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panels-and-labels/panel/creating-a-radpanel-with-rounded-corners$"
+    to: "/devtools/winforms/panels-and-labels/panel/customizing-appearance/creating-a-radpanel-with-rounded-corners"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panels-and-labels/panel/creating-a-radpanel-with-gradient-background$"
+    to: "/devtools/winforms/panels-and-labels/panel/customizing-appearance/creating-a-radpanel-with-gradient-background"
+    type: Permanent
+-
+    from: "^/devtools/winforms/panels-and-labels/collapsiblepanel/methods-and-properties$"
+    to: "/devtools/winforms/panels-and-labels/collapsiblepanel/working-with-radcollapsiblepanel"
+    type: Permanent
+-
+    from: "^/devtools/winforms/chartview/chartview$"
+    to: "/devtools/winforms/chartview/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/propertygrid/radpropertystore---adding-custom-properties$"
+    to: "/devtools/winforms/propertygrid/populating-with-data/radpropertystore-adding-custom-properties"
+    type: Permanent
+-
+    from: "^/devtools/winforms/propertygrid/binding-to-multiple-objects$"
+    to: "/devtools/winforms/propertygrid/populating-with-data/binding-to-multiple-objects"
+    type: Permanent
+-
+    from: "^/devtools/winforms/propertygrid/customization$"
+    to: "/devtools/winforms/propertygrid/customizing-appearance/customization"
+    type: Permanent
+-
+    from: "^/devtools/winforms/pivotgrid/formatting-appearance$"
+    to: "/devtools/winforms/pivotgrid/customizing-appearance/formatting-elements"
+    type: Permanent
+-
+    from: "^/devtools/winforms/pivotgrid/property-builder$"
+    to: "/devtools/winforms/pivotgrid/design-time/property-builder"
+    type: Permanent
+-
+    from: "^/devtools/winforms/pivotgrid/dialogs/customizing-the-dialogs$"
+    to: "/devtools/winforms/pivotgrid/dialogs/custom-dialogs"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tools/visual-style-builder/visual-style-builder$"
+    to: "/devtools/winforms/tools/visual-style-builder/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/track-and-status-controls/progressbar/progressbar$"
+    to: "/devtools/winforms/track-and-status-controls/progressbar/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/virtualgrid/virtualgrid$"
+    to: "/devtools/winforms/virtualgrid/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/buttons/button/button$"
+    to: "/devtools/winforms/buttons/button/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/telerik-analytics-integration/telerik-analytics-integration$"
+    to: "/devtools/winforms/analytics/analytics-support"
+    type: Permanent
+-
+    from: "^/devtools/winforms/telerik-analytics-integration/overview$"
+    to: "/devtools/winforms/analytics/analytics-support"
+    type: Permanent
+-
+    from: "^/devtools/winforms/telerik-analytics-integration/getting-started$"
+    to: "/devtools/winforms/analytics/analytics-support"
+    type: Permanent
+-
+    from: "^/devtools/winforms/listview/programmatically-populating-with-data$"
+    to: "/devtools/winforms/listview/populating-with-data/data-binding"
+    type: Permanent
+-
+    from: "^/devtools/winforms/editors/datetimepicker/datetimepicker$"
+    to: "/devtools/winforms/editors/datetimepicker/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/treeview/data-binding/data-binding-basics$"
+    to: "/devtools/winforms/treeview/data-binding/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tools/visual-style-builder/control-specific-theme-tutorials/styling-radribbonbar$"
+    to: "/devtools/winforms/themes/theme-tutorials/styling-radribbonbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/tools-visual-style-builder-control-specific-theme-tutorials-styling-radribbonbar$"
+    to: "/devtools/winforms/themes/theme-tutorials/styling-radribbonbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/virtualgrid/virtualgrid/getting-started$"
+    to: "/devtools/winforms/virtualgrid/getting-started"
+    type: Permanent
+-
+    from: "^/devtools/winforms/richtexteditor/import/export$"
+    to: "/devtools/winforms/richtexteditor/import-export/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/richtexteditor/import/settings$"
+    to: "/devtools/winforms/richtexteditor/import-export/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/major-and-minor-releases$"
+    to: "/devtools/winforms/installation-deployment-and-distribution/major-and-minor-releases"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ganttview/formatting/creating-custom-cells$"
+    to: "/devtools/winforms/ganttview/custom-items/data-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/ganttview/formatting/creating-custom-task-elements$"
+    to: "/devtools/winforms/ganttview/custom-items/task-elements"
+    type: Permanent
+-
+    from: "^/devtools/winforms/barcode-getting-started$"
+    to: "/devtools/winforms/barcode/getting-started"
+    type: Permanent
+-
+    from: "^/devtools/winforms/chat-overview$"
+    to: "/devtools/winforms/chat/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/imageeditor-overview$"
+    to: "/devtools/winforms/image-editor/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/what-is-new$"
+    to: "https://www.telerik.com/support/whats-new/winforms"
+    type: Permanent
+-
+    from: "^/devtools/winforms/release-notes$"
+    to: "https://www.telerik.com/support/whats-new/winforms/release-history"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/system-requirements$"
+    to: "/devtools/winforms/installation-and-upgrades/system-requirements"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/download-product-files$"
+    to: "/devtools/winforms/installation-and-upgrades/download-product-files"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/installing-on-your-computer$"
+    to: "/devtools/winforms/installation-and-upgrades/installing-on-your-computer"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/major-and-minor-releases$"
+    to: "/devtools/winforms/installation-and-upgrades/major-and-minor-releases"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/versions-upgrade$"
+    to: "/devtools/winforms/installation-and-upgrades/versions-upgrade"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api-analyzer$"
+    to: "/devtools/winforms/installation-and-upgrades/api-analyzer"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/adding-radcontrols-to-visual-studio-toolbox$"
+    to: "/devtools/winforms/visual-studio-integration/adding-radcontrols-to-visual-studio-toolbox"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/install-using-nuget$"
+    to: "/devtools/winforms/visual-studio-integration/install-using-nuget"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/application-deployment$"
+    to: "/devtools/winforms/deployment-and-distribution/application-deployment"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/redistributing-telerik-ui-for-winforms$"
+    to: "/devtools/winforms/deployment-and-distribution/redistributing-telerik-ui-for-winforms"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/using-default-themes$"
+    to: "/devtools/winforms/styling-and-appearance/using-default-themes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/visual-style-builder$"
+    to: "/devtools/winforms/styling-and-appearance/visual-style-builder"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/using-a-default-theme-for-the-entire-application$"
+    to: "/devtools/winforms/styling-and-appearance/using-a-default-theme-for-the-entire-application"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/using-custom-themes$"
+    to: "/devtools/winforms/styling-and-appearance/using-custom-themes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/touch-themes$"
+    to: "/devtools/winforms/styling-and-appearance/touch-themes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/theme-tutorials/styling-radribbonbar$"
+    to: "/devtools/winforms/styling-and-appearance/theme-tutorials/styling-radribbonbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/themes/theme-tutorials/styling-radribbonbar$"
+    to: "/devtools/winforms/styling-and-appearance/theme-tutorials/styling-radribbonbar"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/theme-tutorials/customizing-material-theme$"
+    to: "/devtools/winforms/styling-and-appearance/theme-tutorials/customizing-material-theme"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application/creating-a-theme-component$"
+    to: "/devtools/winforms/styling-and-appearance/advanced-topics/adding-custom-redistributable-themes-to-your-application/creating-a-theme-component"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application/adding-a-custom-theme-as-a-resource$"
+    to: "/devtools/winforms/styling-and-appearance/advanced-topics/adding-custom-redistributable-themes-to-your-application/adding-a-custom-theme-as-a-resource"
+    type: Permanent
+-
+    from: "^/devtools/winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application/adding-a-custom-theme-as-a-file$"
+    to: "/devtools/winforms/styling-and-appearance/advanced-topics/adding-custom-redistributable-themes-to-your-application/adding-a-custom-theme-as-a-file"
+    type: Permanent
+-
+    from: "^/devtools/winforms/codedui/codedui$"
+    to: "/devtools/winforms/testing/codedui/codedui"
+    type: Permanent
+-
+    from: "^/devtools/winforms/codedui/requirements$"
+    to: "/devtools/winforms/testing/codedui/requirements"
+    type: Permanent
+-
+    from: "^/devtools/winforms/codedui/getting-started$"
+    to: "/devtools/winforms/testing/codedui/getting-started"
+    type: Permanent
+-
+    from: "^/devtools/winforms/codedui/supported-controls-and-actions$"
+    to: "/devtools/winforms/testing/codedui/supported-controls-and-actions"
+    type: Permanent
+-
+    from: "^/devtools/winforms/personal-data-collection$"
+    to: "/devtools/winforms/licensing/personal-data-collection"
+    type: Permanent
+-
+    from: "^/devtools/winforms/visual-studio-templates$"
+    to: "/devtools/winforms/visual-studio-integration/visual-studio-templates"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/forms-and-dialogs/tabbedform/features/buttons$"
+    to: "/devtools/winforms/controls/forms-and-dialogs/tabbedform/features/qick-actions"
+    type: Permanent
+-
+    from: "^/devtools/winforms/track-and-status-controls-trackbar-programming-radtrackbar$"
+    to: "/devtools/winforms/controls/track-and-status-controls/trackbar/properties-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/codedui/codedui$"
+    to: "/devtools/winforms/testing/codedui/codedui"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/telerik\\.wincontrols\\.ui\\.calendarviewcollection$"
+    to: "/devtools/winforms/api/html/t_telerik_wincontrols_ui_calendarviewcollection.htm"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_data_([a-zA-Z]*)_1$"
+    to: "/devtools/winforms/api/telerik.wincontrols.data.$2-1"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_data_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.data.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_data_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.data.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_fixed_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.fixed.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_apoc_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.apoc.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_collections_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.collections.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_charting_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.charting.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_pivot_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.pivot.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_pdf_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.pdf.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_diagram_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.diagram.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_spreadsheet_controls_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.spreadsheet.controls.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_spreadsheet_ui_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.spreadsheet.ui.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_richtexteditor_ui_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.richtexteditor.ui.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_ui_scheduler_([a-zA-Z]*)_1$"
+    to: "/devtools/winforms/api/telerik.wincontrols.ui.scheduler.$2-1"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_ui_([a-zA-Z]*)_1$"
+    to: "/devtools/winforms/api/telerik.wincontrols.ui.$2-1"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_ui_([a-zA-Z]*)_2$"
+    to: "/devtools/winforms/api/telerik.wincontrols.ui.$2-2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_ui_pivotgrid_dialogs_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.ui.pivotgrid.dialogs.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_ui_barcode_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.ui.barcode.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_ui_dialogs_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.ui.dialogs.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_ui_imageeditor_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.ui.imageeditor.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_ui_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.ui.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_([a-zA-Z]*)_1$"
+    to: "/devtools/winforms/api/telerik.wincontrols.$2-1"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_zip_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.zip.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_export_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.export.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_wincontrols_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.wincontrols.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_windows_diagrams_core_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.windows.diagrams.core.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_windows_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.windows.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_winforms_controls_richtextboxui_dialogs_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.winforms.controls.richtextboxui.dialogs.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_winforms_controls_spreadsheet_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.winforms.controls.spreadsheet.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_winforms_controls_documents_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.winforms.controls.documents.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_winforms_documents_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.winforms.documents.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_winforms_controls_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.winforms.controls.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_winforms_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.winforms.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)telerik_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/telerik.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)theartofdev_htmlrenderer_([a-zA-Z]*)$"
+    to: "/devtools/winforms/api/theartofdev.htmlrenderer.$2"
+    type: Permanent
+-
+    from: "^/devtools/winforms/api/html/(.*)$"
+    to: "/devtools/winforms/api/"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/syntaxeditor/overview$"
+    to: "/devtools/winforms/controls/syntax-editor/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/themes/using-default-themes$"
+    to: "devtools/winforms/styling-and-appearance/using-default-themes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/getting-startedvisual-studio-extensions$"
+    to: "/devtools/winforms/visual-studio-integration/visual-studio-extensions/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/overview$"
+    to: "/devtools/winforms/visual-studio-integration/visual-studio-extensions/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/visual-studio-extensions/create-project$"
+    to: "/devtools/winforms/visual-studio-integration/visual-studio-extensions/create-project"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/pageview/navigation-view/hierarchy-support$"
+    to: "/devtools/winforms/controls/navigationview/hierarchy-support"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/pageview/navigation-view/strip-element-properties$"
+    to: "/devtools/winforms/controls/navigationview/properties-methods-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/pageview/navigation-view/display-modes$"
+    to: "/devtools/winforms/controls/navigationview/display-modes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/pageview/navigation-view/getting-started$"
+    to: "/devtools/winforms/controls/navigationview/getting-started"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdownlist$"
+    to: "/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-deployment-and-distribution/latest-internal-builds$"
+    to: "/devtools/winforms/installation-and-upgrades/download-product-files"
+    type: Permanent
+-
+    from: "^/devtools/winforms/installation-and-upgrades/latest-internal-builds$"
+    to: "/devtools/winforms/installation-and-upgrades/download-product-files"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/pdfprocessing/overview$"
+    to: "/devtools/winforms/integration-with-other-telerik-products/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/spreadstreamprocessing/overview$"
+    to: "/devtools/winforms/integration-with-other-telerik-products/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/spreadprocessing/overview$"
+    to: "/devtools/winforms/integration-with-other-telerik-products/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/wordsprocessing/overview$"
+    to: "/devtools/winforms/integration-with-other-telerik-products/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/ziplibrary/overview$"
+    to: "/devtools/winforms/integration-with-other-telerik-products/document-processing-libraries"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/formating-examples/child-tabs$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/formating-examples/child-tabs"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/formating-examples/command-cell$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/formating-examples/command-cell"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/formating-examples/group-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/formating-examples/group-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/formating-examples/row-numbers$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/formating-examples/row-numbers"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/formating-examples/style-property$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/formating-examples/style-property"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/accessing-and-setting-the-currentcell$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/accessing-and-setting-the-currentcell"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/accessing-cells$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/accessing-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/cell-types$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/cell-types"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/conditional-formatting-cells$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/conditional-formatting-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/creating-custom-cells$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/creating-custom-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/formatting-cells$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/formatting-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/gridviewcellinfo$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/gridviewcellinfo"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/iterating-cells$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/iterating-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/painting-and-drawing-in-cells$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/painting-and-drawing-in-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/tooltips$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/cells/tooltips"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewbrowsecolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewbrowsecolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewcalculatorcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewcalculatorcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewcheckboxcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewcheckboxcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewcolorcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewcolorcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewcomboboxcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewcomboboxcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewcommandcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewcommandcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewdatetimecolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewdatetimecolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewdecimalcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewdecimalcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewhyperlinkcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewhyperlinkcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewimagecolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewimagecolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewmaskboxcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewmaskboxcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewmulticomboboxcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewmulticomboboxcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewratingcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewratingcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewselectcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewselectcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewsparklinecolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewsparklinecolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewtextboxcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewtextboxcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/column-types/gridviewtimespancolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/column-types/gridviewtimespancolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/accessing-and-iterating-through-columns$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/accessing-and-iterating-through-columns"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/calculated-columns-\\(column-expressions\\)$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/calculated-column-expressions"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/columns-events$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/columns-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/columns$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/columns"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/converting-data-types$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/converting-data-types"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/data-formatting$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/data-formatting"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/generating-columns$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/generating-columns"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/gridviewcolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/gridviewcolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/gridviewdatacolumn$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/gridviewdatacolumn"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/pinning-and-unpinning-columns$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/pinning-and-unpinning-columns"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/reordering-columns$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/reordering-columns"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/resizing-columns-programatically$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/resizing-columns-programatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/columns/working-with-columnchooser$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/columns/working-with-columnchooser"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/context-menus/conditional-custom-context-menus$"
+    to: "/devtools/winforms/controls/gridview/features/context-menus/conditional-custom-context-menus"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/context-menus/custom-context-menus$"
+    to: "/devtools/winforms/controls/gridview/features/context-menus/custom-context-menus"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/context-menus/modifying-the-default-context-menu$"
+    to: "/devtools/winforms/controls/gridview/features/context-menus/modifying-the-default-context-menu"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/drag-and-drop/radgridviewdragdropservice$"
+    to: "/devtools/winforms/controls/gridview/features/drag-and-drop/radgridviewdragdropservice"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/drag-and-drop/rows-reordering-in-master-detail-hierarchy$"
+    to: "/devtools/winforms/controls/gridview/features/drag-and-drop/rows-reordering-in-master-detail-hierarchy"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/drag-and-drop/rows-reordering-in-self-reference-hierarchy$"
+    to: "/devtools/winforms/controls/gridview/features/drag-and-drop/rows-reordering-in-self-reference-hierarchy"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/how-to/allow-end-users-to-add-items-to-dropdownlisteditor$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/how-to/allow-end-users-to-add-items-to-dropdownlisteditor"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/how-to/change-the-active-editor-depending-on-the-cell-value-type\\.$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/how-to/change-the-active-editor-depending-on-the-cell-value-type."
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/api$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/api"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/customizing-editor-behavior$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/customizing-editor-behavior"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/data-validation$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/data-validation"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/default-editors$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/default-editors"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/editing-lifecycle$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/editing-lifecycle"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/editors$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/editors"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/events$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/handling-editors'-events$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/handling-editors'-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/editors/using-custom-editors$"
+    to: "/devtools/winforms/controls/gridview/features/editing/editors/using-custom-editors"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/expression-editor/expression-editor$"
+    to: "/devtools/winforms/controls/gridview/features/editing/expression-editor/expression-editor"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/expression-editor/design-time$"
+    to: "/devtools/winforms/controls/gridview/features/editing/expression-editor/design-time"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/expression-editor/end-user-support$"
+    to: "/devtools/winforms/controls/gridview/features/editing/expression-editor/end-user-support"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/expression-editor/customizing-radexpressioneditor$"
+    to: "/devtools/winforms/controls/gridview/features/editing/expression-editor/customizing-radexpressioneditor"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/expression-editor/localization$"
+    to: "/devtools/winforms/controls/gridview/features/editing/expression-editor/localization"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/insert-update-delete-records/data-editing-support$"
+    to: "/devtools/winforms/controls/gridview/features/editing/insert-update-delete-records/data-editing-support"
+    type: Permanent
+-
+    from: "^devtools/winforms/controls/gridview/insert-update-delete-records/data-editing-event-sequence$"
+    to: "/devtools/winforms/controls/gridview/features/editing/insert-update-delete-records/data-editing-event-sequence"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/insert-update-delete-records/delete-using-controls-api$"
+    to: "/devtools/winforms/controls/gridview/features/editing/insert-update-delete-records/delete-using-controls-api"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/insert-update-delete-records/tracking-changes-in-radgridview$"
+    to: "/devtools/winforms/controls/gridview/features/editing/insert-update-delete-records/tracking-changes-in-radgridview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/insert-update-delete-records/validation$"
+    to: "/devtools/winforms/controls/gridview/features/editing/insert-update-delete-records/validation"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/how-to/add-header-and-footer-to-the-exported-document"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/how-to/colum-width-and-row-height-with-excelml$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/how-to/colum-width-and-row-height-with-excelml"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/export-data-in-a-group-to-excel$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/export-data-in-a-group-to-excel"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/export-to-csv$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/export-to-csv"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/export-to-excel-via-excelml-format$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/export-to-excel-via-excelml-format"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/export-to-pdf$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/export-to-pdf"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/html-export$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/html-export"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/overview$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/spread-export$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/spread-export"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/spreadstream-export$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/spreadstream-export"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/exporting-data/troubleshooting$"
+    to: "/devtools/winforms/controls/gridview/features/exporting-data/troubleshooting"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/How-To/filter-on-enter$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/How-To/filter-on-enter"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/basic-filtering$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/basic-filtering"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/custom-filter-dialog$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/custom-filter-dialog"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/custom-filtering$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/custom-filtering"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/events$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/excel-like-filtering$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/excel-like-filtering"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/filterexpressionchanged-event$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/filterexpressionchanged-event"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/filtering-row$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/filtering-row"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/put-a-filter-cell-into-edit-mode-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/setting-filters-programmatically-\\(composite-descriptors\\)$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/setting-filters-programmatically-(composite-descriptors)"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/filtering/setting-filters-programmatically-\\(simple-descriptors\\)$"
+    to: "/devtools/winforms/controls/gridview/features/filtering/setting-filters-programmatically-(simple-descriptors)"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/basic-grouping$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/basic-grouping"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/custom-grouping$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/custom-grouping"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/events$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/formatting-group-header-row$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/formatting-group-header-row"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/group-aggregates$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/group-aggregates"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/groups-collection$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/groups-collection"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/setting-groups-programmatically$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/setting-groups-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/sorting-group-rows$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/sorting-group-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/grouping/using-grouping-expressions$"
+    to: "/devtools/winforms/controls/gridview/features/grouping/using-grouping-expressions"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/paging/overview$"
+    to: "/devtools/winforms/controls/gridview/features/paging/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/paging/paging-panel$"
+    to: "/devtools/winforms/controls/gridview/features/paging/paging-panel"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/printing-support/events-and-customization$"
+    to: "/devtools/winforms/controls/gridview/features/printing-support/events-and-customization"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/printing-support/gridprintstyle$"
+    to: "/devtools/winforms/controls/gridview/features/printing-support/gridprintstyle"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/printing-support/printing-hierarchical-grid$"
+    to: "/devtools/winforms/controls/gridview/features/printing-support/printing-hierarchical-grid"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/printing-support/printing-support$"
+    to: "/devtools/winforms/controls/gridview/features/printing-support/printing-support"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/how-to/autosize-entire-row$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/how-to/autosize-entire-row"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/adding-and-inserting-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/adding-and-inserting-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/conditional-formatting-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/conditional-formatting-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/creating-custom-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/creating-custom-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/drag-and-drop$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/drag-and-drop"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/formatting-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/formatting-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/gridviewrowinfo$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/gridviewrowinfo"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/iterating-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/iterating-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/new-row$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/new-row"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/painting-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/painting-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/pinned-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/pinned-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/removing-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/removing-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/reordering-system-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/reordering-system-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/resizing-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/resizing-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/row-behaviors$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/row-behaviors"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/rows-vs-childrows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/rows-vs-childrows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/search-row$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/search-row"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/selected-rows-and-current-row$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/selected-rows-and-current-row"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/summary-rows$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/summary-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/rows/tag-property$"
+    to: "/devtools/winforms/controls/gridview/visual-elements/rows/tag-property"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/save-and-load-layout/advanced$"
+    to: "/devtools/winforms/controls/gridview/features/save-and-load-layout/advanced"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/save-and-load-layout/load-layout-buttons-in-the-property-grid$"
+    to: "/devtools/winforms/controls/gridview/features/save-and-load-layout/load-layout-buttons-in-the-property-grid"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/save-and-load-layout/save-and-load-layout$"
+    to: "/devtools/winforms/controls/gridview/features/save-and-load-layout/save-and-load-layout"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/scrolling/events$"
+    to: "/devtools/winforms/controls/gridview/features/scrolling/events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/scrolling/scroll-modes$"
+    to: "/devtools/winforms/controls/gridview/features/scrolling/scroll-modes"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/scrolling/scrolling-programmatically$"
+    to: "/devtools/winforms/controls/gridview/features/scrolling/scrolling-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/selection/basic-selection$"
+    to: "/devtools/winforms/controls/gridview/features/selection/basic-selection"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/selection/multiple-selection$"
+    to: "/devtools/winforms/controls/gridview/features/selection/multiple-selection"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/selection/selecting-rows-and-cells-programmatically$"
+    to: "/devtools/winforms/controls/gridview/features/selection/selecting-rows-and-cells-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/sorting/basic-sorting$"
+    to: "/devtools/winforms/controls/gridview/features/sorting/basic-sorting"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/sorting/custom-sorting$"
+    to: "/devtools/winforms/controls/gridview/features/sorting/custom-sorting"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/sorting/events$"
+    to: "/devtools/winforms/controls/gridview/features/sorting/events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/sorting/setting-sorting-programmatically$"
+    to: "/devtools/winforms/controls/gridview/features/sorting/setting-sorting-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/sorting/sorting-expressions$"
+    to: "/devtools/winforms/controls/gridview/features/sorting/sorting-expressions"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/virtual-mode/virtual-mode$"
+    to: "/devtools/winforms/controls/gridview/features/virtual-mode"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/caption$"
+    to: "/devtools/winforms/controls/gridview/features/caption"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/copy-paste-cut$"
+    to: "/devtools/winforms/controls/gridview/features/copy-paste-cut"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/split-view$"
+    to: "/devtools/winforms/controls/gridview/features/split-view"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/gridview/cells/merged-cells$"
+    to: "/devtools/winforms/controls/gridview/features/merged-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/cells/creating-custom-cells$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/cells/creating-custom-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/cells/formatting-data-cells$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/cells/formatting-data-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/cells/formatting-system-cells$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/cells/formatting-system-cells"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/cells/tooltips$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/cells/tooltips"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/columns/pining-columns$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/columns/pining-columns"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/columns/resizing-columns-programmatically$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/columns/resizing-columns-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/context-menu/context-menu$"
+    to: "/devtools/winforms/controls/virtualgrid/features/context-menu/context-menu"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/context-menu/custom-context-menu$"
+    to: "/devtools/winforms/controls/virtualgrid/features/context-menu/custom-context-menu"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/context-menu/modifying-the-default-context-menu$"
+    to: "/devtools/winforms/controls/virtualgrid/features/context-menu/modifying-the-default-context-menu"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/editing/api$"
+    to: "/devtools/winforms/controls/virtualgrid/features/editing/api"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/editing/changing-default-editor$"
+    to: "/devtools/winforms/controls/virtualgrid/features/editing/changing-default-editor"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/editing/changing-editors-properties$"
+    to: "/devtools/winforms/controls/virtualgrid/features/editing/changing-editors-properties"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/editing/data-validation$"
+    to: "/devtools/winforms/controls/virtualgrid/features/editing/data-validation"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/editing/editors$"
+    to: "/devtools/winforms/controls/virtualgrid/features/editing/editors"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/editing/events$"
+    to: "/devtools/winforms/controls/virtualgrid/features/editing/events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/editing/using-custom-editors$"
+    to: "/devtools/winforms/controls/virtualgrid/features/editing/using-custom-editors"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/filtering/filtering$"
+    to: "/devtools/winforms/controls/virtualgrid/features/filtering/filtering"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/filtering/setting-filters-programmatically$"
+    to: "/devtools/winforms/controls/virtualgrid/features/filtering/setting-filters-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/paging/paging-overview$"
+    to: "/devtools/winforms/controls/virtualgrid/features/paging/paging-overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/paging/paging-panel$"
+    to: "/devtools/winforms/controls/virtualgrid/features/paging/paging-panel"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/rows/alternating-row-colors$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/rows/alternating-row-colors"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/rows/formatting-data-rows$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/rows/formatting-data-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/rows/formatting-system-rows$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/rows/formatting-system-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/rows/pinned-rows$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/rows/pinned-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/rows/resizing-rows-programmatically$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/rows/resizing-rows-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/rows/system-rows$"
+    to: "/devtools/winforms/controls/virtualgrid/visual-elements/rows/system-rows"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/save-and-load-layout/advanced$"
+    to: "/devtools/winforms/controls/virtualgrid/features/save-and-load-layout/advanced"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/save-and-load-layout/overview$"
+    to: "/devtools/winforms/controls/virtualgrid/features/save-and-load-layout/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/selection/multi-select$"
+    to: "/devtools/winforms/controls/virtualgrid/features/selection/multi-select"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/selection/selecting-progrmmatically$"
+    to: "/devtools/winforms/controls/virtualgrid/features/selection/selecting-progrmmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/selection/selection$"
+    to: "/devtools/winforms/controls/virtualgrid/features/selection/selection"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/sorting/setting-sorting-programmatically$"
+    to: "/devtools/winforms/controls/virtualgrid/features/sorting/setting-sorting-programmatically"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/sorting/sorting$"
+    to: "/devtools/winforms/controls/virtualgrid/features/sorting/sorting"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/busy-indicators$"
+    to: "/devtools/winforms/controls/virtualgrid/features/busy-indicators"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/copy-paste-cut$"
+    to: "/devtools/winforms/controls/virtualgrid/features/copy-paste-cut"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/scrolling$"
+    to: "/devtools/winforms/controls/virtualgrid/features/scrolling"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/virtualgrid/handling-user-input/input-behavior$"
+    to: "/devtools/winforms/controls/virtualgrid/features/input-behavior"
+    type: Permanent
+-
+    from: "^/devtools/winforms/licensing/copyright$"
+    to: "/devtools/winforms/licensing/license-key"
+    type: Permanent
+-
+    from: "^/devtools/winforms/licensing/license-agreement$"
+    to: "/devtools/winforms/licensing/license-key"
+    type: Permanent
+-
+    from: "^/devtools/winforms/licensing/personal-data-collection$"
+    to: "/devtools/winforms/licensing/license-key"
+    type: Permanent
+-
+    from: "^/devtools/winforms/licensing/trial-vs-licensed-version$"
+    to: "/devtools/winforms/licensing/license-key"
+    type: Permanent
+-
+    from: "^/devtools/winforms/licensing/license-file-\\(licx\\)$"
+    to: "/devtools/winforms/knowledge-base/kb-license-file-licx"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/map/providers/azuremapprovider$"
+    to: "/devtools/winforms/controls/map/providers/azure-map/azuremapprovider"
+    type: Permanent
