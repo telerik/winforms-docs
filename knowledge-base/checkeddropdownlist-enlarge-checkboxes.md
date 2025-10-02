@@ -50,6 +50,5 @@ To enlarge the checkboxes within the dropdown items and adjust their alignment, 
 
 ## See Also
 
-- [RadCheckedDropDownList Overview](https://docs.telerik.com/devtools/winforms/controls/checkeddropdownlist/overview)
-- [Customizing Appearance](https://docs.telerik.com/devtools/winforms/controls/checkeddropdownlist/customizing-appearance)
-- [Handling Events](https://docs.telerik.com/devtools/winforms/controls/checkeddropdownlist/events)
+* [RadCheckedDropDownList Overview](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/checkeddropdownlist)
+* [Customizing Appearance](https://docs.telerik.com/devtools/winforms/controls/checkeddropdownlist/customizing-appearance)

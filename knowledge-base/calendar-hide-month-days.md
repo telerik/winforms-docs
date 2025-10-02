@@ -46,4 +46,4 @@ To apply this approach, first, ensure the `AllowMultipleView` property of your R
 - The `OtherMonth` property is crucial for identifying days that belong to months other than the current one.
 
 ## See Also
-* [RadCalendar Documentation](https://docs.telerik.com/devtools/winforms/controls/calendar/overview)
+* [RadCalendar Documentation](https://docs.telerik.com/devtools/winforms/controls/calendar/calendar)

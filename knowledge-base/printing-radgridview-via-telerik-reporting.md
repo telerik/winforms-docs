@@ -19,7 +19,7 @@ Generate a report based on RadGridView, and using the export capabilities of Tel
  
 **DESCRIPTION**
  
-In [this code library article](/community/code-library/winforms/gridview/telerik-reporting-report-generation-using-radgridview-for-winforms.aspx) could be found a simple class that allows to easily export a single-level hierarchy RadGridView in a Telerik Reporting report.  This report can then be printed or exported in a variety of formats.   
+In [this code SDK project](https://github.com/telerik/winforms-sdk/tree/master/GridView/RadGridReportingLite) could be found a simple example that demonstrate how to easily export a single-level hierarchy RadGridView in a Telerik Reporting report. The report can then be printed or exported in a variety of formats.   
 
 You can use the properties below to control the appearance of the report.
  
@@ -55,7 +55,7 @@ bool UseGridColors – Controls whether the report uses the header colors from R
    
 **SOLUTION**
  
-1. Add a reference to RadGridReportingLite.dll in your project (the library project could be find in [this article](/community/code-library/winforms/gridview/telerik-reporting-report-generation-using-radgridview-for-winforms.aspx)).
+1. Add a reference to RadGridReportingLite.dll in your project (the library project could be find in [our GitHub SDK repository](https://github.com/telerik/winforms-sdk/tree/master/GridView/RadGridReportingLite).
 2. Create an instance of RadGridReport:   
  *RadGridReportingLite.RadGridReport report = new RadGridReportingLite.RadGridReport("MyGridReport");*
 3. Set properties controlling format and appearance:

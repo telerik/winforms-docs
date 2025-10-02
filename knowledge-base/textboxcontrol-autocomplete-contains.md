@@ -2,7 +2,7 @@
 title: Show auto-complete items which text contains the user's input in RadTextBoxControl
 description: This article demonstrates how to auto-complete the items that contains the user's input in RadTextBoxControl
 type: how-to
-page_title: Show auto-complete items which text "starts with" the user's input in RadTextBoxControl
+page_title: Show auto-complete items which text starts with the user's input in RadTextBoxControl
 slug: textboxcontrol-autocomplete-contains
 position: 
 tags: editors, textboxcontrol

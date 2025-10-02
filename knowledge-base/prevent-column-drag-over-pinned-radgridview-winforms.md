@@ -51,4 +51,4 @@ private void svc_PreviewDragOver(object sender, RadDragOverEventArgs e)
 ## See Also
 
 - [RadGridView for WinForms Documentation - Drag and Drop](https://docs.telerik.com/devtools/winforms/controls/gridview/drag-and-drop/radgridviewdragdropservice)
-- [RadGridView for WinForms Documentation - Pinned Columns](https://docs.telerik.com/devtools/winforms/controls/gridview/columns/pinned-columns)
+- [RadGridView for WinForms Documentation - Pinned Columns](https://docs.telerik.com/devtools/winforms/controls/gridview/visual-elements/columns/pinning-and-unpinning-columns)

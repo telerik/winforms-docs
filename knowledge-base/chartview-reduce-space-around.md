@@ -31,5 +31,4 @@ This code sets the margin to 2 pixels on all sides (left, top, right, bottom), m
 
 ## See Also
 
-- [RadChartView Overview](https://docs.telerik.com/devtools/winforms/controls/chartview/overview)
-- [Customizing Appearance](https://docs.telerik.com/devtools/winforms/controls/chartview/customization/customizing-appearance)
+* [RadChartView Overview](https://docs.telerik.com/devtools/winforms/controls/chartview/overview)

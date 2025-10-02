@@ -1,7 +1,7 @@
 ---
 title: Use Control inside an Element
 page_title: Use Control inside an Element - Telerik Presentation Framework
-description: 
+description: Learn how to embed controls inside Telerik Presentation Framework elements for flexible and modern WinForms UI layouts.
 slug: winforms/telerik-presentation-framework/elements/radtrackbarelement
 tags: radtrackbarelement
 published: True
