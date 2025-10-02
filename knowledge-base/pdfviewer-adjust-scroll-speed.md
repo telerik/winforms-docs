@@ -112,5 +112,4 @@ In the Designer.cs file of your form, replace the `RadPdfViewer` control instanc
 ## See Also
 
 * [RadPdfViewer Overview](https://docs.telerik.com/devtools/winforms/controls/pdfviewer/overview)
-* [Customizing RadPdfViewer](https://docs.telerik.com/devtools/winforms/controls/pdfviewer/customization)
 * [Handling Mouse Wheel Events](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.mousewheel)

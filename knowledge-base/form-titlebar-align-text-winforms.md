@@ -41,4 +41,4 @@ By applying this code, the text in the RadTitleBar will be centered, providing a
 
 ## See Also
 
-* [RadTitleBar Overview](https://docs.telerik.com/devtools/winforms/controls/titlebar/overview)
+* [RadTitleBar Overview](https://docs.telerik.com/devtools/winforms/controls/forms-and-dialogs/radtitlebar/radtitlebar)

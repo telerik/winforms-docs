@@ -179,5 +179,6 @@ This solution enables the drag and drop of multiple selected nodes from RadTreeV
 - Ensure that both the source (RadTreeView) and target controls have their respective properties and event handlers correctly configured to support drag and drop functionality.
 
 ## See Also
-- [RadTreeView Documentation](https://docs.telerik.com/devtools/winforms/controls/treeview/overview)
-- [Drag and Drop in RadTreeView](https://docs.telerik.com/devtools/winforms/controls/treeview/drag-and-drop)
+
+* [RadTreeView Documentation](https://docs.telerik.com/devtools/winforms/controls/treeview/treeview)
+* [TreeViewDragDropService](https://docs.telerik.com/devtools/winforms/controls/treeview/drag-and-drop/treeviewdragdropservice)

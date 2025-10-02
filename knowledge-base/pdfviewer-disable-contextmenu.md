@@ -36,5 +36,5 @@ In some cases, the default menu items need to be modified, and the [RadPdfViewer
 
 ## See Also
 
-- [PdfViewer Documentation](https://docs.telerik.com/devtools/winforms/controls/pdfviewer/overview)
-- [RadContextMenu Documentation](https://docs.telerik.com/devtools/winforms/controls/contextmenu/overview)
+* [PdfViewer Documentation](https://docs.telerik.com/devtools/winforms/controls/pdfviewer/overview)
+* [RadContextMenu Documentation](https://docs.telerik.com/devtools/winforms/controls/menus/contextmenu/context-menus)

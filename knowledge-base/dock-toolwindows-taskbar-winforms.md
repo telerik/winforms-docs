@@ -53,5 +53,5 @@ Private Sub RadDock1_FloatingWindowCreated(ByVal sender As Object, ByVal e As Te
 
 ## See Also
 
-* [RadDock Overview](https://docs.telerik.com/devtools/winforms/controls/raddock/overview)
+* [RadDock Overview](https://docs.telerik.com/devtools/winforms/controls/dock/overview)
 * [Customizing Floating Windows]({%slug winforms/dock/object-model/customizing-floating-windows%})

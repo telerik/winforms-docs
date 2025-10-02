@@ -1,7 +1,7 @@
 ---
 title: Shadows
 page_title: Shadows - Telerik Presentation Framework
-description:  
+description: Add shadow effects with Telerik Presentation Framework in WinForms to enhance visual depth and improve the overall UI design.
 slug: winforms/tpf/shadows
 tags: touch, themes
 published: True

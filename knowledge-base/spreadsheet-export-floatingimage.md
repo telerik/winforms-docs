@@ -37,5 +37,5 @@ File.WriteAllBytes($"../../image.{floatingImage.ImageSource.Extension}", floatin
 This code saves the first image found in the worksheet's `Images` collection. You can modify the file path and name as needed. Additionally, ensure the extension matches the image format for correct file handling.
 
 ## See Also
-* [RadSpreadsheet Documentation](https://docs.telerik.com/devtools/winforms/controls/radspreadsheet/overview)
-* [Worksheet Images Collection Overview](https://docs.telerik.com/devtools/winforms/controls/radspreadsheet/model/images)
+
+* [RadSpreadsheet Documentation](https://docs.telerik.com/devtools/winforms/controls/spreadsheet/overview)

@@ -16,7 +16,7 @@ RadGridView currently offers Load On Demand feature in hierarchy mode. Fetching 
 
 ### Self Reference 
 
-The self-reference mode allows to build a hierarchy using a flat collection of objects, by defining a relation. In self-reference hierarchy the RadGridView needs all the data and based on the primary and foreign keys, it builds up the hierarchy levels. More information about the Self Reference Hierarchy is available [here](%slug winforms/gridview/hierarchical-grid/self-referencing-hierarchy).
+The self-reference mode allows to build a hierarchy using a flat collection of objects, by defining a relation. In self-reference hierarchy the RadGridView needs all the data and based on the primary and foreign keys, it builds up the hierarchy levels. More information about the Self Reference Hierarchy is available [here]({%slug winforms/gridview/hierarchical-grid/self-referencing-hierarchy%}).
 
 ## Load on Demand in Self-Reference Hierarchy 
 

@@ -78,5 +78,5 @@ Finally, replace the default `RadScrollablePanel` with your custom version in th
 By implementing this custom container, you disable the default behavior that automatically scrolls to the active control, thus preventing the scrollbars from moving when a window is clicked.
 
 ## See Also
-- [RadDock Overview](https://docs.telerik.com/devtools/winforms/controls/dock/overview)
-- [Customizing RadScrollablePanel Behavior](https://docs.telerik.com/devtools/winforms/controls/panels/scrollable-panel/customizing-behavior)
+
+* [RadDock Overview](https://docs.telerik.com/devtools/winforms/controls/dock/overview)

@@ -97,6 +97,6 @@ Refer to the [Custom Appointment Element](https://docs.telerik.com/devtools/winf
 
 ## See Also
 
-- [RadScheduler Overview](https://docs.telerik.com/devtools/winforms/controls/scheduler/overview)
-- [Appointment Formatting in RadScheduler](https://docs.telerik.com/devtools/winforms/controls/scheduler/appointments-and-dialogs/appointment-formatting)
-- [Custom Appointment Element Documentation](https://docs.telerik.com/devtools/winforms/controls/scheduler/appointments-and-dialogs/custom-appointment-element)
+* [RadScheduler Overview](https://docs.telerik.com/devtools/winforms/controls/scheduler/overview)
+* [Appointment Formatting in RadScheduler](https://docs.telerik.com/devtools/winforms/controls/scheduler/appearance/formatting-appointments)
+* [Custom Appointment Element Documentation](https://docs.telerik.com/devtools/winforms/controls/scheduler/appointments-and-dialogs/custom-appointment-element)

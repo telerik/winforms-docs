@@ -173,8 +173,8 @@ For the purpose of the unit testing, you don't want to bother about the data and
 
 ## JustMock Integration in your WinForms Project
 
-It is possible either to create a brand new JustMock Test Project or add a reference of Telerik.JustMock.Dll to an existing unit test project: [Add Telerik JustMock to Your Test Project](https://docs.telerik.com/devtools/justmock/getting-started/using-telerik-justmock-in-your-test-project)
-
+It is possible either to create a brand new JustMock Test Project or add a reference of Telerik.JustMock.Dll to an existing unit test project: [Add Telerik JustMock to Your Test Project](https://docs.telerik.com/devtools/justmock/getting-started/configuration/using-telerik-justmock-in-your-test-project)
+                      
 >caption Add a JustMock Test Project
 
 ![just-mock-tutorial 001](images/just-mock-tutorial001.png)

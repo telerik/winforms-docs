@@ -1,7 +1,7 @@
 ---
 title: Document Processing Library and WinForms .NET application
 page_title: Document Processing Library and WinForms .NET application
-description:  
+description: Use Telerik Document Processing Libraries in WinForms projects to create, edit, and export documents without relying on external software.
 slug: core-project-and-document-processing-library
 tags: document processing, WinForms application, .NET
 published: True
