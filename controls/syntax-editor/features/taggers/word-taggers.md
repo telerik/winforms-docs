@@ -34,7 +34,7 @@ The **WordTaggerBase** class exposes the following virtual methods:
 
 * **bool TryGetClassificationType(string word, out ClassificationType classificationType)**: Tries to get the classification type for the given string word.
 * **Dictionary\<string, ClassificationType\> GetWordsToClassificationTypes()**: Gets a dictionary which assigns a classification type to a given word.
-* **IList<string> SplitIntoWords(string value)**: Splits the current line into a collection of words. These processed words are then assigned proper classification types in the **GetTags** method.
+* **IList\<string\> SplitIntoWords(string value)**: Splits the current line into a collection of words. These processed words are then assigned proper classification types in the **GetTags** method.
 
 By inheriting the **WordTaggerBase** class you can create a tagger for your own custom language and specify custom words to be assigned to the list of available classification types. You can also define your own classification types if the default ones are not sufficient for you.
 
