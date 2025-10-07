@@ -5,7 +5,7 @@ type: how-to
 page_title: Adding Tooltip Text to Toolbar Buttons in RadChat for WinForms
 meta_title: Adding Tooltip Text to Toolbar Buttons in RadChat for WinForms
 slug: chat-action-buttons-tooltip
-tags: chat, winforms, tooltiptext, toolbar, toolbaractionelement, vb.net, c#
+tags: chat, winforms, tooltiptext, toolbar, toolbaractionelement
 res_type: kb
 ticketid: 1699306
 ---
@@ -14,7 +14,7 @@ ticketid: 1699306
 
 |Product Version|Product|Author|
 |----|----|----|
-|2025.3.812|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.3.812|RadChat for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
