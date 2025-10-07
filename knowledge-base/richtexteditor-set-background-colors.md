@@ -4,25 +4,17 @@ description: Learn how to set the document background and the editor background 
 type: how-to
 page_title: How to Change Document and Editor Background Colors in UI for WinForms RichTextEditor
 meta_title: How to Change Document and Editor Background Colors in UI for WinForms RichTextEditor
-slug: set-document-editor-background-ui-winforms-richtexteditor
+slug: richtexteditor-set-background-colors
 tags: richtexteditor, ui for winforms, document background, editor background, pagebackcolor, backcolor
 res_type: kb
 ticketid: 1700509
 ---
 
 ## Environment
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>RichTextEditor for UI for WinForms</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>2025.3.812</td>
-</tr>
-</tbody>
-</table>
+
+|Product Version|Product|Author|
+|----|----|----|
+|2025.3.812|RichTextEditor for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
@@ -43,15 +35,13 @@ To set the desired background colors for the document and editor:
 Example code:
 
 ```csharp
-// Set editor background to gray
+// Set editor background color
 this.radRichTextEditor1.RichTextBoxElement.BackColor = Color.LightGray;
 
-// Set document background to white
+// Set page background
 this.radRichTextEditor1.PageBackColor = Color.White;
 ```
 
 ## See Also
 
 - [RichTextEditor Overview](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/overview)
-- [BackColor Property Documentation](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/api/telerik.winforms.ui.radtextboxelement.backcolor)
-- [PageBackColor Property Documentation](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/api/telerik.winforms.ui.radrichtexteditor.pagebackcolor)
