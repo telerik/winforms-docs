@@ -71,4 +71,4 @@ public partial class Form1 : Telerik.WinControls.UI.RadForm
 }
 ```
 
-
+![Dynamically Adjusting RadBindingNavigator Size](images/bindingnavigator-auto-sizing.gif)
