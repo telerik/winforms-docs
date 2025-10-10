@@ -34,14 +34,16 @@ To set the desired background colors for the document and editor:
 
 Example code:
 
-```csharp
+````C#
+
 // Set editor background color
 this.radRichTextEditor1.RichTextBoxElement.BackColor = Color.LightGray;
 
 // Set page background
 this.radRichTextEditor1.PageBackColor = Color.White;
-```
+
+````
 
 ## See Also
 
-- [RichTextEditor Overview](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/overview)
+* [RichTextEditor Overview](https://docs.telerik.com/devtools/winforms/controls/richtexteditor/overview)
