@@ -5,7 +5,7 @@ type: how-to
 page_title: Dynamically Adjust RadBindingNavigator Size
 meta_title: Dynamically Adjust RadBindingNavigator Size
 slug: auto-sizing-bindingnavigator-winforms
-tags: radbindingnavigator, winforms, bindingsource, autosize, textchanged-event
+tags: bindingnavigator, winforms, bindingsource, autosize, textchanged-event
 res_type: kb
 ticketid: 1698112
 ---
@@ -31,7 +31,8 @@ To make the RadBindingNavigator grow and shrink dynamically with its contents, m
 
 Here is a sample implementation:
 
-```csharp
+````C#
+
 public partial class Form1 : Telerik.WinControls.UI.RadForm
 {
     private int textLength = 0;
@@ -69,6 +70,7 @@ public partial class Form1 : Telerik.WinControls.UI.RadForm
         timer.Start();
     }
 }
-```
+
+````
 
 ![Dynamically Adjusting RadBindingNavigator Size](images/bindingnavigator-auto-sizing.gif)
