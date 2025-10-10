@@ -35,7 +35,7 @@ Telerik UI for WinForms suite is a commercial UI library. You are welcome to exp
 ## Support Options		
 
 For any issues you might encounter while working with UI for WinForms, use any of the available support channels:
-
+* The [Telerik UI for WinForms AI Coding Assistant]({%slug ai-overview%}) provides Telerik UI for WinForms tips and produces code snippets that include Telerik UI for WinForms components and API.
 * License holders and active trialists can take advantage of our outstanding customer support delivered by the developers building the library. To submit a support ticket, use the [dedicated support system](https://www.telerik.com/account/support-tickets?pid=523&supcId=daf62541-57e0-b84c-8b5e-da9851c61873&fbp=false).
 * Our [forums](https://www.telerik.com/forums/winforms) are part of the free support you can get from the community and from the team on all kinds of general issues.
 * Our [feedback portal](https://feedback.telerik.com/winforms) provides information on the features/bugs in discussion and also the planned ones for release.
