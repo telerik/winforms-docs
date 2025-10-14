@@ -1,10 +1,8 @@
 top-navigation-product: winforms
-path-prefix: /devtools/winforms
+path-prefix: /products/winforms/documentation
 default-title-prefix: WinForms
 
-primary-color: 
-  light: rgb(112, 45, 232)
-  dark: rgb(162, 119, 240)
+primary-color: "#27A306"
 product-id: 1952 # wf code?
 product-code: RCWF
 product-name: Telerik UI for WinForms
@@ -1738,8 +1736,6 @@ meta:
   winformslab:
     title: WinForms Labs
     position: 0
-
-
 
 redirects: 
 -
