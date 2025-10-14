@@ -2,3 +2,122 @@ apiRules:
 - exclude:
     type: Method
     uidRegex: ^System\.Object\..*$
+- exclude:
+    uidRegex: ^Telerik\.CallHome(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.MeasurementControl(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.RadChart(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.MultiColumnComboGridView(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.FileDialogs\.FileBrowserListView(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.FileDialogs\.FileBrowserTreeView(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.FileDialogs\.FileDialogsBreadcrumb(\..*)?$
+- exclude:
+    uidRegex: ^Microsoft\.Xml\.Serialization\.GeneratedAssembly(\..*)?$
+- exclude:
+    uidRegex: ^ClockControlLibrary(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Apoc(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Data\.Expressions(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Diagnostics\.Pivot(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Pdf(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Web\.Apoc\.Configuration(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Analytics(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.CodedUI(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Commands(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Design(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.FileDialogs\.Helpers(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.FileDialogs\.ShellHelpers(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.OldShapeEditor(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.Barcode(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Serialization(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Styles(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Svg(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Taskbar\.Core(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Themes\.Design(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Themes\.GradientDialog(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Themes\.Serialization(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Themes\.XmlSerialization(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.Tracking(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.Barcode\.Symbology(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.ImageEditor\.Dialogs(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.Map\.Bing(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.PivotGrid\.Dialogs(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.Properties(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.Scheduler\.Dialogs(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinControls\.UI\.StateManagers(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Windows\.Media\.Imaging(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.Windows\.Media\.Imaging\.Zip(\..*)?$                
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.Controls\.Spreadsheet\.Dialogs(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs\.FloatingBlockProperties(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs\.StyleFormattingProperties(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs\.Styles(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs\.Symbols(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs\.TableBorders(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs\.TableProperties(\..*)?$
+- exclude:
+    uidRegex: ^Telerik\.WinForms\.Spreadsheet\.Media\.Imaging\.Zip(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.Adapters(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.Adapters\.Entities(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.Core(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.Core\.Dom(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.Core\.Entities(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.Core\.Handlers(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.Core\.Parse(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.WinForms(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.WinForms\.Adapters(\..*)?$
+- exclude:
+    uidRegex: ^TheArtOfDev\.HtmlRenderer\.WinForms\.Utilities(\..*)?$
+
