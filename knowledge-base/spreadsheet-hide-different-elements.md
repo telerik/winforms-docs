@@ -44,7 +44,7 @@ this.radSpreadsheet1.SpreadsheetElement.FormulaBar.Visibility = Telerik.WinContr
 
 Subscribe to the `ContextMenuShowing` event and set the `Menu` property to `null`:
    
-```C#
+````C#
 
 radSpreadsheet1.SpreadsheetElement.ContextMenuShowing += SpreadsheetElement_ContextMenuShowing;
 
@@ -91,7 +91,7 @@ private void SpreadsheetElement_MessageShowing(object sender, Telerik.WinForms.C
 
 #### **Hide + Sign for Adding Worksheets**
   
-````csharp
+````C#
 
 protected override void OnLoad(EventArgs e)
 {
