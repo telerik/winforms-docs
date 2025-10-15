@@ -15,8 +15,6 @@ The Telerik WinForms [GitHub Copilot](https://github.com/features/copilot) exten
 > 
 > From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP server]({%slug ai-mcp-server%}), ensuring you continue to enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
 
->tip The Telerik .NET MAUI MCP Server works in **Chat**(**Ask**) and **Agent** modes.
-
 This extension enhances GitHub Copilot with proprietary context about Telerik WinForms controls, helping you:
 
 * Generate code snippets using Telerik WinForms components.
@@ -57,7 +55,6 @@ To use the Telerik WinForms Copilot extension:
 1. Look for a status label such as **Telerik WinForms working...** or **Telerik WinForms generating response...** in the output to confirm the extension is active.
 1. Grant permission to the Telerik WinForms extension to read your workspace files when prompted.
 1. For unrelated queries, start a new chat session in a new window to avoid context pollution from previous conversations.
-1. Use in **Chat**(**Ask**) and **Agent** modes.
    
 ### Sample Prompts
 
