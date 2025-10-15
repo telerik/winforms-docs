@@ -11,6 +11,12 @@ position: 1
 
 The Telerik WinForms [GitHub Copilot](https://github.com/features/copilot) extension is an AI-powered coding assistant that provides specialized knowledge about [Telerik UI for WinForms components](https://www.telerik.com/products/winforms.aspx). 
 
+>caution [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps/) on November 10th, 2025, in favor of the Model Context Protocol (MCP) standard. 
+> 
+> From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP server]({%slug ai-mcp-server%}), ensuring you continue to enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
+
+>tip The Telerik .NET MAUI MCP Server works in **Chat**(**Ask**) and **Agent** modes.
+
 This extension enhances GitHub Copilot with proprietary context about Telerik WinForms controls, helping you:
 
 * Generate code snippets using Telerik WinForms components.
@@ -51,13 +57,14 @@ To use the Telerik WinForms Copilot extension:
 1. Look for a status label such as **Telerik WinForms working...** or **Telerik WinForms generating response...** in the output to confirm the extension is active.
 1. Grant permission to the Telerik WinForms extension to read your workspace files when prompted.
 1. For unrelated queries, start a new chat session in a new window to avoid context pollution from previous conversations.
-
+1. Use in **Chat**(**Ask**) and **Agent** modes.
+   
 ### Sample Prompts
 
 The following examples demonstrate useful prompts for the Telerik WinForms extension:
 
 * "`@telerikwinforms` Create a RadGridView with 100 records each having Id, Name and Company. Group the data by Company. Sort by name. Add aggregate count function for the company column."
-* "`@telerikwinforms` Create a RadGridView with 100 employees records with two columns for name and company name. Include paging in the RadGridView with 20 records per page."
+* "`@telerikwinforms` Create a RadGridView with 100 employee records with two columns for name and company name. Include paging in the RadGridView with 20 records per page."
 * "`@telerikwinforms` Create a line RadChartView with 100 records of sample data. Each record should have Value plotted on the vertical axis and Date on the horizontal axis."
 * "`@telerikwinforms` Show me how to size all columns in GridView to take all the available space."
 
