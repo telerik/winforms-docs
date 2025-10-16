@@ -37,6 +37,12 @@ markdown-replacements:
 meta:
   "*customizing-appearance":
     title: Customizing Appearance
+  knowledge-base:
+    title: Knowledge Base
+    position: 50
+    res_type: kb
+    relativeUrl: /knowledge-base
+    hideChildren: true
   controls/aiprompt:
     title: AIPrompt
     position: 1
@@ -1655,9 +1661,6 @@ meta:
   controls/barcode:
     title: Barcode (obsolete)
     position: 55
-  knowledge-base:
-    title: Knowledge Base
-    position: 21
   cloud-integration/google-cloud:
     title: Google Cloud
     position: 2
