@@ -13,7 +13,7 @@ The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextp
 
 This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik UI for WinForms components](https://docs.telerik.com/devtools/winforms/introduction) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
 
->tip The Telerik .NET WinForms MCP Server works in **Chat**(**Ask**) and **Agent** modes.
+>tip The Telerik WinForms MCP Server works in **Chat**(**Ask**) and **Agent** modes.
 
 ## Prerequisites
 
