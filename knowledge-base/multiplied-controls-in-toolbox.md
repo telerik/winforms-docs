@@ -32,7 +32,7 @@ The first thing to try is to **reset** the Visual Studio **Toolbox** by right-cl
 Another approach is to:
 
 1. Close all Visual Studio instances.
-2. Open Windows Explorer and navigate to **%localappdata%\Microsoft\VisualStudio\15.0_<instanceID>** (e.g. VS 2017). Note that you might have several such folders according to the Visual Studio versions that are installed.
+2. Open Windows Explorer and navigate to **%localappdata%\Microsoft\VisualStudio\15.0_&lt;instanceID&gt;** (e.g. VS 2017). Note that you might have several such folders according to the Visual Studio versions that are installed.
 3. Make sure that the option '*Show hidden files, folders, and drives*' is selected in the Windows Explorer options.
 4. Delete all *.tbd files.
 5. Start Visual Studio 2017 and check if the issue still persists.

@@ -32,7 +32,7 @@ To run the provided prompts in the Telerik UI for WinForms GitHub Copilot Extens
 
 ## Assembly-Specific Prompts
 
-This section provides prompt ideas for the [currently supported assemblies]({%slug ai-overview%}#supported-assemblies).
+This section provides prompt ideas for the [currently supported assemblies]({%slug ai-overview%}).
 
 ### WinControls.UI Assembly
 

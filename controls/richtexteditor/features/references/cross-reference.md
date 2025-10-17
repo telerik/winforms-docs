@@ -23,7 +23,7 @@ This article covers:
 
 * [Type of Cross-References](#types-of-cross-references)
 
-* [Inserting a Cross-Reference using RadRichTextEditor’s API](#inserting-a-cross-reference-using-radrichtexteditor’s-api)
+* [Inserting a Cross-Reference using RadRichTextEditor’s API](#inserting-a-cross-reference-using-radrichtexteditors-api)
 
 ## Insert Cross-Reference
 

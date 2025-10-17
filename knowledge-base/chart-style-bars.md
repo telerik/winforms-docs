@@ -14,11 +14,11 @@ res_type: kb
 |----|----|----|
 |2019.2.618|RadGridView for WinForms|[Dimitar Karamfilov]|
 
-# Problem
+## Problem
 
 You need to set the BackColor of each bar chart depending on the DataPoint value.
 
-# Solution
+## Solution
 
 Iterate the series children and set the color. This should be done after the chart is initialized. The following example sets the color of the values depending on their value. 
 

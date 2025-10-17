@@ -8,7 +8,7 @@ tags: common, telerik, visual-studio, winforms, menu, controls
 res_type: kb
 ---
 
-# Environment
+## Environment
 | Version | Product | Author | 
 | --- | --- | ---- | 
 | 2024.1.130| Installer and VS Extensions for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 

@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview - Backstage View
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
-slug: winforms/pageview/getting-started
+slug: winforms/pageview/backstageview/overview
 tags: getting,started
 published: True
 position: 0

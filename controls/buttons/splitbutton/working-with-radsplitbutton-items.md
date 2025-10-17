@@ -11,11 +11,11 @@ previous_url: buttons-splitbutton-working-with-radsplitbutton-items
 
 # Getting Started with WinForms SplitButton
 
-This article shows how you can start using `RadSplitButton`.
+This article shows how you can start using __RadSplitButton__.
 
 ## Adding Telerik Assemblies Using NuGet
 
-To use `RadSplitButton` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
+To use __RadSplitButton__ when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
 
 Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
 
@@ -34,17 +34,17 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 ## Defining the RadSplitButton
 
-You can add ____ either at design time or at run time:
+You can add __RadSplitButton__ either at design time or at run time:
 
 ### Design Time
 
 1. To add a __RadSplitButton__ to your form, drag a __RadSplitButton__ from the toolbox onto the surface of the form designer. 
 2. Like a standard button, you can control the displayed text by setting the __Text__ property. 
-3. Unlike a standard button, __RadSplitButton__ displays drop-down items when clicked. So handling the __Click__ event of this button is not appropriate. Instead, work directly with the events for each item.
+3. Unlike a standard button, __RadSplitButton__ displays drop-down items when clicked. So handling the __Click__ event of this button is not appropriate. Instead, work directly with the events for each item.
 
 ### Run Time
 
-To programmatically add a __RadSplitButton__ to a form, create a new instance of a __RadSplitButton__, and add it to the form __Controls__ collection.
+To programmatically add a __RadSplitButton__ to a form, create a new instance of a __RadSplitButton__, and add it to the form __Controls__ collection.
 
 #### Adding a RadSplitButton at runtime 
 
@@ -80,15 +80,15 @@ Me.Controls.Add(splitButton)
 
 ### Working with RadSplitButton Items
 
-The heart of __RadSplitButton__ is the __Items__ collection. This collection defines the menu items that appear when the __RadSplitButton__ is clicked. There are two ways to add items to a __RadSplitButton__.
+The heart of __RadSplitButton__ is the __Items__ collection. This collection defines the menu items that appear when the __RadSplitButton__ is clicked. There are two ways to add items to a __RadSplitButton__.
 
 ### Adding Items at Design-time in the UI
 
 To add menu items at design-time, please refer to the [Design Time]({%slug winforms/buttons/splitbutton/design-time%}) help article.
 
-### Adding Items at Run Time in Code
+### Adding Items at Run Time in Code
 
-You can also add items to __RadSplitButton__ in code at run time. The following example code illustrates programmatically adding a __RadMenuItem__ to your button.
+You can also add items to __RadSplitButton__ in code at run time. The following example code illustrates programmatically adding a __RadMenuItem__ to your button.
 
 #### Adding a RadMenuItem 
 
@@ -165,7 +165,7 @@ End Sub
  
 ### Displaying Images with Items
 
-You can display images as well as text on your menu items.
+You can display images as well as text on your menu items.
 
 ![WinForms RadSplitButton Image Items](images/buttons-splitbutton-working-with-radsplitbutton-items003.png)
 
@@ -173,11 +173,11 @@ To add an image to your menu item, click in the __Image__ property of the __RadM
 
 ![WinForms RadSplitButton RadMenuItem Image Text](images/buttons-splitbutton-working-with-radsplitbutton-items004.png)
 
-From this dialog you can select an image file from a project resource file or from an image resource on your local hard drive. 
+From this dialog you can select an image file from a project resource file or from an image resource on your local hard drive.
 
 ### Using the Click Event
 
-To handle the __Click__ event of __RadMenuItems__ on the drop down menu, locate the __RadMenuItem__ in the drop down list in the Properties window of the Windows Form designer. Click the events button, then double-click the __Click__ event to generate an event handler. Fill in the details of your event-handling code.
+To handle the __Click__ event of __RadMenuItems__ on the drop down menu, locate the __RadMenuItem__ in the drop down list in the Properties window of the Windows Form designer. Click the events button, then double-click the __Click__ event to generate an event handler. Fill in the details of your event-handling code.
 
 ### Setting the Default Item
 

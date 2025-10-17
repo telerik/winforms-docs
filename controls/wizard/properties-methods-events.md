@@ -89,7 +89,9 @@ AddHandler radWizard1.Next, AddressOf radWizard1_Next
 
 	
 {{source=..\SamplesCS\Wizard\Events.cs region=nextEvent}} 
-{{source=..\SamplesVB\Wizard\EventsForm.vb region=nextEvent}}````C#
+{{source=..\SamplesVB\Wizard\EventsForm.vb region=nextEvent}}
+
+````C#
 private void radWizard1_Next(object sender, WizardCancelEventArgs e)
 {
     if (this.radWizard1.SelectedPage == this.radWizard1.Pages[1])

@@ -35,13 +35,13 @@ It registers the application using an internal activator, expecting the path of 
 
 Similar to the above mentioned **Register** method overloads, there are two overloads that expect a **RadToastNotificationActivatorBase** which is actually a derivative of the [Microsoft.Toolkit.Uwp.Notifications.NotificationActivator](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/send-local-toast-desktop?tabs=msix-sparse).
 
-* Register<T>() where T : RadToastNotificationActivatorBase
-* Register<T>(string exePath, string shortcutName, string aumid) where T : RadToastNotificationActivatorBase
+* `Register<T>()` where T : RadToastNotificationActivatorBase
+* `Register<T>(string exePath, string shortcutName, string aumid)` where T : RadToastNotificationActivatorBase
 
 ## Unregister methods
 
-* **Unregister<T>(string shortcutName, string aumid)**: Unregister a registered manager of type T with the unique id of the application.
-* **Unregister<T>()**: Unregister a registered manager of type T where T : RadToastNotificationActivatorBase
+* `Unregister<T>(string shortcutName, string aumid)`: Unregister a registered manager of type T with the unique id of the application.
+* `Unregister<T>()`: Unregister a registered manager of type T where T : RadToastNotificationActivatorBase
 * **Unregister(string shortcutName, string aumid)**: Unregister a registered manager.
 * **Unregister()**: Cleans up resources used by the Toast Notification Manager. Keep in mind that calling this will clear notifications in the action area as well. You can call this, when the program exits or on uninstalling the program, but it must be called from the exe that was showing the toast notifications.
 

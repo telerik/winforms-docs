@@ -17,7 +17,7 @@ This topic describes the events you can use in RadSpreadsheet so you can get a n
 * [Worksheet Events](#worksheet-events)
 * [RadWorksheetEditor Events](#radworksheeteditor-events)
 * [Cells Events](#cells-events)
-* [Row/Column Events](#rowcolumn-events)
+* [Row-Column Events](#rowcolumn-events)
 
 
 ## RadSpreadsheet Events

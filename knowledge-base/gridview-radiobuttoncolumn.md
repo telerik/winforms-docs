@@ -3,7 +3,7 @@ title: Create RadRadioButtonColumn in RadGridView
 description: Create RadRadioButtonColumn. Check it now!
 type: how-to
 page_title: Create RadRadioButtonColumn in RadGridView
-slug: creating-a-radradiobuttoncellelement
+slug: gridview-radiobuttoncolumn
 tags: gridview,radradiobuttoncolumn, custom, cell, column, radiobutton
 res_type: kb
 ---

@@ -15,7 +15,7 @@ __Track Changes__ is a way for __RadRichTextEditor__ to keep track of the change
       
 * [Activating Track Changes](#activating-track-changes)
 
-* [Customizing Changes Visualization](#customizing-changes-visualization)
+* [Customizing Changes Visualization](#customizing-change-visualization)
 
 * [Changing Current User](#changing-current-user)
 

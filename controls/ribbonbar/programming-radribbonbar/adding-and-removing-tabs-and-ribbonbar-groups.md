@@ -17,9 +17,9 @@ You can manipulate __RadRibbonBar__ tabs and groups at run time by using the ap
 
 To add a tab to __RadRibbonBar__, follow the four steps below:
 
-1. Create a new Telerik.WinControls.UI.__RibbonTab__ object and set its properties.
+1. Create a new Telerik.WinControls.UI.RibbonTab object and set its properties.
 
-1. Call the __Add__ method of the RadRibbonBar.__CommandTabs__ collection, passing the Telerik.WinControls.UI.__RibbonTab__ object.
+1. Call the __Add__ method of the RadRibbonBar.CommandTabs collection, passing the Telerik.WinControls.UI.RibbonTab object.
 
 #### Adding a tab to RadRibbonBar
 
@@ -115,10 +115,10 @@ RadRibbonBar1.CommandTabs.RemoveAt(1)
 
 To add a RibbonBar group to a tab, you follow the steps below:
 
-1. Create a new __RadRibbonBarGroup__ object and set its properties.
+1.Create a new __RadRibbonBarGroup__ object and set its properties.
             
 
-1. Call the __Add__ method of the __RadRibbonBar.CommandTab.Items__ collection, passing the __RadRibbonBarGroup__ object.
+2.Call the __Add__ method of the __RadRibbonBar.CommandTab.Items__ collection, passing the __RadRibbonBarGroup__ object.
 
 #### Create and Setup New RadRibbonBarGroup
 
@@ -191,7 +191,6 @@ Dim groupToRemove As RadRibbonBarGroup = DirectCast(RadRibbonBar1.CommandTabs(0)
 DirectCast(RadRibbonBar1.CommandTabs(0), RibbonTab).Items.Remove(groupToRemove)
 
 ````
-
 {{endregion}}
 
 To remove a group by index, you can use the __RemoveAt__ method:
@@ -209,8 +208,8 @@ To remove a group by index, you can use the __RemoveAt__ method:
 DirectCast(RadRibbonBar1.CommandTabs(0), RibbonTab).Items.RemoveAt(1)
 
 ````
-
 {{endregion}}
+
 
 ## See Also
 
