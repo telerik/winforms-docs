@@ -13,6 +13,8 @@ The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextp
 
 This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik UI for WinForms components](https://docs.telerik.com/devtools/winforms/introduction) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
 
+>tip The Telerik WinForms MCP Server works in **Chat**(**Ask**) and **Agent** modes.
+
 ## Prerequisites
 
 To use the Telerik WinForms MCP server, you need:
@@ -121,6 +123,8 @@ To use the Telerik MCP Server:
 3. Grant permissions when prompted (per session, workspace, or always).
 
 4. Start fresh sessions for unrelated prompts to avoid context pollution.
+
+5. Use in **Chat**(**Ask**) and **Agent** modes.
 
 You can check the Output pane of Visual Studio for diagnostics information related to Copilot. To display the relevant information, select to show output from GitHub Copilot.
 
