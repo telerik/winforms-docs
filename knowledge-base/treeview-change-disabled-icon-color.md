@@ -1,9 +1,9 @@
 ---
-title: Changing Disabled Icon Color in Expanded State for RadTreeView in UI for WinForms
-description: Learn how to change the disabled icon color of the expanded state in the [RadTreeView](https://docs.telerik.com/devtools/winforms/controls/treeview/overview) for UI for WinForms.
+title: Changing Expander Icon Color When the RadTreeView is Disabled UI for WinForms
+description: Learn how to change the expander icon color in the disabled RadTreeView for UI for WinForms.
 type: how-to
-page_title: Adjusting Disabled Icon Color When Expanded in RadTreeView for WinForms
-meta_title: Adjusting Disabled Icon Color When Expanded in RadTreeView for WinForms
+page_title: Adjusting Expander Icon Color in Disabled RadTreeView for WinForms
+meta_title: Adjusting Expander Icon Color in Disabled RadTreeView for WinForms
 slug: treeview-change-disabled-icon-color
 tags: treeview, ui for winforms, disabled icon, expanded state, node formatting
 res_type: kb
@@ -18,7 +18,7 @@ ticketid: 1700586
 
 ## Description
 
-In this tutorial, we will demonstrate how to change the color of the expanded icon in both expanded and collapsed states when the RadTreeView control is disabled. An important step in our approach is that we will need to force the RadTreeView control to update. The code below demonstrates how to do that.
+In this tutorial, we will demonstrate how to change the color of the expander icon in both expanded and collapsed states when the RadTreeView control is disabled. An important step in our approach is that we will need to force the RadTreeView control to update. The code below demonstrates how to do that.
 
 >note The approach is designed while the VisualStudio2022Light theme is applied to the control.
 
