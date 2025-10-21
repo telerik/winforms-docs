@@ -14,7 +14,7 @@ ticketid: 1700786
 
 |Product Version|Product|Author|
 |----|----|----|
-|2025.3.812|RadTreeView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.3.812|RadRibbonBar for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
