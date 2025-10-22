@@ -31,6 +31,7 @@ To achieve hierarchical filtering that retains parent rows when child rows match
 ### Example: Filtering Child Rows in Self-referencing Hierarchy While Keeping Parent Row Visible
 
 ````C#
+
 public Form1()
 {
     InitializeComponent();
@@ -194,4 +195,4 @@ private static DataTable CreateDataSource()
 ````
 
 ## See Also
-- [Custom Filtering](https://docs.telerik.com/devtools/winforms/controls/gridview/features/filtering/custom-filtering) 
+* [Custom Filtering](https://docs.telerik.com/devtools/winforms/controls/gridview/features/filtering/custom-filtering) 
