@@ -20,6 +20,8 @@ ticketid: 1566694
 
 In this tutorial, we will demonstrate how to add a custom panel above the elements inside the footer (where the `<Today>` button resides) in the [UI for WinForms Calendar](https://docs.telerik.com/devtools/winforms/controls/calendar/calendar). This panel can be populated with additional buttons that, when clicked, can select a specific date in the calendar.
 
+![WinForms RadCalendar Footer Customization](images/calendar-add-custom-space-footer01.png)
+
 ## Solution
 
 To create a custom space above the footer, use a `StackLayoutElement` and add it to the `CalendarStatusElement.Children` collection. Follow these steps:
