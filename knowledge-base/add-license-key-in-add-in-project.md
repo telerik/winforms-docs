@@ -5,7 +5,7 @@ page_title: Telerik License Key Invalid or Missing Message Box and Watermark Dis
 type: troubleshooting
 slug: add-license-key-in-add-in-project
 position: 0
-tags: licensing,installation, telerik, licensing, license, key, not, found, addin
+tags: licensing, installation, telerik, licensing, license, key, not, found, addin
 res_type: kb
 ---
 
@@ -25,11 +25,11 @@ This happens because there is no proper main window and application context, whi
 
 Here is a possible solution to resolve the licensing mechanism and remove the Watermark if the license key is valid:
 
-* Ensure that each project, library in your Add-in/Plugin Project is referencing the Telerik.Licensing NuGet. The NuGet is located on the [NuGet.org server](https://www.nuget.org/).
+* Ensure that each project library in your Add-in/Plugin Project is referencing the Telerik.Licensing NuGet. The Licensing NuGet is located on the [NuGet.org server](https://www.nuget.org/).
 
-* Ensure that the Watermark does not appear in your Add-In/Plugin when run as standalone application in Visual Studio. 
+* Ensure that the Watermark does not appear in your Add-In/Plugin when run as a standalone application in Visual Studio. 
 
-* Call the TelerikLicensing.Register() method arly as possible, before initializing any Telerik controls. Keep in mind that RadForm is also a control from our suite. You will need to consider placing it as early as possible in your plug-in’s loading process.
+* Call the TelerikLicensing.Register() method as early as possible, before initializing any Telerik controls. Keep in mind that RadForm is also a control from our suite. You will need to consider placing it as early as possible in your plug-in’s loading process.
 
 ````C#
 
