@@ -5,7 +5,7 @@ type: how-to
 page_title: How to use RadTitleBar on a standard MS Form/RadForm
 slug: titlebar-on-form
 position: 0
-tags: titlebar, forms, minimize, maximize, winforms
+tags: formsanddialogs,titlebar, forms, minimize, maximize, winforms
 res_type: kb
 ---
 
@@ -17,7 +17,7 @@ res_type: kb
  
 ## Description
 
-The standard Form as well as RadForm do provide their own title bar integrated in the form. However, a common requirement is to want to customize the buttons on the form, or change their behavior, etc. Here comes [RadTitleBar](https://docs.telerik.com/devtools/winforms/controls/forms-and-dialogs/radtitlebar/radtitlebar) that allows to be fully customized. 
+The standard Form as well as RadForm do provide their own title bar integrated in the form. However, a common requirement is to want to customize the buttons on the form, or change their behavior, etc. Here comes [RadTitleBar](https://docs.telerik.com/devtools/winforms/controls/forms-and-dialogs/radtitlebar/radtitlebar) that allows it to be fully customized. 
 
 ## Solution 
 
@@ -27,6 +27,7 @@ A full code snippet is illustrated below. You can use the following approach for
  
 
 ````C#
+
 public partial class Form1 : Form
 {
     public Form1()
@@ -69,6 +70,7 @@ public partial class Form1 : Form
    
 ````
 ````VB.NET
+
 Public Partial Class Form1
     Inherits Form
 
