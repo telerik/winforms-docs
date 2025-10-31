@@ -1,6 +1,6 @@
 ---
 title: How to use RadTitleBar on a standard MS Form/RadForm
-description: This article demonstrates how to use RadTitle on standart MS Form/RadForm.
+description: This article demonstrates how to use RadTitle on a standard MS Form/RadForm.
 type: how-to
 page_title: How to use RadTitleBar on a standard MS Form/RadForm
 slug: titlebar-on-form
@@ -17,11 +17,11 @@ res_type: kb
  
 ## Description
 
-The standart Form as well as RadForm, do provide their own title bar integrated in the form. However, a common requirement is to want to customize the bottons on the form, or change their behavior, etc. Here comes [RadTitleBar](https://docs.telerik.com/devtools/winforms/controls/forms-and-dialogs/radtitlebar/radtitlebar) that allows to be fully customized. 
+The standard Form as well as RadForm do provide their own title bar integrated in the form. However, a common requirement is to want to customize the bottons on the form, or change their behavior, etc. Here comes [RadTitleBar](https://docs.telerik.com/devtools/winforms/controls/forms-and-dialogs/radtitlebar/radtitlebar) that allows to be fully customized. 
 
 ## Solution 
 
-To use RadTitleBar on a standart Form or RadForm, and achieve the same behavior when minimizing/maximizing the form you need to override the `WndProc()` as shown below:
+To use RadTitleBar on a standard Form or RadForm, and achieve the same behavior when minimizing/maximizing the form, you need to override the `WndProc()` as shown below:
 
 A full code snippet is illustrated below. You can use the following approach for either [MS Form](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form?view=windowsdesktop-9.0) or [RadForm](https://docs.telerik.com/devtools/winforms/controls/forms-and-dialogs/form/form).
  
