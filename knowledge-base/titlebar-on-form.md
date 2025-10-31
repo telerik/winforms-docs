@@ -1,8 +1,8 @@
 ---
-title: Use RadTitleBar on a standart MS Form/RadForm
+title: How to use RadTitleBar on a standard MS Form/RadForm
 description: This article demonstrates how to use RadTitle on standart MS Form/RadForm.
 type: how-to
-page_title: Use RadTitleBar on a standart MS Form/RadForm
+page_title: How to use RadTitleBar on a standard MS Form/RadForm
 slug: titlebar-on-form
 position: 0
 tags: titlebar, forms, minimize, maximize, winforms
