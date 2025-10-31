@@ -27,7 +27,7 @@ Here is a possible solution to resolve the licensing mechanism and remove the Wa
 
 * Ensure that each project library in your Add-in/Plugin Project is referencing the Telerik.Licensing NuGet. The Licensing NuGet is located on the [NuGet.org server](https://www.nuget.org/).
 
-* Ensure that the Watermark does not appear in your Add-In/Plugin when run as a standalone application in Visual Studio. 
+* Ensure that the watermark does not appear in your Add-In/Plugin when run as a standalone application in Visual Studio. 
 
 * Call the TelerikLicensing.Register() method as early as possible, before initializing any Telerik controls. Keep in mind that RadForm is also a control from our suite. You will need to consider placing it as early as possible in your plug-in’s loading process.
 
