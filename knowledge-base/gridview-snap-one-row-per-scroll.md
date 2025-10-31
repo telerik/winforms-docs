@@ -12,7 +12,7 @@ ticketid: 1702130
 
 |Product Version|Product|Author|
 |----|----|----|
-|2025.3.812|RadSpreadsheet for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.3.812|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
