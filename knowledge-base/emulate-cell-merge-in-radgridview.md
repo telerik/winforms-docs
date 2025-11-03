@@ -127,6 +127,6 @@ The following image shows the result from the above code.
 ![emulate-cell-merge](images/emulate-cell-merge-in-radgridview001.png)
 
 
-The following article shows more complex ways for this: [RadGridView Merge Cells](https://www.telerik.com/support/kb/winforms/gridview/details/radgridview-merge-celss)
+The following article shows more complex ways for this: [RadGridView Merge Cells](https://docs.telerik.com/devtools/winforms/knowledge-base/radgridview-merge-cells)
 
 
