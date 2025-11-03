@@ -3,13 +3,13 @@ path-prefix: /products/winforms/documentation
 default-title-prefix: WinForms
 
 primary-color: "#27A306"
-product-id: 1952 # wf code?
+product-id: 523
 product-code: RCWF
 product-name: Telerik UI for WinForms
 product-url: https://www.telerik.com/products/winforms
 product-trial-url: https://www.telerik.com/try/ui-for-winforms
 contribute-url: https://github.com/telerik/winforms-docs/edit/master
-search-engine-id: 4729071e3f011471f wf # wf search engine id ?
+search-engine-id: 1580af2b9cc344355
 avatar-path: ./images/avatar-ninja.svg
 no-results-image-path: ./images/ninja-no-results.svg
 img-max-width: 100%
