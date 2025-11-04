@@ -203,10 +203,10 @@ End Class
 
 ````
 
->important The example shows the [QRCode](https://docs.telerik.com/devtools/winforms/controls/barcode/barcode-types/2d-barcodes/qrcode/overview). This approach can be followed for the rest of the barcode [types](https://docs.telerik.com/devtools/winforms/controls/barcode/barcode-types/supported-types) as well.
+>important The example shows the [QRCode]({%slug barcodeview-barcode-types-2d-barcodes-qrcode-overview%}). This approach can be followed for the rest of the barcode [types]({%slug barcodeview-barcode-types-supported-types%}) as well.
 
 ## See Also
 
-* [BarcodeView]({%slug winforms/barcodeview/overview%})
+* [BarcodeView]({%slug barcodeview-overview%})
 * [Creating Custom Cells]({%slug winforms/gridview/cells/creating-custom-cells%})
 
