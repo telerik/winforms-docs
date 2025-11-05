@@ -1,6 +1,6 @@
 ---
 title: Intercepting HTML Link Click in RadChat Control
-description: Learn how to intercept when HTML links is clicked in the RadChat control in UI for WinForms
+description: Learn how to intercept when HTML links are clicked in the RadChat control in UI for WinForms
 type: how-to
 page_title: Intercepting HTML Link Click in RadChat Control
 meta_title: Intercepting HTML Link Click in RadChat Control
