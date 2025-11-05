@@ -21,17 +21,14 @@ __BasePrimitive__ is a [VisualElement]({%slug winforms/telerik-presentation-fram
 public override void PaintPrimitive(IGraphics graphics, float angle, SizeF scale)
 {
     Rectangle rect = this.BoundingRectangle;
-    
-        graphics.DrawString(this.Text, rect, this.Font, this.ForeColor, this.TextAlignment, this.CreateStringFormat(),
-        this.Shadow, this.TextRenderingHint, this.TextOrientation, this.FlipText);
+	graphics.DrawString(this.Text, rect, this.Font, this.ForeColor, this.CreateStringFormat(), this.TextOrientation, this.FlipText);
 }
 
 ````
 ````VB.NET
 Public Overrides Sub PaintPrimitive(graphics As IGraphics, angle As Single, scale As SizeF)
     Dim rect As Rectangle = Me.BoundingRectangle
-    graphics.DrawString(Me.Text, rect, Me.Font, Me.ForeColor, Me.TextAlignment, Me.CreateStringFormat(), _
-        Me.Shadow, Me.TextRenderingHint, Me.TextOrientation, Me.FlipText)
+    graphics.DrawString(Me.Text, rect, Me.Font, Me.ForeColor, Me.CreateStringFormat(), Me.TextOrientation, Me.FlipText)
 End Sub
 
 ````
