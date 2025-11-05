@@ -20,6 +20,8 @@ ticketid: 1702233
 
 In the following tutorial, we will demonstrate how to wrap the text in ChatCardAction buttons within RadChat cards. Additionally, we will demonstrate how to increase the size of the entire chat card.
 
+![WinForms RadChat ChatCardAction](images/chat-resize-wrap-text-cardaction001.png)
+
 This knowledge base article also answers the following questions:
 - How can I make ChatCardAction text wrap in RadChat?
 - How do I increase the size of RadChat cards?
@@ -33,6 +35,8 @@ To resize and wrap the text in ChatCardAction buttons and increase the size of t
 2. Target the `ChatImageCardElement` and its child elements representing the action buttons.
 3. Set the `TextWrap` property to enable text wrapping for the action buttons.
 4. Customize the size of the card by modifying its child elements.
+
+
 
 ### Code Example
 
