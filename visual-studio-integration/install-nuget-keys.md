@@ -12,12 +12,7 @@ position: 9
 
 This article provides an overview of the most popular approaches for using token-based authentication to restore Telerik NuGet packages in your CI (Continuous Integration) workflow.
 
-The Telerik NuGet server allows you to authenticate by using two methods:
-
-* Basic authentication by providing your Telerik user name and password.
-* Token-based authentication by providing a NuGet Key.
-
-When you need to restore Telerik NuGet packages as part of your CI, using NuGet keys is the more secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
+The Telerik NuGet server enables secure authentication via token-based mechanisms using NuGet API keys. When you need to restore Telerik NuGet packages as part of your CI, using NuGet keys is the more secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
 
 Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used only with the Telerik NuGet server. If any of your NuGet keys is compromised, you can quickly delete it and create a new one.
 
