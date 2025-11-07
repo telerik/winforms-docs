@@ -10,35 +10,32 @@ position: 9
 
 # Restoring NuGet Packages in Your CI Workflow
 
-This article provides an overview of the most popular approaches for using token-based authentication to restore Telerik NuGet packages in your CI (Continuous Integration) workflow.
+This article describes how to use token-based authentication for the Telerik NuGet feed. You will learn how to create and use NuGet API keys to restore Telerik NuGet packages in your Continuous Integration (CI) workflow.
 
-The Telerik NuGet server enables secure authentication via token-based mechanisms using NuGet API keys. When you need to restore Telerik NuGet packages as part of your CI, using NuGet keys is the more secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
-
-Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used only with the Telerik NuGet server. If any of your NuGet keys is compromised, you can quickly delete it and create a new one.
+The Telerik NuGet server supports secure authentication through token-based mechanisms using NuGet API keys. When integrating Telerik packages into your CI pipeline, using API keys provides enhanced security compared to traditional username and password authentication. Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used only with the Telerik NuGet server. If any of your NuGet keys is compromised, you can quickly delete it and create a new one.
 
 ## Generating NuGet Keys
 
-1\. Go to the [Manage NuGet Keys](https://www.telerik.com/account/downloads/nuget-keys) page in your Telerik account.
+As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-nuget-keys#using-only-cli-commands) or the [NuGet.Config file](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-nuget-keys#using-a-nugetconfig-file-with-your-projects).
 
-2\. Select the **DOWNLOADS** tab and then **Manage NuGet Keys**:
+1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
+1. Click **Generate New Key +**.
 
-![install-nuget-keys 001](images/install-nuget-keys001.png)
+  ![Manage API Keys](images/account-generate-api-key.png)
 
-3\. To create a new key, select the **Generate New Key** button.
+1. In the **Key Note** field, add a note that describes the API key.
 
-![install-nuget-keys 002](images/install-nuget-keys002.png)
+1. Click **Generate Key**.
 
-4\. Enter a name for the NuGet Key, and then select **Generate Key**.
+1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
 
-![install-nuget-keys 003](images/install-nuget-keys003.png)
+1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
 
-5\. To copy the key, select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the NuGet Keys page displays only a portion of the key.
+>API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
-![install-nuget-keys 004](images/install-nuget-keys004.png)
+## Storing API Keys
 
-## Storing a NuGet Key
-
->note Never check in a NuGet Key with your source code or leave it publicly visible in plain text, for example, as a raw key value in a nuget.config file. A NuGet Key is valuable as bad actors can use it to access the NuGet packages that are licensed under your account. A potential key abuse could lead to a review of the affected account.
+>note Never check in an API Key with your source code or leave it publicly visible in plain text, for example, as a raw key value in a nuget.config file. An API Key is valuable as bad actors can use it to access the NuGet packages that are licensed under your account. A potential key abuse could lead to a review of the affected account.
 
 To protect the NuGet Key, store it as a secret environment variable. The exact steps depend on your workflow:
 
@@ -52,7 +49,7 @@ If you use Azure DevOps Service connection instead of secret environment variabl
 
 For more details on storing and protecting your NuGet Key, check the [Announcing NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) blog post by Lance McCarthy.
 
-## Using a NuGet Key
+## Using an API Key
 
 There are two popular ways to use the Telerik NuGet server in a build:
 
