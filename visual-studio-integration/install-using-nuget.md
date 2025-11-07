@@ -12,7 +12,7 @@ position: 9
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-This article explains how to install the Telerik UI for WinForms suite using NuGet packages. There are two methods available for obtaining the NuGet packages:
+This article explains how to install the Telerik UI for WinForms suite using NuGet packages. Before installing, you need to[Generate an API Key](#generate-an-api-key). There are two methods available for obtaining the NuGet packages:
 
 * [Get the packages from the Telerik NuGet server](#download-from-the-telerik-nuget-server)
 * [Manually download the packages](#manually-download-nuget-packages)
@@ -38,7 +38,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
 ## Download from the Telerik NuGet server
 
-This method allows you to install Telerik UI for WinForms packages directly from the official Telerik NuGet server. To use this approach, you need to configure Visual Studio to connect to the Telerik package server (**https://nuget.telerik.com/v3/index.json**) as a package source.
+This method allows you to install Telerik UI for WinForms packages directly from the official Telerik NuGet server. To use this approach, you need to configure Visual Studio to connect to the Telerik NuGet server (**https://nuget.telerik.com/v3/index.json**) as a package source.
 
 > The NuGet v2 server at https://nuget.telerik.com/nuget was sunset in November 2024. The new v3 protocol offers faster package searches and restores, improved security, and more reliable infrastructure. To redirect your feed to the NuGet v3 protocol, all you have to do is to change your NuGet package source URL to https://nuget.telerik.com/v3/index.json.
 
@@ -60,7 +60,7 @@ This method allows you to install Telerik UI for WinForms packages directly from
 
 	![installation-deployment-and-distribution-install-using-nuget 005](images/installation-deployment-and-distribution-install-using-nuget005.png)
 
-	> **Note:** To generate an API key, log in to your Telerik account and navigate to the Downloads section. The API key is specific to your licensed account and provides access to the packages you are entitled to use.
+	>note To generate an API key, see [Generate an API Key](#generate-an-api-key). The API key is specific to your licensed account and provides access to the packages you are entitled to use.
 
 1. In the Package Manager, browse the Telerik NuGet feed for **UI.for.WinForms.AllControls** package. You will see all Telerik packages available to your licensed account. 
 
