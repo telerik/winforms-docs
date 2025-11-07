@@ -89,7 +89,7 @@ If you have previously stored credentials for the Telerik NuGet server, you need
 
 1. Close and restart Visual Studio to ensure all cached credentials are cleared.
 
-1. If you are using the Telerik NuGet feed in a .NET Core application, use a [NuGet API key in the NuGet.Config file]({%slug install-nuget-keys#using-a-nugetconfig-file-with-your-projects%}).
+1. If you are using the Telerik NuGet feed in a .NET Core application, use a [NuGet API key in the NuGet.Config file](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-nuget-keys#using-a-nugetconfig-file-with-your-projects).
 
 ## Manually Download NuGet Packages
 
