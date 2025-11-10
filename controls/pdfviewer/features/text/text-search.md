@@ -17,15 +17,15 @@ previous_url: pdfviewer-text-text-search
 
 In order to be able to select text from the UI, you can use [PdfViewerNavigator]({%slug winforms/pdfviewer/pdfviewernavigator%}). 
 
-**RadPdfViewerNavigator** provides a built-in search functionality that allows users to search for text within PDF documents through an intuitive user interface. The navigator includes a search textbox and navigation buttons to find and navigate through search results.
+**RadPdfViewerNavigator** provides a built-in search functionality that allows users to search for text within PDF documents through an intuitive user interface. The navigator includes a search textbox and navigation buttons to find next/previous occurances and navigate through search results.
 
-    ![WinForms RadPdfViewer Search](../images/pdfviewer-text-search.png)
+![RadPdfViewer Search](images/pdfviewer-text-search.png)
 
 ## Programmatic Search
 
-**RadPdfViewer** provides a comprehensive set of Find methods for programmatic text search. These methods allow you to search for text throughout the document or within specific ranges, with various search options.
+**RadPdfViewer** exposes a set of Find methods for programmatic text search. These methods allow you to search for text throughout the document or within specific ranges.
 
-### Find() Overloads
+### Find Overloads
 
 The Find method searches forward through the document:
 
@@ -37,7 +37,7 @@ The Find method searches forward through the document:
 
 * **Find(string text, TextSearchOptions options, TextRange range)** - Finds the specified text within a specific range. The search is limited to the text content within the provided range boundaries.
 
-### FindPrevious() Overloads
+### FindPrevious Overloads
 
 The FindPrevious methods search backward through the document:
 
@@ -49,7 +49,7 @@ The FindPrevious methods search backward through the document:
 
 * **FindPrevious(string text, TextSearchOptions options, TextRange range)** - Finds the previous occurrence within a specific range. The search moves backward through the text content within the provided range boundaries.
 
-### FindAll() Overloads
+### FindAll Overloads
 
 The FindAll methods return all occurrences of the search text:
 
@@ -63,14 +63,15 @@ The FindAll methods return all occurrences of the search text:
 
 ### SearchResult class
 
-All Find methods return a **SearchResult** object (or a collection of SearchResult objects for `FindAll()`). This class exposes the following public members that provide information about the results.
-    * **TextRange**: An object describing the start and end positions of the match. This object exposed the following properties.
-    * **StartPosition**: An object that contains the start index and location of the current match.
-    * **EndPosition**: An object that contains the end index and location of the current match.
-    * **Result**: A string value representing the match.
-    * **GetWordBoundingRect()**: Gets the rectangle of the current match.
-    * **GetResultPage()**: Gets the page where the current result is.
-    * **SearchResult.NotFound** is returned when no match is found.
+All Find methods return a **SearchResult** object (or a collection of SearchResult objects for `FindAll()`). This class exposes the following public members that provide information about the results:
+
+* **TextRange**: An object describing the start and end positions of the match. This object exposed the following properties.
+* **StartPosition**: An object that contains the start index and location of the current match.
+* **EndPosition**: An object that contains the end index and location of the current match.
+* **Result**: A string value representing the match.
+* **GetWordBoundingRect()**: Gets the rectangle of the current match.
+* **GetResultPage()**: Gets the page where the current result is.
+* **SearchResult.NotFound** is returned when no match is found.
 
 #### Example: Searching in a document
 
@@ -90,15 +91,12 @@ SearchResult result = this.radPdfViewer1.Find("RadPdfViewer", TextSearchOptions.
 
 ````
 ````VB.NET
-SearchResult result = this.radPdfViewer1.Find("RadPdfViewer", TextSearchOptions.Default);
- if (result == SearchResult.NotFound)
- {
-     RadMessageBox.Show("String not found");
- }
- else
- {
-     this.radPdfViewer1.Select(result);
- }
+Dim result As SearchResult = Me.radPdfViewer1.Find("RadPdfViewer", TextSearchOptions.Default)
+If result = SearchResult.NotFound Then
+    RadMessageBox.Show("String not found")
+Else
+    Me.radPdfViewer1.Select(result)
+End If
 
 ````
 
