@@ -21,6 +21,7 @@ The following article list Knowledge Base articles related to the License mechan
 |[No License Key Found Warning in Visual Studio 2019 When License Key is Present]({%slug kb-installation-missing-license-vs-2019%})|
 |[Resolving TelerikLicense.vb Build Error for Telerik UI for WinForms 2025 Q1 License Key]({%slug resolve-telerik-license-vb-error%})|
 |[Set Your License Key in OpenEdge Project]({%slug set-up-license-key-openedge%})|
+|[Telerik License Watermark Appears When UI for WinForms Form is Used in Add-In Project]({%slug add-license-key-in-add-in-project%})|
 
 ## See Also
 

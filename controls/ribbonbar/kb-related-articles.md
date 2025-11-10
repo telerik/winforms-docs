@@ -17,7 +17,9 @@ The following article list Knowledge Base articles related to this section of co
 |----|
 |[Add watermark to RadRibbonBar]({%slug ribbonbar-add-watermark%})|
 |[Adding a Custom Banner to RadRibbonBar Header]({%slug radribbonbar-add-custom-banner%})|
+|[Adding a Right-Aligned Button Visible Across All RibbonTabs in RadRibbonBar]({%slug ribbonbar-adding-right-aligned-elements-across-ribbontabs%})|
 |[Adding a WinForms control to a Ribbon Bar]({%slug adding-a-winforms-control-to-a-ribbon-bar%})|
+|[Apply Theming to custom RadButtonElement in RadRibbonBar]({%slug ribbonbar-custom-button-element%})|
 |[Drag-Drop from RadRibbonBar to RadTreeView.]({%slug ribbonbar-dragdrop-treeview%})|
 |[How to show tooltip on disabled element in RibbonBar]({%slug ribbon-disabled-tooltip%})|
 |[RadRibbonBar design time exception]({%slug ribbonbar-design-time-exception%})|

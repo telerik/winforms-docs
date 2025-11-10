@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Auto Sizing BindingNavigator when its content grows]({%slug auto-sizing-bindingnavigator-winforms%})|
 |[Showing Thousand Separator in RadBindingNavigator for WinForms]({%slug show-thousand-separator-radbindingnavigator-winforms%})|
 
 ## See Also

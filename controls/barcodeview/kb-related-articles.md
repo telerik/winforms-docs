@@ -15,7 +15,9 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Barcode Column in RadGridView]({%slug barcode-column-in-gridview%})|
 |[Generating a Bar Code Image outside WinForms]({%slug barcodeview-generating-image-console-app%})|
+|[How to Print RadBarcode]({%slug print-barcode%})|
 
 ## See Also
 

@@ -21,6 +21,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Customize Appointment Backgrounds and Statuses in RadScheduler]({%slug customize-appointment-backgrounds-and-statuses%})|
 |[Customizing AppointmentElement Text in RadScheduler]({%slug scheduler-customize-appointmentelement-text%})|
 |[Determining Header Cell and its Resource ID in MouseDown Events in RadScheduler]({%slug radscheduler-header-cell-click%})|
+|[Disabling or Replacing Recurrence Change Message in UI for WinForms Scheduler]({%slug scheduler-disable-recurrence-message%})|
 |[How to Confirm Appointment's Resizing in RadScheduler]({%slug custom-resizing-behavior-in-radscheduler%})|
 |[How to customize Print Settings Dialog in RadScheduler]({%slug customize-print-settings-dialog%})|
 |[How to Display Multiple Resources in EditAppointmentDialog]({%slug scheduler-multiple-resource-in-edit-dialog%})|
