@@ -27,17 +27,17 @@ Me.radTreeView1.EnableUIAutomation = False
 
 | **Tree Structure**|
 |------------------------|
-| ├─ [Tree](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-tree-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Expander](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-button-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Image](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-image-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Text](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-text-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;├─ [HScrollbar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;├─ [VScrollbar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type)|
+| ├─ [Tree](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-tree-control-type) (RadTreeView Control)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type) (RadTreeNode)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type) (RadTreeNode)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Expander](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-button-control-type) (RadButton)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type) (RadCheckBox)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Image](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-image-control-type) (Node Image Element)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Text](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-text-control-type) (Node Text Element)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type) (RadTreeNode)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type) (RadTreeNode)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [HScrollbar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type) (Horizontal ScrollBar)|
+| &nbsp;&nbsp;&nbsp;&nbsp;└─ [VScrollbar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type) (Vertical ScrollBar)|
 
 ## Relevant Properties 
 
@@ -48,9 +48,9 @@ The table below outlines the __UI Automation__ properties most important for und
 * AutomationElementIdentifiers.ControlTypeProperty.Id => ControlType.Tree.Id
 * AutomationElementIdentifiers.LocalizedControlTypeProperty.Id => "tree"
 * AutomationElementIdentifiers.HelpTextProperty.Id => this.Owner.AccessibleDescription
-* AutomationElementIdentifiers.IsContentElementProperty.Id  
-* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id
-* AutomationElementIdentifiers.IsSelectionPatternAvailableProperty.Id 
+* AutomationElementIdentifiers.IsContentElementProperty.Id => true
+* AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id => true
+* AutomationElementIdentifiers.IsSelectionPatternAvailableProperty.Id => true
 * AutomationElementIdentifiers.IsScrollPatternAvailableProperty.Id => true
 * AutomationElementIdentifiers.NameProperty.Id => this.Owner.Name
 
@@ -64,10 +64,10 @@ The table below outlines the __UI Automation__ properties most important for und
 * AutomationElementIdentifiers.HasKeyboardFocusProperty.Id => this.Owner.Selected
 * AutomationElementIdentifiers.IsKeyboardFocusableProperty.Id => this.Owner.Enabled
 * AutomationElementIdentifiers.IsEnabledProperty.Id => this.Owner.Enabled
-* AutomationElementIdentifiers.IsContentElementProperty.Id
-* AutomationElementIdentifiers.IsSelectionItemPatternAvailableProperty.Id
-* AutomationElementIdentifiers.IsScrollItemPatternAvailableProperty.Id
-* AutomationElementIdentifiers.IsExpandCollapsePatternAvailableProperty.Id
+* AutomationElementIdentifiers.IsContentElementProperty.Id => true
+* AutomationElementIdentifiers.IsSelectionItemPatternAvailableProperty.Id => true
+* AutomationElementIdentifiers.IsScrollItemPatternAvailableProperty.Id => true
+* AutomationElementIdentifiers.IsExpandCollapsePatternAvailableProperty.Id => true
 * AutomationElementIdentifiers.IsInvokePatternAvailableProperty.Id => true
 * AutomationElementIdentifiers.IsTogglePatternAvailableProperty.Id => this.Owner.TreeViewElement?.CheckBoxes == true
 
