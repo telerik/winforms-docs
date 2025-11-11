@@ -30,7 +30,7 @@ Me.radTreeView1.EnableUIAutomation = False
 | ├─ [Tree](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-tree-control-type)|
 | &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
 | &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Expander](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Expander](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-button-control-type)|
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type)|
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Image](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-image-control-type)|
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Text](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-text-control-type)|
