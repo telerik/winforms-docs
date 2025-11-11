@@ -24,7 +24,7 @@ Common requirements:
 
 * An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports MCP tools (latest version recommended).
 * A WinForms project targeting net8.0-windows, net9.0-windows, or net10.0-windows if you want local project context to be part of AI responses.
-* A valid [Telerik license key]({%slug installing-license-key%}).
+* A valid [Telerik license key]({%slug license-key%}).
 
 ## Summary of Installation Approaches
 
@@ -150,7 +150,7 @@ To enable the server globally for all projects, add the `.mcp.json` file to your
 
 ## License Configuration
 
-Add your [Telerik license key]({%slug installing-license-key%}) using one of these options in the `env` section.
+Add your [Telerik license key]({%slug license-key%}) using one of these options in the `env` section.
 
 __Option 1: License File Path (Recommended)__
 
