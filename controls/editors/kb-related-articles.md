@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Applying AutoSelectNextPart Property to RadTimeOnlyPicker]({%slug timeonlypicker-auto-select-next-part%})|
 |[Change the height of RadTextBox]({%slug change-the-height-of-radtextbox%})|
 |[Create a Password Text Box]({%slug create-password-text-box%})|
 |[Dynamic DataSource in AutoCompleteBox/DropDownList]({%slug autocompletelist-with-dynamic-datasource%})|
@@ -26,6 +27,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Create Custom AutoComplete Items in RadAutoCompleteBox]({%slug autocompletebox-with-custom-autocomplete-items%})|
 |[How to disable backspace and delete keyboard buttons]({%slug datetimepicker-disable-backspace-delete%})|
 |[Preventing RadMaskedEditBox from Losing Focus on Validation Failure]({%slug maskededitbox-prevent-losing-focus-validation-failure%})|
+|[Restricting User Typing in RadAutoCompleteBox]({%slug autocompletebox-restrict-user-input%})|
 |[Scientific Notation and Leading Zeros in Spin Editor]({%slug scientific-notation-leading-zeros-spineditor%})|
 |[Show auto-complete items which text contains the user's input in RadTextBoxControl]({%slug textboxcontrol-autocomplete-contains%})|
 |[Specify the Minutes/Hours Step in DateTimePicker's Popup]({%slug datetimepicker-steps-in-popup%})|

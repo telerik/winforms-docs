@@ -41,11 +41,11 @@ private void radChat1_ToolbarActionClicked(object sender, ToolbarActionEventArgs
         dlg.Title = "Open Image";
         dlg.Filter = "png files (*.png)|*.png";
         if (dlg.ShowDialog() == DialogResult.OK)
-        {
-            Image img = Image.FromFile(dlg.FileName);
-            ChatMediaMessage mediaMessage = new ChatMediaMessage(img, new Size(300, 200), null, this.radChat1.Author, DateTime.Now);
-            this.radChat1.AddMessage(mediaMessage);    
-        }
+		{
+			Image img = Image.FromFile(dlg.FileName);
+			ChatMediaMessage mediaMessage = new ChatMediaMessage(img, new Size(300, 200), this.radChat1.Author, DateTime.Now, null);
+			this.radChat1.AddMessage(mediaMessage);    
+		}
         dlg.Dispose();
     }
 }
@@ -65,7 +65,7 @@ Private Sub radChat1_ToolbarActionClicked(ByVal sender As Object, ByVal e As Too
         dlg.Filter = "png files (*.png)|*.png"
         If dlg.ShowDialog() = Windows.Forms.DialogResult.OK Then
             Dim img As Image = Image.FromFile(dlg.FileName)
-            Dim mediaMessage As ChatMediaMessage = New ChatMediaMessage(img, New Size(300, 200), Nothing, Me.radChat1.Author, DateTime.Now)
+            Dim mediaMessage As ChatMediaMessage = New ChatMediaMessage(img, New Size(300, 200), Me.radChat1.Author, DateTime.Now, Nothing)
             Me.radChat1.AddMessage(mediaMessage)
         End If
         dlg.Dispose()

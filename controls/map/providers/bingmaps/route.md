@@ -69,29 +69,34 @@ public void RunRouteRequest()
 private void BingProvider_RoutingCompleted(object sender, RoutingCompletedEventArgs e)
 {
     List<Telerik.WinControls.UI.Map.PointG> points = new List<Telerik.WinControls.UI.Map.PointG>();
-    foreach (double[] coordinatePair in e.Route.RoutePath.Line.Coordinates)
+    foreach (var route in e.Routes)
     {
-        Telerik.WinControls.UI.Map.PointG point = new Telerik.WinControls.UI.Map.PointG(coordinatePair[0], coordinatePair[1]);
-        points.Add(point);
-    }
-    Telerik.WinControls.UI.Map.RectangleG boundingRectangle = new Telerik.WinControls.UI.Map.RectangleG(e.Route.BBox[2],
-        e.Route.BBox[1], e.Route.BBox[0], e.Route.BBox[3]);
-    MapRoute routeElement = new MapRoute(points, boundingRectangle);
-    routeElement.BorderColor = Color.Blue;
-    routeElement.BorderWidth = 5;
-    MapPin start = new MapPin(new Telerik.WinControls.UI.Map.PointG(e.Route.RouteLegs[0].ActualStart.Coordinates[0],
-        e.Route.RouteLegs[0].ActualStart.Coordinates[1]));
-    start.BackColor = Color.White;
-    start.BorderColor = Color.Green;
-    start.BorderWidth = 2f;
-    MapPin end = new MapPin(new Telerik.WinControls.UI.Map.PointG(e.Route.RouteLegs[e.Route.RouteLegs.Length - 1].ActualEnd.Coordinates[0],
-        e.Route.RouteLegs[e.Route.RouteLegs.Length - 1].ActualEnd.Coordinates[1]));
-    end.BackColor = Color.White;
-    end.BorderColor = Color.Red;
-    end.BorderWidth = 2f;
-    this.radMap1.MapElement.Layers[0].Add(routeElement);
-    this.radMap1.MapElement.Layers[0].Add(start);
-    this.radMap1.MapElement.Layers[0].Add(end);
+        foreach (double[] coordinatePair in route.RoutePath.Line.Coordinates)
+        {
+            Telerik.WinControls.UI.Map.PointG point = new Telerik.WinControls.UI.Map.PointG(coordinatePair[0], coordinatePair[1]);
+            points.Add(point);
+        }
+
+        Telerik.WinControls.UI.Map.RectangleG boundingRectangle = new Telerik.WinControls.UI.Map.RectangleG(route.BBox[2],
+            route.BBox[1], route.BBox[0], route.BBox[3]);
+        MapRoute routeElement = new MapRoute(points, boundingRectangle);
+        routeElement.BorderColor = Color.Blue;
+        routeElement.BorderWidth = 5;
+        MapPin start = new MapPin(new Telerik.WinControls.UI.Map.PointG(route.RouteLegs[0].ActualStart.Coordinates[0],
+            route.RouteLegs[0].ActualStart.Coordinates[1]));
+        start.BackColor = Color.White;
+        start.BorderColor = Color.Green;
+        start.BorderWidth = 2f;
+        MapPin end = new MapPin(new Telerik.WinControls.UI.Map.PointG(route.RouteLegs[route.RouteLegs.Length - 1].ActualEnd.Coordinates[0],
+            route.RouteLegs[route.RouteLegs.Length - 1].ActualEnd.Coordinates[1]));
+        end.BackColor = Color.White;
+        end.BorderColor = Color.Red;
+        end.BorderWidth = 2f;
+
+        this.radMap1.MapElement.Layers[0].Add(routeElement);
+        this.radMap1.MapElement.Layers[0].Add(start);
+        this.radMap1.MapElement.Layers[0].Add(end);
+    }    
 }
 
 ````
@@ -111,28 +116,34 @@ Public Sub RunRouteRequest()
     AddHandler bingProvider.CalculateRouteCompleted, AddressOf BingProvider_RoutingCompleted
     bingProvider.CalculateRouteAsync(request)
 End Sub
-Private Sub BingProvider_RoutingCompleted(sender As Object, e As RoutingCompletedEventArgs)
-    Dim points As New List(Of Telerik.WinControls.UI.Map.PointG)()
-    For Each coordinatePair As Double() In e.Route.RoutePath.Line.Coordinates
-        Dim point As New Telerik.WinControls.UI.Map.PointG(coordinatePair(0), coordinatePair(1))
-        points.Add(point)
+Private Sub BingProvider_TruckRoutingCompleted(ByVal sender As Object, ByVal e As RoutingCompletedEventArgs)
+    Dim points As List(Of Telerik.WinControls.UI.Map.PointG) = New List(Of PointG)()
+    For Each route As Route In e.Routes
+        For Each coordinatePair As Double() In route.RoutePath.Line.Coordinates
+            Dim point As PointG = New PointG(coordinatePair(0), coordinatePair(1))
+            points.Add(point)
+        Next
+
+        Dim boundingRectangle As RectangleG = New RectangleG(route.BBox(2), route.BBox(1),
+                                                             route.BBox(0), route.BBox(3))
+        Dim routeElement As MapRoute = New MapRoute(points, boundingRectangle)
+        routeElement.BorderColor = Color.Blue
+        routeElement.BorderWidth = 5
+        Dim start As MapPin = New MapPin(New PointG(route.RouteLegs(0).ActualStart.Coordinates(0),
+                                                    route.RouteLegs(0).ActualStart.Coordinates(1)))
+        start.BackColor = Color.White
+        start.BorderColor = Color.Green
+        start.BorderWidth = 2.0F
+        Dim [end] As MapPin = New MapPin(New PointG(route.RouteLegs(route.RouteLegs.Length - 1).ActualEnd.Coordinates(0),
+                                                    route.RouteLegs(route.RouteLegs.Length - 1).ActualEnd.Coordinates(1)))
+        [end].BackColor = Color.White
+        [end].BorderColor = Color.Red
+        [end].BorderWidth = 2.0F
+        Me.RadMap1.MapElement.Layers(0).Add(routeElement)
+        Me.RadMap1.MapElement.Layers(0).Add(start)
+        Me.RadMap1.MapElement.Layers(0).Add([end])
     Next
-    Dim boundingRectangle As New Telerik.WinControls.UI.Map.RectangleG(e.Route.BBox(2), e.Route.BBox(1), e.Route.BBox(0), e.Route.BBox(3))
-    Dim routeElement As New MapRoute(points, boundingRectangle)
-    routeElement.BorderColor = Color.Blue
-    routeElement.BorderWidth = 5
-    Dim start As New MapPin(New Telerik.WinControls.UI.Map.PointG(e.Route.RouteLegs(0).ActualStart.Coordinates(0), e.Route.RouteLegs(0).ActualStart.Coordinates(1)))
-    start.BackColor = Color.White
-    start.BorderColor = Color.Green
-    start.BorderWidth = 2.0F
-    Dim [end] As New MapPin(New Telerik.WinControls.UI.Map.PointG(e.Route.RouteLegs(e.Route.RouteLegs.Length - 1).ActualEnd.Coordinates(0), _
-                                                                  e.Route.RouteLegs(e.Route.RouteLegs.Length - 1).ActualEnd.Coordinates(1)))
-    [end].BackColor = Color.White
-    [end].BorderColor = Color.Red
-    [end].BorderWidth = 2.0F
-    Me.radMap1.MapElement.Layers(0).Add(routeElement)
-    Me.radMap1.MapElement.Layers(0).Add(start)
-    Me.radMap1.MapElement.Layers(0).Add([end])
+
 End Sub
 
 ````

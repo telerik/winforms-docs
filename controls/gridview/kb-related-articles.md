@@ -17,13 +17,12 @@ The following article list Knowledge Base articles related to this section of co
 |----|
 |[“Check all” functionality in group rows]({%slug check-all-functionality-in-group-rows%})|
 |[Access RadGridView Elements]({%slug gridview-accessing-elements%})|
-|[Add "Check All" in the header cell for a GridViewCheckBoxColumn]({%slug add-check-all-in-the-header-cell-for-a-gridviewcheckboxcolumn%})|
+|[Add Check All in the header cell for a GridViewCheckBoxColumn]({%slug add-check-all-in-the-header-cell-for-a-gridviewcheckboxcolumn%})|
 |[Add two or more controls in one cell in RadGridView]({%slug add-two-or-more-controls-in-one-cell-in-grid%})|
 |[Adding custom elements inside a cell when it is in edit mode]({%slug adding-custom-elements-inside-a-cell-when-it-is-in-edit-mode%})|
 |[Adjusting GridViewComboBoxColumn Editor DropDown Width to the Longest Text in RadGridView]({%slug gridview-combobox-popup-width-longest-text%})|
 |[Allow End-Users to Add Items to MultiColumnCombobox Editor]({%slug allow-end-users-to-add-items-to-multicolumncombobox-editor%})|
 |[Application Hangs When a Single GridView Cell is Copied in Windows 11]({%slug windows11-clipboard-freeze%})|
-|[Barcode Column in RadGridView]({%slug barcode-column-in-gridview%})|
 |[Bind GridViewComboBoxColumn to Enum Type Property]({%slug gridview-comboboxcolumn-enum%})|
 |[Binding RadGridView to Entity Framework Using Code First Approach]({%slug binding-radgridview-to-entity-framework-using-code-first-approach%})|
 |[Binding to a result of query]({%slug binding-to-a-result-of-query%})|
@@ -63,8 +62,10 @@ The following article list Knowledge Base articles related to this section of co
 |[Export Selected Rows in RadGridView]({%slug gridview-export-selected-rows%})|
 |[Export two or more grids to a single sheet]({%slug export-to-single-sheet%})|
 |[Exporting RadGridView Asynchronously Preserving Its Visual Settings]({%slug exporting-radgridview-asynchronously-preserving-its-visual-settings%})|
+|[Filtering Child Rows in Self-referencing Hierarchy While Keeping Parent Row Visible]({%slug grid-custom-filtering-self-referencing-hierarchy%})|
 |[Filtering Indicators in GridView]({%slug filtering-indicators-in-gridview%})|
 |[Filtering RadGridView by Multiple Values]({%slug gridview-custom-filter-multiple-values%})|
+|[Forcing RadGridView to Snap One Row During Scrolling]({%slug gridview-snap-one-row-per-scroll%})|
 |[Format child cells on group cell click in RadGridView]({%slug grid-format-group-cell-click%})|
 |[Format the group key of a DateTime value in RadGridView]({%slug grid-format-group-key%})|
 |[Formatting Priority Order in RadGridView]({%slug gridview-cells-rows-formatting-priority%})|
@@ -154,6 +155,7 @@ The following article list Knowledge Base articles related to this section of co
 |[RadGridView CRUD in Object Relational Hierarchy Mode]({%slug radgridview-crud-in-object-relational-hierarchy-mode%})|
 |[RadGridView Deferred Search on Tab key]({%slug gridview-deferred-search-on-tab%})|
 |[RadGridView Merge Cells]({%slug radgridview-merge-cells%})|
+|[Removing the RadGridView Border]({%slug gridview-remove-border%})|
 |[Resizing the Header Row in RadGridView for WinForms]({%slug resize-header-row-radgridview-winforms%})|
 |[Save and Restore the rows states when resetting.]({%slug keep-states-on-reset%})|
 |[Set CharacterCasing for GridViewComboBoxColumn]({%slug gridview-comboboxcolumn-charactercasing%})|

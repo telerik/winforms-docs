@@ -2,7 +2,7 @@
 title: KB Related Articles
 page_title: KB Related Articles - Telerik UI for WinForms
 description: Custom examples built on top of the Telerik UI for WinForms control.
-slug: barcodeview-kb-related-articles
+slug: navigationview-kb-related-articles
 tags: kb, sdk, examples
 position: 1000
 published: True
@@ -15,9 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
-|[Barcode Column in RadGridView]({%slug barcode-column-in-gridview%})|
-|[Generating a Bar Code Image outside WinForms]({%slug barcodeview-generating-image-console-app%})|
-|[How to Print RadBarcode]({%slug print-barcode%})|
+|[Preventing Nested Drag and Drop in NavigationView Pages]({%slug navigationview-drag-drop-customize%})|
 
 ## See Also
 
