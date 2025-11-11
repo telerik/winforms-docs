@@ -302,13 +302,6 @@ private void SummaryProvider_SummaryResourcesCalculated(object sender, Windows.D
 
 ````
 ````VB.NET
-Dim summaryProvider = Me.radPdfViewer1.PdfViewerElement.SummaryProvider
-AddHandler CType(summaryProvider, BaseSummaryProvider).SummaryResourcesCalculated, AddressOf Me.SummaryProvider_SummaryResourcesCalculated
-
-Private Sub SummaryProvider_SummaryResourcesCalculated(sender As Object, e As Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs)
-    'cancel the summarization process, if needed
-    e.ShouldContinueExecution = False
-End Sub
 
 ````
 
