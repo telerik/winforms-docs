@@ -5,14 +5,14 @@ description: Check our AI Summarization documentation article for the RadPdfView
 slug: radpdfviewer-ai-summarization
 tags: getting, started, ai, summarize
 published: True
-position: 5
+position: 0
 ---
 
 # AI Summarization for RadPdfViewer
 
 RadPdfViewer provides a smart summarization feature that allows you to use Large Language Models (LLMs) services to analyze the content of the PDF document. This functionality allows you to summarize document content and ask questions about the document, with the AI providing relevant answers based on the document's content.
 
-The AI Summarization feature is accessible through an integrated chat interface within the RadPdfViewer component. You can connect the RadPdfViewer to supported AI services to enable document analysis and summarization capabilities. The integrated chat interface allows users to enter custom prompts and receive AI-generated responses based on the PDF document content.
+The AI summarization feature is accessible through an integrated chat interface within the RadPdfViewer component. You can connect the RadPdfViewer to supported AI services to enable document analysis and summarization capabilities. The integrated chat interface allows users to enter custom prompts and receive AI-generated responses based on the PDF document content.
 
 ![ai-summary1](images/pdfviewer-ai-summarization001.png)
 
@@ -69,10 +69,16 @@ Me.RadPdfViewer1.EnableAISummary = True
 
 ## Setting up the AI Provider
 
-To connect the chat to an AI service, one of the built-in UI providers can be used. This setting is adjusted via the view model of the `PdfViewerElement`. All AI Providers implements the `ISummaryProvider` interface. 
+To connect the chat to an AI service, one of the built-in providers can be used. This setting is configured through the `PdfViewerElement` property. All available AI providers implement the `ISummaryProvider` interface.
+
+The following AI providers are available for integration with RadPdfViewer:
+
+* [Azure OpenAI Provider](#using-azure-openai-provider) — Integrates with Microsoft Azure's OpenAI services with powerful AI capabilities.
+* [OpenAI Provider](#using-openai-provider) — Connects directly to OpenAI's API services for AI-powered document analysis.
+* [Ollama AI Provider](#using-ollama-ai-provider-local-ai)—Enables the use of local AI models through Ollama.
+* [Custom Summary Provider](#implementing-custom-summary-provider) — Allows you to implement custom summarization behavior by creating your own provider.
 
 ````C#
-// set the aiSummaryProvider beforehand
 this.radPdfViewer1.PdfViewerElement.SummaryProvider = aiSummaryProvider;
 
 ````
@@ -80,7 +86,6 @@ this.radPdfViewer1.PdfViewerElement.SummaryProvider = aiSummaryProvider;
 Me.RadPdfViewer1.PdfViewerElement.SummaryProvider = aiSummaryProvider
 
 ````
-
 
 ### Using Azure OpenAI Provider
 
@@ -136,9 +141,38 @@ this.radPdfViewer1.PdfViewerElement.SummaryProvider = ollamaProvider;
 
 ```
 
-#### Get Summary Programmatically
+### Implementing Custom Summary Provider
 
-To get a summarization of the document programmatically, use `GetSummary` method of the corresponding AI provider.
+In addition to the built-in providers, you can implement custom summarization provider by implementing the `ISummaryProvider` interface. 
+
+#### Basic example of custom summary provider implementation
+
+````C#
+public class CustomSummaryProvider : ISummaryProvider
+{
+    private string promptAddition = string.Empty;
+    public string PromptAddition { get => promptAddition; set => promptAddition = value; }
+
+    public string AskQuestion(string question, SimpleTextDocument simpleDocument)
+    {
+        string documentText = simpleDocument.Text;
+        // implement custom logic here
+        return "An answer based on the question and the documentText";
+    }
+
+    public string GetSummary(SimpleTextDocument simpleDocument)
+    {
+        string documentText = simpleDocument.Text;
+        // implement custom summarizaiton logic here
+        return "An answer based on the documentText";
+    }
+}
+
+````
+
+### Get Summary Programmatically
+
+To retrieve a document summarization programmatically, use the `GetSummary` method of the corresponding AI provider.
 
 ```C#
 var textDoc = this.radPdfViewer1.Document.ToSimpleTextDocument(null);
@@ -156,7 +190,7 @@ Task.Run(() =>
 
 ```
 
-#### Append Additional Instructions
+### Append Additional Instructions
 
 You can customize the AI behavior by setting the `PromptAddition` property of the provider. This property allows you to append additional instructions to the prompt, which will be applied during both summarization and question-answering operations. The following example demonstrates how to configure the AI provider to deliver a concise summary translated into Bulgarian.
 
@@ -166,26 +200,33 @@ summaryProvider.PromptAddition = "Be concise and translate the summary to Bulgar
 
 ````
 
-#### SummaryResourcesCalculated Event 
+### SummaryResourcesCalculated Event 
 
-The summary providers expose also an event called `SummaryResourcesCalculated` which is invoked before the actual summarization process begins (after the `GetSummary` method is invoked), providing information about the estimated resource usage. The `SummaryResourcesCalculatedEventArgs` provides the following properties: 
+The summary providers also expose an event called `SummaryResourcesCalculated`, which is invoked before the actual summarization process begins (after the `GetSummary` method is called). This event provides information about the estimated resource usage. The `SummaryResourcesCalculatedEventArgs` exposes the following properties: 
 
-* `EstimatedCallsRequired`- The number of API calls required
-* `EstimatedTokensRequired` - The number of tokens to be processed
-* `ShouldContinueExecution` -  A boolean flag indicating whether to proceed with summarization. The default value is `true`.
+* `EstimatedCallsRequired`&mdash;Gets the number of API calls required.
+* `EstimatedTokensRequired`&mdash;Gets the number of tokens to be processed.
+* `ShouldContinueExecution`&mdash;A boolean flag indicating whether to proceed with summarization. The default value is `true`.
 
 ````C#
-private void SummarizationProvider_SummaryResourcesCalculated(object? sender, Telerik.Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs e)
+var summaryProvider = this.radPdfViewer1.PdfViewerElement.SummaryProvider;
+(summaryProvider as BaseSummaryProvider).SummaryResourcesCalculated += this.SummaryProvider_SummaryResourcesCalculated;
+
+private void SummaryProvider_SummaryResourcesCalculated(object sender, Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs e)
 {
-	// set e.ShouldContinueExecution = false; to cancel the summarization process
+    //cancel the summarization process, if needed
+    e.ShouldContinueExecution = false;
 }
 
 ````
 
 ### Adjusting the Max Number of Tokens
 
-The maximum number of tokens allowed is set via the `MaxTokenCount` property of the summary provider.
+The maximum number of tokens allowed can be set using the `MaxTokenCount` property of the summary provider.
 
 ```C#
-var azureOpenAIprovider = new Telerik.Windows.Controls.FixedDocumentViewersUI.AIProviders.AzureOpenAISummaryProvider(secureKey, endpoint, model);
+var azureOpenAIprovider = new Telerik.WinControls.UI.AIProviders.AzureOpenAISummaryProvider(secureKey, endpoint, model);
 azureOpenAIprovider.MaxTokenCount = 1000;
+
+```
+
