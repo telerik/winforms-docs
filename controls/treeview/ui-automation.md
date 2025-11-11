@@ -25,7 +25,19 @@ Me.radTreeView1.EnableUIAutomation = False
 
 ````
 
-![treeview-ui-automation](images/treeview-ui-automation001.png)
+| **Tree Structure**|
+|------------------------|
+| ├─ [Tree](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-tree-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Expander](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-headeritem-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [CheckBox](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-checkbox-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Image](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-image-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [Text](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-text-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [TreeItem](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-treeitem-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [HScrollbar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type)|
+| &nbsp;&nbsp;&nbsp;&nbsp;├─ [VScrollbar](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-support-for-the-scrollbar-control-type)|
 
 ## Relevant Properties 
 
