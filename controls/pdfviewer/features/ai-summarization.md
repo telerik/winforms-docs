@@ -26,12 +26,12 @@ The summarization feature requires the installation of several additional packag
 <ItemGroup>
  <PackageReference Include="Azure.AI.OpenAI" Version="2.2.0-beta.2" />
  <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.3.0-preview.1.25161.3" />
- <PackageReference Include="Microsoft.Extensions.AI.Ollama" Version="9.3.0-preview.1.25161.3" />
+ <PackageReference Include="OllamaSharp" Version="5.4.8" />
  <PackageReference Include="Telerik.UI.for.WinForms.AllControls" Version="2025.4.1111" />
  <PackageReference Include="Telerik.Licensing" Version="1.6.31" />
- <PackageReference Include="Telerik.Windows.Documents.Fixed" Version="2025.4.*" />
- <PackageReference Include="Telerik.Windows.Documents.Core" Version="2025.4.*" />
- <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="*-*" />
+ <PackageReference Include="Telerik.Windows.Documents.Fixed" Version="2025.4.1104*" />
+ <PackageReference Include="Telerik.Windows.Documents.Core" Version="2025.4.1104*" />
+ <PackageReference Include="Telerik.Windows.Documents.AIConnector" Version="*2025.4.1104" />
 </ItemGroup>
 ```
 
@@ -66,7 +66,6 @@ Me.RadPdfViewer1.EnableAISummary = True
 
 ![ai-summary2](images/pdfviewer-ai-summarization002.png)
 
-
 ## Setting up the AI Provider
 
 To connect the chat to an AI service, one of the built-in providers can be used. This setting is configured through the `PdfViewerElement` property. All available AI providers implement the `ISummaryProvider` interface.
@@ -91,7 +90,7 @@ Me.RadPdfViewer1.PdfViewerElement.SummaryProvider = aiSummaryProvider
 
 To enable the Azure OpenAI services, use the `AzureOpenAISummaryProvider` class. 
 
-```C#
+````C#
 // Azure OpenAI Summary Provider example
 string key = "your-azure-openai-key";
 SecureString secureKey = new SecureString();
@@ -105,13 +104,27 @@ string model = "model-name"; //ex: "gpt-4o-mini"
 var azureOpenAIprovider = new Telerik.WinControls.UI.AIProviders.AzureOpenAISummaryProvider(secureKey, endpoint, model);
 this.radPdfViewer1.PdfViewerElement.SummaryProvider = azureOpenAIprovider;
 
-```
+````
+````VB.NET
+' Azure OpenAI Summary Provider example
+Dim key As String = "your-azure-openai-key"
+Dim secureKey As New SecureString()
+For Each c As Char In key
+    secureKey.AppendChar(c)
+Next
+
+Dim endpoint As String = "https://your-resource-name.openai.azure.com/"
+Dim model As String = "model-name" ' ex: "gpt-4o-mini"
+Dim azureOpenAIprovider = New Telerik.WinControls.UI.AIProviders.AzureOpenAISummaryProvider(secureKey, endpoint, model)
+Me.radPdfViewer1.PdfViewerElement.SummaryProvider = azureOpenAIprovider
+
+````
 
 ### Using OpenAI Provider
 
 To enable the OpenAI services, use the `OpenAISummaryProvider` class. 
 
-```C#
+````C#
 // Using OpenAI Provider
 string key = "your-openai-key";
 SecureString secureKey = new SecureString();
@@ -125,13 +138,27 @@ string model = "model-name"; //ex: "gpt-4o-mini"
 var openAIprovider = new Telerik.WinControls.UI.AIProviders.OpenAISummaryProvider(secureKey, model);
 this.radPdfViewer1.PdfViewerElement.SummaryProvider = openAIprovider;
 
-```
+````
+````VB.NET
+' Using OpenAI Provider
+Dim key As String = "your-openai-key"
+Dim secureKey As New SecureString()
+For Each c As Char In key
+    secureKey.AppendChar(c)
+Next
+
+Dim model As String = "model-name" ' ex: "gpt-4o-mini"
+
+Dim openAIprovider = New Telerik.WinControls.UI.AIProviders.OpenAISummaryProvider(secureKey, model)
+Me.radPdfViewer1.PdfViewerElement.SummaryProvider = openAIprovider
+
+````
 
 ### Using Ollama AI Provider (Local AI)
 
 To use a local Ollama AI model, utilize the `LlamaSummaryProvider` class. 
 
-```C#
+````C#
 //Use Ollama Provider
 string endpoint = "localhost server"; //ex: "http://localhost:11434/"
 string model = "model-name"; //ex: "llama3"
@@ -139,7 +166,16 @@ string model = "model-name"; //ex: "llama3"
 var ollamaProvider = new Telerik.WinControls.UI.AIProviders.LlamaSummaryProvider(endpoint, model);
 this.radPdfViewer1.PdfViewerElement.SummaryProvider = ollamaProvider;
 
-```
+````
+````VB.NET
+' Use Ollama Provider
+Dim endpoint As String = "localhost server" ' ex: "http://localhost:11434/"
+Dim model As String = "model-name" ' ex: "llama3"
+
+Dim ollamaProvider = New Telerik.WinControls.UI.AIProviders.LlamaSummaryProvider(endpoint, model)
+Me.radPdfViewer1.PdfViewerElement.SummaryProvider = ollamaProvider
+
+````
 
 ### Implementing Custom Summary Provider
 
@@ -169,12 +205,40 @@ public class CustomSummaryProvider : ISummaryProvider
 }
 
 ````
+````VB.NET
+Public Class CustomSummaryProvider
+    Implements ISummaryProvider
+
+    Private promptAddition As String = String.Empty
+    Public Property PromptAddition As String Implements ISummaryProvider.PromptAddition
+        Get
+            Return promptAddition
+        End Get
+        Set(value As String)
+            promptAddition = value
+        End Set
+    End Property
+
+    Public Function AskQuestion(question As String, simpleDocument As SimpleTextDocument) As String Implements ISummaryProvider.AskQuestion
+        Dim documentText As String = simpleDocument.Text
+        ' implement custom logic here
+        Return "An answer based on the question and the documentText"
+    End Function
+
+    Public Function GetSummary(simpleDocument As SimpleTextDocument) As String Implements ISummaryProvider.GetSummary
+        Dim documentText As String = simpleDocument.Text
+        ' implement custom summarizaiton logic here
+        Return "An answer based on the documentText"
+    End Function
+End Class
+
+````
 
 ### Get Summary Programmatically
 
 To retrieve a document summarization programmatically, use the `GetSummary` method of the corresponding AI provider.
 
-```C#
+````C#
 var textDoc = this.radPdfViewer1.Document.ToSimpleTextDocument(null);
 var summaryProvider = this.radPdfViewer1.PdfViewerElement.SummaryProvider;
 Task.Run(() =>
@@ -188,7 +252,20 @@ Task.Run(() =>
     });
 });
 
-```
+````
+````VB.NET
+Dim textDoc = Me.radPdfViewer1.Document.ToSimpleTextDocument(Nothing)
+Dim summaryProvider = Me.radPdfViewer1.PdfViewerElement.SummaryProvider
+Task.Run(Sub()
+        Dim summary As String = summaryProvider.GetSummary(textDoc)
+
+        ' this is required only if you want to update the WinForms UI with the result
+        Application.Current.Dispatcher.Invoke(Sub()
+        ' update the UI if needed
+        End Sub)
+    End Sub)
+
+````
 
 ### Append Additional Instructions
 
@@ -197,6 +274,11 @@ You can customize the AI behavior by setting the `PromptAddition` property of th
 ````C#
 var summaryProvider = this.radPdfViewer1.PdfViewerElement.SummaryProvider;
 summaryProvider.PromptAddition = "Be concise and translate the summary to Bulgarian.";
+
+````
+````VB.NET
+Dim summaryProvider = Me.radPdfViewer1.PdfViewerElement.SummaryProvider
+summaryProvider.PromptAddition = "Be concise and translate the summary to Bulgarian."
 
 ````
 
@@ -219,14 +301,28 @@ private void SummaryProvider_SummaryResourcesCalculated(object sender, Windows.D
 }
 
 ````
+````VB.NET
+Dim summaryProvider = Me.radPdfViewer1.PdfViewerElement.SummaryProvider
+TryCast(summaryProvider, BaseSummaryProvider).SummaryResourcesCalculated += AddressOf Me.SummaryProvider_SummaryResourcesCalculated
+
+Private Sub SummaryProvider_SummaryResourcesCalculated(sender As Object, e As Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs)
+    'cancel the summarization process, if needed
+    e.ShouldContinueExecution = False
+End Sub
+
+````
 
 ### Adjusting the Max Number of Tokens
 
-The maximum number of tokens allowed can be set using the `MaxTokenCount` property of the summary provider.
+The maximum number of tokens allowed can be set using the `MaxTokenCount` property of the summary provider. The default value is 128000.
 
-```C#
+````C#
 var azureOpenAIprovider = new Telerik.WinControls.UI.AIProviders.AzureOpenAISummaryProvider(secureKey, endpoint, model);
 azureOpenAIprovider.MaxTokenCount = 1000;
 
-```
+````
+````VB.NET
+Dim azureOpenAIprovider = New Telerik.WinControls.UI.AIProviders.AzureOpenAISummaryProvider(secureKey, endpoint, model)
+azureOpenAIprovider.MaxTokenCount = 1000
 
+````
