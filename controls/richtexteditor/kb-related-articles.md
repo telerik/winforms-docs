@@ -26,6 +26,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Paste Plain Text in RadRichTextBoxEditor]({%slug paste-plain-text%})|
 |[Print Silently Documents with RadRichTextEditor]({%slug silent-documents-printing-in-richtexteditor%})|
 |[Setting Custom Page Size on Document in RadRichTextEditor]({%slug radrichtexteditor-winforms-custom-page-size%})|
+|[Setting Document Background and Editor Background in UI for WinForms RichTextEditor]({%slug richtexteditor-set-background-colors%})|
 
 ## See Also
 

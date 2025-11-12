@@ -20,8 +20,10 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Format the Time Separator in RadChat]({%slug format-chat-time-separator%})|
 |[How to Select and Copy Text in Chat Messages]({%slug how-to-select-and-copy-text-in-chat-messages%})|
 |[How to Use Shortcuts in Chat Messages]({%slug how-to-use-shortcuts-in-chat-messages%})|
+|[Inserting a Message at a Specific Index in RadChat]({%slug chat-insert-message-specific-index%})|
 |[Preserve Text Message History Per User]({%slug chat-preserve-user-text-message-history%})|
 |[Reversed Order of Chat Messages]({%slug chat-messages-in-reversed-order%})|
+|[Setting a Tooltip Text for Action Buttons in RadChat Toolbar]({%slug chat-action-buttons-tooltip%})|
 
 ## See Also
 

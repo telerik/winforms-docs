@@ -182,20 +182,25 @@ End Sub
 * **ActivePresenterChanged**: Occurs when the active presenter is changed.
 
 * **HyperlinkClicked**: Occurs when a hyperlink in the document gets clicked. The event allows you to either cancel or replace the navigation logic. HyperlinkClicked event can be used as a confirmation from the end-user whether to proceed or not with opening a hyperlink due to security reasons.
-  With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be canceled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
+  With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. 
+  The hyperlink navigation can be canceled by either setting the __Handled__ property of the `HyperlinkClickedEventArgs` to _true_ or __IsTrustedUrl__ to _false_.
+  The __CellIndex__ property of `HyperlinkClickedEventArgs` gets the index of the cell that contains the hyperlink.
+
 
 #### Example 4: Using the HyperlinkClicked event to implement confirmation for the clicked links in the document
 
 {{source=..\SamplesCS\Spreadsheet\Events.cs region=HyperlinkClickedEvent}} 
 {{source=..\SamplesVB\Spreadsheet\Events.vb region=HyperlinkClickedEvent}}
 ````C#
-private void ActiveWorksheetEditor_HyperlinkClicked(object sender, Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs e)
+private void ActiveWorksheetEditor_HyperlinkClicked(object sender, SpreadsheetHyperlinkClickedEventArgs e)
 {
     if (e.URL.EndsWith("exe"))
     {
         e.Handled = true;
-        MessageBoxResult Result = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
+        //Get CellIndex on the cell clicked to open the hyperlink
+        CellIndex cellIndex = e.CellIndex;
 
+        MessageBoxResult Result = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question); 
         if (Result == MessageBoxResult.Yes)
         {
             Process.Start(new ProcessStartInfo()
@@ -209,16 +214,20 @@ private void ActiveWorksheetEditor_HyperlinkClicked(object sender, Telerik.WinCo
 
 ````
 ````VB.NET
-Private Sub ActiveWorksheetEditor_HyperlinkClicked(ByVal sender As Object, ByVal e As Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs)
+
+Private Sub ActiveWorksheetEditor_HyperlinkClicked(sender As Object, e As SpreadsheetHyperlinkClickedEventArgs)
     If e.URL.EndsWith("exe") Then
         e.Handled = True
-        Dim Result As MessageBoxResult = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question)
 
-        If Result = MessageBoxResult.Yes Then
+        'Get CellIndex on the cell clicked to open the hyperlink
+         Dim cellIndex As CellIndex = e.CellIndex
+
+         Dim Result As MessageBoxResult = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed?", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question)
+         If Result = MessageBoxResult.Yes Then
             Process.Start(New ProcessStartInfo() With {
                 .FileName = e.URL,
                 .UseShellExecute = True
-            })
+                })
         End If
     End If
 End Sub

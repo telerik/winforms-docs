@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Adding a Custom Panel Between Dates Area and Footer in UI for WinForms Calendar]({%slug calendar-add-custom-space-footer%})|
 |[Hiding Days Not of the Current Month in RadCalendar for WinForms]({%slug calendar-hide-month-days%})|
 |[How to Add a Week Selection in RadCalendar Control]({%slug calendar-howto-week-selection%})|
 

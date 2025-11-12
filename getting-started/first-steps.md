@@ -25,7 +25,7 @@ The process consists of the following steps:
 
     1. [Download](https://www.telerik.com/try/ui-for-winforms) the WinForms Installer and start the installation.
 
-    1. Make sure that **Telerik UI for .NET WinForms** is selected and continue with the setup.
+    1. Make sure that **Telerik UI for WinForms** is selected and continue with the setup.
 
     1. Log in with your Telerik account and complete the installation.
 
@@ -52,6 +52,42 @@ The easiest way to get the controls to your development machine is to use the [P
 > If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms) and the same options will apply to you as well.
 
 >tip The following article provides step-by-step instructions how to install Telerik UI for WinForms on your computer: [Installing UI for WinForms](http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/installing-on-your-computer)
+
+## Add the Telerik NuGet Server
+
+Telerik maintains a NuGet feed with official UI for Telerik UI for WinForms releases. These packages are available for registered users with an active trial or commercial license. Adding the Telerik NuGet server as a source in Visual Studio lets you download and install Telerik packages containing controls and utilities.
+
+As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with the NuGet.Config file.
+
+1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
+
+1. Click **Generate New Key +**.
+
+    ![generate-api-key](images/account-generate-api-key.png)
+
+1. In the **Key Note** field, add a note that describes the API key.
+
+1. When ready, click **Generate Key**.
+
+1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the API Keys page displays only a portion of the key.
+
+1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use api-key as the username and your generated API key as the password.
+
+>API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+
+Next, add the Telerik NuGet feed to Visual Studio:
+
+1. In Visual Studio and go to **Tools > NuGet Package Manager > Package Manager Settings**.
+
+1. Select **Package Sources** and then click the + button to add a new package source.
+
+1. Enter a **Name** for the new package source, for example, `telerik.com`.
+
+1. Add the `https://nuget.telerik.com/v3/index.json` URL as a **Source**. Click **OK**.
+
+1. Whenever Visual Studio displays a dialog to enter credentials for `nuget.telerik.com`, use `api-key` as the username and your NuGet API key as the password.
+
+    ![generate-api-key](images/telerik-nuget-feed.png)
 
 ## Create a new WinForms Telerik Project
 If you **do not have a project**, run the [Create Project Wizard]({% slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation %})
