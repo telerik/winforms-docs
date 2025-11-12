@@ -173,7 +173,6 @@ Here are quick links to the control-specific sections of our documentation:
             <IntroTableAnchor title="UI Framework" href="slug:winforms/telerik-presentation-framework/overview"></IntroTableAnchor>
         </IntroTableSection>
         <IntroTableSection title="Data Visualization">
-            <IntroTableAnchor title="Barcode" href="slug:winforms/barcode/overview"></IntroTableAnchor>
             <IntroTableAnchor title="BarcodeView" href="slug:barcodeview-overview"></IntroTableAnchor>
             <IntroTableAnchor title="BindingNavigator" href="slug:winforms/bindingnavigator"></IntroTableAnchor>
             <IntroTableAnchor title="BulletGraph" href="slug:winforms/gauges/bulletgraph"></IntroTableAnchor>
