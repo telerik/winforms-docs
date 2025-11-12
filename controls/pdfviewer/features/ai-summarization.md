@@ -290,27 +290,30 @@ The summary providers also expose an event called `SummaryResourcesCalculated`, 
 * `EstimatedTokensRequired`&mdash;Gets the number of tokens to be processed.
 * `ShouldContinueExecution`&mdash;A boolean flag indicating whether to proceed with summarization. The default value is `true`.
 
-<!-- ````C#
+````C#
 var summaryProvider = this.radPdfViewer1.PdfViewerElement.SummaryProvider;
-(summaryProvider as BaseSummaryProvider).SummaryResourcesCalculated += this.SummaryProvider_SummaryResourcesCalculated;
+var baseProvider = summaryProvider as BaseSummaryProvider;
+baseProvider.SummaryResourcesCalculated += this.BaseProvider_SummaryResourcesCalculated;
 
-private void SummaryProvider_SummaryResourcesCalculated(object sender, Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs e)
+private void BaseProvider_SummaryResourcesCalculated(object sender, Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs e)
 {
     //cancel the summarization process, if needed
     e.ShouldContinueExecution = false;
+
 }
 
 ````
 ````VB.NET
 Dim summaryProvider = Me.radPdfViewer1.PdfViewerElement.SummaryProvider
-AddHandler CType(summaryProvider, BaseSummaryProvider).SummaryResourcesCalculated, AddressOf Me.SummaryProvider_SummaryResourcesCalculated
+Dim baseProvider = TryCast(summaryProvider, BaseSummaryProvider)
+AddHandler baseProvider.SummaryResourcesCalculated, AddressOf Me.BaseProvider_SummaryResourcesCalculated
 
-Private Sub SummaryProvider_SummaryResourcesCalculated(sender As Object, e As Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs)
+Private Sub BaseProvider_SummaryResourcesCalculated(sender As Object, e As Windows.Documents.AIConnector.SummaryResourcesCalculatedEventArgs)
     'cancel the summarization process, if needed
     e.ShouldContinueExecution = False
 End Sub
 
-```` -->
+````
 
 ### Adjusting the Max Number of Tokens
 
