@@ -38,8 +38,6 @@ In addition to updating assembly references, the upgrade wizard provides also th
 
 You can find the Upgrade Wizard when you select the solution file in Visual Studio, then go to **Extensions > Telerik > Telerik UI for WinForms > Upgrade Wizard**.
 
-![installation-deployment-and-distribution-vsx-upgrade-project 000](images/installation-deployment-and-distribution-vsx-upgrade-project000.png)
-
 Alternatively, you can right-click on a project file with the mouse, then select **Telerik UI for WinForms > Upgrade Wizard** from the menu.
 
 ### Step 2: Upgrade Wizard Information

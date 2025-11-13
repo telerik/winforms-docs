@@ -9,11 +9,11 @@ tags: common, dpi, hdpi
 res_type: kb
 ---
 
-# Problem
+## Problem
 
 Your application becomes smaller when exporting data or it is using cross platform controls (**RadPdfViewer**, **RadRichTextEditor**, **RadSpreadsheetEditor**, **RadDiagram**, the Document Processing Library). This happens because we are using WPF assemblies where the DPI awareness is enabled at assembly level. When a type from such assembly is initialized the application becomes DPI aware and the controls will became smaller. 
 
-# Solution
+## Solution
 
 There are two approaches in this case. 
 

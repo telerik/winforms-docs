@@ -3,7 +3,7 @@ title: How to create calculated field using another calculated field
 description: This article shows how to create a calculated field using another calculated field
 type: how-to
 page_title:  How to Create Calculated Field Using Another Calculated Field
-slug: pivotgrid-groupelement-screentip
+slug: pivotgrid-custom-calculatedfields
 position: 29
 tags: pivotgrid, calculatedfield
 res_type: kb

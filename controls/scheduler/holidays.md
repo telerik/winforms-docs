@@ -25,14 +25,14 @@ The RadScheduler.**Holidays** collection stores all special days. It is of type 
 |**IsHoliday(DateTime dateTime)**|Check if the specific date is contained in the Holidays collection.|
 |**GetHolidays(DateTime dateTime)**|Return all holidays for the specific date (if any).|
 |**AddHoliday(Holiday holiday, bool createAppointment)**|Add holiday to the Holidays collection. If 'createAppointment' is true this will create an all day appointment.|
-|**AddHolidays(IEnumerable<Holiday> holidays, bool createAppointment)**|Add a collection of holidays to the Holidays collection.If 'createAppointment' is true this will create an all day appointment.|
+|**AddHolidays(IEnumerable&lt;Holiday&gt; holidays, bool createAppointment)**|Add a collection of holidays to the Holidays collection.If 'createAppointment' is true this will create an all day appointment.|
 |**Clear**| Clear the Holidays collections. This does not affect already created appointments.|
 |**GetAllLocations(string fileName)**| Return all locations from the file.|
 |**GetAllLocations(Stream stream)**| Get all location from the stream.|
 |**ReadHolidays(string fileName, bool createAppointment)**|Read the holidays information from the file and create Holidays objects in the holidays collection. Optionally can create also all day appointments for the holidays.|
-|**ReadHolidays(string fileName, bool createAppointment, IEnumerable<string> locations)**|Read the holidays information from the file and create Holidays objects in the holidays collection only for holidays in the specific locations. Optionally can create also all day appointments for the holidays.|
+|**ReadHolidays(string fileName, bool createAppointment, IEnumerable&lt;string&gt; locations)**|Read the holidays information from the file and create Holidays objects in the holidays collection only for holidays in the specific locations. Optionally can create also all day appointments for the holidays.|
 |**ReadHolidays(Stream stream, bool createAppointment)**|Read the holidays information from the stream and create Holidays objects in the holidays collection. Optionally can create also and all day appointments for the holidays.|
-|**ReadHolidays(Stream stream, bool createAppointment, IEnumerable<string> locations)**|Read the holidays information and create Holidays objects in the holidays collection only for holidays in the specific locations. Optionally can create also all day appointments for the holidays.|
+|**ReadHolidays(Stream stream, bool createAppointment, IEnumerable&lt;string&gt; locations)**|Read the holidays information and create Holidays objects in the holidays collection only for holidays in the specific locations. Optionally can create also all day appointments for the holidays.|
 
 ## Add Holidays Programmatically
  

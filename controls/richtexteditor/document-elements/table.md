@@ -13,13 +13,13 @@ previous_url: richtexteditor-document-elements-table
 
 The __RadRichTextEditor__ is capable of displaying tables. To add a table to the document you can use one of the following approaches:
       
-* [Programmatically via RadRichTextEditor's API](#creating-a-table-programmatically-via-radrichtexteditor's-api)
+* [Programmatically via RadRichTextEditor's API](#creating-a-table-programmatically-via-radrichtexteditors-api)
 
 * [Via the built-in UI](#creating-a-table-via-the-built-in-ui)
 
 The same approaches can be adopted when formatting the table:
 
-* [Runtime via RadRichTextEditor's API](#formatting-a-table-at-runtime-via-radrichtexteditor's-api)
+* [Runtime via RadRichTextEditor's API](#formatting-a-table-at-runtime-via-radrichtexteditors-api)
 
 * [Via the built-in UI](#formatting-a-table-via-the-built-in-ui)
 

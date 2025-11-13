@@ -33,9 +33,9 @@ Both methods move the caret to the bookmark specified. As bookmarks with the sam
 this.editor.__DeleteBookmark__(__BookmarkRangeStart__ bookmarkRangeStart) 
 These two methods remove the bookmark. The text in the document between the BookmarkRangeStart and BookmarkRangeEnd is __not__ deleted.
 
-* this.editor.Document.__GetAllBookmarks__() – returns an IEnumerable<BookmarkRangeStart> containing all BookmarkRangeStarts.
+* this.editor.Document.__GetAllBookmarks__() – returns an IEnumerable&lt;BookmarkRangeStart&gt; containing all BookmarkRangeStarts.
 
-* this.editor.Document.__EnumerateChildrenOfType__<__BookmarkRangeStart__>() – returns all Bookmarks in the document. This method can be used on document elements other than RadDocument, in case you want to detect all bookmarks in a limited part of the document, e.g. a Paragraph or a Table.
+* this.editor.Document.__EnumerateChildrenOfType__&lt;__BookmarkRangeStart__&gt;() – returns all Bookmarks in the document. This method can be used on document elements other than RadDocument, in case you want to detect all bookmarks in a limited part of the document, e.g. a Paragraph or a Table.
 
 You can also add Bookmarks in a document you are creating manually. As both __BookmarkRangeStart__ and __BookMarkRangeEnd__ inherit from __Inline__, they can be added to the Inlines property of a Paragraph, just like any other Inline. You can also have document positions go to the start or end of the Bookmark and perform non-standard operations. 
 
