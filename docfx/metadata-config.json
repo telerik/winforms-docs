@@ -3,8 +3,10 @@
             "src": [
                 {
                     "files": [
-							  "src/**.dll",
-							  "src/**.XML"
+                "src/Telerik.WinControls.GridView.dll",
+                "src/Telerik.WinControls.PdfViewer.dll",
+                "src/Telerik.WinControls.dll",
+                "src/TelerikCommon.dll"
                     ]
                 }
             ],
