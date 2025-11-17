@@ -5,7 +5,7 @@ type: how-to
 page_title: Edit or Delete a message using RadContextMenu
 slug:  chat-edit-delete-message
 position: 0
-tags: chartview, edit, delete, RadContextMenu
+tags: chat, edit, delete, RadContextMenu
 res_type: kb
 ---
 
