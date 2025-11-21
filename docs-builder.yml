@@ -3409,3 +3409,68 @@ redirects:
     from: "^/devtools/winforms/controls/map/providers/azuremapprovider$"
     to: "/devtools/winforms/controls/map/providers/azure-map/azuremapprovider"
     type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/overview$"
+    to: "/devtools/winforms/controls/barcodeview/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/design-time$"
+    to: "/devtools/winforms/controls/barcodeview/design-time"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/getting-started$"
+    to: "/devtools/winforms/controls/barcodeview/getting-started"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/properties-methods-events$"
+    to: "/devtools/winforms/controls/barcodeview/properties-methods-events"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/supported-types$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/supported-types"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/1d-barcodes/specifications$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/1d-barcodes/specifications"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/2d-barcodes/datamatrix/overview$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/2d-barcodes/datamatrix/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/2d-barcodes/datamatrix/settings$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/2d-barcodes/datamatrix/settings"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/2d-barcodes/pdf417/overview$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/2d-barcodes/pdf417/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/2d-barcodes/pdf417/settings$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/2d-barcodes/pdf417/settings"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/2d-barcodes/qrcode/overview$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/2d-barcodes/qrcode/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/2d-barcodes/qrcode/settings$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/2d-barcodes/qrcode/settings"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/barcode-types/2d-barcodes/swissqrcode/overview$"
+    to: "/devtools/winforms/controls/barcodeview/barcode-types/2d-barcodes/swissqrcode/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/how-to/export-to-image$"
+    to: "/devtools/winforms/controls/barcodeview/how-to/export-to-image"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/barcode/kb-related-articles$"
+    to: "/devtools/winforms/controls/barcodeview/kb-related-articles"
+    type: Permanent
+-
+    from: "^/help/winforms/overview\\.html$"
+    to: "/devtools/winforms/introduction"
+    type: Permanent
+
