@@ -176,6 +176,5 @@ __Option 2: Direct License Key__
 
 ## See also
 
-* [Telerik WinForms GitHub Copilot Extension]({%slug ai-copilot-extension%})
 * [AI Coding Assistant Overview]({%slug ai-overview%})
 * [npm-based Telerik WinForms MCP Server]({%slug ai-mcp-server%})
