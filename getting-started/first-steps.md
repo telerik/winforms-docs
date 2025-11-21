@@ -12,7 +12,7 @@ position: 0
 This article explains how to get the Telerik UI for WinForms controls in your project and start using them quickly.
 The process consists of the following steps:
 
-- [Start Your Free Trial](#first-steps)
+- [Start Your Free Trial](#first-steps-with-telerik-ui-for-winforms)
 - [Download the Controls](#download-the-controls)
 - [Create a new WinForms Telerik Project](#create-a-new-winforms-telerik-project)
 - [Add Telerik Control to a Form](#add-telerik-control-to-a-form)

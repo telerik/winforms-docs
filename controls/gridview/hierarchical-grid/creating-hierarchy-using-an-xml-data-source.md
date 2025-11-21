@@ -115,7 +115,8 @@ This xml file is used in the examples below:
 The `DataSet` created by __ReadXml__ method for the *given xml above* contains 3 tables which you can avoid easily by skipping the second table and using the first and the third ones only. Note also that *Invoice_Id* and *Parts_Id* columns were added automatically to the tables by the __ReadXml__ method:
 
 {{source=..\SamplesCS\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.cs region=CreatingHierarchyUsingXmlDataSource}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.vb region=CreatingHierarchyUsingXmlDataSource}}````C#
+{{source=..\SamplesVB\GridView\HierarchicalGrid\CreatingHierarchyUsingXmlDataSource.vb region=CreatingHierarchyUsingXmlDataSource}}
+````C#
 void CreatingHierarchyUsingXmlDataSource_Load(object sender, EventArgs e)
 {
     DataSet xmlDataSet = new DataSet();

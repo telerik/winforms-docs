@@ -17,7 +17,7 @@ __GridViewSpreadExport__ utilizes our [RadSpreadProcessing](http://docs.telerik.
 
 This article explains in detail the **SpreadExport** abilities and demonstrates how to use it for:
 
-* [Exporting Data](#exporting-data)
+* [Exporting Data](#exporting)
 
 * [Exporting Grouped Data](#exporting-grouped-data)
 

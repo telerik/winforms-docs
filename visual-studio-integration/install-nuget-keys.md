@@ -63,7 +63,7 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
 
 1\. In your `nuget.config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
-#### __[XML]__
+ ````XML
     {{region installation-nuget-keys-wpf-0}}
         <configuration>
             <packageSources>
@@ -79,7 +79,7 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
             </packageSourceCredentials>
             ...
         </configuration>
-    {{endregion}}
+````
 
 2\. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
 
@@ -91,17 +91,20 @@ You can use the CLI `add source` (or `update source`) command to set the credent
 
 * To set the credentials in Azure DevOps:
 
-#### __[Powershell]__
+
     {{region installation-nuget-keys-wf-1}}
-        dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text
-    {{endregion}}
+````powershell
+        dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text   
+````
+{{endregion}}
 
 * To set the credentials in GitHub Actions:
+{{region installation-nuget-keys-wf-2}}
 
-#### __[Powershell]__
-    {{region installation-nuget-keys-wf-2}}
+````powershell
         dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_NUGET_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
-    {{endregion}}
+````   
+{{endregion}}
 
 ## Additional Resources
 

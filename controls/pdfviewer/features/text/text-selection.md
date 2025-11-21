@@ -63,7 +63,7 @@ All methods, properties and events relevant to the discussed functionality are c
   
   * __GetSelectedText()__
   
-  * __GetSelectedTextAsync(Action<string> callback)__
+    * __GetSelectedTextAsync(Action&lt;string&gt; callback)__
  
 Their names show clearly the action they execute.Here is an example showing how the functionality of __TextPositions__ can be combined with that of __TextSelection__ in order to select the word that the caret is currently positioned in:
    

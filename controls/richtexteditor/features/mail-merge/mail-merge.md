@@ -109,7 +109,7 @@ Me.radRichTextEditor1.Document.MailMergeDataSource.ItemsSource = (New ExamplesDa
 
 ## Performing Mail Merge
 
-MailMerge can be done both [using the UI](#mailmerging-using-the-ui:) and [programmatically.](#programmatic-mail-merge)
+MailMerge can be done both [using the UI](#mailmerging-using-the-ui) and [programmatically.](#programmatic-mail-merge)
 
 ### MailMerging using the UI
 
@@ -117,7 +117,7 @@ MailMerge can be done both [using the UI](#mailmerging-using-the-ui:) and [progr
 
 ![WinForms RadRichTextEditor MailMerging UI](images/richtexteditor-features-mail-merge001.png)
 
-The options in the drop-down button **InsertMergeField** are automatically populated to match the properties of the objects which are used as data sources. You can also switch the display mode of the merge fields from *FieldCodes* (as in the picture) to *FieldNames* (e.g. "<<FirstName>>") or preview the results.
+The options in the drop-down button **InsertMergeField** are automatically populated to match the properties of the objects which are used as data sources. You can also switch the display mode of the merge fields from *FieldCodes* (as in the picture) to *FieldNames* (e.g. `FirstName`) or preview the results.
             
 If you click the "**Preview Results**" button, the fields will be replaced with the data from the current record, which by default is the first item from the data source. Then, you can further iterate through the records using the *First*, *Last*, *Previous* and *Next* buttons.
  

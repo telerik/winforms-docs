@@ -18,7 +18,7 @@ Two of the most important classes in this namespace are: __CultureInfo__ and __R
 
 Represents information about a specific culture including the names of the culture, the writing system, and the calendar used, as well as access to culture-specific objects that provide information for common operations, such as formatting dates and sorting strings.
 
-The culture names follow the RFC 1766 standard in the format "<languagecode2>-<country/regioncode2>", where <languagecode2> is a lowercase two-letter code derived from ISO 639-1 and <country/regioncode2> is an uppercase two-letter code derived from ISO 3166. For example, U.S. English is "en-US".
+The culture names follow the RFC 1766 standard in the format `<languagecode2>-<country/regioncode2>`, where `<languagecode2>` is a lowercase two-letter code derived from ISO 639-1 and `<country/regioncode2>` is an uppercase two-letter code derived from ISO 3166. For example, U.S. English is "en-US".
 
 The complete list of the predefined __CultureInfo__ names and identifiers can be found in __CultureInfo__ class and  the classes in the __System.Globalization__ namespace.
 

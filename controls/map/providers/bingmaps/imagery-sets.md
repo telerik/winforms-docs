@@ -14,9 +14,9 @@ position: 1
 
 The Bind Maps Rest Provider imagery service supports different types of visualization. The possible imagery sets which can be used are:
 
-* [__Aerial with Labels__](#aerial-with-labels)
-* [__Aerial without Labels__](#aerial-without-labels)
-* [__AerialOnDemand__](#aerialondemand)
+* [__Aerial with Labels__](#aerialwithlabels)
+* [__Aerial without Labels__](#aerial)
+* [__AerialOnDemand__](#aerialwithlabelsondemand)
 * [__Road__](#road)
 * [__RoadOnDemand__](#roadondemand)
 * [__CanvasLight__](#canvaslight)

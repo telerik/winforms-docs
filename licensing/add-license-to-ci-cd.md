@@ -21,9 +21,9 @@ The license activation process in a CI/CD environment involves the following ste
 
 1. Add the `Telerik.Licensing` NuGet package as a project dependency.
 
-    ```
+    ````XML
     <PackageReference Include="Telerik.Licensing" Version="1.*" />
-    ```
+    ````
 1. [Create an environment variable](#creating-an-environment-variable) named `TELERIK_LICENSE` and add your Telerik UI for .NET WinForms license key as a value.
 
 ## Creating an Environment Variable
@@ -49,7 +49,10 @@ In Classic Pipelines, the user-defined variables can only hold up t0 4k characte
 1. Upload your telerik-license.txt file as a Secure File in your AzDO project. See [Secure Files](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops) for instructions.
 1. In the pipeline, use the Download Secure File task
     1. Important: Set the Output Variables reference name, otherwise you cannot reference it in a later step.
+
+    ````XML
         - <img width="246" height="193" alt="image" src="https://github.com/user-attachments/assets/6ae039a4-de0b-4457-8cc0-4ce3e618f976" />
+    ````
 1. Just prior the build task, add a PowerShell step to move the file to `$(Build.Repository.LocalPath)` and we will automatically locate it.
     1. Example: `Move-Item -Path $(telerik.secureFilePath)  -Destination $(Build.Repository.LocalPath)`
 
@@ -60,10 +63,10 @@ For a walkthrough example and more details, see [DevOps Examples - Telerik Licen
 1. Create a new [Repository Secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository) or an [Organization Secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-an-organization).
 1. Set the name of the secret to `TELERIK_LICENSE` and paste the contents of the license file as a value.
 1. After running npm install or yarn, add a build step to activate the license:
-```YAML
+````YAML
 env:
     TELERIK_LICENSE: ${{ secrets.TELERIK_LICENSE }}
-```
+````
 
 ## See Also
 

@@ -1,5 +1,4 @@
 ---
-description: How to change radial gauge's value with the mouse/keyboard 
 title: How to change radial gauge's value with the mouse/keyboard 
 description: How to change radial gauge's value with the mouse/keyboard 
 type: how-to

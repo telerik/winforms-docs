@@ -26,13 +26,13 @@ RadTaskbarButton offers the following parts for customizing:
 * [Loading/Progress indication]({%slug taskbar-button-features-progress%}) - Four different styles that indicate the progress on the taskbar button.  
 The colors and styles of the progress indication come from the system and cannot be customized by the developer: 
 
-	* **Indeterminate** – Indeterminate progress indication with infinite loop. 
+* **Indeterminate** – Indeterminate progress indication with infinite loop. 
 
-	* **Normal** – Progress indicated in Green 
+* **Normal** – Progress indicated in Green 
  
-	* **Error** - Progress indicated in Red 
+* **Error** - Progress indicated in Red 
  
-	* **Paused** - Progress indicated in Yellow 
+* **Paused** - Progress indicated in Yellow 
  
 * [Overlay (badge) Icon]({%slug taskbar-button-features-overlay-icon%}) - Applies an overlay icon to a taskbar button to indicate application status or a notification to the user. 
 

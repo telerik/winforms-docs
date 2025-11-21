@@ -11,10 +11,6 @@ previous_url: chart-building-radcharts-creating-radchart-programmatically
 
 # Creating RadChart Programmatically
 
-
-
-## 
-
 The steps below show how to create a minimal __RadChart__ programmatically. 
 
 See the "[create a more complex chart programmatically]({%slug winforms/chart/building-radcharts/creating-radchart-programmatically---more-complex-example%})" topic to see how multiple series are created and how appearance can be tailored at run-time.
@@ -136,8 +132,7 @@ Telerik.Charting.ChartSeries chartSeries1 = radChart.CreateSeries("Sales", Syste
 Dim chartSeries1 As Telerik.Charting.ChartSeries = RadChart1.CreateSeries("Sales", System.Drawing.Color.RoyalBlue, System.Drawing.Color.LightSteelBlue, ChartSeriesType.Bar)
 
 ````
-
-	{{endregion}} 
+{{endregion}} 
 
 
 
