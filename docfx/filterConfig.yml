@@ -120,4 +120,7 @@ apiRules:
     uidRegex: ^TheArtOfDev\.HtmlRenderer\.WinForms\.Adapters(\..*)?$
 - exclude:
     uidRegex: ^TheArtOfDev\.HtmlRenderer\.WinForms\.Utilities(\..*)?$
+- exclude:
+    type: Interface
+    uidRegex: ^Telerik\.Pivot\.Core\.IPivotResults(\..*)?$
 
