@@ -13,9 +13,9 @@ position: 9
 
 __RadImageEditor__ supports the following image adjustments.
 
-* [Hue](#hue-adjusment)
-* [Saturation](#saturation-adjusment)
-* [Contrast](#contrast-and-brightness-adjusment)
+* [Hue](#hue-adjustment)
+* [Saturation](#saturation-adjustment)
+* [Contrast](#contrast-and-brightness-adjustment)
 * [Invert Colors](#invert-colors) 
 
 >caption Figure 1: Adjust section

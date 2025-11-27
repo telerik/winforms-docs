@@ -15,11 +15,11 @@ res_type: kb
 |----|----|----|
 |2019.3.917|Telerik UI for WinForms|Dimitar Karamfilov|
 
-# Problem
+## Problem
 
 You like the new __Crystal__ and __CrystalDark__ themes but you do not want the title bar buttons to be on the left. 
 
-# Solution
+## Solution
 
 Edit the theme and change a single property which will affect all forms. Here are the detailed steps:
 

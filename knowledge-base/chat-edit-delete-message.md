@@ -14,11 +14,11 @@ res_type: kb
 |----|----|----|
 |2022.1.222|RadChatView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
-# Problem
+## Problem
 
 At this time of writing this KB article, the __RadChat__ control does not provide an API to edit/delete its messages through a RadContextMenu.
 
-# Solution
+## Solution
 
 The control is very customizable and you could achieve this scenario using custom code. 
 

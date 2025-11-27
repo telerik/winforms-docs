@@ -2,7 +2,7 @@
 title: Settings
 page_title: QR Code Settings - BarcodeView
 description: QR code (Quick Response Code) is the trademark for a type of matrix barcode.
-slug: barcodeview-barcode-types-2d-barcodes-qrcode-overview 
+slug: barcodeview-barcode-types-2d-barcodes-qrcode-settings
 tags: barcode, qrcode, settings
 published: True
 position: 0 

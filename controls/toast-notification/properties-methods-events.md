@@ -23,8 +23,8 @@ CTAControlName: ToastNotification
 |----|----|
 |Unregister()|Unregister a registered manager.|
 |Unregister(string shortcutName, string aumid)|Unregister a registered manager, passing the name of the shortcut that will be removed and the unique id of the application.|
-|Unregister<T>() where T : RadToastNotificationActivatorBase|Unregister a registered manager with a custom activator.|
-|Unregister<T>(string shortcutName, string aumid) where T : RadToastNotificationActivatorBase|Unregister a registered manager with a custom activator, passing the name of the shortcut that will be removed and the unique id of the application.|
+|`Unregister<T>()` where T : RadToastNotificationActivatorBase|Unregister a registered manager with a custom activator.|
+|`Unregister<T>(string shortcutName, string aumid)` where T : RadToastNotificationActivatorBase|Unregister a registered manager with a custom activator, passing the name of the shortcut that will be removed and the unique id of the application.|
 |ShowNotification(int index)|Shows a notification from ToastNotifications collection using its index.|
 |ShowNotification(string name)|Shows a notification from ToastNotifications collection using its name.|
 |ShowNotification(RadToastNotification radToastNotification)|Shows a given toast notification.|

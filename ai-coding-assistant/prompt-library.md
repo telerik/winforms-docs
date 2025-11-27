@@ -28,7 +28,7 @@ All prompts in this library target the [MCP Server]({%slug ai-mcp-server%}) via 
 
 ## Assembly-Specific Prompts
 
-This section provides prompt ideas for the [currently supported assemblies]({%slug ai-overview%}#supported-assemblies).
+This section provides prompt ideas for the [currently supported assemblies]({%slug ai-overview%}).
 
 ### WinControls.UI Assembly
 

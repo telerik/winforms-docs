@@ -14,7 +14,7 @@ position: 4
 
 **RadPipsPager** provides built-in option to bind the control to any collection by using the **BindingSource** property. When in bound mode the **RadPipsPager** automatically changes the **Position** of the **BindingSource**. The number of the pips is also calculated automatically based on the used data.
 
-The following example demonstrates a basic scenario where **RadPipsPager** is used with **RadSlideView**. Here, **RadPipsPager** is bound to a BindingList<T> of a custom object:
+The following example demonstrates a basic scenario where **RadPipsPager** is used with **RadSlideView**. Here, **RadPipsPager** is bound to a BindingList&lt;T&gt; of a custom object:
 
 #### Bind RadPipsPager
 
