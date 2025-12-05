@@ -17,7 +17,7 @@ To use the Telerik WinForms MCP server via NuGet, you need:
 
 | Target Runtime | Required SDK | Invocation Method | Notes |
 |----------------|--------------|-------------------|-------|
-| .NET 8 / .NET 9 | .NET 8 or .NET 9 SDK | Local dotnet tool (`telerik-winforms-mcp.exe`) | `dnx` not supported; install tool manually |
+| .NET 8 / .NET 9 | .NET 8 or .NET 9 SDK | Local dotnet tool (`telerik-winforms-assistant.exe`) | `dnx` not supported; install tool manually |
 | .NET 10 | .NET 10 SDK (Preview 6 or newer) | `dnx` dynamic execution | Simplest approach; no prior install step |
 
 Common requirements:
@@ -32,8 +32,8 @@ Common requirements:
 |--------|------------|---------|
 | Availability of `dnx` | Not available | Available |
 | Install Command | `dotnet tool install --tool-path ./.tools Telerik.WinForms.MCP` | None (resolved on demand) |
-| Executable Path | `./.tools/telerik-winforms-mcp.exe` | Handled by `dnx` |
-| .mcp.json Command | `.\\.tools\\telerik-winforms-mcp.exe` | `dnx` |
+| Executable Path | `./.tools/telerik-winforms-assistant.exe` | Handled by `dnx` |
+| .mcp.json Command | `.\\.tools\\telerik-winforms-assistant.exe` | `dnx` |
 | .mcp.json Args | _None_ | `Telerik.WinForms.MCP`, `--yes` |
 | Update Version | Re-run tool install with `--version` or `tool update` | Handled by latest package resolved by `dnx` |
 | Offline Use | Requires prior tool install | Requires prior NuGet cache warm-up |
@@ -54,7 +54,7 @@ If updating:
 dotnet tool update --tool-path ./.tools Telerik.WinForms.MCP
 ```
 
-This creates the executable at `./.tools/telerik-winforms-mcp.exe`.
+This creates the executable at `./.tools/telerik-winforms-assistant.exe`.
 
 ### .NET 10
 
@@ -71,7 +71,7 @@ Add a `.mcp.json` file to your solution root (or to `%USERPROFILE%` for global u
   "servers": {
     "telerik-winforms-assistant": {
       "type": "stdio",
-      "command": ".\\.tools\\telerik-winforms-mcp.exe",
+      "command": ".\\.tools\\telerik-winforms-assistant.exe",
       "env": {
         "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
       }
@@ -111,7 +111,7 @@ Add a `.mcp.json` file to your solution (root) folder. Choose the variant that m
   "servers": {
     "telerik-winforms-assistant": {
       "type": "stdio",
-      "command": ".\\.tools\\telerik-winforms-mcp.exe",
+      "command": ".\\.tools\\telerik-winforms-assistant.exe",
       "env": {
         "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
       }
