@@ -79,6 +79,8 @@ apiRules:
 - exclude:
     uidRegex: ^Telerik\.WinControls\.UI\.StateManagers(\..*)?$
 - exclude:
+    uidRegex: ^Telerik\.Windows\.Documents\.Flow\.FormatProviders\.Html(\..*)?$
+- exclude:
     uidRegex: ^Telerik\.Windows\.Media\.Imaging(\..*)?$
 - exclude:
     uidRegex: ^Telerik\.Windows\.Media\.Imaging\.Zip(\..*)?$                
