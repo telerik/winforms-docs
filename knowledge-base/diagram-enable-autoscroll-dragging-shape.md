@@ -12,27 +12,13 @@ ticketid: 1706477
 
 ## Environment
 
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>UI for WinForms Diagram,<br/>UI for WinForms DiagramRibbonBar,<br/>UI for WinForms DiagramToolBox</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>Current</td>
-</tr>
-</tbody>
-</table>
+|Product Version|Product|Author|
+|----|----|----|
+|2025.4.1111|RadDiagram for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
-I want to enable autoscroll functionality on a RadDiagram when dragging a RadDiagramShape. The goal is to allow the diagram to automatically scroll as the shape approaches the edge of the view, without the need to release the mouse or perform multiple steps.
-
-This knowledge base article also answers the following questions:
-- How to trigger autoscroll during shape dragging in RadDiagram?
-- How to implement auto-scrolling for RadDiagramShape in UI for WinForms?
-- How to use PanToPosition for dynamic view updates in RadDiagram?
+I want to enable autoscroll functionality on a RadDiagram when dragging a RadDiagramShape outside the bounds of the RadDiagram. The goal is to allow the diagram to automatically scroll as the shape approaches the edge of the view, without the need to release the mouse or perform multiple steps.
 
 ## Solution
 
@@ -42,7 +28,7 @@ To enable autoscroll functionality during dragging, use the `MouseMove` event ha
 
 1. Implement the following code snippet in the `MouseMove` event handler of RadDiagram to achieve autoscroll:
 
-```csharp
+````C#
 private void RadDiagram1_MouseMove(object sender, MouseEventArgs e)
 {
     if (e.Button != MouseButtons.Left)
@@ -86,7 +72,7 @@ private void RadDiagram1_MouseMove(object sender, MouseEventArgs e)
         }
     }
 }
-```
+````
 
 2. Attach this event handler to the RadDiagram's `MouseMove` event.
 
@@ -94,9 +80,3 @@ private void RadDiagram1_MouseMove(object sender, MouseEventArgs e)
 - The code calculates the new viewport position based on the dragged shape's position relative to the existing viewport.
 - If the shape moves beyond the viewport boundaries, the `PanToPosition()` method automatically scrolls and brings the shape into view.
 
-## See Also
-
-- [RadDiagram Overview](https://docs.telerik.com/devtools/winforms/controls/diagram/overview)
-- [PanToPosition Method Documentation](https://docs.telerik.com/devtools/winforms/api/html/m_telerik_windows_diagrams_core_raddiagram_pantoposition.htm)
-- [RadDiagram Events](https://docs.telerik.com/devtools/winforms/controls/diagram/events)
-- [UI for WinForms Documentation](https://docs.telerik.com/devtools/winforms/introduction)
