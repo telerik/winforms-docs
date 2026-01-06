@@ -29,13 +29,15 @@ Cells and rows can be styled based on data conditions using __ConditionalFormatt
 
 * __RowTextAlignment:__ sets the alignment of the row’s cells text.
           
-The formatting properties of the rows apply if the __ApplyToRow__ property of the formatting object is set to *true*. The __ApplyOnSelectedRows__ property defines if the formatting properties of the object will apply also to the selected rows.      
+The formatting properties of the rows apply if the __ApplyToRow__ property of the formatting object is set to *true*. The __ApplyOnSelectedRows__ property defines whether the formatting properties of the object will also apply to the selected rows.      
 
-The formatting objects are two different types depending on the mechanism for defining conditions - rule based and expression based.
-      
-## Rule based formatting objects
+The formatting objects are two different types, depending on the mechanism for defining conditions - rule-based and expression-based.
 
-The rule based formatting objects apply to the cells / rows according to the defined rules:
+>note The __ConditionalFormattingObject__ has lower priority than the modifications applied in the [ViewCellFormatting/CellFormatting]({%slug winforms/gridview/cells/formatting-cells%}) event. The  ViewCellFormatting/CellFormatting will be applied last. It's not recommended to mix both approaches. 
+  
+## Rule-based formatting objects
+
+The rule-based formatting objects apply to the cells / rows according to the defined rules:
 
 * __ConditionType:__ sets conditions like *Equal*, *Contains*, etc.            
 
@@ -67,16 +69,18 @@ Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
 
 {{endregion}} 
 
->caption Figure 1: Rule based formatting objects.
+>caption Figure 1: Rule-based formatting objects.
 
 ![WinForms RadGridView Rule based formatting objects](images/gridview-cells-conditional-formatting-cells001.png)
 
-## Expression based formatting objects
+## Expression-based formatting objects
 
-The expression based formatting objects apply to the cells / rows according to the defined __Expression__. It provides high flexibility to the formatting mechanism. The __Expression__ could refer to data from more than one column. Its result should be Boolean.
+The expression-based formatting objects apply to the cells/rows according to the defined __Expression__. It provides high flexibility to the formatting mechanism. The __Expression__ could refer to data from more than one column. Its result should be Boolean.
 
 In order to validate an expression, it is suitable to use the [Expression editor]({%slug winforms/gridview/expression-editor%}).
-        
+
+>note The __ExpressionFormattingObject__ has lower priority than the modifications applied in the [ViewCellFormatting/CellFormatting]({%slug winforms/gridview/cells/formatting-cells%}) event. The ViewCellFormatting/CellFormatting will be applied last. It's not recommended to mix both approaches.
+
 The example below detects when a value in the second column `UnitPrice` has a value __greater than 30__ and sets styles to the `ProductName` column.
 
 {{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=expression}} 
@@ -99,13 +103,13 @@ Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
 
 {{endregion}} 
 
->caption Figure 2: Expression based formatting objects.
+>caption Figure 2: Expression-based formatting objects.
 
 ![WinForms RadGridView Expression Based Formatting Objects](images/gridview-cells-conditional-formatting-cells002.png)
 
 ## Customize ConditionalFormattingForm
 
-__RadGridView__ provides a convenient form which the end user could use to create formatting objects:
+__RadGridView__ provides a convenient form that the end user can use to create formatting objects:
 
 >caption Figure 3: Conditional Formatting Form.
 
@@ -135,20 +139,14 @@ Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
 
 
 
-# See Also
+## See Also
+
 * [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})
-
 * [Accessing Cells]({%slug winforms/gridview/cells/accessing-cells%})
-
 * [Creating Custom Cells]({%slug winforms/gridview/cells/creating-custom-cells%})
-
 * [Formatting Cells]({%slug winforms/gridview/cells/formatting-cells%})
-
 * [GridViewCellInfo]({%slug winforms/gridview/cells/gridviewcellinfo%})
-
 * [Iterating Cells]({%slug winforms/gridview/cells/iterating-cells%})
-
 * [Painting and Drawing in Cells]({%slug winforms/gridview/cells/painting-and-drawing-in-cells%})
-
 * [ToolTips]({%slug winforms/gridview/cells/tooltips%})
 
