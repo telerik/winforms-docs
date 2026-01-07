@@ -678,7 +678,12 @@ RadGridLocalizationProvider.CurrentProvider = New MyEnglishRadGridLocalizationPr
 {{endregion}}
 
 The code provided above illustrates the approach to be used to localize the __RadGridView__ and is not intended as a full translation.
-        
-# See Also
+
+## Composite Filter Dialog Localization
+
+The __CompositeFilterForm__ contains a __RadDataFilter__ control. To localize the strings within this control, use the __DataFilterLocalizationProvider__ class. For details about this class and the available localization strings, see the [RadDataFilter - Localization]({%slug winforms/datafilter/localization%}) article.
+     
+## See Also
 * [Right-to-left support]({%slug winforms/gridview/localization/right-to-left-support%})
+
 
