@@ -51,10 +51,13 @@ End Sub
 
 {{endregion}} 
 
-
 >caption Figure 3: CompositeFilterForm
 
 ![WinForms RadGridView CompositeFilterForm](images/gridview-filtering-composite-filter-dialog001.png)
+
+## Localization
+
+The __CompositeFilterForm__ contains a __RadDataFilter__ control. To localize the strings within this control, use the DataFilterLocalizationProvider class. For details about this class and the available localization strings, see the [RadDataFilter - Localization]({%slug winforms/datafilter/localization%}) article.
 
 ## See Also
 * [Basic Filtering]({%slug winforms/gridview/filtering/basic-filtering%})
