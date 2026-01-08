@@ -13,7 +13,7 @@ ticketid: 1677331
 ## Environment
 |Product Version|Product|Author|
 |----|----|----|
-|2025.4.1111|RadGridView for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
+|2025.4.1111|RadDateTimePicker for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
 ## Description
 
