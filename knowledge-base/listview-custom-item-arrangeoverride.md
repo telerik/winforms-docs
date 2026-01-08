@@ -3,7 +3,7 @@ title: How to arrange elements in a custom RadListView DetailsView cell
 description: How to arrange several elements in a custom RadListView DetailsView cell.
 type: how-to
 page_title: How to arrange elements in custom RadListView DetailsView cell
-slug: treeview-custom-node-arrange
+slug: listview-custom-item-arrangeoverride
 position: 0 
 tags: listview, custom nodes, treeview , arrangeoverride
 ticketid: 1605661
