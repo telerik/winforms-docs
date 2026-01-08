@@ -5,7 +5,7 @@ type: how-to
 page_title: How to arrange elements in custom RadListView DetailsView cell
 slug: listview-custom-item-arrangeoverride
 position: 0 
-tags: listview, custom nodes, treeview , arrangeoverride
+tags: listview, custom items, arrangeoverride
 ticketid: 1605661
 res_type: kb
 ---
