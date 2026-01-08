@@ -18,7 +18,7 @@ ticketid: 1681257
 
 ## Description
 
-The control allows you to disable suggesting already selected item in the drop-down list. However, the duplicate entries become text instead of tokens. In this article we will demonstrate how to don't let non-tokenized text remains after losing focus. 
+The control allows you to disable suggesting already selected item in the drop-down list. However, the duplicate entries become text instead of tokens. In this article we will demonstrate how to not let non-tokenized text remain after losing focus. 
 
 ## Solution
 
