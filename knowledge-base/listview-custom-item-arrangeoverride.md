@@ -88,7 +88,7 @@ Public Partial Class Form1
             })
         Next
 
-        Me.radTreeView1.DataSource = listViewItems
+        Me.radListView1.DataSource = listViewItems
 		Me.radListView1.ViewType = ListViewType.DetailsView
 		AddHandler Me.radListView1.CellCreating, AddressOf RadListView1_CellCreating
 		Me.radListView1.DataSource = listViewItems
