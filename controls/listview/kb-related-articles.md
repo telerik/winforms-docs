@@ -18,6 +18,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Check All Functionality in RadListView's Group Items]({%slug check-all-functionality-in-listview-groups%})|
 |[Highlight Filtering Results by using HTML-like text formatting in RadListView]({%slug highlight-filtering-results-with-html-like-formatting-in-radlistview%})|
 |[Highlight Filtering Results in RadListView]({%slug highlight-filtering-results-in-radlistview%})|
+|[How to arrange elements in a custom RadListView DetailsView cell]({%slug treeview-custom-node-arrange%})|
 |[How to show/hide empty groups in RadListView control.]({%slug listview-hide-empty-groups%})|
 |[Move ListView Items Between Groups in Unbound Mode]({%slug move-listview-items-between-groups-in-unbound-mode%})|
 |[Shopping Cart Item for RadListView]({%slug listview-shopping-cart-item%})|

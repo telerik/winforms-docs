@@ -16,12 +16,15 @@ The following article list Knowledge Base articles related to this section of co
 |KB Article|
 |----|
 |[Add a Remove Button in ChatUI's messages]({%slug remove-message-button-in-chat-ui%})|
+|[Edit or Delete a message using RadContextMenu]({%slug chat-edit-delete-message%})|
 |[How to Display Code Snippets in Chat Messages]({%slug how-to-display-code-snippet-in-chat-messages%})|
 |[How to Format the Time Separator in RadChat]({%slug format-chat-time-separator%})|
 |[How to Select and Copy Text in Chat Messages]({%slug how-to-select-and-copy-text-in-chat-messages%})|
 |[How to Use Shortcuts in Chat Messages]({%slug how-to-use-shortcuts-in-chat-messages%})|
 |[Inserting a Message at a Specific Index in RadChat]({%slug chat-insert-message-specific-index%})|
+|[Intercepting HTML Link Click in RadChat Control]({%slug chat-intercept-html-links%})|
 |[Preserve Text Message History Per User]({%slug chat-preserve-user-text-message-history%})|
+|[Resizing and Wrapping Text in ChatCardAction for RadChat]({%slug chat-resize-wrap-text-cardaction%})|
 |[Reversed Order of Chat Messages]({%slug chat-messages-in-reversed-order%})|
 |[Setting a Tooltip Text for Action Buttons in RadChat Toolbar]({%slug chat-action-buttons-tooltip%})|
 
