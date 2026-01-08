@@ -16,6 +16,7 @@ The following article list Knowledge Base articles related to this section of co
 |KB Article|
 |----|
 |[Add Custom Items to Diagram Toolbox]({%slug add-custom-items-to-diagram-toolbox%})|
+|[Enabling AutoScroll on Dragging RadDiagramShape in RadDiagram]({%slug enable-autoscroll-dragging-raddiagramshape%})|
 |[How to Achieve Background Image in RadDiagram that Supports Pan Functionality]({%slug diagram-pan-background-image%})|
 |[How to Add Custom Items to RadDiagramRibbonBar]({%slug diagram-custom-items%})|
 |[How to Delete Diagram Shapes with All Related Connections]({%slug delete-diagram-shapes-with-related-connections%})|
