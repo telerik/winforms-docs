@@ -14,7 +14,7 @@ This article demonstrates how to customize the default theme of **RadDock**:
 
 1. Open [VisualStyleBuilder]({%slug winforms/tools/visual-style-builder/starting-vsb%}).
 
-1. [Export the built-in themes] ({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%}) in a specific folder by selecting *File >> Export Built-in Themes*.
+1. [Export the built-in themes]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes%}) in a specific folder by selecting *File >> Export Built-in Themes*.
 
 1. Load a desired theme from the just exported files by selecting *File >> Open Package*
 

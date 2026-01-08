@@ -38,7 +38,7 @@ You can review below the [Key Features]({%slug winforms/listview%}#key-features)
 
 * __Grouping__: **RadListView** supports both custom grouping and automatic grouping based on a certain property. You can read more about this [here]({%slug winforms/listview/features/grouping%}).
 
-* __Filtering__: __RadListView__ allows [filtering] ({%slug winforms/listview/features/filtering%}) operations in all views.
+* __Filtering__: __RadListView__ allows [filtering]({%slug winforms/listview/features/filtering%}) operations in all views.
 
 * __Kinetic scrolling__
 

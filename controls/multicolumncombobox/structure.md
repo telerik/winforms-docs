@@ -34,7 +34,7 @@ This article describes the inner structure and organization of the elements whic
 
 The drop-down element is an object of type __MultiColumnComboBoxElement__. Use this element to set the [drop-down style]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdownstyle%}), [animation]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/animation-effects%}) and [sizing]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/dropdown-resizing%}) as you would do for the regular combo box.  
 
-The __EditorControl__ property of the __RadMultiColumnComboBoxElement__ gives you a reference to the __RadGridView__ control. Using that reference you can obtain the **RadGridView** object and work as with normal **RadGridView** control. Refer to the [RadGridView documentation] ({%slug winforms/gridview%}) for additional information on **RadGridView**.
+The __EditorControl__ property of the __RadMultiColumnComboBoxElement__ gives you a reference to the __RadGridView__ control. Using that reference you can obtain the **RadGridView** object and work as with normal **RadGridView** control. Refer to the [RadGridView documentation]({%slug winforms/gridview%}) for additional information on **RadGridView**.
 
 # See Also
 

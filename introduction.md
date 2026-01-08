@@ -216,7 +216,7 @@ To learn how to install Telerik UI for WinForms and for comprehensive list of ou
 
 To find how to customize the look of Telerik UI for WinForms and information on how to use our predefined themes visit the [Styling and Appearance]({%slug winforms/themes/using-default-themes%}) section.
 
-If you need further assistance you can post your question in the [WinForms forum] (https://www.telerik.com/forums/winforms) or use the [online ticketing system](https://www.telerik.com/account/login.aspx?ReturnUrl=%2faccount%2fsupport-tickets%2favailable-support-list.aspx).
+If you need further assistance you can post your question in the [WinForms forum](https://www.telerik.com/forums/winforms) or use the [online ticketing system](https://www.telerik.com/account/login.aspx?ReturnUrl=%2faccount%2fsupport-tickets%2favailable-support-list.aspx).
 
 ## Related Links
 
@@ -232,11 +232,11 @@ We believe that the documentation for a product is at its best when the content 
 
 __Submit a New Issue at GitHub__
 
-If you find an issue with our docs that need to be addressed, the best way to let us know is by creating an issue in our [Github repository] (https://github.com/telerik/winforms-docs/issues). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closes anchor to the issue, that is even better.
+If you find an issue with our docs that need to be addressed, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/winforms-docs/issues). When creating an issue, please provide a descriptive title, be as specific as possible and link to the documentation in question. If you can provide a link to the closes anchor to the issue, that is even better.
 
 __Update the Documentation at GitHub__
 
-Creating an issue is great, but what we really love are pull requests. This is the most direct method.  So, if you find an issue in the docs, or even feel like creating new content, we’d be happy to have your contributions! The basic steps are that you fork our documentation and submit a pull request. That way you may contribute to exactly where you found the error.  After that, our technical writing team just needs to approve your change request. Please use only standard markdown. For a more detailed instructions, please follow [the contribution instructions] (https://github.com/telerik/winforms-docs/blob/master/README.md) published in GitHub.
+Creating an issue is great, but what we really love are pull requests. This is the most direct method.  So, if you find an issue in the docs, or even feel like creating new content, we’d be happy to have your contributions! The basic steps are that you fork our documentation and submit a pull request. That way you may contribute to exactly where you found the error.  After that, our technical writing team just needs to approve your change request. Please use only standard markdown. For a more detailed instructions, please follow [the contribution instructions](https://github.com/telerik/winforms-docs/blob/master/README.md) published in GitHub.
 
 __Forums__
 
