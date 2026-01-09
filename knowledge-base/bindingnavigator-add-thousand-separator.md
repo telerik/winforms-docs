@@ -14,10 +14,10 @@ res_type: kb
 |----|----|----|
 |2023.3.1114|RadBindingNavigator for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
-# Description
+## Description
 In this tutorial, we will demonstrate how we can add a thousand separators in the current page input text box.
 
-# Solution
+## Solution
 To achieve this, you can subscribe to the `TextChanged` event of the `CurrentNumberTextBox` and modify the text by adding a thousand separator. Here's an example of how you can do this:
 
 1. Subscribe to the `TextChanged` event of the `CurrentNumberTextBox`:

@@ -25,7 +25,7 @@ This article demonstrates a sample approach how to underline some text along wit
 
 ## Solution 
  
-It can be achieved by using a [custom tagger]({%slug syntax-editor-custom-taggers%}) to classify the desired words (e.g. "Telerik") and mark these words as specific. Since **RadSyntaxEditor** renders its elements on different [layers] ({%slug syntax-editor-features-layers%}) based on the types of tags that are used, we will need a custom layer for the underline style.
+It can be achieved by using a [custom tagger]({%slug syntax-editor-custom-taggers%}) to classify the desired words (e.g. "Telerik") and mark these words as specific. Since **RadSyntaxEditor** renders its elements on different [layers]({%slug syntax-editor-features-layers%}) based on the types of tags that are used, we will need a custom layer for the underline style.
  
 
 ````C#

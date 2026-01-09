@@ -11,7 +11,7 @@ previous_url: pdfviewer-exception-handling
 
 # Exception Handling
 
-Since R1 2021 __RadPdfViewer__ uses the model of the [RadPdfProcessing] (https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. This means that the document loading is handled by the library and RadPdfViewer is no longer responsible for the exception handling. More information about the exception handling in RadPdfProcessing library is available here: [Handling Exceptions in RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/handling-document-exceptions) 
+Since R1 2021 __RadPdfViewer__ uses the model of the [RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/overview) library. This means that the document loading is handled by the library and RadPdfViewer is no longer responsible for the exception handling. More information about the exception handling in RadPdfProcessing library is available here: [Handling Exceptions in RadPdfProcessing](https://docs.telerik.com/devtools/document-processing/libraries/radpdfprocessing/features/handling-document-exceptions) 
 
 ## See Also
 

@@ -36,7 +36,7 @@ In OpenEdge ABL applications, it is crucial to register the Telerik WinForms lic
 
 1. Now we need to register the copied license key above.
 
-````ABL
+````csharp
 
 CONSTRUCTOR PUBLIC Form1 (  ):        
 	Telerik.Licensing.TelerikLicensing:Register("Your License Key").

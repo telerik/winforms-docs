@@ -12,11 +12,11 @@ res_type: kb
 |----|----|----|----|
 |Q3 2014|RadControls for WinForms|Georgi Georgiev|November 14, 2014|
     
-# Problem
+## Problem
  
 Your application consumes more memory when it has RadControls and some of the memory is not immediately or is never disposed.
  
-# Solution
+## Solution
  
 The increased memory usage might come from the fact that our controls provide rich UI capabilities and theming mechanism. Furthermore our components are built from the [Telerik Presentation Framework](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/overview/overview) which is built on top of the .NET Framework which once again, inevitably increases memory usage compared to the standard controls which simply wrap native objects.
  

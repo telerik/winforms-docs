@@ -16,7 +16,7 @@ redirect_to: /knowledge-base/versions-upgrade
 |----|----|----|
 |2025.2.520|Telerik UI for WinForms|[Nadya Todorova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
  
-# Versions Upgrade 
+## Versions Upgrade 
 
 In a .NET Framework project, after [installing a new version]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}) of the Telerik UI for WinForms suite, you may encounter design-time errors and an inability to build your project.
 

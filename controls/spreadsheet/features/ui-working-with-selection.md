@@ -13,7 +13,7 @@ position: 0
 This article aims to present the API of the Selection class and demonstrate how to retrieve and change the current selection and also store and restore its state. It contains the following subsections:
       
 
-* [What is UI Selection](#what-is-ui-selection?)
+* [What is UI Selection?](#what-is-ui-selection)
 
 * [Selection Properties](#selection-properties)
 

@@ -71,7 +71,7 @@ You can customize the settings of the grid print job by setting the __PrintStyle
 	
 	* SelectViewToPrint - In this mode the ChildViewPrinting event is fired. The event allows to choose the view to export on a row by row basis.
 	
-* __GridView__: Gets the <see cref="RadGridView"/> that this print styles is assigned to.
+* __GridView__: Gets the RadGridView that this print styles is assigned to.
 
 * __PrintTraverser__: Gets the traverser that is used to traverse the RadGridView.
 

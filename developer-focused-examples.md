@@ -40,7 +40,6 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 
 ## See Also
 
-* [KB Portal]({%slug knowledge_base%})
+* [KB Portal](https://docs.telerik.com/devtools/winforms/knowledge-base)
 * [WinForms SDK](https://github.com/telerik/winforms-sdk)
 * [Older KB Articles](https://www.telerik.com/support/kb/winforms)
-* [Code Libraries](http://www.telerik.com/support/code-library/winforms)

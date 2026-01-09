@@ -47,7 +47,7 @@ Me.RadDropDownList1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Desce
 
 ## Customizing sort order
 
-When the __SortStyle__ property is set to *Ascending* or *Descending* you can manipulate how the items are ordered by specifying the __ItemsSortComparer__ property. You should create a class that implements the __IComparer<RadListDataItem>__ interface. The following example demonstrates how to order the items considering the RadListDataItem.__Value__ property instead of the RadListDataItem.__Text__ property:
+When the __SortStyle__ property is set to *Ascending* or *Descending* you can manipulate how the items are ordered by specifying the __ItemsSortComparer__ property. You should create a class that implements the __IComparer&lt;RadListDataItem&gt;__ interface. The following example demonstrates how to order the items considering the RadListDataItem.__Value__ property instead of the RadListDataItem.__Text__ property:
         
 >caption Figure 2: Custom sort order
 

@@ -18,24 +18,24 @@ Labels are displayed for each:
 * *Chart axis* to describe the category of values along the axis.  For example "Products", "Risk Factors", time periods or geographic areas. 
 
 
-* *Chart axis item* to describe the specific value or category for that item.chart-undestanding-radchart-elements-axis-labels
+* *Chart axis item* to describe the specific value or category for that item.
 
 ## Formatting Axis Labels
 
-* To format the *chart axis label* use the PlotArea.<axis>.AxisLabel to access __Appearance__ and __TextBlock__ properties 
+* To format the *chart axis label* use the PlotArea.YAxis.AxisLabel to access __Appearance__ and __TextBlock__ properties 
 
 
-* To set the formatting for *all labels *on an axis use the PlotArea.<axis>.Appearance __LabelAppearance__ and __TextAppearance__ properties. 
+* To set the formatting for *all labels* on an axis use the PlotArea.YAxis.Appearance __LabelAppearance__ and __TextAppearance__ properties. 
 
 
-* To format a label for a *specific chart axis item* use the PlotArea.<axis>.Items[].__Appearance property__. 
+* To format a label for a *specific chart axis item* use the PlotArea.YAxis.Items[].__Appearance property__. 
 
 Use the __MinValue__ and __MaxValue__ properties to specify the minimum and maximum values for the data to display. The __MinValue__ property allows you to specify either negative or positive number as the minimum value. In the example below the __MinValue__ = -50, __MaxValue__ = 50 and __Step__ = 10.
 >caption 
 
 ![WinForms RadChart Formatting Axis Labels](images/chart-undestanding-radchart-elements-axis-labels001.png)
 
-The PlotArea.<axis>.Appearance.ValueForma property automatically formats axis label values as __Currency__, __Scientific__, __General__, __Number__, __Percent__, __ShortDate__, __ShortTime__, __LongDate__, __LongTime__ or __None__.
+The PlotArea.YAxis.Appearance.ValueForma property automatically formats axis label values as __Currency__, __Scientific__, __General__, __Number__, __Percent__, __ShortDate__, __ShortTime__, __LongDate__, __LongTime__ or __None__.
 
 ## Positioning Axis Labels
 

@@ -2,8 +2,8 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - UI for WinForms Documentation
 description: Properties, Methods and Events
-slug: winforms/buttons/toggleswitch/properties,-methods-and-events
-tags: properties,,methods,and,events
+slug: winforms/buttons/toggleswitch/properties-methods-and-events
+tags: properties,methods,and,events
 published: True
 position: 3
 previous_url: buttons-toggleswitch-properties-methods-events

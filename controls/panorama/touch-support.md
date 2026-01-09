@@ -2,7 +2,6 @@
 title: Touch Support
 page_title: Touch Support - RadPanorama
 description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
-slug: winforms/panorama/structure
 slug: winforms/panorama/touch-support
 tags: touch,support
 published: True

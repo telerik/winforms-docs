@@ -21,7 +21,7 @@ When developing __RadRichTextEditor__, we try to optimize the operations being e
 
 * [Annotations](#annotations)
 
-* [Headers Footers Notes Comments](#headers-and-footers,-notes-and-comments)
+* [Headers Footers Notes Comments](#headers-and-footers-notes-and-comments)
 
 ## Document Content
 

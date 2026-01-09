@@ -20,7 +20,7 @@ Vertical ticks are controlled by the __XAxis__ and horizontal ticks are contro
 
 ![WinForms RadChart Axis Ticks](images/chart-undestanding-radchart-elements-ticks001.png)
 
-To control the visibility and general appearance of gridlines use the the PlotArea.<axis>.Appearance property to reach __MajorTick__ and __MinorTick__ properties.  __XAxis__ has only a __MajorTick__ property while __YAxis__ and __YAxis2__ have both __MajorTick__ and __MinorTick__ properties.  Both major and minor tick objects include the following properties: 
+To control the visibility and general appearance of gridlines use the the PlotArea.&lt;axis&gt;.Appearance property to reach __MajorTick__ and __MinorTick__ properties.  __XAxis__ has only a __MajorTick__ property while __YAxis__ and __YAxis2__ have both __MajorTick__ and __MinorTick__ properties.  Both major and minor tick objects include the following properties: 
 
 * __Visible__ : Set this property false to hide the ticks. 
 

@@ -33,7 +33,7 @@ The document elements that encapsulate the bookmarks functionality are __Bookmar
             
 * __DeleteBookmark__(__string bookmarkName__) / __DeleteBookmark__(__BookmarkRangeStart bookmarkRangeStart__): These two methods remove the bookmark. The text in the document between the **BookmarkRangeStart** and **BookmarkRangeEnd** is __not__ deleted.
             
-* Document.__GetAllBookmarks__() – returns an **IEnumerable<BookmarkRangeStart>** containing all **BookmarkRangeStarts**.
+* Document.__GetAllBookmarks__() – returns an **IEnumerable&lt;BookmarkRangeStart&gt;** containing all **BookmarkRangeStarts**.
             
 * Document.__EnumerateChildrenOfType&lt;BookmarkRangeStart&gt;()__ – returns all bookmarks in the document. This method can be used on document elements other than **RadDocument**, in case you want to detect all bookmarks in a limited part of the document, e.g. a **Paragraph** or a **Table**.
             
@@ -92,10 +92,7 @@ End Sub
 
 ```` 
 
-
-
 {{endregion}} 
-
   
 For example, you can keep a **Dictionary<string, string>** mapping each bookmark name to another string and substitute a bookmark with the corresponding text using the following method:
 
@@ -129,8 +126,7 @@ If you want to preserve the bookmarks in the document and only change the text b
 {{source=..\SamplesCS\RichTextEditor\Features\Bookmarks.cs region=change}} 
 {{source=..\SamplesVB\RichTextEditor\Features\Bookmarks.vb region=change}} 
 
-````C#
-        
+````C#        
 private void ChangeAllBookmarks(RadRichTextEditor radRichTextEditor)
 {
     BookmarkRangeStart[] bookmarks = radRichTextEditor.Document.GetAllBookmarks().ToArray<BookmarkRangeStart>();

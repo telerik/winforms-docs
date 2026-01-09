@@ -12,7 +12,7 @@ position: 1
 
 This article will help you get started using Google Cloud Services. Here are the main steps that you need to take:
 
-1. [Create a Google Cloud account] (#create-a-google-cloud-account)
+1. [Create a Google Cloud account](#create-a-google-cloud-account)
 2. [Enable the APIs that you want to use](#enable-the-apis-that-you-want-to-use)
 
 ## Create a Google Cloud Account

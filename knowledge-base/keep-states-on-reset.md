@@ -22,11 +22,11 @@ res_type: kb
     </tr>
 </table>
 
-# Description
+## Description
 
 There are cases where you need to reset or rebind the grid which will reset the expanded rows and the position of the scrollbar. 
 
-# Solution
+## Solution
 
 This article shows how you can save/restore the sates and the scrollbar position.
 

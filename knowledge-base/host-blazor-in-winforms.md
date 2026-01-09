@@ -73,7 +73,7 @@ with this one and reload the project:
 
 5\. Add the following **wwwroot/index.html** file to the project, replacing **{PROJECT NAME}** with the actual project name:
  
-````
+````XML
 <!DOCTYPE html>
 <html>
 
@@ -107,7 +107,7 @@ with this one and reload the project:
 
 6\. Add the following **app.css** file with some basic styles to the wwwroot folder:
 
-```` 
+````XML
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -155,7 +155,7 @@ html, body {
 
 ![host-blazor-in-winforms014](images/host-blazor-in-winforms014.png)
 
-```` 
+````XML
 @using Telerik.Blazor.Components
 @inject WeatherForecastService ForecastService
 
@@ -256,7 +256,7 @@ This requires installing the [Telerik.UI.for.Blazor NuGet](https://docs.telerik.
 
 10\. Add another root **Blazor** component, **Counter.razor**, to the project:
 
-````
+````XML
 @using Microsoft.AspNetCore.Components.Web 
 @using Telerik.Blazor.Components
 <h1>Blazor Counter</h1>

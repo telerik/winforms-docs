@@ -9,7 +9,7 @@ position: 1
 ---
 
 # Explore UI for WinForms Control Features
-Once you have the controls [working in your project] ({%slug winforms/getting-started/first-steps%}), it's time to see what they can do. This article provides a short overview of how to get started with finding control functionality and use them.
+Once you have the controls [working in your project]({%slug winforms/getting-started/first-steps%}), it's time to see what they can do. This article provides a short overview of how to get started with finding control functionality and use them.
 
 ## Demos
 To access the **Live Demo** simply click on the Windows Start button and type WinForms Demo.
@@ -36,7 +36,7 @@ In addition to that, the **documentation** provides a section for each control t
 
 ## Design-time
 
-Last, but not least, some most common tasks and configuration options are available under the [**Design Time**] ({% slug winforms/buttons/dropdownbutton/design-time %}) folder of each control.
+Last, but not least, some most common tasks and configuration options are available under the [**Design Time**]({% slug winforms/buttons/dropdownbutton/design-time %}) folder of each control.
 
 >caption Figure 4: Smart Tag features
 

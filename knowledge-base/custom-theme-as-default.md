@@ -32,13 +32,12 @@ First, it would be necessary to create theme a component. Following the instruct
 
 1. Add a new Class Library project to the current solution.
 
-2. Add Windows11CompactLightBlue.tssp file into the Library project. It is important to set the **Build Action** of the .tssp to *Embedded Resource*.
+1. Add Windows11CompactLightBlue.tssp file into the Library project. It is important to set the **Build Action** of the `.tssp` to *Embedded Resource*.
 
-3. Add a new Windows11LightBlue class to represent my theme component to the project.
+1. Add a new Windows11LightBlue class to represent my theme component to the project.
 
 
 ````C#
-
 namespace Windows11LightBlueClassLibrary
 {
     public class Windows11LightBlue : RadThemeComponentBase
@@ -66,41 +65,39 @@ namespace Windows11LightBlueClassLibrary
     }
 }
 
-
 ````
 
 >caption Figure 1: Here is how my ClassLibrary looks:
 
 ![custom-theme-as-default001](images/custom-theme-as-default001.png)
 
-4.Once the Windows11LightBlueClassLibrary gets ready, we should define the custom Windows11CompactLightBlue theme as default in the entire application. This can be done inside the App.config file of our application. For more information, follow the instrucions defined here: [Custom theme as Default](https://docs.telerik.com/devtools/winforms/styling-and-appearance/default-theme#custom-theme-as-default)
+1. Once the Windows11LightBlueClassLibrary gets ready, we should define the custom Windows11CompactLightBlue theme as default in the entire application. This can be done inside the App.config file of our application. For more information, follow the instrucions defined here: [Custom theme as Default](https://docs.telerik.com/devtools/winforms/styling-and-appearance/default-theme#custom-theme-as-default)
+
 
 ````XML
-
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-  <startup>
-  </startup>
-  <appSettings>
-    <!--define the custom Windows11CompactLightBlue for the entire application-->
-    <add key="TelerikWinFormsThemeName" value="Windows11CompactLightBlue" />
-    <add key="TelerikWinFormsThemeType" value="Windows11LightBlueClassLibrary.Windows11LightBlue"/>
-    <add key="TelerikWinFormsThemeAssemblyName" value="Windows11LightBlueClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-  </appSettings>
+    <startup>
+    </startup>
+    <appSettings>
+        <!--define the custom Windows11CompactLightBlue for the entire application-->
+        <add key="TelerikWinFormsThemeName" value="Windows11CompactLightBlue" />
+        <add key="TelerikWinFormsThemeType" value="Windows11LightBlueClassLibrary.Windows11LightBlue"/>
+        <add key="TelerikWinFormsThemeAssemblyName" value="Windows11LightBlueClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    </appSettings>
 </configuration>
 
 ````
 
 >note It is important to specify the exact **TelerikWinFormsThemeAssemblyName**, **Version**, **Culture** and **PublicKeyToken** values. These values defined in the app.config should strictly match the same values from the custom theme assembly in order to make sure that the theme should be correctly applied at design time as well as at run time.
 
-5.Build the whole solution. Now, we can find our Windows11CompactLightBlue theme in the VS Toolbox at design time and simply drag-drop it onto RadForm as any other component. You can see the Windows11LightBlue instance in the compoenent tray. From now on, any Telerik control that you add to RadForm would have the custom theme applied automatically.
+1. Build the whole solution. Now, we can find our Windows11CompactLightBlue theme in the VS Toolbox at design time and simply drag-drop it onto RadForm as any other component. You can see the Windows11LightBlue instance in the compoenent tray. From now on, any Telerik control that you add to RadForm would have the custom theme applied automatically.
 
 ![custom-theme-as-default002](images/custom-theme-as-default002.png)
 
 6.If you do not want to add the theme at design time, you can create an instance of the theme in the start up of the application, for example in Program.cs:
 
 ````C#
-
 internal static class Program
 {
     /// <summary>

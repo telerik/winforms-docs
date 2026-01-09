@@ -10,7 +10,7 @@ position: 3
 
 # Properties and Events
 
-This article provides reference tables with the [Properties](#properties), [Methods](#methods) and [Events](#events) in RadPictureBoxElement.
+This article provides reference tables with the [Properties](#properties), and [Events](#events) in RadPictureBoxElement.
 
 ## Properties
 

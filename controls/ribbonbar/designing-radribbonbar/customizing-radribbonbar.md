@@ -35,7 +35,7 @@ You can control several aspects of the overall __RadRibbonBar__ presentation by 
 ![WinForms RadRibbonBar Help Button](images/ribbonbar-getting-started-customizing-radribbonbar004.png)
 
 * The __StartButtonImage__ property specifies an image to use for the Start Button in the upper left corner of the control.
-* 
+
 ![WinForms RadRibbonBar StartButton Image](images/ribbonbar-getting-started-customizing-radribbonbar005.png)
 
 >note The size of the Start Button is determined by the size of the image set.

@@ -23,24 +23,24 @@ This article will explain in detail the SpreadExport capabilities and will demon
 
 Here is how the following RadTreeView, looks when it is exported.
       
->caption Figure 1: Before and after export
+>caption Figure 1: Before export
 
 ![WinForms RadTreeView Before export](images/treeview-export-data-spread-export001.png)
 
+>caption Figure 2: After export
 ![WinForms RadTreeView After export](images/treeview-export-data-spread-export002.png)
 
->note The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport:
-* Telerik.WinControls.TelerikExport
->
+>important The spread export functionality is located in the __TelerikExport.dll__ assembly. You need to include the following namespace in order to access the types contained in TelerikExport: **Telerik.WinControls.TelerikExport**
+Since this functionality is using the [RadSpreadProcessingLibrary](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
 
->important Since this functionality is using the [RadSpreadProcessingLibrary](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview) you need to reference the following assemblies as well:
-* Telerik.Windows.Documents.Core
-* Telerik.Windows.Documents.Fixed
-* Telerik.Windows.Documents.Spreadsheet
-* Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml
-* Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf
-* Telerik.Windows.Zip
->
+````XML
+Telerik.Windows.Documents.Core
+Telerik.Windows.Documents.Fixed
+Telerik.Windows.Documents.Spreadsheet
+Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml
+Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf
+Telerik.Windows.Zip
+````
 
 ## Exporting Data
 
@@ -111,24 +111,16 @@ End Using
             
 
 * __SheetMaxRows:__ The exporter splits the data on separate sheets if the number of rows is greater than the Excel maximum. You can control the maximum number of rows through this __SheetMaxRows__  property. Available options are:
-            
-
-      - __1048576:__ Max rows for Excel 2007 and above
-                    
-
-      - __65536 (default):__ Max rows for previous versions of Excel. This is the default setting.
+    * __1048576:__ Max rows for Excel 2007 and above
+    * __65536 (default):__ Max rows for previous versions of Excel. This is the default setting.
                 
 
 * __SheetName:__ Defines the sheet name of the sheet to export to. If your data is large enough to be split on more than one sheets, then the export method adds index to the names of the next sheets.
             
 
 * __FileExportMode:__ This property determines whether the data will be exported into an existing or a new file. If new is chosen and such exists it will be overridden. Available options are:
-            
-
-      - __NewSheetInExistingFile:__ This option will create a new sheet in an already existing file.
-                    
-
-      - __CreateOrOverrideFile:__ Creates new or overrides an existing file.
+    * __NewSheetInExistingFile:__ This option will create a new sheet in an already existing file.
+    * __CreateOrOverrideFile:__ Creates new or overrides an existing file.
                 
 
 * __ExportImages:__ Gets or sets a value indicating whether to export images.
@@ -150,15 +142,9 @@ End Using
 ## Events
 
 * __CellFormatting:__ This event is used to format the cells to be exported. The event arguments provide:
-            
-
-      - __TreeNode:__ Gives you access to the currently exported node.
-                    
-
-      - __ExportCell:__ Allows you to set the styles of the exported cell.
-                    
-
-      - __RowIndex:__ The index of the currently exported row. Here is an example of formatting the exported TreeView: 
+    * __TreeNode:__ Gives you access to the currently exported node.
+    * __ExportCell:__ Allows you to set the styles of the exported cell.
+    * __RowIndex:__ The index of the currently exported row. Here is an example of formatting the exported TreeView
 
 {{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=Formatting}} 
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=Formatting}} 
@@ -193,7 +179,6 @@ __RadTreeView__ provides functionality for asynchronous spread export. This feat
 
 
 >caution If the __ExportVisualSettings__ property is set to *true* the UI can be freezed at some point. This is expected since exporting the visual settings requires creating visual elements for all nodes and updating the exported control UI.
->
 
 
 The following example will demonstrate how the async spread export feature can be combined with a __RadProgressBar__ control to deliver better user experience.
@@ -202,7 +187,7 @@ The following example will demonstrate how the async spread export feature can b
 
 ![WinForms RadTreeView Exporting Data Asynchronously](images/treeview-export-data-spread-export004.png)
 
-1. The following code shows how you can subscribe to the notification events and start the async export operation.
+1.The following code shows how you can subscribe to the notification events and start the async export operation.
 
 {{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=AsyncExport}} 
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=AsyncExport}} 
@@ -231,7 +216,7 @@ End Sub
 
 {{endregion}} 
 
-2\. Handle the notification events and report progress.
+2.Handle the notification events and report progress.
 
 {{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=ReportProgress}} 
 {{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=ReportProgress}} 
@@ -258,7 +243,6 @@ Private Sub spreadExporter_AsyncExportCompleted(ByVal sender As Object, ByVal e 
 End Sub
 
 ````
-
 {{endregion}} 
 
 The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
@@ -331,9 +315,7 @@ The following methods of the __TreeViewSpreadExport__ class are responsible for 
 
 The following events provide information about the state of the export operation.
         
-
 * __AsyncExportProgressChanged__: Occurs when the progress of an asynchronous export operation changes.
             
-
 * __AsyncExportCompleted__: Occurs when an async export operation is completed.
             
