@@ -37,6 +37,8 @@ markdown-replacements:
 meta:
   "*customizing-appearance":
     title: Customizing Appearance
+  _assetsApi:
+    pdfHidden: true
   knowledge-base:
     title: Knowledge Base
     position: 50
