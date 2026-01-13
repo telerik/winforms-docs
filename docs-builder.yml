@@ -35,9 +35,9 @@ markdown-replacements:
     replacement: 'slug://'
 
 meta:
-  "*customizing-appearance":
+  "*customizing-appearance*":
     title: Customizing Appearance
-  "api":
+  "*api*":
     pdfHidden: true
   knowledge-base:
     title: Knowledge Base
