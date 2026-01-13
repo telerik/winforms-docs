@@ -37,7 +37,10 @@ markdown-replacements:
 meta:
   "*customizing-appearance*":
     title: Customizing Appearance
-  "*api*":
+  api:
+    title: API Reference
+    position: 60
+    res_type: api
     pdfHidden: true
   knowledge-base:
     title: Knowledge Base
