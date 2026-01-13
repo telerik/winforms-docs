@@ -18,6 +18,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Applying AutoSelectNextPart Property to RadTimeOnlyPicker]({%slug timeonlypicker-auto-select-next-part%})|
 |[Change the height of RadTextBox]({%slug change-the-height-of-radtextbox%})|
 |[Create a Password Text Box]({%slug create-password-text-box%})|
+|[Customizing Close Button and Footer Panel in DateTimePicker for UI for WinForms]({%slug datetimepicker-customizing-footer-panel%})|
 |[Dynamic DataSource in AutoCompleteBox/DropDownList]({%slug autocompletelist-with-dynamic-datasource%})|
 |[Dynamic DropDown Size for RadPopupEditor]({%slug popup-editor-dynamic-dropdown-size%})|
 |[How to Achieve Rounded Shape and Rounded Border for RadTextBox]({%slug rounded-border%})|
@@ -26,7 +27,9 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Check Incorrect Words in RadTextBox]({%slug how-to-check-incorrect-words-in-radtextbox%})|
 |[How to Create Custom AutoComplete Items in RadAutoCompleteBox]({%slug autocompletebox-with-custom-autocomplete-items%})|
 |[How to disable backspace and delete keyboard buttons]({%slug datetimepicker-disable-backspace-delete%})|
+|[Implementing a Custom Freeform Date Parser in RadDateTimePicker]({%slug custom-freeform-date-parser-raddatetimepicker-ui-winforms%})|
 |[Preventing RadMaskedEditBox from Losing Focus on Validation Failure]({%slug maskededitbox-prevent-losing-focus-validation-failure%})|
+|[Remove Non-Tokenized Text in RadAutoCompleteBox]({%slug autocompletebox-remove-duplicate-text%})|
 |[Restricting User Typing in RadAutoCompleteBox]({%slug autocompletebox-restrict-user-input%})|
 |[Scientific Notation and Leading Zeros in Spin Editor]({%slug scientific-notation-leading-zeros-spineditor%})|
 |[Show auto-complete items which text contains the user's input in RadTextBoxControl]({%slug textboxcontrol-autocomplete-contains%})|

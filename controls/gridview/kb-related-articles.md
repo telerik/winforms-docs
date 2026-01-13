@@ -61,6 +61,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Export RadGridView in Docx document using RadWordsProcessing]({%slug gridview-export-in-docx%})|
 |[Export Selected Rows in RadGridView]({%slug gridview-export-selected-rows%})|
 |[Export two or more grids to a single sheet]({%slug export-to-single-sheet%})|
+|[Exporting Collapsed Child Rows in Self-Referencing Hierarchy GridView to Excel]({%slug gridview-export-groups-collapsed%})|
 |[Exporting RadGridView Asynchronously Preserving Its Visual Settings]({%slug exporting-radgridview-asynchronously-preserving-its-visual-settings%})|
 |[Filtering Child Rows in Self-referencing Hierarchy While Keeping Parent Row Visible]({%slug grid-custom-filtering-self-referencing-hierarchy%})|
 |[Filtering Indicators in GridView]({%slug filtering-indicators-in-gridview%})|
@@ -169,6 +170,7 @@ The following article list Knowledge Base articles related to this section of co
 |[StartsWith search in RadGridView]({%slug starts-with-search-in-radgridview%})|
 |[Synchronize RadGridView and RadBindingNavigator after Filtering and Sorting]({%slug gridview-bindingnavigator-synchronization%})|
 |[Synchronize scrollbars in grid hierarchy levels]({%slug synchronize-scrollbars-in-hierarchy-levels%})|
+|[Tracking Visible Rows When Scrolling in GridView for UI for WinForms]({%slug gridview-tracking-visible-rows%})|
 |[Use Custom Comparer to Speed up the Sorting in RadGridView]({%slug use-custom-comparer-to-speed-up-the-sorting-in-radgridview%})|
 |[Use GridComboBoxColumn with Custom Values - Telerik UI for WinForms - KB]({%slug use-gridcomboboxcolumn-with-custom-values%})|
 |[Use RadPopupEditor in RadGridView]({%slug gridpopupeditor%})|
