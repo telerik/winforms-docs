@@ -15,7 +15,6 @@ no-results-image-path: ./images/ninja-no-results.svg
 img-max-width: 100%
 table-layout: fixed
 enable-tabbed-code-blocks: true
-blazor-repl: false
 pdf-cover-png-path: ./images/pdf-cover.png
 gitLastCommitDateEnabled: true
 
