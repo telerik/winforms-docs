@@ -162,12 +162,15 @@ meta:
   controls/telerik-cab-enabling-kit/telerik-cab-enabling-kit:
     title: Telerik Cab Enabling Kit
     position: 4
+    published: false
   controls/telerik-cab-enabling-kit/getting-started:
     title: Getting Started
     position: 3
+    published: false
   controls/telerik-cab-enabling-kit:
     title: Telerik Cab Enabling Kit
     position: 540
+    published: false
   controls/ziplibrary:
     title: ZipLibrary
     position: 530
