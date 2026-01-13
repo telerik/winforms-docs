@@ -125,4 +125,8 @@ apiRules:
 - exclude:
     type: Interface
     uidRegex: ^Telerik\.Pivot\.Core\.IPivotResults(\..*)?$
+- exclude:
+    uidRegex: ^MediaFoundation(\..*)?$
+- exclude:
+    uidRegex: ^System\.Collections\.Generic(\..*)?$
 
