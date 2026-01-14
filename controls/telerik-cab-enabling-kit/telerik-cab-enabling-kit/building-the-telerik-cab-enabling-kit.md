@@ -4,7 +4,7 @@ page_title: Building the Telerik CAB Enabling Kit - UI for WinForms Documentatio
 description: Building the Telerik CAB Enabling Kit
 slug: winforms/telerik-cab-enabling-kit/telerik-cab-enabling-kit/building-the-telerik-cab-enabling-kit
 tags: building,the,telerik,cab,enabling,kit
-published: True
+published: False
 position: 0
 previous_url: telerik-cab-enabling-kit-telerik-cab-enabling-kit-building-the-telerik-cab-enabling-kit
 ---

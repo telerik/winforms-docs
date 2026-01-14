@@ -4,7 +4,7 @@ page_title: System Requirements - UI for WinForms Documentation
 description: System Requirements
 slug: winforms/telerik-cab-enabling-kit/system-requirements
 tags: system,requirements
-published: True
+published: False
 position: 1
 previous_url: telerik-cab-enabling-kit-system-requirements
 ---

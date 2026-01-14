@@ -157,15 +157,6 @@ meta:
   controls/codedui:
     title: CodedUI
     position: 560
-  controls/telerik-cab-enabling-kit/telerik-cab-enabling-kit:
-    title: Telerik Cab Enabling Kit
-    position: 4
-  controls/telerik-cab-enabling-kit/getting-started:
-    title: Getting Started
-    position: 3
-  controls/telerik-cab-enabling-kit:
-    title: Telerik Cab Enabling Kit
-    position: 540
   controls/ziplibrary:
     title: ZipLibrary
     position: 530
@@ -540,18 +531,6 @@ meta:
   controls/richtexteditor:
     title: RichTextEditor
     position: 410
-  controls/richtextbox/features/import-export:
-    title: Import/Export
-    position: 10
-  controls/richtextbox/features/document-elements:
-    title: Document Elements
-    position: 1
-  controls/richtextbox/features:
-    title: Features
-    position: 3
-  controls/richtextbox:
-    title: RichTextBox (deprecated)
-    position: 400
   controls/ribbonbar/localization:
     title: Localization
     position: 12
@@ -1722,7 +1701,7 @@ redirects:
     to: "/introduction"
     type: Permanent
 -
-    from: "^/devtools/winforms/(barcode|bindingnavigator|buttons|calendar|cardview|carousel|chart|chartview|chat|checkedlistbox|clock|codedui|commandbar|dataentry|datafilter|datalayout|desktopalert|diagram|dock|dropdown-listcontrol-and-checkeddropdownlist|editors|forms-and-dialogs|ganttview|gauges|gridview|image-editor|layoutcontrol|listview|map|menus|multicolumncombobox|pageview|panels-and-labels|panorama|pdfprocessing|pdfviewer|pivotgrid|propertygrid|rangeselector|ribbonbar|richtextbox|richtexteditor|rotator|scheduler|shortcuts|spellchecker|splitcontainer|spreadprocessing|spreadsheet|spreadstreamprocessing|telerik-cab-enabling-kit|themes|track-and-status-controls|treeview|virtualgrid|wizard|wordsprocessing|ziplibrary)/(.*)$"
+    from: "^/devtools/winforms/(barcode|bindingnavigator|buttons|calendar|cardview|carousel|chart|chartview|chat|checkedlistbox|clock|codedui|commandbar|dataentry|datafilter|datalayout|desktopalert|diagram|dock|dropdown-listcontrol-and-checkeddropdownlist|editors|forms-and-dialogs|ganttview|gauges|gridview|image-editor|layoutcontrol|listview|map|menus|multicolumncombobox|pageview|panels-and-labels|panorama|pdfprocessing|pdfviewer|pivotgrid|propertygrid|rangeselector|ribbonbar|richtexteditor|rotator|scheduler|shortcuts|spellchecker|splitcontainer|spreadprocessing|spreadsheet|spreadstreamprocessing|themes|track-and-status-controls|treeview|virtualgrid|wizard|wordsprocessing|ziplibrary)/(.*)$"
     to: "/devtools/winforms/controls/$1/$2"
     type: Permanent
 -
