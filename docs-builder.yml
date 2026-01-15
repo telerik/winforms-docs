@@ -13,9 +13,9 @@ search-engine-id: 1580af2b9cc344355
 avatar-path: ./images/avatar-ninja.svg
 no-results-image-path: ./images/ninja-no-results.svg
 img-max-width: 100%
+center-images: false
 table-layout: fixed
 enable-tabbed-code-blocks: true
-blazor-repl: false
 pdf-cover-png-path: ./images/pdf-cover.png
 gitLastCommitDateEnabled: true
 
@@ -35,8 +35,6 @@ markdown-replacements:
     replacement: 'slug://'
 
 meta:
-  "*customizing-appearance*":
-    title: Customizing Appearance
   api:
     title: API Reference
     position: 60
@@ -159,15 +157,6 @@ meta:
   controls/codedui:
     title: CodedUI
     position: 560
-  controls/telerik-cab-enabling-kit/telerik-cab-enabling-kit:
-    title: Telerik Cab Enabling Kit
-    position: 4
-  controls/telerik-cab-enabling-kit/getting-started:
-    title: Getting Started
-    position: 3
-  controls/telerik-cab-enabling-kit:
-    title: Telerik Cab Enabling Kit
-    position: 540
   controls/ziplibrary:
     title: ZipLibrary
     position: 530
@@ -542,18 +531,6 @@ meta:
   controls/richtexteditor:
     title: RichTextEditor
     position: 410
-  controls/richtextbox/features/import-export:
-    title: Import/Export
-    position: 10
-  controls/richtextbox/features/document-elements:
-    title: Document Elements
-    position: 1
-  controls/richtextbox/features:
-    title: Features
-    position: 3
-  controls/richtextbox:
-    title: RichTextBox (deprecated)
-    position: 400
   controls/ribbonbar/localization:
     title: Localization
     position: 12
@@ -1639,33 +1616,6 @@ meta:
   controls/barcodeview:
     title: BarcodeView
     position: 56
-  controls/barcode/barcode-types/2d-barcodes/QRCode:
-    title: QR Code
-    position: 5
-  controls/barcode/barcode-types/2d-barcodes/PDF417:
-    title: PDF 417
-    position: 4
-  controls/barcode/barcode-types/2d-barcodes/SwissQRCode:
-    title: Swiss QR Code
-    position: 3
-  controls/barcode/barcode-types/2d-barcodes/datamatrix:
-    title: Data Matrix
-    position: 2
-  controls/barcode/barcode-types/2d-barcodes:
-    title: 2D Barcodes
-    position: 2
-  controls/barcode/barcode-types/1d-barcodes:
-    title: 1D Barcodes
-    position: 1
-  controls/barcode/how-to:
-    title: How To
-    position: 4
-  controls/barcode/barcode-types:
-    title: Barcode Types
-    position: 3
-  controls/barcode:
-    title: Barcode (obsolete)
-    position: 55
   cloud-integration/google-cloud:
     title: Google Cloud
     position: 2
@@ -1751,7 +1701,7 @@ redirects:
     to: "/introduction"
     type: Permanent
 -
-    from: "^/devtools/winforms/(barcode|bindingnavigator|buttons|calendar|cardview|carousel|chart|chartview|chat|checkedlistbox|clock|codedui|commandbar|dataentry|datafilter|datalayout|desktopalert|diagram|dock|dropdown-listcontrol-and-checkeddropdownlist|editors|forms-and-dialogs|ganttview|gauges|gridview|image-editor|layoutcontrol|listview|map|menus|multicolumncombobox|pageview|panels-and-labels|panorama|pdfprocessing|pdfviewer|pivotgrid|propertygrid|rangeselector|ribbonbar|richtextbox|richtexteditor|rotator|scheduler|shortcuts|spellchecker|splitcontainer|spreadprocessing|spreadsheet|spreadstreamprocessing|telerik-cab-enabling-kit|themes|track-and-status-controls|treeview|virtualgrid|wizard|wordsprocessing|ziplibrary)/(.*)$"
+    from: "^/devtools/winforms/(barcode|bindingnavigator|buttons|calendar|cardview|carousel|chart|chartview|chat|checkedlistbox|clock|codedui|commandbar|dataentry|datafilter|datalayout|desktopalert|diagram|dock|dropdown-listcontrol-and-checkeddropdownlist|editors|forms-and-dialogs|ganttview|gauges|gridview|image-editor|layoutcontrol|listview|map|menus|multicolumncombobox|pageview|panels-and-labels|panorama|pdfprocessing|pdfviewer|pivotgrid|propertygrid|rangeselector|ribbonbar|richtexteditor|rotator|scheduler|shortcuts|spellchecker|splitcontainer|spreadprocessing|spreadsheet|spreadstreamprocessing|themes|track-and-status-controls|treeview|virtualgrid|wizard|wordsprocessing|ziplibrary)/(.*)$"
     to: "/devtools/winforms/controls/$1/$2"
     type: Permanent
 -
