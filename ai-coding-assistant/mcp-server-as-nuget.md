@@ -174,21 +174,6 @@ __Option 2: Direct License Key__
 
 > Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your license key]({%slug license-key%}#updating-your-license-key) when necessary.
 
-## Troubleshooting
-
->warning **Known Issue: Hanging tool calls in Visual Studio**
-> 
->When using Telerik AI tools in Visual Studio, GitHub Copilot may:
->- **hang** during tool invocation;
->- show UI for a successful tool response, but actually **fail silently**;
->- continue generation without waiting for **parallel tool calls**.
->In these cases, the response may be generated but not provided to the Copilot Agent UI.
->This is a known issue in Visual Studio Copilot, not related to Telerik MCP servers or AI tools, and does not reproduce in VS Code.
->For more details, see the related Visual Studio Developer Community issue:  
->https://developercommunity.visualstudio.com/t/Copilot-stopped-working-after-latest-upd/10936456
->
->Microsoft has acknowledged the issue and marked it as **Fixed - Pending Release**. A future Visual Studio update is expected to resolve it.
-
 ## See also
 
 * [AI Coding Assistant Overview]({%slug ai-overview%})
