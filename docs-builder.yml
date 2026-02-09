@@ -391,6 +391,9 @@ meta:
   controls/spellchecker:
     title: SpellChecker
     position: 450
+  controls/speechtotextbutton:
+    title: SpeechToTextButton
+    position: 447
   controls/sparkline/customizing-appearance:
     title: Customizing Appearance
     position: 7
