@@ -37,7 +37,7 @@ The RadSpeechToTextButton provides the following functionality and features:
 * **[Event Handling]({%slug speechtotextbutton-events%})**: Offers a comprehensive event model for capturing recognized text and tracking state changes.
 * **[Language Configuration]({%slug speechtotextbutton-getting-started%}#language-support)**: The SpeechToTextButton allows you to set the language for speech recognition, ensuring accurate transcription of spoken words into text.
 * **[Custom Speech Recognizer]({%slug speechtotextbutton-custom-recognizer%})**: Allows integration with third-party speech recognition services by implementing a custom recognizer interface.
-* **Styling and Appearance**: Full customization support through the Telerik theming system, allowing you to adjust colors, borders, and visual properties.
+* **[Styling and Appearance]({%slug speechtotextbutton-appearance%})**: Full customization support through the Telerik theming system, allowing you to adjust colors, borders, and visual properties.
 
 ## Next Steps
 

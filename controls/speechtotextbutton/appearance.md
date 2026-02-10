@@ -9,9 +9,7 @@ slug: speechtotextbutton-appearance
 
 # SpeechToTextButton Appearance
 
-You can customize the appearance of the RadSpeechToTextButton component by using its built-in parameters. The component supports the same appearance options as the [Telerik UI for WinForms RadButton]({%slug winforms/buttons/button%}).
-
-The **RadSpeechToTextButton** appearance can be customized using the Telerik theming system and by configuring its visual elements. The control inherits appearance options from [RadButton]({%slug winforms/buttons/button%}), providing extensive styling capabilities.
+The **RadSpeechToTextButton** appearance can be customized using the Telerik theming system and by configuring its visual elements. The control inherits appearance options from [Telerik UI for WinForms RadButton]({%slug winforms/buttons/button%}), providing extensive styling capabilities.
 
 ## Animation 
 
@@ -26,14 +24,13 @@ If you want, you can disable the pulse animation by setting the **AllowAnimation
 ````C#
 this.radSpeechToTextButton1.AllowAnimation = false;
 ````
-
 ````VB.NET
 Me.RadSpeechToTextButton1.AllowAnimation = False
 ````
 
 ## Customizing the Tooltip
 
-The **RadSpeechToTextButton** displays a tooltip (represented by a **[RadCallout]({%slug callout-overview%}**) when the user hovers over it. This tooltip shows the current state of the button to provide visual feedback.
+The **RadSpeechToTextButton** displays a tooltip (represented by a **[RadCallout]({%slug callout-overview%})** when the user hovers over it. This tooltip shows the current state of the button to provide visual feedback.
 
 | Ready | Listening |
 | :------------: | :-----------: |

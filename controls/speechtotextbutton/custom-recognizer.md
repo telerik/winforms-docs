@@ -209,8 +209,3 @@ This is the result of implementing the custom recognizer above:
 
 >important Set the `SpeechRecognizerCreator` as early as possible to ensure your custom recognizer is used from the start.
 
-## See Also
-
-- [States]({%slug speechtotextbutton-states%})
-- [Events]({%slug speechtotextbutton-events%})
-- [Getting Started]({%slug speechtotextbutton-getting-started%})
