@@ -1,7 +1,7 @@
 ---
 title: Appearance
 page_title: WinForms SpeechToTextButton Documentation - Appearance
-description: Learn how to customize appearance of the Telerik SpeechToTextButton for WinForms.
+description: Learn how to customize the appearance of the Telerik SpeechToTextButton for WinForms.
 position: 3
 tags: speech to text, button, visual, appearance, style, winforms
 slug: speechtotextbutton-appearance
@@ -46,7 +46,7 @@ The `CalloutOpening` event allows you to customize the tooltip text or cancel th
 #### Customizing tooltip text based on state
 
 ````C#
-private void RadSpeechToTextButton1_CalloutOpening(object sender, Telerik.WinControls.UI.SpeechToTextButton.SpeechToTextTooltipOpeningEventArgs e
+private void RadSpeechToTextButton1_CalloutOpening(object sender, Telerik.WinControls.UI.SpeechToTextButton.SpeechToTextTooltipOpeningEventArgs e)
 {
     var button = (RadSpeechToTextButtonElement)sender;
     
@@ -92,7 +92,7 @@ End Sub
 
 ````
 
->note You can also custome the RadCallout component by accessing it through SpeechToTextTooltipOpeningEventArgs.
+note You can also customize the RadCallout component by accessing it through SpeechToTextTooltipOpeningEventArgs.
 
 ## See Also
 
