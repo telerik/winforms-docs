@@ -9,14 +9,36 @@ slug: speechtotextbutton-appearance
 
 # SpeechToTextButton Appearance
 
-You can customize the appearance of the SpeechToTextButton component by using its built-in parameters. The component supports the same appearance options as the [Telerik UI for WinForms RadButton]({%slug winforms/buttons/button%}).
-
+You can customize the appearance of the RadSpeechToTextButton component by using its built-in parameters. The component supports the same appearance options as the [Telerik UI for WinForms RadButton]({%slug winforms/buttons/button%}).
 
 The **RadSpeechToTextButton** appearance can be customized using the Telerik theming system and by configuring its visual elements. The control inherits appearance options from [RadButton]({%slug winforms/buttons/button%}), providing extensive styling capabilities.
 
+## Animation 
+
+The **RadSpeechToTextButton** displays a visual pulse animation when the button enters the listening state (`SpeechRecognizerState.Listening`). This animation provides immediate visual feedback to users, indicating that the speech recognition is actively listening for input. 
+
+>note The pulse animation is enabled by default. The **AllowAnimation** property indicates whether the animation is enabled or not. 
+
+If you want, you can disable the pulse animation by setting the **AllowAnimation** property to `false`.
+
+#### Example: Disable the pulse animation
+
+````C#
+this.radSpeechToTextButton1.AllowAnimation = false;
+````
+
+````VB.NET
+Me.RadSpeechToTextButton1.AllowAnimation = False
+````
+
 ## Customizing the Tooltip
 
-The **RadSpeechToTextButton** displays a tooltip (represented by a **RadCallout**) when the user hovers over it. This tooltip shows the current state of the button to provide visual feedback.
+The **RadSpeechToTextButton** displays a tooltip (represented by a **[RadCallout]({%slug callout-overview%}**) when the user hovers over it. This tooltip shows the current state of the button to provide visual feedback.
+
+| Ready | Listening |
+| :------------: | :-----------: |
+|![SpeechToTextButton Overview](images/speechtotextbutton-tooltip2.png)|![SpeechToTextButton Overview](images/speechtotextbutton-tooltip.png)|
+
 
 By default, the tooltip is displayed for the **Ready** and **Listening** states. You can customize the tooltip content and behavior using the **CalloutOpening** event.
 
@@ -55,6 +77,25 @@ End Sub
 
 ````
 
+To prevent the tooltip from opening, set the **e.Cancel** property of the event arguments to true.
+
+#### Using the CalloutOpening event to cancel the tooltip opening
+
+````C#
+private void RadSpeechToTextButton1_CalloutOpening(object sender, Telerik.WinControls.UI.SpeechToTextButton.SpeechToTextTooltipOpeningEventArgs e)
+{
+    e.Cancel = true; // Cancel the default tooltip opening
+}
+
+````
+````VB.NET
+Private Sub RadSpeechToTextButton1_CalloutOpening(sender As Object, e As Telerik.WinControls.UI.SpeechToTextButton.SpeechToTextTooltipOpeningEventArgs)
+    e.Cancel = True ' Cancel the default tooltip opening
+End Sub
+
+````
+
+>note You can also custome the RadCallout component by accessing it through SpeechToTextTooltipOpeningEventArgs.
 
 ## See Also
 

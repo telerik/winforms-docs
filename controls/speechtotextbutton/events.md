@@ -30,6 +30,14 @@ The RadSpeechToTextButton exposes the following events:
 	* The `sender` argument which is of type `object` but can be cast to `RadSpeechToTextButton`.
 	* An `System.EventArgs`
 
+* `CalloutOpening`&mdash;Occurs before the callout tooltip is opened, allowing customization or cancellation. 	
+	* The `sender` argument which is of type `object` but can be cast to `RadSpeechToTextButton`.
+	* A `SpeechToTextTooltipOpeningEventArgs` argument which has a reference to the:
+		* `State` (`SpeechRecognizerState`) property that indicates the current state of the speech recognizer (e.g., `Ready`, `Listening`).
+		* `Callout` (`RadCallout`) property that provides access to the callout tooltip control, allowing you to customize its appearance and behavior.
+		* `ToolTipText` (`string`) property that gets or sets the text displayed in the tooltip. Modify this property to customize the tooltip message.
+		* `Cancel` (`bool`) property that determines whether the tooltip opening should be cancelled. Set this to `true` to prevent the tooltip from being displayed. 
+
 ## Examle: Handling Speech Recognition Errors
 
 To handle errors related to the speech recognition service, use the `ErrorOccurred` event. The `SpeechRecognizerErrorOccurredEventArgs` provide information about the error message via the `Message` and `Exception` properties.
