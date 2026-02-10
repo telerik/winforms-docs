@@ -68,7 +68,7 @@ Once the text is recognized in the **SpeechRecognized** event, you can display i
 
 The `SpeechRecognizerSpeechRecognizedEventArgs` class provides the following detailed information about the recognized speech:
 
-- **FullText**: Gets complete accumulated recofnized text from the current listening session.
+- **FullText**: Gets complete, accumulated, recognized text from the current listening session.
 - **FullTextConfidenceScore**: Gets the confidence score for the recognized text. A value between 0 and 1 that indicates the confidence level of the transcription. Higher values represent greater confidence. A value of -1 indicates that no confidence score is available.
 
 #### Using the SpeechRecognized event
@@ -106,7 +106,7 @@ End Sub
 
 The RadSpeechToTextButton supports two recognition modes: [**Continuous Recognition (Default)**](#continuous-recognition-default) and [**One-Time Recognition**](#one-time-recognition). These modes allow you to control how the speech recognition process behaves.
 
-The recognition modes are defined through the **IsContinuousRecognition** property which indicates whether the speech recognizer operates in continuous recognition mode.
+The recognition modes are defined through the **IsContinuousRecognition** property, which indicates whether the speech recognizer operates in continuous recognition mode.
 
 >note For more information about the internal states and lifecycle of the control, see the [States]({%slug speechtotextbutton-states%}) article.
 
