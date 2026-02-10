@@ -87,10 +87,13 @@ CTAControlName: StepProgressBar
 |**StepProgressChanging**|Fires before updating a StepProgressItem's Progress.|
 |**StepProgressChanged**|Fires when a StepProgressItem's Progress has been updated.|
 |**CurrentChanged**|Fires after the **Current** property changes.
+|**StepClicked**|Fires after the **StepProgressItem** is clicked.
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug stepprogressbar-getting-started%})
 * [Design Time]({%slug stepprogressbar-design-time%})
+
+
  
         
