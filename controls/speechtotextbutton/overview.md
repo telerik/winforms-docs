@@ -13,7 +13,7 @@ CTAControlName: SpeechToTextButton
 
 The **RadSpeechToTextButton** is a UI component that enables users to convert spoken words into text using online speech recognition services. Speech-to-text functionality enhances user experience by providing hands-free data entry, accessibility enhancements, and enabling natural interaction via voice command with applications. 
 
-When the user clicks the button, the control activates a speech recognition service, listens for voice input, and transcribes the recognized speech into text. The recognized text then can be displayed in a text field, processed by your application logic, or used to trigger specific actions based on voice commands.
+When the user clicks the button, the control activates a speech recognition service, listens for voice input, and transcribes the recognized speech into text. The recognized text can then be displayed in a text field, processed by your application logic, or used to trigger specific actions based on voice commands.
 
 ![SpeechToTextButton Overview](images/speechtotextbutton-overview.png)
 
@@ -24,7 +24,7 @@ To use the SpeechToTextButton in your application, ensure the following requirem
 * **Telerik UI for WinForms**: A valid license and installation of Telerik UI for WinForms.
 * **Internet Connection**: Active internet connectivity is required as the control uses online speech recognition services.
 * **Microphone Access**: A functioning microphone or audio input device, with appropriate permissions granted to the application.
-* **Speech Recognition Service**: By default, the control uses  **Microsoft.Web.WebView2 Services**. You need to configure the service endpoint, or implement a custom recognizer for other services.
+* **Speech Recognition Service**: By default, the control uses  **Microsoft.Web.WebView2 Services**. You need to configure the service endpoint or implement a custom recognizer for other services.
 
 ## Key Functionality and Features
 
