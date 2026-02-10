@@ -76,6 +76,7 @@ Here are quick links to the control-specific sections of our documentation:
             <IntroTableAnchor title="ProgressBar" href="slug:winforms/track-and-status-controls/progressbar"></IntroTableAnchor>
             <IntroTableAnchor title="Rating" href="slug:winforms/track-and-status-controls/rating"></IntroTableAnchor>
             <IntroTableAnchor title="Rotator" href="slug:winforms/rotator"></IntroTableAnchor>
+            <IntroTableAnchor title="SpeechToTextButton" href="slug:speechtotextbutton-overview"></IntroTableAnchor>
             <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TrackBar" href="slug:winforms/track-and-status-controls/trackbar"></IntroTableAnchor>
             <IntroTableAnchor title="WaitingBar" href="slug:winforms/track-and-status-controls/waitingbar"></IntroTableAnchor>
