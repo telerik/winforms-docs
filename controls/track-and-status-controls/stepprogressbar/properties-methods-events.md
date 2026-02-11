@@ -1,6 +1,6 @@
 ---
-title: Properties, Methods and Events
-page_title: Properties, Methods and Events - WinForms StepProgressBar Control
+title: Properties, Methods, and Events
+page_title: Properties, Methods, and Events - WinForms StepProgressBar Control
 description: Get familiar with the public API that WinForms StepProgressBar offers.   
 slug: stepprogressbar-properties-methods-events
 tags: stepprogressbar
@@ -9,7 +9,7 @@ position: 4
 CTAControlName: StepProgressBar
 ---
 
-# Properties, Methods and Events for RadStepProgressBar
+# Properties, Methods, and Events for RadStepProgressBar
 
 ## Properties  
 
@@ -86,8 +86,8 @@ CTAControlName: StepProgressBar
 |----|----|
 |**StepProgressChanging**|Fires before updating a StepProgressItem's Progress.|
 |**StepProgressChanged**|Fires when a StepProgressItem's Progress has been updated.|
-|**CurrentChanged**|Fires after the **Current** property changes.
-|**StepClicked**|Fires after the **StepProgressItem** is clicked.
+|**CurrentChanged**|Fires after the **Current** property changes.|
+|**StepClicked**|Fires after the **StepProgressItem** is clicked.|
 
 ## See Also
 
