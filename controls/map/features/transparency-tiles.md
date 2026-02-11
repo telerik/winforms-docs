@@ -1,7 +1,7 @@
 ---
 title: Transparency Tiles
 page_title: Transparency Tiles - RadMap
-description: Learn how to show transparency Tile Images in RadMap control.
+description: Learn how to show transparent tile images in the RadMap control.
 slug: winforms/map/features/transparency
 tags: transparency, map, features, azure, providers
 published: True
@@ -44,7 +44,7 @@ osmProvider.Settings.EnableTransparency = True
 ```` 
 
 
-When `EnableTransparency` is set to __true__ it enables transparent rendering of map tiles. This allows tiles to be rendered with transparency support, which can be useful when overlaying multiple map layers. In the following example, we will combine two AzureMapProviders. The first one will show the map, and the second one will show the weather.
+When `EnableTransparency` is set to __true__, it enables transparent rendering of map tiles. This allows tiles to be rendered with transparency support, which can be useful when overlaying multiple map layers. In the following example, we will combine two AzureMapProviders. The first one will show the map, and the second one will show the weather.
 
 ````C#
 private void SetupProviders()
