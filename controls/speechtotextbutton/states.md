@@ -55,6 +55,6 @@ The **StateChanged** event is raised when the state of the speech recognizer cha
 
 ## Architecture Diagram
 
-The following diagram illustrates the state lifecycle and transitions of the speech recognizer in RadSpeechToTextButton control:
+The following diagram illustrates the state lifecycle and transitions of the speech recognizer in the RadSpeechToTextButton control:
 
 ![SpeechToTextButton States](images/speechtotext-architecture.png)
