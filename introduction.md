@@ -34,7 +34,7 @@ Here are quick links to the control-specific sections of our documentation:
             <IntroTableAnchor title="CheckedListBox" href="slug:winforms/checkedlistbox"></IntroTableAnchor>
             <IntroTableAnchor title="DataEntry" href="slug:winforms/dataentry"></IntroTableAnchor>
             <IntroTableAnchor title="DataLayout" href="slug:winforms/datalayout/overview"></IntroTableAnchor>
-            <IntroTableAnchor title="GridView" href="slug:winforms/gridview"></IntroTableAnchor>
+            <IntroTableAnchor title="GridView" href="slug:winforms/gridview" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="ListControl" href="slug:winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol"></IntroTableAnchor>
             <IntroTableAnchor title="ListView" href="slug:winforms/listview"></IntroTableAnchor>
             <IntroTableAnchor title="PivotGrid" href="slug:winforms/pivotgrid"></IntroTableAnchor>
@@ -42,7 +42,7 @@ Here are quick links to the control-specific sections of our documentation:
             <IntroTableAnchor title="TreeView" href="slug:winforms/treeview"></IntroTableAnchor>
             <IntroTableAnchor title="TreeMap" href="slug:winforms-treemap-overview"></IntroTableAnchor>
             <IntroTableAnchor title="HeatMap" href="slug:heatmap-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="VirtualGrid" href="slug:winforms/virtualgrid"></IntroTableAnchor>
+            <IntroTableAnchor title="VirtualGrid" href="slug:winforms/virtualgrid" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="DataFilter" href="slug:winforms/datafilter/overview"></IntroTableAnchor>
             <IntroTableAnchor title="FilterView" href="slug:filter-view-overview"></IntroTableAnchor>
         </IntroTableSection>
@@ -57,7 +57,7 @@ Here are quick links to the control-specific sections of our documentation:
         <IntroTableSection title="Media">
             <IntroTableAnchor title="ImageEditor" href="slug:radimageeditor-overview"></IntroTableAnchor>
             <IntroTableAnchor title="WebCam" href="slug:webcam-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="PictureBox" href="slug:radpicturebox-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="PictureBox" href="slug:radpicturebox-overview" tag="updated"></IntroTableAnchor>
         </IntroTableSection>
         <IntroTableSection title="Document Processing">
             <IntroTableAnchor title="PdfProcessing" href="slug:document-processing-libraries-overview"></IntroTableAnchor>
@@ -76,8 +76,8 @@ Here are quick links to the control-specific sections of our documentation:
             <IntroTableAnchor title="ProgressBar" href="slug:winforms/track-and-status-controls/progressbar"></IntroTableAnchor>
             <IntroTableAnchor title="Rating" href="slug:winforms/track-and-status-controls/rating"></IntroTableAnchor>
             <IntroTableAnchor title="Rotator" href="slug:winforms/rotator"></IntroTableAnchor>
-            <IntroTableAnchor title="SpeechToTextButton" href="slug:speechtotextbutton-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="SpeechToTextButton" href="slug:speechtotextbutton-overview" tag="new"></IntroTableAnchor>
+            <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="TrackBar" href="slug:winforms/track-and-status-controls/trackbar"></IntroTableAnchor>
             <IntroTableAnchor title="WaitingBar" href="slug:winforms/track-and-status-controls/waitingbar"></IntroTableAnchor>
             <IntroTableAnchor title="VirtualKeyboard" href="slug:winforms-virtual-keyboard-overview"></IntroTableAnchor>
