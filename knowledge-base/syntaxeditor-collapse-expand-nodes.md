@@ -18,7 +18,7 @@ ticketid: 1680548
 
 ## Description
 
-The following article demonstrates how to collapse and expand nodes programmaticaly in the [SyntaxEditor](https://www.telerik.com/products/winforms/documentation/controls/syntax-editor/overview) component for UI for WinForms.
+The following article demonstrates how to collapse and expand nodes programmatically in the [SyntaxEditor](https://www.telerik.com/products/winforms/documentation/controls/syntax-editor/overview) component for UI for WinForms.
 
 ## Solution
 
