@@ -2,8 +2,8 @@
 title: Collapsing and Expanding All Nodes in SyntaxEditor
 description: Learn the approach to collapse and expand all nodes in SyntaxEditor for UI for WinForms.
 type: how-to
-page_title: How to Collapse and Expand All Nodes in SyntaxEditor for WinForms
-meta_title: How to Collapse and Expand All Nodes in SyntaxEditor for WinForms
+page_title: How to Collapse and Expand Nodes in SyntaxEditor for WinForms
+meta_title: How to Collapse and Expand Nodes in SyntaxEditor for WinForms
 slug: collapsing-expanding-all-nodes-syntaxeditor-winforms
 tags: syntaxeditor, ui for winforms, collapse, expand, nodes
 res_type: kb
@@ -11,28 +11,14 @@ ticketid: 1680548
 ---
 
 ## Environment
-
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>SyntaxEditor for UI for WinForms</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>2024.3.924</td>
-</tr>
-</tbody>
-</table>
+ 
+|Product Version|Product|Author|
+|----|----|----|
+|2026.1.210|RadSyntaxEditor for WinForms|[Nadya Karaivanova](https://www.telerik.com/blogs/author/nadya-karaivanova)|
 
 ## Description
 
-I want to collapse and expand all nodes in the [SyntaxEditor](https://docs.telerik.com/devtools/winforms/controls/syntaxeditor/overview) component for UI for WinForms. I am looking for an approach to programmatically achieve this functionality.
-
-This knowledge base article also answers the following questions:
-- How do I collapse all nodes in SyntaxEditor for WinForms?
-- How can I expand all nodes in SyntaxEditor for WinForms?
-- What is the method to toggle collapse and expand for SyntaxEditor nodes?
+The following article demonstrates how to collapse and expand nodes programmaticaly in the [SyntaxEditor](https://www.telerik.com/products/winforms/documentation/controls/syntax-editor/overview) component for UI for WinForms.
 
 ## Solution
 
@@ -57,6 +43,5 @@ private void radButton1_Click(object sender, EventArgs e)
 
 ## See Also
 
-- [SyntaxEditor Overview](https://docs.telerik.com/devtools/winforms/controls/syntaxeditor/overview)
-- [UI for WinForms Documentation](https://docs.telerik.com/devtools/winforms/introduction)
-- [SyntaxEditor Folding Regions API](https://docs.telerik.com/devtools/winforms/api/Telerik.WinControls.SyntaxEditor.FoldingRegion)
+- [SyntaxEditor Overview](https://www.telerik.com/products/winforms/documentation/controls/syntax-editor/overview)
+
