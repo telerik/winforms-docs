@@ -17,7 +17,7 @@ This MCP server enables AI-powered IDEs and tools to generate more accurate, tai
 
 ## Installation
 
-The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is available as a NuGet package. This NuGet distribution exposes the same AI Coding Assistant functionality as the npm package. Beginning with **.NET 10** it can be executed directly via the `dnx` command. For .NET 8 and .NET 9 (where `dnx` is not available) you can install it as a local dotnet tool and invoke its executable.
+The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is available as a NuGet package. Beginning with **.NET 10** it can be executed directly via the `dnx` command. For .NET 8 and .NET 9 (where `dnx` is not available) you can install it as a local dotnet tool and invoke its executable.
 
 ### Prerequisites
 
@@ -25,7 +25,7 @@ To use the Telerik WinForms MCP server via NuGet, you need:
 
 | Target Runtime | Required SDK | Invocation Method | Notes |
 |----------------|--------------|-------------------|-------|
-| .NET 10 | .NET 10 SDK (Preview 6 or newer) | `dnx` dynamic execution | Simplest approach; no prior install step |
+| **.NET 10 (Recommended)** | .NET 10 SDK (Preview 6 or newer) | `dnx` dynamic execution | Simplest approach; no prior install step |
 | .NET 8 / .NET 9 | .NET 8 or .NET 9 SDK | Local dotnet tool (`telerik-winforms-assistant.exe`) | `dnx` not supported; install tool manually |
 
 Common requirements:
