@@ -12,6 +12,8 @@ position: 1
 
 This article dives into UI controls, focusing on their compatibility with Microsoft Framework versions. We will break down the current distributions, ensuring you stay in sync with the latest updates for seamless integration into your projects.
 
+>note Telerik WinForms for UI 2025 Q4 is now compatible with the latest .NET 10 (2025). We consistently monitor Microsoft's latest releases to guarantee that our software remains compatible.
+
 ## .NET Framework
 
 |Telerik Distribution|Telerik Versions|Supported Runtime|
@@ -32,7 +34,7 @@ This article dives into UI controls, focusing on their compatibility with Micros
 |.NET 6| R3 2021 SP1 - 2025 Q1|.NET 6 and later	|
 |.NET 7| R3 2022 SP2 - 2024 Q3|.NET 7 and later|
 |.NET 8| 2024 Q2 - present|.NET 8 and later|
-|.NET 9| 2024 Q4 - present|.NET 9 and later|
+|.NET 9| 2024 Q4 - present|.NET 9 / .NET 10 and later|
 
 
 >note .NET 6 distribution is discontinued in 2025 Q2. For more information see [Microsoft .NET and .NET Core Support Policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core).

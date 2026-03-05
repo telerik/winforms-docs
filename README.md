@@ -8,7 +8,7 @@ publish: false
 
 Welcome to the GitHub repo for [Telerik UI for WinForms](http://www.telerik.com/winforms) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik UI for WinForms Documentation at [docs.telerik.com/devtools/winforms](http://docs.telerik.com/devtools/winforms). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.telerik.com/devtools/winforms](http://docs.telerik.com/devtools/winforms) where our content is prettified and searchable.
 
-We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, read the docs off line, or even load the entire thing to an [Apple Newton] (https://en.wikipedia.org/wiki/Apple_Newton), if that's your thing.
+We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, read the docs off line, or even load the entire thing to an [Apple Newton](https://en.wikipedia.org/wiki/Apple_Newton), if that's your thing.
 
 It also means that you can play a role in making our docs better for everyone, and if helping us make the Telerik UI for WinForms docs better sounds interesting to you, read on.
 

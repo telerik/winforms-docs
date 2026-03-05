@@ -2,7 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
-slug: winforms/listview/using-checkboxes
+slug: winforms/listview/properties-methods-events
 tags: listview
 published: True
 position: 10 
@@ -121,7 +121,7 @@ This article provides reference tables with the [Properties](#properties), [Meth
 |**ItemCheckedChanged**|Occurs when a ListViewDataItem is checked.|
 |**VisualItemFormatting**|Occurs when a ListViewDataItem changes its state and needs to be formatted.|
 |**ItemCreating**|Occurs when a ListViewDataItem needs to be created.|
-|**VisualItemCreating**|Occurs when a <see cref="BaseListViewVisualItem">BaseListViewVisualItem</see> needs to be created.|
+|**VisualItemCreating**|Occurs when a BaseListViewVisualItem needs to be created.|
 |**CellFormatting**|Occurs when a DetailsView cell needs to be formatted.|
 |**ItemDataBound**|Occurs when a data-bound item is being attached to a ListViewDataItem.|
 |**CurrentItemChanged**|Occurs when the CurrentItem property is changed.|

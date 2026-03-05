@@ -16,6 +16,7 @@ The following article list Knowledge Base articles related to this section of co
 |KB Article|
 |----|
 |[Add New Keyword to Existing Tagger]({%slug syntaxeditor-extend-default-tagger%})|
+|[Adjusting Mouse Wheel Scroll Step in SyntaxEditor for UI for WinForms]({%slug syntaxeditor-mouse-wheel-step%})|
 |[Conditional Intelliprompts in SyntaxEditor]({%slug conditional-intelliprompts-in-syntaxeditor%})|
 |[Drag and Drop Text with Cursor Movement in RadSyntaxEditor for WinForms]({%slug syntaxeditor-dragdrop-cursor-position%})|
 |[How to Achieve Multiple Highlight Rules in SyntaxEditor]({%slug multiple-highlight-rules%})|

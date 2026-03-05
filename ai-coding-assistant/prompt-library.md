@@ -4,7 +4,7 @@ page_title: Telerik UI for WinForms Prompt Library
 description: Explore the collection of prompts that you can use with the Telerik UI for WinForms AI Coding Assistant.
 slug: ai-prompt-library
 tags: telerik,winforms,ai,coding assistant,prompt,library
-position: 3
+position: 4
 ---
 
 # Telerik UI for WinForms Prompt Library
@@ -26,13 +26,9 @@ All prompts in this library target the [MCP Server]({%slug ai-mcp-server%}) via 
 
 >warning Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
 
->caption Use with the Copilot Extension
-
-To run the provided prompts in the Telerik UI for WinForms GitHub Copilot Extension (without the MCP Server installed), modify the prompts to use the `@telerik` handle instead.
-
 ## Assembly-Specific Prompts
 
-This section provides prompt ideas for the [currently supported assemblies]({%slug ai-overview%}#supported-assemblies).
+This section provides prompt ideas for the [currently supported assemblies]({%slug ai-overview%}).
 
 ### WinControls.UI Assembly
 

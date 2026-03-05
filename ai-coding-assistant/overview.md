@@ -13,25 +13,7 @@ The Telerik UI for WinForms AI Coding Assistant enhances your developer experien
 
 The coding assistant is an AI code generator that provides specialized context to AI models, enabling them to produce higher-quality code samples using the [Telerik UI for WinForms components](https://www.telerik.com/products/winforms.aspx) and APIs.
 
-## Available Tools
-
-The Telerik AI Coding Assistant is available through:
-
-* [Telerik WinForms GitHub Copilot Extension]({%slug ai-copilot-extension%})
-* [Telerik WinForms MCP Server]({%slug ai-mcp-server%})
-
->caution [Microsoft is sunsetting GitHub Copilot extensions](https://github.blog/changelog/2025-09-24-deprecate-github-copilot-extensions-github-apps/) on November 10th, 2025, in favor of the Model Context Protocol (MCP) standard. 
-> 
-> From that date, the Telerik and Kendo UI AI Coding Assistants will be available exclusively through our [MCP server]({%slug ai-mcp-server%}), ensuring you continue to enjoy the same powerful capabilities that are delivered by a modern, open, and officially recommended standard.
-
-### Key Differences
-
-| Feature                | MCP Server                                                                | GitHub Copilot Extension                                   |
-|------------------------|---------------------------------------------------------------------------|------------------------------------------------------------|
-| Prompt Handling        | Handles complex, multi-step prompts                                       | Offers shorter, focused code snippets                      |
-| Client Compatibility   | Works with MCP-enabled clients (e.g., Cursor, Copilot Agent mode)         | Integrated as a Copilot extension                          |
-| Code Suggestions       | Can directly suggest changes and rebuild applications to verify code      | Provides detailed explanations alongside code suggestions  |
-| Response Focus         | Primarily code-focused                                                    | Better for learning and understanding implementation       |
+The Telerik AI Coding Assistant is integrated in the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}).
 
 ## Getting Started
 
@@ -63,6 +45,10 @@ The Telerik AI Coding Assistant is trained on the Telerik UI for WinForms API re
 * Telerik.WinControls.RadDock
 * Telerik.WinControls.RichTextEditor
 
+## Telerik Document Processing AI Coding Assistant
+
+You can also use the AI Coding Assistant for [Telerik Document Processing](https://www.telerik.com/document-processing-libraries) to generate high-quality code samples and speed up your development. Read the full guide in the dedicated [DPL AI Coding Assistant](https://docs.telerik.com/devtools/document-processing/ai-coding-assistant/overview) article.
+
 ## Usage Limits
 
 Access to the Telerik UI for WinForms AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
@@ -70,20 +56,23 @@ Access to the Telerik UI for WinForms AI Coding Assistant depends on your [Teler
 #### Subscription License
 
 * A Subscription is the primary license that grants full access to the AI Coding Assistant.
-* Includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day.
-* Best for ongoing and high-volume usage.
+* Includes a virtually unlimited number of requests, with a fair usege applied.
 
-#### Perpetual License (Limited Access)
+#### Perpetual License
 
-* Perpetual licenses include limited access of 50 requests per year.
-* Intended for exploring and trying out the AI Coding Assistant.
-* For continued or higher-volume access, upgrade to a Subscription license.
+* Perpetual license holders have no access to the AI Coding Assistant by default.
+* You can start a [30-day trial](https://www.telerik.com/try/ui-for-winforms) to access the AI Coding Assistant.
+* After the trial expires, access is no longer available unless the Perpetual license is converted to a Subscription license.
 
 #### Trial License
 
-* Trial licenses include 300 requests per trial per year.
+* A Telerik UI for WinForms trial automatically starts a [30-day trial](https://www.telerik.com/try/ui-for-winforms) for the AI tools.
+* Trial licenses grant access to both the AI Coding Assistant.
+* The number of requests is virtually unlimited, with fair use policy applied.
 * Reactivating the same trial for a new release does not grant additional requests.
 * Designed for evaluating the feature before purchasing.
+
+>tip All Telerik AI tools share a single request limit for your Telerik account. Telerik MCP server take up from the same usage quota. When using the Telerik MCP server, one prompt may trigger several requests, depending on the prompt complexity.
 
 ## Recommendations
 
@@ -91,18 +80,6 @@ Consider the following recommendations when working with the AI Coding Assistant
 
 * When switching between tasks and files, start a new session in a new chat window to avoid polluting the context with irrelevant or outdated information.
 * At the time of publishing, Claude Sonnet 4 and GPT-5 produce optimal results.
-
-## Number of Requests
-
-The Telerik WinForms AI Coding Assistant allows the following maximum number of requests based on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
-
-| License Type | Request Limit |
-|--------------|---------------|
-| Perpetual | 50 requests per year |
-| Subscription | Virtually unlimited with a fair use threshold of 300 requests per day |
-| Trial | 300 requests per trial period (does not reset with new trial activations) |
-
-> All Telerik AI tools share a single request quota for your Telerik account. Usage from the [Telerik Copilot extension]({%slug ai-copilot-extension%}) and [Telerik MCP server]({%slug ai-mcp-server%}) counts toward the same limit. Complex prompts in the MCP server may consume multiple requests.
 
 ## Privacy
 
@@ -127,12 +104,6 @@ The Telerik WinForms AI Coding Assistant operates under strict privacy guideline
 
 > Make sure also to review the terms and privacy policies of your selected AI model and AI client.
 
-## Telerik Document Processing AI Coding Assistant
-
-You can also use the AI Coding Assistant for **Telerik Document Processing** to generate high-quality code samples and speed up your development.
-Read the full guide in the dedicated [DPL AI Coding Assistant article](https://docs.telerik.com/devtools/document-processing/ai-coding-assistant/overview).
-
 ## Next Steps
 
-* Install the [Telerik WinForms GitHub Copilot Extension]({%slug ai-copilot-extension%})
 * Configure the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client

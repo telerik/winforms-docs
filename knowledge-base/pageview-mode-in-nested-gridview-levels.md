@@ -319,8 +319,7 @@ End Class
 
 ````
 
-# See Also
+## See Also
 
-* [Binding to Hierarchical Data Programmatically]({%slug winforms/barcode/overview%})
 * [Creating Custom Cells]({%slug winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-programmatically%})
 

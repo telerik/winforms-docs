@@ -15,11 +15,11 @@ res_type: kb
 |----|----|----|
 |2019.3.917|RadGridView for WinForms|Dimitar Karamfilov|
 
-# Problem
+## Problem
 
 You have two or more grids and you want to export them to a single sheet in the same file. 
 
-# Solution
+## Solution
 
 To achieve this you need to copy the contents of the second sheet in the first one. The bellow example demonstrates how you can implement this approach. 
 

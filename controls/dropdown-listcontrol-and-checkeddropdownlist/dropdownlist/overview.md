@@ -12,7 +12,7 @@ previous_url: dropdown-and-listcontrol-dropdownlist-overview
 
 # WinForms DropDownList Overview
 
-__RadDropDownList__ is an enhanced alternative to the standard Windows Forms combo box control. __RadDropDownList__ can be [bound to data]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding%}) sources. It allows you to [replace] ({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/custom-items%}) its major components giving you control over its visual and data behavior. You can exercise control over the [scrolling logic]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/scrolling%}), the items layout and even the low level data binding logic by providing their own data layer.
+__RadDropDownList__ is an enhanced alternative to the standard Windows Forms combo box control. __RadDropDownList__ can be [bound to data]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding%}) sources. It allows you to [replace]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/custom-items%}) its major components giving you control over its visual and data behavior. You can exercise control over the [scrolling logic]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/scrolling%}), the items layout and even the low level data binding logic by providing their own data layer.
 
 You can review below the [Key Features]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist%}#key-features) that __RadDropDownList__ supports.
 

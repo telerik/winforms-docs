@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Print RadBarcode
 slug: print-barcode
 position: 0
-tags: barcode, print
+tags: barcodeview, print
 res_type: kb
 ---
 
@@ -17,7 +17,7 @@ res_type: kb
  
 ## Description
 
-**RadBarcode** doesn't support printing out of the box. However, it offers [exporting to image](https://docs.telerik.com/devtools/winforms/controls/barcode/how-to/export-to-image) functionality.
+**RadBarcode** doesn't support printing out of the box. However, it offers [exporting to image](https://docs.telerik.com/devtools/winforms/controls/barcodeview/how-to/export-to-image) functionality.
 
 This article demonstrates how to get benefit from the **RadRichTextEditor**'s printing behavior and achieve printing **RadBarcode**. 
 

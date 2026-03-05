@@ -1,13 +1,13 @@
 ---
-title: MCP Server
-page_title: Telerik WinForms MCP Server
+title: Getting Started
+page_title: Getting Started with the Telerik UI for WinForms AI Coding Assistant
 description: Learn how to add and use the Telerik WinForms MCP Server as a WinForms AI coding assistant and code generator for better developer productivity. The Telerik WinForms MCP server provides proprietary context about Telerik UI for WinForms to AI-powered software.
 slug: ai-mcp-server
 tags: telerik,winforms,ai,ai server,coding assistant
 position: 2
 ---
 
-# Telerik WinForms MCP Server
+# Getting Started with the Telerik UI for WinForms AI Coding Assistant
 
 The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik UI for WinForms components.
 
@@ -106,6 +106,21 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 Add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`).
 
+## Troubleshooting
+
+>warning **Known Issue: Hanging tool calls in Visual Studio**
+> 
+>When using Telerik AI tools in Visual Studio, GitHub Copilot may:
+>- **hang** during tool invocation;
+>- show UI for a successful tool response, but actually **fail silently**;
+>- continue generation without waiting for **parallel tool calls**.
+>In these cases, the response may be generated but not provided to the Copilot Agent UI.
+>This is a known issue in Visual Studio Copilot, not related to Telerik MCP servers or AI tools, and does not reproduce in VS Code.
+>For more details, see the related Visual Studio Developer Community issue:  
+>https://developercommunity.visualstudio.com/t/Copilot-stopped-working-after-latest-upd/10936456
+>
+>Microsoft has acknowledged the issue and marked it as **Fixed - Pending Release**. A future Visual Studio update is expected to resolve it.
+
 ## Usage
 
 To use the Telerik MCP Server:
@@ -160,5 +175,4 @@ This setup allows you to use the Telerik AI Coding Assistant without cloud-based
 
 ## See Also
 
-* [Telerik WinForms GitHub Copilot Extension]({%slug ai-copilot-extension%})
 * [AI Coding Assistant Overview]({%slug ai-overview%})

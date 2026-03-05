@@ -16,7 +16,7 @@ RadProperty encapsulates properties used in RadObject and supports [dependency p
 
 The RadProperty __AddOwner__ method associates the owner's type and potentially merges the owners metadata. 
 
-The static RadProperty __Register__ method creates an instance of a RadProperty and is used to make the property known to TPF. Typically the property is then wrapped in a standard CLR style property as a convenience. In the wrapper property, RadObject methods __GetValue__ and __SetValue__ communicate with TPF. The example below shows a "phone" property being registered, and then being wrapped as a standard CLR string property. Note: The standard naming convention for dependency properties is <Property name> + "Property".
+The static RadProperty __Register__ method creates an instance of a RadProperty and is used to make the property known to TPF. Typically the property is then wrapped in a standard CLR style property as a convenience. In the wrapper property, RadObject methods __GetValue__ and __SetValue__ communicate with TPF. The example below shows a "phone" property being registered, and then being wrapped as a standard CLR string property. Note: The standard naming convention for dependency properties is &lt;Property name&gt; + "Property".
 
 {{source=..\SamplesCS\TPF\ClassHierarchy\RadPropertyForm.cs region=RadProperty}} 
 {{source=..\SamplesVB\TPF\ClassHierarchy\RadPropertyForm.vb region=RadProperty}} 

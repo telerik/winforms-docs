@@ -12,8 +12,6 @@ res_type: kb
 |----|----|----|----|
 |Q2 2015|RadButton for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|November 05, 2015|
 
-# Notification Button
-
 ## Problem
 
 This article demonstrates how to create a notification button.

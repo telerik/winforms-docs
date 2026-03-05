@@ -15,6 +15,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Changing Expander Icon Color When the RadTreeView is Disabled UI for WinForms]({%slug treeview-change-disabled-icon-color%})|
 |[Changing the text color of a disabled RadTextBox]({%slug changing-the-text-color-of-a-disabled-radtextbox%})|
 |[Enabling Drag and Drop with MultiSelect in RadTreeView]({%slug treeview-drag-drop-preserve-multiselection%})|
 |[Find a RadTreeNode by the Value]({%slug treeview-find-node-by-value%})|

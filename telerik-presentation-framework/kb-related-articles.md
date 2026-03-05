@@ -98,6 +98,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Using RadControls for WinForms inside a WinForms validation process]({%slug using-radcontrols-for-winforms-inside-a-winforms-validation-process%})|
 |[Using RadControls for WinForms with inherited forms]({%slug using-radcontrols-for-winforms-with-inherited-forms%})|
 |[Using RadEditor for ASP.NET AJAX in a Windows application]({%slug using-radeditor-for-asp-net-ajax-in-a-windows-application%})|
+|[Version Upgrade]({%slug versions-upgrade%})|
 |[WinForms Converter crashes with Visual Studio 15.8]({%slug troubleshoot-winforms-converter%})|
 |[Wrapping a .NET user control as an ActiveX]({%slug wrapping-a-net-user-control-as-an-activex%})|
 

@@ -112,32 +112,35 @@ private void BingProvider_CalculateRouteError(object sender, CalculateRouteError
 private void BingProvider_TruckRoutingCompleted(object sender, RoutingCompletedEventArgs e)
 {
     List<Telerik.WinControls.UI.Map.PointG> points = new List<PointG>();
-    
-    foreach (double[] coordinatePair in e.Route.RoutePath.Line.Coordinates)
+    foreach (var route in e.Routes)
     {
-        PointG point = new PointG(coordinatePair[0], coordinatePair[1]);
-        points.Add(point);
+        foreach (double[] coordinatePair in route.RoutePath.Line.Coordinates)
+        {
+            PointG point = new PointG(coordinatePair[0], coordinatePair[1]);
+            points.Add(point);
+        }
+
+        RectangleG boundingRectangle = new RectangleG(route.BBox[2], route.BBox[1],
+            route.BBox[0], route.BBox[3]);
+        MapRoute routeElement = new MapRoute(points, boundingRectangle);
+        routeElement.BorderColor = Color.Blue;
+        routeElement.BorderWidth = 5;
+        MapPin start = new MapPin(new PointG(route.RouteLegs[0].ActualStart.Coordinates[0],
+            route.RouteLegs[0].ActualStart.Coordinates[1]));
+        start.BackColor = Color.White;
+        start.BorderColor = Color.Green;
+        start.BorderWidth = 2f;
+        MapPin end = new MapPin(new PointG(route.RouteLegs[route.RouteLegs.Length - 1].ActualEnd.Coordinates[0],
+            route.RouteLegs[route.RouteLegs.Length - 1].ActualEnd.Coordinates[1]));
+        end.BackColor = Color.White;
+        end.BorderColor = Color.Red;
+        end.BorderWidth = 2f;
+
+        this.radMap1.MapElement.Layers[0].Add(routeElement);
+        this.radMap1.MapElement.Layers[0].Add(start);
+        this.radMap1.MapElement.Layers[0].Add(end);
     }
     
-    RectangleG boundingRectangle = new RectangleG(e.Route.BBox[2], e.Route.BBox[1], 
-        e.Route.BBox[0], e.Route.BBox[3]);
-    MapRoute routeElement = new MapRoute(points, boundingRectangle);
-    routeElement.BorderColor = Color.Blue;
-    routeElement.BorderWidth = 5;
-    MapPin start = new MapPin(new PointG(e.Route.RouteLegs[0].ActualStart.Coordinates[0], 
-        e.Route.RouteLegs[0].ActualStart.Coordinates[1]));
-    start.BackColor = Color.White;
-    start.BorderColor = Color.Green;
-    start.BorderWidth = 2f;
-    MapPin end = new MapPin(new PointG(e.Route.RouteLegs[e.Route.RouteLegs.Length - 1].ActualEnd.Coordinates[0], 
-        e.Route.RouteLegs[e.Route.RouteLegs.Length - 1].ActualEnd.Coordinates[1]));
-    end.BackColor = Color.White;
-    end.BorderColor = Color.Red;
-    end.BorderWidth = 2f;
-    
-    this.radMap1.MapElement.Layers[0].Add(routeElement);
-    this.radMap1.MapElement.Layers[0].Add(start);
-    this.radMap1.MapElement.Layers[0].Add(end);
 }
 
 

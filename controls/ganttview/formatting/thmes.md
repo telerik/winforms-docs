@@ -12,7 +12,7 @@ position: 7
 
 This help article will demonstrate a step by step tutorial how to customize the `ControlDefault` theme for __RadGanttView__
 
-1. Open [Visual Style Builder] ({%slug winforms/tools/visual-style-builder/starting-vsb%})
+1. Open [Visual Style Builder]({%slug winforms/tools/visual-style-builder/starting-vsb%})
 2. Export the built-in themes in a specific folder by selecting `File` >> `Export Built-in Themes`.
 3. Load a desired theme from the just exported files by selecting `File` >> `Open Package`.
 4. Expand __RadGanttView__ and select the `GanttViewSummaryMiddleElement`. 

@@ -93,15 +93,15 @@ A **ChatTextMessage** represents a single text message by a certain author and s
 ````C#
             
 this.radChat1.Author = new Author(Properties.Resources.nancy1, "Nancy");
-Author author2 = new Author(Properties.Resources.andrew1,"Andrew");
- 
-ChatTextMessage message1 = new ChatTextMessage("Hello", author2,DateTime.Now.AddHours(1));
+Author author2 = new Author(Properties.Resources.andrew1, "Andrew");
+
+ChatTextMessage message1 = new ChatTextMessage("Hello", author2, DateTime.Now.AddHours(1));
 this.radChat1.AddMessage(message1);
-            
-ChatTextMessage message2 = new ChatTextMessage("Hi", this.radChat1.Author,DateTime.Now.AddHours(1).AddMinutes(10));
+
+ChatTextMessage message2 = new ChatTextMessage("Hi", this.radChat1.Author, DateTime.Now.AddHours(1).AddMinutes(10));
 this.radChat1.AddMessage(message2);
-            
-ChatTextMessage message3 = new ChatTextMessage("How are you?", author2,DateTime.Now.AddHours(3));
+
+ChatTextMessage message3 = new ChatTextMessage("How are you?", author2, DateTime.Now.AddHours(3));
 this.radChat1.AddMessage(message3);
 
 ````
@@ -137,12 +137,12 @@ A **ChatMediaMessage** represents an image message by a certain author and sent 
 
 ````C#
             
-ChatMediaMessage mediaMessage = new ChatMediaMessage(Properties.Resources.TV_car1, new Size(300, 200), null, this.radChat1.Author, DateTime.Now);
+ChatMediaMessage mediaMessage = new ChatMediaMessage(Properties.Resources.TV_car1, new Size(300, 200), this.radChat1.Author, DateTime.Now, null);
 this.radChat1.AddMessage(mediaMessage);
 
 ````
 ````VB.NET
-Dim mediaMessage As ChatMediaMessage = New ChatMediaMessage(My.Resources.TV_car1, New Size(300, 200), Nothing, Me.radChat1.Author, DateTime.Now)
+Dim mediaMessage As ChatMediaMessage = New ChatMediaMessage(My.Resources.TV_car1, New Size(300, 200), Me.radChat1.Author, DateTime.Now, Nothing)
 Me.radChat1.AddMessage(mediaMessage)
 
 ```` 

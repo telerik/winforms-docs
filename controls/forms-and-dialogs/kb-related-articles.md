@@ -19,6 +19,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Close Application after Closing All RadTabbedForms]({%slug close-application-after-closing-the-last-tabbedform%})|
 |[Customizing RadMessageBox with custom theme]({%slug customizing-radmessagebox-with-custom-theme%})|
 |[How to Hide the New Tab Button for the Popped out Forms]({%slug tabbedform-keep-show-new-tab-button%})|
+|[How to use RadTitleBar on a standard MS Form/RadForm]({%slug titlebar-on-form%})|
 |[RadForm is Not Recognized in Solution Explorer]({%slug radform-is-not-recognized%})|
 |[Resizing an ActiveX control in RadForm]({%slug resizing-an-activex-control-in-radform%})|
 

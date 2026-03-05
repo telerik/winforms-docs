@@ -21,7 +21,7 @@ The following functionality is supported in the __RadRichTextEditor__:
 
 The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo),[HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).      
 
-[Other customization options](#othercustomizationoptions) include setting the tooltip format and detecting the click of hyperlinks.
+[Other customization options](#other-customization-options) include setting the tooltip format and detecting the click of hyperlinks.
       
 ## HyperlinkInfo
 
@@ -77,7 +77,7 @@ You can also use the overloaded methods for inserting a hyperlink:
 
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, string hyperlinkText, StyleDefinition hyperlinkStyle) - insert a hyperlink using a custom style, different from the default blue font color and single underline;
             
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, IEnumerable<Inline> inlines) - insert a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is bold or there is an image inside the hyperlink;            
+* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, IEnumerable&lt;Inline&gt; inlines) - insert a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is bold or there is an image inside the hyperlink;            
 
 * public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo) - create a hyperlink from the currently selected part of the document;
             

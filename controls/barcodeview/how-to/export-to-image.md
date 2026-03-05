@@ -14,16 +14,17 @@ position: 0
 
 You can export the **RadBarcodeView** content by using one of the following overloads of the **ExportToImage** method:
 
-* **ExportToImage()** - Exports the barcode with the current dimentions of the control.
-ExportToImage(int width, int height) 	Layouts the barcode using the provided dimentions and exports it to an image.
+* **Image ExportToImage()**: Exports the barcode with the current dimensions of the control.
+  
+* **Image ExportToImage(int width, int height)**: Layouts the barcode using the provided dimensions and exports it to an image.
 
-* **ExportToImage(Stream stream, Size size)** - Layouts the barcode using the provided size and exports it to the specified stream.
+* **void ExportToImage(Stream stream, Size size)**: Layouts the barcode using the provided size and exports it to the specified stream.
 
-* **ExportToImage(string filePath, Size size)** - Layouts the barcode using the provided size and exports it to the specified file location.
+* **void ExportToImage(string filePath, Size size)**: Layouts the barcode using the provided size and exports it to the specified file location.
 
-* **ExportToImage(Stream stream, Size size, ImageFormat imageFormat)** - Layouts the barcode using the provided size and exports it to the specified stream in the specified image format.
+* **void ExportToImage(Stream stream, Size size, ImageFormat imageFormat)**: Layouts the barcode using the provided size and exports it to the specified stream in the specified image format.
 
-* **ExportToImage(string filePath, Size size, ImageFormat imageFormat)** - Layouts the barcode using the provided size and exports it to the specified file location in the specified image format.
+* **void ExportToImage(string filePath, Size size, ImageFormat imageFormat)**: Layouts the barcode using the provided size and exports it to the specified file location in the specified image format.
 
 #### Export to Image
 

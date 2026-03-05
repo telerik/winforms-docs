@@ -111,14 +111,16 @@ Next, you should build your solution and then ILMerge the built application exec
 
 >tip: This commands will work in case the application executable and the Telerik assemblies are contained in the ILMerge tool folder. In any other case, you will need to include the full path to the assemblies/executables. In addition, the Telerik assemblies that should be given as parameters, should be those referenced by your application.
 
-    ilmerge /target:winexe /out:MergedApplicationExecutable.exe ApplicationExecutable.exe TelerikCommon.dll Telerik.WinControls.UI.dll Telerik.WinControls.dll
-            
-
+````XML
+    ilmerge /target:winexe /out:MergedApplicationExecutable.exe ApplicationExecutable.exe TelerikCommon.dll Telerik.WinControls.UI.dll Telerik.WinControls.dll         
+````
 
 
 >If the referenced assemblies are .NET 4.0 assemblies, you need to specify the targetplatform also:
-   
+
+````XML   
     ILMerge.exe /target:winexe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework\v4.0.30319" /out:MergedApplicationExecutable.exe AppliocationExecutable.exe Telerik.WinControls.dll Telerik.WinControls.UI.dll TelerikCommon.dll
+````
             
 >note In case you encounter an error for duplicated types, please use the **/allowDup** flag:
 >

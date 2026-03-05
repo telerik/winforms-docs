@@ -99,6 +99,67 @@ Me.RadPictureBox1.SvgImage = RadSvgImage.FromFile("..//..//PictureBox//emoticon-
 
 ![WinForms RadPictureBox Load an Image](images/picturebox-getting-started002.png)
 
+### ImageLoaded Event
+
+The **ImageLoaded** event is fired when an image is successfully loaded into the **RadPictureBox** control, whether from a file or from the clipboard. As of Q1 2026, this event provides detailed information about the loaded image through the **PictureBoxImageLoadedEventArgs** class. 
+
+#### Event Arguments
+
+The **PictureBoxImageLoadedEventArgs** class exposes the following useful properties:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| **ImageKind** | ImageKind | Gets the kind of image that was loaded (Raster or Vector). |
+| **LoadContext** | LoadImageContext | Gets the context from which the image was loaded (File or Clipboard). |
+| **FilePath** | string | Gets the file path from which the image was loaded. This property is valid only when LoadContext is LoadImageContext.File. |
+
+>note The event handler signature uses the base `EventArgs` type. To access the properties listed above, you need to cast the event arguments to `PictureBoxImageLoadedEventArgs`.
+
+#### Example Usage
+
+The following example demonstrates how to use the **ImageLoaded** event to update the window title with information about the loaded image:
+
+````C#
+private void RadPictureBox1_ImageLoaded(object sender, EventArgs e)
+{
+    if (e is PictureBoxImageLoadedEventArgs args)
+    {
+        string title = "Image Viewer";
+
+        if (args.LoadContext == LoadImageContext.File && !string.IsNullOrEmpty(args.FilePath))
+        {
+            var fileInfo = new FileInfo(args.FilePath);
+            title = $"Image Viewer - {fileInfo.Name} ({args.ImageKind})";
+        }
+        else if (args.LoadContext == LoadImageContext.Clipboard)
+        {
+            title = $"Image Viewer - Clipboard Image ({args.ImageKind})";
+        }
+        
+        this.Text = title;
+    }
+}
+
+````
+````VB.NET
+Private Sub RadPictureBox1_ImageLoaded(sender As Object, e As EventArgs)
+    Dim args As PictureBoxImageLoadedEventArgs = TryCast(e, PictureBoxImageLoadedEventArgs)
+    If args IsNot Nothing Then
+        Dim title As String = "Image Viewer"
+        
+        If args.LoadContext = LoadImageContext.File AndAlso Not String.IsNullOrEmpty(args.FilePath) Then
+            Dim fileInfo As New FileInfo(args.FilePath)
+            title = $"Image Viewer - {fileInfo.Name} ({args.ImageKind})"
+        ElseIf args.LoadContext = LoadImageContext.Clipboard Then
+            title = $"Image Viewer - Clipboard Image ({args.ImageKind})"
+        End If
+        
+        Me.Text = title
+    End If
+End Sub
+
+````
+
 
 ## See Also
 

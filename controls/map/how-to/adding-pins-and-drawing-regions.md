@@ -95,7 +95,7 @@ public class CustomMapInputBehavior : MapInputBehavior
                     MapPolygon pol = element as MapPolygon;
                     if (pol != null)
                     {
-                        points.AddRange(pol.Points);
+                        points.AddRange(pol.OuterBoundary);
                     }
                 }
                 points.Add(location);
@@ -138,7 +138,7 @@ Public Class CustomMapInputBehavior
                     End If
                     Dim pol As MapPolygon = TryCast(element, MapPolygon)
                     If pol IsNot Nothing Then
-                        points.AddRange(pol.Points)
+                        points.AddRange(pol.OuterBoundary)
                     End If
                 Next
                 points.Add(location)

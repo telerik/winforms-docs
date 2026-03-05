@@ -60,7 +60,7 @@ private void RadSlideView1_TemplateUpdated(object sender, TemplateUpdatedEventAr
     
 ```` 
 
->note For more detailed information please refer to [Unbound mode]({%slug slideview-unbound-mode%}).
+>note For more detailed information please refer to [Unbound mode](#unbound-mode).
 
 >important TemplateUpdate event can be used in both bound/unbound mode.
 

@@ -61,6 +61,7 @@ bool UseGridColors – Controls whether the report uses the header colors from R
 3. Set properties controlling format and appearance:
     
  ````C#
+ 
 report.AllMargins = 1;  
 report.FitToPageSize = true;  
 report.RepeatTableHeader = true; 

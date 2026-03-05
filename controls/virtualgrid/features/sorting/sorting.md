@@ -32,6 +32,31 @@ Me.RadVirtualGrid1.AllowSorting = True
 
 ![WinForms RadVirtualGrid AllowMultiColumnSorting](images/virtualgrid-sorting002.png)
 
+
+#### Disable Natural Sorting
+
+When sorting is enabled, the user can click on the column headers to control the sorting order. RadVirtualGrid supports three orders: __Ascending, Descending, and None (no sort)__. Since R1 2026 columns you can control whether the user will cycle through no sort when clicking on the header cell or whether once sorted the column cannot be "unsorted". This functionality can be enabled by using the __SetColumnAllowNaturalSort()__ method. This method accept two parameters, the first one is the column index and the second one enable/disable the algorithm. Here is how it works:
+
+
+* __true (default)__: Clicking the header cycles through __None → Ascending → Descending → None__. Users can return to the natural (unsorted) order by clicking three times.
+  
+* __false__ : Clicking the header cycles through __Ascending → Descending → Ascending__. Users cannot return to unsorted state. Sorting always remains active.
+
+
+{{source=..\SamplesCS\VirtualGrid\Sorting\VirtualGridSorting.cs region=AllowNaturalSorting}} 
+{{source=..\SamplesVB\VirtualGrid\Sorting\VirtualGridSorting.vb region=AllowNaturalSorting}}
+
+````C#
+this.radVirtualGrid1.MasterViewInfo.SetColumnAllowNaturalSort(0, false);
+
+````
+````VB.NET
+Me.RadVirtualGrid1.MasterViewInfo.SetColumnAllowNaturalSort(0, False)
+
+```` 
+
+![WinForms RadVirtualGrid AllowNaturalSorting](images/virtualgrid-sort-allownaturalsort.gif)
+
 #### Enabling multiple columns sorting
 
 {{source=..\SamplesCS\VirtualGrid\Sorting\VirtualGridSorting.cs region=MultiColumnSorting}} 
@@ -314,6 +339,6 @@ End Class
 
  
 
-# See Also
+## See Also
 * [Setting Sorting Programmatically]({%slug winforms/virtualgrid/sorting/setting-sorting-programmatically%})
 

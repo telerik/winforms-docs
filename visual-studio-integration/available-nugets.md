@@ -16,9 +16,12 @@ Telerik UI for WinForms comes with several different packages that can be [insta
 
 The Telerik assemblies are built against [different versions]({%slug assemblies-version%}) of .NET starting from .NET 4 to the latest official .NET. You should pick up this version of the NuGet package to install in your project that corresponds to the Target Framework that you are using in your project and that is available on your computer. 
 
->important .NET 2.0 is last supported in the NuGet package version 2022.2.622.          
-> .NET 4.0 is last supported in the NuGet package version 2024.1.312.        
-> .NetCore is last supported in the NuGet package version 2024.1.312.    
+>important .NET 2.0 is last supported in the NuGet package version 2022.2.622.   
+> .NET 5 is last supported in the NuGet package version 2022.3.1109.
+> .NET 4.0 is last supported in the NuGet package version 2024.1.312.    
+> .NetCore is last supported in the NuGet package version 2024.1.312.
+> .NET 7 is last supported in the NuGet package version 2024.3.924.
+> .NET 6 is last supported in the NuGet package version 2025.1.211.
 
 ## Full Packages
 
@@ -26,9 +29,8 @@ The Telerik assemblies are built against [different versions]({%slug assemblies-
 
 * `UI.for.WinForms.AllControls.Net462`
 * `UI.for.WinForms.AllControls.Net48`
-* `UI.for.WinForms.AllControls.Net60`
-* `UI.for.WinForms.AllControls.Net70`
 * `UI.for.WinForms.AllControls.Net80`
+* `UI.for.WinForms.AllControls.Net90`
 * `UI.for.WinForms.AllControls` : Contains all available [Telerik .NET Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}) 
 
 Each of these packages contains all Telerik UI for WinForms assemblies for the corresponding .NET Framework/ .NET Core/ .NET version. 

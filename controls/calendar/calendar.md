@@ -48,4 +48,4 @@ __RadCalendar__ supports all common features you would find in the standard Mont
 ## See Also
 
 * [Getting Started]({%slug winforms/calendar/getting-started%})
-* [Localization] ({%slug winforms/calendar/localization%})
+* [Localization]({%slug winforms/calendar/localization%})

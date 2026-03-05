@@ -12,11 +12,11 @@ res_type: kb
 |----|----|----|----|
 |2015.1.331|RadGridView for WinForms|[Hristo Merdjanov](https://www.telerik.com/blogs/author/hristo-merdjanov)|April 27, 2015|
 
-# Problem
+## Problem
  
 Due to performance considerations, the **RadGridView** bound to an object-relational hierarchy supports CRUD operations only for its first level. The following example demonstrates how this functionality can be extended and CRUD be implemented for the inner levels as well.
  
-# Solution
+## Solution
  
 Keep track of the changes and update the data source object accordingly. This can be accomplished by handling the following events:
  

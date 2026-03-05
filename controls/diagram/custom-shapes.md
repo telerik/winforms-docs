@@ -55,9 +55,9 @@ End Class
             
 RadDiagramShape shape1 = new RadDiagramShape()
 {
-    ShapeText = "",
+    Text = "",
     ElementShape = new MyShape(),
-    InternalElementColor = System.Drawing.Color.LightBlue
+    BackColor = System.Drawing.Color.LightBlue
 };
 shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 80);
 radDiagram1.AddShape(shape1);
@@ -65,9 +65,9 @@ radDiagram1.AddShape(shape1);
 ````
 ````VB.NET
 Dim shape1 As New RadDiagramShape() With { _
-    .ShapeText = "", _
+    .Text = "", _
     .ElementShape = New MyShape(), _
-    .InternalElementColor = System.Drawing.Color.LightBlue _
+    .BackColor = System.Drawing.Color.LightBlue _
 }
 shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 80)
 '#Region ""

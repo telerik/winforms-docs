@@ -16,7 +16,7 @@ The following article list Knowledge Base articles related to this section of co
 |KB Article|
 |----|
 |[Extract the Words Added to the Dictionary in RadSpellChecker]({%slug extract-words-added-to-dictionary%})|
-|[How to Hide the 'Add to dictionary' Context Menu Item]({%slug hide-add-to-dictionary-context-menu-item%})|
+|[How to Hide the Add to dictionary Context Menu Item]({%slug hide-add-to-dictionary-context-menu-item%})|
 |[Initial Spell-Checking Delay in RadSpellChecker]({%slug radspellchecker-initial-delay%})|
 
 ## See Also

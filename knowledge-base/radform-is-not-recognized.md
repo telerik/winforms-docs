@@ -25,7 +25,7 @@ Sometimes, when a **RadForm** is added, it does not show up as a design componen
 
 Usually, the issue is caused by some settings applied to Visual Studio and it may not be reproducible on a fresh installation and then get reproducible when the developer logs in to the Microsoft account and settings synced. 
 
-The problem is that when a new form is added the **SubType** is not set as Form, so the designer does not recognize it as such. The solution is to manually edit the *.vbproj/*.csproj file and add **<SubType>Form</SubType>** to the Form and Designer files. For example: 
+The problem is that when a new form is added the **SubType** is not set as Form, so the designer does not recognize it as such. The solution is to manually edit the .vbproj/.csproj file and add `<SubType>Form</SubType>` to the Form and Designer files. For example: 
 
 ```XML
     <Compile Include="RadForm1.vb">

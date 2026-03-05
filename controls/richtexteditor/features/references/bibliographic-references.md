@@ -67,7 +67,7 @@ When you click on the "*Insert Citation*" drop down button you will get a list w
 
 ## Using Bibliographic References API
 
-Everything that we can do using UI, we can do in code behind too. All sources reside in __RadDocument.BibliographicSources__ collection. It is of type __ObservableCollection<BibliographicSource>__. What you have to do in order to insert a source is to create an object of the proper type and add it to the collection. The UI will be updated accordingly. This is *true* for updating and removing sources as well.
+Everything that we can do using UI, we can do in code behind too. All sources reside in __RadDocument.BibliographicSources__ collection. It is of type __ObservableCollection&lt;BibliographicSource&gt;__. What you have to do in order to insert a source is to create an object of the proper type and add it to the collection. The UI will be updated accordingly. This is *true* for updating and removing sources as well.
         
 This is how you can add a new source:
 

@@ -81,12 +81,12 @@ To learn more about the __DocumentPosition__ read the [Positioning]({%slug winfo
 * **CopySelectedDocumentElements()**: Copies all selected document elements to a **DocumentFragment** instance.
 * **GetSelectedText()**: Gets the text from the selection. Offers an overload allowing you to specify whether the result should include the bullet or numbering characters in case a paragraph is in a list.
 * **GetSelectedParagraphs()**: Gets the paragraphs included in the selection.
-* **GetSelectedBoxes<T>()**: Enumerates through all inline layout boxes of type T included in the selected ranges.
+* `GetSelectedBoxes<T>()`: Enumerates through all inline layout boxes of type T included in the selected ranges.
 * **GetFullSelectionGeometry()**: Gets a System.Windows.Media.Geometry instance describing the form of the selection.
 * **GetVisibleSelectionGeometry()**: Gets a System.Windows.Media.Geometry instance describing the form of the selection visible in the rectangle passed as a parameter.
 * **CreateDocumentFromSelection()**: Creates a new **RadDocument** instance containing the selected elements.
-* **ContainsAnnotationMarkersOfType<T>()**: Determines whether the selection contains annotation markers of type T.
-* **GetAnnotationMarkersOfType<T>()**: Gets all annotation markers of type T in the selection.
+* `ContainsAnnotationMarkersOfType<T>()`: Determines whether the selection contains annotation markers of type T.
+* `GetAnnotationMarkersOfType<T>()`: Gets all annotation markers of type T in the selection.
 * **GetSelectedSingleInline()**: Gets the selected Inline if it is the only inline selected, otherwise returns null. This method is suitable to check if only an **ImageInline** is selected, for example.
 * **ToString()**: Gets the text from the selected document elements.
 

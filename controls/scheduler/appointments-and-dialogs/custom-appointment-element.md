@@ -127,7 +127,7 @@ End Class
 
 {{endregion}}
 
-2\. Next, it is necessary to replace the default **AppointmentElement** with the custom class. For this purpose, it is necessary to create a [SchedulerElementProvider]({%slug winforms/scheduler/fundamentals/scheduler-element-provider-%}) and override its **CreateElement<T>** method:
+2\. Next, it is necessary to replace the default **AppointmentElement** with the custom class. For this purpose, it is necessary to create a [SchedulerElementProvider]({%slug winforms/scheduler/fundamentals/scheduler-element-provider-%}) and override its **CreateElement&lt;T&gt;** method:
 
 {{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\CustomAppointmentElement.cs region=CustomProvider}}
 {{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentElement.vb region=CustomProvider}}    

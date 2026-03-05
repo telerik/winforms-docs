@@ -18,6 +18,8 @@ The following article list Knowledge Base articles related to this section of co
 |[Exporting FloatingChartShape to Bitmap in RadSpreadsheet for WinForms]({%slug convert-floatingchartshape-to-bitmap-radspreadsheet-winforms%})|
 |[Exporting FloatingImage from RadSpreadsheet Worksheet]({%slug radspreadsheet-export-floatingimage%})|
 |[Fill RadSpreadsheet with DataTable]({%slug fill-spreadsheet-with-datatable%})|
+|[Hide different elements in RadSpreadsheet for WinForms]({%slug spreadsheet-hide-different-elements%})|
+|[Hiding Sheet Selector and Stretching Scrollbar in UI for WinForms Spreadsheet]({%slug spreadsheet-hide-sheet-selector-stretch-scrollbar%})|
 |[How to Access RadSpreadsheet's Editor]({%slug access-editor-in-spreadsheet%})|
 |[How to Show ToolTip for RadSpreadsheet Cell]({%slug spreadsheet-cell-tooltip%})|
 
