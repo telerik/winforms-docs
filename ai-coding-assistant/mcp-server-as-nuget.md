@@ -5,6 +5,7 @@ description: Learn how to add and use the Telerik WinForms MCP Server via a NuGe
 slug: ai-mcp-server-as-a-nuget
 tags: telerik,winforms,ai,ai server,dotnetWF,coding assistant,nuget
 position: 3
+published: false
 ---
 
 # Telerik WinForms MCP Server (NuGet)

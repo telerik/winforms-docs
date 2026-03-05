@@ -3432,4 +3432,8 @@ redirects:
     from: "^/help/winforms/overview\\.html$"
     to: "/devtools/winforms/introduction"
     type: Permanent
+    
+    from: "^/devtools/winforms/documentation/ai-coding-assistant/mcp-server-as-nuget$"
+    to: "/devtools/winforms/documentation/ai-coding-assistant/mcp-server"
+    type: Permanent
 
