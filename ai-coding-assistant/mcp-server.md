@@ -15,41 +15,151 @@ This MCP server enables AI-powered IDEs and tools to generate more accurate, tai
 
 >tip The Telerik WinForms MCP Server works in **Chat**(**Ask**) and **Agent** modes.
 
-## Prerequisites
-
-To use the Telerik WinForms MCP server, you need:
-
-* [Node.js](https://nodejs.org/en) 18 or newer.
-* An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports **MCP tools** (latest version recommended).
-* A [Telerik user account](https://www.telerik.com/account/?_gl=1*rbcezh*_gcl_au*NzA0NDU3NzU1LjE3NTA2NTk3NDY.*_ga*ODUxNTg5NDI5LjE2OTU2NDQ2ODI.*_ga_9JSNBCSF54*czE3NTQ1NDQ5MTQkbzE0NSRnMSR0MTc1NDU3MjMxMiRqMzAkbDAkaDA.).
-* An active [DevCraft or Telerik UI for WinForms license](https://www.telerik.com/purchase/individual/winforms.aspx) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms).
-* A [WinForms application that includes Telerik UI for WinForms](https://docs.telerik.com/devtools/winforms/getting-started/first-steps).
-
 ## Installation
 
-Install the Telerik WinForms MCP server using npm:
+The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is available as a NuGet package. Beginning with **.NET 10** it can be executed directly via the `dnx` command. For .NET 8 and .NET 9 (where `dnx` is not available) you can install it as a local dotnet tool and invoke its executable.
 
-```bash
-npm i @progress/telerik-winforms-mcp@latest
+### Prerequisites
+
+To use the Telerik WinForms MCP server via NuGet, you need:
+
+| Target Runtime | Required SDK | Invocation Method | Notes |
+|----------------|--------------|-------------------|-------|
+| **.NET 10 (Recommended)** | .NET 10 SDK (Preview 6 or newer) | `dnx` dynamic execution | Simplest approach; no prior install step |
+| .NET 8 / .NET 9 | .NET 8 or .NET 9 SDK | Local dotnet tool (`telerik-winforms-assistant.exe`) | `dnx` not supported; install tool manually |
+
+Common requirements:
+
+* An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports MCP tools (latest version recommended).
+* A WinForms project targeting net8.0-windows, net9.0-windows, or net10.0-windows if you want local project context to be part of AI responses.
+* A valid [Telerik license key]({%slug license-key%}).
+
+## Summary of Installation Approaches
+
+| Aspect | .NET 8 / 9 | **.NET 10 (Recommended)** |
+|--------|------------|---------|
+| Availability of `dnx` | Not available | Available |
+| Install Command | `dotnet tool install --tool-path ./.tools Telerik.WinForms.MCP` | None (resolved on demand) |
+| Executable Path | `./.tools/telerik-winforms-assistant.exe` | Handled by `dnx` |
+| .mcp.json Command | `.\\.tools\\telerik-winforms-assistant.exe` | `dnx` |
+| .mcp.json Args | _None_ | `Telerik.WinForms.MCP`, `--yes` |
+| Update Version | Re-run tool install with `--version` or `tool update` | Handled by latest package resolved by `dnx` |
+| Offline Use | Requires prior tool install | Requires prior NuGet cache warm-up |
+
+### Server Installation
+
+#### .NET 10 (Recommended)
+
+No manual install step is needed. The `dnx` command will download and execute the NuGet package on demand.
+
+#### .NET 8 / .NET 9
+
+Install the MCP server as a local tool in your solution root (or another chosen path):
+
+```powershell
+dotnet tool install --tool-path ./.tools Telerik.WinForms.MCP
 ```
 
-### Configuration
+If updating:
+
+```powershell
+dotnet tool update --tool-path ./.tools Telerik.WinForms.MCP
+```
+
+This creates the executable at `./.tools/telerik-winforms-assistant.exe`.
+
+### Server Configuration
+
+#### .NET 10 Configuration (`.mcp.json`)
 
 Use these settings when configuring the server in your MCP client:
 
 | Setting | Value |
 |---------|-------|
-| Package Name | `@progress/telerik-winforms-mcp` |
-| Type | `stdio` (standard input/output transport) |
-| Command | `npx` |
-| Arguments | `-y` |
+| Package Name | `Telerik.WinForms.MCP` |
+| Type | `stdio` |
+| Command | `dnx` |
+| Arguments | `Telerik.WinForms.MCP`, `--yes` |
 | Server Name | `telerik-winforms-assistant` (customizable) |
 
-### License Configuration
+
+#### .NET 8 / .NET 9 Configuration (`.mcp.json`)
+
+Add a `.mcp.json` file to your solution root (or to `%USERPROFILE%` for global usage):
+
+```json
+{
+  "servers": {
+    "telerik-winforms-assistant": {
+      "type": "stdio",
+      "command": ".\\.tools\\telerik-winforms-assistant.exe",
+      "env": {
+        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+      }
+    }
+  }
+}
+```
+
+If you prefer embedding the license string directly:
+
+```json
+"env": {
+  "TELERIK_LICENSE": "YOUR_LICENSE_KEY"
+}
+```
+
+### Workspace-Specific Setup
+
+Add a `.mcp.json` file to your solution (root) folder. Choose the variant that matches your target .NET runtime:
+
+#### .NET 10 Example (using `dnx`)
+```json
+{
+  "servers": {
+    "telerik-winforms-assistant": {
+      "type": "stdio",
+      "command": "dnx",
+      "args": ["Telerik.WinForms.MCP", "--yes"],
+      "env": {
+        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+      }
+    }
+  }
+}
+
+```
+
+#### .NET 8 / .NET 9 Example
+```json
+{
+  "servers": {
+    "telerik-winforms-assistant": {
+      "type": "stdio",
+      "command": ".\\.tools\\telerik-winforms-assistant.exe",
+      "env": {
+        "TELERIK_LICENSE_PATH": "THE_PATH_TO_YOUR_LICENSE_FILE"
+      }
+    }
+  }
+}
+```
+
+You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (see License Configuration section below for details and recommendations). The `inputs` array is optional and not required for current functionality.
+
+After saving the file, restart Visual Studio and enable the `telerik-winforms-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+
+
+### Global Setup
+
+To enable the server globally for all projects, add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`). The same distinction applies: use the executable path for .NET 8/9, or `dnx` for .NET 10.
+
+
+## License Configuration
 
 Add your [Telerik license key]({%slug license-key%}) as an environment parameter in your `mcp.json` file using one of these options:
 
-Option 1: License File Path (Recommended)
+**Option 1: License File Path (Recommended)**
 
  ```json
  "env": {
@@ -59,7 +169,7 @@ Option 1: License File Path (Recommended)
 
 The THE_PATH_TO_YOUR_LICENSE_FILE should point to the telerik-license.txt file, which is usually located in the AppData folder. So, the field often will look like this: "TELERIK_LICENSE_PATH": "%appdata%/Telerik/telerik-license.txt"
 
-Option 2: Direct License Key
+**Option 2: Direct License Key**
 
  ```json
  "env": {
