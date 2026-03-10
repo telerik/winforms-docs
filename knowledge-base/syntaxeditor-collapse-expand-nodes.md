@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Collapse and Expand Nodes in SyntaxEditor for WinForms
 meta_title: How to Collapse and Expand Nodes in SyntaxEditor for WinForms
 slug: collapsing-expanding-all-nodes-syntaxeditor-winforms
-tags: syntaxeditor, ui for winforms, collapse, expand, nodes
+tags: syntax-editor, ui for winforms, collapse, expand, nodes
 res_type: kb
 ticketid: 1680548
 ---
@@ -30,7 +30,8 @@ To collapse or expand all nodes in the SyntaxEditor, use the following code snip
 
 Here is the example code:
 
-```csharp
+```C#
+
 private void radButton1_Click(object sender, EventArgs e)
 {
     // Collapse/Expand all nodes
@@ -43,5 +44,5 @@ private void radButton1_Click(object sender, EventArgs e)
 
 ## See Also
 
-- [SyntaxEditor Overview](https://www.telerik.com/products/winforms/documentation/controls/syntax-editor/overview)
+* [SyntaxEditor Overview](https://www.telerik.com/products/winforms/documentation/controls/syntax-editor/overview)
 
