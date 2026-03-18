@@ -76,7 +76,9 @@ If you add the Telerik components to your project by referencing the Telerik ass
 
 1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys) in your Telerik account.
 
-1. On the Telerik UI for WinForms row, click the **View key** link in the **SCRIPT KEY** column.
+1. Click the __View Script Keys__ button.
+
+1. In the drop down menu, select the __Progress® Telerik® UI for WinForms__ product.
 
     ![Download a Telerik UI for WinForms Script Key](./images/download-script-key.png)
 
