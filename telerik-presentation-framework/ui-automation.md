@@ -28,6 +28,7 @@ Here is a list of the controls which support __UI Automation__.
 * [RadToggleButton]({%slug togglebutton-ui-automation%})
 * [RadRadioButton]({%slug radiobutton-ui-automation%})
 * [RadCheckBox]({%slug checkbox-ui-automation%})
+* [RadTreeView]({%slug treeview-ui-automation%})
 
 ## Enable/Disable UI Automation Globally
 
