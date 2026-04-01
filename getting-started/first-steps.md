@@ -10,7 +10,7 @@ position: 0
 
 # First Steps with Telerik UI for WinForms
 
-This tutorial explains how to use the Telerik UI for WinForms components in a WinForms desktop project. You will create a new application from scratch, learn how to add the UI for WinForms components in Visual Studio and utilize the Telerik NuGet source that lets you download and install all Telerik controls automatically. 
+This tutorial explains how to use the Telerik UI for WinForms components in a WinForms desktop project. You will create a new application from scratch, learn how to add the UI for WinForms components in Visual Studio, and utilize the Telerik NuGet source that lets you download and install all Telerik controls automatically. 
 
 ## Prerequisites
 
@@ -28,11 +28,11 @@ This tutorial explains how to use the Telerik UI for WinForms components in a Wi
 
     1. Log in with your Telerik account and complete the installation.
 
-    After the successful installation of Telerik UI for Winforms, the Installer activates your 30 day free trial. The installer also downloads your license key file, so you can skip the next step and continue with [Step 2: Create a new WinForms Telerik Project](#step-2-create-a-new-winforms-telerik-project).
+    After the successful installation of Telerik UI for WinForms, the Installer activates your 30-day free trial. The installer also downloads your license key file, so you can skip the next step and continue with [Step 2: Create a new WinForms Telerik Project](#step-2-create-a-new-winforms-telerik-project).
 
 ## Step 1: Download Your License Key File
 
-Telerik UI for WinForms suite require license activation through a license key (trial or commercial). To download and install your Telerik [license key file]({%slug license-key%}):
+Telerik UI for WinForms suite requires license activation through a license key (trial or commercial). To download and install your Telerik [license key file]({%slug license-key%}):
 
 1. Go to the <a href="https://www.telerik.com/account/your-licenses/license-keys" target="_blank">License Keys page</a> in your Telerik account.
 1. Click the **Download License Key** button.
@@ -40,7 +40,7 @@ Telerik UI for WinForms suite require license activation through a license key (
 
 This will make the license key available to all Telerik apps that you develop on your local machine.
 
->note To download automatically Telerik license key use [Telerik Visual Studio Extensions]({% slug license-key%}#automatic-license-key-installation).
+>note To download automatically Telerik license key, use [Telerik Visual Studio Extensions]({% slug license-key%}#automatic-license-key-installation).
 
 
 ## Step 2: Create a new WinForms Telerik Project
@@ -51,7 +51,7 @@ In this step, we will create a basic Telerik WinForms project as a starting poin
 
 1. Select the **Telerik C# Windows Forms Application** template, and click the **Next** button. This template should create .NET project. If you want to create .NET Framework project, then choose **Telerik C# Windows Forms Application (Net Framework)** project template.
 
-#### Figure 1: Create new Telerik WinForms project
+#### Figure 1: Create a new Telerik WinForms project
 
 ![Create new project](images/first-steps-create-new-project.png)
 
@@ -75,7 +75,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
 1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the API Keys page displays only a portion of the key.
 
-1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use api-key as the username and your generated API key as the password.
+1. Store the generated NuGet API key, as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use api-key as the username and your generated API key as the password.
 
 >Telerik API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
@@ -322,7 +322,7 @@ Now that you have the Telerik UI for WinForms controls running in your project, 
 
 Telerik UI for WinForms offers AI-powered development assistance through a unified [MCP (Model Context Protocol) server]({%slug ai-overview%}). It delivers intelligent, context-aware guidance directly in your IDE. The unified MCP server integrates with your IDE to provide contextual help and automate repetitive tasks, so you can explore the library more easily and build feature-rich applications faster.
 
-If you are interested in getting started with Telerik AI tool, follow this guide: [Getting Started with the Telerik UI for WinForms AI Coding Assistant]({%slug ai-mcp-server%})
+If you are interested in getting started with the Telerik AI tool, follow this guide: [Getting Started with the Telerik UI for WinForms AI Coding Assistant]({%slug ai-mcp-server%})
 
 ## See Also
 
