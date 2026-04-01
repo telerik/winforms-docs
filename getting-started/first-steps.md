@@ -9,16 +9,15 @@ position: 0
 ---
 
 # First Steps with Telerik UI for WinForms
-This article explains how to get the Telerik UI for WinForms controls in your project and start using them quickly.
-The process consists of the following steps:
 
-- [Start Your Free Trial](#first-steps-with-telerik-ui-for-winforms)
-- [Download the Controls](#download-the-controls)
-- [Create a new WinForms Telerik Project](#create-a-new-winforms-telerik-project)
-- [Add Telerik Control to a Form](#add-telerik-control-to-a-form)
-- [Next Steps](#next-steps)
+This tutorial explains how to use the Telerik UI for WinForms components in a WinForms desktop project. You will create a new application from scratch, learn how to add the UI for WinForms components in Visual Studio, and utilize the Telerik NuGet source that lets you download and install all Telerik controls automatically. 
 
-## Start Your Free Trial
+## Prerequisites
+
+* To download Telerik UI for WinForms packages, you need a [Telerik account](https://www.telerik.com/account/). If you do not have an account, you can [create one](https://www.telerik.com/account/) for free.
+* To build an application, you need an up-to-date [Visual Studio IDE](https://visualstudio.microsoft.com/vs/) installation with a [compatible .NET version]({%slug winforms/installation-deployment-and-distribution/distributions%}) and the Telerik UI for WinForms workload installed.
+
+## Step 0: Start Your Free Trial
 
 * If you already have an [active license](https://www.telerik.com/account/your-licenses) for Telerik UI for WinForms, skip this step and continue with the next step.
 * If you don't have an active license, follow the steps below to activate your free trial:
@@ -29,31 +28,36 @@ The process consists of the following steps:
 
     1. Log in with your Telerik account and complete the installation.
 
-    After the successful installation of Telerik UI for Winforms, the Installer activates your 30 day free trial. The installer also downloads your license key file, so you can skip the next step and continue with [Create a new WinForms Telerik Project](#create-a-new-winforms-telerik-project).
-	
-## Download Your License Key File
+    After the successful installation of Telerik UI for WinForms, the Installer activates your 30-day free trial. The installer also downloads your license key file, so you can skip the next step and continue with [Step 2: Create a new WinForms Telerik Project](#step-2-create-a-new-winforms-telerik-project).
 
-To download and install your Telerik [license key file]({%slug license-key%}):
+## Step 1: Download Your License Key File
+
+Telerik UI for WinForms suite requires license activation through a license key (trial or commercial). To download and install your Telerik [license key file]({%slug license-key%}):
 
 1. Go to the <a href="https://www.telerik.com/account/your-licenses/license-keys" target="_blank">License Keys page</a> in your Telerik account.
 1. Click the **Download License Key** button.
 1. Save the `telerik-license.txt` file to `%AppData%\Telerik\telerik-license.txt`.
 
-This will make the license key available to all Telerik .NET apps that you develop on your local machine.
+This will make the license key available to all Telerik apps that you develop on your local machine.
 
-## Download the Controls
+>note To download automatically Telerik license key, use [Telerik Visual Studio Extensions]({% slug license-key%}#automatic-license-key-installation).
 
-The easiest way to get the controls to your development machine is to use the [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) or to download the automated MSI installer from [your telerik.com account](https://www.telerik.com/account/product-download?product=RCWF). 
 
->caption Figure 1: Download automated (.msi) installer
+## Step 2: Create a new WinForms Telerik Project
 
-![Download automated installer Telerik_UI_for_WinForms_<version>_Dev.msi](images/download-msi.png)
+In this step, we will create a basic Telerik WinForms project as a starting point for your application development:
 
-> If you are not a customer, you can [download a free, fully functional trial](https://www.telerik.com/download-trial-file/v2-b/ui-for-winforms) and the same options will apply to you as well.
+1. Open Visual Studio and select **Create a new project** in the start window.
 
->tip The following article provides step-by-step instructions how to install Telerik UI for WinForms on your computer: [Installing UI for WinForms](http://docs.telerik.com/devtools/winforms/installation-deployment-and-distribution/installing-on-your-computer)
+1. Select the **Telerik C# Windows Forms Application** template, and click the **Next** button. This template should create .NET project. If you want to create .NET Framework project, then choose **Telerik C# Windows Forms Application (Net Framework)** project template.
 
-## Add the Telerik NuGet Server
+#### Figure 1: Create a new Telerik WinForms project
+
+![Create new project](images/first-steps-create-new-project.png)
+
+> Telerik project templates are available in C# and VB for .NET/.NET Framework. 
+
+## Step 3: Add the Telerik NuGet Server
 
 Telerik maintains a NuGet feed with official UI for Telerik UI for WinForms releases. These packages are available for registered users with an active trial or commercial license. Adding the Telerik NuGet server as a source in Visual Studio lets you download and install Telerik packages containing controls and utilities.
 
@@ -71,9 +75,9 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
 1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the API Keys page displays only a portion of the key.
 
-1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use api-key as the username and your generated API key as the password.
+1. Store the generated NuGet API key, as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use api-key as the username and your generated API key as the password.
 
->API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+>Telerik API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
 Next, add the Telerik NuGet feed to Visual Studio:
 
@@ -89,138 +93,222 @@ Next, add the Telerik NuGet feed to Visual Studio:
 
     ![generate-api-key](images/telerik-nuget-feed.png)
 
-## Create a new WinForms Telerik Project
-If you **do not have a project**, run the [Create Project Wizard]({% slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation %})
+## Step 4: Download Telerik UI for WinForms Controls
 
->caption Figure 2: Go to Telerik > UI for WinForms > Create new Telerik project
+The easiest way to get the Telerik UI for WinForms controls to your development machine is to [install them by using nuget package]({% slug winforms/nuget%}) direktly from **NuGet Package Manager** in Visual Studio.
 
-![Run Create Project Wizard](images/installation-deployment-and-distribution-vsx-overview001.png "Run Create Project Wizard")
+1. In Visual Studio and go to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution...**.
 
-This will also automatically add 3 of the most common Telerik dll references - **Telerik.WinControls, Telerik.WinControls.UI and Telerik.Common**.
+2. Install the **UI.for.WinForms.AllControls** package:
+
+![Install the UI.for.WinForms.AllControls](images/first-steps-browse-nuget.png)
+
+>note You can include prerelease versions by selecting the **Include prerelease** checkbox.
+
+After installation, the `UI.for.WinForms.AllControls` package appears under **Packages** in Solution Explorer:
+
+![Install the UI.for.WinForms.AllControls](images/first-steps-installed.png)
+
 		
-## Add Telerik Control to a Form
+## Step 5: Add a Telerik UI for WinForms Control to the RadForm
 
-The final step is to add a Telerik control to your application. As an example we will use a [RadGridView]({% slug winforms/gridview/getting-started %}) control with auto generated coumns.
+After installing Telerik UI for WinForms, the controls get populated in the Visual Studio Toolbox. To add a Telerik component, just drag it from the Toolbox and drop it onto the form.
 
-We will add the __RadGridView__ control from the Toolbox. To do that simply search for __RadGridView__ in the __Toolbox__ and drag it to the surface of the form designer. If you do not see the Toolbox, go to View > Toolbox. Using this method will also automatically add any missing dlls to your project.
+### 5.1 Add RadGridView to the RadForm
+    
+Let's add the [RadGridView]({% slug winforms/gridview/getting-started%}) control. Search for **RadGridView** in the toolbox, then drag it onto the form designer surface.
 
 >caption Figure 3: Add RadGridView from the Toolbox
 
-![Add RadGridView control from the toolbox](images/add-radgridview01.gif)
+![Add RadGridView control from the toolbox](images/first-steps-add-radgridview.gif)
 
-#### Binding to Lists of Objects
-The example below defines a MyObject class containing one integer and two string properties. The next set of code snippets "Creating an List of Objects" creates an array of MyObjects, initializes the array and assigns the array to the DataSource. The MyObject class would typically be placed in its own separate class file and the List creation, initialization and assignment code might be placed at the bottom of the form's Load event handler. 
+That's it - RadGridView control is now added to the form. Next, let's populate the grid with data to display meaningful information.
+
+### 5.2 Bind to BindingList of Custom Object
+
+The example below defines an `Employee` class with several properties and binds a `BindingList<Employee>` to the RadGridView.  
 
 ````C#
-public class MyObject
-    {
-        private int id;
-        private string items;
-        private string serial;
-        
-		public int ID
-        {
-            get { return id; }
-            set { id = value; }
-        }
-        public string Items
-        {
-            get { return items; }
-            set { items = value; }
-        }
-        public string Serial
-        {
-            get { return serial; }
-            set { serial = value; }
-        }
-        public MyObject()
-        {
-
-        }
-    }
+public class Employee
+{
+    public int EmployeeID { get; set; }
+    public string FullName { get; set; }
+    public string JobTitle { get; set; }
+    public string Department { get; set; }
+    public string Country { get; set; }
+    public string TimeZone { get; set; }
+    public string WorkMode { get; set; }
+}
 
 ````
 ````VB.NET
-Public Class MyObject
-    Private id As Integer
-    Private items As String
-    Private serial As String
-
-    Public Property ID As Integer
-        Get
-            Return id
-        End Get
-        Set(ByVal value As Integer)
-            id = value
-        End Set
-    End Property
-
-    Public Property Items As String
-        Get
-            Return items
-        End Get
-        Set(ByVal value As String)
-            items = value
-        End Set
-    End Property
-
-    Public Property Serial As String
-        Get
-            Return serial
-        End Get
-        Set(ByVal value As String)
-            serial = value
-        End Set
-    End Property
-
-    Public Sub New()
-    End Sub
+Public Class Employee
+    Public Property EmployeeID As Integer
+    Public Property FullName As String
+    Public Property JobTitle As String
+    Public Property Department As String
+    Public Property Country As String
+    Public Property TimeZone As String
+    Public Property WorkMode As String
 End Class
 
 ````
 
+Create a `BindingList<Employee>` and assign it to the RadGridView `DataSource` property. Thus, RadGridView will automatically generate columns and populate them with the corresponding data from the data object `Employee`.
 
 ````C#
-List<MyObject> myList = new List<MyObject>();
-myList.Add(new MyObject() { ID = 1, Items = "Monitor", Serial = Guid.NewGuid().ToString() });
-myList.Add(new MyObject() { ID = 2, Items = "Keyboard", Serial = Guid.NewGuid().ToString() });
-myList.Add(new MyObject() { ID = 3, Items = "Mouse", Serial = Guid.NewGuid().ToString() });
-myList.Add(new MyObject() { ID = 4, Items = "System Unit", Serial = Guid.NewGuid().ToString() });
-radGridView1.DataSource = myList;
-radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
+public partial class RadForm1 : Telerik.WinControls.UI.RadForm
+{
+    private BindingList<Employee> employees;
+    public RadForm1()
+    {
+        InitializeComponent();
 
+        employees = new BindingList<Employee>
+        {
+            new Employee
+            {
+                EmployeeID = 84217,
+                FullName = "Luca Bianchi",
+                JobTitle = "Software Developer",
+                Department = "Engineering",
+                Country = "Italy",
+                TimeZone = "EET (UTC+1)",
+                WorkMode = "Remote"
+            },
+             new Employee
+        {
+            EmployeeID = 91354,
+            FullName = "Sofia Ivanova",
+            JobTitle = "Product Manager",
+            Department = "Product",
+            Country = "Bulgaria",
+            TimeZone = "EET (UTC+2)",
+            WorkMode = "Hybrid"
+        },
+            new Employee
+            {
+                EmployeeID = 77529,
+                FullName = "Anna Müller",
+                JobTitle = "UX Designer",
+                Department = "Design",
+                Country = "Germany",
+                TimeZone = "CET (UTC+1)",
+                WorkMode = "On-site"
+            },
+            new Employee
+            {
+                EmployeeID = 99012,
+                FullName = "John Smith",
+                JobTitle = "Prompt Engineer",
+                Department = "AI Research",
+                Country = "USA",
+                TimeZone = "EST (UTC-5)",
+                WorkMode = "Remote"
+            },
+            new Employee
+            {
+                EmployeeID = 73166,
+                FullName = "Noah Duboisa",
+                JobTitle = "Software Engineer",
+                Department = "Engineering",
+                Country = "Japan",
+                TimeZone = "JST (UTC+9)",
+                WorkMode = "On-site"
+            },
+            new Employee
+            {
+                EmployeeID = 55891,
+                FullName = "Carlos García",
+                JobTitle = "DevOps Engineer",
+                Department = "IT",
+                Country = "Spain",
+                TimeZone = "CET (UTC+1)",
+                WorkMode = "Remote"
+            }
+        };
+        this.radGridView1.DataSource = employees;
+        this.radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
+    }
+}
 ````
 ````VB.NET
-Dim myList As List(Of MyObject) = New List(Of MyObject)()
-myList.Add(New MyObject() With {
-        .ID = 1,
-        .Items = "Monitor",
-        .Serial = Guid.NewGuid().ToString()
-})
-myList.Add(New MyObject() With {
-        .ID = 2,
-        .Items = "Keyboard",
-        .Serial = Guid.NewGuid().ToString()
-})
-myList.Add(New MyObject() With {
-        .ID = 3,
-        .Items = "Mouse",
-        .Serial = Guid.NewGuid().ToString()
-})
-myList.Add(New MyObject() With {
-        .ID = 4,
-        .Items = "System Unit",
-        .Serial = Guid.NewGuid().ToString()
-})
-radGridView1.DataSource = myList
-radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
+Partial Public Class RadForm1
+    Inherits Telerik.WinControls.UI.RadForm
+
+    Private employees As BindingList(Of Employee)
+
+    Public Sub New()
+        InitializeComponent()
+
+        employees = New BindingList(Of Employee) From {
+            New Employee With {
+                .EmployeeID = 84217,
+                .FullName = "Luca Bianchi",
+                .JobTitle = "Software Developer",
+                .Department = "Engineering",
+                .Country = "Italy",
+                .TimeZone = "EET (UTC+1)",
+                .WorkMode = "Remote"
+            },
+            New Employee With {
+                .EmployeeID = 91354,
+                .FullName = "Sofia Ivanova",
+                .JobTitle = "Product Manager",
+                .Department = "Product",
+                .Country = "Bulgaria",
+                .TimeZone = "EET (UTC+2)",
+                .WorkMode = "Hybrid"
+            },
+            New Employee With {
+                .EmployeeID = 77529,
+                .FullName = "Anna Müller",
+                .JobTitle = "UX Designer",
+                .Department = "Design",
+                .Country = "Germany",
+                .TimeZone = "CET (UTC+1)",
+                .WorkMode = "On-site"
+            },
+            New Employee With {
+                .EmployeeID = 99012,
+                .FullName = "John Smith",
+                .JobTitle = "Prompt Engineer",
+                .Department = "AI Research",
+                .Country = "USA",
+                .TimeZone = "EST (UTC-5)",
+                .WorkMode = "Remote"
+            },
+            New Employee With {
+                .EmployeeID = 73166,
+                .FullName = "Noah Duboisa",
+                .JobTitle = "Software Engineer",
+                .Department = "Engineering",
+                .Country = "Japan",
+                .TimeZone = "JST (UTC+9)",
+                .WorkMode = "On-site"
+            },
+            New Employee With {
+                .EmployeeID = 55891,
+                .FullName = "Carlos García",
+                .JobTitle = "DevOps Engineer",
+                .Department = "IT",
+                .Country = "Spain",
+                .TimeZone = "CET (UTC+1)",
+                .WorkMode = "Remote"
+            }
+        }
+
+        Me.radGridView1.DataSource = employees
+        Me.radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
+    End Sub
+End Class
 ````
 
-> For this example we also need to ensure we have reference for __System__; __System.Collections.Generic__ and __Telerik.WinControls.UI__ dlls in the RadForm1.Designer.cs.
+To run the application, press `F5`. Congratulations, you created your first application with a Telerik UI for WinForms control!
 
->caption Figure 4: Final result should look like this:
+>caption Figure 2: Here is the final result:
 
-![buttons-dropdownbutton-overview 001](images/gridview-overview.png)
+![gridview-overview](images/gridview-overview.png)
 
 ## Next Steps
 
@@ -230,10 +318,15 @@ Now that you have the Telerik UI for WinForms controls running in your project, 
 * [Preview and Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
 * [Further information]({%slug winforms/getting-started/next-steps%})
 
+## Utilizing the Telerik AI Tools
+
+Telerik UI for WinForms offers AI-powered development assistance through a unified [MCP (Model Context Protocol) server]({%slug ai-overview%}). It delivers intelligent, context-aware guidance directly in your IDE. The unified MCP server integrates with your IDE to provide contextual help and automate repetitive tasks, so you can explore the library more easily and build feature-rich applications faster.
+
+If you are interested in getting started with the Telerik AI tool, follow this guide: [Getting Started with the Telerik UI for WinForms AI Coding Assistant]({%slug ai-mcp-server%})
+
 ## See Also
 
 * [System Requirements](https://www.telerik.com/winforms/tech-sheets/system-requirements)
-* [Download Product Files]({% slug winforms/installation-deployment-and-distribution/download-product-files %})
+* [Download Product Files]({% slug winforms/installation-deployment-and-distribution/download-product-files%})
 * [Predefined Template Applications](https://www.telerik.com/winforms/winforms-guide)
 * [Progress Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
-
