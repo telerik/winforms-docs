@@ -45,22 +45,9 @@ Follow the steps:
 
 You can create a new __AIPromptOutputItem__ instance and fill it with returned response from the AI model. Then, you can populate the __OutputItems__ collection of RadAIPrompt. This will create a new AIPromptOutputVisualItem in the Output view where you can interact with the response.
 
-````C#
 
 <snippet id='aiprompt-getting-started-promptrequest' />
-
-````
-````VB.NET
-Private Sub RadAIPrompt1_PromptRequest(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.AIPrompt.PromptRequestEventArgs)
-    Dim responseAIPromptOutputItemModel As AIPromptOutputItem = New AIPromptOutputItem() With {
-        .Title = "Response from your AI model",
-        .InputText = e.InputText,
-        .ResponseText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-    Me.radAIPrompt1.OutputItems.Add(responseAIPromptOutputItemModel)
-End Sub
-
-````
+<snippet id='aiprompt-getting-started-promptrequest-vb' />
 
 ## User Interaction
 
