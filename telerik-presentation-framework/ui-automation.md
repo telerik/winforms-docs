@@ -18,6 +18,7 @@ Implementing UI Automation for custom WinForms controls requires a distinct appr
 
 Here is a list of the controls which support __UI Automation__. 
 
+* [RadTextBox]({%slug textbox-ui-automation%})
 * [RadGridView]({%slug gridview-ui-automation%})
 * [RadNavigationView]({%slug navigationview-ui-automation%})
 * [RadDropDownList]({%slug dropdown-listcontrol-and-checkeddropdownlist-dropdownlist-ui-automation%})
@@ -29,6 +30,9 @@ Here is a list of the controls which support __UI Automation__.
 * [RadRadioButton]({%slug radiobutton-ui-automation%})
 * [RadCheckBox]({%slug checkbox-ui-automation%})
 * [RadTreeView]({%slug treeview-ui-automation%})
+* [RadForm]({%slug form-ui-automation%})
+* [RadTitleBar]({%slug titleBar-ui-automation%})
+* [RadPanel]({%slug panel-ui-automation%})
 
 ## Enable/Disable UI Automation Globally
 
