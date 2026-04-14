@@ -58,7 +58,7 @@ The table below outlines the __UI Automation__ properties most important for und
 
 ## Supported Control Patterns
 
-The following section outlines the supported automation patterns for the __RadButton__ control and its constituent elements.
+The following section outlines the supported automation patterns for the __RadTitleBar__ control and its constituent elements.
 
 * [Invoke Pattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iinvokeprovider?view=windowsdesktop-9.0)
 * [WindowPattern](https://learn.microsoft.com/en-us/dotnet/api/system.windows.automation.provider.iwindowprovider?view=windowsdesktop-9.0)
