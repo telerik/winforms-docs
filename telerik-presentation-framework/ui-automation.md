@@ -31,7 +31,7 @@ Here is a list of the controls which support __UI Automation__.
 * [RadCheckBox]({%slug checkbox-ui-automation%})
 * [RadTreeView]({%slug treeview-ui-automation%})
 * [RadForm]({%slug form-ui-automation%})
-* [RadTitleBar]({%slug titleBar-ui-automation%})
+* [RadTitleBar]({%slug titlebar-ui-automation%})
 * [RadPanel]({%slug panel-ui-automation%})
 
 ## Enable/Disable UI Automation Globally
