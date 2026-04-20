@@ -8,6 +8,7 @@ published: True
 position: 3 
 ---
 
+
 # Getting Started with WinForms AIPrompt
 
 This article shows how you can start using RadAIPrompt. The following result will be achieved at the end of this tutorial:
@@ -18,11 +19,7 @@ This article shows how you can start using RadAIPrompt. The following result wil
 
 ## Adding Telerik Assemblies Using NuGet
 
-To use `RadAIPrompt` when working with NuGet packages, install the `Telerik.UI.for.WinForms.AllControls` package. The [package target framework version may vary]({%slug winforms-available-nugets%}).
 
-Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
-
->tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
 
 ## Adding Assembly References Manually
 
@@ -33,7 +30,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+
 
 ## Defining the RadAIPrompt
 
@@ -46,7 +43,7 @@ Follow the steps:
 You can create a new __AIPromptOutputItem__ instance and fill it with returned response from the AI model. Then, you can populate the __OutputItems__ collection of RadAIPrompt. This will create a new AIPromptOutputVisualItem in the Output view where you can interact with the response.
 
 
-<snippet id='aiprompt-getting-started-promptrequest' />
+<snippet id='aiprompt-getting-started-promptrequest-cs' />
 <snippet id='aiprompt-getting-started-promptrequest-vb' />
 
 ## User Interaction
@@ -73,16 +70,4 @@ End Sub
 
 ````
 
-## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms AIPrompt Component](https://www.telerik.com/products/winforms/aiprompt.aspx)
-* [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
-* [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)
-* [Telerik UI for WinForms Application Modernization](https://docs.telerik.com/devtools/winforms/winforms-converter/overview)
-* [Telerik UI for WinForms Visual Studio Templates](https://docs.telerik.com/devtools/winforms/visual-studio-integration/visual-studio-templates)
-* [Deploy Telerik UI for WinForms Applications](https://docs.telerik.com/devtools/winforms/deployment-and-distribution/application-deployment)
-* [Telerik UI for WinForms Virtual Classroom(Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/telerik-ui-for-winforms)
-* [Telerik UI for WinForms License Agreement)](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s)
 
-## See Also
-
-* [AIPrompt Button]({%slug aiprompt-prompt-button%})
