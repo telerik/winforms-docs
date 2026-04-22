@@ -3,7 +3,7 @@ name: Documentation Build
 on:
   workflow_dispatch:       # manual trigger
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   download-snippets:
