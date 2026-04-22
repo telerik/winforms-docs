@@ -93,6 +93,7 @@ this.radPivotGrid1.ReloadData();
 
 ````
 ````VB.NET
+
 Dim groupDescription As PropertyGroupDescription = DirectCast(Me.RadPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
 groupDescription.GroupComparer = New NameLengthComparer()
 groupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Ascending
