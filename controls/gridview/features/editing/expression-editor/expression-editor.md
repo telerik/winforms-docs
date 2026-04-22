@@ -11,11 +11,13 @@ previous_url: gridview-expressioneditor-overview
 
 # Expression Editor
 
-__RadExpressionEditor__ is a powerful editor that allows you to build complex expressions using a simple Domain Specific Language, reminiscent of formulas in many popular spreadsheet applications. It provides easy access to a set of predefined functions, operators, constants. You can also access all RadGridView fields.
+`RadExpressionEditor` is a powerful editor that allows you to build complex expressions using a simple Domain Specific Language, reminiscent of formulas in many popular spreadsheet applications. It provides access to a set of predefined functions, operators, and constants. You can also access all RadGridView fields.
 
-Expressions consist of functions, operators, constants, and identifiers (for example, the names of fields, tables, forms, and queries). The Expression Builder enables you to easily look up and insert these components, and thereby enter expressions more quickly and accurately. Expression editor can be started from the context menu of the particular column, or it can be initialized and shown from code. RadExpressionEditor also can be used at design time.
+Expressions consist of functions, operators, constants, and identifiers such as the names of fields and columns. The Expression Builder enables you to look up and insert these components, and enter expressions more quickly and accurately. You can start the expression editor from the context menu of a column, or initialize and show it from code. `RadExpressionEditor` can also be used at design time.
 
-Once shown, RadExpressionEditor automatically loads all available functions, operators and current grid’s fields (columns). In addition, every entered expression is parsed and evaluated. A preview of the result is shown (for the current row of the grid) and the confirmation button is enabled only if there is a valid expression. Please note that the preview is shown only if there is at least one row at run time.
+Once shown, `RadExpressionEditor` automatically loads all available functions, operators, and current grid fields (columns). Every entered expression is parsed and evaluated. A preview of the result is shown for the current row, and the confirmation button is enabled only if the expression is valid.
+
+> The result preview is available only when at least one row exists at run time.
 
 ![WinForms RadGridView Expression Editor](images/gridview-expressioneditor-overview001.png)
 
@@ -36,6 +38,11 @@ Once shown, RadExpressionEditor automatically loads all available functions, ope
 1. __Result Preview:__ A preview of the calculated result of the entered expression will be shown. The preview is evaluated as you type, and is shown only if there is a valid expression. The result is calculated for the current row in the DataView.
             
 ## See Also
+
+* [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%})
+
+* [Expression Syntax and Operators]({%slug winforms/gridview/expression-editor/expression-syntax%})
+
 * [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%})
 
 * [Design-time]({%slug winforms/gridview/expression-editor/design-time%})
