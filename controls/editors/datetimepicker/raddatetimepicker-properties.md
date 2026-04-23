@@ -67,7 +67,7 @@ Me.RadDateTimePicker1.NullText = "No date selected"
 
 {{endregion}} 
  
-* __ShowTimePicker:__ this property determines the display of __TimePicker__ in popup element of __RadDateTimePicker__. 
+* __ShowTimePicker:__ Gets or sets a value indicating whether the time picker is displayed alongside the calendar in the drop-down popup of __RadDateTimePicker__. The default value is *false*. When set to *true*, selecting a date in the calendar does not auto-close the popup, allowing the user to also select a time.
 
 {{source=..\SamplesCS\Editors\DateTimePicker2.cs region=ShowTimePicker1}} 
 {{source=..\SamplesVB\Editors\DateTimePicker2.vb region=ShowTimePicker1}} 
@@ -95,7 +95,18 @@ Me.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = True
 * __ThemeName:__ Sets the overall look of the control. Choose from a list of predefined themes or create your own using the __Visual Style Builder__ available from the RadDateTimePicker's __Smart Tag__.
           
 
-* __CalendarSize:__ Gets or sets the size of the **RadCalendar** in the **RadDateTimePicker** drop-down.
+* __CalendarSize:__ Gets or sets the size of the drop-down popup in __RadDateTimePicker__. The default value is *new Size(100, 156)* which applies automatic sizing. Setting a custom value overrides the calculated drop-down dimensions.
+
+#### Setting the CalendarSize property of RadDateTimePicker
+
+````C#
+this.radDateTimePicker1.DateTimePickerElement.CalendarSize = new Size(300, 300);
+
+````
+````VB.NET
+Me.radDateTimePicker1.DateTimePickerElement.CalendarSize = New Size(300, 300)
+
+````
           
 
 * __NullableValue__ is same as the __Value__ property, but the __NullableValue__ property is of type *Nullable DateTime*. It can be *null* – in this case if **RadDateTimePicker** is not selected, it will show its __NullText__. In case **RadDateTimePicker** is selected, it will show the last entered date – this allows the end-user to enter and edit the date.

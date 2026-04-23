@@ -82,7 +82,7 @@ public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
             case RadGridStringId.FilterOperatorNotIsContainedIn: return "NotContainedIn";
             case RadGridStringId.FilterOperatorCustom: return "Custom";
             case RadGridStringId.CustomFilterMenuItem: return "Custom";
-            case RadGridStringId.CustomFilterDialogCaption: return "RadGridView Filter Dialog [{0}]";
+            case RadGridStringId.CustomFilterDialogCaption: return "Filter Dialog [{0}]";
             case RadGridStringId.CustomFilterDialogLabel: return "Show rows where:";
             case RadGridStringId.CustomFilterDialogRbAnd: return "And";
             case RadGridStringId.CustomFilterDialogRbOr: return "Or";
@@ -91,7 +91,7 @@ public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
             case RadGridStringId.CustomFilterDialogCheckBoxNot: return "Not";
             case RadGridStringId.CustomFilterDialogTrue: return "True";
             case RadGridStringId.CustomFilterDialogFalse: return "False";
-            case RadGridStringId.FilterMenuBlanks: return "Empty";
+            case RadGridStringId.FilterMenuBlanks: return "(Blanks)";
             case RadGridStringId.FilterMenuAvailableFilters: return "Available Filters";
             case RadGridStringId.FilterMenuSearchBoxText: return "Search...";
             case RadGridStringId.FilterMenuClearFilters: return "Clear Filter";
@@ -116,6 +116,7 @@ public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
             case RadGridStringId.GroupByThisColumnMenuItem: return "Group by this column";
             case RadGridStringId.UngroupThisColumn: return "Ungroup this column";
             case RadGridStringId.ColumnChooserMenuItem: return "Column Chooser";
+            case RadGridStringId.ShowMenuItem: return "Show Column";
             case RadGridStringId.HideMenuItem: return "Hide Column";
             case RadGridStringId.HideGroupMenuItem: return "Hide Group";
             case RadGridStringId.UnpinMenuItem: return "Unpin Column";
@@ -173,20 +174,23 @@ public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
             case RadGridStringId.ConditionalFormattingPropertyGridEnabled: return "Enabled";
             case RadGridStringId.ConditionalFormattingPropertyGridRowBackColor: return "RowBackColor";
             case RadGridStringId.ConditionalFormattingPropertyGridRowForeColor: return "RowForeColor";
+            case RadGridStringId.ConditionalFormattingPropertyGridRowFont: return "RowFont";
             case RadGridStringId.ConditionalFormattingPropertyGridRowTextAlignment: return "RowTextAlignment";
             case RadGridStringId.ConditionalFormattingPropertyGridTextAlignment: return "TextAlignment";
-            case RadGridStringId.ConditionalFormattingPropertyGridCellFont: return "My Cell Font";
-            case RadGridStringId.ConditionalFormattingPropertyGridCellFontDescription: return "My Font Description";  
+            case RadGridStringId.ConditionalFormattingPropertyGridCellFont: return "CellFont";
+            case RadGridStringId.ConditionalFormattingPropertyGridCellFontDescription: return "Enter the font to be used for the cell.";
             case RadGridStringId.ConditionalFormattingPropertyGridCaseSensitiveDescription: return "Determines whether case-sensitive comparisons will be made when evaluating string values.";
             case RadGridStringId.ConditionalFormattingPropertyGridCellBackColorDescription: return "Enter the background color to be used for the cell.";
             case RadGridStringId.ConditionalFormattingPropertyGridCellForeColorDescription: return "Enter the foreground color to be used for the cell.";
             case RadGridStringId.ConditionalFormattingPropertyGridEnabledDescription: return "Determines whether the condition is enabled (can be evaluated and applied).";
             case RadGridStringId.ConditionalFormattingPropertyGridRowBackColorDescription: return "Enter the background color to be used for the entire row.";
             case RadGridStringId.ConditionalFormattingPropertyGridRowForeColorDescription: return "Enter the foreground color to be used for the entire row.";
+            case RadGridStringId.ConditionalFormattingPropertyGridRowFontDescription: return "Enter the font to be used for the entire row.";
             case RadGridStringId.ConditionalFormattingPropertyGridRowTextAlignmentDescription: return "Enter the alignment to be used for the cell values, when ApplyToRow is true.";
             case RadGridStringId.ConditionalFormattingPropertyGridTextAlignmentDescription: return "Enter the alignment to be used for the cell values.";
             case RadGridStringId.ColumnChooserFormCaption: return "Column Chooser";
-            case RadGridStringId.ColumnChooserFormMessage: return "Drag a column header from the\ngrid here to remove it from\nthe current view.";
+            case RadGridStringId.ColumnChooserFormMessage: return "Drag a column header from the grid here to remove it from the current view.";
+            case RadGridStringId.ColumnChooserFilterTextBoxNullText: return "Filter";
             case RadGridStringId.GroupingPanelDefaultMessage: return "Drag a column here to group by this column.";
             case RadGridStringId.GroupingPanelHeader: return "Group by:";
             case RadGridStringId.PagingPanelPagesLabel: return "Page";
@@ -227,13 +231,13 @@ public class MyEnglishRadGridLocalizationProvider : RadGridLocalizationProvider
             case RadGridStringId.ExpressionFormNotButton: return string.Empty; //if empty, default button image is used
             case RadGridStringId.ExpressionFormOKButton: return "OK";
             case RadGridStringId.ExpressionFormCancelButton: return "Cancel";
-            case RadGridStringId.SearchRowChooseColumns: return "SearchRowChooseColumns"; 
-            case RadGridStringId.SearchRowSearchFromCurrentPosition: return  "SearchRowSearchFromCurrentPosition";
-            case RadGridStringId.SearchRowMenuItemMasterTemplate: return "SearchRowMenuItemMasterTemplate";
-            case RadGridStringId.SearchRowMenuItemChildTemplates: return "SearchRowMenuItemChildTemplates";
-            case RadGridStringId.SearchRowMenuItemAllColumns:return  "SearchRowMenuItemAllColumns";
-            case RadGridStringId.SearchRowTextBoxNullText:return  "SearchRowTextBoxNullText";
-            case RadGridStringId.SearchRowResultsOfLabel:return  "SearchRowResultsOfLabel"; 
+            case RadGridStringId.SearchRowChooseColumns: return "Search in columns";
+            case RadGridStringId.SearchRowSearchFromCurrentPosition: return "Search from current position";
+            case RadGridStringId.SearchRowMenuItemMasterTemplate: return "Master template";
+            case RadGridStringId.SearchRowMenuItemChildTemplates: return "Child templates";
+            case RadGridStringId.SearchRowMenuItemAllColumns: return "All";
+            case RadGridStringId.SearchRowTextBoxNullText: return "Enter text to search";
+            case RadGridStringId.SearchRowResultsOfLabel: return "of";
             case RadGridStringId.SearchRowMatchCase: return "Match case";
         }
         return string.Empty;
@@ -342,7 +346,7 @@ Public Class MyEnglishRadGridLocalizationProvider
             Case RadGridStringId.CustomFilterMenuItem
                 Return "Custom"
             Case RadGridStringId.CustomFilterDialogCaption
-                Return "RadGridView Filter Dialog [{0}]"
+                Return "Filter Dialog [{0}]"
             Case RadGridStringId.CustomFilterDialogLabel
                 Return "Show rows where:"
             Case RadGridStringId.CustomFilterDialogRbAnd
@@ -360,7 +364,7 @@ Public Class MyEnglishRadGridLocalizationProvider
             Case RadGridStringId.CustomFilterDialogFalse
                 Return "False"
             Case RadGridStringId.FilterMenuBlanks
-                Return "Empty"
+                Return "(Blanks)"
             Case RadGridStringId.FilterMenuAvailableFilters
                 Return "Available Filters"
             Case RadGridStringId.FilterMenuSearchBoxText
@@ -409,6 +413,8 @@ Public Class MyEnglishRadGridLocalizationProvider
                 Return "Ungroup this column"
             Case RadGridStringId.ColumnChooserMenuItem
                 Return "Column Chooser"
+            Case RadGridStringId.ShowMenuItem
+                Return "Show Column"
             Case RadGridStringId.HideMenuItem
                 Return "Hide Column"
             Case RadGridStringId.HideGroupMenuItem
@@ -523,14 +529,16 @@ Public Class MyEnglishRadGridLocalizationProvider
                 Return "RowBackColor"
             Case RadGridStringId.ConditionalFormattingPropertyGridRowForeColor
                 Return "RowForeColor"
+            Case RadGridStringId.ConditionalFormattingPropertyGridRowFont
+                Return "RowFont"
             Case RadGridStringId.ConditionalFormattingPropertyGridRowTextAlignment
                 Return "RowTextAlignment"
             Case RadGridStringId.ConditionalFormattingPropertyGridTextAlignment
                 Return "TextAlignment"
             Case RadGridStringId.ConditionalFormattingPropertyGridCellFont
-                Return "My Cell Font"
+                Return "CellFont"
             Case RadGridStringId.ConditionalFormattingPropertyGridCellFontDescription
-                Return "My Font Description"
+                Return "Enter the font to be used for the cell."
             Case RadGridStringId.ConditionalFormattingPropertyGridCaseSensitiveDescription
                 Return "Determines whether case-sensitive comparisons will be made when evaluating string values."
             Case RadGridStringId.ConditionalFormattingPropertyGridCellBackColorDescription
@@ -543,6 +551,8 @@ Public Class MyEnglishRadGridLocalizationProvider
                 Return "Enter the background color to be used for the entire row."
             Case RadGridStringId.ConditionalFormattingPropertyGridRowForeColorDescription
                 Return "Enter the foreground color to be used for the entire row."
+            Case RadGridStringId.ConditionalFormattingPropertyGridRowFontDescription
+                Return "Enter the font to be used for the entire row."
             Case RadGridStringId.ConditionalFormattingPropertyGridRowTextAlignmentDescription
                 Return "Enter the alignment to be used for the cell values, when ApplyToRow is true."
             Case RadGridStringId.ConditionalFormattingPropertyGridTextAlignmentDescription
@@ -550,7 +560,9 @@ Public Class MyEnglishRadGridLocalizationProvider
             Case RadGridStringId.ColumnChooserFormCaption
                 Return "Column Chooser"
             Case RadGridStringId.ColumnChooserFormMessage
-                Return "Drag a column header from the" & vbLf & "grid here to remove it from" & vbLf & "the current view."
+                Return "Drag a column header from the grid here to remove it from the current view."
+            Case RadGridStringId.ColumnChooserFilterTextBoxNullText
+                Return "Filter"
             Case RadGridStringId.GroupingPanelDefaultMessage
                 Return "Drag a column here to group by this column."
             Case RadGridStringId.GroupingPanelHeader
@@ -635,19 +647,19 @@ Public Class MyEnglishRadGridLocalizationProvider
             Case RadGridStringId.ExpressionFormCancelButton
                 Return "Cancel"
             Case RadGridStringId.SearchRowChooseColumns
-                Return "SearchRowChooseColumns"
+                Return "Search in columns"
             Case RadGridStringId.SearchRowSearchFromCurrentPosition
-                Return "SearchRowSearchFromCurrentPosition"
+                Return "Search from current position"
             Case RadGridStringId.SearchRowMenuItemMasterTemplate
-                Return "SearchRowMenuItemMasterTemplate"
+                Return "Master template"
             Case RadGridStringId.SearchRowMenuItemChildTemplates
-                Return "SearchRowMenuItemChildTemplates"
+                Return "Child templates"
             Case RadGridStringId.SearchRowMenuItemAllColumns
-                Return "SearchRowMenuItemAllColumns"
+                Return "All"
             Case RadGridStringId.SearchRowTextBoxNullText
-                Return "SearchRowTextBoxNullText"
+                Return "Enter text to search"
             Case RadGridStringId.SearchRowResultsOfLabel
-                Return "SearchRowResultsOfLabel"
+                Return "of"
             Case RadGridStringId.SearchRowMatchCase
                 Return "Match case"
         End Select
