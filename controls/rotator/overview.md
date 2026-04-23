@@ -12,7 +12,7 @@ previous_url: rotator-overview
 
 # WinForms Rotator Overview
 
-RadRotator is a multipurpose component for content rotation and personalization. Highly customizable, it delivers high interactivity and user involvement. You can display a series of images, web URLs or any collection of rad elements.
+RadRotator is a multipurpose component for content rotation and personalization. Highly customizable, it delivers high interactivity and user involvement. You can display a series of images, web URLs, or any collection of `RadElement` types.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
@@ -20,7 +20,7 @@ RadRotator is a multipurpose component for content rotation and personalization.
 
 ![WinForms RadRotator Overview](images/rotator-overview001.png)
 
-Animation between frames can be opaque or transparent and the movement can be in any direction. You can adjust the level of granularity and interval between frames.
+The animation between frames supports opacity transitions and directional movement. You can control the number of animation frames through the `AnimationFrames` property and the delay between items through the `Interval` property.
 
 
 ## Telerik UI for WinForms Learning Resources
