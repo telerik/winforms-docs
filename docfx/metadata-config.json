@@ -3,7 +3,8 @@
             "src": [
                 {
                     "files": [
-							        "src/**.dll"
+							        "src/**.dll",
+							        "src/**.XML"
                     ]
                 }
             ],

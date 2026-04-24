@@ -78,9 +78,3 @@ start-docs.sh
 start-docs.sh
 watch.sh
 watch.sh
-.suo
-.baml
-**/bin/
-**/obj/
-**/.vs/
-**.csproj.user
