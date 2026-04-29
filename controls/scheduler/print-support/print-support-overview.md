@@ -78,6 +78,8 @@ Me.RadScheduler1.PrintPreview()
 # See Also
 
 * [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
+
+* [PrintSettingsDialogFactory]({%slug winforms/scheduler/print-support/print-settings-dialog-factory%})
 * [PrintPreviewDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%})
 * [Customize RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/how-to/customize-radprintdocument%})
 * [Views]({%slug winforms/scheduler/views/overview-and-structure%})
