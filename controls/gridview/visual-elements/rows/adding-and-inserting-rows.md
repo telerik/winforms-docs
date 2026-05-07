@@ -13,6 +13,8 @@ previous_url: gridview-rows-adding-and-inserting-rows
 
 When **RadGridView** is in **unbound mode**, you can add new rows to the **Rows** collection.
 
+>caution Adding a **GridViewDataRowInfo** to the **Rows** collection is supported only when RadGridView is in unbound mode. If the grid is data-bound, an **InvalidOperationException** is thrown with the message: "Rows cannot be programmatically added to the RadGridView's rows collection when the control is data-bound." To add rows in bound mode, add the data item to the underlying data source instead.
+
 ## Adding rows to RadGridView
 
 For example, if the grid control contains four columns – [GridViewTextBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewtextboxcolumn%}), [GridViewDecimalColumn]({%slug winforms/gridview/columns/column-types/gridviewdecimalcolumn%}), [GridViewDateTimeColumn]({%slug winforms/gridview/columns/column-types/gridviewdatetimecolumn%}) and [GridViewCheckBoxColumn]({%slug winforms/gridview/columns/column-types/gridviewcheckboxcolumn%}) you can add an empty row as it is demonstrated in the code snippet below.
