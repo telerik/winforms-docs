@@ -149,6 +149,11 @@ End Class
 In order to localize the descriptions of the available functions, you have to load a custom xml file containing all supported functions and their appropriate localized descriptions. For more details, please refer to the following article: [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%}).
           
 ## See Also
+
+* [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%})
+
+* [Expression Syntax and Operators]({%slug winforms/gridview/expression-editor/expression-syntax%})
+
 * [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%})
 
 * [Design-time]({%slug winforms/gridview/expression-editor/design-time%})

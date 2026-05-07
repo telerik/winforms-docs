@@ -19,6 +19,11 @@ At design time you can open __RadExpressionEditor__ by clicking the ellipsis but
 >
 
 ## See Also
+
+* [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%})
+
+* [Expression Syntax and Operators]({%slug winforms/gridview/expression-editor/expression-syntax%})
+
 * [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%})
 
 * [End-user Support]({%slug winforms/gridview/expression-editor/end-user-support%})

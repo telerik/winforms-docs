@@ -13,7 +13,7 @@ previous_url: gridview-expressioneditor-cutomizing-radexpressioneditor
 
 ## Creating custom expression functions
 
-Although Telerik provides a great number of predefined functions, there could be scenarios, which require additional functionality. We provide a mechanism, which allows the developer to create a custom expression method, which can be used in __RadExpressionEditor__ or as a value of the __Expression__ property. In order to do that, create a class that inherits from the __ExpressionContext__ class:
+Although Telerik provides a large number of predefined functions, some scenarios require additional functionality. You can create a custom expression method for use in `RadExpressionEditor` or as a value of the `Expression` property. To do that, create a class that inherits from the `ExpressionContext` class:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=customFunction}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=customFunction}} 
@@ -48,7 +48,7 @@ End Class
 
 {{endregion}} 
 
-Once implemented, the new custom __ExpressionContext__ class can be assigned by using the static __Context__ property:
+Once implemented, assign the new custom `ExpressionContext` class by using the static `Context` property:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=settingCustom}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingCustom}} 
@@ -64,7 +64,7 @@ Telerik.Data.Expressions.ExpressionContext.Context = New CustomExpressionContext
 
 {{endregion}} 
 
-Than the new expression method can be used:
+Then you can use the new expression method:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=settingExpression}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=settingExpression}}
@@ -101,7 +101,7 @@ __RadExpressionEditor__ supports loading functions, operators and constants from
 	</ExpressionItemsList>
 ````
 
-To load prepared XML source file __LoadFromXML__ method should be used as shown bellow:
+To load a prepared XML source file, use the `LoadFromXML` method as shown below:
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=loadingXML}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=loadingXML}} 
@@ -123,7 +123,7 @@ RadExpressionEditorForm.ExpressionItemsList.LoadFromXML(stream_)
 
 ## ExpressionEditorFormCreated event
 
-This event allows you to easily access the expression editor form before it is shown to the user. The following example shows how you can change the BackColor and hide the icon in the title bar: 
+This event fires before the expression editor form is shown. The following example changes the `BackColor` and hides the icon in the title bar: 
 
 {{source=..\SamplesCS\GridView\ExpressionEditor\CustomFunctions.cs region=FormatingExpressionForm}} 
 {{source=..\SamplesVB\GridView\ExpressionEditor\CustomFunctions.vb region=FormatingExpressionForm}}
@@ -161,6 +161,10 @@ Class
 
 
 ## See Also
+
+* [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%})
+
+* [Expression Syntax and Operators]({%slug winforms/gridview/expression-editor/expression-syntax%})
 
 * [Design-time]({%slug winforms/gridview/expression-editor/design-time%})
 
