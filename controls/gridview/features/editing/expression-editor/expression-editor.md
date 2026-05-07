@@ -17,7 +17,9 @@ Expressions consist of functions, operators, constants, and identifiers such as 
 
 Once shown, `RadExpressionEditor` automatically loads all available functions, operators, and current grid fields (columns). Every entered expression is parsed and evaluated. A preview of the result is shown for the current row, and the confirmation button is enabled only if the expression is valid.
 
+>note
 > The result preview is available only when at least one row exists at run time.
+>
 
 ![WinForms RadGridView Expression Editor](images/gridview-expressioneditor-overview001.png)
 
