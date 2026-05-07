@@ -3,7 +3,7 @@ title: Providers
 page_title: Providers - WinForms DateTimePicker Control
 description: Learn about the available mask providers in RadDateTimePicker and how to access and configure them for different date and time input scenarios.
 slug: winforms/editors/datetimepicker/providers
-tags: datetimepicker, providers, maskdatetimeprovider, freeformdatetimeprovider
+tags: datetimepicker, providers, maskeddatetimeprovider, freeformdatetimeprovider
 published: True
 position: 8
 ---
