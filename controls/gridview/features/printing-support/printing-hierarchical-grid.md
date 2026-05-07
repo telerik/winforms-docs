@@ -19,27 +19,8 @@ When bound to hierarchical data __RadGridView__ can print its contents preservin
 
 #### Printing Settings
 
-{{source=..\SamplesCS\GridView\Printing support\PrintingHierarchicalGrid.cs region=PrintingSettings}} 
-{{source=..\SamplesVB\GridView\Printing support\PrintingHierarchicalGrid.vb region=PrintingSettings}} 
-
-````C#
-GridPrintStyle style = new GridPrintStyle();
-style.PrintHierarchy = true;
-style.HierarchyIndent = 20;
-style.ChildViewPrintMode = ChildViewPrintMode.SelectViewToPrint;
-this.radGridView1.PrintStyle = style;
-
-````
-````VB.NET
-Dim style As New GridPrintStyle()
-style.PrintHierarchy = True
-style.HierarchyIndent = 20
-style.ChildViewPrintMode = ChildViewPrintMode.SelectViewToPrint
-Me.RadGridView1.PrintStyle = style
-
-````
-
-{{endregion}} 
+<snippet id='gridview-printinghierarchicalgrid-printingsettings-cs' />
+<snippet id='gridview-printinghierarchicalgrid-printingsettings-vb' />
 
 ## GridPrintSyle Properties
 

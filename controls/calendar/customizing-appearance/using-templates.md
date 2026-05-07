@@ -23,27 +23,10 @@ In the example below a __PictureBox__ control is created and assigned an image f
 #### Assigning a TemplateItem 
 
 
-{{source=..\SamplesCS\Calendar\Calendar1.cs region=templateItem}} 
-{{source=..\SamplesVB\Calendar\Calendar1.vb region=templateItem}} 
+<snippet id='calendar-customizing-appearance-using-templates-templateitem-cs' />
+<snippet id='calendar-customizing-appearance-using-templates-templateitem-vb' />
 
-````C#
-PictureBox pictureBox = new PictureBox();
-pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-pictureBox.Image = imageList1.Images[0];
-RadHostItem hostItem = new RadHostItem(pictureBox);
-radCalendar1.SpecialDays[0].TemplateItem = hostItem;
 
-````
-````VB.NET
-Dim pictureBox As New PictureBox()
-pictureBox.SizeMode = PictureBoxSizeMode.StretchImage
-pictureBox.Image = ImageList1.Images(0)
-Dim hostItem As New RadHostItem(pictureBox)
-RadCalendar1.SpecialDays(0).TemplateItem = hostItem
-
-````
-
-{{endregion}} 
 
 ## See Also
 

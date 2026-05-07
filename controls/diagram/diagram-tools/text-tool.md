@@ -15,20 +15,9 @@ The __TextTool__ allows you to enter the edit mode of a __RadDiagramItem__ as so
 
 #### Active Tool
 
-{{source=..\SamplesCS\Diagram\DiagramPopulatingWithData.cs region=ActiveTool}} 
-{{source=..\SamplesVB\Diagram\DiagramPopulatingWithData.vb region=ActiveTool}} 
+<snippet id='diagram-text-tool-activetool-cs' />
+<snippet id='diagram-text-tool-activetool-vb' />
 
-````C#
-            
-this.radDiagram1.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool;
-
-````
-````VB.NET
-Me.RadDiagram1.ActiveTool = Telerik.Windows.Diagrams.Core.MouseTool.TextTool
-
-````
-
-{{endregion}} 
 
 
 Let's consider we already have a shape in __RadDiagram__. As soon as you click on the shape, you will enter its edit mode. This way you can easily modify its content.

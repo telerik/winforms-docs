@@ -27,33 +27,10 @@ The property has the following values:
 * **TextAndValue**: When the user performs edit, both the Text and the Value will be changed.
 
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=UnboundTextValue}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=UnboundTextValue}} 
-
-````C#
-
-RadTreeNode node = new RadTreeNode();
-node.Text = "Text";
-node.Value = "Value";
-this.radTreeView1.Nodes.Add(node);
-
-this.radTreeView1.AllowEdit = true;
-this.radTreeView1.TreeViewElement.EditMode = TreeNodeEditMode.Value;
+<snippet id='treeview-workingwithnodes1-unboundtextvalue-cs' />
+<snippet id='treeview-workingwithnodes1-unboundtextvalue-vb' />
 
 
-````
-````VB.NET
-Dim node As RadTreeNode = New RadTreeNode()
-node.Text = "Text"
-node.Value = "Value"
-Me.RadTreeView1.Nodes.Add(node)
-Me.RadTreeView1.AllowEdit = True
-Me.RadTreeView1.TreeViewElement.EditMode = TreeNodeEditMode.Value
-
-
-````
-
-{{endregion}} 
 
 ### Specifying Text and Value in bound mode
 

@@ -21,19 +21,11 @@ Sorting in RadListControl is controlled via the __SortStyle__ property. It suppo
 
 #### Sorting 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=sorting}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=sorting}} 
+<snippet id='listcontrol-sorting-sorting-cs' />
+<snippet id='listcontrol-sorting-sorting-vb' />
 
-````C#
-radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending;
 
-````
-````VB.NET
-radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
 
-````
-
-{{endregion}} 
  
 Changing the sort style may cause the SelectedIndexChanged event to fire if the position of the previously selected item has changed after the sort operation.
         
@@ -44,41 +36,19 @@ RadListControl can filter which items are currently visible by using the __Filte
 
 #### Filtering method body 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=filteringMethod}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filteringMethod}} 
+<snippet id='listcontrol-filtering-filteringmethod-cs' />
+<snippet id='listcontrol-filtering-filteringmethod-vb' />
 
-````C#
-private bool FilterMethod(RadListDataItem itemToFilter)
-{
-    return itemToFilter.Text.EndsWith("SomeString");
-}
 
-````
-````VB.NET
-Private Function FilterMethod(ByVal itemToFilter As RadListDataItem) As Boolean
-    Return itemToFilter.Text.EndsWith("SomeString")
-End Function
-
-````
-
-{{endregion}} 
 
 
 #### Setting the Filter property 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=filtering}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=filtering}} 
+<snippet id='listcontrol-filtering-filtering-cs' />
+<snippet id='listcontrol-filtering-filtering-vb' />
 
-````C#
-radListControl1.Filter = FilterMethod;
 
-````
-````VB.NET
-radListControl1.Filter = AddressOf FilterMethod
 
-````
-
-{{endregion}} 
  
 Setting the Filter property will start a filtering operation which will call the FilterMethod for every item in RadListControl to determine if the item should be visible. After filtering RadListControl will contain the same number of items as before or less. Setting the Filter property to null resets any filtering and all items will be visible. Filtering may change the SelectedIndex property depending on whether the previously selected item is still visible.
         
@@ -89,37 +59,21 @@ RadListControl can search for an item with the FindString() and FindStringExact(
 
 #### Searching 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=searching}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=searching}} 
+<snippet id='listcontrol-searching-searching-cs' />
+<snippet id='listcontrol-searching-searching-vb' />
 
-````C#
-int index = radListControl1.FindString("someitem");
 
-````
-````VB.NET
-Dim index As Integer = radListControl1.FindString("someitem")
 
-````
-
-{{endregion}} 
  
 This method call will return the index of the first item with "someitem" as its text or -1 if no item has this been found. The second overload is called like this:
 
 #### Searching 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=index}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=index}} 
+<snippet id='listcontrol-searching-index-cs' />
+<snippet id='listcontrol-searching-index-vb' />
 
-````C#
-int index = radListControl1.FindString("someitem", 5);
 
-````
-````VB.NET
-Dim index As Integer = radListControl1.FindString("someitem", 5)
 
-````
-
-{{endregion}} 
  
 The second argument specifies the index after which the search will start. This means that in this case, the search will start at index 6. An important fact is that FindString() uses a wrapping linear search algorithm. If the item is not found when the end of the items collection is reached, it wraps and continues the search from the beginning until the start index is reached. Users can also search for an item with the keyboard. Setting the KeyboardSearchEnabled property to true will cause RadListControl to process keystrokes, build a string by appending each keystroke and then use the built string to find an item. Every keystroke initiates a new search starting at the last found item. This feature is also known as incremental search. The KeyboardSearchResetInterval property can be set in order to define how long the user must wait after pressing a key in order for the search to start from the beginning and for the built string to be destroyed. 
 
@@ -146,76 +100,10 @@ RadListControl provides three scrolling modes that can be used depending on user
 
 __RadListControl__ supports alternating item color which can be easily enabled by just setting a couple of properties: 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=alternating}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=alternating}} 
+<snippet id='listcontrol-formatting-items-alternating-cs' />
+<snippet id='listcontrol-formatting-items-alternating-vb' />
 
-````C#
-radListControl1.EnableAlternatingItemColor = true;
-radListControl1.ListElement.AlternatingItemColor = Color.Red;
 
-````
-````VB.NET
-radListControl1.EnableAlternatingItemColor = True
-radListControl1.ListElement.AlternatingItemColor = Color.Red
-'#End Region
-'#Region "AddItemsProgrammatically"
-Dim descriptionItem As New DescriptionTextListDataItem()
-descriptionItem.Text = "Chicken wings"
-descriptionItem.Image = My.Resources.chicken_wings
-descriptionItem.DescriptionText = "some description"
-Me.radListControl1.Items.Add(descriptionItem)
-Dim dataItem As New RadListDataItem()
-dataItem.Text = "Chicken toast"
-dataItem.Image = My.Resources.chicken_toast
-Me.radListControl1.Items.Add(dataItem)
-'#End Region
-'#Region "expression"
-Me.radListControl1.FilterExpression = "Country LIKE 'Argentina'"
-'#End Region
-End Sub
-'#Region "Binding"
-Public Class Item
-Public Property Id() As Integer
-    Get
-        Return m_Id
-    End Get
-    Set(value As Integer)
-        m_Id = value
-    End Set
-End Property
-Private m_Id As Integer
-Public Property Description() As String
-    Get
-        Return m_Description
-    End Get
-    Set(value As String)
-        m_Description = value
-    End Set
-End Property
-Private m_Description As String
-Public Sub New(id As Integer, description As String)
-    Me.Id = id
-    Me.Description = description
-End Sub
-End Class
-Public Sub Bind()
-Dim items As New List(Of Item)()
-For i As Integer = 0 To 9
-    items.Add(New Item(i, "Data" + i))
-Next
-radListControl1.DataSource = items
-radListControl1.DisplayMember = "Description"
-radListControl1.ValueMember = "Id"
-End Sub
-'#End Region
-'#region creatingVisualListItem
-Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
-args.VisualItem = New CustomVisualItem()
-End Sub
-
-````
-
-{{endregion}} 
 
 
 

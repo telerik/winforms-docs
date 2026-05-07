@@ -17,55 +17,18 @@ For this purpose, __RadCheckedDropDownList__ has the __TokenValidating__ event. 
 
 #### Subscribe for TokenValidating 
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.cs region=Subscribe}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Subscribe}} 
+<snippet id='checkeddropdownlist-add-non-existing-items-subscribe-cs' />
+<snippet id='checkeddropdownlist-add-non-existing-items-subscribe-vb' />
 
-````C#
-this.radCheckedDropDownList1.TokenValidating += radCheckedDropDownList1_TokenValidating;
 
-````
-````VB.NET
-AddHandler Me.RadCheckedDropDownList1.TokenValidating, AddressOf radCheckedDropDownList1_TokenValidating
-
-````
-
-{{endregion}} 
 
 
 #### Add non-existing items 
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.cs region=Handler}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\How-To\AddNonExistingItems1.vb region=Handler}} 
+<snippet id='checkeddropdownlist-add-non-existing-items-handler-cs' />
+<snippet id='checkeddropdownlist-add-non-existing-items-handler-vb' />
 
-````C#
-void radCheckedDropDownList1_TokenValidating(object sender, TokenValidatingEventArgs e)
-{
-    if (!e.IsValidToken)
-    {
-        AutoCompleteBoxViewElement textBox = sender as AutoCompleteBoxViewElement;
-        if (this.radCheckedDropDownList1.DropDownListElement.FindStringExact(e.Text) == -1)
-        {
-            this.radCheckedDropDownList1.Items.Add(new RadCheckedListDataItem(e.Text, false));
-            e.IsValidToken = true;
-        }
-    }
-}
 
-````
-````VB.NET
-Private Sub radCheckedDropDownList1_TokenValidating(sender As Object, e As TokenValidatingEventArgs)
-    If Not e.IsValidToken Then
-        Dim textBox As AutoCompleteBoxViewElement = TryCast(sender, AutoCompleteBoxViewElement)
-        If Me.RadCheckedDropDownList1.DropDownListElement.FindStringExact(e.Text) = -1 Then
-            Me.RadCheckedDropDownList1.Items.Add(New RadCheckedListDataItem(e.Text, False))
-            e.IsValidToken = True
-        End If
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 >note In order to make the custom text a valid token, it is necessary to enter the delimeter which is __;__ by default.
 

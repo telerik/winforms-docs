@@ -21,19 +21,10 @@ Almost all properties of _ShapedForm__ are the same as a standard Windows Form. 
 
 #### Setting a theme to a ShapedForm 
 
-{{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.cs region=ThemeName}} 
-{{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.vb region=ThemeName}} 
+<snippet id='shapedform-shapedform1-themename-cs' />
+<snippet id='shapedform-shapedform1-themename-vb' />
 
-````C#
-this.ThemeName = "Breeze";
 
-````
-````VB.NET
-Me.ThemeName = "Breeze"
-
-````
-
-{{endregion}} 
 
 
 

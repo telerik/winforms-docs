@@ -14,39 +14,16 @@ __RadCardView__ allows grouping of its __CardViewItems__ and it can be enabled b
 
 #### Enable Grouping
 
-{{source=..\SamplesCS\CardView\CardViewFeatures.cs region=EnableGrouping}} 
-{{source=..\SamplesVB\CardView\CardViewFeatures.vb region=EnableGrouping}} 
+<snippet id='cardview-features-grouping-enablegrouping-cs'/>
+<snippet id='cardview-features-grouping-enablegrouping-vb'/>
 
-````C#
-this.radCardView1.EnableGrouping = true;
-this.radCardView1.ShowGroups = true;
 
-````
-````VB.NET
-Me.RadCardView1.EnableGrouping = True
-Me.RadCardView1.ShowGroups = True
-
-````
-
-{{endregion}} 
 
 Once the grouping is enabled, we have to create a new __GroupDescriptor__ and assign its __PropertyName__ and __ListSortDirection__. Let's group the items by `Address` in `Descending` direction. 
 
 #### Group by Column
 
-{{source=..\SamplesCS\CardView\CardViewFeatures.cs region=GroupDescriptor}} 
-{{source=..\SamplesVB\CardView\CardViewFeatures.vb region=GroupDescriptor}} 
+<snippet id='cardview-features-grouping-groupdescriptor-cs'/>
+<snippet id='cardview-features-grouping-groupdescriptor-vb'/>
 
-````C#
-GroupDescriptor groupByAddress = new GroupDescriptor(new SortDescriptor[] {
-     new SortDescriptor("Address", ListSortDirection.Descending),});
-this.radCardView1.GroupDescriptors.Add(groupByAddress);
 
-````
-````VB.NET
-Dim groupByAddress As New GroupDescriptor(New SortDescriptor() {New SortDescriptor("Address", ListSortDirection.Descending)})
-Me.RadCardView1.GroupDescriptors.Add(groupByAddress)
-
-````
-
-{{endregion}}

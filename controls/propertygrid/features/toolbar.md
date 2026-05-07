@@ -15,19 +15,10 @@ previous_url: propertygrid-features-toolbar
 
 #### Enabling the Toolbar
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=ToolbarVisible}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=ToolbarVisible}} 
+<snippet id='propertygrid-propertygridtoolbar-toolbarvisible-cs' />
+<snippet id='propertygrid-propertygridtoolbar-toolbarvisible-vb' />
 
-````C#
-radPropertyGrid1.ToolbarVisible = true;
 
-````
-````VB.NET
-RadPropertyGrid1.ToolbarVisible = True
-
-````
-
-{{endregion}}
 
 >caption Figure 1: Toolbar
 
@@ -37,43 +28,19 @@ You can set the predefined filter operator and property by making use of the fol
 
 #### Customizing Default Filtering
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=FilterProperties}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=FilterProperties}} 
+<snippet id='propertygrid-propertygridtoolbar-filterproperties-cs' />
+<snippet id='propertygrid-propertygridtoolbar-filterproperties-vb' />
 
-````C#
-radPropertyGrid1.PropertyGridElement.ToolbarElement.FilterOperator = FilterOperator.Contains;
-radPropertyGrid1.PropertyGridElement.ToolbarElement.FilterPropertyName = "Name";
 
-````
-````VB.NET
-RadPropertyGrid1.PropertyGridElement.ToolbarElement.FilterOperator = FilterOperator.Contains
-RadPropertyGrid1.PropertyGridElement.ToolbarElement.FilterPropertyName = "Name"
-
-````
-
-{{endregion}}
 
 The toolbar consists of a __StackLayoutPanel__, which allow you to easily add additional elements or modify the existing once. You can access the existing items as follows:
 
 #### Accessing Toolbar Elements
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=accessingItems}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=accessingItems}} 
+<snippet id='propertygrid-propertygridtoolbar-accessingitems-cs' />
+<snippet id='propertygrid-propertygridtoolbar-accessingitems-vb' />
 
-````C#
-RadTextBoxElement filterTextBox = radPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement;
-RadToggleButtonElement sortButton = radPropertyGrid1.PropertyGridElement.ToolbarElement.AlphabeticalToggleButton;
-RadToggleButtonElement groupButton = radPropertyGrid1.PropertyGridElement.ToolbarElement.CategorizedToggleButton;
 
-````
-````VB.NET
-Dim filterTextBox As RadTextBoxElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement
-Dim sortButton As RadToggleButtonElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.AlphabeticalToggleButton
-Dim groupButton As RadToggleButtonElement = RadPropertyGrid1.PropertyGridElement.ToolbarElement.CategorizedToggleButton
-
-````
-
-{{endregion}}
 
 If you want to add a new element in the toolbar, just add it to the __Children__ collection of __ToolbarElement__:
 
@@ -82,27 +49,10 @@ If you want to add a new element in the toolbar, just add it to the __Children__
 >caption Figure 2: Add Element to Toolbar
 ![WinForms RadPropertyGrid Add Element to Toolbar](images/propertygrid-features-toolbar002.png)
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridToolbar.cs region=addElement}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridToolbar.vb region=addElement}} 
+<snippet id='propertygrid-propertygridtoolbar-addelement-cs' />
+<snippet id='propertygrid-propertygridtoolbar-addelement-vb' />
 
-````C#
-RadButtonElement clearFiltering = new RadButtonElement();
-clearFiltering.Text = "Clear";
-clearFiltering.MinSize = new System.Drawing.Size(25, 22);
-clearFiltering.StretchHorizontally = false;
-radPropertyGrid1.PropertyGridElement.ToolbarElement.Children.Add(clearFiltering);
 
-````
-````VB.NET
-Dim clearFiltering As New RadButtonElement()
-clearFiltering.Text = "Clear"
-clearFiltering.MinSize = New System.Drawing.Size(25, 22)
-clearFiltering.StretchHorizontally = False
-RadPropertyGrid1.PropertyGridElement.ToolbarElement.Children.Add(clearFiltering)
-
-````
-
-{{endregion}}
 
 # See Also
 

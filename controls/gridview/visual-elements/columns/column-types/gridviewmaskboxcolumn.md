@@ -21,37 +21,8 @@ You can set a *mask* to GridViewMaskBoxColumn using its __Mask__ and __MaskType_
 
 #### Add GridViewMaskBoxColumn to the grid.
 
-{{source=..\SamplesCS\GridView\Columns\GridViewMaskBoxColumn1.cs region=addMaskBoxColumn}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewMaskBoxColumn1.vb region=addMaskBoxColumn}} 
-
-````C#
-GridViewMaskBoxColumn maskBoxColumn = new GridViewMaskBoxColumn();
-maskBoxColumn.Name = "Price";
-maskBoxColumn.FieldName = "UnitPrice";
-maskBoxColumn.HeaderText = "Unit Price";
-maskBoxColumn.MaskType = MaskType.Numeric;
-maskBoxColumn.Mask = "C";
-maskBoxColumn.TextAlignment = ContentAlignment.BottomRight;
-maskBoxColumn.FormatString = "{0:C}";
-maskBoxColumn.DataType = typeof(decimal);
-radGridView1.MasterTemplate.Columns.Add(maskBoxColumn);
-
-````
-````VB.NET
-Dim maskBoxColumn As New GridViewMaskBoxColumn()
-maskBoxColumn.Name = "Price"
-maskBoxColumn.FieldName = "UnitPrice"
-maskBoxColumn.HeaderText = "Unit Price"
-maskBoxColumn.MaskType = MaskType.Numeric
-maskBoxColumn.Mask = "C"
-maskBoxColumn.TextAlignment = ContentAlignment.BottomRight
-maskBoxColumn.FormatString = "{0:C}"
-maskBoxColumn.DataType = GetType(Decimal)
-RadGridView1.MasterTemplate.Columns.Add(maskBoxColumn)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewmaskboxcolumn1-addmaskboxcolumn-cs' />
+<snippet id='gridview-gridviewmaskboxcolumn1-addmaskboxcolumn-vb' />
 
 >note The **GridViewMaskBoxColumn** also supports null values and this functionality can be enabled by setting the **EnableNullValueInput** property of the column to *true*. The default value of the property is set to *false*. Once this is enabled you can use `Ctrl + Delete` or `Ctrl + 0` to clear the value in the editor.
 

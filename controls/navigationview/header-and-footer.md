@@ -25,27 +25,10 @@ The following examples demonstrate how to manage the item's position using the h
 
 #### Add items to the Header
 
-{{source=..\SamplesCS\PageView\NavigationView.cs region=PinHeaderItems}} 
-{{source=..\SamplesVB\PageView\NavigationView.vb region=PinHeaderItems}} 
+<snippet id='navigationview-navigationview-pinheaderitems-cs' />
+<snippet id='navigationview-navigationview-pinheaderitems-vb' />
 
-````C#
-(inboxPage.Item as RadPageViewNavigationViewItem).PinPosition = NavigationViewItemPinPosition.Header;
-this.radNavigationView1.PinPage(inboxPage, NavigationViewItemPinPosition.Header);
-this.radNavigationView1.PinItem(inboxPage.Item, NavigationViewItemPinPosition.Header);
-this.radNavigationView1.AddHeaderPage(inboxPage);
-this.radNavigationView1.AddHeaderItem(inboxPage.Item);
 
-````
-````VB.NET
-TryCast(Me.inboxPage.Item, RadPageViewNavigationViewItem).PinPosition = NavigationViewItemPinPosition.Header
-Me.radNavigationView1.PinPage(Me.inboxPage, NavigationViewItemPinPosition.Header)
-Me.radNavigationView1.PinItem(Me.inboxPage.Item, NavigationViewItemPinPosition.Header)
-Me.radNavigationView1.AddHeaderPage(Me.inboxPage)
-Me.radNavigationView1.AddHeaderItem(Me.inboxPage.Item)
-
-````
-
-{{endregion}}
 
 ![WinForms RadNavigationView Header/Footer](images/navigationview-header-and-footer001.png)
 
@@ -62,29 +45,10 @@ In order to pin items into the footer area you can use any of the following opti
 
 #### Add items to the Footer
 
-{{source=..\SamplesCS\PageView\NavigationView.cs region=PinFooterItems}} 
-{{source=..\SamplesVB\PageView\NavigationView.vb region=PinFooterItems}} 
+<snippet id='navigationview-navigationview-pinfooteritems-cs' />
+<snippet id='navigationview-navigationview-pinfooteritems-vb' />
 
-````C#
-(draftsPage.Item as RadPageViewNavigationViewItem).PinPosition = NavigationViewItemPinPosition.Footer;
-this.radNavigationView1.PinPage(draftsPage, NavigationViewItemPinPosition.Footer);
-this.radNavigationView1.PinItem(draftsPage.Item, NavigationViewItemPinPosition.Footer);
-this.radNavigationView1.AddFooterPage(draftsPage);
-this.radNavigationView1.AddFooterItem(draftsPage.Item);
-this.radNavigationView1.AddFooterItem(deletedPage.Item);
 
-````
-````VB.NET
-TryCast(Me.draftsPage.Item, RadPageViewNavigationViewItem).PinPosition = NavigationViewItemPinPosition.Footer
-Me.radNavigationView1.PinPage(Me.draftsPage, NavigationViewItemPinPosition.Footer)
-Me.radNavigationView1.PinItem(Me.draftsPage.Item, NavigationViewItemPinPosition.Footer)
-Me.radNavigationView1.AddFooterPage(Me.draftsPage)
-Me.radNavigationView1.AddFooterItem(Me.draftsPage.Item)
-Me.radNavigationView1.AddFooterItem(Me.deletedPage.Item)
-
-````
-
-{{endregion}}
 
 ![WinForms RadNavigationView Header/Footer](images/navigationview-header-and-footer002.png)
 
@@ -99,27 +63,10 @@ In order to unpin items that have already been pinned, you can use again **PinPo
 
 #### Unpin Items
 
-{{source=..\SamplesCS\PageView\NavigationView.cs region=UnpinItems}} 
-{{source=..\SamplesVB\PageView\NavigationView.vb region=UnpinItems}} 
+<snippet id='navigationview-navigationview-unpinitems-cs' />
+<snippet id='navigationview-navigationview-unpinitems-vb' />
 
-````C#
-(this.draftsPage.Item as RadPageViewNavigationViewItem).PinPosition = NavigationViewItemPinPosition.None;
-this.radNavigationView1.PinPage(this.draftsPage, NavigationViewItemPinPosition.None);
-this.radNavigationView1.PinItem(this.draftsPage.Item, NavigationViewItemPinPosition.None);
-this.radNavigationView1.UnpinPage(this.draftsPage);
-this.radNavigationView1.UnpinItem(this.draftsPage.Item);
 
-````
-````VB.NET
-TryCast(Me.draftsPage.Item, RadPageViewNavigationViewItem).PinPosition = NavigationViewItemPinPosition.None
-Me.radNavigationView1.PinPage(Me.draftsPage, NavigationViewItemPinPosition.None)
-Me.radNavigationView1.PinItem(Me.draftsPage.Item, NavigationViewItemPinPosition.None)
-Me.radNavigationView1.UnpinPage(Me.draftsPage)
-Me.radNavigationView1.UnpinItem(Me.draftsPage.Item)
-
-````
-
-{{endregion}}
 
 ![WinForms RadNavigationView Header/Footer](images/navigationview-header-and-footer003.png)
 

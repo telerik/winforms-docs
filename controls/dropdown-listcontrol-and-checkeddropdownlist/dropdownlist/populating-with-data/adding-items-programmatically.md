@@ -29,37 +29,10 @@ You can use one of the following item types:
 
 #### Add items programmatically 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=AddItemsProgrammatically}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=AddItemsProgrammatically}} 
+<snippet id='dropdownlist-adding-items-programmatically-additemsprogrammatically-cs' />
+<snippet id='dropdownlist-adding-items-programmatically-additemsprogrammatically-vb' />
 
-````C#
-            
-DescriptionTextListDataItem descriptionItem = new DescriptionTextListDataItem();
-descriptionItem.Text = "Chicken wings";
-descriptionItem.Image = Properties.Resources.chicken_wings;
-descriptionItem.DescriptionText = "some description";
-this.radDropDownList1.Items.Add(descriptionItem);
-            
-RadListDataItem dataItem = new RadListDataItem();
-dataItem.Text = "Chicken toast";
-dataItem.Image = Properties.Resources.chicken_toast;
-this.radDropDownList1.Items.Add(dataItem);
-
-````
-````VB.NET
-Dim descriptionItem As New DescriptionTextListDataItem()
-descriptionItem.Text = "Chicken wings"
-descriptionItem.Image = My.Resources.chicken_wings
-descriptionItem.DescriptionText = "some description"
-Me.radDropDownList1.Items.Add(descriptionItem)
-Dim dataItem As New RadListDataItem()
-dataItem.Text = "Chicken toast"
-dataItem.Image = My.Resources.chicken_toast
-Me.radDropDownList1.Items.Add(dataItem)
-
-````
-
-{{endregion}} 
+ 
 
 # See Also
 

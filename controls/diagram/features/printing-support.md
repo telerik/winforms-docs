@@ -18,38 +18,18 @@ __RadDiagram__ provides options to print its content by using a [RadPrintDocumen
 
 __RadDiagram__ has two public methods available for printing - __Print()__ and __PrintPreview()__. The first method will directly send a print job to the default printer with the settings currently saved in the __PrintStyle__ property. This method has one overload available which can show a system PrintDialog with the available printers and their options. 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=Print}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=Print}} 
+<snippet id='diagram-printing-support-print-cs'/>
+<snippet id='diagram-printing-support-print-vb'/>
 
-````C#
-this.radDiagram1.Print();
-this.radDiagram1.Print(true);
-
-````
-````VB.NET
-Me.RadDiagram1.Print()
-Me.RadDiagram1.Print(True)
-
-````
-
-{{endregion}}  
+  
 
 The other available method is __PrintPreview()__, which opens  [RadPrintPreviewDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog%}).   
 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=PrintPreview}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=PrintPreview}} 
+<snippet id='diagram-printing-support-printpreview-cs'/>
+<snippet id='diagram-printing-support-printpreview-vb'/>
 
-````C#
-this.radDiagram1.PrintPreview();
-
-````
-````VB.NET
-Me.RadDiagram1.PrintPreview()
-
-````
-
-{{endregion}} 
+ 
 
 
 

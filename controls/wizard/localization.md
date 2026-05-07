@@ -23,69 +23,19 @@ Below is a sample implementation of an English localization provider:
 
 #### Localizing RadWizard Strings
 
-{{source=..\SamplesCS\Wizard\WizardLocalization.cs region=CustomLocalizationProvider}} 
-{{source=..\SamplesVB\Wizard\WizardLocalization.vb region=CustomLocalizationProvider}} 
+<snippet id='wizard-wizardlocalization-customlocalizationprovider-cs' />
+<snippet id='wizard-wizardlocalization-customlocalizationprovider-vb' />
 
-````C#
-class MyWizardLocalizationProvider : RadWizardLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case RadWizardStringId.BackButtonText: return "<   Back";
-            case RadWizardStringId.NextButtonText: return "Next   >";
-            case RadWizardStringId.CancelButtonText: return "Cancel";
-            case RadWizardStringId.FinishButtonText: return "Finish";
-            case RadWizardStringId.HelpButtonText: return "<html><u>Help</u></html>";
-            default: return string.Empty;
-        }
-    }
-}
 
-````
-````VB.NET
-Class MyWizardLocalizationProvider
-    Inherits RadWizardLocalizationProvider
-    Public Overrides Function GetLocalizedString(id As String) As String
-        Select Case id
-            Case RadWizardStringId.BackButtonText
-                Return "<   Back"
-            Case RadWizardStringId.NextButtonText
-                Return "Next   >"
-            Case RadWizardStringId.CancelButtonText
-                Return "Cancel"
-            Case RadWizardStringId.FinishButtonText
-                Return "Finish"
-            Case RadWizardStringId.HelpButtonText
-                Return "<html><u>Help</u></html>"
-            Case Else
-                Return String.Empty
-        End Select
-    End Function
-End Class
-
-````
-
-{{endregion}} 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\Wizard\WizardLocalization.cs region=settingTheProvider}} 
-{{source=..\SamplesVB\Wizard\WizardLocalization.vb region=settingTheProvider}} 
+<snippet id='wizard-wizardlocalization-settingtheprovider-cs' />
+<snippet id='wizard-wizardlocalization-settingtheprovider-vb' />
 
-````C#
-RadWizardLocalizationProvider.CurrentProvider = new MyWizardLocalizationProvider();
 
-````
-````VB.NET
-RadWizardLocalizationProvider.CurrentProvider = New MyWizardLocalizationProvider()
-
-````
-
-{{endregion}} 
 
 The code provided above illustrates the approach to be used to localize __RadWizard__ and it is not intended as a full translation.
 

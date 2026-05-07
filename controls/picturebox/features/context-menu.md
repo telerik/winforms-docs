@@ -17,19 +17,10 @@ The context menu will appear every time the user right-clicks on the **RadPictur
 The context menu is enabled by default. If you want to disable it you can use the **ContextMenuEnabled** property:
 
 #### Disable context menu
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=DisableContextMenu}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=DisableContextMenu}} 
+<snippet id='picturebox-pictureboxgettingstarted-disablecontextmenu-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-disablecontextmenu-vb' />
 
-````C#
-this.radPictureBox1.ContextMenuEnabled = false;
 
-````
-````VB.NET
-Me.RadPictureBox1.ContextMenuEnabled = False
-
-````
-
-{{endregion}}
 
 **RadPictureBox** exposes **ContextMenuProperties** that defines the properties related to the context menu. Through it you can easily access the default context menu items:
 - OpenItem
@@ -49,61 +40,19 @@ The default context menu in **RadPictureBox** can be customized in the **Context
 
 In order to remove an item you can use the Items.**Remove** method and pass the desired item as a parameter in the **ContextMenuOpening** event:
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=RemoveItem}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=RemoveItem}} 
+<snippet id='picturebox-pictureboxgettingstarted-removeitem-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-removeitem-vb' />
 
-````C#
-private void RadPictureBox1_ContextMenuOpening(object sender, CancelEventArgs e)
-{
-    this.radPictureBox1.ContextMenuDropDown.Items.Remove(this.radPictureBox1.ContextMenuProperties.EditItem);
-}
 
-````
-````VB.NET
-Private Sub RadPictureBox1_ContextMenuOpening(ByVal sender As Object, ByVal e As CancelEventArgs)
-    Me.RadPictureBox1.ContextMenuDropDown.Items.Remove(Me.RadPictureBox1.ContextMenuProperties.EditItem)
-End Sub
-
-````
-
-{{endregion}}
 
 ### Adding new item to the context menu
 
 In order to add a new item to the context menu you should create new menu item instance and add it to the Items collection:
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=AddItem}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=AddItem}} 
+<snippet id='picturebox-pictureboxgettingstarted-additem-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-additem-vb' />
 
-````C#
-RadMenuItem customMenuItem = new RadMenuItem();
-private void RadPictureBox1_ContextMenuOpening1(object sender, CancelEventArgs e)
-{
-    customMenuItem.Text = "Download";
-    RadMenuSeparatorItem separator = new RadMenuSeparatorItem();
-    if (!this.radPictureBox1.ContextMenuDropDown.Items.Contains(customMenuItem))
-    {
-        this.radPictureBox1.ContextMenuDropDown.Items.Add(customMenuItem);
-        this.radPictureBox1.ContextMenuDropDown.Items.Add(separator);
-    }
-}
 
-````
-````VB.NET
-Private customMenuItem As RadMenuItem = New RadMenuItem()
-Private Sub RadPictureBox1_ContextMenuOpening1(ByVal sender As Object, ByVal e As CancelEventArgs)
-    customMenuItem.Text = "Download"
-    Dim separator As RadMenuSeparatorItem = New RadMenuSeparatorItem()
-
-    If Not Me.RadPictureBox1.ContextMenuDropDown.Items.Contains(customMenuItem) Then
-        Me.RadPictureBox1.ContextMenuDropDown.Items.Add(customMenuItem)
-        Me.RadPictureBox1.ContextMenuDropDown.Items.Add(separator)
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 >note You can subscribe to the **RadMenuItem.Click** event of the newly added item and execute the desired action when the item is clicked.
 
@@ -137,9 +86,6 @@ Private Sub RadPictureBox1_ContextMenuItemClick(ByVal sender As Object, ByVal e 
 End Sub
 
 ````
-
-{{endregion}}
-
 
 ## Context menu events
 

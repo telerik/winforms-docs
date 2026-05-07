@@ -24,8 +24,8 @@ By default, the RadSplashScreenManager shows the default RadSplashScreenControl:
 
 ![WinForms RadSplashScreen Getting Started](images/splashscreen-getting-started001.gif) 
 
-{{source=..\SamplesCS\SplashScreens\SplashScreen\SplashScreenSettings.cs region=ShowDefaultSplash}}
-{{source=..\SamplesVB\SplashScreens\SplashScreen\SplashScreenSettings.vb region=ShowDefaultSplash}}
+<snippet id='splashscreens-splashscreensettings-showdefaultsplash-cs' />
+<snippet id='splashscreens-splashscreensettings-showdefaultsplash-vb' />
 
 ````C#
 
@@ -120,8 +120,6 @@ Private Sub Timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 
 ````
-
-{{endregion}}
 
 ## RadSplashScreenSettings
 

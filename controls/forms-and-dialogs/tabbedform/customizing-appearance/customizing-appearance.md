@@ -21,18 +21,10 @@ The following example demonstrates how you can access the visual item of the tab
 
 ### Access the tab visual element
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Appearance}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Appearance}}
-````C#
-this.TabbedFormControl.Tabs[0].Item.BackColor = Color.Red;
+<snippet id='tabbedform-tabbedformcode-appearance-cs' />
+<snippet id='tabbedform-tabbedformcode-appearance-vb' />
 
-````
-````VB.NET
-Me.TabbedFormControl.Tabs(0).Item.BackColor = Color.Red
 
-```` 
-
-{{endregion}}  
 
 
 # See Also

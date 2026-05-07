@@ -53,63 +53,15 @@ To use the spread export functionality:
 
 1. Use the __RunExport__ method to trigger the export process. __RunExport__ accepts a filename as a parameter for the exported file.
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=Export}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=Export}} 
-
-````C#
-            
-GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
-SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-spreadExporter.RunExport("D:\\exportedFile.xlsx", exportRenderer);
-
-````
-````VB.NET
-Dim spreadExporter As GridViewSpreadExport = New GridViewSpreadExport(radGridView1)
-Dim exportRenderer As New SpreadExportRenderer()
-spreadExporter.RunExport("D:\exportedFile.xlsx", exportRenderer)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-spreadexport1-export-cs' />
+<snippet id='gridview-spreadexport1-export-vb' />
 
 ### Running export synchronously using a stream
 
 The __RunExport__ method has several overloads that allow the user to export using a stream as well:
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=StreamRunExport}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=StreamRunExport}} 
-
-````C#
-            
-string exportFile = @"..\..\exportedData.xlsx";
-using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
-{
-    Telerik.WinControls.Export.GridViewSpreadExport exporter = new Telerik.WinControls.Export.GridViewSpreadExport(this.radGridView1);
-    Telerik.WinControls.Export.SpreadExportRenderer renderer = new Telerik.WinControls.Export.SpreadExportRenderer();
-    exporter.RunExport(ms, renderer);
-    
-    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
-    {
-        ms.WriteTo(fileStream);
-    }
-}
-
-````
-````VB.NET
-Dim exportFile As String = "..\..\exportedData.xlsx"
-Using ms As New System.IO.MemoryStream()
-    Dim exporter As New Telerik.WinControls.Export.GridViewSpreadExport(Me.radGridView1)
-    Dim renderer As New Telerik.WinControls.Export.SpreadExportRenderer()
-    exporter.RunExport(ms, renderer)
-    
-    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
-        ms.WriteTo(fileStream)
-    End Using
-End Using
-
-````
-
-{{endregion}} 
+<snippet id='gridview-spreadexport1-streamrunexport-cs' />
+<snippet id='gridview-spreadexport1-streamrunexport-vb' />
 
 ### Image exporting
 
@@ -237,69 +189,8 @@ This event is used to format the cells to be exported. The event arguments provi
 
 Here is an example of formatting the exported grid:
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=CellFormatting}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=CellFormatting}} 
-
-````C#
-    
-void spreadExporter_CellFormatting(object sender, Telerik.WinControls.Export.CellFormattingEventArgs e)
-{
-    if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
-    {
-        e.CellStyleInfo.Underline = true;
-        
-        if (e.GridCellInfo.RowInfo.HierarchyLevel == 0)
-        {
-            e.CellStyleInfo.BackColor = Color.DeepSkyBlue;
-        }
-        else if (e.GridCellInfo.RowInfo.HierarchyLevel == 1)
-        {
-            e.CellStyleInfo.BackColor = Color.LightSkyBlue;
-        }
-    }
-        
-    if (e.GridRowInfoType == typeof(GridViewHierarchyRowInfo))
-    {
-        if (e.GridCellInfo.RowInfo.HierarchyLevel == 0)
-        {
-            e.CellStyleInfo.IsItalic = true;
-            e.CellStyleInfo.FontSize = 12;
-            e.CellStyleInfo.BackColor = Color.GreenYellow;
-        }
-        else if (e.GridCellInfo.RowInfo.HierarchyLevel == 1)
-        {
-            e.CellStyleInfo.ForeColor = Color.DarkGreen;
-            e.CellStyleInfo.BackColor = Color.LightGreen;
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub spreadExporter_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.Export.CellFormattingEventArgs)
-    If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
-        e.CellStyleInfo.Underline = True
-        If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
-            e.CellStyleInfo.BackColor = Color.DeepSkyBlue
-        ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
-            e.CellStyleInfo.BackColor = Color.LightSkyBlue
-        End If
-    End If
-    If e.GridRowInfoType Is GetType(GridViewHierarchyRowInfo) Then
-        If e.GridCellInfo.RowInfo.HierarchyLevel = 0 Then
-            e.CellStyleInfo.IsItalic = True
-            e.CellStyleInfo.FontSize = 12
-            e.CellStyleInfo.BackColor = Color.GreenYellow
-        ElseIf e.GridCellInfo.RowInfo.HierarchyLevel = 1 Then
-            e.CellStyleInfo.ForeColor = Color.DarkGreen
-            e.CellStyleInfo.BackColor = Color.LightGreen
-        End If
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-spreadexport1-cellformatting-cs' />
+<snippet id='gridview-spreadexport1-cellformatting-vb' />
 
 ![WinForms RadGridView gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
 
@@ -325,26 +216,8 @@ __RadGridView__ can export its grouped content by simply setting the __ExportChi
 
 #### Exporting Grouped Data
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=ExportingGroupedData}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=ExportingGroupedData}} 
-
-````C#
-            
-GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
-spreadExporter.ExportChildRowsGrouped = true;
-SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-spreadExporter.RunExport(@"..\..\exportedFile.xlsx", exportRenderer);
-
-````
-````VB.NET
-Dim spreadExporter As New GridViewSpreadExport(Me.radGridView1)
-spreadExporter.ExportChildRowsGrouped = True
-Dim exportRenderer As New SpreadExportRenderer()
-spreadExporter.RunExport("..\..\exportedFile.xlsx", exportRenderer)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-spreadexport1-exportinggroupeddata-cs' />
+<snippet id='gridview-spreadexport1-exportinggroupeddata-vb' />
 
 ## Async Spread Export
 
@@ -379,171 +252,23 @@ This example demonstrates how to combine the async spread export feature with a 
 
 1\. Bind __RadGridView__ and define the initial settings.
 
-{{source=..\SamplesCS\GridView\ExportingData\AsyncSpreadExport.cs region=BindAndDefineSettings}} 
-{{source=..\SamplesVB\GridView\ExportingData\AsyncSpreadExport.vb region=BindAndDefineSettings}} 
-
-````C#
-public AsyncSpreadExport()
-{
-    InitializeComponent();
-    this.BindGrid();
-    this.radProgressBar1.Minimum = 0;
-    this.radProgressBar1.Maximum = 100;
-    this.radProgressBar1.ShowProgressIndicators = true;
-    this.radGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
-    this.btnExportAsync.Click += btnExportAsync_Click; 
-}
-private void BindGrid()
-{
-    DataTable dataTable = new DataTable();
-    dataTable.Columns.Add("Id", typeof(int));
-    dataTable.Columns.Add("Name", typeof(string));
-    dataTable.Columns.Add("IsValid", typeof(bool));
-    dataTable.Columns.Add("Date", typeof(DateTime));
-    for (int i = 0; i < 50000; i++)
-    {
-        dataTable.Rows.Add(i, "Name " + i, i % 2 == 0, DateTime.Now.AddDays(i));
-    }
-    this.radGridView1.DataSource = dataTable;
-}
-
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-    Me.BindGrid()
-    Me.RadProgressBar1.Minimum = 0
-    Me.RadProgressBar1.Maximum = 100
-    Me.RadProgressBar1.ShowProgressIndicators = True
-    Me.RadGridView1.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
-    AddHandler Me.BtnExportAsync.Click, AddressOf BtnExportAsync_Click
-End Sub
-Private Sub BindGrid()
-    Dim dataTable As New DataTable()
-    dataTable.Columns.Add("Id", GetType(Integer))
-    dataTable.Columns.Add("Name", GetType(String))
-    dataTable.Columns.Add("IsValid", GetType(Boolean))
-    dataTable.Columns.Add("Date", GetType(DateTime))
-    For i As Integer = 0 To 49999
-        dataTable.Rows.Add(i, "Name " & i, i Mod 2 = 0, DateTime.Now.AddDays(i))
-    Next
-    Me.RadGridView1.DataSource = dataTable
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-asyncspreadexport-bindanddefinesettings-cs' />
+<snippet id='gridview-asyncspreadexport-bindanddefinesettings-vb' />
 
 2\. Start export and subscribe to the progress notification events.
 
-{{source=..\SamplesCS\GridView\ExportingData\AsyncSpreadExport.cs region=ExportData}} 
-{{source=..\SamplesVB\GridView\ExportingData\AsyncSpreadExport.vb region=ExportData}} 
-
-````C#
-private void btnExportAsync_Click(object sender, EventArgs e)
-{
-    GridViewSpreadExport spreadExporter = new GridViewSpreadExport(this.radGridView1);
-    spreadExporter.AsyncExportProgressChanged += spreadExporter_AsyncExportProgressChanged;
-    spreadExporter.AsyncExportCompleted += spreadExporter_AsyncExportCompleted;
-    SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-    spreadExporter.RunExportAsync(@"..\..\exportedFile.xlsx",exportRenderer);
-}
-
-````
-````VB.NET
-Private Sub BtnExportAsync_Click(sender As Object, e As EventArgs)
-    Dim spreadExporter As New GridViewSpreadExport(Me.RadGridView1)
-    AddHandler spreadExporter.AsyncExportProgressChanged, AddressOf spreadExporter_AsyncExportProgressChanged
-    AddHandler spreadExporter.AsyncExportCompleted, AddressOf spreadExporter_AsyncExportCompleted
-    Dim exportRenderer As New SpreadExportRenderer()
-    spreadExporter.RunExportAsync("..\..\exportedFile.xlsx", exportRenderer)
-End Sub
-
-````
-
-{{endregion}}  
+<snippet id='gridview-asyncspreadexport-exportdata-cs' />
+<snippet id='gridview-asyncspreadexport-exportdata-vb' />
 
 3\. Handle the notification events and report progress.
 
-{{source=..\SamplesCS\GridView\ExportingData\AsyncSpreadExport.cs region=ReportProgress}} 
-{{source=..\SamplesVB\GridView\ExportingData\AsyncSpreadExport.vb region=ReportProgress}} 
-
-````C#
-private void spreadExporter_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
-{
-    this.radProgressBar1.Value1 = e.ProgressPercentage;
-}
-private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-{
-    RadMessageBox.Show("Async Spread Export Completed!");
-    this.radProgressBar1.Value1 = 0;
-}
-
-````
-````VB.NET
-Private Sub spreadExporter_AsyncExportProgressChanged(sender As Object, e As ProgressChangedEventArgs)
-    Me.RadProgressBar1.Value1 = e.ProgressPercentage
-End Sub
-Private Sub spreadExporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
-    RadMessageBox.Show("Async Spread Export Completed!")
-    Me.RadProgressBar1.Value1 = 0
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-asyncspreadexport-reportprogress-cs' />
+<snippet id='gridview-asyncspreadexport-reportprogress-vb' />
 
 The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadExport1.cs region=StreamRunExportAsync}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadExport1.vb region=StreamRunExportAsync}} 
-
-````C#
-    
-private void button1_Click(object sender, EventArgs e)
-{
-    System.IO.MemoryStream ms = new System.IO.MemoryStream();         
-    Telerik.WinControls.Export.GridViewSpreadExport exporter = new Telerik.WinControls.Export.GridViewSpreadExport(this.radGridView1);
-    Telerik.WinControls.Export.SpreadExportRenderer renderer = new Telerik.WinControls.Export.SpreadExportRenderer();
-    exporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
-    exporter.RunExportAsync(ms, renderer);
-}
-    
-private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-{
-    RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
-    string exportFile = @"..\..\exportedAsyncData.xlsx";
-    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
-    { 
-        MemoryStream ms = args.Result as MemoryStream;
-        ms.WriteTo(fileStream);
-        ms.Close();
-    }
-}
-
-````
-````VB.NET
-Private Sub button1_Click(sender As Object, e As EventArgs)
-    Dim ms As New System.IO.MemoryStream()
-    Dim exporter As New Telerik.WinControls.Export.GridViewSpreadExport(Me.radGridView1)
-    Dim renderer As New Telerik.WinControls.Export.SpreadExportRenderer()
-    AddHandler exporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
-    exporter.RunExportAsync(ms, renderer)
-End Sub
-Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
-    Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
-    Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
-    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
-        Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
-        ms.WriteTo(fileStream)
-        ms.Close()
-    End Using
-End Sub
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-spreadexport1-streamrunexportasync-cs' />
+<snippet id='gridview-spreadexport1-streamrunexportasync-vb' />
 
 ## See Also
 * [Export Data in a Group to Excel]({%slug winforms/gridview/exporting-data/export-data-in-a-group-to-excel%})

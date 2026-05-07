@@ -58,26 +58,10 @@ The following tutorial demonstrates configuring the __RadColorDialog__, localizi
 
 #### Check the selected values in RadColorDialog 
 
-{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=getTheSelectedColors}} 
-{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=getTheSelectedColors}} 
+<snippet id='colordialog-colordialog1-gettheselectedcolors-cs' />
+<snippet id='colordialog-colordialog1-gettheselectedcolors-vb' />
 
-````C#
-if (radColorDialog1.ShowDialog() == DialogResult.OK)
-{
-    Color color = radColorDialog1.SelectedColor;
-    HslColor hslColor = radColorDialog1.SelectedHslColor;
-}
-
-````
-````VB.NET
-If RadColorDialog1.ShowDialog() = DialogResult.OK Then
-    Dim color As Color = RadColorDialog1.SelectedColor
-    Dim hslColor As Telerik.WinControls.HslColor = RadColorDialog1.SelectedHslColor
-End If
-
-````
-
-{{endregion}} 
+ 
 
 9\. Press __F5__ to run the application.
 

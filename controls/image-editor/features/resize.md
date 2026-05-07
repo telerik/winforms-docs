@@ -22,19 +22,8 @@ You can resize an image that is loaded inside the image editor with code as well
 
 #### Resize Programmatically
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Resize}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Resize}}
-````C#
-radImageEditor1.ImageEditorElement.Resize(500, 500);
-radImageEditor1.ImageEditorElement.SaveState();
-
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.Resize(500, 500)
-radImageEditor1.ImageEditorElement.SaveState()
-
-```` 
+<snippet id='image-editor-imageeditorfeatures-resize-cs' />
+<snippet id='image-editor-imageeditorfeatures-resize-vb' />
 
 
-{{endregion}}
- 
+

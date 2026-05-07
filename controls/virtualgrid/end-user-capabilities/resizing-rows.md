@@ -12,20 +12,10 @@ position: 5
 
 __RadVirtualGrid__ exposes an API allowing resizing of its rows. In order to utilize it we need to set the __AllowRowResize__ property to *true*.
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=AllowRowResize}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=AllowRowResize}}
-````C#
-this.radVirtualGrid1.AllowRowResize = true;
-
-````
-````VB.NET
-Me.RadVirtualGrid1.AllowRowResize = True
-
-```` 
+<snippet id='virtualgrid-virtualgridresizingrows-allowrowresize-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-allowrowresize-vb' />
 
 
-
-{{endregion}}
 
 The grid rows can be resized by end users simply by positioning the mouse over the horizontal grid line and dragging it to a desired size.
 

@@ -14,43 +14,20 @@ There are two ways to assign tooltips to __RadRadioButton__, namely setting the 
 
 #### Setting the ToolTipText property
 
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=SetToolTipText}} 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=SetToolTipText}}
+<snippet id='buttons-radiobutton-tooltips-settooliptext-cs' />
+<snippet id='buttons-radiobutton-tooltips-settooliptext-vb' />
 
-````C#
-this.radRadioButton1.ButtonElement.ToolTipText = "sample tooltip";
 
-````
-````VB.NET
-Me.radRadioButton1.ButtonElement.ToolTipText = "sample tooltip"
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadRadioButton ToolTipText](images/buttons-radibutton-tooltips001.png)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=ToolTipTextNeeded}}
+<snippet id='buttons-radiobutton-tooltips-tooltiptextneeded-cs' />
+<snippet id='buttons-radiobutton-tooltips-tooltiptextneeded-vb' />
 
-````C#
-private void RadRadioButton1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    e.ToolTipText = "Select a hot drink";
-}
 
-````
-````VB.NET
-Private Sub RadRadioButton1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    e.ToolTipText = "Select a hot drink"
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadRadioButton ToolTipTextNeeded](images/buttons-radibutton-tooltips002.png)
 

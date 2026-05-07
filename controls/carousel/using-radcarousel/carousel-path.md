@@ -29,33 +29,10 @@ The __CarouselPath__ property defines the route that the carousel items will be 
 
 #### Defining ellipse path
 
-{{source=..\SamplesCS\Carousel\CarouselPath.cs region=definingEllipsePath}} 
-{{source=..\SamplesVB\Carousel\CarouselPath.vb region=definingEllipsePath}} 
+<snippet id='carousel-using-radcarousel-carousel-path-definingellipsepath-cs'/>
+<snippet id='carousel-using-radcarousel-carousel-path-definingellipsepath-vb'/>
 
-````C#
-CarouselEllipsePath ellipsePath = new CarouselEllipsePath();
-ellipsePath.Center = new Telerik.WinControls.UI.Point3D(50, 50, 0);
-ellipsePath.FinalAngle = -100;
-ellipsePath.InitialAngle = -90;
-ellipsePath.U = new Telerik.WinControls.UI.Point3D(-20, -17, -50);
-ellipsePath.V = new Telerik.WinControls.UI.Point3D(30, -25, -60);
-ellipsePath.ZScale = 500;
-this.radCarousel1.CarouselPath = ellipsePath;
-
-````
-````VB.NET
-Dim ellipsePath As CarouselEllipsePath = New CarouselEllipsePath
-ellipsePath.Center = New Telerik.WinControls.UI.Point3D(50, 50, 0)
-ellipsePath.FinalAngle = 360
-ellipsePath.InitialAngle = 0
-ellipsePath.U = New Telerik.WinControls.UI.Point3D(-20, -17, -50)
-ellipsePath.V = New Telerik.WinControls.UI.Point3D(30, -25, -60)
-ellipsePath.ZScale = 500
-Me.RadCarousel1.CarouselPath = ellipsePath
-
-````
-
-{{endregion}} 
+ 
 
 
 ## CarouselBezierPath
@@ -69,29 +46,10 @@ __CarouselBezierPath__ describes two end points and two "control" points in thr
 __Defining bezier path__
 
 
-{{source=..\SamplesCS\Carousel\CarouselPath.cs region=definingBezierPath}} 
-{{source=..\SamplesVB\Carousel\CarouselPath.vb region=definingBezierPath}} 
+<snippet id='carousel-using-radcarousel-carousel-path-definingbezierpath-cs'/>
+<snippet id='carousel-using-radcarousel-carousel-path-definingbezierpath-vb'/>
 
-````C#
-CarouselBezierPath bezierPath = new CarouselBezierPath();
-bezierPath.FirstPoint = new Point3D(10, 20, 0);
-bezierPath.CtrlPoint1 = new Point3D(14, 76, 70);
-bezierPath.CtrlPoint2 = new Point3D(86, 76, 70);
-bezierPath.LastPoint = new Point3D(90, 20, 0);
-this.radCarousel1.CarouselPath = bezierPath;
-
-````
-````VB.NET
-Dim bezierPath As New CarouselBezierPath()
-bezierPath.FirstPoint = New Point3D(10, 20, 0)
-bezierPath.CtrlPoint1 = New Point3D(14, 76, 70)
-bezierPath.CtrlPoint2 = New Point3D(86, 76, 70)
-bezierPath.LastPoint = New Point3D(90, 20, 0)
-Me.RadCarousel1.CarouselPath = bezierPath
-
-````
-
-{{endregion}} 
+ 
 
 
 # See Also

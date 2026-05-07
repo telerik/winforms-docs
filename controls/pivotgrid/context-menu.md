@@ -20,108 +20,17 @@ The PivotGridContextMenuBase.**Context** property provides information about the
 
 #### Initialize and Set Custom Menu
 
-{{source=..\SamplesCS\PivotGrid\PivotGridConextMenuForm.cs region=SetContextMenu}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridConextMenuForm.vb region=SetContextMenu}}
-````C#
-public PivotGridConextMenuForm()
-{
-    InitializeComponent();
-    MyPivotGridContextMenu menu = new MyPivotGridContextMenu(this.radPivotGrid1);
-    this.radPivotGrid1.PivotGridElement.ContextMenu = menu;
-}
+<snippet id='pivotgrid-pivotgridconextmenuform-setcontextmenu-cs' />
+<snippet id='pivotgrid-pivotgridconextmenuform-setcontextmenu-vb' />
 
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-    Dim menu As New MyPivotGridContextMenu(Me.radPivotGrid1)
-    Me.radPivotGrid1.PivotGridElement.ContextMenu = menu
-End Sub
-
-````
-
-
-
-{{endregion}}
 
 
 #### Custom Context Menu Class 
 
-{{source=..\SamplesCS\PivotGrid\PivotGridConextMenuForm.cs region=CustomContextMenu}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridConextMenuForm.vb region=CustomContextMenu}}
-````C#
-public class MyPivotGridContextMenu : PivotGridContextMenu
-{
-    public MyPivotGridContextMenu(RadPivotGrid pivotGrid) : base(pivotGrid.PivotGridElement)
-    {
-    }
-
-    protected override void AdjustItemsForContext()
-    {
-        base.AdjustItemsForContext();
-
-        if (this.Context is PivotCellElement)
-        {
-            RadMenuItem customMenuItem = new RadMenuItem();
-            customMenuItem.Text = "Export to Excel";
-            RadMenuSeparatorItem separator = new RadMenuSeparatorItem();
-            this.Items.Add(separator);
-            customMenuItem.Click += customMenuItem_Click;
-            this.Items.Add(customMenuItem);
-        }
-    }
-
-    private void customMenuItem_Click(object sender, EventArgs e)
-    {
-        RadMenuItem item = sender as RadMenuItem;
-
-        if (this.Context is PivotCellElement)
-        {
-            PivotCellElement pivotCell = this.Context as PivotCellElement;
-            RadPivotGrid pivot = pivotCell.ElementTree.Control as RadPivotGrid;
-            RadMessageBox.Show("Export to Excel");
-        }
-    }
-}
-
-````
-````VB.NET
-Public Class MyPivotGridContextMenu
-    Inherits PivotGridContextMenu
-
-    Public Sub New(ByVal pivotGrid As RadPivotGrid)
-        MyBase.New(pivotGrid.PivotGridElement)
-    End Sub
-
-    Protected Overrides Sub AdjustItemsForContext()
-        MyBase.AdjustItemsForContext()
-
-        If TypeOf Me.Context Is PivotCellElement Then
-            Dim customMenuItem As RadMenuItem = New RadMenuItem()
-            customMenuItem.Text = "Export to Excel"
-            Dim separator As RadMenuSeparatorItem = New RadMenuSeparatorItem()
-            Me.Items.Add(separator)
-            customMenuItem.Click += AddressOf customMenuItem_Click
-            Me.Items.Add(customMenuItem)
-        End If
-    End Sub
-
-    Private Sub customMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
-
-        If TypeOf Me.Context Is PivotCellElement Then
-            Dim pivotCell As PivotCellElement = TryCast(Me.Context, PivotCellElement)
-            Dim pivot As RadPivotGrid = TryCast(pivotCell.ElementTree.Control, RadPivotGrid)
-            RadMessageBox.Show("Export to Excel")
-        End If
-    End Sub
-End Class
-
-````
+<snippet id='pivotgrid-pivotgridconextmenuform-customcontextmenu-cs' />
+<snippet id='pivotgrid-pivotgridconextmenuform-customcontextmenu-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 

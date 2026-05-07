@@ -73,19 +73,10 @@ You can drag document windows to an existing floating container. Select left, ri
 To enable the Visual Studio 2008-like docking behavior, set the __SingleScreen__ property to *true*. Enabling this property will prevent document windows from floating and from docking inside existing floating windows.
         
 
-{{source=..\SamplesCS\Dock\ArchitectureAndFeatures.cs region=floatingTabsMode}} 
-{{source=..\SamplesVB\Dock\ArchitectureAndFeatures.vb region=floatingTabsMode}} 
+<snippet id='dock-floating-windows-floatingtabsmode-cs' />
+<snippet id='dock-floating-windows-floatingtabsmode-vb' />
 
-````C#
-this.radDock1.SingleScreen = true;
-
-````
-````VB.NET
-Me.RadDock1.SingleScreen = True
-
-````
-
-{{endregion}} 
+ 
  
 ## Properties
 

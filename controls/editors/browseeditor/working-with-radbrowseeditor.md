@@ -15,24 +15,10 @@ The events defined in __RadBrowseEditor__ provide an easy way to track user inpu
 
 #### Cancel ValueChanging Event 
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=browseEditorValueChanging}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=browseEditorValueChanging}} 
+<snippet id='editors-browseeditor1-browseeditorvaluechanging-cs' />
+<snippet id='editors-browseeditor1-browseeditorvaluechanging-vb' />
 
-````C#
-private void radBrowseEditor1_ValueChanging(object sender, ValueChangingEventArgs e)
-{
-    e.Cancel = !File.Exists(e.NewValue.ToString());
-}
 
-````
-````VB.NET
-Private Sub RadBrowseEditor1_ValueChanging(sender As Object, e As Telerik.WinControls.UI.ValueChangingEventArgs)
-    e.Cancel = Not System.IO.File.Exists(e.NewValue.ToString())
-End Sub
-
-````
-
-{{endregion}}
 
 ## See Also
 

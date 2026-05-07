@@ -22,48 +22,19 @@ In order to import a plain text document, you need to use the __Import()__ metho
 
 #### Import Document from a File
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\TxtFormatProviderForm.cs region=ImportDocumentFromFile}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\TxtFormatProviderForm.vb region=ImportDocumentFromFile}}
-````C#
-TxtFormatProvider provider = new TxtFormatProvider();
-using (Stream input = File.OpenRead(@"..\..\RichTextEditor\ImportExport\Sample.txt"))
-{
-    this.radRichTextEditor1.Document = provider.Import(input);
-}
-
-````
-````VB.NET
-Dim provider As TxtFormatProvider = New TxtFormatProvider()
-Using input As Stream = File.OpenRead("..\..\RichTextEditor\ImportExport\Sample.txt")
-    Me.radRichTextEditor1.Document = provider.Import(input)
-End Using
-
-````
+<snippet id='richtexteditor-txtformatproviderform-importdocumentfromfile-cs' />
+<snippet id='richtexteditor-txtformatproviderform-importdocumentfromfile-vb' />
 
 
-
-{{endregion}}
 
 And here is how you can import a document from string:
         
 #### Import Document from a String
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\TxtFormatProviderForm.cs region=ImportDocumentFromString}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\TxtFormatProviderForm.vb region=ImportDocumentFromString}}
-````C#
-TxtFormatProvider provider = new TxtFormatProvider();
-this.radRichTextEditor1.Document = provider.Import(input);
-
-````
-````VB.NET
-Dim provider As TxtFormatProvider = New TxtFormatProvider()
-Me.radRichTextEditor1.Document = provider.Import(input)
-
-````
+<snippet id='richtexteditor-txtformatproviderform-importdocumentfromstring-cs' />
+<snippet id='richtexteditor-txtformatproviderform-importdocumentfromstring-vb' />
 
 
-
-{{endregion}}
 
 The resulting __RadDocument__ can be manipulated like any code-generated document.
 
@@ -75,52 +46,19 @@ This example shows how to use __TxtFormatProvider__ to export __RadDocument__ to
 
 #### Export a Document to a File
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\TxtFormatProviderForm.cs region=ExportDocumentToFile}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\TxtFormatProviderForm.vb region=ExportDocumentToFile}}
-````C#
-TxtFormatProvider provider = new TxtFormatProvider();
-using (Stream output = File.OpenWrite("sample.txt"))
-{
-    RadDocument document = this.radRichTextEditor1.Document;
-    provider.Export(document, output);
-}
-
-````
-````VB.NET
-Dim provider As TxtFormatProvider = New TxtFormatProvider()
-Using output As Stream = File.OpenWrite("sample.txt")
-    Dim document As RadDocument = Me.radRichTextEditor1.Document
-    provider.Export(document, output)
-End Using
-
-````
+<snippet id='richtexteditor-txtformatproviderform-exportdocumenttofile-cs' />
+<snippet id='richtexteditor-txtformatproviderform-exportdocumenttofile-vb' />
 
 
-
-{{endregion}}
 
 You can also export the document to a string and preserve it in a database.
 
 #### Export a Document to a String
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\TxtFormatProviderForm.cs region=ExportDocumentToString}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\TxtFormatProviderForm.vb region=ExportDocumentToString}}
-````C#
-TxtFormatProvider provider = new TxtFormatProvider();
-RadDocument document = this.radRichTextEditor1.Document;
-string output = provider.Export(document);
-
-````
-````VB.NET
-Dim provider As TxtFormatProvider = New TxtFormatProvider()
-Dim document As RadDocument = Me.radRichTextEditor1.Document
-Dim output As String = provider.Export(document)
-
-````
+<snippet id='richtexteditor-txtformatproviderform-exportdocumenttostring-cs' />
+<snippet id='richtexteditor-txtformatproviderform-exportdocumenttostring-vb' />
 
 
-
-{{endregion}}
 
 ## See Also
 

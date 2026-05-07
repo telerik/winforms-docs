@@ -49,29 +49,8 @@ The keyboard combinations supported by the **RadSyntaxEditor** are listed in the
 If you need to handle a key combination which is not listed above, you can do so by handling the **PreviewSyntaxEditorKeyDown** event.
 
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=Keyboard}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=Keyboard}}
-
-````C#
-private void radSyntaxEditor1_PreviewSyntaxEditorKeyDown(object sender, PreviewSyntaxEditorKeyEventArgs e)
-{
-    if (e.Key == Keys.S && Keyboard.Modifiers == Keys.Control)
-    {
-        e.OriginalArgs.Handled = true;
-    }
-}     
-
-````
-````VB.NET
-Private Sub RadSyntaxEditor_PreviewSyntaxEditorKeyDown(sender As Object, e As PreviewSyntaxEditorKeyEventArgs)
-    If e.Key = Keys.S AndAlso Telerik.WinControls.SyntaxEditor.UI.Keyboard.Modifiers = Keys.Control Then
-        e.OriginalArgs.Handled = True
-    End If
-End Sub
+<snippet id='syntax-editor-syntaxeditorlayers-keyboard-cs' />
+<snippet id='syntax-editor-syntaxeditorlayers-keyboard-vb' />
 
 
-````
 
-{{endregion}}
-
- 

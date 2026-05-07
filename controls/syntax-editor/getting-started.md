@@ -57,33 +57,10 @@ Dim radSyntaxEditor1 As RadSyntaxEditor = New RadSyntaxEditor()
 
 To load a file in the **RadSyntaxEditor** you need to use its **Document** property.
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=GettingStartedLoadDocument}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=GettingStartedLoadDocument}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-gettingstartedloaddocument-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-gettingstartedloaddocument-vb' />
 
-````C#
 
-public RadForm1()
-        {
-            InitializeComponent();
-
-            using (StreamReader reader = new StreamReader("../../CS_File.txt"))
-            {
-               this.radSyntaxEditor1.Document = new TextDocument(reader);
-            }
-        }
-
-````
-````VB.NET
-
-Public Sub New()
-    InitializeComponent()
-
-    Using Reader As StreamReader = New StreamReader("../../CS_File.txt")
-        Me.RadSyntaxEditor1.Document = New TextDocument(Reader)
-    End Using
-End Sub
-
-````
 
 #### Figure 2: RadSyntaxEditor with a loaded C# file
 
@@ -93,20 +70,10 @@ End Sub
 
 Once you have loaded the code, you need to register an appropriate tagger to enable syntax highlighting for the particular language.
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=CSharpTagger}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=CSharpTagger}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-csharptagger-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-csharptagger-vb' />
 
-````C#
 
-CSharpTagger cSharptagger = new CSharpTagger(this.radSyntaxEditor1.SyntaxEditorElement);
-this.radSyntaxEditor1.TaggersRegistry.RegisterTagger(cSharptagger);
-
-````
-````VB.NET
-Dim CSharptagger As CSharpTagger = New CSharpTagger(Me.radSyntaxEditor1.SyntaxEditorElement)
-Me.RadSyntaxEditor1.TaggersRegistry.RegisterTagger(CSharptagger)
-
-````
 
 #### Figure 3: RadSyntaxEditor with C# code highlighting
 

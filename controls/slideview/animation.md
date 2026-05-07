@@ -26,29 +26,10 @@ The __AnimationStarted__ and __AnimationFinished__ events occur when the animati
 
 #### Customize the Default Animation
 
-{{source=..\SamplesCS\SlideView\GettingStartedGallery.cs region=CustomizeAnimation}} 
-{{source=..\SamplesVB\SlideView\GettingStartedGallery.vb region=CustomizeAnimation}}
+<snippet id='slideview-gettingstartedgallery-customizeanimation-cs' />
+<snippet id='slideview-gettingstartedgallery-customizeanimation-vb' />
 
-````C#
 
-this.radSlideView1.AllowAnimation = true;
-this.radSlideView1.AnimationInterval = 30;
-this.radSlideView1.AnimationFrames = 30;
-this.radSlideView1.AnimationType = AnimationType.Fade;
-this.radSlideView1.AnimationEasingType = Telerik.WinControls.RadEasingType.InExponential;
-      
-````
-````VB.NET
-
-Me.radSlideView1.AllowAnimation = True
-Me.radSlideView1.AnimationInterval = 30
-Me.radSlideView1.AnimationFrames = 30
-Me.radSlideView1.AnimationType = AnimationType.Fade
-Me.radSlideView1.AnimationEasingType = Telerik.WinControls.RadEasingType.InExponential
-
-```` 
-
-{{endregion}}
 
 ![WinForms SlideView Animation](images/slideview-animation.gif)
 

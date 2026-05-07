@@ -43,87 +43,10 @@ The following example demonstrates how to handle the __CustomGrouping__ event to
 
 ![WinForms RadGridView Custom Grouping](images/gridview-grouping-custom-grouping001.png)
 
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping}} 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping}} 
-
-````C#
-this.radGridView1.EnableCustomGrouping = true;
-this.radGridView1.CustomGrouping += new GridViewCustomGroupingEventHandler(radGridView1_CustomGrouping);
-GroupDescriptor descriptor = new GroupDescriptor("Country");
-this.radGridView1.GroupDescriptors.Add(descriptor);
-this.radGridView1.GroupSummaryEvaluate += new GroupSummaryEvaluateEventHandler(radGridView1_GroupSummaryEvaluate);
-
-````
-````VB.NET
-Me.RadGridView1.EnableCustomGrouping = True
-Dim descriptor As New GroupDescriptor("Country")
-Me.RadGridView1.GroupDescriptors.Add(descriptor)
-
-````
-
-{{endregion}} 
-
-
-
-{{source=..\SamplesCS\GridView\Grouping\CustomGrouping.cs region=usingCustomGrouping1}} 
-{{source=..\SamplesVB\GridView\Grouping\CustomGrouping.vb region=usingCustomGrouping1}} 
-
-````C#
-private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEventArgs e)
-{
-    string country = e.Row.Cells["Country"].Value.ToString();
-    switch (country)
-    {
-        case "USA":
-            e.GroupKey = "1. USA";
-            break;
-        case "Japan":
-            e.GroupKey = "2. Japan";
-            break;
-        case "Germany":
-            e.GroupKey = "3. Germany";
-            break;
-        default:
-            e.GroupKey = "Other country";
-            break;
-    }
-}
-private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
-{
-    if (e.Value == null)
-    {
-        e.FormatString = e.Group.Key.ToString();
-    }
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_CustomGrouping(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCustomGroupingEventArgs) Handles RadGridView1.CustomGrouping
-    Dim country As String = e.Row.Cells("Country").Value.ToString()
-    Select Case country
-        Case "USA"
-            e.GroupKey = "1. USA"
-            Exit Select
-        Case "Japan"
-            e.GroupKey = "2. Japan"
-            Exit Select
-        Case "Germany"
-            e.GroupKey = "3. Germany"
-            Exit Select
-        Case Else
-            e.GroupKey = "Other country"
-            Exit Select
-    End Select
-End Sub
-Private Sub RadGridView1_GroupSummaryEvaluate(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GroupSummaryEvaluationEventArgs) Handles RadGridView1.GroupSummaryEvaluate
-    If e.Value Is Nothing Then
-        e.FormatString = e.Group.Key.ToString()
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-customgrouping-usingcustomgrouping-cs' />
+<snippet id='gridview-customgrouping-usingcustomgrouping-vb' />
+<snippet id='gridview-customgrouping-usingcustomgrouping1-cs' />
+<snippet id='gridview-customgrouping-usingcustomgrouping1-vb' />
 
 When __RadGridView__ is displaying date columns, it is a common requirement to perform grouping by certain part of the DateTime value. The example below will handle a scenario in which the date fields are grouped in year quarters.
 
@@ -135,68 +58,8 @@ When __RadGridView__ is displaying date columns, it is a common requirement to p
 
 ![WinForms RadGridView DateTime Grouping Custom Behavior](images/gridview-grouping-custom-grouping004.png)
 
-{{source=..\SamplesCS\GridView\Grouping\CustomGroupingDateFields.cs region=CustomGrouping}} 
-{{source=..\SamplesVB\GridView\Grouping\CustomGroupingDateFields.vb region=CustomGrouping}} 
-
-````C#
-private void radGridView1_CustomGrouping(object sender, GridViewCustomGroupingEventArgs e)
-{
-    DateTime date = (DateTime)e.Row.Cells["Date"].Value;
-    e.GroupKey = date.Year + " " + this.GetQuarter(date);
-}
-private string GetQuarter(DateTime date)
-{
-    if (date.Month >= 0 && date.Month <= 3)
-    {
-        return "Q1";
-    }
-    else if (date.Month >= 4 && date.Month <= 6)
-    {
-        return "Q2";
-    }
-    else if (date.Month >= 7 && date.Month <= 9)
-    {
-        return "Q3";
-    }
-    else
-    {
-        return "Q4";
-    }
-}
-private void radGridView1_GroupSummaryEvaluate(object sender, GroupSummaryEvaluationEventArgs e)
-{
-    if (e.Value == null)
-    {
-        e.FormatString = e.Group.Key.ToString();
-    }
-}
-
-````
-````VB.NET
-Private Sub radGridView1_CustomGrouping(sender As Object, e As GridViewCustomGroupingEventArgs)
-    Dim [date] As DateTime = DirectCast(e.Row.Cells("Date").Value, DateTime)
-    e.GroupKey = Convert.ToString([date].Year) & " " & Me.GetQuarter([date])
-End Sub
-Private Function GetQuarter([date] As DateTime) As String
-    If [date].Month >= 0 AndAlso [date].Month <= 3 Then
-        Return "Q1"
-    ElseIf [date].Month >= 4 AndAlso [date].Month <= 6 Then
-        Return "Q2"
-    ElseIf [date].Month >= 7 AndAlso [date].Month <= 9 Then
-        Return "Q3"
-    Else
-        Return "Q4"
-    End If
-End Function
-Private Sub radGridView1_GroupSummaryEvaluate(sender As Object, e As GroupSummaryEvaluationEventArgs)
-    If e.Value Is Nothing Then
-        e.FormatString = e.Group.Key.ToString()
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-customgroupingdatefields-customgrouping-cs' />
+<snippet id='gridview-customgroupingdatefields-customgrouping-vb' />
 
 ## Implementing grouping mechanism by using GroupPredicate
 

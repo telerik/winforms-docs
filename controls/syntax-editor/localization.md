@@ -20,40 +20,19 @@ To localize **RadSyntaxEditor** to display control text and messages in a specif
 
 #### Localizing RadSyntaxEditor Strings
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLocalizing.cs region=Provider}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLocalizing.vb region=Provider}}
+<snippet id='syntax-editor-syntaxeditorlocalizing-provider-cs' />
+<snippet id='syntax-editor-syntaxeditorlocalizing-provider-vb' />
 
-````C#
-
-
-
-````
-````VB.NET
-
-
-
-```` 
-
-{{endregion}}
 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLocalizing.cs region=Apply}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLocalizing.vb region=Apply}}
+<snippet id='syntax-editor-syntaxeditorlocalizing-apply-cs' />
+<snippet id='syntax-editor-syntaxeditorlocalizing-apply-vb' />
 
-````C#
- RadSyntaxEditorLocalizationProvider.CurrentProvider = new EnglishRadSyntaxEditorLocalizationProvider();   
 
-````
-````VB.NET
-RadSyntaxEditorLocalizationProvider.CurrentProvider = New EnglishRadSyntaxEditorLocalizationProvider()
-
-````
-
-{{endregion}}
 
 The code provided above illustrates the approach to be used to localize the **RadSyntaxEditor** and is not intended as a full translation.
 

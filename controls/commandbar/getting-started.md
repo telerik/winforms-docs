@@ -49,36 +49,10 @@ To programmatically add a __RadCommandBar__ to a form, create a new instance of
 
 #### Adding a RadCommandBar at runtime 
 
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=CreatingControl}} 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=CreatingControl}} 
+<snippet id='commandbar-getting-started-creatingcontrol-cs'/>
+<snippet id='commandbar-getting-started-creatingcontrol-vb'/>
 
-````C#
-            
-RadCommandBar radCommandBar = new RadCommandBar();
-this.Controls.Add(radCommandBar);
-radCommandBar.Dock = DockStyle.Top;
-CommandBarRowElement row1 = new CommandBarRowElement();
-radCommandBar.Rows.Add(row1);
-CommandBarStripElement strip1 = new CommandBarStripElement();
-row1.Strips.Add(strip1);
-CommandBarButton button1 = new CommandBarButton();
-strip1.Items.Add(button1);
 
-````
-````VB.NET
-Dim radCommandBar As New RadCommandBar()
-Me.Controls.Add(radCommandBar)
-radCommandBar.Dock = DockStyle.Top
-Dim row1 As New CommandBarRowElement()
-radCommandBar.Rows.Add(row1)
-Dim strip1 As New CommandBarStripElement()
-row1.Strips.Add(strip1)
-Dim button1 As New CommandBarButton()
-strip1.Items.Add(button1)
-
-````
-
-{{endregion}} 
 
 ## Telerik UI for WinForms Learning Resources
 * [Telerik UI for WinForms CommandBar Component](https://www.telerik.com/products/winforms/commandbar.aspx)

@@ -47,34 +47,10 @@ Let's now format some data cells. We will make red the SchedulerCellElements tha
 
 #### Data Cells
 
-{{source=..\SamplesCS\Scheduler\Views\FormattingSchedulerCells.cs region=settingRedColor}} 
-{{source=..\SamplesVB\Scheduler\Views\FormattingSchedulerCells.vb region=settingRedColor}} 
+<snippet id='scheduler-formattingschedulercells-settingredcolor-cs' />
+<snippet id='scheduler-formattingschedulercells-settingredcolor-vb' />
 
-````C#
-void radScheduler1_CellFormatting1(object sender, Telerik.WinControls.UI.SchedulerCellEventArgs e)
-{
-    if (e.CellElement.Date.Month == 4 && e.CellElement.Date.Day == 13)
-    {
-        if (!(e.CellElement is SchedulerHeaderCellElement))
-        {
-            e.CellElement.BackColor = Color.Red;
-        }                
-    }
-}
 
-````
-````VB.NET
-Private Sub radScheduler1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
-    If e.CellElement.Date.Month = 4 AndAlso e.CellElement.Date.Day = 13 Then
-        If Not (TypeOf e.CellElement Is SchedulerHeaderCellElement) Then
-            e.CellElement.BackColor = Color.Red
-        End If
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 We have the desired result. The data cells of April 13 are red.
 
@@ -90,45 +66,10 @@ As you can see, undesired cells become red as well. RadScheduler is using elemen
 
 #### Reset Loaclly Set Values
 
-{{source=..\SamplesCS\Scheduler\Views\FormattingSchedulerCells.cs region=resettingRedColor}} 
-{{source=..\SamplesVB\Scheduler\Views\FormattingSchedulerCells.vb region=resettingRedColor}} 
+<snippet id='scheduler-formattingschedulercells-resettingredcolor-cs' />
+<snippet id='scheduler-formattingschedulercells-resettingredcolor-vb' />
 
-````C#
-void radScheduler1_CellFormatting2(object sender, Telerik.WinControls.UI.SchedulerCellEventArgs e)
-{
-    if (e.CellElement.Date.Month == 4 && e.CellElement.Date.Day == 13)
-    {
-        if (!(e.CellElement is SchedulerHeaderCellElement))
-        {
-            e.CellElement.BackColor = Color.Red;
-        }    
-    }
-    else
-    {
-        if (!(e.CellElement is SchedulerHeaderCellElement))
-        {
-            e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local);
-        }
-    }
-}
 
-````
-````VB.NET
-Private Sub radScheduler1_CellFormatting2(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
-    If e.CellElement.Date.Month = 4 AndAlso e.CellElement.Date.Day = 13 Then
-        If Not (TypeOf e.CellElement Is SchedulerHeaderCellElement) Then
-            e.CellElement.BackColor = Color.Red
-        End If
-    Else
-        If Not (TypeOf e.CellElement Is SchedulerHeaderCellElement) Then
-            e.CellElement.ResetValue(VisualElement.BackColorProperty, ValueResetFlags.Local)
-        End If
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 As you can see in the screenshot below, the styling is now correct, because if the red cells now represent a day different from April 13, the red color is removed.
 
@@ -141,73 +82,10 @@ We are going to make the header cells that displays the text orange, while the h
 
 #### Header Cells.
 
-{{source=..\SamplesCS\Scheduler\Views\FormattingSchedulerCells.cs region=headerCellFormatting}} 
-{{source=..\SamplesVB\Scheduler\Views\FormattingSchedulerCells.vb region=headerCellFormatting}} 
+<snippet id='scheduler-formattingschedulercells-headercellformatting-cs' />
+<snippet id='scheduler-formattingschedulercells-headercellformatting-vb' />
 
-````C#
-void radScheduler1_CellFormatting3(object sender, Telerik.WinControls.UI.SchedulerCellEventArgs e)
-{
-    if (e.CellElement is SchedulerHeaderCellElement)
-    {
-        if (e.CellElement.Date.Month == DateTime.Now.Month && e.CellElement.Date.Day == DateTime.Now.Day)
-        {
-            if (e.CellElement.Parent is DayViewHeader)
-            {
-                e.CellElement.Text = "Birthday!";
-                e.CellElement.BackColor = Color.Yellow;
-                e.CellElement.GradientStyle = GradientStyles.Solid;
-                e.CellElement.DrawFill = true;
-            }
-            else if (e.CellElement.Parent is DayViewAllDayHeader && e.CellElement.Text != "Local")
-            {
-                e.CellElement.DrawFill = true;
-                e.CellElement.BackColor = Color.DarkRed;
-            }
-            else
-            {
-                e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
-                e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
-            }
-        }
-        else
-        {
-            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
-            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
-        }
-    }
-}
 
-````
-````VB.NET
-Private Sub radScheduler1_CellFormatting3(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.SchedulerCellEventArgs)
-    If TypeOf e.CellElement Is SchedulerHeaderCellElement Then
-        If e.CellElement.[Date].Month = DateTime.Now.Month AndAlso e.CellElement.[Date].Day = DateTime.Now.Day Then
-            If TypeOf e.CellElement.Parent Is DayViewHeader Then
-                e.CellElement.Text = "Birthday!"
-                e.CellElement.BackColor = Color.Yellow
-                e.CellElement.GradientStyle = GradientStyles.Solid
-                e.CellElement.DrawFill = True
-            ElseIf TypeOf e.CellElement.Parent Is DayViewAllDayHeader AndAlso e.CellElement.Text <> "Local" Then
-                e.CellElement.DrawFill = True
-                e.CellElement.BackColor = Color.DarkRed
-            Else
-                e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-                e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-                e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-            End If
-        Else
-            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-        End If
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 The result of the code snippet above is shown below:
 >caption Figure 5: Formatted Header Cells

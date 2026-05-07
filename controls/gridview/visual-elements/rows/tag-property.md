@@ -15,81 +15,20 @@ Each row has a __Tag__ property of type object where you can store a custom obje
 
 #### Setting the Tag property of a row 
 
-{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=assignTagProperty}} 
-{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=assignTagProperty}} 
-
-````C#
- 
-this.radGridView1.Rows[1].Tag = "Some tag";
-
-````
-````VB.NET
- 
-Me.RadGridView1.Rows(1).Tag = "Some tag"
-
-````
-
-{{endregion}}
+<snippet id='gridview-tagproperty-assigntagproperty-cs' />
+<snippet id='gridview-tagproperty-assigntagproperty-vb' />
 
 #### Setting the Tag property of cells in CellFormatting event.
 
-{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=setTagInCellFormatting}} 
-{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=setTagInCellFormatting}} 
-
-````C#
-void radGridView1_CellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-{
-    if (e.CellElement.RowIndex % 2 == 0)
-    {
-        e.CellElement.RowInfo.Tag = "Some tag";
-    }
-    else
-    {
-        e.CellElement.RowInfo.Tag = "Hide row";
-    }
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-    If (e.CellElement.RowIndex Mod 2 = 0) Then
-        e.CellElement.RowInfo.Tag = "Some tag"
-    Else
-        e.CellElement.RowInfo.Tag = "Hide row"
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-tagproperty-settagincellformatting-cs' />
+<snippet id='gridview-tagproperty-settagincellformatting-vb' />
 
 #### Collapsing all rows with the specified tag 
 
 The most natural place to use the tag is in some of the row/cell events. For example, to make the content of certain cells invisible use the following code:
 
-{{source=..\SamplesCS\GridView\Rows\TagProperty.cs region=hideRowsWithSpecifiedTag}} 
-{{source=..\SamplesVB\GridView\Rows\TagProperty.vb region=hideRowsWithSpecifiedTag}} 
-
-````C#
-void radGridView1_CellFormatting1(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-{
-    if (e.CellElement.RowInfo.Tag is String && (string)e.CellElement.RowInfo.Tag == "Hide row")
-    {
-        e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-    }
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_CellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.CellFormatting
-    If TypeOf e.CellElement.RowInfo.Tag Is [String] AndAlso DirectCast(e.CellElement.RowInfo.Tag, String) = "Hide row" Then
-            e.CellElement.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
-        End If
-    End Sub
-
-````
-
-{{endregion}}
+<snippet id='gridview-tagproperty-hiderowswithspecifiedtag-cs' />
+<snippet id='gridview-tagproperty-hiderowswithspecifiedtag-vb' />
 
 >note Cells also have Tag property but it differs substantially from rows one because of the UI Virtualization. Cells are reused and when you scroll the tag value remains unchanged while cell data value is updated.
 >

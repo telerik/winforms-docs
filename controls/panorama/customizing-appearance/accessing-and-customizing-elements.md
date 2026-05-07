@@ -37,33 +37,10 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Panorama\PanoramaGettingStarted.cs region=CustomizeElements}} 
-{{source=..\SamplesVB\Panorama\PanoramaGettingStarted.vb region=CustomizeElements}} 
+<snippet id='panorama-panoramagettingstarted-customizeelements-cs' />
+<snippet id='panorama-panoramagettingstarted-customizeelements-vb' />
 
-````C#
-this.radPanorama1.BackColor=Color.Gray;
-this.radTileElement1.BackColor= Color.DarkRed;
-this.radTileElement1.BorderColor = Color.Yellow;
-this.radTileElement1.TextWrap = true;
-this.radTileElement1.ForeColor = Color.Aqua;
 
-````
-````VB.NET
-Me.RadPanorama1.BackColor = Color.Gray
-Me.RadTileElement1.BackColor = Color.DarkRed
-Me.RadTileElement1.BorderColor = Color.Yellow
-Me.RadTileElement1.TextWrap = True
-Me.RadTileElement1.ForeColor = Color.Aqua
-'#End Region
-End Sub
-Sub MetodUsedToStoreRegions()
-'#region SetTilePosition
-Me.RadTileElement1.Row = 1
-Me.RadTileElement1.Column = 0
-
-````
-
-{{endregion}}  
 
 # See Also
 

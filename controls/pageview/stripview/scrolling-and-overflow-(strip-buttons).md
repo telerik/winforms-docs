@@ -15,21 +15,9 @@ The __StripButtons__ property of **RadPageView** in PageViewMode.*Strip* allows 
 
 #### Accessing the StripButtons property
 
-{{source=..\SamplesCS\PageView\StripView.cs region=scrollingAndOverflow}} 
-{{source=..\SamplesVB\PageView\StripView.vb region=scrollingAndOverflow}} 
+<snippet id='pageview-stripview-scrollingandoverflow-cs' />
+<snippet id='pageview-stripview-scrollingandoverflow-vb' />
 
-````C#
-RadPageViewStripElement stripElement = (RadPageViewStripElement)this.radPageView1.ViewElement;
-stripElement.StripButtons = StripViewButtons.All;
-
-````
-````VB.NET
-Dim stripElement As RadPageViewStripElement = DirectCast(Me.radPageView1.ViewElement, RadPageViewStripElement)
-stripElement.StripButtons = StripViewButtons.All
-
-````
-
-{{endregion}} 
 
 
 PageViewMode.*Strip* supports the following __StripButtons__ modes:

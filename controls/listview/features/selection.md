@@ -16,29 +16,10 @@ Multiple items can be selected in code as well. This can be achieved by using th
 
 #### Programmatically Select Items
 
-{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSelect}} 
-{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSelect}} 
+<snippet id='listview-listviewworkingwithitems-itemselect-cs' />
+<snippet id='listview-listviewworkingwithitems-itemselect-vb' />
 
-````C#
-radListView1.MultiSelect = true;
-ListViewDataItem[] itemsToSlelct = new ListViewDataItem[3];
-itemsToSlelct[0] = radListView1.Items[1];
-itemsToSlelct[1] = radListView1.Items[3];
-itemsToSlelct[2] = radListView1.Items[4];
-radListView1.Select(itemsToSlelct);
 
-````
-````VB.NET
-RadListView1.MultiSelect = True
-Dim itemsToSlelct(2) As ListViewDataItem
-itemsToSlelct(0) = RadListView1.Items(1)
-itemsToSlelct(1) = RadListView1.Items(3)
-itemsToSlelct(2) = RadListView1.Items(4)
-RadListView1.Select(itemsToSlelct)
-
-````
-
-{{endregion}} 
 
 The **FullRowSelect** property controls whether the full row should be selected or not.
 

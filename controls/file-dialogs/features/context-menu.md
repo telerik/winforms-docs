@@ -21,44 +21,8 @@ The **ShellContextMenuOpening** event occurs when the context menu is about to o
 
 #### Modify ShellContextMenu
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=Menu}}
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=Menu}}
+<snippet id='file-dialogs-editing-options-menu-cs' />
+<snippet id='file-dialogs-editing-options-menu-vb' />
 
-````C#
-           private void RadForm_Load(object sender, EventArgs e)
-        {
-            RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
-            openFolderDialog.OpenFolderDialogForm.ExplorerControl.ShellContextMenuOpening += ExplorerControl_ShellContextMenuOpening;
-        }
 
-        private void ExplorerControl_ShellContextMenuOpening(object sender, Telerik.WinControls.FileDialogs.ContextMenuOpeningEventArgs e)
-        {
-            e.Cancel = true;
-
-            if (e.IsOpeningOnEmptySpace)
-            {
-                e.Cancel = false;
-                e.ShortContextMenuOptions = ShortContextMenuOptions.NewFolder | ShortContextMenuOptions.View;
-            }
-        }     
-
-````
-````VB.NET
-	     Private Sub RadForm_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
-        Dim openFolderDialog As RadOpenFolderDialog = New RadOpenFolderDialog()
-        AddHandler openFolderDialog.OpenFolderDialogForm.ExplorerControl.ShellContextMenuOpening, AddressOf ExplorerControl_ShellContextMenuOpening
-    End Sub
-
-    Private Sub ExplorerControl_ShellContextMenuOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.FileDialogs.ContextMenuOpeningEventArgs)
-        e.Cancel = True
-
-        If e.IsOpeningOnEmptySpace Then
-            e.Cancel = False
-            e.ShortContextMenuOptions = ShortContextMenuOptions.NewFolder Or ShortContextMenuOptions.View
-        End If
-    End Sub
-
-````
-
-{{endregion}}
 

@@ -33,22 +33,8 @@ To use the spread export functionality create an instance of the __GridViewSprea
 
 #### Exporting the grid. 
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadStreamExportCode.cs region=SyncPort}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadStreamExportCode.vb region=SyncPort}}
-````C#
-GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.radGridView1);
-spreadStreamExport.ExportVisualSettings = true;
-spreadStreamExport.RunExport(@"D:\StreamExport.xlsx", new SpreadStreamExportRenderer());
-
-````
-````VB.NET
-Dim spreadStreamExport As New GridViewSpreadStreamExport(Me.radGridView1)
-spreadStreamExport.ExportVisualSettings = True
-spreadStreamExport.RunExport("D:\StreamExport.xlsx", New SpreadStreamExportRenderer())
-
-````
-
-{{endregion}} 
+<snippet id='gridview-spreadstreamexportcode-syncport-cs' />
+<snippet id='gridview-spreadstreamexportcode-syncport-vb' />
 
 ## Properties
 
@@ -84,30 +70,8 @@ This event occurs for every cell that is being exported. It can be used for styl
 
 #### Using the CellFormatting event
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadStreamExportCode.cs region=CellFormatting}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadStreamExportCode.vb region=CellFormatting}}
-````C#
-private void SpreadStreamExport_CellFormatting(object sender, SpreadStreamCellFormattingEventArgs e)
-{
-    e.CellStyleInfo.BackColor = Color.Green;
-    e.CellStyleInfo.ForeColor = Color.Red;
-    e.CellStyleInfo.BottomBorder = new SpreadBorder(SpreadBorderStyle.Double, SpreadThemableColor.FromRgb(100, 100, 100));
-    e.CellStyleInfo.TopBorder = Color.Black;
-}
-
-````
-````VB.NET
-Private Sub SpreadStreamExport_CellFormatting(ByVal sender As Object, ByVal e As SpreadStreamCellFormattingEventArgs)
-    e.CellStyleInfo.BackColor = Color.Green
-    e.CellStyleInfo.ForeColor = Color.Red
-    e.CellStyleInfo.BottomBorder = New SpreadBorder(SpreadBorderStyle.Double, SpreadThemableColor.FromRgb(100, 100, 100))
-    e.CellStyleInfo.TopBorder = Color.Black
-End Sub
-
-```` 
-
-
-{{endregion}} 
+<snippet id='gridview-spreadstreamexportcode-cellformatting-cs' />
+<snippet id='gridview-spreadstreamexportcode-cellformatting-vb' />
 
 ### RowCreated
 
@@ -115,84 +79,16 @@ Occurs when a new row is created in current worksheet. This is suitable place to
 
 #### Using RowCreated to set the rows height.
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadStreamExportCode.cs region=RowCreated}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadStreamExportCode.vb region=RowCreated}}
-````C#
-private void SpreadStreamExport_RowCreated(object sender, SpreadStreamRowEventArgs e)
-{
-    if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
-    {
-        var row = e.Row as Telerik.Documents.SpreadsheetStreaming.IRowExporter;
-        row.SetHeightInPixels(50);
-    }
-}
-
-````
-````VB.NET
-Private Sub SpreadStreamExport_RowCreated(ByVal sender As Object, ByVal e As SpreadStreamRowEventArgs)
-    If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
-        Dim row = TryCast(e.Row, Telerik.Documents.SpreadsheetStreaming.IRowExporter)
-        row.SetHeightInPixels(50)
-    End If
-End Sub
-
-```` 
-
-
-{{endregion}} 
-
+<snippet id='gridview-spreadstreamexportcode-rowcreated-cs' />
+<snippet id='gridview-spreadstreamexportcode-rowcreated-vb' />
 
 ### RowExporting 
 
 Occurs before every spread row is exported. This is suitable place to add any additional cells at the end of the row.
 
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadStreamExportCode.cs region=RowExporting}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadStreamExportCode.vb region=RowExporting}}
-````C#
-private void SpreadStreamExport_RowExporting(object sender, SpreadStreamRowEventArgs e)
-{
-    if (e.GridRowIndex % 2 == 0)
-    {
-        var row = e.Row as IRowExporter;
-        using (ICellExporter cell = row.CreateCellExporter())
-        {
-            SpreadCellFormat format = new SpreadCellFormat()
-            {
-                Fill = SpreadPatternFill.CreateSolidFill(new SpreadColor(100, 100, 100))
-            };
-            cell.SetValue("---");
-            format.HorizontalAlignment = SpreadHorizontalAlignment.Center;
-            format.VerticalAlignment = SpreadVerticalAlignment.Center;
-            format.LeftBorder = new SpreadBorder(SpreadBorderStyle.Double, SpreadThemableColor.FromRgb(100, 100, 100));
-            format.RightBorder = new SpreadBorder(SpreadBorderStyle.Double, SpreadThemableColor.FromRgb(100, 100, 100));
-            cell.SetFormat(format);
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub SpreadStreamExport_RowExporting(ByVal sender As Object, ByVal e As SpreadStreamRowEventArgs)
-    If e.GridRowIndex Mod 2 = 0 Then
-        Dim row = TryCast(e.Row, IRowExporter)
-        Using cell As ICellExporter = row.CreateCellExporter()
-            Dim format As New SpreadCellFormat() With {.Fill = SpreadPatternFill.CreateSolidFill(New SpreadColor(100, 100, 100))}
-            cell.SetValue("---")
-            format.HorizontalAlignment = SpreadHorizontalAlignment.Center
-            format.VerticalAlignment = SpreadVerticalAlignment.Center
-            format.LeftBorder = New SpreadBorder(SpreadBorderStyle.Double, SpreadThemableColor.FromRgb(100, 100, 100))
-            format.RightBorder = New SpreadBorder(SpreadBorderStyle.Double, SpreadThemableColor.FromRgb(100, 100, 100))
-            cell.SetFormat(format)
-        End Using
-    End If
-End Sub
-
-```` 
-
-
-{{endregion}} 
-
+<snippet id='gridview-spreadstreamexportcode-rowexporting-cs' />
+<snippet id='gridview-spreadstreamexportcode-rowexporting-vb' />
 
 ### ExportCompleted
 
@@ -217,44 +113,8 @@ This feature can be utilized by calling the __RunExportAsync__ method on the __G
 
 #### Exporting asynchronously and reporting the progress.  
 
-{{source=..\SamplesCS\GridView\ExportingData\SpreadStreamExportCode.cs region=AsyncRun}} 
-{{source=..\SamplesVB\GridView\ExportingData\SpreadStreamExportCode.vb region=AsyncRun}}
-````C#
-private void RadButton1_Click(object sender, EventArgs e)
-{
-    GridViewSpreadStreamExport spreadStreamExport = new GridViewSpreadStreamExport(this.radGridView1);
-    spreadStreamExport.AsyncExportProgressChanged += SpreadStreamExport_AsyncExportProgressChanged;
-    spreadStreamExport.AsyncExportCompleted += SpreadStreamExport_AsyncExportCompleted;
-    spreadStreamExport.RunExportAsync(@"D:\StreamExport.xlsx", new SpreadStreamExportRenderer());
-}
-private void SpreadStreamExport_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-{
-    RadMessageBox.Show("Export Completed");
-}
-private void SpreadStreamExport_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
-{
-    radProgressBar1.Value1 = e.ProgressPercentage;
-}
-
-````
-````VB.NET
-Private Sub RadButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Dim spreadStreamExport As New GridViewSpreadStreamExport(Me.radGridView1)
-    AddHandler spreadStreamExport.AsyncExportProgressChanged, AddressOf SpreadStreamExport_AsyncExportProgressChanged
-    AddHandler spreadStreamExport.AsyncExportCompleted, AddressOf SpreadStreamExport_AsyncExportCompleted
-    spreadStreamExport.RunExportAsync("D:\StreamExport.xlsx", New SpreadStreamExportRenderer())
-End Sub
-Private Sub SpreadStreamExport_AsyncExportCompleted(ByVal sender As Object, ByVal e As AsyncCompletedEventArgs)
-    RadMessageBox.Show("Export Completed")
-End Sub
-Private Sub SpreadStreamExport_AsyncExportProgressChanged(ByVal sender As Object, ByVal e As ProgressChangedEventArgs)
-    radProgressBar1.Value1 = e.ProgressPercentage
-End Sub
-
-```` 
-
-
-{{endregion}} 
+<snippet id='gridview-spreadstreamexportcode-asyncrun-cs' />
+<snippet id='gridview-spreadstreamexportcode-asyncrun-vb' />
 
 ## See Also
 

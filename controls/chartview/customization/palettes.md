@@ -33,19 +33,11 @@ To apply one of these predefined palettes all you have to do is execute the foll
 
 #### Apply a Palette
 
-{{source=..\SamplesCS\ChartView\Customization\ChartViewPalettes.cs region=palette}} 
-{{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=palette}} 
+<snippet id='chartview-palettes-palette-cs'/>
+<snippet id='chartview-palettes-palette-vb'/>
 
-````C#
-this.radChartView1.Area.View.Palette = KnownPalette.Metro;
 
-````
-````VB.NET
-Me.RadChartView1.Area.View.Palette = KnownPalette.Metro
 
-````
-
-{{endregion}}  
 Here is how two of the palettes look like in action:
 
 >caption Figure 2: Autumn
@@ -60,68 +52,26 @@ The predefined palettes consist of 8 palette entries which are applied to the se
 
 #### Specific Palette Entry
 
-{{source=..\SamplesCS\ChartView\Customization\ChartViewPalettes.cs region=sample}} 
-{{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=sample}} 
+<snippet id='chartview-palettes-sample-cs'/>
+<snippet id='chartview-palettes-sample-vb'/>
 
-````C#
-lineSeria.Palette = KnownPalette.Flower.GlobalEntries[0];
-lineSeria.Palette = new PaletteEntry(Color.Yellow, Color.Red);
 
-````
-````VB.NET
-lineSeria.Palette = KnownPalette.Flower.GlobalEntries(0)
-lineSeria.Palette = New PaletteEntry(Color.Yellow, Color.Red)
-
-````
-
-{{endregion}}
 
 Predefined palettes cannot be edited , however, you can define your own palettes by inheriting from __ChartPalette__ and creating a collection of palette entries. Here is an example: 
 
 #### Create a Custom Palette
 
-{{source=..\SamplesCS\ChartView\Customization\ChartViewPalettes.cs region=customPalette}} 
-{{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=customPalette}} 
+<snippet id='chartview-palettes-custompalette-cs'/>
+<snippet id='chartview-palettes-custompalette-vb'/>
 
-````C#
-public class CustomPalette : ChartPalette
-{
-    public CustomPalette()
-    {
-        this.GlobalEntries.Add(Color.Yellow, Color.Red);
-        this.GlobalEntries.Add(Color.Yellow, Color.Blue);
-    }
-}
 
-````
-````VB.NET
-Public Class CustomPalette
-    Inherits ChartPalette
-    Public Sub New()
-        Me.GlobalEntries.Add(Color.Yellow, Color.Red)
-        Me.GlobalEntries.Add(Color.Yellow, Color.Blue)
-    End Sub
-End Class
-
-````
-
-{{endregion}}  
 
 #### Apply a Custom Palette
 
-{{source=..\SamplesCS\ChartView\Customization\ChartViewPalettes.cs region=setCustomPalette}} 
-{{source=..\SamplesVB\ChartView\Customization\ChartViewPalettes.vb region=setCustomPalette}} 
+<snippet id='chartview-palettes-setcustompalette-cs'/>
+<snippet id='chartview-palettes-setcustompalette-vb'/>
 
-````C#
-   this.radChartView1.Area.View.Palette = new CustomPalette();
 
-````
-````VB.NET
-Me.RadChartView1.Area.View.Palette = New CustomPalette()
-
-````
-
-{{endregion}} 
 
 >caption Figure 4: Custom Palette
 

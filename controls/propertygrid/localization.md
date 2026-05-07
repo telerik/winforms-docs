@@ -23,86 +23,19 @@ Below is a sample implementation of an English localization provider:
 
 #### Creating English Localization Provider
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridLocalization.cs region=localizationProvider}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=localizationProvider}} 
+<snippet id='propertygrid-propertygridlocalization-localizationprovider-cs' />
+<snippet id='propertygrid-propertygridlocalization-localizationprovider-vb' />
 
-````C#
-public class MyEnglishPropertyGridLocalizationProvider : PropertyGridLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case PropertyGridStringId.ContextMenuReset: return "Reset";
-            case PropertyGridStringId.ContextMenuEdit: return "Edit";
-            case PropertyGridStringId.ContextMenuExpand: return "Expand";
-            case PropertyGridStringId.ContextMenuCollapse: return "Collapse";
-            case PropertyGridStringId.ContextMenuShowDescription: return "Show description";
-            case PropertyGridStringId.ContextMenuShowToolbar: return "Show toolbar";
-            case PropertyGridStringId.ContextMenuSort: return "Sorta";
-            case PropertyGridStringId.ContextMenuNoSort: return "No Sort";
-            case PropertyGridStringId.ContextMenuAlphabetical: return "Alphabetical";
-            case PropertyGridStringId.ContextMenuCategorized: return "Categorized";
-            case PropertyGridStringId.ContextMenuCategorizedAlphabetical: return "Categorized Alphabetical";
-        }
-        return base.GetLocalizedString(id);
-    }
-}
 
-````
-````VB.NET
-Public Class MyEnglishPropertyGridLocalizationProvider
-    Inherits PropertyGridLocalizationProvider
-    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case PropertyGridStringId.ContextMenuReset
-                Return "Reset"
-            Case PropertyGridStringId.ContextMenuEdit
-                Return "Edit"
-            Case PropertyGridStringId.ContextMenuExpand
-                Return "Expand"
-            Case PropertyGridStringId.ContextMenuCollapse
-                Return "Collapse"
-            Case PropertyGridStringId.ContextMenuShowDescription
-                Return "Show description"
-            Case PropertyGridStringId.ContextMenuShowToolbar
-                Return "Show toolbar"
-            Case PropertyGridStringId.ContextMenuSort
-                Return "Sort"
-            Case PropertyGridStringId.ContextMenuNoSort
-                Return "No Sort"
-            Case PropertyGridStringId.ContextMenuAlphabetical
-                Return "Alphabetical"
-            Case PropertyGridStringId.ContextMenuCategorized
-                Return "Categorized"
-            Case PropertyGridStringId.ContextMenuCategorizedAlphabetical
-                Return "Categorized Alphabetical"
-        End Select
-        Return MyBase.GetLocalizedString(id)
-    End Function
-End Class
-
-````
-
-{{endregion}}
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 #### Changing the localization provider
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridLocalization.cs region=changeLocalization}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridLocalization.vb region=changeLocalization}} 
+<snippet id='propertygrid-propertygridlocalization-changelocalization-cs' />
+<snippet id='propertygrid-propertygridlocalization-changelocalization-vb' />
 
-````C#
-PropertyGridLocalizationProvider.CurrentProvider = new MyEnglishPropertyGridLocalizationProvider();
 
-````
-````VB.NET
-PropertyGridLocalizationProvider.CurrentProvider = New MyEnglishPropertyGridLocalizationProvider()
-
-````
-
-{{endregion}}
 
 # See Also
 

@@ -20,27 +20,10 @@ The purpose of the event is to notify you that a snapshot has been taken and you
 
 The event arguments are of type **SnapshotTakenEventArgs** which exposes a **Snapshot** property (of type **Image**).
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=Snapshot}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=Snapshot}} 
+<snippet id='webcam-webcamgettingstarted-snapshot-cs' />
+<snippet id='webcam-webcamgettingstarted-snapshot-vb' />
 
-````C#
 
-        private void RadWebCam1_SnapshotTaken(object sender, SnapshotTakenEventArgs e)
-        {
-            Image snapshot = e.Snapshot;
-            // here you save the source to a file, in memory, or to show it in the UI 
-        }
-
-````
-````VB.NET
-
-    Private Sub RadWebCam1_SnapshotTaken(ByVal sender As Object, ByVal e As SnapshotTakenEventArgs)
-        Dim snapshot As System.Drawing.Image = e.Snapshot
-    End Sub
-
-````
-
-{{endregion}} 
 
 ## CameraError
 
@@ -50,31 +33,10 @@ The event can be used to notify you about the corresponding error, or to replace
 
 The event arguments are of type **CameraErrorEventArgs** and they expose an **Error** property that contains information about the error. The **Error** property is of type **ErrorInfo** which gives you access to the message and state of the error via the **Message** and **ErrorState** properties.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=Errors}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=Errors}} 
+<snippet id='webcam-webcamgettingstarted-errors-cs' />
+<snippet id='webcam-webcamgettingstarted-errors-vb' />
 
-````C#
 
-        private void RadWebCam1_CameraError(object sender, CameraErrorEventArgs e)
-        { 
-            if (e.Error.ErrorState == CameraErrorState.NoCamera)
-            {
-                e.Error.Message = "Cannot detect a camera device.";
-            }
-        }
-
-````
-````VB.NET
-
-    Private Sub RadWebCam1_CameraError(ByVal sender As Object, ByVal e As CameraErrorEventArgs)
-        If e.[Error].ErrorState = CameraErrorState.NoCamera Then
-            e.[Error].Message = "Cannot detect a camera device."
-        End If
-    End Sub
-
-````
-
-{{endregion}} 
 
 >caption Customized error message
 

@@ -25,31 +25,8 @@ Here is an example with an entity model using the Northwind database:
 
 ![WinForms RadGridView Generating Hierarchy Mode](images/gridview-hierarchical-grid-object-relational-hierarchy-mode001.png)
 
-{{source=..\SamplesCS\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.cs region=AutoGenerateObjectRelationHierarchyMode}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\AutoGenerateObjectRelationHierarchyMode.vb region=AutoGenerateObjectRelationHierarchyMode}} 
-
-````C#
-private void AutoGenerateObjectRelationHierarchyMode_Load(object sender, EventArgs e)
-{
-    NorthwindEntities entities = new NorthwindEntities();
-    var query = from suppliers in entities.Suppliers select suppliers;
-    this.radGridView1.DataSource = query.ToList();
-    this.radGridView1.AutoGenerateHierarchy = true;
-}
-
-````
-````VB.NET
-Private Sub AutoGenerateObjectRelationHierarchyMode_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-    Dim entities As New NorthwindEntities()
-    Dim query = From suppliers In entities.Suppliers Select suppliers
-    Me.RadGridView1.DataSource = query.ToList()
-    Me.RadGridView1.AutoGenerateHierarchy = True
-End Sub
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-autogenerateobjectrelationhierarchymode-autogenerateobjectrelationhierarchymode-cs' />
+<snippet id='gridview-autogenerateobjectrelationhierarchymode-autogenerateobjectrelationhierarchymode-vb' />
 
 ![WinForms RadGridView Auto Generating Hierarchy Mode](images/gridview-hierarchical-grid-object-relational-hierarchy-mode002.png)
 
@@ -65,74 +42,8 @@ The following example demonstrates how you can manually build an object-relation
 
 ![WinForms RadGridView Manually Generating Hierarchy Mode](images/gridview-hierarchical-grid-object-relational-hierarchy-mode006.png)
 
-{{source=..\SamplesCS\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.cs region=ManualGenerateObjectRelationalMode}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\ManualGenerateObjectRelationalMode.vb region=ManualGenerateObjectRelationalMode}} 
-
-````C#
-void ManualGenerateObjectRelationalMode_Load(object sender, EventArgs e)
-{
-    NorthwindEntities entities = new NorthwindEntities();
-    var query = from customers in entities.Customers select customers;
-    GridViewTemplate childTemplate = CreateChildTemplate();
-    GridViewRelation relation = new GridViewRelation(this.radGridView1.MasterTemplate, childTemplate);
-    relation.ChildColumnNames.Add("Orders");
-    this.radGridView1.Relations.Add(relation);
-    this.radGridView1.DataSource = query.ToList();
-}
-private GridViewTemplate CreateChildTemplate()
-{
-    GridViewTemplate childTemplate = new GridViewTemplate();
-    this.radGridView1.Templates.Add(childTemplate);
-    GridViewTextBoxColumn column = new GridViewTextBoxColumn("OrderDate");
-    childTemplate.Columns.Add(column);
-    column = new GridViewTextBoxColumn("Freight");
-    childTemplate.Columns.Add(column);
-    column = new GridViewTextBoxColumn("ShipName");
-    childTemplate.Columns.Add(column);
-    column = new GridViewTextBoxColumn("ShipCountry");
-    childTemplate.Columns.Add(column);
-    column = new GridViewTextBoxColumn("ShipCity");
-    childTemplate.Columns.Add(column);
-    column = new GridViewTextBoxColumn("ShipAddress");
-    childTemplate.Columns.Add(column);
-    childTemplate.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
-    return childTemplate;
-}
-
-````
-````VB.NET
-Private Sub ManualGenerateObjectRelationalMode_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-    Dim entities As New NorthwindEntities()
-    Dim query = From customers In entities.Customers Select customers
-    Dim childTemplate As GridViewTemplate = CreateChildTemplate()
-    Dim relation As New GridViewRelation(Me.RadGridView1.MasterTemplate, childTemplate)
-    relation.ChildColumnNames.Add("Orders")
-    Me.RadGridView1.Relations.Add(relation)
-    Me.RadGridView1.DataSource = query.ToList()
-End Sub
-Private Function CreateChildTemplate() As GridViewTemplate
-    Dim childTemplate As New GridViewTemplate()
-    Me.radGridView1.Templates.Add(childTemplate)
-    Dim column As New GridViewTextBoxColumn("OrderDate")
-    childTemplate.Columns.Add(column)
-    column = New GridViewTextBoxColumn("Freight")
-    childTemplate.Columns.Add(column)
-    column = New GridViewTextBoxColumn("ShipName")
-    childTemplate.Columns.Add(column)
-    column = New GridViewTextBoxColumn("ShipCountry")
-    childTemplate.Columns.Add(column)
-    column = New GridViewTextBoxColumn("ShipCity")
-    childTemplate.Columns.Add(column)
-    column = New GridViewTextBoxColumn("ShipAddress")
-    childTemplate.Columns.Add(column)
-    childTemplate.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill
-    Return childTemplate
-End Function
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-manualgenerateobjectrelationalmode-manualgenerateobjectrelationalmode-cs' />
+<snippet id='gridview-manualgenerateobjectrelationalmode-manualgenerateobjectrelationalmode-vb' />
 
 ![WinForms RadGridView Generating Hierarchy Mode](images/gridview-hierarchical-grid-object-relational-hierarchy-mode004.png)
 

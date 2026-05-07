@@ -60,78 +60,10 @@ __RadDataLayout__ has support for several attributes that can be used to change 
 
 #### Using attributes.
 
-{{source=..\SamplesCS\DataLayout\PropertiesEventsAttributesForm.cs region=ModelWithAttributes}} 
-{{source=..\SamplesVB\DataLayout\PropertiesEventsAttributesForm.vb region=ModelWithAttributes}} 
+<snippet id='datalayout-properties-events-and-attributes-modelwithattributes-cs' />
+<snippet id='datalayout-properties-events-and-attributes-modelwithattributes-vb' />
 
-````C#
-public class Employee
-{
-    public string FirstName { get; set; }
-    [DisplayName("Family Name")]
-    public string LastName { get; set; }
-    [Browsable(false)]
-    public string Occupation { get; set; }
-    [RadRange(2000, 3000)]
-    public int Salary { get; set; }
-    public DateTime StartingDate { get; set; }
-}
 
-````
-````VB.NET
-Public Class Employee
-    Public Property FirstName() As String
-        Get
-            Return m_FirstName
-        End Get
-        Set(value As String)
-            m_FirstName = value
-        End Set
-    End Property
-    Private m_FirstName As String
-    <DisplayName("Family Name")> _
-    Public Property LastName() As String
-        Get
-            Return m_LastName
-        End Get
-        Set(value As String)
-            m_LastName = value
-        End Set
-    End Property
-    Private m_LastName As String
-    <Browsable(False)> _
-    Public Property Occupation() As String
-        Get
-            Return m_Occupation
-        End Get
-        Set(value As String)
-            m_Occupation = value
-        End Set
-    End Property
-    Private m_Occupation As String
-    <RadRange(2000, 3000)> _
-    Public Property Salary() As Integer
-        Get
-            Return m_Salary
-        End Get
-        Set(value As Integer)
-            m_Salary = value
-        End Set
-    End Property
-    Private m_Salary As Integer
-    Public Property StartingDate() As DateTime
-        Get
-            Return m_StartingDate
-        End Get
-        Set(value As DateTime)
-            m_StartingDate = value
-        End Set
-    End Property
-    Private m_StartingDate As DateTime
-End Class
-
-````
-
-{{endregion}}
 
 
 # See Also

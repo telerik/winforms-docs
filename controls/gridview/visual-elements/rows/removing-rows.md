@@ -15,73 +15,29 @@ In order to remove a single row from __RadGridView__, you should simply call the
 
 #### Remove Row
 
-{{source=..\SamplesCS\GridView\Rows\RemovingRows.cs region=removeRow}} 
-{{source=..\SamplesVB\GridView\Rows\RemovingRows.vb region=removeRow}} 
-
-````C#
-this.radGridView1.Rows.Remove(rowToRemove);
-
-````
-````VB.NET
-Me.RadGridView1.Rows.Remove(rowToRemove)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-removingrows-removerow-cs' />
+<snippet id='gridview-removingrows-removerow-vb' />
 
 If you want to remove a row at a specific position, call __RemoveAt__ method and pass the row index.
 
 #### Remove Row With Index
 
-{{source=..\SamplesCS\GridView\Rows\RemovingRows.cs region=removeRowAt}} 
-{{source=..\SamplesVB\GridView\Rows\RemovingRows.vb region=removeRowAt}} 
-
-````C#
-this.radGridView1.Rows.RemoveAt(0);
-
-````
-````VB.NET
-Me.RadGridView1.Rows.RemoveAt(0)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-removingrows-removerowat-cs' />
+<snippet id='gridview-removingrows-removerowat-vb' />
 
 As to removing all rows, make a loop and remove the rows with the __RemoveAt__ method. Note: If your __RadGridView__ is bound to a __BindingList__, the __BindingList__ will be updated automatically. However, if __RadGridView__ is bound to data set, you should call the __Update__ method. Here is an example with the NorthWind data set and its `carsTableAdapter`
 
 #### Update Adapter
 
-{{source=..\SamplesCS\GridView\Rows\RemovingRows.cs region=callingUpdate}} 
-{{source=..\SamplesVB\GridView\Rows\RemovingRows.vb region=callingUpdate}} 
-
-````C#
-this.carsTableAdapter.Update(this.nwindDataSet.Cars);
-
-````
-````VB.NET
-Me.CarsTableAdapter.Update(Me.NwindDataSet.Cars)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-removingrows-callingupdate-cs' />
+<snippet id='gridview-removingrows-callingupdate-vb' />
 
 An alternative to removing all the rows would be to use the __Clear__ method of the Rows collection as it will be a more efficient solution since the grid's events will be suspended and you will write less code:
 
 #### Clearing Rows
 
-{{source=..\SamplesCS\GridView\Rows\RemovingRows.cs region=clearRows}} 
-{{source=..\SamplesVB\GridView\Rows\RemovingRows.vb region=clearRows}} 
-
-````C#
-this.radGridView1.Rows.Clear();
-
-````
-````VB.NET
-Me.RadGridView1.Rows.Clear()
-
-````
-
-{{endregion}}
+<snippet id='gridview-removingrows-clearrows-cs' />
+<snippet id='gridview-removingrows-clearrows-vb' />
 
 # See Also
 

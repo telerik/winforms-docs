@@ -15,8 +15,8 @@ previous_url: shortcuts-assigning-global-radshortcuts
 
 1\. Implement a custom **IShortcutProvider**: 
 
-{{source=..\SamplesCS\Shortcuts\MyShortcutProvider.cs region=customProvider}} 
-{{source=..\SamplesVB\Shortcuts\MyShortcutProvider.vb region=customProvider}} 
+<snippet id='menus-myshortcutprovider-customprovider-cs' />
+<snippet id='menus-myshortcutprovider-customprovider-vb' />
 
 ````C#
     
@@ -125,12 +125,10 @@ End Class
 
 ````
 
-{{endregion}} 
-
 2\. And here is how we utilize the custom shortcut provider: 
 
-{{source=..\SamplesCS\Shortcuts\Form2.cs region=globalShortcut}} 
-{{source=..\SamplesVB\Shortcuts\Form2.vb region=globalShortcut}} 
+<snippet id='menus-form2-globalshortcut-cs' />
+<snippet id='menus-form2-globalshortcut-vb' />
 
 ````C#
 MyShortcutProvider provider;
@@ -151,8 +149,6 @@ Public Sub New()
 End Sub
 
 ````
-
-{{endregion}}
 
 >caution The shortcut providers that implement **IShortcutProvider** interface are registered as WeakReferences. So, if you declare the **MyShortcutProvider** variable in the scope of the constructor or in another method (for example the Form.Load event) the Garbage collection may collect the shortcut provider reference at a certain moment. To prevent this from happening, you need to declare the **MyShortcutProvider** variable globally.
 

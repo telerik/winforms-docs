@@ -31,45 +31,10 @@ The below example shows how you can customize the indicators by setting some pro
 
 #### Customize Indicators Example
 
-{{source=..\SamplesCS\Sparkline\SparklineCode.cs region=Indicators}} 
-{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=Indicators}}
-````C#
-public void StyleIndicators()
-{
-    SparkLineSeries series = new SparkLineSeries();
-    series.ShowHighPointIndicator = true;
-    series.ShowLowPointIndicator = true;
-    series.HighPointBackColor = Color.DarkRed;
-    series.HighPointBorderWidth = 3;
-    series.HighPointBorderColor = Color.Yellow;
-    series.HighPointSize = new SizeF(20, 20);
-    series.LowPointShape = new StarShape(5, 5);
-    series.LowPointBackColor = Color.DarkGreen;
-    series.DataPoints.AddRange(GetPoints());
-    radSparkline1.Series = series;
-}
-
-````
-````VB.NET
-Public Sub StyleIndicators()
-    Dim series As New SparkLineSeries()
-    series.ShowHighPointIndicator = True
-    series.ShowLowPointIndicator = True
-    series.HighPointBackColor = Color.DarkRed
-    series.HighPointBorderWidth = 3
-    series.HighPointBorderColor = Color.Yellow
-    series.HighPointSize = New SizeF(20, 20)
-    series.LowPointShape = New StarShape(5, 5)
-    series.LowPointBackColor = Color.DarkGreen
-    series.DataPoints.AddRange(GetPoints())
-    radSparkline1.Series = series
-End Sub
-
-````
- 
+<snippet id='sparkline-sparklinecode-indicators-cs' />
+<snippet id='sparkline-sparklinecode-indicators-vb' />
 
 
-{{endregion}} 
 
 >caption Figure 2: Show and Customize Indicators
 

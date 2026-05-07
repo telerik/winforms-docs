@@ -18,22 +18,8 @@ This is the default value of the __ScrollMode__ property. Items in this mode are
 
 ![WinForms RadGridView ScrollMode](images/gridview-scrolling-scroll-modes001.GIF)
 
-{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=ScrollMode_Smooth}} 
-{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=ScrollMode_Smooth}} 
-
-````C#
-
-this.radGridView1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Smooth;
-
-````
-````VB.NET
-
-Me.RadGridView1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Smooth
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-scrolling-scrollmode_smooth-cs' />
+<snippet id='gridview-scrolling-scrollmode_smooth-vb' />
 
 ## Discrete 
 
@@ -41,22 +27,8 @@ When the __Discrete__ mode is set, the items are scrolled one at a time. The scr
 
 ![WinForms RadGridView ScrollMode](images/gridview-scrolling-scroll-modes002.GIF)
 
-{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=ScrollMode_Discrete}} 
-{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=ScrollMode_Discrete}} 
-
-````C#
-
-this.radGridView1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Discrete;
-
-````
-````VB.NET
-
-Me.RadGridView1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Discrete
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-scrolling-scrollmode_discrete-cs' />
+<snippet id='gridview-scrolling-scrollmode_discrete-vb' />
 
 ## Deferred
 
@@ -64,69 +36,19 @@ In this mode, the content in the view is static until scrolling is completed.
 
 ![WinForms RadGridView ScrollMode](images/gridview-scrolling-scroll-modes003.GIF)
 
-{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=ScrollMode_Deferred}} 
-{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=ScrollMode_Deferred}} 
-
-````C#
-
-this.radGridView1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Deferred;
-
-````
-````VB.NET
-
-Me.RadGridView1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Deferred
-
-````
-
-{{endregion}} 
+<snippet id='gridview-scrolling-scrollmode_deferred-cs' />
+<snippet id='gridview-scrolling-scrollmode_deferred-vb' />
 
 When RadGridView's ScrollMode is set to Deferred, a small ToolTip appears when scrolling which previews the current scroll position. You could modify the text inside the ToolTip by subscribing to the __ToolTipTextNeeded__ event of the RowScroller. 
             
-{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=Scroll_ToolTip}} 
-{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Scroll_ToolTip}} 
-
-
-````C#
-
-this.radGridView1.TableElement.RowScroller.ToolTipTextNeeded += RowScroller_ToolTipTextNeeded;
-
-
-````
-````VB.NET
-
-AddHandler this.radGridView1.TableElement.RowScroller.ToolTipTextNeeded, AddressOff RowScroller_ToolTipTextNeeded;
-
-````
-
-{{endregion}}
+<snippet id='gridview-scrolling-scroll_tooltip-cs' />
+<snippet id='gridview-scrolling-scroll_tooltip-vb' />
 
 In the event handler, you can get the text from the event arguments ToolTipText property and modify it per your needs.
 
-{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=Scroll_ToolTip_CustomText}} 
-{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Scroll_ToolTip_CustomText}} 
+<snippet id='gridview-scrolling-scroll_tooltip_customtext-cs' />
+<snippet id='gridview-scrolling-scroll_tooltip_customtext-vb' />
 
-````C#
-
-private void RowScroller_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    string[] toolTipTextArray = e.ToolTipText.Split();
-    e.ToolTipText = "Current Scroll Position: " + toolTipTextArray[1];
-}
-
-
-````
-````VB.NET
-
-Private Sub RowScroller_ToolTipTextNeeded(ByVal sender As Object, ByVal e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    Dim toolTipTextArray As String() = e.ToolTipText.Split()
-    e.ToolTipText = "Current Scroll Position: " & toolTipTextArray(1)
-End Sub
-
-
-````
-
-{{endregion}}
-			
 ![WinForms RadGridView ScrollMode](images/gridview-scrolling-scroll-modes004.GIF)			
 			
 	

@@ -29,21 +29,9 @@ To set the selection mode you should use the *ItemSelectionMode* property of the
 
 #### Setting the ItemSelectionMode property
 
-{{source=..\SamplesCS\PageView\StackView.cs region=itemSelectionMode}} 
-{{source=..\SamplesVB\PageView\StackView.vb region=itemSelectionMode}} 
+<snippet id='pageview-stackview-itemselectionmode-cs' />
+<snippet id='pageview-stackview-itemselectionmode-vb' />
 
-````C#
-RadPageViewStackElement stackElement = this.radPageView1.ViewElement as RadPageViewStackElement;
-stackElement.ItemSelectionMode = StackViewItemSelectionMode.ContentWithSelected;
-
-````
-````VB.NET
-Dim stackElement As RadPageViewStackElement = TryCast(Me.radPageView1.ViewElement, RadPageViewStackElement)
-stackElement.ItemSelectionMode = StackViewItemSelectionMode.ContentWithSelected
-
-````
-
-{{endregion}} 
 
 
 >note The **ViewElement** property of the **RadPageView** control returns a reference to the main element of the currently active view in the control. So, to cast the **ViewElement** to any an element representing a specific view type, you should make sure that you have set the **ViewMode** of the **RadPageView** control to this view type.

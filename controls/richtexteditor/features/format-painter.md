@@ -53,36 +53,10 @@ Note, that these methods work with the current position and selection in the doc
         
 #### Copying and Pasting Formatting
 
-{{source=..\SamplesCS\RichTextEditor\Features\FormatPainter.cs region=FormatPainter}} 
-{{source=..\SamplesVB\RichTextEditor\Features\FormatPainter.vb region=FormatPainter}}
-````C#
-this.radRichTextEditor1.RichTextBoxElement.CopyFormatting();
-            
-DocumentPosition start = new DocumentPosition(this.radRichTextEditor1.Document.CaretPosition);
-DocumentPosition end = new DocumentPosition(start);
-            
-start.MoveToFirstPositionInDocument();
-end.MoveToEndOfDocumentElement(start.GetCurrentParagraphBox().AssociatedParagraph);
-            
-this.radRichTextEditor1.Document.Selection.SetSelectionStart(start);
-this.radRichTextEditor1.Document.Selection.AddSelectionEnd(end);
-            
-this.radRichTextEditor1.RichTextBoxElement.PasteFormatting();
+<snippet id='richtexteditor-formatpainter-formatpainter-cs' />
+<snippet id='richtexteditor-formatpainter-formatpainter-vb' />
 
-````
-````VB.NET
-Me.radRichTextEditor1.RichTextBoxElement.CopyFormatting()
-Dim start As DocumentPosition = New DocumentPosition(Me.radRichTextEditor1.Document.CaretPosition)
-Dim [end] As DocumentPosition = New DocumentPosition(start)
-start.MoveToFirstPositionInDocument()
-[end].MoveToEndOfDocumentElement(start.GetCurrentParagraphBox().AssociatedParagraph)
-Me.radRichTextEditor1.Document.Selection.SetSelectionStart(start)
-Me.radRichTextEditor1.Document.Selection.AddSelectionEnd([end])
-Me.radRichTextEditor1.RichTextBoxElement.PasteFormatting()
 
-```` 
-
-{{endregion}}
 
 The example uses the **DocumentPosition** and **DocumentSelection** APIs to create different positions and select content. More information about these APIs is available in the [Positioning]({%slug winforms/richtexteditor-/features/positioning%}) and [Selection]({%slug winforms/richtexteditor-/features/selection%}) topics. 
 

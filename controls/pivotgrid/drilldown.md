@@ -22,45 +22,10 @@ In the example below we will handle RadPivotGrid.__MouseDoubleClick__ event and 
 
 #### GetUnderlyingData Method
 
-{{source=..\SamplesCS\PivotGrid\PivotGridDrillDownForm.cs region=GetUnderlyingDataMethod}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridDrillDownForm.vb region=GetUnderlyingDataMethod}}
-````C#
-private void radPivotGrid1_MouseDoubleClick(object sender, MouseEventArgs e)
-{
-    if (e.Button == MouseButtons.Left)
-    {
-        RadPivotGrid pivotGrid = (RadPivotGrid)sender;
-        PivotCellElement cell = pivotGrid.ElementTree.GetElementAtPoint(e.Location) as PivotCellElement;
-        if (cell != null)
-        {
-            var row = cell.Row.Group;
-            var column = cell.Column.Group;
-            LocalDataSourceProvider localProvider = pivotGrid.DataProvider as LocalDataSourceProvider;
-            localProvider.GetUnderlyingData(row, column);
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub radPivotGrid1_MouseDoubleClick(sender As Object, e As MouseEventArgs)
-    If e.Button = MouseButtons.Left Then
-        Dim pivotGrid As RadPivotGrid = DirectCast(sender, RadPivotGrid)
-        Dim cell As PivotCellElement = TryCast(pivotGrid.ElementTree.GetElementAtPoint(e.Location), PivotCellElement)
-        If cell IsNot Nothing Then
-            Dim row = cell.Row.Group
-            Dim column = cell.Column.Group
-            Dim localProvider As LocalDataSourceProvider = TryCast(pivotGrid.DataProvider, LocalDataSourceProvider)
-            localProvider.GetUnderlyingData(row, column)
-        End If
-    End If
-End Sub
-
-````
+<snippet id='pivotgrid-pivotgriddrilldownform-getunderlyingdatamethod-cs' />
+<snippet id='pivotgrid-pivotgriddrilldownform-getunderlyingdatamethod-vb' />
 
 
-
-{{endregion}}
 
 The underlying data can be retrieved by handling the __GetUnderlyingDataCompleted__ event and accessing the __DrillDownCompletedEventArgs__ arguments:
 
@@ -73,37 +38,10 @@ The underlying data can be retrieved by handling the __GetUnderlyingDataComplete
 
 #### GetUnderlyingDataCompleted Event
 
-{{source=..\SamplesCS\PivotGrid\PivotGridDrillDownForm.cs region=GetUnderlyingDataCompletedEvent}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridDrillDownForm.vb region=GetUnderlyingDataCompletedEvent}}
-````C#
-private void provider_GetUnderlyingDataCompleted(object sender, Telerik.Pivot.Core.DrillDown.DrillDownCompletedEventArgs e)
-{
-    IEnumerable underlyingData = e.Result;
-    this.radGridView1.BeginInvoke(new Action(() =>
-    {
-        if (e.InnerExceptions.Count == 0)
-        {
-            this.radGridView1.DataSource = underlyingData;
-        }
-    }));
-}
-
-````
-````VB.NET
-Private Sub provider_GetUnderlyingDataCompleted(sender As Object, e As Telerik.Pivot.Core.DrillDown.DrillDownCompletedEventArgs)
-    Dim underlyingData As IEnumerable = e.Result
-    Me.radGridView1.BeginInvoke(New Action(Function()
-                                               If e.InnerExceptions.Count = 0 Then
-                                                   Me.radGridView1.DataSource = underlyingData
-                                               End If
-                                           End Function))
-End Sub
-
-````
+<snippet id='pivotgrid-pivotgriddrilldownform-getunderlyingdatacompletedevent-cs' />
+<snippet id='pivotgrid-pivotgriddrilldownform-getunderlyingdatacompletedevent-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 

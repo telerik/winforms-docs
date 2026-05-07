@@ -15,32 +15,9 @@ The __RadNotifyIcon__ allows for displaying a popup upon interacting with the ic
 
 The __PopupContent__ property allow for setting the popup's content and changing its default look. The **PopupContent** property is of type **Control**. This way you can design your Form, UserControl, etc. and set it as a content of the popup.
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupContent}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupContent}}
-````C#
+<snippet id='notifyicon-features-popupcontent-cs' />
+<snippet id='notifyicon-features-popupcontent-vb' />
 
-void ShowNotifyIconPopup()
-{
-	RadNotifyIcon radNotifyIcon = new RadNotifyIcon();
-	radNotifyIcon.TrayIcon = new System.Drawing.Icon("../../WinForms128x28.ico");
-	radNotifyIcon.PopupContent = new UserControl1();
-	radNotifyIcon.ShowTrayIcon = true;
-}
-
-````
-````VB.NET
-
-Private Sub ShowNotifyIconPopup()
-    Dim radNotifyIcon As RadNotifyIcon = New RadNotifyIcon()
-    radNotifyIcon.TrayIcon = New System.Drawing.Icon("../../WinForms128x28.ico")
-    radNotifyIcon.PopupContent = New UserControl1()
-    radNotifyIcon.ShowTrayIcon = True
-End Sub
-
-
-```` 
-
-{{endregion}}
 
 
 #### __Figure 1: RadNotifyIcon with Popup__ (Windows 11 OS)
@@ -59,43 +36,19 @@ The __PopupActivationMouseEvent__ property determines when the popup will be sho
 * __All__: Triggered on any mouse click action.
 
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupActivationMouseEvent}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupActivationMouseEvent}}
-````C#
-
-radNotifyIcon.PopupActivationMouseEvent = MouseActivationEvent.All;
+<snippet id='notifyicon-features-popupactivationmouseevent-cs' />
+<snippet id='notifyicon-features-popupactivationmouseevent-vb' />
 
 
-````
-````VB.NET
-
-radNotifyIcon.PopupActivationMouseEvent = MouseActivationEvent.All
-
-
-```` 
-
-{{endregion}}
 
 ## PopupShowDuration
 
 The __PopupShowDuration__ specifies the amount of time in __milliseconds__ after which the popup will begin to close automatically. The default value is __5000__ milliseconds (5s). 
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupShowDuration}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupShowDuration}}
-````C#
-
-radNotifyIcon.PopupShowDuration = 3000;
+<snippet id='notifyicon-features-popupshowduration-cs' />
+<snippet id='notifyicon-features-popupshowduration-vb' />
 
 
-````
-````VB.NET
-
-radNotifyIcon.PopupShowDuration = 3000
-
-
-```` 
-
-{{endregion}}
 
 ## PopupCloseMode
 
@@ -112,37 +65,19 @@ The RadNotifyIcon allows for programmatically showing a popup through the __Show
 * **void ShowPopup()**: Shows the popup on top of the notify icon.
 * **void ShowPopup(Point location)**: Shows the popup at the provided location.
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=ShowPopup}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=ShowPopup}}
-````C#
-radNotifyIcon.ShowPopup();
+<snippet id='notifyicon-features-showpopup-cs' />
+<snippet id='notifyicon-features-showpopup-vb' />
 
-````
-````VB.NET
-radNotifyIcon.ShowPopup()
 
-```` 
-
-{{endregion}}
 
 ## Programmatically Hiding the Popup
 
 You can manually hide the popup with the __HidePopup__ method as shown in __Example 6__.
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=HidePopup}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=HidePopup}}
-````C#
+<snippet id='notifyicon-features-hidepopup-cs' />
+<snippet id='notifyicon-features-hidepopup-vb' />
 
-radNotifyIcon.HidePopup();
 
-````
-````VB.NET
-
-radNotifyIcon.HidePopup()
-
-```` 
-
-{{endregion}}
 
 ## Popup Animations
 
@@ -151,22 +86,10 @@ You can control the opening and closing animation with the __PopupShowAnimation_
 * **Fade**: A Fade animation is applied.
 * **Timeout**: A 'Slide' animation is applied.
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=PopupAnimation}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=PopupAnimation}}
-````C#
+<snippet id='notifyicon-features-popupanimation-cs' />
+<snippet id='notifyicon-features-popupanimation-vb' />
 
-radNotifyIcon.PopupShowAnimation = NotifyIconAnimationType.Slide;
-radNotifyIcon.PopupHideAnimation = NotifyIconAnimationType.Fade;
 
-````
-````VB.NET
-
-radNotifyIcon.PopupShowAnimation = NotifyIconAnimationType.Slide
-radNotifyIcon.PopupHideAnimation = NotifyIconAnimationType.Fade
-
-```` 
-
-{{endregion}}
 
 #### __Figure 2: Show/Hide Animation__ (Windows 10 OS)
 

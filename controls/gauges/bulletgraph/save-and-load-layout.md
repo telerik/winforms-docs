@@ -25,26 +25,8 @@ You can save/load the layout in code as well.
 
 #### Save/Load Layout
 
-{{source=..\SamplesCS\Gauges\BulletGraphCode.cs region=SaveLoadLayout}} 
-{{source=..\SamplesVB\Gauges\BulletGraphCode.vb region=SaveLoadLayout}} 
-
-````C#
-private void SaveLoadLayout()
-{
-    this.radBulletGraph1.SaveLayout(@"..\..\gauge-layout.xml");
-    this.radBulletGraph1.LoadLayout(@"..\..\gauge-layout.xml");
-}
-
-````
-````VB.NET
-Private Sub SaveLoadLayout()
-    Me.radBulletGraph1.SaveLayout("..\..\gauge-layout.xml")
-    Me.radBulletGraph1.LoadLayout("..\..\gauge-layout.xml")
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gauges-bulletgraphcode-saveloadlayout-cs' />
+<snippet id='gauges-bulletgraphcode-saveloadlayout-vb' />
 
 # See Also
 

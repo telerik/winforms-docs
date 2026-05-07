@@ -17,9 +17,8 @@ To update the fonts yu can use the __UpdateRecentlyUsedFonts__ method and pass t
 #### Update the recently used fonts
 
 
-{{source=..\SamplesCS\Editors\FontDropDownList.cs region=UpdateRecentlyUsed}} 
-{{source=..\SamplesVB\Editors\FontDropDownList.vb region=UpdateRecentlyUsed}}
- 
+<snippet id='fontdropdownlist-update-recently-used-fonts-updaterecentlyused-cs' />
+<snippet id='fontdropdownlist-update-recently-used-fonts-updaterecentlyused-vb' />
 
-{{endregion}} 
+ 
 

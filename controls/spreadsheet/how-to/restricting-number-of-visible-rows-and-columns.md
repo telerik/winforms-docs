@@ -16,19 +16,10 @@ By default the document of __RadSpreadsheet__ presents to the user 1048576 rows 
 
 __RadSpreadsheetElement__ exposes a __VisibleSize__ property of type __SizeI__ that determines the count of the visible rows and columns. The __SizeI__ structure is similar to Size except that internally it uses integer instead of double values. That said, if you would like to set the visible columns and rows to 50 and 100 respectively, you need to create a __SizeI__ with __Width__ set to 50 and __Height__ set to 100 and assign the instance to the __VisiableSize__ property. Here is a sample snippet that illustrates how to achieve this:
 
-{{source=..\SamplesCS\Spreadsheet\SelectionCode.cs region=Selection_11}} 
-{{source=..\SamplesVB\Spreadsheet\SelectionCode.vb region=Selection_11}} 
-````C#
-radSpreadsheet.SpreadsheetElement.VisibleSize = new SizeI(5, 10);
+<snippet id='spreadsheet-selectioncode-selection_11-cs' />
+<snippet id='spreadsheet-selectioncode-selection_11-vb' />
 
-````
-````VB.NET
-radSpreadsheet.SpreadsheetElement.VisibleSize = New SizeI(5, 10)
 
-```` 
-
- 
-{{endregion}} 
 
 As a result, __RadSpreadsheet__ displays to the user only 5 columns and 10 rows:
 

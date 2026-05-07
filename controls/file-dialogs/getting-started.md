@@ -41,83 +41,10 @@ The following tutorial demonstrates how to specify a file name by using a **RadS
 
 ####  How to use the file dialogs
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=GettingStartedExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=GettingStartedExample}}
-
-````C#
-
-	private void radButton1_Click(object sender, EventArgs e)
-	{
-		RadOpenFolderDialog openFolderDialog = new RadOpenFolderDialog();
-		openFolderDialog.ShowDialog();
-		if (openFolderDialog.OpenFolderDialogForm.DialogResult == System.Windows.Forms.DialogResult.OK)
-		{
-			string folderName = openFolderDialog.FileName;
-			this.radLabel1.Text = folderName;
-		}
-	}
-
-	private void radButton2_Click(object sender, EventArgs e)
-	{
-		RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-		openFileDialog.ShowDialog();
-
-		if (openFileDialog.OpenFileDialogForm.DialogResult == System.Windows.Forms.DialogResult.OK)
-		{
-			string fileName = openFileDialog.FileName;
-			this.radLabel2.Text = fileName;
-		}
-	}
-
-	private void radButton3_Click(object sender, EventArgs e)
-	{
-		RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
-		saveFileDialog.ShowDialog();
-		if (saveFileDialog.SaveFileDialogForm.DialogResult == System.Windows.Forms.DialogResult.OK)
-		{
-			string selectedFileName = saveFileDialog.FileName;
-			this.radLabel3.Text = selectedFileName;
-		}
-	}
-	
-	
-````
-````VB.NET
-
-	Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim openFolderDialog As RadOpenFolderDialog = New RadOpenFolderDialog()
-        openFolderDialog.ShowDialog()
-
-        If openFolderDialog.OpenFolderDialogForm.DialogResult = System.Windows.Forms.DialogResult.OK Then
-            Dim folderName As String = openFolderDialog.FileName
-            Me.radLabel1.Text = folderName
-        End If
-    End Sub
-
-    Private Sub radButton2_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
-        openFileDialog.ShowDialog()
-
-        If openFileDialog.OpenFileDialogForm.DialogResult = System.Windows.Forms.DialogResult.OK Then
-            Dim fileName As String = openFileDialog.FileName
-            Me.radLabel2.Text = fileName
-        End If
-    End Sub
-
-    Private Sub radButton3_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Dim saveFileDialog As RadSaveFileDialog = New RadSaveFileDialog()
-        saveFileDialog.ShowDialog()
-
-        If saveFileDialog.SaveFileDialogForm.DialogResult = System.Windows.Forms.DialogResult.OK Then
-            Dim selectedFileName As String = saveFileDialog.FileName
-            Me.radLabel3.Text = selectedFileName
-        End If
-    End Sub
+<snippet id='file-dialogs-getting-started-gettingstartedexample-cs' />
+<snippet id='file-dialogs-getting-started-gettingstartedexample-vb' />
 
 
-````
-
-{{endregion}} 
 
 This is it! Now you can select a file name or open a folder.
 

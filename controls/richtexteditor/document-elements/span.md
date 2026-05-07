@@ -25,59 +25,19 @@ This topic will explain you how to:
 
 The __Spans__ can be used only in the context of the [Paragraph]({%slug winforms/richtexteditor-/document-elements/paragraph%}) element. The __Paragraph__ exposes a collection of **Inlines**, to which the spans can be added.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SpanCode.cs region=span}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SpanCode.vb region=span}} 
+<snippet id='richtexteditor-spancode-span-cs' />
+<snippet id='richtexteditor-spancode-span-vb' />
 
-````C#
-            
-Section section = new Section();
-Paragraph paragraph = new Paragraph();
-Span span = new Span("Span declared in code-behind");
-paragraph.Inlines.Add(span);
-section.Blocks.Add(paragraph);
-this.radRichTextEditor1.Document.Sections.Add(section);
 
-````
-````VB.NET
-Dim section As New Section()
-Dim paragraph As New Paragraph()
-Dim span As New Span("Span declared in code-behind")
-paragraph.Inlines.Add(span)
-section.Blocks.Add(paragraph)
-Me.radRichTextEditor1.Document.Sections.Add(section)
-
-````
-
-{{endregion}} 
 
 ## Add Text to a Span
 
 To specify the text in the __Span__ you can use its __Text__ property.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SpanCode.cs region=span}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SpanCode.vb region=span}} 
+<snippet id='richtexteditor-spancode-span-cs' />
+<snippet id='richtexteditor-spancode-span-vb' />
 
-````C#
-            
-Section section = new Section();
-Paragraph paragraph = new Paragraph();
-Span span = new Span("Span declared in code-behind");
-paragraph.Inlines.Add(span);
-section.Blocks.Add(paragraph);
-this.radRichTextEditor1.Document.Sections.Add(section);
 
-````
-````VB.NET
-Dim section As New Section()
-Dim paragraph As New Paragraph()
-Dim span As New Span("Span declared in code-behind")
-paragraph.Inlines.Add(span)
-section.Blocks.Add(paragraph)
-Me.radRichTextEditor1.Document.Sections.Add(section)
-
-````
-
-{{endregion}} 
 
 >caution The **Text** property of a **Span** cannot be set to an empty string, as spans that do not contain any text are considered invalid. If you add an empty span in the document programmatically, an exception will be thrown.
 >

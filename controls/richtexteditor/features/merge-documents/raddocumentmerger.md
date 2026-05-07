@@ -18,19 +18,10 @@ When instantiating the **RadDocumentMerger** class, you should pass to its const
 
 #### Example 1: Create a RadDocumentMerger
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=DocumentMerger}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=DocumentMerger}} 
+<snippet id='richtexteditor-main-documentmerger-cs' />
+<snippet id='richtexteditor-main-documentmerger-vb' />
 
-````C#
-Telerik.WinForms.Documents.Model.Merging.RadDocumentMerger merger = new RadDocumentMerger(targetDocument);
 
-````
-````VB.NET
-Dim merger As Telerik.WinForms.Documents.Model.Merging.RadDocumentMerger = New RadDocumentMerger(targetDocument)
-
-````
-
-{{endregion}} 
 
 The document passed to the constructor can be obtained through the **Document** property of the __RadDocumentMerger__ instance.
 

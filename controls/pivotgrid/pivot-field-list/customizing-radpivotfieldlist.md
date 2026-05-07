@@ -22,20 +22,10 @@ __RadPivotFieldList__ internally contains a __RadTreeView__ built with nodes com
 
 #### Sorting the Nodes
 
-{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=SortTree}} 
-{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=SortTree}}
-````C#
-this.radPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.Ascending;
-
-````
-````VB.NET
-Me.RadPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.Descending
-
-```` 
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-sorttree-cs' />
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-sorttree-vb' />
 
 
-
-{{endregion}}
 
 | Before Hiding | After Hiding |
 | ------ | ------ |
@@ -45,47 +35,15 @@ Me.RadPivotFieldList1.FieldsControl.SortOrder = System.Windows.Forms.SortOrder.D
 
 The nodes in the pivot field list are built dynamically so in order to hide a particular node and persist the changes we would need to handle the __UpdateCompleted__ event.
 
-{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=SubscribeToUpdateCompleted}} 
-{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=SubscribeToUpdateCompleted}}
-````C#
-this.radPivotGrid1.UpdateCompleted += radPivotGrid1_UpdateCompleted;
-
-````
-````VB.NET
-AddHandler Me.RadPivotGrid1.UpdateCompleted, AddressOf RadPivotGrid1_UpdateCompleted
-
-```` 
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-subscribetoupdatecompleted-cs' />
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-subscribetoupdatecompleted-vb' />
 
 
 
-{{endregion}}
-
-{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=HandleUpdateCompleted}} 
-{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=HandleUpdateCompleted}}
-````C#
-private void radPivotGrid1_UpdateCompleted(object sender, EventArgs e)
-{
-    RadTreeNode promotionField = this.radPivotFieldList1.FieldsControl.Nodes.Where(n => n.Text == "Promotion").FirstOrDefault();
-    if (promotionField != null)
-    {
-        promotionField.Visible = false;
-    }
-}
-
-````
-````VB.NET
-Private Sub RadPivotGrid1_UpdateCompleted(sender As Object, e As EventArgs)
-    Dim promotionField As RadTreeNode = Me.RadPivotFieldList1.FieldsControl.Nodes.Where(Function(n) n.Text = "Promotion").FirstOrDefault()
-    If promotionField IsNot Nothing Then
-        promotionField.Visible = False
-    End If
-End Sub
-
-```` 
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-handleupdatecompleted-cs' />
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-handleupdatecompleted-vb' />
 
 
-
-{{endregion}}
 
 ## Remove Fields Logically
 
@@ -93,28 +51,10 @@ In the case of a [LocalSourceDataProvider]({%slug winforms/pivotgrid/populating-
 
 #### Setup the Providers
 
-{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=SetupProviders}} 
-{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=SetupProviders}}
-````C#
-this.provider = new LocalDataSourceProvider() { ItemsSource = this.orders };
-LocalDataSourceFieldDescriptionsProvider descriptionProvider = new LocalDataSourceFieldDescriptionsProvider();
-descriptionProvider.AddingContainerNode += descriptionProvider_AddingContainerNode;
-descriptionProvider.GetDescriptionsDataAsyncCompleted += descriptionProvider_GetDescriptionsDataAsyncCompleted;
-this.provider.FieldDescriptionsProvider = descriptionProvider;
-
-````
-````VB.NET
-Me.provider = New LocalDataSourceProvider() With {.ItemsSource = orders}
-Dim descriptionProvider As LocalDataSourceFieldDescriptionsProvider = New LocalDataSourceFieldDescriptionsProvider()
-AddHandler descriptionProvider.AddingContainerNode, AddressOf descriptionProvider_AddingContainerNode
-AddHandler descriptionProvider.GetDescriptionsDataAsyncCompleted, AddressOf descriptionProvider_GetDescriptionsDataAsyncCompleted
-Me.provider.FieldDescriptionsProvider = descriptionProvider
-
-```` 
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-setupproviders-cs' />
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-setupproviders-vb' />
 
 
-
-{{endregion}}
 
 | Before Canceling | After Canceling |
 | ------ | ------ |
@@ -122,30 +62,10 @@ Me.provider.FieldDescriptionsProvider = descriptionProvider
 
 #### Cancel Adding a Particular Node
 
-{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=HandleAddingContainerNode}} 
-{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=HandleAddingContainerNode}}
-````C#
-private void descriptionProvider_AddingContainerNode(object sender, ContainerNodeEventArgs e)
-{
-    if (e.ContainerNode.Name == "Promotion")
-    {
-        e.Cancel = true;
-    }
-}
-
-````
-````VB.NET
-Private Sub descriptionProvider_AddingContainerNode(sender As Object, e As ContainerNodeEventArgs)
-    If e.ContainerNode.Name = "Promotion" Then
-        e.Cancel = True
-    End If
-End Sub
-
-```` 
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-handleaddingcontainernode-cs' />
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-handleaddingcontainernode-vb' />
 
 
-
-{{endregion}}
 
 | Before Removing | After Removing |
 | ------ | ------ |
@@ -153,103 +73,26 @@ End Sub
 
 #### Remove a Child Date Node
 
-{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=HandleGetDescriptionsDataAsyncCompleted}} 
-{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=HandleGetDescriptionsDataAsyncCompleted}}
-````C#
-private void descriptionProvider_GetDescriptionsDataAsyncCompleted(object sender, GetDescriptionsDataCompletedEventArgs e)
-{
-    ContainerNode dateNode = e.DescriptionsData.RootFieldInfo.Children.Where(n => n.Name == "Date").FirstOrDefault();
-    if (dateNode != null)
-    {
-        FieldInfoNode yearNode = dateNode.Children.Where(n => n.Name == "Date.Year").FirstOrDefault() as FieldInfoNode;
-        if (yearNode != null)
-        {
-            dateNode.Children.Remove(yearNode);
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub descriptionProvider_GetDescriptionsDataAsyncCompleted(sender As Object, e As GetDescriptionsDataCompletedEventArgs)
-    Dim dateNode As ContainerNode = e.DescriptionsData.RootFieldInfo.Children.Where(Function(n) n.Name = "Date").FirstOrDefault()
-    If dateNode IsNot Nothing Then
-        Dim yearNode As FieldInfoNode = TryCast(dateNode.Children.Where(Function(n) n.Name = "Date.Year").FirstOrDefault(), FieldInfoNode)
-        If yearNode IsNot Nothing Then
-            dateNode.Children.Remove(yearNode)
-        End If
-    End If
-End Sub
-
-```` 
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-handlegetdescriptionsdataasynccompleted-cs' />
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-handlegetdescriptionsdataasynccompleted-vb' />
 
 
-
-{{endregion}}
 
 ## Formatting Nodes
 
 The nodes within the **RadPivotFieldList** can be formatted. You can easily format node elements by handling the **NodeFormatting** event as follows:
 
-{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=SubscribeToNodeFormatting}} 
-{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=SubscribeToNodeFormatting}}
-````C#
-this.radPivotFieldList1.FieldsControl.NodeFormatting += this.FieldsControl_NodeFormatting;
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-subscribetonodeformatting-cs' />
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-subscribetonodeformatting-vb' />
 
-````
-````VB.NET
-AddHandler Me.RadPivotFieldList1.FieldsControl.NodeFormatting, AddressOf FieldsControl_NodeFormatting
 
-````
-
-{{endregion}}
 
 Then, introduce the desired customizations to NodeElements:
 
-{{source=..\SamplesCS\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.cs region=NodeFormatting}} 
-{{source=..\SamplesVB\PivotGrid\PivotFieldList\PivotGridFieldListCustomizations.vb region=NodeFormatting}}
-````C#
-private void FieldsControl_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
-{
-    if (e.Node.Text == "Product")
-    {
-        e.NodeElement.ContentElement.Text = "Custom Product";
-    }
-    if (e.Node.CheckState == Telerik.WinControls.Enumerations.ToggleState.On)
-    {
-        e.NodeElement.ContentElement.ForeColor = Color.Red;
-        e.Node.BackColor = Color.LightGray;
-        e.Node.GradientStyle = GradientStyles.Solid;
-    }
-    else
-    {
-        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
-        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-        e.NodeElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
-    }
-}
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-nodeformatting-cs' />
+<snippet id='pivotgrid-pivotgridfieldlistcustomizations-nodeformatting-vb' />
 
-````
-````VB.NET
-Private Sub FieldsControl_NodeFormatting(sender As Object, e As TreeNodeFormattingEventArgs)
-    If e.Node.Text = "Product" Then
-        e.NodeElement.ContentElement.Text = "Custom Product"
-    End If
 
-    If e.Node.CheckState = Telerik.WinControls.Enumerations.ToggleState.[On] Then
-        e.NodeElement.ContentElement.ForeColor = Color.Red
-        e.Node.BackColor = Color.LightGray
-        e.Node.GradientStyle = GradientStyles.Solid
-    Else
-        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
-        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-        e.NodeElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 |![WinForms RadPivotGrid Formatting Nodes](images/pivotgrid-radpivotfieldlist010.png)
 

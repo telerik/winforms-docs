@@ -34,29 +34,10 @@ You can perform these operations in a single form, but you can also copy/cut and
 
 You can use the __DiagramCommands__ "Cut", "Copy" and "Paste" in order to perform the standard clipboard operations. 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=ClipboardCommands}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=ClipboardCommands}} 
+<snippet id='diagram-clipboard-operations-clipboardcommands-cs'/>
+<snippet id='diagram-clipboard-operations-clipboardcommands-vb'/>
 
-````C#
-this.radDiagram1.SelectedItem = shape1;
-this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "");
-this.radDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "");
-this.radDiagram1.SelectedItem = shape2;
-this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Cut, "");
-this.radDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "");
-
-````
-````VB.NET
-Me.RadDiagram1.SelectedItem = shape1
-Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Copy, "")
-Me.RadDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "")
-Me.RadDiagram1.SelectedItem = shape2
-Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Cut, "")
-Me.RadDiagram2.DiagramElement.TryExecuteCommand(DiagramCommands.Paste, "")
-
-````
-
-{{endregion}} 
+ 
 
 
 

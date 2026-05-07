@@ -15,43 +15,10 @@ __RadChartView__ areas, which support axes, can render a grid that facilitate th
 
 ## Cartesian Grid  
 
-{{source=..\SamplesCS\ChartView\ChartGrid.cs region=cartesian}} 
-{{source=..\SamplesVB\ChartView\ChartGrid.vb region=cartesian}} 
+<snippet id='chartview-chart-grid-cartesian-cs'/>
+<snippet id='chartview-chart-grid-cartesian-vb'/>
 
-````C#
-//add sample data
-LineSeries series = new LineSeries();
-series.DataPoints.Add(new CategoricalDataPoint(500, "Jan"));
-series.DataPoints.Add(new CategoricalDataPoint(300, "Apr"));
-series.DataPoints.Add(new CategoricalDataPoint(400, "Jul"));
-series.DataPoints.Add(new CategoricalDataPoint(250, "Oct"));
-this.radChartView1.Series.Add(series);
-            
-//setup the Cartesian Grid
-CartesianArea area = this.radChartView1.GetArea<CartesianArea>();
-area.ShowGrid = true;
-CartesianGrid grid = area.GetGrid<CartesianGrid>();
-grid.DrawHorizontalFills = true;
-grid.BorderDashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-
-````
-````VB.NET
-Me.RadChartView1.AreaType = ChartAreaType.Cartesian
-Dim area As CartesianArea = Me.RadChartView1.GetArea(Of CartesianArea)()
-Dim grid As CartesianGrid = area.GetGrid(Of CartesianGrid)()
-area.ShowGrid = True
-grid.DrawHorizontalFills = True
-grid.BorderDashStyle = System.Drawing.Drawing2D.DashStyle.DashDot
-Dim series As New LineSeries()
-series.DataPoints.Add(New CategoricalDataPoint(500, "Jan"))
-series.DataPoints.Add(New CategoricalDataPoint(300, "Apr"))
-series.DataPoints.Add(New CategoricalDataPoint(400, "Jul"))
-series.DataPoints.Add(New CategoricalDataPoint(250, "Oct"))
-Me.RadChartView1.Series.Add(series)
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 1: Cartesian Grid
 ![WinForms RadChartView Cartesian Grid](images/chartview-chart-grid001.png)
@@ -86,59 +53,10 @@ The essential properties of CartesianGrid are the following:
 
 ## Polar Grid 
 
-{{source=..\SamplesCS\ChartView\ChartGrid.cs region=polar}} 
-{{source=..\SamplesVB\ChartView\ChartGrid.vb region=polar}} 
+<snippet id='chartview-chart-grid-polar-cs'/>
+<snippet id='chartview-chart-grid-polar-vb'/>
 
-````C#
-//add sample data
-this.radChartView1.AreaType = ChartAreaType.Polar;
-            
-PolarPointSeries polarPointSeries = new PolarPointSeries();
-PolarDataPoint dataPoint = new PolarDataPoint();
-dataPoint.Value = 40;
-dataPoint.Angle = 20;
-polarPointSeries.DataPoints.Add(dataPoint);
-dataPoint = new PolarDataPoint();
-dataPoint.Value = 120;
-dataPoint.Angle = 180;
-polarPointSeries.DataPoints.Add(dataPoint);
-this.radChartView1.Series.Add(polarPointSeries);
-            
-//setup Polar Grid
-PolarArea area = this.radChartView1.GetArea<PolarArea>();
-area.ShowGrid = true;
-PolarGrid grid = area.GetGrid<PolarGrid>();
-grid.BorderDashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-
-````
-````VB.NET
-Me.RadChartView1.AreaType = ChartAreaType.Polar
-Dim area As PolarArea = Me.RadChartView1.GetArea(Of PolarArea)()
-Dim grid As PolarGrid = area.GetGrid(Of PolarGrid)()
-area.ShowGrid = True
-grid.BorderDashStyle = System.Drawing.Drawing2D.DashStyle.Dash
-Dim polarPointSeries As New PolarPointSeries()
-Dim dataPoint As New PolarDataPoint()
-dataPoint.Value = 40
-dataPoint.Angle = 200
-polarPointSeries.DataPoints.Add(dataPoint)
-dataPoint = New PolarDataPoint()
-dataPoint.Value = 35
-dataPoint.Angle = 50
-polarPointSeries.DataPoints.Add(dataPoint)
-dataPoint = New PolarDataPoint()
-dataPoint.Value = 55
-dataPoint.Angle = 320
-polarPointSeries.DataPoints.Add(dataPoint)
-dataPoint = New PolarDataPoint()
-dataPoint.Value = 25
-dataPoint.Angle = 130
-polarPointSeries.DataPoints.Add(dataPoint)
-Me.RadChartView1.Series.Add(polarPointSeries)
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 2: Polar Grid
 ![WinForms RadChartView Polar Grid](images/chartview-chart-grid002.png)

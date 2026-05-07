@@ -24,45 +24,20 @@ The Break elements can be used only in the context of a **Paragraph** element. T
 
 #### Example 1: Insert a break
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\BreakCode.cs region=AddBreak}}
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\BreakCode.vb region=AddBreak}}
-````C#
-Section section = new Section();
-Paragraph paragraph = new Paragraph();
-Break br = new Break(BreakType.PageBreak);
-paragraph.Inlines.Add(br);
-section.Blocks.Add(paragraph);
+<snippet id='richtexteditor-breakcode-addbreak-cs' />
+<snippet id='richtexteditor-breakcode-addbreak-vb' />
 
-````
-````VB.NET
-Dim section As New Section()
-Dim paragraph As New Paragraph()
-Dim br As New Break(BreakType.PageBreak)
-paragraph.Inlines.Add(br)
-section.Blocks.Add(paragraph)
 
-```` 
 
-{{endregion}}
- 
 ## Modifying a Break
 
 The __Break__ element exposes a __BreakType__ property, which specifies the type of the break. __Example 2__ demonstrates how to change it.
 
 #### Example 2: Modify a break
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\BreakCode.cs region=ModifyBreak}}
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\BreakCode.vb region=ModifyBreak}}
-````C#
-br.BreakType = BreakType.LineBreak;
+<snippet id='richtexteditor-breakcode-modifybreak-cs' />
+<snippet id='richtexteditor-breakcode-modifybreak-vb' />
 
-````
-````VB.NET
-br.BreakType = BreakType.LineBreak
-
-````
-
-{{endregion}}
 
 
 # See Also

@@ -17,27 +17,10 @@ For example, the following code snippet will result in the screenshot shown belo
 
 #### Docking a Form 
 
-{{source=..\SamplesCS\Dock\DockingForms.cs region=dockingForm}} 
-{{source=..\SamplesVB\Dock\DockingForms.vb region=dockingForm}} 
+<snippet id='dock-getting-started-dockingform-cs' />
+<snippet id='dock-getting-started-dockingform-vb' />
 
-````C#
-Form form = new Form();
-form.BackColor = Color.Pink;
-form.Text = "My Form";
-this.radDock1.DockControl(form, DockPosition.Left);
-form.Show();
-
-````
-````VB.NET
-Dim form As Form = New Form()
-form.BackColor = Color.Pink
-form.Text = "My Form"
-Me.RadDock1.DockControl(form, DockPosition.Left)
-form.Show()
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadDock Getting Started With UserControl and Forms](images/dock-docking-usercontrols-and-forms-getting-started001.png)
 

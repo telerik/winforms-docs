@@ -24,43 +24,19 @@ The two steps that must be done are these:
 
 1\. Set the DataSource of RadTreeView to a collection of your root objects (a collection of Customer object in this case):
 
-{{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=customers}} 
-{{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=customers}} 
+<snippet id='treeview-bindingtorelateddata-customers-cs' />
+<snippet id='treeview-bindingtorelateddata-customers-vb' />
 
-````C#
-            
-IEnumerable<Customer> customers = context.GetTable<Customer>().ToList();       
-this.radTreeView1.DataSource = customers;
 
-````
-````VB.NET
-Dim customers As IEnumerable(Of Customer) = context.GetTable(Of Customer)().ToList()
-Me.RadTreeView1.DataSource = customers
-
-````
-
-{{endregion}} 
 
 >note The above context object is created by binding the project to the NorthWind database using [LINQ to SQl](https://msdn.microsoft.com/en-us/library/bb386976(v=vs.110).aspx)
 
 2\. Set the __DisplayMember__ corresponding to the DisplayMembers of the different types of objects and set the __ChildMember__ corresponding to the names of the properties that represent the collections of sub objects.
 
-{{source=..\SamplesCS\TreeView\DataBinding\BindingToRelatedData.cs region=relationClasses}} 
-{{source=..\SamplesVB\TreeView\DataBinding\BindingToRelatedData.vb region=relationClasses}} 
+<snippet id='treeview-bindingtorelateddata-relationclasses-cs' />
+<snippet id='treeview-bindingtorelateddata-relationclasses-vb' />
 
-````C#
-            
-this.radTreeView1.DisplayMember = "ContactName\\ShipName\\UnitPrice";
-this.radTreeView1.ChildMember = "Customers\\Orders\\Order_Details";
 
-````
-````VB.NET
-Me.RadTreeView1.DisplayMember = "ContactName\ShipName\UnitPrice"
-Me.RadTreeView1.ChildMember = "Customers\Orders\Order_Details"
-
-````
-
-{{endregion}} 
 
 As a result, we get the following hierarchy in RadTreeView:
 

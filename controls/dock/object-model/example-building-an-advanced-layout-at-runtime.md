@@ -29,29 +29,10 @@ So, let's start building the layout:
 
 #### Docking two ToolWindows 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=dockingTwoToolWindows}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockingTwoToolWindows}} 
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-dockingtwotoolwindows-cs' />
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-dockingtwotoolwindows-vb' />
 
-````C#
-ToolWindow window1 = new ToolWindow();
-window1.Name = "window1";
-this.radDock1.DockWindow(window1, DockPosition.Left);
-ToolWindow window2 = new ToolWindow();
-window2.Name = "window2";
-this.radDock1.DockWindow(window2, window1, DockPosition.Bottom);
-
-````
-````VB.NET
-Dim window1 As ToolWindow = New ToolWindow()
-window1.Name = "window1"
-Me.RadDock1.DockWindow(window1, DockPosition.Left)
-Dim window2 As ToolWindow = New ToolWindow()
-window2.Name = "window2"
-Me.RadDock1.DockWindow(window2, window1, DockPosition.Bottom)
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadDock Two Windows Docked](images/dock-object-model-example-building-an-advanced-layout-at-runtime002.png)
 
@@ -59,21 +40,10 @@ Me.RadDock1.DockWindow(window2, window1, DockPosition.Bottom)
 
 #### Setting relative size 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=settingRelativeSize}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingRelativeSize}} 
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-settingrelativesize-cs' />
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-settingrelativesize-vb' />
 
-````C#
-window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative;
-window2.TabStrip.SizeInfo.RelativeRatio = new SizeF(0, 0.33f);
-
-````
-````VB.NET
-window2.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Relative
-window2.TabStrip.SizeInfo.RelativeRatio = New System.Drawing.SizeF(0, 0.33F)
-
-````
-
-{{endregion}} 
+ 
  
 The result is shown on the picture below:
 
@@ -87,33 +57,10 @@ Now, if we decide to resize the form, the ration of the **TabStrips**' height wi
 
 #### Setting absolute size 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=settingAbsoliteSize}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=settingAbsoliteSize}} 
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-settingabsolitesize-cs' />
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-settingabsolitesize-vb' />
 
-````C#
-ToolWindow window3 = new ToolWindow();
-window3.Name = "window3";
-this.radDock1.DockWindow(window3, DockPosition.Bottom);
-ToolWindow window4 = new ToolWindow();
-window4.Name = "window4";
-this.radDock1.DockWindow(window4, window3, DockPosition.Right);
-window4.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Absolute;
-window4.TabStrip.SizeInfo.AbsoluteSize = new Size(150, 0);
-
-````
-````VB.NET
-Dim window3 As ToolWindow = New ToolWindow()
-window3.Name = "window3"
-Me.RadDock1.DockWindow(window3, DockPosition.Bottom)
-Dim window4 As ToolWindow = New ToolWindow()
-window4.Name = "window4"
-Me.RadDock1.DockWindow(window4, window3, DockPosition.Right)
-window4.TabStrip.SizeInfo.SizeMode = SplitPanelSizeMode.Absolute
-window4.TabStrip.SizeInfo.AbsoluteSize = New Size(150, 0)
-
-````
-
-{{endregion}} 
+ 
  
 This time we set the __Width__ of the `window4` to an absolute value of 150 pixels.  
 
@@ -125,29 +72,10 @@ This time we set the __Width__ of the `window4` to an absolute value of 150 pixe
 
 #### Floating ToolWindows 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=floatingWindows}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=floatingWindows}} 
-	
-````C#
-ToolWindow window5 = new ToolWindow();
-window5.Name = "window5";
-this.radDock1.FloatWindow(window5, new Rectangle(250, 250, 300, 150));
-ToolWindow window6 = new ToolWindow();
-window6.Name = "window6";
-this.radDock1.DockWindow(window6, window5, DockPosition.Right);
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-floatingwindows-cs' />
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-floatingwindows-vb' />
 
-````
-````VB.NET
-Dim window5 As ToolWindow = New ToolWindow()
-window5.Name = "window5"
-Me.RadDock1.FloatWindow(window5, New Rectangle(250, 250, 300, 150))
-Dim window6 As ToolWindow = New ToolWindow()
-window6.Name = "window6"
-Me.RadDock1.DockWindow(window6, window5, DockPosition.Right)
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadDock Floating ToolWindows](images/dock-object-model-example-building-an-advanced-layout-at-runtime007.png) 
 
@@ -155,27 +83,10 @@ Me.RadDock1.DockWindow(window6, window5, DockPosition.Right)
 
 #### Setting the AutoHidePosition and AutoHideSize properties 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=autoHide}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=autoHide}} 
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-autohide-cs' />
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-autohide-vb' />
 
-````C#
-ToolWindow window7 = new ToolWindow();
-window7.Name = "window7";
-window7.AutoHideSize = new Size(100, 100);
-this.radDock1.DockWindow(window7, window4, DockPosition.Bottom);
-((ToolTabStrip)window7.TabStrip).AutoHidePosition = AutoHidePosition.Top;
-
-````
-````VB.NET
-Dim window7 As ToolWindow = New ToolWindow()
-window7.Name = "window7"
-window7.AutoHideSize = New Drawing.Size(100, 100)
-Me.RadDock1.DockWindow(window7, window4, DockPosition.Bottom)
-CType(window7.TabStrip, ToolTabStrip).AutoHidePosition = AutoHidePosition.Top
-
-````
-
-{{endregion}}  
+  
 
 Initially, the layout will look like this:
 
@@ -189,29 +100,10 @@ If the user clicks the `Pin` button of `window7`, it will become auto-hidden to 
 
 #### Adding DocumentWindows 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=addingDocumentWindows}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=addingDocumentWindows}} 
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-addingdocumentwindows-cs' />
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-addingdocumentwindows-vb' />
 
-````C#
-DocumentWindow document1 = new DocumentWindow();
-document1.Name = "document1";
-this.radDock1.AddDocument(document1);
-DocumentWindow document2 = new DocumentWindow();
-document2.Name = "document2";
-this.radDock1.AddDocument(document2, document1, DockPosition.Bottom);
-
-````
-````VB.NET
-Dim document1 As DocumentWindow = New DocumentWindow()
-document1.Name = "document1"
-Me.RadDock1.AddDocument(document1)
-Dim document2 As DocumentWindow = New DocumentWindow()
-document2.Name = "document2"
-Me.RadDock1.AddDocument(document2, document1, DockPosition.Bottom)
-
-````
-
-{{endregion}} 
+ 
 
 
 ![WinForms RadDock Adding DocumentWindows](images/dock-object-model-example-building-an-advanced-layout-at-runtime010.png)
@@ -220,19 +112,10 @@ However, you may not want to have any documents. In this case, set the __MainDoc
 
 #### Hiding the main DocumentContainer 
 
-{{source=..\SamplesCS\Dock\BuildingAdvancedLayout.cs region=dockContainerVisible}} 
-{{source=..\SamplesVB\Dock\BuildingAdvancedLayout.vb region=dockContainerVisible}} 
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-dockcontainervisible-cs' />
+<snippet id='dock-example-building-an-advanced-layout-at-runtime-dockcontainervisible-vb' />
 
-````C#
-this.radDock1.MainDocumentContainerVisible = false;
-
-````
-````VB.NET
-Me.RadDock1.MainDocumentContainerVisible = False
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadDock Hiding the Main DocumentContainer ](images/dock-object-model-example-building-an-advanced-layout-at-runtime011.png)
 

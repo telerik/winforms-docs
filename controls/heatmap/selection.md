@@ -29,24 +29,9 @@ In addition to these properties, the RadHeatMap control also provides two events
 * __SelectedCellIndexChanged__: This event is triggered when the index of the selected cell changes. It allows you to respond to changes for the current selected cell and perform any necessary actions or updates.
 
 #### __Example 1: Modify Selected Cell__
-{{source=..\SamplesCS\HeatMap\HeatMapDataBinding.cs region=Selection_Border}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDataBinding.vb region=Selection_Border}} 
+<snippet id='heatmap-heatmapdatabinding-selection_border-cs' />
+<snippet id='heatmap-heatmapdatabinding-selection_border-vb' />
 
-````C#
-this.radHeatMap1.SelectedCellBorderColor = Color.Green;
-this.radHeatMap1.SelectedCellBorderWidth = 3;
-
-
-````
-````VB.NET
-
-Me.RadHeatMap1.SelectedCellBorderColor = Color.Green
-Me.RadHeatMap1.SelectedCellBorderWidth = 3
-
-
-````
-
-{{endregion}}
 
 
 #### __Figure 1: RadHeatMap with customize selection border__
@@ -57,22 +42,9 @@ Me.RadHeatMap1.SelectedCellBorderWidth = 3
 We can set the selected cell through the __SelectedCellIndex__ property.
 
 #### __Example 2: Programmatic Selection__
-{{source=..\SamplesCS\HeatMap\HeatMapDataBinding.cs region=SelectedCellIndex}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDataBinding.vb region=SelectedCellIndex}} 
+<snippet id='heatmap-heatmapdatabinding-selectedcellindex-cs' />
+<snippet id='heatmap-heatmapdatabinding-selectedcellindex-vb' />
 
-````C#
-this.radHeatMap1.SelectedCellIndex = new CellIndex(2,2);
-
-
-````
-````VB.NET
-
-Me.RadHeatMap1.SelectedCellIndex = New CellIndex(2,2)
-
-
-````
-
-{{endregion}}
 
 
 ## Hover State

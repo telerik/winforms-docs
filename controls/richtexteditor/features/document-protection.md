@@ -29,27 +29,10 @@ The editing restrictions can be used with a set of users or groups. When documen
 
 The users that will be able to edit the document and the groups they are in can be declared like this: 
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=users}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=users}} 
+<snippet id='richtexteditor-documentprotection-users-cs' />
+<snippet id='richtexteditor-documentprotection-users-vb' />
 
-````C#
-            
-this.radRichTextEditor1.Users = new PermissionInfoCollection()
-{
-    PermissionInfo.CreateEveryonePermissionInfo(),
-    new PermissionInfo("jmiller", PermissionType.Individual, "James Miller"),
-    new PermissionInfo("jsmith", PermissionType.Individual, "John Smith"),
-    new PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"),
-    new PermissionInfo("Administrators", PermissionType.Group, "Administrators"),
-};
 
-````
-````VB.NET
-Me.radRichTextEditor1.Users = New PermissionInfoCollection() From {PermissionInfo.CreateEveryonePermissionInfo(), New PermissionInfo("jmiller", PermissionType.Individual, "James Miller"), New PermissionInfo("jsmith", PermissionType.Individual, "John Smith"), New PermissionInfo("rbrown", PermissionType.Individual, "Robert Brown"), New PermissionInfo("Administrators", PermissionType.Group, "Administrators")}
-
-````
-
-{{endregion}} 
 
 This code determines 3 users and two groups but does not specify the relationship between the users and the groups. This is so because users have the potential to change their groups.
 
@@ -59,109 +42,38 @@ The collection kept in the **Users** property of __RadRichTextEditor__ is also u
 
 The current user of the document is set using the __CurrentUser__ property of the editor.  It is of type **UserInfo** - here in addition to the name of the user, the group that the user belongs to can also be passed.
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=current}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=current}} 
+<snippet id='richtexteditor-documentprotection-current-cs' />
+<snippet id='richtexteditor-documentprotection-current-vb' />
 
-````C#
-            
-this.radRichTextEditor1.CurrentUser = new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com");
 
-````
-````VB.NET
-Me.radRichTextEditor1.CurrentUser = New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com")
-
-````
-
-{{endregion}} 
 
 You can also create a collection with the **UserInfos** that will be interacting with the document and wire it with   some UI of yours. For example, if you set-up the collection as follows:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=usersList}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=usersList}} 
+<snippet id='richtexteditor-documentprotection-userslist-cs' />
+<snippet id='richtexteditor-documentprotection-userslist-vb' />
 
-````C#
-            
-List<UserInfo> CurrentUsers = new List<UserInfo>()
-{
-    new UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
-    new UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
-    new UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com"),
-};
 
-````
-````VB.NET
-Dim CurrentUsers As New List(Of UserInfo)() From {
-    New UserInfo("Users", "James Miller", "jmiller", "jmiller@example.com"),
-    New UserInfo("Administrators", "John Smith", "jsmith", "jsmith@example.com"),
-    New UserInfo("Administrators", "Robert Brown", "rbrown", "rbrown@example.com")
-}
-
-````
-
-{{endregion}} 
 
 You can declare a __RadDropDownList__ which will be used to change the current user in the following way:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo1}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo1}} 
+<snippet id='richtexteditor-documentprotection-combo1-cs' />
+<snippet id='richtexteditor-documentprotection-combo1-vb' />
 
-````C#
-            
-RadDropDownList dropdown1 = new RadDropDownList();
-dropdown1.Location = new Point(10, 10);
-this.Controls.Add(dropdown1);
-dropdown1.SelectedIndexChanged += this.dropdown1_SelectedIndexChanged;
 
-````
-````VB.NET
-Dim dropdown1 As New RadDropDownList()
-dropdown1.Location = New Point(10, 10)
-Me.Controls.Add(dropdown1)
-AddHandler dropdown1.SelectedIndexChanged, AddressOf Me.dropdown1_SelectedIndexChanged
-
-````
-
-{{endregion}} 
 
 and populate it like this:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo2}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo2}} 
+<snippet id='richtexteditor-documentprotection-combo2-cs' />
+<snippet id='richtexteditor-documentprotection-combo2-vb' />
 
-````C#
-            
-dropdown1.DataSource = CurrentUsers;
-dropdown1.DisplayMember = "Username";
 
-````
-````VB.NET
-dropdown1.DataSource = CurrentUsers
-dropdown1.DisplayMember = "Username"
-
-````
-
-{{endregion}} 
 
 Then, when the selected item of the combo changes, the **CurrentUser** of the editor will be updated: 
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=combo3}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=combo3}} 
+<snippet id='richtexteditor-documentprotection-combo3-cs' />
+<snippet id='richtexteditor-documentprotection-combo3-vb' />
 
-````C#
-private void dropdown1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-{
-    this.radRichTextEditor1.CurrentUser = ((RadDropDownList)sender).SelectedValue as UserInfo;
-}
 
-````
-````VB.NET
-Private Sub dropdown1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-    Me.radRichTextEditor1.CurrentUser = TryCast(DirectCast(sender, RadDropDownList).SelectedValue, UserInfo)
-End Sub
-
-````
-
-{{endregion}} 
 
 ## Toggling Document Protection
 
@@ -173,37 +85,17 @@ The command opens a dialog that allows you to enter a password. By clicking OK, 
         
 It is also possible to toggle document protection in code-behind, without showing a dialog:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=password}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=password}} 
+<snippet id='richtexteditor-documentprotection-password-cs' />
+<snippet id='richtexteditor-documentprotection-password-vb' />
 
-````C#
-            
-this.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password");
 
-````
-````VB.NET
-Me.radRichTextEditor1.Document.ProtectDocument(DocumentProtectionMode.ReadOnly, "password")
-
-````
-
-{{endregion}} 
 
 The reverse operations can be executed like this:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=unprotect}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=unprotect}} 
+<snippet id='richtexteditor-documentprotection-unprotect-cs' />
+<snippet id='richtexteditor-documentprotection-unprotect-vb' />
 
-````C#
-        
-this.radRichTextEditor1.Document.UnprotectDocument("password");
 
-````
-````VB.NET
-Me.radRichTextEditor1.Document.UnprotectDocument("password")
-
-````
-
-{{endregion}}
 
 Note that the **UnprotectDocument** method will succeed only if the password you have passed as parameter matches the one used to protect the document.
 
@@ -213,49 +105,20 @@ Note that the **UnprotectDocument** method will succeed only if the password you
 
 Here is an example:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=permissions}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=permissions}} 
+<snippet id='richtexteditor-documentprotection-permissions-cs' />
+<snippet id='richtexteditor-documentprotection-permissions-vb' />
 
-````C#
-PermissionRangeInfo info = new PermissionRangeInfo();
-info.Type = PermissionType.Individual;
-info.Name = this.radRichTextEditor1.CurrentUser.Username;
-List<PermissionRangeInfo> infos = new List<PermissionRangeInfo>() { info };
-this.radRichTextEditor1.InsertPermissionRange(infos);
 
-````
-````VB.NET
-Dim info As New PermissionRangeInfo()
-info.Type = PermissionType.Individual
-info.Name = Me.radRichTextEditor1.CurrentUser.Username
-Dim infos As New List(Of PermissionRangeInfo)() From {info}
-Me.radRichTextEditor1.InsertPermissionRange(infos)
-
-````
-
-{{endregion}} 
 
 This code will insert a permission range around the current selection in the document. The type of the permission is *Individual* - meaning that only the **CurrentUser** will be able to edit the region.
 
 To change the highlight color of the permission range, we can use the __EnforcedPermissionRangeBrush__ property.
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentProtection.cs region=color_permissions}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentProtection.vb region=color_permissions}}
-
-````C#
-
-this.radRichTextEditor1.RichTextBoxElement.EnforcedPermissionRangeBrush = new SolidBrush(System.Drawing.Color.Red);
+<snippet id='richtexteditor-documentprotection-color_permissions-cs' />
+<snippet id='richtexteditor-documentprotection-color_permissions-vb' />
 
 
-````
-````VB.NET
 
-Me.radRichTextEditor1.RichTextBoxElement.EnforcedPermissionRangeBrush = New SolidBrush(System.Drawing.Color.Red)
-
-
-````
-
-        
 # See Also
 
  * [Positioning]({%slug winforms/richtexteditor-/features/positioning%})

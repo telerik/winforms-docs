@@ -47,27 +47,9 @@ To programmatically add a __RadToggleButton__ to a form, create a new instance 
 
 #### Adding a RadToggleButton at runtime 
 
-{{source=..\SamplesCS\Buttons\ToggleButton.cs region=creatingbutton}} 
-{{source=..\SamplesVB\Buttons\ToggleButton.vb region=creatingbutton}} 
+<snippet id='buttons-togglebutton-getting-started-creatingbutton-cs' />
+<snippet id='buttons-togglebutton-getting-started-creatingbutton-vb' />
 
-````C#
-RadToggleButton myToggleButton = new RadToggleButton();
-myToggleButton.Text = "Pin";
-myToggleButton.Width = 150;
-myToggleButton.Height = 50;
-this.Controls.Add(myToggleButton);
-
-````
-````VB.NET
-Dim myToggleButton As New RadToggleButton()
-myToggleButton.Text = "Pin"
-myToggleButton.Width = 150
-myToggleButton.Height = 50
-Me.Controls.Add(myToggleButton)
-
-````
-
-{{endregion}} 
 
 
 ## Telerik UI for WinForms Learning Resources

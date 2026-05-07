@@ -26,19 +26,10 @@ This document presenter displays a single page at a time inside the viewer. The 
 
 #### Fit Full Page
 
-{{source=..\SamplesCS\PdfViewer\PdfUI.cs region=FitFullPage}} 
-{{source=..\SamplesVB\PdfViewer\PdfUI.vb region=FitFullPage}} 
+<snippet id='pdfviewer-pdfui-fitfullpage-cs' />
+<snippet id='pdfviewer-pdfui-fitfullpage-vb' />
 
-````C#
-this.radPdfViewer1.FitFullPage = true;
 
-````
-````VB.NET
-Me.RadPdfViewer1.FitFullPage = True
-
-````
-
-{{endregion}}
 
 >caption Figure 2: Fit Full Width
 
@@ -48,19 +39,10 @@ Me.RadPdfViewer1.FitFullPage = True
 
 This mode fills the window with each page and scroll through pages continuously. 
 
-{{source=..\SamplesCS\PdfViewer\PdfUI.cs region=FitToWidth}} 
-{{source=..\SamplesVB\PdfViewer\PdfUI.vb region=FitToWidth}} 
+<snippet id='pdfviewer-pdfui-fittowidth-cs' />
+<snippet id='pdfviewer-pdfui-fittowidth-vb' />
 
-````C#
-this.radPdfViewer1.FitToWidth = true;
 
-````
-````VB.NET
-Me.RadPdfViewer1.FitToWidth = True
-
-````
-
-{{endregion}}
 
 >caption Figure 3: Fit To Width
 

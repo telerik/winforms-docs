@@ -15,56 +15,19 @@ RadOfficeNavigationBar provides popup preview option for its elements when the m
 
 ![WinForms RadOfficeNavigationBar Peek Window](images/officenavigationbar-peek-window001.png) 
 
-{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=PeekWindow}} 
-{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=PeekWindow}} 
-
-````C#
-
-this.radOfficeNavigationBar1.OfficeNavigationBarElement.EnablePeekPopup = true;
-
-````
-````VB.NET
-
-Me.radOfficeNavigationBar1.OfficeNavigationBarElement.EnablePeekPopup = True
+<snippet id='officenavigationbar-officenavigationbargettingstarted-peekwindow-cs' />
+<snippet id='officenavigationbar-officenavigationbargettingstarted-peekwindow-vb' />
 
 
-````
-
-{{endregion}}
 
 To set a content for each peek window, we can use the __PeekPopupOpening__ event. In the event handler, we have access to the current hovered RadPageViewItem and depending on it, we can set the __Page.PeekPopupContent__ property. This property is of type __Control__.
 
 >The Peek Window will take the size of its content. This needs to be considered while using UserControl as a content of the Peek Window.
 
-{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=PeekWindowEvent}} 
-{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=PeekWindowEvent}} 
-
-````C#
-
-private void OfficeNavigationBarElement_PeekPopupOpening(object sender, Telerik.WinControls.UI.OfficeNavigationBar.RadPageViewPeekPopupEventArgs e)
-{
-    RadLabel content = new RadLabel();
-    content.Text = e.Page.Item.Text;
-    content.Font = new Font("Segoe UI Semibold", 27f);
-    content.LoadElementTree();
-    e.Page.PeekPopupContent = content;
-}
-
-````
-````VB.NET
-
-Private Sub OfficeNavigationBarElement_PeekPopupOpening(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.OfficeNavigationBar.RadPageViewPeekPopupEventArgs)
-    Dim content As RadLabel = New RadLabel()
-    content.Text = e.Page.Item.Text
-    content.Font = New Font("Segoe UI Semibold", 27F)
-    content.LoadElementTree()
-    e.Page.PeekPopupContent = content
-End Sub
+<snippet id='officenavigationbar-officenavigationbargettingstarted-peekwindowevent-cs' />
+<snippet id='officenavigationbar-officenavigationbargettingstarted-peekwindowevent-vb' />
 
 
-````
-
-{{endregion}}
 
 In the following image we can see the Peek Window content when it hosts a custom user control.
 

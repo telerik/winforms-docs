@@ -63,38 +63,10 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 #### Iterating the SelectedDates and SpecialDates collections
 
-{{source=..\SamplesCS\Calendar\Calendar1.cs region=iteratingSpecialSelected}} 
-{{source=..\SamplesVB\Calendar\Calendar1.vb region=iteratingSpecialSelected}} 
+<snippet id='calendar-getting-started-iteratingspecialselected-cs' />
+<snippet id='calendar-getting-started-iteratingspecialselected-vb' />
 
-````C#
-private void radButton1_Click(object sender, EventArgs e)
-{
-    foreach (DateTime dateTime in radCalendar1.SelectedDates)
-    {
-        radListControl1.Items.Add(
-          new RadListDataItem("Selected: " + dateTime.ToShortDateString()));
-    }
-    foreach (RadCalendarDay day in radCalendar1.SpecialDays)
-    {
-        radListControl1.Items.Add(
-          new RadListDataItem("Special: " + day.Date.ToShortDateString()));
-    }
-}
 
-````
-````VB.NET
-Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    For Each dateTime As DateTime In RadCalendar1.SelectedDates
-        RadListControl1.Items.Add(New RadListDataItem("Selected: " + dateTime.ToShortDateString()))
-    Next
-    For Each day As RadCalendarDay In RadCalendar1.SpecialDays
-        RadListControl1.Items.Add(New RadListDataItem("Special: " + day.[Date].ToShortDateString()))
-    Next
-End Sub
-
-````
-
-{{endregion}} 
 
 
 Run the application. Notice the three selected and the highlighted special day. Use the navigation buttons at the top of the calendar ">" to move to another month. Because you set the special day __Recurring__ property to *DayInMonth*, the special day is highlighted in every month. 

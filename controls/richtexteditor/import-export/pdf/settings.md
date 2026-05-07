@@ -46,26 +46,10 @@ __PdfFormatProvider__ exposes __ExportSettings__, which allow you to control ima
 	* __Image__: Default mode. All the __InlineUIContainers__ are added as images to the PDF document. 
 
 #### Setting the ExportSettings of the PdfFormatProvider
-{{source=..\SamplesCS\RichTextEditor\ImportExport\PdfFormatProviderForm.cs region=SetupPdfExportSettings}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\PdfFormatProviderForm.vb region=SetupPdfExportSettings}}
-````C#
-PdfExportSettings pdfExportSettings = new PdfExportSettings();
-pdfExportSettings.ContentsDeflaterCompressionLevel = 9;
-pdfExportSettings.DrawPageBodyBackground = false;
-PdfFormatProvider pdfFormatProvider = new PdfFormatProvider();
-pdfFormatProvider.ExportSettings = pdfExportSettings;
+<snippet id='richtexteditor-pdfformatproviderform-setuppdfexportsettings-cs' />
+<snippet id='richtexteditor-pdfformatproviderform-setuppdfexportsettings-vb' />
 
-````
-````VB.NET
-Dim pdfExportSettings As PdfExportSettings = New PdfExportSettings()
-pdfExportSettings.ContentsDeflaterCompressionLevel = 9
-pdfExportSettings.DrawPageBodyBackground = False
-Dim pdfFormatProvider As PdfFormatProvider = New PdfFormatProvider()
-pdfFormatProvider.ExportSettings = pdfExportSettings
 
-````
-
-{{endregion}}
 
 >note __Pdf import__ is currently __not__ supported, so there are no import settings.
 

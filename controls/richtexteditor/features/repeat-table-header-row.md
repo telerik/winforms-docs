@@ -43,39 +43,19 @@ The __[TableRow class](https://docs.telerik.com/devtools/winforms/api/telerik.wi
 
 ####  Set a Repeat Table Header Row using the RepeatOnEveryPage property.
 
-{{source=..\SamplesCS\RichTextEditor\Features\RepeatTableHeaderRowCode.cs region=CreateNewRow}} 
-{{source=..\SamplesVB\RichTextEditor\Features\RepeatTableHeaderRowCode.vb region=CreateNewRow}}
-````C#
-var row = new Telerik.WinForms.Documents.Model.TableRow();
-row.RepeatOnEveryPage = true;
+<snippet id='richtexteditor-repeattableheaderrowcode-createnewrow-cs' />
+<snippet id='richtexteditor-repeattableheaderrowcode-createnewrow-vb' />
 
-````
-````VB.NET
-Dim row = New Telerik.WinForms.Documents.Model.TableRow()
-row.RepeatOnEveryPage = True
 
-```` 
-
-{{endregion}} 
 
 Another option is to use the __ChangeTableRowRepeatOnEveryPage__ method of __RadRichTextBox__, which allows you to change whether a row will be repeated or not. The below code snippet demonstrates how to get the first __TableRow__ in a __[RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%})__ and set it as a repeated header row.
 
 #### Set a Repeat Table Header Row using the ChangeTableRowRepeatOnEveryPage method.
 
-{{source=..\SamplesCS\RichTextEditor\Features\RepeatTableHeaderRowCode.cs region=RepeatRowApi}} 
-{{source=..\SamplesVB\RichTextEditor\Features\RepeatTableHeaderRowCode.vb region=RepeatRowApi}}
-````C#
-var firstRow = this.radRichTextEditor1.Document.EnumerateChildrenOfType<Telerik.WinForms.Documents.Model.TableRow>().First();
-this.radRichTextEditor1.RichTextBoxElement.ChangeTableRowRepeatOnEveryPage(firstRow);
+<snippet id='richtexteditor-repeattableheaderrowcode-repeatrowapi-cs' />
+<snippet id='richtexteditor-repeattableheaderrowcode-repeatrowapi-vb' />
 
-````
-````VB.NET
-Dim firstRow = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of Telerik.WinForms.Documents.Model.TableRow)().First()
-Me.radRichTextEditor1.RichTextBoxElement.ChangeTableRowRepeatOnEveryPage(firstRow)
 
-```` 
-
-{{endregion}} 
 
 ### Via the Built-in UI 
 

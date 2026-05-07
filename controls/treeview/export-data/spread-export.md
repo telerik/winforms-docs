@@ -48,59 +48,18 @@ To use the spread export functionality, an instance of the __TreeViewSpreadExpor
 
 You should pass an instance of a [SpreadExportRenderer]({%slug winforms/telerik-presentation-framework/export-renderers/spreadexportrenderer%}) to the export method as well.
 
-{{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=Export}} 
-{{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=Export}} 
+<snippet id='treeview-spreadexportcode-export-cs' />
+<snippet id='treeview-spreadexportcode-export-vb' />
 
-````C#
-TreeViewSpreadExport exporter = new TreeViewSpreadExport(this.radTreeView1);
-SpreadExportRenderer renderer = new SpreadExportRenderer();
-exporter.RunExport(@"C:\ExportedFile.xlsx", renderer);
 
-````
-````VB.NET
-Dim exporter As New TreeViewSpreadExport(Me.radTreeView1)
-Dim renderer As New SpreadExportRenderer()
-exporter.RunExport("C:\ExportedFile.xlsx", renderer)
-
-````
-
-{{endregion}} 
 
 The __RunExport__ method has several overloads allowing the user to export using a stream as well.
 
 ####  Running export synchronously using a stream
 
-{{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=StreamRunExport}} 
-{{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=StreamRunExport}} 
+<snippet id='treeview-spreadexportcode-streamrunexport-cs' />
+<snippet id='treeview-spreadexportcode-streamrunexport-vb' />
 
-````C#
-string exportFile = @"..\..\exportedData.xlsx";
-using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
-{
-    Telerik.WinControls.Export.TreeViewSpreadExport spreadExporter = new Telerik.WinControls.Export.TreeViewSpreadExport(this.radTreeView1);
-    Telerik.WinControls.Export.SpreadExportRenderer spreadRenderer = new Telerik.WinControls.Export.SpreadExportRenderer();
-    spreadExporter.RunExport(ms, spreadRenderer);
-    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
-    {
-        ms.WriteTo(fileStream);
-    }
-}
-
-````
-````VB.NET
-Dim exportFile As String = "..\..\exportedData.xlsx"
-Using ms As New System.IO.MemoryStream()
-    Dim spreadExporter As New Telerik.WinControls.Export.TreeViewSpreadExport(Me.radTreeView1)
-    Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
-    spreadExporter.RunExport(ms, spreadRenderer)
-    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
-        ms.WriteTo(fileStream)
-    End Using
-End Using
-
-````
-
-{{endregion}} 
 
 
 ## Properties
@@ -146,26 +105,10 @@ End Using
     * __ExportCell:__ Allows you to set the styles of the exported cell.
     * __RowIndex:__ The index of the currently exported row. Here is an example of formatting the exported TreeView
 
-{{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=Formatting}} 
-{{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=Formatting}} 
+<snippet id='treeview-spreadexportcode-formatting-cs' />
+<snippet id='treeview-spreadexportcode-formatting-vb' />
 
-````C#
-void exporter_CellFormatting(object sender, TreeViewSpreadExportCellFormattingEventArgs e)
-{
-    e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC");
-    e.ExportCell.Font = new Font("Consolas", 10, FontStyle.Underline);
-}
 
-````
-````VB.NET
-Private Sub exporter_CellFormatting(ByVal sender As Object, ByVal e As TreeViewSpreadExportCellFormattingEventArgs)
-    e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC")
-    e.ExportCell.Font = New Font("Consolas", 10, FontStyle.Underline)
-End Sub
-
-````
-
-{{endregion}}
 
 >caption Figure 2: Export using formating
 
@@ -189,114 +132,26 @@ The following example will demonstrate how the async spread export feature can b
 
 1.The following code shows how you can subscribe to the notification events and start the async export operation.
 
-{{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=AsyncExport}} 
-{{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=AsyncExport}} 
+<snippet id='treeview-spreadexportcode-asyncexport-cs' />
+<snippet id='treeview-spreadexportcode-asyncexport-vb' />
 
-````C#
-private void btnExportAsync_Click(object sender, EventArgs e)
-{
-    TreeViewSpreadExport spreadExporter = new TreeViewSpreadExport(this.radTreeView1);
-    spreadExporter.AsyncExportProgressChanged += spreadExporter_AsyncExportProgressChanged;
-    spreadExporter.AsyncExportCompleted += spreadExporter_AsyncExportCompleted;
-    SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-    spreadExporter.RunExportAsync(@"..\..\ExportedFile.xlsx", exportRenderer);
-}
 
-````
-````VB.NET
-Private Sub btnExportAsync_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Dim spreadExporter As New TreeViewSpreadExport(Me.radTreeView1)
-    AddHandler spreadExporter.AsyncExportProgressChanged, AddressOf spreadExporter_AsyncExportProgressChanged
-    AddHandler spreadExporter.AsyncExportCompleted, AddressOf spreadExporter_AsyncExportCompleted
-    Dim exportRenderer As New SpreadExportRenderer()
-    spreadExporter.RunExportAsync("..\..\ExportedFile.xlsx", exportRenderer)
-End Sub
-
-````
-
-{{endregion}} 
 
 2.Handle the notification events and report progress.
 
-{{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=ReportProgress}} 
-{{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=ReportProgress}} 
+<snippet id='treeview-spreadexportcode-reportprogress-cs' />
+<snippet id='treeview-spreadexportcode-reportprogress-vb' />
 
-````C#
-private void spreadExporter_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
-{
-    this.radProgressBar1.Value1 = e.ProgressPercentage;
-}
-private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-{
-    RadMessageBox.Show("Async Spread Export Completed!");
-    this.radProgressBar1.Value1 = 0;
-}
 
-````
-````VB.NET
-Private Sub spreadExporter_AsyncExportProgressChanged(ByVal sender As Object, ByVal e As ProgressChangedEventArgs)
-    Me.radProgressBar1.Value1 = e.ProgressPercentage
-End Sub
-Private Sub spreadExporter_AsyncExportCompleted(ByVal sender As Object, ByVal e As AsyncCompletedEventArgs)
-    RadMessageBox.Show("Async Spread Export Completed!")
-    Me.radProgressBar1.Value1 = 0
-End Sub
-
-````
-{{endregion}} 
 
 The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
 
 ####  Running export asynchronously using a stream
 
-{{source=..\SamplesCS\TreeView\SpreadExportCode.cs region=StreamRunExportAsync}} 
-{{source=..\SamplesVB\TreeView\SpreadExportCode.vb region=StreamRunExportAsync}} 
+<snippet id='treeview-spreadexportcode-streamrunexportasync-cs' />
+<snippet id='treeview-spreadexportcode-streamrunexportasync-vb' />
 
-````C#
-        
-private void buttonRunExportAsync_Click(object sender, EventArgs e)
-{
-    System.IO.MemoryStream ms = new System.IO.MemoryStream();         
-    Telerik.WinControls.Export.TreeViewSpreadExport  spreadExporter = new Telerik.WinControls.Export.TreeViewSpreadExport (this.radTreeView1);
-    Telerik.WinControls.Export.SpreadExportRenderer spreadRenderer = new Telerik.WinControls.Export.SpreadExportRenderer();
-    spreadExporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
-    spreadExporter.RunExportAsync(ms, spreadRenderer);
-}
-        
-private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-{
-    RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
-    string exportFile = @"..\..\exportedAsyncData.xlsx";
-    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
-    { 
-        MemoryStream ms = args.Result as MemoryStream;
-        ms.WriteTo(fileStream);
-        ms.Close();
-    }
-}
 
-````
-````VB.NET
-Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
-    Dim ms As New System.IO.MemoryStream()
-    Dim spreadExporter As New Telerik.WinControls.Export.TreeViewSpreadExport(Me.radTreeView1)
-    Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
-    AddHandler spreadExporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
-    spreadExporter.RunExportAsync(ms, spreadRenderer)
-End Sub
-Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
-    Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
-    Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
-    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
-        Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
-        ms.WriteTo(fileStream)
-        ms.Close()
-    End Using
-End Sub
-
-````
-
-{{endregion}} 
 
 ## Async Export Methods and Events
 

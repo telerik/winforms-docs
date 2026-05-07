@@ -44,47 +44,19 @@ position: 5
 
 #### Formatting ticks
 
-{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=TickFormattingEvent}} 
-{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=TickFormattingEvent}} 
+<snippet id='track-and-status-controls-trackbarpropertiesandevents-tickformattingevent-cs' />
+<snippet id='track-and-status-controls-trackbarpropertiesandevents-tickformattingevent-vb' />
 
-````C#
-void radTrackBar1_TickFormatting(object sender, TickFormattingEventArgs e)
-{
-    e.TickElement.Line1.BackColor = Color.Red;
-}
 
-````
-````VB.NET
-Private Sub radTrackBar1_TickFormatting(sender As Object, e As TickFormattingEventArgs)
-    e.TickElement.Line1.BackColor = Color.Red
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTrackBar Formatting ticks](images/track-and-status-controls-trackbar-programming-radtrackbar023.png)
 
 #### Formatting labels
 
-{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=LabelFormattingEvent}} 
-{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=LabelFormattingEvent}} 
+<snippet id='track-and-status-controls-trackbarpropertiesandevents-labelformattingevent-cs' />
+<snippet id='track-and-status-controls-trackbarpropertiesandevents-labelformattingevent-vb' />
 
-````C#
-void radTrackBar1_LabelFormatting(object sender, LabelFormattingEventArgs e)
-{
-    e.LabelElement.ForeColor = Color.Red;
-}
 
-````
-````VB.NET
-Private Sub radTrackBar1_LabelFormatting(sender As Object, e As LabelFormattingEventArgs)
-    e.LabelElement.ForeColor = Color.Red
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTrackBar Formatting labels](images/track-and-status-controls-trackbar-programming-radtrackbar024.png)
 

@@ -16,23 +16,10 @@ The functionality can be enabled by setting the `IsWordWrapEnabled` property to 
 
 #### Example 1: Setting IsWordWrapEnabled property
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=WordWrap}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=WordWrap}}
-
-````C#
-
-this.radSyntaxEditor1.IsWordWrapEnabled = true;  
+<snippet id='syntax-editor-syntaxeditorgettingstarted-wordwrap-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-wordwrap-vb' />
 
 
-````
-````VB.NET
-
-Me.RadSyntaxEditor1.IsWordWrapEnabled = True
-
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: RadSyntaxEditor with Word Wrapping
 

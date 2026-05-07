@@ -31,25 +31,8 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Buttons\DropDownButton.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\Buttons\DropDownButton.vb region=AccessingCustomizingElements}} 
+<snippet id='buttons-dropdownbutton-accessing-and-customizing-elements-accessingcustomizingelements-cs' />
+<snippet id='buttons-dropdownbutton-accessing-and-customizing-elements-accessingcustomizingelements-vb' />
 
-````C#
-this.radDropDownButton1.DropDownButtonElement.ActionButton.ButtonFillElement.BackColor = Color.Red;
-this.radDropDownButton1.DropDownButtonElement.ActionButton.ForeColor = Color.Yellow;
-this.radDropDownButton1.DropDownButtonElement.ArrowButton.Fill.BackColor = Color.Yellow;
-this.radDropDownButton1.DropDownButtonElement.ArrowButton.Border.BoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder;
-this.radDropDownButton1.DropDownButtonElement.ArrowButton.Border.ForeColor = Color.Black;
 
-````
-````VB.NET
-Me.radDropDownButton1.DropDownButtonElement.ActionButton.ButtonFillElement.BackColor = Color.Red
-Me.radDropDownButton1.DropDownButtonElement.ActionButton.ForeColor = Color.Yellow
-Me.radDropDownButton1.DropDownButtonElement.ArrowButton.Fill.BackColor = Color.Yellow
-Me.radDropDownButton1.DropDownButtonElement.ArrowButton.Border.BoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder
-Me.radDropDownButton1.DropDownButtonElement.ArrowButton.Border.ForeColor = Color.Black
-
-````
-
-{{endregion}}  
 

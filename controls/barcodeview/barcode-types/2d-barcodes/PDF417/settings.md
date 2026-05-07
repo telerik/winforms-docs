@@ -44,31 +44,9 @@ One thing to keep in mind is that these properties are related to the data, whic
 
 #### Example
 
-{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=PdfBarcode}} 
-{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=PdfBarcode}}
+<snippet id='barcodeview-pdf417-settings-pdfbarcode-cs' />
+<snippet id='barcodeview-pdf417-settings-pdfbarcode-vb' />
 
-````C#
 
-PDF417 encoder = new PDF417();
-encoder.Columns = 3;
-encoder.Rows = 3;
-encoder.EncodingMode = EncodingMode.Auto;
-encoder.ECLevel = 2;
-this.radBarcodeView1.Value = "123456Sofia";
-this.radBarcodeView1.Symbology = encoder;
-           
-````
-````VB.NET
-
-Dim encoder As PDF417 = New PDF417()
-encoder.Columns = 3
-encoder.Rows = 3
-encoder.EncodingMode = EncodingMode.Auto
-encoder.ECLevel = 2
-Me.radBarcodeView1.Value = "123456Sofia"
-Me.radBarcodeView1.Symbology = encoder
-
-```` 
-{{endregion}}
 
  

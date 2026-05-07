@@ -99,19 +99,10 @@ All types of __Cross-References__ can be inserted using methods of __RadRichText
 
 Every bookmark has a unique name. So in order to insert a reference to a bookmark, you need its name. __RadRichTextEditor__ has the following method:
 
-{{source=..\SamplesCS\RichTextEditor\Features\CrossReference.cs region=bookmark}} 
-{{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=bookmark}} 
+<snippet id='richtexteditor-crossreference-bookmark-cs' />
+<snippet id='richtexteditor-crossreference-bookmark-vb' />
 
-````C#
-radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, false);
 
-````
-````VB.NET
-radRichTextEditor1.InsertCrossReferenceToBookmark("Bookmark Name", ReferenceContentType.EntireContent, False)
-
-````
-
-{{endregion}} 
 
 __ReferenceContentType__ is an enumeration that has five values – __EntireContent__, __OnlyLabelAndNumber__, __OnlyCaption__, __PageNumber__ and __RelativePosition__. As you can see, those values are the same as in the "Insert reference to:" combo box. The parameter "InsertAsHyperlink" is pretty self-explanatory and also can be read about [in this section](#insert-cross-reference).
 
@@ -119,19 +110,10 @@ __ReferenceContentType__ is an enumeration that has five values – __EntireCont
 
 You have to pass the paragraph (with heading style applied, of course) that you want to create a Reference to. The method signature is as follows:
 
-{{source=..\SamplesCS\RichTextEditor\Features\CrossReference.cs region=heading}} 
-{{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=heading}}
+<snippet id='richtexteditor-crossreference-heading-cs' />
+<snippet id='richtexteditor-crossreference-heading-vb' />
 
-````C#
-radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceContentType.OnlyCaption, true);
 
-````
-````VB.NET
-radRichTextEditor1.InsertCrossReferenceToHeading(headingParagraph, ReferenceContentType.OnlyCaption, True)
-
-```` 
-
-{{endregion}}
 
 The parameters are almost the same, except the first one. It represents the paragraph you want to reference. The other two have the same purpose.
 
@@ -139,19 +121,10 @@ The parameters are almost the same, except the first one. It represents the para
 
 The method signature is:
 
-{{source=..\SamplesCS\RichTextEditor\Features\CrossReference.cs region=caption}} 
-{{source=..\SamplesVB\RichTextEditor\Features\CrossReference.vb region=caption}} 
+<snippet id='richtexteditor-crossreference-caption-cs' />
+<snippet id='richtexteditor-crossreference-caption-vb' />
 
-````C#
-radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber,false);
 
-````
-````VB.NET
-radRichTextEditor1.InsertCrossReferenceToCaption(captionParagraph, ReferenceContentType.OnlyLabelAndNumber, False)
-
-````
-
-{{endregion}}
 
 The first parameter represents the paragraph (__Caption__) you want to refer.
             

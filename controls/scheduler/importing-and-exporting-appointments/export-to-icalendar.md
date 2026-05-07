@@ -15,42 +15,19 @@ __RadScheduler__ allows you to export appointments in the industry-standard ICal
 
 #### Export to String
 
-{{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalExport}} 
-{{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalExport}} 
+<snippet id='scheduler-imex-icalexport-cs' />
+<snippet id='scheduler-imex-icalexport-vb' />
 
-````C#
-string exportResult = this.radScheduler1.Export(new SchedulerICalendarExporter());
 
-````
-````VB.NET
-Dim exportResult As String = Me.RadScheduler1.Export(New SchedulerICalendarExporter)
-
-````
-
-{{endregion}} 
 
 Another override of the __Export__ method allows writing the appointment data to a Stream. The following example demonstrates how easy it is to export the appointment data contained in a RadScheduler instance to a file:
 
 #### Export to Stream
 
-{{source=..\SamplesCS\Scheduler\ImportExport\ImEx.cs region=iCalEFile}} 
-{{source=..\SamplesVB\Scheduler\ImportExport\ImEx.vb region=iCalEFile}} 
+<snippet id='scheduler-imex-icalefile-cs' />
+<snippet id='scheduler-imex-icalefile-vb' />
 
-````C#
-using (FileStream stream = File.Create("schedule.ics"))
-{
-    this.radScheduler1.Export(stream, new SchedulerICalendarExporter());
-}
 
-````
-````VB.NET
-Using stream As FileStream = File.Create("schedule.ics")
-    Me.RadScheduler1.Export(stream, New SchedulerICalendarExporter)
-End Using
-
-````
-
-{{endregion}}
 
 # See Also
 

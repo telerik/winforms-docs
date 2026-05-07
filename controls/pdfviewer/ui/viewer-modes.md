@@ -39,19 +39,10 @@ The mode of the viewer is set using the __ViewerMode__ property:
 
 #### With Code
 
-{{source=..\SamplesCS\PdfViewer\PdfUI.cs region=ViewerMode}} 
-{{source=..\SamplesVB\PdfViewer\PdfUI.vb region=ViewerMode}} 
+<snippet id='pdfviewer-pdfui-viewermode-cs' />
+<snippet id='pdfviewer-pdfui-viewermode-vb' />
 
-````C#
-this.radPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection;
 
-````
-````VB.NET
-Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
-
-````
-
-{{endregion}}
 
 # See Also
 

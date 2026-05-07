@@ -20,23 +20,10 @@ This property allows you to get the currently active document among the document
 ![WinForms RadDock ActiveDocument](images/raddock-document-manager001.png)        
 
 #### Get the active DocumentWindow\ToolWindow 
-{{source=..\SamplesCS\Dock\DocumentManager1.cs region=activeWindows}} 
-{{source=..\SamplesVB\Dock\DocumentManager1.vb region=activeWindows}} 
+<snippet id='dock-document-manager-activewindows-cs' />
+<snippet id='dock-document-manager-activewindows-vb' />
 
-````C#
-DockWindow activeDocument = this.radDock1.DocumentManager.ActiveDocument; //documentWindow2
-DockWindow activeWindow = this.radDock1.ActiveWindow; //toolWindow2
-//set active window/document
-this.radDock1.ActiveWindow = activeDocument;
-
-````
-````VB.NET
-Dim activeDocument As DockWindow = Me.RadDock1.DocumentManager.ActiveDocument 'documentWindow2
-Dim activeWindow As DockWindow = Me.RadDock1.ActiveWindow 'toolWindow2
-
-````
-
-{{endregion}} 
+ 
 
 ## BoldActiveDocument
  
@@ -44,19 +31,10 @@ Determines whether the currently active document's **Text** will be displayed i
 
 #### Use the __BoldActiveDocument__ property
 
-{{source=..\SamplesCS\Dock\DocumentManager1.cs region=boldActive}} 
-{{source=..\SamplesVB\Dock\DocumentManager1.vb region=boldActive}} 
+<snippet id='dock-document-manager-boldactive-cs' />
+<snippet id='dock-document-manager-boldactive-vb' />
 
-````C#
-this.radDock1.DocumentManager.BoldActiveDocument = false;
-
-````
-````VB.NET
-Me.RadDock1.DocumentManager.BoldActiveDocument = False
-
-````
-
-{{endregion}} 
+ 
 
 ## DocumentInsertOrder
 
@@ -64,19 +42,10 @@ Gets or sets the insert order to be used when adding new documents. By default, 
 
 #### Set the __DocumentInsertOrder__ property
 
-{{source=..\SamplesCS\Dock\DocumentManager2.cs region=insertOrderInFront}} 
-{{source=..\SamplesVB\Dock\DocumentManager2.vb region=insertOrderInFront}} 
+<snippet id='dock-document-manager-insertorderinfront-cs' />
+<snippet id='dock-document-manager-insertorderinfront-vb' />
 
-````C#
-this.radDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.InFront;
-
-````
-````VB.NET
-Me.RadDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.InFront
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 1: New DocumentWindows are inserted before the first window.
 
@@ -86,19 +55,10 @@ The other available option for this property is *ToBack.* The behavior of **Docu
 
 #### Use the *ToBack* insert order
 
-{{source=..\SamplesCS\Dock\DocumentManager2.cs region=insertOrderToBack}} 
-{{source=..\SamplesVB\Dock\DocumentManager2.vb region=insertOrderToBack}} 
+<snippet id='dock-document-manager-insertordertoback-cs' />
+<snippet id='dock-document-manager-insertordertoback-vb' />
 
-````C#
-this.radDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.ToBack;
-
-````
-````VB.NET
-Me.RadDock1.DocumentManager.DocumentInsertOrder = DockWindowInsertOrder.ToBack
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 2: New Document windows are inserted after the first window.
 

@@ -24,29 +24,10 @@ Here is how to setup Ohlc series:
 
 #### Initial Setup OhlcSeries
 
-{{source=..\SamplesCS\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.cs region=ohlc}} 
-{{source=..\SamplesVB\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.vb region=ohlc}} 
+<snippet id='chartview-ohlc-and-candlestick-ohlc-cs'/>
+<snippet id='chartview-ohlc-and-candlestick-ohlc-vb'/>
 
-````C#
-OhlcSeries ohlcSeries = new OhlcSeries();
-ohlcSeries.DataPoints.Add(new OhlcDataPoint(10, 11, 7, 8, DateTime.Now));
-ohlcSeries.DataPoints.Add(new OhlcDataPoint(8, 9, 5, 9, DateTime.Now.AddDays(1)));
-ohlcSeries.DataPoints.Add(new OhlcDataPoint(12, 12, 9, 10, DateTime.Now.AddDays(2)));
-ohlcSeries.DataPoints.Add(new OhlcDataPoint(7, 10, 6, 9, DateTime.Now.AddDays(3)));
-this.radChartView1.Series.Add(ohlcSeries);
 
-````
-````VB.NET
-Dim ohlcSeries As New OhlcSeries()
-ohlcSeries.DataPoints.Add(New OhlcDataPoint(10, 11, 7, 8, DateTime.Now))
-ohlcSeries.DataPoints.Add(New OhlcDataPoint(8, 9, 5, 9, DateTime.Now.AddDays(1)))
-ohlcSeries.DataPoints.Add(New OhlcDataPoint(12, 12, 9, 10, DateTime.Now.AddDays(2)))
-ohlcSeries.DataPoints.Add(New OhlcDataPoint(7, 10, 6, 9, DateTime.Now.AddDays(3)))
-Me.RadChartView1.Series.Add(ohlcSeries)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Initial Setup OhlcSeries
 ![WinForms RadChartView Initial Setup OhlcSeries](images/chartview-series-types-ohlc-and-candlestick003.png)
@@ -55,29 +36,10 @@ Here is how to setup Candlestick series:
 
 #### Initial Setup CandlestickSeries
 
-{{source=..\SamplesCS\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.cs region=candlestick}} 
-{{source=..\SamplesVB\ChartView\Series\OhlcAndCandlestick\OhlcSeriesForm.vb region=candlestick}} 
+<snippet id='chartview-ohlc-and-candlestick-candlestick-cs'/>
+<snippet id='chartview-ohlc-and-candlestick-candlestick-vb'/>
 
-````C#
-CandlestickSeries candlestickSeries = new CandlestickSeries();
-candlestickSeries.DataPoints.Add(new OhlcDataPoint(10, 11, 7, 8, DateTime.Now));
-candlestickSeries.DataPoints.Add(new OhlcDataPoint(8, 9, 5, 9, DateTime.Now.AddDays(1)));
-candlestickSeries.DataPoints.Add(new OhlcDataPoint(12, 12, 9, 10, DateTime.Now.AddDays(2)));
-candlestickSeries.DataPoints.Add(new OhlcDataPoint(7, 10, 6, 9, DateTime.Now.AddDays(3)));
-this.radChartView1.Series.Add(candlestickSeries);
 
-````
-````VB.NET
-Dim candlestickSeries As New CandlestickSeries()
-candlestickSeries.DataPoints.Add(New OhlcDataPoint(10, 11, 7, 8, DateTime.Now))
-candlestickSeries.DataPoints.Add(New OhlcDataPoint(8, 9, 5, 9, DateTime.Now.AddDays(1)))
-candlestickSeries.DataPoints.Add(New OhlcDataPoint(12, 12, 9, 10, DateTime.Now.AddDays(2)))
-candlestickSeries.DataPoints.Add(New OhlcDataPoint(7, 10, 6, 9, DateTime.Now.AddDays(3)))
-Me.RadChartView1.Series.Add(candlestickSeries)
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Initial Setup CandlestickSeries
 ![WinForms RadChartView Initial Setup CandlestickSeries](images/chartview-series-types-ohlc-and-candlestick004.png)

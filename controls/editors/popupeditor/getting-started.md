@@ -50,41 +50,10 @@ Add __Click__ event handlers for the both buttons and then use the following cod
 
 #### Buttons event handlers 
 
-{{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=EventHandlers}} 
-{{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=EventHandlers}} 
+<snippet id='editors-popupeditorcode-eventhandlers-cs' />
+<snippet id='editors-popupeditorcode-eventhandlers-vb' />
 
-````C#
-private void radButton1_Click(object sender, EventArgs e)
-{
-    this.radPopupEditor1.Text = radTextBox1.Text + " " + radTextBox2.Text;
-    radPopupEditor1.PopupEditorElement.ClosePopup();
-}
-private void radButton2_Click(object sender, EventArgs e)
-{
-    this.radPopupEditor1.Text = "";
-    radTextBox1.Text = "";
-    radTextBox2.Text = "";
-    radTextBox3.Text = "";
-    radPopupEditor1.PopupEditorElement.ClosePopup();
-}
 
-````
-````VB.NET
-Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Me.radPopupEditor1.Text = radTextBox1.Text & " " & radTextBox2.Text
-    radPopupEditor1.PopupEditorElement.ClosePopup()
-End Sub
-Private Sub radButton2_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Me.radPopupEditor1.Text = ""
-    radTextBox1.Text = ""
-    radTextBox2.Text = ""
-    radTextBox3.Text = ""
-    radPopupEditor1.PopupEditorElement.ClosePopup()
-End Sub
-
-````
-
-{{endregion}} 
 
 This way when __Submit__ is pressed the name will be displayed in the control's text box.
         

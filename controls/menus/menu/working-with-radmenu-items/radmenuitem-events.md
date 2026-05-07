@@ -21,52 +21,19 @@ The key event for the __RadMenuItem__ object is the __Click__ event, which is fi
 
 #### Handling the ToggleStateChanging event
 
-{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanging}} 
-{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanging}} 
+<snippet id='menus-menuevents-togglestatechanging-cs' />
+<snippet id='menus-menuevents-togglestatechanging-vb' />
 
-````C#
-void radMenuItem2_ToggleStateChanging(object sender, StateChangingEventArgs args)
-{
-    if (args.NewValue == Telerik.WinControls.Enumerations.ToggleState.Indeterminate)
-    {
-        args.Cancel = true;
-    }
-}
 
-````
-````VB.NET
-Private Sub radMenuItem2_ToggleStateChanging(ByVal sender As Object, ByVal args As StateChangingEventArgs)
-    If args.NewValue = Telerik.WinControls.Enumerations.ToggleState.Indeterminate Then
-        args.Cancel = True
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 * __ToggleStateChanged__: This event fires when the check-box state changes between one of the __ToggleState__ enumeration values of *On*, *Off* or *Indeterminate*. The __StateChangedEventaArgs__ passed to this event handler contain the __ToggleState__ property.
 
 #### Handling the ToggleStateChanged event
 
-{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=toggleStateChanged}} 
-{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=toggleStateChanged}} 
+<snippet id='menus-menuevents-togglestatechanged-cs' />
+<snippet id='menus-menuevents-togglestatechanged-vb' />
 
-````C#
-void radMenuItem2_ToggleStateChanged(object sender, StateChangedEventArgs args)
-{
-    MessageBox.Show(args.ToggleState.ToString());
-}
 
-````
-````VB.NET
-Private Sub radMenuItem2_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-    MessageBox.Show(args.ToggleState.ToString())
-End Sub
-
-````
-
-{{endregion}} 
 
 ## RadMenuComboItem Events
 
@@ -74,33 +41,10 @@ For the __RadMenuComboItem__, you will probably want to work with the events of 
 
 #### Handling the SelectedIndexChanged event of RadMenuComboItem
 
-{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=comboEvent}} 
-{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=comboEvent}} 
+<snippet id='menus-menuevents-comboevent-cs' />
+<snippet id='menus-menuevents-comboevent-vb' />
 
-````C#
-void Form1_Load(object sender, EventArgs e)
-{
-    radMenuComboItem1.ComboBoxElement.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(ComboBoxElement_SelectedIndexChanged);
-}
-void ComboBoxElement_SelectedIndexChanged(object sender, EventArgs e)
-{
-    RadListDataItem item = (sender as RadDropDownListElement).SelectedItem as RadListDataItem;
-    MessageBox.Show(item.Text);
-}
 
-````
-````VB.NET
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-    AddHandler radMenuComboItem1.ComboBoxElement.SelectedIndexChanged, AddressOf ComboBoxElement_SelectedIndexChanged
-End Sub
-Private Sub ComboBoxElement_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
-    Dim item As RadListDataItem = TryCast((TryCast(sender, RadDropDownListElement)).SelectedItem, RadListDataItem)
-    MessageBox.Show(item.Text)
-End Sub
-
-````
-
-{{endregion}} 
 
 ## RadMenuContentItem
 
@@ -108,29 +52,10 @@ Handle the events for the control assigned to RadMenuContentItem.__ContentElemen
 
 #### Handling events for controls embedded in RadMenuContentItem
 
-{{source=..\SamplesCS\Menus\Menu\MenuEvents.cs region=contentItem}} 
-{{source=..\SamplesVB\Menus\Menu\MenuEvents.vb region=contentItem}} 
+<snippet id='menus-menuevents-contentitem-cs' />
+<snippet id='menus-menuevents-contentitem-vb' />
 
-````C#
-RadMenuContentItem buttonItem = new RadMenuContentItem();
-RadButtonElement button = new RadButtonElement();
-button.Text = "OK";
-button.Click += new EventHandler(button_Click);
-buttonItem.ContentElement = button;
-radMenu1.Items.Add(buttonItem);
 
-````
-````VB.NET
-Dim buttonItem As New RadMenuContentItem()
-Dim button As New RadButtonElement()
-button.Text = "OK"
-AddHandler button.Click, AddressOf button_Click
-buttonItem.ContentElement = button
-RadMenu1.Items.Add(buttonItem)
-
-````
-
-{{endregion}} 
 
 # See Also
 

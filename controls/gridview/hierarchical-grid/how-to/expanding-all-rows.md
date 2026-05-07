@@ -13,43 +13,8 @@ previous_url: gridview-hirarchical-grid-how-to-expading-all-rows
 
 In order to expand all rows in __RadGridView__ you have to iterate through them and set the __IsExpanded__ property to __true__. The following code snippet demonstrates how to achieve it. You can call the method when the grid is loaded or when you click a button :
 
-{{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=expandAllRows}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=expandAllRows}} 
-
-````C#
-void ExpandAllRows(GridViewTemplate template, bool expanded)
-{
-    foreach (GridViewRowInfo row in template.Rows)
-    {
-        row.IsExpanded = expanded;
-    }
-    if (template.Templates.Count > 0)
-    {
-        foreach (GridViewTemplate childTemplate in template.Templates)
-        {
-            ExpandAllRows(childTemplate, true);
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub ExpandAllRows(ByVal template As GridViewTemplate, ByVal expanded As Boolean)
-    For Each row As GridViewRowInfo In template.Rows
-        row.IsExpanded = expanded
-    Next
-    If template.Templates.Count > 0 Then
-        For Each childTemplate As GridViewTemplate In template.Templates
-            ExpandAllRows(childTemplate, True)
-        Next
-    End If
-End Sub
-
-````
-
-{{endregion}} 
-
-
+<snippet id='gridview-howto-expandallrows-cs' />
+<snippet id='gridview-howto1-expandallrows-vb' />
 
 # See Also
 * [Accessing Child Templates]({%slug winforms/gridview/hierarchical-grid/how-to/accessing-child-templates%})

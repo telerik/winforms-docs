@@ -15,24 +15,8 @@ The RadGridView.**FilterExpressionChanged** event is the only place where you ca
 
 #### Filter expression changed event
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterExpressionChangedEvent}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterExpressionChangedEvent}} 
-
-````C#
-void radGridView1_FilterExpressionChanged(object sender, Telerik.WinControls.UI.FilterExpressionChangedEventArgs e)
-{
-    e.FilterExpression = "(([ProductName] LIKE '%Qu%'))";
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_FilterExpressionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.FilterExpressionChangedEventArgs)
-    e.FilterExpression = "(((ProductName) LIKE '%Qu%'))"
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-filterexpressionchangedevent-cs' />
+<snippet id='gridview-filtering-filterexpressionchangedevent-vb' />
 
 This event is also the final place where the filtering expression can be changed before it is evaluated. 
 

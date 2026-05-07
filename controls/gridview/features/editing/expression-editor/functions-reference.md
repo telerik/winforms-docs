@@ -37,15 +37,15 @@ Text functions perform string manipulation operations.
 
 **Examples:**
 
-````
-LOWER([ProductName])
-SUBSTR([ProductName], 0, 3)
-FORMAT('{0:N2}', [UnitPrice])
-REPLACE([Description], 'old', 'new')
-TRIM([CustomerName])
-LEN([ProductName])
-INSERT([Code], 0, 'PRD-')
-````
+
+* LOWER([ProductName])
+* SUBSTR([ProductName], 0, 3)
+* FORMAT('{0:N2}', [UnitPrice])
+* REPLACE([Description], 'old', 'new')
+* TRIM([CustomerName])
+* LEN([ProductName])
+* INSERT([Code], 0, 'PRD-')
+
 
 ## Aggregate Functions
 
@@ -63,13 +63,11 @@ Aggregate functions compute a single value from a column across all rows. Pass a
 
 **Examples:**
 
-````
-SUM([UnitPrice])
-AVG([Quantity])
-COUNT([OrderID])
-MAX([OrderDate])
-MIN([UnitPrice])
-````
+* SUM([UnitPrice])
+* AVG([Quantity])
+* COUNT([OrderID])
+* MAX([OrderDate])
+* MIN([UnitPrice])
 
 ## Date-Time Functions
 
@@ -128,13 +126,11 @@ These functions return the difference between two dates in the specified unit.
 
 **Examples:**
 
-````
-ADDDAYS([OrderDate], 30)
-DATEDIFFDAY([OrderDate], NOW())
-GETYEAR([OrderDate])
-GETMONTH([ShippedDate])
-ADDMONTHS(TODAY(), -6)
-````
+* ADDDAYS([OrderDate], 30)
+* DATEDIFFDAY([OrderDate], NOW())
+* GETYEAR([OrderDate])
+* GETMONTH([ShippedDate])
+* ADDMONTHS(TODAY(), -6)
 
 ## Logical Functions
 
@@ -145,11 +141,10 @@ ADDMONTHS(TODAY(), -6)
 
 **Examples:**
 
-````
-IIF([UnitPrice] > 100, 'Expensive', 'Affordable')
-ISNULL([ShippedDate], #01/01/2000#)
-IIF([Quantity] > 0 AND [UnitPrice] > 0, [Quantity] * [UnitPrice], 0)
-````
+
+* IIF([UnitPrice] > 100, 'Expensive', 'Affordable')
+* ISNULL([ShippedDate], #01/01/2000#)
+* IIF([Quantity] > 0 AND [UnitPrice] > 0, [Quantity] * [UnitPrice], 0)
 
 ## Math Functions
 
@@ -179,13 +174,11 @@ IIF([Quantity] > 0 AND [UnitPrice] > 0, [Quantity] * [UnitPrice], 0)
 
 **Examples:**
 
-````
-ABS([Quantity] - [Expected])
-ROUND([UnitPrice] * 1.1)
-POWER([Value], 2)
-SQRT([Area])
-CEILING([Total] / 10)
-````
+* ABS([Quantity] - [Expected])
+* ROUND([UnitPrice] * 1.1)
+* POWER([Value], 2)
+* SQRT([Area])
+* CEILING([Total] / 10)
 
 ## Conversion Functions
 
@@ -201,13 +194,12 @@ Conversion functions convert an expression to a specific .NET data type.
 
 **Examples:**
 
-````
-CINT([Quantity])
-CDBL([UnitPrice]) * 1.5
-CDATE('2025-01-15')
-CSTR([ProductID])
-IIF(CBOOL([IsActive]), 'Active', 'Inactive')
-````
+* CINT([Quantity])
+* CDBL([UnitPrice]) * 1.5
+* CDATE('2025-01-15')
+* CSTR([ProductID])
+* IIF(CBOOL([IsActive]), 'Active', 'Inactive')
+
 
 ## See Also
 

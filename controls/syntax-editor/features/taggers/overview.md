@@ -47,29 +47,10 @@ To be able to use these taggers in the **RadSyntaxEditor** control, you first ne
 
 #### Registering taggers
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region=AddTaggers}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorLayers.vb region=AddTaggers}}
-
-````C#
-            CSharpTagger currentLanguageTagger = new Telerik.WinForms.Controls.SyntaxEditor.Tagging.Taggers.CSharpTagger(this.radSyntaxEditor1.SyntaxEditorElement);
-            this.radSyntaxEditor1.TaggersRegistry.RegisterTagger(currentLanguageTagger);
-
-            CSharpFoldingTagger foldingTagger = new Telerik.WinForms.Controls.SyntaxEditor.Taggers.CSharpFoldingTagger(this.radSyntaxEditor1.SyntaxEditorElement);
-            foldingTagger.FoldingRegionDefinitions.Add(new FoldingRegionDefinition("#if", "#endif"));
-
-````
-````VB.NET
-
-Dim currentLanguageTagger As CSharpTagger = New Telerik.WinForms.Controls.SyntaxEditor.Taggers.CSharpTagger(Me.RadSyntaxEditor1.SyntaxEditorElement)
-Me.RadSyntaxEditor1.TaggersRegistry.RegisterTagger(currentLanguageTagger)
-Dim foldingTagger As CSharpFoldingTagger = New Telerik.WinForms.Controls.SyntaxEditor.Taggers.CSharpFoldingTagger(Me.RadSyntaxEditor1.SyntaxEditorElement)
-foldingTagger.FoldingRegionDefinitions.Add(New FoldingRegionDefinition("#if", "#endif"))
-RadSyntaxEditor1.TaggersRegistry.RegisterTagger(foldingTagger)
+<snippet id='syntax-editor-syntaxeditorlayers-addtaggers-cs' />
+<snippet id='syntax-editor-syntaxeditorlayers-addtaggers-vb' />
 
 
-````
-
-{{endregion}} 
 
 >note As of R2 2021 **RadSyntaxEditor** offers **ShouldTaggersProcessEntireLines** property that indicates whether the entire line should be processed by the taggers.
 

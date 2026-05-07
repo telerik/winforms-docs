@@ -74,44 +74,10 @@ There are also __GoToNextComment()__ and __GoToPreviousComment()__ methods avail
 
 You can customize the looks of the comments by attaching to the __CommentShowing__ event of __RadRichTextEditor__.   Inside the event handler you can access the __Comment__ and modify the __AppearanceSettings__ that are used to  visualize the comment. Here is an example:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Comments.cs region=event}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Comments.vb region=event}} 
+<snippet id='richtexteditor-comments-event-cs' />
+<snippet id='richtexteditor-comments-event-vb' />
 
-````C#
-        
-private void radRichTextEditor1_CommentShowing(object sender, Telerik.WinForms.Documents.UI.CommentShowingEventArgs e)
-{
-    if (e.Comment.Author == "Boss")
-    {
-        e.AppearanceSettings.BorderBrush = System.Drawing.Brushes.Red;
-        e.AppearanceSettings.BackgroundBrush = System.Drawing.Brushes.Orange;
-        e.AppearanceSettings.HighlightColor = Telerik.WinControls.RichTextEditor.UI.Colors.Orange;
-    }
-    else
-    {
-        e.AppearanceSettings.BorderBrush = System.Drawing.Brushes.Green;
-        e.AppearanceSettings.BackgroundBrush = System.Drawing.Brushes.LightGray;
-        e.AppearanceSettings.HighlightColor = Telerik.WinControls.RichTextEditor.UI.Colors.LightGray;
-    }
-}
 
-````
-````VB.NET
-Private Sub radRichTextEditor1_CommentShowing(ByVal sender As Object, ByVal e As Telerik.WinForms.Documents.UI.CommentShowingEventArgs)
-    If e.Comment.Author = "Boss" Then
-        e.AppearanceSettings.BorderBrush = System.Drawing.Brushes.Red
-        e.AppearanceSettings.BackgroundBrush = System.Drawing.Brushes.Orange
-        e.AppearanceSettings.HighlightColor = Telerik.WinControls.RichTextEditor.UI.Colors.Orange
-    Else
-        e.AppearanceSettings.BorderBrush = System.Drawing.Brushes.Green
-        e.AppearanceSettings.BackgroundBrush = System.Drawing.Brushes.LightGray
-        e.AppearanceSettings.HighlightColor = Telerik.WinControls.RichTextEditor.UI.Colors.LightGray
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 And the result looks like this:
 

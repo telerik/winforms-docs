@@ -39,25 +39,10 @@ You can specify a time interval (in milliseconds), after which the navigation bu
 #### Customize the Navigation Buttons
 
 
-{{source=..\SamplesCS\SlideView\GettingStartedGallery.cs region=NavigationButtons}} 
-{{source=..\SamplesVB\SlideView\GettingStartedGallery.vb region=NavigationButtons}}
+<snippet id='slideview-gettingstartedgallery-navigationbuttons-cs' />
+<snippet id='slideview-gettingstartedgallery-navigationbuttons-vb' />
 
-````C#
 
-this.radSlideView1.ButtonsVisibility = ButtonsVisibility.VisibleOnMouseOver;
-this.radSlideView1.ShowButtonsOverContent = false;
-this.radSlideView1.AutoHideButtonsDelay = 1000;
-      
-````
-````VB.NET
-
-Me.radSlideView1.ButtonsVisibility = ButtonsVisibility.VisibleOnMouseOver
-Me.radSlideView1.ShowButtonsOverContent = False
-Me.radSlideView1.AutoHideButtonsDelay = 1000
-
-```` 
-
-{{endregion}}
 
 ![WinForms SlideView Customize Navigation Buttons](images/slideview-customize-navigation-buttons.gif)
 

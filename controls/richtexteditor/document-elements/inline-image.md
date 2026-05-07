@@ -19,84 +19,19 @@ This topic will explain you how to use the __ImageInline__ element.
 
 Here is an example of how to add an __ImageInline__ element in the code behind.
   
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\InlineImageCode.cs region=image}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\InlineImageCode.vb region=image}} 
+<snippet id='richtexteditor-inlineimagecode-image-cs' />
+<snippet id='richtexteditor-inlineimagecode-image-vb' />
 
-````C#
-            
-Section section = new Section();
-Paragraph paragraph = new Paragraph();
-ImageInline image;
-Telerik.WinControls.RichTextEditor.UI.Size size = new Telerik.WinControls.RichTextEditor.UI.Size(236, 50);
-using (MemoryStream ms = new MemoryStream())
-{
-    Image.FromFile(@"C:\logo.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-    image = new ImageInline(ms, size, "png");
-}
-            
-paragraph.Inlines.Add(image);
-section.Children.Add(paragraph);
-this.radRichTextEditor1.Document.Sections.Add(section);
 
-````
-````VB.NET
-Dim section As New Section()
-Dim paragraph As New Paragraph()
-Dim image As ImageInline     
-Dim my_size As New Telerik.WinControls.RichTextEditor.UI.Size(236, 50)
-Using ms As New MemoryStream()
-    System.Drawing.Image.FromFile("C:\logo.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png)
-    image = New ImageInline(ms, my_size, "png")
-End Using
-paragraph.Inlines.Add(image)
-section.Children.Add(paragraph)
-Me.radRichTextEditor1.Document.Sections.Add(section)
-
-````
-
-{{endregion}} 
 
 ## Add via UI
 
 Here is an example of how to allow the user to select an image and add it to the document. For that purpose a __RadButton__ and an __OpenFileDialog__ are used. When the file stream from the __OpenFileDialog__ gets obtained, it's passed to the __InsertImage()__ API method of __RadRichTextEditor__. This method takes as an argument the extension of the image, which can be again obtained from the __FileInfo__ object. After calling the __InsertImage()__ method, the image will appear in the document with its default width and height.
    
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\InlineImageCode.cs region=insert}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\InlineImageCode.vb region=insert}} 
+<snippet id='richtexteditor-inlineimagecode-insert-cs' />
+<snippet id='richtexteditor-inlineimagecode-insert-vb' />
 
-````C#
-        
-private void ImageButton_Click(object sender, RoutedEventArgs e)
-{
-    OpenFileDialog openDialog = new OpenFileDialog();
-    openDialog.Filter = "Images|*.jpg;*.png";
-    openDialog.Multiselect = false;
-    DialogResult dialogResult = openDialog.ShowDialog();
-    if (dialogResult == DialogResult.Yes)
-    {
-        Stream stream = openDialog.OpenFile();
-        
-        string extension = Path.GetExtension(openDialog.FileName);
-        this.radRichTextEditor1.InsertImage(stream, extension);
-    }
-}
 
-````
-````VB.NET
-Private Sub ImageButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-    Dim openDialog As New OpenFileDialog()
-    openDialog.Filter = "Images|*.jpg;*.png"
-    openDialog.Multiselect = False
-    Dim myDialogResult As DialogResult = openDialog.ShowDialog()
-    If myDialogResult = System.Windows.Forms.DialogResult.Yes Then
-        Dim stream As Stream = openDialog.OpenFile()
-        Dim extension As String = Path.GetExtension(openDialog.FileName)
-        Me.radRichTextEditor1.InsertImage(stream, extension)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 # See Also
 

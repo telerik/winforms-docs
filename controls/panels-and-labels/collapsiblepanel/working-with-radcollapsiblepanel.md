@@ -19,143 +19,66 @@ __ExpandDirection__ - Indicates the direction of the expand animation. The colla
 
 #### RadDirection.Down
 
-{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ExpandDirections1}} 
-{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandDirections1}} 
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-expanddirections1-cs' />
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-expanddirections1-vb' />
 
-````C#
-this.radCollapsiblePanel1.ExpandDirection = RadDirection.Down;
 
-````
-````VB.NET
-Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Down
-
-````
-
-{{endregion}}
 
 ![WinForms RadCollapsiblePanel RadDirection Down](images/panels-and-labels-radcollapsiblepanel-methods-and-properties001.png)
 
 #### RadDirection.Left
 
-{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ExpandDirections2}} 
-{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandDirections2}} 
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-expanddirections2-cs' />
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-expanddirections2-vb' />
 
-````C#
-this.radCollapsiblePanel1.ExpandDirection = RadDirection.Left;
-
-````
-````VB.NET
-Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Left
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadCollapsiblePanel RadDirection Left](images/panels-and-labels-radcollapsiblepanel-methods-and-properties002.png)
 
 #### RadDirection.Right
 
-{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ExpandDirections3}} 
-{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandDirections3}} 
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-expanddirections3-cs' />
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-expanddirections3-vb' />
 
-````C#
-this.radCollapsiblePanel1.ExpandDirection = RadDirection.Right;
-
-````
-````VB.NET
-Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Right
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadCollapsiblePanel RadDirection Right](images/panels-and-labels-radcollapsiblepanel-methods-and-properties003.png)
 
 #### RadDirection.Up
 
-{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ExpandDirections4}} 
-{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ExpandDirections4}} 
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-expanddirections4-cs' />
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-expanddirections4-vb' />
 
-````C#
-this.radCollapsiblePanel1.ExpandDirection = RadDirection.Up;
-
-````
-````VB.NET
-Me.RadCollapsiblePanel1.ExpandDirection = RadDirection.Up
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadCollapsiblePanel RadDirection Up](images/panels-and-labels-radcollapsiblepanel-methods-and-properties004.png)
 
 __EnableAnimation__ - Indicates whether to use animation to expand or collapse the control.
 
-{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=EnableAnimation}} 
-{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=EnableAnimation}} 
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-enableanimation-cs' />
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-enableanimation-vb' />
 
-````C#
-this.radCollapsiblePanel1.EnableAnimation = false;
 
-````
-````VB.NET
-Me.RadCollapsiblePanel1.EnableAnimation = False
-
-````
-
-{{endregion}}
 
 __ContentSizingMode__ -  Indicates whether the controls container will resize to fit the width or the height of its content.
 
-{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ContentSizingMode1}} 
-{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ContentSizingMode1}} 
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-contentsizingmode1-cs' />
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-contentsizingmode1-vb' />
 
-````C#
-this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth;
-
-````
-````VB.NET
-Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadCollapsiblePanel FitToContentWidth](images/panels-and-labels-radcollapsiblepanel-methods-and-properties005.png)
 
-{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ContentSizingMode2}} 
-{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ContentSizingMode2}} 
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-contentsizingmode2-cs' />
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-contentsizingmode2-vb' />
 
-````C#
-this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentHeight;
 
-````
-````VB.NET
-Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentHeight
-
-````
-
-{{endregion}} 
 
 ![WinForms RadCollapsiblePanel FitToContentHeight](images/panels-and-labels-radcollapsiblepanel-methods-and-properties006.png)
 
-{{source=..\SamplesCS\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.cs region=ContentSizingMode3}} 
-{{source=..\SamplesVB\PanelsAndLabels\CollapsiblePanel\CollapsiblePanelGettingStarted.vb region=ContentSizingMode3}} 
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-contentsizingmode3-cs' />
+<snippet id='panels-and-labels-collapsiblepanelgettingstarted-contentsizingmode3-vb' />
 
-````C#
-this.radCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth | CollapsiblePanelContentSizingMode.FitToContentHeight;
-
-````
-````VB.NET
-Me.RadCollapsiblePanel1.ContentSizingMode = CollapsiblePanelContentSizingMode.FitToContentWidth Or CollapsiblePanelContentSizingMode.FitToContentHeight
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadCollapsiblePanel FitToContentWidth or FitToContentHeight](images/panels-and-labels-radcollapsiblepanel-methods-and-properties007.png)

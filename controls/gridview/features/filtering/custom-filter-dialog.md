@@ -26,30 +26,8 @@ Since *R1 2017 SP*, a **CompositeDataFilterForm** is shown. This dialog uses a [
 
 #### Specify default filter dialog
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=DefaultFilterDialog}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=DefaultFilterDialog}} 
-
-````C#
-Font f = new Font("Arial", 12, FontStyle.Italic);
-private void radGridView1_CreateCompositeFilterDialog(object sender, GridViewCreateCompositeFilterDialogEventArgs e)
-{
-    CompositeFilterForm filterDialog = new CompositeFilterForm();
-    filterDialog.Font = f;
-    e.Dialog = filterDialog;
-}
-
-````
-````VB.NET
-Private f As New Font("Arial", 12, FontStyle.Italic)
-Private Sub radGridView1_CreateCompositeFilterDialog(sender As Object, e As GridViewCreateCompositeFilterDialogEventArgs)
-    Dim filterDialog As New CompositeFilterForm()
-    filterDialog.Font = f
-    e.Dialog = filterDialog
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-defaultfilterdialog-cs' />
+<snippet id='gridview-filtering-defaultfilterdialog-vb' />
 
 >caption Figure 3: CompositeFilterForm
 

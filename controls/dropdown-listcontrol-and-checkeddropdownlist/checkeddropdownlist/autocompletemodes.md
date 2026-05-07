@@ -18,19 +18,10 @@ You can set the __AutoCompleteMode__ as follows:
 
 #### Set AutoCompleteMode 
  
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.cs region=SetMode}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\AutoCompleteModes1.vb region=SetMode}} 
+<snippet id='checkeddropdownlist-autocompletemodes-setmode-cs' />
+<snippet id='checkeddropdownlist-autocompletemodes-setmode-vb' />
 
-````C#
-this.radCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 
-````
-````VB.NET
-Me.RadCheckedDropDownList1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
-
-````
-
-{{endregion}} 
 
  
 * *None*: Nothing happens when a user begins to type into the text box portion of the control.  

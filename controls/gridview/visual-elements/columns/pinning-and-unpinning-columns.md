@@ -17,22 +17,8 @@ Columns in RadGridView can be pinned which will result in the pinned columns bei
 
 #### Pinning a single columns
 
-{{source=..\SamplesCS\GridView\Columns\PinningAndUnpinningColumns.cs region=pinningColumns}} 
-{{source=..\SamplesVB\GridView\Columns\PinningAndUnpinningColumns.vb region=pinningColumns}} 
-
-````C#
-radGridView1.Columns[2].IsPinned = true;
-radGridView1.Columns["FirstName"].IsPinned = true;
-
-````
-````VB.NET
-Me.RadGridView1.Columns(2).IsPinned = True
-'or you can use
-Me.RadGridView1.Columns("FirstName").IsPinned = True
-
-````
-
-{{endregion}}
+<snippet id='gridview-pinningandunpinningcolumns-pinningcolumns-cs' />
+<snippet id='gridview-pinningandunpinningcolumns-pinningcolumns-vb' />
 
 >caption Figure 1: The left-most column is pinned.
 
@@ -44,23 +30,8 @@ Multiple column pinning is also possible. Simply set either the __IsPinned__ pro
 
 #### Pinning multiple columns
 
-{{source=..\SamplesCS\GridView\Columns\PinningAndUnpinningColumns.cs region=pinMultipleColumns}} 
-{{source=..\SamplesVB\GridView\Columns\PinningAndUnpinningColumns.vb region=pinMultipleColumns}} 
-
-````C#
-radGridView1.Columns["Photo"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
-radGridView1.Columns["FirstName"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
-radGridView1.Columns["LastName"].PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left;
-
-````
-````VB.NET
-Me.RadGridView1.Columns("Photo").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
-Me.RadGridView1.Columns("FirstName").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
-Me.RadGridView1.Columns("LastName").PinPosition = Telerik.WinControls.UI.PinnedColumnPosition.Left
-
-````
-
-{{endregion}}
+<snippet id='gridview-pinningandunpinningcolumns-pinmultiplecolumns-cs' />
+<snippet id='gridview-pinningandunpinningcolumns-pinmultiplecolumns-vb' />
 
 >caption Figure 2: More than one column can be pinned as well.
 ![WinForms RadGridView More than one column can be pinned as well](images/gridview-columns-pinning-and-unpinning-columns002.png)

@@ -20,19 +20,10 @@ You can control whether the thumbnail element is visible by setting the __Enable
 
 #### Enable Thumbnails
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=EnableThumbnails}} 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=EnableThumbnails}} 
+<snippet id='pdfviewer-pdfpublicapi-enablethumbnails-cs' />
+<snippet id='pdfviewer-pdfpublicapi-enablethumbnails-vb' />
 
-````C#
-this.radPdfViewer1.EnableThumbnails = true;
 
-````
-````VB.NET
-Me.radPdfViewer1.EnableThumbnails = True
-
-````
-
-{{endregion}}
 
 ## Thumbnails API
 
@@ -40,57 +31,28 @@ You can show or hide the thumbnails programmatically with following methods Show
 
 #### Show/Hide Thumbnails
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ShowHideThumbnails}} 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ShowHideThumbnails}} 
+<snippet id='pdfviewer-pdfpublicapi-showhidethumbnails-cs' />
+<snippet id='pdfviewer-pdfpublicapi-showhidethumbnails-vb' />
 
-````C#
-this.radPdfViewer1.ShowThubnails();
-this.radPdfViewer1.HideThumbnails();
 
-````
-````VB.NET
-Me.radPdfViewer1.ShowThubnails()
-Me.radPdfViewer1.HideThumbnails()
-
-````
-
-{{endregion}}
 
 You can customize the size of the thumbnails with __ThumbnailsScaleFactor__ property. This property sets the size of the thumbnails between 0 and 1 where 1 is the page in full size. By default this property is set to 0.15 which means 15% of the normal page size.
 
 #### ThumbnailsScaleFactor
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailsScaleFactor}} 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailsScaleFactor}} 
+<snippet id='pdfviewer-pdfpublicapi-thumbnailsscalefactor-cs' />
+<snippet id='pdfviewer-pdfpublicapi-thumbnailsscalefactor-vb' />
 
-````C#
-this.radPdfViewer1.ThumbnailListWidth = 300;
 
-````
-````VB.NET
-Me.radPdfViewer1.ThumbnailListWidth = 300
-
-````
-
-{{endregion}}
 
 You can customize the width of the thumbnails list with the __ThumbnailListWidth__ property. Default value of this property is 200.
 
 #### ThumbnailListWidth
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=ThumbnailListWidth}} 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=ThumbnailListWidth}} 
+<snippet id='pdfviewer-pdfpublicapi-thumbnaillistwidth-cs' />
+<snippet id='pdfviewer-pdfpublicapi-thumbnaillistwidth-vb' />
 
-````C#
-this.radPdfViewer1.ThumbnailListWidth = 300;
 
-````
-````VB.NET
-Me.radPdfViewer1.ThumbnailListWidth = 300
-
-````
-
-{{endregion}}
 
 # See Also
 

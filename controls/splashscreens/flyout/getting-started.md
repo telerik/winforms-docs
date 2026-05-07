@@ -17,8 +17,8 @@ The Flyout screen can be activated through the __RadFlyoutManager.Show()__ metho
 
 ## Show Flyout
 
-{{source=..\SamplesCS\SplashScreens\Flyout\FlyoutSettings.cs region=GettingStarted_Show}} 
-{{source=..\SamplesVB\SplashScreens\Flyout\FlyoutSettings.vb region=GettingStarted_Show}} 
+<snippet id='splashscreens-flyoutsettings-gettingstarted_show-cs' />
+<snippet id='splashscreens-flyoutsettings-gettingstarted_show-vb' />
 
 ````C#
 
@@ -33,12 +33,10 @@ RadFlyoutManager.Show(Me.radGridView1, GetType(UserControl1))
 
 ````
 
-{{endregion}}
-
 ## Close Flyout
 
-{{source=..\SamplesCS\SplashScreens\Flyout\FlyoutSettings.cs region=GettingStarted_Close}} 
-{{source=..\SamplesVB\SplashScreens\Flyout\FlyoutSettings.vb region=GettingStarted_Close}} 
+<snippet id='splashscreens-flyoutsettings-gettingstarted_close-cs' />
+<snippet id='splashscreens-flyoutsettings-gettingstarted_close-vb' />
 
 ````C#
 
@@ -52,11 +50,6 @@ RadFlyoutManager.Close()
 
 
 ````
-
-{{endregion}}
-
- 
-        
 
 ## Telerik UI for WinForms Learning Resources
 * [Telerik UI for WinForms flyout Component](https://www.telerik.com/products/winforms/flyout.aspx)

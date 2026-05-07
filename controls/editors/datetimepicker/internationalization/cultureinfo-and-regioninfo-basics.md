@@ -40,19 +40,10 @@ The table below is a sample list of the names and identifiers found in the Cult
 
 ![WinForms RadDateTimePicker Setting Arabic Culture](images/editors-datetimepicker-internationalization-cultureinfo-and-regioninfo-basics001.png)
 
-{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=SetPashtoCulture}} 
-{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=SetPashtoCulture}} 
+<snippet id='editors-datetimepicker1-setpashtoculture-cs' />
+<snippet id='editors-datetimepicker1-setpashtoculture-vb' />
 
-````C#
-this.radDateTimePicker1.Culture = new System.Globalization.CultureInfo("ps-AF");
 
-````
-````VB.NET
-Me.RadDateTimePicker1.Culture = New System.Globalization.CultureInfo("ps-AF")
-
-````
-
-{{endregion}}
 
 >note There is a known issue in the .NET Framework considering the "fa-IR" culture. Please refer to the following MSDN resource for a solution: 
 >

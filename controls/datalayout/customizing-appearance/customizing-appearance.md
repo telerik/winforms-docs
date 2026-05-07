@@ -21,30 +21,10 @@ You can access and modify the style for different elements in __RadDataEntry__ b
 The following snippet shows how you access the underlying controls and change their style:
 
 
-{{source=..\SamplesCS\DataLayout\PropertiesEventsAttributesForm.cs region=FormatItems}} 
-{{source=..\SamplesVB\DataLayout\PropertiesEventsAttributesForm.vb region=FormatItems}}
-````C#
-foreach (DataLayoutControlItem item in radDataLayout1.LayoutControl.Items)
-{
-    item.ForeColor = ColorTranslator.FromHtml("#51ab2e");
-    if (item.AssociatedControl is RadTextBox)
-    {
-        item.AssociatedControl.BackColor = ColorTranslator.FromHtml("#91c930");
-    }
-}
+<snippet id='datalayout-customizing-appearance-formatitems-cs' />
+<snippet id='datalayout-customizing-appearance-formatitems-vb' />
 
-````
-````VB.NET
-For Each item As DataLayoutControlItem In RadDataLayout1.LayoutControl.Items
-    item.ForeColor = ColorTranslator.FromHtml("#51ab2e")
-    If TypeOf item.AssociatedControl Is RadTextBox Then
-        item.AssociatedControl.BackColor = ColorTranslator.FromHtml("#91c930")
-    End If
-Next item
 
-```` 
-
-{{endregion}}
 
 >caption Figure 2: Change the items styles
 

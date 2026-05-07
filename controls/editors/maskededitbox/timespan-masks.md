@@ -65,9 +65,6 @@ When the mask type is set to *TimeSpan* you can access the **MaskTimeSpanProvide
     provider.MillisecondsStep = 5
 
 ````
-
-{{endregion}} 
-
 ## See Also
 
 * [Standard]({%slug winforms/editors/maskededitbox/standard-masks%})

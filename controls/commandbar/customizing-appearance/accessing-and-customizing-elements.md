@@ -25,25 +25,9 @@ You can customize the elements at run time as well:
 
 #### Customize elements at run time
 
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=AccessingCustomizingElements}} 
+<snippet id='commandbar-accessing-and-customizing-elements-accessingcustomizingelements-cs'/>
+<snippet id='commandbar-accessing-and-customizing-elements-accessingcustomizingelements-vb'/>
 
-````C#
-this.radCommandBar1.Rows[0].BackColor = Color.Lime;
-this.radCommandBar1.Rows[0].DrawFill = true;
-this.radCommandBar1.Rows[0].GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-this.radCommandBar1.Rows[0].Strips[0].BackColor = Color.Yellow;
-this.radCommandBar1.Rows[0].Strips[0].BorderColor = Color.Red;
 
-````
-````VB.NET
-Me.RadCommandBar1.Rows(0).BackColor = Color.Lime
-Me.RadCommandBar1.Rows(0).DrawFill = True
-Me.RadCommandBar1.Rows(0).GradientStyle = Telerik.WinControls.GradientStyles.Solid
-Me.RadCommandBar1.Rows(0).Strips(0).BackColor = Color.Yellow
-Me.RadCommandBar1.Rows(0).Strips(0).BorderColor = Color.Red
 
-````
-
-{{endregion}} 
  

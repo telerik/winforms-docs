@@ -15,41 +15,9 @@ __LineSeries__ plot their Categorical data points on Cartesian Area using one ca
 
 #### Initial Setup
 
-{{source=..\SamplesCS\ChartView\Series\LineSeriesForm.cs region=line}} 
-{{source=..\SamplesVB\ChartView\Series\LineSeriesForm.vb region=line}} 
+<snippet id='chartview-line-line-cs'/>
+<snippet id='chartview-line-line-vb'/>
 
-````C#
-LineSeries lineSeries = new LineSeries();
-lineSeries.DataPoints.Add(new CategoricalDataPoint(20, "Jan"));
-lineSeries.DataPoints.Add(new CategoricalDataPoint(22, "Apr"));
-lineSeries.DataPoints.Add(new CategoricalDataPoint(12, "Jul"));
-lineSeries.DataPoints.Add(new CategoricalDataPoint(19, "Oct"));
-this.radChartView1.Series.Add(lineSeries);
-LineSeries lineSeries2 = new LineSeries();
-lineSeries2.DataPoints.Add(new CategoricalDataPoint(18, "Jan"));
-lineSeries2.DataPoints.Add(new CategoricalDataPoint(15, "Apr"));
-lineSeries2.DataPoints.Add(new CategoricalDataPoint(17, "Jul"));
-lineSeries2.DataPoints.Add(new CategoricalDataPoint(22, "Oct"));
-this.radChartView1.Series.Add(lineSeries2);
-
-````
-````VB.NET
-Dim lineSeries As New LineSeries()
-lineSeries.DataPoints.Add(New CategoricalDataPoint(20, "Jan"))
-lineSeries.DataPoints.Add(New CategoricalDataPoint(22, "Apr"))
-lineSeries.DataPoints.Add(New CategoricalDataPoint(12, "Jul"))
-lineSeries.DataPoints.Add(New CategoricalDataPoint(19, "Oct"))
-Me.RadChartView1.Series.Add(lineSeries)
-Dim lineSeries2 As New LineSeries()
-lineSeries2.DataPoints.Add(New CategoricalDataPoint(18, "Jan"))
-lineSeries2.DataPoints.Add(New CategoricalDataPoint(15, "Apr"))
-lineSeries2.DataPoints.Add(New CategoricalDataPoint(17, "Jul"))
-lineSeries2.DataPoints.Add(New CategoricalDataPoint(22, "Oct"))
-Me.RadChartView1.Series.Add(lineSeries2)
-
-````
-
-{{endregion}} 
 
 
 >caption Figure 1: Initial Setup

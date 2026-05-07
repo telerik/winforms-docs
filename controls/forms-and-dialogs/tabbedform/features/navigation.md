@@ -22,17 +22,8 @@ If you set the __MinimumTabWidth__ property,  it will affect when the navigation
 
 #### Set MinTabWidth
 
-{{source=..\SamplesCS\Forms And Dialogs\TabbedFormCode.cs region=SetMinWidth}} 
-{{source=..\SamplesVB\Forms And Dialogs\TabbedFormCode.vb region=SetMinWidth}}
-````C#
-this.TabbedFormControl.MinimumTabWidth = 150;
-
-````
-````VB.NET
-Me.TabbedFormControl.MinimumTabWidth = 150
-
-```` 
+<snippet id='tabbedform-tabbedformcode-setminwidth-cs' />
+<snippet id='tabbedform-tabbedformcode-setminwidth-vb' />
 
 
-{{endregion}} 
 

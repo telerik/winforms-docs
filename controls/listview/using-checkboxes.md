@@ -14,20 +14,10 @@ position: 9
 
 #### Enable Checkboxes
 
-{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=EnableCheckBoxes}} 
-{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=EnableCheckBoxes}} 
+<snippet id='listview-listviewcheckboxesandeditors-enablecheckboxes-cs' />
+<snippet id='listview-listviewcheckboxesandeditors-enablecheckboxes-vb' />
 
-````C#
-            
-this.radListView1.ShowCheckBoxes = true;
 
-````
-````VB.NET
-Me.RadListView1.ShowCheckBoxes = True
-
-````
-
-{{endregion}} 
 
 When checkboxes are enabled, you have several options to handle the checked items:
 
@@ -41,30 +31,10 @@ When checkboxes are enabled, you have several options to handle the checked item
 
 #### Toggle an item programmatically
 
-{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=ToggleItem}} 
-{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=ToggleItem}} 
+<snippet id='listview-listviewcheckboxesandeditors-toggleitem-cs' />
+<snippet id='listview-listviewcheckboxesandeditors-toggleitem-vb' />
 
-````C#
-ListViewDataItem checkedItem = new ListViewDataItem("Checked item");
-checkedItem.CheckState = Telerik.WinControls.Enumerations.ToggleState.On;
-this.radListView1.Items.Add(checkedItem);
-            
-ListViewDataItem uncheckedItem = new ListViewDataItem("Unchecked item");
-uncheckedItem.CheckState = Telerik.WinControls.Enumerations.ToggleState.Off;
-this.radListView1.Items.Add(uncheckedItem);
 
-````
-````VB.NET
-Dim checkedItem As New ListViewDataItem("Checked item")
-checkedItem.CheckState = Telerik.WinControls.Enumerations.ToggleState.[On]
-Me.RadListView1.Items.Add(checkedItem)
-Dim uncheckedItem As New ListViewDataItem("Unchecked item")
-uncheckedItem.CheckState = Telerik.WinControls.Enumerations.ToggleState.Off
-Me.RadListView1.Items.Add(uncheckedItem)
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Toggle items programmatically
 

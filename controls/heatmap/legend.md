@@ -51,44 +51,9 @@ The LegendElement.**VisualItemCreating** event allows you to control whether a l
 
 ####  Legend
 
-{{source=..\SamplesCS\HeatMap\HeatMapDefinitions.cs region=DisplayLegend}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDefinitions.vb region=DisplayLegend}} 
+<snippet id='heatmap-heatmapdefinitions-displaylegend-cs' />
+<snippet id='heatmap-heatmapdefinitions-displaylegend-vb' />
 
-````C#
-        public void DisplyLegend()
-        {
-            this.radHeatMap1.LegendElement.VisualItemCreating += this.LegendElement_VisualItemCreating;
-            this.radHeatMap1.ShowLegend = true;
-        }
-
-        private void LegendElement_VisualItemCreating(object sender, Telerik.WinControls.UI.HeatMap.LegendItemElementCreatingEventArgs e)
-        {
-            if (e.ItemElement is LegendGradientItemElement gradientElement)
-            {
-                gradientElement.From = 0.45;
-                gradientElement.To = 0.95;
-            }
-        }
-
-````
-````VB.NET
-
-    Public Sub DisplyLegend()
-        AddHandler Me.radHeatMap1.LegendElement.VisualItemCreating, AddressOf Me.LegendElement_VisualItemCreating
-        Me.radHeatMap1.ShowLegend = True
-    End Sub
-
-    Private Sub LegendElement_VisualItemCreating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.HeatMap.LegendItemElementCreatingEventArgs)
-        Dim gradientElement As LegendGradientItemElement = TryCast(e.ItemElement, LegendGradientItemElement)
-
-        If gradientElement IsNot Nothing Then
-            gradientElement.From = 0.45
-            gradientElement.[To] = 0.95
-        End If
-    End Sub
-````
-
-{{endregion}}
 
 
 ## See Also

@@ -16,25 +16,10 @@ In *DetailsView* the **ItemSize** property sets only the **Height** of the item,
 
 #### Item's height in DetailsView
 
-{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=itemSizing}} 
-{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=itemSizing}} 
+<snippet id='listview-listviewworkingwithitems-itemsizing-cs' />
+<snippet id='listview-listviewworkingwithitems-itemsizing-vb' />
 
-````C#
-radListView1.ItemSize = new Size(0, 50);
-radListView1.Columns[0].Width = 50;
-radListView1.Columns[1].Width = 75;
-radListView1.Columns[2].Width = 100;
 
-````
-````VB.NET
-RadListView1.ItemSize = New Drawing.Size(0, 50)
-RadListView1.Columns(0).Width = 50
-RadListView1.Columns(1).Width = 75
-RadListView1.Columns(2).Width = 100
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Item sizing in DetailsView
 
@@ -44,21 +29,10 @@ In ViewType.*ListView*, when the __FullRowSelect__ property is set to *false*, t
 
 #### Item sizing in ListView
 
-{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=fullRowSelect}} 
-{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=fullRowSelect}} 
+<snippet id='listview-listviewworkingwithitems-fullrowselect-cs' />
+<snippet id='listview-listviewworkingwithitems-fullrowselect-vb' />
 
-````C#
-radListView1.FullRowSelect = false;
-radListView1.ItemSize = new Size(180, 35);
 
-````
-````VB.NET
-RadListView1.FullRowSelect = False
-RadListView1.ItemSize = New Drawing.Size(180, 35)
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Item sizing in ListView
 
@@ -68,23 +42,10 @@ There are two more properties that provide additional customization options for 
 
 #### Item sizing when arbitrary height/width is disabled
 
-{{source=..\SamplesCS\ListView\Features\ListViewWorkingWithItems.cs region=arbitrarySizes}} 
-{{source=..\SamplesVB\ListView\Features\ListViewWorkingWithItems.vb region=arbitrarySizes}} 
+<snippet id='listview-listviewworkingwithitems-arbitrarysizes-cs' />
+<snippet id='listview-listviewworkingwithitems-arbitrarysizes-vb' />
 
-````C#
-radListView1.ItemSize = new Size(160, 80);
-radListView1.AllowArbitraryItemHeight = false;
-radListView1.AllowArbitraryItemWidth = false;
 
-````
-````VB.NET
-RadListView1.ItemSize = New Drawing.Size(160, 80)
-RadListView1.AllowArbitraryItemHeight = False
-RadListView1.AllowArbitraryItemWidth = False
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: Item sizing when arbitrary height/width is disabled
 

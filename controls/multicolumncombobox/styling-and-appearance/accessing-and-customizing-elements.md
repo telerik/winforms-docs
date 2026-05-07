@@ -32,21 +32,10 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\MultiColumnComboBox\MCCBgettingStarted.cs region=CustomizeElements}} 
-{{source=..\SamplesVB\MultiColumnComboBox\MCCBgettingStarted.vb region=CustomizeElements}} 
+<snippet id='multicolumncombobox-mccbgettingstarted-customizeelements-cs' />
+<snippet id='multicolumncombobox-mccbgettingstarted-customizeelements-vb' />
 
-````C#
-this.radMultiColumnComboBox1.MultiColumnComboBoxElement.ArrowButton.Fill.BackColor = Color.Aqua;
-this.radMultiColumnComboBox1.MultiColumnComboBoxElement.TextBoxElement.ForeColor = Color.Red;
 
-````
-````VB.NET
-Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.ArrowButton.Fill.BackColor = Color.Aqua
-Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.TextBoxElement.ForeColor = Color.Red
 
-````
-
-{{endregion}} 
- 
 In order to style the pop-up cells it is suitable to use the [CellFormatting]({%slug winforms/gridview/cells/formatting-cells%}) event that **RadGridView** offers.
 

@@ -19,45 +19,17 @@ To save a layout, call the __RadDock.SaveToXML__ method:
 
 #### SaveToXml 
 
-{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=saveLayout}} 
-{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=saveLayout}} 
+<snippet id='dock-loading-and-saving-layouts-savelayout-cs' />
+<snippet id='dock-loading-and-saving-layouts-savelayout-vb' />
 
-````C#
-this.radDock1.SaveToXml("c:\\layout1.xml");
-
-````
-````VB.NET
-Me.RadDock1.SaveToXml("c:\layout1.xml")
-
-````
-
-{{endregion}} 
+ 
  
 You can use the __DockWindowSerializing__ event to exclude windows from the saved layout: 
 
-{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=Serializing}} 
-{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=Serializing}} 
+<snippet id='dock-loading-and-saving-layouts-serializing-cs' />
+<snippet id='dock-loading-and-saving-layouts-serializing-vb' />
 
-````C#
-void radDock1_DockWindowSerializing(object sender, DockWindowCancelEventArgs e)
-{
-    if (e.NewWindow.Text == "Window Top")
-    {
-        e.Cancel = true;
-    }
-}
-
-````
-````VB.NET
-Private Sub radDock1_DockWindowSerializing(ByVal sender As Object, ByVal e As DockWindowCancelEventArgs)
-    If e.NewWindow.Text = "Window Top" Then
-        e.Cancel = True
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+ 
  
 
 ## To Load a Layout
@@ -66,19 +38,10 @@ To load a layout, call the __RadDock.LoadFromXML__ method:
 
 #### LoadFromXml 
 
-{{source=..\SamplesCS\Dock\SaveLoadLayout.cs region=loadLayout}} 
-{{source=..\SamplesVB\Dock\SaveLoadLayout.vb region=loadLayout}} 
+<snippet id='dock-loading-and-saving-layouts-loadlayout-cs' />
+<snippet id='dock-loading-and-saving-layouts-loadlayout-vb' />
 
-````C#
-this.radDock1.LoadFromXml("c:\\layout1.xml");
-
-````
-````VB.NET
-Me.RadDock1.LoadFromXml("c:\layout1.xml")
-
-````
-
-{{endregion}} 
+ 
 
 >note With the introduction of the __R3 2023 SP1__ version of our controls, the __LoadFromXml()__ expose second (optional) parameter. This parameter provides the option to specify whether to remove all existing dock windows or not. By default, the second parameter is set to __false__.
 

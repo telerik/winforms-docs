@@ -28,42 +28,17 @@ You can control whether the context menu will be displayed by the __AllowColumnH
 
 #### Disable context menu for data cells
 
-{{source=..\SamplesCS\VirtualGrid\ContextMenu\VirtualGridContextMenu.cs region=CellContextMenu}} 
-{{source=..\SamplesVB\VirtualGrid\ContextMenu\VirtualGridContextMenu.vb region=CellContextMenu}} 
+<snippet id='virtualgrid-virtualgridcontextmenu-cellcontextmenu-cs' />
+<snippet id='virtualgrid-virtualgridcontextmenu-cellcontextmenu-vb' />
 
-````C#
-            
-this.radVirtualGrid1.AllowCellContextMenu = false;
 
-````
-````VB.NET
-Me.RadVirtualGrid1.AllowCellContextMenu = False
-
-````
-
-{{endregion}} 
 
 #### Disable context menu for header cells
 
-{{source=..\SamplesCS\VirtualGrid\ContextMenu\VirtualGridContextMenu.cs region=HeaderContextMenu}} 
-{{source=..\SamplesVB\VirtualGrid\ContextMenu\VirtualGridContextMenu.vb region=HeaderContextMenu}} 
-
-````C#
-            
-this.radVirtualGrid1.AllowColumnHeaderContextMenu = false;
-
-````
-````VB.NET
-Me.RadVirtualGrid1.AllowColumnHeaderContextMenu = False
-
-````
-
-{{endregion}} 
+<snippet id='virtualgrid-virtualgridcontextmenu-headercontextmenu-cs' />
+<snippet id='virtualgrid-virtualgridcontextmenu-headercontextmenu-vb' />
 
 
-
-
- 
 
 # See Also
 * [Custom Context Menu]({%slug winforms/virtualgrid/context-menu/custom-context-menu%})

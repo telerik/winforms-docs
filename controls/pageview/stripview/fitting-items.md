@@ -17,62 +17,27 @@ The main property that controls the behavior of the tabs is the __ItemMode__ pro
 
 * *None* - Each item uses its desired size.
 
-{{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeNone}} 
-{{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeNone}} 
+<snippet id='pageview-stripviewfittingitems-modenone-cs' />
+<snippet id='pageview-stripviewfittingitems-modenone-vb' />
 
-````C#
-RadPageViewStripElement stripElement = this.pageView.ViewElement as RadPageViewStripElement;
-stripElement.ItemFitMode = StripViewItemFitMode.None;
-
-````
-````VB.NET
-Dim stripElement As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-stripElement.ItemFitMode = StripViewItemFitMode.None
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadPageView Fitting Items None](images/pageview-strip-view-fitting-items001.png)
 
 * *Shrink* - Items are shrunk if their size exceeds the available one.
 
-{{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeShrink}} 
-{{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeShrink}} 
+<snippet id='pageview-stripviewfittingitems-modeshrink-cs' />
+<snippet id='pageview-stripviewfittingitems-modeshrink-vb' />
 
-````C#
-RadPageViewStripElement stripElement1 = this.pageView.ViewElement as RadPageViewStripElement;
-stripElement1.ItemFitMode = StripViewItemFitMode.Shrink;
 
-````
-````VB.NET
-Dim stripElement1 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-stripElement1.ItemFitMode = StripViewItemFitMode.Shrink
 
-````
-
-{{endregion}} 
- 
 ![WinForms RadPageView Fitting Items Shrink](images/pageview-strip-view-fitting-items002.gif)
 
 * *Fill* - Items are expanded if their size is less than the available one.
 
-{{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeFill}} 
-{{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeFill}} 
+<snippet id='pageview-stripviewfittingitems-modefill-cs' />
+<snippet id='pageview-stripviewfittingitems-modefill-vb' />
 
-````C#
-RadPageViewStripElement stripElement2 = this.pageView.ViewElement as RadPageViewStripElement;
-stripElement2.ItemFitMode = StripViewItemFitMode.Fill;
-
-````
-````VB.NET
-Dim stripElement2 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-stripElement2.ItemFitMode = StripViewItemFitMode.Fill
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadPageView Fitting Items Fill](images/pageview-strip-view-fitting-items003.gif)
@@ -80,97 +45,36 @@ stripElement2.ItemFitMode = StripViewItemFitMode.Fill
 * *ShrinkAndFill* - Items are either shrinked or expanded when needed.
 
 
-{{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeShrinkAndFill}} 
-{{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeShrinkAndFill}} 
+<snippet id='pageview-stripviewfittingitems-modeshrinkandfill-cs' />
+<snippet id='pageview-stripviewfittingitems-modeshrinkandfill-vb' />
 
-````C#
-RadPageViewStripElement stripElement3 = this.pageView.ViewElement as RadPageViewStripElement;
-stripElement3.ItemFitMode = StripViewItemFitMode.ShrinkAndFill;
-
-````
-````VB.NET
-Dim stripElement3 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-stripElement3.ItemFitMode = StripViewItemFitMode.ShrinkAndFill
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadPageView Fitting Items ShrinkAndFill](images/pageview-strip-view-fitting-items004.gif)
 
 * *FillHeight* - Items are stretched in the available height of their parent container.
 
-{{source=..\SamplesCS\PageView\StripViewFittingItems.cs region=ModeFillHeight}} 
-{{source=..\SamplesVB\PageView\StripViewFittingItems.vb region=ModeFillHeight}} 
+<snippet id='pageview-stripviewfittingitems-modefillheight-cs' />
+<snippet id='pageview-stripviewfittingitems-modefillheight-vb' />
 
-````C#
-RadPageViewStripElement stripElement4 = this.pageView.ViewElement as RadPageViewStripElement;
-stripElement4.ItemContainer.MinSize = new System.Drawing.Size(0, 50);
-stripElement4.ItemFitMode = StripViewItemFitMode.FillHeight;
-
-````
-````VB.NET
-Dim stripElement4 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-stripElement4.ItemContainer.MinSize = New System.Drawing.Size(0, 50)
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadPageView Fitting Items FillHeight](images/pageview-strip-view-fitting-items005.png)
 
 * *MultiLine* - Items are arranged in multiLine layout. You can also set the __MultiLineItemFitMode__ property to *None* or *Reflow*. If you set the __MultiLineItemFitMode__ property to *None* you will manually need to set the **Row** property of the items:
 
-{{source=..\SamplesCS\PageView\PageViewMultiLine.cs region=PageViewMultiLineItemFitModeNone}} 
-{{source=..\SamplesVB\PageView\PageViewMultiLine.vb region=PageViewMultiLineItemFitModeNone}} 
+<snippet id='pageview-pageviewmultiline-pageviewmultilineitemfitmodenone-cs' />
+<snippet id='pageview-pageviewmultiline-pageviewmultilineitemfitmodenone-vb' />
 
-````C#
-this.pageView.ViewMode = PageViewMode.Strip;
-RadPageViewStripElement stripElement = this.pageView.ViewElement as RadPageViewStripElement;
-stripElement.ItemFitMode = StripViewItemFitMode.MultiLine;
-stripElement.MultiLineItemFitMode = MultiLineItemFitMode.None;
-this.radPageViewPage4.Item.Row = 2;
-this.radPageViewPage5.Item.Row = 3;
-
-````
-````VB.NET
-Me.pageView.ViewMode = PageViewMode.Strip
-Dim stripElement As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-stripElement.ItemFitMode = StripViewItemFitMode.MultiLine
-stripElement.MultiLineItemFitMode = MultiLineItemFitMode.None
-Me.RadPageViewPage4.Item.Row = 2
-Me.RadPageViewPage5.Item.Row = 3
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadPageView Fitting Items MultiLine](images/pageview-strip-view-fitting-items006.gif)
 
 If the **MultiLineItemFitMode** property is set to *Reflow*, the layout will automatically calculate these settings:
 
-{{source=..\SamplesCS\PageView\PageViewMultiLine.cs region=PageViewMultiLineItemFitModeReflow}} 
-{{source=..\SamplesVB\PageView\PageViewMultiLine.vb region=PageViewMultiLineItemFitModeReflow}} 
+<snippet id='pageview-pageviewmultiline-pageviewmultilineitemfitmodereflow-cs' />
+<snippet id='pageview-pageviewmultiline-pageviewmultilineitemfitmodereflow-vb' />
 
-````C#
-this.pageView.ViewMode = PageViewMode.Strip;
-RadPageViewStripElement stripElement1 = this.pageView.ViewElement as RadPageViewStripElement;
-stripElement1.ItemFitMode = StripViewItemFitMode.MultiLine;
-stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow;
-
-````
-````VB.NET
-Me.pageView.ViewMode = PageViewMode.Strip
-Dim stripElement1 As RadPageViewStripElement = TryCast(Me.pageView.ViewElement, RadPageViewStripElement)
-stripElement1.ItemFitMode = StripViewItemFitMode.MultiLine
-stripElement1.MultiLineItemFitMode = MultiLineItemFitMode.Reflow
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadPageView MultiLineItemFitMode Reflow](images/pageview-strip-view-fitting-items007.gif)

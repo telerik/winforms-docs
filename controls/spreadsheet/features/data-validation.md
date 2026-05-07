@@ -42,27 +42,8 @@ Example 1 shows the use of the two methods that toggle this functionality - **Ci
 
 #### Example 1: Turn on and off Invalid Data Circles.
 
-{{source=..\SamplesCS\Spreadsheet\FreezePanes.cs region=DataValidation}} 
-{{source=..\SamplesVB\Spreadsheet\FreezePanes.vb region=DataValidation}}
+<snippet id='spreadsheet-freezepanes-datavalidation-cs' />
+<snippet id='spreadsheet-freezepanes-datavalidation-vb' />
 
-````C#
-            
-if (showCircles)
-{
-    this.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor.CircleInvalidData();
-}
-else
-{
-    this.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor.ClearInvalidDataCircles();
-}
 
-````
-````VB.NET
-If showCircles Then
-    Me.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor.CircleInvalidData()
-Else
-    Me.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor.ClearInvalidDataCircles()
-End If
 
-````  
-{{endregion}} 

@@ -45,19 +45,10 @@ __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such a
 
 #### Using DockTo() 
 
-{{source=..\SamplesCS\Dock\CreatingWindows.cs region=usingDockTo}} 
-{{source=..\SamplesVB\Dock\CreatingWindows.vb region=usingDockTo}} 
+<snippet id='dock-toolwindow-and-documentwindow-properties-and-methods-usingdockto-cs' />
+<snippet id='dock-toolwindow-and-documentwindow-properties-and-methods-usingdockto-vb' />
 
-````C#
-toolWindow2.DockTo(toolWindow1, DockPosition.Fill);
-
-````
-````VB.NET
-toolWindow2.DockTo(ToolWindow1, DockPosition.Fill)
-
-````
-
-{{endregion}} 
+ 
 
 # See Also
 

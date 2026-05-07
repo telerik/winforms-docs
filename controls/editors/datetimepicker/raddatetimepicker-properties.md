@@ -17,72 +17,30 @@ The significant properties for __RadDateTimePicker__ are:
 
 #### Setting the value of RadDateTimePicker 
 
-{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=Value}} 
-{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=Value}} 
+<snippet id='editors-datetimepicker1-value-cs' />
+<snippet id='editors-datetimepicker1-value-vb' />
 
-````C#
-this.radDateTimePicker1.Value = DateTime.Today.AddDays(1);
-
-````
-````VB.NET
-Me.RadDateTimePicker1.Value = DateTime.Now.AddDays(1)
-
-````
-
-{{endregion}} 
- 
 * __MinDate, MaxDate:__ These two dates form the bounds that dates can be selected from in the picker. Attempts to select outside these bounds are ignored. The example below sets the __MinDate__ property to be the first day of the current month.
 
 #### Setting the MinDate property of RadDateTimePicker 
 
-{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=MinDate}} 
-{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=MinDate}} 
+<snippet id='editors-datetimepicker1-mindate-cs' />
+<snippet id='editors-datetimepicker1-mindate-vb' />
 
-````C#
-this.radDateTimePicker1.MinDate = DateTime.Today.AddDays(-DateTime.Today.Day);
-
-````
-````VB.NET
-Me.RadDateTimePicker1.MinDate = DateTime.Today.AddDays(-DateTime.Today.Day)
-
-````
-
-{{endregion}} 
- 
 * __NullText:__ This property defines the text that will be displayed in **RadDateTimePicker** when the __NullableValue__ property is set to *null* and **RadDateTimePicker** is not in focus. By default, __NullText__ is an empty string.
 
-#### Setting the NullText property of RadDateTimePicker 
-
-{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullText}} 
-{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullText}} 
-
-````C#
-this.radDateTimePicker1.NullText = "No date selected";
-
-````
-````VB.NET
-Me.RadDateTimePicker1.NullText = "No date selected"
-
-````
-
-{{endregion}} 
+#### Setting the NullText property of RadDateTimePicker  
  
-* __ShowTimePicker:__ Gets or sets a value indicating whether the time picker is displayed alongside the calendar in the drop-down popup of __RadDateTimePicker__. The default value is *false*. When set to *true*, selecting a date in the calendar does not auto-close the popup, allowing the user to also select a time.
-
-{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=ShowTimePicker1}} 
-{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=ShowTimePicker1}} 
-
-````C#
-this.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = true;
-
-````
-````VB.NET
-Me.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = True
-
-````
-
-{{endregion}} 
+* __ShowTimePicker:__ Gets or sets a value indicating whether the time picker is displayed alongside the calendar in the drop-down popup of __RadDateTimePicker__. The default value is *false*. When set to *true*, selecting a date in the calendar does not auto-close the popup, allowing the user to also select a time. 
  
+<snippet id='editors-datetimepicker1-nulltext-cs' />
+<snippet id='editors-datetimepicker1-nulltext-vb' />
+
+* __ShowTimePicker:__ this property determines the display of __TimePicker__ in popup element of __RadDateTimePicker__. 
+
+<snippet id='editors-datetimepicker2-showtimepicker1-cs' />
+<snippet id='editors-datetimepicker2-showtimepicker1-vb' />
+
 * __Format:__ The __DateTimePickerFormat__ enumeration values are __Long__, __Short__, __Time__ and __Custom__. Set __Format__ to __Custom__ to enable the __CustomFormat__ property.
           
 
@@ -113,108 +71,24 @@ Me.radDateTimePicker1.DateTimePickerElement.CalendarSize = New Size(300, 300)
 
 #### Setting the NullableValue property of RadDateTimePicker 
 
-{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullableValue}} 
-{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullableValue}} 
+<snippet id='editors-datetimepicker1-nullablevalue-cs' />
+<snippet id='editors-datetimepicker1-nullablevalue-vb' />
 
-````C#
-this.radDateTimePicker1.NullableValue = null;
-
-````
-````VB.NET
-Me.RadDateTimePicker1.NullableValue = Nothing
-
-````
-
-{{endregion}} 
-  
 __NullableValue__ can be bound to a business object that exposes a property of type nullable DateTime. The code below demonstrates how to do this:
            
 #### Bind the NullableValue to a business object. 
 
-{{source=..\SamplesCS\Editors\DateTimePicker1.cs region=NullableBinding}} 
-{{source=..\SamplesVB\Editors\DateTimePicker1.vb region=NullableBinding}} 
+<snippet id='editors-datetimepicker1-nullablebinding-cs' />
+<snippet id='editors-datetimepicker1-nullablebinding-vb' />
 
-````C#
-public class MyObject
-{
-    public MyObject(DateTime? _endTime)
-    {
-        this._endTime = _endTime;
-    }
-    private DateTime? _endTime;
-    public DateTime? EndTime
-    {
-        get { return _endTime; }
-        set { _endTime = value; }
-    }
-}
-private BindingList<MyObject> myList;
-protected override void OnLoad(EventArgs e)
-{
-    base.OnLoad(e);
-    myList = new BindingList<MyObject>();
-    myList.Add(new MyObject(null));
-    myList.Add(new MyObject(DateTime.Now));
-    myList.RaiseListChangedEvents = true;
-    this.radDateTimePicker1.DataBindings.Add(new Binding("NullableValue", this.myList, "EndTime", true, DataSourceUpdateMode.OnPropertyChanged));
-}
-
-````
-````VB.NET
-Public Class MyObject
-    Public Sub New(ByVal _endTime? As Date)
-        Me._endTime = _endTime
-    End Sub
-    Private _endTime? As Date
-    Public Property EndTime() As Date?
-        Get
-            Return _endTime
-        End Get
-        Set(ByVal value? As Date)
-            _endTime = value
-        End Set
-    End Property
-End Class
-Private myList As BindingList(Of MyObject)
-Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-    MyBase.OnLoad(e)
-    myList = New BindingList(Of MyObject)()
-    myList.Add(New MyObject(Nothing))
-    myList.Add(New MyObject(Date.Now))
-    myList.RaiseListChangedEvents = True
-    Me.RadDateTimePicker1.DataBindings.Add(New Binding("NullableValue", Me.myList, "EndTime", True, DataSourceUpdateMode.OnPropertyChanged))
-End Sub
-
-````
-
-{{endregion}} 
- 
 * __Editing Time in RadDateTimePicker__
 
 To use **RadDateTimePicker** as date and time editor you need to enable the embedded __TimePicker__ and set the desired mask that shows the time parts. 
 
 #### Enable the time picker.
 
-{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=ShowTimePicker2}} 
-{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=ShowTimePicker2}} 
-
-````C#
-this.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = true;
-this.radDateTimePicker1.Format = DateTimePickerFormat.Custom;
-this.radDateTimePicker1.CustomFormat = "MMM - dd - yyyy hh:mm tt";
-(this.radDateTimePicker1.DateTimePickerElement.CurrentBehavior as RadDateTimePickerCalendar).DropDownMinSize = new System.Drawing.Size(330, 250);
-
-````
-````VB.NET
-Me.radDateTimePicker1.DateTimePickerElement.ShowTimePicker = True
-Me.radDateTimePicker1.Format = DateTimePickerFormat.[Custom]
-Me.radDateTimePicker1.CustomFormat = "MMM - dd - yyyy hh:mm tt"
-TryCast(Me.radDateTimePicker1.DateTimePickerElement.CurrentBehavior, RadDateTimePickerCalendar).DropDownMinSize = New System.Drawing.Size(330, 250)
-
-````
-
-{{endregion}} 
- 
+<snippet id='editors-datetimepicker2-showtimepicker2-cs' />
+<snippet id='editors-datetimepicker2-showtimepicker2-vb' />
 
 # See Also
 

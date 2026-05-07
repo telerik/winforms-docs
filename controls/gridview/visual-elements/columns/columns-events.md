@@ -34,30 +34,8 @@ You can use the following properties of the **GridViewAutoGeneratingColumnEventA
 
 The following example demonstrates how you can cancel the creation of a specific column:
 
-{{source=..\SamplesCS\GridView\Columns\Columns.cs region=AutoGeneratingColumn}} 
-{{source=..\SamplesVB\GridView\Columns\Columns.vb region=AutoGeneratingColumn}} 
-
-````C#
-private void RadGridView1_AutoGeneratingColumn(object sender, GridViewAutoGeneratingColumnEventArgs e)
-{
-    if (e.Column.HeaderText  == "CreationDate")
-    {
-        e.Cancel = true;
-    }
-}
-
-````
-````VB.NET
-
-Private Sub RadGridView1_AutoGeneratingColumn(ByVal sender As Object, ByVal e As GridViewAutoGeneratingColumnEventArgs)
-    If e.Column.HeaderText = "CreationDate" Then
-        e.Cancel = True
-    End If
-End Sub
-
-````
-
-{{endregion}}
+<snippet id='gridview-columns-autogeneratingcolumn-cs' />
+<snippet id='gridview-columns-autogeneratingcolumn-vb' />
 
 >Changing the DataType property of the column will not be respected in the AutoGeneratingColumn event handler.
 

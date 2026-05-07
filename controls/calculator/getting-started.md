@@ -40,30 +40,10 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 To start using the __RadCalculator__ control, you can just add it to the Controls collection of your Form or drop it from the Toolbox. 
 
-{{source=..\SamplesCS\Calculator\CalculatorGettingStarted.cs region=GettingStarted}} 
-{{source=..\SamplesVB\Calculator\CalculatorGettingStarted.vb region=GettingStarted}} 
-
-````C#
-
-	public void AddCalculator()
-	{
-		var calculator = new RadCalculator();
-		this.Controls.Add(calculator);
-	}
-	
-
-````
-````VB.NET
-
-	Public Sub AddCalculator()
-		Dim calculator = New RadCalculator()
-		Me.Controls.Add(calculator)
-	End Sub
+<snippet id='calculator-getting-started-gettingstarted-cs' />
+<snippet id='calculator-getting-started-gettingstarted-vb' />
 
 
-````
-
-{{endregion}} 
 
 ## See Also
 

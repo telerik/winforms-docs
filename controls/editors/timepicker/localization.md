@@ -23,65 +23,19 @@ Below is a sample implementation of an English localization provider:
 
 #### Localizing RadTimePicker Strings 
 
-{{source=..\SamplesCS\Editors\TimePicker1.cs region=LocalizationProvider}} 
-{{source=..\SamplesVB\Editors\TimePicker1.vb region=LocalizationProvider}} 
+<snippet id='editors-timepicker1-localizationprovider-cs' />
+<snippet id='editors-timepicker1-localizationprovider-vb' />
 
-````C#
-class MyTimePickerLocalizationProvider : RadTimePickerLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case RadTimePickerStringId.HourHeaderText: return "Hours";
-            case RadTimePickerStringId.MinutesHeaderText: return "Minutes";
-            case RadTimePickerStringId.CloseButtonText: return "Close";
-            default: return string.Empty;
-        }
-    }
-}
 
-````
-````VB.NET
-Class MyTimePickerLocalizationProvider
-    Inherits RadTimePickerLocalizationProvider
-    Public Overrides Function GetLocalizedString(id As String) As String
-        Select Case id
-            Case RadTimePickerStringId.HourHeaderText
-                Return "Hours"
-            Case RadTimePickerStringId.MinutesHeaderText
-                Return "Minutes"
-            Case RadTimePickerStringId.CloseButtonText
-                Return "Close"
-            Case Else
-                Return String.Empty
-        End Select
-    End Function
-End Class
-
-````
-
-{{endregion}} 
- 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
 #### Assigning the Current Localization Provider 
 
-{{source=..\SamplesCS\Editors\TimePicker1.cs region=settingTheLocalizationProvider}} 
-{{source=..\SamplesVB\Editors\TimePicker1.vb region=settingTheLocalizationProvider}} 
+<snippet id='editors-timepicker1-settingthelocalizationprovider-cs' />
+<snippet id='editors-timepicker1-settingthelocalizationprovider-vb' />
 
-````C#
-RadTimePickerLocalizationProvider.CurrentProvider = new MyTimePickerLocalizationProvider();
 
-````
-````VB.NET
-RadTimePickerLocalizationProvider.CurrentProvider = New MyTimePickerLocalizationProvider()
-
-````
-
-{{endregion}} 
- 
 
 The code provided above illustrates the approach to be used to localize the __RadTimePicker__ and is not intended as a full translation.
 

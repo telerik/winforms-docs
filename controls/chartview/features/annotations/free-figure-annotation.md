@@ -18,88 +18,10 @@ position: 4
 
 #### Define Annotation
 
-{{source=..\SamplesCS\ChartView\Annotations\CustomAnnotation.cs region=CustomAnnotation}} 
-{{source=..\SamplesVB\ChartView\Annotations\CustomAnnotation.vb region=CustomAnnotation}} 
-
-````C#
-ScatterSeries scatterSeries = new ScatterSeries();
-scatterSeries.Name = "ChartData";
-scatterSeries.DataPoints.Add(new ScatterDataPoint(15, 19));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(18, 10));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(13, 15));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(10, 8));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(5, 12));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(20, 20));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(15, 10));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(7, 6));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(18, 22));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(10, 10));
-scatterSeries.PointSize = new SizeF(8, 8);
-this.radChartView1.Series.Add(scatterSeries);
-
-CartesianFreeFigureAnnotation freeAnnotation = new CartesianFreeFigureAnnotation();
-freeAnnotation.Points.Add(new FreeFigurePoint(6, 8));
-freeAnnotation.Points.Add(new FreeFigurePoint(8, 15));
-freeAnnotation.Points.Add(new FreeFigurePoint(15, 17));
-freeAnnotation.Points.Add(new FreeFigurePoint(17, 8));
-freeAnnotation.Points.Add(new FreeFigurePoint(12, 5));
-freeAnnotation.Points.Add(new FreeFigurePoint(6, 8));
-
-freeAnnotation.CloseFigure = true;
-freeAnnotation.Spline = false;
-freeAnnotation.Label = "Annotation";
-freeAnnotation.Font = new Font("Arial", 12f, FontStyle.Regular);
-freeAnnotation.BackColor = Color.FromArgb(50, 37, 160, 219);
-freeAnnotation.BorderDashStyle = DashStyle.Custom;
-freeAnnotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
-freeAnnotation.BorderColor = Color.Orange;
-freeAnnotation.BorderWidth = 2;
-
-freeAnnotation.PointShape = new StarShape();
-freeAnnotation.PointSize = new SizeF(24, 24);
-this.radChartView1.Annotations.Add(freeAnnotation);
+<snippet id='chartview-free-figure-annotation-customannotation-cs'/>
+<snippet id='chartview-free-figure-annotation-customannotation-vb'/>
 
 
-````
-````VB.NET
-Dim scatterSeries As ScatterSeries = New ScatterSeries()
-scatterSeries.Name = "ChartData"
-scatterSeries.DataPoints.Add(New ScatterDataPoint(15, 19))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(18, 10))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(13, 15))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(10, 8))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(5, 12))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(20, 20))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(15, 10))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(7, 6))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(18, 22))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(10, 10))
-scatterSeries.PointSize = New SizeF(8, 8)
-Me.radChartView1.Series.Add(scatterSeries)
-
-Dim freeAnnotation As CartesianFreeFigureAnnotation = New CartesianFreeFigureAnnotation()
-freeAnnotation.Points.Add(New FreeFigurePoint(6, 8))
-freeAnnotation.Points.Add(New FreeFigurePoint(8, 15))
-freeAnnotation.Points.Add(New FreeFigurePoint(15, 17))
-freeAnnotation.Points.Add(New FreeFigurePoint(17, 8))
-freeAnnotation.Points.Add(New FreeFigurePoint(12, 5))
-freeAnnotation.Points.Add(New FreeFigurePoint(6, 8))
-freeAnnotation.CloseFigure = True
-freeAnnotation.Spline = False
-freeAnnotation.Label = "Annotation"
-freeAnnotation.Font = New Font("Arial", 12.0F, FontStyle.Regular)
-freeAnnotation.BackColor = Color.FromArgb(50, 37, 160, 219)
-freeAnnotation.BorderDashStyle = DashStyle.Custom
-freeAnnotation.BorderDashPattern = New Single() {9, 3, 2, 4}
-freeAnnotation.BorderColor = Color.Orange
-freeAnnotation.BorderWidth = 2
-freeAnnotation.PointShape = New StarShape()
-freeAnnotation.PointSize = New SizeF(24, 24)
-Me.radChartView1.Annotations.Add(freeAnnotation)
-
-````
-
-{{endregion}}
 
 ## Properties
 

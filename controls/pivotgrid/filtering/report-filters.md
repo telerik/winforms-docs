@@ -21,19 +21,10 @@ The report filters are displayed as descriptor elements in the report filters ar
 
 #### ShowFilterArea Property
 
-{{source=..\SamplesCS\PivotGrid\Filtering\PivotGridReportFiltering.cs region=ShowFilterArea}} 
-{{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=ShowFilterArea}} 
+<snippet id='pivotgrid-pivotgridreportfiltering-showfilterarea-cs' />
+<snippet id='pivotgrid-pivotgridreportfiltering-showfilterarea-vb' />
 
-````C#
-this.radPivotGrid1.ShowFilterArea = true;
 
-````
-````VB.NET
-Me.radPivotGrid1.ShowFilterArea = True
-
-````
-
-{{endregion}}
 
 The end-user can add/remove report filters by dragging a field to the report filters area or by using the [RadPivotFieldList]({%slug winforms/pivotgrid/pivot-field-list/radpivotfieldlist%}).  Additionally, the filter menu opened by the filter button on the filter descriptor elements allows applying different filter conditions. This can be achieved by either selecting/deselecting items from the list box or by using one of the well-known filtering functions (Equals, Contains, Between, etc.).
 
@@ -49,59 +40,19 @@ The contents of the **FilterDescriptions** collection can also be edited at runt
 
 #### Filter Descriptions at Run-time
 
-{{source=..\SamplesCS\PivotGrid\Filtering\PivotGridReportFiltering.cs region=PropertyFilterDescription}} 
-{{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=PropertyFilterDescription}} 
+<snippet id='pivotgrid-pivotgridreportfiltering-propertyfilterdescription-cs' />
+<snippet id='pivotgrid-pivotgridreportfiltering-propertyfilterdescription-vb' />
 
-````C#
-PropertyFilterDescription description = new PropertyFilterDescription(); 
-ComparisonCondition condition = new ComparisonCondition();
-condition.Condition = Comparison.Equals;
-condition.Than = "UK";
-description.PropertyName = "ShipCountry";
-description.Condition = condition;
-description.CustomName = "Country";
-this.radPivotGrid1.FilterDescriptions.Add(description);
 
-````
-````VB.NET
-Dim description As New PropertyFilterDescription()
-Dim condition As New ComparisonCondition()
-condition.Condition = Telerik.Pivot.Core.Filtering.Comparison.Equals
-condition.Than = "UK"
-description.PropertyName = "ShipCountry"
-description.Condition = condition
-description.CustomName = "Country"
-Me.radPivotGrid1.FilterDescriptions.Add(description)
-
-````
-
-{{endregion}}
 
 The __Condition__ property of the __PropertyFilterDescription__ holds the currently applied condition. It can be set with a __ComparisonCondition__ instance as shown above or a __SetCondition__ which allows you to include/exclude specific values:
 
 #### Applying Condition
 
-{{source=..\SamplesCS\PivotGrid\Filtering\PivotGridReportFiltering.cs region=SetCondition}} 
-{{source=..\SamplesVB\PivotGrid\Filtering\PivotGridReportFiltering.vb region=SetCondition}} 
+<snippet id='pivotgrid-pivotgridreportfiltering-setcondition-cs' />
+<snippet id='pivotgrid-pivotgridreportfiltering-setcondition-vb' />
 
-````C#
-SetCondition setCondition = new SetCondition();
-setCondition.Comparison = SetComparison.Includes;
-setCondition.Items.Add("UK");
-setCondition.Items.Add("Canada");
-setCondition.Items.Add("USA");
 
-````
-````VB.NET
-Dim setCondition As New SetCondition()
-setCondition.Comparison = SetComparison.Includes
-setCondition.Items.Add("UK")
-setCondition.Items.Add("Canada")
-setCondition.Items.Add("USA")
-
-````
-
-{{endregion}}
 
 # See Also
 

@@ -30,19 +30,10 @@ The [RadDocumentEditor class]({%slug winforms/richtexteditor-/features/raddocume
 
 #### Example 1: Insert vertical tab through RadDocumentEditor 
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_0}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_0}} 
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_0-cs' />
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_0-vb' />
 
-````C#
-radDocumentEditor.Insert("\v");
 
-````
-````VB.NET
-radDocumentEditor.Insert(vbVerticalTab)
-
-````
-
-{{endregion}} 
 
 Another option is to create a [Span]({%slug winforms/richtexteditor-/document-elements/span%}) and assign the vertical tab character to it. 
 
@@ -50,21 +41,11 @@ Another option is to create a [Span]({%slug winforms/richtexteditor-/document-el
 
 #### Example 2: Create vertical tab through document model 
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_2}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_2}} 
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_2-cs' />
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_2-vb' />
 
-````C#
-Span span = new Span("\v");
 
-````
-````VB.NET
-Dim span As New Span(vbVerticalTab)
 
-````
-
-{{endregion}} 
-
- 
 When the vertical tab symbol is inserted in a document, it is replaced with a Break element of type **LineBreak**.
 
 ## Insert a Line Break Before/After a Merge Field If the Field Result Isn't Empty
@@ -87,24 +68,11 @@ You could handle a similar scenario using the vertical tab symbol in the **TextA
  
 #### Example 3: Insert vertical tab in the switch of a merge field 
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_4}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_4}} 
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_4-cs' />
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_4-vb' />
 
-````C#
-MergeField mergeField = new MergeField() { PropertyPath = "JobTitle", TextAfterIfNotEmpty = "\v" };
 
-````
-````VB.NET
-Dim mergeField As New MergeField() With { _
-    .PropertyPath = "JobTitle", _
-    .TextAfterIfNotEmpty = vbVerticalTab _
-}
 
-````
-
-{{endregion}} 
-
- 
 >caption Figure 3: Result fragment of mail merge, when one of the fields has applied a switch using vertical tab and has no value
 
 ![WinForms RadRichTextEditor Result fragment of mail merge](images/radrichtexteditor-MailMerge-InsertANewLineInMergeField_03.png)
@@ -115,24 +83,11 @@ You could also use the *“\r\n”* in the **TextBeforeIfNotEmpty** or **TextAft
 
 #### Example 4: Insert \r\n in the switch of a merge field 
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_6}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_6}} 
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_6-cs' />
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_6-vb' />
 
-````C#
-MergeField mergeField = new MergeField() { PropertyPath = "FirstName", TextAfterIfNotEmpty = "\r\n" };
 
-````
-````VB.NET
-Dim mergeField As New MergeField() With { _
-     .PropertyPath = "FirstName", _
-     .TextAfterIfNotEmpty = vbCr & vbLf _
-}
 
-````
-
-{{endregion}} 
-
- 
 >important The vertical tab is serialized only when it is used as a value for a document variable. In all other cases, it is not included in the document content on export.
 
 ## Using the Vertical Tab in a DocumentVariableField
@@ -141,36 +96,11 @@ The suggested approach in scenarios that include export is to use a [document va
 
 #### Example 5: Insert the vertical tab in the switch of a merge field
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_8}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=radrichtexteditor-features-mail-merge-Insert-new-line-in-merge-field_8}} 
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_8-cs' />
+<snippet id='richtexteditor-mailmergecode-radrichtexteditor-features-mail-merge-insert-new-line-in-merge-field_8-vb' />
 
-````C#
-string verticalTabSymbol = "\v";
-string verticalTabKey = "verticalTab";
-radRichTextEditor.Document.DocumentVariables.Add(verticalTabKey, verticalTabSymbol);
-DocumentVariableField documentVariableField = new DocumentVariableField();
-documentVariableField.VariableName = verticalTabKey;
-var mergeField = new MergeField() { PropertyPath = "FirstName" };
-mergeField.SetPropertyValue(MergeField.TextAfterIfNotEmptyProperty, documentVariableField);
-radRichTextEditor.InsertField(mergeField, FieldDisplayMode.Result);
 
-````
-````VB.NET
-Dim verticalTabSymbol As String = vbVerticalTab
-Dim verticalTabKey As String = "verticalTab"
-radRichTextEditor.Document.DocumentVariables.Add(verticalTabKey, verticalTabSymbol)
-Dim documentVariableField As New DocumentVariableField()
-documentVariableField.VariableName = verticalTabKey
-Dim mergeField__1 = New MergeField() With { _
-    .PropertyPath = "FirstName" _
-}
-mergeField__1.SetPropertyValue(MergeField.TextAfterIfNotEmptyProperty, documentVariableField)
-radRichTextEditor.InsertField(mergeField__1, FieldDisplayMode.Result)
 
-````
-
-{{endregion}} 
- 
 As a value of the document variable, you could also insert the "\r\n". Keep in mind that this value is exported to DOCX files only.
 
 # See Also

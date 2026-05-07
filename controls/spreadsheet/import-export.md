@@ -38,52 +38,16 @@ To open or save a document with RadSpreadsheet, you can use the **Import()** and
 
 #### Example 1: Import XLSX document
 
-{{source=..\SamplesCS\Spreadsheet\Events.cs region=FormatProviderImport}} 
-{{source=..\SamplesVB\Spreadsheet\Events.vb region=FormatProviderImport}}
+<snippet id='spreadsheet-events-formatproviderimport-cs' />
+<snippet id='spreadsheet-events-formatproviderimport-vb' />
 
-````C#
-XlsxFormatProvider formatProvider = new XlsxFormatProvider();
-using (Stream input = new FileStream(fileName, FileMode.Open))
-{
-    this.radSpreadsheet.Workbook = formatProvider.Import(input,null);
-}
 
-````
-````VB.NET
-Dim formatProvider As New XlsxFormatProvider()
-Using input As Stream = New FileStream(fileName, FileMode.Open)
-    Me.radSpreadsheet.Workbook = formatProvider.Import(input)
-End Using
-
-```` 
-
- 
-{{endregion}} 
 
 #### Example 2: Export XLSX document
  
-{{source=..\SamplesCS\Spreadsheet\Events.cs region=FormatProviderExport}} 
-{{source=..\SamplesVB\Spreadsheet\Events.vb region=FormatProviderExport}}
+<snippet id='spreadsheet-events-formatproviderexport-cs' />
+<snippet id='spreadsheet-events-formatproviderexport-vb' />
 
-````C#
-XlsxFormatProvider formatProvider = new XlsxFormatProvider();
-using (Stream output = new FileStream(fileName, FileMode.Create))
-{
-    // formatProvider.Export(this.radSpreadsheet.Workbook, output); //This method is obsolete since Q4 2024. 
-    formatProvider.Export(this.radSpreadsheet.Workbook, output, TimeSpan.FromSeconds(10));
-}
-
-````
-````VB.NET
-Dim formatProvider As New XlsxFormatProvider()
-Using output As Stream = New FileStream(fileName, FileMode.Create)
-    ' formatProvider.Export(Me.radSpreadsheet.Workbook, output) This method is obsolete since Q4 2024. 
-    formatProvider.Export(Me.radSpreadsheet.Workbook, output, TimeSpan.FromSeconds(10))
-End Using
-
-```` 
- 
-{{endregion}} 
 
 
 >More information about the usage of the format providers is available in the [Formats and Conversion](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/general-information) section of the documentation for the model of **RadSpreadsheet** - [**RadSpreadProcessing**](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview).

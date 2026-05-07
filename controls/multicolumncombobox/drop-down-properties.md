@@ -19,20 +19,10 @@ The **DropDownWidth** property gets or sets the width of the of the drop-down po
 
 #### Setting the DropDownWidth property
 
-{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=dropDownHeight}} 
-{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownHeight}} 
+<snippet id='multicolumncombobox-multicolumncombobox1-dropdownheight-cs' />
+<snippet id='multicolumncombobox-multicolumncombobox1-dropdownheight-vb' />
 
-````C#
-            
-this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500;
 
-````
-````VB.NET
-Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownWidth = 500
-
-````
-
-{{endregion}}
 
 >caption Figure 1: DropDownWidth
 
@@ -44,20 +34,10 @@ The **DropDownHeight** property gets or sets the height in pixels of the drop-do
 
 #### Setting the DropDownHeight property
 
-{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=dropDownWidth}} 
-{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=dropDownWidth}} 
+<snippet id='multicolumncombobox-multicolumncombobox1-dropdownwidth-cs' />
+<snippet id='multicolumncombobox-multicolumncombobox1-dropdownwidth-vb' />
 
-````C#
-            
-this.radMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500;
 
-````
-````VB.NET
-Me.RadMultiColumnComboBox1.MultiColumnComboBoxElement.DropDownHeight = 500
-
-````
-
-{{endregion}}
 
 >caption Figure 2: DropDownHeight
 
@@ -77,20 +57,10 @@ The **AutoSizeDropDownToBestFit** property determines whether the drop-down port
 
 #### Autosize the drop down and best-fitting columns
 
-{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=AutoSizeDropDownToBestFit}} 
-{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=AutoSizeDropDownToBestFit}} 
+<snippet id='multicolumncombobox-multicolumncombobox1-autosizedropdowntobestfit-cs' />
+<snippet id='multicolumncombobox-multicolumncombobox1-autosizedropdowntobestfit-vb' />
 
-````C#
-this.radMultiColumnComboBox1.AutoSizeDropDownToBestFit = true;
 
-````
-````VB.NET
- 
-Me.RadMultiColumnComboBox1.AutoSizeDropDownToBestFit = True
-
-````
-
-{{endregion}}
 
 ## AutoSizeDropDownColumnMode
 

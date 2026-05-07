@@ -28,18 +28,16 @@ Numeric values support decimal notation and scientific notation (for example, `1
 
 Reference grid column values by enclosing the column name in square brackets.
 
-````
-[ProductName]
-[UnitPrice]
-[OrderDate]
-````
+* [ProductName]
+* [UnitPrice]
+* [OrderDate]
+
 
 If a column name contains special characters (spaces, operators, brackets, or other reserved characters), the square bracket syntax handles escaping automatically.
 
-````
-[Unit Price]
-[Order#]
-````
+* [Unit Price]
+* [Order#]
+
 
 ## Arithmetic Operators
 
@@ -106,21 +104,10 @@ Operators are evaluated in the following order from highest to lowest precedence
 
 Combine functions, operators, and field references to create complex expressions. Use parentheses to group sub-expressions and control evaluation order.
 
-````
-IIF([UnitPrice] * [Quantity] > 1000, 'High Value', 'Standard')
-````
-
-````
-IIF(ISNULL([ShippedDate], TODAY()) > [RequiredDate], 'Late', 'On Time')
-````
-
-````
-UPPER(SUBSTR([ProductName], 0, 3)) + '-' + CSTR([ProductID])
-````
-
-````
-[UnitPrice] * [Quantity] * IIF([Discount] > 0, 1 - [Discount], 1)
-````
+* IIF([UnitPrice] * [Quantity] > 1000, 'High Value', 'Standard')
+* IIF(ISNULL([ShippedDate], TODAY()) > [RequiredDate], 'Late', 'On Time')
+* UPPER(SUBSTR([ProductName], 0, 3)) + '-' + CSTR([ProductID])
+* [UnitPrice] * [Quantity] * IIF([Discount] > 0, 1 - [Discount], 1)
 
 ## See Also
 

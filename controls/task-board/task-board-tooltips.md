@@ -33,61 +33,10 @@ The code snippet below demonstrates how you can use RadTaskBoard.**ToolTipTextNe
 
 #### Changing the Tooltips for the Card Tags and Card Users
 
-{{source=..\SamplesCS\TaskBoard\TaskBoardGettingStarted.cs region=Tooltips}} 
-{{source=..\SamplesVB\TaskBoard\TaskBoardGettingStarted.vb region=Tooltips}} 
+<snippet id='task-board-taskboardgettingstarted-tooltips-cs' />
+<snippet id='task-board-taskboardgettingstarted-tooltips-vb' />
 
-````C#
 
-private void RadTaskBoard1_ToolTipTextNeeded(object sender, ToolTipTextNeededEventArgs e)
-{
-    RadTaskCardTagElement  tagElement = sender as RadTaskCardTagElement;
-    RadTaskCardUserElement userElement = sender as RadTaskCardUserElement;
-    LightVisualElement lve = sender as LightVisualElement;
-    if (tagElement!=null )
-    {
-        if (tagElement.Text=="win-forms")
-        {
-            e.ToolTipText = "Windows Forms";
-        }
-        else if (tagElement.Text=="wpf")
-        {
-            e.ToolTipText = "Windows Presentation Foundation";
-        }
-    }
-    else if (userElement!=null)
-    {
-        e.ToolTipText = userElement.UserInfo.Initials + " " + userElement.UserInfo.LastName;
-    }
-    else if (lve!=null && lve.Class== "TaskCardDescription")
-    {
-        e.ToolTipText = "Custom description";
-    }
-}
-
-````
-````VB.NET
-Private Sub RadTaskBoard1_ToolTipTextNeeded(ByVal sender As Object, ByVal e As ToolTipTextNeededEventArgs)
-    Dim tagElement As RadTaskCardTagElement = TryCast(sender, RadTaskCardTagElement)
-    Dim userElement As RadTaskCardUserElement = TryCast(sender, RadTaskCardUserElement)
-    Dim lve As LightVisualElement = TryCast(sender, LightVisualElement)
-
-    If tagElement IsNot Nothing Then
-
-        If tagElement.Text = "win-forms" Then
-            e.ToolTipText = "Windows Forms"
-        ElseIf tagElement.Text = "wpf" Then
-            e.ToolTipText = "Windows Presentation Foundation"
-        End If
-    ElseIf userElement IsNot Nothing Then
-        e.ToolTipText = userElement.UserInfo.Initials & " " + userElement.UserInfo.LastName
-    ElseIf lve IsNot Nothing AndAlso lve.[Class] = "TaskCardDescription" Then
-        e.ToolTipText = "Custom description"
-    End If
-End Sub
-
-````
-
-{{endregion}}  
 
 >caption Custom tooltip for the Tag element
 

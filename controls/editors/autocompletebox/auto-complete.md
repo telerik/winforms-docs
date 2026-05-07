@@ -65,55 +65,11 @@ __AutoCompleteValueMember__: To set the __AutoCompleteValueMember__ property, fi
 
 To use auto-completion without specifying a data source, you need to populate the items which will be used for completing the input string in RadAutoCompleteBox in the __Items__ collection of the control: 
 
-{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=addItems}} 
-{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=addItems}} 
+<snippet id='editors-autocompletebox-additems-cs' />
+<snippet id='editors-autocompletebox-additems-vb' />
 
-````C#
-private void AddAutoCompleteItems()
-{
-    RadListDataItemCollection items = this.radAutoCompleteBox1.AutoCompleteItems;
-    items.Add(new RadListDataItem("Joe Smith", "joe@fakecompany.com"));
-    items.Add(new RadListDataItem("Adam Petersen", "adam@qwerty.com"));
-    items.Add(new RadListDataItem("Jack Russel", "jack@russel.nocom"));
-    items.Add(new RadListDataItem("Daniel Finger", "daniel.pinger@gmail.com"));
-    items.Add(new RadListDataItem("Richard Vail", "rvail@richardvail.com"));
-    items.Add(new RadListDataItem("Sebastian Jonnson", "s.jonnson@sjonnson.com"));
-    items.Add(new RadListDataItem("Lee Cooper", "lee.cooper@coopercoorp.com"));
-    items.Add(new RadListDataItem("Kelvin Clain", "kclain@clainkevin.com"));
-    items.Add(new RadListDataItem("Maria Jenson", "mjenson@mariajenson.com"));
-    items.Add(new RadListDataItem("Chelsea Maarten", "chelsea@maarten.com"));
-    items.Add(new RadListDataItem("Jenson Chew", "jenson.chew@nospam.com"));
-    items.Add(new RadListDataItem("Martin Williams", "m.williams@martinandwilliams.com"));
-    items.Add(new RadListDataItem("Telerik", "clientservice@telerik.com"));
-    items.Add(new RadListDataItem("James Stone", "james.stone@manystones.com"));
-    items.Add(new RadListDataItem("Samuel Jackson", "samuel.jackson@nojackson.com"));
-}
 
-````
-````VB.NET
-Private Sub AddAutoCompleteItems()
-    Dim items As RadListDataItemCollection = Me.RadAutoCompleteBox1.AutoCompleteItems
-    items.Add(New RadListDataItem("Joe Smith", "joe@fakecompany.com"))
-    items.Add(New RadListDataItem("Adam Petersen", "adam@qwerty.com"))
-    items.Add(New RadListDataItem("Jack Russel", "jack@russel.nocom"))
-    items.Add(New RadListDataItem("Daniel Finger", "daniel.pinger@gmail.com"))
-    items.Add(New RadListDataItem("Richard Vail", "rvail@richardvail.com"))
-    items.Add(New RadListDataItem("Sebastian Jonnson", "s.jonnson@sjonnson.com"))
-    items.Add(New RadListDataItem("Lee Cooper", "lee.cooper@coopercoorp.com"))
-    items.Add(New RadListDataItem("Kelvin Clain", "kclain@clainkevin.com"))
-    items.Add(New RadListDataItem("Maria Jenson", "mjenson@mariajenson.com"))
-    items.Add(New RadListDataItem("Chelsea Maarten", "chelsea@maarten.com"))
-    items.Add(New RadListDataItem("Jenson Chew", "jenson.chew@nospam.com"))
-    items.Add(New RadListDataItem("Martin Williams", "m.williams@martinandwilliams.com"))
-    items.Add(New RadListDataItem("Telerik", "clientservice@telerik.com"))
-    items.Add(New RadListDataItem("James Stone", "james.stone@manystones.com"))
-    items.Add(New RadListDataItem("Samuel Jackson", "samuel.jackson@nojackson.com"))
-End Sub
 
-````
-
-{{endregion}} 
- 
 >caption Figure 2: RadAutoCompleteBox with some items added directly. 
 
 ![WinForms RadAutoCompleteBox With Some Items Added Directly](images/editors-autocompletebox-autocomplete002.png)
@@ -128,29 +84,9 @@ As of **R1 2020 SP1** **RadAutoCompleteBox** offers the **AllowDuplicates** prop
 
 Note that you can still add duplicated tokens in the editor if you type them manually. In order to avoid that you can subscribe to **TokenValidating** event and if the existing text in **RadAutoCompleteBox** contains the new text, set the **IsValidToken** property to *false*. The **TokenValidating** event will be called for each token that is going to be added to the control text area.
 
-{{source=..\SamplesCS\Editors\AutoCompleteBox.cs region=InvalidToken}}
-{{source=..\SamplesVB\Editors\AutoCompleteBox.vb region=InvalidToken}}
+<snippet id='editors-autocompletebox-invalidtoken-cs' />
+<snippet id='editors-autocompletebox-invalidtoken-vb' />
 
-````C#
-              private void RadAutoCompleteBox1_TokenValidating(object sender, TokenValidatingEventArgs e)
-        {
-            if (this.radAutoCompleteBox1.Text.Contains(e.Text))
-            {
-                e.IsValidToken = false;
-            }
-        }    
-
-````
-````VB.NET
-	      Private Sub RadAutoCompleteBox1_TokenValidating(ByVal sender As Object, ByVal e As TokenValidatingEventArgs)
-        If Me.radAutoCompleteBox1.Text.Contains(e.Text) Then
-            e.IsValidToken = False
-        End If
-    End Sub   
-
-````
-
-{{endregion}}
 
 
 # See Also

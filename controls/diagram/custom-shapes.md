@@ -17,75 +17,14 @@ This tutorial will guide you through the task of creating a custom shape.
 
 In order to create a custom shape, you need to define a custom shape class deriving from the __ElementShape__ class. Overriding its __CreatePath__ method you can define the desired shape. Afterwards, you need to apply your shape implementation to the RadDiagramShape.__ElementShape__ property: 
 
-{{source=..\SamplesCS\Diagram\DiagramCustomShapes.cs region=MyShape}} 
-{{source=..\SamplesVB\Diagram\DiagramCustomShapes.vb region=MyShape}} 
+<snippet id='diagram-custom-shapes-myshape-cs' />
+<snippet id='diagram-custom-shapes-myshape-vb' />
 
-````C#
-    
-public class MyShape : ElementShape
-{
-    public override GraphicsPath CreatePath(System.Drawing.Rectangle bounds)
-    {
-        GraphicsPath path = new GraphicsPath();
-        path.AddString("Custom", new System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic);
-        return path;
-    }
-}
 
-````
-````VB.NET
-Public Class MyShape
-Inherits ElementShape
-    Public Overrides Function CreatePath(bounds As System.Drawing.Rectangle) As GraphicsPath
-        Dim path As New GraphicsPath()
-        path.AddString("Custom", New System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic)
-        Return path
-    End Function
-End Class
 
-````
+<snippet id='diagram-custom-shapes-applycustomshape-cs' />
+<snippet id='diagram-custom-shapes-applycustomshape-vb' />
 
-{{endregion}} 
- 
-
-{{source=..\SamplesCS\Diagram\DiagramCustomShapes.cs region=ApplyCustomShape}} 
-{{source=..\SamplesVB\Diagram\DiagramCustomShapes.vb region=ApplyCustomShape}} 
-
-````C#
-            
-RadDiagramShape shape1 = new RadDiagramShape()
-{
-    Text = "",
-    ElementShape = new MyShape(),
-    BackColor = System.Drawing.Color.LightBlue
-};
-shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 80);
-radDiagram1.AddShape(shape1);
-
-````
-````VB.NET
-Dim shape1 As New RadDiagramShape() With { _
-    .Text = "", _
-    .ElementShape = New MyShape(), _
-    .BackColor = System.Drawing.Color.LightBlue _
-}
-shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 80)
-'#Region ""
-RadDiagram1.AddShape(shape1)
-End Sub
-'#Region "MyShape"
-Public Class MyShape
-Inherits ElementShape
-Public Overrides Function CreatePath(bounds As System.Drawing.Rectangle) As GraphicsPath
-    Dim path As New GraphicsPath()
-    path.AddString("Custom", New System.Drawing.FontFamily("Arial"), 0, bounds.Width, Point.Empty, StringFormat.GenericTypographic)
-    Return path
-End Function
-End Class
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadDiagram Custom Shapes](images/diagram-custom-shapes001.png)

@@ -31,24 +31,10 @@ The __ValueChanging__ event fires before the value is changed and allows you to 
 
 #### Cancel ValueChanging.
 
-{{source=..\SamplesCS\Editors\ColorBox1.cs region=colorBoxValueChanging}} 
-{{source=..\SamplesVB\Editors\ColorBox1.vb region=colorBoxValueChanging}} 
+<snippet id='editors-colorbox1-colorboxvaluechanging-cs' />
+<snippet id='editors-colorbox1-colorboxvaluechanging-vb' />
 
-````C#
-private void radColorBox1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
-{
-    e.Cancel = !((Color)e.NewValue).IsNamedColor;
-}
 
-````
-````VB.NET
-Private Sub RadColorBox1_ValueChanging(sender As Object, e As Telerik.WinControls.UI.ValueChangingEventArgs)
-    e.Cancel = Not DirectCast(e.NewValue, System.Drawing.Color).IsNamedColor
-End Sub
-
-````
-
-{{endregion}} 
 
 # See Also
 

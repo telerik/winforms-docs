@@ -24,22 +24,10 @@ Here is how you can make the middle columns three times bigger:
 
 #### Resize Column
 
-{{source=..\SamplesCS\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.cs region=DayView}} 
-{{source=..\SamplesVB\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.vb region=DayView}} 
+<snippet id='scheduler-modifysizeofrowscolumnsandresources-dayview-cs' />
+<snippet id='scheduler-modifysizeofrowscolumnsandresources-dayview-vb' />
 
-````C#
-scheduler.ActiveViewType = SchedulerViewType.Day; // this can be changed to either Week or WorkWeek, the ViewElement is always SchedulerDayViewElement
-(scheduler.ViewElement as SchedulerDayViewElement).SetColumnWidth(1, 3);
 
-````
-````VB.NET
-scheduler.ActiveViewType = SchedulerViewType.Day
-' this can be changed to either Week or WorkWeek, the ViewElement is always SchedulerDayViewElement
-TryCast(scheduler.ViewElement, SchedulerDayViewElement).SetColumnWidth(1, 3)
-
-````
-
-{{endregion}} 
 
 >important The actual width of a column will be calculated proportionally according to the values other columns have. The default value of each column is 1. This means that setting a value of 2 for a given column will make it twice as large compared to other columns.
 
@@ -56,23 +44,10 @@ The approach for this view is similar:
 
 #### Resize Column
 
-{{source=..\SamplesCS\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.cs region=MonthView}} 
-{{source=..\SamplesVB\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.vb region=MonthView}} 
+<snippet id='scheduler-modifysizeofrowscolumnsandresources-monthview-cs' />
+<snippet id='scheduler-modifysizeofrowscolumnsandresources-monthview-vb' />
 
-````C#
-scheduler.ActiveViewType = SchedulerViewType.Month;
-(scheduler.ViewElement as SchedulerMonthViewElement).SetColumnWidth(1, 2.5f);
-(scheduler.ViewElement as SchedulerMonthViewElement).SetRowHeight(1, 2.5f);
 
-````
-````VB.NET
-scheduler.ActiveViewType = SchedulerViewType.Month
-TryCast(scheduler.ViewElement, SchedulerMonthViewElement).SetColumnWidth(1, 2.5F)
-TryCast(scheduler.ViewElement, SchedulerMonthViewElement).SetRowHeight(1, 2.5F)
-
-````
-
-{{endregion}} 
 
 >caption Figure 4: Increased Column Width
 ![WinForms RadScheduler Increased Column Width](images/scheduler-appearance-modifying-size-of-rows-columns-and-resources004.png)
@@ -86,21 +61,10 @@ Here we see the columns named as 19-25 may. The same approach can be applied her
 
 #### Resize Column
 
-{{source=..\SamplesCS\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.cs region=TimelineView}} 
-{{source=..\SamplesVB\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.vb region=TimelineView}} 
+<snippet id='scheduler-modifysizeofrowscolumnsandresources-timelineview-cs' />
+<snippet id='scheduler-modifysizeofrowscolumnsandresources-timelineview-vb' />
 
-````C#
-scheduler.ActiveViewType = SchedulerViewType.Timeline;
-(scheduler.ViewElement as SchedulerTimelineViewElement).SetColumnWidth(1, 3f);
 
-````
-````VB.NET
-scheduler.ActiveViewType = SchedulerViewType.Timeline
-TryCast(scheduler.ViewElement, SchedulerTimelineViewElement).SetColumnWidth(1, 3.0F)
-
-````
-
-{{endregion}} 
 
 >caption Figure 6: Increased Column Width
 ![WinForms RadScheduler Increased Column Width](images/scheduler-appearance-modifying-size-of-rows-columns-and-resources006.png)
@@ -114,23 +78,10 @@ Here we see the resources - *"Conference Room 112/113"*. Resizing them can happe
 
 #### Resize Resource
 
-{{source=..\SamplesCS\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.cs region=ResourceView}} 
-{{source=..\SamplesVB\Scheduler\Appearance\ModifySizeOfRowsColumnsAndResources.vb region=ResourceView}} 
+<snippet id='scheduler-modifysizeofrowscolumnsandresources-resourceview-cs' />
+<snippet id='scheduler-modifysizeofrowscolumnsandresources-resourceview-vb' />
 
-````C#
-scheduler.GroupType = GroupType.Resource;
-scheduler.ActiveViewType = SchedulerViewType.Day;
-(scheduler.ViewElement as SchedulerDayViewGroupedByResourceElement).SetResourceSize(0, 0.25f);
 
-````
-````VB.NET
-scheduler.GroupType = GroupType.Resource
-scheduler.ActiveViewType = SchedulerViewType.Day
-TryCast(scheduler.ViewElement, SchedulerDayViewGroupedByResourceElement).SetResourceSize(0, 0.25F)
-
-````
-
-{{endregion}} 
 
 >caption Figure 8: Increased Resource Size 
 ![WinForms RadScheduler Increased Resource Size](images/scheduler-appearance-modifying-size-of-rows-columns-and-resources008.png)

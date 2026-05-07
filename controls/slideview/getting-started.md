@@ -51,45 +51,10 @@ Follow the steps:
 
 5\. Set the __BindingSource__ property of RadSlideView. 
 
-{{source=..\SamplesCS\SlideView\GettingStartedGallery.cs region=GettingStarted}} 
-{{source=..\SamplesVB\SlideView\GettingStartedGallery.vb region=GettingStarted}}
+<snippet id='slideview-gettingstartedgallery-gettingstarted-cs' />
+<snippet id='slideview-gettingstartedgallery-gettingstarted-vb' />
 
-````C#
-BindingSource bs = new BindingSource();
-DataTable dt = new DataTable();
-dt.Columns.Add("Photo", typeof(Image));
-dt.Rows.Add(Properties.Resources.Burano1);
-dt.Rows.Add(Properties.Resources.Burano2);
-dt.Rows.Add(Properties.Resources.Burano3);
-bs.DataSource = dt;                   
 
-LightVisualElement basicTemplate = new LightVisualElement();
-basicTemplate.Opacity = 0.5;
-basicTemplate.ImageLayout = ImageLayout.Zoom;
-this.radSlideView1.Mappings.Add(new Mapping(basicTemplate, LightVisualElement.ImageProperty, dt.Columns[0].ColumnName)); 
-this.radSlideView1.TemplateElement = basicTemplate;
-this.radSlideView1.BindingSource = bs;
-      
-````
-````VB.NET
-
-Dim bs As BindingSource = New BindingSource()
-Dim dt As DataTable = New DataTable()
-dt.Columns.Add("Photo", GetType(Image))
-dt.Rows.Add(My.Resources.Burano1)
-dt.Rows.Add(My.Resources.Burano2)
-dt.Rows.Add(My.Resources.Burano3)
-bs.DataSource = dt
-Dim basicTemplate As LightVisualElement = New LightVisualElement()
-basicTemplate.Opacity = 0.5
-basicTemplate.ImageLayout = ImageLayout.Zoom
-Me.radSlideView1.Mappings.Add(New Mapping(basicTemplate, LightVisualElement.ImageProperty, dt.Columns(0).ColumnName))
-Me.radSlideView1.TemplateElement = basicTemplate
-Me.radSlideView1.BindingSource = bs
-
-```` 
-
-{{endregion}}
 
 >note More advanced TemplateElement is demonstrated in the Demo application >> SlideView >> First look example which also shows the smooth integration between RadSlideView and [RadPipsPager]({%slug pipspager-overview%}).
 

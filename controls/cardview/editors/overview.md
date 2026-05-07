@@ -14,20 +14,10 @@ __RadCardView__ supports editing of its content out of the box. This operation c
 
 #### Disable Editing
 
-{{source=..\SamplesCS\CardView\CardViewEditors.cs region=AllowEdit}} 
-{{source=..\SamplesVB\CardView\CardViewEditors.vb region=AllowEdit}}
-````C#
-this.radCardView1.AllowEdit = false;
-
-````
-````VB.NET
-Me.RadCardView1.AllowEdit = False
-
-````
+<snippet id='cardview-editors-overview-allowedit-cs'/>
+<snippet id='cardview-editors-overview-allowedit-vb'/>
 
 
-
-{{endregion}}
 
 ## Editing Lifecycle
 
@@ -62,45 +52,10 @@ The Following example demonstrates the __ItemValidating__ event handling integer
             
 #### Data Validation
 
-{{source=..\SamplesCS\CardView\CardViewEditors.cs region=DataValidation}} 
-{{source=..\SamplesVB\CardView\CardViewEditors.vb region=DataValidation}}
-````C#
-private void radCardView1_ItemValidating(object sender, ListViewItemValidatingEventArgs e)
-{
-    int newInt = 0;
-    if (int.TryParse(Convert.ToString(e.NewValue), out newInt))
-    {
-        e.NewValue = newInt;
-    }
-    else
-    {
-        e.Cancel = true;
-    }
-}
-private void radCardView1_ValidationError(object sender, EventArgs e)
-{
-    RadMessageBox.Show("Invalid Value");
-}
-
-````
-````VB.NET
-Private Sub radCardView1_ItemValidating(sender As Object, e As ListViewItemValidatingEventArgs)
-    Dim newInt As Integer = 0
-    If Integer.TryParse(Convert.ToString(e.NewValue), newInt) Then
-        e.NewValue = newInt
-    Else
-        e.Cancel = True
-    End If
-End Sub
-Private Sub radCardView1_ValidationError(sender As Object, e As EventArgs)
-    RadMessageBox.Show("Invalid Value")
-End Sub
-
-````
+<snippet id='cardview-editors-overview-datavalidation-cs'/>
+<snippet id='cardview-editors-overview-datavalidation-vb'/>
 
 
-
-{{endregion}}
 
 
 ## Telerik UI for WinForms Additional Resources

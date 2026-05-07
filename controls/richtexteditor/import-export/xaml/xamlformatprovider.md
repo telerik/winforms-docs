@@ -24,27 +24,9 @@ In order to import a XAML document you can use the overloads of the __Import()__
 The first example shows how to use XamlFormatProvider to import XAML document from a file.
 
 #### Import XAML Document from a File
-{{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=ImportDocumentFromFile}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=ImportDocumentFromFile}}
-````C#
-XamlFormatProvider xamlformatProvider = new XamlFormatProvider();
-using (Stream stream = File.OpenRead(@"..\..\RichTextEditor\ImportExport\Sample.xaml"))
-{
-    this.radRichTextEditor1.Document = xamlformatProvider.Import(stream);
-}
+<snippet id='richtexteditor-xamlformatproviderform-importdocumentfromfile-cs' />
+<snippet id='richtexteditor-xamlformatproviderform-importdocumentfromfile-vb' />
 
-````
-````VB.NET
-Dim xamlformatProvider As XamlFormatProvider = New XamlFormatProvider()
-Using inputStream As FileStream = File.OpenRead("..\..\RichTextEditor\ImportExport\Sample.xml")
-    Me.radRichTextEditor1.Document = xamlformatProvider.Import(inputStream)
-End Using
-
-````
-
-
-
-{{endregion}}
 
 
 ## Export
@@ -53,29 +35,10 @@ In order to export a document to XAML, you need to use the __Export()__ method o
 This example shows how to use __XamlFormatProvider__ to export __RadDocument__ to a file.
 
 #### Export Document to a File
-{{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=ExportDocumentToFile}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=ExportDocumentToFile}}
-````C#
-XamlFormatProvider provider = new XamlFormatProvider();
-using (FileStream output = File.OpenWrite("Sample.xaml"))
-{
-    RadDocument document = this.radRichTextEditor1.Document;
-    provider.Export(document, output);
-}
-
-````
-````VB.NET
-Dim provider As XamlFormatProvider = New XamlFormatProvider()
-Using output As FileStream = File.OpenWrite("Sample.xaml")
-    Dim document As RadDocument = Me.radRichTextEditor1.Document
-    provider.Export(document, output)
-End Using
-
-````
+<snippet id='richtexteditor-xamlformatproviderform-exportdocumenttofile-cs' />
+<snippet id='richtexteditor-xamlformatproviderform-exportdocumenttofile-vb' />
 
 
-
-{{endregion}}
 
 ## See Also
 

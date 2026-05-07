@@ -21,44 +21,10 @@ Currently, __RadCommandBar__ receives the focus. One can easily override this be
 1. Override the ProcessFocusRequested method and return false. 
  
 
-{{source=..\SamplesCS\CommandBar\HowTo\MakeRadCommandBarUnfocusable.cs region=ForbidFocus}} 
-{{source=..\SamplesVB\CommandBar\HowTo\MakeRadCommandBarUnfocusable.vb region=ForbidFocus}} 
+<snippet id='commandbar-prevent-the-control-from-gaining-focus-forbidfocus-cs'/>
+<snippet id='commandbar-prevent-the-control-from-gaining-focus-forbidfocus-vb'/>
 
-````C#
-class MyCommandBar : RadCommandBar
-{
-    public override string ThemeClassName
-    {
-        get
-        {
-            return typeof(RadCommandBar).FullName;
-        }
-    }
-    protected override bool ProcessFocusRequested(RadElement element)
-    {
-        return false;
-    }
-}
-
-````
-````VB.NET
-Class MyCommandBar
-    Inherits RadCommandBar
-    Public Overrides Property ThemeClassName() As String
-        Get
-            Return GetType(RadButton).FullName
-        End Get
-        Set(ByVal value As String)
-        End Set
-    End Property
-    Protected Overrides Function ProcessFocusRequested(element As RadElement) As Boolean
-        Return False
-    End Function
-End Class
-
-````
-
-{{endregion}} 
+ 
 
 
 

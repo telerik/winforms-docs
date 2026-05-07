@@ -13,19 +13,10 @@ previous_url: ribbonbar-localization-rtl
 
 You can present the content of your ribbonbar instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:       
 
-{{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=rtl}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=rtl}} 
+<snippet id='ribbonbar-addingscreentips-rtl-cs' />
+<snippet id='ribbonbar-addingscreentips-rtl-vb' />
 
-````C#
-this.radRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
-````
-````VB.NET
-Me.RadRibbonBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Right-to-left Ribbon UI
 ![WinForms RadRibbonBar Right-to-left Ribbon UI](images/ribbonbar-localization-rtl001.png)

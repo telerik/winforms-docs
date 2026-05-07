@@ -19,8 +19,8 @@ This tutorial will walk you through how you can create a custom __Overlay Screen
 
 ## Custom RadOverlayForm
 
-{{source=..\SamplesCS\SplashScreens\Overlay\OverlaySettings.cs region=CustomOverlayForm}} 
-{{source=..\SamplesVB\SplashScreens\Overlay\OverlaySettings.vb region=CustomOverlayForm}}
+<snippet id='splashscreens-overlaysettings-customoverlayform-cs' />
+<snippet id='splashscreens-overlaysettings-customoverlayform-vb' />
 
 ````C#
 
@@ -98,14 +98,12 @@ End Class
 
 ````
 
-{{endregion}}
-
 2\. Next step is to apply our custom form by returning it in the __CreateFrom__ of the __OverlayScreen__ class.
 
 ## Custom OverlayScreen
 
-{{source=..\SamplesCS\SplashScreens\Overlay\OverlaySettings.cs region=CustomOverlayScreen}} 
-{{source=..\SamplesVB\SplashScreens\Overlay\OverlaySettings.vb region=CustomOverlayScreen}}
+<snippet id='splashscreens-overlaysettings-customoverlayscreen-cs' />
+<snippet id='splashscreens-overlaysettings-customoverlayscreen-vb' />
 
 ````C#
 
@@ -133,14 +131,12 @@ End Class
 
 ````
 
-{{endregion}}
-
 3\. Our final step is to replace the default overlay screen with our custom one by setting the RadOverlayManager.OverlayInstance static property.
 
 ## Override OverlayInstance
 
-{{source=..\SamplesCS\SplashScreens\Overlay\OverlaySettings.cs region=OverlayInstance}} 
-{{source=..\SamplesVB\SplashScreens\Overlay\OverlaySettings.vb region=OverlayInstance}}
+<snippet id='splashscreens-overlaysettings-overlayinstance-cs' />
+<snippet id='splashscreens-overlaysettings-overlayinstance-vb' />
 
 ````C#
 
@@ -159,8 +155,6 @@ End Sub
 
 
 ````
-
-{{endregion}}
 
 # See Also
 

@@ -18,38 +18,10 @@ The article provides an example how data for the selected day when loading RadSc
 
 1. Check in it whether the __StartDate__ property has changed. If the __PropertyName__ property of the argument is the name of the __StartDate__ property, load the data:
 
-{{source=..\SamplesCS\Scheduler\HowTo\LoadingData.cs region=propertyChanged}} 
-{{source=..\SamplesVB\Scheduler\HowTo\LoadingData.vb region=propertyChanged}} 
+<snippet id='scheduler-loadingdata-propertychanged-cs' />
+<snippet id='scheduler-loadingdata-propertychanged-vb' />
 
-````C#
-public LoadingData()
-{
-    InitializeComponent();
-    this.radScheduler1.ActiveView.PropertyChanged += new PropertyChangedEventHandler(ActiveView_PropertyChanged);
-}
-void ActiveView_PropertyChanged(object sender, PropertyChangedEventArgs e)
-{
-    if (e.PropertyName == "StartDate")
-    {
-        //load the data here
-    }
-}
 
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-    AddHandler Me.RadScheduler1.ActiveView.PropertyChanged, AddressOf ActiveView_PropertyChanged
-End Sub
-Sub ActiveView_PropertyChanged(ByVal sender As Object, ByVal e As PropertyChangedEventArgs)
-    'load the data here
-    If e.PropertyName = "StartDate" Then
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 # See Also
 

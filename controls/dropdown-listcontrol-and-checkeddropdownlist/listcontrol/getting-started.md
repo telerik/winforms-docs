@@ -66,26 +66,9 @@ This tutorial demonstrates how to manually populate __RadListControl__ and how 
 
 #### Handling the SelectedIndexChanged event 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=handlingSelectedIndexChanged}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=handlingSelectedIndexChanged}} 
+<snippet id='listcontrol-getting-started-handlingselectedindexchanged-cs' />
+<snippet id='listcontrol-getting-started-handlingselectedindexchanged-vb' />
 
-````C#
-void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-{
-    RadListDataItem item = this.radListControl1.SelectedItem as RadListDataItem;
-    radLabel1.Text = "Selected control: " + item.Text;
-}
-
-````
-````VB.NET
-Private Sub radListControl1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-    Dim item As RadListDataItem = TryCast(Me.radListControl1.SelectedItem, RadListDataItem)
-    radLabel1.Text = "Selected control: " & item.Text
-End Sub
-
-````
-
-{{endregion}} 
 
 
 11\. Press __F5__ to run the project. Select an item in the list box and note the value of the label.

@@ -29,35 +29,8 @@ Currently RadGridView supports sorting, filtering and grouping natively. This is
 
 These features are not tightly coupled with the column declarations of the grid but with the data that the grid is bound to. To clarify the idea, consider the following scenario. You want to display a list of all files in a directory. For this purpose you use __FileSystemInfo__ from the __System.IO.FileSystemInfo__ namespace. This collection has many properties: __Attributes__, __CreationTime__, __CreationTimeUtc__, __Exists__, __Extension__, __FullName__, __LastAccessTime__, __LastAccessTimeUtc__, __LastWriteTime__, __LastWriteTimeUtc__ and __Name__. This is a long list that you probably don't want to expose in the grid. Instead you define the columns to be displayed and supply the GridView __DataSource__ with the files information:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.cs region=addingColumnsToTheColumnsCollection}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\TipsWhenBindingToCustomCollections.vb region=addingColumnsToTheColumnsCollection}} 
-
-````C#
-radGridView1.MasterTemplate.AutoGenerateColumns = false;
-radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("Name"));
-radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("Attributes"));
-radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("LastAccessTime"));
-radGridView1.MasterTemplate.Columns.Add(new GridViewTextBoxColumn("CreationTime"));
-DirectoryInfo directory = new DirectoryInfo("C:\\");
-FileSystemInfo[] filesInDirectory = directory.GetFileSystemInfos();
-radGridView1.DataSource = filesInDirectory;
-
-````
-````VB.NET
-RadGridView1.MasterTemplate.AutoGenerateColumns = False
-RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("Name"))
-RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("Attributes"))
-RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("LastAccessTime"))
-RadGridView1.MasterTemplate.Columns.Add(New GridViewTextBoxColumn("CreationTime"))
-Dim directory As New DirectoryInfo("C:\")
-Dim filesInDirectory As FileSystemInfo() = directory.GetFileSystemInfos()
-RadGridView1.DataSource = filesInDirectory
-
-````
-
-{{endregion}} 
-
-
+<snippet id='gridview-tipswhenbindingtocustomcollections-addingcolumnstothecolumnscollection-cs' />
+<snippet id='gridview-tipswhenbindingtocustomcollections-addingcolumnstothecolumnscollection-vb' />
 
 # See Also
 * [Bind to XML]({%slug winforms/gridview/populating-with-data/bind-to-xml%})

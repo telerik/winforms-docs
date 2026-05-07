@@ -72,31 +72,10 @@ The following tutorial demonstrates configuring __RadStatusStrip__ at design-tim
                 
 7\. Double-click "btnStatus" to create a __Click__ event handler. Add the code below to replace the event handler. This code block bumps the list control selected index until the end of the list is reached, and then moves the index back to the first item in the list.
   
-{{source=..\SamplesCS\Forms And Dialogs\StatusStripGettingStarted.cs region=statusClick}} 
-{{source=..\SamplesVB\Forms And Dialogs\StatusStripGettingStarted.vb region=statusClick}} 
+<snippet id='statusstrip-statusstripgettingstarted-statusclick-cs' />
+<snippet id='statusstrip-statusstripgettingstarted-statusclick-vb' />
 
-````C#
-private void btnStatus_Click(object sender, EventArgs e)
-{
-    if (radListControl1.SelectedIndex >= radListControl1.Items.Count - 1)
-        radListControl1.SelectedIndex = 0;
-    else
-        radListControl1.SelectedIndex += 1;
-}
 
-````
-````VB.NET
-Private Sub btnStatus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStatus.Click
-    If RadListControl1.SelectedIndex >= RadListControl1.Items.Count - 1 Then
-        RadListControl1.SelectedIndex = 0
-    Else
-        RadListControl1.SelectedIndex += 1
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 8\. In the __Properties Window__ for the __RadListControl:__
 
@@ -119,66 +98,17 @@ End Sub
 11\. Paste the following code to the __SelectedIndexChanged__ event handler.  *The code retrieves the selected item and assigns the text and image for the selected item to the status bar label and image elements. Then the progress bar element mimics an operation against the newly selected item.*
  
 
-{{source=..\SamplesCS\Forms And Dialogs\StatusStripGettingStarted.cs region=selectedIndexChanged}} 
-{{source=..\SamplesVB\Forms And Dialogs\StatusStripGettingStarted.vb region=selectedIndexChanged}} 
+<snippet id='statusstrip-statusstripgettingstarted-selectedindexchanged-cs' />
+<snippet id='statusstrip-statusstripgettingstarted-selectedindexchanged-vb' />
 
-````C#
-void radListControl1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-{
-    RadListElement listControl = (sender as RadListElement);
-    RadListDataItem item = listControl.SelectedItem;
-    lblStatus.Text = item.Text;
-    imgStatus.Image = item.Image;
-    pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Visible;
-    for (int i = 0; i < 100; i++)
-    {
-        pbStatus.Value1 = i;
-        pbStatus.Text = item.Text + "...";
-        radStatusStrip1.Refresh();
-        Thread.Sleep(5);
-    }
-    pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-}
 
-````
-````VB.NET
-Private Sub RadListControl1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs) Handles RadListControl1.SelectedIndexChanged
-    Dim listControl As RadListElement = TryCast(sender, RadListElement)
-    Dim item As RadListDataItem = listControl.SelectedItem
-    lblStatus.Text = item.Text
-    imgStatus.Image = item.Image
-    pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Visible
-    Dim i As Integer = 0
-    While i < 100
-        pbStatus.Value1 = i
-        pbStatus.Text = item.Text + "..."
-        Thread.Sleep(5)
-        System.Math.Max(System.Threading.Interlocked.Increment(i), i - 1)
-    End While
-    pbStatus.Visibility = Telerik.WinControls.ElementVisibility.Hidden
-End Sub
-
-````
-
-{{endregion}} 
 
 12\. Add __Telerik.WinControls.UI__ and __System.Threading__ references to the "using" (C#) or Imports (VB) section of the code.
             
-{{source=..\SamplesCS\Forms And Dialogs\StatusStripGettingStarted.cs region=namespaces}} 
-{{source=..\SamplesVB\Forms And Dialogs\StatusStripGettingStarted.vb region=namespaces}} 
+<snippet id='statusstrip-statusstripgettingstarted-namespaces-cs' />
+<snippet id='statusstrip-statusstripgettingstarted-namespaces-vb' />
 
-````C#
-using Telerik.WinControls.UI;
-using System.Threading;
 
-````
-````VB.NET
-Imports Telerik.WinControls.UI
-Imports System.Threading
-
-````
-
-{{endregion}} 
 
 13\. Press __F5__ to run the application. Press the "Go!" button to see the status bar react to list control changes.
 

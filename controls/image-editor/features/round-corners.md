@@ -21,21 +21,10 @@ The following snippet shows how you can round the corners with the RoundCorners 
 
 #### Round Corners in code.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Corners}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Corners}}
-````C#
-radImageEditor1.ImageEditorElement.RoundCorners(100, Color.Red, 2, Color.Green);
-radImageEditor1.ImageEditorElement.SaveState();
-
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.RoundCorners(100, Color.Red, 2, Color.Green)
-radImageEditor1.ImageEditorElement.SaveState()
-
-```` 
+<snippet id='image-editor-imageeditorfeatures-corners-cs' />
+<snippet id='image-editor-imageeditorfeatures-corners-vb' />
 
 
-{{endregion}}
 
 # See Also
 

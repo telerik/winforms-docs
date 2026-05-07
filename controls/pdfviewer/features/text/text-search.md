@@ -75,32 +75,10 @@ All Find methods return a **SearchResult** object (or a collection of SearchResu
 
 #### Example: Searching in a document
 
-{{source=..\SamplesCS\PdfViewer\PdfTextManipulation.cs region=Find}} 
-{{source=..\SamplesVB\PdfViewer\PdfTextManipulation.vb region=Find}} 
+<snippet id='pdfviewer-pdftextmanipulation-find-cs' />
+<snippet id='pdfviewer-pdftextmanipulation-find-vb' />
 
-````C#
-SearchResult result = this.radPdfViewer1.Find("RadPdfViewer", TextSearchOptions.Default);
- if (result == SearchResult.NotFound)
- {
-     RadMessageBox.Show("String not found");
- }
- else
- {
-     this.radPdfViewer1.Select(result);
- }
 
-````
-````VB.NET
-Dim result As SearchResult = Me.radPdfViewer1.Find("RadPdfViewer", TextSearchOptions.Default)
-If result = SearchResult.NotFound Then
-    RadMessageBox.Show("String not found")
-Else
-    Me.radPdfViewer1.Select(result)
-End If
-
-````
-
-{{endregion}}
 
 ### TextSearchOptions
 

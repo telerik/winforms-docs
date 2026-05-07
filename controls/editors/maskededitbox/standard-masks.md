@@ -39,21 +39,10 @@ The table below describe the mask characters that can be used when the __MaskTyp
 
 When the mask type is set to *Standard* you can access the **StandardMaskTextBoxProvider** by casting to that appropriate type.
 
-{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=StandardProvider}} 
-{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=StandardProvider}} 
+<snippet id='editors-maskeditbox1-standardprovider-cs' />
+<snippet id='editors-maskeditbox1-standardprovider-vb' />
 
-````C#
-this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
-StandardMaskTextBoxProvider provider = this.radMaskedEditBox1.MaskedEditBoxElement.Provider as StandardMaskTextBoxProvider;
 
-````
-````VB.NET
-Me.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
-Dim provider As StandardMaskTextBoxProvider = TryCast(Me.radMaskedEditBox1.MaskedEditBoxElement.Provider, StandardMaskTextBoxProvider)
-
-````
-
-{{endregion}} 
 
 ### Useful properties
 

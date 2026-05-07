@@ -27,34 +27,8 @@ __GridViewCellInfo__ also includes an __EnsureVisible()__ method that scrolls th
 
 #### Using GridViewCellInfo 
 
-{{source=..\SamplesCS\GridView\Cells\GridViewCellInfo1.cs region=GridViewCellInfo}} 
-{{source=..\SamplesVB\GridView\Cells\GridViewCellInfo1.vb region=GridViewCellInfo}} 
-
-````C#
-GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
-GridViewCellInfo cell = lastRow.Cells["BMP"];
-lastRow.EnsureVisible();
-if (cell.ColumnInfo.GetType() == typeof(GridViewCheckBoxColumn))
-{
-    cell.Value = false;
-}
-cell.EnsureVisible();
-
-````
-````VB.NET
-Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
-Dim cell As GridViewCellInfo = lastRow.Cells("BMP")
-lastRow.EnsureVisible()
-If cell.ColumnInfo.GetType().Equals(GetType(GridViewCheckBoxColumn)) Then
-            cell.Value = False
-        End If
-        cell.EnsureVisible()
-
-````
-
-{{endregion}} 
-
-
+<snippet id='gridview-gridviewcellinfo1-gridviewcellinfo-cs' />
+<snippet id='gridview-gridviewcellinfo1-gridviewcellinfo-vb' />
 
 # See Also
 * [Accessing and Setting the CurrentCell]({%slug winforms/gridview/cells/accessing-and-setting-the-currentcell%})

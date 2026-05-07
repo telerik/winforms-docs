@@ -15,19 +15,10 @@ previous_url: buttons-splitbutton-rtl
 You can present the content of your grid instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
       
 
-{{source=..\SamplesCS\Buttons\SplitButton1.cs region=rtl}} 
-{{source=..\SamplesVB\Buttons\SplitButton1.vb region=rtl}} 
+<snippet id='buttons-splitbutton-right-to-left-support-rtl-cs' />
+<snippet id='buttons-splitbutton-right-to-left-support-rtl-vb' />
 
-````C#
-radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
-````
-````VB.NET
-radSplitButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadSplitButton Right to Left](images/buttons-splitbutton-rtl001.png)

@@ -54,50 +54,10 @@ Once the control is added to the form you just need to synchronize the __Feature
 
 #### Update Properties
 
-{{source=..\SamplesCS\Gauges\BulletGraphCode.cs region=test}} 
-{{source=..\SamplesVB\Gauges\BulletGraphCode.vb region=test}}
-````C#
-Timer timer;
-Random rand;
-        
-public BulletGraphCode()
-{
-    InitializeComponent();
-    timer = new Timer();
-    rand = new Random();
-    timer.Interval = 1000;
-    timer.Tick += timer_Tick;
-    timer.Start();
-}
-     
-void timer_Tick(object sender, EventArgs e)
-{
-    this.radBulletGraph1.FeaturedMeasure = rand.Next(100);
-    this.radBulletGraph1.ComparativeMeasure = rand.Next(100);
-}
-
-````
-````VB.NET
-Private timer As Timer
-Private rand As Random
-Public Sub New()
-    InitializeComponent()
-    timer = New Timer()
-    rand = New Random()
-    timer.Interval = 1000
-    AddHandler timer.Tick, AddressOf timer_Tick
-    timer.Start()
-End Sub
-Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
-    radBulletGraph1.FeaturedMeasure = rand.Next(100)
-    radBulletGraph1.ComparativeMeasure = rand.Next(100)
-End Sub
-
-```` 
+<snippet id='gauges-bulletgraphcode-test-cs' />
+<snippet id='gauges-bulletgraphcode-test-vb' />
 
 
-
-{{endregion}}  
 
 >important Please note that when you select the style all elements will be automatically created and you can directly access them. You can create the control in code as well. More information is available in the following article:[Getting Started]({%slug winforms/gauges/lineargauge/getting-started%})
 >

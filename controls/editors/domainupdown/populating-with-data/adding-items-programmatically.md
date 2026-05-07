@@ -50,9 +50,6 @@ position: 1
         Me.radDomainUpDown1.Items.Add(itemGermany)
 
 ````
-
-{{endregion}} 
-
 # See Also
 
 * [Populating with data at Design Time]({%slug winforms/editors/domainupdown/populating-with-data/design-time%})

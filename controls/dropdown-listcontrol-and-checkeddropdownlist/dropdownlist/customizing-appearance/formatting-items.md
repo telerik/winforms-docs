@@ -24,44 +24,10 @@ Items appearance in __RadDropDownList__ can be customized by making use of the _
 
 #### Customize selected item appearance 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListCustomizeItems.cs region=CustomizeItems}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListCustomizeItems.vb region=CustomizeItems}} 
+<snippet id='dropdownlist-formatting-items-customizeitems-cs' />
+<snippet id='dropdownlist-formatting-items-customizeitems-vb' />
 
-````C#
-private void radDropDownList1_VisualListItemFormatting(object sender, VisualItemFormattingEventArgs args)
-{
-    if (args.VisualItem.Selected)
-    {
-        args.VisualItem.NumberOfColors = 1;
-        args.VisualItem.BackColor = Color.Yellow;
-        args.VisualItem.BorderColor = Color.Blue;
-    }
-    else
-    {
-        args.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local);
-        args.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        args.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-    }
-}
 
-````
-````VB.NET
-Private Sub radDropDownList1_VisualListItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
-    If args.VisualItem.Selected Then
-        args.VisualItem.NumberOfColors = 1
-        args.VisualItem.BackColor = Color.Yellow
-        args.VisualItem.BorderColor = Color.Blue
-    Else
-        args.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
-        args.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        args.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
- 
 
 ## Customizing auto-complete drop-down appearance
 
@@ -69,42 +35,18 @@ In order to customize the auto complete pop-up, you should subscribe to the __Vi
 
 #### Subscribe to the VisualItemFormatting event of the auto complete popup
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListCustomizeItems.cs region=Event}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListCustomizeItems.vb region=Event}}
-````C#
-radDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.VisualItemFormatting += new VisualListItemFormattingEventHandler(ListElement_VisualItemFormatting);
+<snippet id='dropdownlist-formatting-items-event-cs' />
+<snippet id='dropdownlist-formatting-items-event-vb' />
 
-````
-````VB.NET
-AddHandler RadDropDownList1.DropDownListElement.AutoCompleteSuggest.DropDownList.ListElement.VisualItemFormatting, AddressOf ListElement_VisualItemFormatting
 
-```` 	
-
-{{endregion}}  
 
 The following code snippet, will demonstrate how to change the Font of all items in the auto complete drop down.
 
 #### Customize auto complete items appearance 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListCustomizeItems.cs region=CustomizeAutoCompleteDropDown}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListCustomizeItems.vb region=CustomizeAutoCompleteDropDown}}
-````C#
-Font myFont = new Font("Segoe UI", 14, FontStyle.Bold);
-private void ListElement_VisualItemFormatting(object sender, VisualItemFormattingEventArgs args)
-{
-    args.VisualItem.Font = myFont;
-}
+<snippet id='dropdownlist-formatting-items-customizeautocompletedropdown-cs' />
+<snippet id='dropdownlist-formatting-items-customizeautocompletedropdown-vb' />
 
-````
-````VB.NET
-Private myFont As New Font("Segoe UI", 14, FontStyle.Bold)
-Private Sub ListElement_VisualItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
-    args.VisualItem.Font = myFont
-End Sub
-
-```` 
-
-{{endregion}} 
 
 
 >note Here we do not reset the style because we do want the Font for all items to be changed not only on certain one.

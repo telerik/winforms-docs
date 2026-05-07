@@ -51,64 +51,10 @@ The following code snippet demonstrates how to add __RadAIPromptMoreActionsItem_
 
 ![WinForms RadAIPrompt Views](images/aiprompt-views003.png)
 
-````C#
-RadAIPromptMoreActionsItem moreActionsItem = new RadAIPromptMoreActionsItem();
-AIPromptMoreActionsView actionsView = moreActionsItem.GetView() as AIPromptMoreActionsView;
-actionsView.Padding = new Padding(16, 16, 16, 0);
-StackLayoutElementLite panel = actionsView.Panel as StackLayoutElementLite;
+<snippet id='aiprompt-views-moreactionsview-cs' />
+<snippet id='aiprompt-views-moreactionsview-vb' />
 
-panel.Children.Add(this.CreateHeaderLabel("Translate"));
-panel.Children.Add(this.CreateAction("German"));
-panel.Children.Add(this.CreateAction("English"));
-this.radAIPrompt1.Items.Add(moreActionsItem);
 
-private LightVisualElement CreateHeaderLabel(string text)
-{
-    return new LightVisualElement()
-    {
-        Margin = new Padding(-5, 12, 0, 0),
-        Font = new Font("Segoe UI Semibold", 10.5f),
-        Text = text
-    };
-}
-private RadButtonElement CreateAction(string text)
-{
-    RadButtonElement actionButton = new RadButtonElement(text)
-    {
-        TextAlignment = ContentAlignment.MiddleLeft,
-        MinSize = new Size(120, 0)
-    };
-    return actionButton;
-}
-
-````
-````VB.NET
-    Dim moreActionsItem As RadAIPromptMoreActionsItem = New RadAIPromptMoreActionsItem()
-    Dim actionsView As AIPromptMoreActionsView = TryCast(moreActionsItem.GetView(), AIPromptMoreActionsView)
-    actionsView.Padding = New Padding(16, 16, 16, 0)
-    Dim panel As StackLayoutElementLite = TryCast(actionsView.Panel, StackLayoutElementLite)
-    panel.Children.Add(Me.CreateHeaderLabel("Translate"))
-    panel.Children.Add(Me.CreateAction("German"))
-    panel.Children.Add(Me.CreateAction("English"))
-    Me.radAIPrompt1.Items.Add(moreActionsItem)
-
-    Private Function CreateHeaderLabel(ByVal text As String) As LightVisualElement
-        Return New LightVisualElement() With {
-            .Margin = New Padding(-5, 12, 0, 0),
-            .Font = New Font("Segoe UI Semibold", 10.5F),
-            .Text = text
-        }
-    End Function
-
-    Private Function CreateAction(ByVal text As String) As RadButtonElement
-        Dim actionButton As RadButtonElement = New RadButtonElement(text) With {
-            .TextAlignment = ContentAlignment.MiddleLeft,
-            .MinSize = New Size(120, 0)
-        }
-        Return actionButton
-    End Function    
-
-````
 
 ## See Also
 

@@ -20,19 +20,10 @@ The embedded __RadCalendar__ has `HeaderNavigationMode` property, which determin
 
 #### Setting the value of RadDateTimePicker 
 
-{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=HeaderNavigationMode}} 
-{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=HeaderNavigationMode}} 
+<snippet id='editors-datetimepicker2-headernavigationmode-cs' />
+<snippet id='editors-datetimepicker2-headernavigationmode-vb' />
 
-````C#
-this.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom;
 
-````
-````VB.NET
-Me.radDateTimePicker1.DateTimePickerElement.Calendar.HeaderNavigationMode = HeaderNavigationMode.Zoom
-
-````
-
-{{endregion}} 
 
 ![WinForms RadDateTimePicker Value Property](images/editors-datetimepicker-navigation-modes002.gif)
 

@@ -17,41 +17,18 @@ This example will demonstrate how __RadGanttView__ integrates with __RadSchedule
 
 In the case of __RadScheduler__ we have implemented a component (called __GanttViewIntegrationProvider__) which implements the interface and allows for two way notifications between the controls. Here is how to use it: 
 
-{{source=..\SamplesCS\GanttView\SchedulerIntegration\SchedulerIntegration.cs region=Integration}} 
-{{source=..\SamplesVB\GanttView\SchedulerIntegration\SchedulerIntegration.vb region=Integration}} 
+<snippet id='ganttview-schedulerintegration-integration-cs' />
+<snippet id='ganttview-schedulerintegration-integration-vb' />
 
-````C#
-this.radGanttView1.DataProvider = new GanttViewIntegrationProvider(this.radScheduler1);
-
-````
-````VB.NET
-Me.radGanttView1.DataProvider = New GanttViewIntegrationProvider(Me.radScheduler1)
-
-````
-
-{{endregion}} 
+ 
  
 
 Two things you need to note. The first is that __RadGanttView__ requires a unique id for each item in it. You can read more on how to provide such an "id" in the section on ["Adding new items"]({%slug winforms/ganttview-/working-with-data/adding-new-items%}). The other thing you need to be aware is the ids __RadScheduler__ assigns to its appointments. They are of type __EventId__ and need a `Guid` when constructed. Summing these two together gives the following code:   
 
-{{source=..\SamplesCS\GanttView\SchedulerIntegration\SchedulerIntegration.cs region=TrickyPart}} 
-{{source=..\SamplesVB\GanttView\SchedulerIntegration\SchedulerIntegration.vb region=TrickyPart}} 
+<snippet id='ganttview-schedulerintegration-trickypart-cs' />
+<snippet id='ganttview-schedulerintegration-trickypart-vb' />
 
-````C#
-private void radGanttView1_ItemChildIdNeeded(object sender, GanttViewItemChildIdNeededEventArgs e)
-{
-    e.ChildId = new EventId(Guid.NewGuid());
-}
-
-````
-````VB.NET
-Private Sub radGanttView1_ItemChildIdNeeded(sender As Object, e As Telerik.WinControls.UI.GanttViewItemChildIdNeededEventArgs) Handles radGanttView1.ItemChildIdNeeded
-    e.ChildId = New EventId(Guid.NewGuid())
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadGanttView Integration](images/ganttview-integration001.png)
 

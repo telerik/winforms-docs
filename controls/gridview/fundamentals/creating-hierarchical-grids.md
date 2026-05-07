@@ -15,25 +15,8 @@ __RadGridView__ has the ability to represent hierarchical master-detail data. It
 
 #### Create hierarchical grid
 
-{{source=..\SamplesCS\GridView\Fundamentials\CreatingHierarchicalGrid.cs region=AutoGenerateHierarchy}} 
-{{source=..\SamplesVB\GridView\Fundamentials\CreatingHierarchicalGrid.vb region=AutoGenerateHierarchy}} 
-
-````C#
-this.ordersTableAdapter.Fill(this.nwindDataSet.Orders);
-this.order_DetailsTableAdapter.Fill(this.nwindDataSet.Order_Details);
-this.customersTableAdapter.Fill(this.nwindDataSet.Customers);
-radGridView1.AutoGenerateHierarchy = true;
-
-````
-````VB.NET
-Me.OrdersTableAdapter.Fill(Me.NwindDataSet.Orders)
-Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
-Me.CustomersTableAdapter.Fill(Me.NwindDataSet.Customers)
-RadGridView1.AutoGenerateHierarchy = True
-
-````
-
-{{endregion}} 
+<snippet id='gridview-creatinghierarchicalgrid-autogeneratehierarchy-cs' />
+<snippet id='gridview-creatinghierarchicalgrid-autogeneratehierarchy-vb' />
 
 The general steps to setting up hierarchical data manually are:
 

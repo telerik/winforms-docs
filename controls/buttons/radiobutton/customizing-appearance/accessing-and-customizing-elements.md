@@ -31,20 +31,7 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=AccessingCustomizingElements}} 
+<snippet id='buttons-radiobutton-accessing-and-customizing-elements-accessingcustomizingelements-cs' />
+<snippet id='buttons-radiobutton-accessing-and-customizing-elements-accessingcustomizingelements-vb' />
 
-````C#
-this.radRadioButton1.ButtonElement.ForeColor = Color.Green;
-this.radRadioButton1.ButtonElement.ShowBorder = true;
-this.radRadioButton1.ButtonElement.BorderElement.ForeColor = Color.Black;
 
-````
-````VB.NET
-Me.radRadioButton1.ButtonElement.ForeColor = Color.Green
-Me.radRadioButton1.ButtonElement.ShowBorder = True
-Me.radRadioButton1.ButtonElement.BorderElement.ForeColor = Color.Black
-
-````
-
-{{endregion}} 

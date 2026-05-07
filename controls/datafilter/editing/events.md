@@ -47,74 +47,10 @@ The following code snippet demonstrates how to replace the default editor with a
 
 #### Replace and customize the default editor
 
-{{source=..\SamplesCS\DataFilter\DataFilterEditing.cs region=CustomizeEditor}} 
-{{source=..\SamplesVB\DataFilter\DataFilterEditing.vb region=CustomizeEditor}}
+<snippet id='datafilter-events-customizeeditor-cs' />
+<snippet id='datafilter-events-customizeeditor-vb' />
 
-````C#
-public DataFilterEditing()
-{
-    InitializeComponent();
-    this.radDataFilter1.DataSource = this.productsBindingSource;
-    this.radDataFilter1.EditorRequired += radDataFilter1_EditorRequired;
-    this.radDataFilter1.EditorInitialized += radDataFilter1_EditorInitialized;
-}
-private void radDataFilter1_EditorInitialized(object sender, TreeNodeEditorInitializedEventArgs e)
-{
-    TreeViewDropDownListEditor editor = e.Editor as TreeViewDropDownListEditor;
-    if (editor != null)
-    {
-        editor.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown;
-        editor.DropDownSizingMode = SizingMode.UpDownAndRightBottom;
-        BaseDropDownListEditorElement el = editor.EditorElement as BaseDropDownListEditorElement;
-        el.AutoCompleteMode = AutoCompleteMode.Suggest;
-    }
-}
-private void radDataFilter1_EditorRequired(object sender, TreeNodeEditorRequiredEventArgs e)
-{
-    DataFilterCriteriaNode filterNode = e.Node as DataFilterCriteriaNode;
-    if (filterNode != null && filterNode.PropertyName == "CategoryID" && sender is DataFilterValueEditorElement)
-    {
-        TreeViewDropDownListEditor editor = new TreeViewDropDownListEditor();
-        BaseDropDownListEditorElement el = editor.EditorElement as BaseDropDownListEditorElement;
-        el.DataSource = this.categoriesBindingSource;
-        el.ValueMember = "CategoryID";
-        el.DisplayMember = "CategoryName";
-        e.Editor = editor;
-    }
-}
 
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-    Me.RadDataFilter1.DataSource = Me.ProductsBindingSource
-    AddHandler Me.RadDataFilter1.EditorRequired, AddressOf radDataFilter1_EditorRequired
-    AddHandler Me.RadDataFilter1.EditorInitialized, AddressOf radDataFilter1_EditorInitialized
-End Sub
-Private Sub radDataFilter1_EditorInitialized(sender As Object, e As TreeNodeEditorInitializedEventArgs)
-    Dim editor As TreeViewDropDownListEditor = TryCast(e.Editor, TreeViewDropDownListEditor)
-    If editor IsNot Nothing Then
-        editor.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDown
-        editor.DropDownSizingMode = SizingMode.UpDownAndRightBottom
-        Dim el As BaseDropDownListEditorElement = TryCast(editor.EditorElement, BaseDropDownListEditorElement)
-        el.AutoCompleteMode = AutoCompleteMode.Suggest
-    End If
-End Sub
-Private Sub radDataFilter1_EditorRequired(sender As Object, e As TreeNodeEditorRequiredEventArgs)
-    Dim filterNode As DataFilterCriteriaNode = TryCast(e.Node, DataFilterCriteriaNode)
-    If filterNode IsNot Nothing AndAlso filterNode.PropertyName = "CategoryID" AndAlso TypeOf sender Is DataFilterValueEditorElement Then
-        Dim editor As New TreeViewDropDownListEditor()
-        Dim el As BaseDropDownListEditorElement = TryCast(editor.EditorElement, BaseDropDownListEditorElement)
-        el.DataSource = Me.CategoriesBindingSource
-        el.ValueMember = "CategoryID"
-        el.DisplayMember = "CategoryName"
-        e.Editor = editor
-    End If
-End Sub
-
-```` 
-
-{{endregion}}
 
 
 ### Check which element is being edited.
@@ -123,45 +59,10 @@ Both editors, field and filter type are TreeViewDropDownListEditor and if you ne
 
 #### Determine which item is edited. 
 
-{{source=..\SamplesCS\DataFilter\DataFilterEditing.cs region=EditorType}} 
-{{source=..\SamplesVB\DataFilter\DataFilterEditing.vb region=EditorType}}
-````C#
-private void radDataFilter1_EditorInitialized1(object sender, TreeNodeEditorInitializedEventArgs e)
-{
-    TreeViewDropDownListEditor editor = e.Editor as TreeViewDropDownListEditor;
-    DataFilterCriteriaElement criteriaElement = e.NodeElement as DataFilterCriteriaElement;
-    if (editor != null && criteriaElement != null)
-    {
-        if (criteriaElement.EditingElement is DataFilterFieldEditorElement)
-        {
-            //the field is edited
-        }
-        if (criteriaElement.EditingElement is DataFilterOperatorEditorElement)
-        {
-            // the filter type is edited
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub radDataFilter1_EditorInitialized1(ByVal sender As Object, ByVal e As TreeNodeEditorInitializedEventArgs)
-    Dim editor As TreeViewDropDownListEditor = TryCast(e.Editor, TreeViewDropDownListEditor)
-    Dim criteriaElement As DataFilterCriteriaElement = TryCast(e.NodeElement, DataFilterCriteriaElement)
-    If editor IsNot Nothing AndAlso criteriaElement IsNot Nothing Then
-        If TypeOf criteriaElement.EditingElement Is DataFilterFieldEditorElement Then
-            'the field is edited
-        End If
-        If TypeOf criteriaElement.EditingElement Is DataFilterOperatorEditorElement Then
-            ' the filter type is edited
-        End If
-    End If
-End Sub
-
-````
+<snippet id='datafilter-events-editortype-cs' />
+<snippet id='datafilter-events-editortype-vb' />
 
 
-{{endregion}}
 
 ## Edited
 

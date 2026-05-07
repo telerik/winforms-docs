@@ -25,53 +25,18 @@ The __SelectionLength__ property is a numeric value that sets the width of the i
 
 #### Select part of the text using the __SelectionStart__ and __SelectionLenght__ properties.
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetSelection}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetSelection}} 
+<snippet id='editors-textboxcontrol-setselection-cs' />
+<snippet id='editors-textboxcontrol-setselection-vb' />
 
-````C#
-    
-private void SetSelection()
-{
-    this.radTextBoxControl1.Text = "Hello, John Green";
-    this.radTextBoxControl1.SelectionStart = 7;
-    this.radTextBoxControl1.SelectionLength = 4;
-}
 
-````
-````VB.NET
-Private Sub SetSelection()
-    Me.RadTextBoxControl1.Text = "Hello, John Green"
-    Me.RadTextBoxControl1.SelectionStart = 7
-    Me.RadTextBoxControl1.SelectionLength = 4
-End Sub
 
-````
-
-{{endregion}} 
- 
 #### Use the __Select__ method to select the part of the text:
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Select}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Select}} 
+<snippet id='editors-textboxcontrol-select-cs' />
+<snippet id='editors-textboxcontrol-select-vb' />
 
-````C#
-private void SelectText()
-{
-    this.radTextBoxControl1.Text = "Hello, John Green";
-    this.radTextBoxControl1.Select(7, 4);
-}
 
-````
-````VB.NET
-Private Sub SelectText()
-    Me.RadTextBoxControl1.Text = "Hello, John Green"
-    Me.RadTextBoxControl1.[Select](7, 4)
-End Sub
 
-````
-
-{{endregion}} 
- 
 The both approaches produce same result:
 
 ![WinForms RadTextBoxControl Caret Position Selection](images/editors-textboxcontrol-caret-positioning-and-selection001.png)

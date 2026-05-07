@@ -26,27 +26,8 @@ You can save/load the layout in code as well.
 
 #### Save/Load Layout
 	
-{{source=..\SamplesCS\Gauges\RadialGauge\RadialGaugePropertiesAndEvents.cs region=SaveLoadLayout}} 
-{{source=..\SamplesVB\Gauges\RadialGauge\RadialGaugePropertiesAndEvents.vb region=SaveLoadLayout}}
-````C#
-private void SaveLoadLayout()
-{
-    this.radRadialGauge1.SaveLayout(@"..\..\gauge-layout.xml");
-    this.radRadialGauge1.LoadLayout(@"..\..\gauge-layout.xml");
-}
-
-````
-````VB.NET
-Private Sub SaveLoadLayout()
-    Me.RadRadialGauge1.SaveLayout("..\..\gauge-layout.xml")
-    Me.RadRadialGauge1.LoadLayout("..\..\gauge-layout.xml")
-End Sub
-
-```` 
-
-
-
-{{endregion}} 
+<snippet id='gauges-radialgaugepropertiesandevents-saveloadlayout-cs' />
+<snippet id='gauges-radialgaugepropertiesandevents-saveloadlayout-vb' />
 
 # See Also
 

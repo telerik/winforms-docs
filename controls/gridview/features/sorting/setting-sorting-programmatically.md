@@ -23,44 +23,15 @@ To enable sorting you need to set the __EnableSorting__ property of the desired 
 
 #### Enable Sorting
 
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=enableSorting}} 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=enableSorting}} 
-
-````C#
-this.radGridView1.MasterTemplate.EnableSorting = true;
-
-````
-````VB.NET
-Me.RadGridView1.MasterTemplate.EnableSorting = True
-
-````
-
-{{endregion}} 
+<snippet id='gridview-sorting-enablesorting-cs' />
+<snippet id='gridview-sorting-enablesorting-vb' />
 
 Here is how to create and add new __SortDescriptor__.
 
 #### Using SortDescriptor
 
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=usingSortDescriptor}} 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=usingSortDescriptor}} 
-
-````C#
-            
-SortDescriptor descriptor = new SortDescriptor();
-descriptor.PropertyName = "ShipCountry";
-descriptor.Direction = ListSortDirection.Ascending;
-this.radGridView1.MasterTemplate.SortDescriptors.Add(descriptor);
-
-````
-````VB.NET
-Dim descriptor As New SortDescriptor()
-descriptor.PropertyName = "ShipCountry"
-descriptor.Direction = ListSortDirection.Ascending
-Me.RadGridView1.MasterTemplate.SortDescriptors.Add(descriptor)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-sorting-usingsortdescriptor-cs' />
+<snippet id='gridview-sorting-usingsortdescriptor-vb' />
 
 The __PropertyName__ property defines the property, by which the data will be sorted, and the __SortDirection__ property allows you to define the sort direction.
 
@@ -70,34 +41,8 @@ The __PropertyName__ property defines the property, by which the data will be so
 
 #### Sorting by Two Columns
 
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=sortingByTwoOrMoreColumns}} 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoOrMoreColumns}} 
-
-````C#
-            
-SortDescriptor descriptorShipName = new SortDescriptor();
-descriptorShipName.PropertyName = "ShipName";
-descriptorShipName.Direction = ListSortDirection.Ascending;
-SortDescriptor descriptorFreight = new SortDescriptor();
-descriptorFreight.PropertyName = "Freight";
-descriptorFreight.Direction = ListSortDirection.Descending;
-this.radGridView1.SortDescriptors.Add(descriptorShipName);
-this.radGridView1.SortDescriptors.Add(descriptorFreight);
-
-````
-````VB.NET
-Dim descriptorShipName As New SortDescriptor()
-descriptorShipName.PropertyName = "ShipName"
-descriptorShipName.Direction = ListSortDirection.Ascending
-Dim descriptorFreight As New SortDescriptor()
-descriptorFreight.PropertyName = "Freight"
-descriptorFreight.Direction = ListSortDirection.Descending
-Me.RadGridView1.SortDescriptors.Add(descriptorShipName)
-Me.RadGridView1.SortDescriptors.Add(descriptorFreight)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-sorting-sortingbytwoormorecolumns-cs' />
+<snippet id='gridview-sorting-sortingbytwoormorecolumns-vb' />
 
 >caption Figure 1: Sorting by Two Columns
 

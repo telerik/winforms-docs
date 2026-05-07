@@ -18,28 +18,10 @@ If you are sure that the imported XAML can be trusted for example it comes inter
 
 ####  Disable the default XAML validation
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=SkipVerification}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=SkipVerification}}
+<snippet id='richtexteditor-xamlformatproviderform-skipverification-cs' />
+<snippet id='richtexteditor-xamlformatproviderform-skipverification-vb' />
 
-````C#
 
-XamlFormatProvider provider = new XamlFormatProvider();
-provider.ImportSettings.PreProcessingXaml += (s, args) => {
-
-    args.SkipXamlValidation = true;
-};
-
-````
-````VB.NET
-
-Dim provider As XamlFormatProvider = New XamlFormatProvider()
-AddHandler provider.ImportSettings.PreProcessingXaml, Function(s, args)
-                                                          args.SkipXamlValidation = True
-                                                      End Function
-
-````
-
-{{endregion}}
 
 ## Add custom assembly to the allowed assemblies.  
  

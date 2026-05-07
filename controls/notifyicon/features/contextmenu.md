@@ -15,44 +15,10 @@ You can display a context menu when the user interacts with the notify icon with
 
 The __TrayContextMenu__ property expects a value of type [RadContextMenu]({%slug winforms/menus/contextmenu/context-menus%}). __Example 1__ demonstrates how it can be used. 
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=TrayContextMenu}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=TrayContextMenu}}
-````C#
-
-void SetContextMenu()
-{
-	RadNotifyIcon radNotifyIcon = new RadNotifyIcon();
-	radNotifyIcon.TrayIcon = new System.Drawing.Icon("../../WinForms128x28.ico");
-	radNotifyIcon.ContextMenuActivationMouseEvent = MouseActivationEvent.RightClick;
-	radNotifyIcon.ShowTrayIcon = true;
-	radNotifyIcon.PopupContent = new UserControl1();          
-	var contextMenu = new RadContextMenu();
-	contextMenu.Items.Add(new RadMenuItem("Item 1"));
-	contextMenu.Items.Add(new RadMenuItem("Item 2"));
-	contextMenu.Items.Add(new RadMenuItem("Item 3"));
-	radNotifyIcon.TrayContextMenu = contextMenu;
-}
-
-````
-````VB.NET
-
-Private Sub SetContextMenu()
-	Dim radNotifyIcon As RadNotifyIcon = New RadNotifyIcon()
-    radNotifyIcon.TrayIcon = New System.Drawing.Icon("../../WinForms128x28.ico")
-    radNotifyIcon.ContextMenuActivationMouseEvent = MouseActivationEvent.RightClick
-    radNotifyIcon.ShowTrayIcon = True
-    radNotifyIcon.PopupContent = New UserControl1()
-    Dim contextMenu = New RadContextMenu()
-    contextMenu.Items.Add(New RadMenuItem("Item 1"))
-    contextMenu.Items.Add(New RadMenuItem("Item 2"))
-    contextMenu.Items.Add(New RadMenuItem("Item 3"))
-    radNotifyIcon.TrayContextMenu = contextMenu
-End Sub
+<snippet id='notifyicon-features-traycontextmenu-cs' />
+<snippet id='notifyicon-features-traycontextmenu-vb' />
 
 
-```` 
-
-{{endregion}}
 
 #### __Figure 1: RadContextMenu displayed over the icon__
 
@@ -69,19 +35,8 @@ The __ContextMenuActivationMouseEvent__ property determines when the context men
 * __MiddleDoubleClick__: Triggered on middle mouse double click.
 * __All__: Triggered on any mouse click action.
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=ContextMenuActivationMouseEvent}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=ContextMenuActivationMouseEvent}}
-````C#
-
-radNotifyIcon.ContextMenuActivationMouseEvent = MouseActivationEvent.MiddleClick;
-
-````
-````VB.NET
-
-radNotifyIcon.ContextMenuActivationMouseEvent = MouseActivationEvent.MiddleClick
+<snippet id='notifyicon-features-contextmenuactivationmouseevent-cs' />
+<snippet id='notifyicon-features-contextmenuactivationmouseevent-vb' />
 
 
-```` 
-
-{{endregion}}
 

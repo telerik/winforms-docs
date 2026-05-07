@@ -13,21 +13,8 @@ __RadSparkline__ supports exporting to image out of the box. This can be achieve
 
 #### Example 1: Export to a File
 
-{{source=..\SamplesCS\Sparkline\SparklineCode.cs region=Export}} 
-{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=Export}}
-````C#
-private void RadButton1_Click(object sender, EventArgs e)
-{
-    radSparkline1.ExportToImage(@"D:\MySpark1.png", new Size(200, 200));
-}
+<snippet id='sparkline-sparklinecode-export-cs' />
+<snippet id='sparkline-sparklinecode-export-vb' />
 
-````
-````VB.NET
-Private Sub RadButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    radSparkline1.ExportToImage("D:\MySpark1.png", New Size(200, 200))
-End Sub
 
-````
- 
 
-{{endregion}} 

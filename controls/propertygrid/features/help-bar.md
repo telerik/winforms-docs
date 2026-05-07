@@ -19,19 +19,10 @@ previous_url: propertygrid-features-helpbar
 
 #### Enabling the Help Bar
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridHelpBar.cs region=helpVisible}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridHelpBar.vb region=helpVisible}} 
+<snippet id='propertygrid-propertygridhelpbar-helpvisible-cs' />
+<snippet id='propertygrid-propertygridhelpbar-helpvisible-vb' />
 
-````C#
-radPropertyGrid1.HelpVisible = true;
 
-````
-````VB.NET
-RadPropertyGrid1.HelpVisible = True
-
-````
-
-{{endregion}} 
 
 By double clicking over the size grip above the help section, the help section is being collapsed or expanded. Additionally, by using the size grip, the end user can resize the help section.
         

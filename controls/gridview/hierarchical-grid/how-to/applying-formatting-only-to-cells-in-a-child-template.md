@@ -19,33 +19,8 @@ This idea is used in the code snippet below so that the BackColor of the cells l
 
 #### Changing the cells BackColor for cells located in a child template 
 
-{{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=example1}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=example1}} 
-
-````C#
-void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
-{
-    if (e.CellElement.ViewTemplate.Parent != null)
-    {
-        e.CellElement.BackColor = Color.Yellow;
-        e.CellElement.NumberOfColors = 1;
-        e.CellElement.DrawFill = true;
-    }
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
-    If e.CellElement.ViewTemplate.Parent IsNot Nothing Then
-        e.CellElement.BackColor = Color.Yellow
-        e.CellElement.NumberOfColors = 1
-        e.CellElement.DrawFill = True
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-howto-example1-cs' />
+<snippet id='gridview-howto1-example1-vb' />
 
 ###  Example 2
 
@@ -53,31 +28,8 @@ You can use the following code snippet to change the header height of the first 
 
 #### Changing the child template header row height 
 
-{{source=..\SamplesCS\GridView\HierarchicalGrid\HowTo\HowTo.cs region=example2}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\HowTo\HowTo1.vb region=example2}} 
-
-````C#
-void radGridView1_ViewCellFormatting1(object sender, CellFormattingEventArgs e)
-{
-    if (e.CellElement.ViewTemplate.Parent != null)
-    {
-        e.CellElement.TableElement.TableHeaderHeight = 100;
-    }
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_ViewCellFormatting1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs) Handles RadGridView1.ViewCellFormatting
-    If e.CellElement.ViewTemplate.Parent IsNot Nothing Then
-        e.CellElement.TableElement.TableHeaderHeight = 100
-    End If
-End Sub
-
-````
-
-{{endregion}} 
-
-
+<snippet id='gridview-howto-example2-cs' />
+<snippet id='gridview-howto1-example2-vb' />
 
 # See Also
 * [Accessing Child Templates]({%slug winforms/gridview/hierarchical-grid/how-to/accessing-child-templates%})

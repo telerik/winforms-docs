@@ -14,44 +14,15 @@ There are two ways to assign tooltips to __RadRepeatButton__, namely setting the
 
 #### Setting the ToolTipText property
 
-{{source=..\SamplesCS\Buttons\RepeatButton.cs region=SetToolTipText}} 
-{{source=..\SamplesVB\Buttons\RepeatButton.vb region=SetToolTipText}}
-
-````C#
-this.radRepeatButton1.ButtonElement.ToolTipText = "sample tooltip";
-
-````
-````VB.NET
- 
-Me.radRepeatButton1.ButtonElement.ToolTipText = "sample tooltip"
-
-````
-
-{{endregion}} 
-
+<snippet id='buttons-repeatbutton-tooltips-settooliptext-cs' />
+<snippet id='buttons-repeatbutton-tooltips-settooliptext-vb' />
 
 ![WinForms RadRepeatButton ToolTipText](images/buttons-repeatbutton-tooltips001.png)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
-{{source=..\SamplesCS\Buttons\RepeatButton.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\Buttons\RepeatButton.vb region=ToolTipTextNeeded}}
-
-````C#
-private void RadRepeatButton1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    e.ToolTipText = "Increase value";
-}
-
-````
-````VB.NET
-Private Sub RadRepeatButton1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    e.ToolTipText = "Increase value"
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='buttons-repeatbutton-tooltips-tooltiptextneeded-cs' />
+<snippet id='buttons-repeatbutton-tooltips-tooltiptextneeded-vb' />
 
 ![WinForms RadRepeatButton ToolTipTextNeeded](images/buttons-repeatbutton-tooltips002.png)
 

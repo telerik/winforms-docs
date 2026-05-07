@@ -20,71 +20,23 @@ The __GroupDescriptorCollection__ contains __Expression__ property which is used
 
 #### Creating simple grouping expression
 
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingSimpleExpression}} 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingSimpleExpression}} 
-
-````C#
-this.radGridView1.GroupDescriptors.Expression = "Country ASC";
-
-````
-````VB.NET
-Me.RadGridView1.GroupDescriptors.Expression = "Country ASC"
-
-````
-
-{{endregion}} 
-
-
+<snippet id='gridview-grouping-creatingsimpleexpression-cs' />
+<snippet id='gridview-grouping-creatingsimpleexpression-vb' />
 
 #### Grouping by two columns, by using an expression
 
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=groupingByToColumnsUsingExpression}} 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=groupingByToColumnsUsingExpression}} 
-
-````C#
-this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC";
-
-````
-````VB.NET
-Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle DESC"
-
-````
-
-{{endregion}}
+<snippet id='gridview-grouping-groupingbytocolumnsusingexpression-cs' />
+<snippet id='gridview-grouping-groupingbytocolumnsusingexpression-vb' />
 
 #### Creating group on two levels, by using an expression
 
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=creatingGroupsOnTwoLevelsUsingExpression}} 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=creatingGroupsOnTwoLevelsUsingExpression}} 
-
-````C#
-this.radGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC";
-
-````
-````VB.NET
-Me.RadGridView1.GroupDescriptors.Expression = "Country ASC; ContactTitle DESC"
-
-````
-
-{{endregion}}
+<snippet id='gridview-grouping-creatinggroupsontwolevelsusingexpression-cs' />
+<snippet id='gridview-grouping-creatinggroupsontwolevelsusingexpression-vb' />
 
 #### Complex grouping
 
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=complexGrouping}} 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=complexGrouping}} 
-
-````C#
-this.radGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC";
-
-````
-````VB.NET
-Me.RadGridView1.GroupDescriptors.Expression = "Country, ContactTitle ASC; City DESC"
-
-````
-
-{{endregion}} 
-
-
+<snippet id='gridview-grouping-complexgrouping-cs' />
+<snippet id='gridview-grouping-complexgrouping-vb' />
 
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})

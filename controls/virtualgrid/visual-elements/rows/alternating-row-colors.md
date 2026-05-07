@@ -15,21 +15,10 @@ __RadVirtualGrid__ supports an alternating row color. It can be enabled by simpl
 >caption Fig.1 Alternating Row color
 ![WinForms RadVirtualGrid Alternating Row color](images/virtualgrid-rows-alternating-row-color001.png)
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridRowsAlternatingRownColor.cs region=Settings}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridRowsAlternatingRownColor.vb region=Settings}} 
+<snippet id='virtualgrid-virtualgridrowsalternatingrowncolor-settings-cs' />
+<snippet id='virtualgrid-virtualgridrowsalternatingrowncolor-settings-vb' />
 
-````C#
-this.radVirtualGrid1.EnableAlternatingRowColor = true;
-this.radVirtualGrid1.TableElement.AlternatingRowColor = Color.LightBlue;
 
-````
-````VB.NET
-Me.RadVirtualGrid1.EnableAlternatingRowColor = True
-Me.RadVirtualGrid1.TableElement.AlternatingRowColor = Color.LightBlue
-
-````
-
-{{endregion}}
 
 # See Also
 * [Formatting Data Rows]({%slug winforms/virtualgrid/rows/formatting-data-rows%})

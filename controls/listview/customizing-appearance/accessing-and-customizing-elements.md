@@ -31,22 +31,11 @@ You can customize the nested elements at run time as well:
 
 #### Customize Elements 
 
-{{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=CustomizeElements}} 
-{{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=CustomizeElements}} 
+<snippet id='listview-listviewformattingitems-customizeelements-cs' />
+<snippet id='listview-listviewformattingitems-customizeelements-vb' />
 
-````C#
-this.radListView1.ListViewElement.BackColor = Color.Yellow;
-this.radListView1.ListViewElement.ViewElement.HScrollBar.ThumbElement.ThumbFill.BackColor = Color.Red;
 
-````
-````VB.NET
-Me.RadListView1.ListViewElement.BackColor = Color.Yellow
-Me.RadListView1.ListViewElement.ViewElement.HScrollBar.ThumbElement.ThumbFill.BackColor = Color.Red
 
-````
-
-{{endregion}} 
- 
 # See Also
 
 * [Formatting Items]({%slug winforms/listview/formatting-items%})		

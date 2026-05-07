@@ -33,27 +33,10 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=CustomizeElements}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=CustomizeElements}} 
+<snippet id='checkeddropdownlist-accessing-and-customizing-elements-customizeelements-cs' />
+<snippet id='checkeddropdownlist-accessing-and-customizing-elements-customizeelements-vb' />
 
-````C#
-            
-this.radCheckedDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua;
-this.radCheckedDropDownList1.DropDownListElement.EditableElement.BorderColor  = Color.Red;
-this.radCheckedDropDownList1.DropDownListElement.EditableElement.DrawBorder = true;
-this.radCheckedDropDownList1.DropDownListElement.EditableElement.BorderGradientStyle = GradientStyles.Solid;
-this.radCheckedDropDownList1.DropDownListElement.EditableElement.BorderWidth = 1;
 
-````
-````VB.NET
-Me.RadCheckedDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua
-Me.RadCheckedDropDownList1.DropDownListElement.EditableElement.BorderColor = Color.Red
-Me.RadCheckedDropDownList1.DropDownListElement.EditableElement.DrawBorder = True
-Me.RadCheckedDropDownList1.DropDownListElement.EditableElement.BorderGradientStyle = GradientStyles.Solid
-Me.RadCheckedDropDownList1.DropDownListElement.EditableElement.BorderWidth = 1
 
-````
-
-{{endregion}} 
  
 In order to style the pop-up items it is suitable to use the [Formatting Items]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/customization%}) event.

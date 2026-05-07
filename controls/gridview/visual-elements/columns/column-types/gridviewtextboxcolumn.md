@@ -19,50 +19,15 @@ When a user begins editing a cell, a textbox editor is provided to handle the us
 
 #### Add GridViewTextBoxColumn to the grid.
 
-{{source=..\SamplesCS\GridView\Columns\GridViewTextBoxColumn1.cs region=addTextBoxColumn}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=addTextBoxColumn}} 
-
-````C#
-GridViewTextBoxColumn textBoxColumn = new GridViewTextBoxColumn();
-textBoxColumn.Name = "TextBoxColumn";
-textBoxColumn.HeaderText = "Product Name";
-textBoxColumn.FieldName = "ProductName";
-textBoxColumn.MaxLength = 50;
-textBoxColumn.TextAlignment = ContentAlignment.BottomRight;
-radGridView1.MasterTemplate.Columns.Add(textBoxColumn);
-
-````
-````VB.NET
-Dim textBoxColumn As New GridViewTextBoxColumn()
-textBoxColumn.Name = "TextBoxColumn"
-textBoxColumn.HeaderText = "Product Name"
-textBoxColumn.FieldName = "ProductName"
-textBoxColumn.MaxLength = 50
-textBoxColumn.TextAlignment = ContentAlignment.BottomRight
-RadGridView1.MasterTemplate.Columns.Add(textBoxColumn)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewtextboxcolumn1-addtextboxcolumn-cs' />
+<snippet id='gridview-gridviewtextboxcolumn1-addtextboxcolumn-vb' />
 
 ## Character casing
 
 GridViewTextBoxColumn editor - *RadTextBoxEditor* - supports character casing. To enable this functionality you need to set __ColumnCharecterCasing__ property of the desired GridViewTextBoxColumn column:
 
-{{source=..\SamplesCS\GridView\Columns\GridViewTextBoxColumn1.cs region=characterCasting}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewTextBoxColumn1.vb region=characterCasting}} 
-
-````C#
-((GridViewTextBoxColumn)this.radGridView1.Columns[0]).ColumnCharacterCasing = CharacterCasing.Upper;
-
-````
-````VB.NET
-DirectCast(Me.RadGridView1.Columns(0), GridViewTextBoxColumn).ColumnCharacterCasing = CharacterCasing.Upper
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-gridviewtextboxcolumn1-charactercasting-cs' />
+<snippet id='gridview-gridviewtextboxcolumn1-charactercasting-vb' />
 
 >note ColumnCarecterCasing property affects only the editor and does not change the values in your data base. For instance, if your data base contains text which is lower case or partially lower case, and you set the **ColumnCharacterCasing** to upper case, the data will not be change. However, if the user starts editing a cell, the editor will only allow upper case symbols and all lower case symbols will be converted to upper case ones.
 >

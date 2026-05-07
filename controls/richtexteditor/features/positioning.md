@@ -26,20 +26,9 @@ You can manage the caret position for a specific __RadDocument__ by either acces
 
 This property enables you to manage the position of the caret inside the document and to obtain information about its location and the elements it currently resides at. Here is an example of how to use the **CaretPosition** property to get the current word.
 
-{{source=..\SamplesCS\RichTextEditor\Features\PositioningCode.cs region=caret}} 
-{{source=..\SamplesVB\RichTextEditor\Features\PositioningCode.vb region=caret}} 
+<snippet id='richtexteditor-positioningcode-caret-cs' />
+<snippet id='richtexteditor-positioningcode-caret-vb' />
 
-````C#
-            
-string currentSpanText = this.radRichTextEditor1.Document.CaretPosition.GetCurrentSpanBox().Text;
-
-````
-````VB.NET
-Dim currentSpanText As String = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentSpanBox().Text
-
-````
-
-{{endregion}} 
 
 
 ## DocumentPosition class
@@ -48,22 +37,10 @@ An alternative of using the __CaretPosition__ property is to create an instance 
 
 >note When instantiated in such a way, the position will be at the start of the document, so the result will be the first word in the text. The position of the instance won't be affected by the UI. To change it, you have to use the [API of the DocumentPosition class](https://docs.telerik.com/devtools/winforms/api/telerik.winforms.documents.documentposition).
 
-{{source=..\SamplesCS\RichTextEditor\Features\PositioningCode.cs region=position}} 
-{{source=..\SamplesVB\RichTextEditor\Features\PositioningCode.vb region=position}} 
+<snippet id='richtexteditor-positioningcode-position-cs' />
+<snippet id='richtexteditor-positioningcode-position-vb' />
 
-````C#
-        
-Telerik.WinForms.Documents.DocumentPosition position = new Telerik.WinForms.Documents.DocumentPosition(this.radRichTextEditor1.Document);
-string currentSpanText1 = position.GetCurrentSpanBox().Text;
 
-````
-````VB.NET
-Dim position As New Telerik.WinForms.Documents.DocumentPosition(Me.radRichTextEditor1.Document)
-Dim currentSpanText1 As String = position.GetCurrentSpanBox().Text
-
-````
-
-{{endregion}} 
 
 ### Tracking Positions
 
@@ -108,70 +85,27 @@ In the different implementations of the **LayoutBox** class (examples: **Paragra
 
 #### Getting the Paragraph on the caret position
 
-{{source=..\SamplesCS\RichTextEditor\Features\PositioningCode.cs region=Paragraph}} 
-{{source=..\SamplesVB\RichTextEditor\Features\PositioningCode.vb region=Paragraph}} 
+<snippet id='richtexteditor-positioningcode-paragraph-cs' />
+<snippet id='richtexteditor-positioningcode-paragraph-vb' />
 
 
-````C#
-        
-            DocumentPosition documentPosition = this.radRichTextEditor1.Document.CaretPosition;
-            Paragraph paragraph = documentPosition.GetCurrentParagraph();
-
-````
-````VB.NET
-        Dim documentPosition As DocumentPosition = Me.radRichTextEditor1.Document.CaretPosition()
-        Dim paragraph As Paragraph = documentPosition.GetCurrentParagraph()
-
-````
-
-{{endregion}} 
 
 #### Getting the Inline on the caret position
 
-{{source=..\SamplesCS\RichTextEditor\Features\PositioningCode.cs region=Inline}} 
-{{source=..\SamplesVB\RichTextEditor\Features\PositioningCode.vb region=Inline}} 
+<snippet id='richtexteditor-positioningcode-inline-cs' />
+<snippet id='richtexteditor-positioningcode-inline-vb' />
 
 
-````C#
-              documentPosition = this.radRichTextEditor1.Document.CaretPosition;
-            Inline inline = documentPosition.GetCurrentInline();      
-   
-
-````
-````VB.NET
-  
-        documentPosition = Me.radRichTextEditor1.Document.CaretPosition
-        Dim inline As Inline = documentPosition.GetCurrentInline()
-
-````
-
-{{endregion}} 
 
 To get the word on the document position, you can use the **GetCurrentWord()** method.
 
 #### Getting the word on the caret position
 
 
-{{source=..\SamplesCS\RichTextEditor\Features\PositioningCode.cs region=Word}} 
-{{source=..\SamplesVB\RichTextEditor\Features\PositioningCode.vb region=Word}} 
+<snippet id='richtexteditor-positioningcode-word-cs' />
+<snippet id='richtexteditor-positioningcode-word-vb' />
 
 
-````C#
-     
-            documentPosition = this.radRichTextEditor1.Document.CaretPosition;
-            string word = documentPosition.GetCurrentWord(); 
-   
-
-````
-````VB.NET
-          documentPosition = Me.radRichTextEditor1.Document.CaretPosition
-        Dim word As String = documentPosition.GetCurrentWord()
-        
-
-
-````
-
-{{endregion}} 
 
 If the searched document element (paragraph, span, table, etc.) cannot be found on the caret position, the corresponding method will return null.
 
@@ -183,47 +117,19 @@ You can use the **ActiveEditorPresenter** of **RadRichTextEditor** to convert a 
 
 #### Screen position to DocumentPosition conversion
 
-{{source=..\SamplesCS\RichTextEditor\Features\PositioningCode.cs region=DocumentPosition}} 
-{{source=..\SamplesVB\RichTextEditor\Features\PositioningCode.vb region=DocumentPosition}} 
+<snippet id='richtexteditor-positioningcode-documentposition-cs' />
+<snippet id='richtexteditor-positioningcode-documentposition-vb' />
 
 
-````C#
-            Point position = GetMousePosition();
-            DocumentPosition documentPosition = this.radRichTextEditor1.RichTextBoxElement.ActiveEditorPresenter.GetDocumentPositionFromViewPoint(position);   
-
-````
-````VB.NET
-       
-             Dim position As Point = GetMousePosition()
-        Dim documentPosition As DocumentPosition = Me.radRichTextEditor1.RichTextBoxElement.ActiveEditorPresenter.GetDocumentPositionFromViewPoint(position)   
-
-
-````
-
-{{endregion}} 
 
 * **GetViewPointFromDocumentPosition()**: The method accepts an argument of type DocumentPosition and returns an instance of type System.Windows.Point
 
 #### DocumentPosition to screen position conversion
 
-{{source=..\SamplesCS\RichTextEditor\Features\PositioningCode.cs region=Point}} 
-{{source=..\SamplesVB\RichTextEditor\Features\PositioningCode.vb region=Point}} 
+<snippet id='richtexteditor-positioningcode-point-cs' />
+<snippet id='richtexteditor-positioningcode-point-vb' />
 
 
-````C#
-            documentPosition = this.radRichTextEditor1.Document.CaretPosition;
-            position = this.radRichTextEditor1.RichTextBoxElement.ActiveEditorPresenter.GetViewPointFromDocumentPosition(documentPosition);
-
-````
-````VB.NET
-       
-           documentPosition = Me.radRichTextEditor1.Document.CaretPosition
-        position = Me.radRichTextEditor1.RichTextBoxElement.ActiveEditorPresenter.GetViewPointFromDocumentPosition(documentPosition)
-
-
-````
-
-{{endregion}} 
 
 ## Events
 
@@ -240,33 +146,10 @@ The following example shows how you can change the background of a Table object 
 
 #### Using DocumentPosition events
 
-{{source=..\SamplesCS\RichTextEditor\Features\PositioningCode.cs region=Events}} 
-{{source=..\SamplesVB\RichTextEditor\Features\PositioningCode.vb region=Events}} 
+<snippet id='richtexteditor-positioningcode-events-cs' />
+<snippet id='richtexteditor-positioningcode-events-vb' />
 
 
-````C#
-                   private void CaretPosition_LocationChanged(object sender, EventArgs e)
-        {
-            if (this.radRichTextEditor1.Document.CaretPosition.IsPositionInsideTable)
-            {
-                Table table = this.radRichTextEditor1.Document.CaretPosition.GetCurrentTable();
-                table.Background = Colors.Red;
-            }
-        } 
-
-````
-````VB.NET
-       
-    Private Sub CaretPosition_LocationChanged(ByVal sender As Object, ByVal e As EventArgs) 
-    If Me.radRichTextBox.Document.CaretPosition.IsPositionInsideTable Then 
-        Dim table As Table = Me.radRichTextBox.Document.CaretPosition.GetCurrentTable() 
-        table.Background = Colors.Red 
-    End If 
-End Sub    
-
-````
-
-{{endregion}} 
 
 # See Also
 

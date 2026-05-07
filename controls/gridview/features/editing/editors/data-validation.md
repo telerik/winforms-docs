@@ -37,44 +37,8 @@ The code snippet below demonstrates simple data validation scenario. It is enabl
 
 #### Handling CellValidating Event
 
-{{source=..\SamplesCS\GridView\Editors\DataValidation1.cs region=dataValidation}} 
-{{source=..\SamplesVB\GridView\Editors\DataValidation1.vb region=dataValidation}} 
-
-````C#
-void radGridView1_CellValidating(object sender, Telerik.WinControls.UI.CellValidatingEventArgs e)
-{
-    GridViewDataColumn column = e.Column as GridViewDataColumn;
-    if (e.Row is GridViewDataRowInfo && column != null && column.Name == "CategoryName")
-    {
-        if (string.IsNullOrEmpty((string)e.Value) || ((string)e.Value).Trim() == string.Empty)
-        {
-            e.Cancel = true;
-            ((GridViewDataRowInfo)e.Row).ErrorText = "Validation error!";
-        }
-        else
-        {
-            ((GridViewDataRowInfo)e.Row).ErrorText = string.Empty;
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_CellValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellValidatingEventArgs) Handles RadGridView1.CellValidating
-    Dim column As GridViewDataColumn = TryCast(e.Column, GridViewDataColumn)
-        If TypeOf e.Row Is GridViewDataRowInfo AndAlso column IsNot Nothing AndAlso column.Name = "CategoryName" Then
-            If String.IsNullOrEmpty(DirectCast(e.Value, String)) OrElse DirectCast(e.Value, String).Trim() = String.Empty Then
-                e.Cancel = True
-                DirectCast(e.Row, GridViewDataRowInfo).ErrorText = "Validation error!"
-            Else
-                DirectCast(e.Row, GridViewDataRowInfo).ErrorText = String.Empty
-            End If
-        End If
-    End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-datavalidation1-datavalidation-cs' />
+<snippet id='gridview-datavalidation1-datavalidation-vb' />
 
 >note You can watch the [Validation with RadGridView for WinForms](http://tv.telerik.com/watch/winforms/radgridview/validation-with-radgridview-winforms) video regarding the usage of RadGridView built-in validation.
 >

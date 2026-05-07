@@ -17,24 +17,10 @@ __RadRichTextEditor__ takes advantage of the clipboard support in Win Forms. As 
 
 __RadRichTextEditor's__ API exposes a method and a command for each of the three actions that can be performed against the clipboard: Cut, Copy and Paste. They can be invoked as follows:
 
-{{source=..\SamplesCS\RichTextEditor\Features\ClipboardSupport.cs region=clipboard}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ClipboardSupport.vb region=clipboard}} 
+<snippet id='richtexteditor-clipboardsupport-clipboard-cs' />
+<snippet id='richtexteditor-clipboardsupport-clipboard-vb' />
 
-````C#
-            
-this.radRichTextEditor1.Copy();
-this.radRichTextEditor1.Cut();
-this.radRichTextEditor1.Paste();
 
-````
-````VB.NET
-Me.radRichTextEditor1.Copy()
-Me.radRichTextEditor1.Cut()
-Me.radRichTextEditor1.Paste()
-
-````
-
-{{endregion}}
 
 ## Settings
 
@@ -52,29 +38,10 @@ Each Clipboard Handler contains the following properties:
      
 For instance, here is how you can clear the default clipboard handlers and add only a handler which uses __TxtFormatProvider__. In this way only plain text will be pasted when you copy from a source such as another rich text editor or a browser.
 
-{{source=..\SamplesCS\RichTextEditor\Features\ClipboardSupport.cs region=ex}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ClipboardSupport.vb region=ex}} 
+<snippet id='richtexteditor-clipboardsupport-ex-cs' />
+<snippet id='richtexteditor-clipboardsupport-ex-vb' />
 
-````C#
-            
-ClipboardEx.ClipboardHandlers.Clear();
-ClipboardHandler clipboardHandler = new ClipboardHandler();
-clipboardHandler.ClipboardDataFormat = DataFormats.Text;
-clipboardHandler.DocumentFormatProvider = new TxtFormatProvider();
-    
-ClipboardEx.ClipboardHandlers.Add(clipboardHandler);
 
-````
-````VB.NET
-ClipboardEx.ClipboardHandlers.Clear()
-Dim clipboardHandler As New ClipboardHandler()
-clipboardHandler.ClipboardDataFormat = DataFormats.Text
-clipboardHandler.DocumentFormatProvider = New TxtFormatProvider()
-ClipboardEx.ClipboardHandlers.Add(clipboardHandler)
-
-````
-
-{{endregion}} 
 
 You can also reorder the clipboard handlers to use first HTML paste and fallback to RTF instead of the other way around, or attach to different events of the format providers.
 

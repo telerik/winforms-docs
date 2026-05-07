@@ -25,54 +25,15 @@ Supported image formats are those supported by the `Image` class of the .NET Fra
 
 #### Create GridViewImageColumn
 
-{{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=addImageColumn}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=addImageColumn}} 
-
-````C#
-GridViewImageColumn imageColumn = new GridViewImageColumn();
-imageColumn.Name = "ImageColumn";
-imageColumn.FieldName = "Photo";
-imageColumn.HeaderText = "Picture";
-imageColumn.ImageLayout = ImageLayout.Zoom;           
-radGridView1.MasterTemplate.Columns.Insert(4, imageColumn);
-
-````
-````VB.NET
-Dim imageColumn As New GridViewImageColumn
-imageColumn.Name = "ImageColumn"
-imageColumn.FieldName = "Photo"
-imageColumn.HeaderText = "Picture"
-imageColumn.ImageLayout = ImageLayout.Zoom
-RadGridView1.MasterTemplate.Columns.Add(imageColumn)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewimagecolumn1-addimagecolumn-cs' />
+<snippet id='gridview-gridviewimagecolumn1-addimagecolumn-vb' />
 
 If the **GridViewImageColumn** is mapped to a property coming from the **DataBoundItem** via the specified **FieldName** (used in bound mode), the cells values will be automatically populated. For unbound mode, it is possible to add Image values to cells as it is demonstrated in the following code snippet:
 
 #### Add image value to a cell
 
-{{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=AddCellValue}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=AddCellValue}} 
-
-````C#
-GridViewRowInfo row = this.radGridView1.Rows.AddNew();
-row.Cells["ImageColumn"].Value = Properties.Resources.TV_car;
-
-row = this.radGridView1.Rows.AddNew();
-row.Cells["ImageColumn"].Value = Image.FromFile(@"..\..\logo.png");
-
-````
-````VB.NET
-Dim row As GridViewRowInfo = Me.RadGridView1.Rows.AddNew()
-row.Cells("ImageColumn").Value = My.Resources.TV_car1
-row = Me.RadGridView1.Rows.AddNew()
-row.Cells("ImageColumn").Value = Image.FromFile("..\..\logo.png")
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewimagecolumn1-addcellvalue-cs' />
+<snippet id='gridview-gridviewimagecolumn1-addcellvalue-vb' />
 
 ## Image Layout
 
@@ -82,21 +43,8 @@ __GridViewImageColumn__ also implements resizing functionality where sizing is c
 
 * __None:__ The image is positioned at the top left corner of the cell. This value can be used in a combination with the value of the ImageAlignment property to specify the position of an image in a cell:
 
-{{source=..\SamplesCS\GridView\Columns\GridViewImageColumn1.cs region=none}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewImageColumn1.vb region=none}} 
-
-````C#
-imageColumn.ImageLayout = ImageLayout.None;
-imageColumn.ImageAlignment = ContentAlignment.BottomRight;
-
-````
-````VB.NET
-imageColumn.ImageLayout = ImageLayout.None
-imageColumn.ImageAlignment = ContentAlignment.BottomRight
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewimagecolumn1-none-cs' />
+<snippet id='gridview-gridviewimagecolumn1-none-vb' />
 
 * __Tile:__ The image is repeated.
 

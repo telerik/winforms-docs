@@ -23,52 +23,11 @@ The following code snippet adds three __RadForm__ instances to a MDI container a
 
 #### Adding RadForm MDI children to RadForm 
 
-{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=addingMDIChildFormsToAForm}} 
-{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=addingMDIChildFormsToAForm}} 
+<snippet id='form-form1-addingmdichildformstoaform-cs' />
+<snippet id='form-form1-addingmdichildformstoaform-vb' />
 
-````C#
-this.IsMdiContainer = true;
- 
-RadForm form = new RadForm();
-form.Text = "MDI Child 1";
-form.MdiParent = this;
-form.ThemeName = "Desert";
-form.Show();
- 
-form = new RadForm();
-form.Text = "MDI Child 2";
-form.MdiParent = this;
-form.ThemeName = "Office2007Black";
-form.Show();
- 
-form = new RadForm();
-form.Text = "MDI Child 3";
-form.MdiParent = this;
-form.ThemeName = "TelerikMetro";
-form.Show();
 
-````
-````VB.NET
-Me.IsMdiContainer = True
-Dim form As New RadForm()
-form.Text = "MDI Child 1"
-form.MdiParent = Me
-form.ThemeName = "Desert"
-form.Show()
-form = New RadForm()
-form.Text = "MDI Child 2"
-form.MdiParent = Me
-form.ThemeName = "Office2007Black"
-form.Show()
-form = New RadForm()
-form.Text = "MDI Child 3"
-form.MdiParent = Me
-form.ThemeName = "TelerikMetro"
-form.Show()
 
-````
-
-{{endregion}} 
  
 
 ## Default MDI Menu Strip

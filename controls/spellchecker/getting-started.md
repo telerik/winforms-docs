@@ -52,43 +52,19 @@ The following tutorial demonstrates how you can make **RadSpellChecker** check a
 
 #### Initialize RadTextBox with some text
 
-{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=settingText}} 
-{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=settingText}} 
+<snippet id='spellchecker-spchgettingstarted-settingtext-cs' />
+<snippet id='spellchecker-spchgettingstarted-settingtext-vb' />
 
-````C#
-this.radTextBox1.Text = "The quik broun foxx jumpd ovur lasy dog";
-
-````
-````VB.NET
-Me.RadTextBox1.Text = "The quik broun foxx jumpd ovur lasy dog"
-
-````
-
-{{endregion}} 
 
 
 5\. Subscribe to the **Click** event of **RadButton**. In the event handler call the **Check** method of **RadSpellChecker** and pass the **RadTextBox** instance as a parameter:
 
 #### Spellcheck the RadTextBox
 
-{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=callingCheck}} 
-{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=callingCheck}} 
+<snippet id='spellchecker-spchgettingstarted-callingcheck-cs' />
+<snippet id='spellchecker-spchgettingstarted-callingcheck-vb' />
 
-````C#
-private void radButton1_Click(object sender, EventArgs e)
-{
-    this.radSpellChecker1.Check(this.radTextBox1);
-}
 
-````
-````VB.NET
-Private Sub RadButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles RadButton1.Click
-    Me.RadSpellChecker1.Check(Me.RadTextBox1)
-End Sub
-
-````
-
-{{endregion}} 
 
 Now when you press the button, **RadSpellChecker** form will appear with the appropriate suggestions for the mistaken words:
 

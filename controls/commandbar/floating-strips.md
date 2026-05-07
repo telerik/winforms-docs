@@ -29,113 +29,38 @@ There are some events that provide you with control over the floating/docking pr
 * __FloatingStripCreating__ event is fired when a strip is about to be made floating. The following example shows how to prevent the strip “OptionsStrip” from becoming floating.
  	 
 
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreating}} 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreating}} 
+<snippet id='commandbar-floating-strips-floatingstripcreating-cs'/>
+<snippet id='commandbar-floating-strips-floatingstripcreating-vb'/>
 
-````C#
-    
-void radCommandBar1_FloatingStripCreating(object sender, CancelEventArgs e)
-{
-    if ((sender as CommandBarStripElement).Name == "OptionsStrip")
-    {
-        e.Cancel = true;
-    }
-}
-
-````
-````VB.NET
-Private Sub radCommandBar1_FloatingStripCreating(ByVal sender As Object, ByVal e As CancelEventArgs)
-    If TryCast(sender, CommandBarStripElement).Name = "OptionsStrip" Then
-        e.Cancel = True
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+ 
  
 
 * __FloatingStripCreated__ event is fired when the floating form is shown.
   The following example shows how to set the caption text of the floating form: 
  
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripCreated}} 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripCreated}} 
+<snippet id='commandbar-floating-strips-floatingstripcreated-cs'/>
+<snippet id='commandbar-floating-strips-floatingstripcreated-vb'/>
 
-````C#
-void radCommandBar1_FloatingStripCreated(object sender, EventArgs e)
-{
-    (sender as CommandBarStripElement).FloatingForm.Text = "Just a floating form";
-}
-
-````
-````VB.NET
-Private Sub radCommandBar1_FloatingStripCreated(ByVal sender As Object, ByVal e As EventArgs)
-    TryCast(sender, CommandBarStripElement).FloatingForm.Text = "Just a floating form"
-End Sub
-
-````
-
-{{endregion}} 
+ 
  
 
 * __FloatingStripDocking__ event is fired when a floating strip is about to be docked to a __RadCommandBar__ control. 
 The following example shows how to prevent the strip with name “OptionsStrip” from being docked. 
  
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocking}} 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocking}} 
+<snippet id='commandbar-floating-strips-floatingstripdocking-cs'/>
+<snippet id='commandbar-floating-strips-floatingstripdocking-vb'/>
 
-````C#
-void radCommandBar1_FloatingStripDocking(object sender, CancelEventArgs e)
-{
-    if ((sender as CommandBarStripElement).Name == "OptionsStrip")
-    {
-        e.Cancel = true;
-    }
-}
-
-````
-````VB.NET
-Private Sub radCommandBar1_FloatingStripDocking(ByVal sender As Object, ByVal e As CancelEventArgs)
-    If TryCast(sender, CommandBarStripElement).Name = "OptionsStrip" Then
-        e.Cancel = True
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+ 
  
 
 * __FloatingStripDocked__ event is fired when a floating strip has docked to a __RadCommandBar__ control.
  The following example shows a sample usage of this event.
    
 
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=floatingStripDocked}} 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=floatingStripDocked}} 
+<snippet id='commandbar-floating-strips-floatingstripdocked-cs'/>
+<snippet id='commandbar-floating-strips-floatingstripdocked-vb'/>
 
-````C#
-        
-void radCommandBar1_FloatingStripDocked(object sender, EventArgs e)
-{
-    CommandBarStripElement dockedStrip = sender as CommandBarStripElement;
-    if (dockedStrip != null)
-    {
-        MessageBox.Show(dockedStrip.Name + " has docked to " + dockedStrip.ElementTree.Control.Name);
-    }
-}
-
-````
-````VB.NET
-Private Sub radCommandBar1_FloatingStripDocked(ByVal sender As Object, ByVal e As EventArgs)
-    Dim dockedStrip As CommandBarStripElement = TryCast(sender, CommandBarStripElement)
-    If dockedStrip IsNot Nothing Then
-        MessageBox.Show(dockedStrip.Name & " has docked to " & dockedStrip.ElementTree.Control.Name)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 
 

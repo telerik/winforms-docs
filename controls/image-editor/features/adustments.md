@@ -33,20 +33,10 @@ The Hue can be adjusted with the respective dialog, the values can be from 0 to 
 
 This can be done in the code behind as well.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Hue}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Hue}}
-````C#
-radImageEditor1.ImageEditorElement.SetHue(200);
-radImageEditor1.ImageEditorElement.SaveState();
+<snippet id='image-editor-imageeditorfeatures-hue-cs' />
+<snippet id='image-editor-imageeditorfeatures-hue-vb' />
 
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.SetHue(200)
-radImageEditor1.ImageEditorElement.SaveState()
 
-````
-
-{{endregion}}
 
 # Saturation adjustment
 
@@ -58,21 +48,10 @@ The Saturation can be adjusted with the respective dialog the values can be from
 
 To do this programmatically use the __SetSaturation__ method.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Sat}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Sat}}
+<snippet id='image-editor-imageeditorfeatures-sat-cs' />
+<snippet id='image-editor-imageeditorfeatures-sat-vb' />
 
-````C#
-radImageEditor1.ImageEditorElement.SetSaturation(-50);
-radImageEditor1.ImageEditorElement.SaveState();
 
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.SetSaturation(-50)
-radImageEditor1.ImageEditorElement.SaveState()
-
-````
-
-{{endregion}}
 
 # Contrast and Brightness adjustment
 
@@ -84,21 +63,10 @@ The Contrast and Brightness can be adjusted with the respective dialog the value
 
 This can be done in the code behind as well.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Contrast}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Contrast}}
+<snippet id='image-editor-imageeditorfeatures-contrast-cs' />
+<snippet id='image-editor-imageeditorfeatures-contrast-vb' />
 
-````C#
-radImageEditor1.ImageEditorElement.SetContrastAndBrightness(100, 10);
-radImageEditor1.ImageEditorElement.SaveState();
 
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.SetContrastAndBrightness(100, 10)
-radImageEditor1.ImageEditorElement.SaveState()
-
-````
-
-{{endregion}}
 
 # Invert Colors
 
@@ -110,21 +78,10 @@ The Invert Color button just inverts the colors in the image pixel by pixel.
 
 This action can be performed in code with the following method.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Invert}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Invert}}
+<snippet id='image-editor-imageeditorfeatures-invert-cs' />
+<snippet id='image-editor-imageeditorfeatures-invert-vb' />
 
-````C#
-radImageEditor1.ImageEditorElement.InvertColors();
-radImageEditor1.ImageEditorElement.SaveState();
 
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.InvertColors()
-radImageEditor1.ImageEditorElement.SaveState()
-
-````
-
-{{endregion}}
 
 # See Also
 

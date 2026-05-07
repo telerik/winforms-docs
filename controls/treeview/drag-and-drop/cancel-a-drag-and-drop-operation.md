@@ -20,117 +20,35 @@ In some cases you may need to impose restrictions on the drag and drop behavior.
 
 You can interrupt a drag and drop operation by setting the __AllowDrop__ property of a specific RadTreeNode to *false*. This way you still can drag this particular node, but you cannot add other nodes to it with drag and drop operation. You can set this for any particular node you want.
 
-{{source=..\SamplesCS\TreeView\DragAndDrop\CancelDragAndDropOperation.cs region=AllowDrop}} 
-{{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=AllowDrop}} 
+<snippet id='treeview-canceldraganddropoperation-allowdrop-cs' />
+<snippet id='treeview-canceldraganddropoperation-allowdrop-vb' />
 
-````C#
-            
-radTreeView1.Nodes[0].AllowDrop = false;
 
-````
-````VB.NET
-RadTreeView1.Nodes(0).AllowDrop = False
-
-````
-
-{{endregion}} 
 
 ## Restrict the user from changing the node hierarchy level with drag and drop 
 
 1\. With the following code we will add some parent and child nodes to the tree view:
 
-{{source=..\SamplesCS\TreeView\DragAndDrop\CancelDragAndDropOperation.cs region=Tag}} 
-{{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=Tag}} 
+<snippet id='treeview-canceldraganddropoperation-tag-cs' />
+<snippet id='treeview-canceldraganddropoperation-tag-vb' />
 
-````C#
-int count = 0;
-            
-for (int i = 0; i < 10; i++)
-{
-    RadTreeNode parentNode = new RadTreeNode("Parent Node" + i);              
-    parentNode.AllowDrop = false;
-    for (int j = 0; j < 3; j++)
-    {
-        RadTreeNode childNode = new RadTreeNode("Child Node" + count++);
-        
-        parentNode.Nodes.Add(childNode);
-    }
-            
-    radTreeView1.Nodes.Add(parentNode);
-}
-
-````
-````VB.NET
-Dim count As Integer = 0
-For i As Integer = 0 To 9
-    Dim parentNode As New RadTreeNode("Parent Node" & i)        
-    parentNode.AllowDrop = False
-    For j As Integer = 0 To 2
-        Dim childNode As New RadTreeNode("Child Node" & count)
-        count = count + 1
-        parentNode.Nodes.Add(childNode)
-    Next
-    RadTreeView1.Nodes.Add(parentNode)
-Next
-
-````
-
-{{endregion}} 
 
 
 2\. Now we can subscribe to the __DragEnding__ event and cancel the drop operation if the dragged node and target node have different hierarchy levels. Also we will show an appropriate message:
 
-{{source=..\SamplesCS\TreeView\DragAndDrop\CancelDragAndDropOperation.cs region=DragEnding}} 
-{{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=DragEnding}} 
+<snippet id='treeview-canceldraganddropoperation-dragending-cs' />
+<snippet id='treeview-canceldraganddropoperation-dragending-vb' />
 
-````C#
-    
-void radTreeView1_DragEnding(object sender, RadTreeViewDragCancelEventArgs e)
-{
-    if (e.TargetNode.Level != e.Node.Level)
-    {
-        e.Cancel = true;
-        RadMessageBox.Show("Only nodes from the same level can be dropped here.");
-    }
-}
 
-````
-````VB.NET
-Private Sub radTreeView1_DragEnding(sender As Object, e As RadTreeViewDragCancelEventArgs)
-    If e.TargetNode.Level <> e.Node.Level Then
-        e.Cancel = True
-        RadMessageBox.Show("Only nodes from the same level can be dropped here.")
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 ## Cancel Auto Expansion for Dragged Nodes
 
 The default behavior of __RadTreeView__ when a node is dragged over a collapsed node is to automatically expand this node. To suppress this automatic expansion you can keep track of when a drag operation is in progress by using the __DragStarted__ and __DragEnded__ events. Then in the __NodeExpandedChanging__ event handler we can cancel the expanding when drag and drop operation is in progress.
 
-{{source=..\SamplesCS\TreeView\DragAndDrop\CancelDragAndDropOperation.cs region=AutoExpansion}} 
-{{source=..\SamplesVB\TreeView\DragAndDrop\CancelDragAndDropOperation.vb region=AutoExpansion}} 
+<snippet id='treeview-canceldraganddropoperation-autoexpansion-cs' />
+<snippet id='treeview-canceldraganddropoperation-autoexpansion-vb' />
 
-````C#
-                         
-void radTreeView1_NodeExpandedChanging(object sender, RadTreeViewCancelEventArgs e)
-{
-    e.Cancel = radTreeView1.TreeViewElement.DragDropService.State == RadServiceState.Working;
-}
 
-````
-````VB.NET
-   
-Private Sub radTreeView1_NodeExpandedChanging(sender As Object, e As RadTreeViewCancelEventArgs)
-    e.Cancel = RadTreeView1.TreeViewElement.DragDropService.State = RadServiceState.Working
-End Sub
-
-````
-
-{{endregion}}
 
 # See Also
 * [Drag and Drop in bound mode]({%slug winforms/treeview/drag-and-drop/drag-and-drop-in-bound-mode%})

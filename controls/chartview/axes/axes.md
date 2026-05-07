@@ -58,95 +58,19 @@ The following example demonstrates how some of the above properties are set:
 
 #### Set Properties
 
-{{source=..\SamplesCS\ChartView\Axes\AxisForm.cs region=axis}} 
-{{source=..\SamplesVB\ChartView\Axes\AxisForm.vb region=axis}} 
+<snippet id='chartview-axes-axis-cs'/>
+<snippet id='chartview-axes-axis-vb'/>
 
-````C#
-BarSeries series = new BarSeries();
-series.DataPoints.Add(new CategoricalDataPoint(10, "First"));
-series.DataPoints.Add(new CategoricalDataPoint(30, "Second"));
-series.DataPoints.Add(new CategoricalDataPoint(22, "Third"));
-series.DataPoints.Add(new CategoricalDataPoint(15, "Fourth"));
-series.DataPoints.Add(new CategoricalDataPoint(40, "Fifth"));
-series.DataPoints.Add(new CategoricalDataPoint(80, "Sixth"));
-this.radChartView1.Series.Add(series);
-CategoricalAxis categoricalAxis = radChartView1.Axes[0] as CategoricalAxis;
-categoricalAxis.PlotMode = AxisPlotMode.OnTicksPadded;
-categoricalAxis.LabelFitMode = AxisLabelFitMode.Rotate;
-categoricalAxis.LabelRotationAngle = 310;
-LinearAxis verticalAxis = radChartView1.Axes[1] as LinearAxis;
-verticalAxis.ForeColor = Color.Green;
-verticalAxis.BorderColor = Color.DarkOrange;
-verticalAxis.MajorStep = 10;
-verticalAxis.Maximum = 100;
-verticalAxis.Minimum = 0;
-verticalAxis.LabelInterval = 2;
-verticalAxis.LabelFormat = "{0:c}";
 
-````
-````VB.NET
-Dim series As New BarSeries()
-series.DataPoints.Add(New CategoricalDataPoint(10, "First"))
-series.DataPoints.Add(New CategoricalDataPoint(30, "Second"))
-series.DataPoints.Add(New CategoricalDataPoint(22, "Third"))
-series.DataPoints.Add(New CategoricalDataPoint(15, "Fourth"))
-series.DataPoints.Add(New CategoricalDataPoint(40, "Fifth"))
-series.DataPoints.Add(New CategoricalDataPoint(80, "Sixth"))
-Me.RadChartView1.Series.Add(series)
-Dim categoricalAxis As CategoricalAxis = TryCast(RadChartView1.Axes(0), CategoricalAxis)
-categoricalAxis.PlotMode = AxisPlotMode.OnTicksPadded
-categoricalAxis.LabelFitMode = AxisLabelFitMode.Rotate
-categoricalAxis.LabelRotationAngle = 310
-Dim verticalAxis As LinearAxis = TryCast(RadChartView1.Axes(1), LinearAxis)
-verticalAxis.ForeColor = Color.Green
-verticalAxis.BorderColor = Color.DarkOrange
-verticalAxis.MajorStep = 10
-verticalAxis.Maximum = 100
-verticalAxis.Minimum = 0
-verticalAxis.LabelInterval = 2
-verticalAxis.LabelFormat = "{0:c}"
-
-````
-
-{{endregion}} 
 
 Having the **BorderColor** property of the axis set to a color different than the one defined in the theme will also set the border color of the axis labels. As this might not be desired one can access each of the labels and explicitly set their **BorderColor** to *Transparent*. A suitable place for this is the **Shown** event of the form
 
 #### Labels Border Color
 
-{{source=..\SamplesCS\ChartView\Axes\AxisForm.cs region=ShownEvent}} 
-{{source=..\SamplesVB\ChartView\Axes\AxisForm.vb region=ShownEvent}}
-````C#
-private void AxisForm_Shown(object sender, EventArgs e)
-{
-    LinearAxis verticalAxis = (LinearAxis)this.radChartView1.Axes[1];
-    foreach (var item in verticalAxis.Children)
-    {
-        AxisLabelElement labelElement = item as AxisLabelElement;
-        if (labelElement != null)
-        {
-            labelElement.BorderColor = Color.Transparent;
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub AxisForm_Shown(sender As Object, e As EventArgs)
-    Dim verticalAxis As LinearAxis = CType(Me.RadChartView1.Axes(1), LinearAxis)
-    For Each item In verticalAxis.Children
-        Dim labelElement As AxisLabelElement = TryCast(item, AxisLabelElement)
-        If labelElement IsNot Nothing Then
-            labelElement.BorderColor = Color.Transparent
-        End If
-    Next
-End Sub
-
-```` 
+<snippet id='chartview-axes-shownevent-cs'/>
+<snippet id='chartview-axes-shownevent-vb'/>
 
 
-
-{{endregion}} 
 
 >caption Figure 2: Property Settings
 ![WinForms RadChartView Property Settings](images/chartview-axes002.png)

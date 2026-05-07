@@ -15,42 +15,19 @@ There are two ways to assign tooltips to __RadButton__, namely setting the __Too
 
 #### Setting the ToolTipText property
 
-{{source=..\SamplesCS\Buttons\Button.cs region=SetToolTipText}} 
-{{source=..\SamplesVB\Buttons\Button.vb region=SetToolTipText}}
+<snippet id='buttons-button-tooltips-settooliptext-cs' />
+<snippet id='buttons-button-tooltips-settooliptext-vb' />
 
-````C#
-this.radButton1.ButtonElement.ToolTipText = "I am a button";
 
-````
-````VB.NET
-Me.radButton1.ButtonElement.ToolTipText = "I am a button"
-
-````
-
-{{endregion}} 
 
 ![WinForms RadButtons Setting ToolTipText](images/buttons-button-tooltips001.gif)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
-{{source=..\SamplesCS\Buttons\Button.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\Buttons\Button.vb region=ToolTipTextNeeded}}
+<snippet id='buttons-button-tooltips-tooltiptextneeded-cs' />
+<snippet id='buttons-button-tooltips-tooltiptextneeded-vb' />
 
-````C#
-private void radButton1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    e.ToolTipText = "Click me";
-}
 
-````
-````VB.NET
-Private Sub radButton1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    e.ToolTipText = "Click me"
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadButtons Using ToolTipTextNeeded to Set ToolTipText](images/buttons-button-tooltips002.gif)
 

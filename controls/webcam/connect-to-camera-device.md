@@ -23,29 +23,8 @@ To connect to a web cam manually, execute the following steps:
 
 >note The manual initialization of RadWebCam should be executed after the control gets loaded. For example, you can use the form's Load event.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=SelectDevice}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=SelectDevice}} 
-
-````C#
-
-            ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices();
-            ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[1], true);
-            ReadOnlyCollection<MediaFoundationDeviceInfo> audioDevices = RadWebCam.GetAudioCaptureDevices();
-            radWebCam1.Initialize(videoDevices[1], videoFormats[9], audioDevices[1]);
-            radWebCam1.Start();
-
-````
-````VB.NET
-
-        Dim videoDevices As ReadOnlyCollection(Of MediaFoundationDeviceInfo) = RadWebCam.GetVideoCaptureDevices()
-        Dim videoFormats As ReadOnlyCollection(Of MediaFoundationVideoFormatInfo) = RadWebCam.GetVideoFormats(videoDevices(1), True)
-        Dim audioDevices As ReadOnlyCollection(Of MediaFoundationDeviceInfo) = RadWebCam.GetAudioCaptureDevices()
-        radWebCam1.Initialize(videoDevices(1), videoFormats(9), audioDevices(1))
-        radWebCam1.Start()
-
-````
-
-{{endregion}} 
+<snippet id='webcam-webcamgettingstarted-selectdevice-cs' />
+<snippet id='webcam-webcamgettingstarted-selectdevice-vb' />
 
 
 

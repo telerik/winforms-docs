@@ -15,38 +15,18 @@ The __SaveDocument__ method allows you to save the currently loaded document in 
 
 #### Using SaveDocument method.
 
-{{source=..\SamplesCS\PdfViewer\RotationAndExport.cs region=SaveAs}} 
-{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=SaveAs}}
-````C#
-radPdfViewer1.SaveDocument(@"D:\MyFile.pdf");
-
-````
-````VB.NET
-radPdfViewer1.SaveDocument("D:\MyFile.pdf")
-
-````
- 
+<snippet id='pdfviewer-rotationandexport-saveas-cs' />
+<snippet id='pdfviewer-rotationandexport-saveas-vb' />
 
 
-{{endregion}}
 
 You can use the __GetDocumentAsStream__ method to retrieve the document stream:
 
 #### Get the document stream
 
-{{source=..\SamplesCS\PdfViewer\RotationAndExport.cs region=SaveStream}} 
-{{source=..\SamplesVB\PdfViewer\RotationAndExport.vb region=SaveStream}}
-````C#
-var stream = radPdfViewer1.GetDocumentAsStream();
+<snippet id='pdfviewer-rotationandexport-savestream-cs' />
+<snippet id='pdfviewer-rotationandexport-savestream-vb' />
 
-````
-````VB.NET
-Dim stream = radPdfViewer1.GetDocumentAsStream()
-
-````
- 
-
-{{endregion}}
 
 
 ## Save from the PdfViewerNavigator

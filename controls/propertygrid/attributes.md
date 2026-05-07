@@ -17,30 +17,10 @@ This article contains a list of some of the more important and more commonly use
 
 With the editor attribute you can specify __UITypeEditor__ as well as __BaseInputEditor__ to be used for a given property.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=EditorAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=EditorAttribute}} 
+<snippet id='propertygrid-propertygridattributes-editorattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-editorattribute-vb' />
 
-````C#
-        
-[Editor(typeof(PropertyGridBrowseEditor), typeof(BaseInputEditor))] 
-public string FileLocation { get; set; }
 
-````
-````VB.NET
-<Editor(GetType(PropertyGridBrowseEditor), GetType(BaseInputEditor))> _
-Public Property FileLocation() As String
-    Get
-        Return m_FileLocation
-    End Get
-    Set(value As String)
-        m_FileLocation = value
-    End Set
-End Property
-Private m_FileLocation As String
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: EditorAttribute
 
@@ -50,30 +30,10 @@ Private m_FileLocation As String
 
 The range attribute allows you to set a minimum and maximum value to be used for a property that is edited with a RadSpinEditor.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadRangeAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadRangeAttribute}} 
+<snippet id='propertygrid-propertygridattributes-radrangeattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-radrangeattribute-vb' />
 
-````C#
-        
-[RadRange(1, 5)]
-public byte DoorsCount { get; set; }
 
-````
-````VB.NET
-<RadRange(1, 5)> _
-Public Property DoorsCount() As Byte
-    Get
-        Return m_DoorsCount
-    End Get
-    Set(value As Byte)
-        m_DoorsCount = value
-    End Set
-End Property
-Private m_DoorsCount As Byte
-
-````
-
-{{endregion}}
 
 >caption Figure 2: RadRangeAttribute
 
@@ -83,41 +43,10 @@ Private m_DoorsCount As Byte
 
 Determines whether the property will be included in the collection of properties RadPropertyGridSHows.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=BrowsableAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=BrowsableAttribute}} 
+<snippet id='propertygrid-propertygridattributes-browsableattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-browsableattribute-vb' />
 
-````C#
-        
-[Browsable(false)]
-public int MyHiddenProperty { get; set; }
-    
-public int MyBrowsableProperty { get; set; }
 
-````
-````VB.NET
-<Browsable(False)> _
-Public Property MyHiddenProperty() As Integer
-    Get
-        Return m_MyHiddenProperty
-    End Get
-    Set(value As Integer)
-        m_MyHiddenProperty = value
-    End Set
-End Property
-Private m_MyHiddenProperty As Integer
-Public Property MyBrowsableProperty() As Integer
-    Get
-        Return m_MyBrowsableProperty
-    End Get
-    Set(value As Integer)
-        m_MyBrowsableProperty = value
-    End Set
-End Property
-Private m_MyBrowsableProperty As Integer
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: BrowsableAttribute
 
@@ -127,59 +56,19 @@ Private m_MyBrowsableProperty As Integer
 
 Determines whether a property can be edited in RadPropertyGrid or not.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=ReadOnlyAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=ReadOnlyAttribute}} 
+<snippet id='propertygrid-propertygridattributes-readonlyattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-readonlyattribute-vb' />
 
-````C#
-    
-[ReadOnly(true)]
-public int Count { get; set; }
 
-````
-````VB.NET
-<[ReadOnly](True)> _
-Public Property Count() As Integer
-    Get
-        Return m_Count
-    End Get
-    Set(value As Integer)
-        m_Count = value
-    End Set
-End Property
-Private m_Count As Integer
-
-````
-
-{{endregion}} 
 
 ## DisplayNameAttribute
 
 Determines the text that will be show for a given property. You can also alter the text for a property by setting its Label.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DisplayNameAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DisplayNameAttribute}} 
+<snippet id='propertygrid-propertygridattributes-displaynameattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-displaynameattribute-vb' />
 
-````C#
-        
-[DisplayName("PropertyNameInGerman")]
-public double PropertyName { get; set; }
 
-````
-````VB.NET
-<DisplayName("PropertyNameInGerman")> _
-Public Property PropertyName() As Double
-    Get
-        Return m_PropertyName
-    End Get
-    Set(value As Double)
-        m_PropertyName = value
-    End Set
-End Property
-Private m_PropertyName As Double
-
-````
-
-{{endregion}} 
 
 >caption Figure 4: DisplayNameAttribute
 
@@ -189,30 +78,10 @@ Private m_PropertyName As Double
 
 Defines the text that is displayed for a given property in the help bar of RadPropertyGrid.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DescriptionAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DescriptionAttribute}} 
+<snippet id='propertygrid-propertygridattributes-descriptionattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-descriptionattribute-vb' />
 
-````C#
-        
-[Description("The manufacturer of the item")] 
-public string Manufacturer { get; set; }
 
-````
-````VB.NET
-<Description("The manufacturer of the item")> _
-Public Property Manufacturer() As String
-    Get
-        Return m_Manufacturer
-    End Get
-    Set(value As String)
-        m_Manufacturer = value
-    End Set
-End Property
-Private m_Manufacturer As String
-
-````
-
-{{endregion}} 
 
 >caption Figure 5: DisplayNameAttribute
 
@@ -222,40 +91,10 @@ Private m_Manufacturer As String
 
 Determines whether a text property will be edited as a password.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=PasswordPropertyTextAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=PasswordPropertyTextAttribute}} 
+<snippet id='propertygrid-propertygridattributes-passwordpropertytextattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-passwordpropertytextattribute-vb' />
 
-````C#
-        
-public string Username { get; set; }
-[PasswordPropertyText(true)]
-public string Password { get; set; }
 
-````
-````VB.NET
-Public Property Username() As String
-    Get
-        Return m_Username
-    End Get
-    Set(value As String)
-        m_Username = value
-    End Set
-End Property
-Private m_Username As String
-<PasswordPropertyText(True)> _
-Public Property Password() As String
-    Get
-        Return m_Password
-    End Get
-    Set(value As String)
-        m_Password = value
-    End Set
-End Property
-Private m_Password As String
-
-````
-
-{{endregion}} 
 
 >caption Figure 6: PasswordPropertyTextAttribute
 
@@ -265,29 +104,10 @@ Private m_Password As String
 
 Defines the default value to which the property will reset. When the property value is set to something different that the default value, it will be marked as modified.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=DefaultValueAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=DefaultValueAttribute}} 
+<snippet id='propertygrid-propertygridattributes-defaultvalueattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-defaultvalueattribute-vb' />
 
-````C#
-[DefaultValue(1.35)]
-public double Length { get; set; }
 
-````
-````VB.NET
-<DefaultValue(1.35)> _
-Public Property Length() As Decimal
-    Get
-        Return m_Length
-    End Get
-    Set(value As Decimal)
-        m_Length = value
-    End Set
-End Property
-Private m_Length As Decimal
-
-````
-
-{{endregion}}
 
 >caption Figure 7: DefaultValueAttribute
 
@@ -297,41 +117,10 @@ Private m_Length As Decimal
 
 Defines the category to which the property will be grouped when properties are shown categorized. Any property that does not have this attribute will be categorized in the Misc category.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=CategoryAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=CategoryAttribute}} 
+<snippet id='propertygrid-propertygridattributes-categoryattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-categoryattribute-vb' />
 
-````C#
-        
-[Category("CategoryName")]
-public string CategorizedProperty { get; set; }
-    
-public string UncategorizedProperty { get; set; }
 
-````
-````VB.NET
-<Category("CategoryName")> _
-Public Property CategorizedProperty() As String
-    Get
-        Return m_CategorizedProperty
-    End Get
-    Set(value As String)
-        m_CategorizedProperty = value
-    End Set
-End Property
-Private m_CategorizedProperty As String
-Public Property UncategorizedProperty() As String
-    Get
-        Return m_UncategorizedProperty
-    End Get
-    Set(value As String)
-        m_UncategorizedProperty = value
-    End Set
-End Property
-Private m_UncategorizedProperty As String
-
-````
-
-{{endregion}} 
 
 >caption Figure 8: CategoryAttribute
 
@@ -341,54 +130,10 @@ Private m_UncategorizedProperty As String
 
 Defines the order in which items would be ordered when no other ordering is applied (Alphabetical or Categorical alphabetical). The order can also be manipulated through the SortOrder property of PropertyGridItem. Setting the property would override the value from the attribute.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadSortOrderAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadSortOrderAttribute}} 
+<snippet id='propertygrid-propertygridattributes-radsortorderattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-radsortorderattribute-vb' />
 
-````C#
-        
-[RadSortOrder(2)]
-public string AProperty { get; set; }
-[RadSortOrder(1)]
-public string BProperty { get; set; }
-[RadSortOrder(0)]
-public string CProperty { get; set; }
 
-````
-````VB.NET
-<RadSortOrder(2)> _
-Public Property AProperty() As String
-    Get
-        Return m_AProperty
-    End Get
-    Set(value As String)
-        m_AProperty = value
-    End Set
-End Property
-Private m_AProperty As String
-<RadSortOrder(1)> _
-Public Property BProperty() As String
-    Get
-        Return m_BProperty
-    End Get
-    Set(value As String)
-        m_BProperty = value
-    End Set
-End Property
-Private m_BProperty As String
-<RadSortOrder(0)> _
-Public Property CProperty() As String
-    Get
-        Return m_CProperty
-    End Get
-    Set(value As String)
-        m_CProperty = value
-    End Set
-End Property
-Private m_CProperty As String
-
-````
-
-{{endregion}}
 
 >caption Figure 9: RadSortOrderAttribute
 
@@ -398,41 +143,10 @@ Private m_CProperty As String
 
 The **RadCheckBoxThreeStateAttribute** determines whether properties inside **RadPropertyGrid**, for which a **PropertyGridCheckBoxItemElement** is created, will have a three state check box editor or a two state one.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=RadCheckBoxThreeStateAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=RadCheckBoxThreeStateAttribute}} 
+<snippet id='propertygrid-propertygridattributes-radcheckboxthreestateattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-radcheckboxthreestateattribute-vb' />
 
-````C#
-[RadCheckBoxThreeState(true)]
-public bool? AProperty { get; set; }
-[RadCheckBoxThreeState(false)]
-public ToggleState BProperty { get; set; }
 
-````
-````VB.NET
-<RadCheckBoxThreeState(True)>
-Public Property AProperty() As Nullable(Of Boolean)
-    Get
-        Return m_AProperty
-    End Get
-    Set(value As Nullable(Of Boolean))
-        m_AProperty = value
-    End Set
-End Property
-Private m_AProperty As Nullable(Of Boolean)
-<RadCheckBoxThreeState(False)>
-Public Property BProperty() As ToggleState
-    Get
-        Return m_BProperty
-    End Get
-    Set(value As ToggleState)
-        m_BProperty = value
-    End Set
-End Property
-Private m_BProperty As ToggleState
-
-````
-
-{{endregion}}
 
 >caption Figure 10: RadCheckBoxThreeStateAttribute
 
@@ -442,26 +156,10 @@ Private m_BProperty As ToggleState
 
 The __TypeConverterAttribute__ specifies what type to use as a converter for the object this attribute is bound to. 
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridAttributes.cs region=TypeConverterAttribute}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridAttributes.vb region=TypeConverterAttribute}} 
+<snippet id='propertygrid-propertygridattributes-typeconverterattribute-cs' />
+<snippet id='propertygrid-propertygridattributes-typeconverterattribute-vb' />
 
-````C#
-PropertyStoreItem Item1 = new PropertyStoreItem(typeof(string), "BorderType", "Flat");
-Item1.Attributes.Add(new TypeConverterAttribute(typeof(My_TypeConverter)));
-store.Add(Item1);
-radPropertyGrid1.SelectedObject = store;
 
-````
-````VB.NET
-Dim store As RadPropertyStore = New RadPropertyStore()
-Dim Item1 As PropertyStoreItem = New PropertyStoreItem(GetType(String), "BorderType", "Flat")
-Item1.Attributes.Add(New TypeConverterAttribute(GetType(My_TypeConverter)))
-store.Add(Item1)
-radPropertyGrid1.SelectedObject = store
-
-````
-
-{{endregion}}
 
 # See Also
 

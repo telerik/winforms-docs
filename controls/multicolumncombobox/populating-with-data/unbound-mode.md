@@ -14,29 +14,10 @@ position: 1
 
 #### Unbound mode
 
-{{source=..\SamplesCS\MultiColumnComboBox\MCCBgettingStarted.cs region=UnboundMode}} 
-{{source=..\SamplesVB\MultiColumnComboBox\MCCBgettingStarted.vb region=UnboundMode}} 
+<snippet id='multicolumncombobox-mccbgettingstarted-unboundmode-cs' />
+<snippet id='multicolumncombobox-mccbgettingstarted-unboundmode-vb' />
 
-````C#
-this.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns.Add("Name");
-this.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns.Add("Id");
-            
-for (int i = 0; i < 10; i++)
-{
-    this.radMultiColumnComboBox1.EditorControl.Rows.Add("Item" + i, i);
-}
 
-````
-````VB.NET
-Me.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns.Add("Name")
-Me.radMultiColumnComboBox1.MultiColumnComboBoxElement.Columns.Add("Id")
-For i As Integer = 0 To 9
-    Me.RadMultiColumnComboBox1.EditorControl.Rows.Add("Item" & i, i)
-Next
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Unbound mode
 

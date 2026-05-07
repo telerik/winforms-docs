@@ -17,81 +17,19 @@ __RadChartView__ allows you to easily change the axes labels text by using a cus
 
 #### Label Format
 
-{{source=..\SamplesCS\ChartView\Customization\CustomLabels.cs region=FormatProvider}} 
-{{source=..\SamplesVB\ChartView\Customization\CustomLabels.vb region=FormatProvider}} 
+<snippet id='chartview-custom-labels-text-formatprovider-cs'/>
+<snippet id='chartview-custom-labels-text-formatprovider-vb'/>
 
-````C#
-public class MyFormatProvider : IFormatProvider, ICustomFormatter
-{
-    public object GetFormat(Type formatType)
-    {
-        return this;
-    }
-    public string Format(string format, object arg, IFormatProvider formatProvider)
-    {
-        string s = arg.ToString();
-        switch (s)
-        {
-            case "0":
-                return "0 seconds";
-            case "30":
-                return "1/2 min";
-            case "60":
-                return "1 min";
-            case "90":
-                return "90 seconds";
-        }
-        return null;
-    }
-}
 
-````
-````VB.NET
-Class MyFormatProvider
-    Implements IFormatProvider
-    Implements ICustomFormatter
-    Public Function GetFormat(formatType As Type) As Object Implements IFormatProvider.GetFormat
-        Return Me
-    End Function
-    Public Function Format(format__1 As String, arg As Object, formatProvider As IFormatProvider) As String Implements ICustomFormatter.Format
-        Dim s As String = arg.ToString()
-        Select Case s
-            Case "0"
-                Return "0 seconds"
-            Case "30"
-                Return "1/2 min"
-            Case "60"
-                Return "1 min"
-            Case "90"
-                Return "90 seconds"
-        End Select
-        Return Nothing
-    End Function
-End Class
-
-````
-
-{{endregion}}
 
 Then you can just change the horizontal axis __LabelFormatProvider__ by using the corresponding property. 
 
 #### Assign Format Provider
 
-{{source=..\SamplesCS\ChartView\Customization\CustomLabels.cs region=propertyChange}} 
-{{source=..\SamplesVB\ChartView\Customization\CustomLabels.vb region=propertyChange}} 
+<snippet id='chartview-custom-labels-text-propertychange-cs'/>
+<snippet id='chartview-custom-labels-text-propertychange-vb'/>
 
-````C#
-LinearAxis horizontalAxis = radChartView1.Axes.Get<LinearAxis>(0);
-horizontalAxis.LabelFormatProvider = new MyFormatProvider();
 
-````
-````VB.NET
-Dim horizontalAxis As LinearAxis = RadChartView1.Axes.[Get](Of LinearAxis)(0)
-horizontalAxis.LabelFormatProvider = New MyFormatProvider()
-
-````
-
-{{endregion}}
 
 >caption Figure 1: Format Provider
 ![WinForms RadChartView Format Provider](images/chartview-customization-custom-labels001.png)
@@ -100,71 +38,19 @@ horizontalAxis.LabelFormatProvider = New MyFormatProvider()
 
 #### DateTime Format Provider
 
-{{source=..\SamplesCS\ChartView\Customization\CustomLabels.cs region=FormatProvider2}} 
-{{source=..\SamplesVB\ChartView\Customization\CustomLabels.vb region=FormatProvider2}} 
+<snippet id='chartview-custom-labels-text-formatprovider2-cs'/>
+<snippet id='chartview-custom-labels-text-formatprovider2-vb'/>
 
-````C#
-public class DateTimeFormatProvider : IFormatProvider, ICustomFormatter
-{
-    public object GetFormat(Type formatType)
-    {
-        return this;
-    }
-    public string Format(string format, object arg, IFormatProvider formatProvider)
-    {
-        DateTime val = (DateTime)arg;
-        if (val.Hour == 0)
-        {
-            return val.ToShortDateString();
-        }
-        else
-        {
-            return val.ToString("H\\h");
-        }
-    }
-}
-
-````
-````VB.NET
-Class DateTimeFormatProvider
-    Implements IFormatProvider
-    Implements ICustomFormatter
-    Public Function GetFormat(formatType As Type) As Object Implements IFormatProvider.GetFormat
-        Return Me
-    End Function
-    Public Function Format(format__1 As String, arg As Object, formatProvider As IFormatProvider) As String Implements ICustomFormatter.Format
-        Dim val As DateTime = DirectCast(arg, DateTime)
-        If val.Hour = 0 Then
-            Return val.ToShortDateString()
-        Else
-            Return val.ToString("H\h")
-        End If
-    End Function
-End Class
-
-````
-
-{{endregion}}  
+  
 
 Again you can just change the horizontal axis __LabelFormatProvider__ by using the corresponding property.  
 
 #### Assign DateTime Format Provider
 
-{{source=..\SamplesCS\ChartView\Customization\CustomLabels.cs region=PropertyChange2}} 
-{{source=..\SamplesVB\ChartView\Customization\CustomLabels.vb region=PropertyChange2}} 
+<snippet id='chartview-custom-labels-text-propertychange2-cs'/>
+<snippet id='chartview-custom-labels-text-propertychange2-vb'/>
 
-````C#
-DateTimeContinuousAxis dateTimeAxis = new DateTimeContinuousAxis();
-dateTimeAxis.LabelFormatProvider = new DateTimeFormatProvider();
 
-````
-````VB.NET
-Dim dateTimeAxis As New DateTimeContinuousAxis()
-dateTimeAxis.LabelFormatProvider = New DateTimeFormatProvider()
-
-````
-
-{{endregion}}
 
 >caption Figure 2: DateTime Format Provider
 ![WinForms RadChartView DateTime Format Provider](images/chartview-customization-custom-labels002.png)

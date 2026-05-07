@@ -23,19 +23,10 @@ The user is able to select the content inside **RadSyntaxEditor** in the same wa
 The UI selection is enabled by default. To enable or disable it use the **IsSelectionEnabled** property
 
 #### Enable/Disable selection
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=EnableSelection}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=EnableSelection}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-enableselection-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-enableselection-vb' />
 
-````C#
-this.radSyntaxEditor1.IsSelectionEnabled = true;
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.IsSelectionEnabled = True
-
-````
-
-{{endregion}} 
 
 ## Keyboard Combinations
 
@@ -61,21 +52,10 @@ You can modify the appearance of the selection in the control through the **Sele
 
 #### Customize the appearance of the selection
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=SelectionColor}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=SelectionColor}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-selectioncolor-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-selectioncolor-vb' />
 
-````C#
- this.radSyntaxEditor1.SyntaxEditorElement.SelectionFill = new SolidBrush(Color.FromArgb(95, Color.Red));
- this.radSyntaxEditor1.SyntaxEditorElement.SelectionStroke = new SolidBrush(Color.DarkRed);
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.SyntaxEditorElement.SelectionFill = New SolidBrush(Color.FromArgb(95, Color.Red))
-Me.RadSyntaxEditor1.SyntaxEditorElement.SelectionStroke = New SolidBrush(Color.DarkRed)
-
-````
-
-{{endregion}} 
 
 #### Figure 2: RadSyntaxEditor with custom selection color
 
@@ -85,19 +65,10 @@ Me.RadSyntaxEditor1.SyntaxEditorElement.SelectionStroke = New SolidBrush(Color.D
 
 Through the control's **Selection** property, you can programmatically manipulate the selection and get additional details for the selected span(s). The following example demonstrates how you can get the entire selection as a string through the **GetSelectedText** method.
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=ProgrammaticSelection}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=ProgrammaticSelection}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-programmaticselection-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-programmaticselection-vb' />
 
-````C#
-string selectedText = this.radSyntaxEditor1.SyntaxEditorElement.Selection.GetSelectedText();
 
-````
-````VB.NET
-Dim selectedText As String = Me.RadSyntaxEditor1.SyntaxEditorElement.Selection.GetSelectedText()
-
-````
-
-{{endregion}} 
 
 # See Also
 

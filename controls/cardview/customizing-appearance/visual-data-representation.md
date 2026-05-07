@@ -41,59 +41,10 @@ The collection with these __RadProperties__ is static and it it accessible, ther
 
 #### Formatting the Visual Item
 
-{{source=..\SamplesCS\CardView\CardviewCustomizingAppearance.cs region=CustomizeAppearance}} 
-{{source=..\SamplesVB\CardView\CardviewCustomizingAppearance.vb region=CustomizeAppearance}} 
+<snippet id='cardview-customizing-appearance-visual-data-representation-customizeappearance-cs'/>
+<snippet id='cardview-customizing-appearance-visual-data-representation-customizeappearance-vb'/>
 
-````C#
-public CardviewCustomizingAppearance()
-{
-    InitializeComponent();
-    CardListViewElement.ItemSynchronizationProperties.Add(LightVisualElement.VisibilityProperty);
-    this.CustomizeAppearance();
-}
-private void CustomizeAppearance()
-{
-    LayoutControlGroupItem group = this.radCardView1.CardTemplate.Items[0] as LayoutControlGroupItem;
-    CardViewItem item = (CardViewItem)group.Items[3];
-    item.TextAlignment = ContentAlignment.MiddleCenter;
-    item = (CardViewItem)group.Items[2];
-    item.ForeColor = Color.Green;
-    item = (CardViewItem)group.Items[1];
-    item.Font = new Font("Arial", 14, FontStyle.Bold);
-    item = (CardViewItem)group.Items[0];
-    item.DrawFill = true;
-    item.BackColor = Color.LightBlue;
-    item.GradientStyle = GradientStyles.Solid;
-    item = (CardViewItem)group.Items.Last;
-    item.Visibility = ElementVisibility.Hidden;
-}
 
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-    CardListViewElement.ItemSynchronizationProperties.Add(LightVisualElement.VisibilityProperty)
-    Me.CustomizeAppearance()
-End Sub
-Private Sub CustomizeAppearance()
-    Dim group As LayoutControlGroupItem = TryCast(Me.RadCardView1.CardTemplate.Items(0), LayoutControlGroupItem)
-    Dim item As CardViewItem = DirectCast(group.Items(3), CardViewItem)
-    item.TextAlignment = ContentAlignment.MiddleCenter
-    item = DirectCast(group.Items(2), CardViewItem)
-    item.ForeColor = Color.Green
-    item = DirectCast(group.Items(1), CardViewItem)
-    item.Font = New Font("Arial", 14, FontStyle.Bold)
-    item = DirectCast(group.Items(0), CardViewItem)
-    item.DrawFill = True
-    item.BackColor = Color.LightBlue
-    item.GradientStyle = GradientStyles.Solid
-    item = DirectCast(group.Items.Last, CardViewItem)
-    item.Visibility = ElementVisibility.Hidden
-End Sub
-
-````
-
-{{endregion}} 
 
 ## See Also
 

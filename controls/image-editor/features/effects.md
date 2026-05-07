@@ -25,20 +25,10 @@ Once you click the Sharpen button the sharpen dialog will appear and you will be
 
 This can be performed programmatically as well. The following snippet shows how you can apply the Sharpen effect.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Sharp}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Sharp}}
-````C#
-radImageEditor1.ImageEditorElement.Sharpen(100);
-radImageEditor1.ImageEditorElement.SaveState();
+<snippet id='image-editor-imageeditorfeatures-sharp-cs' />
+<snippet id='image-editor-imageeditorfeatures-sharp-vb' />
 
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.Sharpen(100)
-radImageEditor1.ImageEditorElement.SaveState()
 
-````
-
-{{endregion}}
 
 # Blur
 
@@ -48,20 +38,10 @@ Once you click the Blur button the blur dialog will appear and you will be able 
 
 This can be performed programmatically as well. The following snippet shows how you can apply the Blur effect.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Blur}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Blur}}
-````C#
-radImageEditor1.ImageEditorElement.Blur(100);
-radImageEditor1.ImageEditorElement.SaveState();
+<snippet id='image-editor-imageeditorfeatures-blur-cs' />
+<snippet id='image-editor-imageeditorfeatures-blur-vb' />
 
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.Blur(100)
-radImageEditor1.ImageEditorElement.SaveState()
 
-````
-
-{{endregion}}
 
 # See Also
 

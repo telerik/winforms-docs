@@ -20,51 +20,9 @@ The following code snippet demonstrates how to customize the `F1` button from th
 
  
 
-{{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=CustomizeKeys}} 
-{{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=CustomizeKeys}}
+<snippet id='virtual-keyboard-keyboardgettingstarted-customizekeys-cs' />
+<snippet id='virtual-keyboard-keyboardgettingstarted-customizekeys-vb' />
 
-````C#
-
-this.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended;
-ExtendedVirtualKeyboardLayoutPanel extendedKeyboard = radVirtualKeyboard1.MainLayoutPanel as ExtendedVirtualKeyboardLayoutPanel;
-VirtualKeyboardLayout functionsLayout = extendedKeyboard.FunctionButtonsLayout;
-VirtualKeyboardLayout numpadLayout = extendedKeyboard.NumpadButtonsLayout;
-Key key = functionsLayout.Rows[0].Keys[2] as Key;
-key.BackColor = Color.Yellow;
-key.BorderBoxStyle = BorderBoxStyle.SingleBorder;
-key.BorderColor = Color.Red;
-key.BorderGradientStyle = GradientStyles.Solid;
-key = numpadLayout.Rows[1].Keys[3] as Key;
-key.BackColor = Color.Fuchsia;
-key.BorderBoxStyle = BorderBoxStyle.SingleBorder;
-key.BorderColor = Color.Blue;
-key.BorderGradientStyle = GradientStyles.Solid;
-     
-
-````
-````VB.NET
-
-Me.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended
-Dim extendedKeyboard As ExtendedVirtualKeyboardLayoutPanel = TryCast(radVirtualKeyboard1.MainLayoutPanel, ExtendedVirtualKeyboardLayoutPanel)
-Dim functionsLayout As VirtualKeyboardLayout = extendedKeyboard.FunctionButtonsLayout
-Dim numpadLayout As VirtualKeyboardLayout = extendedKeyboard.NumpadButtonsLayout
-Dim key As Key = TryCast(functionsLayout.Rows(0).Keys(2), Key)
-key.BackColor = Color.Yellow
-key.BorderBoxStyle = BorderBoxStyle.SingleBorder
-key.BorderColor = Color.Red
-key.BorderGradientStyle = GradientStyles.Solid
-key = TryCast(numpadLayout.Rows(1).Keys(3), Key)
-key.BackColor = Color.Fuchsia
-key.BorderBoxStyle = BorderBoxStyle.SingleBorder
-key.BorderColor = Color.Blue
-key.BorderGradientStyle = GradientStyles.Solid
-   
-
-```` 
-
-{{endregion}}
-
- 
 
 
 # See Also

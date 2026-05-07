@@ -17,19 +17,9 @@ You can read more about this parsing logic [here]({%slug winforms/editors/masked
 
 #### Setting the value of RadDateTimePicker 
 
-{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=FreeFormDateTimeDateTimePicker}} 
-{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=FreeFormDateTimeDateTimePicker}} 
+<snippet id='editors-datetimepicker2-freeformdatetimedatetimepicker-cs' />
+<snippet id='editors-datetimepicker2-freeformdatetimedatetimepicker-vb' />
 
-````C#
-this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.MaskType = MaskType.FreeFormDateTime;
-
-````
-````VB.NET
-Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.MaskType = MaskType.FreeFormDateTime
-
-````
-
-{{endregion}} 
 
 
 # See Also

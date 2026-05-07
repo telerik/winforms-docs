@@ -20,19 +20,10 @@ The __Culture__ property can be set using the drop down list in the Properties 
 #### Setting CultureInfo in code 
 
 
-{{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=globalization}} 
-{{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=globalization}} 
+<snippet id='calendar-localization-globalization-properties-globalization-cs' />
+<snippet id='calendar-localization-globalization-properties-globalization-vb' />
 
-````C#
-radCalendar1.Culture = CultureInfo.GetCultureInfo("fr-FR");
 
-````
-````VB.NET
-RadCalendar1.Culture = CultureInfo.GetCultureInfo("fr-FR")
-
-````
-
-{{endregion}} 
 
 
 

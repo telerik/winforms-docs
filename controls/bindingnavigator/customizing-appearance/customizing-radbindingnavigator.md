@@ -25,20 +25,10 @@ You can access the control element by opening the [Element Hierarchy Editor]({%s
 
 The following snippet shows how you can access and change the properties of navigator buttons.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=changeButtonColor}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=changeButtonColor}}
-````C#
-radBindingNavigator1.BindingNavigatorElement.NextButton.BackColor = ColorTranslator.FromHtml("#e83737");
-radBindingNavigator1.BindingNavigatorElement.NextButton.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
+<snippet id='bindingnavigator-customizing-radbindingnavigator-changebuttoncolor-cs'/>
+<snippet id='bindingnavigator-customizing-radbindingnavigator-changebuttoncolor-vb'/>
 
-````
-````VB.NET
-radBindingNavigator1.BindingNavigatorElement.NextButton.BackColor = ColorTranslator.FromHtml("#e83737")
-radBindingNavigator1.BindingNavigatorElement.NextButton.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-
-````
-
-{{endregion}} 
+ 
 
 >caption The NextButton background is changed:
 
@@ -51,32 +41,10 @@ As of R2 2021 **RadBindingNavigator** can be customized to [use glyphs](https://
 
 The following example shows how you can apply glyphs for the buttons:
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=buttonGlyph}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=buttonGlyph}}
-````C#
-radBindingNavigator1.BindingNavigatorElement.ButtonDisplayStyle = BindingNavigatorButtonDisplayStyle.Glyph;
-radBindingNavigator1.BindingNavigatorElement.ButtonGlyphSize = 15;
+<snippet id='bindingnavigator-customizing-radbindingnavigator-buttonglyph-cs'/>
+<snippet id='bindingnavigator-customizing-radbindingnavigator-buttonglyph-vb'/>
 
-var font1 = ThemeResolutionService.GetCustomFont("TelerikWebUI");
-radBindingNavigator1.BindingNavigatorElement.AddNewButton.CustomFont = font1.Name;
-radBindingNavigator1.BindingNavigatorElement.DeleteButton.CustomFont = font1.Name;
-radBindingNavigator1.BindingNavigatorElement.AddNewButton.Text = "\ue817";
-radBindingNavigator1.BindingNavigatorElement.DeleteButton.Text = "\ue301";
-
-````
-````VB.NET
-radBindingNavigator1.BindingNavigatorElement.ButtonDisplayStyle = BindingNavigatorButtonDisplayStyle.Glyph
-radBindingNavigator1.BindingNavigatorElement.ButtonGlyphSize = 15
-
-Dim font1 = ThemeResolutionService.GetCustomFont("TelerikWebUI")
-radBindingNavigator1.BindingNavigatorElement.AddNewButton.CustomFont = font1.Name
-radBindingNavigator1.BindingNavigatorElement.DeleteButton.CustomFont = font1.Name
-radBindingNavigator1.BindingNavigatorElement.AddNewButton.Text = "\ue817"
-radBindingNavigator1.BindingNavigatorElement.DeleteButton.Text = "\ue301"
-
-````
-
-{{endregion}} 
+ 
 
 >caption The AddNewButton and DeleteButton are customized with custom glyphs:
 

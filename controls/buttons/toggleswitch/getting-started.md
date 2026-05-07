@@ -50,24 +50,8 @@ Adding __RadToggleSwitch__ programmatically: create a new instance of __RadToggl
 #### Adding RadToggleSwitch programmatically 
 
 
-{{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=AddProgrammatically}} 
-{{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=AddProgrammatically}} 
-
-````C#
-            
-Telerik.WinControls.UI.RadToggleSwitch toggleSwitch = new Telerik.WinControls.UI.RadToggleSwitch();
-this.Controls.Add(toggleSwitch);
-
-````
-````VB.NET
-Dim toggleSwitch As New Telerik.WinControls.UI.RadToggleSwitch()
-Me.Controls.Add(toggleSwitch)
-
-````
-
-{{endregion}} 
-
-
+<snippet id='buttons-toggleswitch-getting-started-addprogrammatically-cs' />
+<snippet id='buttons-toggleswitch-getting-started-addprogrammatically-vb' />
 
 >caption Figure 1: RadToggleSwitch added at run time
 

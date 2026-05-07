@@ -12,18 +12,10 @@ position: 0
 
 The Tabbed Form supports the standard Windows title bar style. This setting is controlled by the __AllowAero__ property.
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Aero}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Aero}}
-````C#
-this.AllowAero = false;
+<snippet id='tabbedform-tabbedformcode-aero-cs' />
+<snippet id='tabbedform-tabbedformcode-aero-vb' />
 
-````
-````VB.NET
-Me.AllowAero = False
 
-```` 
-
-{{endregion}} 
 
 
 >caption Figure 1: AllowAero = false on Windows 10

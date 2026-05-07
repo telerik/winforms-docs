@@ -17,21 +17,8 @@ RadGridView allows the user to select more than one item at a time from the disp
 
 In order to enable multiple row selection, after setting the MultiSelect property to true, you have to set the SelectionMode to GridViewSelectionMode.FullRowSelect:
 
-{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=multipleRowSelection}} 
-{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=multipleRowSelection}} 
-
-````C#
-radGridView1.MultiSelect = true;
-radGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect;
-
-````
-````VB.NET
-RadGridView1.MultiSelect = True
-RadGridView1.SelectionMode = GridViewSelectionMode.FullRowSelect
-
-````
-
-{{endregion}} 
+<snippet id='gridview-selection1-multiplerowselection-cs' />
+<snippet id='gridview-selection1-multiplerowselection-vb' />
 
 When these settings are applied, you have several options to make a multiple selection:
 
@@ -47,21 +34,8 @@ When these settings are applied, you have several options to make a multiple sel
 
 In order to enable multiple cell selection, after setting the MultiSelect property to true, you have to set the SelectionMode to GridViewSelectionMode.CellSelect:
 
-{{source=..\SamplesCS\GridView\Selection\Selection1.cs region=multipleCellSelection}} 
-{{source=..\SamplesVB\GridView\Selection\Selection1.vb region=multipleCellSelection}} 
-
-````C#
-radGridView1.MultiSelect = true;
-radGridView1.SelectionMode = GridViewSelectionMode.CellSelect;
-
-````
-````VB.NET
-RadGridView1.MultiSelect = True
-RadGridView1.SelectionMode = GridViewSelectionMode.CellSelect
-
-````
-
-{{endregion}} 
+<snippet id='gridview-selection1-multiplecellselection-cs' />
+<snippet id='gridview-selection1-multiplecellselection-vb' />
 
 Once you have applied these setting, the options for selection are:
 

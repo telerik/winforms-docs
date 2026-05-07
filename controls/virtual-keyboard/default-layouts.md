@@ -48,31 +48,10 @@ The following code snippet demonstrates how to add a **Z** button in the *Home* 
 
 #### Adding a key to the default Home layout
 
-{{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=AddKeyToHome}} 
-{{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=AddKeyToHome}}
+<snippet id='virtual-keyboard-keyboardgettingstarted-addkeytohome-cs' />
+<snippet id='virtual-keyboard-keyboardgettingstarted-addkeytohome-vb' />
 
-````C#
-radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended;
-ExtendedVirtualKeyboardLayoutPanel extendedLayoutPanel = radVirtualKeyboard1.MainLayoutPanel as ExtendedVirtualKeyboardLayoutPanel;
-int keysRowIndex = 2;
-int keyColSpan = 3;
-int KeyRowSpan = 1;
-extendedLayoutPanel.HomeButtonsLayout.Rows[keysRowIndex].Keys.Add(new Key((int)Keys.Z, KeyType.Normal, keyColSpan, KeyRowSpan));
-extendedLayoutPanel.ResetLayout();
 
-````
-````VB.NET
-Me.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended
-Dim extendedLayoutPanel As ExtendedVirtualKeyboardLayoutPanel = TryCast(radVirtualKeyboard1.MainLayoutPanel, ExtendedVirtualKeyboardLayoutPanel)
-Dim keysRowIndex As Integer = 2
-Dim keyColSpan As Integer = 3
-Dim KeyRowSpan As Integer = 1
-extendedLayoutPanel.HomeButtonsLayout.Rows(keysRowIndex).Keys.Add(New Key(CInt(Keys.Z), KeyType.Normal, keyColSpan, KeyRowSpan))
-extendedLayoutPanel.ResetLayout()
-
-```` 
-
-{{endregion}}
 
 # See Also
 

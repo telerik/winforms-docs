@@ -110,47 +110,19 @@ At the end the *Appointment Mapping Dialog* should look like the following scree
 
 #### Fill Data
 
-{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=codelessDatabinding}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=codelessDatabinding}} 
+<snippet id='scheduler-databindingwalkthrough-codelessdatabinding-cs' />
+<snippet id='scheduler-databindingwalkthrough-codelessdatabinding-vb' />
 
-````C#
-AppointmentsTableAdapter appointmentsAdapter = new AppointmentsTableAdapter();
-appointmentsAdapter.Fill(this.schedulerDataDataSet.Appointments);
-ResourcesTableAdapter resourcesAdapter = new ResourcesTableAdapter();
-resourcesAdapter.Fill(this.schedulerDataDataSet.Resources);
-AppointmentsResourcesTableAdapter appointmentsResourcesAdapter = new AppointmentsResourcesTableAdapter();
-appointmentsResourcesAdapter.Fill(this.schedulerDataDataSet.AppointmentsResources);
 
-````
-````VB.NET
-Dim appointmentsAdapter As New AppointmentsTableAdapter()
-appointmentsAdapter.Fill(Me.SchedulerDataDataSet.Appointments)
-Dim resourcesAdapter As New ResourcesTableAdapter()
-resourcesAdapter.Fill(Me.SchedulerDataDataSet.Resources)
-Dim appointmentsResourcesAdapter As New AppointmentsResourcesTableAdapter()
-appointmentsResourcesAdapter.Fill(Me.SchedulerDataDataSet.AppointmentsResources)
-
-````
-
-{{endregion}} 
 
 20\. Use the __Rebind__ method of the __SchedulerBindingDataSource__ object if the dataset is filled after applying the event provider data source:
 
 #### Rebind the Binding Source
 
-{{source=..\SamplesCS\Scheduler\DataBinding\DataBindingWalkthrough.cs region=Rebind}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\DataBindingWalkthrough.vb region=Rebind}} 
+<snippet id='scheduler-databindingwalkthrough-rebind-cs' />
+<snippet id='scheduler-databindingwalkthrough-rebind-vb' />
 
-````C#
-schedulerBindingDataSource1.Rebind();
 
-````
-````VB.NET
-SchedulerBindingDataSource1.Rebind()
-
-````
-
-{{endregion}} 
 
 21\. Run the project.
 

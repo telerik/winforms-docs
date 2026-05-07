@@ -68,50 +68,10 @@ Register RadToastNotificationManager and Show a Notification
 
 #### Show a Notification
 
-{{source=..\SamplesCS\ToastNotification\ToastNotificationGettingStarted.cs region=RegisterGettingStarted}} 
-{{source=..\SamplesVB\ToastNotification\ToastNotificationGettingStarted.vb region=RegisterGettingStarted}}
-
-````C#
-
-public ToastNotificationGettingsStarted()
-{
-    InitializeComponent();
-
-    this.radButton1.Click+=radButton1_Click;
-}
-
-private void radButton1_Click(object sender, EventArgs e)
-{
-    this.radToastNotificationManager1.ShowNotification(3);
-}
-
-protected override void OnClosed(EventArgs e)
-{
-    base.OnClosed(e);
-    this.radToastNotificationManager1.Unregister();
-}
+<snippet id='toast-notification-toastnotificationgettingstarted-registergettingstarted-cs' />
+<snippet id='toast-notification-toastnotificationgettingstarted-registergettingstarted-vb' />
 
 
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-
-    AddHandler Me.RadButton1.Click, AddressOf radButton1_Click
-End Sub
-
-Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Me.radToastNotificationManager1.ShowNotification(3)
-End Sub
-
-Protected Overrides Sub OnClosed(ByVal e As EventArgs)
-    MyBase.OnClosed(e)
-    Me.radToastNotificationManager1.Unregister()
-End Sub
-
-````
-
-{{endregion}}
 
 >important The screenshot below is captured under OS Windows 10. The toast notification templates may differ according to the operating system (and OS style theme) that shows them.
   

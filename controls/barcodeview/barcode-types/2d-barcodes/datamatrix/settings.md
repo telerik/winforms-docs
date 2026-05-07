@@ -42,29 +42,10 @@ Determines character encoding used to encode the barcode contents. By default it
 
 ## Example
 
-{{source=..\SamplesCS\Barcode\BarcodeSettings.cs region=DataMatrix}} 
-{{source=..\SamplesVB\Barcode\BarcodeSettings.vb region=DataMatrix}}
-
-````C#
-
-DataMatrix encoder = new DataMatrix();
-encoder.Encodation = Telerik.WinControls.UI.Barcode.Encodation.Ascii;
-encoder.SymbolSize = Telerik.WinControls.UI.Barcode.SymbolSize.SquareAuto;
-encoder.Encoding = Encoding.UTF8;
-this.radBarcodeView1.Symbology = encoder;
+<snippet id='barcodeview-datamatrix-settings-datamatrix-cs' />
+<snippet id='barcodeview-datamatrix-settings-datamatrix-vb' />
 
 
-````
-````VB.NET
-
-Dim encoder As DataMatrix = New DataMatrix()
-encoder.Encodation = Telerik.WinControls.UI.Barcode.Encodation.Ascii
-encoder.SymbolSize = Telerik.WinControls.UI.Barcode.SymbolSize.SquareAuto
-encoder.Encoding = Encoding.UTF8
-Me.radBarcodeView1.Symbology = encoder
-
-```` 
-{{endregion}}
 
 # See Also
 

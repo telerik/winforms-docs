@@ -17,19 +17,10 @@ You can easily set the __ThemeName__ of the __RadMessageBox__ by calling the __S
 
 #### Setting a theme in RadMessageBox 
 
-{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=SetThemeName}} 
-{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=SetThemeName}} 
+<snippet id='messagebox-messagebox1-setthemename-cs' />
+<snippet id='messagebox-messagebox1-setthemename-vb' />
 
-````C#
-RadMessageBox.SetThemeName("Desert");
-
-````
-````VB.NET
-RadMessageBox.SetThemeName("Desert")
-
-````
-
-{{endregion}} 
+ 
 
 ## Show method
 
@@ -91,46 +82,10 @@ The __Show__ method displays a __RadMessageBox__. It returns a __DialogResult__ 
 
 As of Q2 2014 __RadMessageBox__ supports details section. This section can be shown by just specifying the details text in the __Show__ method parameters:
   
-{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=details}} 
-{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=details}} 
+<snippet id='messagebox-messagebox1-details-cs' />
+<snippet id='messagebox-messagebox1-details-vb' />
 
-````C#
-RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text");
-
-````
-````VB.NET
-RadMessageBox.Show("Message", "Caption Text", MessageBoxButtons.AbortRetryIgnore, "Details Text")
-'#End Region
-End Sub
-s
- "LocalizationProvider"
-lass MyRadMessageLocalizationProvider
-Inherits RadMessageLocalizationProvider
-Public Overloads Overrides Function GetLocalizedString(ByVal id As String) As String
-Select Case id
-    Case RadMessageStringID.AbortButton
-        Return "Abbruch"
-    Case RadMessageStringID.CancelButton
-        Return "Löschen"
-    Case RadMessageStringID.IgnoreButton
-        Return "Ignorieren"
-    Case RadMessageStringID.NoButton
-        Return "Nein"
-    Case RadMessageStringID.OKButton
-        Return "OK"
-    Case RadMessageStringID.RetryButton
-        Return "Wiederholung"
-    Case RadMessageStringID.YesButton
-        Return "Ja"
-    Case Else
-        Return MyBase.GetLocalizedString(id)
-End Select
-End Function
-s
-
-````
-
-{{endregion}} 
+ 
  
 
 The result looks like this:

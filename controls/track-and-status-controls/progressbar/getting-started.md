@@ -48,37 +48,10 @@ In this tutorial, you will use a **RadProgressBar** to show the progress of a lo
           
 #### Handling the Timer Tick event
 
-{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=tick}} 
-{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=tick}} 
+<snippet id='track-and-status-controls-progressgettingstarted-tick-cs' />
+<snippet id='track-and-status-controls-progressgettingstarted-tick-vb' />
 
-````C#
-int ticks = 0;
-private void timer1_Tick(object sender, EventArgs e)
-{
-    ticks++;
-    radProgressBar1.Value1 = ticks;
-    if (ticks == 100)
-    {
-        timer1.Enabled = false;
-        ticks = 0;
-    }
-}
 
-````
-````VB.NET
-Private ticks As Integer = 0
-Private Sub timer1_Tick(ByVal sender As Object, ByVal e As EventArgs)
-    ticks += 1
-    RadProgressBar1.Value1 = ticks
-    If ticks = 100 Then
-        Timer1.Enabled = False
-        ticks = 0
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 6\. In the design view of the form, select the __RadButton__ control.
 
@@ -90,24 +63,10 @@ End Sub
 
 10\. Replace the automatically-generated event handler with this code:
 
-{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=click}} 
-{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=click}} 
+<snippet id='track-and-status-controls-progressgettingstarted-click-cs' />
+<snippet id='track-and-status-controls-progressgettingstarted-click-vb' />
 
-````C#
-void radButton1_Click(object sender, EventArgs e)
-{
-    timer1.Enabled = true;
-}
 
-````
-````VB.NET
-Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Timer1.Enabled = True
-End Sub
-
-````
-
-{{endregion}} 
 
 11\. In the design view of the form select the __RadProgressBar__ control.
 

@@ -25,65 +25,19 @@ This topic will explain you how to:
 
 The __Paragraph__ can be used only in the context of a [Section]({%slug winforms/richtexteditor-/document-elements/section%}) or a **TableCell** element. The section exposes a collection of **Blocks**, to which the paragraphs can be added.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\ParagraphCode.cs region=section}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\ParagraphCode.vb region=section}} 
+<snippet id='richtexteditor-paragraphcode-section-cs' />
+<snippet id='richtexteditor-paragraphcode-section-vb' />
 
-````C#
-            
-Section section = new Section();
-Paragraph paragraph = new Paragraph();          
-section.Blocks.Add(paragraph);
-RadDocument document = new RadDocument();
-document.Sections.Add(section);
-            
-this.radRichTextEditor1.Document = document;
 
-````
-````VB.NET
-Dim section As New Section()
-Dim paragraph As New Paragraph()    
-section.Blocks.Add(paragraph)
-Dim document As New RadDocument()
-document.Sections.Add(section)
-Me.radRichTextEditor1.Document = document
-
-````
-
-{{endregion}} 
 
 ## Add inline elements to a Paragraph
 
 To add inline elements such as **Span**, **HyperlinkRangeStart** and **End**, or **InlineImage** you have to use the **Inlines** collection of the **Paragraph**.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\ParagraphCode.cs region=inline}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\ParagraphCode.vb region=inline}} 
+<snippet id='richtexteditor-paragraphcode-inline-cs' />
+<snippet id='richtexteditor-paragraphcode-inline-vb' />
 
-````C#
-            
-Section section = new Section();
-Paragraph paragraph = new Paragraph();
-Span span = new Span("Span declared in code-behind");
-paragraph.Inlines.Add(span);
-section.Blocks.Add(paragraph);
-RadDocument document = new RadDocument();
-document.Sections.Add(section);
-    
-this.radRichTextEditor1.Document = document;
 
-````
-````VB.NET
-Dim section As New Section()
-Dim paragraph As New Paragraph()
-Dim span As New Span("Span declared in code-behind")
-paragraph.Inlines.Add(span)
-section.Blocks.Add(paragraph)
-Dim document As New RadDocument()
-document.Sections.Add(section)
-Me.radRichTextEditor1.Document = document
-
-````
-
-{{endregion}} 
 
 ## Customize the Paragraph
 

@@ -53,39 +53,10 @@ In the following example additional styling is applied to the default look of th
 
 #### Define Annotation
 
-{{source=..\SamplesCS\ChartView\Annotations\MarkedZones.cs region=CartesianMarkedZone}} 
-{{source=..\SamplesVB\ChartView\Annotations\MarkedZones.vb region=CartesianMarkedZone}} 
+<snippet id='chartview-marked-zone-cartesianmarkedzone-cs'/>
+<snippet id='chartview-marked-zone-cartesianmarkedzone-vb'/>
 
-````C#
-CartesianMarkedZoneAnnotation annotation = new CartesianMarkedZoneAnnotation();
-annotation.HorizontalFrom = 4;
-annotation.HorizontalTo = 9;
-annotation.VerticalFrom = 10;
-annotation.VerticalTo = 35;
-annotation.BackColor = Color.FromArgb(50, 37, 160, 219);
-annotation.BorderDashStyle = DashStyle.Custom;
-annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
-annotation.BorderColor = Color.Orange;
-annotation.BorderWidth = 3;
-this.radChartView1.Annotations.Add(annotation);
 
-````
-````VB.NET
-Dim annotation As New CartesianMarkedZoneAnnotation()
-annotation.HorizontalFrom = 4
-annotation.HorizontalTo = 9
-annotation.VerticalFrom = 10
-annotation.VerticalTo = 35
-annotation.BackColor = Color.FromArgb(50, 37, 160, 219)
-annotation.BorderDashStyle = DashStyle.[Custom]
-annotation.BorderDashPattern = New Single() {9, 3, 2, 4}
-annotation.BorderColor = Color.Orange
-annotation.BorderWidth = 3
-Me.radChartView1.Annotations.Add(annotation)
-
-````
-
-{{endregion}}
 
 The flexible design of the marked zone annotation allows the user to omit one (or more) of the four __HorizontalFrom/To__ and __VerticalFrom/To__ properties. The following table details the relationship between the specified properties and the occupied interval on the axis:
 
@@ -99,39 +70,10 @@ Here is the previous example with some of the settings commented
 
 #### Horizontally Defined Marked Zone
 
-{{source=..\SamplesCS\ChartView\Annotations\MarkedZones.cs region=CartesianMarkedZone2}} 
-{{source=..\SamplesVB\ChartView\Annotations\MarkedZones.vb region=CartesianMarkedZone2}} 
+<snippet id='chartview-marked-zone-cartesianmarkedzone2-cs'/>
+<snippet id='chartview-marked-zone-cartesianmarkedzone2-vb'/>
 
-````C#
-CartesianMarkedZoneAnnotation annotation = new CartesianMarkedZoneAnnotation();
-annotation.HorizontalFrom = 4;
-annotation.HorizontalTo = 9;
-//annotation.VerticalFrom = 10;
-//annotation.VerticalTo = 35;
-annotation.BackColor = Color.FromArgb(50, 37, 160, 219);
-//annotation.BorderDashStyle = DashStyle.Custom;
-//annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
-annotation.BorderColor = Color.Orange;
-annotation.BorderWidth = 1;
-this.radChartView1.Annotations.Add(annotation);
-
-````
-````VB.NET
-Dim annotation As New CartesianMarkedZoneAnnotation()
-annotation.HorizontalFrom = 4
-annotation.HorizontalTo = 9
-'annotation.VerticalFrom = 10;
-'annotation.VerticalTo = 35;
-annotation.BackColor = Color.FromArgb(50, 37, 160, 219)
-'annotation.BorderDashStyle = DashStyle.Custom;
-'annotation.BorderDashPattern = new float[] { 9, 3, 2, 4 };
-annotation.BorderColor = Color.Orange
-annotation.BorderWidth = 1
-Me.radChartView1.Annotations.Add(annotation)
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 3: Horizontally Defined Marked Zone
 ![WinForms RadChartView Horizontally Defined Marked Zone](images/chartview-annotations-markedzone-annotations003.png)
@@ -166,60 +108,10 @@ The example below adds a **PolarMarkedZoneAnnotation** to a **PolarPointSeries**
 
 #### Polar Marked Zone Settings
 
-{{source=..\SamplesCS\ChartView\Annotations\MarkedZones.cs region=PolarMarkedZone}} 
-{{source=..\SamplesVB\ChartView\Annotations\MarkedZones.vb region=PolarMarkedZone}}
-````C#
-this.radChartView1.AreaType = ChartAreaType.Polar;
-PolarPointSeries polarPointSeries = new PolarPointSeries();
-PolarDataPoint dataPoint = new PolarDataPoint();
-dataPoint.Value = 40;
-dataPoint.Angle = 25;
-polarPointSeries.DataPoints.Add(dataPoint);
-dataPoint = new PolarDataPoint();
-dataPoint.Value = 25;
-dataPoint.Angle = 45;
-polarPointSeries.DataPoints.Add(dataPoint);
-this.radChartView1.AreaType = ChartAreaType.Polar;
-this.radChartView1.Series.Add(polarPointSeries);
-PolarMarkedZoneAnnotation annotation = new PolarMarkedZoneAnnotation();
-annotation.BorderWidth = 4;
-annotation.BackColor = Color.FromArgb(100, Color.LightBlue);
-annotation.BorderColor = Color.Red;
-annotation.PolarFrom = 20;
-annotation.PolarTo = 30;
-annotation.RadialFrom = 30;
-annotation.RadialTo = 60;
-this.radChartView1.Annotations.Add(annotation);
+<snippet id='chartview-marked-zone-polarmarkedzone-cs'/>
+<snippet id='chartview-marked-zone-polarmarkedzone-vb'/>
 
-````
-````VB.NET
-Me.radChartView1.AreaType = ChartAreaType.Polar
-Dim polarPointSeries As PolarPointSeries = New PolarPointSeries()
-Dim dataPoint As PolarDataPoint = New PolarDataPoint()
-dataPoint.Value = 40
-dataPoint.Angle = 25
-polarPointSeries.DataPoints.Add(dataPoint)
-dataPoint = New PolarDataPoint()
-dataPoint.Value = 25
-dataPoint.Angle = 45
-polarPointSeries.DataPoints.Add(dataPoint)
-Me.radChartView1.AreaType = ChartAreaType.Polar
-Me.radChartView1.Series.Add(polarPointSeries)
-Dim annotation As PolarMarkedZoneAnnotation = New PolarMarkedZoneAnnotation()
-annotation.BorderWidth = 4
-annotation.BackColor = Color.FromArgb(100, Color.LightBlue)
-annotation.BorderColor = Color.Red
-annotation.PolarFrom = 20
-annotation.PolarTo = 30
-annotation.RadialFrom = 30
-annotation.RadialTo = 60
-Me.radChartView1.Annotations.Add(annotation)
-
-```` 
-
-
-
-{{endregion}} 
+ 
 
 # See Also
 

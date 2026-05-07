@@ -121,9 +121,6 @@ You can bind **RadDomainUpDown** programmatically as well. The following code sn
 
 
 ````
-
-{{endregion}} 
- 
 >caption Figure: 4 RadDomainUpDown bound at Run time
 
 ![WinForms RadDomainUpDown Bound at Run Time](images/domainupdown-populating-with-data-data-binding004.gif)

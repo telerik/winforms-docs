@@ -35,43 +35,17 @@ More often than not, you would only need to use objects of type **HyperlinkInfo*
 
 For example, a link to our site can be inserted in the document programmatically as follows:
 
-{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=insert}} 
-{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=insert}} 
+<snippet id='richtexteditor-hyperlinkcode-insert-cs' />
+<snippet id='richtexteditor-hyperlinkcode-insert-vb' />
 
-````C#
-HyperlinkInfo info = new HyperlinkInfo()
-{
-    NavigateUri = "http://www.telerik.com",
-    Target = HyperlinkTargets.Blank,
-    IsAnchor = false
-};
-this.radRichTextEditor1.InsertHyperlink(info, "RichTextBox demo");
-
-````
-````VB.NET
-Dim info As New HyperlinkInfo() With {.NavigateUri = "http://www.telerik.com", .Target = HyperlinkTargets.Blank, .IsAnchor = False}
-Me.radRichTextEditor1.InsertHyperlink(info, "RichTextBox demo")
-
-````
-
-{{endregion}} 
 
 
 A link to a bookmark is inserted by specifying the bookmark's name as **NavigateUri** and setting the **IsAnchor** property to *true*:
 
-{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=remove}} 
-{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=remove}} 
+<snippet id='richtexteditor-hyperlinkcode-remove-cs' />
+<snippet id='richtexteditor-hyperlinkcode-remove-vb' />
 
-````C#
-this.radRichTextEditor1.RemoveHyperlink();
 
-````
-````VB.NET
-Me.radRichTextEditor1.RemoveHyperlink()
-
-````
-
-{{endregion}} 
 
 You can also use the overloaded methods for inserting a hyperlink:
 
@@ -85,19 +59,10 @@ You can also use the overloaded methods for inserting a hyperlink:
 
 Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking:
 
-{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=remove}} 
-{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=remove}} 
+<snippet id='richtexteditor-hyperlinkcode-remove-cs' />
+<snippet id='richtexteditor-hyperlinkcode-remove-vb' />
 
-````C#
-this.radRichTextEditor1.RemoveHyperlink();
 
-````
-````VB.NET
-Me.radRichTextEditor1.RemoveHyperlink()
-
-````
-
-{{endregion}} 
 
 ## HyperlinkRangeStart and HyperlinkRangeEnd
 
@@ -105,70 +70,10 @@ Me.radRichTextEditor1.RemoveHyperlink()
         
 Here is an example that creates a document with a hyperlink spanning several paragraphs, including an image in one of the paragraphs:
 
-{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=startend}} 
-{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=startend}} 
+<snippet id='richtexteditor-hyperlinkcode-startend-cs' />
+<snippet id='richtexteditor-hyperlinkcode-startend-vb' />
 
-````C#
-HyperlinkRangeStart hyperlinkStart = new HyperlinkRangeStart();
-HyperlinkRangeEnd hyperlinkEnd = new HyperlinkRangeEnd();
-hyperlinkEnd.PairWithStart(hyperlinkStart);
-HyperlinkInfo hyperlinkInfo = new HyperlinkInfo() { NavigateUri = "http://telerik.com", Target = HyperlinkTargets.Blank };
-hyperlinkStart.HyperlinkInfo = hyperlinkInfo;
-RadDocument document = new RadDocument();
-Section section = new Section();
-Paragraph paragraph = new Paragraph();
-Span spanBefore = new Span("Text before the image ");
-ImageInline image;
-using (MemoryStream ms = new MemoryStream())
-{
-    System.Drawing.Image.FromFile(@"C:\logo.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-    image = new ImageInline(ms, new Telerik.WinControls.RichTextEditor.UI.Size(25, 25), "png");
-}
-Span spanAfter = new Span(" and some text after the image");
-paragraph.Inlines.Add(hyperlinkStart);
-paragraph.Inlines.Add(spanBefore);
-paragraph.Inlines.Add(image);
-paragraph.Inlines.Add(spanAfter);
-section.Blocks.Add(paragraph);
-Paragraph anotherParagraph = new Paragraph();
-anotherParagraph.Inlines.Add(new Span("Another paragraph here and still in hyperlink"));
-anotherParagraph.Inlines.Add(hyperlinkEnd);
-section.Blocks.Add(anotherParagraph);
-document.Sections.Add(section);
-this.radRichTextEditor1.Document = document;
 
-````
-````VB.NET
-Dim hyperlinkStart As New HyperlinkRangeStart()
-Dim hyperlinkEnd As New HyperlinkRangeEnd()
-hyperlinkEnd.PairWithStart(hyperlinkStart)
-Dim hyperlinkInfo As New HyperlinkInfo() With {.NavigateUri = "http://telerik.com", .Target = HyperlinkTargets.Blank}
-hyperlinkStart.HyperlinkInfo = hyperlinkInfo
-Dim document As New RadDocument()
-Dim section As New Section()
-Dim paragraph As New Paragraph()
-Dim spanBefore As New Span("Text before the image ")
-Dim image As ImageInline
-Using ms As New MemoryStream()
-    System.Drawing.Image.FromFile("C:\logo.png").Save(ms, System.Drawing.Imaging.ImageFormat.Png)
-    image = New ImageInline(ms, New Telerik.WinControls.RichTextEditor.UI.Size(25, 25), "png")
-End Using
-Dim spanAfter As New Span(" and some text after the image")
-paragraph.Inlines.Add(hyperlinkStart)
-paragraph.Inlines.Add(spanBefore)
-paragraph.Inlines.Add(image)
-paragraph.Inlines.Add(spanAfter)
-section.Blocks.Add(paragraph)
-Dim anotherParagraph As New Paragraph()
-anotherParagraph.Inlines.Add(New Span("Another paragraph here and still in hyperlink"))
-anotherParagraph.Inlines.Add(hyperlinkEnd)
-section.Blocks.Add(anotherParagraph)
-document.Sections.Add(section)
-Me.radRichTextEditor1.Document = document
-
-````
-
-{{endregion}} 
 
 The result (`Ctrl` + `Click` to follow):
 
@@ -178,32 +83,10 @@ You will also need to use **HyperlinkRangeStart** and **HyperlinkRangeEnd**, if 
         
 For instance, here is how you can delete all hyperlinks in the document and replace them with some text:
 
-{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=delete}} 
-{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=delete}} 
+<snippet id='richtexteditor-hyperlinkcode-delete-cs' />
+<snippet id='richtexteditor-hyperlinkcode-delete-vb' />
 
-````C#
-IEnumerable<HyperlinkRangeStart> links = this.radRichTextEditor1.Document.EnumerateChildrenOfType<HyperlinkRangeStart>();
-foreach (HyperlinkRangeStart link in links)
-{
-    this.radRichTextEditor1.Document.CaretPosition.MoveToInline(link.FirstLayoutBox as Telerik.WinForms.Documents.Layout.InlineLayoutBox, 0);
-    this.radRichTextEditor1.Document.Selection.SelectAnnotationRange(link);
-    this.radRichTextEditor1.Delete(false);
-    this.radRichTextEditor1.Insert("Removed hyperlink");
-}
 
-````
-````VB.NET
-Dim links As IEnumerable(Of HyperlinkRangeStart) = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of HyperlinkRangeStart)()
-For Each link As HyperlinkRangeStart In links
-    Me.radRichTextEditor1.Document.CaretPosition.MoveToInline(TryCast(link.FirstLayoutBox, Telerik.WinForms.Documents.Layout.InlineLayoutBox), 0)
-    Me.radRichTextEditor1.Document.Selection.SelectAnnotationRange(link)
-    Me.radRichTextEditor1.Delete(False)
-    Me.radRichTextEditor1.Insert("Removed hyperlink")
-Next link
-
-````
-
-{{endregion}} 
 
 ## Other Customization Options
 
@@ -224,49 +107,9 @@ With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks
 
 Here is an example of using the HyperlinkClicked event prompting that the clicked hyperlink might be unsafe and allows to cancel the navigation process upon receiving the end user confirmation:
 
-{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=HyperlinkClickedEvent}} 
-{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=HyperlinkClickedEvent}} 
+<snippet id='richtexteditor-hyperlinkcode-hyperlinkclickedevent-cs' />
+<snippet id='richtexteditor-hyperlinkcode-hyperlinkclickedevent-vb' />
 
-````C#
-void radRichTextEditor1_HyperlinkClicked(object sender, HyperlinkClickedEventArgs e)
-{
-   var link = e.URL;
-    if (link.EndsWith("exe"))
-    { 
-        e.Handled = true; MessageBoxResult Result = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question);
-        if (Result == MessageBoxResult.Yes)
-        {
-            Process.Start(new ProcessStartInfo()
-            {
-                FileName = link,
-                UseShellExecute = true
-            });
-        }
-    }
-}
-
-
-````
-````VB.NET
-Private Sub radRichTextEditor1_HyperlinkClicked(ByVal sender As Object, ByVal e As HyperlinkClickedEventArgs)
-    Dim link = e.URL
-
-    If link.EndsWith("exe") Then
-        e.Handled = True
-        Dim Result As MessageBoxResult = System.Windows.MessageBox.Show("You are about to open an executable file. Do you want to proceed", "Possible unsafe link", MessageBoxButton.YesNo, MessageBoxImage.Question)
-        If Result = MessageBoxResult.Yes Then
-            Process.Start(New ProcessStartInfo() With {
-                .FileName = link,
-                .UseShellExecute = True
-            })
-        End If
-    End If
-End Sub
-
-
-````
-
-{{endregion}} 
 
 
 ### HyperlinkNavigationMode
@@ -278,20 +121,9 @@ The __HyperlinkNavigationMode__ allows you to control what action should trigger
 
 Below is demonstrated how to change the default hyperlink navigation mode:
 
-{{source=..\SamplesCS\RichTextEditor\Features\HyperlinkCode.cs region=HyperlinkMode}} 
-{{source=..\SamplesVB\RichTextEditor\Features\HyperlinkCode.vb region=HyperlinkMode}} 
+<snippet id='richtexteditor-hyperlinkcode-hyperlinkmode-cs' />
+<snippet id='richtexteditor-hyperlinkcode-hyperlinkmode-vb' />
 
-````C#
-
-this.radRichTextEditor1.HyperlinkNavigationMode = Telerik.WinForms.Documents.UI.HyperlinkNavigationMode.Click;
-
-````
-````VB.NET
-Me.radRichTextEditor1.HyperlinkNavigationMode = Telerik.WinForms.Documents.UI.HyperlinkNavigationMode.Click
-
-````
-
-{{endregion}} 
 
 
 ## See Also

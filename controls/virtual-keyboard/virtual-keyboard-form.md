@@ -25,38 +25,11 @@ The following tutorial will demonstrate how to associate a **RadVirtualKeyboardF
 
 #### Associated grid editor with RadVirtualKeyboardForm
 
-{{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=AssociatedGridEditor}} 
-{{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=AssociatedGridEditor}}
+<snippet id='virtual-keyboard-keyboardgettingstarted-associatedgrideditor-cs' />
+<snippet id='virtual-keyboard-keyboardgettingstarted-associatedgrideditor-vb' />
 
-````C#
 
-        private void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
-        {
-            RadTextBoxEditor editor = e.ActiveEditor as RadTextBoxEditor;
-            if (editor != null)
-            {
-                RadTextBoxEditorElement element = editor.EditorElement as RadTextBoxEditorElement;
-                this.radVirtualKeyboardForm1.SetAssociatedKeyboardType(element.TextBoxItem.HostedControl, AssociatedKeyboardType.AssociatedControl);
-            }
-        }
 
-````
-````VB.NET
-
-    Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
-        Dim editor As RadTextBoxEditor = TryCast(e.ActiveEditor, RadTextBoxEditor)
-
-        If editor IsNot Nothing Then
-            Dim element As RadTextBoxEditorElement = TryCast(editor.EditorElement, RadTextBoxEditorElement)
-            Me.RadVirtualKeyboardForm1.SetAssociatedKeyboardType(element.TextBoxItem.HostedControl, AssociatedKeyboardType.AssociatedControl)
-        End If
-    End Sub
-
-```` 
-
-{{endregion}}
-
- 
 >note It is possible to associate a **RadTextBox** or any input control with the **RadVirtualKeyboardForm** by setting the **AssociatedKeyboardType** property of the respective input control. In other words, set the RadTextBox.**AssociatedKeyboardType** property to *AssociatedControl*. Thus, the **RadTextBox** control is associated with the virtual keyboard. When the control gets focus, the keyboard will be shown.
 
 # Methods

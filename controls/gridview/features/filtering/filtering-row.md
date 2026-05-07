@@ -19,19 +19,8 @@ You can hide the operator text of the filter cells by setting the __ShowFilterCe
 
 ## Hide Operator Text
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=filterOperatorText}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=filterOperatorText}} 
-
-````C#
-this.radGridView1.MasterTemplate.ShowFilterCellOperatorText = false;
-
-````
-````VB.NET
-Me.RadGridView1.MasterTemplate.ShowFilterCellOperatorText = False
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-filteroperatortext-cs' />
+<snippet id='gridview-filtering-filteroperatortext-vb' />
 
 ![WinForms RadGridView gridview-filtering-filtering-row 002](images/gridview-filtering-filtering-row002.png)
 
@@ -39,19 +28,8 @@ You can also hide the entire __GridFilterRowElement__: 
 
 ## Hide filter row
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=hidingTheFilterRow}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=hidingTheFilterRow}} 
-
-````C#
-this.radGridView1.ShowFilteringRow = false;
-
-````
-````VB.NET
-Me.RadGridView1.ShowFilteringRow = False
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-hidingthefilterrow-cs' />
+<snippet id='gridview-filtering-hidingthefilterrow-vb' />
 
 You can still add [FilterDescriptors]({%slug winforms/gridview/filtering/setting-filters-programmatically-(simple-descriptors)%}) programmatically when the __GridFilterRowElement__ is hidden.
 

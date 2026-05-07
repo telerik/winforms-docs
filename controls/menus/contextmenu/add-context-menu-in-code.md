@@ -38,31 +38,26 @@ This article demonstrates how you can add __RadContextMenu__ in the code and att
 
 1\.	Adding a __RadContextMenu__ at runtime. To programmatically add a __RadContextMenu__ to a form, create a new instance of a __RadContextMenu__
 
-{{source=..\SamplesCS\Menus\ContextMenu\ContextMenuCode2.cs region=AddMenu}} 
-{{source=..\SamplesVB\Menus\ContextMenu\ContextMenuCode2.vb region=AddMenu}} 
+<snippet id='menus-contextmenucode2-addmenu-cs' />
+<snippet id='menus-contextmenucode2-addmenu-vb' />
 
 
-{{endregion}} 
 
 2\. Add  __RadMenuItems__ to __RadContextMenu__.
 
 
-{{source=..\SamplesCS\Menus\ContextMenu\ContextMenuCode2.cs region=AddItems}} 
-{{source=..\SamplesVB\Menus\ContextMenu\ContextMenuCode2.vb region=AddItems}} 
+<snippet id='menus-contextmenucode2-additems-cs' />
+<snippet id='menus-contextmenucode2-additems-vb' />
 
 
-
-{{endregion}} 
 
 3\.	Subscribe to __МouseClick__ event of the control and call the __RadContextMenu.Show()__ method:
 
 
-{{source=..\SamplesCS\Menus\ContextMenu\ContextMenuCode2.cs region=AttachToControl}} 
-{{source=..\SamplesVB\Menus\ContextMenu\ContextMenuCode2.vb region=AttachToControl}} 
+<snippet id='menus-contextmenucode2-attachtocontrol-cs' />
+<snippet id='menus-contextmenucode2-attachtocontrol-vb' />
 
 
-
-{{endregion}} 
 
 4\.	Here is the result:
 

@@ -18,29 +18,11 @@ You can insert text programmatically at concrete position by using the __Insert_
 
 #### Using the Insert method.
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=insert}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=insert}} 
+<snippet id='editors-autocompletebox-insert-cs' />
+<snippet id='editors-autocompletebox-insert-vb' />
 
-````C#
-private void Insert()
-{
-    this.radAutoCompleteBox1.Text = "USA;";
-    this.radAutoCompleteBox1.CaretIndex = 0;
-    this.radAutoCompleteBox1.Insert("Canada;");
-}
 
-````
-````VB.NET
-Private Sub Insert()
-    Me.RadAutoCompleteBox1.Text = "USA;"
-    Me.RadAutoCompleteBox1.CaretIndex = 0
-    Me.RadAutoCompleteBox1.Insert("Canada;")
-End Sub
 
-````
-
-{{endregion}} 
- 
 >caption Figure 1: Inserting text.
 
 ![WinForms RadAutoCompleteBox Inserting text](images/editors-autocompletebox-text-editing001.png)
@@ -49,27 +31,11 @@ Alternatively, you can insert text at the end of the __RadAutoCompleteBox__ cont
 
 #### Using the AppendText method. 
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=Append}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Append}} 
+<snippet id='editors-autocompletebox-append-cs' />
+<snippet id='editors-autocompletebox-append-vb' />
 
-````C#
-private void Append()
-{
-    this.radAutoCompleteBox1.Text = "IT Department;";
-    this.radAutoCompleteBox1.AppendText("Marketing Team;");
-}
 
-````
-````VB.NET
-Private Sub Append()
-    Me.RadAutoCompleteBox1.Text = "IT Department;"
-    Me.RadAutoCompleteBox1.AppendText("Marketing Team;")
-End Sub
 
-````
-
-{{endregion}} 
- 
 >caption Figure 2: The text is appended at the end.
 
 ![WinForms RadAutoCompleteBox Text is Appended at the End](images/editors-autocompletebox-text-editing002.png)
@@ -78,29 +44,11 @@ You can delete the selected text or character at the caret position by using the
 
 #### Using the Delete method.
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=Delete}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=Delete}} 
+<snippet id='editors-autocompletebox-delete-cs' />
+<snippet id='editors-autocompletebox-delete-vb' />
 
-````C#
-private void DeleteText()
-{
-    this.radAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;";
-    this.radAutoCompleteBox1.Select(0, 8);
-    this.radAutoCompleteBox1.Delete();
-}
 
-````
-````VB.NET
-Private Sub DeleteText()
-    Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
-    Me.RadAutoCompleteBox1.[Select](0, 8)
-    Me.RadAutoCompleteBox1.Delete()
-End Sub
 
-````
-
-{{endregion}} 
- 
 >caption Figure 3: The firs word is deleted. 
 
 ![WinForms RadAutoCompleteBox The Firs Word Deleted](images/editors-autocompletebox-text-editing003.png)
@@ -109,24 +57,10 @@ Each editing operation raises the __TextChanging__ and __TextChanged__ events. N
 
 #### Prevent deleting a tokenized text blocks in RadAutoCompleteBox.
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=PreventDeleteOfTokens}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=PreventDeleteOfTokens}} 
+<snippet id='editors-autocompletebox-preventdeleteoftokens-cs' />
+<snippet id='editors-autocompletebox-preventdeleteoftokens-vb' />
 
-````C#
-void radAutoCompleteBox1_TextChanging(object sender, Telerik.WinControls.TextChangingEventArgs e)
-{
-    e.Cancel = string.IsNullOrEmpty(e.NewValue) && e.OldValue.Contains(this.radAutoCompleteBox1.Delimiter.ToString());
-}
 
-````
-````VB.NET
-Private Sub radAutoCompleteBox1_TextChanging(sender As Object, e As Telerik.WinControls.TextChangingEventArgs)
-    e.Cancel = String.IsNullOrEmpty(e.NewValue) AndAlso e.OldValue.Contains(Me.RadAutoCompleteBox1.Delimiter.ToString())
-End Sub
-
-````
-
-{{endregion}}  
 
 The code above prevents deleting a tokenized text blocks in RadAutoCompleteBox.
 

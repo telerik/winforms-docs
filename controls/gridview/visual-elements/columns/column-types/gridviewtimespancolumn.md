@@ -20,25 +20,8 @@ The __FormatString__ property sets the format of the TimeSpan when the cell is n
 
 #### Formatting the TimeSpan.
 
-{{source=..\SamplesCS\GridView\Columns\GridViewTimeSpanColumn1.cs region=addTimeSpanColumn}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewTimeSpanColumn1.vb region=addTimeSpanColumn}} 
-
-````C#
-GridViewTimeSpanColumn gridViewTimeSpanColumn1 = new GridViewTimeSpanColumn();
-gridViewTimeSpanColumn1.FormatString = "hh-mm-ss";
-gridViewTimeSpanColumn1.Format = "mm:ss";
-this.radGridView1.Columns.Add(gridViewTimeSpanColumn1);
-
-````
-````VB.NET
-Dim gridViewTimeSpanColumn1 As GridViewTimeSpanColumn = New GridViewTimeSpanColumn()
-gridViewTimeSpanColumn1.FormatString = "hh-mm-ss"
-gridViewTimeSpanColumn1.Format = "mm:ss"
-Me.RadGridView1.Columns.Add(gridViewTimeSpanColumn1)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewtimespancolumn1-addtimespancolumn-cs' />
+<snippet id='gridview-gridviewtimespancolumn1-addtimespancolumn-vb' />
 
 >caption Figure 2: Formatted editor's value
 
@@ -46,34 +29,8 @@ Me.RadGridView1.Columns.Add(gridViewTimeSpanColumn1)
 
 There are two ways to change the TimeSpan format when the cell enters edit mode - either by setting the above mentioned **Format** property of the column or by handling the RadGridView.**CellEditorInitialized** event and applying the desired format to the **GridTimeSpanPickerEditor**. It is fired when the initialization of an editor is performed:  
 
-{{source=..\SamplesCS\GridView\Columns\GridViewTimeSpanColumn1.cs region=changeEditorFormat}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewTimeSpanColumn1.vb region=changeEditorFormat}} 
-
-````C#
-        
-private void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
-{
-    GridTimeSpanPickerEditor editor = e.ActiveEditor as GridTimeSpanPickerEditor;
-    if (editor != null)
-    {
-        RadTimeSpanPickerElement element = editor.EditorElement as RadTimeSpanPickerElement;
-        element.Format = "mm:ss";
-    }
-}
-
-````
-````VB.NET
-Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
-    Dim editor As GridTimeSpanPickerEditor = TryCast(e.ActiveEditor, GridTimeSpanPickerEditor)
-    If editor IsNot Nothing Then
-        Dim element As RadTimeSpanPickerElement = TryCast(editor.EditorElement, RadTimeSpanPickerElement)
-        element.Format = "mm:ss"
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewtimespancolumn1-changeeditorformat-cs' />
+<snippet id='gridview-gridviewtimespancolumn1-changeeditorformat-vb' />
 
 >important If we do not use the **CellEditorInitialized** event, but the **CellBeginEdit** event (which is fired before **CellEditorInitialized**), our **Format** setting will be overridden by the initialization of the editor. 
 

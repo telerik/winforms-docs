@@ -16,41 +16,17 @@ To start recording a video you can press the "Start recording" button or call th
 
 To enable video recording set the **RecordingFilePath** property of the control. This is the path to the video where the recording will be stored.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=Video}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=Video}} 
+<snippet id='webcam-webcamgettingstarted-video-cs' />
+<snippet id='webcam-webcamgettingstarted-video-vb' />
 
-````C#
 
-            radWebCam1.RecordingFilePath = path + @"\Video1.mp4";
-            radWebCam1.StartRecording();
-
-````
-````VB.NET
-
-        radWebCam1.RecordingFilePath = path + "\Video1.mp4"
-        radWebCam1.StartRecording()      
-
-````
-
-{{endregion}} 
 
 To stop recording, press the "Stop" button or call the **StopRecording** method of **RadWebCam**. This will stop the recording and close the file stream.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=EndRecording}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=EndRecording}} 
+<snippet id='webcam-webcamgettingstarted-endrecording-cs' />
+<snippet id='webcam-webcamgettingstarted-endrecording-vb' />
 
-````C#
 
-        radWebCam1.StopRecording();
-
-````
-````VB.NET
-
-        radWebCam1.StopRecording()      
-
-````
-
-{{endregion}} 
 
 You can indicate that the camera control is recording via its **IsRecording** property.
 
@@ -62,21 +38,10 @@ The control allows you to replace the default elapsed date-time format. To do th
 
 ![WinForms RadWebcam Elapsed Time](images/webcam-recording-video002.png)
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=EllapsedTimeFormat}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=EllapsedTimeFormat}} 
+<snippet id='webcam-webcamgettingstarted-ellapsedtimeformat-cs' />
+<snippet id='webcam-webcamgettingstarted-ellapsedtimeformat-vb' />
 
-````C#
 
-            radWebCam1.VideoRecordingElapsedTimeFormat = "ss";
-
-````
-````VB.NET
-
-              radWebCam1.VideoRecordingElapsedTimeFormat = "ss"
-
-````
-
-{{endregion}} 
 
 ## See Also
 * [Commands]({%slug webcam-commands%})

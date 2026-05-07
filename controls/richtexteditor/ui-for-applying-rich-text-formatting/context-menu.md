@@ -21,24 +21,10 @@ The context menu is enabled by default. You can control this with the __IsContex
 
 #### Disabling the context menu
 
-{{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=DisableContextMenu}} 
-{{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=DisableContextMenu}}
+<snippet id='richtexteditor-contextmenucode-disablecontextmenu-cs' />
+<snippet id='richtexteditor-contextmenucode-disablecontextmenu-vb' />
 
-````C#
-private void DisableContextMenu()
-{
-    this.radRichTextEditor1.IsContextMenuEnabled = false;
-}
 
-````
-````VB.NET
-Private Sub DisableContextMenu()
-    Me.RadRichTextEditor1.IsContextMenuEnabled = False
-End Sub
-
-````
-
-{{endregion}} 
 
 The menu is accessible through the __ContextMenu__ property of __RadRichTextEditor__ control.
 
@@ -58,66 +44,17 @@ The first one involves subscribing to the __Showing__ event of the default __Con
 
 #### Subscribe to Event
 
-{{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=SubscribeShowingEvent}} 
-{{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=SubscribeShowingEvent}}
-````C#
-Telerik.WinControls.RichTextEditor.UI.ContextMenu contextMenu = (Telerik.WinControls.RichTextEditor.UI.ContextMenu)this.radRichTextEditor1.RichTextBoxElement.ContextMenu;
-contextMenu.Showing += this.ContextMenu_Showing;
+<snippet id='richtexteditor-contextmenucode-subscribeshowingevent-cs' />
+<snippet id='richtexteditor-contextmenucode-subscribeshowingevent-vb' />
 
-````
-````VB.NET
-Dim contextMenu As Telerik.WinControls.RichTextEditor.UI.ContextMenu = DirectCast(Me.RadRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
-AddHandler contextMenu.Showing, AddressOf Me.ContextMenu_Showing
 
-```` 
-
-{{endregion}} 
 
 #### Handle Event
 
-{{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=HandleShowingEvent}} 
-{{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=HandleShowingEvent}}
+<snippet id='richtexteditor-contextmenucode-handleshowingevent-cs' />
+<snippet id='richtexteditor-contextmenucode-handleshowingevent-vb' />
 
-````C#
-private void ContextMenu_Showing(object sender, Telerik.WinForms.RichTextEditor.RichTextBoxUI.Menus.ContextMenuEventArgs e)
-{
-    if (!this.radRichTextEditor1.Document.Selection.IsEmpty)
-    {
-        RadMenuItem menuItem = new RadMenuItem()
-        {
-            Text = "Change selection foreground"
-        };
-        menuItem.Click += this.OnChangeSelectionForeground;
-        ContextMenuGroup contextMenuGroup = new ContextMenuGroup();
-        contextMenuGroup.Add(menuItem);
-        e.ContextMenuGroupCollection.Add(contextMenuGroup);
-    }
-}
-private void OnChangeSelectionForeground(object sender, EventArgs e)
-{
-    this.radRichTextEditor1.ChangeTextForeColor(Colors.Red);
-}
 
-````
-````VB.NET
-Private Sub ContextMenu_Showing(sender As Object, e As Telerik.WinForms.RichTextEditor.RichTextBoxUI.Menus.ContextMenuEventArgs)
-    If Not Me.RadRichTextEditor1.Document.Selection.IsEmpty Then
-        Dim menuItem As New RadMenuItem() With {
-            .Text = "Change selection foreground"
-        }
-        AddHandler menuItem.Click, AddressOf Me.OnChangeSelectionForeground
-        Dim contextMenuGroup As New ContextMenuGroup()
-        contextMenuGroup.Add(menuItem)
-        e.ContextMenuGroupCollection.Add(contextMenuGroup)
-    End If
-End Sub
-Private Sub OnChangeSelectionForeground(sender As Object, e As EventArgs)
-    Me.RadRichTextEditor1.ChangeTextForeColor(Colors.Red)
-End Sub
-
-```` 
-
-{{endregion}} 
 
 >caption Figure 2: Changing Text Color
 
@@ -129,78 +66,19 @@ The second approach is more suitable when you need to reuse the customization ac
 
 #### Custom Builder Class
 
-{{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=CustomContextMenuBuilderClass}} 
-{{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=CustomContextMenuBuilderClass}}
+<snippet id='richtexteditor-contextmenucode-customcontextmenubuilderclass-cs' />
+<snippet id='richtexteditor-contextmenucode-customcontextmenubuilderclass-vb' />
 
-````C#
-public class CustomContextMenuContentBuilder : ContextMenuContentBuilder
-{
-    public override ContextMenuGroupCollection Construct()
-    {
-        var groupsCollection = base.Construct();
-        if (!this.RadRichTextBox.Document.Selection.IsEmpty)
-        {
-            RadMenuItem menuItem = new RadMenuItem()
-            {
-                Text = "Change selection foreground"
-            };
-            menuItem.Click += this.OnChangeSelectionForeground;
-            ContextMenuGroup contextMenuGroup = new ContextMenuGroup();
-            contextMenuGroup.Add(menuItem);
-            groupsCollection.Add(contextMenuGroup);
-        }
-        return groupsCollection;
-    }
-    private void OnChangeSelectionForeground(object sender, EventArgs e)
-    {
-        this.RadRichTextBox.ChangeTextForeColor(Colors.Red);
-    }
-}
 
-````
-````VB.NET
-Public Class CustomContextMenuContentBuilder
-    Inherits ContextMenuContentBuilder
-    Public Overrides Function Construct() As ContextMenuGroupCollection
-        Dim groupsCollection = MyBase.Construct()
-        If Not Me.RadRichTextBox.Document.Selection.IsEmpty Then
-            Dim menuItem As New RadMenuItem() With {
-                .Text = "Change selection foreground"
-            }
-            AddHandler menuItem.Click, AddressOf Me.OnChangeSelectionForeground
-            Dim contextMenuGroup As New ContextMenuGroup()
-            contextMenuGroup.Add(menuItem)
-            groupsCollection.Add(contextMenuGroup)
-        End If
-        Return groupsCollection
-    End Function
-    Private Sub OnChangeSelectionForeground(sender As Object, e As EventArgs)
-        Me.RadRichTextBox.ChangeTextForeColor(Colors.Red)
-    End Sub
-End Class
-
-```` 
-{{endregion}}
 
 Now you can simply assign the instance of your class to the __ContentBuilder__ property of the context menu:
 
 #### Assinging Builder
 
-{{source=..\SamplesCS\RichTextEditor\UI\ContextMenuCode.cs region=AssignCustomContextMenuBuilder}} 
-{{source=..\SamplesVB\RichTextEditor\UI\ContextMenuCode.vb region=AssignCustomContextMenuBuilder}}
+<snippet id='richtexteditor-contextmenucode-assigncustomcontextmenubuilder-cs' />
+<snippet id='richtexteditor-contextmenucode-assigncustomcontextmenubuilder-vb' />
 
-````C#
-Telerik.WinControls.RichTextEditor.UI.ContextMenu contextMenu = (Telerik.WinControls.RichTextEditor.UI.ContextMenu)this.radRichTextEditor1.RichTextBoxElement.ContextMenu;
-contextMenu.ContentBuilder = new CustomContextMenuContentBuilder();
 
-````
-````VB.NET
-Dim contextMenu As Telerik.WinControls.RichTextEditor.UI.ContextMenu = DirectCast(Me.RadRichTextEditor1.RichTextBoxElement.ContextMenu, Telerik.WinControls.RichTextEditor.UI.ContextMenu)
-contextMenu.ContentBuilder = New CustomContextMenuContentBuilder()
-
-```` 
-
-{{endregion}} 
 
 And of course, for those of you who don’t need additional UI pop-ups, these can be disabled by setting the __IsContextMenuEnabled__ property of the __RadRichTextEditor__ to __False__.
 

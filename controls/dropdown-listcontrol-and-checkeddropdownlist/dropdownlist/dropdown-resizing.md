@@ -27,19 +27,11 @@ The __SizingMode__ enumeration has the following members:
 
 #### SizingMode.None 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=None}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=None}} 
+<snippet id='dropdownlist-dropdown-resizing-none-cs' />
+<snippet id='dropdownlist-dropdown-resizing-none-vb' />
 
-````C#
-this.radDropDownList1.DropDownSizingMode = SizingMode.None;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownSizingMode = SizingMode.None
 
-````
-
-{{endregion}} 
  
 * __RightBottom__: allows sizing in horizontal direction.
             
@@ -49,19 +41,11 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.None
 
 #### SizingMode.RightBottom 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=RightBottom}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=RightBottom}} 
+<snippet id='dropdownlist-dropdown-resizing-rightbottom-cs' />
+<snippet id='dropdownlist-dropdown-resizing-rightbottom-vb' />
 
-````C#
-this.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom
 
-````
-
-{{endregion}} 
  
 
 * __UpDown__: allows sizing in vertical direction.
@@ -72,19 +56,11 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.RightBottom
 
 #### SizingMode.UpDown 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=UpDown}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=UpDown}} 
+<snippet id='dropdownlist-dropdown-resizing-updown-cs' />
+<snippet id='dropdownlist-dropdown-resizing-updown-vb' />
 
-````C#
-this.radDropDownList1.DropDownSizingMode = SizingMode.UpDown;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDown
 
-````
-
-{{endregion}} 
  
 
 * __UpDownAndRightBottom__: allows sizing in both directions.
@@ -95,19 +71,11 @@ Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDown
 
 #### SizingMode.UpDownAndRightBottom 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=UpDownAndRightBottom}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=UpDownAndRightBottom}} 
+<snippet id='dropdownlist-dropdown-resizing-updownandrightbottom-cs' />
+<snippet id='dropdownlist-dropdown-resizing-updownandrightbottom-vb' />
 
-````C#
-this.radDropDownList1.DropDownSizingMode = SizingMode.UpDownAndRightBottom;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownSizingMode = SizingMode.UpDownAndRightBottom
 
-````
-
-{{endregion}} 
  
 
 ## Fixed size
@@ -120,19 +88,11 @@ You can specify a fixed height or width of the drop-down by setting the __DropDo
 
 #### DropDownHeight 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=DropDownHeight}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=DropDownHeight}} 
+<snippet id='dropdownlist-dropdown-resizing-dropdownheight-cs' />
+<snippet id='dropdownlist-dropdown-resizing-dropdownheight-vb' />
 
-````C#
-this.radDropDownList1.DropDownListElement.DropDownHeight = 400;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownListElement.DropDownHeight = 400
 
-````
-
-{{endregion}} 
  
 >caption Figure 6: DropDownWidth
 
@@ -140,19 +100,11 @@ Me.radDropDownList1.DropDownListElement.DropDownHeight = 400
 
 #### DropDownWidth 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=DropDownWidth}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=DropDownWidth}} 
+<snippet id='dropdownlist-dropdown-resizing-dropdownwidth-cs' />
+<snippet id='dropdownlist-dropdown-resizing-dropdownwidth-vb' />
 
-````C#
-this.radDropDownList1.DropDownListElement.DropDownWidth = 400;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownListElement.DropDownWidth = 400
 
-````
-
-{{endregion}} 
  
 
 You can set the __DropDownMinSize__ property in order to specify the exact minimum height and width for the drop-down.
@@ -163,19 +115,10 @@ You can set the __DropDownMinSize__ property in order to specify the exact minim
 
 #### DropDownMinSize 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=DropDownMinSize}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=DropDownMinSize}} 
+<snippet id='dropdownlist-dropdown-resizing-dropdownminsize-cs' />
+<snippet id='dropdownlist-dropdown-resizing-dropdownminsize-vb' />
 
-````C#
-this.radDropDownList1.DropDownMinSize = new Size(400, 400);
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownMinSize = New Size(400, 400)
-
-````
-
-{{endregion}} 
 
 ## Auto size
 
@@ -183,51 +126,10 @@ The following example demonstrates a sample approach how to handle the RadDropDo
 
 #### Auto size drop down 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=AutoSizeDropDown}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=AutoSizeDropDown}} 
+<snippet id='dropdownlist-dropdown-resizing-autosizedropdown-cs' />
+<snippet id='dropdownlist-dropdown-resizing-autosizedropdown-vb' />
 
-````C#
-private void RadDropDownList1_PopupOpening(object sender, CancelEventArgs e)
-{
-    RadDropDownListElement list = sender as RadDropDownListElement;
-    float width = 0;
-    for (int x = 0; x < list.Items.Count(); x++)
-    {
-        width = Math.Max(width, TextRenderer.MeasureText(list.Items[x].Text, list.Font).Width);
-    }
-    if (list.Items.Count * (list.ItemHeight-1) > list.DropDownHeight)
-    {
-        width += list.ListElement.VScrollBar.Size.Width;
-    }
-    list.Popup.Width = (int)width;
-}
 
-````
-````VB.NET
-Private Sub RadDropDownList1_PopupOpening(sender As Object, e As CancelEventArgs)
-    Dim list As RadDropDownListElement = TryCast(sender, RadDropDownListElement)
-    Dim width As Single = 0
-    For x As Integer = 0 To list.Items.Count() - 1
-        width = Math.Max(width, TextRenderer.MeasureText(list.Items(x).Text, list.Font).Width)
-    Next
-    If list.Items.Count * (list.ItemHeight - 1) > list.DropDownHeight Then
-        width += list.ListElement.VScrollBar.Size.Width
-    End If
-    list.Popup.Width = CInt(width)
-End Sub
-'#End Region
-'#Region "FilteringPredicate"
-Private Function FilterItem(item As RadListDataItem) As Boolean
-    If item.Text.StartsWith("L") Then
-        Return True
-    End If
-    
-    Return False
-End Function
-
-````
-
-{{endregion}} 
 
 |Default pop up size|Auto sized popup|
 |----|----|
@@ -243,19 +145,10 @@ By default, __RadDropDownList__ displays 6 items in the pop-up. In case you need
 
 #### DefaultItemsCountInDropDown 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListItemSizing.cs region=DefaultItemsCountInDropDown}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListItemSizing.vb region=DefaultItemsCountInDropDown}} 
+<snippet id='dropdownlist-dropdown-resizing-defaultitemscountindropdown-cs' />
+<snippet id='dropdownlist-dropdown-resizing-defaultitemscountindropdown-vb' />
 
-````C#
-this.radDropDownList1.DropDownListElement.DefaultItemsCountInDropDown = 3;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownListElement.DefaultItemsCountInDropDown = 3
-
-````
-
-{{endregion}} 
 
 
 

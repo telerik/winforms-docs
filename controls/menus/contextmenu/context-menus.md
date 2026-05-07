@@ -28,19 +28,10 @@ There are two ways to attach a context menu to a given control or portion of a c
 
 #### Assigning a RadContextMenu
 
-{{source=..\SamplesCS\Menus\ContextMenu\ContextMenu1.cs region=assignToTreeView}} 
-{{source=..\SamplesVB\Menus\ContextMenu\ContextMenu1.vb region=assignToTreeView}} 
+<snippet id='menus-contextmenu1-assigntotreeview-cs' />
+<snippet id='menus-contextmenu1-assigntotreeview-vb' />
 
-````C#
-radTreeView1.Nodes[0].ContextMenu = radContextMenu1;
 
-````
-````VB.NET
-RadTreeView1.Nodes(0).ContextMenu = RadContextMenu1
-
-````
-
-{{endregion}} 
 
 >important The __ContextMenuStrip__ property refers to a Windows standard control. This property drop down will not display __RadMenu__ or __RadContextMenu__ components that exist on the form.
 >
@@ -50,31 +41,10 @@ RadTreeView1.Nodes(0).ContextMenu = RadContextMenu1
 
 #### Handling the MouseDown event
 
-{{source=..\SamplesCS\Menus\ContextMenu\ContextMenu1.cs region=mouseDown}} 
-{{source=..\SamplesVB\Menus\ContextMenu\ContextMenu1.vb region=mouseDown}} 
+<snippet id='menus-contextmenu1-mousedown-cs' />
+<snippet id='menus-contextmenu1-mousedown-vb' />
 
-````C#
-void radCalendar1_MouseDown(object sender, MouseEventArgs e)
-{
-    if (e.Button == MouseButtons.Right)
-    {
-        Point p = (sender as Control).PointToScreen(e.Location);
-        radContextMenu1.Show(p.X, p.Y);
-    }
-}
 
-````
-````VB.NET
-Private Sub radCalendar1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
-    If e.Button = MouseButtons.Right Then
-        Dim p As Point = (TryCast(sender, Control)).PointToScreen(e.Location)
-        RadContextMenu1.Show(p.X, p.Y)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 ## Telerik UI for WinForms Learning Resources
 * [Telerik UI for WinForms ContextMenu Homepage](https://www.telerik.com/products/winforms/contextmenu.aspx)

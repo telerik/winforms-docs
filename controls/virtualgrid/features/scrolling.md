@@ -23,58 +23,27 @@ __RadVirtualGrid__ allows three types of scroll modes:
 ![WinForms RadVirtualGrid Smooth Scrolling](images/virtualgrid-scrolling001.gif)
 
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=SmoothScrolling}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=SmoothScrolling}}
-````C#
-this.radVirtualGrid1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Smooth;
-
-````
-````VB.NET
-Me.RadVirtualGrid1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Smooth
-
-````
+<snippet id='virtualgrid-virtualgridresizingrows-smoothscrolling-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-smoothscrolling-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 2: Discrete Scrolling
 
 ![WinForms RadVirtualGrid Discrete Scrolling](images/virtualgrid-scrolling002.gif)
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=DiscreteScrolling}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=DiscreteScrolling}}
-````C#
-this.radVirtualGrid1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Discrete;
-
-````
-````VB.NET
-Me.RadVirtualGrid1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Discrete
-
-````
+<snippet id='virtualgrid-virtualgridresizingrows-discretescrolling-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-discretescrolling-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 3: Deferred Scrolling
 
 ![WinForms RadVirtualGrid Deferred Scrolling](images/virtualgrid-scrolling003.gif)
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=DeferredScrolling}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=DeferredScrolling}}
-````C#
-this.radVirtualGrid1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Deferred;
+<snippet id='virtualgrid-virtualgridresizingrows-deferredscrolling-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-deferredscrolling-vb' />
 
-````
-````VB.NET
-Me.RadVirtualGrid1.TableElement.RowScroller.ScrollMode = ItemScrollerScrollModes.Deferred
-
-````
-
-
-
-{{endregion}}
 
 
 The __RadVirtualGrid.UseScrollBarsInHierarchy__ property is responsible for defining whether vertical scrollbars will appear for the inner child views. By default the property is set to *false*.

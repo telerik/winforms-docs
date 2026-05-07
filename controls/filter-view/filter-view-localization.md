@@ -22,82 +22,19 @@ Below is a sample implementation of an English localization provider:
 
 #### Localizing RadFilterView Strings
 
-{{source=..\SamplesCS\FilterView\FilterViewLocalization.cs region=EnglishProvider}} 
-{{source=..\SamplesVB\FilterView\FilterViewLocalization.vb region=EnglishProvider}} 
+<snippet id='filter-view-localization-englishprovider-cs' />
+<snippet id='filter-view-localization-englishprovider-vb' />
 
-````C#
 
-public class EnglishFilterViewLocalizationProvider : Telerik.WinControls.UI.FilterView.RadFilterViewLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case RadFilterViewStringId.ClearCategoryFilterMenuItem: return "Clear Filter";
-            case RadFilterViewStringId.ClearAllFiltersMenuItem: return "Clear All Filters";
-
-            case RadFilterViewStringId.BooleanCategoryTrue: return "True";
-            case RadFilterViewStringId.BooleanCategoryFalse: return "False";
-
-            case RadFilterViewStringId.NumericCategoryFrom: return "From:";
-            case RadFilterViewStringId.NumericCategoryTo: return "To:";
-
-            default: return base.GetLocalizedString(id);
-        }
-    }
-}
-
-````
-````VB.NET
-
-Public Class EnglishFilterViewLocalizationProvider
-    Inherits Telerik.WinControls.UI.FilterView.RadFilterViewLocalizationProvider
-
-    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case RadFilterViewStringId.ClearCategoryFilterMenuItem
-                Return "Clear Filter"
-            Case RadFilterViewStringId.ClearAllFiltersMenuItem
-                Return "Clear All Filters"
-            Case RadFilterViewStringId.BooleanCategoryTrue
-                Return "True"
-            Case RadFilterViewStringId.BooleanCategoryFalse
-                Return "False"
-            Case RadFilterViewStringId.NumericCategoryFrom
-                Return "From:"
-            Case RadFilterViewStringId.NumericCategoryTo
-                Return "To:"
-            Case Else
-                Return MyBase.GetLocalizedString(id)
-        End Select
-    End Function
-End Class
-
-````
-
-{{endregion}}   
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\FilterView\FilterViewLocalization.cs region=ApplyProvider}} 
-{{source=..\SamplesVB\FilterView\FilterViewLocalization.vb region=ApplyProvider}} 
+<snippet id='filter-view-localization-applyprovider-cs' />
+<snippet id='filter-view-localization-applyprovider-vb' />
 
-````C#
 
-RadFilterViewLocalizationProvider.CurrentProvider = new EnglishFilterViewLocalizationProvider();
-InitializeComponent();
-
-````
-````VB.NET
-
-RadFilterViewLocalizationProvider.CurrentProvider = New EnglishFilterViewLocalizationProvider()
-InitializeComponent()
-
-````
-
-{{endregion}}   
 
  
 # See Also

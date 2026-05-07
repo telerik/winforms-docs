@@ -41,107 +41,40 @@ The text displayed by the control resides in the __Text__ property. It can be se
 
 The code below sets text in the control at run time: 
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetText}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetText}} 
+<snippet id='editors-textboxcontrol-settext-cs' />
+<snippet id='editors-textboxcontrol-settext-vb' />
 
-````C#
-        
-private void SetDefaultText()
-{
-    this.radTextBoxControl1.Text = "Type your name here.";
-}
 
-````
-````VB.NET
-Private Sub SetDefaultText()
-    Me.RadTextBoxControl1.Text = "Type your name here."
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Set the text at runtime.
 ![WinForms RadTextBoxControl Text Runtime](images/editors-textboxcontrol-getting-started001.png)
 
 You can also define the lines in the text box at run time: 
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Lines}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Lines}} 
+<snippet id='editors-textboxcontrol-lines-cs' />
+<snippet id='editors-textboxcontrol-lines-vb' />
 
-````C#
-        
-private void SetLines()
-{
-    string[] lines = new string[]
-    {
-        "Dear Sir or Madam,",
-        "I writing to you regarding your publication in Daily Mail.",
-        "Could you give me the resources that you have used?"
-    };
-    this.radTextBoxControl1.Lines = lines;
-}
 
-````
-````VB.NET
-Private Sub SetLines()
-    Dim lines As String() = New String() {"Dear Sir or Madam,", "I writing to you regarding your publication in Daily Mail.", "Could you give me the resources that you have used?"}
-    Me.RadTextBoxControl1.Lines = lines
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Set the lines of a multiline text box.
 ![WinForms RadTextBoxControl Multiline](images/editors-textboxcontrol-getting-started002.png)
 
 By setting the __NullText__ property, the control will display a custom string when the __Text__ property is empty or null: 
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetNullText}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetNullText}} 
+<snippet id='editors-textboxcontrol-setnulltext-cs' />
+<snippet id='editors-textboxcontrol-setnulltext-vb' />
 
-````C#
-    
-private void SetNullText()
-{
-    this.radTextBoxControl1.NullText = "Type your name...";
-}
 
-````
-````VB.NET
-Private Sub SetNullText()
-    Me.RadTextBoxControl1.NullText = "Type your name..."
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: Setting the null text.
 ![WinForms RadTextBoxControl Null Text](images/editors-textboxcontrol-getting-started003.png)
 
 Based on the value set to the __TextAlign__ property, the control will display its content aligned to the left, center or right: 
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=SetTextAlign}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=SetTextAlign}} 
+<snippet id='editors-textboxcontrol-settextalign-cs' />
+<snippet id='editors-textboxcontrol-settextalign-vb' />
 
-````C#
-        
-public void SetTextAlign()
-{
-    this.radTextBoxControl1.TextAlign = HorizontalAlignment.Left;
-}
 
-````
-````VB.NET
-Private Sub SetTextAlign()
-    Me.RadTextBoxControl1.TextAlign = HorizontalAlignment.Left
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 4: Aligning the text to different positions.
 ![WinForms RadTextBoxControl Aligning Text](images/editors-textboxcontrol-getting-started004.png)

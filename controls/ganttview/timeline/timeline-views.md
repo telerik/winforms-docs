@@ -19,130 +19,53 @@ All built-in views can be found in the *TimeRange* enumeration. Here are the dif
 
 * __TimeRange.Week__ : Each element of the upper row represents one week. The elements on the lower row represent days.
 
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeWeek}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeWeek}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Week;
-
-````
-````VB.NET
-Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Week
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangeweek-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangeweek-vb' />
 
 ![WinForms RadGanttView TimeRange Week](images/ganttview-timeline-timeline-views001.png)
 
 * __TimeRange.Month:__  Each element of the upper row represents one month. The elements on the lower row represent days. 
 
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeMonth}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeMonth}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Month;
-
-````
-````VB.NET
-Me.RadGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Month
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangemonth-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangemonth-vb' />
 
 ![WinForms RadGanttView __TimeRange Month](images/ganttview-timeline-timeline-views002.png)
 
 * __TimeRange.Year:__ Each element of the upper row represents one year. The elements on the lower row represent months.
 
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYear}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeYear}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Year;
-
-````
-````VB.NET
-Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Year
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangeyear-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangeyear-vb' />
 
 ![WinForms RadGanttView TimeRange Year](images/ganttview-timeline-timeline-views003.png)
 
 * __TimeRange.YearHalves:__ Each element of the upper row represents one year. The elements on the lower row represent half year periods (roughly six months). 
 
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYearHalves}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeYearHalves}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.YearHalves;
-
-````
-````VB.NET
-Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.YearHalves
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangeyearhalves-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangeyearhalves-vb' />
 
 ![WinForms RadGanttView TimeRange YearHalves](images/ganttview-timeline-timeline-views004.png)
 
 * __TimeRange.YearQuarters:__ Each element of the upper row represents one year. The elements on the lower row represent quarter year periods (roughly three months).
              
 
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeYearQuarters}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeYearQuarters}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.YearQuarters;
-
-````
-````VB.NET
-Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.YearQuarters
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangeyearquarters-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangeyearquarters-vb' />
 
 
 ![WinForms RadGanttView TimeRange YearQuarters](images/ganttview-timeline-timeline-views005.png)
 
 * __TimeRange.Day__ – Each element of the upper row represents one day. The elements on the lower row represent hours. 
 
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDay}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDay}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Day;
-
-````
-````VB.NET
-Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Day
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangeday-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangeday-vb' />
 
 
 ![WinForms RadGanttView TimeRange Day](images/ganttview-timeline-timeline-views006.png)
 
 * __TimeRange.DayHalfHours:__ Each element of the upper row represents one day. The elements on the lower row represent half hours (30 minutes period).
              
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDayHalfHours}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDayHalfHours}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.DayHalfHours;
-
-````
-````VB.NET
-Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.DayHalfHours
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangedayhalfhours-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangedayhalfhours-vb' />
 
 
 ![WinForms RadGanttView TimeRange DayHalfHours](images/ganttview-timeline-timeline-views007.png)
@@ -150,38 +73,16 @@ Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange
 * __TimeRange.DayQuarterHours:__ Each element of the upper row represents one day. The elements on the lower row represent quarter hours (15 minutes period).
             
 
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeDayQuarterHours}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeDayQuarterHours}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.DayQuarterHours;
-
-````
-````VB.NET
-Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.DayQuarterHours
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangedayquarterhours-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangedayquarterhours-vb' />
 
 
 ![WinForms RadGanttView TimeRange DayQuarterHours](images/ganttview-timeline-timeline-views008.png)
 
 * __TimeRange.Hour:__ Each element of the upper row represents one hour. The elements on the lower row represent minutes. 
 
-{{source=..\SamplesCS\GanttView\TimelineViews\GanttTimelineViews.cs region=TimeRangeHour}} 
-{{source=..\SamplesVB\GanttView\TimelineViews\GanttTimelineViews.vb region=TimeRangeHour}} 
-
-````C#
-this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Hour;
-
-````
-````VB.NET
-Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineRange = TimeRange.Hour
-
-````
-
-{{endregion}} 
+<snippet id='ganttview-gantttimelineviews-timerangehour-cs' />
+<snippet id='ganttview-gantttimelineviews-timerangehour-vb' />
 
 
 ![WinForms RadGanttView TimeRange Hour](images/ganttview-timeline-timeline-views009.png)

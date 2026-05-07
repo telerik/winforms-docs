@@ -24,57 +24,10 @@ The following example shows how you can use the predefined editors:
 
 #### Start editing
 
-{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=usePredefinedEditors}} 
-{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=usePredefinedEditors}} 
+<snippet id='listview-listviewcheckboxesandeditors-usepredefinededitors-cs' />
+<snippet id='listview-listviewcheckboxesandeditors-usepredefinededitors-vb' />
 
-````C#
-        
-void radListView1_EditorRequired(object sender, Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs e)
-{
-    if (e.ListViewElement.CurrentColumn.FieldName == "CustomerName")
-    {
-        e.EditorType = typeof(ListViewTextBoxEditor);
-    }
-    else if (e.ListViewElement.CurrentColumn.FieldName == "ProductName")
-    {
-        ListViewDropDownListEditor editor = new ListViewDropDownListEditor();
-        (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product1");
-        (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product2");
-        (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Product3");
-        
-        e.Editor = editor;
-    }
-    else if (e.ListViewElement.CurrentColumn.FieldName == "Quantity")
-    {
-        e.EditorType = typeof(ListViewSpinEditor);
-    }
-    else if (e.ListViewElement.CurrentColumn.FieldName == "OrderDate")
-    {
-        e.EditorType = typeof(ListViewDateTimeEditor);
-    }
-}
 
-````
-````VB.NET
-Private Sub radListView1_EditorRequired(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs)
-    If e.ListViewElement.CurrentColumn.FieldName = "CustomerName" Then
-        e.EditorType = GetType(ListViewTextBoxEditor)
-    ElseIf e.ListViewElement.CurrentColumn.FieldName = "ProductName" Then
-        Dim editor As New ListViewDropDownListEditor()
-        TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product1")
-        TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product2")
-        TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Product3")
-        e.Editor = editor
-    ElseIf e.ListViewElement.CurrentColumn.FieldName = "Quantity" Then
-        e.EditorType = GetType(ListViewSpinEditor)
-    ElseIf e.ListViewElement.CurrentColumn.FieldName = "OrderDate" Then
-        e.EditorType = GetType(ListViewDateTimeEditor)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 # See Also
 

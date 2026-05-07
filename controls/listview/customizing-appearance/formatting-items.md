@@ -25,53 +25,10 @@ Items appearance in __RadListView__ can be customized by making use of the __Vis
 
 #### Customizing items when using the VisualItemFormatting event
 
-{{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=VisualItemFormatting}} 
-{{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=VisualItemFormatting}} 
+<snippet id='listview-listviewformattingitems-visualitemformatting-cs' />
+<snippet id='listview-listviewformattingitems-visualitemformatting-vb' />
 
-````C#
-Font font = new Font("Consolas", 14, FontStyle.Bold);
-void radListView1_VisualItemFormatting(object sender, Telerik.WinControls.UI.ListViewVisualItemEventArgs e)
-{
-    if (e.VisualItem.Selected)
-    {
-        e.VisualItem.NumberOfColors = 1;
-        e.VisualItem.BackColor = Color.LightGreen;
-        e.VisualItem.ForeColor = Color.Red;
-        e.VisualItem.BorderColor = Color.Blue;
-        e.VisualItem.Font = font;
-    }
-    else
-    {
-        e.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.VisualItem.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local);
-    }
-}
 
-````
-````VB.NET
-Private font As New Font("Consolas", 14, FontStyle.Bold)
-Private Sub radListView1_VisualItemFormatting(sender As Object, e As Telerik.WinControls.UI.ListViewVisualItemEventArgs)
-    If e.VisualItem.Selected Then
-        e.VisualItem.NumberOfColors = 1
-        e.VisualItem.BackColor = Color.LightGreen
-        e.VisualItem.ForeColor = Color.Red
-        e.VisualItem.BorderColor = Color.Blue
-        e.VisualItem.Font = font
-    Else
-        e.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.VisualItem.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 ## Formatting cells in DetailsView mode
 
@@ -87,109 +44,18 @@ Let’s assume that the __RadListView__ is bound to the *Products* table from th
 
 #### Customizing cells when using the CellFormatting event
 
-{{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=CellFormatting}} 
-{{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=CellFormatting}} 
+<snippet id='listview-listviewformattingitems-cellformatting-cs' />
+<snippet id='listview-listviewformattingitems-cellformatting-vb' />
 
-````C#
-private void ListViewFormattingItems_Load(object sender, EventArgs e)
-{
-    this.productsTableAdapter.Fill(this.nwindDataSet.Products);
-    this.radListView1.DataSource = this.productsBindingSource;
-    this.radListView1.DisplayMember = "ProductName";
-    this.radListView1.ValueMember = "ProductID";
-    this.radListView1.ViewType = ListViewType.DetailsView;
-    this.radListView1.CellFormatting += radListView1_CellFormatting;
-}
-Font newFont = new Font("Arial", 12f, FontStyle.Bold);
-private void radListView1_CellFormatting(object sender, ListViewCellFormattingEventArgs e)
-{
-    DetailListViewDataCellElement cell = e.CellElement as DetailListViewDataCellElement;
-    if (cell != null)
-    {
-        DataRowView productRowView = cell.Row.DataBoundItem as DataRowView;
-        if (productRowView != null && (bool)productRowView.Row["Discontinued"] == true)
-        {
-            e.CellElement.BackColor = Color.Yellow;
-            e.CellElement.ForeColor = Color.Red;
-            e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-            e.CellElement.Font = newFont;
-        }
-        else
-        {
-            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-            e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local);
-            e.CellElement.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local);
-        }
-    }
-}
 
-````
-````VB.NET
-Private Sub FormattingItems_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
-    Me.RadListView1.DataSource = Me.ProductsBindingSource
-    Me.RadListView1.DisplayMember = "ProductName"
-    Me.RadListView1.ValueMember = "ProductID"
-    Me.RadListView1.ViewType = ListViewType.DetailsView
-    AddHandler Me.RadListView1.CellFormatting, AddressOf radListView1_CellFormatting
-End Sub
-Private newFont As New Font("Arial", 12.0F, FontStyle.Bold)
-Private Sub radListView1_CellFormatting(sender As Object, e As ListViewCellFormattingEventArgs)
-    Dim cell As DetailListViewDataCellElement = TryCast(e.CellElement, DetailListViewDataCellElement)
-    If cell IsNot Nothing Then
-        Dim productRowView As DataRowView = TryCast(cell.Row.DataBoundItem, DataRowView)
-        If productRowView IsNot Nothing AndAlso CBool(productRowView.Row("Discontinued")) = True Then
-            e.CellElement.BackColor = Color.Yellow
-            e.CellElement.ForeColor = Color.Red
-            e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-            e.CellElement.Font = newFont
-        Else
-            e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local)
-            e.CellElement.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
-        End If
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 >note In order to customize the header cells, the __e.CellElement__ property should be cast to the **DetailListViewHeaderCellElement** type.
 
-{{source=..\SamplesCS\ListView\ListViewFormattingItems.cs region=HeaderFormatting}} 
-{{source=..\SamplesVB\ListView\ListViewFormattingItems.vb region=HeaderFormatting}} 
+<snippet id='listview-listviewformattingitems-headerformatting-cs' />
+<snippet id='listview-listviewformattingitems-headerformatting-vb' />
 
-````C#
-private void radListView1_CellFormatting(object sender, ListViewCellFormattingEventArgs e)
-{
-    if (e.CellElement is DetailListViewHeaderCellElement)
-    {
-        e.CellElement.TextAlignment = ContentAlignment.MiddleLeft;
-    }
-    else
-    {
-        e.CellElement.ResetValue(LightVisualElement.TextAlignmentProperty, Telerik.WinControls.ValueResetFlags.Local);
-    }
-}
 
-````
-````VB.NET
-Private Sub radListView1_CellFormatting1(ByVal sender As Object, ByVal e As ListViewCellFormattingEventArgs)
-    If TypeOf e.CellElement Is DetailListViewHeaderCellElement Then
-        e.CellElement.TextAlignment = ContentAlignment.MiddleLeft
-    Else
-        e.CellElement.ResetValue(LightVisualElement.TextAlignmentProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
 
-````
-
-{{endregion}} 
-
- 
 # See Also
 
 * [Accessing and Customizing Elements]({%slug winforms/listview/customizing-appearance/accessing-and-customizing-elements%})		

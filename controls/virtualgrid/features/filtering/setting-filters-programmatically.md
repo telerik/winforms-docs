@@ -34,30 +34,10 @@ When you add a new descriptor to the collection, the data is automatically filte
 
 #### Using simple filter descriptor 
 
-{{source=..\SamplesCS\VirtualGrid\Filtering\VirtualGridFiltering.cs region=SimpleDescriptors}} 
-{{source=..\SamplesVB\VirtualGrid\Filtering\VirtualGridFiltering.vb region=SimpleDescriptors}}
+<snippet id='virtualgrid-virtualgridfiltering-simpledescriptors-cs' />
+<snippet id='virtualgrid-virtualgridfiltering-simpledescriptors-vb' />
 
-````C#
-            
-FilterDescriptor filter = new FilterDescriptor();
-filter.PropertyName = "ContactName";
-filter.Operator = FilterOperator.StartsWith ;
-filter.Value = "p";
-filter.IsFilterEditor = true;
- this.radVirtualGrid1.FilterDescriptors.Add(filter);
 
-````
-````VB.NET
-Dim filter As New FilterDescriptor()
-filter.PropertyName = "ContactName"
-filter.[Operator] = FilterOperator.StartsWith
-filter.Value = "p"
-filter.IsFilterEditor = True
-Me.RadVirtualGrid1.FilterDescriptors.Add(filter)
-
-```` 
-
-{{endregion}}
 
 # Composite descriptors
 
@@ -68,30 +48,10 @@ To filter a single data field by multiple values, you have to use the __Composit
 
 #### Using CompositeFilterDescriptor
 
-{{source=..\SamplesCS\VirtualGrid\Filtering\VirtualGridFiltering.cs region=CompositeDescriptors}} 
-{{source=..\SamplesVB\VirtualGrid\Filtering\VirtualGridFiltering.vb region=CompositeDescriptors}}
+<snippet id='virtualgrid-virtualgridfiltering-compositedescriptors-cs' />
+<snippet id='virtualgrid-virtualgridfiltering-compositedescriptors-vb' />
 
-````C#
-            
-CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();
-compositeFilter.FilterDescriptors.Add(new FilterDescriptor("ContactName", FilterOperator.StartsWith,"p"));
-compositeFilter.FilterDescriptors.First().IsFilterEditor = true;
-compositeFilter.FilterDescriptors.Add(new FilterDescriptor("CompanyName", FilterOperator.Contains, "w"));
-compositeFilter.LogicalOperator = FilterLogicalOperator.And;
-this.radVirtualGrid1.FilterDescriptors.Add(compositeFilter);
 
-````
-````VB.NET
-Dim compositeFilter As New CompositeFilterDescriptor()
-compositeFilter.FilterDescriptors.Add(New FilterDescriptor("ContactName", FilterOperator.StartsWith, "p"))
-compositeFilter.FilterDescriptors.First().IsFilterEditor = True
-compositeFilter.FilterDescriptors.Add(New FilterDescriptor("CompanyName", FilterOperator.Contains, "w"))
-compositeFilter.LogicalOperator = FilterLogicalOperator.[And]
-Me.RadVirtualGrid1.FilterDescriptors.Add(compositeFilter)
-
-```` 
-
-{{endregion}}
 
 # See Also
 * [Filtering Overview]({%slug winforms/virtualgrid/filtering/filtering%})

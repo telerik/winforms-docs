@@ -28,28 +28,10 @@ When you press the `OK` button, a new message will be automatically added with t
 
 #### Adding a ChatCalendarOverlay
 
-{{source=..\SamplesCS\Chat\ChatOverlaysActions.cs region=AddCalendarOverlay}} 
-{{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddCalendarOverlay}}
-
-````C#
-ChatCalendarOverlay calendarOverlay = new ChatCalendarOverlay("Select a date");
-bool showAsPopup = false;
-Author author = new Author(Properties.Resources.andrew1, "Andrew");
-ChatOverlayMessage overlayMessage = new ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now);
-this.radChat1.AddMessage(overlayMessage);
-
-````
-````VB.NET
-Dim calendarOverlay As ChatCalendarOverlay = New ChatCalendarOverlay("Select a date")
-Dim showAsPopup As Boolean = False
-Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
-Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now)
-Me.radChat1.AddMessage(overlayMessage)
-
-```` 
+<snippet id='chat-overlays-addcalendaroverlay-cs'/>
+<snippet id='chat-overlays-addcalendaroverlay-vb'/>
 
 
-{{endregion}}
 
 You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** property. 
 
@@ -63,28 +45,10 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 
 #### Adding a ChatDateTimeOverlay
 
-{{source=..\SamplesCS\Chat\ChatOverlaysActions.cs region=AddDateTimeOverlay}} 
-{{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddDateTimeOverlay}}
-
-````C#
-ChatDateTimeOverlay dateTimerOverlay = new ChatDateTimeOverlay("Select a date and time", DateTime.Now);
-bool showAsPopup = false;
-Author author = new Author(Properties.Resources.andrew1, "Andrew");
-ChatOverlayMessage overlayMessage = new ChatOverlayMessage(dateTimerOverlay, showAsPopup, author, DateTime.Now);
-this.radChat1.AddMessage(overlayMessage);
-
-````
-````VB.NET
-Dim dateTimerOverlay As ChatDateTimeOverlay = New ChatDateTimeOverlay("Select a date and time", DateTime.Now)
-Dim showAsPopup As Boolean = False
-Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
-Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(dateTimerOverlay, showAsPopup, author, DateTime.Now)
-Me.radChat1.AddMessage(overlayMessage)
-
-```` 
+<snippet id='chat-overlays-adddatetimeoverlay-cs'/>
+<snippet id='chat-overlays-adddatetimeoverlay-vb'/>
 
 
-{{endregion}}
 
 ## ChatListOverlay
 
@@ -96,35 +60,10 @@ Me.radChat1.AddMessage(overlayMessage)
 
 #### Adding a ChatListOverlay
 
-{{source=..\SamplesCS\Chat\ChatOverlaysActions.cs region=AddListOverlay}} 
-{{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddListOverlay}}
-
-````C#
-ChatListOverlay listOverlay = new ChatListOverlay("List overlay");
-for (int i = 0; i < 10; i++)
-{
-    listOverlay.ListView.Items.Add("Item " + i);
-}
-bool showAsPopup = false;
-Author author = new Author(Properties.Resources.andrew1, "Andrew");
-ChatOverlayMessage overlayMessage = new ChatOverlayMessage(listOverlay, showAsPopup, author, DateTime.Now);
-this.radChat1.AddMessage(overlayMessage);
-
-````
-````VB.NET
-Dim listOverlay As ChatListOverlay = New ChatListOverlay("List overlay")
-For i As Integer = 0 To 10 - 1
-    listOverlay.ListView.Items.Add("Item " & i)
-Next
-Dim showAsPopup As Boolean = False
-Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
-Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(listOverlay, showAsPopup, author, DateTime.Now)
-Me.radChat1.AddMessage(overlayMessage)
-
-```` 
+<snippet id='chat-overlays-addlistoverlay-cs'/>
+<snippet id='chat-overlays-addlistoverlay-vb'/>
 
 
-{{endregion}}
 
 You have access to the list view by the ChatListOverlay.**ListView** property. 
 
@@ -138,28 +77,10 @@ You have access to the list view by the ChatListOverlay.**ListView** property.
 
 #### Adding a ChatTimeOverlay
 
-{{source=..\SamplesCS\Chat\ChatOverlaysActions.cs region=AddTimeOverlay}} 
-{{source=..\SamplesVB\Chat\ChatOverlaysActions.vb region=AddTimeOverlay}}
-
-````C#
-ChatTimeOverlay calendarOverlay = new ChatTimeOverlay("Select a date and time", DateTime.Now);
-bool showAsPopup = false;
-Author author = new Author(Properties.Resources.andrew1, "Andrew");
-ChatOverlayMessage overlayMessage = new ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now);
-this.radChat1.AddMessage(overlayMessage);
-
-````
-````VB.NET
-Dim calendarOverlay As ChatTimeOverlay = New ChatTimeOverlay("Select a date and time", DateTime.Now)
-Dim showAsPopup As Boolean = False
-Dim author As Author = New Author(My.Resources.andrew1, "Andrew")
-Dim overlayMessage As ChatOverlayMessage = New ChatOverlayMessage(calendarOverlay, showAsPopup, author, DateTime.Now)
-Me.radChat1.AddMessage(overlayMessage)
-
-```` 
+<snippet id='chat-overlays-addtimeoverlay-cs'/>
+<snippet id='chat-overlays-addtimeoverlay-vb'/>
 
 
-{{endregion}}
 
  
 # See Also

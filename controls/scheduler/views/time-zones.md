@@ -26,19 +26,10 @@ We provide an easy way to take all time zones from the Windows. To do this, you 
 
 #### Get Time Zones
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=getAllZones}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=getAllZones}} 
+<snippet id='scheduler-timeszones-getallzones-cs' />
+<snippet id='scheduler-timeszones-getallzones-vb' />
 
-````C#
-List<SchedulerTimeZone> allTimeZones = SchedulerTimeZone.GetSchedulerTimeZones();
 
-````
-````VB.NET
-Dim allTimeZones As List(Of SchedulerTimeZone) = SchedulerTimeZone.GetSchedulerTimeZones()
-
-````
-
-{{endregion}} 
 
 >note The *bias* property represents the difference between the "UTC" time zone and the time zone that you want to set to RadScheduler in minutes multiplied by minus 1. For example, if the time zone that you want to set is "(UTC -05:00) Eastern Time (US and Canada)" the *bias* value would be -5 * 60 * -1 = 300
 >
@@ -49,42 +40,22 @@ All appointments in RadScheduler are stored/loaded according to the value of the
             
 1\. Let's create an appointment from 10:00 AM to 11:00 AM:
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=creatingAppointment}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=creatingAppointment}} 
+<snippet id='scheduler-timeszones-creatingappointment-cs' />
+<snippet id='scheduler-timeszones-creatingappointment-vb' />
 
-````C#
-this.radScheduler1.Appointments.Add(new Appointment(DateTime.Now.Date.AddHours(1), new TimeSpan(1, 0, 0)));
 
-````
-````VB.NET
-Me.RadScheduler1.Appointments.Add(New Appointment(Date.Now.Date.AddHours(1), New TimeSpan(1, 0, 0)))
 
-````
-
-{{endregion}} 
-
- By default, this appointment will be shown from 10:00 AM to 11:00 AM:
+By default, this appointment will be shown from 10:00 AM to 11:00 AM:
 
 >caption Figure 1: Default SystemTimeZone
 ![WinForms RadScheduler Default SystemTimeZone](images/scheduler-views-time-zones001.png)
 
 2\. Let's now set the SystemTimeZone property to "UTC" time zone:
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=systemTimeZone}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=systemTimeZone}} 
+<snippet id='scheduler-timeszones-systemtimezone-cs' />
+<snippet id='scheduler-timeszones-systemtimezone-vb' />
 
-````C#
-SchedulerTimeZone utcTimeZone = new SchedulerTimeZone(0, "UTC");
-this.radScheduler1.SystemTimeZone = utcTimeZone;
 
-````
-````VB.NET
-Dim utcTimeZone As New SchedulerTimeZone(0, "UTC")
-Me.RadScheduler1.SystemTimeZone = utcTimeZone
-
-````
-
-{{endregion}} 
 
 This will change the representation of the appointment according to the time zone set to the client machine. Please note that the start time, end time and duration of the logical appointment are not changed. Only the representation of the appointment in the active view is changed. For example, if we start the RadScheduler on a client machine where the time zone is "UTC + 02:00", our appointment will look as shown on the screenshot below:
 
@@ -99,19 +70,10 @@ All __RadScheduler__ views have the __DefaultTimeZone__ property. The active vie
 
 1\. Let's create an appointment from 10:00 AM to 11:00 AM:
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=creatingAppointment}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=creatingAppointment}} 
+<snippet id='scheduler-timeszones-creatingappointment-cs' />
+<snippet id='scheduler-timeszones-creatingappointment-vb' />
 
-````C#
-this.radScheduler1.Appointments.Add(new Appointment(DateTime.Now.Date.AddHours(1), new TimeSpan(1, 0, 0)));
 
-````
-````VB.NET
-Me.RadScheduler1.Appointments.Add(New Appointment(Date.Now.Date.AddHours(1), New TimeSpan(1, 0, 0)))
-
-````
-
-{{endregion}} 
 
 By default, this appointment will be shown from 10:00 AM to 11:00 AM:
 
@@ -120,21 +82,10 @@ By default, this appointment will be shown from 10:00 AM to 11:00 AM:
 
 2\. Let's now set the DefaultTimeZone property of the ActiveDayView to "UTC + 1" time zone:
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=defaultTimeZone}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=defaultTimeZone}} 
+<snippet id='scheduler-timeszones-defaulttimezone-cs' />
+<snippet id='scheduler-timeszones-defaulttimezone-vb' />
 
-````C#
-SchedulerTimeZone utcPlusOneTimeZone = new SchedulerTimeZone(-60, "UTC + 1");
-this.radScheduler1.GetDayView().DefaultTimeZone = utcPlusOneTimeZone;
 
-````
-````VB.NET
-Dim utcPlusOneTimeZone As New SchedulerTimeZone(-60, "UTC + 1")
-Me.RadScheduler1.GetDayView().DefaultTimeZone = utcPlusOneTimeZone
-
-````
-
-{{endregion}} 
 
 Again, this will change the representation of the appointment according to the time zone of the client machine. However, this time the appointment will be represented according to the time scale of the "UTC + 1" time zone. Since we are running the RadScheduler instance on a machine where the time zone set is "UTC + 2", an appointment starting at 10 o'clock will be represented as an appointment starting at 9:
 
@@ -157,136 +108,31 @@ The way to handle this situation is to choose one time zone as the system time z
 
 This functionality can be achieved by setting the SystemTimeZone of RadScheduler. Let's say that the default time zone is "(UTC) Dublin, Edinburgh, Lisbon, London". We can get the time zone from the Windows registry and set it as SystemTimeZone as shown below:
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=london}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=london}}
+<snippet id='scheduler-timeszones-london-cs' />
+<snippet id='scheduler-timeszones-london-vb' />
 
-````C#
-SchedulerTimeZone london = GetSpecificTimeZone("London", "London");              
-this.radScheduler1.SystemTimeZone = london;
 
-````
-````VB.NET
-Dim london As SchedulerTimeZone = GetSpecificTimeZone("London", "London")
-Me.RadScheduler1.SystemTimeZone = london
 
-```` 
+<snippet id='scheduler-timeszones-insertingtimezones-cs' />
+<snippet id='scheduler-timeszones-insertingtimezones-vb' />
 
-{{endregion}} 
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=insertingTimeZones}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=insertingTimeZones}}
-
-````C#
-SchedulerTimeZone newYork = GetSpecificTimeZone("Eastern Time", "New York");
-if (!newYork.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-{
-    radScheduler1.GetDayView().TimeZones.Insert(0, newYork);
-}
-SchedulerTimeZone tokyo = GetSpecificTimeZone("Tokyo", "Tokyo");
-if (!tokyo.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-{
-    radScheduler1.GetDayView().TimeZones.Insert(0, tokyo);
-}
-SchedulerTimeZone paris = GetSpecificTimeZone("Paris", "Paris");
-if (!paris.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-{
-    radScheduler1.GetDayView().TimeZones.Insert(0, paris);
-}
-SchedulerTimeZone london = GetSpecificTimeZone("London", "London");
-if (!london.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-{
-    radScheduler1.GetDayView().TimeZones.Insert(0, london);
-}
-
-````
-````VB.NET
-Dim newYork As SchedulerTimeZone = GetSpecificTimeZone("Eastern Time", "New York")
-If Not newYork.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-    RadScheduler1.GetDayView().TimeZones.Insert(0, newYork)
-End If
-Dim tokyo As SchedulerTimeZone = GetSpecificTimeZone("Tokyo", "Tokyo")
-If Not tokyo.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-    RadScheduler1.GetDayView().TimeZones.Insert(0, tokyo)
-End If
-Dim paris As SchedulerTimeZone = GetSpecificTimeZone("Paris", "Paris")
-If Not paris.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-    RadScheduler1.GetDayView().TimeZones.Insert(0, paris)
-End If
-Dim london As SchedulerTimeZone = GetSpecificTimeZone("London", "London")
-If Not london.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-    RadScheduler1.GetDayView().TimeZones.Insert(0, london)
-End If
-
-```` 
-
-{{endregion}} 
 
 Further, we may want to show the four most commonly used time zones - Tokyo, New York, London and Paris. This can be achieved by getting the appropriate time zones from the Windows registry and adding them to RadScheduler:
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=insertingTimeZones}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=insertingTimeZones}} 
+<snippet id='scheduler-timeszones-insertingtimezones-cs' />
+<snippet id='scheduler-timeszones-insertingtimezones-vb' />
 
-````C#
-SchedulerTimeZone newYork = GetSpecificTimeZone("Eastern Time", "New York");
-if (!newYork.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-{
-    radScheduler1.GetDayView().TimeZones.Insert(0, newYork);
-}
-SchedulerTimeZone tokyo = GetSpecificTimeZone("Tokyo", "Tokyo");
-if (!tokyo.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-{
-    radScheduler1.GetDayView().TimeZones.Insert(0, tokyo);
-}
-SchedulerTimeZone paris = GetSpecificTimeZone("Paris", "Paris");
-if (!paris.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-{
-    radScheduler1.GetDayView().TimeZones.Insert(0, paris);
-}
-SchedulerTimeZone london = GetSpecificTimeZone("London", "London");
-if (!london.Equals(this.radScheduler1.GetDayView().DefaultTimeZone))
-{
-    radScheduler1.GetDayView().TimeZones.Insert(0, london);
-}
 
-````
-````VB.NET
-Dim newYork As SchedulerTimeZone = GetSpecificTimeZone("Eastern Time", "New York")
-If Not newYork.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-    RadScheduler1.GetDayView().TimeZones.Insert(0, newYork)
-End If
-Dim tokyo As SchedulerTimeZone = GetSpecificTimeZone("Tokyo", "Tokyo")
-If Not tokyo.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-    RadScheduler1.GetDayView().TimeZones.Insert(0, tokyo)
-End If
-Dim paris As SchedulerTimeZone = GetSpecificTimeZone("Paris", "Paris")
-If Not paris.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-    RadScheduler1.GetDayView().TimeZones.Insert(0, paris)
-End If
-Dim london As SchedulerTimeZone = GetSpecificTimeZone("London", "London")
-If Not london.Equals(Me.RadScheduler1.GetDayView().DefaultTimeZone) Then
-    RadScheduler1.GetDayView().TimeZones.Insert(0, london)
-End If
-
-````
-
-{{endregion}} 
 
 It is important to Insert the zones, because this will make your local time zone the zone according to which the appointment will be represented. In addition, we should check if the DefaultTimeZone of RadScheduler(which is taken from the client machine where RadScheduler is started) is the equal to the time zone that we are going to insert. If this is so, we should not insert the zone, because we want to avoid having repetitive time zones.
 
 Finally, set the RulerWidth property to an appropriate value to show the entire labels:
 
-{{source=..\SamplesCS\Scheduler\Views\TimesZones.cs region=rulerWidth}} 
-{{source=..\SamplesVB\Scheduler\Views\TimesZones.vb region=rulerWidth}}
-````C#
-this.radScheduler1.GetDayView().RulerWidth = 50;
+<snippet id='scheduler-timeszones-rulerwidth-cs' />
+<snippet id='scheduler-timeszones-rulerwidth-vb' />
 
-````
-````VB.NET
-Me.RadScheduler1.GetDayView().RulerWidth = 50
 
-```` 
-
-{{endregion}} 
 
 After all these steps are performed, let's try to create an appointment starting at 10 o'clock on Jan 12 on a client machine where the local time zone is "(UTC +09:00) Osaka, Sapporo, Tokyo". Here is how this appointment will look like on client machines having different local time zones set:
 

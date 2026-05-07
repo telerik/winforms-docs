@@ -17,8 +17,8 @@ The overlay form can be activated throught the __RadOverlayManager.Show()__ meth
 
 ## Show Overlay
 
-{{source=..\SamplesCS\SplashScreens\Overlay\OverlaySettings.cs region=GettingStarted_Show}} 
-{{source=..\SamplesVB\SplashScreens\Overlay\OverlaySettings.vb region=GettingStarted_Show}} 
+<snippet id='splashscreens-overlaysettings-gettingstarted_show-cs' />
+<snippet id='splashscreens-overlaysettings-gettingstarted_show-vb' />
 
 ````C#
 
@@ -33,12 +33,10 @@ RadOverlayManager.Show(this.radGridView1)
 
 ````
 
-{{endregion}}
-
 ## Close Overlay
 
-{{source=..\SamplesCS\SplashScreens\Overlay\OverlaySettings.cs region=GettingStarted_Close}} 
-{{source=..\SamplesVB\SplashScreens\Overlay\OverlaySettings.vb region=GettingStarted_Close}} 
+<snippet id='splashscreens-overlaysettings-gettingstarted_close-cs' />
+<snippet id='splashscreens-overlaysettings-gettingstarted_close-vb' />
 
 ````C#
 
@@ -52,8 +50,6 @@ RadOverlayManager.Close()
 
 
 ````
-
-{{endregion}}
 
 # See Also
 

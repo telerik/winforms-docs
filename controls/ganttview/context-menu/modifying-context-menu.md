@@ -23,31 +23,10 @@ The event arguments have the following properties:
 
 Here is an example which demonstrates how to change the progress step of the default context menu.
          
-{{source=..\SamplesCS\GanttView\ContextMenus\ModifyingContextMenu.cs region=ModifyingContextMenu}} 
-{{source=..\SamplesVB\GanttView\ContextMenus\ModifyingContextMenu.vb region=ModifyingContextMenu}} 
+<snippet id='ganttview-modifyingcontextmenu-modifyingcontextmenu-cs' />
+<snippet id='ganttview-modifyingcontextmenu-modifyingcontextmenu-vb' />
 
-````C#
-private void radGanttView1_ContextMenuOpening(object sender, GanttViewContextMenuOpeningEventArgs e)
-{
-    GanttViewDefaultContextMenu menu = e.Menu as GanttViewDefaultContextMenu;
-    if (menu != null)
-    {
-        menu.ProgressStep = 25;
-    }
-}
 
-````
-````VB.NET
-Private Sub radGanttView1_ContextMenuOpening(sender As Object, e As GanttViewContextMenuOpeningEventArgs)
-    Dim menu As GanttViewDefaultContextMenu = TryCast(e.Menu, GanttViewDefaultContextMenu)
-    If menu IsNot Nothing Then
-        menu.ProgressStep = 25
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadGanttView Modifying Context Menu](images/ganttview-context-menu-modifying-context-menu001.png)
 

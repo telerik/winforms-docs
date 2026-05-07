@@ -19,23 +19,10 @@ You can enable the right-to-left functionality, by setting the __RightToLeft__ p
 			
 #### Setting Right-to-Left mode
 
-{{source=..\SamplesCS\Wizard\WizardStructure.cs region=RTL}} 
-{{source=..\SamplesVB\Wizard\WizardStructure.vb region=RTL}} 
+<snippet id='wizard-wizardstructure-rtl-cs' />
+<snippet id='wizard-wizardstructure-rtl-vb' />
 
-````C#
-this.radWizard1.RightToLeft = RightToLeft.Yes;
-this.radLabel1.RightToLeft = RightToLeft.Yes;
-this.radLabel1.Text = "Welcome page of RadWizard in RightToLeft mode.";
 
-````
-````VB.NET
-RadWizard1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-RadLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-RadLabel1.Text = "Welcome page of RadWizard in RightToLeft mode."
-
-````
-
-{{endregion}} 
 
 # See Also
 

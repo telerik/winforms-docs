@@ -80,42 +80,10 @@ The following tutorial will help you get started working with the __RadTreeView_
 1. In the form's constructor add the code appearing below the __InitializeComponent()__ method call. This code creates new __RadTreeNode__ objects, populates them with text and attaches them to parent nodes.
 
 
-{{source=..\SamplesCS\TreeView\GettingStarted.cs region=GettingStarted}} 
-{{source=..\SamplesVB\TreeView\TreeViewGettingStarted.vb region=GettingStarted}} 
+<snippet id='treeview-gettingstarted-gettingstarted-cs' />
+<snippet id='treeview-treeviewgettingstarted-gettingstarted-vb' />
 
-````C#
-            
-RadTreeNode node = radTreeView1.Nodes["Email Contacts"].Nodes.Add("Bob Tony");
-node.Selected = true;
-            
-radTreeView1.Nodes["Email Contacts"].Nodes.Add("Sue Winchell");
-radTreeView1.Nodes["Email Contacts"].Nodes.Add("Lui Sang");
-radTreeView1.Nodes["Lists"].Nodes.Add("Priorities");
-radTreeView1.Nodes["Lists"].Nodes.Add("Opportunities");
-radTreeView1.Nodes["Lists"].Nodes.Add("Issues");
-            
-node = radTreeView1.Nodes["Reports"].Nodes.Add("June Sales");
-node = radTreeView1.Nodes["Reports"].Nodes.Add("July Sales");
-node = radTreeView1.Nodes["Reports"].Nodes.Add("First Quarter Summary");
-node = radTreeView1.Nodes["Reports"].Nodes.Add("Second Quarter Summary");
 
-````
-````VB.NET
-Dim node As RadTreeNode = RadTreeView1.Nodes("Email Contacts").Nodes.Add("Bob Tony")
-node.Selected = True
-RadTreeView1.Nodes("Email Contacts").Nodes.Add("Sue Winchell")
-RadTreeView1.Nodes("Email Contacts").Nodes.Add("Lui Sang")
-RadTreeView1.Nodes("Lists").Nodes.Add("Priorities")
-RadTreeView1.Nodes("Lists").Nodes.Add("Opportunities")
-RadTreeView1.Nodes("Lists").Nodes.Add("Issues")
-node = RadTreeView1.Nodes("Reports").Nodes.Add("June Sales")
-node = RadTreeView1.Nodes("Reports").Nodes.Add("July Sales")
-node = RadTreeView1.Nodes("Reports").Nodes.Add("First Quarter Summary")
-node = RadTreeView1.Nodes("Reports").Nodes.Add("Second Quarter Summary")
-
-````
-
-{{endregion}} 
 
 14\. Run the application.
 

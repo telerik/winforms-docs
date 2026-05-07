@@ -25,32 +25,10 @@ The sample code below shows how to start editing using the API:
 
 #### Start editing
 
-{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=startEdit}} 
-{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=startEdit}} 
+<snippet id='listview-listviewcheckboxesandeditors-startedit-cs' />
+<snippet id='listview-listviewcheckboxesandeditors-startedit-vb' />
 
-````C#
-            
-radListView1.AllowEdit = true;
-// set the SelectedItem - this item will be edited  
-// in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
-radListView1.SelectedItem = radListView1.Items[0];
-radListView1.CurrentColumn = radListView1.Columns[0];
-// this will start edit on selected item
-radListView1.BeginEdit();
 
-````
-````VB.NET
-RadListView1.AllowEdit = True
-' set the SelectedItem - this node will be edited  
-' in DetailsView you might also want to set the CurrentColumn property – the value of the selected item in this column will be edited in DetailsView
-RadListView1.SelectedItem = RadListView1.Items(0)
-RadListView1.CurrentColumn = RadListView1.Columns(0)
-' this will start edit on selected item
-RadListView1.BeginEdit()
-
-````
-
-{{endregion}} 
 
 ## Editing lifecycle
 
@@ -80,46 +58,10 @@ The following example demonstrates the usage of __ItemValidating__ event to edit
 
 #### Validation
 
-{{source=..\SamplesCS\ListView\ListViewCheckboxesAndEditors.cs region=ItemValidating}} 
-{{source=..\SamplesVB\ListView\ListViewCheckboxesAndEditors.vb region=ItemValidating}} 
+<snippet id='listview-listviewcheckboxesandeditors-itemvalidating-cs' />
+<snippet id='listview-listviewcheckboxesandeditors-itemvalidating-vb' />
 
-````C#
-    
-void radListView1_ItemValidating(object sender, ListViewItemValidatingEventArgs e)
-{
-    int newInt = 0;
-    if (int.TryParse(Convert.ToString(e.NewValue), out newInt))
-    {
-        e.NewValue = newInt;
-    }
-    else
-    {
-        e.Cancel = true;
-    }
-}
-        
-void radListView1_ValidationError(object sender, EventArgs e)
-{
-    MessageBox.Show("Invalid Value");
-}
 
-````
-````VB.NET
-Private Sub radListView1_ItemValidating(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ListViewItemValidatingEventArgs) Handles RadListView1.ItemValidating
-    Dim newInt As Integer = 0
-    If Integer.TryParse(Convert.ToString(e.NewValue), newInt) Then
-        e.NewValue = newInt
-    Else
-        e.Cancel = True
-    End If
-End Sub
-Private Sub radListView1_ValidationError(ByVal sender As Object, ByVal e As EventArgs) Handles RadListView1.ValidationError
-    MessageBox.Show("Invalid Value")
-End Sub
-
-````
-
-{{endregion}}
 
 # See Also
 

@@ -21,150 +21,8 @@ As a quick example, let’s say that we want to convert char values Y and N to T
 
 #### ToggleState converter
 
-{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=convertTypes}} 
-{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=convertTypes}} 
-
-````C#
-    
-public class ToggleStateConverter : TypeConverter
-{
-    public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
-    {
-        return destinationType == typeof(ToggleState) || destinationType == typeof(bool);
-    }
-    public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
-    {
-        if (value is char && destinationType == typeof(ToggleState))
-        {
-            char charValue = (char)value;
-            switch (charValue)
-            {
-                case 'Y':
-                    return ToggleState.On;
-                case 'N':
-                    return ToggleState.Off;
-                default:
-                    return ToggleState.Indeterminate; 
-            }
-        }
-        else if (value is bool && destinationType == typeof(char))
-        {
-            bool boolValue = (bool)value;
-            switch (boolValue)
-            {
-                case true:
-                    return 'Y';
-                case false:
-                    return 'N';
-                default:
-                    return 'M';
-            }
-        }
-        return base.ConvertTo(context, culture, value, destinationType);
-    }
-    public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
-    {
-        return sourceType == typeof(ToggleState) || sourceType == typeof(bool);
-    }
-    public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
-    {
-        ToggleState state;
-        bool boolValue;
-        if (value is ToggleState)
-        {
-            state = (ToggleState)value;
-            switch (state)
-            {
-                case ToggleState.On:
-                    return 'Y';
-                case ToggleState.Off:
-                    return 'N';
-                default:
-                    return 'M';
-            }
-        }
-        else if (value is bool)
-        {
-            boolValue = (bool)value;
-            switch (boolValue)
-            {
-                case true:
-                    return 'Y';
-                case false:
-                    return 'N';
-                default:
-                    return 'M';
-            }
-        }
-        return base.ConvertFrom(context, culture, value);
-    }
-}
-
-````
-````VB.NET
-Public Class ToggleStateConverter
-    Inherits TypeConverter
-    Public Overrides Function CanConvertTo(context As ITypeDescriptorContext, destinationType As Type) As Boolean
-        Return destinationType Is GetType(ToggleState) OrElse destinationType Is GetType(Boolean)
-    End Function
-    Public Overrides Function ConvertTo(context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object
-        If TypeOf value Is Char AndAlso destinationType Is GetType(ToggleState) Then
-            Dim charValue As Char = CChar(value)
-            Select Case charValue
-                Case "Y"c
-                    Return ToggleState.On
-                Case "N"c
-                    Return ToggleState.Off
-                Case Else
-                    Return ToggleState.Indeterminate
-            End Select
-        ElseIf TypeOf value Is Boolean AndAlso destinationType Is GetType(Char) Then
-            Dim boolValue As Boolean = CBool(value)
-            Select Case boolValue
-                Case True
-                    Return "Y"c
-                Case False
-                    Return "N"c
-                Case Else
-                    Return "M"c
-            End Select
-        End If
-        Return MyBase.ConvertTo(context, culture, value, destinationType)
-    End Function
-    Public Overrides Function CanConvertFrom(context As ITypeDescriptorContext, sourceType As Type) As Boolean
-        Return sourceType Is GetType(ToggleState) OrElse sourceType Is GetType(Boolean)
-    End Function
-    Public Overrides Function ConvertFrom(context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object
-        Dim state As ToggleState
-        Dim boolValue As Boolean
-        If TypeOf value Is ToggleState Then
-            state = CType(value, ToggleState)
-            Select Case state
-                Case ToggleState.On
-                    Return "Y"c
-                Case ToggleState.Off
-                    Return "N"c
-                Case Else
-                    Return "M"c
-            End Select
-        ElseIf TypeOf value Is Boolean Then
-            boolValue = CBool(value)
-            Select Case boolValue
-                Case True
-                    Return "Y"c
-                Case False
-                    Return "N"c
-                Case Else
-                    Return "M"c
-            End Select
-        End If
-        Return MyBase.ConvertFrom(context, culture, value)
-    End Function
-End Class
-
-````
-
-{{endregion}}
+<snippet id='gridview-convertingdatatypes-converttypes-cs' />
+<snippet id='gridview-convertingdatatypes-converttypes-vb' />
 
 ## Applying Type Converters
 
@@ -176,29 +34,8 @@ The first approach to apply type converters is to create the desired column and 
 
 #### Applying TypeConverter
 
-{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=applyingTypeConverters}} 
-{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=applyingTypeConverters}} 
-
-````C#
-    
-private void ConvertingDataTypes_Load(object sender, EventArgs e)
-{
-    GridViewCheckBoxColumn checkBox = new GridViewCheckBoxColumn("Organic", "IsOrganic");
-    checkBox.DataTypeConverter = new ToggleStateConverter();
-    this.radGridView1.Columns.Add(checkBox);
-}
-
-````
-````VB.NET
-Private Sub ConvertingDataTypes_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
-    Dim checkBox As New GridViewCheckBoxColumn("Organic", "IsOrganic")
-    checkBox.DataTypeConverter = New ToggleStateConverter()
-    Me.RadGridView1.Columns.Add(checkBox)
-End Sub
-
-````
-
-{{endregion}}
+<snippet id='gridview-convertingdatatypes-applyingtypeconverters-cs' />
+<snippet id='gridview-convertingdatatypes-applyingtypeconverters-vb' />
 
 __Applying System.ComponentModel.TypeConverterAttribute to the incompatible property of the business object used as a data source__
 
@@ -206,99 +43,8 @@ The second way to add type converters is to use the __TypeConverterAttribute__, 
 
 #### Custom class with TypeConverter attribute
 
-{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=classProduct}} 
-{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=classProduct}} 
-
-````C#
-    
-public class Product
-{
-    public int ProductID { get; set; }
-    
-    public string ProductName { get; set; }
-    
-    public string Category { get; set; }
-    
-    public int UnitsInStock { get; set; }
-    public double UnitPrice { get; set; }
-        
-    [TypeConverter(typeof(ToggleStateConverter))]
-    public char IsOrganic { get; set; }
-    public double DeliveryDate { get; set; }
-}
-
-````
-````VB.NET
-Public Class Product
-    Public Property ProductID() As Integer
-        Get
-            Return m_ProductID
-        End Get
-        Set(ByVal value As Integer)
-            m_ProductID = value
-        End Set
-    End Property
-    Private m_ProductID As Integer
-    Public Property ProductName() As String
-        Get
-            Return m_ProductName
-        End Get
-        Set(ByVal value As String)
-            m_ProductName = value
-        End Set
-    End Property
-    Private m_ProductName As String
-    Public Property Category() As String
-        Get
-            Return m_Category
-        End Get
-        Set(ByVal value As String)
-            m_Category = value
-        End Set
-    End Property
-    Private m_Category As String
-    Public Property UnitsInStock() As Integer
-        Get
-            Return m_UnitsInStock
-        End Get
-        Set(ByVal value As Integer)
-            m_UnitsInStock = value
-        End Set
-    End Property
-    Private m_UnitsInStock As Integer
-    Public Property UnitPrice() As Double
-        Get
-            Return m_UnitPrice
-        End Get
-        Set(ByVal value As Double)
-            m_UnitPrice = value
-        End Set
-    End Property
-    Private m_UnitPrice As Double
-    <TypeConverter(GetType(ToggleStateConverter))> _
-    Public Property IsOrganic() As Char
-        Get
-            Return m_IsOrganic
-        End Get
-        Set(ByVal value As Char)
-            m_IsOrganic = value
-        End Set
-    End Property
-    Private m_IsOrganic As Char
-    Public Property DeliveryDate() As Double
-        Get
-            Return m_DeliveryDate
-        End Get
-        Set(ByVal value As Double)
-            m_DeliveryDate = value
-        End Set
-    End Property
-    Private m_DeliveryDate As Double
-End Class
-
-````
-
-{{endregion}}
+<snippet id='gridview-convertingdatatypes-classproduct-cs' />
+<snippet id='gridview-convertingdatatypes-classproduct-vb' />
 
 ## Handling Null Values
 
@@ -306,20 +52,8 @@ The RadGridView’s conversation layer can handle null values. You can specify t
 
 #### Handling null values
 
-{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=handlingNullValues}} 
-{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=handlingNullValues}} 
-
-````C#
-            
-this.radGridView1.Columns["ProductName"].DataSourceNullValue = "ENTER PRODUCT NAME";
-
-````
-````VB.NET
-Me.RadGridView1.Columns("ProductName").DataSourceNullValue = "ENTER PRODUCT NAME"
-
-````
-
-{{endregion}}
+<snippet id='gridview-convertingdatatypes-handlingnullvalues-cs' />
+<snippet id='gridview-convertingdatatypes-handlingnullvalues-vb' />
 
 ## Using the TypeConverter when sorting.
 
@@ -330,45 +64,9 @@ The type converter can be used when the column is sorted as well. To enable this
 
 #### Handling null values when sorting
 
-{{source=..\SamplesCS\GridView\Columns\ConvertingDataTypes.cs region=Float}} 
-{{source=..\SamplesVB\GridView\Columns\ConvertingDataTypes.vb region=Float}} 
+<snippet id='gridview-convertingdatatypes-float-cs' />
+<snippet id='gridview-convertingdatatypes-float-vb' />
 
-````C#
-public class CustomFloatConverter : TypeConverter
-{
-    public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
-    {
-        return destinationType == typeof(float);
-    }
-        
-    public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
-    {
-        if (destinationType == typeof(float) && (value == null || value is DBNull))
-        {
-            return float.MinValue;
-        }
-        return value;
-    }
-}
-
-````
-````VB.NET
-Public Class CustomFloatConverter
-    Inherits TypeConverter
-    Public Overrides Function CanConvertTo(ByVal context As ITypeDescriptorContext, ByVal destinationType As Type) As Boolean
-        Return destinationType Is GetType(Single)
-    End Function
-    Public Overrides Function ConvertTo(ByVal context As ITypeDescriptorContext, ByVal culture As CultureInfo, ByVal value As Object, ByVal destinationType As Type) As Object
-        If destinationType Is GetType(Single) AndAlso (value Is Nothing OrElse TypeOf value Is DBNull) Then
-            Return Single.MinValue
-        End If
-        Return value
-    End Function
-End Class
-
-````
-
-{{endregion}}
 # See Also
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
 

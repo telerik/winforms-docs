@@ -28,33 +28,10 @@ In order to capture the click event of the items, add an event handler for anoth
 
 #### Adding items to QuickAccessToolbar
 
-{{source=..\SamplesCS\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheQuickAccessMenu.cs region=addingItemsToQuickAccessToolBar}} 
-{{source=..\SamplesVB\RibbonBar\ProgrammingRadRibbonBar\CustomizingTheQuickAccessMenu.vb region=addingItemsToQuickAccessToolBar}} 
+<snippet id='ribbonbar-customizingthequickaccessmenu-addingitemstoquickaccesstoolbar-cs' />
+<snippet id='ribbonbar-customizingthequickaccessmenu-addingitemstoquickaccesstoolbar-vb' />
 
-````C#
-RadMenuItem mnuQANew = new RadMenuItem();
-mnuQANew.Click += new EventHandler(NewFile);
-mnuQANew.Text = "Menu item: New File";
-radRibbonBar1.QuickAccessToolBarItems.Add(mnuQANew);
-RadButtonElement mnuQAPrint = new RadButtonElement();
-mnuQAPrint.Click += new EventHandler(QuickPrint);
-mnuQAPrint.Text = "Menu item: Quick Print";
-radRibbonBar1.QuickAccessToolBarItems.Add(mnuQAPrint);
 
-````
-````VB.NET
-Dim mnuQANew As New RadMenuItem
-AddHandler mnuQANew.Click, AddressOf NewFile
-mnuQANew.Text = "Menu item: New File"
-RadRibbonBar1.QuickAccessToolBarItems.Add(mnuQANew)
-Dim mnuQAPrint As New RadButtonElement
-AddHandler mnuQAPrint.Click, AddressOf QuickPrint
-mnuQAPrint.Text = "Menu item: Print"
-RadRibbonBar1.QuickAccessToolBarItems.Add(mnuQAPrint)
-
-````
-
-{{endregion}}
 
 >note The **RadQuickAccessToolBar** exposes the **SetItemVisibility** method which can be used at run-time to toggle the visible state of its items.
 

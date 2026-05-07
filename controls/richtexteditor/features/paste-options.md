@@ -71,21 +71,9 @@ You can invoke the paste with specific options through the RadRichTextEditor/Rad
 
 #### [C#] Example 1: Paste with Specific Settings
 
-{{source=..\SamplesCS\RichTextEditor\Features\ClipboardSupport.cs region=PasteAsOptions}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ClipboardSupport.vb region=PasteAsOptions}} 
+<snippet id='richtexteditor-clipboardsupport-pasteasoptions-cs' />
+<snippet id='richtexteditor-clipboardsupport-pasteasoptions-vb' />
 
-````C#
-
-this.radRichTextEditor1.Paste(Telerik.WinForms.Documents.Model.PasteOption.MergeFormatting);
-
-````
-````VB.NET
-
-Me.radRichTextEditor1.Paste(Telerik.WinForms.Documents.Model.PasteOption.MergeFormatting)      
-
-````
-
-{{endregion}} 
 
 
 ## Executing Paste through UI

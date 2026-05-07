@@ -19,27 +19,10 @@ When searching for node(s) you have several options that you can use
 
 The following example demonstrates how to search for a single node by its text and how to get all nodes whose __Tag__ is not null by using a __Predicate__:
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=find}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=find}} 
+<snippet id='treeview-workingwithnodes1-find-cs' />
+<snippet id='treeview-workingwithnodes1-find-vb' />
 
-````C#
-RadTreeNode resultOfSearch = radTreeView1.Find("Child Node");
-            
-Predicate<RadTreeNode> match = new Predicate<RadTreeNode>(delegate(RadTreeNode node)
-{
-    return node.Tag != null ? true : false;
-});
-RadTreeNode[] result = radTreeView1.FindNodes(match);
 
-````
-````VB.NET
-Dim resultOfSearch As RadTreeNode = RadTreeView1.Find("Child Node")
-Dim match As New Predicate(Of RadTreeNode)(Function(node As RadTreeNode) If(node.Tag IsNot Nothing, True, False))
-Dim result As RadTreeNode() = RadTreeView1.FindNodes(match)
-
-````
-
-{{endregion}}
 
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})

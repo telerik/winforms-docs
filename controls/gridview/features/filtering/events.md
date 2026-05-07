@@ -13,33 +13,8 @@ previous_url: gridview-filtering-events
 
 There are two events that are raised when the data in the RadGridView is filtered. The first one is the __FilterChanging__ event and it is raised before the data is filtered. The second one is the __FilterChanged__ event which is raised after the data is filtered.
 
-{{source=..\SamplesCS\GridView\Filtering\FilteringEvents.cs region=events1}} 
-{{source=..\SamplesVB\GridView\Filtering\FilteringEvents.vb region=events1}} 
-````C#
-void radGridView1_FilterChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)
-{
-    
-}
-
-void radGridView1_FilterChanging(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
-{
-
-}
-
-
-````
-````VB.NET
-Private Sub RadGridView1_FilterChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangedEventArgs) Handles RadGridView1.FilterChanged
-
-End Sub
-
-Private Sub RadGridView1_FilterChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.FilterChanging
-
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filteringevents-events1-cs' />
+<snippet id='gridview-filteringevents-events1-vb' />
 
 From the event arguments of both events you can access the following data:
 
@@ -49,57 +24,15 @@ From the event arguments of both events you can access the following data:
 
 You are also able to cancel the filtering operation by setting the __Cancel__ property to *True*.
 
-{{source=..\SamplesCS\GridView\Filtering\FilteringEvents.cs region=cancelFilteringEvent}} 
-{{source=..\SamplesVB\GridView\Filtering\FilteringEvents.vb region=cancelFilteringEvent}} 
-````C#
-void radGridView1_FilterChanging1(object sender, Telerik.WinControls.UI.GridViewCollectionChangingEventArgs e)
-{
-    e.Cancel = true;
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_FilterChanging1(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCollectionChangingEventArgs) Handles RadGridView1.FilterChanging
-    e.Cancel = True
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filteringevents-cancelfilteringevent-cs' />
+<snippet id='gridview-filteringevents-cancelfilteringevent-vb' />
 
 Since the __FilterDescriptors__ collection implements the __INotifyCollectionChanged__ interface, you can use its __CollectionChanged__ event:
 
-{{source=..\SamplesCS\GridView\Filtering\FilteringEvents.cs region=collectionChanged}} 
-{{source=..\SamplesVB\GridView\Filtering\FilteringEvents.vb region=collectionChanged}} 
-````C#
-this.radGridView1.FilterDescriptors.CollectionChanged += new Telerik.WinControls.Data.NotifyCollectionChangedEventHandler(FilterDescriptors_CollectionChanged);
-
-````
-````VB.NET
-AddHandler Me.RadGridView1.FilterDescriptors.CollectionChanged, AddressOf FilterDescriptors_CollectionChanged
-
-````
-
-{{endregion}} 
-
-{{source=..\SamplesCS\GridView\Filtering\FilteringEvents.cs region=collectionChanged1}} 
-{{source=..\SamplesVB\GridView\Filtering\FilteringEvents.vb region=collectionChanged1}} 
-
-````C#
-void FilterDescriptors_CollectionChanged(object sender, Telerik.WinControls.Data.NotifyCollectionChangedEventArgs e)
-{
-    
-}
-
-````
-````VB.NET
-Private Sub FilterDescriptors_CollectionChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.Data.NotifyCollectionChangedEventArgs)
-    Throw New NotImplementedException
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filteringevents-collectionchanged-cs' />
+<snippet id='gridview-filteringevents-collectionchanged-vb' />
+<snippet id='gridview-filteringevents-collectionchanged1-cs' />
+<snippet id='gridview-filteringevents-collectionchanged1-vb' />
 
 The arguments of this event provide the same data as the __FilterChanged__ event.
         

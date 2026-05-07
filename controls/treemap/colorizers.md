@@ -56,25 +56,10 @@ The available palettes for the PaletteColorizer are:
 
 #### Apply PaletteColorizer
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=PaletteColorizer}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=PaletteColorizer}} 
+<snippet id='treemap-treemapgettingstarted-palettecolorizer-cs' />
+<snippet id='treemap-treemapgettingstarted-palettecolorizer-vb' />
 
-````C#
 
-PaletteColorizer paletteColorizer = new PaletteColorizer();
-paletteColorizer.Palette = TreeMapPalette.Arctic;
-this.radTreeMap1.Colorizer = paletteColorizer;        
-
-````
-````VB.NET
-
-Dim paletteColorizer As PaletteColorizer = New PaletteColorizer()
-paletteColorizer.Palette = TreeMapPalette.Arctic
-Me.radTreeMap1.Colorizer = paletteColorizer
-
-````
-
-{{endregion}}
 
 >caption TreeMapPalette.Arctic
 
@@ -88,32 +73,10 @@ This RangeColorizer contains a set of ranges defined by the **Stops** collection
 
 ![WinForms RadTreeMap RangeColorizer](images/treemap-colorizers002.png)
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=RangeColorizer}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=RangeColorizer}} 
+<snippet id='treemap-treemapgettingstarted-rangecolorizer-cs' />
+<snippet id='treemap-treemapgettingstarted-rangecolorizer-vb' />
 
-````C#
-            
-RangeColorizer rangeColorizer = new RangeColorizer();
-rangeColorizer.Palette = TreeMapPalette.Cold;
-rangeColorizer.Stops.AddRange(new List<double>() { 5, 10, 20, 25, 60 });
-this.radTreeMap1.Colorizer = rangeColorizer; 
 
-````
-````VB.NET
-Dim rangeColorizer As RangeColorizer = New RangeColorizer()
-rangeColorizer.Palette = TreeMapPalette.Cold
-rangeColorizer.Stops.AddRange(New List(Of Double)() From {
-    5,
-    10,
-    20,
-    25,
-    60
-})
-Me.radTreeMap1.Colorizer = rangeColorizer
-
-````
-
-{{endregion}}
 
 >Each Stop value can be absolute or relative (between 0 and 1) depending on the IsAbsolute property value. This may be useful for cases when half of the items need to be colored in one color, and the rest of them in another. Just add Stops 0, 0.5, 1 and thus two ranges will be defined: 0-0.5 and 0.5-1. Two palette colorw will be used in this case.
 
@@ -123,27 +86,10 @@ A colorizer, which contains a set of gradient stops. It chooses the color to be 
 
 ![WinForms RadTreeMap GradientColorizer](images/treemap-colorizers003.png)
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=GradientColorizer}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=GradientColorizer}} 
+<snippet id='treemap-treemapgettingstarted-gradientcolorizer-cs' />
+<snippet id='treemap-treemapgettingstarted-gradientcolorizer-vb' />
 
-````C#
 
-GradientColorizer gradientColorizer = new GradientColorizer();
-gradientColorizer.StartColor = Color.Red;
-gradientColorizer.EndColor = Color.Yellow;
-this.radTreeMap1.Colorizer = gradientColorizer;         
- 
-````
-````VB.NET
-
-Dim gradientColorizer As GradientColorizer = New GradientColorizer()
-gradientColorizer.StartColor = System.Drawing.Color.Red
-gradientColorizer.EndColor = System.Drawing.Color.Yellow
-Me.radTreeMap1.Colorizer = gradientColorizer
-
-````
-
-{{endregion}} 
 
 In case of grouping, the GradientColorizer offers:
 
@@ -153,27 +99,10 @@ In case of grouping, the GradientColorizer offers:
 
 >note The **StartColor** and **EndColor** properties have default values coming from the first color defined in the two palettes respectively.
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=GroupedGradient}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=GroupedGradient}} 
+<snippet id='treemap-treemapgettingstarted-groupedgradient-cs' />
+<snippet id='treemap-treemapgettingstarted-groupedgradient-vb' />
 
-````C#
 
-GradientColorizer groupGradientColorizer = new GradientColorizer();
-groupGradientColorizer.StartPalette = TreeMapPalette.Fluent;
-groupGradientColorizer.EndPalette = TreeMapPalette.Forest;
-this.radTreeMap1.Colorizer = groupGradientColorizer;       
- 
-````
-````VB.NET
-
-Dim groupGradientColorizer As GradientColorizer = New GradientColorizer()
-groupGradientColorizer.StartPalette = TreeMapPalette.Fluent
-groupGradientColorizer.EndPalette = TreeMapPalette.Forest
-Me.radTreeMap1.Colorizer = groupGradientColorizer
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTreeMap Start/End Palette](images/treemap-colorizers006.png)
  

@@ -24,22 +24,11 @@ The **ShowNavigationOptionsMenuItem** property indicates whether to show the nav
 
 #### Hide NavigationOptionsMenuItem
 
-{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=ShowNavigationOptionsMenuItem}} 
-{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=ShowNavigationOptionsMenuItem}} 
+<snippet id='officenavigationbar-officenavigationbargettingstarted-shownavigationoptionsmenuitem-cs' />
+<snippet id='officenavigationbar-officenavigationbargettingstarted-shownavigationoptionsmenuitem-vb' />
 
-````C#
 
-this.radOfficeNavigationBar1.ShowNavigationOptionsMenuItem = false;         
 
-````
-````VB.NET
-
-Me.radOfficeNavigationBar1.ShowNavigationOptionsMenuItem = False       
-
-````
-
-{{endregion}} 
- 
 The dialog offers the following settings:
 
 * **Maximum number of visible items**: controls the **VisibleItemsCount** property which indicates how many items to be visible on the strip. If this property is not set, it returns the count of items.

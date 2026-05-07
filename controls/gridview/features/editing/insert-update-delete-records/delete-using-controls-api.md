@@ -17,33 +17,8 @@ Two general approaches in adding new rows exist. The first one is to add rows di
 
 #### Adding rows to the rows collection
 
-{{source=..\SamplesCS\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.cs region=addingToTheRowsCollection}} 
-{{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=addingToTheRowsCollection}} 
-
-````C#
-object[] row1 = new object[3];
-row1[0] = 1;
-row1[1] = "some text";
-row1[2] = true;
-// add first row
-radGridView1.Rows.Add(row1);
-// add second row
-radGridView1.Rows.Add(2, "another text", false);
-
-````
-````VB.NET
-Dim row1 As Object() = New Object(3) {}
-row1(0) = 1
-row1(1) = "some text"
-row1(2) = True
-' add first row
-RadGridView1.Rows.Add(row1)
-' add second row
-RadGridView1.Rows.Add(2, "another text", False)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-insertupdatedeleterecords-addingtotherowscollection-cs' />
+<snippet id='gridview-insertupdatedeleterecords-addingtotherowscollection-vb' />
 
 ## Update rows
 
@@ -53,21 +28,8 @@ Before the value is set __Validating__ event is fired. This event could be __can
 
 #### Assigning value to a cell
 
-{{source=..\SamplesCS\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.cs region=assigningACellValue}} 
-{{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=assigningACellValue}} 
-
-````C#
-radGridView1.Rows[0].Cells[0].Value = 4.3;
-radGridView1.Rows[1].Cells["Column1"].Value = 114f;
-
-````
-````VB.NET
-RadGridView1.Rows(0).Cells(0).Value = 4.3
-RadGridView1.Rows(1).Cells("Column1").Value = 114.0F
-
-````
-
-{{endregion}} 
+<snippet id='gridview-insertupdatedeleterecords-assigningacellvalue-cs' />
+<snippet id='gridview-insertupdatedeleterecords-assigningacellvalue-vb' />
 
 ## Delete rows
 
@@ -75,23 +37,8 @@ To delete row call __GridViewRowCollection.Remove__(GridViewRowInfo value) or _
 
 #### Removing a row from the rows collection
 
-{{source=..\SamplesCS\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.cs region=removingARowFromTheRowsCollection}} 
-{{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=removingARowFromTheRowsCollection}} 
-
-````C#
-this.radGridView1.Rows.RemoveAt(1);
-this.radGridView1.Rows.Remove(this.radGridView1.CurrentRow);
-
-````
-````VB.NET
-Me.RadGridView1.Rows.RemoveAt(1)
-Me.RadGridView1.Rows.Remove(Me.RadGridView1.CurrentRow)
-
-````
-
-{{endregion}} 
-
-
+<snippet id='gridview-insertupdatedeleterecords-removingarowfromtherowscollection-cs' />
+<snippet id='gridview-insertupdatedeleterecords-removingarowfromtherowscollection-vb' />
 
 # See Also
 * [Data Editing Event Sequence]({%slug winforms/gridview/insert/update/delete-records/data-editing-event-sequence%})

@@ -24,62 +24,10 @@ To bind the series you need to set the __ValueMember__ property. The following e
 
 #### Bind Series to a DataTable
 
-{{source=..\SamplesCS\Sparkline\SparklineCode.cs region=BindToTable}} 
-{{source=..\SamplesVB\Sparkline\SparklineCode.vb region=BindToTable}}
-````C#
-DataTable table;
-public void AddBoundSeries()
-{
-    table = new DataTable();
-    table.Columns.Add("Value", typeof(double));
-    table.Rows.Add(1);
-    table.Rows.Add(-3);
-    table.Rows.Add(5);
-    table.Rows.Add(1);
-    table.Rows.Add(6);
-    table.Rows.Add(-1);
-    table.Rows.Add(3);
-    table.Rows.Add(-5);
-    table.Rows.Add(1);
-    table.Rows.Add(6);
-    SparkLineSeries lineSeries = new SparkLineSeries();
-    lineSeries.ValueMember = "Value";
-    lineSeries.DataSource = table;
-    lineSeries.ShowMarkers = true;
-    lineSeries.ShowHighPointIndicator = true;
-    lineSeries.ShowLowPointIndicator = true;
-    radSparkline1.Series = lineSeries;
-}
+<snippet id='sparkline-sparklinecode-bindtotable-cs' />
+<snippet id='sparkline-sparklinecode-bindtotable-vb' />
 
-````
-````VB.NET
-Private table As DataTable
-Public Sub AddBoundSeries()
-    table = New DataTable()
-    table.Columns.Add("Value", GetType(Double))
-    table.Rows.Add(1)
-    table.Rows.Add(-3)
-    table.Rows.Add(5)
-    table.Rows.Add(1)
-    table.Rows.Add(6)
-    table.Rows.Add(-1)
-    table.Rows.Add(3)
-    table.Rows.Add(-5)
-    table.Rows.Add(1)
-    table.Rows.Add(6)
-    Dim lineSeries As New SparkLineSeries()
-    lineSeries.ValueMember = "Value"
-    lineSeries.DataSource = table
-    lineSeries.ShowMarkers = True
-    lineSeries.ShowHighPointIndicator = True
-    lineSeries.ShowLowPointIndicator = True
-    radSparkline1.Series = lineSeries
-End Sub
 
-````
- 
-
-{{endregion}} 
 
 The bellow image show the result from the above code.
 

@@ -32,28 +32,5 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Buttons\RepeatButton.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\Buttons\RepeatButton.vb region=AccessingCustomizingElements}} 
-
-````C#
-this.radRepeatButton1.ButtonElement.TextElement.ForeColor = Color.Red;
-this.radRepeatButton1.ButtonElement.ButtonFillElement.BackColor = Color.Aqua;
-this.radRepeatButton1.ButtonElement.BorderElement.BoxStyle = Telerik.WinControls.BorderBoxStyle.FourBorders;
-this.radRepeatButton1.ButtonElement.BorderElement.TopColor = Color.Aqua;
-this.radRepeatButton1.ButtonElement.BorderElement.BottomColor = Color.Aqua;
-this.radRepeatButton1.ButtonElement.BorderElement.LeftColor = Color.Red;
-this.radRepeatButton1.ButtonElement.BorderElement.RightColor = Color.Red;
-
-````
-````VB.NET
-Me.radRepeatButton1.ButtonElement.TextElement.ForeColor = Color.Red
-Me.radRepeatButton1.ButtonElement.ButtonFillElement.BackColor = Color.Aqua
-Me.radRepeatButton1.ButtonElement.BorderElement.BoxStyle = Telerik.WinControls.BorderBoxStyle.FourBorders
-Me.radRepeatButton1.ButtonElement.BorderElement.TopColor = Color.Aqua
-Me.radRepeatButton1.ButtonElement.BorderElement.BottomColor = Color.Aqua
-Me.radRepeatButton1.ButtonElement.BorderElement.LeftColor = Color.Red
-Me.radRepeatButton1.ButtonElement.BorderElement.RightColor = Color.Red
-
-````
-
-{{endregion}} 
+<snippet id='buttons-repeatbutton-accessing-and-customizing-elements-accessingcustomizingelements-cs' />
+<snippet id='buttons-repeatbutton-accessing-and-customizing-elements-accessingcustomizingelements-vb' />

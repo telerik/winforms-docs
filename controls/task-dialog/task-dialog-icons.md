@@ -14,30 +14,10 @@ position: 4
 
 #### Specifying the dialog icon
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=DialogIcon}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=DialogIcon}}
+<snippet id='task-dialog-taskdialoggettingstarted-dialogicon-cs' />
+<snippet id='task-dialog-taskdialoggettingstarted-dialogicon-vb' />
 
-````C#
-             RadTaskDialogPage page = new RadTaskDialogPage();
-            page.Caption = "Window Title";
-            page.Heading = "Main instruction";
-            page.Text = "Main text here...";
-            page.Icon = RadTaskDialogIcon.Information;
-            RadTaskDialog.Show(page);        
 
-````
-````VB.NET
-
-         Dim page As RadTaskDialogPage = New RadTaskDialogPage()
-        page.Caption = "Window Title"
-        page.Heading = "Main instruction"
-        page.Text = "Main text here..."
-        page.Icon = RadTaskDialogIcon.Information
-        RadTaskDialog.Show(page)    
-
-````
-
-{{endregion}}
 
 You can find listed below the available built-in icons:
 
@@ -89,29 +69,10 @@ If none of the built-in icons fits your needs, it is possible to construct your 
 
 ![WinForms RadTaskDialog Custom Icon](images/task-dialog-icons011.png)
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=CustomIcon}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=CustomIcon}}
+<snippet id='task-dialog-taskdialoggettingstarted-customicon-cs' />
+<snippet id='task-dialog-taskdialoggettingstarted-customicon-vb' />
 
-````C#
-             RadTaskDialogPage page = new RadTaskDialogPage();
-            page.Caption = "Window Title";
-            page.Heading = "Main instruction";
-            page.Text = "Main text here...";
-            page.Icon = new RadTaskDialogIcon(new Bitmap(Properties.Resources.TV_car,new Size(64,64)));
-            RadTaskDialog.Show(page);      
 
-````
-````VB.NET
-          Dim page As RadTaskDialogPage = New RadTaskDialogPage()
-        page.Caption = "Window Title"
-        page.Heading = "Main instruction"
-        page.Text = "Main text here..."
-        page.Icon = New RadTaskDialogIcon(New Bitmap(My.Resources.TV_car1, New Size(64, 64)))
-        RadTaskDialog.Show(page)  
-
-````
-
-{{endregion}}
 
 # See Also
 

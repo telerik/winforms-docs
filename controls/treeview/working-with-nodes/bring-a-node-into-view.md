@@ -14,21 +14,10 @@ previous_url: treeview-working-with-nodes-bring-a-node-into-view
 
 In cases where you have a tree view with many nodes and limited space on the form, you need to scroll the control in order to find a specific node. __RadTreeView__ control handles this automatically for you. To scroll the control to a node use the __BringIntoView__ method.
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=bringIntoView}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=bringIntoView}} 
+<snippet id='treeview-workingwithnodes1-bringintoview-cs' />
+<snippet id='treeview-workingwithnodes1-bringintoview-vb' />
 
-````C#
-RadTreeNode lastRootNode = radTreeView1.Nodes[radTreeView1.Nodes.Count - 1];
-radTreeView1.BringIntoView(lastRootNode.Nodes[lastRootNode.Nodes.Count - 1]);
 
-````
-````VB.NET
-Dim lastRootNode As RadTreeNode = RadTreeView1.Nodes(RadTreeView1.Nodes.Count - 1)
-RadTreeView1.BringIntoView(lastRootNode.Nodes(lastRootNode.Nodes.Count - 1))
-
-````
-
-{{endregion}}
 
 >important The **BringIntoView** method does not select the node!
 >

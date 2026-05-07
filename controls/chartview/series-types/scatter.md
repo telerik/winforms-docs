@@ -15,56 +15,9 @@ Unlike Categorical series, __ScatterSeries__ plots its data upon two numerical a
 
 #### Initial Setup
 
-{{source=..\SamplesCS\ChartView\Series\ScatterSeriesForm.cs region=scatter}} 
-{{source=..\SamplesVB\ChartView\Series\ScatterSeriesForm.vb region=scatter}} 
+<snippet id='chartview-scatter-scatter-cs'/>
+<snippet id='chartview-scatter-scatter-vb'/>
 
-````C#
-            
-ScatterSeries scatterSeries = new ScatterSeries();
-scatterSeries.Name = "";
-scatterSeries.DataPoints.Add(new ScatterDataPoint(15, 19));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(18, 10));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(13, 15));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(10, 8));
-scatterSeries.DataPoints.Add(new ScatterDataPoint(5, 12));
-scatterSeries.PointSize = new SizeF(8, 8);
-this.radChartView1.Series.Add(scatterSeries);
-            
-ScatterSeries scatterSeries2 = new ScatterSeries();
-scatterSeries2.Name = "";
-scatterSeries2.DataPoints.Add(new ScatterDataPoint(20, 20));
-scatterSeries2.DataPoints.Add(new ScatterDataPoint(15, 10));
-scatterSeries2.DataPoints.Add(new ScatterDataPoint(7, 6));
-scatterSeries2.DataPoints.Add(new ScatterDataPoint(18, 22));
-scatterSeries2.DataPoints.Add(new ScatterDataPoint(10, 10));
-scatterSeries2.PointSize = new SizeF(8, 8);
-scatterSeries.Shape = new RoundRectShape(0);
-this.radChartView1.Series.Add(scatterSeries2);
-
-````
-````VB.NET
-Dim scatterSeries As New ScatterSeries()
-scatterSeries.Name = ""
-scatterSeries.DataPoints.Add(New ScatterDataPoint(15, 19))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(18, 10))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(13, 15))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(10, 8))
-scatterSeries.DataPoints.Add(New ScatterDataPoint(5, 12))
-scatterSeries.PointSize = New SizeF(8, 8)
-Me.RadChartView1.Series.Add(scatterSeries)
-Dim scatterSeries2 As New ScatterSeries()
-scatterSeries2.Name = ""
-scatterSeries2.DataPoints.Add(New ScatterDataPoint(20, 20))
-scatterSeries2.DataPoints.Add(New ScatterDataPoint(15, 10))
-scatterSeries2.DataPoints.Add(New ScatterDataPoint(7, 6))
-scatterSeries2.DataPoints.Add(New ScatterDataPoint(18, 22))
-scatterSeries2.DataPoints.Add(New ScatterDataPoint(10, 10))
-scatterSeries2.PointSize = New SizeF(8, 8)
-Me.RadChartView1.Series.Add(scatterSeries2)
-
-````
-
-{{endregion}} 
 
 
 >caption Figure 1: Initial Setup
@@ -82,22 +35,10 @@ __ScatterSeries__ have few important properties:
 
 #### Custom Shape
 
-{{source=..\SamplesCS\ChartView\Series\ScatterSeriesForm.cs region=shape}} 
-{{source=..\SamplesVB\ChartView\Series\ScatterSeriesForm.vb region=shape}} 
+<snippet id='chartview-scatter-shape-cs'/>
+<snippet id='chartview-scatter-shape-vb'/>
 
-````C#
-            
-RoundRectShape shape = new RoundRectShape(0);
-scatterSeries2.Shape = shape;
 
-````
-````VB.NET
-Dim shape As New RoundRectShape(0)
-scatterSeries2.Shape = shape
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Custom Shape
 ![WinForms RadChartView Scatter Custom Shape](images/chartview-series-types-scatter002.png)

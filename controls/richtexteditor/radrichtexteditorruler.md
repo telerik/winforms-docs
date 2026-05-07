@@ -36,36 +36,8 @@ Since __RadRichTextEditorRuler__ is a separate control it is available in the to
 
 You can add the control in code as well. The following snippet demonstrates how to add __RadRichTextEditorRuler__ and __RadRichTextEditor__ to a form:
 
-{{source=..\SamplesCS\RichTextEditor\RadRichTextEditorRulerCode.cs region=ruler}} 
-{{source=..\SamplesVB\RichTextEditor\RadRichTextEditorRulerCode.vb region=ruler}} 
-
-````C#
-void RadRichTextEditorRuler_Load(object sender, EventArgs e)
-{
-    RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
-    radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged;
-    RadRichTextEditorRuler documentRuler1 = new Telerik.WinControls.UI.RadRichTextEditorRuler();
-    documentRuler1.AssociatedRichTextBox = radRichTextEditor1;
-    documentRuler1.Dock = System.Windows.Forms.DockStyle.Fill;
-    documentRuler1.Controls.Add(radRichTextEditor1);
-    this.Controls.Add(documentRuler1);
-}
-
-````
-````VB.NET
-Private Sub RadRichTextEditorRuler_Load(ByVal sender As Object, ByVal e As EventArgs)
-    Dim radRichTextEditor1 As New RadRichTextEditor()
-    radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
-    Dim documentRuler1 As RadRichTextEditorRuler = New Telerik.WinControls.UI.RadRichTextEditorRuler()
-    documentRuler1.AssociatedRichTextBox = radRichTextEditor1
-    documentRuler1.Dock = System.Windows.Forms.DockStyle.Fill
-    documentRuler1.Controls.Add(radRichTextEditor1)
-    Me.Controls.Add(documentRuler1)
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='richtexteditor-radrichtexteditorrulercode-ruler-cs' />
+<snippet id='richtexteditor-radrichtexteditorrulercode-ruler-vb' />
 
 
 

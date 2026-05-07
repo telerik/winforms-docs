@@ -18,24 +18,10 @@ __DocxFormatProvider__ exposes __ExportSettings__, which allow customization in 
 
 #### DocxFormatProvider Settings
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\DocxFormatProviderForm.cs region=DocxFormatProvider}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\DocxFormatProviderForm.vb region=DocxFormatProvider}}
-````C#
-DocxFormatProvider docxFormatProvider = DocumentFormatProvidersManager.GetProviderByExtension("docx") as DocxFormatProvider;
-DocxExportSettings docxExportSettings = new DocxExportSettings();
-docxFormatProvider.ExportSettings = docxExportSettings;
-
-````
-````VB.NET
-Dim docxFormatProvider As DocxFormatProvider = TryCast(DocumentFormatProvidersManager.GetProviderByExtension("docx"), DocxFormatProvider)
-Dim docxExportSettings As DocxExportSettings = New DocxExportSettings()
-docxFormatProvider.ExportSettings = docxExportSettings
-
-```` 
+<snippet id='richtexteditor-docxformatproviderform-docxformatprovider-cs' />
+<snippet id='richtexteditor-docxformatproviderform-docxformatprovider-vb' />
 
 
-
-{{endregion}}
 
 The __FieldResultMode__ property of the __DocxExportSettings__ is an enumeration and it allows the following values:
 * __Code__: Shows all fields codes in the current document.

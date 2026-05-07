@@ -38,18 +38,8 @@ The following example demonstrates how you can use commands to navigate and dele
 
 #### Example 1: Using commands in code-behind
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=Commands}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=Commands}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-commands-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-commands-vb' />
 
-````C#
-this.radSyntaxEditor1.Commands.NavigateNextMatchCommand.Execute("Telerik");
-this.radSyntaxEditor1.Commands.DeleteCommand.Execute(null);
 
-````
-````VB.NET
-Me.radSyntaxEditor1.Commands.NavigateNextMatchCommand.Execute("Telerik")
-Me.radSyntaxEditor1.Commands.DeleteCommand.Execute(Nothing)
 
-````
-
-{{endregion}}

@@ -45,44 +45,10 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 
 #### Adding a RadTaskDialogProgressBar
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=ProgressElement}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=ProgressElement}}
+<snippet id='task-dialog-taskdialoggettingstarted-progresselement-cs' />
+<snippet id='task-dialog-taskdialoggettingstarted-progresselement-vb' />
 
-````C#
-            RadTaskDialogPage page = new RadTaskDialogPage();
-            page.Caption = "Window Title";
-            page.Heading = "Main instruction";
-            page.Text = "Main text here...";
-            page.Icon = RadTaskDialogIcon.ShieldErrorRedBar;
-            page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.FlatShieldSuccess, new Size(32, 32));
 
-            RadTaskDialogProgressBar taskProgressBar = new RadTaskDialogProgressBar();
-            taskProgressBar.Value = 30;
-            taskProgressBar.State = RadTaskDialogProgressBarState.Error;
-            page.ProgressBar = taskProgressBar;
-            page.ProgressBar.Text = "Content";
-
-            RadTaskDialog.ShowDialog(page);
-
-````
-````VB.NET
-
-        Dim page As RadTaskDialogPage = New RadTaskDialogPage()
-        page.Caption = "Window Title"
-        page.Heading = "Main instruction"
-        page.Text = "Main text here..."
-        page.Icon = RadTaskDialogIcon.ShieldErrorRedBar
-        page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.FlatShieldSuccess, New Size(32, 32))
-        Dim taskProgressBar As RadTaskDialogProgressBar = New RadTaskDialogProgressBar()
-        taskProgressBar.Value = 30
-        taskProgressBar.State = RadTaskDialogProgressBarState.[Error]
-        page.ProgressBar = taskProgressBar
-        page.ProgressBar.Text = "Content"
-        RadTaskDialog.ShowDialog(page)
-
-````
-
-{{endregion}}
 
 ## RadTaskDialogVerificationCheckBox
 
@@ -92,43 +58,10 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 
 #### Adding a RadTaskDialogVerificationCheckBox
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=VerificationCheckBox}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=VerificationCheckBox}}
+<snippet id='task-dialog-taskdialoggettingstarted-verificationcheckbox-cs' />
+<snippet id='task-dialog-taskdialoggettingstarted-verificationcheckbox-vb' />
 
-````C#
-            RadTaskDialogPage page = new RadTaskDialogPage();
-            page.Caption = "Window Title";
-            page.Heading = "Main instruction";
-            page.Text = "Main text here...";
-            page.Icon = RadTaskDialogIcon.ShieldErrorRedBar;
-            page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.FlatShieldSuccess, new Size(32, 32));
 
-            RadTaskDialogVerificationCheckBox verificationCheck = new RadTaskDialogVerificationCheckBox();
-            verificationCheck.Text = "Verification";
-            verificationCheck.CheckStateChanged += new EventHandler(delegate(object sender, EventArgs e) { RadMessageBox.Show(verificationCheck.CheckState.ToString()); });
-            page.Verification = verificationCheck;
-            RadTaskDialog.ShowDialog(page);
-            
-````
-````VB.NET
-
-           Dim page As RadTaskDialogPage = New RadTaskDialogPage()
-        page.Caption = "Window Title"
-        page.Heading = "Main instruction"
-        page.Text = "Main text here..."
-        page.Icon = RadTaskDialogIcon.ShieldErrorRedBar
-        page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.FlatShieldSuccess, New Size(32, 32))
-        Dim verificationCheck As RadTaskDialogVerificationCheckBox = New RadTaskDialogVerificationCheckBox()
-        verificationCheck.Text = "Verification"
-        AddHandler verificationCheck.CheckStateChanged, New EventHandler(Function(sender As Object, e As EventArgs)
-                                                                             RadMessageBox.Show(verificationCheck.CheckState.ToString())
-                                                                         End Function)
-        page.Verification = verificationCheck
-        RadTaskDialog.ShowDialog(page)     
-
-````
-
-{{endregion}}
 
 ## RadTaskDialogCommandLinkButton
 
@@ -138,41 +71,10 @@ The **State** property is of type **RadTaskDialogProgressBarState** which offers
 
 #### Adding a RadTaskDialogCommandLinkButton
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=LinkButton}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=LinkButton}}
+<snippet id='task-dialog-taskdialoggettingstarted-linkbutton-cs' />
+<snippet id='task-dialog-taskdialoggettingstarted-linkbutton-vb' />
 
-````C#
-               RadTaskDialogPage page = new RadTaskDialogPage();
-            page.Caption = "Window Title";
-            page.Heading = "Main instruction";
-            page.Text = "Main text here...";
-            page.Icon = RadTaskDialogIcon.ShieldWarningYellowBar;
-            page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.FlatShieldWarning, new Size(32, 32));
 
-            RadTaskDialogCommandLinkButton linkButton = new RadTaskDialogCommandLinkButton();
-            linkButton.Text = "Link Button";
-            linkButton.DescriptionText = "This is a link button";
-            page.ContentArea.Buttons.Add(linkButton);
-            RadTaskDialog.ShowDialog(page);       
-            
-````
-````VB.NET
-        Dim page As RadTaskDialogPage = New RadTaskDialogPage()
-        page.Caption = "Window Title"
-        page.Heading = "Main instruction"
-        page.Text = "Main text here..."
-        page.Icon = RadTaskDialogIcon.ShieldWarningYellowBar
-        page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.FlatShieldWarning, New Size(32, 32))
-        Dim linkButton As RadTaskDialogCommandLinkButton = New RadTaskDialogCommandLinkButton()
-        linkButton.Text = "Link Button"
-        linkButton.DescriptionText = "This is a link button"
-        page.ContentArea.Buttons.Add(linkButton)
-        RadTaskDialog.ShowDialog(page)
-       
-
-````
-
-{{endregion}}
 
 ## RadTaskDialogRadioButton
 
@@ -182,47 +84,10 @@ Adding multiple **RadTaskDialogRadioButtons** allows users to choose from differ
 
 #### Adding a RadTaskDialogRadioButton
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=RadioChoices}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=RadioChoices}}
+<snippet id='task-dialog-taskdialoggettingstarted-radiochoices-cs' />
+<snippet id='task-dialog-taskdialoggettingstarted-radiochoices-vb' />
 
-````C#
-            RadTaskDialogPage page = new RadTaskDialogPage();
-            page.Caption = "Window Title";
-            page.Heading = "Main instruction";
-            page.Text = "Main text here...";
-            page.Icon = RadTaskDialogIcon.ShieldWarningYellowBar;
-            page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.FlatShieldWarning, new Size(32, 32));
 
-            page.RadioButtons = new RadItemOwnerGenericCollection<RadTaskDialogRadioButton>()
-            {
-                new RadRadioButtonElement() { Text = "Radio 1" },
-                new RadRadioButtonElement() { Text = "Radio 2" }
-            };
-            
-            RadTaskDialog.ShowDialog(page);      
-            
-````
-````VB.NET
-         Dim page As RadTaskDialogPage = New RadTaskDialogPage()
-        page.Caption = "Window Title"
-        page.Heading = "Main instruction"
-        page.Text = "Main text here..."
-        page.Icon = RadTaskDialogIcon.ShieldWarningYellowBar
-        page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.FlatShieldWarning, New Size(32, 32))
-        page.RadioButtons = New RadItemOwnerGenericCollection(Of RadTaskDialogRadioButton)() From {
-            New RadRadioButtonElement() With {
-                .Text = "Radio 1"
-            },
-            New RadRadioButtonElement() With {
-                .Text = "Radio 2"
-            }
-        }
-        RadTaskDialog.ShowDialog(page)      
-       
-
-````
-
-{{endregion}} 
 
 ## RadTaskDialogButton
 
@@ -232,56 +97,10 @@ Adding multiple **RadTaskDialogRadioButtons** allows users to choose from differ
 
 #### Adding a RadTaskDialogButton
 
-{{source=..\SamplesCS\TaskDialog\TaskDialogGettingStarted.cs region=DialogButtons}} 
-{{source=..\SamplesVB\TaskDialog\TaskDialogGettingStarted.vb region=DialogButtons}}
+<snippet id='task-dialog-taskdialoggettingstarted-dialogbuttons-cs' />
+<snippet id='task-dialog-taskdialoggettingstarted-dialogbuttons-vb' />
 
-````C#
-            RadTaskDialogPage page = new RadTaskDialogPage();
-            page.Caption = "Window Title";
-            page.Heading = "Main instruction";
-            page.Text = "Main text here...";
-            page.Icon = RadTaskDialogIcon.ShieldSuccessGreenBar ;
-            page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.GradientShieldSuccess , new Size(32, 32));
 
-            RadTaskDialogButton button1 = new RadTaskDialogButton();
-            button1.Text = "Custom Button1";
-            button1.Click += new EventHandler(delegate(object sender, EventArgs e) { RadMessageBox.Show("Clicked Button1!"); });
-            page.DefaultButton = button1;
-            page.CommandAreaButtons.Add(button1);
-            RadTaskDialogButton button2 = new RadTaskDialogButton();
-            button2.Text = "Custom Button2";
-            button2.Click += new EventHandler(delegate(object sender, EventArgs e) { RadMessageBox.Show("Clicked Button2!"); });
-            page.CommandAreaButtons.Add(button2);
-
-            RadTaskDialog.ShowDialog(page);             
-            
-````
-````VB.NET
-       
-           Dim page As RadTaskDialogPage = New RadTaskDialogPage()
-        page.Caption = "Window Title"
-        page.Heading = "Main instruction"
-        page.Text = "Main text here..."
-        page.Icon = RadTaskDialogIcon.ShieldSuccessGreenBar
-        page.Icon.SvgImage = RadTaskDialogIcon.GetSvgImage(RadTaskDialogIconImage.GradientShieldSuccess, New Size(32, 32))
-        Dim button1 As RadTaskDialogButton = New RadTaskDialogButton()
-        button1.Text = "Custom Button1"
-        AddHandler button1.Click, New EventHandler(Function(sender As Object, e As EventArgs)
-                                                       RadMessageBox.Show("Clicked Button1!")
-                                                   End Function)
-        page.DefaultButton = button1
-        page.CommandAreaButtons.Add(button1)
-        Dim button2 As RadTaskDialogButton = New RadTaskDialogButton()
-        button2.Text = "Custom Button2"
-        AddHandler button2.Click, New EventHandler(Function(sender As Object, e As EventArgs)
-                                                       RadMessageBox.Show("Clicked Button2!")
-                                                   End Function)
-        page.CommandAreaButtons.Add(button2)
-        RadTaskDialog.ShowDialog(page)    
-
-````
-
-{{endregion}}
 
 # See Also
 

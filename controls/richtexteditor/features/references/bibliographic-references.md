@@ -71,80 +71,25 @@ Everything that we can do using UI, we can do in code behind too. All sources re
         
 This is how you can add a new source:
 
-{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=init}} 
-{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=init}} 
+<snippet id='richtexteditor-bibliographicreferences-init-cs' />
+<snippet id='richtexteditor-bibliographicreferences-init-vb' />
 
-````C#
-BibliographicSource bibliographicSource = new BibliographicSource("test");
-bibliographicSource.Author = "authorTest";
-bibliographicSource.Title = "titleTest";
-bibliographicSource.Editor = "editorTest";
-bibliographicSource.SourceType = BibliographicSourceType.Book;
-this.radRichTextEditor1.Document.BibliographicSources.Add(bibliographicSource);
 
-````
-````VB.NET
-Dim bibliographicSource As New BibliographicSource("test")
-bibliographicSource.Author = "authorTest"
-bibliographicSource.Title = "titleTest"
-bibliographicSource.Editor = "editorTest"
-bibliographicSource.SourceType = BibliographicSourceType.Book
-Me.radRichTextEditor1.Document.BibliographicSources.Add(bibliographicSource)
 
-````
-
-{{endregion}} 
- 
 To create a custom __BibliographicStyle__ you have to derive from __BibliographicReferenceStyleBase__ and add the style to the document so it can be usable. All styles are kept in a dictionary that matches a string to a  __BibliographicReferenceStyleBase__ object. Usually the string is the key of the particular style. Adding style is as easy as:
 
-{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=add}} 
-{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=add}} 
+<snippet id='richtexteditor-bibliographicreferences-add-cs' />
+<snippet id='richtexteditor-bibliographicreferences-add-vb' />
 
-````C#
-APAFifthEditionStyle APAFifthEdition = new APAFifthEditionStyle();
-this.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition);
-HarvardAnglia2008Style HarvardAnglia2008 = new HarvardAnglia2008Style();
-this.radRichTextEditor1.Document.BibliographicStyles.Add(HarvardAnglia2008.Key, HarvardAnglia2008);
-ISO690_FirstElementAndDateStyle ISO690_FirstElementAndDate =
-new ISO690_FirstElementAndDateStyle();
-this.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key,
-ISO690_FirstElementAndDate);
-
-````
-````VB.NET
-Dim APAFifthEdition As New APAFifthEditionStyle()
-Me.radRichTextEditor1.Document.BibliographicStyles.Add(APAFifthEdition.Key, APAFifthEdition)
-Dim HarvardAnglia2008 As New HarvardAnglia2008Style()
-Me.radRichTextEditor1.Document.BibliographicStyles.Add(HarvardAnglia2008.Key, HarvardAnglia2008)
-Dim ISO690_FirstElementAndDate As New ISO690_FirstElementAndDateStyle()
-Me.radRichTextEditor1.Document.BibliographicStyles.Add(ISO690_FirstElementAndDate.Key, ISO690_FirstElementAndDate)
-
-````
-
-{{endregion}} 
 
 
 ### Insert Citation Field using code behind
 
 The Citation field is a field not different from every other field. You can use the __InsertFIeld()__ method of  __RadDocument__ to insert a citation:
 
-{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=citation}} 
-{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=citation}} 
+<snippet id='richtexteditor-bibliographicreferences-citation-cs' />
+<snippet id='richtexteditor-bibliographicreferences-citation-vb' />
 
-````C#
-CitationField citationField = new CitationField();
-citationField.SourceName = "test";
-this.radRichTextEditor1.InsertField(citationField, FieldDisplayMode.Result);
-
-````
-````VB.NET
-Dim citationField As New CitationField()
-citationField.SourceName = "test"
-Me.radRichTextEditor1.InsertField(citationField, FieldDisplayMode.Result)
-
-````
-
-{{endregion}} 
 
 
 ### Insert Bibliography Field using code behind
@@ -152,39 +97,17 @@ Me.radRichTextEditor1.InsertField(citationField, FieldDisplayMode.Result)
 The Bibliography field is a field not different from every other field. You can use the __InsertFIeld()__ method of
  __RadDocument__ to insert a citation:
 
-{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=bibliography}} 
-{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=bibliography}} 
+<snippet id='richtexteditor-bibliographicreferences-bibliography-cs' />
+<snippet id='richtexteditor-bibliographicreferences-bibliography-vb' />
 
-````C#
-BibliographyField bibliographyField = new BibliographyField();
-this.radRichTextEditor1.InsertField(bibliographyField, FieldDisplayMode.Result);
 
-````
-````VB.NET
-Dim bibliographyField As New BibliographyField()
-Me.radRichTextEditor1.InsertField(bibliographyField, FieldDisplayMode.Result)
-
-````
-
-{{endregion}} 
 
 ### Changing Bibliographic Style using code behind
 
 There is a method called __ChangeBibliographicStyle()__ on __RadRichTextEditor__. It accepts one argument of type __BibliographicReferenceStyleBase__. Changing the current style is as simple as:
 
-{{source=..\SamplesCS\RichTextEditor\Features\BibliographicReferences.cs region=style}} 
-{{source=..\SamplesVB\RichTextEditor\Features\BibliographicReferences.vb region=style}} 
-
-````C#
-this.radRichTextEditor1.ChangeBibliographicStyle(new HarvardAnglia2008Style());
-
-````
-````VB.NET
-Me.radRichTextEditor1.ChangeBibliographicStyle(New HarvardAnglia2008Style())
-
-````
-
-{{endregion}} 
+<snippet id='richtexteditor-bibliographicreferences-style-cs' />
+<snippet id='richtexteditor-bibliographicreferences-style-vb' />
 
 
 

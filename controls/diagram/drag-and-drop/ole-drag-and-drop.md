@@ -20,39 +20,10 @@ In order to achieve the desired result the MouseDown, MouseMove and MouseUp even
 
 #### Subscribe to Events
 
-{{source=..\SamplesCS\Diagram\OleDragAndDropForm.cs region=SubscribeEvents}} 
-{{source=..\SamplesVB\Diagram\OleDragAndDropForm.vb region=SubscribeEvents}}
-````C#
-public OleDragAndDropForm()
-{
-    InitializeComponent();
-    this.radDiagram2.AllowDrop = true;
-    this.radDiagram1.IsDraggingEnabled = false;
-    this.radDiagram1.MouseMove += radDiagram1_MouseMove;
-    this.radDiagram1.MouseDown += radDiagram1_MouseDown;
-    this.radDiagram1.MouseUp += radDiagram1_MouseUp;
-    this.radDiagram2.DragEnter += radDiagram2_DragEnter;
-    this.radDiagram2.DragDrop += radDiagram2_DragDrop;
-}
-
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-    Me.RadDiagram2.AllowDrop = True
-    Me.RadDiagram1.IsDraggingEnabled = False
-    AddHandler Me.RadDiagram1.MouseMove, AddressOf radDiagram1_MouseMove
-    AddHandler Me.RadDiagram1.MouseDown, AddressOf radDiagram1_MouseDown
-    AddHandler Me.RadDiagram1.MouseUp, AddressOf radDiagram1_MouseUp
-    AddHandler Me.RadDiagram2.DragEnter, AddressOf radDiagram2_DragEnter
-    AddHandler Me.RadDiagram2.DragDrop, AddressOf radDiagram2_DragDrop
-End Sub
-
-````
+<snippet id='diagram-ole-drag-and-drop-subscribeevents-cs'/>
+<snippet id='diagram-ole-drag-and-drop-subscribeevents-vb'/>
 
 
-
-{{endregion}}
 
 For the purpose of the example we will define a grid model object storing information about the shapes.
 
@@ -62,98 +33,10 @@ __RadDiagram__ will accept the dragged data only if it is dropped on the diagram
 
 #### Drag and Drop Events
 
-{{source=..\SamplesCS\Diagram\OleDragAndDropForm.cs region=HandleEvents}} 
-{{source=..\SamplesVB\Diagram\OleDragAndDropForm.vb region=HandleEvents}}
-````C#
-private void radDiagram2_DragDrop(object sender, DragEventArgs e)
-{
-    Telerik.WinControls.UI.RadDiagram diagram = sender as Telerik.WinControls.UI.RadDiagram;
-    Point point = diagram.PointToClient(new Point(e.X, e.Y));
-    RadDiagramShape draggedItem = e.Data.GetData(typeof(RadDiagramShape)) as RadDiagramShape;
-    this.radDiagram1.RemoveShape(draggedItem);
-    draggedItem.Position = point;
-    diagram.AddShape(draggedItem);
-    this.mouseDownPosition = Point.Empty;
-}
-private void radDiagram2_DragEnter(object sender, DragEventArgs e)
-{
-    e.Effect = DragDropEffects.Copy;
-}
-private Point mouseDownPosition;
-private void radDiagram1_MouseDown(object sender, MouseEventArgs e)
-{
-    this.mouseDownPosition = e.Location;
-}
-private void radDiagram1_MouseUp(object sender, MouseEventArgs e)
-{
-    this.mouseDownPosition = Point.Empty;
-}
-private void radDiagram1_MouseMove(object sender, MouseEventArgs e)
-{
-    if (!(e.Button == MouseButtons.Left))
-    {
-        return;
-    }
-    if (this.ShouldBeginDrag(this.mouseDownPosition, e.Location))
-    {
-        RadDiagramShape draggedItem = this.radDiagram1.ElementTree.GetElementAtPoint(this.mouseDownPosition).Parent as RadDiagramShape;
-        if (draggedItem != null)
-        {
-            ((Telerik.WinControls.UI.RadDiagram)sender).DoDragDrop(draggedItem, DragDropEffects.Copy);
-        }
-    }
-}
-private bool ShouldBeginDrag(Point current, Point capture)
-{
-    Size dragSize = SystemInformation.DragSize;
-    Rectangle dragRect = new Rectangle(capture.X - dragSize.Width / 2,
-        capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height);
-    return !dragRect.Contains(current);
-}
-
-````
-````VB.NET
-Private Sub radDiagram2_DragDrop(sender As Object, e As DragEventArgs)
-    Dim diagram As Telerik.WinControls.UI.RadDiagram = TryCast(sender, Telerik.WinControls.UI.RadDiagram)
-    Dim point As Point = diagram.PointToClient(New Point(e.X, e.Y))
-    Dim draggedItem As RadDiagramShape = TryCast(e.Data.GetData(GetType(RadDiagramShape)), RadDiagramShape)
-    Me.RadDiagram1.RemoveShape(draggedItem)
-    draggedItem.Position = point
-    diagram.AddShape(draggedItem)
-    Me.mouseDownPosition = point.Empty
-End Sub
-Private Sub radDiagram2_DragEnter(sender As Object, e As DragEventArgs)
-    e.Effect = DragDropEffects.Copy
-End Sub
-Private mouseDownPosition As Point
-Private Sub radDiagram1_MouseDown(sender As Object, e As MouseEventArgs)
-    Me.mouseDownPosition = e.Location
-End Sub
-Private Sub radDiagram1_MouseUp(sender As Object, e As MouseEventArgs)
-    Me.mouseDownPosition = Point.Empty
-End Sub
-Private Sub radDiagram1_MouseMove(sender As Object, e As MouseEventArgs)
-    If Not (e.Button = MouseButtons.Left) Then
-        Return
-    End If
-    If Me.ShouldBeginDrag(Me.mouseDownPosition, e.Location) Then
-        Dim draggedItem As RadDiagramShape = TryCast(Me.RadDiagram1.ElementTree.GetElementAtPoint(Me.mouseDownPosition).Parent, RadDiagramShape)
-        If draggedItem IsNot Nothing Then
-            DirectCast(sender, Telerik.WinControls.UI.RadDiagram).DoDragDrop(draggedItem, DragDropEffects.Copy)
-        End If
-    End If
-End Sub
-Private Function ShouldBeginDrag(current As Point, capture As Point) As Boolean
-    Dim dragSize As Size = SystemInformation.DragSize
-    Dim dragRect As New Rectangle(capture.X - dragSize.Width / 2, capture.Y - dragSize.Height / 2, dragSize.Width, dragSize.Height)
-    Return Not dragRect.Contains(current)
-End Function
-
-````
+<snippet id='diagram-ole-drag-and-drop-handleevents-cs'/>
+<snippet id='diagram-ole-drag-and-drop-handleevents-vb'/>
 
 
-
-{{endregion}}
 
 # See Also
 

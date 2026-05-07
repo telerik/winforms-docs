@@ -19,56 +19,10 @@ The following example shows how you can change the editor type:
 
 #### Changing Editor Type
 
-{{source=..\SamplesCS\CardView\CardViewEditors.cs region=ChangingEditorType}} 
-{{source=..\SamplesVB\CardView\CardViewEditors.vb region=ChangingEditorType}}
-````C#
-private void radCardView1_EditorRequired(object sender, Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs e)
-{
-    if (e.ListViewElement.CurrentColumn.FieldName == "TitleOfCourtesy")
-    {
-        ListViewDropDownListEditor editor = new ListViewDropDownListEditor();
-        (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Ms.");
-        (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Mr.");
-        (editor.EditorElement as BaseDropDownListEditorElement).Items.Add("Mrs.");
-        e.Editor = editor;
-    }
-    else if (e.ListViewElement.CurrentColumn.FieldName == "EmployeeID")
-    {
-        e.EditorType = typeof(ListViewSpinEditor);
-    }
-    else if (e.ListViewElement.CurrentColumn.FieldName == "BirthDate" || e.ListViewElement.CurrentColumn.FieldName == "HireDate")
-    {
-        e.EditorType = typeof(ListViewDateTimeEditor);
-    }
-    else
-    {
-        e.EditorType = typeof(ListViewTextBoxEditor);
-    }
-}
-
-````
-````VB.NET
-Private Sub radCardView1_EditorRequired(sender As Object, e As Telerik.WinControls.UI.ListViewItemEditorRequiredEventArgs)
-    If e.ListViewElement.CurrentColumn.FieldName = "TitleOfCourtesy" Then
-        Dim editor As New ListViewDropDownListEditor()
-        TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Ms.")
-        TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Mr.")
-        TryCast(editor.EditorElement, BaseDropDownListEditorElement).Items.Add("Mrs.")
-        e.Editor = editor
-    ElseIf e.ListViewElement.CurrentColumn.FieldName = "EmployeeID" Then
-        e.EditorType = GetType(ListViewSpinEditor)
-    ElseIf e.ListViewElement.CurrentColumn.FieldName = "BirthDate" OrElse e.ListViewElement.CurrentColumn.FieldName = "HireDate" Then
-        e.EditorType = GetType(ListViewDateTimeEditor)
-    Else
-        e.EditorType = GetType(ListViewTextBoxEditor)
-    End If
-End Sub
-
-````
+<snippet id='cardview-editors-switching-editors-changingeditortype-cs'/>
+<snippet id='cardview-editors-switching-editors-changingeditortype-vb'/>
 
 
-
-{{endregion}}
 
 # See Also
 

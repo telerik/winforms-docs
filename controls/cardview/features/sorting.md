@@ -14,36 +14,16 @@ Enabling sorting is done by setting __EnableSorting__ property to *true*. You sh
 
 #### Enable Column Sorting
 
-{{source=..\SamplesCS\CardView\CardViewFeatures.cs region=EnableSorting}} 
-{{source=..\SamplesVB\CardView\CardViewFeatures.vb region=EnableSorting}} 
+<snippet id='cardview-features-sorting-enablesorting-cs'/>
+<snippet id='cardview-features-sorting-enablesorting-vb'/>
 
-````C#
-this.radCardView1.EnableSorting = true;
 
-````
-````VB.NET
-Me.RadCardView1.EnableSorting = True
-
-````
-
-{{endregion}} 
 
 The following code demonstrates how to add __SortDescriptor__ to __RadCardView__:
 
 #### Adding SortDescriptors
 
-{{source=..\SamplesCS\CardView\CardViewFeatures.cs region=SortDescriptor}} 
-{{source=..\SamplesVB\CardView\CardViewFeatures.vb region=SortDescriptor}} 
+<snippet id='cardview-features-sorting-sortdescriptor-cs'/>
+<snippet id='cardview-features-sorting-sortdescriptor-vb'/>
 
-````C#
-SortDescriptor sortDescriptor = new SortDescriptor("Id", ListSortDirection.Ascending);
-this.radCardView1.SortDescriptors.Add(sortDescriptor);
 
-````
-````VB.NET
-Dim sortDescriptor As New SortDescriptor("Id", ListSortDirection.Ascending)
-Me.RadCardView1.SortDescriptors.Add(sortDescriptor)
-
-````
-
-{{endregion}}

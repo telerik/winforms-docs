@@ -19,29 +19,10 @@ You can control which one is visible through the __ShowTodayIndicator__ and the 
 
 You can also directly access the two indicators: 
 
-{{source=..\SamplesCS\GanttView\TodayIndicator\TodayIndicator.cs region=IndicatorsAccess}} 
-{{source=..\SamplesVB\GanttView\TodayIndicator\TodayIndicator.vb region=IndicatorsAccess}} 
+<snippet id='ganttview-todayindicator-indicatorsaccess-cs' />
+<snippet id='ganttview-todayindicator-indicatorsaccess-vb' />
 
-````C#
-GanttViewTodayIndicatorElement todayIndicator = this.radGanttView1.GanttViewElement.GraphicalViewElement.TodayIndicatorElement;
-todayIndicator.BackColor = Color.Red;
-todayIndicator.BackColor2 = Color.Red;
-GanttViewTimelineTodayIndicatorElement timelineTodayIndicator = this.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineTodayIndicatorElement;
-timelineTodayIndicator.BackColor = Color.Green;
-timelineTodayIndicator.BackColor2 = Color.Green;
-
-````
-````VB.NET
-Dim todayIndicator As GanttViewTodayIndicatorElement = Me.radGanttView1.GanttViewElement.GraphicalViewElement.TodayIndicatorElement
-todayIndicator.BackColor = Color.Red
-todayIndicator.BackColor2 = Color.Red
-Dim timelineTodayIndicator As GanttViewTimelineTodayIndicatorElement = Me.radGanttView1.GanttViewElement.GraphicalViewElement.TimelineTodayIndicatorElement
-timelineTodayIndicator.BackColor = Color.Green
-timelineTodayIndicator.BackColor2 = Color.Green
-
-````
-
-{{endregion}} 
+ 
 
 
 # See Also

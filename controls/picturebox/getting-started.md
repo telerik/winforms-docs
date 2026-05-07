@@ -43,21 +43,10 @@ By default, the control is shown with no image icon:
 
 You can use the **DefaultSvgImage/DefaultImage** and **DefaultText** properties to customize both the image icon and text according to your needs:
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=DefaultImageAndText}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=DefaultImageAndText}} 
+<snippet id='picturebox-pictureboxgettingstarted-defaultimageandtext-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-defaultimageandtext-vb' />
 
-````C#
-this.radPictureBox1.DefaultSvgImage = RadSvgImage.FromFile(@"..//..//PictureBox//noimage.svg");
-this.radPictureBox1.DefaultText = "No image available";
 
-````
-````VB.NET
-Me.RadPictureBox1.DefaultSvgImage = RadSvgImage.FromFile("..//..//PictureBox//noimage.svg")
-Me.RadPictureBox1.DefaultText = "No image available"
-
-````
-
-{{endregion}}
 
 ![WinForms RadPictureBox Customize Default Look](images/picturebox-getting-started003.png)
 
@@ -67,35 +56,17 @@ To load an image in **RadPictureBox** control you can use **SvgImage** or **Imag
 
 -  **Load an image**:
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=LoadImage}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=LoadImage}} 
+<snippet id='picturebox-pictureboxgettingstarted-loadimage-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-loadimage-vb' />
 
-````C#
-this.radPictureBox1.Image = Image.FromFile(@"..//..//PictureBox//emoticon-happy.png");
 
-````
-````VB.NET
-Me.RadPictureBox1.Image = Image.FromFile("..//..//PictureBox//emoticon-happy.png")
-
-````
-
-{{endregion}}
 
 - **Load SVG image**:
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=LoadSvgImage}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=LoadSvgImage}} 
+<snippet id='picturebox-pictureboxgettingstarted-loadsvgimage-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-loadsvgimage-vb' />
 
-````C#
-this.radPictureBox1.SvgImage = RadSvgImage.FromFile(@"..//..//PictureBox//emoticon-happy.svg");
 
-````
-````VB.NET
-Me.RadPictureBox1.SvgImage = RadSvgImage.FromFile("..//..//PictureBox//emoticon-happy.svg")
-
-````
-
-{{endregion}}
 
 ![WinForms RadPictureBox Load an Image](images/picturebox-getting-started002.png)
 

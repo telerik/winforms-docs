@@ -19,8 +19,8 @@ This tutorial will walk you through how you can customize the __Overlay Screen__
 
 ## Show Overlay
 
-{{source=..\SamplesCS\SplashScreens\Overlay\OverlaySettings.cs region=Customize_Appearance}} 
-{{source=..\SamplesVB\SplashScreens\Overlay\OverlaySettings.vb region=Customize_Appearance}} 
+<snippet id='splashscreens-overlaysettings-customize_appearance-cs' />
+<snippet id='splashscreens-overlaysettings-customize_appearance-vb' />
 
 ````C#
 
@@ -61,10 +61,6 @@ End Sub
 
 
 ````
-
-{{endregion}}
-
-
 
 # See Also
 

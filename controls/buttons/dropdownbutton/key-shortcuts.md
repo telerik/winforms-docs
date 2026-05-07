@@ -15,35 +15,10 @@ Use the code below to open the drop-down menu using shortcuts(*Please refer to t
 
 #### Adding sub items 
 
-{{source=..\SamplesCS\Buttons\DropDownButton.cs region=keyShortcuts}} 
-{{source=..\SamplesVB\Buttons\DropDownButton.vb region=keyShortcuts}} 
+<snippet id='buttons-dropdownbutton-key-shortcuts-keyshortcuts-cs' />
+<snippet id='buttons-dropdownbutton-key-shortcuts-keyshortcuts-vb' />
 
-````C#
-public DropDownButton()
-{
-    InitializeComponent();
-    this.radDropDownButton1.DropDownButtonElement.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.N));
-    this.radDropDownButton1.DropDownButtonElement.Click += new EventHandler(DropDownButtonElement_Click);
-}
-void DropDownButtonElement_Click(object sender, EventArgs e)
-{
-    this.radDropDownButton1.ShowDropDown();
-}
 
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-    Me.radDropDownButton1.DropDownButtonElement.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.B))
-    AddHandler Me.radDropDownButton1.DropDownButtonElement.Click, AddressOf DropDownButtonElement_Click
-End Sub
-Sub DropDownButtonElement_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Me.radDropDownButton1.ShowDropDown()
-End Sub
-
-````
-
-{{endregion}} 
 
 
 

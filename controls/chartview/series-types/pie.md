@@ -15,33 +15,10 @@ Unlike all other series, __PieSeries__ do not require axes. They visualize each 
 
 #### Initial Setup
 
-{{source=..\SamplesCS\ChartView\Series\PieSeriesForm.cs region=pie}} 
-{{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=pie}} 
+<snippet id='chartview-pie-pie-cs'/>
+<snippet id='chartview-pie-pie-vb'/>
 
-````C#
-this.radChartView1.AreaType = ChartAreaType.Pie;
-PieSeries series = new PieSeries();
-series.DataPoints.Add(new PieDataPoint(50, "Germany"));
-series.DataPoints.Add(new PieDataPoint(70, "United States"));
-series.DataPoints.Add(new PieDataPoint(40, "France"));
-series.DataPoints.Add(new PieDataPoint(25, "United Kingdom"));
-series.ShowLabels = true;
-this.radChartView1.Series.Add(series);
 
-````
-````VB.NET
-Me.RadChartView1.AreaType = ChartAreaType.Pie
-Dim series As New PieSeries()
-series.DataPoints.Add(New PieDataPoint(50, "Germany"))
-series.DataPoints.Add(New PieDataPoint(70, "United States"))
-series.DataPoints.Add(New PieDataPoint(40, "France"))
-series.DataPoints.Add(New PieDataPoint(25, "United Kingdom"))
-series.ShowLabels = True
-Me.RadChartView1.Series.Add(series)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Initial Setup
 ![WinForms RadChartView Pie Initial Setup](images/chartview-series-types-pie001.png)
@@ -50,21 +27,10 @@ __PieSeries__ can be customized using the following properties:
 
 * __Range:__ The property consists of two parameters StartAngle and SweepAngle. StartAngle sets the angle in degrees from which the drawing of the pie segments will begin. Note that pie slices are always rendered in clockwise direction. SweepAngle determines if the chart will appear as a full circle or a partial circle.The snippet below illustrates PieSeries how to set the Range property: 
 
-{{source=..\SamplesCS\ChartView\Series\PieSeriesForm.cs region=angleRange}} 
-{{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=angleRange}} 
+<snippet id='chartview-pie-anglerange-cs'/>
+<snippet id='chartview-pie-anglerange-vb'/>
 
-````C#
-AngleRange range = new AngleRange(270, 300);
-series.Range = range;
 
-````
-````VB.NET
-Dim range As New AngleRange(270, 300)
-series.Range = range
-
-````
-
-{{endregion}}
 
 >caption Figure 2: Angle Range
 ![WinForms RadChartView Pie Angle Range](images/chartview-series-types-pie002.png)
@@ -81,26 +47,10 @@ Additionally, PieSeries allows offsetting a pie segment from the rest of the sli
 
 #### Offset Segment
 
-{{source=..\SamplesCS\ChartView\Series\PieSeriesForm.cs region=offset}} 
-{{source=..\SamplesVB\ChartView\Series\PieSeriesForm.vb region=offset}} 
+<snippet id='chartview-pie-offset-cs'/>
+<snippet id='chartview-pie-offset-vb'/>
 
-````C#
-PieDataPoint point = series.DataPoints[3] as PieDataPoint;
-if (point != null)
-{
-    point.OffsetFromCenter = 0.1;
-}
 
-````
-````VB.NET
-Dim point As PieDataPoint = TryCast(series.DataPoints(3), PieDataPoint)
-If point IsNot Nothing Then
-    point.OffsetFromCenter = 0.1
-End If
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: Offset Segment
 ![WinForms RadChartView Pie Offset Segment](images/chartview-series-types-pie003.png)

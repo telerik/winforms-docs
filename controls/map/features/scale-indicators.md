@@ -30,32 +30,10 @@ The scaling indicators expose several properties allowing modification of the wa
 
 #### Customizing Appearance
 
-{{source=..\SamplesCS\Map\MapLayers.cs region=CustomizeScalingIndicators}} 
-{{source=..\SamplesVB\Map\MapLayers.vb region=CustomizeScalingIndicators}}
-````C#
-this.radMap1.MapElement.ScaleIndicatorElement.ImperialBarColor = Color.Red;
-this.radMap1.MapElement.ScaleIndicatorElement.MetricBarColor = Color.Blue;
-this.radMap1.MapElement.ScaleIndicatorElement.BarHeight = 4;
-this.radMap1.MapElement.ScaleIndicatorElement.KilometersText = " км";
-this.radMap1.MapElement.ScaleIndicatorElement.MetersText = " м";
-this.radMap1.MapElement.ScaleIndicatorElement.MilesText = " ми";
-this.radMap1.MapElement.ScaleIndicatorElement.FeetText = " фт";
-
-````
-````VB.NET
-Me.RadMap1.MapElement.ScaleIndicatorElement.ImperialBarColor = Color.Red
-Me.RadMap1.MapElement.ScaleIndicatorElement.MetricBarColor = Color.Blue
-Me.RadMap1.MapElement.ScaleIndicatorElement.BarHeight = 4
-Me.RadMap1.MapElement.ScaleIndicatorElement.KilometersText = " км"
-Me.RadMap1.MapElement.ScaleIndicatorElement.MetersText = " м"
-Me.RadMap1.MapElement.ScaleIndicatorElement.MilesText = " ми"
-Me.RadMap1.MapElement.ScaleIndicatorElement.FeetText = " фт"
-
-````
+<snippet id='map-maplayers-customizescalingindicators-cs' />
+<snippet id='map-maplayers-customizescalingindicators-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 

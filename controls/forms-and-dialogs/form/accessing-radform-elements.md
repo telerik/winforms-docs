@@ -19,28 +19,10 @@ The __RadFormTitleBarElement__ is positioned on the top of the form and its defa
 
 #### Accessing RadForm elements 
 
-{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=accessingRadFormElements}} 
-{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingRadFormElements}} 
+<snippet id='form-form1-accessingradformelements-cs' />
+<snippet id='form-form1-accessingradformelements-vb' />
 
-````C#
-void Form1_Shown(object sender, EventArgs e)
-{
-    this.FormElement.TitleBar.MaximizeButton.Enabled = false;
-    this.FormElement.TitleBar.MinimizeButton.Enabled = false;
-    this.FormElement.TitleBar.HelpButton.Visibility = Telerik.WinControls.ElementVisibility.Visible;
-}
-
-````
-````VB.NET
-Private Sub Form1_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
-    Me.FormElement.TitleBar.MaximizeButton.Enabled = False
-    Me.FormElement.TitleBar.MinimizeButton.Enabled = False
-    Me.FormElement.TitleBar.HelpButton.Visibility = Telerik.WinControls.ElementVisibility.Visible
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 1: TitleBar
   
@@ -57,28 +39,10 @@ You can easily extend the __RadFormTitleBarElement__ 's functionality by adding 
 
 #### Adding new button to the title bar 
 
-{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=addingNewButtonToTheTitleBar}} 
-{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=addingNewButtonToTheTitleBar}} 
+<snippet id='form-form1-addingnewbuttontothetitlebar-cs' />
+<snippet id='form-form1-addingnewbuttontothetitlebar-vb' />
 
-````C#
-void Form1_Load(object sender, EventArgs e)
-{
-    RadButtonElement buttonElement = new RadButtonElement();
-    buttonElement.Text = "TitleBar Button";
-    this.FormElement.TitleBar.Children[2].Children[0].Children.Insert(0, buttonElement);
-}
-
-````
-````VB.NET
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-    Dim buttonElement As New RadButtonElement()
-    buttonElement.Text = "TitleBar Button"
-    Me.FormElement.TitleBar.Children(2).Children(0).Children.Insert(0, buttonElement)
-End Sub
-
-````
-
-{{endregion}} 
+ 
  
 
 ## Accessing the Form Borders
@@ -91,19 +55,10 @@ The __FormBorderPrimitive__ represents the outer thin border that surrounds a __
 
 #### Accessing the FormBorderPrimitive 
 
-{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=accessingTheFormBorderPrimitive}} 
-{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingTheFormBorderPrimitive}} 
+<snippet id='form-form1-accessingtheformborderprimitive-cs' />
+<snippet id='form-form1-accessingtheformborderprimitive-vb' />
 
-````C#
-this.FormElement.Border.ForeColor = System.Drawing.Color.Green;
-
-````
-````VB.NET
-Me.FormElement.Border.ForeColor = System.Drawing.Color.Green
-
-````
-
-{{endregion}} 
+ 
 
 
 >note The visual appearance of the border and also for the whole RadForm control can be designed in the Visual Style Builder.
@@ -118,19 +73,10 @@ The following code snippet demonstrates how to set the __BackColor__ of the __Fo
 
 #### Accessing the FormImageBorderPrimitive 
 
-{{source=..\SamplesCS\Forms and Dialogs\Form1.cs region=accessingTheFormImageBorderPrimitive}} 
-{{source=..\SamplesVB\Forms and Dialogs\Form1.vb region=accessingTheFormImageBorderPrimitive}} 
+<snippet id='form-form1-accessingtheformimageborderprimitive-cs' />
+<snippet id='form-form1-accessingtheformimageborderprimitive-vb' />
 
-````C#
-this.FormElement.ImageBorder.BackColor = Color.Lime;
-
-````
-````VB.NET
-Me.FormElement.ImageBorder.BackColor = Color.Lime
-
-````
-
-{{endregion}} 
+ 
 
  
 >note More information on how to use the __FormImageBorderPrimitive__ can be found in the separate topic: [Using the FormImageBorderPrimitive]({%slug winforms/forms-and-dialogs/form/using-the-formimageborderprimitive%}).

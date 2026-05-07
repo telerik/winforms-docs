@@ -15,33 +15,10 @@ Similarly to Pie series, Donut series do not use axes. They visualize each data 
 
 #### Initial Setup
 
-{{source=..\SamplesCS\ChartView\Series\DonutSeriesForm.cs region=donut}} 
-{{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donut}} 
+<snippet id='chartview-donut-donut-cs'/>
+<snippet id='chartview-donut-donut-vb'/>
 
-````C#
-this.radChartView1.AreaType = ChartAreaType.Pie;
-DonutSeries series = new DonutSeries();
-series.DataPoints.Add(new PieDataPoint(50, "Germany"));
-series.DataPoints.Add(new PieDataPoint(70, "United States"));
-series.DataPoints.Add(new PieDataPoint(40, "France"));
-series.DataPoints.Add(new PieDataPoint(25, "United Kingdom"));
-series.ShowLabels = true;
-this.radChartView1.Series.Add(series);
 
-````
-````VB.NET
-Me.RadChartView1.AreaType = ChartAreaType.Pie
-Dim series As New DonutSeries()
-series.DataPoints.Add(New PieDataPoint(50, "Germany"))
-series.DataPoints.Add(New PieDataPoint(70, "United States"))
-series.DataPoints.Add(New PieDataPoint(40, "France"))
-series.DataPoints.Add(New PieDataPoint(25, "United Kingdom"))
-series.ShowLabels = True
-Me.RadChartView1.Series.Add(series)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Initial Setup
 ![WinForms RadChartView Donut Initial Setup](images/chartview-series-types-donut001.png)
@@ -52,21 +29,10 @@ DonutSeries can be customized using the following properties:
 
 #### AngleRange
 
-{{source=..\SamplesCS\ChartView\Series\DonutSeriesForm.cs region=donutAngleRange}} 
-{{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donutAngleRange}} 
+<snippet id='chartview-donut-donutanglerange-cs'/>
+<snippet id='chartview-donut-donutanglerange-vb'/>
 
-````C#
-AngleRange range = new AngleRange(270, 300);
-series.Range = range;
 
-````
-````VB.NET
-Dim range As New AngleRange(270, 300)
-series.Range = range
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: AngleRange
 ![WinForms RadChartView Donut AngleRange](images/chartview-series-types-donut002.png)
@@ -81,26 +47,10 @@ Additionally, DonutSeries allows offsetting a pie segment from the rest of the s
 
 #### Donut Offset
 
-{{source=..\SamplesCS\ChartView\Series\DonutSeriesForm.cs region=donutOffset}} 
-{{source=..\SamplesVB\ChartView\Series\DonutSeriesForm.vb region=donutOffset}} 
+<snippet id='chartview-donut-donutoffset-cs'/>
+<snippet id='chartview-donut-donutoffset-vb'/>
 
-````C#
-PieDataPoint point = series.DataPoints[3] as PieDataPoint;
-if (point != null)
-{
-    point.OffsetFromCenter = 0.1;
-}
 
-````
-````VB.NET
-Dim point As PieDataPoint = TryCast(series.DataPoints(3), PieDataPoint)
-If point IsNot Nothing Then
-    point.OffsetFromCenter = 0.1
-End If
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: Donut Offset
 ![WinForms RadChartView Donut Offset](images/chartview-series-types-donut003.png)

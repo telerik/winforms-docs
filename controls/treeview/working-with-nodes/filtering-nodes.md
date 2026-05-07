@@ -19,19 +19,10 @@ For example, if we have this RadTreeView instance:
 
 and we set the __Filter__ property as shown below:
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=filter}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=filter}} 
+<snippet id='treeview-workingwithnodes1-filter-cs' />
+<snippet id='treeview-workingwithnodes1-filter-vb' />
 
-````C#
-this.radTreeView1.Filter = "new";
 
-````
-````VB.NET
-Me.RadTreeView1.Filter = "new"
-
-````
-
-{{endregion}} 
 
 we will get this look of RadTreeView at the end:
 

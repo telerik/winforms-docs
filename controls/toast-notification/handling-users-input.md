@@ -20,66 +20,10 @@ CTAControlName: ToastNotification
  
 We will extend the example for building log-in toast notification in the [Adding Toast Notifications Programmatically  ]({%slug toast-notification-adding-toast-notifications-programmatically%}) article and check the user name and password.
 
-{{source=..\SamplesCS\ToastNotification\ToastNotificationGettingStarted.cs region=Activated}} 
-{{source=..\SamplesVB\ToastNotification\ToastNotificationGettingStarted.vb region=Activated}}
+<snippet id='toast-notification-toastnotificationgettingstarted-activated-cs' />
+<snippet id='toast-notification-toastnotificationgettingstarted-activated-vb' />
 
-````C#
 
-protected override void OnLoad(EventArgs e)
-{
-    base.OnLoad(e);
-
-    RadToastNotificationManager.RadToastActivated+=RadToastNotificationManager_RadToastActivated;
-}
-
-private void RadToastNotificationManager_RadToastActivated(RadToastActivatedEventArgs e)
-{
-    Dictionary<string, string> userInput = e.UserInput;
-    string userName = userInput["UserNameInput"];
-    string password = userInput["PasswordInput"];
-    if (userName == string.Empty)
-    {
-        RadMessageBox.Show("UserName is empty!");
-    }
-
-    if (password == string.Empty)
-    {
-        RadMessageBox.Show("Password is empty!");
-    }
-
-    this.Invoke((MethodInvoker)delegate { this.Text = "UserName: " + userName + "Password: " + password; });
-
-}
-
-````
-````VB.NET
-
-Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-    MyBase.OnLoad(e)
-    AddHandler RadToastNotificationManager.RadToastActivated, AddressOf RadToastNotificationManager_RadToastActivated
-End Sub
-
-Private Sub RadToastNotificationManager_RadToastActivated(ByVal e As RadToastActivatedEventArgs)
-    Dim userInput As Dictionary(Of String, String) = e.UserInput
-    Dim userName As String = userInput("UserNameInput")
-    Dim password As String = userInput("PasswordInput")
-
-    If userName = String.Empty Then
-        RadMessageBox.Show("UserName is empty!")
-    End If
-
-    If password = String.Empty Then
-        RadMessageBox.Show("Password is empty!")
-    End If
-
-    Me.Invoke(CType(Function()
-                        Me.Text = "UserName: " & userName & "Password: " & password
-                    End Function, Windows.Forms.MethodInvoker))
-End Sub
-
-````
-
-{{endregion}}
 
 Toast notifications remains in the Windows Action Center until removed and the user can interact with them, even if the application is already closed. Thus, they provide the ability to respond after the application has been closed. The following code snippet demonstrates a sample approach how to detect when a toast has been clicked in this case:
 

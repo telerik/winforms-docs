@@ -31,27 +31,10 @@ To generate a Swiss Barcode using Telerik UI for WinForms, you need to first set
 #### Example 1: Setting the SwissQRCode symbology
 
 
-{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=SetSwissQRCode}} 
-{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=SetSwissQRCode}}
+<snippet id='barcodeview-swissqrcode-overview-setswissqrcode-cs' />
+<snippet id='barcodeview-swissqrcode-overview-setswissqrcode-vb' />
 
 
-````C#
-
-SwissQRCode symbology = new SwissQRCode();
-symbology.Module = 4;
-symbology.SizingMode = SizingMode.Manual;
-this.radBarcodeView1.Symbology = symbology;   
-
-````
-````VB.NET
-Dim symbology As SwissQRCode = New SwissQRCode()
-symbology.[Module] = 4
-symbology.SizingMode = SizingMode.Manual
-Me.radBarcodeView1.Symbology = symbology
-
-```` 
-
-{{endregion}}
 
 
 The Swiss QR code standard mandates that the input provided for the generation of the barcode is strictly formatted. Both, validating and generating this input, are complex processes and to facilitate them you can use the **SwissQRCodeValueStringBuilder** helper class. Its purpose is to hold the information needed for a **SwissQRCode** in a type-safe manner, to validate this information and to generate the input. Through its constructor, you need to set the following properties:
@@ -74,71 +57,20 @@ The Swiss QR code standard mandates that the input provided for the generation o
 
 #### Example 2: Creating the SwissQRCodeValueStringBuilder
 
-{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=SwissQRCodeValueStringBuilder}} 
-{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=SwissQRCodeValueStringBuilder}}
-
-````C#
-
-Telerik.Barcode.SwissQRCodeValueStringBuilder qrCodeValue = new Telerik.Barcode.SwissQRCodeValueStringBuilder(
-    new Telerik.Barcode.Iban("CH4431999123000889012", Telerik.Barcode.IbanType.QRIBAN),
-    Telerik.Barcode.SwissQRCodeCurrency.EUR,
-    new Telerik.Barcode.Contact("Max Muster &amp; Söhne",
-    new Telerik.Barcode.StructuredAddress("CH", "8000", "Seldwyla", "Musterstrasse", "123")),
-    new Telerik.Barcode.Reference(Telerik.Barcode.ReferenceType.QRR, "210000000003139471430009017"),
-    new Telerik.Barcode.AdditionalInformation("Order from 15.03.2021", "//S1/10/1234/11/201021/30/102673386/32/7.7/40/0:30"),
-    new Telerik.Barcode.Contact("Simon Muster", new Telerik.Barcode.StructuredAddress("CH", "8000", "Seldwyla", "Musterstrasse", "1")),
-    (decimal)1949.75,
-    new Telerik.Barcode.AlternativeProcedure("Name AV1: UV;UltraPay005;12345", "Name AV2: XY;XYService;54321"));
-   
-````
-````VB.NET
-
-Dim qrCodeValue As Telerik.Barcode.SwissQRCodeValueStringBuilder = New Telerik.Barcode.SwissQRCodeValueStringBuilder(
-    New Telerik.Barcode.Iban("CH4431999123000889012", Telerik.Barcode.IbanType.QRIBAN),
-    Telerik.Barcode.SwissQRCodeCurrency.EUR,
-    New Telerik.Barcode.Contact("Max Muster &amp; Söhne",
-                                New Telerik.Barcode.StructuredAddress("CH", "8000", "Seldwyla", "Musterstrasse", "123")),
-    New Telerik.Barcode.Reference(Telerik.Barcode.ReferenceType.QRR, "210000000003139471430009017"),
-    New Telerik.Barcode.AdditionalInformation("Order from 15.03.2021", "//S1/10/1234/11/201021/30/102673386/32/7.7/40/0:30"),
-    New Telerik.Barcode.Contact("Simon Muster",
-                                New Telerik.Barcode.StructuredAddress("CH", "8000", "Seldwyla", "Musterstrasse", "1")), CDec(1949.75),
-                                       New Telerik.Barcode.AlternativeProcedure("Name AV1: UV;UltraPay005;12345", "Name AV2: XY;XYService;54321"))
+<snippet id='barcodeview-swissqrcode-overview-swissqrcodevaluestringbuilder-cs' />
+<snippet id='barcodeview-swissqrcode-overview-swissqrcodevaluestringbuilder-vb' />
 
 
-```` 
-
-{{endregion}}
 
 
 Once you've set up the **SwissQRCodeValueStringBuilder** you can call its **Validate** method which validates all its fields and the relations between them. The method returns a string which contains the accumulated errors. If there are no errors - **null** is returned. In this case, you can call the **BuildValue** method of the string builder which will build the string value to be provided to the **RadBarcodeView**.
 
 #### Example 3: Validate and build barcode value
 
-{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=ValidateSwissQR}} 
-{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=ValidateSwissQR}}
-
-````C#
-
- string errors = qrCodeValue.Validate();
-
-if (string.IsNullOrEmpty(errors))
-{
-    this.radBarcodeView1.Value = qrCodeValue.BuildValue();
-}
-  
-
-````
-````VB.NET
-
-Dim errors As String = qrCodeValue.Validate()
-
-If String.IsNullOrEmpty(errors) Then
-    Me.radBarcodeView1.Value = qrCodeValue.BuildValue()
-End If
+<snippet id='barcodeview-swissqrcode-overview-validateswissqr-cs' />
+<snippet id='barcodeview-swissqrcode-overview-validateswissqr-vb' />
 
 
-```` 
-{{endregion}}
 
 Invoking the code from **Example 3** will generate the following result:
 

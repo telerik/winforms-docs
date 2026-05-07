@@ -20,66 +20,16 @@ To localize __RadTabbedForm__ to display any text and messages in a specific lan
 
 Below is a sample implementation of an English localization provider:
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Localization}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Localization}}
-````C#
-class MyRadTabbedFormControlLocalizationProvider : RadTabbedFormControlLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case RadTabbedFormControlStringId.NewTabMenuTtem: return "New tab";
-            case RadTabbedFormControlStringId.PinTabMenuTtem: return "Pin tab";
-            case RadTabbedFormControlStringId.CloseTabMenuTtem: return "Close tab";
-            case RadTabbedFormControlStringId.CloseOtherTabsMenuTtem: return "Close other tabs";
-            case RadTabbedFormControlStringId.CloseRightTabsMenuTtem: return "Close tabs to the right";
-            case RadTabbedFormControlStringId.UnpinTabMenuTtem: return "Unpin tab";
-        }
-        return base.GetLocalizedString(id);
-    }
-}
+<snippet id='tabbedform-tabbedformcode-localization-cs' />
+<snippet id='tabbedform-tabbedformcode-localization-vb' />
 
-````
-````VB.NET
-Friend Class MyRadTabbedFormControlLocalizationProvider
-    Inherits RadTabbedFormControlLocalizationProvider
-    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case RadTabbedFormControlStringId.NewTabMenuTtem
-                Return "New tab"
-            Case RadTabbedFormControlStringId.PinTabMenuTtem
-                Return "Pin tab"
-            Case RadTabbedFormControlStringId.CloseTabMenuTtem
-                Return "Close tab"
-            Case RadTabbedFormControlStringId.CloseOtherTabsMenuTtem
-                Return "Close other tabs"
-            Case RadTabbedFormControlStringId.CloseRightTabsMenuTtem
-                Return "Close tabs to the right"
-            Case RadTabbedFormControlStringId.UnpinTabMenuTtem
-                Return "Unpin tab"
-        End Select
-        Return MyBase.GetLocalizedString(id)
-    End Function
-End Class
 
-```` 
-
-{{endregion}} 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=ChangeProvider}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=ChangeProvider}}
-````C#
-RadTabbedFormControlLocalizationProvider.CurrentProvider = new MyRadTabbedFormControlLocalizationProvider();
+<snippet id='tabbedform-tabbedformcode-changeprovider-cs' />
+<snippet id='tabbedform-tabbedformcode-changeprovider-vb' />
 
-````
-````VB.NET
-RadTabbedFormControlLocalizationProvider.CurrentProvider = New MyRadTabbedFormControlLocalizationProvider()
 
-```` 
-
-{{endregion}} 

@@ -23,76 +23,19 @@ To localize RadTreeView to display control text and messages in a specific langu
 Below is a sample implementation of an English localization provider:
 
 #### Localizing RadTreeView Strings
-{{source=..\SamplesCS\TreeView\MyEnglishTreeViewLocalizationProvider.cs region=LocProvider}} 
-{{source=..\SamplesVB\TreeView\MyEnglishTreeViewLocalizationProvider.vb region=LocProvider}}
-````C#
-public class MyEnglishTreeViewLocalizationProvider : TreeViewLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case TreeViewStringId.ContextMenuCollapse:
-                return "Collapse";
-            case TreeViewStringId.ContextMenuDelete:
-                return "Delete";
-            case TreeViewStringId.ContextMenuEdit:
-                return "Edit";
-            case TreeViewStringId.ContextMenuExpand:
-                return "Expand";
-            case TreeViewStringId.ContextMenuNew:
-                return "New";
-            default:
-                base.GetLocalizedString(id);
-                break;
-        }
-        return "";
-    }
-}
-
-````
-````VB.NET
-Public Overrides Function GetLocalizedString(ByVal id As String) As String
-    Select Case id
-        Case TreeViewStringId.ContextMenuCollapse
-            Return "Collapse"
-        Case TreeViewStringId.ContextMenuDelete
-            Return "Delete"
-        Case TreeViewStringId.ContextMenuEdit
-            Return "Edit"
-        Case TreeViewStringId.ContextMenuExpand
-            Return "Expand"
-        Case TreeViewStringId.ContextMenuNew
-            Return "New"
-        Case Else
-            MyBase.GetLocalizedString(id)
-    End Select
-    Return ""
-End Function
-
-```` 
+<snippet id='treeview-myenglishtreeviewlocalizationprovider-locprovider-cs' />
+<snippet id='treeview-myenglishtreeviewlocalizationprovider-locprovider-vb' />
 
 
-
-{{endregion}} 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\TreeView\TreeLocalization.cs region=localization}} 
-{{source=..\SamplesVB\TreeView\TreeLocalization.vb region=localization}} 
+<snippet id='treeview-treelocalization-localization-cs' />
+<snippet id='treeview-treelocalization-localization-vb' />
 
-````C#
-TreeViewLocalizationProvider.CurrentProvider = new MyEnglishTreeViewLocalizationProvider();
 
-````
-````VB.NET
-TreeViewLocalizationProvider.CurrentProvider = New MyEnglishTreeViewLocalizationProvider()
-
-````
-
-{{endregion}} 
 
 The code provided above illustrates the approach to be used to localize the __RadTreeView__ and is not intended as a full translation.
 

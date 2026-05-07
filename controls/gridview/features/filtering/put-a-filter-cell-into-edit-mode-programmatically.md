@@ -15,19 +15,8 @@ You can easily put a filter cell into edit mode by code. You should simply call 
 
 #### Put a filter cell in edit mode programmatically
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=putFilterCellIntoEditModeProgramatically}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=putFilterCellIntoEditModeProgramatically}} 
-
-````C#
-this.radGridView1.MasterView.TableFilteringRow.Cells[1].BeginEdit();
-
-````
-````VB.NET
-Me.RadGridView1.MasterView.TableFilteringRow.Cells(0).BeginEdit()
-
-````
-
-{{endregion}}
+<snippet id='gridview-filtering-putfiltercellintoeditmodeprogramatically-cs' />
+<snippet id='gridview-filtering-putfiltercellintoeditmodeprogramatically-vb' />
 
 ![WinForms RadGridView Filter Cell Non Edit Mode](images/gridview-filtering-put-a-filter-cell-into-edit-mode-programatically001.png)
 

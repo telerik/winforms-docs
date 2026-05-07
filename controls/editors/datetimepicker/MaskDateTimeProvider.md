@@ -26,21 +26,10 @@ The MaskDateTimeProvider is responsible for the parsing of the dates. The MaskDa
 
 The following code spinet demonstrates how one can access and use the provider:     
 
-{{source=..\SamplesCS\Editors\DateTimePicker2.cs region=provider}} 
-{{source=..\SamplesVB\Editors\DateTimePicker2.vb region=provider}} 
+<snippet id='editors-datetimepicker2-provider-cs' />
+<snippet id='editors-datetimepicker2-provider-vb' />
 
-````C#
-MaskDateTimeProvider provider = this.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider as MaskDateTimeProvider;
-provider.AutoSelectNextPart = true;
 
-````
-````VB.NET
-Dim provider As MaskDateTimeProvider = TryCast(Me.radDateTimePicker1.DateTimePickerElement.TextBoxElement.Provider, MaskDateTimeProvider)
-provider.AutoSelectNextPart = True
-
-````
-
-{{endregion}} 
 
 >note 
 The __MaskProviderCreated__ event will be fired each time when new provider instance is created. For example when the MaskType is changed.

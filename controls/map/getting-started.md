@@ -52,31 +52,10 @@ If you want to use data caching, you should set an __IMapCacheProvider__ instanc
 
 #### Using BingRestMapProvider
 
-{{source=..\SamplesCS\Map\MapGettingStarted.cs region=GettingStarted}} 
-{{source=..\SamplesVB\Map\MapGettingStarted.vb region=GettingStarted}}
+<snippet id='map-mapgettingstarted-gettingstarted-cs' />
+<snippet id='map-mapgettingstarted-gettingstarted-vb' />
 
-````C#
-string cacheFolder = @"..\..\cache";
-BingRestMapProvider bingProvider = new Telerik.WinControls.UI.BingRestMapProvider();
-bingProvider.UseSession = true;
-bingProvider.BingKey = bingKey;
-LocalFileCacheProvider cache = new LocalFileCacheProvider(cacheFolder);
-bingProvider.CacheProvider = cache;
-this.radMap1.Providers.Add(bingProvider);
 
-````
-````VB.NET
-Dim cacheFolder As String = "..\..\cache"
-Dim bingProvider As BingRestMapProvider = New Telerik.WinControls.UI.BingRestMapProvider()
-bingProvider.UseSession = True
-bingProvider.BingKey = bingKey
-Dim cache As New LocalFileCacheProvider(cacheFolder)
-bingProvider.CacheProvider = cache
-Me.radMap1.Providers.Add(bingProvider)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: RadMap 
 

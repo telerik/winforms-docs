@@ -57,11 +57,6 @@ Dim myNewRadTextBox As New RadTextBox()
 Me.Controls.Add(myNewRadTextBox)
 
 ````
-
-{{endregion}} 
-
-
-
 ## Telerik UI for WinForms Learning Resources
 * [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
 * [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)

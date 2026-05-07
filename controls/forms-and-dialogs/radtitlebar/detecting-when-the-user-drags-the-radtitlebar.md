@@ -15,33 +15,10 @@ The following example, demonstrates how to detect when the user drags the title 
 
 #### Detecting when the TitleBar is dragged 
 
-{{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.cs region=detectTitleBarDragging}} 
-{{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.vb region=detectTitleBarDragging}} 
+<snippet id='radtitlebar-shapedform1-detecttitlebardragging-cs' />
+<snippet id='radtitlebar-shapedform1-detecttitlebardragging-vb' />
 
-````C#
-public const int WM_WINDOWPOSCHANGED = 0x47;
-protected override void WndProc(ref Message m)
-{
-    if (m.Msg == WM_WINDOWPOSCHANGED)
-    {
-        this.Text = Control.MousePosition.ToString();
-    }
-    base.WndProc(ref m);
-}
 
-````
-````VB.NET
-Public Const WM_WINDOWPOSCHANGED As Integer = 71
-Protected Overloads Overrides Sub WndProc(ByRef m As Message)
-    If m.Msg = WM_WINDOWPOSCHANGED Then
-        Me.Text = Control.MousePosition.ToString()
-    End If
-    MyBase.WndProc(m)
-End Sub
-
-````
-
-{{endregion}} 
 
 
 

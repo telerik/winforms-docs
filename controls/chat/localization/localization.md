@@ -22,83 +22,19 @@ Below is a sample implementation of an English localization provider:
 
 #### Localizing RadChat Strings
 
-{{source=..\SamplesCS\Chat\ChatLocalization.cs region=myEnglishLocalizationProvider}} 
-{{source=..\SamplesVB\Chat\ChatLocalization.vb region=myEnglishLocalizationProvider}} 
+<snippet id='chat-localization-myenglishlocalizationprovider-cs'/>
+<snippet id='chat-localization-myenglishlocalizationprovider-vb'/>
 
-````C#
-public class MyEnglishChatLocalizationProvider : Telerik.WinControls.Localization.ChatLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case ChatStringId.TypeAMessage: return "Type a message";
-            case ChatStringId.OverlayOK: return "OK";
-            case ChatStringId.OverlayCancel: return "Cancel";
-            case ChatStringId.FlightCardDeparture: return "Departure";
-            case ChatStringId.FlightCardArrival: return "Arrival";
-            case ChatStringId.FlightCardPassenger: return "Passenger";
-            case ChatStringId.FlightCardTotal: return "Total";
-            case ChatStringId.TodayStamp: return "TODAY";
-            case ChatStringId.YesterdayStamp: return "YESTERDAY";
-            default:
-                break;
-        }
-        return base.GetLocalizedString(id);
-    }
-}
-
-````
-````VB.NET
-Public Class MyEnglishChatLocalizationProvider
-    Inherits Telerik.WinControls.Localization.ChatLocalizationProvider
-    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case ChatStringId.TypeAMessage
-                Return "Type a message"
-            Case ChatStringId.OverlayOK
-                Return "OK"
-            Case ChatStringId.OverlayCancel
-                Return "Cancel"
-            Case ChatStringId.FlightCardDeparture
-                Return "Departure"
-            Case ChatStringId.FlightCardArrival
-                Return "Arrival"
-            Case ChatStringId.FlightCardPassenger
-                Return "Passenger"
-            Case ChatStringId.FlightCardTotal
-                Return "Total"
-            Case ChatStringId.TodayStamp
-                Return "TODAY"
-            Case ChatStringId.YesterdayStamp
-                Return "YESTERDAY"
-            Case Else
-        End Select
-        Return MyBase.GetLocalizedString(id)
-    End Function
-End Class
-
-````
-
-{{endregion}} 
+ 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\Chat\ChatLocalization.cs region=localizeChat}} 
-{{source=..\SamplesVB\Chat\ChatLocalization.vb region=localizeChat}} 
+<snippet id='chat-localization-localizechat-cs'/>
+<snippet id='chat-localization-localizechat-vb'/>
 
-````C#
-ChatLocalizationProvider.CurrentProvider = new MyEnglishChatLocalizationProvider();
 
-````
-````VB.NET
-ChatLocalizationProvider.CurrentProvider = New MyEnglishChatLocalizationProvider()
-
-````
-
-{{endregion}}
 
 The code provided above illustrates the approach to be used to localize the **RadChat** and is not intended as a full translation.
         

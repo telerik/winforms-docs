@@ -35,52 +35,17 @@ The most common scenarios for the use of custom annotations is for associating s
 
 * Override the **CreateNewElementInstance** method and have it return an instance of your annotation range start/end in both classes. Override the required **CopyContentFromOverride** method as well. In most cases, it should be left empty.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=create}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=create}} 
+<snippet id='richtexteditor-customannotations-create-cs' />
+<snippet id='richtexteditor-customannotations-create-vb' />
 
-````C#
-        
-protected override DocumentElement CreateNewElementInstance()
-{
-    return new CustomAnnotationRangeStart();
-}
-        
-protected override void CopyContentFromOverride(DocumentElement fromElement)
-{
-}
 
-````
-````VB.NET
-Protected Overrides Function CreateNewElementInstance() As DocumentElement
-    Return New CustomAnnotationRangeStart()
-End Function
-Protected Overrides Sub CopyContentFromOverride(ByVal fromElement As DocumentElement)
-End Sub
-
-````
-
-{{endregion}} 
 
 * Override the **CreateRangeStartInstance** in the **RangeEnd** class.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=instance}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=instance}} 
+<snippet id='richtexteditor-customannotations-instance-cs' />
+<snippet id='richtexteditor-customannotations-instance-vb' />
 
-````C#
-protected override AnnotationRangeStart CreateRangeStartInstance()
-{
-    return new CustomAnnotationRangeStart();
-}
 
-````
-````VB.NET
-Protected Overrides Function CreateRangeStartInstance() As AnnotationRangeStart
-    Return New CustomAnnotationRangeStart()
-End Function
-
-````
-
-{{endregion}} 
 
 At this point, you will have the basic functionality working and can continue to customize the behavior of the ranges, i.e. if it will be possible to edit the content in them, what will be the behavior when you hit backspace or delete, if it will be possible to copy the ranges, etc. 
 
@@ -92,26 +57,10 @@ The behavior of the annotations when edited, copied and deleted is determined by
             
 * __CopyPropertiesFromOverride__ - this method should be used when you have custom properties you would like to have copied.  This should be done as follows:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=copy}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=copy}} 
+<snippet id='richtexteditor-customannotations-copy-cs' />
+<snippet id='richtexteditor-customannotations-copy-vb' />
 
-````C#
-protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
-{
-    base.CopyPropertiesFromOverride(fromElement);
-    this.Name = ((CustomAnnotationRangeStart)fromElement).Name;
-}
 
-````
-````VB.NET
-Protected Overrides Sub CopyPropertiesFromOverride(ByVal fromElement As DocumentElement)
-    MyBase.CopyPropertiesFromOverride(fromElement)
-    Me.Name = CType(fromElement, CustomAnnotationRangeStart).Name
-End Sub
-
-````
-
-{{endregion}} 
 
 * __SkipPositionBefore__ - specifies where text will appear if you position the caret next to the range start/end.  For example, if it returns *true* in the range start and *false* in the range end, the text you enter when you position the caret next to the start/end, will appear in the range.
             
@@ -121,128 +70,24 @@ End Sub
  
 **HyperlinkRangeStart**:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=delete}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=delete}} 
+<snippet id='richtexteditor-customannotations-delete-cs' />
+<snippet id='richtexteditor-customannotations-delete-vb' />
 
-````C#
-        
-public override AnnotationMarkerDeleteBehavior DeleteBehavior
-{
-    get
-    {
-        return AnnotationMarkerDeleteBehavior.SelectAnnotation;
-    }
-}
-        
-public override AnnotationMarkerDeleteBehavior BackspaceBehavior
-{
-    get
-    {
-        return AnnotationMarkerDeleteBehavior.SelectAnnotation;
-    }
-}
-        
-public override AnnotationMarkerDeleteBehavior DeleteSelectedBehavior
-{
-    get
-    {
-        return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
-    }
-}
 
-````
-````VB.NET
-Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-    Get
-        Return AnnotationMarkerDeleteBehavior.SelectAnnotation
-    End Get
-End Property
-Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-    Get
-        Return AnnotationMarkerDeleteBehavior.SelectAnnotation
-    End Get
-End Property
-Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-    Get
-        Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-    End Get
-End Property
-
-````
-
-{{endregion}} 
 
 **HyperlinkRangeEnd**:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=delete2}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=delete2}} 
+<snippet id='richtexteditor-customannotations-delete2-cs' />
+<snippet id='richtexteditor-customannotations-delete2-vb' />
 
-````C#
-        
-public override AnnotationMarkerDeleteBehavior DeleteBehavior
-{
-    get
-    {
-        return AnnotationMarkerDeleteBehavior.PreserveAnnotation;
-    }
-}
-        
-public override AnnotationMarkerDeleteBehavior BackspaceBehavior
-{
-    get
-    {
-        return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
-    }
-}
-    
-public override AnnotationMarkerDeleteBehavior DeleteSelectedBehavior
-{
-    get
-    {
-        return AnnotationMarkerDeleteBehavior.RemoveAnnotation;
-    }
-}
 
-````
-````VB.NET
-Public Overrides ReadOnly Property DeleteBehavior() As AnnotationMarkerDeleteBehavior
-    Get
-        Return AnnotationMarkerDeleteBehavior.PreserveAnnotation
-    End Get
-End Property
-Public Overrides ReadOnly Property BackspaceBehavior() As AnnotationMarkerDeleteBehavior
-    Get
-        Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-    End Get
-End Property
-Public Overrides ReadOnly Property DeleteSelectedBehavior() As AnnotationMarkerDeleteBehavior
-    Get
-        Return AnnotationMarkerDeleteBehavior.RemoveAnnotation
-    End Get
-End Property
-
-````
-
-{{endregion}} 
 
 * You can also define custom properties in your annotation range start/end. If you want to be able to serialize them, you can just mark them with the **XamlSerializable** attribute:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\CustomAnnotations.cs region=name}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\CustomAnnotations.vb region=name}} 
+<snippet id='richtexteditor-customannotations-name-cs' />
+<snippet id='richtexteditor-customannotations-name-vb' />
 
-````C#
-    
-[XamlSerializable]
-public string Name { get; set; }
 
-````
-````VB.NET
-<XamlSerializable>
-Public Property Name() As String
-
-````
-
-{{endregion}} 
 
 ## Serialization
 

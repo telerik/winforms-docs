@@ -38,27 +38,10 @@ It is possible to set the **DataSource** property programmatically as well.
 
 #### Setting DataSource at run time
 
-{{source=..\SamplesCS\DataFilter\DataFilterGettingStarted.cs region=BoundMode}} 
-{{source=..\SamplesVB\DataFilter\DataFilterGettingStarted.vb region=BoundMode}}
+<snippet id='datafilter-data-binding-boundmode-cs' />
+<snippet id='datafilter-data-binding-boundmode-vb' />
 
-````C#
-DataTable dt = new DataTable();
-dt.Columns.Add("Id", typeof(int));
-dt.Columns.Add("Name", typeof(string));
-dt.Columns.Add("IsActive", typeof(bool));
-this.radDataFilter1.DataSource = dt;
 
-````
-````VB.NET
-Dim dt As New DataTable()
-dt.Columns.Add("Id", GetType(Integer))
-dt.Columns.Add("Name", GetType(String))
-dt.Columns.Add("IsActive", GetType(Boolean))
-Me.RadDataFilter1.DataSource = dt
-
-```` 
-
-{{endregion}}
 
 After setting the **DataSource** property, the **Descriptors** collection is filled with the respective fields. Then, you can apply the desired filter either by setting the **Expression** property or by using the UI at run time.
 

@@ -18,20 +18,10 @@ The columns inside the __RadVirtualGrid__ are resizable by default. The user is 
 
 To restrict the resizing of all columns by the user set the __AllowColumnResize__ property to *false*.
 
-{{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=AllowColumnResize}} 
-{{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=AllowColumnResize}}
-````C#
-this.radVirtualGrid1.AllowColumnResize = false;
-
-````
-````VB.NET
-Me.RadVirtualGrid1.AllowColumnResize = False
-
-```` 
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-allowcolumnresize-cs' />
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-allowcolumnresize-vb' />
 
 
-
-{{endregion}}
 
 ## Programmatically Resizing Column
 
@@ -40,21 +30,10 @@ The width of columns can be set individually, per column. Note that the visible 
 >caption Fig.1 Resize a Column 
 ![WinForms RadVirtualGrid Resize a Column](images/virtualgrid-columns-resizing-columns001.png)
 
-{{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=ResizeSingleColumn}} 
-{{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=ResizeSingleColumn}}
-````C#
-            
-this.radVirtualGrid1.TableElement.ColumnsViewState.SetItemSize(0, 200);
-
-````
-````VB.NET
-Me.RadVirtualGrid1.TableElement.ColumnsViewState.SetItemSize(0, 200)
-
-```` 
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-resizesinglecolumn-cs' />
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-resizesinglecolumn-vb' />
 
 
-
-{{endregion}}
 
 ## Column Auto-Sizing
 
@@ -64,36 +43,19 @@ Columns can be auto-sized to a best fit value. The available API exposes methods
 
 ![WinForms RadVirtualGrid Best fit all columns](images/virtualgrid-columns-resizing-columns002.png)
 
-{{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=BestFitAllColumns}} 
-{{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=BestFitAllColumns}}
-````C#
-            
-this.radVirtualGrid1.BestFitColumns();
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-bestfitallcolumns-cs' />
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-bestfitallcolumns-vb' />
 
-````
-````VB.NET
-Me.RadVirtualGrid1.BestFitColumns()
 
-````  
-
-{{endregion}}
 
 >caption Figure 3: Best fit one column.
 
 ![WinForms RadVirtualGrid Best fit one column](images/virtualgrid-columns-resizing-columns003.png)
 
-{{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=BestFitColumn}} 
-{{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=BestFitColumn}}
-````C#
-            
-this.radVirtualGrid1.VirtualGridElement.BestFitColumn(1);
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-bestfitcolumn-cs' />
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-bestfitcolumn-vb' />
 
-````
-````VB.NET
-Me.RadVirtualGrid1.VirtualGridElement.BestFitColumn(1)
 
-````  
-{{endregion}}
 
 Columns can be auto-sized to fit the available space in __RadVirtualGrid__. It is necessary to set the __AutoSizeColumnsMode__ property to *VirtualGridAutoSizeColumnsMode.Fill*:
 
@@ -101,18 +63,10 @@ Columns can be auto-sized to fit the available space in __RadVirtualGrid__. It i
 
 ![WinForms RadVirtualGrid AutoSizeColumnsMode Fill](images/virtualgrid-columns-resizing-columns004.gif)
 
-{{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=AutoSizeColumnsMode}} 
-{{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=AutoSizeColumnsMode}}
-````C#
-            
-this.radVirtualGrid1.AutoSizeColumnsMode = VirtualGridAutoSizeColumnsMode.Fill;
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-autosizecolumnsmode-cs' />
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-autosizecolumnsmode-vb' />
 
-````
-````VB.NET
-Me.RadVirtualGrid1.AutoSizeColumnsMode = VirtualGridAutoSizeColumnsMode.Fill
 
-````  
-{{endregion}}
 
 ## Events
 
@@ -136,37 +90,10 @@ The API exposes two events for notifications when a change in the height of a ro
   
  * __ViewInfo:__ Reference to the __VirtualGridViewInfo__ object.
 
-{{source=..\SamplesCS\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.cs region=ResizingEvents}} 
-{{source=..\SamplesVB\VirtualGrid\Columns\VirtualGridColumnsResizingProgrammatically.vb region=ResizingEvents}}
-````C#
-        
-private void radVirtualGrid1_ColumnWidthChanging(object sender, VirtualGridColumnWidthChangingEventArgs e)
-{
-    if (e.ColumnIndex == 0)
-    {
-        e.Cancel = true;
-    }
-}
-        
-private void radVirtualGrid1_ColumnWidthChanged(object sender, VirtualGridColumnEventArgs e)
-{
-}
-
-````
-````VB.NET
-Private Sub radVirtualGrid1_ColumnWidthChanging(sender As Object, e As VirtualGridColumnWidthChangingEventArgs)
-    If e.ColumnIndex = 0 Then
-        e.Cancel = True
-    End If
-End Sub
-Private Sub radVirtualGrid1_ColumnWidthChanged(sender As Object, e As VirtualGridColumnEventArgs)
-End Sub
-
-```` 
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-resizingevents-cs' />
+<snippet id='virtualgrid-virtualgridcolumnsresizingprogrammatically-resizingevents-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 * [Pinned Columns]({%slug winforms/virtualgrid/columns/pinned-columns%})

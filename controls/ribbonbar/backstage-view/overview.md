@@ -15,19 +15,10 @@ Backstage View is the Office 2010 replacement of the Application Menu. It is a m
 
 #### Enabling Backstage view
 
-{{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=ApplicationMenuStyle}} 
-{{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=ApplicationMenuStyle}} 
+<snippet id='ribbonbar-ribbonbackstageview-applicationmenustyle-cs' />
+<snippet id='ribbonbar-ribbonbackstageview-applicationmenustyle-vb' />
 
-````C#
-radRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle.BackstageView;
 
-````
-````VB.NET
-RadRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle.BackstageView
-
-````
-
-{{endregion}} 
 
 ![WinForms RadRibbonBar Backstage Overview](images/ribbonbar-backstage-view-overview001.png)
 

@@ -57,22 +57,10 @@ The following tutorial demonstrates how to populate __RadCheckedDropDownList__ a
 
 #### Handling ItemCheckedChanged event
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\GettingStarted1.cs region=AddItems}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\GettingStarted1.vb region=AddItems}} 
+<snippet id='checkeddropdownlist-getting-started-additems-cs' />
+<snippet id='checkeddropdownlist-getting-started-additems-vb' />
 
-````C#
-private void radCheckedDropDownList1_ItemCheckedChanged(object sender, RadCheckedListDataItemEventArgs e)
-{
-      RadMessageBox.Show(" Item >> " + e.Item.Text + " Checked state >> " + e.Item.Checked);
-}
 
-````
-````VB.NET
-Private Sub radCheckedDropDownList1_ItemCheckedChanged(sender As Object, e As RadCheckedListDataItemEventArgs)
-    RadMessageBox.Show(" Item >> " + e.Item.Text + " Checked state >> " + e.Item.Checked)
-End Sub
-
-````
 
 >caption Figure 2: Handling ItemCheckedChanged
 

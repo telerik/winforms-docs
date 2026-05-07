@@ -35,21 +35,10 @@ __RadPdfViewer__ also exposes the two known methods which allow you to easily pr
 
 #### Printing
 
-{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=PrintMethods}} 
-{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=PrintMethods}} 
+<snippet id='pdfviewer-pdfgettingstarted-printmethods-cs' />
+<snippet id='pdfviewer-pdfgettingstarted-printmethods-vb' />
 
-````C#
-this.radPdfViewer1.Print();
-this.radPdfViewer1.PrintPreview();
 
-````
-````VB.NET
-Me.RadPdfViewer1.Print()
-Me.RadPdfViewer1.PrintPreview()
-
-````
-
-{{endregion}}
 
 # See Also
 

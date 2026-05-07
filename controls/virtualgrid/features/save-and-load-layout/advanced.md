@@ -26,26 +26,10 @@ Here is a snippet clearing the default settings:
 
 #### Clear Default Settings
 
-{{source=..\SamplesCS\VirtualGrid\SaveLoadLayout\VirtualGridSaveLoadLayout.cs region=ClearSettings}} 
-{{source=..\SamplesVB\VirtualGrid\SaveLoadLayout\VirtualGridSaveLoadLayout.vb region=ClearSettings}} 
+<snippet id='virtualgrid-virtualgridsaveloadlayout-clearsettings-cs' />
+<snippet id='virtualgrid-virtualgridsaveloadlayout-clearsettings-vb' />
 
-````C#
-private void ClearSettings(object sender, EventArgs e)
-{
-    this.radVirtualGrid1.XmlSerializationInfo.DisregardOriginalSerializationVisibility = true;
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Clear();
-}
 
-````
-````VB.NET
-Private Sub ClearSettings(sender As Object, e As EventArgs)
-    Me.RadVirtualGrid1.XmlSerializationInfo.DisregardOriginalSerializationVisibility = True
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Clear()
-End Sub
-
-````
-
-{{endregion}} 
 
 >note Clearing the default settings would require all the serialization meta data to be loaded manually.
 >
@@ -54,50 +38,10 @@ The code snippets below demonstrates how you can hide a particular information t
 
 #### Define Data
 
-{{source=..\SamplesCS\VirtualGrid\SaveLoadLayout\VirtualGridSaveLoadLayout.cs region=DefineData}} 
-{{source=..\SamplesVB\VirtualGrid\SaveLoadLayout\VirtualGridSaveLoadLayout.vb region=DefineData}} 
+<snippet id='virtualgrid-virtualgridsaveloadlayout-definedata-cs' />
+<snippet id='virtualgrid-virtualgridsaveloadlayout-definedata-vb' />
 
-````C#
-private void DefineData(object sender, EventArgs e)
-{
-    //Hide items
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridViewInfo), "CustomColumns", new DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden));
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridViewInfo), "ColumnDataTypes", new DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden));
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridTableViewState), "ItemSizes", new DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden));
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridTableViewState), "ItemCount", new DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden));
-    //Sort Descriptors            
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridViewInfo), "SortDescriptors", DesignerSerializationVisibilityAttribute.Hidden);
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(SortDescriptor), "Direction", DesignerSerializationVisibilityAttribute.Hidden);
-    //Filter Descriptors           
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(VirtualGridViewInfo), "FilterDescriptors", DesignerSerializationVisibilityAttribute.Hidden);
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Hidden);
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "Operator", DesignerSerializationVisibilityAttribute.Hidden);
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "Value", DesignerSerializationVisibilityAttribute.Hidden);
-    this.radVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(typeof(FilterDescriptor), "IsFilterEditor", DesignerSerializationVisibilityAttribute.Hidden);
-}
 
-````
-````VB.NET
-Private Sub DefineData(sender As Object, e As EventArgs)
-    'Hide items
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridViewInfo), "CustomColumns", New DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden))
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridViewInfo), "ColumnDataTypes", New DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden))
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridTableViewState), "ItemSizes", New DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden))
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridTableViewState), "ItemCount", New DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Hidden))
-    'Sort Descriptors            
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridViewInfo), "SortDescriptors", DesignerSerializationVisibilityAttribute.Hidden)
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(SortDescriptor), "Direction", DesignerSerializationVisibilityAttribute.Hidden)
-    'Filter Descriptors           
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(VirtualGridViewInfo), "FilterDescriptors", DesignerSerializationVisibilityAttribute.Hidden)
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "PropertyName", DesignerSerializationVisibilityAttribute.Hidden)
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "Operator", DesignerSerializationVisibilityAttribute.Hidden)
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "Value", DesignerSerializationVisibilityAttribute.Hidden)
-    Me.RadVirtualGrid1.XmlSerializationInfo.SerializationMetadata.Add(GetType(FilterDescriptor), "IsFilterEditor", DesignerSerializationVisibilityAttribute.Hidden)
-End Sub
-
-````
-
-{{endregion}} 
 
 >note Once the layout is being loaded the __LayoutLoaded__ event is being thrown in order to notify that the load process is being finished.
 >

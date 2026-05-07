@@ -23,21 +23,10 @@ The items in **RadListView** are stored in a collection that is accessible throu
 
 #### Adding items
 
-{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addItems}} 
-{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addItems}} 
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-additems-cs' />
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-additems-vb' />
 
-````C#
-this.radListView1.Items.Add(new ListViewDataItem("Item 1"));
-this.radListView1.Items.Add("Item 2");
 
-````
-````VB.NET
-Me.RadListView1.Items.Add(New ListViewDataItem("Item 1"))
-Me.RadListView1.Items.Add("Item 2")
-
-````
-
-{{endregion}} 
 
 ## Adding Columns
 
@@ -45,52 +34,19 @@ When in [DetailsView]({%slug winforms/listview/views%}), **RadListView** display
 
 #### Adding columns
 
-{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addColumns}} 
-{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addColumns}} 
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-addcolumns-cs' />
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-addcolumns-vb' />
 
-````C#
-this.radListView1.Columns.Add("Column1");
-this.radListView1.Columns.Add("Column2", "Column2Header");
-this.radListView1.Columns.Add(new ListViewDetailColumn("Column3", "Column3Header"));
 
-````
-````VB.NET
-Me.RadListView1.Columns.Add("Column1")
-Me.RadListView1.Columns.Add("Column2", "Column2Header")
-Me.RadListView1.Columns.Add(New ListViewDetailColumn("Column3", "Column3Header"))
-
-````
-
-{{endregion}} 
 
 You can set cell values to the items of **RadListView** using their indexers. The keys can be either the index of the column, the name of the column, or the column itself.
 
 #### Populating cells
 
-{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=populateCells}} 
-{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=populateCells}} 
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-populatecells-cs' />
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-populatecells-vb' />
 
-````C#
-ListViewDataItem item = new ListViewDataItem();
-//it is important that you add the item to the control prior assigning its cell's values, so it will have its cells schema
-radListView1.Items.Add(item);
-            
-item[0] = "CellValue1";
-item["Column2"] = "CellValue2";
-item[radListView1.Columns[2]] = "CellValue3";
 
-````
-````VB.NET
-Dim item As ListViewDataItem = New ListViewDataItem()
-'it is important that you add the item to the control prior assigning its cell's values, so it will have its cells schema
-RadListView1.Items.Add(item)
-item(0) = "CellValue1"
-item("Column2") = "CellValue2"
-item(RadListView1.Columns(2)) = "CellValue3"
-
-````
-
-{{endregion}} 
 
 >important To use these indexers, the item must have a valid owner e.g. it first has to be added to the __Items__ collection of **RadListView**.
  
@@ -102,45 +58,19 @@ Aside from using __GroupDescriptors__, custom groups can also be added to **RadL
 
 #### Adding groups
 
-{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=addGroups}} 
-{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=addGroups}} 
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-addgroups-cs' />
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-addgroups-vb' />
 
-````C#
-this.radListView1.Groups.Add(new ListViewDataItemGroup("First Group"));
-this.radListView1.Groups.Add(new ListViewDataItemGroup("Second Group"));
 
-````
-````VB.NET
-Me.RadListView1.Groups.Add(New ListViewDataItemGroup("First Group"))
-Me.RadListView1.Groups.Add(New ListViewDataItemGroup("Second Group"))
-
-````
-
-{{endregion}} 
 
 In order to assign an item to a group, you should set the item’s __Group__ property:
 
 #### Assign item to a group
 
-{{source=..\SamplesCS\ListView\ListViewProgramaticallyPopulatingWithData.cs region=assignItemToAGroup}} 
-{{source=..\SamplesVB\ListView\ListViewProgramaticallyPopulatingWithData.vb region=assignItemToAGroup}} 
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-assignitemtoagroup-cs' />
+<snippet id='listview-listviewprogramaticallypopulatingwithdata-assignitemtoagroup-vb' />
 
-````C#
-this.radListView1.Items[0].Group = this.radListView1.Groups[0];
-this.radListView1.Items[1].Group = this.radListView1.Groups[0];
-this.radListView1.Items[2].Group = this.radListView1.Groups[1];
-this.radListView1.Items[3].Group = this.radListView1.Groups[1];
 
-````
-````VB.NET
-Me.RadListView1.Items(0).Group = Me.RadListView1.Groups(0)
-Me.RadListView1.Items(1).Group = Me.RadListView1.Groups(0)
-Me.RadListView1.Items(2).Group = Me.RadListView1.Groups(1)
-Me.RadListView1.Items(3).Group = Me.RadListView1.Groups(1)
-
-````
-
-{{endregion}} 
 
 In order to enable this kind of grouping the __EnableCustomGrouping__ property needs to be set to *true*. In order to display the groups, the __ShowGroups__ property needs to be set to *true*.		
 

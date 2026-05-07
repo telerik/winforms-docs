@@ -24,42 +24,17 @@ Here is how to access the __RangeSelectorViewElement__ and change the series typ
 
 #### SeriesInitializing Event
 
-{{source=..\SamplesCS\RangeSelector\RangeSelectorIntegrationWithChart.cs region=ScaleCustomization1}} 
-{{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=ScaleCustomization1}} 
+<snippet id='rangeselector-rangeselectorintegrationwithchart-scalecustomization1-cs' />
+<snippet id='rangeselector-rangeselectorintegrationwithchart-scalecustomization1-vb' />
 
-````C#
-RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
-chartElement.SeriesInitializing += new SeriesInitializingEventHandler(chartElement_SeriesInitializing);
 
-````
-````VB.NET
-Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-AddHandler chartElement.SeriesInitializing, AddressOf chartElement_SeriesInitializing
-
-````
-
-{{endregion}}
 
 #### Change Series Type
 
-{{source=..\SamplesCS\RangeSelector\RangeSelectorIntegrationWithChart.cs region=ScaleCustomization2}} 
-{{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=ScaleCustomization2}} 
+<snippet id='rangeselector-rangeselectorintegrationwithchart-scalecustomization2-cs' />
+<snippet id='rangeselector-rangeselectorintegrationwithchart-scalecustomization2-vb' />
 
-````C#
-void chartElement_SeriesInitializing(object sender, SeriesInitializingEventArgs e)
-{
-    e.SeriesType = typeof(BarSeries);
-}
 
-````
-````VB.NET
-Private Sub chartElement_SeriesInitializing(sender As Object, e As SeriesInitializingEventArgs)
-    e.SeriesType = GetType(BarSeries)
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: BarSeries
 ![WinForms RadRangeSelector BarSeries](images/rangeselector-integration-with-chartview001.png)
@@ -72,58 +47,17 @@ Here is how to access and modify the labels in RadRangeSelector
 
 #### LabelInitializing Event
 
-{{source=..\SamplesCS\RangeSelector\RangeSelectorIntegrationWithChart.cs region=LabelCustomization}} 
-{{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=LabelCustomization}} 
+<snippet id='rangeselector-rangeselectorintegrationwithchart-labelcustomization-cs' />
+<snippet id='rangeselector-rangeselectorintegrationwithchart-labelcustomization-vb' />
 
-````C#
-RangeSelectorViewElement chartElement = this.radRangeSelector1.RangeSelectorElement.AssociatedElement as RangeSelectorViewElement;
-chartElement.LabelInitializing += new LabelInitializingEventHandler(chartElement_LabelInitializing);
 
-````
-````VB.NET
-Dim chartElement As RangeSelectorViewElement = TryCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement)
-AddHandler chartElement.LabelInitializing, AddressOf chartElement_LabelInitializing
-
-````
-
-{{endregion}} 
 
 #### Change Labels
 
-{{source=..\SamplesCS\RangeSelector\RangeSelectorIntegrationWithChart.cs region=LabelCustomization1}} 
-{{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=LabelCustomization1}} 
+<snippet id='rangeselector-rangeselectorintegrationwithchart-labelcustomization1-cs' />
+<snippet id='rangeselector-rangeselectorintegrationwithchart-labelcustomization1-vb' />
 
-````C#
-Font f = new Font("Arial", 22);
-void chartElement_LabelInitializing(object sender, LabelInitializingEventArgs e)
-{
-    e.LabelElement.Font = f;
-    if (e.LabelElement.Text == "C")
-    {
-        e.LabelElement.ForeColor = Color.Blue;
-    }
-    if (e.LabelElement.Text == "A")
-    {
-        e.LabelElement.ForeColor = Color.Red;
-    }
-}
 
-````
-````VB.NET
-Private f As New Font("Arial", 22)
-Private Sub chartElement_LabelInitializing(sender As Object, e As LabelInitializingEventArgs)
-    e.LabelElement.Font = f
-    If e.LabelElement.Text = "C" Then
-        e.LabelElement.ForeColor = Color.Blue
-    End If
-    If e.LabelElement.Text = "A" Then
-        e.LabelElement.ForeColor = Color.Red
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Changed Chart Labels
 ![WinForms RadRangeSelector Changed Chart Labels](images/rangeselector-integration-with-chartview002.png)
@@ -138,44 +72,17 @@ The easiest way to access these properties is in the __ScaleInitializing__ event
 
 #### ScaleInitializing Event
 
-{{source=..\SamplesCS\RangeSelector\RangeSelectorIntegrationWithChart.cs region=LabelCustomization2}} 
-{{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=LabelCustomization2}} 
+<snippet id='rangeselector-rangeselectorintegrationwithchart-labelcustomization2-cs' />
+<snippet id='rangeselector-rangeselectorintegrationwithchart-labelcustomization2-vb' />
 
-````C#
-this.radRangeSelector1.ScaleInitializing += new ScaleInitializingEventHandler(radRangeSelector1_ScaleInitializing);
 
-````
-````VB.NET
-AddHandler Me.radRangeSelector1.ScaleInitializing, AddressOf radRangeSelector1_ScaleInitializing
-
-````
-
-{{endregion}}
 
 #### Label Settings
 
-{{source=..\SamplesCS\RangeSelector\RangeSelectorIntegrationWithChart.cs region=LabelCustomization3}} 
-{{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=LabelCustomization3}} 
+<snippet id='rangeselector-rangeselectorintegrationwithchart-labelcustomization3-cs' />
+<snippet id='rangeselector-rangeselectorintegrationwithchart-labelcustomization3-vb' />
 
-````C#
-void radRangeSelector1_ScaleInitializing(object sender, ScaleInitializingEventArgs e)
-{
-    RangeSelectorChartScaleContainerElement chartScaleElement = e.ScaleElement as RangeSelectorChartScaleContainerElement;
-    chartScaleElement.LabelsOffset = 0;
-    chartScaleElement.ShowAllLabels = false;
-}
 
-````
-````VB.NET
-Private Sub radRangeSelector1_ScaleInitializing(sender As Object, e As ScaleInitializingEventArgs)
-    Dim chartScaleElement As RangeSelectorChartScaleContainerElement = TryCast(e.ScaleElement, RangeSelectorChartScaleContainerElement)
-    chartScaleElement.LabelsOffset = 0
-    chartScaleElement.ShowAllLabels = False
-End Sub
-
-````
-
-{{endregion}}
 
 ## Pan and Zoom Synchronization
 
@@ -183,19 +90,10 @@ There is two-way synchronization between the pan and zoom functionality of RadCh
 
 #### Disable Pan and Zoom Synchronization
 
-{{source=..\SamplesCS\RangeSelector\RangeSelectorIntegrationWithChart.cs region=EnablePanAndZoomSynchronization}} 
-{{source=..\SamplesVB\RangeSelector\RangeSelectorIntegrationWithChart.vb region=EnablePanAndZoomSynchronization}} 
+<snippet id='rangeselector-rangeselectorintegrationwithchart-enablepanandzoomsynchronization-cs' />
+<snippet id='rangeselector-rangeselectorintegrationwithchart-enablepanandzoomsynchronization-vb' />
 
-````C#
-((RangeSelectorViewElement)this.radRangeSelector1.RangeSelectorElement.AssociatedElement).EnablePanAndZoomSynchronization = false;
 
-````
-````VB.NET
-DirectCast(Me.radRangeSelector1.RangeSelectorElement.AssociatedElement, RangeSelectorViewElement).EnablePanAndZoomSynchronization = False
-
-````
-
-{{endregion}}
 
 ## See Also
 

@@ -16,18 +16,10 @@ If you want to add a specific content to the string you will need to enclose in 
 
 #### Using a custom format string
 
-{{source=..\SamplesCS\Editors\TimeSpanCode.cs region=FormatString}} 
-{{source=..\SamplesVB\Editors\TimeSpanCode.vb region=FormatString}}
-````C#
-radTimeSpanPicker1.Format = "dd\'days \'hh\'hours \'mm\'minutes \'ss\'seconds \'fff\'milliseconds\'";
+<snippet id='editors-timespancode-formatstring-cs' />
+<snippet id='editors-timespancode-formatstring-vb' />
 
-````
-````VB.NET
-radTimeSpanPicker1.Format = "dd'days 'hh'hours 'mm'minutes 'ss'seconds 'fff'milliseconds'"
 
-```` 
-
-{{endregion}} 
 
 You can find in the screenshot below the obtained result.
 

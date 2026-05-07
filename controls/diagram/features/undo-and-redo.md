@@ -23,33 +23,10 @@ __RadDiagram__ class exposes two methods that allow you to take advantage of the
 * __Redo()__: this method reapplies the last operation that was undone in the __RadDiagram__.
             
 
-{{source=..\SamplesCS\Diagram\DiagramUndoRedo.cs region=UndoRedo}} 
-{{source=..\SamplesVB\Diagram\DiagramUndoRedo.vb region=UndoRedo}} 
+<snippet id='diagram-undo-and-redo-undoredo-cs'/>
+<snippet id='diagram-undo-and-redo-undoredo-vb'/>
 
-````C#
-        
-private void radButtonUndo_Click(object sender, EventArgs e)
-{
-    this.radDiagram1.Undo();
-}
-        
-private void radButtonRedo_Click(object sender, EventArgs e)
-{
-    this.radDiagram1.Redo();
-}
-
-````
-````VB.NET
-Private Sub RadButtonUndo_Click(sender As Object, e As EventArgs) Handles RadButtonUndo.Click
-    Me.RadDiagram1.Undo()
-End Sub
-Private Sub RadButtonRedo_Click(sender As Object, e As EventArgs) Handles RadButtonRedo.Click
-    Me.RadDiagram1.Redo()
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 
 
@@ -65,21 +42,10 @@ Telerik Diagramming Framework exposes a set of commands that allow you to easily
 >
  
 
-{{source=..\SamplesCS\Diagram\DiagramUndoRedo.cs region=CommandsUndoRedo}} 
-{{source=..\SamplesVB\Diagram\DiagramUndoRedo.vb region=CommandsUndoRedo}} 
+<snippet id='diagram-undo-and-redo-commandsundoredo-cs'/>
+<snippet id='diagram-undo-and-redo-commandsundoredo-vb'/>
 
-````C#
-this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Undo);
-this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Redo);
-
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Undo)
-Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Redo)
-
-````
-
-{{endregion}} 
+ 
 
 
 

@@ -22,19 +22,10 @@ To enable this functionality a single property setting is needed:
 
 #### Enable Keyboard Navigation
 
-{{source=..\SamplesCS\ListView\ListViewKeyboardNavigation.cs region=KeyboardSearchEnabled}} 
-{{source=..\SamplesVB\ListView\ListViewKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
+<snippet id='listview-listviewkeyboardnavigation-keyboardsearchenabled-cs' />
+<snippet id='listview-listviewkeyboardnavigation-keyboardsearchenabled-vb' />
 
-````C#
-radListView1.KeyboardSearchEnabled = true;
 
-````
-````VB.NET
-RadListView1.KeyboardSearchEnabled = True
-
-````
-
-{{endregion}}
 
 >note Considering the **Text** of each data item, the search behavior is performed. So if you populate **RadListView** with data by using data binding, don't miss to set the **DisplayMember** property which will fill the **Text** for each item.
 
@@ -42,19 +33,8 @@ Another property of interest is the __KeyboardSearchResetInterval__ property. It
 
 #### Specify the KeyboardSearchResetInterval
 
-{{source=..\SamplesCS\ListView\ListViewKeyboardNavigation.cs region=KeyboardSearchResetInterval}} 
-{{source=..\SamplesVB\ListView\ListViewKeyboardNavigation.vb region=KeyboardSearchResetInterval}} 
-
-````C#
-radListView1.KeyboardSearchResetInterval = 200;
-
-````
-````VB.NET
-RadListView1.KeyboardSearchResetInterval = 200
-
-````
-
-{{endregion}} 
+<snippet id='listview-listviewkeyboardnavigation-keyboardsearchresetinterval-cs' />
+<snippet id='listview-listviewkeyboardnavigation-keyboardsearchresetinterval-vb' />
 
 
 

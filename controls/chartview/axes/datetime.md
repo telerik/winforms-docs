@@ -37,41 +37,10 @@ DateTimeCategorical axis is not added by default to Cartesian series. For this r
 
 #### DateTimeCategoricalAxis Setup
 
-{{source=..\SamplesCS\ChartView\Axes\DateTimeAxisForm.cs region=dateTimeCategoricalAxis}} 
-{{source=..\SamplesVB\ChartView\Axes\DateTimeAxisForm.vb region=dateTimeCategoricalAxis}} 
+<snippet id='chartview-datetime-datetimecategoricalaxis-cs'/>
+<snippet id='chartview-datetime-datetimecategoricalaxis-vb'/>
 
-````C#
-LineSeries series = new LineSeries();
-series.DataPoints.Add(new CategoricalDataPoint(6, DateTime.Now));
-series.DataPoints.Add(new CategoricalDataPoint(4, DateTime.Now.AddDays(1)));
-series.DataPoints.Add(new CategoricalDataPoint(7, DateTime.Now.AddDays(2)));
-series.DataPoints.Add(new CategoricalDataPoint(5, DateTime.Now.AddDays(3)));
-DateTimeCategoricalAxis categoricalAxis = new DateTimeCategoricalAxis();
-categoricalAxis.DateTimeComponent = DateTimeComponent.Day;
-categoricalAxis.PlotMode = AxisPlotMode.BetweenTicks;
-categoricalAxis.LabelFormat = "{0:m}";
-//First assign the axis to the VerticalAxis property and then add the series to the chart
-series.HorizontalAxis = categoricalAxis;
-radChartView1.Series.Add(series);
 
-````
-````VB.NET
-Dim series As New LineSeries()
-series.DataPoints.Add(New CategoricalDataPoint(6, DateTime.Now))
-series.DataPoints.Add(New CategoricalDataPoint(4, DateTime.Now.AddDays(1)))
-series.DataPoints.Add(New CategoricalDataPoint(7, DateTime.Now.AddDays(2)))
-series.DataPoints.Add(New CategoricalDataPoint(5, DateTime.Now.AddDays(3)))
-Dim categoricalAxis As New DateTimeCategoricalAxis()
-categoricalAxis.DateTimeComponent = DateTimeComponent.Day
-categoricalAxis.PlotMode = AxisPlotMode.BetweenTicks
-categoricalAxis.LabelFormat = "{0:m}"
-'First assign the axis to the VerticalAxis property and then add the series to the chart
-series.HorizontalAxis = categoricalAxis
-RadChartView1.Series.Add(series)
-
-````
-
-{{endregion}}
 
 >caption Figure 1: DateTimeCategoricalAxis Setup
 ![WinForms RadChartView DateTimeCategoricalAxis Setup](images/chartview-axes-datetimel001.png)
@@ -104,39 +73,10 @@ DateTimeContinuous axis is not added by default to Cartesian series. For this re
 
 #### DateTimeContinuousAxis Setup
 
-{{source=..\SamplesCS\ChartView\Axes\DateTimeAxisForm.cs region=dateTimeContinuousAxis}} 
-{{source=..\SamplesVB\ChartView\Axes\DateTimeAxisForm.vb region=dateTimeContinuousAxis}} 
+<snippet id='chartview-datetime-datetimecontinuousaxis-cs'/>
+<snippet id='chartview-datetime-datetimecontinuousaxis-vb'/>
 
-````C#
-LineSeries lineSeries = new LineSeries();
-lineSeries.DataPoints.Add(new CategoricalDataPoint(6, DateTime.Now));
-lineSeries.DataPoints.Add(new CategoricalDataPoint(4, DateTime.Now.AddDays(1)));
-lineSeries.DataPoints.Add(new CategoricalDataPoint(7, DateTime.Now.AddDays(2)));
-lineSeries.DataPoints.Add(new CategoricalDataPoint(5, DateTime.Now.AddDays(3)));
-DateTimeContinuousAxis continuousAxis = new DateTimeContinuousAxis();
-continuousAxis.PlotMode = AxisPlotMode.BetweenTicks;
-continuousAxis.LabelFormat = "{0:d}";
-//First assign the axis to the VerticalAxis property and then add the series to the chart
-lineSeries.HorizontalAxis = continuousAxis;
-radChartView1.Series.Add(lineSeries);
 
-````
-````VB.NET
-Dim lineSeries As New LineSeries()
-lineSeries.DataPoints.Add(New CategoricalDataPoint(6, DateTime.Now))
-lineSeries.DataPoints.Add(New CategoricalDataPoint(4, DateTime.Now.AddDays(1)))
-lineSeries.DataPoints.Add(New CategoricalDataPoint(7, DateTime.Now.AddDays(2)))
-lineSeries.DataPoints.Add(New CategoricalDataPoint(5, DateTime.Now.AddDays(3)))
-Dim continuousAxis As New DateTimeContinuousAxis()
-continuousAxis.PlotMode = AxisPlotMode.BetweenTicks
-continuousAxis.LabelFormat = "{0:d}"
-'First assign the axis to the VerticalAxis property and then add the series to the chart
-lineSeries.HorizontalAxis = continuousAxis
-RadChartView1.Series.Add(lineSeries)
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: DateTimeContinuousAxis Setup Setup
 ![WinForms RadChartView DateTimeContinuousAxis Setup](images/chartview-axes-datetimel002.png)

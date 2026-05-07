@@ -24,35 +24,10 @@ __RadScheduler__ gives you the ability to easily customize its default context m
 
 1. In the __ContextMenuOpenning__ event handler replace the default context menus with the newly created ones.
 
-{{source=..\SamplesCS\Scheduler\CustomizeContextMenu.cs region=contextMenuOpening}} 
-{{source=..\SamplesVB\Scheduler\CustomizeContextMenu.vb region=contextMenuOpening}} 
+<snippet id='scheduler-customizecontextmenu-contextmenuopening-cs' />
+<snippet id='scheduler-customizecontextmenu-contextmenuopening-vb' />
 
-````C#
-void radScheduler1_ContextMenuOpening(object sender, SchedulerContextMenuOpeningEventArgs e)
-{
-    if (e.Element is AppointmentElement)
-    {
-        e.Menu = this.radContextMenu1;
-    }
-    else
-    {
-        e.Menu = this.radContextMenu2;
-    }
-}
 
-````
-````VB.NET
-Private Sub radScheduler1_ContextMenuOpening(sender As Object, e As SchedulerContextMenuOpeningEventArgs) Handles RadScheduler1.ContextMenuOpening
-    If TypeOf e.Element Is AppointmentElement Then
-        e.Menu = Me.RadContextMenu1
-    Else
-        e.Menu = Me.RadContextMenu2
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 As you can see in the screenshots below, we can set different context menus depending on the element that invokes the context menu creation.
 
@@ -68,35 +43,10 @@ The __Menu__ property of the __SchedulerContextMenuOpeningEventArgs__ objects gi
 
 #### Handle ContextMenuOpening
 
-{{source=..\SamplesCS\Scheduler\CustomizeContextMenu.cs region=contextMenuOpening1}} 
-{{source=..\SamplesVB\Scheduler\CustomizeContextMenu.vb region=contextMenuOpening1}} 
+<snippet id='scheduler-customizecontextmenu-contextmenuopening1-cs' />
+<snippet id='scheduler-customizecontextmenu-contextmenuopening1-vb' />
 
-````C#
-void radScheduler1_ContextMenuOpening1(object sender, SchedulerContextMenuOpeningEventArgs e)
-{
-    if (e.Element is AppointmentElement)
-    {
-        e.Menu.Items.RemoveAt(0);
-    }
-    else
-    {
-        e.Cancel = true;
-    }
-}
 
-````
-````VB.NET
-Private Sub radScheduler1_ContextMenuOpening1(sender As Object, e As SchedulerContextMenuOpeningEventArgs)
-    If TypeOf e.Element Is AppointmentElement Then
-        e.Menu.Items.RemoveAt(0)
-    Else
-        e.Cancel = True
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 # See Also
 

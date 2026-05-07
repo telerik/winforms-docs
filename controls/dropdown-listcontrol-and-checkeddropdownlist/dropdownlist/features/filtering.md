@@ -15,48 +15,17 @@ __RadDropDownList__ supports filtering of its items. In order to apply a filter,
 
 #### Filter 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=Filter}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=Filter}}
-````C#
-            
-this.radDropDownList1.Filter = FilterItem;
+<snippet id='dropdownlist-filtering-filter-cs' />
+<snippet id='dropdownlist-filtering-filter-vb' />
 
-````
-````VB.NET
-Me.radDropDownList1.Filter = AddressOf FilterItem
-
-```` 
-
-{{endregion}} 
+ 
 
 #### Filtering predicate 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=FilteringPredicate}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=FilteringPredicate}}
-````C#
-    
-private bool FilterItem(RadListDataItem item)
-{
-    if (item.Text.StartsWith("L"))
-    {
-        return true;
-    }
-    return false;
-}
+<snippet id='dropdownlist-filtering-filteringpredicate-cs' />
+<snippet id='dropdownlist-filtering-filteringpredicate-vb' />
 
-````
-````VB.NET
-Private Function FilterItem(item As RadListDataItem) As Boolean
-    If item.Text.StartsWith("L") Then
-        Return True
-    End If
-    
-    Return False
-End Function
-
-```` 
-
-{{endregion}} 
+ 
  
 
 If you apply the above filter to a __RadDropDownList__ that is bound to the Northwind.__Customers__ table you will obtain the following result:
@@ -69,18 +38,10 @@ Another option to filter the items is to specify the __FilterExpression__ proper
 
 #### FilteringExpression 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=FilteringExpression}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=FilteringExpression}}
-````C#
-this.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'";
+<snippet id='dropdownlist-filtering-filteringexpression-cs' />
+<snippet id='dropdownlist-filtering-filteringexpression-vb' />
 
-````
-````VB.NET
-Me.radDropDownList1.FilterExpression = "Country LIKE 'Argentina'"
-
-```` 
-
-{{endregion}} 
+ 
  
 >caption Figure 2: FilteringExpression
 

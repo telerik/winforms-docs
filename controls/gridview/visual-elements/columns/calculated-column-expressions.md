@@ -17,27 +17,8 @@ The following code snippet demonstrates how the standard deviation of the *Con
 
 #### Creating a calculated column
 
-{{source=..\SamplesCS\GridView\Columns\CalculatedColumn.cs region=calculatedColumn}} 
-{{source=..\SamplesVB\GridView\Columns\CalculatedColumn.vb region=calculatedColumn}} 
-
-````C#
-GridViewDecimalColumn col = new GridViewDecimalColumn();
-col.Name = "Calculated Column";
-col.HeaderText = "Order value";
-radGridView1.Columns.Add(col);
-radGridView1.Columns["Calculated Column"].Expression = "UnitsOnOrder * UnitPrice";
-
-````
-````VB.NET
-Dim col = New GridViewDecimalColumn()
-col.Name = "Calculated Column"
-col.HeaderText = "Order value"
-RadGridView1.Columns.Add(col)
-RadGridView1.Columns("Calculated Column").Expression = "UnitsOnOrder * UnitPrice"
-
-````
-
-{{endregion}} 
+<snippet id='gridview-calculatedcolumn-calculatedcolumn-cs' />
+<snippet id='gridview-calculatedcolumn-calculatedcolumn-vb' />
 
 >caption Figure 1: The last column values are calculated dynamically.
  

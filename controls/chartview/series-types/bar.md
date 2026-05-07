@@ -15,49 +15,10 @@ __BarSeries__ are used to visualize data points as bar blocks where the height o
 
 #### Initial Setup
 
-{{source=..\SamplesCS\ChartView\Series\BarSeriesForm.cs region=bar}} 
-{{source=..\SamplesVB\ChartView\Series\BarSeriesForm.vb region=bar}} 
+<snippet id='chartview-bar-bar-cs'/>
+<snippet id='chartview-bar-bar-vb'/>
 
-````C#
-BarSeries barSeries = new BarSeries("Performance", "RepresentativeName");
-barSeries.Name = "Q1";
-barSeries.DataPoints.Add(new CategoricalDataPoint(177, "Harley"));
-barSeries.DataPoints.Add(new CategoricalDataPoint(128, "White"));
-barSeries.DataPoints.Add(new CategoricalDataPoint(143, "Smith"));
-barSeries.DataPoints.Add(new CategoricalDataPoint(111, "Jones"));
-barSeries.DataPoints.Add(new CategoricalDataPoint(118, "Marshall")); 
-this.radChartView1.Series.Add(barSeries);
-BarSeries barSeries2 = new BarSeries("Performance", "RepresentativeName");
-barSeries2.Name = "Q2";
-barSeries2.DataPoints.Add(new CategoricalDataPoint(153, "Harley"));
-barSeries2.DataPoints.Add(new CategoricalDataPoint(141, "White"));
-barSeries2.DataPoints.Add(new CategoricalDataPoint(130, "Smith"));
-barSeries2.DataPoints.Add(new CategoricalDataPoint(88, "Jones"));
-barSeries2.DataPoints.Add(new CategoricalDataPoint(109, "Marshall"));
-this.radChartView1.Series.Add(barSeries2);
 
-````
-````VB.NET
-Dim barSeries As New Telerik.WinControls.UI.BarSeries("Performance", "RepresentativeName")
-barSeries.Name = "Q1"
-barSeries.DataPoints.Add(New CategoricalDataPoint(177, "Harley"))
-barSeries.DataPoints.Add(New CategoricalDataPoint(128, "White"))
-barSeries.DataPoints.Add(New CategoricalDataPoint(143, "Smith"))
-barSeries.DataPoints.Add(New CategoricalDataPoint(111, "Jones"))
-barSeries.DataPoints.Add(New CategoricalDataPoint(118, "Marshall"))
-Me.RadChartView1.Series.Add(barSeries)
-Dim barSeries2 As New Telerik.WinControls.UI.BarSeries("Performance", "RepresentativeName")
-barSeries2.Name = "Q2"
-barSeries2.DataPoints.Add(New CategoricalDataPoint(153, "Harley"))
-barSeries2.DataPoints.Add(New CategoricalDataPoint(141, "White"))
-barSeries2.DataPoints.Add(New CategoricalDataPoint(130, "Smith"))
-barSeries2.DataPoints.Add(New CategoricalDataPoint(88, "Jones"))
-barSeries2.DataPoints.Add(New CategoricalDataPoint(109, "Marshall"))
-Me.RadChartView1.Series.Add(barSeries2)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Initial Setup
 ![WinForms RadChartView Bar Initial Setup](images/chartview-series-types-bar001.png)
@@ -80,19 +41,10 @@ __BarSeries__ could be customized using the following properties:
 
 #### Setting GapLength
 
-{{source=..\SamplesCS\ChartView\Series\BarSeriesForm.cs region=gapLength}} 
-{{source=..\SamplesVB\ChartView\Series\BarSeriesForm.vb region=gapLength}} 
+<snippet id='chartview-bar-gaplength-cs'/>
+<snippet id='chartview-bar-gaplength-vb'/>
 
-````C#
-(barSeries.HorizontalAxis as CategoricalAxis).GapLength = 0.75;
 
-````
-````VB.NET
-TryCast(barSeries.HorizontalAxis, CategoricalAxis).GapLength = 0.75
-
-````
-
-{{endregion}}
 
 The following image demonstrates how different values of the __GapLength__ property change the __BarSeries__:
 

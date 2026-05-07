@@ -18,45 +18,9 @@ position: 4
 
 #### Adding Buttons to Panels
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=Panels}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=Panels}} 
+<snippet id='picturebox-pictureboxgettingstarted-panels-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-panels-vb' />
 
-````C#
-RadButtonElement button = new RadButtonElement("Add New");
-button.SvgImage = RadSvgImage.FromFile(@"..//..//PictureBox//symbol-add.svg");
-button.TextImageRelation = TextImageRelation.ImageBeforeText;
-this.radPictureBox1.TopPanel.LeftItems.Add(button);
-
-button = new RadButtonElement("Download");
-button.SvgImage = RadSvgImage.FromFile(@"..//..//PictureBox//symbol-download.svg");
-button.TextImageRelation = TextImageRelation.ImageBeforeText;
-this.radPictureBox1.TopPanel.RightItems.Add(button);
-
-button = new RadButtonElement("Favourites");
-button.SvgImage = RadSvgImage.FromFile(@"..//..//PictureBox//heart-filled.svg");
-button.TextImageRelation = TextImageRelation.ImageBeforeText;
-this.radPictureBox1.TopPanel.CenterItems.Add(button);
-
-````
-````VB.NET
-Dim button As RadButtonElement = New RadButtonElement("Add New")
-button.SvgImage = RadSvgImage.FromFile("..//..//PictureBox//symbol-add.svg")
-button.TextImageRelation = TextImageRelation.ImageBeforeText
-Me.RadPictureBox1.TopPanel.LeftItems.Add(button)
-
-button = New RadButtonElement("Download")
-button.SvgImage = RadSvgImage.FromFile("..//..//PictureBox//symbol-download.svg")
-button.TextImageRelation = TextImageRelation.ImageBeforeText
-Me.RadPictureBox1.TopPanel.RightItems.Add(button)
-
-button = New RadButtonElement("Favourites")
-button.SvgImage = RadSvgImage.FromFile("..//..//PictureBox//heart-filled.svg")
-button.TextImageRelation = TextImageRelation.ImageBeforeText
-Me.RadPictureBox1.TopPanel.CenterItems.Add(button)
-
-````
-
-{{endregion}}
 
 
 ![WinForms RadPictureBox Adding Buttons to Panels](images/customizing-appearance001.png)
@@ -72,19 +36,10 @@ The display mode can be changed through **PanelDisplayMode** property.
 
 #### Setting PanelDisplayMode to be always visible
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=PanelDisplayMode}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=PanelDisplayMode}} 
+<snippet id='picturebox-pictureboxgettingstarted-paneldisplaymode-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-paneldisplaymode-vb' />
 
-````C#
-this.radPictureBox1.PanelDisplayMode = PictureBoxPanelDisplayMode.Always;
 
-````
-````VB.NET
-Me.RadPictureBox1.PanelDisplayMode = PictureBoxPanelDisplayMode.Always
-
-````
-
-{{endregion}}
 
 >note When **PanelDisplayMode** is set to *OnMouseHover*, the **AllowPanelAnimations** property indicates whether to show animations when showing and hiding panels.
 
@@ -94,19 +49,9 @@ If you have horizontal as well as vertical panel displayed in **RadPictureBox** 
 
 #### Setting PanelOverflowMode
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=PanelOverflowMode}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=PanelOverflowMode}} 
+<snippet id='picturebox-pictureboxgettingstarted-paneloverflowmode-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-paneloverflowmode-vb' />
 
-````C#
-this.radPictureBox1.PanelOverflowMode = PictureBoxPanelOverflowMode.HorizontalOverVertical;
-
-````
-````VB.NET
-Me.RadPictureBox1.PanelOverflowMode = PictureBoxPanelOverflowMode.HorizontalOverVertical
-
-````
-
-{{endregion}}
 
 
 # See Also

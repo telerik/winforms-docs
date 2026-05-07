@@ -20,19 +20,10 @@ The __RadMap.ShowNavigationBar__ property is responsible for showing or hiding t
 
 #### Hide Navigation Bar
 
-{{source=..\SamplesCS\Map\MapLayers.cs region=HideNavigationBar}} 
-{{source=..\SamplesVB\Map\MapLayers.vb region=HideNavigationBar}}
-````C#
-this.radMap1.ShowNavigationBar = false;
+<snippet id='map-maplayers-hidenavigationbar-cs' />
+<snippet id='map-maplayers-hidenavigationbar-vb' />
 
-````
-````VB.NET
-Me.RadMap1.ShowNavigationBar = False
 
-````
- 
-
-{{endregion}}
 
 # Navigation Bar Location
 

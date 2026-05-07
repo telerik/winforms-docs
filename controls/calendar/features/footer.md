@@ -25,21 +25,11 @@ By default the footer contains a string showing the current date and time and tw
 
 #### Using the Today button
 
-{{source=..\SamplesCS\Calendar\Calendar1.cs region=usingTodayButton}} 
-{{source=..\SamplesVB\Calendar\Calendar1.vb region=usingTodayButton}} 
+<snippet id='calendar-features-footer-usingtodaybutton-cs' />
+<snippet id='calendar-features-footer-usingtodaybutton-vb' />
 
-````C#
-radCalendar1.TodayButton.Text = "Go to Today";
-radCalendar1.TodayButton.Image = imageList1.Images[0];
 
-````
-````VB.NET
-RadCalendar1.TodayButton.Text = "Go to Today"
-RadCalendar1.TodayButton.Image = ImageList1.Images(0)
 
-````
-
-{{endregion}} 
  
 * __ClearButton__: Gets an instance of RadButtonElement representing the Clear button in the footer.
 

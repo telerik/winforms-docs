@@ -47,27 +47,10 @@ The rule-based formatting objects apply to the cells / rows according to the def
 
 The example below detects when a value in the second column `UnitPrice` has a value __greater than 30__. When the condition is met the cell background color is set to *SkyBlue*, the text color is set to *Red* and the text alignment is set to *MiddleRight*.
 
-{{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=conditionalFormattingCells}} 
-{{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=conditionalFormattingCells}} 
+<snippet id='gridview-conditionalformattingcells-conditionalformattingcells-cs' />
+<snippet id='gridview-conditionalformattingcells-conditionalformattingcells-vb' />
 
-````C#
-ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", false);
-obj.CellBackColor = Color.SkyBlue;
-obj.CellForeColor = Color.Red;
-obj.TextAlignment = ContentAlignment.MiddleRight;
-this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
 
-````
-````VB.NET
-Dim obj As New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", False)
-obj.CellBackColor = Color.SkyBlue
-obj.CellForeColor = Color.Red
-obj.TextAlignment = ContentAlignment.MiddleRight
-Me.RadGridView1.Columns("UnitPrice").ConditionalFormattingObjectList.Add(obj)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Rule-based formatting objects.
 
@@ -83,25 +66,10 @@ In order to validate an expression, it is suitable to use the [Expression editor
 
 The example below detects when a value in the second column `UnitPrice` has a value __greater than 30__ and sets styles to the `ProductName` column.
 
-{{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=expression}} 
-{{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=expression}} 
+<snippet id='gridview-conditionalformattingcells-expression-cs' />
+<snippet id='gridview-conditionalformattingcells-expression-vb' />
 
-````C#
-ExpressionFormattingObject obj = new ExpressionFormattingObject("MyCondition", "UnitPrice > 30", false);
-obj.CellBackColor = Color.SkyBlue;
-obj.CellForeColor = Color.Red;
-this.radGridView1.Columns["ProductName"].ConditionalFormattingObjectList.Add(obj);
 
-````
-````VB.NET
-Dim obj As New ExpressionFormattingObject("MyCondition", "UnitPrice > 30", False)
-obj.CellBackColor = Color.SkyBlue
-obj.CellForeColor = Color.Red
-Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Expression-based formatting objects.
 
@@ -117,25 +85,10 @@ __RadGridView__ provides a convenient form that the end user can use to create f
 
 To access and customize the dialog, you can use the  __ConditionalFormattingFormShown__ event. For example, here is how to disallow displaying of non-visible columns in the drop down and also, specify the format of displaying the columns as __name and header text__:
 
-{{source=..\SamplesCS\GridView\Cells\ConditionalFormattingCells.cs region=expression}} 
-{{source=..\SamplesVB\GridView\Cells\ConditionalFormattingCells.vb region=expression}} 
+<snippet id='gridview-conditionalformattingcells-expression-cs' />
+<snippet id='gridview-conditionalformattingcells-expression-vb' />
 
-````C#
-ExpressionFormattingObject obj = new ExpressionFormattingObject("MyCondition", "UnitPrice > 30", false);
-obj.CellBackColor = Color.SkyBlue;
-obj.CellForeColor = Color.Red;
-this.radGridView1.Columns["ProductName"].ConditionalFormattingObjectList.Add(obj);
 
-````
-````VB.NET
-Dim obj As New ExpressionFormattingObject("MyCondition", "UnitPrice > 30", False)
-obj.CellBackColor = Color.SkyBlue
-obj.CellForeColor = Color.Red
-Me.RadGridView1.Columns("ProductName").ConditionalFormattingObjectList.Add(obj)
-
-````
-
-{{endregion}} 
 
 
 

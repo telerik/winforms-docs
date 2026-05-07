@@ -58,26 +58,10 @@ CalloutAnimationManager offers the following public properties:
 
 #### Callout Animation Settings
 
-{{source=..\SamplesCS\Callout\CalloutSettings.cs region=Animations}} 
-{{source=..\SamplesVB\Callout\CalloutSettings.vb region=Animations}} 
-
-````C#
-this.radCallout1.AnimationManager.ShowAnimationType = Telerik.WinControls.UI.Callout.CalloutAnimationType.Slide;
-this.radCallout1.AnimationManager.ShowAnimationDuration = 2000;
-this.radCallout1.AnimationManager.CloseAnimationType = Telerik.WinControls.UI.Callout.CalloutAnimationType.Fade;
-this.radCallout1.AnimationManager.CloseAnimationDuration = 3000;
+<snippet id='callout-key-features-animations-cs' />
+<snippet id='callout-key-features-animations-vb' />
 
 
-````
-````VB.NET
-Me.RadCallout1.AnimationManager.ShowAnimationType = Telerik.WinControls.UI.Callout.CalloutAnimationType.Slide
-Me.RadCallout1.AnimationManager.ShowAnimationDuration = 2000
-Me.RadCallout1.AnimationManager.CloseAnimationType = Telerik.WinControls.UI.Callout.CalloutAnimationType.Fade
-Me.RadCallout1.AnimationManager.CloseAnimationDuration = 3000
-
-````
-
-{{endregion}}
 
 >caption Callout Animation
 

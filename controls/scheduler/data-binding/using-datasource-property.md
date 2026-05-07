@@ -46,73 +46,19 @@ RadScheduler works from a provider model so that in the future, custom appointme
 
 #### Create Mapping
 
-{{source=..\SamplesCS\Scheduler\DataBinding\UsingDataSourceProperty.cs region=creatingAppointment}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\UsingDataSourceProperty.vb region=creatingAppointment}} 
+<snippet id='scheduler-usingdatasourceproperty-creatingappointment-cs' />
+<snippet id='scheduler-usingdatasourceproperty-creatingappointment-vb' />
 
-````C#
-AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
-appointmentMappingInfo.Start = "Start";
-appointmentMappingInfo.End = "End";
-appointmentMappingInfo.Summary = "Summary";
-appointmentMappingInfo.Description = "Description";
-appointmentMappingInfo.Location = "Location";
-appointmentMappingInfo.BackgroundId = "BackgroundID";
-appointmentMappingInfo.StatusId = "StatusID";
-appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
-appointmentMappingInfo.Resources = "Appointments_AppointmentsResources";
-appointmentMappingInfo.ResourceId = "ResourceID";
-appointmentMappingInfo.Exceptions = "Appointments_Appointments";
-appointmentMappingInfo.MasterEventId = "ParentID";
-schedulerBindingDataSource1.EventProvider.Mapping = appointmentMappingInfo;
 
-````
-````VB.NET
-Dim appointmentMappingInfo As New AppointmentMappingInfo()
-appointmentMappingInfo.Start = "Start"
-appointmentMappingInfo.End = "End"
-appointmentMappingInfo.Summary = "Summary"
-appointmentMappingInfo.Description = "Description"
-appointmentMappingInfo.Location = "Location"
-appointmentMappingInfo.BackgroundId = "BackgroundID"
-appointmentMappingInfo.StatusId = "StatusID"
-appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-appointmentMappingInfo.Resources = "Appointments_AppointmentsResources"
-appointmentMappingInfo.ResourceId = "ResourceID"
-appointmentMappingInfo.Exceptions = "Appointments_Appointments"
-appointmentMappingInfo.MasterEventId = "ParentID"
-SchedulerBindingDataSource1.EventProvider.Mapping = appointmentMappingInfo
-
-````
-
-{{endregion}} 
 
 The resource mapping has fewer columns and doesn't need any information about joining to the appointments table.
 
 #### Set Mapping
 
-{{source=..\SamplesCS\Scheduler\DataBinding\UsingDataSourceProperty.cs region=creatingResource}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\UsingDataSourceProperty.vb region=creatingResource}} 
+<snippet id='scheduler-usingdatasourceproperty-creatingresource-cs' />
+<snippet id='scheduler-usingdatasourceproperty-creatingresource-vb' />
 
-````C#
-ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
-resourceMappingInfo.Id = "ID";
-resourceMappingInfo.Name = "ResourceName";
-schedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo;
-schedulerBindingDataSource1.EventProvider.DataSource = this.schedulerDataDataSet.Appointments;
-schedulerBindingDataSource1.ResourceProvider.DataSource = this.schedulerDataDataSet.Resources;
 
-````
-````VB.NET
-Dim resourceMappingInfo As New ResourceMappingInfo()
-resourceMappingInfo.Id = "ID"
-resourceMappingInfo.Name = "ResourceName"
-SchedulerBindingDataSource1.ResourceProvider.Mapping = resourceMappingInfo
-SchedulerBindingDataSource1.EventProvider.DataSource = Me.schedulerDataDataSet.Appointments
-SchedulerBindingDataSource1.ResourceProvider.DataSource = Me.schedulerDataDataSet.Resources
-
-````
-
-{{endregion}} 
 
 # See Also
 

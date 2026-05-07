@@ -17,76 +17,19 @@ __RadMessageBox__ provides localization of its buttons text via __RadMessageLoca
 
 #### Creating a custom localization provider 
 
-{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=LocalizationProvider}} 
-{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=LocalizationProvider}} 
+<snippet id='messagebox-messagebox1-localizationprovider-cs' />
+<snippet id='messagebox-messagebox1-localizationprovider-vb' />
 
-````C#
-public class MyRadMessageLocalizationProvider : RadMessageLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case RadMessageStringID.AbortButton: return "Abbruch";
-            case RadMessageStringID.CancelButton: return "Löschen";
-            case RadMessageStringID.IgnoreButton: return "Ignorieren";
-            case RadMessageStringID.NoButton: return "Nein";
-            case RadMessageStringID.OKButton: return "OK";
-            case RadMessageStringID.RetryButton: return "Wiederholung";
-            case RadMessageStringID.YesButton: return "Ja";
-            default:
-                return base.GetLocalizedString(id);
-        }
-    }
-}
-
-````
-````VB.NET
-Public Class MyRadMessageLocalizationProvider
-    Inherits RadMessageLocalizationProvider
-    Public Overloads Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case RadMessageStringID.AbortButton
-                Return "Abbruch"
-            Case RadMessageStringID.CancelButton
-                Return "Löschen"
-            Case RadMessageStringID.IgnoreButton
-                Return "Ignorieren"
-            Case RadMessageStringID.NoButton
-                Return "Nein"
-            Case RadMessageStringID.OKButton
-                Return "OK"
-            Case RadMessageStringID.RetryButton
-                Return "Wiederholung"
-            Case RadMessageStringID.YesButton
-                Return "Ja"
-            Case Else
-                Return MyBase.GetLocalizedString(id)
-        End Select
-    End Function
-End Class
-
-````
-
-{{endregion}} 
+ 
  
 2\. To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 #### Setting the custom localization provider to RadMessageBox 
 
-{{source=..\SamplesCS\Forms and Dialogs\MessageBox1.cs region=settingTheLocalizationProvider}} 
-{{source=..\SamplesVB\Forms and Dialogs\MessageBox1.vb region=settingTheLocalizationProvider}} 
+<snippet id='messagebox-messagebox1-settingthelocalizationprovider-cs' />
+<snippet id='messagebox-messagebox1-settingthelocalizationprovider-vb' />
 
-````C#
-RadMessageLocalizationProvider.CurrentProvider = new MyRadMessageLocalizationProvider();
-
-````
-````VB.NET
-RadMessageLocalizationProvider.CurrentProvider = New MyRadMessageLocalizationProvider()
-
-````
-
-{{endregion}} 
+ 
 
 
 

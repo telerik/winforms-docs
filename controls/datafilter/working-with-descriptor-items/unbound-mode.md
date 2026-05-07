@@ -22,34 +22,10 @@ You can add/remove/modify **DataFilterDescriptorItems** by using the *RadItem Co
 
 #### Adding descriptor items programmatically and applying an expression
 
-{{source=..\SamplesCS\DataFilter\DataFilterGettingStarted.cs region=UnboundMode}} 
-{{source=..\SamplesVB\DataFilter\DataFilterGettingStarted.vb region=UnboundMode}}
-````C#
-DataFilterDescriptorItem nameDescriptorItem = new DataFilterDescriptorItem();
-nameDescriptorItem.DescriptorName = "ProductName";
-nameDescriptorItem.DescriptorType = typeof(string);
-this.radDataFilter1.Descriptors.Add(nameDescriptorItem);
-DataFilterDescriptorItem priceDescriptorItem = new DataFilterDescriptorItem();
-priceDescriptorItem.DescriptorName = "UnitPrice";
-priceDescriptorItem.DescriptorType = typeof(decimal);
-this.radDataFilter1.Descriptors.Add(priceDescriptorItem);
-this.radDataFilter1.Expression = "([ProductName] LIKE '%ch%' OR [UnitPrice] > '15')";
+<snippet id='datafilter-unbound-mode-unboundmode-cs' />
+<snippet id='datafilter-unbound-mode-unboundmode-vb' />
 
-````
-````VB.NET
-Dim nameDescriptorItem As New DataFilterDescriptorItem()
-nameDescriptorItem.DescriptorName = "ProductName"
-nameDescriptorItem.DescriptorType = GetType(String)
-Me.RadDataFilter1.Descriptors.Add(nameDescriptorItem)
-Dim priceDescriptorItem As New DataFilterDescriptorItem()
-priceDescriptorItem.DescriptorName = "UnitPrice"
-priceDescriptorItem.DescriptorType = GetType(Decimal)
-Me.RadDataFilter1.Descriptors.Add(priceDescriptorItem)
-Me.RadDataFilter1.Expression = "([ProductName] LIKE '%ch%' OR [UnitPrice] > '15')"
 
-```` 
-
-{{endregion}}
 
 
 ![WinForms RadDataFilter Unbound Mode Design Time](images/datafilter-unbound-mode001.png)

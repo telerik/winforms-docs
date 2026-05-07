@@ -50,32 +50,10 @@ position: 0
 
 #### Apply Settings
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=ApplyTabSettings}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=ApplyTabSettings}}
-````C#
-this.AllowAero = false;
-this.ShowIcon = true;
-this.TabbedFormControl.ShowText = true;
-this.TabbedFormControl.CaptionHeight = 65;
-this.TabbedFormControl.TabHeight = 32;
-this.TabbedFormControl.TabWidth = 180;
-this.TabbedFormControl.TabSpacing = 12;
-
-````
-````VB.NET
-Me.AllowAero = False
-Me.ShowIcon = True
-Me.TabbedFormControl.ShowText = True
-Me.TabbedFormControl.CaptionHeight = 65
-Me.TabbedFormControl.TabHeight = 32
-Me.TabbedFormControl.TabWidth = 180
-Me.TabbedFormControl.TabSpacing = 12
-
-````
+<snippet id='tabbedform-tabbedformcode-applytabsettings-cs' />
+<snippet id='tabbedform-tabbedformcode-applytabsettings-vb' />
 
 
-
-{{endregion}} 
 
 The below image demonstrates the result after applying the above code in the TelerikMetro theme.
 

@@ -61,21 +61,10 @@ To add a __ShapedForm__ to your project:
       			
 #### Changing WinForms form to Telerik ShapedForm 
 
-{{source=..\SamplesCS\Forms and Dialogs\ShapedForm1.Designer.cs region=shapedForm}} 
-{{source=..\SamplesVB\Forms and Dialogs\ShapedForm1.Designer.vb region=shapedForm}} 
+<snippet id='shapedform-shapedform1-shapedform-cs' />
+<snippet id='shapedform-shapedform1-shapedform-vb' />
 
-````C#
-partial class ShapedForm1 : Telerik.WinControls.UI.ShapedForm
 
-````
-````VB.NET
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ShapedForm1
-    Inherits Telerik.WinControls.UI.ShapedForm
-
-````
-
-{{endregion}} 
 
 10\. Return to the design view of the form. Visual Studio will repaint the form without a title bar, indicating that it is now being derived from the __ShapedForm__ class.
 

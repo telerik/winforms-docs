@@ -53,83 +53,22 @@ First instantiate __ColumnGroupsViewDefinition__ and add some groups.
 
 #### Create groups
 
-{{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=createGroups}} 
-{{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=createGroups}} 
-
-````C#
-ColumnGroupsViewDefinition view = new ColumnGroupsViewDefinition();
-view.ColumnGroups.Add(new GridViewColumnGroup("Customer Contact"));
-view.ColumnGroups.Add(new GridViewColumnGroup("Details"));
-view.ColumnGroups[1].Groups.Add(new GridViewColumnGroup("Address"));
-view.ColumnGroups[1].Groups.Add(new GridViewColumnGroup("Contact"));
-
-````
-````VB.NET
-Dim view As New ColumnGroupsViewDefinition()
-view.ColumnGroups.Add(New GridViewColumnGroup("Customer Contact"))
-view.ColumnGroups.Add(New GridViewColumnGroup("Details"))
-view.ColumnGroups(1).Groups.Add(New GridViewColumnGroup("Address"))
-view.ColumnGroups(1).Groups.Add(New GridViewColumnGroup("Contact"))
-
-````
-
-{{endregion}}
+<snippet id='gridview-columngroupsview-creategroups-cs' />
+<snippet id='gridview-columngroupsview-creategroups-vb' />
 
 Then add at least one row. This row will contain the desired columns.
 
 #### Add rows to groups
 
-{{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=addRows}} 
-{{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=addRows}} 
-
-````C#
-view.ColumnGroups[0].Rows.Add(new GridViewColumnGroupRow());
-view.ColumnGroups[0].Rows[0].ColumnNames.Add("CompanyName");
-view.ColumnGroups[0].Rows[0].ColumnNames.Add("ContactName");
-view.ColumnGroups[0].Rows[0].ColumnNames.Add("ContactTitle");
-view.ColumnGroups[1].Groups[0].Rows.Add(new GridViewColumnGroupRow());
-view.ColumnGroups[1].Groups[0].Rows[0].ColumnNames.Add("Address");
-view.ColumnGroups[1].Groups[0].Rows[0].ColumnNames.Add("City");
-view.ColumnGroups[1].Groups[0].Rows[0].ColumnNames.Add("Country");
-view.ColumnGroups[1].Groups[1].Rows.Add(new GridViewColumnGroupRow());
-view.ColumnGroups[1].Groups[1].Rows[0].ColumnNames.Add("Phone");
-view.ColumnGroups[1].Groups[1].Rows[0].ColumnNames.Add("Fax");
-
-````
-````VB.NET
-view.ColumnGroups(0).Rows.Add(New GridViewColumnGroupRow())
-view.ColumnGroups(0).Rows(0).ColumnNames.Add("CompanyName")
-view.ColumnGroups(0).Rows(0).ColumnNames.Add("ContactName")
-view.ColumnGroups(0).Rows(0).ColumnNames.Add("ContactTitle")
-view.ColumnGroups(1).Groups(0).Rows.Add(New GridViewColumnGroupRow())
-view.ColumnGroups(1).Groups(0).Rows(0).ColumnNames.Add("Address")
-view.ColumnGroups(1).Groups(0).Rows(0).ColumnNames.Add("City")
-view.ColumnGroups(1).Groups(0).Rows(0).ColumnNames.Add("Country")
-view.ColumnGroups(1).Groups(1).Rows.Add(New GridViewColumnGroupRow())
-view.ColumnGroups(1).Groups(1).Rows(0).ColumnNames.Add("Phone")
-view.ColumnGroups(1).Groups(1).Rows(0).ColumnNames.Add("Fax")
-
-````
-
-{{endregion}} 
+<snippet id='gridview-columngroupsview-addrows-cs' />
+<snippet id='gridview-columngroupsview-addrows-vb' />
 
 At the end simply set the __ViewDefinitions__ property to the newly created __ViewDefinition__ instance.
 
 #### Set the ViewDefinition property of RadGridView
 
-{{source=..\SamplesCS\GridView\ViewDefinitions\ColumnGroupsView.cs region=setTheViewDefinition}} 
-{{source=..\SamplesVB\GridView\ViewDefinitions\ColumnGroupsView.vb region=setTheViewDefinition}} 
-
-````C#
-radGridView1.ViewDefinition = view;
-
-````
-````VB.NET
-RadGridView1.ViewDefinition = view
-
-````
-
-{{endregion}} 
+<snippet id='gridview-columngroupsview-settheviewdefinition-cs' />
+<snippet id='gridview-columngroupsview-settheviewdefinition-vb' />
 
 The result is:
         

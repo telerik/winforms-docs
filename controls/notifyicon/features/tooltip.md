@@ -11,33 +11,10 @@ position: 3
 
 You can configure the tooltip that is displayed when the user hovers over the icon with the **TooltipText** property. The string set to this property will be shown as a content of the tooltip.
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=ToolTip}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=ToolTip}}
-````C#
-
-void ShowNotifyIcon()
-{
-    RadNotifyIcon radNotifyIcon = new RadNotifyIcon();
-    radNotifyIcon.TrayIcon = new System.Drawing.Icon("../../WinForms128x28.ico");
-    radNotifyIcon.TooltipText = "Telerik UI for WinForms";
-    radNotifyIcon.ShowTrayIcon = true;
-}
+<snippet id='notifyicon-features-tooltip-cs' />
+<snippet id='notifyicon-features-tooltip-vb' />
 
 
-````
-````VB.NET
-
-Private Sub ShowNotifyIcon()
-    Dim radNotifyIcon As RadNotifyIcon = New RadNotifyIcon()
-    radNotifyIcon.TrayIcon = New System.Drawing.Icon("../../WinForms128x28.ico")
-    radNotifyIcon.TooltipText = "Telerik UI for WinForms"
-    radNotifyIcon.ShowTrayIcon = True
-End Sub
-
-
-```` 
-
-{{endregion}}
 
 #### __Figure 1: RadNotifyIcon with Tooltip__
 

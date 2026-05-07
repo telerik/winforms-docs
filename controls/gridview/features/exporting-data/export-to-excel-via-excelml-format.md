@@ -26,19 +26,8 @@ Before running export to **ExcelML**, you have to initialize the `ExportToExcelM
 
 ####  ExportToExcelIML initialization
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExportToExcelMLInitialization}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExportToExcelMLInitialization}} 
-
-````C#
-ExportToExcelML exporter = new ExportToExcelML(this.radGridView1);
-
-````
-````VB.NET
-Dim exporter As ExportToExcelML = New ExportToExcelML(Me.RadGridView1)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-exporttoexcelmlinitialization-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-exporttoexcelmlinitialization-vb' />
 
 __Hidden columns and rows option__
 
@@ -54,19 +43,8 @@ MS Excel does not support other ways of hiding a column different from setting i
 
 ####  Setting the hidden column option
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingTheHiddenColumnOption}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingTheHiddenColumnOption}} 
-
-````C#
-exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport;
-
-````
-````VB.NET
-exporter.HiddenColumnOption = Telerik.WinControls.UI.Export.HiddenOption.DoNotExport
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-settingthehiddencolumnoption-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-settingthehiddencolumnoption-vb' />
 
 __Exporting Visual Settings__
 
@@ -76,19 +54,8 @@ You can enable exporting visual settings through the **ExportVisualSettings** pr
 
 #### Setting ExportVisualSettings
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=exportVisualSettings}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=exportVisualSettings}} 
-
-````C#
-exporter.ExportVisualSettings = true;
-
-````
-````VB.NET
-exporter.ExportVisualSettings = True
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-exportvisualsettings-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-exportvisualsettings-vb' />
 
 __MS Excel Max Rows Settings__
 
@@ -100,19 +67,8 @@ __MS Excel Max Rows Settings__
  
 #### Setting Maximum Number of Rows
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingMaximumNumberOfRows}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingMaximumNumberOfRows}} 
-
-````C#
-exporter.SheetMaxRows = ExcelMaxRows._1048576;
-
-````
-````VB.NET
-exporter.SheetMaxRows = ExcelMaxRows._1048576
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-settingmaximumnumberofrows-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-settingmaximumnumberofrows-vb' />
 
 __MS Excel Sheet Name__ 
 
@@ -120,19 +76,8 @@ You can specify the sheet name through __SheetName__ property. If your data is l
 
 #### Setting the SheetName
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingTheSheetName}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingTheSheetName}} 
-
-````C#
-exporter.SheetName = "Sheet";
-
-````
-````VB.NET
-exporter.SheetName = "Sheet"
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-settingthesheetname-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-settingthesheetname-vb' />
 
 __Summaries export option__
 
@@ -148,19 +93,8 @@ You can use the __SummariesExportOption__ property to specify how to export summ
 
 #### Setting SummariesExportOption
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=settingSumariesExportOption}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=settingSumariesExportOption}} 
-
-````C#
-exporter.SummariesExportOption = SummariesOption.DoNotExport;
-
-````
-````VB.NET
-exporter.SummariesExportOption = SummariesOption.DoNotExport
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-settingsumariesexportoption-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-settingsumariesexportoption-vb' />
 
 ## RunExport method
 
@@ -172,21 +106,8 @@ Consider the code sample below:
 
 #### Export to Excel in ExcelML format
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=runExport}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=runExport}} 
-
-````C#
-string fileName = "C:\\ExportedData123.xls";
-exporter.RunExport(fileName);
-
-````
-````VB.NET
-Dim fileName As String = "C:\\ExportedData.xls"
-exporter.RunExport(fileName)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-runexport-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-runexport-vb' />
 
 ## Format Codes
 
@@ -196,21 +117,8 @@ Here is an example for a date time formatting:
 
 #### Fomatting dates
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=formattingCodes}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=formattingCodes}} 
-
-````C#
-this.radGridView1.Columns["Date"].ExcelExportType = DisplayFormatType.Custom;
-this.radGridView1.Columns["Date"].ExcelExportFormatString = "yyyy.MMMM.dd hh:mm:ss AM/PM";
-
-````
-````VB.NET
-Me.RadGridView1.Columns("Date").ExcelExportType = DisplayFormatType.Custom
-Me.RadGridView1.Columns("Date").ExcelExportFormatString = " yyyy.MMMM.dd hh:mm:ss AM/PM "
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-formattingcodes-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-formattingcodes-vb' />
 
 ## Events
 
@@ -220,47 +128,8 @@ It gives you access to a single cell’s  __SingleStyleElement__ that allows you
 
 #### Handling the ExcelCellFormatting event
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExcelCellFormatting}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExcelCellFormatting}} 
-
-````C#
-void exporter_ExcelCellFormatting(object sender, Telerik.WinControls.UI.Export.ExcelML.ExcelCellFormattingEventArgs e)
-{
-    if (e.GridRowInfoType == typeof(GridViewTableHeaderRowInfo))
-    {
-        BorderStyles border = new BorderStyles();
-        border.Color = Color.Black;
-        border.Weight = 2;
-        border.LineStyle = Telerik.WinControls.UI.Export.ExcelML.LineStyle.Continuous;
-        border.PositionType = PositionType.Bottom;
-        e.ExcelStyleElement.Borders.Add(border);
-    }
-    else if (e.GridRowIndex == 2 && e.GridColumnIndex == 1)
-    {
-        e.ExcelStyleElement.InteriorStyle.Color = Color.Yellow;
-        e.ExcelStyleElement.AlignmentElement.WrapText = true;
-    }
-}
-
-````
-````VB.NET
-Private Sub exporter_ExcelCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.ExcelML.ExcelCellFormattingEventArgs)
-    If e.GridRowInfoType Is GetType(GridViewTableHeaderRowInfo) Then
-        Dim border As BorderStyles = New BorderStyles()
-        border.Color = Color.Black
-        border.Weight = 2
-        border.LineStyle = Telerik.WinControls.UI.Export.ExcelML.LineStyle.Continuous
-        border.PositionType = PositionType.Bottom
-        e.ExcelStyleElement.Borders.Add(border)
-    ElseIf e.GridRowIndex = 2 AndAlso e.GridColumnIndex = 1 Then
-        e.ExcelStyleElement.InteriorStyle.Color = Color.Yellow
-        e.ExcelStyleElement.AlignmentElement.WrapText = True
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-excelcellformatting-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-excelcellformatting-vb' />
 
 The __ExcelTableCreated event:__
 
@@ -268,40 +137,8 @@ It can be used together with the public method __AddCustomExcelRow__. It allows 
 
 #### Handling the ExcelTableCreated event
 
-{{source=..\SamplesCS\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.cs region=ExcelTableCreated}} 
-{{source=..\SamplesVB\GridView\ExportingData\ExportToExcelViaExcelIMLFormat.vb region=ExcelTableCreated}} 
-
-````C#
-void exporter_ExcelTableCreated(object sender, ExcelTableCreatedEventArgs e)
-{
-    string headerText = "Custom added header text.";
-    SingleStyleElement style = ((ExportToExcelML)sender).AddCustomExcelRow(e.ExcelTableElement, 50, headerText);
-    style.FontStyle.Bold = true;
-    style.FontStyle.Size = 18;
-    style.FontStyle.Color = Color.White;
-    style.InteriorStyle.Color = Color.Red;
-    style.InteriorStyle.Pattern = InteriorPatternType.Solid;
-    style.AlignmentElement.HorizontalAlignment = HorizontalAlignmentType.Center;
-    style.AlignmentElement.VerticalAlignment = VerticalAlignmentType.Center;
-}
-
-````
-````VB.NET
-Private Sub exporter_ExcelTableCreated(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Export.ExcelML.ExcelTableCreatedEventArgs)
-    Dim headerText As String = "Custom added header text."
-    Dim style As SingleStyleElement = (CType(sender, ExportToExcelML)).AddCustomExcelRow(e.ExcelTableElement, 50, headerText)
-    style.FontStyle.Bold = True
-    style.FontStyle.Size = 18
-    style.FontStyle.Color = Color.White
-    style.InteriorStyle.Color = Color.Red
-    style.InteriorStyle.Pattern = InteriorPatternType.Solid
-    style.AlignmentElement.HorizontalAlignment = HorizontalAlignmentType.Center
-    style.AlignmentElement.VerticalAlignment = VerticalAlignmentType.Center
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-exporttoexcelviaexcelimlformat-exceltablecreated-cs' />
+<snippet id='gridview-exporttoexcelviaexcelimlformat-exceltablecreated-vb' />
 
 ## 
 

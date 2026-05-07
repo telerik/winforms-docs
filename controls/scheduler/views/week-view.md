@@ -24,19 +24,10 @@ To explicitly set the Work Week to be the default view which the user sees on 
 
 #### Set ActiveViewType
 
-{{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=ViewType}} 
-{{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=ViewType}} 
+<snippet id='scheduler-weekview-viewtype-cs' />
+<snippet id='scheduler-weekview-viewtype-vb' />
 
-````C#
-this.radScheduler1.ActiveViewType = SchedulerViewType.Week;
 
-````
-````VB.NET
-Me.RadScheduler1.ActiveViewType = SchedulerViewType.Week
-
-````
-
-{{endregion}} 
 
 ## Get Week View
 
@@ -46,19 +37,10 @@ To get the instance to the SchedulerWeek view from the RadScheduler object, eith
 
 #### GetWeekView Method
 
-{{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=weekView}} 
-{{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=weekView}} 
+<snippet id='scheduler-weekview-weekview-cs' />
+<snippet id='scheduler-weekview-weekview-vb' />
 
-````C#
-SchedulerWeekView weekView = this.radScheduler1.GetWeekView();
 
-````
-````VB.NET
-Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
-
-````
-
-{{endregion}} 
 
 >note This method returns null if the active view of the scheduler is not SchedulerWeekView.
 >
@@ -67,24 +49,10 @@ Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
 
 #### ActiveView Property
 
-{{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=activeView}} 
-{{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=activeView}} 
+<snippet id='scheduler-weekview-activeview-cs' />
+<snippet id='scheduler-weekview-activeview-vb' />
 
-````C#
-if (this.radScheduler1.ActiveViewType == SchedulerViewType.Week)
-{
-    SchedulerWeekView activeWeekView = (SchedulerWeekView)this.radScheduler1.ActiveView;
-}
 
-````
-````VB.NET
-If Me.RadScheduler1.ActiveViewType = SchedulerViewType.Week Then
-    Dim activeWeekView As SchedulerWeekView = CType(Me.RadScheduler1.ActiveView, SchedulerWeekView)
-End If
-
-````
-
-{{endregion}} 
 
 ## Showing/Hiding The Weekend
 
@@ -92,18 +60,10 @@ By default the weekends are shown, but you can hide them by using the __ShowWee
 
 #### Show Weekend
 
-{{source=..\SamplesCS\Scheduler\Views\WeekView.cs region=Weekend}} 
-{{source=..\SamplesVB\Scheduler\Views\WeekView.vb region=Weekend}} 
-````C#
-weekView.ShowWeekend = false;
+<snippet id='scheduler-weekview-weekend-cs' />
+<snippet id='scheduler-weekview-weekend-vb' />
 
-````
-````VB.NET
-weekView.ShowWeekend = False
 
-````
-
-{{endregion}} 
 
 # See Also
 

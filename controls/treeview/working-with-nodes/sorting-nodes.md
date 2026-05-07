@@ -20,19 +20,10 @@ For example, if we have this RadTreeView instance:
         
 and we set the __SortOrder__ as shown below:
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=sort}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=sort}} 
+<snippet id='treeview-workingwithnodes1-sort-cs' />
+<snippet id='treeview-workingwithnodes1-sort-vb' />
 
-````C#
-this.radTreeView1.SortOrder = SortOrder.Ascending;
 
-````
-````VB.NET
-Me.RadTreeView1.SortOrder = SortOrder.Ascending
-
-````
-
-{{endregion}} 
 
 we will get this look of RadTreeView at the end:
 

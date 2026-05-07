@@ -66,24 +66,11 @@ For example, a DateFormat of "ddd, MMMM yyyy - dd" might display:![WinForms RadM
 
 When the mask type is set to *DateTime* you can access the MaskDateTimeProvider by casting to that appropriate type. 
 
-{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=provider}} 
-{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=provider}} 
+<snippet id='editors-maskeditbox1-provider-cs' />
+<snippet id='editors-maskeditbox1-provider-vb' />
 
-````C#
-radMaskedEditBox1.MaskType = MaskType.DateTime;
-MaskDateTimeProvider provider = this.radMaskedEditBox1.MaskedEditBoxElement.Provider as MaskDateTimeProvider;
-provider.AutoSelectNextPart = true;
 
-````
-````VB.NET
-RadMaskedEditBox1.MaskType = MaskType.DateTime
-Dim provider As MaskDateTimeProvider = TryCast(Me.RadMaskedEditBox1.MaskedEditBoxElement.Provider, MaskDateTimeProvider)
-provider.AutoSelectNextPart = True
 
-````
-
-{{endregion}} 
- 
 More information about this provider can be found in the last section of the following article: [RadDateTimePicker Properties]({%slug winforms/editors/datetimepicker/raddatetimepicker-properties%})
 
 ## See Also

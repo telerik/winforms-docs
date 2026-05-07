@@ -75,20 +75,10 @@ The caret position of __RadFixedDocument__ is also a __TextPosition__ object and
 
 #### CaretPosition
 
-{{source=..\SamplesCS\PdfViewer\PdfTextManipulation.cs region=CaretPosition}} 
-{{source=..\SamplesVB\PdfViewer\PdfTextManipulation.vb region=CaretPosition}} 
+<snippet id='pdfviewer-pdftextmanipulation-caretposition-cs' />
+<snippet id='pdfviewer-pdftextmanipulation-caretposition-vb' />
 
-````C#
-            
-this.radPdfViewer1.PdfViewerElement.Document.CaretPosition.MoveToEndOfDocument();
 
-````
-````VB.NET
-Me.RadPdfViewer1.PdfViewerElement.Document.CaretPosition.MoveToEndOfDocument()
-
-````
-
-{{endregion}}
 
 This will not only move the caret to the end of the document, but will also scroll the document to bring it into view, as the view port follows the caret.
 

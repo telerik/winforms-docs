@@ -18,32 +18,10 @@ __RadMap__ can visualize data from local image files by using a __LocalMapProvid
 
 #### Using LocalMapProvider
 
-{{source=..\SamplesCS\Map\MapLocalMapProvider.cs region=SetupLocalMapProvider}} 
-{{source=..\SamplesVB\Map\MapLocalMapProvider.vb region=SetupLocalMapProvider}}
+<snippet id='map-maplocalmapprovider-setuplocalmapprovider-cs' />
+<snippet id='map-maplocalmapprovider-setuplocalmapprovider-vb' />
 
-````C#
-            
-string mapFolder = @"..\..\World";
-LocalMapProvider provider = new LocalMapProvider();
-provider.DirectoryPath = mapFolder;
-provider.FileFormat = "os_{0}_{1}_{2}.png";
-provider.MinZoomLevel = 1;
-provider.MaxZoomLevel = 9;
-radMap1.Providers.Add(provider);
 
-````
-````VB.NET
-Dim mapFolder As String = "..\..\World"
-Dim provider As New LocalMapProvider()
-provider.DirectoryPath = mapFolder
-provider.FileFormat = "os_{0}_{1}_{2}.png"
-provider.MinZoomLevel = 1
-provider.MaxZoomLevel = 9
-radMap1.Providers.Add(provider)
-
-````
-
-{{endregion}} 
 
 >note The __FileFormat__ property specifies what is the exact format of the image files stored in the local folder. The parameters needed are the tile X *{0}* and Y *{1}* numbers and the Zoom level *{2}*. In the code snippet above, each file image's name is built by using x,y,z values: "os_X_Y_Z.png".
 

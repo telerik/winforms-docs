@@ -21,35 +21,10 @@ The __RadMenu__ default settings are: __Orientation__ = *Horizontal*, __TextOrie
 
 ![WinForms RadMenu Default Orientation](images/menus-menu-styling-and-appearance-menu-orientation001.png)
 
-{{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=default}} 
-{{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=default}} 
+<snippet id='menus-menuorientation-default-cs' />
+<snippet id='menus-menuorientation-default-vb' />
 
-````C#
-radMenu1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemFile.FlipText = false;
-radMenuItemEdit.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemEdit.FlipText = false;
-radMenuItemView.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemView.FlipText = false;
-radMenuItemHelp.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemHelp.FlipText = false;
 
-````
-````VB.NET
-radMenu1.Orientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemFile.FlipText = False
-radMenuItemEdit.TextOrientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemEdit.FlipText = False
-radMenuItemView.TextOrientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemView.FlipText = False
-radMenuItemHelp.TextOrientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemHelp.FlipText = False
-
-````
-
-{{endregion}} 
 
 ## Horizontal Menu with Vertical Items
 
@@ -59,35 +34,10 @@ The menu can be oriented horizontally with menu items arranged vertically:
 
 ![WinForms RadMenu Horizontal Menu with Vertical Items](images/menus-menu-styling-and-appearance-menu-orientation002.png)
 
-{{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=textVertical}} 
-{{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=textVertical}} 
+<snippet id='menus-menuorientation-textvertical-cs' />
+<snippet id='menus-menuorientation-textvertical-vb' />
 
-````C#
-radMenu1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemFile.FlipText = false;
-radMenuItemEdit.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemEdit.FlipText = false;
-radMenuItemView.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemView.FlipText = false;
-radMenuItemHelp.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemHelp.FlipText = false;
 
-````
-````VB.NET
-radMenu1.Orientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemFile.FlipText = False
-radMenuItemEdit.TextOrientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemEdit.FlipText = False
-radMenuItemView.TextOrientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemView.FlipText = False
-radMenuItemHelp.TextOrientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemHelp.FlipText = False
-
-````
-
-{{endregion}} 
 
 ## Sideways Menu
 
@@ -97,35 +47,10 @@ The menu can be oriented vertically with menu items arranged horizontally to cre
 
 #### Vertical Menu With Horizontal Text
 
-{{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=menuVertical}} 
-{{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=menuVertical}} 
+<snippet id='menus-menuorientation-menuvertical-cs' />
+<snippet id='menus-menuorientation-menuvertical-vb' />
 
-````C#
-radMenu1.Orientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemFile.FlipText = false;
-radMenuItemEdit.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemEdit.FlipText = false;
-radMenuItemView.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemView.FlipText = false;
-radMenuItemHelp.TextOrientation = System.Windows.Forms.Orientation.Horizontal;
-radMenuItemHelp.FlipText = false;
 
-````
-````VB.NET
-radMenu1.Orientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemFile.FlipText = False
-radMenuItemEdit.TextOrientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemEdit.FlipText = False
-radMenuItemView.TextOrientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemView.FlipText = False
-radMenuItemHelp.TextOrientation = System.Windows.Forms.Orientation.Horizontal
-radMenuItemHelp.FlipText = False
-
-````
-
-{{endregion}} 
 
 ## Stacked Vertical Menu
 
@@ -133,35 +58,10 @@ radMenuItemHelp.FlipText = False
 
 ![WinForms RadMenu Stacked Vertical Menu](images/menus-menu-styling-and-appearance-menu-orientation004.png)
 
-{{source=..\SamplesCS\Menus\Menu\MenuOrientation.cs region=textMenuVertical}} 
-{{source=..\SamplesVB\Menus\Menu\MenuOrientation.vb region=textMenuVertical}} 
+<snippet id='menus-menuorientation-textmenuvertical-cs' />
+<snippet id='menus-menuorientation-textmenuvertical-vb' />
 
-````C#
-radMenu1.Orientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemFile.FlipText = true;
-radMenuItemEdit.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemEdit.FlipText = true;
-radMenuItemView.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemView.FlipText = true;
-radMenuItemHelp.TextOrientation = System.Windows.Forms.Orientation.Vertical;
-radMenuItemHelp.FlipText = true;
 
-````
-````VB.NET
-radMenu1.Orientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemFile.TextOrientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemFile.FlipText = True
-radMenuItemEdit.TextOrientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemEdit.FlipText = True
-radMenuItemView.TextOrientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemView.FlipText = True
-radMenuItemHelp.TextOrientation = System.Windows.Forms.Orientation.Vertical
-radMenuItemHelp.FlipText = True
-
-````
-
-{{endregion}}
 
 # See Also
 

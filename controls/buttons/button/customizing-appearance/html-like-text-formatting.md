@@ -34,19 +34,10 @@ The following code snippet will produce the result shown in the screen-shot belo
 #### Setting HTML-like text 
  
 
-{{source=..\SamplesCS\Buttons\Button.cs region=htmltextrendering}} 
-{{source=..\SamplesVB\Buttons\Button.vb region=htmltextrendering}} 
+<snippet id='buttons-button-html-like-text-formatting-htmltextrendering-cs' />
+<snippet id='buttons-button-html-like-text-formatting-htmltextrendering-vb' />
 
-````C#
-this.radButton1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text";
 
-````
-````VB.NET
-Me.radButton1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, Bold</b><br><i><color= Red><font=Times New Roman>Times, Italic <u>Underline</u><br><size=9>Size = 9<br><color= 0, 0, 255>Sample Text"
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadButtons Setting HTML-like Text ](images/buttons-button-html-like-text-formatting001.png)
