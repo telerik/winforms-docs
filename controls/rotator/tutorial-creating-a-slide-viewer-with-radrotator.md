@@ -17,7 +17,7 @@ The following tutorial demonstrates how to programmatically load images from the
 
 1\. In the default form of a new Windows application:
 
-2\. Drop a **RadStatusStrip** to the form and set the `Dock` property to `Bottom`.
+2\. Drop a **RadStatusStrip** onto the form and set the `Dock` property to `Bottom`.
             
 3\. Click the **RadStatusStrip** downward pointing arrow and add a `RadLabelElement`.
             
