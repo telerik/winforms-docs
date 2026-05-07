@@ -75,3 +75,5 @@ Me.RadGridView1.PrintPreview()
 
 * [Print Header in RadGridView Only on the First Page]({%slug gridview-print-header-on-first-page%})
 
+* [PrintSettingsDialogFactory]({%slug winforms/gridview/printing-support/print-settings-dialog-factory%})
+

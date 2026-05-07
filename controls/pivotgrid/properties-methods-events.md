@@ -68,6 +68,33 @@ position: 5
 |**SaveLayout**|Stores RadPivotGrid properties, sub-objects and their properties in XML format, using the serialization information provided by the property|
 |**LoadLayout**|Loads RadPivotGrid properties, sub-objects and their properties from XML file, using the serialization information provided by the property|
 
+### BestFit Methods
+
+The `PivotBestFitHelper` class provides methods for programmatically auto-sizing columns and row headers to fit their content. Access the helper through the `PivotGridElement.BestFitHelper` property.
+
+|Method|Description|
+|------|------|
+|**BestFitColumn(PivotGroupNode)**|Adjusts the width of a specific column to fit its content.|
+|**BestFitColumns()**|Adjusts the width of all columns to fit their content.|
+|**BestFitRowHeaders()**|Adjusts the width of all row header levels to fit their content.|
+|**BestFitRowHeaders(int)**|Adjusts the width of row headers at a specific level to fit their content.|
+
+The following example demonstrates how to best fit all columns and all row headers programmatically:
+
+#### Best Fit All Columns and Row Headers
+
+````C#
+this.radPivotGrid1.PivotGridElement.BestFitHelper.BestFitColumns();
+this.radPivotGrid1.PivotGridElement.BestFitHelper.BestFitRowHeaders();
+````
+
+````VB.NET
+Me.RadPivotGrid1.PivotGridElement.BestFitHelper.BestFitColumns()
+Me.RadPivotGrid1.PivotGridElement.BestFitHelper.BestFitRowHeaders()
+````
+
+>tip The end user can also trigger best fit by double-clicking the resize edge of a column header or row header, or by selecting **Best Fit** from the context menu.
+
 ## Events
 
 |Event|Description|
