@@ -12,7 +12,9 @@ position: 4
 
 `RadExpressionEditor` provides a set of built-in functions organized into the following categories: [Text](#text-functions), [Aggregate](#aggregate-functions), [Date-Time](#date-time-functions), [Logical](#logical-functions), [Math](#math-functions), and [Other (Conversion)](#conversion-functions). Each function is called by name in uppercase, followed by its arguments in parentheses.
 
+>note
 > All functions are case-insensitive. `SUM()`, `Sum()`, and `sum()` are equivalent.
+>
 
 ## Text Functions
 
