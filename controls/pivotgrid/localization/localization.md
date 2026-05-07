@@ -673,7 +673,6 @@ End Class
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
 >note The **RadPivotGrid** localization provider needs to be set in the constructor of the form before calling the `InitializeComponent` method.
->
 
 #### Assigning the Current Localization Provider
 
