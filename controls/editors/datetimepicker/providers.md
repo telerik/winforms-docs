@@ -64,7 +64,7 @@ The `MaskDateTimeProvider` is the default provider used by **RadDateTimePicker**
 |Method|Description|
 |---|---|
 |`SelectFirstItem()`|Selects the first part of the date.|
-|`SelectNextItem()`|Selects the next part of the date.|
+|`SelectNextItem()`|Selects the next selectable date/time part in the current mask order.|
 
 ### Example
 
