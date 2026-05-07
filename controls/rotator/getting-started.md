@@ -65,7 +65,7 @@ This tutorial demonstrates how to configure **RadRotator** at design time and th
 
 10\. Add a `RadWebBrowserItem` to the collection. Set the `Url` property to [http://www.telerik.com](http://www.telerik.com).
 
-11\. Click **OK** to close the **RadItem Collection Editor**.
+11\. Click **OK** to close the **Rad Items Collection Editor**.
 
 12\. In the designer, notice the controls in the upper left of **RadRotator**. Click the **>** button and observe that you can navigate through the items at design time.
 
