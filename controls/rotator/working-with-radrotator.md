@@ -71,9 +71,9 @@ The method returns `true` if the rotation started successfully and `false` if th
 
 Stops the rotation. If a swap animation is in progress, it will be completed before the `StopRotation` event fires.
 
-### Goto(int index)
+### Goto()
 
-Initiates a swap animation between the current item and the item at the specified index. Pass `-1` to navigate to the `DefaultItem`. Returns `true` on a successful swap.
+Initiates a swap animation between the current item and the item at the index specified by the `index` parameter. Pass `-1` to navigate to the `DefaultItem`. Returns `true` on a successful swap.
 
 ### GotoDefault()
 
