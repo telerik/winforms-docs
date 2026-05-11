@@ -58,7 +58,7 @@ Access to the Telerik UI for WinForms AI Coding Assistant depends on your [Teler
 \* Perpetual license holders can access the AI Coding Assistant through a [30-day AI Tools trial](https://www.telerik.com/try/ui-for-winforms) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms). After the trial expires, access is no longer available unless the Perpetual license is converted to a Subscription license.
 
 
->tip All Telerik AI tools share a single request limit for your Telerik account. Telerik MCP server take up from the same usage quota. When using the Telerik MCP server, one prompt may trigger several requests, depending on the prompt complexity.
+>tip All Telerik AI tools share a single request limit for your Telerik account. Requests made through the Telerik MCP server count against the same usage quota. When using the Telerik MCP server, one prompt may trigger several requests, depending on the prompt complexity.
 
 ## Coverage
 
