@@ -45,19 +45,6 @@ You can use the AI Coding Assistant for:
 * **Step-by-step explanations**: Understand the solutions provided by the AI Coding Assistant through the detailed explanations (depends on the tool, mode, and model used). To further develop your knowledge, check the respective documentation.
 * **Preliminary troubleshooting**: Resolve obvious and easy-to-solve issues affecting your code. For more complex issues, look for assistance by contacting our support team.
 
-## Coverage
-
-The Telerik AI Coding Assistant is trained on the Telerik UI for WinForms API reference, official documentation, and purpose-built code examples for the controls in the assemblies listed below:
-
-* Telerik.WinControls.UI
-* Telerik.WinControls.GridView
-* Telerik.WinControls.RadDock
-* Telerik.WinControls.RichTextEditor
-
-## Telerik Document Processing AI Coding Assistant
-
-You can also use the AI Coding Assistant for [Telerik Document Processing](https://www.telerik.com/document-processing-libraries) to generate high-quality code samples and speed up your development. Read the full guide in the dedicated [DPL AI Coding Assistant](https://docs.telerik.com/devtools/document-processing/ai-coding-assistant/overview) article.
-
 ## License Requirements
 
 Access to the Telerik UI for WinForms AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
@@ -73,6 +60,19 @@ Access to the Telerik UI for WinForms AI Coding Assistant depends on your [Teler
 
 >tip All Telerik AI tools share a single request limit for your Telerik account. Telerik MCP server take up from the same usage quota. When using the Telerik MCP server, one prompt may trigger several requests, depending on the prompt complexity.
 
+## Coverage
+
+The Telerik AI Coding Assistant is trained on the Telerik UI for WinForms API reference, official documentation, and purpose-built code examples for the controls in the assemblies listed below:
+
+* Telerik.WinControls.UI
+* Telerik.WinControls.GridView
+* Telerik.WinControls.RadDock
+* Telerik.WinControls.RichTextEditor
+
+## Telerik Document Processing AI Coding Assistant
+
+You can also use the AI Coding Assistant for [Telerik Document Processing](https://www.telerik.com/document-processing-libraries) to generate high-quality code samples and speed up your development. Read the full guide in the dedicated [DPL AI Coding Assistant](https://docs.telerik.com/devtools/document-processing/ai-coding-assistant/overview) article.
+
 ## Recommendations
 
 Consider the following recommendations when working with the AI Coding Assistant:
@@ -84,19 +84,16 @@ Consider the following recommendations when working with the AI Coding Assistant
 
 The Telerik WinForms AI Coding Assistant operates under strict privacy guidelines:
 
-#### Data Access:
-
+Data Access:
 * No access to your workspace and application code.
 * Exception: when using the Telerik MCP server (or any other MCP server), the LLM generates parameters for the MCP server request, which may include parts of your application code.
 
-#### Data Usage:
-
+Data Usage:
 * Your prompts are not used to train Telerik AI models.
 * Does not generate or access AI responses.
 * Provides enhanced context to improve responses from your chosen AI model (GPT, Gemini, Claude, etc.).
 
-#### Data Storage:
-
+ Data Storage:
 * Prompts and context are anonymized and stored only for statistical analysis and troubleshooting.
 * No association between prompts and your Telerik user account.
 * Usage metrics are collected to ensure [license compliance](#license-requirements).
