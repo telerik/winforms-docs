@@ -64,6 +64,11 @@ public class CurrentLineBorderTagger : TaggerBase<TextBorderTag>
 
     public void SetCurrentLine(int line)
     {
+        if (this.currentLine == line)
+        {
+            return;
+        }
+
         this.currentLine = line;
         this.CallOnTagsChanged(this.Document.CurrentSnapshot.Span);
     }
