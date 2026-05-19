@@ -24,7 +24,7 @@ To use the Telerik UI for WinForms Converter, you need:
 * An active [Telerik user account](https://www.telerik.com/account/).
 * A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms).
 * An MCP-compatible IDE — Visual Studio with Copilot or VS Code with GitHub Copilot Agent mode.
-* A configured [Telerik WinForms MCP Server]({%slug ai-mcp-server%})('telerik-winforms-assistant').
+* A configured [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) with the server name `telerik-winforms-assistant`.
 * A connection established to the [Telerik NuGet server](https://nuget.telerik.com/v3/index.json).
 * A WinForms application that uses Microsoft WinForms controls. It can be either .NET Framework or .NET project.
 
