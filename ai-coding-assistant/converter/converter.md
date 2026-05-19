@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Telerik UI for WinForms Converter - Automated AI-Powered Migration from Microsoft WinForms Controls to Telerik
-description: The Telerik WinForms Converter is an AI-assisted migration tool in the MCP Server that automatically converts Microsoft WinForms controls to Telerik UI for WinForms. Supports C# and VB.NET projects targeting .NET 8, .NET 9, and .NET 10, also .NET Framework projects.
+description: The Telerik WinForms Converter is an AI-assisted migration tool in the MCP Server that automatically converts Microsoft WinForms controls to Telerik UI for WinForms. Supports C# and VB.NET projects targeting .NET and also .NET Framework projects.
 slug: converter
 tags: telerik,winforms,converter,tool,migration,convert,mcp,mcp server,automated migration,radgridview,radbutton,radtextbox,ai,code generation,upgrade,modernize
 published: True
