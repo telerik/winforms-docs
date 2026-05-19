@@ -32,7 +32,7 @@ To use the Telerik UI for WinForms Converter, you need:
 
 ## How It Works
 
-The **Telerik UI for WinForms Converter** exposes a set of [MCP tools]({%slug converter-tools%}) that the AI agent calls in sequence. The Converter tool acts as the orchestrator — it calls the tools, interprets results, builds the project, fixes errors, and guides you through the process step by step.
+The **Telerik UI for WinForms Converter** exposes a set of [MCP tools]({%slug converter-tools%}) that the AI agent calls in sequence. The agent acts as the orchestrator — it calls the tools, interprets results, builds the project, fixes errors, and guides you through the process step by step.
 
 The typical migration workflow is:
 
