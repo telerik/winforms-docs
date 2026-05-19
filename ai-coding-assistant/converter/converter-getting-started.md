@@ -11,7 +11,7 @@ tag: preview
 
 # Getting Started with the Telerik WinForms Converter
 
-This article walks you through migrating an existing Microsoft WinForms application to Telerik UI for WinForms components using the [Telerik WinForms Converter]({%slug converter%}). By the end of this guide, your application will be converted to use Telerik RadControls. This guide covers the full migration process — from opening your project to verifying the converted application.
+This article walks you through migrating an existing Microsoft WinForms application to Telerik UI for WinForms components using the [Telerik WinForms Converter]({%slug converter%}). By the end of this guide, your application—or parts of it, depending on its size—will be converted to use Telerik RadControls. This guide covers the full migration process — from opening your project to verifying the converted application.
 
 ## Step 0: Check the Prerequisites
 
@@ -61,11 +61,11 @@ Before you start, ensure you have the following [Converter prerequisites]({%slug
 
 
 2. Restart Visual Studio.
-3. Enable the `telerik-winforms-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
+3. Enable the `telerik-winforms-assistant` MCP server and all its tools in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 ![WinForms AI Assistance MCP Server](images/converter001.png)
 
-> In the `telerik-winforms-assistant` dropdown you can see all [Telerik MCP tools used to convert your project]({%slug converter-tools%}). Please ensure that 'telerik-winforms-assistant' is enabled before starting conversion.
+> In the `telerik-winforms-assistant` dropdown you can see all [Telerik MCP tools used to convert your project]({%slug converter-tools%}). Please ensure that `telerik-winforms-assistant` and its tools are enabled before starting conversion.
 
 ## Step 1: Open Your Project
 
@@ -73,7 +73,7 @@ Open your WinForms solution in an MCP-compatible IDE. Verify that the `telerik-w
 
 ## Step 2: Start the Migration
 
-Open the AI chat in 'Agent' mode and enter one of the following prompts:
+Open the AI chat in 'Agent' mode and use one of the pre-built prompts from the MCP prompt list, or enter one of the following prompts:
 
 **Migrate the entire project:**
 
@@ -185,7 +185,7 @@ The following table lists common issues during migration:
 | NuGet restore fails | Telerik NuGet source not configured or credentials expired. | Verify the Telerik NuGet feed is added and your credentials are current. |
 | MCP server not responding | Server not started or license not configured. | Restart the IDE and verify `TELERIK_LICENSE_PATH` is set in `.mcp.json`. |
 | Path elicitation prompt appears | The agent cannot locate the `.csproj` or a source file. | Provide the correct absolute path when prompted. |
-| Trial limit reached (15 files) | Trial accounts have a 15-file conversion limit. | Upgrade to a Subscription license for unlimited conversions. |
+| Trial limit reached (20 files) | Trial accounts have a 20-file conversion limit. | Upgrade to a Subscription license for unlimited conversions. |
 
 ## See Also
 

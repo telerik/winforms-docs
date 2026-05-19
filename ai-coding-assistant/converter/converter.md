@@ -51,26 +51,36 @@ Standard Microsoft WinForms control types are mapped to their Telerik equivalent
 
 | Microsoft Control | Telerik Control |
 |---|---|
-| `Button` | `RadButton` |
-| `TextBox` | `RadTextBox` |
-| `DataGridView` | `RadGridView` |
-| `ComboBox` | `RadDropDownList` |
-| `DateTimePicker` | `RadDateTimePicker` |
-| `TreeView` | `RadTreeView` |
-| `ListView` | `RadListView` |
-| `MenuStrip` | `RadMenu` |
-| `ToolStrip` | `RadCommandBar` |
-| `StatusStrip` | `RadStatusStrip` |
-| `SplitContainer` | `RadSplitContainer` |
-| `Form` | `RadForm` |
-| `TabControl` | `RadPageView` |
-| `ProgressBar` | `RadProgressBar` |
-| `Label` | `RadLabel` |
-| `CheckBox` | `RadCheckBox` |
-| `RadioButton` | `RadRadioButton` |
-| `Panel` | `RadPanel` |
-| `GroupBox` | `RadGroupBox` |
-| ... | ... |
+| `System.Windows.Forms.BindingNavigator` | `Telerik.WinControls.UI.RadBindingNavigator` |
+| `System.Windows.Forms.Button` | `Telerik.WinControls.UI.RadButton` |
+| `System.Windows.Forms.CheckBox` | `Telerik.WinControls.UI.RadCheckBox` |
+| `System.Windows.Forms.CheckedListBox` | `Telerik.WinControls.UI.RadCheckedListBox` |
+| `System.Windows.Forms.ComboBox` | `Telerik.WinControls.UI.RadDropDownList` |
+| `System.Windows.Forms.DataGridView` | `Telerik.WinControls.UI.RadGridView` |
+| `System.Windows.Forms.DomainUpDown` | `Telerik.WinControls.UI.RadDomainUpDown` |
+| `System.Windows.Forms.Form` | `Telerik.WinControls.UI.RadForm` |
+| `System.Windows.Forms.GroupBox` | `Telerik.WinControls.UI.RadGroupBox` |
+| `System.Windows.Forms.HScrollBar` | `Telerik.WinControls.UI.RadHScrollBar` |
+| `System.Windows.Forms.Label` | `Telerik.WinControls.UI.RadLabel` |
+| `System.Windows.Forms.ListBox` | `Telerik.WinControls.UI.RadListControl` |
+| `System.Windows.Forms.MaskedTextBox` | `Telerik.WinControls.UI.RadMaskedEditBox` |
+| `System.Windows.Forms.MenuStrip` | `Telerik.WinControls.UI.RadMenu` |
+| `System.Windows.Forms.MessageBox` | `Telerik.WinControls.RadMessageBox` |
+| `System.Windows.Forms.MonthCalendar` | `Telerik.WinControls.UI.RadCalendar` |
+| `System.Windows.Forms.NumericUpDown` | `Telerik.WinControls.UI.RadSpinEditor` |
+| `System.Windows.Forms.Panel` | `Telerik.WinControls.UI.RadPanel` |
+| `System.Windows.Forms.ProgressBar` | `Telerik.WinControls.UI.RadProgressBar` |
+| `System.Windows.Forms.PropertyGrid` | `Telerik.WinControls.UI.RadPropertyGrid` |
+| `System.Windows.Forms.RadioButton` | `Telerik.WinControls.UI.RadRadioButton` |
+| `System.Windows.Forms.RichTextBox` | `Telerik.WinControls.UI.RadRichTextEditor` |
+| `System.Windows.Forms.SplitContainer` | `Telerik.WinControls.UI.RadSplitContainer` |
+| `System.Windows.Forms.StatusStrip` | `Telerik.WinControls.UI.RadStatusStrip` |
+| `System.Windows.Forms.TabControl` | `Telerik.WinControls.UI.RadPageView` |
+| `System.Windows.Forms.TextBox` | `Telerik.WinControls.UI.RadTextBox` |
+| `System.Windows.Forms.ToolStrip` | `Telerik.WinControls.UI.RadCommandBar` |
+| `System.Windows.Forms.TrackBar` | `Telerik.WinControls.UI.RadTrackBar` |
+| `System.Windows.Forms.TreeView` | `Telerik.WinControls.UI.RadTreeView` |
+| `System.Windows.Forms.VScrollBar` | `Telerik.WinControls.UI.RadVScrollBar` |
 
 >tip The full mapping database is embedded in the converter and covers a comprehensive set of Microsoft WinForms controls and their properties, events, and enum values. 
 
@@ -92,7 +102,7 @@ Access to the Telerik UI for WinForms Converter depends on your [Telerik license
 | License Type | Converter Access | Details |
 |---|---|---|
 | **Subscription License** | Unlimited conversions | Full access with a fair use threshold of 300 requests per day. |
-| **Trial License** | 15 file conversions | Designed for evaluating the migration workflow before purchasing. |
+| **Trial License** | 20 file conversions | Designed for evaluating the migration workflow before purchasing. |
 | **Perpetual License** | No access* | Start a [30-day trial](https://www.telerik.com/try/ui-for-winforms) or convert to a Subscription license. |
 
 <small>*\* Perpetual license holders do **not** have access to the WinForms Converter. A Subscription license is required for unlimited conversions.*</small>
@@ -105,7 +115,7 @@ The converter implements several safety measures:
 * **Backup before overwrite** — A `.bak` backup of the original file is created before any file is modified.
 * **Path canonicalization** — All file paths are canonicalized to prevent path traversal.
 * **Secure XML parsing** — DTD processing is disabled and no external XML resolver is used when parsing `.csproj` and other XML files.
-* **Trial usage limits** — Trial accounts are limited to 15 file conversions. A subscription license is required for unlimited conversions.
+* **Trial usage limits** — Trial accounts are limited to 20 file conversions. A subscription license is required for unlimited conversions.
 
 ## See Also
 
