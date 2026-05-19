@@ -109,7 +109,7 @@ Returns instructions for configuring a Telerik theme in the application. The AI 
 
 ### Tool: telerik_winforms_assistant
 
-The conversion workflow integrates with the existing general-purpose AI coding assistant tool. The AI agent uses this tool to ask about Telerik UI for WinForms features, components, and APIs. In the context of migration, the agent calls this tool to research alternatives for properties or events that were removed during conversion (items listed in the `itemsToReview` array).
+The conversion workflow integrates excellently with the existing general-purpose AI coding assistant tool. The AI agent uses this tool to ask about Telerik UI for WinForms features, components, and APIs. In the context of migration, the agent calls this tool to research alternatives for properties or events that were removed during conversion (items listed in the `itemsToReview` array).
 
 **Parameters:**
 
