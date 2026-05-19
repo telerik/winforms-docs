@@ -1696,8 +1696,11 @@ meta:
   ai-coding-assistant/converter:
     title: Telerik Converter
     position: 4
+  ai-coding-assistant/coding-assistant:
+    title: Telerik AI Coding Assistant
+    position: 1
   ai-coding-assistant:
-    title: AI Coding Assistant
+    title: AI Tools
     position: 4
   licensing:
     title: Licensing
