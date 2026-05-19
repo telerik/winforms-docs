@@ -1,17 +1,19 @@
 ---
-title: Overview
-page_title: Telerik UI for WinForms AI Coding Assistant - Overview, License Requirements, and Usage 
-description: Overview of the Telerik UI for WinForms AI Coding Assistant and MCP Server. Covers license requirements for subscription, perpetual, and trial licenses, usage limits, supported components, privacy, and getting started prerequisites.
+title: AI Coding Assistant Overview
+page_title: Telerik UI for WinForms AI Coding Assistant - Overview, Intended Use, Coverage, and Privacy
+description: Overview of the Telerik UI for WinForms AI Coding Assistant. Covers intended use cases, supported components and assemblies, code generation capabilities, privacy and data handling, recommendations, and integration.
 slug: ai-overview
-tags: telerik,winforms,ai,coding assistant,mcp,mcp server,license,perpetual license,subscription license,trial,code generation,usage limits,intended use
+tags: telerik,winforms,ai,coding assistant,mcp,mcp server,code generation,privacy,data handling,coverage,intended use,recommendations,license, subscription, usage
 position: 0
 ---
 
-# Telerik UI for WinForms AI Coding Assistant
+# Getting Started with the Telerik UI for WinForms AI Coding Assistant
 
-The Telerik UI for WinForms AI Coding Assistant is an AI-powered code generation tool integrated in the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using [Telerik UI for WinForms components](https://www.telerik.com/products/winforms.aspx) and APIs.
+The Telerik UI for WinForms AI Coding Assistant is an AI-powered code generation tool integrated in the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs.
 
-## Available Tools
+> To start using AI Coding Assistant, please setup the [Telerik MCP Server]({%slug ai-mcp-server%}).
+
+## Available Tools in Telerik AI Coding Assistant
 
 The Telerik AI Coding Assistant is integrated in the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}).
 
@@ -23,15 +25,6 @@ The major features of the AI Coding Assistant are listed in the table below.
 | Client Compatibility   | Works with MCP-enabled clients (e.g., Cursor, Copilot Agent mode)         |
 | Code Suggestions       | Can directly suggest changes and rebuild applications to verify code      |
 | Response Focus         | Primarily code-focused                                                    |
-
-## Getting Started
-
-To use the **Telerik WinForms MCP Server** you need:
-
-* A [Telerik user account](https://www.telerik.com/account/).
-* An active [DevCraft or Telerik UI for WinForms license](https://www.telerik.com/purchase/individual/winforms.aspx) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms).
-* A [WinForms application that includes Telerik UI for WinForms](https://docs.telerik.com/devtools/winforms/getting-started/first-steps).
-* A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is required for full access to the AI Coding Assistant. Perpetual license holders do not have access by default—see [License Requirements](#license-requirements) for details.
 
 ## Intended Use
 
@@ -45,29 +38,9 @@ You can use the AI Coding Assistant for:
 * **Step-by-step explanations**: Understand the solutions provided by the AI Coding Assistant through the detailed explanations (depends on the tool, mode, and model used). To further develop your knowledge, check the respective documentation.
 * **Preliminary troubleshooting**: Resolve obvious and easy-to-solve issues affecting your code. For more complex issues, look for assistance by contacting our support team.
 
-## License Requirements
-
-Access to the Telerik UI for WinForms AI Coding Assistant depends on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
-
-| License Type | AI Coding Assistant | Details |
-|---|---|---|
-| **Subscription License** | Yes | A Subscription is the primary license that grants full access to the AI Coding Assistant. It includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day. Best for ongoing and high-volume usage. |
-| **Trial License** | Yes | Trial access is designed for evaluating the feature before purchasing. Reactivating the same trial for a new release does not grant additional requests. |
-| **Perpetual License** | No* | Perpetual license holders have no access to the AI Coding Assistant. Start a [30-day trial](https://www.telerik.com/try/ui-for-winforms) or convert Perpetual license to a Subscription license. |
-
-\* Perpetual license holders can access the AI Coding Assistant through a [30-day AI Tools trial](https://www.telerik.com/try/ui-for-winforms) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms). After the trial expires, access is no longer available unless the Perpetual license is converted to a Subscription license.
-
-
->tip All Telerik AI tools share a single request limit for your Telerik account. Requests made through the Telerik MCP server count against the same usage quota. When using the Telerik MCP server, one prompt may trigger several requests, depending on the prompt complexity.
-
 ## Coverage
 
-The Telerik AI Coding Assistant is trained on the Telerik UI for WinForms API reference, official documentation, and purpose-built code examples for the controls in the assemblies listed below:
-
-* Telerik.WinControls.UI
-* Telerik.WinControls.GridView
-* Telerik.WinControls.RadDock
-* Telerik.WinControls.RichTextEditor
+The Telerik AI Coding Assistant is trained on the Telerik UI for WinForms API reference, official documentation, and purpose-built code examples for the controls for all assemblies. 
 
 ## Telerik Document Processing AI Coding Assistant
 
