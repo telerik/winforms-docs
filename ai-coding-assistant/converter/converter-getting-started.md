@@ -78,17 +78,18 @@ Open the AI chat in 'Agent' mode and use one of the pre-built prompts from the M
 **Migrate the entire project:**
 
 ```
-#telerik-winforms-assistant Migrate this WinForms application to Telerik UI for WinForms
+Migrate WinForms Project to Telerik
+
 ```
 
 **Migrate with a dry run (preview changes before applying):**
 
 ```
-#telerik-winforms-assistant Migrate this WinForms application to Telerik UI for WinForms using dry run mode
+Migrate WinForms Project to Telerik (Dry Run)
+
 ```
 
-
-You can also select one of the pre-built prompts from the MCP prompt list:
+Here are the pre-built prompts from the MCP prompt list:
 
 | Prompt | Description |
 |---|---|
