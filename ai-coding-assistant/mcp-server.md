@@ -253,7 +253,6 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 ### Global Setup:
 
 Add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`).
-ft has acknowledged the issue and marked it as **Fixed - Pending Release**. A future Visual Studio update is expected to resolve it.
 
 ## Usage
 
