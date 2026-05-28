@@ -14,7 +14,7 @@ position: 0
 
 >note The [structure]({%slug winforms/chat/structure%}) articles provides detailed information about the element hierarchy building the visual tree of the control.
 
-**RadChat** is working with four different elements visually representing a message:
+**RadChat** is working with the following elements visually representing a message:
 
 * **TextMessageItemElement**: Represents a single message item consisting of text.
 
@@ -30,9 +30,16 @@ position: 0
   
   * **ChatWeatherCardElement**: Predefined card element providing weather information.
   
-* **CarouselMessageItemElement**: Item element consisting of a horizontal stack which can be populated with *Image*, *Flight*, *Product*, and *Weather* cards. 
+* **CarouselMessageItemElement**: Item element consisting of a horizontal stack which can be populated with *Image*, *Flight*, *Product*, and *Weather* cards.
 
-The chat toolbar and input text box are exposed as properties and they can be accessed through the **RadChatElement** object: RadChat.ChatElement.**InputTextBox**, RadChat.ChatElement.**ToolbarElement**.
+* **AIChatMessageItemElement**: Represents an AI-generated message item that can display reply bubbles and streaming content.
+
+The chat toolbar, input text box, prompt input element, and reply preview element are exposed as properties and they can be accessed through the **RadChatElement** object:
+
+* RadChat.ChatElement.**InputTextBox** — the text entry element.
+* RadChat.ChatElement.**ToolbarElement** — the toolbar element.
+* RadChat.ChatElement.**PromptInputElement** — the prompt input element providing text entry, attached files, speech-to-text, and send capabilities.
+* RadChat.ChatElement.**ReplyPreviewElement** — the reply preview element shown above the input area when replying to a message.
 
 # ItemFormatting Event
 

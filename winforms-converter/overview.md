@@ -10,6 +10,8 @@ position: 0
 
 # WinForms Converter
 
+>important As of Q2 2026, the new [Telerik UI for WinForms Converter]({%slug converter%}) is available. It is an AI-powered, MCP-based migration tool that replaces this legacy Visual Studio Extension converter. The new converter works in any MCP-compatible IDE and supports modern .NET versions.
+
 This tool allows you to convert the standard .NET Windows Forms controls for all projects in a particular solution to their equivalent in Telerik UI for WinForms. It aims to speed up the conversion process and save time when such projects are modernized. The tool is built on top of the [Roslyn](https://roslyn.codeplex.com/) compiler platform. 
 
 >caution The WinForms Converter is not supported in Visual Studio 2022. This means that running it in Visual Studio 2022 will lead to errors. The last supported version of Visual Studio is 2019.

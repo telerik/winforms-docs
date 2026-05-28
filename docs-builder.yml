@@ -1400,6 +1400,9 @@ meta:
   controls/chat/customizing-appearance:
     title: Customizing Appearance
     position: 7
+  controls/chat/features:
+    title: Features
+    position: 5
   controls/chat/integration:
     title: Integration
     position: 4
@@ -1694,8 +1697,14 @@ meta:
   installation-and-upgrades:
     title: Installation and Upgrades
     position: 5
+  ai-coding-assistant/converter:
+    title: Telerik Converter
+    position: 4
+  ai-coding-assistant/coding-assistant:
+    title: Telerik AI Coding Assistant
+    position: 1
   ai-coding-assistant:
-    title: AI Coding Assistant
+    title: AI Tools
     position: 4
   licensing:
     title: Licensing
@@ -2263,6 +2272,10 @@ redirects:
 -
     from: "^/devtools/winforms/chat-overview$"
     to: "/devtools/winforms/chat/overview"
+    type: Permanent
+-
+    from: "^/devtools/winforms/controls/chat/toolbar$"
+    to: "/devtools/winforms/controls/chat/features/toolbar"
     type: Permanent
 -
     from: "^/devtools/winforms/imageeditor-overview$"
