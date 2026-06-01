@@ -75,27 +75,19 @@ Open your WinForms solution in an MCP-compatible IDE. Verify that the `telerik-w
 
 Open the AI chat in 'Agent' mode and use one of the pre-built prompts from the MCP prompt list, or enter one of the following prompts:
 
-**Migrate the entire project:**
+**Migrate the entire project (directly applies changes, each converted file is backed up as a .bak file before being overwritten):**
 
 ```
-Migrate WinForms Project to Telerik
-
-```
-
-**Migrate with a dry run (preview changes before applying):**
-
-```
-Migrate WinForms Project to Telerik (Dry Run)
+Migrate this WinForms application to Telerik UI for WinForms. Use the Telerik MCP tools to guide each step — start with telerik_get_migration_plan and follow its workflow. Try to preserve all existing functionality. Do not guess package names, do not create stub controls, do not batch-convert files.
 
 ```
 
-Here are the pre-built prompts from the MCP prompt list:
+**Migrate with a dry run (preview changes before applying, takes more time and consumes more resources ):**
 
-| Prompt | Description |
-|---|---|
-| **Migrate WinForms Project to Telerik** | Full project migration with automatic backup of each file. |
-| **Migrate WinForms Project to Telerik (Dry Run)** | Preview all changes before they are written to disk. |
-| **Convert Single File to Telerik** | Convert one file (and its Designer counterpart if applicable). |
+```
+Migrate this WinForms application to Telerik UI for WinForms. Use the Telerik MCP tools to guide each step — start with telerik_get_migration_plan and follow its workflow. Try to preserve all existing functionality. Do not guess package names, do not create stub controls, do not batch-convert files. Use dryRun mode when calling telerik_convert_file so I can review each file's changes before they are applied.
+
+```
 
 ## Step 3: Review the Migration Plan
 
