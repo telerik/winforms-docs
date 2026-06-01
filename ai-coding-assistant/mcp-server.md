@@ -44,7 +44,7 @@ To use the **Telerik WinForms MCP Server** you need:
 * An active [DevCraft or Telerik UI for WinForms license](https://www.telerik.com/purchase/individual/winforms.aspx) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms).
 * A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) for full access. Perpetual license holders do not have access by default—see [License Requirements](#license-requirements) for details.
 * An [MCP-compatible client](https://modelcontextprotocol.io/clients) that supports MCP tools (latest version recommended).
-* A [WinForms application that includes Telerik UI for WinForms](https://docs.telerik.com/devtools/winforms/getting-started/first-steps) targeting net8.0-windows, net9.0-windows, or net10.0-windows.
+* A WinForms application targeting modern .NET or classic .NET Framework.
 * A valid [Telerik license key]({%slug license-key%}).
 
 ### Supported .NET Runtimes

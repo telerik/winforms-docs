@@ -122,11 +122,11 @@ The conversion workflow integrates excellently with the existing general-purpose
 
 The MCP server also provides pre-built prompts that you can select from the MCP prompt list in supported clients:
 
-| Prompt | Description |
-|--------|-------------|
-| **Migrate WinForms Project to Telerik** (`migrate-project`) | Migrates an entire WinForms application to Telerik UI for WinForms using the recommended step-by-step workflow. Each converted file is backed up as a `.bak` file before being overwritten. |
-| **Migrate WinForms Project to Telerik (Dry Run)** (`migrate-project-dryrun`) | Same as `migrate-project` but uses dry-run mode so you can review each file's changes before they are applied. Takes more time because each file is reviewed before being written. |
-| **Convert Single File to Telerik** (`convert-file`) | Converts a single WinForms file to use Telerik RadControls. If applied to a `Designer.cs` file, also converts the corresponding `.cs` file. |
+| Prompt Type | Prompt | Description |
+|--------|-------------|-------------|
+| **Migrate WinForms Project to Telerik** (`migrate-project`) | Migrate this WinForms application to Telerik UI for WinForms. Use the Telerik MCP tools to guide each step — start with telerik_get_migration_plan and follow its workflow. Try to preserve all existing functionality. Do not guess package names, do not create stub controls, do not batch-convert files. Use dryRun mode when calling telerik_convert_file so I can review each file's changes before they are applied. | Migrates an entire WinForms application to Telerik UI for WinForms using the recommended step-by-step workflow. Each converted file is backed up as a `.bak` file before being overwritten. |
+| **Migrate WinForms Project to Telerik (Dry Run)** (`migrate-project-dryrun`) | Migrate this WinForms application to Telerik UI for WinForms. Use the Telerik MCP tools to guide each step — start with telerik_get_migration_plan and follow its workflow. Try to preserve all existing functionality. Do not guess package names, do not create stub controls, do not batch-convert files. Use dryRun mode when calling telerik_convert_file so I can review each file's changes before they are applied. | Same as `migrate-project` but uses dry-run mode so you can review each file's changes before they are applied. Takes more time because each file is reviewed before being written. |
+| **Convert Single File to Telerik** (`convert-file`) | Convert this file to use Telerik UI for WinForms controls using the telerik_convert_file MCP tool. Preserve all existing functionality. If this is a Designer.cs file, convert its corresponding .cs file immediately after. | Converts a single WinForms file to use Telerik RadControls. If applied to a `Designer.cs` file, also converts the corresponding `.cs` file. |
 
 ## Converter Engine
 
