@@ -71,6 +71,8 @@ The `SpeechRecognizerSpeechRecognizedEventArgs` class provides the following det
 - **FullText**: Gets complete, accumulated, recognized text from the current listening session.
 - **FullTextConfidenceScore**: Gets the confidence score for the recognized text. A value between 0 and 1 that indicates the confidence level of the transcription. Higher values represent greater confidence. A value of -1 indicates that no confidence score is available.
 
+  > The default speech recognizer uses the Web Speech API via the WebView2 engine, which does not provide usable confidence score.
+
 #### Using the SpeechRecognized event
 
 ````C#
