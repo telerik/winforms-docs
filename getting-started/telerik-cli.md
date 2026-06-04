@@ -138,7 +138,7 @@ By default, the command creates or updates the global `.mcp.json` configuration 
 | Cursor  | Windows | `%USERPROFILE%\.cursor\mcp.json` |
 | Cursor | macOS, Linux | `~/.cursor/mcp.json` |
 
-### Install WinFroms MCP Server
+### Install WinForms MCP Server
 
 You can also fine-tune the process with the following options:
 
