@@ -84,7 +84,7 @@ This command automatically creates or updates the `.mcp.json` configuration file
 
 ### Install with .NET CLI Commands
 
-Another approach to install the Telerik WinForms MCP Server is to use .NET10 or .NET8/9 commands.
+Another approach to install the Telerik WinForms MCP Server is to use .NET 10 or .NET 8/9 commands.
 
 Beginning with **.NET 10** it can be executed directly via the `dnx` command. For .NET 8 and .NET 9 (where `dnx` is not available) you can install it as a local dotnet tool and invoke its executable.
 
