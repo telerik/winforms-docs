@@ -148,6 +148,7 @@ You can also fine-tune the process with the following options:
 ```powershell
 telerik mcp config winforms --ide visualstudio
 ```
+This command installs and configures only the Telerik WinForms MCP server and targets only Visual Studio by creating or updating the `.mcp.json` file with the WinForms MCP entry.
 
 ## Set Up Telerik NuGet Feed
 
