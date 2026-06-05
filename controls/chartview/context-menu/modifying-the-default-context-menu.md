@@ -21,61 +21,17 @@ In order to add custom menu items to the default context menu, you should create
 
 #### Subscribe to Event
 
-{{source=..\SamplesCS\ChartView\ContextMenu\RadChartViewContextMenuForm.cs region=SubscribeToEvent}} 
-{{source=..\SamplesVB\ChartView\ContextMenu\RadChartViewContextMenuForm.vb region=SubscribeToEvent}}
-````C#
-this.radChartView1.ContextMenuOpening += radChartView1_ContextMenuOpening;
-
-````
-````VB.NET
-AddHandler RadChartView1.ContextMenuOpening, AddressOf RadChartView1_ContextMenuOpening
-
-```` 
+<snippet id='chartview-modifying-the-default-context-menu-subscribetoevent-cs'/>
+<snippet id='chartview-modifying-the-default-context-menu-subscribetoevent-vb'/>
 
 
-
-{{endregion}}
 
 #### Handle Event
 
-{{source=..\SamplesCS\ChartView\ContextMenu\RadChartViewContextMenuForm.cs region=HandleEvent}} 
-{{source=..\SamplesVB\ChartView\ContextMenu\RadChartViewContextMenuForm.vb region=HandleEvent}}
-````C#
-private void radChartView1_ContextMenuOpening(object sender, ChartViewContextMenuOpeningEventArgs e)
-{
-    RadMenuItem customMenuItem = new RadMenuItem();
-    customMenuItem.Text = "Export Chart";
-    customMenuItem.Click += customMenuItem_Click;
-    RadMenuSeparatorItem separator = new RadMenuSeparatorItem();
-    e.ContextMenu.Items.Add(separator);
-    e.ContextMenu.Items.Add(customMenuItem);
-}
-private void customMenuItem_Click(object sender, EventArgs e)
-{
-   string filePath = @"..\..\..\exportedChart.png";
-   this.radChartView1.ExportToImage(filePath, this.radChartView1.Size, System.Drawing.Imaging.ImageFormat.Png);
-}
-
-````
-````VB.NET
-Private Sub RadChartView1_ContextMenuOpening(sender As Object, e As ChartViewContextMenuOpeningEventArgs)
-    Dim customMenuItem As New RadMenuItem()
-    customMenuItem.Text = "Export Chart"
-    AddHandler customMenuItem.Click, AddressOf CustomMenuItem_Click
-    Dim separator As New RadMenuSeparatorItem()
-    e.ContextMenu.Items.Add(separator)
-    e.ContextMenu.Items.Add(customMenuItem)
-End Sub
-Private Sub CustomMenuItem_Click(sender As Object, e As EventArgs)
-    Dim filePath As String = "..\..\..\exportedChart.png"
-    Me.RadChartView1.ExportToImage(filePath, Me.RadChartView1.Size, System.Drawing.Imaging.ImageFormat.Png)
-End Sub
-
-```` 
+<snippet id='chartview-modifying-the-default-context-menu-handleevent-cs'/>
+<snippet id='chartview-modifying-the-default-context-menu-handleevent-vb'/>
 
 
-
-{{endregion}}
 
 # See Also
 

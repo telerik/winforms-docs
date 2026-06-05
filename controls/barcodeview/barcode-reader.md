@@ -27,35 +27,10 @@ The complete example is available in the Demo application >> BarcodeReader examp
 
 #### Decoding a barcode image
 
-{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=Decoder}} 
-{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=Decoder}} 
+<snippet id='barcodeview-barcode-reader-decoder-cs' />
+<snippet id='barcodeview-barcode-reader-decoder-vb' />
 
-````C#
 
-BarcodeType barcodeType = Telerik.WinControls.UI.Barcode.Reader.BarcodeType.Code93Extended;
-Bitmap bitmap = new Bitmap(Properties.Resources.barcode_reader);
-RadBarcodeReader reader = new Telerik.WinControls.UI.Barcode.RadBarcodeReader();
-var decodeResult = reader.Decode(bitmap, barcodeType);
-if (decodeResult != null && decodeResult != DecodeResult.Empty)
-{
-    RadMessageBox.Show(decodeResult.Value);
-} 
-         
-````
-````VB.NET
-
-Dim barcodeType As BarcodeType = Telerik.WinControls.UI.Barcode.Reader.BarcodeType.Code93Extended
-Dim bitmap As Bitmap = New Bitmap(My.Resources.barcode_reader)
-Dim reader As RadBarcodeReader = New Telerik.WinControls.UI.Barcode.RadBarcodeReader()
-Dim decodeResult = reader.Decode(bitmap, barcodeType)
-
-If decodeResult IsNot Nothing AndAlso Not decodeResult.Equals(DecodeResult.Empty) Then
-    RadMessageBox.Show(decodeResult.Value)
-End If
-
-````
-
-{{endregion}} 
 
 >caution When decoding a barcode image, the image should contain only the barcode itself, no additional text to be present in that image. 
 

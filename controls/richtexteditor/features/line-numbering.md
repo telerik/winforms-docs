@@ -53,26 +53,10 @@ The line numbering functionality can be programmatically used through the follow
        
 #### Example 1: Create and apply line numbering for the whole document
 
-{{source=..\SamplesCS\RichTextEditor\Features\LineNumberingCode.cs region=SetLineNumbering}} 
-{{source=..\SamplesVB\RichTextEditor\Features\LineNumberingCode.vb region=SetLineNumbering}} 
-
-````C#
-
-LineNumbering numbering = new LineNumbering(10,20,2,LineNumberingRestartType.Continuous);
-this.radRichTextEditor1.Document.Selection.SelectAll();
-this.radRichTextEditor1.RichTextBoxElement.ChangeSectionLineNumbering(numbering);
-
-````
-````VB.NET
-
-Dim numbering As LineNumbering = New LineNumbering(10, 20, 2, LineNumberingRestartType.Continuous)
-Me.radRichTextEditor1.Document.Selection.SelectAll()
-Me.radRichTextEditor1.RichTextBoxElement.ChangeSectionLineNumbering(numbering)
+<snippet id='richtexteditor-linenumberingcode-setlinenumbering-cs' />
+<snippet id='richtexteditor-linenumberingcode-setlinenumbering-vb' />
 
 
-````
-
-{{endregion}} 
 
 You can also directly control the line numbering settings for a specific Section object through its **LineNumbering** property and suppress the numbering for a specific Paragraph using **SuppressLineNumbers**.
 

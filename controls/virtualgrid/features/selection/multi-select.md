@@ -16,21 +16,10 @@ __RadVirtualGrid__ allows the user to select more than one item at a time from t
 
 In order to enable multiple row selection, after setting the __MultiSelect__ property to *true*, you have to set the __SelectionMode__ to __FullRowSelect__:
 
-{{source=..\SamplesCS\VirtualGrid\VirtualGridSelection.cs region=multiSelect}} 
-{{source=..\SamplesVB\VirtualGrid\VirtualGridSelection.vb region=multiSelect}}
-````C#
-            
-radVirtualGrid1.MultiSelect = true;
-radVirtualGrid1.SelectionMode = VirtualGridSelectionMode.FullRowSelect;
+<snippet id='virtualgrid-virtualgridselection-multiselect-cs' />
+<snippet id='virtualgrid-virtualgridselection-multiselect-vb' />
 
-````
-````VB.NET
-radVirtualGrid1.MultiSelect = True
-radVirtualGrid1.SelectionMode = VirtualGridSelectionMode.FullRowSelect
 
-```` 
-
-{{endregion}}
 
 When these settings are applied, you have several options to make a multiple selection:
 * Press Ctrl + A to select all rows.
@@ -44,21 +33,10 @@ When these settings are applied, you have several options to make a multiple sel
 
 In order to enable multiple cell selection, after setting the __MultiSelect__ property to true, you have to set the __SelectionMode__ to __CellSelect__:
 
-{{source=..\SamplesCS\VirtualGrid\VirtualGridSelection.cs region=multiCell}} 
-{{source=..\SamplesVB\VirtualGrid\VirtualGridSelection.vb region=multiCell}}
-````C#
-  
-radVirtualGrid1.MultiSelect = true;
-radVirtualGrid1.SelectionMode = VirtualGridSelectionMode.CellSelect;
+<snippet id='virtualgrid-virtualgridselection-multicell-cs' />
+<snippet id='virtualgrid-virtualgridselection-multicell-vb' />
 
-````
-````VB.NET
-radVirtualGrid1.MultiSelect = True
-radVirtualGrid1.SelectionMode = VirtualGridSelectionMode.CellSelect
 
-```` 
-
-{{endregion}}
 
 Once you have applied these setting, the options for selection are:
 

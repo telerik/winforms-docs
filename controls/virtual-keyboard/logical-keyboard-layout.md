@@ -23,78 +23,19 @@ The **VirtualKeyboardLayout** offers a public **Rows** property which is an **Ob
 
 #### Accessing the logical layout and iterating the keys in the Home layout
 
-{{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=LogicalLayouts}} 
-{{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=LogicalLayouts}}
+<snippet id='virtual-keyboard-keyboardgettingstarted-logicallayouts-cs' />
+<snippet id='virtual-keyboard-keyboardgettingstarted-logicallayouts-vb' />
 
-````C#
-this.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended;
-ExtendedVirtualKeyboardLayoutPanel extendedKeyboard = radVirtualKeyboard1.MainLayoutPanel as ExtendedVirtualKeyboardLayoutPanel;
-VirtualKeyboardLayout simplifiedLayout = extendedKeyboard.MainButtonsLayout;
-VirtualKeyboardLayout homeLayout = extendedKeyboard.HomeButtonsLayout;
-VirtualKeyboardLayout numpadLayout = extendedKeyboard.NumpadButtonsLayout;
-StringBuilder homeKeys = new StringBuilder();
-foreach (Row rows in homeLayout.Rows)
- {
-    foreach (IKey key in rows.Keys)
-     {
-        Key k = key as Key;
-        if (k != null)
-        {
-        homeKeys.AppendLine(k.Text);
-        }
-     }
- }
 
-RadMessageBox.Show(homeKeys.ToString());
-
-````
-````VB.NET
-Me.radVirtualKeyboard1.LayoutType = Telerik.WinControls.VirtualKeyboard.KeyboardLayoutType.Extended
-Dim extendedKeyboard As ExtendedVirtualKeyboardLayoutPanel = TryCast(radVirtualKeyboard1.MainLayoutPanel, ExtendedVirtualKeyboardLayoutPanel)
-Dim simplifiedLayout As VirtualKeyboardLayout = extendedKeyboard.MainButtonsLayout
-Dim homeLayout As VirtualKeyboardLayout = extendedKeyboard.HomeButtonsLayout
-Dim numpadLayout As VirtualKeyboardLayout = extendedKeyboard.NumpadButtonsLayout
-Dim homeKeys As StringBuilder = New StringBuilder()
-For Each rows As Row In homeLayout.Rows
-    For Each key As IKey In rows.Keys
-        Dim k As Key = TryCast(key, Key)
-        If k IsNot Nothing Then
-            homeKeys.AppendLine(k.Name)
-        End If
-    Next
-Next
-
-RadMessageBox.Show(homeKeys.ToString())
-
-```` 
-
-{{endregion}}
 
 >note As of **R3 2021 SP1** we introduced new API, the **GetAllRows** and **FindRowByKey** methods, which don't require knowing in which LayoutPanel and the exact row which is the owner of the key, to be able to remove it.
 
 #### API for Adding/Removing keys
 
-{{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=AddRemoAPI}} 
-{{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=AddRemoAPI}}
+<snippet id='virtual-keyboard-keyboardgettingstarted-addremoapi-cs' />
+<snippet id='virtual-keyboard-keyboardgettingstarted-addremoapi-vb' />
 
-````C#
-var allKeys = this.radVirtualKeyboard1.MainLayoutPanel.GetAllKeys();
-Key Qkey = allKeys.FirstOrDefault(k => k.VirtualKey == (int)Keys.Q) as Key;
-Row row = this.radVirtualKeyboard1.MainLayoutPanel.FindRowByKey(Qkey);
-row.Keys.Remove(Qkey);
-this.radVirtualKeyboard1.MainLayoutPanel.ResetLayout(true);
 
-````
-````VB.NET
-Dim allKeys = Me.radVirtualKeyboard1.MainLayoutPanel.GetAllKeys()
-Dim Qkey As Key = TryCast(allKeys.FirstOrDefault(Function(k) k.VirtualKey = CInt(Keys.Q)), Key)
-Dim row As Row = Me.radVirtualKeyboard1.MainLayoutPanel.FindRowByKey(Qkey)
-row.Keys.Remove(Qkey)
-Me.radVirtualKeyboard1.MainLayoutPanel.ResetLayout(True)
-
-```` 
-
-{{endregion}}
 
 # See Also
 

@@ -48,48 +48,15 @@ To programmatically add a __RadButton__ to a form, create a new instance of a _
 
 #### Adding a RadButton at runtime 
 
-{{source=..\SamplesCS\Buttons\Button.cs region=creatingbutton}} 
-{{source=..\SamplesVB\Buttons\Button.vb region=creatingbutton}} 
+<snippet id='buttons-button-getting-started-creatingbutton-cs' />
+<snippet id='buttons-button-getting-started-creatingbutton-vb' />
 
-````C#
-RadButton myNewRadButton = new RadButton();
-myNewRadButton.Text = "My New RadButton";
-myNewRadButton.Width = 150;
-myNewRadButton.Height = 50;
-this.Controls.Add(myNewRadButton);
-myNewRadButton.Click+=myNewRadButton_Click;
 
-````
-````VB.NET
-Dim myNewRadButton As New RadButton()
-myNewRadButton.Text = "My New RadButton"
-myNewRadButton.Width = 150
-myNewRadButton.Height = 50
-Me.Controls.Add(myNewRadButton)
-AddHandler myNewRadButton.Click, AddressOf myNewRadButton_Click
 
-````
+<snippet id='buttons-button-getting-started-buttonclick-cs' />
+<snippet id='buttons-button-getting-started-buttonclick-vb' />
 
-{{endregion}} 
 
-{{source=..\SamplesCS\Buttons\Button.cs region=ButtonClick}} 
-{{source=..\SamplesVB\Buttons\Button.vb region=ButtonClick}} 
-
-````C#
-private void myNewRadButton_Click(object sender, EventArgs e)
-{
-    RadMessageBox.Show("Clicked");
-}
-
-````
-````VB.NET
-Private Sub myNewRadButton_Click(sender As Object, e As EventArgs)
-    RadMessageBox.Show("Clicked")
-End Sub
-
-````
-
-{{endregion}} 
 
 
 ## Telerik UI for WinForms Learning Resources

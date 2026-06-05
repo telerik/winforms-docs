@@ -16,19 +16,8 @@ previous_url: gridview-columns-reordering-columns
 
 #### Allow or disallow column reordering
 
-{{source=..\SamplesCS\GridView\Columns\ReorderingColumns.cs region=allowReoder}} 
-{{source=..\SamplesVB\GridView\Columns\ReorderingColumns.vb region=allowReoder}} 
-
-````C#
-radGridView1.AllowColumnReorder = true;
-
-````
-````VB.NET
-RadGridView1.AllowColumnReorder = True
-
-````
-
-{{endregion}}
+<snippet id='gridview-reorderingcolumns-allowreoder-cs' />
+<snippet id='gridview-reorderingcolumns-allowreoder-vb' />
 
 >caption Figure 1: Reorder columns in RadGridView
 
@@ -40,21 +29,8 @@ In order to reorder columns in RadGridView programmatically you should use the *
 
 #### Reordering columns programmatically
 
-{{source=..\SamplesCS\GridView\Columns\ReorderingColumns.cs region=reorderColumns}} 
-{{source=..\SamplesVB\GridView\Columns\ReorderingColumns.vb region=reorderColumns}} 
-
-````C#
-radGridView1.Columns.Move(5, 0);
-radGridView1.Columns.Move(4, 1);
-
-````
-````VB.NET
-RadGridView1.Columns.Move(5, 0)
-RadGridView1.Columns.Move(4, 1)
-
-````
-
-{{endregion}}
+<snippet id='gridview-reorderingcolumns-reordercolumns-cs' />
+<snippet id='gridview-reorderingcolumns-reordercolumns-vb' />
 
 # See Also
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})

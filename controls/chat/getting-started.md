@@ -41,21 +41,10 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 #### Setting default author
 
-{{source=..\SamplesCS\Chat\ChatGettingStarted.cs region=SetAuthor}} 
-{{source=..\SamplesVB\Chat\ChatGettingStarted.vb region=SetAuthor}}
-
-````C#
-this.radChat1.Author = new Author(Properties.Resources.architect, "Ben");
-
-````
-````VB.NET
-Me.radChat1.Author = New Author(My.Resources.architect, "Ben")
-
-```` 
+<snippet id='chat-getting-started-setauthor-cs'/>
+<snippet id='chat-getting-started-setauthor-vb'/>
 
 
-
-{{endregion}}
 
 Now, you are ready to start sending messages:
 
@@ -67,40 +56,10 @@ If the RadChat.**AutoAddUserMessages** property is set to *false* the message fr
 
 #### Adding message programmatically
 
-{{source=..\SamplesCS\Chat\ChatGettingStarted.cs region=AddMessage}} 
-{{source=..\SamplesVB\Chat\ChatGettingStarted.vb region=AddMessage}}
-
-````C#
-        
-private void AddMessageProgrammatically()
-{
-    this.radChat1.AutoAddUserMessages = false;
-    this.radChat1.SendMessage += radChat1_SendMessage;
-}
-        
-private void radChat1_SendMessage(object sender, SendMessageEventArgs e)
-{
-    ChatTextMessage textMessage = e.Message as ChatTextMessage;
-    textMessage.Message = "[Slightly changed message] " + textMessage.Message;
-    this.radChat1.AddMessage(textMessage);
-}
-
-````
-````VB.NET
-Private Sub AddMessageProgrammatically()
-    Me.radChat1.AutoAddUserMessages = False
-    AddHandler Me.radChat1.SendMessage, AddressOf radChat1_SendMessage
-End Sub
-Private Sub radChat1_SendMessage(ByVal sender As Object, ByVal e As SendMessageEventArgs)
-    Dim textMessage As ChatTextMessage = TryCast(e.Message, ChatTextMessage)
-    textMessage.Message = "[Slightly changed message] " & textMessage.Message
-    Me.radChat1.AddMessage(textMessage)
-End Sub
-
-```` 
+<snippet id='chat-getting-started-addmessage-cs'/>
+<snippet id='chat-getting-started-addmessage-vb'/>
 
 
-{{endregion}}
 
 ![WinForms RadChat Adding Message Programmatically](images/chat-items-getting-started003.gif) 
 

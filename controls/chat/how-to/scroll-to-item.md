@@ -16,10 +16,8 @@ In R3 2019 the we have introduced the __ScrollToItem__ method. It allows you to 
 
 #### ScrollToItem method
 
-{{source=..\SamplesCS\Chat\ChatItemFactory.cs region=Scroll}} 
-{{source=..\SamplesVB\Chat\ChatItemFactory.vb region=Scroll}}
+<snippet id='chat-scroll-to-item-scroll-cs'/>
+<snippet id='chat-scroll-to-item-scroll-vb'/>
 
 
-
-{{endregion}}
 

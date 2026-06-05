@@ -74,38 +74,19 @@ Inserting any type of field in the document of an editor can be done with the __
 
 #### Insert a page field:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Fields.cs region=insert}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=insert}} 
+<snippet id='richtexteditor-fields-insert-cs' />
+<snippet id='richtexteditor-fields-insert-vb' />
 
-````C#
-this.radRichTextEditor1.InsertField(new PageField());
 
-````
-````VB.NET
-Me.radRichTextEditor1.InsertField(New PageField())
-
-````
-
-{{endregion}} 
 
 Update of a field can be triggered from the context menu or using the __UpdateField()__ method of **RadRichTextEditor** by passing the **FieldRangeStart** of the field as a parameter.
         
 
 #### Update a field:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Fields.cs region=update}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=update}} 
+<snippet id='richtexteditor-fields-update-cs' />
+<snippet id='richtexteditor-fields-update-vb' />
 
-````C#
-this.radRichTextEditor1.UpdateField(new FieldRangeStart());
-
-````
-````VB.NET
-Me.radRichTextEditor1.UpdateField(New FieldRangeStart())
-
-````
-
-{{endregion}} 
 
 
 You can also update all fields in the current document with the __UpdateAllFields()__ method of **RadRichTextEditor**.
@@ -116,19 +97,10 @@ All field types in the context of **RadDocument** have an update priority which 
 
 Priority can be specified through the __FieldsUpdateManager__ static class. The following code snippet shows how to set higher priority for a specific field type, causing all fields of this type to be updated before the rest of the fields when calling **UpdateAllField()**:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Fields.cs region=register}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Fields.vb region=register}} 
+<snippet id='richtexteditor-fields-register-cs' />
+<snippet id='richtexteditor-fields-register-vb' />
 
-````C#
-FieldsUpdateManager.RegisterFieldUpdateInfo(typeof(ReferenceField), new FieldTypeUpdateInfo() { Priority = 1000 });
 
-````
-````VB.NET
-FieldsUpdateManager.RegisterFieldUpdateInfo(GetType(ReferenceField), New FieldTypeUpdateInfo() With {.Priority = 1000})
-
-````
-
-{{endregion}} 
 
 >warning Having many different values for field priory is not recommended and may lead to performance degradation of the **UpdateAllFields()** method. The reason for this is that all fields with the same priority are updated in a batch update. Having more priority groups leads to execution of more batch updates.
 >

@@ -42,34 +42,10 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 
 #### Example
 
-{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=QRCode}} 
-{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=QRCode}}
+<snippet id='barcodeview-qrcode-settings-qrcode-cs' />
+<snippet id='barcodeview-qrcode-settings-qrcode-vb' />
 
-````C#
 
-QRCode encoder = new QRCode();
-encoder.Version = 0;
-encoder.ErrorCorrectionLevel = Telerik.WinControls.UI.Barcode.ErrorCorrectionLevel.M;
-encoder.ECIMode = Telerik.WinControls.UI.Barcode.ECIMode.CP437;
-encoder.CodeMode = Telerik.WinControls.UI.Barcode.CodeMode.Alphanumeric;
-encoder.FNC1Mode = Telerik.WinControls.UI.Barcode.FNC1Mode.SecondPosition;
-encoder.ApplicationIndicator = "00";
-this.radBarcodeView1.Symbology = encoder;         
-
-````
-````VB.NET
-
-Dim encoder As QRCode = New QRCode()
-encoder.Version = 0
-encoder.ErrorCorrectionLevel = Telerik.WinControls.UI.Barcode.ErrorCorrectionLevel.M
-encoder.ECIMode = Telerik.WinControls.UI.Barcode.ECIMode.CP437
-encoder.CodeMode = Telerik.WinControls.UI.Barcode.CodeMode.Alphanumeric
-encoder.FNC1Mode = Telerik.WinControls.UI.Barcode.FNC1Mode.SecondPosition
-encoder.ApplicationIndicator = "00"
-Me.radBarcodeView1.Symbology = encoder
-
-```` 
-{{endregion}}
 
 
 

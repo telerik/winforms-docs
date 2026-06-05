@@ -56,78 +56,37 @@ There is also a property for the above setting which you can set in your code:
 
 #### ViewerMode Property
 
-{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Modes}} 
-{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Modes}} 
+<snippet id='pdfviewer-pdfgettingstarted-modes-cs' />
+<snippet id='pdfviewer-pdfgettingstarted-modes-vb' />
 
-````C#
-this.radPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection;
 
-````
-````VB.NET
-Me.RadPdfViewer1.ViewerMode = FixedDocumentViewerMode.TextSelection
-
-````
-
-{{endregion}}
 
 Loading a PDF document is done via the __LoadDocument__ method. It accepts either a filename or an input stream as an argument.
 
 #### LoadDocument Method
 
-{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Loading}} 
-{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Loading}} 
+<snippet id='pdfviewer-pdfgettingstarted-loading-cs' />
+<snippet id='pdfviewer-pdfgettingstarted-loading-vb' />
 
-````C#
-this.radPdfViewer1.LoadDocument(Application.StartupPath + "\\PdfViewer\\Sample.pdf");
 
-````
-````VB.NET
-Me.RadPdfViewer1.LoadDocument(Application.StartupPath & "\PdfViewer\Sample.pdf")
-
-````
-
-{{endregion}}
 
 The calls above will start to load the specified document asynchronously. When the loading finishes, the __DocumentLoaded__ event will fire:
 
 #### DocumentLoaded Event
 
-{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=DocumentLoaded}} 
-{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=DocumentLoaded}} 
+<snippet id='pdfviewer-pdfgettingstarted-documentloaded-cs' />
+<snippet id='pdfviewer-pdfgettingstarted-documentloaded-vb' />
 
-````C#
-void radPdfViewer1_DocumentLoaded(object sender, EventArgs e)
-{
-    RadMessageBox.Show("The document was loaded.");
-}
 
-````
-````VB.NET
-Private Sub radPdfViewer1_DocumentLoaded(sender As Object, e As EventArgs)
-    RadMessageBox.Show("The document was loaded.")
-End Sub
-
-````
-
-{{endregion}}
 
 Respectively, to unload a document, you can use the __UnloadDocument__ method 
 
 #### UnloadDocument Method 
 
-{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Unloading}} 
-{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Unloading}} 
+<snippet id='pdfviewer-pdfgettingstarted-unloading-cs' />
+<snippet id='pdfviewer-pdfgettingstarted-unloading-vb' />
 
-````C#
-this.radPdfViewer1.UnloadDocument();
 
-````
-````VB.NET
-Me.RadPdfViewer1.UnloadDocument()
-
-````
-
-{{endregion}}
 
 To provide to the end-user an additional set of abilities for manipulating the document, you can use __RadPdfViewerNavigator__. To do this, drag it from the toolbox to your form and set its __AssociatedViewer__ from its __SmartTag__ menu. 
 
@@ -136,19 +95,10 @@ To provide to the end-user an additional set of abilities for manipulating the d
 
 You can also set this in your code by using the __AssociatedPdfViewer__ property of the __PdfViewerNavigator__.
 
-{{source=..\SamplesCS\PdfViewer\PdfGettingStarted.cs region=Navigator}} 
-{{source=..\SamplesVB\PdfViewer\PdfGettingStarted.vb region=Navigator}} 
+<snippet id='pdfviewer-pdfgettingstarted-navigator-cs' />
+<snippet id='pdfviewer-pdfgettingstarted-navigator-vb' />
 
-````C#
-this.radPdfViewerNavigator1.AssociatedViewer = this.radPdfViewer1;
 
-````
-````VB.NET
-Me.RadPdfViewerNavigator1.AssociatedViewer = Me.RadPdfViewer1
-
-````
-
-{{endregion}}
 
 ## Assembly References
 

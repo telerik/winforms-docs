@@ -25,39 +25,19 @@ To define how expanded pages are sized, you should set the __ContentSizeMode__ p
 
 #### ExplorerBarContentSizeMode.EqualLength
 
-{{source=..\SamplesCS\PageView\ExplorerBarView.cs region=contentSizeMode}} 
-{{source=..\SamplesVB\PageView\ExplorerBarView.vb region=contentSizeMode}} 
+<snippet id='pageview-explorerbarview-contentsizemode-cs' />
+<snippet id='pageview-explorerbarview-contentsizemode-vb' />
 
-````C#
-RadPageViewExplorerBarElement explorerBarElement = (this.radPageView1.ViewElement as RadPageViewExplorerBarElement);
-explorerBarElement.ContentSizeMode = ExplorerBarContentSizeMode.EqualLength;
 
-````
-````VB.NET
-Dim explorerBarElement As RadPageViewExplorerBarElement = (TryCast(Me.radPageView1.ViewElement, RadPageViewExplorerBarElement))
-explorerBarElement.ContentSizeMode = ExplorerBarContentSizeMode.EqualLength
-
-````
-
-{{endregion}} 
 
 If you choose to use the *FixedLength* size mode and consequently wish to define length to a given page, you can do this the following way: 
 
 #### PageLength
 
-{{source=..\SamplesCS\PageView\ExplorerBarView.cs region=pageLength}} 
-{{source=..\SamplesVB\PageView\ExplorerBarView.vb region=pageLength}} 
+<snippet id='pageview-explorerbarview-pagelength-cs' />
+<snippet id='pageview-explorerbarview-pagelength-vb' />
 
-````C#
-this.radPageViewPage1.PageLength = 430;
 
-````
-````VB.NET
-Me.radPageViewPage1.PageLength = 430
-
-````
-
-{{endregion}}
 
 ## Setting Stack Position
 
@@ -73,19 +53,10 @@ To expand or collapse a page, you should simply click on its item. You can also 
 
 #### Setting the IsContentVisible property
 
-{{source=..\SamplesCS\PageView\ExplorerBarView.cs region=isContentVisible}} 
-{{source=..\SamplesVB\PageView\ExplorerBarView.vb region=isContentVisible}} 
+<snippet id='pageview-explorerbarview-iscontentvisible-cs' />
+<snippet id='pageview-explorerbarview-iscontentvisible-vb' />
 
-````C#
-this.radPageViewPage1.IsContentVisible = true;
 
-````
-````VB.NET
-Me.radPageViewPage1.IsContentVisible = True
-
-````
-
-{{endregion}} 
 
 If you wish to have a page initially expanded, you can set the **IsContentVisible** property in the Visual Studio’s Designer as well.
 
@@ -109,21 +80,10 @@ The PageViewMode.*ExplorerBar* also automatically scrolls to an item when it is 
 
 #### ScrollToItem
 
-{{source=..\SamplesCS\PageView\ExplorerBarView.cs region=scrolling}} 
-{{source=..\SamplesVB\PageView\ExplorerBarView.vb region=scrolling}} 
+<snippet id='pageview-explorerbarview-scrolling-cs' />
+<snippet id='pageview-explorerbarview-scrolling-vb' />
 
-````C#
-RadPageViewExplorerBarItem item = this.radPageViewPage1.Item as RadPageViewExplorerBarItem;
-explorerBarElement.ScrollToItem(item);
 
-````
-````VB.NET
-Dim item As RadPageViewExplorerBarItem = TryCast(Me.radPageViewPage1.Item, RadPageViewExplorerBarItem)
-explorerBarElement.ScrollToItem(item)
-
-````
-
-{{endregion}} 
 
 # See Also
 

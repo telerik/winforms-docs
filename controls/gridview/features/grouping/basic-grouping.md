@@ -36,23 +36,8 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 
 #### Setting grouping properties
 
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=settingGroupingProperties}} 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=settingGroupingProperties}} 
-
-````C#
-this.radGridView1.MasterTemplate.EnableGrouping = true;
-this.radGridView1.MasterTemplate.AllowDragToGroup = false;
-this.radGridView1.MasterTemplate.AutoExpandGroups = true;
-
-````
-````VB.NET
-Me.RadGridView1.MasterTemplate.EnableGrouping = True
-Me.RadGridView1.MasterTemplate.AllowDragToGroup = False
-Me.RadGridView1.MasterTemplate.AutoExpandGroups = True
-
-````
-
-{{endregion}} 
+<snippet id='gridview-grouping-settinggroupingproperties-cs' />
+<snippet id='gridview-grouping-settinggroupingproperties-vb' />
 
 ## GroupPanel
 
@@ -60,37 +45,16 @@ You can hide the __GroupPanel__ using the following code:
 
 #### Hide the group panel
 
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=hideTheGroupPanel}} 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=hideTheGroupPanel}} 
-
-````C#
-this.radGridView1.ShowGroupPanel = false;
-
-````
-````VB.NET
-Me.RadGridView1.ShowGroupPanel = False
-
-````
-
-{{endregion}} 
+<snippet id='gridview-grouping-hidethegrouppanel-cs' />
+<snippet id='gridview-grouping-hidethegrouppanel-vb' />
 
 The __ShowGroupPanelScrollbars__ property indicates whether the group panel will show scroll-bars or it will expand to show all group headers.  
 
 #### Show the group panel scroll-bar
 
-{{source=..\SamplesCS\GridView\Grouping\Grouping.cs region=ShowGroupPanelScrollbars}} 
-{{source=..\SamplesVB\GridView\Grouping\Grouping.vb region=ShowGroupPanelScrollbars}} 
+<snippet id='gridview-grouping-showgrouppanelscrollbars-cs' />
+<snippet id='gridview-grouping-showgrouppanelscrollbars-vb' />
 
-````C#
-this.radGridView1.ShowGroupPanelScrollbars = true;
-
-````
-````VB.NET
-Me.RadGridView1.ShowGroupPanelScrollbars = True
-
-````
-
-{{endregion}} 
 |ShowGroupPanelScrollbars = *false* |ShowGroupPanelScrollbars = *true* |
 | ------ | ------ |
 |![WinForms RadGridView ShowGroupPanelScrollbars False](images/gridview-grouping-basic-grouping002.png)|![WinForms RadGridView ShowGroupPanelScrollbars True](images/gridview-grouping-basic-grouping003.png)|

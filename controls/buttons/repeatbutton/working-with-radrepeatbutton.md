@@ -49,23 +49,8 @@ To programmatically add a __RadRepeatButton__ to a form, create a new instance 
 
 #### Adding a RadButton at runtime 
 
-{{source=..\SamplesCS\Buttons\RepeatButton.cs region=creatingbutton}} 
-{{source=..\SamplesVB\Buttons\RepeatButton.vb region=creatingbutton}} 
-
-````C#
-RadRepeatButton repeatButton = new RadRepeatButton();
-repeatButton.Text = "Increase value";
-this.Controls.Add(repeatButton);
-
-````
-````VB.NET
-Dim repeatButton As New RadRepeatButton()
-repeatButton.Text = "Increase value"
-Me.Controls.Add(repeatButton)
-
-````
-
-{{endregion}} 
+<snippet id='buttons-repeatbutton-working-with-radrepeatbutton-creatingbutton-cs' />
+<snippet id='buttons-repeatbutton-working-with-radrepeatbutton-creatingbutton-vb' />
 
 ### Working with RadRepeatButton
 
@@ -76,35 +61,8 @@ To begin the repeat process, use the __ButtonClick__ event instead of __Click__
 The following code illustrates the use of a __RadRepeatButton__ to manipulate a __ProgressBar__ control. At each interval the __ProgressBar__ value will increment. You do not need to write any additional code to handle the repeating event. As long as the mouse button is pressed down on the __RepeatButton__ control, the code in the __ButtonClick__ event handler will run at each interval. 
 
 
-{{source=..\SamplesCS\Buttons\RepeatButton.cs region=handlingClickEvent}} 
-{{source=..\SamplesVB\Buttons\RepeatButton.vb region=handlingClickEvent}} 
-
-````C#
-void radRepeatButton1_Click(object sender, EventArgs e)
-{
-    if (radProgressBar1.Value1 < radProgressBar1.Maximum)
-    {
-        radProgressBar1.Value1++;
-    }
-    else
-    {
-        radProgressBar1.Value1 = radProgressBar1.Minimum;
-    }
-}
-
-````
-````VB.NET
-Private Sub radRepeatButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    If radProgressBar1.Value1 < radProgressBar1.Maximum Then
-        System.Math.Max(System.Threading.Interlocked.Increment(radProgressBar1.Value1), radProgressBar1.Value1 - 1)
-    Else
-        radProgressBar1.Value1 = radProgressBar1.Minimum
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='buttons-repeatbutton-working-with-radrepeatbutton-handlingclickevent-cs' />
+<snippet id='buttons-repeatbutton-working-with-radrepeatbutton-handlingclickevent-vb' />
 
 ![WinForms RadRepeatButton Overview](images/buttons-repeatbutton-overview001.gif)
 

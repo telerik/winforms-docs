@@ -17,36 +17,10 @@ The following code snipped shows how you can add __FastLineSeries__ to __RadChar
 
 #### Initial Setup
 
-{{source=..\SamplesCS\ChartView\Series\LineSeriesForm.cs region=fast}} 
-{{source=..\SamplesVB\ChartView\Series\LineSeriesForm.vb region=fast}} 
+<snippet id='chartview-fastline-fast-cs'/>
+<snippet id='chartview-fastline-fast-vb'/>
 
-````C#
-Random rnd = new Random();
-FastLineSeries series = new FastLineSeries();
-FastLineSeries series1 = new FastLineSeries();
-for (int i = 0; i < 50; i++)
-{
-    series.DataPoints.Add(new CategoricalDataPoint(rnd.Next(50, 100), i));
-    series1.DataPoints.Add(new CategoricalDataPoint(rnd.Next(50), i));
-}
-radChartView1.Series.Add(series);
-radChartView1.Series.Add(series1);
 
-````
-````VB.NET
-Dim rnd As New Random()
-Dim series As New FastLineSeries()
-Dim series1 As New FastLineSeries()
-For i As Integer = 0 To 49
-    series.DataPoints.Add(New CategoricalDataPoint(rnd.Next(50, 100), i))
-    series1.DataPoints.Add(New CategoricalDataPoint(rnd.Next(50), i))
-Next i
-RadChartView1.Series.Add(series)
-RadChartView1.Series.Add(series1)
-
-````
-
-{{endregion}}
 
 >caption Figure 1: Initial Setup
 

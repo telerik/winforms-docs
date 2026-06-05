@@ -289,8 +289,8 @@ Friend WithEvents timer1 As System.Windows.Forms.Timer
 
 3\. Start the timer to update the remaining time in the UserControl:
 
-{{source=..\SamplesCS\SplashScreens\SplashScreen\RestartRequiredUserControl.cs region=CustomSplash}}
-{{source=..\SamplesVB\SplashScreens\SplashScreen\RestartRequiredUserControl.vb region=CustomSplash}}
+<snippet id='splashscreens-restartrequiredusercontrol-customsplash-cs' />
+<snippet id='splashscreens-restartrequiredusercontrol-customsplash-vb' />
 
 ````C#
 
@@ -336,13 +336,10 @@ End Class
 
 ````
 
-{{endregion}}
-
-
 4\. Show the splash with the custom control from your main form:
 
-{{source=..\SamplesCS\SplashScreens\SplashScreen\SplashScreenSettings.cs region=ShowCustomSplash}}
-{{source=..\SamplesVB\SplashScreens\SplashScreen\SplashScreenSettings.vb region=ShowCustomSplash}}
+<snippet id='splashscreens-splashscreensettings-showcustomsplash-cs' />
+<snippet id='splashscreens-splashscreensettings-showcustomsplash-vb' />
 
 ````C#
 
@@ -354,9 +351,6 @@ RadSplashScreenManager.Show(typeof(RestartRequiredUserControl));
 RadSplashScreenManager.Show(GetType(RestartRequiredUserControl)) 
 
 ````
-
-{{endregion}}
- 
 
 # See Also
 

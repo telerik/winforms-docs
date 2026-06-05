@@ -57,24 +57,10 @@ That's it. You can now filter the grid by using the automatically generated cate
 
 Steps 3-5 can also be performed programmatically:
 
-{{source=..\SamplesCS\FilterView\FilterViewGettingStarted.cs region=GettingStarted}} 
-{{source=..\SamplesVB\FilterView\FilterViewGettingStarted.vb region=GettingStarted}} 
+<snippet id='filter-view-getting-started-gettingstarted-cs' />
+<snippet id='filter-view-getting-started-gettingstarted-vb' />
 
-````C#
 
-this.radGridView1.DataSource = this.productsBindingSource;
-this.radGridView1.EnableFiltering = true;
-this.radFilterView1.AssociatedControl = this.radGridView1;
-
-````
-````VB.NET
-Me.RadGridView1.DataSource = Me.ProductsBindingSource
-Me.RadGridView1.EnableFiltering = True
-Me.RadFilterView1.AssociatedControl = Me.RadGridView1
-
-````
-
-{{endregion}}  
 
  
 # See Also

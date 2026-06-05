@@ -50,43 +50,10 @@ The default list styles come handy, as they require little to no effort on your 
 
 Here as an example of creating a __ListStyle__ and a __DocumentList__ programmatically:
 
-{{source=..\SamplesCS\RichTextEditor\Features\ListStyles.cs region=listStyle}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=listStyle}} 
+<snippet id='richtexteditor-liststyles-liststyle-cs' />
+<snippet id='richtexteditor-liststyles-liststyle-vb' />
 
-````C#
-ListStyle upperRomanHierarchical = new ListStyle();
-upperRomanHierarchical.StyleLink = "Style1";
-for (int i = 0; i < ListStyle.ListLevels; ++i)
-{
-    StringBuilder levelText = new StringBuilder();
-    for (int j = 0; j < i + 1; ++j)
-    {
-        levelText.Append("{" + j + "}.");
-    }
-    upperRomanHierarchical.Levels.Add(new ListLevelStyle()
-    {
-        StartingIndex = 1,
-        NumberingFormat = ListNumberingFormat.UpperRoman,
-        LevelText = levelText.ToString(),
-        Indent = 48 + i * 24
-    });
-}
 
-````
-````VB.NET
-Dim upperRomanHierarchical As New ListStyle()
-upperRomanHierarchical.StyleLink = "Style1"
-For i As Integer = 0 To ListStyle.ListLevels - 1
-    Dim levelText As New StringBuilder()
-    For j As Integer = 0 To i
-        levelText.Append("{" & j & "}.")
-    Next j
-    upperRomanHierarchical.Levels.Add(New ListLevelStyle() With {.StartingIndex = 1, .NumberingFormat = ListNumberingFormat.UpperRoman, .LevelText = levelText.ToString(), .Indent = 48 + i * 24})
-Next i
-
-````
-
-{{endregion}} 
 
 >caution Don't forget to specify the __StyleLink__ property. It is the name of the list and it is mandatory for a ListStyle.
 >
@@ -97,54 +64,24 @@ After creating a __ListStyle__ you need to add it to the document. Besides using
 
 If you want to apply a style to a paragraph using the user interface you would move the caret to the paragraph and click the appropriate **ListStyle** in the gallery. In code behind things are similar. First you need a reference to the paragraph you want to be added to a list. Let's say you need the current paragraph (in which the caret position resides). The code is as follows:
 
-{{source=..\SamplesCS\RichTextEditor\Features\ListStyles.cs region=paragraph}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=paragraph}} 
+<snippet id='richtexteditor-liststyles-paragraph-cs' />
+<snippet id='richtexteditor-liststyles-paragraph-vb' />
 
-````C#
-Paragraph paragraph = this.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph;
 
-````
-````VB.NET
-Dim paragraph As Paragraph = Me.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraphBox().AssociatedParagraph
-
-````
-
-{{endregion}} 
 
 All you have to do now is set the __ListId__ property of the paragraph. However this id should be the ID of a __DocumentList__ that uses the new __ListStyle__. This document list is created automatically when using the user interface, but in code you have to create it on your own.
          
 As the logic of creating a custom list style is rather complex, the method __AddCustomListStyle__ does that and returns an instance of **ListStyle** which is different from the one you passed. When creating the new document list you need to pass the list style returned from this method. So creating a document list look like this:
 
-{{source=..\SamplesCS\RichTextEditor\Features\ListStyles.cs region=newStyle}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=newStyle}} 
+<snippet id='richtexteditor-liststyles-newstyle-cs' />
+<snippet id='richtexteditor-liststyles-newstyle-vb' />
 
-````C#
-ListStyle newListStyle = this.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical);
-DocumentList documentList = new DocumentList(newListStyle, this.radRichTextEditor1.Document);
 
-````
-````VB.NET
-Dim newListStyle As ListStyle = Me.radRichTextEditor1.Document.AddCustomListStyle(upperRomanHierarchical)
-Dim documentList As New DocumentList(newListStyle, Me.radRichTextEditor1.Document)
 
-```` 
-{{endregion}} 
- 
 Having the new __DocumentList__ all you have to do in order the paragraph to be added to the list is to set it's __ListId__ property to the ID of the new __DocumentList__:
  
-{{source=..\SamplesCS\RichTextEditor\Features\ListStyles.cs region=assing}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ListStyles.vb region=assing}} 
-
-````C#
-paragraph.ListId = documentList.ID;
-
-````
-````VB.NET
-paragraph.ListId = documentList.ID
-
-````
-
-{{endregion}} 
+<snippet id='richtexteditor-liststyles-assing-cs' />
+<snippet id='richtexteditor-liststyles-assing-vb' />
 
 
 

@@ -22,38 +22,9 @@ The RadNotifyIcon exposes the following properties for controlling the look of t
 <!-- -->
 >tip Use an .ico file with bigger dimensions (Width/Height) as Windows can scale it down, however it will not be scaled up, if it is less than the default size. 
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=Balloon}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=Balloon}}
-````C#
+<snippet id='notifyicon-features-balloon-cs' />
+<snippet id='notifyicon-features-balloon-vb' />
 
-void ShowBallonNotification()
-{
-    RadNotifyIcon radNotifyIcon = new RadNotifyIcon();
-    radNotifyIcon.TrayIcon = new System.Drawing.Icon("../../WinForms128x28.ico");
-    radNotifyIcon.BalloonIcon = new System.Drawing.Icon("../../WinForms128x28.ico");
-    radNotifyIcon.ShowTrayIcon = true;
-    radNotifyIcon.BalloonText = "Balloon Text";
-    radNotifyIcon.BalloonTitle = "Balloon Title";
-    radNotifyIcon.ShowBalloonTip();
-}
-
-````
-````VB.NET
-
-Private Sub ShowBallonNotification()
-    Dim radNotifyIcon As RadNotifyIcon = New RadNotifyIcon()
-    radNotifyIcon.TrayIcon = New System.Drawing.Icon("../../WinForms128x28.ico")
-    radNotifyIcon.BalloonIcon = New System.Drawing.Icon("../../WinForms128x28.ico")
-    radNotifyIcon.ShowTrayIcon = True
-    radNotifyIcon.BalloonText = "Balloon Text"
-    radNotifyIcon.BalloonTitle = "Balloon Title"
-    radNotifyIcon.ShowBalloonTip()
-End Sub
-
-
-```` 
-
-{{endregion}}
 
 
 #### __Figure 1: Balloon Notification__
@@ -68,21 +39,10 @@ Here are the overloads exposed by the ShowBallonTip method:
 
 * **void ShowBalloonTip(string title, string text, BalloonTipIcon icon, bool doNotPlaySound = false, int timeout = 10)**: This overload allows for passing a title, text and choosing an icon from the set of standardized icons. Optionally you can specify whether sound should be played and the amount of seconds to wait before the balloon auto hides (The system minimum and maximum are 10 and 30 seconds). 
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=BalloonWarning}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=BalloonWarning}}
-````C#
-
-this.radNotifyIcon.ShowBalloonTip("Warning", "Emergency", BalloonTipIcon.Warning, false, 15);
-
-````
-````VB.NET
-
-Me.radNotifyIcon.ShowBalloonTip("Warning", "Emergency", BalloonTipIcon.Warning, False, 15)
+<snippet id='notifyicon-features-balloonwarning-cs' />
+<snippet id='notifyicon-features-balloonwarning-vb' />
 
 
-```` 
-
-{{endregion}}
 
 #### __Figure 2: Warning Notification__
 
@@ -90,44 +50,17 @@ Me.radNotifyIcon.ShowBalloonTip("Warning", "Emergency", BalloonTipIcon.Warning, 
 
 * **void ShowBalloonTip(string title, string text, System.Drawing.Icon icon, bool doNotPlaySound = false, int timeout = 10)**: This overload allows for passing a title, text and a __System.Drawing.Icon__ instance. Optionally you can specify whether sound should be played and the amount of seconds to wait before the balloon auto hides (The system minimum and maximum are 10 and 30 seconds). 
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=BalloonCustomIcon}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=BalloonCustomIcon}}
-````C#
-
-var icon = new System.Drawing.Icon("../../WinForms128x28.ico");
-this.radNotifyIcon.ShowBalloonTip("Balloon Title", "Balloon Text", icon, false, 15);
+<snippet id='notifyicon-features-ballooncustomicon-cs' />
+<snippet id='notifyicon-features-ballooncustomicon-vb' />
 
 
-````
-````VB.NET
-
-Dim icon = New System.Drawing.Icon("../../WinForms128x28.ico")
-Me.radNotifyIcon.ShowBalloonTip("Balloon Title", "Balloon Text", icon, False, 15)
-
-
-```` 
-
-{{endregion}}
 
 ## Hide the Notification
 
 You can manually hide the notification by invoking the __HideBalloonTip__ method.
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=HideBallon}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=HideBallon}}
-````C#
-
-this.radNotifyIcon.HideBalloonTip();
-
-````
-````VB.NET
-
-Me.radNotifyIcon.HideBalloonTip()
-
-
-```` 
-
-{{endregion}}
+<snippet id='notifyicon-features-hideballon-cs' />
+<snippet id='notifyicon-features-hideballon-vb' />
 
 
 

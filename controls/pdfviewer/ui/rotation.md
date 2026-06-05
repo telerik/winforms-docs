@@ -22,18 +22,9 @@ __RotationAngle__ is an enumeration that specifies the angle at which the docume
 
 #### RotationAngle
 
-{{source=..\SamplesCS\PdfViewer\PdfUI.cs region=Rotate}} 
-{{source=..\SamplesVB\PdfViewer\PdfUI.vb region=Rotate}} 
+<snippet id='pdfviewer-pdfui-rotate-cs' />
+<snippet id='pdfviewer-pdfui-rotate-vb' />
 
-````C#
-this.radPdfViewer1.Rotate(Telerik.WinControls.UI.RotationAngle.Degrees90);
 
-````
-````VB.NET
-Me.RadPdfViewer1.Rotate(RotationAngle.Degrees90)
-
-````
-
-{{endregion}}
 
 The current angle at which the pages are rotated can be retrieved using the read-only **RotationAngle** property of **RadPdfViewer**.

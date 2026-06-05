@@ -42,27 +42,10 @@ The overloads of the __AppendDocument()__ method allow you to pass a parameter o
 #### **Example 1: Using the AppendDocument() method**
 
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=cs-radrichtextbox-features-merge-append-documents_1}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=cs-radrichtextbox-features-merge-append-documents_1}} 
+<snippet id='richtexteditor-main-cs-radrichtextbox-features-merge-append-documents_1-cs' />
+<snippet id='richtexteditor-main-cs-radrichtextbox-features-merge-append-documents_1-vb' />
 
-````C#
-Telerik.WinForms.Documents.Model.Merging.RadDocumentMerger documentMerger = new RadDocumentMerger(targetDocument);
-Telerik.WinForms.Documents.Model.Merging.AppendDocumentOptions options = new AppendDocumentOptions();
-options.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle;
-options.FirstSourceSectionPropertiesResolutionMode = SectionPropertiesResolutionMode.Target;
-documentMerger.AppendDocument(sourceDocument, options);
 
-````
-````VB.NET
-Dim documentMerger As Telerik.WinForms.Documents.Model.Merging.RadDocumentMerger = New RadDocumentMerger(targetDocument)
-Dim options As Telerik.WinForms.Documents.Model.Merging.AppendDocumentOptions = New AppendDocumentOptions()
-options.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle
-options.FirstSourceSectionPropertiesResolutionMode = SectionPropertiesResolutionMode.Target
-documentMerger.AppendDocument(sourceDocument, options)
-
-````
-
-{{endregion}} 
 
 There is another overload of **AppendDocument()** that takes only a **RadDocument** instance. When you use this overload, the default values of **AppendDocumentOptions** are used when merging documents.  
 

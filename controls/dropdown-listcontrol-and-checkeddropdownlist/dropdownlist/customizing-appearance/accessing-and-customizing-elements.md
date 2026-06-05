@@ -32,21 +32,9 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=CustomizeElements}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=CustomizeElements}} 
+<snippet id='dropdownlist-accessing-and-customizing-elements-customizeelements-cs' />
+<snippet id='dropdownlist-accessing-and-customizing-elements-customizeelements-vb' />
 
-````C#
-            
-this.radDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua;
-this.radDropDownList1.DropDownListElement.EditableElement.ForeColor = Color.Red;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownListElement.ArrowButton.Fill.BackColor = Color.Aqua
-Me.radDropDownList1.DropDownListElement.EditableElement.ForeColor = Color.Red
 
-````
-
-{{endregion}} 
- 
 In order to style the pop-up items it is suitable to use the [VisualItemFormatting]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/formatting-items%}) event.

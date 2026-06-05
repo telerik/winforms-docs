@@ -66,24 +66,10 @@ The following UserControl contains:
 
 #### Showing the RadCallout
 
-{{source=..\SamplesCS\Callout\CalloutSettings.cs region=ShowCallout}} 
-{{source=..\SamplesVB\Callout\CalloutSettings.vb region=ShowCallout}} 
+<snippet id='callout-getting-started-showcallout-cs' />
+<snippet id='callout-getting-started-showcallout-vb' />
 
-````C#
-private void radButton1_Click(object sender, EventArgs e)
-{
-    this.radCallout1.Show(this.radButton1);
-}
 
-````
-````VB.NET
-Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
-    Me.RadCallout1.Show(Me.RadButton1)
-End Sub
-
-````
-
-{{endregion}} 
 
 6\. Run the project and click the button. Once the callout is shown, it will be automatically hidden if you click outside the callout's bounds. 
 
@@ -91,45 +77,11 @@ End Sub
 
 #### Closing the RadCallout
 
-{{source=..\SamplesCS\Callout\CalloutSettings.cs region=CloseCallout}} 
-{{source=..\SamplesVB\Callout\CalloutSettings.vb region=CloseCallout}} 
-
-````C#
-public CalloutSettings()
-{
-    InitializeComponent();
-     
-    RadButton closeButton = calloutUserControl1.Controls["headerPanel"].Controls["closeButton"] as RadButton;
-    closeButton.Click += CloseButton_Click;
-}
-
-private void CloseButton_Click(object sender, EventArgs e)
-{
-    if (this.radCallout1.CalloutForm.Visible)
-    {
-        this.radCallout1.Close();
-    }
-}
+<snippet id='callout-getting-started-closecallout-cs' />
+<snippet id='callout-getting-started-closecallout-vb' />
 
 
-````
-````VB.NET
-Public Sub New()
-    InitializeComponent()
-    Dim closeButton As RadButton = TryCast(CalloutUserControl1.Controls("headerPanel").Controls("closeButton"), RadButton)
-    AddHandler closeButton.Click, AddressOf CloseButton_Click
-End Sub
 
-Private Sub CloseButton_Click(ByVal sender As Object, ByVal e As EventArgs)
-    If Me.RadCallout1.CalloutForm.Visible Then
-        Me.RadCallout1.Close()
-    End If
-End Sub
-
-
-````
-
-{{endregion}} 
  
 
 # See Also

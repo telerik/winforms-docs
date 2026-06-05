@@ -26,28 +26,10 @@ Legend items can be added by accessing the __Children__ collection of the legend
 
 #### Customizing Appearance
 
-{{source=..\SamplesCS\Map\MapLayers.cs region=SetLegends}} 
-{{source=..\SamplesVB\Map\MapLayers.vb region=SetLegends}}
-````C#
-this.radMap1.MapElement.LegendElement.TitleElement.Text = "NBA";
-this.radMap1.MapElement.LegendElement.SubtitleElement.Text = "Conferences";
-this.radMap1.MapElement.LegendElement.Orientation = Orientation.Horizontal;
-this.radMap1.MapElement.LegendElement.ItemStackElement.Children.Add(new MapLegendItemElement("Western", Color.Red));
-this.radMap1.MapElement.LegendElement.ItemStackElement.Children.Add(new MapLegendItemElement("Eastern", Color.Blue));
-
-````
-````VB.NET
-Me.RadMap1.MapElement.LegendElement.TitleElement.Text = "NBA"
-Me.RadMap1.MapElement.LegendElement.SubtitleElement.Text = "Conferences"
-Me.RadMap1.MapElement.LegendElement.Orientation = Orientation.Horizontal
-Me.RadMap1.MapElement.LegendElement.ItemStackElement.Children.Add(New MapLegendItemElement("Western", Color.Red))
-Me.RadMap1.MapElement.LegendElement.ItemStackElement.Children.Add(New MapLegendItemElement("Eastern", Color.Blue))
-
-````
+<snippet id='map-maplayers-setlegends-cs' />
+<snippet id='map-maplayers-setlegends-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 

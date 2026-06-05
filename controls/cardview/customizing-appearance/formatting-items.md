@@ -23,53 +23,10 @@ The appearance of the visual items can be fully customized by handling the __Car
 
 #### Formatting the Visual Item
 
-{{source=..\SamplesCS\CardView\CardviewCustomizingAppearance.cs region=CardViewVisualItemFormatting}} 
-{{source=..\SamplesVB\CardView\CardviewCustomizingAppearance.vb region=CardViewVisualItemFormatting}} 
+<snippet id='cardview-customizing-appearance-formatting-items-cardviewvisualitemformatting-cs'/>
+<snippet id='cardview-customizing-appearance-formatting-items-cardviewvisualitemformatting-vb'/>
 
-````C#
-Font font = new Font("Consolas", 14, FontStyle.Bold);
-private void radCardView1_CardViewItemFormatting(object sender, CardViewItemFormattingEventArgs e)
-{
-    if (e.VisualItem.Selected)
-    {
-        e.VisualItem.NumberOfColors = 1;
-        e.VisualItem.BackColor = Color.LightGreen;
-        e.VisualItem.ForeColor = Color.Coral;
-        e.VisualItem.BorderColor = Color.LightBlue;
-        e.VisualItem.Font = font;
-    }
-    else
-    {
-        e.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.VisualItem.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local);
-    }
-}
 
-````
-````VB.NET
-Private font As New Font("Consolas", 14, FontStyle.Bold)
-Private Sub RadCardView1_CardViewItemFormatting(sender As Object, e As CardViewItemFormattingEventArgs)
-    If e.VisualItem.Selected Then
-        e.VisualItem.NumberOfColors = 1
-        e.VisualItem.BackColor = Color.LightGreen
-        e.VisualItem.ForeColor = Color.Coral
-        e.VisualItem.BorderColor = Color.LightBlue
-        e.VisualItem.Font = font
-    Else
-        e.VisualItem.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.VisualItem.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.VisualItem.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.VisualItem.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.VisualItem.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 ## Formatting CardViewItiem
 
@@ -80,49 +37,10 @@ By handling the __CardViewItemFormatting__ event each of the individual card vie
 
 #### Formatting CardViewItiem
 
-{{source=..\SamplesCS\CardView\CardviewCustomizingAppearance.cs region=CardViewItemFormatting}} 
-{{source=..\SamplesVB\CardView\CardviewCustomizingAppearance.vb region=CardViewItemFormatting}}  
+<snippet id='cardview-customizing-appearance-formatting-items-cardviewitemformatting-cs'/>
+<snippet id='cardview-customizing-appearance-formatting-items-cardviewitemformatting-vb'/>
 
-````C#
-private void radCardView1_CardViewItemFormatting1(object sender, CardViewItemFormattingEventArgs e)
-{
-    CardViewItem item = e.Item as CardViewItem;
-    if (item != null && item.FieldName == "CustomerID")
-    {
-        e.Item.NumberOfColors = 1;
-        e.Item.ForeColor = Color.Coral;
-        e.Item.BorderColor = Color.LightBlue;
-        e.Item.Font = font;
-    }
-    else
-    {
-        e.Item.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.Item.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.Item.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.Item.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local);
-    }
-}
 
-````
-````VB.NET
-Private Sub RadCardView1_CardViewItemFormatting1(sender As Object, e As CardViewItemFormattingEventArgs)
-    Dim item As CardViewItem = TryCast(e.Item, CardViewItem)
-    If item IsNot Nothing AndAlso item.FieldName = "CustomerID" Then
-        e.Item.NumberOfColors = 1
-        e.Item.ForeColor = Color.Coral
-        e.Item.BorderColor = Color.LightBlue
-        e.Item.Font = font
-    Else
-        e.Item.ResetValue(LightVisualElement.NumberOfColorsProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.Item.ResetValue(LightVisualElement.ForeColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.Item.ResetValue(LightVisualElement.BorderColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.Item.ResetValue(LightVisualElement.FontProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 ## See Also
 

@@ -53,88 +53,19 @@ Inheriting from __IPdfFilter__ will result in the following:
 
 #### Creating Custom Filter
 
-{{source=..\SamplesCS\PdfViewer\PdfDecoder.cs region=CustomFilter}} 
-{{source=..\SamplesVB\PdfViewer\PdfDecoder.vb region=CustomFilter}} 
+<snippet id='pdfviewer-pdfdecoder-customfilter-cs' />
+<snippet id='pdfviewer-pdfdecoder-customfilter-vb' />
 
-````C#
-        
-public class CustomFilter : Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters.IPdfFilter
-{
-    public byte[] Encode(PdfObject encodedObject, byte[] inputData)
-    {
-        throw new NotImplementedException();
-    }
-    
-    public byte[] Decode(PdfObject decodedObject, byte[] inputData, DecodeParameters decodeParameters)
-    {
-        throw new NotImplementedException();
-    }
-    
-    public string Name
-    {
-        get
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
 
-````
-````VB.NET
-Public Class CustomFilter
-    Implements Telerik.Windows.Documents.Fixed.FormatProviders.Pdf.Filters.IPdfFilter
-    Public Function Encode(encodedObject As PdfObject, inputData As Byte()) As Byte() Implements IPdfFilter.Encode
-        ' TODO: Implement this method
-        Throw New NotImplementedException()
-    End Function
-    Public Function Decode(decodedObject As PdfObject, inputData As Byte(), _
-                           decodeParameters As DecodeParameters) As Byte() Implements IPdfFilter.Decode
-        ' TODO: Implement this method
-        Throw New NotImplementedException()
-    End Function
-    Public ReadOnly Property Name() As String Implements IPdfFilter.Name
-        Get
-            ' TODO: Implement this property getter
-            Throw New NotImplementedException()
-        End Get
-    End Property
-End Class
-
-````
-
-{{endregion}}
 
 You should also register the filter as follows:
 
 #### Registering Filters
 
-{{source=..\SamplesCS\PdfViewer\PdfDecoder.cs region=RegisterFilter}} 
-{{source=..\SamplesVB\PdfViewer\PdfDecoder.vb region=RegisterFilter}} 
+<snippet id='pdfviewer-pdfdecoder-registerfilter-cs' />
+<snippet id='pdfviewer-pdfdecoder-registerfilter-vb' />
 
-````C#
-        
-private CustomFilter _filter;
-        
-public PdfDecoder()
-{
-    InitializeComponent();
-    
-    _filter = new CustomFilter();
-    FiltersManager.RegisterFilter(_filter );
-}
 
-````
-````VB.NET
-Private _filter As CustomFilter
-Public Sub New()
-    InitializeComponent()
-    _filter = New CustomFilter()
-    FiltersManager.RegisterFilter(_filter)
-End Sub
-
-````
-
-{{endregion}}
 
 The result that a custom filter should return depends on the type of the filter. For the binary filters it is enough to decode the byte array into decoded byte array using the respective algorithm. As for the filters listed below, additional transformation is required.
 

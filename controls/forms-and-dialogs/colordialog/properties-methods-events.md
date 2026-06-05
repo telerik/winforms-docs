@@ -45,35 +45,10 @@ You can find below how to enlist all custom colors in __RadColorDialog__:
 
 #### Enlist the current custom colors in RadColorDialog 
 
-{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=enlistTheCustomColors}} 
-{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=enlistTheCustomColors}} 
+<snippet id='colordialog-colordialog1-enlistthecustomcolors-cs' />
+<snippet id='colordialog-colordialog1-enlistthecustomcolors-vb' />
 
-````C#
-private void radButton1_Click(object sender, EventArgs e)
-{
-    StringBuilder sb = new StringBuilder();
-    foreach (Color color in radColorDialog1.CustomColors)
-    {
-        sb.Append(color.ToString());
-        sb.Append(System.Environment.NewLine);
-    }
-    MessageBox.Show(sb.ToString());
-}
-
-````
-````VB.NET
-Private Sub RadButton1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadButton1.Click
-    Dim sb As New StringBuilder()
-    For Each color As Color In RadColorDialog1.CustomColors
-        sb.Append(color.ToString())
-        sb.Append(System.Environment.NewLine)
-    Next
-    MessageBox.Show(sb.ToString())
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 # Methods
 

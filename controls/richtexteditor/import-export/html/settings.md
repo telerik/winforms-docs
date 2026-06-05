@@ -48,74 +48,10 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 * __Title__: A property of type __string__ that allows you to set a Title to the generated HTML file. 
 
 #### Exclude Properties
-{{source=..\SamplesCS\RichTextEditor\ImportExport\HtmlFormatProviderForm.cs region=ExcludeProperties}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\HtmlFormatProviderForm.vb region=ExcludeProperties}}
-````C#
-HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
-htmlExportSettings.PropertiesToIgnore["span"].Add("color");
-htmlExportSettings.PropertiesToIgnore["span"].Add("text-decoration");
-htmlExportSettings.PropertiesToIgnore["span"].Add("font-weight");
-htmlExportSettings.PropertiesToIgnore["span"].Add("font-style");
-htmlExportSettings.PropertiesToIgnore["span"].Add("font-family");
-htmlExportSettings.PropertiesToIgnore["span"].Add("font-size");
-htmlExportSettings.PropertiesToIgnore["span"].Add("dir");
-htmlExportSettings.PropertiesToIgnore["p"].Add("margin-top");
-htmlExportSettings.PropertiesToIgnore["p"].Add("margin-bottom");
-htmlExportSettings.PropertiesToIgnore["p"].Add("margin-left");
-htmlExportSettings.PropertiesToIgnore["p"].Add("margin-right");
-htmlExportSettings.PropertiesToIgnore["p"].Add("line-height");
-htmlExportSettings.PropertiesToIgnore["p"].Add("text-indent");
-htmlExportSettings.PropertiesToIgnore["p"].Add("text-align");
-htmlExportSettings.PropertiesToIgnore["p"].Add("direction");
-htmlExportSettings.PropertiesToIgnore["table"].Add("border-top");
-htmlExportSettings.PropertiesToIgnore["table"].Add("border-bottom");
-htmlExportSettings.PropertiesToIgnore["table"].Add("border-left");
-htmlExportSettings.PropertiesToIgnore["table"].Add("border-right");
-htmlExportSettings.PropertiesToIgnore["table"].Add("table-layout");
-htmlExportSettings.PropertiesToIgnore["table"].Add("margin-left");
-htmlExportSettings.PropertiesToIgnore["table"].Add("border-spacing");
-htmlExportSettings.PropertiesToIgnore["td"].Add("border-top");
-htmlExportSettings.PropertiesToIgnore["td"].Add("border-bottom");
-htmlExportSettings.PropertiesToIgnore["td"].Add("border-left");
-htmlExportSettings.PropertiesToIgnore["td"].Add("border-right");
-htmlExportSettings.PropertiesToIgnore["td"].Add("padding");
-htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
+<snippet id='richtexteditor-htmlformatproviderform-excludeproperties-cs' />
+<snippet id='richtexteditor-htmlformatproviderform-excludeproperties-vb' />
 
-````
-````VB.NET
-Dim htmlExportSettings As HtmlExportSettings = New HtmlExportSettings()
-htmlExportSettings.PropertiesToIgnore("span").Add("color")
-htmlExportSettings.PropertiesToIgnore("span").Add("text-decoration")
-htmlExportSettings.PropertiesToIgnore("span").Add("font-weight")
-htmlExportSettings.PropertiesToIgnore("span").Add("font-style")
-htmlExportSettings.PropertiesToIgnore("span").Add("font-family")
-htmlExportSettings.PropertiesToIgnore("span").Add("font-size")
-htmlExportSettings.PropertiesToIgnore("span").Add("dir")
-htmlExportSettings.PropertiesToIgnore("p").Add("margin-top")
-htmlExportSettings.PropertiesToIgnore("p").Add("margin-bottom")
-htmlExportSettings.PropertiesToIgnore("p").Add("margin-left")
-htmlExportSettings.PropertiesToIgnore("p").Add("margin-right")
-htmlExportSettings.PropertiesToIgnore("p").Add("line-height")
-htmlExportSettings.PropertiesToIgnore("p").Add("text-indent")
-htmlExportSettings.PropertiesToIgnore("p").Add("text-align")
-htmlExportSettings.PropertiesToIgnore("p").Add("direction")
-htmlExportSettings.PropertiesToIgnore("table").Add("border-top")
-htmlExportSettings.PropertiesToIgnore("table").Add("border-bottom")
-htmlExportSettings.PropertiesToIgnore("table").Add("border-left")
-htmlExportSettings.PropertiesToIgnore("table").Add("border-right")
-htmlExportSettings.PropertiesToIgnore("table").Add("table-layout")
-htmlExportSettings.PropertiesToIgnore("table").Add("margin-left")
-htmlExportSettings.PropertiesToIgnore("table").Add("border-spacing")
-htmlExportSettings.PropertiesToIgnore("td").Add("border-top")
-htmlExportSettings.PropertiesToIgnore("td").Add("border-bottom")
-htmlExportSettings.PropertiesToIgnore("td").Add("border-left")
-htmlExportSettings.PropertiesToIgnore("td").Add("border-right")
-htmlExportSettings.PropertiesToIgnore("td").Add("padding")
-htmlExportSettings.PropertiesToIgnore("td").Add("vertical-align")
 
-````
-
-{{endregion}}
 
 ### Telerik Reporting
 
@@ -132,26 +68,10 @@ In order to achieve best compatibility of the generated HTML with __Telerik Repo
 * __InlineUIContainerExporting__: This event is fired on every attempt to export an __InlineUIContainer__. For more information, please refer to the article about InlineUIContainers.
 		
 #### ExportSettings of the HtmlFormatProvider
-{{source=..\SamplesCS\RichTextEditor\ImportExport\HtmlFormatProviderForm.cs region=HtmlExportSettings}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\HtmlFormatProviderForm.vb region=HtmlExportSettings}}
-````C#
-HtmlExportSettings htmlExportSettings = new HtmlExportSettings();
-htmlExportSettings.ExportBoldAsStrong = true;
-htmlExportSettings.SpanExportMode = SpanExportMode.AlwaysExport;
-HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
-htmlFormatProvider.ExportSettings = htmlExportSettings;
+<snippet id='richtexteditor-htmlformatproviderform-htmlexportsettings-cs' />
+<snippet id='richtexteditor-htmlformatproviderform-htmlexportsettings-vb' />
 
-````
-````VB.NET
-Dim htmlExportSettings As HtmlExportSettings = New HtmlExportSettings()
-htmlExportSettings.ExportBoldAsStrong = True
-htmlExportSettings.SpanExportMode = SpanExportMode.AlwaysExport
-Dim htmlFormatProvider As HtmlFormatProvider = New HtmlFormatProvider()
-htmlFormatProvider.ExportSettings = htmlExportSettings
 
-````
-
-{{endregion}}
 
 ## Import Settings
 
@@ -171,24 +91,10 @@ __HtmlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 * __LoadImageFromUrl__: This event was introduced at a time when __HtmlFormatProvider__ did not automatically load images from URLs. The feature is currently supported out of the box, but this event can be useful if using virtual directories and files on the server.
 
 #### ImportSettings of the HtmlFormatProvider
-{{source=..\SamplesCS\RichTextEditor\ImportExport\HtmlFormatProviderForm.cs region=HtmlImportSettings}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\HtmlFormatProviderForm.vb region=HtmlImportSettings}}
-````C#
-HtmlImportSettings htmlImportSettings = new HtmlImportSettings();
-htmlImportSettings.UseDefaultStylesheetForFontProperties = true;
-HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
-htmlFormatProvider.ImportSettings = htmlImportSettings;
+<snippet id='richtexteditor-htmlformatproviderform-htmlimportsettings-cs' />
+<snippet id='richtexteditor-htmlformatproviderform-htmlimportsettings-vb' />
 
-````
-````VB.NET
-Dim htmlImportSettings As HtmlImportSettings = New HtmlImportSettings()
-htmlImportSettings.UseDefaultStylesheetForFontProperties = True
-Dim htmlFormatProvider As HtmlFormatProvider = New HtmlFormatProvider()
-htmlFormatProvider.ImportSettings = htmlImportSettings
 
-````
-
-{{endregion}}
 
 ## See Also
 

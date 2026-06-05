@@ -30,33 +30,10 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=AccessingCustomizingElements}} 
+<snippet id='track-and-status-controls-customizingradwaitingbar-accessingcustomizingelements-cs' />
+<snippet id='track-and-status-controls-customizingradwaitingbar-accessingcustomizingelements-vb' />
 
-````C#
-this.radWaitingBar1.WaitingIndicators[0].BackColor = Color.Aqua;
-this.radWaitingBar1.WaitingIndicators[0].Text = "Aqua";
-this.radWaitingBar1.WaitingIndicators[1].BackColor = Color.Red;
-this.radWaitingBar1.WaitingIndicators[1].Text = "Red";
-this.radWaitingBar1.WaitingBarElement.ContentElement.BorderColor = Color.Black;
-this.radWaitingBar1.WaitingBarElement.ContentElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid;
-this.radWaitingBar1.WaitingBarElement.ContentElement.DrawBorder = true;
-this.radWaitingBar1.BackColor = Color.Yellow;
 
-````
-````VB.NET
-Me.RadWaitingBar1.WaitingIndicators(0).BackColor = Color.Aqua
-Me.RadWaitingBar1.WaitingIndicators(0).Text = "Aqua"
-Me.RadWaitingBar1.WaitingIndicators(1).BackColor = Color.Red
-Me.RadWaitingBar1.WaitingIndicators(1).Text = "Red"
-Me.RadWaitingBar1.WaitingBarElement.ContentElement.BorderColor = Color.Black
-Me.RadWaitingBar1.WaitingBarElement.ContentElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
-Me.RadWaitingBar1.WaitingBarElement.ContentElement.DrawBorder = True
-Me.RadWaitingBar1.BackColor = Color.Yellow
-
-````
-
-{{endregion}} 
 
 ## Customizing RadWaitingBar
 
@@ -70,25 +47,10 @@ The text of __RadWaitingBar__ is not displayed by default. To show the text, set
 
 #### Customize the text of RadWaitingBar
 
-{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=text}} 
-{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=text}} 
+<snippet id='track-and-status-controls-customizingradwaitingbar-text-cs' />
+<snippet id='track-and-status-controls-customizingradwaitingbar-text-vb' />
 
-````C#
-this.radWaitingBar1.ShowText = true;
-this.radWaitingBar1.Text = "Waiting...";
-this.radWaitingBar1.WaitingBarElement.TextElement.AngleTransform = 180;
-this.radWaitingBar1.WaitingBarElement.TextElement.TextAlignment = ContentAlignment.MiddleLeft;
 
-````
-````VB.NET
-Me.RadWaitingBar1.ShowText = True
-Me.RadWaitingBar1.Text = "Waiting..."
-Me.RadWaitingBar1.WaitingBarElement.TextElement.AngleTransform = 180
-Me.RadWaitingBar1.WaitingBarElement.TextElement.TextAlignment = ContentAlignment.MiddleLeft
-
-````
-
-{{endregion}} 
 
 ![WinForms RadWaitingBar Customize the text of RadWaitingBar](images/track-and-status-controls-waitingbar-customizing-radwaitingbar001.gif)
 
@@ -98,35 +60,10 @@ To set the __RadWaitingBar__ in dash style, set the __WaitingStyle__ property to
 
 #### Customize RadWaitingBar’s Dash style 
 
-{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=dash}} 
-{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=dash}} 
+<snippet id='track-and-status-controls-customizingradwaitingbar-dash-cs' />
+<snippet id='track-and-status-controls-customizingradwaitingbar-dash-vb' />
 
-````C#
-this.radWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash;
-WaitingBarSeparatorElement dash = this.radWaitingBar1.WaitingBarElement.SeparatorElement;
-dash.NumberOfColors = 2;
-dash.BackColor = Color.Orange;
-dash.BackColor2 = Color.Yellow;
-dash.SweepAngle = 45;
-dash.StepWidth = 15;
-dash.SeparatorWidth = 10;
-dash.GradientPercentage = 0.25f;
 
-````
-````VB.NET
-Me.RadWaitingBar1.WaitingStyle = Telerik.WinControls.Enumerations.WaitingBarStyles.Dash
-Dim dash As WaitingBarSeparatorElement = Me.RadWaitingBar1.WaitingBarElement.SeparatorElement
-dash.NumberOfColors = 2
-dash.BackColor = Color.Orange
-dash.BackColor2 = Color.Yellow
-dash.SweepAngle = 45
-dash.StepWidth = 15
-dash.SeparatorWidth = 10
-dash.GradientPercentage = 0.25F
-
-````
-
-{{endregion}} 
 
 ![WinForms RadWaitingBar Customize RadWaitingBar’s Dash style](images/track-and-status-controls-waitingbar-customizing-radwaitingbar002.gif)
 
@@ -136,61 +73,10 @@ The waiting indicators also support dash style. To customize the appearance of t
 
 #### Waiting indicators' Dash style
 
-{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=waitingIndicators}} 
-{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=waitingIndicators}} 
+<snippet id='track-and-status-controls-customizingradwaitingbar-waitingindicators-cs' />
+<snippet id='track-and-status-controls-customizingradwaitingbar-waitingindicators-vb' />
 
-````C#
-this.radWaitingBar1.WaitingBarElement.WaitingIndicators[0].BackColor = Color.LightGreen;
-this.radWaitingBar1.WaitingBarElement.WaitingIndicators[0].NumberOfColors = 1;
-this.radWaitingBar1.WaitingBarElement.WaitingIndicators[1].BackColor = Color.LightGreen;
-this.radWaitingBar1.WaitingBarElement.WaitingIndicators[1].NumberOfColors = 1;
-WaitingBarSeparatorElement separator = ((WaitingBarIndicatorElement)this.radWaitingBar1.WaitingBarElement.WaitingIndicators[0]).SeparatorElement;
-WaitingBarSeparatorElement helpSeparator = ((WaitingBarIndicatorElement)this.radWaitingBar1.WaitingBarElement.WaitingIndicators[1]).SeparatorElement;
-separator.Dash = true;
-helpSeparator.Dash = true;
-separator.NumberOfColors = 2;
-separator.BackColor = Color.Orange;
-separator.BackColor2 = Color.Yellow;
-separator.SweepAngle = 45;
-separator.StepWidth = 15;
-separator.SeparatorWidth = 10;
-separator.GradientPercentage = 0.25f;
-helpSeparator.NumberOfColors = 2;
-helpSeparator.BackColor = Color.Orange;
-helpSeparator.BackColor2 = Color.Yellow;
-helpSeparator.SweepAngle = 45;
-helpSeparator.StepWidth = 15;
-helpSeparator.SeparatorWidth = 10;
-helpSeparator.GradientPercentage = 0.25f;
 
-````
-````VB.NET
-Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(0).BackColor = Color.LightGreen
-Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(0).NumberOfColors = 1
-Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1).BackColor = Color.LightGreen
-Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1).NumberOfColors = 1
-Dim separator As WaitingBarSeparatorElement = DirectCast(Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(0), WaitingBarIndicatorElement).SeparatorElement
-Dim helpSeparator As WaitingBarSeparatorElement = DirectCast(Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1), WaitingBarIndicatorElement).SeparatorElement
-separator.Dash = True
-helpSeparator.Dash = True
-separator.NumberOfColors = 2
-separator.BackColor = Color.Orange
-separator.BackColor2 = Color.Yellow
-separator.SweepAngle = 45
-separator.StepWidth = 15
-separator.SeparatorWidth = 10
-separator.GradientPercentage = 0.25F
-helpSeparator.NumberOfColors = 2
-helpSeparator.BackColor = Color.Orange
-helpSeparator.BackColor2 = Color.Yellow
-helpSeparator.SweepAngle = 45
-helpSeparator.StepWidth = 15
-helpSeparator.SeparatorWidth = 10
-helpSeparator.GradientPercentage = 0.25F
-
-````
-
-{{endregion}} 
 
 ![WinForms RadWaitingBar Waiting indicators' Dash style](images/track-and-status-controls-waitingbar-customizing-radwaitingbar003.gif)
 
@@ -200,27 +86,10 @@ Different shapes can be applied to both the __WaitingBarElement__ and the waitin
 
 #### Customize the shape of RadWatingBar
 
-{{source=..\SamplesCS\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.cs region=shape}} 
-{{source=..\SamplesVB\TrackAndStatus\WaitingBar\CustomizingRadWaitingBar.vb region=shape}} 
+<snippet id='track-and-status-controls-customizingradwaitingbar-shape-cs' />
+<snippet id='track-and-status-controls-customizingradwaitingbar-shape-vb' />
 
-````C#
-Telerik.WinControls.EllipseShape shape = new Telerik.WinControls.EllipseShape();
-this.radWaitingBar1.WaitingBarElement.Shape = shape;
-this.radWaitingBar1.WaitingBarElement.ContentElement.Shape = shape;
-this.radWaitingBar1.WaitingBarElement.WaitingIndicators[0].Shape = shape;
-this.radWaitingBar1.WaitingBarElement.WaitingIndicators[1].Shape = shape;
 
-````
-````VB.NET
-Dim shape As New Telerik.WinControls.EllipseShape()
-Me.RadWaitingBar1.WaitingBarElement.Shape = shape
-Me.RadWaitingBar1.WaitingBarElement.ContentElement.Shape = shape
-Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(0).Shape = shape
-Me.RadWaitingBar1.WaitingBarElement.WaitingIndicators(1).Shape = shape
-
-````
-
-{{endregion}} 
 
 ![WinForms RadWaitingBar Customize the shape of RadWatingBar](images/track-and-status-controls-waitingbar-customizing-radwaitingbar004.gif)
 

@@ -25,85 +25,24 @@ The appropriate API, however, should be available in cases when you want to modi
 
 When a __RadDocument__ instance was for some reason created from code – built using the elements hierarchy or imported, it can be passed to a __RadDocumentEditor__ like this:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentEditorCode.cs region=init}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=init}} 
+<snippet id='richtexteditor-documenteditorcode-init-cs' />
+<snippet id='richtexteditor-documenteditorcode-init-vb' />
 
-````C#
-            
-RadDocumentEditor documentEditor = new RadDocumentEditor(this.radRichTextEditor1.Document);
 
-````
-````VB.NET
-Dim documentEditor As New RadDocumentEditor(Me.radRichTextEditor1.Document)
-
-````
-
-{{endregion}} 
 
 The newly created *documentEditor* instance now provides all capabilities that a  __RadRichTextEditor__ provides. Moreover, you can group several methods so that they are added to the Undo/Redo stack as a single item. This can be achieved like this:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentEditorCode.cs region=insert}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=insert}} 
+<snippet id='richtexteditor-documenteditorcode-insert-cs' />
+<snippet id='richtexteditor-documenteditorcode-insert-vb' />
 
-````C#
-    
-documentEditor.BeginUndoGroup();
-    
-if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
-{
-    documentEditor.InsertTableRow();
-    documentEditor.InsertTableRow();
-    documentEditor.InsertTableRow();
-    documentEditor.Document.Selection.Clear();
-}
-documentEditor.EndUndoGroup("Insert three table rows");
 
-````
-````VB.NET
-documentEditor.BeginUndoGroup()
-If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-    documentEditor.InsertTableRow()
-    documentEditor.InsertTableRow()
-    documentEditor.InsertTableRow()
-    documentEditor.Document.Selection.Clear()
-End If
-documentEditor.EndUndoGroup("Insert three table rows")
-
-````
-
-{{endregion}} 
 
 You can also cancel the execution of the undo group, and it won't be recorded in the history:
 
-{{source=..\SamplesCS\RichTextEditor\Features\DocumentEditorCode.cs region=cancel}} 
-{{source=..\SamplesVB\RichTextEditor\Features\DocumentEditorCode.vb region=cancel}} 
+<snippet id='richtexteditor-documenteditorcode-cancel-cs' />
+<snippet id='richtexteditor-documenteditorcode-cancel-vb' />
 
-````C#
-    
-documentEditor.BeginUndoGroup();
-if (documentEditor.Document.CaretPosition.IsPositionInsideTable)
-{
-    documentEditor.InsertTableRow();
-    documentEditor.InsertTableRow();
-    documentEditor.InsertTableRow();
-    documentEditor.Document.Selection.Clear();
-}
-documentEditor.CancelUndoGroup();
 
-````
-````VB.NET
-documentEditor.BeginUndoGroup()
-If documentEditor.Document.CaretPosition.IsPositionInsideTable Then
-    documentEditor.InsertTableRow()
-    documentEditor.InsertTableRow()
-    documentEditor.InsertTableRow()
-    documentEditor.Document.Selection.Clear()
-End If
-documentEditor.CancelUndoGroup()
-
-````
-
-{{endregion}} 
 
 One thing to note here is that it is not possible to remove some actions from the undo history altogether, i.e. you cannot perform an action without it getting registered in the Undo/Redo stack. In most cases, however, this is sufficient, as you can group the operations that you do not want to name and show explicitly to the end user with the ones that have been user-initiated and are expected by the person modifying the content of __RadRichTextEditor__.
         

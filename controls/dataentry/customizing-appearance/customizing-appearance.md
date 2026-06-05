@@ -26,18 +26,10 @@ The following snippet show how you can customize the RadDataEntry styles at runt
 
 #### Change Border Color
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=SetBorderColor}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=SetBorderColor}}
-````C#
-radDataEntry1.DataEntryElement.Border.ForeColor = ColorTranslator.FromHtml("#e83737");
+<snippet id='dataentry-customizing-appearance-setbordercolor-cs'/>
+<snippet id='dataentry-customizing-appearance-setbordercolor-vb'/>
 
-````
-````VB.NET
-radDataEntry1.DataEntryElement.Border.ForeColor = ColorTranslator.FromHtml("#e83737")
 
-```` 
-
-{{endregion}}
 
 >caption Figure 2: The changed border.
 
@@ -49,34 +41,10 @@ The following snippet shows how you access the underlying controls and change th
 
 #### Set Labels ForeColor
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=LabelColor}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=LabelColor}}
-````C#
-foreach (RadPanel item in radDataEntry1.PanelContainer.Controls)
-{
-    foreach (RadControl control in item.Controls)
-    {
-        if (control is RadLabel)
-        {
-            control.ForeColor = ColorTranslator.FromHtml("#e83737");
-        }
-    }
-}
+<snippet id='dataentry-customizing-appearance-labelcolor-cs'/>
+<snippet id='dataentry-customizing-appearance-labelcolor-vb'/>
 
-````
-````VB.NET
-For Each item As RadPanel In radDataEntry1.PanelContainer.Controls
-    For Each control As RadControl In item.Controls
-        If TypeOf control Is RadLabel Then
-            control.ForeColor = ColorTranslator.FromHtml("#e83737")
-        End If
-    Next control
-Next item
 
-````
- 
-
-{{endregion}}
 
 >caption Figure 3: Set Labels ForeColor.
 
@@ -88,18 +56,10 @@ The following code snippets represent how to change the BackColor property of Va
 
 ### Change Back Color
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryHowTo.cs region=ChangeBackColor}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryHowTo.vb region=ChangeBackColor}}
-````C#
-this.radDataEntry1.ValidationPanel.PanelElement.Fill.BackColor = Color.PapayaWhip;
+<snippet id='dataentry-customizing-appearance-changebackcolor-cs'/>
+<snippet id='dataentry-customizing-appearance-changebackcolor-vb'/>
 
-````
-````VB.NET
-Me.radDataEntry1.ValidationPanel.PanelElement.Fill.BackColor = Color.PapayaWhip
 
-```` 
-
-{{endregion}}
 
 >caption Figure 4: Set Validaton Panel BackColor.
 

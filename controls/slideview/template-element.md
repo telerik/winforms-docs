@@ -22,43 +22,10 @@ More advanced TemplateElement example is demonstrated in the Demo application >>
 ![WinForms SlideView TemplateElement](images/slideview-template-element.png)
 
 #### Setup template
-{{source=..\SamplesCS\SlideView\GettingStartedGallery.cs region=SetupTemplate}} 
-{{source=..\SamplesVB\SlideView\GettingStartedGallery.vb region=SetupTemplate}}
+<snippet id='slideview-gettingstartedgallery-setuptemplate-cs' />
+<snippet id='slideview-gettingstartedgallery-setuptemplate-vb' />
 
-````C#
-private void SetupTemplate()
-{ 
-    this.radSlideView1.NumberOfPages = 3;
-    this.radSlideView1.TemplateElement.DrawFill = true;
-    this.radSlideView1.TemplateElement.GradientStyle = GradientStyles.Solid;
-    this.radSlideView1.TemplateElement.BackColor = Color.White;
-}
-private void RadSlideView1_TemplateUpdated(object sender, TemplateUpdatedEventArgs e)
-{
-    Image image = images[this.radSlideView1.SelectedIndex];
-    this.radSlideView1.TemplateElement.Image = image;
-    this.radSlideView1.TemplateElement.Text = $"Page {this.radSlideView1.SelectedIndex + 1} of {this.radSlideView1.NumberOfPages}";
-    this.radSlideView1.TemplateElement.ForeColor = Color.Red;
-    this.radSlideView1.TemplateElement.Font = new Font("Segoe UI", 15, FontStyle.Bold);
-}
 
-````
-````VB.NET 
-    Private Sub SetupTemplate()
-        Me.radSlideView1.NumberOfPages = 3
-        Me.radSlideView1.TemplateElement.DrawFill = True
-        Me.radSlideView1.TemplateElement.GradientStyle = GradientStyles.Solid
-        Me.radSlideView1.TemplateElement.BackColor = Color.White
-    End Sub
-    Private Sub RadSlideView1_TemplateUpdated(ByVal sender As Object, ByVal e As TemplateUpdatedEventArgs)
-        Dim image As Image = images(Me.radSlideView1.SelectedIndex)
-        Me.radSlideView1.TemplateElement.Image = image
-        Me.radSlideView1.TemplateElement.Text = $"Page {Me.radSlideView1.SelectedIndex + 1} of {Me.radSlideView1.NumberOfPages}"
-        Me.radSlideView1.TemplateElement.ForeColor = Color.Red
-        Me.radSlideView1.TemplateElement.Font = New Font("Segoe UI", 15, FontStyle.Bold)
-    End Sub
-    
-```` 
 
 >note For more detailed information please refer to [Unbound mode](#unbound-mode).
 

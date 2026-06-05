@@ -24,27 +24,11 @@ Data binding is a mechanism for automatic population of the RadTreeMap with item
 
 ## Run Time
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Bind}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Bind}} 
+<snippet id='treemap-treemapgettingstarted-bind-cs' />
+<snippet id='treemap-treemapgettingstarted-bind-vb' />
 
-````C#
-         
-this.radTreeMap1.DisplayMember = "ProductName";
-this.radTreeMap1.ValueMember = "ProductID";
-this.radTreeMap1.DataSource = this.productsBindingSource;
 
-````
-````VB.NET
 
-Me.radTreeMap1.DisplayMember = "ProductName"
-Me.radTreeMap1.ValueMember = "ProductID"
-Me.radTreeMap1.DataSource = Me.productsBindingSource
-
-````
-
-{{endregion}} 
- 
- 
 ## Design Time
 
 It is possible to specify the **DataSource**, **DisplayMember**, **ValueMember** properties via the Smart Tag. The following tutorial demonstrates how to bind the tree map control to the Northwind.Products table:

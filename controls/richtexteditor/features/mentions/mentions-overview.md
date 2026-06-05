@@ -41,60 +41,10 @@ For your convenience, RadRichTextEditor comes with a default implementation of a
 
 #### Example 1: Using PersonMentionProvider
 
-{{source=..\SamplesCS\RichTextEditor\Features\Mentions.cs region=SetupDefaultProvider}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Mentions.vb region=SetupDefaultProvider}}
+<snippet id='richtexteditor-mentions-setupdefaultprovider-cs' />
+<snippet id='richtexteditor-mentions-setupdefaultprovider-vb' />
 
-````C#
 
-this.radRichTextEditor1.RichTextBoxElement.MentionContext.Providers.Clear();
-this.radRichTextEditor1.RichTextBoxElement.MentionContext.Templates.Clear();
- 
-List<Telerik.WinForms.Documents.UI.Mentions.PersonMentionItem> personMentionItems = new List<PersonMentionItem>()
-{
-    new PersonMentionItem() { Name = "Nancy Anders", Mail = "mailto:nanders@somecompany.com",
-        Image = Properties.Resources.nancy},
-
-    new PersonMentionItem() { Name = "Andrew Taquería", Mail = "mailto:ataqueria@somecompany.com",
-        Image = Properties.Resources.Andrew},
-
-    new PersonMentionItem() { Name = "Janet Hardy", Mail = "mailto:jhardy@somecompany.com",
-        Image = Properties.Resources.Janet} 
-};
-
-PersonMentionProvider personMentionProvider = new PersonMentionProvider();
-personMentionProvider.ItemsSource = personMentionItems;
-
-this.radRichTextEditor1.MentionContext.Providers.Add(personMentionProvider);
-
-````
-````VB.NET
-
-Me.radRichTextEditor1.RichTextBoxElement.MentionContext.Providers.Clear()
-Me.radRichTextEditor1.RichTextBoxElement.MentionContext.Templates.Clear()
-Dim personMentionItems As List(Of Telerik.WinForms.Documents.UI.Mentions.PersonMentionItem) = New List(Of PersonMentionItem)() From {
-    New PersonMentionItem() With {
-        .Name = "Nancy Anders",
-        .Mail = "mailto:nanders@somecompany.com",
-        .Image = My.Resources.nancy
-    },
-    New PersonMentionItem() With {
-        .Name = "Andrew Taquería",
-        .Mail = "mailto:ataqueria@somecompany.com",
-        .Image = My.Resources.Andrew
-    },
-    New PersonMentionItem() With {
-        .Name = "Janet Hardy",
-        .Mail = "mailto:jhardy@somecompany.com",
-        .Image = My.Resources.Janet
-    }
-}
-Dim personMentionProvider As PersonMentionProvider = New PersonMentionProvider()
-personMentionProvider.ItemsSource = personMentionItems
-Me.radRichTextEditor1.MentionContext.Providers.Add(personMentionProvider)
-
-````
-
-{{endregion}}
 
 Figure 2 shows how the result of Example 1 would look like in RadRichTextEditor.
 
@@ -106,21 +56,10 @@ Figure 2 shows how the result of Example 1 would look like in RadRichTextEditor.
 
 The mention character is the character that triggers the visibility of the drop-down with suggestions when found at the start of a span. Each mention provider must be associated with a unique mention character. The character for the default mention provider is **@**. If you need to change the default character for a provider, you can use its **MentionCharacter** property.
 
-{{source=..\SamplesCS\RichTextEditor\Features\Mentions.cs region=ChangeCharacter}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Mentions.vb region=ChangeCharacter}}
+<snippet id='richtexteditor-mentions-changecharacter-cs' />
+<snippet id='richtexteditor-mentions-changecharacter-vb' />
 
-````C#
 
-personMentionProvider.MentionCharacter = '#';
-
-````
-````VB.NET
-
-personMentionProvider.MentionCharacter = "#"c
-
-````
-
-{{endregion}}
 
 >note If the mention character applied to a mention provider is already used by another provider, an InvalidOperationException is thrown.
 

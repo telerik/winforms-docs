@@ -80,43 +80,17 @@ Using Telerik's rich text editor's API is pretty straight forward. There is a me
         
 The __CaptionDefinition__ class contains viable information for the creation of the caption like __Label__, __NumberingFormat__ and __SeparatorType__. The "caption" parameter is of type string and represents the text in the caption that will be inserted after the number (also known as caption text). The "includeLabel" parameter is of type Boolean and if *true* will include the label text to the caption. The "insertBelow" parameter is of type Boolean as well and if *true* will insert the caption below the table or figure. So, in order to insert a caption using this method you would do something like:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Caption.cs region=insert1}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Caption.vb region=insert1}} 
+<snippet id='richtexteditor-caption-insert1-cs' />
+<snippet id='richtexteditor-caption-insert1-vb' />
 
-````C#
-CaptionDefinition captionDefinition = new CaptionDefinition();
-captionDefinition.Label = "testLabel";
-captionDefinition.NumberingFormat = NumberingFormat.Arabic;
-captionDefinition.SeparatorType = CaptionSeparatorType.Colon;
-this.radRichTextEditor1.InsertCaption(captionDefinition, "captionText", true, true);
 
-````
-````VB.NET
-Dim captionDefinition As New CaptionDefinition()
-captionDefinition.Label = "testLabel"
-captionDefinition.NumberingFormat = NumberingFormat.Arabic
-captionDefinition.SeparatorType = CaptionSeparatorType.Colon
-Me.radRichTextEditor1.InsertCaption(captionDefinition, "captionText", True, True)
-
-````
-
-{{endregion}}
 
 The __RadDocument__ contains the two default __CaptionDefinitions__ by default. They reside in a collection called "CaptionDefinitions" which is of type Dictionary<string, CaptionDefinition>. If you want to insert a caption of a default type, you can do as follow:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Caption.cs region=insert2}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Caption.vb region=insert2}} 
+<snippet id='richtexteditor-caption-insert2-cs' />
+<snippet id='richtexteditor-caption-insert2-vb' />
 
-````C#
-this.radRichTextEditor1.InsertCaption(this.radRichTextEditor1.Document.CaptionDefinitions["Table"], "captionText", true, true);
 
-````
-````VB.NET
-Me.radRichTextEditor1.InsertCaption(Me.radRichTextEditor1.Document.CaptionDefinitions("Table"), "captionText", True, True)
-
-````
-
-{{endregion}} 
 
 This code will insert a default caption with label __Table__.
         

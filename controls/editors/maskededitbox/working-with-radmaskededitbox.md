@@ -47,24 +47,10 @@ __RadMaskedEditBox__ descends from RadTextBox and so has the same properties, me
 
 ![WinForms RadMaskedEditBox German Culture](images/editors-maskededitbox-properties-and-events001.png) 
 
-{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=workingWithRadMaskedEditBox}} 
-{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=workingWithRadMaskedEditBox}} 
+<snippet id='editors-maskeditbox1-workingwithradmaskededitbox-cs' />
+<snippet id='editors-maskeditbox1-workingwithradmaskededitbox-vb' />
 
-````C#
-            
-this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.DateTime;
-this.radMaskedEditBox1.Mask = "d";
-this.radMaskedEditBox1.Culture = new System.Globalization.CultureInfo("de-de");
 
-````
-````VB.NET
-Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.DateTime
-Me.RadMaskedEditBox1.Mask = "D"
-Me.RadMaskedEditBox1.Culture = New System.Globalization.CultureInfo("de-DE")
-
-````
-
-{{endregion}}
 
 * __Value:__ This property returns user input without the formatting characters.  If you want the input and the formatting characters, use the __Text__ property.
 

@@ -17,95 +17,17 @@ The general use of mail merge is the creation of a document serving as a templat
 
 The first thing you need to do is assign a value to the __ItemsSource__ property of the __MailMergeDataSource__ of the document. For example, if you will be writing letters to Employees of a company, you can have a context that keeps a list of Employees, each Employee having a FirstName, LastName, and JobTitle.
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=data}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=data}} 
+<snippet id='richtexteditor-mailmergecode-data-cs' />
+<snippet id='richtexteditor-mailmergecode-data-vb' />
 
-````C#
-public class ExamplesDataContext
-{
-    private List<Employee> employees = new List<Employee>()
-    {
-        new Employee()
-        {
-            FirstName = "Andrew",
-            LastName = "Fuller",
-            JobTitle = "Director - Finance",
-        },
-        new Employee()
-        {
-            FirstName = "Nancy",
-            LastName = "Davolio",
-            JobTitle = "Director - Human Resources",
-        },
-        new Employee()
-        {
-            FirstName = "Robert",
-            LastName = "King",
-            JobTitle = "Engineering Design Manager",
-        },
-        new Employee()
-        {
-            FirstName = "Margaret",
-            LastName = "Peacock",
-            JobTitle = "Finance & Investments Officer",
-        }
-    };
-    public List<Employee> Employees
-    {
-        get
-        {
-            return this.employees;
-        }
-    }
-}
-public class Employee
-{
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string JobTitle { get; set; }
-}
-
-````
-````VB.NET
-Public Class ExamplesDataContext
-    Private _employees As New List(Of Employee)() From {
-        New Employee() With {.FirstName = "Andrew", .LastName = "Fuller", .JobTitle = "Director - Finance"},
-        New Employee() With {.FirstName = "Nancy", .LastName = "Davolio", .JobTitle = "Director - Human Resources"},
-        New Employee() With {.FirstName = "Robert", .LastName = "King", .JobTitle = "Engineering Design Manager"},
-        New Employee() With {.FirstName = "Margaret", .LastName = "Peacock", .JobTitle = "Finance & Investments Officer"}
-    }
-    Public ReadOnly Property Employees() As List(Of Employee)
-        Get
-            Return Me._employees
-        End Get
-    End Property
-End Class
-Public Class Employee
-    Public Property FirstName() As String
-    Public Property LastName() As String
-    Public Property JobTitle() As String
-End Class
-
-````
-
-{{endregion}} 
 
 
 All that is left is to add the following line:
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=source}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=source}} 
+<snippet id='richtexteditor-mailmergecode-source-cs' />
+<snippet id='richtexteditor-mailmergecode-source-vb' />
 
-````C#
-this.radRichTextEditor1.Document.MailMergeDataSource.ItemsSource = new ExamplesDataContext().Employees;
 
-````
-````VB.NET
-Me.radRichTextEditor1.Document.MailMergeDataSource.ItemsSource = (New ExamplesDataContext()).Employees
-
-````
-
-{{endregion}} 
 
 ## Performing Mail Merge
 
@@ -134,110 +56,39 @@ The same scenario can be carried out programmatically just as easily. The method
             
 ### Creating a MergeField:
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=field}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=field}} 
+<snippet id='richtexteditor-mailmergecode-field-cs' />
+<snippet id='richtexteditor-mailmergecode-field-vb' />
 
-````C#
-MergeField field = new MergeField() { PropertyPath = "FirstName" };
 
-````
-````VB.NET
-Dim field As New MergeField() With {.PropertyPath = "FirstName"}
-
-````
-
-{{endregion}} 
 
 This fields will look for the value of the **FirstName** property of the Employee objects.
 
 ### Changing the display mode of merge fields:
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=mode}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=mode}} 
+<snippet id='richtexteditor-mailmergecode-mode-cs' />
+<snippet id='richtexteditor-mailmergecode-mode-vb' />
 
-````C#
-field.DisplayMode = FieldDisplayMode.Result;
-this.radRichTextEditor1.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result);
-this.radRichTextEditor1.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result);
 
-````
-````VB.NET
-field.DisplayMode = FieldDisplayMode.Result
-Me.radRichTextEditor1.ChangeFieldDisplayMode(field.FieldStart, FieldDisplayMode.Result)
-Me.radRichTextEditor1.ChangeAllFieldsDisplayMode(FieldDisplayMode.Result)
-
-````
-
-{{endregion}} 
 
 ### Inserting a MergeField at the current position of the caret:
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=insert}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=insert}} 
+<snippet id='richtexteditor-mailmergecode-insert-cs' />
+<snippet id='richtexteditor-mailmergecode-insert-vb' />
 
-````C#
-this.radRichTextEditor1.InsertField(field);
-this.radRichTextEditor1.InsertField(field, FieldDisplayMode.DisplayName);
 
-````
-````VB.NET
-Me.radRichTextEditor1.InsertField(field)
-Me.radRichTextEditor1.InsertField(field, FieldDisplayMode.DisplayName)
-
-````
-
-{{endregion}} 
 
 ### Previewing the results of Mail Merge:
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=preview}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=preview}} 
+<snippet id='richtexteditor-mailmergecode-preview-cs' />
+<snippet id='richtexteditor-mailmergecode-preview-vb' />
 
-````C#
-this.radRichTextEditor1.PreviewFirstMailMergeDataRecord();
-this.radRichTextEditor1.PreviewLastMailMergeDataRecord();
-this.radRichTextEditor1.PreviewMailMergeDataRecordAtIndex(0);
-this.radRichTextEditor1.PreviewNextMailMergeDataRecord();
-this.radRichTextEditor1.PreviewPreviousMailMergeDataRecord();
 
-````
-````VB.NET
-Me.radRichTextEditor1.PreviewFirstMailMergeDataRecord()
-Me.radRichTextEditor1.PreviewLastMailMergeDataRecord()
-Me.radRichTextEditor1.PreviewMailMergeDataRecordAtIndex(0)
-Me.radRichTextEditor1.PreviewNextMailMergeDataRecord()
-Me.radRichTextEditor1.PreviewPreviousMailMergeDataRecord()
-
-````
-
-{{endregion}} 
 
 ### Performing MailMerge:
 
-{{source=..\SamplesCS\RichTextEditor\Features\MailMergeCode.cs region=perform}} 
-{{source=..\SamplesVB\RichTextEditor\Features\MailMergeCode.vb region=perform}} 
+<snippet id='richtexteditor-mailmergecode-perform-cs' />
+<snippet id='richtexteditor-mailmergecode-perform-vb' />
 
-````C#
-this.radRichTextEditor1.MailMergeCurrentRecord(); // returns a RadDocument that is the result of substituting the merge fields with the data from the current record. The current record can be specified through the MailMergeSource API:</para>
-this.radRichTextEditor1.Document.MailMergeDataSource.MoveToFirst();
-this.radRichTextEditor1.Document.MailMergeDataSource.MoveToLast();
-this.radRichTextEditor1.Document.MailMergeDataSource.MoveToNext();
-this.radRichTextEditor1.Document.MailMergeDataSource.MoveToPrevious();
-this.radRichTextEditor1.Document.MailMergeDataSource.MoveToIndex(index);
-this.radRichTextEditor1.MailMerge(false); // returns a RadDocument that is the result of Mail Merging all records. The parameter specifies if a page break should be inserted between the records (default value is true).
 
-````
-````VB.NET
-Me.radRichTextEditor1.MailMergeCurrentRecord() ' returns a RadDocument that is the result of substituting the merge fields with the data from the current record. The current record can be specified through the MailMergeSource API:</para>
-Me.radRichTextEditor1.Document.MailMergeDataSource.MoveToFirst()
-Me.radRichTextEditor1.Document.MailMergeDataSource.MoveToLast()
-Me.radRichTextEditor1.Document.MailMergeDataSource.MoveToNext()
-Me.radRichTextEditor1.Document.MailMergeDataSource.MoveToPrevious()
-Me.radRichTextEditor1.Document.MailMergeDataSource.MoveToIndex(index)
-Me.radRichTextEditor1.MailMerge(False) ' returns a RadDocument that is the result of Mail Merging all records. The parameter specifies if a page break should be inserted between the records (default value is true).
-
-````
-
-{{endregion}} 
 
 You can further choose what you wish to do with the resulting **RadDocument** – assign it to a **RadRichTextEditor**’s Document property, export it, etc.

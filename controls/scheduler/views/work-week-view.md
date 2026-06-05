@@ -24,19 +24,10 @@ The Week View can be set it to be the default view which the user sees:
 
 #### ActiveViewType Property
 
-{{source=..\SamplesCS\Scheduler\Views\WorkWeekView.cs region=activeViewType}} 
-{{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=activeViewType}} 
+<snippet id='scheduler-workweekview-activeviewtype-cs' />
+<snippet id='scheduler-workweekview-activeviewtype-vb' />
 
-````C#
-this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.WorkWeek;
 
-````
-````VB.NET
-Me.RadScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.WorkWeek
-
-````
-
-{{endregion}} 
 
 ## Get Work Week View
 
@@ -46,18 +37,10 @@ To get the instance to the SchedulerWeekView from the RadScheduler object,either
 
 #### GetWeekView Method
 
-{{source=..\SamplesCS\Scheduler\Views\WorkWeekView.cs region=getWeekView}} 
-{{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=getWeekView}}
-````C#
-SchedulerWeekView weekView = this.radScheduler1.GetWeekView();
+<snippet id='scheduler-workweekview-getweekview-cs' />
+<snippet id='scheduler-workweekview-getweekview-vb' />
 
-````
-````VB.NET
-Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
 
-```` 
-
-{{endregion}} 
 
 >note This method returns null if the active view of the scheduler is not SchedulerWeekView.
 >
@@ -66,25 +49,10 @@ Dim weekView As SchedulerWeekView = Me.RadScheduler1.GetWeekView()
 
 #### ActiveView Property
 
-{{source=..\SamplesCS\Scheduler\Views\WorkWeekView.cs region=activeWorkWeek}} 
-{{source=..\SamplesVB\Scheduler\Views\WorkWeekView.vb region=activeWorkWeek}}
-````C#
-if (this.radScheduler1.ActiveViewType == SchedulerViewType.WorkWeek)
-{
-    SchedulerWeekView activeWeekView = (SchedulerWeekView)this.radScheduler1.ActiveView;
-}
-
-````
-````VB.NET
-If Me.RadScheduler1.ActiveViewType = SchedulerViewType.WorkWeek Then
-    Dim activeWeekView As SchedulerWeekView = CType(Me.RadScheduler1.ActiveView, SchedulerWeekView)
-End If
-
-```` 
+<snippet id='scheduler-workweekview-activeworkweek-cs' />
+<snippet id='scheduler-workweekview-activeworkweek-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 

@@ -19,21 +19,8 @@ User filtering in RadGridView is enabled by the __EnableFiltering__ property. By
 
 #### Enable filtering
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=enableFiltering}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=enableFiltering}} 
-
-````C#
-this.radGridView1.EnableFiltering = true;
-this.radGridView1.MasterTemplate.EnableFiltering = true;
-
-````
-````VB.NET
-Me.RadGridView1.EnableFiltering = True
-Me.RadGridView1.MasterTemplate.EnableFiltering = True
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-enablefiltering-cs' />
+<snippet id='gridview-filtering-enablefiltering-vb' />
 
 __GridViewDataColumn__
 
@@ -49,62 +36,8 @@ See [End-User capabilities - Filtering]({%slug winforms/gridview/end-user-capabi
 
 #### Bypass default filtering
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=BypassFiltering}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=BypassFiltering}} 
-
-````C#
-DataTable dt = new DataTable();
-public void FillData()
-{
-    dt.Columns.Add("Id", typeof(int));
-    dt.Columns.Add("Name", typeof(string));
-    for (int i = 0; i < 30; i++)
-    {
-        dt.Rows.Add(i, "Item" + i);
-    }
-    this.radGridView1.DataSource = dt;
-    this.radGridView1.EnableFiltering = true;
-    this.radGridView1.MasterTemplate.DataView.BypassFilter = true;
-    this.radGridView1.FilterChanged += radGridView1_FilterChanged;
-}
-private void radGridView1_FilterChanged(object sender, GridViewCollectionChangedEventArgs e)
-{
-    if (e.Action == NotifyCollectionChangedAction.Add || e.Action == NotifyCollectionChangedAction.ItemChanged)
-    {
-        dt.DefaultView.RowFilter = this.radGridView1.FilterDescriptors.Expression;
-    }
-    if (e.Action == NotifyCollectionChangedAction.Remove)
-    {
-        dt.DefaultView.RowFilter = "";
-    }
-}
-
-````
-````VB.NET
-Private dt As New DataTable()
-Public Sub FillData()
-    dt.Columns.Add("Id", GetType(Integer))
-    dt.Columns.Add("Name", GetType(String))
-    For i As Integer = 0 To 29
-        dt.Rows.Add(i, "Item" & i)
-    Next
-    Me.RadGridView1.DataSource = dt
-    Me.RadGridView1.EnableFiltering = True
-    Me.RadGridView1.MasterTemplate.DataView.BypassFilter = True
-    AddHandler Me.RadGridView1.FilterChanged, AddressOf radGridView1_FilterChanged
-End Sub
-Private Sub radGridView1_FilterChanged(sender As Object, e As GridViewCollectionChangedEventArgs)
-    If e.Action = NotifyCollectionChangedAction.Add OrElse e.Action = NotifyCollectionChangedAction.ItemChanged Then
-        dt.DefaultView.RowFilter = Me.RadGridView1.FilterDescriptors.Expression
-    End If
-    If e.Action = NotifyCollectionChangedAction.Remove Then
-        dt.DefaultView.RowFilter = ""
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-bypassfiltering-cs' />
+<snippet id='gridview-filtering-bypassfiltering-vb' />
 
 ## See Also
 * [Customizing composite filter dialog]({%slug winforms/gridview/filtering/composite-filter-dialog%})

@@ -14,19 +14,10 @@ There are two ways to assign tooltips to __RadDropDownButton__, namely setting t
 
 #### Setting the ToolTipText property
 
-{{source=..\SamplesCS\Buttons\DropDownButton.cs region=SetToolTipText}} 
-{{source=..\SamplesVB\Buttons\DropDownButton.vb region=SetToolTipText}}
+<snippet id='buttons-dropdownbutton-tooltips-settooliptext-cs' />
+<snippet id='buttons-dropdownbutton-tooltips-settooliptext-vb' />
 
-````C#
-this.radDropDownButton1.DropDownButtonElement.ToolTipText = "Click me";
 
-````
-````VB.NET
-Me.radDropDownButton1.DropDownButtonElement.ToolTipText = "Click me"
-
-````
-
-{{endregion}} 
 
 >note In order to assign different tooltips for the action part and the arrow button, you must specify the __ToolTipText__ property of the DropDownButtonElement.__ActionButton__ or DropDownButtonElement.__ArrowButton__ element.
 
@@ -34,39 +25,10 @@ Me.radDropDownButton1.DropDownButtonElement.ToolTipText = "Click me"
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
-{{source=..\SamplesCS\Buttons\DropDownButton.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\Buttons\DropDownButton.vb region=ToolTipTextNeeded}}
+<snippet id='buttons-dropdownbutton-tooltips-tooltiptextneeded-cs' />
+<snippet id='buttons-dropdownbutton-tooltips-tooltiptextneeded-vb' />
 
-````C#
-private void RadDropDownButton1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    ActionButtonElement actionButtonElement = sender as ActionButtonElement;
-    RadArrowButtonElement arrowButtonElement = sender as RadArrowButtonElement;
-    if (actionButtonElement!=null)
-    {
-        e.ToolTipText = "ActionButtonElement";
-    }
-    else if (arrowButtonElement!=null)
-    {
-        e.ToolTipText = "RadArrowButtonElement";
-    }
-}
 
-````
-````VB.NET
-Private Sub RadDropDownButton1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    Dim actionButtonElement As ActionButtonElement = TryCast(sender, ActionButtonElement)
-    Dim arrowButtonElement As RadArrowButtonElement = TryCast(sender, RadArrowButtonElement)
-    If actionButtonElement IsNot Nothing Then
-        e.ToolTipText = "ActionButtonElement"
-    ElseIf arrowButtonElement IsNot Nothing Then
-        e.ToolTipText = "RadArrowButtonElement"
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadButtons buttons-dropdownbutton-tooltips 002](images/buttons-dropdownbutton-tooltips002.gif)
 

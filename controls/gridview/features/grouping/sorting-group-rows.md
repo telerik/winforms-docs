@@ -23,74 +23,15 @@ However, you can change this sort order by using a group comparer. It is necessa
 
 #### Custom group comparer
 
-{{source=..\SamplesCS\GridView\Grouping\SortingGroupRows.cs region=GroupComparer}} 
-{{source=..\SamplesVB\GridView\Grouping\SortingGroupRows.vb region=GroupComparer}} 
-
-````C#
-        
-public class GroupComparer : IComparer<Group<GridViewRowInfo>>
-{
-    public int Compare(Group<GridViewRowInfo> x, Group<GridViewRowInfo> y)
-    {
-        int parsedX;
-        int parsedY;
-        if (int.TryParse(((object[])x.Key).First().ToString(), out parsedX) &&
-            int.TryParse(((object[])y.Key).First().ToString(), out parsedY))
-        {
-            int result = parsedX.CompareTo(parsedY);
-            DataGroup xGroup = x as DataGroup;
-            if (xGroup != null && ((DataGroup)x).GroupDescriptor.GroupNames.First().Direction == ListSortDirection.Descending)
-            {
-                 result *= -1;
-            }
-            return result;
-        }
-        return ((object[])x.Key)[0].ToString().CompareTo(((object[])y.Key)[0].ToString());
-    }
-}
-
-````
-````VB.NET
-Public Class GroupComparer
-    Implements IComparer(Of Group(Of GridViewRowInfo))
-    Public Function [Compare](x As Group(Of GridViewRowInfo), y As Group(Of GridViewRowInfo)) As Integer _
-    Implements IComparer(Of Group(Of GridViewRowInfo)).[Compare]
-        Dim parsedX As Integer
-        Dim parsedY As Integer
-        If Integer.TryParse(DirectCast(x.Key, Object()).First().ToString(), parsedX) AndAlso Integer.TryParse(DirectCast(y.Key, Object()).First().ToString(), parsedY) Then
-            Dim result As Integer = parsedX.CompareTo(parsedY)
-            Dim xGroup As DataGroup = TryCast(x, DataGroup)
-            If xGroup IsNot Nothing AndAlso DirectCast(x, DataGroup).GroupDescriptor.GroupNames.First().Direction = ListSortDirection.Descending Then
-                result *= -1
-            End If
-            Return result
-        End If
-        Return DirectCast(x.Key, Object())(0).ToString().CompareTo(DirectCast(y.Key, Object())(0).ToString())
-    End Function
-End Class
-
-````
-
-{{endregion}} 
+<snippet id='gridview-sortinggrouprows-groupcomparer-cs' />
+<snippet id='gridview-sortinggrouprows-groupcomparer-vb' />
 
 The last thing you need to do is to replace the default MasterTemplate.__GroupComparer__ with your custom one:
 
 #### Custom group comparer
 
-{{source=..\SamplesCS\GridView\Grouping\SortingGroupRows.cs region=Replace}} 
-{{source=..\SamplesVB\GridView\Grouping\SortingGroupRows.vb region=Replace}} 
-
-````C#
-            
-this.radGridView1.MasterTemplate.GroupComparer = new GroupComparer();
-
-````
-````VB.NET
-Me.RadGridView1.MasterTemplate.GroupComparer = New GroupComparer()
-
-````
-
-{{endregion}} 
+<snippet id='gridview-sortinggrouprows-replace-cs' />
+<snippet id='gridview-sortinggrouprows-replace-vb' />
 
 >caption Figure 2: Custom Sort Order of Group Rows
 

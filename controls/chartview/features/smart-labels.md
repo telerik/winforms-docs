@@ -15,37 +15,20 @@ __RadChartView__ provides a built-in mechanism for resolving labels overlapping 
 
 #### Add Controller
 
-{{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=AddSmartLabelsController}} 
-{{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=AddSmartLabelsController}} 
+<snippet id='chartview-smart-labels-addsmartlabelscontroller-cs'/>
+<snippet id='chartview-smart-labels-addsmartlabelscontroller-vb'/>
 
-````C#
-this.radChartView1.Controllers.Add(new SmartLabelsController());
 
-````
-````VB.NET
-Me.radChartView1.Controllers.Add(New SmartLabelsController())
-
-````
-
-{{endregion}}  
 
 Alternatively, you can leave __RadChartView__ do this for you by setting the __ShowSmartLabels__ property: 
 
 #### Set Property
 
-{{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=EnableSmartLabels}} 
-{{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=EnableSmartLabels}} 
+<snippet id='chartview-smart-labels-enablesmartlabels-cs'/>
+<snippet id='chartview-smart-labels-enablesmartlabels-vb'/>
 
-````C#
-this.radChartView1.ShowSmartLabels = true;
 
-````
-````VB.NET
-Me.radChartView1.ShowSmartLabels = True
 
-````
-
-{{endregion}}
  
 Automatic label placement is one the most complex and time consuming operations in a chart that is NP-hard ([http://en.wikipedia.org/wiki/NP-Hard](http://en.wikipedia.org/wiki/NP-Hard)). There is no universal solution for all chart types and there is no solution that can guarantee solution for 100% of the label collisions in every case.
 
@@ -75,142 +58,27 @@ In a specific scenario you may need to control the labels' position. For this pu
 
 #### Custom SmartLabelsStrategy 
 
-{{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=CustomSmartLabelsStrategy}} 
-{{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=CustomSmartLabelsStrategy}} 
+<snippet id='chartview-smart-labels-customsmartlabelsstrategy-cs'/>
+<snippet id='chartview-smart-labels-customsmartlabelsstrategy-vb'/>
 
-````C#
-public class MyStrategy : SmartLabelsStrategyBase
-{
-    public override void CalculateLocations(Telerik.WinControls.UI.ChartSeriesCollection series, Rectangle plotArea)
-    {
-        List<LabelElement> labels = new List<LabelElement>();
-        List<int> overlaps = new List<int>();
-        int x = 70;
-        int y = 30;
-        int spacing = 6;
-        foreach (Telerik.WinControls.UI.ChartSeries chartSeries in series)
-        {
-            if (!chartSeries.ShowLabels || !chartSeries.IsVisible)
-            {
-                continue;
-            }
-            foreach (DataPointElement point in chartSeries.Children)
-            {
-                LabelElement label = (LabelElement)point.Children[0];
-                Rectangle labelRect = ChartRenderer.ToRectangle(label.GetLayoutSlot());
-                var newRect = new Rectangle(x, y, labelRect.Width, labelRect.Height);
-                x += spacing + labelRect.Width;
-                if (x + spacing + labelRect.Width > plotArea.Width - 100)
-                {
-                    y += spacing + labelRect.Height;
-                    x = 70;
-                }
-                label.SmartRectangle = newRect;
-                labels.Add(label);
-            }
-        }
-    }
-}
-public class MySmartLabelsController : SmartLabelsController
-{
-    public override void CalculateLabelsPositions(Telerik.WinControls.UI.ChartSeriesCollection series, Rectangle plotArea)
-    {
-        if (this.Strategy != null)
-        {
-            this.Strategy.CalculateLocations(series, plotArea);
-        }
-    }
-}
 
-````
-````VB.NET
-Public Class MyStrategy
-    Inherits SmartLabelsStrategyBase
-    Public Overrides Sub CalculateLocations(series As Telerik.WinControls.UI.ChartSeriesCollection, plotArea As Rectangle)
-        Dim labels As New List(Of LabelElement)()
-        Dim overlaps As New List(Of Integer)()
-        Dim x As Integer = 70
-        Dim y As Integer = 30
-        Dim spacing As Integer = 6
-        For Each chartSeries As Telerik.WinControls.UI.ChartSeries In series
-            If Not chartSeries.ShowLabels OrElse Not chartSeries.IsVisible Then
-                Continue For
-            End If
-            For Each point As DataPointElement In chartSeries.Children
-                Dim label As LabelElement = DirectCast(point.Children(0), LabelElement)
-                Dim labelRect As Rectangle = ChartRenderer.ToRectangle(label.GetLayoutSlot())
-                Dim newRect = New Rectangle(x, y, labelRect.Width, labelRect.Height)
-                x += spacing + labelRect.Width
-                If x + spacing + labelRect.Width > plotArea.Width - 100 Then
-                    y += spacing + labelRect.Height
-                    x = 70
-                End If
-                label.SmartRectangle = newRect
-                labels.Add(label)
-            Next
-        Next
-    End Sub
-End Class
-Public Class MySmartLabelsController
-    Inherits SmartLabelsController
-    Public Overrides Sub CalculateLabelsPositions(series As Telerik.WinControls.UI.ChartSeriesCollection, plotArea As Rectangle)
-        If Me.Strategy IsNot Nothing Then
-            Me.Strategy.CalculateLocations(series, plotArea)
-        End If
-    End Sub
-End Class
-
-````
-
-{{endregion}} 
 
 
 You must apply the custom __SmartLabelsController__ to __RadChartView__:
 
 #### Apply custom strategy
 
-{{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=ApplyCustomStrategy}} 
-{{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=ApplyCustomStrategy}} 
+<snippet id='chartview-smart-labels-applycustomstrategy-cs'/>
+<snippet id='chartview-smart-labels-applycustomstrategy-vb'/>
 
-````C#
-MySmartLabelsController controler = new MySmartLabelsController();
-controler.Strategy = new MyStrategy();
-this.radChartView1.Controllers.Add(controler);
 
-````
-````VB.NET
-roperty
-        Dim controler As SmartLabelsController = New SmartLabelsController()
-        controler.Strategy = New MyStrategy()
-        controler.RegisterCustomStrategyWithSeries(GetType(MyStrategy), New List(Of Type)() From {GetType(BarSeries)})
-        Me.radChartView1.Controllers.Add(controler)
-
-````
-
-{{endregion}} 
 
 After the **R3 2018 SP1** release, the custom strategy can be applied after setting the Strategy property of the control and after regsitering it with all compatible series: 
 
-{{source=..\SamplesCS\ChartView\Features\SmartLabels.cs region=ApplyCustomStrategyProperty}} 
-{{source=..\SamplesVB\ChartView\Features\SmartLabels.vb region=ApplyCustomStrategyProperty}}
-````C#
-SmartLabelsController controler = new SmartLabelsController();
-controler.Strategy = new MyStrategy();
-controler.RegisterCustomStrategyWithSeries(typeof(MyStrategy), new List<Type>() { typeof(BarSeries) });
-this.radChartView1.Controllers.Add(controler);
-
-````
-````VB.NET
-Dim controler As SmartLabelsController = New SmartLabelsController()
-controler.Strategy = New MyStrategy()
-controler.RegisterCustomStrategyWithSeries(GetType(MyStrategy), New List(Of Type)() From {GetType(BarSeries)})
-Me.radChartView1.Controllers.Add(controler)
-
-```` 
+<snippet id='chartview-smart-labels-applycustomstrategyproperty-cs'/>
+<snippet id='chartview-smart-labels-applycustomstrategyproperty-vb'/>
 
 
-
-{{endregion}} 
 
 |Before|After|
 |----|----|

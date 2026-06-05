@@ -21,67 +21,25 @@ Sugiyama is the default layout algorithm in __RadDiagram__. Using it is straight
 
 * use the RadDiagram.__SetLayout__ method: 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SetLayout}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SetLayout}} 
+<snippet id='diagram-layout-setlayout-cs'/>
+<snippet id='diagram-layout-setlayout-vb'/>
 
-````C#
-this.radDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Sugiyama);
-
-````
-````VB.NET
-Me.RadDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Sugiyama)
-
-````
-
-{{endregion}} 
+ 
 
 
 * use the DiagramCommands.__Layout__: 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=LayoutCommand}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=LayoutCommand}} 
+<snippet id='diagram-layout-layoutcommand-cs'/>
+<snippet id='diagram-layout-layoutcommand-vb'/>
 
-````C#
-this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Layout);
-
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Layout)
-
-````
-
-{{endregion}} 
+ 
  
 The __SetLayout__ method provides two optional parameters - the type of the Layout (Sugiyama or Tree) and the corresponding layout settings (SugiyamaSettings or TreeLayoutSettings): 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SugiyamaSettings}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SugiyamaSettings}} 
+<snippet id='diagram-layout-sugiyamasettings-cs'/>
+<snippet id='diagram-layout-sugiyamasettings-vb'/>
 
-````C#
-Telerik.Windows.Diagrams.Core.SugiyamaSettings settings = new Telerik.Windows.Diagrams.Core.SugiyamaSettings()
-{
-    HorizontalDistance = 50,
-    VerticalDistance = 20,
-    Orientation = Telerik.Windows.Diagrams.Core.Orientation.Horizontal,
-    TotalMargin = new Telerik.Windows.Diagrams.Core.Size(20, 20),
-    ShapeMargin = new Telerik.Windows.Diagrams.Core.Size(10, 10),
-};
-this.radDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Sugiyama, settings);
-
-````
-````VB.NET
-Dim settings As New Telerik.Windows.Diagrams.Core.SugiyamaSettings() With { _
-    .HorizontalDistance = 50, _
-    .VerticalDistance = 20, _
-    .Orientation = Telerik.Windows.Diagrams.Core.Orientation.Horizontal, _
-    .TotalMargin = New Telerik.Windows.Diagrams.Core.Size(20, 20), _
-    .ShapeMargin = New Telerik.Windows.Diagrams.Core.Size(10, 10) _
-}
-Me.RadDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Sugiyama, Settings)
-
-````
-
-{{endregion}} 
+ 
 
 
 
@@ -158,31 +116,10 @@ Below you can see a snapshots of random diagrams laid out with Tree Layout types
 
 Here is how this could be achieved in code behind. 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=TreeLayoutSettings}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=TreeLayoutSettings}} 
+<snippet id='diagram-layout-treelayoutsettings-cs'/>
+<snippet id='diagram-layout-treelayoutsettings-vb'/>
 
-````C#
-            
-Telerik.Windows.Diagrams.Core.TreeLayoutSettings settings = new Telerik.Windows.Diagrams.Core.TreeLayoutSettings()
-{
-    TreeLayoutType = Telerik.Windows.Diagrams.Core.TreeLayoutType.RadialTree,
-    VerticalDistance = 20,
-};
-settings.Roots.Add(this.radDiagram1.Shapes[0]);
-this.radDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Tree, settings);
-
-````
-````VB.NET
-Dim settings As New Telerik.Windows.Diagrams.Core.TreeLayoutSettings() With { _
-    .TreeLayoutType = Telerik.Windows.Diagrams.Core.TreeLayoutType.RadialTree, _
-    .VerticalDistance = 20 _
-}
-Settings.Roots.Add(Me.RadDiagram1.Shapes(0))
-Me.RadDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Tree, Settings)
-
-````
-
-{{endregion}} 
+ 
  
 ## Layout Settings
 

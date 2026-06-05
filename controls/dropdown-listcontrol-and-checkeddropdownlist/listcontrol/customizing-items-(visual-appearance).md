@@ -25,131 +25,38 @@ The aim of this article is to demonstrate how you can achieve to look shown belo
 
 #### Handling the ItemDataBound event 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=itemDataBound}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=itemDataBound}} 
+<snippet id='listcontrol-customizing-items-visual-appearance-itemdatabound-cs' />
+<snippet id='listcontrol-customizing-items-visual-appearance-itemdatabound-vb' />
 
-````C#
-void radListControl1_ItemDataBound(object sender, ListItemDataBoundEventArgs args)
-{
-    DataRowView view = (DataRowView)args.NewItem.DataBoundItem;
-    args.NewItem.Text = "<html><b>" + view["TitleOfCourtesy"] + "</b>" +
-        " " + view["FirstName"] +
-        " " + view["LastName"] +
-        "<br><i>" + view["Title"];
-    NwindDataSet.EmployeesRow row = view.Row as NwindDataSet.EmployeesRow;
-    args.NewItem.Image = GetImageFromData(row.Photo);
-}
 
-````
-````VB.NET
-Private Sub radListControl1_ItemDataBound(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.ListItemDataBoundEventArgs)
-    Dim view As DataRowView = CType(args.NewItem.DataBoundItem, DataRowView)
-    args.NewItem.Text = "<html><b>" & view("TitleOfCourtesy") & "</b>" & " " & view("FirstName") & " " & view("LastName") & "<br><i>" & view("Title")
-    Dim row As NwindDataSet.EmployeesRow = TryCast(view.Row, NwindDataSet.EmployeesRow)
-    args.NewItem.Image = GetImageFromData(row.Photo)
-End Sub
-
-````
-
-{{endregion}} 
 
 
 #### Image helper method 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=getImageData}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=getImageData}} 
+<snippet id='listcontrol-customizing-items-visual-appearance-getimagedata-cs' />
+<snippet id='listcontrol-customizing-items-visual-appearance-getimagedata-vb' />
 
-````C#
-private bool HasOleContainerHeader(byte[] imageByteArray)
-{
-    const byte OleByte0 = 21;
-    const byte OleByte1 = 28;
-    return (imageByteArray[0] == OleByte0) && (imageByteArray[1] == OleByte1);
-}
-private Image GetImageFromData(byte[] imageData)
-{
-    const int OleHeaderLength = 78;
-    MemoryStream memoryStream = new MemoryStream();
-    if (HasOleContainerHeader(imageData))
-    {
-        memoryStream.Write(imageData, OleHeaderLength, imageData.Length - OleHeaderLength);
-    }
-    else
-    {
-        memoryStream.Write(imageData, 0, imageData.Length);
-    }
-    Bitmap bitmap = new Bitmap(memoryStream);
-    return bitmap.GetThumbnailImage(55, 65, null, new IntPtr());
-}
 
-````
-````VB.NET
-Private Function HasOleContainerHeader(ByVal imageByteArray As Byte()) As Boolean
-    Const OleByte0 As Byte = 21
-    Const OleByte1 As Byte = 28
-    Return (imageByteArray(0) = OleByte0) AndAlso (imageByteArray(1) = OleByte1)
-End Function
-Private Function GetImageFromData(ByVal imageData As Byte()) As Image
-    Const OleHeaderLength As Integer = 78
-    Dim memoryStream As MemoryStream = New MemoryStream()
-    If HasOleContainerHeader(imageData) Then
-        memoryStream.Write(imageData, OleHeaderLength, imageData.Length - OleHeaderLength)
-    Else
-        memoryStream.Write(imageData, 0, imageData.Length)
-    End If
-    Dim bitmap As Bitmap = New Bitmap(memoryStream)
-    Return bitmap.GetThumbnailImage(55, 65, Nothing, New IntPtr())
-End Function
-
-````
-
-{{endregion}} 
 
 2\. Since the *&lt; br &gt;* tag will split the __Text__ value in different lines, it is essential to set the __AutoSizeItems__ of RadListControl to *true*:
         	
 #### Setting AutoSizeItems 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=autoSizeItems}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=autoSizeItems}} 
+<snippet id='listcontrol-customizing-items-visual-appearance-autosizeitems-cs' />
+<snippet id='listcontrol-customizing-items-visual-appearance-autosizeitems-vb' />
 
-````C#
-this.radListControl1.AutoSizeItems = true;
 
-````
-````VB.NET
-Me.radListControl1.AutoSizeItems = True
 
-````
-
-{{endregion}} 
  
 
 3\. Should you want to have apply some padding to the visual items, you should do it on CreatingVisualListItem event: 
 
 #### Applying Padding to the visual list items 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\CustomizingItems.cs region=creatingVisualListItem}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\CustomizingItems.vb region=creatingVisualListItem}} 
+<snippet id='listcontrol-customizing-items-visual-appearance-creatingvisuallistitem-cs' />
+<snippet id='listcontrol-customizing-items-visual-appearance-creatingvisuallistitem-vb' />
 
-````C#
-void radListControl1_CreatingVisualListItem(object sender, CreatingVisualListItemEventArgs args)
-{
-    RadListVisualItem visualItem = new RadListVisualItem();
-    visualItem.Padding = new Padding(5, 5, 0, 5);
-    args.VisualItem = visualItem;
-}
 
-````
-````VB.NET
-Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.CreatingVisualListItemEventArgs)
-    Dim visualItem As RadListVisualItem = New RadListVisualItem()
-    visualItem.Padding = New Padding(5, 5, 0, 5)
-    args.VisualItem = visualItem
-End Sub
-
-````
-
-{{endregion}} 
 
 # See Also
 

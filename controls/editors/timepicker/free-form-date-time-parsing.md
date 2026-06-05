@@ -17,20 +17,9 @@ From Q2 2014 we introduced new MaskType of RadMaskedEditBox that is designed to 
 
 The embedded text editor of RadTimePicker is RadMaskedEditBox. So if you want to take the advantages from new DateTime parsing logic the only thing that you should to do is to change the MaskType of embedded editor.
        
-{{source=..\SamplesCS\Editors\TimePicker1.cs region=FreeFormDateTimeTimePicker}} 
-{{source=..\SamplesVB\Editors\TimePicker1.vb region=FreeFormDateTimeTimePicker}} 
+<snippet id='editors-timepicker1-freeformdatetimetimepicker-cs' />
+<snippet id='editors-timepicker1-freeformdatetimetimepicker-vb' />
 
-````C#
-            
-this.radTimePicker1.TimePickerElement.MaskedEditBox.MaskType = MaskType.FreeFormDateTime;
 
-````
-````VB.NET
-Me.RadTimePicker1.TimePickerElement.MaskedEditBox.MaskType = MaskType.FreeFormDateTime
-
-````
-
-{{endregion}} 
- 
 
 ## 

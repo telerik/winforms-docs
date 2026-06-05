@@ -97,72 +97,9 @@ The **Signature** class exposes two methods allowing you to validate a signature
 #### Example 1: Validate a field
 
 
-{{source=..\SamplesCS\PdfViewer\DigitalSignatureCode.cs region=DigitalSignatureCode_1}} 
-{{source=..\SamplesVB\PdfViewer\DigitalSignatureCode.vb region=DigitalSignatureCode_1}} 
-````C#
-string validationStatus;
-// For simplicity, the example handles only the first signature.
-SignatureField firstSignatureField = this.pdfViewer.Document.AcroForm.FormFields.FirstOrDefault(field => field.FieldType == FormFieldType.Signature) as SignatureField;
-if (firstSignatureField != null && firstSignatureField.Signature != null)
-{
-    SignatureValidationResult validationResult;
-    if (firstSignatureField.Signature.TryValidate(out validationResult))
-    {
-        if (!validationResult.IsDocumentModified)
-        {
-            if (validationResult.IsCertificateValid)
-            {
-                validationStatus = "Valid";
-            }
-            else
-            {
-                validationStatus = "Unknown";
-            }
-        }
-        else
-        {
-            validationStatus = "Invalid";
-        }
-    }
-    else
-    {
-        validationStatus = "Invalid";
-    }
-}
-else
-{
-    validationStatus = "None";
-}
+<snippet id='pdfviewer-digitalsignaturecode-digitalsignaturecode_1-cs' />
+<snippet id='pdfviewer-digitalsignaturecode-digitalsignaturecode_1-vb' />
 
-````
-````VB.NET
-Dim validationStatus As String
-' For simplicity, the example handles only the first signature.
-Dim firstSignatureField As SignatureField = TryCast(Me.pdfViewer.Document.AcroForm.FormFields.FirstOrDefault(Function(field) field.FieldType = FormFieldType.Signature), SignatureField)
-If firstSignatureField IsNot Nothing AndAlso firstSignatureField.Signature IsNot Nothing Then
-    Dim validationResult As SignatureValidationResult = Nothing
-    If firstSignatureField.Signature.TryValidate(validationResult) Then
-        If Not validationResult.IsDocumentModified Then
-            If validationResult.IsCertificateValid Then
-                validationStatus = "Valid"
-            Else
-                validationStatus = "Unknown"
-            End If
-        Else
-            validationStatus = "Invalid"
-        End If
-    Else
-        validationStatus = "Invalid"
-    End If
-Else
-    validationStatus = "None"
-End If
-
-```` 
-
- 
-{{endregion}} 
- 
 
 
 ## Limitations

@@ -21,19 +21,10 @@ The caret of **RadSyntaxEditor** is a vertical 'blinking' line that represents t
 
 #### Setting the caret's display mode
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=SetCaretDisplayMode}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=SetCaretDisplayMode}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-setcaretdisplaymode-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-setcaretdisplaymode-vb' />
 
-````C#
-this.radSyntaxEditor1.CaretDisplayMode = CaretDisplayMode.QuarterBlock;
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.CaretDisplayMode = CaretDisplayMode.QuarterBlock
-
-````
-
-{{endregion}} 
 
 ## Hide the Caret
 
@@ -41,21 +32,10 @@ If you want to hide the caret, you can do so by setting the **IsCaretVisible** p
 
 #### Setting the caret's display mode
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=HideCaret}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=HideCaret}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-hidecaret-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-hidecaret-vb' />
 
-````C#
-this.radSyntaxEditor1.IsCaretVisible = false;
-this.radSyntaxEditor1.SyntaxEditorElement.IsReadOnly = true;
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.IsCaretVisible = False
-Me.RadSyntaxEditor1.SyntaxEditorElement.IsReadOnly = True
-
-````
-
-{{endregion}} 
 
 ## Caret Color
 
@@ -63,19 +43,10 @@ Through the **CaretColor** property, you can change the caret's color to a color
 
 #### Setting the caret's color
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=CaretColor}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=CaretColor}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-caretcolor-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-caretcolor-vb' />
 
-````C#
-this.radSyntaxEditor1.CaretColor = Color.Red;
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.CaretColor = Color.Red
-
-````
-
-{{endregion}} 
 
 #### Figure 2: RadSyntaxEditor caret with red color
 ![WinForms RadSyntaxEditor with Red Caret](images/caret005.png)
@@ -84,19 +55,10 @@ Me.RadSyntaxEditor1.CaretColor = Color.Red
 
 **CaretPosition** property provides information about the position of the caret and gives opportunity to manage it. For example, by default the caret is displayed at the beggining of the document. You can change its position so that it shows at the end of the document by using the **MoveToEndOfDocument** method:
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=CaretPosition}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=CaretPosition}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-caretposition-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-caretposition-vb' />
 
-````C#
-this.radSyntaxEditor1.SyntaxEditorElement.CaretPosition.MoveToEndOfDocument();
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.SyntaxEditorElement.CaretPosition.MoveToEndOfDocument()
-
-````
-
-{{endregion}} 
 
 Another useful methods are listed below:
 

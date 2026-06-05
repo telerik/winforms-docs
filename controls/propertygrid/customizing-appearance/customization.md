@@ -33,65 +33,10 @@ Here is an example on how you can change the back color of the subitems and also
 
 #### Customizing Items
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomization.cs region=itemFormatting}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomization.vb region=itemFormatting}} 
+<snippet id='propertygrid-propertygridcustomization-itemformatting-cs' />
+<snippet id='propertygrid-propertygridcustomization-itemformatting-vb' />
 
-````C#
-void radPropertyGrid1_ItemFormatting(object sender, PropertyGridItemFormattingEventArgs e)
-{
-    //set the back color of all child items to yellow
-    if (e.Item.Level > 0)
-    {
-        e.VisualElement.BackColor = Color.LightCyan;
-    }
-    else
-    {
-        e.VisualElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-    }
-    //set the back color of items with value True to LightGreen and with value equal to False to Red
-    PropertyGridItem item = e.Item as PropertyGridItem;
-    if (item != null && item.Value != null)
-    {
-        if (item.Value.ToString() == "True")
-        {
-            e.VisualElement.BackColor = Color.LightGreen;
-        }
-        else if (item.Value.ToString() == "False")
-        {
-            e.VisualElement.BackColor = Color.LightCoral;
-        }
-    }
-    else
-    {
-        e.VisualElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-    }
-}
 
-````
-````VB.NET
-Private Sub radPropertyGrid1_ItemFormatting(ByVal sender As Object, ByVal e As PropertyGridItemFormattingEventArgs)
-    'set the back color of all child items to yellow
-    If e.Item.Level > 0 Then
-        e.VisualElement.BackColor = Color.LightCyan
-    Else
-        e.VisualElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-    'set the back color of items with value True to LightGreen and with value equal to False to Red
-    Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
-    If item IsNot Nothing AndAlso item.Value IsNot Nothing Then
-        If item.Value.ToString() = "True" Then
-            e.VisualElement.BackColor = Color.LightGreen
-        ElseIf item.Value.ToString() = "False" Then
-            e.VisualElement.BackColor = Color.LightCoral
-        End If
-    Else
-        e.VisualElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 # See Also
 

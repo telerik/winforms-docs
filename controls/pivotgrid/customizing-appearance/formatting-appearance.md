@@ -23,47 +23,10 @@ Using the **CellFormatting** event you can also set various properties of the **
 
 #### CellFormatting Event
 
-{{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=CellFormatting}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=CellFormatting}} 
+<snippet id='pivotgrid-pivotgridformattingappearance-cellformatting-cs' />
+<snippet id='pivotgrid-pivotgridformattingappearance-cellformatting-vb' />
 
-````C#
-void radPivotGrid1_CellFormatting(object sender, PivotCellEventArgs e)
-{
-    if (e.CellElement.Row.Name == "August" && !e.CellElement.IsInGrandTotalColumn)
-    {
-        e.CellElement.BackColor = Color.LightCyan;
-        e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-    }
-    else if (e.CellElement.Row.Name == "November" && !e.CellElement.IsInGrandTotalColumn)
-    {
-        e.CellElement.BackColor = Color.LightGreen;
-        e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-    }
-    else
-    {
-        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local);
-        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local);
-    }
-}
 
-````
-````VB.NET
-Private Sub radPivotGrid1_CellFormatting(sender As Object, e As PivotCellEventArgs)
-    If e.CellElement.Row.Name = "August" AndAlso Not e.CellElement.IsInGrandTotalColumn Then
-        e.CellElement.BackColor = Color.LightCyan
-        e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-    ElseIf e.CellElement.Row.Name = "November" AndAlso Not e.CellElement.IsInGrandTotalColumn Then
-        e.CellElement.BackColor = Color.LightGreen
-        e.CellElement.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-    Else
-        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, Telerik.WinControls.ValueResetFlags.Local)
-        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, Telerik.WinControls.ValueResetFlags.Local)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 ## GroupElementFormatting
 
@@ -74,51 +37,10 @@ The **GroupElementFormatting** event can be used for styling the group cells:
 
 #### GroupElementFormatting Event
 
-{{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=Group}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=Group}} 
+<snippet id='pivotgrid-pivotgridformattingappearance-group-cs' />
+<snippet id='pivotgrid-pivotgridformattingappearance-group-vb' />
 
-````C#
-void PivotGridElement_GroupElementFormatting(object sender, PivotGroupElementEventArgs e)
-{
-    if (e.GroupElement.Data.Name == "1996")
-    {
-        e.GroupElement.BackColor = Color.LightCyan;
-    }
-    else if (e.GroupElement.Data.Name == "1997")
-    {
-        e.GroupElement.BackColor = Color.LightGreen;
-    }
-    else if (e.GroupElement.Data.Name.Contains("Total"))
-    {
-        e.GroupElement.ForeColor = Color.DarkRed;
-        e.GroupElement.BackColor = Color.White;
-    }
-    else
-    {
-        e.GroupElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
-        e.GroupElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-    }
-}
 
-````
-````VB.NET
-Private Sub PivotGridElement_GroupElementFormatting(ByVal sender As Object, ByVal e As PivotGroupElementEventArgs)
-    If e.GroupElement.Data.Name = "1996" Then
-        e.GroupElement.BackColor = Color.LightCyan
-    ElseIf e.GroupElement.Data.Name = "1997" Then
-        e.GroupElement.BackColor = Color.LightGreen
-    ElseIf e.GroupElement.Data.Name.Contains("Total") Then
-        e.GroupElement.ForeColor = Color.DarkRed
-        e.GroupElement.BackColor = Color.White
-    Else
-        e.GroupElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
-        e.GroupElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 ##  ErrorString and EmpltyValueString
 
@@ -126,21 +48,10 @@ Using the __ErrorString__ and __EmpltyValueString__ properties of RadPivotGrid, 
 
 #### Error and Empty Value Strings
 
-{{source=..\SamplesCS\PivotGrid\PivotGridFormattingAppearance.cs region=SetFormatStrings}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridFormattingAppearance.vb region=SetFormatStrings}} 
+<snippet id='pivotgrid-pivotgridformattingappearance-setformatstrings-cs' />
+<snippet id='pivotgrid-pivotgridformattingappearance-setformatstrings-vb' />
 
-````C#
-this.radPivotGrid1.ErrorString = "Error";
-this.radPivotGrid1.EmptyValueString = "No Data";
 
-````
-````VB.NET
-Me.RadPivotGrid1.ErrorString = "Error"
-Me.RadPivotGrid1.EmptyValueString = "No Data"
-
-````
-
-{{endregion}}
 
 # See Also
 

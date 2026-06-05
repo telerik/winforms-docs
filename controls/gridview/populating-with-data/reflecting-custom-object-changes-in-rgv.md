@@ -31,153 +31,18 @@ Here are the steps for this scenario:
 
 1\.  Create a class called `Student`:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\Student.cs region=student}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\Student.vb region=student}} 
-
-````C#
-public class Student
-{
-    int m_id;
-    string m_name;
-    string m_grade;
-    public Student(int m_id, string m_name, string m_grade)
-    {
-        this.m_id = m_id;
-        this.m_name = m_name;
-        this.m_grade = m_grade;
-    }
-    public int Id
-    {
-        get
-        {
-            return m_id;
-        }
-        set
-        {
-            m_id = value;
-        }
-    }
-    public string Name
-    {
-        get
-        {
-            return m_name;
-        }
-        set
-        {
-            m_name = value;
-        }
-    }
-    public string Grade
-    {
-        get
-        {
-            return m_grade;
-        }
-        set
-        {
-            m_grade = value;
-        }
-    }
-}
-
-````
-````VB.NET
-Public Class Student
-    Private m_id As Integer
-    Private m_name As String
-    Private m_grade As String
-    Public Sub New(ByVal m_id As Integer, ByVal m_name As String, ByVal m_grade As String)
-        Me.m_id = m_id
-        Me.m_name = m_name
-        Me.m_grade = m_grade
-    End Sub
-    Public Property Id() As Integer
-        Get
-            Return m_id
-        End Get
-        Set(ByVal value As Integer)
-            m_id = value
-        End Set
-    End Property
-    Public Property Name() As String
-        Get
-            Return m_name
-        End Get
-        Set(ByVal value As String)
-            m_name = value
-        End Set
-    End Property
-    Public Property Grade() As String
-        Get
-            Return m_grade
-        End Get
-        Set(ByVal value As String)
-            m_grade = value
-        End Set
-    End Property
-End Class
-
-````
-
-{{endregion}} 
+<snippet id='gridview-student-student-cs' />
+<snippet id='gridview-student-student-vb' />
 
 2\. Fill a `List` with several `Students` and bind it to RadGridView:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=list}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=list}} 
-
-````C#
-List<Student> collectionOfStudents = new List<Student>();
-protected override void OnLoad(EventArgs e)
-{
-    base.OnLoad(e);
-    
-    collectionOfStudents.Add(new Student(0, "Peter", "A+"));
-    collectionOfStudents.Add(new Student(1, "John", "D-"));
-    collectionOfStudents.Add(new Student(2, "Antony", "B+"));
-    collectionOfStudents.Add(new Student(3, "David", "A-"));
-    collectionOfStudents.Add(new Student(4, "John", "D-"));
-    this.radGridView1.DataSource = collectionOfStudents;
-}
-
-````
-````VB.NET
-Private collectionOfStudents As New List(Of Student)()
-Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-    MyBase.OnLoad(e)
-    collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-    collectionOfStudents.Add(New Student(1, "John", "D-"))
-    collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-    collectionOfStudents.Add(New Student(3, "David", "A-"))
-    collectionOfStudents.Add(New Student(4, "John", "D-"))
-    Me.radGridView1.DataSource = collectionOfStudents
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-reflectingcustomobjectchanges-list-cs' />
+<snippet id='gridview-reflectingcustomobjectchanges-list-vb' />
 
 3\. On a button click, remove the first `Student` from the collection:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=buttonRemove}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=buttonRemove}} 
-
-````C#
-private void btnDeleteRecord_Click(object sender, EventArgs e)
-{
-    collectionOfStudents.RemoveAt(0);
-}
-
-````
-````VB.NET
-Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
-    collectionOfStudents.RemoveAt(0)
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-reflectingcustomobjectchanges-buttonremove-cs' />
+<snippet id='gridview-reflectingcustomobjectchanges-buttonremove-vb' />
 
 The initial view when we start the application is this:
 
@@ -198,80 +63,18 @@ Let's now bind RadGridView to a collection that implements `IBindingList`. A ver
 
 2\. Fill a `BindingList` with several `Students` and bind it to RadGridView:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=bindingList}}
-{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=bindingList}}
-
-````C#
-BindingList<Student> collectionOfStudents = new BindingList<Student>();
-protected override void OnLoad(EventArgs e)
-{
-    base.OnLoad(e);
-    collectionOfStudents.Add(new Student(0, "Peter", "A+"));
-    collectionOfStudents.Add(new Student(1, "John", "D-"));
-    collectionOfStudents.Add(new Student(2, "Antony", "B+"));
-    collectionOfStudents.Add(new Student(3, "David", "A-"));
-    collectionOfStudents.Add(new Student(4, "John", "D-"));
-    this.radGridView1.DataSource = collectionOfStudents;
-}
-
-````
-````VB.NET
-Private collectionOfStudents As New BindingList(Of Student)()
-Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-    MyBase.OnLoad(e)
-    collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-    collectionOfStudents.Add(New Student(1, "John", "D-"))
-    collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-    collectionOfStudents.Add(New Student(3, "David", "A-"))
-    collectionOfStudents.Add(New Student(4, "John", "D-"))
-    Me.radGridView1.DataSource = collectionOfStudents
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-reflectingcustomobjectchanges-bindinglist-cs' />
+<snippet id='gridview-reflectingcustomobjectchanges-bindinglist-vb' />
 
 3\. On a button click, remove the first Student from the collection:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=buttonRemove}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=buttonRemove}} 
-
-````C#
-private void btnDeleteRecord_Click(object sender, EventArgs e)
-{
-    collectionOfStudents.RemoveAt(0);
-}
-
-````
-````VB.NET
-Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
-    collectionOfStudents.RemoveAt(0)
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-reflectingcustomobjectchanges-buttonremove-cs' />
+<snippet id='gridview-reflectingcustomobjectchanges-buttonremove-vb' />
 
 4\. On a button click of another button, change the `Grade` of the last `Student` in the collection to "F":
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=setGrade}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=setGrade}} 
-
-````C#
-private void btnSetGrade_Click(object sender, EventArgs e)
-{
-    collectionOfStudents[collectionOfStudents.Count - 1].Grade = "F";
-}
-
-````
-````VB.NET
-Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
-    collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-reflectingcustomobjectchanges-setgrade-cs' />
+<snippet id='gridview-reflectingcustomobjectchanges-setgrade-vb' />
 
 Let's now test this case. At the beginning we have this view:
 
@@ -293,208 +96,23 @@ This is the most valid case among the three described cases. Here, we are bindin
 
 1\. Create a class Student that implements `INotifyPropertyChanged`:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\StudentDynamic.cs region=student}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\StudentDynamic.vb region=student}} 
-
-````C#
-public class Student : System.ComponentModel.INotifyPropertyChanged
-{
-    int m_id;
-    string m_name;
-    string m_grade;
-    public event PropertyChangedEventHandler PropertyChanged;
-    public Student(int m_id, string m_name, string m_grade)
-    {
-        this.m_id = m_id;
-        this.m_name = m_name;
-        this.m_grade = m_grade;
-    }
-    public int Id
-    {
-        get
-        {
-            return m_id;
-        }
-        set
-        {
-            if (this.m_id != value)
-            {
-                this.m_id = value;
-                OnPropertyChanged("Id");
-            }
-        }
-    }
-    public string Name
-    {
-        get
-        {
-            return m_name;
-        }
-        set
-        {
-            if (this.m_name != value)
-            {
-                this.m_name = value;
-                OnPropertyChanged("Name");
-            }
-        }
-    }
-    public string Grade
-    {
-        get
-        {
-            return m_grade;
-        }
-        set
-        {
-            if (this.m_grade != value)
-            {
-                this.m_grade = value;
-                OnPropertyChanged("Grade");
-            }
-        }
-    }
-    
-    protected virtual void OnPropertyChanged(string propertyName)
-    {
-        if (PropertyChanged != null)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
-}
-
-````
-````VB.NET
-Public Class Student
-    Implements System.ComponentModel.INotifyPropertyChanged
-    Private m_id As Integer
-    Private m_name As String
-    Private m_grade As String
-    Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-    Public Sub New(ByVal m_id As Integer, ByVal m_name As String, ByVal m_grade As String)
-        Me.m_id = m_id
-        Me.m_name = m_name
-        Me.m_grade = m_grade
-    End Sub
-    Public Property Id() As Integer
-        Get
-            Return m_id
-        End Get
-        Set(ByVal value As Integer)
-            If Me.m_id <> value Then
-                Me.m_id = value
-                OnPropertyChanged("Id")
-            End If
-        End Set
-    End Property
-    Public Property Name() As String
-        Get
-            Return m_name
-        End Get
-        Set(ByVal value As String)
-            If Me.m_name <> value Then
-                Me.m_name = value
-                OnPropertyChanged("Name")
-            End If
-        End Set
-    End Property
-    Public Property Grade() As String
-        Get
-            Return m_grade
-        End Get
-        Set(ByVal value As String)
-            If Me.m_grade <> value Then
-                Me.m_grade = value
-                OnPropertyChanged("Grade")
-            End If
-        End Set
-    End Property
-    Protected Overridable Sub OnPropertyChanged(ByVal propertyName As String)
-        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-    End Sub
-End Class
-
-````
-
-{{endregion}} 
+<snippet id='gridview-studentdynamic-student-cs' />
+<snippet id='gridview-studentdynamic-student-vb' />
 
 2\. Fill a BindingList collection with a few objects of type `Student` and bind RadGridView to it:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=bindingList}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=bindingList}} 
-
-````C#
-BindingList<Student> collectionOfStudents = new BindingList<Student>();
-protected override void OnLoad(EventArgs e)
-{
-    base.OnLoad(e);
-    collectionOfStudents.Add(new Student(0, "Peter", "A+"));
-    collectionOfStudents.Add(new Student(1, "John", "D-"));
-    collectionOfStudents.Add(new Student(2, "Antony", "B+"));
-    collectionOfStudents.Add(new Student(3, "David", "A-"));
-    collectionOfStudents.Add(new Student(4, "John", "D-"));
-    this.radGridView1.DataSource = collectionOfStudents;
-}
-
-````
-````VB.NET
-Private collectionOfStudents As New BindingList(Of Student)()
-Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-    MyBase.OnLoad(e)
-    collectionOfStudents.Add(New Student(0, "Peter", "A+"))
-    collectionOfStudents.Add(New Student(1, "John", "D-"))
-    collectionOfStudents.Add(New Student(2, "Antony", "B+"))
-    collectionOfStudents.Add(New Student(3, "David", "A-"))
-    collectionOfStudents.Add(New Student(4, "John", "D-"))
-    Me.radGridView1.DataSource = collectionOfStudents
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-reflectingcustomobjectchanges-bindinglist-cs' />
+<snippet id='gridview-reflectingcustomobjectchanges-bindinglist-vb' />
 
 3\. On a button click, remove the first object in the collection:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=buttonRemove}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=buttonRemove}} 
-
-````C#
-private void btnDeleteRecord_Click(object sender, EventArgs e)
-{
-    collectionOfStudents.RemoveAt(0);
-}
-
-````
-````VB.NET
-Private Sub btnDeleteRecord_Click(ByVal sender As Object, ByVal e As EventArgs)
-    collectionOfStudents.RemoveAt(0)
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-reflectingcustomobjectchanges-buttonremove-cs' />
+<snippet id='gridview-reflectingcustomobjectchanges-buttonremove-vb' />
 
 4\. On a button click of another button, set the `Grade` of the last `Student` to "F":
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\ReflectingCustomObjectChanges.cs region=setGrade}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\ReflectingCustomObjectChanges.vb region=setGrade}} 
-
-````C#
-private void btnSetGrade_Click(object sender, EventArgs e)
-{
-    collectionOfStudents[collectionOfStudents.Count - 1].Grade = "F";
-}
-
-````
-````VB.NET
-Private Sub btnSetGrade_Click(ByVal sender As Object, ByVal e As EventArgs)
-    collectionOfStudents(collectionOfStudents.Count - 1).Grade = "F"
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-reflectingcustomobjectchanges-setgrade-cs' />
+<snippet id='gridview-reflectingcustomobjectchanges-setgrade-vb' />
 
 Let's now test this case. At the beginning we have this view:
 

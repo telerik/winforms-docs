@@ -23,95 +23,10 @@ Additionally, since the type of the __ResourceId__ property in the __Appointment
 
 #### Convert Methods
 
-{{source=..\SamplesCS\Scheduler\DataBinding\SettingAppointmentAndResourceRelations.cs region=sample}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\SettingAppointmentAndResourceRelations.vb region=sample}} 
+<snippet id='scheduler-settingappointmentandresourcerelations-sample-cs' />
+<snippet id='scheduler-settingappointmentandresourcerelations-sample-vb' />
 
-````C#
-private void SettingAppointmentAndResourceRelations_Load(object sender, EventArgs e)
-{
-    // TODO: This line of code loads data into the 'schedulerDataOneToManyDataSet.Resources' table. You can move, or remove it, as needed.
-    this.resourcesTableAdapter.Fill(this.schedulerDataOneToManyDataSet.Resources);
-    // TODO: This line of code loads data into the 'schedulerDataOneToManyDataSet.Appointments' table. You can move, or remove it, as needed.
-    this.appointmentsTableAdapter.Fill(this.schedulerDataOneToManyDataSet.Appointments);
-    AppointmentMappingInfo appointmentMapping = new AppointmentMappingInfo();
-    ResourceMappingInfo resourceMapping = new ResourceMappingInfo();
-    appointmentMapping.Start = "Start";
-    appointmentMapping.End = "End";
-    appointmentMapping.Summary = "Summary";
-    appointmentMapping.Description = "Description";
-    appointmentMapping.Location = "Location";
-    appointmentMapping.BackgroundId = "BackgroundID";
-    appointmentMapping.StatusId = "StatusID";
-    appointmentMapping.RecurrenceRule = "RecurrenceRule";
-    appointmentMapping.ResourceId = "ResourceID";
-    appointmentMapping.FindBySchedulerProperty("ResourceId").ConvertToDataSource = ConvertResourceToDataSource;
-    appointmentMapping.FindBySchedulerProperty("ResourceId").ConvertToScheduler = ConvertResourceToScheduler;
-    resourceMapping.Name = "ResourceName";
-    resourceMapping.Id = "ID";
-    this.schedulerBindingDataSource1.ResourceProvider.Mapping = resourceMapping;
-    this.schedulerBindingDataSource1.ResourceProvider.DataSource = this.schedulerDataOneToManyDataSet.Resources;
-    this.schedulerBindingDataSource1.EventProvider.Mapping = appointmentMapping;
-    this.schedulerBindingDataSource1.EventProvider.DataSource = this.schedulerDataOneToManyDataSet.Appointments;
-    this.radScheduler1.DataSource = this.schedulerBindingDataSource1;
-    this.radScheduler1.GroupType = GroupType.Resource;
-}
-private object ConvertResourceToScheduler(object item)
-{
-    return new EventId(item);
-}
-private object ConvertResourceToDataSource(object item)
-{
-    EventId resourceId = item as EventId;
-    if (item != null && resourceId.KeyValue is int)
-    {
-        return resourceId.KeyValue;
-    }
-    return DBNull.Value;
-}
 
-````
-````VB.NET
-Private Sub SettingAppointmentAndResourceRelations_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-    'TODO: This line of code loads data into the 'SchedulerDataOneToManyDataSet.Resources' table. You can move, or remove it, as needed.
-    Me.ResourcesTableAdapter.Fill(Me.SchedulerDataOneToManyDataSet.Resources)
-    'TODO: This line of code loads data into the 'SchedulerDataOneToManyDataSet.Appointments' table. You can move, or remove it, as needed.
-    Me.AppointmentsTableAdapter.Fill(Me.SchedulerDataOneToManyDataSet.Appointments)
-    Dim appointmentMapping As New AppointmentMappingInfo()
-    Dim resourceMapping As New ResourceMappingInfo()
-    appointmentMapping.Start = "Start"
-    appointmentMapping.[End] = "End"
-    appointmentMapping.Summary = "Summary"
-    appointmentMapping.Description = "Description"
-    appointmentMapping.Location = "Location"
-    appointmentMapping.BackgroundId = "BackgroundID"
-    appointmentMapping.StatusId = "StatusID"
-    appointmentMapping.RecurrenceRule = "RecurrenceRule"
-    appointmentMapping.ResourceId = "ResourceID"
-    appointmentMapping.FindBySchedulerProperty("ResourceId").ConvertToDataSource = AddressOf ConvertResourceToDataSource
-    appointmentMapping.FindBySchedulerProperty("ResourceId").ConvertToScheduler = AddressOf ConvertResourceToScheduler
-    resourceMapping.Name = "ResourceName"
-    resourceMapping.Id = "ID"
-    Me.SchedulerBindingDataSource1.ResourceProvider.Mapping = resourceMapping
-    Me.SchedulerBindingDataSource1.ResourceProvider.DataSource = Me.SchedulerDataOneToManyDataSet.Resources
-    Me.SchedulerBindingDataSource1.EventProvider.Mapping = appointmentMapping
-    Me.SchedulerBindingDataSource1.EventProvider.DataSource = Me.SchedulerDataOneToManyDataSet.Appointments
-    Me.RadScheduler1.DataSource = Me.SchedulerBindingDataSource1
-    Me.RadScheduler1.GroupType = GroupType.Resource
-End Sub
-Private Function ConvertResourceToScheduler(ByVal item As Object) As Object
-    Return New EventId(item)
-End Function
-Private Function ConvertResourceToDataSource(ByVal item As Object) As Object
-    Dim resourceId As EventId = TryCast(item, EventId)
-    If Not item Is Nothing AndAlso TypeOf resourceId.KeyValue Is Integer Then
-        Return resourceId.KeyValue
-    End If
-    Return DBNull.Value
-End Function
-
-````
-
-{{endregion}} 
 
 >important A common case is that the resource_id field is stored as an integer field in your DataSource. But **RadScheduler** needs **EventId** type. You can have a look at the Appointment.**ResourceId** property which expects **EventId** value, not an integer. That is why it is necessary to use a **SchedulerMapping** in this case and convert the integer value to **EventId** used by **RadScheduler** and convert the **EventId** to an integer used by your **DataSource**. This conversion is performed by the **ConvertToDataSource** and **ConvertToScheduler** callbacks. Additional information for the **SchedulerMapping** is available [here]({%slug winforms/scheduler/data-binding/scheduler-mapping%})
 

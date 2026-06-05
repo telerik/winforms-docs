@@ -28,87 +28,31 @@ previous_url: spellchecker-dictionaries
 
 #### Creating a custom WordDictionary
 
-{{source=..\SamplesCS\SpellChecker\GermanDictionary.cs region=germanDictionary}} 
-{{source=..\SamplesVB\SpellChecker\GermanDictionary.vb region=germanDictionary}} 
+<snippet id='spellchecker-germandictionary-germandictionary-cs' />
+<snippet id='spellchecker-germandictionary-germandictionary-vb' />
 
-````C#
-public class GermanDictionary : WordDictionary
-{
-    protected override void EnsureDictionaryLoadedOverride()
-    {
-        using (MemoryStream ms = new MemoryStream(SamplesCS.Properties.Resources.de_DE))
-        {
-            this.Load(ms);
-        }
-    }
-}
 
-````
-````VB.NET
-Public Class GermanDictionary
-    Inherits WordDictionary
-    Protected Overrides Sub EnsureDictionaryLoadedOverride()
-        Using ms As MemoryStream = New MemoryStream(My.Resources.de_DE)
-            Me.Load(ms)
-        End Using
-    End Sub
-End Class
-
-````
-
-{{endregion}} 
 
 4\. Next, we should add the custom dictionary to our **RadSpellChecker**. Please note, that dictionaries are added per control types basis using the __GetControlSpellChecker__ method. This way, using just one **RadSpellChecker** instance you can add different dictionaries of one and the same language in the context of different controls that need to be spell checked. For example, here we are going to add a dictionary that will be used only for **RadTextBox** instances. In addition, we need to define a **CultureInfo** that will be stored together with the dictionary in the list of dictionaries. This culture will serve as a primary key for the respective dictionary in the dictionaries collection.
 
-{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=defineCulture}} 
-{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=defineCulture}} 
+<snippet id='spellchecker-dictionaries-defineculture-cs' />
+<snippet id='spellchecker-dictionaries-defineculture-vb' />
 
-````C#
-private static readonly CultureInfo GermanCulture = CultureInfo.GetCultureInfo("de-DE");
 
-````
-````VB.NET
-Friend Shared GermanCulture As CultureInfo = CultureInfo.GetCultureInfo("de-DE")
-
-````
-
-{{endregion}}
 
 #### Adding a dictionary
 
-{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=addingDictionary}} 
-{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=addingDictionary}} 
+<snippet id='spellchecker-dictionaries-addingdictionary-cs' />
+<snippet id='spellchecker-dictionaries-addingdictionary-vb' />
 
-````C#
-IControlSpellChecker textBoxControlSpellChecker = this.radSpellChecker1.GetControlSpellChecker(typeof(RadTextBox));
-DocumentSpellChecker documentSpellChecker = textBoxControlSpellChecker.SpellChecker as DocumentSpellChecker;
-documentSpellChecker.AddDictionary(new GermanDictionary(), GermanCulture);
 
-````
-````VB.NET
-Dim textBoxControlSpellChecker As IControlSpellChecker = Me.radSpellChecker1.GetControlSpellChecker(GetType(RadTextBox))
-Dim documentSpellChecker As DocumentSpellChecker = TryCast(textBoxControlSpellChecker.SpellChecker, DocumentSpellChecker)
-documentSpellChecker.AddDictionary(New GermanDictionary(), GermanCulture)
-
-````
-
-{{endregion}} 
 
 5\. Now, we have to set the __SpellCheckingCulture__ property that will determine which of the available dictionaries will be used (in case dictionaries of different languages are added).  
 
-{{source=..\SamplesCS\SpellChecker\Dictionaries.cs region=settingCulture}} 
-{{source=..\SamplesVB\SpellChecker\Dictionaries.vb region=settingCulture}} 
+<snippet id='spellchecker-dictionaries-settingculture-cs' />
+<snippet id='spellchecker-dictionaries-settingculture-vb' />
 
-````C#
-documentSpellChecker.SpellCheckingCulture = GermanCulture;
 
-````
-````VB.NET
-documentSpellChecker.SpellCheckingCulture = GermanCulture
-
-````
-
-{{endregion}} 
 
 If this property is not set, **RadSpellChecker** will try check if there is a dictionary whose culture is the **CurrentUICulture** of the application. If such a dictionary is found, **RadSpellChecker** will use that dictionary.
 

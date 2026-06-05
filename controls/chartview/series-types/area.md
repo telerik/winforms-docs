@@ -15,41 +15,10 @@ As a derivative of __Categorical__ series, __AreaSeries__ plot their data points
 
 #### Initial Setup
 
-{{source=..\SamplesCS\ChartView\Series\AreaSeriesForm.cs region=area}} 
-{{source=..\SamplesVB\ChartView\Series\AreaSeriesForm.vb region=area}} 
+<snippet id='chartview-area-area-cs'/>
+<snippet id='chartview-area-area-vb'/>
 
-````C#
-AreaSeries areaSeries = new AreaSeries();
-areaSeries.DataPoints.Add(new CategoricalDataPoint(13, "Jan"));
-areaSeries.DataPoints.Add(new CategoricalDataPoint(20, "Apr"));
-areaSeries.DataPoints.Add(new CategoricalDataPoint(15, "Jul"));
-areaSeries.DataPoints.Add(new CategoricalDataPoint(16, "Oct"));
-this.radChartView1.Series.Add(areaSeries);
-AreaSeries areaSeries2 = new AreaSeries(); 
-areaSeries2.DataPoints.Add(new CategoricalDataPoint(15, "Jan"));
-areaSeries2.DataPoints.Add(new CategoricalDataPoint(25, "Apr"));
-areaSeries2.DataPoints.Add(new CategoricalDataPoint(27, "Jul"));
-areaSeries2.DataPoints.Add(new CategoricalDataPoint(18, "Oct"));
-this.radChartView1.Series.Add(areaSeries2);
 
-````
-````VB.NET
-Dim series As New AreaSeries()
-series.DataPoints.Add(New CategoricalDataPoint(13, "Jan"))
-series.DataPoints.Add(New CategoricalDataPoint(20, "Apr"))
-series.DataPoints.Add(New CategoricalDataPoint(15, "Jul"))
-series.DataPoints.Add(New CategoricalDataPoint(16, "Oct"))
-Me.RadChartView1.Series.Add(series)
-Dim series2 As New AreaSeries()
-series2.DataPoints.Add(New CategoricalDataPoint(15, "Jan"))
-series2.DataPoints.Add(New CategoricalDataPoint(25, "Apr"))
-series2.DataPoints.Add(New CategoricalDataPoint(27, "Jul"))
-series2.DataPoints.Add(New CategoricalDataPoint(18, "Oct"))
-Me.RadChartView1.Series.Add(series2)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Initial Setup
 ![WinForms RadChartView Area Initial Setup](images/chartview-series-types-area001.png)

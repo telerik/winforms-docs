@@ -30,22 +30,10 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=CustomizeElementProgrammatically}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=CustomizeElementProgrammatically}}
-````C#
-this.radBrowseEditor1.BrowseElement.BrowseButton.ButtonFillElement.NumberOfColors = 1;
-this.radBrowseEditor1.BrowseElement.BrowseButton.ButtonFillElement.BackColor = Color.LightGreen;
-
-````
-````VB.NET
-Me.RadBrowseEditor1.BrowseElement.BrowseButton.ButtonFillElement.NumberOfColors = 1
-Me.RadBrowseEditor1.BrowseElement.BrowseButton.ButtonFillElement.BackColor = Color.LightGreen
-
-```` 
+<snippet id='editors-browseeditor1-customizeelementprogrammatically-cs' />
+<snippet id='editors-browseeditor1-customizeelementprogrammatically-vb' />
 
 
-
-{{endregion}} 
 
 # See Also 
 

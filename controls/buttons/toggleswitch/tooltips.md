@@ -15,42 +15,15 @@ There are two ways to assign tooltips to __RadToggleSwitch__, namely setting the
 
 #### Setting the ToolTipText property
 
-{{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=SetToolTipText}} 
-{{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=SetToolTipText}}
-
-````C#
-this.radToggleSwitch1.ToggleSwitchElement.ToolTipText = "sample tooltip";
-
-````
-````VB.NET
-Me.RadToggleSwitch1.ToggleSwitchElement.ToolTipText = "sample tooltip"
-
-````
-
-{{endregion}} 
+<snippet id='buttons-toggleswitch-tooltips-settooliptext-cs' />
+<snippet id='buttons-toggleswitch-tooltips-settooliptext-vb' />
 
 ![WinForms RadToggleSwitch ToolTipText](images/buttons-toggleswitch-tooltips001.png)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
-{{source=..\SamplesCS\Buttons\ToggleSwitch.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\Buttons\ToggleSwitch.vb region=ToolTipTextNeeded}}
-
-````C#
-private void RadToggleSwitch1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    e.ToolTipText = "Click me";
-}
-
-````
-````VB.NET
-Private Sub RadToggleSwitch1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    e.ToolTipText = "Click me"
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='buttons-toggleswitch-tooltips-tooltiptextneeded-cs' />
+<snippet id='buttons-toggleswitch-tooltips-tooltiptextneeded-vb' />
 
 ![WinForms RadToggleSwitch ToolTipTextNeeded](images/buttons-toggleswitch-tooltips002.png)
 

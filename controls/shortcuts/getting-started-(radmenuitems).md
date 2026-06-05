@@ -48,8 +48,8 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 5\. Inside the event handlers add the following code:
 
-{{source=..\SamplesCS\Shortcuts\Form2.cs region=handlingClickEvent}} 
-{{source=..\SamplesVB\Shortcuts\Form2.vb region=handlingClickEvent}} 
+<snippet id='menus-form2-handlingclickevent-cs' />
+<snippet id='menus-form2-handlingclickevent-vb' />
 
 ````C#
 void radMenuItem1_Click(object sender, EventArgs e)
@@ -72,12 +72,10 @@ End Sub
 
 ````
 
-{{endregion}} 
-
 6\. Now, all you have to do is to add the shortcuts to the desired items
 
-{{source=..\SamplesCS\Shortcuts\Form2.cs region=menuShortcuts}} 
-{{source=..\SamplesVB\Shortcuts\Form2.vb region=menuShortcuts}} 
+<snippet id='menus-form2-menushortcuts-cs' />
+<snippet id='menus-form2-menushortcuts-vb' />
 
 ````C#
 this.radMenuItem1.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.N));
@@ -90,8 +88,6 @@ Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
 
 ````
 
-{{endregion}} 
-
 >note In the constructor of **RadShortcut**, you should first pass the key modifier as a parameter and then an array of the key mappings.
 >
 
@@ -103,8 +99,8 @@ Interesting functionality to mention is the ability to set your own custom text 
 
 #### Specifying HintText
 
-{{source=..\SamplesCS\Shortcuts\Form2.cs region=SetHintText}} 
-{{source=..\SamplesVB\Shortcuts\Form2.vb region=SetHintText}} 
+<snippet id='menus-form2-sethinttext-cs' />
+<snippet id='menus-form2-sethinttext-vb' />
 
 ````C#
 radMenuItem2.HintText = "Custom Text";
@@ -114,8 +110,6 @@ radMenuItem2.HintText = "Custom Text";
 RadMenuItem2.HintText = "Custom Text"
 
 ````
-
-{{endregion}} 
 
 ![WinForms RadShortcuts Specifying HintText](images/shortcuts-getting-started-(radmenuitems)004.png)
 

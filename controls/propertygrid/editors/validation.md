@@ -29,47 +29,10 @@ The code snippet below demonstrates simple data validation scenario. It is perfo
 
 #### Property validation
 
-{{source=..\SamplesCS\PropertyGrid\Editors\PropertyGridValidation.cs region=PropertyValidating}} 
-{{source=..\SamplesVB\PropertyGrid\Editors\PropertyGridValidation.vb region=PropertyValidating}} 
+<snippet id='propertygrid-propertygridvalidation-propertyvalidating-cs' />
+<snippet id='propertygrid-propertygridvalidation-propertyvalidating-vb' />
 
-````C#
-void radPropertyGrid1_PropertyValidating(object sender, PropertyValidatingEventArgs e)
-{
-    PropertyGridItem item = e.Item as PropertyGridItem;
-    if (item.PropertyType == typeof(string))
-    {
-        if (string.IsNullOrEmpty(e.NewValue.ToString()))
-        {
-            item.ErrorMessage = "String value must not be an empty string!";
-            e.Cancel = true;
-        }
-    }
-}
-void radPropertyGrid1_Edited(object sender, PropertyGridItemEditedEventArgs e)
-{
-    PropertyGridItem item = e.Item as PropertyGridItem;
-    item.ErrorMessage = "";
-}
 
-````
-````VB.NET
-Private Sub radPropertyGrid1_PropertyValidating(ByVal sender As Object, ByVal e As PropertyValidatingEventArgs)
-    Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
-    If item.PropertyType Is GetType(String) Then
-        If String.IsNullOrEmpty(e.NewValue.ToString()) Then
-            item.ErrorMessage = "String value must not be an empty string!"
-            e.Cancel = True
-        End If
-    End If
-End Sub
-Private Sub radPropertyGrid1_Edited(ByVal sender As Object, ByVal e As PropertyGridItemEditedEventArgs)
-    Dim item As PropertyGridItem = TryCast(e.Item, PropertyGridItem)
-    item.ErrorMessage = ""
-End Sub
-
-````
-
-{{endregion}}
 
 # See Also
 

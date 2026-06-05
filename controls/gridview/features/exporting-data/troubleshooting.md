@@ -23,42 +23,15 @@ Images cannot be exported to MS Excel, because Excel does not support embedded i
 
 Since __ExportToExcelML iterates__ through the grid elements, it does not export anything if the grid has not created its child elements yet (i.e. if there is a grid instance but it is not shown on a form). The solution is to use the __LoadElementTree__ method before running the export: 
 
-{{source=..\SamplesCS\GridView\ExportingData\Troubleshooting.cs region=inCaseOfBlankExcelDocument}} 
-{{source=..\SamplesVB\GridView\ExportingData\Troubleshooting.vb region=inCaseOfBlankExcelDocument}} 
-
-````C#
-this.radGridView1.LoadElementTree();
-
-````
-````VB.NET
-Me.RadGridView1.LoadElementTree()
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-troubleshooting-incaseofblankexceldocument-cs' />
+<snippet id='gridview-troubleshooting-incaseofblankexceldocument-vb' />
 
 ## MS Excel does not open the file directly after exporting the data from RadGridView (it prompts to save the file instead)
 
 The ExportToExcelML class does not support opening the excel file directly. However, you can easily implement similar functionality through the __Process.Start__ method:
 
-{{source=..\SamplesCS\GridView\ExportingData\Troubleshooting.cs region=openTheFileAfterExport}} 
-{{source=..\SamplesVB\GridView\ExportingData\Troubleshooting.vb region=openTheFileAfterExport}} 
-
-````C#
-ExportToExcelML exporter = new ExportToExcelML(this.radGridView1);
-exporter.RunExport(@"C:\Test.xls");
-System.Diagnostics.Process.Start(@"C:\Test.xls");
-
-````
-````VB.NET
-Dim exporter As ExportToExcelML = New ExportToExcelML(Me.RadGridView1)
-exporter.RunExport("C:\Test.xls")
-System.Diagnostics.Process.Start("C:\Test.xls")
-
-````
-
-{{endregion}} 
+<snippet id='gridview-troubleshooting-openthefileafterexport-cs' />
+<snippet id='gridview-troubleshooting-openthefileafterexport-vb' />
 
 ## Wrong text alignment for rows with conditional formatting
 

@@ -21,23 +21,10 @@ As the user types in one of the supported controls a red underline indicates the
 
 In order to enable this functionality you should set the __AutoSpellCheckControl__ property of **RadSpellChecker** to an instance of the supported controls:
 
-{{source=..\SamplesCS\SpellChecker\SpellCheckAsYouType.cs region=AutoSpellCheckControl}} 
-{{source=..\SamplesVB\SpellChecker\SpellCheckAsYouType.vb region=AutoSpellCheckControl}} 
+<snippet id='spellchecker-spellcheckasyoutype-autospellcheckcontrol-cs' />
+<snippet id='spellchecker-spellcheckasyoutype-autospellcheckcontrol-vb' />
 
-````C#
-this.radSpellChecker1.AutoSpellCheckControl = this.textBox1;
-this.radSpellChecker2.AutoSpellCheckControl = this.radTextBox1;
-this.radSpellChecker3.AutoSpellCheckControl = this.radTextBoxControl1;
 
-````
-````VB.NET
-Me.RadSpellChecker1.AutoSpellCheckControl = Me.TextBox1
-Me.RadSpellChecker2.AutoSpellCheckControl = Me.RadTextBox1
-Me.RadSpellChecker3.AutoSpellCheckControl = Me.RadTextBoxControl1
-
-````
-
-{{endregion}}  
 
 This property can also be set at design time:
 

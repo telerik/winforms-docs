@@ -31,28 +31,5 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Buttons\ToggleButton.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\Buttons\ToggleButton.vb region=AccessingCustomizingElements}} 
-
-````C#
-this.radToggleButton1.ButtonElement.TextElement.ForeColor = Color.Red;
-this.radToggleButton1.ButtonElement.ButtonFillElement.BackColor = Color.Aqua;
-this.radToggleButton1.ButtonElement.BorderElement.BoxStyle = Telerik.WinControls.BorderBoxStyle.FourBorders;
-this.radToggleButton1.ButtonElement.BorderElement.TopColor = Color.Aqua;
-this.radToggleButton1.ButtonElement.BorderElement.BottomColor = Color.Aqua;
-this.radToggleButton1.ButtonElement.BorderElement.LeftColor = Color.Red;
-this.radToggleButton1.ButtonElement.BorderElement.RightColor = Color.Red;
-
-````
-````VB.NET
-Me.radToggleButton1.ButtonElement.TextElement.ForeColor = Color.Red
-Me.radToggleButton1.ButtonElement.ButtonFillElement.BackColor = Color.Aqua
-Me.radToggleButton1.ButtonElement.BorderElement.BoxStyle = Telerik.WinControls.BorderBoxStyle.FourBorders
-Me.radToggleButton1.ButtonElement.BorderElement.TopColor = Color.Aqua
-Me.radToggleButton1.ButtonElement.BorderElement.BottomColor = Color.Aqua
-Me.radToggleButton1.ButtonElement.BorderElement.LeftColor = Color.Red
-Me.radToggleButton1.ButtonElement.BorderElement.RightColor = Color.Red
-
-````
-
-{{endregion}} 
+<snippet id='buttons-togglebutton-accessing-and-customizing-elements-accessingcustomizingelements-cs' />
+<snippet id='buttons-togglebutton-accessing-and-customizing-elements-accessingcustomizingelements-vb' />

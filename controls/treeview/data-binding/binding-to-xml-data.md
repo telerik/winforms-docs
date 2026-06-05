@@ -32,32 +32,8 @@ Assuming that "toc.xml" is in the TreeView\DataBinding directory which is relati
 
 ![WinForms RadTreeView Binding to XML Data](images/treeview-data-binding-binding-to-xml-data001.png)
 
-{{source=..\SamplesCS\TreeView\DataBinding\BindingToXmlData.cs region=toc}} 
-{{source=..\SamplesVB\TreeView\DataBinding\BindingToXmlData.vb region=toc}} 
-
-````C#
-DataSet tocDataSet = new DataSet("Toc");
-tocDataSet.ReadXml("TreeView\\DataBinding\\toc.xml");
-this.radTreeView1.DataMember = "Node";
-this.radTreeView1.DisplayMember = "Title";
-this.radTreeView1.ChildMember = "id";
-this.radTreeView1.ParentMember = "parentId";
-this.radTreeView1.DataSource = tocDataSet;
-
-````
-````VB.NET
-Dim tocDataSet As DataSet = New DataSet("Toc")
-tocDataSet.ReadXml("TreeView\DataBinding\toc.xml")
-Me.RadTreeView1.DataMember = "Node"
-Me.RadTreeView1.DisplayMember = "Title"
-Me.RadTreeView1.ChildMember = "id"
-Me.RadTreeView1.ParentMember = "parentId"
-Me.RadTreeView1.DataSource = tocDataSet
-
-````
-
-{{endregion}} 
-	
+<snippet id='treeview-bindingtoxmldata-toc-cs' />
+<snippet id='treeview-bindingtoxmldata-toc-vb' />
 
 
 

@@ -38,29 +38,10 @@ The __OrgTreeRouter__ is a __LayoutType__ - based router that performs a hierarc
 
 In order to use the __OrgTreeRouter__, you have to instantiate an __OrgTreeRouter__ object and set it as current __Router__ of the __RadDiagram__ via the __RoutingService__: 
 
-{{source=..\SamplesCS\Diagram\DiagramRouting.cs region=OrgTreeRouter}} 
-{{source=..\SamplesVB\Diagram\DiagramRouting.vb region=OrgTreeRouter}} 
+<snippet id='diagram-routing-orgtreerouter-cs'/>
+<snippet id='diagram-routing-orgtreerouter-vb'/>
 
-````C#
-            
-Telerik.Windows.Diagrams.Core.OrgTreeRouter router = new Telerik.Windows.Diagrams.Core.OrgTreeRouter()
-{
-    TreeLayoutType = Telerik.Windows.Diagrams.Core.TreeLayoutType.TreeDown,
-    ConnectionOuterSpacing = 20,
-};
-this.radDiagram1.RoutingService.Router = router;
-
-````
-````VB.NET
-Dim router As New Telerik.Windows.Diagrams.Core.OrgTreeRouter() With { _
-    .TreeLayoutType = Telerik.Windows.Diagrams.Core.TreeLayoutType.TreeDown, _
-    .ConnectionOuterSpacing = 20 _
-}
-Me.RadDiagram1.RoutingService.Router = router
-
-````
-
-{{endregion}} 
+ 
 
 
 
@@ -79,48 +60,10 @@ When the __TreeLayoutType__ is set to *TipOverTree*, the __OrgTreeRouter__ uses 
 
 Here is a sample code snippet demonstrating how to create and configure __TreeLayoutSettings__ and create and assign a __Router__ to be the default one. 
 
-{{source=..\SamplesCS\Diagram\DiagramRouting.cs region=TipOverTreeRouter}} 
-{{source=..\SamplesVB\Diagram\DiagramRouting.vb region=TipOverTreeRouter}} 
+<snippet id='diagram-routing-tipovertreerouter-cs'/>
+<snippet id='diagram-routing-tipovertreerouter-vb'/>
 
-````C#
-            
-Telerik.Windows.Diagrams.Core.TreeLayoutSettings settings = new Telerik.Windows.Diagrams.Core.TreeLayoutSettings()
-{
-    TreeLayoutType = Telerik.Windows.Diagrams.Core.TreeLayoutType.TipOverTree,
-    UnderneathVerticalSeparation = 50,
-    VerticalDistance = 50,
-    UnderneathHorizontalOffset = 50,
-    UnderneathVerticalTopOffset = 50
-};
-settings.Roots.Add(this.radDiagram1.Shapes[0]);
-Telerik.Windows.Diagrams.Core.OrgTreeRouter router = new Telerik.Windows.Diagrams.Core.OrgTreeRouter()
-{
-    TreeLayoutType = Telerik.Windows.Diagrams.Core.TreeLayoutType.TipOverTree,
-    ConnectionOuterSpacing = 10
-};
-this.radDiagram1.RoutingService.Router = router;
-this.radDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Tree, settings);
-
-````
-````VB.NET
-Dim settings As New Telerik.Windows.Diagrams.Core.TreeLayoutSettings() With { _
-    .TreeLayoutType = Telerik.Windows.Diagrams.Core.TreeLayoutType.TipOverTree, _
-    .UnderneathVerticalSeparation = 50, _
-    .VerticalDistance = 50, _
-    .UnderneathHorizontalOffset = 50, _
-    .UnderneathVerticalTopOffset = 50 _
-}
-settings.Roots.Add(Me.RadDiagram1.Shapes(0))
-Dim router As New Telerik.Windows.Diagrams.Core.OrgTreeRouter() With { _
-    .TreeLayoutType = Telerik.Windows.Diagrams.Core.TreeLayoutType.TipOverTree, _
-    .ConnectionOuterSpacing = 10 _
-}
-Me.RadDiagram1.RoutingService.Router = router
-Me.RadDiagram1.SetLayout(Telerik.Windows.Diagrams.Core.LayoutType.Tree, settings)
-
-````
-
-{{endregion}} 
+ 
 
 
 
@@ -200,127 +143,27 @@ In the following section we will create a custom Router. This way we will be abl
 
 Let's first create some items: 
 
-{{source=..\SamplesCS\Diagram\DiagramRouting.cs region=PopulateItems}} 
-{{source=..\SamplesVB\Diagram\DiagramRouting.vb region=PopulateItems}} 
+<snippet id='diagram-routing-populateitems-cs'/>
+<snippet id='diagram-routing-populateitems-vb'/>
 
-````C#
-            
-RadDiagramShape shapeA = new RadDiagramShape()
-{
-    Text = "ShapeA",
-    ElementShape = new RoundRectShape(4),
-    BackColor = Color.CadetBlue
-};
-shapeA.Position = new Telerik.Windows.Diagrams.Core.Point(100, 100);
-this.radDiagram1.Items.Add(shapeA);
-            
-RadDiagramShape shapeB = new RadDiagramShape()
-{
-    Text = "ShapeB",
-    ElementShape = new RoundRectShape(4),
-    BackColor = Color.CadetBlue
-};
-shapeB.Position = new Telerik.Windows.Diagrams.Core.Point(300, 100);
-this.radDiagram1.Items.Add(shapeB);
-            
-RadDiagramConnection connection = new RadDiagramConnection()
-{
-    Source = shapeA,
-    Target = shapeB
-};
-this.radDiagram1.Items.Add(connection);
-
-````
-````VB.NET
-Dim shapeA As New RadDiagramShape() With { _
-    .Text = "ShapeA", _
-    .ElementShape = New RoundRectShape(4), _
-    .BackColor = Color.CadetBlue _
-}
-shapeA.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
-Me.RadDiagram1.Items.Add(shapeA)
-Dim shapeB As New RadDiagramShape() With { _
-    .Text = "ShapeB", _
-    .ElementShape = New RoundRectShape(4), _
-    .BackColor = Color.CadetBlue _
-}
-shapeB.Position = New Telerik.Windows.Diagrams.Core.Point(300, 100)
-Me.RadDiagram1.Items.Add(shapeB)
-Dim connection As New RadDiagramConnection() With { _
-    .Source = shapeA, _
-    .Target = shapeB _
-}
-Me.RadDiagram1.Items.Add(connection)
-
-````
-
-{{endregion}} 
+ 
  
 Now we have to create class that implements the __IRouter__ interface and override the GetRoutePoints() method: 
 
-{{source=..\SamplesCS\Diagram\DiagramRouting.cs region=CustomRouter}} 
-{{source=..\SamplesVB\Diagram\DiagramRouting.vb region=CustomRouter}} 
+<snippet id='diagram-routing-customrouter-cs'/>
+<snippet id='diagram-routing-customrouter-vb'/>
 
-````C#
-        
-public class CustomRouter : Telerik.Windows.Diagrams.Core.IRouter
-{
-    public System.Collections.Generic.IList<Telerik.Windows.Diagrams.Core.Point> GetRoutePoints(Telerik.Windows.Diagrams.Core.IConnection connection, bool showLastLine)
-    {
-        List<Telerik.Windows.Diagrams.Core.Point> pointList = new List<Telerik.Windows.Diagrams.Core.Point>();
-        Telerik.Windows.Diagrams.Core.Point start = connection.StartPoint;
-        Telerik.Windows.Diagrams.Core.Point end = connection.EndPoint;
-        
-        pointList.Add(new Telerik.Windows.Diagrams.Core.Point(start.X + (end.X - start.X) * 0.45, start.Y));
-        pointList.Add(new Telerik.Windows.Diagrams.Core.Point((start.X + end.X) / 2, (start.Y + end.Y) / 2 - 50));
-        pointList.Add(new Telerik.Windows.Diagrams.Core.Point((start.X + end.X) / 2, (start.Y + end.Y) / 2 + 50));
-        pointList.Add(new Telerik.Windows.Diagrams.Core.Point(start.X + (end.X - start.X) * 0.55, end.Y));
-    
-        return pointList;
-    }
-}
-
-````
-````VB.NET
-Public Class CustomRouter
-Implements Telerik.Windows.Diagrams.Core.IRouter
-    Public Function GetRoutePoints1(connection As Telerik.Windows.Diagrams.Core.IConnection, showLastLine As Boolean) As IList(Of Telerik.Windows.Diagrams.Core.Point) Implements Telerik.Windows.Diagrams.Core.IRouter.GetRoutePoints
-        Dim pointList As New List(Of Telerik.Windows.Diagrams.Core.Point)()
-        Dim start As Telerik.Windows.Diagrams.Core.Point = connection.StartPoint
-        Dim [end] As Telerik.Windows.Diagrams.Core.Point = connection.EndPoint
-        pointList.Add(New Telerik.Windows.Diagrams.Core.Point(start.X + ([end].X - start.X) * 0.45, start.Y))
-        pointList.Add(New Telerik.Windows.Diagrams.Core.Point((start.X + [end].X) / 2, (start.Y + [end].Y) / 2 - 50))
-        pointList.Add(New Telerik.Windows.Diagrams.Core.Point((start.X + [end].X) / 2, (start.Y + [end].Y) / 2 + 50))
-        pointList.Add(New Telerik.Windows.Diagrams.Core.Point(start.X + ([end].X - start.X) * 0.55, [end].Y))
-        Return pointList
-    End Function
-End Class
-
-````
-
-{{endregion}} 
+ 
  
 Please note that we only have to add in the list the route points, no need to add the start and the end point of the connection.   
         
 
 The final step is to make our router the current one of the __RadDiagram__. This is done via Diagram's Routing Service: 
 
-{{source=..\SamplesCS\Diagram\DiagramRouting.cs region=SetCustomRouter}} 
-{{source=..\SamplesVB\Diagram\DiagramRouting.vb region=SetCustomRouter}} 
+<snippet id='diagram-routing-setcustomrouter-cs'/>
+<snippet id='diagram-routing-setcustomrouter-vb'/>
 
-````C#
-            
-this.radDiagram1.RouteConnections = true;
-this.radDiagram1.RoutingService.Router = new CustomRouter();
-
-````
-````VB.NET
-Me.RadDiagram1.RouteConnections = True
-Me.RadDiagram1.RoutingService.Router = New CustomRouter()
-
-````
-
-{{endregion}} 
+ 
 
 
 

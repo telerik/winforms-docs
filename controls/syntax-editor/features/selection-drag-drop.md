@@ -27,87 +27,10 @@ position: 10
 
 #### Handling drag and drop events
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorSelectionDragDrop.cs region=SelectionDragDrop}}
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorSelectionDragDrop.vb region=SelectionDragDrop}}
-
-````C#
-
-        private void WireEvents()
-        {
-            this.radSyntaxEditor1.SyntaxEditorElement.Selection.PreviewDragStart += Selection_PreviewDragStart;
-            this.radSyntaxEditor1.SyntaxEditorElement.Selection.PreviewDragOver += Selection_PreviewDragOver;
-            this.radSyntaxEditor1.SyntaxEditorElement.Selection.PreviewDragDrop += Selection_PreviewDragDrop;
-        }
-
-        private void Selection_PreviewDragStart(object sender, Telerik.WinForms.Controls.SyntaxEditor.UI.PreviewDragStartEventArgs e)
-        {
-            //disable dragging the even lines
-
-            e.CanStart &= (e.StartPostion.LineNumber + 1) % 2 != 0;
-        }
+<snippet id='syntax-editor-syntaxeditorselectiondragdrop-selectiondragdrop-cs' />
+<snippet id='syntax-editor-syntaxeditorselectiondragdrop-selectiondragdrop-vb' />
 
 
-        private void Selection_PreviewDragOver(object sender, Telerik.WinForms.Controls.SyntaxEditor.UI.PreviewDragOverEventArgs e)
-        {
-            //disable dropping over a text that contains "Telerik"
-
-            CaretPosition start = new CaretPosition(e.DropPosition);
-            CaretPosition end = new CaretPosition(start);
-            start.MoveToPreviousWord();
-            end.MoveToNextWord();
-            string targetText = this.radSyntaxEditor1.SyntaxEditorElement.GetText(start, end);
-            if (targetText.Contains("Telerik"))
-            {
-                e.CanDrop = false;
-            }
-            else
-            {
-                e.CanDrop = true;
-            }
-        }
-
-        private void Selection_PreviewDragDrop(object sender, Telerik.WinForms.Controls.SyntaxEditor.UI.PreviewDragDropEventArgs e)
-        {
-            //handle the drop operation
-            e.Handled = true;
-        }
-
-
-````
-````VB.NET
-
-    Private Sub WireEvents()
-        AddHandler Me.radSyntaxEditor1.SyntaxEditorElement.Selection.PreviewDragStart, AddressOf Selection_PreviewDragStart
-        AddHandler Me.radSyntaxEditor1.SyntaxEditorElement.Selection.PreviewDragOver, AddressOf Selection_PreviewDragOver
-        AddHandler Me.radSyntaxEditor1.SyntaxEditorElement.Selection.PreviewDragDrop, AddressOf Selection_PreviewDragDrop
-    End Sub
-
-    Private Sub Selection_PreviewDragStart(ByVal sender As Object, ByVal e As Telerik.WinForms.Controls.SyntaxEditor.UI.PreviewDragStartEventArgs)
-        e.CanStart = e.CanStart And (e.StartPostion.LineNumber + 1) Mod 2 <> 0
-    End Sub
-
-    Private Sub Selection_PreviewDragOver(ByVal sender As Object, ByVal e As Telerik.WinForms.Controls.SyntaxEditor.UI.PreviewDragOverEventArgs)
-        Dim start As CaretPosition = New CaretPosition(e.DropPosition)
-        Dim [end] As CaretPosition = New CaretPosition(start)
-        start.MoveToPreviousWord()
-        [end].MoveToNextWord()
-        Dim targetText As String = Me.radSyntaxEditor1.SyntaxEditorElement.GetText(start, [end])
-
-        If targetText.Contains("Telerik") Then
-            e.CanDrop = False
-        Else
-            e.CanDrop = True
-        End If
-    End Sub
-
-    Private Sub Selection_PreviewDragDrop(ByVal sender As Object, ByVal e As Telerik.WinForms.Controls.SyntaxEditor.UI.PreviewDragDropEventArgs)
-        e.Handled = True
-    End Sub
-
-
-````
-
-{{endregion}} 
 
 >caption Disable dropping over "Telerik" 
 

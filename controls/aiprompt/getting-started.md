@@ -45,55 +45,19 @@ Follow the steps:
 
 You can create a new __AIPromptOutputItem__ instance and fill it with returned response from the AI model. Then, you can populate the __OutputItems__ collection of RadAIPrompt. This will create a new AIPromptOutputVisualItem in the Output view where you can interact with the response.
 
-````C#
-private void RadAIPrompt1_PromptRequest(object sender, Telerik.WinControls.UI.AIPrompt.PromptRequestEventArgs e)
-{
-    AIPromptOutputItem responseAIPromptOutputItemModel = new AIPromptOutputItem()
-    {
-        Title = "Response from your AI model",
-        InputText = e.InputText,
-        ResponseText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", // Here you can set the string value returned from your AI model
-    };
+<snippet id='aiprompt-getting-started-promptrequest-cs' />
+<snippet id='aiprompt-getting-started-promptrequest-vb' />
 
-    this.radAIPrompt1.OutputItems.Add(responseAIPromptOutputItemModel);
-}
 
-````
-````VB.NET
-Private Sub RadAIPrompt1_PromptRequest(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.AIPrompt.PromptRequestEventArgs)
-    Dim responseAIPromptOutputItemModel As AIPromptOutputItem = New AIPromptOutputItem() With {
-        .Title = "Response from your AI model",
-        .InputText = e.InputText,
-        .ResponseText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-    Me.radAIPrompt1.OutputItems.Add(responseAIPromptOutputItemModel)
-End Sub
-
-````
 
 ## User Interaction
 
 The __AIPromptOutputItem__ element gives the end user ability to interact with the response of the AI model. The end user can copy the response, generate again the response or vote for it. When the user use one of these interaction options, the __OutputItemAction__ event will be called. Thus allowing the developer to catch the moment of the user interaction and pass it to the AI model.
 
-````C#
-private void AIPrompt_OutputItemAction(object sender, OutputItemActionEventArgs e)
-{
-    if (e.OutputItem.Rating != 0)
-	{
-		MyAIService.UpVoteResponse(e.OutputItem.Rating);
-	}
-}
+<snippet id='aiprompt-getting-started-outputitemaction-cs' />
+<snippet id='aiprompt-getting-started-outputitemaction-vb' />
 
-````
-````VB.NET
 
-Private Sub AIPrompt_OutputItemAction(ByVal sender As Object, ByVal e As OutputItemActionEventArgs)
-    If e.OutputItem.Rating <> 0 Then
-        MyAIService.UpVoteResponse(e.OutputItem.Rating)
-    End If
-End Sub
-
-````
 
 ## Telerik UI for WinForms Learning Resources
 * [Telerik UI for WinForms AIPrompt Component](https://www.telerik.com/products/winforms/aiprompt.aspx)

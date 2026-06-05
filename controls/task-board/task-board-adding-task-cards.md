@@ -22,59 +22,10 @@ However, if the button is enabled, the default **RadTaskCardElement** that is ge
 
 #### Create a Predefined RadTaskCardElement
 
-{{source=..\SamplesCS\TaskBoard\TaskBoardGettingStarted.cs region=PredefinedCard}} 
-{{source=..\SamplesVB\TaskBoard\TaskBoardGettingStarted.vb region=PredefinedCard}} 
+<snippet id='task-board-taskboardgettingstarted-predefinedcard-cs' />
+<snippet id='task-board-taskboardgettingstarted-predefinedcard-vb' />
 
-````C#
 
-private void RadTaskBoardColumnElement_TaskCardAdding(RadTaskBoardColumnElement.TaskCardAddingEventArgs args)
-{
-    RadTaskCardElement defaultTaskCard = new RadTaskCardElement();
-    defaultTaskCard.TitleText = "ListView improvements";
-    defaultTaskCard.DescriptionText = "Research phase";
-    defaultTaskCard.AccentSettings.Color = Color.Red;
-
-    UserInfo user1 = new UserInfo();
-    user1.FirstName = "Anne";
-    user1.LastName = "Dodsworth";
-    user1.Avatar = Properties.Resources.anne;
-    defaultTaskCard.Users.Add(user1);
-
-    //assign a user defined in RadTaskBoard
-    //defaultTaskCard.Users.Add(this.radTaskBoard1.Users[1]);
-
-    TagInfo tagWF = new TagInfo();
-    tagWF.Text = "win-forms"; 
-    defaultTaskCard.Tags.Add(tagWF);
-    args.TaskCard = defaultTaskCard;
-}
-
-````
-````VB.NET
-
-Private Sub RadTaskBoardColumnElement_TaskCardAdding(args As RadTaskBoardColumnElement.TaskCardAddingEventArgs)
-    Dim defaultTaskCard As RadTaskCardElement = New RadTaskCardElement()
-    defaultTaskCard.TitleText = "ListView improvements"
-    defaultTaskCard.DescriptionText = "Research phase"
-    defaultTaskCard.AccentSettings.Color = Color.Red
-    Dim user1 As UserInfo = New UserInfo()
-    user1.FirstName = "Anne"
-    user1.LastName = "Dodsworth"
-    user1.Avatar = My.Resources.anne
-    defaultTaskCard.Users.Add(user1)
-
-    'assign a user defined in RadTaskBoard
-    'defaultTaskCard.Users.Add(this.radTaskBoard1.Users(1))
-
-    Dim tagWF As TagInfo = New TagInfo()
-    tagWF.Text = "win-forms"
-    defaultTaskCard.Tags.Add(tagWF)
-    args.TaskCard = defaultTaskCard
-End Sub
-
-````
-
-{{endregion}}  
 
 ![WinForms RadTaskBoard Adding Task Cards](images/task-board-adding-task-cards002.png)
   

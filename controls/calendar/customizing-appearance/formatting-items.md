@@ -14,38 +14,10 @@ The __ElementRender__ event will be fired before every element is painted. This 
 
 #### Formating items in the ElementRender event.
 
-{{source=..\SamplesCS\Calendar\FormattingItems.cs region=RenderEvent}}
-{{source=..\SamplesVB\Calendar\FormattingItems.vb region=RenderEvent}}
-````C#
-private void RadCalendar1_ElementRender(object sender, RenderElementEventArgs e)
-{
-    if (e.Day.Date.DayOfWeek == DayOfWeek.Monday || e.Day.Date.DayOfWeek == DayOfWeek.Thursday)
-    {
-        e.Element.DrawBorder = true;
-        e.Element.BorderColor = ColorTranslator.FromHtml("#51ab2e");
-    }
-    else
-    {
-        e.Element.ResetValue(LightVisualElement.DrawBorderProperty, ValueResetFlags.Local);
-        e.Element.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local);
-    }
-}
+<snippet id='calendar-customizing-appearance-formatting-items-renderevent-cs' />
+<snippet id='calendar-customizing-appearance-formatting-items-renderevent-vb' />
 
-````
-````VB.NET
-Private Sub RadCalendar1_ElementRender(ByVal sender As Object, ByVal e As RenderElementEventArgs)
-    If e.Day.Date.DayOfWeek = DayOfWeek.Monday OrElse e.Day.Date.DayOfWeek = DayOfWeek.Thursday Then
-        e.Element.DrawBorder = True
-        e.Element.BorderColor = ColorTranslator.FromHtml("#51ab2e ")
-    Else
-        e.Element.ResetValue(LightVisualElement.DrawBorderProperty, ValueResetFlags.Local)
-        e.Element.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local)
-    End If
-End Sub
 
-````
-
-{{endregion}}
 
 >caption Figure 1: RadCalendar with custom cells border.
 ![WinForms RadCalendar With custom Cells Border](images/calendar-formatting-items001.png)
@@ -56,18 +28,10 @@ Since the event is called when the calendar is made visible, you may need to tri
 
 #### Trigger the ElementRender event at run-time.
 
-{{source=..\SamplesCS\Calendar\FormattingItems.cs region=refresh}}
-{{source=..\SamplesVB\Calendar\FormattingItems.vb region=refresh}}
-````C#
-radCalendar1.CalendarElement.RefreshVisuals();
+<snippet id='calendar-customizing-appearance-formatting-items-refresh-cs' />
+<snippet id='calendar-customizing-appearance-formatting-items-refresh-vb' />
 
-````
-````VB.NET
-radCalendar1.CalendarElement.RefreshVisuals()
 
-````
-
-{{endregion}}
 
 
 ## See Also

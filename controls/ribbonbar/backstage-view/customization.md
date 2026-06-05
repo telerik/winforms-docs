@@ -35,50 +35,19 @@ Follows code snippet demonstrates how you can access the most used items in the 
 
 #### Accessing BackstageView elements
 
-{{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=accessElements}} 
-{{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=accessElements}} 
+<snippet id='ribbonbar-ribbonbackstageview-accesselements-cs' />
+<snippet id='ribbonbar-ribbonbackstageview-accesselements-vb' />
 
-````C#
-BackstageViewElement backstageViewElemet = radRibbonBarBackstageView1.BackstageElement;
-            
-BackstageItemsPanelElement itemsPanel = backstageViewElemet.ItemsPanelElement;
-BackstageContentPanelElement contentPanel = backstageViewElemet.ContentElement;
 
-````
-````VB.NET
-Dim backstageViewElemet = CType(RadRibbonBarBackstageView1.BackstageElement, BackstageViewElement)
-Dim itemsPanel = CType(backstageViewElemet.ItemsPanelElement, BackstageItemsPanelElement)
-Dim contentPanel = CType(backstageViewElemet.ContentElement, BackstageContentPanelElement)
-
-````
-
-{{endregion}}
 
 By accessing these elements, you can customize BackstageView. Here is an example on how to change the BackgroundImage of the content area:
 
 #### Customizing the content area
 
-{{source=..\SamplesCS\RibbonBar\BackstageView\RibbonBackstageView.cs region=changeContentAreaImage}} 
-{{source=..\SamplesVB\RibbonBar\BackstageView\RibbonBackstageView.vb region=changeContentAreaImage}} 
+<snippet id='ribbonbar-ribbonbackstageview-changecontentareaimage-cs' />
+<snippet id='ribbonbar-ribbonbackstageview-changecontentareaimage-vb' />
 
-````C#
-RadImageShape imageShape = new RadImageShape();
-imageShape.Image = Image.FromFile(@"C:\MyFile.png");
-//the next line of code defines how to strech the image (if necessary)
-imageShape.Margins = new System.Windows.Forms.Padding(10,10,10,10);
-radRibbonBarBackstageView1.BackstageElement.ContentElement.BackgroundShape = imageShape;
 
-````
-````VB.NET
-Dim imageShape As New RadImageShape()
-imageShape.Image = Image.FromFile("C:\MyFile.png")
-'the next line of code defines how to strech the image (if necessary)
-imageShape.Margins = New System.Windows.Forms.Padding(10, 10, 10, 10)
-RadRibbonBarBackstageView1.BackstageElement.ContentElement.BackgroundShape = imageShape
-
-````
-
-{{endregion}}
 
 >note BackstageTabItems, BackstageItemsPanelElement and BackstageContentPanelElement use[RadImageShape]({%slug winforms/telerik-presentation-framework/primitives/imageshape%})for most of the predefinied themes.
 >

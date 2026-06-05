@@ -32,20 +32,10 @@ You can add the buttons in the code behind as well. This is demonstrated in the 
 
 #### Adding Buttons Programmatically
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=Buttons}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=Buttons}}
-````C#
-this.TabbedFormControl.LeftItems.Add(new RadButtonElement { Text = "button1" });
-this.TabbedFormControl.RightItems.Add(new RadButtonElement { Text = "button2" });
+<snippet id='tabbedform-tabbedformcode-buttons-cs' />
+<snippet id='tabbedform-tabbedformcode-buttons-vb' />
 
-````
-````VB.NET
-Me.TabbedFormControl.LeftItems.Add(New RadButtonElement With {.Text = "button1"})
-Me.TabbedFormControl.RightItems.Add(New RadButtonElement With {.Text = "button2"})
 
-```` 
-
-{{endregion}} 
 
 >caption Figure 1:Adding Buttons Programmatically.
 

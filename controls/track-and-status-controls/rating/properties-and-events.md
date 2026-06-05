@@ -54,19 +54,10 @@ You can find below how to set the aforementioned properties and how they affect 
 
 * **ShowItemToolTips** - by default __RadRating__ shows tooltips when hovering the items. The user can disable this functionality by setting *ShowItemToolTips* property to False:
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=ShowItemToolTips}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=ShowItemToolTips}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-showitemtooltips-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-showitemtooltips-vb' />
 
-````C#
-this.radRating1.ShowItemToolTips = false;
 
-````
-````VB.NET
-Me.RadRating1.ShowItemToolTips = False
-
-````
-
-{{endregion}} 
 
 |ShowItemToolTips=false|ShowItemToolTips=true|
 |----|----|
@@ -75,20 +66,10 @@ Me.RadRating1.ShowItemToolTips = False
 
 * **RightToLeft** - __RadRating__ supports **RightToLeft** functionality. It is disabled by default, so you should enable it:
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=RightToLeft}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=RightToLeft}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-righttoleft-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-righttoleft-vb' />
 
-````C#
-            
-this.radRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
-````
-````VB.NET
-Me.RadRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-
-````
-
-{{endregion}} 
 
 |RightToLeft=false|RightToLeft=true|
 |----|----|
@@ -96,20 +77,10 @@ Me.RadRating1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 * *Direction* property can be used to control the hover direction.
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Direction}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Direction}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-direction-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-direction-vb' />
 
-````C#
-            
-this.radRating1.Direction = RatingDirection.Reversed;
 
-````
-````VB.NET
-Me.RadRating1.Direction = RatingDirection.Reversed
-
-````
-
-{{endregion}} 
 
 |Direction=Standard|Direction=Reversed|
 |----|----|
@@ -117,22 +88,10 @@ Me.RadRating1.Direction = RatingDirection.Reversed
 
 * **Orientation** - the default __RadRating__ orientation is *Horizontal*. It is allowed to change it to Vertical:
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Orientation}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Orientation}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-orientation-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-orientation-vb' />
 
-````C#
-            
-this.radRating1.Orientation = Orientation.Vertical;
-this.radRating1.AutoSize = true;
 
-````
-````VB.NET
-Me.RadRating1.Orientation = Orientation.Vertical
-Me.RadRating1.AutoSize = True
-
-````
-
-{{endregion}} 
 
 |Orientation=Horizontal|Orientation=Vertical|
 |----|----|
@@ -140,24 +99,9 @@ Me.RadRating1.AutoSize = True
 
 * **Caption, Subcaption and Description** – specify texts for the captions of __RadRating__:
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Captions}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Captions}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-captions-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-captions-vb' />
 
-````C#
-            
-this.radRating1.Caption = "Rate the movie";
-this.radRating1.Description = "Description";
-this.radRating1.Subcaption = "SubCaption";
-
-````
-````VB.NET
-Me.RadRating1.Caption = "Rate the movie"
-Me.RadRating1.Description = "Description"
-Me.RadRating1.Subcaption = "SubCaption"
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadRating Description](images/rating-properties-and-events013.png)
@@ -166,52 +110,24 @@ Me.RadRating1.Subcaption = "SubCaption"
 
 #### RatingSelectionMode.Precise
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionPrecise}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionPrecise}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-selectionprecise-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-selectionprecise-vb' />
 
-````C#
-            
-this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.Precise;
 
-````
-````VB.NET
-Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.Precise
-
-````
-
-{{endregion}} 
 
 #### RatingSelectionMode.HalfItem
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionHalfItem}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionHalfItem}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-selectionhalfitem-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-selectionhalfitem-vb' />
 
-````C#
-this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.HalfItem;
 
-````
-````VB.NET
-Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.HalfItem
-
-````
-
-{{endregion}} 
 
 #### RatingSelectionMode.FullItem
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=SelectionFullItem}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=SelectionFullItem}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-selectionfullitem-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-selectionfullitem-vb' />
 
-````C#
-this.radRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullItem;
 
-````
-````VB.NET
-Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullItem
-
-````
-
-{{endregion}} 
 
 |SelectionMode=FullItem|SelectionMode=HalfItem|SelectionMode=Precise|
 |----|----|----|
@@ -221,40 +137,19 @@ Me.RadRating1.SelectionMode = Telerik.WinControls.UI.RatingSelectionMode.FullIte
 
 #### Specify minimum/maximum
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Ranges}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Ranges}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-ranges-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-ranges-vb' />
 
-````C#
-            
-this.radRating1.Minimum = 10;
-this.radRating1.Maximum = 40;
 
-````
-````VB.NET
-Me.RadRating1.Minimum = 10
-Me.RadRating1.Maximum = 40
-
-````
-
-{{endregion}} 
 
 ![WinForms RadRating Minimum Maximum](images/rating-properties-and-events009.png)![WinForms RadRating rating-properties-and-events 010](images/rating-properties-and-events010.png)
 
 * **Value** - sets or gets the value of the __RadRating__:
 
-{{source=..\SamplesCS\TrackAndStatus\Rating\RatingGettingStarted.cs region=Value}} 
-{{source=..\SamplesVB\TrackAndStatus\Rating\RatingGettingStarted.vb region=Value}} 
+<snippet id='track-and-status-controls-ratinggettingstarted-value-cs' />
+<snippet id='track-and-status-controls-ratinggettingstarted-value-vb' />
 
-````C#
-this.radRating1.Value = 43.4;
 
-````
-````VB.NET
-Me.RadRating1.Value = 43.4
-
-````
-
-{{endregion}} 
 
 # See Also
 

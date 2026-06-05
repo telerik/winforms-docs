@@ -19,19 +19,8 @@ The **AllowColumnChooser** property determines whether the ColumnChooser is avai
 
 >note Column Chooser is enabled by default in RadGridView. To disable it, set **AllowColumnChooser** property to false.
 
-{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=AllowColumnChooser}} 
-{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowColumnChooser}} 
-
-````C#
-radGridView1.MasterTemplate.AllowColumnChooser = false;
-
-````
-````VB.NET
-RadGridView1.MasterTemplate.AllowColumnChooser = False
-
-````
-
-{{endregion}}
+<snippet id='gridview-workingwithcolumnchooser-allowcolumnchooser-cs' />
+<snippet id='gridview-workingwithcolumnchooser-allowcolumnchooser-vb' />
 
 ## Opening the ColumnChooser
 
@@ -102,37 +91,15 @@ __AllowHide:__ This property determines whether the column is allowed to be move
 
 #### Determines if the specified column is allowed to be dragged to the column chooser dialog
 
-{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=AllowHide}} 
-{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=AllowHide}} 
-
-````C#
-radGridView1.Columns["CategoryName"].AllowHide = false;
-
-````
-````VB.NET
-RadGridView1.Columns("CategoryName").AllowHide = False
-
-````
-
-{{endregion}}
+<snippet id='gridview-workingwithcolumnchooser-allowhide-cs' />
+<snippet id='gridview-workingwithcolumnchooser-allowhide-vb' />
 
 __VisibleInColumnChooser:__ By setting this property for each column you determine whether the column will be visible in the Column Chooser when dragged to it. By default this property is set to *true* for all columns:
 
 #### Determines if the specified column is going to be visible in the column chooser dialog
 
-{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=VisibleInColumnChooser}} 
-{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=VisibleInColumnChooser}} 
-
-````C#
-radGridView1.Columns["Picture"].VisibleInColumnChooser = false;
-
-````
-````VB.NET
-RadGridView1.Columns("Picture").VisibleInColumnChooser = False
-
-````
-
-{{endregion}}
+<snippet id='gridview-workingwithcolumnchooser-visibleincolumnchooser-cs' />
+<snippet id='gridview-workingwithcolumnchooser-visibleincolumnchooser-vb' />
 
 __ColumnChooserSortOrder:__ Gets or sets the column chooser sort order.
 
@@ -142,21 +109,8 @@ In order to customize the Column Chooser you can access it directly from the ins
 
 #### Accessing and customizing the column chooser
 
-{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=customizeColumnChooser}} 
-{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=customizeColumnChooser}} 
-
-````C#
-radGridView1.ColumnChooser.DesktopLocation = new Point(100,100);
-radGridView1.ColumnChooser.Font = new Font("Segoe", 15, FontStyle.Bold);
-
-````
-````VB.NET
-RadGridView1.ColumnChooser.DesktopLocation = New Point(100, 100)
-RadGridView1.ColumnChooser.Font = New Font("Segoe", 15, FontStyle.Bold)
-
-````
-
-{{endregion}}
+<snippet id='gridview-workingwithcolumnchooser-customizecolumnchooser-cs' />
+<snippet id='gridview-workingwithcolumnchooser-customizecolumnchooser-vb' />
 
 ### Enable the filtering functionality
 
@@ -164,26 +118,8 @@ If the grid contains many hidden columns it is convenient to filter them so you 
 
 #### Enable filtering in the Column Chooser
 
-{{source=..\SamplesCS\GridView\Columns\WorkingWithColumnChooser.cs region=EnableChooserFiltering}} 
-{{source=..\SamplesVB\GridView\Columns\WorkingWithColumnChooser.vb region=EnableChooserFiltering}}
-````C#
-private void RadGridView1_ColumnChooserCreated(object sender, ColumnChooserCreatedEventArgs e)
-{
-    e.ColumnChooser.EnableFilter = true;
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_ColumnChooserCreated(ByVal sender As Object, ByVal e As ColumnChooserCreatedEventArgs)
-    e.ColumnChooser.EnableFilter = True
-End Sub
-
-```` 
-
- 
-
-{{endregion}}
-
+<snippet id='gridview-workingwithcolumnchooser-enablechooserfiltering-cs' />
+<snippet id='gridview-workingwithcolumnchooser-enablechooserfiltering-vb' />
 
 # See Also
 

@@ -50,62 +50,15 @@ This logical tree structure allows you to traverse down through the cell level u
 
 #### Iterate the MasterGridViewTemplate cells
 
-{{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=iterateMasterGridViewTemplate}} 
-{{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=iterateMasterGridViewTemplate}} 
-
-````C#
-foreach (GridViewRowInfo rowInfo in radGridView1.MasterTemplate.Rows)
-{
-    foreach (GridViewCellInfo cellInfo in rowInfo.Cells)
-    {
-        if (cellInfo.ColumnInfo.HeaderText == "Name")
-        {
-        cellInfo.Value = "TestName";
-        }
-    }
-}
-
-````
-````VB.NET
-For Each rowInfo As GridViewRowInfo In RadGridView1.MasterTemplate.Rows
-    For Each cellInfo As GridViewCellInfo In rowInfo.Cells
-        If cellInfo.ColumnInfo.Name = "Name" Then
-            cellInfo.Value = "TestName"
-        End If
-    Next
-Next
-
-````
-
-{{endregion}} 
+<snippet id='gridview-logicalvsvisualstructure-iteratemastergridviewtemplate-cs' />
+<snippet id='gridview-logicalvsvisualstructure-iteratemastergridviewtemplate-vb' />
 
 ...or to iterate all the columns of each child template within the master template:
 
 #### Iterate the child templates cells
 
-{{source=..\SamplesCS\GridView\Fundamentials\LogicalVsVisualStructure.cs region=iterateChildTemplates}} 
-{{source=..\SamplesVB\GridView\Fundamentials\LogicalVsVisualStructure.vb region=iterateChildTemplates}} 
-
-````C#
-foreach (GridViewTemplate childTemplate in radGridView1.MasterTemplate.Templates)
-{
-    foreach (GridViewColumn column in childTemplate.Columns)
-    {
-        column.HeaderTextAlignment = ContentAlignment.TopCenter;
-    }
-}
-
-````
-````VB.NET
-For Each childtemplate As GridViewTemplate In RadGridView1.MasterTemplate.Templates
-    For Each column As GridViewColumn In childtemplate.Columns
-        column.HeaderTextAlignment = ContentAlignment.TopCenter
-    Next
-Next
-
-````
-
-{{endregion}} 
+<snippet id='gridview-logicalvsvisualstructure-iteratechildtemplates-cs' />
+<snippet id='gridview-logicalvsvisualstructure-iteratechildtemplates-vb' />
 
 ## Visual Grid
 

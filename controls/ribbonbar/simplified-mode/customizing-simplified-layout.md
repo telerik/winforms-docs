@@ -20,35 +20,9 @@ In this example, you will use the __ItemStyleChanging__ event to change the disp
 #### Using the ItemStyleChanging event
 
 
-{{source=..\SamplesCS\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.cs region=EventExample}} 
-{{source=..\SamplesVB\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.vb region=EventExample}}
- 
-````C#
-private void RibbonBarElement_ItemStyleChanging(object sender, Telerik.WinControls.UI.ItemStyleChangingEventArgs args)
-{
-    if (args.Context == ItemStyleContext.DefaultToSimplified)
-    {
-        if (args.Element is RadGalleryItem && args.Property == RadButtonItem.DisplayStyleProperty)
-        {
-            args.NewValue = DisplayStyle.Image;
-        }
-    }
-}
+<snippet id='ribbonbar-simplifiedribbonlayout-eventexample-cs' />
+<snippet id='ribbonbar-simplifiedribbonlayout-eventexample-vb' />
 
-````
-````VB.NET
-Private Sub RibbonBarElement_ItemStyleChanging(ByVal sender As Object, ByVal args As Telerik.WinControls.UI.ItemStyleChangingEventArgs)
-    If args.Context = ItemStyleContext.DefaultToSimplified Then
-        If TypeOf args.Element Is RadGalleryItem AndAlso args.Property.Equals(RadButtonItem.DisplayStyleProperty) Then
-            args.NewValue = DisplayStyle.Image
-        End If
-    End If
-End Sub
-
-````
-
-
-{{endregion}}
 
 
 The bellow image shows the difference.

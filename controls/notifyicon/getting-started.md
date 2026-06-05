@@ -49,37 +49,10 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 3\. Add a method called __InitializeNotifyIcon__ to initialize the data displayed inside the notify balloon. The __TrayIcon__ indicates what icon will be shown in the taskbar notification area:
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=InitializeNotifyInfo}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=InitializeNotifyInfo}}
+<snippet id='notifyicon-features-initializenotifyinfo-cs' />
+<snippet id='notifyicon-features-initializenotifyinfo-vb' />
 
-````C#
-         private void InitializeNotifyIcon()
-        {
-            this.radNotifyIcon1.ShowTrayIcon = true;
-            this.radNotifyIcon1.BalloonText = "Look for the Telerik UI for WinForms icon in the taskbar notification area (can b" +
-                "e hidden in the overflow tray). \r\nHappy coding 🐱‍💻!";
-            this.radNotifyIcon1.TrayIcon = new System.Drawing.Icon("../../WinForms128x28.ico");
-            this.radNotifyIcon1.BalloonTitle = "Getting Started with RadNotifyIcon";
-            this.radNotifyIcon1.GuidItem = new System.Guid("00000001-0002-0003-0004-000000000567");
 
-            this.radNotifyIcon1.TooltipText = "Telerik UI for WinForms RadNotifyIcon";
-        }
-
-````
-````VB.NET
-
-    Private Sub InitializeNotifyIcon()
-        Me.radNotifyIcon1.ShowTrayIcon = True
-        Me.radNotifyIcon1.BalloonText = "Look for the Telerik UI for WinForms icon in the taskbar notification area (can b" & "e hidden in the overflow tray). " & vbCrLf & "Happy coding 🐱‍💻!"
-        Me.radNotifyIcon1.TrayIcon = New System.Drawing.Icon("../../WinForms128x28.ico")
-        Me.radNotifyIcon1.BalloonTitle = "Getting Started with RadNotifyIcon"
-        Me.radNotifyIcon1.GuidItem = New System.Guid("00000001-0002-0003-0004-000000000567")
-        Me.radNotifyIcon1.TooltipText = "Telerik UI for WinForms RadNotifyIcon"
-    End Sub
- 
-```` 
-
-{{endregion}}
 
 >caution You should replace the placeholder GuidItem with your own Guid. Make sure to create two separate Guids for building in Debug and Release mode and use the same ones for a given application. This will allow Windows to recognize the icon each time you show it in the tray.
 
@@ -90,23 +63,10 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 4\. Double click the RadButton at design time to generate its Click event handler. Then, add the code for showing the notify icon for the "NotifyIconDemo" application:
 
-{{source=..\SamplesCS\NotifyIcon\Features.cs region=GettingStarted}} 
-{{source=..\SamplesVB\NotifyIcon\Features.vb region=GettingStarted}}
+<snippet id='notifyicon-features-gettingstarted-cs' />
+<snippet id='notifyicon-features-gettingstarted-vb' />
 
-````C#
-         private void radButton1_Click(object sender, EventArgs e)
-        {
-            this.radNotifyIcon1.ShowBalloonTip();
-        }
 
-````
-````VB.NET
-     Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Me.radNotifyIcon1.ShowBalloonTip()
-    End Sub
-```` 
-
-{{endregion}}
 
 By default, the icon will be displayed in the tray area once the application is started. If you want to manually show the icon, you can initially set its __ShowTrayIcon__ property to *False* and then set it to *True* at a later moment when it is necessary. 
 

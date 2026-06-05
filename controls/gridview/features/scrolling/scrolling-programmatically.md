@@ -15,53 +15,18 @@ You can scroll programmatically using the following functions:
 
 #### ScrollTo
 
-{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=ScrollTo}} 
-{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=ScrollTo}} 
-
-````C#
-this.radGridView1.TableElement.ScrollTo(5, 4);
-
-````
-````VB.NET
-Me.RadGridView1.TableElement.ScrollTo(5, 4)
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-scrolling-scrollto-cs' />
+<snippet id='gridview-scrolling-scrollto-vb' />
 
 #### ScrollToColumn
 
-{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=Column}} 
-{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Column}} 
-
-````C#
-radGridView1.TableElement.ScrollToColumn(3);
-
-````
-````VB.NET
-RadGridView1.TableElement.ScrollToColumn(3)
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-scrolling-column-cs' />
+<snippet id='gridview-scrolling-column-vb' />
 
 #### ScrollToRow
 
-{{source=..\SamplesCS\GridView\Scrolling\Scrolling.cs region=Row}} 
-{{source=..\SamplesVB\GridView\Scrolling\Scrolling.vb region=Row}} 
-
-````C#
-radGridView1.TableElement.ScrollToRow(100);
-
-````
-````VB.NET
-RadGridView1.TableElement.ScrollToRow(100)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-scrolling-row-cs' />
+<snippet id='gridview-scrolling-row-vb' />
 
 ## Properties
 

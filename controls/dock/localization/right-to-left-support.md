@@ -13,19 +13,10 @@ previous_url: dock-localization-rtl
  
 You can present the content of your dock instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*: 
 
-{{source=..\SamplesCS\Dock\CustomDockProvider.cs region=rtl}} 
-{{source=..\SamplesVB\Dock\CustomDockProvider.vb region=rtl}} 
+<snippet id='dock-right-to-left-support-rtl-cs' />
+<snippet id='dock-right-to-left-support-rtl-vb' />
 
-````C#
-radDock1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-
-````
-````VB.NET
-Me.radDock1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadDock Right-to-Left Support](images/dock-localization-rtl001.png)
 

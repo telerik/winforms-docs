@@ -42,29 +42,10 @@ The constructor of __CodeFormattingSettings__ requires a code language to be spe
 
 Additionally, you can enable the display of line numbers and the alternating lines options.
 
-{{source=..\SamplesCS\RichTextEditor\Features\CodeBlock.cs region=insert}} 
-{{source=..\SamplesVB\RichTextEditor\Features\CodeBlock.vb region=insert}} 
+<snippet id='richtexteditor-codeblock-insert-cs' />
+<snippet id='richtexteditor-codeblock-insert-vb' />
 
-````C#
-            
-string code = "this.IsCodeBlock = true;\nthis.IsCodeBlock = false;\nthis.IsCodeBlock = true;";
-CodeFormattingSettings formattingSettings = new CodeFormattingSettings(CodeLanguages.CSharp);
-formattingSettings.IsLineNumberingEnabled = true;
-formattingSettings.IsAlternatingLinesEnabled = true;
-            
-this.radRichTextEditor1.InsertCodeBlock(code, formattingSettings);
 
-````
-````VB.NET
-Dim code As String = "this.IsCodeBlock = true;" & ControlChars.Lf & "this.IsCodeBlock = false;" & ControlChars.Lf & "this.IsCodeBlock = true;"
-Dim formattingSettings As New CodeFormattingSettings(CodeLanguages.CSharp)
-formattingSettings.IsLineNumberingEnabled = True
-formattingSettings.IsAlternatingLinesEnabled = True
-Me.radRichTextEditor1.InsertCodeBlock(code, formattingSettings)
-
-````
-
-{{endregion}} 
 
 The inner representation of the code block in the document is achieved by surrounding the content with __CodeAnnotationRangeStart__ and __CodeAnnotationRangeEnd__.
         
@@ -72,22 +53,10 @@ The inner representation of the code block in the document is achieved by surrou
 
 To remove the code block you can use the __DeleteCodeBlock()__ method of __RadRichTextEditor__ accepting __CodeAnnotationRangeStart__ as parameter:
 
-{{source=..\SamplesCS\RichTextEditor\Features\CodeBlock.cs region=delete}} 
-{{source=..\SamplesVB\RichTextEditor\Features\CodeBlock.vb region=delete}} 
+<snippet id='richtexteditor-codeblock-delete-cs' />
+<snippet id='richtexteditor-codeblock-delete-vb' />
 
-````C#
-            
-IEnumerable<CodeAnnotationRangeStart> markers = this.radRichTextEditor1.Document.GetAnnotationMarkersOfType<CodeAnnotationRangeStart>();
-this.radRichTextEditor1.DeleteCodeBlock(markers.First());
 
-````
-````VB.NET
-Dim markers As IEnumerable(Of CodeAnnotationRangeStart) = Me.radRichTextEditor1.Document.GetAnnotationMarkersOfType(Of CodeAnnotationRangeStart)()
-Me.radRichTextEditor1.DeleteCodeBlock(markers.First())
-
-````
-
-{{endregion}} 
 
 The contents of a code block can be selected and copied, but cannot be edited. However, existing code blocks can be modified with the code block dialog.
 
@@ -102,28 +71,8 @@ the language will be visible in the __InsertCodeBlock__ dialog.
         
 You can also register or change which style will be used for which classification types in which language in the __CodeFormatter__ class. Here is how to change the color for all comments when formatting JavaScript:
 
-{{source=..\SamplesCS\RichTextEditor\Features\CodeBlock.cs region=js}} 
-{{source=..\SamplesVB\RichTextEditor\Features\CodeBlock.vb region=js}} 
-
-````C#
-            
-StyleDefinition commentJS = new StyleDefinition("CommentJS", StyleType.Character);
-commentJS.SpanProperties.ForeColor = Colors.Gray;
-commentJS.IsCustom = false;
-commentJS.IsPrimary = false;
-this.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS);
-
-````
-````VB.NET
-Dim commentJS As New StyleDefinition("CommentJS", StyleType.Character)
-commentJS.SpanProperties.ForeColor = Colors.Gray
-commentJS.IsCustom = False
-commentJS.IsPrimary = False
-Me.radRichTextEditor1.Document.CodeFormatter.RegisterClassificationType(ClassificationTypes.Comment, CodeLanguages.JavaScript, commentJS)
-
-````
-
-{{endregion}} 
+<snippet id='richtexteditor-codeblock-js-cs' />
+<snippet id='richtexteditor-codeblock-js-vb' />
 
 
 

@@ -47,59 +47,18 @@ To use the spread export functionality, an instance of the __PropertyGridSpreadE
 
 You should pass an instance of a [SpreadExportRenderer]({%slug winforms/telerik-presentation-framework/export-renderers/spreadexportrenderer%}) to the export method as well.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=Export}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=Export}} 
+<snippet id='propertygrid-propertygridexportcode-export-cs' />
+<snippet id='propertygrid-propertygridexportcode-export-vb' />
 
-````C#
-PropertyGridSpreadExport exporter = new PropertyGridSpreadExport(this.radPropertyGrid1);
-SpreadExportRenderer renderer = new SpreadExportRenderer();
-exporter.RunExport(@"C:\ExportedFile.xlsx", renderer);
 
-````
-````VB.NET
-Dim exporter As New PropertyGridSpreadExport(Me.radPropertyGrid1)
-Dim renderer As New SpreadExportRenderer()
-exporter.RunExport("C:\ExportedFile.xlsx", renderer)
-
-````
-
-{{endregion}}
 
 The __RunExport__ method has several overloads allowing the user to export using a stream as well:
 
 ####  Running Export Synchronously Using a Stream
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=StreamRunExport}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=StreamRunExport}} 
+<snippet id='propertygrid-propertygridexportcode-streamrunexport-cs' />
+<snippet id='propertygrid-propertygridexportcode-streamrunexport-vb' />
 
-````C#
-string exportFile = @"..\..\exportedData.xlsx";
-using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
-{
-    Telerik.WinControls.Export.PropertyGridSpreadExport spreadExporter = new Telerik.WinControls.Export.PropertyGridSpreadExport(this.radPropertyGrid1);
-    Telerik.WinControls.Export.SpreadExportRenderer spreadRenderer = new Telerik.WinControls.Export.SpreadExportRenderer();
-    spreadExporter.RunExport(ms, spreadRenderer);
-    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
-    {
-        ms.WriteTo(fileStream);
-    }
-}
-
-````
-````VB.NET
-Dim exportFile As String = "..\..\exportedData.xlsx"
-Using ms As New System.IO.MemoryStream()
-    Dim spreadExporter As New Telerik.WinControls.Export.PropertyGridSpreadExport(Me.radPropertyGrid1)
-    Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
-    spreadExporter.RunExport(ms, spreadRenderer)
-    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
-        ms.WriteTo(fileStream)
-    End Using
-End Using
-
-````
-
-{{endregion}} 
 
 
 ## Properties
@@ -138,26 +97,10 @@ End Using
 
   * __RowIndex__: The index of the currently exported row. Here is an example of formatting the exported TreeView:
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=Formatting}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=Formatting}} 
+<snippet id='propertygrid-propertygridexportcode-formatting-cs' />
+<snippet id='propertygrid-propertygridexportcode-formatting-vb' />
 
-````C#
-void exporter_CellFormatting(object sender, PropertyGridSpreadExportCellFormattingEventArgs e)
-{
-    e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC");
-    e.ExportCell.Font = new Font("Consolas", 10, FontStyle.Underline);
-}
 
-````
-````VB.NET
-Private Sub exporter_CellFormatting(ByVal sender As Object, ByVal e As PropertyGridSpreadExportCellFormattingEventArgs)
-    e.ExportCell.BackColor = ColorTranslator.FromHtml("#F4FFEC")
-    e.ExportCell.Font = New Font("Consolas", 10, FontStyle.Underline)
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Export Using Formating
 
@@ -181,113 +124,26 @@ The following example will demonstrate how the async spread export feature can b
 
 1\. The following code shows how you can subscribe to the notification events and start the async export operation.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=AsyncExport}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=AsyncExport}} 
+<snippet id='propertygrid-propertygridexportcode-asyncexport-cs' />
+<snippet id='propertygrid-propertygridexportcode-asyncexport-vb' />
 
-````C#
-private void btnExportAsync_Click(object sender, EventArgs e)
-{
-    PropertyGridSpreadExport spreadExporter = new PropertyGridSpreadExport(this.radPropertyGrid1);
-    spreadExporter.AsyncExportProgressChanged += spreadExporter_AsyncExportProgressChanged;
-    spreadExporter.AsyncExportCompleted += spreadExporter_AsyncExportCompleted;
-    SpreadExportRenderer exportRenderer = new SpreadExportRenderer();
-    spreadExporter.RunExportAsync(@"..\..\ExportedFile.xlsx", exportRenderer);
-}
 
-````
-````VB.NET
-Private Sub btnExportAsync_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Dim spreadExporter As New PropertyGridSpreadExport(Me.radPropertyGrid1)
-    AddHandler spreadExporter.AsyncExportProgressChanged, AddressOf spreadExporter_AsyncExportProgressChanged
-    AddHandler spreadExporter.AsyncExportCompleted, AddressOf spreadExporter_AsyncExportCompleted
-    Dim exportRenderer As New SpreadExportRenderer()
-    spreadExporter.RunExportAsync("..\..\ExportedFile.xlsx", exportRenderer)
-End Sub
-
-````
-
-{{endregion}}
 
 2\. Handle the notification events and report progress.
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=ReportProgress}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=ReportProgress}} 
+<snippet id='propertygrid-propertygridexportcode-reportprogress-cs' />
+<snippet id='propertygrid-propertygridexportcode-reportprogress-vb' />
 
-````C#
-private void spreadExporter_AsyncExportProgressChanged(object sender, ProgressChangedEventArgs e)
-{
-    this.radProgressBar1.Value1 = e.ProgressPercentage;
-}
-private void spreadExporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-{
-    RadMessageBox.Show("Async Spread Export Completed!");
-    this.radProgressBar1.Value1 = 0;
-}
 
-````
-````VB.NET
-Private Sub spreadExporter_AsyncExportProgressChanged(ByVal sender As Object, ByVal e As ProgressChangedEventArgs)
-    Me.radProgressBar1.Value1 = e.ProgressPercentage
-End Sub
-Private Sub spreadExporter_AsyncExportCompleted(ByVal sender As Object, ByVal e As AsyncCompletedEventArgs)
-    RadMessageBox.Show("Async Spread Export Completed!")
-    Me.radProgressBar1.Value1 = 0
-End Sub
-
-````
-
-{{endregion}}
 
 The __RunExportAsync__ method has several overloads allowing the user to export using a stream as well:
 
 ####  Running Export Asynchronously Using a Stream
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridExportCode.cs region=StreamRunExportAsync}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridExportCode.vb region=StreamRunExportAsync}} 
+<snippet id='propertygrid-propertygridexportcode-streamrunexportasync-cs' />
+<snippet id='propertygrid-propertygridexportcode-streamrunexportasync-vb' />
 
-````C#
-private void buttonRunExportAsync_Click(object sender, EventArgs e)
-{
-    System.IO.MemoryStream ms = new System.IO.MemoryStream();
-    Telerik.WinControls.Export.PropertyGridSpreadExport spreadExporter = new Telerik.WinControls.Export.PropertyGridSpreadExport(this.radPropertyGrid1);
-    Telerik.WinControls.Export.SpreadExportRenderer spreadRenderer = new Telerik.WinControls.Export.SpreadExportRenderer();
-    spreadExporter.AsyncExportCompleted += exporter_AsyncExportCompleted;
-    spreadExporter.RunExportAsync(ms, spreadRenderer);
-}
-private void exporter_AsyncExportCompleted(object sender, AsyncCompletedEventArgs e)
-{
-    RunWorkerCompletedEventArgs args = e as RunWorkerCompletedEventArgs;
-    string exportFile = @"..\..\exportedAsyncData.xlsx";
-    using (System.IO.FileStream fileStream = new System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write))
-    {
-        MemoryStream ms = args.Result as MemoryStream;
-        ms.WriteTo(fileStream);
-        ms.Close();
-    }
-}
 
-````
-````VB.NET
-Private Sub buttonRunExportAsync_Click(sender As Object, e As EventArgs)
-    Dim ms As New System.IO.MemoryStream()
-    Dim spreadExporter As New Telerik.WinControls.Export.PropertyGridSpreadExport(Me.radPropertyGrid1)
-    Dim spreadRenderer As New Telerik.WinControls.Export.SpreadExportRenderer()
-    AddHandler spreadExporter.AsyncExportCompleted, AddressOf exporter_AsyncExportCompleted
-    spreadExporter.RunExportAsync(ms, spreadRenderer)
-End Sub
-Private Sub exporter_AsyncExportCompleted(sender As Object, e As AsyncCompletedEventArgs)
-    Dim args As RunWorkerCompletedEventArgs = TryCast(e, RunWorkerCompletedEventArgs)
-    Dim exportFile As String = "..\..\exportedAsyncData.xlsx"
-    Using fileStream As New System.IO.FileStream(exportFile, FileMode.Create, FileAccess.Write)
-        Dim ms As MemoryStream = TryCast(args.Result, MemoryStream)
-        ms.WriteTo(fileStream)
-        ms.Close()
-    End Using
-End Sub
-
-````
-
-{{endregion}} 
 
 ## Async Export Methods and Events
 

@@ -19,21 +19,10 @@ The code snippet below demonstrates how you can assign a tool tip to zoom out bu
 
 #### Using the ToolTipText property
 
-{{source=..\SamplesCS\Map\MapGettingStarted.cs region=MapVisualElementToolTip}} 
-{{source=..\SamplesVB\Map\MapGettingStarted.vb region=MapVisualElementToolTip}} 
+<snippet id='map-mapgettingstarted-mapvisualelementtooltip-cs' />
+<snippet id='map-mapgettingstarted-mapvisualelementtooltip-vb' />
 
-````C#
-this.radMap1.ShowItemToolTips = true;
-this.radMap1.MapElement.NavigationBarElement.ZoomOutButton.ToolTipText = "Zoom out";
 
-````
-````VB.NET
-Me.radMap1.ShowItemToolTips = True
-Me.radMap1.MapElement.NavigationBarElement.ZoomOutButton.ToolTipText = "Zoom out"
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Tool tip assigned by using the ToolTipText property
 
@@ -45,31 +34,9 @@ The code snippet below demonstrates how you can use __ToolTipTextNeeded__ event 
 
 #### Using the ToolTipTextNeeded event
 
-{{source=..\SamplesCS\Map\MapGettingStarted.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\Map\MapGettingStarted.vb region=ToolTipTextNeeded}} 
+<snippet id='map-mapgettingstarted-tooltiptextneeded-cs' />
+<snippet id='map-mapgettingstarted-tooltiptextneeded-vb' />
 
-````C#
-private void radMap1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    MapZoomInButton zoomInButton  = sender as MapZoomInButton;
-    if ( zoomInButton!=null)
-    {
-        e.ToolTipText = "Zoom in";
-    }
-}
-
-````
-````VB.NET
-Private Sub radMap1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    Dim zoomInButton As MapZoomInButton = TryCast(sender, MapZoomInButton)
-    If zoomInButton IsNot Nothing Then
-        e.ToolTipText = "Zoom in"
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 
 >caption Figure 2: Tool tip assigned by using the ToolTipTextNeeded event

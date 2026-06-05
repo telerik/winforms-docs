@@ -23,20 +23,8 @@ To show **GridViewSelectColumn** it is necessary to set the **ShowSelectColumn**
 
 ![WinForms RadGridView GridViewSelectColumn](images/gridview-columns-gridviewselectcolumn001.png)
 
-{{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=ShowSelectColumn}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=ShowSelectColumn}} 
-
-````C#
-this.radGridView1.ShowSelectColumn = true;
-
-````
-````VB.NET
-Me.RadGridView1.ShowSelectColumn = True
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-gridviewselectcolumn-showselectcolumn-cs' />
+<snippet id='gridview-gridviewselectcolumn-showselectcolumn-vb' />
 
 >note **GridViewSelectColumn** is only supported in GridViewSelectionMode.**FullRowSelect**. In *FullRowSelect* mode the user is able to select full rows in the grid, while in *CellSelect* mode it is possible to select single cells. For more information see [Row selection]({%slug winforms/gridview/selection/basic-selection%}).
 
@@ -48,20 +36,8 @@ If the *MultiSelect* property is enabled, users can make a [multiple selection i
 
 In some cases, the user may need to use multiple row selection through the **GridViewSelectColumn** only. The **UseCheckboxRowSelectionOnly** property defines whether the user can select rows only via the checkboxes. When **UseCheckboxRowSelectionOnly** is set to *true*, the selection only via checkboxes is allowed. Thus, if you click with the mouse over different rows they will not get selected, until you check the corresponding checkbox from the **GridViewSelectColumn**. 
 
-{{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=CheckboxRowSelection}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=CheckboxRowSelection}} 
-
-````C#
-this.radGridView1.MasterTemplate.UseCheckboxRowSelectionOnly = true;
-
-````
-````VB.NET
-Me.RadGridView1.MasterTemplate.UseCheckboxRowSelectionOnly = True
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-gridviewselectcolumn-checkboxrowselection-cs' />
+<snippet id='gridview-gridviewselectcolumn-checkboxrowselection-vb' />
 
 >note The **UseCheckboxRowSelectionOnly** will only be considered if **ShowSelectColumn** is set to *true*.
 
@@ -73,19 +49,8 @@ Me.RadGridView1.MasterTemplate.UseCheckboxRowSelectionOnly = True
 
 ![WinForms RadGridView GridViewSelectColumn](images/gridview-columns-gridviewselectcolumn002.png)
 
-{{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=SelectColumninHierarchy}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=SelectColumninHierarchy}} 
-
-````C#
-this.radGridView1.MasterTemplate.Templates[0].ShowSelectColumn = true;
-
-````
-````VB.NET
-Me.RadGridView1.MasterTemplate.Templates(0).ShowSelectColumn = True
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewselectcolumn-selectcolumninhierarchy-cs' />
+<snippet id='gridview-gridviewselectcolumn-selectcolumninhierarchy-vb' />
 
 >note This feature is also available in other functionalities that RadGridView offers such as grouping, filtering, searching, paging.
 
@@ -93,20 +58,8 @@ Me.RadGridView1.MasterTemplate.Templates(0).ShowSelectColumn = True
 
 **SelectColumnWidth** property gets or sets the width of the GridViewSelectColumn.
 
-{{source=..\SamplesCS\GridView\Columns\GridViewSelectColumn.cs region=SetSelectColumnWidth}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewSelectColumn.vb region=SetSelectColumnWidth}} 
-
-````C#
-this.radGridView1.TableElement.SelectColumnWidth = 50;
-
-````
-````VB.NET
-Me.RadGridView1.TableElement.SelectColumnWidth = 50
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-gridviewselectcolumn-setselectcolumnwidth-cs' />
+<snippet id='gridview-gridviewselectcolumn-setselectcolumnwidth-vb' />
 
 #### Events
 

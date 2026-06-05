@@ -46,148 +46,19 @@ The following code snippet demonstrates how to build a route from Madrid to Pari
 
 #### Bing routing
 
-{{source=..\SamplesCS\Map\BingProvider.cs region=BingRouteRequest}} 
-{{source=..\SamplesVB\Map\BingProvider.vb region=BingRouteRequest}}
+<snippet id='map-bingprovider-bingrouterequest-cs' />
+<snippet id='map-bingprovider-bingrouterequest-vb' />
 
-````C#
-public void RunRouteRequest()
-{
-    //add a layer to display the route
-    this.radMap1.MapElement.Layers.Add(new MapLayer());
-    RouteRequest request = new RouteRequest();
-    request.DistanceUnit = DistanceUnit.Kilometer;
-    request.Options.Mode = TravelMode.Driving;
-    request.Options.Optimization = RouteOptimization.Time;
-    request.Options.RouteAttributes = RouteAttributes.RoutePath;
-    request.Options.RouteAvoidance = RouteAvoidance.None;
-    request.RoutePoints.Add(new Waypoint("Paris, France"));
-    request.RoutePoints.Add(new Waypoint("Madrid, Spain"));
-    BingRestMapProvider bingProvider = this.radMap1.Providers[0] as BingRestMapProvider;
-    bingProvider.CalculateRouteCompleted += BingProvider_RoutingCompleted;
-    bingProvider.CalculateRouteAsync(request);
-}
-private void BingProvider_RoutingCompleted(object sender, RoutingCompletedEventArgs e)
-{
-    List<Telerik.WinControls.UI.Map.PointG> points = new List<Telerik.WinControls.UI.Map.PointG>();
-    foreach (var route in e.Routes)
-    {
-        foreach (double[] coordinatePair in route.RoutePath.Line.Coordinates)
-        {
-            Telerik.WinControls.UI.Map.PointG point = new Telerik.WinControls.UI.Map.PointG(coordinatePair[0], coordinatePair[1]);
-            points.Add(point);
-        }
 
-        Telerik.WinControls.UI.Map.RectangleG boundingRectangle = new Telerik.WinControls.UI.Map.RectangleG(route.BBox[2],
-            route.BBox[1], route.BBox[0], route.BBox[3]);
-        MapRoute routeElement = new MapRoute(points, boundingRectangle);
-        routeElement.BorderColor = Color.Blue;
-        routeElement.BorderWidth = 5;
-        MapPin start = new MapPin(new Telerik.WinControls.UI.Map.PointG(route.RouteLegs[0].ActualStart.Coordinates[0],
-            route.RouteLegs[0].ActualStart.Coordinates[1]));
-        start.BackColor = Color.White;
-        start.BorderColor = Color.Green;
-        start.BorderWidth = 2f;
-        MapPin end = new MapPin(new Telerik.WinControls.UI.Map.PointG(route.RouteLegs[route.RouteLegs.Length - 1].ActualEnd.Coordinates[0],
-            route.RouteLegs[route.RouteLegs.Length - 1].ActualEnd.Coordinates[1]));
-        end.BackColor = Color.White;
-        end.BorderColor = Color.Red;
-        end.BorderWidth = 2f;
-
-        this.radMap1.MapElement.Layers[0].Add(routeElement);
-        this.radMap1.MapElement.Layers[0].Add(start);
-        this.radMap1.MapElement.Layers[0].Add(end);
-    }    
-}
-
-````
-````VB.NET
-Public Sub RunRouteRequest()
-    'add a layer to display the route
-    Me.radMap1.MapElement.Layers.Add(New MapLayer())
-    Dim request As New RouteRequest()
-    request.DistanceUnit = DistanceUnit.Kilometer
-    request.Options.Mode = TravelMode.Driving
-    request.Options.Optimization = RouteOptimization.Time
-    request.Options.RouteAttributes = RouteAttributes.RoutePath
-    request.Options.RouteAvoidance = RouteAvoidance.None
-    request.RoutePoints.Add(New Waypoint("Paris, France"))
-    request.RoutePoints.Add(New Waypoint("Madrid, Spain"))
-    Dim bingProvider As BingRestMapProvider = TryCast(Me.radMap1.Providers(0), BingRestMapProvider)
-    AddHandler bingProvider.CalculateRouteCompleted, AddressOf BingProvider_RoutingCompleted
-    bingProvider.CalculateRouteAsync(request)
-End Sub
-Private Sub BingProvider_TruckRoutingCompleted(ByVal sender As Object, ByVal e As RoutingCompletedEventArgs)
-    Dim points As List(Of Telerik.WinControls.UI.Map.PointG) = New List(Of PointG)()
-    For Each route As Route In e.Routes
-        For Each coordinatePair As Double() In route.RoutePath.Line.Coordinates
-            Dim point As PointG = New PointG(coordinatePair(0), coordinatePair(1))
-            points.Add(point)
-        Next
-
-        Dim boundingRectangle As RectangleG = New RectangleG(route.BBox(2), route.BBox(1),
-                                                             route.BBox(0), route.BBox(3))
-        Dim routeElement As MapRoute = New MapRoute(points, boundingRectangle)
-        routeElement.BorderColor = Color.Blue
-        routeElement.BorderWidth = 5
-        Dim start As MapPin = New MapPin(New PointG(route.RouteLegs(0).ActualStart.Coordinates(0),
-                                                    route.RouteLegs(0).ActualStart.Coordinates(1)))
-        start.BackColor = Color.White
-        start.BorderColor = Color.Green
-        start.BorderWidth = 2.0F
-        Dim [end] As MapPin = New MapPin(New PointG(route.RouteLegs(route.RouteLegs.Length - 1).ActualEnd.Coordinates(0),
-                                                    route.RouteLegs(route.RouteLegs.Length - 1).ActualEnd.Coordinates(1)))
-        [end].BackColor = Color.White
-        [end].BorderColor = Color.Red
-        [end].BorderWidth = 2.0F
-        Me.RadMap1.MapElement.Layers(0).Add(routeElement)
-        Me.RadMap1.MapElement.Layers(0).Add(start)
-        Me.RadMap1.MapElement.Layers(0).Add([end])
-    Next
-
-End Sub
-
-````
-
-{{endregion}} 
 
 The **RouteRequest** class also supports *ViaWayPoints* objects. These route points allow a particular leg to be divided into separate sub legs. The [Bing REST Serivices documentation](https://msdn.microsoft.com/en-us/library/ff701717.aspx) provides additional information what a *waypoint* and a *viaWayPoint* represents.
 
 #### Creating a Route with ViaWayPoints
 
-{{source=..\SamplesCS\Map\BingProvider.cs region=ViaWayPointsExample}} 
-{{source=..\SamplesVB\Map\BingProvider.vb region=ViaWayPointsExample}}
-````C#
-RouteRequest viaWayPointsRequest = new RouteRequest();
-viaWayPointsRequest.DistanceUnit = DistanceUnit.Kilometer;
-viaWayPointsRequest.Options.Mode = TravelMode.Driving;
-viaWayPointsRequest.Options.Optimization = RouteOptimization.Time;
-viaWayPointsRequest.Options.RouteAttributes = RouteAttributes.RoutePath;
-viaWayPointsRequest.Options.RouteAvoidance = RouteAvoidance.None;
-viaWayPointsRequest.RoutePoints.Add(new Waypoint("47.6062, -122.3321")); //Seattle
-viaWayPointsRequest.RoutePoints.Add(new ViaWaypoint("40.7306, -73.9352")); //New York
-viaWayPointsRequest.RoutePoints.Add(new Waypoint("25.789, -80.2264")); //Miami
-BingRestMapProvider bingProvider = this.radMap1.Providers[0] as BingRestMapProvider;
-bingProvider.CalculateRouteAsync(viaWayPointsRequest);
-
-````
-````VB.NET
-Dim viaWayPointsRequest As RouteRequest = New RouteRequest()
-viaWayPointsRequest.DistanceUnit = DistanceUnit.Kilometer
-viaWayPointsRequest.Options.Mode = TravelMode.Driving
-viaWayPointsRequest.Options.Optimization = RouteOptimization.Time
-viaWayPointsRequest.Options.RouteAttributes = RouteAttributes.RoutePath
-viaWayPointsRequest.Options.RouteAvoidance = RouteAvoidance.None
-viaWayPointsRequest.RoutePoints.Add(New Waypoint("47.6062, -122.3321"))
-viaWayPointsRequest.RoutePoints.Add(New ViaWaypoint("40.7306, -73.9352"))
-viaWayPointsRequest.RoutePoints.Add(New Waypoint("25.789, -80.2264"))
-Dim bingProvider As BingRestMapProvider = TryCast(Me.radMap1.Providers(0), BingRestMapProvider)
-bingProvider.CalculateRouteAsync(viaWayPointsRequest)
-
-````
+<snippet id='map-bingprovider-viawaypointsexample-cs' />
+<snippet id='map-bingprovider-viawaypointsexample-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 * [BingRestMapProvider]({%slug winforms/map/providers/bingrestmapprovider%})

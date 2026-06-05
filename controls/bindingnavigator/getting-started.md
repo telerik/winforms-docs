@@ -38,30 +38,10 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 2\. Setup the `DataSource` property of the `BindingSource` and the `BindingSource` property of __RadBindingNaviagator__.
           
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadBindingNavigatorForm.cs region=radBindingNavigator1}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadBindingNavigatorForm.vb region=radBindingNavigator1}} 
+<snippet id='bindingnavigator-getting-started-radbindingnavigator1-cs'/>
+<snippet id='bindingnavigator-getting-started-radbindingnavigator1-vb'/>
 
-````C#
-this.bindingSource1.DataSource = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
-this.radBindingNavigator1.BindingSource = this.bindingSource1;
-
-````
-````VB.NET
-Me.bindingSource1.DataSource = New List(Of Integer)() From { _
- 1, _
- 2, _
- 3, _
- 4, _
- 5, _
- 6, _
- 7, _
- 8 _
-}
-Me.radBindingNavigator1.BindingSource = Me.bindingSource1
-
-````
-
-{{endregion}} 
+ 
 
 3\. Press __F5__ to run the project and you should see the following:
 

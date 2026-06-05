@@ -29,39 +29,17 @@ As explained in the previous section, the state of the document is essential for
 
 For example, you can build a **RadDocument** from scratch and add **Sections** to it in the following way:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=init}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=init}} 
+<snippet id='richtexteditor-sectioncode-init-cs' />
+<snippet id='richtexteditor-sectioncode-init-vb' />
 
-````C#
-            
-Telerik.WinForms.Documents.Model.Section section = new Telerik.WinForms.Documents.Model.Section();
-this.radRichTextEditor1.Document.Sections.Add(section);
 
-````
-````VB.NET
-Dim section As New Telerik.WinForms.Documents.Model.Section()
-Me.radRichTextEditor1.Document.Sections.Add(section)
-
-````
-
-{{endregion}} 
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting  a section break:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=break}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=break}} 
+<snippet id='richtexteditor-sectioncode-break-cs' />
+<snippet id='richtexteditor-sectioncode-break-vb' />
 
-````C#
-            
-this.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage);
 
-````
-````VB.NET
-Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
-
-````
-
-{{endregion}} 
 
 The method accept a parameter of type **SectionBreakType**. The possible values are:
 
@@ -82,125 +60,47 @@ Here is a list of these properties:
 
 * __PageMargin__ - represents the margin towards the edges of the page when in *Paged* mode.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=margin}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=margin}} 
+<snippet id='richtexteditor-sectioncode-margin-cs' />
+<snippet id='richtexteditor-sectioncode-margin-vb' />
 
-````C#
-            
-section.PageMargin = new Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30);
-            
-//When the section has already been added to the document
-this.radRichTextEditor1.ChangeSectionPageMargin(new Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30));
-
-````
-````VB.NET
-section.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30)
-'When the section has already been added to the document
-Me.radRichTextEditor1.ChangeSectionPageMargin(New Telerik.WinForms.Documents.Layout.Padding(40, 40, 30, 30))
-
-````
-
-{{endregion}} 
 
 
 * __PageOrientation__ - specifies if the pages in the section should be in *Portrait* or *Landscape* mode.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=orientation}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=orientation}} 
+<snippet id='richtexteditor-sectioncode-orientation-cs' />
+<snippet id='richtexteditor-sectioncode-orientation-vb' />
 
-````C#
-            
-//When creating a Section programmatically
-section.PageOrientation = PageOrientation.Landscape;
-            
-//When the section has already been added to the document
-this.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape);
 
-````
-````VB.NET
-'When creating a Section programmatically
-section.PageOrientation = PageOrientation.Landscape
-'When the section has already been added to the document
-Me.radRichTextEditor1.ChangeSectionPageOrientation(PageOrientation.Landscape)
-
-````
-
-{{endregion}} 
 
 * __PageSize__ - specifies the size of the pages in the section. The **PapertTypeConverter** class and the enum **PaperTypes** provide a convenient API and predefined sizes out of the box.
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=page}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=page}} 
+<snippet id='richtexteditor-sectioncode-page-cs' />
+<snippet id='richtexteditor-sectioncode-page-vb' />
 
-````C#
-            
-//When creating a Section programmatically
-section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4);
-            
-//When the section has already been added to the document
-this.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4));
 
-````
-````VB.NET
-'When creating a Section programmatically
-section.PageSize = PaperTypeConverter.ToSize(PaperTypes.A4)
-'When the section has already been added to the document
-Me.radRichTextEditor1.ChangeSectionPageSize(PaperTypeConverter.ToSize(PaperTypes.A4))
-
-````
-
-{{endregion}} 
 
 * Add headers and footers to a **Section**. Each section has the following types of **Headers** and **Footers** - *Default* (used all through the section), *First* (used on the first page of the section) and *Even* (to be used on every even page; if set, overrides the default header/footer on all even pages of the section). Here is how you can create a **Header**:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=body}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=body}} 
+<snippet id='richtexteditor-sectioncode-body-cs' />
+<snippet id='richtexteditor-sectioncode-body-vb' />
 
-````C#
-Telerik.WinForms.Documents.Model.Header header = new Telerik.WinForms.Documents.Model.Header() { Body = radDocument, IsLinkedToPrevious = false };
 
-````
-````VB.NET
-Dim header As New Telerik.WinForms.Documents.Model.Header() With {.Body = radDocument, .IsLinkedToPrevious = False}
-
-````
-
-{{endregion}} 
 
 All header/footer types are set identically.
 
 * In a non-measured document:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=header1}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=header1}} 
+<snippet id='richtexteditor-sectioncode-header1-cs' />
+<snippet id='richtexteditor-sectioncode-header1-vb' />
 
-````C#
-section.Headers.First = header;
-
-````
-````VB.NET
-section.Headers.First = header
-
-````
-
-{{endregion}} 
 
 
 * In a measured document:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=header2}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=header2}} 
+<snippet id='richtexteditor-sectioncode-header2-cs' />
+<snippet id='richtexteditor-sectioncode-header2-vb' />
 
-````C#
-this.radRichTextEditor1.UpdateHeader(this.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header);
 
-````
-````VB.NET
-Me.radRichTextEditor1.UpdateHeader(Me.radRichTextEditor1.Document.Sections.First, Telerik.WinForms.Documents.Model.HeaderFooterType.First, header)
-
-````
-
-{{endregion}} 
 
 Setting the **Footers** can be done in the same way.
 
@@ -210,40 +110,17 @@ Paragraphs can be added to a section in the following ways:
 
 In a non-measured document:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=add1}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=add1}} 
+<snippet id='richtexteditor-sectioncode-add1-cs' />
+<snippet id='richtexteditor-sectioncode-add1-vb' />
 
-````C#
-            
-Section section1 = new Section();
-Paragraph paragraph = new Paragraph();
-section1.Blocks.Add(paragraph);
 
-````
-````VB.NET
-Dim section1 As New Section()
-Dim paragraph As New Paragraph()
-section1.Blocks.Add(paragraph)
-
-````
-
-{{endregion}} 
 
 In a measured document:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\SectionCode.cs region=add2}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\SectionCode.vb region=add2}} 
+<snippet id='richtexteditor-sectioncode-add2-cs' />
+<snippet id='richtexteditor-sectioncode-add2-vb' />
 
-````C#
-this.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER);
 
-````
-````VB.NET
-Me.radRichTextEditor1.Insert(FormattingSymbolLayoutBox.ENTER)
-
-````
-
-{{endregion}}
 
 # See Also
 

@@ -19,31 +19,10 @@ Simply all that has to be done is to create an instance of __RadPageViewPage__, 
 
 #### Adding pages
 
-{{source=..\SamplesCS\PageView\HowTo.cs region=addingPages}} 
-{{source=..\SamplesVB\PageView\HowTo.vb region=addingPages}} 
+<snippet id='pageview-howto-addingpages-cs' />
+<snippet id='pageview-howto-addingpages-vb' />
 
-````C#
-            
-RadPageViewPage pageOne = new RadPageViewPage();
-pageOne.Text = "First Page";
-radPageView1.Pages.Add(pageOne);
-            
-RadPageViewPage pageTwo = new RadPageViewPage();
-pageTwo.Text = "Second Page";
-radPageView1.Pages.Add(pageTwo);
 
-````
-````VB.NET
-Dim pageOne As New RadPageViewPage()
-pageOne.Text = "First Page"
-radPageView1.Pages.Add(pageOne)
-Dim pageTwo As New RadPageViewPage()
-pageTwo.Text = "Second Page"
-radPageView1.Pages.Add(pageTwo)
-
-````
-
-{{endregion}} 
 
 >note In case you need to add a page at a certain position, feel free to use the Pages.**Insert** method passing the desired position index and the **RadPageViewPage** instance you want to add. 
 
@@ -53,24 +32,10 @@ Additionally, adding other controls to a specified __RadPageViewPage__ programm
 
 #### Adding controls to a page
 
-{{source=..\SamplesCS\PageView\HowTo.cs region=addingControls}} 
-{{source=..\SamplesVB\PageView\HowTo.vb region=addingControls}} 
+<snippet id='pageview-howto-addingcontrols-cs' />
+<snippet id='pageview-howto-addingcontrols-vb' />
 
-````C#
-            
-RadButton button = new RadButton();
-button.Text = "My Button";
-pageOne.Controls.Add(button);
 
-````
-````VB.NET
-Dim button As New RadButton()
-button.Text = "My Button"
-pageOne.Controls.Add(button)
-
-````
-
-{{endregion}} 
 
 # See Also
 

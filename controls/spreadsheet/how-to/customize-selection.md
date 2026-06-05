@@ -30,8 +30,8 @@ __SpreadsheetElement__ exposes several properties that enable you to control the
 
 ####  Example 2: Customizing selection
 
-{{source=..\SamplesCS\Spreadsheet\SelectionCode.cs region=Selection_10}} 
-{{source=..\SamplesVB\Spreadsheet\SelectionCode.vb region=Selection_10}} 
+<snippet id='spreadsheet-selectioncode-selection_10-cs' />
+<snippet id='spreadsheet-selectioncode-selection_10-vb' />
 
  ````C#
 Brush strokeBrush = Brushes.Green;
@@ -49,9 +49,6 @@ radSpreadsheet.SpreadsheetElement.SelectionStroke = strokeBrush
 radSpreadsheet.SpreadsheetElement.SelectionStrokeThickness = 2
 
 ```` 
-{{endregion}} 
-
-
 ## See Also
 
  * [Customize Row and Column Headers]({%slug radspreadsheet-howto-customize-row-column-headers%})

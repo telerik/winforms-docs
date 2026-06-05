@@ -14,42 +14,19 @@ There are two ways to assign tooltips to __RadClock__, namely setting the __Tool
 
 #### Setting the ToolTipText property
 
-{{source=..\SamplesCS\Clock\ClockGettingStarted.cs region=SetToolTipText}} 
-{{source=..\SamplesVB\Clock\ClockGettingStarted.vb region=SetToolTipText}}
+<snippet id='clock-tooltips-settoolTiptext-cs'/>
+<snippet id='clock-tooltips-settoolTiptext-vb'/>
 
-````C#
-radClock1.ClockElement.ToolTipText = DateTime.Now.ToLongTimeString();
-
-````
-````VB.NET
-radClock1.ClockElement.ToolTipText = DateTime.Now.ToLongTimeString()
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadClock ToolTips](images/clock-tooltips001.png)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
-{{source=..\SamplesCS\Clock\ClockGettingStarted.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\Clock\ClockGettingStarted.vb region=ToolTipTextNeeded}}
+<snippet id='clock-tooltips-tooltiptextneeded-cs'/>
+<snippet id='clock-tooltips-tooltiptextneeded-vb'/>
 
-````C#
-private void RadClock1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    e.ToolTipText = DateTime.Now.ToLongTimeString();
-}
-
-````
-````VB.NET
-Private Sub RadClock1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    e.ToolTipText = DateTime.Now.ToLongTimeString()
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadClock ToolTipTextNeeded](images/clock-tooltips002.png)
 

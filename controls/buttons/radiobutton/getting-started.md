@@ -48,25 +48,10 @@ To programmatically add a __RadRadioButton__ to a form, create a new instance o
 
 #### Adding RadRadioButton at run time
 
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=AddProgrammatically}} 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=AddProgrammatically}} 
+<snippet id='buttons-radiobutton-getting-started-addprogrammatically-cs' />
+<snippet id='buttons-radiobutton-getting-started-addprogrammatically-vb' />
 
-````C#
-RadRadioButton radioButton = new RadRadioButton();
-radioButton.Text = "Medium size";
-radioButton.ToggleState = Telerik.WinControls.Enumerations.ToggleState.On;
-this.Controls.Add(radioButton);
 
-````
-````VB.NET
-Dim radioButton As New RadRadioButton()
-radioButton.Text = "Medium size"
-radioButton.ToggleState = Telerik.WinControls.Enumerations.ToggleState.[On]
-Me.Controls.Add(radioButton)
-
-````
-
-{{endregion}} 
 
 The following tutorial demonstrates creating two groups of radio buttons that act independently of one another. Choices are reflected in a label as they are selected.
 
@@ -88,24 +73,10 @@ The following tutorial demonstrates creating two groups of radio buttons that ac
           	
 #### Handling the ToggleStateChanged Event 
 
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChanged}} 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChanged}} 
+<snippet id='buttons-radiobutton-getting-started-handlingtogglestatechanged-cs' />
+<snippet id='buttons-radiobutton-getting-started-handlingtogglestatechanged-vb' />
 
-````C#
-void radRadioButton1_ToggleStateChanged(object sender, StateChangedEventArgs args)
-{
-    lblStatus.Text = (sender as RadRadioButton).Text + " is selected";
-}
 
-````
-````VB.NET
-Private Sub radRadioButton1_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-    lblStatus.Text = (TryCast(sender, RadRadioButton)).Text + " is selected"
-End Sub
-
-````
-
-{{endregion}} 
 
 8\. Press __F5__ to run the application. Notice that selections made on radio buttons in the panel are independent of the radio button choices on the form. __RadRadioButton__ determines the radio groups by the control parent. All __RadRadioButtons__ sharing the same parent e.g. __RadGroupBox__, __RadPanel__ or a __Form__ will be part of one group.
 

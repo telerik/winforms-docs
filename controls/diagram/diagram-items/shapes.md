@@ -23,63 +23,15 @@ __RadDiagramShape__ is an object that describes the nodes of the diagram. You ca
 ![WinForms RadDiagram Shape](images/diagram-diagram-items-shapes001.png)  
 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=SetAShape}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=SetAShape}} 
+<snippet id='diagram-shapes-setashape-cs' />
+<snippet id='diagram-shapes-setashape-vb' />
 
-````C#
-            
-RadDiagramShape shape1 = new RadDiagramShape()
-{
-    Text = "",
-    Shape = new AShape(),
-    BackColor = Color.LimeGreen
-};
-shape1.Position = new Telerik.Windows.Diagrams.Core.Point(100, 100);
-radDiagram1.AddShape(shape1);
 
-````
-````VB.NET
-Dim shape1 As New RadDiagramShape() With { _
-    .Text = "", _
-    .Shape = New AShape(), _
-    .BackColor = Color.LimeGreen _
-}
-shape1.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
-RadDiagram1.AddShape(shape1)
 
-````
+<snippet id='diagram-shapes-ashape-cs' />
+<snippet id='diagram-shapes-ashape-vb' />
 
-{{endregion}}  
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=AShape}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=AShape}} 
-
-````C#
-    
-public class AShape : ElementShape
-{ 
-    public override GraphicsPath CreatePath(Rectangle bounds)
-    {
-        GraphicsPath path = new GraphicsPath();
-        path.AddString("A", new FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic);
-        return path;
-    }
-}
-
-````
-````VB.NET
-Public Class AShape
-Inherits ElementShape
-    Public Overrides Function CreatePath(bounds As Rectangle) As GraphicsPath
-        Dim path As New GraphicsPath()
-        path.AddString("A", New FontFamily("Arial"), 0, 122, Point.Empty, StringFormat.GenericTypographic)
-        Return path
-    End Function
-End Class
-
-````
-
-{{endregion}} 
 
 
 
@@ -88,33 +40,10 @@ or to use one of the pre-defined shapes:
 
 ![WinForms RadDiagram Pre-defined Shapes](images/diagram-diagram-items-shapes002.png) 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=StarShape}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=StarShape}} 
+<snippet id='diagram-shapes-starshape-cs' />
+<snippet id='diagram-shapes-starshape-vb' />
 
-````C#
-            
-RadDiagramShape starShape = new RadDiagramShape()
-{
-    Text = "",
-    Shape = new StarShape(),
-    BackColor = Color.LimeGreen
-};
-starShape.Position = new Telerik.Windows.Diagrams.Core.Point(400, 100);
-radDiagram1.AddShape(starShape);
 
-````
-````VB.NET
-Dim starShape As New RadDiagramShape() With { _
-    .Text = "", _
-    .Shape = New StarShape(), _
-    .BackColor = Color.LimeGreen _
-}
-starShape.Position = New Telerik.Windows.Diagrams.Core.Point(100, 100)
-RadDiagram1.AddShape(starShape)
-
-````
-
-{{endregion}} 
 
 >note A list of pre-defined shapes is available here: [Shapes](https://docs.telerik.com/devtools/winforms/controls/diagram/diagram-items/shapes)
  
@@ -194,22 +123,10 @@ You can easily customize the visual appearance of the __RadDiagramShape__ by usi
 
 * __BorderBrush__- gets or sets the brush that specifies the __RadDiagramShape__ border color if the __DrawBorder__ property is set to *true*. 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=ShapeBorder}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=ShapeBorder}} 
+<snippet id='diagram-shapes-shapeborder-cs' />
+<snippet id='diagram-shapes-shapeborder-vb' />
 
-````C#
-            
-shape1.BorderBrush = new System.Drawing.SolidBrush(System.Drawing.Color.Red);
-shape1.DrawBorder = true;
 
-````
-````VB.NET
-shape1.BorderBrush = New System.Drawing.SolidBrush(System.Drawing.Color.Red)
-shape1.DrawBorder = True
-
-````
-
-{{endregion}} 
 
 
 
@@ -219,26 +136,10 @@ shape1.DrawBorder = True
 
 * __StrokeDashArray__ - gets or sets a collection of Double values that indicate the pattern of dashes and gaps that is used to outline the __RadDiagramShape__.
             
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=BorderStroke}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=BorderStroke}} 
+<snippet id='diagram-shapes-borderstroke-cs' />
+<snippet id='diagram-shapes-borderstroke-vb' />
 
-````C#
-            
-shape.StrokeDashArray = new Telerik.WinControls.UI.Diagrams.DoubleCollection(new List<float> { 2, 2, 2, 2 });
 
-````
-````VB.NET
-        
-shape.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New List(Of Single)() From { _
-    2, _
-    2, _
-    2, _
-    2 _
-})
-
-````
-
-{{endregion}} 
 
 >caption Figure 6: StrokeDashArray
 

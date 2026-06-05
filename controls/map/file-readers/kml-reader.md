@@ -20,44 +20,9 @@ To read your data you have to use a __KmlReader__.
 
 #### Using KmlReader
 
-{{source=..\SamplesCS\Map\MapFileReaders.cs region=SetupKMLReader}} 
-{{source=..\SamplesVB\Map\MapFileReaders.vb region=SetupKMLReader}}
+<snippet id='map-mapfilereaders-setupkmlreader-cs' />
+<snippet id='map-mapfilereaders-setupkmlreader-vb' />
 
-````C#
-        
-OpenStreetMapProvider osmProvider = new OpenStreetMapProvider();
-this.radMap1.MapElement.Providers.Add(osmProvider);
-this.radMap1.Layers.Clear();
-this.radMap1.Layers.Add(new MapLayer("Capitals"));
-using (FileStream seatsStream = new FileStream(@"..\..\Resources\cb_2015_us_county_5m.kml", FileMode.Open, FileAccess.Read))
-{
-List<MapVisualElement> elements = KmlReader.Read(seatsStream);
-foreach (MapVisualElement item in elements)
-{
-item.BorderWidth = 1;
-item.BorderColor = Color.Red;
-}
-        this.radMap1.Layers["Capitals"].AddRange(elements);
-}
-
-````
-````VB.NET
-Dim osmProvider As New OpenStreetMapProvider()
-Me.radMap1.MapElement.Providers.Add(osmProvider)
-Me.radMap1.Layers.Clear()
-Me.radMap1.Layers.Add(New MapLayer("Capitals"))
-Using seatsStream As New FileStream("..\..\Resources\cb_2015_us_county_5m.kml", FileMode.Open, FileAccess.Read)
-    Dim elements As List(Of MapVisualElement) = KmlReader.Read(seatsStream)
-    For Each item As MapVisualElement In elements
-        item.BorderWidth = 1
-        item.BorderColor = Color.Red
-    Next
-    Me.radMap1.Layers("Capitals").AddRange(elements)
-End Using
-
-````
-
-{{endregion}} 
 
 
 # Using local images

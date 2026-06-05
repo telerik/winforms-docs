@@ -26,61 +26,14 @@ To localize RadCalendar to display control text and messages in a specific langu
 
 Below is a sample implementation of an English localization provider:
         
-{{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Localization}} 
-{{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Localization}} 
+<snippet id='calendar-localization-localization-provider-localization-cs' />
+<snippet id='calendar-localization-localization-provider-localization-vb' />
 
-````C#
-public class MyEnglishCalendarLocalizationProvider : CalendarLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case CalendarStringId.CalendarClearButton:
-                return "Close";
-            case CalendarStringId.CalendarTodayButton:
-                return "Today";
-            default:
-                return base.GetLocalizedString(id);
-        }
-    }
-}
-
-````
-````VB.NET
-Public Class MyEnglishCalendarLocalizationProvider
-    Inherits CalendarLocalizationProvider
-    Public Overrides Function GetLocalizedString(id As String) As String
-        Select Case id
-            Case CalendarStringId.CalendarClearButton
-                Return "Clear"
-            Case CalendarStringId.CalendarTodayButton
-                Return "Today"
-            Case Else
-                Return MyBase.GetLocalizedString(id)
-        End Select
-    End Function
-End Class
-
-````
-
-{{endregion}} 
  
 To apply the custom localization provider, instantiate and assign it to the current localization provider:  
 
-{{source=..\SamplesCS\Calendar\Localization\LocalizationProvider.cs region=Usage}} 
-{{source=..\SamplesVB\Calendar\Localization\LocalizationProvider.vb region=Usage}} 
-
-````C#
-CalendarLocalizationProvider.CurrentProvider = new MyEnglishCalendarLocalizationProvider();
-
-````
-````VB.NET
-CalendarLocalizationProvider.CurrentProvider = New MyEnglishCalendarLocalizationProvider()
-
-````
-
-{{endregion}} 
+<snippet id='calendar-localization-localization-provider-usage-cs' />
+<snippet id='calendar-localization-localization-provider-usage-vb' />
 
 ## See Also
 

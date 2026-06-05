@@ -21,89 +21,30 @@ The following example demonstrates how to do that:
 
 #### Map Nullable Property
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=BindingCreating}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreating}} 
+<snippet id='dataentry-handle-unsupported-values-bindingcreating-cs'/>
+<snippet id='dataentry-handle-unsupported-values-bindingcreating-vb'/>
 
-````C#
-void radDataEntry1_BindingCreating(object sender, BindingCreatingEventArgs e)
-{
-    if (e.DataMember == "DateTime")
-    {
-        e.PropertyName = "NullableValue";
-    }
-}
 
-````
-````VB.NET
-Private Sub radDataEntry1_BindingCreating(sender As Object, e As BindingCreatingEventArgs)
-    If e.DataMember = "DateTime" Then
-        e.PropertyName = "NullableValue"
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 
 2\. Then in the __BindingCreated__ event you will enable the binding formatting and will subscribe to its __Format__ event.  
 
 #### Enable Formatting
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=BindingCreated}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=BindingCreated}} 
+<snippet id='dataentry-handle-unsupported-values-bindingcreated-cs'/>
+<snippet id='dataentry-handle-unsupported-values-bindingcreated-vb'/>
 
-````C#
-void radDataEntry1_BindingCreated(object sender, BindingCreatedEventArgs e)
-{
-    if (e.DataMember == "DateTime")
-    {
-        e.Binding.FormattingEnabled = true;
-        e.Binding.Format += Binding_Format;
-    }
-}
 
-````
-````VB.NET
-Private Sub radDataEntry1_BindingCreated(sender As Object, e As BindingCreatedEventArgs)
-    If e.DataMember = "DateTime" Then
-        e.Binding.FormattingEnabled = True
-        AddHandler e.Binding.Format, AddressOf Binding_Format
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 
 3\. At the end we just need to interpret the *DBNull*  values as *null* values:
 
 #### Evaluate DBNull
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.cs region=Format}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\DataEntryHowTo\HandleUnsupportedValues.vb region=Format}} 
+<snippet id='dataentry-handle-unsupported-values-format-cs'/>
+<snippet id='dataentry-handle-unsupported-values-format-vb'/>
 
-````C#
-void Binding_Format(object sender, ConvertEventArgs e)
-{
-    if (e.Value.Equals(DBNull.Value))
-    {
-        e.Value = null;
-    }
-}
 
-````
-````VB.NET
-Private Sub Binding_Format(sender As Object, e As ConvertEventArgs)
-    If e.Value.Equals(DBNull.Value) Then
-        e.Value = Nothing
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 # See Also
 

@@ -21,19 +21,9 @@ If you do not what the scrollbars to be displayed you can disable them. Thus, th
 
 #### Disable scrollbars
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=DisableScrollbars}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=DisableScrollbars}} 
+<snippet id='picturebox-pictureboxgettingstarted-disablescrollbars-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-disablescrollbars-vb' />
 
-````C#
-this.radPictureBox1.ShowScrollBars = false;
-
-````
-````VB.NET
-Me.RadPictureBox1.ShowScrollBars = False
-
-````
-
-{{endregion}}
 
 
 ## Zoom properties
@@ -54,57 +44,23 @@ Me.RadPictureBox1.ShowScrollBars = False
 The control exposes an API for zooming programmatically. 
 
 * The **Zoom** method performs a zoom operation by given steps count:
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=Zoom}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=Zoom}} 
+<snippet id='picturebox-pictureboxgettingstarted-zoom-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-zoom-vb' />
 
-````C#
-this.radPictureBox1.ZoomProperties.Zoom(5);
-
-````
-````VB.NET
-Me.RadPictureBox1.ZoomProperties.Zoom(5)
-
-````
-
-{{endregion}}
 
 
 * The **ZoomIn** method performs a zoom-in operation with one step, according to the **ZoomStep** value. This method has an overload that performs a zoom-in according to the **ZoomStep** value operation with a specified count of steps:
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=ZoomIn}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=ZoomIn}}
+<snippet id='picturebox-pictureboxgettingstarted-zoomin-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-zoomin-vb' />
 
-````C#
-this.radPictureBox1.ZoomProperties.ZoomIn();
-this.radPictureBox1.ZoomProperties.ZoomIn(5);
-
-````
-````VB.NET
-Me.RadPictureBox1.ZoomProperties.ZoomIn()
-Me.RadPictureBox1.ZoomProperties.ZoomIn(5)
-
-````
-
-{{endregion}}
 
 
 * The **ZoomOut** method performs a zoom-out operation with one step, according to the **ZoomStep** value. This method has an overload that performs a zoom-out according to the **ZoomStep** value operation with a specified count of steps:
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=ZoomOut}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=ZoomOut}} 
+<snippet id='picturebox-pictureboxgettingstarted-zoomout-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-zoomout-vb' />
 
-````C#
-this.radPictureBox1.ZoomProperties.ZoomOut();
-this.radPictureBox1.ZoomProperties.ZoomOut(5);
-
-````
-````VB.NET
-Me.RadPictureBox1.ZoomProperties.ZoomOut()
-Me.RadPictureBox1.ZoomProperties.ZoomOut(5)
-
-````
-
-{{endregion}}
 
 
 You can also reset all the zoom settings by calling the **ResetZoom** method. 

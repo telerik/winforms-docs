@@ -81,39 +81,20 @@ This article describes the most commonly used properties, events and methods.
 
 #### Close Popup 
 
-{{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=close}} 
-{{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=close}} 
+<snippet id='editors-popupeditorcode-close-cs' />
+<snippet id='editors-popupeditorcode-close-vb' />
 
-````C#
-radPopupEditor1.PopupEditorElement.ClosePopup(RadPopupCloseReason.CloseCalled);
 
-````
-````VB.NET
-radPopupEditor1.PopupEditorElement.ClosePopup(RadPopupCloseReason.CloseCalled)
 
-````
-
-{{endregion}} 
- 
 * __ShowPopup:__ This method can be used for programmatically showing the popup.
 
 #### Show Popup 
 
 
-{{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=show}} 
-{{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=show}} 
+<snippet id='editors-popupeditorcode-show-cs' />
+<snippet id='editors-popupeditorcode-show-vb' />
 
-````C#
-radPopupEditor1.PopupEditorElement.ShowPopup();
 
-````
-````VB.NET
-radPopupEditor1.PopupEditorElement.ShowPopup()
-
-````
-
-{{endregion}} 
- 
 
 # See Also
 

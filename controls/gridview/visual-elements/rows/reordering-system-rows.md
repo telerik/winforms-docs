@@ -33,25 +33,8 @@ In order to perform system rows reordering, you can use the RadGridView.MasterVi
 
 #### Reordering System Rows
 
-{{source=..\SamplesCS\GridView\Rows\ReorderingSystemRows.cs region=ReorderingSystemRows}} 
-{{source=..\SamplesVB\GridView\Rows\ReorderingSystemRows.vb region=ReorderingSystemRows}} 
-
-````C#
-this.radGridView1.MasterView.SystemRows.Move(1, 2);
-this.radGridView1.MasterView.SystemRows.Move(2, 3);
-this.radGridView1.GridViewElement.TableElement.InvalidateMeasure(true);
-this.radGridView1.GridViewElement.TableElement.UpdateLayout();
-
-````
-````VB.NET
-Me.RadGridView1.MasterView.SystemRows.Move(1, 2)
-Me.RadGridView1.MasterView.SystemRows.Move(2, 3)
-Me.RadGridView1.GridViewElement.TableElement.InvalidateMeasure(True)
-Me.RadGridView1.GridViewElement.TableElement.UpdateLayout()
-
-````
-
-{{endregion}}
+<snippet id='gridview-reorderingsystemrows-reorderingsystemrows-cs' />
+<snippet id='gridview-reorderingsystemrows-reorderingsystemrows-vb' />
 
 >note The layout needs to be invalidated and updated in order to reflect the changes.
 >

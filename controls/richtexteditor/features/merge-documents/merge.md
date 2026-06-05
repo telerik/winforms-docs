@@ -24,25 +24,10 @@ Along with the [RadDocument]({%slug winforms/richtexteditor-/document-elements/r
 
 #### Merge documents with InsertDocumentOptions 
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\Main.cs region=radrichtextbox-features-raddocumentmerger_1}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\Main.vb region=radrichtextbox-features-raddocumentmerger_1}} 
+<snippet id='richtexteditor-main-radrichtextbox-features-raddocumentmerger_1-cs' />
+<snippet id='richtexteditor-main-radrichtextbox-features-raddocumentmerger_1-vb' />
 
-````C#
-InsertDocumentOptions insertOptions = new InsertDocumentOptions();
-insertOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle;
-insertOptions.InsertLastParagraphMarker = false;
-merger.InsertDocument(sourceDocument, insertOptions);
 
-````
-````VB.NET
-Dim insertOptions As New InsertDocumentOptions()
-insertOptions.ConflictingStylesResolutionMode = ConflictingStylesResolutionMode.UseTargetStyle
-insertOptions.InsertLastParagraphMarker = False
-merger.InsertDocument(sourceDocument, insertOptions)
-
-````
-
-{{endregion}} 
 
 There is another overload of **InsertDocument()** that takes only a [RadDocument]({%slug winforms/richtexteditor-/document-elements/raddocument%}) instance. When you use this overload, the default values of **InsertDocumentOptions** are used when merging documents.  
 

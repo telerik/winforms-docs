@@ -23,36 +23,8 @@ At runtime, if the data source for the grid is a __System.Data.DataSet__ type an
 
 The run-time code fills the categories and products data tables, sets the __AutoGenerateHierarchy__ to *true*, assigns the data set containing both tables to the grid __DataSource__ and the __DataMember__ is the name of the parent table. The last three lines of code below can be configured at design time.
 
-{{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.cs region=BindingToHierarchicalGridAutomatically}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.vb region=BindingToHierarchicalGridAutomatically}} 
-
-````C#
-        
-private void BindingToHierarchicalGridAutomatically_Load(object sender, EventArgs e)
-{
-    this.productsTableAdapter.Fill(this.nwindDataSet.Products);
-    this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
-    radGridView1.AutoGenerateHierarchy = true;
-    radGridView1.DataSource = this.nwindDataSet;
-    radGridView1.DataMember = "Categories";
-}
-
-````
-````VB.NET
-Private Sub BindingToHierarchicalGridAutomatically_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    'TODO: This line of code loads data into the 'NwindDataSet.Order_Details' table. You can move, or remove it, as needed.
-    Me.Order_DetailsTableAdapter.Fill(Me.NwindDataSet.Order_Details)
-    'TODO: This line of code loads data into the 'NwindDataSet.Order_Details' table. You can move, or remove it, as needed.
-    Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
-    Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
-    RadGridView1.AutoGenerateHierarchy = True
-    RadGridView1.DataSource = Me.NwindDataSet
-    RadGridView1.DataMember = "Categories"
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-bindingtohierarchicalgridautomatically-bindingtohierarchicalgridautomatically-cs' />
+<snippet id='gridview-bindingtohierarchicalgridautomatically-bindingtohierarchicalgridautomatically-vb' />
 
 ## Generating Multi-Level Hierarchy
 
@@ -60,34 +32,8 @@ It is possible to auto generate Multi-level hierarchy as well. You should again 
 
 ![WinForms RadGridView Multi-Level Hierarchy](images/gridview-hierarchical-grid-binding-to-hierarchical-data-automatically002.png)
 
-{{source=..\SamplesCS\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.cs region=BindingToMultiLevelHierarchicalGridAutomatically}} 
-{{source=..\SamplesVB\GridView\HierarchicalGrid\BindingToHierarchicalGridAutomatically.vb region=BindingToMultiLevelHierarchicalGridAutomatically}} 
-
-````C#
-        
-public void Dummy()
-{ 
-    this.productsTableAdapter.Fill(this.nwindDataSet.Products);
-    this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
-    this.order_DetailsTableAdapter.Fill(this.nwindDataSet.Order_Details);
-    radGridView1.DataSource = nwindDataSet;
-    radGridView1.DataMember = "Categories";
-    radGridView1.AutoGenerateHierarchy = true;
-}
-
-````
-````VB.NET
-Public Sub Dummy()
-    Me.ProductsTableAdapter.Fill(Me.NwindDataSet.Products)
-    Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
-    RadGridView1.DataSource = NwindDataSet
-    RadGridView1.DataMember = "Categories"
-    RadGridView1.AutoGenerateHierarchy = True
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-bindingtohierarchicalgridautomatically-bindingtomultilevelhierarchicalgridautomatically-cs' />
+<snippet id='gridview-bindingtohierarchicalgridautomatically-bindingtomultilevelhierarchicalgridautomatically-vb' />
 
 ![WinForms RadGridView AutoGenerateHierarchy](images/gridview-hierarchical-grid-binding-to-hierarchical-data-automatically003.png)
 

@@ -27,25 +27,10 @@ Use one of many overloads to build a new __Appointment__ instance. The example b
 
 #### New Appointment
 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=creatingAppointment}} 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=creatingAppointment}} 
+<snippet id='scheduler-workingwithappointments-creatingappointment-cs' />
+<snippet id='scheduler-workingwithappointments-creatingappointment-vb' />
 
-````C#
-Appointment appointment = new Appointment(DateTime.Now, TimeSpan.FromMinutes(60), "Summary", "Description");
-appointment.StatusId = 2;
-appointment.BackgroundId = 6;
-this.radScheduler1.Appointments.Add(appointment);
 
-````
-````VB.NET
-Dim appointment As New Appointment(Date.Now, TimeSpan.FromMinutes(60), "Summary", "Description")
-appointment.StatusId = 2
-appointment.BackgroundId = 6
-Me.RadScheduler1.Appointments.Add(appointment)
-
-````
-
-{{endregion}} 
 
 #### Figure 1: Appointmennt Element
 ![WinForms RadScheduler Appointmennt Element](images/scheduler-appointments-and-dialogs-working-with-appointments003.png)
@@ -68,19 +53,10 @@ Me.RadScheduler1.Appointments.Add(appointment)
 
 #### Appointment Status
 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=addStatus}} 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addStatus}} 
+<snippet id='scheduler-workingwithappointments-addstatus-cs' />
+<snippet id='scheduler-workingwithappointments-addstatus-vb' />
 
-````C#
-this.radScheduler1.Statuses.Add(new AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid));
 
-````
-````VB.NET
-Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple, Color.Purple, AppointmentStatusFillType.Solid))
-
-````
-
-{{endregion}} 
 
 * To add new a Background to an appointment, the __Backgrounds__ collection should be used. By default this collection is filled with the following statuses:            
 
@@ -116,19 +92,10 @@ Me.RadScheduler1.Statuses.Add(New AppointmentStatusInfo(5, "test", Color.Purple,
 
 #### Appointment Background
 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=addBackground}} 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=addBackground}} 
+<snippet id='scheduler-workingwithappointments-addbackground-cs' />
+<snippet id='scheduler-workingwithappointments-addbackground-vb' />
 
-````C#
-this.radScheduler1.Backgrounds.Add(new AppointmentBackgroundInfo(12, "test", Color.Purple));
 
-````
-````VB.NET
-Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color.Purple))
-
-````
-
-{{endregion}} 
 
 * In order to change the background of an appointment, use the Appointment's __BackgroundId__ property and choose a value from a value list.
 
@@ -142,19 +109,10 @@ Me.RadScheduler1.Backgrounds.Add(New AppointmentBackgroundInfo(12, "test", Color
 
 #### Appointment Title Format
 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=appointmentFormat}} 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=appointmentFormat}} 
+<snippet id='scheduler-workingwithappointments-appointmentformat-cs' />
+<snippet id='scheduler-workingwithappointments-appointmentformat-vb' />
 
-````C#
-this.radScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})";
 
-````
-````VB.NET
-Me.RadScheduler1.AppointmentTitleFormat = "{0} to {1}, {2} ({3})"
-
-````
-
-{{endregion}} 
 
 Here is a list with the different elements and their content:
             
@@ -182,19 +140,10 @@ Here is a list with the different elements and their content:
 
 #### Appointment ToolTip Text
 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.cs region=toolTipText}} 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\WorkingWithAppointments.vb region=toolTipText}} 
+<snippet id='scheduler-workingwithappointments-tooltiptext-cs' />
+<snippet id='scheduler-workingwithappointments-tooltiptext-vb' />
 
-````C#
-appointment.ToolTipText = "Some text";
 
-````
-````VB.NET
-appointment.ToolTipText = "Some text"
-
-````
-
-{{endregion}}
 
 * In order to enable/disable Appointment's editing and deleting operations, use the Appointment's __AllowEdit__ and __AllowDelete__ properties.
             

@@ -19,19 +19,10 @@ previous_url: treeview-breadcrumb
 
 Use __DefaultTreeView__ property of __RadBreadCrumb__ to associate the bread crumb with an instance of __RadTreeView__. 
 
-{{source=..\SamplesCS\TreeView\BreadCrumb.cs region=defaultTreeView}} 
-{{source=..\SamplesVB\TreeView\BreadCrumb.vb region=defaultTreeView}} 
+<snippet id='treeview-breadcrumb-defaulttreeview-cs' />
+<snippet id='treeview-breadcrumb-defaulttreeview-vb' />
 
-````C#
-this.radBreadCrumb1.DefaultTreeView = radTreeView1;
 
-````
-````VB.NET
-Me.RadBreadCrumb1.DefaultTreeView = Me.RadTreeView1
-
-````
-
-{{endregion}}
 
 ## Selecting Nodes
 
@@ -41,18 +32,10 @@ The **SelectTreeNodeOnClick** property determines whether the nodes in the tree 
 
 ![WinForms RadTreeView Selecting Nodes](images/treeview-breadcrumb004.gif)
 
-{{source=..\SamplesCS\TreeView\BreadCrumb.cs region=SelectingNodes}} 
-{{source=..\SamplesVB\TreeView\BreadCrumb.vb region=SelectingNodes}}
-````C#
-this.radBreadCrumb1.SelectTreeNodeOnClick = true;
+<snippet id='treeview-breadcrumb-selectingnodes-cs' />
+<snippet id='treeview-breadcrumb-selectingnodes-vb' />
 
-````
-````VB.NET
-Me.RadBreadCrumb1.SelectTreeNodeOnClick = True
 
-```` 
- 
-{{endregion}}
 
 # See Also
 * [RadBreadCrumb]({%slug breadcrumb-overview%})

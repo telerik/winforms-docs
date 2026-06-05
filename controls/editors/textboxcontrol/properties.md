@@ -55,23 +55,10 @@ Since R2 2021 **RadTextBoxControl** supports embedded labels. The embedded label
 
 #### Example 1: Setting the embedded label
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=EmbeddedLabels}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=EmbeddedLabels}} 
+<snippet id='editors-textboxcontrol-embeddedlabels-cs' />
+<snippet id='editors-textboxcontrol-embeddedlabels-vb' />
 
-````C#
-this.radTextBoxControl1.ShowEmbeddedLabel = true;
-this.radTextBoxControl1.AutoSize = true;
-this.radTextBoxControl1.EmbeddedLabelText = "First Name";        
 
-````
-````VB.NET
-Me.RadTextBoxControl1.ShowEmbeddedLabel = True
-Me.RadTextBoxControl1.AutoSize = True
-Me.RadTextBoxControl1.EmbeddedLabelText = "First Name"
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTextBoxControl Embedded Label](images/editors-textboxcontrol-properties-embedded-labels.gif)
 

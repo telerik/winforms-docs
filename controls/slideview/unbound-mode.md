@@ -22,39 +22,10 @@ Let's consider that we have a folder "Gallery" with 5 images. When navigating th
 
 ![WinForms SlideView UpdImages](images/slideview-images.png)
  
-{{source=..\SamplesCS\SlideView\SlideViewBinding.cs region=UnboundMode}} 
-{{source=..\SamplesVB\SlideView\SlideViewBinding.vb region=UnboundMode}}
+<snippet id='slideview-slideviewbinding-unboundmode-cs' />
+<snippet id='slideview-slideviewbinding-unboundmode-vb' />
 
-````C#
 
-        private void UnboundMode()
-        {
-            this.radSlideView1.TemplateUpdated += RadSlideView1_TemplateUpdated;
-            this.radSlideView1.NumberOfPages = 5;
-        }
-
-        private void RadSlideView1_TemplateUpdated(object sender, Telerik.WinControls.UI.SlideView.TemplateUpdatedEventArgs e)
-        {
-            int imageIndex = this.radSlideView1.SelectedIndex + 1;
-            e.Template.Image = Image.FromFile(@"..\..\Gallery\Image" + imageIndex + ".png");
-        }      
-      
-````
-````VB.NET 
-
-    Private Sub UnboundMode()
-        AddHandler Me.radSlideView1.TemplateUpdated, AddressOf RadSlideView1_TemplateUpdated
-        Me.radSlideView1.NumberOfPages = 5
-    End Sub
-
-    Private Sub RadSlideView1_TemplateUpdated(sender As Object, e As TemplateUpdatedEventArgs)
-        Dim imageIndex = Me.radSlideView1.SelectedIndex + 1
-        e.Template.Image = Image.FromFile("..\..\Gallery\Image" & imageIndex & ".png")
-    End Sub
-    
-```` 
-
-{{endregion}}
 
 ![WinForms SlideView Update Pages](images/slideview-update-pages.gif)
 

@@ -21,19 +21,10 @@ By default, the __RadDiagramItems__ are enabled for editing. In order to disable
 
 ![WinForms RadDiagram Fig IsEditable](images/diagram-items-manipulation-editing001.png) 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=IsEditable}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=IsEditable}} 
+<snippet id='diagram-editing-iseditable-cs'/>
+<snippet id='diagram-editing-iseditable-vb'/>
 
-````C#
-this.radDiagram1.IsEditable = true;
-
-````
-````VB.NET
-Me.RadDiagram1.IsEditable = True
-
-````
-
-{{endregion}} 
+ 
  
 
 ## Start Editing By Using Keyboard
@@ -56,27 +47,10 @@ In the code snippet below it is demonstrated how to access the editor element:
 
 #### Access editor element 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=GetEditor}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=GetEditor}} 
+<snippet id='diagram-editing-geteditor-cs'/>
+<snippet id='diagram-editing-geteditor-vb'/>
 
-````C#
-        
-private void shape_BeginEdit(object sender, EventArgs e)
-{
-    RadDiagramShape shape = sender as RadDiagramShape;
-    RadTextBoxControlElement editorElement = shape.FindDescendant<RadTextBoxControlElement>();
-}
-
-````
-````VB.NET
-Private Sub shape_BeginEdit(sender As Object, e As EventArgs)
-    Dim shape As RadDiagramShape = TryCast(sender, RadDiagramShape)
-    Dim editorElement As RadTextBoxControlElement = shape.FindDescendant(Of RadTextBoxControlElement)()
-End Sub
-
-````
-
-{{endregion}} 
+ 
             
 
 * __PreviewEndEdit__: fires when a __RadDiagramItem__ is about to leave the edit mode. It is cancelable.
@@ -93,40 +67,10 @@ __RadDiagram__ provides three predefined commands for editing the selected item 
 
 ![WinForms RadDiagram Editing by commands](images/diagram-items-manipulation-editing002.gif) 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EditCommands}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EditCommands}} 
+<snippet id='diagram-editing-editcommands-cs'/>
+<snippet id='diagram-editing-editcommands-vb'/>
 
-````C#
-        
-private void radButtonEdit_Click(object sender, EventArgs e)
-{
-    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.BeginEdit);
-}
-        
-private void radButtonConfirm_Click(object sender, EventArgs e)
-{
-    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CommitEdit);
-}
-private void radButtonCancel_Click(object sender, EventArgs e)
-{
-    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CancelEdit);
-}
-
-````
-````VB.NET
-Private Sub RadButtonEdit_Click(sender As Object, e As EventArgs) Handles RadButtonEdit.Click
-    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.BeginEdit)
-End Sub
-Private Sub RadButtonConfirm_Click(sender As Object, e As EventArgs) Handles RadButtonConfirm.Click
-    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CommitEdit)
-End Sub
-Private Sub RadButtonCancel_Click(sender As Object, e As EventArgs) Handles RadButtonCancel.Click
-    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.CancelEdit)
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 
 

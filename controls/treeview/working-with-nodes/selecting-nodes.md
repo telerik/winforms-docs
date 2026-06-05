@@ -15,19 +15,10 @@ previous_url: treeview-working-with-nodes-selecting-nodes
 
 To select a node use the __Selected__ property of __RadTreeNode__. The following example demonstrates how to do it.
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedNode}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedNode}} 
+<snippet id='treeview-workingwithnodes1-selectednode-cs' />
+<snippet id='treeview-workingwithnodes1-selectednode-vb' />
 
-````C#
-radTreeView1.SelectedNode = radTreeView1.Nodes[0];
 
-````
-````VB.NET
-RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-
-````
-
-{{endregion}} 
 
 ## Selecting Multiple Nodes
 
@@ -44,93 +35,26 @@ To enable the multiple selection the __MultiSelect__ property must be set to *tr
 
 To select multiple nodes through the API, just set the Selected property of the desired nodes to true. The example below adds four nodes, then selects the last two nodes.
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectMultiNodes}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectMultiNodes}} 
+<snippet id='treeview-workingwithnodes1-selectmultinodes-cs' />
+<snippet id='treeview-workingwithnodes1-selectmultinodes-vb' />
 
-````C#
-radTreeView1.MultiSelect = true;
-RadTreeNode Node1 = new RadTreeNode("Inbox");
-RadTreeNode Node2 = new RadTreeNode("Deleted Items");
-RadTreeNode Node3 = new RadTreeNode("Outbox");
-RadTreeNode Node4 = new RadTreeNode("Sent");
-radTreeView1.Nodes.Add(Node1);
-radTreeView1.Nodes.Add(Node2);
-radTreeView1.Nodes.Add(Node3);
-radTreeView1.Nodes.Add(Node4);
-Node3.Selected = true;
-Node4.Selected = true;
 
-````
-````VB.NET
-RadTreeView1.MultiSelect = True
-Dim Node1 As New RadTreeNode("Inbox")
-Dim Node2 As New RadTreeNode("Deleted Items")
-Dim Node3 As New RadTreeNode("Outbox")
-Dim Node4 As New RadTreeNode("Sent")
-RadTreeView1.Nodes.Add(Node1)
-RadTreeView1.Nodes.Add(Node2)
-RadTreeView1.Nodes.Add(Node3)
-RadTreeView1.Nodes.Add(Node4)
-Node3.Selected = True
-Node4.Selected = True
-
-````
-
-{{endregion}}
 
 ## SelectedNodeChanged Event
 
 When multiple selection functionality is turned on, the __SelectedNodeChanged__ event will be called twice: first for the previously selected node first and one more time for the newly selected node. In the RadTreeViewEventArgs you can distinguish the two event firings by the __Action__ property which is set to __Unknown__ when the selection is cleared.
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedNodeEvent}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedNodeEvent}}
+<snippet id='treeview-workingwithnodes1-selectednodeevent-cs' />
+<snippet id='treeview-workingwithnodes1-selectednodeevent-vb' />
 
-````C#
-private void radTreeView1_SelectedNodeChanged(object sender, Telerik.WinControls.UI.RadTreeViewEventArgs e)
-{
-    if (e.Action != Telerik.WinControls.UI.RadTreeViewAction.ByMouse)
-    {
-        Console.WriteLine(e.Node.Text);
-    }
-}
 
-````
-````VB.NET
-Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.RadTreeViewEventArgs)
-        If e.Action <> Telerik.WinControls.UI.RadTreeViewAction.ByMouse Then
-            Console.WriteLine(e.Node.Text)
-        End If
-End Sub
-
-````
-
-{{endregion}}
 
 Another approach will be to check the __Selected__ property of the node. If it is true, execute your logic.
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=selectedPropertyOfTheNode}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=selectedPropertyOfTheNode}}
+<snippet id='treeview-workingwithnodes1-selectedpropertyofthenode-cs' />
+<snippet id='treeview-workingwithnodes1-selectedpropertyofthenode-vb' />
 
-````C#
-private void radTreeView2_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
-{
-    if (e.Node.Selected == true)
-    {
-        Console.WriteLine(e.Node.Text);
-    }
-}
 
-````
-````VB.NET
-Private Sub RadTreeView2_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
-    If e.Node.Selected = True Then
-        Console.WriteLine(e.Node.Text)
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})

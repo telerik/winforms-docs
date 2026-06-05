@@ -31,43 +31,10 @@ You can add any element that derives from the **RadElement** class inside the __
 >note The following article contains more information about the element types which can be used inside the document: [Elements Overview]({%slug winforms/telerik-presentation-framework/elements/overview%}).
 >
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\UIContainerCode.cs region=add}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\UIContainerCode.vb region=add}} 
+<snippet id='richtexteditor-uicontainercode-add-cs' />
+<snippet id='richtexteditor-uicontainercode-add-vb' />
 
-````C#
-            
-RadButtonElement button = new RadButtonElement();
-button.Text = "My Button";
-            
-Section section = new Section();
-Paragraph paragraph = new Paragraph();
-InlineUIContainer container = new InlineUIContainer();
-RadElementUIContainer radContainer = new RadElementUIContainer(button);
-container.UiElement = radContainer;
-container.Height = 25;
-container.Width = 70;
-paragraph.Inlines.Add(container);
-section.Blocks.Add(paragraph);
-this.radRichTextEditor1.Document.Sections.Add(section);
 
-````
-````VB.NET
-Dim button As New RadButtonElement()
-button.Text = "My Button"
-Dim section As New Section()
-Dim paragraph As New Paragraph()
-Dim container As New InlineUIContainer()
-Dim radContainer As New RadElementUIContainer(button)
-container.UiElement = radContainer
-container.Height = 25
-container.Width = 70
-paragraph.Inlines.Add(container)
-section.Blocks.Add(paragraph)
-Me.radRichTextEditor1.Document.Sections.Add(section)
-
-````
-
-{{endregion}} 
 
 ## Specifics
 
@@ -86,95 +53,10 @@ To enable copying of **InlineUIContainers** in your application, you can create 
 
 #### Implement CopyableInlineUIContainer for a RadButtonElement as underlying UIElement
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\UIContainerCode.cs region=CopyableContainer}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\UIContainerCode.vb region=CopyableContainer}} 
+<snippet id='richtexteditor-uicontainercode-copyablecontainer-cs' />
+<snippet id='richtexteditor-uicontainercode-copyablecontainer-vb' />
 
-````C#    
-     
-       public class CopyableInlineUIContainer : InlineUIContainer
-       {
-           internal CopyableInlineUIContainer()
-           {
-           }
-               
-           public CopyableInlineUIContainer(Telerik.WinControls.RichTextEditor.UI.UIElement uiElement,
-               Telerik.WinControls.RichTextEditor.UI.Size size) : base(uiElement, size)
-           {
-           }
-           
-           public override bool IsCopyable
-           {
-               get
-               {
-                   return true;
-               }
-           }
-           
-           protected override DocumentElement CreateNewElementInstance()
-           {
-               return new CopyableInlineUIContainer();
-           }
-           
-           protected override void CopyPropertiesFromOverride(DocumentElement fromElement)
-           {
-               CopyableInlineUIContainer fromUIContainer = (CopyableInlineUIContainer)fromElement;
-               this.Width = fromUIContainer.Width;
-               this.Height = fromUIContainer.Height;
-               
-               RadElementUIContainer originalContainer = (RadElementUIContainer)fromUIContainer.UiElement;
-               RadButtonElement originalButton = originalContainer.Element as RadButtonElement;
 
-               RadButtonElement newButton = new RadButtonElement();
-               
-               newButton.Text = originalButton.Text;
-               Telerik.WinControls.RichTextEditor.UI.RadElementUIContainer newContainer = new RadElementUIContainer(newButton);
-               newContainer.Width = originalContainer.Width;
-               newContainer.Height = originalContainer.Height;
-               this.UiElement = newContainer;
-           }
-       }
-
-````
-````VB.NET
-
-    Public Class CopyableInlineUIContainer
-        Inherits InlineUIContainer
-
-        Friend Sub New()
-        End Sub
-
-        Public Sub New(ByVal uiElement As Telerik.WinControls.RichTextEditor.UI.UIElement, ByVal size As Telerik.WinControls.RichTextEditor.UI.Size)
-            MyBase.New(uiElement, size)
-        End Sub
-
-        Public Overrides ReadOnly Property IsCopyable As Boolean
-            Get
-                Return True
-            End Get
-        End Property
-
-        Protected Overrides Function CreateNewElementInstance() As DocumentElement
-            Return New CopyableInlineUIContainer()
-        End Function
-
-        Protected Overrides Sub CopyPropertiesFromOverride(ByVal fromElement As DocumentElement)
-            Dim fromUIContainer As CopyableInlineUIContainer = CType(fromElement, CopyableInlineUIContainer)
-            Me.Width = fromUIContainer.Width
-            Me.Height = fromUIContainer.Height
-            Dim originalContainer As RadElementUIContainer = CType(fromUIContainer.UiElement, RadElementUIContainer)
-            Dim originalButton As RadButtonElement = TryCast(originalContainer.Element, RadButtonElement)
-            Dim newButton As RadButtonElement = New RadButtonElement()
-            newButton.Text = originalButton.Text
-            Dim newContainer As Telerik.WinControls.RichTextEditor.UI.RadElementUIContainer = New RadElementUIContainer(newButton)
-            newContainer.Width = originalContainer.Width
-            newContainer.Height = originalContainer.Height
-            Me.UiElement = newContainer
-        End Sub
-    End Class
-
-````
-
-{{endregion}} 
 
 ##  Import Export InlineUIContainers      
 

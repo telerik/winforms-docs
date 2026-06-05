@@ -18,19 +18,10 @@ You can merge **RadMenuItems** by using the **MergeMenu** method of **RadMenu*
 
 #### Menu Merge
 
-{{source=..\SamplesCS\Menus\Menu\MenuMerge.cs region=Merge}} 
-{{source=..\SamplesVB\Menus\Menu\MenuMerge.vb region=Merge}} 
+<snippet id='menus-menumerge-merge-cs' />
+<snippet id='menus-menumerge-merge-vb' />
 
-````C#
-radMenu1.MergeMenu(srcRadMenu2);
 
-````
-````VB.NET
-radMenu1.MergeMenu(srcRadMenu2)
-
-````
-
-{{endregion}} 
 
 __RadMenuItem__ class has two properties that determines the way the items are merged: __MergeType__ and __MergeOrder__.  
 

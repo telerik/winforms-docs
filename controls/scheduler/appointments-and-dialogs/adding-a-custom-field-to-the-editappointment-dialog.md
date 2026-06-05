@@ -34,205 +34,39 @@ Here is a step by step guide how to achieve that:
 
 3\. Here is the form's implementation:
  
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.cs region=customAppEditForm}}
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\CustomAppointmentEditForm.vb region=customAppEditForm}}           
-````C#
-public partial class CustomAppointmentEditForm : EditAppointmentDialog
-{
-    public CustomAppointmentEditForm()
-    {
-        InitializeComponent();
-    }
-    protected override void LoadSettingsFromEvent(IEvent ev)
-    {
-        base.LoadSettingsFromEvent(ev);
-        AppointmentWithEmail appointmentWithEmail = ev as AppointmentWithEmail;
-        if (appointmentWithEmail != null)
-        {
-            this.txtEmail.Text = appointmentWithEmail.Email;
-        }
-    }
-    protected override void ApplySettingsToEvent(IEvent ev)
-    {
-        AppointmentWithEmail appointmentWithEmail = ev as AppointmentWithEmail;
-        if (appointmentWithEmail != null)
-        {
-            appointmentWithEmail.Email = this.txtEmail.Text;
-        }
-        base.ApplySettingsToEvent(ev);
-    }
-    protected override IEvent CreateNewEvent()
-    {
-        return new AppointmentWithEmail();
-    }
-}
+<snippet id='scheduler-customappointmenteditform-customappeditform-cs' />
+<snippet id='scheduler-customappointmenteditform-customappeditform-vb' />
 
-````
-````VB.NET
-Public Class CustomAppointmentEditForm
-    Public Sub New()
-        InitializeComponent()
-    End Sub
-    Protected Overrides Sub LoadSettingsFromEvent(ByVal ev As IEvent)
-        MyBase.LoadSettingsFromEvent(ev)
-        Dim appointmentWithEmail As AppointmentWithEmail = TryCast(ev, AppointmentWithEmail)
-        If appointmentWithEmail IsNot Nothing Then
-            Me.txtEmail.Text = appointmentWithEmail.Email
-        End If
-    End Sub
-    Protected Overrides Sub ApplySettingsToEvent(ByVal ev As IEvent)
-        Dim appointmentWithEmail As AppointmentWithEmail = TryCast(ev, AppointmentWithEmail)
-        If appointmentWithEmail IsNot Nothing Then
-            appointmentWithEmail.Email = Me.txtEmail.Text
-        End If
-        MyBase.ApplySettingsToEvent(ev)
-    End Sub
-    Protected Overrides Function CreateNewEvent() As IEvent
-        Return New AppointmentWithEmail()
-    End Function
-End Class
 
-````
-
-{{endregion}}
 
 4\. Create a new appointment class (let's call it AppointmentWithEmail) which derives from the __Appointment__ class and add an Email property as shown:
 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=appWithMail}}
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=appWithMail}} 
-````C#
-    
-public class AppointmentWithEmail : Appointment
-{
-    public AppointmentWithEmail() : base()
-    {
-    }
-    
-    protected override Event CreateOccurrenceInstance()
-    {
-        return new AppointmentWithEmail();
-    }
-    
-    private string email = string.Empty;
-    
-    public string Email
-    {
-        get
-        {
-            return this.email;
-        }
-        set
-        {
-            if (this.email != value)
-            {
-                this.email = value;
-                this.OnPropertyChanged("Email");
-            }
-        }
-    }
-}
+<snippet id='scheduler-addingcustomfieldhelper-appwithmail-cs' />
+<snippet id='scheduler-addingcustomfieldhelper-appwithmail-vb' />
 
-````
-````VB.NET
-Public Class AppointmentWithEmail
-Inherits Appointment
-    Public Sub New()
-        MyBase.New()
-    End Sub
-    Protected Overrides Function CreateOccurrenceInstance() As [Event]
-        Return New AppointmentWithEmail()
-    End Function
-    Private _email As String = String.Empty
-    Public Property Email() As String
-        Get
-            Return Me._email
-        End Get
-        Set(ByVal value As String)
-            If Me._email <> value Then
-                Me._email = value
-                Me.OnPropertyChanged("Email")
-            End If
-        End Set
-    End Property
-End Class
 
-````
-
-{{endregion}} 
 
 5\. Create an appointment factory which returns our AppointmentWithEmail when creating appointments:
 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.cs region=customAppFactory}} 
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomFieldHelper.vb region=customAppFactory}} 
+<snippet id='scheduler-addingcustomfieldhelper-customappfactory-cs' />
+<snippet id='scheduler-addingcustomfieldhelper-customappfactory-vb' />
 
-````C#
-    
-public class CustomAppointmentFactory : IAppointmentFactory
-{
-    public IEvent CreateNewAppointment()
-    {
-        return new AppointmentWithEmail();
-    }
-}
 
-````
-````VB.NET
-Public Class CustomAppointmentFactory
-Implements IAppointmentFactory
-    Public Function CreateNewAppointment() As IEvent Implements IAppointmentFactory.CreateNewAppointment
-        Return New AppointmentWithEmail()
-    End Function
-End Class
-
-````
-
-{{endregion}} 
 
 6\. Subscribe to the AppointmentEditDialogShowing event and in the event handler use the AppointmentEditDialog property of the event arguments to change the default dialog with the custom one you just created. For optimization, you can create a global variable, which can be reused, instead of creating a new instance of the form every time.
      
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomField.cs region=showing}}        
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomField.vb region=showing}} 
+<snippet id='scheduler-addingcustomfield-showing-cs' />
+<snippet id='scheduler-addingcustomfield-showing-vb' />
 
-````C#
-CustomAppointmentEditForm appointmentDialog = null;
-void radScheduler1_AppointmentEditDialogShowing(object sender, AppointmentEditDialogShowingEventArgs e)
-{
-    if (this.appointmentDialog == null)
-    {
-        this.appointmentDialog = new CustomAppointmentEditForm();
-    }
-   e.AppointmentEditDialog = this.appointmentDialog;
-}
 
-````
-````VB.NET
-Private appointmentDialog As CustomAppointmentEditForm = Nothing
-Private Sub radScheduler1_AppointmentEditDialogShowing(ByVal sender As Object, ByVal e As AppointmentEditDialogShowingEventArgs)
-    If Me.appointmentDialog Is Nothing Then
-        Me.appointmentDialog = New CustomAppointmentEditForm()
-    End If
-    e.AppointmentEditDialog = Me.appointmentDialog
-End Sub
-
-````
-
-{{endregion}} 
 
 7\. Last, but not least we should assign the custom AppointmentFactory to our RadScheduler. This will come in handy when you create your appointments in-line:
             
 
-{{source=..\SamplesCS\Scheduler\AppointmentsAndDialogues\AddingCustomField.cs region=settingFactory}}
-{{source=..\SamplesVB\Scheduler\AppointmentsAndDialogues\AddingCustomField.vb region=settingFactory}} 
-````C#
-this.radScheduler1.AppointmentFactory = new CustomAppointmentFactory();
+<snippet id='scheduler-addingcustomfield-settingfactory-cs' />
+<snippet id='scheduler-addingcustomfield-settingfactory-vb' />
 
-````
-````VB.NET
-Me.RadScheduler1.AppointmentFactory = New CustomAppointmentFactory()
 
-````
-
-{{endregion}} 
 
 >caption Figure 2: Custom Edit Appointment Dialog
 

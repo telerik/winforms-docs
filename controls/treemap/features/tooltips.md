@@ -44,47 +44,10 @@ When the **ToolTipDisplayMode** property is set to **ScreenTip**, the **ScreenTi
 
 #### Customizing Screentips
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Screentips}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Screentips}} 
-
-````C#
-
-private void RadTreeMap1_ScreenTipShowing(object sender, TreeMapScreenTipEventArgs e)
-{
-    if (e.Item.Text == "Paris")
-    {
-        e.ScreenTip.MainTextLabel.Image = Properties.Resources.Paris;
-        e.ScreenTip.MainTextLabel.TextImageRelation = TextImageRelation.TextAboveImage;
-        e.Text = "Current population: " + e.Item.AlgorithmValue;
-        e.FooterText = "2021";
-    }
-    else
-    {
-        e.FooterText = string.Empty;
-        e.ScreenTip.MainTextLabel.Image = null;
-
-    }
-}     
-
-````
-````VB.NET
-
-Private Sub RadTreeMap1_ScreenTipShowing(ByVal sender As Object, ByVal e As TreeMapScreenTipEventArgs)
-    If e.Item.Text = "Paris" Then
-        e.ScreenTip.MainTextLabel.Image = My.Resources.Paris
-        e.ScreenTip.MainTextLabel.TextImageRelation = TextImageRelation.TextAboveImage
-        e.Text = "Current population: " & e.Item.AlgorithmValue
-        e.FooterText = "2021"
-    Else
-        e.FooterText = String.Empty
-        e.ScreenTip.MainTextLabel.Image = Nothing
-    End If
-End Sub
+<snippet id='treemap-treemapgettingstarted-screentips-cs' />
+<snippet id='treemap-treemapgettingstarted-screentips-vb' />
 
 
-````
-
-{{endregion}} 
 
 ![WinForms RadTreeMap Customizing Screentips](images/winforms-treemap-tooltips002.png)
 
@@ -106,30 +69,10 @@ The **TreeMapToolTipEventArgs** gives access to the following argumens:
 
 * **Item** - Gets the data item or group. 
  
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Tooltips}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Tooltips}} 
+<snippet id='treemap-treemapgettingstarted-tooltips-cs' />
+<snippet id='treemap-treemapgettingstarted-tooltips-vb' />
 
-````C#
 
-private void RadTreeMap1_ToolTipShowing(object sender, TreeMapToolTipEventArgs e)
-{
-    e.ToolTip.IsBalloon = true;
-    e.Text = "Current population: " + e.Item.AlgorithmValue;
-    e.Duration = 2000;
-}
-      
-````
-````VB.NET
-
-Private Sub RadTreeMap1_ToolTipShowing(ByVal sender As Object, ByVal e As TreeMapToolTipEventArgs)
-    e.ToolTip.IsBalloon = True
-    e.Text = "Current population: " & e.Item.AlgorithmValue
-    e.Duration = 2000
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTreeMap TreeMapToolTipEventArgs](images/winforms-treemap-tooltips004.png)
 

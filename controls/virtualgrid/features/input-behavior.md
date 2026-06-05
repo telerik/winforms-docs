@@ -18,83 +18,17 @@ You can find below a sample code snippet demonstrating how to override the defau
 
 #### Custom VirtualGridInputBehavior
 
-{{source=..\SamplesCS\VirtualGrid\HandlingUserInput\VirtualGridInputBehaviorForm.cs region=CustomInputBehavior}} 
-{{source=..\SamplesVB\VirtualGrid\HandlingUserInput\VirtualGridInputBehaviorForm.vb region=CustomInputBehavior}}
+<snippet id='virtualgrid-virtualgridinputbehaviorform-custominputbehavior-cs' />
+<snippet id='virtualgrid-virtualgridinputbehaviorform-custominputbehavior-vb' />
 
 
-````C#
-        
-public class CustomVirtualGridInputBehavior : VirtualGridInputBehavior
-{
-    public CustomVirtualGridInputBehavior(RadVirtualGridElement gridElement) : base(gridElement)
-    {
-    }
-    
-    protected override bool HandleUpKey(KeyEventArgs keys)
-    {
-        DialogResult dr = RadMessageBox.Show("Please confirm the move up operation!", "Confirmation", MessageBoxButtons.YesNo);
-        if (dr == DialogResult.Yes)
-        {
-            return base.HandleUpKey(keys);
-        }
-        return false;
-    }
-    
-    protected override bool HandleDownKey(KeyEventArgs keys)
-    {
-        DialogResult dr = RadMessageBox.Show("Please confirm the move down operation!", "Confirmation", MessageBoxButtons.YesNo);
-        if (dr == DialogResult.Yes)
-        {
-            return base.HandleDownKey(keys);
-        }
-        return false;
-    }
-}
-
-````
-````VB.NET
-Public Class CustomVirtualGridInputBehavior
-Inherits VirtualGridInputBehavior
-    Public Sub New(gridElement As RadVirtualGridElement)
-        MyBase.New(gridElement)
-    End Sub
-    Protected Overrides Function HandleUpKey(keys As KeyEventArgs) As Boolean
-        Dim dr As DialogResult = RadMessageBox.Show("Please confirm the move up operation!", "Confirmation", MessageBoxButtons.YesNo)
-        If dr = DialogResult.Yes Then
-            Return MyBase.HandleUpKey(keys)
-        End If
-        Return False
-    End Function
-    Protected Overrides Function HandleDownKey(keys As KeyEventArgs) As Boolean
-        Dim dr As DialogResult = RadMessageBox.Show("Please confirm the move down operation!", "Confirmation", MessageBoxButtons.YesNo)
-        If dr = DialogResult.Yes Then
-            Return MyBase.HandleDownKey(keys)
-        End If
-        Return False
-    End Function
-End Class
-
-```` 
-
-{{endregion}}
 
 #### Apply the custom VirtualGridInputBehavior
 
-{{source=..\SamplesCS\VirtualGrid\HandlingUserInput\VirtualGridInputBehaviorForm.cs region=ApplyInputBehavior}} 
-{{source=..\SamplesVB\VirtualGrid\HandlingUserInput\VirtualGridInputBehaviorForm.vb region=ApplyInputBehavior}}
+<snippet id='virtualgrid-virtualgridinputbehaviorform-applyinputbehavior-cs' />
+<snippet id='virtualgrid-virtualgridinputbehaviorform-applyinputbehavior-vb' />
 
 
-````C#
-            
-this.radVirtualGrid1.VirtualGridElement.InputBehavior = new CustomVirtualGridInputBehavior(this.radVirtualGrid1.VirtualGridElement);
-
-````
-````VB.NET
-Me.RadVirtualGrid1.VirtualGridElement.InputBehavior = New CustomVirtualGridInputBehavior(Me.RadVirtualGrid1.VirtualGridElement)
-
-```` 
-
-{{endregion}}
 
 >note You can follow a similar approach to customize any of the methods that handle the mouse and keyboard user input.
 

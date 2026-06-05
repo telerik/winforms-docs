@@ -67,33 +67,11 @@ The following tutorial demonstrates how to add items and images to a __RadDropDo
 
 #### Handling the SelectedIndexChanged event 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownList1.cs region=handlingSelectedIndexChanged}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownList1.vb region=handlingSelectedIndexChanged}} 
+<snippet id='dropdownlist-getting-started-handlingselectedindexchanged-cs' />
+<snippet id='dropdownlist-getting-started-handlingselectedindexchanged-vb' />
 
-````C#
-    
-void radDropDownList1_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-{
-    if (this.radDropDownList1.SelectedIndex > -1)
-    {
-        this.radLabelElement1.Text = this.radDropDownList1.SelectedItem.Text;
-        this.radImageButtonElement1.Image = this.radDropDownList1.SelectedItem.Image;
-    }
-}
 
-````
-````VB.NET
-Private Sub radDropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.Data.PositionChangedEventArgs)
-    If Me.radDropDownList1.SelectedIndex > -1 Then
-        radLabelElement1.Text = Me.radDropDownList1.SelectedItem.Text
-        Me.radImageButtonElement1.Image = Me.radDropDownList1.SelectedItem.Image
-    End If
-End Sub
 
-````
-
-{{endregion}} 
- 
 This is it! Now the change in the selection of the __RadDropDownList__ instance will be reflected on __RadStatusStrip__.
 
 ## Telerik UI for WinForms Learning Resources

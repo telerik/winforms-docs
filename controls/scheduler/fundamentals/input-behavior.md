@@ -39,81 +39,19 @@ Each of these methods can be overridden and the instance of the __SchedulerInput
 
 #### Custom Input Behavior
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\InputBehavior.cs region=Behavior}} 
-{{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=Behavior}} 
+<snippet id='scheduler-inputbehavior-behavior-cs' />
+<snippet id='scheduler-inputbehavior-behavior-vb' />
 
-````C#
-public class MySchedulerInputBehavior : SchedulerInputBehavior
-{
-    public MySchedulerInputBehavior(RadScheduler scheduler)
-        : base(scheduler)
-    {
-    }
-    public override bool HandleKeyDown(KeyEventArgs args)
-    {
-        bool isControl = (args.Modifiers & Keys.Control) == Keys.Control;
-        IEvent selectedAppointment = this.Scheduler.SelectionBehavior.SelectedAppointment;
-        if (isControl && selectedAppointment != null)
-        {
-            if ((args.KeyData & Keys.Up) == Keys.Up)
-            {
-                selectedAppointment.Start = selectedAppointment.Start.AddHours(-1);
-                selectedAppointment.End = selectedAppointment.End.AddHours(-1);
-            }
-            else if ((args.KeyData & Keys.Down) == Keys.Down)
-            {
-                selectedAppointment.Start = selectedAppointment.Start.AddHours(1);
-                selectedAppointment.End = selectedAppointment.End.AddHours(1);
-            }
-        }
-        return base.HandleKeyDown(args);
-    }
-}
 
-````
-````VB.NET
-Public Class MySchedulerInputBehavior
-    Inherits SchedulerInputBehavior
-    Public Sub New(scheduler As RadScheduler)
-        MyBase.New(scheduler)
-    End Sub
-    Public Overrides Function HandleKeyDown(args As KeyEventArgs) As Boolean
-        Dim isControl As Boolean = (args.Modifiers And Keys.Control) = Keys.Control
-        Dim selectedAppointment As IEvent = Me.Scheduler.SelectionBehavior.SelectedAppointment
-        If isControl AndAlso selectedAppointment IsNot Nothing Then
-            If (args.KeyData And Keys.Up) = Keys.Up Then
-                selectedAppointment.Start = selectedAppointment.Start.AddHours(-1)
-                selectedAppointment.[End] = selectedAppointment.[End].AddHours(-1)
-            ElseIf (args.KeyData And Keys.Down) = Keys.Down Then
-                selectedAppointment.Start = selectedAppointment.Start.AddHours(1)
-                selectedAppointment.[End] = selectedAppointment.[End].AddHours(1)
-            End If
-        End If
-        Return MyBase.HandleKeyDown(args)
-    End Function
-End Class
-
-````
-
-{{endregion}} 
 
 Now we need to assign this new input behavior to the __SchedulerInputBehavior__ property of __RadScheduler__:
 
 #### Set Behavior
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\InputBehavior.cs region=SetBehavior}} 
-{{source=..\SamplesVB\Scheduler\Fundamentals\InputBehavior.vb region=SetBehavior}} 
+<snippet id='scheduler-inputbehavior-setbehavior-cs' />
+<snippet id='scheduler-inputbehavior-setbehavior-vb' />
 
-````C#
-scheduler.SchedulerInputBehavior = new MySchedulerInputBehavior(scheduler);
 
-````
-````VB.NET
-scheduler.SchedulerInputBehavior = New MySchedulerInputBehavior(scheduler)
-
-````
-
-{{endregion}} 
 
 You can see the result below:
 

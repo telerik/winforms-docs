@@ -16,6 +16,7 @@ img-max-width: 100%
 center-images: false
 table-layout: fixed
 enable-tabbed-code-blocks: true
+external-snippets-path: ./snippets
 pdf-cover-png-path: ./images/pdf-cover.png
 gitLastCommitDateEnabled: true
 search-provider: nuclia

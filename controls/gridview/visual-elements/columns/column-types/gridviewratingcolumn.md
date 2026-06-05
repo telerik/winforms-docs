@@ -19,31 +19,8 @@ __GridViewRatingColumn__ allows you to represent and edit numeric value as ratin
 
 The following code snippet demonstrates how to create and add __GridViewRatingColumn__ to RadGridView and also add some sample data in it:
 
-{{source=..\SamplesCS\GridView\Columns\GridViewRatingColumn1.cs region=RatingColumn}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewRatingColumn1.vb region=RatingColumn}} 
-
-````C#
-GridViewRatingColumn column = new GridViewRatingColumn("Rating Column");
-radGridView1.Columns.Add(column);
-radGridView1.Rows.Add(20);
-radGridView1.Rows.Add(35);
-radGridView1.Rows.Add(70);
-radGridView1.Rows.Add(3);
-radGridView1.Rows.Add(18);
-
-````
-````VB.NET
-Dim column As New GridViewRatingColumn("Rating Column")
-radGridView1.Columns.Add(column)
-radGridView1.Rows.Add(20)
-radGridView1.Rows.Add(35)
-radGridView1.Rows.Add(70)
-radGridView1.Rows.Add(3)
-radGridView1.Rows.Add(18)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewratingcolumn1-ratingcolumn-cs' />
+<snippet id='gridview-gridviewratingcolumn1-ratingcolumn-vb' />
 
 ## Properties
 

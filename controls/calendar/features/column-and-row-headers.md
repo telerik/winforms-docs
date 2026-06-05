@@ -17,44 +17,19 @@ __RadCalendar__ supports row and column headers that can be enabled by setting t
 
 ![WinForms RadCalendar The Column/Row Headers and The View Selector](images/calendar-features-column-and-row-headers001.png)
 
-{{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=showingHeaders}} 
-{{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=showingHeaders}} 
+<snippet id='calendar-features-column-and-row-headers-showingheaders-cs' />
+<snippet id='calendar-features-column-and-row-headers-showingheaders-vb' />
 
-````C#
-this.radCalendar1.ShowRowHeaders = true;
-this.radCalendar1.ShowColumnHeaders = true;
-this.radCalendar1.ShowViewSelector = true;
 
-````
-````VB.NET
-Me.RadCalendar1.ShowRowHeaders = True
-Me.RadCalendar1.ShowColumnHeaders = True
-Me.RadCalendar1.ShowViewSelector = True
-
-````
-
-{{endregion}} 
 
 These headers can be used as selectors which allow you to quickly select groups of days in multi-select mode. The __ViewSelector__ allows you to select the whole month view at once.
 
 
-{{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=allowMultiSelect}} 
-{{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=allowMultiSelect}} 
+<snippet id='calendar-features-column-and-row-headers-allowmultiselect-cs' />
+<snippet id='calendar-features-column-and-row-headers-allowmultiselect-vb' />
 
-````C#
-this.radCalendar1.AllowMultipleSelect = true;
-this.radCalendar1.AllowColumnHeaderSelectors = true;
-this.radCalendar1.AllowRowHeaderSelectors = true;
 
-````
-````VB.NET
-Me.RadCalendar1.AllowMultipleSelect = True
-Me.RadCalendar1.AllowColumnHeaderSelectors = True
-Me.RadCalendar1.AllowRowHeaderSelectors = True
 
-````
-
-{{endregion}} 
 >caption Selecting specific day with column header
 ![WinForms RadCalendar Selecting Specific Day With Column Header](images/calendar-fatures-column-and-row-headers002.png)
 

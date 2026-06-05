@@ -18,19 +18,10 @@ This article will get you familiar with the __SettingsPane__ that is part of __R
 The __SettingsPane__ control allows the users to examine and modify the settings of the diagramming items at run-time. 
  
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=SettingsPane}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=SettingsPane}} 
+<snippet id='diagram-settings-pane-settingspane-cs'/>
+<snippet id='diagram-settings-pane-settingspane-vb'/>
 
-````C#
-this.radDiagram1.IsSettingsPaneEnabled = true;
-
-````
-````VB.NET
-Me.RadDiagram1.IsSettingsPaneEnabled = True
-
-````
-
-{{endregion}} 
+ 
 
 
 
@@ -50,21 +41,10 @@ The __SettingsPane__ control is a standalone control that can be displayed as th
 
 In order to display the DiagramElement.__SettingsPane__ in your application, you should click the AdditionalContent of the __ItemInformationAdorner__ which can be accessed as below: 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=AdditionalContent}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=AdditionalContent}} 
+<snippet id='diagram-settings-pane-additionalcontent-cs'/>
+<snippet id='diagram-settings-pane-additionalcontent-vb'/>
 
-````C#
-RadButtonElement additionalContent = Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner.GetAdditionalContent(
-    this.radDiagram1.DiagramElement.ItemInformationAdorner) as RadButtonElement;
-
-````
-````VB.NET
-Dim additionalContent As RadButtonElement = TryCast(Telerik.WinControls.UI.Diagrams.Primitives.ItemInformationAdorner.GetAdditionalContent( _
-Me.RadDiagram1.DiagramElement.ItemInformationAdorner), RadButtonElement)
-
-````
-
-{{endregion}} 
+ 
  
 ## Customization
 
@@ -75,25 +55,10 @@ The __SettingsPane__ has a default view that can be used out-of-the-box in scena
 
 * __Add and remove tabs__ - in order to add or remove tabs from the default __SettingsPane__,  you need to add or remove a __RadPageViewPage__ to or from the DiagramElement.SettingsPane.RadPageView.__Pages__  as this is the control that represents the content of the __SettingsPane__. 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=AddRemoveTabs}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=AddRemoveTabs}} 
+<snippet id='diagram-settings-pane-addremovetabs-cs'/>
+<snippet id='diagram-settings-pane-addremovetabs-vb'/>
 
-````C#
-this.radDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Remove(this.radDiagram1.DiagramElement.SettingsPane.RadPageViewPageHome);
-RadPageViewPage toolsPage = new RadPageViewPage();
-toolsPage.Text = "Tools";
-this.radDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage);
-
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Remove(Me.RadDiagram1.DiagramElement.SettingsPane.RadPageViewPageHome)
-Dim toolsPage As New RadPageViewPage()
-toolsPage.Text = "Tools"
-Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage)
-
-````
-
-{{endregion}} 
+ 
 
 
 
@@ -119,30 +84,10 @@ Me.RadDiagram1.DiagramElement.SettingsPane.RadPageView.Pages.Add(toolsPage)
 >note You have access to each control in every of the default content pages. Hence, you can add, remove, edit controls:
 > 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EditTabs}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EditTabs}} 
+<snippet id='diagram-settings-pane-edittabs-cs'/>
+<snippet id='diagram-settings-pane-edittabs-vb'/>
 
-````C#
-RadButton myButton = new RadButton();
-myButton.Text = "New";
-myButton.Size = this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Size;
-myButton.Location = this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Location;
-this.radDiagram1.DiagramElement.SettingsPane.PanelCopyCutPaste.Controls.Add(myButton);
-this.radDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = false;
-
-````
-````VB.NET
  
-Dim myButton As New RadButton()
-myButton.Text = "New"
-myButton.Size = Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Size
-myButton.Location = Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Location
-Me.RadDiagram1.DiagramElement.SettingsPane.PanelCopyCutPaste.Controls.Add(myButton)
-Me.RadDiagram1.DiagramElement.SettingsPane.RadButtonCut.Visible = False
-
-````
-
-{{endregion}} 
 
 
 

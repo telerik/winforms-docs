@@ -48,30 +48,10 @@ To programmatically add a __RadCheckBox__ to a form, create a new instance of a 
 
 #### Adding a RadCheckBox at runtime 
 
-{{source=..\SamplesCS\Buttons\CheckBox.cs region=AddCheckBox}} 
-{{source=..\SamplesVB\Buttons\CheckBox.vb region=AddCheckBox}} 
+<snippet id='buttons-checkbox-getting-started-addcheckbox-cs' />
+<snippet id='buttons-checkbox-getting-started-addcheckbox-vb' />
 
-````C#
-public void AddCheckBox()
-{
-    RadCheckBox checkBox = new RadCheckBox();
-    checkBox.ToggleState = Telerik.WinControls.Enumerations.ToggleState.On;
-    checkBox.Text = "Is active";
-    this.Controls.Add(checkBox);
-}
 
-````
-````VB.NET
-Public Sub AddCheckBox()
-    Dim checkBox As New RadCheckBox()
-    checkBox.ToggleState = Telerik.WinControls.Enumerations.ToggleState.[On]
-    checkBox.Text = "Is active"
-    Me.Controls.Add(checkBox)
-End Sub
-
-````
-
-{{endregion}} 
 
 ## See Also
 

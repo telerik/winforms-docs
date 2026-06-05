@@ -26,22 +26,10 @@ The control exposes an API for panning and zooming programmatically. The respons
 
 ## Customizing Appearance
 
-{{source=..\SamplesCS\Map\MapLayers.cs region=ZoomAndPan}} 
-{{source=..\SamplesVB\Map\MapLayers.vb region=ZoomAndPan}}
-````C#
-this.radMap1.Zoom(8, true);
-this.radMap1.Pan(new SizeL(200, 200));
-
-````
-````VB.NET
-Me.RadMap1.Zoom(8, True)
-Me.RadMap1.Pan(New SizeL(200, 200))
-
-````
+<snippet id='map-maplayers-zoomandpan-cs' />
+<snippet id='map-maplayers-zoomandpan-vb' />
 
 
-
-{{endregion}}
 
 ## ViewportChanged Event
 

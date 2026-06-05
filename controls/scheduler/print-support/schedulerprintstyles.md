@@ -21,21 +21,10 @@ To set a __RadScheduler__ with a print style:
 
 #### Daily Print Style
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SetPrintStyle}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SetPrintStyle}} 
+<snippet id='scheduler-schedulerprintstyle1-setprintstyle-cs' />
+<snippet id='scheduler-schedulerprintstyle1-setprintstyle-vb' />
 
-````C#
-SchedulerPrintStyle schedulerPrintStyle = new SchedulerDailyPrintStyle();
-this.radScheduler1.PrintStyle = schedulerPrintStyle;
 
-````
-````VB.NET
-Dim schedulerPrintStyle As New SchedulerDailyPrintStyle()
-Me.RadScheduler1.PrintStyle = schedulerPrintStyle
-
-````
-
-{{endregion}} 
 
 __SchedulerPrintStyle__ has the following properties:
 
@@ -43,107 +32,46 @@ __SchedulerPrintStyle__ has the following properties:
 
 #### Specify Date Range
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpeficyDateRange}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpeficyDateRange}} 
+<snippet id='scheduler-schedulerprintstyle1-speficydaterange-cs' />
+<snippet id='scheduler-schedulerprintstyle1-speficydaterange-vb' />
 
-````C#
-schedulerPrintStyle.DateStartRange = DateTime.Today;
-schedulerPrintStyle.DateEndRange = DateTime.Today.AddDays(6);
 
-````
-````VB.NET
-schedulerPrintStyle.DateStartRange = DateTime.Today
-schedulerPrintStyle.DateEndRange = DateTime.Today.AddDays(6)
-
-````
-
-{{endregion}} 
 
 * __TimeStartRange__ and __TimeEndRange__: Allows you to specify the time frame which for every day in the date range - i.e. the time frame which will be printed for each date in the date range period:
 
 #### Specify Time Frame
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpecifyTimeFrame}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpecifyTimeFrame}} 
+<snippet id='scheduler-schedulerprintstyle1-specifytimeframe-cs' />
+<snippet id='scheduler-schedulerprintstyle1-specifytimeframe-vb' />
 
-````C#
-schedulerPrintStyle.TimeStartRange = TimeSpan.FromHours(7);
-schedulerPrintStyle.TimeEndRange = TimeSpan.FromHours(19);
 
-````
-````VB.NET
-schedulerPrintStyle.TimeStartRange = TimeSpan.FromHours(7)
-schedulerPrintStyle.TimeEndRange = TimeSpan.FromHours(19)
-
-````
-
-{{endregion}} 
 
 * __AppointmentFont__, __DateHeadingFont__ and __PageHeadingFont__ allow you to specify the fonts for the appointments, dates and page headers respectively:
 
 #### Set Font
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SetFonts}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SetFonts}} 
+<snippet id='scheduler-schedulerprintstyle1-setfonts-cs' />
+<snippet id='scheduler-schedulerprintstyle1-setfonts-vb' />
 
-````C#
-schedulerPrintStyle.AppointmentFont = new Font("Segoe UI Light", 8, FontStyle.Regular);
-schedulerPrintStyle.DateHeadingFont = new Font("Segoe UI Light", 12, FontStyle.Regular);
-schedulerPrintStyle.PageHeadingFont = new Font("Segoe UI Light", 16, FontStyle.Regular);
 
-````
-````VB.NET
-schedulerPrintStyle.AppointmentFont = New Font("Segoe UI Light", 8, FontStyle.Regular)
-schedulerPrintStyle.DateHeadingFont = New Font("Segoe UI Light", 12, FontStyle.Regular)
-schedulerPrintStyle.PageHeadingFont = New Font("Segoe UI Light", 16, FontStyle.Regular)
-
-````
-
-{{endregion}} 
 
 * You can also specify which __visual parts__ of the page to be printed - page title, calendar in the page title, notes area, etc:
 
 #### Specify Visual Parts
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=SpeficyVisualElements}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=SpeficyVisualElements}} 
+<snippet id='scheduler-schedulerprintstyle1-speficyvisualelements-cs' />
+<snippet id='scheduler-schedulerprintstyle1-speficyvisualelements-vb' />
 
-````C#
-schedulerPrintStyle.DrawPageTitle = true;
-schedulerPrintStyle.DrawPageTitleCalendar = true;
-schedulerPrintStyle.ShowLinedNotesArea = true;
-schedulerPrintStyle.ShowNotesArea = true;
 
-````
-````VB.NET
-schedulerPrintStyle.DrawPageTitle = True
-schedulerPrintStyle.DrawPageTitleCalendar = True
-schedulerPrintStyle.ShowLinedNotesArea = True
-schedulerPrintStyle.ShowNotesArea = True
-
-````
-
-{{endregion}} 
 
 * To modify the size of the visual areas use:
 
 #### Area Size
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=ModifyVisualElements}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=ModifyVisualElements}} 
+<snippet id='scheduler-schedulerprintstyle1-modifyvisualelements-cs' />
+<snippet id='scheduler-schedulerprintstyle1-modifyvisualelements-vb' />
 
-````C#
-schedulerPrintStyle.NotesAreaWidth = 200;
-schedulerPrintStyle.HeadingAreaHeight = 100;
 
-````
-````VB.NET
-schedulerPrintStyle.NotesAreaWidth = 200
-schedulerPrintStyle.HeadingAreaHeight = 100
-
-````
-
-{{endregion}} 
 
 ## DailyStyle
 
@@ -154,27 +82,10 @@ The __SchedulerDailyPrintStyle__ class defines printing of RadScheduler in a dai
 
 #### Set SchedulerDailyPrintStyle
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=DailyStyle}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=DailyStyle}} 
+<snippet id='scheduler-schedulerprintstyle1-dailystyle-cs' />
+<snippet id='scheduler-schedulerprintstyle1-dailystyle-vb' />
 
-````C#
-SchedulerDailyPrintStyle dailyStyle = new SchedulerDailyPrintStyle();
-dailyStyle.HoursColumnWidth = 100;
-dailyStyle.MaxAllDayAreaHeight = 100;
-dailyStyle.AllDayAppointmentHeight = 20;
-dailyStyle.TwoPagesPerDay = true;
 
-````
-````VB.NET
-Dim dailyStyle As New SchedulerDailyPrintStyle()
-dailyStyle.HoursColumnWidth = 100
-dailyStyle.MaxAllDayAreaHeight = 100
-dailyStyle.AllDayAppointmentHeight = 20
-dailyStyle.TwoPagesPerDay = True
-
-````
-
-{{endregion}} 
 
 ## WeeklyCalendarStyle
 
@@ -195,25 +106,10 @@ In the WeeklyCalendarPrintStyle the appointments are arranged in a grid where ea
 
 #### Set SchedulerWeeklyCalendarPrintStyle
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=WeeklyCalendarStyle}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=WeeklyCalendarStyle}} 
+<snippet id='scheduler-schedulerprintstyle1-weeklycalendarstyle-cs' />
+<snippet id='scheduler-schedulerprintstyle1-weeklycalendarstyle-vb' />
 
-````C#
-SchedulerWeeklyCalendarPrintStyle weeklyCalendarStyle = new SchedulerWeeklyCalendarPrintStyle();
-weeklyCalendarStyle.AppointmentFont = new System.Drawing.Font("Segoe UI", 12, FontStyle.Regular);
-weeklyCalendarStyle.HeadingAreaHeight = 120;
-weeklyCalendarStyle.HoursColumnWidth = 30;
 
-````
-````VB.NET
-Dim weeklyCalendarStyle As New SchedulerWeeklyCalendarPrintStyle()
-weeklyCalendarStyle.AppointmentFont = New System.Drawing.Font("Segoe UI", 12, FontStyle.Regular)
-weeklyCalendarStyle.HeadingAreaHeight = 120
-weeklyCalendarStyle.HoursColumnWidth = 30
-
-````
-
-{{endregion}} 
 
 ## WeeklyStyle
 
@@ -230,25 +126,10 @@ The SchedulerWeeklyPrintStyle class defines printing of RadScheduler in a weekly
 
 #### Set SchedulerWeeklyPrintStyle
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=WeeklyStyle}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=WeeklyStyle}} 
+<snippet id='scheduler-schedulerprintstyle1-weeklystyle-cs' />
+<snippet id='scheduler-schedulerprintstyle1-weeklystyle-vb' />
 
-````C#
-SchedulerWeeklyPrintStyle weeklyStyle = new SchedulerWeeklyPrintStyle();
-weeklyStyle.ExcludeNonWorkingDays = true;
-weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom;
-weeklyStyle.TwoPagesPerWeek = true;
 
-````
-````VB.NET
-Dim weeklyStyle As New SchedulerWeeklyPrintStyle()
-weeklyStyle.ExcludeNonWorkingDays = True
-weeklyStyle.DaysLayout = WeeklyStyleLayout.TopToBottom
-weeklyStyle.TwoPagesPerWeek = True
-
-````
-
-{{endregion}} 
 
 ## MonthlyStyle
 
@@ -275,33 +156,10 @@ In this mode you can take advantage of the following properties:
 
 #### Set SchedulerMonthlyPrintStyle
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=MonthlyStyle}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=MonthlyStyle}} 
+<snippet id='scheduler-schedulerprintstyle1-monthlystyle-cs' />
+<snippet id='scheduler-schedulerprintstyle1-monthlystyle-vb' />
 
-````C#
-SchedulerMonthlyPrintStyle monthlyStyle = new SchedulerMonthlyPrintStyle();
-monthlyStyle.ExcludeNonWorkingDays = true;
-monthlyStyle.TwoPagesPerMonth = true;
-monthlyStyle.PrintExactlyOneMonth = false;
-monthlyStyle.WeeksPerPage = 4;
-monthlyStyle.AppointmentHeight = 30;
-monthlyStyle.CellHeaderHeight = 30;
-monthlyStyle.VerticalHeaderWidth = 100;
 
-````
-````VB.NET
-Dim monthlyStyle As New SchedulerMonthlyPrintStyle()
-monthlyStyle.ExcludeNonWorkingDays = True
-monthlyStyle.TwoPagesPerMonth = True
-monthlyStyle.PrintExactlyOneMonth = False
-monthlyStyle.WeeksPerPage = 4
-monthlyStyle.AppointmentHeight = 30
-monthlyStyle.CellHeaderHeight = 30
-monthlyStyle.VerticalHeaderWidth = 100
-
-````
-
-{{endregion}} 
 
 ## DetailsStyle
 
@@ -322,27 +180,10 @@ Similar to the previous modes, you can set properties that define the size of sp
 
 #### Set SchedulerDetailsPrintStyle
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintStyle1.cs region=DetailsStyle}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintStyle1.vb region=DetailsStyle}} 
+<snippet id='scheduler-schedulerprintstyle1-detailsstyle-cs' />
+<snippet id='scheduler-schedulerprintstyle1-detailsstyle-vb' />
 
-````C#
-SchedulerDetailsPrintStyle detailsStyle = new SchedulerDetailsPrintStyle();
-detailsStyle.AppointmentDateWidth = 200;
-detailsStyle.AppointmentTitleHeight = 30;
-detailsStyle.DayHeaderHeight = 60;
-detailsStyle.PageBreakMode = PageBreakMode.Day;
 
-````
-````VB.NET
-Dim detailsStyle As New SchedulerDetailsPrintStyle()
-detailsStyle.AppointmentDateWidth = 200
-detailsStyle.AppointmentTitleHeight = 30
-detailsStyle.DayHeaderHeight = 60
-detailsStyle.PageBreakMode = PageBreakMode.Day
-
-````
-
-{{endregion}}
 
 # See Also
 

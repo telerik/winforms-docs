@@ -29,51 +29,19 @@ The following tutorial demonstrates how to assign a shortcut to a **RadMenuItem*
 
 #### RadMenuItems Click event handlers
 
-{{source=..\SamplesCS\Shortcuts\Form2.cs region=handlingClickEvent}} 
-{{source=..\SamplesVB\Shortcuts\Form2.vb region=handlingClickEvent}} 
+<snippet id='menus-form2-handlingclickevent-cs' />
+<snippet id='menus-form2-handlingclickevent-vb' />
 
-````C#
-void radMenuItem1_Click(object sender, EventArgs e)
-{
-    MessageBox.Show("New");
-}
-void radMenuItem2_Click(object sender, EventArgs e)
-{
-    MessageBox.Show("File");
-}
 
-````
-````VB.NET
-Private Sub radMenuItem1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    MessageBox.Show("New")
-End Sub
-Private Sub radMenuItem2_Click(ByVal sender As Object, ByVal e As EventArgs)
-    MessageBox.Show("File")
-End Sub
-
-````
-
-{{endregion}} 
 
 6\. Now all you have to do is to add the shortcuts to the desired items
 
 #### Adding shortcuts to menu items
 
-{{source=..\SamplesCS\Shortcuts\Form2.cs region=menuShortcuts}} 
-{{source=..\SamplesVB\Shortcuts\Form2.vb region=menuShortcuts}} 
+<snippet id='menus-form2-menushortcuts-cs' />
+<snippet id='menus-form2-menushortcuts-vb' />
 
-````C#
-this.radMenuItem1.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.N));
-this.radMenuItem2.Shortcuts.Add(new RadShortcut(Keys.Shift, Keys.F, Keys.K));
 
-````
-````VB.NET
-Me.RadMenuItem1.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.N))
-Me.RadMenuItem2.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.F, Keys.K))
-
-````
-
-{{endregion}} 
 
 >note In the constructor of **RadShortcut**, you should first pass the key modifier as a parameter and then an array of the key mappings.
 >
@@ -86,19 +54,10 @@ Interesting functionality to mention is the ability to set your own custom text 
 
 #### Assigning HintText
 
-{{source=..\SamplesCS\Shortcuts\Form2.cs region=SetHintText}} 
-{{source=..\SamplesVB\Shortcuts\Form2.vb region=SetHintText}} 
+<snippet id='menus-form2-sethinttext-cs' />
+<snippet id='menus-form2-sethinttext-vb' />
 
-````C#
-radMenuItem2.HintText = "Custom Text";
 
-````
-````VB.NET
-RadMenuItem2.HintText = "Custom Text"
-
-````
-
-{{endregion}} 
 
 ![WinForms RadMenu ShortCut HintText](images/menu-items-shortcut004.png)
 

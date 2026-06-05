@@ -27,24 +27,10 @@ Let's now analyze how this property works in the context of several popular mask
 
 1\. First, we need to define our mask: 
 
-{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=phoneMask}} 
-{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=phoneMask}} 
+<snippet id='editors-maskeditbox1-phonemask-cs' />
+<snippet id='editors-maskeditbox1-phonemask-vb' />
 
-````C#
-            
-this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
-this.radMaskedEditBox1.Mask = "(000) 000-0000";
-this.radMaskedEditBox1.PromptChar = '_';
 
-````
-````VB.NET
-Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Standard
-Me.RadMaskedEditBox1.Mask = "(000) 000-0000"
-Me.RadMaskedEditBox1.PromptChar = "_"
-
-````
-
-{{endregion}}
 
 2\. Then, let's assume that the user types "123123123". As you can notice, the number of digits is smaller than the provided prompt places by one and this is for demonstration purposes. The result in the UI of RadMaskedEditBox will look like this:
 
@@ -72,22 +58,10 @@ And here is what the __Value__ property of RadMaskedEditBox will return dependin
 
 1\. Define the Current mask as show below: 
 
-{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=currencyMask}} 
-{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=currencyMask}} 
+<snippet id='editors-maskeditbox1-currencymask-cs' />
+<snippet id='editors-maskeditbox1-currencymask-vb' />
 
-````C#
-            
-this.radMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Numeric;
-this.radMaskedEditBox1.Mask = "C2";
 
-````
-````VB.NET
-Me.RadMaskedEditBox1.MaskType = Telerik.WinControls.UI.MaskType.Numeric
-Me.RadMaskedEditBox1.Mask = "C2"
-
-````
-
-{{endregion}}
 
 2\. Now, assume that the user types "-1234.12". The UI of RadMaskedEditBox in this case look like this:
             

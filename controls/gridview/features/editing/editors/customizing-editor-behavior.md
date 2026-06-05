@@ -19,31 +19,8 @@ The look and behavior of grid editors can be changed programmatically. This can 
 
 The following sample demonstrates how to change the default ForeColor of __GridSpinEditor__:
 
-{{source=..\SamplesCS\GridView\Editors\CustomizingEditorBehavior.cs region=customizingEditors}} 
-{{source=..\SamplesVB\GridView\Editors\CustomizingEditorBehavior.vb region=customizingEditors}} 
-
-````C#
-void radGridView1_CellBeginEdit(object sender, Telerik.WinControls.UI.GridViewCellCancelEventArgs e)
-{
-    GridSpinEditor editor = this.radGridView1.ActiveEditor as GridSpinEditor;
-    if (editor != null)
-    {
-        ((RadSpinEditorElement)editor.EditorElement).ForeColor = Color.Red;
-    }
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_CellBeginEdit(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellCancelEventArgs) Handles RadGridView1.CellBeginEdit
-    Dim editor As GridSpinEditor = TryCast(Me.RadGridView1.ActiveEditor, GridSpinEditor)
-    If editor IsNot Nothing Then
-        CType(editor.EditorElement, RadSpinEditorElement).ForeColor = Color.Red
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-customizingeditorbehavior-customizingeditors-cs' />
+<snippet id='gridview-customizingeditorbehavior-customizingeditors-vb' />
 
 >caption Figure 1: Accessing the editor element.
 

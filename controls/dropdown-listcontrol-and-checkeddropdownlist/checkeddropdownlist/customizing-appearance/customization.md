@@ -20,58 +20,18 @@ In order to customize the editable area, you must subscribe to the __TextBlockFo
 
 #### Subscribe to TextBlockFormatting 
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=TextBlockFormattingSubscribe}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=TextBlockFormattingSubscribe}} 
+<snippet id='checkeddropdownlist-customization-textblockformattingsubscribe-cs' />
+<snippet id='checkeddropdownlist-customization-textblockformattingsubscribe-vb' />
 
-````C#
-this.radCheckedDropDownList1.TextBlockFormatting += radCheckedDropDownList1_TextBlockFormatting;
 
-````
-````VB.NET
-AddHandler Me.RadCheckedDropDownList1.TextBlockFormatting, AddressOf radCheckedDropDownList1_TextBlockFormatting
-
-````
-
-{{endregion}} 
 
 
 #### Modify properties 
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=TextBlockFormattingHandler}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=TextBlockFormattingHandler}} 
+<snippet id='checkeddropdownlist-customization-textblockformattinghandler-cs' />
+<snippet id='checkeddropdownlist-customization-textblockformattinghandler-vb' />
 
-````C#
-void radCheckedDropDownList1_TextBlockFormatting(object sender, TextBlockFormattingEventArgs e)
-{
-    TokenizedTextBlockElement token = e.TextBlock as TokenizedTextBlockElement;
-    if (token != null)
-    {
-        token.ForeColor = Color.DarkBlue;
-        token.DrawFill = false;
-        token.BorderColor = Color.DarkRed;
-        token.BorderWidth = 1.3f;
-        token.DrawBorder = true;
-        token.BorderGradientStyle = GradientStyles.Solid;
-    }
-}
 
-````
-````VB.NET
-Private Sub radCheckedDropDownList1_TextBlockFormatting(sender As Object, e As TextBlockFormattingEventArgs)
-    Dim token As TokenizedTextBlockElement = TryCast(e.TextBlock, TokenizedTextBlockElement)
-    If token IsNot Nothing Then
-        token.ForeColor = Color.DarkBlue
-        token.DrawFill = False
-        token.BorderColor = Color.DarkRed
-        token.BorderWidth = 1.3F
-        token.DrawBorder = True
-        token.BorderGradientStyle = GradientStyles.Solid
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Customizing tokens
 
@@ -83,54 +43,18 @@ Customizing the drop down items is similar. Subscribe to the __VisualListItemFor
 
 #### Subscribe to VisualListItemFormatting 
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=VisualListItemFormattingSubscribe}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=VisualListItemFormattingSubscribe}} 
+<snippet id='checkeddropdownlist-customization-visuallistitemformattingsubscribe-cs' />
+<snippet id='checkeddropdownlist-customization-visuallistitemformattingsubscribe-vb' />
 
-````C#
-this.radCheckedDropDownList1.VisualListItemFormatting += radCheckedDropDownList1_VisualListItemFormatting;
 
-````
-````VB.NET
-AddHandler Me.RadCheckedDropDownList1.VisualListItemFormatting, AddressOf radCheckedDropDownList1_VisualListItemFormatting
-
-````
-
-{{endregion}} 
 
 
 #### Modify properties 
 
-{{source=..\SamplesCS\DropDownListControl\CheckedDropDownList\Customization1.cs region=VisualListItemFormattingHandler}} 
-{{source=..\SamplesVB\DropDownListControl\CheckedDropDownList\Customization1.vb region=VisualListItemFormattingHandler}} 
+<snippet id='checkeddropdownlist-customization-visuallistitemformattinghandler-cs' />
+<snippet id='checkeddropdownlist-customization-visuallistitemformattinghandler-vb' />
 
-````C#
-void radCheckedDropDownList1_VisualListItemFormatting(object sender, VisualItemFormattingEventArgs args)
-{
-    bool itemChecked = ((RadCheckedListDataItem)args.VisualItem.Data).Checked;
-    if (itemChecked)
-    {
-        args.VisualItem.ForeColor = Color.Green;
-    }
-    else
-    {
-        args.VisualItem.ForeColor = Color.Red;
-    }
-}
 
-````
-````VB.NET
-Private Sub radCheckedDropDownList1_VisualListItemFormatting(sender As Object, args As VisualItemFormattingEventArgs)
-    Dim itemChecked As Boolean = DirectCast(args.VisualItem.Data, RadCheckedListDataItem).Checked
-    If itemChecked Then
-        args.VisualItem.ForeColor = Color.Green
-    Else
-        args.VisualItem.ForeColor = Color.Red
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Customizing dropdown items
 

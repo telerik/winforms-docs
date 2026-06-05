@@ -43,21 +43,10 @@ You can filter by the following criteria’s:
 
 #### Adding a Filter Descriptor
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridFiltering.cs region=Filtering}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridFiltering.vb region=Filtering}} 
+<snippet id='propertygrid-propertygridfiltering-filtering-cs' />
+<snippet id='propertygrid-propertygridfiltering-filtering-vb' />
 
-````C#
-FilterDescriptor filter = new FilterDescriptor("Name", FilterOperator.Contains, "size");
-radPropertyGrid1.FilterDescriptors.Add(filter);
 
-````
-````VB.NET
-Dim filter = New FilterDescriptor("Name", FilterOperator.Contains, "size")
-RadPropertyGrid1.FilterDescriptors.Add(filter)
-
-````
-
-{{endregion}}
 
 # See Also
 

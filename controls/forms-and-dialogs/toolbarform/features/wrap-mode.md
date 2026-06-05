@@ -26,27 +26,10 @@ When using ToolbarWrapMode.**Weight**, it is possible to specify the weight for 
 
 * **FarItemsWrapWeight** - Gets or sets the wrap weight while performing the layout of the **FarItems** container. The property is only relevant in the ToolbarWrapMode.Weight wrap mode. The value is in percentage and determines what part of the available space is dedicated to the container.
 
-{{source=..\SamplesCS\Forms and Dialogs\RadToolbarForm1.cs region=Wrap}} 
-{{source=..\SamplesVB\Forms and Dialogs\RadToolbarForm1.vb region=Wrap}}
+<snippet id='toolbarform-radtoolbarform1-wrap-cs' />
+<snippet id='toolbarform-radtoolbarform1-wrap-vb' />
 
-````C#
-
-this.ToolbarFormControl.WrapMode = ToolbarWrapMode.Weight;
-this.ToolbarFormControl.NearItemsWrapWeight = 20;
-this.ToolbarFormControl.CenterItemsWrapWeight = 60;
-this.ToolbarFormControl.FarItemsWrapWeight = 20;
-
-````
-````VB.NET
-
-Me.ToolbarFormControl.WrapMode = ToolbarWrapMode.Weight
-Me.ToolbarFormControl.NearItemsWrapWeight = 20
-Me.ToolbarFormControl.CenterItemsWrapWeight = 60
-Me.ToolbarFormControl.FarItemsWrapWeight = 20
-
-```` 
-
-{{endregion}} 
+ 
 
 ## See Also
 

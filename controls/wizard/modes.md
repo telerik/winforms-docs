@@ -15,19 +15,10 @@ __RadWizard__ supports both *Wizard 97* and *Wizard Aero* specifications. You ca
 
 #### Setting modes
 
-{{source=..\SamplesCS\Wizard\Modes.cs region=settingMode}} 
-{{source=..\SamplesVB\Wizard\Modes.vb region=settingMode}} 
+<snippet id='wizard-modes-settingmode-cs' />
+<snippet id='wizard-modes-settingmode-vb' />
 
-````C#
-this.radWizard1.Mode = WizardMode.Wizard97;
 
-````
-````VB.NET
-Me.RadWizard1.Mode = WizardMode.Wizard97
-
-````
-
-{{endregion}} 
 
 >caption Figire 1: WizardMode.Wizard97
 
@@ -37,21 +28,10 @@ The aero style of WizardMode.*Aero* can be enabled (for Windows Vista and later 
 
 #### Enabling aero style
 
-{{source=..\SamplesCS\Wizard\Modes.cs region=EnableAeroStyle}} 
-{{source=..\SamplesVB\Wizard\Modes.vb region=EnableAeroStyle}} 
+<snippet id='wizard-modes-enableaerostyle-cs' />
+<snippet id='wizard-modes-enableaerostyle-vb' />
 
-````C#
-this.radWizard1.Mode = WizardMode.Aero;
-this.radWizard1.EnableAeroStyle = true;
 
-````
-````VB.NET
-Me.RadWizard1.Mode = WizardMode.Aero
-Me.RadWizard1.EnableAeroStyle = True
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: WizardMode.Aero with enabled aero
 
@@ -59,21 +39,10 @@ Me.RadWizard1.EnableAeroStyle = True
 
 #### Disable __Aero Style__
 
-{{source=..\SamplesCS\Wizard\Modes.cs region=disableAeroStyle}} 
-{{source=..\SamplesVB\Wizard\Modes.vb region=disableAeroStyle}} 
+<snippet id='wizard-modes-disableaerostyle-cs' />
+<snippet id='wizard-modes-disableaerostyle-vb' />
 
-````C#
-this.radWizard1.Mode = WizardMode.Aero;
-this.radWizard1.EnableAeroStyle = false;
 
-````
-````VB.NET
-Me.RadWizard1.Mode = WizardMode.Aero
-Me.RadWizard1.EnableAeroStyle = False
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: WizardMode.Aero with disabled aero
 

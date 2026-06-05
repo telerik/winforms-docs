@@ -25,42 +25,20 @@ Below you can see the result of delete operation over the selected __RadDiagramI
 
 You can remove __RadDiagramItems__ in code behind by using the RadDiagram.__Items__ collection and its __Remove()__ or __RemoveAt()__ methods: 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=RemoveItems}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RemoveItems}} 
+<snippet id='diagram-removing-items-removeitems-cs'/>
+<snippet id='diagram-removing-items-removeitems-vb'/>
 
-````C#
-this.radDiagram1.Items.RemoveAt(2);
-this.radDiagram1.Items.Remove(shape1);
-
-````
-````VB.NET
-Me.RadDiagram1.Items.RemoveAt(2)
-Me.RadDiagram1.Items.Remove(shape1)
-
-````
-
-{{endregion}} 
+ 
 
  
 ## Delete with DiagramCommands
 
 You can use the __DiagramCommand__ "Delete" in order to remove the selected __RadDiagramItems__. 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=DeleteCommands}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=DeleteCommands}} 
+<snippet id='diagram-removing-items-deletecommands-cs'/>
+<snippet id='diagram-removing-items-deletecommands-vb'/>
 
-````C#
-this.radDiagram1.SelectedItem = shape1;
-this.radDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "");
-
-````
-````VB.NET
-Me.RadDiagram1.SelectedItem = shape1
-Me.RadDiagram1.DiagramElement.TryExecuteCommand(DiagramCommands.Delete, "")
-
-````
-
-{{endregion}} 
+ 
 
 
 

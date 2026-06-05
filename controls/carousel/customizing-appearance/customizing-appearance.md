@@ -22,21 +22,10 @@ The following snippet shows how you can change the back color of the navigation 
 
 #### Change Navigation Buttons BackColor
 
-{{source=..\SamplesCS\Carousel\CarouselGettingStarted.cs region=NavBackColor}}
-{{source=..\SamplesVB\Carousel\CarouselGettingStarted.vb region=NavBackColor}}
+<snippet id='carousel-customizing-appearance-navbackcolor-cs'/>
+<snippet id='carousel-customizing-appearance-navbackcolor-vb'/>
 
-````C#
-radCarousel1.ButtonNext.ButtonFillElement.BackColor = ColorTranslator.FromHtml("#91c930");
-radCarousel1.ButtonPrevious.ButtonFillElement.BackColor = ColorTranslator.FromHtml("#91c930");
 
-````
-````VB.NET
-RadCarousel1.ButtonNext.ButtonFillElement.BackColor = ColorTranslator.FromHtml("#91c930")
-RadCarousel1.ButtonPrevious.ButtonFillElement.BackColor = ColorTranslator.FromHtml("#91c930")
-
-````
-
-{{endregion}}
 
 
 >caption Figure 2: Navigation Buttons BackColor Changed.

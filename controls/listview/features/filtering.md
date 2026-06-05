@@ -15,39 +15,19 @@ __RadListView__ allows filtering operations in all views. To enable filtering op
 
 #### Enable Filtering
 
-{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=EnableFiltering}} 
-{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=EnableFiltering}} 
+<snippet id='listview-listviewfiltering-enablefiltering-cs' />
+<snippet id='listview-listviewfiltering-enablefiltering-vb' />
 
-````C#
-radListView1.EnableFiltering = true;
 
-````
-````VB.NET
-RadListView1.EnableFiltering = True
-
-````
-
-{{endregion}} 
 
 Once the filtering is enabled, we have to create a new __FilterDescriptor__ and assign its __PropertyName__, __FilterOperator__ and __SearchCriteria__. First, let’s filter the items by their value and look for items starting with *“Local”*.
 
 #### Filter by Value
 
-{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor}} 
-{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor}} 
+<snippet id='listview-listviewfiltering-filterdescriptor-cs' />
+<snippet id='listview-listviewfiltering-filterdescriptor-vb' />
 
-````C#
-FilterDescriptor valueFilter = new FilterDescriptor("Value", FilterOperator.StartsWith, "Local");
-radListView1.FilterDescriptors.Add(valueFilter);
 
-````
-````VB.NET
-Dim valueFilter As New FilterDescriptor("Value", FilterOperator.StartsWith, "Local")
-RadListView1.FilterDescriptors.Add(valueFilter)
-
-````
-
-{{endregion}} 
 
 |Before Filtering|After Filtering|
 |----|----|
@@ -57,21 +37,10 @@ When a column name is specified as __PropertyName__ of the filter descriptor, **
 
 #### Filter by type
 
-{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=FilterDescriptor1}} 
-{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=FilterDescriptor1}} 
+<snippet id='listview-listviewfiltering-filterdescriptor1-cs' />
+<snippet id='listview-listviewfiltering-filterdescriptor1-vb' />
 
-````C#
-FilterDescriptor typeFilter = new FilterDescriptor("Type", FilterOperator.Contains, "Disk");
-radListView1.FilterDescriptors.Add(typeFilter);
 
-````
-````VB.NET
-Dim typeFilter As New FilterDescriptor("Type", FilterOperator.Contains, "Disk")
-RadListView1.FilterDescriptors.Add(typeFilter)
-
-````
-
-{{endregion}} 
 
 |Before|After|
 |----|----|
@@ -83,47 +52,17 @@ RadListView1.FilterDescriptors.Add(typeFilter)
 
 #### Custom FilterPredicate 
 
-{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=CustomFilterPredicate}} 
-{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=CustomFilterPredicate}} 
+<snippet id='listview-listviewfiltering-customfilterpredicate-cs' />
+<snippet id='listview-listviewfiltering-customfilterpredicate-vb' />
 
-````C#
-private bool MyFilter(ListViewDataItem item)
-{
-    if (item.Value.ToString().Contains("C"))
-    {
-        return true;
-    }
-    return false;
-}
 
-````
-````VB.NET
-Private Function MyFilter(item As ListViewDataItem) As Boolean
-    If item.Value.ToString().Contains("C") Then
-        Return True
-    End If
-    Return False
-End Function
-
-````
-
-{{endregion}} 
 
 #### Apply the custom FilterPredicate 
 
-{{source=..\SamplesCS\ListView\Features\ListViewFiltering.cs region=ApplyCustomFilterPredicate}} 
-{{source=..\SamplesVB\ListView\Features\ListViewFiltering.vb region=ApplyCustomFilterPredicate}} 
+<snippet id='listview-listviewfiltering-applycustomfilterpredicate-cs' />
+<snippet id='listview-listviewfiltering-applycustomfilterpredicate-vb' />
 
-````C#
-this.radListView1.ListViewElement.DataView.Filter = MyFilter;
 
-````
-````VB.NET
-Me.RadListView1.ListViewElement.DataView.Filter = AddressOf MyFilter
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: Custom Filtering
 

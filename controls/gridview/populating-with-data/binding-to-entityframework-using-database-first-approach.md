@@ -46,41 +46,17 @@ Now, our models should be generated.
 
 1\. Add **RadGridView** to the **Form** and then in the code behind add an instance of the **DbContext** which will provide us access to the data in the database:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addDbContext}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addDbContext}} 
-
-````C#
-NorthwindEntities dbContext = new NorthwindEntities();
-
-````
-````VB.NET
-Dim dbContext As New NorthwindEntities
-
-````
-
-{{endregion}} 
+<snippet id='gridview-bindingtoentityframeworkdatabasefirst-adddbcontext-cs' />
+<snippet id='gridview-bindingtoentityframeworkdatabasefirst-adddbcontext-vb' />
 
 >note When binding **RadGridView** we will be using the Local property of **DbSet**. The Local property provides access to the data without a query being sent to the database. It is also synchronized with the **DbSet**. For example, if an entry is deleted from the Local property, the next time a query is executed it will be deleted from the database.
 >
 
 2\. Add the following code to your Form’s constructor:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addDataSource}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addDataSource}} 
+<snippet id='gridview-bindingtoentityframeworkdatabasefirst-adddatasource-cs' />
+<snippet id='gridview-bindingtoentityframeworkdatabasefirst-adddatasource-vb' />
 
-````C#
-dbContext.Customers.Load();
-this.radGridView1.DataSource = this.dbContext.Customers.Local.ToBindingList();
-
-````
-````VB.NET
-dbContext.Customers.Load()
-Me.radGridView1.DataSource = Me.dbContext.Customers.Local.ToBindingList()
-
-````
-
-{{endregion}} 
- 
 These extension methods are located in the __System.Data.Entity__ namespace. As the **Local** property represents the local data, we need to first load the data from the database. Then, by calling __ToBindingList__ method we make sure that our **RadGridView** and the **Local** data will be synchronized.
 
 >note When adding new rows in **RadGridView** by default the *Id* cell of the new rows will be *0* since the data was not send to the database, therefore no *UniqueId* has been assigned yet.
@@ -89,53 +65,13 @@ These extension methods are located in the __System.Data.Entity__ namespace. As 
 
 3\. Now, we just need to add the relation between the **Customers** and **Orders** tables:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=addRelation}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=addRelation}} 
-
-````C#
-dbContext.Orders.Load();
-GridViewTemplate template = new GridViewTemplate();
-template.DataSource = dbContext.Orders.Local.ToBindingList();
-this.radGridView1.MasterTemplate.Templates.Add(template);
-GridViewRelation relation = new GridViewRelation(this.radGridView1.MasterTemplate);
-relation.ChildTemplate = template;
-relation.RelationName = "CustomersToOrders";
-relation.ParentColumnNames.Add("CustomerId");
-relation.ChildColumnNames.Add("CustomerId");
-this.radGridView1.Relations.Add(relation);
-
-````
-````VB.NET
-dbContext.Orders.Load()
-Dim template As New GridViewTemplate()
-template.DataSource = dbContext.Orders.Local.ToBindingList()
-Me.radGridView1.MasterTemplate.Templates.Add(template)
-Dim relation As New GridViewRelation(Me.radGridView1.MasterTemplate)
-relation.ChildTemplate = template
-relation.RelationName = "CustomersToOrders"
-relation.ParentColumnNames.Add("CustomerId")
-relation.ChildColumnNames.Add("CustomerId")
-Me.radGridView1.Relations.Add(relation)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-bindingtoentityframeworkdatabasefirst-addrelation-cs' />
+<snippet id='gridview-bindingtoentityframeworkdatabasefirst-addrelation-vb' />
 
 4\. The final step is to save the changes to the database when the form closes. For this purpose, we need to subscribe to the form's __Closing__ event and add the following code in the event handler:
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.cs region=saveChanges}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\BindingToEntityFrameworkDatabaseFirst.vb region=saveChanges}} 
-
-````C#
-this.dbContext.SaveChanges();
-
-````
-````VB.NET
-Me.dbContext.SaveChanges()
-
-````
-
-{{endregion}} 
+<snippet id='gridview-bindingtoentityframeworkdatabasefirst-savechanges-cs' />
+<snippet id='gridview-bindingtoentityframeworkdatabasefirst-savechanges-vb' />
 
 Now, if you run your application you should see the hierarchical data.
 

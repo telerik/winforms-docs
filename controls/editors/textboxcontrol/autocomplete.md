@@ -65,49 +65,10 @@ To set the __AutoCompleteDisplayMember__ property, first set the data source pro
 
 To use auto-completion without specifying a data source, you need to populate the items which will be used for completing the input string in __RadTextBoxControl__, in the __Items__ collection of the control: 
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=AddAutoCompleteItems}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=AddAutoCompleteItems}} 
+<snippet id='editors-textboxcontrol-addautocompleteitems-cs' />
+<snippet id='editors-textboxcontrol-addautocompleteitems-vb' />
 
-````C#
-    
-private void AddAutoCompleteItems()
-{
-    this.radTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest;
-    RadListDataItemCollection autoCompleteItems = this.radTextBoxControl1.AutoCompleteItems;
-        
-    autoCompleteItems.Add(new RadListDataItem("Luke"));
-    autoCompleteItems.Add(new RadListDataItem("Max"));
-    autoCompleteItems.Add(new RadListDataItem("Adam"));
-    autoCompleteItems.Add(new RadListDataItem("Henry"));
-    autoCompleteItems.Add(new RadListDataItem("Jack"));
-    autoCompleteItems.Add(new RadListDataItem("Ben"));
-    autoCompleteItems.Add(new RadListDataItem("Tyler"));
-    autoCompleteItems.Add(new RadListDataItem("Ethan"));
-    autoCompleteItems.Add(new RadListDataItem("David"));
-    autoCompleteItems.Add(new RadListDataItem("Mike"));
-}
 
-````
-````VB.NET
-Private Sub AddAutoCompleteItems()
-    Me.RadTextBoxControl1.AutoCompleteMode = AutoCompleteMode.Suggest
-    Dim autoCompleteItems As RadListDataItemCollection = Me.RadTextBoxControl1.AutoCompleteItems
-    autoCompleteItems.Add(New RadListDataItem("Luke"))
-    autoCompleteItems.Add(New RadListDataItem("Max"))
-    autoCompleteItems.Add(New RadListDataItem("Adam"))
-    autoCompleteItems.Add(New RadListDataItem("Henry"))
-    autoCompleteItems.Add(New RadListDataItem("Jack"))
-    autoCompleteItems.Add(New RadListDataItem("Ben"))
-    autoCompleteItems.Add(New RadListDataItem("Tyler"))
-    autoCompleteItems.Add(New RadListDataItem("Ethan"))
-    autoCompleteItems.Add(New RadListDataItem("David"))
-    autoCompleteItems.Add(New RadListDataItem("Mike"))
-End Sub
-
-````
-
-{{endregion}} 
- 
 
 Here is the result of the above code:
 
@@ -119,42 +80,17 @@ Here is the result of the above code:
 The bellow example shows how you can change the styles of the auto-complete drop down.
 
 First you need to subscribe to the __VisualItemFormatting__ event:
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Subscribe_ItemFormatting}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Subscribe_ItemFormatting}}
-````C#
-radTextBoxControl1.ListElement.VisualItemFormatting += ListElement_VisualItemFormatting;
+<snippet id='editors-textboxcontrol-subscribe_itemformatting-cs' />
+<snippet id='editors-textboxcontrol-subscribe_itemformatting-vb' />
 
-````
-````VB.NET
-AddHandler RadTextBoxControl1.ListElement.VisualItemFormatting, AddressOf ListElement_VisualItemFormatting
 
-```` 
-
-{{endregion}} 
 
 Then you can change the styles in the event handler:
 
-{{source=..\SamplesCS\Editors\TextBoxControl.cs region=Formatting_AutoComplete}} 
-{{source=..\SamplesVB\Editors\TextBoxControl.vb region=Formatting_AutoComplete}}
-````C#
-private void ListElement_VisualItemFormatting(object sender, VisualItemFormattingEventArgs args)
-{
-    args.VisualItem.BackColor = ColorTranslator.FromHtml("#91c930");
-    args.VisualItem.GradientStyle = GradientStyles.Solid;
-    args.VisualItem.ForeColor = ColorTranslator.FromHtml("#bb2525");
-}
+<snippet id='editors-textboxcontrol-formatting_autocomplete-cs' />
+<snippet id='editors-textboxcontrol-formatting_autocomplete-vb' />
 
-````
-````VB.NET
-Private Sub ListElement_VisualItemFormatting(ByVal sender As Object, ByVal args As VisualItemFormattingEventArgs)
-    args.VisualItem.BackColor = ColorTranslator.FromHtml("#91c930")
-    args.VisualItem.GradientStyle = GradientStyles.Solid
-    args.VisualItem.ForeColor = ColorTranslator.FromHtml("#bb2525")
-End Sub
 
-```` 
-
-{{endregion}} 
 
 Here is the result of the above code:
 

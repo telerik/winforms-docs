@@ -44,10 +44,6 @@ provider.CacheProvider = cache
 Me.radMap1.Providers.Add(provider)
 
 ````
-
-{{endregion}} 
-
-
 ## Language
 
 The Azure Maps services provide a culture parameter in its URL address and the AzureMapProvider allows you to utilize it. To do so, set the `LanguageCulture` property to the desired culture string.

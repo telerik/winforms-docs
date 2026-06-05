@@ -27,27 +27,10 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\TrackAndStatus\ProgressBar\ProgressGettingStarted.cs region=CustomizeElements}} 
-{{source=..\SamplesVB\TrackAndStatus\ProgressBar\ProgressGettingStarted.vb region=CustomizeElements}} 
+<snippet id='track-and-status-controls-progressgettingstarted-customizeelements-cs' />
+<snippet id='track-and-status-controls-progressgettingstarted-customizeelements-vb' />
 
-````C#
-this.radProgressBar1.ForeColor = Color.Red;
-this.radProgressBar1.ProgressBarElement.IndicatorElement1.BackColor = Color.Lime;
-this.radProgressBar1.ProgressBarElement.IndicatorElement1.DrawBorder = true;
-this.radProgressBar1.ProgressBarElement.IndicatorElement1.BorderColor = Color.Fuchsia;
-this.radProgressBar1.ProgressBarElement.IndicatorElement1.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid;
 
-````
-````VB.NET
-Me.RadProgressBar1.ForeColor = Color.Red
-Me.RadProgressBar1.ProgressBarElement.IndicatorElement1.BackColor = Color.Lime
-Me.RadProgressBar1.ProgressBarElement.IndicatorElement1.DrawBorder = True
-Me.RadProgressBar1.ProgressBarElement.IndicatorElement1.BorderColor = Color.Fuchsia
-Me.RadProgressBar1.ProgressBarElement.IndicatorElement1.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
-
-````
-
-{{endregion}}  
 
 # See Also
 

@@ -33,27 +33,10 @@ The code sample below access the **FillPrimitive** of the header, changes the fi
 
 #### Change the GroupBox Header Color
 
-{{source=..\SamplesCS\PanelsAndLabels\GroupBox\Advanced\TPFStructure.cs region=changeTheHeaderColor}} 
-{{source=..\SamplesVB\PanelsAndLabels\GroupBox\Advanced\TPFStructure.vb region=changeTheHeaderColor}} 
+<snippet id='panels-and-labels-tpfstructure-changetheheadercolor-cs' />
+<snippet id='panels-and-labels-tpfstructure-changetheheadercolor-vb' />
 
-````C#
-FillPrimitive fill = ((FillPrimitive)this.radGroupBox1.GroupBoxElement.Children[1].Children[0]);
-fill.ShouldPaint = true;
-fill.BackColor = Color.Red;
-fill.BackColor2 = Color.Yellow;
-fill.GradientStyle = Telerik.WinControls.GradientStyles.Linear;
 
-````
-````VB.NET
-Dim fill As FillPrimitive = DirectCast(Me.RadGroupBox1.GroupBoxElement.Children(1).Children(0), FillPrimitive)
-fill.ShouldPaint = True
-fill.BackColor = Color.Red
-fill.BackColor2 = Color.Yellow
-fill.GradientStyle = Telerik.WinControls.GradientStyles.Linear
-
-````
-
-{{endregion}} 
 
 >note The code samples below are just a demonstration of how you can set node properties programmatically. You will probably prefer to use the Visual Style Builder to create your themes using no code.
 >

@@ -21,23 +21,10 @@ At any one time the scheduler displays a view using a descendant of the __Schedu
 
 #### Get Day View
 
-{{source=..\SamplesCS\Scheduler\Views\WorkingWithViews.cs region=getDayView}} 
-{{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=getDayView}} 
+<snippet id='scheduler-workingwithviews-getdayview-cs' />
+<snippet id='scheduler-workingwithviews-getdayview-vb' />
 
-````C#
-SchedulerDayView dayView = radScheduler1.GetDayView();
-dayView.RulerStartScale = 2;
-dayView.RulerEndScale = 5;
 
-````
-````VB.NET
-Dim dayView As SchedulerDayView = RadScheduler1.GetDayView()
-dayView.RulerStartScale = 2
-dayView.RulerEndScale = 5
-
-````
-
-{{endregion}} 
 
 After running the code, the day view for the scheduler looks like this screenshot:
 
@@ -48,64 +35,29 @@ Change between views by changing the __ActiveViewType__ property to one of the _
 
 #### ActiveViewType Property
 
-{{source=..\SamplesCS\Scheduler\Views\WorkingWithViews.cs region=activeViewType}} 
-{{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=activeViewType}} 
+<snippet id='scheduler-workingwithviews-activeviewtype-cs' />
+<snippet id='scheduler-workingwithviews-activeviewtype-vb' />
 
-````C#
-radScheduler1.ActiveViewType = SchedulerViewType.Day;
 
-````
-````VB.NET
-RadScheduler1.ActiveViewType = SchedulerViewType.Day
-
-````
-
-{{endregion}} 
 
 Retrieve the view that is currently being displayed by using the ActiveView property, cast it to be the ActiveViewType.
 
 #### ActiveView Property
 
-{{source=..\SamplesCS\Scheduler\Views\WorkingWithViews.cs region=weekCount}} 
-{{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=weekCount}} 
+<snippet id='scheduler-workingwithviews-weekcount-cs' />
+<snippet id='scheduler-workingwithviews-weekcount-vb' />
 
-````C#
-radScheduler1.ActiveViewType = SchedulerViewType.Month;
-(radScheduler1.ActiveView as SchedulerMonthView).WeekCount = 2;
 
-````
-````VB.NET
-RadScheduler1.ActiveViewType = SchedulerViewType.Month
-TryCast(RadScheduler1.ActiveView, SchedulerMonthView).WeekCount = 2
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Week Count
 ![WinForms RadScheduler Week Count](images/scheduler-views-working-with-views002.png)
 
 Detect changes to the view by handling the __ActiveViewChanging__ and __ActiveViewChanged__ events. As always, the "Changing" event arguments provide the ability to cancel the view change, but also the "old" and "new" views before and after the view changes transpires:
 
-{{source=..\SamplesCS\Scheduler\Views\WorkingWithViews.cs region=activeViewChanging}} 
-{{source=..\SamplesVB\Scheduler\Views\WorkingWithViews.vb region=activeViewChanging}} 
+<snippet id='scheduler-workingwithviews-activeviewchanging-cs' />
+<snippet id='scheduler-workingwithviews-activeviewchanging-vb' />
 
-````C#
-void radScheduler1_ActiveViewChanging(object sender, SchedulerViewChangingEventArgs e)
-{
-    this.Text = String.Format("Old: {0} New: {1}",
-    e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString());
-}
 
-````
-````VB.NET
-Private Sub radScheduler1_ActiveViewChanging(ByVal sender As Object, ByVal e As SchedulerViewChangingEventArgs)
-    Me.Text = String.Format("Old: {0} New: {1}", e.OldView.ViewType.ToString(), e.NewView.ViewType.ToString())
-End Sub
-
-````
-
-{{endregion}} 
 
 # See Also
 

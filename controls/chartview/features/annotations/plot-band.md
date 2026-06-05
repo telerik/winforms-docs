@@ -34,49 +34,10 @@ Here is what __CartesianPlotBandAnnotation__ looks like:
 
 #### Plot Band Annotation Setup
 
-{{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=CartesianPlotBand}} 
-{{source=..\SamplesVB\ChartView\Annotations\PlotBand.vb region=CartesianPlotBand}} 
+<snippet id='chartview-plot-band-cartesianplotband-cs'/>
+<snippet id='chartview-plot-band-cartesianplotband-vb'/>
 
-````C#
-CartesianPlotBandAnnotation annotation1 = new CartesianPlotBandAnnotation();
-annotation1.Axis = this.radChartView1.Axes[0] as CartesianAxis;
-annotation1.From = 0.5;
-annotation1.To = 1.5;
-annotation1.BackColor = Color.FromArgb(100, Color.LightBlue);
-annotation1.BorderColor = Color.Black;
-annotation1.BorderWidth = 1;
-this.radChartView1.Annotations.Add(annotation1);
-CartesianPlotBandAnnotation annotation2 = new CartesianPlotBandAnnotation();
-annotation2.Axis = this.radChartView1.Axes[1] as CartesianAxis;
-annotation2.From = 4.5;
-annotation2.To = 5.5;
-annotation2.BackColor = Color.FromArgb(100, Color.LightBlue);
-annotation2.BorderColor = Color.Black;
-annotation2.BorderWidth = 1;
-this.radChartView1.Annotations.Add(annotation2);
 
-````
-````VB.NET
-Dim annotation1 As New CartesianPlotBandAnnotation()
-annotation1.Axis = TryCast(Me.radChartView1.Axes(0), CartesianAxis)
-annotation1.From = 0.5
-annotation1.[To] = 1.5
-annotation1.BackColor = Color.FromArgb(100, Color.LightBlue)
-annotation1.BorderColor = Color.Black
-annotation1.BorderWidth = 1
-Me.radChartView1.Annotations.Add(annotation1)
-Dim annotation2 As New CartesianPlotBandAnnotation()
-annotation2.Axis = TryCast(Me.radChartView1.Axes(1), CartesianAxis)
-annotation2.From = 4.5
-annotation2.[To] = 5.5
-annotation2.BackColor = Color.FromArgb(100, Color.LightBlue)
-annotation2.BorderColor = Color.Black
-annotation2.BorderWidth = 1
-Me.radChartView1.Annotations.Add(annotation2)
-
-````
-
-{{endregion}}
 
 Properties:
 
@@ -99,33 +60,10 @@ Here is what __PolarAxisPlotBandAnnotation__ looks like:
 
 #### Polar Axis Annotation
 
-{{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=PolarPlotBand}} 
-{{source=..\SamplesVB\ChartView\Annotations\PlotBand.vb region=PolarPlotBand}} 
+<snippet id='chartview-plot-band-polarplotband-cs'/>
+<snippet id='chartview-plot-band-polarplotband-vb'/>
 
-````C#
-PolarAxisPlotBandAnnotation annotation1 = new PolarAxisPlotBandAnnotation();
-annotation1.From = 6;
-annotation1.To = 8;
-annotation1.BackColor = Color.FromArgb(100, Color.LightBlue);
-annotation1.BorderColor = Color.Black;
-annotation1.BorderWidth = 1;
-annotation1.BorderDashStyle = DashStyle.Solid;
-this.radChartView1.Annotations.Add(annotation1);
 
-````
-````VB.NET
-Dim annotation1 As New PolarAxisPlotBandAnnotation()
-annotation1.From = 6
-annotation1.[To] = 8
-annotation1.BackColor = Color.FromArgb(100, Color.LightBlue)
-annotation1.BorderColor = Color.Black
-annotation1.BorderWidth = 1
-annotation1.BorderDashStyle = DashStyle.Solid
-Me.radChartView1.Annotations.Add(annotation1)
-
-````
-
-{{endregion}}
 
 Properties:
 
@@ -144,25 +82,10 @@ A plot band starting from *180* degrees and ending in *270* degrees will look li
 
 #### Radial Axis Annotations
 
-{{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=RadialPlotBand1}} 
-{{source=..\SamplesVB\ChartView\Annotations\PlotBand.vb region=RadialPlotBand1}} 
+<snippet id='chartview-plot-band-radialplotband1-cs'/>
+<snippet id='chartview-plot-band-radialplotband1-vb'/>
 
-````C#
-RadialAxisPlotBandAnnotation annotation1 = new RadialAxisPlotBandAnnotation();
-annotation1.From = 180;
-annotation1.To = 270;
-this.radChartView1.Annotations.Add(annotation1);
 
-````
-````VB.NET
-Dim annotation1 As New RadialAxisPlotBandAnnotation()
-annotation1.From = 180
-annotation1.[To] = 270
-Me.radChartView1.Annotations.Add(annotation1)
-
-````
-
-{{endregion}}
 
 If you wonder how to annotate the bigger segment from the image above, then you should use the __From__ and __To__ values.
 
@@ -171,25 +94,10 @@ If you wonder how to annotate the bigger segment from the image above, then you 
 
 #### Define Bigger Segment
 
-{{source=..\SamplesCS\ChartView\Annotations\PlotBand.cs region=RadialPlotBand2}} 
-{{source=..\SamplesVB\ChartView\Annotations\PlotBand.vb region=RadialPlotBand2}} 
+<snippet id='chartview-plot-band-radialplotband2-cs'/>
+<snippet id='chartview-plot-band-radialplotband2-vb'/>
 
-````C#
-RadialAxisPlotBandAnnotation annotation1 = new RadialAxisPlotBandAnnotation();
-annotation1.From = 270;
-annotation1.To = 180;
-this.radChartView1.Annotations.Add(annotation1);
-
-````
-````VB.NET
-Dim annotation1 As New RadialAxisPlotBandAnnotation()
-annotation1.From = 270
-annotation1.[To] = 180
-Me.radChartView1.Annotations.Add(annotation1)
-
-````
-
-{{endregion}} 
+ 
 
 Properties:
 

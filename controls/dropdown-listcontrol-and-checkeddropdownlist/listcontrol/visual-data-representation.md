@@ -21,57 +21,10 @@ Here is how our visual item class could look like:
 
 #### Custom RadListVisualItem
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=customVisualItem}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=customVisualItem}} 
+<snippet id='listcontrol-visual-data-representation-customvisualitem-cs' />
+<snippet id='listcontrol-visual-data-representation-customvisualitem-vb' />
 
-````C#
-public class CustomVisualItem : RadListVisualItem
-{
-    private RadCheckBoxElement checkBox = null;
-    static CustomVisualItem()
-    {
-        RadListVisualItem.SynchronizationProperties.Add(CustomDataItem.AvailableProperty);
-    }
-    protected override void PropertySynchronized(RadProperty property)
-    {
-        base.PropertySynchronized(property);
-        if (property == CustomDataItem.AvailableProperty)
-        {
-            this.checkBox.Checked = (bool)this.GetValue(property);
-        }
-    }
-    protected override void CreateChildElements()
-    {
-        base.CreateChildElements();
-        this.checkBox = new RadCheckBoxElement();
-        this.Children.Add(checkBox);
-    }
-}
-
-````
-````VB.NET
-Public Class CustomVisualItem
-Inherits RadListVisualItem
-    Private checkBox As RadCheckBoxElement = Nothing
-    Shared Sub New()
-        RadListVisualItem.SynchronizationProperties.Add(CustomDataItem.AvailableProperty)
-    End Sub
-    Protected Overrides Sub PropertySynchronized(ByVal [property] As RadProperty)
-        MyBase.PropertySynchronized([property])
-        If [property] Is CustomDataItem.AvailableProperty Then
-            Me.checkBox.Checked = CBool(Me.GetValue([property]))
-        End If
-    End Sub
-    Protected Overrides Sub CreateChildElements()
-        MyBase.CreateChildElements()
-        Me.checkBox = New RadCheckBoxElement()
-        Me.Children.Add(checkBox)
-    End Sub
-End Class
-
-````
-
-{{endregion}} 
+ 
  
 Two things are important in order for the synchronization to work. First, the base __RadListVisualItem__ has a static list of __RadProperty__ objects that are iterated over and for each property in the list, the property value is synchronized between the logical and the visual item. In order for the custom __Available__ property to take part in this synchronization it must be added to the static list which should be done in the static constructor of the __CustomVisualItem__. Second, after this property is added to the static property list, the base implementation will notify the inheritors who override the __PropertySynchronized__ method. In this method we can get the updated value for the custom property and update the visual elements accordingly. Again, the two necessary steps to perform are to add the new property to the property list and to override __PropertySynchronized__ so that we can update the UI. The property synchronization works only one way, from the data to the visuals. If the visuals are updated the programmer who created the new visual item is responsible for updating the data item. Every __RadListVisualItem__ has a __Data__ property that points to the data item. It is an interface reference and if a custom data item is provided, it must be explicitly cast to the correct type.        
 
@@ -81,24 +34,10 @@ Once we have created a custom visual item, we need to subscribe to the __Creatin
 
 #### Replace the default visual items 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=creatingVisualListItem}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=creatingVisualListItem}} 
+<snippet id='listcontrol-visual-data-representation-creatingvisuallistitem-cs' />
+<snippet id='listcontrol-visual-data-representation-creatingvisuallistitem-vb' />
 
-````C#
-void radListControl1_CreatingVisualListItem(object sender, CreatingVisualListItemEventArgs args)
-{
-    args.VisualItem = new CustomVisualItem();
-}
-
-````
-````VB.NET
-Private Sub radListControl1_CreatingVisualListItem(ByVal sender As Object, ByVal args As CreatingVisualListItemEventArgs)
-    args.VisualItem = New CustomVisualItem()
-End Sub
-
-````
-
-{{endregion}}  
+  
 
 This is all there is to it, with that infrastructure in place users can create just about any visual representation of the data that __RadListControl__ is bound to or filled with in unbound mode. 
 

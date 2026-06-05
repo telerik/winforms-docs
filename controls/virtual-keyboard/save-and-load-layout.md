@@ -18,76 +18,19 @@ Here is a sample demonstrating how you can implement a Save Layout button event 
  
 #### Save custom defined layout
 
-{{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=Save}} 
-{{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=Save}}
-
-````C#
-string s = "default.xml";
-SaveFileDialog dialog = new SaveFileDialog();
-dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
-dialog.Title = "Select a xml file";
-if (dialog.ShowDialog() == DialogResult.OK)
-{
-    s = dialog.FileName;
-}
-this.radVirtualKeyboard1.SaveLayout(s);
+<snippet id='virtual-keyboard-keyboardgettingstarted-save-cs' />
+<snippet id='virtual-keyboard-keyboardgettingstarted-save-vb' />
 
 
-````
-````VB.NET
-
-Dim s As String = "default.xml"
-Dim dialog As SaveFileDialog = New SaveFileDialog()
-dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
-dialog.Title = "Select a xml file"
-
-If dialog.ShowDialog() = DialogResult.OK Then
-    s = dialog.FileName
-End If
-
-Me.radVirtualKeyboard1.SaveLayout(s)
-
-```` 
-
-{{endregion}}
 
 The code snippets below demonstrates how you can implement a Load Layout button event handler: 
 
 #### Load custom defined layout
 
-{{source=..\SamplesCS\VirtualKeyboard\KeyboardGettingStarted.cs region=Load}} 
-{{source=..\SamplesVB\VirtualKeyboard\KeyboardGettingStarted.vb region=Load}}
-
-````C#
-
-string s = "default.xml";
-OpenFileDialog dialog = new OpenFileDialog();
-dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
-dialog.Title = "Select a xml file";
-if (dialog.ShowDialog() == DialogResult.OK)
-{
-    s = dialog.FileName;
-}
-this.radVirtualKeyboard1.LoadLayout(s);
+<snippet id='virtual-keyboard-keyboardgettingstarted-load-cs' />
+<snippet id='virtual-keyboard-keyboardgettingstarted-load-vb' />
 
 
-````
-````VB.NET
-
-Dim s As String = "default.xml"
-Dim dialog As OpenFileDialog = New OpenFileDialog()
-dialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*"
-dialog.Title = "Select a xml file"
-
-If dialog.ShowDialog() = DialogResult.OK Then
-    s = dialog.FileName
-End If
-
-Me.radVirtualKeyboard1.LoadLayout(s)
-
-```` 
-
-{{endregion}}
 
 **RadVirtualKeyboard** provides three overloads for the **SaveLayout** and **LoadLayout** methods:
 

@@ -37,50 +37,17 @@ As most features of the editor, the image editing capabilities can be easily dis
 
 To remove the image adorner from your application you can create a new __UILayersBuilder__ as shown [here]({%slug winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers%}) and remove the __AdornerLayer__.
 
-{{source=..\SamplesCS\RichTextEditor\UI\EditingImages.cs region=layer}} 
-{{source=..\SamplesVB\RichTextEditor\UI\EditingImages.vb region=layer}} 
+<snippet id='richtexteditor-editingimages-layer-cs' />
+<snippet id='richtexteditor-editingimages-layer-vb' />
 
-````C#
-public class CustomLayersBuilder : UILayersBuilder
-{
-    protected override void BuildUILayersOverride(IUILayerContainer uiLayerContainer)
-    {
-        uiLayerContainer.UILayers.Remove("AdornerLayer");
-    }
-}
 
-````
-````VB.NET
-Public Class CustomLayersBuilder
-    Inherits UILayersBuilder
-    Protected Overrides Sub BuildUILayersOverride(ByVal uiLayerContainer As IUILayerContainer)
-        uiLayerContainer.UILayers.Remove("AdornerLayer")
-    End Sub
-End Class
-
-````
-
-{{endregion}} 
 
 Alternatively, you can disable the capabilities of the image adorner by accessing it though **RadRichTextEditor**'s __ImageSelectionAdornerSettings__ property. This allows you to set the Boolean properties __CanDrag__,  __CanResize__ and __CanRotate__ which disable/enable respectively dragging of the image, resizing it or rotating it.
 
-{{source=..\SamplesCS\RichTextEditor\UI\EditingImages.cs region=disable}} 
-{{source=..\SamplesVB\RichTextEditor\UI\EditingImages.vb region=disable}} 
+<snippet id='richtexteditor-editingimages-disable-cs' />
+<snippet id='richtexteditor-editingimages-disable-vb' />
 
-````C#
-this.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = false;
-this.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = false;
-this.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = false;
 
-````
-````VB.NET
-Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanDrag = False
-Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanResize = False
-Me.radRichTextEditor1.ImageSelectionAdornerSettings.CanRotate = False
-
-````
-
-{{endregion}} 
 
 # See Also
 

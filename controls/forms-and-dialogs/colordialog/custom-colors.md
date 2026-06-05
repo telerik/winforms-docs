@@ -20,34 +20,8 @@ The RadColorSelector.**CustomColorsConfigLocationNeeded** event fires when custo
 
 The following code snippet demonstrates how to change the default location of the file and file name that stores the custom colors:
 
-{{source=..\SamplesCS\Forms and Dialogs\ColorDialog1.cs region=CustomColors}} 
-{{source=..\SamplesVB\Forms and Dialogs\ColorDialog1.vb region=CustomColors}} 
+<snippet id='colordialog-colordialog1-customcolors-cs' />
+<snippet id='colordialog-colordialog1-customcolors-vb' />
 
-````C#
-        public void CustomColorsSubscription()
-        {
-            RadColorSelector colorSelector = this.radColorDialog1 .ColorDialogForm .RadColorSelector as RadColorSelector;
-            colorSelector.CustomColorsConfigLocationNeeded += colorSelector_CustomColorsConfigLocationNeeded;
-        }
-        private void colorSelector_CustomColorsConfigLocationNeeded(object sender, Telerik.WinControls.Themes.ColorDialog.CustomColorsEventArgs args)
-        {
-            args.ConfigFilename = "my file";
-            args.ConfigLocation = "my folder";
-        }
-
-````
-````VB.NET
-    Public Sub CustomColorsSubscription()
-        Dim colorSelector As RadColorSelector = TryCast(Me.RadColorDialog1.ColorDialogForm.RadColorSelector, RadColorSelector)
-        AddHandler colorSelector.CustomColorsConfigLocationNeeded, AddressOf colorSelector_CustomColorsConfigLocationNeeded
-    End Sub
-
-    Private Sub colorSelector_CustomColorsConfigLocationNeeded(ByVal sender As Object, ByVal args As Telerik.WinControls.Themes.ColorDialog.CustomColorsEventArgs)
-        args.ConfigFilename = "my file"
-        args.ConfigLocation = "my folder"
-    End Sub
-
-````
-
-{{endregion}} 
+ 
 

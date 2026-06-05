@@ -32,66 +32,17 @@ If the **SortColumns** method is called, the column's title is considered and th
 
 However, after applying the custom comparer, "Done" column is always first:
 
-{{source=..\SamplesCS\TaskBoard\TaskBoardGettingStarted.cs region=ApplyCustomColumnComparer}} 
-{{source=..\SamplesVB\TaskBoard\TaskBoardGettingStarted.vb region=ApplyCustomColumnComparer}} 
+<snippet id='task-board-taskboardgettingstarted-applycustomcolumncomparer-cs' />
+<snippet id='task-board-taskboardgettingstarted-applycustomcolumncomparer-vb' />
 
-````C#
-this.radTaskBoard1.TaskBoardElement.ColumnComparer = new MyCustomComparer();
-this.radTaskBoard1.SortColumns();
 
-````
-````VB.NET
-Me.radTaskBoard1.TaskBoardElement.ColumnComparer = New MyCustomComparer()
-Me.radTaskBoard1.SortColumns()
-
-````
-
-{{endregion}}  
 
 Here is the specific implementation ensuring that the first column:
 
-{{source=..\SamplesCS\TaskBoard\TaskBoardGettingStarted.cs region=SortingColumns}} 
-{{source=..\SamplesVB\TaskBoard\TaskBoardGettingStarted.vb region=SortingColumns}} 
-
-````C#
-private class MyCustomComparer : ColumnComparer
-{
-
-    public override int Compare(RadTaskBoardColumnElement x, RadTaskBoardColumnElement y)
-    {
-        // The column with Done text is First.
-        if (x.Title == "Done")
-        {
-            return -1;
-        }
-        else if (y.Title == "Done")
-        {
-            return 1;
-        }
-        return base.Compare(x, y);
-    }
-}
-
-````
-````VB.NET
-Private Class MyCustomComparer
-    Inherits ColumnComparer
-
-    Public Overrides Function Compare(ByVal x As RadTaskBoardColumnElement, ByVal y As RadTaskBoardColumnElement) As Integer
-        If x.Title = "Done" Then
-            Return -1
-        ElseIf y.Title = "Done" Then
-            Return 1
-        End If
-
-        Return MyBase.Compare(x, y)
-    End Function
-End Class
+<snippet id='task-board-taskboardgettingstarted-sortingcolumns-cs' />
+<snippet id='task-board-taskboardgettingstarted-sortingcolumns-vb' />
 
 
-````
-
-{{endregion}}  
 
 >caption Custom Columns Sort Order
 
@@ -102,51 +53,17 @@ End Class
 The **SortTasks** method sorts the tasks of all columns. The default Comparer used by all columns is RadTaskBoardElement.**TaskCardComparer** and it will sort the tasks by their TitleText. If you need custom sort for all columns you can create an ancestor of the TaskCardComparer class and set it to the TaskBoardElement.TaskCardComparer. To create custom tasks sorting per column you can use the RadTaskBoardColumnElement.TaskCardComparer property which is defined per column. If the RadTaskBoardColumnElement.TaskCardComparer is not explicitly set it will refer to the TaskBoardElement.TaskCardComparer.
 
 
-{{source=..\SamplesCS\TaskBoard\TaskBoardGettingStarted.cs region=ApplyCustomTaskComparer}} 
-{{source=..\SamplesVB\TaskBoard\TaskBoardGettingStarted.vb region=ApplyCustomTaskComparer}} 
+<snippet id='task-board-taskboardgettingstarted-applycustomtaskcomparer-cs' />
+<snippet id='task-board-taskboardgettingstarted-applycustomtaskcomparer-vb' />
 
-````C#
-this.radTaskBoard1.TaskBoardElement.TaskCardComparer = new CustomTaskCardComparer();
-this.radTaskBoard1.SortTasks();
 
-````
-````VB.NET
- Me.radTaskBoard1.TaskBoardElement.TaskCardComparer = New CustomTaskCardComparer()
- Me.radTaskBoard1.SortTasks()
-
-````
-
-{{endregion}}  
 
 Here is the specific implementation ensuring the reversed alphabetical order for the tasks:
 
-{{source=..\SamplesCS\TaskBoard\TaskBoardGettingStarted.cs region=SortingTasks}} 
-{{source=..\SamplesVB\TaskBoard\TaskBoardGettingStarted.vb region=SortingTasks}} 
+<snippet id='task-board-taskboardgettingstarted-sortingtasks-cs' />
+<snippet id='task-board-taskboardgettingstarted-sortingtasks-vb' />
 
-````C#
-public class CustomTaskCardComparer : TaskCardComparer
-{
-    public override int Compare(RadTaskCardElement x, RadTaskCardElement y)
-    {
-        int defaultResult = base.Compare(x, y);
-        return defaultResult * (-1);
-    }
-}
 
-````
-````VB.NET
-Public Class CustomTaskCardComparer
-    Inherits TaskCardComparer
-
-    Public Overrides Function Compare(ByVal x As RadTaskCardElement, ByVal y As RadTaskCardElement) As Integer
-        Dim defaultResult As Integer = MyBase.Compare(x, y)
-        Return defaultResult * (-1)
-    End Function
-End Class
-
-````
-
-{{endregion}}  
 
 >caption Sorted Tasks in Reversed Alphabetical Order
 

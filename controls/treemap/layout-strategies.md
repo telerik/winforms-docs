@@ -22,22 +22,10 @@ It creates rectangles with best aspect ratio:
 
 ![WinForms RadTreeMap Squarified](images/treemap-layout-strategies001.png)
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Squarified}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Squarified}} 
+<snippet id='treemap-treemapgettingstarted-squarified-cs' />
+<snippet id='treemap-treemapgettingstarted-squarified-vb' />
 
-````C#
-            
-SquarifiedAlgorithm squarifiedAlgorithm = new SquarifiedAlgorithm(); 
-this.radTreeMap1.Algorithm = squarifiedAlgorithm;
 
-````
-````VB.NET
-Dim squarifiedAlgorithm As SquarifiedAlgorithm = New SquarifiedAlgorithm()
-Me.radTreeMap1.Algorithm = squarifiedAlgorithm
-
-````
-
-{{endregion}} 
 
 >note The default layout is Squarified.
 
@@ -49,50 +37,17 @@ It creates rectangles with high aspect ratio and displays them sorted either hor
 
 For the **Slice and Dice** algorithm you can specify **Orientation** (*Horizontal*, *Vertical* or *Smart*) and **SortDirection** (*Ascending* or *Descending*):
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=HorizontalSliceDice}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=HorizontalSliceDice}} 
+<snippet id='treemap-treemapgettingstarted-horizontalslicedice-cs' />
+<snippet id='treemap-treemapgettingstarted-horizontalslicedice-vb' />
 
-````C#
-
-SliceDiceAlgorithm sliceDiceAlgorithm = new SliceDiceAlgorithm();
-sliceDiceAlgorithm.Orientation = SliceDiceOrientation.Horizontal;
-sliceDiceAlgorithm.SortDirection = ListSortDirection.Descending;
-this.radTreeMap1.Algorithm = sliceDiceAlgorithm;      
-
-````
-````VB.NET
-
-Dim sliceDiceAlgorithm As SliceDiceAlgorithm = New SliceDiceAlgorithm()
-sliceDiceAlgorithm.Orientation = SliceDiceOrientation.Horizontal
-sliceDiceAlgorithm.SortDirection = System.ComponentModel.ListSortDirection.Descending
-Me.radTreeMap1.Algorithm = sliceDiceAlgorithm
-
-````
-
-{{endregion}} 
 
 
 Setting the **Orientation** to *Smart* means that the algorithm will automatically choose the most appropriate orientation depending on your data and the available space. 
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=SmartSliceDice}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=SmartSliceDice}} 
+<snippet id='treemap-treemapgettingstarted-smartslicedice-cs' />
+<snippet id='treemap-treemapgettingstarted-smartslicedice-vb' />
 
-````C#
 
-SliceDiceAlgorithm sliceDiceAlgorithmSmart = new SliceDiceAlgorithm();
-sliceDiceAlgorithmSmart.Orientation = SliceDiceOrientation.Smart;
-this.radTreeMap1.Algorithm = sliceDiceAlgorithmSmart;          
-
-````
-````VB.NET
-
-Dim sliceDiceAlgorithmSmart As SliceDiceAlgorithm = New SliceDiceAlgorithm()
-sliceDiceAlgorithmSmart.Orientation = SliceDiceOrientation.Smart
-Me.radTreeMap1.Algorithm = sliceDiceAlgorithmSmart
-
-````
-
-{{endregion}} 
 
 #### Vertical Slice and Dice
 

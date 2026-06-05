@@ -15,155 +15,30 @@ __Polar series__ consists of a group of classes that plot data in radial plot ar
 
 #### Initial Setup
 
-{{source=..\SamplesCS\ChartView\Series\PolarSeriesForm.cs region=polarPointSeries}} 
-{{source=..\SamplesVB\ChartView\Series\PolarSeriesForm.vb region=polarPointSeries}} 
+<snippet id='chartview-polar-polarpointseries-cs'/>
+<snippet id='chartview-polar-polarpointseries-vb'/>
 
-````C#
-            
-this.radChartView1.AreaType = ChartAreaType.Polar;
-PolarPointSeries polarPointSeries = new PolarPointSeries();
-            
-PolarDataPoint dataPoint = new PolarDataPoint();
-dataPoint.Value = 40;
-dataPoint.Angle = 200;
-polarPointSeries.DataPoints.Add(dataPoint);
-            
-dataPoint = new PolarDataPoint();
-dataPoint.Value = 35;
-dataPoint.Angle = 50;
-polarPointSeries.DataPoints.Add(dataPoint);
-            
-dataPoint = new PolarDataPoint();
-dataPoint.Value = 55;
-dataPoint.Angle = 320;
-polarPointSeries.DataPoints.Add(dataPoint);
-            
-this.radChartView1.Series.Add(polarPointSeries);
 
-````
-````VB.NET
-Me.RadChartView1.AreaType = ChartAreaType.Polar
-Dim polarPointSeries As New PolarPointSeries()
-Dim dataPoint As New PolarDataPoint()
-dataPoint.Value = 40
-dataPoint.Angle = 200
-polarPointSeries.DataPoints.Add(dataPoint)
-dataPoint = New PolarDataPoint()
-dataPoint.Value = 35
-dataPoint.Angle = 50
-polarPointSeries.DataPoints.Add(dataPoint)
-dataPoint = New PolarDataPoint()
-dataPoint.Value = 55
-dataPoint.Angle = 320
-polarPointSeries.DataPoints.Add(dataPoint)
-Me.RadChartView1.Series.Add(polarPointSeries)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Initial Setup
 ![WinForms RadChartView Polar Initial Setup](images/chartview-series-types-polar001.png)
 
 #### PolarLineSeries
 
-{{source=..\SamplesCS\ChartView\Series\PolarSeriesForm.cs region=polarLineSeries}} 
-{{source=..\SamplesVB\ChartView\Series\PolarSeriesForm.vb region=polarLineSeries}} 
+<snippet id='chartview-polar-polarlineseries-cs'/>
+<snippet id='chartview-polar-polarlineseries-vb'/>
 
-````C#
-this.radChartView1.AreaType = ChartAreaType.Polar;
-PolarLineSeries polarLineSeries = new PolarLineSeries();
-            
-PolarDataPoint point = new PolarDataPoint();
-point.Value = 35;
-point.Angle = 50;
-polarLineSeries.DataPoints.Add(point);
-            
-point = new PolarDataPoint();
-point.Value = 40;
-point.Angle = 200;
-polarLineSeries.DataPoints.Add(point);
-            
-point = new PolarDataPoint();
-point.Value = 55;
-point.Angle = 320;
-polarLineSeries.DataPoints.Add(point);
-this.radChartView1.Series.Add(polarLineSeries);
 
-````
-````VB.NET
-Me.RadChartView1.AreaType = ChartAreaType.Polar
-Dim polarLineSeries As New PolarLineSeries()
-Dim point As New PolarDataPoint()
-point.Value = 35
-point.Angle = 50
-polarLineSeries.DataPoints.Add(point)
-point = New PolarDataPoint()
-point.Value = 40
-point.Angle = 200
-polarLineSeries.DataPoints.Add(point)
-point = New PolarDataPoint()
-point.Value = 55
-point.Angle = 320
-polarLineSeries.DataPoints.Add(point)
-Me.RadChartView1.Series.Add(polarLineSeries)
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: PolarLineSeries
 ![WinForms RadChartView Polar Line Series](images/chartview-series-types-polar002.png) 
  
 #### PolarAreaSeries
 
-{{source=..\SamplesCS\ChartView\Series\PolarSeriesForm.cs region=polarAreaSeries}} 
-{{source=..\SamplesVB\ChartView\Series\PolarSeriesForm.vb region=polarAreaSeries}} 
+<snippet id='chartview-polar-polarareaseries-cs'/>
+<snippet id='chartview-polar-polarareaseries-vb'/>
 
-````C#
-            
-this.radChartView1.AreaType = ChartAreaType.Polar;
-PolarAreaSeries polarAreaSeries = new PolarAreaSeries();
-PolarDataPoint polarPoint = new PolarDataPoint();
-polarPoint.Value = 35;
-polarPoint.Angle = 50;
-polarAreaSeries.DataPoints.Add(polarPoint);
-polarPoint = new PolarDataPoint();
-polarPoint.Value = 40;
-polarPoint.Angle = 200;
-polarAreaSeries.DataPoints.Add(polarPoint);
-polarPoint = new PolarDataPoint();
-polarPoint.Value = 55;
-polarPoint.Angle = 320;
-polarAreaSeries.DataPoints.Add(polarPoint);
-        
-this.radChartView1.Series.Add(polarAreaSeries);
 
-````
-````VB.NET
-Me.RadChartView1.AreaType = ChartAreaType.Polar
-Dim polarAreaSeries As New PolarAreaSeries()
-Dim polarPoint As New PolarDataPoint()
-polarPoint.Value = 35
-polarPoint.Angle = 50
-polarAreaSeries.DataPoints.Add(polarPoint)
-polarPoint = New PolarDataPoint()
-polarPoint.Value = 25
-polarPoint.Angle = 130
-polarAreaSeries.DataPoints.Add(polarPoint)
-polarPoint = New PolarDataPoint()
-polarPoint.Value = 40
-polarPoint.Angle = 200
-polarAreaSeries.DataPoints.Add(polarPoint)
-polarPoint = New PolarDataPoint()
-polarPoint.Value = 55
-polarPoint.Angle = 320
-polarAreaSeries.DataPoints.Add(polarPoint)
-Me.RadChartView1.Series.Add(polarAreaSeries)
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: PolarAreaSeries
 ![WinForms RadChartView Polar Area Series](images/chartview-series-types-polar003.png)

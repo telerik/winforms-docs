@@ -15,36 +15,10 @@ __RadChartView__ supports empty values in the series. In general empty values me
 
 #### Data Containing Null
 
-{{source=..\SamplesCS\ChartView\Features\NullValues.cs region=NULLVALUES}} 
-{{source=..\SamplesVB\ChartView\Features\NullValues.vb region=NULLVALUES}} 
+<snippet id='chartview-null-values-support-nullvalues-cs'/>
+<snippet id='chartview-null-values-support-nullvalues-vb'/>
 
-````C#
-            
-barSeries.ShowLabels = true;
-barSeries.PointSize = new SizeF(15, 15);
-barSeries.DataPoints.Add(new CategoricalDataPoint(10));
-barSeries.DataPoints.Add(new CategoricalDataPoint(5));
-barSeries.DataPoints.Add(new CategoricalDataPoint(40));
-barSeries.DataPoints.Add(new CategoricalDataPoint(null));
-barSeries.DataPoints.Add(new CategoricalDataPoint(11));
-barSeries.DataPoints.Add(new CategoricalDataPoint(20));
-radChartView1.Series.Add(barSeries);
 
-````
-````VB.NET
-barSeries.ShowLabels = True
-barSeries.PointSize = New SizeF(15, 15)
-barSeries.DataPoints.Add(New CategoricalDataPoint(10))
-barSeries.DataPoints.Add(New CategoricalDataPoint(5))
-barSeries.DataPoints.Add(New CategoricalDataPoint(40))
-barSeries.DataPoints.Add(New CategoricalDataPoint(New Nullable(Of Double)()))
-barSeries.DataPoints.Add(New CategoricalDataPoint(11))
-barSeries.DataPoints.Add(New CategoricalDataPoint(20))
-radChartView1.Series.Add(barSeries)
-
-````
-
-{{endregion}}
 
 >caption Figure 1: BarSeries With Null DataPoint
 ![WinForms RadChartView BarSeries With Null DataPoint](images/chartview-null-values-support001.png)

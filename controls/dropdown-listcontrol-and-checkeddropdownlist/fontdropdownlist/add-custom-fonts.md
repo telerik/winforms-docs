@@ -14,20 +14,18 @@ Since R2 2019 SP1 (version 2019.2.618) __RadFontDropDownList__ supports adding c
 
 #### Add Custom Font to RadFontDropDownList
 
-{{source=..\SamplesCS\Editors\FontDropDownList.cs region=AddCustomFont}} 
-{{source=..\SamplesVB\Editors\FontDropDownList.vb region=AddCustomFont}}
- 
+<snippet id='fontdropdownlist-add-custom-fonts-addcustomfont-cs' />
+<snippet id='fontdropdownlist-add-custom-fonts-addcustomfont-vb' />
 
-{{endregion}} 
+ 
 
 The font can be easily removed as well. 
 
 #### Remove Custom Font from RadFontDropDownList
 
-{{source=..\SamplesCS\Editors\FontDropDownList.cs region=RemoveCustomFont}} 
-{{source=..\SamplesVB\Editors\FontDropDownList.vb region=RemoveCustomFont}}
- 
+<snippet id='fontdropdownlist-add-custom-fonts-removecustomfont-cs' />
+<snippet id='fontdropdownlist-add-custom-fonts-removecustomfont-vb' />
 
-{{endregion}} 
+ 
 
 

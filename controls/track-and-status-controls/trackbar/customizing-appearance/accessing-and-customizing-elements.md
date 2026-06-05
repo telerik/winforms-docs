@@ -31,31 +31,10 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.cs region=CustomizeElements}} 
-{{source=..\SamplesVB\TrackAndStatus\TrackBar\TrackBarPropertiesAndEvents.vb region=CustomizeElements}} 
+<snippet id='track-and-status-controls-trackbarpropertiesandevents-customizeelements-cs' />
+<snippet id='track-and-status-controls-trackbarpropertiesandevents-customizeelements-vb' />
 
-````C#
-this.radTrackBar1.ShowButtons = true;
-this.radTrackBar1.TrackBarElement.LeftButton.ButtonFillElement.BackColor = Color.Lime;
-this.radTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BackColor = Color.Lime;
-this.radTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BorderColor = Color.Red;
-this.radTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.DrawBorder = true;
-this.radTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BorderGradientStyle = GradientStyles.Solid;
-this.radTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TopScaleElement.TickContainerElement.TickColor = Color.Aqua;
 
-````
-````VB.NET
-Me.RadTrackBar1.ShowButtons = True
-Me.RadTrackBar1.TrackBarElement.LeftButton.ButtonFillElement.BackColor = Color.Lime
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BackColor = Color.Lime
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BorderColor = Color.Red
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.DrawBorder = True
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TrackBarLineElement.BorderGradientStyle = GradientStyles.Solid
-Me.RadTrackBar1.TrackBarElement.BodyElement.ScaleContainerElement.TopScaleElement.TickContainerElement.TickColor = Color.Aqua
-
-````
-
-{{endregion}}  
 
 # See Also
 

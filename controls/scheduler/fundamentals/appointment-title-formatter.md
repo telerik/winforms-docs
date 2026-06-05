@@ -38,47 +38,17 @@ RadScheduler offers the **AppointmentTitleFormat** property allowing you to spec
 
 ![WinForms RadScheduler Appointment Title Format](images/appointment-title-formatter001.png)
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\TitleFormatter.cs region=Example1}}
-{{source=..\SamplesVB\Scheduler\Fundamentals\TitleFormatter.vb region=Example1}} 
+<snippet id='scheduler-titleformatter-example1-cs' />
+<snippet id='scheduler-titleformatter-example1-vb' />
 
-````C#
 
-Appointment a = new Appointment();
-a.Start = DateTime.Now;
-a.End = a.Start.AddHours(3);
-a.Summary = "Release planning";
-a.Description = "List the tasks for the roadmap";
-a.Location = "Sofia";
-this.radScheduler1.Appointments.Add(a);
-
-````
-````VB.NET
-
-Dim a As Appointment = New Appointment()
-a.Start = DateTime.Now
-a.[End] = a.Start.AddHours(3)
-a.Summary = "Release planning"
-a.Description = "List the tasks for the roadmap"
-a.Location = "Sofia"
-Me.radScheduler1.Appointments.Add(a)
-
-````
 
 Specify the title format according to the required information:
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\TitleFormatter.cs region=Example2}}
-{{source=..\SamplesVB\Scheduler\Fundamentals\TitleFormatter.vb region=Example2}} 
+<snippet id='scheduler-titleformatter-example2-cs' />
+<snippet id='scheduler-titleformatter-example2-vb' />
 
-````C#
 
-this.radScheduler1.AppointmentTitleFormat = "{6}{0:dd-MM-yyyy h:mm tt} - {1:dd-MM-yyyy h:mm tt}{7} {3} {8} {2}";
-
-````
-````VB.NET
-
-Me.radScheduler1.AppointmentTitleFormat = "{6}{0:dd-MM-yyyy h:mm tt} - {1:dd-MM-yyyy h:mm tt}{7} {3} {8} {2}"
-
-````
 
 ![WinForms RadScheduler Custom Format](images/appointment-title-formatter003.png)
 
@@ -86,24 +56,10 @@ Me.radScheduler1.AppointmentTitleFormat = "{6}{0:dd-MM-yyyy h:mm tt} - {1:dd-MM-
 
 The AppointmentElement.**ShowAppointmentDescription** property controls whether the description will be drawn. By default, it is set to *false*. It can be set in the **AppointmentFormatting** event:
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\TitleFormatter.cs region=Example3}}
-{{source=..\SamplesVB\Scheduler\Fundamentals\TitleFormatter.vb region=Example3}} 
+<snippet id='scheduler-titleformatter-example3-cs' />
+<snippet id='scheduler-titleformatter-example3-vb' />
 
-````C#
 
-private void RadScheduler1_AppointmentFormatting(object sender, SchedulerAppointmentEventArgs e)
-{
-    e.AppointmentElement.ShowAppointmentDescription = true;
-} 
-
-````
-````VB.NET
-
-Private Sub RadScheduler1_AppointmentFormatting(ByVal sender As Object, ByVal e As SchedulerAppointmentEventArgs)
-    e.AppointmentElement.ShowAppointmentDescription = True
-End Sub
-
-````
 
 ![WinForms RadScheduler Appointment Description](images/appointment-title-formatter002.png)
 
@@ -131,47 +87,10 @@ When the **SchedulerViewType** is *Timeline* a TimelineViewAppointmentTitleForma
 
 A common requirement is to use different colors for the different text parts, e.g. color the *time* part in blue and the *summary* in red. This can be achieved by creating a custom [AppointmentElement]({%slug winforms/scheduler/appointments-and-dialogs/custom-appointment-element%}) and overriding its **CreateAppointmentText** method which is expected to return the [HTML-like formatted]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}) text for the appointment.
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\TitleFormatter.cs region=Example4}}
-{{source=..\SamplesVB\Scheduler\Fundamentals\TitleFormatter.vb region=Example4}} 
+<snippet id='scheduler-titleformatter-example4-cs' />
+<snippet id='scheduler-titleformatter-example4-vb' />
 
-````C#
 
-public class MyAppointmentElement : AppointmentElement
-{
-    public MyAppointmentElement(RadScheduler scheduler, SchedulerView view, IEvent appointment) 
-        : base(scheduler, view, appointment)
-    {
-    }
-
-    protected override string CreateAppointmentText()
-    {
-        string text = "<html><b><font=Arial><size=12>" + this.Appointment.Summary + "</b><br>" +
-            "<i><size=9><color=green><font=Times New Roman>" + string.Format("{0:dd-MM-yyyy hh:mm}", this.Appointment.Start) + " - " +
-            "<color=red>" + string.Format("{0:dd-MM-yyyy hh:mm}", this.Appointment.End);
-
-        return text;
-    }
-}
-
-````
-````VB.NET
-
-Public Class MyAppointmentElement
-    Inherits AppointmentElement
-
-    Public Sub New(ByVal scheduler As RadScheduler, ByVal view As SchedulerView, ByVal appointment As IEvent)
-        MyBase.New(scheduler, view, appointment)
-    End Sub
-
-    Protected Overrides Function CreateAppointmentText() As String
-        Dim text As String = "<html><b><font=Arial><size=12>" & Me.Appointment.Summary & "</b><br>" &
-            "<i><size=9><color=green><font=Times New Roman>" & String.Format("{0:dd-MM-yyyy hh:mm}",
-             Me.Appointment.Start) & " - " & "<color=red>" & String.Format("{0:dd-MM-yyyy hh:mm}", Me.Appointment.[End])
-        Return text
-    End Function
-End Class
-
-````
 
 Do not forget to replace the custom AppointmentElement with the help of a [SchedulerElementProvider]({%slug winforms/scheduler/appointments-and-dialogs/custom-appointment-element%}).
 

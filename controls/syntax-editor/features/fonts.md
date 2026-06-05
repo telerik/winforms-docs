@@ -14,21 +14,10 @@ position: 7
 
 #### Example 1: Setting font properties
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Font}}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.vb region= Font}}
+<snippet id='syntax-editor-syntaxeditorlayers-font-cs' />
+<snippet id='syntax-editor-syntaxeditorlayers-font-vb' />
 
-````C#
 
-this.radSyntaxEditor1.SyntaxEditorElement.EditorFontSize = 18f;
-this.radSyntaxEditor1.SyntaxEditorElement.EditorFontFamily = new Telerik.WinControls.SyntaxEditor.UI.FontFamily("TimesNewRoman");
-         
-
-````
-````VB.NET
-Me.RadSyntaxEditor1.SyntaxEditorElement.EditorFontSize = 18.0F
-Me.RadSyntaxEditor1.SyntaxEditorElement.EditorFontFamily = New Telerik.WinControls.SyntaxEditor.UI.FontFamily("TimesNewRoman")
-
-````
 
 These properties, however, will be applied to the line numbers, editor presenter and intelliprompt parts of the control.
 
@@ -40,21 +29,8 @@ When the used font is **Consolas**, **Courier New** or **Lucida Console**, you c
 
 #### Example 2: Enabling monospaced font optimization
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.cs region= Optimization}}
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorLayers.vb region= Optimization}}
-
-````C#
-
-this.radSyntaxEditor1.SyntaxEditorElement.UseMonospacedFontOptimization = true;         
-
-````
-````VB.NET
-Me.RadSyntaxEditor1.SyntaxEditorElement.UseMonospacedFontOptimization = True
-
-````
+<snippet id='syntax-editor-syntaxeditorlayers-optimization-cs' />
+<snippet id='syntax-editor-syntaxeditorlayers-optimization-vb' />
 
 
 
-
-
- 

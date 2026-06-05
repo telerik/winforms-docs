@@ -52,21 +52,10 @@ Since R2 2021 **RadTextBox** supports embedded labels. The embedded label shows 
 
 #### Example 1: Setting the embedded label
 
-{{source=..\SamplesCS\Editors\TextBox1.cs region=EmbeddedLabel}} 
-{{source=..\SamplesVB\Editors\TextBox1.vb region=EmbeddedLabel}} 
+<snippet id='editors-textbox1-embeddedlabel-cs' />
+<snippet id='editors-textbox1-embeddedlabel-vb' />
 
-````C#       
-this.radTextBox1.ShowEmbeddedLabel = true;
-this.radTextBox1.EmbeddedLabelText = "First Name";
 
-````
-````VB.NET
-Me.RadTextBox1.ShowEmbeddedLabel = True
-Me.RadTextBox1.EmbeddedLabelText = "First Name"
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTextBox Embedded Labels](images/editors-textbox-programming-radtextbox005.gif)
 

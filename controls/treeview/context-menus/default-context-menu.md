@@ -31,19 +31,9 @@ RadTreeView displays a default context menu which appears when you right-click o
 
 The default context menu is not enabled by default and if you right-click a node, it will not appear on the screen. In order to enable it, you should set the __AllowDefaultContextMenu__ property to *true*:
 
-{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=defaultMenu}} 
-{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=defaultMenu}} 
+<snippet id='treeview-treeviewmenus-defaultmenu-cs' />
+<snippet id='treeview-treeviewmenus-defaultmenu-vb' />
 
-````C#
-this.radTreeView1.AllowDefaultContextMenu = true;
-
-````
-````VB.NET
-Me.RadTreeView1.AllowDefaultContextMenu = True
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadTreeView Default Menu](images/treeview-context-menus-default-context-menu001.png)
@@ -54,56 +44,28 @@ __Enabling the New item__
 
 To enable the New item, you should set the __AllowAdd__ property to *true*:
 
-{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowAdd}} 
-{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowAdd}} 
+<snippet id='treeview-treeviewmenus-allowadd-cs' />
+<snippet id='treeview-treeviewmenus-allowadd-vb' />
 
-````C#
-this.radTreeView1.AllowAdd = true;
-
-````
-````VB.NET
-Me.RadTreeView1.AllowAdd = True
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadTreeView AllowAdd](images/treeview-context-menus-default-context-menu002.png)
 
 __Enabling the Edit item__: To enable the Edit item, you should set the __AllowEdit__ property to *true*:
 
-{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowEdit}} 
-{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowEdit}} 
+<snippet id='treeview-treeviewmenus-allowedit-cs' />
+<snippet id='treeview-treeviewmenus-allowedit-vb' />
 
-````C#
-this.radTreeView1.AllowEdit = true;
 
-````
-````VB.NET
-Me.RadTreeView1.AllowEdit = True
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTreeView AllowEdit](images/treeview-context-menus-default-context-menu005.png)
 
 __Enabling the Delete item__: To enable the Delete item, you should set the __AllowRemove__ property to *true*:
 
-{{source=..\SamplesCS\TreeView\ContextMenus\TreeViewMenus.cs region=allowRemove}} 
-{{source=..\SamplesVB\TreeView\ContextMenus\TreeViewMenus.vb region=allowRemove}} 
+<snippet id='treeview-treeviewmenus-allowremove-cs' />
+<snippet id='treeview-treeviewmenus-allowremove-vb' />
 
-````C#
-this.radTreeView1.AllowRemove = true;
 
-````
-````VB.NET
-Me.RadTreeView1.AllowRemove = True
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTreeView AllowRemove](images/treeview-context-menus-default-context-menu004.png)
 

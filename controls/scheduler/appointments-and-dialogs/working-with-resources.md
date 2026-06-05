@@ -29,23 +29,9 @@ One **Appointment** may refer to one or many resources. Each **Appoinment** offe
 
 #### Apply a single resource to an appointment
 
-{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=SingleResource}} 
-{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=SingleResource}} 
+<snippet id='scheduler-groupingbyresources-singleresource-cs' />
+<snippet id='scheduler-groupingbyresources-singleresource-vb' />
 
-````C#
-            Appointment appointment = new Appointment(DateTime.Today.AddDays(1).AddHours(12).AddMinutes(30), TimeSpan.FromHours(2), "Business Lunch");
-            appointment.ResourceId = this.radScheduler1.Resources[2].Id;
-            this.radScheduler1.Appointments.Add(appointment);
-
-````
-````VB.NET
-        Dim appointment As Appointment = New Appointment(DateTime.Today.AddDays(1).AddHours(12).AddMinutes(30), TimeSpan.FromHours(2), "Business Lunch")
-        appointment.ResourceId = Me.radScheduler1.Resources(2).Id
-        Me.radScheduler1.Appointments.Add(appointment)
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadScheduler Appointment Resource](images/winforms-scheduler-working-with-resources001.png)
@@ -53,25 +39,10 @@ One **Appointment** may refer to one or many resources. Each **Appoinment** offe
 
 #### Apply multiple resources to an appointment
 
-{{source=..\SamplesCS\Scheduler\Views\GroupingByResources.cs region=MultipleResources}} 
-{{source=..\SamplesVB\Scheduler\Views\GroupingByResources.vb region=MultipleResources}} 
+<snippet id='scheduler-groupingbyresources-multipleresources-cs' />
+<snippet id='scheduler-groupingbyresources-multipleresources-vb' />
 
-````C#
-            Appointment appointmentWithMultipleResources = new Appointment(DateTime.Today.AddDays(1).AddHours(12).AddMinutes(30), TimeSpan.FromHours(2), "Business Lunch");
-            appointmentWithMultipleResources.ResourceIds.Add(this.radScheduler1.Resources[2].Id);
-            appointmentWithMultipleResources.ResourceIds.Add(this.radScheduler1.Resources[1].Id);
-            this.radScheduler1.Appointments.Add(appointmentWithMultipleResources);
 
-````
-````VB.NET
-        Dim appointmentWithMultipleResources As Appointment = New Appointment(DateTime.Today.AddDays(1).AddHours(12).AddMinutes(30), TimeSpan.FromHours(2), "Business Lunch")
-        appointmentWithMultipleResources.ResourceIds.Add(Me.radScheduler1.Resources(2).Id)
-        appointmentWithMultipleResources.ResourceIds.Add(Me.radScheduler1.Resources(1).Id)
-        Me.RadScheduler1.Appointments.Add(appointmentWithMultipleResources)
-
-````
-
-{{endregion}}
 
 ![WinForms RadScheduler Multiple Resources](images/winforms-scheduler-working-with-resources002.png)
 

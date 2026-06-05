@@ -40,21 +40,10 @@ The Telerik UI for WinForms assemblies can be install by using one of the availa
 
 #### Adding a RadClock at runtime 
 
-{{source=..\SamplesCS\Clock\ClockGettingStarted.cs region=CreatingControl}} 
-{{source=..\SamplesVB\Clock\ClockGettingStarted.vb region=CreatingControl}} 
+<snippet id='clock-getting-started-creatingcontrol-cs'/>
+<snippet id='clock-getting-started-creatingcontrol-vb'/>
 
-````C#
-RadClock clock = new RadClock();
-this.Controls.Add(clock);
-
-````
-````VB.NET
-Dim clock As New RadClock()
-Me.Controls.Add(clock)
-
-````
-
-{{endregion}} 
+ 
 
 
 The control has three important properties:
@@ -74,25 +63,10 @@ Now let's create a simple application.
 3\. In the code behind, set the __ShowSystemTime__ property of the first clock (assuming that your system time show the time in Sofia). 
 4\. For the rest of the clocks, set their __Offset__ properties to: *-2*, *-6*, *+7*:
         
-{{source=..\SamplesCS\Clock\ClockGettingStarted.cs region=gettingStarted}} 
-{{source=..\SamplesVB\Clock\ClockGettingStarted.vb region=gettingStarted}} 
+<snippet id='clock-getting-started-gettingstarted-cs'/>
+<snippet id='clock-getting-started-gettingstarted-vb'/>
 
-````C#
-sofiaClock.ShowSystemTime = true;
-londonClock.Offset = new TimeSpan(-2, 0, 0);
-newYorkClock.Offset = new TimeSpan(-6, 0, 0);
-tokyoClock.Offset = new TimeSpan(7, 0, 0);
-
-````
-````VB.NET
-sofiaClock.ShowSystemTime = True
-londonClock.Offset = New TimeSpan(-2, 0, 0)
-newYorkClock.Offset = New TimeSpan(7, 0, 0)
-tokyoClock.Offset = New TimeSpan(-6, 0, 0)
-
-````
-
-{{endregion}} 
+ 
 
 
 Here is the result:

@@ -15,19 +15,10 @@ __AllowedDockState__ property gives you the ability to determine the available d
 
 #### Allow two states only.
 
-{{source=..\SamplesCS\Dock\CreatingRadDock.cs region=allowedDockState}} 
-{{source=..\SamplesVB\Dock\CreatingRadDock.vb region=allowedDockState}} 
+<snippet id='dock-alloweddockstates-alloweddockstate-cs' />
+<snippet id='dock-alloweddockstates-alloweddockstate-vb' />
 
-````C#
-toolWindow1.AllowedDockState = AllowedDockState.Docked | AllowedDockState.Floating;
-
-````
-````VB.NET
-toolWindow1.AllowedDockState = AllowedDockState.Docked Or AllowedDockState.Floating
-
-````
-
-{{endregion}} 
+ 
  
 This automatically will remove the caption buttons that may be responsible for an unwanted state, for example *Closed*. In addition, the unwanted menu items from the context menu will be disabled:
 
@@ -37,19 +28,10 @@ The following setting will disable the __Floating__ option:
 
 #### Disable the floating dock state
 
-{{source=..\SamplesCS\Dock\CreatingRadDock.cs region=notFloating}} 
-{{source=..\SamplesVB\Dock\CreatingRadDock.vb region=notFloating}} 
+<snippet id='dock-alloweddockstates-notfloating-cs' />
+<snippet id='dock-alloweddockstates-notfloating-vb' />
 
-````C#
-toolWindow1.AllowedDockState = ~AllowedDockState.Floating;
-
-````
-````VB.NET
-toolWindow1.AllowedDockState = Not AllowedDockState.Floating
-
-````
-
-{{endregion}} 
+ 
 
 
 ![WinForms RadDock Disable the Floating Dock State](images/dock-object-model-allowed-dock-states002.png)

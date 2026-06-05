@@ -38,69 +38,10 @@ It is fired right after a group is already painted. It is appropriate if you nee
 
 >note If the **GroupPainting** is **Handled**, the **GroupPainted** and **ItemPainting** events wouldn't be fired. 
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=GroupPainting}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=GroupPainting}} 
+<snippet id='treemap-treemapgettingstarted-grouppainting-cs' />
+<snippet id='treemap-treemapgettingstarted-grouppainting-vb' />
 
-````C#
 
-private void RadTreeMap1_GroupPainting(object sender, TreeMapGroupPaintingEventArgs e)
-{
-    if (e.Group.Text == "Asia")
-    {
-        e.Handled = true;
-
-        e.Graphics.DrawString("Custom Header Text", itemsFont, Brushes.Red, e.HeaderRect);
-        Rectangle contentRectangle = new Rectangle(new Point(e.Bounds.X, e.HeaderRect.Bottom),
-            new Size(e.Bounds.Width, e.Bounds.Height - e.HeaderRect.Height));
-        e.Graphics.FillRectangle(Brushes.Yellow, contentRectangle);
-        e.Graphics.DrawString("No data", itemsFont, Brushes.Red,
-            new Point(contentRectangle.X + contentRectangle.Width / 3,
-            contentRectangle.Y + contentRectangle.Height / 2));
-
-    }
-}
-
-private void RadTreeMap1_GroupPainted(object sender, TreeMapGroupPaintedEventArgs e)
-{
-    if (e.Group.Text == "Europe")
-    {
-        Image img = new Bitmap(Properties.Resources.Paris, new Size(this.radTreeMap1.TreeMapElement.GroupHeaderHeight,
-            this.radTreeMap1.TreeMapElement.GroupHeaderHeight));
-        Point imageLocation = new Point(e.Bounds.X + e.Bounds.Width / 2 - img.Width, e.Bounds.Y);
-        e.Graphics.DrawImage(img, imageLocation);
-    }
-}
-    
-
-````
-````VB.NET
-
-Private Sub RadTreeMap1_GroupPainting(ByVal sender As Object, ByVal e As TreeMapGroupPaintingEventArgs)
-    If e.Group.Text = "Asia" Then
-        e.Handled = True
-        e.Graphics.DrawString("Custom Header Text", itemsFont, Brushes.Red, e.HeaderRect)
-        Dim contentRectangle As Rectangle = New Rectangle(New Point(e.Bounds.X, e.HeaderRect.Bottom),
-                                                          New Size(e.Bounds.Width, e.Bounds.Height - e.HeaderRect.Height))
-        e.Graphics.FillRectangle(Brushes.Yellow, contentRectangle)
-        e.Graphics.DrawString("No data", itemsFont, Brushes.Red,
-                              New Point(contentRectangle.X + contentRectangle.Width / 3,
-                                        contentRectangle.Y + contentRectangle.Height / 2))
-    End If
-End Sub
-
-Private Sub RadTreeMap1_GroupPainted(ByVal sender As Object, ByVal e As TreeMapGroupPaintedEventArgs)
-    If e.Group.Text = "Europe" Then
-        Dim img As Image = New Bitmap(My.Resources.Paris, New Size(Me.radTreeMap1.TreeMapElement.GroupHeaderHeight,
-                                                                   Me.radTreeMap1.TreeMapElement.GroupHeaderHeight))
-        Dim imageLocation As Point = New Point(e.Bounds.X + e.Bounds.Width / 2 - img.Width, e.Bounds.Y)
-        e.Graphics.DrawImage(img, imageLocation)
-    End If
-End Sub
- 
-
-````
-
-{{endregion}}
 
 ![WinForms RadTreeMap GroupPainted](images/customizing-appearance001.png)
 
@@ -130,69 +71,10 @@ It is fired right after an item is already painted. It is appropriate if you nee
 
 ![WinForms RadTreeMap ItemPainted](images/customizing-appearance002.png)
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=ItemPainting}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=ItemPainting}} 
+<snippet id='treemap-treemapgettingstarted-itempainting-cs' />
+<snippet id='treemap-treemapgettingstarted-itempainting-vb' />
 
-````C#
 
-Font itemsFont = new Font("Arial", 12f, FontStyle.Bold);
-private void RadTreeMap1_ItemPainting(object sender, TreeMapItemPaintingEventArgs e)
-{
-    e.Font = itemsFont;
-    if (e.Item.Text == "Paris")
-    {
-        e.ForeColor = Color.White;
-        e.TextAlignment = ContentAlignment.TopCenter;
-        e.BorderColor = Color.Red;
-    }
-    else
-    {
-        e.ForeColor = Color.Black;
-        e.TextAlignment = ContentAlignment.TopLeft;
-        e.BorderColor = Color.Transparent;
-    }
-}
-
-private void RadTreeMap1_ItemPainted(object sender, TreeMapItemPaintedEventArgs e)
-{
-    if (e.Item.Text == "Paris")
-    {
-        Image img = new Bitmap(Properties.Resources.Paris, new Size(100, 100));
-        Point imageLocation = new Point(e.Bounds.X + e.Bounds.Width / 2 - img.Width / 2, e.Bounds.Y + 20);
-        e.Graphics.DrawImage(img, imageLocation);
-    }
-}   
-
-````
-````VB.NET
-
-Private itemsFont As Font = New Font("Arial", 12.0F, FontStyle.Bold)
-
-Private Sub RadTreeMap1_ItemPainting(ByVal sender As Object, ByVal e As TreeMapItemPaintingEventArgs)
-    e.Font = itemsFont
-
-    If e.Item.Text = "Paris" Then
-        e.ForeColor = Color.White
-        e.TextAlignment = ContentAlignment.TopCenter
-        e.BorderColor = Color.Red
-    Else
-        e.ForeColor = Color.Black
-        e.TextAlignment = ContentAlignment.TopLeft
-        e.BorderColor = Color.Transparent
-    End If
-End Sub
-
-Private Sub RadTreeMap1_ItemPainted(ByVal sender As Object, ByVal e As TreeMapItemPaintedEventArgs)
-    If e.Item.Text = "Paris" Then
-        Dim img As Image = New Bitmap(My.Resources.Paris, New Size(100, 100))
-        Dim imageLocation As Point = New Point(e.Bounds.X + e.Bounds.Width / 2 - img.Width / 2, e.Bounds.Y + 20)
-        e.Graphics.DrawImage(img, imageLocation)
-    End If
-End Sub 
-
-````
-
-{{endregion}} 
 
 >note If the **ItemPainting** is **Handled**, the **ItemPainted** wouldn't be fired. 
 

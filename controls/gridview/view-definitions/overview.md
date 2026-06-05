@@ -15,19 +15,8 @@ You can change __RadGridView__ visual appearance and behavior by using a view 
 
 #### Assign ViewDefinition
 
-{{source=..\SamplesCS\GridView\ViewDefinitions\Overview.cs region=ViewDefinition}} 
-{{source=..\SamplesVB\GridView\ViewDefinitions\Overview.vb region=ViewDefinition}} 
-
-````C#
-this.radGridView1.ViewDefinition = myDefinition;
-
-````
-````VB.NET
-Me.RadGridView1.ViewDefinition = myDefinition
-
-````
-
-{{endregion}} 
+<snippet id='gridview-overview-viewdefinition-cs' />
+<snippet id='gridview-overview-viewdefinition-vb' />
 
 All view definitions implement the __IViewDefinition__ interface and you could create your own definitions, if you wish. Three different view definitions are currently included: 
 

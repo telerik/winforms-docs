@@ -22,53 +22,19 @@ The Overflow Grip can be used to increase/decrease the amount of currently visib
 
 As well as from the UI, the overflow grip can be used programmatically. To do so, you should access the methods exposed by the RadPageViewOutlookElement class by casting the RadPageView’s ViewElement property to RadPageViewOutlookElement. Then, you should call the corresponding methods as the code snippet below demonstrates:
 
-{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingGrip}} 
-{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}} 
+<snippet id='pageview-outlookview-programminggrip-cs' />
+<snippet id='pageview-outlookview-programminggrip-vb' />
 
-````C#
-RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
-//Drags the sizing grip one item down.
-outlookElement.DragGripDown();
-//Drags the sizing grip one item up.
-outlookElement.DragGripUp();
 
-````
-````VB.NET
-Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
-'Drags the sizing grip one item down.
-outlookElement.DragGripDown()
-'Drags the sizing grip one item up.
-outlookElement.DragGripUp()
-
-````
-
-{{endregion}} 
 
 You can also use the **HideItems**/**ShowItems** methods to specify how many items will be hidden/shown at once:
 
 #### Showing/Hiding items
 
-{{source=..\SamplesCS\PageView\OutlookView.cs region=programmingItems}} 
-{{source=..\SamplesVB\PageView\OutlookView.vb region=programmingGrip}} 
+<snippet id='pageview-outlookview-programmingitems-cs' />
+<snippet id='pageview-outlookview-programminggrip-vb' />
 
-````C#
-RadPageViewOutlookElement outlookElement = this.radPageView1.ViewElement as RadPageViewOutlookElement;
-//Drags the sizing grip three items down.
-outlookElement.HideItems(3);
-//Drags the sizing grip two items up.
-outlookElement.ShowItems(2);
 
-````
-````VB.NET
-Dim outlookElement As RadPageViewOutlookElement = TryCast(Me.radPageView1.ViewElement, RadPageViewOutlookElement)
-'Drags the sizing grip one item down.
-outlookElement.DragGripDown()
-'Drags the sizing grip one item up.
-outlookElement.DragGripUp()
-
-````
-
-{{endregion}} 
 
 When items are hidden by using the overflow grip, they appear as a strip of buttons on the overflow panel below the stack:
 

@@ -52,32 +52,10 @@ Using Telerik scroll bars is a bit more intricate compared to using the standard
 
 #### Adding controls to the panel
 
-{{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=buttons}} 
-{{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=buttons}} 
+<snippet id='track-and-status-controls-scrollgettingstarted-buttons-cs' />
+<snippet id='track-and-status-controls-scrollgettingstarted-buttons-vb' />
 
-````C#
-for (int i = 1; i < 15; i++)
-{
-    RadButton button = new RadButton();
-    button.Location = new Point(30, i * 30 + 5 * i);
-    button.Size = new Size(70, 30);
-    button.Text = "RadButton" + i.ToString();
-    this.radPanel2.Controls.Add(button);
-}
 
-````
-````VB.NET
-For i As Integer = 1 To 14
-    Dim button As New RadButton()
-    button.Location = New Point(30, i * 30 + 5 * i)
-    button.Size = New Size(70, 30)
-    button.Text = "RadButton" & i.ToString()
-    Me.RadPanel2.Controls.Add(button)
-Next i
-
-````
-
-{{endregion}} 
 
 >note You can add controls by drag and drop at design time as well.
 >
@@ -88,42 +66,19 @@ Next i
 
 #### Handling the Scroll event
 
-{{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=scroll}} 
-{{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=scroll}} 
+<snippet id='track-and-status-controls-scrollgettingstarted-scroll-cs' />
+<snippet id='track-and-status-controls-scrollgettingstarted-scroll-vb' />
 
-````C#
-void radVScrollBar1_Scroll(object sender, ScrollEventArgs e)
-{
-    this.radPanel2.Top = -this.radVScrollBar1.Value;
-}
 
-````
-````VB.NET
-Private Sub radVScrollBar1_Scroll(ByVal sender As Object, ByVal e As ScrollEventArgs)
-    Me.RadPanel2.Top = -Me.RadVScrollBar1.Value
-End Sub
-
-````
-
-{{endregion}} 
 
 6\. The last required step is to set the __Maximum__ property of the scroll bar to reflect the size of the __scrollable height__ which is the __total height__ of the scrollable content minus the __visible height__. For the example of this section in particular, that is the height of the second panel minus the height of the first panel.
 
 #### Specify RadVScrollBar's maximum
 
-{{source=..\SamplesCS\TrackAndStatus\ScrollBar\ScrollGettingStarted.cs region=maximum}} 
-{{source=..\SamplesVB\TrackAndStatus\ScrollBar\ScrollGettingStarted.vb region=maximum}} 
+<snippet id='track-and-status-controls-scrollgettingstarted-maximum-cs' />
+<snippet id='track-and-status-controls-scrollgettingstarted-maximum-vb' />
 
-````C#
-this.radVScrollBar1.Maximum = this.radPanel2.Size.Height - this.radPanel1.Size.Height;
 
-````
-````VB.NET
-Me.RadVScrollBar1.Maximum = Me.RadPanel2.Size.Height - Me.RadPanel1.Size.Height
-
-````
-
-{{endregion}} 
 
 ![WinForms RadScrollBar Scroll Controls](images/track-and-status-controls-scroll-bar-getting-started005.png)
 

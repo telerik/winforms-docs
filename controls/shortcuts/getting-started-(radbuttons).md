@@ -15,8 +15,8 @@ As stated in the [Overview]({%slug winforms/shortcuts%}) article, **RadShortcuts
 
 #### Assigning shortcuts
 
-{{source=..\SamplesCS\Shortcuts\Form2.cs region=buttonsShortcuts}} 
-{{source=..\SamplesVB\Shortcuts\Form2.vb region=buttonsShortcuts}} 
+<snippet id='menus-form2-buttonsshortcuts-cs' />
+<snippet id='menus-form2-buttonsshortcuts-vb' />
 
 ````C#
 this.radButton1.ButtonElement.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.B));
@@ -32,8 +32,6 @@ Me.RadSplitButton1.DropDownButtonElement.Shortcuts.Add(New RadShortcut(Keys.Cont
 Me.RadToggleButton1.ButtonElement.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.T))
 
 ````
-
-{{endregion}} 
 
 # See Also
 

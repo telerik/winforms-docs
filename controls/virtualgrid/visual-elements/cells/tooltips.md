@@ -18,33 +18,10 @@ There are two ways to assign tooltips to cells in __RadVirtualGrid__, namely set
 The code snippet below demonstrates how you can use the __ToolTipTextNeeded__ event handler to set __ToolTipText__ for the given __VirtualGridCellElement__.
 
 ![WinForms RadVirtualGrid Setting tooltips in the ToolTipTextNeeded event](images/virtualgrid-cells-tooltips002.png)
-{{source=..\SamplesCS\VirtualGrid\Cells\VirtualGridFormattingCells.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridFormattingCells.vb region=ToolTipTextNeeded}}
+<snippet id='virtualgrid-virtualgridformattingcells-tooltiptextneeded-cs' />
+<snippet id='virtualgrid-virtualgridformattingcells-tooltiptextneeded-vb' />
 
 
-````C#
-        
-private void radVirtualGrid1_ToolTipTextNeeded(object sender, ToolTipTextNeededEventArgs e)
-{
-    VirtualGridCellElement virtualCell = sender as VirtualGridCellElement;
-    if (virtualCell != null)
-    {
-        e.ToolTipText = "Tooltip: " + virtualCell.Value + "";
-    }
-}
-
-````
-````VB.NET
-Private Sub radVirtualGrid1_ToolTipTextNeeded(sender As Object, e As ToolTipTextNeededEventArgs)
-    Dim virtualCell As VirtualGridCellElement = TryCast(sender, VirtualGridCellElement)
-    If virtualCell IsNot Nothing Then
-        e.ToolTipText = "Tooltip: " + virtualCell.Value + ""
-    End If
-End Sub
-
-```` 
-
-{{endregion}}
 
 # Setting tooltips in the CellFormatting event handler  
 
@@ -52,31 +29,10 @@ The code snippet below demonstrates how you can assign a tooltip to a cell in __
 
 ![WinForms RadVirtualGrid Setting tooltips in the CellFormatting event handler](images/virtualgrid-cells-tooltips001.png)
 
-{{source=..\SamplesCS\VirtualGrid\Cells\VirtualGridFormattingCells.cs region=CellsTooltips}} 
-{{source=..\SamplesVB\VirtualGrid\Cells\VirtualGridFormattingCells.vb region=CellsTooltips}}
+<snippet id='virtualgrid-virtualgridformattingcells-cellstooltips-cs' />
+<snippet id='virtualgrid-virtualgridformattingcells-cellstooltips-vb' />
 
 
-````C#
-        
-private void radVirtualGrid1Tooltips_CellFormatting(object sender, VirtualGridCellElementEventArgs e)
-{
-    if (e.CellElement.RowIndex >= 0)
-    {
-        e.CellElement.ToolTipText = e.CellElement.Value + "";
-    }
-}
-
-````
-````VB.NET
-Private Sub radVirtualGrid1Tooltips_CellFormatting(sender As Object, e As VirtualGridCellElementEventArgs)
-    If e.CellElement.RowIndex >= 0 Then
-        e.CellElement.ToolTipText = e.CellElement.Value + ""
-    End If
-End Sub
-
-```` 
-
-{{endregion}}
 
 >note The __ToolTipTextNeeded__ event has higher priority and overrides the tooltips set in the __CellFormatting__ event handler.
 

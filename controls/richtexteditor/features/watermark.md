@@ -36,69 +36,26 @@ There are two types of watermarks - text and image. Both of them are shown behin
 
 There is also a set of predefined textual watermarks - the most commonly used ones like ASAP, Urgent, Confidential, etc., that can be easily set in the following way:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=set}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=set}} 
+<snippet id='richtexteditor-watermark-set-cs' />
+<snippet id='richtexteditor-watermark-set-vb' />
 
-````C#
-this.radRichTextEditor1.SetWatermark(PredefinedWatermarkType.Confidential);
 
-````
-````VB.NET
-Me.radRichTextEditor1.SetWatermark(PredefinedWatermarkType.Confidential)
-
-````
-
-{{endregion}} 
 
 You can create custom watermarks using the __WatermarkTextSettings__ and __WatermarkImageSettings__ classes and the respective methods of __RadRichTextEditor__ - __SetWatermarkText()__ and __SetWatermarkImage()__.
         
 The following example demonstrates how to create a text watermark and apply it to the document in the editor:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=settings}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=settings}} 
+<snippet id='richtexteditor-watermark-settings-cs' />
+<snippet id='richtexteditor-watermark-settings-vb' />
 
-````C#
-WatermarkTextSettings textSettings = new WatermarkTextSettings();
-textSettings.Text = "Purple Watermark";
-textSettings.RotateAngle = 30;
-textSettings.Opacity = 1;
-textSettings.ForegroundColor = Colors.Purple;
-this.radRichTextEditor1.SetWatermarkText(textSettings);
 
-````
-````VB.NET
-Dim textSettings As New WatermarkTextSettings()
-textSettings.Text = "Purple Watermark"
-textSettings.RotateAngle = 30
-textSettings.Opacity = 1
-textSettings.ForegroundColor = Colors.Purple
-Me.radRichTextEditor1.SetWatermarkText(textSettings)
-
-````
-
-{{endregion}} 
 
 And this is how you create an image watermark and apply it: 
 
-{{source=..\SamplesCS\RichTextEditor\Features\Watermark.cs region=image}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Watermark.vb region=image}} 
+<snippet id='richtexteditor-watermark-image-cs' />
+<snippet id='richtexteditor-watermark-image-vb' />
 
-````C#
-WatermarkImageSettings imageSettings = new WatermarkImageSettings();
-imageSettings.UriSource = uri;
-imageSettings.Size = new Size(500, 665);
-this.radRichTextEditor1.SetWatermarkImage(imageSettings);
 
-````
-````VB.NET
-Dim imageSettings As New WatermarkImageSettings()
-imageSettings.UriSource = uri
-imageSettings.Size = New Size(500, 665)
-Me.radRichTextEditor1.SetWatermarkImage(imageSettings)
-
-````
-
-{{endregion}} 
 
 # See Also
 

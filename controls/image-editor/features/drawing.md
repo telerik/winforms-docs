@@ -34,22 +34,10 @@ To draw text click the button and the __DrawText__ dialog will be shown. In it y
 
 The following snippet shows how you can add text using the RadImageEditor API.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=DrawText}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=DrawText}}
-````C#
-radImageEditor1.ImageEditorElement.DrawString("Test", 12, Color.Red, 200, 200, 120);
-radImageEditor1.ImageEditorElement.SaveState();
-
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.DrawString("Test", 12, Color.Red, 200, 200, 120)
-radImageEditor1.ImageEditorElement.SaveState()
-
-````
+<snippet id='image-editor-imageeditorfeatures-drawtext-cs' />
+<snippet id='image-editor-imageeditorfeatures-drawtext-vb' />
 
 
-
-{{endregion}}
 
 ## Draw Shape
 
@@ -77,28 +65,10 @@ The currently supported shapes are:
 
 To draw a shape in the code behind you need to provide a path. The bellow code demonstrates how you ca create a RoundRectShape: 
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=DrawShape}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=DrawShape}}
-````C#
-RoundRectShape shape = new RoundRectShape();
-Rectangle rect = new Rectangle(0, 0, 100, 100);
-var path = shape.CreatePath(rect);
-radImageEditor1.ImageEditorElement.DrawShape(path, Color.Red, Color.Green, 3);
-radImageEditor1.ImageEditorElement.SaveState();
-
-````
-````VB.NET
-Dim shape As New RoundRectShape()
-Dim rect As New Rectangle(0, 0, 100, 100)
-Dim path = shape.CreatePath(rect)
-radImageEditor1.ImageEditorElement.DrawShape(path, Color.Red, Color.Green, 3)
-radImageEditor1.ImageEditorElement.SaveState()
-
-````
+<snippet id='image-editor-imageeditorfeatures-drawshape-cs' />
+<snippet id='image-editor-imageeditorfeatures-drawshape-vb' />
 
 
-
-{{endregion}}
 
 ## Draw with a Pen
 

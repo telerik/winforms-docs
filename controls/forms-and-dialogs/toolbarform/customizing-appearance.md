@@ -20,25 +20,10 @@ You can access and modify the style for the different elements in the **RadToolb
 
 The following example demonstrates how you can access the **CaptionFill** and change its back color.
 
-{{source=..\SamplesCS\Forms and Dialogs\RadToolbarForm1.cs region=CustomizeStyle}} 
-{{source=..\SamplesVB\Forms and Dialogs\RadToolbarForm1.vb region=CustomizeStyle}}
+<snippet id='toolbarform-radtoolbarform1-customizestyle-cs' />
+<snippet id='toolbarform-radtoolbarform1-customizestyle-vb' />
 
-````C#
-
-this.ToolbarFormControl.ToolbarFormControlElement.CaptionFill.BackColor = Color.Red;
-this.ToolbarFormControl.ToolbarFormControlElement.CaptionFill.GradientStyle = GradientStyles.Solid;
-this.ToolbarFormControl.ToolbarFormControlElement.CaptionTextElement.ForeColor = Color.White;
-
-````
-````VB.NET
-
-Me.ToolbarFormControl.ToolbarFormControlElement.CaptionFill.BackColor = Color.Red
-Me.ToolbarFormControl.ToolbarFormControlElement.CaptionFill.GradientStyle = GradientStyles.Solid
-Me.ToolbarFormControl.ToolbarFormControlElement.CaptionTextElement.ForeColor = Color.White
-
-```` 
-
-{{endregion}} 
+ 
 
 ![WinForms RadToolbarForm Change CaptionFill](images/toolbarform-customizing-appearance002.png)
 

@@ -19,41 +19,18 @@ RadTaskbarButton exposes Microsoft API to set tooltip text on its thumbnail prev
 
 To set a ToolTip on the thumbnail preview part of the control, you can use the __ThumbnailTooltip__ property of __RadTaskbarButton__.
 
-{{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=ThumbnailTooltip}} 
-{{source=..\SamplesVB\TaskbarButton\TaskbarButtonGettingStarted.vb region=ThumbnailTooltip}}
+<snippet id='taskbar-button-taskbarbuttongettingstarted-thumbnailtooltip-cs' />
+<snippet id='taskbar-button-taskbarbuttongettingstarted-thumbnailtooltip-vb' />
 
-````C#
 
-this.radTaskbarButton1.ThumbnailTooltip = "My RadTaskbar Button ToolTip";
 
-````
-````VB.NET
-
-Me.RadTaskbarButton1.ThumbnailTooltip = "My RadTaskbar Button ToolTip"
-
-````
-
-{{endregion}}
- 
- 
 To set ToolTip to the thumbnail buttons, you can directly use their **ToolTip** property.
 
-{{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=ThumbnailButtonTooltip}} 
-{{source=..\SamplesVB\TaskbarButton\TaskbarButtonGettingStarted.vb region=ThumbnailButtonTooltip}}
+<snippet id='taskbar-button-taskbarbuttongettingstarted-thumbnailbuttontooltip-cs' />
+<snippet id='taskbar-button-taskbarbuttongettingstarted-thumbnailbuttontooltip-vb' />
 
-````C#
 
-this.radTaskbarButton1.ThumbnailButtons[1].ToolTip = "Telerik WinForms";
 
-````
-````VB.NET
-
-Me.RadTaskbarButton1.ThumbnailButtons[1].ToolTip = "Telerik WinForms"
-
-````
-
-{{endregion}} 
- 
 ## See Also
 
 * [Getting Started]({%slug taskbar-button-getting-started%})

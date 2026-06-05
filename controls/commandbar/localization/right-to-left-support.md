@@ -17,20 +17,10 @@ previous_url: commandbar-localization-rtl
 
 You can present the content of your commandbar instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*: 
 
-{{source=..\SamplesCS\CommandBar\FloatingStrips.cs region=rtl}} 
-{{source=..\SamplesVB\CommandBar\FloatingStrips.vb region=rtl}} 
+<snippet id='commandbar-right-to-left-support-rtl-cs'/>
+<snippet id='commandbar-right-to-left-support-rtl-vb'/>
 
-````C#
-            
-this.radCommandBar1.RightToLeft = RightToLeft.Yes;
-
-````
-````VB.NET
-Me.RadCommandBar1.RightToLeft = Windows.Forms.RightToLeft.Yes
-
-````
-
-{{endregion}} 
+ 
 
 
 ![WinForms RadCommandBar Right-to-Left Support](images/commandbar-localization-right-to-left-support001.png)

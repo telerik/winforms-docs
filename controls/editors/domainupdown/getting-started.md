@@ -87,9 +87,6 @@ End Sub
 
 
 ````
-
-{{endregion}} 
-
 This is it! Now the change in the selection of the **RadDomainUpDown** instance will be reflected on **RadStatusStrip**.
 
 ## See Also

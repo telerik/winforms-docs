@@ -52,21 +52,10 @@ Another way of customizing the content area is in code. The following code snipp
 
 #### Accessing the content area of Backstage View
 
-{{source=..\SamplesCS\PageView\BackstageView.cs region=contentArea}} 
-{{source=..\SamplesVB\PageView\BackstageView.vb region=contentArea}} 
+<snippet id='pageview-backstageview-contentarea-cs' />
+<snippet id='pageview-backstageview-contentarea-vb' />
 
-````C#
-RadPageViewBackstageElement backStageElement = radPageView1.ViewElement as RadPageViewBackstageElement;
-backStageElement.ContentArea.BackColor = Color.Yellow;
 
-````
-````VB.NET
-Dim backStageElement As RadPageViewBackstageElement = TryCast(RadPageView1.ViewElement, RadPageViewBackstageElement)
-backStageElement.ContentArea.BackColor = Color.Yellow
-
-````
-
-{{endregion}} 
 
 ## Customizing the items (RadPageViewPages) area
 
@@ -78,23 +67,10 @@ Use the following code snippet to access the element in code:
 
 #### Accessing the content area of Backstage View
 
-{{source=..\SamplesCS\PageView\BackstageView.cs region=itemsArea}} 
-{{source=..\SamplesVB\PageView\BackstageView.vb region=itemsArea}} 
+<snippet id='pageview-backstageview-itemsarea-cs' />
+<snippet id='pageview-backstageview-itemsarea-vb' />
 
-````C#
-RadPageViewBackstageElement backStageElement = radPageView1.ViewElement as RadPageViewBackstageElement;
-StripViewItemLayout itemLayout = backStageElement.ItemContainer.ItemLayout as StripViewItemLayout;
-itemLayout.BackColor = Color.Red;
 
-````
-````VB.NET
-Dim backStageElement As RadPageViewBackstageElement = TryCast(RadPageView1.ViewElement, RadPageViewBackstageElement)
-Dim itemLayout As StripViewItemLayout = TryCast(backStageElement.ItemContainer.ItemLayout, StripViewItemLayout)
-itemLayout.BackColor = Color.Red
-
-````
-
-{{endregion}} 
 
 ## Customizing the buttons area
 
@@ -108,27 +84,10 @@ The buttons panel can be accessed from the **ItemsContaier** of the **RadPageVie
 
 #### Accessing the content area of Backstage View
 
-{{source=..\SamplesCS\PageView\BackstageView.cs region=buttonsArea}} 
-{{source=..\SamplesVB\PageView\BackstageView.vb region=buttonsArea}} 
+<snippet id='pageview-backstageview-buttonsarea-cs' />
+<snippet id='pageview-backstageview-buttonsarea-vb' />
 
-````C#
-RadPageViewBackstageElement backStageElement = radPageView1.ViewElement as RadPageViewBackstageElement;
-StripViewButtonsPanel buttonsPanel = backStageElement.ItemContainer.ButtonsPanel as StripViewButtonsPanel;
-buttonsPanel.Visibility = ElementVisibility.Visible;
-buttonsPanel.DrawFill = true;
-buttonsPanel.BackColor = Color.Green;
 
-````
-````VB.NET
-Dim backStageElement As RadPageViewBackstageElement = TryCast(RadPageView1.ViewElement, RadPageViewBackstageElement)
-Dim buttonsPanel As StripViewButtonsPanel = TryCast(backStageElement.ItemContainer.ButtonsPanel, StripViewButtonsPanel)
-buttonsPanel.Visibility = ElementVisibility.Visible
-buttonsPanel.DrawFill = True
-buttonsPanel.BackColor = Color.Green
-
-````
-
-{{endregion}} 
 
 ## Customizing RadPageViewItems
 
@@ -172,43 +131,9 @@ The following code snippet demonstrates how to access and customize the group it
 
 #### Accessing the content area of Backstage View
 
-{{source=..\SamplesCS\PageView\BackstageView.cs region=groupItems}} 
-{{source=..\SamplesVB\PageView\BackstageView.vb region=groupItems}} 
+<snippet id='pageview-backstageview-groupitems-cs' />
+<snippet id='pageview-backstageview-groupitems-vb' />
 
-````C#
-RadPageViewBackstageElement backStageElement = radPageView1.ViewElement as RadPageViewBackstageElement;
-StripViewItemLayout itemLayout = backStageElement.ItemContainer.ItemLayout as StripViewItemLayout;
-foreach (RadPageViewStripItem item in itemLayout.Children)
-{
-    RadPageViewStripGroupItem groupItem = item as RadPageViewStripGroupItem;
-    if (groupItem != null)
-    {
-        groupItem.BackColor = Color.Yellow;
-        groupItem.NumberOfColors = 1;
-        LightVisualElement underlineElement = ((LightVisualElement)groupItem.Children[1]);
-        underlineElement.BorderBottomColor = Color.Blue;
-        underlineElement.BorderTopColor = Color.Red;
-    }
-}
-
-````
-````VB.NET
-Dim backStageElement As RadPageViewBackstageElement = TryCast(RadPageView1.ViewElement, RadPageViewBackstageElement)
-Dim itemLayout As StripViewItemLayout = TryCast(backStageElement.ItemContainer.ItemLayout, StripViewItemLayout)
-For Each item As RadPageViewStripItem In itemLayout.Children
-    Dim groupItem = TryCast(item, RadPageViewStripGroupItem)
-    If groupItem IsNot Nothing Then
-        groupItem.BackColor = Color.Yellow
-        groupItem.NumberOfColors = 1
-        Dim underlineElement = TryCast(groupItem.Children(1), LightVisualElement)
-        underlineElement.BorderBottomColor = Color.Blue
-        underlineElement.BorderTopColor = Color.Red
-    End If
-Next
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadPageView Backstage ContentArea](images/pageview-backstageview-customizing-backstageview014.png)

@@ -28,65 +28,10 @@ The example below creates a layer with four __MapPin__ elements and defines clus
 
 #### Add Layer and Data
 
-{{source=..\SamplesCS\Map\ClusterizationForm.cs region=SetupLayersAndData}} 
-{{source=..\SamplesVB\Map\ClusterizationForm.vb region=SetupLayersAndData}}
-````C#
-private void SetupLayers()
-{
-    MapLayer easternLayer = new MapLayer("CitiesLayer");
-    this.radMap1.Layers.Add(easternLayer);
-}
-    
-private void SetupData()
-{
-    MapPin element = new MapPin(new PointG(40.4467648, -80.01576030));
-    element.Text = "Pittsburgh";
-    element.BackColor = Color.Red;
-    this.radMap1.Layers["CitiesLayer"].Add(element);
-    element = new MapPin(new PointG(40.8130697, -74.07439790));
-    element.Text = "New York";
-    element.BackColor = Color.Green;
-    this.radMap1.Layers["CitiesLayer"].Add(element);
-    element = new MapPin(new PointG(42.3665137, -71.06160420));
-    element.Text = "Boston";
-    element.BackColor = Color.Blue;
-    this.radMap1.Layers["CitiesLayer"].Add(element);
-    element = new MapPin(new PointG(43.6434661, -79.37909890));
-    element.Text = "Toronto";
-    element.BackColor = Color.Yellow;
-    this.radMap1.Layers["CitiesLayer"].Add(element);
-}
-
-````
-````VB.NET
-Private Sub SetupLayers()
-    Dim easternLayer As New MapLayer("CitiesLayer")
-    Me.RadMap1.Layers.Add(easternLayer)
-End Sub
-Private Sub SetupData()
-    Dim element As New MapPin(New PointG(40.4467648, -80.0157603))
-    element.Text = "Pittsburgh"
-    element.BackColor = Color.Red
-    Me.RadMap1.Layers("CitiesLayer").Add(element)
-    element = New MapPin(New PointG(40.8130697, -74.0743979))
-    element.Text = "New York"
-    element.BackColor = Color.Green
-    Me.RadMap1.Layers("CitiesLayer").Add(element)
-    element = New MapPin(New PointG(42.3665137, -71.0616042))
-    element.Text = "Boston"
-    element.BackColor = Color.Blue
-    Me.RadMap1.Layers("CitiesLayer").Add(element)
-    element = New MapPin(New PointG(43.6434661, -79.3790989))
-    element.Text = "Toronto"
-    element.BackColor = Color.Yellow
-    Me.RadMap1.Layers("CitiesLayer").Add(element)
-End Sub
-
-````
+<snippet id='map-clusterizationform-setuplayersanddata-cs' />
+<snippet id='map-clusterizationform-setuplayersanddata-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 2: Initial Result
 
@@ -94,27 +39,10 @@ End Sub
 
 #### ElementClusterStrategy
 
-{{source=..\SamplesCS\Map\ClusterizationForm.cs region=ElementClusterStrategy}} 
-{{source=..\SamplesVB\Map\ClusterizationForm.vb region=ElementClusterStrategy}}
-````C#
-private void SetElementCluster()
-{
-    this.radMap1.Layers[0].ClusterStrategy = new ElementClusterStrategy();
-    this.radMap1.Layers["CitiesLayer"].ClusterDistance = 200;
-}
-
-````
-````VB.NET
-Private Sub SetElementCluster()
-    Me.RadMap1.Layers(0).ClusterStrategy = New ElementClusterStrategy()
-    Me.RadMap1.Layers("CitiesLayer").ClusterDistance = 200
-End Sub
-
-````
+<snippet id='map-clusterizationform-elementclusterstrategy-cs' />
+<snippet id='map-clusterizationform-elementclusterstrategy-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 3: ElementClusterStrategy
 
@@ -122,27 +50,10 @@ End Sub
 
 #### DistanceClusterStrategy
 
-{{source=..\SamplesCS\Map\ClusterizationForm.cs region=DistanceClusterStrategy}} 
-{{source=..\SamplesVB\Map\ClusterizationForm.vb region=DistanceClusterStrategy}}
-````C#
-private void DistanceElementCluster()
-{
-    this.radMap1.Layers[0].ClusterStrategy = new DistanceClusterStrategy();
-    this.radMap1.Layers["CitiesLayer"].ClusterDistance = 200;
-}
-
-````
-````VB.NET
-Private Sub SetDistanceCluster()
-    Me.RadMap1.Layers(0).ClusterStrategy = New DistanceClusterStrategy()
-    Me.RadMap1.Layers("CitiesLayer").ClusterDistance = 200
-End Sub
-
-````
+<snippet id='map-clusterizationform-distanceclusterstrategy-cs' />
+<snippet id='map-clusterizationform-distanceclusterstrategy-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 4: DistanceClusterStrategy
 

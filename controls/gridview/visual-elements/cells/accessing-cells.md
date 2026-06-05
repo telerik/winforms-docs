@@ -24,22 +24,10 @@ Cells can be accessed by index or the column __Name__ property.
 
 In this example we will change a cell value to 10 if it is greater than 10. In this case we assume that there is a "UnitPrice" column and we modify the cell in its first row.
 
-{{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=accessingCellsByColumnName}} 
-{{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=accessingCellsByColumnName}} 
+<snippet id='gridview-accessingcells-accessingcellsbycolumnname-cs' />
+<snippet id='gridview-accessingcells-accessingcellsbycolumnname-vb' />
 
-````C#
-if ((decimal)radGridView1.Rows[0].Cells["UnitPrice"].Value > 10)
-    radGridView1.Rows[0].Cells["UnitPrice"].Value = 10;
 
-````
-````VB.NET
-If DirectCast(RadGridView1.Rows(0).Cells("UnitPrice").Value, Decimal) > 10 Then
-    RadGridView1.Rows(0).Cells("UnitPrice").Value = 10
-End If
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Before setting the value.
 
@@ -53,53 +41,19 @@ End If
 
 The example below modifies the second cell of the first row and sets a value greater than 10 back to 10.
 
-{{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=accessingCellsByIndex}} 
-{{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=accessingCellsByIndex}} 
+<snippet id='gridview-accessingcells-accessingcellsbyindex-cs' />
+<snippet id='gridview-accessingcells-accessingcellsbyindex-vb' />
 
-````C#
-if ((decimal)radGridView1.Rows[0].Cells[5].Value > 10)
-    radGridView1.Rows[0].Cells[5].Value = 10;
-
-````
-````VB.NET
-If DirectCast(RadGridView1.Rows(0).Cells(5).Value, Decimal) > 10 Then
-    RadGridView1.Rows(0).Cells(5).Value = 10
-End If
-
-````
-
-{{endregion}} 
 
 
 ## Multiple assignments of cell values
 
 When assigning values to several cells subsequently, the __RadGridView__ should be placed between __BeginUpdate__ and __EndUpdate__ method invocations of the desired template. This way of setting multiple assignments is recommended for performance considerations. For example if you have added a sorting descriptor to __RadGridView__ and you enter/modify five cell values without using these methods, the sorting mechanism will recreate the whole grid five times, which will slow it down. On the other hand if this is done between the suggested methods, the sorting mechanism will run only once, right after calling __EndUpdate__ method. 
 
-{{source=..\SamplesCS\GridView\Cells\AccessingCells.cs region=updateCells}} 
-{{source=..\SamplesVB\GridView\Cells\AccessingCells.vb region=updateCells}} 
+<snippet id='gridview-accessingcells-updatecells-cs' />
+<snippet id='gridview-accessingcells-updatecells-vb' />
 
-````C#
-radGridView1.TableElement.BeginUpdate();
-radGridView1.Rows[0].Cells["UnitPrice"].Value = 10;
-radGridView1.Rows[1].Cells["UnitPrice"].Value = 20;
-radGridView1.Rows[2].Cells["UnitPrice"].Value = 30;
-radGridView1.Rows[3].Cells["UnitPrice"].Value = 40;
-radGridView1.Rows[4].Cells["UnitPrice"].Value = 50;
-radGridView1.TableElement.EndUpdate();
 
-````
-````VB.NET
-Me.RadGridView1.TableElement.BeginUpdate()
-RadGridView1.Rows(0).Cells("UnitPrice").Value = 10
-RadGridView1.Rows(1).Cells("UnitPrice").Value = 20
-RadGridView1.Rows(2).Cells("UnitPrice").Value = 30
-RadGridView1.Rows(3).Cells("UnitPrice").Value = 40
-RadGridView1.Rows(4).Cells("UnitPrice").Value = 50
-Me.RadGridView1.TableElement.EndUpdate()
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: Setting multiple values.
 

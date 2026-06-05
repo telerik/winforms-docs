@@ -21,19 +21,10 @@ __RadDock__ exposes several properties which allow you to have full control over
 
 #### Setting DocumentTabsAlignment to Left 
 
-{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=documentTabsAlignment}} 
-{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=documentTabsAlignment}} 
+<snippet id='dock-tabs-and-captions-documenttabsalignment-cs' />
+<snippet id='dock-tabs-and-captions-documenttabsalignment-vb' />
 
-````C#
-this.radDock1.DocumentTabsAlignment = TabStripAlignment.Left;
-
-````
-````VB.NET
-Me.RadDock1.DocumentTabsAlignment = TabStripAlignment.Left
-
-````
-
-{{endregion}} 
+ 
 
 
 ![WinForms RadDock Left DocumentTabsAlignment](images/dock-object-model-tabs-and-captions001.png)
@@ -42,19 +33,10 @@ Me.RadDock1.DocumentTabsAlignment = TabStripAlignment.Left
 
 #### Hiding the document tabs 
 
-{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=documentTabsVisible}} 
-{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=documentTabsVisible}} 
+<snippet id='dock-tabs-and-captions-documenttabsvisible-cs' />
+<snippet id='dock-tabs-and-captions-documenttabsvisible-vb' />
 
-````C#
-this.radDock1.DocumentTabsVisible = false;
-
-````
-````VB.NET
-Me.RadDock1.DocumentTabsVisible = False
-
-````
-
-{{endregion}} 
+ 
 
 
 ![WinForms RadDock Hiding Document Tabs](images/dock-object-model-tabs-and-captions002.png)
@@ -63,19 +45,10 @@ Me.RadDock1.DocumentTabsVisible = False
 
 #### Setting the ToolTabsAlignment to Right 
 
-{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=toolTabsAlignment}} 
-{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=toolTabsAlignment}} 
+<snippet id='dock-tabs-and-captions-tooltabsalignment-cs' />
+<snippet id='dock-tabs-and-captions-tooltabsalignment-vb' />
 
-````C#
-this.radDock1.ToolTabsAlignment = TabStripAlignment.Right;
-
-````
-````VB.NET
-Me.RadDock1.ToolTabsAlignment = TabStripAlignment.Right
-
-````
-
-{{endregion}} 
+ 
 
 
 ![WinForms RadDock ToolTabsAlignment Right](images/dock-object-model-tabs-and-captions003.png)
@@ -84,19 +57,10 @@ Me.RadDock1.ToolTabsAlignment = TabStripAlignment.Right
 
 #### Hiding the tool tabs 
 
-{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=toolTabsVisible}} 
-{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=toolTabsVisible}} 
+<snippet id='dock-tabs-and-captions-tooltabsvisible-cs' />
+<snippet id='dock-tabs-and-captions-tooltabsvisible-vb' />
 
-````C#
-this.radDock1.ToolTabsVisible = false;
-
-````
-````VB.NET
-Me.RadDock1.ToolTabsVisible = False
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadDock Hiding Tool Tabs](images/dock-object-model-tabs-and-captions004.png)
 
@@ -104,19 +68,10 @@ Me.RadDock1.ToolTabsVisible = False
 
 #### Hiding the caption of ToolTabStrip 
 
-{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=captionVisible}} 
-{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=captionVisible}} 
+<snippet id='dock-tabs-and-captions-captionvisible-cs' />
+<snippet id='dock-tabs-and-captions-captionvisible-vb' />
 
-````C#
-this.toolTabStrip1.CaptionVisible = false;
-
-````
-````VB.NET
-Me.ToolTabStrip1.CaptionVisible = False
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadDock Hinding Caption ToolTabStrip](images/dock-object-model-tabs-and-captions005.png)
 
@@ -124,21 +79,10 @@ Me.ToolTabStrip1.CaptionVisible = False
 
 #### Showing close buttons 
 
-{{source=..\SamplesCS\Dock\TabsAndCaptions.cs region=showToolCloseButton}} 
-{{source=..\SamplesVB\Dock\TabsAndCaptions.vb region=showToolCloseButton}} 
+<snippet id='dock-tabs-and-captions-showtoolclosebutton-cs' />
+<snippet id='dock-tabs-and-captions-showtoolclosebutton-vb' />
 
-````C#
-this.radDock1.ShowToolCloseButton = true;
-this.radDock1.ShowDocumentCloseButton = true;
-
-````
-````VB.NET
-Me.RadDock1.ShowToolCloseButton = True
-Me.RadDock1.ShowDocumentCloseButton = True
-
-````
-
-{{endregion}} 
+ 
 
 ![WinForms RadDock Showing Close Buttons](images/dock-object-model-tabs-and-captions006.png)
 

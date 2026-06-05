@@ -21,54 +21,19 @@ You can handle the __ToggleStateChanged__ event of __RadRadioButton__ to take ac
       
 #### Handling ToggleStateChanged event 
 
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=handlingToggleStateChangedWithArgs}} 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=handlingToggleStateChangedWithArgs}} 
+<snippet id='buttons-radiobutton-handling-radradiobutton-states-handlingtogglestatechangedwithargs-cs' />
+<snippet id='buttons-radiobutton-handling-radradiobutton-states-handlingtogglestatechangedwithargs-vb' />
 
-````C#
-void radRadioButton2_ToggleStateChanged(object sender, StateChangedEventArgs args)
-{
-    MessageBox.Show(args.ToggleState.ToString());
-}
 
-````
-````VB.NET
-Private Sub radRadioButton2_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-    MessageBox.Show(args.ToggleState.ToString())
-End Sub
-
-````
-
-{{endregion}} 
 
 You can also handle the __ToggleStateChanging__ event. This event provides an opportunity to cancel the toggle state change. The __StateChangingEventArgs__ passed as a parameter to the event handler have __NewValue__ and __OldValue__ ToggleState members and a Boolean __Cancel__ member.  __NewValue__ holds the value of __ToggleState__ that will be applied when the event is completed without being canceled. __OldValue__ holds the value of __ToggleState__ at the time the state change was initiated. __Canceled__ controls which value of __ToggleState__ is applied when the event completes. The default value is __false__. Setting __Cancel__ to *true* will prevent the __ToggleStateChanged__ event from firing and will leave the __ToggleState__ value as it was prior to the event.  In the example below the __StateChangedEvent__ does not fire.
        
 #### Handling ToggleStateChanging event 
 
-{{source=..\SamplesCS\Buttons\RadioButton.cs region=StateChanging}} 
-{{source=..\SamplesVB\Buttons\RadioButton.vb region=StateChanging}} 
+<snippet id='buttons-radiobutton-handling-radradiobutton-states-statechanging-cs' />
+<snippet id='buttons-radiobutton-handling-radradiobutton-states-statechanging-vb' />
 
-````C#
-void radRadioButton3_ToggleStateChanging(object sender, StateChangingEventArgs args)
-{
-    args.Cancel = true;
-}
-void radRadioButton3_ToggleStateChanged(object sender, StateChangedEventArgs args)
-{
-    this.radRadioButton3.Text = args.ToggleState.ToString();
-}
 
-````
-````VB.NET
-Private Sub radRadioButton3_ToggleStateChanging(ByVal sender As Object, ByVal args As StateChangingEventArgs)
-    args.Cancel = True
-End Sub
-Private Sub radRadioButton3_ToggleStateChanged(ByVal sender As Object, ByVal args As StateChangedEventArgs)
-    radRadioButton3.Text = args.ToggleState.ToString()
-End Sub
-
-````
-
-{{endregion}} 
 
 >note Due to the specifics of the [simple data binding](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding(v=vs.110).aspx) we have introduced the __CheckChanging__ / __CheckChanged__ events together with the __CheckState__ property. These events and property provide the same functionality as the __ToggleStateChanged__ , __ToggleStateChanging__ and the __ToggleState__ property, but give you the ability to simple data bind the control.
 >

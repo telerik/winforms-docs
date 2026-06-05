@@ -44,35 +44,17 @@ RadTreeView allows navigation through the visible nodes by using keyboard. Two s
 
 To enable this functionality a single property setting is needed:
 
-{{source=..\SamplesCS\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.cs region=KeyboardSearchEnabled}} 
-{{source=..\SamplesVB\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.vb region=KeyboardSearchEnabled}} 
+<snippet id='treeview-treeviewusabilitykeyboardnavigation-keyboardsearchenabled-cs' />
+<snippet id='treeview-treeviewusabilitykeyboardnavigation-keyboardsearchenabled-vb' />
 
-````C#
-radTreeView1.KeyboardSearchEnabled = true;
 
-````
-````VB.NET
-radTreeView1.KeyboardSearchEnabled = True
-
-````
-
-{{endregion}} 
 
 Another property of interest is the __KeyboardSearchResetInterval__. It is used to determine what time between keystrokes will be considered as typing. Consequent keystrokes with performed faster than the specified interval will be considered typing and once the time elapses, the matching node (if such) will be selected. Here is how to access this property to change the value of the timer:
 
-{{source=..\SamplesCS\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.cs region=KeyboardSearchResetInterval}} 
-{{source=..\SamplesVB\TreeView\Usability1\TreeViewUsabilityKeyboardNavigation.vb region=KeyboardSearchResetInterval}} 
+<snippet id='treeview-treeviewusabilitykeyboardnavigation-keyboardsearchresetinterval-cs' />
+<snippet id='treeview-treeviewusabilitykeyboardnavigation-keyboardsearchresetinterval-vb' />
 
-````C#
-radTreeView1.TreeViewElement.KeyboardSearchResetInterval = 500;
 
-````
-````VB.NET
-radTreeView1.KeyboardSearchResetInterval = 500
-
-````
-
-{{endregion}}
 
 # See Also
 

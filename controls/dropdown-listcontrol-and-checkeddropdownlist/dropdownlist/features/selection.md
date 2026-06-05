@@ -30,19 +30,10 @@ __RadDropDownList__ supports three types of selection modes:
 
 #### Setting a Selection Mode 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListSelection.cs region=MultiExtendedSelection}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListSelection.vb region=MultiExtendedSelection}} 
+<snippet id='dropdownlist-selection-multiextendedselection-cs' />
+<snippet id='dropdownlist-selection-multiextendedselection-vb' />
 
-````C#
-this.radDropDownList1.DropDownListElement.SelectionMode = SelectionMode.MultiExtended;
-
-````
-````VB.NET
-Me.radDropDownList1.DropDownListElement.SelectionMode = SelectionMode.MultiExtended
-
-````
-
-{{endregion}} 
+ 
  
 
 ## Select Next Item
@@ -54,19 +45,10 @@ __RadDropDownList__ can automatically select the next item when a double click i
 
 #### Next Item Selection 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListSelection.cs region=NextItemSelection}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListSelection.vb region=NextItemSelection}} 
+<snippet id='dropdownlist-selection-nextitemselection-cs' />
+<snippet id='dropdownlist-selection-nextitemselection-vb' />
 
-````C#
-this.radDropDownList1.SelectNextOnDoubleClick = true;
-
-````
-````VB.NET
-Me.radDropDownList1.SelectNextOnDoubleClick = True
-
-````
-
-{{endregion}} 
+ 
  
 
 ## Selection Events
@@ -103,21 +85,10 @@ Items can be programmatically selected either by their value or by their logical
 >note Setting these properties will result in raising the selection events.
 >
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListSelection.cs region=SetSelectedItem}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListSelection.vb region=SetSelectedItem}} 
+<snippet id='dropdownlist-selection-setselecteditem-cs' />
+<snippet id='dropdownlist-selection-setselecteditem-vb' />
 
-````C#
-
-this.radDropDownList1.SelectedItem = this.radDropDownList1.Items[1];
-
-````
-````VB.NET
-
-Me.radDropDownList1.SelectedItem = Me.radDropDownList1.Items(1)
-
-````
-
-{{endregion}} 
+ 
 
 
 

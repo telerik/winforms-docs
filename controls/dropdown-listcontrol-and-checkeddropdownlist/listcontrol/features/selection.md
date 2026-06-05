@@ -20,42 +20,22 @@ The selection in __RadListControl__ is determined by the __SelectionMode__ prope
 >note There is **ActiveItem** property that gets or sets the active item. The **ActiveItem** is relevant only for **MultiSimple** and **MultiExtended** selection modes.
 
 #### Set the selection mode
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=SelectionMode}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=SelectionMode}} 
 
-````C#
-this.radListControl1.SelectionMode = SelectionMode.MultiSimple;
+<snippet id='listcontrol-selection-selectionmode-cs' />
+<snippet id='listcontrol-selection-selectionmode-vb' />
 
-````
-````VB.NET
-Me.radListControl1.SelectionMode = SelectionMode.MultiSimple
 
-````
-
-{{endregion}}
 
 ## Select items programmatically 
 
 In order to select an item programmatically you should use the **SelectedItem** property. You can select an item by index as well by using the **SelectedIndex** property. If you want to select an item by its value you can use the **SelectedValue** property. When usng the **SelectedValue** property a linear search is performed to find a data item that has the same value in its **Value** property.
 
 #### Select items programmatically 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=SelectItems}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=SelectItems}} 
 
-````C#
-this.radListControl1.SelectedItem = this.radListControl1.Items[1];
-this.radListControl1.SelectedIndex = 2;
-this.radListControl1.SelectedValue = "MP3";
+<snippet id='listcontrol-selection-selectitems-cs' />
+<snippet id='listcontrol-selection-selectitems-vb' />
 
-````
-````VB.NET
-Me.radListControl1.SelectedItem = Me.radListControl1.Items(1)
-Me.radListControl1.SelectedIndex = 2
-Me.radListControl1.SelectedValue = "MP3"
 
-````
-
-{{endregion}}
 
 ![WinForms RadListControl Select Items Programmatically ](images/listcontrol-selectitems001.png)
 

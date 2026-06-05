@@ -22,20 +22,9 @@ While this indicator is shown the entire grid is disabled. It is useful when the
 
 The following snippet shows how you can show/hide the waiting bar:
 
-{{source=..\SamplesCS\VirtualGrid\VirtualGridWaitingIndicators.cs region=WaitingBar}} 
-{{source=..\SamplesVB\VirtualGrid\VirtualGridWaitingIndicators.vb region=WaitingBar}}
-````C#
-radVirtualGrid1.MasterViewInfo.IsWaiting = true;
-radVirtualGrid1.MasterViewInfo.IsWaiting = false;
+<snippet id='virtualgrid-virtualgridwaitingindicators-waitingbar-cs' />
+<snippet id='virtualgrid-virtualgridwaitingindicators-waitingbar-vb' />
 
-````
-````VB.NET
-radVirtualGrid1.MasterViewInfo.IsWaiting = True
-radVirtualGrid1.MasterViewInfo.IsWaiting = False
-
-```` 
-
-{{endregion}}
 
 
 ## Waiting icon
@@ -49,20 +38,10 @@ The waiting icon can be shown in each row header. With it you can indicate that 
 
 The following snippet shows how you can show/hide the waiting icon:
 
-{{source=..\SamplesCS\VirtualGrid\VirtualGridWaitingIndicators.cs region=icon}} 
-{{source=..\SamplesVB\VirtualGrid\VirtualGridWaitingIndicators.vb region=icon}}
-````C#
-radVirtualGrid1.MasterViewInfo.StartRowWaiting(5);
-radVirtualGrid1.MasterViewInfo.StopRowWaiting(5);
+<snippet id='virtualgrid-virtualgridwaitingindicators-icon-cs' />
+<snippet id='virtualgrid-virtualgridwaitingindicators-icon-vb' />
 
-````
-````VB.NET
-radVirtualGrid1.MasterViewInfo.StartRowWaiting(5)
-radVirtualGrid1.MasterViewInfo.StopRowWaiting(5)
 
-```` 
-
-{{endregion}}
 
 # See Also
 * [Copy/Paste/Cut]({%slug winforms/virtualgrid/copy-paste-cut%})

@@ -19,27 +19,10 @@ By default __RadTreeView__ does not allow node editing. If the __AllowEditing__ 
 
 The sample code below shows how to start editing using the API:
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=editing}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=editing}} 
+<snippet id='treeview-workingwithnodes1-editing-cs' />
+<snippet id='treeview-workingwithnodes1-editing-vb' />
 
-````C#
-radTreeView1.AllowEdit = true;
-// set the SelectedNode - this node will be edited  
-radTreeView1.SelectedNode = radTreeView1.Nodes[0];
-// this will start edit on selected node
-radTreeView1.BeginEdit();
 
-````
-````VB.NET
-RadTreeView1.AllowEdit = True
-' set the SelectedNode - this node will be edited  
-RadTreeView1.SelectedNode = RadTreeView1.Nodes(0)
-' this will start edit on selected node
-RadTreeView1.BeginEdit()
-
-````
-
-{{endregion}} 
 
 ## The Editing Lifecycle
 

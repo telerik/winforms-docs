@@ -12,31 +12,10 @@ position: 1
 
 * __ConnectionPoints__ - if you want to change the route of the connection, you can add connection points in code-behind through the RadDiagramConnection.__ConnectionPoints__ property. You can populate the __ConnectionPoints__ collection with objects of type *Point*: 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=AddConnection}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=AddConnection}} 
+<snippet id='diagram-connection-types-addconnection-cs' />
+<snippet id='diagram-connection-types-addconnection-vb' />
 
-````C#
-            
-RadDiagramConnection connection1 = new RadDiagramConnection() { Name = "connection1" };
-            
-connection1.Source = shape1;
-connection1.Target = starShape;
-connection1.ConnectionPoints.Add(new Point(200, 30));
-radDiagram1.Items.Add(connection1);
 
-````
-````VB.NET
-Dim connection1 As New RadDiagramConnection() With { _
-    .Name = "connection1" _
-}
-connection1.Source = shape1
-connection1.Target = starShape
-connection1.ConnectionPoints.Add(New Point(200, 30))
-RadDiagram1.Items.Add(connection1)
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadDiagram Connection Types](images/diagram-diagram-items-connections002.png)
@@ -53,86 +32,19 @@ RadDiagram1.Items.Add(connection1)
 ![WinForms RadDiagram Polyline](images/diagram-diagram-items-connections003.png) 
 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=PolylineConnection}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=PolylineConnection}} 
+<snippet id='diagram-connection-types-polylineconnection-cs' />
+<snippet id='diagram-connection-types-polylineconnection-vb' />
 
-````C#
-            
-RadDiagramShape sourceShape = new RadDiagramShape()
-{
-    Text = "source",
-    Shape = new RoundRectShape(5),
-    BackColor = Color.Red
-};
-            
-sourceShape.Position = new Telerik.Windows.Diagrams.Core.Point(150, 100);
-radDiagram1.AddShape(sourceShape);
-            
-RadDiagramShape targetShape = new RadDiagramShape()
-{
-    Text = "target",
-    Shape = new RoundRectShape(5),
-    BackColor = Color.Red
-};
-            
-targetShape.Position = new Telerik.Windows.Diagrams.Core.Point(400, 300);
-radDiagram1.AddShape(targetShape);
-            
-RadDiagramConnection polylineConnection = new RadDiagramConnection() { Name = "connection1" };
-            
-polylineConnection.Source = sourceShape;
-polylineConnection.Target = targetShape;
-polylineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Polyline;
-radDiagram1.AddShape(polylineConnection);
 
-````
-````VB.NET
-Dim sourceShape As New RadDiagramShape() With { _
-    .Text = "source", _
-    .Shape = New RoundRectShape(5), _
-    .BackColor = Color.Red _
-}
-sourceShape.Position = New Telerik.Windows.Diagrams.Core.Point(150, 100)
-RadDiagram1.AddShape(sourceShape)
-Dim targetShape As New RadDiagramShape() With { _
-    .Text = "target", _
-    .Shape = New RoundRectShape(5), _
-    .BackColor = Color.Red _
-}
-targetShape.Position = New Telerik.Windows.Diagrams.Core.Point(400, 300)
-RadDiagram1.AddShape(targetShape)
-Dim polylineConnection As New RadDiagramConnection() With { _
-    .Name = "connection1" _
-}
-polylineConnection.Source = sourceShape
-polylineConnection.Target = targetShape
-polylineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Polyline
-RadDiagram1.Items.Add(polylineConnection)
-
-````
-
-{{endregion}} 
 
 
 If you want to change the route of the connection, you can add connection points in code-behind through the RadDiagramConnection.__ConnectionPoints__ property. You can populate the __ConnectionPoints__ collection with objects of type Point: 
 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=ConnectionPolylineWithPoints}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=ConnectionPolylineWithPoints}} 
+<snippet id='diagram-connection-types-connectionpolylinewithpoints-cs' />
+<snippet id='diagram-connection-types-connectionpolylinewithpoints-vb' />
 
-````C#
-            
-polylineConnection.ConnectionPoints.Add(new Point(300, 140));
-polylineConnection.ConnectionPoints.Add(new Point(330, 280));
 
-````
-````VB.NET
-polylineConnection.ConnectionPoints.Add(New Point(300, 140))
-polylineConnection.ConnectionPoints.Add(New Point(330, 280))
-
-````
-
-{{endregion}} 
 
 
 Sample of a curved Polyline connection:
@@ -145,33 +57,10 @@ Sample of a curved Polyline connection:
 
 ![WinForms RadDiagram BezierTension Option](images/diagram-diagram-items-connections006.png) 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=BezierConnection}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=BezierConnection}} 
+<snippet id='diagram-connection-types-bezierconnection-cs' />
+<snippet id='diagram-connection-types-bezierconnection-vb' />
 
-````C#
-            
-RadDiagramConnection bezierConnection = new RadDiagramConnection() { Name = "connection1" };
-            
-bezierConnection.Source = sourceShape;
-bezierConnection.Target = targetShape;
-bezierConnection.BezierTension = 16;
-bezierConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Bezier;
-radDiagram1.Items.Add(bezierConnection);
 
-````
-````VB.NET
-Dim bezierConnection As New RadDiagramConnection() With { _
-    .Name = "connection1" _
-}
-bezierConnection.Source = sourceShape
-bezierConnection.Target = targetShape
-bezierConnection.BezierTension = 16
-bezierConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Bezier
-RadDiagram1.Items.Add(bezierConnection)
-
-````
-
-{{endregion}} 
 
 
 By default, when you create a Bezier connection and attach its endpoints to __RadDiagramShapes__, the position of the handle points of the connection will be calculated based on the connector positions. Both handle points will be added to the RadDiagramConnection.__ConnectionPoints__ collection. The following snapshot illustrates the default direction of the Bezier connection handles based on the position of the connector to which the connection is attached.
@@ -193,34 +82,7 @@ The offset between a Bezier connection handle point and its corresponding endpoi
 
 ![WinForms RadDiagram Spline Connection Type](images/diagram-diagram-items-connections008.png) 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=SplineConnection}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=SplineConnection}} 
+<snippet id='diagram-connection-types-splineconnection-cs' />
+<snippet id='diagram-connection-types-splineconnection-vb' />
 
-````C#
-            
-RadDiagramConnection splineConnection = new RadDiagramConnection() { Name = "connection1" };
-            
-splineConnection.Source = sourceShape;
-splineConnection.Target = targetShape;            
-splineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Spline;
-splineConnection.ConnectionPoints.Add(new Point(140, 20));
-splineConnection.ConnectionPoints.Add(new Point(250, 150));
-splineConnection.ConnectionPoints.Add(new Point(350, 50));    
-radDiagram1.Items.Add(splineConnection);
 
-````
-````VB.NET
-Dim splineConnection As New RadDiagramConnection() With { _
-    .Name = "connection1" _
-}
-splineConnection.Source = sourceShape
-splineConnection.Target = targetShape
-splineConnection.ConnectionType = Telerik.Windows.Diagrams.Core.ConnectionType.Spline
-splineConnection.ConnectionPoints.Add(New Point(140, 20))
-splineConnection.ConnectionPoints.Add(New Point(250, 150))
-splineConnection.ConnectionPoints.Add(New Point(350, 50))
-RadDiagram1.Items.Add(splineConnection)
-
-````
-
-{{endregion}} 

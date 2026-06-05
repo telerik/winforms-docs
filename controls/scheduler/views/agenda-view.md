@@ -20,42 +20,20 @@ Agenda View is a table, structured like a simple list, which lists appointments 
 
 The Agenda View can be set to be the default view which the user sees by setting the RadScheduler.**ActiveViewType** property: 
 
-{{source=..\SamplesCS\Scheduler\Views\AgendaView.cs region=SetView}} 
-{{source=..\SamplesVB\Scheduler\Views\AgendaView.vb region=SetView}} 
+<snippet id='scheduler-agendaview-setview-cs' />
+<snippet id='scheduler-agendaview-setview-vb' />
 
-````C#
-this.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Agenda;
 
-````
-````VB.NET
-Me.radScheduler1.ActiveViewType = Telerik.WinControls.UI.SchedulerViewType.Agenda
-
-````
-
-{{endregion}} 
 
 ## Get Agenda View
 
 To get the instance of the **SchedulerAgendaView** from the **RadScheduler** object, you can either use the **GetAgendaView** method or get the **ActiveView** property:
 
 
-{{source=..\SamplesCS\Scheduler\Views\AgendaView.cs region=GetAgendaView}} 
-{{source=..\SamplesVB\Scheduler\Views\AgendaView.vb region=GetAgendaView}} 
+<snippet id='scheduler-agendaview-getagendaview-cs' />
+<snippet id='scheduler-agendaview-getagendaview-vb' />
 
-````C#
-SchedulerAgendaView agendaView = this.radScheduler1.ActiveView as SchedulerAgendaView;
-//or 
-agendaView = this.radScheduler1.GetAgendaView();
 
-````
-````VB.NET
-Dim agendaView As SchedulerAgendaView = TryCast(Me.radScheduler1.ActiveView, SchedulerAgendaView)
-'or
-agendaView = Me.radScheduler1.GetAgendaView()
-
-````
-
-{{endregion}} 
 
 >note This method returns *null* if the active view of the **RadScheduler** is not **SchedulerAgendaView**.
 
@@ -63,21 +41,10 @@ agendaView = Me.radScheduler1.GetAgendaView()
 
 **SchedulerAgendaView** internally uses a [RadGridView]({%slug winforms/gridview%}) to display the available records. It can be accessed through the SchedulerAgendaViewElement.**Grid** property. Feel free to use the whole API that **RadGridView** offers to achieve any custom requirements that you have. 
 
-{{source=..\SamplesCS\Scheduler\Views\AgendaView.cs region=GetGrid}} 
-{{source=..\SamplesVB\Scheduler\Views\AgendaView.vb region=GetGrid}} 
+<snippet id='scheduler-agendaview-getgrid-cs' />
+<snippet id='scheduler-agendaview-getgrid-vb' />
 
-````C#
-SchedulerAgendaViewElement agendaViewElement = this.radScheduler1.SchedulerElement.ViewElement as SchedulerAgendaViewElement;
-RadGridView agendaGrid = agendaViewElement.Grid;
 
-````
-````VB.NET
-Dim agendaViewElement As SchedulerAgendaViewElement = TryCast(Me.radScheduler1.SchedulerElement.ViewElement, SchedulerAgendaViewElement)
-Dim agendaGrid As RadGridView = agendaViewElement.Grid
-
-````
-
-{{endregion}} 
 
 ## SchedulerAgendaView Properties
 
@@ -104,23 +71,10 @@ Since **SchedulerAgendaView** uses a **RadGridView**, it supports grouping by di
 
 In order to group the **SchedulerAgendaView** by resources programmatically it is necessary to add a [GroupDescriptor]({%slug winforms/gridview/grouping/setting-groups-programmatically%}) to the grid for the **Resource** property:
 
-{{source=..\SamplesCS\Scheduler\Views\AgendaView.cs region=GroupByResources}} 
-{{source=..\SamplesVB\Scheduler\Views\AgendaView.vb region=GroupByResources}} 
+<snippet id='scheduler-agendaview-groupbyresources-cs' />
+<snippet id='scheduler-agendaview-groupbyresources-vb' />
 
-````C#
-GroupDescriptor descriptor = new GroupDescriptor();
-descriptor.GroupNames.Add("Resource", ListSortDirection.Ascending);
-agendaViewElement.Grid.GroupDescriptors.Add(descriptor);
 
-````
-````VB.NET
-Dim descriptor As GroupDescriptor = New GroupDescriptor()
-descriptor.GroupNames.Add("Resource", ListSortDirection.Ascending)
-agendaViewElement.Grid.GroupDescriptors.Add(descriptor)
-
-````
-
-{{endregion}}
 
 >caption Figure 3: Agenda View Grouped by Resources
 

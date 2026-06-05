@@ -25,33 +25,10 @@ __RadMap__ can visualize tile data from the [Bing Maps](https://www.bingmapsport
 
 #### Using BingRestMapProvider
 
-{{source=..\SamplesCS\Map\MapGettingStarted.cs region=GettingStarted}} 
-{{source=..\SamplesVB\Map\MapGettingStarted.vb region=GettingStarted}}
+<snippet id='map-mapgettingstarted-gettingstarted-cs' />
+<snippet id='map-mapgettingstarted-gettingstarted-vb' />
 
-````C#
 
-string cacheFolder = @"..\..\cache";
-BingRestMapProvider bingProvider = new Telerik.WinControls.UI.BingRestMapProvider();
-bingProvider.UseSession = true;
-bingProvider.BingKey = bingKey;
-LocalFileCacheProvider cache = new LocalFileCacheProvider(cacheFolder);
-bingProvider.CacheProvider = cache;
-this.radMap1.Providers.Add(bingProvider);
-
-````
-````VB.NET
-
-Dim cacheFolder As String = "..\..\cache"
-Dim bingProvider As BingRestMapProvider = New Telerik.WinControls.UI.BingRestMapProvider()
-bingProvider.UseSession = True
-bingProvider.BingKey = bingKey
-Dim cache As New LocalFileCacheProvider(cacheFolder)
-bingProvider.CacheProvider = cache
-Me.radMap1.Providers.Add(bingProvider)
-
-````
-
-{{endregion}} 
 
 >note If you use __RadMap__ with .Net Framework 2.0 and you don't have an installation of the Telerik UI for WinForms suite on the current machine, it is necessary to add a reference to the Newtonsoft.Json assembly which can be found in the \Bin folder of the *Telerik_UI_For_WinForms_[version]_Dev_dlls.zip*. If you are using .Net Framework 4.0 this is not required.
 

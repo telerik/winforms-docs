@@ -23,39 +23,10 @@ The following example creates a CategoricalAxis and assigns it to a BarSeries be
 
 #### BetweenTicks PlotMode
 
-{{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis}} 
-{{source=..\SamplesVB\ChartView\Axes\PlotModeForm.vb region=axis}} 
+<snippet id='chartview-plot-mode-axis-cs'/>
+<snippet id='chartview-plot-mode-axis-vb'/>
 
-````C#
-CategoricalAxis horizontalAxis = new CategoricalAxis();
-horizontalAxis.PlotMode = AxisPlotMode.BetweenTicks;
-horizontalAxis.GapLength = 0.3;
-BarSeries series = new BarSeries();
-series.HorizontalAxis = horizontalAxis;
-series.DataPoints.Add(new CategoricalDataPoint(10, "1"));
-series.DataPoints.Add(new CategoricalDataPoint(4, "2"));
-series.DataPoints.Add(new CategoricalDataPoint(7, "3"));
-series.DataPoints.Add(new CategoricalDataPoint(11, "4"));
-series.DataPoints.Add(new CategoricalDataPoint(15, "5"));
-this.radChartView1.Series.Add(series);
 
-````
-````VB.NET
-Dim horizontalAxis As New CategoricalAxis()
-horizontalAxis.PlotMode = AxisPlotMode.BetweenTicks
-horizontalAxis.GapLength = 0.3
-Dim series As New BarSeries()
-series.HorizontalAxis = horizontalAxis
-series.DataPoints.Add(New CategoricalDataPoint(10, "1"))
-series.DataPoints.Add(New CategoricalDataPoint(4, "2"))
-series.DataPoints.Add(New CategoricalDataPoint(7, "3"))
-series.DataPoints.Add(New CategoricalDataPoint(11, "4"))
-series.DataPoints.Add(New CategoricalDataPoint(15, "5"))
-Me.RadChartView1.Series.Add(series)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: BetweenTicks PlotMode
 ![WinForms RadChartView BetweenTicks PlotMode](images/chartview-axes-plot-mode001.png)
@@ -64,21 +35,10 @@ You can always change the PlotMode property, even if the CategoricalAxis was aut
 
 #### OnTicks PlotMode
 
-{{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis2}} 
-{{source=..\SamplesVB\ChartView\Axes\PlotModeForm.vb region=axis2}} 
+<snippet id='chartview-plot-mode-axis2-cs'/>
+<snippet id='chartview-plot-mode-axis2-vb'/>
 
-````C#
-CategoricalAxis axis = radChartView1.Axes.Get<CategoricalAxis>(0);
-axis.PlotMode = AxisPlotMode.OnTicks;
 
-````
-````VB.NET
-Dim axis As CategoricalAxis = RadChartView1.Axes.[Get](Of CategoricalAxis)(0)
-axis.PlotMode = AxisPlotMode.OnTicks
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: OnTicks PlotMode
 ![WinForms RadChartView OnTicks PlotMode](images/chartview-axes-plot-mode002.png)
@@ -87,19 +47,10 @@ Using the aforementioned approach you can set the PlotMode property to OnTicksPa
 
 #### OnTicksPadded PlotMode
 
-{{source=..\SamplesCS\ChartView\Axes\PlotModeForm.cs region=axis3}} 
-{{source=..\SamplesVB\ChartView\Axes\PlotModeForm.vb region=axis3}} 
+<snippet id='chartview-plot-mode-axis3-cs'/>
+<snippet id='chartview-plot-mode-axis3-vb'/>
 
-````C#
-axis.PlotMode = AxisPlotMode.OnTicksPadded;
 
-````
-````VB.NET
-axis.PlotMode = AxisPlotMode.OnTicksPadded
-
-````
-
-{{endregion}} 
 
 >caption Figure 3: OnTicksPadded PlotMode
 ![WinForms RadChartView OnTicksPadded PlotMode](images/chartview-axes-plot-mode003.png)

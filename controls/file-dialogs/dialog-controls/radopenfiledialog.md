@@ -25,31 +25,10 @@ To show the dialog call its **ShowDialog** method. If a valid file is opened whe
 
 ####  Example 1: Show an open file dialog 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=OpenFileDialogExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=OpenFileDialogExample}}
+<snippet id='file-dialogs-radopenfiledialog-openfiledialogexample-cs' />
+<snippet id='file-dialogs-radopenfiledialog-openfiledialogexample-vb' />
 
-````C#
 
-RadOpenFileDialog openFileDialog = new RadOpenFileDialog(); 
-DialogResult dr = openFileDialog.ShowDialog(); 
-if (dr == System.Windows.Forms.DialogResult.OK) 
-{ 
-    string fileName = openFileDialog.FileName; 
-}
-
-````
-````VB.NET
-
-Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
-Dim dr As DialogResult = openFileDialog.ShowDialog()
-
-If dr = System.Windows.Forms.DialogResult.OK Then
-     Dim fileName As String = openFileDialog.FileName
-End If
-
-````
-
-{{endregion}}
 
 ## Opening the Selected File
 
@@ -57,31 +36,10 @@ You can open a read-only file stream for the selected file using the OpenFile me
 
 ####  Example 2: Open a file stream 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=OpenFileStreamExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=OpenFileStreamExample}}
+<snippet id='file-dialogs-radopenfiledialog-openfilestreamexample-cs' />
+<snippet id='file-dialogs-radopenfiledialog-openfilestreamexample-vb' />
 
-````C# 
 
-RadOpenFileDialog openFileDialog = new RadOpenFileDialog(); 
-DialogResult dr = openFileDialog.ShowDialog(); 
-if (dr == System.Windows.Forms.DialogResult.OK) 
-{ 
-     Stream fileStream = openFileDialog.OpenFile(); 
-}
-
-````
-````VB.NET
-
-Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
-Dim dr As DialogResult = openFileDialog.ShowDialog()
-
-If dr = System.Windows.Forms.DialogResult.OK Then
-   Dim fileStream As Stream = openFileDialog.OpenFile()
-End If
-
-````
-
-{{endregion}}
 
 ## Enabling Multiple Selection
 
@@ -89,24 +47,10 @@ The dialog supports single and multiple selection modes. By default, you can sel
 
 ####  Example 3: Enable multiple selection 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=MultipleSelectionExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=MultipleSelectionExample}}
-
-````C# 
-
-RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-openFileDialog.MultiSelect  = true;
-
-````
-````VB.NET
-
-Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
-openFileDialog.MultiSelect  = True
+<snippet id='file-dialogs-radopenfiledialog-multipleselectionexample-cs' />
+<snippet id='file-dialogs-radopenfiledialog-multipleselectionexample-vb' />
 
 
-````
-
-{{endregion}}
 
 >caption Figure 2: Multiple selection 
 
@@ -121,39 +65,10 @@ You can get only the name of the selected files, without the full path, via the 
 
 ####  Example 4: Get the selected file names
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=SelectedFileNames}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=SelectedFileNames}}
-
-````C# 
-
-RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-openFileDialog.MultiSelect = true;
-DialogResult dr = openFileDialog.ShowDialog();
-if (dr == System.Windows.Forms.DialogResult.OK)
-{
-    string filePath = openFileDialog.FileName;
-    IEnumerable<string> filePaths = openFileDialog.FileNames;
-    IEnumerable<string> fileNames = openFileDialog.SafeFileNames;
-}
+<snippet id='file-dialogs-radopenfiledialog-selectedfilenames-cs' />
+<snippet id='file-dialogs-radopenfiledialog-selectedfilenames-vb' />
 
 
-````
-````VB.NET
-
-Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
-openFileDialog.MultiSelect = True
-Dim dr As DialogResult = openFileDialog.ShowDialog()
-
-If dr = System.Windows.Forms.DialogResult.OK Then
-   Dim filePath As String = openFileDialog.FileName
-   Dim filePaths As IEnumerable(Of String) = openFileDialog.FileNames
-   Dim fileNames As IEnumerable(Of String) = openFileDialog.SafeFileNames
-End If
-
-
-````
-
-{{endregion}}
 
 The **FileName** property can be set manually. This will change the value displayed in the selected file auto-complete box area. Note that setting this won't change the selected item in the list with the files.
 
@@ -163,23 +78,10 @@ You can save the last used directory by setting the **RestoreDirectory** propert
 
 ####  Example 5: Set RestoreDirectory property
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=RestoreDirectoryPropertyExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=RestoreDirectoryPropertyExample}}
+<snippet id='file-dialogs-radopenfiledialog-restoredirectorypropertyexample-cs' />
+<snippet id='file-dialogs-radopenfiledialog-restoredirectorypropertyexample-vb' />
 
-````C# 
 
-RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-openFileDialog.RestoreDirectory = true;
-
-````
-````VB.NET
-
-Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
-openFileDialog.RestoreDirectory = True
-
-````
-
-{{endregion}}
 
 >important Note that the directory restoring feature works per dialog instance and only in memory. This means that the previously selected directory will be stored in a private string field of the RadOpenFolderDialog instance. In other words, to use the feature the following requirements should be met:
 * The same dialog instance should be used every time you open the dialog.
@@ -192,27 +94,10 @@ You can display a checkbox to control whether the file should be opened in reado
 
 ####  Example 6: Enabling the ReadOnly CheckBox
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=EnablingReadOnlyCheckBoxExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=EnablingReadOnlyCheckBoxExample}}
+<snippet id='file-dialogs-radopenfiledialog-enablingreadonlycheckboxexample-cs' />
+<snippet id='file-dialogs-radopenfiledialog-enablingreadonlycheckboxexample-vb' />
 
-````C# 
 
-RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-openFileDialog.ShowReadOnly = true;
-openFileDialog.ReadOnlyChecked = true;
-DialogResult dr = openFileDialog.ShowDialog();
-
-````
-````VB.NET
-
-Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
-openFileDialog.ShowReadOnly = True
-openFileDialog.ReadOnlyChecked = True
-Dim dr As DialogResult = openFileDialog.ShowDialog()
-
-````
-
-{{endregion}}
 
 >caption Figure 3: RadOpenFileDialog with Checked ReadOnly CheckBox
 
@@ -224,37 +109,10 @@ Dim dr As DialogResult = openFileDialog.ShowDialog()
 
 ####  Example 7: Using the DereferenceLinks property
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=UsingDereferenceLinksPropertyExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=UsingDereferenceLinksPropertyExample}}
-
-````C# 
-
-RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
-openFileDialog.DereferenceLinks = true; 
-DialogResult dr = openFileDialog.ShowDialog();
-if (dr == System.Windows.Forms.DialogResult.OK)
-{
-    string filePath = openFileDialog.FileName;
-    // If the selected file was C:\Users\<user>\Desktop\Shortcut.lnk, for example, 
-    // the FileName property will now contain the actual location of the file, 
-    // for example - C:\Program Files\Program\Shortcut.exe. 
-}
+<snippet id='file-dialogs-radopenfiledialog-usingdereferencelinkspropertyexample-cs' />
+<snippet id='file-dialogs-radopenfiledialog-usingdereferencelinkspropertyexample-vb' />
 
 
-````
-````VB.NET
-
-    Dim openFileDialog As RadOpenFileDialog = New RadOpenFileDialog()
-    openFileDialog.DereferenceLinks = True
-    Dim dr As DialogResult = openFileDialog.ShowDialog()
-
-    If dr = System.Windows.Forms.DialogResult.OK Then
-        Dim filePath As String = openFileDialog.FileName
-    End If
-
-````
-
-{{endregion}}
 
 >important If in multiple or single selection the first selected item is a link to a directory and **DereferenceLinks** is set to *True*, clicking the `Open` button will actually navigate to this directory.
 

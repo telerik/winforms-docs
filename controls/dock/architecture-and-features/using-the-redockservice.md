@@ -25,36 +25,10 @@ Let's take a look at the following scenario:
 
 1. Now comes the time when the user wants to re-dock the floating **ToolWindows**. However, the user does not only want to dock the **ToolWindows**, he/she want to achieve the layout that he/she had at the beginning. For that purpose, we can have a button or a menu item on the **Click** of which we get the **RedockService** and return the floating windows to their original docked state by calling the __RestoreMethod__ of the service. When the user clicks that button, he/she will get the layout below, which as you can see is the same as the layout that we had at the beginning:
    
-{{source=..\SamplesCS\Dock\UsingTheRedockService.cs region=redockService}} 
-{{source=..\SamplesVB\Dock\UsingTheRedockService.vb region=redockService}} 
+<snippet id='dock-using-the-redockservice-redockservice-cs' />
+<snippet id='dock-using-the-redockservice-redockservice-vb' />
 
-````C#
-void radButton1_Click(object sender, EventArgs e)
-{
-    RedockService service = this.radDock1.GetService<RedockService>();
-    foreach (DockWindow window in this.radDock1.DockWindows)
-    {
-        if (window.DockState == DockState.Floating)
-        {
-            service.RestoreState(window, DockState.Docked, true);
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Dim service As RedockService = Me.RadDock1.GetService(Of RedockService)()
-    For Each window As DockWindow In Me.RadDock1.DockWindows
-        If window.DockState = DockState.Floating Then
-            service.RestoreState(window, DockState.Docked, True)
-        End If
-    Next window
-End Sub
-
-````
-
-{{endregion}} 
+ 
  
 ![WinForms RadDock Redock Floating ToolWindows](images/dock-architecture-and-features-using-the-redockservice001.png)
 

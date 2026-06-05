@@ -21,39 +21,16 @@ Creating a simple expression:
 
 #### Creating simple sorting expression
 
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=creatingSimpleSortingExpression}} 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=creatingSimpleSortingExpression}} 
-
-````C#
-        
-this.radGridView1.SortDescriptors.Expression = "ShipName ASC";
-
-````
-````VB.NET
-Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC"
-
-````
-
-{{endregion}} 
+<snippet id='gridview-sorting-creatingsimplesortingexpression-cs' />
+<snippet id='gridview-sorting-creatingsimplesortingexpression-vb' />
 
 Sorting by two columns using expressions:
 
 #### Sorting by two columns, using sorting expression
 
-{{source=..\SamplesCS\GridView\Sorting\Sorting.cs region=sortingByTwoColumnsUsingExpression}} 
-{{source=..\SamplesVB\GridView\Sorting\Sorting.vb region=sortingByTwoColumnsUsingExpression}} 
+<snippet id='gridview-sorting-sortingbytwocolumnsusingexpression-cs' />
+<snippet id='gridview-sorting-sortingbytwocolumnsusingexpression-vb' />
 
-````C#
-            
-this.radGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC";
-
-````
-````VB.NET
-Me.RadGridView1.SortDescriptors.Expression = "ShipName ASC, Freight DESC"
-
-````
-
-{{endregion}} 
 # See Also
 * [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})
 

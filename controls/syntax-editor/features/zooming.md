@@ -20,19 +20,10 @@ The zooming functionality is enabled by default. To enable or disable it at run 
 
 #### Enable/Disable zooming
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=DisableZooming}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=DisableZooming}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-disablezooming-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-disablezooming-vb' />
 
-````C#
-this.radSyntaxEditor1.AllowScaling = false;
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.AllowScaling = False
-
-````
-
-{{endregion}} 
 
 ## ScaleFactor
 
@@ -40,19 +31,10 @@ The zoom factor can also be controlled by setting the control's **ScaleFactor** 
 
 #### Setting the ScaleFactor
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=ScaleFactor}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=ScaleFactor}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-scalefactor-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-scalefactor-vb' />
 
-````C#
-this.radSyntaxEditor1.ScaleFactor = 1.5;
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.ScaleFactor = 1.5
-
-````
-
-{{endregion}} 
 
 #### Figure 2: Setting the ScaleFactor
 
@@ -64,36 +46,17 @@ You can also zoom the **RadSyntaxEditor** control programmatically by using the 
 
 #### Zoom in and Zoom out
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=ProgrammaticZooming}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=ProgrammaticZooming}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-programmaticzooming-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-programmaticzooming-vb' />
 
-````C#
-this.radSyntaxEditor1.ZoomIn(); // The zoom increase factor is 1.1
-this.radSyntaxEditor1.ZoomOut(); // The zoom decrease factor is 0.91
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.ZoomIn() 'The zoom increase factor Is 1.1
-Me.RadSyntaxEditor1.ZoomOut() 'The zoom decrease factor Is 0.91
-
-````
-
-{{endregion}} 
 
 The **ZoomTo** method accepts a single argument - the zoom level to scroll to. This argument is directly set as the control's **ScaleFactor** and can thus accept values from 0.25 to 4, inclusive.
 
 #### Zoom to a particular zoom level
 
-{{source=..\SamplesCS\SyntaxEditor\SyntaxEditorGettingStarted.cs region=ZoomTo}} 
-{{source=..\SamplesVB\SyntaxEditor\SyntaxEditorGettingStarted.vb region=ZoomTo}}
+<snippet id='syntax-editor-syntaxeditorgettingstarted-zoomto-cs' />
+<snippet id='syntax-editor-syntaxeditorgettingstarted-zoomto-vb' />
 
-````C#
-this.radSyntaxEditor1.ZoomTo(2);
 
-````
-````VB.NET
-Me.RadSyntaxEditor1.ZoomTo(2);
 
-````
-
-{{endregion}} 

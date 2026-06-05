@@ -28,29 +28,11 @@ When using [bound mode]({%slug treemap-data-binding%}), once the **RadTreeMap** 
 
 ![WinForms RadTreeMap grouped by CategoryID](images/winforms-treemap-grouping003.png)
 
-{{source=..\SamplesCS\TreeMap\TreeMapGettingStarted.cs region=Grouping}} 
-{{source=..\SamplesVB\TreeMap\TreeMapGettingStarted.vb region=Grouping}} 
+<snippet id='treemap-treemapgettingstarted-grouping-cs' />
+<snippet id='treemap-treemapgettingstarted-grouping-vb' />
 
-````C#
 
-this.radTreeMap1.DisplayMember = "ProductName";
-this.radTreeMap1.ValueMember = "ProductID";
-this.radTreeMap1.DataSource = this.productsBindingSource;
-this.radTreeMap1.GroupDescriptors.Add("CategoryID", ListSortDirection.Descending);          
 
-````
-````VB.NET
-
-Me.radTreeMap1.DisplayMember = "ProductName"
-Me.radTreeMap1.ValueMember = "ProductID"
-Me.radTreeMap1.DataSource = Me.productsBindingSource
-Me.radTreeMap1.GroupDescriptors.Add("CategoryID", ListSortDirection.Ascending)
-
-````
-
-{{endregion}} 
-
- 
 # See Also
 
 * [Structure]({%slug treemap-structure%}) 

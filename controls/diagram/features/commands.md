@@ -104,40 +104,10 @@ The static __DiagramCommands__ class defines the following __RoutedUICommands__:
 
 Below is shown a sample code snippet how you can use some of the Diagram Commands in an application by using the DiagramElement.__TryExecuteCommand__ method: 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=CommandsExample}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=CommandsExample}} 
+<snippet id='diagram-commands-commandsexample-cs'/>
+<snippet id='diagram-commands-commandsexample-vb'/>
 
-````C#
-        
-private void radButton1_Click(object sender, EventArgs e)
-{
-    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy);
-}
-        
-private void radButton2_Click(object sender, EventArgs e)
-{
-    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste);
-}
-private void radButton3_Click(object sender, EventArgs e)
-{
-    this.radDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left");
-}
-
-````
-````VB.NET
-Private Sub RadButton1_Click(sender As Object, e As EventArgs) Handles RadButton1.Click
-    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Copy)
-End Sub
-Private Sub RadButton2_Click(sender As Object, e As EventArgs) Handles RadButton2.Click
-    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Paste)
-End Sub
-Private Sub RadButton3_Click(sender As Object, e As EventArgs) Handles RadButton3.Click
-    Me.RadDiagram1.DiagramElement.TryExecuteCommand(Telerik.WinControls.UI.Diagrams.DiagramCommands.Nudge, "Left")
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 
 ![WinForms RadDiagram Commands](images/diagram-features-commands001.gif)

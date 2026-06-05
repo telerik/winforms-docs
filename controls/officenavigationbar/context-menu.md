@@ -20,43 +20,10 @@ The **OverflowItem** ("**...**") shows a **RadContextMenuDropDown** with the ove
 
 #### Disable Notes item in the ContextMenuDropDown.DropDownOpened Event
 
-{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=DisableNotes}} 
-{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=DisableNotes}} 
+<snippet id='officenavigationbar-officenavigationbargettingstarted-disablenotes-cs' />
+<snippet id='officenavigationbar-officenavigationbargettingstarted-disablenotes-vb' />
 
-````C#
 
-private void ContextMenuDropDown_DropDownOpened(object sender, EventArgs e)
-{
-    foreach (RadItem item in this.radOfficeNavigationBar1.ContextMenuDropDown.Items)
-    {
-        if (item.Text.Contains("Notes"))
-        {
-            item.Enabled = false;
-        }
-        else
-        {
-            item.Enabled = true;
-        }
-    }
-}      
-
-````
-````VB.NET
-
- Private Sub ContextMenuDropDown_DropDownOpened(ByVal sender As Object, ByVal e As EventArgs)
-    For Each item As RadItem In Me.radOfficeNavigationBar1.ContextMenuDropDown.Items
-
-        If item.Text.Contains("Notes") Then
-            item.Enabled = False
-        Else
-            item.Enabled = True
-        End If
-    Next
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadOfficeNavigationBar DropDownOpened Event](images/officenavigationbar-context-menu002.png)
 

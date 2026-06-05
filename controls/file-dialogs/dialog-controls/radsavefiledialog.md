@@ -25,31 +25,10 @@ To show the dialog call its **ShowDialog** method. If a valid file is selected w
 
 ####  Example 1: Show a save file dialog
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=SaveFileDialogExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=SaveFileDialogExample}}
+<snippet id='file-dialogs-radsavefiledialog-savefiledialogexample-cs' />
+<snippet id='file-dialogs-radsavefiledialog-savefiledialogexample-vb' />
 
-````C#
 
-RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
-DialogResult dr = saveFileDialog.ShowDialog();
-if (dr == System.Windows.Forms.DialogResult.OK)
-{
-    string selectedFileName = saveFileDialog.FileName;
-}
-
-````
-````VB.NET
-
-Dim saveFileDialog As RadSaveFileDialog = New RadSaveFileDialog()
-Dim dr As DialogResult = saveFileDialog.ShowDialog()
-
-If dr = System.Windows.Forms.DialogResult.OK Then
-   Dim selectedFileName As String = saveFileDialog.FileName
-End If
-
-````
-
-{{endregion}}
 
 ## Creating a stream for the selected file
 
@@ -57,30 +36,10 @@ You can open a read-write file stream for the selected file using the **OpenFile
 
 ####  Example 2: Open a file stream
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=OpenFileStreamExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=OpenFileStreamExample}}
+<snippet id='file-dialogs-radopenfiledialog-openfilestreamexample-cs' />
+<snippet id='file-dialogs-radopenfiledialog-openfilestreamexample-vb' />
 
-````C#
 
-RadSaveFileDialog saveFileDialog = new RadSaveFileDialog(); 
-DialogResult dr = saveFileDialog.ShowDialog();
-if (dr == System.Windows.Forms.DialogResult.OK)
-{
-    Stream fileStream = saveFileDialog.OpenFile(); 
-}
-
-````
-````VB.NET
-
-Dim saveFileDialog As RadSaveFileDialog = New RadSaveFileDialog()
-Dim dr As DialogResult = saveFileDialog.ShowDialog()
-If dr = System.Windows.Forms.DialogResult.OK Then
-    Dim fileStream As Stream = saveFileDialog.OpenFile()
-End If
-
-````
-
-{{endregion}}
 
 ## Working with the selected file
 
@@ -90,26 +49,10 @@ The **FileName** property can be set manually. This will change the value displa
 
 ####  Example 3: Set the file name 
 
-{{source=..\SamplesCS\FileDialogs\FileDialogsEditingOptions.cs region=SetFileNameExample}} 
-{{source=..\SamplesVB\FileDialogs\FileDialogsEditingOptions.vb region=SetFileNameExample}}
+<snippet id='file-dialogs-radsavefiledialog-setfilenameexample-cs' />
+<snippet id='file-dialogs-radsavefiledialog-setfilenameexample-vb' />
 
-````C#
-RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
-saveFileDialog.InitialDirectory = @"C:\Program Files\Internet Explorer\";
-saveFileDialog.FileName = @"C:\Program Files\Internet Explorer\iexplore.exe";
-DialogResult dr = saveFileDialog.ShowDialog();
 
-````
-````VB.NET
-
-Dim saveFileDialog As RadSaveFileDialog = New RadSaveFileDialog()
-saveFileDialog.InitialDirectory = "C:\Program Files\Internet Explorer\"
-saveFileDialog.FileName = "C:\Program Files\Internet Explorer\iexplore.exe"
-Dim dr As DialogResult = saveFileDialog.ShowDialog()
-
-````
-
-{{endregion}}
 
 
 >caption Figure 2: Setting the File Name

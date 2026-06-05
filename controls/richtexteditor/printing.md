@@ -25,23 +25,10 @@ In order to take advantage of the printing functionality, the document you want 
 
 Additionally to using the UI, you can print by taking advantage of the __Print()__,  __Print(bool showPrinterSettings)__ and __Print(bool showPrinterSettings, RadPrintDocument document)__ methods of  __RadRichTextEditor__. In addition **RadRichTextEditor** also provides a __PrintPreview()__ and __PrintPreview(RadPrintDocument document)__ methods.         
 
-{{source=..\SamplesCS\RichTextEditor\Print.cs region=print}} 
-{{source=..\SamplesVB\RichTextEditor\Print.vb region=print}} 
+<snippet id='richtexteditor-print-print-cs' />
+<snippet id='richtexteditor-print-print-vb' />
 
-````C#
-this.radRichTextEditor1.Print();
-//or
-this.radRichTextEditor1.PrintPreview();
 
-````
-````VB.NET
-Me.radRichTextEditor1.Print()
-'or
-Me.radRichTextEditor1.PrintPreview()
-
-````
-
-{{endregion}} 
 
 If you want to specify any print setting you can create an instance of [RadPrintDocument]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%}) and pass it to the respective method override.
 

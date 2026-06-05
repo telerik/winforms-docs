@@ -23,21 +23,10 @@ You can control the layout type of the column and row headers via the following 
 
 #### Headers Layout
 
-{{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=LayoutType}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=LayoutType}} 
+<snippet id='pivotgrid-pivotgridlayoutsettings-layouttype-cs' />
+<snippet id='pivotgrid-pivotgridlayoutsettings-layouttype-vb' />
 
-````C#
-this.radPivotGrid1.ColumnHeadersLayout = Telerik.WinControls.UI.PivotLayout.Tabular;
-this.radPivotGrid1.RowHeadersLayout = Telerik.WinControls.UI.PivotLayout.Compact;
 
-````
-````VB.NET
-Me.RadPivotGrid1.ColumnHeadersLayout = Telerik.WinControls.UI.PivotLayout.Tabular
-Me.RadPivotGrid1.RowHeadersLayout = Telerik.WinControls.UI.PivotLayout.Compact
-
-````
-
-{{endregion}} 
 
 ## Sub and Grand Totals
 
@@ -49,25 +38,10 @@ You can also control where SubTotals and GrandTotals are displayed:
 
 #### Set Grand and Sub Totals Position
 
-{{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=Totals}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=Totals}} 
+<snippet id='pivotgrid-pivotgridlayoutsettings-totals-cs' />
+<snippet id='pivotgrid-pivotgridlayoutsettings-totals-vb' />
 
-````C#
-this.radPivotGrid1.ColumnGrandTotalsPosition = Telerik.WinControls.UI.TotalsPos.First;
-this.radPivotGrid1.RowGrandTotalsPosition = Telerik.WinControls.UI.TotalsPos.Last;
-this.radPivotGrid1.ColumnsSubTotalsPosition = Telerik.WinControls.UI.TotalsPos.First;
-this.radPivotGrid1.RowsSubTotalsPosition = Telerik.WinControls.UI.TotalsPos.Last;
 
-````
-````VB.NET
-Me.RadPivotGrid1.ColumnGrandTotalsPosition = Telerik.WinControls.UI.TotalsPos.First
-Me.RadPivotGrid1.RowGrandTotalsPosition = Telerik.WinControls.UI.TotalsPos.Last
-Me.RadPivotGrid1.ColumnsSubTotalsPosition = Telerik.WinControls.UI.TotalsPos.First
-Me.RadPivotGrid1.RowsSubTotalsPosition = Telerik.WinControls.UI.TotalsPos.Last
-
-````
-
-{{endregion}}
 
 When you set the **RowSubTotalsPosition** and **ColumnSubTotalsPosition** property of the group description to a value different than *None*, the pivot renders the subtotals of the corresponding property group. You can alter this and hide the subtotals for a specific group via the **AutoShowSubTotals** property of the corresponding group description object.
 
@@ -77,31 +51,10 @@ When you set the **RowSubTotalsPosition** and **ColumnSubTotalsPosition** proper
 
 #### Hiding Sub Totals
 
-{{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=HiddenSubtotals}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=HiddenSubtotals}}
-````C#
-this.provider.RowGroupDescriptions.Add(new PropertyGroupDescription()
-{
-    PropertyName = "Product",
-    GroupComparer = new GroupNameComparer(),
-    SortOrder = Telerik.Pivot.Core.SortOrder.Descending,
-    AutoShowSubTotals = false
-});
-
-````
-````VB.NET
-Me.provider.RowGroupDescriptions.Add(New PropertyGroupDescription() With {
-.PropertyName = "Product",
-.GroupComparer = New GroupNameComparer(),
-.SortOrder = Telerik.Pivot.Core.SortOrder.Descending,
-.AutoShowSubTotals = False
-    })
-
-```` 
+<snippet id='pivotgrid-pivotgridlayoutsettings-hiddensubtotals-cs' />
+<snippet id='pivotgrid-pivotgridlayoutsettings-hiddensubtotals-vb' />
 
 
-
-{{endregion}}
 
 ## Aggregates
 
@@ -113,21 +66,10 @@ When you have added more than one aggregate description, there are special heade
 
 #### Set Aggregates Level and Position
 
-{{source=..\SamplesCS\PivotGrid\PivotGridLayoutSettings.cs region=Aggregates}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridLayoutSettings.vb region=Aggregates}} 
+<snippet id='pivotgrid-pivotgridlayoutsettings-aggregates-cs' />
+<snippet id='pivotgrid-pivotgridlayoutsettings-aggregates-vb' />
 
-````C#
-this.radPivotGrid1.AggregatesPosition = Telerik.Pivot.Core.PivotAxis.Columns;
-this.radPivotGrid1.AggregatesLevel = 1;
 
-````
-````VB.NET
-Me.RadPivotGrid1.AggregatesPosition = Telerik.Pivot.Core.PivotAxis.Columns
-Me.RadPivotGrid1.AggregatesLevel = 1
-
-````
-
-{{endregion}}
 
 # See Also
 

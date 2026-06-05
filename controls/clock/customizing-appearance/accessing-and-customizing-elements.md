@@ -32,17 +32,8 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Clock\ClockGettingStarted.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\Clock\ClockGettingStarted.vb region=AccessingCustomizingElements}} 
+<snippet id='clock-customizing-appearance-accessing-and-customizing-elements-accessingcustomizingelements-cs'/>
+<snippet id='clock-customizing-appearance-accessing-and-customizing-elements-accessingcustomizingelements-vb'/>
 
-````C#
-radClock1.ClockElement.SecondsArrow.Image = Properties.Resources.telerikLogo1;
-
-````
-````VB.NET
-radClock1.ClockElement.SecondsArrow.Image = My.Resources.telerikLogo1
-
-````
-
-{{endregion}} 
+ 
  

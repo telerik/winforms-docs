@@ -14,40 +14,17 @@ position: 2
 
 You can use the following method to select a cell in the code:
 
-{{source=..\SamplesCS\VirtualGrid\VirtualGridSelection.cs region=changeCurentCell}} 
-{{source=..\SamplesVB\VirtualGrid\VirtualGridSelection.vb region=changeCurentCell}}
-````C#
-this.radVirtualGrid1.SelectCell(5, 2);
+<snippet id='virtualgrid-virtualgridselection-changecurentcell-cs' />
+<snippet id='virtualgrid-virtualgridselection-changecurentcell-vb' />
 
-````
-````VB.NET
-Me.radVirtualGrid1.SelectCell(5, 2)
-
-````
-
-{{endregion}}
 
 
 ## Multiple Cells Select
 
 You can select multiple cells with code as well. This can be achieved by using the __BeginSelection__ and __ExtendCurrentRegion__ methods. For example:
 
-{{source=..\SamplesCS\VirtualGrid\VirtualGridSelection.cs region=selectMultipleCells}} 
-{{source=..\SamplesVB\VirtualGrid\VirtualGridSelection.vb region=selectMultipleCells}}
-````C#
-radVirtualGrid1.VirtualGridElement.Selection.BeginSelection(3, 1, radVirtualGrid1.MasterViewInfo, true);
-radVirtualGrid1.VirtualGridElement.Selection.ExtendCurrentRegion(6, 3);
-
-````
-````VB.NET
-radVirtualGrid1.VirtualGridElement.Selection.BeginSelection(3, 1, radVirtualGrid1.MasterViewInfo, True)
-radVirtualGrid1.VirtualGridElement.Selection.ExtendCurrentRegion(6, 3)
-
-````
-
-{{endregion}}
-
-
+<snippet id='virtualgrid-virtualgridselection-selectmultiplecells-cs' />
+<snippet id='virtualgrid-virtualgridselection-selectmultiplecells-vb' />
 
 
 

@@ -24,50 +24,19 @@ The first example shows how to use **HtmlFormatProvider** to import an HTML docu
 
 #### Import Html File
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\HtmlFormatProviderForm.cs region=ImportDocumentFromFile}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\HtmlFormatProviderForm.vb region=ImportDocumentFromFile}}
-````C#
-HtmlFormatProvider provider = new HtmlFormatProvider();
-using (FileStream inputStream = File.OpenRead(@"..\..\RichTextEditor\ImportExport\Sample.html"))
-{
-    this.radRichTextEditor1.Document = provider.Import(inputStream);
-}
-
-````
-````VB.NET
-Dim provider As HtmlFormatProvider = New HtmlFormatProvider()
-Using inputStream As FileStream = File.OpenRead("..\..\RichTextEditor\ImportExport\Sample.html")
-    Me.radRichTextEditor1.Document = provider.Import(inputStream)
-End Using
-
-````
+<snippet id='richtexteditor-htmlformatproviderform-importdocumentfromfile-cs' />
+<snippet id='richtexteditor-htmlformatproviderform-importdocumentfromfile-vb' />
 
 
-
-{{endregion}}
 
 This example shows how you can import an HTML string.
  
 #### Import Html String
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\HtmlFormatProviderForm.cs region=ImportHtmlString}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\HtmlFormatProviderForm.vb region=ImportHtmlString}}
-````C#
-string html = "<p>hello world!</p>";
-HtmlFormatProvider provider = new HtmlFormatProvider();
-this.radRichTextEditor1.Document = provider.Import(html);
-
-````
-````VB.NET
-Dim html As String = "<p>hello world!</p>"
-Dim provider As HtmlFormatProvider = New HtmlFormatProvider()
-Me.radRichTextEditor1.Document = provider.Import(html)
-
-````
+<snippet id='richtexteditor-htmlformatproviderform-importhtmlstring-cs' />
+<snippet id='richtexteditor-htmlformatproviderform-importhtmlstring-vb' />
 
 
-
-{{endregion}}
 
 The resulting __RadDocument__ can be used like any code-generated document.
         
@@ -79,52 +48,19 @@ The first example shows how to use the **HtmlFormatProvider** to export an insta
 
 #### Export Html to File
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\HtmlFormatProviderForm.cs region=ExportHtmlToFile}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\HtmlFormatProviderForm.vb region=ExportHtmlToFile}}
-````C#
-HtmlFormatProvider provider = new HtmlFormatProvider();
-using (Stream output = File.OpenWrite("Sample.html"))
-{
-    RadDocument document = this.radRichTextEditor1.Document;
-    provider.Export(document, output);
-}
-
-````
-````VB.NET
-Dim provider As HtmlFormatProvider = New HtmlFormatProvider()
-Using output As Stream = File.OpenWrite("Sample.html")
-    Dim document As RadDocument = Me.radRichTextEditor1.Document
-    provider.Export(document, output)
-End Using
-
-````
+<snippet id='richtexteditor-htmlformatproviderform-exporthtmltofile-cs' />
+<snippet id='richtexteditor-htmlformatproviderform-exporthtmltofile-vb' />
 
 
-
-{{endregion}}
 
 You can also export the document to a string variable like shown in the example below.
 
 #### Export Html to String
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\HtmlFormatProviderForm.cs region=ExportHtmlToString}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\HtmlFormatProviderForm.vb region=ExportHtmlToString}}
-````C#
-RadDocument document = this.radRichTextEditor1.Document;
-HtmlFormatProvider provider = new HtmlFormatProvider();
-string html = provider.Export(document);
-
-````
-````VB.NET
-Dim document As RadDocument = Me.radRichTextEditor1.Document
-Dim provider As HtmlFormatProvider = New HtmlFormatProvider()
-Dim html As String = provider.Export(document)
-
-````
+<snippet id='richtexteditor-htmlformatproviderform-exporthtmltostring-cs' />
+<snippet id='richtexteditor-htmlformatproviderform-exporthtmltostring-vb' />
 
 
-
-{{endregion}}
 
 ## See Also
 

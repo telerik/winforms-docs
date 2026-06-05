@@ -27,18 +27,10 @@ Sorting in __RadListControl__ is controlled by the __SortStyle__ property. The a
 
 #### Setting Sorting 
 
-{{source=..\SamplesCS\DropDownListControl\ListControl\ListControl1.cs region=sorting}} 
-{{source=..\SamplesVB\DropDownListControl\ListControl\ListControl1.vb region=sorting}} 
+<snippet id='listcontrol-sorting-sorting-cs' />
+<snippet id='listcontrol-sorting-sorting-vb' />
 
-````C#
-radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending;
 
-````
-````VB.NET
-radListControl1.SortStyle = Telerik.WinControls.Enumerations.SortStyle.Ascending
 
-````
-
-{{endregion}} 
  
 >caution Changing the __SortStyle__ property may cause the __SelectedIndexChanged__ event to fire if the position of the currently selected item has changed after the sort operation.

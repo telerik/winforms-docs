@@ -26,43 +26,18 @@ To get the available video capture devices (cameras), use the RadWebCam.**GetVid
 
 #### Getting the available cameras
 
-{{source=..\SamplesCS\WebCam\WebCamFeatures.cs region=GetDevices}} 
-{{source=..\SamplesVB\WebCam\WebCamFeatures.vb region=GetDevices}} 
+<snippet id='webcam-webcamfeatures-getdevices-cs' />
+<snippet id='webcam-webcamfeatures-getdevices-vb' />
 
-````C#
 
-            ReadOnlyCollection<MediaFoundationDeviceInfo> videoDevices = RadWebCam.GetVideoCaptureDevices(); 
-
-````
-````VB.NET
-
-        Dim videoDevices As ReadOnlyCollection(Of MediaFoundationDeviceInfo) = RadWebCam.GetVideoCaptureDevices()
-
-````
-
-{{endregion}} 
 
 ## Get Video Formats
 
 To get the available video file formats for the connected device, you can use the RadWebCam.**GetVideoFormats** static method.
 
-{{source=..\SamplesCS\WebCam\WebCamFeatures.cs region=VideoFormats}} 
-{{source=..\SamplesVB\WebCam\WebCamFeatures.vb region=VideoFormats}} 
+<snippet id='webcam-webcamfeatures-videoformats-cs' />
+<snippet id='webcam-webcamfeatures-videoformats-vb' />
 
-````C#
-
-            ReadOnlyCollection<MediaFoundationDeviceInfo> myVideoDevices = RadWebCam.GetVideoCaptureDevices();
-            ReadOnlyCollection<MediaFoundationVideoFormatInfo> videoFormats = RadWebCam.GetVideoFormats(videoDevices[0]); 
-
-````
-````VB.NET
-
-        Dim myVideoDevices As ReadOnlyCollection(Of MediaFoundationDeviceInfo) = RadWebCam.GetVideoCaptureDevices() 
-        Dim videoFormats As ReadOnlyCollection(Of MediaFoundationVideoFormatInfo) = RadWebCam.GetVideoFormats(videoDevices(0))
-
-````
-
-{{endregion}} 
 
 
 ## See Also

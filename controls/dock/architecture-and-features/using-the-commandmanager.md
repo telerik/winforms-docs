@@ -27,28 +27,10 @@ The names of all predefined commands may be found in the static **PredefinedComm
 
 You may easily specify custom shortcut for any of the predefined commands like this: 
 
-{{source=..\SamplesCS\Dock\UsingCommandManager.cs region=Shortcut}} 
-{{source=..\SamplesVB\Dock\UsingCommandManager.vb region=Shortcut}} 
+<snippet id='dock-using-the-commandmanager-shortcut-cs' />
+<snippet id='dock-using-the-commandmanager-shortcut-vb' />
 
-````C#
-private void ChangeNextDocumentShortcut()
-{
-    RadDockCommand command = this.radDock1.CommandManager.FindCommandByName(PredefinedCommandNames.NextDocument);
-    command.Shortcuts.Clear();
-    command.Shortcuts.Add(new RadShortcut(Keys.Shift, Keys.A, Keys.S));
-}
-
-````
-````VB.NET
-Private Sub ChangeNextDocumentShortcut()
-    Dim command As RadDockCommand = Me.radDock1.CommandManager.FindCommandByName(PredefinedCommandNames.NextDocument)
-    command.Shortcuts.Clear()
-    command.Shortcuts.Add(New RadShortcut(Keys.Shift, Keys.A, Keys.S))
-End Sub
-
-````
-
-{{endregion}}  
+  
 
 The above code specifies the **SHIFT+A+S** as a valid key combination that will trigger the **NextDocument** command.
 
@@ -58,90 +40,18 @@ The completely transparent object model of the command manager allows you to cre
 
 #### Define the custom command class 
 
-{{source=..\SamplesCS\Dock\UsingCommandManager.cs region=RadDockCommand}} 
-{{source=..\SamplesVB\Dock\UsingCommandManager.vb region=RadDockCommand}} 
+<snippet id='dock-using-the-commandmanager-raddockcommand-cs' />
+<snippet id='dock-using-the-commandmanager-raddockcommand-vb' />
 
-````C#
-public class FloatWindowCommand : RadDockCommand
-{
-    public FloatWindowCommand()
-    {
-        this.Name = "FloatWindow";
-        this.Shortcuts.Add(new RadShortcut(Keys.Control, Keys.F));
-    }
-    public override bool CanExecute(object parameter)
-    {
-        RadDock dock = parameter as RadDock;
-        if (dock == null)
-        {
-            return false;
-        }
-        return dock.ActiveWindow is ToolWindow;
-    }
-    public override object Execute(params object[] settings)
-    {
-        RadDock dock = settings[0] as RadDock;
-        Debug.Assert(dock != null, "Invalid execute parameter!");
-        ToolWindow toolWindow = dock.ActiveWindow as ToolWindow;
-        if (toolWindow != null)
-        {
-            dock.FloatWindow(toolWindow);
-        }
-        return base.Execute(settings);
-    }  
-}
-
-````
-````VB.NET
-Public Class FloatWindowCommand
-    Inherits RadDockCommand
-    Public Sub New()
-        Me.Name = "FloatWindow"
-        Me.Shortcuts.Add(New RadShortcut(Keys.Control, Keys.F))
-    End Sub
-    Public Overrides Function CanExecute(parameter As Object) As Boolean
-        Dim dock As RadDock = TryCast(parameter, RadDock)
-        If dock Is Nothing Then
-            Return False
-        End If
-        Return TypeOf dock.ActiveWindow Is ToolWindow
-    End Function
-    Public Overrides Function Execute(ParamArray settings As Object()) As Object
-        Dim dock As RadDock = TryCast(settings(0), RadDock)
-        Debug.Assert(dock IsNot Nothing, "Invalid execute parameter!")
-        Dim toolWindow As ToolWindow = TryCast(dock.ActiveWindow, ToolWindow)
-        If toolWindow IsNot Nothing Then
-            dock.FloatWindow(toolWindow)
-        End If
-        Return MyBase.Execute(settings)
-    End Function
-End Class
-
-````
-
-{{endregion}} 
+ 
 
 
 #### Register the custom command 
 
-{{source=..\SamplesCS\Dock\UsingCommandManager.cs region=RegisterCustomCommand}} 
-{{source=..\SamplesVB\Dock\UsingCommandManager.vb region=RegisterCustomCommand}} 
+<snippet id='dock-using-the-commandmanager-registercustomcommand-cs' />
+<snippet id='dock-using-the-commandmanager-registercustomcommand-vb' />
 
-````C#
-private void RegisterCustomCommand()
-{
-    this.radDock1.CommandManager.RegisterCommand(new FloatWindowCommand());
-}
-
-````
-````VB.NET
-Private Sub RegisterCustomCommand()
-    Me.radDock1.CommandManager.RegisterCommand(New FloatWindowCommand())
-End Sub
-
-````
-
-{{endregion}} 
+ 
  
 ## Enable/Disable the Command Manager
  

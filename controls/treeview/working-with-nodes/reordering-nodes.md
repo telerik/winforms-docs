@@ -22,43 +22,10 @@ There are two methods for reordering nodes:
 
 Use the __Insert__ and __Add__ methods of the RadTreeView Nodes collection to reorder nodes programmatically. The code snippet below demonstrates how this is done using the __Add__ method.
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=reordering}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=reordering}} 
+<snippet id='treeview-workingwithnodes1-reordering-cs' />
+<snippet id='treeview-workingwithnodes1-reordering-vb' />
 
-````C#
-// Create two parent nodes
-RadTreeNode parentNode1 = new RadTreeNode("First Parent");
-RadTreeNode parentNode2 = new RadTreeNode("Second Parent");
-// Add the parent nodes to tree view's nodes collection
-this.radTreeView1.Nodes.Add(parentNode1);
-this.radTreeView1.Nodes.Add(parentNode2);
-// Create a child node
-RadTreeNode childNode = new RadTreeNode("Child Node");
-// Add the child node to the first parent's nodes collection
-parentNode1.Nodes.Add(childNode);
-// Remove the child from the first parent collection and add it to the second parent nodes collection
-parentNode1.Nodes.Remove(childNode);
-parentNode2.Nodes.Add(childNode);
 
-````
-````VB.NET
-' Create two parent nodes
-Dim parentNode1 As New RadTreeNode("First Parent")
-Dim parentNode2 As New RadTreeNode("Second Parent")
-' Add the parent nodes to tree view's nodes collection
-Me.RadTreeView1.Nodes.Add(parentNode1)
-Me.RadTreeView1.Nodes.Add(parentNode2)
-' Create a child node
-Dim childNode As New RadTreeNode("Child Node")
-' Add the child node to the first parent's nodes collection
-parentNode1.Nodes.Add(childNode)
-' Remove the child from the first parent collection and add it to the second parent nodes collection
-parentNode1.Nodes.Remove(childNode)
-parentNode2.Nodes.Add(childNode)
-
-````
-
-{{endregion}} 
 
 The highlights of the code snippet are the last three lines where a __RadTreeNode__ is created, added to the "First Parent", then added to the "Second Parent". The result is that the "Child Node" is moved to the nodes collection of the "Second Parent".
 
@@ -70,61 +37,9 @@ In the sample code below, two parent nodes are created, a single node is added t
 
 ![WinForms RadTreeView Child Nodes](images/treeview-working-with-nodes-reordering-nodes002.png)
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=insertingNodes}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=insertingNodes}} 
+<snippet id='treeview-workingwithnodes1-insertingnodes-cs' />
+<snippet id='treeview-workingwithnodes1-insertingnodes-vb' />
 
-````C#
-// Create two parent nodes
-RadTreeNode parentNode1 = new RadTreeNode("First Parent");
-RadTreeNode parentNode2 = new RadTreeNode("Second Parent");
-// Add the parent nodes to tree view's nodes collection
-this.radTreeView1.Nodes.Add(parentNode1);
-this.radTreeView1.Nodes.Add(parentNode2);
-// Create child nodes
-RadTreeNode childNode = new RadTreeNode("Child Node");
-RadTreeNode childNode2 = new RadTreeNode("Child Node2");
-RadTreeNode childNode3 = new RadTreeNode("Child Node3");
-RadTreeNode childNode4 = new RadTreeNode("Child Node4");
-RadTreeNode childNode5 = new RadTreeNode("Child Node5");
-// Add a single child node to the parentNode1 nodes collection and
-// multiple nodes to the parentNode2 nodes collection
-parentNode1.Nodes.Add(childNode);
-parentNode2.Nodes.Add(childNode2);
-parentNode2.Nodes.Add(childNode3);
-parentNode2.Nodes.Add(childNode4);
-parentNode2.Nodes.Add(childNode5);
-// Insert the childNode instance to the parentNode2 nodes collection
-parentNode1.Nodes.Remove(childNode);
-parentNode2.Nodes.Insert(1, childNode);
-
-````
-````VB.NET
-' Create two parent nodes
-Dim parentNode1 As New RadTreeNode("First Parent")
-Dim parentNode2 As New RadTreeNode("Second Parent")
-' Add the parent nodes to tree view's nodes collection
-Me.RadTreeView1.Nodes.Add(parentNode1)
-Me.RadTreeView1.Nodes.Add(parentNode2)
-' Create child nodes
-Dim childNode As New RadTreeNode("Child Node")
-Dim childNode2 As New RadTreeNode("Child Node2")
-Dim childNode3 As New RadTreeNode("Child Node3")
-Dim childNode4 As New RadTreeNode("Child Node4")
-Dim childNode5 As New RadTreeNode("Child Node5")
-' Add a single child node to the parentNode1 nodes collection and
-' multiple nodes to the parentNode2 nodes collection
-parentNode1.Nodes.Add(childNode)
-parentNode2.Nodes.Add(childNode2)
-parentNode2.Nodes.Add(childNode3)
-parentNode2.Nodes.Add(childNode4)
-parentNode2.Nodes.Add(childNode5)
-' Insert the childNode instance to the parentNode2 nodes collection
-parentNode1.Nodes.Remove(childNode)
-parentNode2.Nodes.Insert(1, childNode)
-
-````
-
-{{endregion}} 
 
 
 # See Also

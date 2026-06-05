@@ -32,30 +32,10 @@ __RadTreeView__ provides a large set of events which allows you to respond to no
 * __SelectedNodesChanged__ - the event occurs when SelectedNodes collection has been changed.
 
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\WorkingWithNodes1.cs region=NodeMouseClick}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\WorkingWithNodes1.vb region=NodeMouseClick}} 
+<snippet id='treeview-workingwithnodes1-nodemouseclick-cs' />
+<snippet id='treeview-workingwithnodes1-nodemouseclick-vb' />
 
-````C#
-private void RadTreeView1_NodeMouseClick(object sender, RadTreeViewEventArgs e)
-{
-    RadTreeViewMouseEventArgs args = e as RadTreeViewMouseEventArgs;
-    if (args.OriginalEventArgs.Button == MouseButtons.Right)
-    {
-        //TO DO
-    }
-}
 
-````
-````VB.NET
-Private Sub RadTreeView1_NodeMouseClick(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
-    Dim args As RadTreeViewMouseEventArgs = TryCast(e, RadTreeViewMouseEventArgs)
-
-    If args.OriginalEventArgs.Button = MouseButtons.Right Then
-    ' TO DO
-    End If
-End Sub
-
-````
 
 The above events are using __RadTreeViewEventArgs__ and __RadTreeViewCancelEventArgs__ objects to provide you with useful information inside the events. The main difference is that you can cancel the interaction in the second case. These objects are exposing the following information:
         

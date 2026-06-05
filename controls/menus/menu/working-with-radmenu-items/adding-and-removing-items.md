@@ -21,31 +21,10 @@ In order to add top level "main" menu items use the RadMenu.__Items__ collection
 
 #### Constructing and adding menu items
 
-{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=menuItems}} 
-{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=menuItems}} 
+<snippet id='menus-menuform-menuitems-cs' />
+<snippet id='menus-menuform-menuitems-vb' />
 
-````C#
-RadMenuItem cdItem = new RadMenuItem();
-cdItem.Text = "CDs";
-radMenu1.Items.Add(cdItem);
-radMenu1.Items.Add(new RadMenuItem("Books"));
-int someData = 123;
-RadMenuItem dvdItem = new RadMenuItem("DVDs", someData);
-radMenu1.Items.Add(dvdItem);
 
-````
-````VB.NET
-Dim cdItem As New RadMenuItem()
-cdItem.Text = "CDs"
-RadMenu1.Items.Add(cdItem)
-RadMenu1.Items.Add(New RadMenuItem("Books"))
-Dim someData As Integer = 123
-Dim dvdItem As New RadMenuItem("DVDs", someData)
-RadMenu1.Items.Add(dvdItem)
-
-````
-
-{{endregion}} 
 
 ## Adding Sub Menu Items
 
@@ -55,45 +34,10 @@ Adding sub menu items plays by the same rules as adding items to the RadMenu.__I
 
 ![WinForms RadMenus Adding Sub Menu Items](images/menus-menu-working-with-radmenu-items-adding-and-removing-items002.png)
 
-{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=subItems}} 
-{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=subItems}} 
+<snippet id='menus-menuform-subitems-cs' />
+<snippet id='menus-menuform-subitems-vb' />
 
-````C#
-void Form1_Load(object sender, EventArgs e)
-{
-    radMenu1.Items.Add(new RadMenuItem("Books"));
-    RadMenuItem item = radMenu1.Items[0] as RadMenuItem;
-    item.Items.Add(new RadMenuItem("Best Sellers"));
-    item.Items.Add(new RadMenuItem("Reference Books"));
-    RadMenuItem bargainItem = new RadMenuItem("Bargains");
-    bargainItem.Click += new EventHandler(menuItem_Click);
-    item.Items.Add(bargainItem);
-}
-void menuItem_Click(object sender, EventArgs e)
-{
-    RadMenuItem item = (sender as RadMenuItem);
-    MessageBox.Show(item.Text + " was clicked.");
-}
 
-````
-````VB.NET
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-    RadMenu1.Items.Add(New RadMenuItem("Books"))
-    Dim item As RadMenuItem = TryCast(RadMenu1.Items(0), RadMenuItem)
-    item.Items.Add(New RadMenuItem("Best Sellers"))
-    item.Items.Add(New RadMenuItem("Reference Books"))
-    Dim bargainItem As New RadMenuItem("Bargains")
-    AddHandler bargainItem.Click, AddressOf menuItem_Click
-    item.Items.Add(bargainItem)
-End Sub
-Private Sub menuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Dim item As RadMenuItem = (TryCast(sender, RadMenuItem))
-    MessageBox.Show(item.Text & " was clicked.")
-End Sub
-
-````
-
-{{endregion}} 
 
 ## Adding a RadMenuComboItem
 
@@ -105,31 +49,10 @@ End Sub
 
 #### Adding Combo Sub Item
 
-{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=comboItem}} 
-{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=comboItem}} 
+<snippet id='menus-menuform-comboitem-cs' />
+<snippet id='menus-menuform-comboitem-vb' />
 
-````C#
-RadMenuItem bargainItem = new RadMenuItem("Bargains");
-RadMenuComboItem comboItem = new RadMenuComboItem();
-comboItem.ComboBoxElement.Items.Add(new RadListDataItem("$5 - $10"));
-comboItem.ComboBoxElement.Items.Add(new RadListDataItem("$10 - $20"));
-comboItem.ComboBoxElement.Items.Add(new RadListDataItem("$20 - $50"));
-bargainItem.Items.Add(comboItem);
-radMenu1.Items.Add(bargainItem);
 
-````
-````VB.NET
-Dim bargainItem As New RadMenuItem("Bargains")
-Dim comboItem As New RadMenuComboItem()
-comboItem.ComboBoxElement.Items.Add(New RadListDataItem("$5 - $10"))
-comboItem.ComboBoxElement.Items.Add(New RadListDataItem("$10 - $20"))
-comboItem.ComboBoxElement.Items.Add(New RadListDataItem("$20 - $50"))
-bargainItem.Items.Add(comboItem)
-RadMenu1.Items.Add(bargainItem)
-
-````
-
-{{endregion}} 
 
 ## Performance
 
@@ -137,23 +60,10 @@ For best performance when performing long running operations, such as loading a 
 
 #### Suspending the layout
 
-{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=performance}} 
-{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=performance}} 
+<snippet id='menus-menuform-performance-cs' />
+<snippet id='menus-menuform-performance-vb' />
 
-````C#
-radMenu1.BeginInit();
-// ... perform operations
-radMenu1.EndInit();
 
-````
-````VB.NET
-RadMenu1.BeginInit()
-' ... perform operations
-RadMenu1.EndInit()
-
-````
-
-{{endregion}}
 
 ## Removing Menu Items
 
@@ -161,25 +71,10 @@ Remove items from the items collection using __Remove()__ or __RemoveAt()__ meth
 
 #### Removing items
 
-{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=removingItems}} 
-{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=removingItems}} 
+<snippet id='menus-menuform-removingitems-cs' />
+<snippet id='menus-menuform-removingitems-vb' />
 
-````C#
-// remove second item in collection
-radMenu1.Items.RemoveAt(1);
-// Remove the zero-ith ite
-radMenu1.Items.Remove(radMenu1.Items[0]);
 
-````
-````VB.NET
-' remove second item in collection
-RadMenu1.Items.RemoveAt(1)
-' Remove the zero-ith ite
-RadMenu1.Items.Remove(RadMenu1.Items(0))
-
-````
-
-{{endregion}}
 
 # See Also
 

@@ -31,42 +31,10 @@ In this example, we will customize the ScreenTip visual appereance. For this pur
 
 #### __Example 1: ScreenTipShowing Event__
 
-{{source=..\SamplesCS\HeatMap\HeatMapDataBinding.cs region=ScreenTipShowing}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDataBinding.vb region=ScreenTipShowing}} 
-
-````C#
-private void RadHeatMap1_ScreenTipShowing1(object sender, HeatMapScreenTipEventArgs e)
-{
-    if(e.Index.IsDataCell)
-    {
-        var heatMap = sender as RadHeatMapElement;
-        var heatMapItem = heatMap.Definition.GetDataItem(e.Index);
-        var dataBoundObject = heatMapItem.DataBoundItem as TempInfo;
-        e.CaptionText = "Cell Value: " + e.CaptionText;
-        e.Text = "Row Data: "+dataBoundObject.Year.ToString("yyyy") + " Column Data: " + dataBoundObject.Month;
-        e.FooterText = "RowIndex: " + e.Index.RowIndex + " ColumnIndex: " + e.Index.ColumnIndex;
-    }            
-}
+<snippet id='heatmap-heatmapdatabinding-screentipshowing-cs' />
+<snippet id='heatmap-heatmapdatabinding-screentipshowing-vb' />
 
 
-````
-````VB.NET
-
-Private Sub RadHeatMap1_ScreenTipShowing1(ByVal sender As Object, ByVal e As HeatMapScreenTipEventArgs)
-    If e.Index.IsDataCell Then
-        Dim heatMap = TryCast(sender, RadHeatMapElement)
-        Dim heatMapItem = heatMap.Definition.GetDataItem(e.Index)
-        Dim dataBoundObject = TryCast(heatMapItem.DataBoundItem, TempInfo)
-        e.CaptionText = "Cell Value: " & e.CaptionText
-        e.Text = "Row Data: " & dataBoundObject.Year.ToString("yyyy") & " Column Data: " + dataBoundObject.Month
-        e.FooterText = "RowIndex: " & e.Index.RowIndex & " ColumnIndex: " + e.Index.ColumnIndex
-    End If
-End Sub
-
-
-````
-
-{{endregion}}
 
 ![WinForms RadHeatMap ScreenTip ScreenTipShowing](images/heatmap-tooltip-screentip02.png)
 

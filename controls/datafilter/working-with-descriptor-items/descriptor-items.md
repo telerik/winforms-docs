@@ -63,35 +63,10 @@ The *RadItem Collection Editor* that allows you to edit the items at design time
 
 The following snippet shows how you can add __DataFilterComboDescriptorItem__ in the code:
 
-{{source=..\SamplesCS\DataFilter\DataFilterEditing.cs region=AddComboItem}} 
-{{source=..\SamplesVB\DataFilter\DataFilterEditing.vb region=AddComboItem}}
-````C#
-DataFilterComboDescriptorItem item1 = new DataFilterComboDescriptorItem();
-item1.DescriptorName = "Item Type";
-item1.DescriptorType = typeof(int);
-item1.DataSource = GetTable();
-item1.ValueMember = "ID";
-item1.DisplayMember = "Type";
-item1.DropDownStyle = RadDropDownStyle.DropDown;
-item1.AutoCompleteMode = AutoCompleteMode.Suggest;
-radDataFilter1.Descriptors.Add(item1);
-
-````
-````VB.NET
-Dim item1 As New DataFilterComboDescriptorItem()
-item1.DescriptorName = "Item Type"
-item1.DescriptorType = GetType(Integer)
-item1.DataSource = GetTable()
-item1.ValueMember = "ID"
-item1.DisplayMember = "Type"
-item1.DropDownStyle = RadDropDownStyle.DropDown
-item1.AutoCompleteMode = AutoCompleteMode.Suggest
-RadDataFilter1.Descriptors.Add(item1)
-
-````
+<snippet id='datafilter-descriptor-items-addcomboitem-cs' />
+<snippet id='datafilter-descriptor-items-addcomboitem-vb' />
 
 
-{{endregion}}
 
 When this is done you can add new expression item and choose from the list:
 

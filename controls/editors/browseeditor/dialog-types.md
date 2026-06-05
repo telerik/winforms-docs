@@ -26,20 +26,10 @@ As of **R1 2020 SP1** the Telerik [File Dialogs]({%slug winforms/file-dialogs/ov
 
 #### FolderBrowseDialog
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=FolderBrowseDialog}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=FolderBrowseDialog}}
-````C#
-this.radBrowseEditor1.DialogType = BrowseEditorDialogType.FolderBrowseDialog;
-
-````
-````VB.NET
-Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.FolderBrowseDialog
-
-````
+<snippet id='editors-browseeditor1-folderbrowsedialog-cs' />
+<snippet id='editors-browseeditor1-folderbrowsedialog-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 1: FolderBrowseDialog
 
@@ -47,20 +37,10 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.FolderBrowseDialog
 
 #### FontDialog
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=FontDialog}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=FontDialog}}
-````C#
-this.radBrowseEditor1.DialogType = BrowseEditorDialogType.FontDialog;
-
-````
-````VB.NET
-Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.FontDialog
-
-````
+<snippet id='editors-browseeditor1-fontdialog-cs' />
+<snippet id='editors-browseeditor1-fontdialog-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 2: FontDialog
 
@@ -68,20 +48,10 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.FontDialog
 
 #### OpenFileDialog
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=OpenFileDialog}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=OpenFileDialog}}
-````C#
-this.radBrowseEditor1.DialogType = BrowseEditorDialogType.OpenFileDialog;
-
-````
-````VB.NET
-Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.OpenFileDialog
-
-````
+<snippet id='editors-browseeditor1-openfiledialog-cs' />
+<snippet id='editors-browseeditor1-openfiledialog-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 3: OpenFileDialog
 
@@ -89,17 +59,10 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.OpenFileDialog
 
 #### SaveFileDialog
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=SaveFileDialog}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=SaveFileDialog}}
-````C#
-this.radBrowseEditor1.DialogType = BrowseEditorDialogType.SaveFileDialog;
+<snippet id='editors-browseeditor1-savefiledialog-cs' />
+<snippet id='editors-browseeditor1-savefiledialog-vb' />
 
-````
-````VB.NET
-Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.SaveFileDialog
 
-```` 
-{{endregion}}
 
 >caption Figure 4: SaveFileDialog
 
@@ -108,18 +71,10 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.SaveFileDialog
 
 #### RadOpenFileDialog
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=TelerikOpenFileDialog}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=TelerikOpenFileDialog}}
+<snippet id='editors-browseeditor1-telerikopenfiledialog-cs' />
+<snippet id='editors-browseeditor1-telerikopenfiledialog-vb' />
 
-````C#
-this.radBrowseEditor1.DialogType = BrowseEditorDialogType.RadOpenFileDialog;
 
-````
-````VB.NET
-Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.RadOpenFileDialog
-
-```` 
-{{endregion}}
 
 >caption Figure 5: RadOpenFileDialog
 
@@ -127,18 +82,10 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.RadOpenFileDialog
 
 #### RadOpenFolderDialog
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=TelerikOpenFolderDialog}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=TelerikOpenFolderDialog}}
+<snippet id='editors-browseeditor1-telerikopenfolderdialog-cs' />
+<snippet id='editors-browseeditor1-telerikopenfolderdialog-vb' />
 
-````C#
-this.radBrowseEditor1.DialogType = BrowseEditorDialogType.RadOpenFolderDialog;
 
-````
-````VB.NET
-Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.RadOpenFolderDialog
-
-```` 
-{{endregion}}
 
 >caption Figure 6: RadOpenFolderDialog
 
@@ -148,18 +95,10 @@ Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.RadOpenFolderDialog
 #### RadSaveFileDialog
 
 
-{{source=..\SamplesCS\Editors\BrowseEditor1.cs region=TelerikSaveFileDialog}} 
-{{source=..\SamplesVB\Editors\BrowseEditor1.vb region=TelerikSaveFileDialog}}
+<snippet id='editors-browseeditor1-teleriksavefiledialog-cs' />
+<snippet id='editors-browseeditor1-teleriksavefiledialog-vb' />
 
-````C#
- this.radBrowseEditor1.DialogType = BrowseEditorDialogType.RadSaveFileDialog;
 
-````
-````VB.NET
-Me.RadBrowseEditor1.DialogType = BrowseEditorDialogType.RadSaveFileDialog
-
-```` 
-{{endregion}} 
 
 >caption Figure 7: RadSaveFileDialog
 

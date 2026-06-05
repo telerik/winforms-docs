@@ -20,22 +20,10 @@ To perform a Crop operation use the __Crop__ method. You need to pass a rectangl
 
 #### Crop Programmatically
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Crop}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Crop}}
-````C#
-radImageEditor1.ImageEditorElement.Crop(new Rectangle(0, 0, 20, 20));
-radImageEditor1.ImageEditorElement.SaveState();
-
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.Crop(New Rectangle(0, 0, 20, 20))
-radImageEditor1.ImageEditorElement.SaveState()
-
-````
+<snippet id='image-editor-imageeditorfeatures-crop-cs' />
+<snippet id='image-editor-imageeditorfeatures-crop-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 

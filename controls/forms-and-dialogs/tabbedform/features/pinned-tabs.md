@@ -27,18 +27,10 @@ First you need to show the pin button. Set the **ShowTabPinButton** property to 
 
 #### Show Pin Button
 
-{{source=..\SamplesCS\Forms And Dialogs\TabbedFormCode.cs region=PinProp}} 
-{{source=..\SamplesVB\Forms And Dialogs\TabbedFormCode.vb region=PinProp}}
-````C#
-this.TabbedFormControl.Tabs[0].Item.IsPinned = true;
+<snippet id='tabbedform-tabbedformcode-pinprop-cs' />
+<snippet id='tabbedform-tabbedformcode-pinprop-vb' />
 
-````
-````VB.NET
-Me.TabbedFormControl.Tabs(0).Item.IsPinned = True
 
-```` 
-
-{{endregion}} 
 
 >caption Figure 2: Pin Tabs by Using the Pin Button
 
@@ -52,17 +44,9 @@ You can use the following code to pin a tab.
 #### Pin with code
 
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=PinTab}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=PinTab}}
-````C#
-this.TabbedFormControl.Tabs[0].Item.IsPinned = true;
+<snippet id='tabbedform-tabbedformcode-pintab-cs' />
+<snippet id='tabbedform-tabbedformcode-pintab-vb' />
 
-````
-````VB.NET
-Me.TabbedFormControl.Tabs(0).Item.IsPinned = True
 
-```` 
-
-{{endregion}} 
 
 

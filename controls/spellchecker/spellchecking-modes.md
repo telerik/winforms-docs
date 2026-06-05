@@ -24,19 +24,10 @@ To do this kind of check, you should set the __SpellCheckMode__ property to *Wor
 
 #### Setting SpellCheckMode.WordByWord
 
-{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=wordByWord}} 
-{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=wordByWord}} 
+<snippet id='spellchecker-spchgettingstarted-wordbyword-cs' />
+<snippet id='spellchecker-spchgettingstarted-wordbyword-vb' />
 
-````C#
-this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord;
 
-````
-````VB.NET
-Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.WordByWord
-
-````
-
-{{endregion}} 
 
 When using this mode, **RadSpellChecker** will check every word in a separate window, which looks like this:
 
@@ -56,19 +47,10 @@ To do this kind of check, you should set the __SpellCheckMode__ property to *All
 
 #### Setting SpellCheckMode.AllAtOnce
 
-{{source=..\SamplesCS\SpellChecker\SpChGettingStarted.cs region=allAtOnce}} 
-{{source=..\SamplesVB\SpellChecker\SpChGettingStarted.vb region=allAtOnce}} 
+<snippet id='spellchecker-spchgettingstarted-allatonce-cs' />
+<snippet id='spellchecker-spchgettingstarted-allatonce-vb' />
 
-````C#
-this.radSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce;
 
-````
-````VB.NET
-Me.RadSpellChecker1.SpellCheckMode = Telerik.WinControls.UI.SpellCheckMode.AllAtOnce
-
-````
-
-{{endregion}} 
 
 When using SpellCheckMode.*AllAtOnce*, **RadSpellChecker** loads the entire content of the control being spell checked in a window looking like this:
 

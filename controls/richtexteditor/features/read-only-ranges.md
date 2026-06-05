@@ -33,20 +33,10 @@ __Insert in Measured Document__
 
 When the document is measured (for example, shown in a __RadRichTextEditor__), you can select the part of the document which you want to make read-only and use the __InsertReadOnlyRange()__ method of __RadRichTextEditor__ (or [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}) respectively):
 
-{{source=..\SamplesCS\RichTextEditor\Features\ReadOnlyRanges.cs region=insert}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ReadOnlyRanges.vb region=insert}} 
+<snippet id='richtexteditor-readonlyranges-insert-cs' />
+<snippet id='richtexteditor-readonlyranges-insert-vb' />
 
-````C#
-            
-this.radRichTextEditor1.InsertReadOnlyRange();
 
-````
-````VB.NET
-Me.radRichTextEditor1.InsertReadOnlyRange()
-
-````
-
-{{endregion}} 
 
 Generally, editing the content of a read only range is not possible through the UI and through __RadRichTextEditor__'s API. However, when manipulating a document using __RadDocumentEditor__ you can set the __RespectReadOnlyRanges__ property of __RadDocumentEditor__ to *false* and read only ranges will be ignored. 
 
@@ -54,97 +44,27 @@ __Insert in Non-measured Document__
 
 As opposed to when inserting with one of the methods of __RadRichTextEditor__, when building a document from code you have to make sure that the annotations in it are explicitly paired. This can be achieved with the __PairWithStart()__ method of __AnnotationRangeEnd__. Here is an example which builds a __RadDocument__ with a read only range in it.
 
-{{source=..\SamplesCS\RichTextEditor\Features\ReadOnlyRanges.cs region=add}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ReadOnlyRanges.vb region=add}} 
+<snippet id='richtexteditor-readonlyranges-add-cs' />
+<snippet id='richtexteditor-readonlyranges-add-vb' />
 
-````C#
-            
-RadDocument document = new RadDocument();
-Section section = new Section();
-Paragraph paragraph = new Paragraph();
-Span span = new Span("Content prior range[");
-Span span2 = new Span("]Content after range");
-Span readOnlyContent = new Span("READ ONLY");
-ReadOnlyRangeStart rangeStart = new ReadOnlyRangeStart();
-ReadOnlyRangeEnd rangeEnd = new ReadOnlyRangeEnd();
-rangeEnd.PairWithStart(rangeStart);
-            
-paragraph.Inlines.Add(span);
-paragraph.Inlines.Add(rangeStart);
-paragraph.Inlines.Add(readOnlyContent);
-paragraph.Inlines.Add(rangeEnd);
-paragraph.Inlines.Add(span2);
-            
-section.Blocks.Add(paragraph);
-document.Sections.Add(section);
 
-````
-````VB.NET
-Dim document As New RadDocument()
-Dim section As New Section()
-Dim paragraph As New Paragraph()
-Dim span As New Span("Content prior range[")
-Dim span2 As New Span("]Content after range")
-Dim readOnlyContent As New Span("READ ONLY")
-Dim rangeStart As New ReadOnlyRangeStart()
-Dim rangeEnd As New ReadOnlyRangeEnd()
-rangeEnd.PairWithStart(rangeStart)
-paragraph.Inlines.Add(span)
-paragraph.Inlines.Add(rangeStart)
-paragraph.Inlines.Add(readOnlyContent)
-paragraph.Inlines.Add(rangeEnd)
-paragraph.Inlines.Add(span2)
-section.Blocks.Add(paragraph)
-document.Sections.Add(section)
-
-````
-
-{{endregion}} 
 
 ## Delete Read Only Range
 
 In order to remove a read only range, you should simply call the __DeleteReadOnlyRange()__ method of  __RadRichTextEditor__ or __RadDocumentEditor__:
 
-{{source=..\SamplesCS\RichTextEditor\Features\ReadOnlyRanges.cs region=delete}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ReadOnlyRanges.vb region=delete}} 
+<snippet id='richtexteditor-readonlyranges-delete-cs' />
+<snippet id='richtexteditor-readonlyranges-delete-vb' />
 
-````C#
-            
-this.radRichTextEditor1.DeleteReadOnlyRange();
 
-````
-````VB.NET
-Me.radRichTextEditor1.DeleteReadOnlyRange()
-
-````
-
-{{endregion}} 
 
 The above-demonstrated method will delete the read only range the caret is currently located in and make the content which was in it editable again.        
 
 Additionally, if you can obtain a reference to a particular __ReadOnlyRangeStart__ element in the document, you can delete it with the __DeleteReadOnlyRange(ReadOnlyRangeStart start)__ method. For example, if you want to delete a particular range based on its __Tag__, you can do it as follows:
 
-{{source=..\SamplesCS\RichTextEditor\Features\ReadOnlyRanges.cs region=start}} 
-{{source=..\SamplesVB\RichTextEditor\Features\ReadOnlyRanges.vb region=start}} 
+<snippet id='richtexteditor-readonlyranges-start-cs' />
+<snippet id='richtexteditor-readonlyranges-start-vb' />
 
-````C#
-            
-ReadOnlyRangeStart start = this.radRichTextEditor1.Document.EnumerateChildrenOfType<ReadOnlyRangeStart>().Where(x => x.Tag == "ReadOnly").FirstOrDefault();
-if (start != null)
-{
-    this.radRichTextEditor1.DeleteReadOnlyRange(start);
-}
-
-````
-````VB.NET
-Dim start As ReadOnlyRangeStart = Me.radRichTextEditor1.Document.EnumerateChildrenOfType(Of ReadOnlyRangeStart)().Where(Function(x) x.Tag = "ReadOnly").FirstOrDefault()
-If start IsNot Nothing Then
-    Me.radRichTextEditor1.DeleteReadOnlyRange(start)
-End If
-
-````
-
-{{endregion}} 
 
 
 # See Also

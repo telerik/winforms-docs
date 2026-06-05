@@ -14,42 +14,19 @@ There are two ways to assign tooltips to __RadCheckBox__, namely setting the __T
 
 #### Setting the ToolTipText property
 
-{{source=..\SamplesCS\Buttons\CheckBox.cs region=SetToolTipText}} 
-{{source=..\SamplesVB\Buttons\CheckBox.vb region=SetToolTipText}}
+<snippet id='buttons-checkbox-tooltips-settooliptext-cs' />
+<snippet id='buttons-checkbox-tooltips-settooliptext-vb' />
 
-````C#
-this.radCheckBox1.ButtonElement.ToolTipText = "CheckBox tool tip";
 
-````
-````VB.NET
-Me.radCheckBox1.ButtonElement.ToolTipText = "CheckBox tool tip"
-
-````
-
-{{endregion}} 
 
 ![WinForms RadCheckBox ToolTipText](images/buttons-checkbox-tooltips001.gif)
 
 #### Setting tool tips in the ToolTipTextNeeded event
 
-{{source=..\SamplesCS\Buttons\CheckBox.cs region=ToolTipTextNeeded}} 
-{{source=..\SamplesVB\Buttons\CheckBox.vb region=ToolTipTextNeeded}}
+<snippet id='buttons-checkbox-tooltips-tooltiptextneeded-cs' />
+<snippet id='buttons-checkbox-tooltips-tooltiptextneeded-vb' />
 
-````C#
-private void radCheckBox1_ToolTipTextNeeded(object sender, Telerik.WinControls.ToolTipTextNeededEventArgs e)
-{
-    e.ToolTipText = "I am a checkbox";
-}
 
-````
-````VB.NET
-Private Sub radCheckBox1_ToolTipTextNeeded(sender As Object, e As Telerik.WinControls.ToolTipTextNeededEventArgs)
-    e.ToolTipText = "I am a checkbox"
-End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadButtons ToolTipTextNeeded to set ToolTipText](images/buttons-checkbox-tooltips002.gif)
 

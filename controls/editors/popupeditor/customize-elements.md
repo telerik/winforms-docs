@@ -17,22 +17,10 @@ You can access the text box by using the __TextBoxElement__ property. This allow
 
 #### Customize TextBoxElement 
 
-{{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=TextBox}} 
-{{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=TextBox}} 
+<snippet id='editors-popupeditorcode-textbox-cs' />
+<snippet id='editors-popupeditorcode-textbox-vb' />
 
-````C#
-radPopupEditor1.TextBoxElement.Font = new Font("Arial", 12, FontStyle.Regular);
-radPopupEditor1.ForeColor = ColorTranslator.FromHtml("#008de7");
 
-````
-````VB.NET
-radPopupEditor1.TextBoxElement.Font = New Font("Arial", 12, FontStyle.Regular)
-radPopupEditor1.ForeColor = ColorTranslator.FromHtml("#008de7")
-
-````
-
-{{endregion}} 
- 
 
 >caption Figure 1: Customizing the text box Font and ForeColor.
 
@@ -45,21 +33,8 @@ The arrow button can be accessed via the __ArrowButtonElement__ property. The fo
 
 #### Set arrow button BackColor 
 
-{{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=Button}} 
-{{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=Button}} 
-
-````C#
-radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = ColorTranslator.FromHtml("#009de1");
-radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid;
-
-````
-````VB.NET
-radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.BackColor = ColorTranslator.FromHtml("#009de1")
-radPopupEditor1.PopupEditorElement.ArrowButtonElement.Fill.GradientStyle = Telerik.WinControls.GradientStyles.Solid
-
-````
-
-{{endregion}} 
+<snippet id='editors-popupeditorcode-button-cs' />
+<snippet id='editors-popupeditorcode-button-vb' />
 
 
 
@@ -73,25 +48,10 @@ The popup can be access with the __Popup__ property. This gives you access to al
 
 #### Change Popup BackColor
 
-{{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=DropDown}} 
-{{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=DropDown}} 
+<snippet id='editors-popupeditorcode-dropdown-cs' />
+<snippet id='editors-popupeditorcode-dropdown-vb' />
 
-````C#
-void RadForm1_Load(object sender, EventArgs e)
-{
-    radPopupEditor1.Popup.BackColor = ColorTranslator.FromHtml("#009de1");
-}
 
-````
-````VB.NET
-Private Sub RadForm1_Load(ByVal sender As Object, ByVal e As EventArgs)
-    radPopupEditor1.Popup.BackColor = ColorTranslator.FromHtml("#009de1")
-End Sub
-
-````
-
-{{endregion}} 
- 
 
 >caption Figure 3: Change Popup BackColor.
 

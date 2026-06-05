@@ -22,34 +22,10 @@ In order to utilize this functionality, one needs to load the font carried with 
 
 #### Custom Fonts
 
-{{source=..\SamplesCS\RichTextEditor\Features\CustomFonts.cs region=CustomFontLoading}} 
-{{source=..\SamplesVB\RichTextEditor\Features\CustomFonts.vb region=CustomFontLoading}}
-````C#
-public CustomFonts()
-{
-    using (Stream stream = System.Reflection.Assembly.GetAssembly(this.GetType()).GetManifestResourceStream("SamplesCS.RichTextEditor.Features.HelveticaLt.ttf"))
-    {
-        ThemeResolutionService.LoadFont(stream);
-        Telerik.WinForms.Documents.Layout.FontManager.RegisterFont(new Telerik.WinControls.RichTextEditor.UI.FontFamily("Helvetica-Light"));
-    }
-    InitializeComponent();
-}
-
-````
-````VB.NET
-Public Sub New()
-    Using stream As Stream = System.Reflection.Assembly.GetAssembly(Me.[GetType]()).GetManifestResourceStream("SamplesVB.HelveticaLt.ttf")
-        ThemeResolutionService.LoadFont(stream)
-        Telerik.WinForms.Documents.Layout.FontManager.RegisterFont(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Helvetica-Light"))
-    End Using
-    InitializeComponent()
-End Sub
-
-```` 
+<snippet id='richtexteditor-customfonts-customfontloading-cs' />
+<snippet id='richtexteditor-customfonts-customfontloading-vb' />
 
 
-
-{{endregion}} 
 
 # See Also
 

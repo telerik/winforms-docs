@@ -16,29 +16,10 @@ As of **R1 2021** the RadPopupEditor.**Popup** offers keyboard handling via its 
 
 #### Handling Escape
 
-{{source=..\SamplesCS\Editors\PopupEditor\PopupEditorCode.cs region=HandleEscape}} 
-{{source=..\SamplesVB\Editors\PopupEditor\PopupEditorCode.vb region=HandleEscape}} 
+<snippet id='editors-popupeditorcode-handleescape-cs' />
+<snippet id='editors-popupeditorcode-handleescape-vb' />
 
-````C#
-        private void Popup_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyData== Keys.Escape)
-            {
-                e.Handled = true;
-            }
-        } 
 
-````
-````VB.NET
-    Private Sub Popup_KeyDown(sender As Object, e As KeyEventArgs)
-        If e.KeyData = Keys.Escape Then
-            e.Handled = True
-        End If
-    End Sub 
-
-````
-
-{{endregion}} 
 
 The **KeyEventArgs** exposes the following useful information:
 

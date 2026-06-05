@@ -23,27 +23,10 @@ In order to export a document to PDF you need to use the __Export()__ method of 
 The code snippet in __Example 1__ shows how to create a __PdfFormatProvider__ instance and use it to export the document to PDF.
 
 #### Export to Pdf File
-{{source=..\SamplesCS\RichTextEditor\ImportExport\PdfFormatProviderForm.cs region=ExportPdfToFile}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\PdfFormatProviderForm.vb region=ExportPdfToFile}}
-````C#
-PdfFormatProvider provider = new PdfFormatProvider();
-using (Stream output = File.OpenWrite("sample.pdf"))
-{
-    RadDocument document = this.radRichTextEditor1.Document;
-    provider.Export(document, output);
-}
+<snippet id='richtexteditor-pdfformatproviderform-exportpdftofile-cs' />
+<snippet id='richtexteditor-pdfformatproviderform-exportpdftofile-vb' />
 
-````
-````VB.NET
-Dim provider As PdfFormatProvider = New PdfFormatProvider()
-Using output As Stream = File.OpenWrite("Sample.pdf")
-    Dim document As RadDocument = Me.radRichTextEditor1.Document
-    provider.Export(document, output)
-End Using
 
-````
-
-{{endregion}}
 
 The result from the method is a document that can be opened in any application that supports PDF documents.
 

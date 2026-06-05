@@ -33,34 +33,10 @@ The following code snippet demonstrates how to add a validation rule ensuring th
 
 ![WinForms RadValidationProvider with RadTextBox](images/validation-provider-validation-rules001.png) 
 
-{{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=SimpleRule}} 
-{{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=SimpleRule}}
-
-````C#
-RadValidationRule radValidationRule1 = new RadValidationRule();
-radValidationRule1.AutoToolTip = true;
-radValidationRule1.Controls.Add(this.radTextBox1);
-radValidationRule1.Operator = Telerik.WinControls.Data.FilterOperator.IsNotLike;
-radValidationRule1.ToolTipText = "Location can\'t be empty!";
-radValidationRule1.Value = "";
-
-radValidationProvider1.ValidationRules.Add(radValidationRule1);
+<snippet id='validation-provider-validationprovidergettingstarted-simplerule-cs' />
+<snippet id='validation-provider-validationprovidergettingstarted-simplerule-vb' />
 
 
-````
-````VB.NET
-Dim radValidationRule1 As RadValidationRule = New RadValidationRule()
-radValidationRule1.AutoToolTip = True
-radValidationRule1.Controls.Add(Me.RadTextBox1)
-radValidationRule1.[Operator] = Telerik.WinControls.Data.FilterOperator.IsNotLike
-radValidationRule1.ToolTipText = "Location can't be empty!"
-radValidationRule1.Value = ""
-radValidationProvider1.ValidationRules.Add(radValidationRule1)
-
-
-````
-
-{{endregion}} 
 
 ## RadValidationRuleWithTargetControl
 
@@ -79,77 +55,17 @@ The following rule will ensure that the first **RadDateTimePicker**'s value is l
 
 ![WinForms RadValidationProvider with RadDateTimePicker LessThan](images/validation-provider-validation-rules002.png) 
 
-{{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=SecondControl}} 
-{{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=SecondControl}}
-
-````C#
-
-            RadValidationRuleWithTargetControl radValidationRuleWithTargetControl1 = new RadValidationRuleWithTargetControl();
-            radValidationRuleWithTargetControl1.AutoToolTip = true;
-            radValidationRuleWithTargetControl1.Controls.Add(this.radDateTimePicker1);
-            radValidationRuleWithTargetControl1.Operator = Telerik.WinControls.Data.FilterOperator.IsLessThan;
-            radValidationRuleWithTargetControl1.PropertyName = "Value";
-            radValidationRuleWithTargetControl1.TargetControl = this.radDateTimePicker2;
-            radValidationRuleWithTargetControl1.TargetControlPropertyName = "Value";
-            radValidationRuleWithTargetControl1.ToolTipText = "Start date should be less than End date!";
-
-            radValidationProvider1.ValidationRules.Add(radValidationRuleWithTargetControl1);
+<snippet id='validation-provider-validationprovidergettingstarted-secondcontrol-cs' />
+<snippet id='validation-provider-validationprovidergettingstarted-secondcontrol-vb' />
 
 
-````
-````VB.NET
-        Dim radValidationRuleWithTargetControl1 As RadValidationRuleWithTargetControl = New RadValidationRuleWithTargetControl()
-        radValidationRuleWithTargetControl1.AutoToolTip = True
-        radValidationRuleWithTargetControl1.Controls.Add(Me.RadDateTimePicker1)
-        radValidationRuleWithTargetControl1.[Operator] = Telerik.WinControls.Data.FilterOperator.IsLessThan
-        radValidationRuleWithTargetControl1.PropertyName = "Value"
-        radValidationRuleWithTargetControl1.TargetControl = Me.RadDateTimePicker2
-        radValidationRuleWithTargetControl1.TargetControlPropertyName = "Value"
-        radValidationRuleWithTargetControl1.ToolTipText = "Start date should be less than End date!"
-        radValidationProvider1.ValidationRules.Add(radValidationRuleWithTargetControl1)
-
-
-````
-
-{{endregion}}
 
 In order to cover the case that the second **RadDateTimePicker** is greater than the first one, you will need to add one more **RadValidationRuleWithTargetControl**:
 
 ![WinForms RadValidationProvider with RadDateTimePicker GreaterThan](images/validation-provider-validation-rules003.png) 
 
-{{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=TargetControl}} 
-{{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=TargetControl}}
-
-````C#
-
-            RadValidationRuleWithTargetControl radValidationRuleWithTargetControl2 = new RadValidationRuleWithTargetControl();
-            radValidationRuleWithTargetControl2.AutoToolTip = true;
-            radValidationRuleWithTargetControl2.Controls.Add(this.radDateTimePicker2);
-            radValidationRuleWithTargetControl2.Operator = Telerik.WinControls.Data.FilterOperator.IsGreaterThan;
-            radValidationRuleWithTargetControl2.PropertyName = "Value";
-            radValidationRuleWithTargetControl2.TargetControl = this.radDateTimePicker1;
-            radValidationRuleWithTargetControl2.TargetControlPropertyName = "Value";
-            radValidationRuleWithTargetControl2.ToolTipText = "End date should be greater than Start date!";
-
-            radValidationProvider1.ValidationRules.Add(radValidationRuleWithTargetControl2);
-
-
-````
-````VB.NET
-
-        Dim radValidationRuleWithTargetControl2 As RadValidationRuleWithTargetControl = New RadValidationRuleWithTargetControl()
-        radValidationRuleWithTargetControl2.AutoToolTip = True
-        radValidationRuleWithTargetControl2.Controls.Add(Me.RadDateTimePicker2)
-        radValidationRuleWithTargetControl2.[Operator] = Telerik.WinControls.Data.FilterOperator.IsGreaterThan
-        radValidationRuleWithTargetControl2.PropertyName = "Value"
-        radValidationRuleWithTargetControl2.TargetControl = Me.RadDateTimePicker1
-        radValidationRuleWithTargetControl2.TargetControlPropertyName = "Value"
-        radValidationRuleWithTargetControl2.ToolTipText = "End date should be greater than Start date!"
-        radValidationProvider1.ValidationRules.Add(radValidationRuleWithTargetControl2)
-
-````
-
-{{endregion}}
+<snippet id='validation-provider-validationprovidergettingstarted-targetcontrol-cs' />
+<snippet id='validation-provider-validationprovidergettingstarted-targetcontrol-vb' />
 
 
 
@@ -164,97 +80,10 @@ The following code snippet demonstrates how to define a **RadCompositeValidation
 None of the associated controls (e.g. radSpinEditor1) of a composite rule should be added as a target in any of the nested rules! Please be careful when defining composite rules in order to get the proper validation logic. Usually, it is even possible to simplify the validation logic and define separate **RadValidationRuleWithTargetControls** outside a composite rule.
 >
 
-{{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=CompositeRule}} 
-{{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=CompositeRule}}
+<snippet id='validation-provider-validationprovidergettingstarted-compositerule-cs' />
+<snippet id='validation-provider-validationprovidergettingstarted-compositerule-vb' />
 
-````C#
-            this.radSpinEditor2.Minimum = 0;
-            this.radSpinEditor2.Maximum = 10000;
-            this.radSpinEditor2.Value = 1000;
 
-            this.radSpinEditor3.Minimum = 0;
-            this.radSpinEditor3.Maximum = 10000;
-            this.radSpinEditor3.Value = 10000;
-
-            this.radSpinEditor1.Maximum = 10000;
-
-            RadCompositeValidationRule compositeValidationRule = new RadCompositeValidationRule();
-            compositeValidationRule.LogicalOperator = Telerik.WinControls.Data.FilterLogicalOperator.And;
-            compositeValidationRule.ToolTipText = "Car price should be greater than Minimum and less than Maximum price!";
-
-            RadValidationRuleWithTargetControl radValidationRuleWithTargetControl1 = new RadValidationRuleWithTargetControl();
-            radValidationRuleWithTargetControl1.AutoToolTip = true;
-            radValidationRuleWithTargetControl1.PropertyName = "Value";
-            radValidationRuleWithTargetControl1.AddControl(this.radSpinEditor1);
-            radValidationRuleWithTargetControl1.Operator = Telerik.WinControls.Data.FilterOperator.IsGreaterThan;
-            radValidationRuleWithTargetControl1.TargetControl = this.radSpinEditor2;
-            radValidationRuleWithTargetControl1.TargetControlPropertyName = "Value";
-
-            compositeValidationRule.ValidationRules.Add(radValidationRuleWithTargetControl1);
-
-            RadValidationRuleWithTargetControl radValidationRuleWithTargetControl2 = new RadValidationRuleWithTargetControl();
-            radValidationRuleWithTargetControl2.AutoToolTip = true;
-            radValidationRuleWithTargetControl2.PropertyName = "Value";
-            radValidationRuleWithTargetControl2.AddControl(this.radSpinEditor1);
-            radValidationRuleWithTargetControl2.Operator = Telerik.WinControls.Data.FilterOperator.IsLessThan;
-            radValidationRuleWithTargetControl2.TargetControl = this.radSpinEditor3;
-            radValidationRuleWithTargetControl2.TargetControlPropertyName = "Value";
-
-            compositeValidationRule.ValidationRules.Add(radValidationRuleWithTargetControl2);
-
-            RadValidationRule radValidationRule3 = new RadValidationRule();
-            radValidationRule3.AutoToolTip = true;
-            radValidationRule3.AddControl(this.radSpinEditor1);
-            radValidationRule3.PropertyName = "Value";
-            radValidationRule3.Operator = Telerik.WinControls.Data.FilterOperator.IsNotEqualTo;
-            radValidationRule3.Value = 5000;
-
-            compositeValidationRule.ValidationRules.Add(radValidationRule3);
-
-            this.radValidationProvider1.ValidationRules.Add(compositeValidationRule); 
- 
-
-````
-````VB.NET
- 
-        Me.radSpinEditor2.Minimum = 0
-        Me.radSpinEditor2.Maximum = 10000
-        Me.radSpinEditor2.Value = 1000
-        Me.radSpinEditor3.Minimum = 0
-        Me.radSpinEditor3.Maximum = 10000
-        Me.radSpinEditor3.Value = 10000
-        Me.radSpinEditor1.Maximum = 10000
-        Dim compositeValidationRule As RadCompositeValidationRule = New RadCompositeValidationRule()
-        compositeValidationRule.LogicalOperator = Telerik.WinControls.Data.FilterLogicalOperator.[And]
-        compositeValidationRule.ToolTipText = "Car price should be greater than Minimum and less than Maximum price!"
-        Dim radValidationRuleWithTargetControl1 As RadValidationRuleWithTargetControl = New RadValidationRuleWithTargetControl()
-        radValidationRuleWithTargetControl1.AutoToolTip = True
-        radValidationRuleWithTargetControl1.PropertyName = "Value"
-        radValidationRuleWithTargetControl1.AddControl(Me.radSpinEditor1)
-        radValidationRuleWithTargetControl1.[Operator] = Telerik.WinControls.Data.FilterOperator.IsGreaterThan
-        radValidationRuleWithTargetControl1.TargetControl = Me.radSpinEditor2
-        radValidationRuleWithTargetControl1.TargetControlPropertyName = "Value"
-        compositeValidationRule.ValidationRules.Add(radValidationRuleWithTargetControl1)
-        Dim radValidationRuleWithTargetControl2 As RadValidationRuleWithTargetControl = New RadValidationRuleWithTargetControl()
-        radValidationRuleWithTargetControl2.AutoToolTip = True
-        radValidationRuleWithTargetControl2.PropertyName = "Value"
-        radValidationRuleWithTargetControl2.AddControl(Me.radSpinEditor1)
-        radValidationRuleWithTargetControl2.[Operator] = Telerik.WinControls.Data.FilterOperator.IsLessThan
-        radValidationRuleWithTargetControl2.TargetControl = Me.radSpinEditor3
-        radValidationRuleWithTargetControl2.TargetControlPropertyName = "Value"
-        compositeValidationRule.ValidationRules.Add(radValidationRuleWithTargetControl2)
-        Dim radValidationRule3 As RadValidationRule = New RadValidationRule()
-        radValidationRule3.AutoToolTip = True
-        radValidationRule3.AddControl(Me.radSpinEditor1)
-        radValidationRule3.PropertyName = "Value"
-        radValidationRule3.[Operator] = Telerik.WinControls.Data.FilterOperator.IsNotEqualTo
-        radValidationRule3.Value = 5000
-        compositeValidationRule.ValidationRules.Add(radValidationRule3)
-        Me.radValidationProvider1.ValidationRules.Add(compositeValidationRule)
-
-````
-
-{{endregion}}
 
 ![WinForms RadValidationProvider between Minimum and Maximum](images/validation-provider-validation-rules004.png) 
 
@@ -283,61 +112,10 @@ You can add a **RadValidationRule** for empty Text for example and in addition t
 
 #### Custom Validation in the ControlValidation Event
 
-{{source=..\SamplesCS\ValidationProvider\ValidationProviderGettingStarted.cs region=CustomValidation}} 
-{{source=..\SamplesVB\ValidationProvider\ValidationProviderGettingStarted.vb region=CustomValidation}}
-
-````C#
-        public void CustomValidation()
-        {
-            RadValidationRule radValidationRule1 = new RadValidationRule();
-            radValidationRule1.AutoToolTip = true;
-            radValidationRule1.AddControl(this.radTextBox1);
-            radValidationRule1.Operator = Telerik.WinControls.Data.FilterOperator.IsNotLike;
-            radValidationRule1.PropertyName = "Text";
-            radValidationRule1.ToolTipText = "Text is empty!";
-            radValidationRule1.Value = "";
-
-            radValidationProvider1.ValidationRules.Add(radValidationRule1);
-
-            this.radValidationProvider1.ControlValidation += radValidationProvider_ControlValidation;
-        }
-        private void radValidationProvider_ControlValidation(object sender, RadValidationEventArgs e)
-        {
-            if (e.Control == this.radTextBox1 && this.radTextBox1.Text != string.Empty &&
-                this.radTextBox1.TextBoxElement.TextBoxItem.TextLength < 20)
-            {
-                e.ErrorText = "Text is less than 20 characters !";
-                e.IsValid = false;
-            }
-        }
+<snippet id='validation-provider-validationprovidergettingstarted-customvalidation-cs' />
+<snippet id='validation-provider-validationprovidergettingstarted-customvalidation-vb' />
 
 
-````
-````VB.NET
-    Public Sub CustomValidation()
-        Dim radValidationRule1 As RadValidationRule = New RadValidationRule()
-        radValidationRule1.AutoToolTip = True
-        radValidationRule1.AddControl(Me.RadTextBox1)
-        radValidationRule1.[Operator] = Telerik.WinControls.Data.FilterOperator.IsNotLike
-        radValidationRule1.PropertyName = "Text"
-        radValidationRule1.ToolTipText = "Text is empty!"
-        radValidationRule1.Value = ""
-        radValidationProvider1.ValidationRules.Add(radValidationRule1)
-        AddHandler Me.radValidationProvider1.ControlValidation, AddressOf radValidationProvider_ControlValidation
-    End Sub
-
-    Private Sub radValidationProvider_ControlValidation(ByVal sender As Object, ByVal e As RadValidationEventArgs)
-        If e.Control.Equals(Me.RadTextBox1) AndAlso Me.RadTextBox1.Text <> String.Empty _
-            AndAlso Me.RadTextBox1.TextBoxElement.TextBoxItem.TextLength < 20 Then
-            e.ErrorText = "Text is less than 20 characters !"
-            e.IsValid = False
-        End If
-    End Sub
-
-
-````
-
-{{endregion}} 
 
 # See Also
 

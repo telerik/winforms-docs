@@ -48,26 +48,10 @@ To programmatically add a **RadLabel** to a form, create a new instance of a **
 
 #### Adding a RadLabel at Run-time 
 
-{{source=..\SamplesCS\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.cs region=AddLabel}} 
-{{source=..\SamplesVB\PanelsAndLabels\Label\LabelHtmlLikeTextFormatting.vb region=AddLabel}}
-````C#
-RadLabel label = new RadLabel();
-this.Controls.Add(label);
-label.ForeColor = Color.Green;
-label.Text = "I am a RadLabel!";
-
-````
-````VB.NET
-Dim label As New RadLabel()
-Me.Controls.Add(label)
-label.ForeColor = Color.Green
-label.Text = "I am a RadLabel!"
-
-```` 
+<snippet id='panels-and-labels-labelhtmlliketextformatting-addlabel-cs' />
+<snippet id='panels-and-labels-labelhtmlliketextformatting-addlabel-vb' />
 
 
-
-{{endregion}}
 
 ## Programming RadLabel
 

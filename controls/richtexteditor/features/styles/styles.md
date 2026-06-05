@@ -73,55 +73,21 @@ New Styles can be declared and added to the **StylesRepository** of the document
 
 This is how a **Character** style can be defined and registered:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=style}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=style}} 
+<snippet id='richtexteditor-styles-style-cs' />
+<snippet id='richtexteditor-styles-style-vb' />
 
-````C#
-            
-StyleDefinition charStyle = new StyleDefinition();
-charStyle.Type = StyleType.Character;
-charStyle.SpanProperties.FontFamily = new Telerik.WinControls.RichTextEditor.UI.FontFamily("Calibri");
-charStyle.SpanProperties.FontSize = Unit.PointToDip(20);
-charStyle.SpanProperties.ForeColor = Colors.Orange;
-charStyle.DisplayName = "charStyle";
-charStyle.Name = "charStyle";
-            
-this.radRichTextEditor1.Document.StyleRepository.Add(charStyle);
 
-````
-````VB.NET
-Dim charStyle As New StyleDefinition()
-charStyle.Type = StyleType.Character
-charStyle.SpanProperties.FontFamily = New Telerik.WinControls.RichTextEditor.UI.FontFamily("Calibri")
-charStyle.SpanProperties.FontSize = Unit.PointToDip(20)
-charStyle.SpanProperties.ForeColor = Colors.Orange
-charStyle.DisplayName = "charStyle"
-charStyle.Name = "charStyle"
-Me.radRichTextEditor1.Document.StyleRepository.Add(charStyle)
 
-````
-
-{{endregion}} 
- 
 This style will set "*Calibri*" as a **FontFamily** to the part of the document it is applied to, *20 dip* as a **FontSize** and *Orange* as a **ForeColor**.
 
 ### Declaring a Paragraph Style
 
 A paragraph style can be defined as follows:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=paragraph}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=paragraph}} 
+<snippet id='richtexteditor-styles-paragraph-cs' />
+<snippet id='richtexteditor-styles-paragraph-vb' />
 
-````C#
-paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 
-````
-````VB.NET
-paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
-
-````
-
-{{endregion}} 
 
 When applied to a **Paragraph**, this style will set the Background color of the **Paragraph** to *Red* and the **TextAlignment** to *Center*.
 
@@ -129,51 +95,11 @@ When applied to a **Paragraph**, this style will set the Background color of the
 
 Linked styles should be used when both properties of **Paragraph** and **Span** should be set by the same style. They can be declared like this:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=linked}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=linked}} 
+<snippet id='richtexteditor-styles-linked-cs' />
+<snippet id='richtexteditor-styles-linked-vb' />
 
-````C#
-            
-StyleDefinition linkedParagraphStyle = new StyleDefinition();
-linkedParagraphStyle.Type = StyleType.Paragraph;
-linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow;
-linkedParagraphStyle.DisplayName = "linkedParagraphStyle";
-linkedParagraphStyle.Name = "linkedParagraphStyle";
-            
-StyleDefinition linkedCharStyle = new StyleDefinition();
-linkedCharStyle.Type = StyleType.Character;
-linkedCharStyle.SpanProperties.FontWeight = FontWeights.Bold;
-linkedCharStyle.SpanProperties.FontSize = Unit.PointToDip(30);
-linkedCharStyle.SpanProperties.ForeColor = Colors.Purple;
-linkedCharStyle.DisplayName = "linkedCharStyle";
-linkedCharStyle.Name = "linkedCharStyle";
-linkedParagraphStyle.LinkedStyle = linkedCharStyle;
-            
-this.radRichTextEditor1.Document.StyleRepository.Add(linkedParagraphStyle);
-this.radRichTextEditor1.Document.StyleRepository.Add(linkedCharStyle);
 
-````
-````VB.NET
-Dim linkedParagraphStyle As New StyleDefinition()
-linkedParagraphStyle.Type = StyleType.Paragraph
-linkedParagraphStyle.ParagraphProperties.Background = Colors.Yellow
-linkedParagraphStyle.DisplayName = "linkedParagraphStyle"
-linkedParagraphStyle.Name = "linkedParagraphStyle"
-Dim linkedCharStyle As New StyleDefinition()
-linkedCharStyle.Type = StyleType.Character
-linkedCharStyle.SpanProperties.FontWeight = FontWeights.Bold
-linkedCharStyle.SpanProperties.FontSize = Unit.PointToDip(30)
-linkedCharStyle.SpanProperties.ForeColor = Colors.Purple
-linkedCharStyle.DisplayName = "linkedCharStyle"
-linkedCharStyle.Name = "linkedCharStyle"
-linkedParagraphStyle.LinkedStyle = linkedCharStyle
-Me.radRichTextEditor1.Document.StyleRepository.Add(linkedParagraphStyle)
-Me.radRichTextEditor1.Document.StyleRepository.Add(linkedCharStyle)
 
-````
-
-{{endregion}} 
- 
 >note Only styles of type __Paragraph__ and __Character__ can be linked.
 >
 
@@ -187,20 +113,10 @@ Styles of type **Paragraph** follow the same logic and are applied to all paragr
 
 For example, the following line will apply the "*linkedParagraphStyle*" to the current **Paragraph** and the parts of the text which are selected:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=ChangeStyleName}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=ChangeStyleName}} 
+<snippet id='richtexteditor-styles-changestylename-cs' />
+<snippet id='richtexteditor-styles-changestylename-vb' />
 
-````C#
-            
-this.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle");
 
-````
-````VB.NET
-Me.radRichTextEditor1.RichTextBoxElement.ChangeStyleName("linkedParagraphStyle")
-
-````
-
-{{endregion}} 
 
 Styles of type **LinkedStyle** change the values of the paragraph when there is no selection and apply both their **Paragraph** and **Span** properties. When there is selection, **LinkedStyle** changes only the **Span** properties of the selected text.
         
@@ -216,35 +132,17 @@ All default styles as well as some other predefined styles can be applied using 
         
 For example the __TableGrid__ style can be applied to a table as follows:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=table}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=table}} 
+<snippet id='richtexteditor-styles-table-cs' />
+<snippet id='richtexteditor-styles-table-vb' />
 
-````C#
-table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName;
 
-````
-````VB.NET
-table.StyleName = RadDocumentDefaultStyles.DefaultTableGridStyleName
-
-````
-
-{{endregion}} 
 
 And a paragraph can have __Heading 1__ style applied to it like this:
 
-{{source=..\SamplesCS\RichTextEditor\Features\Styles.cs region=paragraph}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Styles.vb region=paragraph}} 
+<snippet id='richtexteditor-styles-paragraph-cs' />
+<snippet id='richtexteditor-styles-paragraph-vb' />
 
-````C#
-paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1);
 
-````
-````VB.NET
-paragraph.StyleName = RadDocumentDefaultStyles.GetHeadingStyleNameByIndex(1)
-
-````
-
-{{endregion}} 
 
 ## Style Evaluation
 

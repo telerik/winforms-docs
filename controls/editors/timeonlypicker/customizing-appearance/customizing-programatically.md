@@ -96,9 +96,6 @@ Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.ClockHeaderEleme
 Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.ClockElement.SecondsArrow.Visibility = Telerik.WinControls.ElementVisibility.Collapsed
 
 ````
-
-{{endregion}} 
-
 ![WinForms RadTimeOnlyPicker Customize Clock Element Appearance](images/editors-timeonlypicker-customization004.png)
 
 ## Customize hours and minutes headers
@@ -196,9 +193,6 @@ Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.MinutesTable.Gra
 Me.RadTimeOnlyPicker1.TimeOnlyPickerElement.PopupContentElement.MinutesTable.BackColor = Color.Blue
 
 ````
-
-{{endregion}} 
-
 ![WinForms RadTimeOnlyPicker Customize Hours and Minutes Tables](images/editors-timeonlypicker-customization007.png)
 
 ## Customize Button Panel

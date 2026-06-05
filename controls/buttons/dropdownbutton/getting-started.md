@@ -47,35 +47,10 @@ To programmatically add a __RadDropDownButton__ to a form, create a new instanc
 
 #### Adding a RadButton at runtime 
 
-{{source=..\SamplesCS\Buttons\DropDownButton.cs region=CreatingButton}} 
-{{source=..\SamplesVB\Buttons\DropDownButton.vb region=CreatingButton}} 
+<snippet id='buttons-dropdownbutton-getting-started-creatingbutton-cs' />
+<snippet id='buttons-dropdownbutton-getting-started-creatingbutton-vb' />
 
-````C#
-RadDropDownButton radDropDownButton = new RadDropDownButton();
-radDropDownButton1.Text = "Fruits";
-RadMenuItem item1 = new RadMenuItem("Orange");
-radDropDownButton1.Items.Add(item1);
-RadMenuItem item2 = new RadMenuItem("Lemon");
-radDropDownButton1.Items.Add(item2);
-RadMenuItem item3 = new RadMenuItem("Banana");
-radDropDownButton1.Items.Add(item3);
-this.Controls.Add(radDropDownButton);
 
-````
-````VB.NET
-Dim radDropDownButton As New RadDropDownButton()
-radDropDownButton1.Text = "Fruits"
-Dim item1 As New RadMenuItem("Orange")
-radDropDownButton1.Items.Add(item1)
-Dim item2 As New RadMenuItem("Lemon")
-radDropDownButton1.Items.Add(item2)
-Dim item3 As New RadMenuItem("Banana")
-radDropDownButton1.Items.Add(item3)
-Me.Controls.Add(radDropDownButton)
-
-````
-
-{{endregion}} 
 
 ![WinForms RadButtons buttons-dropdownbutton-overview 001](images/buttons-dropdownbutton-overview001.png)
 
@@ -83,53 +58,11 @@ Similarly, you can create item hierarchies in code by adding new __RadMenuItem__
 
 #### Adding sub items
 
-{{source=..\SamplesCS\Buttons\DropDownButton1.cs region=itemsHierarchy}} 
-{{source=..\SamplesVB\Buttons\DropDownButton1.vb region=itemsHierarchy}} 
+<snippet id='buttons-dropdownbutton-working-with-raddropdownbutton-items-itemshierarchy-cs' />
+<snippet id='buttons-dropdownbutton-working-with-raddropdownbutton-items-itemshierarchy-vb' />
 
-````C#
-using Telerik.WinControls.UI;
-namespace RadDropDownButtonDemo
-{
-    public partial class Form1 : Form
-    {
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            RadMenuItem mainItem = radDropDownButton1.Items[0] as RadMenuItem;
-            RadMenuItem mySubMenuItem = new RadMenuItem();
-            mySubMenuItem.Text = "Submenu Item";
-            mySubMenuItem.Click += new EventHandler(mySubMenuItem_Click);
-            mainItem.Items.Add(mySubMenuItem);
-        }
-        void mySubMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show((sender as RadMenuItem).Text +
-                " was clicked.");
-        }
-    }
-}
 
-````
-````VB.NET
-Imports System.Windows.Forms
-Imports Telerik.WinControls.UI
-Namespace RadDropDownButtonDemo
-    Public Class Form1
-        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-            Dim mainItem As RadMenuItem = TryCast(radDropDownButton1.Items(0), RadMenuItem)
-            Dim mySubMenuItem As New RadMenuItem()
-            mySubMenuItem.Text = "Submenu Item"
-            AddHandler mySubMenuItem.Click, AddressOf mySubMenuItem_Click
-            mainItem.Items.Add(mySubMenuItem)
-        End Sub
-        Sub mySubMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-            MessageBox.Show((TryCast(sender, RadMenuItem)).Text + " was clicked.")
-        End Sub
-    End Class
-End Namespace
 
-````
-
-{{endregion}} 
  
 
 ### Displaying Images with Items

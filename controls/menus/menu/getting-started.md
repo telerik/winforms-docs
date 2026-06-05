@@ -119,19 +119,10 @@ The following tutorial demonstrates creating a **RadMenu** with standard **RadMe
 
 #### Assigning shortcuts
 
-{{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=shortcut}} 
-{{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=shortcut}} 
+<snippet id='menus-menugettingstarted-shortcut-cs' />
+<snippet id='menus-menugettingstarted-shortcut-vb' />
 
-````C#
-radMenuItem3.Shortcuts.Add(new Telerik.WinControls.RadShortcut(Keys.Control, Keys.N));
 
-````
-````VB.NET
-RadMenuItem3.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Keys.N))
-
-````
-
-{{endregion}} 
 
 27\. Go to the Design View of the form and select the **New** menu item.
             
@@ -144,24 +135,10 @@ RadMenuItem3.Shortcuts.Add(New Telerik.WinControls.RadShortcut(Keys.Control, Key
 
 30\. Replace the automatically-generated event handler with this code:
 
-{{source=..\SamplesCS\Menus\Menu\MenuGettingStarted.cs region=clickHandler}} 
-{{source=..\SamplesVB\Menus\Menu\MenuGettingStarted.vb region=clickHandler}} 
+<snippet id='menus-menugettingstarted-clickhandler-cs' />
+<snippet id='menus-menugettingstarted-clickhandler-vb' />
 
-````C#
-private void radMenuItem3_Click(object sender, EventArgs e)
-{
-    MessageBox.Show("New File");
-}
 
-````
-````VB.NET
-Private Sub RadMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadMenuItem3.Click
-    MessageBox.Show("New File")
-End Sub
-
-````
-
-{{endregion}} 
 
 31\. Return to the Design View of the form.
 

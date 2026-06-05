@@ -55,83 +55,28 @@ The default behavior of the  __RadScheduler__ selection can be modified programm
 
 #### Custom Selection Class
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SchedulerSelectionBehavior}} 
-{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SchedulerSelectionBehavior}} 
+<snippet id='scheduler-selectionbehavior-schedulerselectionbehavior-cs' />
+<snippet id='scheduler-selectionbehavior-schedulerselectionbehavior-vb' />
 
-````C#
-        
-public class CustomSchedulerSelectionBehavior : SchedulerSelectionBehavior
-{
-    public CustomSchedulerSelectionBehavior(RadScheduler scheduler) : base(scheduler)
-    {
-    }
-}
 
-````
-````VB.NET
-Public Class CustomSchedulerSelectionBehavior
-Inherits SchedulerSelectionBehavior
-    Public Sub New(scheduler As RadScheduler)
-        MyBase.New(scheduler)
-    End Sub
-End Class
-
-````
-
-{{endregion}} 
 
 2\. Override the __SelectAppointment__ method and allow selection only for appointments off work hours:
 
 #### Override Method
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=SelectAppointment}} 
-{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=SelectAppointment}} 
+<snippet id='scheduler-selectionbehavior-selectappointment-cs' />
+<snippet id='scheduler-selectionbehavior-selectappointment-vb' />
 
-````C#
-            
-public override void SelectAppointment(IEvent appointment, bool extend)
-{
-    SchedulerDayView dayView = this.Scheduler.GetDayView();
-    
-    if (dayView.IsWorkTime(appointment.Start))
-    {
-        return;
-    }
-    base.SelectAppointment(appointment, extend);
-}
 
-````
-````VB.NET
-Public Overrides Sub SelectAppointment(appointment As IEvent, extend As Boolean)
-    Dim dayView As SchedulerDayView = Me.Scheduler.GetDayView()
-    If dayView.IsWorkTime(appointment.Start) Then
-        Return
-    End If
-    MyBase.SelectAppointment(appointment, extend)
-End Sub
-
-````
-
-{{endregion}} 
 
 3\. Apply this behavior to the __RadScheduler__:
 
 #### Set Behavior
 
-{{source=..\SamplesCS\Scheduler\Fundamentals\SelectionBehavior.cs region=ReplaceSelectionBehavior}} 
-{{source=..\SamplesVB\Scheduler\Fundamentals\SelectionBehavior.vb region=ReplaceSelectionBehavior}} 
+<snippet id='scheduler-selectionbehavior-replaceselectionbehavior-cs' />
+<snippet id='scheduler-selectionbehavior-replaceselectionbehavior-vb' />
 
-````C#
-            
-this.radScheduler1.SelectionBehavior = new CustomSchedulerSelectionBehavior(this.radScheduler1);
 
-````
-````VB.NET
-Me.RadScheduler1.SelectionBehavior = New CustomSchedulerSelectionBehavior(Me.RadScheduler1)
-
-````
-
-{{endregion}} 
 
 # See Also
 

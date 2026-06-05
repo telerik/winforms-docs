@@ -22,112 +22,19 @@ Below is a sample implementation of a custom localization provider, which return
 
 #### Localizing RadOfficeNavigationBar Strings 
 
-{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=Localization}} 
-{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=Localization}} 
+<snippet id='officenavigationbar-officenavigationbargettingstarted-localization-cs' />
+<snippet id='officenavigationbar-officenavigationbargettingstarted-localization-vb' />
 
-````C#
 
-	public class EnglishOfficeNavigationBarLocalizationProvider : RadOfficeNavigationBarLocalizationProvider
-	{
-		public override string GetLocalizedString(string id)
-		{
-			switch (id)
-			{
-				case RadOfficeNavigationBarStringId.NavigationOptionsMenuItemText:
-					return "NavigationOptionsMenuItemText";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogTitle:
-					return "NavigationOptionsDialogTitle";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogLabelMaxVisibleItems:
-					return "NavigationOptionsDialogLabelMaxVisibleItems";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogLabelDisplayStyle:
-					return "NavigationOptionsDialogLabelDisplayStyle";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogUseCompactFont:
-					return "NavigationOptionsDialogUseCompactFont";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogLabelDisplayInOrder:
-					return "NavigationOptionsDialogLabelDisplayInOrder";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogButtonMoveUp:
-					return "NavigationOptionsDialogButtonMoveUp";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogButtonMoveDown:
-					return "NavigationOptionsDialogButtonMoveDown";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogButtonOK:
-					return "NavigationOptionsDialogButtonOK";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogButtonCancel:
-					return "NavigationOptionsDialogButtonCancel";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogDropDownDisplayStyleText:
-					return "NavigationOptionsDialogDropDownDisplayStyleText";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogDropDownDisplayStyleImage:
-					return "NavigationOptionsDialogDropDownDisplayStyleImage";
-				case RadOfficeNavigationBarStringId.NavigationOptionsDialogDropDownDisplayStyleImageAndText:
-					return "NavigationOptionsDialogDropDownDisplayStyleImageAndText";
-			}
-			return string.Empty;
-		}
-	}
-
-````
-````VB.NET
-
-Public Class EnglishOfficeNavigationBarLocalizationProvider
-    Inherits RadOfficeNavigationBarLocalizationProvider
-
-    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case RadOfficeNavigationBarStringId.NavigationOptionsMenuItemText
-                Return "NavigationOptionsMenuItemText"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogTitle
-                Return "NavigationOptionsDialogTitle"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogLabelMaxVisibleItems
-                Return "NavigationOptionsDialogLabelMaxVisibleItems"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogLabelDisplayStyle
-                Return "NavigationOptionsDialogLabelDisplayStyle"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogUseCompactFont
-                Return "NavigationOptionsDialogUseCompactFont"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogLabelDisplayInOrder
-                Return "NavigationOptionsDialogLabelDisplayInOrder"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogButtonMoveUp
-                Return "NavigationOptionsDialogButtonMoveUp"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogButtonMoveDown
-                Return "NavigationOptionsDialogButtonMoveDown"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogButtonOK
-                Return "NavigationOptionsDialogButtonOK"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogButtonCancel
-                Return "NavigationOptionsDialogButtonCancel"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogDropDownDisplayStyleText
-                Return "NavigationOptionsDialogDropDownDisplayStyleText"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogDropDownDisplayStyleImage
-                Return "NavigationOptionsDialogDropDownDisplayStyleImage"
-            Case RadOfficeNavigationBarStringId.NavigationOptionsDialogDropDownDisplayStyleImageAndText
-                Return "NavigationOptionsDialogDropDownDisplayStyleImageAndText"
-        End Select
-
-        Return String.Empty
-    End Function
-End Class
-
-````
-
-{{endregion}} 
- 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 #### Localizing RadDock Strings 
 
-{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=SettingCustomProvider}} 
-{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=SettingCustomProvider}}  
+<snippet id='officenavigationbar-officenavigationbargettingstarted-settingcustomprovider-cs' />
+<snippet id='officenavigationbar-officenavigationbargettingstarted-settingcustomprovider-vb' />
 
-````C#
 
-RadOfficeNavigationBarLocalizationProvider.CurrentProvider = new EnglishOfficeNavigationBarLocalizationProvider();
 
-````
-````VB.NET
-RadOfficeNavigationBarLocalizationProvider.CurrentProvider = New EnglishOfficeNavigationBarLocalizationProvider()
-
-````
-
-{{endregion}} 
-
- 
 The code provided above illustrates the approach to be used to localize the __RadOfficeNavigationBar__ and is not intended as a full translation.
 

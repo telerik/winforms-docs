@@ -32,24 +32,5 @@ You can customize the nested elements at run time as well.
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Buttons\SplitButton.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\Buttons\SplitButton.vb region=AccessingCustomizingElements}} 
-
-````C#
-this.radSplitButton1.DropDownButtonElement.ActionButton.ButtonFillElement.BackColor = Color.Red;
-this.radSplitButton1.DropDownButtonElement.ActionButton.ForeColor = Color.Yellow;
-this.radSplitButton1.DropDownButtonElement.ArrowButton.Fill.BackColor = Color.Yellow;
-this.radSplitButton1.DropDownButtonElement.ArrowButton.Border.BoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder;
-this.radSplitButton1.DropDownButtonElement.ArrowButton.Border.ForeColor = Color.Black;
-
-````
-````VB.NET
-Me.radSplitButton1.DropDownButtonElement.ActionButton.ButtonFillElement.BackColor = Color.Red
-Me.radSplitButton1.DropDownButtonElement.ActionButton.ForeColor = Color.Yellow
-Me.radSplitButton1.DropDownButtonElement.ArrowButton.Fill.BackColor = Color.Yellow
-Me.radSplitButton1.DropDownButtonElement.ArrowButton.Border.BoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder
-Me.radSplitButton1.DropDownButtonElement.ArrowButton.Border.ForeColor = Color.Black
-
-````
-
-{{endregion}}  
+<snippet id='buttons-splitbutton-accessing-and-customizing-elements-accessingcustomizingelements-cs' />
+<snippet id='buttons-splitbutton-accessing-and-customizing-elements-accessingcustomizingelements-vb' />

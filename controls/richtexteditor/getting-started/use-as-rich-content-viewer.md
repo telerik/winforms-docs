@@ -13,20 +13,10 @@ previous_url: richtexteditor-getting-started-use-as-rich-content-viewer
 
 To use __RadRichTextEditor__ as a rich content viewer you have to disable the user from editing its content. This is done via the __IsReadOnly__ property. You just have to set it to *true*.
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=readonly}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=readonly}} 
+<snippet id='richtexteditor-formatingapi-readonly-cs' />
+<snippet id='richtexteditor-formatingapi-readonly-vb' />
 
-````C#
-            
-this.radRichTextEditor.IsReadOnly = true;
 
-````
-````VB.NET
-Me.radRichTextEditor.IsReadOnly = True
-
-````
-
-{{endregion}} 
 
 In addition to the __IsReadOnly__ property, there are several other properties that can be used to control the response of __RadRichTextEditor__ towards the user actions against it:
 

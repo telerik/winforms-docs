@@ -39,57 +39,17 @@ If you are trying to edit SVG image you will get the following warning message:
 
 Below is demonstrated how to customize the ResizeDialog and set the checked state of the Preserve Aspect Ratio checkbox which by default is unchecked.
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=CustomizeDialog}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=CustomizeDialog}} 
+<snippet id='picturebox-pictureboxgettingstarted-customizedialog-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-customizedialog-vb' />
 
-````C#
-public class CustomImageEditorDialogFactory : ImageEditorDialogFactory
-{
-    public override ImageEditorBaseDialog CreateDialog(Type type, RadImageEditorElement imageEditorElement)
-    {
-        ImageEditorBaseDialog dialog = base.CreateDialog(type, imageEditorElement);
-        if (dialog is ResizeDialog)
-        {
-            ((RadCheckBox)dialog.Controls[0].Controls["radCheckBoxAspectRation"]).Checked = true;
 
-        }
-        return dialog;
-    }
-}
-
-````
-````VB.NET
-Public Class CustomImageEditorDialogFactory
-    Inherits ImageEditorDialogFactory
-    Public Overrides Function CreateDialog(ByVal type As Type, ByVal imageEditorElement As RadImageEditorElement) As ImageEditorBaseDialog
-        Dim dialog As ImageEditorBaseDialog = MyBase.CreateDialog(type, imageEditorElement)
-
-        If TypeOf dialog Is ResizeDialog Then
-            CType(dialog.Controls(0).Controls("radCheckBoxAspectRation"), RadCheckBox).Checked = True
-        End If
-        Return dialog
-    End Function
-End Class
-
-````
-
-{{endregion}}
 
 Finally, you need to apply this custom factory to your **PictureBoxImageEditorDialog**:
 
-{{source=..\SamplesCS\PictureBox\PictureBoxGettingStarted.cs region=ApplyCustomFactory}} 
-{{source=..\SamplesVB\PictureBox\PictureBoxGettingStarted.vb region=ApplyCustomFactory}} 
+<snippet id='picturebox-pictureboxgettingstarted-applycustomfactory-cs' />
+<snippet id='picturebox-pictureboxgettingstarted-applycustomfactory-vb' />
 
-````C#
-this.radPictureBox1.ImageEditorDialog.ImageEditor.ImageEditorElement.DialogFactory = new CustomImageEditorDialogFactory();
 
-````
-````VB.NET
-Me.RadPictureBox1.ImageEditorDialog.ImageEditor.ImageEditorElement.DialogFactory = New CustomImageEditorDialogFactory()
-
-````
-
-{{endregion}}
 
 # See Also
 

@@ -22,19 +22,10 @@ The __AutoCompleteMode__ property controls the auto-complete behavior and can be
 
 ![WinForms RadMultiColumnComboBox AutoCompleteModeNone](images/multicolumncombobox-autocomplete001.png)
 
-{{source=..\SamplesCS\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.cs region=AutoCompleteMode.None}} 
-{{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.None}} 
+<snippet id='multicolumncombobox-autocompletemulticolumncombobox-autocompletemode.none-cs' />
+<snippet id='multicolumncombobox-autocompletemulticolumncombobox-autocompletemode.none-vb' />
 
-````C#
-this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None;
 
-````
-````VB.NET
-Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None
-
-````
-
-{{endregion}} 
 
 * __Append__: As the user types, the next item in the list that matches the user input is automatically appended to the characters the user has already typed. The popup is not shown without the user clicking the arrow.
 
@@ -42,18 +33,9 @@ Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.None
 
 ![WinForms RadMultiColumnComboBox AutoCompleteModeAppend](images/multicolumncombobox-autocomplete002.png)
 
-{{source=..\SamplesCS\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.cs region=AutoCompleteMode.Append}} 
-{{source=..\SamplesVB\MultiColumnComboBox\AutoCompleteMultiColumnComboBox.vb region=AutoCompleteMode.Append}} 
+<snippet id='multicolumncombobox-autocompletemulticolumncombobox-autocompletemode.append-cs' />
+<snippet id='multicolumncombobox-autocompletemulticolumncombobox-autocompletemode.append-vb' />
 
-````C#
-this.radMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append;
 
-````
-````VB.NET
-Me.RadMultiColumnComboBox1.AutoCompleteMode = AutoCompleteMode.Append
-
-````
-
-{{endregion}} 
 
 * __Suggest__: The following article shows how this functionality can be achieved: [Auto Filter]({%slug winforms/multicolumncombobox/filtering%}).

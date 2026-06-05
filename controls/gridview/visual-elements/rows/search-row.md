@@ -13,20 +13,8 @@ previous_url: gridview-rows-search-row
 
 __RadGridView__ offers a build-in search functionality available for both end users and developers. The search mechanism executes in a separate thread which leaves the UI responsive at all times. To enable the search row for end users all you have to do is set the __AllowSearchRow__ property of __RadGridView__ to *true*:
 
-{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=AllowSearchRow}} 
-{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=AllowSearchRow}} 
-
-````C#
-this.radGridView1.AllowSearchRow = true;
-
-````
-````VB.NET
-Me.RadGridView1.AllowSearchRow = True
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-searchrow-allowsearchrow-cs' />
+<snippet id='gridview-searchrow-allowsearchrow-vb' />
 
 ![WinForms RadGridView Search Row](images/gridview-rows-search-row001.png)
 
@@ -62,35 +50,13 @@ The available properties to tweak the search experience and performance and how 
 
 To change the highlight color you should use the __HighlightColor__ property of the TableElement.
 
-{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=ChangeHighlightColor}} 
-{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=ChangeHighlightColor}} 
-
-````C#
-radGridView1.TableElement.SearchHighlightColor = Color.LightBlue;
-
-````
-````VB.NET
-RadGridView1.TableElement.SearchHighlightColor = Color.LightBlue
-
-````
-
-{{endregion}} 
+<snippet id='gridview-searchrow-changehighlightcolor-cs' />
+<snippet id='gridview-searchrow-changehighlightcolor-vb' />
 
 You can also use the search functionality programmatically without showing the search row, just by using its API.
 
-{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=GetSearchRow}} 
-{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=GetSearchRow}} 
-
-````C#
-GridViewSearchRowInfo searchRow = this.radGridView1.MasterView.TableSearchRow;
-
-````
-````VB.NET
-Dim searchRow As GridViewSearchRowInfo = Me.RadGridView1.MasterView.TableSearchRow
-
-````
-
-{{endregion}}
+<snippet id='gridview-searchrow-getsearchrow-cs' />
+<snippet id='gridview-searchrow-getsearchrow-vb' />
 
 To manually search, call the __Search__ method and pass the search criteria as a parameter. To get the search results you have to subscribe to the __SearchProgressChanged__ event. In the event handler you will have to handle three cases:
 
@@ -121,21 +87,8 @@ You can suspend/resume the search temporarily by using the __SuspendSearch__ and
 
 ### Suspend the search operation
 
-{{source=..\SamplesCS\GridView\Rows\SearchRow.cs region=Suspend}} 
-{{source=..\SamplesVB\GridView\Rows\SearchRow.vb region=Suspend}} 
-
-````C#
-radGridView1.MasterView.TableSearchRow.SuspendSearch();
-radGridView1.MasterView.TableSearchRow.ResumeSearch();
-
-````
-````VB.NET
-RadGridView1.MasterView.TableSearchRow.SuspendSearch()
-RadGridView1.MasterView.TableSearchRow.ResumeSearch()
-
-````
-
-{{endregion}}
+<snippet id='gridview-searchrow-suspend-cs' />
+<snippet id='gridview-searchrow-suspend-vb' />
 
 # See Also
 

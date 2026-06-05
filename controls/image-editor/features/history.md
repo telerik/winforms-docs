@@ -18,24 +18,8 @@ Undo/Redo commands can be executed from the UI.
 
 You can use the methods as well.
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=UndoRedo}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=UndoRedo}}
-````C#
-radImageEditor1.ImageEditorElement.Undo();
-//or
-radImageEditor1.ImageEditorElement.Redo();
-
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.Undo()
-'or
-radImageEditor1.ImageEditorElement.Redo()
-
-````
-
-
-
-{{endregion}}
+<snippet id='image-editor-imageeditorfeatures-undoredo-cs' />
+<snippet id='image-editor-imageeditorfeatures-undoredo-vb' />
 
 
 

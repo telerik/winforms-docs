@@ -19,22 +19,10 @@ In order to use the splitter buttons the following properties need to be set to 
 
 #### Show Splitter Buttons
 
-{{source=..\SamplesCS\SplitContainer\SplitterButtons.cs region=ShowSplitterButtons}} 
-{{source=..\SamplesVB\SplitContainer\SplitterButtons.vb region=ShowSplitterButtons}}
-````C#
-this.radSplitContainer1.EnableCollapsing = true;
-this.radSplitContainer1.UseSplitterButtons = true;
-
-````
-````VB.NET
-Me.RadSplitContainer1.EnableCollapsing = True
-Me.RadSplitContainer1.UseSplitterButtons = True
-
-```` 
+<snippet id='splitcontainer-splitterbuttons-showsplitterbuttons-cs' />
+<snippet id='splitcontainer-splitterbuttons-showsplitterbuttons-vb' />
 
 
-
-{{endregion}}
 
 >note Since **R3 2020 SP1** RadSplitContaiter comes with left and right arrow buttons on every SplitterElement for easier navigation. Thus, the users are able to collapse the SplitPanels to desired location.
 
@@ -46,52 +34,26 @@ The control also exposes a convenient API for accessing the splitter elements. E
 
 #### Collapse Splitter
 
-{{source=..\SamplesCS\SplitContainer\SplitterButtons.cs region=CollapsеSplitter}} 
-{{source=..\SamplesVB\SplitContainer\SplitterButtons.vb region=CollapsеSplitter}}
-````C#
-this.radSplitContainer1.MoveSplitter(this.radSplitContainer1.Splitters[0], RadDirection.Left);
+<snippet id='splitcontainer-splitterbuttons-collapsesplitter-cs' />
+<snippet id='splitcontainer-splitterbuttons-collapsesplitter-vb' />
 
-````
-````VB.NET
-Me.RadSplitContainer1.MoveSplitter(Me.RadSplitContainer1.Splitters(0), RadDirection.Left)
 
-```` 
-
-{{endregion}}
 
 #### Expand Splitter
 
-{{source=..\SamplesCS\SplitContainer\SplitterButtons.cs region=ExpandSplitter}} 
-{{source=..\SamplesVB\SplitContainer\SplitterButtons.vb region=ExpandSplitter}}
-````C#
-this.radSplitContainer1.RestoreSplitterPosition(this.radSplitContainer1.Splitters[0]);
+<snippet id='splitcontainer-splitterbuttons-expandsplitter-cs' />
+<snippet id='splitcontainer-splitterbuttons-expandsplitter-vb' />
 
-````
-````VB.NET
-Me.RadSplitContainer1.RestoreSplitterPosition(Me.RadSplitContainer1.Splitters(0))
 
-```` 
-
-{{endregion}}
 
 >note Since **R3 2020 SP1** RadSplitContainer offers **DefaultCollapseDirection** property that indicates the default collapse direction when performing a double click on SplitterElement to collapse a SplitPanel. 
 
 
 For horizontal splitters you can set **RadDirection.Up** or **RadDirection.Down**. For vertical splitters you can set **RadDirection.Left** or **RadDirection.Right**. Here is an example how you can change the collapse direction to right when you have vertical splitters which direction by default is left:
 
-{{source=..\SamplesCS\SplitContainer\SplitterButtons.cs region=DefaultColapseDirection}} 
-{{source=..\SamplesVB\SplitContainer\SplitterButtons.vb region=DefaultColapseDirection}}
-````C#
-this.radSplitContainer1.Splitters[0].DefaultCollapseDirection = RadDirection.Right;
+<snippet id='splitcontainer-splitterbuttons-defaultcolapsedirection-cs' />
+<snippet id='splitcontainer-splitterbuttons-defaultcolapsedirection-vb' />
 
-````
-````VB.NET
-Me.RadSplitContainer1.Splitters(0).DefaultCollapseDirection = RadDirection.Right
-
-```` 
-
-
-{{endregion}}
 
 
 >caption Figure 3: Change default split direction when double click on SplitterElement

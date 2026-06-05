@@ -21,24 +21,10 @@ position: 0
 
 #### RadTabbedFormDragDropService
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=DragDropService}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=DragDropService}}
-````C#
-RadTabbedFormDragDropService dragDropService = this.TabbedFormControl.TabbedFormControlElement.ItemDragService;
-dragDropService.TabbedFormCreating += DragDropService_TabbedFormCreating;
-dragDropService.TabbedFormShown += DragDropService_TabbedFormShown;
-
-````
-````VB.NET
-Dim dragDropService As RadTabbedFormDragDropService = Me.TabbedFormControl.TabbedFormControlElement.ItemDragService
-AddHandler dragDropService.TabbedFormCreating, AddressOf DragDropService_TabbedFormCreating
-AddHandler dragDropService.TabbedFormShown, AddressOf DragDropService_TabbedFormShown
-
-````
+<snippet id='tabbedform-tabbedformcode-dragdropservice-cs' />
+<snippet id='tabbedform-tabbedformcode-dragdropservice-vb' />
 
 
-
-{{endregion}} 
 
 
 ## Reordering via Drag and Drop
@@ -75,18 +61,10 @@ There are three drag modes that are currently supported:
 
 #### Setting the Drag Drop Mode
 
-{{source=..\SamplesCS\Forms and Dialogs\TabbedFormCode.cs region=DragDropMode}} 
-{{source=..\SamplesVB\Forms and Dialogs\TabbedFormCode.vb region=DragDropMode}}
-````C#
-this.TabbedFormControl.ItemDragMode = TabItemDragMode.Preview;
+<snippet id='tabbedform-tabbedformcode-dragdropmode-cs' />
+<snippet id='tabbedform-tabbedformcode-dragdropmode-vb' />
 
-````
-````VB.NET
-Me.TabbedFormControl.ItemDragMode = TabItemDragMode.Preview
 
-```` 
-
-{{endregion}} 
 
 ![WinForms RadTabbedForm Drag Drop Mode](images/radtabbedform-drag-drop004.gif)
 

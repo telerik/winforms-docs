@@ -30,28 +30,7 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Buttons\Button.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\Buttons\Button.vb region=AccessingCustomizingElements}} 
+<snippet id='buttons-button-accessing-and-customizing-elements-accessingcustomizingelements-cs' />
+<snippet id='buttons-button-accessing-and-customizing-elements-accessingcustomizingelements-vb' />
 
-````C#
-this.radButton1.ButtonElement.TextElement.ForeColor = Color.Red;
-this.radButton1.ButtonElement.ButtonFillElement.BackColor = Color.Aqua;
-this.radButton1.ButtonElement.BorderElement.BoxStyle = Telerik.WinControls.BorderBoxStyle.FourBorders;
-this.radButton1.ButtonElement.BorderElement.TopColor = Color.Aqua;
-this.radButton1.ButtonElement.BorderElement.BottomColor = Color.Aqua;
-this.radButton1.ButtonElement.BorderElement.LeftColor = Color.Red;
-this.radButton1.ButtonElement.BorderElement.RightColor = Color.Red;
 
-````
-````VB.NET
-Me.radButton1.ButtonElement.TextElement.ForeColor = Color.Red
-Me.radButton1.ButtonElement.ButtonFillElement.BackColor = Color.Aqua
-Me.radButton1.ButtonElement.BorderElement.BoxStyle = Telerik.WinControls.BorderBoxStyle.FourBorders
-Me.radButton1.ButtonElement.BorderElement.TopColor = Color.Aqua
-Me.radButton1.ButtonElement.BorderElement.BottomColor = Color.Aqua
-Me.radButton1.ButtonElement.BorderElement.LeftColor = Color.Red
-Me.radButton1.ButtonElement.BorderElement.RightColor = Color.Red
-
-````
-
-{{endregion}} 

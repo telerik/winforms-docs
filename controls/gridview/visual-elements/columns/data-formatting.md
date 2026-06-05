@@ -28,25 +28,8 @@ Here is a sample covering these properties:
 
 #### Formatting data
 
-{{source=..\SamplesCS\GridView\Columns\DataFormatting1.cs region=dataFormatting}} 
-{{source=..\SamplesVB\GridView\Columns\DataFormatting1.vb region=dataFormatting}} 
-
-````C#
-GridViewDecimalColumn unitPriceColumn = this.radGridView1.Columns["UnitPrice"] as GridViewDecimalColumn;
-unitPriceColumn.FormatString = "Price: {0:C}";
-unitPriceColumn.FormatInfo = CultureInfo.CreateSpecificCulture("en-GB");
-unitPriceColumn.NullValue = 0;
-
-````
-````VB.NET
-Dim unitPriceColumn As GridViewDecimalColumn = TryCast(Me.RadGridView1.Columns("UnitPrice"), GridViewDecimalColumn)
-        unitPriceColumn.FormatString = "Price: {0:C}"
-        unitPriceColumn.FormatInfo = CultureInfo.CreateSpecificCulture("en-GB")
-        unitPriceColumn.NullValue = 0
-
-````
-
-{{endregion}}
+<snippet id='gridview-dataformatting1-dataformatting-cs' />
+<snippet id='gridview-dataformatting1-dataformatting-vb' />
 
 >caption Figure 1: The data in the middle is formated.
 
@@ -61,23 +44,9 @@ The __TextAlignment__ property defines the text alignment for the column.
 
 #### Using the column text properties
 
-{{source=..\SamplesCS\GridView\Columns\DataFormatting1.cs region=textProperties}} 
-{{source=..\SamplesVB\GridView\Columns\DataFormatting1.vb region=textProperties}} 
+<snippet id='gridview-dataformatting1-textproperties-cs' />
+<snippet id='gridview-dataformatting1-textproperties-vb' />
 
-````C#
-GridViewDataColumn productNameColumn = this.radGridView1.Columns["ProductName"];
-productNameColumn.WrapText = true;
-productNameColumn.TextAlignment = ContentAlignment.BottomRight;
-
-````
-````VB.NET
-Dim productNameColumn = Me.RadGridView1.Columns("ProductName")
-productNameColumn.WrapText = True
-productNameColumn.TextAlignment = ContentAlignment.BottomRight
-
-````
-
-{{endregion}}
 # See Also
 * [Accessing and Iterating through Columns]({%slug winforms/gridview/columns/accessing-and-iterating-through-columns%})
 

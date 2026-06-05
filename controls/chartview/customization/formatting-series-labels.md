@@ -20,62 +20,20 @@ This article demonstrates how to change the labels styles and text. The series l
 
 #### Show Labels
 
-{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=ShowLabels}} 
-{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=ShowLabels}} 
+<snippet id='chartview-formatting-series-labels-showlabels-cs'/>
+<snippet id='chartview-formatting-series-labels-showlabels-vb'/>
 
-````C#
-foreach (var series in radChartView1.Series)
-{
-    series.ShowLabels = true;
-}
-
-````
-````VB.NET
-For Each series In RadChartView1.Series
-    series.ShowLabels = True
-Next
-
-````
-
-{{endregion}} 
+ 
  
 
 2\. Now you can change the labels styles and text. 
 
 #### LabelFormatting Event
 
-{{source=..\SamplesCS\ChartView\Customization\FormattingSeriesAndTrackballLabels.cs region=LabelFormatting}} 
-{{source=..\SamplesVB\ChartView\Customization\FormattingSeriesAndTrackballLabels.vb region=LabelFormatting}} 
+<snippet id='chartview-formatting-series-labels-labelformatting-cs'/>
+<snippet id='chartview-formatting-series-labels-labelformatting-vb'/>
 
-````C#
-private Font font1 = new Font("Segoe Script", 12, FontStyle.Regular);
-private void radChartView1_LabelFormatting(object sender, ChartViewLabelFormattingEventArgs e)
-{
-    e.LabelElement.BackColor = ColorTranslator.FromHtml("#005BBc");
-    e.LabelElement.ForeColor = ColorTranslator.FromHtml("#91c930");
-    e.LabelElement.BorderColor = ColorTranslator.FromHtml("#ee8310");
-    e.LabelElement.Font = font1;
-    CategoricalPointElement element = (CategoricalPointElement)e.LabelElement.Parent;
-    CategoricalDataPoint dataPoint = (CategoricalDataPoint)element.DataPoint;
-    e.LabelElement.Text = string.Format("Category: {0}, Value: {1}", dataPoint.Category, dataPoint.Value);
-}
 
-````
-````VB.NET
-Private font1 As New Font("Segoe Script", 12, FontStyle.Regular)
-Private Sub radChartView1_LabelFormatting(sender As Object, e As ChartViewLabelFormattingEventArgs)
-    e.LabelElement.BackColor = ColorTranslator.FromHtml("#005BBc")
-    e.LabelElement.ForeColor = ColorTranslator.FromHtml("#91c930")
-    e.LabelElement.BorderColor = ColorTranslator.FromHtml("#ee8310")
-    e.LabelElement.Font = font1
-    Dim element As CategoricalPointElement = DirectCast(e.LabelElement.Parent, CategoricalPointElement)
-    Dim dataPoint As CategoricalDataPoint = DirectCast(element.DataPoint, CategoricalDataPoint)
-    e.LabelElement.Text = String.Format("Category: {0}, " & vbLf & "Value: {1}", dataPoint.Category, dataPoint.Value)
-End Sub
-
-````
-
-{{endregion}}
 
 >note Since **R2 2017 SP1** you can control the label's text alignment by the newly introduced property ChartViewLabelFormattingEventArgs.LabelElement.**TextAlignment**.
 

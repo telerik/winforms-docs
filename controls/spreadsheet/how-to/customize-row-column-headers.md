@@ -29,38 +29,8 @@ __Example 1__ shows a simple implementation for the converter class used for cre
 #### Example 1: Create a custom name converter
 
 
-{{source=..\SamplesCS\Spreadsheet\NameConverter.cs region=name_canverter_0}} 
-{{source=..\SamplesVB\Spreadsheet\NameConverter.vb region=name_canverter_0}}
-````C#
-public class CustomNameConverter : HeaderNameRenderingConverterBase
-{
-    protected override string ConvertColumnIndexToNameOverride(HeaderNameRenderingConverterContext context, int columnIndex)
-    {
-        if (columnIndex == 0)
-        {
-            return "First Name";
-        }
-        return base.ConvertColumnIndexToNameOverride(context, columnIndex);
-    }
-}
-
-````
-````VB.NET
-Public Class CustomNameConverter
-    Inherits HeaderNameRenderingConverterBase
-    Protected Overrides Function ConvertColumnIndexToNameOverride(ByVal context As HeaderNameRenderingConverterContext, ByVal columnIndex As Integer) As String
-        If columnIndex = 0 Then
-            Return "First Name"
-        End If
-        Return MyBase.ConvertColumnIndexToNameOverride(context, columnIndex)
-    End Function
-End Class
-
-```` 
-
- 
-{{endregion}} 
- 
+<snippet id='spreadsheet-nameconverter-name_canverter_0-cs' />
+<snippet id='spreadsheet-nameconverter-name_canverter_0-vb' />
 
 
 
@@ -69,20 +39,9 @@ After implementing your custom name converter you need to instantiate it and ass
 
 >caption Example 2: Instantiate and assign a custom converter
 
-{{source=..\SamplesCS\Spreadsheet\NameConverter.cs region=name_canverter_1}} 
-{{source=..\SamplesVB\Spreadsheet\NameConverter.vb region=name_canverter_1}}
-````C#
-this.radSpreadsheet.SpreadsheetElement.Workbook.Worksheets[0].HeaderNameRenderingConverter = new CustomNameConverter();
+<snippet id='spreadsheet-nameconverter-name_canverter_1-cs' />
+<snippet id='spreadsheet-nameconverter-name_canverter_1-vb' />
 
-````
-````VB.NET
-Me.radSpreadsheet.SpreadsheetElement.Workbook.Worksheets(0).HeaderNameRenderingConverter = New CustomNameConverter()
-
-```` 
-
- 
-{{endregion}} 
- 
 
 
 That's it. The column heading is changed.

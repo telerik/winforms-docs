@@ -19,75 +19,17 @@ To localize __RadGanttView__ to display control text and messages in a specific 
             
 Below is a sample implementation of an English localization provider:
 
-{{source=..\SamplesCS\GanttView\Localization\LocalizationProvider.cs region=LocalizationProvider}} 
-{{source=..\SamplesVB\GanttView\Localization\LocalizationProvider.vb region=LocalizationProvider}} 
+<snippet id='ganttview-localizationprovider-localizationprovider-cs' />
+<snippet id='ganttview-localizationprovider-localizationprovider-vb' />
 
-````C#
-public class MyEnglishGanttViewLocalizationProvider : GanttViewLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case GanttViewStringId.ContextMenuAdd:
-                return "&Add";
-            case GanttViewStringId.ContextMenuAddChild:
-                return "Add &Child";
-            case GanttViewStringId.ContextMenuAddSibling:
-                return "Add &Sibling";
-            case GanttViewStringId.ContextMenuDelete:
-                return "&Delete";
-            case GanttViewStringId.ContextMenuProgress:
-                return "&Progress";
-            case "TimelineWeek":
-                return "Week";
-        }
-        return string.Empty;
-    }
-}
-
-````
-````VB.NET
-Public Class MyEnglishGanttViewLocalizationProvider
-    Inherits GanttViewLocalizationProvider
-    Public Overrides Function GetLocalizedString(id As String) As String
-        Select Case id
-            Case GanttViewStringId.ContextMenuAdd
-                Return "&Add"
-            Case GanttViewStringId.ContextMenuAddChild
-                Return "Add &Child"
-            Case GanttViewStringId.ContextMenuAddSibling
-                Return "Add &Sibling"
-            Case GanttViewStringId.ContextMenuDelete
-                Return "&Delete"
-            Case GanttViewStringId.ContextMenuProgress
-                Return "&Progress"
-            Case "TimelineWeek"
-                Return "Week"
-        End Select
-        Return String.Empty
-    End Function
-End Class
-
-````
-
-{{endregion}} 
+ 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
-{{source=..\SamplesCS\GanttView\Localization\LocalizationProvider.cs region=ApplyLocalizationProvider}} 
-{{source=..\SamplesVB\GanttView\Localization\LocalizationProvider.vb region=ApplyLocalizationProvider}} 
+<snippet id='ganttview-localizationprovider-applylocalizationprovider-cs' />
+<snippet id='ganttview-localizationprovider-applylocalizationprovider-vb' />
 
-````C#
-GanttViewLocalizationProvider.CurrentProvider = new MyEnglishGanttViewLocalizationProvider();
-
-````
-````VB.NET
-GanttViewLocalizationProvider.CurrentProvider = New MyEnglishGanttViewLocalizationProvider()
-
-````
-
-{{endregion}} 
+ 
 
 
 

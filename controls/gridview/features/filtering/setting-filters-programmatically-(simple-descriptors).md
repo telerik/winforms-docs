@@ -27,29 +27,8 @@ The **RadGridView** control includes __FilterDescriptors__ property of the **Gri
 
 #### Using simple filter descriptor
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=usingSimpleFilterDescriptor}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=usingSimpleFilterDescriptor}} 
-
-````C#
-FilterDescriptor filter = new FilterDescriptor();
-filter.PropertyName = "ProductName";
-filter.Operator = FilterOperator.Contains;
-filter.Value = "Qu";
-filter.IsFilterEditor = true;
-this.radGridView1.FilterDescriptors.Add(filter);
-
-````
-````VB.NET
-Dim filter As New FilterDescriptor()
-filter.PropertyName = "ProductName"
-filter.[Operator] = FilterOperator.Contains
-filter.Value = "Qu"
-filter.IsFilterEditor = True
-Me.RadGridView1.FilterDescriptors.Add(filter)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-usingsimplefilterdescriptor-cs' />
+<snippet id='gridview-filtering-usingsimplefilterdescriptor-vb' />
 
 ![WinForms RadGridView FilterDescriptor](images/gridview-filtering-setting-filters-programmatically-simple-descriptors001.png)
 
@@ -69,27 +48,8 @@ Each data column (represented by [GridViewDataColumn](http://www.telerik.com/hel
 
 #### Assigning a filter descriptor object
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=assingingAFilterDescriptorObject}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=assingingAFilterDescriptorObject}} 
-
-````C#
-FilterDescriptor filter1 = new FilterDescriptor();
-filter1.Operator = FilterOperator.Contains;
-filter1.Value = "Qu";
-filter1.IsFilterEditor = true;
-this.radGridView1.Columns["ProductName"].FilterDescriptor = filter1;
-
-````
-````VB.NET
-Dim filter1 As New FilterDescriptor()
-filter1.[Operator] = FilterOperator.Contains
-filter1.Value = "Qu"
-filter1.IsFilterEditor = True
-Me.RadGridView1.Columns("ProductName").FilterDescriptor = filter1
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-assingingafilterdescriptorobject-cs' />
+<snippet id='gridview-filtering-assingingafilterdescriptorobject-vb' />
 
 ### Setting Multiple Filters
 
@@ -97,41 +57,8 @@ You can add filters to multiple columns by adding a __FilterDescriptor__ for eac
 
 #### Setting multiple filters
 
-{{source=..\SamplesCS\GridView\Filtering\Filtering.cs region=settingMultipleFilters}} 
-{{source=..\SamplesVB\GridView\Filtering\Filtering.vb region=settingMultipleFilters}} 
-
-````C#
-FilterDescriptor filterUnitsInStock = new FilterDescriptor();
-filterUnitsInStock.PropertyName = "UnitsInStock";
-filterUnitsInStock.Operator = FilterOperator.IsGreaterThan;
-filterUnitsInStock.Value = 100;
-filterUnitsInStock.IsFilterEditor = true;
-this.radGridView1.FilterDescriptors.Add(filterUnitsInStock);
-FilterDescriptor filterProductName = new FilterDescriptor();
-filterProductName.PropertyName = "ProductName";
-filterProductName.Operator = FilterOperator.StartsWith;
-filterProductName.Value = "G";
-filterProductName.IsFilterEditor = true;
-this.radGridView1.FilterDescriptors.Add(filterProductName);
-
-````
-````VB.NET
-Dim filterUnitsInStock As New FilterDescriptor()
-filterUnitsInStock.PropertyName = "UnitsInStock"
-filterUnitsInStock.[Operator] = FilterOperator.IsGreaterThan
-filterUnitsInStock.Value = 100
-filterUnitsInStock.IsFilterEditor = True
-Me.RadGridView1.FilterDescriptors.Add(filterUnitsInStock)
-Dim filterProductName As New FilterDescriptor()
-filterProductName.PropertyName = "ProductName"
-filterProductName.[Operator] = FilterOperator.StartsWith
-filterProductName.Value = "G"
-filterProductName.IsFilterEditor = True
-Me.RadGridView1.FilterDescriptors.Add(filterProductName)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-filtering-settingmultiplefilters-cs' />
+<snippet id='gridview-filtering-settingmultiplefilters-vb' />
 
 ![WinForms RadGridView Setting Multiple Filters](images/gridview-filtering-setting-filters-programmatically-simple-descriptors002.png)
 

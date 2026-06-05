@@ -18,21 +18,10 @@ You can control the background settings of the diagramming surface through the f
 
 #### Set IsBackgroundSurfaceVisible
 
-{{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=IsBackgroundSurfaceVisible}} 
-{{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=IsBackgroundSurfaceVisible}} 
+<snippet id='diagram-background-grid-isbackgroundsurfacevisible-cs' />
+<snippet id='diagram-background-grid-isbackgroundsurfacevisible-vb' />
 
-````C#
-            
-this.radDiagram1.DiagramElement.IsBackgroundSurfaceVisible = true;
 
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.IsBackgroundSurfaceVisible = True
-
-````
-
-{{endregion}} 
- 
 
 | __IsBackgroundSurfaceVisible__ = *true* | __IsBackgroundSurfaceVisible__ = *false* |
 |----|----|
@@ -42,21 +31,11 @@ Me.RadDiagram1.DiagramElement.IsBackgroundSurfaceVisible = True
 
 #### Set Background         
 
-{{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=Background}} 
-{{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=Background}} 
+<snippet id='diagram-background-grid-background-cs' />
+<snippet id='diagram-background-grid-background-vb' />
 
-````C#
-        
-this.radDiagram1.DiagramElement.BackgroundGrid.Background = new System.Drawing.SolidBrush(Color.LightYellow);
 
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.BackgroundGrid.Background = New System.Drawing.SolidBrush(Color.LightYellow)
 
-````
-
-{{endregion}} 
- 
 >caption Figure 1: Background
 
 ![WinForms RadDiagram Background](images/diagram-backgroundgrid003.png)
@@ -71,20 +50,10 @@ You can access the __BackgroundGrid__ properties:
 
 #### Set CellSize 
  
-{{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=CellSize}} 
-{{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=CellSize}} 
+<snippet id='diagram-background-grid-cellsize-cs' />
+<snippet id='diagram-background-grid-cellsize-vb' />
 
-````C#
-            
-this.radDiagram1.DiagramElement.BackgroundGrid.CellSize = new Telerik.Windows.Diagrams.Core.Size(40, 40);
 
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.BackgroundGrid.CellSize = New Telerik.Windows.Diagrams.Core.Size(40, 40)
-
-````
-
-{{endregion}} 
 
  
 * __LineStroke__: this property is of type *Brush* and it specifies how the cells outline is painted.
@@ -95,20 +64,11 @@ Me.RadDiagram1.DiagramElement.BackgroundGrid.CellSize = New Telerik.Windows.Diag
 
 #### Set LineStroke
 
-{{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=LineStroke}} 
-{{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=LineStroke}} 
+<snippet id='diagram-background-grid-linestroke-cs' />
+<snippet id='diagram-background-grid-linestroke-vb' />
 
-````C#
-            
-this.radDiagram1.DiagramElement.BackgroundGrid.LineStroke = new System.Drawing.SolidBrush(Color.Red);
 
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStroke = New System.Drawing.SolidBrush(Color.Red)
 
-````
-
-{{endregion}} 
  
 * __LineStrokeThickness__: this property is of type *double* and it gets or sets the thickness of the __RadDiagram__ background grid lines.
             
@@ -118,20 +78,10 @@ Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStroke = New System.Drawing.Sol
 
 #### Set LineStrokeThickness
 
-{{source=..\SamplesCS\Diagram\DiagramBackgroundGrid.cs region=LineStrokeThickness}} 
-{{source=..\SamplesVB\Diagram\DiagramBackgroundGrid.vb region=LineStrokeThickness}} 
+<snippet id='diagram-background-grid-linestrokethickness-cs' />
+<snippet id='diagram-background-grid-linestrokethickness-vb' />
 
-````C#
-        
-this.radDiagram1.DiagramElement.BackgroundGrid.LineStrokeThickness = 5;
 
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.BackgroundGrid.LineStrokeThickness = 5
-
-````
-
-{{endregion}} 
 
 # See Also
 

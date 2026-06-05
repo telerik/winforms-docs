@@ -53,55 +53,10 @@ Follow the steps:
 
 5\. Set the __BindingSource__ property of RadSlideView and RadPipsPager. 
 
-{{source=..\SamplesCS\SlideView\GettingStartedGallery.cs region=PipsSlider}} 
-{{source=..\SamplesVB\SlideView\GettingStartedGallery.vb region=PipsSlider}}
+<snippet id='slideview-gettingstartedgallery-pipsslider-cs' />
+<snippet id='slideview-gettingstartedgallery-pipsslider-vb' />
 
-````C#
 
-BindingSource source = new BindingSource();
-DataTable table = new DataTable();
-table.Columns.Add("Title", typeof(string));
-table.Rows.Add("Venice");
-table.Rows.Add("Rome");
-table.Rows.Add("Florence");
-
-this.radSlideView1.BindingSource = source;
-this.radPipsPager1.BindingSource = source;
-this.radPipsPager1.ButtonsVisibility = ButtonsVisibility.Visible;
-this.radSlideView1.ButtonsVisibility = ButtonsVisibility.VisibleOnMouseOver;
-source.DataSource = table;
-
-LightVisualElement titleTemplate = new LightVisualElement();
-titleTemplate.ForeColor = Color.DarkGray;
-titleTemplate.DrawText = true;
-titleTemplate.Font = new Font("Verdana", 12f, FontStyle.Bold);
-this.radSlideView1.Mappings.Add(new Mapping(titleTemplate, LightVisualElement.TextProperty, table.Columns[0].ColumnName));
-this.radSlideView1.TemplateElement = titleTemplate;
-      
-````
-````VB.NET
-
- Dim source As BindingSource = New BindingSource()
-Dim table As DataTable = New DataTable()
-table.Columns.Add("Title", GetType(String))
-table.Rows.Add("Venice")
-table.Rows.Add("Rome")
-table.Rows.Add("Florence")
-Me.radSlideView1.BindingSource = source
-Me.radPipsPager1.BindingSource = source
-Me.radPipsPager1.ButtonsVisibility = ButtonsVisibility.Visible
-Me.radSlideView1.ButtonsVisibility = ButtonsVisibility.VisibleOnMouseOver
-source.DataSource = table
-Dim titleTemplate As LightVisualElement = New LightVisualElement()
-titleTemplate.ForeColor = Color.DarkGray
-titleTemplate.DrawText = True
-titleTemplate.Font = New Font("Verdana", 12.0F, FontStyle.Bold)
-Me.radSlideView1.Mappings.Add(New Mapping(titleTemplate, LightVisualElement.TextProperty, table.Columns(0).ColumnName))
-Me.radSlideView1.TemplateElement = titleTemplate
-
-```` 
-
-{{endregion}}
 
 >note More advanced TemplateElement is demonstrated in the Demo application >> SlideView/ PipsPager >> First look example which also shows the smooth integration between RadSlideView and [RadPipsPager]({%slug pipspager-overview%}).
 

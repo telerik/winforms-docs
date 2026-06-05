@@ -39,65 +39,10 @@ We need to create a custom **RadPropertyGrid** control so that we can override t
 
 #### Control`s Implementation
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomKeyboardNavigation.cs region=CustomRadPropertyGrid}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomKeyboardNavigation.vb region=CustomRadPropertyGrid}}
-````C#
-public class CustomRadPropertyGrid : RadPropertyGrid
-{
-    public override string ThemeClassName
-    {
-        get
-        {
-            return typeof(RadPropertyGrid).FullName;
-        }
-    }
-    protected override PropertyGridElement CreatePropertyGridElement()
-    {
-        return new CuistomPropertyGridElement();
-    }
-    protected override bool IsInputKey(Keys keyData)
-    {
-        PropertyGridTraverser traverser = new PropertyGridTraverser(this.PropertyGridElement.PropertyTableElement);
-        traverser.MoveTo(this.SelectedGridItem);
-        if (keyData == Keys.Tab && traverser.MoveNext())
-        {
-            return true;
-        }
-        return base.IsInputKey(keyData);
-    }
-}
-
-````
-````VB.NET
-Public Class CustomRadPropertyGrid
-    Inherits RadPropertyGrid
-    Public Overrides Property ThemeClassName As String
-        Get
-            Return GetType(RadButton).FullName
-        End Get
-        Set(value As String)
-            MyBase.ThemeClassName = value
-        End Set
-    End Property
-    Protected Overrides Function CreatePropertyGridElement() As PropertyGridElement
-        Return New CuistomPropertyGridElement
-    End Function
-    Protected Overrides Function IsInputKey(ByVal keyData As Keys) As Boolean
-        Dim traverser As PropertyGridTraverser = New PropertyGridTraverser(Me.PropertyGridElement.PropertyTableElement)
-        traverser.MoveTo(Me.SelectedGridItem)
-        If ((keyData = Keys.Tab) _
-                AndAlso traverser.MoveNext) Then
-            Return True
-        End If
-        Return MyBase.IsInputKey(keyData)
-    End Function
-End Class
-
-```` 
+<snippet id='propertygrid-propertygridcustomkeyboardnavigation-customradpropertygrid-cs' />
+<snippet id='propertygrid-propertygridcustomkeyboardnavigation-customradpropertygrid-vb' />
 
 
-
-{{endregion}}
 
 ## Custom Elements 
 
@@ -107,129 +52,10 @@ The various elements building the control are created in special virtual methods
 
 #### Elements` Implementation
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridCustomKeyboardNavigation.cs region=CustomElements}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridCustomKeyboardNavigation.vb region=CustomElements}}
-````C#
-public class CuistomPropertyGridElement : PropertyGridElement
-{
-    protected override Type ThemeEffectiveType
-    {
-        get
-        {
-            return typeof(PropertyGridElement);
-        }
-    }
-    protected override PropertyGridSplitElement CreateSplitElement()
-    {
-        return new CustomPropertyGridSplitElement();
-    }
-}
-public class CustomPropertyGridSplitElement : PropertyGridSplitElement
-{
-    protected override Type ThemeEffectiveType
-    {
-        get
-        {
-            return typeof(PropertyGridSplitElement);
-        }
-    }
-    protected override PropertyGridTableElement CreateTableElement()
-    {
-        return new CustomPropertyGridTableElement();
-    }
-}
-public class CustomPropertyGridTableElement : PropertyGridTableElement
-{
-    protected override Type ThemeEffectiveType
-    {
-        get
-        {
-            return typeof(PropertyGridTableElement);
-        }
-    }
-    public override bool ProcessKeyDown(KeyEventArgs e)
-    {
-        if (e.KeyCode == Keys.Tab)
-        {
-            if (this.SelectedGridItem == null)
-            {
-                PropertyGridTraverser traverser = new PropertyGridTraverser(this);
-                if (traverser.MoveNext())
-                {
-                    this.ProcessSelection(traverser.Current, false);
-                }
-            }
-            else
-            {
-                PropertyGridTraverser traverser = new PropertyGridTraverser(this);
-                traverser.MoveTo(this.SelectedGridItem);
-                if (traverser.MoveNext())
-                {
-                    this.ProcessSelection(traverser.Current, false);
-                }
-            }
-            return true;
-        }
-        return base.ProcessKeyDown(e);
-    }
-}
-
-````
-````VB.NET
-Public Class CuistomPropertyGridElement
-    Inherits PropertyGridElement
-    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
-        Get
-            Return GetType(PropertyGridElement)
-        End Get
-    End Property
-    Protected Overrides Function CreateSplitElement() As PropertyGridSplitElement
-        Return New CustomPropertyGridSplitElement
-    End Function
-End Class
-Public Class CustomPropertyGridSplitElement
-    Inherits PropertyGridSplitElement
-    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
-        Get
-            Return GetType(PropertyGridSplitElement)
-        End Get
-    End Property
-    Protected Overrides Function CreateTableElement() As PropertyGridTableElement
-        Return New CustomPropertyGridTableElement
-    End Function
-End Class
-Public Class CustomPropertyGridTableElement
-    Inherits PropertyGridTableElement
-    Protected Overrides ReadOnly Property ThemeEffectiveType As Type
-        Get
-            Return GetType(PropertyGridTableElement)
-        End Get
-    End Property
-    Public Overrides Function ProcessKeyDown(ByVal e As KeyEventArgs) As Boolean
-        If (e.KeyCode = Keys.Tab) Then
-            If (Me.SelectedGridItem Is Nothing) Then
-                Dim traverser As PropertyGridTraverser = New PropertyGridTraverser(Me)
-                If traverser.MoveNext Then
-                    Me.ProcessSelection(traverser.Current, False)
-                End If
-            Else
-                Dim traverser As PropertyGridTraverser = New PropertyGridTraverser(Me)
-                traverser.MoveTo(Me.SelectedGridItem)
-                If traverser.MoveNext Then
-                    Me.ProcessSelection(traverser.Current, False)
-                End If
-            End If
-            Return True
-        End If
-        Return MyBase.ProcessKeyDown(e)
-    End Function
-End Class
-
-```` 
+<snippet id='propertygrid-propertygridcustomkeyboardnavigation-customelements-cs' />
+<snippet id='propertygrid-propertygridcustomkeyboardnavigation-customelements-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 

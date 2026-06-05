@@ -19,21 +19,10 @@ You can create an object of type **LocalDataSourceProvider** and assign it to Ra
 
 #### Set ItemSource
 
-{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=InitializeProvider}} 
-{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=InitializeProvider}} 
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-initializeprovider-cs' />
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-initializeprovider-vb' />
 
-````C#
-LocalDataSourceProvider dataProvider = new LocalDataSourceProvider();
-dataProvider.ItemsSource = dataset.Orders;
 
-````
-````VB.NET
-Dim dataProvider As New LocalDataSourceProvider()
-dataProvider.ItemsSource = dataset.Orders
-
-````
-
-{{endregion}} 
 
 >note The **ItemSource** can be any collection that implements IEnumerable interface or even a DataTable.
 >
@@ -49,60 +38,19 @@ The **LocalDataSourceProvider** is using four different collections for the data
 
 #### Add Row Descriptions
 
-{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=RowGroupDescriptions}} 
-{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=RowGroupDescriptions}} 
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-rowgroupdescriptions-cs' />
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-rowgroupdescriptions-vb' />
 
-````C#
-dataProvider.BeginInit();
-dataProvider.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "OrderDate", Step = DateTimeStep.Year, GroupComparer = new GroupNameComparer() });
-dataProvider.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "OrderDate", Step = DateTimeStep.Quarter, GroupComparer = new GroupNameComparer() });
-dataProvider.RowGroupDescriptions.Add(new DateTimeGroupDescription() { PropertyName = "OrderDate", Step = DateTimeStep.Month, GroupComparer = new GroupNameComparer() });
-dataProvider.EndInit();
 
-````
-````VB.NET
-dataProvider.BeginInit()
-dataProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Year, _
- .GroupComparer = New GroupNameComparer() _
-})
-dataProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Quarter, _
- .GroupComparer = New GroupNameComparer() _
-})
-dataProvider.RowGroupDescriptions.Add(New DateTimeGroupDescription() With { _
- .PropertyName = "OrderDate", _
- .[Step] = DateTimeStep.Month, _
- .GroupComparer = New GroupNameComparer() _
-})
-dataProvider.EndInit()
-
-````
-
-{{endregion}}
 
 * __ColumnGroupDescription__: The data added to this description will be shown as columns headers in RadPivotGrid and RadPivotFieldList. The properties can be defined as **PropertyGroupDescription**, **DateTimeGroupDescription**, **DoubleGroupDescription** or you can create custom implementation of **PropertyGroupDescriptionBase** class.Here's how to define the column group descriptions in your application: 
 
 #### Add Columns Descriptions
 
-{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=ColumnGroupDescriptions}} 
-{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=ColumnGroupDescriptions}} 
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-columngroupdescriptions-cs' />
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-columngroupdescriptions-vb' />
 
-````C#
-dataProvider.ColumnGroupDescriptions.Add(new PropertyGroupDescription() { PropertyName = "EmployeeID", GroupComparer = new GrandTotalComparer() });
 
-````
-````VB.NET
-dataProvider.ColumnGroupDescriptions.Add(New PropertyGroupDescription() With { _
- .PropertyName = "EmployeeID", _
- .GroupComparer = New GrandTotalComparer() _
-})
-
-````
-
-{{endregion}}
 
 * __AggregateDescriptions__: The data added to this description will be aggregated and included in RadPivotGrid as cells. The properties can be defined as **PropertyAggregateDescription** or you can create custom implementation of **PropertyAggregateDescriptionBase** class. 
 
@@ -113,52 +61,19 @@ Here's how to define the aggregate descriptions in your application:
 
 #### Add Aggregate Descriptions
 
-{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=AggregateDescriptions}} 
-{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=AggregateDescriptions}} 
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-aggregatedescriptions-cs' />
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-aggregatedescriptions-vb' />
 
-````C#
-dataProvider.BeginInit();
-dataProvider.AggregateDescriptions.Add(new PropertyAggregateDescription() { PropertyName = "Freight", AggregateFunction = AggregateFunctions.Sum });
-dataProvider.AggregateDescriptions.Add(new PropertyAggregateDescription() { PropertyName = "Freight", AggregateFunction = AggregateFunctions.Average });
-dataProvider.EndInit();
 
-````
-````VB.NET
-dataProvider.BeginInit()
-dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Sum _
-})
-dataProvider.AggregateDescriptions.Add(New PropertyAggregateDescription() With { _
- .PropertyName = "Freight", _
- .AggregateFunction = AggregateFunctions.Average _
-})
-dataProvider.EndInit()
-
-````
-
-{{endregion}} 
 
 * __FilterDescriptions__: The data added to this description will be filtered and after that included in RadPivotGrid. The properties can be defined as **PropertyFilterDescription** or you can create custom implementation of **PropertyFilterDescriptionBase** class.
 
 #### Add Filter Descriptions
 
-{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=FilterDescriptions}} 
-{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=FilterDescriptions}} 
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-filterdescriptions-cs' />
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-filterdescriptions-vb' />
 
-````C#
-dataProvider.FilterDescriptions.Add(new PropertyFilterDescription() { PropertyName = "ShipCountry", CustomName = "Country" });
 
-````
-````VB.NET
-dataProvider.FilterDescriptions.Add(New PropertyFilterDescription() With { _
- .PropertyName = "ShipCountry", _
- .CustomName = "Country" _
-})
-
-````
-
-{{endregion}}
 
 ## Adding Property Descriptors
 
@@ -186,19 +101,10 @@ To apply the already defined data provider, use the following property:
 
 #### Set Data Provider
 
-{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=ApplyingDataProvider}} 
-{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=ApplyingDataProvider}} 
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-applyingdataprovider-cs' />
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-applyingdataprovider-vb' />
 
-````C#
-this.radPivotGrid1.DataProvider = dataProvider;
 
-````
-````VB.NET
-Me.RadPivotGrid1.DataProvider = dataProvider
-
-````
-
-{{endregion}} 
 
 ## The Culture Property
 
@@ -206,19 +112,10 @@ The groups formed by the **DateTimeGroupDescription** as well as the number form
 
 #### Provider Culture
 
-{{source=..\SamplesCS\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.cs region=culture}} 
-{{source=..\SamplesVB\PivotGrid\PopulatingWithData\PivotGridUsingTheLocalSourceDataProvider.vb region=culture}} 
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-culture-cs' />
+<snippet id='pivotgrid-pivotgridusingthelocalsourcedataprovider-culture-vb' />
 
-````C#
-dataProvider.Culture = new System.Globalization.CultureInfo("de-DE");
 
-````
-````VB.NET
-dataProvider.Culture = New System.Globalization.CultureInfo("de-DE")
-
-````
-
-{{endregion}}
 
 # See Also
 

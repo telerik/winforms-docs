@@ -19,19 +19,10 @@ By default, the __RadDiagram__ is enabled for rotation manipulation. In order to
 
 ![WinForms RadDiagram Enable/Disable Rotation](images/diagram-items-manipulation-rotation001.png) 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=EnableRotation}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=EnableRotation}} 
+<snippet id='diagram-rotation-enablerotation-cs'/>
+<snippet id='diagram-rotation-enablerotation-vb'/>
 
-````C#
-this.radDiagram1.IsRotationEnabled = false;
-
-````
-````VB.NET
-Me.RadDiagram1.IsRotationEnabled = False
-
-````
-
-{{endregion}} 
+ 
 
  
 ## Rotation Angle
@@ -40,30 +31,10 @@ You can rotate shapes by using their __RotationAngle__ property:
 
 ![WinForms RadDiagram Rotation Angle](images/diagram-items-manipulation-rotation002.png) 
 
-{{source=..\SamplesCS\Diagram\DiagramItemsManipulation.cs region=RotationAngle}} 
-{{source=..\SamplesVB\Diagram\DiagramItemsManipulation.vb region=RotationAngle}} 
+<snippet id='diagram-rotation-rotationangle-cs'/>
+<snippet id='diagram-rotation-rotationangle-vb'/>
 
-````C#
-RadDiagramShape sourceShape = new RadDiagramShape()
-{
-    Text = "Text",
-    BackColor = System.Drawing.Color.LightBlue,
-    ElementShape = new TabVsShape(),
-};
-sourceShape.RotationAngle = 45;
-
-````
-````VB.NET
-Dim sourceShape As New RadDiagramShape() With { _
-    .Text = "Text", _
-    .BackColor = System.Drawing.Color.LightBlue, _
-    .ElementShape = New TabVsShape() _
-}
-sourceShape.RotationAngle = 45
-
-````
-
-{{endregion}} 
+ 
 
 
 

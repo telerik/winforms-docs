@@ -20,27 +20,10 @@ The code sample below shows how multiple views can be configured and positioned.
 
 #### Configuring multiple views
 
-{{source=..\SamplesCS\Calendar\MultiViewCalendar.cs region=multiView}} 
-{{source=..\SamplesVB\Calendar\MultiViewCalendar.vb region=multiView}} 
+<snippet id='calendar-features-multiview-mode-multiview-cs' />
+<snippet id='calendar-features-multiview-mode-multiview-vb' />
 
-````C#
-radCalendar1.AllowMultipleView = true;
-radCalendar1.MultiViewColumns = 3;
-radCalendar1.MultiViewRows = 3;
-radCalendar1.CurrentViewColumn = 0;
-radCalendar1.CurrentViewRow = 0;
 
-````
-````VB.NET
-RadCalendar1.AllowMultipleView = True
-RadCalendar1.MultiViewColumns = 3
-RadCalendar1.MultiViewRows = 3
-RadCalendar1.CurrentViewColumn = 0
-RadCalendar1.CurrentViewRow = 0
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: MultiView with 3 rows and 3 columns
 ![WinForms RadCalendar MultiView with 3 rows and 3 columns](images/calendar-features-multi-view-mode002.png)

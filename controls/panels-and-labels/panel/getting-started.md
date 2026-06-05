@@ -51,30 +51,10 @@ To programmatically add a **RadPanel** to a form, create a new instance of a **
 
 #### Adding a RadPanel at Run-time 
 
-{{source=..\SamplesCS\PanelsAndLabels\Panel\PanelGettingStarted.cs region=AddPanel}} 
-{{source=..\SamplesVB\PanelsAndLabels\Panel\PanelGettingStarted.vb region=AddPanel}}
-````C#
-RadPanel panel = new RadPanel();
-this.Controls.Add(panel);
-panel.ForeColor = Color.DarkBlue;
-panel.BackColor = Color.LightBlue;
-panel.PanelElement.PanelBorder.ForeColor = Color.Gray;
-panel.Text = "I am a RadPanel!";
-
-````
-````VB.NET
-Dim panel As New RadPanel()
-Me.Controls.Add(panel)
-panel.ForeColor = Color.DarkBlue
-panel.BackColor = Color.LightBlue
-panel.PanelElement.PanelBorder.ForeColor = Color.Gray
-panel.Text = "I am a RadPanel!"
-
-````
+<snippet id='panels-and-labels-panelgettingstarted-addpanel-cs' />
+<snippet id='panels-and-labels-panelgettingstarted-addpanel-vb' />
 
 
-
-{{endregion}}
 
 ## Programming RadPanel
 

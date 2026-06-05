@@ -76,19 +76,10 @@ You can easily set an Image to the __RadRibbonBar__ Start Menu by accessing the 
 
 #### Set RibbonBar Start Button Image
 
-{{source=..\SamplesCS\RibbonBar\GettingStarted\CustomizingTheStartMenu.cs region=StartButtonImage}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\CustomizingTheStartMenu.vb region=StartButtonImage}} 
+<snippet id='ribbonbar-customizingthestartmenu-startbuttonimage-cs' />
+<snippet id='ribbonbar-customizingthestartmenu-startbuttonimage-vb' />
 
-````C#
-this.radRibbonBar1.StartButtonImage = startMenuButtonImage;
 
-````
-````VB.NET
-Me.RadRibbonBar1.StartButtonImage = startMenuButtonImage
-
-````
-
-{{endregion}}
 
 >note The size of the RadRibbonBar Start Button will be automatically adjusted to fit the size of the image set. Unappropriate image sizes might lead to undesired visual appearance of the button.
 >

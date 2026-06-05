@@ -19,21 +19,10 @@ The sorting capabilities can be controlled either by using the predefined sortin
 
 #### Default Sorting
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridSorting.cs region=Sorting}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridSorting.vb region=Sorting}} 
+<snippet id='propertygrid-propertygridsorting-sorting-cs' />
+<snippet id='propertygrid-propertygridsorting-sorting-vb' />
 
-````C#
-radPropertyGrid1.PropertySort = PropertySort.Alphabetical;
-radPropertyGrid1.SortOrder = SortOrder.Descending;
 
-````
-````VB.NET
-RadPropertyGrid1.PropertySort = PropertySort.Alphabetical
-RadPropertyGrid1.SortOrder = SortOrder.Descending
-
-````
-
-{{endregion}}
 
 Another way to sort the items is to create a __SortDescriptor__ and add it to the __SortDescriptors__ collection of the control. Additionally, to enable sorting with sort descriptors, you have to set the __EnableSorting__ property to *true*.
 
@@ -61,23 +50,10 @@ Here is an example of sorting the items by their value in ascending order.
 
 #### Sorting with SortDescriptors
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridSorting.cs region=SortDescriptor}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridSorting.vb region=SortDescriptor}} 
+<snippet id='propertygrid-propertygridsorting-sortdescriptor-cs' />
+<snippet id='propertygrid-propertygridsorting-sortdescriptor-vb' />
 
-````C#
-radPropertyGrid1.EnableSorting = true;
-SortDescriptor sort = new SortDescriptor("FormattedValue", ListSortDirection.Ascending);
-radPropertyGrid1.SortDescriptors.Add(sort);
 
-````
-````VB.NET
-RadPropertyGrid1.EnableSorting = True
-Dim sort = New SortDescriptor("FormattedValue", ListSortDirection.Ascending)
-RadPropertyGrid1.SortDescriptors.Add(sort)
-
-````
-
-{{endregion}}
 
 >important The user should clear programmatically the **SortDescriptors** collection first because there is a default sort order (*Ascending*) for the properties in the object.
 

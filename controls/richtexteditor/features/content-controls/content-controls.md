@@ -73,39 +73,10 @@ The __CheckBox__ content control exposes two properties __CheckedState__ and __U
 
 #### Example 1: Setting CheckBox properties
 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=CheckBoxProperties}} 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=CheckBoxProperties}} 
+<snippet id='richtexteditor-contentcontrols-checkboxproperties-cs' />
+<snippet id='richtexteditor-contentcontrols-checkboxproperties-vb' />
 
-````C#
-SdtCheckBoxState checkedBoxState = new SdtCheckBoxState();
-checkedBoxState.Font = new Telerik.WinControls.RichTextEditor.UI.FontFamily("Arial");
-checkedBoxState.CharacterCode = 0040;
 
-SdtCheckBoxState uncheckedBoxState = new SdtCheckBoxState();
-uncheckedBoxState.Font = new Telerik.WinControls.RichTextEditor.UI.FontFamily("Arial");
-uncheckedBoxState.CharacterCode = 0024;
-
-CheckBoxProperties properties = new CheckBoxProperties();
-properties.CheckedState = checkedBoxState;
-properties.UncheckedState = uncheckedBoxState;
-properties.Checked = true;
-
-````
-````VB.NET
-Dim checkedBoxState = New SdtCheckBoxState()
-checkedBoxState.Font = New Telerik.WinControls.RichTextEditor.UI.FontFamily("Arial")
-checkedBoxState.CharacterCode = 40
-
-Dim uncheckedBoxState = New SdtCheckBoxState()
-uncheckedBoxState.Font = New Telerik.WinControls.RichTextEditor.UI.FontFamily("Arial")
-uncheckedBoxState.CharacterCode = 24
-
-Dim properties = New CheckBoxProperties()
-properties.CheckedState = checkedBoxState
-properties.UncheckedState = uncheckedBoxState
-properties.Checked = True
-
-````
 
 ### ComboBox and DropDownList
 
@@ -118,31 +89,10 @@ The __ComboBox__ and __DropDownList__ provider the user with options to choose f
 
 #### Example 2: Setting ComboBox properties
 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=ComboBoxProperties}} 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=ComboBoxProperties}} 
+<snippet id='richtexteditor-contentcontrols-comboboxproperties-cs' />
+<snippet id='richtexteditor-contentcontrols-comboboxproperties-vb' />
 
-````C#
-List<ListItem> items = new List<ListItem>();
-items.Add(new ListItem() { DisplayText = "Choice 1", Value = "a" });
-items.Add(new ListItem() { DisplayText = "Choice 2", Value = "b" });
 
-ComboBoxProperties properties = new ComboBoxProperties();
-properties.Items = items;
-properties.SelectedItem = items.Where(li => li.Value == "a").FirstOrDefault();
-
-````
-````VB.NET
-Dim items As List(Of ListItem) = New List(Of ListItem)()
-items.Add(New ListItem() With {
-    .DisplayText = "Choice 1",
-    .Value = "a"
-})
-items.Add(New ListItem() With {
-    .DisplayText = "Choice 2",
-    .Value = "b"
-})
-
-````
 
 ### Date
 
@@ -155,27 +105,10 @@ The __Date__ content control allows you to enter a date by using a calendar. The
 
 #### Example 3: Setting Date properties
 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=DateProperties}} 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=DateProperties}} 
+<snippet id='richtexteditor-contentcontrols-dateproperties-cs' />
+<snippet id='richtexteditor-contentcontrols-dateproperties-vb' />
 
-````C#
-DateProperties properties = new DateProperties();
-properties.DateFormat = "MM/dd/yyyy H:mm";
-properties.Language = new CultureInfo("bg-BG");
-properties.FullDate = DateTime.Now;
-properties.Calendar = SdtCalendar.Gregorian;
-properties.DateMappingType = DateMappingType.DateTime;
 
-````
-````VB.NET
-Dim properties As DateProperties = New DateProperties()
-properties.DateFormat = "MM/dd/yyyy H:mm"
-properties.Language = New CultureInfo("bg-BG")
-properties.FullDate = DateTime.Now
-properties.Calendar = SdtCalendar.Gregorian
-properties.DateMappingType = DateMappingType.DateTime
-
-````
 
 ### Text 
 
@@ -184,19 +117,10 @@ The __Text__ content control allows you to enter plain text. The text content co
 
 #### Example 4: Setting Text properties
 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=TextProperties}} 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=TextProperties}} 
+<snippet id='richtexteditor-contentcontrols-textproperties-cs' />
+<snippet id='richtexteditor-contentcontrols-textproperties-vb' />
 
-````C#
-TextProperties properties = new TextProperties();
-properties.IsMultiline = true;
 
-````
-````VB.NET
-Dim properties As TextProperties = New TextProperties()
-properties.IsMultiline = True
-
-````
 
 ### RepeatingSection
 
@@ -206,21 +130,9 @@ The __RepeatingSection__ content control repeats the content contained within it
 
 #### Example 5: Setting RepeatingSection properties
 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.cs region=RepeatingSectionProperties}} 
-{{source=..\SamplesCS\RichTextEditor\Features\ContentControls.vb region=RepeatingSectionProperties}} 
+<snippet id='richtexteditor-contentcontrols-repeatingsectionproperties-cs' />
+<snippet id='richtexteditor-contentcontrols-repeatingsectionproperties-vb' />
 
-````C#
-RepeatingSectionProperties properties = new RepeatingSectionProperties();
-properties.SectionTitle = "Title";
-properties.AllowInsertAndDeleteSections = true;
-
-````
-````VB.NET
-Dim properties As RepeatingSectionProperties = New RepeatingSectionProperties()
-properties.SectionTitle = "Title"
-properties.AllowInsertAndDeleteSections = True
-
-````
 
 
 # See Also

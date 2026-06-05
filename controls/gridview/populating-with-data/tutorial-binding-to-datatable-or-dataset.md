@@ -54,31 +54,8 @@ The following tutorial demonstrates binding to a single database table. For info
 
 11\. Replace the Form_Load event handler with the following code. *The "foreach" code iterates all the columns in the grid and calls BestFit() so that the columns will expand to show the data*.
 
-{{source=..\SamplesCS\GridView\PopulatingWithData\TutorialBindingToDataTableOrDataSet.cs region=bestFitColumns}} 
-{{source=..\SamplesVB\GridView\PopulatingWithData\TutorialBindingToDataTableOrDataSet.vb region=bestFitColumns}} 
-
-````C#
-private void TutorialBindingToDataTableOrDataSet_Load(object sender, EventArgs e)
-{
-    this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
-    foreach (GridViewDataColumn column in radGridView1.Columns)
-    {
-        column.BestFit();
-    }
-}
-
-````
-````VB.NET
-Private Sub TutorialBindingToDataTableOrDataSet_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    Me.CategoriesTableAdapter.Fill(Me.NwindDataSet.Categories)
-    For Each column As GridViewDataColumn In RadGridView1.Columns
-        column.BestFit()
-    Next
-End Sub
-
-````
-
-{{endregion}} 
+<snippet id='gridview-tutorialbindingtodatatableordataset-bestfitcolumns-cs' />
+<snippet id='gridview-tutorialbindingtodatatableordataset-bestfitcolumns-vb' />
 
 12\. Press __F5__ to run the application.
             

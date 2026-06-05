@@ -19,21 +19,10 @@ The __ShowLegend__ property of __RadChartView__ controls whether the legend is v
 
 #### Show Legend
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=ShowLegend}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=ShowLegend}} 
+<snippet id='chartview-legend-showlegend-cs'/>
+<snippet id='chartview-legend-showlegend-vb'/>
 
-````C#
-this.radChartView1.ShowLegend = true;
-this.radChartView1.LegendTitle = "Legend";
 
-````
-````VB.NET
-Me.RadChartView1.ShowLegend = True
-Me.RadChartView1.LegendTitle = "Legend"
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Show Legend
 
@@ -45,23 +34,10 @@ The location of the title can be modified by the __TitlePosition__ property. Add
 
 #### Legend Settings
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomizeLegendTitle}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomizeLegendTitle}} 
+<snippet id='chartview-legend-customizelegendtitle-cs'/>
+<snippet id='chartview-legend-customizelegendtitle-vb'/>
 
-````C#
-this.radChartView1.ChartElement.LegendElement.TitlePosition = TitlePosition.Bottom;
-this.radChartView1.ChartElement.LegendElement.TitleElement.Font = new Font("Arial", 12, FontStyle.Italic);
-this.radChartView1.ChartElement.LegendElement.TitleElement.ForeColor = Color.Red;
 
-````
-````VB.NET
-Me.RadChartView1.ChartElement.LegendElement.TitlePosition = TitlePosition.Bottom
-Me.RadChartView1.ChartElement.LegendElement.TitleElement.Font = New Drawing.Font("Arial", 12, Drawing.FontStyle.Italic)
-Me.RadChartView1.ChartElement.LegendElement.TitleElement.ForeColor = Drawing.Color.Red
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: Legend Settings
 
@@ -71,19 +47,10 @@ You can dock the legend to each of the four sides of the control by setting the 
 
 #### Legend Position
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=LegendPositionBottom}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=LegendPositionBottom}} 
+<snippet id='chartview-legend-legendpositionbottom-cs'/>
+<snippet id='chartview-legend-legendpositionbottom-vb'/>
 
-````C#
-this.radChartView1.ChartElement.LegendPosition = LegendPosition.Bottom;
 
-````
-````VB.NET
-Me.RadChartView1.ChartElement.LegendPosition = LegendPosition.Bottom
-
-````
-
-{{endregion}}
 
 >caption Figure 3: Legend Position 
 
@@ -96,21 +63,10 @@ Alternatively, you can set it to float over the chart view. Here is how to set t
 
 #### Float Legend
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=LegendPositionFloat}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=LegendPositionFloat}} 
+<snippet id='chartview-legend-legendpositionfloat-cs'/>
+<snippet id='chartview-legend-legendpositionfloat-vb'/>
 
-````C#
-this.radChartView1.ChartElement.LegendPosition = LegendPosition.Float;
-this.radChartView1.ChartElement.LegendOffset = new Point(200, 0);
 
-````
-````VB.NET
-Me.RadChartView1.ChartElement.LegendPosition = LegendPosition.Float
-Me.RadChartView1.ChartElement.LegendOffset = New Point(200, 0)
-
-````
-
-{{endregion}} 
 
 >caption Figure 4: Float Legend
 
@@ -121,23 +77,10 @@ Me.RadChartView1.ChartElement.LegendOffset = New Point(200, 0)
 
 #### Wrap Legend Items
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=WrapLegend}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=WrapLegend}} 
+<snippet id='chartview-legend-wraplegend-cs'/>
+<snippet id='chartview-legend-wraplegend-vb'/>
 
-````C#
 
-this.radChartView1.ChartElement.LegendItemsLayout = LegendItemsLayout.Wrap;
-this.radChartView1.ChartElement.LegendElement.WrapPanelElement.Orientation = System.Windows.Forms.Orientation.Horizontal;
-
-````
-````VB.NET
-
-Me.RadChartView1.ChartElement.LegendItemsLayout = LegendItemsLayout.Wrap
-Me.RadChartView1.ChartElement.LegendElement.WrapPanelElement.Orientation = System.Windows.Forms.Orientation.Horizontal
-
-````
-
-{{endregion}} 
 
 |LegendItemsLayout.Stack|LegendItemsLayout.Wrap|
 |----|----|
@@ -149,23 +92,10 @@ The elements that provide legend items in the case of the Pie chart are the indi
 
 #### Legend Properties
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=LegendProperties}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=LegendProperties}} 
+<snippet id='chartview-legend-legendproperties-cs'/>
+<snippet id='chartview-legend-legendproperties-vb'/>
 
-````C#
-LineSeries line = new LineSeries();
-line.IsVisibleInLegend = true;
-line.LegendTitle = "Windows 8";
 
-````
-````VB.NET
-Dim line As New LineSeries()
-line.IsVisibleInLegend = True
-line.LegendTitle = "Windows 8"
-
-````
-
-{{endregion}} 
 
 >caption Figure 5: Legend Properties
 
@@ -177,20 +107,10 @@ You have access to the items displayed in the legend through the __Items__ prope
 
 #### Change Text
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=ChangeLegendItemText}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=ChangeLegendItemText}}
-````C#
-this.radChartView1.ChartElement.LegendElement.Items[0].Title = "Linux";
-
-````
-````VB.NET
-Me.RadChartView1.ChartElement.LegendElement.Items(0).Title = "Linux"
-
-```` 
+<snippet id='chartview-legend-changelegenditemtext-cs'/>
+<snippet id='chartview-legend-changelegenditemtext-vb'/>
 
 
-
-{{endregion}} 
 
 >caption Figure 6: Changed Text
 
@@ -202,28 +122,10 @@ You can add and remove items from the legend through the __Items__ collection. Y
 
 #### Add and Remove Legends
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=AddLegendItem}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=AddLegendItem}}
-````C#
-LegendItem item = new LegendItem();
-item.Element.BorderColor = Color.Black;
-item.Element.BackColor = Color.Yellow;
-item.Title = "Custom item";
-this.radChartView1.ChartElement.LegendElement.Items.Add(item);
-
-````
-````VB.NET
-Dim item As New LegendItem()
-item.Element.BorderColor = Color.Black
-item.Element.BackColor = Color.Yellow
-item.Title = "Custom item"
-Me.RadChartView1.ChartElement.LegendElement.Items.Add(item)
-
-```` 
+<snippet id='chartview-legend-addlegenditem-cs'/>
+<snippet id='chartview-legend-addlegenditem-vb'/>
 
 
-
-{{endregion}} 
 
 >caption Figure 7: Added Item
 
@@ -235,74 +137,17 @@ You can use your own legend item elements by handling the __VisualItemCreating__
 
 #### Add a Custom Legend Item
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem1}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomLegendItem1}}
-````C#
-this.radChartView1.ChartElement.LegendElement.VisualItemCreating +=new LegendItemElementCreatingEventHandler(LegendElement_VisualItemCreating);
-
-````
-````VB.NET
-AddHandler Me.RadChartView1.ChartElement.LegendElement.VisualItemCreating, AddressOf LegendElement_VisualItemCreating
-
-```` 
+<snippet id='chartview-legend-customlegenditem1-cs'/>
+<snippet id='chartview-legend-customlegenditem1-vb'/>
 
 
-
-{{endregion}} 
 
 #### Custom LegendItemElement Implementation:
 
-{{source=..\SamplesCS\ChartView\Features\ChartViewLegend.cs region=CustomLegendItem2}} 
-{{source=..\SamplesVB\ChartView\Features\ChartViewLegend.vb region=CustomLegendItem2}}
-````C#
-public class CustomLegendItemElement : LegendItemElement
-{
-    public CustomLegendItemElement(LegendItem item)
-        : base(item)
-    {
-        this.Children.Remove(this.MarkerElement);
-        this.TitleElement.DrawFill = true;
-        this.TitleElement.DrawBorder = true;
-        this.StretchHorizontally = true;
-    }
-    protected override void Synchronize()
-    {
-        base.Synchronize();
-        this.SyncVisualStyleProperties(this.LegendItem.Element, this.TitleElement);
-        this.TitleElement.ForeColor = Color.White;
-    }
-}
-private void LegendElement_VisualItemCreating(object sender, LegendItemElementCreatingEventArgs e)
-{
-    e.ItemElement = new CustomLegendItemElement(e.LegendItem);
-}
-
-````
-````VB.NET
-Public Class CustomLegendItemElement
-    Inherits LegendItemElement
-    Public Sub New(item As LegendItem)
-        MyBase.New(item)
-        Me.Children.Remove(Me.MarkerElement)
-        Me.TitleElement.DrawFill = True
-        Me.TitleElement.DrawBorder = True
-        Me.StretchHorizontally = True
-    End Sub
-    Protected Overrides Sub Synchronize()
-        MyBase.Synchronize()
-        Me.SyncVisualStyleProperties(Me.LegendItem.Element, Me.TitleElement)
-        Me.TitleElement.ForeColor = Color.White
-    End Sub
-End Class
-Private Sub LegendElement_VisualItemCreating(sender As Object, e As LegendItemElementCreatingEventArgs)
-    e.ItemElement = New CustomLegendItemElement(e.LegendItem)
-End Sub
-
-```` 
+<snippet id='chartview-legend-customlegenditem2-cs'/>
+<snippet id='chartview-legend-customlegenditem2-vb'/>
 
 
-
-{{endregion}} 
 
 >caption Figure 8: Custom Legend Item
 

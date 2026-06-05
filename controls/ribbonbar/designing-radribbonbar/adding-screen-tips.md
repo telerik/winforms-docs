@@ -48,67 +48,19 @@ To completely customize the screen tips appearance, its size, text wrapping, etc
 
 ## Using ScreenTipNeeded
 
-{{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=addingScreenTips}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=addingScreenTips}} 
+<snippet id='ribbonbar-addingscreentips-addingscreentips-cs' />
+<snippet id='ribbonbar-addingscreentips-addingscreentips-vb' />
 
-````C#
-private void radRibbonBar1_ScreenTipNeeded(object sender, ScreenTipNeededEventArgs e)
-{
-    RadButtonElement buttonElement = e.Item as RadButtonElement;
-    if (buttonElement != null && buttonElement.Text == "Button 1")
-     {
-         screenTip.CaptionLabel.Text = "Paste (Ctrl + V)";
-         screenTip.MainTextLabel.Text = "Add content from the Clipboard to your document";
-         buttonElement.ScreenTip = this.screenTip;
-     }
-}
 
-````
-````VB.NET
-Private Sub RadRibbonBar1_ScreenTipNeeded(sender As Object, e As ScreenTipNeededEventArgs)
-    Dim buttonElement As RadButtonElement = TryCast(e.Item, RadButtonElement)
-    If buttonElement IsNot Nothing AndAlso buttonElement.Text = "Button 1" Then
-        screenTip.CaptionLabel.Text = "Paste (Ctrl + V)"
-        screenTip.MainTextLabel.Text = "Add content from the Clipboard to your document"
-        buttonElement.ScreenTip = Me.screenTip
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 The code sample below adds screen tips to two button elements in the __RadRibbonBar__:
 
 #### Directly Acess Elements
 
-{{source=..\SamplesCS\RibbonBar\GettingStarted\AddingScreenTips.cs region=addScreenTipsToButtonElements}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\AddingScreenTips.vb region=addScreenTipsToButtonElements}} 
+<snippet id='ribbonbar-addingscreentips-addscreentipstobuttonelements-cs' />
+<snippet id='ribbonbar-addingscreentips-addscreentipstobuttonelements-vb' />
 
-````C#
-RadOffice2007ScreenTipElement tip1 = new RadOffice2007ScreenTipElement();
-tip1.CaptionLabel.Text = "Button1";
-tip1.MainTextLabel.Text = "My Text";
-RadOffice2007ScreenTipElement tip2 = new RadOffice2007ScreenTipElement();
-tip2.CaptionLabel.Text = "Button2";
-tip2.MainTextLabel.Text = "My Text";
-this.radButtonElement2.ScreenTip = tip1;
-this.radButtonElement3.ScreenTip = tip2;
 
-````
-````VB.NET
-Dim tip1 As New RadOffice2007ScreenTipElement()
-tip1.CaptionLabel.Text = "Button1"
-tip1.MainTextLabel.Text = "My Text"
-Dim tip2 As New RadOffice2007ScreenTipElement()
-tip2.CaptionLabel.Text = "Button2"
-tip2.MainTextLabel.Text = "My Text"
-Me.RadButtonElement2.ScreenTip = tip1
-Me.RadButtonElement3.ScreenTip = tip2
-
-````
-
-{{endregion}}
 
 ## See Also
 

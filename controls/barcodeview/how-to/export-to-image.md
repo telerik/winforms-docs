@@ -28,38 +28,10 @@ You can export the **RadBarcodeView** content by using one of the following over
 
 #### Export to Image
 
-{{source=..\SamplesCS\BarcodeView\BarcodeViewGettingStarted.cs region=ExportToImage}} 
-{{source=..\SamplesVB\BarcodeView\BarcodeViewGettingStarted.vb region=ExportToImage}} 
+<snippet id='barcodeview-export-to-image-exporttoimage-cs' />
+<snippet id='barcodeview-export-to-image-exporttoimage-vb' />
 
-````C#
 
-using (SaveFileDialog saveFileDialog = new SaveFileDialog())
-{
-    saveFileDialog.Filter = "Png (*.png)|*.png";
-    saveFileDialog.FileName = "QRCode";
-    if (saveFileDialog.ShowDialog() == DialogResult.OK)
-    {
-        Image img = radBarcodeView1.ExportToImage();
-        img.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
-    }
-}           
-
-````
-````VB.NET
-
-Using saveFileDialog As SaveFileDialog = New SaveFileDialog()
-    saveFileDialog.Filter = "Png (*.png)|*.png"
-    saveFileDialog.FileName = "QRCode"
-
-    If saveFileDialog.ShowDialog() = DialogResult.OK Then
-        Dim img As Image = radBarcodeView1.ExportToImage()
-        img.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png)
-    End If
-End Using
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Exported Barcode
 

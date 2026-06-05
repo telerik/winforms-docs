@@ -27,111 +27,17 @@ Here is how to do that:
 
 1\. For each of the types of forms that we create, we should create a corresponding **DocumentWindow**/**ToolWindow** that serves as a container. Initially, global variables for the **DocumentWindows**/**ToolWindows** should be defined without creating new objects. 
 
-{{source=..\SamplesCS\Dock\SingletonForms.cs region=fields}} 
-{{source=..\SamplesVB\Dock\SingletonForms.vb region=fields}} 
+<snippet id='dock-docking-singleton-forms-fields-cs' />
+<snippet id='dock-docking-singleton-forms-fields-vb' />
 
-````C#
-DocumentWindow greenDockWindow;
-DocumentWindow yellowDockWindow;
-
-````
-````VB.NET
-Private greenDockWindow As DocumentWindow
-Private yellowDockWindow As DocumentWindow
-
-````
-
-{{endregion}} 
+ 
  
 2\. Upon clicking a button for opening a specific type of form, we should check if an object of the appropriate **DocumentWindow** exists. If it does not exist, this means that a form of the type that matches the **DocumentWindow** has never been created, so we need to create such a form together with the **DocumentWindow**. Note that we set the __CloseAction__ of the **DocumentWindow** to  *Hide*. When the end-user closes the **DocumentWindow**, it actually becomes hidden rather than closed and disposed. This allows us to use the same instance later. After creating the form and the window, we should dock the form in the window - this will allow us to control the form together with the **DocumentWindow** that hosts it using the globally defined **DocumentWindow** variables. Finally, we should just show the **DocumentWindow**. If the **DocumentWindow** has already been created the previous time we pressed the 'show' button, we should just show it: 
 
-{{source=..\SamplesCS\Dock\SingletonForms.cs region=clickHandlers}} 
-{{source=..\SamplesVB\Dock\SingletonForms.vb region=clickHandlers}} 
+<snippet id='dock-docking-singleton-forms-clickhandlers-cs' />
+<snippet id='dock-docking-singleton-forms-clickhandlers-vb' />
 
-````C#
-private void btnOpenGreenForm_Click(object sender, EventArgs e)
-{
-    if (greenDockWindow == null)
-    {
-        greenDockWindow = new DocumentWindow();
-        greenDockWindow.Text = "Green Form";
-        greenDockWindow.CloseAction = DockWindowCloseAction.Hide;
-        GreenForm gForm = new GreenForm();
-        gForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-        gForm.TopLevel = false;
-        gForm.Dock = DockStyle.Fill;
-        greenDockWindow.Controls.Add(gForm);
-        this.radDock1.AddDocument(greenDockWindow);
-        gForm.Show();
-    }
-    else
-    {
-        greenDockWindow.Show();
-    }
-    this.radDock1.ActiveWindow = greenDockWindow;
-}
-private void btnOpenYellowForm_Click(object sender, EventArgs e)
-{
-    if (yellowDockWindow == null)
-    {
-        yellowDockWindow = new DocumentWindow();
-        yellowDockWindow.Text = "Yellow Form";
-        yellowDockWindow.CloseAction = DockWindowCloseAction.Hide;
-        YellowForm yForm = new YellowForm();
-        yForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-        yForm.TopLevel = false;
-        yForm.Dock = DockStyle.Fill;
-        yellowDockWindow.Controls.Add(yForm);
-        this.radDock1.AddDocument(yellowDockWindow);
-        yForm.Show();
-    }
-    else
-    {
-        yellowDockWindow.Show();
-    }
-    this.radDock1.ActiveWindow = yellowDockWindow;
-}
-
-````
-````VB.NET
-Private Sub btnOpenGreenForm_Click(ByVal sender As Object, ByVal e As EventArgs)
-    If greenDockWindow Is Nothing Then
-        greenDockWindow = New DocumentWindow()
-        greenDockWindow.Text = "Green Form"
-        greenDockWindow.CloseAction = DockWindowCloseAction.Hide
-        Dim gForm As New GreenForm()
-        gForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        gForm.TopLevel = False
-        gForm.Dock = DockStyle.Fill
-        greenDockWindow.Controls.Add(gForm)
-        Me.RadDock1.AddDocument(greenDockWindow)
-        gForm.Show()
-    Else
-        greenDockWindow.Show()
-    End If
-    Me.RadDock1.ActiveWindow = greenDockWindow
-End Sub
-Private Sub btnOpenYellowForm_Click(ByVal sender As Object, ByVal e As EventArgs)
-    If yellowDockWindow Is Nothing Then
-        yellowDockWindow = New DocumentWindow()
-        yellowDockWindow.Text = "Yellow Form"
-        yellowDockWindow.CloseAction = DockWindowCloseAction.Hide
-        Dim yForm As New YellowForm()
-        yForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        yForm.TopLevel = False
-        yForm.Dock = DockStyle.Fill
-        yellowDockWindow.Controls.Add(yForm)
-        Me.RadDock1.AddDocument(yellowDockWindow)
-        yForm.Show()
-    Else
-        yellowDockWindow.Show()
-    End If
-    Me.RadDock1.ActiveWindow = yellowDockWindow
-End Sub
-
-````
-
-{{endregion}} 
+ 
 
 
 # See Also

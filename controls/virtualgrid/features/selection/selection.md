@@ -23,19 +23,10 @@ To select an item in __RadVirtualGrid__ click in the rectangle area of the desir
 ## Cell Selection
 You can modify __RadVirtualGrid__ to select single cell instead of entire row by setting its __SelectionMode__ property to __CellSelect__:
 
-{{source=..\SamplesCS\VirtualGrid\VirtualGridSelection.cs region=cellSelect}} 
-{{source=..\SamplesVB\VirtualGrid\VirtualGridSelection.vb region=cellSelect}}
-````C#
-            
-this.radVirtualGrid1.SelectionMode = VirtualGridSelectionMode.CellSelect;
+<snippet id='virtualgrid-virtualgridselection-cellselect-cs' />
+<snippet id='virtualgrid-virtualgridselection-cellselect-vb' />
 
-````
-````VB.NET
-Me.radVirtualGrid1.SelectionMode = VirtualGridSelectionMode.CellSelect
 
-```` 
-
-{{endregion}}
 
 After setting this property, to select a cell in __RadVirtualGrid__, click the desired cell.
 

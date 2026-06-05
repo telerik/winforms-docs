@@ -14,45 +14,19 @@ position: 4
 
 ## Compact
 
-{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=CompactMode}} 
-{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=CompactMode}} 
+<snippet id='officenavigationbar-officenavigationbargettingstarted-compactmode-cs' />
+<snippet id='officenavigationbar-officenavigationbargettingstarted-compactmode-vb' />
 
-````C#
 
-            this.radOfficeNavigationBar1.UseCompactFont = true;
-            this.radOfficeNavigationBar1.ItemsDisplayStyle = DisplayStyle.Image;
-
-````
-````VB.NET
-
-        Me.radOfficeNavigationBar1.UseCompactFont = True
-        Me.radOfficeNavigationBar1.ItemsDisplayStyle = DisplayStyle.Image
-
-````
-
-{{endregion}} 
 
 ![WinForms RadOfficeNavigationBar Item Display Mode Compact](images/officenavigationbar-view-modes001.png)
 
 ## Full
 
-{{source=..\SamplesCS\OfficeNavigationBar\OfficeNavigationBarGettingStarted.cs region=FullMode}} 
-{{source=..\SamplesVB\OfficeNavigationBar\OfficeNavigationBarGettingStarted.vb region=FullMode}} 
+<snippet id='officenavigationbar-officenavigationbargettingstarted-fullmode-cs' />
+<snippet id='officenavigationbar-officenavigationbargettingstarted-fullmode-vb' />
 
-````C#
 
-            this.radOfficeNavigationBar1.UseCompactFont = false;
-            this.radOfficeNavigationBar1.ItemsDisplayStyle = DisplayStyle.ImageAndText;
-
-````
-````VB.NET
-
-        Me.radOfficeNavigationBar1.UseCompactFont = False
-        Me.radOfficeNavigationBar1.ItemsDisplayStyle = DisplayStyle.ImageAndText
-
-````
-
-{{endregion}} 
 
 ![WinForms RadOfficeNavigationBar Item Display Mode Full](images/officenavigationbar-view-modes002.png)
 

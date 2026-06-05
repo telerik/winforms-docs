@@ -35,21 +35,10 @@ The RadScheduler has two public methods available for printing – __Print()__ a
 
 #### Initiate Printing
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintSupport.cs region=print}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintSupport.vb region=print}} 
+<snippet id='scheduler-schedulerprintsupport-print-cs' />
+<snippet id='scheduler-schedulerprintsupport-print-vb' />
 
-````C#
-this.radScheduler1.Print();
-this.radScheduler1.Print(true);
 
-````
-````VB.NET
-Me.RadScheduler1.Print()
-Me.RadScheduler1.Print(True)
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: RadScheduler Printing
 ![WinForms RadScheduler Printing](images/scheduler-print-support001.png)
@@ -58,19 +47,10 @@ The other available method is __PrintPreview()__. It opens a new RadPrintPreview
 
 #### Show Print Preview
 
-{{source=..\SamplesCS\Scheduler\Print support\SchedulerPrintSupport.cs region=PrintPreview}} 
-{{source=..\SamplesVB\Scheduler\Print support\SchedulerPrintSupport.vb region=PrintPreview}} 
+<snippet id='scheduler-schedulerprintsupport-printpreview-cs' />
+<snippet id='scheduler-schedulerprintsupport-printpreview-vb' />
 
-````C#
-this.radScheduler1.PrintPreview();
 
-````
-````VB.NET
-Me.RadScheduler1.PrintPreview()
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: RadScheduler Print Preview
 ![WinForms RadScheduler Print Preview](images/scheduler-print-support002.png)

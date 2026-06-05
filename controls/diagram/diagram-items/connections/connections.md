@@ -69,20 +69,10 @@ You can label a connection by setting its __Content__ property.
 ![WinForms RadDiagram Set Content](images/diagram-diagram-items-connections024.png) 
 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=Content}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=Content}} 
+<snippet id='diagram-connections-content-cs' />
+<snippet id='diagram-connections-content-vb' />
 
-````C#
-            
-connection1.Content = "connection label";
 
-````
-````VB.NET
-connection1.Content = "connection label"
-
-````
-
-{{endregion}} 
 
 
 ## Customize the Connection Appearance
@@ -93,39 +83,20 @@ You can easily customize the visual appearance of the __RadDiagramConnection__ b
 
 ![WinForms RadDiagram Connection BackColor](images/diagram-diagram-items-connections025.png)
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=ConnectionBackColor}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=ConnectionBackColor}} 
+<snippet id='diagram-connections-connectionbackcolor-cs' />
+<snippet id='diagram-connections-connectionbackcolor-vb' />
 
-````C#
-            
-connection1.BackColor = Color.Red;
 
-````
-````VB.NET
-connection1.BackColor = Color.Red
-
-````
-
-{{endregion}} 
 
 
 * __StrokeThickness__: gets or sets the width of the __RadDiagramConnection__ outline.
 
 ![WinForms RadDiagram Connection StrokeThickness](images/diagram-diagram-items-connections026.png) 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=StrokeThickness}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=StrokeThickness}} 
+<snippet id='diagram-connections-strokethickness-cs' />
+<snippet id='diagram-connections-strokethickness-vb' />
 
-````C#
-connection1.StrokeThickness = 5;
 
-````
-````VB.NET
-connection1.StrokeThickness = 5
-
-````
-
-{{endregion}} 
 
 
 
@@ -134,43 +105,19 @@ connection1.StrokeThickness = 5
 
 ![WinForms RadDiagram Connection ForeColor](images/diagram-diagram-items-connections027.png) 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=ConnectionForeColor}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=ConnectionForeColor}} 
+<snippet id='diagram-connections-connectionforecolor-cs' />
+<snippet id='diagram-connections-connectionforecolor-vb' />
 
-````C#
-            
-connection1.ForeColor = Color.Blue;
 
-````
-````VB.NET
-connection1.ForeColor = Color.Blue
-
-````
-
-{{endregion}} 
 
 
 
 * __StrokeDashArray__: gets or sets a collection of Double values that indicate the pattern of dashes and gaps that is used to outline the __RadDiagramConnection__. 
 
-{{source=..\SamplesCS\Diagram\DiagramItems.cs region=StrokeDashArray}} 
-{{source=..\SamplesVB\Diagram\DiagramItems.vb region=StrokeDashArray}} 
+<snippet id='diagram-connections-strokedasharray-cs' />
+<snippet id='diagram-connections-strokedasharray-vb' />
 
-````C#
-connection1.StrokeDashArray = new Telerik.WinControls.UI.Diagrams.DoubleCollection(new List<float> { 2, 2, 2, 2 });
 
-````
-````VB.NET
-connection1.StrokeDashArray = New Telerik.WinControls.UI.Diagrams.DoubleCollection(New List(Of Single)() From { _
-    2, _
-    2, _
-    2, _
-    2 _
-})
-
-````
-
-{{endregion}} 
 
 
 ![WinForms RadDiagram Connection StrokeDashArray](images/diagram-diagram-items-connections029.png)

@@ -33,59 +33,13 @@ Using the __Style__ property allows you to define cell’s style properties:
 
 The example below shows how to customize the __Font__ and __BackColor__ of a cell.
 
-{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=CellStyleMethod}} 
-{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethod}} 
-
-````C#
-Font myFont = new Font(new FontFamily("Calibri"), 12.0F, FontStyle.Bold);
-private void StyleCell(GridViewCellInfo cell)
-{
-    cell.Style.Font = myFont;
-    cell.Style.CustomizeFill = true;
-    cell.Style.GradientStyle = GradientStyles.Solid;
-    cell.Style.BackColor = Color.FromArgb(162, 215, 255);
-}
-
-````
-````VB.NET
-Private myFont As New Font(New FontFamily("Calibri"), 12.0F, FontStyle.Bold)
-Private Sub StyleCell(cell As GridViewCellInfo)
-    cell.Style.Font = myFont
-    cell.Style.CustomizeFill = True
-    cell.Style.GradientStyle = GradientStyles.Solid
-    cell.Style.BackColor = Color.FromArgb(162, 215, 255)
-End Sub
-'#End Region
-Private Sub FormattingCells_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    'TODO: This line of code loads data into the 'NwindDataSet.Cars' table. You can move, or remove it, as needed.
-    Me.CarsTableAdapter.Fill(Me.NwindDataSet.Cars)
-    RadGridView1.Columns("Picture").Width = 80
-    RadGridView1.Rows(0).Height = 60
-    RadGridView1.Rows(1).Height = 60
-    RadGridView1.Rows(2).Height = 60
-    RadGridView1.Rows(3).Height = 60
-    '#region CellStyleMethodCall
-    Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
-
-````
-
-{{endregion}} 
+<snippet id='gridview-formattingcells-cellstylemethod-cs' />
+<snippet id='gridview-formattingcells-cellstylemethod-vb' />
 
 Here is how to call this method of a certain cell:
 
-{{source=..\SamplesCS\GridView\Cells\FormattingCells.cs region=CellStyleMethodCall}} 
-{{source=..\SamplesVB\GridView\Cells\FormattingCells.vb region=CellStyleMethodCall}} 
-
-````C#
-this.StyleCell(this.radGridView1.Rows[1].Cells[1]);
-
-````
-````VB.NET
-Me.StyleCell(Me.RadGridView1.Rows(1).Cells(1))
-
-````
-
-{{endregion}} 
+<snippet id='gridview-formattingcells-cellstylemethodcall-cs' />
+<snippet id='gridview-formattingcells-cellstylemethodcall-vb' />
 
 >caption Figure 1: Format using the Style property.
 

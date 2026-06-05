@@ -21,45 +21,10 @@ To add items to the carousel without [data binding]({%slug winforms/carousel/usi
 
 #### Adding Items 
 
-{{source=..\SamplesCS\Carousel\CarouselItems.cs region=carouselItems}} 
-{{source=..\SamplesVB\Carousel\CarouselItems.vb region=carouselItems}} 
+<snippet id='carousel-using-radcarousel-carousel-items-carouselitems-cs'/>
+<snippet id='carousel-using-radcarousel-carousel-items-carouselitems-vb'/>
 
-````C#
-radCarousel1.Items.Add(new RadButtonElement("My Button"));
-RadCheckBoxElement checkbox = new RadCheckBoxElement();
-checkbox.Text = "My Checkbox";
-radCarousel1.Items.Add(checkbox);
-RadRadioButtonElement radio1 = new RadRadioButtonElement();
-radio1.Text = "Choice 1";
-radio1.ToggleState = ToggleState.On;
-RadRadioButtonElement radio2 = new RadRadioButtonElement();
-radio2.Text = "Choice 2";
-RadRadioButtonElement radio3 = new RadRadioButtonElement();
-radio3.Text = "Choice 3";
-radCarousel1.Items.Add(radio1);
-radCarousel1.Items.Add(radio2);
-radCarousel1.Items.Add(radio3);
-
-````
-````VB.NET
-RadCarousel1.Items.Add(New RadButtonElement("My Button"))
-Dim checkbox As New RadCheckBoxElement()
-checkbox.Text = "My Checkbox"
-RadCarousel1.Items.Add(checkbox)
-Dim radio1 As New RadRadioButtonElement()
-radio1.Text = "Choice 1"
-radio1.ToggleState = ToggleState.On
-Dim radio2 As New RadRadioButtonElement()
-radio2.Text = "Choice 2"
-Dim radio3 As New RadRadioButtonElement()
-radio3.Text = "Choice 3"
-RadCarousel1.Items.Add(radio1)
-RadCarousel1.Items.Add(radio2)
-RadCarousel1.Items.Add(radio3)
-
-````
-
-{{endregion}} 
+ 
  
 ### Deleting Items
 
@@ -67,21 +32,10 @@ To delete an entry from the carousel __Items__ collection, use the __Remove__ or
         
 #### Deleting Carousel Items 
 
-{{source=..\SamplesCS\Carousel\CarouselItems.cs region=carouselDeletingItems}} 
-{{source=..\SamplesVB\Carousel\CarouselItems.vb region=carouselDeletingItems}} 
+<snippet id='carousel-using-radcarousel-carousel-items-carouseldeletingitems-cs'/>
+<snippet id='carousel-using-radcarousel-carousel-items-carouseldeletingitems-vb'/>
 
-````C#
-radCarousel1.Items.Remove(radCarousel1.Items[0]);
-radCarousel1.Items.RemoveAt(0);
-
-````
-````VB.NET
-RadCarousel1.Items.Remove(RadCarousel1.Items(0))
-RadCarousel1.Items.RemoveAt(0)
-
-````
-
-{{endregion}} 
+ 
 
 
 # See Also

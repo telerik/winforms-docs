@@ -39,27 +39,8 @@ The example below demonstrates the behavior of several of these properties:
 
 #### Using GridViewRowInfo 
 
-{{source=..\SamplesCS\GridView\Rows\GridViewRowInfo1.cs region=GridViewRowInfo}} 
-{{source=..\SamplesVB\GridView\Rows\GridViewRowInfo1.vb region=GridViewRowInfo}} 
-
-````C#
-GridViewRowInfo lastRow = radGridView1.Rows[radGridView1.Rows.Count - 1];
-lastRow.EnsureVisible();
-lastRow.IsSelected = true;
-lastRow.Height = 100;
-lastRow.AllowResize = false;
-
-````
-````VB.NET
-Dim lastRow As GridViewRowInfo = RadGridView1.Rows(RadGridView1.Rows.Count - 1)
-lastRow.EnsureVisible()
-lastRow.IsSelected = True
-lastRow.Height = 100
-lastRow.AllowResize = False
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewrowinfo1-gridviewrowinfo-cs' />
+<snippet id='gridview-gridviewrowinfo1-gridviewrowinfo-vb' />
 
 ### Difference between GridViewInfo.Rows and GridViewTemplate.Rows
 

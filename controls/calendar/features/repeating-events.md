@@ -38,27 +38,10 @@ The example below creates a __RadCalendarDay__ and assigns the __Date__. The __R
 
 __Configuring a recurring event__
 
-{{source=..\SamplesCS\Calendar\Calendar1.cs region=calendarDays}} 
-{{source=..\SamplesVB\Calendar\Calendar1.vb region=calendarDays}} 
+<snippet id='calendar-features-repeating-events-calendardays-cs' />
+<snippet id='calendar-features-repeating-events-calendardays-vb' />
 
-````C#
-RadCalendarDay day = new RadCalendarDay();
-day.Date = new DateTime(2011, 2, 5, 0, 0, 0, 0);
-day.Recurring = RecurringEvents.DayInMonth;
-day.Selectable = false;
-radCalendar1.SpecialDays.Add(day);
 
-````
-````VB.NET
-Dim day As New RadCalendarDay()
-day.Date = New DateTime(2011, 2, 5, 0, 0, 0, 0)
-day.Recurring = RecurringEvents.DayInMonth
-day.Selectable = False
-RadCalendar1.SpecialDays.Add(day)
-
-````
-
-{{endregion}} 
 
 ## See Also
 

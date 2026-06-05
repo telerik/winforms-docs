@@ -67,39 +67,17 @@ As explained in the previous section, the state of the document is essential for
 
 For example, you can build a **RadDocument** from scratch and add **Sections** to it in the following way:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\RadDocumentCode.cs region=section}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\RadDocumentCode.vb region=section}} 
+<snippet id='richtexteditor-raddocumentcode-section-cs' />
+<snippet id='richtexteditor-raddocumentcode-section-vb' />
 
-````C#
-            
-Section section = new Section();
-this.radRichTextEditor1.Document.Sections.Add(section);
 
-````
-````VB.NET
-Dim section As New Section()
-Me.radRichTextEditor1.Document.Sections.Add(section)
-
-````
-
-{{endregion}} 
 
 Splitting an already measured document into two sections at the current caret position, on the other hand, can be done by inserting a section break:
 
-{{source=..\SamplesCS\RichTextEditor\DocumentElements\RadDocumentCode.cs region=break}} 
-{{source=..\SamplesVB\RichTextEditor\DocumentElements\RadDocumentCode.vb region=break}} 
+<snippet id='richtexteditor-raddocumentcode-break-cs' />
+<snippet id='richtexteditor-raddocumentcode-break-vb' />
 
-````C#
-            
-this.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage);
 
-````
-````VB.NET
-Me.radRichTextEditor1.InsertSectionBreak(SectionBreakType.NextPage)
-
-````
-
-{{endregion}} 
 
 The method accept a parameter of type **SectionBreakType**. The possible values are:
 

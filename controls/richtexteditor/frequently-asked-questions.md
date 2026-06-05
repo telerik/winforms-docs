@@ -35,34 +35,10 @@ __RadRichTextEditor__ has a *Boolean* property called __DocumentInheritsDefaultS
 
 You can set these properties in code behind:       
 
-{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=properties}} 
-{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=properties}} 
+<snippet id='richtexteditor-faq-properties-cs' />
+<snippet id='richtexteditor-faq-properties-vb' />
 
-````C#
-        
-public void SetDefaultFontPropertiesToEditor(RadRichTextEditor editor)
-{
-    editor.RichTextBoxElement.ChangeFontFamily(new Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"));
-    editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12));
-    editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic);
-    editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold);
-    
-    editor.DocumentInheritsDefaultStyleSettings = true;
-}
 
-````
-````VB.NET
-Public Sub SetDefaultFontPropertiesToEditor(ByVal editor As RadRichTextEditor)
-    editor.RichTextBoxElement.ChangeFontFamily(New Telerik.WinControls.RichTextEditor.UI.FontFamily("Comic Sans MS"))
-    editor.RichTextBoxElement.ChangeFontSize(Unit.PointToDip(12))
-    editor.RichTextBoxElement.ChangeFontStyle(Telerik.WinControls.RichTextEditor.UI.FontStyles.Italic)
-    editor.RichTextBoxElement.ChangeFontWeight(Telerik.WinControls.RichTextEditor.UI.FontWeights.Bold)
-    editor.DocumentInheritsDefaultStyleSettings = True
-End Sub
-
-````
-
-{{endregion}} 
 
 >note These settings will not be applied on text which is imported by a rich text **FormatProvider**, as the settings defined in the input file/string will be applied.
 
@@ -86,68 +62,24 @@ __RadRichTextEditor__ does not have a **Text** property because different format
 
 You can read more about the use of format providers [here]({%slug winforms/richtexteditor/import-export/overview%}). Overall, what you need to do to get the content of the document in a specific format is to create an instance of the corresponding provider and export the document. An example is illustrated below:
 
-{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=xaml}} 
-{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=xaml}} 
+<snippet id='richtexteditor-faq-xaml-cs' />
+<snippet id='richtexteditor-faq-xaml-vb' />
 
-````C#
-        
-public string GetXAML(RadDocument document)
-{
-    XamlFormatProvider provider = new XamlFormatProvider();
-    return provider.Export(document);
-}
 
-````
-````VB.NET
-Public Function GetXAML(ByVal document As RadDocument) As String
-    Dim provider As New XamlFormatProvider()
-    Return provider.Export(document)
-End Function
-
-````
-
-{{endregion}} 
 
 To get the text stripped of all formatting, you can use __TxtFormatProvider__. Setting the content of __RadRichTextEditor__ can  be done in the same manner, if you have the content in one of these formats. For example, importing an HTML string to __RadDocument__ can be done as follows:
 
-{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=html}} 
-{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=html}} 
+<snippet id='richtexteditor-faq-html-cs' />
+<snippet id='richtexteditor-faq-html-vb' />
 
-````C#
-        
-public RadDocument ImportHtml(string content)
-{
-    HtmlFormatProvider provider = new HtmlFormatProvider();
-    return provider.Import(content);
-}
 
-````
-````VB.NET
-Public Function ImportHtml(ByVal content As String) As RadDocument
-    Dim provider As New HtmlFormatProvider()
-    Return provider.Import(content)
-End Function
 
-````
-
-{{endregion}} 
- 
 If you wish to preserve the initial content of the document and insert text at different positions in the document, you can use the __Insert__ methods of __RadRichTextEditor__ or [RadDocumentEditor]({%slug winforms/richtexteditor-/features/raddocumenteditor%}). The **Insert** method of **RadRichTextEditor** uses the current span style of the document, i.e. the text is included in the document just as it would have been if you typed it at that position.
 
-{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=text}} 
-{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=text}} 
+<snippet id='richtexteditor-faq-text-cs' />
+<snippet id='richtexteditor-faq-text-vb' />
 
-````C#
-            
-this.radRichTextEditor1.Insert(textToInsert);
 
-````
-````VB.NET
-Me.radRichTextEditor1.Insert(textToInsert)
-
-````
-
-{{endregion}} 
 
 You can manipulate the caret position before invoking the insert method in order to change the position where you wish the text to appear. You can find more information on document positions and their usage [here]({%slug winforms/richtexteditor-/features/positioning%}).
         
@@ -155,39 +87,17 @@ You can manipulate the caret position before invoking the insert method in order
 
 If you are using a document in flow layout mode, the document respects the value you set to the **Padding** property that **RadRichTextEditor** inherits from **Control**.
 
-{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=padding}} 
-{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=padding}} 
+<snippet id='richtexteditor-faq-padding-cs' />
+<snippet id='richtexteditor-faq-padding-vb' />
 
-````C#
-            
-this.radRichTextEditor1.Padding = new Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60);
 
-````
-````VB.NET
-Me.radRichTextEditor1.Padding = New Telerik.WinControls.RichTextEditor.UI.Thickness(0, 20, 100, 60)
-
-````
-
-{{endregion}} 
 
 With paged layout mode, you can set the margin of the document like this:
 
-{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=margin}} 
-{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=margin}} 
+<snippet id='richtexteditor-faq-margin-cs' />
+<snippet id='richtexteditor-faq-margin-vb' />
 
-````C#
-            
-this.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged;
-this.radRichTextEditor1.Document.SectionDefaultPageMargin = new Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60);
 
-````
-````VB.NET
-Me.radRichTextEditor1.LayoutMode = DocumentLayoutMode.Paged
-Me.radRichTextEditor1.Document.SectionDefaultPageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-
-````
-
-{{endregion}} 
 
 If you are using data providers to bind the content of the **RichTextBox**, a new document will be created for every change in the string property which is the binding source. In that case, setting these properties should be done on **DocumentChanged**.
         
@@ -196,19 +106,10 @@ If you are using data providers to bind the content of the **RichTextBox**, a ne
 
 In order to change the margin of an already measured **Section**, you can use the following method:
 
-{{source=..\SamplesCS\RichTextEditor\FAQ.cs region=margin2}} 
-{{source=..\SamplesVB\RichTextEditor\FAQ.vb region=margin2}} 
+<snippet id='richtexteditor-faq-margin2-cs' />
+<snippet id='richtexteditor-faq-margin2-vb' />
 
-````C#
-radRichTextEditor1.Document.Sections.First.PageMargin = new Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60);
 
-````
-````VB.NET
-radRichTextEditor1.Document.Sections.First.PageMargin = New Telerik.WinForms.Documents.Layout.Padding(0, 20, 100, 60)
-
-````
-
-{{endregion}} 
 
 ## Inserting multiple consecutive tables
 

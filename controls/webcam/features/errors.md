@@ -36,31 +36,10 @@ There are few expected errors that could appear using the control:
 
 To replace the error message use the **CameraError** event of **RadWebCam**. The **CameraErrorEventArgs** give access to an **ErrorInfo** object, which contains information about the error state and message. Use the event to replace the default message with a custom one.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=Errors}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=Errors}} 
+<snippet id='webcam-webcamgettingstarted-errors-cs' />
+<snippet id='webcam-webcamgettingstarted-errors-vb' />
 
-````C#
 
-        private void RadWebCam1_CameraError(object sender, CameraErrorEventArgs e)
-        { 
-            if (e.Error.ErrorState == CameraErrorState.NoCamera)
-            {
-                e.Error.Message = "Cannot detect a camera device.";
-            }
-        }
-
-````
-````VB.NET
-
-    Private Sub RadWebCam1_CameraError(ByVal sender As Object, ByVal e As CameraErrorEventArgs)
-        If e.[Error].ErrorState = CameraErrorState.NoCamera Then
-            e.[Error].Message = "Cannot detect a camera device."
-        End If
-    End Sub
-
-````
-
-{{endregion}} 
 
 ![WinForms RadWebCam Replace Error Message](images/webcam-errors003.png)
 

@@ -25,20 +25,10 @@ This section shows how to apply the __Office2007Black__ theme to a __RadForm__ i
 
 #### Changing WinForms form to Telerik RadForm 
 
-{{source=..\SamplesCS\Forms and Dialogs\Form1.Designer.cs region=radForm}} 
-{{source=..\SamplesVB\Forms and Dialogs\Form1.Designer.vb region=radForm}} 
+<snippet id='form-form1-radform-cs' />
+<snippet id='form-form1-radform-vb' />
 
-````C#
-partial class Form1 : Telerik.WinControls.UI.RadForm
-
-````
-````VB.NET
-Partial Class Form1
-    Inherits Telerik.WinControls.UI.RadForm
-
-````
-
-{{endregion}} 
+ 
  
 
 2\. Open the __Design View__ of the Form and open the Visual Studio Toolbox.

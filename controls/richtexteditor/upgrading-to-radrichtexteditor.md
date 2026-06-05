@@ -21,25 +21,10 @@ In order to convert **RadRichTextBox** to __RadRichTextEditor__ you should take 
 
 2\. Replace the __RadRichTextBox__ type with __RadRichTextEditor__ (you can change the name as well)
 
-{{source=..\SamplesCS\RichTextEditor\Upgrade.cs region=upgrade}} 
-{{source=..\SamplesVB\RichTextEditor\Upgrade.vb region=upgrade}} 
+<snippet id='richtexteditor-upgrade-upgrade-cs' />
+<snippet id='richtexteditor-upgrade-upgrade-vb' />
 
-````C#
-//old
-private RadRichTextBox radRichTextBox1 = new RadRichTextBox();
-//new
-private RadRichTextEditor radRichTextEditor1 = new RadRichTextEditor();
 
-````
-````VB.NET
-'old
-' Private radRichTextBox1 As New RadRichTextBox()
-'new
-Private radRichTextEditor1 As New RadRichTextEditor()
-
-````
-
-{{endregion}} 
 
 3\. __RadRichTextEditor__ supports all features that are supported by the **RadRichTextBox** (and much more). However, some of them  may not be at the same place and some compile time errors may occur. The final step is to fix these errors, it can be achieved by finding the new equivalents of the missing properties and methods and replacing them. Should you have any issues finding a property or a method, feel free to submit a support ticket and we will gladly assist you.
 
@@ -56,74 +41,30 @@ Private radRichTextEditor1 As New RadRichTextEditor()
 
 * The __ShowInsertHyperlinkDialog__ method is moved to the control and now it can be used like this:
 
-{{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertHyperlink}} 
-{{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertHyperlink}} 
+<snippet id='richtexteditor-converttoradrichtexteditor-inserthyperlink-cs' />
+<snippet id='richtexteditor-converttoradrichtexteditor-inserthyperlink-vb' />
 
-````C#
-            
-radRichTextEditor1.ShowInsertHyperlinkDialog();
-
-````
-````VB.NET
-radRichTextEditor1.ShowInsertHyperlinkDialog()
-
-````
-
-{{endregion}} 
 
 
 * The __ShowManageBookmarksDialog__ now can be used as follows:           
 
-{{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertBookmark}} 
-{{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertBookmark}} 
+<snippet id='richtexteditor-converttoradrichtexteditor-insertbookmark-cs' />
+<snippet id='richtexteditor-converttoradrichtexteditor-insertbookmark-vb' />
 
-````C#
-            
-radRichTextEditor1.ShowManageBookmarksDialog();
-
-````
-````VB.NET
-radRichTextEditor1.ShowManageBookmarksDialog()
-
-````
-
-{{endregion}} 
 
 
 * When you are inserting an image it is mandatory to specify the extension:
 
-{{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertImage}} 
-{{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertImage}} 
+<snippet id='richtexteditor-converttoradrichtexteditor-insertimage-cs' />
+<snippet id='richtexteditor-converttoradrichtexteditor-insertimage-vb' />
 
-````C#
-            
-radRichTextEditor1.InsertImage(stream, extension);
-
-````
-````VB.NET
-radRichTextEditor1.InsertImage(stream, extension)
-
-````
-
-{{endregion}} 
 
 
 * Now you can insert table by using the built-in dialog rather than using **InsertTableForm**:
 
-{{source=..\SamplesCS\RichTextEditor\ConvertToRadRichTextEditor.cs region=insertTable}} 
-{{source=..\SamplesVB\RichTextEditor\ConvertToRadRichTextEditor.vb region=insertTable}} 
+<snippet id='richtexteditor-converttoradrichtexteditor-inserttable-cs' />
+<snippet id='richtexteditor-converttoradrichtexteditor-inserttable-vb' />
 
-````C#
-            
-radRichTextEditor1.ShowInsertTableDialog();
-
-````
-````VB.NET
-radRichTextEditor1.ShowInsertTableDialog()
-
-````
-
-{{endregion}} 
 
 
 # See Also

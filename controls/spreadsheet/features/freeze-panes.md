@@ -28,21 +28,10 @@ The following code will produce freeze panes like the example below:
 
 #### Freeze Panes
 
-{{source=..\SamplesCS\Spreadsheet\FreezePanes.cs region=FreezePanes}} 
-{{source=..\SamplesVB\Spreadsheet\FreezePanes.vb region=FreezePanes}}
+<snippet id='spreadsheet-freezepanes-freezepanes-cs' />
+<snippet id='spreadsheet-freezepanes-freezepanes-vb' />
 
-````C#
-            
-Telerik.WinForms.Controls.Spreadsheet.Worksheets.RadWorksheetEditor worksheetEditor = this.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor;
-worksheetEditor.FreezePanes(new Telerik.Windows.Documents.Spreadsheet.Model.CellIndex(4, 1));
 
-````
-````VB.NET
-Dim worksheetEditor As Telerik.WinForms.Controls.Spreadsheet.Worksheets.RadWorksheetEditor = Me.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor
-worksheetEditor.FreezePanes(New Telerik.Windows.Documents.Spreadsheet.Model.CellIndex(4, 1))
-
-````  
-{{endregion}} 
 
 >note Note that the cell you want to freeze have to be visible at the moment you freeze.
 
@@ -68,19 +57,10 @@ To unfreeze panes simply you need to use the **UnfreezePanes**() method of the *
 
 #### Unfreeze Panes
 
-{{source=..\SamplesCS\Spreadsheet\FreezePanes.cs region=UnfreezePanes}} 
-{{source=..\SamplesVB\Spreadsheet\FreezePanes.vb region=UnfreezePanes}}
+<snippet id='spreadsheet-freezepanes-unfreezepanes-cs' />
+<snippet id='spreadsheet-freezepanes-unfreezepanes-vb' />
 
-````C#
-            
-this.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor.UnfreezePanes();
 
-````
-````VB.NET
-Me.radSpreadsheet1.SpreadsheetElement.ActiveWorksheetEditor.UnfreezePanes()
-
-````  
-{{endregion}} 
 
 Alternatively, you can freeze/unfreeze panes from the **RadSpreadsheetRibbonBar** as well:
 

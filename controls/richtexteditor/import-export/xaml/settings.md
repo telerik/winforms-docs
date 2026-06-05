@@ -32,23 +32,10 @@ __XamlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 >These events will be called when the __ImageExportMode__ enumeration property is set to __ImageExportingEvent__.
 
 #### Setting the ExportSettings of the XamlFormatProvider
-{{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=SetupXamlExportSettings}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=SetupXamlExportSettings}}
-````C#
-XamlFormatProvider xamlFormatProvider = new XamlFormatProvider();
-XamlExportSettings settings = new XamlExportSettings();
-settings.ImageExportMode = ImageExportMode.UriSource;
-xamlFormatProvider.ExportSettings = settings;
+<snippet id='richtexteditor-xamlformatproviderform-setupxamlexportsettings-cs' />
+<snippet id='richtexteditor-xamlformatproviderform-setupxamlexportsettings-vb' />
 
-````
-````VB.NET
-Dim xamlFormatProvider As XamlFormatProvider = New XamlFormatProvider()
-Dim settings As XamlExportSettings = New XamlExportSettings()
-settings.ImageExportMode = ImageExportMode.UriSource
-xamlFormatProvider.ExportSettings = settings
 
-````
-{{endregion}}
 
 ## Import Settings
 
@@ -63,72 +50,25 @@ __XamlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 
 ####  Disable the default XAML validation__
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=SkipVerification}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=SkipVerification}}
+<snippet id='richtexteditor-xamlformatproviderform-skipverification-cs' />
+<snippet id='richtexteditor-xamlformatproviderform-skipverification-vb' />
 
-````C#
 
-XamlFormatProvider provider = new XamlFormatProvider();
-provider.ImportSettings.PreProcessingXaml += (s, args) => {
 
-    args.SkipXamlValidation = true;
-};
-
-````
-````VB.NET
-
-Dim provider As XamlFormatProvider = New XamlFormatProvider()
-AddHandler provider.ImportSettings.PreProcessingXaml, Function(s, args)
-                                                          args.SkipXamlValidation = True
-                                                      End Function
-
-````
-
-{{endregion}}}
+}
 
 #### Setting the ImportSettings of the XamlFormatProvider
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=SetupXamlImportSettings}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=SetupXamlImportSettings}}
-````C#
-XamlFormatProvider xamlFormatProvider = new XamlFormatProvider();
-XamlImportSettings settings = new XamlImportSettings();
-xamlFormatProvider.ImportSettings = settings;
-settings.ImageImported += XamlImportSettings_ImageImported;
+<snippet id='richtexteditor-xamlformatproviderform-setupxamlimportsettings-cs' />
+<snippet id='richtexteditor-xamlformatproviderform-setupxamlimportsettings-vb' />
 
-````
-````VB.NET
-Dim xamlFormatProvider As XamlFormatProvider = New XamlFormatProvider()
-Dim settings As XamlImportSettings = New XamlImportSettings()
-xamlFormatProvider.ImportSettings = settings
-AddHandler settings.ImageImported, AddressOf XamlImportSettings_ImageImported
 
-````
-
-{{endregion}}
 
 #### ImageImported Event 
 
-{{source=..\SamplesCS\RichTextEditor\ImportExport\XamlFormatProviderForm.cs region=ImageImportedEvent}} 
-{{source=..\SamplesVB\RichTextEditor\ImportExport\XamlFormatProviderForm.vb region=ImageImportedEvent}}
+<snippet id='richtexteditor-xamlformatproviderform-imageimportedevent-cs' />
+<snippet id='richtexteditor-xamlformatproviderform-imageimportedevent-vb' />
 
-````C#
-
-private void XamlImportSettings_ImageImported(object sender, ImageImportedEventArgs e)
-{
-    var img = e.Image;
-}
-
-````
-````VB.NET
-
-Private Sub XamlImportSettings_ImageImported(ByVal sender As Object, ByVal e As ImageImportedEventArgs)
-    Dim img = e.Image
-End Sub
-
-````
-
-{{endregion}}
 
 
 ## See Also

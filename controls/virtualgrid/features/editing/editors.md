@@ -41,33 +41,17 @@ __RadVirtualGrid__ exposes an API for defining the data types of its columns. If
 
 #### Defining a Columns`s Data Type
 
-{{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=DefineColumnDataType}} 
-{{source=..\SamplesVB\Virtualgrid\Editing\EditorsProperties.vb region=DefineColumnDataType}}
-````C#
-this.radVirtualGrid1.MasterViewInfo.ColumnDataTypes[0] = typeof(int);
+<snippet id='virtualgrid-editorsproperties-definecolumndatatype-cs' />
+<snippet id='virtualgrid-editorsproperties-definecolumndatatype-vb' />
 
-````
-````VB.NET
-Me.radVirtualGrid1.MasterViewInfo.ColumnDataTypes(0) = GetType(Integer)
 
-```` 
-
-{{endregion}}
 
 #### Reading a Columns`s Data Type
 
-{{source=..\SamplesCS\VirtualGrid\Editing\EditorsProperties.cs region=ReadColumnDataType}} 
-{{source=..\SamplesVB\Virtualgrid\Editing\EditorsProperties.vb region=ReadColumnDataType}}
-````C#
-Type dataType = this.radVirtualGrid1.MasterViewInfo.GetColumnDataType(1);
+<snippet id='virtualgrid-editorsproperties-readcolumndatatype-cs' />
+<snippet id='virtualgrid-editorsproperties-readcolumndatatype-vb' />
 
-````
-````VB.NET
-Dim dataType As Type = Me.radVirtualGrid1.MasterViewInfo.GetColumnDataType(1)
 
-```` 
-
-{{endregion}}
 
 # See Also
 * [API]({%slug winforms/virtualgrid/cells/api%})

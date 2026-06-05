@@ -54,46 +54,10 @@ You can add items to the gallery at design-time using the following steps:
 
 Alternatively, you can add the items at run-time. Here is a sample snippet:
 
-{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet1}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet1}} 
+<snippet id='ribbonbar-creatingagallery-snippet1-cs' />
+<snippet id='ribbonbar-creatingagallery-snippet1-vb' />
 
-````C#
-RadGalleryItem blueItem1 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery001);
-RadGalleryItem blueItem2 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery002);
-RadGalleryItem blueItem3 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery003);
-RadGalleryItem blueItem4 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery004);
-RadGalleryItem purpleItem1 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery005);
-RadGalleryItem purpleItem2 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery006);
-RadGalleryItem purpleItem3 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery007);
-RadGalleryItem purpleItem4 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery008);
-RadGalleryItem greenItem1 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery009);
-RadGalleryItem greenItem2 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery010);
-RadGalleryItem greenItem3 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery011);
-RadGalleryItem greenItem4 = new RadGalleryItem("", Properties.Resources.RibbonBar_GettingStarted_CreatingAGallery012);
-this.radGalleryElement1.Items.AddRange( blueItem1, blueItem2, blueItem3, blueItem4,
-                                        greenItem1, greenItem2, greenItem3, greenItem4,
-                                        purpleItem1, purpleItem2, purpleItem3, purpleItem4);
 
-````
-````VB.NET
-Dim blueItem1 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery001)
-Dim blueItem2 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery002)
-Dim blueItem3 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery003)
-Dim blueItem4 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery004)
-Dim purpleItem1 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery005)
-Dim purpleItem2 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery006)
-Dim purpleItem3 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery007)
-Dim purpleItem4 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery008)
-Dim greenItem1 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery009)
-Dim greenItem2 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery010)
-Dim greenItem3 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery011)
-Dim greenItem4 As New RadGalleryItem("", My.Resources.RibbonBar_GettingStarted_CreatingAGallery012)
-Me.RadGalleryElement1.Items.AddRange(blueItem1, blueItem2, blueItem3, blueItem4, greenItem1, greenItem2, _
- greenItem3, greenItem4, purpleItem1, purpleItem2, purpleItem3, purpleItem4)
-
-````
-
-{{endregion}} 
 
 ## Adding Groups
 
@@ -119,41 +83,10 @@ To add a group at design-time, please follow these steps:
 
 Alternatively, you can add the items at run-time. Here is a sample snippet:
 
-{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet2}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet2}} 
+<snippet id='ribbonbar-creatingagallery-snippet2-cs' />
+<snippet id='ribbonbar-creatingagallery-snippet2-vb' />
 
-````C#
-RadGalleryGroupItem blueGroup = new RadGalleryGroupItem();
-blueGroup.Text = "Blue Items Group";
-blueGroup.Items.AddRange(blueItem1, blueItem2, blueItem3, blueItem4);
-this.radGalleryElement1.Groups.Add(blueGroup);
-RadGalleryGroupItem greenGroup = new RadGalleryGroupItem();
-greenGroup.Text = "Green Items Group";
-greenGroup.Items.AddRange(greenItem1, greenItem2, greenItem3, greenItem4);
-this.radGalleryElement1.Groups.Add(greenGroup);
-RadGalleryGroupItem purpleGroup = new RadGalleryGroupItem();
-purpleGroup.Text = "Purple Items Group";
-purpleGroup.Items.AddRange(purpleItem1, purpleItem2, purpleItem3, purpleItem4);
-this.radGalleryElement1.Groups.Add(purpleGroup);
 
-````
-````VB.NET
-Dim blueGroup As New RadGalleryGroupItem()
-blueGroup.Text = "Blue Items Group"
-blueGroup.Items.AddRange(blueItem1, blueItem2, blueItem3, blueItem4)
-Me.RadGalleryElement1.Groups.Add(blueGroup)
-Dim greenGroup As New RadGalleryGroupItem()
-greenGroup.Text = "Green Items Group"
-greenGroup.Items.AddRange(greenItem1, greenItem2, greenItem3, greenItem4)
-Me.RadGalleryElement1.Groups.Add(greenGroup)
-Dim purpleGroup As New RadGalleryGroupItem()
-purpleGroup.Text = "Purple Items Group"
-purpleGroup.Items.AddRange(purpleItem1, purpleItem2, purpleItem3, purpleItem4)
-Me.RadGalleryElement1.Groups.Add(purpleGroup)
-
-````
-
-{{endregion}}
 
 ## Creating Filters
 
@@ -181,45 +114,10 @@ To create a filter, follow these steps:
 
 Alternatively, you can create a filter at run-time. Here is a sample snippet:
 
-{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet3}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet3}} 
+<snippet id='ribbonbar-creatingagallery-snippet3-cs' />
+<snippet id='ribbonbar-creatingagallery-snippet3-vb' />
 
-````C#
-RadGalleryGroupFilter all = new RadGalleryGroupFilter();
-all.Text = "All Groups";
-all.Items.AddRange(blueGroup, greenGroup, purpleGroup);
-this.radGalleryElement1.Filters.Add(all);
-RadGalleryGroupFilter blueGreenFilter = new RadGalleryGroupFilter();
-blueGreenFilter.Text = "Blue and Green Groups";
-blueGreenFilter.Items.Add(blueGroup);
-blueGreenFilter.Items.Add(greenGroup);
-this.radGalleryElement1.Filters.Add(blueGreenFilter);
-RadGalleryGroupFilter greenPurpleFilter = new RadGalleryGroupFilter();
-greenPurpleFilter.Text = "Green and Purple Groups";
-greenPurpleFilter.Items.Add(greenGroup);
-greenPurpleFilter.Items.Add(purpleGroup);
-this.radGalleryElement1.Filters.Add(greenPurpleFilter);
 
-````
-````VB.NET
-Dim all As New RadGalleryGroupFilter()
-all.Text = "All Groups"
-all.Items.AddRange(blueGroup, greenGroup, purpleGroup)
-Me.RadGalleryElement1.Filters.Add(all)
-Dim blueGreenFilter As New RadGalleryGroupFilter()
-blueGreenFilter.Text = "Blue and Green Groups"
-blueGreenFilter.Items.Add(blueGroup)
-blueGreenFilter.Items.Add(greenGroup)
-Me.RadGalleryElement1.Filters.Add(blueGreenFilter)
-Dim greenPurpleFilter As New RadGalleryGroupFilter()
-greenPurpleFilter.Text = "Green and Purple Groups"
-greenPurpleFilter.Items.Add(greenGroup)
-greenPurpleFilter.Items.Add(purpleGroup)
-Me.RadGalleryElement1.Filters.Add(greenPurpleFilter)
-
-````
-
-{{endregion}}
 
 ## Creating Tools
 
@@ -239,21 +137,10 @@ To add a Tool at design-time please follow these steps:
 
 You can also create tools at run-time. Here is a sample snippet:
 
-{{source=..\SamplesCS\RibbonBar\GettingStarted\CreatingAGallery.cs region=snippet4}} 
-{{source=..\SamplesVB\RibbonBar\GettingStarted\CreatingAGallery.vb region=snippet4}} 
+<snippet id='ribbonbar-creatingagallery-snippet4-cs' />
+<snippet id='ribbonbar-creatingagallery-snippet4-vb' />
 
-````C#
-RadMenuButtonItem buttonItem = new RadMenuButtonItem("Click me!");
-this.radGalleryElement1.Tools.Add(buttonItem);
 
-````
-````VB.NET
-Dim buttonItem As New RadMenuButtonItem("Click me!")
-Me.RadGalleryElement1.Tools.Add(buttonItem)
-
-````
-
-{{endregion}}
 
 ## See Also
 

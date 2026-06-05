@@ -21,62 +21,8 @@ The below sample code demonstrates how to add a toolbar action that inserts an i
 
 #### Adding ToolbarActionDataItem
 
-{{source=..\SamplesCS\Chat\ChatGettingStarted.cs region=Toolbar}} 
-{{source=..\SamplesVB\Chat\ChatGettingStarted.vb region=Toolbar}}
-
-````C#
-        
-private void Toolbar()
-{
-    ToolbarActionDataItem imageAction = new ToolbarActionDataItem(Properties.Resources.file,"image");
-    this.radChat1.ChatElement.ToolbarElement.AddToolbarAction(imageAction);
-    this.radChat1.ToolbarActionClicked += radChat1_ToolbarActionClicked;
-}
-        
-private void radChat1_ToolbarActionClicked(object sender, ToolbarActionEventArgs e)
-{
-    ToolbarActionDataItem action = e.DataItem;
-    if (action.UserData + "" == "image")
-    {
-        OpenFileDialog dlg = new OpenFileDialog();
-        dlg.Title = "Open Image";
-        dlg.Filter = "png files (*.png)|*.png";
-        if (dlg.ShowDialog() == DialogResult.OK)
-		{
-			Image img = Image.FromFile(dlg.FileName);
-			ChatMediaMessage mediaMessage = new ChatMediaMessage(img, new Size(300, 200), this.radChat1.Author, DateTime.Now, null);
-			this.radChat1.AddMessage(mediaMessage);    
-		}
-        dlg.Dispose();
-    }
-}
-
-````
-````VB.NET
-Private Sub Toolbar()
-    Dim imageAction As ToolbarActionDataItem = New ToolbarActionDataItem(My.Resources.file, "image")
-    Me.radChat1.ChatElement.ToolbarElement.AddToolbarAction(imageAction)
-    AddHandler Me.radChat1.ToolbarActionClicked, AddressOf radChat1_ToolbarActionClicked
-End Sub
-Private Sub radChat1_ToolbarActionClicked(ByVal sender As Object, ByVal e As ToolbarActionEventArgs)
-    Dim action As ToolbarActionDataItem = e.DataItem
-    If action.UserData & "" = "image" Then
-        Dim dlg As OpenFileDialog = New OpenFileDialog()
-        dlg.Title = "Open Image"
-        dlg.Filter = "png files (*.png)|*.png"
-        If dlg.ShowDialog() = Windows.Forms.DialogResult.OK Then
-            Dim img As Image = Image.FromFile(dlg.FileName)
-            Dim mediaMessage As ChatMediaMessage = New ChatMediaMessage(img, New Size(300, 200), Me.radChat1.Author, DateTime.Now, Nothing)
-            Me.radChat1.AddMessage(mediaMessage)
-        End If
-        dlg.Dispose()
-    End If
-End Sub
-
-```` 
-
-
-{{endregion}}
+<snippet id='chat-toolbar-toolbar-cs' />
+<snippet id='chat-toolbar-toolbar-vb' />
 
 >caption Figure 2. Inserting an image from a toolbar action
 

@@ -27,21 +27,8 @@ You can save/load the layout in code as well.
 
 #### Save/Load Layout
 
-{{source=..\SamplesCS\Gauges\LinearGauge\LinearGuageGettingStarted.cs region=code}} 
-{{source=..\SamplesVB\Gauges\LinearGauge\LinearGuageGettingStarted.vb region=code}} 
-
-````C#
-radLinearGauge1.SaveLayout("Layout.xml");
-radLinearGauge1.LoadLayout("Layout.xml");
-
-````
-````VB.NET
-radLinearGauge1.SaveLayout("Layout.xml")
-radLinearGauge1.LoadLayout("Layout.xml")
-
-````
-
-{{endregion}} 
+<snippet id='gauges-linearguagegettingstarted-code-cs' />
+<snippet id='gauges-linearguagegettingstarted-code-vb' />
 
 # See Also
 

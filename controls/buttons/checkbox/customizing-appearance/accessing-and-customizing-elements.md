@@ -31,22 +31,7 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Buttons\CheckBox.cs region=AccessingCustomizingElements}} 
-{{source=..\SamplesVB\Buttons\CheckBox.vb region=AccessingCustomizingElements}} 
+<snippet id='buttons-checkbox-accessing-and-customizing-elements-accessingcustomizingelements-cs' />
+<snippet id='buttons-checkbox-accessing-and-customizing-elements-accessingcustomizingelements-vb' />
 
-````C#
-this.radCheckBox1.ButtonElement.TextElement.ForeColor = Color.Blue;
-this.radCheckBox1.ButtonElement.CheckMarkPrimitive.CheckElement.ForeColor = Color.Blue;
-this.radCheckBox1.ButtonElement.CheckMarkPrimitive.Border.ForeColor = Color.Red;
-this.radCheckBox1.ButtonElement.CheckMarkPrimitive.Border.BoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder;
 
-````
-````VB.NET
-Me.radCheckBox1.ButtonElement.TextElement.ForeColor = Color.Blue
-Me.radCheckBox1.ButtonElement.CheckMarkPrimitive.CheckElement.ForeColor = Color.Blue
-Me.radCheckBox1.ButtonElement.CheckMarkPrimitive.Border.ForeColor = Color.Red
-Me.radCheckBox1.ButtonElement.CheckMarkPrimitive.Border.BoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder
-
-````
-
-{{endregion}} 

@@ -21,21 +21,10 @@ __RadDiagram__ exposes an __IsPanEnabled__ property which defines whether the pa
 
 You can also activate the Pan [MouseTool]({%slug winforms/diagram-(beta)/diagram-tools/mouse-tools%}) to start a pan operation simply by dragging the current view port with the mouse. 
 
-{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=IsPanEnabled}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=IsPanEnabled}}
-````C#
-            
-this.radDiagram1.IsPanEnabled = true;
+<snippet id='diagram-pan-and-zoom-ispanenabled-cs'/>
+<snippet id='diagram-pan-and-zoom-ispanenabled-vb'/>
 
-````
-````VB.NET
-Me.RadDiagram1.IsPanEnabled = True
-
-```` 
-
-
-
-{{endregion}} 
+ 
 
 
 
@@ -47,20 +36,10 @@ Me.RadDiagram1.IsPanEnabled = True
 ## Pan Methods
 
 You can use the __PanToPosition__ method in order to programmatically pan to a specific position:
-{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=PanMethod}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=PanMethod}}
-````C#
-this.radDiagram1.PanToPosition(new Telerik.Windows.Diagrams.Core.Point(200, 300));
+<snippet id='diagram-pan-and-zoom-panmethod-cs'/>
+<snippet id='diagram-pan-and-zoom-panmethod-vb'/>
 
-````
-````VB.NET
-Me.RadDiagram1.PanToPosition(New Point(200, 300))
-
-```` 
-
-
-
-{{endregion}} 
+ 
 
 
 ## Pan events
@@ -89,20 +68,10 @@ __RadDiagram__ exposes two panning events:
 
 __RadDiagram__ supports zooming out-of-the-box. The feature is controlled through the RadDiagram. __IsZoomEnabled__ property which default value is *true*. The user can initiate a zoom using the mouse wheel. 
 
-{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=IsZoomEnabled}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=IsZoomEnabled}}
-````C#
-this.radDiagram1.IsZoomEnabled = true;
+<snippet id='diagram-pan-and-zoom-iszoomenabled-cs'/>
+<snippet id='diagram-pan-and-zoom-iszoomenabled-vb'/>
 
-````
-````VB.NET
-Me.RadDiagram1.IsZoomEnabled = True
-
-```` 
-
-
-
-{{endregion}} 
+ 
 
 
 
@@ -117,22 +86,10 @@ The zoom range is controlled through two __DiagramConstants__:
 
 * __MaximumZoom__: a double value which indicates the maximum zoom level. Its default value is 5. 
 
-{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=MinMaxZoom}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=MinMaxZoom}}
-````C#
-            
-Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5;
-Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10;
+<snippet id='diagram-pan-and-zoom-minmaxzoom-cs'/>
+<snippet id='diagram-pan-and-zoom-minmaxzoom-vb'/>
 
-````
-````VB.NET
-Telerik.Windows.Diagrams.Core.DiagramConstants.MinimumZoom = 0.5
-Telerik.Windows.Diagrams.Core.DiagramConstants.MaximumZoom = 10
-
-```` 
-
-
-{{endregion}} 
+ 
  
 The current zoom value in a __RadDiagram__ instance is controlled through the __Zoom__ property. It represents a double value which cannot be null, infinity or NaN. Additionally, this value is coerced to be within the range defined by the __MinimumZoom__ and __MaximumZoom__ constants. The default __Zoom__ value is 1.
 
@@ -156,20 +113,10 @@ If you need to initiate a zoom through code-behind, __RadDiagram__ provides two 
 >note Please note that both of the parameters described above are optional.
 > 
 
-{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=ZoomIn}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=ZoomIn}} 
+<snippet id='diagram-pan-and-zoom-zoomin-cs'/>
+<snippet id='diagram-pan-and-zoom-zoomin-vb'/>
 
-````C#
-            
-this.radDiagram1.DiagramElement.ZoomIn(1.5);
-
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
-
-````
-
-{{endregion}} 
+ 
  
 * __ZoomOut__: this method performs an incremental zoom out taking into account the previous zoom operations. It can take up to 2 parameters:
             
@@ -181,44 +128,16 @@ Me.RadDiagram1.DiagramElement.ZoomIn(1.5)
 >note Please note that both of the parameters described above are optional.
 > 
 
-{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=ZoomOut}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=ZoomOut}} 
+<snippet id='diagram-pan-and-zoom-zoomout-cs'/>
+<snippet id='diagram-pan-and-zoom-zoomout-vb'/>
 
-````C#
-            
-this.radDiagram1.DiagramElement.ZoomOut(3.5);
-
-````
-````VB.NET
-Me.RadDiagram1.DiagramElement.ZoomOut(3.5)
-
-````
-
-{{endregion}} 
+ 
 
 * __BringIntoView__: This method allows you to center the currently occupied space:
-{{source=..\SamplesCS\Diagram\DiagramPanZoom.cs region=BringIntoView}} 
-{{source=..\SamplesVB\Diagram\DiagramPanZoom.vb region=BringIntoView}}
-````C#
-private void radButton1_Click(object sender, EventArgs e)
-{
-    var enclosingBounds = ((IGraph)this.radDiagram1.DiagramElement).CalculateEnclosingBoundsWithoutTransform();
-    this.radDiagram1.DiagramElement.BringIntoView(enclosingBounds, false);
-    this.radDiagram1.Zoom = 1;
-}
+<snippet id='diagram-pan-and-zoom-bringintoview-cs'/>
+<snippet id='diagram-pan-and-zoom-bringintoview-vb'/>
 
-````
-````VB.NET
-Private Sub radButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Dim enclosingBounds = DirectCast(Me.RadDiagram1.DiagramElement, IGraph).CalculateEnclosingBoundsWithoutTransform()
-    Me.RadDiagram1.DiagramElement.BringIntoView(enclosingBounds, False)
-    Me.RadDiagram1.Zoom = 1
-End Sub
-
-```` 
-
-
-{{endregion}} 
+ 
 
 
 ## Zoom events

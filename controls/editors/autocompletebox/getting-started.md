@@ -45,44 +45,21 @@ Each tokenized text block is separated by character, specified by the __Delimite
          
 The code below sets text in the control at run time: 
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetText}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetText}} 
+<snippet id='editors-autocompletebox-settext-cs' />
+<snippet id='editors-autocompletebox-settext-vb' />
 
-````C#
-private void SetText()
-{
-    this.radAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;";
-}
 
-````
-````VB.NET
-Private Sub SetText()
-    Me.RadAutoCompleteBox1.Text = "Germany;USA;Brazil;Bulgaria;Croatia;Serbia;"
-End Sub
 
-````
-
-{{endregion}} 
- 
 >caption Figure 1: Set the text of RadAutoCompleteBox.
 
 ![WinForms RadAutoCompleteBox Text of RadAutoCompleteBox](images/editors-autocompletebox-getting-started001.png)
 
 You can determine the visibility of the remove button by changing the __ShowRemoveButton__ property: 
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=ShowRemoveButton}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=ShowRemoveButton}} 
+<snippet id='editors-autocompletebox-showremovebutton-cs' />
+<snippet id='editors-autocompletebox-showremovebutton-vb' />
 
-````C#
-this.radAutoCompleteBox1.ShowRemoveButton = false;
 
-````
-````VB.NET
-Me.RadAutoCompleteBox1.ShowRemoveButton = False
-
-````
-
-{{endregion}} 
 
 >caption Figure 2: The Tokenized items are not showing the close button.
 

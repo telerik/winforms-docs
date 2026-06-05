@@ -15,42 +15,10 @@ The RadTaskbarButton component provides you with the possibility to display the 
 
 In the following example, we are going to simulate the progress of a running task in the taskbar. On each second, the __ProgressPercentage__ property is increased by 10 percent.
 
-{{source=..\SamplesCS\TaskbarButton\TaskbarButtonGettingStarted.cs region=Progress_Indication}} 
-{{source=..\SamplesVB\TaskbarButton\TaskbarButtonGettingStarted.vb region=Progress_Indication}}
-
-````C#
-
-Timer timer = new Timer();
-void ShowTaskProgress()
-{
-    timer.Interval = 1000;
-    timer.Tick += Timer_Tick;
-	timer.Start();
-}
-
-private void Timer_Tick(object sender, System.EventArgs e)
-{
-    this.radTaskbarButton1.ProgressPercentage += 10;
-}
-
-````
-````VB.NET
-Private timer As Timer = New Timer()
-
-Private Sub ShowTaskProgress()
-	timer.Interval = 1000
-	timer.Tick += AddressOf Timer_Tick
-	timer.Start()
-End Sub
-
-Private Sub Timer_Tick(ByVal sender As Object, ByVal e As System.EventArgs)
-	Me.radTaskbarButton1.ProgressPercentage += 10
-End Sub
+<snippet id='taskbar-button-taskbarbuttongettingstarted-progress_indication-cs' />
+<snippet id='taskbar-button-taskbarbuttongettingstarted-progress_indication-vb' />
 
 
-````
-
-{{endregion}}
 
 ### Progress State
 

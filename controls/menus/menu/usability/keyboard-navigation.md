@@ -25,19 +25,10 @@ You can assign mnemonics to the menu items. For example, you can use the __N__ k
 
 #### Assigning mnemonics
 
-{{source=..\SamplesCS\Menus\Menu\MenuForm.cs region=mnemonics}} 
-{{source=..\SamplesVB\Menus\Menu\MenuForm.vb region=mnemonics}} 
+<snippet id='menus-menuform-mnemonics-cs' />
+<snippet id='menus-menuform-mnemonics-vb' />
 
-````C#
-radMenuItem1.Text = "&New";
 
-````
-````VB.NET
-radMenuItem1.Text = "&New"
-
-````
-
-{{endregion}} 
 
 >note Mnemonics and accelerators are different features. For example, you need the accelerator Alt+F to open the file menu and the mnemonic N to invoke the event handler associated with the *New* menu item.
 >

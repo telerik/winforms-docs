@@ -46,34 +46,10 @@ Ctrl+V is the key combination performing the paste behavior in scheduler. The Ra
 
 #### Pasting Appointment
 
-{{source=..\SamplesCS\Scheduler\EndUserFunctionality\EditingAppointments.cs region=Pasting}} 
-{{source=..\SamplesVB\Scheduler\EndUserFunctionality\EditingAppointments.vb region=Pasting}} 
+<snippet id='scheduler-editingappointments-pasting-cs' />
+<snippet id='scheduler-editingappointments-pasting-vb' />
 
-````C#
-        
-private void radScheduler1_AppointmentsPasting(object sender, SchedulerClipboardEventArgs e)
-{
-    if (e.Format == "ICal")
-    {
-        string iCalData = e.DataObject.GetData(RadScheduler.ICalendarDataFormat) + "";               
-        string newiCalData = iCalData.Replace("SUMMARY:", "SUMMARY: pasted ");                
-        System.Windows.Forms.Clipboard.SetData(RadScheduler.ICalendarDataFormat, newiCalData);
-    }
-}
 
-````
-````VB.NET
-Private Sub radScheduler1_AppointmentsPasting(sender As Object, e As SchedulerClipboardEventArgs)
-    If e.Format = "ICal" Then
-        Dim iCalData As String = e.DataObject.GetData(RadScheduler.ICalendarDataFormat) + ""
-        Dim newiCalData As String = iCalData.Replace("SUMMARY:", "SUMMARY: pasted ")
-        System.Windows.Forms.Clipboard.SetData(RadScheduler.ICalendarDataFormat, newiCalData)
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 >caption Figure 1: Pasting Appointment
 ![WinForms RadScheduler Pasting Appointment](images/scheduler-end-user-functionality-copy-paste-cut001.gif)

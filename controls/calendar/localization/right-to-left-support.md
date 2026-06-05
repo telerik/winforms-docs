@@ -24,19 +24,10 @@ __RadCalendar__ fully supports right-to-left (RTL) language locales. You can ena
 
 #### Setting RightToLeft
 
-{{source=..\SamplesCS\Calendar\ColumnRowHeaders.cs region=rtl}} 
-{{source=..\SamplesVB\Calendar\ColumnRowHeaders.vb region=rtl}} 
+<snippet id='calendar-localization-right-to-left-support-rtl-cs' />
+<snippet id='calendar-localization-right-to-left-support-rtl-vb' />
 
-````C#
-radCalendar1.RightToLeft = RightToLeft.Yes;
 
-````
-````VB.NET
-RadCalendar1.RightToLeft = RightToLeft.Yes
-
-````
-
-{{endregion}} 
 
 ## See Also
 

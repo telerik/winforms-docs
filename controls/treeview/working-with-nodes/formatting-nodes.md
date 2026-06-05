@@ -25,58 +25,10 @@ Each __TreeNodeElement__ contains the following elements:
 
 The bellow example shows how you can access and format the main node elements:
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}}
-````C#
-        
-Bitmap file = SamplesCS.Properties.Resources.file;
-private void radTreeView1_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
-{
-    if (e.Node.Level > 0)
-    {
-        e.NodeElement.BorderColor = Color.Blue;
-        e.NodeElement.BorderBoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder;
-        e.NodeElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid;
-        e.NodeElement.BackColor = Color.LightBlue;
-        e.NodeElement.ContentElement.ForeColor = Color.White;
-        e.NodeElement.ImageElement.Image = file;
-    }
-    else
-    {
-        e.NodeElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local);
-        e.NodeElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local);
-        e.NodeElement.ResetValue(LightVisualElement.BorderGradientStyleProperty, ValueResetFlags.Local);
-        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
-        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local);
-        e.NodeElement.ImageElement.ResetValue(LightVisualElement.ImageProperty, ValueResetFlags.Local);
-    }
-}
-
-````
-````VB.NET
-Private file As Bitmap = My.Resources.file
-Private Sub radTreeView1_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
-    If e.Node.Level > 0 Then
-        e.NodeElement.BorderColor = Color.Blue
-        e.NodeElement.BorderBoxStyle = Telerik.WinControls.BorderBoxStyle.SingleBorder
-        e.NodeElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
-        e.NodeElement.BackColor = Color.LightBlue
-        e.NodeElement.ContentElement.ForeColor = Color.White
-        e.NodeElement.ImageElement.Image = file
-    Else
-        e.NodeElement.ResetValue(LightVisualElement.BorderColorProperty, ValueResetFlags.Local)
-        e.NodeElement.ResetValue(LightVisualElement.BorderBoxStyleProperty, ValueResetFlags.Local)
-        e.NodeElement.ResetValue(LightVisualElement.BorderGradientStyleProperty, ValueResetFlags.Local)
-        e.NodeElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
-        e.NodeElement.ContentElement.ResetValue(LightVisualElement.ForeColorProperty, ValueResetFlags.Local)
-        e.NodeElement.ImageElement.ResetValue(LightVisualElement.ImageProperty, ValueResetFlags.Local)
-    End If
-End Sub
-
-````
+<snippet id='treeview-nodeformatting-nodeformatting-cs' />
+<snippet id='treeview-nodeformatting-nodeformatting-vb' />
 
 
-{{endregion}} 
 
 >caption Figure 1: Nodes formated with the above code.
 
@@ -94,27 +46,10 @@ End Sub
 
 To enable wrapping text of the nodes in RadTreeView, you can set the __TextWrap__ property of the visual node element in the __NodeFormatting__ event handler.
 
-{{source=..\SamplesCS\TreeView\WorkingWithNodes\NodeFormatting.cs region=nodeFormatting}} 
-{{source=..\SamplesVB\TreeView\WorkingWithNodes\NodeFormatting.vb region=nodeFormatting}}
-````C#
-        
-void radTreeView_NodeFormatting(object sender, TreeNodeFormattingEventArgs e)
-{
-    e.NodeElement.ContentElement.TextWrap = true;
-}
-
-````
-````VB.NET
-
-Private Sub radTreeView_NodeFormatting(ByVal sender As Object, ByVal e As TreeNodeFormattingEventArgs)
-    e.NodeElement.ContentElement.TextWrap = True
-End Sub
+<snippet id='treeview-nodeformatting-nodeformatting-cs' />
+<snippet id='treeview-nodeformatting-nodeformatting-vb' />
 
 
-````
-
-
-{{endregion}} 
 
 # See Also
 * [Adding and Removing Nodes]({%slug winforms/treeview/working-with-nodes/adding-and-removing-nodes%})

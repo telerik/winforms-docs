@@ -86,101 +86,28 @@ For more complex scenarios the advanced layout designer provides full drag and d
 
 #### Include namespaces 
  
-{{source=..\SamplesCS\Dock\GettingStarted.cs region=namespace}} 
-{{source=..\SamplesVB\Dock\GettingStarted.vb region=namespace}} 
+<snippet id='dock-getting-started-namespace-cs' />
+<snippet id='dock-getting-started-namespace-vb' />
 
-````C#
-using Telerik.WinControls.UI;
-using Telerik.WinControls.UI.Docking;
-
-````
-````VB.NET
-Imports Telerik.WinControls.UI
-Imports Telerik.WinControls.UI.Docking
-
-````
-
-{{endregion}} 
+ 
  
 15\. Create a Form.__Load__ event handler and copy the code below to it. This code builds the __TreeView__ node structure and links the __Name__ of each __DocumentWindow__ to the corresponding Node.__Tag__ property. Each dockable object has a __Name__ property, a __String__ that uniquely identifies it. Later, we use the __Name__ to locate the __DocumentWindow__ and activate it.
 
 #### Initializing RadTreeView 
  
-{{source=..\SamplesCS\Dock\GettingStarted.cs region=settingUpTree}} 
-{{source=..\SamplesVB\Dock\GettingStarted.vb region=settingUpTree}} 
+<snippet id='dock-getting-started-settinguptree-cs' />
+<snippet id='dock-getting-started-settinguptree-vb' />
 
-````C#
-void Form1_Load(object sender, EventArgs e)
-{
-    RadTreeNode productNode = radTreeView1.Nodes.Add("Product Reports");
-    RadTreeNode customerNode = radTreeView1.Nodes.Add("Customer Reports");
-    RadTreeNode productListingNode = new RadTreeNode("Product Listing");
-    productListingNode.Tag = dwProductListing.Name;
-    RadTreeNode productCategoryNode = new RadTreeNode("Product By Category");
-    productCategoryNode.Tag = dwProductByCategory.Name;
-    RadTreeNode top10CustomerNode = new RadTreeNode("Top 10 Customers");
-    top10CustomerNode.Tag = dwTop10Customers.Name;
-    productNode.Nodes.Add(productListingNode);
-    productNode.Nodes.Add(productCategoryNode);
-    customerNode.Nodes.Add(top10CustomerNode);
-    radTreeView1.ExpandAll();
-}
-
-````
-````VB.NET
-Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    Dim productNode As RadTreeNode = RadTreeView1.Nodes.Add("Product Reports")
-    Dim customerNode As RadTreeNode = RadTreeView1.Nodes.Add("Customer Reports")
-    Dim productListingNode As New RadTreeNode("Product Listing")
-    productListingNode.Tag = dwProductListing.Name
-    Dim productCategoryNode As New RadTreeNode("Product By Category")
-    productCategoryNode.Tag = dwProductByCategory.Name
-    Dim top10CustomerNode As New RadTreeNode("Top 10 Customers")
-    top10CustomerNode.Tag = dwTop10Customers.Name
-    productNode.Nodes.Add(productListingNode)
-    productNode.Nodes.Add(productCategoryNode)
-    customerNode.Nodes.Add(top10CustomerNode)
-    RadTreeView1.ExpandAll()
-End Sub
-
-````
-
-{{endregion}}  
+  
 
 16\. Create a __SelectedNodeChanged__ event handler and add the following code to it. The code for this event handler verifies that the __Tag__ of the selected node has a value. Further, if this value corresponds to the name of an existing window in __RadDock__, the appropriate **DocumentWindow** gets activated.
 
 #### Handling the RadTreeView SelectedNodeChanged event  
 
-{{source=..\SamplesCS\Dock\GettingStarted.cs region=handlingSelectedNodeChanged}} 
-{{source=..\SamplesVB\Dock\GettingStarted.vb region=handlingSelectedNodeChanged}} 
+<snippet id='dock-getting-started-handlingselectednodechanged-cs' />
+<snippet id='dock-getting-started-handlingselectednodechanged-vb' />
 
-````C#
-void radTreeView1_SelectedNodeChanged(object sender, RadTreeViewEventArgs e)
-{            
-    if (e.Node.Tag != null)
-    {
-        DockWindow dw = this.radDock1[e.Node.Tag.ToString()];
-        if (dw != null)
-        {
-            this.radDock1.ActiveWindow = dw;
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub RadTreeView1_SelectedNodeChanged(ByVal sender As Object, ByVal e As RadTreeViewEventArgs)
-    If Not e.Node.Tag Is Nothing Then
-        Dim dw As DockWindow = Me.RadDock1(e.Node.Tag.ToString())
-        If Not dw Is Nothing Then
-            Me.RadDock1.ActiveWindow = dw
-        End If
-    End If
-End Sub
-
-````
-
-{{endregion}} 
+ 
  
 Press __F5__ to run the application. Try experimenting with...
 

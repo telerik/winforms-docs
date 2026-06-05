@@ -70,30 +70,10 @@ In some cases you may need to load the document in the code behind, not by using
 
 #### Load document with code.
 
-{{source=..\SamplesCS\Spreadsheet\GettingStartedCode.cs region=LoadFile}} 
-{{source=..\SamplesVB\Spreadsheet\GettingStartedCode.vb region=LoadFile}}
-
-````C#
-string fileName = @"C:\Test.xlsx";
-var formatProvider = new XlsxFormatProvider();
-using (Stream input = new FileStream(fileName, FileMode.Open))
-{
-    radSpreadsheet1.Workbook = formatProvider.Import(input);
-}
-
-````
-````VB.NET
-Dim fileName As String = "C:\Test.xlsx"
-Dim formatProvider = New XlsxFormatProvider()
-Using input As Stream = New FileStream(fileName, FileMode.Open)
-    radSpreadsheet1.Workbook = formatProvider.Import(input)
-End Using
-
-````
+<snippet id='spreadsheet-gettingstartedcode-loadfile-cs' />
+<snippet id='spreadsheet-gettingstartedcode-loadfile-vb' />
 
 
-
-{{endregion}} 
 
 >note Detailed information about the format providers is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/formats-and-conversion/general-information).
 

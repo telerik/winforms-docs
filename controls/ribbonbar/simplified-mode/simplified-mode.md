@@ -19,35 +19,17 @@ When the simplified layout is switched on all elements in the RibbonBar are auto
 
 To enable the simplified mode set the __LayoutMode__ property: 
 
-{{source=..\SamplesCS\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.cs region=EnableRibbon}} 
-{{source=..\SamplesVB\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.vb region=EnableRibbon}}
-````C#
-radRibbonBar1.LayoutMode = RibbonLayout.Simplified;
+<snippet id='ribbonbar-simplifiedribbonlayout-enableribbon-cs' />
+<snippet id='ribbonbar-simplifiedribbonlayout-enableribbon-vb' />
 
-````
-````VB.NET
-radRibbonBar1.LayoutMode = RibbonLayout.Simplified
 
-```` 
- 
-
-{{endregion}}
 
 To allow the end user to change the LayoutMode ar runtime show the layout button:
 
-{{source=..\SamplesCS\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.cs region=LayoutButton}} 
-{{source=..\SamplesVB\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.vb region=LayoutButton}}
-````C#
-radRibbonBar1.ShowLayoutModeButton = true;
+<snippet id='ribbonbar-simplifiedribbonlayout-layoutbutton-cs' />
+<snippet id='ribbonbar-simplifiedribbonlayout-layoutbutton-vb' />
 
-````
-````VB.NET
-radRibbonBar1.ShowLayoutModeButton = True
 
-```` 
- 
-
-{{endregion}}
 
 ![WinForms RadRibbonBar Simplified Mode Button](images/simplified-mode002.png)
 
@@ -55,51 +37,24 @@ radRibbonBar1.ShowLayoutModeButton = True
 
 You are allowed to change the height of the ribbon when you are in the simplified mode:
 
-{{source=..\SamplesCS\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.cs region=LayoutHeight}} 
-{{source=..\SamplesVB\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.vb region=LayoutHeight}}
-````C#
-this.radRibbonBar1.SimplifiedHeight = 100;
+<snippet id='ribbonbar-simplifiedribbonlayout-layoutheight-cs' />
+<snippet id='ribbonbar-simplifiedribbonlayout-layoutheight-vb' />
 
-````
-````VB.NET
-Me.radRibbonBar1.SimplifiedHeight = 100
 
-```` 
- 
-
-{{endregion}}
 
 Access the simplified mode button:
 
-{{source=..\SamplesCS\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.cs region=LayoutButton}} 
-{{source=..\SamplesVB\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.vb region=LayoutButton}}
-````C#
-radRibbonBar1.ShowLayoutModeButton = true;
+<snippet id='ribbonbar-simplifiedribbonlayout-layoutbutton-cs' />
+<snippet id='ribbonbar-simplifiedribbonlayout-layoutbutton-vb' />
 
-````
-````VB.NET
-radRibbonBar1.ShowLayoutModeButton = True
 
-```` 
- 
-
-{{endregion}}
 
 Access the simplified mode label. The following example shows how you can change the text of the label in the upper right corner:
 
-{{source=..\SamplesCS\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.cs region=SimplifiedLabel}} 
-{{source=..\SamplesVB\RibbonBar\SimplifiedLayout\SimplifiedRibbonLayout.vb region=SimplifiedLabel}}
-````C#
-this.radRibbonBar1.RibbonBarElement.LayoutModeTextElement.Text = "Compact Mode";
+<snippet id='ribbonbar-simplifiedribbonlayout-simplifiedlabel-cs' />
+<snippet id='ribbonbar-simplifiedribbonlayout-simplifiedlabel-vb' />
 
-````
-````VB.NET
-Me.radRibbonBar1.RibbonBarElement.LayoutModeTextElement.Text = "Compact Mode"
 
-```` 
- 
-
-{{endregion}}
 
 ## Events
 

@@ -20,50 +20,18 @@ The RadMap.__ShowMiniMap__ property is responsible for showing or hiding the min
 
 #### Hide Mini Map
 
-{{source=..\SamplesCS\Map\MapLayers.cs region=HideMiniMap}} 
-{{source=..\SamplesVB\Map\MapLayers.vb region=HideMiniMap}}
-````C#
-this.radMap1.ShowMiniMap = false;
-
-````
-````VB.NET
-Me.RadMap1.ShowMiniMap = False
-
-````
+<snippet id='map-maplayers-hideminimap-cs' />
+<snippet id='map-maplayers-hideminimap-vb' />
 
 
-
-{{endregion}}
 
 The mini map can be also programmatically expanded or collapsed via its __IsCollapsed__ property or the __Expand__ and __Collapse__ methods.
 
 #### Expand/Collapse
 
-{{source=..\SamplesCS\Map\MapLayers.cs region=ExpandCollapse}} 
-{{source=..\SamplesVB\Map\MapLayers.vb region=ExpandCollapse}}
-````C#
-if (this.radMap1.MapElement.MiniMapElement.IsCollapsed)
-{
-    this.radMap1.MapElement.MiniMapElement.Expand();
-}
-else
-{
-    this.radMap1.MapElement.MiniMapElement.Collapse();
-}
+<snippet id='map-maplayers-expandcollapse-cs' />
+<snippet id='map-maplayers-expandcollapse-vb' />
 
-````
-````VB.NET
-If Me.RadMap1.MapElement.MiniMapElement.IsCollapsed Then
-    Me.RadMap1.MapElement.MiniMapElement.Expand()
-Else
-    Me.RadMap1.MapElement.MiniMapElement.Collapse()
-End If
-
-````
-
-
-
-{{endregion}}
 
 
 ## Mini Map Modes

@@ -24,41 +24,19 @@ Now, you need to create a form and add a RadScheduler, in this tutorial it is na
 
 #### Create DbContext
 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=DbContext}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DbContext}} 
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-dbcontext-cs' />
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-dbcontext-vb' />
 
-````C#
-private SchedulerDataEntities1 dbContext = new SchedulerDataEntities1();
 
-````
-````VB.NET
-Private dbContext As New SchedulerDataEntities1()
-
-````
-
-{{endregion}} 
 
 Then, we will need a __SchedulerBindingDataSource__, __AppointmentMappingInfo__ and __ResourceMappingInfo__ which we will use to map our data. You can create them in the Form's constructor.
 
 #### Data Source Objects
 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=Mappings}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=Mappings}} 
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-mappings-cs' />
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-mappings-vb' />
 
-````C#
-SchedulerBindingDataSource schedulerBindingSource = new SchedulerBindingDataSource();
-AppointmentMappingInfo appointmentMappingInfo = new AppointmentMappingInfo();
-ResourceMappingInfo resourceMappingInfo = new ResourceMappingInfo();
 
-````
-````VB.NET
-Dim schedulerBindingSource As New SchedulerBindingDataSource()
-Dim appointmentMappingInfo As New AppointmentMappingInfo()
-Dim resourceMappingInfo As New ResourceMappingInfo()
-
-````
-
-{{endregion}} 
 
 Now you just need to setup the mappings. The approaches for *Entity Framework* and *Telerik Data Access* are a bit different.
 
@@ -66,59 +44,10 @@ Now you just need to setup the mappings. The approaches for *Entity Framework* a
 
 Below you can see the code you need to use with *Entity Framework*:
 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=EFCode}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=EFCode}} 
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-efcode-cs' />
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-efcode-vb' />
 
-````C#
-dbContext.Appointments.Load();
-dbContext.Resources.Load();
-appointmentMappingInfo.BackgroundId = "BackgroundID";
-appointmentMappingInfo.Description = "Description";
-appointmentMappingInfo.End = "End";
-appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments";
-appointmentMappingInfo.Location = "Location";
-appointmentMappingInfo.MasterEventId = "ParentID";
-appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
-appointmentMappingInfo.ResourceId = "ID";
-appointmentMappingInfo.Resources = "Resources";
-appointmentMappingInfo.Start = "Start";
-appointmentMappingInfo.StatusId = "StatusID";
-appointmentMappingInfo.Summary = "Summary";
-appointmentMappingInfo.Visible = "Visible";
-schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo;
-resourceMappingInfo.Id = "ID";
-resourceMappingInfo.Name = "ResourceName";
-schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo;
-schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList();
-schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList();
 
-````
-````VB.NET
-dbContext.Appointments.Load()
-dbContext.Resources.Load()
-appointmentMappingInfo.BackgroundId = "BackgroundID"
-appointmentMappingInfo.Description = "Description"
-appointmentMappingInfo.[End] = "End"
-appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-appointmentMappingInfo.Location = "Location"
-appointmentMappingInfo.MasterEventId = "ParentID"
-appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-appointmentMappingInfo.ResourceId = "ID"
-appointmentMappingInfo.Resources = "Resources"
-appointmentMappingInfo.Start = "Start"
-appointmentMappingInfo.StatusId = "StatusID"
-appointmentMappingInfo.Summary = "Summary"
-appointmentMappingInfo.Visible = "Visible"
-schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo
-resourceMappingInfo.Id = "ID"
-resourceMappingInfo.Name = "ResourceName"
-schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo
-schedulerBindingSource.ResourceProvider.DataSource = dbContext.Resources.Local.ToBindingList()
-schedulerBindingSource.EventProvider.DataSource = dbContext.Appointments.Local.ToBindingList()
-
-````
-
-{{endregion}} 
 
 >important In order to use the __Load__ extension method you need to add *System.Data.Entity* to your usings(C#) or Imports(VB).
 >
@@ -127,77 +56,19 @@ And the following code needs to be used with *Telerik Data Access*:
 
 #### Create Mappings for DataAccess
 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=TDACode}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=TDACode}} 
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-tdacode-cs' />
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-tdacode-vb' />
 
-````C#
-appointmentMappingInfo.BackgroundId = "BackgroundID";
-appointmentMappingInfo.Description = "Description";
-appointmentMappingInfo.End = "End";
-appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments";
-appointmentMappingInfo.Location = "Location";
-appointmentMappingInfo.MasterEventId = "ParentID";
-appointmentMappingInfo.RecurrenceRule = "RecurrenceRule";
-appointmentMappingInfo.ResourceId = "ResourceID";
-appointmentMappingInfo.Resources = "AppointmentsResources";
-appointmentMappingInfo.Start = "Start";
-appointmentMappingInfo.StatusId = "StatusID";
-appointmentMappingInfo.Summary = "Summary";
-appointmentMappingInfo.Visible = "Visible";
-            
-this.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1;
-            
-resourceMappingInfo.Id = "ID";
-resourceMappingInfo.Name = "ResourceName";
-schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1;
-schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList();
-schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList();
 
-````
-````VB.NET
-appointmentMappingInfo.BackgroundId = "BackgroundID"
-appointmentMappingInfo.Description = "Description"
-appointmentMappingInfo.[End] = "End"
-appointmentMappingInfo.Exceptions = "FK_Appointments_Appointments"
-appointmentMappingInfo.Location = "Location"
-appointmentMappingInfo.MasterEventId = "ParentID"
-appointmentMappingInfo.RecurrenceRule = "RecurrenceRule"
-appointmentMappingInfo.ResourceId = "ResourceID"
-appointmentMappingInfo.Resources = "AppointmentsResources"
-appointmentMappingInfo.Start = "Start"
-appointmentMappingInfo.StatusId = "StatusID"
-appointmentMappingInfo.Summary = "Summary"
-appointmentMappingInfo.Visible = "Visible"
-Me.schedulerBindingSource.EventProvider.Mapping = appointmentMappingInfo1
-resourceMappingInfo.Id = "ID"
-resourceMappingInfo.Name = "ResourceName"
-schedulerBindingSource.ResourceProvider.Mapping = resourceMappingInfo1
-schedulerBindingDataSource.ResourceProvider.DataSource = entityContext.Resources.ToList()
-schedulerBindingDataSource.EventProvider.DataSource = entityContext.Appointments.ToList()
-
-````
-
-{{endregion}} 
 
 The last step that you need to take in order to complete the binding process is to assign the DataSource property of __RadScheduler__ and group it by resource:
 
 #### Set Data Source
 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=DataSourceAndGroup}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=DataSourceAndGroup}} 
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-datasourceandgroup-cs' />
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-datasourceandgroup-vb' />
 
-````C#
-this.scheduler.DataSource = schedulerBindingSource;
-this.scheduler.GroupType = GroupType.Resource;
 
-````
-````VB.NET
-Me.scheduler.DataSource = schedulerBindingSource
-Me.scheduler.GroupType = GroupType.Resource
-
-````
-
-{{endregion}} 
 
 >important As of **R1 2021** the EditAppointmentDialog provides UI for selecting multiple resources per appointment. In certain cases (e.g. unbound mode), the *Resource* **RadDropDownList** is replaced with a **RadCheckedDropDownList**. Otherwise, the default drop down with single selection for resources is shown. To enable the multiple resources selection in bound mode, it is necessary to specify the AppointmentMappingInfo. **Resources** property. The **Resources** property should be set to the name of the relation that connects the **Appointments** and the **AppointmentsResources** tables. 
 
@@ -209,26 +80,9 @@ Saving changes to the database happens when the __SaveChanges__ method of the Db
 
 #### Save Changes
 
-{{source=..\SamplesCS\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.cs region=Closing}} 
-{{source=..\SamplesVB\Scheduler\DataBinding\BindingToEntityFrameworkAndTelerikDataAccess.vb region=Closing}} 
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-closing-cs' />
+<snippet id='scheduler-bindingtoentityframeworkandtelerikdataaccess-closing-vb' />
 
-````C#
-protected override void OnClosing(CancelEventArgs e)
-{
-    this.dbContext.SaveChanges();
-    base.OnClosing(e);
-}
-
-````
-````VB.NET
-Protected Overrides Sub OnClosing(e As CancelEventArgs)
-    Me.dbContext.SaveChanges()
-    MyBase.OnClosing(e)
-End Sub
-
-````
-
-{{endregion}} 
 
 
 # See Also

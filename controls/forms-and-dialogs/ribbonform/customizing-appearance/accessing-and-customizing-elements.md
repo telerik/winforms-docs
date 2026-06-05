@@ -29,18 +29,7 @@ You can customize the nested elements at run time as well:
 
 #### Customize elements 
 
-{{source=..\SamplesCS\Forms And Dialogs\RadRibbonForm1.cs region=RibbonForm}} 
-{{source=..\SamplesVB\Forms And Dialogs\RadRibbonForm1.vb region=RibbonForm}} 
+<snippet id='ribbonform-radribbonform1-ribbonform-cs' />
+<snippet id='ribbonform-radribbonform1-ribbonform-vb' />
 
-````C#
-this.AllowAero = false;
-this.RibbonBar.RibbonBarElement.CaptionFill.BackColor = Color.Lime;
-
-````
-````VB.NET
-Me.AllowAero = False
-Me.RibbonBar.RibbonBarElement.CaptionFill.BackColor = Color.Lime
-
-````
-
-{{endregion}} 
+ 

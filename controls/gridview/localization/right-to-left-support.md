@@ -13,19 +13,8 @@ previous_url: gridview-localization-rtl
 
 You can present the content of your grid instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
 
-{{source=..\SamplesCS\GridView\Localization\Localization1.cs region=rtl}} 
-{{source=..\SamplesVB\GridView\Localization\Localization1.vb region=rtl}} 
-
-````C#
-this.radGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-
-````
-````VB.NET
-Me.RadGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-
-````
-
-{{endregion}} 
+<snippet id='gridview-localization1-rtl-cs' />
+<snippet id='gridview-localization1-rtl-vb' />
 
 ![WinForms RadGridView Right-To-Left Support](images/gridview-localization-rtl001.png)
 # See Also

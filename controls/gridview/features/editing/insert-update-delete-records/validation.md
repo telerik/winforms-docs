@@ -21,40 +21,8 @@ strings longer than 10 characters:
 
 #### Handling the value changed event
 
-{{source=..\SamplesCS\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.cs region=handlingValueChangingEvent}} 
-{{source=..\SamplesVB\GridView\InsertUpdateDeleteRecords\InsertUpdateDeleteRecords.vb region=handlingValueChangingEvent}} 
-
-````C#
-void radGridView1_ValueChanging(object sender, Telerik.WinControls.UI.ValueChangingEventArgs e)
-{
-    if (e.NewValue.GetType() == typeof(string))
-    {
-        if (e.NewValue.ToString().Length > 10)
-        {
-            {
-                e.Cancel = true;
-            }
-        }
-    }
-}
-
-````
-````VB.NET
-Private Sub RadGridView1_ValueChanging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.ValueChangingEventArgs) Handles RadGridView1.ValueChanging
-    If e.NewValue.GetType() Is GetType(String) Then
-            If e.NewValue.ToString().Length > 10 Then
-                If True Then
-                    e.Cancel = True
-                End If
-            End If
-        End If
-    End Sub
-
-````
-
-{{endregion}} 
-
-
+<snippet id='gridview-insertupdatedeleterecords-handlingvaluechangingevent-cs' />
+<snippet id='gridview-insertupdatedeleterecords-handlingvaluechangingevent-vb' />
 
 # See Also
 * [Data Editing Event Sequence]({%slug winforms/gridview/insert/update/delete-records/data-editing-event-sequence%})

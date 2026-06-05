@@ -72,46 +72,18 @@ Below is an example of using the __Next__ event of __RadWizard__ to choose the p
 		
 #### Subscribe to the Next event
 
-{{source=..\SamplesCS\Wizard\Events.cs region=subscribeToTheEvent}} 
-{{source=..\SamplesVB\Wizard\EventsForm.vb region=subscribeToTheEvent}}
+<snippet id='wizard-events-subscribetotheevent-cs' />
+<snippet id='wizard-eventsform-subscribetotheevent-vb' />
 
-````C#
-this.radWizard1.Next += new WizardCancelEventHandler(radWizard1_Next);
 
-````
-````VB.NET
-AddHandler radWizard1.Next, AddressOf radWizard1_Next
-
-```` 
-{{endregion}} 
 
 #### Handle the Next event
 
 	
-{{source=..\SamplesCS\Wizard\Events.cs region=nextEvent}} 
-{{source=..\SamplesVB\Wizard\EventsForm.vb region=nextEvent}}
+<snippet id='wizard-events-nextevent-cs' />
+<snippet id='wizard-eventsform-nextevent-vb' />
 
-````C#
-private void radWizard1_Next(object sender, WizardCancelEventArgs e)
-{
-    if (this.radWizard1.SelectedPage == this.radWizard1.Pages[1])
-    {
-        e.Cancel = true;
-        this.radWizard1.SelectedPage = this.radWizard1.Pages[0];
-    }
-}
 
-````
-````VB.NET
-Private Sub RadWizard1_Next(ByVal sender As Object, ByVal e As WizardCancelEventArgs)
-    If (Me.RadWizard1.SelectedPage Is Me.RadWizard1.Pages(1)) Then
-        e.Cancel = True
-        Me.RadWizard1.SelectedPage = Me.RadWizard1.Pages(0)
-    End If
-End Sub
-
-```` 
-{{endregion}} 
 
 # See Also
 

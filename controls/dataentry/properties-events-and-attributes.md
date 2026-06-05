@@ -19,35 +19,10 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 #### RadDataEntry Binding.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.cs region=bind1}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryGettingStarted.vb region=bind1}} 
+<snippet id='dataentry-getting-started-bind1-cs'/>
+<snippet id='dataentry-getting-started-bind1-vb'/>
 
-````C#
-this.radDataEntry1.DataSource = new Employee() 
-{ 
-    FirstName = "Sarah",
-    LastName = "Blake",
-    Occupation = "Supplied Manager", 
-    StartingDate = new DateTime(2005, 04, 12),
-    IsMarried = true, 
-    Salary = 3500, Gender = Gender.Female 
-};
-
-````
-````VB.NET
-Me.radDataEntry1.DataSource = New Employee() With { _
-  .FirstName = "Sarah", _
-  .LastName = "Blake", _
-  .Occupation = "Supplied Manager", _
-  .StartingDate = New DateTime(2005, 4, 12), _
-  .IsMarried = True, _
-  .Salary = 3500, _
-  .Gender = Gender.Female _
- }
-
-````
-
-{{endregion}} 
+ 
 
 
 >caption> Figure 1: Set The Data Source of RadDataEntry
@@ -57,19 +32,10 @@ Me.radDataEntry1.DataSource = New Employee() With { _
  
 #### Set the Columns Count.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=NumberOfColumns}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=NumberOfColumns}} 
+<snippet id='dataentry-properties-events-and-attributes-numberofcolumns-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-numberofcolumns-vb'/>
 
-````C#
-this.radDataEntry1.ColumnCount = 2;
-
-````
-````VB.NET
-Me.radDataEntry1.ColumnCount = 2
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 2: Set The Columns Count.
 
@@ -79,19 +45,10 @@ Me.radDataEntry1.ColumnCount = 2
 
 #### Set FitToParentWidth Property.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=FitToParentWidth}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FitToParentWidth}} 
+<snippet id='dataentry-properties-events-and-attributes-fittoparentwidth-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-fittoparentwidth-vb'/>
 
-````C#
-this.radDataEntry1.FitToParentWidth = true;
-
-````
-````VB.NET
-Me.radDataEntry1.FitToParentWidth = True
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 3. Set FitToParentWidth
 
@@ -101,33 +58,10 @@ Me.radDataEntry1.FitToParentWidth = True
             
 #### Setup the Validation Panel.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ShowValidationPanel}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ShowValidationPanel}} 
+<snippet id='dataentry-properties-events-and-attributes-showvalidationpanel-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-showvalidationpanel-vb'/>
 
-````C#
-this.radDataEntry1.ShowValidationPanel = true;
-RadLabel label = new RadLabel();
-label.Name = "First Name";
-label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long.";
-label.Dock = DockStyle.Top;
-label.AutoSize = false;
-label.BackColor = Color.Transparent;
-this.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label);
-
-````
-````VB.NET
-Me.radDataEntry1.ShowValidationPanel = True
-Dim label As New RadLabel()
-label.Name = "First Name"
-label.Text = "<html><size=10><b>First Name : </b>First Name should be between 2 and 15 chars long."
-label.Dock = DockStyle.Top
-label.AutoSize = False
-label.BackColor = Color.Transparent
-Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 4: The Validation Panel.
 
@@ -137,21 +71,10 @@ Me.radDataEntry1.ValidationPanel.PanelContainer.Controls.Add(label)
 
 ### Set the Flow Direction.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=FillingOrder1}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=FillingOrder1}} 
+<snippet id='dataentry-properties-events-and-attributes-fillingorder1-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-fillingorder1-vb'/>
 
-````C#
-this.radDataEntry1.ColumnCount = 2;
-this.radDataEntry1.FlowDirection = FlowDirection.BottomUp;
-
-````
-````VB.NET
-Me.radDataEntry1.ColumnCount = 2
-Me.radDataEntry1.FlowDirection = FlowDirection.BottomUp
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 5: Set the flow direction.
 
@@ -161,19 +84,10 @@ Me.radDataEntry1.FlowDirection = FlowDirection.BottomUp
            
 #### Set Space Between The Items.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ItemSpace}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemSpace}} 
+<snippet id='dataentry-properties-events-and-attributes-itemspace-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-itemspace-vb'/>
 
-````C#
-this.radDataEntry1.ItemSpace = 10;
-
-````
-````VB.NET
-Me.radDataEntry1.ItemSpace = 10
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 6 Set the items space.
 
@@ -183,19 +97,10 @@ Me.radDataEntry1.ItemSpace = 10
 
 #### Set items default size.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ItemDefaultSize}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ItemDefaultSize}} 
+<snippet id='dataentry-properties-events-and-attributes-itemdefaultsize-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-itemdefaultsize-vb'/>
 
-````C#
-this.radDataEntry1.ItemDefaultSize = new Size(300, 30);
-
-````
-````VB.NET
-Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 7. Set items size.
 
@@ -205,19 +110,10 @@ Me.radDataEntry1.ItemDefaultSize = New Size(300, 30)
 
 #### Set The AutoSizeLabels Property.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=ResizeLabels}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=ResizeLabels}} 
+<snippet id='dataentry-properties-events-and-attributes-resizelabels-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-resizelabels-vb'/>
 
-````C#
-this.radDataEntry1.AutoSizeLabels = true;
-
-````
-````VB.NET
-Me.radDataEntry1.AutoSizeLabels = True
-
-````
-
-{{endregion}} 
+ 
 
 >caption Figure 8: The Labels are not Auto-Sized.
 
@@ -254,66 +150,20 @@ With the __Browsable__ attribute users can easily control which properties shoul
 
 #### Set The Browsable Attribute. 
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=Browsable}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=Browsable}} 
+<snippet id='dataentry-properties-events-and-attributes-browsable-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-browsable-vb'/>
 
-````C#
-[Browsable(false)]
-public string PhoneNumber
-{
-    get;
-    set;
-}
-
-````
-````VB.NET
-<Browsable(False)> _
-Public Property PhoneNumber() As String
-    Get
-        Return m_PhoneNumber
-    End Get
-    Set(value As String)
-        m_PhoneNumber = Value
-    End Set
-End Property
-Private m_PhoneNumber As String
-
-````
-
-{{endregion}} 
+ 
 
 
 The __DisplayName__ attribute defines what text should be displayed in the label that is associated with the editor. 
 
 #### Set The DisplayName Attribute.
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=DisplayName}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=DisplayName}} 
+<snippet id='dataentry-properties-events-and-attributes-displayname-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-displayname-vb'/>
 
-````C#
-[DisplayName("family name")]
-public string LastName
-{
-    get;
-    set;
-}
-
-````
-````VB.NET
-<DisplayName("family name")> _
-Public Property LastName() As String
-    Get
-        Return m_LastName
-    End Get
-    Set(value As String)
-        m_LastName = Value
-    End Set
-End Property
-Private m_LastName As String
-
-````
-
-{{endregion}} 
+ 
 
 
 ![WinForms RadDataEntry Set The DisplayName Attribute](images/dataentry-properties-events-and-attributes009.png)
@@ -322,33 +172,10 @@ With __RadRange__ attribute users can define range that can be used into validat
 
 #### Set The RadRange Attribute
 
-{{source=..\SamplesCS\DataEntryAndBindingNavigator\RadDataEntryProgram.cs region=RadRange}} 
-{{source=..\SamplesVB\DataEntryAndBindingNavigator\RadDataEntryProgram.vb region=RadRange}} 
+<snippet id='dataentry-properties-events-and-attributes-radrange-cs'/>
+<snippet id='dataentry-properties-events-and-attributes-radrange-vb'/>
 
-````C#
-[RadRange(1500,2000)]
-public int Salary
-{
-    get;
-    set;
-}
-
-````
-````VB.NET
-<RadRange(1500, 2000)> _
-Public Property Salary() As Integer
-    Get
-        Return m_Salary
-    End Get
-    Set(value As Integer)
-        m_Salary = Value
-    End Set
-End Property
-Private m_Salary As Integer
-
-````
-
-{{endregion}} 
+ 
 
 # See Also
 

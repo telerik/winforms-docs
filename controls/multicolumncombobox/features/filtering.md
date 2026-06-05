@@ -25,30 +25,10 @@ Filtering operation in __RadMultiColumnComboBox__ is controlled by the Boolean
 
 #### FilterDescriptor
 
-{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=filtering}} 
-{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=filtering}} 
+<snippet id='multicolumncombobox-multicolumncombobox1-filtering-cs' />
+<snippet id='multicolumncombobox-multicolumncombobox1-filtering-vb' />
 
-````C#
-            
-this.radMultiColumnComboBox1.AutoFilter = true;
-this.radMultiColumnComboBox1.DisplayMember = "ContactName";
-FilterDescriptor filter = new FilterDescriptor();
-filter.PropertyName = this.radMultiColumnComboBox1.DisplayMember;
-filter.Operator = FilterOperator.Contains;
-this.radMultiColumnComboBox1.EditorControl.MasterTemplate.FilterDescriptors.Add(filter);
 
-````
-````VB.NET
-Me.RadMultiColumnComboBox1.AutoFilter = True
-Me.RadMultiColumnComboBox1.DisplayMember = "ContactName"
-Dim filter As New FilterDescriptor()
-filter.PropertyName = Me.RadMultiColumnComboBox1.DisplayMember
-filter.Operator = FilterOperator.Contains
-Me.RadMultiColumnComboBox1.EditorControl.MasterTemplate.FilterDescriptors.Add(filter)
-
-````
-
-{{endregion}} 
 
 The code snippet above will result in the following multi-column combobox: 
 
@@ -64,33 +44,10 @@ You can filter data records by multiple values. For this purpose you have to use
 
 ![WinForms RadMultiColumnComboBox Filtering with CompositeFilterDescriptors](images/multicolumncombobox-filtering002.gif)
 
-{{source=..\SamplesCS\MultiColumnComboBox\MultiColumnComboBox1.cs region=CompositeFilters}} 
-{{source=..\SamplesVB\MultiColumnComboBox\MultiColumnComboBox1.vb region=CompositeFilters}} 
+<snippet id='multicolumncombobox-multicolumncombobox1-compositefilters-cs' />
+<snippet id='multicolumncombobox-multicolumncombobox1-compositefilters-vb' />
 
-````C#
-this.radMultiColumnComboBox1.AutoFilter = true;
-CompositeFilterDescriptor compositeFilter = new CompositeFilterDescriptor();           
-FilterDescriptor prodName = new FilterDescriptor("ProductName", FilterOperator.Contains, "");
-FilterDescriptor prodQuantity = new FilterDescriptor("QuantityPerUnit", FilterOperator.Contains, "");
-compositeFilter.FilterDescriptors.Add(prodName);
-compositeFilter.FilterDescriptors.Add(prodQuantity);
-compositeFilter.LogicalOperator = FilterLogicalOperator.Or;
-this.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter);
 
-````
-````VB.NET
-Me.radMultiColumnComboBox1.AutoFilter = True
-Dim compositeFilter As New CompositeFilterDescriptor()
-Dim prodName As New FilterDescriptor("ProductName", FilterOperator.Contains, "")
-Dim prodQuantity As New FilterDescriptor("QuantityPerUnit", FilterOperator.Contains, "")
-compositeFilter.FilterDescriptors.Add(prodName)
-compositeFilter.FilterDescriptors.Add(prodQuantity)
-compositeFilter.LogicalOperator = FilterLogicalOperator.[Or]
-Me.radMultiColumnComboBox1.EditorControl.FilterDescriptors.Add(compositeFilter)
-
-````
-
-{{endregion}} 
 
 >caution The composite filters allow you to create more complex filtering expressions. Note that this feature is supported for text columns only as the __RadMultiColumnComboBox__ has one common text input for the filtering operation and it is not possible to convert input data to different data formats automatically.
 >

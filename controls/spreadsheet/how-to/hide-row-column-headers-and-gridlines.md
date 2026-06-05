@@ -19,19 +19,10 @@ The __RadWorksheetEditor__ exposes a Boolean property __ShowRowColumnHeadings__.
 #### Example 1: Hide Row and Column Headers
 
 
-{{source=..\SamplesCS\Spreadsheet\SelectionCode.cs region=Selection_12}} 
-{{source=..\SamplesVB\Spreadsheet\SelectionCode.vb region=Selection_12}}
-````C#
-this.radSpreadsheet.SpreadsheetElement.ActiveWorksheetEditor.ShowRowColumnHeadings = false;
+<snippet id='spreadsheet-selectioncode-selection_12-cs' />
+<snippet id='spreadsheet-selectioncode-selection_12-vb' />
 
-````
-````VB.NET
-Me.radSpreadsheet.SpreadsheetElement.ActiveWorksheetEditor.ShowRowColumnHeadings = False
 
-```` 
-
- 
-{{endregion}} 
 
 ## Show or Hide Gridlines
 
@@ -41,19 +32,10 @@ If you want to show or hide the gridlines of __RadSpreadsheet__ just set the __S
 ####  Example 2: Hide Gridlines
 
 
-{{source=..\SamplesCS\Spreadsheet\SelectionCode.cs region=Selection_13}} 
-{{source=..\SamplesVB\Spreadsheet\SelectionCode.vb region=Selection_13}}
-````C#
-this.radSpreadsheet.SpreadsheetElement.ActiveWorksheetEditor.ShowGridlines = false;
+<snippet id='spreadsheet-selectioncode-selection_13-cs' />
+<snippet id='spreadsheet-selectioncode-selection_13-vb' />
 
-````
-````VB.NET
-Me.radSpreadsheet.SpreadsheetElement.ActiveWorksheetEditor.ShowGridlines = False
 
-```` 
-
- 
-{{endregion}} 
 
 ## See Also
 

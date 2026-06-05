@@ -16,132 +16,47 @@ The significant properties for __RadDateOnlyPicker__ are:
 
 #### Setting the value of RadDateOnlyPicker 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=Value}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=Value}} 
+<snippet id='editors-dateonlypicker-value-cs' />
+<snippet id='editors-dateonlypicker-value-vb' />
 
-````C#
-this.radDateOnlyPicker1.Value = new DateOnly(2024,1,1);
 
-````
-````VB.NET
-Me.RadDateOnlyPicker1.Value = New DateOnly(2024,1,1)
 
-````
-
-{{endregion}} 
- 
 * __MinDate, MaxDate:__ These two __DateOnly__ type properties form the bounds that dates can be selected from in the picker. Attempts to select outside these bounds are ignored.
 
 #### Setting the MinDate property of RadDateOnlyPicker 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=MinMaxDate}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=MinMaxDate}} 
+<snippet id='editors-dateonlypicker-minmaxdate-cs' />
+<snippet id='editors-dateonlypicker-minmaxdate-vb' />
 
-````C#
-this.radDateOnlyPicker1.MinDate = new DateOnly(2024,10,1);
-this.radDateOnlyPicker1.MaxDate = new DateOnly(2024,10,31);
 
-````
-````VB.NET
-Me.RadDateOnlyPicker1.MinDate = New DateOnly(2024,10,1)
-Me.RadDateOnlyPicker1.MaxDate = New DateOnly(2024,10,31)
 
-````
-
-{{endregion}} 
- 
 * __NullableValue__ is same as the __Value__ property, but the __NullableValue__ property is of type *Nullable DateOnly*. It can be *null* – in this case if **RadDateOnlyPicker** is not selected, it will show its __NullText__. In case **RadDateOnlyPicker** is selected, it will show the last entered date – this allows the end-user to enter and edit the date.
 
 #### Setting the NullableValue property of RadDateOnlyPicker 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=NullableValue}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=NullableValue}} 
+<snippet id='editors-dateonlypicker-nullablevalue-cs' />
+<snippet id='editors-dateonlypicker-nullablevalue-vb' />
 
-````C#
-this.radDateOnlyPicker1.NullableValue = null;
 
-````
-````VB.NET
-Me.RadDateOnlyPicker1.NullableValue = Nothing
 
-````
-
-{{endregion}} 
-  
 __NullableValue__ can be bound to a business object that exposes a property of type nullable DateOnly. The code below demonstrates how to do this:
            
 #### Bind the NullableValue to a business object. 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=NullableBinding}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=NullableBinding}} 
+<snippet id='editors-dateonlypicker-nullablebinding-cs' />
+<snippet id='editors-dateonlypicker-nullablebinding-vb' />
 
-````C#
-public class MyObject
-{
-    public MyObject(DateOnly? _endTime)
-    {
-        this._endTime = _endTime;
-    }
-    private DateOnly? _endTime;
-    public DateOnly? EndTime
-    {
-        get { return _endTime; }
-        set { _endTime = value; }
-    }
-}
 
-protected override void OnLoad(EventArgs e)
-{
-    base.OnLoad(e);
-    MyObject myObject = new MyObject(DateOnly.FromDateTime(DateTime.Now.AddDays(1)));
-    this.radDateOnlyPicker1.DataBindings.Add(new Binding("NullableValue", myObject, "EndTime", true, DataSourceUpdateMode.OnPropertyChanged));
-}
 
-````
-````VB.NET
-Public Class MyObject
-    Public Sub New(ByVal _endTime? As DateOnly)
-        Me._endTime = _endTime
-    End Sub
-    Private _endTime? As DateOnly
-    Public Property EndTime() As DateOnly?
-        Get
-            Return _endTime
-        End Get
-        Set(ByVal value? As DateOnly)
-            _endTime = value
-        End Set
-    End Property
-End Class
-
-Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-    MyBase.OnLoad(e)
-    Dim myObject As MyObject = New MyObject(DateOnly.FromDateTime(DateTime.Now.AddDays(1)))
-    Me.radDateOnlyPicker1.DataBindings.Add(New Binding("NullableValue", myObject, "EndTime", True, DataSourceUpdateMode.OnPropertyChanged))
-End Sub
-
-````
-
-{{endregion}} 
- 
 * __NullText:__ This property defines the text that will be displayed in **RadDateOnlyPicker** when the __NullableValue__ property is set to *null* and **RadDateOnlyPicker** is not in focus. By default, __NullText__ is an empty string.
 
 #### Setting the NullText property of RadDateOnlyPicker 
 
-{{source=..\SamplesCS\Editors\DateOnlyPicker.cs region=NullText}} 
-{{source=..\SamplesVB\Editors\DateOnlyPicker.vb region=NullText}} 
+<snippet id='editors-dateonlypicker-nulltext-cs' />
+<snippet id='editors-dateonlypicker-nulltext-vb' />
 
-````C#
-this.radDateOnlyPicker1.NullText = "No date selected";
 
-````
-````VB.NET
-Me.RadDateOnlyPicker1.NullText = "No date selected"
 
-````
-
-{{endregion}} 
- 
 * __TextBoxElement__: Gets an instance of RadTextBoxElement.
 
 * __ArrowButton__: Gets an instance of RadArrowButtonElement.

@@ -44,49 +44,19 @@ The sorting can be applied in the code behind or at run-time with the help of **
 
 #### Using the SortOrder Property
 
-{{source=..\SamplesCS\PivotGrid\PivotGridSorting.cs region=SortByGroupName}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortByGroupName}} 
+<snippet id='pivotgrid-pivotgridsorting-sortbygroupname-cs' />
+<snippet id='pivotgrid-pivotgridsorting-sortbygroupname-vb' />
 
-````C#
-PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
-propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-this.radPivotGrid1.ReloadData();
 
-````
-````VB.NET
-Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
-propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-Me.radPivotGrid1.ReloadData()
-
-````
-
-{{endregion}}
 
 * Sorting based on the **GrandTotals** can be *Ascending* or *Descending*. To set such sort mechanism you have to use the **SortOrder** and **GroupComparer** properties:
 
 #### Using SortOrder and GroupComparer
 
-{{source=..\SamplesCS\PivotGrid\PivotGridSorting.cs region=SortGrandTotals}} 
-{{source=..\SamplesVB\PivotGrid\PivotGridSorting.vb region=SortGrandTotals}} 
+<snippet id='pivotgrid-pivotgridsorting-sortgrandtotals-cs' />
+<snippet id='pivotgrid-pivotgridsorting-sortgrandtotals-vb' />
 
-````C#
-PropertyGroupDescription propGroupDescription = (PropertyGroupDescription)this.radPivotGrid1.RowGroupDescriptions[0];
-propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending;
-propGroupDescription.GroupComparer = new GrandTotalComparer() { AggregateIndex = 0 };
-this.radPivotGrid1.ReloadData();
 
-````
-````VB.NET
-Dim propGroupDescription As PropertyGroupDescription = DirectCast(Me.radPivotGrid1.RowGroupDescriptions(0), PropertyGroupDescription)
-propGroupDescription.SortOrder = Telerik.Pivot.Core.SortOrder.Descending
-propGroupDescription.GroupComparer = New GrandTotalComparer() With { _
- .AggregateIndex = 0 _
-}
-Me.radPivotGrid1.ReloadData()
-
-````
-
-{{endregion}}
 
 >note The **AggregateIndex** property is set based on the count of your aggregate descriptions. If you have two aggregates the first one will have **AggregateIndex** = 0 and the second - **AggregateIndex** = 1.
 >

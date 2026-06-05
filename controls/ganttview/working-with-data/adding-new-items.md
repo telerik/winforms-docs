@@ -15,27 +15,10 @@ __RadGanttView__ uses its data source to create a hierarchical data structure. T
 
 Here is an example of how to provide ids using the __ItemChildIdNeeded__ event. The event is fired every time a new item is created and is about to be added to the data source.
         
-{{source=..\SamplesCS\GanttView\WorkingWithData\AddingNewItems.cs region=AddingNewItems}} 
-{{source=..\SamplesVB\GanttView\WorkingWithData\AddingNewItems.vb region=AddingNewItems}} 
+<snippet id='ganttview-addingnewitems-addingnewitems-cs' />
+<snippet id='ganttview-addingnewitems-addingnewitems-vb' />
 
-````C#
-int integerIdCounter = 100;
-private void radGanttView1_ItemChildIdNeeded(object sender, GanttViewItemChildIdNeededEventArgs e)
-{
-    e.ChildId = this.integerIdCounter++;
-}
 
-````
-````VB.NET
-Dim integerIdCounter As Integer = 100
-Private Sub radGanttView1_ItemChildIdNeeded(sender As Object, e As GanttViewItemChildIdNeededEventArgs)
-    Me.integerIdCounter += 1
-    e.ChildId = Me.integerIdCounter
-End Sub
-
-````
-
-{{endregion}} 
 
 # See Also  
 

@@ -21,21 +21,10 @@ The following spinet shows how you can access and use the __RotateFlip__ method.
 
 #### Rotate programmatically
 
-{{source=..\SamplesCS\ImageEditor\ImageEditorFeatures.cs region=Rotate}} 
-{{source=..\SamplesVB\ImageEditor\ImageEditorFeatures.vb region=Rotate}}
-````C#
-radImageEditor1.ImageEditorElement.RotateFlip(RotateFlipType.Rotate270FlipNone);
-radImageEditor1.ImageEditorElement.SaveState();
-
-````
-````VB.NET
-radImageEditor1.ImageEditorElement.RotateFlip(RotateFlipType.Rotate270FlipNone)
-radImageEditor1.ImageEditorElement.SaveState()
-
-```` 
+<snippet id='image-editor-imageeditorfeatures-rotate-cs' />
+<snippet id='image-editor-imageeditorfeatures-rotate-vb' />
 
 
-{{endregion}}
 
 # See Also
 

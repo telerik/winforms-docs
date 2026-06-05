@@ -27,24 +27,10 @@ You can modify the appearance of the selection in the control through the **Sele
 
 #### Customize the appearance of the selection
 
-{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=Fill}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=Fill}} 
-
-````C#
-            
-this.radRichTextEditor1.SelectionFill = Color.FromArgb(125, 255, 0, 0);
-this.radRichTextEditor1.SelectionStroke = Color.DarkRed;
+<snippet id='richtexteditor-selection-fill-cs' />
+<snippet id='richtexteditor-selection-fill-vb' />
 
 
-````
-````VB.NET
-
-Me.radRichTextEditor1.SelectionFill = Color.FromArgb(125, 255, 0, 0)
-Me.radRichTextEditor1.SelectionStroke = Color.DarkRed
-
-````
-
-{{endregion}} 
 
 ![WinForms RadRichTextEditor Text Selection](images/richtexteditor-features-selection002.png)
 
@@ -103,66 +89,20 @@ Here is an example of how to select the current word.
 
 #### Select current word
 
-{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=position}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=position}} 
+<snippet id='richtexteditor-selection-position-cs' />
+<snippet id='richtexteditor-selection-position-vb' />
 
-````C#
-            
-DocumentPosition startPosition = this.radRichTextEditor1.Document.CaretPosition; //new DocumentPosition( this.radRichTextBox.Document );
-DocumentPosition endPosition = new DocumentPosition(startPosition);
-startPosition.MoveToCurrentWordStart();
-endPosition.MoveToCurrentWordEnd();
-this.radRichTextEditor1.Document.Selection.AddSelectionStart(startPosition);
-this.radRichTextEditor1.Document.Selection.AddSelectionEnd(endPosition);
 
-````
-````VB.NET
-Dim _startPosition As DocumentPosition = Me.radRichTextEditor1.Document.CaretPosition 'new DocumentPosition( this.radRichTextBox.Document );
-Dim endPosition As New DocumentPosition(_startPosition)
-_startPosition.MoveToCurrentWordStart()
-endPosition.MoveToCurrentWordEnd()
-Me.radRichTextEditor1.Document.Selection.AddSelectionStart(_startPosition)
-Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(endPosition)
-
-````
-
-{{endregion}} 
 
 The next snippet demonstrates how you can check the content that is selected and select and delete the current paragraph if the text in the selection contains the word "Test".
 
 #### Select current paragraph and delete it
 
 
-{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=DeleteSelection}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=DeleteSelection}} 
+<snippet id='richtexteditor-selection-deleteselection-cs' />
+<snippet id='richtexteditor-selection-deleteselection-vb' />
 
-````C#
-           if (selectedText.Contains("Test"))
-           {
-               this.radRichTextEditor1.Document.Selection.Clear();
-               Paragraph currentParagraph = this.radRichTextEditor1.Document.CaretPosition.GetCurrentParagraph();
 
-               this.radRichTextEditor1.Document.Selection.AddDocumentElementToSelection(currentParagraph);
-               this.radRichTextEditor1.Delete(true);
-           }            
-
-````
-````VB.NET
-
-Dim selectedText As String = Me.radRichTextBox.Document.Selection.GetSelectedText() 
- 
-If (selectedText.Contains("Test")) Then 
- 
-    Me.radRichTextBox.Document.Selection.Clear() 
-    Dim currentParagraph As Paragraph = Me.radRichTextBox.Document.CaretPosition.GetCurrentParagraph() 
- 
-    Me.radRichTextBox.Document.Selection.AddDocumentElementToSelection(currentParagraph) 
-    Me.radRichTextBox.Delete(True) 
-End If 
-
-````
-
-{{endregion}} 
 
 ### What is Selection Range?
 
@@ -183,28 +123,10 @@ The selection in **RadRichTextEditor** consists of selection ranges. These range
 
 #### Check the type of the elements inside the selection
 
-{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=ElementType}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=ElementType}} 
+<snippet id='richtexteditor-selection-elementtype-cs' />
+<snippet id='richtexteditor-selection-elementtype-vb' />
 
-````C#
-    
-            SelectionRange selectionRange = this.radRichTextEditor1.Document.Selection.Ranges.First();
-            if (selectionRange.RangeType == SelectionRangeType.Table)
-            {
-                //SetTableProperties();
-            } 
 
-````
-````VB.NET
-
-        Dim selectionRange As Telerik.WinForms.Documents.Selection.SelectionRange = Me.radRichTextEditor1.Document.Selection.Ranges.First()
-        If selectionRange.RangeType = SelectionRangeType.Table Then
-            'SetTableProperties()
-        End If
-
-````
-
-{{endregion}} 
 
 ## Multi-Range Selection
 
@@ -214,43 +136,10 @@ Here is an example of selecting each "*RadRichTextEditor*" word in the text. Thi
 
 #### Select all occurrences of the "RadRichTextBox" word
 
-{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=multiselect}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=multiselect}} 
+<snippet id='richtexteditor-selection-multiselect-cs' />
+<snippet id='richtexteditor-selection-multiselect-vb' />
 
-````C#
-    
-DocumentPosition position = new DocumentPosition(this.radRichTextEditor1.Document);
-do
-{
-    //GetCurrentSpan().Text returns the word at the position
-    string word = position.GetCurrentSpanBox().Text;
-    if (word.Contains("RadRichTextBox"))
-    {
-        DocumentPosition wordEndPosition = new DocumentPosition(position);
-        wordEndPosition.MoveToCurrentWordEnd();
-        this.radRichTextEditor1.Document.Selection.AddSelectionStart(position);
-        this.radRichTextEditor1.Document.Selection.AddSelectionEnd(wordEndPosition);
-    }
-}
-while (position.MoveToNextWordStart());
 
-````
-````VB.NET
-Dim position As New DocumentPosition(Me.radRichTextEditor1.Document)
-Do
-    'GetCurrentSpan().Text returns the word at the position
-    Dim word As String = position.GetCurrentSpanBox().Text
-    If word.Contains("RadRichTextEditor") Then
-        Dim wordEndPosition As New DocumentPosition(position)
-        wordEndPosition.MoveToCurrentWordEnd()
-        Me.radRichTextEditor1.Document.Selection.AddSelectionStart(position)
-        Me.radRichTextEditor1.Document.Selection.AddSelectionEnd(wordEndPosition)
-    End If
-Loop While position.MoveToNextWordStart()
-
-````
-
-{{endregion}} 
 
 ![WinForms RadRichTextEditor Multi-Range Selection](images/richtexteditor-features-selection001.png)
 
@@ -264,115 +153,17 @@ The following example shows how to implement a custom selection behavior which s
 
 #### Creating a Custom MouseSelectionHandler
 
-{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=CustomMouseSelectionHandler}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=CustomMouseSelectionHandler}} 
+<snippet id='richtexteditor-selection-custommouseselectionhandler-cs' />
+<snippet id='richtexteditor-selection-custommouseselectionhandler-vb' />
 
-````C#
-    
-public class CustomMouseSelectionHandler : MouseSelectionHandler
-{
-    RadDocument currentDocument;
-    public CustomMouseSelectionHandler(RadDocument document, DocumentPresenterBase presenter)
-        : base(document, presenter)
-    {
-        currentDocument = document;
-    }
 
-    protected override void RegisterDocumentSingleMouseDown(bool ctrlPressed, bool shiftPressed, Telerik.WinControls.RichTextEditor.UI.Point position, UIElement originalSource)
-    {
-        base.RegisterDocumentSingleMouseDown(ctrlPressed, shiftPressed, position, originalSource);
-    }
-
-    public override void RegisterDocumentMouseUp(SourceType source = SourceType.Mouse, Telerik.WinControls.RichTextEditor.UI.Point? position = null)
-    {
-        base.RegisterDocumentMouseUp(source, position);
-        SelectEmptyAnnotation();
-    }
-
-    public void SelectEmptyAnnotation()
-    {
-        var position = currentDocument.CaretPosition;
-        var span = position.GetCurrentInline() as Span;
-
-        if (span != null && span.Text.Contains("   "))
-        {
-            var start = new DocumentPosition(currentDocument);
-            var end = new DocumentPosition(currentDocument);
-
-            start.MoveToDocumentElementStart(span);
-            end.MoveToDocumentElementEnd(span);
-            end.MoveToNext();
-
-            this.currentDocument.Selection.SetSelectionStart(start);
-            this.currentDocument.Selection.AddSelectionEnd(end);
-        }
-    }
-}
-
-````
-````VB.NET
-Public Class CustomMouseSelectionHandler
-    Inherits MouseSelectionHandler
-
-    Private currentDocument As RadDocument
-    Public Sub New(ByVal document As RadDocument, ByVal presenter As DocumentPresenterBase)
-        MyBase.New(document, presenter)
-        currentDocument = document
-    End Sub
-    Protected Overrides Sub RegisterDocumentSingleMouseDown(ByVal ctrlPressed As Boolean, ByVal shiftPressed As Boolean, ByVal position As Telerik.WinControls.RichTextEditor.UI.Point, ByVal originalSource As UIElement)
-        MyBase.RegisterDocumentSingleMouseDown(ctrlPressed, shiftPressed, position, originalSource)
-    End Sub
-    Public Overrides Sub RegisterDocumentMouseUp(ByVal Optional source As SourceType = SourceType.Mouse, ByVal Optional position As Telerik.WinControls.RichTextEditor.UI.Point? = Nothing)
-        MyBase.RegisterDocumentMouseUp(source, position)
-        SelectEmptyAnnotation()
-    End Sub
-    Public Sub SelectEmptyAnnotation()
-        Dim position = currentDocument.CaretPosition
-        Dim span = TryCast(position.GetCurrentInline(), Span)
-
-        If span IsNot Nothing AndAlso span.Text.Contains("   ") Then
-            Dim start = New DocumentPosition(currentDocument)
-            Dim [end] = New DocumentPosition(currentDocument)
-            start.MoveToDocumentElementStart(span)
-            [end].MoveToDocumentElementEnd(span)
-            [end].MoveToNext()
-            Me.currentDocument.Selection.SetSelectionStart(start)
-            Me.currentDocument.Selection.AddSelectionEnd([end])
-        End If
-    End Sub
-End Class
-
-````
-
-{{endregion}} 
 
 #### Assign the custom MouseSelectionHandler to the ActiveEditorPresenter
 
-{{source=..\SamplesCS\RichTextEditor\Features\Selection.cs region=AssignCustomMouseSelectionHandler}} 
-{{source=..\SamplesVB\RichTextEditor\Features\Selection.vb region=AssignCustomMouseSelectionHandler}} 
+<snippet id='richtexteditor-selection-assigncustommouseselectionhandler-cs' />
+<snippet id='richtexteditor-selection-assigncustommouseselectionhandler-vb' />
 
-````C#
-private void RadRichTextEditor1_DocumentChanged(object sender, EventArgs e)
-{
-    DocumentPresenterBase presenter = this.radRichTextEditor1.RichTextBoxElement.ActiveEditorPresenter as DocumentPresenterBase;
-    if (presenter != null)
-    {
-        presenter.MouseSelectionHandler = new CustomMouseSelectionHandler(this.radRichTextEditor1.Document, presenter);
-    }
-} 
 
-````
-````VB.NET
-Private Sub RadRichTextEditor1_DocumentChanged(ByVal sender As Object, ByVal e As EventArgs)
-    Dim presenter As DocumentPresenterBase = TryCast(Me.radRichTextEditor1.RichTextBoxElement.ActiveEditorPresenter, DocumentPresenterBase
-    If presenter IsNot Nothing Then
-        presenter.MouseSelectionHandler = New CustomMouseSelectionHandler(Me.radRichTextEditor1.Document, presenter)
-    End If
-End Sub
-
-````
-
-{{endregion}} 
 
 #### Custom Selection Behavior
 ![WinForms RadRichTextEditor custom MouseSelectionHandler](images/richtexteditor-features-selection003.png)

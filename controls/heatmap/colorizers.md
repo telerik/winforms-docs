@@ -20,234 +20,17 @@ In the scenario of Horizontal/Vertical Definition, the colorizer is defined in t
 
 Let's start with the following Car class that will be used for the examples in this article:
 
-{{source=..\SamplesCS\HeatMap\HeatMapDefinitions.cs region=CarClass}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDefinitions.vb region=CarClass}} 
+<snippet id='heatmap-heatmapdefinitions-carclass-cs' />
+<snippet id='heatmap-heatmapdefinitions-carclass-vb' />
 
-````C#
-public class Car
-{
-    public string Name { get; set; }
-    public int MilesPerGallon { get; set; }
-    public int TopSpeed { get; set; }
-    public int Price { get; set; }
-    public int HorsePower { get; set; }
-} 
 
-````
-````VB.NET
-
-Public Class Car
-    Public Property Name As String
-    Public Property MilesPerGallon As Integer
-    Public Property TopSpeed As Integer
-    Public Property Price As Integer
-    Public Property HorsePower As Integer
-End Class
-
-````
-
-{{endregion}}
 
 Now, we will setup a HorizontalDefinition populated with cars like the following example:
 
-{{source=..\SamplesCS\HeatMap\HeatMapDefinitions.cs region=DefaultColorizer}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDefinitions.vb region=DefaultColorizer}} 
-
-````C#
-
-public void ApplyDefaultColorizer()
-{
-    HorizontalDefinition horizontalDefinition1 = new HorizontalDefinition();
-    horizontalDefinition1.DataSource = CreateData(); 
-    horizontalDefinition1.HeaderMember = "Name";
-    radHeatMap1.Definition = horizontalDefinition1;
-    radHeatMap1.DescriptionContent = "Cars";
-
-    MemberMapping memberMapping1 = new MemberMapping();
-    memberMapping1.Header = "Price";
-    memberMapping1.ValueMember = "Price";
-    MemberMapping memberMapping2 = new MemberMapping();
-    memberMapping2.Header = "HorsePower";
-    memberMapping2.ValueMember = "HorsePower";
-    MemberMapping memberMapping3 = new MemberMapping();
-    memberMapping3.Header = "TopSpeed";
-    memberMapping3.ValueMember = "TopSpeed";
-
-    horizontalDefinition1.MemberMappings.Add(memberMapping1);
-    horizontalDefinition1.MemberMappings.Add(memberMapping2);
-    horizontalDefinition1.MemberMappings.Add(memberMapping3);
-}
+<snippet id='heatmap-heatmapdefinitions-defaultcolorizer-cs' />
+<snippet id='heatmap-heatmapdefinitions-defaultcolorizer-vb' />
 
 
-public List<Car> CreateData()
-{
-    var result = new List<Car>()
-{
-    new Car() {Name = "Car 1", Price = 20590, HorsePower = 70,  MilesPerGallon = 37, TopSpeed = 60 },
-    new Car() {Name = "Car 2", Price = 21990, HorsePower = 70,  MilesPerGallon = 37, TopSpeed = 60 },
-    new Car() {Name = "Car 3", Price = 23200, HorsePower = 140, MilesPerGallon = 28, TopSpeed = 110 },
-    new Car() {Name = "Car 4", Price = 27500, HorsePower = 140, MilesPerGallon = 28, TopSpeed = 110 },
-    new Car() {Name = "Car 5", Price = 28200, HorsePower = 160, MilesPerGallon = 31, TopSpeed = 120 },
-    new Car() {Name = "Car 6", Price = 29500, HorsePower = 90,  MilesPerGallon = 35, TopSpeed = 80 },
-    new Car() {Name = "Car 7", Price = 31200, HorsePower = 160, MilesPerGallon = 31, TopSpeed = 120 },
-    new Car() {Name = "Car 8", Price = 32200, HorsePower = 90,  MilesPerGallon = 35, TopSpeed = 80 },
-    new Car() {Name = "Car 9", Price = 35200, HorsePower = 115, MilesPerGallon = 29, TopSpeed = 90 },
-    new Car() {Name = "Car 10", Price = 36700, HorsePower = 115, MilesPerGallon = 29, TopSpeed = 90 },
-    new Car() {Name = "Car 11", Price = 38200, HorsePower = 130, MilesPerGallon = 24, TopSpeed = 140 },
-    new Car() {Name = "Car 12", Price = 39700, HorsePower = 130, MilesPerGallon = 24, TopSpeed = 140 },
-    new Car() {Name = "Car 13", Price = 41500, HorsePower = 326, MilesPerGallon = 16, TopSpeed = 150 },
-    new Car() {Name = "Car 14", Price = 42200, HorsePower = 326, MilesPerGallon = 16, TopSpeed = 150 },
-    new Car() {Name = "Car 15", Price = 43500, HorsePower = 276, MilesPerGallon = 25, TopSpeed = 162 },
-    new Car() {Name = "Car 16", Price = 43500, HorsePower = 276, MilesPerGallon = 25, TopSpeed = 162 },
-};
-
-    return result;
-} 
-
-````
-````VB.NET
-
-Public Sub ApplyDefaultColorizer()
-    Dim horizontalDefinition1 As HorizontalDefinition = New HorizontalDefinition()
-    horizontalDefinition1.DataSource = CreateData()
-    horizontalDefinition1.HeaderMember = "Name"
-    radHeatMap1.Definition = horizontalDefinition1
-    radHeatMap1.DescriptionContent = "Cars"
-    Dim memberMapping1 As MemberMapping = New MemberMapping()
-    memberMapping1.Header = "Price"
-    memberMapping1.ValueMember = "Price"
-    Dim memberMapping2 As MemberMapping = New MemberMapping()
-    memberMapping2.Header = "HorsePower"
-    memberMapping2.ValueMember = "HorsePower"
-    Dim memberMapping3 As MemberMapping = New MemberMapping()
-    memberMapping3.Header = "TopSpeed"
-    memberMapping3.ValueMember = "TopSpeed"
-    horizontalDefinition1.MemberMappings.Add(memberMapping1)
-    horizontalDefinition1.MemberMappings.Add(memberMapping2)
-    horizontalDefinition1.MemberMappings.Add(memberMapping3)
-End Sub
-
-Public Function CreateData() As List(Of Car)
-    Dim result = New List(Of Car)() From {
-        New Car() With {
-            .Name = "Car 1",
-            .Price = 20590,
-            .HorsePower = 70,
-            .MilesPerGallon = 37,
-            .TopSpeed = 60
-        },
-        New Car() With {
-            .Name = "Car 2",
-            .Price = 21990,
-            .HorsePower = 70,
-            .MilesPerGallon = 37,
-            .TopSpeed = 60
-        },
-        New Car() With {
-            .Name = "Car 3",
-            .Price = 23200,
-            .HorsePower = 140,
-            .MilesPerGallon = 28,
-            .TopSpeed = 110
-        },
-        New Car() With {
-            .Name = "Car 4",
-            .Price = 27500,
-            .HorsePower = 140,
-            .MilesPerGallon = 28,
-            .TopSpeed = 110
-        },
-        New Car() With {
-            .Name = "Car 5",
-            .Price = 28200,
-            .HorsePower = 160,
-            .MilesPerGallon = 31,
-            .TopSpeed = 120
-        },
-        New Car() With {
-            .Name = "Car 6",
-            .Price = 29500,
-            .HorsePower = 90,
-            .MilesPerGallon = 35,
-            .TopSpeed = 80
-        },
-        New Car() With {
-            .Name = "Car 7",
-            .Price = 31200,
-            .HorsePower = 160,
-            .MilesPerGallon = 31,
-            .TopSpeed = 120
-        },
-        New Car() With {
-            .Name = "Car 8",
-            .Price = 32200,
-            .HorsePower = 90,
-            .MilesPerGallon = 35,
-            .TopSpeed = 80
-        },
-        New Car() With {
-            .Name = "Car 9",
-            .Price = 35200,
-            .HorsePower = 115,
-            .MilesPerGallon = 29,
-            .TopSpeed = 90
-        },
-        New Car() With {
-            .Name = "Car 10",
-            .Price = 36700,
-            .HorsePower = 115,
-            .MilesPerGallon = 29,
-            .TopSpeed = 90
-        },
-        New Car() With {
-            .Name = "Car 11",
-            .Price = 38200,
-            .HorsePower = 130,
-            .MilesPerGallon = 24,
-            .TopSpeed = 140
-        },
-        New Car() With {
-            .Name = "Car 12",
-            .Price = 39700,
-            .HorsePower = 130,
-            .MilesPerGallon = 24,
-            .TopSpeed = 140
-        },
-        New Car() With {
-            .Name = "Car 13",
-            .Price = 41500,
-            .HorsePower = 326,
-            .MilesPerGallon = 16,
-            .TopSpeed = 150
-        },
-        New Car() With {
-            .Name = "Car 14",
-            .Price = 42200,
-            .HorsePower = 326,
-            .MilesPerGallon = 16,
-            .TopSpeed = 150
-        },
-        New Car() With {
-            .Name = "Car 15",
-            .Price = 43500,
-            .HorsePower = 276,
-            .MilesPerGallon = 25,
-            .TopSpeed = 162
-        },
-        New Car() With {
-            .Name = "Car 16",
-            .Price = 43500,
-            .HorsePower = 276,
-            .MilesPerGallon = 25,
-            .TopSpeed = 162
-        }
-    }
-    Return result
-End Function
-
-````
-
-{{endregion}}
 
 >caption Default HeatMapGradientColorizer
 
@@ -263,72 +46,10 @@ A colorizer, which contains a set of **GradientStops**. It chooses a color to be
 
 Now, this is how a HeatMapGradientColorizer is defined for one of the MemberMappings for the definition:
 
-{{source=..\SamplesCS\HeatMap\HeatMapDefinitions.cs region=ChangeColorizer}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDefinitions.vb region=ChangeColorizer}} 
+<snippet id='heatmap-heatmapdefinitions-changecolorizer-cs' />
+<snippet id='heatmap-heatmapdefinitions-changecolorizer-vb' />
 
-````C#
 
-HorizontalDefinition horizontalDefinition1 = new HorizontalDefinition();
-horizontalDefinition1.DataSource = CreateData();
-horizontalDefinition1.HeaderMember = "Name"; 
-
-radHeatMap1.Definition = horizontalDefinition1;
-radHeatMap1.DescriptionContent = "Cars";
-
-HeatMapGradientColorizer gradientColorizer1 = new HeatMapGradientColorizer();
-gradientColorizer1.GradientStops.Add(new Telerik.WinControls.Drawing.GradientStop() { Color = Color.FromArgb(255,217,231,241),Position = 0 });
-gradientColorizer1.GradientStops.Add(new Telerik.WinControls.Drawing.GradientStop() { Color = Color.FromArgb(255, 1, 81, 140),Position =1 }); 
-
-MemberMapping memberMapping1 = new MemberMapping();
-memberMapping1.Header = "Price";
-memberMapping1.ValueMember = "Price";
-memberMapping1.Colorizer = gradientColorizer1;
-
-MemberMapping memberMapping2 = new MemberMapping();
-memberMapping2.Header = "HorsePower";
-memberMapping2.ValueMember = "HorsePower";
-MemberMapping memberMapping3 = new MemberMapping();
-memberMapping3.Header = "TopSpeed";
-memberMapping3.ValueMember = "TopSpeed";
-
-horizontalDefinition1.MemberMappings.Add(memberMapping1);
-horizontalDefinition1.MemberMappings.Add(memberMapping2);
-horizontalDefinition1.MemberMappings.Add(memberMapping3); 
-
-````
-````VB.NET
-
-        Dim horizontalDefinition1 As HorizontalDefinition = New HorizontalDefinition()
-        horizontalDefinition1.DataSource = CreateData()
-        horizontalDefinition1.HeaderMember = "Name"
-        radHeatMap1.Definition = horizontalDefinition1
-        radHeatMap1.DescriptionContent = "Cars"
-        Dim gradientColorizer1 As HeatMapGradientColorizer = New HeatMapGradientColorizer()
-        gradientColorizer1.GradientStops.Add(New Telerik.WinControls.Drawing.GradientStop() With {
-        .Color = Color.FromArgb(255, 217, 231, 241),
-        .Position = 0
-    })
-        gradientColorizer1.GradientStops.Add(New Telerik.WinControls.Drawing.GradientStop() With {
-        .Color = Color.FromArgb(255, 1, 81, 140),
-        .Position = 1
-    })
-        Dim memberMapping1 As MemberMapping = New MemberMapping()
-        memberMapping1.Header = "Price"
-        memberMapping1.ValueMember = "Price"
-        memberMapping1.Colorizer = gradientColorizer1
-        Dim memberMapping2 As MemberMapping = New MemberMapping()
-        memberMapping2.Header = "HorsePower"
-        memberMapping2.ValueMember = "HorsePower"
-        Dim memberMapping3 As MemberMapping = New MemberMapping()
-        memberMapping3.Header = "TopSpeed"
-        memberMapping3.ValueMember = "TopSpeed"
-        horizontalDefinition1.MemberMappings.Add(memberMapping1)
-        horizontalDefinition1.MemberMappings.Add(memberMapping2)
-        horizontalDefinition1.MemberMappings.Add(memberMapping3)
-
-````
-
-{{endregion}}
 
 Here is the observed result:
 
@@ -340,103 +61,10 @@ A colorizer, which uses a set of colors, where each of them corresponds to a ran
 
 Let’s define an absolute **HeatMapRangeColorizer** and apply it to Miles per Gallon column.
 
-{{source=..\SamplesCS\HeatMap\HeatMapDefinitions.cs region=RangeColorizer}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDefinitions.vb region=RangeColorizer}} 
+<snippet id='heatmap-heatmapdefinitions-rangecolorizer-cs' />
+<snippet id='heatmap-heatmapdefinitions-rangecolorizer-vb' />
 
-````C#
-HorizontalDefinition horizontalDefinition1 = new HorizontalDefinition();
-horizontalDefinition1.DataSource = CreateData();
-horizontalDefinition1.HeaderMember = "Name";
 
-radHeatMap1.Definition = horizontalDefinition1;
-radHeatMap1.DescriptionContent = "Cars";
-
-HeatMapRangeColorizer rangeColorizer1 = new HeatMapRangeColorizer() { IsAbsolute = true };
-rangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = Color.FromArgb(255, 217, 231, 241), From = 19, To = 22 });
-rangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = Color.FromArgb(255, 164, 194, 216), From = 23, To = 26 });
-rangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = Color.FromArgb(255, 110, 156, 191), From = 27, To = 30 });
-rangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = Color.FromArgb(255, 55, 118, 165), From = 31, To = 34 });
-rangeColorizer1.Colors.Add(new HeatMapRangeColor() { Color = Color.FromArgb(255, 1, 81, 140) , From = 35, To = 40 });
-
-MemberMapping memberMapping1 = new MemberMapping();
-memberMapping1.Header = "Price";
-memberMapping1.ValueMember = "Price";
-
-MemberMapping memberMapping2 = new MemberMapping();
-memberMapping2.Header = "HorsePower";
-memberMapping2.ValueMember = "HorsePower";
-
-MemberMapping memberMapping3 = new MemberMapping();
-memberMapping3.Header = "TopSpeed";
-memberMapping3.ValueMember = "TopSpeed";
-
-MemberMapping memberMapping4 = new MemberMapping();
-memberMapping4.Header = "MPG";
-memberMapping4.ValueMember = "MilesPerGallon";
-memberMapping4.Colorizer = rangeColorizer1;
-
-horizontalDefinition1.MemberMappings.Add(memberMapping1);
-horizontalDefinition1.MemberMappings.Add(memberMapping2);
-horizontalDefinition1.MemberMappings.Add(memberMapping3);
-horizontalDefinition1.MemberMappings.Add(memberMapping4);
-
-````
-````VB.NET
-
-        Dim horizontalDefinition1 As HorizontalDefinition = New HorizontalDefinition()
-        horizontalDefinition1.DataSource = CreateData()
-        horizontalDefinition1.HeaderMember = "Name"
-        radHeatMap1.Definition = horizontalDefinition1
-        radHeatMap1.DescriptionContent = "Cars"
-        Dim rangeColorizer1 As HeatMapRangeColorizer = New HeatMapRangeColorizer() With {
-        .IsAbsolute = True
-    }
-        rangeColorizer1.Colors.Add(New HeatMapRangeColor() With {
-        .Color = Color.FromArgb(255, 217, 231, 241),
-        .From = 19,
-        .[To] = 22
-    })
-        rangeColorizer1.Colors.Add(New HeatMapRangeColor() With {
-        .Color = Color.FromArgb(255, 164, 194, 216),
-        .From = 23,
-        .[To] = 26
-    })
-        rangeColorizer1.Colors.Add(New HeatMapRangeColor() With {
-        .Color = Color.FromArgb(255, 110, 156, 191),
-        .From = 27,
-        .[To] = 30
-    })
-        rangeColorizer1.Colors.Add(New HeatMapRangeColor() With {
-        .Color = Color.FromArgb(255, 55, 118, 165),
-        .From = 31,
-        .[To] = 34
-    })
-        rangeColorizer1.Colors.Add(New HeatMapRangeColor() With {
-        .Color = Color.FromArgb(255, 1, 81, 140),
-        .From = 35,
-        .[To] = 40
-    })
-        Dim memberMapping1 As MemberMapping = New MemberMapping()
-        memberMapping1.Header = "Price"
-        memberMapping1.ValueMember = "Price"
-        Dim memberMapping2 As MemberMapping = New MemberMapping()
-        memberMapping2.Header = "HorsePower"
-        memberMapping2.ValueMember = "HorsePower"
-        Dim memberMapping3 As MemberMapping = New MemberMapping()
-        memberMapping3.Header = "TopSpeed"
-        memberMapping3.ValueMember = "TopSpeed"
-        Dim memberMapping4 As MemberMapping = New MemberMapping()
-        memberMapping4.Header = "MPG"
-        memberMapping4.ValueMember = "MilesPerGallon"
-        memberMapping4.Colorizer = rangeColorizer1
-        horizontalDefinition1.MemberMappings.Add(memberMapping1)
-        horizontalDefinition1.MemberMappings.Add(memberMapping2)
-        horizontalDefinition1.MemberMappings.Add(memberMapping3)
-        horizontalDefinition1.MemberMappings.Add(memberMapping4)
-
-````
-
-{{endregion}}
 
 Here is the observed result:
 
@@ -449,69 +77,10 @@ It reduces the level of saturation of a given **StartColor** depending on the He
 This is how HeatMapDesaturationColorizer is defined and applied:
 
 
-{{source=..\SamplesCS\HeatMap\HeatMapDefinitions.cs region=DesaturationColorizer}} 
-{{source=..\SamplesVB\HeatMap\HeatMapDefinitions.vb region=DesaturationColorizer}} 
+<snippet id='heatmap-heatmapdefinitions-desaturationcolorizer-cs' />
+<snippet id='heatmap-heatmapdefinitions-desaturationcolorizer-vb' />
 
-````C#
-HorizontalDefinition horizontalDefinition1 = new HorizontalDefinition();
-horizontalDefinition1.DataSource = CreateData();
-horizontalDefinition1.HeaderMember = "Name";
 
-radHeatMap1.Definition = horizontalDefinition1;
-radHeatMap1.DescriptionContent = "Cars";
-
-HeatMapDesaturationColorizer desaturationColorizer1 = new HeatMapDesaturationColorizer()
-{
-    StartColor = Color.FromArgb(255,1,81,140),
-    To = 0.1,
-};
-
-MemberMapping memberMapping1 = new MemberMapping();
-memberMapping1.Header = "Price";
-memberMapping1.ValueMember = "Price"; 
-memberMapping1.Colorizer = desaturationColorizer1;
-
-MemberMapping memberMapping2 = new MemberMapping();
-memberMapping2.Header = "HorsePower";
-memberMapping2.ValueMember = "HorsePower";
-MemberMapping memberMapping3 = new MemberMapping();
-memberMapping3.Header = "TopSpeed";
-memberMapping3.ValueMember = "TopSpeed";
-
-horizontalDefinition1.MemberMappings.Add(memberMapping1);
-horizontalDefinition1.MemberMappings.Add(memberMapping2);
-horizontalDefinition1.MemberMappings.Add(memberMapping3);
-
-````
-````VB.NET
-
-Dim horizontalDefinition1 As HorizontalDefinition = New HorizontalDefinition()
-horizontalDefinition1.DataSource = CreateData()
-horizontalDefinition1.HeaderMember = "Name"
-radHeatMap1.Definition = horizontalDefinition1
-radHeatMap1.DescriptionContent = "Cars"
-Dim desaturationColorizer1 As HeatMapDesaturationColorizer = New HeatMapDesaturationColorizer() With 
-{
-.StartColor = Color.FromArgb(255, 1, 81, 140),
-.[To] = 0.1
-}
-Dim memberMapping1 As MemberMapping = New MemberMapping()
-memberMapping1.Header = "Price"
-memberMapping1.ValueMember = "Price"
-memberMapping1.Colorizer = desaturationColorizer1
-Dim memberMapping2 As MemberMapping = New MemberMapping()
-memberMapping2.Header = "HorsePower"
-memberMapping2.ValueMember = "HorsePower"
-Dim memberMapping3 As MemberMapping = New MemberMapping()
-memberMapping3.Header = "TopSpeed"
-memberMapping3.ValueMember = "TopSpeed"
-horizontalDefinition1.MemberMappings.Add(memberMapping1)
-horizontalDefinition1.MemberMappings.Add(memberMapping2)
-horizontalDefinition1.MemberMappings.Add(memberMapping3)
-
-````
-
-{{endregion}}
 
 And the result is illustrated below:
 

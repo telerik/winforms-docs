@@ -56,28 +56,10 @@ Here is an example of a __RadDictionary__ loaded from a TDF file.
 >note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
 
-{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=load}} 
-{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}} 
+<snippet id='richtexteditor-spellcheck-load-cs' />
+<snippet id='richtexteditor-spellcheck-load-vb' />
 
-````C#
-private void LoadDictionary(Stream tdfFileStream)
-{
-    RadDictionary dictionary = new RadDictionary();
-    dictionary.Load(tdfFileStream);
-    ((DocumentSpellChecker)this.radRichTextEditor1.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
-}
 
-````
-````VB.NET
-Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
-    Dim dictionary As New RadDictionary()
-    dictionary.Load(tdfFileStream)
-    CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
-End Sub
-
-````
-
-{{endregion}} 
 
 ## RadWordsDictionary
 
@@ -85,58 +67,19 @@ __RadWordsDictionary__ implements the __IWordDictionary__ interface and is capab
 
 #### Load stream in RadWordsDictionary
 
-{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=LoadWordDictionaryStream}} 
-{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=LoadWordDictionaryStream}}
+<snippet id='richtexteditor-spellcheck-loadworddictionarystream-cs' />
+<snippet id='richtexteditor-spellcheck-loadworddictionarystream-vb' />
 
-````C#
-private void LoadWordDictionaryStream(Stream dictStrem)
-{
-    Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary dictionary = new Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary();
-    dictionary.Load(dictStrem);
-}
 
-````
-````VB.NET
-Private Sub LoadWordDictionaryStream(dictStrem As Stream)
-    Dim dictionary As New Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary()
-    dictionary.Load(dictStrem)
-End Sub
-
-```` 
-
-{{endregion}}
 
 One of the constructor overloads of the **RadWordsDictionary** class enables you to pass a parameter of type __IEnumerable&lt;string&gt;__, which can help you create your own dictionary with a custom set of words.
 
 #### Create RadWordsDictionary from strings
 
-{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=LoadWordDictionaryWords}} 
-{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=LoadWordDictionaryWords}}
-````C#
-private void LoadWordDictionaryStream()
-{
-    List<string> words = new List<string>();
-    words.Add("Test");
-    words.Add("Teacher");
-    words.Add("Sister");
-    Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary dictionary = new Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary();
-    dictionary.Load(words);
-}
+<snippet id='richtexteditor-spellcheck-loadworddictionarywords-cs' />
+<snippet id='richtexteditor-spellcheck-loadworddictionarywords-vb' />
 
-````
-````VB.NET
-Private Sub LoadWordDictionaryStream()
-    Dim words As New List(Of String)()
-    words.Add("Test")
-    words.Add("Teacher")
-    words.Add("Sister")
-    Dim dictionary As New Telerik.WinControls.SpellChecker.Proofing.RadWordsDictionary()
-    dictionary.Load(words)
-End Sub
 
-```` 
-
-{{endregion}}
 
 ## Custom Dictionaries
 
@@ -152,28 +95,10 @@ Here is an example of a such dictionary which adds the words in the "CustomDicti
 >note When adding a dictionary that implements the __ICustomWordDictionary__ interface object use __AddCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ method for the __DocumentSpellChecker__ class. You can also associate a custom dictionary to a specific culture. The method to remove it is __RemoveCustomDictionary(ICustomWordDictionary customDictionary, CultureInfo culture)__ .
 >
 
-{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=custom}} 
-{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=custom}} 
+<snippet id='richtexteditor-spellcheck-custom-cs' />
+<snippet id='richtexteditor-spellcheck-custom-vb' />
 
-````C#
-private void CreateCustomDictionary()
-{
-    RadIsolatedStorageCustomDictionary dictionary = new RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt");
-    DocumentSpellChecker spellchecker = new DocumentSpellChecker(dictionary);
-    this.radRichTextEditor1.SpellChecker = spellchecker;
-}
 
-````
-````VB.NET
-Private Sub CreateCustomDictionary()
-    Dim dictionary As New RadIsolatedStorageCustomDictionary(IsolatedStorageScope.Site, "CustomDictionary.txt")
-    Dim spellchecker As New DocumentSpellChecker(dictionary)
-    Me.radRichTextEditor1.SpellChecker = spellchecker
-End Sub
-
-````
-
-{{endregion}} 
 
 If you want to have a temporary custom dictionary, that will only be available for a single application session, you can use the __RadNonPersistentCustomDictionary__ object.
 
@@ -188,19 +113,9 @@ Using the __AddWord__ method of the dictionary itself will add the word only to 
         
 Here is an example.
 
-{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=addword}} 
-{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=addword}} 
+<snippet id='richtexteditor-spellcheck-addword-cs' />
+<snippet id='richtexteditor-spellcheck-addword-vb' />
 
-````C#
-this.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture);
-
-````
-````VB.NET
-Me.radRichTextEditor1.SpellChecker.AddWord("RadRichTextEditor", CultureInfo.InvariantCulture)
-
-````
-
-{{endregion}} 
 
 
 ## Internationalization
@@ -212,28 +127,10 @@ Here is an example.
 >note The given example doesn't contain the logic used to read the __TDF__ file as a __Stream__ .
 >
 
-{{source=..\SamplesCS\RichTextEditor\Features\SpellCheck.cs region=load}} 
-{{source=..\SamplesVB\RichTextEditor\Features\SpellCheck.vb region=load}} 
+<snippet id='richtexteditor-spellcheck-load-cs' />
+<snippet id='richtexteditor-spellcheck-load-vb' />
 
-````C#
-private void LoadDictionary(Stream tdfFileStream)
-{
-    RadDictionary dictionary = new RadDictionary();
-    dictionary.Load(tdfFileStream);
-    ((DocumentSpellChecker)this.radRichTextEditor1.SpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture);
-}
 
-````
-````VB.NET
-Private Sub LoadDictionary(ByVal tdfFileStream As Stream)
-    Dim dictionary As New RadDictionary()
-    dictionary.Load(tdfFileStream)
-    CType(Me.radRichTextEditor1.SpellChecker, DocumentSpellChecker).AddDictionary(dictionary, CultureInfo.InvariantCulture)
-End Sub
-
-````
-
-{{endregion}}
 
 ## See Also
  	

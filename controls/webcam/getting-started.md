@@ -69,29 +69,10 @@ According to a comment in [this discussion](https://social.msdn.microsoft.com/Fo
 
 #### Adding a RadWebCam at runtime 
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=CreatingWebCam}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=CreatingWebCam}} 
+<snippet id='webcam-webcamgettingstarted-creatingwebcam-cs' />
+<snippet id='webcam-webcamgettingstarted-creatingwebcam-vb' />
 
-````C#
 
-            RadWebCam radWebCam1 = new RadWebCam();
-            string path = @"..\..\Test images and videos\";
-            radWebCam1.AutoStart = true;
-            radWebCam1.RecordingFilePath = path + @"\Video1.mp4";
-            this.Controls.Add(radWebCam1);
-
-````
-````VB.NET
-
-        Dim radWebCam1 As RadWebCam = New RadWebCam()
-        Dim path As String = "..\..\Test images and videos\"
-        radWebCam1.AutoStart = True
-        radWebCam1.RecordingFilePath = path & "\Video1.mp4"
-        Me.Controls.Add(radWebCam1)
-
-````
-
-{{endregion}} 
 
 From this point on, you can start using the control without any additional set up.
 
@@ -99,41 +80,18 @@ From this point on, you can start using the control without any additional set u
 
 By default, the camera control will start automatically if a camera device is connected. You can change this by setting the **AutoStart** property of **RadWebCam** to *false*.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=WebCameraAutoStart}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=WebCameraAutoStart}} 
+<snippet id='webcam-webcamgettingstarted-webcameraautostart-cs' />
+<snippet id='webcam-webcamgettingstarted-webcameraautostart-vb' />
 
-````C#
 
-        radWebCam1.AutoStart = false;
-
-````
-````VB.NET
-
-        radWebCam1.AutoStart = False
-
-````
-
-{{endregion}} 
 
 ## Connect to the Webcam Manually
 
 To connect to the web cam manually you can call the **Start** method once the control is initialized.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=Start}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=Start}} 
+<snippet id='webcam-webcamgettingstarted-start-cs' />
+<snippet id='webcam-webcamgettingstarted-start-vb' />
 
-````C#
-
-        radWebCam1.Start();
-
-````
-````VB.NET
-
-        radWebCam1.Start()
-
-````
-
-{{endregion}} 
 
 
 >note Read more about the capture devices in the [Media Information]({%slug webcam-media-information%}) article.
@@ -142,21 +100,10 @@ To connect to the web cam manually you can call the **Start** method once the co
 
 To stop the stream between the camera device and the **RadWebCam** control, call the **Stop** method.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=Stop}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=Stop}} 
+<snippet id='webcam-webcamgettingstarted-stop-cs' />
+<snippet id='webcam-webcamgettingstarted-stop-vb' />
 
-````C#
 
-        radWebCam1.Stop();
-
-````
-````VB.NET
-
-        radWebCam1.Stop()
-
-````
-
-{{endregion}} 
 
 ## Recording Video
 
@@ -166,47 +113,19 @@ To start recording, press the "Start recording" button or call the **StartRecord
 
 >note Read more about this in the [Recording Video]({%slug webcam-recording-video%}) article.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=RecordingPath}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=RecordingPath}} 
+<snippet id='webcam-webcamgettingstarted-recordingpath-cs' />
+<snippet id='webcam-webcamgettingstarted-recordingpath-vb' />
 
-````C#
 
-        radWebCam1.RecordingFilePath = path + @"\Video1.mp4";
-
-````
-````VB.NET
-
-        radWebCam1.RecordingFilePath = path + "\Video1.mp4"
-
-````
-
-{{endregion}} 
 
 ## Taking Snapshot
 
 A snapshot of the currently displayed video feed can be taken using the **TakeSnapshot** method of the control, or by pressing the "Take snapshot button". This will fire the **SnapshotTaken** event where you get access to the current snapshot as an Image object.
 
-{{source=..\SamplesCS\WebCam\WebCamGettingStarted.cs region=Snapshot}} 
-{{source=..\SamplesVB\WebCam\WebCamGettingStarted.vb region=Snapshot}} 
+<snippet id='webcam-webcamgettingstarted-snapshot-cs' />
+<snippet id='webcam-webcamgettingstarted-snapshot-vb' />
 
-````C#
 
-        private void RadWebCam1_SnapshotTaken(object sender, SnapshotTakenEventArgs e)
-        {
-            Image snapshot = e.Snapshot;
-            // here you save the source to a file, in memory, or to show it in the UI 
-        }
-
-````
-````VB.NET
-
-    Private Sub RadWebCam1_SnapshotTaken(ByVal sender As Object, ByVal e As SnapshotTakenEventArgs)
-        Dim snapshot As System.Drawing.Image = e.Snapshot
-    End Sub
-
-````
-
-{{endregion}} 
 
 ## See Also
 * [Structure]({%slug webcam-structure%})

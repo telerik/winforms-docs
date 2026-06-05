@@ -51,26 +51,8 @@ This example looks for the same condition as the [cell formatting example]({%slu
 
 ![WinForms RadGridView Conditional Formatting Rows](images/gridview-rows-conditional-formatting-rows001.png)
 
-{{source=..\SamplesCS\GridView\Rows\ConditionalFormattingRows.cs region=conditionalFormatting}} 
-{{source=..\SamplesVB\GridView\Rows\ConditionalFormattingRows.vb region=conditionalFormatting}} 
-
-````C#
-ConditionalFormattingObject obj = new ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", true);
-obj.CellForeColor = Color.Red;
-obj.RowBackColor = Color.SkyBlue;
-this.radGridView1.Columns["UnitPrice"].ConditionalFormattingObjectList.Add(obj);
-
-````
-````VB.NET
-Dim obj = New ConditionalFormattingObject("MyCondition", ConditionTypes.Greater, "30", "", True)
-obj.CellForeColor = Color.Red
-obj.RowBackColor = Color.SkyBlue
-Me.RadGridView1.Columns("Unit Price").ConditionalFormattingObjectList.Add(obj)
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-conditionalformattingrows-conditionalformatting-cs' />
+<snippet id='gridview-conditionalformattingrows-conditionalformatting-vb' />
 
 >caution The declarative nature of Conditional Formatting limits the situations in which it can be used. While the provided functionality covers most scenarios, there are situations in which you will need to use [events]({%slug winforms/gridview/rows/formatting-rows%}).
 >

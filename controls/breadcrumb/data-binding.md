@@ -22,28 +22,10 @@ Since **RadBreadCrumb** internally uses a **RadTreeView**, you can use the [data
 
 ![WinForms RadBreadCrumb RadBreadCrumb Bound to the MusicCollection Database](images/breadcrumb-data-binding001.gif)
 
+<snippet id='breadcrumb-breadcrumb-relationbindings-cs' />
+<snippet id='breadcrumb-breadcrumb-relationbindings-vb' />
 
-````C#
 
-this.radBreadCrumb1.IsAutoCompleteEnabled = true;
-this.radBreadCrumb1.DataSource = this.artistsBindingSource;
-this.radBreadCrumb1.DisplayMember = "ArtistName";
-this.radBreadCrumb1.ValueMember = "ArtistID";
-this.radBreadCrumb1.RelationBindings.Add(new RelationBinding(this.albumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"));
-this.radBreadCrumb1.RelationBindings.Add(new RelationBinding(this.songsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"));
-        
-
-````
-````VB.NET
-
-    Me.radBreadCrumb1.IsAutoCompleteEnabled = True
-    Me.radBreadCrumb1.DataSource = Me.artistsBindingSource
-    Me.radBreadCrumb1.DisplayMember = "ArtistName"
-    Me.radBreadCrumb1.ValueMember = "ArtistID"
-    Me.radBreadCrumb1.RelationBindings.Add(New RelationBinding(Me.albumsBindingSource, "AlbumName", "ArtistID", "ArtistID", "AlbumID"))
-    Me.radBreadCrumb1.RelationBindings.Add(New RelationBinding(Me.songsBindingSource, "SongName", "AlbumID", "AlbumID", "SongID"))
-
-```` 
 
 ## See Also
 * [Getting Started]({%slug breadcrumb-getting-started%})  

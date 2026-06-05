@@ -20,66 +20,14 @@ To localize **RadMaskedEditBox** to display text and messages in a specific lang
 
 Below is a sample implementation of an English localization provider:
 
-{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=MyRadMaskedEditBoxLocalizationProvider}} 
-{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=MyRadMaskedEditBoxLocalizationProvider}}
+<snippet id='editors-maskeditbox1-myradmaskededitboxlocalizationprovider-cs' />
+<snippet id='editors-maskeditbox1-myradmaskededitboxlocalizationprovider-vb' />
 
-````C#
-public class MyRadMaskedEditBoxLocalizationProvider : RadMaskedEditBoxLocalizationProvider
-{
-    public override string GetLocalizedString(string id)
-    {
-        switch (id)
-        {
-            case RadMaskedEditBoxStringId.CopyMenuItem: return "Copy";
-            case RadMaskedEditBoxStringId.CutMenuItem: return "Cut";
-            case RadMaskedEditBoxStringId.DeleteMenuItem: return "Delete";
-            case RadMaskedEditBoxStringId.PasteMenuItem: return "Paste";
-            case RadMaskedEditBoxStringId.SelectAllMenuItem: return "SelectAll";
-        }
-        
-        return string.Empty;
-    }
-}
 
-````
-````VB.NET
-Public Class MyRadMaskedEditBoxLocalizationProvider
-    Inherits RadMaskedEditBoxLocalizationProvider
-    Public Overrides Function GetLocalizedString(ByVal id As String) As String
-        Select Case id
-            Case RadMaskedEditBoxStringId.CopyMenuItem
-                Return "Copy"
-            Case RadMaskedEditBoxStringId.CutMenuItem
-                Return "Cut"
-            Case RadMaskedEditBoxStringId.DeleteMenuItem
-                Return "Delete"
-            Case RadMaskedEditBoxStringId.PasteMenuItem
-                Return "Paste"
-            Case RadMaskedEditBoxStringId.SelectAllMenuItem
-                Return "SelectAll"
-        End Select
-
-        Return String.Empty
-    End Function
-
-```` 
-
-{{endregion}} 
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
 #### Assigning the Current Localization Provider
 
-{{source=..\SamplesCS\Editors\MaskEditBox1.cs region=localizeMaskEditBox}} 
-{{source=..\SamplesVB\Editors\MaskEditBox1.vb region=localizeMaskEditBox}}
-````C#
-RadMaskedEditBoxLocalizationProvider.CurrentProvider = new MyRadMaskedEditBoxLocalizationProvider();
-
-````
-````VB.NET
-RadMaskedEditBoxLocalizationProvider.CurrentProvider = New MyRadMaskedEditBoxLocalizationProvider()
-
-```` 
-
-{{endregion}} 
-
+<snippet id='editors-maskeditbox1-localizemaskeditbox-cs' />
+<snippet id='editors-maskeditbox1-localizemaskeditbox-vb' />

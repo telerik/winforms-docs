@@ -22,21 +22,8 @@ When the RadGridView is setup, you can configure it to display the merged cells 
 * Vertical
 * Horizontal
 
-{{source=..\SamplesCS\GridView\Cells\MergeCells.cs region=mergeCellsMode}} 
-{{source=..\SamplesVB\GridView\Cells\MergeCells.vb region=mergeCellsMode}} 
-
-````C#
-
-this.radGridView1.MergeCellsMode = Telerik.WinControls.UI.MergeCellsMode.None;
-
-````
-````VB.NET
-
-Me.RadGridView1.MergeCellsMode = Telerik.WinControls.UI.MergeCellsMode.None
-
-````
-
-{{endregion}} 
+<snippet id='gridview-mergecells-mergecellsmode-cs' />
+<snippet id='gridview-mergecells-mergecellsmode-vb' />
 
 >caption Figure 1: Merge Cells Direction
 
@@ -56,79 +43,15 @@ When the merge cells functionality is enabled for the RadGridView, the control e
 
 In the following example, we will merge the cells in one column depending on the value in the other column:
 
-{{source=..\SamplesCS\GridView\Cells\MergeCells.cs region=cellMergingEvent}} 
-{{source=..\SamplesVB\GridView\Cells\MergeCells.vb region=cellMergingEvent}} 
-
-````C#
-
-private void RadGridView1_CellMerging(object sender, Telerik.WinControls.UI.GridViewCellMergingEventArgs e)
-{
-    if (e.Cell1.ColumnInfo.FieldName == "FirstName") // first column
-    {
-        e.Handled = true;
-        // Get next cell and compare them by family name
-        var familyNameValue1 = e.Cell1.RowInfo.Cells["LastName"].Value; // second column
-        var familyNameValue2 = e.Cell2.RowInfo.Cells["LastName"].Value; // second column
-        e.Result = object.Equals(familyNameValue1, familyNameValue2);
-    }
-}
-
-````
-````VB.NET
-
-Private Sub RadGridView1_CellMerging(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.GridViewCellMergingEventArgs)
-    If e.Cell1.ColumnInfo.FieldName = "FirstName" Then
-        e.Handled = True
-        ' Get next cell and compare them by family name
-        Dim familyNameValue1 = e.Cell1.RowInfo.Cells("LastName").Value
-        Dim familyNameValue2 = e.Cell2.RowInfo.Cells("LastName").Value
-        e.Result = Object.Equals(familyNameValue1, familyNameValue2)
-    End If
-End Sub
-
-
-````
-
-{{endregion}} 
+<snippet id='gridview-mergecells-cellmergingevent-cs' />
+<snippet id='gridview-mergecells-cellmergingevent-vb' />
 
 ## Merge Cell Formatting
 
 __RadGridView__ offers customization options for merged cells, similar to its regular cells. Customizing the merge cells is possible by handling the __ViewCellFormatting__ event of the control. The following example demonstrates how to change the color of a merged cell spanning more than five underlying cells.
 
-{{source=..\SamplesCS\GridView\Cells\MergeCells.cs region=mergeCellFormatting}} 
-{{source=..\SamplesVB\GridView\Cells\MergeCells.vb region=mergeCellFormatting}} 
-
-````C#
-
-private void RadGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
-{
-    if (e.CellElement is GridMergeCellElement)
-    {
-        var mergeCell = e.CellElement as GridMergeCellElement;
-        if (mergeCell.Cells.Count > 5)
-        {
-            mergeCell.BackColor = Color.Red;
-        }
-    }
-}
-
-````
-````VB.NET
-
-Private Sub RadGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As CellFormattingEventArgs)
-    If TypeOf e.CellElement Is GridMergeCellElement Then
-        Dim mergeCell = TryCast(e.CellElement, GridMergeCellElement)
-
-        If mergeCell.Cells.Count > 5 Then
-            mergeCell.BackColor = Color.Red
-        End If
-    End If
-End Sub
-
-
-````
-
-{{endregion}} 
+<snippet id='gridview-mergecells-mergecellformatting-cs' />
+<snippet id='gridview-mergecells-mergecellformatting-vb' />
 
 ![WinForms RadGridView Merge Cells Formatting](images/gridview-merged-cells003.png)
 
@@ -139,47 +62,13 @@ __RadGridView__ provides flexibility in merging cells by enabling you to define 
 * __Column__: You can exclude a column from the merge cell algorithm by setting the __AllowCellMerging__ property to false.
 
 
-{{source=..\SamplesCS\GridView\Cells\MergeCells.cs region=allowCellMerging}} 
-{{source=..\SamplesVB\GridView\Cells\MergeCells.vb region=allowCellMerging}}
-
-````C#
-
-this.radGridView1.Columns[0].AllowCellMerging = false;
-
-````
-````VB.NET
-
-Me.RadGridView1.Columns(0).AllowCellMerging = False
-
-
-````
-
-{{endregion}}
+<snippet id='gridview-mergecells-allowcellmerging-cs' />
+<snippet id='gridview-mergecells-allowcellmerging-vb' />
 
 * __Template__: When working with hierarchical data and multiple templates in RadGridView, the cell merging behavior can be disabled or enabled independently for each template. 
 
-{{source=..\SamplesCS\GridView\Cells\MergeCells.cs region=mergeCellTemplate}} 
-{{source=..\SamplesVB\GridView\Cells\MergeCells.vb region=mergeCellTemplate}}
-
-````C#
-
-GridViewTemplate template = new GridViewTemplate();           
-template.MergeCellsMode = MergeCellsMode.None;
-// template settings
-radGridView1.MasterTemplate.Templates.Add(template);
-
-````
-````VB.NET
-
-Dim template As GridViewTemplate = New GridViewTemplate()
-template.MergeCellsMode = MergeCellsMode.None
-' template settings
-radGridView1.MasterTemplate.Templates.Add(template)
-
-````
-
-{{endregion}}
-
+<snippet id='gridview-mergecells-mergecelltemplate-cs' />
+<snippet id='gridview-mergecells-mergecelltemplate-vb' />
 
 ## Known Limitations
 

@@ -22,53 +22,19 @@ __MultidayView__ shows multiple date-time intervals with appointments arranged 
 
 1\. In order to set the current view of __RadScheduler__ to __MultidayView__, use the __ActiveViewType__ or __ActiveView__ properties:
 
-{{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=multiDay}} 
-{{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=multiDay}} 
+<snippet id='scheduler-multidayview-multiday-cs' />
+<snippet id='scheduler-multidayview-multiday-vb' />
 
-````C#
-this.radScheduler1.ActiveViewType = SchedulerViewType.MultiDay;
-//or
-SchedulerMultiDayView multiDayView = new SchedulerMultiDayView();
-DateTime startDate = DateTime.Today;
-multiDayView.Intervals.Add(startDate, 2);
-multiDayView.Intervals.Add(startDate.AddDays(4), 3);
-this.radScheduler1.ActiveView = multiDayView;
 
-````
-````VB.NET
-Me.RadScheduler1.ActiveViewType = SchedulerViewType.MultiDay
-'or
-Dim multiDayView As New SchedulerMultiDayView()
-Dim startDate As Date = Date.Today
-multiDayView.Intervals.Add(startDate, 2)
-multiDayView.Intervals.Add(startDate.AddDays(4), 3)
-Me.RadScheduler1.ActiveView = multiDayView
-
-````
-
-{{endregion}} 
 
 2\. To add, remove or modify a date-time __Interval__ in SchedulerMultiDayView instance use the __Intervals__ collection.
 
 3\. To get all appointments in a particular interval, use the __GetAppointmentsInInterval__ helper method:
 
-{{source=..\SamplesCS\Scheduler\Views\MultiDayView.cs region=interval}} 
-{{source=..\SamplesVB\Scheduler\Views\MultiDayView.vb region=interval}} 
+<snippet id='scheduler-multidayview-interval-cs' />
+<snippet id='scheduler-multidayview-interval-vb' />
 
-````C#
-DateTimeInterval interval = new DateTimeInterval();
-interval.Duration = new TimeSpan(20, 5, 25);
-multiDayView.GetAppointmentsInInterval(interval);
 
-````
-````VB.NET
-Dim interval As New DateTimeInterval()
-interval.Duration = New TimeSpan(20, 5, 25)
-multiDayView.GetAppointmentsInInterval(interval)
-
-````
-
-{{endregion}} 
 
 4\. To get all appointments in the view, use the __Appointments__ collection.
 

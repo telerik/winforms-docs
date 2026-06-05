@@ -59,24 +59,10 @@ The following tutorial demonstrates how to populate **RadApplicationMenu** and h
 
 #### Handling Click event
 
-{{source=..\SamplesCS\Menus\AppMenu\ApplicationMenu.cs region=ItemClick}} 
-{{source=..\SamplesVB\Menus\AppMenu\ApplicationMenu.vb region=ItemClick}} 
+<snippet id='menus-applicationmenu-itemclick-cs' />
+<snippet id='menus-applicationmenu-itemclick-vb' />
 
-````C#
-private void radMenuItem1_Click(object sender, EventArgs e)
-{
-    RadMenuItem item = sender as RadMenuItem;
-    RadMessageBox.Show(item.Text + " is clicked!");
-}
 
-````
-````VB.NET
-Private Sub RadMenuItem1_Click(sender As Object, e As EventArgs) Handles RadMenuItem1.Click
-    Dim item As RadMenuItem = TryCast(sender, RadMenuItem)
-    RadMessageBox.Show(item.Text + " is clicked!")
-End Sub
-
-````
 
 >caption Figure 2: Handling Click event
 

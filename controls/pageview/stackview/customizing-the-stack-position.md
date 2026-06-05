@@ -29,21 +29,10 @@ Regardless the stack position, the content of the selected item is displayed at 
 
 #### StackPosition
 
-{{source=..\SamplesCS\PageView\StackView.cs region=stackPosition}} 
-{{source=..\SamplesVB\PageView\StackView.vb region=stackPosition}} 
+<snippet id='pageview-stackview-stackposition-cs' />
+<snippet id='pageview-stackview-stackposition-vb' />
 
-````C#
-RadPageViewStackElement stackElement = this.radPageView1.ViewElement as RadPageViewStackElement;
-stackElement.StackPosition = StackViewPosition.Right;
 
-````
-````VB.NET
-Dim stackElement As RadPageViewStackElement = TryCast(Me.radPageView1.ViewElement, RadPageViewStackElement)
-stackElement.StackPosition = StackViewPosition.Right
-
-````
-
-{{endregion}} 
 
 >note The **ViewElement** property of the **RadPageView** control returns a reference to the main element of the currently active view in the control. So, to cast the **ViewElement** to any an element representing a specific view type, you should make sure that you have set the **ViewMode** of the **RadPageView** control to this view type.
 >

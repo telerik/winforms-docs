@@ -22,51 +22,17 @@ The __SelectionStart__ property is an integer that indicates the insertion point
 
 Setting the __SelectionLength__ to a number greater than 0 causes that number of characters to be selected, starting from the current insertion point. 
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelection}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelection}} 
+<snippet id='editors-autocompletebox-setselection-cs' />
+<snippet id='editors-autocompletebox-setselection-vb' />
 
-````C#
-private void SetSelection()
-{
-    this.radAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;";
-    this.radAutoCompleteBox1.SelectionStart = 6;
-    this.radAutoCompleteBox1.SelectionLength = 7;
-}
 
-````
-````VB.NET
-Private Sub SetSelection()
-    Me.RadAutoCompleteBox1.Text = "Pepsi; Sprite; Coca-Cola;"
-    Me.RadAutoCompleteBox1.SelectionStart = 6
-    Me.RadAutoCompleteBox1.SelectionLength = 7
-End Sub
-
-````
-
-{{endregion}}  
 
 Alternatively, you can use the __Select__ method to select the same part of the text: 
 
-{{source=..\SamplesCS\editors\AutoCompleteBox.cs region=SetSelectionRange}} 
-{{source=..\SamplesVB\editors\AutoCompleteBox.vb region=SetSelectionRange}} 
+<snippet id='editors-autocompletebox-setselectionrange-cs' />
+<snippet id='editors-autocompletebox-setselectionrange-vb' />
 
-````C#
-private void SetSelectionRange()
-{
-    this.radAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola";
-    this.radAutoCompleteBox1.Select(6, 7);
-}
 
-````
-````VB.NET
-Private Sub SetSelectionRange()
-    Me.RadAutoCompleteBox1.Text = "Pepsi;Sprite;Coca-Cola"
-    Me.RadAutoCompleteBox1.[Select](6, 7)
-End Sub
-
-````
-
-{{endregion}}  
 
 The both approaches produce same result:
 

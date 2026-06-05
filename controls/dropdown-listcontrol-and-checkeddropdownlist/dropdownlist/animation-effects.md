@@ -27,23 +27,10 @@ Three properties define the animation behavior of __RadDropDownList__:
 
 #### Animation Settings 
 
-{{source=..\SamplesCS\DropDownListControl\DropDownList\DropDownListAnimation.cs region=SetAnimation}} 
-{{source=..\SamplesVB\DropDownListControl\DropDownList\DropDownListAnimation.vb region=SetAnimation}} 
+<snippet id='dropdownlist-animation-effects-setanimation-cs' />
+<snippet id='dropdownlist-animation-effects-setanimation-vb' />
 
-````C#
-this.radDropDownList1.DropDownAnimationEnabled = true;
-this.radDropDownList1.DropDownAnimationFrames = 50;
-this.radDropDownList1.DropDownAnimationEasing = RadEasingType.OutSine;
 
-````
-````VB.NET
-Me.radDropDownList1.DropDownAnimationEnabled = True
-Me.radDropDownList1.DropDownAnimationFrames = 50
-Me.radDropDownList1.DropDownAnimationEasing = RadEasingType.OutSine
-
-````
-
-{{endregion}} 
 
 # See Also
 

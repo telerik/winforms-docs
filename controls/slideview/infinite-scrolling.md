@@ -15,17 +15,9 @@ By default, when the user scrolls to the last slideview item the navigation butt
 
 #### Enable Infinite Scrolling
 
-{{source=..\SamplesCS\SlideView\GettingStartedGallery.cs region=EnableInfiniteScrolling}} 
-{{source=..\SamplesCS\SlideView\GettingStartedGallery.vb region=EnableInfiniteScrolling}}
+<snippet id='slideview-gettingstartedgallery-enableinfinitescrolling-cs' />
+<snippet id='slideview-gettingstartedgallery-enableinfinitescrolling-vb' />
 
-````C#
-this.radSlideView1.IsInfiniteScrollingEnabled = true;
-
-````
-````VB.NET
-Me.radSlideView1.IsInfiniteScrollingEnabled = True
-
-```` 
 
 
 ![RadSlideView Infinite Scrolling](images/slideview-infinite-scrolling.gif)

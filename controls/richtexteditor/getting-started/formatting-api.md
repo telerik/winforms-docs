@@ -19,25 +19,9 @@ __RadRichTextEditor__ exposes methods that change the style of the selected text
 
 Here is an example of a toggle button that upon checking should make the selection or the current word bold. In the handler of the __Click__ event of __RadToggleButton__, the __ToggleBold()__ method of __RadRichTextEditor__ is called.
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=bold}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=bold}} 
+<snippet id='richtexteditor-formatingapi-bold-cs' />
+<snippet id='richtexteditor-formatingapi-bold-vb' />
 
-````C#
-        
-private void togglebutton_Click(object sender, EventArgs e)
-{
-    this.radRichTextEditor.ToggleBold();
-}
-
-````
-````VB.NET
-Private Sub togglebutton_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Me.radRichTextEditor.ToggleBold()
-End Sub
-
-````
-
-{{endregion}} 
 
 
 ## Using the active editor
@@ -49,20 +33,10 @@ __RadRichTextEditor__ supports headers and footers. They are represented through
 
 The following example inserts the word "text" at the **CaretPosition**.
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=insert}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert}} 
+<snippet id='richtexteditor-formatingapi-insert-cs' />
+<snippet id='richtexteditor-formatingapi-insert-vb' />
 
-````C#
-            
-this.radRichTextEditor.Insert("text");
 
-````
-````VB.NET
-Me.radRichTextEditor.Insert("text")
-
-````
-
-{{endregion}} 
 
 ## Creating a DocumentFragment
 
@@ -74,38 +48,19 @@ One of the common uses of the API is creating and inserting a __DocumentFragment
             
 Both approaches can be used to insert content at the caret position with the __InsertFragment__ method:
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=fragment}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=fragment}} 
+<snippet id='richtexteditor-formatingapi-fragment-cs' />
+<snippet id='richtexteditor-formatingapi-fragment-vb' />
 
-````C#
-            
-this.radRichTextEditor.InsertFragment(fragment);
 
-````
-````VB.NET
-Me.radRichTextEditor.InsertFragment(fragment)
-
-````
-
-{{endregion}} 
 
 **Using the constructor of DocumentFragment**
 
 If you create a fragment in this way, it will end with a new paragraph. This is convenient when you want to separate the inserted fragment and end it with a new line. Furthermore, in this way if the last paragraph is in a list, it will appear properly in the new document.
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=insert1}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=insert1}} 
+<snippet id='richtexteditor-formatingapi-insert1-cs' />
+<snippet id='richtexteditor-formatingapi-insert1-vb' />
 
-````C#
-DocumentFragment fragmentFromDocument = new DocumentFragment(this.radRichTextEditor.Document);
 
-````
-````VB.NET
-Dim fragmentFromDocument As New DocumentFragment(Me.radRichTextEditor.Document)
-
-````
-
-{{endregion}} 
 
 This is also the suggested approach when merging several documents into one.
 
@@ -113,19 +68,10 @@ This is also the suggested approach when merging several documents into one.
 
 If you choose to use the document selection when creating a __DocumentFragment__, there will be no additional paragraph after the fragment.
 
-{{source=..\SamplesCS\RichTextEditor\GettingStarted\FormatingAPI.cs region=selection}} 
-{{source=..\SamplesVB\RichTextEditor\GettingStarted\FormatingAPI.vb region=selection}} 
+<snippet id='richtexteditor-formatingapi-selection-cs' />
+<snippet id='richtexteditor-formatingapi-selection-vb' />
 
-````C#
-DocumentFragment fragmentFromSelection = this.radRichTextEditor.Document.Selection.CopySelectedDocumentElements();
 
-````
-````VB.NET
-Dim fragmentFromSelection As DocumentFragment = Me.radRichTextEditor.Document.Selection.CopySelectedDocumentElements()
-
-````
-
-{{endregion}}
 
 # See Also
 

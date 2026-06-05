@@ -19,19 +19,10 @@ In order to be able to select text from the UI, __RadPdfViewer__ must be in *Tex
 
 #### ViewerMode
 
-{{source=..\SamplesCS\PdfViewer\PdfTextManipulation.cs region=ViewerMode}} 
-{{source=..\SamplesVB\PdfViewer\PdfTextManipulation.vb region=ViewerMode}} 
+<snippet id='pdfviewer-pdftextmanipulation-viewermode-cs' />
+<snippet id='pdfviewer-pdftextmanipulation-viewermode-vb' />
 
-````C#
-this.radPdfViewer1.ViewerMode = Telerik.WinControls.UI.FixedDocumentViewerMode.TextSelection;
 
-````
-````VB.NET
-Me.RadPdfViewer1.ViewerMode = Telerik.WinControls.UI.FixedDocumentViewerMode.TextSelection
-
-````
-
-{{endregion}}
 
 ## Programmatic Selection
 
@@ -69,30 +60,10 @@ Their names show clearly the action they execute.Here is an example showing how 
    
 #### Text selection
 
-{{source=..\SamplesCS\PdfViewer\PdfTextManipulation.cs region=TextSelection}} 
-{{source=..\SamplesVB\PdfViewer\PdfTextManipulation.vb region=TextSelection}} 
+<snippet id='pdfviewer-pdftextmanipulation-textselection-cs' />
+<snippet id='pdfviewer-pdftextmanipulation-textselection-vb' />
 
-````C#
-            
-Telerik.Windows.Documents.Fixed.Text.TextPosition start = new Telerik.Windows.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document.CaretPosition);
-start.MoveToCurrentWordStart();
-Telerik.Windows.Documents.Fixed.Text.TextPosition end = new Telerik.Windows.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document.CaretPosition);
-end.MoveToCurrentWordEnd();
-this.radPdfViewer1.Document.Selection.SetSelection(start, end);
-RadMessageBox.Show(this.radPdfViewer1.Document.Selection.GetSelectedText());
 
-````
-````VB.NET
-Dim start As New Telerik.Windows.Documents.Fixed.Text.TextPosition(Me.RadPdfViewer1.Document.CaretPosition)
-start.MoveToCurrentWordStart()
-Dim [end] As New Telerik.Windows.Documents.Fixed.Text.TextPosition(Me.RadPdfViewer1.Document.CaretPosition)
-[end].MoveToCurrentWordEnd()
-Me.RadPdfViewer1.Document.Selection.SetSelection(start, [end])
-RadMessageBox.Show(Me.RadPdfViewer1.Document.Selection.GetSelectedText())
-
-````
-
-{{endregion}}
 
 There are various methods in the API of RadPdfViewerElement which you can use to manipulate the text selection.
 
@@ -100,136 +71,28 @@ The __SelectAll__, __DeselectAll__, __Select__ methods allow you to set the sele
 
 #### Select/Deselect
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Select}} 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Select}} 
+<snippet id='pdfviewer-pdfpublicapi-select-cs' />
+<snippet id='pdfviewer-pdfpublicapi-select-vb' />
 
-````C#
-private void buttonSelectAll_Click(object sender, EventArgs e)
-{
-    this.radPdfViewer1.PdfViewerElement.SelectAll();
-}
-private void buttonDeselectAll_Click(object sender, EventArgs e)
-{
-    this.radPdfViewer1.PdfViewerElement.DeselectAll();
-}
-private void buttonSelect_Click(object sender, EventArgs e)
-{
-    Telerik.Windows.Documents.Fixed.Text.TextPosition startPosition = new Telerik.Windows.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document);
-    Telerik.Windows.Documents.Fixed.Text.TextPosition endPosition = new Telerik.Windows.Documents.Fixed.Text.TextPosition(this.radPdfViewer1.Document);
-    startPosition.MoveToLineStart();
-    endPosition.MoveToLineEnd();
-    //Select the first line in the document
-    this.radPdfViewer1.PdfViewerElement.Select(startPosition, endPosition);
-}
 
-````
-````VB.NET
-Private Sub buttonSelectAll_Click(sender As Object, e As EventArgs) Handles buttonSelectAll.Click
-    Me.radPdfViewer1.PdfViewerElement.SelectAll()
-End Sub
-Private Sub buttonDeselectAll_Click(sender As Object, e As EventArgs) Handles buttonDeselectAll.Click
-    Me.radPdfViewer1.PdfViewerElement.DeselectAll()
-End Sub
-Private Sub buttonSelect_Click(sender As Object, e As EventArgs) Handles buttonSelect.Click
-    Dim startPosition As New Telerik.Windows.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-    Dim endPosition As New Telerik.Windows.Documents.Fixed.Text.TextPosition(Me.radPdfViewer1.Document)
-    startPosition.MoveToLineStart()
-    endPosition.MoveToLineEnd()
-    'Select the first line in the document
-    Me.radPdfViewer1.PdfViewerElement.[Select](startPosition, endPosition)
-End Sub
-
-````
-
-{{endregion}}
 
 You can use the __GetSelectedText__, __GetSelectedTextAsync__ methods to get the currently selected text. The __GetSelectedTextAsync__ method does this operation asynchronously and calls the specified callback function when ready. The __Copy__ method copies the current selection to the clipboard. It executes the operation in the background, so the text is not copied to the clipboard until the waiting indicator is visible.The following sample demonstrates using these methods:
 
 #### Get Selection Async
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=GetSelectedText}} 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=GetSelectedText}} 
+<snippet id='pdfviewer-pdfpublicapi-getselectedtext-cs' />
+<snippet id='pdfviewer-pdfpublicapi-getselectedtext-vb' />
 
-````C#
-private void butonGetSelectedText_Click(object sender, EventArgs e)
-{
-    RadMessageBox.Show("The current selection: " + this.radPdfViewer1.PdfViewerElement.GetSelectedText());
-}
-private void buttonGetSelectedTextAsync_Click(object sender, EventArgs e)
-{
-    this.radPdfViewer1.PdfViewerElement.GetSelectedTextAsync(delegate(string text) { MessageBox.Show("Selected text: " + text); });
-}
-private void buttonCopy_Click(object sender, EventArgs e)
-{
-    this.radPdfViewer1.PdfViewerElement.Copy();
-}
 
-````
-````VB.NET
-Private Sub buttonGetSelectedText_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedText.Click
-    RadMessageBox.Show("The current selection: " & Me.radPdfViewer1.PdfViewerElement.GetSelectedText())
-End Sub
-Private Sub buttonGetSelectedTextAsync_Click(sender As Object, e As EventArgs) Handles buttonGetSelectedTextAsync.Click
-    Me.radPdfViewer1.PdfViewerElement.GetSelectedTextAsync(Function(text As String)
-                                                               MessageBox.Show("Selected text: " & text)
-                                                           End Function)
-End Sub
-Private Sub buttonCopy_Click(sender As Object, e As EventArgs) Handles buttonCopy.Click
-    Me.radPdfViewer1.PdfViewerElement.Copy()
-End Sub
-
-````
-
-{{endregion}}
 
 The __Find__ and __FindPrevious__ methods are used to perform text search forwards or backwards respectively. These methods return the result in a special __SearchResult__ structure which provides information about the result:
 
 #### Find Next
 
-{{source=..\SamplesCS\PdfViewer\PdfPublicApi.cs region=Search}} 
-{{source=..\SamplesVB\PdfViewer\PdfPublicApi.vb region=Search}} 
+<snippet id='pdfviewer-pdfpublicapi-search-cs' />
+<snippet id='pdfviewer-pdfpublicapi-search-vb' />
 
-````C#
-private void buttonFindNext_Click(object sender, EventArgs e)
-{
-    Telerik.Windows.Documents.Fixed.Search.SearchResult res;
-    if (this.checkSearchBackwards.IsChecked)
-    {
-        res = this.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms");
-    }
-    else
-    {
-        res = this.radPdfViewer1.PdfViewerElement.Find("WinForms");
-    }
-    if (res == Telerik.Windows.Documents.Fixed.Search.SearchResult.NotFound)
-    {
-        RadMessageBox.Show("String not found");
-    }
-    else
-    {
-        RadMessageBox.Show("Result found on page " + res.Range.StartPosition.Page.PageNo);
-    }
-}
 
-````
-````VB.NET
-Private Sub buttonFindNext_Click(sender As Object, e As EventArgs) Handles buttonFindNext.Click
-    Dim res As Telerik.Windows.Documents.Fixed.Search.SearchResult
-    If Me.checkSearchBackwards.IsChecked Then
-        res = Me.radPdfViewer1.PdfViewerElement.FindPrevious("WinForms")
-    Else
-        res = Me.radPdfViewer1.PdfViewerElement.Find("WinForms")
-    End If
-    If res Is Telerik.Windows.Documents.Fixed.Search.SearchResult.NotFound Then
-        RadMessageBox.Show("String not found")
-    Else
-        RadMessageBox.Show("Result found on page " & res.Range.StartPosition.Page.PageNo)
-    End If
-End Sub
-
-````
-
-{{endregion}}
 
 >note There are no genuine words in PDF, so the viewer uses a greedy text recognition method. That is why it is not guaranteed that it would find the exact start and end position of a word.
 >

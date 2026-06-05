@@ -27,21 +27,10 @@ Additionally, you can tune the sort order by setting the __SortOrder__ property.
 
 #### Setting Default Groups
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridGrouping.cs region=PropertySort}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridGrouping.vb region=PropertySort}} 
+<snippet id='propertygrid-propertygridgrouping-propertysort-cs' />
+<snippet id='propertygrid-propertygridgrouping-propertysort-vb' />
 
-````C#
-radPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical;
-radPropertyGrid1.SortOrder = SortOrder.Descending;
 
-````
-````VB.NET
-RadPropertyGrid1.PropertySort = PropertySort.CategorizedAlphabetical
-RadPropertyGrid1.SortOrder = SortOrder.Descending
-
-````
-
-{{endregion}}
 
 To add your own groups programatically, make sure that the __EnableGrouping__ property is set to *true* and add the desired __GroupDescriptor__ to the __GroupDescriptors__ collection of the control.
 
@@ -69,23 +58,10 @@ Here is an example of grouping by the formatted value:
 
 #### Adding a Group Descriptor
 
-{{source=..\SamplesCS\PropertyGrid\Features\PropertyGridGrouping.cs region=GroupDescriptor}} 
-{{source=..\SamplesVB\PropertyGrid\Features\PropertyGridGrouping.vb region=GroupDescriptor}} 
+<snippet id='propertygrid-propertygridgrouping-groupdescriptor-cs' />
+<snippet id='propertygrid-propertygridgrouping-groupdescriptor-vb' />
 
-````C#
-radPropertyGrid1.EnableGrouping = true;
-GroupDescriptor group = new GroupDescriptor(new SortDescriptor[] { new SortDescriptor("FormattedValue", ListSortDirection.Ascending) });
-radPropertyGrid1.GroupDescriptors.Add(group);
 
-````
-````VB.NET
-RadPropertyGrid1.EnableGrouping = True
-Dim group = New GroupDescriptor(New SortDescriptor() {New SortDescriptor("FormattedValue", ListSortDirection.Ascending)})
-RadPropertyGrid1.GroupDescriptors.Add(group)
-
-````
-
-{{endregion}}
 
 # See Also
 

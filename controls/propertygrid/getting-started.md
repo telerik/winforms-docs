@@ -42,19 +42,10 @@ The following example will demonstrate the basic functionalities of **RadPropert
 
 #### RadPropertyGrid`s SelectedObject
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=SelectedObject}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=SelectedObject}} 
+<snippet id='propertygrid-propertygridgettingstarted-selectedobject-cs' />
+<snippet id='propertygrid-propertygridgettingstarted-selectedobject-vb' />
 
-````C#
-this.radPropertyGrid1.SelectedObject = new PropertyGridElement();
 
-````
-````VB.NET
-Me.RadPropertyGrid1.SelectedObject = New PropertyGridElement()
-
-````
-
-{{endregion}}
 
 It is all set and **RadProperyGrid** reads all public properties of the given object and displays them:
 
@@ -67,66 +58,26 @@ Next, we will add a predefined toolbox on the top of the control. This toolbox c
 
 #### ToolbarVisible
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=ToolBarVisible}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=ToolBarVisible}} 
+<snippet id='propertygrid-propertygridgettingstarted-toolbarvisible-cs' />
+<snippet id='propertygrid-propertygridgettingstarted-toolbarvisible-vb' />
 
-````C#
-this.radPropertyGrid1.ToolbarVisible = true;
 
-````
-````VB.NET
-Me.RadPropertyGrid1.ToolbarVisible = True
-
-````
-
-{{endregion}}
 
 Additionally, since the toolbox consists of a __StackLayoutPanel__, is supports adding additional elements. Here is how to add a button that clears the filter text box:
 
 #### Add Element to Toolbox
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=AddElementToToolbox1}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox1}}
+<snippet id='propertygrid-propertygridgettingstarted-addelementtotoolbox1-cs' />
+<snippet id='propertygrid-propertygridgettingstarted-addelementtotoolbox1-vb' />
 
-````C#
-RadButtonElement clearFiltering = new RadButtonElement();
-clearFiltering.Text = "Clear";
-clearFiltering.MinSize = new System.Drawing.Size(25, 22);
-clearFiltering.StretchHorizontally = false;
-clearFiltering.Click += new EventHandler(clearFiltering_Click);
 
-````
-````VB.NET
-Dim clearFiltering = New RadButtonElement()
-clearFiltering.Text = "Clear"
-clearFiltering.MinSize = New System.Drawing.Size(25, 22)
-clearFiltering.StretchHorizontally = False
-AddHandler clearFiltering.Click, AddressOf clearFiltering_Click
-
-````
-
-{{endregion}}
 
 #### Clear the Filter
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=AddElementToToolbox2}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=AddElementToToolbox2}} 
+<snippet id='propertygrid-propertygridgettingstarted-addelementtotoolbox2-cs' />
+<snippet id='propertygrid-propertygridgettingstarted-addelementtotoolbox2-vb' />
 
-````C#
-void clearFiltering_Click(object sender, EventArgs e)
-{
-    this.radPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement.Text = "";
-}
 
-````
-````VB.NET
-Private Sub clearFiltering_Click(ByVal sender As Object, ByVal e As EventArgs)
-    Me.RadPropertyGrid1.PropertyGridElement.ToolbarElement.SearchTextBoxElement.Text = ""
-End Sub
-
-````
-
-{{endregion}} 
 
 By default, opening the editor for editing is done by double clicking the editor. This behavior can be easily changed by selecting one of the predefined options of the __BeginEditMode__ property. The options to choose from are follows:
 
@@ -138,19 +89,10 @@ By default, opening the editor for editing is done by double clicking the editor
 
 #### Begin Edit Mode
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=BeginEditMode}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=BeginEditMode}} 
+<snippet id='propertygrid-propertygridgettingstarted-begineditmode-cs' />
+<snippet id='propertygrid-propertygridgettingstarted-begineditmode-vb' />
 
-````C#
-this.radPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick;
 
-````
-````VB.NET
-Me.RadPropertyGrid1.BeginEditMode = RadPropertyGridBeginEditModes.BeginEditOnClick
-
-````
-
-{{endregion}}
 
 To set the default sorting or grouping of the properties, just set the **PropertySort** property, to one of the enumerated values: 
 
@@ -164,37 +106,19 @@ To set the default sorting or grouping of the properties, just set the **Propert
 
 #### Group by Categories
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=PropertySort}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=PropertySort}} 
+<snippet id='propertygrid-propertygridgettingstarted-propertysort-cs' />
+<snippet id='propertygrid-propertygridgettingstarted-propertysort-vb' />
 
-````C#
-this.radPropertyGrid1.PropertySort = PropertySort.Categorized;
 
-````
-````VB.NET
-Me.RadPropertyGrid1.PropertySort = PropertySort.Categorized
-
-````
-
-{{endregion}}
 
 You can control the sort order, by setting the **SortOrder** property of the control. Possible values are *Ascending*, *Descending* and *None*:
 
 #### Setting the Sort Order
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=SortOrder}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=SortOrder}} 
+<snippet id='propertygrid-propertygridgettingstarted-sortorder-cs' />
+<snippet id='propertygrid-propertygridgettingstarted-sortorder-vb' />
 
-````C#
-this.radPropertyGrid1.SortOrder = SortOrder.Ascending;
 
-````
-````VB.NET
-Me.RadPropertyGrid1.SortOrder = SortOrder.Ascending
-
-````
-
-{{endregion}}
 
 There are also four properties that allow you to control the expand/collapse image of the control. These are as follows: __CollapseImage__, __ExpandImage__, __HoveredCollapseImage__ and __HoveredExpandImage__.
 
@@ -215,24 +139,10 @@ There are a few properties that you can set in order to change the item appearan
 
 #### Item Settings
 
-{{source=..\SamplesCS\PropertyGrid\PropertyGridGettingStarted.cs region=ItemProperties}} 
-{{source=..\SamplesVB\PropertyGrid\PropertyGridGettingStarted.vb region=ItemProperties}}
-````C#
-this.radPropertyGrid1.ItemHeight = 30;
-this.radPropertyGrid1.ItemIndent = 25;
-this.radPropertyGrid1.ItemSpacing = 1;
-
-````
-````VB.NET
-Me.RadPropertyGrid1.ItemHeight = 30
-Me.RadPropertyGrid1.ItemIndent = 25
-Me.RadPropertyGrid1.ItemSpacing = 1
-
-```` 
+<snippet id='propertygrid-propertygridgettingstarted-itemproperties-cs' />
+<snippet id='propertygrid-propertygridgettingstarted-itemproperties-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 3: Selected Object
 ![WinForms RadPropertyGrid Selected Object](images/propertygrid-getting-started003.png)

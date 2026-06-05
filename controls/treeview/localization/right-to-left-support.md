@@ -14,19 +14,10 @@ previous_url: treeview-localization-rtl
 
 You can present the content of your tree view instance in a right-to-left direction by setting the __RightToLeft__ property to *Yes*:
 
-{{source=..\SamplesCS\TreeView\TreeLocalization.cs region=rtl}} 
-{{source=..\SamplesVB\TreeView\TreeLocalization.vb region=rtl}} 
+<snippet id='treeview-treelocalization-rtl-cs' />
+<snippet id='treeview-treelocalization-rtl-vb' />
 
-````C#
-this.radTreeView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
-````
-````VB.NET
-Me.RadTreeView1.RightToLeft = Windows.Forms.RightToLeft.Yes
-
-````
-
-{{endregion}} 
 
 ![WinForms RadTreeView RTL](images/treeview-localization-rtl001.png)
 

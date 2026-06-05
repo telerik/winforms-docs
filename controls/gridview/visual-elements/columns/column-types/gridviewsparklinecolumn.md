@@ -115,9 +115,6 @@ Dim row As GridViewRowInfo = Me.radGridView1.Rows.AddNew()
     row.Cells("Line").Value = values
 
 ````
-
-{{endregion}} 
-
 ## SparkDataNeeded event
 
 The **SparkDataNeeded** event can be used to dynamically populate or change data at run-time. It is fired right before creating the data points inside the sparkline element in the cell.
@@ -157,9 +154,6 @@ Private Sub SparkLineColumn_SparkDataNeeded(ByVal sender As Object, ByVal e As S
 End Sub
 
 ````
-
-{{endregion}} 
-
 ## Binding GridViewSparklineColumn
 
 You can bind the **GridViewSparklineColumn** to any IEnumerable collection of numeric data types. To do this, you should set the **FieldName** of the **GridViewSparklineColumn** to be the same as the name of the appopriate existing column in the data source. The example below binds the grid to DataTable via the **DataSource** property. To prevent the grid from traversing all data fields in that collection, I set the **GridViewTemplate.AutoGenerateColumns** property to *False*. 
@@ -219,10 +213,6 @@ this.radGridView1.Columns.Add(sparkLineColumn);
     Me.RadGridView1.Columns.Add(sparkLineColumn)
 
 ````
-
-{{endregion}} 
-
-
 ## Customize GridViewSparklineColumn
 
 **GridViewSparklineColumn** can be customized by making use of **CellFormatting** event. Here is an example how to make the even rows in **GridViewSparklineColumn** to desplay bar series, and the odd rows to display line series. Due to the UI Virtualization, an `if-else` statement is used to reset the series.
@@ -300,9 +290,6 @@ Private Sub RadGridView1_CellFormatting(ByVal sender As Object, ByVal e As CellF
 End Sub
 
 ````
-
-{{endregion}} 
-
 ## GridViewSparklineColumn's Properties 
 
 |Property|Description|

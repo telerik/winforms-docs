@@ -19,137 +19,27 @@ __GridViewDateTimeColumn__ provides date entry and formatting for DateTime data 
 
 #### Formatting the date.
 
-{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=addDateTimeColumn}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=addDateTimeColumn}} 
-
-````C#
-GridViewDateTimeColumn dateTimeColumn = new GridViewDateTimeColumn();
-dateTimeColumn.Name = "DateTimeColumn";
-dateTimeColumn.HeaderText = "Order date";
-dateTimeColumn.FieldName = "OrderDate";
-dateTimeColumn.FormatString = "{0:D}";
-
-````
-````VB.NET
-Dim dateTimeColumn As New GridViewDateTimeColumn()
-dateTimeColumn.Name = "DateTimeColumn"
-dateTimeColumn.HeaderText = "Order date"
-dateTimeColumn.FieldName = "OrderDate"
-dateTimeColumn.FormatString = "{0:D}"
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewdatetimecolumn1-adddatetimecolumn-cs' />
+<snippet id='gridview-gridviewdatetimecolumn1-adddatetimecolumn-vb' />
 
 >note The formatting for date and time values also responds to globalization settings.
 
-{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn2.cs region=settingCurrentCulture}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn2.vb region=settingCurrentCulture}} 
-
-````C#
-System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("fr-BE");
-GridViewDateTimeColumn dateTimeColumn = new GridViewDateTimeColumn();
-dateTimeColumn.Name = "DateTimeColumn";
-dateTimeColumn.HeaderText = "Order date";
-dateTimeColumn.FieldName = "OrderDate";
-dateTimeColumn.FormatString = "{0:D}";
-radGridView1.MasterTemplate.Columns.Add(dateTimeColumn);
-
-````
-````VB.NET
-System.Threading.Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("fr-BE")
-        Dim dateTimeColumn As New GridViewDateTimeColumn()
-        dateTimeColumn.Name = "DateTimeColumn"
-        dateTimeColumn.HeaderText = "Order date"
-        dateTimeColumn.FieldName = "OrderDate"
-        dateTimeColumn.FormatString = "{0:D}"
-        RadGridView1.MasterTemplate.Columns.Add(dateTimeColumn)
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewdatetimecolumn2-settingcurrentculture-cs' />
+<snippet id='gridview-gridviewdatetimecolumn2-settingcurrentculture-vb' />
 
 The code below demonstrates how to change date formatting in edit mode (while the cell is being edited). There are two ways to achieve that - by setting the __Format__ property of the column to *Custom* and the __CustomFormat__ property of the column to a desired format, or by setting the same properties of the editor itself. Please note that we are using the __CellEditorInitialized__ event which is fired when the initialization of an editor is done in order to access the editor:
 
-{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeEditorDateFormat}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=changeEditorDateFormat}} 
-
-````C#
-GridViewDateTimeColumn dateTimeColumn1 = new GridViewDateTimeColumn();
-dateTimeColumn1.Name = "DateTimeColumn";
-dateTimeColumn1.HeaderText = "Order date";
-dateTimeColumn1.FieldName = "OrderDate";
-dateTimeColumn1.Format = DateTimePickerFormat.Custom;
-dateTimeColumn1.CustomFormat = "t";
-
-````
-````VB.NET
-Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
-    Dim editor As RadDateTimeEditor = TryCast(Me.RadGridView1.ActiveEditor, RadDateTimeEditor)
-    If editor IsNot Nothing Then
-        'Pick up one of the default formats
-        DirectCast(DirectCast(Me.RadGridView1.ActiveEditor, RadDateTimeEditor).EditorElement, RadDateTimeEditorElement).Format = DateTimePickerFormat.[Short]
-        'Or set a custom date format
-        DirectCast(DirectCast(Me.RadGridView1.ActiveEditor, RadDateTimeEditor).EditorElement, RadDateTimeEditorElement).CustomFormat = "t"
-    End If
-End Sub
-
-````
-
-{{endregion}} 
-
-
-{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeEditorDateFormat1}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=changeEditorDateFormat1}} 
-
-````C#
-void radGridView1_CellEditorInitialized(object sender, GridViewCellEventArgs e)
-{
-    RadDateTimeEditor editor = this.radGridView1.ActiveEditor as RadDateTimeEditor;
-    if (editor != null)
-    {   
-        //Pick up one of the default formats
-        ((RadDateTimeEditorElement)((RadDateTimeEditor)this.radGridView1.ActiveEditor).EditorElement).Format = DateTimePickerFormat.Short;
-        
-        //Or set a custom date format
-        ((RadDateTimeEditorElement)((RadDateTimeEditor)this.radGridView1.ActiveEditor).EditorElement).CustomFormat = "t";
-    }
-}
-
-````
-````VB.NET
-Private Sub radGridView1_CellEditorInitialized(ByVal sender As Object, ByVal e As GridViewCellEventArgs)
-    Dim editor As RadDateTimeEditor = TryCast(Me.RadGridView1.ActiveEditor, RadDateTimeEditor)
-    If editor IsNot Nothing Then
-        'Pick up one of the default formats
-        DirectCast(DirectCast(Me.RadGridView1.ActiveEditor, RadDateTimeEditor).EditorElement, RadDateTimeEditorElement).Format = DateTimePickerFormat.[Short]
-        'Or set a custom date format
-        DirectCast(DirectCast(Me.RadGridView1.ActiveEditor, RadDateTimeEditor).EditorElement, RadDateTimeEditorElement).CustomFormat = "t"
-    End If
-End Sub
-
-````
-
-{{endregion}} 
-
+<snippet id='gridview-gridviewdatetimecolumn1-changeeditordateformat-cs' />
+<snippet id='gridview-gridviewdatetimecolumn1-changeeditordateformat-vb' />
+<snippet id='gridview-gridviewdatetimecolumn1-changeeditordateformat1-cs' />
+<snippet id='gridview-gridviewdatetimecolumn1-changeeditordateformat1-vb' />
 
 If we do not use the `CellEditorInitialized`, but `CellBeginEdit` (it is fired before `CellEditorInitialized`), our __Format__ setting will be overridden by the initialization of the editor. 
 
 You can also change the way the dates in the column are filtered. This is how the column can be adjusted to filter only by __Dates__.
 
-{{source=..\SamplesCS\GridView\Columns\GridViewDateTimeColumn1.cs region=changeFilteringMode}} 
-{{source=..\SamplesVB\GridView\Columns\GridViewDateTimeColumn1.vb region=changeFilteringMode}} 
-
-````C#
-dateTimeColumn1.FilteringMode = GridViewTimeFilteringMode.Date;
-
-````
-````VB.NET
-dateTimeColumn1.FilteringMode = GridViewTimeFilteringMode.Date
-
-````
-
-{{endregion}} 
+<snippet id='gridview-gridviewdatetimecolumn1-changefilteringmode-cs' />
+<snippet id='gridview-gridviewdatetimecolumn1-changefilteringmode-vb' />
 
 ## DateTimeKind property
 

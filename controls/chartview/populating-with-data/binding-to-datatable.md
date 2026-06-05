@@ -17,52 +17,10 @@ Here is a sample demonstrating how to bind а [LineSeries]({%slug winforms/chart
 
 #### Binding to DataTable
 
-{{source=..\SamplesCS\ChartView\DataBinding\ChartViewDataBindingToDataTable.cs region=binding}} 
-{{source=..\SamplesVB\ChartView\DataBinding\ChartViewDataBindingToDataTable.vb region=binding}}
+<snippet id='chartview-binding-to-datatable-binding-cs'/>
+<snippet id='chartview-binding-to-datatable-binding-vb'/>
 
-````C#
-DataTable table;
-protected override void OnLoad(EventArgs e)
-{
-    base.OnLoad(e);
-    table = new DataTable();
-    table.Columns.Add("Value", typeof(double));
-    table.Columns.Add("Name", typeof(string));
-    table.Rows.Add(1, "John");
-    table.Rows.Add(3, "Adam");
-    table.Rows.Add(5, "Peter");
-    table.Rows.Add(12, "Sam");
-    table.Rows.Add(6, "Paul");
-    LineSeries lineSeria = new LineSeries();
-    radChartView1.Series.Add(lineSeria);
-    lineSeria.ValueMember = "Value";
-    lineSeria.CategoryMember = "Name";
-    lineSeria.DataSource = table;
-}
 
-````
-````VB.NET
-Private table As DataTable
-Protected Overrides Sub OnLoad(e As EventArgs)
-    MyBase.OnLoad(e)
-    table = New DataTable()
-    table.Columns.Add("Value", GetType(Double))
-    table.Columns.Add("Name", GetType(String))
-    table.Rows.Add(1, "John")
-    table.Rows.Add(3, "Adam")
-    table.Rows.Add(5, "Peter")
-    table.Rows.Add(12, "Sam")
-    table.Rows.Add(6, "Paul")
-    Dim lineSeria As New LineSeries()
-    RadChartView1.Series.Add(lineSeria)
-    lineSeria.ValueMember = "Value"
-    lineSeria.CategoryMember = "Name"
-    lineSeria.DataSource = table
-End Sub
-
-````
-
-{{endregion}} 
 
 >caption Figure 1: Binding to DataTable
 ![WinForms RadChartView Binding to DataTable](images/chartview-databinding-binding-to-datatable001.png)

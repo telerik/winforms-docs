@@ -22,23 +22,10 @@ You can handle __ToggleStateChanged__ event of __RadCheckBox__ to take action wh
 
 You can also handle __ToggleStateChanging__ event. This event provides an opportunity to the toggle state change. The __StateChangingEventArgs__ passed as a parameter to the event handler have a __NewValue__ and __OldValue__ ToggleState members and a boolean __Cancel__ member. __NewValue__ holds the value of the __ToggleState__ that will be applied when the event is completed without being canceled. __OldValue__ holds the value of __ToggleState__ at the time the state change was initiated. __Canceled__ controls which value of __ToggleState__ is applied when the event completes. The default value is __false__ . Setting __Cancel__ to __true__ will prevent __ToggleStateChanged__ from firing and will leave the __ToggleState__ value as it was prior to the event. In the example below the __ToggleStateChanged__ event does not fire.
         
-{{source=..\SamplesCS\Buttons\CheckBox.cs region=handlingToggleStateChanged}} 
-{{source=..\SamplesVB\Buttons\CheckBox.vb region=handlingToggleStateChanged}} 
-````C#
-void radCheckBox1_ToggleStateChanged(object sender, StateChangedEventArgs args)
-{
-    MessageBox.Show(args.ToggleState.ToString());
-}
+<snippet id='buttons-checkbox-handling-radcheckbox-states-handlingtogglestatechanged-cs' />
+<snippet id='buttons-checkbox-handling-radcheckbox-states-handlingtogglestatechanged-vb' />
 
-````
-````VB.NET
-Private Sub RadCheckBox1_ToggleStateChanged(ByVal sender As System.Object, ByVal args As Telerik.WinControls.UI.StateChangedEventArgs)
-    MessageBox.Show(args.ToggleState.ToString())
-End Sub
 
-````
-
-{{endregion}} 
 
 
 >note Due to the specifics of the [simple data binding](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding(v=vs.110).aspx) we have introduced the __CheckStateChanging__ / __CheckStateChanged__ events together with the __CheckState__ property. These events and property provide the same functionality as the __ToggleStateChanged__, __ToggleStateChanging__ and the __ToggleState__ property, but give you the ability to simple data bind the control.

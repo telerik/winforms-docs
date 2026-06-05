@@ -15,19 +15,10 @@ __RadButton__, __RadCheckBox__, __RadRadioButton__, and __RadToggleButton__ supp
 
 All you need to do is to specify the character that will be used for a given control by placing the __&__ character before the desired symbol. The following example demonstrates how the __r__ key is used for radButton1 mnemonic:
 
-{{source=..\SamplesCS\Buttons\Button.cs region=mnemonics}} 
-{{source=..\SamplesVB\Buttons\Button.vb region=mnemonics}} 
+<snippet id='buttons-mnemonics-mnemonics-cs' />
+<snippet id='buttons-mnemonics-mnemonics-vb' />
 
-````C#
-this.radButton1.Text = "&radButton1";
 
-````
-````VB.NET
-Me.radButton1.Text = "&radButton1"
-
-````
-
-{{endregion}} 
 
 ![WinForms RadButtons buttons-mnemonics](images/buttons-mnemonics001.png)
 

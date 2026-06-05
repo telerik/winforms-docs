@@ -12,20 +12,10 @@ position: 3
 
 __RadVirtualGrid__ exposes an API allowing resizing of its rows. In order to utilize it we need to set the __AllowRowResize__ property to *true*.
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=AllowRowResize}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=AllowRowResize}}
-````C#
-this.radVirtualGrid1.AllowRowResize = true;
-
-````
-````VB.NET
-Me.RadVirtualGrid1.AllowRowResize = True
-
-```` 
+<snippet id='virtualgrid-virtualgridresizingrows-allowrowresize-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-allowrowresize-vb' />
 
 
-
-{{endregion}}
 
 ## Resizing System Rows
 
@@ -35,24 +25,10 @@ The __VirtualGridViewInfo__ object exposes properties for directly accessing its
 
 ![WinForms RadVirtualGrid Resizing System Rows](images/virtualgrid-rows-resizing-rows002.png)
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingSystemRows}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=ResizingSystemRows}}
-````C#
-this.radVirtualGrid1.MasterViewInfo.HeaderRowHeight = 30;
-this.radVirtualGrid1.MasterViewInfo.NewRowHeight = 40;
-this.radVirtualGrid1.MasterViewInfo.FilterRowHeight = 50;
-
-````
-````VB.NET
-Me.RadVirtualGrid1.MasterViewInfo.HeaderRowHeight = 30
-Me.RadVirtualGrid1.MasterViewInfo.NewRowHeight = 40
-Me.RadVirtualGrid1.MasterViewInfo.FilterRowHeight = 50
-
-```` 
+<snippet id='virtualgrid-virtualgridresizingrows-resizingsystemrows-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-resizingsystemrows-vb' />
 
 
-
-{{endregion}}
 
 ## Resizing Data Rows
 
@@ -62,41 +38,19 @@ The data rows can also be programmatically resized. __RadVirtualGrid.VirtualGrid
 
 ![WinForms RadVirtualGrid Resizing All Data Rows](images/virtualgrid-rows-resizing-rows003.png)
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingDataRows}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=ResizingDataRows}}
-````C#
-this.radVirtualGrid1.MasterViewInfo.RowHeight = 60;
-
-````
-````VB.NET
-Me.RadVirtualGrid1.MasterViewInfo.RowHeight = 60
-
-```` 
+<snippet id='virtualgrid-virtualgridresizingrows-resizingdatarows-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-resizingdatarows-vb' />
 
 
-
-{{endregion}}
 
 >caption Figure 3 Resizing A Single Data Row.
 
 ![WinForms RadVirtualGrid Resizing A Single Data Row](images/virtualgrid-rows-resizing-rows004.png)
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=SetRowHeight}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=SetRowHeight}}
-````C#
-this.radVirtualGrid1.MasterViewInfo.SetRowHeight(0, 40);
-int rowHeight = this.radVirtualGrid1.MasterViewInfo.GetRowHeight(0);
-
-````
-````VB.NET
-Me.RadVirtualGrid1.MasterViewInfo.SetRowHeight(0, 40)
-Dim rowHeight As Integer = Me.RadVirtualGrid1.MasterViewInfo.GetRowHeight(0)
-
-```` 
+<snippet id='virtualgrid-virtualgridresizingrows-setrowheight-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-setrowheight-vb' />
 
 
-
-{{endregion}}
 
 ## Events
 
@@ -120,35 +74,10 @@ The API exposes two events for notifications when a change in the height of a ro
       
      * __ViewInfo__: Reference to the __VirtualGridViewInfo__ object.
 
-{{source=..\SamplesCS\VirtualGrid\Rows\VirtualGridResizingRows.cs region=ResizingEvents}} 
-{{source=..\SamplesVB\VirtualGrid\Rows\VirtualGridResizingRows.vb region=ResizingEvents}}
-````C#
-private void radVirtualGrid1_RowHeightChanging(object sender, VirtualGridRowHeightChangingEventArgs e)
-{
-    if (e.RowIndex == 0)
-    {
-        e.Cancel = true;
-    }
-}
-private void radVirtualGrid1_RowHeightChanged(object sender, VirtualGridRowEventArgs e)
-{
-}
-
-````
-````VB.NET
-Private Sub radVirtualGrid1_RowHeightChanging(sender As Object, e As VirtualGridRowHeightChangingEventArgs)
-    If e.RowIndex = 0 Then
-        e.Cancel = True
-    End If
-End Sub
-Private Sub radVirtualGrid1_RowHeightChanged(sender As Object, e As VirtualGridRowEventArgs)
-End Sub
-
-```` 
+<snippet id='virtualgrid-virtualgridresizingrows-resizingevents-cs' />
+<snippet id='virtualgrid-virtualgridresizingrows-resizingevents-vb' />
 
 
-
-{{endregion}}
 
 # See Also
 * [Alternating Row Color]({%slug winforms/virtualgrid/rows/alternating-row-colors%})
