@@ -132,13 +132,13 @@ The `license get-key` command downloads your up-to-date Telerik license key and 
 
 ## Install MCP Server
 
-To install the Telerik WinForms MCP server, use the `mcp config` command:
+To install the Telerik MCP servers, use the `mcp config` command:
 
 ```powershell
 telerik mcp config
 ```
 
-By default, the command creates or updates the global `.mcp.json` configuration files of all supported IDEs with all available Telerik MCP servers for all Telerik products.
+By default, the command creates or updates the global `.mcp.json` configuration files for all supported IDEs and registers all currently available Telerik MCP servers for Telerik products.
 
 | IDE | Operating System | Configuration File Path |
 | --- | --- | --- |
