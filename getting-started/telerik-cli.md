@@ -221,6 +221,18 @@ You can use the `nuget config` command with the following options:
 telerik nuget config --scope project --path . --force
 ```
 
+## Help
+
+To get help about the tool or a specific command in the Telerik CLI, use the `-h` option:
+
+```powershell
+telerik -h 
+
+telerik nuget -h
+
+telerik nuget config -h
+```
+
 ### Uninstall Telerik CLI
 
 To uninstall the Telerik CLI:
