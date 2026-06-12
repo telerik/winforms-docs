@@ -177,26 +177,17 @@ Example output:
   "message": "MCP servers registered successfully.",
   "data": {
     "registeredIdes": [
-      "Visual Studio",
-      "Visual Studio Code"
+      "Visual Studio"
     ],
     "registered": [
       {
         "ide": "Visual Studio",
         "configPath": "C:\\Users\\username\\.mcp.json"
-      },
-      {
-        "ide": "Visual Studio Code",
-        "configPath": "C:\\Users\\username\\AppData\\Roaming\\Code\\User\\mcp.json"
       }
-    ],
-    "skipped": [
-      "Cursor"
     ]
   },
   "success": true
 }
-
 ```
 
 ## Set Up Telerik NuGet Feed
@@ -233,7 +224,7 @@ telerik nuget -h
 telerik nuget config -h
 ```
 
-### Uninstall Telerik CLI
+#### Uninstall Telerik CLI
 
 To uninstall the Telerik CLI:
 
