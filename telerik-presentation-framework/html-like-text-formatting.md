@@ -51,11 +51,11 @@ The following example shows the minimum required structure:
 | `\<p\>` | `\</p\>` | Creates a paragraph. |
 | `\<span\>` | `\</span\>` | Applies limited inline styling through `font-family`, `font-size`, `color`, and `background-color`. Use this tag when possible. |
 | `\<ol\>` | `\</ol\>` | Creates an ordered list. |
-| `\<ul\>` | `\</ul\>` | Creates an unordered list. |
-| `\<li\>` | `\</li\>` | Creates a list item inside an ordered or unordered list. |
-| `\<strike\>` | `\</strike\>` | Displays strikethrough text. |
-| `\<a\>` | `\</a\>` | Creates a hyperlink. |
-| `\<img\>` | N/A | Displays an image. |
+| `<ul>` | `</ul>` | Creates an unordered list. |
+| `<li>` | `</li>` | Creates a list item inside an ordered or unordered list. |
+| `<strike>` | `</strike>` | Displays strikethrough text. |
+| `<a>` | `</a>` | Creates a hyperlink. |
+| `<img>` | N/A | Displays an image. |
 
 ## Common Formatting Examples
 
