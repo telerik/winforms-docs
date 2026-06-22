@@ -25,6 +25,8 @@ The Telerik assemblies are built against [different versions]({%slug assemblies-
 
 ## Full Packages
 
+>important As of **Q3 2026**, all Telerik UI for WinForms NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
+
 `Telerik_UI_for_WinForms_<version number>_NuGet_Dev.zip` contains `.nupkg` files for the following full packages:
 
 * `UI.for.WinForms.AllControls.Net462`
