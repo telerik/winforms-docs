@@ -108,7 +108,7 @@ The easiest way to get the Telerik UI for WinForms controls to your development 
 
 After installation, the `Telerik.UI.for.WinForms.AllControls` package appears under **Packages** in Solution Explorer:
 
-![Install the UI.for.WinForms.AllControls](images/first-steps-installed.png)
+![Install the Telerik.UI.for.WinForms.AllControls](images/first-steps-installed.png)
 
 		
 ## Step 5: Add a Telerik UI for WinForms Control to the RadForm
