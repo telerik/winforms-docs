@@ -1,145 +1,159 @@
 ---
 title: Messages
-page_title: Messages - WinForms Chat Control
-description: ChatMessage is the basic message unit in WinForms Chat control. 
+page_title: Chat Messages in RadChat - WinForms Chat Control
+description: Learn when to use each RadChat message type and how to configure time separators, media, cards, overlays, and suggested actions.
 slug: winforms/chat/chat-items/messages
-tags: chat, messages
+tags: chat,messages,radchat
 published: True
-position: 2 
+position: 2
 ---
 
-# Messages
+# Chat Messages in RadChat
 
-**ChatMessage** is the basic message unit in **RadChat**. It contains information about the author and time of message. Depending on the specific information that a message stores, the available message types are listed below. 
+`ChatMessage` is the base message type in `RadChat`. Use the message classes in this article to display plain text, media, cards, overlays, suggested actions, and time separators in a conversation.
 
-By default, when you type in the text box and confirm the message, it is automatically added to **RadChat**. This behavior can be controlled by the **AutoAddUserMessages** property. In addition, the **SendMessage** is fired each time a new message is about to be added to the chat UI. It is allowed to modify the message itself. 
+By default, when a user types in the input box and sends a message, `RadChat` adds the message automatically. Clear `AutoAddUserMessages` when you need to validate, replace, or delay user messages. Handle the `SendMessage` event when you need to inspect or modify a message before `RadChat` renders it.
 
->note Since **R3 2018** it is exposed a **UserData** property in all message types. Thus, along with all other parameters when adding a message, you can pass some useful data that can store any information.
+>note Starting with R3 2018, all message types expose a `UserData` property. Use `UserData` to attach application-specific data such as identifiers, status values, or business objects to a message.
 
-## ChatTimeSeparatorMessage
+## Choose a Chat Message Type
 
-A **ChatTimeSeparatorMessage** visually separates the messages according to a certain period of time. The **TimeSeparatorInterval** property specifies this interval. **RadChat** will automatically add the time separators when the interval between the messages exceeds the specified **TimeSeparatorInterval**.
+Use the following guidance to select the correct message type:
 
->caption Figure 1: ChatTimeSeparatorMessage
+* `ChatTextMessage`: Displays plain text from a user, bot, or system message.
+* `ChatMediaMessage`: Displays an image together with author and timestamp information.
+* `ChatCardMessage`: Displays a single card based on a `BaseChatCardElement`.
+* `ChatCarouselMessage`: Displays multiple cards in one horizontally scrollable message.
+* `ChatOverlayMessage`: Prompts the user for input in an overlay, such as selecting a date or a list item.
+* `ChatSuggestedActionsMessage`: Displays quick-reply actions that the user can select.
+* `ChatTimeSeparatorMessage`: Inserts a visual separator between messages when enough time has passed.
 
-![WinForms RadChat Time Separator Message](images/chat-items-messages001.png) 
+## Use ChatTimeSeparatorMessage to Group Messages by Time
 
-#### Setting TimeSeparatorInterval
+`ChatTimeSeparatorMessage` adds a visual divider between messages based on elapsed time. Set `TimeSeparatorInterval` when you want `RadChat` to insert separators automatically between message groups.
+
+>caption Figure 1: Time separators in RadChat
+
+![RadChat conversation with time separator labels between message groups](images/chat-items-messages001.png)
+
+### Set TimeSeparatorInterval
+
+Use the following example to configure `TimeSeparatorInterval`:
 
 <snippet id='chat-messages-timeseparatorinterval-cs'/>
 <snippet id='chat-messages-timeseparatorinterval-vb'/>
 
+Handle the `TimeSeparatorAdding` event when you need custom logic. This event lets you suppress or force a separator regardless of the configured `TimeSeparatorInterval`. The following example adds a time separator when the interval between messages is more than 20 seconds:
 
-
-When a new message is added, the **TimeSeparatorAdding** event is fired. It gives you the opportunity to control whether to add a time separator or not no matter the already specified **TimeSeparatorInterval**. The following example adds a time separator if the interval between messages is more than 20 seconds:
-
-#### Handling TimeSeparatorAdding
+### Handle TimeSeparatorAdding
 
 <snippet id='chat-messages-timeseparatoradding-cs'/>
 <snippet id='chat-messages-timeseparatoradding-vb'/>
 
+>caption Figure 2: Custom time separator behavior
+
+![RadChat conversation with a separator inserted after a time gap](images/chat-items-messages003.png)
+
+## Use ChatTextMessage for Plain Text
+
+`ChatTextMessage` displays a single text entry from a specific author at a specific time. Use it for standard user, bot, or system replies that do not require custom content.
+
+>caption Figure 3: Text messages in RadChat
+
+![RadChat conversation showing plain text messages from participants](images/chat-items-messages002.png)
 
 
->caption Figure 2: ChatTimeSeparatorMessage
+### Add Text Messages
 
-![WinForms RadChat Separator Message](images/chat-items-messages003.png) 
-
-## ChatTextMessage
-
-A **ChatTextMessage** represents a single text message by a certain author and sent at certain time.
-
->caption Figure 3: ChatTextMessages
-
-![WinForms RadChat Text Messages](images/chat-items-messages002.png) 
-
-
-#### Adding Text Messages
+Use the following example to add text messages:
 
 <snippet id='chat-messages-addtextmessage-cs'/>
 <snippet id='chat-messages-addtextmessage-vb'/>
 
+## Use ChatMediaMessage for Images
+
+`ChatMediaMessage` displays an image together with the same author and timestamp metadata that other chat messages use. Use it when the message content is an image instead of plain text.
+
+>caption Figure 4: Media messages in RadChat
+
+![RadChat conversation showing a media message with an image preview](images/chat-items-messages004.png)
 
 
-## ChatMediaMessage
+### Add a Media Message
 
-A **ChatMediaMessage** represents an image message by a certain author and sent at certain time.
-
-
->caption Figure 4: ChatMediaMessage
-
-![WinForms RadChat Media Message](images/chat-items-messages004.png) 
-
-
-#### Adding Media Message
+Use the following example to add a media message:
 
 <snippet id='chat-messages-addmediamessage-cs'/>
 <snippet id='chat-messages-addmediamessage-vb'/>
 
+## Use ChatCardMessage for a Single Card
+
+`ChatCardMessage` displays one card element derived from `BaseChatCardElement`. Use it when one structured layout, such as a product card or a summary card, fits better than plain text.
+
+For the available card types and configuration details, see [Cards]({%slug winforms/chat/chat-items/cards%}).
+
+## Use ChatCarouselMessage for Multiple Cards
+
+`ChatCarouselMessage` displays multiple [card elements]({%slug winforms/chat/chat-items/cards%}) in one horizontally scrollable message. Use it when you want to present several related choices without sending several separate messages.
+
+Starting with R3 2019, set `ShowScrollBar` when you want to display the horizontal scrollbar.
+
+>caption Figure 5: A carousel message in RadChat
+
+![RadChat carousel message showing several cards in one message](images/chat-items-messages005.gif)
 
 
-## ChatCardMessage
+### Add a Carousel Message with Cards
 
-A **ChatCardMessage** stores a message that visualizes a card element, a descendant of **BaseChatCardElement**. In the [Cards]({%slug winforms/chat/chat-items/cards%}) help article you can find additional information about the different card types and how to add card messages. 
-
-## ChatCarouselMessage
-
-A **ChatCarouselMessage** allows adding and visualizing multiple [card elements]({%slug winforms/chat/chat-items/cards%}). You can also add different actions to the cards. Since R3 2019 you can use the __ShowScrollBar__ property in order to show the horizontal scrollbar.
-
->caption Figure 5: ChatCarouselMessage
-
-![WinForms RadChat Carousel Message Sample](images/chat-items-messages005.gif) 
-
-
-#### Adding Carousel Message with Cards
+Use the following example to add a carousel message with cards:
 
 <snippet id='chat-messages-addcarouselmessage-cs'/>
 <snippet id='chat-messages-addcarouselmessage-vb'/>
 
+## Use ChatOverlayMessage for User Input
 
+`ChatOverlayMessage` hosts a [chat overlay]({%slug winforms/chat/chat-items/overlays%}) either as a popup or over the messages container. Use it when the user must complete an action, such as selecting a date, time, or list item, before the conversation continues.
 
-## ChatOverlayMessage
+>caption Figure 6: An overlay message in RadChat
 
-A **ChatOverlayMessage** represents a **ChatMessage** that displays an [overlay element]() either as a popup, or over the messages container. It requires some action by the user, e.g. pick a date or select an item. Once the action is performed, a message is inserted in the chat view.
+![RadChat overlay message prompting the user for additional input](images/chat-items-messages006.gif)
 
->caption Figure 6: ChatOverlayMessage
+### Add a ChatListOverlay Message
 
-![WinForms RadChat Overlay Message Sample](images/chat-items-messages006.gif) 
-
-#### Adding a ChatListOverlay Message 
+Use the following example to display a `ChatListOverlay` inside a `ChatOverlayMessage`:
 
 <snippet id='chat-messages-addoverlaymessage-cs'/>
 <snippet id='chat-messages-addoverlaymessage-vb'/>
 
+>caption Figure 7: ChatListOverlay hosted in ChatOverlayMessage
 
+![RadChat list overlay displayed inside a chat overlay message](images/chat-items-messages007.png)
 
->caption Figure 7: ChatListOverlay
+`ChatOverlayMessage` can host any `BaseChatOverlay` implementation, including `ChatCalendarOverlay`, `ChatDateTimeOverlay`, `ChatListOverlay`, and `ChatTimeOverlay`.
 
-![WinForms RadChat List Overlay Sample](images/chat-items-messages007.png) 
+## Use ChatSuggestedActionsMessage for Quick Replies
 
-The **ChatOverlayMessage** can host any **BaseChatOverlay**: **ChatCalendarOverlay**, **ChatDateTimeOverlay**, **ChatListOverlay**, **ChatTimeOverlay**.
+`ChatSuggestedActionsMessage` displays a list of `SuggestedActionDataItem` options that the user can select. Use it for quick replies and short guided flows where the next step is known in advance.
 
-## ChatSuggestedActionsMessage
+When the user selects an action, the `SuggestedActionClicked` event fires so that you can update the conversation or trigger application logic. Starting with R3 2019, set `ShowScrollBar` when you want to display the horizontal scrollbar.
 
-A **ChatSuggestedActionsMessage** represents a message offering a list of **SuggestedActionDataItem** to the user. Once an action is selected, the **SuggestedActionClicked** event is fired. Then, you can choose how to proceed further, e.g. adding a message with the user's choice. Since R3 2019 you can use the __ShowScrollBar__ property in order to show the horizontal scrollbar.
+>caption Figure 8: Suggested actions in RadChat
 
->caption Figure 8: ChatSuggestedActionsMessage
+![RadChat message showing suggested actions as quick-reply buttons](images/chat-items-messages008.gif)
 
-![WinForms RadChat Suggested Actions Message](images/chat-items-messages008.gif) 
+### Add a ChatSuggestedActionsMessage
 
-#### Adding a ChatSuggestedActionsMessage Message 
+Use the following example to add suggested actions:
 
 <snippet id='chat-messages-addsuggestedactionsmessage-cs'/>
 <snippet id='chat-messages-addsuggestedactionsmessage-vb'/>
 
-
-
- 
-# See Also
+## See Also
 
 * [Overlays]({%slug winforms/chat/chat-items/overlays%})
 * [Cards]({%slug winforms/chat/chat-items/cards%})
 * [Getting Started]({%slug winforms/chat/getting-started%})
 * [Reversed Order of Chat Messages]({%slug chat-messages-in-reversed-order%})
 * [How to Format the Time Separator in RadChat]({%slug format-chat-time-separator%})
- 
-        
+
+

@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Dock - RadDock
-description: The RadDock control provides a container that holds dockable windows. This container can fill the entire client area of a Windows Form, or can be limited to any rectangular area you choose to manage.
+page_title: WinForms RadDock Overview - Dock Control
+description: Explore WinForms RadDock features for docking tool windows and documents, saving layouts, customizing behavior, and building flexible workspaces.
 slug: winforms/dock
 tags: dock
 published: True
@@ -10,105 +10,135 @@ CTAControlName: Dock
 previous_url: dock-overview,dock/dock
 ---
 
-# WinForms Dock Overview
+# WinForms RadDock Overview
 
-__RadDock__ helps you manage multiple windows in your application with a docking system similar to Microsoft Visual Studio. __RadDock__ can contain both tool and tabbed document style windows. It includes fully interactive design-time layout management as well.
+`RadDock` lets you build Visual Studio-style workspaces in a WinForms application. Use it to host dockable tool windows, tabbed documents, floating panes, and persisted layouts in a single container.
+
+This overview explains the main `RadDock` capabilities, shows the common window arrangements it supports, and points you to the next articles for implementation details.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}
 {% endif %}
 
->caption Figure 1: RadDock 
+## What RadDock Helps You Build
 
-![WinForms RadDock Overview](images/dock-overview000.png)
+`RadDock` can fill the entire client area of a form or manage only a specific rectangular region. This makes it a good fit for applications that need document editing surfaces, resizable tool panes, or customizable workspaces.
 
-## Features
+**RadDock hosting dockable windows inside a WinForms application.**
+![WinForms application layout with RadDock managing multiple dockable windows and a central work area.](images/dock-overview000.png)
 
-* The __RadDock__ control provides a container that holds dockable windows. This container can fill the entire client area of a Form, or can be limited to any rectangular area you choose to manage.
+## Key Features
 
-* Tool windows can be dragged outside their containers ("floating"), dragged to other containers, collapsed against the side of the **RadDock** and transformed to tabbed documents. Tool windows are supported by the **ToolWindow** control. You can place other controls within a **ToolWindow**.
+Use `RadDock` when your application needs the following capabilities:
 
-* Tabbed documents can be switched between, floated, resized, dragged, to arrange in various configurations and closed. Tabbed documents are supported by the DocumentWindow control. You can place other controls within a DocumentWnidow.
-            
-* The *Advanced Layout Designer* gives you fully interactive design-time control over the number, position, and properties of **DockWindows** within a __RadDock__.
+* Host dockable windows in a single container that can span all or part of a form.
+* Arrange `ToolWindow` and `DocumentWindow` instances in docked, floating, tabbed, or auto-hidden states.
+* Resize panes with the `Auto`, `Relative`, `Absolute`, and `Fill` sizing modes.
+* Persist layout information, including panel size, position, and docking state, and restore it later.
+* Control window-closing behavior through the `CloseAction` property.
+* Extend layout behavior through `RadSplitContainer` and `SplitContainerLayoutStrategy` when the default layout logic does not meet your scenario.
+* Restore a previous docked or floating state through the built-in re-dock behavior.
+* Configure layouts interactively at design time with the Advanced Layout Designer.
 
-* __RadDock__ collects and uses the information about the state of each **DockWindow** - **FloatingSize**, **FloatingLocation**, **AutoHideSize**, **PreviousPosition**, **AutoHidePostion**, etc. dynamically.
+The following sample shows a typical `RadDock` workspace. Tool windows host feed lists and behavior settings, while document windows display tabbed article content.
 
-* The __CloseAction__ property allows control over the window’s Close behavior.
+**Sample application that uses tool windows, floating panes, auto-hidden output, and tabbed documents.**
+![Sample RSS Reader interface that uses RadDock to display feed lists, a floating behavior pane, an auto-hidden output window, and tabbed documents.](images/dock-overview001.png)
 
-* Different sizing modes (*Auto*, *Relative*, *Absolute*, *Fill*) virtually any layout scenario can be easily achieved. The user has complete control over sizing and layout behavior.
+## Tool Windows and Document Windows
 
-* **RadSplitContainer** composes a **SplitContainerLayoutStrategy**, which handles any layout request for this container. If the available size modes are not enough to fit into a layout scenario, then the entire layout strategy may be easily replaced/extended with a custom one.
+`RadDock` supports two main window types. Use `ToolWindow` for supporting UI such as explorers, properties, filters, and output panes. Use `DocumentWindow` for the main content area when users need to switch between tabbed documents.
 
-* __RadDock__ stores all sizing information per panel in a separate object, it allows easy transition from one state to another and vice-versa without loosing the sizing information for each state.            
+Common docking interactions include the following:
 
-* **Load Layout** allows restoring previous scene at 100% - a layout persistence operation should now only serialize/deserialize the sizing info of each panel in order to completely store/restore its position on a split container.
+* Float, dock, pin, unpin, or tab tool windows.
+* Split groups of dock windows horizontally or vertically.
+* Drag documents to rearrange the tab order or move them to another group.
+* Add MDI child forms automatically as tabbed documents.
+* Create custom tool windows or custom document windows when you need docking support around your own controls.
 
-* Re-dock support (transition to previous docked or floating state of Dock Windows) has been completely revisited for the new **RadDock** implementation. A service-based semantic is introduced, which saves a window’s state just before any dock operation is about to occur, and this state can easily be restored later on, upon user request (such as double-clicking a window’s caption area). This allows for exact transition to previous state - floating to docked and vice-versa. Even more, if an application requires completely custom re-dock semantic, it may be easily replaced by registering a custom service, which handles internal Save/Restore requests, made by the framework.
-            
-This sample RSS Reader implements __RadDock__ and several other Telerik UI for WinForms controls. Docked tool windows contain "*Feed Subscriptions*" and "*Feed Items*". A floating tool window contains the "*Behavior*" options. At bottom left, the "*Output*" tool window is shown collapsed against the bottom edge. The lower right side of the application displays tabbed documents containing articles.
+### Dock, Float, and Auto-Hide Panes
 
-![WinForms RadDock Tabbed Documents Containing Articles](images/dock-overview001.png)
+During drag and drop, `RadDock` shows a docking compass and visual hints so users can place a window precisely.
 
-## Tool Windows and Tabbed Documents
+**Docking compass and visual hints shown while dragging a pane.**
+![Drag-and-drop docking hints in RadDock, including the docking compass used to position a pane.](images/dock-overview002.png)
 
-* Tool windows (DockPanels) can be floating, docked, pinned, unpinned and tabbed.  
+Tool windows can also switch to an auto-hidden state to preserve screen space while keeping the pane available.
 
-* Horizontal or vertical splits between groups of DockPanels.
+**Auto-hidden tool window collapsed to the edge of the dock area.**
+![Tool window collapsed to the side of the RadDock container in auto-hide mode.](images/dock-overview003.png)
 
-* Full drag and drop support including the docking compass and docking hints for visual feedback
-    ![WinForms RadDock Drag and Drop Support](images/dock-overview002.png)
+**Pinned tool window expanded from its collapsed state.**
+![Expanded tool window that was previously auto-hidden in RadDock.](images/dock-overview004.png)
 
-* Tool windows can be "AutoHidden" (collapsed) or pinned open.  
+### Design and Navigate the Layout
 
-    ![WinForms RadDock AutoHidden](images/dock-overview003.png)
-    ![WinForms RadDock Collapsed](images/dock-overview004.png)
+Use the Advanced Layout Designer to configure the number, position, and properties of dock windows visually at design time.
 
-* Fully interactive design-time layout management.
+**Advanced Layout Designer used to configure a RadDock workspace.**
+![Advanced Layout Designer interface for arranging dock windows in RadDock at design time.](images/dock-overview005.png)
 
-    ![WinForms RadDock Layout Management](images/dock-overview005.png)
+At run time, users can move quickly between windows with keyboard navigation such as `Ctrl+Tab`.
 
-* Ctrl+Tab support for navigating between DockWindows.
- 
-     ![WinForms RadDock Navigating Between DockWindows](images/dock-overview006.png)
+**Window navigation interface displayed when cycling through docked panes.**
+![RadDock window navigation overlay shown while using Ctrl plus Tab to switch between docked windows.](images/dock-overview006.png)
 
-* Tabbed documents (DocumentWindows) can be dragged and rearranged within the tabbed document container.
+### Rearrange Tabbed Documents
 
-    ![WinForms RadDock DocumentWindows Dragged](images/dock-overview007.png)
+`DocumentWindow` tabs can be dragged, reordered, resized, floated, and grouped into different document arrangements.
 
-* Automatic MDI Support. As MDI children are added to a parent form the MDI children are added to the **RadDock** as tabbed documents.
+**Tabbed documents rearranged within the document area.**
+![Document tabs in RadDock being reordered or moved within the tabbed document area.](images/dock-overview007.png)
 
-* Support for custom tool window and custom tabbed documents. These objects are like standard **UserControl** and **Form** objects in the designer but add docking support for free. 
+## Save, Restore, and Customize Layouts
 
-* Support for saving and loading panel layout.
+`RadDock` tracks window state information for each `DockWindow`, such as floating size, floating location, auto-hide size, and previous docking position. Because layout information is stored separately from the panel content, users can switch between states without losing the sizing details for each state.
 
-| RELATED VIDEOS |  |
-| ------ | ------ |
-|The new and improved __RadDock__ for WinForms has landed and this is your opportunity to get a first look. Join Developer Evangelist John Kellar as he shows you how quickly you can get up and running with the new version of RadDock. John will cover the new features so you know what to expect and how you can use RadDock in your applications once it is officially released. (Runtime: 32:54)<br>[Introducing the new RadDock for WinForms ](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms)![WinForms RadDock Overview Getting Started](images/dock-overview009.png)|In this video, you will learn how to get started with the run-time and design-time features in the new RadDock for WinForms. You will see the rich RadDock run-time features in action and you will see how easy it is to get started with RadDock in Visual Studio. You will also be introduced to the new Advanced Layout Designer for RadDock, a design-time tool that makes it easy to customize your RadDock layouts. (Runtime: 09:42)<br>[Getting Started with RadDock for WinForms ](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms)![WinForms RadDock Getting Started Advanced Layout](images/dock-overview010.png)|
+Use layout persistence when your application needs to restore the user workspace between sessions. This is especially useful for line-of-business applications, editors, and dashboards where users customize pane placement.
 
+If you need more control than the default behavior provides, extend the layout process through `RadSplitContainer` and `SplitContainerLayoutStrategy`, or replace the re-dock service with your own implementation.
+
+## Watch the Video Tutorials
+
+Use these videos for a guided overview of the control:
+
+* [Introducing the new RadDock for WinForms](http://www.telerik.com/videos/winforms/introducing-the-new-raddock-for-winforms) explains the main features and shows how to start working with the updated control.
+* [Getting Started with RadDock for WinForms](http://www.telerik.com/videos/winforms/getting-started-with-raddock-for-winforms) demonstrates the run-time and design-time workflow, including the Advanced Layout Designer. 
+
+**Video overview of the new RadDock experience for WinForms.**
+![Preview image for the Introducing the new RadDock for WinForms video.](images/dock-overview009.png)
+
+**Getting-started video for RadDock design-time and run-time features.**
+![Preview image for the Getting Started with RadDock for WinForms video.](images/dock-overview010.png)
 
 ## Telerik UI for WinForms Learning Resources
-* [Telerik UI for WinForms Dock Homepage](https://www.telerik.com/products/winforms/dock.aspx)
-* [Get Started with the Telerik UI for WinForms Dock]({%slug winforms/dock/getting-started%})
-* [Telerik UI for WinForms API Reference](https://docs.telerik.com/devtools/winforms/api/)
-* [Getting Started with Telerik UI for WinForms Components]({%slug winforms/getting-started/first-steps%})
-* [Telerik UI for WinForms Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms) 
-* [Telerik UI for WinForms Forum](https://www.telerik.com/forums/winforms)
-* [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
+Continue with these product-specific resources:
+
+* [Telerik UI for WinForms Dock homepage](https://www.telerik.com/products/winforms/dock.aspx)
+* [Get started with the Telerik UI for WinForms Dock]({%slug winforms/dock/getting-started%})
+* [Telerik UI for WinForms API reference](https://docs.telerik.com/devtools/winforms/api/)
+* [Getting started with Telerik UI for WinForms components]({%slug winforms/getting-started/first-steps%})
+* [Telerik UI for WinForms virtual classroom training courses for registered users](https://learn.telerik.com/learn/course/external/view/elearning/17/TelerikUIforWinForms)
+* [Telerik UI for WinForms forum](https://www.telerik.com/forums/winforms)
+* [Telerik UI for WinForms knowledge base](https://docs.telerik.com/devtools/winforms/knowledge-base)
 
 ## Telerik UI for WinForms Additional Resources
-* [Telerik UI for WinForms Product Overview](https://www.telerik.com/products/winforms.aspx)
-* [Telerik UI for WinForms Blog](https://www.telerik.com/blogs/desktop-winforms)
-* [Telerik UI for WinForms Videos](https://www.telerik.com/videos/product/winforms)
-* [Telerik UI for WinForms Roadmap](https://www.telerik.com/support/whats-new/winforms/roadmap)
-* [Telerik UI for WinForms Pricing](https://www.telerik.com/purchase/individual/winforms.aspx)
-* [Telerik UI for WinForms Code Library](https://www.telerik.com/support/code-library/winforms)
-* [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
-* [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+Use these broader resources to evaluate, plan, and support a WinForms project:
 
-* [Getting Started]({%slug winforms/dock/getting-started%})
-* [Structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     
-* [Advanced Layout Designer]({%slug winforms/raddock/advanced-layout-designer%})     
+* [Telerik UI for WinForms product overview](https://www.telerik.com/products/winforms.aspx)
+* [Telerik UI for WinForms blog](https://www.telerik.com/blogs/desktop-winforms)
+* [Telerik UI for WinForms videos](https://www.telerik.com/videos/product/winforms)
+* [Telerik UI for WinForms roadmap](https://www.telerik.com/support/whats-new/winforms/roadmap)
+* [Telerik UI for WinForms pricing](https://www.telerik.com/purchase/individual/winforms.aspx)
+* [Telerik UI for WinForms code library](https://www.telerik.com/support/code-library/winforms)
+* [Telerik UI for WinForms support](https://www.telerik.com/support/winforms)
+* [What’s new in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
+
+## See Also
+
+* [Get started with RadDock]({%slug winforms/dock/getting-started%})
+* [Understand the RadDock structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})
+* [Use the Advanced Layout Designer]({%slug winforms/raddock/advanced-layout-designer%})

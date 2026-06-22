@@ -1,49 +1,62 @@
 ---
 title: Row Numbers
-page_title: Row Numbers - RadGridView
-description: Use the CellFormatting event to show the row number.
+page_title: Display Row Numbers in RadGridView
+description: Learn how to display row numbers in the WinForms RadGridView row header, keep them correct during paging, and adjust the row header width.
 slug: winforms/gridview/cells/formatting-row-numbers
 tags: formatting,cells
 published: True
 position: 3
 ---
 
-# Row Numbers
+# Display Row Numbers in RadGridView
 
-By default, **RadGridView** displays a current row indicator in the row header represented by an arrow image. A common requirement is to display the row number in the row header as well. This can be easily achieved by handling the **ViewCellFormatting** event. You can find below a sample code snippet.
+By default, `RadGridView` shows the current row indicator in the row header as an arrow. If you also want to display the row number, handle the `ViewCellFormatting` event and set the row header text for each data row.
 
->caption Figure 1: Row numbers
+This article shows the basic formatting approach, explains how paging affects row numbering, and shows how to make room for both the row number and the current row indicator.
 
-![WinForms RadGridView Row Numbers](images/gridview-cells-formatting-row-numbers001.png)
+**RadGridView row header that shows row numbers next to the current row indicator.**
+![RadGridView row headers displaying row numbers together with the current row indicator arrow.](images/gridview-cells-formatting-row-numbers001.png)
 
-#### Handling the ViewCellFormatting event
+## Show Row Numbers in the Row Header
+
+Handle `ViewCellFormatting` when you need to update the row header text as each row is rendered. In the handler, check whether the formatted cell is a `GridRowHeaderCellElement` for a `GridViewDataRowInfo` row, then assign the row number.
+
+The example also sets `TextImageRelation` to `ImageBeforeText` so the arrow indicator remains visible next to the number.
+
+### Handle the ViewCellFormatting Event
 
 <snippet id='gridview-gridviewrownumbers-rownumbers-cs' />
 <snippet id='gridview-gridviewrownumbers-rownumbers-vb' />
 
->note The **RowIndex** property internally uses the **ChildRows** collection. This collection returns the data rows that are currently represented by RadGridView in the order in which they appear. The collection is modified every time a data operation (grouping, sorting, filtering) occurs. Similar to filtering, sorting and grouping, the ChildRows collection is affected by the paging as well and it contains only the records on the current page. A common scenario is to access the real row index when the paging is enabled in the order the items appear in the grid.
+## Keep Row Numbers Correct When Paging Is Enabled
 
-The RadGridView.MasterTemplate.DataView.**Indexer** offers the Items collection which contains all the rows in the order in which they appear in the grid. The collection is affected every time a data operation like grouping, sorting, filtering occurs. You can use it to extract the correct index when moving through the pages:
+`RowIndex` uses the `ChildRows` collection internally. `ChildRows` contains only the rows that `RadGridView` is currently displaying, in the current grouped, sorted, or filtered order. When paging is enabled, that collection includes only the rows on the current page.
 
-````C#
-            
+>note
+>
+> If you use `RowIndex` while paging is enabled, the row numbers restart on each page because `ChildRows` contains only the visible records for that page.
+
+If you need the row number in the full visible order of the grid, use `RadGridView.MasterTemplate.DataView.Indexer.Items`. This collection reflects the current grouped, sorted, and filtered order across the full data view, so it is a better source for row numbering when users move through pages.
+
+### Use DataView.Indexer for Paged Data
+
+```csharp
 private void radGridView1_ViewCellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
-        {
-            if (e.CellElement is GridRowHeaderCellElement && e.Row is GridViewDataRowInfo)
-            {
-                GridDataView dataView = this.radGridView1.MasterTemplate.DataView as GridDataView;
-                e.CellElement.Text = (dataView.Indexer.Items.IndexOf(e.Row) + 1).ToString();
-                e.CellElement.TextImageRelation = TextImageRelation.ImageBeforeText;
-            }
-            else
-            {
-                e.CellElement.ResetValue(LightVisualElement.TextImageRelationProperty, ValueResetFlags.Local);
-            }
-        }
+{
+    if (e.CellElement is GridRowHeaderCellElement && e.Row is GridViewDataRowInfo)
+    {
+        GridDataView dataView = this.radGridView1.MasterTemplate.DataView as GridDataView;
+        e.CellElement.Text = (dataView.Indexer.Items.IndexOf(e.Row) + 1).ToString();
+        e.CellElement.TextImageRelation = TextImageRelation.ImageBeforeText;
+    }
+    else
+    {
+        e.CellElement.ResetValue(LightVisualElement.TextImageRelationProperty, ValueResetFlags.Local);
+    }
+}
+```
 
-````
-````VB.NET
-
+```vb
 Private Sub radGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs)
     If TypeOf e.CellElement Is GridRowHeaderCellElement AndAlso TypeOf e.Row Is GridViewDataRowInfo Then
         Dim dataView As GridDataView = TryCast(Me.radGridView1.MasterTemplate.DataView, GridDataView)
@@ -53,20 +66,20 @@ Private Sub radGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As T
         e.CellElement.ResetValue(LightVisualElement.TextImageRelationProperty, ValueResetFlags.Local)
     End If
 End Sub
+```
 
-````
+## Increase the Row Header Width
 
-It is necessary to increase the header row's width in order to have enough space to display the row number and the current row indicator. This can be accomplished by setting the TableElement.**RowHeaderColumnWidth** property.
+Increase `TableElement.RowHeaderColumnWidth` so the row header has enough space for both the row number and the current row indicator. Without this adjustment, the number or the arrow can be clipped.
 
-#### Adjust the RowHeaderColumnWidth
+### Adjust the RowHeaderColumnWidth
 
 <snippet id='gridview-gridviewrownumbers-rowheaderwidth-cs' />
 <snippet id='gridview-gridviewrownumbers-rowheaderwidth-vb' />
 
-# See Also
-* [Formatting GridViewCommandColumn]({%slug winforms/gridview/cells/formatting-command-column%})
+## See Also
 
-* [Formating Group Rows]({%slug winforms/gridview/cells/formatting-group-rows%})
-
-* [Style Property]({%slug winforms/gridview/cells/style%})
+* [Format a GridViewCommandColumn]({%slug winforms/gridview/cells/formatting-command-column%})
+* [Format group rows]({%slug winforms/gridview/cells/formatting-group-rows%})
+* [Use the Style property]({%slug winforms/gridview/cells/style%})
 

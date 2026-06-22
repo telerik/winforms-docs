@@ -1,7 +1,7 @@
 ---
 title: HTML-like Text Formatting
 page_title: HTML-like Text Formatting - Telerik Presentation Framework
-description: Telerik Presentation Framework allow you to style the elements text using HTML-like Text Formatting.
+description: Learn how to enable HTML-like text formatting in Telerik Presentation Framework, use supported tags, and add formatted text, links, and images.
 slug: winforms/telerik-presentation-framework/html-like-text-formatting
 tags: html-like,text,formatting
 published: True
@@ -11,39 +11,59 @@ previous_url: tpf-html-like-text-formatting
 
 # HTML-like Text Formatting
 
-| RELATED VIDEOS |  |
-| ------ | ------ |
-|[Enhanced HTML-like Markup Support](http://tv.telerik.com/watch/winforms/utility/enhanced-html-like-markup-support) <br>This video goes over the new text rendering tags provided with the R3 2009 release. It also shows the __RadMarkupEditor__ and gives an example of how to use it from within your own applications. (Runtime: 04:11)|![tpf-html-like-text-formatting 001](images/tpf-html-like-text-formatting001.png)|
+Use HTML-like text formatting to display styled text in Telerik UI for WinForms controls that render text through the Telerik Presentation Framework (TPF). Start the text value with the `<html>` tag, and then apply supported tags to control font styling, links, lists, paragraphs, and images.
 
-## Introduction
+## Related Video
 
-Telerik UI for WinForms provide an advanced text styling mechanism which can be applied to all Telerik WinForms controls and their elements, because it enhances one of the smallest element in Telerik Presentation Framework - the text primitive. The new rich text formatting mechanism uses plain HTML tags to display formatted text such as font style, font color, font size, etc.
+[Enhanced HTML-like Markup Support](http://tv.telerik.com/watch/winforms/utility/enhanced-html-like-markup-support) explains the text rendering tags introduced in the R3 2009 release, shows `RadMarkupEditor`, and demonstrates how to use it in your applications.
 
->note  As of R1 2021 HTML-like formatting supports [custom fonts](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/custom-fonts).    
+![Preview image for the Enhanced HTML-like Markup Support video](images/tpf-html-like-text-formatting001.png)
 
-Your text must start with the __\<html\>__ tag so that HTML-like formatting is activated. The list of supported markup tags is given below:
+## How HTML-like Text Formatting Works
 
-## Supported Tags 
+TPF extends the text primitive that Telerik UI for WinForms controls use to render text. As a result, many Telerik controls can display rich text by parsing a limited set of HTML-like tags. This formatting engine is intended for styled text output. It is not a full HTML or CSS renderer.
+
+>note As of R1 2021, HTML-like formatting supports [custom fonts](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/custom-fonts).
+
+To enable HTML-like formatting:
+
+1. Set the text property of a Telerik control to a string that starts with `<html>`.
+2. Add the supported tags that describe the formatting you want.
+3. Use `<span>` when you need to apply color, font family, or font size in a way that is compatible with `RadMarkupEditor`.
+
+The following example shows the minimum required structure:
+
+````HTML
+<html><b>Formatted text</b></html>
+````
+
+## Supported Tags
 
 | Tag | End Tag | Description |
 | ------ | ------ | ------ |
-| __\<font\>__ |N/A|Font Family. Please use the span tag since the font tag is not supported by RadMarkupEditor.|
-| __\<color\>__ |N/A|Text color. Please use the span tag since the color tag is not supported by RadMarkupEditor.|
-| __\<size\>__ |N/A|Font size. Please use the span tag since the size tag is not supported by RadMarkupEditor.|
-| __\<b\>, \<strong\>__ | __\</b\>, \</strong\>__ |Bold|
-| __\<i\>, \<em\>__ | __\</i\>, \</em\>__ |Italic|
-| __\<u\>__ | __\</u\>__ |Underlined text|
-| __\<br\>__ |N/A|Line break|
-| __\<p\>__ | __\</p\>__ |Paragraph|
-| __\<span\>__ | __\</span\>__ |Span. There is limited support of the style attribute and the CSS properties: font-family, font-size, color, and background-color. Refer to the example below. The *Span* tag is preferable to font, color, and size tags.|
-| __\<ol\>__ | __\</ol\>__ |Ordered list|
-| __\<ul\>__ | __\</ul\>__ |Unordered list|
-| __\<li\>__ | __\</li\>__ |List item. Defines a list item in an ordered or unordered list.|
-| __\<strike\>__ | __\</strike\>__ |Striked text.|
-| __\<a\>__ | __\</a\>__ |Link|
-| __\<img\>__ |N/A|Image|
+| `\<font\>` | N/A | Sets the font family. Prefer `<span>` because `RadMarkupEditor` does not support `<font>`. |
+| `\<color\>` | N/A | Sets the text color. Prefer `<span>` because `RadMarkupEditor` does not support `<color>`. |
+| `\<size\>` | N/A | Sets the font size. Prefer `<span>` because `RadMarkupEditor` does not support `<size>`. |
+| `\<b\>`, `\<strong\>` | `\</b\>`, `\</strong\>` | Displays bold text. |
+| `\<i\>`, `\<em\>` | `\</i\>`, `\</em\>` | Displays italic text. |
+| `\<u\>` | `\</u\>` | Underlines text. |
+| `\<br\>` | N/A | Inserts a line break. |
+| `\<p\>` | `\</p\>` | Creates a paragraph. |
+| `\<span\>` | `\</span\>` | Applies limited inline styling through `font-family`, `font-size`, `color`, and `background-color`. Use this tag when possible. |
+| `\<ol\>` | `\</ol\>` | Creates an ordered list. |
+| `\<ul\>` | `\</ul\>` | Creates an unordered list. |
+| `\<li\>` | `\</li\>` | Creates a list item inside an ordered or unordered list. |
+| `\<strike\>` | `\</strike\>` | Displays strikethrough text. |
+| `\<a\>` | `\</a\>` | Creates a hyperlink. |
+| `\<img\>` | N/A | Displays an image. |
 
-* __Bold, italic, and underline__ In the example below the first word is italic and the second one is both, bold and italic. The third and the forth words are underlined.
+## Common Formatting Examples
+
+The examples below cover the most common formatting tasks.
+
+### Bold, Italic, and Underline
+
+The following example combines bold, italic, and underlined text:
 
 ````HTML
 <html>
@@ -51,7 +71,9 @@ Your text must start with the __\<html\>__ tag so that HTML-like formatting is a
 </html>
 ````
 
-* __Paragraphs__
+### Paragraphs
+
+Use `<p>` to separate text into paragraphs:
 
 ````HTML
 <html>
@@ -60,8 +82,9 @@ Your text must start with the __\<html\>__ tag so that HTML-like formatting is a
 </html>
 ````
 
+### Font Color
 
-* __Font color__ Set the ForeColor using color name e.g. *red* or using hex color e.g. *0000FF*.
+Set the text color by using a named color such as `red` or a hexadecimal value such as `#0000FF`:
 
 ````HTML
 <html>
@@ -70,70 +93,81 @@ Your text must start with the __\<html\>__ tag so that HTML-like formatting is a
 </html>
 ````
 
+### Font Size
 
-
-* __Font size__ Absolute and relative font sizes. The valid relative values are *larger* and *smaller*. The absolute valid values are: xx-small, x-small, small, medium, large, x-large, and xx-large. The default value is *medium*.  Font size can also be set in pt(s). The default font size in Windows Forms on most computers is *8.25pt* i.e. the font size returned by *SystemFonts.DefaultFont* property.
+You can use relative sizes such as `larger` and `smaller`, named absolute sizes such as `small` or `x-large`, or point values. The default font size in Windows Forms on most systems is `8.25pt`, which is the value returned by `SystemFonts.DefaultFont`.
 
 ````HTML
 <html>
     <span style="font-size:large">font size(absolute) </span>
 	<span style="font-size:12">font size in pt(s) (absolute) </span>
-	<span style="font-size:smaller">font size(absolute) </span>
+    <span style="font-size:smaller">font size(relative) </span>
 </html>
 ````
 
-* __Highlighted text__
+### Highlighted Text
+
+Use `background-color` to highlight text:
 
 ````HTML
 <html><span style="background-color:red">Highlighted Text</span></html>
 ````
 
+### Font Family
 
-* __Font family__
+Set the font family through the `style` attribute of a `<span>` tag:
 
 ````HTML
 <html><span style="font-family:georgia">Font Family</span></html>
 ````
 
-* __Striked text__
+### Strikethrough Text
+
+Use `<strike>` to display strikethrough text:
 
 ````HTML
 <html><strike> Some text </strike></html>
 ````
 
+## Links and Images
 
-* __Links__
+Use hyperlinks when you want formatted text to navigate to another location, and use images when text alone is not enough.
+
+### Links
+
+The following example shows the Telerik hyperlink markup that opens an external link:
 
 ````HTML
 <html><a href="<externalLink><linkText>www.telerik.com</linkText><linkUri>http://www.telerik.com</linkUri></externalLink>"> Telerik Corporation</a></html>
 ````
 
-* __Images__
+### Images
+
+Use `<img>` to display an image in the formatted text:
 
 ````HTML
 <html><img src="ImagePath"></html>
 ````
 
-The image path can be a resource or file on the disk.To specify a resource, you can use the __res__ keyword:
+The image path can point to an embedded resource or to a file on disk. To specify a resource, use the `res:` prefix:
 
 ````HTML
 <img src="res:Telerik.Examples.WinControls.SomeImage.jpg">
 ````
 
-To specify a file on the disk you have to specify the disk path e.g. src="C:\some path\image.png" or use the ~ to specify the current directory e.g. src= "~\some path\image.gif". All image types supported by .NET Framework class *Image* are supported by the "img" tag as well.
+To specify a file on disk, provide the full path, for example `src="C:\some path\image.png"`, or use `~` to refer to the current directory, for example `src="~\some path\image.gif"`. All image formats supported by the .NET `Image` class are supported by the `<img>` tag.
             
 
 ## RadMarkupEditor specifics
 
-You can also use some tags that are not present in HTML but are currently supported by the TextPrimitive.
+`RadMarkupEditor` and `TextPrimitive` share much of the same formatting model, but they do not support exactly the same tags. `TextPrimitive` also supports several non-standard tags.
         
 
->note Please refer to the [RadMarkupDialog](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/markup-dialog/radmarkupdialog) article about the list of supported tags; *font* , *color* and *size* tags are not supported by RadMarkupDialog, but can be rendered by TextPrimitive.
->
+>note See the [RadMarkupDialog](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/markup-dialog/radmarkupdialog) article for the list of supported tags. The `font`, `color`, and `size` tags are rendered by `TextPrimitive`, but they are not supported by `RadMarkupDialog`.
 
-You can use \<size=[+|-]value\> to set font size use, and __\<br\>__ to create new line feed. To set bold, underline, and italic text use the corresponding opening and closing tags. Font family is set through __\<font=Family\>__. 
+You can use `<size=[+|-]value>` to change the font size, `<br>` to insert a new line, and the matching opening and closing tags to apply bold, underline, or italic formatting. Set the font family through `<font=Family>`.
 
-The following code snippet will produce the result shown in the screen-shot below:
+The following code snippet produces the formatted result shown in the screenshot:
 
 {{source=..\SamplesCS\TPF\HTMLFormatting.cs region=labelFormatting}} 
 {{source=..\SamplesVB\TPF\HTMLFormatting.vb region=labelFormatting}} 
@@ -150,9 +184,13 @@ Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, B
 
 {{endregion}} 
 
-![tpf-html-like-text-formatting 002](images/tpf-html-like-text-formatting002.png)
+>caption Figure 1: A RadLabel that displays multiple HTML-like text styles
 
-By using the HTML-like text formatting functionality, the __RadLabel__ can display several hyperlinks. Here is a sample code snippet:
+![RadLabel displaying multiple text styles, including font family, color, size, bold, italic, and underline](images/tpf-html-like-text-formatting002.png)
+
+## Display Multiple Hyperlinks in RadLabel
+
+`RadLabel` can display multiple hyperlinks in a single formatted text block. The following example shows how to define several links:
 
 {{source=..\SamplesCS\TPF\HTMLFormatting.cs region=Hyperlinks}} 
 {{source=..\SamplesVB\TPF\HTMLFormatting.vb region=Hyperlinks}} 
@@ -173,14 +211,18 @@ Me.RadLabel1.Text = "<html><size=12><a href=www.telerik.com>Telerik</a>" & Envir
 
 {{endregion}} 
 
-The hyperlink colors can be controlled by the following static properties: 
+The hyperlink colors are controlled by these static properties:
 
-* TinyHTMLParsers.**LinkColor**: defaul color of the hyperlink
-* TinyHTMLParsers.**LinkClickedColor**: visited color of the hyperlink
+- `TinyHTMLParsers.LinkColor`: Default hyperlink color.
+- `TinyHTMLParsers.LinkClickedColor`: Visited hyperlink color.
 
-![tpf-html-like-text-formatting 003](images/tpf-html-like-text-formatting003.png)
+>caption Figure 2: A RadLabel that displays multiple hyperlinks
 
-It is possible to detect which link among several ones is clicked within the __RadLabel__. For this purpose we will use the TextPrimitiveHtmlImpl.TextBlock.__Lines__ collection, which represents the available text lines in the __RadLabel__. Each __TextLine__ consists of __FormattedText__  parts. This __FormattedText__ containing the mouse is associated with the clicked hyperlink:
+![RadLabel displaying multiple hyperlinks with HTML-like formatting](images/tpf-html-like-text-formatting003.png)
+
+## Detect the Clicked Hyperlink
+
+If a `RadLabel` contains multiple hyperlinks, you can detect which one the user clicked. The example below inspects the `TextPrimitiveHtmlImpl.TextBlock.Lines` collection and finds the `FormattedText` instance under the mouse pointer.
 
 {{source=..\SamplesCS\TPF\HTMLFormatting.cs region=MouseDown}} 
 {{source=..\SamplesVB\TPF\HTMLFormatting.vb region=MouseDown}} 
@@ -251,18 +293,13 @@ End Function
 
 {{endregion}}
 
-# See Also
-* [Animations]({%slug winforms/telerik-presentation-framework/animations%})
+## See Also
 
-* [Dependency Properties]({%slug winforms/telerik-presentation-framework/dependency-properties%})
-
-* [Handling User Input]({%slug winforms/telerik-presentation-framework/handling-user-input%})
-
-* [Inherit themes from RadControls derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
-
-* [Microsoft Active Accessibility Support]({%slug winforms/telerik-presentation-framework/microsoft-active-accessibility-support%})
-
-* [Override Theme Settings at Run Time]({%slug winforms/telerik-presentation-framework/override-theme-settings-at-run-time%})
-
-* [RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})
+- [Animations]({%slug winforms/telerik-presentation-framework/animations%})
+- [Dependency Properties]({%slug winforms/telerik-presentation-framework/dependency-properties%})
+- [Handling User Input]({%slug winforms/telerik-presentation-framework/handling-user-input%})
+- [Inherit Themes from RadControls Derivatives]({%slug winforms/telerik-presentation-framework/inherit-themes-from-radcontrols-derivatives%})
+- [Microsoft Active Accessibility Support]({%slug winforms/telerik-presentation-framework/microsoft-active-accessibility-support%})
+- [Override Theme Settings at Run Time]({%slug winforms/telerik-presentation-framework/override-theme-settings-at-run-time%})
+- [RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})
 

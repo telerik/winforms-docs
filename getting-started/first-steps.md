@@ -1,7 +1,7 @@
 ---
 title: First Steps with Telerik UI for WinForms
 page_title: First Steps with Telerik UI for WinForms
-description: Learn how to get the Telerik UI for WinForms controls in your project and start using them quickly.
+description: Create your first Telerik UI for WinForms project, configure the Telerik NuGet feed, install the controls, and bind data to RadGridView.
 slug: winforms/getting-started/first-steps
 tags: get,started,first,steps
 published: True
@@ -10,17 +10,17 @@ position: 0
 
 # First Steps with Telerik UI for WinForms
 
-This tutorial explains how to use the Telerik UI for WinForms components in a WinForms desktop project. You will create a new application from scratch, learn how to add the UI for WinForms components in Visual Studio, and utilize the Telerik NuGet source that lets you download and install all Telerik controls automatically. 
+This tutorial shows how to create your first Telerik UI for WinForms desktop application. You will create a new project, configure the Telerik NuGet feed, install the Telerik UI for WinForms packages, and bind sample data to `RadGridView`.
 
 ## Prerequisites
 
-* To download Telerik UI for WinForms packages, you need a [Telerik account](https://www.telerik.com/account/). If you do not have an account, you can [create one](https://www.telerik.com/account/) for free.
-* To build an application, you need an up-to-date [Visual Studio IDE](https://visualstudio.microsoft.com/vs/) installation with a [compatible .NET version]({%slug winforms/installation-deployment-and-distribution/distributions%}) and the Telerik UI for WinForms workload installed.
+- To download Telerik UI for WinForms packages, you need a [Telerik account](https://www.telerik.com/account/). If you do not have an account, you can [create one](https://www.telerik.com/account/) for free.
+- To build an application, you need an up-to-date [Visual Studio IDE](https://visualstudio.microsoft.com/vs/) installation with a [compatible .NET version]({%slug winforms/installation-deployment-and-distribution/distributions%}) and the Telerik UI for WinForms workload installed.
 
 ## Step 0: Start Your Free Trial
 
-* If you already have an [active license](https://www.telerik.com/account/your-licenses) for Telerik UI for WinForms, skip this step and continue with the next step.
-* If you don't have an active license, follow the steps below to activate your free trial:
+- If you already have an [active license](https://www.telerik.com/account/your-licenses) for Telerik UI for WinForms, skip this step and continue with Step 1.
+- If you do not have an active license, follow these steps to activate your free trial:
 
     1. [Download](https://www.telerik.com/try/ui-for-winforms) the WinForms Installer and start the installation.
 
@@ -28,40 +28,40 @@ This tutorial explains how to use the Telerik UI for WinForms components in a Wi
 
     1. Log in with your Telerik account and complete the installation.
 
-    After the successful installation of Telerik UI for WinForms, the Installer activates your 30-day free trial. The installer also downloads your license key file, so you can skip the next step and continue with [Step 2: Create a new WinForms Telerik Project](#step-2-create-a-new-winforms-telerik-project).
+    After the installer completes, it activates your 30-day free trial and downloads your license key file. You can then skip Step 1 and continue with [Step 2: Create a New WinForms Telerik Project](#step-2-create-a-new-winforms-telerik-project).
 
 ## Step 1: Download Your License Key File
 
-Telerik UI for WinForms suite requires license activation through a license key (trial or commercial). To download and install your Telerik [license key file]({%slug license-key%}):
+Telerik UI for WinForms requires license activation through a trial or commercial license key. To download and install your Telerik [license key file]({%slug license-key%}):
 
 1. Go to the <a href="https://www.telerik.com/account/your-licenses/license-keys" target="_blank">License Keys page</a> in your Telerik account.
 1. Click the **Download License Key** button.
 1. Save the `telerik-license.txt` file to `%AppData%\Telerik\telerik-license.txt`.
 
-This will make the license key available to all Telerik apps that you develop on your local machine.
+This makes the license key available to all Telerik applications that you develop on your local machine.
 
->note To download automatically Telerik license key, use [Telerik Visual Studio Extensions]({% slug license-key%}#automatic-license-key-installation).
+>note To download the Telerik license key automatically, use [Telerik Visual Studio Extensions]({% slug license-key%}#automatic-license-key-installation).
 
 
 ## Step 2: Create a new WinForms Telerik Project
 
-In this step, we will create a basic Telerik WinForms project as a starting point for your application development:
+In this step, create a basic Telerik WinForms project that you can use as a starting point for your application:
 
 1. Open Visual Studio and select **Create a new project** in the start window.
 
-1. Select the **Telerik C# Windows Forms Application** template, and click the **Next** button. This template should create .NET project. If you want to create .NET Framework project, then choose **Telerik C# Windows Forms Application (Net Framework)** project template.
+1. Select the **Telerik C# Windows Forms Application** template, and click **Next**. This template creates a .NET project. If you want to create a .NET Framework project, select the **Telerik C# Windows Forms Application (Net Framework)** template instead.
 
-#### Figure 1: Create a new Telerik WinForms project
+>caption Figure 1: Create a new Telerik WinForms project
 
-![Create new project](images/first-steps-create-new-project.png)
+![Visual Studio project template picker showing the Telerik C# Windows Forms Application template](images/first-steps-create-new-project.png)
 
-> Telerik project templates are available in C# and VB for .NET/.NET Framework. 
+>note Telerik project templates are available in C# and VB for .NET and .NET Framework.
 
 ## Step 3: Add the Telerik NuGet Server
 
-Telerik maintains a NuGet feed with official UI for Telerik UI for WinForms releases. These packages are available for registered users with an active trial or commercial license. Adding the Telerik NuGet server as a source in Visual Studio lets you download and install Telerik packages containing controls and utilities.
+Telerik maintains a NuGet feed with official Telerik UI for WinForms releases. These packages are available to registered users with an active trial or commercial license. Adding the Telerik NuGet server as a package source in Visual Studio lets you download and install Telerik packages that contain controls and utilities.
 
-As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with the NuGet.Config file.
+Because the Telerik NuGet server requires authentication, first create an API key that you will use instead of a password. This approach is more secure, especially when you work with the `NuGet.Config` file.
 
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 
@@ -75,58 +75,68 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
 1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the API Keys page displays only a portion of the key.
 
-1. Store the generated NuGet API key, as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use api-key as the username and your generated API key as the password.
+1. Store the generated NuGet API key because you will need it in the next steps. Whenever Visual Studio asks for Telerik NuGet credentials, use `api-key` as the username and your generated API key as the password.
 
->Telerik API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+>important Telerik API keys expire after two years. Telerik sends an email when a key is about to expire, but it is a good practice to keep your own reminder together with the places where you used the key, such as file paths, project links, Azure DevOps variables, or GitHub Actions secrets.
 
 Next, add the Telerik NuGet feed to Visual Studio:
 
-1. In Visual Studio and go to **Tools > NuGet Package Manager > Package Manager Settings**.
+1. In Visual Studio, go to **Tools > NuGet Package Manager > Package Manager Settings**.
 
-1. Select **Package Sources** and then click the + button to add a new package source.
+1. Select **Package Sources**, and then click **+** to add a new package source.
 
 1. Enter a **Name** for the new package source, for example, `telerik.com`.
 
-1. Add the `https://nuget.telerik.com/v3/index.json` URL as a **Source**. Click **OK**.
+1. Enter `https://nuget.telerik.com/v3/index.json` in the **Source** field, and click **OK**.
 
 1. Whenever Visual Studio displays a dialog to enter credentials for `nuget.telerik.com`, use `api-key` as the username and your NuGet API key as the password.
 
-    ![generate-api-key](images/telerik-nuget-feed.png)
+>caption Figure 2: Add the Telerik NuGet feed
+
+    ![Visual Studio Package Sources settings with the Telerik NuGet feed URL configured](images/telerik-nuget-feed.png)
 
 ## Step 4: Download Telerik UI for WinForms Controls
 
-The easiest way to get the Telerik UI for WinForms controls to your development machine is to [install them by using nuget package]({% slug winforms/nuget%}) direktly from **NuGet Package Manager** in Visual Studio.
+The easiest way to get Telerik UI for WinForms controls on your development machine is to [install them with NuGet packages]({% slug winforms/nuget%}) directly from **NuGet Package Manager** in Visual Studio.
 
-1. In Visual Studio and go to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution...**.
+1. In Visual Studio, go to **Tools > NuGet Package Manager > Manage NuGet Packages for Solution**.
 
-2. Install the **UI.for.WinForms.AllControls** package:
+1. Select the Telerik package source that you added in Step 3.
 
-![Install the UI.for.WinForms.AllControls](images/first-steps-browse-nuget.png)
+1. Search for `UI.for.WinForms.AllControls`, and install the **UI.for.WinForms.AllControls** package.
+
+>caption Figure 3: Install the UI.for.WinForms.AllControls package
+
+![NuGet Package Manager showing the UI.for.WinForms.AllControls package selected for installation](images/first-steps-browse-nuget.png)
 
 >note You can include prerelease versions by selecting the **Include prerelease** checkbox.
 
 After installation, the `UI.for.WinForms.AllControls` package appears under **Packages** in Solution Explorer:
 
-![Install the UI.for.WinForms.AllControls](images/first-steps-installed.png)
+>caption Figure 4: Verify the installed Telerik package
+
+![Solution Explorer showing the installed UI.for.WinForms.AllControls package under Packages](images/first-steps-installed.png)
 
 		
 ## Step 5: Add a Telerik UI for WinForms Control to the RadForm
 
-After installing Telerik UI for WinForms, the controls get populated in the Visual Studio Toolbox. To add a Telerik component, just drag it from the Toolbox and drop it onto the form.
+After you install Telerik UI for WinForms, the controls appear in the Visual Studio Toolbox. To add a Telerik component, drag it from the Toolbox to the form designer surface.
 
 ### 5.1 Add RadGridView to the RadForm
     
-Let's add the [RadGridView]({% slug winforms/gridview/getting-started%}) control. Search for **RadGridView** in the toolbox, then drag it onto the form designer surface.
+Add the [RadGridView]({% slug winforms/gridview/getting-started%}) control. Search for **RadGridView** in the Toolbox, and then drag it to the form designer surface.
 
->caption Figure 3: Add RadGridView from the Toolbox
+>caption Figure 5: Add RadGridView from the Toolbox
 
-![Add RadGridView control from the toolbox](images/first-steps-add-radgridview.gif)
+![Visual Studio Toolbox with RadGridView dragged onto the form designer surface](images/first-steps-add-radgridview.gif)
 
-That's it - RadGridView control is now added to the form. Next, let's populate the grid with data to display meaningful information.
+`RadGridView` is now added to the form. Next, bind the control to sample data so you can verify that the project is configured correctly.
 
 ### 5.2 Bind to BindingList of Custom Object
 
-The example below defines an `Employee` class with several properties and binds a `BindingList<Employee>` to the RadGridView.  
+The following example defines an `Employee` class with several properties and binds a `BindingList<Employee>` to `RadGridView`.
+
+Add the `Employee` class to your project:
 
 ````C#
 public class Employee
@@ -154,7 +164,9 @@ End Class
 
 ````
 
-Create a `BindingList<Employee>` and assign it to the RadGridView `DataSource` property. Thus, RadGridView will automatically generate columns and populate them with the corresponding data from the data object `Employee`.
+Then create a `BindingList<Employee>` and assign it to the `RadGridView.DataSource` property. `RadGridView` automatically generates columns and populates them with the values from each `Employee` object.
+
+Use the following code in your form:
 
 ````C#
 public partial class RadForm1 : Telerik.WinControls.UI.RadForm
@@ -304,29 +316,29 @@ Partial Public Class RadForm1
 End Class
 ````
 
-To run the application, press `F5`. Congratulations, you created your first application with a Telerik UI for WinForms control!
+Press `F5` to run the application. If the setup is correct, the form opens and `RadGridView` displays the sample employee data.
 
->caption Figure 2: Here is the final result:
+>caption Figure 6: The completed sample application
 
-![gridview-overview](images/gridview-overview.png)
+![Running WinForms application with RadGridView displaying sample employee data](images/gridview-overview.png)
 
 ## Next Steps
 
-Now that you have the Telerik UI for WinForms controls running in your project, you may want to explore their features, customize their behavior or change their appearance. Below you can find guidance on getting started with such tasks:
+Now that Telerik UI for WinForms is running in your project, you can explore control features, customize behavior, or change the visual appearance:
 
-* [Explore control features]({%slug winforms/getting-started/explore-control-features%})
-* [Preview and Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
-* [Further information]({%slug winforms/getting-started/next-steps%})
+- [Explore control features]({%slug winforms/getting-started/explore-control-features%})
+- [Preview and change control appearance]({%slug winforms/getting-started/change-control-appearance%})
+- [Continue with additional next steps]({%slug winforms/getting-started/next-steps%})
 
 ## Utilizing the Telerik AI Tools
 
-Telerik UI for WinForms offers AI-powered development assistance through a unified [MCP (Model Context Protocol) server]({%slug ai-overview%}). It delivers intelligent, context-aware guidance directly in your IDE. The unified MCP server integrates with your IDE to provide contextual help and automate repetitive tasks, so you can explore the library more easily and build feature-rich applications faster.
+Telerik UI for WinForms offers AI-powered development assistance through a unified [MCP (Model Context Protocol) server]({%slug ai-overview%}). It provides context-aware guidance directly in your IDE and can help automate repetitive tasks while you explore the library and build applications faster.
 
-If you are interested in getting started with the Telerik AI tool, follow this guide: [Getting Started with the Telerik UI for WinForms AI Coding Assistant]({%slug ai-mcp-server%})
+If you want to start using the Telerik AI tool, see [Getting Started with the Telerik UI for WinForms AI Coding Assistant]({%slug ai-mcp-server%}).
 
 ## See Also
 
-* [System Requirements](https://www.telerik.com/winforms/tech-sheets/system-requirements)
-* [Download Product Files]({% slug winforms/installation-deployment-and-distribution/download-product-files%})
-* [Predefined Template Applications](https://www.telerik.com/winforms/winforms-guide)
-* [Progress Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
+- [System requirements](https://www.telerik.com/winforms/tech-sheets/system-requirements)
+- [Download product files]({% slug winforms/installation-deployment-and-distribution/download-product-files%})
+- [Predefined template applications](https://www.telerik.com/winforms/winforms-guide)
+- [Progress Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom)
