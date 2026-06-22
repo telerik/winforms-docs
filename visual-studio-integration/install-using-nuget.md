@@ -14,6 +14,7 @@ position: 9
 
 This article explains how to install the Telerik UI for WinForms suite using NuGet packages. Before installing, you need to [Generate an API Key](#generate-an-api-key). There are two methods available for obtaining the NuGet packages:
 
+* [Download from NuGet.org](#download-from-nugetorg)
 * [Get the packages from the Telerik NuGet server](#download-from-the-telerik-nuget-server)
 * [Manually download the packages](#manually-download-nuget-packages)
 
@@ -36,11 +37,17 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
 >API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
+## Download from NuGet.org
+
+>important As of **Q3 2026**, all Telerik UI for WinForms NuGet packages will be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>.
+
 ## Download from the Telerik NuGet server
 
 This method allows you to install Telerik UI for WinForms packages directly from the official Telerik NuGet server. To use this approach, you need to configure Visual Studio to connect to the Telerik NuGet server (**https://nuget.telerik.com/v3/index.json**) as a package source.
 
-> The NuGet v2 server at https://nuget.telerik.com/nuget was sunset in November 2024. The new v3 protocol offers faster package searches and restores, improved security, and more reliable infrastructure. To redirect your feed to the NuGet v3 protocol, all you have to do is to change your NuGet package source URL to https://nuget.telerik.com/v3/index.json.
+```
+https://nuget.telerik.com/v3/index.json
+```
 
 1. First open the __Options__ window. Right-click on the project, from the menu choose **Manage NuGet Packages...**:
 

@@ -42,7 +42,6 @@ This makes the license key available to all Telerik applications that you develo
 
 >note To download the Telerik license key automatically, use [Telerik Visual Studio Extensions]({% slug license-key%}#automatic-license-key-installation).
 
-
 ## Step 2: Create a new WinForms Telerik Project
 
 In this step, create a basic Telerik WinForms project that you can use as a starting point for your application:
@@ -60,6 +59,8 @@ In this step, create a basic Telerik WinForms project that you can use as a star
 ## Step 3: Add the Telerik NuGet Server
 
 Telerik maintains a NuGet feed with official Telerik UI for WinForms releases. These packages are available to registered users with an active trial or commercial license. Adding the Telerik NuGet server as a package source in Visual Studio lets you download and install Telerik packages that contain controls and utilities.
+
+>important Starting with the **Q3 2026** release, all Telerik UI for WinForms NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
 
 Because the Telerik NuGet server requires authentication, first create an API key that you will use instead of a password. This approach is more secure, especially when you work with the `NuGet.Config` file.
 
@@ -111,7 +112,7 @@ The easiest way to get Telerik UI for WinForms controls on your development mach
 
 >note You can include prerelease versions by selecting the **Include prerelease** checkbox.
 
-After installation, the `UI.for.WinForms.AllControls` package appears under **Packages** in Solution Explorer:
+After installation, the `Telerik.UI.for.WinForms.AllControls` package appears under **Packages** in Solution Explorer:
 
 >caption Figure 4: Verify the installed Telerik package
 
