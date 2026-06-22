@@ -42,7 +42,6 @@ This will make the license key available to all Telerik apps that you develop on
 
 >note To download automatically Telerik license key, use [Telerik Visual Studio Extensions]({% slug license-key%}#automatic-license-key-installation).
 
-
 ## Step 2: Create a new WinForms Telerik Project
 
 In this step, we will create a basic Telerik WinForms project as a starting point for your application development:
@@ -58,6 +57,8 @@ In this step, we will create a basic Telerik WinForms project as a starting poin
 > Telerik project templates are available in C# and VB for .NET/.NET Framework. 
 
 ## Step 3: Add the Telerik NuGet Server
+
+>important Starting with the **Q3 2026** release, all Telerik UI for WinForms NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
 
 Telerik maintains a NuGet feed with official UI for Telerik UI for WinForms releases. These packages are available for registered users with an active trial or commercial license. Adding the Telerik NuGet server as a source in Visual Studio lets you download and install Telerik packages containing controls and utilities.
 
@@ -99,15 +100,15 @@ The easiest way to get the Telerik UI for WinForms controls to your development 
 
 1. In Visual Studio and go to **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution...**.
 
-2. Install the **UI.for.WinForms.AllControls** package:
+2. Install the **Telerik.UI.for.WinForms.AllControls** package:
 
-![Install the UI.for.WinForms.AllControls](images/first-steps-browse-nuget.png)
+![Install the Telerik.UI.for.WinForms.AllControls](images/first-steps-browse-nuget.png)
 
 >note You can include prerelease versions by selecting the **Include prerelease** checkbox.
 
-After installation, the `UI.for.WinForms.AllControls` package appears under **Packages** in Solution Explorer:
+After installation, the `Telerik.UI.for.WinForms.AllControls` package appears under **Packages** in Solution Explorer:
 
-![Install the UI.for.WinForms.AllControls](images/first-steps-installed.png)
+![Install the Telerik.UI.for.WinForms.AllControls](images/first-steps-installed.png)
 
 		
 ## Step 5: Add a Telerik UI for WinForms Control to the RadForm
