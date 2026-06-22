@@ -162,7 +162,7 @@ Verify the following items before you continue troubleshooting:
 
 ## Updating Your License Key
 
-Whenever you purchase a new Telerik UI for WinForms license or renew an existing one, always [download a new license key](#download-the-license-key), either automatically or manually. The new license key includes information about all previous license purchases. Once you have the new license key, use it to [activate NuGet-based Telerik UI for WinForms projects](#activate-nuget-based-telerik-ui-for-winforms-projects) or to update the script key that your non-NuGet projects compile.
+Whenever you purchase a new Telerik UI for WinForms license or renew an existing one, always [download a new license key](#downloading-the-license-key), either automatically or manually. The new license key includes information about all previous license purchases. Once you have the new license key, use it to [activate NuGet-based Telerik UI for WinForms projects](#activate-nuget-based-telerik-ui-for-winforms-projects) or to update the script key that your non-NuGet projects compile.
 
 ## See Also
 
