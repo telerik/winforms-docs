@@ -102,7 +102,7 @@ The easiest way to get the Telerik UI for WinForms controls to your development 
 
 2. Install the **Telerik.UI.for.WinForms.AllControls** package:
 
-![Install the UI.for.WinForms.AllControls](images/first-steps-browse-nuget.png)
+![Install the Telerik.UI.for.WinForms.AllControls](images/first-steps-browse-nuget.png)
 
 >note You can include prerelease versions by selecting the **Include prerelease** checkbox.
 
