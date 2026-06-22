@@ -41,11 +41,11 @@ The following example shows the minimum required structure:
 
 | Tag | End Tag | Description |
 | ------ | ------ | ------ |
-| `\<font\>` | N/A | Sets the font family. Prefer `<span>` because `RadMarkupEditor` does not support `<font>`. |
-| `\<color\>` | N/A | Sets the text color. Prefer `<span>` because `RadMarkupEditor` does not support `<color>`. |
-| `\<size\>` | N/A | Sets the font size. Prefer `<span>` because `RadMarkupEditor` does not support `<size>`. |
-| `\<b\>`, `\<strong\>` | `\</b\>`, `\</strong\>` | Displays bold text. |
-| `\<i\>`, `\<em\>` | `\</i\>`, `\</em\>` | Displays italic text. |
+| `<font>` | N/A | Sets the font family. Prefer `<span>` because `RadMarkupEditor` does not support `<font>`. |
+| `<color>` | N/A | Sets the text color. Prefer `<span>` because `RadMarkupEditor` does not support `<color>`. |
+| `<size>` | N/A | Sets the font size. Prefer `<span>` because `RadMarkupEditor` does not support `<size>`. |
+| `<b>`, `<strong>` | `</b>`, `</strong>` | Displays bold text. |
+| `<i>`, `<em>` | `</i>`, `</em>` | Displays italic text. |
 | `\<u\>` | `\</u\>` | Underlines text. |
 | `\<br\>` | N/A | Inserts a line break. |
 | `\<p\>` | `\</p\>` | Creates a paragraph. |
