@@ -46,11 +46,11 @@ The following example shows the minimum required structure:
 | `<size>` | N/A | Sets the font size. Prefer `<span>` because `RadMarkupEditor` does not support `<size>`. |
 | `<b>`, `<strong>` | `</b>`, `</strong>` | Displays bold text. |
 | `<i>`, `<em>` | `</i>`, `</em>` | Displays italic text. |
-| `\<u\>` | `\</u\>` | Underlines text. |
-| `\<br\>` | N/A | Inserts a line break. |
-| `\<p\>` | `\</p\>` | Creates a paragraph. |
-| `\<span\>` | `\</span\>` | Applies limited inline styling through `font-family`, `font-size`, `color`, and `background-color`. Use this tag when possible. |
-| `\<ol\>` | `\</ol\>` | Creates an ordered list. |
+| `<u>` | `</u>` | Underlines text. |
+| `<br>` | N/A | Inserts a line break. |
+| `<p>` | `</p>` | Creates a paragraph. |
+| `<span>` | `</span>` | Applies limited inline styling through `font-family`, `font-size`, `color`, and `background-color`. Use this tag when possible. |
+| `<ol>` | `</ol>` | Creates an ordered list. |
 | `<ul>` | `</ul>` | Creates an unordered list. |
 | `<li>` | `</li>` | Creates a list item inside an ordered or unordered list. |
 | `<strike>` | `</strike>` | Displays strikethrough text. |
