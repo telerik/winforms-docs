@@ -68,7 +68,7 @@ After you download `telerik-license.txt`, continue with the activation path that
 Use this activation path when the project installs the `Telerik.Licensing` NuGet package:
 
 1. Install or restore the `Telerik.Licensing` NuGet package from [NuGet.org](https://www.nuget.org/) in each Telerik UI for WinForms project that you build. It will add the **Telerik.Licensing.Runtime** assembly in your project, which is required to activate the WinForms controls.
-1. Copy the [downloaded](#download-the-license-key) `telerik-license.txt` file to one of the following locations:
+1. Copy the [downloaded](#downloading-the-license-key) `telerik-license.txt` file to one of the following locations:
 
     * For Windows: `%AppData%\Telerik\telerik-license.txt`
     * For Mac/Linux: `~/.telerik/telerik-license.txt`
