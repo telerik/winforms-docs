@@ -30,15 +30,13 @@ The example also sets `TextImageRelation` to `ImageBeforeText` so the arrow indi
 
 ## Keep Row Numbers Correct When Paging Is Enabled
 
-`RowIndex` uses the `ChildRows` collection internally. `ChildRows` contains only the rows that `RadGridView` is currently displaying, in the current grouped, sorted, or filtered order. When paging is enabled, that collection includes only the rows on the current page.
+`RowIndex` uses the `ChildRows` collection internally. `ChildRows` contains only the rows that `RadGridView` is currently displaying, in the current grouped, sorted, or filtered order. When paging is enabled, that collection includes only the rows on the current page. The collection is modified whenever a data operation (grouping, sorting, or filtering) occurs. Similar to filtering, sorting, and grouping, the ChildRows collection is affected by paging as well and it contains only the records on the current page. A common scenario is to access the real row index when the paging is enabled, in the order the items appear in the grid.
 
 >note
 >
-> If you use `RowIndex` while paging is enabled, the row numbers restart on each page because `ChildRows` contains only the visible records for that page.
+> If you use `RowIndex` while paging is enabled, the row numbers restart on each page because `ChildRows` contains only the visible records for that page. If you need the row number in the full visible order of the grid, use `RadGridView.MasterTemplate.DataView.Indexer.Items`. This collection reflects the current grouped, sorted, and filtered order across the full data view, so it is a better source for row numbering when users move through pages.
 
-If you need the row number in the full visible order of the grid, use `RadGridView.MasterTemplate.DataView.Indexer.Items`. This collection reflects the current grouped, sorted, and filtered order across the full data view, so it is a better source for row numbering when users move through pages.
-
-### Use DataView.Indexer for Paged Data
+### Use GridDataView.Indexer for Paged Data
 
 ```csharp
 private void radGridView1_ViewCellFormatting(object sender, Telerik.WinControls.UI.CellFormattingEventArgs e)
@@ -69,7 +67,7 @@ End Sub
 
 ## Increase the Row Header Width
 
-Increase `TableElement.RowHeaderColumnWidth` so the row header has enough space for both the row number and the current row indicator. Without this adjustment, the number or the arrow can be clipped.
+Increase `TableElement.RowHeaderColumnWidth` so the row header has enough space for both the row number and the current row indicator.
 
 ### Adjust the RowHeaderColumnWidth
 
