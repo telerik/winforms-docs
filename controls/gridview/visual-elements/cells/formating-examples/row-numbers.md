@@ -55,7 +55,6 @@ private void radGridView1_ViewCellFormatting(object sender, Telerik.WinControls.
     }
 }
 ```
-
 ```vb
 Private Sub radGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As Telerik.WinControls.UI.CellFormattingEventArgs)
     If TypeOf e.CellElement Is GridRowHeaderCellElement AndAlso TypeOf e.Row Is GridViewDataRowInfo Then
