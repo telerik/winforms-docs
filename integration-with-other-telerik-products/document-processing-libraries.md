@@ -13,9 +13,9 @@ position: 0
 
 ![Telerik Document Processing  Libraries ](images/Telerik_Document_Processing_Libraries.png) 
 
-## Libraries
+## Libraries and Tools
 
-Telerik Document Processing features the following libraries:
+Telerik Document Processing features the following libraries and tools:
 
 <article-card-container>
   <article-card
