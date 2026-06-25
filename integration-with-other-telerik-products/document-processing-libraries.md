@@ -40,7 +40,7 @@ Telerik Document Processing features the following libraries and tools:
         darkSrc="./images/spreadstreamprocessing-banner.png"
         title="RadSpreadStreamProcessing"
         subTitle="Document Processing"
-        description="Generates big spreadsheet documents with great performance and minimal memory footprint in your .NET applications. ">
+        description="Generates big spreadsheet documents with great performance and minimal memory footprint in your .NET applications.">
   </article-card>
   <article-card
         href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radwordsprocessing/overview"
