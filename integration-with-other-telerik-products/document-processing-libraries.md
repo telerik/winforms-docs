@@ -24,7 +24,7 @@ Telerik Document Processing features the following libraries and tools:
         darkSrc="./images/pdfprocessing-banner.png"
         title="RadPdfProcessing"
         subTitle="Document Processing"
-        description="Enables the creation, edit and export of PDF files in your .NET applications. The library supports interactive forms and form filling, as well as digital signatures.">
+        description="Enables the creation, editing, and export of PDF files in your .NET applications. The library supports interactive forms and form filling, as well as digital signatures.">
   </article-card>
   <article-card
         href="https://www.telerik.com/document-processing-libraries/documentation/libraries/radspreadprocessing/overview"
