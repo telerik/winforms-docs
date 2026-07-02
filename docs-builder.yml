@@ -1679,12 +1679,6 @@ meta:
   controls:
     title: Controls
     position: 9
-  winforms-converter/supported-controls:
-    title: Supported Controls
-    position: 3
-  winforms-converter:
-    title: WinForms application modernization wizard
-    position: 8
   core:
     title: .NET Support
     position: 7
