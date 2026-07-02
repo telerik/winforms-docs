@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-Telerik UI for WinForms suite offers a [WinForms Converter]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/winforms-converter%}) which is a tool that allows you to convert the standard .NET Windows Forms controls for all projects in a particular solution to their equivalent in Telerik UI for WinForms. It aims to speed up the conversion process and save time when such projects are modernized. 
+Telerik UI for WinForms suite offers a [WinForms Converter]({%slug converter%}) which is a tool that allows you to convert the standard .NET Windows Forms controls for all projects in a particular solution to their equivalent in Telerik UI for WinForms. It aims to speed up the conversion process and save time when such projects are modernized. 
  
 After a project, built with the standard MS controls, is successfully converted to a Telerik WinForms project, the subscriptions to certain events available in the Designer.cs file may disappear if you open the design view and make some changes.
 
@@ -38,7 +38,7 @@ Double-click it to generate its **Click** event handler:
 
 ![missing-event-handlers-after-converting-the-project-and-opening-the-designer004](images/missing-event-handlers-after-converting-the-project-and-opening-the-designer004.png)
 
-After using the [WinForms Converter]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/winforms-converter%}), Roslyn (used in the converter) converts the event handlers as follows:
+After using the [WinForms Converter]({%slug converter%}), Roslyn (used in the converter) converts the event handlers as follows:
  
 ````C#
 
@@ -80,8 +80,6 @@ End Class
 
 # See Also
 
-* [WinForms Converter]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/winforms-converter%})
-
-* [Step-by-step tutorial]({%slug winforms/winforms-converter/step-by-step-tutorial%})  
+* [WinForms Converter]({%slug converter%})  
 
 
