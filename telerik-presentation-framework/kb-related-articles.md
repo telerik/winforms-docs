@@ -46,7 +46,6 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Create a Virtual Keyboard]({%slug virtual-keyboard%})|
 |[How to Customize a Theme]({%slug customize-a-theme%})|
 |[How to Deal with AntiVirus Alerts]({%slug antivirus-alert%})|
-|[How to Deal with Disappearing Event Handlers after Opening the Designer for a Converted WinForms Project]({%slug missing-event-handlers-after-converting-the-project-and-opening-the-designer%})|
 |[How To Deal with Exceptions Related to NuGet.VisualStudio.Contracts Version=5.11.3.1]({%slug nuget-visualstudio-contract%})|
 |[How to Deal with Layout Issues in Visual Style Builder]({%slug vsb-layout-problems%})|
 |[How to Deal with Multiplied Controls in Toolbox]({%slug multiplied-controls-in-toolbox%})|

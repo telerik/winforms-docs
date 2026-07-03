@@ -88,8 +88,6 @@ This is the recommended activation path for Telerik UI for WinForms projects. Us
 
 When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate the WinForms controls.
 
->warning The project root is the folder that contains the `.csproj` file. Copying `telerik-license.txt` to `bin\Debug`, `bin\Release`, an installed application folder, or another application working directory does not activate the build.
-
 >important Prefer this package-based activation model for new and existing projects whenever possible. Use the script-key approach only when the project cannot use `Telerik.Licensing` or must stay on a direct-assembly model for a special integration scenario.
 
 >note If your project does not use NuGet packages, use the script-key approach described in [Installing a License Key in Projects by Using Telerik Assembly References (without NuGet packages)](#installing-a-license-key-in-projects-by-using-telerik-assembly-references-without-nuget-packages).
@@ -145,7 +143,7 @@ The following example shows multiple script keys in the same file:
 [assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")]     
 ```
 
->important Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
+>warning Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
 
 ## Troubleshoot Common License Key Problems
 
