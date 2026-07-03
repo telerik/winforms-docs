@@ -14,7 +14,7 @@ position: 9
 
 This article explains how to install the Telerik UI for WinForms suite using NuGet packages. Before installing, you need to [Generate an API Key](#generate-an-api-key). There are two methods available for obtaining the NuGet packages:
 
-* [Download from NuGet.org](#download-from-nugetorg)
+* [Download from NuGet.org](#download-from-nuget-org)
 * [Get the packages from the Telerik NuGet server](#download-from-the-telerik-nuget-server)
 * [Manually download the packages](#manually-download-nuget-packages)
 
