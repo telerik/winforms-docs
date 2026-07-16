@@ -30,15 +30,27 @@ Here is a possible solution to resolve the licensing mechanism and remove the Wa
 * Ensure that the watermark does not appear in your Add-In/Plugin when run as a standalone application in Visual Studio. 
 
 * Call the TelerikLicensing.Register() method as early as possible, before initializing any Telerik controls. Keep in mind that RadForm is also a control from our suite. You will need to consider placing it as early as possible in your plug-in’s loading process.
-
-````C#
-
-public class TelerikHelper
-{
-	public static void Register() => Telerik.Licensing.TelerikLicensing.Register();
-}
 	
-````
+	````C#
+	public class TelerikHelper
+	{
+		public static void Register() => Telerik.Licensing.TelerikLicensing.Register();
+	}	
+	````
 
+	To make sure that the parameterless overload of the `TelerikLicensing.Register` work you will need to [manually define the EvidenceAttribute]({%slug license-key%}#installing-a-license-key-in-projects-by-using-telerik-assembly-references-without-nuget-packages) in the plugin/addin project and use the corresponding product script key. Also, this approach should be used even if you install Telerik using NuGet packages.
 
+	Alternatively, you can set the script key directly in the C# code.
 
+  	```C#
+    TelerikLicensing.Register("your-script-key");
+  	```
+	Or if you want to avoid that, you can define the EvidenceAttribute with the script key and use the following code to register the key:
+
+	```C#	
+	var evidenceAttributes = typeof(MyForm).Assembly.GetCustomAttributes().OfType<EvidenceAttribute>();
+	foreach (var attribute in evidenceAttributes)
+	{                
+	   	TelerikLicensing.Register(attribute.Value);
+	}
+ 	```
