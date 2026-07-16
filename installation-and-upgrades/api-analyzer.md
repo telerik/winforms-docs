@@ -37,7 +37,7 @@ In short, the __Telerik Upgrade API Analyzer__ tool will help you with the upgra
 
 Running the __Telerik Upgrade API Analyzer__ opens the screen shown in __Figure 1__.
 
-**Figure 1: Initial screen of  Telerik Upgrade API Analyzer**
+>caption Figure 1: Initial screen of Telerik Upgrade API Analyzer
 
 ![Telerik Upgrade API Analyzer initial screen for WinForms upgrade analysis.](images/upgrade-api-analyzer_0.png)
 
