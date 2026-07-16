@@ -17,7 +17,7 @@ This article will guide you through the process of integrating Azure's [Computer
 
 Before creating the application, you need to create a new Computer Vision API account through the Azure portal. This is explained in great detail [here](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account).
 
-![](images/azure-cognitive-services-image-analysis001.png)
+![Azure portal Computer Vision API account creation for a Telerik UI for WinForms image analysis application.](images/azure-cognitive-services-image-analysis001.png)
 
 Once you've created the account, you have to obtain the subscription keys. You will need them later on in order to make API calls from your application.
 
@@ -31,7 +31,7 @@ You need to add a reference to **System.Net.Http** which holds the API required 
 
 Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add a button, a RadPanel, and a [RadChartView]({%slug winforms/chartview/overview%}) to it. The layout should look like this:
 
-![](images/azure-cognitive-services-image-analysis002.png)
+![Telerik UI for WinForms application layout with a button, RadPanel, and RadChartView for Azure image analysis.](images/azure-cognitive-services-image-analysis002.png)
 
 
 ## Step 4: Add the Code Behind
@@ -136,7 +136,7 @@ private async void radButtonUpload_Click(object sender, EventArgs e)
 
 That is all, you are ready to start and test the application.
 
-![](images/azure-cognitive-services-image-analysis003.png)
+![Telerik UI for WinForms RadChartView showing Azure Computer Vision image analysis categories and tags.](images/azure-cognitive-services-image-analysis003.png)
 
 # See Also
 

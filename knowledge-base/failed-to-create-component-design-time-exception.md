@@ -16,7 +16,7 @@ res_type: kb
 
 *Failed to create component. The error message follows: “System.Runtime.InteropServices.COMException”*
     
-![](images/failed-to-create-component-design-time-exception.png)  
+![Visual Studio designer error dialog for a failed Telerik UI for WinForms component creation.](images/failed-to-create-component-design-time-exception.png)  
  
 If you have used UI for WinForms and have changed your versions at some (you have installed more than one version of the suite on your computer) point you may have encountered this exception. It is caused when you have referenced Telerik assemblies in your project versioned different than the ones in your Toolbox e.g your project references Q1 2013 while in your toolbox you have Q2 2014. When you drag an item from the Toolbox Visual Studio automatically attempts to add references to your project needed for the dragged component. However, since you already have this assembly referenced, but with different version, exception is thrown.  
    

@@ -19,7 +19,7 @@ res_type: kb
 
 To add a watermark image inside the RadRibbonBar control, we can create a custom class that derives from __RadRibbonBarElement__. The custom __RadRibbonBarElement__ will have an additional element that will paint the watermark (image). The important part here is that the newly created element will need to be arranged so that it is positioned per your requirements. In the following solution, we will place a watermark next to the system buttons.
 
-![](images/ribbonbar-add-watermark.gif)
+![Telerik UI for WinForms RadRibbonBar displaying a custom watermark image next to the system buttons.](images/ribbonbar-add-watermark.gif)
 
 ## Solution
 

@@ -19,7 +19,7 @@ It shows how you can connect to the __Azure SQL database__ instance from a blank
 
 Go to your Azure portal, then SQL Databases > Add, and fill all required information.
 
-![](images/azure-sql001.png)
+![Azure portal creating an Azure SQL Database for a Telerik UI for WinForms data integration application.](images/azure-sql001.png)
 
 The process is fairly easy, however if you need detailed information you can check [this article](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-portal).
 
@@ -29,7 +29,7 @@ The process is fairly easy, however if you need detailed information you can che
 
 Once the database is created you can connect from Microsoft SQL server Management Studio. You need to take the server name from the database overview page in the azure portal. Use the name and password from step 1.
 
-![](images/azure-sql002.png)
+![SQL Server Management Studio connecting to an Azure SQL Database for a Telerik UI for WinForms application.](images/azure-sql002.png)
 
 Once you are connected you can interact like with any other database. For this example execute the following query in order to create a table.
 
@@ -46,25 +46,25 @@ CREATE TABLE Movies (
 
 First create the WinForms project, to do that create a blank [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) project and add a [RadGridView]({%slug winforms/gridview%}) and two buttons to it. The application design should look like this:
 
-![](images/azure-sql0032.png)
+![Telerik UI for WinForms application layout with a RadGridView and buttons for Azure SQL Database integration.](images/azure-sql0032.png)
 
 ## Step 4: Create Entity Framework Model.
 
 1. Install the Entity Framework from the Nuget manager.  
-    ![](images/azure-sql004.png)
+    ![NuGet Package Manager installing Entity Framework for a Telerik UI for WinForms Azure SQL Database project.](images/azure-sql004.png)
 
 1. Add a new item to your project and choose **ADO.NET Entity Data Model** from the list of available items.
-    ![](images/azure-sql005.png)
+    ![Add New Item dialog selecting ADO.NET Entity Data Model in a Telerik UI for WinForms project.](images/azure-sql005.png)
 
 1. Choose __Code First__ from database from the __Choose Model Contents__ dialog.
-    ![](images/azure-sql006.png).
+    ![Choose Model Contents dialog selecting Code First from database for Azure SQL in a Telerik UI for WinForms project.](images/azure-sql006.png).
 
 1. Click on New Connection... and input the server name and credentials which you can obtain from the Azure portal. Choose the SQL Server Authentication option to log on to the server.
 
 1. Choose whether or not to include the sensitive data in the connection string, choose a name for it and click Next.
 
 1. Pick the database object you wish to include and click Finish.
-    ![](images/azure-sql007.png).
+    ![Entity Data Model Wizard selecting Azure SQL database objects for a Telerik UI for WinForms application.](images/azure-sql007.png).
 
 ## Step 5: Define the Context Object
 
@@ -170,7 +170,7 @@ End Sub
 
 Now you can manage the data directly in the grid. 
 
-![](images/azure-sql008.png)
+![Telerik UI for WinForms RadGridView displaying editable data loaded from Azure SQL Database.](images/azure-sql008.png)
 
 
 

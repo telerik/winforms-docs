@@ -17,7 +17,7 @@ res_type: kb
 ## PROBLEM  
    
 After you update to a new version of the Telerik WinForms suite, you start seeing RadControls for WinForms in the component tray and you are not able to select them on the form.  
-![](images/ComponentTray2.png)  
+![Visual Studio component tray showing Telerik UI for WinForms controls after an upgrade design-time issue.](images/ComponentTray2.png)  
    
 ## SOLUTION  
    

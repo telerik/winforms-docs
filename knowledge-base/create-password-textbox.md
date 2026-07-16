@@ -21,7 +21,7 @@ This article  shows how you can create a password textbox that is capable to sho
 
 >caption Figure 1: Create PasswordTextBox using RadButtonTextBox
 
-![](images/password-textbox001.gif)
+![Telerik UI for WinForms RadButtonTextBox configured as a password text box.](images/password-textbox001.gif)
 
 
 ## Solution

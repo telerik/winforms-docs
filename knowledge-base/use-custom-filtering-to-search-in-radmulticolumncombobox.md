@@ -15,7 +15,7 @@ res_type: kb
 
 This example shows how you can search in all columns in **RadMultiColumnComboBox**, rather than filtering by just a single column.  The example uses the **CustomFiltering** event of the **EditorElement** to perform a custom search. In this case we will search the entire underlying grid for the text in the editor and if a match is found, we will mark the corresponding cell in a specific color.
  
-![](images/use-custom-filtering-to-search-in-all-columns-of-radmulticolumncombobox.png)
+![Telerik UI for WinForms RadMultiColumnComboBox highlighting search matches across all columns with custom filtering.](images/use-custom-filtering-to-search-in-all-columns-of-radmulticolumncombobox.png)
  
  
 First we can initialize the control. To do that we can populate it with some data, enable the filtering by setting the appropriate properties (AutoFilter, DisplayMember) and add a custom **FilterDescriptor** (without this the CustomFiltering event won't fire). Also we should subscribe to the **CustomFiltering** and **KeyDown** events:  

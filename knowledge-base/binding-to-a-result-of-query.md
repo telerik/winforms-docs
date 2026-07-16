@@ -23,7 +23,7 @@ How to bind a control (RadGridView, RadListView, RadChartView, RadListControl, e
    
 The correct way to bind a control to a result of a query of a DataTable is to use the result's **CopyToDataTable()** method, which will copy the result in a DataTable and will return it. If you attempt to use the **ToList()** method, you will end up with undesired behavior where the control will display the row properties, instead of the rows data. This is caused by the fact that bind mechanism cannot reflect the DataRows information, and the DataTable is the one that handles this kind of objects.  
    
-![](images/ToList.png) ![](images/CopyToDataTable.png)  
+![Telerik UI for WinForms data binding result when using ToList with a DataTable query.](images/ToList.png) ![Telerik UI for WinForms data binding result when using CopyToDataTable with a DataTable query.](images/CopyToDataTable.png)  
  
 Here is a sample:  
 

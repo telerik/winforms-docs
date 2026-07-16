@@ -15,7 +15,7 @@ Cloud Datastore is a highly-scalable NoSQL database which Google promotes for sc
 
 First create the WinForms project, to do that create a blank [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) project and add a [RadGridView]({%slug winforms/gridview%}) and a button to it. The application design should look like this:
 
-![](images/google_cloud_nosql001.png)
+![Telerik UI for WinForms application layout with a RadGridView and button for Google Cloud Datastore integration.](images/google_cloud_nosql001.png)
 
 # Step 2: Create the Database
 
@@ -23,13 +23,13 @@ The following tutorial shows how you can create the **Datastore** instance - [Da
 
 The process is strait forward and easy. You need to add some data as well. When ready your database should look like this.
 
-![](images/google_cloud_nosql002.png)
+![Google Cloud Datastore database populated with sample data for a Telerik UI for WinForms application.](images/google_cloud_nosql002.png)
 
 ## Step 3: Install the NuGet package.
 
 In order to use the classes needed for manipulating the database, you need to install the __Google.Cloud.DataStore.V1__ NuGet package. It can be found on Nuget's official package source server.  
 
-![](images/google_cloud_nosql003.png)
+![NuGet Package Manager installing the Google.Cloud.Datastore.V1 package for a Telerik UI for WinForms application.](images/google_cloud_nosql003.png)
 
 ## Step 4: Connect from the Application
 
@@ -133,7 +133,7 @@ End Function
 
 Now you can view the data in your application:
 
-![](images/google_cloud_nosql004.png)
+![Telerik UI for WinForms RadGridView displaying data loaded from Google Cloud Datastore.](images/google_cloud_nosql004.png)
 
 ## Step 5: Update the database.
 

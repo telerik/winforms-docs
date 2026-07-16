@@ -17,7 +17,7 @@ This article will guide you through the process of integrating Azure's [Text Ana
 
 Before you start, you need to create a new Text Analytics API account through the Azure portal. This is explained in great detail [here](https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-apis-create-account).
 
-![](images/azure-text-analysis001.png)
+![Azure portal Text Analytics API account creation for a Telerik UI for WinForms text analysis application.](images/azure-text-analysis001.png)
 
 Once you've created the account, you have to obtain the subscription keys that were generated for you. You will require them later on in order to make API calls from your application.
 
@@ -25,7 +25,7 @@ Once you've created the account, you have to obtain the subscription keys that w
 
 Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add two [RadTextBoxes]({%slug winforms/editors/textbox%}) a [RadButton]({%slug winforms/buttons/button%}) three [RadLabels]({%slug winforms/panels-and-labels/label%}) and a [RadSpinEditor]({%slug winforms/editors/spineditor%}) to it. The layout should look like this:
 
-![](images/azure-text-analysis002.png)
+![Telerik UI for WinForms text analysis application layout with RadTextBoxes, RadButton, RadLabels, and a RadSpinEditor.](images/azure-text-analysis002.png)
 
 ## Step 3: Add the Microsoft.Azure.CognitiveServices.Language NuGet Package
 
@@ -35,7 +35,7 @@ You can now add the **Microsoft.Azure.CognitiveServices.Language** NuGet package
 
 >tip The package requires a .NET Framework version equal or higher than **4.5.2**. If you're using a lower version, you will need to call the HTTP endpoints directly from C# and serialize and deserialize the requests and responses similarly to the example found in the [Image Analysis]({%slug cloud-services/azure/image-analysis%}) article.
 
-![](images/azure-text-analysis003.png)
+![NuGet Package Manager installing the Microsoft.Azure.CognitiveServices.Language package for a Telerik UI for WinForms text analysis application.](images/azure-text-analysis003.png)
 
 ## Step 4: Use the Text Analytics API
 
@@ -79,7 +79,7 @@ private void radButton1_Click(object sender, EventArgs e)
 
 This is all, you are ready to test the application.
 
-![](images/azure-text-analysis004.png)
+![Telerik UI for WinForms text analysis application showing detected language and sentiment results.](images/azure-text-analysis004.png)
 
 # See Also
 

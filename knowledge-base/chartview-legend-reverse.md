@@ -25,7 +25,7 @@ When the Legend of the RadChartView is shown, the items inside will be ordered i
 
 We can reverse the order of the legend items so that is more readable for the end user.
 
-![ ](images/chartview-legend-reverse-order.png)
+![Telerik UI for WinForms RadChartView with legend items displayed in reverse order.](images/chartview-legend-reverse-order.png)
 
 ````C#
 

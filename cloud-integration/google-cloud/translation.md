@@ -14,7 +14,7 @@ In this article we are going to show you how to use Google's Translation API. Th
  
 Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add 2 [RadTextboxes]({%slug  winforms/editors/textbox%}) and a [Button]({%slug winforms/buttons/button%}) to it. The layout should look like this:
 
-![](images/google-cloud-translation-api000.png)
+![Telerik UI for WinForms translation application layout with two RadTextBoxes and a button.](images/google-cloud-translation-api000.png)
 
 ## Step 2: Adding the NuGet Package
 
@@ -22,7 +22,7 @@ In order to proceed with adding the functionality in your application, you shoul
 
 Once you have done so, you can add the **Google.Cloud.Translation.V2 NuGet** package to your application as shown in the image below:
 
-![](images/google-cloud-translation-api001.png)
+![NuGet Package Manager installing the Google.Cloud.Translation.V2 package for a Telerik UI for WinForms translation application.](images/google-cloud-translation-api001.png)
 
 Once you have all the required packages installed, you can use it within your application by utilizing the **TranslationClient** class.
 
@@ -64,7 +64,7 @@ End Sub
 
 Here is the result of the operation:
 
-![](images/google-cloud-translation-api003.png)
+![Telerik UI for WinForms translation application showing translated text from the Google Cloud Translation API.](images/google-cloud-translation-api003.png)
 
 ## See Also
 

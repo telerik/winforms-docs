@@ -22,7 +22,7 @@ When the user clicks over the image in **RadImageEditor**, we want to get the re
 
 This tutorial demonstrates how to get the clicked location relative to the image considering the zoom factor and scroll position:
 
-![](images/get-clicked-image-coordinates001.gif)
+![Telerik UI for WinForms RadImageEditor showing click coordinates on a zoomed and scrolled image.](images/get-clicked-image-coordinates001.gif)
 
 ## Solution
 

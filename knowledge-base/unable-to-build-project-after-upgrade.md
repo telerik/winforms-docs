@@ -21,7 +21,7 @@ When updating from a **major to a** **minor version**(e.g. you have Q1 XXXX inst
 However, if you upgrade to a major version (Q or a Service Pack from a different major release e.g. from Q1 XXXX to Q2 XXXX or from Q1 XXXX SP2 to Q2 XXXX), this will first remove the already installed version (unless you have checked the "Keep previous parallel versions" check box in the Control Panel's settings (see the last image in this [blog post](http://blogs.telerik.com/chriseargle/posts/12-11-16/notifications-and-settings-in-telerik-control-panel.aspx))) and then it will install the new one. The difference with the previous case is that since this is another major release, the path will not be kept and the suite will be installed in its new folder. In this case your project remains with the old references and since they do not exist any more you will not be able to build it.  
    
  More information about parallel versions can be found in the Control Panel's documentation, which is available by clicking the help button on the top right corner of the form:  
- ![](images/ControlPanelHelp.png)  
+ ![Telerik Control Panel Help button used to open documentation about Telerik UI for WinForms upgrades and parallel versions.](images/ControlPanelHelp.png)  
    
 ## SOLUTION  
   

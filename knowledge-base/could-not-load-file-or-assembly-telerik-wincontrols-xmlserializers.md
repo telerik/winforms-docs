@@ -21,7 +21,7 @@ If you start your project in Debug mode, you may get  the following exception:
  *“The assembly with display name 'Telerik.WinControls.XmlSerializers' failed to load in the 'LoadFrom' binding context of the AppDomain with ID 1. The cause of the failure was: System.IO.FileNotFoundException: Could not load file or assembly 'Telerik.WinControls.XmlSerializers, Version=2011.3.11.1116, Culture=neutral, PublicKeyToken=5bb2a467cbec794e' or one of its dependencies. The system cannot find the file specified.  
  File name: 'Telerik.WinControls.XmlSerializers, Version=2011.3.11.1116, Culture=neutral, PublicKeyToken=5bb2a467cbec794e'”* 
    
-![](images/BindingFailureXmlSerializer001.png)*  
+![Fusion Log Viewer showing a Telerik UI for WinForms Telerik.WinControls.XmlSerializers assembly load failure.](images/BindingFailureXmlSerializer001.png)*  
 
 ## SOLUTION  
  
@@ -31,7 +31,7 @@ Although this behavior may seem like an issue, it is the normal behavior of .NET
 
 Although this behavior is normal, you may not want to see the exception. As stated in the above paragraph, you can prevent the exception from being thrown. In order to do that, please navigate to*Debug &gt;&gt; Exceptions* from the main menu of Visual Studio. This will open the *Exceptions*window. Uncheck the *Managed Debugging Assistance Thrown* checkbox and you will not see the exception anymore.  
    
-![](images/BindingFailureXmlSerializer002.png)  
+![Visual Studio Exceptions dialog disabling Managed Debugging Assistant Thrown for a Telerik UI for WinForms XML serializer warning.](images/BindingFailureXmlSerializer002.png)  
    
 
 For additional information on the topic, please refer to the following resources:  

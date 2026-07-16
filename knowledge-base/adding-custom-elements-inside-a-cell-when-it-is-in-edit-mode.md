@@ -109,7 +109,7 @@ void radGridView1_CellEndEdit(object sender, GridViewCellEventArgs e)
    
 That’s it! Now when we click on a cell of GridViewComboBoxColumn to turn it into an edit mode, we will get this result:   
  
-![](/images/ComplexEditor.png)
+![Telerik UI for WinForms RadGridViewComboBoxColumn custom cell editor with additional elements shown in edit mode.](/images/ComplexEditor.png)
    
 >note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/CustomCellEditor).
 

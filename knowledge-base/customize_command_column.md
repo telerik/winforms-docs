@@ -18,7 +18,7 @@ Res_type: kb
 
 You want to make the button in the command column smaller and show other value. 
 
-![](images/customize-gridviewcommandcolumn001.png)
+![Telerik UI for WinForms RadGridView command column with a smaller customized button and text.](images/customize-gridviewcommandcolumn001.png)
 
 ## Solution
 

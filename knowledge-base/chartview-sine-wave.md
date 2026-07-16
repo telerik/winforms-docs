@@ -21,7 +21,7 @@ res_type: kb
 
 To create sine wave using __AreaSeries__ we can use a custom renderer. The __CartesianRenderer__ is responsible for painting the area for each of your data points.
 
-![ ](images/chartview-sine-wave.png)
+![Telerik UI for WinForms RadChartView AreaSeries rendered as a sine wave.](images/chartview-sine-wave.png)
 
 ## Solution
 
