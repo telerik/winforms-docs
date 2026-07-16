@@ -92,7 +92,7 @@ By default, the Modified changes are not shown as they actually indicate that th
 
 Additionally, __Upgrade API Analyzer__ provides the option to save the gathered information for a later moment through the __Export button__ in the upper right corner, as shown in __Figure 6__. The data will be arranged and exported to a HTML document. The exported information include the currently visible (filtered) data in the grid. 
 
-**Figure 6: API Analyzer provides export to a HTML document**
+>caption Figure 6: API Analyzer provides export to a HTML document
 
 ![Telerik Upgrade API Analyzer exporting WinForms upgrade results to an HTML document.](images/upgrade-api-analyzer_4.png)
 
