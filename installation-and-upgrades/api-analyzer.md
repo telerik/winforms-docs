@@ -77,7 +77,7 @@ For each of the changes, you can see the following information:
 
 By default, the Modified changes are not shown as they actually indicate that there is an internal change in the method/class, which does not affect its function as a whole and does not require any action from your side. Still, you could see the __Modified__ changes by updating the Filter of the __Difference__ column as shown in __Figure 5__.
 
-**Figure 5: Displaying all the changes found including the Modified ones.**
+>caption Figure 5: Displaying all the changes found including the Modified ones.
 
 ![Telerik Upgrade API Analyzer showing all detected changes including modified items.](images/upgrade-api-analyzer_3.png)
 
