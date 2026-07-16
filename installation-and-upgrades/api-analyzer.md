@@ -61,9 +61,9 @@ All you need to do is:
 
 The tool starts analyzing the code, as shown in __Figure 3__, and lists all the changes found between both versions, as demonstrated in __Figure 4__. 
 
-**Figure 3: The tool starts analyzing as soon as you open a solution**
-
 ![Telerik Upgrade API Analyzer starting code analysis when a WinForms solution is opened.](images/upgrade-api-analyzer_1.png)
+
+>caption Figure 3: The tool starts analyzing as soon as you open a solution
 
 **Figure 4: Upgrade API Analyzer lists the found differences**
 
