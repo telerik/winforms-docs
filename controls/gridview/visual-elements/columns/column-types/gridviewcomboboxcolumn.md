@@ -45,7 +45,7 @@ The useful methods for **GridViewComboBoxColumn** are:
 
 >caption Figure 1: GridViewComboBoxColumn
 
-![WinForms RadGridView GridViewComboBoxColumn](images/gridview-columns-gridviewcomboboxcolumn001.png)
+![Telerik UI for WinForms RadGridView showing a GridViewComboBoxColumn with predefined values in a drop-down list](images/gridview-columns-gridviewcomboboxcolumn001.png)
 
 #### Adding and binding GridViewComboBoxColumn
 
@@ -103,7 +103,7 @@ You have to handle the **EditorRequired** event. This event is fired every time 
 
 >caption Figure 2: The items styles are now changed.
 
-![WinForms RadGridView The items styles are now changed](images/gridview-columns-gridviewcomboboxcolumn004.png)
+![Telerik UI for WinForms RadGridView showing a customized GridViewComboBoxColumn drop-down list with updated item styles](images/gridview-columns-gridviewcomboboxcolumn004.png)
 
 ## Examples
 

@@ -19,31 +19,31 @@ Since R3 2015 you can add and configure the groups view definition in the [prope
             
 	>caption Figure 2: Add the default columns.
 
-	![WinForms RadGridView Add the default columns](images/gridview-viewdefinitions-column-groups-view003.gif)
+	![Telerik UI for WinForms RadGridView Property Builder showing the default columns being added before configuring a column groups view](images/gridview-viewdefinitions-column-groups-view003.gif)
 
 1. The next step is to change the __ViewDefinition__ to __ColumnGroups View__. `Figure 3` shows where you can find this property. Changing the view will add the default root group.
             
 	>caption Figure 3: Change the ViewDefinition
 
-	![WinForms RadGridView Change the ViewDefinition](images/gridview-viewdefinitions-column-groups-view002.png)
+	![Telerik UI for WinForms RadGridView Property Builder showing the ViewDefinition property changed to ColumnGroups View](images/gridview-viewdefinitions-column-groups-view002.png)
 
 1. Now you are ready to add the groups. This can be achieved by selecting the __Columns groups__ node which will show the button for adding groups.
             
 	>caption Figure 4: Add Groups
 
-	![WinForms RadGridView Add Groups](images/gridview-viewdefinitions-column-groups-view004.gif)
+	![Telerik UI for WinForms RadGridView Property Builder showing column groups being added in the Columns groups node](images/gridview-viewdefinitions-column-groups-view004.gif)
 
 1. The final step is to arrange the groups. This can easily achieved by just drag and drop columns or groups to the desired position.
             
 	>caption Figure 5: Arrange the columns and groups
 
-	![WinForms RadGridView Arrange the columns and groups](images/gridview-viewdefinitions-column-groups-view005.gif)
+	![Telerik UI for WinForms RadGridView Property Builder showing columns and groups arranged by drag and drop](images/gridview-viewdefinitions-column-groups-view005.gif)
 
 The property builder allows you to edit the groups properties as well. Once a particular group is selected you will be able to change its properties.
         
 >caption Figure 6 Change the group properties
 
-![WinForms RadGridView 6 Change the group properties](images/gridview-viewdefinitions-column-groups-view006.png)
+![Telerik UI for WinForms RadGridView Property Builder showing editable properties for a selected column group](images/gridview-viewdefinitions-column-groups-view006.png)
 
 ## 
 
@@ -74,7 +74,7 @@ The result is:
         
 >caption Figure 1: ColumnGroups ViewDefinition
 
-![WinForms RadGridView ColumnGroups ViewDefinition](images/gridview-viewdefinitions-column-groups-view001.png)
+![Telerik UI for WinForms RadGridView showing the resulting ColumnGroups ViewDefinition layout with grouped columns](images/gridview-viewdefinitions-column-groups-view001.png)
 
 >caution In order to pin a certain group, you should do it after the RadGridView.__ViewDefinition__ property is set and the grid is populated with data.
 

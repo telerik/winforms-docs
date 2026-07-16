@@ -73,8 +73,9 @@ The UI should also respond when the caret is on a document position where the te
 <snippet id='richtexteditor-main-commands-vb' />
 
 
+**RichTextEditor sample UI for applying bold, italic, and underline formatting**
 
-![WinForms RadRichTextEditor Format](images/richtexteditor-getting-started001.png)
+![Telerik UI for WinForms RadRichTextEditor sample UI showing formatting controls for bold, italic, and underline text](images/richtexteditor-getting-started001.png)
 
 ## Creating a Document at run time
 
@@ -100,8 +101,9 @@ Here is an example of a document created from code-behind:
 <snippet id='richtexteditor-main-code-vb' />
 
 
+**RichTextEditor document created at run time**
 
-![WinForms RadRichTextEditor Sample Document](images/richtexteditor-getting-started002.png)
+![Telerik UI for WinForms RadRichTextEditor showing a sample document created programmatically at run time](images/richtexteditor-getting-started002.png)
 
 This document is editable. To make it read only you have to set the __IsReadOnly__ property of the __RadRichTextEditor__ to *true*.
 

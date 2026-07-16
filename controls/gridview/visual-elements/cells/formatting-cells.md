@@ -15,7 +15,7 @@ Due to the UI virtualization in **RadGridView**, cell elements are created only 
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Formatting Data In RadGridView for WinForms](http://tv.telerik.com/watch/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![WinForms RadGridView Formating Cells Tutorials](images/gridview-cells-formatting-cells006.png)|
+|[Formatting Data In RadGridView for WinForms](http://tv.telerik.com/watch/radtips/radgrid/formatting-data-in-radgridview)<br>In this RadTip, John Kellar demonstrates how you can apply custom formatting to data within a RadGridView for Windows Forms. (Runtime: 09:14)|![Telerik UI for WinForms RadGridView video tutorial thumbnail for formatting cell data](images/gridview-cells-formatting-cells006.png)|
 
 ## Formatting data cells.
 
@@ -30,7 +30,7 @@ The __CellFormatting__ event is used to access and change the styles of the *dat
 
 >caption Figure 1: Changing the cells fore color. 
 
-![WinForms RadGridView Changing the cells fore color](images/gridview-cells-formatting-cells001.png)
+![Telerik UI for WinForms RadGridView showing a data column with custom cell forecolor formatting](images/gridview-cells-formatting-cells001.png)
 
 ## Cells background formatting
 
@@ -38,7 +38,7 @@ This is an advanced example of using **CellFormatting** event to highlight certa
 
 >caption Figure 2: Formatting cell upon a condition. 
 
-![WinForms RadGridView Formatting cell upon a condition](images/gridview-cells-formatting-cells002.png)
+![Telerik UI for WinForms RadGridView showing conditional cell background formatting based on a checkbox value in the same row](images/gridview-cells-formatting-cells002.png)
 
 #### Formatting cells 
 
@@ -64,7 +64,7 @@ For example, to change the font of the header cells and the group cells use th
 
 >caption Figure 3: Formatting non-data rows.
 
-![WinForms RadGridView Formatting non-data rows](images/gridview-cells-formatting-cells003.png)
+![Telerik UI for WinForms RadGridView showing custom formatting applied to header cells and group rows](images/gridview-cells-formatting-cells003.png)
 
 ## Formatting cells on demand   
 
@@ -88,7 +88,7 @@ As a result of the update call, the **CellFormatting** event (and the other form
 
 >caption Figure 4: Manually trigger the grid update. 
 
-![WinForms RadGridView Manually trigger the grid update](images/gridview-cells-formatting-cells004.png)
+![Telerik UI for WinForms RadGridView showing on-demand cell highlighting after a manual grid update](images/gridview-cells-formatting-cells004.png)
 
 # See Also
 

@@ -31,7 +31,7 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 
 >caption Figure 1: The grid is grouped by several fields.
  
-![WinForms RadGridView The grid is grouped by several fields](images/gridview-grouping-basic-grouping001.png)
+![Telerik UI for WinForms RadGridView showing data grouped by several fields in the grouping panel](images/gridview-grouping-basic-grouping001.png)
 
 
 #### Setting grouping properties
@@ -55,9 +55,11 @@ The __ShowGroupPanelScrollbars__ property indicates whether the group panel will
 <snippet id='gridview-grouping-showgrouppanelscrollbars-cs' />
 <snippet id='gridview-grouping-showgrouppanelscrollbars-vb' />
 
+**Compare the GroupPanel with ShowGroupPanelScrollbars disabled and enabled**
+
 |ShowGroupPanelScrollbars = *false* |ShowGroupPanelScrollbars = *true* |
 | ------ | ------ |
-|![WinForms RadGridView ShowGroupPanelScrollbars False](images/gridview-grouping-basic-grouping002.png)|![WinForms RadGridView ShowGroupPanelScrollbars True](images/gridview-grouping-basic-grouping003.png)|
+|![Telerik UI for WinForms RadGridView GroupPanel with ShowGroupPanelScrollbars set to false and all group headers fully expanded](images/gridview-grouping-basic-grouping002.png)|![Telerik UI for WinForms RadGridView GroupPanel with ShowGroupPanelScrollbars set to true and horizontal scrollbars enabled](images/gridview-grouping-basic-grouping003.png)|
 # See Also
 * [Custom Grouping]({%slug winforms/gridview/grouping/custom-grouping%})
 

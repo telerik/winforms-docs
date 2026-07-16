@@ -13,7 +13,9 @@ previous_url: gridview-columns-gridviewcheckboxcolumn, gridview-editors-howto-ch
 
 __GridViewCheckBoxColumn__ displays and allows editing of boolean data. The values are shown as check boxes and allow the user to set or clear the check boxes to toggle the underlying boolean data values. __GridViewCheckBoxColumn__ inherits from __GridViewDataColumn.__
 
-![WinForms RadGridView GridViewCheckBoxColumn](images/gridview-columns-gridviewcheckboxcolumn001.png)
+**GridViewCheckBoxColumn displaying boolean values as check boxes**
+
+![Telerik UI for WinForms RadGridView showing a GridViewCheckBoxColumn with boolean values displayed as check boxes](images/gridview-columns-gridviewcheckboxcolumn001.png)
 
 #### Create and add GridViewCheckBoxColumn
 
@@ -60,10 +62,12 @@ The __EditMode__ property controls when the value of the editor will be submitte
 |**HeaderCheckBoxAlignmentProperty**|Controls the alignment of the checkbox to the Text.|
 |**CheckFilteredRows**|Gets or sets a value indicating if the hidden rows will be checked by the header check-box.|
 
+**Compare header checkbox position and alignment settings**
+
 |HeaderCheckBoxPosition/HeaderCheckBoxAlignment|Result|
 |----|----|
-|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleLeft|![WinForms RadGridView gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn002.png)|
-|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleRight|![WinForms RadGridView gridview-columns-gridviewcheckboxcolumn 001](images/gridview-columns-gridviewcheckboxcolumn003.png)|
+|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleLeft|![Telerik UI for WinForms RadGridView showing a header checkbox aligned to the left with the checkbox positioned on the right](images/gridview-columns-gridviewcheckboxcolumn002.png)|
+|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleRight|![Telerik UI for WinForms RadGridView showing a header checkbox aligned to the right with the checkbox positioned on the right](images/gridview-columns-gridviewcheckboxcolumn003.png)|
 
 
 # See Also

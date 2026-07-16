@@ -13,7 +13,7 @@ previous_url: gridview-filtering-basic-filtering
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Filtering and Expressions in RadGridView for WinForms](http://www.telerik.com/videos/winforms/filtering-and-expressions-in-radgridview-for-winforms)<br>In this video, you will learn how to enable three different types of filtering on RadGridView for WinForms.|![WinForms RadGridView Basic Filtering Tutorial](images/gridview-filtering-basic-filtering001.png)|
+|[Filtering and Expressions in RadGridView for WinForms](http://www.telerik.com/videos/winforms/filtering-and-expressions-in-radgridview-for-winforms)<br>In this video, you will learn how to enable three different types of filtering on RadGridView for WinForms.|![Telerik UI for WinForms RadGridView video tutorial thumbnail for filtering and expressions](images/gridview-filtering-basic-filtering001.png)|
 
 User filtering in RadGridView is enabled by the __EnableFiltering__ property. By default, filtering is disabled at all levels.
 
@@ -26,7 +26,9 @@ __GridViewDataColumn__
 
 When filtering is enabled, each __GridViewDataColumn__ column displays a filter box beneath the corresponding header.
 
-![WinForms RadGridView Basic Filtering](images/gridview-filtering-basic-filtering002.png)
+**RadGridView filter boxes displayed beneath the column headers**
+
+![Telerik UI for WinForms RadGridView showing filter boxes displayed beneath each column header](images/gridview-filtering-basic-filtering002.png)
 
 >note The __AutoFilterDelay__ property gets or sets a value in milliseconds that indicates the delay between the last key press and the filtering operation (available since R1 2019 SP1).
 
