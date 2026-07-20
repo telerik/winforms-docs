@@ -38,7 +38,7 @@ Here is a possible solution to resolve the licensing mechanism and remove the Wa
 	}	
 	````
 
-	To make sure that the parameterless overload of the `TelerikLicensing.Register` work you will need to [manually define the EvidenceAttribute]({%slug license-key%}#installing-a-license-key-in-projects-by-using-telerik-assembly-references-without-nuget-packages) in the plugin/addin project and use the corresponding product script key. Also, this approach should be used even if you install Telerik using NuGet packages.
+	To make sure that the parameterless overload of the `TelerikLicensing.Register()` works, you will need to [manually define the `Telerik.Licensing.EvidenceAttribute`]({%slug license-key%}#installing-a-license-key-in-projects-by-using-telerik-assembly-references-without-nuget-packages) in the plug-in/add-in project and use the corresponding product script key. Also, this approach should be used even if you install Telerik using NuGet packages.
 
 	Alternatively, you can set the script key directly in the C# code.
 
