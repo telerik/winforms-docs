@@ -23,7 +23,7 @@ RadRibbonBar - Changed the element hierarchy. Because of the recently introduced
 
 Open the designer and change the index of the last child element.
 
-![](images/ribbonbar-design-time-exception.png)
+![Telerik UI for WinForms RadRibbonBar designer hierarchy showing the child element index to change for the design-time exception fix.](images/ribbonbar-design-time-exception.png)
 
 Here are the other examples of this:
 

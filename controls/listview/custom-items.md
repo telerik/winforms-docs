@@ -20,7 +20,7 @@ This can be done by making use of the __VisualItemCreating__ event. The followin
 
 >caption Figure 1: Custom SimpleListViewVisualItem
 
-![WinForms RadListView Custom SimpleListViewVisualItem](images/listview-custom-items001.png)
+![Telerik UI for WinForms RadListView showing a custom SimpleListViewVisualItem with two embedded buttons](images/listview-custom-items001.png)
 
 First let's create a custom visual item by inheriting from the __SimpleListViewVisualItem__ class:
 
@@ -44,7 +44,7 @@ To use the newly created items, you should handle the __VisualItemCreating__ eve
 
 >caption Figure 2: Custom IconListViewVisualItem
 
-![WinForms RadListView Custom IconListViewVisualItem](images/listview-custom-items003.png)
+![Telerik UI for WinForms RadListView showing a custom IconListViewVisualItem with additional child elements](images/listview-custom-items003.png)
 
 We should create a custom visual item inheriting the __IconListViewVisualItem__. The following example demonstrates how to add custom elements to the IconListViewVisualItem.__Children__ collection:
 
@@ -68,7 +68,7 @@ Since the *DetailsView* provides a grid-like interface, it displays a cell for e
 
 >caption Figure 3: Custom DetailListViewDataCellElement
 
-![WinForms RadListView Custom DetailListViewDataCellElement](images/listview-custom-items002.png)
+![Telerik UI for WinForms RadListView DetailsView showing a custom DetailListViewDataCellElement with an embedded button](images/listview-custom-items002.png)
 
 First let's populate __RadListView__ with items and set its __ViewType__ property to *DetailsView*:
 

@@ -17,7 +17,7 @@ Use HTML-like text formatting to display styled text in Telerik UI for WinForms 
 
 [Enhanced HTML-like Markup Support](http://tv.telerik.com/watch/winforms/utility/enhanced-html-like-markup-support) explains the text rendering tags introduced in the R3 2009 release, shows `RadMarkupEditor`, and demonstrates how to use it in your applications.
 
-![Preview image for the Enhanced HTML-like Markup Support video](images/tpf-html-like-text-formatting001.png)
+![Telerik UI for WinForms Telerik Presentation Framework video preview for enhanced HTML-like markup support](images/tpf-html-like-text-formatting001.png)
 
 ## How HTML-like Text Formatting Works
 
@@ -169,6 +169,8 @@ You can use `<size=[+|-]value>` to change the font size, `<br>` to insert a new 
 
 The following code snippet produces the formatted result shown in the screenshot:
 
+**RadLabel markup with mixed font styles, colors, sizes, and custom font content**
+
 {{source=..\SamplesCS\TPF\HTMLFormatting.cs region=labelFormatting}} 
 {{source=..\SamplesVB\TPF\HTMLFormatting.vb region=labelFormatting}} 
 
@@ -186,7 +188,7 @@ Me.RadLabel1.Text = "<html><size=12>This is RadLabel <br><b><font=Arial>Arial, B
 
 >caption Figure 1: A RadLabel that displays multiple HTML-like text styles
 
-![RadLabel displaying multiple text styles, including font family, color, size, bold, italic, and underline](images/tpf-html-like-text-formatting002.png)
+![Telerik UI for WinForms RadLabel showing HTML-like text formatting with multiple font styles, colors, sizes, and underline](images/tpf-html-like-text-formatting002.png)
 
 ## Display Multiple Hyperlinks in RadLabel
 
@@ -218,7 +220,7 @@ The hyperlink colors are controlled by these static properties:
 
 >caption Figure 2: A RadLabel that displays multiple hyperlinks
 
-![RadLabel displaying multiple hyperlinks with HTML-like formatting](images/tpf-html-like-text-formatting003.png)
+![Telerik UI for WinForms RadLabel showing multiple hyperlinks rendered with HTML-like text formatting](images/tpf-html-like-text-formatting003.png)
 
 ## Detect the Clicked Hyperlink
 

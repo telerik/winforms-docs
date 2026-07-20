@@ -18,7 +18,7 @@ res_type: kb
 
 The attached project will demonstrate how to extend the group row with cells displaying the top summary cells values while the group is being collapsed.  
   
-![](images/gridview-with-visible-summary-cells-in-a-collapsed-group.png)
+![Telerik UI for WinForms RadGridView collapsed group row showing visible summary cells.](images/gridview-with-visible-summary-cells-in-a-collapsed-group.png)
 
 ## Solution
 

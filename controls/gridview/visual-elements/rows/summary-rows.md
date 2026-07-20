@@ -24,7 +24,7 @@ The following example demonstrates the steps to create a top pinned summary row 
 
 >caption Figure 1: Top pinned summary row
 
-![WinForms RadGridView Top pinned summary row](images/gridview-rows-summary-rows001.png)
+![Telerik UI for WinForms RadGridView showing a top pinned summary row with aggregate values](images/gridview-rows-summary-rows001.png)
 
 ## SummaryItem properties
 
@@ -71,7 +71,7 @@ The following example demonstrates how to add several summary items to a summary
 
 >caption Figure 2: Format the Summary Item
 
-![WinForms RadGridView Format the summary item](images/gridview-rows-summary-rows002.png)
+![Telerik UI for WinForms RadGridView showing formatted summary items with custom display text](images/gridview-rows-summary-rows002.png)
 
 ## Using an AggregateExpression
 
@@ -82,7 +82,7 @@ The next example demonstrates how to use __AggregateExpression__ to calculate an
 
 >caption Figure 3: Using AggregateExpression
 
-![WinForms RadGridView Using AggregateExpression](images/gridview-rows-summary-rows003.png)
+![Telerik UI for WinForms RadGridView showing a summary row calculated by using an AggregateExpression](images/gridview-rows-summary-rows003.png)
 
 ## Summary rows in a grouped RadGridView
 
@@ -97,18 +97,22 @@ The next example demonstrates how to use summary rows in grouping:
 
 >caption Figure 4: Summary rows in a grouped RadGridView
 
-![WinForms RadGridView Summary rows when groupped](images/gridview-rows-summary-rows004.png)
+![Telerik UI for WinForms RadGridView showing summary rows displayed for grouped data](images/gridview-rows-summary-rows004.png)
 
 As of the **2024 Q1** version, the template in **RadGridView** offers the **ShowCollapsedGroupSummaries** property. Its value indicates whether summary rows will be shown for each group when they are **collapsed**. The property is only relevant when the grid is grouped.
 
-![WinForms RadGridView Summary rows when group are collapsed](images/gridview-rows-summary-rows010.png)
+**Summary rows shown for collapsed groups**
+
+![Telerik UI for WinForms RadGridView showing summary rows for collapsed grouped rows](images/gridview-rows-summary-rows010.png)
 
 In a scenario in which we have nested grouping, the group summary row will appear for each nested group and its parent group when **ShowParentGroupSummaries** property is set to true. To show the group summary row on a specific group, we can set the same **ShowCollapsedGroupSummaries** property which was exposed on a group row level. It has higher priority than the **ShowCollapsedGroupSummaries** that comes from the template. The group row **ShowCollapsedGroupSummaries** property can be set in the CreateRowInfo event handler. However, an important moment here is that first the **ShowCollapsedGroupSummaries** property of the template needs to be set to true, then we can use the below example to remove the group summary row on a nested group.
 
 <snippet id='gridview-summaryrows-summarygroup-cs' />
 <snippet id='gridview-summaryrows-summarygroup-vb' />
 
-![WinForms RadGridView Summary rows when group are collapsed](images/gridview-rows-summary-rows011.png)
+**Nested grouped rows with selective collapsed group summaries**
+
+![Telerik UI for WinForms RadGridView showing nested groups with selective collapsed group summaries](images/gridview-rows-summary-rows011.png)
 
 ## Summary rows in a hierarchical RadGridView
 
@@ -128,7 +132,7 @@ The **GroupSummaryEvaluate** event is fired after a summary item is calculated a
 
 >caption Figure 5: Customizing the summary row
 
-![WinForms RadGridView Customizing the summary row](images/gridview-rows-summary-rows006.png)
+![Telerik UI for WinForms RadGridView showing a summary row with custom formatting applied](images/gridview-rows-summary-rows006.png)
 
         
 ## Extending the SummaryItem
@@ -140,7 +144,7 @@ The following example demonstrates how to create a custom summary item that calc
 <snippet id='gridview-summaryrows-customsummaryitemusage-cs' />
 <snippet id='gridview-summaryrows-customsummaryitemusage-vb' />
 
-![WinForms RadGridView Custom SummaryItem](images/gridview-rows-summary-rows007.png)
+![Telerik UI for WinForms RadGridView showing a custom summary item that counts orders with Freight values below 50](images/gridview-rows-summary-rows007.png)
 
 ## BottomPinnedRowsMode 
 
@@ -149,9 +153,11 @@ You can control the location of the bottom summary rows through the **BottomPinn
 * *Float*: The bottom pinned rows will stay below the scrollable rows. If there are not enough rows to fill the viewport, there will be no gap between the scrollable and pinned rows.
 * *Fixed*: The bottom pinned rows will remain at the bottom of the viewport no matter how many scrollable rows there are in the viewport.
 
+**Compare the fixed and floating BottomPinnedRowsMode layouts**
+
 |GridViewBottomPinnedRowsMode.Fixed|GridViewBottomPinnedRowsMode.Float|
 |----|----|
-|![WinForms RadGridView GridViewBottomPinnedRowsMode Fixed](images/gridview-rows-summary-rows008.png)|![WinForms RadGridView GridViewBottomPinnedRowsMode Float](images/gridview-rows-summary-rows009.png)|
+|![Telerik UI for WinForms RadGridView showing bottom pinned summary rows fixed at the bottom of the viewport](images/gridview-rows-summary-rows008.png)|![Telerik UI for WinForms RadGridView showing bottom pinned summary rows floating directly below the scrollable rows](images/gridview-rows-summary-rows009.png)|
 
 >note When you use the *Fixed* mode, it is necessary to pin the summary row accessing them by the MasterView.SummaryRows collection. Make sure to set the __IsPinned__ property before setting the __PinPosition__.
 

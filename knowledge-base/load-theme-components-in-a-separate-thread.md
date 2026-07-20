@@ -87,7 +87,7 @@ private void Form1_Load(object sender, EventArgs e)
 In this case we get an average timespan of 890 ms. This result compared to the 1422 ms means that we decrease the loading time with about 532 ms. The good thing about loading themes in different thread is that they are already loaded when we want to use them, for example after the form is loaded, I select "Office2007Black" from the RadComboBox and I get the Office2007Black style successfully loaded in the application.  
    
  
-![](/Images/office2007blackthemeloaded.png)
+![Telerik UI for WinForms application with the Office2007Black theme loaded after background theme initialization.](/Images/office2007blackthemeloaded.png)
    
 >note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/ThemeLoader).  
 

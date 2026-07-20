@@ -18,12 +18,12 @@ res_type: kb
 ## PROBLEM  
    
 This article will show how **RadCommandBar** can be used with combination with **RadPageView** to achieve multiline strips (pages), which will make the navigation easy when the page view has more pages. Also this will allow the user to benefit from both controls features and navigate between pages in a flexible way.  
-![](images/create-multiline-strip-element-with-radcommandbar001.png)  
+![Telerik UI for WinForms RadPageView with RadCommandBar providing multiline page strip navigation.](images/create-multiline-strip-element-with-radcommandbar001.png)  
    
 ## SOLUTION
    
 We can start by creating a blank project where we can add a **RadCommandBar** (docked to the Top as is by default) and a RadPageView with a few pages:   
-![](images/create-multiline-strip-element-with-radcommandbar002.png)  
+![Telerik UI for WinForms blank project with a RadCommandBar and RadPageView before adding multiline navigation buttons.](images/create-multiline-strip-element-with-radcommandbar002.png)  
    
 Now we are ready to add the actual code, which will add buttons to the command bar. First we will create a **CommandBarRowElement** and **CommandBarStripElement**, we will use these elements to host and separate the buttons. Each row will contain a strip with maximum four buttons in it. New row will be created every time when the button number is greater than four. Then we will create, initialize and add a button to the corresponding command bar row for each page. Also we can hide the strip’s overflow button.  
    

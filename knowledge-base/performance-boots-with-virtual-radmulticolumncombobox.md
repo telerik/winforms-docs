@@ -26,7 +26,7 @@ Create a custom RadMultiColumnComboBox which will fit into your needs.  
 I will try to explain only the most important methods/data structures of this example. The full source code can be downloaded below.  
    
 When you open the solution you will see four projects:  
-![](images/performance-boots-with-virtual-radmulticolumncombobox.png)  
+![Visual Studio Solution Explorer for a Telerik UI for WinForms virtual RadMultiColumnComboBox performance example with four projects.](images/performance-boots-with-virtual-radmulticolumncombobox.png)  
    
  
 1. **Trie** – This is the data structure used by our **MultiColumnComboBox **to perform the searching operations. Although it is highly modified the main idea still reminds of a **Trie**. More information about it can be found [here](http://en.wikipedia.org/wiki/Trie)

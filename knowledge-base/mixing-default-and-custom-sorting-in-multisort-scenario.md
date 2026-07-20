@@ -16,7 +16,7 @@ res_type: kb
  
 This example shows how to use both the default and custom sorting to sort your grid. In the below grid all columns prior **Column2** are sorted with the default sort mechanism, while for **Column2** itself, we will use custom sorting.
 
-![](images/mixing-default-and-custom-sorting-in-multisort-scenario001.png)  
+![Telerik UI for WinForms RadGridView using default sorting for some columns and custom sorting for Column2.](images/mixing-default-and-custom-sorting-in-multisort-scenario001.png)  
 
 ## Solution 
 

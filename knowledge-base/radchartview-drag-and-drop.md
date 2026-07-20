@@ -17,7 +17,7 @@ res_type: kb
 ## PROBLEM
 This article demonstrates how to implement drag and drop functionality in  RadChartView. This will allow the user to move data points from one category to another. 
 
-![](images/ChartViewDragAndDrop.gif) 
+![Telerik UI for WinForms RadChartView dragging and dropping data points between categories.](images/ChartViewDragAndDrop.gif) 
  
 ## SOLUTION  
 First we will populate RadChartView with some data. In each category we have a single data point with value of 0. This is needed because all categories must remain visible despite there is no actual data in them:  

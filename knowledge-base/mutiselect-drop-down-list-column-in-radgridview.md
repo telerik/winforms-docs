@@ -16,7 +16,7 @@ res_type: kb
 
 This article will demonstrate how to create a custom column in **RadGridView** with a multi-select drop down editor with check boxes. It allows keyboard selection with **Ctrl** and **Shift** keys and/or by using the mouse and the items' check boxes. The selection is stored in an integer array in the cell value.   
    
-![](images/mutiselect-drop-down-list-column-in-radgridview.png)  
+![Telerik UI for WinForms RadGridView custom multi-select drop-down list column with check boxes.](images/mutiselect-drop-down-list-column-in-radgridview.png)  
    
 >important As of **Q3 2014 (version 2014.3.1021)** Telerik UI for WinForms suite offers [RadCheckedDropDownList](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/checkeddropdownlist) control which combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. All previous functionality is preserved, such as visual formatting and data binding, which is now extended. RadCheckedDropDownList can also be used [as an editor in RadGridView](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to/use-as-radgridview-editor).
 

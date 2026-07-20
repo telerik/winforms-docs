@@ -15,7 +15,7 @@ res_type: kb
   
 **HOW-TO**  
 Create a UserControl, that pops up underneath the current row after clicking "Edit" button. The UserControl provides allows editing the row.  
-![](Images/GridCustomRowForEditing.png)
+![Telerik UI for WinForms RadGridView with a pop-up UserControl for row editing.](Images/GridCustomRowForEditing.png)
     
 **SOLUTION**  
 Let's start with creating the **UserControl**. There you can add the some controls that will help you to edit the cells in the grid. In our case we have added **RadTextBox**, **RadDateTimePicker**and **RadButton**. That is all you need to do in the **UserControl**. Perhaps you can modify some of these controls' properties (i.e. **NullDate**/ **MinDate** for RadDateTimePicker)  

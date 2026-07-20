@@ -59,7 +59,7 @@ The RadGridView.Rows.__AddNew()__ method adds an empty row and allows the user t
 
 >caption Figure 1: Add a blank new row
 
-![WinForms RadGridView Add a blank new row](images/gridview-rows-adding-and-inserting-rows001.png)
+![Telerik UI for WinForms RadGridView showing a blank new row added in unbound mode](images/gridview-rows-adding-and-inserting-rows001.png)
 
 The RadGridView.Rows.__Add(value-for-first-column, value-for-second-column, value-for-third-column)__ method adds a new row with the specified values. You can use the following code snippet to add values for each column:
 
@@ -70,7 +70,7 @@ The RadGridView.Rows.__Add(value-for-first-column, value-for-second-column, valu
 
 >caption Figure 2: Add new row with data in it
 
-![WinForms RadGridView Add new row with data in it](images/gridview-rows-adding-and-inserting-rows002.png)
+![Telerik UI for WinForms RadGridView showing a new row added with predefined cell values in unbound mode](images/gridview-rows-adding-and-inserting-rows002.png)
 
 You can also add rows by creating an instance of __GridViewDataRowInfo__ and adding it to the __Rows__ collection of __RadGridView__:
 
@@ -81,7 +81,7 @@ You can also add rows by creating an instance of __GridViewDataRowInfo__ and add
 
 >caption Figure 3: Add new row by creating an instance first
 
-![WinForms RadGridView Add new row by creating an instance first](images/gridview-rows-adding-and-inserting-rows003.png)
+![Telerik UI for WinForms RadGridView showing a new row added by creating a GridViewDataRowInfo instance first](images/gridview-rows-adding-and-inserting-rows003.png)
 
 ## Inserting rows in RadGridView
 
@@ -94,7 +94,7 @@ Rows can be inserted at a specified position by using the __Insert__ method of t
 
 >caption Figure 4: Insert row to a specific position
 
-![WinForms RadGridView Insert row to a specific position](images/gridview-rows-adding-and-inserting-rows004.png)
+![Telerik UI for WinForms RadGridView showing a row inserted at a specific position in unbound mode](images/gridview-rows-adding-and-inserting-rows004.png)
 
 ## See Also
 * [Conditional Formatting Rows]({%slug winforms/gridview/rows/conditional-formatting-rows%})

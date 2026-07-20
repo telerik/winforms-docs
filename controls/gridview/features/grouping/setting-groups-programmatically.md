@@ -24,7 +24,9 @@ As this is a collection, you are able not only to add, but to remove or clear it
 <snippet id='gridview-grouping-usingsimplegroupdescriptor-cs' />
 <snippet id='gridview-grouping-usingsimplegroupdescriptor-vb' />
 
-![WinForms RadGridView GroupDescriptors](images/gridview-grouping-setting-groups-programmatically001.png)
+**Grid grouped by a simple group descriptor**
+
+![Telerik UI for WinForms RadGridView showing data grouped by a single GroupDescriptor](images/gridview-grouping-setting-groups-programmatically001.png)
 
 The __GroupNames__ property defines the property, by which the data will be grouped. The __GroupNames__ is a __SortDescriptorCollection__ and defines group names for one grouping criteria.
 
@@ -35,7 +37,9 @@ The __GroupNames__ property defines the property, by which the data will be grou
 <snippet id='gridview-grouping-groupingbymorethanonecolumnname-cs' />
 <snippet id='gridview-grouping-groupingbymorethanonecolumnname-vb' />
 
-![WinForms RadGridView Grouping more than one column](images/gridview-grouping-setting-groups-programmatically002.png)
+**Grid grouped by more than one column name**
+
+![Telerik UI for WinForms RadGridView showing grouping by multiple column names within the same group descriptor](images/gridview-grouping-setting-groups-programmatically002.png)
 
 **RadGridView** supports grouping on one or more levels. The following example demonstrates how you can group on two levels:
 
@@ -44,7 +48,9 @@ The __GroupNames__ property defines the property, by which the data will be grou
 <snippet id='gridview-grouping-groupingononeormorelevels-cs' />
 <snippet id='gridview-grouping-groupingononeormorelevels-vb' />
 
-![WinForms RadGridView Grouping on one or more levels](images/gridview-grouping-setting-groups-programmatically003.png)
+**Grid grouped across multiple hierarchy levels**
+
+![Telerik UI for WinForms RadGridView showing grouping applied across multiple hierarchy levels](images/gridview-grouping-setting-groups-programmatically003.png)
 # See Also
 * [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
 

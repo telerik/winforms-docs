@@ -15,7 +15,7 @@ res_type: kb
 |----|----|----|
 |2022.2.510|RadRibbonBar for WinForms|[Dinko Krastev](https://www.telerik.com/blogs/author/dinko-krastev)|
 
-![](images/ribbonbar-drag-drop-treeview.gif)
+![Telerik UI for WinForms drag-and-drop between RadRibbonBar and RadTreeView.](images/ribbonbar-drag-drop-treeview.gif)
 
 ## Solution
 

@@ -20,7 +20,7 @@ res_type: kb
  
 This article describes how you can change the behavior of the header checkbox in the GridViewCheckBoxColumn. This allows to specify which cell should be checked or perform a completely different action when the checkbox state is changed.  
 
-![](images/customize-header-checkbox-behavior001.gif)
+![Telerik UI for WinForms RadGridView header checkbox with customized checked-cell behavior.](images/customize-header-checkbox-behavior001.gif)
 
 ## Solution 
 

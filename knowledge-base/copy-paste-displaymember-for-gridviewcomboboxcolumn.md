@@ -17,7 +17,7 @@ res_type: kb
 
 By default, the **RadGridView** built-in copy/paste functionality uses the selected cells’ value when storing data in the Clipboard. However, when you have a **[GridViewComboBoxColumn](https://docs.telerik.com/devtools/winforms/gridview/columns/column-types/gridviewcomboboxcolumn)** it is more suitable to copy/paste the cells’ text.
 
-## ![](images/copy-paste-displaymember-for-gridviewcomboboxcolumn001.gif)
+![Telerik UI for WinForms RadGridView GridViewComboBoxColumn copying display text instead of cell values.](images/copy-paste-displaymember-for-gridviewcomboboxcolumn001.gif)
 
 ## Solution
 
@@ -101,7 +101,7 @@ End Class
 ````
 
 Overriding the **Paste** method allows you to convert the Clipboard data to format appropriate for **RadGridView**. Thus, copying the above data from Notepad and pasting it to **RadGridView** can be achieved.  
-![](images/copy-paste-displaymember-for-gridviewcomboboxcolumn002.gif)  
+![Telerik UI for WinForms RadGridView pasting display text into a GridViewComboBoxColumn.](images/copy-paste-displaymember-for-gridviewcomboboxcolumn002.gif)  
 
 ````C#
 public override void Paste()

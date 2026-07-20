@@ -23,7 +23,7 @@ This article explains in detail the **SpreadExport** abilities and demonstrates 
 
 * [Async Spread Export](#async-spread-export)
 
-The following images show how a grid looks when you export it:<br>![WinForms RadGridView gridview-exporting-data-spread-export 001](images/gridview-exporting-data-spread-export001.png)![WinForms RadGridView gridview-exporting-data-spread-export 002](images/gridview-exporting-data-spread-export002.png)
+The following images show how a grid looks when you export it:<br>![Telerik UI for WinForms RadGridView showing the original grid data before spread export](images/gridview-exporting-data-spread-export001.png)![Telerik UI for WinForms RadGridView exported worksheet showing the grid data in Excel format](images/gridview-exporting-data-spread-export002.png)
 
 >note The spread export functionality requires the __TelerikExport.dll__ assembly. To access the types in TelerikExport, you must include the assembly in your project and reference the __Telerik.WinControls.Export__ namespace.
 
@@ -53,6 +53,8 @@ To use the spread export functionality:
 
 1. Use the __RunExport__ method to trigger the export process. __RunExport__ accepts a filename as a parameter for the exported file.
 
+**Export RadGridView content to an XLSX file**
+
 <snippet id='gridview-spreadexport1-export-cs' />
 <snippet id='gridview-spreadexport1-export-vb' />
 
@@ -79,7 +81,7 @@ The __RunExport__ method has several overloads that allow the user to export usi
 
 >caption Figure: Image Export
 
-![WinForms RadGridView Image Export](images/gridview-exporting-data-spread-export006.png)
+![Telerik UI for WinForms RadGridView exported worksheet showing image content preserved during spread export](images/gridview-exporting-data-spread-export006.png)
 
 
 ## Properties
@@ -189,10 +191,12 @@ This event is used to format the cells to be exported. The event arguments provi
 
 Here is an example of formatting the exported grid:
 
+**Apply custom export styles to table headers and hierarchy rows**
+
 <snippet id='gridview-spreadexport1-cellformatting-cs' />
 <snippet id='gridview-spreadexport1-cellformatting-vb' />
 
-![WinForms RadGridView gridview-exporting-data-spread-export 003](images/gridview-exporting-data-spread-export003.png)
+![Telerik UI for WinForms RadGridView exported worksheet showing custom formatting for headers and hierarchy rows](images/gridview-exporting-data-spread-export003.png)
 
 ### WorkbookCreated 
 
@@ -212,7 +216,7 @@ __RadGridView__ can export its grouped content by simply setting the __ExportChi
 
 >caption Figure: Exporting Grouped Data
 
-![WinForms RadGridView Exporting Grouped Data](images/gridview-exporting-data-spread-export005.png)
+![Telerik UI for WinForms RadGridView exported worksheet showing grouped data preserved in the spread export output](images/gridview-exporting-data-spread-export005.png)
 
 #### Exporting Grouped Data
 
@@ -248,7 +252,7 @@ This example demonstrates how to combine the async spread export feature with a 
         
 >caption Figure: Exporting Data Asynchronously
 
-![WinForms RadGridView Exporting Data Asynchronously](images/gridview-exporting-data-async-spread-export001.gif)
+![Telerik UI for WinForms RadGridView showing asynchronous spread export progress with a progress bar](images/gridview-exporting-data-async-spread-export001.gif)
 
 1\. Bind __RadGridView__ and define the initial settings.
 

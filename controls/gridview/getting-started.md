@@ -45,7 +45,7 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 >caption Figure 1: The final result
 
-![WinForms RadGridView Hierarchical Grid With Two Table](images/grid-getting-started001.png)
+![Telerik UI for WinForms RadGridView hierarchical grid showing product categories with expandable product information rows](images/grid-getting-started001.png)
 
 ### Setting up the Form
 
@@ -62,7 +62,8 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 1. Select __Add Project Data Source__. This step will open the __Data Source Configuration Wizard__.
 
 1. On the __Choose a Data Source Type__ page, select __Database__ and click __Next__.
-![WinForms RadGridView Choose a Data Source Type](images/grid-getting-started002.png)
+
+    ![Telerik UI for WinForms RadGridView Data Source Configuration Wizard showing the Choose a Data Source Type step with Database selected](images/grid-getting-started002.png)
 
 1. On the __Choose a Database Model__ page, select __Dataset__.
 
@@ -90,7 +91,8 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 1. Expand the `Products` table and select the following columns: `ProductName`, `CategoryID`, `UnitsOnOrder` and `Discontinued`.
 
-    ![WinForms RadGridView Select Columns](images/grid-getting-started003.png)
+
+    ![Telerik UI for WinForms RadGridView Data Source Configuration Wizard showing the selected columns in the Categories and Products tables](images/grid-getting-started003.png)
 
 1. Click __Finish__ to close the __Data Source Configuration Wizard__.
 
@@ -100,7 +102,8 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 1. Select `Categories` from the `NwindDataSet` data source. This step will create the `categoriesBindingSource` and `categoriesTableAdapter` components.
 
-    ![WinForms RadGridView Select Categories](images/grid-getting-started004.png)
+    
+    ![Telerik UI for WinForms RadGridView Properties window showing the Categories table selected from the NwindDataSet data source](images/grid-getting-started004.png)
 
 1. Select the `DataSource` property drop-down for a second time.
 
@@ -110,7 +113,8 @@ The following tutorial demonstrates how to create a hierarchical grid that prese
 
 1. Select `NwindDataSet`. This step will assign the entire data set to the grid.
 
-    ![WinForms RadGridView NwindDataSet](images/grid-getting-started005.png)
+
+    ![Telerik UI for WinForms RadGridView Properties window showing the NwindDataSet assigned as the grid data source](images/grid-getting-started005.png)
 
 ### Setting Properties
 

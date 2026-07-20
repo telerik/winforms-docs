@@ -10,7 +10,7 @@ position: 0
 
 [Google Cloud Platform](https://cloud.google.com/) is a solution which allows businesses to leverage Google's infrastructure. The platform provides different services similar to those of the other most famous and widely-used providers such as Microsoft and Amazon. This section aims to provide an overview of some of the available services and show simple scenarios on how the platform can be integrated with the **Telerik UI for WinForms** controls.
  
-![](images/google_cloud_overview001.png)
+![Google Cloud Platform services overview for Telerik UI for WinForms cloud integration scenarios.](images/google_cloud_overview001.png)
 
 Here is a short list of some of the most useful services:
 

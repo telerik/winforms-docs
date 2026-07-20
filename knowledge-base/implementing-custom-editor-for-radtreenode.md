@@ -17,15 +17,15 @@ res_type: kb
 
 This article will demonstrate how to take advantage of a custom editor. In this case using such an editor you will allow you to change the data contained in the RadTreeNode.**Tag**.  
    
-![](Images/RadTreeNodeEdit11.png)      
+![Telerik UI for WinForms RadTreeView node before editing with its initial Tag value.](Images/RadTreeNodeEdit11.png)      
 *Text = "Node1" Tag = "Initial Tag Text"*   
    
-![](Images/RadTreeNodeEdit22.png)  
+![Telerik UI for WinForms RadTreeView custom editor editing a node Tag value.](Images/RadTreeNodeEdit22.png)  
 *Editing the node i.e. the tag property*  
-![](Images/RadTreeNodeEdit33.png)   
+![Telerik UI for WinForms RadTreeView custom editor entering a new node Tag value.](Images/RadTreeNodeEdit33.png)   
 *Setting "New Tag Value" as Tag value*   
    
-![](Images/RadTreeNodeEdit44.png)   
+![Telerik UI for WinForms RadTreeView node after editing with the updated Tag value.](Images/RadTreeNodeEdit44.png)   
 *Text is back to "Node 1", Tag = "New Tag Value"*  
    
 ## SOLUTION  

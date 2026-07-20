@@ -25,7 +25,7 @@ In the following topic, we will demonstrate how we can offset PieSeries slices b
 
 This behavior can be achieved by handling the __MouseDown__ event of the chart. In the event handler, we will need to find the associated data point with the clicked LegendItemElement.
 
-![ ](images/chartview-offset-pie-legend.gif)
+![Telerik UI for WinForms RadChartView pie chart with an offset slice selected from the legend.](images/chartview-offset-pie-legend.gif)
 
 ````C#
 

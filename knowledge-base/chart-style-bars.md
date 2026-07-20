@@ -22,7 +22,7 @@ You need to set the BackColor of each bar chart depending on the DataPoint value
 
 Iterate the series children and set the color. This should be done after the chart is initialized. The following example sets the color of the values depending on their value. 
 
-![ ](images/chart-style-bars001.png)
+![Telerik UI for WinForms RadChartView BarSeries with bars styled conditionally by value.](images/chart-style-bars001.png)
 
 ````C#
 BarSeries barSeries = new BarSeries("Performance", "RepresentativeName");

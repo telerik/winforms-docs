@@ -26,7 +26,7 @@ The data engine of RadScheduler allows the user to have appointments and resourc
  
 In order to get the desired functionality, you should create a custom EditAppointmentDialog, hide the resources combo box and add a RadListControl which allows multiple selection. Then you should override the logic for loading and saving the users’ settings.  
    
-![](images/radscheduler-with-multiple-resources.png)
+![Telerik UI for WinForms RadScheduler custom appointment dialog with multi-select resources.](images/radscheduler-with-multiple-resources.png)
    
 >note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/Scheduler/SchedulerMultipleResourcesEditDialog).
 
