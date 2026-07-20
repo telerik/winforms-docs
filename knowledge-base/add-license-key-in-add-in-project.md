@@ -43,14 +43,14 @@ Here is a possible solution to resolve the licensing mechanism and remove the Wa
 	Alternatively, you can set the script key directly in the C# code.
 
   	```C#
-    TelerikLicensing.Register("your-script-key");
+    Telerik.Licensing.TelerikLicensing.Register("your-script-key");
   	```
 	Or if you want to avoid that, you can define the EvidenceAttribute with the script key and use the following code to register the key:
 
-	```C#	
-	var evidenceAttributes = typeof(MyForm).Assembly.GetCustomAttributes().OfType<EvidenceAttribute>();
+	```C#
+	var evidenceAttributes = typeof(MyForm).Assembly.GetCustomAttributes().OfType<Telerik.Licensing.EvidenceAttribute>();
 	foreach (var attribute in evidenceAttributes)
 	{                
-	   	TelerikLicensing.Register(attribute.Value);
+		Telerik.Licensing.TelerikLicensing.Register(attribute.Value);
 	}
  	```
