@@ -17,7 +17,7 @@ When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet pack
 
 The license activation process in a CI/CD environment involves the following steps:
 
-1. [Download]({%slug license-key%}) a license key from your Telerik account.
+1. [Download a Telerik UI for .NET WinForms license key]({%slug license-key%}) from your Telerik account.
 
 1. Add the `Telerik.Licensing` NuGet package as a project dependency.
 
@@ -48,7 +48,7 @@ The recommended approach for providing your license key to the `Telerik.Licensin
 
 1. Paste the contents of the license key file as a value.
 
-	> Always consider the Variable size limit—if you are using a [Variable Group](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=azure-pipelines-ui%2Cyaml), the license key will typically exceed the character limit for the variable values. The only way to have a long value in the Variable Group is to [link it from Azure Key Vault](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops). If you cannot use a Key Vault, then use a normal pipeline variable instead or use the [Secure files approach instead](link-to-section).
+  > Always consider the Variable size limit—if you are using a [Variable Group](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=azure-pipelines-ui%2Cyaml), the license key will typically exceed the character limit for the variable values. The only way to have a long value in the Variable Group is to [link it from Azure Key Vault](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops). If you cannot use a Key Vault, then use a normal pipeline variable instead or [use the secure files approach](#using-secure-files-on-azure-devops).
 	
 ## Using Secure Files on Azure DevOps
 

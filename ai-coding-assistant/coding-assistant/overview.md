@@ -11,7 +11,7 @@ position: 0
 
 The Telerik UI for WinForms AI Coding Assistant is an AI-powered code generation tool integrated in the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs.
 
-> To start using AI Coding Assistant, please setup the [Telerik MCP Server]({%slug ai-mcp-server%}).
+> To start using AI Coding Assistant, set up the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}).
 
 ## Available Tools in Telerik AI Coding Assistant
 
@@ -76,4 +76,4 @@ Data Usage:
 ## Next Steps
 
 * Configure the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client
-* Review the [Prompt Library]({%slug ai-prompt-library%})
+* Review the [Telerik UI for WinForms prompt library]({%slug ai-prompt-library%})

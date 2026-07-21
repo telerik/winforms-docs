@@ -34,7 +34,7 @@ The [Custom Shape Editor]({% slug winforms/tools/shapeeditor %}) provides an eas
 
 ## Next Steps
 
-* [Further information]({%slug winforms/getting-started/next-steps%})
+* [Continue with WinForms next steps]({%slug winforms/getting-started/next-steps%})
 
 ## See Also
 

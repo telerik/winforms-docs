@@ -14,9 +14,9 @@ The Preview is a minor release of the **Telerik UI for WinForms** assemblies, th
 
 ## Downloading the Preview Release
 
-The Preview is __available as a NuGet__ package. Alternatively, you can __download the Preview assemblies__ from [your telerik.com account](https://www.telerik.com/account/). To download these files follow the steps below:
+The Preview is __available as a NuGet__ package. Alternatively, you can __download the Preview assemblies__ from [your Telerik account](https://www.telerik.com/account/). To download these files follow the steps below:
  
-1. From your Telerik account, go to the **Downloads** tab and choose Telerik UI for WinForms product [download page](https://www.telerik.com/account/downloads/product-download?product=RCWF).
+1. From your Telerik account, go to the **Downloads** tab and choose the [Telerik UI for WinForms product download page](https://www.telerik.com/account/downloads/product-download?product=RCWF).
 
     ![Telerik UI for WinForms Latest Internal Build Button](images/preview-releases001.png)
 

@@ -60,4 +60,4 @@ If the selected version from the drop down in the previous step matches the tool
 
  * [Upgrade Project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%})
 
- * [Download New Version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
+ * [Download the latest Telerik UI for WinForms version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})

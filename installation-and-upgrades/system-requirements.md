@@ -38,7 +38,7 @@ To develop applications with Telerik UI for WinForms you need to have installed 
 
 * Other .NET Framework only IDEs: Progress OpenEdge, JetBrains Rider   
 
->important In 2024 Q1 (version 2024.1.130) the __Visual Studio Extensions__ for Visual Studio 2015 and 2017 is removed and is no longer distributed with the __Telerik UI for WinForms__ installer. The extension for these Visual Studio versions can be used with Telerik version prior to 2024 Q1. The extension for Visual Studio 2015 and 2017 is still available as a separate integration package in the marketplace and can be downloaded from [here](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions). 
+>important In 2024 Q1 (version 2024.1.130), the __Visual Studio Extensions__ for Visual Studio 2015 and 2017 were removed and are no longer distributed with the __Telerik UI for WinForms__ installer. However, the extensions remain available as a separate package in the marketplace and can be downloaded from the [Visual Studio Marketplace listing for Progress WinForms extensions](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions).
 	
 ## Distributions
 

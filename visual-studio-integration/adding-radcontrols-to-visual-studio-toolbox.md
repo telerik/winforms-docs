@@ -69,7 +69,7 @@ Change this according to your installation and version specifics. Restart Visual
 
 > note You can create this registry entry under the __HKEY_LOCAL_MACHINE__ hive. This will change the setting for all of the users on the system. If you create this registry entry under __HKEY_CURRENT_USER__, this entry will affect the setting for only the current user. 
                 
-More information about this topic you could find in Microsoft Support Center: [How to display an assembly in the "Add Reference" dialog box](http://support.microsoft.com/?kbid=306149) 
+More information about this topic is available in Microsoft Support Center: [Display an assembly in the Visual Studio Add Reference dialog box](http://support.microsoft.com/?kbid=306149) 
 
 __Repetitive RadControls entries in the Toolbox__
 

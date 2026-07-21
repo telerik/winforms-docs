@@ -55,7 +55,7 @@ Once the trial period expires, the following trial indicators are displayed:
 
 To remove all trial limitations and enable production deployment, purchase and upgrade your trial license to a commercial Developer license. The commercial license eliminates all trial indicators and provides full rights for the distribution and deployment of applications using Telerik UI for WinForms.
 
->important To upgrade your trial licence, please check [Updating Your License Key](https://docs.telerik.com/devtools/winforms/licensing/license-key#updating-your-license-key)
+>important To upgrade your trial license, see [how to update your Telerik UI for WinForms license key](https://docs.telerik.com/devtools/winforms/licensing/license-key#updating-your-license-key)
 
 
 ## See Also

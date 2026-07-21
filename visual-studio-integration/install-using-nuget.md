@@ -122,4 +122,4 @@ If you have previously stored credentials for the Telerik NuGet server, you need
 
 * [Installing On Your Computer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
 * [How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})
-* [Install NuGet Key]({%slug install-nuget-keys%})
+* [Restore Telerik NuGet packages in CI with API keys]({%slug install-nuget-keys%})

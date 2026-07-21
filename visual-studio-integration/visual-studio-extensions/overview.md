@@ -29,7 +29,7 @@ The extensions provide robust support across the entire development lifecycle wi
 
 **Visual Studio Extensions for Telerik UI for WinForms** are distributed with the **Telerik UI for WinForms** installer and can also be downloaded separately from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TelerikInc.TelerikWinFormsVSExtensions) for Visual Studio 2019 and later versions.
 
->important **Visual Studio Extensions for Telerik UI for WinForms** for Visual Studio 2015 and 2017 were discontinued in 2024 Q1 (version 2024.1.130) and are no longer distributed with the **Telerik UI for WinForms** installer. However, the extensions for Visual Studio 2015 and 2017 remain available as a separate package in the marketplace and can be downloaded [here](https://marketplace.visualstudio.com/items?itemName=TelerikInc.ProgressWinFormsVSExtensions).
+>important **Visual Studio Extensions for Telerik UI for WinForms** for Visual Studio 2015 and 2017 were discontinued in 2024 Q1 (version 2024.1.130) and are no longer distributed with the **Telerik UI for WinForms** installer. However, the extensions for Visual Studio 2015 and 2017 remain available as a separate package in the marketplace and can be downloaded from the [Visual Studio Marketplace listing for Progress WinForms extensions](https://marketplace.visualstudio.com/items?itemName=vs-publisher-443.TelerikUIforWinForms).
 
 ### Accessing the Extensions
 

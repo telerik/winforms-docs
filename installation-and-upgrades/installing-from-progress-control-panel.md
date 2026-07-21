@@ -16,7 +16,7 @@ The Telerik UI for WinForms controls can also be installed via the [Progress Con
 
 ## Download and Log-in
 
-To start, download the Progress Control Panel from the following [page](https://www.telerik.com/download-trial-file/v2/control-panel) and run the downloaded .exe file. You will soon be presented with the login screen where you need to provide your Telerik account credentials to sign in.
+To start, go to the [Progress Control Panel download page](https://www.telerik.com/download-trial-file/v2/control-panel) and run the downloaded .exe file. You will soon be presented with the login screen where you need to provide your Telerik account credentials to sign in.
 
 >caption Figure 1: The Progress Control Panel Login Screen
 
