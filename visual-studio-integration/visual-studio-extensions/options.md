@@ -57,4 +57,4 @@ __Include internal builds in Latest Version update and retrieval__ – When enab
 
 ## Notifications
 
-__Show me a message when a newer version is available on__ [the Telerik website](http://www.telerik.com). When enabled and solution containing an UI for WinForms project is loaded, you will receive notification if a new version of __Telerik UI for WinForms__ is available on the Telerik website.
+__Show me a message when a newer version is available on__ [the Telerik website](http://www.telerik.com). When enabled and a solution containing a UI for WinForms project is loaded, you will receive a notification if a new version of __Telerik UI for WinForms__ is available on the Telerik website.
