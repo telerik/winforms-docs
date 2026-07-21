@@ -17,7 +17,7 @@ This collection of prompts is not exhaustive and the Telerik UI for WinForms tea
 
 ## How to Use the Prompts
 
-All prompts in this library target the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) via the `#telerik-winforms-assistant` handle. Make sure that you have installed and enabled the MCP server before attempting to run the prompts.
+All prompts in this library target the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) via the `#telerik-winforms-assistant` handle. Make sure that you have installed and enabled the MCP Server before attempting to run the prompts.
 
 1. Browse the prompt library to find a prompt that suits your needs.
 2. Copy the prompt text (including the `#telerik-winforms-assistant` handle).
