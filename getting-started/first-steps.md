@@ -14,7 +14,7 @@ This tutorial shows how to create your first Telerik UI for WinForms desktop app
 
 ## Prerequisites
 
-- To download Telerik UI for WinForms packages, you need a [Telerik account](https://www.telerik.com/account/). If you do not have an account, you can [create one](https://www.telerik.com/account/) for free.
+- To download Telerik UI for WinForms packages, you need a [Telerik account](https://www.telerik.com/account/). If you do not have an account, you can [create a free Telerik account](https://www.telerik.com/account/).
 - To build an application, you need an up-to-date [Visual Studio IDE](https://visualstudio.microsoft.com/vs/) installation with a [compatible .NET version]({%slug winforms/installation-deployment-and-distribution/distributions%}) and the Telerik UI for WinForms workload installed.
 
 ## Step 0: Start Your Free Trial
@@ -22,7 +22,7 @@ This tutorial shows how to create your first Telerik UI for WinForms desktop app
 - If you already have an [active license](https://www.telerik.com/account/your-licenses) for Telerik UI for WinForms, skip this step and continue with Step 1.
 - If you do not have an active license, follow these steps to activate your free trial:
 
-    1. [Download](https://www.telerik.com/try/ui-for-winforms) the WinForms Installer and start the installation.
+    1. [Download the WinForms Installer](https://www.telerik.com/try/ui-for-winforms) and start the installation.
 
     1. Make sure that **Telerik UI for WinForms** is selected and continue with the setup.
 

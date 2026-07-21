@@ -97,5 +97,5 @@ Visual Studio will restart automatically to complete the toolbox update. If auto
 
 * [Configure Project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/configure-project%})
 * [Automatic Dependency Resolving]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/automatic-dependency-resolving%})
-* [Download New Version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
+* [Download the latest Telerik UI for WinForms version]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer%})
 * [How to Upgrade a Telerik UI for WinForms Project]({%slug winforms/installation-deployment-and-distribution/upgrade-project%})

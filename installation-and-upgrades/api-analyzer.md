@@ -28,7 +28,7 @@ In short, the __Telerik Upgrade API Analyzer__ tool will help you with the upgra
 
 ## Where Do You Get Telerik Upgrade API Analyzer?
 
-**Telerik Upgrade API Analyzer** is a **ClickOnce** application and you can download the installation file directly from [our site](http://demos.telerik.com/UpgradeAPIAnalyzer/setup.exe).
+**Telerik Upgrade API Analyzer** is a **ClickOnce** application and you can download the installation file directly from the [Telerik Upgrade API Analyzer download page](http://demos.telerik.com/UpgradeAPIAnalyzer/setup.exe).
 
 >tip The tool relies on **Microsoft .NET Framework 4.5.2** and if you haven’t got the framework on your machine, the setup of the tool installs it automatically.
 

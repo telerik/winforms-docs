@@ -23,8 +23,8 @@ For a high-level product summary, visit the [Telerik UI for WinForms product pag
 
 If you are new to Telerik UI for WinForms, use this sequence to move from evaluation to a working project:
 
-1. Install the product and review the required assemblies in [Installation and Deployment]({% slug winforms/installation-deployment-and-distribution/installing-on-your-computer %}).
-2. Complete the [First Steps]({% slug winforms/getting-started/first-steps %}) walkthrough to create a sample project and add your first controls.
+1. Install the product and review the required assemblies in the [WinForms installation and deployment guide]({% slug winforms/installation-deployment-and-distribution/installing-on-your-computer %}).
+2. Complete the [WinForms first-steps walkthrough]({% slug winforms/getting-started/first-steps %}) to create a sample project and add your first controls.
 3. Browse the control categories in this article to identify the components that match your application requirements.
 4. Review the styling, licensing, and support sections before you move the project into production.
 
@@ -202,34 +202,34 @@ The control catalog is grouped by common application scenarios. Start with the c
 
 Telerik UI for WinForms is a commercial UI library. You can evaluate the full product with a free 30-day trial that also gives you access to technical support from the product team.
 
-When you are ready to ship an application, [purchase a license](https://www.telerik.com/purchase.aspx) and review the [Telerik UI for WinForms license agreement](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s) so you understand the usage terms.
+When you are ready to ship an application, [purchase a Telerik UI for WinForms license](https://www.telerik.com/purchase.aspx) and review the [Telerik UI for WinForms license agreement](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s) so you understand the usage terms.
 
 ## Support Options
 
 Choose the support channel that matches the type of help you need:
 
 * Use the [Telerik UI for WinForms AI Coding Assistant]({%slug ai-overview%}) when you want example code and product-specific implementation guidance.
-* Submit a case through the [Telerik support system](https://www.telerik.com/account/support-tickets?pid=523&supcId=daf62541-57e0-b84c-8b5e-da9851c61873&fbp=false) for technical issues that require direct help from the product team.
-* Visit the [Telerik UI for WinForms forums](https://www.telerik.com/forums/winforms) for community discussions and general product questions.
-* Review the [WinForms feedback portal](https://feedback.telerik.com/winforms) to track planned work, vote on feature requests, and monitor known issues.
-* Contact [Progress Services](https://www.progress.com/services) if you need a custom implementation, migration help, or architecture guidance.
+* Submit a case through the [Telerik support ticket system](https://www.telerik.com/account/support-tickets?pid=523&supcId=daf62541-57e0-b84c-8b5e-da9851c61873&fbp=false) for technical issues that require direct help from the product team.
+* Visit the [Telerik UI for WinForms community forums](https://www.telerik.com/forums/winforms) for community discussions and general product questions.
+* Review the [WinForms feedback portal and roadmap](https://feedback.telerik.com/winforms) to track planned work, vote on feature requests, and monitor known issues.
+* Contact the [Progress Services consulting team](https://www.progress.com/services) if you need a custom implementation, migration help, or architecture guidance.
 * Read [how to get the most from Telerik UI for WinForms support]({%slug submit-support-tickets%}) before you open a ticket.
 
 ## Learning Resources
 
 Use these resources to learn the product faster:
 
-* Read the [WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base) for troubleshooting guidance, integration examples, and focused how-to articles.
-* Use the [Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom) for guided onboarding and product training.
+* Read the [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base) for troubleshooting guidance, integration examples, and focused how-to articles.
+* Use the [Telerik Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom) for guided onboarding and product training.
 * Explore the [Telerik UI for WinForms demos](https://demos.telerik.com/winforms/) to see controls and features in running examples.
 
 ## Installation and Deployment
 
-Use the [Installation and Deployment]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}) documentation when you need to install the product locally, identify the assemblies required by each control, and prepare your application for distribution.
+Use the [installation and deployment guide for Telerik UI for WinForms]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}) when you need to install the product locally, identify the assemblies required by each control, and prepare your application for distribution.
 
 ## Styling and Appearance
 
-Use the [Styling and Appearance]({%slug winforms/themes/using-default-themes%}) documentation to apply built-in themes and keep your application visually consistent. When you need deeper customization, continue with the [Visual Style Builder]({% slug winforms/tools/visual-style-builder %}) documentation.
+Use the [WinForms styling and appearance guide]({%slug winforms/themes/using-default-themes%}) to apply built-in themes and keep your application visually consistent. When you need deeper customization, continue with the [Visual Style Builder customization guide]({% slug winforms/tools/visual-style-builder %}).
 
 ## Help us Improve the Telerik UI for WinForms Documentation
 
@@ -241,11 +241,11 @@ Open an issue in the [winforms-docs GitHub repository](https://github.com/teleri
 
 ### Submit a Documentation Update
 
-If you want to fix the issue directly, fork the repository and submit a pull request. Follow the [contribution instructions](https://github.com/telerik/winforms-docs/blob/master/README.md) to prepare your change and use standard Markdown so the review is easier.
+If you want to fix the issue directly, fork the repository and submit a pull request. Follow the [winforms-docs contribution instructions](https://github.com/telerik/winforms-docs/blob/master/README.md) to prepare your change and use standard Markdown so the review is easier.
 
 ### Share Feedback in the Forums
 
-Post feedback in the [Telerik UI for WinForms forums](https://www.telerik.com/forums/winforms) when you want to discuss a documentation issue with the community or the support team. Use this path when you also want broader product discussion, but expect issue resolution to take longer than a direct GitHub report.
+Post feedback in the [Telerik UI for WinForms community forums](https://www.telerik.com/forums/winforms) when you want to discuss a documentation issue with the community or the support team. Use this path when you also want broader product discussion, but expect issue resolution to take longer than a direct GitHub report.
 
 Thank you for helping improve the Telerik UI for WinForms documentation.
 

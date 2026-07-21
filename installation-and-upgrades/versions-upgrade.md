@@ -22,4 +22,4 @@ A common reason for this error is if the project is still referring to the previ
 
 ## See Also
 
-* [Upgrade project]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%})
+* [Upgrade a WinForms project with the Visual Studio Extensions]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%})

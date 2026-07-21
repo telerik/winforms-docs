@@ -13,7 +13,7 @@ Once you have the controls [working in your project]({%slug winforms/getting-sta
 
 ## Demos
 To access the **Live Demo** simply click on the Windows Start button and type WinForms Demo.
-If you are not able to find the Live Demos using that approach you can also download it directly from [here](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe).
+If you are not able to find the Live Demos using that approach you can also [download the WinForms Live Demos installer](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe) directly.
 ![Explore Live Demos](images/overview.png "Explore Live Demos")
 
 ## Explore properties and tags
@@ -46,7 +46,7 @@ Last, but not least, some most common tasks and configuration options are availa
 Below you can find guidance on changing the control appearance as well as next steps:
 
 * [Preview and Change control appearance]({%slug winforms/getting-started/change-control-appearance%})
-* [Further information]({%slug winforms/getting-started/next-steps%})
+* [Continue with WinForms next steps]({%slug winforms/getting-started/next-steps%})
 
 ## See Also
 

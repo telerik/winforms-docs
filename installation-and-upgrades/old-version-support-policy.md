@@ -22,7 +22,7 @@ Bugs in UI for WinForms components are fixed depending on the priority set by th
 
 Bug fixes are then implemented in the product by the Development team and later introduced in the first [official product release](https://www.telerik.com/support/whats-new/winforms/release-history).
 
-To get a bug fix, you have to [upgrade]({%slug winforms/installation-deployment-and-distribution/upgrade-project%}) your project to the same release as the release that contains the fix, or later.
+To get a bug fix, you have to [upgrade your Telerik UI for WinForms project]({%slug winforms/installation-deployment-and-distribution/upgrade-project%}) to the same release as the release that contains the fix, or later.
 
 If a workaround for an earlier version is technically feasible, you may be provided with such in the ticketing system. However, Progress Software Corporation cannot guarantee that bug fixes in earlier versions will be available and cannot give warranty for any workarounds that are provided.
 
