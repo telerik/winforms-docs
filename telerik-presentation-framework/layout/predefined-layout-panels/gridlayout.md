@@ -13,7 +13,7 @@ previous_url: tpf-layout-predefined-layout-panels-gridlayout
 
 This panel that arranges its child controls in a tabular structure of rows and columns. 
 
-![tpf-layout-predefined-layout-panels-gridlayoutpanel 001](images/tpf-layout-predefined-layout-panels-gridlayoutpanel001.png)
+![Telerik UI for WinForms GridLayoutPanel arranging child elements in a grid](images/tpf-layout-predefined-layout-panels-gridlayoutpanel001.png)
 
 The GridLayout has to be populated with columns and rows when it is being initialized. Each column/row can be in one of three sizing modes:
 

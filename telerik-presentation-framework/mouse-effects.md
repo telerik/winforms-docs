@@ -14,7 +14,7 @@ Since R1 2018 RadControls are supporting mouse effects. Each element that inheri
 
 >caption __Highlight__ and __BorderHighlight__ mouse effects. 
 
-![tpf-mouse-effects001](images/tpf-mouse-effects001.gif)    
+![Telerik UI for WinForms Highlight and BorderHighlight mouse effects](images/tpf-mouse-effects001.gif)    
 
 
 ## Effects Properties

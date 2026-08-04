@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the ellipse shape applied to a RadPanel:
 
-![ellipse-shape001](images/ellipse-shape001.png)
+![Telerik UI for WinForms EllipseShape applied to a RadPanel](images/ellipse-shape001.png)
 
 The following code shows how you can create and apply a __EllipseShape__:
 

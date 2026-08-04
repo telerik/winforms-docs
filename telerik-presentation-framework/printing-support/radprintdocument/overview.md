@@ -36,7 +36,7 @@ document.Print()
 
 {{endregion}} 
 
-![tpf-printing-support-radprintdocument](images/tpf-printing-support-radprintdocument.png)
+![Telerik UI for WinForms RadPrintDocument printing a RadGridView](images/tpf-printing-support-radprintdocument.png)
 
 # See Also
 * [Design Time]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/design-time%})

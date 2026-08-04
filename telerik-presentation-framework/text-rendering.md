@@ -13,7 +13,7 @@ position: 9
 By default, Telerik Presentation Framework uses GDI+ to measure and render the text. You can easily switch to GDI instead by setting the **UseCompatibleTextRendering** property to *false* for the respective control. In R2 2017 we introduced the static property RadControl.**UseCompatibleTextRenderingDefaultValue** which allows the user to globally control the default value for **UseCompatibleTextRendering** property. It is recommended to set it before calling **InitializeComponent**.  
 
 >caption Figure 1: UseCompatibleTextRendering.
-![telerik-presentation-framework-text-rendering 001](images/telerik-presentation-framework-text-rendering001.png)
+![Telerik UI for WinForms Telerik Presentation Framework text rendering example](images/telerik-presentation-framework-text-rendering001.png)
 
 All controls that contain a **TextPrimitive** in its internal structure can specify what graphics text-rendering mode to be used for painting text of the element by the TextPrimitive.**TextRenderingHint**.  The **DisabledTextRenderingHint** property controls the graphics text-rendering mode to be used for painting text of the element when in disabled mode. The available options are:
 

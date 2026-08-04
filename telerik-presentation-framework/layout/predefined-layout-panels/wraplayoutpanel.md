@@ -13,7 +13,7 @@ previous_url: tpf-layout-predefined-layout-panels-wraplayoutpanel
 
 WrapLayoutPanel is a panel that handles the layout of elements in a vertical or horizontal row and wraps to additional lines.
 
-![tpf-layout-predefined-layout-panels-wraplayoutpanel 001](images/tpf-layout-predefined-layout-panels-wraplayoutpanel001.png)
+ ![Telerik UI for WinForms WrapLayoutPanel arranging child elements across wrapped rows](images/tpf-layout-predefined-layout-panels-wraplayoutpanel001.png)
 
 #### Using WrapLayoutPanel
 

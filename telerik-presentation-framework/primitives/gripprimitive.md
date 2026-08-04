@@ -13,7 +13,7 @@ previous_url: tpf-primitives-gripprimitive
 
 GripPrimitive displays a vertical row of dots as a visual cue to users that this is an area that can be gripped and dragged. Grip dots are displayed using __BackColor__ and __BackColor2__ colors. __BackColor2__ represents a shadow to set the dots off the background, particularly when the dots and the background contain some of the same colors.
 
-![tpf-primitives-gripprimitive 001](images/tpf-primitives-gripprimitive001.png)
+![Telerik UI for WinForms GripPrimitive displaying a draggable vertical row of dots](images/tpf-primitives-gripprimitive001.png)
 
 #### Creating a GripPrimitive
 

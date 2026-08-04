@@ -20,7 +20,7 @@ This article shows the steps for creating a database along with the application 
 
 First create the WinForms project, to do that create a blank [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) project and add a [RadGridView]({%slug winforms/gridview%}) and two buttons to it. The application design should look like this:
 
-![azure-cosmosdb001](images/azure-cosmosdb001.png)
+![Telerik UI for WinForms Azure Cosmos DB application layout with RadGridView and data management buttons](images/azure-cosmosdb001.png)
 
 
 ## Step 2: Install the NuGet package
@@ -28,7 +28,7 @@ First create the WinForms project, to do that create a blank [Telerik UI for Win
 In Visual Studio open the NuGet package manager and install the **Microsoft.Azure.DocumentDB** module:
 
 
-![azure-cosmosdb002](images/azure-cosmosdb002.png)
+![NuGet Package Manager installing the Microsoft.Azure.DocumentDB package for a Telerik UI for WinForms application](images/azure-cosmosdb002.png)
 
 ## Step 3: Create the Database
 
@@ -38,7 +38,7 @@ Go to your Azure console, click **Create Resource** the select __Cosmos DB__ and
 * Resource Group - select __Create New__ and use the same name as your ID
 * Enable geo-redundancy - leave blank
 
-![azure-cosmosdb003](images/azure-cosmosdb003.png)
+![Azure portal Create Resource page for configuring a Cosmos DB account for a Telerik UI for WinForms application](images/azure-cosmosdb003.png)
 
 
 ## Step 4: Connect to an Azure Cosmos DB account
@@ -73,7 +73,7 @@ Private client As DocumentClient
 
 You need to take the endpoint URL and primary key from the Azure Portal. In the Azure portal, navigate to your Azure Cosmos DB account, and then click Keys:
 
-![azure-cosmosdb004](images/azure-cosmosdb004.png)
+![Azure Cosmos DB portal Keys page showing endpoint and primary key settings for a Telerik UI for WinForms application](images/azure-cosmosdb004.png)
 
 
 Initialize the client in the and create the database. This can be done in the form's constructor:
@@ -154,7 +154,7 @@ End Sub
 
 You should be able to see the data in the Azure console:
 
-![azure-cosmosdb005](images/azure-cosmosdb005.png)
+![Azure Cosmos DB portal displaying sample employee documents created by a Telerik UI for WinForms application](images/azure-cosmosdb005.png)
 
 
 ## Step 6: Load the data in the grid
@@ -184,7 +184,7 @@ End Sub
 
 Now you can see the data in the grid:
 
-![azure-cosmosdb006](images/azure-cosmosdb006.png)
+![Telerik UI for WinForms RadGridView displaying employee data loaded from Azure Cosmos DB](images/azure-cosmosdb006.png)
 
 ## Step 7: Save the data
 

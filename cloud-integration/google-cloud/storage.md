@@ -20,13 +20,13 @@ For the purposes of this article, you will have to enable the Google Cloud Stora
 
 Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add 3 [RadButtons]({%slug winforms/buttons/button%}) and a [RadListView]({%slug winforms/listview%}) to it. The first button will list all of the files uploaded in our storage. The second button will upload a file and the third one will delete the selected file. The layout should look like this:
 
-![Google Cloud Storage Upload](images/google-cloud-storage001.png)
+![Telerik UI for WinForms Google Cloud Storage application layout with RadListView and upload, list, and delete buttons](images/google-cloud-storage001.png)
 
 ## Step 2: Install the NuGet package
 
 Open the NuGet Package Manager and install the **Google.Cloud.Storage.V1** package.
 
-![Google Cloud Storage Nuget](images/google-cloud-storage002.png)
+![NuGet Package Manager installing the Google.Cloud.Storage.V1 package for a Telerik UI for WinForms application](images/google-cloud-storage002.png)
 
 ## Step 3: Connect the Application to the Storage
 
@@ -133,7 +133,7 @@ End Sub
 
 Now you are ready to start using the application:
 
-![Google Cloud Storage Upload](images/google-cloud-storage003.png)
+![Telerik UI for WinForms RadListView displaying files uploaded to Google Cloud Storage](images/google-cloud-storage003.png)
 
 
 ## See Also

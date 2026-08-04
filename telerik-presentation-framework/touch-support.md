@@ -197,7 +197,7 @@ End Class
 
 {{endregion}} 
 
-Thanks to the code above, the end-user will be able to do the following operations with his/her fingers:![tpf-touch-support 001](images/tpf-touch-support001.png)![tpf-touch-support 002](images/tpf-touch-support002.png)![tpf-touch-support 003](images/tpf-touch-support003.png)
+Thanks to the code above, the end-user will be able to do the following operations with his/her fingers:![Telerik UI for WinForms touch gesture example](images/tpf-touch-support001.png)![Telerik UI for WinForms touch interaction with RadControls](images/tpf-touch-support002.png)![Telerik UI for WinForms touch interaction with RadItems](images/tpf-touch-support003.png)
 
 >note Similar functionality is also used in the PhotoAlbum demo application
 >

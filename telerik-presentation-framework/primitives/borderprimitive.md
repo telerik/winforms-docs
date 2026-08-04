@@ -15,7 +15,7 @@ The __BorderPrimitive__ class is responsible for drawing the border around an ar
 
 ## SingleBorder
 
-![tpf-primitives-borderprimitive 002](images/tpf-primitives-borderprimitive002.png)
+![Telerik UI for WinForms BorderPrimitive SingleBorder example](images/tpf-primitives-borderprimitive002.png)
 
 All four sides of the border are drawn with the same properties except color. Color is controlled by the __GradientStyles__ property. To get all colors in the border to display the same, use the __GrandientStyles.Solid__ enumeration member. The example below displays a red, 3 pixel border box.
 
@@ -62,7 +62,7 @@ End Class
 
 ## FourBorders
 
-![tpf-primitives-borderprimitive 001](images/tpf-primitives-borderprimitive001.png)
+![Telerik UI for WinForms BorderPrimitive FourBorders example](images/tpf-primitives-borderprimitive001.png)
 
 Each side of the border can be tailored individually. __ForeColor__ , __Width__ and __GradientStyle__ properties are ignored in favor of width and color properties for each side. The example code below describes a box with the left and bottom sides displaying a 3 pixel blue line and the upper and right hand sides displaying a 1 pixel red border.
 
@@ -119,7 +119,7 @@ End Class
 
 ## OuterInnerBorders
 
-![tpf-primitives-borderprimitive 003](images/tpf-primitives-borderprimitive003.png)
+![Telerik UI for WinForms BorderPrimitive OuterInnerBorders example](images/tpf-primitives-borderprimitive003.png)
 
 Inner and outer colors can be specified using the __ForeColor__ and __InnerColor__ property families. The __GradientStyle__ property determines how the primitive colors are displayed. A Solid __GradientStyle__ will only take the __ForeColor__ and __InnerColor__ properties into account. The code example below sets a 1 pixel width, sets the __GradientStyle__ to *Linear*, sets the __ForeColor__ related properties to blue and green colors. The InnerColor related properties are set to light blue and green colors.
 

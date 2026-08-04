@@ -91,7 +91,7 @@ dockPanel.Children.Add(button4)
 
 {{endregion}} 
 
-![tpf-layout-predefined-layout-panels-docklayout 001](images/tpf-layout-predefined-layout-panels-docklayout001.png)
+![Telerik UI for WinForms DockLayoutPanel with children docked in their added order](images/tpf-layout-predefined-layout-panels-docklayout001.png)
 
 However, if the same elements are added in a reversed order, the outcome will be different:
 
@@ -117,15 +117,15 @@ dockPanel.Children.Add(button1)
 
 {{endregion}} 
 
-![tpf-layout-predefined-layout-panels-docklayout 002](images/tpf-layout-predefined-layout-panels-docklayout002.png)
+![Telerik UI for WinForms DockLayoutPanel with children added in reverse order](images/tpf-layout-predefined-layout-panels-docklayout002.png)
 
 >note In both examples above the Dock setting of the last added child is ignored, i.e. in the first example *button4* is docked, so that it fills the area left by the other buttons. In the second example *button1* docking setting is not taken under consideration and the element fills the empty panel area. Setting the __LastChildFill__ property to *false* , however, transforms the above layouts, so that the last added children are not stretched:
 >
 
 
-![tpf-layout-predefined-layout-panels-docklayout 003](images/tpf-layout-predefined-layout-panels-docklayout003.png)
+![Telerik UI for WinForms DockLayoutPanel with LastChildFill disabled in the first docking order](images/tpf-layout-predefined-layout-panels-docklayout003.png)
 
-![tpf-layout-predefined-layout-panels-docklayout 004](images/tpf-layout-predefined-layout-panels-docklayout004.png)
+![Telerik UI for WinForms DockLayoutPanel with LastChildFill disabled in the reversed docking order](images/tpf-layout-predefined-layout-panels-docklayout004.png)
 
 Here is an example of creating a control holding custom DockPanelElement:
 

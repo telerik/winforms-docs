@@ -53,4 +53,4 @@ End Sub
 
 >caption Figure 1: A Grid added to a panorama tile.
 
-![use-control-inside-an-element001 001](images/use-control-inside-an-element001.png)
+![Telerik UI for WinForms RadGridView used inside a panorama tile](images/use-control-inside-an-element001.png)

@@ -57,7 +57,7 @@ Figure 1 shows the result from the above code. the shape is applied to a RadPane
 
 >caption Figure 1: The cross shape.
 
-![custom-shape001](images/custom-shape001.png)
+![Telerik UI for WinForms custom cross shape applied to a RadPanel](images/custom-shape001.png)
 
 
 

@@ -17,7 +17,7 @@ The __RadPrintDocument__ class can be easily customized through inheritance. The
 * __PrintWatermark:__ Paints the watermark. 
 * __PrintLogo:__ Paints the logo.
 
->caption Fig. 1 Custom Header<br>![telerik-presentation-frameworkprinting-support-how-to-customize-radprintdocument](images/telerik-presentation-frameworkprinting-support-how-to-customize-radprintdocument001.png)
+>caption Fig. 1 Custom Header<br>![Telerik UI for WinForms RadPrintDocument custom header](images/telerik-presentation-frameworkprinting-support-how-to-customize-radprintdocument001.png)
 
 In this example we will modify the header of the print document by introducing new properties, defining fonts, color and a new layout. The control which we will be printing is going to be __RadGridView__ bound to the *Categories* table of the *Northwind* database. An example is available [here]({%slug winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset%}).         
 

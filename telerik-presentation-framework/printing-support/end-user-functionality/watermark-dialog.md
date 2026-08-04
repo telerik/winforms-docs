@@ -33,7 +33,7 @@ dialog.ShowDialog()
 
 {{endregion}} 
 
-![tpf-printing-support-end-user-functionality-radprintpreviewdialog](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog.png)
+![Telerik UI for WinForms WatermarkPreviewDialog with watermark preview and common settings](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog.png)
 
 The available common settings are placed in the two group boxes on the bottom part of the dialog. The position options determine whether the watermark will be drawn before the content of the page or over it. The second group determines the pages on which the watermark will be printed.
   		

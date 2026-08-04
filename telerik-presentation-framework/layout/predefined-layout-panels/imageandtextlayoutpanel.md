@@ -25,34 +25,34 @@ Let’s assume that we have an ImageAndTextLayoutPanel that holds and ImagePrimi
 * __DisplayStyle:__ Determines which of the objects (image\text) will be visible. You can choose from one of the following values:
 
     - __ImageAndText:__ Both objects (image and text) are being displayed. This is the default value.
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 001](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel001.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel displaying a hard drive image and text](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel001.png)
 
     - __Image:__ Only the image is being displayed.
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 002](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel002.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel displaying only the hard drive image](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel002.png)
 
     - __Text:__ Only the text is being displayed.
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 003](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel003.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel displaying only the Hard Drive text](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel003.png)
 
     - __None:__ None of the objects (image and text) are being displayed.
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 004](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel004.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel with image and text hidden](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel004.png)
 
 * __TextImageRelation:__ Determines the way in which the text and the image are positioned in relation to each other. You can choose from one of the following properties:
         
 
     * __Overlay:__ The text and the image are overlapping each other. This is the default value.
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 005](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel005.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel with image and text overlaid](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel005.png)
 
     * __ImageAboveText:__ The image is positioned above the text.
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 006](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel006.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel with image above text](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel006.png)
 
     * __ImageBeforeText:__ The image is positioned on the left side of the text  (in RightToLeft = No).
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 007](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel007.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel with image before text](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel007.png)
 
     * __TextAboveImage:__ The text is positioned on top of the image.
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 008](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel008.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel with text above image](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel008.png)
 
     * __TextBeforeImage__ The text is positioned on the left side of the image (in RightToLeft = No).
-        ![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 009](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel009.png)
+        ![Telerik UI for WinForms ImageAndTextLayoutPanel with text before image](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel009.png)
 
     The next two properties also determine the position of the text and image within their respective areas.
 
@@ -86,9 +86,9 @@ Let’s assume that we have an ImageAndTextLayoutPanel that holds and ImagePrimi
 
     |    |    |    |
     |----|----|----|
-    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 010](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel010.png) *TopLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 011](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel011.png) *TopCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 012](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel012.png) *TopRight* |
-    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 013](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel013.png) *MiddleLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 014](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel014.png) *MiddleCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 015](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel015.png) *MiddleRight* |
-    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 016](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel016.png) *BottomLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 017](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel017.png) *BottomCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 018](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel018.png) *BottomLeft* |
+    |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned top left](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel010.png) *TopLeft* |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned top center](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel011.png) *TopCenter* |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned top right](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel012.png) *TopRight* |
+    |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned middle left](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel013.png) *MiddleLeft* |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned middle center](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel014.png) *MiddleCenter* |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned middle right](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel015.png) *MiddleRight* |
+    |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned bottom left](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel016.png) *BottomLeft* |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned bottom center](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel017.png) *BottomCenter* |![Telerik UI for WinForms ImageAndTextLayoutPanel image aligned bottom right](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel018.png) *BottomLeft* |
 
 * __TextAlignment:__ determines the position of the text. It has the following values:
 
@@ -112,9 +112,9 @@ Let’s assume that we have an ImageAndTextLayoutPanel that holds and ImagePrimi
 
     |    |    |    |
     |----|----|----|
-    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 020](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel020.png) *TopLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 019](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel019.png) *TopCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 021](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel021.png) *TopRight* |
-    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 023](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel023.png) *MiddleLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 022](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel022.png) *MiddleCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 024](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel024.png) *MiddleRight* |
-    |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 027](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel027.png) *BottomLeft* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 025](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel025.png) *BottomCenter* |![tpf-layout-predefined-layout-panels-imageandtextlayoutpanel 027](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel027.png) *BottomLeft* |
+    |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned top left](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel020.png) *TopLeft* |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned top center](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel019.png) *TopCenter* |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned top right](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel021.png) *TopRight* |
+    |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned middle left](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel023.png) *MiddleLeft* |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned middle center](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel022.png) *MiddleCenter* |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned middle right](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel024.png) *MiddleRight* |
+    |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned bottom left](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel027.png) *BottomLeft* |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned bottom center](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel025.png) *BottomCenter* |![Telerik UI for WinForms ImageAndTextLayoutPanel text aligned bottom right](images/tpf-layout-predefined-layout-panels-imageandtextlayoutpanel027.png) *BottomLeft* |
 
 
 ## Employing ImageAndTextLayoutPanel in RadControl

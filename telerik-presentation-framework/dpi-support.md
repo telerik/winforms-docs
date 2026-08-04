@@ -22,8 +22,8 @@ Although it is a bit tricky to demonstrate HDPI support with a single image, her
 
 |Resolution: 3840 x 2160 - Scaling: 200%|
 |----|
-|![dpi-support 001](images/dpi-support001.png)|
-|![dpi-support 002](images/dpi-support002.png)|
+|![Telerik UI for WinForms application demonstrating DPI awareness](images/dpi-support001.png)|
+|![Telerik UI for WinForms controls displayed with DPI scaling support](images/dpi-support002.png)|
 
 >important To produce as good layout as possible when running your desktop application on monitors with different DPI scaling, it is important to have some thoughts in mind before you start designing the application. Please check [HDPI Tips and Tricks]({%slug hdpi-tips-and-tricks%}).
 

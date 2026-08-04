@@ -15,11 +15,11 @@ The __Visual Studio Extensions__ options dialog provides settings, so you can co
 
 It can be accessed through the **Visual Studio >> Extensions >> Telerik >> Telerik UI for WinForms >> Options**:
 
-![installation-deployment-and-distribution-vsx-options-dialog 001](images/installation-deployment-and-distribution-vsx-options-dialog001.png)
+![Visual Studio Extensions Options command for Telerik UI for WinForms](images/installation-deployment-and-distribution-vsx-options-dialog001.png)
 
 The __Options__ dialog contains two sets of options that affect the __Telerik UI for WinForms__ Visual Studio Extensions.
 
-![installation-deployment-and-distribution-vsx-options-dialog 002](images/installation-deployment-and-distribution-vsx-options-dialog002.png)
+![Telerik UI for WinForms Visual Studio Extensions Options dialog with General and WinForms settings](images/installation-deployment-and-distribution-vsx-options-dialog002.png)
 
 The settings under the __General__ category affect all of the installed __Telerik Visual Studio Extensions__.
 
@@ -31,17 +31,17 @@ __Copy referenced assemblies to solution and integrate with source control__ - W
 
 * **Show me a message when a newer version is available on www.telerik.com**  – When enabled, you will be prompted to upgrade upon opening a project, which is not using the latest version of Telerik UI for WinForms installed on your system.
 
-	![installation-deployment-and-distribution-vsx-options-dialog 004](images/installation-deployment-and-distribution-vsx-options-dialog004.png)
+	![Telerik UI for WinForms Visual Studio Extensions option for upgrade notifications](images/installation-deployment-and-distribution-vsx-options-dialog004.png)
 
 All settings under the WinForms category affect only the Telerik UI for WinForms Visual Studio Extensions.
 
 >note As of **R2 2021** in the **Options** dialog, there is a setting that controls whether the message for changing the default theme will be shown. 
 
-![options-default-theme](images/options-default-theme.png)
+![Telerik UI for WinForms Visual Studio Extensions option for suggesting a default theme](images/options-default-theme.png)
 
 If **"Suggest default theme"** is set to **true**, the following message will be prompted to the user when you drag a Telerik RadControl from the toolbox and drop it onto the form:
 
-![default-theme-message](images/default-theme-message.png)
+![Telerik UI for WinForms default theme confirmation message shown after adding a control](images/default-theme-message.png)
 
 If you accept the changes and restart the designer, the Fluent theme will be used as [default theme]({%slug default-theme%}) for the design time experience.
  

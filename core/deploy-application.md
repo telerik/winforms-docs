@@ -20,26 +20,26 @@ This article shows how to deploy a WinForms .NET Application using Visual Studio
 
 1\. Create a new WinForms project using the [Telerik Visual Studio Extensions]({%slug winforms-installation-deployment-and-distribution-visual-studio-extensions%}). If the VSX is installed you will see the **Telerik C# WinForms Application (.NET)** template in the Visual Studio's project templates list.
    
-![create-new-project-001](images/deploy-application001.png)
+![Visual Studio New Project dialog with the Telerik UI for WinForms .NET application template](images/deploy-application001.png)
 
 2\. Select one of the application templates from the New Project Wizard. For this example, I use the Excel-Inspired template.
 Currently, Telerik WinForms .NET project templates support both .NET assembly references (2020.3.915.310) and .NET package references (2020.3.915.310 NuGet). 
 
-![choose-template](images/deploy-application002.png)
+![Telerik UI for WinForms New Project Wizard with the Excel-Inspired template and target distributions](images/deploy-application002.png)
 
 2a\. Choosing **2020.915.310** option and finishing the wizard will create a new Telerik WinForms Excel-Inspired project template with assembly references:
 
-![choose-template](images/deploy-application002a.png)
-![choose-template](images/deploy-application0021a.png)
+![Telerik UI for WinForms project template configured with .NET assembly references](images/deploy-application002a.png)
+![Telerik UI for WinForms Excel-Inspired project wizard step for assembly-reference deployment](images/deploy-application0021a.png)
 
 2b\. Choosing **2020.3.915.310 NuGet** distribution, the Telerik WinForms Excel-Inspired project template will use a package reference to the UI.for.WinForms.AllControls.NetCore.2020.3.915 NuGet package.
 
-![choose-template](images/deploy-application002b.png)
-![choose-template](images/deploy-application0021b.png)
+![Telerik UI for WinForms project template configured with a NuGet package reference](images/deploy-application002b.png)
+![Telerik UI for WinForms Excel-Inspired project wizard step for NuGet-based deployment](images/deploy-application0021b.png)
 
 >caption Figure 1: Spreadsheet application created with the New Project Wizard
 
-![application-created](images/deploy-application003.png)
+![Telerik UI for WinForms Excel-Inspired spreadsheet application created by the New Project Wizard](images/deploy-application003.png)
 
 ## Deploy the Application
 
@@ -47,22 +47,22 @@ Currently, Telerik WinForms .NET project templates support both .NET assembly re
 
 1\. Right click the project in Visual Studio and select the **Publish** option. This will open the **Pick a publish taget** dialog.
    
-![choose-publish-option](images/deploy-application004.png)
+![Visual Studio project context menu with the Publish command for a Telerik UI for WinForms application](images/deploy-application004.png)
 
 2\. Choose a publish location. For this example, click on the **Folder** option and choose a directory where the application should be deployed. Then click **Create profile**.
 
-![pick-a-publish-target](images/deploy-application005.png)
+![Visual Studio Publish dialog for choosing a deployment target](images/deploy-application005.png)
 
-![choose-location](images/deploy-application006.png)
+![Visual Studio Publish dialog for selecting a folder deployment location](images/deploy-application006.png)
 
 
 3\. Open the **Profile Settings** via the **Configuration** options and set the **Deployment Mode** to **Self-contained**. Then select a **Target Runtime**.
 
-![profile-settings-configuration](images/deploy-application007.png)
+![Visual Studio publish profile settings with Self-contained deployment and a target runtime](images/deploy-application007.png)
 
 4\. Save the configuration and click the **Publish** button. This will generate files in the publish location.
 
-![files-in-the-publish-location](images/deploy-application008.png)
+![Visual Studio publish output files generated for a Telerik UI for WinForms application](images/deploy-application008.png)
 
 5\. Copy the output files from the publish location to your deployment environment.
 

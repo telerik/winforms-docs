@@ -13,7 +13,7 @@ previous_url: tpf-primitives-progressprimitive
 
 __ProgressBarPrimitive__ is a specialized descendant of the [FillPrimitive]({%slug winforms/telerik-presentation-framework/primitives/fillprimitive%}) that  indicates the state of progress in a long running process. The fill area is controlled by the __GradientStyle__ and the __BackColor.BackColor4__ properties. The fill covers the percentage area between __Minimum__ and __Maximum__ specified by the __Value1__ property. __Value1__ is rendered using up to all four colors. __Value2__ displays in the __BackColor__ at 25% opacity. __Orientation__ controls the starting point of the fill and can originate from __Left__,  __Right__, __Top__ or __Bottom__. The example below shows a Linear fill for  __Value1__(set to 20), and a pale Aqua for __Value2__(set to 70).
 
-![tpf-primitives-progressprimitive 001](images/tpf-primitives-progressprimitive001.png)
+![Telerik UI for WinForms ProgressBarPrimitive showing primary and secondary progress values](images/tpf-primitives-progressprimitive001.png)
 
 #### Creating a ProgressBarPrimitive
 

@@ -15,7 +15,7 @@ The Tooltip represents a small rectangular window that displays a brief descript
 
 >caption Figure 1: Tooltip on a grid cells.
 
-![tpf-tooltips002](images/tpf-tooltips002.gif)
+![Telerik UI for WinForms RadGridView cell tooltip](images/tpf-tooltips002.gif)
 
 
 ### Using the __ToolTipTextNeeded__ event. 
@@ -54,7 +54,7 @@ End Sub
 
 >caption Figure 2: The result from the above code.
 
-![tpf-tooltips001](images/tpf-tooltips001.gif)
+![Telerik UI for WinForms RadListView item tooltip created with ToolTipTextNeeded](images/tpf-tooltips001.gif)
 
 # See Also
 * [RadToolTip]({%slug winforms/telerik-presentation-framework/radtooltip%})

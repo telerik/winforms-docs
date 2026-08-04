@@ -18,35 +18,35 @@ It shows how you can connect to the __AWS RDS__ instance from a blank WinForms p
 
 Go to the AWS console and click the RDS link and then click the __Get Started Now__. 
 
-![aws-rds002](images/aws-rds002.png)
+![AWS RDS console showing the start of database setup for a Telerik UI for WinForms application](images/aws-rds002.png)
 
 This will lead you to the **Select Engine** page. Select *SQL server Express Edition* and click Next. 
 
-![aws-rds003](images/aws-rds003.png)
+![AWS RDS Select Engine page with SQL Server Express selected for a Telerik UI for WinForms application](images/aws-rds003.png)
 
 On the next screen choose any options you want. For this example we are using the free tier options. Make sure that **Publicly Accessible** option is set to *Yes*.  At the bottom of the page choose database name and specify the user name an password.
 
-![aws-rds004](images/aws-rds004.png)
+![AWS RDS database configuration page for a Telerik UI for WinForms cloud integration application](images/aws-rds004.png)
 
 Click next and choose any options. Then click __Launch DB Instance__ and wait until the database is created. More information can be found [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.SQLServer.html).
 
 
 At this point you are ready to connect to the instance using Microsoft SQL Server Management Studio. Detailed information is available [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMicrosoftSQLServerInstance.html). 
 
-![aws-rds006](images/aws-rds006.png)
+![SQL Server Management Studio connected to an AWS RDS database for a Telerik UI for WinForms application](images/aws-rds006.png)
 
 
 ## Step 2: Create a WinForms project.
 
 First create the WinForms project, to do that create a blank [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) project and add a [RadGridView]({%slug winforms/gridview%}) and two buttons to it. The application design should look like this:
 
-![aws-rds001](images/aws-rds001.png)
+![Telerik UI for WinForms AWS RDS application layout with RadGridView and data management buttons](images/aws-rds001.png)
 
 ## Step 3: Install the NuGet package
 
 In Visual Studio open the NuGet package manager and install the RDS module:
 
-![aws-rds005](images/aws-rds005.png)
+![NuGet Package Manager installing the AWS RDS package for a Telerik UI for WinForms application](images/aws-rds005.png)
 
 ## Step 4: Connect from the application
 
@@ -210,7 +210,7 @@ End Sub
 
 You can now view and edit the data from the grid:
 
-![aws-rds008](images/aws-rds008.png)
+![Telerik UI for WinForms RadGridView displaying editable data loaded from an AWS RDS database](images/aws-rds008.png)
 
 # See Also
 

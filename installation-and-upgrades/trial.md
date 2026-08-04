@@ -41,7 +41,7 @@ Trial license provides comprehensive access to evaluate Telerik UI for WinForms 
 
 During the active trial period, a popup message appears on application startup indicating that the application is using a trial version of Telerik UI for WinForms and also shows the expiration days. All functionality during the Trial period remains fully accessible without restrictions.
 
-![Banner](images/banner.png)
+![Telerik UI for WinForms trial notification banner displayed during the active trial period](images/banner.png)
 
 ### After Trial Period Expiration
 
@@ -49,7 +49,7 @@ Once the trial period expires, the following trial indicators are displayed:
 - A trial message appears in the application
 - A watermark overlay is displayed over the UI controls
 
-![Modal Dialog](images/modal-dialog.png)
+![Telerik UI for WinForms trial expiration modal dialog displayed after the trial period](images/modal-dialog.png)
 
 ## Upgrading your Trial License to Commercial License
 

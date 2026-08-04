@@ -98,11 +98,11 @@ End Class
 
 {{endregion}} 
 
-![tpf-layout-predefined-layout-panels-boxlayout 001](images/tpf-layout-predefined-layout-panels-boxlayout001.png)
+![Telerik UI for WinForms BoxLayout panel with two buttons sized in a one-to-three proportion](images/tpf-layout-predefined-layout-panels-boxlayout001.png)
 
 Because the proportion of "button1" and "button2" is 1:3, "button1" covers exactly one quarter of the panel and "button2" fills the remaining three quarters. Changing the proportion to 1:2 will make the two buttons become one third and two thirds respectively:
 		
-![tpf-layout-predefined-layout-panels-boxlayout 002](images/tpf-layout-predefined-layout-panels-boxlayout002.png)
+![Telerik UI for WinForms BoxLayout panel with two buttons sized in a one-to-two proportion](images/tpf-layout-predefined-layout-panels-boxlayout002.png)
 
 To arrange the elements in the panel vertically set the __Orientation__ of the BoxLayout to *Vertical*:
 
@@ -122,7 +122,7 @@ boxPanel.Orientation = Orientation.Vertical
 
 {{endregion}} 
 
-![tpf-layout-predefined-layout-panels-boxlayout 003](images/tpf-layout-predefined-layout-panels-boxlayout003.png)
+![Telerik UI for WinForms BoxLayout panel arranging buttons vertically](images/tpf-layout-predefined-layout-panels-boxlayout003.png)
 
 The __StripPosition__ property allows the BoxLayout to treat each element as *First* or *Last*. Children with __StripPosition__ set to *First* are always positioned to the left when the __Orientation__ is horizontal and the top when the __Orientation__ is vertical. Children with __StripPosition__ set to *Last* are always located to the right, when the __Orientation__ is horizontal and to the bottom when the __Orientation__ is vertical.
 
@@ -166,11 +166,11 @@ boxPanel.Children.Add(button2)
 
 {{endregion}} 
 
-![tpf-layout-predefined-layout-panels-boxlayout 004](images/tpf-layout-predefined-layout-panels-boxlayout004.png)
+![Telerik UI for WinForms horizontal BoxLayout with first and last strip-position buttons](images/tpf-layout-predefined-layout-panels-boxlayout004.png)
 
 When the __Orientation__ is vertical the elements will be positioned in the following manner:
 
-![tpf-layout-predefined-layout-panels-boxlayout 005](images/tpf-layout-predefined-layout-panels-boxlayout005.png)
+![Telerik UI for WinForms vertical BoxLayout with first and last strip-position buttons](images/tpf-layout-predefined-layout-panels-boxlayout005.png)
 
 # See Also
 * [DockLayout]({%slug winforms/telerik-presentation-framework/layout/predefined-layout-panels/docklayout%})

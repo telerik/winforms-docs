@@ -36,7 +36,7 @@ There are multiple properties storing offsets and bounds of an element. The sum 
 
 The RadElement __LayoutOffset__ is the sum of the arrange rectangle offset, parent border, padding, child margin, child location and alignment. In the figure below the "Final Rect Offset" illustrates the offset of the arrange rectangle where parent content is rendered. "Layout offset" indicates the offset represented by the __LayoutOffset__ property.
 
-![tpf-layout-element-offset-calculations 001](images/tpf-layout-element-offset-calculations001.png)
+![Telerik UI for WinForms Telerik Presentation Framework LayoutOffset diagram showing arrange, border, padding, margin, location, and alignment offsets](images/tpf-layout-element-offset-calculations001.png)
 
 ## PositionOffset
 
@@ -44,7 +44,7 @@ The offset of the origin of the coordinate system used when painting an element
 
 The example below shows a FillPrimitive where the __PositionOffset__ if 5 pixels down and 5 pixels in.
 
-![tpf-layout-element-offset-calculations 002](images/tpf-layout-element-offset-calculations002.png)
+![Telerik UI for WinForms Telerik Presentation Framework PositionOffset example showing a FillPrimitive shifted down and right](images/tpf-layout-element-offset-calculations002.png)
 
 #### Setting PositionOffset
 

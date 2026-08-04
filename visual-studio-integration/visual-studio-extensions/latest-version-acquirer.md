@@ -15,28 +15,28 @@ With the Telerik Visual Studio Extensions you keep your projects in an up-to-dat
 
 When a solution containing an Telerik UI for WinForms project is loaded in Visual Studio, the Telerik WinForms VSExtension checks the Telerik website for a new version of Telerik UI for WinForms. A dialog gets displayed when a new version is available:
 
-![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 001](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer001.png)
+![Telerik UI for WinForms Visual Studio Extension notification that a newer version is available](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer001.png)
 
 >tip If you've disabled the notifications, you can use the [Options Dialog]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options%}) to activate them again.
 >
 
 Clicking the __Update Now__ button starts the Latest Version Acquirer tool, prompting for your Telerik credentials and the type of license you own in its first page. If you do not have a [www.telerik.com](http://www.telerik.com) account, you can create one through the __Register__ link.
 
-![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 002](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer002.png)
+![Telerik UI for WinForms Latest Version Acquirer login and license selection page](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer002.png)
 
-![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 006](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer006.png)
+![Telerik UI for WinForms Latest Version Acquirer account registration or login step](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer006.png)
 
-![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 007](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer007.png)
+![Telerik UI for WinForms Latest Version Acquirer license information step](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer007.png)
 
-![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 008](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer008.png)
+![Telerik UI for WinForms Latest Version Acquirer download configuration step](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer008.png)
 
 You can use the **Remember me** check-box to save having to enter your Telerik credentials multiple times. The persistence is done in a secure manner and credentials are saved in a per-user context. This way other users on the machine that do not have access to your user data from downloading through your account.
 
-![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 003](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer003.png)
+![Telerik UI for WinForms Latest Version Acquirer Remember me option for account credentials](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer003.png)
 
 You can check the additional information about the release by clicking the __Release Notes__ link. This will start a browser, navigated to a page with the release notes related to the specific version.
 
-![installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer 004](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer004.png)
+![Telerik UI for WinForms Latest Version Acquirer release notes link for the selected version](images/installation-deployment-and-distribution-vsx-automatic-latest-version-acquirer004.png)
 
 
 

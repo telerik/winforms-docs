@@ -56,6 +56,6 @@ Alternatively, use Windows Credentials Manager to remove the saved credentials:
     * `nuget.telerik.com`
     * `VSCredentials_nuget.telerik.com`	
     
-	![Remove credentials from Windows Credential Manager](images/windows-credential-manager.png)
+    ![Windows Credential Manager showing Telerik NuGet credentials selected for removal](images/windows-credential-manager.png)
 1. Add the Telerik NuGet Feed again, and then enter the correct credentials. For more details, see how to [install Telerik UI for WinForms with NuGet packages]({% slug winforms/nuget%}).
 1. If desired, verify the NuGet credentials by inspecting the `NuGet.config` file located in `%AppData%\NuGet\NuGet.config`

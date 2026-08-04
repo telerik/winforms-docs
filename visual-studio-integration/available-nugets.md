@@ -12,7 +12,7 @@ position: 5
 
 Telerik UI for WinForms comes with several different packages that can be [installed via the Telerik server or from a local package source]({%slug winforms/nuget%}):
 
-![winforms-available-nugets001](images/winforms-available-nugets001.png)
+![Telerik UI for WinForms NuGet package list for different .NET target frameworks](images/winforms-available-nugets001.png)
 
 The Telerik assemblies are built against [different versions]({%slug assemblies-version%}) of .NET starting from .NET 4 to the latest official .NET. You should pick up this version of the NuGet package to install in your project that corresponds to the Target Framework that you are using in your project and that is available on your computer. 
 

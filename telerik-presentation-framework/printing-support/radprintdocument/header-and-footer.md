@@ -88,7 +88,7 @@ dialog.Show()
 {{endregion}} 
 
 
-![tpf-printing-support-radprintdocument-header-and-footer 001](images/tpf-printing-support-radprintdocument-header-and-footer001.png)
+![Telerik UI for WinForms RadPrintDocument header and footer settings](images/tpf-printing-support-radprintdocument-header-and-footer001.png)
 
 The header and footer have some predefined special strings which can be set to any part of it and/or to make combinations of them.
         
@@ -127,7 +127,7 @@ document.MiddleHeader = "Page [Page #] of [Total Pages]. Printed on [Date Printe
 {{endregion}} 
 
 
-![tpf-printing-support-radprintdocument-header-and-footer 002](images/tpf-printing-support-radprintdocument-header-and-footer002.png)
+![Telerik UI for WinForms RadPrintDocument special strings in a custom header](images/tpf-printing-support-radprintdocument-header-and-footer002.png)
 
 # See Also
 * [Design Time]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/design-time%})

@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the Chamfered Rect shape applied to a RadPanel:
 
-![star-shape001](images/chamfered-rect-shape001.png)
+![Telerik UI for WinForms Chamfered Rect shape applied to a RadPanel](images/chamfered-rect-shape001.png)
 
 The following code shows how you can create and apply a __StarShape__:
 

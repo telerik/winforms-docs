@@ -51,7 +51,7 @@ raddropDownList1.DropDownListElement.ShadowDepth = 3
 
 The below image shows the result:
 
-![tpf-shadows001](images/tpf-shadows001.png)    
+![Telerik UI for WinForms control displaying a shadow](images/tpf-shadows001.png)    
 
 # See Also
 
