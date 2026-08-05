@@ -13,7 +13,7 @@ previous_url: tpf-primitives-checkprimitive
 
 The __CheckPrimitive__ is painted as three sets of angled lines and is colored using the __ForeColor__ property. The three sets of lines are easier to see when the primitive is scaled up. The example below creates two CheckPrimitives, one at the default size and the second scaled up by a factor of 5.
 
-![tpf-primitives-checkprimitive 001](images/tpf-primitives-checkprimitive001.png)
+![Telerik UI for WinForms CheckPrimitive shown at default size and scaled by a factor of five](images/tpf-primitives-checkprimitive001.png)
 
 #### Creating a CheckPrimitive
 

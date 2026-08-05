@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the donut shape applied to a RadPanel:
 
-![donut-shape001](images/donut-shape001.png)
+![Telerik UI for WinForms DonutShape applied to a RadPanel](images/donut-shape001.png)
 
 The following code shows how you can create and apply a __DonutShape__:
 

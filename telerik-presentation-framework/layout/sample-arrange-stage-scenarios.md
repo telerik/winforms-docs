@@ -17,13 +17,13 @@ Element placement within the area allocated by the parent takes place during the
 
 The layout scenario below shows two children with margins, borders, padding and an angle transformation for Child 1. In this case the parent has arranged  the children with exact requested *DesiredSize*.
 
-![tpf-layout-sample-arrange-state-scenarios 001](images/tpf-layout-sample-arrange-state-scenarios001.png)
+![Telerik UI for WinForms arrange stage with exact requested child sizes and layout transformations](images/tpf-layout-sample-arrange-state-scenarios001.png)
 
 ## Parent Allocates Size Greater than Requested Size
 
 In the example below, the child DesiredSize is smaller than the rectangle allocated by the parent. The child StretchVertically and StretchHorizontally  properties are set to false. The example figures show the effect of the child Alignment property setting on the resulting rectangle produced by the child Arrange() method.
 
-![tpf-layout-sample-arrange-state-scenarios 002](images/tpf-layout-sample-arrange-state-scenarios002.png)
+![Telerik UI for WinForms arrange stage showing alignment when the parent allocates more space than requested](images/tpf-layout-sample-arrange-state-scenarios002.png)
 
 >note The area of the child that falls outside of the rectangle allocated by the parent is not clipped, but is shown to the extent it is within the area of the parent. See [Clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%}) for more information.
 >
@@ -31,7 +31,7 @@ In the example below, the child DesiredSize is smaller than the rectangle alloca
 
 In the example below, the child DesiredSize is larger than the rectangle allocated by the parent.
 
-![tpf-layout-sample-arrange-state-scenarios 003](images/tpf-layout-sample-arrange-state-scenarios003.png)
+![Telerik UI for WinForms arrange stage showing a child larger than the space allocated by its parent](images/tpf-layout-sample-arrange-state-scenarios003.png)
 
 # See Also
 * [Clipping]({%slug winforms/telerik-presentation-framework/layout/clipping%})

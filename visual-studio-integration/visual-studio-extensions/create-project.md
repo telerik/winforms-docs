@@ -15,7 +15,7 @@ previous_url: installation-deployment-and-distribution-vsx-creation-and-configur
 
 With the new Visual Studio Extensions for WinForms you can quickly create an application pre-configured to use Telerik UI for WinForms. The quickest way to have such a project is using the Visual Studio New Project Wizard. Under the Telerik node there is a new node – Windows, where two project templates exist: 
 
-![installation-deployment-and-distribution-vsx-create-project 001](images/installation-deployment-and-distribution-vsx-overview004.png)
+![Visual Studio New Project dialog with Telerik UI for WinForms project templates](images/installation-deployment-and-distribution-vsx-overview004.png)
 
 For convenience the same project templates could be found under the __Visual C# -> Windows__  and __Visual Basic -> Windows__ nodes.
 
@@ -23,7 +23,7 @@ After you click the __OK__ button, you get the Create New Project Wizard, provid
 
 The Create New Project Wizard lets you:
 
-![installation-deployment-and-distribution-vsx-create-project 002](images/installation-deployment-and-distribution-vsx-create-project002.png)
+![Telerik UI for WinForms Create New Project Wizard with version, high DPI, and assembly options](images/installation-deployment-and-distribution-vsx-create-project002.png)
 
 * Select a Telerik UI version from the list of versions detected on your system
 
@@ -47,11 +47,11 @@ When you click the Finish button:
 
 As of **R3 2023** a new step is available in the wizard, called **Toolbox Configuration**, which allows you to specify what version of UI for WinForms suite to be used for the toolbox:
 
-![installation-deployment-and-distribution-vsx-create-project 003](images/installation-deployment-and-distribution-vsx-create-project003.png) 
+![Telerik UI for WinForms Create New Project Wizard Toolbox Configuration step](images/installation-deployment-and-distribution-vsx-create-project003.png)
 
 If the selected version from the drop down in the previous step matches the toolbox version, the step is expected to look like this: 
 
-![installation-deployment-and-distribution-vsx-create-project 005](images/installation-deployment-and-distribution-vsx-create-project005.png) 
+![Telerik UI for WinForms Toolbox Configuration step with matching project and toolbox versions](images/installation-deployment-and-distribution-vsx-create-project005.png)
 
 
 # See Also

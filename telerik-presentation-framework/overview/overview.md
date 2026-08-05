@@ -13,7 +13,7 @@ previous_url: tpf-overview, tpf-painting-logic
 
 | RELATED VIDEOS |  |
 | ------ | ------ |
-|[Telerik Presentation Framework Performance Tests](http://www.telerik.com/videos/winforms/telerik-presentation-framework-performance-tests)<br>In this video, you will see a live demonstration of just how much performance has increased in the RadControls between the R1, R2, and R3 releases.|![tpf-overview 001](images/tpf-overview001.png)|
+|[Telerik Presentation Framework Performance Tests](http://www.telerik.com/videos/winforms/telerik-presentation-framework-performance-tests)<br>In this video, you will see a live demonstration of just how much performance has increased in the RadControls between the R1, R2, and R3 releases.|![Telerik UI for WinForms Telerik Presentation Framework performance test video preview](images/tpf-overview001.png)|
 
 
 

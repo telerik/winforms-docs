@@ -19,14 +19,14 @@ Please note that you can use the local version of DynamoDB to setup and test you
 
 First create the WinForms project, to do that create a blank [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) project and add a [RadGridView]({%slug winforms/gridview%}) and two buttons to it. The application design should look like this:
 
-![aws-dynamo-db001](images/aws-dynamo-db001.png)
+![Telerik UI for WinForms AWS DynamoDB application layout with RadGridView and data management buttons](images/aws-dynamo-db001.png)
 
 
 ## Step 2: Install the NuGet package
 
 In Visual Studio open the NuGet package manager and install the **DynamoDB** module:
 
-![aws-dynamo-db002](images/aws-dynamo-db002.png)
+![NuGet Package Manager installing the AWSSDK.DynamoDBv2 package for a Telerik UI for WinForms application](images/aws-dynamo-db002.png)
 
 Another option is to to type the following command in the **NuGet Package Manager Console**: *PM> Install-Package AWSSDK.DynamoDBv2*
 
@@ -224,7 +224,7 @@ End Sub
 
 If you run the code at this point you will be able to see the data in your AWS console:
 
-![aws-dynamo-db003](images/aws-dynamo-db003.png)
+![AWS DynamoDB console displaying sample customer records created by a Telerik UI for WinForms application](images/aws-dynamo-db003.png)
 
 ## Step 4: Get the Data from DynamoDb
 

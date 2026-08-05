@@ -18,13 +18,13 @@ The Preview is __available as a NuGet__ package. Alternatively, you can __downlo
  
 1. From your Telerik account, go to the **Downloads** tab and choose the [Telerik UI for WinForms product download page](https://www.telerik.com/account/downloads/product-download?product=RCWF).
 
-    ![Telerik UI for WinForms Latest Internal Build Button](images/preview-releases001.png)
+    ![Telerik account Downloads page with the Telerik UI for WinForms Latest Preview option](images/preview-releases001.png)
 
 1. This will navigate you to a Telerik UI for WinForms page showing **Latest Public Version** and **Latest Preview**.
 
 1. To get a specific version of the Preview, click on the **Previews** tab on the download page. Then select a version from the **Version** list. To start downloading click on the file name or use the **Download** button.
 
-    ![Telerik UI for WinForms Latest Internal Build Button](images/preview-releases002.png)
+    ![Telerik UI for WinForms Preview downloads page with the Previews tab and version list](images/preview-releases002.png)
 
 ## See Also
 

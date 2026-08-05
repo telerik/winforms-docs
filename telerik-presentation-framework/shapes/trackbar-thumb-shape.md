@@ -14,7 +14,7 @@ There are four different trackbar thumb shapes.
 
 The following image shows the TrackBar Thumb Shapes applied to a RadPanel:
 
-![trackBar-thumb-shape001](images/trackBar-thumb-shape001.png)
+![Telerik UI for WinForms four TrackBar thumb shapes applied to a RadPanel](images/trackBar-thumb-shape001.png)
 
 The following code shows how you can create and apply a __TrackBarThumb Shapes__:
 

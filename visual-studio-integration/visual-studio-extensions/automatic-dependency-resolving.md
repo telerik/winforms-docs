@@ -19,7 +19,7 @@ Some controls require multiple assemblies and mistakes are not unlikely to happe
 
 When using the __Convert Project Wizard__ or __Project Configuration Wizard__, the possibility to make such mistakes is lowered to a minimum, thanks to the dependency analysis in the Visual Studio Extensions. 
 
-![installation-deployment-and-distribution-vsx-convert-project 001](images/installation-deployment-and-distribution-vsx-convert-project001.png)
+![Telerik UI for WinForms Convert Project Wizard assembly selection with automatic dependency resolution](images/installation-deployment-and-distribution-vsx-convert-project001.png)
 
 The VSExtensions assembly list control is controlled by the dependency analyzer, which won’t let you select Telerik UI for WinForms assemblies without selecting the assemblies they depend on. Both the aspects are covered:
 

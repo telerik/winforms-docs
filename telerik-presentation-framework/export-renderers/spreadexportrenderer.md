@@ -59,7 +59,7 @@ End Sub
 {{endregion}} 
 
 
-![tpf-export-data-support-spread-export-renderer 001](images/tpf-export-data-support-spread-export-renderer001.png)
+![Telerik UI for WinForms SpreadExportRenderer exporting worksheet data](images/tpf-export-data-support-spread-export-renderer001.png)
 
 # See Also
 * [PdfExportRenderer]({%slug winforms/telerik-presentation-framework/export-renderers/pdfexportrenderer%})

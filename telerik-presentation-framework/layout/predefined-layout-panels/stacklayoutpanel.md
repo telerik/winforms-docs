@@ -17,7 +17,7 @@ StackLayoutPanel is a panel that handles the layout of multiple elements in a ve
 
 With this example we create a RadElement which contains a StackLayoutPanel. The StackLayoutPanelinstance is filled with several RadTextBoxElements ordered vertically. The RadElement that we create can be hosted in a RadControl as described [here]({%slug winforms/telerik-presentation-framework/getting-started/getting-started%}).
 
-![tpf-layout-predefined-layout-panels-stacklayoutpanel 001](images/tpf-layout-predefined-layout-panels-stacklayoutpanel001.png)
+ ![Telerik UI for WinForms StackLayoutPanel arranging child elements in a stack](images/tpf-layout-predefined-layout-panels-stacklayoutpanel001.png)
 
 #### Using StackLayoutPanel
 

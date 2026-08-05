@@ -20,7 +20,7 @@ When viewing controls from the designer, Visual Studio tries to resolve the corr
 
 >note As of R2 2021 Telerik UI for WinForms suite offers **Telerik.WinControls.RadToastNotification.Design.dll** which is a separated assembly from the **Telerik.WinControls.RadToastNotification.dll** containing the designer of the toast notification. 
 
-![installation-deployment-and-distribution-vsx-design-time-assembly-handling 001](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling001.png)
+![Visual Studio WinForms designer errors caused by a missing Telerik UI for WinForms design-time assembly](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling001.png)
 
 Designer in __Visual Studio 2010 SP1__ showing errors when a design assembly is missing.
 
@@ -36,7 +36,7 @@ To ensure __proper design time support__ the design assembly is added to the __G
 
 When the Telerik Project Wizard offers you available distributions to choose it also checks whether the design assembly is in the GAC and in case it is not, the wizard adds the corresponding __Telerik.WinControls.UI.Design__ from the selected distribution to the GAC.
 
-![installation-deployment-and-distribution-vsx-design-time-assembly-handling 002](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling002.png)
+![Telerik UI for WinForms Project Wizard adding the design-time assembly to the Global Assembly Cache](images/installation-deployment-and-distribution-vsx-design-time-assembly-handling002.png)
 
 >tip __Elevated privileges__ are required to add an assembly to the GAC. In case your machine has __User Account Control__ enabled a permission dialog will appear later in the wizard and must be confirmed.
  

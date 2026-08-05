@@ -54,7 +54,7 @@ __ILRepack__ is similar to ILMerge tool. __ILMerge__ and __ILRepack__ are tools 
 
 |RELATED VIDEOS||
 |----|----|
-|[ILMerge](http://www.telerik.com/videos/winforms/ilmerge)<br>This video demonstrates how to merge your application exe with the Telerik assemblies, so they cannot be reused. (Runtime: 1:57)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows015.png)|
+|[ILMerge](http://www.telerik.com/videos/winforms/ilmerge)<br>This video demonstrates how to merge your application exe with the Telerik assemblies, so they cannot be reused. (Runtime: 1:57)|![Telerik UI for WinForms ILMerge redistribution video thumbnail](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows015.png)|
 
 When you deploy your application, you may prefer to do it as a single executable rather than an executable referencing many external assemblies. In this case, you need to ILMerge the assemblies with the executable. Here is a link to MSDN from where you can download the ILMerge executable: [Download ILMerge](https://github.com/dotnet/ILMerge)
 
@@ -126,7 +126,7 @@ Next, you should build your solution and then ILMerge the built application exec
 >
 >*ILMerge.exe /target:winexe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework\v4.0.30319" /out:MergedApplicationExecutable.exe /allowDup 1469949TestILMerge.exe Telerik.WinControls.dll Telerik.WinControls.UI.dll TelerikCommon.dll Telerik.WinControls.SpellChecker.dll* 
 
-![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows.gif)
+![Animated example of merging a Telerik UI for WinForms application with its assemblies into a standalone executable](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows.gif)
 
 The MergedApplicationExecutable.exe is now a stand-alone application executable that does not need any additional references to the Telerik assemblies.
 
@@ -136,7 +136,7 @@ The MergedApplicationExecutable.exe is now a stand-alone application executable 
 
 |RELATED VIDEOS||
 |----|----|
-|[Redistribute OEM](http://www.telerik.com/videos/winforms/redistribute-oem)<br>This video demonstrates how to build the Telerik assemblies, so they are locked to your application and cannot be reused outside of it. (Runtime: 5:49)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows016.png)|
+|[Redistribute OEM](http://www.telerik.com/videos/winforms/redistribute-oem)<br>This video demonstrates how to build the Telerik assemblies, so they are locked to your application and cannot be reused outside of it. (Runtime: 5:49)|![Telerik UI for WinForms OEM assembly redistribution video thumbnail](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows016.png)|
 
 This method requires modifications to the source files, which are distributed as part of the Subscription license. If you have purchased a Subscription license for Telerik UI for WinForms, and would like to explore this method, the following information will allow you to do so.
         
@@ -150,11 +150,11 @@ Protecting Telerik UI for WinForms requires the Telerik assemblies to be built f
  
 	Before:
              
- 	![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows001.png)
+ 	![Visual Studio Build properties before adding the OEM conditional compilation symbol to Telerik UI for WinForms](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows001.png)
 
 	After: 
 
-	![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 002](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows002.png)
+    ![Visual Studio Build properties after adding the OEM conditional compilation symbol to Telerik UI for WinForms](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows002.png)
 
 	>tip: If you are building the .NET4.0 version of the assemblies, you need to use the Release40 build configuration. In this case, when you add the "OEM" symbol, you need to keep the existing NET4 symbol - "OEM; NET4".
 
@@ -165,11 +165,11 @@ Protecting Telerik UI for WinForms requires the Telerik assemblies to be built f
     
     Before:
             
-    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 003](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows003.png)
+    ![Telerik UI for WinForms RadControl.cs source showing the commented assembly-name protection line](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows003.png)
 
     After:                
 
-    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 004](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows004.png)
+    ![Telerik UI for WinForms RadControl.cs source showing the uncommented application assembly-name protection line](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows004.png)
 
 1. Save RadControl.cs and rebuild the solution.
 
@@ -178,13 +178,13 @@ Protecting Telerik UI for WinForms requires the Telerik assemblies to be built f
 
 Once you finish these steps, and if you or someone else tries to use that assembly from another application the evaluation dialog will appear (randomly).
 
-![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 005](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows005.png)
+![Telerik UI for WinForms evaluation dialog displayed when a protected assembly is used by another application](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows005.png)
 
 #### Using the OemPublicKeyToken
 
 |RELATED VIDEOS||
 |----|----|
-|[Redistribute OEMKEY](http://www.telerik.com/videos/winforms/redistribute-oemkey)<br>This video demonstrates how to build the Telerik assemblies, so they are locked to your application public token key and cannot be reused outside of it. (Runtime: 7:19)|![overview-video 001](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows017.png)|
+|[Redistribute OEMKEY](http://www.telerik.com/videos/winforms/redistribute-oemkey)<br>This video demonstrates how to build the Telerik assemblies, so they are locked to your application public token key and cannot be reused outside of it. (Runtime: 7:19)|![Telerik UI for WinForms OEM public key token redistribution video thumbnail](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows017.png)|
 
 This section demonstrates how to deploy a project with a public token key. We will assume that you have downloaded and extracted your source code distribution in C:\Telerik UI for WinForms Source\RadControlsVS2010.sln:
         
@@ -196,11 +196,11 @@ This section demonstrates how to deploy a project with a public token key. We wi
             
     Before:     
 
-    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 006](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows006.png)
+    ![Visual Studio Build properties before adding the OEMKEY conditional compilation symbol to Telerik UI for WinForms](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows006.png)
 
     After: 
 
-    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 007](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows007.png)
+    ![Visual Studio Build properties after adding the OEMKEY conditional compilation symbol to Telerik UI for WinForms](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows007.png)
 
 1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\ RadControl.cs in a text editor (notepad, Visual Studio etc).
             
@@ -209,30 +209,30 @@ This section demonstrates how to deploy a project with a public token key. We wi
             
     Before:
 	
-    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 008](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows008.png)
+    ![Telerik UI for WinForms RadControl.cs source before deleting the OemPublicKeyToken value](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows008.png)
 	
     After:    
 	
-    ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 009](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows009.png)
+    ![Telerik UI for WinForms RadControl.cs source after deleting the OemPublicKeyToken value](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows009.png)
 
 1. Open your project and go to *Properties*, then select the *Signing* tab.
 
-1. Mark *Sign the Assembly checkbox* and create a new strong name key.![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 010](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows010.png)
+1. Mark *Sign the Assembly checkbox* and create a new strong name key.![Visual Studio project Signing properties with Sign the Assembly enabled](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows010.png)
 
 1. Build your project and copy the route to your executable file.
             
 
 1. Open the Developer Command Prompt for your version of Visual Studio.
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 011](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows011.png)
+            ![Visual Studio Developer Command Prompt opened for generating an application public key token](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows011.png)
 
 1. Execute the following command with a parameter the route to your assembly.
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 012](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows012.png)
+            ![Command prompt showing the command used to generate a public key token for a Telerik UI for WinForms application](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows012.png)
 
 1. Copy the generated public key token.                                    
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 013](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows013.png)
+            ![Command prompt displaying the generated public key token for a Telerik UI for WinForms application](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows013.png)
 
 1. Return to the RadControlsVS2010 solution, open the RadControl.cs file and set the OemPublicKeyToken to equal the value of the newly generated key token.                                                
-            ![installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows 014](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows014.png)
+            ![Telerik UI for WinForms RadControl.cs source with the generated OemPublicKeyToken value](images/installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows014.png)
 
 1. Build the solution.
             

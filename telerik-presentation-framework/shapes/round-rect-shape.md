@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the RoundRect shape applied to a RadPanel:
 
-![RoundRect-shape001](images/RoundRect-shape001.png)
+![Telerik UI for WinForms RoundRectShape applied to a RadPanel](images/RoundRect-shape001.png)
 
 The following code shows how you can create and apply a __RoundRectShape__:
 

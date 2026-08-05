@@ -39,7 +39,7 @@ The __FillPrimitive__ class is responsible for filling in an area on the screen.
 
 The example below iterates the GradientStyles enumeration and creates a FillPrimitive sample for each value.
 
-![tpf-primitives-fillprimitive 001](images/tpf-primitives-fillprimitive001.png)
+![Telerik UI for WinForms FillPrimitive examples for different gradient styles](images/tpf-primitives-fillprimitive001.png)
 
 #### Creating a FillPrimitive
 

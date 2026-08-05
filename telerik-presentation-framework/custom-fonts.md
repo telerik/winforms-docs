@@ -76,7 +76,7 @@ The important part here is that the above properties are available for the __Vis
 
 The below image shows the result:
 
-![tpf-custom-fonts001](images/tpf-custom-fonts001.png)     
+![Telerik UI for WinForms custom font displayed in Telerik Presentation Framework](images/tpf-custom-fonts001.png)     
 
 # See Also
 

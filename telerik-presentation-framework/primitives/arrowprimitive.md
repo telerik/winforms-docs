@@ -13,7 +13,7 @@ previous_url: tpf-primitives-arrowprimitive
 
 The __ArrowPrimitive__ draws a filled triangular polygon. Orientation is controlled by the __Direction__ property with possible __ArrowDirection__ enumeration values of __Up__, __Down__, __Left__ or __Right__. The arrow is filled with the __ForeColor__ property value. The example below draws a __BorderPrimitive__ and an __ArrowPrimitive__.
 
-![tpf-primitives-arrowprimitive 001](images/tpf-primitives-arrowprimitive001.png)
+ ![Telerik UI for WinForms ArrowPrimitive and BorderPrimitive example](images/tpf-primitives-arrowprimitive001.png)
 
 #### Creating an ArrowPrimitive
 

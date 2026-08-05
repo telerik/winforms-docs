@@ -25,7 +25,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.
 
-  ![Manage API Keys](images/account-generate-api-key.png)
+	![Telerik account API Keys page with the Generate New Key command for NuGet authentication](images/account-generate-api-key.png)
 
 1. In the **Key Note** field, add a note that describes the API key.
 
@@ -51,13 +51,13 @@ https://nuget.telerik.com/v3/index.json
 
 1. First open the __Options__ window. Right-click on the project, from the menu choose **Manage NuGet Packages...**:
 
-	![installation-deployment-and-distribution-install-using-nuget 002](images/installation-deployment-and-distribution-install-using-nuget002.png)
+	![Visual Studio NuGet Package Manager options for configuring the Telerik package source](images/installation-deployment-and-distribution-install-using-nuget002.png)
 
 1. **Configure the package source**. Click the **Settings** (gear) icon, then select **Package Sources**. Add a new package source with the following details:
    - **Name**: Telerik NuGet Feed (or any descriptive name)
    - **Source**: `https://nuget.telerik.com/v3/index.json`
 
-	![installation-deployment-and-distribution-install-using-nuget 004](images/installation-deployment-and-distribution-install-using-nuget004.png)
+	![Visual Studio NuGet Package Sources dialog with the Telerik NuGet feed configured](images/installation-deployment-and-distribution-install-using-nuget004.png)
 
 1. Click **Update** and then **OK** to save the configuration. You have successfully added the Telerik NuGet feed as a Package source!
 
@@ -65,7 +65,7 @@ https://nuget.telerik.com/v3/index.json
    - **Username**: `api-key`
    - **Password**: Your generated NuGet API key from your Telerik account
 
-	![installation-deployment-and-distribution-install-using-nuget 005](images/installation-deployment-and-distribution-install-using-nuget005.png)
+	![Visual Studio authentication dialog for the Telerik NuGet feed using an API key](images/installation-deployment-and-distribution-install-using-nuget005.png)
 
 	>note To generate an API key, see [Generate an API Key](#generate-an-api-key). The API key is specific to your licensed account and provides access to the packages you are entitled to use.
 
@@ -73,7 +73,7 @@ https://nuget.telerik.com/v3/index.json
 
 1. Select the target framework version. Choose the package version that matches your project's target framework (.NET Framework 4.8, .NET 6.0, .NET 8.0, .NET 9.0 or later) and click **Install**:
 
-	![installation-deployment-and-distribution-install-using-nuget 006](images/installation-deployment-and-distribution-install-using-nuget006.png)
+	![Visual Studio NuGet Package Manager showing UI.for.WinForms.AllControls for installation](images/installation-deployment-and-distribution-install-using-nuget006.png)
 
 
 ### Reset Stored Credentials
@@ -102,21 +102,21 @@ If you have previously stored credentials for the Telerik NuGet server, you need
 
 1. First you need to log in using your licensed account. This way you will be able to download the packages:
 
-	![installation-deployment-and-distribution-install-using-nuget 001](images/installation-deployment-and-distribution-install-using-nuget001.png)
+	![Telerik account download page for manually downloading Telerik UI for WinForms NuGet packages](images/installation-deployment-and-distribution-install-using-nuget001.png)
 
 	>tip The following article shows where you can find the downloads section [Download Product Files](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/download-product-files)
 	
 1. Then you need to add packages to Visual Studio. Open the NuGet manager and then click the options button:
 	
-	![installation-deployment-and-distribution-install-using-nuget 002](images/installation-deployment-and-distribution-install-using-nuget002.png)
+	![Visual Studio NuGet Package Manager options for adding a local Telerik package source](images/installation-deployment-and-distribution-install-using-nuget002.png)
 
 1. Add new package source. The __Source__ should point to the folder with the NuGets:
 	
-	![installation-deployment-and-distribution-install-using-nuget 003](images/installation-deployment-and-distribution-install-using-nuget003.png)
+	![Visual Studio NuGet Package Sources dialog with a local folder selected for Telerik packages](images/installation-deployment-and-distribution-install-using-nuget003.png)
 
 1. The final step is to select and install the desired packages. Please note that there are several versions, corresponding to the target framework used in the project, one for .NET 4.0, one for 4.8, one for .NET 6.0 or newer. 
 
-	![installation-deployment-and-distribution-install-using-nuget 00](images/installation-deployment-and-distribution-install-using-nuget008.png)
+	![Visual Studio NuGet Package Manager showing Telerik UI for WinForms packages for multiple target frameworks](images/installation-deployment-and-distribution-install-using-nuget008.png)
 
 # See Also
 

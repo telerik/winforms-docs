@@ -12,26 +12,26 @@ position: 9
 
 The following topic will show you how to use a specific version of the Telerik UI for WinForms suite in your project. 
 
-![updating-assemblies-in-a-project 001](images/updating-assemblies-in-a-project001.png)
+![Telerik UI for WinForms Downloads page showing assemblies zip](images/updating-assemblies-in-a-project001.png)
 
 When you [download a .zip containing all binaries]({%slug winforms/installation-deployment-and-distribution/download-product-files%}) for a specific version from your account, you need to replace the already existing assemblies in your project. Follow the steps:
 
 1. Unzip the downloaded archive.
 2. Select your project in Visual Studio >> Solution Explorer and expand the *References* section.
 
-	![updating-assemblies-in-a-project 002](images/updating-assemblies-in-a-project002.png)
+	![Visual Studio Solution Explorer References section with Telerik UI for WinForms assemblies](images/updating-assemblies-in-a-project002.png)
 
 3. Select the already added Telerik assemblies and delete them:
 
-	![updating-assemblies-in-a-project 003](images/updating-assemblies-in-a-project003.png)
+	![Visual Studio Solution Explorer showing Telerik UI for WinForms assemblies selected for removal](images/updating-assemblies-in-a-project003.png)
 
 4. Right-click over *References* and select *Add reference...*
 
-	![updating-assemblies-in-a-project 004](images/updating-assemblies-in-a-project004.png)
+	![Visual Studio Add Reference command for adding updated Telerik UI for WinForms assemblies](images/updating-assemblies-in-a-project004.png)
 
 5. Navigate to the unzipped folder and select the necessary references:
 
-	![updating-assemblies-in-a-project 005](images/updating-assemblies-in-a-project005.png)
+	![Visual Studio Add Reference dialog for selecting updated Telerik UI for WinForms assemblies](images/updating-assemblies-in-a-project005.png)
 
 Now, you are ready to build and run your project with the downloaded version from your account.
 

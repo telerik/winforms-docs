@@ -27,7 +27,7 @@ Using the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-
 
 The following example animates the __Opacity__ property of the RadButton's FillPrimitive, changing it from 1 to 0 (full transparent) and vice versa:
 
-![tpf-animations 001](images/tpf-animations001.gif)
+![Telerik UI for WinForms Telerik Presentation Framework opacity animation](images/tpf-animations001.gif)
 
 #### Animate button's Opacity property
 
@@ -69,7 +69,7 @@ End Sub
 
 Here is how to animate the __Margin__ property of the RadButton's FillPrimitive:
 
-![tpf-animations 002](images/tpf-animations002.gif)
+![Telerik UI for WinForms Telerik Presentation Framework margin animation](images/tpf-animations002.gif)
 
 #### Animate button's Margin property
 
@@ -108,7 +108,7 @@ End Sub
 
 You can also animate the __Bounds__ property of a control. Here is how to create a fly-out animation with RadPanel:
 
-![tpf-animations 003](images/tpf-animations003.gif)
+![Telerik UI for WinForms Telerik Presentation Framework bounds animation](images/tpf-animations003.gif)
 
 #### Animate button's Bounds property
 

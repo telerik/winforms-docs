@@ -39,15 +39,15 @@ Telerik menu adapts its available options based on your current project context:
 
 #### Figure 1: **Telerik UI for WinForms menu (no project selected)**
 
-![installation-deployment-and-distribution-vsx-overview 001](images/installation-deployment-and-distribution-vsx-overview001.png)
+![Visual Studio Telerik UI for WinForms menu with no project selected](images/installation-deployment-and-distribution-vsx-overview001.png)
 
 #### Figure 2: __Selected project in Visual Studio is Standard WinForms Application__
 
-![installation-deployment-and-distribution-vsx-overview 2](images/installation-deployment-and-distribution-vsx-overview002.png)
+![Visual Studio Telerik UI for WinForms menu for a selected standard WinForms project](images/installation-deployment-and-distribution-vsx-overview002.png)
 
 #### Figure 3: __Selected project in Visual Studio is Telerik WinForms Application__
 
-![installation-deployment-and-distribution-vsx-overview 003](images/installation-deployment-and-distribution-vsx-overview003.png)
+![Visual Studio Telerik UI for WinForms menu for a selected Telerik WinForms project](images/installation-deployment-and-distribution-vsx-overview003.png)
 
 
 ### Project Templates
@@ -56,7 +56,7 @@ When the extensions are installed, they add several specialized project template
 
 #### Figure 4: __Telerik new project templates__
 
-![installation-deployment-and-distribution-vsx-overview 004](images/installation-deployment-and-distribution-vsx-overview004.png)
+![Visual Studio New Project dialog showing Telerik UI for WinForms project templates](images/installation-deployment-and-distribution-vsx-overview004.png)
 
 
 

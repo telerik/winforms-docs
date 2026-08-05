@@ -25,7 +25,7 @@ Use the __TextPrimitive__ class whenever you need to display text as part of ren
 
 * __TextRenderingHint:__ An enumeration defining the text antialiasing.
 
-![tpf-primitives-textprimitive 001](images/tpf-primitives-textprimitive001.png)
+![Telerik UI for WinForms TextPrimitive displaying formatted control text](images/tpf-primitives-textprimitive001.png)
 
 #### Creating a TextPrimitive
 

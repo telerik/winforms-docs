@@ -44,7 +44,7 @@ Alternatively, you can right-click on a project file with the mouse, then select
 
 The wizard starts with an overview of the upgrade process, providing essential information about what will be updated and any important considerations.
 
-![installation-deployment-and-distribution-vsx-upgrade-project 001](images/installation-deployment-and-distribution-vsx-upgrade-project001.png)
+![Telerik UI for WinForms Project Upgrade Wizard overview page](images/installation-deployment-and-distribution-vsx-upgrade-project001.png)
 
 ### Step 3: Select Projects and Target Version
 
@@ -56,7 +56,7 @@ The wizard displays all projects in your solution that use Telerik UI for WinFor
 
 >note Upgrading all projects in a solution to the same version prevents compatibility issues and ensures consistent behavior across your application.
 
-![installation-deployment-and-distribution-vsx-upgrade-project 002](images/installation-deployment-and-distribution-vsx-upgrade-project002.png)
+![Telerik UI for WinForms Project Upgrade Wizard project and target version selection page](images/installation-deployment-and-distribution-vsx-upgrade-project002.png)
 
 
 ### Step 4: Configure Toolbox and Backup Options
@@ -67,7 +67,7 @@ The final configuration screen allows you to:
 - **Create Backup**: Create a backup of your current project before applying changes (highly recommended).
 - **Show upgrade log when the Upgrade wizard finishes the upgrade**: The upgrade log can be checked/unchecked according to user preferences.
 
-![installation-deployment-and-distribution-vsx-upgrade-project 003](images/installation-deployment-and-distribution-vsx-upgrade-project003.png)
+![Telerik UI for WinForms Project Upgrade Wizard toolbox and backup configuration page](images/installation-deployment-and-distribution-vsx-upgrade-project003.png)
 
 
 ### Step 5: Visual Studio Restart

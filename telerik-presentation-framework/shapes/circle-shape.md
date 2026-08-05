@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the __Circle__ shape applied to a RadPanel:
 
-![circle-shape001](images/circle-shape001.png)
+![Telerik UI for WinForms CircleShape applied to a RadPanel](images/circle-shape001.png)
 
 The following code shows how you can create and apply a __Circle__:
 

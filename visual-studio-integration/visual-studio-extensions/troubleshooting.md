@@ -30,7 +30,7 @@ Telerik Visual Studio Extensions are disabled or not installed correctly.
 
 * Search for Telerik WinForms VSExtensions and make sure they are Enabled
 
-![vsextensions-disabled](images/vsextensions-disabled.png)
+![Visual Studio Manage Extensions dialog showing Telerik UI for WinForms Extensions disabled](images/vsextensions-disabled.png)
 
 *Suggested solution 2(Extension is not installed):*
 

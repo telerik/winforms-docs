@@ -21,7 +21,7 @@ The following tutorial demonstrates:
 
 The example control will contain a filled area and a centered text primitive. A timer will update the text to reflect the current date and time.
 
-![tpf-getting-started 001](images/tpf-getting-started001.png)
+![Telerik UI for WinForms Telerik Presentation Framework custom panel element with a filled area and centered text](images/tpf-getting-started001.png)
 
 ## Create the Element Class
 
@@ -267,7 +267,7 @@ End Class
 
 The control should now look like this:
 
-![tpf-getting-started 003](images/tpf-getting-started003.png)
+![Telerik UI for WinForms custom MyPanel control created with the Telerik Presentation Framework](images/tpf-getting-started003.png)
 
 # See Also
 * [Telerik Presentation Framework Overview]({%slug winforms/telerik-presentation-framework/overview%})

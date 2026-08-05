@@ -19,7 +19,7 @@ By default, when you set a certain __RadProperty__ in code, this setting will ha
 
 Here is an example. By default, __RadButton__, like most of the visual items in the UI for WinForms suite has hover state coming from the theme.
 
-![tpf-override-theme-settings-at-run-time 001](images/tpf-override-theme-settings-at-run-time001.gif)
+![Telerik UI for WinForms theme settings overridden at run time](images/tpf-override-theme-settings-at-run-time001.gif)
 
 Consider the case in which you should change the __BackColor__ for a __RadButton__. To achieve it, you will probably use the following code snippet:
 
@@ -42,7 +42,7 @@ Me.RadButton1.ButtonElement.ButtonFillElement.GradientStyle = GradientStyles.Sol
 
 As a result, you will obtain the desired __BackColor__. However, the hover state will be lost.
 
-![tpf-override-theme-settings-at-run-time 002](images/tpf-override-theme-settings-at-run-time002.gif)
+![Telerik UI for WinForms control theme settings changed at run time](images/tpf-override-theme-settings-at-run-time002.gif)
 
 The local value, applied to the __BackColor__ property, overrides the applied style coming from the theme.
 
@@ -69,7 +69,7 @@ Me.RadButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives
 
 {{endregion}} 
 
-![tpf-override-theme-settings-at-run-time 003](images/tpf-override-theme-settings-at-run-time003.gif)
+![Telerik UI for WinForms theme repository settings overridden at run time](images/tpf-override-theme-settings-at-run-time003.gif)
 
 The __GetAvailableVisualStates__ method returns a list of the string representation of the applicable states for this element. These can be used as separate states or combined. When combining, use the dot notation e.g. *IsDefault.MouseOver*.
 
@@ -114,7 +114,7 @@ Me.RadButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Primitives
 
 {{endregion}} 
 
-![tpf-override-theme-settings-at-run-time 004](images/tpf-override-theme-settings-at-run-time004.gif)
+![Telerik UI for WinForms custom theme settings applied at run time](images/tpf-override-theme-settings-at-run-time004.gif)
 
 Here is an example how to combine states for __RadToggleButton__
 
@@ -139,7 +139,7 @@ Me.RadToggleButton1.ButtonElement.SetThemeValueOverride(Telerik.WinControls.Prim
 
 {{endregion}} 
 
-![tpf-override-theme-settings-at-run-time 005](images/tpf-override-theme-settings-at-run-time005.gif)
+![Telerik UI for WinForms runtime theme changes displayed in a control](images/tpf-override-theme-settings-at-run-time005.gif)
 
 >note You can use the **ResetThemeValueOverrides** method if you need to reset the applied style for a specific state of the element.
 

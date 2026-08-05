@@ -12,7 +12,7 @@ position: 3
 
 The Telerik UI for WinForms controls can also be installed via the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction).
 
-![installing-from-progress-control-panel 001](images/installing-from-progress-control-panel001.png)
+![Progress Control Panel welcome screen for installing Telerik UI for WinForms](images/installing-from-progress-control-panel001.png)
 
 ## Download and Log-in
 
@@ -20,7 +20,7 @@ To start, go to the [Progress Control Panel download page](https://www.telerik.c
 
 >caption Figure 1: The Progress Control Panel Login Screen
 
-![installing-from-progress-control-panel 002](images/installing-from-progress-control-panel002.png)
+![Progress Control Panel login screen for Telerik UI for WinForms installation](images/installing-from-progress-control-panel002.png)
 
 ## Select Products to Install
 
@@ -30,7 +30,7 @@ You can continue by selecting the Telerik UI for WinForms suite. Once you click 
 
 >caption Figure 2: The Progress Control Panel List of Available Products
  
-![installing-from-progress-control-panel 004](images/installing-from-progress-control-panel004.png)
+![Progress Control Panel product list with Telerik UI for WinForms selected for installation](images/installing-from-progress-control-panel004.png)
 
 ## Configure Installation
 
@@ -38,7 +38,7 @@ Once you click `Proceed`, you will then be given the opportunity to review your 
 
 >caption Figure 3: The Progress Control Panel Installation Configuration Page
 
-![installing-from-progress-control-panel 008](images/installing-from-progress-control-panel008.png)
+![Progress Control Panel installation configuration page for Telerik UI for WinForms](images/installing-from-progress-control-panel008.png)
 
 When you click `Proceed`, the Progress Control Panel will download the necessary files for installation and then install them to the location you selected.
 
@@ -48,7 +48,7 @@ After the installation is complete, you will be returned to the main screen to i
 
 >caption Figure 4: The Progress Control Panel with Telerik UI for WinForms Installed
 
-![installing-from-progress-control-panel 003](images/installing-from-progress-control-panel003.png)
+![Progress Control Panel main screen showing Telerik UI for WinForms installed](images/installing-from-progress-control-panel003.png)
 
 You can now start creating your first [Telerik UI for WinForms project]({%slug winforms/getting-started/first-steps%}).
 
@@ -56,7 +56,7 @@ You can now start creating your first [Telerik UI for WinForms project]({%slug w
 
 The **Options** dialog allows you to adjust the Control Panel settings. It is possible to control whether previous versions will be kept in parallel when installing a new version.
 
-![installing-from-progress-control-panel 009](images/installing-from-progress-control-panel009.png)
+![Progress Control Panel Options dialog for keeping previous Telerik UI for WinForms versions](images/installing-from-progress-control-panel009.png)
 
 ## Removing from Progress Control Panel
 
@@ -64,13 +64,13 @@ Once you have installed the Telerik UI for WinForms suite in the Progress Contro
 
 >caption Figure 5: Removing the Telerik UI for WinForms installation from the Progress Control Panel
 
-![installing-from-progress-control-panel 005](images/installing-from-progress-control-panel005.png)
+![Progress Control Panel Remove option for uninstalling Telerik UI for WinForms](images/installing-from-progress-control-panel005.png)
 
 **Close** the window and proceed further:
 
-![installing-from-progress-control-panel 006](images/installing-from-progress-control-panel006.png)
+![Progress Control Panel confirmation step for removing Telerik UI for WinForms](images/installing-from-progress-control-panel006.png)
 
-![installing-from-progress-control-panel 007](images/installing-from-progress-control-panel007.png)
+![Progress Control Panel completion screen after removing Telerik UI for WinForms](images/installing-from-progress-control-panel007.png)
 
 
 

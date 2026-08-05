@@ -21,7 +21,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
 1. Click **Generate New Key +**.
 
-  ![Manage API Keys](images/account-generate-api-key.png)
+  ![Telerik account API Keys page with the Generate New Key command](images/account-generate-api-key.png)
 
 1. In the **Key Note** field, add a note that describes the API key.
 

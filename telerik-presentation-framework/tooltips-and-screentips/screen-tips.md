@@ -14,13 +14,13 @@ __Screen Tip__ is a UI feature which consists of a small window that appears whe
 
 >caption Figure 1: A ScreenTip in RadGridView. 
 
-![tpf-screen-tip001](images/tpf-screen-tip001.png)
+![Telerik UI for WinForms RadGridView ScreenTip](images/tpf-screen-tip001.png)
 
 The __RadOffice2007ScreenTipElement__ is the screen tip that is currently available in the Telerik UI for WinForms suite.This screen tip contains 3 labels and a line which is used to separate the footer. Each label element can display an image as well. The following image shows the elements that are used inside this screen tip.
 
 >caption Figure 2: RadOffice2007ScreenTipElement.
 
-![tpf-screen-tip002](images/tpf-screen-tip002.png)
+![Telerik UI for WinForms RadOffice2007ScreenTipElement layout](images/tpf-screen-tip002.png)
 
 
 The following example demonstrates how you can show a tooltip when a `RadListView` item is hovered. Please note that the __Item__ property contains the currently hovered element. 
@@ -64,7 +64,7 @@ End Sub
 
 >caption Figure 3: Screen tip in RadListView
 
-![tpf-screen-tip003](images/tpf-screen-tip003.png)
+![Telerik UI for WinForms RadListView ScreenTip with caption, main text, and footer](images/tpf-screen-tip003.png)
 
 >tip To determine which are the exact elements types, just add the following statement to the `ScreenTipNeeded` event: `Console.WriteLine(e.Item)`, this way when you are hovering the elements, their types will be displayed in the console.
 >

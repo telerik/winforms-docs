@@ -32,7 +32,7 @@ The measure stage calculates the RadElement __DesiredSize__ property. __DesiredS
 
 The measure stage recurses over the element hierarchy calling three functions: __Measure__, __MeasureCore__ and __MeasureOverride__. An element's __Measure__ method calls __MeasureCore__, which in turn calls __MeasureOverride__. __MeasureOverride__ calls the __Measure__ method of all element children.
 
-![tpf-layout-logic 001](images/tpf-layout-logic001.png)
+![Telerik UI for WinForms Telerik Presentation Framework measure stage layout flow diagram](images/tpf-layout-logic001.png)
 
 ## Measure
 
@@ -46,7 +46,7 @@ __MeasureCore__ ensures transparency for logic that calculates the desired size 
 
 * Transform the __MeasureOverride__ return value, again taking __Margins__, __Scale__ and __AngleTransform__ into account. To the __DesiredSize__ is assigned the result of this transformation. 
 
-![tpf-layout-logic 002](images/tpf-layout-logic002.png)
+![Telerik UI for WinForms Telerik Presentation Framework MeasureCore transformation diagram](images/tpf-layout-logic002.png)
 
 Padding is handled differently for each custom layout and so is not considered in the base __MeasureCore__ method. Padding should be handled in the __MeasureOverride__ method.
 
@@ -56,7 +56,7 @@ This method receives a parameter containing the size available for its children 
 
 __MeasureOverride__ should call the __Measure__ method for any children. The __Measure__ method takes a single SizeF "availableSize" parameter. To the DesiredSize is assigned the availableSize or the MeasureOverride return value, whichever is less. The diagram below shows how the size available to children is determined after applying margin, padding and rotation transformations to the size available for the parent element.
 
-![tpf-layout-logic 003](images/tpf-layout-logic003.png)
+![Telerik UI for WinForms Telerik Presentation Framework MeasureOverride available-size diagram](images/tpf-layout-logic003.png)
 
 ## Arrange Stage
 
@@ -71,7 +71,7 @@ The __DesiredSize__ of every child is valid in the parent's ArrangeOverride() me
 
 The rectangles allocated by __ArrangeOverride__ do not need to be next to each other or ordered in any particular fashion. The example below shows a  scenario where children are arranged with a size greater then their desired size. The first child is aligned in the bottom-right corner of the size it has received for layout, while the second child is stretched horizontally and aligned in the center.
 
-![tpf-layout-logic 004](images/tpf-layout-logic004.png)
+![Telerik UI for WinForms Telerik Presentation Framework ArrangeOverride child alignment and stretching diagram](images/tpf-layout-logic004.png)
 
 >caution The __ArrangeOverride__ and __MeasureOverride__ implementations in the layout panel logic are to be used for reserving size and arranging elements within the available area. They are not meant to be used for setting layout properties, but rather for implementing the logic needed to achieve the desired visual appearance.
 Layout-affecting properties such as [Margin, Scale and Padding]({%slug winforms/telerik-presentation-framework/layout/layout-structure%}) are meant to be set outside of the layout panel logic code.

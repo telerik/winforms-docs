@@ -15,7 +15,7 @@ Clipping refers to leaving out certain areas of an element that fall outside of 
 
 The diagram below shows a child with size greater than the size allocated for its display in order to show the clipping policy implemented by the Telerik Presentation Framework.
 
-![tpf-layout-clipping 001](images/tpf-layout-clipping001.png)
+![Telerik UI for WinForms Telerik Presentation Framework clipping diagram showing a child larger than its parent rectangle](images/tpf-layout-clipping001.png)
 
 # See Also
 * [Custom Layouts]({%slug winforms/telerik-presentation-framework/layout/custom-layouts%})

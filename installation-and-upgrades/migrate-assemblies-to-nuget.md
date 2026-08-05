@@ -47,7 +47,7 @@ For this project, we also need a scheduling mechanism and a document reader. Her
 * __Telerik.Windows.Documents.Core__
 * __TelerikCommon__
 
-![migrate-assemblies-nuget 001](images/migrate-assemblies-nuget001.png)
+![Visual Studio References node showing manually referenced Telerik UI for WinForms assemblies](images/migrate-assemblies-nuget001.png)
 
 The above assemblies can be replaced with the following NuGets:
 
@@ -55,17 +55,17 @@ The above assemblies can be replaced with the following NuGets:
 * __UI.for.WinForms.RichTextEditor__
 * __UI.for.WinForms.Scheduler__
 
-![migrate-assemblies-nuget 002](images/migrate-assemblies-nuget002.png)
+![Visual Studio NuGet Package Manager showing Telerik UI for WinForms packages that replace manual assemblies](images/migrate-assemblies-nuget002.png)
 
 The NuGets will installed the same number assemblies as you have done it manually. All referenced NuGet packages and their version is stored in the **packages.config** file. 
 
 The final step will be to migrate to PackageReference. The PackageReference is flexible and lightweight. When used it will remove the **packages.config** file from your project and move the NuGet package information in the **csproj** project file. To migrate the **packages.config** file, you will need to choose the **Migate packages.config to PackageReference...** option from the context menu.
 
-![migrate-assemblies-nuget 003](images/migrate-assemblies-nuget003.png)
+![Visual Studio context menu option for migrating packages.config to PackageReference](images/migrate-assemblies-nuget003.png)
 
 In our example, __UI.for.WinForms.Scheduler__ have a dependency to the RadGridView NuGet. The __UI.for.WinForms.GridView__ will be collapsed. Now when you expand the Reference node in Visual Studio, you can see the Package References:
 
-![migrate-assemblies-nuget 004](images/migrate-assemblies-nuget004.png)
+![Visual Studio References node showing Telerik UI for WinForms package references after NuGet migration](images/migrate-assemblies-nuget004.png)
 
 
 ## See Also

@@ -18,13 +18,13 @@ The Azure Blob Storage allows you to store any type of unstructured data: images
 
 Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add 3 buttons and a [RadListView]({%slug winforms/listview%}) to it. The layout should look like this:
 
-![azure-blob-storage-001](images/azure-blob-storage-001.png)
+![Telerik UI for WinForms Azure Blob Storage application layout with RadListView and file management buttons](images/azure-blob-storage-001.png)
 
 ## Step 2: Install the NuGet package
 
 Open the NuGet Package Manager and install the **Windows.Azure.Storage** package.
 
-![azure-blob-storage-002](images/azure-blob-storage-002.png)
+![NuGet Package Manager installing the Windows.Azure.Storage package for a Telerik UI for WinForms application](images/azure-blob-storage-002.png)
 
 ## Step 3: Create the Storage Account Objects 
 
@@ -47,7 +47,7 @@ The following article explains how you can create a storage account: [Create a S
 
 The process is straightforward and easy it should take no more than 10 minutes. Once this is completed you need to get the connection string. You can find it under the __Access Keys__ page.
 
-![azure-blob-storage-003](images/azure-blob-storage-003.png)
+![Azure portal Access Keys page showing the storage account connection string for a Telerik UI for WinForms application](images/azure-blob-storage-003.png)
 
 When you have a connection string copy it to your application:
 
@@ -209,7 +209,7 @@ End Sub
 
 You are now ready to manage the files in the cloud.
 
-![azure-blob-storage-004](images/azure-blob-storage-004.png)
+![Telerik UI for WinForms RadListView displaying files managed in Azure Blob Storage](images/azure-blob-storage-004.png)
 
 
 # See Also

@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the Star shape applied to a RadPanel:
 
-![star-shape001](images/star-shape001.png)
+![Telerik UI for WinForms StarShape applied to a RadPanel](images/star-shape001.png)
 
 The following code shows how you can create and apply a __StarShape__:
 
