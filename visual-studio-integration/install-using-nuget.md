@@ -39,7 +39,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
 ## Download from NuGet.org
 
->important As of **Q3 2026**, all Telerik UI for WinForms NuGet packages will be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>.
+Starting with **Q3 2026**, Telerik UI for WinForms NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. You can find and install the Telerik packages directly from NuGet.org without configuring the Telerik NuGet feed.
 
 ## Download from the Telerik NuGet server
 
