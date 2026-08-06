@@ -5,7 +5,7 @@ description: Data validation is a feature of WinForms Spreadsheet that helps you
 slug: radspreadsheet-features-data-validation
 tags: data,validation
 published: True
-position: 4
+position: 8
 ---
 
 # Data Validation

@@ -5,7 +5,7 @@ description: Context Menu
 slug: radspreadsheet-ui-worksheet-editor-context-menu
 tags: context,menu
 published: True
-position: 1
+position: 4
 ---
 
 # Context Menu

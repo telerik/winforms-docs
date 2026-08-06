@@ -23,6 +23,21 @@ To change the default English localization provider you should use the __Current
 >note __SpreadsheetLocalizationProvider__ contains all strings related to the __RadSpreadsheetRibbonBar__ as well.
 >
 
+## AI Assistant Localization Strings
+
+The following table lists all localization strings used by the AI Assistant feature:
+
+| Localization String | Default Value |
+|---|---|
+| `Spreadsheet_AI_AuthorName` | Spreadsheet AI |
+| `Spreadsheet_AI_WelcomeMessage` | Hello! I am your AI assistant. Ask me anything about this spreadsheet. |
+| `Spreadsheet_AI_ProviderNotConfigured` | AI provider is not configured. Please set the AIToolsProvider property. |
+| `Spreadsheet_AI_InputBoxWatermark` | Ask me anything... |
+| `Spreadsheet_AI_ThinkingWatermark` | AI is thinking... |
+| `Spreadsheet_AI_ErrorProcessingRequest` | An error occurred while processing your request. |
+
+## Custom Localization Provider
+
 Another approach is to create a custom localization provider class which inherits __SpreadsheetLocalizationProvider__. In it you should just override the __GetLocalizedString__  method and return the localized string depending on current id.
 
 <snippet id='spreadsheet-localization-customprovider-cs' />

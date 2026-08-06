@@ -5,7 +5,7 @@ description: Check our Charts documentation article for the WinForms Spreadsheet
 slug: radspreadsheet-features-ui-charts
 tags: chart
 published: True
-position: 0
+position: 1
 ---
 
 # Charts

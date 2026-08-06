@@ -5,7 +5,7 @@ description: WinForms Spreadsheet offers Freeze Panes feature so specific rows a
 slug: radspreadsheet-features-freeze-panes
 tags: freeze,panes
 published: True
-position: 2
+position: 5
 ---
 
 # Freeze Panes

@@ -5,7 +5,7 @@ description: The filtering feature in WinForms Spreadsheet allows the user to hi
 slug: radspreadsheet-features-filtering
 tags: filtering
 published: True
-position: 4
+position: 9
 ---
 
 # Filtering
