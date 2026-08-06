@@ -15,7 +15,24 @@ Use the __RadDock__ built-in pop-up __QuickNavigator__ to set the focus to any _
 
 ![WinForms RadDock Quick Navigator](images/dock-architecture-and-features-quick-navigator001.png)
 
-# See Also
+## Preserve Document Tab Order
+
+By default, Quick Navigator moves the selected document to the top of the activation order when you activate it. This behavior matches the default `Ctrl+Tab` navigation behavior in Visual Studio.
+
+Set the `QuickNavigatorSettings.MoveSelectedItemOnTop` property to `false` to activate a document without changing its position in the document tab order. Quick Navigator activates the selected document and preserves the existing document tab order.
+
+>note The default value of the `MoveSelectedItemOnTop` is `true`.
+
+#### Example 1: Stop Preserving the Document Tab Order
+
+```C#
+this.radDock1.QuickNavigatorSettings.MoveSelectedItemOnTop = false;
+```
+```VB.NET
+Me.RadDock1.QuickNavigatorSettings.MoveSelectedItemOnTop = False
+```
+
+## See Also
 
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
 * [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})

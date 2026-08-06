@@ -10,52 +10,37 @@ position: 5
 
 # Available NuGet Packages
 
-Telerik UI for WinForms comes with several different packages that can be [installed via the Telerik server or from a local package source]({%slug winforms/nuget%}):
+Telerik UI for WinForms comes with several different packages that can be [installed in your project as NuGet packages]({%slug winforms/nuget%}):
+
+* [`Telerik.UI.for.WinForms.AllControls`](#full-package-telerikuiforwinformsallcontrols-recommended): one full distribution package
+* [Separate packages per control or assembly](#separate-packages).
 
 ![Telerik UI for WinForms NuGet package list for different .NET target frameworks](images/winforms-available-nugets001.png)
 
-The Telerik assemblies are built against [different versions]({%slug assemblies-version%}) of .NET starting from .NET 4 to the latest official .NET. You should pick up this version of the NuGet package to install in your project that corresponds to the Target Framework that you are using in your project and that is available on your computer. 
+>important Starting with **Q3 2026**, all Telerik UI for WinForms NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
 
->important .NET 2.0 is last supported in the NuGet package version 2022.2.622.   
-> .NET 5 is last supported in the NuGet package version 2022.3.1109.
-> .NET 4.0 is last supported in the NuGet package version 2024.1.312.    
-> .NetCore is last supported in the NuGet package version 2024.1.312.
-> .NET 7 is last supported in the NuGet package version 2024.3.924.
-> .NET 6 is last supported in the NuGet package version 2025.1.211.
+## Full Package: Telerik.UI.for.WinForms.AllControls (recommended)
 
-## Full Packages
+The `Telerik.UI.for.WinForms.AllControls` package contains all Telerik UI for WinForms assemblies and supports all available [Telerik .NET Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}). Once installed, the `Telerik.UI.for.WinForms.AllControls` package automatically detects the project's target framework and uses the corresponding Telerik assemblies.
 
->important Starting with **Q3 2026**, all Telerik UI for WinForms NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
-
-`Telerik_UI_for_WinForms_<version number>_NuGet_Dev.zip` contains `.nupkg` files for the following full packages:
-
-* `UI.for.WinForms.AllControls.Net462`
-* `UI.for.WinForms.AllControls.Net48`
-* `UI.for.WinForms.AllControls.Net80`
-* `UI.for.WinForms.AllControls.Net90`
-* `Telerik.UI.for.WinForms.AllControls` : Contains all available [Telerik .NET Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}) 
-
-Each of these packages contains all Telerik UI for WinForms assemblies for the corresponding .NET Framework/ .NET Core/ .NET version. 
+>important The `Telerik.UI.for.WinForms.AllControls` package replaces the framework-specific packages which are already retired:
+>
+>* `UI.for.WinForms.AllControls.Net462`
+>* `UI.for.WinForms.AllControls.Net48`
+>* `UI.for.WinForms.AllControls.Net80`
+>* `UI.for.WinForms.AllControls.Net90`
 
 ## Separate Packages
 
 `Telerik_UI_for_WinForms_<version number>_NuGet_Dev.zip` contains `.nupkg` files for the separate packages for each Telerik assembly:
 
-* `UI.for.WinForms.Common`
-* `UI.for.WinForms.GridView`
-* `UI.for.WinForms.PdfViewer`
-* `UI.for.WinForms.Scheduler`
-* `UI.for.WinForms.Theme`
-* `UI.for.WinForms.SyntaxEditor`
+* `Telerik.for.WinForms.Common`
+* `Telerik.for.WinForms.GridView`
+* `Telerik.for.WinForms.PdfViewer`
+* `Telerik.for.WinForms.Scheduler`
+* `Telerik.for.WinForms.Theme`
+* `Telerik.for.WinForms.SyntaxEditor`
 *  .etc
-
-Each of these packages contain the corresponding  assemblies for all available [Telerik .NET Distributions]({%slug winforms/installation-deployment-and-distribution/distributions%}). In case the dll is dependent on another Telerik dll, the required package will be installed automatically.
-
->note As the AllControls package contains all UI controls and themes it should not be installed in projects having other packages containing the UI controls (e.g. UI.for.WinForms.Common etc.) or the UI.for.WinForms.Themes package. Either use the AllControls package or the packages of the separate controls and the themes.
-
-## Telerik NuGet Server Packages
-
-There is an [online package source]({%slug winforms/nuget%}) that can be used to get Telerik NuGets. 
 
 ## See Also
 

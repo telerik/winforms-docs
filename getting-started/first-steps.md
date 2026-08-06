@@ -60,7 +60,7 @@ In this step, create a basic Telerik WinForms project that you can use as a star
 
 Telerik maintains a NuGet feed with official Telerik UI for WinForms releases. These packages are available to registered users with an active trial or commercial license. Adding the Telerik NuGet server as a package source in Visual Studio lets you download and install Telerik packages that contain controls and utilities.
 
->important Starting with the **Q3 2026** release, all Telerik UI for WinForms NuGet packages will also be available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
+>important Starting with the **Q3 2026** release, all Telerik UI for WinForms NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
 
 Because the Telerik NuGet server requires authentication, first create an API key that you will use instead of a password. This approach is more secure, especially when you work with the `NuGet.Config` file.
 
