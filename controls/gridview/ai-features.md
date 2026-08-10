@@ -6,6 +6,7 @@ slug: winforms/gridview/ai-features
 tags: gridview, ai-features, artificial-intelligence, smart-data
 published: True
 position: 1
+tag: new
 ---
 
 # WinForms GridView AI Features
