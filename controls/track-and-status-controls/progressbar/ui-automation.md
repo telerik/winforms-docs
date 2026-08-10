@@ -6,6 +6,7 @@ slug: progressbar-ui-automation
 tags: radprogressbar,ui,automation
 published: True
 position: 15
+tag: new
 ---
 
 # UI Automation Support
