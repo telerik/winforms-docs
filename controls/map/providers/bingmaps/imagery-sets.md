@@ -5,7 +5,7 @@ description: This article describes the BingRestMapProvdider imagery sets.
 slug: map-bing-imagery-sets
 tags: map, providers
 published: True
-position: 1 
+position: 2 
 ---
 
 # Imagery sets

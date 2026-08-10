@@ -5,7 +5,7 @@ description: WinForms Map supports the Bing Maps Truck Routing API which provide
 slug: map-bing-truck-route
 tags: map, providers
 published: True
-position: 3 
+position: 6 
 ---
 
 # Truck Route

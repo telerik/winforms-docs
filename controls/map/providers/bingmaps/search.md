@@ -5,7 +5,7 @@ description: WinForms Map allows you to implement search functionality, that wil
 slug: winforms/map/providers/search
 tags: map, providers, search
 published: True
-position: 2 
+position: 4 
 ---
 
 # Search
