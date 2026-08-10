@@ -5,11 +5,10 @@ description: Learn how the Telerik UI for WinForms SmartPasteButton uses an AI s
 tags: smart paste, ai, clipboard, button, winforms, .net
 published: True
 position: 0
-slug: speechtotextbutton-overview
-CTAControlName: SpeechToTextButton
+slug: smartpastebutton-overview
 ---
 
-# WinForms SpeechToTextButton Overview
+# WinForms SmartPasteButton Overview
 
 The Telerik UI for WinForms SmartPasteButton is an AI-powered component that streamlines data entry by extracting structured information from clipboard content and automatically populating form fields. 
 

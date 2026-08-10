@@ -140,5 +140,5 @@ Use `FieldType` to enable type conversion for common .NET types, including numbe
 
 * [SmartPasteButton Overview]({%slug smartpastebutton-overview%})
 * [Customizing the SmartPasteButton Appearance]({%slug smartpastebutton-appearance%})
-* [RadDataLayout]({%slug datalayout-overview%})s
-* [RadGridView]({%slug gridview-overview%})
+* [RadDataLayout]({%slug winforms/datalayout/overview%})
+* [RadGridView]({%slug winforms/gridview%})
