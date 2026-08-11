@@ -47,7 +47,7 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="TreeView" href="slug:winforms/treeview"></IntroTableAnchor>
             <IntroTableAnchor title="TreeMap" href="slug:winforms-treemap-overview"></IntroTableAnchor>
             <IntroTableAnchor title="HeatMap" href="slug:heatmap-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="VirtualGrid" href="slug:winforms/virtualgrid" tag="updated"></IntroTableAnchor>
+            <IntroTableAnchor title="VirtualGrid" href="slug:winforms/virtualgrid"></IntroTableAnchor>
             <IntroTableAnchor title="DataFilter" href="slug:winforms/datafilter/overview"></IntroTableAnchor>
             <IntroTableAnchor title="FilterView" href="slug:filter-view-overview"></IntroTableAnchor>
         </IntroTableSection>
@@ -62,7 +62,7 @@ The control catalog is grouped by common application scenarios. Start with the c
         <IntroTableSection title="Media">
             <IntroTableAnchor title="ImageEditor" href="slug:radimageeditor-overview"></IntroTableAnchor>
             <IntroTableAnchor title="WebCam" href="slug:webcam-overview"></IntroTableAnchor>
-            <IntroTableAnchor title="PictureBox" href="slug:radpicturebox-overview" tag="updated"></IntroTableAnchor>
+            <IntroTableAnchor title="PictureBox" href="slug:radpicturebox-overview"></IntroTableAnchor>
         </IntroTableSection>
         <IntroTableSection title="Document Processing">
             <IntroTableAnchor title="PdfProcessing" href="slug:document-processing-libraries-overview"></IntroTableAnchor>
@@ -81,8 +81,9 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="ProgressBar" href="slug:winforms/track-and-status-controls/progressbar"></IntroTableAnchor>
             <IntroTableAnchor title="Rating" href="slug:winforms/track-and-status-controls/rating"></IntroTableAnchor>
             <IntroTableAnchor title="Rotator" href="slug:winforms/rotator"></IntroTableAnchor>
-            <IntroTableAnchor title="SpeechToTextButton" href="slug:speechtotextbutton-overview" tag="new"></IntroTableAnchor>
-            <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview" tag="updated"></IntroTableAnchor>
+			<IntroTableAnchor title="SmartPasteButton" href="slug:smartpastebutton-overview" tag="new"></IntroTableAnchor>
+            <IntroTableAnchor title="SpeechToTextButton" href="slug:speechtotextbutton-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TrackBar" href="slug:winforms/track-and-status-controls/trackbar"></IntroTableAnchor>
             <IntroTableAnchor title="WaitingBar" href="slug:winforms/track-and-status-controls/waitingbar"></IntroTableAnchor>
             <IntroTableAnchor title="VirtualKeyboard" href="slug:winforms-virtual-keyboard-overview"></IntroTableAnchor>
@@ -137,7 +138,7 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="MultiColumnComboBox" href="slug:winforms/multicolumncombobox"></IntroTableAnchor>
             <IntroTableAnchor title="PopupEditor" href="slug:winforms/editors/popupeditor"></IntroTableAnchor>
             <IntroTableAnchor title="SpinEditor" href="slug:winforms/editors/spineditor"></IntroTableAnchor>
-            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview"></IntroTableAnchor>
+            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview" tag="updated"></IntroTableAnchor>
             <IntroTableAnchor title="TextBox" href="slug:winforms/editors/textbox"></IntroTableAnchor>
             <IntroTableAnchor title="TimeOnlyPicker (.NET Only)" href="slug:editors-timeonlypicker-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TimePicker" href="slug:winforms/editors/timepicker"></IntroTableAnchor>
