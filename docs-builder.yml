@@ -3454,3 +3454,7 @@ redirects:
     from: "^/devtools/winforms/documentation/ai-coding-assistant/mcp-server-as-nuget$"
     to: "/devtools/winforms/documentation/ai-coding-assistant/mcp-server"
     type: Permanent
+-    
+    from: "^/devtools/winforms/documentation/ai-coding-assistant/overview$"
+    to: "/devtools/winforms/documentation/ai-coding-assistant/mcp-server"
+    type: Permanent
