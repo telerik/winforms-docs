@@ -32,7 +32,7 @@ RadTabStrip
 
 Any control in the Telerik UI for WinForms suite is composed of __RadElement__ instances arranged in a logical tree. You can inspect this tree using the VisualStyleBuilder or the Control Spy. For example, the screenshot below shows the internal structure of a  **RadPageView** control as displayed by the Control Spy. In this case, you can see the __RootRadElement__ with the  __RadPageViewStripElement__ as its only child. The **__RadPageViewStripElement__** in turn contains a  __StripViewItemContainer__ which in turn holds the elements that make up each tab. At the leaf level of the tree, various [primitives]({%slug winforms/telerik-presentation-framework/class-hierarchy/baseprimitive%}) are the atomic pieces that make up the element. For example, button contains a fill, text and border primitives.
 
-![tpf-overview-introducing 001](images/tpf-overview-introducing001.png)
+![Telerik UI for WinForms RadPageView internal element hierarchy shown in Control Spy](images/tpf-overview-introducing001.png)
 
 # See Also
 * [Telerik Presentation Framework Overview]({%slug winforms/telerik-presentation-framework/overview%})

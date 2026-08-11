@@ -12,7 +12,7 @@ position: 19
 
 The newest Windows OS 11 brings plenty of great features where the [rounded corners](https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/apply-rounded-corners) are just a piece of the improved design. It would bring a more elegant experience to your forms in desktop applications giving smooth rounded edges and shadow effect: 
 
-![tpf-rounded-corners001](images/tpf-rounded-corners001.png)  
+![Telerik UI for WinForms control with rounded corners](images/tpf-rounded-corners001.png)  
 
 The rounded corners are enabled by default when the operating system is Windows 11. This functionality can be controlled by the Telerik.WinControls.WindowsSettings.**EnableRoundedCornersDefaultValue** property. 
 
@@ -23,7 +23,7 @@ A closer look at the difference of the form's edges with disabled rounded corner
 
 |EnableRoundedCorners=false|EnableRoundedCorners=true|
 |----|----|
-|![tpf-rounded-corners001](images/tpf-rounded-corners003.png)|![tpf-rounded-corners001](images/tpf-rounded-corners004.png)|  
+|![Telerik UI for WinForms rounded corner style example](images/tpf-rounded-corners003.png)|![Telerik UI for WinForms rounded corners with native window methods](images/tpf-rounded-corners004.png)|  
 
 ## Requirements
 

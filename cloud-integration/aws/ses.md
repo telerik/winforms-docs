@@ -20,14 +20,14 @@ This article will demonstrate how one can use this service from a WinForms appli
 
 First create a new [Telerik UI for WinForms]({%slug winforms/visual-studio-templates%}) application using the default template. Drop two labels, two text-boxes, a button, and a [RadRichTextBox]({%slug winforms/richtexteditor%}) editor on the form. Your layout should look like this:
 
-![aws-ses001](images/aws-ses001.png)
+![Telerik UI for WinForms Simple Email Service application layout with RadRichTextBox, text boxes, labels, and a button](images/aws-ses001.png)
 
 
 ## Step 2: Add the SES assemblies
 
 Open the NuGet Package Manager and install the **AWSSDK Simple Email** package.
 
-![aws-ses002](images/aws-ses002.png)
+![NuGet Package Manager installing the AWSSDK Simple Email package for a Telerik UI for WinForms application](images/aws-ses002.png)
 
 In addition you need to add the following to your App.config file:
 
@@ -107,7 +107,7 @@ End Sub
 
 Before using the application you must verify some email addresses. If you are using the test environment both sender and receiver addresses must be verified. This should be done from the AWS console.
 
-![aws-ses003](images/aws-ses003.png)
+![AWS Simple Email Service console for verifying sender and recipient email addresses used by a Telerik UI for WinForms application](images/aws-ses003.png)
 
 >tip Please note that the addresses are verified for each region and the regions in the console and the application must be the same. 
 

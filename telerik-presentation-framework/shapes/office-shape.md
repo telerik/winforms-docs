@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the __Office__ shape applied to a RadPanel:
 
-![office-shape001](images/office-shape001.png)
+![Telerik UI for WinForms OfficeShape applied to a RadPanel](images/office-shape001.png)
 
 The following code shows how you can create and apply a __Office__:
 

@@ -13,7 +13,7 @@ previous_url: tpf-primitives-overflowprimitive
 
 The OverflowPrimitive is a visual indicator and button that more choices are available. The OverflowPrimitive consists of a triangle and a line just under the base of the triangle. The triangle and line are colored using the __ForeColor__ property. Depending on the __Direction__ property of the arrow, __BackColor__ and __ShadowColor__ may be used.
 
-![tpf-primitives-overflowprimitive 001](images/tpf-primitives-overflowprimitive001.png)
+![Telerik UI for WinForms OverflowPrimitive visual indicator for additional choices](images/tpf-primitives-overflowprimitive001.png)
 
 #### Creating an OverflowPrimitive
 

@@ -16,7 +16,7 @@ A missing, expired, or invalid license will result in:
   - A modal dialog appearing on application startup. Clicking the **OK** button of the dialog closes the dialog and removes the banner until the next application startup.
   - A warning messages similar to the following may appear in the build log:
 
-![warning messages](images/license-errors-warnings001.png) 
+![Telerik UI for WinForms license activation warning messages in the build log](images/license-errors-warnings001.png) 
 
 ## Invalid License
 
@@ -41,13 +41,13 @@ If you use Telerik UI for WinForms in a project with an invalid license, the UI 
 
 A watermark appears on the form using Telerik UI for WinForms controls:
 
-![Watermark in the Light Theme](images/watermark.png)
+![Telerik UI for WinForms watermark displayed on a form using an invalid license in the Light theme](images/watermark.png)
 
 ### Banner
 
 A banner appears on pages that use unlicensed Telerik UI for WinForms components:
 
-![Banner](images/banner.png)
+![Telerik UI for WinForms invalid-license banner displayed over unlicensed components](images/banner.png)
 
 * Clicking the ? button on the banner takes you to the Telerik licensing price page.
 * Clicking the X button of the banner closes it until the page is reloaded or a license is activated.
@@ -56,7 +56,7 @@ A banner appears on pages that use unlicensed Telerik UI for WinForms components
 
 A modal dialog appears on pages when your Telerik UI for WinForms license has expired:
 
-![Modal Dialog](images/modal-dialog.png)
+![Telerik UI for WinForms license expiration modal dialog displayed at application startup](images/modal-dialog.png)
 
 ## License Warnings and Errors
 

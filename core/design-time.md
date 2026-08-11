@@ -14,7 +14,7 @@ Telerik UI for WinForms fully supports the Visual Studio .NET WinForms designer.
 
 >caption Figure 1: RadGridView .NET Designer
 
-![core-designer001](images/core-designer001.png)
+![Telerik UI for WinForms RadGridView displayed in the Visual Studio .NET designer](images/core-designer001.png)
 
 ## Requirements
 
@@ -29,7 +29,7 @@ The design time assemblies in .NET are resolved via the installed in the project
 
 >caption Figure 2: TelerikWinFormsApp in .NET using UI.for.WinForms.AllControls.Net90
 
-![core-designer002](images/core-designer002.png)
+![Telerik UI for WinForms .NET project using the UI.for.WinForms.AllControls.Net90 NuGet package in the designer](images/core-designer002.png)
 
 >caution Even though you may have an installation of the Telerik UI for WinForms suite, it is not enough to load the designer. It requires installing Telerik UI for WinForms NuGet package.
 

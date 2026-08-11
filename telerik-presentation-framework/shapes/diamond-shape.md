@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the diamond shape applied to a RadPanel:
 
-![diamond-shape001](images/diamond-shape001.png)
+![Telerik UI for WinForms DiamondShape applied to a RadPanel](images/diamond-shape001.png)
 
 The following code shows how you can create and apply a __DiamondShape__:
 

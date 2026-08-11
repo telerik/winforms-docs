@@ -11,7 +11,7 @@ previous_url: tpf-printing-support-radprintpreviewdialog
 
 # Print Preview Dialog
 
-![tpf-printing-support-radprintpreviewdialog 001](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog001.png)
+![Telerik UI for WinForms RadPrintPreviewDialog previewing a printable document](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog001.png)
 
 By using RadPrintPreviewDialog you can preview how the RadPrintDocument will appear when printed. 
 
@@ -76,9 +76,9 @@ RadPrintPreviewDialog allows zooming and navigating through the pages via the me
 
 The RadPrintPreviewDialog can also be used for editing the print document. When the __Print Settings__ button is clicked, [RadPrintSettingsDialog]({%slug winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-settings-dialog%}) is opened, allowing the end user to edit a variety of settings related to the printed object. Also, when the __Watermark__ button is clicked, the end user can place a watermark on some of the pages by using the [WatermarkSettingsDialog]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark%}).
 
-![tpf-printing-support-radprintpreviewdialog 002](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog002.png)
+![Telerik UI for WinForms RadPrintPreviewDialog with print document editing controls](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog002.png)
 
-![tpf-printing-support-radprintpreviewdialog 003](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog003.png)
+![Telerik UI for WinForms RadPrintPreviewDialog page navigation and zoom controls](images/tpf-printing-support-end-user-functionality-radprintpreviewdialog003.png)
 
 **RadPrintPreviewDialog** is also used at design time to edit and serialize the properties of **RadPrintDocument**. For more information refer to the[RadPrintDocument article.]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument%})
 

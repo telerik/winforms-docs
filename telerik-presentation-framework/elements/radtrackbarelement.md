@@ -13,7 +13,7 @@ previous_url: tpf-elements-radtrackbar
 
 RadTrackBarElement contains the logic and user interface for RadTrackBar. 
 
-![tpf-elements-radtrackbar 001](images/tpf-elements-radtrackbar001.png)
+![Telerik UI for WinForms RadTrackBarElement example](images/tpf-elements-radtrackbar001.png)
 
 {{source=..\SamplesCS\TPF\Elements\MyTrackBarControl.cs region=myTrackBarControl}} 
 {{source=..\SamplesVB\TPF\Elements\MyTrackBarControl.vb region=myTrackBarControl}} 

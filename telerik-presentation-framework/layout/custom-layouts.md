@@ -17,7 +17,7 @@ To create a custom layout class, create a __LayoutPanel__ descendant class and o
 
 * __ArrangeOverride:__ This implementation iterates the __Children__  collection and calls the __Arrange__ method for each child instance. The local "leftTopCorner" __Point__  member is incremented by the width and height of each child, causing each child to be arranged down and to the right of the previous child. 
 
-![tpf-layout-custom-layout 001](images/tpf-layout-custom-layout001.png)
+![Telerik UI for WinForms Telerik Presentation Framework custom CascadeLayoutPanel arranging child elements diagonally](images/tpf-layout-custom-layout001.png)
 
 #### Cascade layout example
 

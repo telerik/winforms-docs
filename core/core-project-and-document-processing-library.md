@@ -14,20 +14,20 @@ Since the Telerik Document Processing Libraries depend on some types from WPF us
 
 By default, when creating a WinForms .NET application the **Microsoft.WindowsDesktop.App.WindowsForms** framework is added. This does not include the required WPF references. 
 
-![core-project-and-document-processing-library001](images/core-project-and-document-processing-library001.png)
+![WinForms .NET project file before adding WPF support for Telerik Document Processing Libraries](images/core-project-and-document-processing-library001.png)
 
 To add the required references, you need to:
 
 1\. Edit the project file:  
 
-![core-project-and-document-processing-library002](images/core-project-and-document-processing-library002.png)
+![Visual Studio project file opened for editing to configure Telerik Document Processing Libraries](images/core-project-and-document-processing-library002.png)
 
 2\. Under the **UseWindowsForms** line, add the **UseWPF** tag. The file should look like this:
 
-![core-project-and-document-processing-library003](images/core-project-and-document-processing-library003.png)
+![WinForms .NET project file with the UseWPF tag added under UseWindowsForms](images/core-project-and-document-processing-library003.png)
 
 3\. Save and reload the file. Now, you should see the **Microsoft.WindowsDesktop.App** in the frameworks node:
 
-![core-project-and-document-processing-library004](images/core-project-and-document-processing-library004.png)
+![Visual Studio Solution Explorer showing Microsoft.WindowsDesktop.App after enabling WPF support](images/core-project-and-document-processing-library004.png)
 
 This is all that is required and now you can continue with your application. 

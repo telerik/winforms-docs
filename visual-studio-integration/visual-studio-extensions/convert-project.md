@@ -15,13 +15,13 @@ __Add References__
 
 Telerik Visual Studio extensions Convert Project Wizard could be accessed through the Telerik menu when you need to convert an existing WinForms application to a Telerik WinForms application:
 
-![installation-deployment-and-distribution-vsx-overview 002](images/installation-deployment-and-distribution-vsx-overview002.png)
+![Visual Studio Telerik menu with the Telerik UI for WinForms Convert Project command](images/installation-deployment-and-distribution-vsx-overview002.png)
 
 The wizard could be also reached through the context menu counterparts accessed by right clicking on the project you want to convert.
 
 The Convert Project Wizard lets you tune your project's use of Telerik UI for WinForms.
 
-![installation-deployment-and-distribution-vsx-convert-project 001](images/installation-deployment-and-distribution-vsx-convert-project001.png)
+![Telerik UI for WinForms Convert Project Wizard version and assembly selection page](images/installation-deployment-and-distribution-vsx-convert-project001.png)
 
 The wizard’s first page lets you:
 
@@ -36,13 +36,13 @@ The wizard’s first page lets you:
 > If you prefer the Telerik assemblies to be copied into your solution folder, the __Copy referenced assemblies to solution and source control__ option could be selected only into the [Visual Studio Extensions Options]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/options%}).
 Through the Convert Project Wizard’s second page you can:
 
-![installation-deployment-and-distribution-vsx-convert-project 002](images/installation-deployment-and-distribution-vsx-convert-project002.png)
+![Telerik UI for WinForms Convert Project Wizard theme selection page](images/installation-deployment-and-distribution-vsx-convert-project002.png)
 
 * Select which theme will be applied to your project. Check the content of each theme or see the preview of it when select it into the Convert Project.
 
 Through the Convert Project Wizard’s third page you can:
 
-![installation-deployment-and-distribution-vsx-convert-project 003](images/installation-deployment-and-distribution-vsx-convert-project003.png)
+![Telerik UI for WinForms Convert Project Wizard high DPI support option](images/installation-deployment-and-distribution-vsx-convert-project003.png)
 
 * Select the "Enable HDPI" option in order to add support for high DPI awareness in your application.
 

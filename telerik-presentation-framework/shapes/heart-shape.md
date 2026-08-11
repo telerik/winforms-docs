@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the heart shape applied to a RadPanel:
 
-![heart-shape001](images/heart-shape001.png)
+![Telerik UI for WinForms HeartShape applied to a RadPanel](images/heart-shape001.png)
 
 The following code shows how you can create and apply a __HeartShape__:
 

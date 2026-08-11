@@ -25,7 +25,7 @@ In this case I am using the excel inspired template.
 
 >caption Figure 1: New Application
 
-![core-migration001](images/core-migration001.png)
+![Visual Studio New Project dialog showing the Telerik UI for WinForms Excel-Inspired template](images/core-migration001.png)
 
 
 >tip You can check your application compatibility with the following tool: [The Portability Analyzer](https://blogs.msdn.microsoft.com/dotnet/2018/08/08/are-your-windows-forms-and-wpf-applications-ready-for-net-core-3-0/)
@@ -40,23 +40,23 @@ In this case I am using the excel inspired template.
 
 Once this is done you will see the following message.
 
-![core-migration002](images/core-migration002.png)
+![Command prompt output after creating a WinForms .NET project with the dotnet new command](images/core-migration002.png)
 
 
 3\. Now open the project in Visual Studio 2022. Go to the Solution Explorer and right click dependencies and then click Add Reference. Navigate to the install folder of the winforms suite and choose the __NetCore__ folder. Select all required assemblies (you can see them in the standard project).  
 
-![core-migration003](images/core-migration003.png)
+![Visual Studio Add Reference dialog showing Telerik UI for WinForms .NET assemblies](images/core-migration003.png)
 
 4\. In Visual Studio 2022 go to Project -> Add Existing Item. Navigate to the standard application and select the form files. 
 
 
-![core-migration004](images/core-migration004.png)
+![Visual Studio Add Existing Item dialog for importing form files into a WinForms .NET project](images/core-migration004.png)
 
 
 5\.Change the namespace in the newly added files to __MyWinformsApp1__ and then change the startup form in the Program.cs file. That is all, now you can start the new application.
 
 
-![core-migration005](images/core-migration005.png)
+![Visual Studio Solution Explorer showing the migrated Telerik UI for WinForms project files](images/core-migration005.png)
 
 ## See Also
 * [Download Product Files]({%slug winforms/installation-deployment-and-distribution/download-product-files%}) 

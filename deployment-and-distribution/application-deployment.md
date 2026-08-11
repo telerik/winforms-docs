@@ -21,7 +21,7 @@ When you use Telerik controls in your WinForms application, your application mus
 
 This is the simplest strategy. For each Telerik assembly reference in the Solution Explorer, open its context menu, click on properties and in the property grid set the *Copy Local* property of the reference to __True.__
 
-![installation-deployment-and-distribution-application-deployment 001](images/installation-deployment-and-distribution-application-deployment001.png)
+![Visual Studio reference Properties window with Copy Local enabled for Telerik UI for WinForms assemblies](images/installation-deployment-and-distribution-application-deployment001.png)
 
 Thus these Telerik assemblies will be copied to your *Release/Bin*, *Debug/Bin* folders. You application deployment consists of copying the exe, dlls, xmls files to your client machines which in the simpler case will be manual copy and in the more advanced scenario will be a copy by your installer.
 

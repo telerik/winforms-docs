@@ -29,7 +29,7 @@ Use the __ImagePrimitive__ class whenever you need to draw an image as part of r
 
 The example below loads a series of images from a directory and creates an ImagePrimitive for each.
 
-![tpf-primitives-imageprimitive 001](images/tpf-primitives-imageprimitive001.png)
+![Telerik UI for WinForms ImagePrimitive image gallery loaded from a directory](images/tpf-primitives-imageprimitive001.png)
 
 #### Creating an ImagePrimitive
 

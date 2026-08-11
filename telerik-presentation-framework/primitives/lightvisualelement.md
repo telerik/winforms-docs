@@ -130,7 +130,7 @@ __LightVisualElement__ is a lightweight element which is capable of displaying T
 
 The following example will show you how to make a simple image gallery with three LightVisualElements inside a DockLayoutPanel.
 
-![tpf-primitives-lightvisualelement 001](images/tpf-primitives-lightvisualelement001.png)
+![Telerik UI for WinForms LightVisualElements displayed in a simple image gallery](images/tpf-primitives-lightvisualelement001.png)
 
 #### Creating a simple control with LightVisualElements
 

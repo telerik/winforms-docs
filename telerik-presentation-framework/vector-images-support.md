@@ -16,7 +16,7 @@ position: 12
 
 Here is an example with screenshots on different scaling monitors with **RadGridView** that contains two **GridViewImageColumns**: one column is with SVG image, the other with png image. You can notice that the second image column becomes blurry unlike the SVG column which looks crisp and clear even on high scaling:
 
-![svg-vs-image.png](images/svg-vs-image2.png)
+![Telerik UI for WinForms comparison of SVG and raster images](images/svg-vs-image2.png)
 
 ### How to enable SVG images in your application
 
@@ -122,17 +122,17 @@ Me.RadButton1.SvgImage = RadSvgImage.FromXml(xml)
 
 Here is the result when using custom xml string for creating SVG:
 
-![button-image](images/xml-button.png)
+![Telerik UI for WinForms button displaying an SVG image assigned programmatically](images/xml-button.png)
 
 ### Assign SVG image at design time
 
 You can easily assign SVG image through the Smart Tag at the upper right corner of the controls. For example, let's add a **RadButton** from the Toolbox and open its Smart tag. Then, click the *Edit UI Elements*. From the *Element Hierarchy Editor* you can find the **SvgImage** property and assign a SVG image to **RadButton**.
 
-![smart-tag](images/smart-tag.png)
+![Telerik UI for WinForms button SVG image configured through the designer smart tag](images/smart-tag.png)
 
 Another way is to find the **SvgImage** property in the drop down list of the Visual Studio Property Window, and choose an image of your choice.
 
-![smart-tag](images/property-window.png)
+![Telerik UI for WinForms SVG image properties in the Visual Studio Properties window](images/property-window.png)
 
 ### Useful properties and methods
 

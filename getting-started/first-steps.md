@@ -68,7 +68,7 @@ Because the Telerik NuGet server requires authentication, first create an API ke
 
 1. Click **Generate New Key +**.
 
-    ![generate-api-key](images/account-generate-api-key.png)
+    ![Telerik account API Keys page for generating a NuGet API key for Telerik UI for WinForms](images/account-generate-api-key.png)
 
 1. In the **Key Note** field, add a note that describes the API key.
 

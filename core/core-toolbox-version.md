@@ -22,18 +22,18 @@ The Toolbox version depends on the version of installed NuGet package:
 
 >caption Toolbox version R3 2020 SP1 (2020.3.10.20)
 
-![core-toolbox-version001](images/core-toolbox-version001.png)
+![Visual Studio Toolbox showing Telerik UI for WinForms controls from the selected NuGet version](images/core-toolbox-version001.png)
 
 For example, if you have the UI.for.WinForms.AllControls.NetCore and you want to get another version in the Toolbox, it is necessary to:
 
 1\. Remove the current version of the **UI.for.WinForms.AllControls.Net** package:
 
-![core-toolbox-version002](images/core-toolbox-version002.png)
+![Visual Studio NuGet Package Manager showing the Telerik UI for WinForms package selected for removal](images/core-toolbox-version002.png)
 
 2\. Install the desired NuGet version: [Install using NuGet Packages]({%slug winforms/nuget%})
 
 >caption Install UI.for.WinForms.AllControls.Net90 vQ2 2025 (2025.2.520)
-![core-toolbox-version003](images/core-toolbox-version003.png)
+![Visual Studio NuGet Package Manager showing UI.for.WinForms.AllControls.Net90 selected for installation](images/core-toolbox-version003.png)
 
 3\. Rebuild the project.
 
@@ -51,7 +51,7 @@ The *Automatically Populate Toolbox* option affects whether controls are populat
 
 In Visual Studio 2022 navigate to *Tools >> Options >> Windows Forms Designer*:
 
-![core-toolbox-version004](images/core-toolbox-version004.png)
+![Visual Studio Windows Forms Designer options with Automatically Populate Toolbox enabled](images/core-toolbox-version004.png)
 
 ## See Also
 

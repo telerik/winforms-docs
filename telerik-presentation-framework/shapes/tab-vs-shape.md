@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the __TabVsShape__ applied to a RadPanel:
 
-![tab-vs-shape001](images/tab-vs-shape001.png)
+![Telerik UI for WinForms TabVsShape applied to a RadPanel](images/tab-vs-shape001.png)
 
 The following code shows how you can create and apply a __TabVsShape__:
 

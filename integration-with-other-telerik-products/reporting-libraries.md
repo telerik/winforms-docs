@@ -22,7 +22,7 @@ To get started, you first need to install Telerik Reporting on your machine. The
 
 In this scenario, we'll use the Telerik Reporting MSI installer to install the necessary libraries. You can download the MSI from your [Telerik Account](https://www.telerik.com/account/downloads/product-download?product=REPORTING).
 
-![Telerik Reporting](images/telerik_reporting_1.png) 
+![Telerik Reporting MSI installer for adding reporting libraries to a WinForms application](images/telerik_reporting_1.png) 
 
 Once the installation is successful, you can add the Telerik ReportViewer to your WinForms project Form using one of the approaches below, depending on your requirements.
 
@@ -30,7 +30,7 @@ Once the installation is successful, you can add the Telerik ReportViewer to you
 
 The item template is available in the __Add New Item__ dialog box under the Windows Form category.
 
-![Telerik ReportViewer Form](images/telerik_reporting_2.png) 
+![Visual Studio Add New Item dialog showing the Telerik ReportViewer Windows Form template](images/telerik_reporting_2.png) 
 
 * Build the project and check that the project is using a compatible .NET version.
 * Open the Add New Report Viewer dialog to choose a report definition for the report viewer.
@@ -62,7 +62,7 @@ If the application needs to be declared as DPI-aware, an additional element must
 
 You can add the Telerik ReportViewer to the Windows Forms by drag-droping it from the Visual Studio Toolbox.
 
-![Telerik Reporting](images/telerik_reporting_3.png) 
+![Visual Studio Toolbox with the Telerik ReportViewer being added to a Windows Form at design time](images/telerik_reporting_3.png) 
 
 * Add a reference to the class library that contains your reports in the WinForms application.
 * Set the ReportSource property of the ReportViewer. For more information, see [How to Set ReportSource for Report Viewers](https://docs.telerik.com/reporting/embedding-reports/display-reports-in-applications/how-to-set-reportsource-for-report-viewers).
@@ -80,7 +80,7 @@ private void Form1_Load(object sender, EventArgs e)
 
 ````
 
-![Telerik ReportViewer Form](images/telerik_reporting_4.png)
+![WinForms form displaying the Telerik ReportViewer configured with a report source](images/telerik_reporting_4.png)
 
 ## See Also
 

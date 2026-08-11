@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the __QAShape__ applied to a RadPanel:
 
-![qa-shape001](images/qa-shape001.png)
+ ![Telerik UI for WinForms QAShape applied to a RadPanel](images/qa-shape001.png)
 
 The following code shows how you can create and apply a __QAShape__:
 

@@ -15,7 +15,7 @@ Telerik UI for WinForms comes with several different packages that can be [insta
 * [`Telerik.UI.for.WinForms.AllControls`](#full-package-telerikuiforwinformsallcontrols-recommended): one full distribution package
 * [Separate packages per control or assembly](#separate-packages).
 
-![winforms-available-nugets001](images/winforms-available-nugets001.png)
+![Telerik UI for WinForms NuGet package list for different .NET target frameworks](images/winforms-available-nugets001.png)
 
 >important Starting with **Q3 2026**, all Telerik UI for WinForms NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. If you use NuGet.org, you do not need to configure the Telerik NuGet server.
 

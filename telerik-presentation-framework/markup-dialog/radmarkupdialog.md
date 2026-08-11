@@ -15,13 +15,13 @@ RadMarkupEditor is a dialog used at Design time and Run time for creation of the
 
 >caption Figure 1: RadMarkupDialog
 
-![tpf-radmarkupdialog 002](images/tpf-radmarkupdialog002.png)
+![Telerik UI for WinForms RadMarkupDialog for creating formatted text](images/tpf-radmarkupdialog002.png)
 
 ### Design Time
 
 You can start the editor at Design Time by opening the drop down of some __Text__ property and then clicking on *Start MarkupEditor* button:
 
-![tpf-radmarkupdialog 001](images/tpf-radmarkupdialog001.png)
+![Telerik UI for WinForms Text property menu with the Start MarkupEditor command](images/tpf-radmarkupdialog001.png)
 
 Alternatively you can edit the *Plain Text* field if you need not HTML-like text formatting. 
 
@@ -124,13 +124,13 @@ The fourth RibbonBar group (Link) contains the link command.
 
 The fifth RibbonBar group (Apply) contains the *Apply *command. You should click this button to persist your editing at Design Time or to receive DialogResult.OK at Run Time. Otherwise (pressing the close button of RadMarkupDialog), the change will not be persisted at Design Time or DialogResult.Cancel will be returned at Run Time. 
 
-![tpf-radmarkupdialog 002](images/tpf-radmarkupdialog002.png)
+![Telerik UI for WinForms RadMarkupDialog Design View with formatting, list, link, and Apply commands](images/tpf-radmarkupdialog002.png)
 
 ## Markup View
 
 Markup view contains only the clipboard commands. 
 
-![tpf-radmarkupdialog 003](images/tpf-radmarkupdialog003.png)
+![Telerik UI for WinForms RadMarkupDialog Markup View with clipboard commands](images/tpf-radmarkupdialog003.png)
 
 # See Also
 * [Animations]({%slug winforms/telerik-presentation-framework/animations%})

@@ -13,7 +13,7 @@ previous_url: tpf-class-hierarchy-overview
 
 The diagram below contains an abbreviated class diagram of the class inheritance starting with __RadObject__ and building up to __RadControl__. __RadProperty__ and __RadPropertyMetaData__ are not shown.
 
-![tpf-class-hierarchy-overview 001](images/tpf-class-hierarchy-overview001.png)
+![Telerik UI for WinForms Telerik Presentation Framework class hierarchy diagram](images/tpf-class-hierarchy-overview001.png)
 
 * [RadProperty]({%slug winforms/telerik-presentation-framework/class-hierarchy/radproperty%}) encapsulates properties used in __RadObject__ and support [dependency properties]({%slug winforms/telerik-presentation-framework/dependency-properties%}). Each RadProperty has a name, type, owner and [metadata]({%slug winforms/telerik-presentation-framework/class-hierarchy/radpropertymetadata%}), i.e. information about the property.
 

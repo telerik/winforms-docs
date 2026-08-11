@@ -12,7 +12,7 @@ position: 1
 
 The following image shows the media shape applied to a RadPanel:
 
-![media-shape001](images/media-shape001.png)
+![Telerik UI for WinForms MediaShape applied to a RadPanel](images/media-shape001.png)
 
 The following code shows how you can create and apply a __MediaShape__:
 

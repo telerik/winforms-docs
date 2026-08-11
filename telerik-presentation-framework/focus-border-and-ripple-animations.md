@@ -32,7 +32,7 @@ and a **RadTextBoxControl** using the **TelerikMetro** theme.
 
 >caption Figure 1: Focus Border and Ripple Animations
 
-![tpf-shadows001](images/tpf-focus-border-and-ripple-animations001.gif)
+![Telerik UI for WinForms focus border and ripple animations](images/tpf-focus-border-and-ripple-animations001.gif)
 
 #### RadTextBoxControl Focus Border and Ripple Animations
 

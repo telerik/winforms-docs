@@ -21,7 +21,7 @@ Mouse and keyboard user input is accepted from Windows event notification in __R
 
 The diagram below shows the inheritance tree where the __RootRadElement__ descends from __RadItem__, and where __RadItem__ ultimately descends from __RadElement__:
 
-![tpf-handling-user-input 001](images/tpf-handling-user-input001.png)
+![Telerik UI for WinForms Telerik Presentation Framework handling user input](images/tpf-handling-user-input001.png)
 
 # See Also
 * [Animations]({%slug winforms/telerik-presentation-framework/animations%})

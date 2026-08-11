@@ -63,7 +63,7 @@ Before you start, ensure you have the following [Converter prerequisites]({%slug
 2. Restart Visual Studio.
 3. Enable the `telerik-winforms-assistant` MCP server and all its tools in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
-![WinForms AI Assistance MCP Server](images/converter001.png)
+![Telerik UI for WinForms MCP Server enabled in Visual Studio Copilot Chat](images/converter001.png)
 
 > In the `telerik-winforms-assistant` dropdown you can see all [Telerik MCP tools used to convert your project]({%slug converter-tools%}). Please ensure that `telerik-winforms-assistant` and its tools are enabled before starting conversion.
 
@@ -101,7 +101,7 @@ The AI agent first calls `telerik_get_migration_plan` to retrieve the recommende
 
 When running different tools, 'telerik-winforms-assistant' may ask you for permission. You can choose whether to confirm each task individually or confirm all at once.
 
-![WinForms AI Assistance MCP Server](images/converter002.png)
+![Telerik UI for WinForms Converter migration tools and permission prompt in Visual Studio](images/converter002.png)
 
 ## Step 4: Add Telerik NuGet References
 
@@ -156,17 +156,17 @@ The AI agent runs a final build to confirm the migration is complete. At this po
 ## Step 8: Final Results
 
 At the end, you will have the WinForms app converted to use Telerik UI for WinForms components. A short summary is displayed along with recent changes and updated files so you can preview them:
-![WinForms AI Assistance MCP Server](images/converter003.png)
+![Telerik UI for WinForms Converter migration summary showing converted files and recent changes](images/converter003.png)
 
 Below you can see the result after conversion completes:
 
 #### Before conversion (Microsoft WinForms):
 
-![Application before conversion](images/converter-app-before.png)
+![Microsoft WinForms application before migration to Telerik UI for WinForms controls](images/converter-app-before.png)
 
 #### After conversion (Telerik UI for WinForms):
 
-![Application after conversion](images/converter-app-after.png)
+![Telerik UI for WinForms application after migration from Microsoft WinForms controls](images/converter-app-after.png)
 
 ## Troubleshooting
 

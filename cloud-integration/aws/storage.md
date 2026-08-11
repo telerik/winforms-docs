@@ -16,13 +16,13 @@ The **Amazon Simple Storage Service** (Amazon S3) is storage service that allows
 
 Create a standard [Telerik WinForms]({%slug winforms/visual-studio-templates%}) application and add 3 buttons and a [RadListView]({%slug winforms/listview%}) to it. The layout should look like this:
 
-![aws-s3-001](images/aws-s3-001.png)
+![Telerik UI for WinForms Amazon S3 application layout with RadListView and file management buttons](images/aws-s3-001.png)
 
 ## Step 2: Install the NuGet package
 
 Open the NuGet Package Manager and install the **AWSSDK.S3** package.
 
-![aws-s3-002](images/aws-s3-002.png)
+![NuGet Package Manager installing the AWSSDK.S3 package for a Telerik UI for WinForms application](images/aws-s3-002.png)
 
 In addition you need to add the following to your App.config file:
 
@@ -169,7 +169,7 @@ End Sub
 
 That is all, now you are ready to start using the application.
 
-![aws-s3-003](images/aws-s3-003.png)
+![Telerik UI for WinForms RadListView displaying files managed in Amazon S3 storage](images/aws-s3-003.png)
 
 # See Also
 

@@ -12,7 +12,7 @@ position: 0
 
 **Microsoft Azure** is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through a global network of Microsoft-managed data centers. It provides software as a service (SaaS), platform as a service (PaaS) and infrastructure as a service (IaaS) and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.
 
-![azure-overview001](images/azure-overview001.png)
+![Microsoft Azure cloud services overview for Telerik UI for WinForms integration](images/azure-overview001.png)
 
 You can create a free account and take advantage of a number of free services such as CosmosDB, Blob/File Storage, serverless functions and many more. This section shows how you can integrate them with the controls from the __Telerik UI for WinForms__ suite.
 
