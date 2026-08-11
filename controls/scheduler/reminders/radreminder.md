@@ -9,7 +9,7 @@ position: 0
 previous_url: scheduler-reminders-radreminder
 ---
 
-# RadReminder
+# WinForms RadReminder
 
 
 | RELATED VIDEOS |  |
