@@ -14,32 +14,25 @@ position: 9
 
 This article explains how to install the Telerik UI for WinForms suite using NuGet packages. Before installing, you need to [Generate an API Key](#generate-an-api-key). There are two methods available for obtaining the NuGet packages:
 
-* [Download from NuGet.org](#download-from-nuget-org)
-* [Get the packages from the Telerik NuGet server](#download-from-the-telerik-nuget-server)
-* [Manually download the packages](#manually-download-nuget-packages)
+* [Download Telerik UI for WinForms packages from NuGet.org (Recommended)](#download-from-nuget-org)
+* [Download Telerik UI for WinForms packages from the Telerik NuGet server](#download-from-the-telerik-nuget-server)
+* [Download Telerik UI for WinForms packages from a local NuGet feed](#manually-download-nuget-packages-from-a-local-nuget-feed)
 
-## Generate an API Key
+## How to Choose the Right NuGet Installation Path
 
-As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-nuget-keys#using-only-cli-commands) or the [NuGet.Config file](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-nuget-keys#using-a-nugetconfig-file-with-your-projects).
+All three installation methods are fully supported, so you are free to choose the one that best fits your preferences and project requirements. The following guidance can help you decide.
 
-1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
-1. Click **Generate New Key +**.
+* Use **NuGet.org** for current Telerik UI for WinForms releases (**Q3 2026 and later**). NuGet.org is the default package source in Visual Studio and the .NET CLI, so it requires the least configuration and avoids unnecessary package-source ambiguity.
 
-  ![Manage API Keys](images/account-generate-api-key.png)
+* Use the **Telerik NuGet server** when you need package versions released before Q3 2026, or when your organization already standardizes on the Telerik private feed. All new release versions are also available on the Telerik NuGet server.
 
-1. In the **Key Note** field, add a note that describes the API key.
-
-1. Click **Generate Key**.
-
-1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
-
-1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
-
->API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+* Use a **local NuGet feed** when you need offline installation, reproducible restores inside a controlled network, or a mirrored package source for build agents.
 
 ## Download from NuGet.org
 
-Starting with **Q3 2026**, Telerik UI for WinForms NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. You can find and install the Telerik packages directly from NuGet.org without configuring the Telerik NuGet feed.
+Starting with **Q3 2026**, Telerik UI for WinForms NuGet packages are also available on <a href="https://www.nuget.org/" target="_blank">NuGet.org</a>. You can find and install the Telerik packages directly from NuGet.org without configuring the private Telerik NuGet feed.
+
+This is the recommended installation path for new development. Both Visual Studio and the .NET CLI use NuGet.org by default.
 
 ## Download from the Telerik NuGet server
 
@@ -75,6 +68,24 @@ https://nuget.telerik.com/v3/index.json
 
 	![installation-deployment-and-distribution-install-using-nuget 006](images/installation-deployment-and-distribution-install-using-nuget006.png)
 
+## Generate an API Key
+
+As the Telerik NuGet server requires authentication, the first step is to obtain an API key that you will use instead of a password. Using an API key instead of a password is a more secure approach, especially when working with [.NET CLI](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-nuget-keys#using-only-cli-commands) or the [NuGet.Config file](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-nuget-keys#using-a-nugetconfig-file-with-your-projects).
+
+1. Go to the [API Keys](https://www.telerik.com/account/downloads/api-keys) page in your Telerik account.
+1. Click **Generate New Key +**.
+
+  ![Manage API Keys](images/account-generate-api-key.png)
+
+1. In the **Key Note** field, add a note that describes the API key.
+
+1. Click **Generate Key**.
+
+1. Select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **API Keys** page displays only a portion of the key.
+
+1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
+
+>API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
 ### Reset Stored Credentials
 
@@ -98,7 +109,7 @@ If you have previously stored credentials for the Telerik NuGet server, you need
 
 1. If you are using the Telerik NuGet feed in a .NET Core application, use a [NuGet API key in the NuGet.Config file](https://docs.telerik.com/devtools/winforms/visual-studio-integration/install-nuget-keys#using-a-nugetconfig-file-with-your-projects).
 
-## Manually Download NuGet Packages
+## Manually Download NuGet Packages from a local NuGet feed
 
 1. First you need to log in using your licensed account. This way you will be able to download the packages:
 
