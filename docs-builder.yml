@@ -420,6 +420,9 @@ meta:
   controls/slideview:
     title: SlideView
     position: 443
+  controls/smartpastebutton:
+    title: SmartPasteButton
+    position: 442
   controls/shortcuts:
     title: Shortcuts
     position: 440
