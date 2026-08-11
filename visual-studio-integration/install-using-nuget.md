@@ -18,7 +18,7 @@ This article explains how to install the Telerik UI for WinForms suite using NuG
 * [Download Telerik UI for WinForms packages from the Telerik NuGet server](#download-from-the-telerik-nuget-server)
 * [Download Telerik UI for WinForms packages from a local NuGet feed](#manually-download-nuget-packages-from-a-local-nuget-feed)
 
-## How to Choose the Right NuGet Installation Path
+## How to Choose the NuGet Installation Source
 
 All three installation methods are fully supported, so you are free to choose the one that best fits your preferences and project requirements. The following guidance can help you decide.
 
