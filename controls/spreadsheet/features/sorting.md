@@ -5,7 +5,7 @@ description: Sorting in WinForms Spreadsheet allows the user to arrange the data
 slug: radspreadsheet-features-sorting
 tags: freeze,panes
 published: True
-position: 3
+position: 7
 ---
 
 # Sorting

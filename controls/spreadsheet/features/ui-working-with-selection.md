@@ -5,7 +5,7 @@ description: Get familiar with the API of the Selection class and demonstrate ho
 slug: radspreadsheet-ui-working-with-selection
 tags: working,with,ui,selection
 published: True
-position: 0
+position: 3
 ---
 
 # Working with UI Selection

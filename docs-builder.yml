@@ -420,6 +420,9 @@ meta:
   controls/slideview:
     title: SlideView
     position: 443
+  controls/smartpastebutton:
+    title: SmartPasteButton
+    position: 442
   controls/shortcuts:
     title: Shortcuts
     position: 440
@@ -3449,5 +3452,9 @@ redirects:
     type: Permanent
 -    
     from: "^/devtools/winforms/documentation/ai-coding-assistant/mcp-server-as-nuget$"
+    to: "/devtools/winforms/documentation/ai-coding-assistant/mcp-server"
+    type: Permanent
+-    
+    from: "^/devtools/winforms/documentation/ai-coding-assistant/overview$"
     to: "/devtools/winforms/documentation/ai-coding-assistant/mcp-server"
     type: Permanent

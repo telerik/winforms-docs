@@ -9,8 +9,7 @@ position: 0
 previous_url: tpf-printing-support-radprintdocument
 ---
 
-# Overview
-
+# WinForms RadPrintDocument Overview
 
 RadPrintDocument is used to send output to a printer. The RadPrintDocument can be used in the VS designer as described in [Design time article]({%slug winforms/telerik-presentation-framework/printing-support/radprintdocument/design-time%}) or can be created and used at run time. The most common scenario of using RadPrintDocument is to create an instance, set the properties that describe how the page is printed, set the __AssociatedObject__ property to an instance of an object implementing the __IPrintable__ interface and call the __Print__ method to send the print job to the printer. Here is how this looks like in C# and VB:
 

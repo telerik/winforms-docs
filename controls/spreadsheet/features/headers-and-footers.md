@@ -5,7 +5,7 @@ description: The Headers and Footers functionality in WinForms Spreadsheet enabl
 slug: radspreadsheet-features-headers-and-footers
 tags: headers, footers
 published: True
-position: 5
+position: 10
 ---
 
 # Headers and Footers

@@ -19,22 +19,24 @@ This MCP server enables AI-powered IDEs and tools to generate more accurate, tai
 
 >tip The Telerik WinForms MCP Server works in **Chat**(**Ask**) and **Agent** modes.
 
-## What Are the Telerik UI for WinForms AI Tools
+## Telerik UI for WinForms MCP Server Functionalities
 
-The Telerik WinForms MCP Server is a local MCP server that is distributed through the [Telerik.WinForms.MCP](https://www.nuget.org/packages/Telerik.WinForms.MCP) NuGet package. It offers two tools:
+The Telerik WinForms MCP Server is a local MCP server that is distributed through the [Telerik.WinForms.MCP](https://www.nuget.org/packages/Telerik.WinForms.MCP) NuGet package. It provides the following specialized features. Click each card below for more details on each assistant:
 
-| Tool | Description |
-|---|---|
-| **[Telerik AI Coding Assistant]({%slug ai-prompt-library%})** | An AI-powered code generation tool that provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs. |
-| **[Telerik Converter]({%slug converter%})** | An automated migration tool that converts existing Microsoft WinForms applications to use Telerik UI for WinForms controls. |
-
-### Telerik AI Coding Assistant
-
-The Telerik UI for WinForms AI Coding Assistant provides specialized context to AI models, enabling them to produce higher-quality code samples using [Telerik UI for WinForms components](https://www.telerik.com/products/winforms.aspx) and APIs. Use it to generate forms, configure components, and reduce repetitive setup work.
-
-### Telerik Converter
-
-The [Telerik UI for WinForms Converter]({%slug converter%}) automatically migrates existing Microsoft WinForms applications to use Telerik RadControls. It uses Microsoft Roslyn to parse and transform C# and VB.NET source code with full context awareness — mapping control types, properties, events, and enum values to their Telerik equivalents.
+<article-card-container>
+	<article-card
+		href="{%slug ai-prompt-library%}"
+		title="Telerik AI Coding Assistant"
+		subTitle="Code Generation Feature"
+		description="An AI-powered code generation feature that provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs. Use it to generate forms, configure components, and reduce repetitive setup work.">
+	</article-card>
+	<article-card
+		href="{%slug converter%}"
+		title="Telerik Converter"
+		subTitle="Migration Workflow"
+		description="An automated migration workflow that converts existing Microsoft WinForms applications to use Telerik RadControls. It uses Microsoft Roslyn to parse and transform C# and VB.NET source code with full context awareness — mapping control types, properties, events, and enum values to their Telerik equivalents.">
+	</article-card>
+</article-card-container>
 
 ## Prerequisites
 

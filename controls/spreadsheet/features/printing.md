@@ -5,7 +5,7 @@ description: Printing in WinForms Spreadsheet allows you to prepare and display 
 slug: radspreadsheet-features-printing
 tags: headers, footers
 published: True
-position: 3
+position: 6
 ---
 
 

@@ -5,7 +5,7 @@ description: Hidden Rows and Columns
 slug: radspreadsheet-features-hidden-rows-and-columns
 tags: freeze,panes
 published: True
-position: 6
+position: 11
 ---
 
 # Hidden Rows and Columns
