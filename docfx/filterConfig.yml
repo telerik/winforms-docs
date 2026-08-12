@@ -1,7 +1,28 @@
 apiRules:
 - exclude:
-    type: Method
     uidRegex: ^System\.Object\..*$
+- exclude:
+    uidRegex: ^System\.ValueType\..*$
+- exclude:
+    uidRegex: ^System\.Enum\..*$
+- exclude:
+    uidRegex: ^System\.MarshalByRefObject\..*$
+- exclude:
+    uidRegex: ^System\.ComponentModel\.Component\..*$
+- exclude:
+    uidRegex: ^System\.Windows\.Forms\.Control\..*$
+- exclude:
+    uidRegex: ^System\.Windows\.Forms\.AccessibleObject\..*$
+- exclude:
+    uidRegex: ^System\.Windows\.Forms\.ScrollableControl\..*$
+- exclude:
+    uidRegex: ^System\.Windows\.Forms\.ContainerControl\..*$
+- exclude:
+    uidRegex: ^System\.Windows\.Forms\.UserControl\..*$
+- exclude:
+    uidRegex: ^System\.Windows\.Forms\.ButtonBase\..*$
+- exclude:
+    uidRegex: ^System\.Windows\.Forms\.CommonDialog\..*$
 - exclude:
     uidRegex: ^Telerik\.CallHome(\..*)?$
 - exclude:
