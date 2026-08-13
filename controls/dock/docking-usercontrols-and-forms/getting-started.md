@@ -13,6 +13,8 @@ previous_url: dock-docking-usercontrols-and-forms-getting-started
  
 In order to dock your **UserControls** and **Forms** in __RadDock__, you just need to use the **DockControl** method. This method will dock a Form, a **UserControl**, or simply any **Control**. A **HostWindow** with **DockType** *ToolWindow* will be created to host the **Control**.
 
+To prevent a Form from being added to __RadDock__, do not call the **DockControl** method for that Form. For Forms that are added as MDI children, see [Automatic MDI Form Handling]({%slug winforms/dock/mdi-mode/automatic-mdi-form-handling%}) and leave the __AutoDetectMdiChildren__ property set to *false*.
+
 For example, the following code snippet will result in the screenshot shown below:
 
 #### Docking a Form 

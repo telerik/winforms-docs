@@ -20,7 +20,7 @@ To configure your MDI application to use this feature:
 1\. First designate which form that will act as MDI container.  Set the parent form __IsMdiContainer__ property to *true*. This can be done at design time or in code (see code example below).
           
 
-2\. Drop a __RadDock__ onto the parent form and set the __AutoDetectMdiChildForms__ property to *true*. You may also want to set the __RadDock.Dock__ property to __Fill__ to get the best use of space on the form.
+2\. Drop a __RadDock__ onto the parent form and set the __AutoDetectMdiChildren__ property to *true*. You may also want to set the __RadDock.Dock__ property to __Fill__ to get the best use of space on the form.
 	
 #### Configuring the Parent Form 
 
@@ -28,6 +28,9 @@ To configure your MDI application to use this feature:
 <snippet id='dock-automatic-mdi-form-handling-initialization-vb' />
 
  
+
+To prevent __RadDock__ from automatically adding MDI child forms, leave the __AutoDetectMdiChildren__ property set to *false*. This is the default value. If your code explicitly calls __DockControl__ for a form, that call still registers the form with __RadDock__.
+
  
 
 3\. Add a form to the project that will serve the role of child form. No properties, methods or event handlers need to be set for this form, except that you may want to add some content that will be visible when the child forms are displayed as tabbed documents.
