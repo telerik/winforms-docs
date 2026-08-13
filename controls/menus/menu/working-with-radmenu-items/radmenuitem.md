@@ -52,6 +52,11 @@ The **RadMenuItem** represents a standard menu item. Some of its properties incl
 |__StringAlignment__|Formats the alignment of the text string so it is positioned near, center, or far from the left border of the menu item. |
   
 
+## Sizing Menu Items
+
+Use the **AutoSizeMode** property to choose whether the item fits the available size, wraps around its children, or uses the automatic sizing behavior. If you need all items in a **RadMenu** to have the same height, use the **AllItemsEqualHeight** property on the owning **RadMenu**. For more information, see [Menu Item Height]({%slug winforms/menus/menu/working-with-radmenu-items/multi-line-menu-item-text%}).
+
+
 ## RadMenuComboItem
 
 The __RadMenuComboItem__ allows you to put a drop-down list on a menu. To add items to the combo box work with the __Items__ collection of the RadMenuComboItem.__ComboBoxElement__ property. Since the **ComboBoxElement** returns a **RadDropDownListElement**, you can also use data binding to put items in the drop-down list from any data source.

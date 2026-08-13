@@ -12,13 +12,13 @@ position: 8
 
 |Property|Description|
 |----|----|
-|**StretchItems**|Indicates whether the menu items should be stretched to fill the available space.|
+|**StretchItems**|Indicates whether the menu items should be stretched to fill the available space. See [Sizing Menu Items]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem%}).|
 |**SystemKeyHighlight**|Gets or sets whether the `Alt` or `F10` keys can be used to highlight the menu.|
 |**MenuElement**|Gets the instance of RadMenuElement wrapped by this control. RadMenuElement is the main element in the hierarchy tree and encapsulates the actual functionality of RadMenu.|
 |**Items**|Gets the collection that stores the items in RadMenu.|
 |**AllowMerge**|Gets or sets whether the merging is allowed.|
 |**Orientation**|Get or sets the menu orientation.|
-|**AllItemsEqualHeight**|Gets or sets whether all items will appear with the same size (the size of the highest item in the collection).|
+|**AllItemsEqualHeight**|Gets or sets whether all items will appear with the same size (the size of the highest item in the collection). See [Menu Item Height]({%slug winforms/menus/menu/working-with-radmenu-items/multi-line-menu-item-text%}).|
 |**DropDownAnimationEnabled**|Gets or sets a value indicating whether the Drop Down animation will be enabled when it shows.|
 |**DropDownAnimationEasing**|Gets or sets the type of the Drop Down animation.|
 |**DropDownAnimationFrames**|Gets or sets the number of frames that will be used when the Drop Down is being animated.|
