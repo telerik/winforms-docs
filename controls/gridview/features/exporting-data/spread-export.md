@@ -25,7 +25,7 @@ This article explains in detail the **SpreadExport** abilities and demonstrates 
 
 The following images show how a grid looks when you export it:<br>![Telerik UI for WinForms RadGridView showing the original grid data before spread export](images/gridview-exporting-data-spread-export001.png)![Telerik UI for WinForms RadGridView exported worksheet showing the grid data in Excel format](images/gridview-exporting-data-spread-export002.png)
 
->note The spread export functionality requires the __TelerikExport.dll__ assembly. To access the types in TelerikExport, you must include the assembly in your project and reference the __Telerik.WinControls.Export__ namespace.
+>note The spread export functionality requires the __Telerik.UI.for.WinForms.Export__ NuGet package, which provides the __TelerikExport.dll__ assembly. To access the types in TelerikExport, you must include the assembly in your project and reference the __Telerik.WinControls.Export__ namespace.
 
 The spread export functionality also requires the [RadSpreadProcessing Library](http://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/overview). To use this Library, you must reference the following assemblies:
 
