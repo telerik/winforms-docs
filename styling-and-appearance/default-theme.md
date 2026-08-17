@@ -20,7 +20,7 @@ All RadControls from the Telerik UI for WinForms suite get the **ControlDefault*
 
 ## Fluent theme as Default
 
-As of **R1 2021**, Telerik UI for WinForms starts using **Fluent** theme as default as it provides more modern and fresh look. If you create a new Telerik Windows Forms Application, then drag any RadControl from the Toolbox and drop it onto RadForm, the **Fluent** theme should be automatically applied .
+As of **R1 2021**, Telerik UI for WinForms starts using **Fluent** theme as default as it provides more modern and fresh look. If you create a new Telerik Windows Forms Application, then drag any RadControl from the Toolbox and drop it onto RadForm, the **Fluent** theme should be automatically applied.
 
 **Fluent** theme is defined in the **App.config** file as follows:
 
@@ -85,7 +85,7 @@ Theme settings are read upon opening the form designer in the project for the fi
 
 ## Custom theme as Default
 
-It is also possible to set a client's custom theme as default theme in an application. As we provide an apportunity for our clients to build their own [custom style]({%slug winforms/themes/using-custom-themes%}) theme, we can use the same API to load client's theme defined in their own assemblies: [Creating a theme component]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component%}) 
+It is also possible to set a client's custom theme as default theme in an application. As we provide an opportunity for our clients to build their own [custom style]({%slug winforms/themes/using-custom-themes%}) theme, we can use the same API to load client's theme defined in their own assemblies: [Creating a theme component]({%slug winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component%}) 
 
 >note To use a custom theme as default it is necessary to use the assembly fully qualified name inside the App.config. Also, it is important to create an instance of the newly created theme. 
 

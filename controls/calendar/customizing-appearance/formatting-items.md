@@ -1,18 +1,18 @@
 ---
-title: Formating Items
-page_title: Formating Items - WinForms Calendar Control
+title: Formatting Items
+page_title: Formatting Items - WinForms Calendar Control
 description: Learn how one can change the styles of the RadCalendar elements upon a condition.
 slug: winforms/calendar/customizing-appearance/formatting-items
-tags: formating, items
+tags: formatting, items
 published: True
 position: 0
 ---
 
 # Formatting Items
 
-The __ElementRender__ event will be fired before every element is painted. This allows to easily change the styles of the elements at runtime, or format the items upon a condition. The following example shows how you can change the the border for a particular days. 
+The __ElementRender__ event will be fired before every element is painted. This allows to easily change the styles of the elements at runtime, or format the items upon a condition. The following example shows how you can change the border for a particular days. 
 
-#### Formating items in the ElementRender event.
+#### Formatting items in the ElementRender event.
 
 <snippet id='calendar-customizing-appearance-formatting-items-renderevent-cs' />
 <snippet id='calendar-customizing-appearance-formatting-items-renderevent-vb' />

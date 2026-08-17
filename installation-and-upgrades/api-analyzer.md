@@ -16,7 +16,7 @@ Telerik Upgrade API Analyzer could be used when upgrading your desktop applicati
 
 **Telerik Upgrade API Analyzer** currently supports Telerik releases from R1 2015 up to current version. Additional releases can be added upon request. 
 
->tip If you get a message saying that the DataFlow assmbly cannot be found you may need to install the [Microsoft build tools](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
+>tip If you get a message saying that the DataFlow assembly cannot be found you may need to install the [Microsoft build tools](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
 
 ## Why Do You Need This Tool?
 
@@ -53,7 +53,7 @@ All you need to do is:
 
 4. Open the solution you’re planning to upgrade.  
 
->tipYou can also run the Telerik Upgrade API Analyzer from the [Upgrade Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}), by clicking the *Compatibility* button (see **Figure 2**). In this case, the tool opens with *Technology*, *Your Version* and *Version to Upgrade* parameters pointed out in the wizard. When Upgrade API Analyzer is started directly through the *Compatibility* button without installing the tool first, the installation starts automatically. In case .NET Framework 4.5.2 is not present on your machine, the application prompts you to install it manually at the end of the installation.
+>tip You can also run the Telerik Upgrade API Analyzer from the [Upgrade Project Wizard]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/upgrade-project%}), by clicking the *Compatibility* button (see **Figure 2**). In this case, the tool opens with *Technology*, *Your Version* and *Version to Upgrade* parameters pointed out in the wizard. When Upgrade API Analyzer is started directly through the *Compatibility* button without installing the tool first, the installation starts automatically. In case .NET Framework 4.5.2 is not present on your machine, the application prompts you to install it manually at the end of the installation.
 
 >caption Figure 2: Compatibility button in Upgrade Project Wizard
 

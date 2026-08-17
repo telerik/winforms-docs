@@ -14,4 +14,4 @@ position: 1
 
 2\. You need [**Telerik UI for WinForms**](https://www.telerik.com/products/winforms.aspx) installation. 
 
-You can see additional TestComplete requirements such as Minimum Requirements, Recommended Requirments, specifics for Virtual Machines and others in the official TestComplete [**System Requirements**](https://support.smartbear.com/testcomplete/docs/general-info/system-requirements.html) page.
+You can see additional TestComplete requirements such as Minimum Requirements, Recommended Requirements, specifics for Virtual Machines and others in the official TestComplete [**System Requirements**](https://support.smartbear.com/testcomplete/docs/general-info/system-requirements.html) page.

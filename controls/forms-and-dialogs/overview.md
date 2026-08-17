@@ -22,7 +22,7 @@ The __Element Hierarchy Editor__ allows you to work with complex control types a
 
 ## Opening the Element Hierarchy Editor
 
-Click a __RadControl__ at desing time, open the __Smart Tag__ menu and select __Edit UI elements__. This action will display the __Element Hierarchy Editor__.
+Click a __RadControl__ at design time, open the __Smart Tag__ menu and select __Edit UI elements__. This action will display the __Element Hierarchy Editor__.
 
 ![WinForms Forms and Dialogs Smart Tag](images/forms-and-dialogs-overview001.png)
 

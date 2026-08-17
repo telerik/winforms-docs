@@ -45,7 +45,7 @@ __RadCalendar__ uses the Telerik Presentation Framework which enables rich exper
 ![WinForms RadCalendar Element Hierarchy](images/calendar-calendar-structure003.png)
 
 * __RadCalenadarElement:__ The main calendar element, contains all other elements. 
-* __CalendaraStatusElement:__ The footer element contains the current date/time and the Clear ant Today buttons.
+* __CalendaraStatusElement:__ The footer element contains the current date/time and the Clear and Today buttons.
 * __CalendarNavigationElement:__ Contains the navigation buttons and title.
 * __MonthViewElement:__ Contains the calendar title and table element. 
 * __CalendarTableElement:__ Contains all the calendar cells.

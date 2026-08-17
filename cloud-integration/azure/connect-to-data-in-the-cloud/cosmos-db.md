@@ -32,7 +32,7 @@ In Visual Studio open the NuGet package manager and install the **Microsoft.Azur
 
 ## Step 3: Create the Database
 
-Go to your Azure console, click **Create Resource** the select __Cosmos DB__ and populate the required information:
+Go to your Azure console, click **Create Resource** then select __Cosmos DB__ and populate the required information:
 * ID - choose any name you want
 * API - select SQL
 * Resource Group - select __Create New__ and use the same name as your ID
@@ -91,7 +91,7 @@ Me.client.CreateDatabaseIfNotExistsAsync(New Database With {.Id = "EmployeeDB"})
 
 ## Step 5: Create JSON documents
 
-Documents are user defined (arbitrary) JSON content. We can now insert one or more documents. First, we need to create a the class that will represent the business object:
+Documents are user defined (arbitrary) JSON content. We can now insert one or more documents. First, we need to create the class that will represent the business object:
 
 ````C#
 public class Employee
@@ -188,7 +188,7 @@ Now you can see the data in the grid:
 
 ## Step 7: Save the data
 
-Our grid allows us to track any changes an this is why we can save them directly. In this case you will use the **RowsChanged** event to update the records in the database:
+Our grid allows us to track any changes and this is why we can save them directly. In this case you will use the **RowsChanged** event to update the records in the database:
 
 ````C#
 private void RadGridView1_RowsChanged(object sender, Telerik.WinControls.UI.GridViewCollectionChangedEventArgs e)

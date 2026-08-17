@@ -21,7 +21,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 5. Open the `Edit Repository Item` dialog and change the `BackColor`:
    ![WinForms RadGanttView Edit Repository Item](images/radganttview-themes002.png)
 
-6. The bellow image shows the result.
+6. The below image shows the result.
    ![WinForms RadGanttView Customize BackColor](images/radganttview-themes003.png)
 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).

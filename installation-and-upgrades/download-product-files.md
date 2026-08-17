@@ -29,7 +29,7 @@ When you purchase a **Telerik UI for WinForms** license, you can download the fo
 	- Telerik UI for WinForms 
 	- Telerik Document Processing
 
-Тo download these files follow the steps below:
+To download these files follow the steps below:
 
 1. Log into [your Telerik account](https://www.telerik.com/account/).
 

@@ -44,7 +44,7 @@ Please follow the steps below to install Telerik UI for WinForms from the .msi f
 
 2\. Run the Telerik UI for WinForms setup as __Administrator__ (right-click on the installer and select Run As Administrator).           
 
-3\. The installer will display the Welcome screen. Click __Next__ to continue.You can use the __Read License Agreement__ button to display the license agreement. Review the License Agreement carefully as it contains important information about the tools, the source code, and support. Click __OK__ afterwards, or use the __Print__ button to print the agreement. Once you are done, select the __I agree - Continue__ in order to continue.          
+3\. The installer will display the Welcome screen. Click __Next__ to continue. You can use the __Read License Agreement__ button to display the license agreement. Review the License Agreement carefully as it contains important information about the tools, the source code, and support. Click __OK__ afterwards, or use the __Print__ button to print the agreement. Once you are done, select the __I agree - Continue__ in order to continue.          
         
 ![Telerik UI for WinForms installer welcome and license agreement screen](images/installation-deployment-and-distribution-installing-on-your-computer001.png)
 

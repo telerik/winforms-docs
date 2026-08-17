@@ -22,11 +22,11 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-file
 
 1. From its Action Menu (click the Smart Tag to open it) choose __Load Theme from file__, then browse to the theme file in the project directory and select it, click Open. 
 
-1. Again from the RadThemeManager's Action Menu, choose __Edit Themes__, set the __ThemeLocation__ property according to the following pattern: "~__..\\..\ThemeFileName.Extention__", assuming that the theme file is in the project directory. 
+1. Again from the RadThemeManager's Action Menu, choose __Edit Themes__, set the __ThemeLocation__ property according to the following pattern: "~__..\\..\ThemeFileName.Extension__", assuming that the theme file is in the project directory. 
 
 1. Now apply the theme to the RadButton. 
 
->important If the form with the theme manager will be opened multiple time in the life cycle of the application, the theme manager needs to be diposed explicitly. A suitable place to call its Dispose method is the Closing event of the form.
+>important If the form with the theme manager will be opened multiple time in the life cycle of the application, the theme manager needs to be disposed explicitly. A suitable place to call its Dispose method is the Closing event of the form.
 >
 
 # See Also

@@ -11,7 +11,7 @@ position: 3
 
 # Blob Storage
 
-The Azure Blob Storage allows you to store any type of unstructured data: images, videos, audio, documents, and more. This article will show you how you can create a small application that allows you to manage the the data uploaded to the storage. 
+The Azure Blob Storage allows you to store any type of unstructured data: images, videos, audio, documents, and more. This article will show you how you can create a small application that allows you to manage the data uploaded to the storage. 
 
 
 ## Step 1: Create the WinForms Application
@@ -28,7 +28,7 @@ Open the NuGet Package Manager and install the **Windows.Azure.Storage** package
 
 ## Step 3: Create the Storage Account Objects 
 
-We will use the following objects in order to manage the storage. Add tre the following code to your form class.  
+We will use the following objects in order to manage the storage. Add the following code to your form class.  
 
 ````C#
 CloudStorageAccount storageAccount = null;

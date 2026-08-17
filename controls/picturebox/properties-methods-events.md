@@ -33,7 +33,7 @@ This article provides reference tables with the [Properties](#properties), and [
 |**DefaultText**| Gets or sets the text which is displayed when the Telerik.WinControls.UI.LightVisualElement.Image and Telerik.WinControls.UI.LightVisualElement.SvgImage properties are not specified.|
 |**DefaultImage**| Gets or sets the raster image which is displayed when the Telerik.WinControls.UI.LightVisualElement.Image and Telerik.WinControls.UI.LightVisualElement.SvgImage properties are not specified.|
 |**DefaultSvgImage**| Gets or sets the vector image which is displayed when the Telerik.WinControls.UI.LightVisualElement.Image and Telerik.WinControls.UI.LightVisualElement.SvgImage properties are not specified.|
-|**DefaultSvgImageXml**| Gets or sets string XML of the the vector image which is displayed when the Telerik.WinControls.UI.LightVisualElement.Image and Telerik.WinControls.UI.LightVisualElement.SvgImage properties are not specified.|
+|**DefaultSvgImageXml**| Gets or sets string XML of the vector image which is displayed when the Telerik.WinControls.UI.LightVisualElement.Image and Telerik.WinControls.UI.LightVisualElement.SvgImage properties are not specified.|
 |**RadImageLayout**| Specifies how the image is positioned on the element.|
 |**ImageAlignment**| Gets or sets the alignment of the image on the drawing surface. Default is TopLeft. Note that this property is respected only when the ImageLayout is set to None.|
 |**ContextMenuEnabled**| Gets or sets a value indicating whether to display context menu on right mouse click.|
@@ -54,7 +54,7 @@ This article provides reference tables with the [Properties](#properties), and [
 |**ContextMenuOpened**| Occurs when the context menu is opened.|
 |**ContextMenuClosed**| Occurs when the context menu is closed.|
 |**ImageEditorOpening**| Occurs when the image is about to be edited in the Telerik.WinControls.UI.RadPictureBoxElement.ImageEditorDialog.Cancellable.|
-|**ImageEdited**|  Occurs when the image has been edited by the Telerik.WinControls.UI.RadPictureBoxElement.ImageEditorDialog and the user has accepted the changes. Can be handled. Note that this event fill be fired always when the user clicks the OK button of the dialog, even if there are no changes in the image.|
+|**ImageEdited**|  Occurs when the image has been edited by the Telerik.WinControls.UI.RadPictureBoxElement.ImageEditorDialog and the user has accepted the changes. Can be handled. Note that this event will be fired always when the user clicks the OK button of the dialog, even if there are no changes in the image.|
 |**ImageLoaded**| Occurs when a raster or vector(SVG) image has been loaded by the user.|
 |**ImageSaved**| Occurs when the displayed image has been saved by the user.|
 

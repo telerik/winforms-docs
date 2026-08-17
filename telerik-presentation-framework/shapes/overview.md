@@ -16,7 +16,7 @@ The following list shows all shapes currently included in the suite:
 
 * [DonutShape]({%slug winforms/telerik-presentation-framework/donut-shape%})
 
-* [ElipseShape]({%slug winforms/telerik-presentation-framework/ellipse-shape%})
+* [EllipseShape]({%slug winforms/telerik-presentation-framework/ellipse-shape%})
 
 * [HeartShape]({%slug winforms/telerik-presentation-framework/heart-shape%})
 

@@ -32,7 +32,7 @@ position: 5
 |EnableDragging|Gets or sets if the strip can be dragged.|
 |EnableFloating|Gets or sets if the strip can be dragged.|
 |Delta|Gets the delta of the drag.|
-|IsDrag|Gets whether the strip is beeing dragged.|
+|IsDrag|Gets whether the strip is being dragged.|
 |VisibleInCommandBar|Gets or sets whether the strip is visible in the command bar.|
 |Orientation|Gets or sets the elements orientation inside the line element.|
 |HasOverflowedItems|Gets whether the strip has items in its overflow panel.|

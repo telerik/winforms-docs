@@ -43,11 +43,11 @@ In addition you need to add the following to your App.config file:
 
 ````
 
->tip If you do not have an AWS account in Visual Studio please check the[Getting Started]({%slug cloud-services/aws/getting-started%}) article.
+>tip If you do not have an AWS account in Visual Studio please check the [Getting Started]({%slug cloud-services/aws/getting-started%}) article.
 
 ## Step 3: Add the code to the application
 
-The following spinet shows how you can use send a mail using the content from the previously added controls:
+The following snippet shows how you can send a mail using the content from the previously added controls:
 
 ````C#
 private void radButton1_Click(object sender, EventArgs e)

@@ -60,7 +60,7 @@ The __BoundingRectangle__ property stores the bounds of an element relative to i
 
 ## ControlBoundingRectangle
 
-The __ConrolBoundingRectangle__ property stores the bounds of an element relative to the root of the element tree, i.e. the control hosting the element tree. The transformations applied to the element relative to the root of the element tree are stored in the __TotalTransformationMatrix__ property.
+The __ControlBoundingRectangle__ property stores the bounds of an element relative to the root of the element tree, i.e. the control hosting the element tree. The transformations applied to the element relative to the root of the element tree are stored in the __TotalTransformationMatrix__ property.
 
 ## DesiredSize
 

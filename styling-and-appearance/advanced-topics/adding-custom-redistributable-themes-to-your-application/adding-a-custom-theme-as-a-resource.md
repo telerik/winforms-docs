@@ -25,9 +25,9 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-resource
 
 1. You will be prompted to enter the resource location. C# and VB.NET compilers differ from one another, so:
 
-  * In a C# application the pattern is __ProjectDefaultNamespace.ContainingFolderName.ThemeFileName.Extention__ if the theme file is in a folder as mentioned in step 3, otherwise it is just __ProjectName.ThemeFileName.Extention__
+  * In a C# application the pattern is __ProjectDefaultNamespace.ContainingFolderName.ThemeFileName.Extension__ if the theme file is in a folder as mentioned in step 3, otherwise it is just __ProjectName.ThemeFileName.Extension__
 
-  * In a VB.NET application, it does not matter whether the theme file is in a folder or not, the pattern is always the same: __ProjectRootNamespace.ThemeFileName.Extention__.
+  * In a VB.NET application, it does not matter whether the theme file is in a folder or not, the pattern is always the same: __ProjectRootNamespace.ThemeFileName.Extension__.
 
 1. Perform the same action for all theme files needed and also for the  __theme repository__.
 
@@ -38,7 +38,7 @@ previous_url: themes-advanced-topics-adding-custom-adding-as-resource
 >note To be sure about the theme resource location in step 7, you can use Reflector. After building the project simply reflect the built assembly/executable and you will see it.
 >
 
->important If the form with the theme manager will be opened multiple time in the life cycle of the application, the theme manager needs to be diposed explicitly. A suitable place to call its Dispose method is the Closing event of the form.
+>important If the form with the theme manager will be opened multiple time in the life cycle of the application, the theme manager needs to be disposed explicitly. A suitable place to call its Dispose method is the Closing event of the form.
 >
 
 # See Also

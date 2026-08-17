@@ -30,7 +30,7 @@ Telerik’s NuGet packages include builds for different target frameworks (e.g.,
 
 ### Consistency Across Projects
 
-n multi-project solutions, NuGet ensures all projects use the same assembly version. With manual references, it’s easy for one project to end up with a different version, potentially causing runtime issues.
+In multi-project solutions, NuGet ensures all projects use the same assembly version. With manual references, it’s easy for one project to end up with a different version, potentially causing runtime issues.
 
 ## Migrate Manually Referenced Assemblies to NuGet
 
@@ -57,9 +57,9 @@ The above assemblies can be replaced with the following NuGets:
 
 ![Visual Studio NuGet Package Manager showing Telerik UI for WinForms packages that replace manual assemblies](images/migrate-assemblies-nuget002.png)
 
-The NuGets will installed the same number assemblies as you have done it manually. All referenced NuGet packages and their version is stored in the **packages.config** file. 
+The NuGets will install the same number of assemblies as you have done it manually. All referenced NuGet packages and their version is stored in the **packages.config** file. 
 
-The final step will be to migrate to PackageReference. The PackageReference is flexible and lightweight. When used it will remove the **packages.config** file from your project and move the NuGet package information in the **csproj** project file. To migrate the **packages.config** file, you will need to choose the **Migate packages.config to PackageReference...** option from the context menu.
+The final step will be to migrate to PackageReference. The PackageReference is flexible and lightweight. When used it will remove the **packages.config** file from your project and move the NuGet package information in the **csproj** project file. To migrate the **packages.config** file, you will need to choose the **Migrate packages.config to PackageReference...** option from the context menu.
 
 ![Visual Studio context menu option for migrating packages.config to PackageReference](images/migrate-assemblies-nuget003.png)
 

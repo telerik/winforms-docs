@@ -23,7 +23,7 @@ CTAControlName: RadNotifyIcon
 |**BalloonText**|Gets or sets the text of the balloon tip.|
 |**BalloonIcon**|Gets or sets the icon of the balloon tip.|
 |**TrayContextMenu**|Gets or sets the context menu.|
-|**PopupContent**|Gets or sets the control that is set as the content of the the popup which the notify icon shows.|
+|**PopupContent**|Gets or sets the control that is set as the content of the popup which the notify icon shows.|
 |**ContextMenuActivationMouseEvent**|Gets or sets the mouse action that must be performed over the notify icon to show the **TrayContextMenu**. The possible user actions can be *LeftClick*, *RightClick*, *MiddleClick*, *LeftDoubleClick*, *RightDoubleClick*, *MiddleDoubleClick*, or *All*. Default value is *RightClick*.|
 |**PopupActivationMouseEvent**|Gets or sets the mouse action that must be performed over the notify icon to show a popup with **PopupContent**. The possible user actions can be *LeftClick*, *RightClick*, *MiddleClick*, *LeftDoubleClick*, *RightDoubleClick*, *MiddleDoubleClick*, or *All*. Default value is *LeftClick*.|
 |**TooltipText**|Gets or sets the content of the tooltip that will be shown when the mouse hovers over the notify icon.|

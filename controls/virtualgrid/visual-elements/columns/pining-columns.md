@@ -18,7 +18,7 @@ __RadVirtualGrid__ columns can be pinned so that the rows appear anchored to the
 
 
 
-The result is that the column is pined to the right.
+The result is that the column is pinned to the right.
 
 ![WinForms RadVirtualGrid Pinned Columns](images/virtualgrid-pinned-columns001.png)
 

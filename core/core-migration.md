@@ -32,7 +32,7 @@ In this case I am using the excel inspired template.
 
 
 
-2\. You need to create a WinForms .NET project. Currently this can be done from the Conosle. Open a new *Development Command Prompt for VS2017* and type the following command (you can use any preferred directory). 
+2\. You need to create a WinForms .NET project. Currently this can be done from the Console. Open a new *Development Command Prompt for VS2017* and type the following command (you can use any preferred directory). 
 
 #### Creating WinForms project from the Command Prompt
 

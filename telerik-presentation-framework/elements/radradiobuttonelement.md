@@ -11,7 +11,7 @@ previous_url: tpf-elements-radradiobutton
 
 # RadRadioButtonElement
 
-__RadRadioButtonlElement__ contains the logic and user interface for a single RadRadioButton.
+__RadRadioButtonElement__ contains the logic and user interface for a single RadRadioButton.
 
 ![Telerik UI for WinForms RadRadioButtonElement example](images/tpf-elements-radradiobutton001.png)
 

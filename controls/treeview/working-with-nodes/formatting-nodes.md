@@ -23,16 +23,16 @@ Each __TreeNodeElement__ contains the following elements:
 >important __TreeNodeContentElement__ and __TreeNodeImageElement__ are inheriting [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}). This means that each of these can display separate image, text, fill and border. This allows you customize the node and for example add two images to a single node.
 
 
-The bellow example shows how you can access and format the main node elements:
+The below example shows how you can access and format the main node elements:
 
 <snippet id='treeview-nodeformatting-nodeformatting-cs' />
 <snippet id='treeview-nodeformatting-nodeformatting-vb' />
 
 
 
->caption Figure 1: Nodes formated with the above code.
+>caption Figure 1: Nodes formatted with the above code.
 
-![WinForms RadTreeView Nodes formated with the above code](images/treeview-formatting-nodes001.png)
+![WinForms RadTreeView Nodes formatted with the above code](images/treeview-formatting-nodes001.png)
 
 >note Please note that you should always provide an 'else' clause for each 'if' clause that you have in the implementation of the NodeFormatting event. Skipping this operation will lead to incorrect images applied to the inappropriate nodes.
 >

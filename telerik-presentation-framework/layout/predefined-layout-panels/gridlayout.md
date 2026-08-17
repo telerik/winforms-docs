@@ -19,7 +19,7 @@ The GridLayout has to be populated with columns and rows when it is being initia
 
 * __Fixed:__  The column/row is sized with a fixed width/height determined by the __FixedWidth/FixedHeight__ property.
 
-* __Proportional:__ The column/row is sized proportionally according to the other proportional rows/columns. In this case the available width/height is split proportionally to each column/row according to the __ProportionalWidthWeight/ProportionalHeightWeigh__ property.
+* __Proportional:__ The column/row is sized proportionally according to the other proportional rows/columns. In this case the available width/height is split proportionally to each column/row according to the __ProportionalWidthWeight/ProportionalHeightWeight__ property.
 
 * __Auto:__ In this mode the column/row has the width/height of the largest item in it. To determine the cell coordinates of each element added to the GridLayout, you should set the __RowIndex/ColumnIndex__ properties. Also, each element has a __RowSpan/ColSpan__ property, which determines how many rows/columns the element occupies:
 

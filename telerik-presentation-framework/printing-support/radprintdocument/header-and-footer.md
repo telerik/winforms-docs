@@ -11,7 +11,7 @@ previous_url: tpf-printing-support-radprintdocument-header-and-footer
 
 # Header and Footer
 
-The RadPrintDocument has a build in header and footer print capabilities. Here is a list of the available properties which allow you to customize the header and footer:
+The RadPrintDocument has built-in header and footer print capabilities. Here is a list of the available properties which allow you to customize the header and footer:
 
 * __HeaderHeight:__ the height of the header in pixels.
 
@@ -105,7 +105,7 @@ The header and footer have some predefined special strings which can be set to a
 * __[Time Printed]__ – Prints the time when the printing was started.
             
 
-* __[User Name]__ – Prints the user-name associated with the current thread (the current Windows login)).
+* __[User Name]__ – Prints the user-name associated with the current thread (the current Windows login).
             
 
 Here is a sample:

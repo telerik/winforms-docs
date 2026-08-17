@@ -26,8 +26,8 @@ You can review below the [Key Features]({%slug winforms/dropdown-listcontrol-and
 
 * __Auto-complete__: The control provides flexible [auto-completion]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/auto-complete%}) options that suggest and  append text from choices in the list as the user types.  
 * __Filtering__: RadDropDownList supports [filtering]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/filtering%}) of its items. In order to apply a filter, you should set the __Filter__ property of __RadDropDownList__ to a predicate that will be called for every data item in order to determine if the item will be visible.
-* __Scrolling__: In the scenatio where you cannot fit the __RadListDataItems__ in the popup, a vertical scroll bar will appear so that you can scroll down and select the desire item. You can see the different scrolling options [here.]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/scrolling%})
-* __Selection__: RadDropDownList supports three types of selection modes which you can wxplore in this [article.]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/selection%})
+* __Scrolling__: In the scenario where you cannot fit the __RadListDataItems__ in the popup, a vertical scroll bar will appear so that you can scroll down and select the desired item. You can see the different scrolling options [here.]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/scrolling%})
+* __Selection__: RadDropDownList supports three types of selection modes which you can explore in this [article.]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/selection%})
 * __Sorting__: You can control how the items in the __RadDropDownList__ are sorted by specifying the [SortStyle]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/sorting%}) property.
 
 >tip In the related [Getting Started](https://docs.telerik.com/devtools/winforms/controls/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/getting-started) article you can find how to use the control with a sample scenario.

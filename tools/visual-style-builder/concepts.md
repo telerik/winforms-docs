@@ -11,7 +11,7 @@ previous_url: tools-visual-style-builder-concepts
 
 # Concepts
 
-Visual Style Builder introduces several powerful and innovative for the Winforms Market concepts and approaches that make it much more powerful, intuitive and easier to use than its previous equivalent. To enable these new concepts we have significantly refactorred our internal theming framework, which refactoring gave us both performance benefit and much more straightforward way of using themes and styles across entire suite.
+Visual Style Builder introduces several powerful and innovative for the Winforms Market concepts and approaches that make it much more powerful, intuitive and easier to use than its previous equivalent. To enable these new concepts we have significantly refactored our internal theming framework, which refactoring gave us both performance benefit and much more straightforward way of using themes and styles across entire suite.
 
 Following is a list of the above described concepts:
 
@@ -25,7 +25,7 @@ Each RadItem instance may now enter different visual states, where each state is
 
 ## Child Selectors
 
-These are new IElementSelector implementations, which, much like in the CSS styling mechanism, allow an element to be chosen depending on its current parent. Previously supported were only TypeSelector and ClassSelector, which, while providing the styling basis, would not give you the flexibility of making an element look different on different parent elements. The most important benefit of these new selectors is the fact that we may define the style conditions at root level and omit the need of forcing child elements to know for their parent’s properties. For example, in order to style a RadButtonElement, all we need is to create a VisualStateSelector for the desired VisualState, assign the proper ChildSelector and specify the desired property settings. The following code snippet demonstrates how to create a selector for RadButtonElement, which selects its FillPrimitve child:
+These are new IElementSelector implementations, which, much like in the CSS styling mechanism, allow an element to be chosen depending on its current parent. Previously supported were only TypeSelector and ClassSelector, which, while providing the styling basis, would not give you the flexibility of making an element look different on different parent elements. The most important benefit of these new selectors is the fact that we may define the style conditions at root level and omit the need of forcing child elements to know for their parent’s properties. For example, in order to style a RadButtonElement, all we need is to create a VisualStateSelector for the desired VisualState, assign the proper ChildSelector and specify the desired property settings. The following code snippet demonstrates how to create a selector for RadButtonElement, which selects its FillPrimitive child:
 
 {{source=..\SamplesCS\Tools\VisualStyleBuilder\Overview\Concepts.cs region=VisualStateSelector}} 
 {{source=..\SamplesVB\Tools\VisualStyleBuilder\Overview\Concepts.vb region=VisualStateSelector}} 

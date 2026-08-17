@@ -10,7 +10,7 @@ position: 12
 
 # Support for vector images
 
-**RadControls** support displaying vector graphics for building high DPI applications and providing excellent end user experience. Scalable Vector Graphics (SVG) defines vector-based graphics in XML format. SVG file can be scaled to different sizes without loоsing quality so they scale appropriately on all DPI settings. You can apply SVG image on a control just by using the **SvgImage** property that is integrated in [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) and [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%}). The **SvgImage** property acts the same way as the **Image** property, so **TextImageAlignment**, **ImageLayout** and other image related properties are respected by **RadSvgImage**.
+**RadControls** support displaying vector graphics for building high DPI applications and providing excellent end user experience. Scalable Vector Graphics (SVG) defines vector-based graphics in XML format. SVG file can be scaled to different sizes without losing quality so they scale appropriately on all DPI settings. You can apply SVG image on a control just by using the **SvgImage** property that is integrated in [LightVisualElement]({%slug winforms/telerik-presentation-framework/primitives/lightvisualelement%}) and [ImagePrimitive]({%slug winforms/telerik-presentation-framework/primitives/imageprimitive%}). The **SvgImage** property acts the same way as the **Image** property, so **TextImageAlignment**, **ImageLayout** and other image related properties are respected by **RadSvgImage**.
 
 >note SVG image support is available only in .NET 4.0 and above.
 
@@ -39,9 +39,9 @@ RadControl.EnableSvgImages = True
 
 {{endregion}} 
 
-You can control whether Image or SvgImage will be painted on an element level as well. This can be done via the the **ImageDrawType** enumeration that offers two options: Svg or Image. Note that if there is no SvgImage set, this property will return **ImageDrawType.Image**.
+You can control whether Image or SvgImage will be painted on an element level as well. This can be done via the **ImageDrawType** enumeration that offers two options: Svg or Image. Note that if there is no SvgImage set, this property will return **ImageDrawType.Image**.
 
-For example you may prefer to use bitmap images for your application but use SVG image for а specific element:
+For example you may prefer to use bitmap images for your application but use SVG image for a specific element:
 
 {{source=..\SamplesCS\TPF\SvgSupport\SVGSupport.cs region=EnableSvgForSpecificElement}} 
 {{source=..\SamplesVB\TPF\SvgSupport\SVGSupport.vb region=EnableSvgForSpecificElement}}

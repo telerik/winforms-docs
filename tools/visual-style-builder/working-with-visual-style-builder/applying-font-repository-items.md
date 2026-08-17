@@ -11,7 +11,7 @@ previous_url: tools-visual-style-builder-working-with-visual-style-builder-apply
 
 # Applying Font repository items
 
-It is a good practice to create and drag Text repository items to RootRadElement. The [Font property is an ambient property](http://msdn.microsoft.com/en-us/library/system.windows.forms.control.font.aspx), so when you have many TextPrimitives in one control, setting the Text repository item to RootRadElement will set the desired font to all TextPrimitives. Please note that you should create additional Text items defining only the text color in the cases where the text should have different appearance across different states. Let' take a look at the following example:
+It is a good practice to create and drag Text repository items to RootRadElement. The [Font property is an ambient property](http://msdn.microsoft.com/en-us/library/system.windows.forms.control.font.aspx), so when you have many TextPrimitives in one control, setting the Text repository item to RootRadElement will set the desired font to all TextPrimitives. Please note that you should create additional Text items defining only the text color in the cases where the text should have different appearance across different states. Let's take a look at the following example:
 
 Imagine that you have to create a theme for RadButton. The Font of the RadButton's TextPrimitive should be set by a Text repository item to RootRadElement while the colors of the RadButton's Text should be set by Text repository items set to the TextPrimitive:
 

@@ -333,7 +333,7 @@ We use [Raise](https://docs.telerik.com/devtools/justmock/basic-usage/mock/raise
 
 ## Mock Private Methods
 
-In case of dependencies on private methods in our unit tests, we can benefit the [PrivateAccessor](https://docs.telerik.com/devtools/justmock/advanced-usage/private-accessor.html) that JustMock offers for such scenarios. Thus, we can craft the unit test logic calling a non-public method, forcing it to return e predefined value and then using its returned result.
+In case of dependencies on private methods in our unit tests, we can benefit the [PrivateAccessor](https://docs.telerik.com/devtools/justmock/advanced-usage/private-accessor.html) that JustMock offers for such scenarios. Thus, we can craft the unit test logic calling a non-public method, forcing it to return a predefined value and then using its returned result.
 
 In our **Order** class implementation, we have a private **GetTotalAmount** method. Usually, you are not allowed to call it in the unit tests project. However, with JustMock it is possible:
 
@@ -374,7 +374,7 @@ public void TestPrivateMethodGetTotalAmount()
 
 Let's finish this tutorial with a more advanced mocking example. Imagine that you want to simulate a user clicks a specific row in **RadGridView** and selects it. This can be easily achieved in the unit test by simply calling the public BaseGridBehavior.**OnMouseDown(MouseEventArgs e)** method. However, this action directly depends on the mouse position and the passed X,Y coordinates. Depending on the current monitor's resolution, columns' sizes, rows' height, you don't know what row exactly will be selected. You are not even sure that any row will be selected at all because it is unpredictable what element will be under the mouse coordinates, e.g. it can be the header row, filtering row, the new row, etc.
 
-Since **RadGridView** manages user mouse and keyboard input over its rows by a [row behavior]({%slug winforms/gridview/rows/row-behaviors%}), it introduces different behaviors depending on the row type. Hence, **RadGridView** internally detects what type of visual row element is located under the mouse and the mouse handling of the respective row behavior is being performent. This makes the unit test setup more complex because you have to ensure that a specific data row is clicked and selected and then your unit of code is executed. Thus, you won't be mainly focused on the unit of code to test but also on the setup that a specific data row is clicked, not the header or filtering row. 
+Since **RadGridView** manages user mouse and keyboard input over its rows by a [row behavior]({%slug winforms/gridview/rows/row-behaviors%}), it introduces different behaviors depending on the row type. Hence, **RadGridView** internally detects what type of visual row element is located under the mouse and the mouse handling of the respective row behavior is being performed. This makes the unit test setup more complex because you have to ensure that a specific data row is clicked and selected and then your unit of code is executed. Thus, you won't be mainly focused on the unit of code to test but also on the setup that a specific data row is clicked, not the header or filtering row. 
 
 The following schema shows the different paths that may occur in the unit test execution depending on the coordinates that are passed in the MouseEventArgs. However, we want to strictly control that the marked path will be followed no matter what X,Y coordinates are passed:
 

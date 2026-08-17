@@ -45,7 +45,7 @@ Currently, Telerik WinForms .NET project templates support both .NET assembly re
 
 >important The approach shown here is available with the official Visual Studio 2019 and later versions. If you use a previous build of VS, check the [Deploy .NET apps with Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs?tabs=vs156) MSDN article.
 
-1\. Right click the project in Visual Studio and select the **Publish** option. This will open the **Pick a publish taget** dialog.
+1\. Right click the project in Visual Studio and select the **Publish** option. This will open the **Pick a publish target** dialog.
    
 ![Visual Studio project context menu with the Publish command for a Telerik UI for WinForms application](images/deploy-application004.png)
 

@@ -25,7 +25,7 @@ In order to access all of the provided APIs, first you have to enable them from 
 
 ![Google Cloud API Library showing available APIs for a Telerik UI for WinForms cloud integration application](images/google-cloud-api-library001.png)
 
->important In order to automatically authenticate your application you need to add the __GOOGLE_APPLICATION_CREDENTIALS__ environment variable. It must point to the JSSON file that contains the license information. This file is can be obtained by creating a [service account](https://cloud.google.com/docs/authentication/).
+>important In order to automatically authenticate your application you need to add the __GOOGLE_APPLICATION_CREDENTIALS__ environment variable. It must point to the JSON file that contains the license information. This file is can be obtained by creating a [service account](https://cloud.google.com/docs/authentication/).
 >
 
 ## See Also

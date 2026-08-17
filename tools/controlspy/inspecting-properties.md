@@ -26,7 +26,7 @@ Properties can be changed in real time and to control element appearance and beh
 |Method|Description|
 |----|----|
 |SetElementToSpy(RadElement elementToSpy)|Assigns the passed RadElement to RadControlSpy.|
-|SetControlToSpy(Control controlToSpy, bool expandTree)|Assigns the passed RadElement to RadControlSpy. The boolean flag controls whether three structure will be expanded.|
+|SetControlToSpy(Control controlToSpy, bool expandTree)|Assigns the passed RadElement to RadControlSpy. The boolean flag controls whether the tree structure will be expanded.|
 |SetControlToSpy(Control controlToSpy)|Assigns the passed control to RadControlSpy.|
 
 # See Also

@@ -10,7 +10,7 @@ position: 1
 
 # Structure
 
-The bellow image shows the __RadCaroucel__ elements:
+The below image shows the __RadCaroucel__ elements:
 
 >caption Figure 1: RadCarousel Elements.
 

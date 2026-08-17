@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-This article demonstrates a sample approach how to search for a certain text in the rich-text document and highlight the find matches:
+This article demonstrates a sample approach how to search for a certain text in the rich-text document and highlight the found matches:
  
 ![rte-highligh-search-text 001](images/rte-highligh-search-text001.gif)
 

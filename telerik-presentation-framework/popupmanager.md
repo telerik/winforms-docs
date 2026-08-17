@@ -19,7 +19,7 @@ The PopupManager class manages all opened popups in your application per UI thre
 |__Hooked__|Gets a value indicating whether the popup manager has hooks installed. |
 |__ClosePopupOnMouseWheel__|Gets or Sets a value indicating whether the popups will stop closing on MouseWheel. |
 |__PopupCount__|Gets the count of the __IPopupControl__ instances currently registered in the PopupManager. |
-|__LastActivatedPopup__|Getst the popup which was last activated. |
+|__LastActivatedPopup__|Gets the popup which was last activated. |
 |__Default__|A static property that gets the only instance of the PopupManager class. Other instances can not be created. |
 
 ## Methods

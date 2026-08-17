@@ -21,7 +21,7 @@ RadCalculator supports all native memory functionality the end user is accustome
 	1\. Input - '3' -> M+ -> Memory Value - '3'
 
 	2\. Input - '6' -> M+ -> Memory Value - '9'
-* **Memory Minus (M-)** - substracts the current input value from the memory value. For example:
+* **Memory Minus (M-)** - subtracts the current input value from the memory value. For example:
 
 	1\. Input - '5' -> M- -> Memory Value - '-5'
 
@@ -62,7 +62,7 @@ The supported keys are as follows:
 
 * **Add key (+)** - allows performing addition both from the keyboard and the numeric pad.
 
-* **Substract key (-)** - allows performing substraction subtraction both from the keyboard and the numeric pad.
+* **Subtract key (-)** - allows performing subtraction both from the keyboard and the numeric pad.
 
 * **Multiply key (*)** - allows performing multiplication both from the keyboard and the numeric pad.
 

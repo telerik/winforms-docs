@@ -14,7 +14,7 @@ previous_url: buttons-toggleswitch-structure
 
 This article will show the internal elements structure of __RadToggleSwitch__:
 
->caption Fiure 1: RadToggleSwitch's elements hierarchy
+>caption Figure 1: RadToggleSwitch's elements hierarchy
 
 ![WinForms RadToggleSwitch's Elements Hierarchy](images/buttons-toggleswitch-structure002.png)
 

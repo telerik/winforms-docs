@@ -19,8 +19,8 @@ previous_url: calendar-overview-important-events, calendar-overview-important-pr
 | __HeaderNavigationMode__ |Gets or sets the navigation mode that will be used when the user clicks on header element. By default its value is HeaderNavigationMode. *Popup* |
 | __MonthLayout__ |Specifies the number or rows and columns for the layout.|
 | __MonthStep__ |Gets or sets a value determining how many months will be in the popup of the calendar. Setting it to 12/24/36/etc will allow you to show years instead of months.|
-| __MultiViewColumns__ |Gets or sets the the count of columns to be displayed by a multi-month __CalendarView__ .|
-| __MultiViewRows__ |Gets or sets the the count of rows to be displayed by a multi-month __CalendarView__ .|
+| __MultiViewColumns__ |Gets or sets the count of columns to be displayed by a multi-month __CalendarView__ .|
+| __MultiViewRows__ |Gets or sets the count of rows to be displayed by a multi-month __CalendarView__ .|
 | __Orientation__ |Specifies the orientation of the view, whether (days, or weeks) are displayed in rows or columns.|
 | __RangeMaxDate__ |Gets or sets the maximum date valid for selection by Telerik RadCalendar.|
 | __RangeMinDate__ |Gets or sets the minimal date valid for selection by Telerik RadCalendar.|

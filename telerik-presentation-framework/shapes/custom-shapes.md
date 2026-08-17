@@ -53,7 +53,7 @@ End Class
  
 {{endregion}} 
 
-Figure 1 shows the result from the above code. the shape is applied to a RadPanel.
+Figure 1 shows the result from the above code. The shape is applied to a RadPanel.
 
 >caption Figure 1: The cross shape.
 
