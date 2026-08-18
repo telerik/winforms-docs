@@ -46,6 +46,16 @@ You can use the **DefaultSvgImage/DefaultImage** and **DefaultText** properties 
 <snippet id='picturebox-pictureboxgettingstarted-defaultimageandtext-cs' />
 <snippet id='picturebox-pictureboxgettingstarted-defaultimageandtext-vb' />
 
+To change the color of the default text, set the `ForeColor` property of the `NoPictureTextElement`:
+
+````C#
+this.radPictureBox1.PictureBoxElement.NoPictureTextElement.ForeColor = System.Drawing.Color.Red;
+````
+
+````VB.NET
+Me.radPictureBox1.PictureBoxElement.NoPictureTextElement.ForeColor = System.Drawing.Color.Red
+````
+
 
 
 ![WinForms RadPictureBox Customize Default Look](images/picturebox-getting-started003.png)

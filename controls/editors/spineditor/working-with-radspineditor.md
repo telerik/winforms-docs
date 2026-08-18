@@ -9,7 +9,7 @@ position: 4
 previous_url: editors-spineditor-working-with-radspineditor
 ---
 
-# Properties
+## Properties
 
 |Property|Description   |
 |---|---|
@@ -29,11 +29,20 @@ previous_url: editors-spineditor-working-with-radspineditor
  
 >note **DecimalPlaces** is considered when you try to commit a new value to RadSpinEditor. That is why it is expected to round the value if less decimal places are specified than the contained in the value. 
 
-# Events
+## Events
 |Event|Description|
 |---|---|
 |__ValueChanging__|This event fires before the value has changed and allows you to prevent a given value from being entered. The event passes a __ValueChangingEventArgs__ parameter that includes the __OldValue__, __NewValue__ and __Cancel__ properties.|
 |__ValueChanged__|This event fires when the number has already changed. Use the __Value__ property to get the current number in the __RadSpinEditor__.|
+
+## Troubleshooting ValueChanged
+
+The `ValueChanged` event is raised only when the effective value changes. If clicking an up or down button does not raise the event, check the following conditions:
+
+* Confirm that `ShowUpDownButtons` is enabled and `ReadOnly` is set to `false`.
+* Confirm that the attempted step is not constrained to the current value by the `Minimum` or `Maximum` property.
+* Check the `ValueChanging` event handler. Setting `ValueChangingEventArgs.Cancel` to `true` prevents the new value from being committed and `ValueChanged` from being raised.
+* Remember that `ValueChanged` reports a value change; it is not a button-click notification. First verify whether the displayed `Value` changes when the button is clicked.
 
 # See Also
 
