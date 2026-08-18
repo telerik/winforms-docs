@@ -42,7 +42,7 @@ The RadElement __LayoutOffset__ is the sum of the arrange rectangle offset, pare
 
 The offset of the origin of the coordinate system used when painting an element and its children. The __PositionOffset__ is relative to the parent of an element. Setting __PositionOffset__ has no influence on other layout properties and is only used to paint the element using an offset. The area of the element appearing outside of the parent bounds is clipped.
 
-The example below shows a FillPrimitive where the __PositionOffset__ if 5 pixels down and 5 pixels in.
+The example below shows a FillPrimitive where the __PositionOffset__ is 5 pixels down and 5 pixels in.
 
 ![Telerik UI for WinForms Telerik Presentation Framework PositionOffset example showing a FillPrimitive shifted down and right](images/tpf-layout-element-offset-calculations002.png)
 

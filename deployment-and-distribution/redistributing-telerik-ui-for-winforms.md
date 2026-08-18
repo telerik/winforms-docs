@@ -36,7 +36,7 @@ For additional usage requirements, development restrictions and, defined term de
 
 ## .NET Redistributions
 
-.NET Core allows you to publish applications as self-contained, bundling the runtime and dependencies into a single folder, or even as a single file executable. This approach eliminates the need for additional tools, as everything is already packaged together during the publish process, simplifying deployment and reducing complexity. Deploying your .NET project is futher described in the [Deploying WinForms .NET Core Application]({%slug winforms/virtualgrid/getting-started%})
+.NET Core allows you to publish applications as self-contained, bundling the runtime and dependencies into a single folder, or even as a single file executable. This approach eliminates the need for additional tools, as everything is already packaged together during the publish process, simplifying deployment and reducing complexity. Deploying your .NET project is further described in the [Deploying WinForms .NET Core Application]({%slug winforms/virtualgrid/getting-started%})
 
 ## .NET Framework Redistributions
 
@@ -103,13 +103,13 @@ Next, you should build your solution and then ILMerge the built application exec
 1. Type "cmd" (without the quotes).
             
 
-1. In the command prompt navigate to the ILMerge tool directory. Usually, the directory is *C:\Program Files\Microsoft\ILMerge*, although this directory may vary depending on the Operation System version.
+1. In the command prompt navigate to the ILMerge tool directory. Usually, the directory is *C:\Program Files\Microsoft\ILMerge*, although this directory may vary depending on the Operating System version.
             
 
 1. ILMerge the assemblies using the following command in the command prompt: 
             
 
->tip: This commands will work in case the application executable and the Telerik assemblies are contained in the ILMerge tool folder. In any other case, you will need to include the full path to the assemblies/executables. In addition, the Telerik assemblies that should be given as parameters, should be those referenced by your application.
+>tip: This command will work in case the application executable and the Telerik assemblies are contained in the ILMerge tool folder. In any other case, you will need to include the full path to the assemblies/executables. In addition, the Telerik assemblies that should be given as parameters, should be those referenced by your application.
 
 ````XML
     ilmerge /target:winexe /out:MergedApplicationExecutable.exe ApplicationExecutable.exe TelerikCommon.dll Telerik.WinControls.UI.dll Telerik.WinControls.dll         
@@ -161,7 +161,7 @@ Protecting Telerik UI for WinForms requires the Telerik assemblies to be built f
 1. Open C:\Telerik UI for WinForms Source\RadControl\TPF\Control\RadControl.cs in a text editor (notepad, Visual Studio etc).
             
 
-1. Uncomment the following line and change the string to you application’s assembly name:
+1. Uncomment the following line and change the string to your application’s assembly name:
     
     Before:
             
@@ -173,7 +173,7 @@ Protecting Telerik UI for WinForms requires the Telerik assemblies to be built f
 
 1. Save RadControl.cs and rebuild the solution.
 
-1. In your application replace the __existing__ references to Telerik UI for WinForms assemblies with the ones built from source code __and rebuild your project so it will use the newly build assemblies__.
+1. In your application replace the __existing__ references to Telerik UI for WinForms assemblies with the ones built from source code __and rebuild your project so it will use the newly built assemblies__.
             
 
 Once you finish these steps, and if you or someone else tries to use that assembly from another application the evaluation dialog will appear (randomly).
@@ -237,7 +237,7 @@ This section demonstrates how to deploy a project with a public token key. We wi
 1. Build the solution.
             
 
-1. In your application replace the existing references to Telerik UI for WinForms assemblies with the ones built from source code and rebuild your project so it will use the newly build assemblies.
+1. In your application replace the existing references to Telerik UI for WinForms assemblies with the ones built from source code and rebuild your project so it will use the newly built assemblies.
             
 
 ## Using the Telerik Document Processing Libraries in Your Solutions

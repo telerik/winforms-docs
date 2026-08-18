@@ -69,7 +69,7 @@ This method receives a parameter containing the available size for children to b
 The __DesiredSize__ of every child is valid in the parent's ArrangeOverride() method and may be used in the calculations.
         
 
-The rectangles allocated by __ArrangeOverride__ do not need to be next to each other or ordered in any particular fashion. The example below shows a  scenario where children are arranged with a size greater then their desired size. The first child is aligned in the bottom-right corner of the size it has received for layout, while the second child is stretched horizontally and aligned in the center.
+The rectangles allocated by __ArrangeOverride__ do not need to be next to each other or ordered in any particular fashion. The example below shows a  scenario where children are arranged with a size greater than their desired size. The first child is aligned in the bottom-right corner of the size it has received for layout, while the second child is stretched horizontally and aligned in the center.
 
 ![Telerik UI for WinForms Telerik Presentation Framework ArrangeOverride child alignment and stretching diagram](images/tpf-layout-logic004.png)
 

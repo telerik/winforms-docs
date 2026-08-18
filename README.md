@@ -63,7 +63,7 @@ There are two ways you can contribute to the public Telerik UI for WinForms docu
 
 You can generate a static web site from the Telerik UI for WinForms the documentation and browse it locally.
 
-For the WinForms documentaion:
+For the WinForms documentation:
 
  1. Clone the repository `git clone git@github.com:telerik/winforms-docs.git`
  2. Run `bundle install` (you must have ruby and bundler installed beforehand)

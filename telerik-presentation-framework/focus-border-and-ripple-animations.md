@@ -61,7 +61,7 @@ Me.radTextBoxControl1.TextBoxElement.RippleAnimationColor = Color.FromArgb(55, 1
 
 {{endregion}}
 
-#### RadButtton Ripple Animations
+#### RadButton Ripple Animations
 
 {{source=..\SamplesCS\TPF\FocusBorderAndRippleAnimationsForm.cs region=ButtonElementAnimations}} 
 {{source=..\SamplesVB\TPF\FocusBorderAndRippleAnimationsForm.vb region=ButtonElementAnimations}}

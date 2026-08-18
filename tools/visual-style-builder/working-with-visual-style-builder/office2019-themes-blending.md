@@ -51,7 +51,7 @@ If you want to create a brand new palette you can click on the *Create New palet
 
 ![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending009.png)
 
-If you want to edit the existing pallete then click on the *Modify selected palette* button and it will open **Modify Palette Dialog**. You will be able to modify any of the existing colors:
+If you want to edit the existing palette then click on the *Modify selected palette* button and it will open **Modify Palette Dialog**. You will be able to modify any of the existing colors:
 
 ![tools-visual-style-builder-working-with-visual-style-builder-office2019-themes-blending 003](images/tools-visual-style-builder-office2019-themes-blending010.png)
 

@@ -82,7 +82,7 @@ Migrate this WinForms application to Telerik UI for WinForms. Use the Telerik MC
 
 ```
 
-**Migrate with a dry run (preview changes before applying, takes more time and consumes more resources ):**
+**Migrate with a dry run (preview changes before applying, takes more time and consumes more resources):**
 
 ```
 Migrate this WinForms application to Telerik UI for WinForms. Use the Telerik MCP tools to guide each step — start with telerik_get_migration_plan and follow its workflow. Try to preserve all existing functionality. Do not guess package names, do not create stub controls, do not batch-convert files. Use dryRun mode when calling telerik_convert_file so I can review each file's changes before they are applied.

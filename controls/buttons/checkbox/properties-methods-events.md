@@ -29,8 +29,8 @@ position: 4
 
 |Event|Description|
 |----|----|
-|CheckStateChanging|Occurs before the elements's state changes.|
-|CheckStateChanged|Occurs when the elemnts's state changes.|
+|CheckStateChanging|Occurs before the element's state changes.|
+|CheckStateChanged|Occurs when the element's state changes.|
         
 # See Also 
 

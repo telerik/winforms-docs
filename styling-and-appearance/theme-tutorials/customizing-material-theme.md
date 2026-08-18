@@ -50,7 +50,7 @@ As a foundation we are going to use the first Material theme, so we can open Mat
 
 Open [ColorBlending]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/color-blending%}) dialog and use the following settings for all color modifications:
 
-1\. **Uniform Color Blending**: Image Treshold – 10; Color Mix – 1.00; Color Sensitivity – 0.00
+1\. **Uniform Color Blending**: Image Threshold – 10; Color Mix – 1.00; Color Sensitivity – 0.00
 
 >caption Figure 1: Color Blending Settings
 

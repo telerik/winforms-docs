@@ -100,7 +100,7 @@ radLabel1.Text = ChrW(&HE920).ToString() & " | " & ChrW(&HE812).ToString() & " |
 {{endregion}} 
 
 
-The bellow image shows the results:
+The below image shows the results:
 
 ![Telerik UI for WinForms TelerikWebUI font glyph reference](images/tpf-glyphs001.png)    
 
@@ -141,7 +141,7 @@ Me.radLabel1.LabelElement.LabelText.TextRenderingHint = Me.radLabel2.LabelElemen
 
 {{endregion}} 
 
-The bellow image shows the results:
+The below image shows the results:
 
 ![Telerik UI for WinForms Font Awesome glyph reference](images/tpf-glyphs002.png) 
 

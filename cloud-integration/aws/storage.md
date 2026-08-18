@@ -42,7 +42,7 @@ In addition you need to add the following to your App.config file:
 
 ## Step 3: Create the IAmazonS3 client
 
-Now you are ready to create the *IAmazonS3* client object. This object will be used later form managing the data.
+Now you are ready to create the *IAmazonS3* client object. This object will be used later for managing the data.
 
 ````C#
 
@@ -65,7 +65,7 @@ Public Sub New()
 End Sub
 ````
 
-The S3 API is intuitive and you just need to create a proper request. The following spinet shows the event handlers of all buttons.
+The S3 API is intuitive and you just need to create a proper request. The following snippet shows the event handlers of all buttons.
 
 ````C#
 

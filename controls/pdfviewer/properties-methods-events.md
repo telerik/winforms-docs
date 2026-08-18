@@ -47,7 +47,7 @@ position: 4
 |__LoadDocument(string path)__|Loads a PDF document from a specified file name.|
 |__LoadDocument(Stream stream)__|Loads a PDF document from a specified stream.|
 |__UnloadDocument__|Unload the current PDF document.|
-|__ShowThubnails__|Show the Pdf document's thumbnails|
+|__ShowThumbnails__|Show the Pdf document's thumbnails|
 |__HideThumbnails__|Hide the Pdf document's thumbnails|
 |__Print__|Directly prints the document to the default printer.|
 |__Print(bool showPrinterSettings)__|Prints the document with the parameter indicating whether printer settings dialog should be shown.|

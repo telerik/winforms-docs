@@ -17,7 +17,7 @@ res_type: kb
  
 ## Description
 
-By default, the auto-complete behavior considers the **Text** property of the items in **RadDropDownList** and the these ones that match the filter criteria are shown in a separate pop up. This tutorial demonstrates how to implement [auto-complete]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/auto-complete%}) functionality that searches in the description text as well when using [DescriptionTextListDataItems]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/adding-items-programmatically%}). 
+By default, the auto-complete behavior considers the **Text** property of the items in **RadDropDownList** and those that match the filter criteria are shown in a separate pop up. This tutorial demonstrates how to implement [auto-complete]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/auto-complete%}) functionality that searches in the description text as well when using [DescriptionTextListDataItems]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/adding-items-programmatically%}). 
  
 ![dropdownlist-autcomplete-in-description-text.png](images/dropdownlist-autcomplete-in-description-text.gif)
 

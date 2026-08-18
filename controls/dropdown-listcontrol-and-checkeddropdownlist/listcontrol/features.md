@@ -32,7 +32,7 @@ Changing the sort style may cause the SelectedIndexChanged event to fire if the 
 
 ## Filtering
 
-RadListControl can filter which items are currently visible by using the __Filter__ or __FilterExpression__ properties. Filter accepts a predicate method that can be used for arbitrary filtering conditions. FilterExpession accepts a string following a special syntax that describes which items should be visible. The Filter property is used like this:
+RadListControl can filter which items are currently visible by using the __Filter__ or __FilterExpression__ properties. Filter accepts a predicate method that can be used for arbitrary filtering conditions. FilterExpression accepts a string following a special syntax that describes which items should be visible. The Filter property is used like this:
 
 #### Filtering method body 
 

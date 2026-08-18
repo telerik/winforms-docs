@@ -22,14 +22,14 @@ previous_url: multicolumncombobox-selectedindexchanged
 |**DblClickRotate**|Rotate items on double click in the edit box part.|
 |**ScrollOnMouseWheel**|Gets or sets a boolean value determining whether the user can scroll through the items when the popup is closed by using the mouse wheel.|
 |**MultiColumnComboBoxElement**|Gets the hosted RadMultiColumnComboBoxElement.|
-|**DropDownSizingMode**|Gets or sets the drop down sizing mode. The mode can be: horizontal, veritcal or a combination of them.|
+|**DropDownSizingMode**|Gets or sets the drop down sizing mode. The mode can be: horizontal, vertical or a combination of them.|
 |**NullText**|Gets or sets the text that is displayed when the Text property contains empty string or is null.|
 |**DisplayMember**|Specifies the particular field in the data source which will be used from the items in RadMultiColumnComboBox for the Text.|
 |**EditorControl**|The input control hosted in the popup form. In the case of RadMultiColumnComboBox the control is a RadGridView.|
 |**AutoFilter**|Controls whether the filtering behavior is enabled.|
 |**DataSource**|Specifies the data structure to be bound.|
 |**ValueMember**|Specifies the particular field in the data source which will be stored in the Value property.|
-|**SelectedIndex**|Get or sets a value indicating the index of the the selected row.|
+|**SelectedIndex**|Get or sets a value indicating the index of the selected row.|
 |**SelectedItem**|Get or sets a value indicating the selected row.|
 |**SelectedValue**|Get or sets a value according to the applied ValueMember.|
 |**DropDownStyle**|Gets or sets a value specifying the style of the combo box.|

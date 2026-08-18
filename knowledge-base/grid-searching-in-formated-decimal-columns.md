@@ -113,7 +113,7 @@ Note that the search functionality in RadGridView is purposed to search for the 
 
 ![grid-searching-in-formated-decimal-columns 005](images/grid-searching-in-formated-decimal-columns005.png)
 
-If you want to handle both cases , entering **"461 8"** and **"4618"**, the search functionality is not appropriate as it is expected to highlight the exact text match.
+If you want to handle both cases, entering **"461 8"** and **"4618"**, the search functionality is not appropriate as it is expected to highlight the exact text match.
 
 The appropriate way in this case is to use the [custom filtering]({%slug winforms/gridview/filtering/custom-filtering%}) functionality. Thus, you have full control over what rows to be visible or not according to the raw value. 
 

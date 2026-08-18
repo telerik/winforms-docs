@@ -1,9 +1,9 @@
 ---
-title: Formatting Items
-page_title: Formatting Items - UI for WinForms Documentation
+title: Formating Items
+page_title: Formating Items - UI for WinForms Documentation
 description: Items appearance in RadCardView can be customized by making use of the CardViewItemFormatting event.
 slug: winforms/cardviewview/customizing-appearance/formatting-items
-tags: formatting,items
+tags: formating,items
 published: True
 position: 0
 ---
@@ -28,14 +28,14 @@ The appearance of the visual items can be fully customized by handling the __Car
 
 
 
-## Formatting CardViewItiem
+## Formatting CardViewItem
 
 By handling the __CardViewItemFormatting__ event each of the individual card view items can be customized as well.
 
->caption Figure 2: Formatting CardViewItiem
-![WinForms RadCardView Formatting CardViewItiem](images/cardview-customizing-appearance-formatting-items002.png)
+>caption Figure 2: Formatting CardViewItem
+![WinForms RadCardView Formatting CardViewItem](images/cardview-customizing-appearance-formatting-items002.png)
 
-#### Formatting CardViewItiem
+#### Formatting CardViewItem
 
 <snippet id='cardview-customizing-appearance-formatting-items-cardviewitemformatting-cs'/>
 <snippet id='cardview-customizing-appearance-formatting-items-cardviewitemformatting-vb'/>

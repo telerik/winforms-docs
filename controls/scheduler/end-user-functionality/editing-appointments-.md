@@ -27,7 +27,7 @@ When a change in an appointment's property occurs, the __AppointmentChanged__ ev
 
 The EditAppointmentDialog allows for editing all the properties that an appointment exposes. To edit an appointment once it has been created:
 
-1. Double-click an appointment and the "Editor Appointment Dialog" is shown if the appointment is not recurring.![WinForms RadScheduler scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments001.png)
+1. Double-click an appointment and the "Editor Appointment Dialog" is shown if the appointment is not recurring. ![WinForms RadScheduler scheduler-end-user-functionality-editing-appointments 001](images/scheduler-end-user-functionality-editing-appointments001.png)
 
 1. If the appointment is recurring, the "Editing a recurring appointment" pop-up appears, where you can specify whether you want to edit only the selected occurrence of the appointment, or edit the entire series:
     ![WinForms RadScheduler Dialog](images/scheduler-end-user-functionality-editing-appointments005.png)
@@ -48,9 +48,9 @@ The EditAppointmentDialog allows for editing all the properties that an appointm
             
 ## Using In-place editors      
 
-In-place editors provide a quick and easy way to edit a small number of the appointment's properties. The end use can open the in-place editors by pressing the *F2* key.There are three options for the behavior of the in-place editor:
+In-place editors provide a quick and easy way to edit a small number of the appointment's properties. The end user can open the in-place editors by pressing the *F2* key. There are three options for the behavior of the in-place editor:
 
-* The in-place editor opens in the area of the appointment.By default this editor edits the Summary (subject) property of the appointment in which it is opened.
+* The in-place editor opens in the area of the appointment. By default this editor edits the Summary (subject) property of the appointment in which it is opened.
 
 #### Setting a Simple Editor
 

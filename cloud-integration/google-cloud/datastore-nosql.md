@@ -21,7 +21,7 @@ First create the WinForms project, to do that create a blank [Telerik UI for Win
 
 The following tutorial shows how you can create the **Datastore** instance - [Datastore Quickstart](https://cloud.google.com/datastore/docs/quickstart). 
 
-The process is strait forward and easy. You need to add some data as well. When ready your database should look like this.
+The process is straightforward and easy. You need to add some data as well. When ready your database should look like this.
 
 ![Google Cloud Datastore database populated with sample data for a Telerik UI for WinForms application.](images/google_cloud_nosql002.png)
 
@@ -82,7 +82,7 @@ Public Class Book
 End Class
 ````
 
-Now you you can use the above object to store the data from the database. The following code shows how you can retrieve the data:
+Now you can use the above object to store the data from the database. The following code shows how you can retrieve the data:
 
 ````C#
 private void radButtonLoad_Click(object sender, EventArgs e)

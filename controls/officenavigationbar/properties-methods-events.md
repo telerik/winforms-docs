@@ -22,7 +22,7 @@ CTAControlName: OfficeNavigationBar
 |**ShowNavigationOptionsMenuItem**|Gets or sets a value indicating whether to show the navigation options menu item when context menu is opened.|
 |**NavigationOptionsMenuItem**|Gets or sets the navigation options menu item.|
 |**MenuSeparator**|Gets or sets the navigation options menu separator item.|
-|**VisibleItemsCount**||Gets or sets the items that are visible on the strip. WHen set to lower value than the count of items, the remaining items are displayed on an OverflowItem is clicked. If this property is not set it returns the count of items.|
+|**VisibleItemsCount**||Gets or sets the items that are visible on the strip. When set to lower value than the count of items, the remaining items are displayed on an OverflowItem is clicked. If this property is not set it returns the count of items.|
 
 
 ## RadOfficeNavigationBarElement's Properties

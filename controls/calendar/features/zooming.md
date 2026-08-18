@@ -23,7 +23,7 @@ __RadCalendar__ has a built-in date zoom functionality.The  __Zoom-In__ operati
 
 ## Navigation Zoom
 
-The zoom functionality supports changing the current view type as well. With this functionality you are able to switch between Day, Month, and Year view by just clinking the header. This functionality is controlled by the following properties: 
+The zoom functionality supports changing the current view type as well. With this functionality you are able to switch between Day, Month, and Year view by just clicking the header. This functionality is controlled by the following properties: 
 * __HeaderNavigationMode:__ Specifies the navigation mode that will be used when user clicks on header element.
 
 * __ZoomLevel:__ Get or sets the current level. The possible values are, *Days*, *Months*, *Years* and *YearRanges*.

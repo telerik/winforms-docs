@@ -23,7 +23,7 @@ This is the simplest strategy. For each Telerik assembly reference in the Soluti
 
 ![Visual Studio reference Properties window with Copy Local enabled for Telerik UI for WinForms assemblies](images/installation-deployment-and-distribution-application-deployment001.png)
 
-Thus these Telerik assemblies will be copied to your *Release/Bin*, *Debug/Bin* folders. You application deployment consists of copying the exe, dlls, xmls files to your client machines which in the simpler case will be manual copy and in the more advanced scenario will be a copy by your installer.
+Thus these Telerik assemblies will be copied to your *Release/Bin*, *Debug/Bin* folders. Your application deployment consists of copying the exe, dlls, xmls files to your client machines which in the simpler case will be manual copy and in the more advanced scenario will be a copy by your installer.
 
 ### GAC
 
@@ -34,7 +34,7 @@ As noted above, Telerik assemblies are installed in the GAC by Telerik installer
 
 ### ClickOnce 
 
-By default, when preparing a ClickOnce distribution of a Windows Forms Application, VS uses its default settings, which assume that all project assemblies located in the GAC of the local machine are also available on the remote server. By default, the __CopyLocal__ property for assemblies located in the GAC is set to *false*, and they are marked as prerequisites in the application manifest (meaning that ClickOnce expects these to already be present in the remote machine's GAC. As a result, the application does not pack them). This is may cause problems if the assemblies are not registered in the remote server's GAC.
+By default, when preparing a ClickOnce distribution of a Windows Forms Application, VS uses its default settings, which assume that all project assemblies located in the GAC of the local machine are also available on the remote server. By default, the __CopyLocal__ property for assemblies located in the GAC is set to *false*, and they are marked as prerequisites in the application manifest (meaning that ClickOnce expects these to already be present in the remote machine's GAC. As a result, the application does not pack them). This may cause problems if the assemblies are not registered in the remote server's GAC.
               
 Here are several simple steps on how to deploy a Windows Forms Application using ClickOnce:
 

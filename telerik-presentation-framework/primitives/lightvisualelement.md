@@ -25,7 +25,7 @@ __LightVisualElement__ is a lightweight element which is capable of displaying T
 
 * __BorderBoxStyle:__ Defines the border rendering style – *SingleBorder*, *FourBorders*, *OuterInnerBorders*
 
-* __BorderDrawMode:__ Defines drawing border corners – *HorizontalOverVertical*, *LeftOverTop*, *RightOverTop*, *RightOverBotton*, *LeftOverBottom* etc.
+* __BorderDrawMode:__ Defines drawing border corners – *HorizontalOverVertical*, *LeftOverTop*, *RightOverTop*, *RightOverBottom*, *LeftOverBottom* etc.
           
 
 * __BorderWidth:__ Defines the width the border on each side
@@ -61,7 +61,7 @@ __LightVisualElement__ is a lightweight element which is capable of displaying T
 * __GradientPercentage:__ Defines how much of the available space the first gradient color will take
           
 
-* __GradientPercentage2:__ Defines the space available for the the second gradient color
+* __GradientPercentage2:__ Defines the space available for the second gradient color
           
 
 * __BackgroundImage:__ Gets or sets the BackgroundImage. This image fills up the entire element’s background

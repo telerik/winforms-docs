@@ -28,7 +28,7 @@ In Visual Studio open the NuGet package manager and install the **DynamoDB** mod
 
 ![NuGet Package Manager installing the AWSSDK.DynamoDBv2 package for a Telerik UI for WinForms application](images/aws-dynamo-db002.png)
 
-Another option is to to type the following command in the **NuGet Package Manager Console**: *PM> Install-Package AWSSDK.DynamoDBv2*
+Another option is to type the following command in the **NuGet Package Manager Console**: *PM> Install-Package AWSSDK.DynamoDBv2*
 
 In addition you need to add the following to your App.config file:
 
@@ -48,7 +48,7 @@ In addition you need to add the following to your App.config file:
 
 ## Step 3: Create the AWS manager class
 
-Add a class called **AWS_Manager** to the example. You will use this class to add all functionality for managing the DynamoDB database. For now you can create the method that crates the table:
+Add a class called **AWS_Manager** to the example. You will use this class to add all functionality for managing the DynamoDB database. For now you can create the method that creates the table:
 
 ````C#
 

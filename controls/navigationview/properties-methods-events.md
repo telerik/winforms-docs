@@ -40,7 +40,7 @@ position: 3
 |**AllowAnimation**|Gets or sets a value indicating whether to use animation when collapsing and expanding the menu.|
 |**AnimationInterval**|Gets or sets the animation interval.|
 |**AnimationFrames**|Gets or sets the animation frames.|
-|**MinumumHierarchicalPopupSize**|Gets or sets the mimimum size of the hierarchical popup. The desired size is calculated automatically according to the desired sizes of the items.|
+|**MinumumHierarchicalPopupSize**|Gets or sets the minimum size of the hierarchical popup. The desired size is calculated automatically according to the desired sizes of the items.|
 
 ## RadPageViewNavigationViewElement's Methods
 

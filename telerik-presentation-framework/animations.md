@@ -19,7 +19,7 @@ Using the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-
 
 * Next is the __end value__.
 
-* The forth argument takes the __number of frames__.
+* The fourth argument takes the __number of frames__.
 
 * And the last argument is the __time interval between frames__ in milliseconds
 

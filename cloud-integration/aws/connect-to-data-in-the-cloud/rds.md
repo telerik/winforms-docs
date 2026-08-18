@@ -24,7 +24,7 @@ This will lead you to the **Select Engine** page. Select *SQL server Express Edi
 
 ![AWS RDS Select Engine page with SQL Server Express selected for a Telerik UI for WinForms application](images/aws-rds003.png)
 
-On the next screen choose any options you want. For this example we are using the free tier options. Make sure that **Publicly Accessible** option is set to *Yes*.  At the bottom of the page choose database name and specify the user name an password.
+On the next screen choose any options you want. For this example we are using the free tier options. Make sure that **Publicly Accessible** option is set to *Yes*.  At the bottom of the page choose database name and specify the user name and password.
 
 ![AWS RDS database configuration page for a Telerik UI for WinForms cloud integration application](images/aws-rds004.png)
 

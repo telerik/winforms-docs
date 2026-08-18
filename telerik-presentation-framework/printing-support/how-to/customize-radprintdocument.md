@@ -165,5 +165,5 @@ dialog.Show()
 {{endregion}}
 
 # See Also
-* [Create Prinatble Panel]({%slug winforms/telerik-presentation-framework/printing-support/how-to/create-prinatble-panel%})
+* [Create Printable Panel]({%slug winforms/telerik-presentation-framework/printing-support/how-to/create-prinatble-panel%})
 

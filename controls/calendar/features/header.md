@@ -16,7 +16,7 @@ The Header area of __RadCalendar__ is located above the calendar's content area.
 >caption Figure 1: The structure of RadCalendar header.
 ![WinForms RadCalendar Header Structure](images/calendar-customizing-appearance-header001.png)
 
-Use the the following properties to modify title appearance and functionality:
+Use the following properties to modify title appearance and functionality:
 
 *  __TitleFormat:__ Gets or sets the format string that is applied to the calendar title. 
 
@@ -63,7 +63,7 @@ Use the the following properties to modify title appearance and functionality:
 * __NavigationPrevImage:__ Gets or sets the image that is displayed for the navigation previous control. 
 
 
-* __NavigationPrevText:__ Gets or sets the text that is displayed for the navigation previous rev control. 
+* __NavigationPrevText:__ Gets or sets the text that is displayed for the navigation previous control. 
 
 
 * __NavigationPrevToolTip:__ Gets or sets the tool tip that is displayed for the navigation previous control. 

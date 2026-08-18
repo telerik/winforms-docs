@@ -151,6 +151,6 @@ Currently only few controls support analytics out of the box. Note that only use
 |**RadTrackBar**|SelectionChanged|
 |**RadTreeView**|Select, Expand/Collapse, SelectionChanged, Edit, NodeRemoved|
 |**RadWaitingBar**|StartWaiting, EndWaiting|
-|**Exporting features in controls**|All export providers(including async exports) - when export operation is completed|
+|**Exporting features in controls**|All export providers (including async exports) - when export operation is completed|
 
 

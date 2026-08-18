@@ -70,6 +70,6 @@ The Following example demonstrates the __ItemValidating__ event handling integer
 
 # See Also
 
-* [Swithing Editors]({%slug winforms/cardview/editors/switching-editors%})
+* [Switching Editors]({%slug winforms/cardview/editors/switching-editors%})
 * [Custom Items]({%slug winforms/cardview/custom-items%})
 * [Formatting Items]({%slug winforms/cardviewview/customizing-appearance/formatting-items%})

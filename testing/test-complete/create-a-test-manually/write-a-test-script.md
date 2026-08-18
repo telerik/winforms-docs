@@ -12,7 +12,7 @@ position: 2
 
 When writing a manual test you should know the names of your application objects and classes that you want to work with. The TestComplete **"Object Spy"** tool lets you select an object from screen to view its properties, methods, fields and events. 
 
-To do that simply click **"Display Object Spy"** button in TestComplete and drag the spy over an object in your test application. This will show the hiearchy path of the selected object and it will allow you to find its location. Once you have the object location you can perform different operations with it. You will see how this work in a short while.
+To do that simply click **"Display Object Spy"** button in TestComplete and drag the spy over an object in your test application. This will show the hierarchy path of the selected object and it will allow you to find its location. Once you have the object location you can perform different operations with it. You will see how this work in a short while.
 
 ![Display_Object_Spy_Button](images/Display_Object_Spy_Button.png)
 
@@ -34,7 +34,7 @@ Start by finding the location of **"EXPLORE ALL CONTROLS"** object. To do that c
 
 ![Object_Spy_Explore_All_Controls](images/Object_Spy_Explore_All_Controls.png)
 
-Now that you have have the object location you can store it in a variable.
+Now that you have the object location you can store it in a variable.
 
 ````C#
 buttonExploreControls = process["WinFormsObject"]("MainForm")["WinFormsObject"]("navigationPanel")["WinFormsObject"]("exploreControlsToggleButton")
@@ -240,7 +240,7 @@ You can perform region comparison which will take a picture of **RadGridView** w
 
 ![Add_Checkpoint_via_Wizard](images/Add_Checkpoint_via_Wizard.png)
 
-Then you can select the image option and drag the zoom-like icon to the **RadGirdView** object. This will take a picture and store it in the **"Regions"** collection. You will have to type a name, for example: "GridView_ExcelLikeFiltering". 
+Then you can select the image option and drag the zoom-like icon to the **RadGridView** object. This will take a picture and store it in the **"Regions"** collection. You will have to type a name, for example: "GridView_ExcelLikeFiltering". 
 
 In order to perform an image comparison you will need to add a function in **"HelpFunctions"** that will take a picture of the **RadGridView** when the test is executed and compare it with the expected pictures saved in the **"Regions"** collection. This function will look like that.
 
@@ -277,7 +277,7 @@ if(!Regions["GridView_ExcelLikeFiltering"]["Check"](gridView, false, false, 0))
 }
 ````
 
-8\. After performing your validations, you can finilize your test by closing the **"TelerikExamples"** process.
+8\. After performing your validations, you can finalize your test by closing the **"TelerikExamples"** process.
 
 ````C#
 process["Close"]()
@@ -286,4 +286,4 @@ process["Close"]()
 You can see download the test script and HelpFunctions script:
 
 * [Full Test Script](https://www.telerik.com/docs/default-source/ui-for-winforms/radgridviewexcellikefilteringtest.scs)
-* [Full HelFunctions script](https://www.telerik.com/docs/default-source/ui-for-winforms/helpfunctions.scs)
+* [Full HelpFunctions script](https://www.telerik.com/docs/default-source/ui-for-winforms/helpfunctions.scs)

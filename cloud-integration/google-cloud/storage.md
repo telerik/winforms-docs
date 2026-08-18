@@ -56,9 +56,9 @@ End Sub
 
 ````
 
->tip In order this to work you need to add the __GOOGLE_APPLICATION_CREDENTIALS__ environment variable. It must point to the JSSON file that contains the license information. This file is can be obtained by creating a [service account](https://cloud.google.com/docs/authentication/). 
+>tip In order for this to work you need to add the __GOOGLE_APPLICATION_CREDENTIALS__ environment variable. It must point to the JSON file that contains the license information. This file can be obtained by creating a [service account](https://cloud.google.com/docs/authentication/). 
 
-Now you can use the above object to mange the files. Here is how you can handle the buttons' Click events and perform the respective operations:
+Now you can use the above object to manage the files. Here is how you can handle the buttons' Click events and perform the respective operations:
 
 ````C#
 private void radButtonListFiles_Click(object sender, EventArgs e)
