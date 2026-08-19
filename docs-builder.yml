@@ -142,6 +142,9 @@ meta:
   telerik-presentation-framework/events:
     title: Events
     position: 6
+  telerik-presentation-framework/developer-focused-examples:
+    title: Developer Focused Examples
+    position: 25
   telerik-presentation-framework/layout:
     title: Layout
     position: 5
@@ -1676,6 +1679,9 @@ meta:
   styling-and-appearance:
     title: Styling and Appearance
     position: 11
+  telerik-presentation-framework/section-508-compliance:
+    title: Section 508 Compliance
+    position: 24
   telerik-presentation-framework:
     title: Telerik Presentation Framework
     position: 10

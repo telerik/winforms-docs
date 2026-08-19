@@ -10,8 +10,7 @@ position: 10
 
 # Video Onboarding
 
-All users with an active trial or commercial license have access to a [Telerik UI for WinForms getting started video course](https://learn.telerik.com/learn/course/17/Telerik%2520UI%2520for%2520WinForms) available in [Telerik's Virtual Classroom](https://learn.telerik.com/learn).
-The training course is developed to help you get started with the Telerik UI for WinForms components and features. It aims to put you in the shoes of an engineer who adds new features to an existing application.
+Telerik UI for WinForms offers a comprehensive [video getting started course](https://www.telerik.com/support/video-courses) available to all developers. This class is designed to help you get started with the Telerik UI for WinForms components and features. It aims to put you in the shoes of an engineer who adds new features to an existing application.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-introduction.html %}
@@ -33,17 +32,13 @@ This video explains the details around the project you will be modifying&mdash;w
 
 ## Onboarding Modules
 
-The Telerik UI for WinForms technical online training has an approximate duration of 2 hours and is split into eight modules with the following learning path:
+The [Telerik UI for WinForms technical online training](https://www.youtube.com/playlist?list=PLvmaC-XMqeBYZUfnE5_lSGtGAsEynVL4C) has an approximate duration of 2 hours and is split into eight modules with the following learning path:
 
-* **Chapter 1: Introduction** (Course overview, best practices, benefits of Telerik UI for WinForms, course prerequisites)
-* **Chapter 2: Sample Demo Applications** (Create sample application)
-* **Chapter 3: Basic UI Components** (Working with containers, input controls and applying a theme)
-* **Chapter 4: Charts** (Working with charts in order to visualize data)
-* **Chapter 5: Grid** (Working with data grid)
-* **Chapter 6: Scheduler** (Working with scheduler component to plan tasks and meetings)
-* **Chapter 7: Reporting** (Working with the report viewer component)
-* **Chapter 8: Styling and Themes** (Applying Telerik themes and customizing Telerik components)
-* **Chapter 9: Conclusion** 
-
-If you wish to learn more and continue with the video onboarding, [enroll in the training](https://learn.telerik.com/learn/course/17/Telerik%2520UI%2520for%2520WinForms) from the [Virtual Classroom](https://learn.telerik.com/learn).
-  
+* **Chapter 1: Introduction to Telerik UI for WinForms: Best Practices and Prerequisites** (Course overview, best practices, benefits of Telerik UI for WinForms, prerequisites)
+* **Chapter 2: Getting Started with Telerik UI for WinForms** (Create sample application)
+* **Chapter 3: From Input Components to Spreadsheet and Styling with Telerik UI for WinForms** (explore how to integrate essential input components, additional UI controls, and the Spreadsheet component)
+* **Chapter 4: Mastering Telerik UI for WinForms Charts: From Basics to Advanced Features** (Working with charts in order to visualize data)
+* **Chapter 5: Setting up Telerik UI for WinForms Grid and Key Features** (Working with data grid and key features)
+* **Chapter 6: Implementing Scheduler Functionality in Telerik UI for WinForms** (Working with scheduler component to plan tasks and meetings)
+* **Chapter 7: Building Reports in Telerik UI for WinForms** (Working with the report viewer component)
+* **Chapter 8: Customizing Themes in Telerik UI for WinForms** (Applying Telerik themes and customizing Telerik components)
