@@ -221,7 +221,7 @@ Pick the support channel that matches the kind of help you need:
 Use these resources to learn the product faster:
 
 * Read the [Telerik UI for WinForms Knowledge Base](https://docs.telerik.com/devtools/winforms/knowledge-base) for troubleshooting guidance, integration examples, and focused how-to articles.
-* Use the [Telerik Virtual Classroom](https://www.telerik.com/account/support/virtual-classroom) for guided onboarding and product training.
+* Explore [Video Onboarding course]({%slug getting-started-video-onboarding%}) for guided onboarding and product training.
 * Explore the [Telerik UI for WinForms demos](https://demos.telerik.com/winforms/) to see controls and features in running examples.
 
 ## Installation and Deployment
@@ -236,15 +236,15 @@ Use the [WinForms styling and appearance guide]({%slug winforms/themes/using-def
 
 If this article or any related page is missing information, you can help improve the documentation in several ways:
 
-### Submit a New Issue at GitHub
+#### Submit a New Issue at GitHub           
 
 Found incorrect information, a broken link, or a gap in coverage? [Open an issue](https://github.com/telerik/winforms-docs/issues) in the winforms-docs GitHub repository. Include a descriptive title, the page URL, and the closest section anchor so the documentation team can reproduce the problem quickly.
 
-### Submit a Documentation Update at GitHub
+#### Submit a Documentation Update at GitHub
 
 Prefer to fix it yourself? Fork the repository and submit a pull request. Follow the [winforms-docs contribution instructions](https://github.com/telerik/winforms-docs/blob/master/README.md) to prepare your change and use standard Markdown so the review goes smoothly.
 
-### Share Feedback in the Forums
+#### Share Feedback in the Forums
 
 Want to discuss a documentation issue rather than file a report? Post in the [Telerik UI for WinForms community forums](https://www.telerik.com/forums/winforms) to loop in the community and the support team. This path is best for broader product discussion, but expect issue resolution to take longer than a direct GitHub report.
 
