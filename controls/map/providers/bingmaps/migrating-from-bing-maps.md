@@ -174,4 +174,4 @@ Keep provider-specific credentials and HTTP calls inside the provider or an appl
 * [BingRestMapProvider]({%slug winforms/map/providers/bingrestmapprovider%})
 * [CacheProvider]({%slug winforms/map/providers/cacheprovider%})
 * [Map Getting Started]({%slug winforms/map/getting-started%})
-* [Map Providers Overview]({%slug winforms/map/overview%})
+* [Map Providers Overview]({%slug winforms/map%})

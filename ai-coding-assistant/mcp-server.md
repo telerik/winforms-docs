@@ -76,13 +76,13 @@ The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextp
 
 ### Install with Telerik CLI (Recommended)
 
-The easiest way to install and configure the Telerik WinForms MCP Server is through the [Telerik CLI]({%slug winforms/getting-started/telerik-cli%}). A single command line sets up the MCP server for your IDE automatically:
+The easiest way to install and configure the Telerik WinForms MCP Server is through the [Telerik CLI]({%slug telerik-cli%}). A single command line sets up the MCP server for your IDE automatically:
 
 ```powershell
 telerik mcp config winforms
 ```
 
-This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config winforms --ide vscode`). For more details, see [Telerik CLI - Install MCP Server]({%slug winforms/getting-started/telerik-cli%}#install-mcp-server).
+This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config winforms --ide vscode`). For more details, see [Telerik CLI - Install MCP Server]({%slug telerik-cli%}#install-mcp-server).
 
 ### Install with .NET CLI Commands
 
