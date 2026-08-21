@@ -1715,9 +1715,15 @@ meta:
   getting-started:
     title: Getting Started
     position: 2
-  winformslab:
-    title: WinForms Labs
+  getting-started/first-steps:
+    title: First Steps
+    position: 0
+  getting-started/video-onboarding:
+    title: Video Onboarding
     position: 1
+  getting-started/explore-control-features:
+    title: Explore Tools and Features
+    position: 2
 
 redirects: 
 -

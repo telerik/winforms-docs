@@ -11,7 +11,7 @@ previous_url: overview, RadControlsForWinForms
 
 # Telerik UI for WinForms Overview
 
-Telerik UI for WinForms is a commercial desktop UI suite for building data-heavy, line-of-business applications on .NET. Use this overview to choose a starting point, browse the available controls, and find the installation, styling, licensing, and support resources you need.
+Telerik UI for WinForms is a commercial UI component suite for building modern, high-performance, data-driven desktop applications with .NET. Explore the available controls, get started with installation, and find guidance on styling, licensing, and support to help you build your application with Telerik UI for WinForms.
 
 The product includes more than 160 controls and tools for data entry, data visualization, navigation, document processing, and application styling. Start here when you need a quick map of the product and links to the most useful setup and learning content.
 
@@ -19,15 +19,13 @@ To learn more, visit the [Telerik UI for WinForms product page](https://www.tele
 
 ## Getting Started
 
-New to Telerik UI for WinForms? To try Telerik UI for WinForms controls and libraries in your projects, download our fully-functional [30-day trial version](https://www.telerik.com/try/ui-for-winforms).
+New to Telerik UI for WinForms? Try Telerik UI for WinForms controls and libraries in your projects and download our fully-functional [30-day trial version](https://www.telerik.com/try/ui-for-winforms).
 
 <CtaPanelIntroduction></CtaPanelIntroduction>
 
-Follow these steps to go from a fresh install to a running application:
+Follow these steps to go from a fresh install to a running application:  [Telerik UI for WinForms Quick Start Tutorial](%slug winforms/getting-started/first-steps%)
 
-1. [Install the product]({% slug winforms/installation-deployment-and-distribution/installing-on-your-computer %}).
-2. [Build your first project]({% slug winforms/getting-started/first-steps %}) by adding and configuring your first controls.
-3. Explore the [control catalog](#list-of-controls) below to find the components that fit your scenario.
+Explore the [Control Catalog](#list-of-controls) below to find the components that best fit your scenario.
 
 ## List of Controls
 
@@ -244,7 +242,7 @@ Found incorrect information, a broken link, or a gap in coverage? [Open an issue
 
 Prefer to fix it yourself? Fork the repository and submit a pull request. Follow the [winforms-docs contribution instructions](https://github.com/telerik/winforms-docs/blob/master/README.md) to prepare your change and use standard Markdown so the review goes smoothly.
 
-#### Share Feedback in the Forums
+#### Share Feedback in the Forum
 
 Want to discuss a documentation issue rather than file a report? Post in the [Telerik UI for WinForms community forums](https://www.telerik.com/forums/winforms) to loop in the community and the support team. This path is best for broader product discussion, but expect issue resolution to take longer than a direct GitHub report.
 

@@ -5,7 +5,7 @@ description: "Get started with Telerik UI for WinForms by following a step-by-st
 slug: getting-started-video-onboarding
 tags: onboarding,video,virtual,classroom,course,learning
 published: True
-position: 10
+position: 1
 ---
 
 # Video Onboarding
