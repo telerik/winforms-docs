@@ -1637,27 +1637,6 @@ meta:
   controls/barcodeview:
     title: BarcodeView
     position: 56
-  cloud-integration/google-cloud:
-    title: Google Cloud
-    position: 2
-  cloud-integration/azure/cognitive-services:
-    title: Cognitive Services
-    position: 5
-  cloud-integration/azure/connect-to-data-in-the-cloud:
-    title: Connect to Data in the Cloud
-    position: 2
-  cloud-integration/azure:
-    title: Azure
-    position: 1
-  cloud-integration/aws/connect-to-data-in-the-cloud:
-    title: Connect to Data in the Cloud
-    position: 2
-  cloud-integration/aws:
-    title: Amanzon Web Services (AWS)
-    position: 3
-  cloud-integration:
-    title: Cloud Integration
-    position: 19
   analytics:
     title: Analytics
     position: 18
