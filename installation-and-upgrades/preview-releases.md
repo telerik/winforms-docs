@@ -5,7 +5,7 @@ description: This article describes the Telerik WinForms Preview release and how
 slug: winforms/installation-deployment-and-distribution/preview-releases
 tags: using,the,hotfix,dlls,only, lib, latest, internal, build, preview
 published: True
-position: 8
+position: 13
 ---
 
 # Preview Release

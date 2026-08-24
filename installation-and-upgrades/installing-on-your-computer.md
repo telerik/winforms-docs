@@ -1,11 +1,11 @@
 ---
-title: Installing On Your Computer
-page_title: Installing On Your Computer
-description: Read how you can install Telerik UI for WinForms on your computers and what actions are needed.
+title: Install using MSI
+page_title: Install using MSI
+description: Read how you can install Telerik UI for WinForms on your computers by using MSI installer and what actions are needed.
 slug: winforms/installation-deployment-and-distribution/installing-on-your-computer
 tags: installing,on,your,computer
 published: True
-position: 2
+position: 3
 previous_url: installation-deployment-and-distribution-installing-on-your-computer
 ---
 
@@ -21,9 +21,9 @@ The Telerik WinForms setup performs the following actions during the installatio
 
 * Checks the Visual Studio version(s) installed on the machine. We currently support Visual Studio 2005\*, 2008\*, 2010, 2012, 2013, 2015, 2017, 2019 and 2022 installations.
 
->note **R3 2018 SP1 (2018.3.1016)** is the latest version where the installer handles **VS 2005** and **VS 2008**. After this version, Telerik integration is installed on newer versions of Visual Studio.
-
->note **R1 2021 SP1 (version 2021.1.204)** is the latest version where the installer handles **VS 2010**.
+>tip **R3 2018 SP1 (2018.3.1016)** is the latest version where the installer handles **VS 2005** and **VS 2008**. After this version, Telerik integration is installed on newer versions of Visual Studio.
+>
+>**R1 2021 SP1 (version 2021.1.204)** is the latest version where the installer handles **VS 2010**.
 
 * Installs/adds all Telerik WinForms controls in the toolbox of Visual Studio
 
@@ -33,8 +33,6 @@ The Telerik WinForms setup performs the following actions during the installatio
             
 
 * Installs Telerik UI for WinForms Examples
-
-* Installs Telerik UI for WinForms Coded UI support for Visual Studio 2010 and 2012
 
 You can download the setup from your account (including older versions): [Download product files]({%slug winforms/installation-deployment-and-distribution/download-product-files%})
 
@@ -67,9 +65,3 @@ Please follow the steps below to install Telerik UI for WinForms from the .msi f
 8\. The installer will display the completion screen when the controls are installed. Select the __Launch Examples__ check box to launch the examples when the installer is closed. Click __Finish__ to complete the installation. 
 
 ![Telerik UI for WinForms installer completion screen with the Launch Examples option](images/installation-deployment-and-distribution-installing-on-your-computer005.png)
-
-
-
-
-
-

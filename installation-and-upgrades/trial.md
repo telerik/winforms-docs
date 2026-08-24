@@ -5,7 +5,7 @@ description: Learn about the Trial license limitations and features for Telerik 
 slug: winforms/installation-deployment-and-distribution/trial
 tags: trial, license, evaluation
 published: True
-position: 7
+position: 12
 ---
 
 # Trial License

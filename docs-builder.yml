@@ -1700,6 +1700,27 @@ meta:
   installation-and-upgrades:
     title: Installation and Upgrades
     position: 5
+  installation-and-upgrades/system-requirements:
+    title: System Requirements
+    position: 0
+  installation-and-upgrades/installation:
+    title: Installation
+    position: 1
+  installation-and-upgrades/install-using-nuget:
+    title: Install using NuGet Packages
+    position: 2
+  installation-and-upgrades/installing-on-your-computer:
+    title: Install using MSI
+    position: 3
+  installation-and-upgrades/installing-from-progress-control-panel:
+    title: Install from Progress Control Panel
+    position: 4
+  installation-and-upgrades/telerik-cli:
+    title: Telerik CLI
+    position: 5
+  installation-and-upgrades/download-product-files:
+    title: Download Product Files
+    position: 6
   ai-coding-assistant/converter:
     title: Telerik Converter
     position: 4
@@ -2328,7 +2349,11 @@ redirects:
     type: Permanent
 -
     from: "^/devtools/winforms/installation-deployment-and-distribution/install-using-nuget$"
-    to: "/devtools/winforms/visual-studio-integration/install-using-nuget"
+    to: "/devtools/winforms/installation-and-upgrades/install-using-nuget"
+    type: Permanent
+-
+    from: "^/devtools/winforms/visual-studio-integration/install-using-nuget$"
+    to: "/devtools/winforms/installation-and-upgrades/install-using-nuget"
     type: Permanent
 -
     from: "^/devtools/winforms/installation-deployment-and-distribution/application-deployment$"

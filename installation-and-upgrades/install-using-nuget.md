@@ -5,7 +5,7 @@ description: This article describes how you can install the WinForms suite using
 slug: winforms/nuget
 tags: install,nuget
 published: True
-position: 9
+position: 2
 ---
 
 # Install using NuGet Packages

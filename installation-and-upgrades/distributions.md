@@ -5,7 +5,7 @@ description: Distributions
 slug: winforms/installation-deployment-and-distribution/distributions
 tags: distributions,versions
 published: True
-position: 1
+position: 7
 ---
 
 # Distributions

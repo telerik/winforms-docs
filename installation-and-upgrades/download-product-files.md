@@ -5,7 +5,7 @@ description: Learn how to download the source code, pdf documentation, different
 slug: winforms/installation-deployment-and-distribution/download-product-files
 tags: download,product,files
 published: True
-position: 4
+position: 6
 previous_url: installation-deployment-and-distribution-download-product-files
 ---
 

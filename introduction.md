@@ -23,7 +23,7 @@ New to Telerik UI for WinForms? Try Telerik UI for WinForms controls and librari
 
 <CtaPanelIntroduction></CtaPanelIntroduction>
 
-Follow these steps to go from a fresh install to a running application:  [Telerik UI for WinForms Quick Start Tutorial](%slug winforms/getting-started/first-steps%)
+Follow these steps to go from a fresh install to a running application: [Telerik UI for WinForms Quick Start Tutorial]({%slug winforms/getting-started/first-steps%})
 
 Explore the [Control Catalog](#list-of-controls) below to find the components that best fit your scenario.
 
