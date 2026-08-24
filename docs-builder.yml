@@ -1639,6 +1639,7 @@ meta:
     position: 56
   analytics:
     title: Analytics
+    hideChildren: true
     position: 18
   security:
     title: Security
