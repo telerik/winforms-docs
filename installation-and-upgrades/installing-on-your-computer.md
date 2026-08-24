@@ -65,3 +65,17 @@ Please follow the steps below to install Telerik UI for WinForms from the .msi f
 8\. The installer will display the completion screen when the controls are installed. Select the __Launch Examples__ check box to launch the examples when the installer is closed. Click __Finish__ to complete the installation. 
 
 ![Telerik UI for WinForms installer completion screen with the Launch Examples option](images/installation-deployment-and-distribution-installing-on-your-computer005.png)
+
+## Assembly Version 
+
+After installing the Telerik UI for WinForms suite, you will find different assemblies versions within the installation folder (there are separate sub folders available for each .Net version). For example, the installation folder will contain the following assembly versions when the 2026.3.812.48 Telerik version is installed:
+
+![Telerik UI for WinForms installation folder showing assemblies for different .NET versions](images/assemblies-version001.png)
+
+>note Each Bin folder contains all Telerik assemblies built against the respective .Net version. 
+
+### Check assembly version
+
+To check the assembly version, right-click with mouse on the .dll file and select *Properties*. Then, navigate to the *Details tab*, where you will find the assembly version information:
+
+![Windows file Properties Details tab showing a Telerik UI for WinForms assembly version](images/assemblies-version002.png)
