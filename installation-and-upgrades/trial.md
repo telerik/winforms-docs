@@ -60,5 +60,5 @@ To remove all trial limitations and enable production deployment, purchase and u
 
 ## See Also
 
-* [Assemblies Version]({%slug assemblies-version%})
+* [Assembly Version]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}#assembly-version)
 * [Available NuGet Packages]({%slug winforms-available-nugets%})

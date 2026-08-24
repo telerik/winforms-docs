@@ -41,5 +41,5 @@ This article dives into UI controls, focusing on their compatibility with Micros
 
 ## See Also
 
-* [Assemblies Version]({%slug assemblies-version%})
+* [Assembly Version]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}#assembly-version)
 * [Available NuGet Packages]({%slug winforms-available-nugets%})
