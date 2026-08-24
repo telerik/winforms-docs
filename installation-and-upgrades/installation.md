@@ -64,4 +64,4 @@ The __recommended installation approach__ is using __Telerik CLI__ and __NuGet p
 
 * [Install Telerik UI for WinForms with the MSI installer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
 
-* [Manage Telerik UI for WinForms through Progress Control Panel]({%slug installing-from-progress-control-panel%})
+* [Install Telerik UI for WinForms from Progress Control Panel]({%slug installing-from-progress-control-panel%})
