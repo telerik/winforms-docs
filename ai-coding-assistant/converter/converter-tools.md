@@ -6,7 +6,6 @@ slug: converter-tools
 tags: telerik,winforms,converter,mcp,mcp tools,telerik_convert_file,telerik_analyze_project,telerik_get_migration_plan,migration strategy,converter engine,roslyn,prompts
 published: True
 position: 3
-tag: preview
 ---
 
 # Telerik Converter MCP Tools Reference
