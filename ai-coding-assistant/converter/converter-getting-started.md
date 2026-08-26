@@ -6,7 +6,6 @@ slug: converter-getting-started
 tags: telerik,winforms,converter,migration,getting started,mcp,mcp server,convert,radgridview,radbutton,upgrade,modernize,step-by-step
 published: True
 position: 2
-tag: preview
 ---
 
 # Getting Started with the Telerik WinForms Converter

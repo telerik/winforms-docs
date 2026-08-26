@@ -142,6 +142,9 @@ meta:
   telerik-presentation-framework/events:
     title: Events
     position: 6
+  telerik-presentation-framework/developer-focused-examples:
+    title: Developer Focused Examples
+    position: 25
   telerik-presentation-framework/layout:
     title: Layout
     position: 5
@@ -1634,29 +1637,9 @@ meta:
   controls/barcodeview:
     title: BarcodeView
     position: 56
-  cloud-integration/google-cloud:
-    title: Google Cloud
-    position: 2
-  cloud-integration/azure/cognitive-services:
-    title: Cognitive Services
-    position: 5
-  cloud-integration/azure/connect-to-data-in-the-cloud:
-    title: Connect to Data in the Cloud
-    position: 2
-  cloud-integration/azure:
-    title: Azure
-    position: 1
-  cloud-integration/aws/connect-to-data-in-the-cloud:
-    title: Connect to Data in the Cloud
-    position: 2
-  cloud-integration/aws:
-    title: Amanzon Web Services (AWS)
-    position: 3
-  cloud-integration:
-    title: Cloud Integration
-    position: 19
   analytics:
     title: Analytics
+    hideChildren: true
     position: 18
   security:
     title: Security
@@ -1676,6 +1659,9 @@ meta:
   styling-and-appearance:
     title: Styling and Appearance
     position: 11
+  telerik-presentation-framework/section-508-compliance:
+    title: Section 508 Compliance
+    position: 24
   telerik-presentation-framework:
     title: Telerik Presentation Framework
     position: 10
@@ -1694,6 +1680,27 @@ meta:
   installation-and-upgrades:
     title: Installation and Upgrades
     position: 5
+  installation-and-upgrades/system-requirements:
+    title: System Requirements
+    position: 0
+  installation-and-upgrades/installation:
+    title: Installation
+    position: 1
+  installation-and-upgrades/install-using-nuget:
+    title: Install using NuGet Packages
+    position: 2
+  installation-and-upgrades/installing-on-your-computer:
+    title: Install using MSI
+    position: 3
+  installation-and-upgrades/installing-from-progress-control-panel:
+    title: Install from Progress Control Panel
+    position: 4
+  installation-and-upgrades/telerik-cli:
+    title: Telerik CLI
+    position: 5
+  installation-and-upgrades/download-product-files:
+    title: Download Product Files
+    position: 6
   ai-coding-assistant/converter:
     title: Telerik Converter
     position: 4
@@ -1709,9 +1716,15 @@ meta:
   getting-started:
     title: Getting Started
     position: 2
-  winformslab:
-    title: WinForms Labs
+  getting-started/first-steps:
+    title: First Steps
+    position: 0
+  getting-started/video-onboarding:
+    title: Video Onboarding
     position: 1
+  getting-started/explore-control-features:
+    title: Explore Tools and Features
+    position: 2
 
 redirects: 
 -
@@ -2316,7 +2329,11 @@ redirects:
     type: Permanent
 -
     from: "^/devtools/winforms/installation-deployment-and-distribution/install-using-nuget$"
-    to: "/devtools/winforms/visual-studio-integration/install-using-nuget"
+    to: "/devtools/winforms/installation-and-upgrades/install-using-nuget"
+    type: Permanent
+-
+    from: "^/devtools/winforms/visual-studio-integration/install-using-nuget$"
+    to: "/devtools/winforms/installation-and-upgrades/install-using-nuget"
     type: Permanent
 -
     from: "^/devtools/winforms/installation-deployment-and-distribution/application-deployment$"

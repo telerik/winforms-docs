@@ -1,14 +1,14 @@
 ---
-title: Installing and Removing from Progress Control Panel
-page_title: Installing and Removing from Progress Control Panel
+title: Install from Progress Control Panel
+page_title: Install from Progress Control Panel
 description: Installing and Removing from Progress Control Panel
 slug: installing-from-progress-control-panel
 tags: installing, control, panel
 published: True
-position: 3 
+position: 4
 ---
 
-# Installing from Progress Control Panel
+# Install from Progress Control Panel
 
 The Telerik UI for WinForms controls can also be installed via the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction).
 

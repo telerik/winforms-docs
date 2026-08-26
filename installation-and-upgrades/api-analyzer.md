@@ -4,8 +4,8 @@ page_title: Upgrade API Analyzer tool - Telerik UI for WinForms
 description: This article show how you can use the  Upgrade API Analyzer tool in order to easily upgrade your application.
 slug: upgrade-api-analyzer
 tags: api, analyzer, upgrade
-published: True
-position: 11
+published: False
+position: 15
 ---
 
 # Telerik Upgrade API Analyzer 

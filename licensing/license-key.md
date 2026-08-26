@@ -58,7 +58,7 @@ To install your Telerik license key by using the [Progress Control Panel](https:
 
 ### Installing a License Key with Telerik CLI
 
-Use [Telerik CLI]({%slug winforms/getting-started/telerik-cli%}#get-license-key) when you prefer a command-line workflow or want to download the license key without opening Visual Studio. The `telerik license get-key` command downloads the latest `telerik-license.txt` file to `%AppData%\Telerik` for the current user account.
+Use [Telerik CLI]({%slug telerik-cli%}#get-license-key) when you prefer a command-line workflow or want to download the license key without opening Visual Studio. The `telerik license get-key` command downloads the latest `telerik-license.txt` file to `%AppData%\Telerik` for the current user account.
 
 ## Manual License Key Installation
 
