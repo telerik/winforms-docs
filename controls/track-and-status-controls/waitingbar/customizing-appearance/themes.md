@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadWaitingBar
 description: RadWaitingBar is designed to indicate that a long-running operation with indeterminate  length is undergoing.
+components: ["waitingbar"]
 slug: winforms/track-and-status-controls/waitingbar/accessing-and-customizing-elements/themes
 tags: button, themes
 published: True

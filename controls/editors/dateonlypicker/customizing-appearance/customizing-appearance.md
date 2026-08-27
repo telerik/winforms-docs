@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - RadDateOnlyPicker
 description: This article shows how you can change the controls elements styles.
+components: ["editors"]
 slug: editors-dateonlypicker-customizing-appearance
 tags: datetimepicker
 published: True

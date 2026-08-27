@@ -2,6 +2,7 @@
 title: Touch Support
 page_title: Touch Support - WinForms TreeView Control
 description: WinForms TreeView provides touch support for scrolling and dragging out of the box.
+components: ["treeview"]
 slug: winforms/treeview/touch-support
 tags: touch,support
 published: True

@@ -2,6 +2,7 @@
 title: Search
 page_title: Search - WinForms Map Control
 description: WinForms Map allows you to implement search functionality, that will let the user search for a specific location on the map.
+components: ["map"]
 slug: winforms/map/providers/search
 tags: map, providers, search
 published: True

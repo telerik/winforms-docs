@@ -2,6 +2,7 @@
 title: Navigation Controls
 page_title: Navigation Controls - RadMap
 description: RadMap provides incorporates a navigation tool allowing the end to user to easily zoom, pan and change the current view. 
+components: ["map"]
 slug: winforms/map/features/navigation-controls
 tags: map, features, navigation controls
 published: True

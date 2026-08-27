@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering - WinForms FileDialogs
 description: Learn how to specify a filter for the RadOpenFileDialog and RadSaveFileDialog dialogs in order to indicate to the user which types of files should be opened or saved. 
+components: ["filedialogs"]
 slug: winforms/file-dialogs/features/filtering
 tags: filedialogs, features, error
 published: True

@@ -2,6 +2,7 @@
 title: Tooltips
 page_title: Tooltips RadSparkline
 description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+components: ["sparkline"]
 slug: radsparkline-tooltips
 tags: sparkline, tooltips
 published: True

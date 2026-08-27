@@ -2,6 +2,7 @@
 title: Overview
 page_title: WinForms RadDock Overview - Dock Control
 description: Explore WinForms RadDock features for docking tool windows and documents, saving layouts, customizing behavior, and building flexible workspaces.
+components: ["dock"]
 slug: winforms/dock
 tags: dock
 published: True

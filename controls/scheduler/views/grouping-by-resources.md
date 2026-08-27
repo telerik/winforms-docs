@@ -2,6 +2,7 @@
 title: Grouping by Resources
 page_title: Grouping by Resources - WinForms Scheduler Control
 description: WinForms Scheduler control allows you to define custom resources that can be assigned to the appointments.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/views/grouping-by-resources
 tags: grouping,by,resources
 published: True

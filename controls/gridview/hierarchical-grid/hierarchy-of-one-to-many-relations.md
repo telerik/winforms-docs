@@ -2,6 +2,7 @@
 title: Hierarchy of one to many relations
 page_title: Hierarchy of one to many relations - WinForms GridView Control
 description: Bind WinForms GridView to a hierarchy containing one to many relations.
+components: ["gridview"]
 slug: winforms/gridview/hierarchical-grid/hierarchy-of-one-to-many-relations
 tags: hierarchy,of,one,to,many,relations
 published: True

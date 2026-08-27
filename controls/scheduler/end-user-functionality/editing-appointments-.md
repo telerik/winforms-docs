@@ -2,6 +2,7 @@
 title: Editing Appointments 
 page_title: Editing Appointments  - RadScheduler
 description: Appointments can be edited by the end user with the EditAppointmentDialog or using an in-place editor.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/end-user-functionality/editing-appointments-
 tags: editing,appointments,
 published: True

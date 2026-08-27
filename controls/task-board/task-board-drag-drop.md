@@ -2,6 +2,7 @@
 title: Drag Drop
 page_title: Drag Drop - Task Board
 description: Move the task cards between the different columns in the WinForms TaskBoard (Kanban) control.
+components: ["taskboard"]
 slug: task-board-drag-drop
 tags: task board, kanban, getting, started
 published: True

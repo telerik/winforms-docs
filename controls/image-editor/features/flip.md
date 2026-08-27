@@ -2,6 +2,7 @@
 title: Flip
 page_title: Flip
 description: Flip
+components: ["imageeditor"]
 slug: radimageeditor-flip
 tags: image, editor, flip 
 published: True

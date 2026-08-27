@@ -2,6 +2,7 @@
 title: Today Indicator
 page_title: Today Indicator - WinForms GanttView Control
 description: GanttView's today indicator represents the current date and time in the graphical view.
+components: ["ganttview"]
 slug: winforms/ganttview-/today-indicator
 tags: today,indicator
 published: True

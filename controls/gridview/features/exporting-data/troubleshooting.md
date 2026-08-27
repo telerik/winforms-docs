@@ -2,6 +2,7 @@
 title: Troubleshooting
 page_title: Troubleshooting - WinForms GridView Control
 description: Get familiar with the common issues during the export process in WinForms GridView and find solutions.
+components: ["gridview"]
 slug: winforms/gridview/exporting-data/troubleshooting
 tags: troubleshooting
 published: True

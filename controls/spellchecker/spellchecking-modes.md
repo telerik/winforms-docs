@@ -2,6 +2,7 @@
 title: Spellchecking Modes
 page_title: Spellchecking Modes - WinForms SpellChecker
 description: WinForms SpellChecker allows you to choose between two spell-checking modes - Check Word By Word and Check All Words At Once. Learn what is the difference. 
+components: ["spellchecker"]
 slug: winforms/spellchecker/spellchecking-modes
 tags: spellchecking,modes
 published: True

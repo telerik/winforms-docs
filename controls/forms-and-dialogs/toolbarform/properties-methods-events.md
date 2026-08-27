@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadToolbarForm
 description: Learn the most important of the public API that the WinForms RadToolbarForm offers.
+components: ["forms,dialogs,templates"]
 slug: radtoolbarform-properties
 tags: radtoolbarform
 published: True

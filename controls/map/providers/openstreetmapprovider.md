@@ -2,6 +2,7 @@
 title: OpenStreetMapProvider
 page_title: OpenStreetMapProvider - WinForms Map Control
 description: WinForms Map can visualize data from the OpenStreetMaps.
+components: ["map"]
 slug: winforms/map/providers/openstreetmapprovider
 tags: map, providers
 published: True

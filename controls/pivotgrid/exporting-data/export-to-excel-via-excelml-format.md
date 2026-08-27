@@ -2,6 +2,7 @@
 title: Export to Excel via ExcelML Format
 page_title: Export to Excel via ExcelML Format - RadPivotGrid
 description: This method offers exporting functionality and does not require MS Office installation on users' machines. 
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/exporting-data/export-to-excel
 tags: export,to,excel
 published: True

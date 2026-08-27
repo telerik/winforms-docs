@@ -2,6 +2,7 @@
 title: Holidays
 page_title: Holidays - RadScheduler
 description: Telerik RadScheduler supports loading holidays from a .hol file.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/holidays
 tags: scheduler
 published: True

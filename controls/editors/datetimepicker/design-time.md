@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms DateTimePicker Control
 description: Learn what are the design time options of the WinForms DateTimePicker.
+components: ["editors"]
 slug: winforms/editors/datetimepicker/designtime
 tags: datetimepicker
 published: True

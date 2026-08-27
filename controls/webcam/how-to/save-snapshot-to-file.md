@@ -2,6 +2,7 @@
 title: Save Snapshot to File
 page_title: Save Snapshot to File - RadWebCam
 description: This article shows how to take and save a snapshot to a file.    
+components: ["webcam"]
 slug: webcam-save-snapshot-to-file
 tags: webcam
 published: True

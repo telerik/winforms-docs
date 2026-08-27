@@ -2,6 +2,7 @@
 title: Accessing and Iterating through Columns
 page_title: Accessing and Iterating through Columns - WinForms GridView Control
 description: Learn how to access and iterate through the Columns in the WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/columns/accessing-and-iterating-through-columns
 tags: accessing,and,iterating,through,columns
 published: True

@@ -2,6 +2,7 @@
 title: Header Styling Options
 page_title: Header Styling Options - WinForms GroupBox Control
 description: Learn what are the header styling options supported by WinForms GroupBox.
+components: ["groupbox"]
 slug: winforms/panels-and-labels/groupbox/styling-options
 tags: header,styling,options
 published: True

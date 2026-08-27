@@ -2,6 +2,7 @@
 title: Customize Layout Mode
 page_title: Customize Layout Mode - RadDataLayout
 description: This article shows how one can use the layout customization dialog.
+components: ["datalayout"]
 slug: winforms/datalayout/customize-layout-mode
 tags: customize,layout,mode
 published: True

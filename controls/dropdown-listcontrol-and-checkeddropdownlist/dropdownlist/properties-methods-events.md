@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms DropDownList Control
 description: Get familiar with the public API that WinForms RadDropDownList offers.
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/properties-methods-events
 tags: structure
 published: True

@@ -2,6 +2,7 @@
 title: Fluent Themes Blending
 page_title: Fluent Themes Blending - UI for WinForms Tools
 description: Color blending the Fluent themes in the Visual Style Builder tool.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/fluent-themes-blending
 tags: color, blending, fluent
 published: True

@@ -2,6 +2,7 @@
 title: Toolbox
 page_title: Toolbox - WinForms Diagram Control
 description: RadDiagramToolbox introduces a set of shapes that can be dragged to a  RadDiagram.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/toolbox
 tags: toolbox
 published: True

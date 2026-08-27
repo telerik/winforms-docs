@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms TreeMap Control
 description: WinForms TreeMap is a data visualization control used to display hierarchical data as a set of nested rectangles.  
+components: ["treemap"]
 slug: winforms-treemap-overview
 tags: treemap, overview
 published: True

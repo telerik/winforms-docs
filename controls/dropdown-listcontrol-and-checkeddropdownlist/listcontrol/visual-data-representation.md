@@ -2,6 +2,7 @@
 title: Visual Data Representation
 page_title: Visual Data Representation - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/visual-data-representation
 tags: visual,data,representation
 published: True

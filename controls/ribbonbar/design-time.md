@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms RibbonBar Control
 description: WinForms RibbonBar has a very well developed Visual Studio designer allowing adding, removing and editing of its tabs, groups and item elements.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/design-time
 tags: radribbonbar, design-time, smart tag
 published: True

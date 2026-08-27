@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadPanel
 description: UI Automation Support (UI Accessibility) for RadPanel.   
+components: ["panel"]
 slug: panel-ui-automation
 tags: panel,ui,automation
 published: True

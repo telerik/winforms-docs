@@ -2,6 +2,7 @@
 title: Adding Other Controls to the RibbonBar
 page_title: Adding Other Controls to the RibbonBar - RibbonBar
 description: Variety of different controls can be added to ribbon groups and button groups within a Telerik RadRibbonBar.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/getting-started/adding-other-controls-to-the-ribbonbar
 tags: adding,other,controls,to,the,ribbonbar
 published: True

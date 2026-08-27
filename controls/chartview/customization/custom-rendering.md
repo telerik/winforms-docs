@@ -2,6 +2,7 @@
 title: Custom Rendering
 page_title: Custom rendering - WinForms ChartView Control
 description: WinForms ChartView's custom rendering allows customization of the appearance of each data point in a series depending on its value.
+components: ["chartview"]
 slug: winforms/chartview-/customization/custom-rendering
 tags: custom,rendering
 published: True

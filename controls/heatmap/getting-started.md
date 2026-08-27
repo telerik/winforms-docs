@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms HeatMap Control
 description: Get familiar with the WinForms HeatMap.  
+components: ["heatmap"]
 slug: heatmap-getting-started
 tags: heatmap, getting, started
 published: True

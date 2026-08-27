@@ -2,6 +2,7 @@
 title: Tooltips
 page_title: Tooltips - UI for WinForms Documentation
 description: RadSplitButton provides a menu-like interface contained within a button that can be placed anywhere on a form.
+components: ["buttons"]
 slug: winforms/buttons/splitbutton/tooltips
 tags: splitbutton
 published: True

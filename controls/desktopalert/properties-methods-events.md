@@ -2,6 +2,7 @@
 title: Properties, Methods, Events
 page_title: Properties, Methods, Events - WinForms DesktopAlert
 description: Get familiar with the public API of WinForms RadDesktopAlert. 
+components: ["desktopalert"]
 slug: winforms/desktopalert/properties,methods,events
 tags: desktopalert, structure
 published: True

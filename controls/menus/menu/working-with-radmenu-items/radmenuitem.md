@@ -2,6 +2,7 @@
 title: RadMenuItem
 page_title: RadMenuItem - WinForms Menu Control
 description: Learn what menu items are supported in the WinForms Menu.
+components: ["menu"]
 slug: winforms/menus/menu/working-with-radmenu-items/radmenuitem
 tags: radmenuitem
 published: True

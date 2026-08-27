@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadSplitContainer
 description: RadSplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
+components: ["splitcontainer"]
 slug: winforms/splitcontainer/themes
 tags: splitcontainer
 published: True

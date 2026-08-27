@@ -2,6 +2,7 @@
 title: Enabling Drag and Drop
 page_title: Enabling Drag and Drop - WinForms TreeView Control
 description: Learn how to use the built-in drag and drop functionality or the standard OLE drag drop in WinForms TreeView. 
+components: ["treeview"]
 slug: winforms/treeview/drag-and-drop/enabling-drag-and-drop
 tags: enabling,drag,and,drop
 published: True

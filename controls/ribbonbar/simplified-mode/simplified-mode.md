@@ -2,6 +2,7 @@
 title: Simplified Mode
 page_title: Simplified Mode - RadRibbonBar
 description: Explore the Simplified RibbonBar mode in Telerik UI for WinForms to deliver a cleaner interface with essential commands for users.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/simplified-mode
 tags: radribbonbar. simplified, mode
 published: True

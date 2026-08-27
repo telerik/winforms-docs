@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadWebCam
 description: RadWebCam allows localizing the settings dialog.
+components: ["webcam"]
 slug: webcam-localizing
 tags: webcam
 published: True

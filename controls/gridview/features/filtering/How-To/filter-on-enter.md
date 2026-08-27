@@ -2,6 +2,7 @@
 title: Filter on Enter
 page_title: Filter on Enter - RadGridView
 description: This article shows how you can filter when Enter is presses instead on every keystroke.
+components: ["gridview"]
 slug: grid-filter-on-enter
 tags: basic,filtering
 published: True

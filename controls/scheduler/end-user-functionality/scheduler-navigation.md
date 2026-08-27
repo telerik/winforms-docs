@@ -2,6 +2,7 @@
 title: Scheduler Navigation
 page_title: Scheduler Navigation - WinForms Scheduler Control
 description: WinForms SchedulerNavigator control allows quick switching between the available scheduler views. 
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/end-user-functionality/scheduler-navigation
 tags: scheduler,navigation
 published: True

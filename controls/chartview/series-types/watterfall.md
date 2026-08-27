@@ -2,6 +2,7 @@
 title: Waterfall
 page_title: Watterfall - ChartView
 description: A waterfall chart type (a.k.a. flying bricks, bridge, etc.) shows the cumulative effect of positive or negative values on the starting point
+components: ["chartview"]
 slug: winforms/chartview-/series-types/watterfall
 tags: watterfall
 published: True

@@ -2,6 +2,7 @@
 title: Line Numbering
 page_title: Line Numbering - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/line-numbering
 tags: linenumbering,line,numbering,lines
 published: True

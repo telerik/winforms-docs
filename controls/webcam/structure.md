@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms WebCam Control
 description: Get familiar with the inner structure and organization of the elements which build the WinForms WebCam control.   
+components: ["webcam"]
 slug: webcam-structure
 tags: webcam
 published: True

@@ -2,6 +2,7 @@
 title: Default Layouts
 page_title: Default Layouts - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys. 
+components: ["virtualkeyboard"]
 slug: virtual-keyboard-default-layouts
 tags: virtual, keyboard
 published: True

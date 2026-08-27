@@ -2,6 +2,7 @@
 title: RadPropertyStore - Adding Custom Properties
 page_title: RadPropertyStore - Adding Custom Properties - RadPropertyGrid
 description: The RadPropertyStore allow RadPropertyGrid to display and edit custom properties.
+components: ["propertygrid"]
 slug: winforms/propertygrid/populating-with-data/radpropertystore-adding-custom-properties
 tags: radpropertystore,adding,custom,properties
 published: True

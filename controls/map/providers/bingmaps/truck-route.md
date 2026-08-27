@@ -2,6 +2,7 @@
 title: Truck Route
 page_title: Truck Route - WinForms Map Control
 description: WinForms Map supports the Bing Maps Truck Routing API which provides travel routes which take truck attributes such as size, weight and type of cargo.
+components: ["map"]
 slug: map-bing-truck-route
 tags: map, providers
 published: True

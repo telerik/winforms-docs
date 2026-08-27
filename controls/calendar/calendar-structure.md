@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Calendar Control
 description: Learn more about the WinForms Calendar's structure and its elements hierarchy.
+components: ["calendar"]
 slug: winforms/calendar/calendar-structure
 tags: calendar,structure
 published: True

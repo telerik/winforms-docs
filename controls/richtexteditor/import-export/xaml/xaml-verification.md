@@ -2,6 +2,7 @@
 title: XAML Verification
 page_title: XAML Verification - WinForms RichTextEditor Control
 description: This article shows how the default XAML verification works. 
+components: ["richtexteditor"]
 slug: richtexteditor-xaml-verification
 tags: rictext, xaml, verification
 published: True

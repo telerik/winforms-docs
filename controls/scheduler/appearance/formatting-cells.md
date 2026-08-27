@@ -2,6 +2,7 @@
 title: Formatting Cells
 page_title: Formatting cells - RadScheduler
 description: RadScheduler uses a logical layer for storing appointments and view data, and the visual elements that represent this data are occasionally being refreshed.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appearance/formatting-cells
 tags: formatting,cells
 published: True

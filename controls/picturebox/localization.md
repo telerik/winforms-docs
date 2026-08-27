@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Localization
+components: ["picturebox"]
 slug: radpicturebox-localization
 tags: localization
 published: True

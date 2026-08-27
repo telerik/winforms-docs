@@ -2,6 +2,7 @@
 title: Telerik Converter MCP Tools
 page_title: Telerik UI for WinForms Converter - MCP Tools, Prompts, and Converter Engine Reference
 description: Reference documentation for the Telerik WinForms Converter MCP tools, pre-built prompts, converter engine internals, migration strategy, and MCP resources. Covers telerik_convert_file, telerik_analyze_project, telerik_get_migration_plan parameters and behavior.
+components: ["general"]
 slug: converter-tools
 tags: telerik,winforms,converter,mcp,mcp tools,telerik_convert_file,telerik_analyze_project,telerik_get_migration_plan,migration strategy,converter engine,roslyn,prompts
 published: True

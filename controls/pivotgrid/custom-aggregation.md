@@ -2,6 +2,7 @@
 title: Custom Aggregation
 page_title: Custom Aggregation - RadPivotGrid
 description: RadPivotGrid is designed to aggregate data and it provides an API for assigning special aggregation functions performing custom calculations.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/custom-aggregation
 tags: custom, aggregation
 published: True

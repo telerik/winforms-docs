@@ -2,6 +2,7 @@
 title: Scroll Modes
 page_title: Scroll Modes - WinForms RadGridView Control
 description: Learn about the different scroll modes in WinForms RadGridView.
+components: ["gridview"]
 slug: winforms-gridview-scrolling-scroll-modes
 tags: scrolling
 published: True

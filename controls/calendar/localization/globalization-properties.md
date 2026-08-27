@@ -2,6 +2,7 @@
 title: Globalization Properties
 page_title: Globalization Properties - WinForms Calendar Control
 description: Learn how to specify the culture in Winforms Calendar.
+components: ["calendar"]
 slug: winforms/calendar/localization/globalization-properties
 tags: globalization,properties
 published: True

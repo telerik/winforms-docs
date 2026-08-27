@@ -2,6 +2,7 @@
 title: Customizing the Key Tips
 page_title: Customizing the Key Tips - RadRibbonBar
 description: Quick Access Toolbar is an area of RadRibbonBar above the tabs.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/programming-radribbonbar/customizing-the-keytips
 tags: customizing,the,key, tips
 published: True

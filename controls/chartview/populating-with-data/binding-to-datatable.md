@@ -2,6 +2,7 @@
 title: Binding to DataTable
 page_title: Binding to DataTable - WinForms ChartView Control
 description: Learn how to bind WinForms ChartView to a DataTable.
+components: ["chartview"]
 slug: winforms/chartview-/populating-with-data/binding-to-datatable
 tags: binding,to,datatable
 published: True

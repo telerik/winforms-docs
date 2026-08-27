@@ -2,6 +2,7 @@
 title: Events
 page_title: WinForms SpeechToTextButton Documentation - Events
 description: Learn different Events of the Telerik SpeechToTextButton for WinForms.
+components: ["speechtotextbutton"]
 position: 10
 tags: speech to text, button, events, winforms
 slug: speechtotextbutton-events

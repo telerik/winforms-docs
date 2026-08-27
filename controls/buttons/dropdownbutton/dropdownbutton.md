@@ -2,6 +2,7 @@
 title: Overview
 page_title: DropDownButton - WinForms DropDownButton Control
 description: WinForms DropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
+components: ["buttons"]
 slug: winforms/buttons/dropdownbutton
 tags: dropdownbutton
 published: True

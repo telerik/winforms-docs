@@ -2,6 +2,7 @@
 title: Performance
 page_title: Performance - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/performance
 tags: performance
 published: True

@@ -2,6 +2,7 @@
 title: Shapes
 page_title: Shapes - WinForms Callout Control
 description: WinForms Callout allows you to define custom shapes and thus construct a custom defined balloon.   
+components: ["callout"]
 slug: callout-shapes
 tags: callout
 published: True

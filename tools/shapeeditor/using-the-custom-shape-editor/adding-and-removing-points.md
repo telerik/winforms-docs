@@ -2,6 +2,7 @@
 title: Adding and Removing Points
 page_title: Adding and Removing Points - UI for WinForms Tools
 description: This article shows how one can Add and Remove points in RadShapeEditor.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/adding-and-removing-points
 tags: adding,and,removing,points
 published: True

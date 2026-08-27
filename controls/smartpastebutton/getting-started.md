@@ -2,6 +2,7 @@
 title: Getting Started
 meta_title: WinForms SmartPasteButton Documentation - Getting Started
 description: Learn how to get started with the Telerik UI for WinForms SmartPasteButton, an AI service to extract clipboard content and populate form or fields.
+components: ["smartpastebutton"]
 tags: smart paste, ai, clipboard, button, winforms, .net
 published: True
 position: 1

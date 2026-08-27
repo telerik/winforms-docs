@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadNavigationView
 description: Get familiar with the public API that the WinForms NavigationView offers.   
+components: ["navigationview"]
 slug: navigationview-properties-methods-events
 tags: navigationview, properties, methods, events, api
 published: True

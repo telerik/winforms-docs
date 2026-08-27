@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - UI for WinForms Documentation
 description: RadToggleSwitch is a control designed to represent two states- e.g. true/false, On/Off, etc.
+components: ["buttons"]
 
 slug: winforms/buttons/toggleswitch/structure
 tags: structure

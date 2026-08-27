@@ -2,6 +2,7 @@
 title: Using custom editors
 page_title: Using custom editors - WinForms GridView Control
 description: WinForms GridView allows changing the default editor with a custom one. Learn how to change it with a track bar.
+components: ["gridview"]
 slug: winforms/gridview/editors/using-custom-editors
 tags: using,custom,editors
 published: True

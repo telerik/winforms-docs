@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms TextBox Control
 description: Get familiar with the design time options that the WinForms TextBox offers.
+components: ["editors"]
 slug: winforms/editors/textbox/designtime
 tags: textbox
 published: True

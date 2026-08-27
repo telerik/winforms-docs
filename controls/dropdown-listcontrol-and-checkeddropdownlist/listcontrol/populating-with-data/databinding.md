@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - WinForms ListControl
 description: Data binding provides a way to bind the display of data in a WinForms ListControl to a data source.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/data-binding
 tags: databinding
 published: True

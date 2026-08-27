@@ -2,6 +2,7 @@
 title: Working with Exceptions
 page_title: Working with Exceptions - WinForms Scheduler Control
 description: An exception, in WinForms Scheduler terms, is an appointment instance that does not fully conform to the rule that created it. Learn how to add such exceptions.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/data-binding/working-with-exceptions
 tags: working,with,exceptions
 published: True

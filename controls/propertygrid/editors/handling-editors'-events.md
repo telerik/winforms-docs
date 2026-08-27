@@ -2,6 +2,7 @@
 title: Handling Editors' Events
 page_title: Handling editors' events - RadPropertyGrid
 description: In some cases you may need to perform a specific operation depending on the user input in the editor while the editor is still opened.
+components: ["propertygrid"]
 slug: winforms/propertygrid/editors/handling-editors-events
 tags: handling,editors',events
 published: True

@@ -2,6 +2,7 @@
 title: Resizing
 page_title: Resizing - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram-(beta)/items-manipulation/resizing
 tags: resizing
 published: True

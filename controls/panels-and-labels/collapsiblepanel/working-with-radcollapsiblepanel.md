@@ -2,6 +2,7 @@
 title: Working with RadCollapsiblePanel
 page_title: Working with RadCollapsiblePanel - WinForms CollapsiblePanel Control
 description: This article demonstrates how RadCollapsiblePanel can be manipulated via its API.
+components: ["collapsiblepanel"]
 slug: winforms/panels-and-labels/collapsiblepanel/methods-and-properties
 tags: methods,and,properties
 published: True

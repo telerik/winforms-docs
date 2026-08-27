@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - Browse Editor
 description: RadBrowseEditor uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
+components: ["editors"]
 slug: winforms/editors/browseeditor/structure
 tags: radbrowseeditor, structure
 published: True

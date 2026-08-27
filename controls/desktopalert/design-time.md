@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms DesktopAlert
 description: WinForms DesktopAlert component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. 
+components: ["desktopalert"]
 slug: winforms/desktopalert/designtime
 tags: desktopalert, designtime
 published: True

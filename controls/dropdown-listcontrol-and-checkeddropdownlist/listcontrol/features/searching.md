@@ -2,6 +2,7 @@
 title: Searching
 page_title: Searching - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features/searching
 tags: listcontrol, searching
 published: True

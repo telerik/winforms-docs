@@ -2,6 +2,7 @@
 title: Working with needles
 page_title: Working with needles - WinForms RadialGauge Control
 description: RadialGaugeNeedle is a scale indicator that points to a value. 
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-needles
 tags: working,with,needles
 published: True

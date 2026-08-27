@@ -2,6 +2,7 @@
 title: Binding CheckBoxes
 page_title: Binding CheckBoxes - WinForms TreeView Control
 description: WinForms TreeView supports binding the check boxes to a data field. This article shows how you can use this feature.
+components: ["treeview"]
 slug: winforms/treeview/data-binding/binding-checkboxes
 tags: data,binding,basics
 published: True

@@ -2,6 +2,7 @@
 title: RadPageViewDragDropService
 page_title: RadPageViewDragDropService - WinForms PageView Control
 description: WinForms PageView supports RadPageViewDragDropService which allows you to reorder the page items/tabs.
+components: ["pageview"]
 slug: winforms/pageview/radpageviewdragdropservice
 tags: pageview
 published: True

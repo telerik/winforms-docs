@@ -2,6 +2,7 @@
 title: GridViewSelectColumn
 page_title: GridViewSelectColumn - WinForms GridView Control
 description: WinForms GridViewSelectColumn is used to mark whether a row/cell is selected. 
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewselectcolumn
 tags: gridviewselectcolumn
 published: True

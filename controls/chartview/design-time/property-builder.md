@@ -2,6 +2,7 @@
 title: Property Builder
 page_title: Property Builder - WinForms ChartView Control
 description: WinForms ChartView's Property Builder provides advanced editing and customization options in the Visual Studio designer 
+components: ["chartview"]
 slug: winforms/chartview/design-time/property-builder
 tags: property,builder
 published: True

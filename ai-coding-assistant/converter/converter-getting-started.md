@@ -2,6 +2,7 @@
 title: Getting Started with the Telerik Converter
 page_title: Getting Started with the Telerik UI for WinForms Converter - Step-by-Step Migration Guide
 description: Learn how to migrate a Microsoft WinForms application to Telerik UI for WinForms using the AI-powered Converter tool in the MCP Server. Covers prerequisites, project setup, running the migration, and verifying results.
+components: ["general"]
 slug: converter-getting-started
 tags: telerik,winforms,converter,migration,getting started,mcp,mcp server,convert,radgridview,radbutton,upgrade,modernize,step-by-step
 published: True

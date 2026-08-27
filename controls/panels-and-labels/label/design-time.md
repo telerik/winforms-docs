@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms GroupBox Control
 description: Learn what are the design time capabilities of the WinForms Label control.
+components: ["label"]
 slug: winforms/panels-and-labels/label/design-time
 tags: design time, smart tag
 published: True

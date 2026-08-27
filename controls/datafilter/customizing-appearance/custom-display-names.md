@@ -2,6 +2,7 @@
 title: Custom Display Names
 page_title: Custom Display Names
 description: The names extracted from the data object can be customized in the PropertyDisplayNameNeeded event.
+components: ["datafilter"]
 slug: winforms/datafilter/customizing-appearance/custom-display-names
 tags: data, filter
 published: True

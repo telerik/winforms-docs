@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - RadApplicationMenu
 description: RadApplicationMenu is the Telerik counterpart of the application menu that displays controls used to perform actions on entire documents and forms, such as Save and Print. 
+components: ["menu"]
 slug: winforms/menus/applicationmenu/getting-started
 tags: applicationmenu
 published: True

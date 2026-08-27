@@ -2,6 +2,7 @@
 title: Hierarchical Data
 page_title: Hierarchical Data - RadVirtualGrid
 description: RadVirtualGrid can display hierarchical, master-detail data to an arbitrary number of levels.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/hierarchical-virtual-grid/hierarchical-data
 tags: virtualgrid, hierarchy
 published: True

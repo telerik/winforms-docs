@@ -2,6 +2,7 @@
 title: GridViewMultiComboBoxColumn
 page_title: GridViewMultiComboBoxColumn - WinForms GridView Control
 description: WinForms GridViewMultiComboBoxColumn has a RadMultiColumnComboBoxElement as an editor. It covers the features that the RadMultiColumnComboBox control has.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewmulticomboboxcolumn
 tags: gridviewmulticomboboxcolumn
 published: True

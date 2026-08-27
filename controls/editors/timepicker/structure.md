@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms TimePicker Control
 description: Get familiar with the structure and elements hierarchy of WinForms TimePicker.
+components: ["editors"]
 slug: winforms/editors/timepicker/structure
 tags: structure,properties,and,events
 published: True

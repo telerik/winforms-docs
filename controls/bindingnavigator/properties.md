@@ -2,6 +2,7 @@
 title: Properties  
 page_title: Properties - WinForms BindingNavigator Control
 description: Get familiar with the most important properties of WinForms BindingNavigator.
+components: ["bindingnavigator"]
 slug: winforms/bindingnavigator/properties 
 tags:  bindingnavigator, properties
 published: True 

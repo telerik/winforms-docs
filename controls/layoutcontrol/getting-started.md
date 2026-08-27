@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms LayoutControl
 description: Learn how to use RadLayoutControl. The example below shows how you can create a layout that will fill the entire form and will be resized along with it.
+components: ["layoutcontrol"]
 slug: winforms/layoutcontrol/getting-started
 tags: getting,started
 published: True

@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms ListView Control
 description: Get familiar with the internal elements structure of WinForms ListView.
+components: ["listview"]
 slug: winforms/listview/structure
 tags: listview
 published: True

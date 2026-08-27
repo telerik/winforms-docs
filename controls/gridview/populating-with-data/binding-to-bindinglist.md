@@ -2,6 +2,7 @@
 title: Binding to BindingList
 page_title: Binding to BindingList - WinForms GridView Control
 description: Learn how you can bind WinForms GridView to a BindingList. 
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/binding-to-bindinglist
 tags: binding,to,bindinglist
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms MessageBox
 description: WinForms MessageBox displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/messagebox/getting-started
 tags: getting,started
 published: True

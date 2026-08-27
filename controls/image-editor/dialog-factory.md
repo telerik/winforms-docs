@@ -2,6 +2,7 @@
 title: Dialog factory
 page_title: Dialog factory
 description: Dialog factory
+components: ["imageeditor"]
 slug: radimageeditor-dialog-factory
 tags: dialog, factory
 published: True

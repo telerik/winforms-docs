@@ -2,6 +2,7 @@
 title: Timeline Item Formatting
 page_title: Timeline Item Formatting - RadGanttView
 description: The TimelineItemFormatting event allows you to format the style and look of the items in the timeline container.
+components: ["ganttview"]
 slug: winforms/ganttview-/formatting/timeline-item-formatting
 tags: timeline,item,formatting
 published: True

@@ -2,6 +2,7 @@
 title: Repeat Table Header Row
 page_title: Repeat Table Header Row - RadRichTextEditor
 description: Header row repetition means that the header row(s) of a table will repeat at the top of each page on which the table spans.
+components: ["richtexteditor"]
 slug: radrichtextbox-features-repeat-table-header-row
 tags: table, header, row, repeat
 published: True

@@ -2,6 +2,7 @@
 title: Tooltips
 page_title: Tooltips - Task Board
 description: Assign tooltips for the inner elements inside the task cards in the WinForms TaskBoard (Kanban) control.
+components: ["taskboard"]
 slug: task-board-tooltips
 tags: task board, kanban, tooltip
 published: True

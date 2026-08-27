@@ -2,6 +2,7 @@
 title: Custom Items
 page_title: Custom Items - RadPropertyGrid
 description: RadPropertyGrid allows you to create and use your own custom value items, allowing you to add the desired editors to fit your business need.
+components: ["propertygrid"]
 slug: winforms/propertygrid/custom-items
 tags: custom,items
 published: True

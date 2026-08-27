@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms RadialGauge Control
 description: WinForms RadialGauge control is designed to display a simple value within a definite range. 
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge
 tags: radialgauge
 published: True

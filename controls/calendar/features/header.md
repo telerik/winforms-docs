@@ -2,6 +2,7 @@
 title: Header
 page_title: Header - WinForms Calendar Control 
 description: The header in WinForms Calendar contains the calendar title and the navigation buttons.
+components: ["calendar"]
 slug: winforms/calendar/customizing-appearance/header
 tags: header
 published: True

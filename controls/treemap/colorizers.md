@@ -2,6 +2,7 @@
 title: Colorizers
 page_title: Colorizers - WinForms TreeMap Control
 description: Check our Layout Strategies documentation article for the RadTreeMap WinForms control.
+components: ["treemap"]
 slug: treemap-colorizers
 tags: treemap, colorizers
 published: True

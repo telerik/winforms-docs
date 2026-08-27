@@ -2,6 +2,7 @@
 title: Supported Indicators
 page_title: Supported Indicators - UI for WinForms Documentation
 description: The article provides a brief description and a list of the important properties of each indicator supported by RadChartView
+components: ["chartview"]
 slug: winforms/chartview-/series-types/indicators/supported-indicators
 tags: supported,indicators
 published: True

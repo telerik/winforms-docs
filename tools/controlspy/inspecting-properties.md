@@ -2,6 +2,7 @@
 title: Inspecting Properties
 page_title: Inspecting Properties - RadControlSpy
 description: This article shows how you can use the RadControlSpy to inspect 
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/controlspy/inspecting-properties
 tags: inspecting,properties
 published: True

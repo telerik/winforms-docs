@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - WinForms DropDownList Control
 description: Data binding is a mechanism for automatic population of the DropDownList with items, based on the provided data structure. 
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/populating-with-data/data-binding
 tags: data,binding
 published: True

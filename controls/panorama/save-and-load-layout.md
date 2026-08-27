@@ -2,6 +2,7 @@
 title: Save and Load Layout
 page_title: Save and Load Layout - WinForms Panorama Control
 description: WinForms Panorama support Save/Load layout functionality which gives your applications the opportunity to preserve user grid settings such as tile elements order and restore them later.
+components: ["panorama"]
 slug: winforms/panorama/save-and-load-layout
 tags: save-and-load-layout
 published: True

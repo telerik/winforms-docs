@@ -2,6 +2,7 @@
 title: Context menu
 page_title: Context menu
 description: Context menu
+components: ["picturebox"]
 slug: context-menu
 tags: context-menu
 published: True

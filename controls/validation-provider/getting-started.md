@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - Validation Provider
 description: Get started with the Telerik ValidationProvider for WinForms to implement input validation and ensure data accuracy in your applications.
+components: ["validationprovider"]
 slug: validation-provider-getting-started
 tags: validation, provider
 published: True

@@ -2,6 +2,7 @@
 title: Import/Export to a Custom File
 page_title: Import/Export to a Custom File - RadScheduler
 description: The article describes how the RadScheduler appointments can be exported to a custom file.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/importing-and-exporting-appointments/import/export-to-a-custom-file
 tags: import/export,to,a,custom,file
 published: True

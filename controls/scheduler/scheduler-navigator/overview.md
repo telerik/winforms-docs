@@ -2,6 +2,7 @@
 title: Scheduler Navigator Overview
 page_title: Overview - RadScheduler
 description: RadSchedulerNavigator is a stand-alone control used for navigation in RadScheduler control. 
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/scheduler-navigator/overview
 tags: overview
 published: True

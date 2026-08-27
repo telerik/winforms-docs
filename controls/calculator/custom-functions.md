@@ -2,6 +2,7 @@
 title: Custom Functions
 page_title: Custom Functions - RadCalculator
 description: Learn how to create a custom function in the WinForms Calculator control.    
+components: ["calculator"]
 slug: calculator-custom-functions
 tags: calculator, custom, function
 published: True

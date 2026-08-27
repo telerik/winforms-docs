@@ -2,6 +2,7 @@
 title: Overview
 page_title: GridView - RadGridView
 description: RadGridView is a grid component developed on top of Telerik Presentation Framework which provides a combination of performance, extensibility, and ease of use.
+components: ["gridview"]
 slug: winforms/gridview
 tags: gridview
 published: True

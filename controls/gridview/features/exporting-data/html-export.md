@@ -2,6 +2,7 @@
 title: Export to HTML
 page_title: Export to HTML - WinForms GridView Control
 description: WinForms GridView offers excellent export performance and creates an HTML formatted file, which can be opened in a browser or MS Word.
+components: ["gridview"]
 slug: winforms/gridview/exporting-data/export-to-html
 tags: export,to,html
 published: True

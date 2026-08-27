@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - Task Board
 description: Learn how to get started with the WinForms TaskBoard (Kanban) control.
+components: ["taskboard"]
 slug: task-board-getting-started
 tags: task board, kanban, getting, started
 published: True

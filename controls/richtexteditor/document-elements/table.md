@@ -2,6 +2,7 @@
 title: Table
 page_title: Table - WinForms RichTextEditor Control
 description: WinForms RichTextEditor is capable of displaying tables. Learn how to add a table to the document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements/table
 tags: table
 published: True

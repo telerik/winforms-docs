@@ -2,6 +2,7 @@
 title: Customizing editor
 page_title: Customizing editor - WinForms GanttView Control
 description: Learn how the appearance and behavior of ganttview editors can be changed programmatically.
+components: ["ganttview"]
 slug: winforms/ganttview-/editing/customizing-editor
 tags: customizing,editor
 published: True

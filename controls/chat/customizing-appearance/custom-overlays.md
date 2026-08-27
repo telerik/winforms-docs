@@ -2,6 +2,7 @@
 title: Custom Overlays
 page_title: Custom Overlays
 description: RadChat is a control that provides conversational experience
+components: ["chat"]
 slug: winforms/chat/customizing-appearance/custom-overlays
 tags: chat
 published: True

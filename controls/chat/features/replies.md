@@ -2,6 +2,7 @@
 title: Replies
 page_title: Replies - WinForms Chat Control
 description: Learn how to use the reply functionality in RadChat for WinForms to quote and respond to specific messages in a conversation.
+components: ["chat"]
 slug: winforms/chat/features/replies
 tags: chat, reply, quote, message, radchat
 published: True

@@ -2,6 +2,7 @@
 title: Binding to Business Objects
 page_title: Binding to Business Objects - WinForms Scheduler Control
 description: WinForms Scheduler supports binding to objects and it follows the same basic pattern as binding to database tables. You must assign a collection of objects to an instance of SchedulerBindingDataSource.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/data-binding/binding-to-business-objects
 tags: binding,to,business,objects
 published: True

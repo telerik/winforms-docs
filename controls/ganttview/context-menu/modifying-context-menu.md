@@ -2,6 +2,7 @@
 title: Modifying context menu
 page_title: Modifying context menu - RadGanttView
 description: Modify the default context menu shown in RadGanttView.
+components: ["ganttview"]
 slug: winforms/ganttview-/context-menu/modifying-context-menu
 tags: modifying,context,menu
 published: True

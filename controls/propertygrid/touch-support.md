@@ -2,6 +2,7 @@
 title: Touch Support
 page_title: Touch Support - RadPropertyGrid
 description: RadPropertyGrid supports scrolling operations via touch interface.
+components: ["propertygrid"]
 slug: winforms/propertygrid/touch-support
 tags: touch,support
 published: True

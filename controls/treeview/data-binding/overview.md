@@ -2,6 +2,7 @@
 title: Data Binding Overview
 page_title: Data Binding Overview - RadTreeView
 description: This article list the possible way to bind RadTreeView to a various data sources.
+components: ["treeview"]
 slug: winforms/treeview/data-binding/data-binding-basics
 tags: data,binding,basics
 published: True

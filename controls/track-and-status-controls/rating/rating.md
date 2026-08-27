@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms Rating Control
 description: WinForms Rating control is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
+components: ["rating"]
 slug: winforms/track-and-status-controls/rating
 tags: rating
 published: True

@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - RadDomainUpDown
 description: RadDomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices.  
+components: ["editors"]
 slug: winforms/editors/domainupdown/structure
 tags: domainupdown, structure
 published: True

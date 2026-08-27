@@ -2,6 +2,7 @@
 title: Structure 
 page_title: Structure - WinForms DataEntry Control
 description: Get familiar with the DataEntry elements structure.
+components: ["dataentry"]
 slug: winforms/dataentry/control-element-structure
 tags: control,element,structure,
 published: True

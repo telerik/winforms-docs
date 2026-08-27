@@ -2,6 +2,7 @@
 title: Properties, Methods Events
 page_title: Properties, Methods Events - WinForms Carousel Control
 description: Get familiar with the public API that the WinForms Carousel control offers.
+components: ["carousel"]
 slug: winforms/carousel/properties
 tags: carousel, properties, methods, events
 published: True

@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms DataLayout Control
 description: learn how you can localize the string used in WinForms DataLayout.
+components: ["datalayout"]
 slug: winforms/datalayout/localization
 tags: localization
 published: True

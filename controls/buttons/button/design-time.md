@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Button Control
 description: WinForms Button's design time allows you to use the RadButton's Smart Tag to change the applied theme or navigate to the online documentation.
+components: ["buttons"]
 slug: winforms/buttons/button/design-time
 tags: button, design-time
 published: True

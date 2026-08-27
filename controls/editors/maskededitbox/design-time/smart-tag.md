@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - WinForms MaskedEditBox Control
 description: Learn what are the design time abilities of RadMaskedEditBox provided by its Smart Tag.
+components: ["editors"]
 slug: winforms/editors/maskededitbox/design-time/smart-tag
 tags: design,time
 published: True

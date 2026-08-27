@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms ScrollBar
 description: WinForms RadHScrollBar and RadVScrollBar share the same properties. The only difference between the two is that the former is displayed horizontally while the latter is displayed vertically.
+components: ["scrollbar"]
 slug: winforms/track-and-status-controls/scrollbar/programming-radscrollbars
 tags: programming,radscrollbars
 published: True

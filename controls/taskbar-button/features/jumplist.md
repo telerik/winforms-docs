@@ -2,6 +2,7 @@
 title: Jump List
 page_title: Jump List - Taskbar Button
 description: A JumpList is a list of associated files, actions or links associated with your application.  
+components: ["taskbarbutton"]
 slug: taskbar-button-features-jumplist
 tags: taskbarbutton, jumplist
 published: True

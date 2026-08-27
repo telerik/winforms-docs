@@ -2,6 +2,7 @@
 title: Save/Load Layout
 page_title: Save/Load Layout - RadDataLayout
 description: This article describes how the end user can build and Save/Load custom layouts.
+components: ["datalayout"]
 slug: winforms/datalayout/save/load-layout
 tags: save/load,layout
 published: True

@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - RadGanttView
 description: The Smart Tag for RadGanttView lets you quickly access common tasks.
+components: ["ganttview"]
 slug: winforms/ganttview-/design-time/smart-tag
 tags: smart,tag
 published: True

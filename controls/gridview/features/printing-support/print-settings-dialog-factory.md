@@ -2,6 +2,7 @@
 title: PrintSettingsDialogFactory
 page_title: PrintSettingsDialogFactory - RadGridView
 description: Learn how to customize the print settings dialog in RadGridView by using the PrintSettingsDialogFactory property.
+components: ["gridview"]
 slug: winforms/gridview/printing-support/print-settings-dialog-factory
 tags: printing,dialog,factory,customization
 published: True

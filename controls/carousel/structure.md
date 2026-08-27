@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Carousel Control
 description: Learn the internal structure of RadCarousel. 
+components: ["carousel"]
 slug: winforms/carousel/structure
 tags:  carousel, structure
 published: True 

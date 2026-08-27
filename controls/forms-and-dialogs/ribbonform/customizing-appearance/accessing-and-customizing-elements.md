@@ -2,6 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements - RadRibbonForm
 description: RadRibbonForm control is designed to host a RadRibbonBar control and mimic the Microsoft Office 2007 UI form style.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/ribbonform/accessing-and-customizing-elements
 tags: ribbonform
 published: True

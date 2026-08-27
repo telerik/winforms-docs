@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadVirtualGrid
 description: All RadVirtualGrid elements can be styled in Visual Style Builder. This article shows how you can change the selected row color.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/customizing-appearance/themes
 tags: virtualgrid, themes
 published: True

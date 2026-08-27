@@ -2,6 +2,7 @@
 title: Orientation
 page_title: Orientation - WinForms SlideView Control
 description: Learn more about how to set the orientation of the WinForms SlideView control.
+components: ["slideview"]
 slug: slideview-orientation
 tags: slideview, orientation
 published: True

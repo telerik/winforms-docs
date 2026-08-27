@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms AIPrompt Control
 description: Learn the most important of the public API that the WinForms AIPrompt offers.
+components: ["aiprompt"]
 slug: aiprompt-properties-methods-events
 tags: aiprompt, properties, methods, events
 published: True

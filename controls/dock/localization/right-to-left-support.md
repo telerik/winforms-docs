@@ -2,6 +2,7 @@
 title: Right-to-left support
 page_title: Right-to-left support - WinForms Dock Control
 description: Shows how you can enable the RightToLeft layout.
+components: ["dock"]
 slug: winforms/dock/localization/right-to-left-support
 tags: right-to-left,support
 published: True

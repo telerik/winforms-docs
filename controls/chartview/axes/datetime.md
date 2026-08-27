@@ -2,6 +2,7 @@
 title: DateTime
 page_title: DateTime - ChartView
 description: RadChartView supports two DateTime axes out of the box – DateTimeCategorical and DateTimeContinuous. While the former is a categorical axis, the latter is a numerical one. They both sort their data chronologically.
+components: ["chartview"]
 slug: winforms/chartview-/axes/datetime
 tags: datetime
 published: True

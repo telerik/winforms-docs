@@ -2,6 +2,7 @@
 title: Appearance
 page_title: WinForms SpeechToTextButton Documentation - Appearance
 description: Learn how to customize the appearance of the Telerik SpeechToTextButton for WinForms.
+components: ["speechtotextbutton"]
 position: 3
 tags: speech to text, button, visual, appearance, style, winforms
 slug: speechtotextbutton-appearance

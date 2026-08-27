@@ -2,6 +2,7 @@
 title: Comments
 page_title: Comments - WinForms RichTextEditor Control
 description: WinForms RichTextEditor provides functionality for inserting comment annotations inside the document. You can programmatically insert and delete comments though the RadDocumentEditor.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/comments
 tags: comments
 published: True

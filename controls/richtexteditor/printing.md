@@ -2,6 +2,7 @@
 title: Printing
 page_title: Printing - WinForms RichTextEditor Control
 description: WinForms RichTextEditor allows printing theRadDocument instance shown in it.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/printing
 tags: printing
 published: True

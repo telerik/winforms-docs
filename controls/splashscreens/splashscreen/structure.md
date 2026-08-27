@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - SplashScreen
 description: Get familiar with the internal strcuture of teh WinForms SplashScreen .
+components: ["splashscreen"]
 slug: splashscreen-structure
 tags: splash, screen
 published: True

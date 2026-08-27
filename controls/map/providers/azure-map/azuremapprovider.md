@@ -2,6 +2,7 @@
 title: Azure Map Provider
 page_title: Azure Map Provider - RadMap
 description: RadMap can visualize tile data from the Azure API services as well as from the local file system.
+components: ["map"]
 slug: map-providers-azure-overview
 tags: map, providers,azure
 published: True

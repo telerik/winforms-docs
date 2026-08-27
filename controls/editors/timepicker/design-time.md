@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - RadTimePicker
 description: This article show what you can do with the smart tag of RadTimePicker.
+components: ["editors"]
 slug: winforms/editors/timepicker/designtime
 tags: timepicker
 published: True

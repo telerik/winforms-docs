@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms OfficeNavigationBar Control
 description: Get familiar with the public API that WinForms OfficeNavigationBar offers.   
+components: ["officenavigationbar"]
 slug: officenavigationbar-properties-methods-events
 tags: officenavigationbar
 published: True

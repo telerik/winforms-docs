@@ -2,6 +2,7 @@
 title: Serialize AdomdDataProvider
 page_title: Serialize AdomdDataProvider - RadPivotGrid
 description: In this article we will show you how to serialize and deserialize AdomdDataProvider and all of its settings.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/save-and-load-layout/serialize-adomddataprovider
 tags: save,and,load,layout
 published: True

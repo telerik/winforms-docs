@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support - WinForms GridView Control
 description: Learn what the end user can do with the keyboard when WinForms GridView is focused. 
+components: ["gridview"]
 slug: winforms/gridview/end-user-capabilities/keyboard-support
 tags: keyboard,support
 published: True

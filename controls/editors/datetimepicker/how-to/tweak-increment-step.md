@@ -2,6 +2,7 @@
 title: Tweak Increment Step
 page_title: Tweak Increment Step - RadDateTimePicker
 description: This article shows how you can change th increment step of the up/down buttons. 
+components: ["editors"]
 slug: winforms/editors/datetimepicker/how-to/tweak-increment-step
 tags: tweak,increment,step
 published: True

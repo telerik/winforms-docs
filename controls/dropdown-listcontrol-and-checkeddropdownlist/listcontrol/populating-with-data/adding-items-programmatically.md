@@ -2,6 +2,7 @@
 title: Adding Items Programmatically
 page_title: Adding Items Programmatically - WinForms ListControl  
 description: WinForms ListControl supports adding items at run time, which means that you can manually populate it with data. 
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/adding-items-programmatically
 tags: adding,items,programmatically
 published: True

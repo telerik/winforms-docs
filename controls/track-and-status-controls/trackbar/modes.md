@@ -2,6 +2,7 @@
 title: Modes
 page_title: Modes - WinForms TrackBar
 description: WinForms TrackBar supports three different modes - SingleThumb, StartFromTheBeginning and Range.
+components: ["trackbar"]
 slug: winforms/track-and-status-controls/trackbar/modes
 tags: modes
 published: True

@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms PipsPager Control
 description: Get familiar with the public API of the WinForms PipsPager control.
+components: ["pipspager"]
 slug: pipspager-properties-methods-events
 tags: pipspager, api, properties, methods, events
 published: True

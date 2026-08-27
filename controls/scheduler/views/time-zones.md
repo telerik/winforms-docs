@@ -2,6 +2,7 @@
 title: Time Zones
 page_title: Time Zones - RadScheduler
 description: The Time Zones feature of RadScheduler allows the user to see a ruler representing an hour scale set according to a time zone different than the local time zone.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/views/time-zones
 tags: time,zones
 published: True

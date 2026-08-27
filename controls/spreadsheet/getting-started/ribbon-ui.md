@@ -2,6 +2,7 @@
 title: Spreadsheet UI
 page_title: Spreadsheet UI
 description: Spreadsheet UI
+components: ["spreadsheet"]
 slug: radspreadsheet-getting-started-spreadsheet-ui
 tags: spreadsheet, ribbon, ui, context menu, default look
 published: True

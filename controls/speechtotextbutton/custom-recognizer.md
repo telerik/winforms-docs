@@ -2,6 +2,7 @@
 title: Custom Recognizer
 page_title: WinForms SpeechToTextButton Documentation - Custom Speech Recognizer
 description: Learn how to use a custom speech recognizer with the Telerik SpeechToTextButton for WinForms.
+components: ["speechtotextbutton"]
 position: 12
 tags: speech to text, button, custom, recognizer, winforms
 slug: speechtotextbutton-custom-recognizer

@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - RadPopupEditor
 description: This article shows the design time capabilities of RadPopupEditor.
+components: ["editors"]
 slug: winforms/editors/popupeditor/design-time
 tags: design,time
 published: True

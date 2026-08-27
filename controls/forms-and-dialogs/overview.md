@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - Forms and Dialogs
 description: Overview
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/overview
 tags: overview
 published: False

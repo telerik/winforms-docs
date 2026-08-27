@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - Validation Provider
 description: RadValidationProvider is a component which provides data validation management for editors in bound and unbound mode.  
+components: ["validationprovider"]
 slug: validation-provider-overview
 tags: validation, provider
 published: True

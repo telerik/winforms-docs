@@ -2,6 +2,7 @@
 title: Modify the DragDropService behavior
 page_title: Modify the DragDropService behavior - WinForms TreeView Control
 description: Learn how to modify the default DragDropService behavior in order to copy the nodes in WinForms TreeView. 
+components: ["treeview"]
 slug: winforms/treeview/drag-and-drop/modify-the-dragdropservice-behavior
 tags: modify,the,dragdropservice,behavior
 published: True

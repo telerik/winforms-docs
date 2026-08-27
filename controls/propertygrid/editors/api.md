@@ -2,6 +2,7 @@
 title: API
 page_title: API - RadPropertyGrid
 description: The editing process can be controlled by using the methods described in this article.
+components: ["propertygrid"]
 slug: winforms/propertygrid/editors/api
 tags: api
 published: True

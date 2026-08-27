@@ -2,6 +2,7 @@
 title: Progress Indication
 page_title: Progress Indication - Taskbar Button
 description: This article shows how you can set progress state on taskbar.  
+components: ["taskbarbutton"]
 slug: taskbar-button-features-progress
 tags: taskbar, manager
 published: True

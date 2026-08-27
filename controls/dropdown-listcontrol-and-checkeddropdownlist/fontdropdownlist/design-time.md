@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms FontDropDownList Control
 description: Learn what are the design time options in WinForms FontDropDownList. 
+components: ["fontdropdownlist"]
 slug: winforms/editors/fontdropdownlist/design-time
 tags: fontdropdownlist,designtime
 published: True

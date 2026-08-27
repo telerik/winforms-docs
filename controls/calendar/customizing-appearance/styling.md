@@ -2,6 +2,7 @@
 title: Themes
 page_title: Styling - WinForms Calendar Control
 description: Learn how you can change calendar cells in Visual Style Builder.
+components: ["calendar"]
 slug: winforms/calendar/customizing-appearance/styling
 tags: styling, themes
 published: True

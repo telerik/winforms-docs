@@ -2,6 +2,7 @@
 title: Header and Footer
 page_title: Header and Footer - Navigation View
 description: RadNavigationView offers header and footer area.
+components: ["navigationview"]
 slug: navigation-view-header-and-footer
 tags: navigation, view, header, footer
 published: True

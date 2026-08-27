@@ -2,6 +2,7 @@
 title: Customize Fill and Border
 page_title: Customize Fill and Border - RadAutoCompleteBox
 description: This article shows how one can change the border and fill of RadAutoCompleteBox.
+components: ["editors"]
 slug: winforms/editors/autocompletebox/fill-and-border
 tags: fill, border
 published: True

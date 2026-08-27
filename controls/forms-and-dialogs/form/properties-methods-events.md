@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms RadForm
 description: Get familiar with the public API that the WinForms RadForm offers.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/form/properties-methods-events
 tags: form
 published: True

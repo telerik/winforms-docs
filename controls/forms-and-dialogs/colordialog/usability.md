@@ -2,6 +2,7 @@
 title: Usability
 page_title: Usability - WinForms ColorDialog
 description: WinForms ColorDialog provides multiple ways to select a color using the Basic, System, Web or Professional color tabs of the dialog. 
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/colordialog/usability
 tags: usability
 published: True

@@ -2,6 +2,7 @@
 title: Overview 
 page_title: Overview  - RadRangeSelector
 description: RadRangeSelector provides an elegant solution for end-users to select range (in percentages) and these percentages could be mapped to any kind of visually represented data. 
+components: ["rangeselector"]
 slug: winforms/rangeselector/overview
 tags: rangeselector,
 published: True

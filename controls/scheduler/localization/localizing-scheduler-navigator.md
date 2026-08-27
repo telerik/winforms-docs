@@ -2,6 +2,7 @@
 title: Localizing Scheduler Navigator
 page_title: Localizing Scheduler Navigator - RadScheduler
 description: Localizing Scheduler Navigator
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/localization/localizing-scheduler-navigator
 tags: localizing,scheduler,navigator
 published: True

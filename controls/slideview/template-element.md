@@ -2,6 +2,7 @@
 title: Template Element
 page_title: Template Element - WinForms SlideView Control
 description: This article provides information about TemplateElement in RadSlideView.
+components: ["slideview"]
 slug: slideview-template-element
 tags: slideview, template, element
 published: True

@@ -2,6 +2,7 @@
 title: Printing
 page_title: Printing - WinForms Spreadsheet Control
 description: Printing in WinForms Spreadsheet allows you to prepare and display spreadsheet data the most suitable way depending on your needs.
+components: ["spreadsheet"]
 slug: radspreadsheet-features-printing
 tags: headers, footers
 published: True

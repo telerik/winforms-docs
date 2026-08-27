@@ -2,6 +2,7 @@
 title: Accessing Cells
 page_title: Accessing Cells - WinForms GridView Control
 description: Learn how to access the cells in the WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/cells/accessing-cells
 tags: accessing,cells
 published: True

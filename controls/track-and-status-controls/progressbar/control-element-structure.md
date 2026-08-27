@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms ProgressBar
 description: Get familiar with the inner structure and organization of the elements which build the WinForms ProgressBar control.
+components: ["progressbar"]
 slug: winforms/track-and-status-controls/progressbar/control-element-structure
 tags: control,element,structure
 published: True

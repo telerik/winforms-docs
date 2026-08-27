@@ -2,6 +2,7 @@
 title: Timeline Views
 page_title: Timeline Views - WinForms GanttView Control
 description: WinForms GanttView offers a number of built-in timeline views which allow you to show the timeline in different scales.
+components: ["ganttview"]
 slug: winforms/ganttview-/timeline/timeline-views
 tags: timeline,views
 published: True

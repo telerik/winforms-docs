@@ -2,6 +2,7 @@
 title: Split View
 page_title: Split View - RadGridView
 description: Describes how you can use the Split view to display tow grid withing the same container which allows easy data comparison.  
+components: ["gridview"]
 slug: winforms/gridview/split-view
 tags: splitview
 published: True

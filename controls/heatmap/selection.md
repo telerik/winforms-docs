@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection - WinForms HeatMap Control
 description: This article describes the selection functionality that the RadHeatMap exposes.
+components: ["heatmap"]
 slug: heatmap-selection
 tags: heatmap, selection, allowselection, events
 published: True

@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - AzureMapProvider
 description: Telerik RadMap AzureMapProvider
+components: ["map"]
 slug: map-providers-azure-properties
 tags: azuremapprovider, methods, properties, events
 published: True

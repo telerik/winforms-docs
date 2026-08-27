@@ -2,6 +2,7 @@
 title: Model
 page_title: Model - RadSpreadsheet
 description: Model
+components: ["spreadsheet"]
 slug: radspreadsheet-model
 tags: model
 published: True

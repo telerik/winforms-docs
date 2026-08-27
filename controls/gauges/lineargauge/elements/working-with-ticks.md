@@ -2,6 +2,7 @@
 title: Working with Ticks
 page_title: Working with Ticks - WinForms LinearGauge Control
 description: The RadLienarGaugeTicks element gives you the ability to easily show a scale.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/lineargauge/elements/working-with-ticks
 tags: working,with,ticks
 published: True

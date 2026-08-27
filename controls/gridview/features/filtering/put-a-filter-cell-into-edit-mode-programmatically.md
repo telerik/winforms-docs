@@ -2,6 +2,7 @@
 title: Put a filter cell into edit mode programmatically
 page_title: Put a filter cell into edit mode programmatically - WinForms GridView Control
 description: Learn how you can put a filter cell into edit mode programmatically.
+components: ["gridview"]
 slug: winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically
 tags: put,a,filter,cell,into,edit,mode,programmatically
 published: True

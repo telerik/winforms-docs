@@ -2,6 +2,7 @@
 title: Unbound Mode
 page_title: Unbound Mode - UI for WinForms Documentation
 description: RadCardView is a powerful control providing means for displaying and editing data organized in a card layout.
+components: ["cardview"]
 slug: winforms/cardview/populating-with-data/unbound-mode
 tags: cardview/unbound mode
 published: True

@@ -2,6 +2,7 @@
 title: ListControlDragDropService
 page_title: ListControlDragDropService - WinForms ListControl
 description: Learn how to use ListControlDragDropService to achieve drag and drop functionality in bound mode.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/listcontroldragdropservice
 tags: drag,and,drop, 
 published: True

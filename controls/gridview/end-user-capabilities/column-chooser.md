@@ -2,6 +2,7 @@
 title: Column Chooser
 page_title: Column Chooser - WinForms GridView Control
 description: WinForms GridView offers Column Chooser window. It allows managing the visibility of all columns at runtime. 
+components: ["gridview"]
 slug: winforms/gridview/end-user-capabilities/column-chooser
 tags: column,chooser
 published: True

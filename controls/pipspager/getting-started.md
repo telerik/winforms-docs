@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms PipsPager Control
 description: Get started with the WinForms PipsPager control.
+components: ["pipspager"]
 slug: pipspager-getting-started
 tags: pipspager
 published: True

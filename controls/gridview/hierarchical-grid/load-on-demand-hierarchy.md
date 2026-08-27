@@ -2,6 +2,7 @@
 title: Load-On-Demand Hierarchy
 page_title: Load-On-Demand Hierarchy - WinForms GridView Control
 description: WinForms GridView supports dynamically loading the data in the child levels. 
+components: ["gridview"]
 slug: winforms/gridview/hierarchical-grid/load-on-demand-hierarchy
 tags: load-on-demand,hierarchy
 published: True

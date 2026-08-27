@@ -2,6 +2,7 @@
 title: Adding a Custom Field to the EditAppointment Dialog
 page_title: Adding a custom field to the EditAppointment dialog - WinForms Scheduler Control
 description: Learn how to add a custom field to the EditAppointment dialog in WinForms Scheduler.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appointments-and-dialogs/adding-a-custom-field-to-the-editappointment-dialog
 tags: adding,a,custom,field,to,the,editappointment,dialog
 published: True

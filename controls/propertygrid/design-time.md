@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms PropertyGrid Control
 description: Get familiar with the design time capabilities of the WinForms PropertyGrid control.
+components: ["propertygrid"]
 slug: winforms/propertygrid/design-time
 tags: design time, smart tag
 published: True

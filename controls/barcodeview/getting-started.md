@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms BarcodeView Control
 description: WinForms BarcodeView is a set of components that can be used to create, show and read barcodes. Learn how to get started with it.   
+components: ["barcodeview"]
 slug: barcodeview-getting-started
 tags: barcode, getting started
 published: True

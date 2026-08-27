@@ -2,6 +2,7 @@
 title: MaskDateOnlyProvider
 page_title: MaskDateOnlyProvider - RadDateOnlyPicker 
 description: This article shows what is the MaskDateOnlyProvider and how you can access it.
+components: ["editors"]
 slug: editors-features-maskdateonlyprovider
 tags: dateonlypicker, maskdateonlyprovider, netcore
 published: True

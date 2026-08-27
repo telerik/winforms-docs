@@ -2,6 +2,7 @@
 title: Custom Grouping
 page_title: Custom Grouping - WinForms GridView Control
 description: Custom grouping is a flexible mechanism for creating WinForms GridView groups by using custom logic.
+components: ["gridview"]
 slug: winforms/gridview/grouping/custom-grouping
 tags: custom,grouping
 published: True

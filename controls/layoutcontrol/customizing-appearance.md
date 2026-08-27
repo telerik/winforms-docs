@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - WinForms LayoutControl
 description: Learn how to customize the appearance of the WinForms LayoutControl and its items.
+components: ["layoutcontrol"]
 slug: winforms/layoutcontrol/customizing-appearance
 tags: customizing,appearance
 published: True

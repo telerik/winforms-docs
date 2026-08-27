@@ -2,6 +2,7 @@
 title: Overview
 meta_title: WinForms SmartPasteButton Documentation - Overview
 description: Learn how the Telerik UI for WinForms SmartPasteButton uses an AI service to extract clipboard content and populate form or grid fields.
+components: ["smartpastebutton"]
 tags: smart paste, ai, clipboard, button, winforms, .net
 published: True
 position: 0

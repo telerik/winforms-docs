@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - Filter View
 description: Get familiar with the design time experience of the WinForms FilterView control.  
+components: ["filterview"]
 slug: filter-view-design-time
 tags: filter, view, design, time
 published: True

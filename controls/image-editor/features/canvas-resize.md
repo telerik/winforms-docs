@@ -2,6 +2,7 @@
 title: Canvas Resize
 page_title: Canvas Resize - WinForms ImageEditor Control
 description: WinForms ImageEditor supports image resizing either via the Canvas resize button or programmatically. 
+components: ["imageeditor"]
 slug: radimageeditor-canvas-resize
 tags: image, editor, resize 
 published: True

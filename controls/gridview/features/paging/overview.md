@@ -2,6 +2,7 @@
 title: Overview
 page_title: Paging - RadGridView
 description: This article shows how you can use the built-in Paging functionality.
+components: ["gridview"]
 slug: winforms/gridview/paging/overview
 tags: overview
 published: True

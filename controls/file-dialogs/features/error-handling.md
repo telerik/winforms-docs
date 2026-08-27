@@ -2,6 +2,7 @@
 title: Error Handling
 page_title: Error Handling - WinForms FileDialogs
 description: The file dialogs come with their own error handling mechanism so that you can deal with most exceptional situations that may occur while navigating through the file system. 
+components: ["filedialogs"]
 slug: winforms/file-dialogs/features/error-handling
 tags: filedialogs, features, error
 published: True

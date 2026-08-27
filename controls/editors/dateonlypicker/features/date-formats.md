@@ -2,6 +2,7 @@
 title: Date Formats
 page_title: Date Formats - WinForms DateOnlyPicker Control
 description: Get familiar with the standard format characters supported by RadDateOnlyPicker.
+components: ["editors"]
 slug: editors-dateonlypicker-features-date-formats
 tags: date,formats, netcore
 published: True

@@ -2,6 +2,7 @@
 title: Indicators
 page_title: Indicators - WinForms Sparkline Control
 description: Get familiar with the supported indicators in the WinForms Sparkline control.
+components: ["sparkline"]
 slug: radsparkline-indicators
 tags: sparkline, indicators
 published: True

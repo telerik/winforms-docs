@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting - WinForms DropDownList Control
 description: WinForms DropDownList supports sorting of its pop-up items.
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/sorting
 tags: sorting
 published: True

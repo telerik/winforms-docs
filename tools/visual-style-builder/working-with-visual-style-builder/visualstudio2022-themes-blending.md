@@ -2,6 +2,7 @@
 title: VisualStudio2022 Theme Blending
 page_title: VisualStudio2022 Theme Blending - UI for WinForms Tools
 description: Color blending the VisualStudio2022 theme in the Visual Style Builder tool.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/visualstudio2022-themes-blending
 tags: color, blending, VisualStudio2022
 published: True

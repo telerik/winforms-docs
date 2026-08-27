@@ -2,6 +2,7 @@
 title: Adding Items Programmatically
 page_title: Adding Items Programmatically - WinForms ToolbarForm
 description: Learn how to add items via code to the WinForms ToolbarForm.
+components: ["forms,dialogs,templates"]
 slug: radtoolbarform-adding-items-programmatically
 tags: radtoolbarform, add, items
 published: True

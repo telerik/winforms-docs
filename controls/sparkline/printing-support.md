@@ -2,6 +2,7 @@
 title: Printing Support
 page_title: Printing Support - WinForms Sparkline Control
 description: The WinForms Sparkline control supports printing out of the box by the Print or the PrintPreview methods.
+components: ["sparkline"]
 slug: radsparkline-printing
 tags: sparkline, printing 
 published: True

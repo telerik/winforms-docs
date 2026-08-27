@@ -2,6 +2,7 @@
 title: CultureInfo and RegionInfo Basics
 page_title: CultureInfo and RegionInfo Basics - WinForms DateOnlyPicker Control
 description: Learn how you can use RadDateOnlyPicker with different culture settings.
+components: ["editors"]
 slug: editors-dateonlypicker-features-cultureinfo-and-regioninfo-basics
 tags: cultureinfo,and,regioninfo,basics, netcore
 published: True

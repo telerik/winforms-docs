@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms SlideView Control
 description: Get familiar with the design time options that the WinForms PipsPager control.
+components: ["slideview"]
 slug: slideview-design-time
 tags: slideview, design
 published: True

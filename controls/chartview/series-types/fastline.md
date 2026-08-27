@@ -2,6 +2,7 @@
 title: FastLine 
 page_title: FastLine  - ChartView
 description: FastLineSeries is inheriting the default line series but the performance is considerably improved. 
+components: ["chartview"]
 slug: winforms/chartview-/series-types/fastline-
 tags: fastline,
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms LinearGauge Control
 description: WinForms LinearGauge displays simple value within a specific range. The range is displayed in a rectangle, this rectangle can contain scale with or without ticks, labels and a scale bar.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/lineargauge
 tags: lineargauge
 published: True

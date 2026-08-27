@@ -2,6 +2,7 @@
 title: Colorizers
 page_title: Colorizers - WinForms HeatMap Control
 description: Check our &quot;Colorizers&quot; documentation article for the RadHeatMap WinForms control.
+components: ["heatmap"]
 slug: heatmap-colorizers
 tags: heatmap, colorizer
 published: True

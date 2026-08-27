@@ -2,6 +2,7 @@
 title: Table Styles Gallery
 page_title: Table Styles Gallery - WinForms RichTextEditor Control
 description: TableStylesGallery in WinForms RichTextEditor was introduced as a way to easily create, delete, modify and apply table styles in a document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/table-styles-gallery
 tags: table,styles,gallery
 published: True

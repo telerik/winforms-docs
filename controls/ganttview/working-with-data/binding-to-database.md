@@ -2,6 +2,7 @@
 title: Binding to Database
 page_title: Binding to Database - RadGanttView
 description: RadGanttView supports binding to Database data. Levels are created using the Parent and Child members' values.
+components: ["ganttview"]
 slug: winforms/ganttview-/working-with-data/binding-to-database
 tags: binding,to,database
 published: True

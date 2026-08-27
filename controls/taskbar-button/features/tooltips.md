@@ -2,6 +2,7 @@
 title: ToolTips
 page_title: ToolTips - Taskbar Button
 description: This article shows how you can assign tooltips on taskbar.  
+components: ["taskbarbutton"]
 slug: taskbar-button-features-tooltips
 tags: taskbarbutton,button, tooltips
 published: True

@@ -2,6 +2,7 @@
 title: Mail Merge
 page_title: Mail Merge - WinForms RichTextEditor Control
 description: WinForms RichTextEditor offers mail merge allowing the creation of a document serving as a template and filling in different data, e.g. the name of a person, their address, job title, etc.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/mail-merge
 tags: mail,merge
 published: True

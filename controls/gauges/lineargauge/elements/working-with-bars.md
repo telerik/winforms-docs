@@ -2,6 +2,7 @@
 title: Working with Bars
 page_title: Working with Bars - WinForms LinearGauge Control
 description: The bar element indicates a specific value or as a scale for other indicators.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/lineargauge/elements/working-with-bars
 tags: working,with,bars
 published: True

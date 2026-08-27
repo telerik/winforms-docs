@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - RadRibbonForm
 description: RadRibbonForm control is designed to host a RadRibbonBar control and mimic the Microsoft Office 2007 UI form style.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/ribbonform/structure
 tags: ribbonform
 published: True

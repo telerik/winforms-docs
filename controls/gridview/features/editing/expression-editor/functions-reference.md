@@ -2,6 +2,7 @@
 title: Functions Reference
 page_title: Functions Reference - WinForms GridView Control
 description: Complete reference of all built-in functions available in RadExpressionEditor for WinForms GridView, including parameters, types, and usage examples.
+components: ["gridview"]
 slug: winforms/gridview/expression-editor/functions-reference
 tags: expression,editor,functions,reference
 published: True

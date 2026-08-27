@@ -2,6 +2,7 @@
 title: FilterExpressionChanged Event
 page_title: FilterExpressionChanged Event - WinForms GridView Control
 description: WinForms GridView offers specific event which is the only place where you can access the final filtering expression as a string.
+components: ["gridview"]
 slug: winforms/gridview/filtering/filterexpressionchanged-event
 tags: filterexpressionchanged,event
 published: True

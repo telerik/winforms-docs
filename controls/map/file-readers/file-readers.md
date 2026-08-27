@@ -2,6 +2,7 @@
 title: File Readers
 page_title: File Readers - WinForms Map Control
 description: WinForms Map allows you to read data from several data formats by using a file reader.
+components: ["map"]
 slug: winforms/map/file-readers
 tags: map, providers
 published: True

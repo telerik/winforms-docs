@@ -2,6 +2,7 @@
 title: Sorting Expressions
 page_title: Sorting Expressions - WinForms GridView Control
 description: Sort WinForms GridView by directly altering the sort expression in the code.
+components: ["gridview"]
 slug: winforms/gridview/sorting/sorting-expressions
 tags: sorting,expressions
 published: True

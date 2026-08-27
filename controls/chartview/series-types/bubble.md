@@ -2,6 +2,7 @@
 title: Bubble
 page_title: Bubble - ChartView
 description: BubbleSeries are used to visualize data points as points with coordinates and size defined by their items' values
+components: ["chartview"]
 slug: winforms/chartview-/series-types/bubble
 tags: bubble
 published: True

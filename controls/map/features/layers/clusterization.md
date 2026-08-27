@@ -2,6 +2,7 @@
 title: Clusterization
 page_title: Clusterization - WinForms Map Control
 description: WinForms Map supports clusterization of its layers allowing grouping of their items.
+components: ["map"]
 slug: winforms/map/features/layers/clusterization
 tags: map, features, layers, clusterization
 published: True

@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms ToolbarForm
 description:  Get familiar with the internal elements structure of the WinForms ToolbarForm.  
+components: ["forms,dialogs,templates"]
 slug: radtoolbarform-structure
 tags: radtoolbarform
 published: True

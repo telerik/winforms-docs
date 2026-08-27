@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms GridView Control
 description: WinForms GridView is a grid component developed on top of Telerik Presentation Framework which provides a combination of performance, extensibility, customizability, and ease of use.
+components: ["gridview"]
 slug: winforms/gridview/getting-started
 tags: getting,started
 published: True

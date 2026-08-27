@@ -2,6 +2,7 @@
 title: Legend
 page_title: Legend - RadMap
 description: The RadMap control introduces the MapLegendElement object. It allows you to display a legend for a particular layer inside the control.
+components: ["map"]
 slug: winforms/map/features/legend
 tags: map, features, legend
 published: True

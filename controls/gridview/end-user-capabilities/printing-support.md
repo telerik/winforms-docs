@@ -2,6 +2,7 @@
 title: Printing Support
 page_title: Printing Support - WinForms GridView Control
 description: WinForms GridView supports built-in print functionality which allows the end user to change various print settings at run-time.
+components: ["gridview"]
 slug: winforms/gridview/end-user-capabilities/printing-support
 tags: printing,support
 published: True

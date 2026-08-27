@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms ScrollBar
 description: Get familiar with the inner structure and organization of the elements which build the WinForms ScrollBar control.
+components: ["scrollbar"]
 slug: winforms/track-and-status-controls/scrollbar/control-element-structure
 tags: control,element,structure
 published: True

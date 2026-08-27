@@ -2,6 +2,7 @@
 title: Scrolling
 page_title: Scrolling - WinForms DropDownList Control
 description: Get familiar with the different scrolling options supported by WinForms DropDownList.
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/scrolling
 tags: scrolling
 published: True

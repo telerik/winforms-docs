@@ -2,6 +2,7 @@
 title: Scrolling
 page_title: Scrolling - WinForms VirtualGrid Control
 description: Get familiar with the different supported scrolling modes in WinForms VirtualGrid.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/scrolling
 tags: virtualgrid, scrolling
 published: True

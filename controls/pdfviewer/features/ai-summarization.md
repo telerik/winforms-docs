@@ -2,6 +2,7 @@
 title: AI Summarization
 page_title: AI Summarization
 description: Check our AI Summarization documentation article for the RadPdfViewer WinForms control.
+components: ["pdfviewer"]
 slug: radpdfviewer-ai-summarization
 tags: getting, started, ai, summarize
 published: True

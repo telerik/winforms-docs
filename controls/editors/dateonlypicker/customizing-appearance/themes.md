@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadDateOnlyPicker
 description: This article shows How you can change the styles of the control in Visual Style Builder.
+components: ["editors"]
 slug: editors-dateonlypicker-themes
 tags: dateonlypicker, themes
 published: True

@@ -2,6 +2,7 @@
 title: Handling Events
 page_title: Handling Events - RadRibbonBar
 description: Most of the time the events are handled for the elements contained in RibbonBar.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/programming-radribbonbar/handling-events
 tags: handling,events
 published: True

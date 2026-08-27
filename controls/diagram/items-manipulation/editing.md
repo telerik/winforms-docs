@@ -2,6 +2,7 @@
 title: Editing
 page_title: Editing - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/items-manipulation/editing
 tags: editing
 published: True

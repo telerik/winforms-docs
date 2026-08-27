@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms RepeatButton Control
 description: Learn how to get started with the WinForms RepeatButton.
+components: ["buttons"]
 slug: winforms/buttons/repeatbutton/working-with-radrepeatbutton
 tags: working,with,radrepeatbutton
 published: True

@@ -1,7 +1,8 @@
- ---
+---
 title: Overview
 page_title: Printing Support - RadGanttView
 description: RadGanttView provides options to print its content using a RadPrintDocument.
+components: ["ganttview"]
 slug: winforms/ganttview/printing-support/support
 tags: printing,support
 published: True

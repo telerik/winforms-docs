@@ -2,6 +2,7 @@
 title: Spellcheck
 page_title: Spellcheck - WinForms RichTextEditor Control
 description: WinForms RichTextEditor is designed to support spell checking as you type by setting a single property and specifying a proper dictionary to it.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/spellcheck
 tags: spellcheck
 published: True

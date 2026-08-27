@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms PageView Control
 description: WinForms PageView's Smart tag lets you quickly access common tasks involved with building RadPageView elements and customizing its elements.
+components: ["pageview"]
 slug: winforms/pageview/design-time
 tags: design-time
 published: True

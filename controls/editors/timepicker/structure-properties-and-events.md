@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms TimePicker Control
 description: Get familiar with the the most commonly used properties and events of WinForms RadTimePicker.
+components: ["editors"]
 slug: winforms/editors/timepicker/properties-and-events
 tags: properties,and,events
 published: True

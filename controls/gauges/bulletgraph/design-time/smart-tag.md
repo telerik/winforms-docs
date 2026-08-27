@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - WinForms BulletGraph Control
 description: Learn what are the design time abilities of WinForms BulletGraph provided by its Smart Tag.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/bulletgraph/smart-tag
 tags: design,time
 published: True

@@ -2,6 +2,7 @@
 title: Layout Modes
 page_title: Layout Modes - WinForms RichTextEditor Control
 description: Learn what are the several layout modes in WinForms RichTextEditor.   
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/getting-started/layout-modes
 tags: layout,modes
 published: True

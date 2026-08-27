@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms Diagram Control
 description: Learn how to localize WinForms Diagram.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/localization
 tags: localization
 published: True

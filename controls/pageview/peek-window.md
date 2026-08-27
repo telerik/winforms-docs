@@ -2,6 +2,7 @@
 title: Peek Window
 page_title: Peek Window - WinForms PageView Control
 description: Get familiar with the design time options that the WinForms PageView offers.   
+components: ["pageview"]
 slug: pageview-peek-window
 tags: pageview
 published: True

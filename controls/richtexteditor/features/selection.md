@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection - WinForms RichTextEditor Control
 description: Winforms RichTextEditor supports not only selection via the UI, but also selection via code.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/selection
 tags: selection
 published: True

@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: RadioButton - UI for WinForms Documentation
 description: RadRadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
+components: ["buttons"]
 slug: winforms/buttons/radiobutton/properties-methods-events
 tags: radiobutton
 published: True

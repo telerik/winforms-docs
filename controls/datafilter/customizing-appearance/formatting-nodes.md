@@ -2,6 +2,7 @@
 title: Formatting Nodes
 page_title: Formatting Nodes - RadDataFilter
 description: The nodes building the tree of descriptor items can be customized by handling the RadDataFilter.NodeFormatting event.. 
+components: ["datafilter"]
 slug: winforms/datafilter/customizing-appearance/formatting-nodes
 tags: data, filter
 published: True

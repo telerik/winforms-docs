@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Diagram Control
 description: Get familiar with the design time experience that WinForms Diagram offers. 
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/design-time
 tags: diagram
 published: True

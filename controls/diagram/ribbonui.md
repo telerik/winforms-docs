@@ -2,6 +2,7 @@
 title: RibbonUI
 page_title: RibbonUI - WinForms Diagram Control
 description: WinForms RadDiagramRibbonBar is a ribbon control that has been wired to work with the API that   Diagram exposes.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/ribbonui
 tags: ribbonui
 published: True

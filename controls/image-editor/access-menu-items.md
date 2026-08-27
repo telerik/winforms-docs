@@ -2,6 +2,7 @@
 title: Access Menu Items
 page_title:  Access Menu Items
 description: Access Menu Items
+components: ["imageeditor"]
 slug: radimageeditor-access-menu-items
 tags: items, access, radimageeditor
 published: True

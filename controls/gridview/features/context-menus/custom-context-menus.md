@@ -2,6 +2,7 @@
 title: Custom Context Menus
 page_title: Custom Context Menus - WinForms GridView Control
 description: Learn how to change the default context menu of WinForms GridView with a custom one. 
+components: ["gridview"]
 slug: winforms/gridview/context-menus/custom-context-menus
 tags: custom,context,menus
 published: True

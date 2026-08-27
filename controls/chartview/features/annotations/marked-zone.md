@@ -2,6 +2,7 @@
 title: Marked Zone
 page_title: Marked zone - UI for WinForms Documentation
 description: The CartesianMarkedzoneAnnotation is a rectangle defined by the HorizontalFrom/To and VerticalFrom/To properties.
+components: ["chartview"]
 slug: winforms/chartview-/features/annotations/marked-zone
 tags: marked,zone
 published: True

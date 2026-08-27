@@ -2,6 +2,7 @@
 title: Insert a New Line in Merge Field
 page_title: Insert a New Line in Merge Field - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+components: ["richtexteditor"]
 slug: radrichtextbox-features-mail-merge-insert-new-line-in-merge-field
 tags: mail,merge,vertical,tab,line
 published: True

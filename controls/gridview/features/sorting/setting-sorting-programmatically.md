@@ -2,6 +2,7 @@
 title: Setting Sorting Programmatically
 page_title: Setting Sorting Programmatically - WinForms GridView Control
 description: Learn how to use SortDescriptors to sort the rows programmatically in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/sorting/setting-sorting-programmatically
 tags: setting,sorting,programmatically
 published: True

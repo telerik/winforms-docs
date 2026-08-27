@@ -2,6 +2,7 @@
 title: CultureInfo and RegionInfo Basics
 page_title: CultureInfo and RegionInfo Basics - WinForms DateTimePicker Control
 description: Learn how you can use RadDateTimePicker with different culture settings.
+components: ["editors"]
 slug: winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics
 tags: cultureinfo,and,regioninfo,basics
 published: True

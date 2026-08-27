@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms DataEntry Control
 description: WinForms DataEntry provides an easy way to display and edit arbitrary business objects in a form layout. 
+components: ["dataentry"]
 slug: winforms/dataentry
 tags: dataentry
 published: True

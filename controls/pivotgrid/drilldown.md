@@ -2,6 +2,7 @@
 title: Drill Down
 page_title: Drill Down - RadPivotGrid
 description: The LocalDataSourceProvider exposes a GetUnderlyingData method which allows extracting the records from the data source object responsible for accumulating the result for a particular row and column.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/drilldown
 tags: custom, aggregation
 published: True

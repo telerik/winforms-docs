@@ -2,6 +2,7 @@
 title: Track Changes
 page_title: Track Changes - WinForms RichTextEditor Control
 description: Track Changes is a way for WinForms RichTextEditor to keep track of the changes you make to a document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/track-changes
 tags: track,changes
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms StepProgressBar Control
 description: Get started with the WinForms StepProgressBar and construct your step layout navigation.   
+components: ["stepprogressbar"]
 slug: stepprogressbar-getting-started
 tags: stepprogressbar
 published: True

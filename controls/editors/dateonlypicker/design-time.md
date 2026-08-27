@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms DateOnlyPicker Control
 description: Learn what are the design time options of the WinForms DateTimePicker.
+components: ["editors"]
 slug: editors-dateonlypicker-design-time
 tags: dateonlypicker, designer, netcore
 published: True

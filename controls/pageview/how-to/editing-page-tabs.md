@@ -2,6 +2,7 @@
 title: Editing page tabs
 page_title: Editing page tabs - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+components: ["pageview"]
 slug: winforms/pageview/how-to/editing-page-tabs
 tags: editing,page,tabs
 published: True

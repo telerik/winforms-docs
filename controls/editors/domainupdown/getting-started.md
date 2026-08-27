@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms DomainUpDown Control
 description: WinForms DomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices.  
+components: ["editors"]
 slug: winforms/editors/domainupdown/getting-started
 tags: domainupdown, getting, started
 published: True

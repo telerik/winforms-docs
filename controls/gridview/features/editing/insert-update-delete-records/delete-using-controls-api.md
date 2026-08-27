@@ -2,6 +2,7 @@
 title: Insert/Update/Delete Using Controls API
 page_title: Insert/Update/Delete Using Controls API - RadGridView
 description: This article shows how you can insert, update or delete rows in RadGridView.
+components: ["gridview"]
 slug: winforms/gridview/insert/update/delete-records/insert/update/delete-using-controls-api
 tags: insert/update/delete,using,controls,api
 published: True

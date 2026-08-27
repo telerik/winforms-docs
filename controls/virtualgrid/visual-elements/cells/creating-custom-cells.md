@@ -2,6 +2,7 @@
 title: Creating custom cells
 page_title: Creating custom cells - RadVirtualGrid
 description: This article describes how one can create custom checkbox cell and add it to RadVirtualGrid.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/cells/creating-custom-cells
 tags: virtualgrid, cells, custom
 published: True

@@ -2,6 +2,7 @@
 title: Scroll and Zoom
 page_title: Scroll and Zoom - WinForms ChartView Control
 description: WinForms ChartView provides zoom and scroll interactivity with the ChartPanZoomController class.
+components: ["chartview"]
 slug: winforms/chartview-/features/scroll-and-zoom
 tags: scroll,and,zoom
 published: True

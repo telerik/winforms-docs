@@ -2,6 +2,7 @@
 title: Serialize/Deserialize to XML
 page_title: Serialize/Deserialize to XML - WinForms TreeView Control
 description: With WinForms TreeView you can save all nodes, including the nodes states (expanded, selected).
+components: ["treeview"]
 slug: winforms/treeview/data-binding/serialize/deserialize-to-xml
 tags: serialize/deserialize,to,xml
 published: True

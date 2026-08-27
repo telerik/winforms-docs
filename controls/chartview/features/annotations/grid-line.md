@@ -2,6 +2,7 @@
 title: Grid Line
 page_title: Grid line - UI for WinForms Documentation
 description: Grid line annotations are lines or circles that cross the chart grid at location on the axis, specified by their Value property.
+components: ["chartview"]
 slug: winforms/chartview-/features/annotations/grid-line
 tags: grid,line
 published: True

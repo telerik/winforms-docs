@@ -2,6 +2,7 @@
 title: Printing Support
 page_title: Printing Support - WinForms PdfViewer Control
 description: Learn how to print WinForms PdfViewer. 
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/printing-support
 tags: printing,support
 published: True

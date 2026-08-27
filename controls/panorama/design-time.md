@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Panorama Control
 description: Get familiar with the design time options provided by WinForms Panorama.
+components: ["panorama"]
 slug: winforms/panorama/design-time
 tags: design,time
 published: True

@@ -2,6 +2,7 @@
 title: Customize the ContextMenu
 page_title: Customize the ContextMenu - RadScheduler
 description: RadScheduler gives you the ability to easily customize its default context menu. This can be achieve by using the ContextMenuOppennig event.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/context-menu/customize-the-contextmenu
 tags: customize,the,contextmenu
 published: True

@@ -2,6 +2,7 @@
 title: Taskbar Manager
 page_title: Taskbar Manager - WinForms Taskbar Button
 description: Learn how to use the RadTaskbarManager for managing the WinForms Taskbar Button.  
+components: ["taskbarbutton"]
 slug: taskbar-manager
 tags: taskbar, manager 
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadSpreadsheet
 description: RadSpreadsheet is a control that allows editing tabular data utilizing a variety of cell formatting options, styles and themes.
+components: ["spreadsheet"]
 slug: radspreadsheet-overview
 tags: spreadsheet
 published: True

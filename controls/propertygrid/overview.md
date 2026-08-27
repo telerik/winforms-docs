@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadPropertyGrid
 description: RadPropertyGrid for WinForms displays the properties of a given object in a user-friendly way allowing the end-user to edit these properties using our editors.
+components: ["propertygrid"]
 slug: winforms/propertygrid
 tags: propertygrid
 published: True

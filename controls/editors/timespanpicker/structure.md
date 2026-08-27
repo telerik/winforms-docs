@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForm TimeSpanPicker Control
 description: Get familiar with the internal elements structure of WinForms TimeSpanPicker.  
+components: ["editors"]
 slug: radtimespanpicker-structure
 tags: radtimespanpicker
 published: True

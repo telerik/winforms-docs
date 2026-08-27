@@ -2,6 +2,7 @@
 title: Formatting Items
 page_title: Formatting Items - WinForms Calendar Control
 description: Learn how one can change the styles of the RadCalendar elements upon a condition.
+components: ["calendar"]
 slug: winforms/calendar/customizing-appearance/formatting-items
 tags: formatting, items
 published: True

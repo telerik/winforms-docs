@@ -2,6 +2,7 @@
 title: Pinned Tabs
 page_title: Pinned Tabs - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
+components: ["forms,dialogs,templates"]
 slug: radtabbedform-overview-pinned-tabs
 tags: radtabbedform
 published: True

@@ -2,6 +2,7 @@
 title: Using DocxFormatProvider
 page_title: Using DocxFormatProvider - RadRichTextEditor
 description: DocxFormatProvider makes it easy to import and export RadRichTextEditor to/from DOCX format, preserving the entire document structure and formatting.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/docx/docxformatprovider
 tags: import/export
 published: True

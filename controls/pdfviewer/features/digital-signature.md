@@ -2,6 +2,7 @@
 title: Digital Signature
 page_title: Digital Signature - WinForms PdfViewer Control
 description: With WinForms PdfViewer you are able to both display and verify documents within your application and make sure that it has not been tampered with.
+components: ["pdfviewer"]
 slug: radpdfviewer-features-digital-signature
 tags: digital, signature
 published: True

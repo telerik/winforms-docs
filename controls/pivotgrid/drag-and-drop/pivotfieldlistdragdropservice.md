@@ -2,6 +2,7 @@
 title: PivotFieldListDragDropService
 page_title: PivotFieldListDragDropService - WinForms PivotGrid Control
 description: WinForms PivotGrid supports PivotFieldListDragDropService allowing the end user can change the way of representing aggregated data.  
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/pivotfieldlistdragdropservice
 tags: pivotgrid
 published: True 

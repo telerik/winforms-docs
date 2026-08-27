@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - Toast Notification
 description: RadToastNotificationManager is built on the Windows' notification system, making it easier for our customers to create and manage notifications.  
+components: ["toastnotificationmanager"]
 slug: toast-notification-overview
 tags: toast notification
 published: True

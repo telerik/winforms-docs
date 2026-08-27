@@ -2,6 +2,7 @@
 title: Timeline View
 page_title: Timeline View - WinForms Scheduler Control
 description: WinForms Scheduler's Timeline view allows you to display appointments in horizontally arranged time slots. 
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/views/timeline-view
 tags: timeline,view
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms CheckBox Control
 description: WinForms CheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
+components: ["buttons"]
 slug: winforms/buttons/checkbox/getting-started
 tags: checkbox
 published: True

@@ -2,6 +2,7 @@
 title: GridViewHyperlinkColumn
 page_title: GridViewHyperlinkColumn - WinForms GridView Control
 description: GridViewHyperlinkColumn allows WinForms GridView to display, format, edit and open hyperlinks as well as run executable files.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewhyperlinkcolumn
 tags: gridviewhyperlinkcolumn
 published: True

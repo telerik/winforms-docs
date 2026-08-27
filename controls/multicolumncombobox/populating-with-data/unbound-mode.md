@@ -2,6 +2,7 @@
 title: Unbound Mode
 page_title: Unbound Mode - WinForms MultiColumnComboBox Control
 description: WinForms MultiColumnComboBox supports unbound mode allowing to add columns and rows programmatically.
+components: ["multicolumncombo"]
 slug: winforms/multicolumncombobox/unbound-mode
 tags: databinding
 published: True

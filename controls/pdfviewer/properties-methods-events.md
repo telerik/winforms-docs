@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods, Events - WinForms PdfViewer Control
 description: Get familiar with the public API that WinForms PdfViewer offers.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/properties-methods-and-events
 tags: pdfviewer, properties, methods, events
 published: True

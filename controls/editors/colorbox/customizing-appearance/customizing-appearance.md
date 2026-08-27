@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - RadColorBox
 description: RadColorBox is a themable control which allows users to select a color from a color dialog or to directly type it in the text field.
+components: ["editors"]
 slug: winforms/editors/customizing-appearance
 tags: colorbox
 published: True

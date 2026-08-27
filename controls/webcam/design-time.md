@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms WebCam
 description: Get familiar with the design-time options that WinForms WebCam offers.    
+components: ["webcam"]
 slug: webcam-design-time
 tags: webcam
 published: True

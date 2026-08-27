@@ -2,6 +2,7 @@
 title: ToolBar
 page_title: ToolBar - RadPropertyGrid
 description: ToolBar
+components: ["propertygrid"]
 slug: winforms/propertygrid/features/toolbar
 tags: toolbar
 published: True

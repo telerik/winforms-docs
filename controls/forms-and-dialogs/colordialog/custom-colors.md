@@ -2,6 +2,7 @@
 title: Custom Colors
 page_title: Custom Colors - WinForms ColorDialog
 description: WinForms ColorDialog offers a way to store the custom colors at a specific location via the CustomColorsConfigLocationNeeded event. 
+components: ["forms,dialogs,templates"]
 slug: color-dialog-custom-colors
 tags: color, dialog, custom
 published: True

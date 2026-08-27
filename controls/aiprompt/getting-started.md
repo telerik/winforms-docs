@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms AIPrompt Control
 description: AIPrompt
+components: ["aiprompt"]
 slug: aiprompt-getting-started
 tags: aiprompt, getting-started, design, programmatically
 published: True

@@ -2,6 +2,7 @@
 title: Using Large and Small Images
 page_title: Using Large and Small Images - RadRibbonBar
 description: Elements on a RadRibbonBar (such as buttons, check boxes, and repeat buttons) can each be assigned two images.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/getting-started/using-large-and-small-images
 tags: using,large,and,small,images
 published: True

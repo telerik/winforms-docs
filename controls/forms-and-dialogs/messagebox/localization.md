@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms MessageBox
 description: WinForms MessageBox provides localization of its buttons text via RadMessageLocalizationProvider.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/messagebox/localization
 tags: localization
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms SplitButton Control
 description: WinForms SplitButton provides a menu-like interface contained within a button that can be placed anywhere on a form.
+components: ["buttons"]
 slug: winforms/buttons/splitbutton/working-with-radsplitbutton-items
 tags: working,with,radsplitbutton,items
 published: True

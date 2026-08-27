@@ -2,6 +2,7 @@
 title: Working with UI Selection
 page_title: Working with UI Selection - WinForms Spreadsheet Control
 description: Get familiar with the API of the Selection class and demonstrate how to retrieve and change the current selection in WinForms Spreadsheet.
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-working-with-selection
 tags: working,with,ui,selection
 published: True

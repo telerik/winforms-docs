@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadPivotGrid
 description: RadPivotGrid can be localized to display any text and messages in a specific language by using a PivotGridLocalizationProvider
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/localization/localization
 tags: localization
 published: True

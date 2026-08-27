@@ -2,6 +2,7 @@
 title: GridViewDataColumn
 page_title: GridViewDataColumn - WinForms GridView Control
 description: WinForms GridViewDataColumn descends from GridViewColumn and is the base class for all data bound column types.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewdatacolumn
 tags: gridviewdatacolumn
 published: True

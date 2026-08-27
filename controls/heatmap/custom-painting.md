@@ -2,6 +2,7 @@
 title: Custom Painting
 page_title: Custom Painting - WinForms HeatMap Control
 description: Check our &quot;Custom Painting&quot; documentation article for the RadHeatMap WinForms control.
+components: ["heatmap"]
 slug: heatmap-custom-painting
 tags: heatmap, paint, cell
 published: True

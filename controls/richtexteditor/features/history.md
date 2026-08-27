@@ -2,6 +2,7 @@
 title: History
 page_title: History - WinForms RichTextEditor Control
 description: RadDocument used in WinForms RichTextEditor can track the history of any actions taken against its content. In this way it allows an undo and redo functionality to be easily implemented.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/history
 tags: history
 published: True

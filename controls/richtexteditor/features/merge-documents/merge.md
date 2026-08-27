@@ -2,6 +2,7 @@
 title: Insert Document at Caret Position
 page_title: Insert Document at Caret Position - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/features/merge-documents/merge
 tags: events
 published: True

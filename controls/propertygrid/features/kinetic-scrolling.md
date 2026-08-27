@@ -2,6 +2,7 @@
 title: Kinetic Scrolling
 page_title: Kinetic Scrolling - WinForms PropertyGrid Control
 description: ToolBar
+components: ["propertygrid"]
 slug: winforms-propertygrid-kinetic-scrolling
 tags: propertygrid, kinetic, scrolling
 published: True

@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms DataFilter Control
 description: WinForms DataFilter allows you to build complex filter expressions based on the data and collection type of the source fields. Learn what are its design time options.
+components: ["datafilter"]
 slug: winforms/datafilter/design-time
 tags: data, filter
 published: True

@@ -2,6 +2,7 @@
 title: Customizing Error Indication
 page_title: Customizing Error Indication - Validation Provider
 description: When a control is being validated and some of the validation rules fails, a tool tip indicating the error occurs. 
+components: ["validationprovider"]
 slug: validation-provider-customizing-error-indication
 tags: validation, provider
 published: True

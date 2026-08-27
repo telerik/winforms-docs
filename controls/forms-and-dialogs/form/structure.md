@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms RadForm
 description: Get familiar with the inner structure and organization of the elements which build the WinForms RadForm.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/form/structure
 tags: form
 published: True

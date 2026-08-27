@@ -2,6 +2,7 @@
 title: Thumbnail Buttons
 page_title: Thumbnail Buttons - Taskbar Manager
 description: The thumbnail preview window is shown when the mouse hovers over the application in the taskbar.   
+components: ["taskbarbutton"]
 slug: taskbar-button-features-thumbnail-buttons
 tags: taskabar, button
 published: True

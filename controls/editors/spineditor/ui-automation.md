@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadSpinEditor
 description: UI Automation Support (UI Accessibility) for RadSpinEditor.   
+components: ["editors"]
 slug: winforms/editors/spineditor-ui-automation
 tags: spineditor,ui,automation
 published: True

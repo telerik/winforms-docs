@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadGanttView
 description: This article shows how you can change the styles of RadGanttView in Visual Style Builder.
+components: ["ganttview"]
 slug: winforms/ganttview/themes
 tags: themes
 published: True

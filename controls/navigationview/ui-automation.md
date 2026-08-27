@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadNavigationView
 description: UI Automation Support (UI Accessibility) for RadNavigationView.   
+components: ["navigationview"]
 slug: navigationview-ui-automation
 tags: navigationview,ui,automation
 published: True

@@ -2,6 +2,7 @@
 title: Scroll to Item   
 page_title: RadChat ScrollToItem
 description: This articles shows how one can scroll to a particular message. 
+components: ["chat"]
 slug: radchat-scroll-to-item
 tags: chat, scroll
 published: True

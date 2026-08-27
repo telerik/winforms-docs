@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - Taskbar Button
 description: With the WinForms Taskbar Button users can give commands, access resources, and view program status directly from the taskbar.  
+components: ["taskbarbutton"]
 slug: taskbar-button-overview
 tags: taskbar, manager
 published: True

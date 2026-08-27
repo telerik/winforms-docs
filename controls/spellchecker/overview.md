@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadSpellChecker
 description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
+components: ["spellchecker"]
 slug: winforms/spellchecker
 tags: spellchecker
 published: True

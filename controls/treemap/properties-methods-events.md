@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms TreeMap Control
 description: Get familiar with the public API of the RadTreeMap WinForms control.
+components: ["treemap"]
 slug: treemap-properties-methods-events
 tags: treemap, properties, methods, events
 published: True

@@ -2,6 +2,7 @@
 title: Document Modes
 page_title: Document Modes - WinForms PdfViewer Control
 description: WinForms PdfViewer's document modes are controlled by a document presenter responsible for displaying the pages of the document.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/ui/document-modes
 tags: document presenters
 published: True

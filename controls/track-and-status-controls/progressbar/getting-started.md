@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms ProgressBar Control
 description: WinForms ProgressBar is designed to display progress information to the user during a long-running operation.  
+components: ["progressbar"]
 slug: winforms/track-and-status-controls/progressbar/getting-started
 tags: getting,started
 published: True

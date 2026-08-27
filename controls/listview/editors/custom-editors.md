@@ -2,6 +2,7 @@
 title: Custom Editors
 page_title: Custom Editors - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+components: ["listview"]
 slug: winforms/listview/editors/custom-editors
 tags: checkboxes,and,editors
 published: True

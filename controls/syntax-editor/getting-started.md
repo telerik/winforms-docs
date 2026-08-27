@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - RadSyntaxEditor
 description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience
+components: ["syntaxeditor"]
 slug: syntax-editor-getting-started
 tags: syntax-editor
 published: True

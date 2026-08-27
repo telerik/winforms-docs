@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - RadTextBoxControl
 description: TextBoxControl extends the the default text box by providing additional functionality like word formating and auto-complete. 
+components: ["editors"]
 slug: winforms/editors/textboxcontrol/customizing-appearance
 tags: textboxcontrol
 published: True

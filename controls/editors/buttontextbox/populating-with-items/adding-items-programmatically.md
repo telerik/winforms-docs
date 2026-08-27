@@ -2,6 +2,7 @@
 title: Adding Items Programmatically
 page_title: Adding Items Programmatically - WinForms ButtonTextBox Control
 description: WinForms ButtonTextBox supports adding items at run time, which means that you can manually populate it with data.
+components: ["editors"]
 slug: winforms/editors/buttontextbox/populating-with-data/adding-items-programmatically
 tags: adding,items,programmatically
 published: True

@@ -2,6 +2,7 @@
 title: Help bar
 page_title: Help bar - RadPropertyGrid
 description: RadPropertyGrid offers a help bar which reads and displays the name and content of the property Description attribute.
+components: ["propertygrid"]
 slug: winforms/propertygrid/features/help-bar
 tags: help,bar
 published: True

@@ -2,6 +2,7 @@
 title: Reordering Nodes
 page_title: Reordering Nodes - RadTreeView
 description: RadTreeView supports reordering nodes at run-time. This can be performed either by the end user on in the code behind.
+components: ["treeview"]
 slug: winforms/treeview/working-with-nodes/reordering-nodes
 tags: reordering,nodes
 published: True

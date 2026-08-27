@@ -2,6 +2,7 @@
 title: Docking Assistant
 page_title: Docking Assistant - RadDock
 description: The Docking Assistant indicates the relationship of a dragged panel to the rest of the docking layout.
+components: ["dock"]
 slug: winforms/dock/architecture-and-features/docking-assistant
 tags: docking,assistant
 published: True

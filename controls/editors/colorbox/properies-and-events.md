@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms ColorBox Control
 description: Get familiar with the public API of the WinForms ColorBox.
+components: ["editors"]
 slug: winforms/editors/colorbox/working-with-radcolorbox
 tags: working,with,radcolorbox
 published: True

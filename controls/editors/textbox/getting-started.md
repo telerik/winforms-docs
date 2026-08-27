@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms TextBox Control
 description: WinForms TextBox is a improve control of the standard WinForms TextBox. 
+components: ["editors"]
 slug: winforms/editors/textbox/getting-started
 tags: textbox, getting-started
 published: True

@@ -2,6 +2,7 @@
 title: Properties Methods and Events
 page_title: RadSparkline Properties Methods and Events
 description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance.
+components: ["sparkline"]
 slug: radsparkline-properties-methods-and-events
 tags: sparkline
 published: True

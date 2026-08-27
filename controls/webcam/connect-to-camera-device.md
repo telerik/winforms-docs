@@ -2,6 +2,7 @@
 title: Connect to a Camera Device
 page_title: Connect to a Camera Device - RadWebCam
 description: In case of more than one camera devices, you can specify which device to use.   
+components: ["webcam"]
 slug: winforms/editors/webcam/connect-to-camera-device
 tags: webcam
 published: True

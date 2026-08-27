@@ -2,6 +2,7 @@
 title: Binding to a Collection of Interfaces
 page_title: Binding to a Collection of Interfaces - WinForms GridView Control
 description: Learn how you can bind WinForms GridView to a collection of interfaces.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/binding-to-a-collection-of-interfaces
 tags: binding,to,a,collection,of,interfaces
 published: True

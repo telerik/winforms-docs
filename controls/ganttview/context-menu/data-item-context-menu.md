@@ -2,6 +2,7 @@
 title: Data item context menu
 page_title: Data item context menu - RadGanttView
 description: RadGanttView allows you to assign an individual context menu on each data item.
+components: ["ganttview"]
 slug: winforms/ganttview-/context-menu/data-item-context-menu
 tags: data,item,context,menu
 published: True

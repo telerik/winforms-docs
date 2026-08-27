@@ -2,6 +2,7 @@
 title: Navigation Buttons
 page_title: Navigation Buttons - WinForms SlideView Control
 description: Check our &quot;Navigation Buttons&quot; documentation article for the WinForms SlideView control.
+components: ["slideview"]
 slug: slideview-navigation-buttons
 tags: slideview, buttons
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms TreeView Control
 description: Learn how to start using RadTreeView by either adding nodes with the Property Builder or in the code behind. 
+components: ["treeview"]
 slug: winforms/treeview/getting-started
 tags: getting,started
 published: True

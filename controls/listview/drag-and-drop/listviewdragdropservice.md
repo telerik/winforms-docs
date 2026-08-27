@@ -2,6 +2,7 @@
 title: ListViewDragDropService
 page_title: ListViewDragDropService - WinForms ListView Control
 description: WinForms ListView handles the whole drag and drop operation by its ListViewDragDropService. Learn how to use it.
+components: ["listview"]
 slug: winforms/listview/drag-and-drop/listviewdragdropservice
 tags: drag,and,drop,in,bound,mode
 published: True

@@ -2,6 +2,7 @@
 title: Rigth-To-Left Support
 page_title: Rigth-To-Left Support - RadDataFilter
 description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields. 
+components: ["datafilter"]
 slug: winforms/datafilter/right-to-left
 tags: data, filter, localization
 published: True

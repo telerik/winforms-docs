@@ -2,6 +2,7 @@
 title: Formatting System Rows
 page_title: Formatting System Rows - RadVirtualGrid
 description: The RowFormatting event is used to add formatting to grid systems rows - header row, filter row and new row.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/rows/formatting-system-rows
 tags: virtualgrid, rows, formatting
 published: True

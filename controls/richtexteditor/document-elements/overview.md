@@ -2,6 +2,7 @@
 title: Elements Hierarchy
 page_title: Document Elements - RadRichTextEditor
 description: RadRichTextEditor is a control that allows you to display and edit rich text content including sections, paragraphs, spans, italic text, bold text, inline images, tables etc.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements
 tags: document,elements
 published: True

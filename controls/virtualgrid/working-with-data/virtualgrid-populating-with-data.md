@@ -2,6 +2,7 @@
 title: Populating with Data
 page_title: Populating with Data - WinForms VirtualGrid Control
 description: Learn how you can populate WinForms VirtualGrid with data.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/working-with-data/populating-with-data
 tags: virtualgrid, data
 published: True

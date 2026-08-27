@@ -2,6 +2,7 @@
 title: Property Precedence Rules
 page_title: Property Precedence Rules - UI for WinForms Tools
 description: This article show the Property Precedence Rules used in Visual Style Builder. 
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules
 tags: property,precedence,rules
 published: True

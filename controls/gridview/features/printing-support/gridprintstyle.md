@@ -2,6 +2,7 @@
 title: GridPrintStyle
 page_title: GridPrintStyle - RadGridView
 description: You can customize the settings of the grid print job by setting the PrintStyle.
+components: ["gridview"]
 slug: winforms/gridview/printing-support/gridprintstyle
 tags: gridprintstyle
 published: True

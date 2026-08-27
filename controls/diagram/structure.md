@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Diagram Control
 description: Get familiar with the internal elements structure of WinForms Diagram. 
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/structure
 tags: structure
 published: True

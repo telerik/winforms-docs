@@ -2,6 +2,7 @@
 title: Customizing composite filter dialog
 page_title: Customizing composite filter dialog - WinForms GridView Control
 description: Learn how to access the Composite Filter Dialog instance and change its properties.
+components: ["gridview"]
 slug: winforms/gridview/filtering/composite-filter-dialog
 tags: composite,filtering
 published: True

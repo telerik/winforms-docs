@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadDateOnlyPicker
 description: RadDateOnlyPicker allows interactive selection of DateOnly using a drop down calendar. 
+components: ["editors"]
 slug: editors-dateonlypicker-overview
 tags: dateonlypicker, netcore
 published: True

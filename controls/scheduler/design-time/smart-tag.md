@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - WinForms Scheduler Control
 description: Get familiar with the design time abilities of WinForms Scheduler and the SchedulerBindingDataSource object provided by their Smart Tag.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/design-time/smart-tag
 tags: design,time
 published: True

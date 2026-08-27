@@ -1,7 +1,8 @@
-****---
+---
 title: Overview
 page_title: Columns - RadGridView
 description: The Columns in RadGridView are the fundamental meta-objects for data source representation.
+components: ["gridview"]
 slug: winforms/gridview/columns
 tags: columns
 published: True

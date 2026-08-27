@@ -2,6 +2,7 @@
 title: Accessing and customizing elements
 page_title: Accessing and customizing elements - UI for WinForms Documentation
 description: RadCheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
+components: ["buttons"]
 slug: winforms/buttons/checkbox/customizing-appearance/accessing-and-customizing-elements 
 tags: checkbox, appearance
 published: True

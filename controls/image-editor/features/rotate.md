@@ -2,6 +2,7 @@
 title: Rotate
 page_title: Rotate - WinForms ImageEditor Control
 description: WinForms ImageEditor supports rotating the image at 90, 180, 270 degrees.
+components: ["imageeditor"]
 slug: radimageeditor-rotate
 tags: image, editor, rotate 
 published: True

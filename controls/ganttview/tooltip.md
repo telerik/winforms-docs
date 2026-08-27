@@ -2,6 +2,7 @@
 title: ToolTip
 page_title: ToolTip - WinForms GanttView Control
 description: GanttView supports ToolTip for its elements.
+components: ["ganttview"]
 slug: ganttview-tooltip
 tags: tooltips,tooltiptextneeded
 published: True

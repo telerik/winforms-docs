@@ -2,6 +2,7 @@
 title: Save and Load Layout
 page_title: Save and Load Layout - RadLinearGauge
 description: RadLinearGauge supports Save/Load layout functionality which gives you the opportunity to preserve gauge elements' settings and restore them later. The layout settings are written in XML file.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/lineargauge/save-and-load-layout
 tags: save,and,load,layout
 published: True

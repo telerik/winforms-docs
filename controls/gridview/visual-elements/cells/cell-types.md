@@ -2,6 +2,7 @@
 title: Cell Types
 page_title: Cell Types - RadGridView
 description: This article explains what cell type is used considering the column.
+components: ["gridview"]
 slug: winforms/gridview/cells/cell-types
 tags: cells types
 published: True

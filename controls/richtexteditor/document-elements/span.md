@@ -2,6 +2,7 @@
 title: Span
 page_title: Span - WinForms RichTextEditor Control
 description: Span class represents an inline object that allows you to display formatted text. A Span can only be used in the context of a Paragraph in WinForms RichTextEditor.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements/span
 tags: span
 published: True

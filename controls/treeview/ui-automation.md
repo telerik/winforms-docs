@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadTreeView
 description: UI Automation Support (UI Accessibility) for RadTreeView.   
+components: ["treeview"]
 slug: treeview-ui-automation
 tags: treeview,ui,automation
 published: True

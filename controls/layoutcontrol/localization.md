@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadLayoutControl
 description: Localization
+components: ["layoutcontrol"]
 slug: winforms/layoutcontrol/localization
 tags: localization
 published: True

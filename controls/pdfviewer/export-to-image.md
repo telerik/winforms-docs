@@ -2,6 +2,7 @@
 title: Export to Image
 page_title: Export To Image - WinForms PdfViewer Control
 description: Learn how you can use the built-in methods to export single or more pages to an image in WinForms PdfViewer. 
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/export-to-image
 tags: export, image
 published: True

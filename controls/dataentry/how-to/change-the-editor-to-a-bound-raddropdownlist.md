@@ -2,6 +2,7 @@
 title: Change The Editor To a Bound RadDropDownList
 page_title: Change the editor to a bound RadDropDownList - WinForms DataEntry Control
 description: Learn how to change the editor in WinForms DataEntry to a bound RadDropDownList.
+components: ["dataentry"]
 slug: winforms/dataentry/how-to/change-the-editor-to-a-bound-raddropdownlist
 tags: change,the,editor,to,a,bound,raddropdownlist
 published: True

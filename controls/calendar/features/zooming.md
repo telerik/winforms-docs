@@ -2,6 +2,7 @@
 title: Zoom
 page_title: Zooming - WinForms Calendar Control
 description: WinForms Calendar offers built-in date zoom functionality. 
+components: ["calendar"]
 slug: winforms/calendar/customizing-appearance/zooming
 tags: zooming
 published: True
