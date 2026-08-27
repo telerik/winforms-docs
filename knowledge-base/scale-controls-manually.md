@@ -2,6 +2,7 @@
 title: Scale Controls Manually
 page_title: Scale Controls Manually 
 description: Scale Controls Manually
+components: ["general"]
 slug: scale-controls-manually
 tags: common, scale, controls, hdpi
 published: True

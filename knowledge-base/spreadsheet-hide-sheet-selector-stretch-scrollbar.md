@@ -1,6 +1,7 @@
 ---
 title: Hiding Sheet Selector and Stretching Scrollbar in UI for WinForms Spreadsheet
 description: Learn how to hide the sheet selector bar in the RadSpreadsheet for Windows Forms and make the scrollbar occupy the entire width.
+components: ["spreadsheet"]
 type: how-to
 page_title: How to Hide Sheet Selector and Adjust Scrollbar Width in RadSpreadsheet for WinForms
 meta_title: Hide Sheet Selector and Adjust Scrollbar Width in RadSpreadsheet for Windows Forms

@@ -1,6 +1,7 @@
 ---
 title: How to Update the Custom UserControl of the SplashScreen
 description: This article shows how to update the custom UserControl of the SplashScreen.
+components: ["splashscreen"]
 type: how-to
 page_title: How to Update the Custom UserControl of the SplashScreen
 slug: update-splash-screen-control

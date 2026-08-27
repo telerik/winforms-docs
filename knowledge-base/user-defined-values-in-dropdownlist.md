@@ -1,6 +1,7 @@
 ---
 title: How to Add User-Defined Values in RadDropDownList
 description: This article shows how you can add user defined values in RadDropDownList.
+components: ["dropdownlist"]
 type: how-to
 page_title: How to Add User-Defined Values in RadDropDownList
 slug: user-defined-values-in-dropdownlist

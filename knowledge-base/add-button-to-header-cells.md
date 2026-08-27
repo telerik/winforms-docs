@@ -1,6 +1,7 @@
 ---
 title: How to Add a Button to Header Cells in RadGridView
 description: This article demonstrates how to add a button element in grid's header cells
+components: ["gridview"]
 type: how-to
 page_title: How to Add a Button to Header Cells in RadGridView
 slug: add-button-to-header-cells

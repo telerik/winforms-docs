@@ -1,6 +1,7 @@
 ---
 title: How To Dynamically Adjust RadRichTextEditor Height To Fit Its Content
 description: An example demonstrating how the RadRichTextEditor height can be adjusted to match the height of its document
+components: ["richtexteditor"]
 type: how-to
 page_title: How To Dynamically Adjust RadRichTextEditor Height To Fit Its Content
 slug:  richtexteditor-adjust-height

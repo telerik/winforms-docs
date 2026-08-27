@@ -1,6 +1,7 @@
 ---
 title: Adding Your License Key to CI/CD Platforms as a Code Snippet
 description: Learn how to add your Telerik UI for .NET WinForms license as a code snippet in CI/CD environments.
+components: ["licensing"]
 type: how-to
 page_title: Adding Your License Key to CI/CD Platforms as a Code Snippet
 slug: add-license-as-snippet-ci-cd

@@ -1,6 +1,7 @@
 ---
 title: How to Select the Clicked Word in RadSyntaxEditor 
 description: This article demonstrates how to select the clicked word in RadSyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Select the Clicked Word in RadSyntaxEditor     
 slug: select-clicked-word-in-syntax-editor

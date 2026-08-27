@@ -1,6 +1,7 @@
 ---
 title: How to Customize Rating column
 description: This article shows how to change the star rating elements to heart and style the value/hover elements. 
+components: ["gridview"]
 type: how-to
 page_title: How to Customize Rating column
 slug: customize-rating-column

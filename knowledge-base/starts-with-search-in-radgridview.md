@@ -1,6 +1,7 @@
 ---
 title: StartsWith search in RadGridView
 description: This article shows how you can perform StartsWith search in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: StartsWith search in RadGridView
 slug: starts-with-search-in-radgridview

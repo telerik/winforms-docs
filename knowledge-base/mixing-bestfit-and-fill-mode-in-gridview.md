@@ -1,6 +1,7 @@
 ---
 title: Mixing BestFit and Fill Modes for the GridView's Columns
 description: This article demonstrates how to combine bestfit and fill modes for the columns in RadGridView  
+components: ["gridview"]
 type: how-to
 page_title: Mixing BestFit and Fill Modes for the GridView's Columns  
 slug: mixing-bestfit-and-fill-mode-in-gridview

@@ -1,6 +1,7 @@
 ---
 title: How to Save Custom Backgrounds in RadScheduler when Exporting to ICal
 description: Learn how to keep the custom backgrounds in RadScheduler exported to ICal.
+components: ["scheduler,reminder"]
 type: how-to 
 page_title: How to Save Custom Backgrounds in RadScheduler when Exporting to ICal
 slug: save-custom-backgrounds-in-scheduler-when-exporting-to-ical

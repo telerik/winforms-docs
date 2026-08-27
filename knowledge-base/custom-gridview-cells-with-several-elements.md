@@ -1,6 +1,7 @@
 ---
 title: Create Custom GridView Cells with Several Elements
 description: This article demonstrates how to create custom GridView cells with several elements
+components: ["gridview"]
 type: how-to
 page_title: Create Custom GridView Cells with Several Elements
 slug: custom-gridview-cells-with-several-elements

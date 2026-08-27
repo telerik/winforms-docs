@@ -1,6 +1,7 @@
 ---
 title: Disabling Video Recording Button in RadWebCam for WinForms
 description: Learn how to disable video recording button in RadWebCam for WinForms to utilize only the snapshot feature.
+components: ["webcam"]
 type: how-to
 page_title: How to Disable Video Recording in RadWebCam
 slug: webcam-disable-video-recording

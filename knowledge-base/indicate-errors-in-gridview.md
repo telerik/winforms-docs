@@ -1,6 +1,7 @@
 ---
 title: How to Indicate Errors in RadGridView
 description: How to show incorrect cells' values after editing the WinForms RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Indicate Errors in RadGridView
 slug: indicate-errors-in-gridview

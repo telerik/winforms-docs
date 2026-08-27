@@ -1,6 +1,7 @@
 ---
 title: How to Improve Scrolling Performance with Down Arrow Key in RadGridView
 description: Learn how to optimize performance when scrolling with Down arrow key in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Improve Scrolling Performance with Down Arrow Key in RadGridView
 slug: gridview-improve-down-arrow-key-performance

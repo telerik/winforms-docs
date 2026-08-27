@@ -1,6 +1,7 @@
 ---
 title: Setting ToolTip Text for GridViewSparklineColumn in RadGridView for WinForms
 description: Learn how to customize the ToolTip text for values displayed in the GridViewSparklineColumn in RadGridView for WinForms.
+components: ["gridview"]
 type: how-to
 page_title: Customizing ToolTip Label for GridViewSparklineColumn in WinForms RadGridView
 slug: gridview-sparkline-tooltip-text

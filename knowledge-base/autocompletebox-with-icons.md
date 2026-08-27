@@ -1,6 +1,7 @@
 ---
 title: How to add image icons to RadAutoCompleteBox
 description: This article shows how you can add image icons to RadAutoCompleteBox
+components: ["autocompletebox"]
 type: how-to
 page_title: How to add image icons to RadAutoCompleteBox
 slug: autocompletebox-with-icons  

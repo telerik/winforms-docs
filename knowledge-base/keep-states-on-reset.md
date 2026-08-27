@@ -1,6 +1,7 @@
 ---
 title: Save and Restore the rows states when resetting. 
 description: This article show how you can sava an restore the row states when expanding or collapsing. 
+components: ["gridview"]
 type: how-to
 page_title: Save and Restore the rows states when resetting. 
 slug: keep-states-on-reset

@@ -1,6 +1,7 @@
 ---
 title: Removing the Icon Column in RadContextMenu for WinForms
 description: Learn how to hide or remove the icon column in RadContextMenu when items do not have icons, for a cleaner UI in WinForms applications.
+components: ["contextmenu"]
 type: how-to
 page_title: How to Hide the Icon Column in RadContextMenu for WinForms Applications
 slug: contextmenu-remove-icon-column

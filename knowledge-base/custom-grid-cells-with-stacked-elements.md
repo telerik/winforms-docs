@@ -1,6 +1,7 @@
 ---
 title: Build Custom GridView Cells with Stacked Elements
 description: Learn how to construct custom cells with stacked elements inside the WinForms GridView.
+components: ["gridview"]
 type: how-to 
 page_title: How to Build Custom GridView Cells with Stacked Elements
 slug: custom-grid-cells-with-stacked-elements

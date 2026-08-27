@@ -1,6 +1,7 @@
 ---
 title: Wrap Text in ListView's Cells
 description: This article shows how you can wrap the text in ListView's cells.
+components: ["listview"]
 type: how-to
 page_title: Wrap Text in ListView's Cells
 slug: listview-textwrap-in-cells

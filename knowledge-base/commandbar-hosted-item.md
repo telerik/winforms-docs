@@ -1,6 +1,7 @@
 ---
 title: How to host RadElement in RadCommandBar
 description: This article demonstrates how you can add a custom element to RadCommandBar area
+components: ["commandbar"]
 type: how-to
 page_title: How to host RadElement in RadCommandBar
 slug: host-element-in-commandbar

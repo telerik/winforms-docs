@@ -1,6 +1,7 @@
 ---
 title: How to Prevent Applying Formatting To Other Columns In RadGridView CellElements
 description: Learn how to prevent applying formatting in the WinForms GridView cell elements.
+components: ["gridview"]
 type: how-to
 page_title: How to Prevent Applying Formatting To Other Columns In RadGridView CellElements
 slug: customize-grid-data-cell-element

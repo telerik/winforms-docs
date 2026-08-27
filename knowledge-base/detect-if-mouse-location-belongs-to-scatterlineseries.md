@@ -1,6 +1,7 @@
 ---
 title: How to Detect if Mouse Click Location Belongs to ScatterLineSeries
 description: This article shows how you can detect whether the user clicks over the line series on the WinForms ChartView.
+components: ["chartview"]
 type: how-to
 page_title: How to Detect if Mouse Click Location Belongs to ScatterLineSeries
 slug: detect-if-mouse-location-belongs-to-scatterlineseries

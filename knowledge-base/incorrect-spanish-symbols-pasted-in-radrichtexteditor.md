@@ -1,6 +1,7 @@
 ---
 title: How to Deal with Incorrect Spanish Symbols Pasted in RadRichTextEditor
 description: Learn how to deal with the weird characters in the HTML content coming from the clipboard when pasting  in the WinForms RichTextEditor. 
+components: ["richtexteditor"]
 type: how-to
 page_title: Incorrect Spanish Symbols are Pasted in RadRichTextEditor
 slug: incorrect-spanish-symbols-pasted-in-radrichtexteditor

@@ -1,6 +1,7 @@
 ---
 title: Customize the Color for SVG Images
 description: Edit the color used in SVG images in the Telerik WinForms suite.
+components: ["general"]
 type: how-to
 page_title: Customize the Color for SVG Images
 slug: customize-the-color-for-svg-images

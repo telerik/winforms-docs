@@ -1,6 +1,7 @@
 ---
 title: Use RadPopupEditor in RadGridView
 description: Use RadPopupEditor in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: Use RadPopupEditor in RadGridView
 slug: gridpopupeditor

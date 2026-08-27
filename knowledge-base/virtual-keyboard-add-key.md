@@ -1,6 +1,7 @@
 ---
 title: How to Add Backspace Key to VirtualKeyboard in Numpad Mode
 description: This article shows how to add Backspace Key to VirtualKeyboard in Numpad Mode.
+components: ["virtualkeyboard"]
 type: how-to
 page_title: How to Add Backspace Key to VirtualKeyboard in Numpad Mode
 slug: virtual-keyboard-add-key

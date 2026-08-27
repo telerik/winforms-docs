@@ -1,6 +1,7 @@
 ---
 title: Resolving TelerikLicense.vb Build Error for Telerik UI for WinForms 2025 Q1 License Key
 description: Learn how to resolvr TelerikLicense.vb Build Error for Telerik UI for WinForms 2025 Q1 License Key
+components: ["licensing"]
 type: how-to
 page_title: Resolving TelerikLicense.vb Build Error for Telerik UI for WinForms 2025 Q1 License Key
 slug: resolve-telerik-license-vb-error

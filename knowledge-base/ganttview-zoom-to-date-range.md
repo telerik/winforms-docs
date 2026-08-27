@@ -1,6 +1,7 @@
 ---
 title: Zoom to Date Range
 description: An example demonstrating how the OnePixelTime property can be calculated so that a particular date range is displayed in the view 
+components: ["ganttview"]
 type: how-to
 page_title: Zoom to Date Range
 slug: ganttview-zoom-to-date-range

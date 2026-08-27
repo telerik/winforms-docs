@@ -1,6 +1,7 @@
 ---
 title: Export RadGridView in Docx document using RadWordsProcessing
 description: An example that demonstrates how to export RadGridView in docx file  
+components: ["gridview"]
 type: how-to
 page_title: Export RadGridView in Docx document using RadWordsProcessing
 slug: gridview-export-in-docx

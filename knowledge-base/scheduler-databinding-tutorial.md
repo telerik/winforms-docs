@@ -1,6 +1,7 @@
 ---
 title: Scheduler Data Binding Tutorial
 description: This article shows a full tutorial how to bind RadScheduler. 
+components: ["scheduler,reminder"]
 type: how-to
 page_title: Scheduler Data Binding Tutorial    
 slug: scheduler-databinding-tutorial

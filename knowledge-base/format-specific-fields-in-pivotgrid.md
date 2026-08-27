@@ -1,6 +1,7 @@
 ---
 title: Format Specific Fields in RadPivotGrid
 description: Learn how to format specific fields in RadPivotGrid
+components: ["pivotgrid"]
 type: how-to
 page_title: Format Specific Fields in RadPivotGrid 
 slug: format-specific-fields-in-pivotgrid

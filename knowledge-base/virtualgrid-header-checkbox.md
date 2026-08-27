@@ -1,6 +1,7 @@
 ---
 title: How to Create a Header CheckBox in VirtualGrid
 description: This article shows how you can create a header checkbox in RadVirtualGrid.
+components: ["virtualgrid"]
 type: how-to
 page_title: How to Create a Header CheckBox in VirtualGrid
 slug: virtualgrid-header-checkbox

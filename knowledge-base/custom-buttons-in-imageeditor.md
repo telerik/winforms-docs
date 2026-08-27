@@ -1,6 +1,7 @@
 ---
 title: How to Add Custom Buttons to RadImageEditor
 description: Learn how to customize the command buttons in the WinForms ImageEditor.
+components: ["imageeditor"]
 type: how-to 
 page_title: How to Add Custom Buttons to RadImageEditor
 slug: custom-buttons-in-imageeditor

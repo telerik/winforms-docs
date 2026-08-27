@@ -1,6 +1,7 @@
 ---
 title: How to modify the default ContextMenu of the RadCheckedDropDownList
 description: Modify the default ContextMenu of the RadCheckedDropDownList.
+components: ["checkeddropdownlist"]
 type: how-to
 page_title: Modify the default ContextMenu of the RadCheckedDropDownList  
 slug: checked-dropdownlist-contextmenu

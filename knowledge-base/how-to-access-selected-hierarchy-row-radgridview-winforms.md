@@ -1,6 +1,7 @@
 ---
 title: How to get selected rows in the Child Grid of RadGridView for WinForms
 description: Learn how to programmatically determine and access the selected row in a child grid within RadGridView for WinForms.
+components: ["gridview"]
 type: how-to
 page_title: How to get the selected Selected Child Rows in RadGridView for WinForms
 slug: how-to-access-selected-hierarchy-row-radgridview-winforms

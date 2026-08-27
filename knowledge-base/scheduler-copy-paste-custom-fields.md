@@ -1,6 +1,7 @@
 ---
 title: Copy/Paste custom fields in RadScheduler
 description: This article shows how you can copy/paste appointment's custom fields in RadScheduler.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to copy/paste custom fields in RadScheduler
 slug: scheduler-copy-paste-custom-fields

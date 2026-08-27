@@ -1,6 +1,7 @@
 ---
 title: Performance Boost with Virtual RadMultiColumnComboBox - Quick Loading and Fast Filtering using Trie
 description: Performance Boost with Virtual RadMultiColumnComboBox - Quick Loading and Fast Filtering using Trie. Check it now!
+components: ["multicolumncombo"]
 type: how-to
 page_title: Performance Boost with Virtual RadMultiColumnComboBox - Quick Loading and Fast Filtering using Trie
 slug: performance-boots-with-virtual-radmulticolumncombobox

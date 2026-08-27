@@ -1,6 +1,7 @@
 ---
 title: Add custom buttons in RadMultiColumnComboBox popup
 description: This article shows how to customize the popup in RadMultiColumnComboBox by adding additional buttons
+components: ["multicolumncombo"]
 type: how-to
 page_title: Add custom buttons in RadMultiColumnComboBox popup
 slug: add-custom-buttons-in-radmulticolumncombobox-popup

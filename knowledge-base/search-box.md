@@ -1,6 +1,7 @@
 ---
 title: Search box
 description: Search box. Check it now!
+components: ["general"]
 type: how-to
 page_title: Search box
 slug: search-box

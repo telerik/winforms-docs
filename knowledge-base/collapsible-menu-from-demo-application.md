@@ -1,6 +1,7 @@
 ---
 title: Collapsible menu from Demo application
 description: Collapsible menu from Demo application. Check it now!
+components: ["collapsiblepanel"]
 type: how-to
 page_title: Collapsible menu from Demo application
 slug: collapsible-menu-from-demo-application

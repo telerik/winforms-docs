@@ -1,6 +1,7 @@
 ---
 title: How to Use Shortcuts in Chat Messages
 description: This article demonstrates how to use shortcuts to copy/paste text in chat messages
+components: ["chat"]
 type: how-to
 page_title: How to Use Shortcuts in Chat Messages
 slug: how-to-use-shortcuts-in-chat-messages

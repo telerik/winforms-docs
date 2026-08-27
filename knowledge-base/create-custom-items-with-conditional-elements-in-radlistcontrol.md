@@ -1,6 +1,7 @@
 ---
 title: How to Create Custom Items with Conditional Elements in RadListControl 
 description: This article demonstrates how to create custom items with conditional elements in RadListControl.   
+components: ["listcontrol"]
 type: how-to
 page_title: How to Create Custom Items with Conditional Elements in RadListControl  
 slug: create-custom-items-with-conditional-elements-in-radlistcontrol

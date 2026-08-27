@@ -1,6 +1,7 @@
 ---
 title: Hide/Show a Chart Series by Clicking a Legend Item
 description: This article shows how you can hide/show a chart series by clicking a legend item. 
+components: ["chartview"]
 type: how-to
 page_title: How to Hide/Show a Chart Series by Clicking a Legend Item
 slug: hide-chart-series

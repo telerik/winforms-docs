@@ -1,6 +1,7 @@
 ---
 title: Double Buffered Table Layout Panel
 description: Use DoubleBufferedTableLayoutPanel to prevent flickering.
+components: ["general"]
 type: troubleshooting
 page_title: Double Buffered Table Layout Panel
 slug: double-Buffered-table-layout-panel

@@ -1,6 +1,7 @@
 ---
 title: Multi select drop down list
 description: Multi select drop down list. Check it now!
+components: ["dropdownlist"]
 type: how-to
 page_title: Multi select drop down list
 slug: multi-select-drop-down-list

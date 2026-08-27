@@ -1,6 +1,7 @@
 ---
 title: How to position the RadDesktopAlert control in the center of a Form
 description: Position the RadDesktopAlert control in the center of a Form.
+components: ["desktopalert"]
 type: how-to
 page_title: Position the RadDesktopAlert Control in the Center of a Form
 slug: desktop-position-center-form

@@ -1,6 +1,7 @@
 ---
 title: Add two or more controls in one cell in RadGridView
 description: This article demonstrates how to add two or more controls in one cell in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: Add two or more controls in one cell in RadGridView
 slug: add-two-or-more-controls-in-one-cell-in-grid

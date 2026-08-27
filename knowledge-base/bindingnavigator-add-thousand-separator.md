@@ -1,6 +1,7 @@
 ---
 title: Showing Thousand Separator in RadBindingNavigator for WinForms
 description: Learn how to display a thousand separator in the RadBindingNavigator control for WinForms.
+components: ["bindingnavigator"]
 type: how-to
 page_title: How to Show Thousand Separator in RadBindingNavigator for WinForms
 slug: show-thousand-separator-radbindingnavigator-winforms

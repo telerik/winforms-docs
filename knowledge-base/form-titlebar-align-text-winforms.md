@@ -1,6 +1,7 @@
 ---
 title: Aligning Text in RadTitleBar
 description: Learn how to change the text position in the RadTitleBar control for WinForms applications.
+components: ["titlebar"]
 type: how-to
 page_title: How to Center Text on RadTitleBar in WinForms
 slug: form-titlebar-align-text-winforms

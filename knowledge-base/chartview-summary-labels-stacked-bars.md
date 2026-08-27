@@ -1,6 +1,7 @@
 ---
 title: Summary Labels on Stacked Bars
 description: An example demonstrating how multiple BarSeries can be customized when they are stacked by adding a summary label at the top.  
+components: ["chartview"]
 type: how-to
 page_title: How to add a summary label on stacked bars
 slug: chartview-summary-labels-stacked-bars

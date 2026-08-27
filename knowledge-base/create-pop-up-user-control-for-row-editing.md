@@ -1,6 +1,7 @@
 ---
 title: Create pop-up user control for row editing
 description: Create pop-up user control for row editing. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Create pop-up user control for row editing
 slug: create-pop-up-user-control-for-row-editing

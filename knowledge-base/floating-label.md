@@ -1,6 +1,7 @@
 ---
 title: Floating RadLabel
 description: This article demonstrates how to create floating RadLabel
+components: ["label"]
 type: how-to
 page_title: Floating RadLabel
 slug: floating-label

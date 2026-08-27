@@ -1,6 +1,7 @@
 ---
 title: Validate Input and Play Error Sound
 description: An example demonstrating how the RadMaskedEditBox control can be customized to validate the user input and play error sound upon validating the input according to the applied mask.  
+components: ["maskededitbox"]
 type: how-to
 page_title: Validate Input and Play Error Sound
 slug: masked-edit-box-play-sound

@@ -1,6 +1,7 @@
 ---
 title: How to detect DataPoint of RadBarSeries on Mouse Click in RadChartView
 description: Learn how to detect the underlying datapoint of a BarSeries when clicking on a specific bar in RadChartView.
+components: ["chartview"]
 type: how-to
 page_title: How to Detect DataPoint on Click in RadChartView for WinForms
 meta_title: How to Detect DataPoint on Click in RadChartView for WinForms

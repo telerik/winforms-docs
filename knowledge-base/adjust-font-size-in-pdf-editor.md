@@ -1,6 +1,7 @@
 ---
 title: How to Adjust Font Size for the Text Fields in PDF Forms
 description: This article shows how you can detect whether the user clicks over the line series on the WinForms ChartView.
+components: ["pdfviewer"]
 type: how-to
 page_title: How to Adjust Font Size for the Text Fields in PDF Forms
 slug: adjust-font-size-in-pdf-editor

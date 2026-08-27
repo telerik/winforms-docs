@@ -1,6 +1,7 @@
 ---
 title: Implementing a chrome window
 description: Implementing a chrome window. Check it now!
+components: ["general"]
 type: how-to
 page_title: Implementing a chrome window
 slug: implementing-a-chrome-window

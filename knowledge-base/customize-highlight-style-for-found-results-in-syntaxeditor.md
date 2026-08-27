@@ -1,6 +1,7 @@
 ---
 title: How to Customize the Highlight Style for the Found Results in SyntaxEditor
 description: Learn how to change the highlight colors for the search matches in the WinForms SyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to 
 page_title: How to Customize the Highlight Style for the Found Results in SyntaxEditor
 slug: customize-highlight-style-for-found-results-in-syntaxeditor

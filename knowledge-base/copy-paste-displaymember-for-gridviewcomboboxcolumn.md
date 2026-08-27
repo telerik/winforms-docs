@@ -1,6 +1,7 @@
 ---
 title: Copy/Paste DisplayMember for GridViewComboBoxColumn
 description: Copy/Paste DisplayMember for GridViewComboBoxColumn. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Copy/Paste DisplayMember for GridViewComboBoxColumn
 slug: copy-paste-displaymember-for-gridviewcomboboxcolumn

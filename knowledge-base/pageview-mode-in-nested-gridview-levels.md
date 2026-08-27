@@ -1,6 +1,7 @@
 ---
 title: How to Change PageViewMode for the Nested Levels in RadGridView 
 description: Learn how to change the PageViewMode for the nested levels in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Change PageViewMode for the Nested Levels in RadGridView   
 slug: pageview-mode-in-nested-gridview-levels

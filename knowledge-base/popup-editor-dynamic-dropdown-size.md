@@ -1,6 +1,7 @@
 ---
 title: Dynamic DropDown Size for RadPopupEditor
 description: Learn how to adjust the popup size dynamically according to the control's screen location.
+components: ["popupeditor"]
 type: how-to 
 page_title: How to Achieve Dynamic DropDown Size for RadPopupEditor
 slug: popup-editor-dynamic-dropdown-size

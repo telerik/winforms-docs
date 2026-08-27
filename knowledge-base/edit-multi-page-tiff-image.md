@@ -1,6 +1,7 @@
 ---
 title: How to Edit a Multi-page TIFF Image
 description: Learn how to edit multi-page TIFF image in the WinForms ImageEditor.
+components: ["imageeditor"]
 type: how-to 
 page_title: How to Edit a Multi-page TIFF Image
 slug: edit-multi-page-tiff-image

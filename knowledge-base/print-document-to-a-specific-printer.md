@@ -1,6 +1,7 @@
 ---
 title: How to Print Documents to a Specific Printer
 description: Learn how to print documents to a specific printer with the WinForms RadPrintDocument. 
+components: ["general"]
 type: how-to
 page_title: How to Print Documents to a Specific Printer
 slug: print-document-to-a-specific-printer

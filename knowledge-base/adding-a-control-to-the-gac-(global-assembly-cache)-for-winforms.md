@@ -1,6 +1,7 @@
 ---
 title: Adding a control to the GAC (Global Assembly Cache) for WinForms
 description: Adding a control to the GAC (Global Assembly Cache) for WinForms. Check it now!
+components: ["general"]
 type: how-to
 page_title: Adding a control to the GAC (Global Assembly Cache) for WinForms
 slug: adding-a-control-to-the-gac-(global-assembly-cache)-for-winforms

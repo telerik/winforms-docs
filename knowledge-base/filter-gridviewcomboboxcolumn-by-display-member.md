@@ -1,6 +1,7 @@
 ---
 title: How to Filter a GridViewComboBoxColumn by DisplayMember
 description: This article demonstrates how to filter a GridViewComboBoxColumn by DisplayMember
+components: ["gridview"]
 type: how-to
 page_title: How to Filter a GridViewComboBoxColumn by DisplayMember 
 slug: filter-gridviewcomboboxcolumn-by-display-member

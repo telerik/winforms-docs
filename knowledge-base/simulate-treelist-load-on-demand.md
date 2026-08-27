@@ -1,6 +1,7 @@
 ---
 title: Simulate TreeList Control with Load on Demand
 description: Learn how to achieve TreeList control with load on demand hierarchy.
+components: ["treeview"]
 type: how-to
 page_title: Simulate TreeList Control with Load on Demand
 slug: simulate-treelist-load-on-demand

@@ -1,6 +1,7 @@
 ---
 title: Adjusting Mouse Wheel Scroll Step in SyntaxEditor for UI for WinForms
 description: Learn how to customize the mouse wheel scroll step in the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 type: how-to
 page_title: Customize Mouse Wheel Scrolling Speed/Step in RadSyntaxEditor
 meta_title: Customize Mouse Wheel Scrolling Speed/Step in RadSyntaxEditor

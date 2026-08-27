@@ -1,6 +1,7 @@
 ---
 title: How to set ScreenTip to show, currently hovered PivotGroupElement, in which RowGroupDescription is located
 description: This article shows how to set ScreenTip to show, currently hovered PivotGroupElement, in which RowGroupDescription is located
+components: ["pivotgrid"]
 type: how-to
 page_title:  How to set ScreenTip to Show, Currently Hovered PivotGroupElement, in which RowGroupDescription is Located
 slug: pivotgrid-groupelement-screentip

@@ -1,6 +1,7 @@
 ---
 title: Build Hierarchy in RadGridView from a Nested List
 description: This article shows how you can generate a hierarchical grid from a nested list in the DataSource's objects.
+components: ["gridview"]
 type: how-to
 page_title: How to build hierarchy in RadGridView from a nested list
 slug: gridview-build-hierarchy-from-a-nested-list

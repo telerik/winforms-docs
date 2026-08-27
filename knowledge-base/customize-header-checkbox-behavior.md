@@ -1,6 +1,7 @@
 ---
 title: Customize the header checkbox behavior in GridViewCheckBoxColumn  
 description: This article shows how you can customize the behavior of the header checkbox.
+components: ["gridview"]
 type: how-to
 page_title: Customize the header checkbox behavior in GridViewCheckBoxColumn  
 slug: customize-header-checkbox-behavior

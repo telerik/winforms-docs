@@ -1,6 +1,7 @@
 ---
 title: How to Plot Error Bars (x-y) on a Scatter Plot 
 description: This article demonstrates how to error bars (x-y) on a scatter plot.
+components: ["chartview"]
 type: how-to
 page_title: How to error bars (x-y) on a scatter plot  
 slug: how-to-plot-error-bars-on-scatter-plot

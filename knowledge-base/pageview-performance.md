@@ -1,6 +1,7 @@
 ---
 title: How to Make Switching between Pages Faster in RadPageView
 description: Learn how to make switching between pages faster in the WinForms PageView.
+components: ["pageview"]
 type: how-to 
 page_title: How to Make Switching between Pages Faster in RadPageView
 slug: pageview-performance

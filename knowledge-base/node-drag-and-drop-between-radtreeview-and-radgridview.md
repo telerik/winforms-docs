@@ -1,6 +1,7 @@
 ---
 title: Node drag and drop between RadTreeView and RadGridView
 description: Node drag and drop between RadTreeView and RadGridView. Check it now!
+components: ["treeview"]
 type: how-to
 page_title: Node drag and drop between RadTreeView and RadGridView
 slug: node-drag-and-drop-between-radtreeview-and-radgridview

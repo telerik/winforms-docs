@@ -1,6 +1,7 @@
 ---
 title: Setting Default Cell Content Alignment in RichTextEditor Programmatically
 description: Learn how to set each cell's content alignment to left and centered by default in RichTextEditor for UI for WinForms.
+components: ["richtexteditor"]
 type: how-to
 page_title: How to Align Table Cell Content in RichTextEditor for WinForms
 meta_title: How to Align Table Cell Content in RichTextEditor for WinForms

@@ -1,6 +1,7 @@
 ---
 title: Validate user action when removing items from RadAutoCompleteBox
 description: This article demonstrates how to validate user action when removing items from RadAutoCompleteBox
+components: ["autocompletebox"]
 type: how-to
 page_title: 
 slug: validate-user-action-when-removing-items-from-radautocompletebox

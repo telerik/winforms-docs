@@ -1,6 +1,7 @@
 ---
 title: Working Hours in GanttView  
 description: This article shows how to achieve working hours in RadGanttView. 
+components: ["ganttview"]
 type: how-to
 page_title: Working Hours in GanttView     
 slug: working-hours-in-ganttview 

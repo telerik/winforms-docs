@@ -1,6 +1,7 @@
 ---
 title: GridView Cells In Sorted Columns Jumps To a New Position After Editing Its Value 
 description: Learn why the GridView cells belonging to a sorted column jumps to a new position after updating the cell's value.   
+components: ["gridview"]
 type: troubleshooting
 page_title: GridView Cells In Sorted Columns Jumps to a New Position After Editing Its Value  
 slug: grid-cells-in-sorted-columns-jumps-to-a-new-position-after-editing-its-value

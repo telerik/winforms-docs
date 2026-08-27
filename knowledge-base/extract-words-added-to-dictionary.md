@@ -1,6 +1,7 @@
 ---
 title: Extract the Words Added to the Dictionary in RadSpellChecker  
 description: This article shows how you can extract the words added to the dictionary in RadSpellChecker. 
+components: ["spellchecker"]
 type: how-to
 page_title: How to Extract the Words Added to the Dictionary in RadSpellChecker     
 slug: extract-words-added-to-dictionary

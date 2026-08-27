@@ -1,6 +1,7 @@
 ---
 title: How to disable backspace and delete keyboard buttons
 description: Disable backspace and delete keyboard buttons.
+components: ["datetimepicker"]
 type: how-to
 page_title: Disable Backspace and Delete Keyboard Buttons
 slug: datetimepicker-disable-backspace-delete

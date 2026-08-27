@@ -1,6 +1,7 @@
 ---
 title: How to Order the Tokens Based on the Items Collection
 description: Learn how to order the tokens based on the Items collection instead of the order in which they are toggled.
+components: ["checkeddropdownlist"]
 type: how-to
 page_title: How to Order the Tokens Based on the Items Collection
 slug: tokens-order-in-checkeddropdownlist

@@ -1,6 +1,7 @@
 ---
 title: How to AutoSize GridView's Row While Editing
 description: Learn how to autosize RadGridView's row while editing a multiline editor.
+components: ["gridview"]
 type: how-to
 page_title: How to AutoSize GridView's Row While Editing
 slug: row-autosizing-while-editing

@@ -1,6 +1,7 @@
 ---
 title: Fit to Width RadPdfViewer and Scroll to the Clicked Position 
 description: This article shows how you can fit the pdf document to fit to width and scroll to the clicked position.
+components: ["pdfviewer"]
 type: how-to
 page_title: Fit to Width RadPdfViewer and Scroll to the Clicked Position   
 slug: fit-to-width-pdf-and-locate-clicked-position 

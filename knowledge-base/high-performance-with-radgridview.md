@@ -1,6 +1,7 @@
 ---
 title: High Performance with RadGridView and Virtual Mode including Filtering, Sorting and Grouping
 description: High Performance with RadGridView and Virtual Mode including Filtering, Sorting and Grouping. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: High Performance with RadGridView and Virtual Mode including Filtering, Sorting and Grouping
 slug: high-performance-with-radgridview

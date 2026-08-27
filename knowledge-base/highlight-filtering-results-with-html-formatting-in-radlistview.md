@@ -1,6 +1,7 @@
 ---
 title: Highlight Filtering Results by using HTML-like text formatting in RadListView
 description: This article demonstrates how to highlight results when filtering by using HTML-like text formatting in RadListView. 
+components: ["listview"]
 type: how-to
 page_title: Highlight Filtering Results with HTML-like text formatting in RadListView
 slug: highlight-filtering-results-with-html-like-formatting-in-radlistview

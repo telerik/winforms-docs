@@ -1,6 +1,7 @@
 ---
 title: Auto-complete items with a check-box in RadCheckedDropDownList
 description: This article shows how you can create auto-complete items with a check-box in RadCheckedDropDownList.
+components: ["checkeddropdownlist"]
 type: how-to
 page_title: How to create auto-complete items with a check-box in RadCheckedDropDownList
 slug: autocomplete-items-with-checkbox-in-checkeddropdownlist

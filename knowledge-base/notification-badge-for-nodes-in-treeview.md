@@ -1,6 +1,7 @@
 ---
 title: Notification badge for nodes in RadTreeView
 description: This article demonstrates how to create a notification badge for the node elements in RadTreeView
+components: ["treeview"]
 type: how-to
 page_title: Notification badge for nodes in RadTreeView
 slug: notification-badge-for-nodes-in-radrreeview

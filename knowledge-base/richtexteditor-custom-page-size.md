@@ -1,6 +1,7 @@
 ---
 title: Setting Custom Page Size on Document in RadRichTextEditor
 description: Learn how to configure a custom page size, such as 3x3, for documents in RadRichTextEditor.
+components: ["richtexteditor"]
 type: how-to
 page_title: How to Configure Custom Page Sizes in RadRichTextEditor for WinForms
 slug: radrichtexteditor-winforms-custom-page-size

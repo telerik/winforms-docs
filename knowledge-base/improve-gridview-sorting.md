@@ -1,6 +1,7 @@
 ---
 title: Improve GridView Sorting for Columns with Similar Values
 description: Learn how to improve the sorting functionality for columns with similar values in the WinForms GridView. 
+components: ["gridview"]
 type: how-to
 page_title: Improve GridView Sorting for Columns with Similar Values
 slug: improve-gridview-sorting

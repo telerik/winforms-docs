@@ -1,6 +1,7 @@
 ---
 title: How to Print RadBarcode
 description: This article demonstrates how to print RadBarcode
+components: ["barcodeview"]
 type: how-to
 page_title: How to Print RadBarcode
 slug: print-barcode

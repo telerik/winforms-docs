@@ -1,6 +1,7 @@
 ---
 title: How to Create Map Image Silently
 description: Learn how to export the map to an image silently.
+components: ["map"]
 type: how-to
 page_title: How to Create Map Image Silently
 slug: create-map-image-silently

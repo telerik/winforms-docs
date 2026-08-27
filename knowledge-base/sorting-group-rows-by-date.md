@@ -1,6 +1,7 @@
 ---
 title: Sorting group rows by date in RadGridView
 description: This article demonstrates how to sort group rows by date in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: Sorting group rows by date in RadGridView
 slug: sorting-group-rows-by-date-in-grid

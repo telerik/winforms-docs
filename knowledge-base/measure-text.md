@@ -1,6 +1,7 @@
 ---
 title: How to Measure Text
 description: Learn how to measure text in WinForms.
+components: ["general"]
 type: how-to
 page_title: How to Measure Text
 slug: measure-text

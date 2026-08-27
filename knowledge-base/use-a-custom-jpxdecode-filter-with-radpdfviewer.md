@@ -1,6 +1,7 @@
 ---
 title: Use a custom JPXDecode filter with RadPdfViewer
 description: Use a custom JPXDecode filter with RadPdfViewer.. Check it now!
+components: ["pdfviewer"]
 type: how-to
 page_title: Use a custom JPXDecode filter with RadPdfViewer
 slug: use-a-custom-jpxdecode-filter-with-radpdfviewer

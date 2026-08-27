@@ -1,6 +1,7 @@
 ---
 title: How to Filter GridViewCommandColumn in RadGridView
 description: Learn how to filter the command column in the WinForms GridView. 
+components: ["gridview"]
 type: how-to
 page_title: How to Filter GridViewCommandColumn in RadGridView
 slug: filter-commandcolumn-in-gridview

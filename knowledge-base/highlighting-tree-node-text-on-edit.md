@@ -1,6 +1,7 @@
 ---
 title: Highlighting tree node text on edit
 description: Highlighting tree node text on edit. Check it now!
+components: ["treeview"]
 type: how-to
 page_title: Highlighting tree node text on edit
 slug: highlighting-tree-node-text-on-edit

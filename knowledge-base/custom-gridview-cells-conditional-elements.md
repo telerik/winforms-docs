@@ -1,6 +1,7 @@
 ---
 title: How to Create Custom Cells with Conditional Elements
 description: This article shows how you can create custom grid view cells with input elements.
+components: ["gridview"]
 type: how-to
 page_title: How to Create Custom Cells with Conditional Elements
 slug: custom-gridview-cells-conditional-elements  

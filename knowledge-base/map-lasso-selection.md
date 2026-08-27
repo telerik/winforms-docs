@@ -1,6 +1,7 @@
 ---
 title: Lasso Selection in RadMap
 description: An example demonstrating the object shown on the map can be selected with lasso rectangle.  
+components: ["map"]
 type: how-to
 page_title: Lasso Selection in RadMap
 slug: map-lasso-selection

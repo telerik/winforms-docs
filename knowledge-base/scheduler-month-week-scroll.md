@@ -1,6 +1,7 @@
 ---
 title: How to modify mouse wheel scroll value in RadScheduler's MonthView 
 description: This article shows how you can modify mouse wheel scroll value in RadScheduler's MonthView.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to modify mouse wheel scroll value in RadScheduler's MonthView 
 slug: scheduler-month-week-scroll

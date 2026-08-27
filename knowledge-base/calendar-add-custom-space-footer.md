@@ -1,6 +1,7 @@
 ---
 title: Adding a Custom Panel Between Dates Area and Footer in UI for WinForms Calendar
 description: Learn how to add a custom panel between the dates area and footer in the [UI for WinForms Calendar](https://docs.telerik.com/devtools/winforms/controls/calendar/calendar).
+components: ["calendar"]
 type: how-to
 page_title: Create a Custom Space Above the Footer in WinForms Calendar
 meta_title: Create a Custom Space Above the Footer in WinForms Calendar

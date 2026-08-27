@@ -1,6 +1,7 @@
 ---
 title: How to AutoComplete Items Considering the Description Text in RadDropDownList
 description: This article demonstrates how to search in the description text of items in RadDropDownList
+components: ["dropdownlist"]
 type: how-to
 page_title: How to Search in Description Text in RadDropDownList
 slug: dropdownlist-autcomplete-in-description-text

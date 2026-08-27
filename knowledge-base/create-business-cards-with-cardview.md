@@ -1,6 +1,7 @@
 ---
 title: Create Business Cards with CardView  
 description: This article shows how you can create business cards with RadCardView
+components: ["cardview"]
 type: how-to
 page_title: Create Business Cards with CardView      
 slug: create-business-cards-with-cardview

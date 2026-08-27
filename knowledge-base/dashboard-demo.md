@@ -1,6 +1,7 @@
 ---
 title: Dashboard Demo
 description: Learn how to achieve Dashboard control in the Telerik WinForms suite.  
+components: ["general"]
 type: how-to
 page_title: Dashboard Demo  
 slug: dashboard-demo

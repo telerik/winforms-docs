@@ -1,6 +1,7 @@
 ---
 title: Exporting Collapsed Child Rows in Self-Referencing Hierarchy GridView to Excel
 description: Learn how to export collapsed child rows in a self-referencing hierarchy GridView to Excel while maintaining collapsible functionality.
+components: ["gridview"]
 type: how-to
 page_title: Export Self-Referencing Hierarchy GridView with Collapsed Groups to Excel
 meta_title: Export Self-Referencing Hierarchy GridView with Collapsed Groups to Excel

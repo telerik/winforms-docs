@@ -1,6 +1,7 @@
 ---
 title: How to DragDrop from RadTreeView to RadSyntaxEditor in DocumentWindow
 description: This article demonstrates How to DragDrop from RadTreeView to RadSyntaxEditor in DocumentWindow
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to DragDrop from RadTreeView to RadSyntaxEditor in DocumentWindow
 slug: treeview-dragdrop-dock-syntaxeditor

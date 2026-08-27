@@ -1,6 +1,7 @@
 ---
 title: Customizing Context Menu on DocumentWindow Tabs in RadDock
 description: Learn how to customize the context menu on DocumentWindow tabs in RadDock, including adding custom menu items and enabling inline editing for tab names.
+components: ["dock"]
 type: how-to
 page_title: How to Customize Context Menu and Enable Inline Editing on DocumentWindow Tabs in RadDock
 meta_title: How to Customize Context Menu and Enable Inline Editing on DocumentWindow Tabs in RadDock

@@ -1,6 +1,7 @@
 ---
 title: Format child cells on group cell click in RadGridView
 description: Format child cells on group cell click in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: How to format child cells on group cell click in RadGridView
 slug: grid-format-group-cell-click

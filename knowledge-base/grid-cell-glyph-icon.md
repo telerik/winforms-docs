@@ -1,6 +1,7 @@
 ---
 title: How to show Glyph icon in RadGridView cell
 description: This article shows How to show Glyph icon in RadGridView cell.
+components: ["gridview"]
 type: how-to
 page_title: How to Show Glyph Icon in RadGridView Cell
 slug: grid-cell-glyph-icon

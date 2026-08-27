@@ -1,6 +1,7 @@
 ---
 title: Adding a Custom Banner to RadRibbonBar Header
 description: Learn how to add a custom message banner to the header of RadRibbonBar in WinForms applications.
+components: ["ribbonbar"]
 type: how-to
 page_title: How to Add a Custom Banner to RadRibbonBar Header in WinForms
 slug: radribbonbar-add-custom-banner

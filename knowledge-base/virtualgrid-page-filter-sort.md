@@ -1,6 +1,7 @@
 ---
 title: How to apply paging with filter and sort functionalities in VirtualGrid
 description: This article shows how you can apply paging with filter and sort functionalities in RadVirtualGrid.
+components: ["virtualgrid"]
 type: how-to
 page_title: How to add Apply Paging with Filter and Sort Functionalities in VirtualGrid
 slug: virtualgrid-page-filter-sort

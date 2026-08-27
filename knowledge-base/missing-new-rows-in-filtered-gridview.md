@@ -1,6 +1,7 @@
 ---
 title: Newly Added Rows in GridView Disappear If Filtering is Applied
 description: This article explains how the filtering mechanism works in the WinForms GridView.
+components: ["gridview"]
 type: how-to
 page_title: Newly Added Rows in GridView Disappear If Filtering is Applied
 slug: missing-new-rows-in-filtered-gridview

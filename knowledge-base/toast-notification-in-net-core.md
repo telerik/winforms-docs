@@ -1,6 +1,7 @@
 ---
 title: How to Use ToastNotification in .NET 5/.NET 6  
 description: Learn how to use ToastNotification .NET 5/.NET 6. 
+components: ["toastnotificationmanager"]
 type: how-to
 page_title: How to Use ToastNotification in .NET 5/.NET 6 
 slug: toast-notification-in-net-core

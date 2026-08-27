@@ -1,6 +1,7 @@
 ---
 title: How to use RadDropDownList as editor in RadPropertyGrid
 description: This article show you an replace the default editor wit RadDropDownList in RadPropertyGrid
+components: ["propertygrid"]
 type: how-to
 page_title: This article show you an replace the default editor wit RadDropDownList in RadPropertyGrid 
 slug: dropdownlisteditor-in-radpropertygrid

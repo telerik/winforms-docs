@@ -1,6 +1,7 @@
 ---
 title: How to play video files
 description: How to play video files. Check it now!
+components: ["general"]
 type: how-to
 page_title: How to play video files
 slug: how-to-play-video-files

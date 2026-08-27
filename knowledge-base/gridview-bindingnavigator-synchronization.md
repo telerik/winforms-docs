@@ -1,6 +1,7 @@
 ---
 title: Synchronize RadGridView and RadBindingNavigator after Filtering and Sorting
 description: This article shows how you can sync gridview and binding navigator after filtering and sorting is applied. 
+components: ["gridview"]
 type: how-to
 page_title: How to synchronize RadGridView and RadBindingNavigator after filtering and sorting
 slug: gridview-bindingnavigator-synchronization

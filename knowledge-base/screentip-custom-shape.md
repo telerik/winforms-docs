@@ -1,6 +1,7 @@
 ---
 title: How to display a Screentip that looks like a callout
 description: This article demonstrates how you can display a callout by using Screentip
+components: ["general"]
 type: how-to
 page_title: How to display a Screentip that looks like a callout
 slug: display-callout-by-using-screentip

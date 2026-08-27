@@ -1,6 +1,7 @@
 ---
 title: How to add text in the splitter grip resize handle
 description: This article shows how to replace the dotted line with text
+components: ["splitcontainer"]
 type: how-to
 page_title:  How to Replace the SplitterElement dotted resize handle with text
 slug: splitcontainer-grip-handle-add-text

@@ -1,6 +1,7 @@
 ---
 title: Populate RadChartView from Access Database
 description: This article shows how you can populate RadChartView from Access Database.
+components: ["chartview"]
 type: how-to
 page_title: Populate RadChartView from Access Database
 slug: chartview-access-database

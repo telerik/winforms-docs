@@ -1,6 +1,7 @@
 ---
 title: Set CharacterCasing for GridViewComboBoxColumn
 description: This article shows you how to use editor initialized event to set the GridViewComboBoxColumn TextBox CharacterCasing
+components: ["gridview"]
 type: how-to
 page_title: How to set GridViewComboBoxColumn characterCasing
 slug: gridview-comboboxcolumn-charactercasing

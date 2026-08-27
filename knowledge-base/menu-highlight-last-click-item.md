@@ -1,6 +1,7 @@
 ---
 title: Highlight the Last Selected Menu Item In RadMenu 
 description: Learn how to keep selected menu items highlighted in RadMenu for WinForms by implementing custom code.
+components: ["menu"]
 type: how-to
 page_title: Highlighting Selected Menu Items in RadMenu for WinForms
 slug: menu-highlight-last-click-item

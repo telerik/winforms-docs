@@ -1,6 +1,7 @@
 ---
 title: How to Import/Export ICalendar Data With Resources
 description: This article demonstrates how you can Import/Export ICalendar Data With Resources.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How you can Import/Export ICalendar Data With Resources.
 slug: scheduler-importexport-icalendar-resources

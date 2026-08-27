@@ -1,6 +1,7 @@
 ---
 title: Snapping per Day in RadGanttView
 description: A custom implementation showing how the tasks can snap to a full day and update with a single day at a time during drag-and drop or while resizing
+components: ["ganttview"]
 type: how-to
 page_title: How to snap tasks to full day, while resizing or dragging in RadGanttView
 slug: snapping-per-day-in-radganttview

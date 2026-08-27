@@ -1,6 +1,7 @@
 ---
 title: How to Deal with AntiVirus Alerts
 description: Learn how to deal with AntiVirus alerts detecting Telerik UI for WinForms suite as malware.
+components: ["general"]
 type: how-to
 page_title: How to Deal with AntiVirus Alerts
 slug: antivirus-alert

@@ -1,6 +1,7 @@
 ---
 title: Indicate Special Days in RadGanttView
 description: Indicate Special Days in RadGanttView. Check it now!
+components: ["ganttview"]
 type: how-to
 page_title: Indicate Special Days in RadGanttView
 slug: indicate-special-days-in-radganttview

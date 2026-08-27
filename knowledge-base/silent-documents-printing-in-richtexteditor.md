@@ -1,6 +1,7 @@
 ---
 title: Print Silently Documents with RadRichTextEditor 
 description: Learn how to print Word, Html and other documents silently in RadRichTextEditor.
+components: ["richtexteditor"]
 type: how-to
 page_title: Print Silently Documents with RadRichTextEditor    
 slug: silent-documents-printing-in-richtexteditor

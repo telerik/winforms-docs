@@ -1,6 +1,7 @@
 ---
 title: How to Migrate a WinForms .NET Framework Project to .NET Core
 description: This article demonstrates a step by step tutorial on how to migrate your WinForms project that uses .NET Framework to .NET Core. 
+components: ["general"]
 type: how-to
 page_title: How to Migrate a WinForms .NET Framework Project to .NET Core
 slug: migare-net-framework-project-to-core

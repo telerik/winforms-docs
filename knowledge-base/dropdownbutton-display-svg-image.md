@@ -1,6 +1,7 @@
 ---
 title: Displaying RadDropDownButton as an SVG Image in WinForms
 description: Learn how to display RadDropDownButton as an SVG image.
+components: ["buttons"]
 type: how-to
 page_title: How to Display RadDropDownButton as an SVG Image in WinForms
 slug: dropdownbutton-display-svg-image

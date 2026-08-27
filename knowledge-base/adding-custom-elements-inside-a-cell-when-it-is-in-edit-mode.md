@@ -1,6 +1,7 @@
 ---
 title: Adding custom elements inside a cell when it is in edit mode
 description: Adding custom elements inside a cell when it is in edit mode. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Adding custom elements inside a cell when it is in edit mode
 slug: adding-custom-elements-inside-a-cell-when-it-is-in-edit-mode
