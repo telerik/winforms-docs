@@ -2,6 +2,7 @@
 title: Introduction
 page_title: Telerik UI for WinForms Overview - Controls, Setup, and Support
 description: Get started with Telerik UI for WinForms, explore control categories, and find installation, licensing, styling, and support resources.
+components: ["general"]
 slug: winforms/overview
 tags: overview
 published: True
