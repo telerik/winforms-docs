@@ -2,6 +2,7 @@
 title: Focus Border and Ripple Animations
 page_title: Focus Border and Ripple Animations - Telerik Presentation Framework
 description: Add modern focus borders and ripple animations to your WinForms apps with Telerik Presentation Framework for improved UI interactivity.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/focus-border-and-ripple-animations
 tags: touch, themes
 published: True

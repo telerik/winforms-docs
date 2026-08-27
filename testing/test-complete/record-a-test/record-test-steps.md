@@ -2,6 +2,7 @@
 title: Record Test Steps
 page_title: Record Test Steps - TestComplete
 description: We will use TestComplete - functional automated testing platform developed by SmartBear Software to automate Telerik UI for WinForms Controls.  
+components: ["general"]
 slug: test-complete-record-test-steps
 tags: testcomplete, test, record, winforms
 published: True

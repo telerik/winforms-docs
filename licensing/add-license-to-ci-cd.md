@@ -2,6 +2,7 @@
 title: Adding Your License Key to CI Services
 page_title: Adding Your License Key to CI Services
 description: Learn how to activate the Telerik UI for .NET WinForms components by downloading and setting up your Telerik components license key for use in CI/CD environments.
+components: ["general"]
 slug: add-license-to-ci-cd
 tags: winforms,components,license,activate,download,ci,cd,environment
 position: 2

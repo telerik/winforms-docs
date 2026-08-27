@@ -2,6 +2,7 @@
 title: DPI Support
 page_title: DPI Support - Telerik Presentation Framework
 description: Support for high resolution DPI monitors is now a built-in part of UI for WinForms.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/dpi-support
 tags: dpi,support
 published: True

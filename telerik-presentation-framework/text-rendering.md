@@ -2,6 +2,7 @@
 title: Text Rendering
 page_title: Text Rendering - Telerik Presentation Framework
 description: Telerik Presentation Framework allows you to control whether GDI or GDI+ will be used for text rendering.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/text-rendering
 tags: text,rendering
 published: True

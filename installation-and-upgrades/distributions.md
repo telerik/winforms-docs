@@ -2,6 +2,7 @@
 title: Distributions
 page_title: Distributions - Telerik UI for WinForms Documentation
 description: Distributions
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/distributions
 tags: distributions,versions
 published: True

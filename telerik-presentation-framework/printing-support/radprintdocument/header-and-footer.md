@@ -2,6 +2,7 @@
 title: Header and Footer
 page_title: Header and Footer - Telerik Presentation Framework
 description: This article lists the available properties which allow you to customize the header and footer.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/header-and-footer
 tags: header,and,footer
 published: True

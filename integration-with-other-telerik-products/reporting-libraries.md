@@ -2,6 +2,7 @@
 title: Telerik Reporting  
 page_title: Telerik Reporting - Integration with Telerik Products
 description: "Get started with Telerik ReportViewer and learn how to use it in WinForms application."
+components: ["general"]
 slug: telerik-reporting-overview
 tags: telerik,reporting, winforms, radform
 position: 1

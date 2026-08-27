@@ -2,6 +2,7 @@
 title: Creating a theme component
 page_title: Creating a theme component
 description: This article demonstrates how to isolate a theme in a separate class library project.
+components: ["general"]
 slug: winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/creating-a-theme-component
 tags: creating,a,theme,component
 published: True

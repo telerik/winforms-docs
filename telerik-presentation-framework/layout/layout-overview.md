@@ -2,6 +2,7 @@
 title: Layout Overview
 page_title: Layout Overview - Telerik Presentation Framework
 description: This article explains how the layout system in Telerik Presentation Framework works. 
+components: ["general"]
 slug: winforms/telerik-presentation-framework/layout/layout-overview
 tags: layout,overview
 published: True

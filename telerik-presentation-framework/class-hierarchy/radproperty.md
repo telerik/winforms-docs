@@ -2,6 +2,7 @@
 title: RadProperty
 page_title: RadProperty - Telerik Presentation Framework
 description: RadProperty encapsulates properties used in RadObject and support dependency properties.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/class-hierarchy/radproperty
 tags: radproperty
 published: True

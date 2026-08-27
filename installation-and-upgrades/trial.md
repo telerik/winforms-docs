@@ -2,6 +2,7 @@
 title: Trial License
 page_title: Trial License - Telerik UI for WinForms Documentation
 description: Learn about the Trial license limitations and features for Telerik UI for WinForms
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/trial
 tags: trial, license, evaluation
 published: True

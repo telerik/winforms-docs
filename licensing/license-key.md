@@ -2,6 +2,7 @@
 title: Setting Up Your License Key
 page_title: Setting Up Your Telerik UI for WinForms License Key
 description: Learn how to download, install, and troubleshoot your Telerik UI for WinForms license key for local machines and Windows CI.
+components: ["general"]
 slug: license-key
 tags: WinForms,components,license,activate,download,key,telerik,
 position: 1

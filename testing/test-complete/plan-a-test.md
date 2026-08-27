@@ -2,6 +2,7 @@
 title: Plan a Test
 page_title: Plan a Test - TestComplete
 description: We will use TestComplete - functional automated testing platform developed by SmartBear Software to automate Telerik UI for WinForms Controls.  
+components: ["general"]
 slug: test-complete-plan-a-test
 tags: test-complete
 published: True

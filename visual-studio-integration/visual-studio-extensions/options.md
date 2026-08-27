@@ -2,6 +2,7 @@
 title: Options
 page_title: Options
 description: The Visual Studio Extensions options dialog provides settings, so you can configure the Telerik Visual Studio Extensions to best suit your needs.
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/options
 tags: options
 published: True

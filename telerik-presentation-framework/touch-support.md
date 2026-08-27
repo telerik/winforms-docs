@@ -2,6 +2,7 @@
 title: Touch Support
 page_title: Touch Support - Telerik Presentation Framework
 description: Telerik Presentation Framework supports touch gestures which can be handled with specific events.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/touch-support
 tags: touch,support
 published: True

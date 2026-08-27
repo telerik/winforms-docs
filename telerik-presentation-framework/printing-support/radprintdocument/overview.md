@@ -2,6 +2,7 @@
 title: Overview
 page_title: RadPrintDocument - Telerik Presentation Framework
 description: RadPrintDocument is used to send output to a printer and can be used with any control that implements IPrinatable.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument
 tags: radprintdocument
 published: True

@@ -2,6 +2,7 @@
 title: Unit Testing Tutorial
 page_title: Unit Testing Tutorial - JusMock
 description: Step by step tutorial on how to unit test your WinForms application by isolating the tested code from its dependencies with a mocking tool like JustMock. 
+components: ["general"]
 slug: just-mock-tutorial
 tags: unit test, tutorial, JustMock, mock, mocking, mocking tool, mocking solution, mocking software, mocking framework, WinForms, Win Forms
 published: True

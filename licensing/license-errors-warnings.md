@@ -2,6 +2,7 @@
 title: License Activation Errors and Warnings
 page_title: License Activation Errors and Warnings
 description: Learn what can cause an invalid license for Telerik UI for .NET WinForms, learn what are the common warnings and errors, and learn how to solve them.
+components: ["general"]
 slug: license-errors-warnings
 tags: winforms,wf,components,license,activate,download,error,warning
 position: 4

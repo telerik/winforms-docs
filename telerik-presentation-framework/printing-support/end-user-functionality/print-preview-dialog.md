@@ -2,6 +2,7 @@
 title: Print Preview Dialog
 page_title: Print Preview Dialog - Telerik Presentation Framework
 description: The Print Preview Dialog you can preview how the RadPrintDocument will appear when printed. 
+components: ["general"]
 slug: winforms/telerik-presentation-framework/printing-support/end-user-functionality/print-preview-dialog
 tags: print,preview,dialog
 published: True

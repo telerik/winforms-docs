@@ -2,6 +2,7 @@
 title: Theme Manager
 page_title: Theme Manager - RadThemeManager
 description: This article shows what is RadThemeMenager and when it should be used.
+components: ["general"]
 slug: winforms/styling-and-appearance/theme-manager
 tags: load,themes,from,a,resource
 published: True

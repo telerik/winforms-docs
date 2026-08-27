@@ -2,6 +2,7 @@
 title: Redistributing Telerik UI for WinForms
 page_title: Redistributing Telerik UI for WinForms
 description: Redistributing Telerik UI for WinForms
+components: ["general"]
 slug: installation-deployment-and-distribution-redestributing-telerik-radcontrols-for-windows
 tags: redistributing,telerik,ui,for,winforms
 published: True

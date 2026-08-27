@@ -2,6 +2,7 @@
 title: Clipping
 page_title: Clipping - Telerik Presentation Framework
 description: Clipping refers to leaving out certain areas of an element that fall outside of a specified clipping rectangle.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/layout/clipping
 tags: clipping
 published: True

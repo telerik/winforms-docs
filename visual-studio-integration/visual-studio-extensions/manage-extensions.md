@@ -2,6 +2,7 @@
 title: Manage Extensions
 page_title: Manage Extensions
 description: Learn how you can enable/disable VS Extensions.
+components: ["general"]
 slug: manage-extensions
 tags: manage, extensions
 published: True

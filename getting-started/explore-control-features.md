@@ -2,6 +2,7 @@
 title: Explore Tools and Features
 page_title: Explore Tools and Features
 description: This article provides a short overview of how to get started with finding WinForms control functionality and use them.
+components: ["general"]
 slug: winforms/getting-started/explore-control-features
 tags: get,started,explore,control,features
 published: True

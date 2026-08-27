@@ -2,6 +2,7 @@
 title: Visual Style Builder
 page_title: Visual Style Builder
 description: Visual Style Builder is a standalone application that comes with the Telerik UI for WinForms suite. This application allows you to create new or edit the predefined themes.
+components: ["general"]
 slug: winforms/themes/visual-style-builder
 tags: visual,style,builder
 published: True

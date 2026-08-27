@@ -2,6 +2,7 @@
 title: Installation
 page_title: Setup the Telerik WinForms Telerik CLI - Installation, Setup, and Command Reference for Telerik UI for WinForms
 description: Install and use the Telerik CLI to set up the Telerik NuGet feed, create WinForms projects from templates, and update Telerik UI for WinForms packages from the command line.
+components: ["general"]
 slug: installation
 tags: telerik,cli,command line,cli,dotnet tool,nuget,setup,install,create project,update,template,winforms,telerik,getting started,environment
 published: True

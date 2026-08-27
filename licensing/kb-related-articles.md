@@ -2,6 +2,7 @@
 title: KB Related Articles
 page_title: KB Related Articles - Telerik UI for WinForms
 description: Topics related to the Licensing mechanism of Telerik UI for WinForms.
+components: ["general"]
 slug: licensing-kb-related-articles
 tags: kb, sdk, examples, licensing
 position: 1000

@@ -2,6 +2,7 @@
 title: Media Shape
 page_title: Media Shape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/media-shape
 tags: media-shape
 published: True

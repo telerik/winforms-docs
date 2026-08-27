@@ -2,6 +2,7 @@
 title: QA Shape
 page_title: QA Shape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
+components: ["general"]
 slug: winforms-telerik-presentation-framework-qa-shape
 tags: qa,shape
 published: True

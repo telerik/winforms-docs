@@ -2,6 +2,7 @@
 title: Screen Tips
 page_title: Screen Tips - Telerik Presentation Framework
 description: Screen Tip is a UI feature which consists of a small window that appears when the mouse cursor is hovered over a particular element.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/screen-tips
 tags: screen tips
 published: True

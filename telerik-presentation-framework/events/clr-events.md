@@ -2,6 +2,7 @@
 title: CLR Events
 page_title: CLR Events - Telerik Presentation Framework
 description: RadControl inherits the standard ScrollableControl class, and has access to the principal mouse, keyboard, font, sizing and other events.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/events/clr-events
 tags: clr,events
 published: True
