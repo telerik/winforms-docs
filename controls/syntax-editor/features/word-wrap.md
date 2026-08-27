@@ -2,6 +2,7 @@
 title: Word Wrap
 page_title: Word Wrap - RadSyntaxEditor
 description: This article documents the word-wrap functionality provided by the RadSyntaxEditor control.
+components: ["syntaxeditor"]
 slug: syntax-editor-features-word-wrap
 tags: features, word,wrap
 published: True

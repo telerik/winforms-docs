@@ -1,6 +1,7 @@
 ---
 title: Disabling or Replacing Recurrence Change Message in UI for WinForms Scheduler
 description: Learn how to disable or replace the recurrence change message displayed in UI for WinForms Scheduler when modifying recurring appointments.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: Disable or Customize Recurring Appointment Message in WinForms Scheduler
 meta_title: Disable or Customize Recurring Appointment Message in WinForms Scheduler

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Calendar Control
 description: WinForms Calendar supports all common features you would find in the standard Month Calendar control.
+components: ["calendar"]
 slug: winforms/calendar/getting-started
 tags: getting,started
 published: True

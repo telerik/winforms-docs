@@ -2,6 +2,7 @@
 title: Settings
 page_title: Settings - WinForms RichTextEditor Control
 description: DocxFormatProvider allows import of DOCX documents and respectively export of RadDocument to DOCX. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/docx/settings
 tags: import/export
 published: True

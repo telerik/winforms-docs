@@ -1,6 +1,7 @@
 ---
 title: Quick Filter Bar for RadGridView
 description: This article shows how to add quick filter bar at the bottom of RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Achieve Quick Filter Bar for RadGridView
 slug: grid-quick-filter-bar

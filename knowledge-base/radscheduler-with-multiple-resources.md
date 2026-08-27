@@ -1,6 +1,7 @@
 ---
 title: RadScheduler with multiple resources
 description: RadScheduler with multiple resources. Check it now!
+components: ["scheduler,reminder"]
 type: how-to
 page_title: RadScheduler with multiple resources
 slug: radscheduler-with-multiple-resources

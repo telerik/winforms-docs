@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadGroupBox
 description: RadGroupBox control is a group box control with advanced styling options. The primarily usage of this control is to hold a single radio buttons group.
+components: ["groupbox"]
 slug: winforms/panels-and-labels/groupbox/overview
 tags: groupbox
 published: True

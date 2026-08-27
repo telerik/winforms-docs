@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - UI for WinForms Documentation
 description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+components: ["commandbar"]
 slug: winforms/commandbar/themes
 tags: elements, customize
 published: True

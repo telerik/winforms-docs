@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadSpreadStreamProcessing
 description: You can use the spread stream processing to read or create and export large amount of data with a low memory footprint and great performance.
+components: ["general"]
 slug: radspreadstreamprocessing-overview
 tags: overview
 published: False

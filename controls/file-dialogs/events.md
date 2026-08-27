@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - File Dialogs
 description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+components: ["filedialogs"]
 slug: winforms/file-dialogs/events
 tags: filedialogs, events
 published: True

@@ -2,6 +2,7 @@
 title: Pan
 page_title: Pan - WinForms ImageEditor Control
 description: WinForms ImageEditor supports a PanTool that enables you to pan the image.
+components: ["imageeditor"]
 slug: radimageeditor-tools-pan
 tags: panning,tool,pan
 published: True

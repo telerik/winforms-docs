@@ -1,6 +1,7 @@
 ---
 title: How to auto-fit RadRichTextEditor
 description: This article shows how you can adjust the page's width when the control is resized
+components: ["richtexteditor"]
 type: how-to
 page_title: Auto-Fit RadRichTextEditor
 slug:  auto-fit-richtexteditor

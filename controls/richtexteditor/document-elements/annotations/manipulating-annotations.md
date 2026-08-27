@@ -2,6 +2,7 @@
 title: Manipulating Annotations
 page_title: Manipulating Annotations - WinForms RadRichTextEditor Control
 description: Learn which are the most commonly used manipulations with regard to Annotations in the WinForms RadRichTextEditor control.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements/annotations/manipulating-annotations
 tags: manipulating,annotations
 published: True

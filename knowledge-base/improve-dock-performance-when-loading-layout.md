@@ -1,6 +1,7 @@
 ---
 title: How to Improve Performance when Loading XML Layout in RadDock
 description: Learn how to improve performance when loading XML layout in RadDock
+components: ["dock"]
 type: how-to
 page_title: How to Improve Performance when Loading XML Layout in RadDock
 slug: improve-dock-performance-when-loading-layout

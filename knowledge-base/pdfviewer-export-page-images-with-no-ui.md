@@ -1,6 +1,7 @@
 ---
 title: How to Export Each Page as an Image in PDF Documents
 description: This article demonstrates how to export each page as an image in PDF Documents
+components: ["pdfviewer"]
 type: how-to
 page_title: How to Export Each Page as an Image in PDF Documents
 slug: pdfviewer-export-page-images-with-no-ui

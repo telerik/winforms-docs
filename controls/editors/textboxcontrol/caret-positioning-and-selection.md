@@ -2,6 +2,7 @@
 title: Caret positioning and selection
 page_title: Caret positioning and selection - WinForms TextBoxControl
 description: Use the API of RadTextBoxControl to position the caret or select any part of the text.
+components: ["editors"]
 slug: winforms/editors/textboxcontrol/caret-positioning-and-selection
 tags: caret,positioning,and,selection
 published: True

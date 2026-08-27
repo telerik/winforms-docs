@@ -2,6 +2,7 @@
 title: Application Deployment
 page_title: Application Deployment
 description: Application Deployment
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/application-deployment
 tags: application,deployment
 published: True

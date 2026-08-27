@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - Task Board
 description: Add columns and task cards at design time in the WinForms TaskBoard (Kanban) control.
+components: ["taskboard"]
 slug: task-board-design-time
 tags: task board, kanban, getting, started
 published: True

@@ -2,6 +2,7 @@
 title: Set Toolbox Version
 page_title: Set Toolbox Version
 description: Set Toolbox Version
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/toolbox-configurator
 tags: toolbox,configurator
 published: True

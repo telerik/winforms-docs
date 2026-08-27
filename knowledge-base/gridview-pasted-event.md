@@ -1,6 +1,7 @@
 ---
 title: Create Pasted event in RadGridView
 description: This article shows how you can create Pasted event in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to create Pasted event in RadGridView
 slug: gridview-pasted-event

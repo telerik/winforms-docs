@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms PipsPager Control
 description: This article lists the main features of the RadPipsPager control.
+components: ["pipspager"]
 slug: pipspager-structure
 tags: pipspager
 published: True

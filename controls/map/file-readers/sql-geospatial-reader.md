@@ -2,6 +2,7 @@
 title: SQL Geospatial Reader
 page_title: SQL Geospatial Reader - WinForms Map Control
 description: WinForms Map supports SqlGeospatialDataReader which allows generating map shapes from any IEnumerable instance that contains a property with geospatial data in *Wkt* (Well known text) or *Wkb* (Well known binary) format.
+components: ["map"]
 slug: winforms/map/file-readers/sql-geospatial-reader
 tags: map, providers
 published: True

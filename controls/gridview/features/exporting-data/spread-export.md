@@ -2,6 +2,7 @@
 title: Export to Excel
 page_title: Export to Excel - WinForms GridView Control
 description: Get familiar with the SpreadExport abilities that WinForms GridView offers. 
+components: ["gridview"]
 slug: winforms/gridview/exporting-data/spread-export
 tags: spread,export,excel,xlsx
 published: True

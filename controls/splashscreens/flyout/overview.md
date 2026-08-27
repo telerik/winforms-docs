@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - Flyout Screen
 description: Flyout is a powerful new control which aims to notify the end user for long running background operations.
+components: ["splashscreen"]
 slug: flyout-overview
 tags: flyout
 published: True

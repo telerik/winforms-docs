@@ -1,6 +1,7 @@
 ---
 title: Filter by using a CheckBox in RadVirtualGrid
 description: This article demonstrates how to put a check box in the filter cell and filter RadVirtualGrid
+components: ["virtualgrid"]
 type: how-to
 page_title: Filter by using a CheckBox in RadVirtualGrid 
 slug: filter-by-checkbox-in-virtualgrid

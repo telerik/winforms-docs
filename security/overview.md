@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: "Learn how to secure Telerik UI for WinForms controls with best practices, vulnerability reporting, and control-specific security guidelines."
+components: ["general"]
 slug: security-security-information
 tags: telerik, winforms, wf, net, security, xss, owasp, csp
 published: True

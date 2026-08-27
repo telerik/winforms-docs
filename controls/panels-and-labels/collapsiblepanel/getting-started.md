@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms CollapsiblePanel Control
 description: WinForms CollapsiblePanel is an expandable panel which can host controls in its content area.
+components: ["collapsiblepanel"]
 slug: winforms/panels-and-labels/collapsiblepanel/getting-started
 tags: getting,started
 published: True

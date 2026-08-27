@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms RangeSelector Control
 description: Learn the most important properties for changing the RadRangeSelector's appearance and behavior.
+components: ["rangeselector"]
 slug: winforms/rangeselector/properties-and-events
 tags: properties,and,events
 published: True

@@ -2,6 +2,7 @@
 title: Saving and Loading Theme Files
 page_title: Saving and Loading Theme Files - UI for WinForms Tools
 description: This article shows how the themes are stored and the reloaded in Visual Style Builder. 
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/saving-and-loading-theme-files
 tags: saving,and,loading,theme,files
 published: True

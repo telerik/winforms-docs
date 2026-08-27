@@ -2,6 +2,7 @@
 title: GanttViewDragDropService 
 page_title: GanttViewDragDropService - WinForms GanttView Control
 description: WinForms GanttView supports drag and drop functionality for its tasks achieved by the GanttViewDragDropService which is accessed by the GanttViewElement.DragDropService property.
+components: ["ganttview"]
 slug: winforms/ganttview/ganttviewdragdropservice
 tags: ganttview,
 published: True

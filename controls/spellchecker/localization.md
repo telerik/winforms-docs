@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadSpellChecker
 description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
+components: ["spellchecker"]
 slug: winforms/spellchecker/localization
 tags: localization
 published: True

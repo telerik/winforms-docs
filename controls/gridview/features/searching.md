@@ -2,6 +2,7 @@
 title: Searching
 page_title: Searching - RadGridView
 description: 
+components: ["gridview"]
 slug: winforms/gridview/Searching
 tags: gridview, searching
 published: False

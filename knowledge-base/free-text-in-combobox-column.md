@@ -1,6 +1,7 @@
 ---
 title: Custom Values in GridViewComboBoxColumn
 description: Besides the items available in the popup one should be able to enter any value.
+components: ["gridview"]
 type: how-to
 page_title:  Custom Values in GridViewComboBoxColumn
 slug: free-text-in-combobox-column

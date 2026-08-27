@@ -1,6 +1,7 @@
 ---
 title: Add Non-existing Items as Tokens in RadCheckedDropDownList
 description: Check the WinForms CheckedDropDown and how to add tokens if no items with the same text exist.  
+components: ["checkeddropdownlist"]
 type: how-to
 page_title: Add Non-existing Items as Tokens in RadCheckedDropDownList  
 slug: checked-dropdownlist-add-tokens

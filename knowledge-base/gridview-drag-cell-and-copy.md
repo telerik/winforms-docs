@@ -1,6 +1,7 @@
 ---
 title: How to drag a cell and copy its content in multiple cells
 description: This article shows how you can create Pasted event in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to drag a cell and copy its content in multiple cells
 slug: gridview-drag-cell-and-copy

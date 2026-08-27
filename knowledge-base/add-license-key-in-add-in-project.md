@@ -1,6 +1,7 @@
 ---
 title: Telerik License Watermark Appears When UI for WinForms Form is Used in Add-In Project
 description: The invalid or missing Telerik license key warning is displayed in an Add-In project, like Excel/Word VST, and others.
+components: ["licensing"]
 page_title: Telerik License Key Invalid or Missing Message Box and Watermark Displayed in a Add-in/Plugin Project
 type: troubleshooting
 slug: add-license-key-in-add-in-project

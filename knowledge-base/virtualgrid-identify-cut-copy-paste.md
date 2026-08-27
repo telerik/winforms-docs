@@ -1,6 +1,7 @@
 ---
 title: Identifying Cut, Copy, or Paste Operations in RadVirtualGrid for WinForms
 description: How to distinguish between cut, copy, or paste operations in the Copying event of RadVirtualGrid for WinForms.
+components: ["virtualgrid"]
 type: how-to
 page_title: How to Distinguish Between Cut and Copy Operations in RadVirtualGrid for WinForms
 slug: virtualgrid-identify-cut-copy-paste

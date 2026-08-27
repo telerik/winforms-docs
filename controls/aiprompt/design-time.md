@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms AIPrompt Control
 description: Get familiar with the design time options that the WinForms AIPrompt offers.
+components: ["aiprompt"]
 slug: aiprompt-design-time
 tags: aiprompt,designer, 
 published: True

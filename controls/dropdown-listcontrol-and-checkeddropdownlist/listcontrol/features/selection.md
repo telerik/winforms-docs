@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features/selection
 tags: listcontrol, selection
 published: True

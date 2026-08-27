@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys. 
+components: ["virtualkeyboard"]
 slug: virtual-keyboard-properties-methods-events
 tags: virtual, keyboard
 published: True

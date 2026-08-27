@@ -2,6 +2,7 @@
 title: Customize the control context menu
 page_title: Customize the control context menu - UI for WinForms Documentation
 description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+components: ["commandbar"]
 slug: winforms/commandbar/how-to/customize-the-control-context-menu
 tags: customize,the,control,context,menu
 published: True

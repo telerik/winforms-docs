@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms BindingNavigator Control
 description: WinForms BindingNavigator's structure is presented in this article. 
+components: ["bindingnavigator"]
 slug: winforms/bindingnavigator/structure
 tags:  bindingnavigator, structure
 published: True 

@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms TreeMap Control
 description: Get familiar with the internal structure of the WinForms TreeMapcontrol.  
+components: ["treemap"]
 slug: treemap-structure
 tags: treemap, structure
 published: True

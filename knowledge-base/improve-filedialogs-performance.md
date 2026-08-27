@@ -1,6 +1,7 @@
 ---
 title: How to Improve File Dialogs' Performance
 description: This article demonstrates how to improve the performance of File Dialogs
+components: ["filedialogs"]
 type: how-to
 page_title:  
 slug: improve-filedialogs-performance

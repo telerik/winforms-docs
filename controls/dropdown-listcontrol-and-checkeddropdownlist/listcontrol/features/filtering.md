@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features/filtering
 tags: listcontrol, filtering
 published: True

@@ -2,6 +2,7 @@
 title: RadChartView vs RadChart
 page_title: RadChartView vs RadChart - ChartView
 description: RadChartView vs RadChart
+components: ["chartview"]
 slug: winforms/chartview-/radchartview-vs-radchart
 tags: radchartview,vs,radchart
 published: True

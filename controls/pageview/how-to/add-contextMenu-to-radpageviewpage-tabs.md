@@ -2,6 +2,7 @@
 title: Add ContextMenu to RadPageViewPage tabs
 page_title: Add ContextMenu to RadPageViewPage tabs - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+components: ["pageview"]
 slug: winforms/pageview/how-to/add-contextmenu-to-radpageviewpage-tabs
 tags: add,contextmenu,to,radpageviewpage,tabs
 published: True

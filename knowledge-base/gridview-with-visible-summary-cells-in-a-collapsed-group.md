@@ -1,6 +1,7 @@
 ---
 title: GridView with visible summary cells in a collapsed group
 description: GridView with visible summary cells in a collapsed group. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: GridView with visible summary cells in a collapsed group
 slug: gridview-with-visible-summary-cells-in-a-collapsed-group

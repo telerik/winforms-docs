@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadMaskedEditBox
 description: This help article will demonstrate a step by step tutorial how to customize the ControlDefault theme of RadBrowseEditor. 
+components: ["editors"]
 slug: winforms/maskededitbox/customizing-appearance/themes
 tags: button, themes
 published: True

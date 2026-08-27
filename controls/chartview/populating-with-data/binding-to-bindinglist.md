@@ -2,6 +2,7 @@
 title: Binding to BindingList
 page_title: Binding to BindingList - WinForms ChartView Control
 description: Learn how to bind WinForms ChartView to a BindingList.
+components: ["chartview"]
 slug: winforms/chartview-/populating-with-data/binding-to-bindinglist
 tags: binding,to,bindinglist
 published: True

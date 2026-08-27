@@ -1,6 +1,7 @@
 ---
 title: Hosting Windows Forms in MFC/COM client applications
 description: Host Windows Forms in MFC/COM client applications 
+components: ["general"]
 type: troubleshooting
 page_title: Hosting Windows Forms in MFC/COM client applications
 slug: hosting-windows-forms-in-mfccom-client-applications

@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms GanttView Control
 description: Get familiar with the internal elements structure of the WinForms GanttView.
+components: ["ganttview"]
 slug: winforms/ganttview-/structure
 tags: structure
 published: True

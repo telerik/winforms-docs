@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms StatusStrip Control
 description: Get familiar with the inner structure and organization of the elements which build the WinForms StatusStrip.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/statusstrip/structure
 tags: statusstrip
 published: True

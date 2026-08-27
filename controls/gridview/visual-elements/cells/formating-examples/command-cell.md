@@ -2,6 +2,7 @@
 title: Formatting GridViewCommandColumn
 page_title: Formatting GridViewCommandColumn - WinForms GridView Control
 description: WinForms GridView allows you to use the cell formating in order to change the styles of the buttons used in the GridViewCommandColumn.
+components: ["gridview"]
 slug: winforms/gridview/cells/formatting-command-column
 tags: formatting,cells
 published: True

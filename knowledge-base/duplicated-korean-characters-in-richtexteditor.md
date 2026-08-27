@@ -1,6 +1,7 @@
 ---
 title: Duplicated Korean Characters in RichTextEditor
 description: Learn how to deal with duplicated Korean characters in the WinForms RichTextEditor. 
+components: ["richtexteditor"]
 type: how-to
 page_title: Duplicated Korean Characters in RichTextEditor
 slug: duplicated-korean-characters-in-richtexteditor

@@ -2,6 +2,7 @@
 title: Creating custom rows
 page_title: Creating custom rows - WinForms GridView Control
 description: Learn how to create a custom row and show it in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/rows/creating-custom-rows
 tags: creating,custom,rows
 published: True

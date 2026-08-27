@@ -1,6 +1,7 @@
 ---
 title: How to Create a Virtual Keyboard
 description: This article shows how you can create a virtual keyboard to achieve consistent look.
+components: ["general"]
 type: how-to
 page_title: How to Create a Virtual Keyboard
 slug: virtual-keyboard

@@ -1,6 +1,7 @@
 ---
 title: How to Deal with Multiplied Controls in Toolbox  
 description: Learn how to deal with multiplied controls in WinForms Toolbox.
+components: ["general"]
 type: how-to 
 page_title: How to Deal with Multiplied Controls in Toolbox  
 slug: multiplied-controls-in-toolbox

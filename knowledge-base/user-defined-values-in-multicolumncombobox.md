@@ -1,6 +1,7 @@
 ---
 title: User-Defined Values in RadMultiColumnComboBox
 description: Learn how to store user-defined values in the WinForms MultiColumnComboBox.
+components: ["multicolumncombo"]
 type: how-to 
 page_title: User-Defined Values in RadMultiColumnComboBox
 slug: user-defined-values-in-multicolumncombobox

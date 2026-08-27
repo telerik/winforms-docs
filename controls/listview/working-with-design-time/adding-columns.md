@@ -2,6 +2,7 @@
 title: Adding columns
 page_title: Adding columns - WinForms ListView Control
 description: When the RadListView.ViewType property is set to DetailsView, the data can be displayed in columns view.
+components: ["listview"]
 slug: winforms/listview/working-with-design-time/adding-columns
 tags: adding,columns
 published: True

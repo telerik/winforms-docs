@@ -2,6 +2,7 @@
 title: Colorization
 page_title: Colorization - WinForms Map Control
 description: WinForms Map utilizes three different colorization objects expecting a collection of colors which will be evaluated and assigned to the different shapes.
+components: ["map"]
 slug: winforms/map/features/layers/colorization
 tags: map, features, layers, colorization
 published: True

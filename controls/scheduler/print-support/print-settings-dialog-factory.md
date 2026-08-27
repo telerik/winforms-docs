@@ -2,6 +2,7 @@
 title: PrintSettingsDialogFactory
 page_title: PrintSettingsDialogFactory - RadScheduler
 description: Learn how to customize the print settings dialog in RadScheduler by using the PrintSettingsDialogFactory property.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/print-support/print-settings-dialog-factory
 tags: printing,dialog,factory,customization
 published: True

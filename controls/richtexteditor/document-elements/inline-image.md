@@ -2,6 +2,7 @@
 title: Inline Image
 page_title: Inline Image - WinForms RichTextEditor Control
 description: Winforms RadRichTextEditor supports ImageInline that allows images to be displayed inside the document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements/inline-image
 tags: inline,image
 published: True

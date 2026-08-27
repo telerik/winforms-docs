@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadDomainUpDown
 description: RadDomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices. 
+components: ["editors"]
 slug: winforms/editors/domainupdown/properties-methods-events
 tags: domainupdown
 published: True

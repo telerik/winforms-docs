@@ -2,6 +2,7 @@
 title: Customizing RadExpressionEditor
 page_title: Customizing RadExpressionEditor - WinForms GridView Control
 description: WinForms GridView offers a mechanism for creating custom expression methods used in RadExpressionEditor. 
+components: ["gridview"]
 slug: winforms/gridview/expression-editor/customizing-radexpressioneditor
 tags: customizing,radexpressioneditor
 published: True

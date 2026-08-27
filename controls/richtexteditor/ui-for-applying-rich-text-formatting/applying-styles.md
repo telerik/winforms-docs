@@ -2,6 +2,7 @@
 title: Applying Styles
 page_title: Applying Styles - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/applying-styles
 tags: applying,styles
 published: True

@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms LayoutControl
 description: This article lists the most commonly used properties, methods and events of RadLayoutControl.
+components: ["layoutcontrol"]
 slug: winforms/layoutcontrol/properties-methods-and-events
 tags: properties,,events,and,methods
 published: True

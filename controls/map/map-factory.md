@@ -2,6 +2,7 @@
 title: Map Factory
 page_title: Map Factory - RadMap
 description: MapVisualElementFactory allows creating tile elements.
+components: ["map"]
 slug: winforms/map/map-factory
 tags: map
 published: True

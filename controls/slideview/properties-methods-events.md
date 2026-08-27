@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms SlideView Control
 description: Get familiar with the public API of the WinForms SlideView control.
+components: ["slideview"]
 slug: slideview-properties-methods-events
 tags: slideview, api, properties, methods, events
 published: True

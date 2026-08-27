@@ -1,6 +1,7 @@
 ---
 title: Indicating progress in applications that have their primary UI thread busy
 description: Indicating progress in applications that have their primary UI thread busy. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Indicating progress in applications that have their primary UI thread busy
 slug: indicating-progress-in-applications-that-have-their-primary-ui-thread-busy

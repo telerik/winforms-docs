@@ -2,6 +2,7 @@
 title: Custom Fonts
 page_title: Custom Fonts - Telerik Presentation Framework
 description: Shows how one cal load and use custom fonts without installing them on the client machine. 
+components: ["general"]
 slug: winforms/tpf/custom-fonts
 tags: touch, themes
 published: True

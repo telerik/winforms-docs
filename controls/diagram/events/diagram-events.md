@@ -2,6 +2,7 @@
 title: Diagram Events
 page_title: Diagram Events - WinForms Diagram Control
 description: Get familiar with the specific events exposed by WinForms Diagram.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/events/diagram-events
 tags: diagram,events
 published: True

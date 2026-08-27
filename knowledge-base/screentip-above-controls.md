@@ -1,6 +1,7 @@
 ---
 title: Show Screen Tips above the Controls
 description: This article demonstrates how to show screen tips above the controls
+components: ["general"]
 type: how-to
 page_title: Show Screen Tips above the Controls
 slug: screentip-above-controls

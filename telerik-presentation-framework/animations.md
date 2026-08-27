@@ -2,6 +2,7 @@
 title: Animations
 page_title: Animations - Telerik Presentation Framework
 description: Learn how you can animate any elements using the Telerik Presentation Framework.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/animations
 tags: animations
 published: True

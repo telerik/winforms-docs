@@ -2,6 +2,7 @@
 title: Localizing Reminder Strings
 page_title: Localizing Reminder Strings - RadScheduler
 description: Localizing Reminder Strings
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/reminders/localizing-reminder-strings
 tags: localizing,reminder,strings
 published: True

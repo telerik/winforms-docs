@@ -1,6 +1,7 @@
 ---
 title: How to auto-size the rows to fill the grid's height
 description: This KB article demonstrates how to adjust the grid rows' height in order to fill the height of the control
+components: ["gridview"]
 type: how-to
 page_title: How to auto-size the rows to fill the grid's height
 slug: gridview-auto-size-rows-to-fill

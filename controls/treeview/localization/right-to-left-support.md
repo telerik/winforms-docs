@@ -2,6 +2,7 @@
 title: Right-to-left support
 page_title: Right-to-left support - RadTreeView
 description: Right-to-left support
+components: ["treeview"]
 slug: winforms/treeview/localization/right-to-left-support
 tags: right-to-left,support
 published: True

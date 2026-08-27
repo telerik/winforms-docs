@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Spreadsheet Control
 description: Learn how to add a RadSpreadsheet control to a form and wire it with UI.
+components: ["spreadsheet"]
 slug: radspreadsheet-getting-started
 tags: getting,started
 published: True

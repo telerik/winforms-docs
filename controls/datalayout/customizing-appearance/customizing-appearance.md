@@ -2,6 +2,7 @@
 title: Customizing Appearance 
 page_title: Customizing Appearance - WinForms DataLayout Control
 description: Learn how one can customize the WinForms DataLayout's appearance.
+components: ["datalayout"]
 slug: winforms/raddatalayout/customizing-appearance
 tags: appearance
 published: True

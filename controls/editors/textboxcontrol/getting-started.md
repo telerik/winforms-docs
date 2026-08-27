@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms TextBoxControl Control
 description: Learn how to get started using the main features of RadTextBoxControl. 
+components: ["editors"]
 slug: winforms/editors/textboxcontrol/getting-started
 tags: getting,started
 published: True

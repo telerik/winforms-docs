@@ -1,6 +1,7 @@
 ---
 title: How to Create Theme Picker Control
 description: This article demonstrates how to create a theme picker/ theme drop down list.
+components: ["dropdownlist"]
 type: how-to
 page_title: How to Create Theme Picker Control
 slug: theme-dropdownlist

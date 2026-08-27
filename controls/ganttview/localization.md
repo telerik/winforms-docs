@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms GanttView Control
 description: Learn how you can localize WinForms GanttView to display control text and messages in a specific language.
+components: ["ganttview"]
 slug: winforms/ganttview-/localization
 tags: localization
 published: True

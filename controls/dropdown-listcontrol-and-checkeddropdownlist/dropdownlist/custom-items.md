@@ -2,6 +2,7 @@
 title: Custom Items
 page_title: Custom Items - WinForms DropDownList Control
 description: Learn how to build custom items in WinForms DropDownList.
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/custom-items
 tags: custom,items
 published: True

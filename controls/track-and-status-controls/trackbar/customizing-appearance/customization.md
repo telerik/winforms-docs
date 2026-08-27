@@ -2,6 +2,7 @@
 title: Customization
 page_title: Customization - RadTrackBar
 description: Customization
+components: ["trackbar"]
 slug: winforms/track-and-status-controls/trackbar/customization
 tags: customization
 published: True

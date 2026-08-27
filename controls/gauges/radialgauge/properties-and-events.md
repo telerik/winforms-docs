@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and events - WinForms RadialGauge Control
 description: The article lists the important properties, methods and events of RadRadialGauge.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge/properties-and-events
 tags: properties,and,events
 published: True

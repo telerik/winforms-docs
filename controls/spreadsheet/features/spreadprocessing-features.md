@@ -2,6 +2,7 @@
 title: SpreadProcessing Features
 page_title: SpreadProcessing Features - WinForms Spreadsheet Control
 description: Get familiar with the features that are available in WinForms Spreadsheet.
+components: ["spreadsheet"]
 slug: radspreadsheet-features-spreadprocessing-features
 tags: spreadprocessing, features, hyperlinks, images
 published: True

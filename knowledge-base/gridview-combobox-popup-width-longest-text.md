@@ -1,6 +1,7 @@
 ---
 title: Adjusting GridViewComboBoxColumn Editor DropDown Width to the Longest Text in RadGridView
 description: Learn how to customize the dropdown width of a GridViewComboBoxColumn editor to match the longest item text width.
+components: ["gridview"]
 type: how-to
 page_title: How to Customize GridViewComboBoxColumn Editor in RadGridView for WinForms
 slug: gridview-combobox-popup-width-longest-text

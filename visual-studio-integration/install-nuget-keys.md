@@ -2,6 +2,7 @@
 title: Restoring NuGet Packages in Your CI Workflow
 page_title: Restoring NuGet Packages in Your CI Workflow - Installation Deployment and Distribution
 description: Telerik NuGet server supports Token-based authentication by providing a NuGet Key.   
+components: ["general"]
 slug: install-nuget-keys
 tags: install, nuget, key
 published: True

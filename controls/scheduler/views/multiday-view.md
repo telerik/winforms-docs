@@ -2,6 +2,7 @@
 title: MultiDay View
 page_title: MultiDay View - WinForms Scheduler Control
 description: MultidayView in WinForms Scheduler shows multiple date-time intervals with appointments arranged one next to another.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/views/multiday-view
 tags: multiday,view
 published: True

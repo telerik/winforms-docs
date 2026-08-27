@@ -1,6 +1,7 @@
 ---
 title: Custom Items in RadCheckedDropDownList's AutoComplete Popup
 description: This article demonstrates how to show checkboxes for the autocomplete items 
+components: ["checkeddropdownlist"]
 type: how-to
 page_title: Custom Items in RadCheckedDropDownList's AutoComplete Popup       
 slug: custom-items-in-checkeddropdownlist-autocomplete-popup

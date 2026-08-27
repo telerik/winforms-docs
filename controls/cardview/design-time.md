@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms CardView Control
 description: Learn how you can use the WinForms CardViews's Smart Tag to change the applied theme or navigate to the online documentation.
+components: ["cardview"]
 slug: winforms/cardview/design-time
 tags: cardview, design-time
 published: True

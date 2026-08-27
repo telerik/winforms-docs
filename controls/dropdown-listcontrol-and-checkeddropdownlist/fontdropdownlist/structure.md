@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms FontDropDownList Control
 description: Get familiar with the inner structure and organization of the elements which build the WinForms FontDropDownList control. 
+components: ["fontdropdownlist"]
 slug: winforms/editors/fontdropdownlist/structure
 tags: font, dropdown, structure
 published: True

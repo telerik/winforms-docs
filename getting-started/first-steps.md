@@ -2,6 +2,7 @@
 title: First Steps
 page_title: First Steps
 description: Create your first Telerik UI for WinForms project, configure the Telerik NuGet feed, install the controls, and bind data to RadGridView.
+components: ["general"]
 slug: winforms/getting-started/first-steps
 tags: get,started,first,steps
 published: True

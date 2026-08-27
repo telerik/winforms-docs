@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Menu Control
 description: WinForms Menu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+components: ["menu"]
 slug: winforms/menus/menu/getting-started
 tags: getting,started
 published: True

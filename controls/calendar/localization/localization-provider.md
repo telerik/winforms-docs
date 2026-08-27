@@ -2,6 +2,7 @@
 title: Localization Provider
 page_title: Localization Provider - WinForms Calendar Control
 description: Learn how to use CalendarLocalizationProvider.
+components: ["calendar"]
 slug: winforms/calendar/localization/localization-provider
 tags: localization,provider
 published: True

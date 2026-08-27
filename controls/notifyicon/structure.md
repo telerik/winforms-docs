@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - RadNotifyIcon
 description: Get familiar with the internal elements structure of the WinForms RadNotifyIcon.  
+components: ["notifyicon"]
 slug: radnotifyicon-structure
 tags: radnotifyicon, structure, elements, internal
 published: True

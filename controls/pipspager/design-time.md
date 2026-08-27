@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms PipsPager Control
 description: Get familiar with the design time options that the WinForms PipsPager control.
+components: ["pipspager"]
 slug: pipspager-design-time
 tags: pipspager
 published: True

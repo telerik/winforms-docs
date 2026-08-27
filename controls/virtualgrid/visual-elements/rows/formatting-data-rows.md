@@ -2,6 +2,7 @@
 title: Formatting Data Rows
 page_title: Formatting Data Rows - RadVirtualGrid
 description: Use the RowFormatting event to apply custom formatting to RadVirtualGrid's data rows.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/rows/formatting-data-rows
 tags: virtualgrid, rows, formatting
 published: True

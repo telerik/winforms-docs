@@ -2,6 +2,7 @@
 title: File Upload
 page_title: File Upload - WinForms Chat Control
 description: Learn how to upload, send, and download files in RadChat for WinForms using the built-in file upload functionality.
+components: ["chat"]
 slug: winforms/chat/features/file-upload
 tags: chat, file, upload, attachment, download, radchat
 published: True

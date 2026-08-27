@@ -2,6 +2,7 @@
 title: GraphicalView Item Formatting
 page_title: GraphicalView Item Formatting - RadGanttView
 description: The GraphicalViewItemFormatting event allows you to change the style and looks of the items displayed in the graphical view. 
+components: ["ganttview"]
 slug: winforms/ganttview-/formatting/graphicalview-item-formatting
 tags: graphicalview,item,formatting
 published: True

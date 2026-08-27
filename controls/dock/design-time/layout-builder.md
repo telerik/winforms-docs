@@ -2,6 +2,7 @@
 title: Advanced Layout Designer
 page_title: Advanced Layout Designer - WinForms Dock Control
 description: WinForms RadDock offers Advanced Layout Designer that allows you to build your layout at design-time.
+components: ["dock"]
 slug: winforms/raddock/advanced-layout-designer
 tags: RadDock, advanced layout designer 
 published: True

@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - WinForms MultiColumnComboBox Control
 description: Learn how to bind WinForms MultiColumnComboBox.
+components: ["multicolumncombo"]
 slug: winforms/multicolumncombobox/databinding
 tags: databinding
 published: True

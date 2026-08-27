@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - RadRating
 description: RadRating is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
+components: ["rating"]
 slug: winforms/track-and-status-controls/rating/properties-and-events
 tags: properties,and,events
 published: True

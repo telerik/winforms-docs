@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms AutoCompleteBox Control
 description: WinForms AutoCompleteBox can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source.
+components: ["editors"]
 slug: winforms/editors/autocompletebox/getting-started
 tags: getting,started
 published: True

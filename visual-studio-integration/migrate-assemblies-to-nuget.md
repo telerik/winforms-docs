@@ -2,6 +2,7 @@
 title: Migrate Telerik Assemblies to NuGet
 page_title: Migrate Telerik Assemblies to NuGet
 description: Learn how to migrate your Telerik UI for WinForms Assemblies to NuGet in your project.
+components: ["general"]
 slug: installation-deployment-and-distribution-migrate-assemblies-nuget
 tags: migrate, package, references, assemblies, project,nuget
 published: True

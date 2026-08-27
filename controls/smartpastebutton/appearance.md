@@ -2,6 +2,7 @@
 title: Appearance
 meta_title: WinForms SmartPasteButton Documentation - Appearance
 description: Learn how to customize the appearance of the Telerik UI for WinForms SmartPasteButton.
+components: ["smartpastebutton"]
 tags: smart paste, ai, clipboard, button, winforms, .net
 published: True
 position: 2

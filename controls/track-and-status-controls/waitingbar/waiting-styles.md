@@ -2,6 +2,7 @@
 title: Waiting Styles
 page_title: Waiting Styles - WinForms WaitingBar Control
 description: WinForms WaitingBar offers the WaitingStyle property that determines the style for indicating the long-lasting operation. Get familiar with the available styles.
+components: ["waitingbar"]
 slug: winforms/track-and-status-controls/waiting-styles
 tags: waitingbar
 published: True

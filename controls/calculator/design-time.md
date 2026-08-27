@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Calculator Control
 description: Get familiar with the design time options that the WinForms Calculator offers.   
+components: ["calculator"]
 slug: calculator-design-time
 tags: calculator
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Format the group key of a DateTime value in RadGridView
 description:  Format the group key of a DateTime valuer in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: How to format the group key of a DateTime valuer in RadGridView
 slug: grid-format-group-key

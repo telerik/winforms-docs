@@ -2,6 +2,7 @@
 title: Polyline
 page_title: Polyline - WinForms Map Control
 description: Get familiar with the ElevationType.Polyline and performing ElevationRequests in WinForms Map.
+components: ["map"]
 slug: winforms/map/providers/elevation/polyline
 tags: map, providers, elevation
 published: True

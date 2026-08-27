@@ -2,6 +2,7 @@
 title: Tiles
 page_title: Tiles - WinForms Panorama Control
 description: WinForms Panorama uses RadTileElements which represent a simple tile which can contain text and image and acts like a simple button.
+components: ["panorama"]
 slug: winforms/panorama/tiles
 tags: tiles
 published: True

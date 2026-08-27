@@ -2,6 +2,7 @@
 title: GridViewCellInfo
 page_title: GridViewCellInfo - WinForms GridView Control
 description: WinForms GridView uses GridViewCellInfo class which is the logical representation of a single grid cell.
+components: ["gridview"]
 slug: winforms/gridview/cells/gridviewcellinfo
 tags: gridviewcellinfo
 published: True

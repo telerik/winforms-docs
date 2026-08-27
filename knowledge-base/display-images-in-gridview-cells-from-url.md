@@ -1,6 +1,7 @@
 ---
 title: Display Images in GridView Cells from URL  
 description: This article shows how you can display grid images in RadGridView's cells from URL 
+components: ["gridview"]
 type: how-to
 page_title: How to Display Images in GridView Cells from URL    
 slug: display-images-in-gridview-cells-from-url

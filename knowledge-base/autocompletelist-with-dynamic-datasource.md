@@ -1,6 +1,7 @@
 ---
 title: Dynamic DataSource in AutoCompleteBox/DropDownList
 description: This article demonstrates how to simulate server-side autocomplete functionality in RadAutoCompleteBox/RadDropDownList
+components: ["dropdownlist"]
 type: how-to
 page_title: How to simulate server side autocomplete functionality in RadAutoCompleteBox/RadDropDownList
 slug: autocompletelist-with-dynamic-datasource

@@ -2,6 +2,7 @@
 title: Menu Orientation
 page_title: Menu Orientation - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+components: ["menu"]
 slug: winforms/menus/menu/styling-and-appearance/menu-orientation
 tags: menu,orientation
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Unable to build project after upgrade. Now what?
 description: Unable to build project after upgrade. Now what?. Check it now!
+components: ["general"]
 type: how-to
 page_title: Unable to build project after upgrade. Now what?
 slug: unable-to-build-project-after-upgrade

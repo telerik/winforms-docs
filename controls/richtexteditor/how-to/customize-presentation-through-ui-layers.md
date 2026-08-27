@@ -2,6 +2,7 @@
 title: Customize Presentation through UI Layers
 page_title: Customize Presentation through UI Layers - WinForms RichTextEditor Control
 description: UILayers provide an extensible approach to showing different parts of WinForms RichTextEditor Document. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/how-to/customize-presentation-through-ui-layers
 tags: customize,presentation,through,ui,layers
 published: True

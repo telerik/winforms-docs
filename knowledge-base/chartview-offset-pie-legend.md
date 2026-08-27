@@ -1,6 +1,7 @@
 ---
 title: How to offset PieSeries slice by clicking on a LegendItemElement
 description: Offset PieSeries slice by clicking on a LegendItemElement.
+components: ["chartview"]
 type: how-to
 page_title: How to offset PieSeries slice by clicking on a LegendItemElement
 slug: chartview-offset-pie-legend

@@ -1,6 +1,7 @@
 ---
 title: Add Custom Items to Diagram Toolbox  
 description: Learn how to add custom items in the WinForms Diagram's Toolbox.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 type: how-to
 page_title: Add Custom Items to Diagram Toolbox  
 slug: add-custom-items-to-diagram-toolbox

@@ -2,6 +2,7 @@
 title: Visual Structure
 page_title: Visual Structure - WinForms PdfViewer Control
 description: Get familiar with the visual as well as logical structure of the WinForms PdfViewer.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/structure/visual-structure
 tags: structure
 published: True

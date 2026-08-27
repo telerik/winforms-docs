@@ -2,6 +2,7 @@
 title: Properties, Events and Attributes
 page_title: Properties, events and attributes - WinForms DataEntry Control
 description: Learn the most commonly used properties, events and attributes of RadDataEntry.
+components: ["dataentry"]
 slug: winforms/dataentry/properties,-events-and-attributes
 tags: properties,events,and,attributes
 published: True

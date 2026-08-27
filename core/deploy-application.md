@@ -2,6 +2,7 @@
 title: Deploying WinForms .NET Application
 page_title: Deploying WinForms .NET Application
 description: Step-by-step guide on deploying .NET WinForms applications built with Telerik UI.
+components: ["general"]
 slug: core-getting-started
 tags: deploy, WinForms application, .NET
 published: True

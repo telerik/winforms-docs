@@ -1,6 +1,7 @@
 ---
 title: Implementing custom editor for RadTreeNode
 description: Implementing custom editor for RadTreeNode. Check it now!
+components: ["treeview"]
 type: how-to
 page_title: Implementing custom editor for RadTreeNode
 slug: implementing-custom-editor-for-radtreenode

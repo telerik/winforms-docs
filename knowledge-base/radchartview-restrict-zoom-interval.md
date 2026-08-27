@@ -1,6 +1,7 @@
 ---
 title: Restricting Zoom Interval in RadChartView
 description: An example demonstrating how zooming in the RadChartView control can be restricted to a predefined DateTime interval.  
+components: ["chartview"]
 type: how-to
 page_title: Restricting Zoom Interval in RadChartView
 slug: radchartview-restrict-zoom-interval

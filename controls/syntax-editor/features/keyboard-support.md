@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support - RadSyntaxEditor
 description: RadSyntaxEditor supports numerous keyboard combinations 
+components: ["syntaxeditor"]
 slug: syntax-editor-features-keyboard-support
 tags: features, keyboard
 published: True

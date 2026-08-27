@@ -2,6 +2,7 @@
 title: Editing Behavior
 page_title: Editing Behavior - WinForms GridView Control
 description: Learn how the end user can perform an editing operation in WinForms GridView. 
+components: ["gridview"]
 slug: winforms/gridview/end-user-capabilities/editing-behavior
 tags: editing,behavior
 published: True

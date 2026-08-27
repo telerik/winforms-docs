@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms DataFilter Control
 description: The WinForms RadDataFilter control allows specifying expressions based on the fields/properties available in the data source.
+components: ["datafilter"]
 slug: winforms/datafilter/overview
 tags: data, filter
 published: True

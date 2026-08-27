@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - WinForms ProgressBar
 description: Learn how to customize the ControlDefault theme for the WinForms ProgressBar control. 
+components: ["progressbar"]
 slug: winforms/track-and-status-controls/progressbar/themes
 tags: progressbar
 published: True

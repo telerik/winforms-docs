@@ -1,6 +1,7 @@
 ---
 title: How to show column sort index in RadVirtualGrid
 description: This article shows how to add a column sort index in RadVirtualGrid.
+components: ["virtualgrid"]
 type: how-to
 page_title: How to Show Column Sort Index in VirtualGrid
 slug: virtualgrid-column-sort-index

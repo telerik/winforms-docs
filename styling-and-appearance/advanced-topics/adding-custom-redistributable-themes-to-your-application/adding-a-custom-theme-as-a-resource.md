@@ -2,6 +2,7 @@
 title: Adding a custom theme as a resource
 page_title: Adding a custom theme as a resource
 description: Learn what are the needed steps to add a custom theme as resource in your WinForms project.
+components: ["general"]
 slug: winforms/themes/advanced-topics/adding-custom-redistributable-themes-to-your-application-/adding-a-custom-theme-as-a-resource
 tags: adding,a,custom,theme,as,a,resource
 published: True

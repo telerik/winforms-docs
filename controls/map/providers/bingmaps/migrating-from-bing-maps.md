@@ -1,6 +1,7 @@
 ---
 title: Migrating from Bing Maps
 description: Migrate a WinForms RadMap application from the retiring Bing Maps provider to Azure Maps or a custom provider, with capability and caching guidance.
+components: ["map"]
 page_title: Migrating from Bing Maps - WinForms Map Control
 slug: winforms/map/providers/migrating-from-bing-maps
 tags: map, providers, bing maps, azure maps, migration

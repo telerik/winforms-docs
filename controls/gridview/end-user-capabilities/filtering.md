@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering - WinForms GridView Control
 description: Learn how the end user can use the built-in filtering functionality in WinForms GridView. 
+components: ["gridview"]
 slug: winforms/gridview/end-user-capabilities/filtering
 tags: filtering
 published: True

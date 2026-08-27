@@ -1,6 +1,7 @@
 ---
 title: Set default filter operators in RadGridView
 description: This article shows how you can set a default filter operator for certain column in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: Set default filter operators in RadGridView
 slug: default-filter-operator-gridview

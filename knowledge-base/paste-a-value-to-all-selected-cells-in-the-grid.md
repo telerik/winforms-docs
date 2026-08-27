@@ -1,6 +1,7 @@
 ---
 title: How to Paste a Single Value to All Selected Cells in RadGridView
 description: This article shows how you can paste a single value to all selected cells in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Paste a Single Value to All Selected Cells in RadGridView
 slug: paste-a-value-to-all-selected-cells-in-the-grid

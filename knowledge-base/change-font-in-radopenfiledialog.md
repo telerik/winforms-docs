@@ -1,6 +1,7 @@
 ---
 title: How to change font in RadSaveFileDialog
 description: This article demonstrates how you can change font style and size in file dialogs, for example in RadSaveFileDialog
+components: ["filedialogs"]
 type: how-to
 page_title: How to change font in RadSaveFileDialog
 slug: change-font-radsavefiledialog

@@ -1,6 +1,7 @@
 ---
 title: Binding two controls to the same data source
 description: Binding two controls to the same data source. Check it now!
+components: ["general"]
 type: how-to
 page_title: Binding two controls to one and the same data source
 slug: binding-two-controls-to-the-same-data-source

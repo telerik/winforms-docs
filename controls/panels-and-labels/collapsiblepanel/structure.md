@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms CollapsiblePanel Control
 description: Get familiar with the inner structure and organization of the elements which build the WinForms CollapsiblePanel control.
+components: ["collapsiblepanel"]
 slug: winforms/panels-and-labels/collapsiblepanel/structure
 tags: structure
 published: True

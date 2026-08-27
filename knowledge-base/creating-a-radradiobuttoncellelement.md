@@ -1,6 +1,7 @@
 ---
 title: Creating a RadRadioButtonCellElement
 description: Creating a RadRadioButtonCellElement. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Creating a RadRadioButtonCellElement
 slug: creating-a-radradiobuttoncellelement

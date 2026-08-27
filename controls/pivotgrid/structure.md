@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms PivotGrid Control
 description: Get familiar with the inner structure and organization of the elements which build the WinForms PivotGrid control.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/structure
 tags: structure
 published: True

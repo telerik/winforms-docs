@@ -1,6 +1,7 @@
 ---
 title: Customizing RadMessageBox with custom theme
 description: Customizing RadMessageBox with custom theme. Check it now!
+components: ["general"]
 type: how-to
 page_title: Customizing RadMessageBox with custom theme
 slug: customizing-radmessagebox-with-custom-theme

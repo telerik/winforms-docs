@@ -1,6 +1,7 @@
 ---
 title: Memory Considerations when Using Telerik UI for WinForms Suite
 description: Things to have in mind about memory consumption when using Telerik UI for WinForms. 
+components: ["general"]
 type: how-to
 page_title: Memory Considerations when Using Telerik UI for WinForms Suite
 slug: memory-considerations

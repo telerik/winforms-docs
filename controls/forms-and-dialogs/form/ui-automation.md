@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadForm
 description: UI Automation Support (UI Accessibility) for RadForm.   
+components: ["forms,dialogs,templates"]
 slug: form-ui-automation
 tags: form,ui,automation
 published: True

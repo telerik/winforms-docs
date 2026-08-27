@@ -2,6 +2,7 @@
 title: Adding columns
 page_title: Adding columns - RadGanttView
 description: The CollectionEditor allows you to add columns to the gantt view at design time.
+components: ["ganttview"]
 slug: winforms/ganttview-/design-time/adding-columns
 tags: adding,columns
 published: True

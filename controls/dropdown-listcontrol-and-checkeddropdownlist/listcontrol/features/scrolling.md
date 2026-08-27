@@ -2,6 +2,7 @@
 title: Scrolling
 page_title: Scrolling - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features/scrolling
 tags: listcontrol, scrolling
 published: True

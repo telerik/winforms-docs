@@ -2,6 +2,7 @@
 title: Styles Overview
 page_title: Styles Overview - WinForms RichTextEditor Control
 description: WinForms RichTextEditor supports Styles similar to the ones in Microsoft Office. Styles can be created and added to a document programmatically or via the Styles dialog. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/features/styles
 tags: styles
 published: True

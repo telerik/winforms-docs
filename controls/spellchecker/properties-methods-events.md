@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadSpellChecker
 description: RadSpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
+components: ["spellchecker"]
 slug: winforms/spellchecker/properties-methods-events
 tags: spellchecker
 published: True

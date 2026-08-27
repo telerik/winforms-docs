@@ -2,6 +2,7 @@
 title: Using the CommandManager
 page_title: Using the CommandManager - WinForms Dock Control
 description: Learn how you can use the RadDock's CommandManager.
+components: ["dock"]
 slug: winforms/dock/architecture-and-features/using-the-commandmanager
 tags: using,the,commandmanager
 published: True

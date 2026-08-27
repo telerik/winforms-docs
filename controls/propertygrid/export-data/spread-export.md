@@ -2,6 +2,7 @@
 title: Spread Export
 page_title: Spread Export - RadPropertyGrid
 description: Spread Export
+components: ["propertygrid"]
 slug: winforms/propertygrid/export-data/spread-export
 tags: spread,export
 published: True

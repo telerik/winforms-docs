@@ -1,6 +1,7 @@
 ---
 title: Removing the RadGridView Border
 description: Learn how to remove the control border of RadGridView in UI for WinForms
+components: ["gridview"]
 type: how-to
 page_title: How to Remove RadGridView Control Border in UI for WinForms
 meta_title: How to Remove RadGridView Control Border in UI for WinForms

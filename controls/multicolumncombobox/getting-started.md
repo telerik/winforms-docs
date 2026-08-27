@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms MultiColumnComboBox
 description: WinForms MultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+components: ["multicolumncombo"]
 slug: winforms/multicolumncombobox/getting-started
 tags: multicolumncombobox, design time
 published: True

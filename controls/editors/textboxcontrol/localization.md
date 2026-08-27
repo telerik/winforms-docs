@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadTextBoxControl
 description: This article shows how you can localize all string used inside RadTextBoxControl.
+components: ["editors"]
 slug: winforms/editors/textboxcontrol/localization
 tags: textboxcontrol, localization
 published: True

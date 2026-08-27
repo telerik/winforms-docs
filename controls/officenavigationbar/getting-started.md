@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms OfficeNavigationBar Control
 description: Get started with the WinForms OfficeNavigationBar and construct your step layout navigation.   
+components: ["officenavigationbar"]
 slug: officenavigationbar-getting-started
 tags: officenavigationbar
 published: True

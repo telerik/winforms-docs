@@ -2,6 +2,7 @@
 title: Views
 page_title: Views - WinForms AIPrompt Control
 description: AIPrompt views
+components: ["aiprompt"]
 slug: aiprompt-views
 tags: aiprompt, view, inputview, outputview, moreactionsview, response,rating
 published: True

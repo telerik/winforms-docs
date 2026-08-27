@@ -2,6 +2,7 @@
 title: Data Validation
 page_title: Data Validation - WinForms Spreadsheet Control
 description: Data validation is a feature of WinForms Spreadsheet that helps you define restrictions on what data can be entered in a cell.
+components: ["spreadsheet"]
 slug: radspreadsheet-features-data-validation
 tags: data,validation
 published: True

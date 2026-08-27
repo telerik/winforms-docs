@@ -2,6 +2,7 @@
 title: Upgrading to RadPageView
 page_title: Upgrading to RadPageView - WinForms PageView Control
 description: Learn how to upgrade to the WinForms RadPageView control.
+components: ["pageview"]
 slug: winforms/pageview/upgrading-to-radpageview
 tags: upgrading,to,radpageview
 published: True

@@ -2,6 +2,7 @@
 title: GridViewRatingColumn
 page_title: GridViewRatingColumn - WinForms GridView Control
 description: WinForms GridViewRatingColumn allows you to represent and edit numeric value as rating elements.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewratingcolumn
 tags: gridviewratingcolumn
 published: True

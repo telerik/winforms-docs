@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms MessageBox
 description: Get familiar with the public API that WinForms RadMessageBox offers.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/messagebox/properties-methods-events
 tags: messagebox, structure
 published: True

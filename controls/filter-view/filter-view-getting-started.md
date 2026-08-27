@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - Filter View
 description: Leanr how to get started with the WinForms FilterView control.  
+components: ["filterview"]
 slug: filter-view-getting-started
 tags: filter, view
 published: True

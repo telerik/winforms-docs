@@ -1,6 +1,7 @@
 ---
 title: How to Create Rectangle and Ellipse Shapes in RadMap
 description: Learn how to draw rectangle and ellipse shapes in the WinForms Map control. 
+components: ["map"]
 type: how-to
 page_title: How to Create Rectangle and Ellipse Shapes in RadMap
 slug: create-map-rectangle-ellipse-shapes

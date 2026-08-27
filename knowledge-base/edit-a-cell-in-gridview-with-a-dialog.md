@@ -1,6 +1,7 @@
 ---
 title: How to Edit a Cell in RadGridView with a Dialog
 description: This article shows how you can edit a cell in RadGridView by using a custom dialog.
+components: ["gridview"]
 type: how-to
 page_title: How to Edit a Cell in RadGridView with a Dialog
 slug: edit-a-cell-in-gridview-with-a-dialog

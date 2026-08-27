@@ -2,6 +2,7 @@
 title:  Using a Default Theme for the Entire Application
 page_title: Using a Default Theme for the Entire Application - Themes
 description: Learn what are the needed steps to set a default theme in your WinForms application.
+components: ["general"]
 slug: winforms/themes/using-a-default-theme-for-the-entire-application
 tags: using,a,default,theme,for,the,entire,application
 published: True

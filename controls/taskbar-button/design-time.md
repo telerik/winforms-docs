@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Taskbar Button
 description: Get familiar with the design time options that WinForms Taskbar Button offers.  
+components: ["taskbarbutton"]
 slug: taskbar-button-design-time
 tags: taskbar,button,design,time
 published: True

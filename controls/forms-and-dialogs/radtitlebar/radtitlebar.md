@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms TitleBar Control
 description: RadTitleBar control is used in forms and provides functionality for dragging, minimizing, maximizing and closing the form. This control is internally used by RadForm.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/radtitlebar
 tags: radtitlebar
 published: True

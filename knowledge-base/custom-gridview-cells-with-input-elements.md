@@ -1,6 +1,7 @@
 ---
 title: How to Create Custom Cells with Input Elements
 description: This article shows how you can create custom gridview cells with input elements.
+components: ["gridview"]
 type: how-to
 page_title: How to Create Custom Cells with Input Elements
 slug: custom-gridview-cells-with-input-elements

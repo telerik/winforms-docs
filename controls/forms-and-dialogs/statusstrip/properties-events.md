@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties End events - WinForms StatusBar Control
 description: RadStatusStrip provides a status area that can be composed of any number of RadElement types - buttons, repeat buttons, image buttons, labels, panels, progress bars and separators.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/statusstrip/properties-events
 tags: radstatusbar,properties, methods, events
 published: True

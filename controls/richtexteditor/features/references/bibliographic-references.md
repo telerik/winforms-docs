@@ -2,6 +2,7 @@
 title: Bibliographic References
 page_title: Bibliographic References - WinForms RichTextEditor Control
 description: Bibliographic references in WinForms RichTextEditor represent links (in the form of text) to documents, books, films and everything that can be cited in a Word document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/references/bibliographic-references
 tags: bibliographic,references
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Achieve Multiple Highlight Rules in SyntaxEditor
 description: Learn how to achieve multiple highlight rules the WinForms SyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to 
 page_title: How to Achieve Multiple Highlight Rules in SyntaxEditor
 slug: multiple-highlight-rules

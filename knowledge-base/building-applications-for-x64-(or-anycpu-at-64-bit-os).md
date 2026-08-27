@@ -1,6 +1,7 @@
 ---
 title: Building applications for x64 (or AnyCPU at 64-bit OS)
 description: Building applications for x64 (or AnyCPU at 64-bit OS). Check it now!
+components: ["general"]
 type: how-to
 page_title: Building applications for x64 (or AnyCPU at 64-bit OS)
 slug: building-applications-for-x64-(or-anycpu-at-64-bit-os)

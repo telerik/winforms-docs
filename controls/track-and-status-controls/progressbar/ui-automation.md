@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadProgressBar
 description: UI Automation Support (UI Accessibility) for RadProgressBar.   
+components: ["progressbar"]
 slug: progressbar-ui-automation
 tags: radprogressbar,ui,automation
 published: True

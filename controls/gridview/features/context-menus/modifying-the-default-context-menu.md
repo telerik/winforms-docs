@@ -2,6 +2,7 @@
 title: Modifying the Default Context Menu
 page_title: Modifying the Default Context Menu - WinForms GridView Control
 description: Learn how to add items to the default context menu in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/context-menus/modifying-the-default-context-menu
 tags: modifying,the,default,context,menu
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: RadSparkline Getting Started
 description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+components: ["sparkline"]
 slug: radsparkline-getting-started
 tags: sparkline
 published: True

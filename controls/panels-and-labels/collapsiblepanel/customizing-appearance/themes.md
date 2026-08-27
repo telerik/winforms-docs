@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadCollapsiblePanel
 description: All RadCollapsiblePanel elements can be styled in Visual Style Builder. This article shows how you can change the header and footer back colors.
+components: ["collapsiblepanel"]
 slug: winforms/panels-and-labels/collapsiblepanel/customizing-appearance/themes
 tags: radcollapsiblepanel, appearance
 published: True

@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms RadNotifyIcon Control
 description: Get familiar with the public API that WinForms RadNotifyIcon offers.   
+components: ["notifyicon"]
 slug: radnotifyicon-properties-methods-events
 tags: radnotifyicon
 published: True

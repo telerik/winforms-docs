@@ -1,6 +1,7 @@
 ---
 title: How to Search and Highlight Text in RichTextEditor
 description: Learn how to search text in RichTextEditor and highlight it.
+components: ["richtexteditor"]
 type: how-to 
 page_title: How to Search and Highlight Text in RichTextEditor
 slug: rte-highligh-search-text

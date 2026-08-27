@@ -1,6 +1,7 @@
 ---
 title: Custom Excel-like filter popup with time part
 description: This article demonstrates how to customize Excel-like filter popup to show TimePicker 
+components: ["gridview"]
 type: how-to
 page_title: Custom Excel-like filter popup with time part
 slug: custom-excel-like-filter-popup-with-time-part

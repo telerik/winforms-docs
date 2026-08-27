@@ -2,6 +2,7 @@
 title: Working with Appointments
 page_title: Working with Appointments - WinForms Scheduler Control
 description: Get familiar how appointments can be created and modified in WinForms Scheduler.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appointments-and-dialogs/working-with-appointments
 tags: working,with,appointments
 published: True

@@ -2,6 +2,7 @@
 title: Custom Group Comparer
 page_title: Custom Group Comparer - RadPivotGrid
 description: Learn how to implement a custom GroupComparer to define custom sorting logic for row and column groups in RadPivotGrid for WinForms.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/custom-group-comparer
 tags: pivotgrid, sorting, group, comparer, custom
 published: True

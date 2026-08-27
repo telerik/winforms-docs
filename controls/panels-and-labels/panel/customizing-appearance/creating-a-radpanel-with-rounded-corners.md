@@ -2,6 +2,7 @@
 title: Creating a RadPanel with Rounded Corners
 page_title: Creating a RadPanel with Rounded Corners - WinForms Panel Control
 description: Learn how to create a WinForms Panel with rounded corners.
+components: ["panel"]
 slug: winforms/panels-and-labels/panel/creating-a-radpanel-with-rounded-corners
 tags: creating,a,radpanel,with,rounded,corners
 published: True

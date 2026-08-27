@@ -2,6 +2,7 @@
 title: Cancel Drop Down Closing
 page_title: Cancel Drop Down Closing - WinForms MultiColumnComboBox Control
 description: Learn how to prevent closing the drop down according to the selected row in the popup grid.
+components: ["multicolumncombo"]
 slug: cancel-drop-down-closing
 tags: drop,down,close
 published: True

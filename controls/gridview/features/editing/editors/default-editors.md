@@ -2,6 +2,7 @@
 title: Default Editors
 page_title: Default Editors - WinForms GridView Control
 description: WinForms GridView provides build-in functionality for editing the data. Learn what are the default editors. 
+components: ["gridview"]
 slug: winforms/gridview/editors/default-editors
 tags: editors
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Hide DockingGuide Indicators
 description: Learn how to hide DockingGuide Indicators that appear in the center and manage their position.
+components: ["dock"]
 type: how-to
 page_title: How to Hide DockingGuide Indicators that Appear in Center in RadDock for WinForms
 slug: dock-hide-docking-guide-indicators

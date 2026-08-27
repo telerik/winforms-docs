@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Panorama Control
 description: WinForms Panorama is a control that displays elements of type RadTileElement in a mosaic manner.
+components: ["panorama"]
 slug: winforms/panorama/getting-started
 tags: getting,started
 published: True

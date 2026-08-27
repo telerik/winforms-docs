@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms BindingNavigator Control
 description: WinForms BindingNavigator's main purpose is to provide a basic UI for navigation through a collection of business objects.
+components: ["bindingnavigator"]
 slug: winforms/bindingnavigator/getting-started
 tags: getting,started
 published: True

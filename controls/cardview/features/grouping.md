@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping - UI for WinForms Documentation
 description: Grouping
+components: ["cardview"]
 slug: winforms/cardview/features/grouping
 tags: grouping
 published: True

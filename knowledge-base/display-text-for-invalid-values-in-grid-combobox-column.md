@@ -1,6 +1,7 @@
 ---
 title: Display Text for Invalid Values in GridView's Combobox Column  
 description: Learn how to display cells' text for invalid values in the WinForms GridView GridViewComboBoxColumn.   
+components: ["gridview"]
 type: how-to
 page_title: Display Text for Invalid Values in GridView's Combobox Column 
 slug: display-text-for-invalid-values-in-grid-combobox-column

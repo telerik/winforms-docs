@@ -1,6 +1,7 @@
 ---
 title: How to Include Multiple Fields in the RadDropDownList's DisplayMember 
 description: Learn how to include multiple fields in the DislayMember for the WinForms DropDownList.
+components: ["dropdownlist"]
 type: how-to 
 page_title: How to Include Multiple Fields in the RadDropDownList's DisplayMember 
 slug: multiple-display-members-in-dropdownlist

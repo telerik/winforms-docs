@@ -2,6 +2,7 @@
 title: Binding to Database Data
 page_title: Binding to Database Data - WinForms TreeView Control
 description: WinForms TreeView supports binding to Database data. Levels are created using the RadTreeView RelationBindings collection.
+components: ["treeview"]
 slug: winforms/treeview/data-binding/binding-to-database-data
 tags: binding,to,database,data
 published: True

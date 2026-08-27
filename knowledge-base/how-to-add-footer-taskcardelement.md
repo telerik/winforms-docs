@@ -1,6 +1,7 @@
 ---
 title: How to add footer area to TaskCardElement
 description: This article demonstrates how to add footer area to RadTaskBoard card.
+components: ["taskboard"]
 type: how-to
 page_title: Insert footer area in the TaskCardElement
 slug: howto-add-footer-taskcardelement

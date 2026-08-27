@@ -2,6 +2,7 @@
 title: Formatting Series Labels
 page_title: Formatting Series Labels - ChartView
 description: This article demonstrates how to change the labels styles and text. The series labels can be customized in the LabelFormatting event of RadChartView.
+components: ["chartview"]
 slug: winforms/chartview-/customization/formatting-series-labels
 tags: formatting,series,labels
 published: True

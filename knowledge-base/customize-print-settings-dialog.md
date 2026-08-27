@@ -1,6 +1,7 @@
 ---
 title: How to customize Print Settings Dialog in RadScheduler
 description: This article demonstrates how to create custom Print Settings Dialog in RadScheduler
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to customize Print Settings Dialog in RadScheduler
 slug: customize-print-settings-dialog

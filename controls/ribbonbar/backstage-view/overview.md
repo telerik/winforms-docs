@@ -2,6 +2,7 @@
 title: Overview
 page_title: Backstage View - RadRibbonBar
 description: Backstage View is the Office 2010 replacement of the Application Menu.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/backstage-view/overview
 tags: overview
 published: True

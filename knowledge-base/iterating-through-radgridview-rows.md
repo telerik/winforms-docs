@@ -1,6 +1,7 @@
 ---
 title: Iterating through RadGridView Rows
 description: Iterating through RadGridView Rows. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Iterating through RadGridView Rows
 slug: iterating-through-radgridview-rows

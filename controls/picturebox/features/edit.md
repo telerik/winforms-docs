@@ -2,6 +2,7 @@
 title: Edit
 page_title: Edit
 description: Edit
+components: ["picturebox"]
 slug: radpicturebox-edit
 tags: edit
 published: True

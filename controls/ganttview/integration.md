@@ -2,6 +2,7 @@
 title: Integration
 page_title: Integration - RadGanttView
 description: This example will demonstrate how RadGanttView integrates with RadScheduler.
+components: ["ganttview"]
 slug: winforms/ganttview-/integration
 tags: integration
 published: True

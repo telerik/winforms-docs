@@ -2,6 +2,7 @@
 title: Data Cells
 page_title: Data Cells - WinForms GanttView Control
 description: WinForms GanttView allows you to replace the standard cells with a custom ones.
+components: ["ganttview"]
 slug: winforms/ganttview/custom-items/data-cells
 tags: creating,custom,cells
 published: True

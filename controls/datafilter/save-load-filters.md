@@ -2,6 +2,7 @@
 title: Serialize/Deserialize to XML
 page_title: Serialize/Deserialize to XML - RadDataFilter
 description: This article shows how you can save or load the expression that you have built. 
+components: ["datafilter"]
 slug: winforms/datafilter/save-load-filters
 tags: data, filter, save, load
 published: True

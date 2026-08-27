@@ -1,6 +1,7 @@
 ---
 title: How to Get Click Coordinates Relative to the Image 
 description: This article demonstrates how to get the mouse coordinates relative to the image  
+components: ["imageeditor"]
 type: how-to
 page_title: How to Get Click Coordinates Relative to the Image  
 slug: get-clicked-image-coordinates

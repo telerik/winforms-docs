@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - UI for WinForms Documentation
 description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+components: ["commandbar"]
 slug: winforms/commandbar/structure
 tags: structure
 published: True

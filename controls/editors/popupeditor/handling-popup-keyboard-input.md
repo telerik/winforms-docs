@@ -2,6 +2,7 @@
 title: Handling Popup's Keyboard Input  
 page_title: Handling Popup's Keyboard Input - RadPopupEditor
 description: This article shows how you can handle the popup's keyboard input. 
+components: ["editors"]
 slug: handling-popup-keyboard-input
 tags: popup, editor, keyboard, input
 published: True

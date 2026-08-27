@@ -2,6 +2,7 @@
 title: SparkScatterSeries
 page_title: SparkScatterSeries - WinForms Sparkline Control
 description: Unlike Categorical series, ScatterSeries plots its data upon two numerical axes.   
+components: ["sparkline"]
 slug: radsparkline-sparkscatterseries
 tags: sparkline
 published: True

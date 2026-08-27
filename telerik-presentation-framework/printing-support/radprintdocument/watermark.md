@@ -2,6 +2,7 @@
 title: Watermark
 page_title: Watermark - Telerik Presentation Framework
 description: The RadPrintDocument has a built in watermark support. The RadPrintDocument supports both text and image watermarks.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/watermark
 tags: watermark
 published: True

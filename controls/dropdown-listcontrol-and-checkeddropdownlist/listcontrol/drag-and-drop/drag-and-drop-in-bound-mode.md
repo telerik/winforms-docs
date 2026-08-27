@@ -2,6 +2,7 @@
 title: Drag and Drop in Bound Mode
 page_title: Drag and Drop in Bound Mode - WinForms ListControl Control
 description: Learn how to implement drag and drop operation between two bound WinForms ListControl controls.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True

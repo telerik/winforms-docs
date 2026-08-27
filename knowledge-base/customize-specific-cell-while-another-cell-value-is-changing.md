@@ -1,6 +1,7 @@
 ---
 title: How to customize specific cell while another cell value is changing
 description: This article demonstrates how to customize specific cell while another cell value is changing
+components: ["gridview"]
 type: how-to
 page_title: 
 slug: customize-specific-cell-while-another-cell-value-is-changing

@@ -2,6 +2,7 @@
 title: Radar
 page_title: Radar - ChartView
 description: The radar chart is a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point
+components: ["chartview"]
 slug: winforms/chartview-/series-types/radar
 tags: radar
 published: True

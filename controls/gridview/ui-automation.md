@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadGridView
 description: UI Automation Support (UI Accessibility) for RadGridView.   
+components: ["gridview"]
 slug: gridview-ui-automation
 tags: radgridview,ui,automation
 published: True

@@ -1,6 +1,7 @@
 ---
 title: FlagEnumEditor in RadPropertyGrid
 description: This article shows how to achieve FlagEnumEditor in RadPropertyGrid
+components: ["propertygrid"]
 type: how-to
 page_title: FlagEnumEditor in RadPropertyGrid
 slug: flagenumeditor-in-radpropertygrid

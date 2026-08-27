@@ -2,6 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements - UI for WinForms Documentation
 description: Accessing and Customizing Elements
+components: ["buttons"]
 slug: winforms/buttons/toggleswitch/accessing-and-customizing-elements
 tags: accessing,and,customizing,elements
 published: True

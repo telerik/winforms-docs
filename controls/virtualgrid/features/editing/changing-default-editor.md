@@ -2,6 +2,7 @@
 title: Changing the Default Editors
 page_title: Changing the Default Editors - RadVirtualGrid
 description: This article shows how you can replace the default editors used in RadVirtualGrid with custom ones.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/cells/changing-default-editor
 tags: virtualgrid, custom, editor
 published: True

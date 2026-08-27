@@ -1,6 +1,7 @@
 ---
 title: Resources in resx files are lost when the form is modified
 description: Resources in resx files are lost when the form is modified
+components: ["general"]
 type: troubleshooting
 page_title: Resources in resx files are lost when the form is modified
 slug: resources-in-resx-files-are-lost-when-the-form-is-modified

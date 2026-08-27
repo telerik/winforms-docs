@@ -1,6 +1,7 @@
 ---
 title: Inserting a Message at a Specific Index in RadChat
 description: Learn how to insert a message at a specific index in the RadChat control in UI for WinForms. This guide explains how to utilize the `Insert` method with a `BaseChatDataItem`.
+components: ["chat"]
 type: how-to
 page_title: How to Insert a Message at a Specific Index in RadChat Control
 meta_title: How to Insert a Message at a Specific Index in RadChat Control

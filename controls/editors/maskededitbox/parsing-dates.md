@@ -2,6 +2,7 @@
 title: Parsing Dates
 page_title: Parsing Dates - WinForms MaskedEditBox Control
 description: When WinForms MaskedEditBox is with MaskType FreeFormDateTime the control tries to recognize a free-form string and convert it to a valid date. 
+components: ["editors"]
 slug: winforms/editors/maskededitbox/parsing-dates
 tags: parsing,dates
 published: True

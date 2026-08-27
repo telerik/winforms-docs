@@ -1,6 +1,7 @@
 ---
 title: How to Save Document in SyntaxEditor
 description: This article shows how you can a document in RadSyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Save Document in SyntaxEditor
 slug: save-document-in-syntax-editor

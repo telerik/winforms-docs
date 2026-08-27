@@ -2,6 +2,7 @@
 title: Customize Appearance
 page_title: Customize Appearance 
 description: Check our &quot;Customize Appearance&quot; documentation article for the Overlay Screen {{ site.framework_name }} control.
+components: ["splashscreen"]
 slug: overlay-customize-appearance
 tags: overlay,customize,appearance,formshown
 published: True

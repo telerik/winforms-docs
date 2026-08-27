@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Callout Control
 description: Get familiar with the internal elements structure of WinForms Callout. 
+components: ["callout"]
 slug: callout-structure
 tags: callout, structure
 published: True

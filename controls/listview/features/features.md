@@ -2,6 +2,7 @@
 title: Overview
 page_title: Features - WinForms ListView Control
 description: WinForms ListView supports filtering, sorting, grouping functionality.
+components: ["listview"]
 slug: winforms/listview/features
 tags: features
 published: True

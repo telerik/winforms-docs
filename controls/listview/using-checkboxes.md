@@ -2,6 +2,7 @@
 title: Using Checkboxes
 page_title: Using Checkboxes - WinForms ListView Control
 description: WinForms ListView items have built-in checkboxes which can be shown by setting the ShowCheckBoxes property to true.
+components: ["listview"]
 slug: winforms/listview/using-checkboxes
 tags: listview
 published: True

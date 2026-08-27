@@ -1,6 +1,7 @@
 ---
 title: Resizing and Wrapping Text in ChatCardAction for RadChat
 description: Learn how to resize and wrap text in ChatCardAction buttons within RadChat cards in UI for WinForms.
+components: ["chat"]
 type: how-to
 page_title: How to Resize and Wrap Text for ChatCardAction in RadChat
 meta_title: How to Resize and Wrap Text for ChatCardAction in RadChat

@@ -1,6 +1,7 @@
 ---
 title: Tracking Visible Rows When Scrolling in GridView for UI for WinForms
 description: Learn how to identify which rows become visible or invisible as the user scrolls in GridView for UI for WinForms.
+components: ["gridview"]
 type: how-to
 page_title: Detecting Visible Rows While Scrolling in GridView for UI for WinForms
 meta_title: Detecting Visible Rows While Scrolling in GridView for UI for WinForms

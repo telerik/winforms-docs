@@ -1,6 +1,7 @@
 ---
 title: How to Send and Receive Messages Between Windows Forms Applications
 description: Learn how to transfer messages between two different Windows Forms applications. 
+components: ["general"]
 type: how-to
 page_title: How to Send and Receive Messages Between Windows Forms Applications
 slug: send-receive-messages-between-windows-forms-applications

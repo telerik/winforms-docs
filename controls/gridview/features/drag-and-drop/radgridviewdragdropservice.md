@@ -2,6 +2,7 @@
 title: RadGridViewDragDropService
 page_title: RadGridViewDragDropService - WinForms GridView Control
 description: WinForms GridView handles the whole drag and drop operation by its RadGridViewDragDropService. Learn how to use it.
+components: ["gridview"]
 slug: winforms/gridview/radgridviewdragdropservice
 tags: gridview
 published: True

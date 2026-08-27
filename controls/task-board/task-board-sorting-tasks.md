@@ -2,6 +2,7 @@
 title: Sorting Columns and Tasks
 page_title: Sorting Columns and Tasks - Task Board
 description: Sorting the task items and columns in the WinForms TaskBoard (Kanban) control.
+components: ["taskboard"]
 slug: task-board-sorting-tasks
 tags: task board, tasks, sort
 published: True

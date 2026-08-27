@@ -2,6 +2,7 @@
 title: Settings
 page_title: Settings - WinForms RichTextEditor Control
 description: HtmlFormatProvider allows for import of HTML documents and respectively export of WinForms RichTextEditor to HTML. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/html/settings
 tags: import/export
 published: True

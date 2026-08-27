@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadRadioButton
 description: UI Automation Support (UI Accessibility) for RadRadioButton.   
+components: ["buttons"]
 slug: radiobutton-ui-automation
 tags: radiobutton,ui,automation
 published: True

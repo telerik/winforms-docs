@@ -1,6 +1,7 @@
 ---
 title: How to Select and Copy Text in Chat Messages
 description: This article demonstrates how to select and copy text in chat messages
+components: ["chat"]
 type: how-to
 page_title: How to Select and Copy Text in Chat Messages
 slug: how-to-select-and-copy-text-in-chat-messages

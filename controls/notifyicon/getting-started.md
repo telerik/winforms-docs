@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms NotifyIcon Control
 description: Get started with the RadNotifyIcon control from the UI for WinForms suite.
+components: ["notifyicon"]
 slug: notifyicon-getting-started
 tags: notifyIcon, getting, started
 published: True

@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadDock
 description: All RadDock elements can be styled in Visual Style Builder. This article shows how you can change the tooWindows caption.
+components: ["dock"]
 slug: winforms/radodock/customizing-appearance/themes
 tags: raddock, themes
 published: True

@@ -2,6 +2,7 @@
 title: Tab Vs Shape
 page_title: TabVsShape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
+components: ["general"]
 slug: winforms-telerik-presentation-framework-tab-vs-shape
 tags: tab-shape
 published: True

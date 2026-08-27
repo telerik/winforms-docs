@@ -2,6 +2,7 @@
 title: Default Theme
 page_title: Default Theme
 description: Learn how to change the default theme design time for the controls from the Telerik UI for WinForms suite.   
+components: ["general"]
 slug: default-theme-vs-extensions
 tags: options
 published: True

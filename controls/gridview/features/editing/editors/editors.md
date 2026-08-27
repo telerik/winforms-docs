@@ -2,6 +2,7 @@
 title: Editors
 page_title: Editors - WinForms GridView Control
 description: WinForms GridView provides build-in functionality for editing the data.
+components: ["gridview"]
 slug: winforms/gridview/editors/editors
 tags: editors
 published: True

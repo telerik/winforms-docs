@@ -1,6 +1,7 @@
 ---
 title: Highlighting the Current Line Number in RadSyntaxEditor
 description: Learn how to change the color of the current line number in the line number margin of the WinForms SyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Highlight the Current Line Number in RadSyntaxEditor
 slug: syntaxeditor-highlight-current-line-number

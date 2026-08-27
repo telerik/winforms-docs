@@ -2,6 +2,7 @@
 title: MCP Server Overview
 page_title: Telerik WinForms MCP Server - Installation, Configuration, and Getting Started
 description: Install and configure the Telerik WinForms MCP Server for AI-powered code generation. Covers .NET 10 dnx and .NET 8/9 dotnet tool setup, .mcp.json configuration, Visual Studio and VS Code integration, license requirements, and troubleshooting.
+components: ["general"]
 slug: ai-mcp-server
 tags: telerik,winforms,mcp,mcp server,installation,setup,configuration,.mcp.json,dnx,dotnet tool,visual studio,vs code,license,NuGet,getting started
 position: 0

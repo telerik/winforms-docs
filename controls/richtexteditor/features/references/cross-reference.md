@@ -2,6 +2,7 @@
 title: Cross Reference
 page_title: Cross Reference - WinForms RichTextEditor Control
 description: Cross-References in WinForms RichTextEditor represent fields that refer to a part of the document. When that part changes, these fields can be updated to reflect the change. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/references/cross-reference
 tags: cross,reference
 published: True

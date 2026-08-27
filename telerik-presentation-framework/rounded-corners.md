@@ -2,6 +2,7 @@
 title: Rounded Corners
 page_title: Rounded Corners - Telerik Presentation Framework
 description: The newest Windows OS 11 brings plenty of great features where the RadForm's rounded corners are just a piece of the improved design.   
+components: ["general"]
 slug: tpf-rounded-corners
 tags: windows11, rounded, corners, form
 published: True

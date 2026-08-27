@@ -1,6 +1,7 @@
 ---
 title: How to Simulate Outlook-like Multiple Categories in Scheduler's Appointments
 description: This article shows how you can simulate Outlook-like multiple categories in the WinForms Scheduler's appointments.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to Simulate Outlook-like Multiple Categories in Scheduler's Appointments
 slug: outlook-like-multiple-categories-scheduler-appointments

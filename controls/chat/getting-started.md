@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Chat Control
 description: WinForms Chat is a control that provides conversational experience
+components: ["chat"]
 slug: winforms/chat/getting-started 
 tags: chat
 published: True

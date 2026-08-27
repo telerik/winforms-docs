@@ -1,6 +1,7 @@
 ---
 title: How to Achieve Checked RadMultiColumnComboBox 
 description: This article demonstrates how to achieve checked RadMultiColumnComboBox  
+components: ["multicolumncombo"]
 type: how-to
 page_title: How to Achieve Checked RadMultiColumnComboBox       
 slug: checked-multicolumncombobox

@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection - WinForms ListView Control
 description: WinForms ListView supports both single and multiple selection.
+components: ["listview"]
 slug: winforms/listview/features/selection
 tags: features
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Expression Editor - WinForms GridView Control
 description: WinForms GridView offers RadExpressionEditor which is a powerful editor that allows you to build complex expressions using a simple Domain Specific Language.
+components: ["gridview"]
 slug: winforms/gridview/expression-editor
 tags: expression,editor
 published: True

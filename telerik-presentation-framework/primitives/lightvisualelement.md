@@ -2,6 +2,7 @@
 title: LightVisualElement
 page_title: LightVisualElement - Telerik Presentation Framework
 description: LightVisualElement is a lightweight element which is capable of displaying Text, Border and Image.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/primitives/lightvisualelement
 tags: lightvisualelement
 published: True

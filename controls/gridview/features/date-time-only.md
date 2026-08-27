@@ -2,6 +2,7 @@
 title: DateOnly/TimeOnly(.Net Only)
 page_title: DateOnly/TimeOnly(.Net Only) - RadGridView
 description: Describes how you can use the Split view to display tow grid withing the same container which allows easy data comparison.  
+components: ["gridview"]
 slug: gridview-features-date-time-only
 tags: dateonly, timeonly, 
 published: False

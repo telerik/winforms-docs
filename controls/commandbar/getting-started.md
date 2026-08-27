@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms CommandBar Control
 description: WinForms CommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+components: ["commandbar"]
 slug: winforms/commandbar/getting-started
 tags: commandbar
 published: True

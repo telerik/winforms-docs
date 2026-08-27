@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms DropDownList Control
 description: Learn the design time options offered by WinForms DropDownList.
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/design-time
 tags: design,time
 published: True

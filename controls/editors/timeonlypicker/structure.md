@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms TimeOnlyPicker Control
 description: Get familiar with the structure and elements hierarchy of WinForms TimeOnlyPicker.
+components: ["editors"]
 slug: editors-timeonlypicker-structure
 tags: structure,properties,and,events
 published: True

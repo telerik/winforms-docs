@@ -2,6 +2,7 @@
 title: Binding to EntityFramework using Database first approach
 page_title: Binding to EntityFramework using Database first approach - WinForms GridView Control
 description: Learn how to build a hierarchical WinForms GridView using Entity Framework and Database first approach.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/binding-to-entityframework-using-database-first-approach
 tags: binding,to,entityframework,using,database,first,approach
 published: True

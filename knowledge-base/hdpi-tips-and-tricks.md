@@ -1,6 +1,7 @@
 ---
 title: HDPI Tips and Tricks
 description: This article discusses some of the common cases when one uses HDPI.
+components: ["general"]
 type: how-to
 page_title: HDPI Tips and Tricks
 slug: hdpi-tips-and-tricks

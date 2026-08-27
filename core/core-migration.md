@@ -2,6 +2,7 @@
 title: Migrating to .NET 
 page_title: Migrating to .NET
 description: Learn how to migrate to .NET
+components: ["general"]
 slug: core-migration
 tags: core, getting, started
 published: True

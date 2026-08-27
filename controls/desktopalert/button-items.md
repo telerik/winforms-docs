@@ -2,6 +2,7 @@
 title: Button Items
 page_title: Button Items - RadDesktopAlert
 description: RadDesktopAlert component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. 
+components: ["desktopalert"]
 slug: winforms/desktopalert/button-items
 tags: desktopalert, buttonitems
 published: True

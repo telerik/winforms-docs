@@ -2,6 +2,7 @@
 title: End-user Support
 page_title: End-user Support - WinForms GridView Control
 description: Learn how to open the RadExpressionEditor by navigating to a built-in menu item from the context menu of WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/expression-editor/end-user-support
 tags: end-user,support
 published: True

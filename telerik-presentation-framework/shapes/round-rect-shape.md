@@ -2,6 +2,7 @@
 title: RoundRect Shape
 page_title: RoundRect Shape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/roundrect-shape
 tags: roundrect-shape
 published: True

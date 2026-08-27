@@ -1,6 +1,7 @@
 ---
 title: How to customize DataEntry Item Controls Layout
 description: An example on how to programmatically rearrange a DataEntry item's child controls.
+components: ["dataentry"]
 type: how-to
 page_title: How to customize DataEntry Item Label and Editor controls
 slug: dataentry-customize-editor-controls-layout

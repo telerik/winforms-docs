@@ -2,6 +2,7 @@
 title: States
 page_title: WinForms SpeechToTextButton Documentation - States
 description: Learn different visual states of the Telerik SpeechToTextButton for WinForms.
+components: ["speechtotextbutton"]
 position: 8
 tags: speech to text, button, states, winforms, .net
 slug: speechtotextbutton-states

@@ -2,6 +2,7 @@
 title: Scrolling Nodes
 page_title: Scrolling - RadTreeView
 description: Learn techniques to scroll and navigate nodes efficiently in Telerik TreeView for WinForms.
+components: ["treeview"]
 slug: winforms/treeview/working-with-nodes/scrolling
 tags: scrolling
 published: True

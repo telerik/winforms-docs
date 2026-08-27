@@ -1,6 +1,7 @@
 ---
 title: Wrap Legend Items in RadChartView
 description: This article shows how you can customize the behavior of the header checkbox.
+components: ["chartview"]
 type: how-to
 page_title: Wrap Legend Items in RadChartView
 slug: chartview-wrap-legend-items

@@ -2,6 +2,7 @@
 title: Customize Layout Mode
 page_title: Customize Layout Mode - WinForms LayoutControl
 description: Learn how to arrange the control layout at run-time in WinForms LayoutControl.
+components: ["layoutcontrol"]
 slug: winforms/layoutcontrol/customize-layout-mode
 tags: customize,layout,mode
 published: True

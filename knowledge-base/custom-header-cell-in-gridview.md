@@ -1,6 +1,7 @@
 ---
 title: Create Custom Header Cells in RadGridView  
 description: Learn how to create a custom header cell with a drop down list element which selection changing affects the checked data cells.   
+components: ["gridview"]
 type: how-to
 page_title: Create Custom Header Cells in RadGridView  
 slug: custom-header-cell-in-gridview

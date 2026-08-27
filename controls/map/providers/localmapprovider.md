@@ -2,6 +2,7 @@
 title: LocalMapProvider
 page_title: LocalMapProvider - WinForms Map Control
 description: WinForms Map can visualize data from local image files by using a LocalMapProvider.
+components: ["map"]
 slug: winforms/map/providers/localmapprovider
 tags: map, providers
 published: True

@@ -2,6 +2,7 @@
 title: Creating and Using Contextual Tab Groups
 page_title: Creating and Using Contextual Tab Groups - RadRibbonBar
 description: The Contextual Tab Groups can be used to group tabs in a context and thus improve the usability of your UI.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/getting-started/creating-and-using-contextual-tab-groups
 tags: creating,and,using,contextual,tab,groups
 published: True

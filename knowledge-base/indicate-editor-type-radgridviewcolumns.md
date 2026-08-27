@@ -1,6 +1,7 @@
 ---
 title: Indicate the Editor Type in RadGridView Columns
 description: This article demonstrates how to indicate the editor type in RadGridView Columns
+components: ["gridview"]
 type: how-to
 page_title: Indicate the Editor Type in RadGridView Columns
 slug: indicate-editor-type

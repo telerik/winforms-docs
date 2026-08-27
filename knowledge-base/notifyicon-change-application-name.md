@@ -1,6 +1,7 @@
 ---
 title: Defining the Application Name for Balloon Notifications in RadNotifyIcon for WinForms
 description: Learn how to define the application name that appears in balloon notifications using RadNotifyIcon for WinForms.
+components: ["notifyicon"]
 type: how-to
 page_title: How to Define Application Name for Balloon Notifications in RadNotifyIcon for WinForms
 slug: notifyicon-change-application-name

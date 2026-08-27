@@ -2,6 +2,7 @@
 title: Document Manager
 page_title: Document Manager - WinForms Dock Control
 description: WinForms DocumentManager object manages all DockWindows that are parented in the main DocumentCountainer.
+components: ["dock"]
 slug: winforms/dock/architecture-and-features/document-manager
 tags: document,manager
 published: True

@@ -1,6 +1,7 @@
 ---
 title: RadButtonTextBoxColumn in RadGridView
 description: This article demonstrates how you can create a RadButtonTextBoxColumn
+components: ["gridview"]
 type: how-to
 page_title: RadButtonTextBoxColumn in RadGridView
 slug: radButtontextboxcolumn

@@ -2,6 +2,7 @@
 title: Office2019 Themes Blending
 page_title: Office2019 Themes Blending - UI for WinForms Tools
 description: Color blending the Office2019 themes in the Visual Style Builder tool.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/office2019-themes-blending
 tags: color, blending, office2019
 published: True

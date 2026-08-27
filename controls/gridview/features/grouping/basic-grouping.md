@@ -2,6 +2,7 @@
 title: Basic Grouping
 page_title: Basic Grouping - WinForms GridView Control
 description: Get familiar with the built-in grouping functionality supported in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/grouping/basic-grouping
 tags: basic,grouping
 published: True

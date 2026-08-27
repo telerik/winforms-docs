@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - RadTimeOnlyPicker
 description: This article show what you can do with the smart tag of RadTimeOnlyPicker.
+components: ["editors"]
 slug: editors-timeonlypicker-designtime
 tags: timeonlypicker,netcore
 published: True

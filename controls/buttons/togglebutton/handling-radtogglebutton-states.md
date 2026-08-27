@@ -2,6 +2,7 @@
 title: Handling RadToggleButton States
 page_title: Handling RadToggleButton States - UI for WinForms Documentation
 description: Handling RadToggleButton States
+components: ["buttons"]
 slug: winforms/buttons/togglebutton/handling-radtogglebutton-states
 tags: handling,radtogglebutton,states
 published: True

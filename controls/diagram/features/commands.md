@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands - WinForms Diagram Control
 description: WinForms Diagram provides a powerful set of commands that help you work with your diagram.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/features/commands
 tags: commands
 published: True

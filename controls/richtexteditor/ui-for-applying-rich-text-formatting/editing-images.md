@@ -2,6 +2,7 @@
 title: Editing Images
 page_title: Editing Images - WinForms RichTextEditor Control
 description: WinForms RichTextEditor allows editing images that have been inserted in the editor.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/editing-images
 tags: editing,images
 published: True

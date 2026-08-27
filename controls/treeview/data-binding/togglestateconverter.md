@@ -2,6 +2,7 @@
 title: ToggleStateConverter
 page_title: ToggleStateConverter - RadTreeView
 description: RadTreeView now supports binding the check boxes to a data field. This article shows how you can use this feature and convert any custom types to ToggleState.
+components: ["treeview"]
 slug: winforms/treeview/data-binding/togglestateconverter
 tags: checkboxes, converter
 published: True

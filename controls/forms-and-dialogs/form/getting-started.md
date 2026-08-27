@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Form
 description: Learn different ways to utilize the RadForm control.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/form/getting-started
 tags: getting,started
 published: True

@@ -2,6 +2,7 @@
 title: Customizing Floating Windows
 page_title: Customizing Floating Windows - WinForms Dock Control
 description: Learn how to customize Floating Windows when they are created.
+components: ["dock"]
 slug: winforms/dock/object-model/customizing-floating-windows
 tags: customizing,floating,windows
 published: True

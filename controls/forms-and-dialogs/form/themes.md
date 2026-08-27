@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadForm
 description: The RadForm control is an extended standard Windows Form that fully supports the Telerik Presentation Framework (TPF) and the Telerik's theming mechanism.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/form/themes
 tags: themes
 published: True

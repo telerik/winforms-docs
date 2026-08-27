@@ -2,6 +2,7 @@
 title: Convert Project
 page_title: Convert Project
 description: Convert Project
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/project-convert
 tags: project, configuration
 published: True

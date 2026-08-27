@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Calculator Control
 description: Get started with the WinForms Calculator and construct your step layout navigation.   
+components: ["calculator"]
 slug: calculator-getting-started
 tags: calculator
 published: True

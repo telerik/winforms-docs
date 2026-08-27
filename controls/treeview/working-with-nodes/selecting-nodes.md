@@ -2,6 +2,7 @@
 title: Selecting Nodes
 page_title: Selecting Nodes - WinForms TreeView Control
 description: WinForms TreeView supports both selecting single or multiple nodes. This article shows how you can select nodes in the code. 
+components: ["treeview"]
 slug: winforms/treeview/working-with-nodes/selecting-nodes
 tags: selecting,nodes
 published: True

@@ -2,6 +2,7 @@
 title: Custom Nodes
 page_title: Custom Nodes - WinForms TreeView Control
 description: With WinForms TreeView you can create custom nodes and display them instead of the default ones.
+components: ["treeview"]
 slug: winforms/treeview/working-with-nodes/custom-nodes
 tags: custom,nodes
 published: True

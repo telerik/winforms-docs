@@ -2,6 +2,7 @@
 title: Work Week View
 page_title: Work Week View - WinForms Scheduler Control
 description: The Work Week View in WinForms Scheduler is a special case of the WeekView, where the ShowWeekend property is by default set to false.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/views/work-week-view
 tags: work,week,view
 published: True

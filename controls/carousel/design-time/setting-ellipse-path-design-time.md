@@ -2,6 +2,7 @@
 title: Setting Ellipse Path Design-time
 page_title: Setting Ellipse Path Design-time - RadCarousel
 description: Setting Ellipse Path Design-time
+components: ["carousel"]
 slug: winforms/carousel/design-time/setting-ellipse-path-design-time
 tags: setting,ellipse,path,design-time
 published: True

@@ -2,6 +2,7 @@
 title: Import/Export
 page_title: Import/Export
 description: Import/Export
+components: ["spreadsheet"]
 slug: radspreadsheet-import-export
 tags: import, export, save, open
 published: True

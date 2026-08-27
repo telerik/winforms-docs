@@ -1,6 +1,7 @@
 ---
 title: Cascading ComboBoxes in PropertyGrid
 description: Learn how to achieve cascading combos in the WinForms PropertyGrid.
+components: ["propertygrid"]
 type: how-to 
 page_title: Cascading ComboBoxes in PropertyGrid 
 slug: cascading-comboboxes-in-property-grid

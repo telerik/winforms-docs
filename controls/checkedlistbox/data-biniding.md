@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - UI for WinForms Documentation
 description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
+components: ["checkedlistbox"]
 slug: winforms/checkedlistbox/data-binding
 tags: data,biniding
 published: True

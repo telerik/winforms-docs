@@ -2,6 +2,7 @@
 title: Features
 page_title: Features - UI for WinForms Documentation
 description: Features
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/features
 tags: features
 published: False

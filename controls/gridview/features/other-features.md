@@ -2,6 +2,7 @@
 title: Other Features
 page_title: Other Features - RadGridView
 description: 
+components: ["gridview"]
 slug: winforms/gridview/other-features
 tags: gridview, searching
 published: False

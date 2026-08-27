@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - PipsPager
 description: This article describes how to bind RadPipsPager control.
+components: ["pipspager"]
 slug: pipspager-data-binding
 tags: pipspager
 published: True

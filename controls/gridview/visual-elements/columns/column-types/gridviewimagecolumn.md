@@ -2,6 +2,7 @@
 title: GridViewImageColumn
 page_title: GridViewImageColumn - WinForms GridView Control
 description: WinForms GridViewImageColumn displays read-only images for database columns of image data. 
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewimagecolumn
 tags: gridviewimagecolumn
 published: True

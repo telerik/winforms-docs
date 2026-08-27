@@ -2,6 +2,7 @@
 title: Design-time assembly handling
 page_title: Design-time assembly handling
 description: Design-time assembly handling
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/design-time-assembly-handling
 tags: design-time,assembly,handling
 published: True

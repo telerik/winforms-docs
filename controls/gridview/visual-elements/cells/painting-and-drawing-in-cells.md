@@ -2,6 +2,7 @@
 title: Painting and Drawing in Cells
 page_title: Painting and Drawing in Cells - WinForms GridView Control
 description: WinForms GridView allows you to manually paint in the cells inside RadGridView. Learn how to change the appearance.
+components: ["gridview"]
 slug: winforms/gridview/cells/painting-and-drawing-in-cells
 tags: painting,and,drawing,in,cells
 published: True

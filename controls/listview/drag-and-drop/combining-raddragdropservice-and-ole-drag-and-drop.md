@@ -2,6 +2,7 @@
 title: Combining RadDragDropService and OLE drag-and-drop
 page_title: Combining RadDragDropService and OLE drag-and-drop - WinForms ListView Control
 description: WinForms ListView control supports RadDragDropService and can be combined with the OLE drag and drop functionality.
+components: ["listview"]
 slug: winforms/listview/drag-and-drop/combining-raddragdropservice-and-ole-drag-and-drop
 tags: combining,raddragdropservice,and,ole,drag-and-drop
 published: True

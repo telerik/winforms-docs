@@ -2,6 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements - RadPanorama
 description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+components: ["panorama"]
 slug: winforms/panorama/accessing-and-customizing-elements
 tags: panorama
 published: True

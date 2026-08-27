@@ -1,6 +1,7 @@
 ---
 title: How to Use a Custom Theme as Default for the Entire Application
 description: Learn how to use a custom defined theme as default for the Entire Application
+components: ["general"]
 type: how-to
 page_title: How to Use a Custom Theme as Default for the Entire Application
 slug: custom-theme-as-default

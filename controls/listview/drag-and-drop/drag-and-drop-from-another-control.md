@@ -2,6 +2,7 @@
 title: Drag and Drop from another control
 page_title: Drag and Drop from another control - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+components: ["listview"]
 slug: winforms/listview/drag-and-drop/drag-and-drop-from-another-control
 tags: drag,and,drop,from,another,control
 published: True

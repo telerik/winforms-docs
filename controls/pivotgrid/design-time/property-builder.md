@@ -2,6 +2,7 @@
 title: Property Builder
 page_title: Property Builder - WinForms PivotGrid Control
 description: To setup your WinForms PivotGrid easily at design time you can invoke the PivotGrid's Property Builder from the SmartTag.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/design-time/property-builder
 tags: property,builder
 published: True

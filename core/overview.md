@@ -2,6 +2,7 @@
 title: Overview
 page_title: .NET Support Overview
 description: Telerik UI for WinForms support .NET 8 and later
+components: ["general"]
 slug: core-overview
 tags: core, overview, .net, winforms
 published: True

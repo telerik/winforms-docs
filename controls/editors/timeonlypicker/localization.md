@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms TimeOnlyPicker Control
 description: Shows how you can use the localization provider to change all string used in the control to custom ones. 
+components: ["editors"]
 slug: editors-timeonlypicker-localization
 tags: localization
 published: True

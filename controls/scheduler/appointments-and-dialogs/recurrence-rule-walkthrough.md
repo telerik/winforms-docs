@@ -2,6 +2,7 @@
 title: Recurrence Rule Walkthrough
 page_title: Recurrence Rule Walkthrough - WinForms Scheduler Control
 description: Learn how to create a single appointment in WinForms Scheduler, then define a recurrence rule that occurs every two hours for ten occurrences.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appointments-and-dialogs/recurrence-rule-walkthrough
 tags: recurrence,rule,walkthrough
 published: True

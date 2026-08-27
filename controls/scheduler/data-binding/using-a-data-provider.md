@@ -2,6 +2,7 @@
 title: Using a Data Provider
 page_title: Using a Data Provider - RadScheduler
 description: RadScheduler uses the Provider Design Pattern to allow for easy integration into existing applications. This allows to connect to various data sources. 
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/data-binding/using-a-data-provider
 tags: using,a,data,provider
 published: True

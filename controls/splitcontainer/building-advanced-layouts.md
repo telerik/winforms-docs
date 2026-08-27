@@ -2,6 +2,7 @@
 title: Building Advanced Layouts
 page_title: Building Advanced Layouts - RadSplitContainer
 description: RadSplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
+components: ["splitcontainer"]
 slug: winforms/splitcontainer/building-advanced-layouts
 tags: building,advanced,layouts
 published: True

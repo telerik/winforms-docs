@@ -2,6 +2,7 @@
 title: Unbound Mode
 page_title: Unbound Mode - WinForms GridView Controls
 description: Learn how to manually create a WinForms GridView that is not bound to any data source.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/unbound-mode
 tags: unbound,mode
 published: True

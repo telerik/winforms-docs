@@ -1,6 +1,7 @@
 ---
 title: How to order appointments in RadScheduler's Month View
 description: This article shows how you can order the appointments in RadScheduler's MonthView.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to order appointments in RadScheduler's Month View
 slug: scheduler-month-view-comparer

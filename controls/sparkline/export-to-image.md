@@ -2,6 +2,7 @@
 title: Export to Image
 page_title: Export to Image - WinForms Sparkline Control
 description: The WinForms Sparkline control supports exporting to an image out of the box via the ExportToImage method.
+components: ["sparkline"]
 slug: radsparkline-export-to-image
 tags: sparkline
 published: True

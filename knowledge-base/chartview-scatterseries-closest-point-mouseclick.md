@@ -1,6 +1,7 @@
 ---
 title: Finding the Nearest ScatterDataPoint to a Mouse Click in RadChartView
 description: Learn how to determine the closest ScatterDataPoint in a RadChartView when the user clicks within the chart area.
+components: ["chartview"]
 type: how-to
 page_title: How to Identify the Closest ScatterDataPoint to a Mouse Click in RadChartView
 slug: chartview-scatterseries-closest-point-mouseclick

@@ -1,6 +1,7 @@
 ---
 title: How to Deal with Empty RadMap using BingRestMapProvider 
 description: Learn how to handle empty RadMap that uses the BingRestMapProvider. 
+components: ["map"]
 type: how-to
 page_title: How to Deal with Empty RadMap using BingRestMapProvider 
 slug: bing-map-not-loading

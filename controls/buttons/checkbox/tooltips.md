@@ -2,6 +2,7 @@
 title: Tooltips
 page_title: Tooltips - UI for WinForms Documentation
 description: RadCheckBox is designed to provide an interface element that can represent an On or Off state using a check mark.
+components: ["buttons"]
 slug: winforms/buttons/checkbox/tooltips
 tags: checkbox, tooltips
 published: True

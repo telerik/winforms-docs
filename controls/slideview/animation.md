@@ -2,6 +2,7 @@
 title: Animation
 page_title: Animation - WinForms SlideView Control
 description: Check our &quot;Animations&quot; documentation article for the WinForms SlideView control.
+components: ["slideview"]
 slug: slideview-animation
 tags: slideview, animation
 published: True

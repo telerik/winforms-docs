@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - WinForms Menu Control
 description: WinForms Menu's Smart tag lets you quickly access common tasks involved with building menus and customizing appearance through themes.
+components: ["menu"]
 slug: winforms/menus/menu/design-time/smart-tag
 tags: smart,tag
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Full control over the layout of the docking manager in design-time
 description: Full control over the layout of the docking manager in design-time. Check it now!
+components: ["dock"]
 type: how-to
 page_title: Full control over the layout of the docking manager in design-time
 slug: full-control-over-the-layout-of-the-docking-manager-in-design-time

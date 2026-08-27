@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+components: ["menu"]
 slug: winforms/menus/menu/properties-methods-events
 tags: menu
 published: True

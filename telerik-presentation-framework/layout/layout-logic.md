@@ -2,6 +2,7 @@
 title: Layout Logic
 page_title: Layout Logic - Telerik Presentation Framework
 description: This article explains how the layout logic is working in Telerik Presentation Framework.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/layout/layout-logic
 tags: layout,logic
 published: True

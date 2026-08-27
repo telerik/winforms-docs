@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - WinForms CalculatorDropDown Control
 description: Learn what are the design time abilities of WinForms CalculatorDropDown provided by its Smart Tag.
+components: ["editors"]
 slug: winforms/calculatordropdown/design-time/smart-tag
 tags: design,time
 published: True

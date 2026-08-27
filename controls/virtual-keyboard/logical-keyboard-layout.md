@@ -2,6 +2,7 @@
 title: Logical Keyboard Layout
 page_title: Logical Keyboard Layout - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys. 
+components: ["virtualkeyboard"]
 slug: logical-keyboard-layout
 tags: virtual, keyboard
 published: True

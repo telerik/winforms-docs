@@ -1,6 +1,7 @@
 ---
 title: Filter when Enter is pressed in RadVirtualGrid
 description: This article shows how you can filter when Enter is presses instead on every keystroke.
+components: ["virtualgrid"]
 type: how-to
 page_title: Filter on Enter in RadVirtualGrid
 slug: filter-on-enter-virtualgrid

@@ -2,6 +2,7 @@
 title: ToolTips
 page_title: ToolTips - WinForms GridView Control
 description: WinForms GridView allows you to show tooltips for different RadGridView elements. 
+components: ["gridview"]
 slug: winforms/gridview/cells/tooltips
 tags: tooltips
 published: True

@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - UI for WinForms Documentation
 description: RadRepeatButton provides press-and-hold functionality and it is an ideal UI element for allowing users to control an increasing or decreasing value, such as volume or brightness. 
+components: ["buttons"]
 slug: winforms/buttons/repeatbutton/properties-methods-events
 tags: repeatbutton
 published: True

@@ -2,6 +2,7 @@
 title: Add Context menu in the code
 page_title: Add Context menu in the code - RadContextMenu
 description: RadContextMenu is a non-visual component that sits in the component tray located below the form design surface.
+components: ["menu"]
 slug: winforms/menus/add-contextmenu
 tags: context,menus
 published: True

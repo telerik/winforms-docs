@@ -2,6 +2,7 @@
 title: Wrap Mode
 page_title: Wrap Mode - WinForms ToolbarForm
 description: Get familiar with the WrapMode to control how the element containers are wrapped in relation to the available space in the WinForms ToolbarForm.
+components: ["forms,dialogs,templates"]
 slug: radtoolbarform-wrap-mode
 tags: radtoolbarform, wrap, mode, weight
 published: True

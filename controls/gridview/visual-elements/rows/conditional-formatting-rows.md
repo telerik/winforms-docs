@@ -2,6 +2,7 @@
 title: Conditional Formatting Rows
 page_title: Conditional Formatting Rows - WinForms GridView Control
 description: Learn how to use the ConditionalFormattingObject to style the rows in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/rows/conditional-formatting-rows
 tags: conditional,formatting,rows
 published: True

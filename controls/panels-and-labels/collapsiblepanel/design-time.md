@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms CollapsiblePanel Control
 description: Get familiar with the desing-time capabilities of the WinForms CollapsiblePanel control.
+components: ["collapsiblepanel"]
 slug: winforms/panels-and-labels/collapsiblepanel/design-time
 tags: design,time
 published: True

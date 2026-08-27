@@ -2,6 +2,7 @@
 title: RadToolTip
 page_title: RadToolTip - Telerik Presentation Framework
 description: RadToolTip is a class derived from the standard ToolTip class in the System.Windows.Forms namespace.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/radtooltip
 tags: radtooltip
 published: True

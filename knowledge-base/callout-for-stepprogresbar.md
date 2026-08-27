@@ -1,6 +1,7 @@
 ---
 title: How to Add Callout for StepProgressBar
 description: Learn how to show callout for the different steps in the WinForms Callout.
+components: ["stepprogressbar"]
 type: how-to 
 page_title: How to Add Callout for StepProgressBar
 slug: callout-for-stepprogresbar

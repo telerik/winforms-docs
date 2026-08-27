@@ -2,6 +2,7 @@
 title: Messages
 page_title: Chat Messages in RadChat - WinForms Chat Control
 description: Learn when to use each RadChat message type and how to configure time separators, media, cards, overlays, and suggested actions.
+components: ["chat"]
 slug: winforms/chat/chat-items/messages
 tags: chat,messages,radchat
 published: True

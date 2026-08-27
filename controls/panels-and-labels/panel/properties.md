@@ -2,6 +2,7 @@
 title: Properties
 page_title: Properties - WinForms Panel Control
 description: Get familiar with the most important properties of WinForms RadPanel.
+components: ["panel"]
 slug: winforms/panels-and-labels/panel/properties
 tags: radpanel, properties, events
 published: True

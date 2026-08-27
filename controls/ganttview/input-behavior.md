@@ -2,6 +2,7 @@
 title: Input Behavior
 page_title: Input Behavior - WinForms GanttView Control
 description: BaseGanttViewBehavior is responsible for handling the keyboard, mouse, and context menu. 
+components: ["ganttview"]
 slug: winforms/ganttview/input-behavior
 tags: input,behavior
 published: True

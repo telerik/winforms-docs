@@ -2,6 +2,7 @@
 title: Overview
 page_title: Shapes - Telerik Presentation Framework
 description: This article lists all the shapes supported in the Telerik UI for Winforms
+components: ["general"]
 slug: winforms/telerik-presentation-framework/shapes
 tags: shapes
 published: True

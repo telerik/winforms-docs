@@ -2,6 +2,7 @@
 title: Applying formatting only to cells in a child template
 page_title: Applying formatting only to cells in a child template - RadGridView
 description: This article shows how you can apply formatting only to cells in a child template.
+components: ["gridview"]
 slug: winforms/gridview/hierarchical-grid/how-to/applying-formatting-only-to-cells-in-a-child-template
 tags: applying,formatting,only,to,cells,in,a,child,template
 published: True

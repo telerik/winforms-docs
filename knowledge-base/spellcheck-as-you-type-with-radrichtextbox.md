@@ -1,6 +1,7 @@
 ---
 title: SpellCheck As You Type with RadRichTextBox
 description: SpellCheck As You Type with RadRichTextBox. Check it now!
+components: ["richtexteditor"]
 type: how-to
 page_title: SpellCheck As You Type with RadRichTextBox
 slug: spellcheck-as-you-type-with-radrichtextbox

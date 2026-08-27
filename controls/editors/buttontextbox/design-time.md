@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms ButtonTextBox Control
 description: Learn what are the design time options offered by the WinForms ButtonTextBox. 
+components: ["editors"]
 slug: winforms/editors/buttontextbox/design-time
 tags: design,time
 published: True

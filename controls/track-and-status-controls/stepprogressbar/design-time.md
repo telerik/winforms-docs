@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms StepProgressBar Control
 description: Get familiar with the design time options that the WinForms StepProgressBar offers.   
+components: ["stepprogressbar"]
 slug: stepprogressbar-design-time
 tags: stepprogressbar
 published: True

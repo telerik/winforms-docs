@@ -2,6 +2,7 @@
 title: Layout Strategies
 page_title: Layout Strategies - WinForms TreeMap Control
 description: Check our Layout Strategies documentation article for the RadTreeMap WinForms control.
+components: ["treemap"]
 slug: treemap-layout-strategies
 tags: treemap, layout, strategies, algorithms
 published: True

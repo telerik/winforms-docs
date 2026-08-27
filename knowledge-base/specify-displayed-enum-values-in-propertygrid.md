@@ -1,6 +1,7 @@
 ---
 title: How to Specify Displayed Enum Values in RadPropertyGrid
 description: Learn how to modify the text displayed in drop down list editor for enum values in the WinForms PropertyGrid.
+components: ["propertygrid"]
 type: how-to 
 page_title: How to Specify Displayed Enum Values in RadPropertyGrid
 slug: specify-displayed-enum-values-in-propertygrid

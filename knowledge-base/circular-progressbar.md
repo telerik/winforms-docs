@@ -1,6 +1,7 @@
 ---
 title: How to Create a Circular ProgressBar
 description: This article demonstrates how to create custom GridView cells with several elements
+components: ["progressbar"]
 type: how-to
 page_title: How to Create a Circular ProgressBar
 slug: circular-progressbar

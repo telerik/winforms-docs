@@ -2,6 +2,7 @@
 title: Automatic MDI Form Handling
 page_title: Automatic MDI Form Handling - RadDock
 description: Shows the Automatic MDI Form Handling in RadDock.
+components: ["dock"]
 slug: winforms/dock/mdi-mode/automatic-mdi-form-handling
 tags: automatic,mdi,form,handling
 published: True

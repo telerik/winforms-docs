@@ -1,6 +1,7 @@
 ---
 title: Preventing Scrollbars from Moving When Clicking on the ScrollablePanel
 description: Learn how to stop the automatic scrolling behavior of RadScrollablePanel to the focussed control inside.
+components: ["dock"]
 type: how-to
 page_title: How to Stop Scrollbars from Moving in RadDock for WinForms Windows
 slug: scrollablepanel-prevent-scrollbars-moving

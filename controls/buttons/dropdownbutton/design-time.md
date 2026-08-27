@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms DropDownButton Control
 description: RadDropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
+components: ["buttons"]
 slug: winforms/buttons/dropdownbutton/design-time
 tags: button, design-time
 published: True

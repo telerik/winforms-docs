@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadRibbonBar
 description: All RadRibbonBar elements can be styled in Visual Style Builder. This article shows how you can change the RibbonTabStripElement back color.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/customizing-appearance/themes
 tags: radribbonbar, themes
 published: True

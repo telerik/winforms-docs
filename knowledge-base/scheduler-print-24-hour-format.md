@@ -1,6 +1,7 @@
 ---
 title: Enabling 24-Hour Format for Printing in Scheduler for UI for WinForms
 description: Learn how to enable the 24-hour format for printing in the Scheduler for UI for WinForms.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to Print Scheduler in 24-Hour Format in UI for WinForms
 meta_title: Printing Scheduler in 24-Hour Format in UI for WinForms

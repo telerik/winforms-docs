@@ -2,6 +2,7 @@
 title: Hidden Rows and Columns
 page_title: Hidden Rows and Columns - UI for WinForms Documentation
 description: Hidden Rows and Columns
+components: ["spreadsheet"]
 slug: radspreadsheet-features-hidden-rows-and-columns
 tags: freeze,panes
 published: True

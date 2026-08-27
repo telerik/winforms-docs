@@ -1,6 +1,7 @@
 ---
 title: Failed to create component design time exception
 description: Failed to create component design time exception. Check it now!
+components: ["general"]
 type: how-to
 page_title: Failed to create component design time exception
 slug: failed-to-create-component-design-time-exception

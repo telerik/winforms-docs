@@ -2,6 +2,7 @@
 title: Editing Lifecycle
 page_title: Editing Lifecycle - WinForms GridView Control
 description: Follow the editing lifecycle in the WinForms GridView.
+components: ["gridview"]
 slug: editing-lifecycle
 tags: events
 published: True

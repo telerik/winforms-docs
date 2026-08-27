@@ -2,6 +2,7 @@
 title: Properties 
 page_title: Properties - WinForms TextBox Control
 description: Get familiar the most commonly used properties and events of WinForms RadTextBox.
+components: ["editors"]
 slug: winforms/editors/textbox/programming-radtextbox
 tags: programming,radtextbox
 published: True

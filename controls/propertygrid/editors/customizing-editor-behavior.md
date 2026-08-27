@@ -2,6 +2,7 @@
 title: Customizing Editor Behavior
 page_title: Customizing editor behavior - RadPropertyGrid
 description: The appearance and behavior of property grid editors can be changed programmatically.
+components: ["propertygrid"]
 slug: winforms/propertygrid/editors/customizing-editor-behavior
 tags: customizing,editor,behavior
 published: True

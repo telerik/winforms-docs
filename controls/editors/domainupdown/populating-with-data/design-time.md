@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms DomainUpDown Control
 description: Learn how to populate WinForms DomainUpDown with data at design time.
+components: ["editors"]
 slug: winforms/editors/domainupdown/populating-with-data/design-time
 tags: domainupdown
 published: True

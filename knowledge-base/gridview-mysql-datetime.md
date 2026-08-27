@@ -1,6 +1,7 @@
 ---
 title: Handle MySqlDateTime object while populating RadGridView from MySQL Database
 description: This article shows how to convert MySqlDateTime object so that it is handled correctly by the RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to create convert MySqlDateTime object so that it is handled correctly by the RadGridView.
 slug: gridview-msql-datetime

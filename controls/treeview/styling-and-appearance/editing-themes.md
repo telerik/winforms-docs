@@ -2,6 +2,7 @@
 title: Editing Themes
 page_title: Editing Themes - RadTreeView
 description: This article shows how you can style RadTreeView by extracting and modifying one of the existing themes.
+components: ["treeview"]
 slug: winforms/treeview/editing-themes
 tags: themes
 published: True

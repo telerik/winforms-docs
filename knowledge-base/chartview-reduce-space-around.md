@@ -1,6 +1,7 @@
 ---
 title: Reducing Space Around RadChartView in WinForms
 description: Learn how to minimize the unused space around the RadChartView to make the chart appear larger within a WinForms application.
+components: ["chartview"]
 type: how-to
 page_title: How to Adjust Margins for RadChartView in WinForms for a Larger Chart Display
 slug: reduce-space-radchartview-winforms

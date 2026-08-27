@@ -2,6 +2,7 @@
 title: Use FilterView in Unbound Mode
 page_title: Use FilterView in Unbound Mode - Filter View
 description: Leanr how to use FilterView in Unbound Mode.  
+components: ["filterview"]
 slug: unbound-mode
 tags: filter, view, unbound
 published: True

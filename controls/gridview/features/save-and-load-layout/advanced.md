@@ -2,6 +2,7 @@
 title: Advanced
 page_title: Advanced - RadGridView
 description: Customize the layout serialization by specifying which properties to be serialized. 
+components: ["gridview"]
 slug: winforms/gridview/save-and-load-layout/advanced
 tags: advanced
 published: True

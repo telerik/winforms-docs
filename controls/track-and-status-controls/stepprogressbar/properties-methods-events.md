@@ -2,6 +2,7 @@
 title: Properties, Methods, and Events
 page_title: Properties, Methods, and Events - WinForms StepProgressBar Control
 description: Get familiar with the public API that WinForms StepProgressBar offers.   
+components: ["stepprogressbar"]
 slug: stepprogressbar-properties-methods-events
 tags: stepprogressbar
 published: True

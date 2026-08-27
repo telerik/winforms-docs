@@ -2,6 +2,7 @@
 title: AI Features
 page_title: GridView - AI Features in RadGridView
 description: Explore AI-powered capabilities in RadGridView including intelligent data analysis, smart filtering, automated sorting, and machine learning integration for enhanced data visualization and manipulation.
+components: ["gridview"]
 slug: winforms/gridview/ai-features
 tags: gridview, ai-features, artificial-intelligence, smart-data
 published: True

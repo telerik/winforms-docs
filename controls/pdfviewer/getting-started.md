@@ -2,6 +2,7 @@
 title: Getting started
 page_title: Getting started - WinForms PdfViewer Control
 description: Winforms PdfViewer enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/getting-started
 tags: getting,started
 published: True

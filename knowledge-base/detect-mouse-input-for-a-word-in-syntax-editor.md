@@ -1,6 +1,7 @@
 ---
 title: How to Detect Mouse Input for a Word in RadSyntaxEditor   
 description: This article demonstrates how to detect the clicked word in RadSyntaxEditor
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Detect the Clicked Word in RadSyntaxEditor        
 slug: detect-mouse-input-for-a-word-in-syntax-editor

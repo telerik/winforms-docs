@@ -2,6 +2,7 @@
 title: Populating with Data
 page_title: Populating with Data - RadApplicationMenu
 description: RadApplicationMenu is the Telerik counterpart of the application menu that displays controls used to perform actions on entire documents and forms, such as Save and Print. 
+components: ["menu"]
 slug: winforms/menus/applicationmenu/populating-with-data
 tags: applicationmenu
 published: True

@@ -2,6 +2,7 @@
 title: Localizing Dialog Strings
 page_title: Localizing Dialog Strings - RadScheduler
 description: RadScheduler has a built-in LocalizationProvider. You can use it in order to localize your strings. However, when you implement a custom dialog, you can create a custom localization logic.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/localization/localizing-dialog-strings
 tags: localizing,dialog,strings
 published: True

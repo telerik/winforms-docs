@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples - WinForms DataEntry Control
 description: Additional examples built on top the Telerik UI for WinForms RadDataEntry control.
+components: ["dataentry"]
 slug: winforms/dataentry/developer-focused-examples
 tags: developer, sdk, examples
 published: True

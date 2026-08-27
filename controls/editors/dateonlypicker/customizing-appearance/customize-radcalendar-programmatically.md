@@ -2,6 +2,7 @@
 title: Customize the Calendar inside RadDateOnlyPicker. 
 page_title: Customize the Calendar - RadDateOnlyPicker. 
 description: Customize the RadCalendar in the drop down programmatically.
+components: ["editors"]
 slug: editors-dateonlypicker-customize-calendar-programmatically
 tags: customize,radcalendar,programmatically
 published: True

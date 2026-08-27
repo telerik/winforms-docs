@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms PopupEditor Control
 description: WinForms Popeditor allows you to build custom drop down controls. 
+components: ["editors"]
 slug: winforms/editors/popupeditor
 tags: popupeditor
 published: True

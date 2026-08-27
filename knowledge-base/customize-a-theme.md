@@ -1,6 +1,7 @@
 ---
 title: How to Customize a Theme 
 description: Learn how to customize one of the built-in themes.   
+components: ["general"]
 type: how-to
 page_title: How to Customize a Theme    
 slug: customize-a-theme

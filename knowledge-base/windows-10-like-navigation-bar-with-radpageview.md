@@ -1,6 +1,7 @@
 ---
 title: Windows 10 like Navigation Bar with RadPageView
 description: Windows 10 like Navigation Bar with RadPageView. Check it now!
+components: ["pageview"]
 type: how-to
 page_title: Windows 10 like Navigation Bar with RadPageView
 slug: windows-10-like-navigation-bar-with-radpageview

@@ -2,6 +2,7 @@
 title: Drag and Drop
 page_title: Drag and Drop - RadRichTextEditor
 description: RadRichTextEditor also supports drag and drop operations. The example in this article will handle a scenario of dropping content inside the editor.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/how-to/drag-and-drop
 tags: drag,drop
 published: True

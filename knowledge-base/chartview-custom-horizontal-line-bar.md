@@ -1,6 +1,7 @@
 ---
 title: Adding a Custom Horizontal Line at the Bottom of a Bar in RadChartView
 description: Learn how to add a custom horizontal line at the bottom of a bar in RadChartView for WinForms by custom rendering.
+components: ["chartview"]
 type: how-to
 page_title: How to Add a Custom Horizontal Line in RadChartView Bars
 slug: chartview-custom-horizontal-line-bar

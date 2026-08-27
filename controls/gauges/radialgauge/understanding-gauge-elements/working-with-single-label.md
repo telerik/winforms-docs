@@ -2,6 +2,7 @@
 title: Working with a Single Label
 page_title: Working with single label - WinForms RadialGauge Control
 description: RadialGaugeSingleLabel is suitable to present additional information for the WinForms RadialGauge.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-single-label
 tags: working,with,single,label
 published: True

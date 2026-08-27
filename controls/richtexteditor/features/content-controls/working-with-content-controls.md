@@ -2,6 +2,7 @@
 title: Working with Content Controls
 page_title:  Working with Content Controls - RadRichTextEditor
 description: This article show you you can access the content controls in code
+components: ["richtexteditor"]
 slug: radrichtexteditor-features-working-with-content-controls
 tags: content controls, richtexteditor
 published: True

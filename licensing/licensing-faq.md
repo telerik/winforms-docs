@@ -2,6 +2,7 @@
 title: Frequently Asked Questions
 page_title: Frequently Asked Questions about Your Telerik UI for .NET WinForms License
 description: Learn what can cause an invalid license for Telerik UI for .NET WinForms, learn what are the common warnings and errors, and learn how to solve them.
+components: ["general"]
 slug: licensing-faq
 tags: WinForms,components,license,activate,download,error,warning,questions,faq
 position: 3

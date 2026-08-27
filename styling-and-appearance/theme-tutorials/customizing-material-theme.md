@@ -2,6 +2,7 @@
 title: Customizing the Material Theme
 page_title: Customizing the Material Theme - Themes
 description: Shows the themes which should be used on touch enabled devices and the features available in them.  
+components: ["general"]
 slug: winforms/themes/theme-tutorials/customizing-material-theme
 tags: touch, themes
 published: True

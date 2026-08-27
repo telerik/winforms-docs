@@ -1,6 +1,7 @@
 ---
 title: Host Blazor in WinForms 
 description: Learn how to host Blazor in WinForms applications.
+components: ["general"]
 type: how-to
 page_title: How To Host Blazor in WinForms 
 slug: host-blazor-in-winforms

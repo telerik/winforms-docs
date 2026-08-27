@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Rating Control
 description: WinForms Rating is a flexible UI component that allows users to place their rating by selecting from a finite number of items (stars, diamonds and hearts).
+components: ["rating"]
 slug: winforms/track-and-status-controls/rating/getting-started
 tags: getting,started
 published: True

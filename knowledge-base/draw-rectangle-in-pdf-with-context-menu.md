@@ -1,6 +1,7 @@
 ---
 title: How to Get the Context Menu's Coordinates and Draw a Rectangle in PdfViewer 
 description: This article shows how you can get the top left location of the context menu and draw a rectangle in the WinForms PdfViewer.
+components: ["pdfviewer"]
 type: how-to
 page_title: How to Get the Context Menu's Coordinates and Draw a Rectangle in PdfViewer  
 slug: draw-rectangle-in-pdf-with-context-menu

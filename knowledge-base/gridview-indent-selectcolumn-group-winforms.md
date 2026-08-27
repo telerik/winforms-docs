@@ -1,6 +1,7 @@
 ---
 title: How to Indent Select Column Checkbox for Grouped Rows
 description: Learn how to indent the Select Column Checkbox for group rows within RadGridView to enhance visual hierarchy.
+components: ["gridview"]
 type: how-to
 page_title: How to Indent Select Column Checkbox for Grouped Rows in RadGridView for WinForms
 slug: gridview-indent-selectcolumn-group-winforms

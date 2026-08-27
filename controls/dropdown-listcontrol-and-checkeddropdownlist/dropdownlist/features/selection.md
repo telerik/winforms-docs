@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection - WinForms DropDownList Control
 description: Get familiar with the different selection options that WinForms DropDownList offers.
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/selection
 tags: selection
 published: True

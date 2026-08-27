@@ -1,6 +1,7 @@
 ---
 title: How to Add a Week Selection in RadCalendar Control
 description: This article demonstrates how to add a week selection to the RadCalendar
+components: ["calendar"]
 type: how-to
 page_title: Implemention Week Selection in WinForms RadCalendar Control
 slug: calendar-howto-week-selection

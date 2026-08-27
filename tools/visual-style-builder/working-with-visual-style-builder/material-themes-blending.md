@@ -2,6 +2,7 @@
 title: Material Themes Blending
 page_title: Material Themes Blending - UI for WinForms Tools
 description: Visual Style Builder provides a color blending functionality making it easy to completely transform an existing theme.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/material-themes-blending
 tags: color, blending, material
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Custom Save Button in RichTextEditorRibbonBar
 description: Learn how to replace the default save button in the Ribbon UI for RadRichTextEditor.
+components: ["richtexteditor"]
 type: how-to 
 page_title: How to Achieve Custom Save Button in RichTextEditorRibbonBar
 slug: richtext-ribbon-ui-custom-save

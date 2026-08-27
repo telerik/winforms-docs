@@ -2,6 +2,7 @@
 title: Navigation
 page_title: Navigation - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
+components: ["forms,dialogs,templates"]
 slug: radtabbedform-navigation 
 tags: radtabbedform
 published: True

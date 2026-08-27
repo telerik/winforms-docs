@@ -2,6 +2,7 @@
 title: Clipboard operations
 page_title: Clipboard operations - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/items-manipulation/clipboard-operations
 tags: clipboard,operations
 published: True

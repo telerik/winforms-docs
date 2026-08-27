@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms ImageEditor Control
 description: RadImageEditor is a control that can be used to preview and edit images in different file formats. It can be used as a stand-alone control, but has also been integrated in RadRichTextBox.
+components: ["imageeditor"]
 slug: radimageeditor-overview
 tags: overview
 published: True

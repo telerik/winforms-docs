@@ -1,6 +1,7 @@
 ---
 title: How to Achieve Keyboard Navigation in RadGridView
 description: Learn how to accomplish keyboard navigation in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Achieve Keyboard Navigation in RadGridView
 slug: gridview-keyboard-navigation

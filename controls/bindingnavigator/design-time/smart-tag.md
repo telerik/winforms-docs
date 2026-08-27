@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - WinForms BindingNavigator Control
 description: Learn what functionality is provided by the RadBindingNavigator smart tag.
+components: ["bindingnavigator"]
 slug: winforms/bindingnavigator/smart-tag
 tags: bindingnavigator
 published: True

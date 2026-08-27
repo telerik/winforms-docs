@@ -2,6 +2,7 @@
 title: Getting Started (RadButtons)
 page_title: Getting Started (RadButtons) - RadShortcut
 description: Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action.
+components: ["uiframework"]
 slug: winforms/shortcuts/getting-started-(radbuttons)
 tags: getting,started,(radbuttons)
 published: True

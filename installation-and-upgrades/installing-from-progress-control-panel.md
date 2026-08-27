@@ -2,6 +2,7 @@
 title: Install from Progress Control Panel
 page_title: Install from Progress Control Panel
 description: Installing and Removing from Progress Control Panel
+components: ["general"]
 slug: installing-from-progress-control-panel
 tags: installing, control, panel
 published: True

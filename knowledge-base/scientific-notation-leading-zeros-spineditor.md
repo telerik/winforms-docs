@@ -1,6 +1,7 @@
 ---
 title: Scientific Notation and Leading Zeros in Spin Editor
 description: An example demonstrating how the text in the editor can be formatted to support scientific notation or display leading zeros
+components: ["spineditor"]
 type: how-to
 page_title: How to customize the text in the editor to display scientific notation or leading zeros
 slug: scientific-notation-leading-zeros-spineditor

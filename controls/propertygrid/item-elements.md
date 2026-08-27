@@ -2,6 +2,7 @@
 title: Item Elements
 page_title: Item Elements - RadPropertyGrid
 description: Depending on the property type, RadPropertyGrid create different item elements to display he respective value in an appropriate way. 
+components: ["propertygrid"]
 slug: winforms/propertygrid/item-elements
 tags: custom,items
 published: True

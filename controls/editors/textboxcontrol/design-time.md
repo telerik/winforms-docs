@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - RadTextBoxControl
 description: RadTextBoxControl is a text box which supports text formating and auto-complete. 
+components: ["editors"]
 slug: winforms/editors/textboxcontrol/designtime
 tags: textboxcontrol
 published: True

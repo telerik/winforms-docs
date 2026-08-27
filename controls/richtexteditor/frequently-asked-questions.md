@@ -2,6 +2,7 @@
 title: Frequently Asked Questions
 page_title: Frequently Asked Questions - WinForms RichTextEditor Control
 description: Get familiar with some of the frequently asked questions about the use of WinForms RichTextEditor.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/frequently-asked-questions
 tags: frequently,asked,questions
 published: True

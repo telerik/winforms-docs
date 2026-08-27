@@ -2,6 +2,7 @@
 title: Display a calendar in a CommandBarDropDownButton
 page_title: Display a Calendar in a CommandBarDropDownButton - WinForms CommandBar
 description: Learn how to display a RadCalendar in a CommandBarDropDownButton dropdown.
+components: ["commandbar"]
 slug: winforms/commandbar/how-to/display-calendar-in-dropdown-button
 tags: commandbar,calendar,dropdown
 published: True

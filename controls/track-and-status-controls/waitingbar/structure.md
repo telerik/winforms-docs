@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms WaitingBar Control
 description: Get familiar with the internal elements structure of WinForms WaitingBar.
+components: ["waitingbar"]
 slug: winforms/track-and-status-controls/waitingbar/structure
 tags: control,element,structure
 published: True

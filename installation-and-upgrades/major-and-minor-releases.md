@@ -2,6 +2,7 @@
 title: Major and Minor releases
 page_title: Major and Minor releases
 description: Major and Minor releases
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/major-and-minor-releases
 tags: major,and,minor,releases
 published: False

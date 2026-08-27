@@ -2,6 +2,7 @@
 title: Earlier Versions Support Policy
 page_title: Support Policy for Earlier UI for WinForms Versions
 description: "Learn about the support policy on old versions, how bug fixes and feature requests are implemented, and how you can get them."
+components: ["general"]
 slug: old_versions_support_policy
 tags: old, policy
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Manually handle up/down keys in RadTreeView
 description:  Manually handle up/down keys in RadTreeView
+components: ["treeview"]
 type: how-to
 page_title: Manually handle up/down keys in RadTreeView
 slug: tree-view-handle-keypress

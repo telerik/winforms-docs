@@ -2,6 +2,7 @@
 title: Touch Enabled Themes
 page_title: Touch Enabled Themes - Themes
 description: Shows the themes which should be used on touch enabled devices and the features available in them.  
+components: ["general"]
 slug: winforms/themes/touch-enabled-themes
 tags: touch, themes
 published: True

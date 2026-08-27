@@ -1,6 +1,7 @@
 ---
 title: Restricting Drag Direction in RadDiagram
 description: A custom implementation showing how dragging can be restricted to a horizontal or vertical direction. The default behavior with both directions being active at the same time is also preserved
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 type: how-to
 page_title: How to restrict the direction in which shapes are dragged in RadDiagram
 slug: diagram-restricting-drag-direction

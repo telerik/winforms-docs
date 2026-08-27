@@ -2,6 +2,7 @@
 title: Oveview
 page_title: Overview - WinForms CommandBar Control
 description: WinForms CommandBar is a fully themeable tool strip that provides unprecedented flexibility
+components: ["commandbar"]
 slug: winforms/commandbar
 tags: commandbar
 published: True

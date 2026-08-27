@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms SlideView Control
 description: Get started with the RadSlideView control.
+components: ["slideview"]
 slug: slideview-getting-started
 tags: slideview, started
 published: True

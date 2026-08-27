@@ -1,6 +1,7 @@
 ---
 title: Generating a Bar Code Image outside WinForms
 description: Learn how to generate a bar code image in a .Net 7 non-Winforms project using RadBarcodeView for WinForms.
+components: ["barcodeview"]
 type: how-to
 page_title: Generating a Bar Code Image outside WinForms | RadBarcodeView for WinForms | Telerik
 slug: barcodeview-generating-image-console-app

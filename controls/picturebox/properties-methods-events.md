@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - RadPictureBox
 description: Get familiar with the public API of the WinForms RadPictureBox control.
+components: ["picturebox"]
 slug: radpicturebox-properties-methods-events
 tags: listview
 published: True

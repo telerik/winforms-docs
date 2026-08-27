@@ -2,6 +2,7 @@
 title: GridViewBrowseColumn
 page_title: GridViewBrowseColumn - WinForms GridView Control
 description: GridViewBrowseColumn allows WinForms GridView to edit file paths using OpenFileDialog.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewbrowsecolumn
 tags: gridviewbrowsecolumn
 published: True

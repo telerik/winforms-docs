@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms PipsPager Control
 description: This article lists the main features of the RadPipsPager control.
+components: ["pipspager"]
 slug: pipspager-overview
 tags: pipspager
 published: True

@@ -2,6 +2,7 @@
 title: StackLayoutPanel
 page_title: StackLayoutPanel - Telerik Presentation Framework
 description: StackLayoutPanel is a panel that handles the layout of multiple elements in a vertical or horizontal row.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/stacklayoutpanel
 tags: stacklayoutpanel
 published: True

@@ -2,6 +2,7 @@
 title: Form Converter
 page_title: Overview - WinForms FormConverter
 description: RadFormConverter allows an easy conversion between RadForm, RadRibbonForm, and the standard Form.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/form-converter
 tags: form
 published: True

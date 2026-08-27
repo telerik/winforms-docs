@@ -2,6 +2,7 @@
 title: Zoom
 page_title: Zoom
 description: Zoom
+components: ["imageeditor"]
 slug: radimageeditor-features-zoom
 tags: zoom
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms Calendar Control
 description: WinForms Calendar supports all common features you would find in the standard Month Calendar control.
+components: ["calendar"]
 slug: winforms/calendar
 tags: calendar
 published: True

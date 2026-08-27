@@ -1,6 +1,7 @@
 ---
 title: Preventing Nested Drag and Drop in NavigationView Pages
 description: Learn how to prevent nested drag and drop and pin a footer page in the RadNavigationView for UI for WinForms.
+components: ["navigationview"]
 type: how-to
 page_title: How to Avoid Nested Drag and Pin Footer Page in RadNavigationView
 meta_title: How to Avoid Nested Drag and Pin Footer Page in RadNavigationView

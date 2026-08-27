@@ -2,6 +2,7 @@
 title: Bezier
 page_title: Bezier - ChartView
 description: The Bezier chart displays a series of points on a curved line.  Two control points determine the position and amount of curvature in the line between end points
+components: ["chartview"]
 slug: winforms/chartview-/series-types/bezier
 tags: bezier
 published: True

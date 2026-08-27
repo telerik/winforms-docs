@@ -1,6 +1,7 @@
 ---
 title: Highlight Search Results in RadTreeView
 description: This article demonstrates how to highlight search results in RadTreeView. 
+components: ["treeview"]
 type: how-to
 page_title: Highlight Search Results in RadTreeView
 slug: highlight-search-results-in-radtreeview

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - WinForms TreeView Control
 description: WinForms TreeView provides a large set of events which allows you to respond to node interactions. 
+components: ["treeview"]
 slug: winforms/treeview/working-with-nodes/events
 tags: events
 published: True

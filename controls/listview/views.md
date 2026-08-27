@@ -2,6 +2,7 @@
 title: Views
 page_title: RadListView View Types
 description: Learn how to use the ListView, IconsView, and DetailsView modes in Telerik RadListView, including how to create a DetailsView.
+components: ["listview"]
 slug: winforms/listview/views
 tags: views
 published: True

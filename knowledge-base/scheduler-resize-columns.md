@@ -1,6 +1,7 @@
 ---
 title: Resize Columns in RadScheduler
 description: This article shows how to resize columns in RadScheduler.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to Resize Columns in RadScheduler
 slug: scheduler-resize-columns

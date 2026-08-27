@@ -2,6 +2,7 @@
 title: Overlays
 page_title: Overlays - WinForms Chat Control
 description: WinForms Chat offers different overlays to present the user a selection of choices. 
+components: ["chat"]
 slug: winforms/chat/chat-items/overlays
 tags: chat, overlays
 published: True

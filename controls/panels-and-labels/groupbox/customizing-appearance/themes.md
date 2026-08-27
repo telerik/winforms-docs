@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadGroupBox
 description: All RadGroupBox elements can be styled in Visual Style Builder. This article shows how you can change the header and footer back colors.
+components: ["groupbox"]
 slug: winforms/panels-and-labels/groupbox/customizing-appearance/themes
 tags: radgroupbox, appearance
 published: True

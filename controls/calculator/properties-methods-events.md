@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms Calculator Control
 description: Get familiar with the public API that WinForms Calculator offers.   
+components: ["calculator"]
 slug: calculator-properties-methods-events
 tags: Calculator
 published: True

@@ -2,6 +2,7 @@
 title: Bring a Node into View
 page_title: Bring a Node into View - WinForms TreeView Control
 description: Get familiar how to use the BringIntoView method in order to navigate to a particular node in WinForms TreeView.
+components: ["treeview"]
 slug: winforms/treeview/working-with-nodes/bring-a-node-into-view
 tags: bring,a,node,into,view
 published: True

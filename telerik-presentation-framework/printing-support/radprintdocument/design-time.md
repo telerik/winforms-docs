@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - Telerik Presentation Framework
 description: This article shows how you can create and use RadPrintDocument at design time. 
+components: ["general"]
 slug: winforms/telerik-presentation-framework/printing-support/radprintdocument/design-time
 tags: design,time
 published: True

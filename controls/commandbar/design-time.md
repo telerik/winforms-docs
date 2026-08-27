@@ -2,6 +2,7 @@
 title: Design-Time
 page_title: Design-Time - WinForms CommandBar Control
 description: Learn what are the design time options of WinForms CommandBar.
+components: ["commandbar"]
 slug: winforms/commandbar/design-time
 tags: design-time
 published: True

@@ -2,6 +2,7 @@
 title: Custom Overlay Screen
 page_title: Custom Overlay Screen
 description: How to create custom overlay screen
+components: ["splashscreen"]
 slug: overlay-howto-custom-overlay
 tags: overlay,custom,form,screen
 published: True

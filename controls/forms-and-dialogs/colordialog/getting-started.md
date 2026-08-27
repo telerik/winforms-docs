@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms ColorDialog
 description: WinForms ColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/colordialog/getting-started
 tags: getting,started
 published: True

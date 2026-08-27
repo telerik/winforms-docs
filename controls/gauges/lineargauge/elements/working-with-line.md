@@ -2,6 +2,7 @@
 title: Working with Line
 page_title: Working with Line - WinForms LinearGauge Control
 description: The line element represents single line which can be used with the ticks.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/lineargauge/elements/working-with-line
 tags: working,with,line
 published: True

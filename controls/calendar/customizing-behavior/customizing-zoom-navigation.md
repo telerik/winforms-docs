@@ -2,6 +2,7 @@
 title: Customizing Zoom Navigation
 page_title: Customizing Zoom Navigation - RadCalendar
 description: Customizing Zoom Navigation
+components: ["calendar"]
 slug: winforms/calendar/customizing-behavior/customizing-zoom-navigation
 tags: customizing,zoom,navigation
 published: True

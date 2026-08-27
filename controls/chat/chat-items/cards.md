@@ -2,6 +2,7 @@
 title: Cards
 page_title: Cards - WinForms Chat Control
 description: WinForms Chat offers different cards to display data in a structured layout. 
+components: ["chat"]
 slug: winforms/chat/chat-items/cards
 tags: chat, cards
 published: True

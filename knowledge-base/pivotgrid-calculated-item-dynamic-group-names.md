@@ -1,6 +1,7 @@
 ---
 title: How to Dynamically Read Item Names in a PivotGrid Calculated Item
 description: Learn how to create a CalculatedItem that reads group names at runtime instead of hardcoding them in RadPivotGrid for WinForms.
+components: ["pivotgrid"]
 type: how-to
 page_title: How to Dynamically Read Item Names in a PivotGrid Calculated Item
 slug: pivotgrid-calculated-item-dynamic-group-names

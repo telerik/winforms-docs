@@ -2,6 +2,7 @@
 title: RadDocumentEditor
 page_title: RadDocumentEditor - WinForms RichTextEditor Control
 description: RadDocument is the main document unit in WinForms RichTextEditor. It has API of its own for adding and removing Blocks and Inlines from the document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/raddocumenteditor
 tags: raddocumenteditor
 published: True

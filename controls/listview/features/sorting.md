@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting - WinForms ListView Control
 description: Sorting is possible in two ways either programmatically by adding the appropriate SortDescriptor to the SortDescriptors collection of WinForms ListView, or by enabling the user to sort by clicking a column header in DetailsView.
+components: ["listview"]
 slug: winforms/listview/features/sorting
 tags: sorting
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Indicators - UI for WinForms Documentation
 description: Indicators
+components: ["chartview"]
 slug: winforms/chartview-/series-types/indicators
 tags: indicators
 published: True

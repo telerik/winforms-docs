@@ -1,6 +1,7 @@
 ---
 title: How to Add Background Image to the Plot Area in ChartView  
 description: This article demonstrates how to benefit the CartesianRenderer in ChartView and achieve background image for the plot area.   
+components: ["chartview"]
 type: how-to
 page_title: How to Add Background Image to the Plot Area in ChartView     
 slug: add-background-image-to-plot-area-in-chartview 

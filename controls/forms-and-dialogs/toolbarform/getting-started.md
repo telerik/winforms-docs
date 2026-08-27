@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms ToolbarForm
 description: WinForms ToolbarForm allows to display tab items directly in the title bar  
+components: ["forms,dialogs,templates"]
 slug: radtoolbarform-getting-started
 tags: radtoolbarform
 published: True

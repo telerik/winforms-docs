@@ -2,6 +2,7 @@
 title: Setting Appointment and Resource relations
 page_title: Setting Appointment and Resource relations - WinForms Scheduler Control
 description: Learn how to assign a single resource to many appointments in WinForms Scheduler. 
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/data-binding/setting-appointment-and-resource-relations
 tags: setting,appointment,and,resource,relations
 published: True

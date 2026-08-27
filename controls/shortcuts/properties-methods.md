@@ -2,6 +2,7 @@
 title: Properties and Methods
 page_title: Properties and Methods - RadShortcut
 description: Almost each application uses the so called “Shortcuts” – a keyboard combination that triggers a specific action.
+components: ["uiframework"]
 slug: winforms/shortcuts/properties-methods
 tags: shortcuts
 published: True

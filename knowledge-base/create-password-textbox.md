@@ -2,6 +2,7 @@
 title: Create a Password Text Box
 page_title: Create a Password Text Box 
 description: Create a Password Text Box
+components: ["buttontextbox"]
 slug: create-password-text-box
 tags: editors, textbox, password, button
 published: True

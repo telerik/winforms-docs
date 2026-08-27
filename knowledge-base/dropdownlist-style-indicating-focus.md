@@ -1,6 +1,7 @@
 ---
 title: Indicating Focus in RadDropDownList
 description: An example demonstrating how focus can be indicated in the RadDropDownList when the its DropDownStyle property is set to DropDownList  
+components: ["dropdownlist"]
 type: how-to 
 page_title: How to indicate focus in RadDropDownList when the its DropDownStyle property is set to DropDownList
 slug: dropdownlist-style-indicating-focus

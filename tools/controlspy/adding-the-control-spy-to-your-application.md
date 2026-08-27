@@ -2,6 +2,7 @@
 title: Adding the Control Spy to Your Application
 page_title: Adding the Control Spy to Your Application - RadControlSpy
 description: This article shows how one can create and show a RadControlSpyForm. 
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/controlspy/adding-the-control-spy-to-your-application
 tags: adding,the,control,spy,to,your,application
 published: True

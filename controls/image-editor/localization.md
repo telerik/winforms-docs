@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization
 description: Localization
+components: ["imageeditor"]
 slug: radimageeditor-localization
 tags: localization
 published: True

@@ -2,6 +2,7 @@
 title: Design Time
 page_title: RadSparkline Design Time
 description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+components: ["sparkline"]
 slug: radsparkline-design-time
 tags: sparkline
 published: True

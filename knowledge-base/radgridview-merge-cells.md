@@ -1,6 +1,7 @@
 ---
 title: RadGridView Merge Cells
 description: RadGridView Merge Cells. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: RadGridView Merge Cells
 slug: radgridview-merge-cells

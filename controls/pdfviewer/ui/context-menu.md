@@ -2,6 +2,7 @@
 title: Context Menu
 page_title: Context Menu - WinForms PdfViewer Control
 description: WinForms PdfViewer has a default context menu - PdfViewerContextMenu which provides a quick way of performing a number of commands.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/ui/context-menu
 tags: context menu
 published: True

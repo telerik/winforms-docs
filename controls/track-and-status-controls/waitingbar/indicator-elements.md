@@ -2,6 +2,7 @@
 title: Indicator Elements
 page_title: Indicator Elements - WinForms WaitingBar Control
 description: All indicators in WinForms WaitingBar inherit from BaseWaitingBarIndicatorElement and define their own implementation of the Animate and ResetAnimation methods. 
+components: ["waitingbar"]
 slug: winforms/track-and-status-controls/waitingbar/indicator-elements
 tags: control,element,structure
 published: True

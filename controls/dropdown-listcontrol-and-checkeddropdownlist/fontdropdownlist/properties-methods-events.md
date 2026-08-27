@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadFontDropDownList
 description: RadDropDownList is an enhanced alternative to the standard Windows Forms combo box control.
+components: ["fontdropdownlist"]
 slug: winforms/editors/fontdropdownlist/properties-methods-events
 tags: properties, methods
 published: True

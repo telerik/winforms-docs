@@ -1,6 +1,7 @@
 ---
 title: Hiding Days Not of the Current Month in RadCalendar for WinForms
 description: Learn how to customize the RadCalendar control to hide days that do not belong to the current month, enhancing the calendar's visual clarity.
+components: ["calendar"]
 type: how-to
 page_title: How to Hide Non-Current Month Days in RadCalendar for WinForms
 slug: calendar-hide-month-days

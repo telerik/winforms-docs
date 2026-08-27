@@ -2,6 +2,7 @@
 title: GridViewRowInfo
 page_title: GridViewRowInfo - WinForms GridView Control
 description: GridViewRowInfo class is the logical representation of a single row in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/rows/gridviewrowinfo
 tags: gridviewrowinfo
 published: True

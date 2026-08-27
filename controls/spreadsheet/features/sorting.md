@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting - WinForms Spreadsheet Control
 description: Sorting in WinForms Spreadsheet allows the user to arrange the data according to one or more sorting conditions.
+components: ["spreadsheet"]
 slug: radspreadsheet-features-sorting
 tags: freeze,panes
 published: True

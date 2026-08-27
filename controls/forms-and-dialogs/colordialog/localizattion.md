@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localizattion - RadColorDialog
 description: RadColorDialog is a lightweight UI component that allows users to select from RGB or HEX color models.
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/colordialog/localizattion
 tags: localizattion
 published: True

@@ -2,6 +2,7 @@
 title: Subscribing to RadPageViewPage Events
 page_title: Subscribing to RadPageViewPage Events - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+components: ["pageview"]
 slug: winforms/pageview/how-to/subscribing-to-radpageviewpage-events
 tags: subscribing,to,radpageviewpage,events
 published: True

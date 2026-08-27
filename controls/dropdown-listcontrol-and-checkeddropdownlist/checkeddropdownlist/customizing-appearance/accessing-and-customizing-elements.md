@@ -2,6 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements - RadCheckedDropDownList
 description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
+components: ["checkeddropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/accessing-and-customizing-elements
 tags: checkeddropdownlist
 published: True

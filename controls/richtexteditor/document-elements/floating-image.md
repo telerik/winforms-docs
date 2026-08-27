@@ -2,6 +2,7 @@
 title: Floating Images
 page_title: Floating Images - WinForms RichTextEditor Control
 description: Winforms RadRichTextEditor supports Floating Images that allows images to be displayed floating in the document.
+components: ["richtexteditor"]
 slug: richtexteditor-document-elements-floating-image
 tags: inline,image, floatingimage, floatingblock, floatingimageblock,
 published: True

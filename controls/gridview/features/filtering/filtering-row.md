@@ -2,6 +2,7 @@
 title: Filtering Row
 page_title: Filtering Row - WinForms GridView Control
 description: Learn how to use the filtering row in the WinForms GridView to enter filter values, hide operator text, hide the row, and customize its menu.
+components: ["gridview"]
 slug: winforms/gridview/filtering/filtering-row
 tags: filtering,row
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Distinguishing the Source Control of RadContextMenu
 description: An example handling a scenario of associating a single context menu with a number of different Telerik control 
+components: ["contextmenu"]
 type: how-to
 page_title: How to distinguish the source control of a RadContextMenu  
 slug: distinguishing-the-source-control-of-radcontextmenu

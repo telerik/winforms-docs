@@ -2,6 +2,7 @@
 title: Row Numbers
 page_title: Display Row Numbers in RadGridView
 description: Learn how to display row numbers in the WinForms RadGridView row header, keep them correct during paging, and adjust the row header width.
+components: ["gridview"]
 slug: winforms/gridview/cells/formatting-row-numbers
 tags: formatting,cells
 published: True

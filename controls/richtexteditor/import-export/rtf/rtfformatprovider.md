@@ -2,6 +2,7 @@
 title: Using RtfFormatProvider
 page_title: Using RtfFormatProvider - WinForms RichTextEditor Control
 description: RtfFormatProvider makes it easy to import and export RadDocument to/from RTF format, preserving the entire document structure and formatting in WinForms RichTextEditor.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/rtf/rtfformatprovider
 tags: import/export
 published: True

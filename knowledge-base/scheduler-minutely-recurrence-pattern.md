@@ -1,6 +1,7 @@
 ---
 title: Minutely Recurrence Pattern in RadScheduler
 description: An example demonstrating how to add minutely reccurence pattern in the RadScheduler EditRecurrenceDialog.
+components: ["scheduler,reminder"]
 type: how-to 
 page_title: How to Add Minutely Reccurence Pattern in EditRecurrenceDialog of RadScheduler
 slug: scheduler-minutely-recurrence-pattern

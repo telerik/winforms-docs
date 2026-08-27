@@ -2,6 +2,7 @@
 title: Viewer Modes
 page_title: Viewer Modes - WinForms PdfViewer Control
 description: There are three FixedDocumentViewerModes which specify the behavior of WinForms PdfViewer.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/ui/viewer-modes
 tags: viewer modes
 published: True

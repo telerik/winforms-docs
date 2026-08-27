@@ -2,6 +2,7 @@
 title: Keyboard Navigation
 page_title: Keyboard Navigation - UI for WinForms Documentation
 description: Keyboard Navigation
+components: ["propertygrid"]
 slug: winforms/propertygrid/keyboard-navigation
 tags: keyboard,navigation
 published: True

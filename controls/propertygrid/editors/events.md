@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - RadPropertyGrid
 description: The article describe the events which are raised in the process of editing a particular property grid item.
+components: ["propertygrid"]
 slug: winforms/propertygrid/editors/events
 tags: events
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Properly Search Numeric Values in RadGridView
 description: Learn how search numeric values in formatted decimal columns in the WinForms GridView.
+components: ["gridview"]
 type: how-to 
 page_title: How to Properly Search Numeric Values in RadGridView
 slug: grid-searching-in-formated-decimal-columns

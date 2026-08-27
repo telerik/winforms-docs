@@ -2,6 +2,7 @@
 title: Install using MSI
 page_title: Install using MSI
 description: Read how you can install Telerik UI for WinForms on your computers by using MSI installer and what actions are needed.
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/installing-on-your-computer
 tags: installing,on,your,computer
 published: True

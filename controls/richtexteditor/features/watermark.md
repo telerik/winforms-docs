@@ -2,6 +2,7 @@
 title: Watermark
 page_title: Watermark - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/watermark
 tags: watermark
 published: True

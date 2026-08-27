@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - WinForms Carousel Control
 description: WinForms Carousel supports data binding. Learn how to use it.
+components: ["carousel"]
 slug: winforms/carousel/using-radcarousel/data-binding
 tags: data,binding
 published: True

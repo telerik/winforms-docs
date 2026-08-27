@@ -2,6 +2,7 @@
 title: Using the Overflow Menu
 page_title: Using the Overflow Menu - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+components: ["pageview"]
 slug: winforms/pageview/outlookview/using-the-overflow-menu
 tags: using,the,overflow,menu
 published: True

@@ -2,6 +2,7 @@
 title: Document Protection
 page_title: Document Protection - WinForms RichTextEditor Control
 description: Document Protection in WinForms RichTextEditor allows defining and enforcing different editing restrictions in the document for a set of users and groups.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/document-protection
 tags: document,protection
 published: True

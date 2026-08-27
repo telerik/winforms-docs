@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadScrollBar
 description: RadHSrollBar and RadVScrollBar are themeable alternatives to the standard Windows Forms scroll bar controls.
+components: ["scrollbar"]
 slug: winforms/track-and-status-controls/scrollbar/themes
 tags: scrollbar
 published: True

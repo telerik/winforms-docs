@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms Diagram Control
 description: WinForms Diagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram
 tags: diagram,(beta)
 published: True

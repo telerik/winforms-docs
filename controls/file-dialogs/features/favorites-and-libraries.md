@@ -2,6 +2,7 @@
 title: Favorites and Libraries Nodes
 page_title: Favorites and Libraries Nodes - File Dialogs
 description: File Dialogs provide you with the option the specify a list of directories displayed above the Treeview navigation.
+components: ["filedialogs"]
 slug: file-dialogs-favorites-and-libraries
 tags: filedialogs
 published: True

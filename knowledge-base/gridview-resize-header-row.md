@@ -1,6 +1,7 @@
 ---
 title: Resizing the Header Row in RadGridView for WinForms
 description: Learn how to resize the header row in RadGridView for WinForms.
+components: ["gridview"]
 type: how-to
 page_title: How to Resize the Header Row in RadGridView for WinForms
 slug: resize-header-row-radgridview-winforms

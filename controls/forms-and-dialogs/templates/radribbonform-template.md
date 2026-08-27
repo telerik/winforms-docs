@@ -2,6 +2,7 @@
 title: RadRibbonForm Template
 page_title: RadRibbonForm Template - Templates
 description: The Visual Studio templates that install with Telerik UI for WinForms let you add RadForm and ShapedForm to your application without any coding steps. 
+components: ["forms,dialogs,templates"]
 slug: winforms/forms-and-dialogs/templates/radribbonform-template
 tags: radribbonform,template
 published: True

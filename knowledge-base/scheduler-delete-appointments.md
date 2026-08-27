@@ -1,6 +1,7 @@
 ---
 title: Appointment is not deleted from the AppointmentsResources Table
 description: This article shows how you can fix that an appointment is not deleted from the AppointmentsResources Table
+components: ["scheduler,reminder"]
 type: how-to
 page_title: Appointment is not deleted from the AppointmentsResources Table
 slug: scheduler-delete-appointments

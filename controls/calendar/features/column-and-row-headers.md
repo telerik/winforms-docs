@@ -2,6 +2,7 @@
 title: Column and Row Headers
 page_title: Column and Row Headers - WinForms Calendar Control
 description: WinForms Calendar supports row and column headers. 
+components: ["calendar"]
 slug: winforms/calendar/customizing-behavior/column-and-row-headers
 tags: column,and,row,headers
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Form's Designer doesn't Open in .NET Core   
 description: Form's Designer doesn't Open in .NET Core 
+components: ["general"]
 type: troubleshooting
 page_title: Form's Designer doesn't Open in .NET Core   
 slug: net-core-designer-error

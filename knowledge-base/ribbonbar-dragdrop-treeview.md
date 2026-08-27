@@ -1,6 +1,7 @@
 ---
 title: Drag-Drop from RadRibbonBar to RadTreeView.
 description: This article shows how implement Drag-Drop from RadRibbonBar to RadTreeView.
+components: ["ribbonbar"]
 type: how-to
 page_title: How to add Drag-Drop functionalities from RadRibbonBar to RadTreeView.
 slug: ribbonbar-dragdrop-treeview

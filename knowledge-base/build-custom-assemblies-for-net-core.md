@@ -1,6 +1,7 @@
 ---
 title: How to Build Custom Telerik Assemblies when Using .NET Core and Enable Design Time Experience
 description: This article demonstrates how to produce custom Telerik assemblies when using .NET Core in your project and enable design time experience. 
+components: ["general"]
 type: how-to
 page_title: How to Build Custom Telerik Assemblies when Using .NET Core and Enable Design Time Experience
 slug: build-custom-assemblies-for-net-core

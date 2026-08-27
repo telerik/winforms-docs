@@ -2,6 +2,7 @@
 title: Changing Editors Properties
 page_title: Changing Editors Properties - RadVirtualGrid
 description: This article shows how you can access and change the editors properties.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/editing/editors-properties
 tags: virtualgrid, edidtors, properties
 published: True

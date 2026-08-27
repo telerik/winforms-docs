@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms RangeSelector Control
 description: WinForms RangeSelector's Smart Tag allows you to set the associated chart, change the applied theme or navigate to the online documentation.
+components: ["rangeselector"]
 slug: winforms/rangeselector/design-time
 tags: pdfviewer, design-time
 published: True

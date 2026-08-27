@@ -2,6 +2,7 @@
 title: OLE Drag and Drop
 page_title: OLE Drag and Drop - RadMap
 description: This article will demonstrate how you can drag pins from RadMap to a RadListView control.
+components: ["map"]
 slug: winforms/radmap/drag-and-drop/oled-drag-and-drop
 tags: drag and drop,another control
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Animate the page expanding in RadPageView with ExplorerBar view 
 description: Animate the page expanding in RadPageView with ExplorerBar view . Check it now!
+components: ["pageview"]
 type: how-to
 page_title: Animate the page expanding in RadPageView with ExplorerBar view 
 slug: animate-the-expanding-page

@@ -2,6 +2,7 @@
 title: Class Hierarchy Overview
 page_title: Class Hierarchy Overview - Telerik Presentation Framework
 description: The Class Hierarchy Overview illustrates a diagram which contains an abbreviated class diagram of the class inheritance starting with RadObject.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/class-hierarchy/class-hierarchy-overview
 tags: class,hierarchy,overview
 published: True
