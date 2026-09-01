@@ -2,7 +2,7 @@
 title: Internationalization
 page_title: Internationalization - WinForms DateTimePicker Control
 description: WinForms DateTimePicker provides built in internationalization support to build world-ready applications.
-components: ["editors"]
+components: ["datetimepicker"]
 slug: winforms/editors/datetimepicker/internationalization/internationalization
 tags: internationalization
 published: True

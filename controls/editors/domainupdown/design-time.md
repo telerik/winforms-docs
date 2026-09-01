@@ -2,7 +2,7 @@
 title: Desing Time
 page_title: Desing Time - WinForms DomainUpDown Control
 description: Learn what are the design time options of the WinForms DomainUpDown.  
-components: ["editors"]
+components: ["domainupdown"]
 slug: winforms/editors/domainupdown/design-time
 tags: domainupdown, design
 published: True

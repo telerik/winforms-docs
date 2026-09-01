@@ -2,7 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support- RadTextBoxControl
 description: This article shows keyboard combinations of RadTextBoxControl
-components: ["editors"]
+components: ["textboxcontrol"]
 slug: winforms/editors/textboxcontrol/keyboard-support
 tags: keyboard, support
 published: True

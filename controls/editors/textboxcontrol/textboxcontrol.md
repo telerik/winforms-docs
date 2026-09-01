@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview - WinForms TextBoxControl
 description: WinForms TextBoxControl extends the the default text box by providing additional functionality like word formating and auto-complete. 
-components: ["editors"]
+components: ["textboxcontrol"]
 slug: winforms/editors/textboxcontrol
 tags: textboxcontrol
 published: True

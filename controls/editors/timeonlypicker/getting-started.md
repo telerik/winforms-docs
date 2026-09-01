@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms TimeOnlyPicker Control
 description: Learn how you can start using RadTimeOnlyPicker and use some of its common properties.
-components: ["editors"]
+components: ["timeonlypicker"]
 slug: editors-timeonlypicker-getting-started
 tags: getting,started,timeonly
 published: True

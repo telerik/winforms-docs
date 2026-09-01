@@ -2,7 +2,7 @@
 title: Tweak Increment Step
 page_title: Tweak Increment Step - RadDateOnlyPicker
 description: This article shows how you can change th increment step of the up/down buttons. 
-components: ["editors"]
+components: ["dateonlypicker"]
 slug: editors-dateonlypicker-how-to-tweak-increment-step
 tags: tweak,increment,step, netcore
 published: True

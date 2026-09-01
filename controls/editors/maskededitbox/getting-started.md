@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms MaskedEditBox Control
 description: Learn how to configure RadMaskedEditBox with a custom phone mask and a short date pattern.
-components: ["editors"]
+components: ["maskededitbox"]
 slug: winforms/editors/maskededitbox/getting-started
 tags: getting,started
 published: True

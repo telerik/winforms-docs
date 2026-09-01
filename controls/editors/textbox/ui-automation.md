@@ -2,7 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadTextBox
 description: UI Automation Support (UI Accessibility) for RadTextBox.   
-components: ["editors"]
+components: ["textbox"]
 slug: textbox-ui-automation
 tags: textbox,ui,automation
 published: True

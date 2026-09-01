@@ -2,7 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods, Events - WinForms MaskedEditBox Control
 description: Get familiar with the public API that WinForms RadMaskedEditBox offers.
-components: ["editors"]
+components: ["maskededitbox"]
 slug: winforms/editors/maskededitbox/properties-methods-and-events
 tags: maskededitbox, properties, methods, events
 published: True

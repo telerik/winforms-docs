@@ -2,7 +2,7 @@
 title: Overview
 page_title: Time Picker - WinForms TimePicker Control 
 description: WinForms TimePicker allows you to easily enter or adjust time value by selecting the time form a drop down or using the up/down buttons.
-components: ["editors"]
+components: ["timepicker"]
 slug: winforms/editors/timepicker
 tags: time,picker
 published: True

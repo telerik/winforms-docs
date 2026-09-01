@@ -2,7 +2,7 @@
 title: Data Binding
 page_title: Data Binding - WinForms DomainUpDown Control
 description: Data binding is a mechanism for automatic population of the WinForms DomainUpDown with items, based on the provided data structure.  
-components: ["editors"]
+components: ["domainupdown"]
 slug: winforms/editors/domainupdown/populating-with-data/data-binding
 tags: domainupdown,databinding
 published: True

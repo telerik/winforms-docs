@@ -2,7 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms ButtonTextBox Control
 description: Learn how to populate WinForms ButtonTextBox with data at design time.
-components: ["editors"]
+components: ["buttontextbox"]
 slug: winforms/editors/buttontextbox/populating-with-data/design-time
 tags: design,time
 published: True

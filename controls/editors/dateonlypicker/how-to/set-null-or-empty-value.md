@@ -2,7 +2,7 @@
 title: Set null or empty value
 page_title: Set null or empty value - RadDateOnlyPicker
 description: This article shows how you can set the control value to null.
-components: ["editors"]
+components: ["dateonlypicker"]
 slug: editors-dateonlypicker-how-to-set-null-or-empty-value
 tags: set,null,or,empty,value, netcore
 published: True

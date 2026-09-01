@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms DateTimePicker Control
 description: WinForms DateTimePicker allows interactive selection of dates using a drop down calendar. 
-components: ["editors"]
+components: ["datetimepicker"]
 slug: winforms/editors/datetimepicker/getting-started
 tags: getting,started
 published: True

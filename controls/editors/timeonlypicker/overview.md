@@ -2,7 +2,7 @@
 title: Overview
 page_title: Time Picker - WinForms TimeOnlyPicker Control 
 description: WinForms TimeOnlyPicker allows you to easily enter or adjust time value by selecting the time form a drop down or using the up/down buttons.
-components: ["editors"]
+components: ["timeonlypicker"]
 slug: editors-timeonlypicker-overview
 tags: time,picker
 published: True

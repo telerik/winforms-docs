@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview - RadDomainUpDown
 description: RadDomainUpDown is designed to display text inside an editor like a text-box and sets a text string from a list of choices. 
-components: ["editors"]
+components: ["domainupdown"]
 slug: winforms/editors/domainupdown/overview
 tags: domainupdown
 published: True

@@ -2,7 +2,7 @@
 title: Customizing Programmatically
 page_title: Customizing Programmatically - UI for WinForms Documentation
 description: Access and change the styles of the TimeOnlyPicker elements in the code.
-components: ["editors"]
+components: ["timeonlypicker"]
 slug: editors-timeonlypicker-customization
 tags: customization
 published: True

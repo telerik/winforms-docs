@@ -2,7 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements - RadButtonTextBox
 description: RadButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
-components: ["editors"]
+components: ["buttontextbox"]
 slug: winforms/editors/buttontextbox/customizing-appearance
 tags: buttontextbox, customize
 published: True

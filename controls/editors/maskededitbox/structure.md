@@ -2,7 +2,7 @@
 title: Structure
 page_title: Structure - WinForms MaskedEditBox Control
 description: Get familiar with the internal elements structure of the WinForms MaskedEditBox.
-components: ["editors"]
+components: ["maskededitbox"]
 slug: winforms/editors/maskededitbox/structure
 tags: maskededitbox, structure
 published: True

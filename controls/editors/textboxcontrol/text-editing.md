@@ -2,7 +2,7 @@
 title: Text editing
 page_title: Text editing - WinForms TextBoxControl
 description: Use the RadtextBoxControl API to edit the text in the code behind.
-components: ["editors"]
+components: ["textboxcontrol"]
 slug: winforms/editors/textboxcontrol/text-editing
 tags: text,editing
 published: True

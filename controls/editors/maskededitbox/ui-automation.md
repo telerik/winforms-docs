@@ -2,7 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadMaskedEditBox
 description: UI Automation Support (UI Accessibility) for RadMaskedEditBox.   
-components: ["editors"]
+components: ["maskededitbox"]
 slug: maskededitbox-ui-automation
 tags: maskededitbox,ui,automation
 published: True

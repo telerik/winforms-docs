@@ -2,7 +2,7 @@
 title: MaskDateTimeProvider
 page_title: MaskDateTimeProvider - RadDateTimePicker
 description: This article shows what is the MaskDateTimeProvider and how you can access it.
-components: ["editors"]
+components: ["datetimepicker"]
 slug: winforms/editors/maskeddatetimeprovider
 tags: datetimepicker, maskeddatetimeprovider
 published: True

@@ -2,7 +2,7 @@
 title: Properties
 page_title: Properties - WinForms DateTimePicker Control
 description: Learn the significant properties for WinForms RadDateTimePicker.
-components: ["editors"]
+components: ["datetimepicker"]
 slug: winforms/editors/datetimepicker/raddatetimepicker-properties
 tags: raddatetimepicker,properties
 published: True

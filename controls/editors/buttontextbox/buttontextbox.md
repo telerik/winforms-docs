@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview - WinForms ButtonTextBox Control
 description: WinForms ButtonTextBox is a derivative of **RadTextBox** which allows you to embed easily button elements on the left or right side of the text box.
-components: ["editors"]
+components: ["buttontextbox"]
 slug: winforms/editors/buttontextbox
 tags: textbox
 published: True

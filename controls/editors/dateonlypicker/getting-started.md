@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms DateOnlyPicker Control
 description: WinForms DateOnlyPicker allows interactive selection of DateOnly type using a drop down calendar. 
-components: ["editors"]
+components: ["dateonlypicker"]
 slug: editors-dateonlypicker-getting-started
 tags: getting,started, netcore
 published: True

@@ -2,7 +2,7 @@
 title: Auto-Complete
 page_title: Auto-Complete - WinForms AutoCompleteBox Control
 description: WinForms AutoCompleteBox can automatically complete the input string by comparing the prefix being entered to the prefix of all strings in the maintained source.
-components: ["editors"]
+components: ["autocompletebox"]
 slug: winforms/editors/autocompletebox/auto-complete
 tags: auto-complete
 published: True
