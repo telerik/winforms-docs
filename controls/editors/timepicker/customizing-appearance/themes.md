@@ -2,7 +2,7 @@
 title: Themes
 page_title: Themes - RadTimePicker
 description: This article shows how you can change the styles of RadTimePicker in Visual Style Builder.
-components: ["editors"]
+components: ["timepicker"]
 slug: editors/timepicker/themes
 tags: themes, timepicker
 published: True

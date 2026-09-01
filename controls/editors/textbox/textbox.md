@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview - WinForms TextBox Control
 description: RadTextBox is a themeable alternative to the standard Windows Forms text box control.
-components: ["editors"]
+components: ["textbox"]
 slug: winforms/editors/textbox
 tags: textbox
 published: True

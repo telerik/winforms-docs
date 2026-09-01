@@ -2,7 +2,7 @@
 title: Free Form Date Time Parsing
 page_title: Free Form Date Time Parsing - WinForms TimePicker Control
 description: With the new MaskType TimePicker tries to parse the input string to valid DateTime object by using very complex logic.
-components: ["editors"]
+components: ["timepicker"]
 slug: winforms/editors/timepicker/free-form-date-time-parsing
 tags: free,form,date,time,parsing
 published: True

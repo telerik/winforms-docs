@@ -2,7 +2,7 @@
 title: TimeSpan Masks
 page_title: TimeSpan Masks - RadMaskedEditBox
 description: The following tables  describe the mask characters that can be used when the MaskType is DateTime. Note that the format characters are case sensitive.
-components: ["editors"]
+components: ["maskededitbox"]
 slug: winforms/editors/maskededitbox/timespan-masks
 tags: timespan, masks
 published: True

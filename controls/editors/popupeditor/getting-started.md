@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms PopupEditor Control
 description: WinForms PopupEditor allows you to show any predefined or custom controls in its popup. 
-components: ["editors"]
+components: ["popupeditor"]
 slug: winforms/editors/popupeditor/getting-started
 tags: getting,started
 published: True

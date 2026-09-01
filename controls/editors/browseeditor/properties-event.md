@@ -2,7 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms BrowseEditor Control 
 description: Get familiar with the public API that WinForms BrowseEditor offers.
-components: ["editors"]
+components: ["browseeditor"]
 slug: winforms/editors/browseeditor/properties-events
 tags: browseditor, properties, events
 published: True

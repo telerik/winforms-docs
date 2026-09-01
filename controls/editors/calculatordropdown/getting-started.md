@@ -2,7 +2,7 @@
 title: Getting Started 
 page_title: Getting Started - WinForms CalculatorDropDown Control
 description: WinForms CalculatorDropDown has a simple easy-to-use interface enabling the end user to perform all basic calculations such as addition, subtraction, multiplication, division as well as some more complicated ones – reciprocal, square root, negate. 
-components: ["editors"]
+components: ["calculatordropdown"]
 slug: winforms/editors/calculatordropdown/getting-started
 tags: getting,started
 published: True

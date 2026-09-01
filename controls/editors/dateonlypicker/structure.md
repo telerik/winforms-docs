@@ -2,7 +2,7 @@
 title: Structure
 page_title: Structure - WinForms DateOnlyPicker Control
 description: Get familiar with the internal elements structure of the WinForms DateOnlyPicker.
-components: ["editors"]
+components: ["dateonlypicker"]
 slug: editors-dateonlypicker-structure
 tags: dateonlypicker, netcore
 published: True

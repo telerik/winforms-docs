@@ -2,7 +2,7 @@
 title: TextMaskFormat Property
 page_title: TextMaskFormat Property - RadMaskedEditBox
 description: TextMaskFormat Property allows getting variations of of the Text property value taking into account whether you want to get the prompt characters, and the literals used in the mask.
-components: ["editors"]
+components: ["maskededitbox"]
 slug: winforms/editors/maskededitbox/textmaskformat-property
 tags: textmaskformat,property
 published: True

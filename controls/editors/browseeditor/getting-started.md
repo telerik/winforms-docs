@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms BrowseEditor Control
 description: WinForms BrowseEditor is a themable control which allows users to select a file or a directory from the file system or directly to type the full path in the editor.
-components: ["editors"]
+components: ["browseeditor"]
 slug: winforms/editors/browseeditor/getting-started
 tags: getting,started
 published: True

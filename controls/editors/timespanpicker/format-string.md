@@ -2,7 +2,7 @@
 title: Format String
 page_title: Format String - RadTimeSpanPicker
 description: RadTimeSpanPicker is a UI component that provides a full control over picking a specific time span and duration.
-components: ["editors"]
+components: ["timespanpicker"]
 slug: radtimespanpicker-format-string
 tags: radtimespanpicker
 published: True

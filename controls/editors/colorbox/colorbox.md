@@ -2,7 +2,7 @@
 title: Overview
 page_title: Overview - WinForms ColorBox Control
 description: WinForms ColorBox is a themable control which allows users to select a color from a color dialog or to directly type it in the text field.
-components: ["editors"]
+components: ["colorbox"]
 slug: winforms/editors/colorbox
 tags: colorbox
 published: True

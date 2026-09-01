@@ -2,7 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms DateOnlyPicker Control
 description: Learn the significant properties for WinForms RadDateOnlyPicker.
-components: ["editors"]
+components: ["dateonlypicker"]
 slug: editors-dateonlypicker-properties
 tags: raddateonlypicker,properties, netcore
 published: True

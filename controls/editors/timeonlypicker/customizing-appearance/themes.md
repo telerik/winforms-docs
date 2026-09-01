@@ -2,7 +2,7 @@
 title: Themes
 page_title: Themes - RadTimeOnlyPicker
 description: This article shows how you can change the styles of RadTimeOnlyPicker in Visual Style Builder.
-components: ["editors"]
+components: ["timeonlypicker"]
 slug: editors-timeonlypicker-themes
 tags: themes, timeonlypicker
 published: True

@@ -2,7 +2,7 @@
 title: Dialog Types
 page_title: Dialog Types - WinForms BrowseEditor Control
 description: WinForms BrowseEditor comes with a predefined set of dialog types.
-components: ["editors"]
+components: ["browseeditor"]
 slug: winforms/editors/browseeditor/dialog-types
 tags: dialog, types
 published: True

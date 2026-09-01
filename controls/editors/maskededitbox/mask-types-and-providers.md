@@ -2,7 +2,7 @@
 title: Mask Types and Providers
 page_title: Mask Types - RadMaskedEditBox
 description: A sample setup demonstrating how to configure RadMaskedEditBox with a custom phone mask and a short date pattern.
-components: ["editors"]
+components: ["maskededitbox"]
 slug: winforms/editors/maskededitbox/mask-types-and-providers
 tags: mask, types, providers
 published: True

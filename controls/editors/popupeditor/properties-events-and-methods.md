@@ -2,7 +2,7 @@
 title: Properties, Events and Methods
 page_title: Properties, Events and Methods - RadPopupEditor
 description: Shows the most commonly used properties, events and methods of RadPopupEditor.
-components: ["editors"]
+components: ["popupeditor"]
 slug: winforms/editors/popupeditor/properties,-events-and-methods
 tags: properties,,events,and,methods
 published: True

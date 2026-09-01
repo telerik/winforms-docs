@@ -2,7 +2,7 @@
 title: Structure
 page_title: Structure - WinForms ColorBox Control
 description: Get familiar with the internal elements structure of WinForms ColorBox.
-components: ["editors"]
+components: ["colorbox"]
 slug: winforms/editors/structure
 tags: colorbox
 published: True

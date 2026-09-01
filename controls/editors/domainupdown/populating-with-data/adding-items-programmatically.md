@@ -2,7 +2,7 @@
 title: Adding Items Programmatically
 page_title: Adding Items Programmatically - WinForms DomainUpDown Control
 description: WinForms DomainUpDown supports adding items at run time, which means that you can manually populate it with data. 
-components: ["editors"]
+components: ["domainupdown"]
 slug: winforms/editors/domainupdown/populating-with-data/adding-items-programmatically
 tags: domainupdown
 published: True

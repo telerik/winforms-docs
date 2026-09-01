@@ -2,7 +2,7 @@
 title: Navigation Modes
 page_title: Navigation Modes - RadDateOnlyPicker 
 description: This article shows how you can change the navigation mode of the underlying calendar
-components: ["editors"]
+components: ["dateonlypicker"]
 slug: editors-dateonlypicker-features-navigation-modes
 tags: navigation,modes, netcore
 published: True

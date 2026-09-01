@@ -2,7 +2,7 @@
 title: Text Editing
 page_title: Text Editing - WinForms AutoCompleteBox Control
 description: Learn how you can edit the text in the code behind.
-components: ["editors"]
+components: ["autocompletebox"]
 slug: winforms/editors/autocompletebox/text-editing
 tags: text,editing
 published: True

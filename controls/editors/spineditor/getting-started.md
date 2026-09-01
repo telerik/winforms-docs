@@ -2,7 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms SpinEditor Control
 description: WinForms SpinEditor is a themable alternative to the standard Windows Numeric Up Down control. Learn how to get started with it.
-components: ["editors"]
+components: ["spineditor"]
 slug: winforms/editors/spineditor/getting-started
 tags: getting,started
 published: True

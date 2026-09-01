@@ -2,7 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms TimeOnlyPicker Control
 description: Get familiar with the the most commonly used properties and events of WinForms RadTimeOnlyPicker.
-components: ["editors"]
+components: ["timeonlypicker"]
 slug: editors-timeonlypicker-properties-and-events
 tags: properties,and,events
 published: True

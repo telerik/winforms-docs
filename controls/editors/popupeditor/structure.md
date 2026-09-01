@@ -2,7 +2,7 @@
 title: Structure
 page_title: Structure - RadPopupEditor
 description: This article shows the elements used in RadPopupEditor. 
-components: ["editors"]
+components: ["popupeditor"]
 slug: winforms/editors/popupeditor/structure
 tags: structure
 published: True

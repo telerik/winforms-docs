@@ -2,7 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - RadDateTimePicker
 description: This article shows how you can change the controls elements styles.
-components: ["editors"]
+components: ["datetimepicker"]
 slug: winforms/editors/datetimepicker/customizing-appearance
 tags: datetimepicker
 published: True
