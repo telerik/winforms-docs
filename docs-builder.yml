@@ -2332,10 +2332,6 @@ redirects:
     to: "/devtools/winforms/installation-and-upgrades/install-using-nuget"
     type: Permanent
 -
-    from: "^/devtools/winforms/visual-studio-integration/install-using-nuget$"
-    to: "/devtools/winforms/installation-and-upgrades/install-using-nuget"
-    type: Permanent
--
     from: "^/devtools/winforms/installation-deployment-and-distribution/application-deployment$"
     to: "/devtools/winforms/deployment-and-distribution/application-deployment"
     type: Permanent
@@ -3472,6 +3468,10 @@ redirects:
     to: "/devtools/winforms/documentation/ai-coding-assistant/mcp-server"
     type: Permanent
 -    
-    from: "^/devtools/winforms/documentation/ai-coding-assistant/overview$"
-    to: "/devtools/winforms/documentation/ai-coding-assistant/mcp-server"
+    from: "^visual-studio-integration/install-using-nuget$"
+    to: "/installation-and-upgrades/install-using-nuget"
+    type: Permanent
+-    
+    from: "^ai-coding-assistant/overview$"
+    to: "/ai-coding-assistant/mcp-server"
     type: Permanent
