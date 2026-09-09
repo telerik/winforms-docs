@@ -32,6 +32,43 @@ You can use the following code snippet to change the header height of the first 
 <snippet id='gridview-howto-example2-cs' />
 <snippet id='gridview-howto1-example2-vb' />
 
+### Example 3
+
+To change the background color of **header** cells belonging only to child templates, subscribe to (or handle via the designer) the `ViewCellFormatting` event:
+
+#### Highlighting Child Header Cells
+
+````C#
+private void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement is GridHeaderCellElement && e.CellElement.ViewTemplate.Parent != null)
+    {
+        e.CellElement.DrawFill = true;
+        e.CellElement.GradientStyle = GradientStyles.Solid;
+        e.CellElement.BackColor = Color.LightYellow;
+    }
+    else if (e.CellElement is GridHeaderCellElement)
+    {
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+    }
+}
+````
+````VB.NET
+Private Sub RadGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As CellFormattingEventArgs)
+    If TypeOf e.CellElement Is GridHeaderCellElement AndAlso e.CellElement.ViewTemplate.Parent IsNot Nothing Then
+        e.CellElement.DrawFill = True
+        e.CellElement.GradientStyle = GradientStyles.Solid
+        e.CellElement.BackColor = Color.LightYellow
+    ElseIf TypeOf e.CellElement Is GridHeaderCellElement Then
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+    End If
+End Sub
+````
+
 # See Also
 * [Accessing Child Templates]({%slug winforms/gridview/hierarchical-grid/how-to/accessing-child-templates%})
 
