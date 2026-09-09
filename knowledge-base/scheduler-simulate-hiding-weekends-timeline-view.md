@@ -54,7 +54,7 @@ public partial class RadForm1 : Telerik.WinControls.UI.RadForm
 
     private void TimelineView_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName == "StartDate")
+        if (e.PropertyName == nameof(SchedulerTimelineView.StartDate))
         {
             SchedulerTimelineView timelineView = radScheduler1.GetTimelineView();
             DateTime newStart = timelineView.StartDate;
