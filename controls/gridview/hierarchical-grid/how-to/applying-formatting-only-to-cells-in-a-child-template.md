@@ -34,7 +34,7 @@ You can use the following code snippet to change the header height of the first 
 
 ### Example 3
 
-To change the background color of **header** cells belonging only to child templates, handle the `ViewCellFormatting` event:
+To change the background color of **header** cells belonging only to child templates, subscribe to (or handle via the designer) the `ViewCellFormatting` event:
 
 #### Highlighting Child Header Cells
 
