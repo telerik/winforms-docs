@@ -204,6 +204,10 @@ When you're ready to move forward, please purchase a [Telerik UI for WinForms Su
 
 Take a moment to review the [license agreement](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s) so your deployment is fully compliant from day one.
 
+## Export Classification
+
+Telerik products, including Telerik UI for WinForms, are classified as **EAR99** for export-control purposes. For more information about the EAR99 classification, see the [U.S. Department of Commerce guidance on ECCN and EAR99](https://www.trade.gov/eccn-and-export-administration-regulation-ear99).
+
 ## Support Options
 
 Pick the support channel that matches the kind of help you need:
