@@ -1,6 +1,6 @@
 ---
 title: Extend the Last Visible Column to Fill the Grid Width When Grouped
-description: Learn how to calculate and extend the last visible column to fill the available grid width in RadGridView when AutoSizeColumnsMode is None and multiple grouping columns are applied.
+description: Calculate the last visible column width in grouped RadGridView when AutoSizeColumnsMode is None, accounting for group indents.
 components: ["gridview"]
 type: how-to
 page_title: How to Extend Last Visible Column to Fill Grid Width with Multiple GroupBy Columns
