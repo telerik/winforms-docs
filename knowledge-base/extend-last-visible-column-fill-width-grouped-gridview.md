@@ -86,10 +86,9 @@ private void AdjustLastColumnSize(GridViewTemplate template)
     var calculatedLastColWidth = this.radGridView1.Width - totalColumnsWidth -
         rowHeaderWidth - scrollBarWidth - groupIndentWidth;
 
-    if (calculatedLastColWidth > 0)
-    {
-        visibleColumns.Last().Width = calculatedLastColWidth - 10;
-    }
+if (calculatedLastColWidth > 10)
+{
+    visibleColumns.Last().Width = calculatedLastColWidth - 10;
 }
 ````
 
