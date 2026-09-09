@@ -20,7 +20,7 @@ res_type: kb
 
 Setting `AutoSizeColumnsMode` to `GridViewAutoSizeColumnsMode.None` prevents column widths from automatically expanding to take up the full control width. A common approach to simulate filling the control is to best-fit the columns and programmatically adjust the last column to take up the remaining space (as demonstrated in [Mixing BestFit and Fill Modes for the GridView's Columns]({%slug mixing-bestfit-and-fill-mode-in-gridview%})).
 
-However, when **RadGridView** is grouped by one or more columns:
+However, when RadGridView is grouped by one or more columns:
 1. Each group descriptor inserts an indent column (`GridViewIndentColumn`) into the rendered row layout, whose width corresponds to `radGridView1.TableElement.GroupIndent`.
 2. Grouped columns may be hidden from the data rows when `ShowGroupedColumns = false` (default behavior).
 3. The last visible column may not be the last column in the `Columns` collection, because grouped or hidden columns must be excluded from the width calculation.
