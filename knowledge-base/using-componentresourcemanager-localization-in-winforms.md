@@ -35,7 +35,7 @@ It is important to distinguish between two distinct localization layers:
 
 ## Solution
 
-### Localizing forms at design time
+### Localizing Forms at Design Time
 
 To localize a form at design time using standard `.resx` resources:
 
@@ -45,7 +45,7 @@ To localize a form at design time using standard `.resx` resources:
 4. Update the properties of your Telerik controls (for example, set the `Text` of a `RadButton` or `RadLabel` to German text, or adjust column header texts).
 5. Visual Studio creates a dedicated resource file (such as `MyForm.de.resx`) and generates code in `InitializeComponent()` using `ComponentResourceManager.ApplyResources()` to apply the localized values based on `Thread.CurrentThread.CurrentUICulture`.
 
-### 2. Runtime Language Switching
+### Runtime Language Switching
 
 When an application changes culture at runtime without closing and recreating the form, you can re-apply resources by calling `resources.ApplyResources()` on the form and its controls.
 
