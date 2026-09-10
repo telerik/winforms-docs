@@ -26,3 +26,7 @@ The resx files of the Form are also used when the **Localizable** property of th
 ## Solution
 
 Store all manually defined strings (or custom resources) in the application resources. By default, this file is **Resources.resx** and is located in the **Properties** folder in your application.
+
+## See Also
+
+* [Using ComponentResourceManager Localization with Telerik UI for WinForms]({%slug using-componentresourcemanager-localization-in-winforms%})
