@@ -25,7 +25,7 @@ This approach provides a viewer-style presentation of Markdown source text in Ra
 
 ## Solution
 
-Create a class that inherits from TaggerBase<ClassificationTag>. The tagger examines the text in each requested snapshot span, matches Markdown syntax with regular expressions, and returns classification tag spans for the matching text.
+Create a class that inherits from `TaggerBase<ClassificationTag>`. The tagger examines the text in each requested snapshot span, matches Markdown syntax with regular expressions, and returns classification tag spans for the matching text.
 
 #### Example 1: Creating a custom MarkdownTagger
 
