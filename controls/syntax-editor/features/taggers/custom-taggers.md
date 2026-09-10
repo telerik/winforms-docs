@@ -37,6 +37,7 @@ To use the tagger you need to register it in the **TaggersRegistry** as you woul
 
 # See Also
 
+* [Create Markdown Tagger in RadSyntaxEditor]({%slug syntaxeditor-create-markdown-tagger%})
 * [How to Achieve Underline Text in RadSyntaxEditor]({%slug underline-text-in-syntax-editor%})
 
 
