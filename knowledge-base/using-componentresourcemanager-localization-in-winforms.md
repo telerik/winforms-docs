@@ -42,7 +42,7 @@ To localize a form at design time using standard `.resx` resources:
 1. Open your form in the Visual Studio designer.
 2. Select the **Form** and set its **Localizable** property to `true` in the **Properties** window.
 3. Select the desired language in the **Language** property (for example, *German*).
-4. Update the properties of your Telerik controls (e.g., set the `Text` of a `RadButton` or `RadLabel` to German text, or adjust column header texts).
+4. Update the properties of your Telerik controls (for example, set the `Text` of a `RadButton` or `RadLabel` to German text, or adjust column header texts).
 5. Visual Studio creates a dedicated resource file (such as `MyForm.de.resx`) and generates code in `InitializeComponent()` using `ComponentResourceManager.ApplyResources()` to apply the localized values based on `Thread.CurrentThread.CurrentUICulture`.
 
 ### 2. Runtime Language Switching
