@@ -20,10 +20,11 @@ res_type: kb
 
 In standard Windows Forms development, setting a Form's **Localizable** property to `true` instructs Visual Studio to generate culture-specific resource (`.resx`) files and serialize control properties through `System.ComponentModel.ComponentResourceManager`.
 
-When working with **Telerik UI for WinForms**, developers often need to understand:
+When working with **Telerik UI for WinForms**, developers often need to understand the following:
+
 1. How `ComponentResourceManager` interacts with Telerik controls.
-2. The difference between `.resx` resource localization and Telerik's `LocalizationProvider` architecture.
-3. How to dynamically change languages at runtime using `ComponentResourceManager.ApplyResources`.
+2. How `.resx` resource localization differs from Telerik `LocalizationProvider` classes.
+3. How to dynamically change languages at runtime by using `ComponentResourceManager.ApplyResources`.
 
 ### ComponentResourceManager vs. LocalizationProvider
 
