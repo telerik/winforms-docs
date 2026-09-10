@@ -85,7 +85,8 @@ public partial class RadForm1 : RadForm
     private void ApplyResourcesToControl(ComponentResourceManager resources, Control control)
     {
         // Apply resources to the control itself
-        resources.ApplyResources(control, control.Name);
+        string resourceKey = control is Form ? "$this" : control.Name;
+        resources.ApplyResources(control, resourceKey);
 
         // Apply resources to Telerik-specific items
         if (control is RadGridView grid)
