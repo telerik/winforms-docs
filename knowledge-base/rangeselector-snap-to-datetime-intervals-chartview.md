@@ -1,6 +1,6 @@
 ---
 title: How to Snap RangeSelector to Date-Time Intervals in RadChartView
-description: Learn how to simulate a snap mode in RadRangeSelector integrated with RadChartView to round the selected range to discrete date-time intervals such as days or hours.
+description: Learn how to snap RadRangeSelector selections to fixed date-time intervals (days or hours) when integrated with RadChartView.
 components: ["rangeselector", "chartview"]
 type: how-to
 page_title: How to Snap RangeSelector to Date-Time Intervals in RadChartView
