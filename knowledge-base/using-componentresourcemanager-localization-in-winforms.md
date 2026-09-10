@@ -35,7 +35,7 @@ It is important to distinguish between two distinct localization layers:
 
 ## Solution
 
-### 1. Design-Time Form Localization
+### Localizing forms at design time
 
 To localize a form at design time using standard `.resx` resources:
 
