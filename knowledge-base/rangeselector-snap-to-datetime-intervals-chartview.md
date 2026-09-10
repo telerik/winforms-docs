@@ -33,8 +33,7 @@ To implement snapping to date-time intervals:
 1. Associate `RadRangeSelector` with `RadChartView` by setting `radRangeSelector1.AssociatedControl = this.radChartView1` after data binding is complete.
 2. Set `UpdateMode = UpdateMode.Deferred` on the range selector. Deferred update mode calculates and applies the final range when the user releases the thumb, avoiding UI jitter during dragging.
 3. Retrieve the minimum and maximum dates represented on the chart's `DateTimeContinuousAxis` (or from your underlying data source).
-4. Calculate the percentage step corresponding to your target `TimeSpan` interval:
-   $$\text{stepPercentage} = \frac{\text{snapInterval.Ticks}}{\text{totalDurationTicks}} \times 100$$
+4. Calculate the percentage step corresponding to your target `TimeSpan` interval: `stepPercentage = (snapInterval.Ticks / totalDurationTicks) * 100`.
 5. In the `SelectionChanged` event handler, round the current `StartRange` and `EndRange` to the nearest multiple of `stepPercentage` and update the control using a re-entrancy guard flag.
 
 ````C#
