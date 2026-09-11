@@ -1,6 +1,6 @@
 ---
-title: Resolve Telerik.Licensing.Runtime Version Mismatches in .NET Framework Apps
-description: Configure binding redirects when a .NET Framework application uses a different Telerik.Licensing.Runtime version than the Telerik UI for WinForms assemblies expect.
+title: Resolve Telerik.Licensing.Runtime Binding Redirect Errors in .NET Framework
+description: Add a binding redirect when a .NET Framework app uses a different Telerik.Licensing.Runtime version than the Telerik UI for WinForms assemblies.
 components: ["licensing"]
 page_title: Resolve Telerik.Licensing.Runtime Binding Redirect Errors in .NET Framework
 type: troubleshooting
