@@ -13,16 +13,16 @@ res_type: kb
 ## Environment
 
 <table>
-<tbody>
-<tr>
-<td>Product Version</td>
-<td>2025.1.211 and later</td>
-</tr>
-<tr>
-<td>Product</td>
-<td>UI for WinForms</td>
-</tr>
-</tbody>
+	<tbody>
+		<tr>
+			<td>Product Version</td>
+			<td>2025.1.211 and later</td>
+		</tr>
+		<tr>
+			<td>Product</td>
+			<td>UI for WinForms</td>
+		</tr>
+	</tbody>
 </table>
 
 ## Description
