@@ -18,7 +18,7 @@ The following article list Knowledge Base articles related to the License mechan
 |----|
 |[Adding Your License Key to CI/CD Platforms as a Code Snippet]({%slug add-license-as-snippet-ci-cd%})|
 |[Could not Find Assembly Telerik.Licensing.Runtime Compile Error After Upgrade]({%slug kb-installation-missing-licensing-assembly%})|
-|[Could not Load File Or Assembly Telerik.Licensing.Runtime, Version 1.4.6.0 Runtime Error]({%slug kb-installation-cannot-load-licensing-assembly%})|
+|[Resolve Telerik.Licensing.Runtime Binding Redirect Errors in .NET Framework]({%slug kb-installation-cannot-load-licensing-assembly%})|
 |[No License Key Found Warning in Visual Studio 2019 When License Key is Present]({%slug kb-installation-missing-license-vs-2019%})|
 |[Resolving TelerikLicense.vb Build Error for Telerik UI for WinForms 2025 Q1 License Key]({%slug resolve-telerik-license-vb-error%})|
 |[Set Your License Key in OpenEdge Project]({%slug set-up-license-key-openedge%})|
