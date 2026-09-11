@@ -1,40 +1,74 @@
 ---
-title: Could not Load File Or Assembly Telerik.Licensing.Runtime, Version 1.4.6.0 Runtime Error
-description: FileNotFoundException thrown at runtime when the version of the referenced Telerik.Licensing.Runtime dll is mismatched.
+title: Resolve Telerik.Licensing.Runtime Version Mismatches in .NET Framework Apps
+description: Configure binding redirects when a .NET Framework application uses a different Telerik.Licensing.Runtime version than the Telerik UI for WinForms assemblies expect.
 components: ["licensing"]
-page_title: FileNotFoundException Exception Cannot Load Telerik.Licensing.Runtime Assembly
+page_title: Resolve Telerik.Licensing.Runtime Binding Redirect Errors in .NET Framework
 type: troubleshooting
 slug: kb-installation-cannot-load-licensing-assembly
 position: 0
-tags: licensing, installation, telerik, licensing, license, key, load, exception
+tags: licensing, telerik.licensing.runtime, binding redirect, .net framework, assembly version
 res_type: kb
 ---
 
 ## Environment
 
 <table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>2025.1.211</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>UI for WinForms</td>
-		</tr>
-	</tbody>
+<tbody>
+<tr>
+<td>Product Version</td>
+<td>2025.1.211 and later</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>UI for WinForms</td>
+</tr>
+</tbody>
 </table>
 
 ## Description
 
-`FileNotFoundException` is thrown at runtime, which states that the `Telerik.Licensing.Runtime` assembly cannot be loaded. The error message is something like this:
+A .NET Framework application can build successfully but throw a `FileLoadException` at runtime when the referenced `Telerik.Licensing.Runtime` assembly version differs from the version expected by the Telerik UI for WinForms assemblies. This configuration is not required for .NET projects because .NET resolves this dependency automatically.
 
-`FileNotFoundException: Could not load file or assembly 'Telerik.Licensing.Runtime, Version=1.4.6.0, Culture=neutral, PublicKeyToken=tokenhere'. The system cannot find the file specified.`
+This may occur after you upgrade to 2025 Q1 or later, which use the [Telerik licensing mechanism]({%slug license-key%}) and require a reference to `Telerik.Licensing.Runtime`.
 
-This may happen if you upgrade to 2025 Q1 from an older version. With 2025 Q1, a new [licensing mechanism]({%slug license-key%}) was introduced, which requires you to reference the `Telerik.Licensing.Runtime` dll.
+## Cause
+
+The .NET Framework loader uses the assembly version recorded in the Telerik UI for WinForms assembly reference. Installing a newer `Telerik.Licensing` NuGet package or manually referencing a newer `Telerik.Licensing.Runtime.dll` changes the available licensing version, but it does not automatically make that newer version satisfy the original assembly reference when binding redirects are disabled or absent. Modern .NET projects handle this dependency resolution without an application configuration binding redirect.
 
 ## Solution
 
-The exception means that the version of the `Telerik.Licensing.Runtime` dll mismatches the version of the version expected by the other Telerik UI for WinForms dlls. This may happen if the project references the Telerik dlls containing the component/controls from one version and the `Telerik.Licensing.Runtime` dll from another version of Telerik UI for WinForms.
+Add a binding-redirect to your project when using a different `Telerik.Licensing` package version in a .NET Framework application. Enable automatic binding-redirect generation. This adds the required redirect to the generated application configuration file.
 
-To resolve the problem, make sure that all Telerik controls are referenced from the same installation place, thus using the same release version.
+1. Remove `<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>` from the project file, or set it to `true`:
+
+```XML
+<PropertyGroup>
+  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+</PropertyGroup>
+```
+
+2. Clean and rebuild the application, then verify that the generated `<application>.exe.config` file contains a binding redirect for `Telerik.Licensing.Runtime` to the version installed in the project.
+
+For .NET Framework applications that manage redirects manually, add the redirect to the application configuration file. This example redirects requests through version `1.9.2.0` to the `Telerik.Licensing.Runtime` version installed in the application:
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Telerik.Licensing.Runtime" publicKeyToken="98bb5b04e55c09ef" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.9.2.0" newVersion="1.9.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>
+```
+
+Set `oldVersion` and `newVersion` to the `Telerik.Licensing.Runtime` version installed in your application. This binding redirect is only required for .NET Framework projects. For more information, see the [.NET Framework binding redirect guidance](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
+
+## See Also
+
+* [Install Using NuGet Packages]({%slug winforms/nuget%})
+* [Set Up Your License Key]({%slug license-key%})
+* [How the Runtime Locates Assemblies](https://learn.microsoft.com/en-us/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
