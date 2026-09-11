@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-A .NET Framework application can build successfully but throw a `FileLoadException` at runtime when the referenced `Telerik.Licensing.Runtime` assembly version differs from the version expected by the Telerik UI for WinForms assemblies. This configuration is not required for .NET projects because .NET resolves this dependency automatically.
+A .NET Framework application can build successfully but throw a `FileLoadException` at runtime when the referenced `Telerik.Licensing.Runtime` assembly version differs from the version expected by the Telerik UI for WinForms assemblies. Modern .NET applications do not require this configuration because the runtime resolves this dependency without application configuration binding redirects.
 
 This may occur after you upgrade to 2025 Q1 or later, which use the [Telerik licensing mechanism]({%slug license-key%}) and require a reference to `Telerik.Licensing.Runtime`.
 
