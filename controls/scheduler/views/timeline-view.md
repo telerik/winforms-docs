@@ -157,4 +157,5 @@ The following picture demonstrates the result of setting the header sizes and re
 * [Grouping by Resources]({%slug winforms/scheduler/views/grouping-by-resources%})
 * [Exact Time Rendering]({%slug winforms/scheduler/views/exact-time-rendering%})
 * [Custom Time Scale]({%slug scheduler-custom-time-scale%})
+* [Simulate Hiding Weekends in Timeline View]({%slug scheduler-simulate-hiding-weekends-timeline-view%})
 
