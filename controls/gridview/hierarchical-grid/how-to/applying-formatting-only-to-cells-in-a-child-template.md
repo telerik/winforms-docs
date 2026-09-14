@@ -10,27 +10,58 @@ position: 3
 previous_url: gridview-hirarchical-grid-how-to-applying-formatting-only-to-cells-in-a-child-template
 ---
 
-# Applying formatting only to cells in a child template
+# Apply Formatting Only To Cells in a Child Template
 
-If the parent of the *view template* is not null, the cell element is located in a child template. 
+In a hierarchical RadGridView, a cell belongs to a child template when its `ViewTemplate.Parent` property is not `null`. Use this condition in a `ViewCellFormatting` event to limit visual changes to child templates only.
 
-### Example 1
+### Example 1: Format Data Cells in Child Templates
 
-This idea is used in the code snippet below so that the BackColor of the cells located only in the child templates is changed:
-
-#### Changing the cells BackColor for cells located in a child template 
+Use the following example to change the `BackColor` of data cells in child templates only:
 
 <snippet id='gridview-howto-example1-cs' />
 <snippet id='gridview-howto1-example1-vb' />
 
-###  Example 2
+### Example 2: Set the Header Height in a Child Template
 
-You can use the following code snippet to change the header height of the first level child template:
-
-#### Changing the child template header row height 
+Use the following example to change the header height of the first-level child template:
 
 <snippet id='gridview-howto-example2-cs' />
 <snippet id='gridview-howto1-example2-vb' />
+
+### Example 3: Highlight Header Cells in Child Templates
+
+Use the following example to change the background color of header cells and highlight them only in child templates.
+
+````C#
+private void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
+{
+    if (e.CellElement is GridHeaderCellElement && e.CellElement.ViewTemplate.Parent != null)
+    {
+        e.CellElement.DrawFill = true;
+        e.CellElement.GradientStyle = GradientStyles.Solid;
+        e.CellElement.BackColor = Color.LightYellow;
+    }
+    else if (e.CellElement is GridHeaderCellElement)
+    {
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local);
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local);
+    }
+}
+````
+````VB.NET
+Private Sub RadGridView1_ViewCellFormatting(ByVal sender As Object, ByVal e As CellFormattingEventArgs)
+    If TypeOf e.CellElement Is GridHeaderCellElement AndAlso e.CellElement.ViewTemplate.Parent IsNot Nothing Then
+        e.CellElement.DrawFill = True
+        e.CellElement.GradientStyle = GradientStyles.Solid
+        e.CellElement.BackColor = Color.LightYellow
+    ElseIf TypeOf e.CellElement Is GridHeaderCellElement Then
+        e.CellElement.ResetValue(LightVisualElement.BackColorProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.GradientStyleProperty, ValueResetFlags.Local)
+        e.CellElement.ResetValue(LightVisualElement.DrawFillProperty, ValueResetFlags.Local)
+    End If
+End Sub
+````
 
 # See Also
 * [Accessing Child Templates]({%slug winforms/gridview/hierarchical-grid/how-to/accessing-child-templates%})
