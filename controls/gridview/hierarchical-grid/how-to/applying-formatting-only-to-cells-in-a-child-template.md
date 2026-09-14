@@ -10,33 +10,27 @@ position: 3
 previous_url: gridview-hirarchical-grid-how-to-applying-formatting-only-to-cells-in-a-child-template
 ---
 
-# Applying formatting only to cells in a child template
+# Apply Formatting Only To Cells in a Child Template
 
-If the parent of the *view template* is not null, the cell element is located in a child template. 
+In a hierarchical RadGridView, a cell belongs to a child template when its `ViewTemplate.Parent` property is not `null`. Use this condition in a `ViewCellFormatting` event to limit visual changes to child templates only.
 
-### Example 1
+### Example 1: Format Data Cells in Child Templates
 
-This idea is used in the code snippet below so that the BackColor of the cells located only in the child templates is changed:
-
-#### Changing the cells BackColor for cells located in a child template 
+Use the following example to change the `BackColor` of data cells in child templates only:
 
 <snippet id='gridview-howto-example1-cs' />
 <snippet id='gridview-howto1-example1-vb' />
 
-###  Example 2
+### Example 2: Set the Header Height in a Child Template
 
-You can use the following code snippet to change the header height of the first level child template:
-
-#### Changing the child template header row height 
+Use the following example to change the header height of the first-level child template:
 
 <snippet id='gridview-howto-example2-cs' />
 <snippet id='gridview-howto1-example2-vb' />
 
-### Example 3
+### Example 3: Highlight Header Cells in Child Templates
 
-To change the background color of **header** cells belonging only to child templates, subscribe to (or handle via the designer) the `ViewCellFormatting` event:
-
-#### Highlighting Child Header Cells
+Use the following example to change the background color of header cells and highlight them only in child templates.
 
 ````C#
 private void radGridView1_ViewCellFormatting(object sender, CellFormattingEventArgs e)
