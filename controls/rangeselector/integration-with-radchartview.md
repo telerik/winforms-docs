@@ -98,6 +98,7 @@ There is two-way synchronization between the pan and zoom functionality of RadCh
 
 ## See Also
 
+* [How to Snap RangeSelector to Date-Time Intervals in RadChartView]({%slug rangeselector-snap-to-datetime-intervals-chartview%})
 * [Design Time]({%slug winforms/rangeselector/design-time%})
 * [Structure]({%slug winforms/rangeselector/structure%})
 * [Getting Started]({%slug winforms/rangeselector/getting-started%})
