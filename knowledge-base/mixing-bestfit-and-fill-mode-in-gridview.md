@@ -118,6 +118,7 @@ End Sub
 
 # See Also
 
+* [Extend the Last Visible Column to Fill the Grid Width When Grouped]({%slug extend-last-visible-column-fill-width-grouped-gridview%})
 * [Resizing columns programmatically]({%slug winforms/gridview/columns/resizing-columns-programatically%})  
 
 
