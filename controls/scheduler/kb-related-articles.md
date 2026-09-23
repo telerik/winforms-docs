@@ -31,6 +31,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to order appointments in RadScheduler's Month View]({%slug scheduler-month-view-comparer%})|
 |[How to Save Custom Backgrounds in RadScheduler when Exporting to ICal]({%slug save-custom-backgrounds-in-scheduler-when-exporting-to-ical%})|
 |[How to Show Columns in Resource Headers]({%slug resource-columns-in-radscheduler%})|
+|[How to Simulate Hiding Weekends in Timeline View of RadScheduler]({%slug scheduler-simulate-hiding-weekends-timeline-view%})|
 |[How to Simulate Outlook-like Multiple Categories in Scheduler's Appointments]({%slug outlook-like-multiple-categories-scheduler-appointments%})|
 |[Minutely Recurrence Pattern in RadScheduler]({%slug scheduler-minutely-recurrence-pattern%})|
 |[RadScheduler with multiple resources]({%slug radscheduler-with-multiple-resources%})|
