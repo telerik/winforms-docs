@@ -2,7 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms ToolbarForm
 description: Learn what are the design time options of the WinForms ToolbarForm.  
-components: ["forms,dialogs,templates"]
+components: ["toolbarform"]
 slug: radtoolbarform-design-time
 tags: radtoolbarform
 published: True

@@ -2,7 +2,7 @@
 title: Drag and Drop
 page_title: Drag and Drop - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
-components: ["forms,dialogs,templates"]
+components: ["tabbedform"]
 slug: radtabbedform-drag-drop
 tags: radtabbedform
 published: True

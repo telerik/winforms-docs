@@ -2,7 +2,7 @@
 title: Tab Settings
 page_title: Tab Settings - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
-components: ["forms,dialogs,templates"]
+components: ["tabbedform"]
 slug: tab-settings
 tags: radtabbedform, settings
 published: True

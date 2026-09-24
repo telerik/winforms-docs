@@ -2,7 +2,7 @@
 title: Customizing ShapedForm
 page_title: Customizing ShapedForm - UI for WinForms Documentation
 description: The ShapedForm control allows you to design and display a Windows form with any conceivable shape.
-components: ["forms,dialogs,templates"]
+components: ["shapedform"]
 slug: winforms/forms-and-dialogs/shapedform/customizing-shapedform
 tags: customizing,shapedform
 published: True

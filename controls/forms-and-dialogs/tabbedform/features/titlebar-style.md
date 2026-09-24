@@ -2,7 +2,7 @@
 title: Title Bar Style
 page_title: Title Bar Style - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
-components: ["forms,dialogs,templates"]
+components: ["tabbedform"]
 slug: radtabbedform-titlebar-styles
 tags: radtabbedform
 published: True

@@ -2,7 +2,7 @@
 title: Structure
 page_title: Structure - WinForms ColorDialog
 description: Get familiar with the internal elements structure of the WinForms ColorDialog. 
-components: ["forms,dialogs,templates"]
+components: ["colordialog"]
 slug: winforms/forms-and-dialogs/colordialog/structure
 tags: colordialog
 published: True
