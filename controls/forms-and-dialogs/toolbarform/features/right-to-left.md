@@ -2,7 +2,7 @@
 title: Right-To-Left
 page_title: Right-To-Left - WinForms ToolbarForm
 description: Learn how to show the content of your WinForms ToolbarForm in a right-to-left direction.
-components: ["forms,dialogs,templates"]
+components: ["toolbarform"]
 slug: right-to-left
 tags: radtoolbarform, rtl, right, left
 published: True

@@ -2,7 +2,7 @@
 title: Item Alignment
 page_title: Item Alignment - WinForms ToolbarForm
 description: WinForms ToolbarForm allows to align its items in the title bar.
-components: ["forms,dialogs,templates"]
+components: ["toolbarform"]
 slug: radtoolbarform-features-item-alignment
 tags: radtoolbarform,alignment
 published: True

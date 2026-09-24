@@ -2,7 +2,7 @@
 title: Themes
 page_title: Themes - RadStatusStrip
 description: RadStatusStrip provides a status area that can be composed of any number of RadElement types - buttons, repeat buttons, image buttons, labels, panels, progress bars and separators.
-components: ["forms,dialogs,templates"]
+components: ["statusstrip"]
 slug: winforms/forms-and-dialogs/statusstrip/themes
 tags: styling
 published: True

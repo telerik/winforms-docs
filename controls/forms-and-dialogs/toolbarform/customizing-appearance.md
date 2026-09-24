@@ -2,7 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - WinForms ToolbarForm
 description: Learn how to customize the style of the WinForms ToolbarForm.
-components: ["forms,dialogs,templates"]
+components: ["toolbarform"]
 slug: radtoolbarform-customizing-appearance
 tags: radtoolbarform, appearance, customize, style, change
 published: True

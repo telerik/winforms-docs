@@ -2,7 +2,7 @@
 title: Themes
 page_title: Themes - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
-components: ["forms,dialogs,templates"]
+components: ["tabbedform"]
 slug: radtabbedform-themes
 tags: radtabbedform, themes
 published: True

@@ -2,7 +2,7 @@
 title: Right-To-Left Support
 page_title: Right-To-Left Support - RadForm
 description: The RadForm control is an extended standard Windows Form that fully supports the Telerik Presentation Framework (TPF) and the Telerik's theming mechanism.
-components: ["forms,dialogs,templates"]
+components: ["form"]
 slug: winforms/forms-and-dialogs/form/right-to-left-support
 tags: right-to-left,support
 published: True

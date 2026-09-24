@@ -2,7 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadTitleBar
 description: UI Automation Support (UI Accessibility) for RadTitleBar.   
-components: ["forms,dialogs,templates"]
+components: ["titlebar"]
 slug: titlebar-ui-automation
 tags: titlebar,ui,automation
 published: True

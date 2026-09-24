@@ -2,7 +2,7 @@
 title: Detect Theme Change
 page_title: Detect Theme Change - WinForms RadForm
 description: Learn how to detect when the OS theme is changed.
-components: ["forms,dialogs,templates"]
+components: ["form"]
 slug: form-detect-theme-change
 tags: form
 published: True
