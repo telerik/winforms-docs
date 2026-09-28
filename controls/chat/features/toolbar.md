@@ -7,7 +7,6 @@ slug: winforms/chat/toolbar
 tags: chat
 published: True
 position: 4
-previous_url: controls/chat/toolbar
 ---
 
 # Toolbar 
