@@ -1,6 +1,7 @@
 ---
 title: Host RadControls for WinForms in Internet Explorer
 description: Host RadControls for WinForms in Internet Explorer. Check it now!
+components: ["general"]
 type: how-to
 page_title: Host RadControls for WinForms in Internet Explorer
 slug: host-radcontrols-for-winforms-in-internet-explorer

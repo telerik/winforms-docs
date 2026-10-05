@@ -1,6 +1,7 @@
 ---
 title: Customize Appointment Backgrounds and Statuses in RadScheduler
 description: This article shows how you can customize appointment backgrounds and statuses in RadScheduler.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to customize appointment backgrounds and statuses in RadScheduler
 slug: customize-appointment-backgrounds-and-statuses

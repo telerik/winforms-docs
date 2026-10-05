@@ -1,6 +1,7 @@
 ---
 title: RadChartView Drag and Drop
 description: RadChartView Drag and Drop. Check it now!
+components: ["chartview"]
 type: how-to
 page_title: RadChartView Drag and Drop
 slug: radchartview-drag-and-drop

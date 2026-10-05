@@ -2,6 +2,7 @@
 title: Parameters
 page_title: Parameters - WinForms MessageBox
 description: Get familiar with the parameters for showing a WinForms MessageBox.
+components: ["messagebox"]
 slug: winforms/forms-and-dialogs/messagebox/parameters
 tags: parameters
 published: True

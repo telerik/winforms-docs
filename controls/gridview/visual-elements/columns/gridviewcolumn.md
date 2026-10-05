@@ -2,6 +2,7 @@
 title: GridViewColumn
 page_title: GridViewColumn - WinForms GridView Control
 description: GridViewColumn is the base class for all types of WinForms GridView columns, including GridViewDataColumn.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewcolumn
 tags: gridviewcolumn
 published: True

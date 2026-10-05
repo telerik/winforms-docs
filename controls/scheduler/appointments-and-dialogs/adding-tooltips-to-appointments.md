@@ -2,6 +2,7 @@
 title: Adding Tooltips to Appointments
 page_title: Adding Tooltips to Appointments - RadScheduler
 description: You can create and associate a tooltip to an appointment in RadScheduler by setting the ToolTipText property to a string.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appointments-and-dialogs/adding-tooltips-to-appointments
 tags: adding,tooltips,to,appointments
 published: True

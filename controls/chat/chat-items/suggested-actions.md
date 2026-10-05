@@ -2,6 +2,7 @@
 title: Suggested Actions
 page_title: Suggested Actions - WinForms Chat Control
 description: WinForms Chat offers different suggested actions to present the user a selection of action choices. 
+components: ["chat"]
 slug: winforms/chat/chat-items/suggested-actions
 tags: chat, actions
 published: True

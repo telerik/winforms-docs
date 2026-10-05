@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Button Control
 description: RadButton uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
+components: ["buttons"]
 slug: winforms/buttons/button/structure
 tags: button, structure
 published: True

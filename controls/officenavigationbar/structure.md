@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - RadOfficeNavigationBar
 description: Get familiar with the internal elements structure of the WinForms OfficeNavigationBar.  
+components: ["officenavigationbar"]
 slug: officenavigationbar-structure
 tags: officenavigationbar, structure, elements, internal
 published: True

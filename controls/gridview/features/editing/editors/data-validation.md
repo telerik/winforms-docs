@@ -2,6 +2,7 @@
 title: Data validation
 page_title: Data validation - WinForms GridView Control
 description: WinForms GridView offers validation events to indicate that the value is not valid or prevent the user from leaving the cell until valid input is entered.
+components: ["gridview"]
 slug: winforms/gridview/editors/data-validation
 tags: data,validation
 published: True

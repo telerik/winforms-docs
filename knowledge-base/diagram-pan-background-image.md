@@ -1,6 +1,7 @@
 ---
 title: How to Achieve Background Image in RadDiagram that Supports Pan Functionality  
 description: This tutorial demonstrates how to achieve a background image in RadDiagram that can be panned.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 type: how-to
 page_title: How to Achieve Pannable Background Image in RadDiagram  
 slug: diagram-pan-background-image

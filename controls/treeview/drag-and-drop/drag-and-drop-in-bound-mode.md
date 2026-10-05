@@ -2,6 +2,7 @@
 title: Drag and Drop in bound mode
 page_title: Drag and Drop in bound mode - WinForms TreeView Control
 description: Learn how you can handle a drag an drop operation when the WinForms TreeView control is bound to data source.
+components: ["treeview"]
 slug: winforms/treeview/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True

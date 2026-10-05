@@ -1,6 +1,7 @@
 ---
 title: Barcode Column in RadGridView
 description: Learn how to achieve a Barcode Column in RadGridView
+components: ["barcodeview"]
 type: how-to
 page_title: How to Achieve Barcode Column in RadGridView
 slug: barcode-column-in-gridview

@@ -1,6 +1,7 @@
 ---
 title: Reversed Order of Chat Messages
 description: Learn how to reverse the messages in the WinForms Conversational UI.
+components: ["chat"]
 type: how-to
 page_title: Reversed Order of Chat Messages
 slug: chat-messages-in-reversed-order

@@ -1,6 +1,7 @@
 ---
 title: How to Scroll the Target Grid while Dragging a Row
 description: Learn how to scroll the target WinForms GridView while dragging a row from another RadGridView. 
+components: ["gridview"]
 type: how-to
 page_title: How to Scroll the Target Grid while Dragging a Row
 slug: scroll-target-grid-while-dragging-a-row

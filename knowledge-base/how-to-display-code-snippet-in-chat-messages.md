@@ -1,6 +1,7 @@
 ---
 title: How to Display Code Snippets in Chat Messages
 description: This article demonstrates how to display code snippets in chat messages
+components: ["chat"]
 type: how-to
 page_title: How to Display Code Snippets in Chat Messages
 slug: how-to-display-code-snippet-in-chat-messages

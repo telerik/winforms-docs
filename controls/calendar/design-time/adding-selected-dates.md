@@ -2,6 +2,7 @@
 title: Adding Selected Dates
 page_title: Adding Selected Dates - WinForms Calendar Control
 description: Learn how to add selected dates in WinForms Calendar.
+components: ["calendar"]
 slug: winforms/calendar/design-time-support/adding-selected-dates
 tags: adding,selected,dates
 published: True
@@ -12,7 +13,7 @@ previous_url: calendar-design-time-support-adding-selected-dates
 # Adding Selected Dates
 
 
-Click the ellipses in the `Property Window` to edit the __SelecteDates DateTime__ collection at design-time. 
+Click the ellipses in the `Property Window` to edit the __SelectedDates DateTime__ collection at design-time. 
 
 * Use the `Add` button to add a `DateTime` value to the collection.
             

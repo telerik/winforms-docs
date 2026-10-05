@@ -2,6 +2,7 @@
 title: IME Support
 page_title: IME Support - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+components: ["richtexteditor"]
 slug: richtexteditor-features-ime-support
 tags: ime, support
 published: True

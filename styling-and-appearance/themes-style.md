@@ -2,6 +2,7 @@
 title: Themes Style
 page_title: Themes Style
 description: Get familiar with the design that Telerik UI for WinForms suite offers with its default themes.
+components: ["general"]
 slug: themes-style
 tags: themes, style
 published: True

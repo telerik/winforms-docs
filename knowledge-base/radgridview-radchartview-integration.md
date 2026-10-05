@@ -1,6 +1,7 @@
 ---
 title: RadGridView – RadChartView integration
 description: RadGridView – RadChartView integration. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: RadGridView – RadChartView integration
 slug: radgridview-radchartview-integration

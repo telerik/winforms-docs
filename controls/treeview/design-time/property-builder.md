@@ -2,6 +2,7 @@
 title: Property Builder
 page_title: Property Builder - WinForms TreeView Control
 description: Get familiar with the Property Builder to create the hierarchy at design time in WinForms TreeView.
+components: ["treeview"]
 slug: winforms/treeview/design-time/property-builder
 tags: property,builder
 published: True

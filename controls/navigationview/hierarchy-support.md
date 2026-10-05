@@ -2,6 +2,7 @@
 title: Hierarchy Support
 page_title: Hierarchy Support - Navigation View
 description: RadNavigationView supports defining nested pages to build hierarchy.
+components: ["navigationview"]
 slug: navigation-view-hierarchy-support
 tags: navigation, view, hierarchy, nested
 published: True

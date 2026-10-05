@@ -2,6 +2,7 @@
 title: Margins
 page_title: Margins - WinForms SyntaxEditor Control
 description: WinForms SyntaxEditor control renders its elements on different layers based on the types of tags that are used.   
+components: ["syntaxeditor"]
 slug: syntax-editor-features-margins
 tags: features, margins
 published: True

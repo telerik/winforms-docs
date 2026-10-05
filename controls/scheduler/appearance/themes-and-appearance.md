@@ -2,6 +2,7 @@
 title: Themes and appearance
 page_title: Themes and appearance - WinForms Scheduler Control
 description: WinForms Scheduler is shipped with a rich set of themes that allow you to easily build slick interfaces with the look-and-feel of Windows, Office, Outlook, etc.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appearance/themes-and-appearance
 tags: themes,and,appearance
 published: True

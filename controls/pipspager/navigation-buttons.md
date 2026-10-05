@@ -2,6 +2,7 @@
 title: Navigation Buttons
 page_title: Navigation Buttons - WinForms PipsPager Control
 description: Check our &quot;Navigation Buttons&quot; documentation article for the RadPipsPager control.
+components: ["pipspager"]
 slug: pipspager-navigation-buttons
 tags: pipspager, buttons
 published: True

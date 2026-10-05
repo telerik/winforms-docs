@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms RangeSelector Control
 description: Learn the most important properties for changing the RadRangeSelector's appearance and behavior.
+components: ["rangeselector"]
 slug: winforms/rangeselector/properties-and-events
 tags: properties,and,events
 published: True
@@ -128,6 +129,7 @@ There are several events that you will find useful in the context of RadRangeSel
 
 ## See Also
 
+* [How to Snap RangeSelector to Date-Time Intervals in RadChartView]({%slug rangeselector-snap-to-datetime-intervals-chartview%})
 * [Design Time]({%slug winforms/rangeselector/design-time%})
 * [Structure]({%slug winforms/rangeselector/structure%})
 * [Getting Started]({%slug winforms/rangeselector/getting-started%})

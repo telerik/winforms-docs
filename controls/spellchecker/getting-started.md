@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms SpellChecker Control
 description: WinForms SpellChecker enables developers to add multilingual spell checking capabilities to their WinForms applications.
+components: ["spellchecker"]
 slug: winforms/spellchecker/getting-started
 tags: getting,started
 published: True

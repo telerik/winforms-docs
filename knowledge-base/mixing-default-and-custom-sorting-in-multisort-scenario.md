@@ -1,6 +1,7 @@
 ---
 title: Mixing default and custom sorting in multisort scenario
 description: Mixing default and custom sorting in multisort scenario. Check it now!
+components: ["general"]
 type: how-to
 page_title: Mixing default and custom sorting in multisort scenario
 slug: mixing-default-and-custom-sorting-in-multisort-scenario

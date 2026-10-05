@@ -1,6 +1,7 @@
 ---
 title: How to display screen tip on RadGridView using BackgroundWorker
 description: This KB article demonstrates how to display async screentip in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: How to display async screentip in RadGridView
 slug: gridview-async-screentip

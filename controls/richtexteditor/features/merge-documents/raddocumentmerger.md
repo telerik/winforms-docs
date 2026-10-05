@@ -2,6 +2,7 @@
 title: RadDocumentMerger
 page_title: RadDocumentMerger - RadRichTextEditor
 description: RadRichTextEditor is a control that is able to display and edit rich-text content including formatted text arranged in pages, paragraphs, spans (runs), tables, etc. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/features/merge-documents/raddocumentmerger
 tags: events
 published: True

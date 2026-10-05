@@ -1,6 +1,7 @@
 ---
 title: How to reorder rows in bound RadGridView
 description: How to achieve drag and drop functionality in bound grid
+components: ["gridview"]
 type: how-to
 page_title: How to reorder rows in bound RadGridView
 slug: gridview-drag-drop-bound-mode

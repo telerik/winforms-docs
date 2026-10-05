@@ -1,6 +1,7 @@
 ---
 title: Changing Expander Icon Color When the RadTreeView is Disabled UI for WinForms
 description: Learn how to change the expander icon color in the disabled RadTreeView for UI for WinForms.
+components: ["treeview"]
 type: how-to
 page_title: Adjusting Expander Icon Color in Disabled RadTreeView for WinForms
 meta_title: Adjusting Expander Icon Color in Disabled RadTreeView for WinForms

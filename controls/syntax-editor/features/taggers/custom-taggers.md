@@ -2,6 +2,7 @@
 title: Custom Taggers
 page_title: Custom Taggers - RadSyntaxEditor
 description: Taggers are used to identify spans of text and assign them a specific tag if they match a specific condition.     
+components: ["syntaxeditor"]
 slug: syntax-editor-custom-taggers
 tags: features, custom, taggers
 published: True
@@ -36,6 +37,7 @@ To use the tagger you need to register it in the **TaggersRegistry** as you woul
 
 # See Also
 
+* [Create Markdown Tagger in RadSyntaxEditor]({%slug syntaxeditor-create-markdown-tagger%})
 * [How to Achieve Underline Text in RadSyntaxEditor]({%slug underline-text-in-syntax-editor%})
 
 

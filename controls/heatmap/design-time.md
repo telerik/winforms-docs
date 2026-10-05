@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms HeatMap Control
 description: Check our &quot;Design Time&quot; documentation article for the RadHeatMap WinForms control.
+components: ["heatmap"]
 slug: heatmap-desing-time
 tags: heatmap, design
 published: True

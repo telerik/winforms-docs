@@ -2,6 +2,7 @@
 title: HTML-like Text Formatting
 page_title: HTML-like Text Formatting - Telerik Presentation Framework
 description: Learn how to enable HTML-like text formatting in Telerik Presentation Framework, use supported tags, and add formatted text, links, and images.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/html-like-text-formatting
 tags: html-like,text,formatting
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Customizing AppointmentElement Text in RadScheduler
 description: Learn how to customize the background and text colors of AppointmentElement objects in RadScheduler for WinForms.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to Customize AppointmentElement Text in RadScheduler
 slug: scheduler-customize-appointmentelement-text

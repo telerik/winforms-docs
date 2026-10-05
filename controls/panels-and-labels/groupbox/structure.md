@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms GroupBox Control
 description: Get familiar with the inner structure and organization of the elements which build the WinForms GroupBox control.
+components: ["groupbox"]
 slug: winforms/panels-and-labels/groupbox/structure
 tags: radgroupbox,structure
 published: True

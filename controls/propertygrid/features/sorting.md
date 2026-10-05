@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting - RadPropertyGrid
 description: The sorting capabilities can be controlled either by using the predefined sorting options in the PropertySort property together with the SortOrder property
+components: ["propertygrid"]
 slug: winforms/propertygrid/features/sorting
 tags: sorting
 published: True

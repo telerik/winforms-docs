@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms CheckedDropDownList Control
 description: Learn the inner structure and organization of the elements which build the WinForms CheckedDropDownList control.
+components: ["checkeddropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/control-element-structure
 tags: control,element,structure
 published: True

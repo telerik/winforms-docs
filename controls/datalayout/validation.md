@@ -2,6 +2,7 @@
 title: Validation
 page_title: Validation - WinForms DataLayout Control
 description: Learn how one can validate the user input.
+components: ["datalayout"]
 slug: winforms/datalayout/validation
 tags: validation
 published: True

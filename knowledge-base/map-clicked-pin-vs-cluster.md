@@ -1,6 +1,7 @@
 ---
 title: How to Determine that a Single Pin or a Cluster Having Multiple Pins is Clicked
 description: Determine whether a Single Pin or a Cluster Having Multiple Pins is Clicked.
+components: ["map"]
 type: how-to 
 page_title: How to Determine that a single pin or a cluster having multiple pins is clicked
 slug: map-clicked-pin-vs-cluster

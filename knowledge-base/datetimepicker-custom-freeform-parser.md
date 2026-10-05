@@ -1,6 +1,7 @@
 ---
 title: Implementing a Custom Freeform Date Parser in RadDateTimePicker
 description: Learn how to extend the freeform parsing capabilities of RadDateTimePicker by implementing a custom parsing logic.
+components: ["datetimepicker"]
 type: how-to
 page_title: Custom Freeform Date Parsing for RadDateTimePicker in UI for WinForms
 meta_title: Custom Freeform Date Parsing for RadDateTimePicker in UI for WinForms

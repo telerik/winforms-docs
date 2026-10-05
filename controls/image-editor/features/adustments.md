@@ -2,6 +2,7 @@
 title: Adjustments
 page_title: Adjustments - WinForms ImageEditor Control
 description: WinForms ImageEditor supports image adjustments like Hue, Saturation, Contrast etc.
+components: ["imageeditor"]
 slug: radimageeditor-features-adjustments
 tags: hue, saturation, contrast, invert, colors
 published: True

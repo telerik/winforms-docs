@@ -1,6 +1,7 @@
 ---
 title: Enlarging Checkboxes Within RadCheckedDropDownList Items
 description: Learn how to increase the size of checkboxes in the dropdown items of a RadCheckedDropDownList.
+components: ["checkeddropdownlist"]
 type: how-to
 page_title: How to Increase Checkboxes Size in RadCheckedDropDownList Items
 slug: checkeddropdownlist-enlarge-checkboxes

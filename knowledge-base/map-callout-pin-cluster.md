@@ -1,6 +1,7 @@
 ---
 title: How to show MapCallout when clicking a Single Pin or a Cluster Having Multiple Pins
 description: Show MapCallout when clicking a Single Pin or a Cluster Having Multiple Pins.
+components: ["map"]
 type: how-to 
 page_title: How to show MapCallout when clicking a single pin or a cluster with multiple pins
 slug: map-callout-pin-cluster

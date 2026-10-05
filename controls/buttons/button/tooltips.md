@@ -2,6 +2,7 @@
 title: Tooltips
 page_title: Tooltips - WinForms Button Control
 description: Learn how to show tooltips for RadButton.
+components: ["buttons"]
 slug: winforms/buttons/button/tooltips
 tags: button
 published: True

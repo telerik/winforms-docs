@@ -2,6 +2,7 @@
 title: Creating custom editor
 page_title: Creating custom editor - WinForms GanttView Control
 description: WinForms GanttView allows you to replace the standard editors with a custom one.
+components: ["ganttview"]
 slug: winforms/ganttview-/editing/creating-custom-editor
 tags: creating,custom,editor
 published: True

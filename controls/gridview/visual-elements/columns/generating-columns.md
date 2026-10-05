@@ -2,6 +2,7 @@
 title: Generating Columns
 page_title: Generating Columns - WinForms GridView Control
 description: Learn how to auto-generate or manually add the columns used inside the WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/columns/generating-columns
 tags: generating,columns
 published: True

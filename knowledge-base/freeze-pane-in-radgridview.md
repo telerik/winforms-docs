@@ -1,6 +1,7 @@
 ---
 title: Freeze Pane in RadGridView
 description: Freeze Pane in RadGridView. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Freeze Pane in RadGridView
 slug: freeze-pane-in-radgridview

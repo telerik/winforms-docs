@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Rotator Control
 description: WinForms Rotator is a multipurpose component for content rotation and personalization. Highly customizable, it delivers high interactivity and user involvement.
+components: ["rotator"]
 slug: winforms/rotator/getting-started
 tags: getting,started
 published: True

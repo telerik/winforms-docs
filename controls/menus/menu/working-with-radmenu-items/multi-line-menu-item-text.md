@@ -2,6 +2,7 @@
 title: Multi-Line Menu Item Text
 page_title: Multi-Line Menu Item Text - WinForms Menu Control
 description: WinForms Menu allows you to display multiline text in its items.
+components: ["menu"]
 slug: winforms/menus/menu/working-with-radmenu-items/multi-line-menu-item-text
 tags: multi-line,menu,item,text
 published: True

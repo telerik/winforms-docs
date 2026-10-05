@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms ToggleButton Control
 description: WinForms ToggleButton is designed to manage states on your form. It shares many features with the RadCheckBox, but provides a different visual effect than the standard check mark. 
+components: ["buttons"]
 slug: winforms/buttons/togglebutton/getting-started
 tags: togglebutton
 published: True
@@ -29,7 +30,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadToggleButton
 

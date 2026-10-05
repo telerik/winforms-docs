@@ -2,6 +2,7 @@
 title: Basic Selection
 page_title: Basic Selection - RadGridView
 description: RadGridView provides you with a selection functionality, which allows the user to select one or more items.
+components: ["gridview"]
 slug: winforms/gridview/selection/basic-selection
 tags: basic,selection
 published: True

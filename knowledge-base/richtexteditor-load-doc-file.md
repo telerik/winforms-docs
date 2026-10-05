@@ -1,6 +1,7 @@
 ---
 title: How To Import DOC Files
 description: An example demonstrating how to import DOC files format into RadRichTextEditor
+components: ["richtexteditor"]
 type: how-to
 page_title: How To Load DOC Files Format
 slug:  richtexteditor-load-doc-file

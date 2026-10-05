@@ -2,6 +2,7 @@
 title: Getting started
 page_title: Getting started - WinForms PdfViewer Control
 description: Winforms PdfViewer enables you to easily load and display PDF documents natively in your app without using any third-party tools except Telerik’s WinForms toolbox.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/getting-started
 tags: getting,started
 published: True
@@ -39,7 +40,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.Windows.Documents.Fixed__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadPdfViewer
 

@@ -2,6 +2,7 @@
 title: Bind to XML
 page_title: Bind to XML - WinForms GridView Control
 description: Learn how to import XML data to a DataSet and use it as data source for WinForms GridView. 
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/bind-to-xml
 tags: bind,to,xml
 published: True

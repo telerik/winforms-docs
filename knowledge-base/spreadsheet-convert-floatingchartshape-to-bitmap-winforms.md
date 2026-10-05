@@ -1,6 +1,7 @@
 ---
 title: Exporting FloatingChartShape to Bitmap in RadSpreadsheet for WinForms
 description: Learn how to export FloatingChartShape from RadSpreadsheet to a Bitmap image in WinForms applications.
+components: ["spreadsheet"]
 type: how-to
 page_title: How to Exporting FloatingChartShape to Bitmap in RadSpreadsheet for WinForms
 slug: convert-floatingchartshape-to-bitmap-radspreadsheet-winforms

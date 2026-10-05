@@ -1,6 +1,7 @@
 ---
 title: ClickOnce Application is Broken
 description: This article explains why the ClickOnce application may be broken.
+components: ["general"]
 type: how-to
 page_title: ClickOnce Application is Broken
 slug: clickonce-application-is-broken

@@ -2,6 +2,7 @@
 title: Events and Customization
 page_title: Events and Customization - RadScheduler
 description: RadScheduler provides a set of events that allow you to customize the appearance of the printed elements.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/print-support/events-and-customization
 tags: events,and,customization
 published: True

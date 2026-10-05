@@ -1,6 +1,7 @@
 ---
 title: Check All Functionality in RadListView's Group Items
 description: Custom implementation demonstrating how to achieve check all functionality in the group items in **RadListview**.
+components: ["listview"]
 type: how-to
 page_title: Check All Functionality in RadListView's Group Items
 slug: check-all-functionality-in-listview-groups

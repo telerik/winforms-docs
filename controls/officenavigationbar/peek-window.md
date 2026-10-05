@@ -2,6 +2,7 @@
 title: Peek Window
 page_title: Peek Window - WinForms OfficeNavigationBar Control
 description: Get familiar with the design time options that the WinForms OfficeNavigationBar offers.   
+components: ["officenavigationbar"]
 slug: officenavigationbar-peek-window
 tags: officenavigationbar
 published: True

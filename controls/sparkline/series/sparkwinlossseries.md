@@ -2,6 +2,7 @@
 title: SparkWinLossSeries
 page_title: SparkWinLossSeries - WinForms Sparkline Control
 description: Win Loss Chart provides a quick way of seeing overall situation of a series of data at glance. It shows positive and negative values in a distinctive way. 
+components: ["sparkline"]
 slug: radsparkline-sparkwinlossseries
 tags: sparkline
 published: True

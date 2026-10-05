@@ -2,6 +2,7 @@
 title: Scheduler Ruler
 page_title: Scheduler Ruler - RadScheduler
 description: The ruler in RadScheduler is used to show the time intervals of the current view.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/fundamentals/scheduler-ruler
 tags: scheduler,ruler
 published: True

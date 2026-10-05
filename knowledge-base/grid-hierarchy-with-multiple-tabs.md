@@ -1,6 +1,7 @@
 ---
 title: Build GridView Hierarchy with Multiple Tabs 
 description: Learn how to construct a hierarchy with multiple tabs in the WinForms GridView.
+components: ["gridview"]
 type: how-to 
 page_title: How to Build GridView Hierarchy with Multiple Tabs 
 slug: grid-hierarchy-with-multiple-tabs

@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms FileDialogs
 description: Get familiar with the inner structure and organization of the elements which build RadOpenFileDialog, RadSaveFileDialog and RadOpenFolderDialog.
+components: ["filedialogs"]
 slug: winforms/file-dialogs/structure
 tags: filedialogs, structure
 published: True

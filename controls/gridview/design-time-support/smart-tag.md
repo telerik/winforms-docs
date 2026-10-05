@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - WinForms GridView Control
 description: Get familiar with the various options available in the Smart Tag of WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/design-time-support/smart-tag
 tags: smart,tag
 published: True

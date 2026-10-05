@@ -2,6 +2,7 @@
 title: Breadcrumb
 page_title: Breadcrumb - WinForms TreeView Control
 description: WinForms BreadCrumb is a separate control designed to visualize the current node path (display all the parent nodes of the current node).  
+components: ["treeview"]
 slug: winforms/treeview/breadcrumb
 tags: breadcrumb
 published: True

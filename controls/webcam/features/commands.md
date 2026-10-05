@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands - WinForms WebCam Control
 description: Have a look at a full list of the actions that WinForms WebCam can execute.    
+components: ["webcam"]
 slug: webcam-commands
 tags: webcam
 published: True

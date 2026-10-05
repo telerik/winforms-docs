@@ -2,6 +2,7 @@
 title: Common
 page_title: Common - File Dialogs
 description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+components: ["filedialogs"]
 slug: winforms/file-dialogs/features/common
 tags: filedialogs
 published: True

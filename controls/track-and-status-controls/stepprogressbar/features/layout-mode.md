@@ -2,6 +2,7 @@
 title: Layout Mode
 page_title: Layout - WinForms StepProgressBar Control
 description: WinForms StepProgressBar Layout
+components: ["stepprogressbar"]
 slug: stepprogressbar-features-layout
 tags: stepprogressbar, layout
 published: True

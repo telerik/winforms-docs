@@ -2,6 +2,7 @@
 title: GridViewCommandColumn
 page_title: GridViewCommandColumn - WinForms GridView Control
 description: WinForms GridViewCommandColumn displays a button element that responds to user input mouse clicks and keyboard key presses.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewcommandcolumn
 tags: gridviewcommandcolumn
 published: True

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - WinForms RichTextEditor Control
 description: Learn what are the public events that WinForms RichTextEditor offers. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/events
 tags: events
 published: True

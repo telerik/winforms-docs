@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - UI for WinForms Documentation
 description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+components: ["commandbar"]
 slug: winforms/commandbar/properties-methods-events
 tags: structure
 published: True
@@ -32,7 +33,7 @@ position: 5
 |EnableDragging|Gets or sets if the strip can be dragged.|
 |EnableFloating|Gets or sets if the strip can be dragged.|
 |Delta|Gets the delta of the drag.|
-|IsDrag|Gets whether the strip is beeing dragged.|
+|IsDrag|Gets whether the strip is being dragged.|
 |VisibleInCommandBar|Gets or sets whether the strip is visible in the command bar.|
 |Orientation|Gets or sets the elements orientation inside the line element.|
 |HasOverflowedItems|Gets whether the strip has items in its overflow panel.|

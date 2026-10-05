@@ -1,6 +1,7 @@
 ---
 title: How to Show ToolTip for RadSpreadsheet Cell
 description: This article shows ToolTip for RadSpreadsheet Cell.
+components: ["spreadsheet"]
 type: how-to
 page_title: How to Show ToolTip for RadSpreadsheet Cell
 slug: spreadsheet-cell-tooltip

@@ -2,6 +2,7 @@
 title: Properties, Methods Events
 page_title: Properties, Methods Events - WinForms Carousel Control
 description: Get familiar with the public API that the WinForms Carousel control offers.
+components: ["carousel"]
 slug: winforms/carousel/properties
 tags: carousel, properties, methods, events
 published: True
@@ -29,9 +30,9 @@ previous_url: carousel/using-radcarousel/radcarousel-properties, carousel-using-
 
 * __AutoLoopPauseInterval:__ Gets or sets a value indicating the interval (in seconds) after which the carousel will resume looping when in auto-loop mode.
 
-* __VirtualMode:__ with this mode the carousel will only display spesific number of items. This significantly improves the performance when your data source contains a lot of items.
+* __VirtualMode:__ with this mode the carousel will only display specific number of items. This significantly improves the performance when your data source contains a lot of items.
 
-* __VisibleItemCount:__ Number of items that carousel displays displays when VirtualMode is set to true.
+* __VisibleItemCount:__ Number of items that carousel displays when VirtualMode is set to true.
 
 * __Items:__ Gives access to the items collection.
 

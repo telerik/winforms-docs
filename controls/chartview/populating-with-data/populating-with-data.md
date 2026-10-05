@@ -2,6 +2,7 @@
 title: Overview
 page_title: DataBinding - WinForms ChartView Control
 description: WinForms ChartView can be bound to a wide variety of data sources. 
+components: ["chartview"]
 slug: winforms/chartview-/populating-with-data
 tags: RadChartView can be populated with data in bound and unbound mode. Data binding is performed following the standard WinForms model 
 published: True

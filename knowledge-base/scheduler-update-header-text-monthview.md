@@ -1,6 +1,7 @@
 ---
 title: Updating the Header Text of RadScheduler in Month View
 description: An example demonstrating how the header text of the RadScheduler can be updated when the control is setup in Month View.  
+components: ["scheduler,reminder"]
 type: how-to
 page_title: Updating the Header Text of RadScheduler in Month View  
 slug: scheduler-update-header-text-monthview

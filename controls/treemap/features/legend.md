@@ -2,6 +2,7 @@
 title: Legend
 page_title: Legend - WinForms TreeMap Control
 description: Have a look at the WinForms TreeMap's legend.  
+components: ["treemap"]
 slug: winforms-treemap-legend
 tags: treemap, legend
 published: True

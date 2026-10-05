@@ -1,6 +1,7 @@
 ---
 title: Change the height of RadTextBox
 description: Change the height of RadTextBox. Check it now!
+components: ["textbox"]
 type: how-to
 page_title: Change the height of RadTextBox
 slug: change-the-height-of-radtextbox

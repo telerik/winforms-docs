@@ -2,6 +2,7 @@
 title: Overview
 page_title: Rotator - UI for WinForms Documentation
 description: RadRotator is a multipurpose component for content rotation and personalization. Highly customizable, it delivers high interactivity and user involvement.
+components: ["rotator"]
 slug: winforms/rotator
 tags: rotator
 published: True

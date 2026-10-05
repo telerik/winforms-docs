@@ -2,6 +2,7 @@
 title: Touch support
 page_title: Touch support - RadCarousel
 description: Touch support
+components: ["carousel"]
 slug: winforms/carousel/touch-support
 tags: touch,support
 published: True

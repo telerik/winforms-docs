@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms HeatMap Control
 description: Get familiar with the public API of the RadHeatMap WinForms control.
+components: ["heatmap"]
 slug: heatmap-properties-methods-events
 tags: heatmap, properties, methods, events
 published: True

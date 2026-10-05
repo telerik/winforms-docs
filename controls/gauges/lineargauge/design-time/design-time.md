@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms LinearGauge Control
 description: Geat familiar with the design time abilities of WinForms LinearGauge.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/lineargauge/design-time
 tags: design,time
 published: True

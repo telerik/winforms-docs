@@ -1,6 +1,7 @@
 ---
 title: Initial Spell-Checking Delay in RadSpellChecker
 description: Get familiar with the initial spell-checking performance in the WinForms SpellChecker. 
+components: ["spellchecker"]
 type: how-to
 page_title: Initial Spell-Checking Delay in RadSpellChecker
 slug: radspellchecker-initial-delay

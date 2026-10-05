@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms GridView Control
 description: Learn how to use RadExpressionEditor at design-time to construct the formula used for the cells values in WinForms GridView.  
+components: ["gridview"]
 slug: winforms/gridview/expression-editor/design-time
 tags: design-time
 published: True

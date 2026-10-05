@@ -2,6 +2,7 @@
 title: Overview
 page_title: Editors - RadPropertyGrid
 description: RadPropertyGrid allows the end users to edit the contents of the selected item.
+components: ["propertygrid"]
 slug: winforms/propertygrid/editors/overview
 tags: editors
 published: True

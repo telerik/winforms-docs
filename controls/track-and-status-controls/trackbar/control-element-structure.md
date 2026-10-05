@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms TrackBar
 description: Get familiar with the inner structure and organization of the elements which build the WinForms TrackBar control. 
+components: ["trackbar"]
 slug: winforms/track-and-status-controls/trackbar/control-element-structure
 tags: control,element,structure
 published: True

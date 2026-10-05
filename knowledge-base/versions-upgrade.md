@@ -1,6 +1,7 @@
 ---
 title: Version Upgrade
 description: Version Upgrade - Installation, Deployment, and Distribution
+components: ["general"]
 type: how-to
 page_title: Versions Upgrade Error
 slug: versions-upgrade

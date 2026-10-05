@@ -2,6 +2,7 @@
 title: Basic Filtering
 page_title: Basic Filtering - RadGridView
 description: This article shows how you can enable the build in filtering functionality. 
+components: ["gridview"]
 slug: winforms/gridview/filtering/basic-filtering
 tags: basic,filtering
 published: True

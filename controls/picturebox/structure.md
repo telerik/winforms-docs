@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms PictureBox Control
 description: Get familiar with the inner structure and organization of the elements which build WinForms PictureBox.
+components: ["picturebox"]
 slug: radpicturebox-structure
 tags: structure
 published: True

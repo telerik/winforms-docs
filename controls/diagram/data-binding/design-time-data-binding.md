@@ -2,6 +2,7 @@
 title: Design Time Data Binding
 page_title: Design Time Data Binding - WinForms Diagram Control
 description: Learn how to bind WinForms Diagram from the Visual Studio design time surface.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/data-binding/design-time-data-binding
 tags: design,time,data,binding
 published: True

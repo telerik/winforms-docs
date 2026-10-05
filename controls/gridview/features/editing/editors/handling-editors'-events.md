@@ -2,6 +2,7 @@
 title: Handling Editors' events
 page_title: Handling Editors' events - WinForms GridView Control
 description: Learn how to use the CellEditorInitialized event handler to access the active editor in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/editors/handling-editors'-events
 tags: handling,editors',events
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms CheckedDropDownList Control
 description: WinForms CheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
+components: ["checkeddropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started
 tags: getting,started
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Hide different elements in RadSpreadsheet for WinForms
 description: Learn how to hide different elements in RadSpreadsheet.
+components: ["spreadsheet"]
 type: how-to
 page_title: How to Hide Different Elements in RadSpreadsheet Control
 meta_title: How to Hide Different Elements in RadSpreadsheet Control

@@ -1,6 +1,7 @@
 ---
 title: Negative Area Chart
 description: Custom implementation demonstrating how one can paint the negative values away from the zero point.
+components: ["chartview"]
 type: how-to
 page_title: Negative Area Chart
 slug: chartview-negetive-area

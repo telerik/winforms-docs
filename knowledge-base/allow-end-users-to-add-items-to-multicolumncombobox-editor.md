@@ -1,6 +1,7 @@
 ---
 title: Allow End-Users to Add Items to MultiColumnCombobox Editor
 description: This article demonstrates how to allow end-users to add items to MultiColumnCombobox editor.
+components: ["gridview"]
 type: how-to
 page_title: Allow End-Users to Add Items to MultiColumnCombobox Editor
 slug: allow-end-users-to-add-items-to-multicolumncombobox-editor

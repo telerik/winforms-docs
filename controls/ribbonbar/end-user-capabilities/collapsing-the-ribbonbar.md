@@ -2,6 +2,7 @@
 title: Collapsing the RibbonBar
 page_title: Collapsing the RibbonBar - RibbonBar
 description: RadRibbonBar can appear to take up a large amount of screen real estate, especially when compared to a menu application.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/end-user-capabilities/collapsing-the-ribbonbar
 tags: collapsing,the,ribbonbar
 published: True

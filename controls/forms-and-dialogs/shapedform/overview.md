@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms ShapedForm
 description: The WinForms ShapedForm control allows you to design and display a Windows form with any conceivable shape.
+components: ["shapedform"]
 slug: winforms/forms-and-dialogs/shapedform
 tags: shapedform
 published: True
@@ -20,7 +21,7 @@ The __ShapedForm__ control allows you to design and display a Windows form wit
 
 ![WinForms RadShapedForm Overview](images/forms-and-dialogs-shapedform-overview001.png)
 
->note s of R3 2023 the rounded corners are available for the ShapedForm. By default, the rounded corners are not enabled on OS Windows 11. They can be enabled by setting the ShapedForm.WindowsSettings.__EnableRoundedCorners__ property to *true*. It is recommended to use the above API with rectangular shapes, other shapes may lead to unexpected results. Read more in the [Rounded Corners]({%slug tpf-rounded-corners%})
+>note As of R3 2023 the rounded corners are available for the ShapedForm. By default, the rounded corners are not enabled on OS Windows 11. They can be enabled by setting the ShapedForm.WindowsSettings.__EnableRoundedCorners__ property to *true*. It is recommended to use the above API with rectangular shapes, other shapes may lead to unexpected results. Read more in the [Rounded Corners]({%slug tpf-rounded-corners%})
 
 
 ## Telerik UI for WinForms Learning Resources

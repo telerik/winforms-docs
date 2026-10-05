@@ -2,6 +2,7 @@
 title: Radial
 page_title: Radial - ChartView
 description: Radial
+components: ["chartview"]
 slug: winforms/chartview-/axes/radial
 tags: radial
 published: True

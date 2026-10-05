@@ -2,6 +2,7 @@
 title: Auto-Complete
 page_title: Auto-Complete - RadMultiColumnComboBox
 description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+components: ["multicolumncombo"]
 slug: winforms/multicolumncombobox/auto-complete
 tags: auto-complete
 published: True

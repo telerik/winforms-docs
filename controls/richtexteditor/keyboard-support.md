@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support - WinForms RichTextEditor Control
 description: WinForms RichTextEditor supports shortcuts. There are default key-bindings defined for the most widely used operations.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/keyboard-support
 tags: keyboard,support
 published: True

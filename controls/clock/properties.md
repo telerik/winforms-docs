@@ -2,6 +2,7 @@
 title: Properties 
 page_title: Properties - WinForms Clock Control
 description: Get familiar with the public API that the WinForms RadClock offers.
+components: ["clock"]
 slug: winforms/clock/properties 
 tags: clock
 published: True

@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms SplitContainer
 description: Get familiar with the design time options that the WinForms SplitContainer offers.
+components: ["splitcontainer"]
 slug: winforms/splitcontainer/design-time
 tags: splitcontainer
 published: True

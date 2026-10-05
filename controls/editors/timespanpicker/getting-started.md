@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms TimeSpanPicker Control
 description: WinForms TimeSpanPicker is a UI component that provides a full control over picking a specific time span and duration. 
+components: ["timespanpicker"]
 slug: radtimespanpicker-getting-started
 tags: radtimespanpicker
 published: True

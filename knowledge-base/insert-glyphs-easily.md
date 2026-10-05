@@ -1,6 +1,7 @@
 ---
 title: How to insert glyphs easily at design time
 description: This article shows how you can easily copy a certain glyph and insert it as a text at design time
+components: ["general"]
 type: how-to
 page_title: Accessing RadGridView Elements
 slug:  insert-glyphs-easily

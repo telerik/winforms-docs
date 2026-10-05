@@ -1,6 +1,7 @@
 ---
 title: Exporting RadMap to an Image
 description: An article demonstrating how the currently visible portion of RadMap can be exported to an image 
+components: ["map"]
 type: how-to
 page_title: Exporting the currently visible portion of the map to an image.
 slug: radmap-export-image

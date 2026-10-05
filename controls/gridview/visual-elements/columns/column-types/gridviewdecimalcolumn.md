@@ -2,6 +2,7 @@
 title: GridViewDecimalColumn
 page_title: GridViewDecimalColumn - WinForms GridView Control
 description: WinForms GridViewDecimalColumn allows decimal data to be displayed and edited.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewdecimalcolumn
 tags: gridviewdecimalcolumn
 published: True

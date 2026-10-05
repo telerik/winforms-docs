@@ -1,6 +1,7 @@
 ---
 title: How to adopt Telerik.SvgIcons in Telerik UI for WinForms 
 description: This article demonstrates how to adopt Telerik.SvgIcons in Telerik UI for WinForms 
+components: ["general"]
 type: how-to
 page_title: How to adopt Telerik.SvgIcons in Telerik UI for WinForms
 slug: how-to-adobt-teleik-svgicons-in-telerik-winforms

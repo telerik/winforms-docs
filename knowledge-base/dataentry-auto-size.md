@@ -1,6 +1,7 @@
 ---
 title: How to create an auto-size RadDataEntry
 description: How to create an auto-size RadDataEntry control
+components: ["dataentry"]
 type: how-to
 page_title: How to create an auto-size RadDataEntry
 slug: dataentry-auto-size

@@ -2,6 +2,7 @@
 title: List
 page_title: List - WinForms Map Control
 description: Get familiar with the ElevationType.List and performing ElevationRequests in WinForms Map.
+components: ["map"]
 slug: winforms/map/providers/elevation/list
 tags: map, providers, elevation
 published: True

@@ -2,6 +2,7 @@
 title: Touch Support
 page_title: Touch Support - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/features/touch-support
 tags: touch,support
 published: True

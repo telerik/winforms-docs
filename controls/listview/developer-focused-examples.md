@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples - WinForms ListView Control
 description: Additional examples built on top the Telerik UI for WinForms RadListView control.
+components: ["listview"]
 slug: winforms/listview/developer-focused-examples
 tags: developer, sdk, examples
 published: True

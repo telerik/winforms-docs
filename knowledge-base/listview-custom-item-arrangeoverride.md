@@ -1,6 +1,7 @@
 ---
 title: How to arrange elements in a custom RadListView DetailsView cell
 description: How to arrange several elements in a custom RadListView DetailsView cell.
+components: ["listview"]
 type: how-to
 page_title: How to arrange elements in custom RadListView DetailsView cell
 slug: listview-custom-item-arrangeoverride

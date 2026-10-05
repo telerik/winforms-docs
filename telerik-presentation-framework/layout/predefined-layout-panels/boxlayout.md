@@ -2,6 +2,7 @@
 title: BoxLayout
 page_title: BoxLayout - Telerik Presentation Framework
 description: BoxLayout is a panel that arranges its items according to three predefined settings - Proportion, Orientation and StripPosition.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/layout/predefined-layout-panels/boxlayout
 tags: boxlayout
 published: True
@@ -126,7 +127,7 @@ boxPanel.Orientation = Orientation.Vertical
 
 The __StripPosition__ property allows the BoxLayout to treat each element as *First* or *Last*. Children with __StripPosition__ set to *First* are always positioned to the left when the __Orientation__ is horizontal and the top when the __Orientation__ is vertical. Children with __StripPosition__ set to *Last* are always located to the right, when the __Orientation__ is horizontal and to the bottom when the __Orientation__ is vertical.
 
-For example, two if RadButtonElements, one *First* and the other *Last*, are added to a BoxLayout, the result will be the following:
+For example, two RadButtonElements, one *First* and the other *Last*, are added to a BoxLayout, the result will be the following:
 
 #### Set position
 

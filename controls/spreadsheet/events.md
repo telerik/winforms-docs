@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - RadSpreadsheet
 description: This topic describes the events you can use in RadSpreadsheet so you can get a notification about different actions.
+components: ["spreadsheet"]
 slug: radspreadsheet-events
 tags: events
 published: True

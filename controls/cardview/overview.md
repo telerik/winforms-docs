@@ -2,6 +2,7 @@
 title: Overview
 page_title: RadCardView - UI for WinForms Documentation
 description: RadCardView is a powerful control providing means for displaying and editing data organized in a card layout.
+components: ["cardview"]
 slug: winforms/cardview/overview
 tags: cardview
 published: True

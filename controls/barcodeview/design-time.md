@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms BarcodeView Control
 description: WinForms Barcode is a set of components that can be used to create, show and read barcodes. Learn how to use its Design Time feature. 
+components: ["barcodeview"]
 slug: barcodeview-design-time 
 tags: barcode, designtime
 published: True

@@ -2,6 +2,7 @@
 title: Speech-to-Text Integration
 page_title: Speech-to-Text Integration - WinForms Chat Control
 description: Learn how to use the built-in speech-to-text functionality in RadChat for WinForms to enable voice input in the chat interface.
+components: ["chat"]
 slug: winforms/chat/features/speech-to-text
 tags: chat, speech-to-text, voice, input, radchat
 published: True

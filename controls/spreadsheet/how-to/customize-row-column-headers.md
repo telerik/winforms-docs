@@ -2,6 +2,7 @@
 title: Customize Row and Column Headers
 page_title: Customize Row and Column Headers - WinForms Spreadsheet Control
 description: Learn how to customize the row and column header in WinForms Spreadsheet.
+components: ["spreadsheet"]
 slug: radspreadsheet-howto-customize-row-column-headers
 tags: customize,row,and,column,headers
 published: True

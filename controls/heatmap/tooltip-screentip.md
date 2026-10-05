@@ -2,6 +2,7 @@
 title: ToolTip & ScreenTip
 page_title: ToolTip & ScreenTip - WinForms HeatMap Control
 description: Check our &quot;ToolTip & ScreenTip&quot; documentation article for the RadHeatMap WinForms control.
+components: ["heatmap"]
 slug: heatmap-tooltip-screentip
 tags: heatmap, tooltip,screentip
 published: True

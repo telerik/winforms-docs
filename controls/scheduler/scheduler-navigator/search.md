@@ -2,6 +2,7 @@
 title: Search
 page_title: Search - RadScheduler
 description: RadScheduler offers the ability to search through the appointments by using the search box in RadSchedulerNavigator.  
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/scheduler-navigator/search
 tags: search
 published: True

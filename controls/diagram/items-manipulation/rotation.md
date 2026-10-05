@@ -2,6 +2,7 @@
 title: Rotation
 page_title: Rotation - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram-(beta)/items-manipulation/rotation
 tags: rotation
 published: True

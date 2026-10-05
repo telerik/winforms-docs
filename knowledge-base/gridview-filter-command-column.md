@@ -1,6 +1,7 @@
 ---
 title: How to Filter a GridViewCommandColumn 
 description: Learn how to filter a GridViewCommandColumn. 
+components: ["gridview"]
 type: how-to 
 page_title: How to Filter a GridViewCommandColumn 
 slug: gridview-filter-command-column

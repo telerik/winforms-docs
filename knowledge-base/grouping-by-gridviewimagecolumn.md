@@ -1,6 +1,7 @@
 ---
 title: Grouping by GridViewImageColumn
 description: Grouping by GridViewImageColumn. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Grouping by GridViewImageColumn
 slug: grouping-by-gridviewimagecolumn

@@ -1,6 +1,7 @@
 ---
 title: Add a Remove Button in ChatUI's messages
 description: This article shows how you can add a remove message button in RadChat.
+components: ["chat"]
 type: how-to
 page_title: How to add a remove button in ChatUI's messages.
 slug: remove-message-button-in-chat-ui

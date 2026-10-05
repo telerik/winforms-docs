@@ -1,6 +1,7 @@
 ---
 title: Access RadGridView Elements
 description: This article shows how you can access the grid elements without using children collection and indexes 
+components: ["gridview"]
 type: how-to
 page_title: Accessing RadGridView Elements
 slug:  gridview-accessing-elements

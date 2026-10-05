@@ -1,6 +1,7 @@
 ---
 title: Forcing RadGridView to Snap One Row During Scrolling
 description: Learn how to force RadGridView in UI for WinForms to snap one row per scrolling, including mouse wheel scrolling.
+components: ["gridview"]
 type: how-to
 page_title: Ensure RadGridView Scroll Rows One-by-One When Scrolling
 meta_title: Ensure RadGridView Scroll Rows One-by-One When Scrolling

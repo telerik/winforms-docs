@@ -1,6 +1,7 @@
 ---
 title: How to filter RadGridView by custom types
 description: This article shows how you can filter RadGridView by custom types.
+components: ["gridview"]
 type: how-to
 page_title: Filter RadGridView by custom types
 slug:  filter-grid-by-custom-type

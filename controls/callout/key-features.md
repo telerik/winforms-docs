@@ -2,6 +2,7 @@
 title: Key Features
 page_title: Key Features - WinForms Callout Control
 description: WinForms Callout provides useful key features that improves the user experience in your project.   
+components: ["callout"]
 slug: callout-key-features
 tags: callout
 published: True

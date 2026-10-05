@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection - ChartView
 description: This help topic will demonstrate how you can make your charts more interactive by adding a selection behavior.
+components: ["chartview"]
 slug: winforms/chartview-/features/selection
 tags: selection
 published: True

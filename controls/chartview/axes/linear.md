@@ -2,6 +2,7 @@
 title: Linear
 page_title: Linear - ChartView
 description: RadChartView uses Linear axes to plot data containing numerical values. Valid only in the context of Cartesian Area, this axis is created by default when you add Bar, Line, Area and Scatter series.
+components: ["chartview"]
 slug: winforms/chartview-/axes/linear
 tags: linear
 published: True

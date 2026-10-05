@@ -2,6 +2,7 @@
 title: Input Behavior
 page_title: Input Behavior - RadScheduler
 description: Input behavior
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/fundamentals/input-behavior
 tags: input,behavior
 published: True

@@ -2,6 +2,7 @@
 title: GridViewTextBoxColumn
 page_title: GridViewTextBoxColumn - WinForms GridView Control
 description: WinForms GridViewTextBoxColumn displays and allows editing of text data.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewtextboxcolumn
 tags: gridviewtextboxcolumn
 published: True

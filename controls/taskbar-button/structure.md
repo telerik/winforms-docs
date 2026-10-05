@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - Taskbar Button
 description: Get familiar with internal structure of the WinForms Taskbar Button.  
+components: ["taskbarbutton"]
 slug: taskbar-button-structure
 tags: taskbar, manager, button, structure
 published: True

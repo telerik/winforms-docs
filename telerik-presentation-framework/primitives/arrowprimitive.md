@@ -2,6 +2,7 @@
 title: ArrowPrimitive
 page_title: ArrowPrimitive - Telerik Presentation Framework
 description: The ArrowPrimitive draws a filled triangular polygon and you can control its orientation.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/primitives/arrowprimitive
 tags: arrowprimitive
 published: True

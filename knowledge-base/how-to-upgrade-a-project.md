@@ -1,6 +1,7 @@
 ---
 title: How to Upgrade a Telerik UI for WinForms Project
 description: Learn how to upgrade your Telerik UI for WinForms project.
+components: ["general"]
 type: how-to 
 page_title: How to Upgrade a Telerik UI for WinForms Project
 slug: how-to-upgrade-a-project

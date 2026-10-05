@@ -1,6 +1,7 @@
 ---
 title: Import data from excel
 description: This article shows how you car read excel file and import the data
+components: ["gridview"]
 type: how-to
 page_title: Import data from excel
 slug: import-data-from-excel

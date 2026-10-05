@@ -1,6 +1,7 @@
 ---
 title: How to change radial gauge's value with the mouse/keyboard 
 description: How to change radial gauge's value with the mouse/keyboard 
+components: ["radialgauge,lineargauge,bulletgraph"]
 type: how-to
 page_title: How to change radial gauge's value with the mouse/keyboard 
 slug: radialgauge-value-changes

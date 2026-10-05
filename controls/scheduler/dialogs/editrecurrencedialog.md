@@ -2,6 +2,7 @@
 title: EditRecurrenceDialog
 page_title: EditRecurrenceDialog - RadScheduler
 description: EditRecurrenceDialog is shown when you click the Recurrence button in the **EditAppointmentDialog**.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/dialogs/editrecurrencedialog
 tags: scheduler
 published: True

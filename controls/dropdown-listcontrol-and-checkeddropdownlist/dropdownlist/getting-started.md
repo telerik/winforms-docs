@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started with WinForms DropDownList - WinForms DropDownList Control
 description: Learn how to add a WinForms RadDropDownList, populate it with items and images, and handle selection changes to update related UI elements.
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/getting-started
 tags: getting,started
 published: True

@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadDropDownList
 description: UI Automation Support (UI Accessibility) for RadDropDownList.   
+components: ["dropdownlist"]
 slug: dropdown-listcontrol-and-checkeddropdownlist-dropdownlist-ui-automation
 tags: raddropdownlist,ui,automation
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Adding an Image to a Map Pin
 description: Custom implementation demonstrating how the MapPin object can be extended to support images
+components: ["map"]
 type: how-to
 page_title: Customizing the default rendering mechanism of a MapPin
 slug: radmap-custom-pins

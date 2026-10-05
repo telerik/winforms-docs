@@ -2,6 +2,7 @@
 title: Pan and Zoom
 page_title: Pan and Zoom
 description: Pan and Zoom
+components: ["picturebox"]
 slug: radpicturebox-pan-and-zoom
 tags: pan-and-zoom
 published: True

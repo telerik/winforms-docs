@@ -2,6 +2,7 @@
 title: Internationalization
 page_title: Internationalization - WinForms DateOnlyPicker Control 
 description: WinForms DateOnlyPicker provides built in internationalization support to build world-ready applications.
+components: ["dateonlypicker"]
 slug: editors-dateonlypicker-internationalization
 tags: internationalization, netcore
 published: True

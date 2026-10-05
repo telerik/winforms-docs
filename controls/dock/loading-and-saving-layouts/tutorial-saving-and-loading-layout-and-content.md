@@ -2,6 +2,7 @@
 title: Tutorial Saving and Loading Layout and Content
 page_title: Tutorial Saving and Loading Layout and Content - WinForms Dock Control
 description: Learn what approach you should follow when you want restore the layout and the content as well. 
+components: ["dock"]
 slug: winforms/dock/loading-and-saving-layouts/tutorial:-saving-and-loading-layout-and-content
 tags: tutorial,saving,and,loading,layout,and,content
 published: True

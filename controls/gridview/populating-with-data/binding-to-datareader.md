@@ -2,6 +2,7 @@
 title: Binding to DataReader
 page_title: Binding to DataReader - WinForms GridView Control
 description: Learn how you can directly load the data from a data reader to WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/binding-to-datareader
 tags: binding,to,datareader
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: PdfViewer - RadPdfViewer
 description: RadPdfViewer enables you to easily load and display PDF documents natively in your application without using any third-party tools except Telerik’s WinForms toolbox.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer
 tags: pdfviewer
 published: True
@@ -14,7 +15,7 @@ previous_url: pdfviewer-overview, pdfviewer-manipulating-programatically
 
 | RELATED VIDEOS |  |
 | ------ | --- |
-|[Getting Started with the WinForms RadPdfViewer](https://www.telerik.com/videos/winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your application without using any third-party tools except Telerik’s WinForms toolbox. Thanks to the built-in UI virtualization, RadPdfViewer delivers an efficient solution for every scenario. This component comes as a nice addition to your Content Management System or Reporting application.|![WinForms RadPdfViewer Turoarial Overview](images/pdfviewer-overview002.png)|
+|[Getting Started with the WinForms RadPdfViewer](https://www.telerik.com/videos/winforms/getting-started-with-the-winforms-radpdfviewer)<br>__RadPdfViewer__ enables you to easily load and display PDF documents natively in your application without using any third-party tools except Telerik’s WinForms toolbox. Thanks to the built-in UI virtualization, RadPdfViewer delivers an efficient solution for every scenario. This component comes as a nice addition to your Content Management System or Reporting application.|![WinForms RadPdfViewer Tutorial Overview](images/pdfviewer-overview002.png)|
 
 __RadPdfViewer__ is a control that:
 

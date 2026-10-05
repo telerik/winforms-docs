@@ -2,6 +2,7 @@
 title: Null Values Support 
 page_title: Null values support  - ChartView
 description: RadChartView supports empty values in the series. In general empty values means missing Y value for a particular X value.
+components: ["chartview"]
 slug: winforms/chartview-/null-values-support-
 tags: null,values,support,
 published: True

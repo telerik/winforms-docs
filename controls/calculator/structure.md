@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - RadCalculator
 description: Get familiar with the internal elements structure of the WinForms Calculator control.    
+components: ["calculator"]
 slug: calculator-structure
 tags: calculator
 published: True

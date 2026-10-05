@@ -1,6 +1,7 @@
 ---
 title: Change the Color of Focus Cue Border for RadCheckBox
 description: Customize the focus cuew dotted border for the WinForms CheckBox.
+components: ["buttons"]
 type: how-to
 page_title: Change the Color of Focus Cue Border for RadCheckBox
 slug: customize-focus-cues-of-radcheckbox

@@ -1,6 +1,7 @@
 ---
 title: How to Deal with WFAC010 Warning - Remove high DPI settings from app.manifest file and configure via Application.SetHighDpiMode API or project property  
 description: Learn how to deal with WFAC010 Warning - Remove high DPI settings from app.manifest file and configure via Application.SetHighDpiMode API or project property
+components: ["general"]
 type: how-to 
 page_title: How to Deal with WFAC010 Warning - Remove high DPI settings from app.manifest file and configure via Application.SetHighDpiMode API or project property
 slug: wfac010-warning-remove-high-dpi-settings

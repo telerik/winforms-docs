@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - RadListView
 description: Telerik RadListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+components: ["listview"]
 slug: winforms/listview/data-binding
 tags: databinding
 published: True

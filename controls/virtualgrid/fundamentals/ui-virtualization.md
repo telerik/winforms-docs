@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization - RadVirtualGrid
 description: This article shows what is UI Virtualization and how it is used in RadVirtualGrid.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/ui-virtualization
 tags: virtualgrid, ui, virtualization
 published: True

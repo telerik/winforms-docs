@@ -2,6 +2,7 @@
 title: Accessing DockWindows
 page_title: Accessing DockWindows - WinForms Dock Control
 description: Learn how you can access all docked windows of RadDock. 
+components: ["dock"]
 slug: winforms/dock/object-model/accessing-dockwindows
 tags: accessing,dockwindows
 published: True

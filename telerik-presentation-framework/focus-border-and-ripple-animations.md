@@ -2,6 +2,7 @@
 title: Focus Border and Ripple Animations
 page_title: Focus Border and Ripple Animations - Telerik Presentation Framework
 description: Add modern focus borders and ripple animations to your WinForms apps with Telerik Presentation Framework for improved UI interactivity.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/focus-border-and-ripple-animations
 tags: touch, themes
 published: True
@@ -61,7 +62,7 @@ Me.radTextBoxControl1.TextBoxElement.RippleAnimationColor = Color.FromArgb(55, 1
 
 {{endregion}}
 
-#### RadButtton Ripple Animations
+#### RadButton Ripple Animations
 
 {{source=..\SamplesCS\TPF\FocusBorderAndRippleAnimationsForm.cs region=ButtonElementAnimations}} 
 {{source=..\SamplesVB\TPF\FocusBorderAndRippleAnimationsForm.vb region=ButtonElementAnimations}}

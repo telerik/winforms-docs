@@ -1,6 +1,7 @@
 ---
 title: Custom Input Behavior
 description: A custom implementation showing how the items can be edited on double click and how the next available cell can be selected upon ending the edit operation 
+components: ["ganttview"]
 type: how-to
 page_title: Custom Input Behavior
 slug: ganttview-custom-input-behavior

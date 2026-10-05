@@ -2,6 +2,7 @@
 title: Customize Step Item
 page_title: Customize Step Item - WinForms StepProgressBar Control
 description: WinForms StepProgressBar 
+components: ["stepprogressbar"]
 slug: stepprogressbar-customize-appearance-step-item
 tags: stepprogressbar
 published: True

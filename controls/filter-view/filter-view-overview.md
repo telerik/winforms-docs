@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - Filter View
 description: RadFilterView provides user friendly filtering options like the most popular shopping sites. 
+components: ["filterview"]
 slug: filter-view-overview
 tags: filter, view
 published: True

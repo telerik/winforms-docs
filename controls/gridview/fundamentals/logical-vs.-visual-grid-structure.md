@@ -2,6 +2,7 @@
 title: Logical vs. Visual Grid Structure
 page_title: Logical vs. Visual Grid Structure - WinForms GridView Control
 description: WinForms GridView uses UI Virtualization. This requires having visual representation that does not match the logical one.  
+components: ["gridview"]
 slug: winforms/gridview/fundamentals/logical-vs.-visual-grid-structure
 tags: logical,vs.,visual,grid,structure
 published: True

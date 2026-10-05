@@ -2,6 +2,7 @@
 title: Row Types
 page_title: Row Types - RadVirtualGrid
 description: This article shows which are the rows types available in rad VirtualGrid.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/fundamentals/row-types
 tags: virtualgrid, row
 published: True

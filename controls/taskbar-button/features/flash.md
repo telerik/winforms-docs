@@ -2,6 +2,7 @@
 title: Flash
 page_title: Flash - Taskbar Button
 description: The blinking effect grab attention on the program's taskbar button.  
+components: ["taskbarbutton"]
 slug: taskbar-button-features-flash
 tags: taskbar, flash
 published: True

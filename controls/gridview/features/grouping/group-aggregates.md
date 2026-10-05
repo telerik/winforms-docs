@@ -2,6 +2,7 @@
 title: Group Aggregates
 page_title: Group Aggregates - WinForms GridView Control
 description: Learn how to format the text in the group row in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/grouping/group-aggregates
 tags: group,aggregates
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Drag and Drop Behavior from GanttView to Scheduler
 description: This article shows how you can achieve drag and drop behavior from GanttView to Scheduler.
+components: ["ganttview"]
 type: how-to
 page_title: How to drag and drop task items from RadGanttView to RadScheduler.
 slug: drag-and-drop-from-ganttview-to-scheduler

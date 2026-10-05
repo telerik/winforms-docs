@@ -1,6 +1,7 @@
 ---
 title: How to create column chooser in VirtualGrid
 description: This article shows how you can show/hide columns in RadVirtualGrid.
+components: ["virtualgrid"]
 type: how-to
 page_title: How to Create Column Chooser in VirtualGrid
 slug: virtualgrid-column-chooser

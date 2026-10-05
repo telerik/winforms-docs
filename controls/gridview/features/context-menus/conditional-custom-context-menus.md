@@ -2,6 +2,7 @@
 title: Conditional Custom Context Menus
 page_title: Conditional Custom Context Menus - WinForms GridView Control
 description: Learn how to apply custom context menu for the cells of a specific column only in the WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/context-menus/conditional-custom-context-menus
 tags: conditional,custom,context,menus
 published: True

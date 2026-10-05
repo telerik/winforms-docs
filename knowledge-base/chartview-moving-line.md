@@ -1,6 +1,7 @@
 ---
 title: How to Draw a Moving Line Under the Mouse in RadChartView
 description: An example demonstrating how a m line can be painted following the mouse position in RadChartView
+components: ["chartview"]
 type: how-to
 page_title: How to Draw a Moving Line Under the Mouse in RadChartView
 slug: chartview-moving-marker

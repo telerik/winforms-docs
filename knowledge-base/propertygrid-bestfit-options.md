@@ -1,6 +1,7 @@
 ---
 title: How to give PropertyGrid Label more width than the Editor
 description: An example showing how to give the PropertyGrid Label more width than the Editor
+components: ["propertygrid"]
 type: how-to
 page_title: How to give PropertyGrid Label more width than the Editor
 slug: propertygrid-bestfit-options

@@ -1,6 +1,7 @@
 ---
 title: How to get CategoricalAxis value on mouse click in CandleStickSeries
 description: This article demonstrates how to get CategoricalAxis value on mouse click in CandleStickSeries
+components: ["chartview"]
 type: how-to
 page_title: How to get CategoricalAxis value on mouse click in CandleStickSeries
 slug: how-to-get-categoricalaxis-value-on-mouse-click-in-candlestickseries

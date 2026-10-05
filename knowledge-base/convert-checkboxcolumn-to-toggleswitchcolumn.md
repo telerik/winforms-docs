@@ -1,6 +1,7 @@
 ---
 title: How to Convert a GridViewCheckBoxColumn to a Custom ToggleSwitch Column
 description: Learn how to covert a GridViewCheckBoxColumn to a custom column that uses ToggleSwitch in the WinForms GridView. 
+components: ["gridview"]
 type: how-to
 page_title: How to Convert a GridViewCheckBoxColumn to a Custom ToggleSwitch Column
 slug: convert-checkboxcolumn-to-toggleswitchcolumn

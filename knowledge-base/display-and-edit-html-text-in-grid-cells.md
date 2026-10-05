@@ -1,6 +1,7 @@
 ---
 title: How to Display and Edit HTML Text in GridView Cells
 description: Learn how to display and edit HTML text in WinForms GridView's cells.
+components: ["gridview"]
 type: how-to 
 page_title: How to Display and Edit HTML Text in GridView Cells
 slug: display-and-edit-html-text-in-grid-cells

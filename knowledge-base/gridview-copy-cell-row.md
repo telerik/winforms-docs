@@ -1,6 +1,7 @@
 ---
 title: Create a custom context menu with copy cell/row functionality in RadGridView
 description: This article shows how to create a custom context menu with copy cell/row functionality in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: How to create a custom context menu with copy cell/row functionality in RadGridView
 slug: gridview-copy-cell-row

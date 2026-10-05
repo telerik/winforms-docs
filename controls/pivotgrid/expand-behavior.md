@@ -2,6 +2,7 @@
 title: Expand Behavior
 page_title: Expand Behavior - RadPivotGrid
 description: Expand Behavior
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/expand-behavior
 tags: expand,behavior
 published: True

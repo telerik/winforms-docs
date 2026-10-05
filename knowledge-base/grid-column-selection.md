@@ -1,6 +1,7 @@
 ---
 title: Column Selection in RadGridView
 description: This article shows how you can achieve column selection in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Achieve Column Selection in RadGridView
 slug: grid-column-selection

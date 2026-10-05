@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms StepProgressBar Control
 description: WinForms StepProgressBar 
+components: ["stepprogressbar"]
 slug: stepprogressbar-overview
 tags: stepprogressbar
 published: True

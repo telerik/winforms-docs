@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - WinForms GridView Control
 description: WinForms GridView offers several events related to the sorting behavior. Learn which are they. 
+components: ["gridview"]
 slug: winforms/gridview/sorting/events
 tags: events
 published: True

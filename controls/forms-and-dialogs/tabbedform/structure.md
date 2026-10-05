@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms TabbedForm
 description:  Get familiar with the internal elements structure of the WinForms TabbedForm.  
+components: ["tabbedform"]
 slug: radtabbedform-structure
 tags: radtabbedform
 published: True

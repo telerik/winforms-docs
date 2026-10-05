@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - Task Dialog
 description: RadTaskDialog is a themable alternative of the windows dialog boxes and the newly released TaskDialog for .NET 5.
+components: ["taskdialog"]
 slug: task-dialog-structure
 tags: task dialog
 published: True

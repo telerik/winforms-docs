@@ -2,6 +2,7 @@
 title: Context Menu
 page_title: Context Menu - WinForms RichTextEditor Control
 description: WinForms RichTextEditor has a built-in context menu feature which can be used to easily customize different elements in a document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/context-menu
 tags: context,menu
 published: True

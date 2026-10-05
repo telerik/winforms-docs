@@ -2,6 +2,7 @@
 title: Overview
 page_title: Layers Overview - RadMap
 description: Layers provide an easy way to present meaningful information to the end user.
+components: ["map"]
 slug: winforms/map/features/layers/overview
 tags: map, features, layers, overview
 published: True

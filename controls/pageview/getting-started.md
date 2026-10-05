@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+components: ["pageview"]
 slug: winforms/pageview/getting-started
 tags: getting, started, radpageview
 published: True
@@ -29,7 +30,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadPageView
 

@@ -2,6 +2,7 @@
 title: Trackball
 page_title: Trackball - ChartView
 description: Along with tooltip and pan/zoom controllers, RadChartView provides a trackball behavior through the ChartTrackballController class.
+components: ["chartview"]
 slug: winforms/chartview-/features/trackball
 tags: trackball
 published: True

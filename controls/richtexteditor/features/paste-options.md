@@ -2,6 +2,7 @@
 title: Paste Options
 page_title: Paste Options
 description: Paste Options
+components: ["richtexteditor"]
 slug: radrichtexteditor-features-paste-options
 tags: clipboard,support, paste, styles, options
 published: True

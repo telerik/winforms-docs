@@ -2,10 +2,11 @@
 title: Download Product Files
 page_title: Download Product Files
 description: Learn how to download the source code, pdf documentation, different versions from your Telerik account. 
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/download-product-files
 tags: download,product,files
 published: True
-position: 4
+position: 6
 previous_url: installation-deployment-and-distribution-download-product-files
 ---
 
@@ -29,7 +30,7 @@ When you purchase a **Telerik UI for WinForms** license, you can download the fo
 	- Telerik UI for WinForms 
 	- Telerik Document Processing
 
-Тo download these files follow the steps below:
+To download these files follow the steps below:
 
 1. Log into [your Telerik account](https://www.telerik.com/account/).
 

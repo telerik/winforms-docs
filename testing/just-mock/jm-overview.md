@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - JustMock
 description: JustMock is a fast, easy to use, feature-rich C# mocking tool for isolating dependencies from your code when unit testing your WinForms application. 
+components: ["general"]
 slug: just-mock-overview
 tags: unit testing, JustMock, mock, mocking, mocking tool, mocking solution, mocking software, WinForms, Win Forms
 published: True

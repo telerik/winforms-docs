@@ -2,6 +2,7 @@
 title: Key ShortCuts
 page_title: Key ShortCuts - UI for WinForms Documentation
 description: Key ShortCuts
+components: ["buttons"]
 slug: winforms/buttons/dropdownbutton/key-shortcuts
 tags: key,shortcuts
 published: true

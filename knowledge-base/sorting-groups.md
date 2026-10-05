@@ -1,6 +1,7 @@
 ---
 title: How to keep the sort order after grouping in RadGridView
 description: This article demonstrates how you can keep the sort order after grouping in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: How to keep the sort order after grouping in RadGridView
 slug: sort-order-after-grouping-in-gridview

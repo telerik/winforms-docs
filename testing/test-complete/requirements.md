@@ -2,6 +2,7 @@
 title: Requirements
 page_title: Requirements - TestComplete
 description: We will use TestComplete - functional automated testing platform developed by SmartBear Software to automate Telerik UI for WinForms Controls.  
+components: ["general"]
 slug: test-complete-requirements
 tags: test-complete
 published: True
@@ -14,4 +15,4 @@ position: 1
 
 2\. You need [**Telerik UI for WinForms**](https://www.telerik.com/products/winforms.aspx) installation. 
 
-You can see additional TestComplete requirements such as Minimum Requirements, Recommended Requirments, specifics for Virtual Machines and others in the official TestComplete [**System Requirements**](https://support.smartbear.com/testcomplete/docs/general-info/system-requirements.html) page.
+You can see additional TestComplete requirements such as Minimum Requirements, Recommended Requirements, specifics for Virtual Machines and others in the official TestComplete [**System Requirements**](https://support.smartbear.com/testcomplete/docs/general-info/system-requirements.html) page.

@@ -1,6 +1,7 @@
 ---
 title: Filtering Child Rows in Self-referencing Hierarchy While Keeping Parent Row Visible
 description: Learn how to filter rows in a self-referencing hierarchical RadGridView while keeping parent rows visible when child rows match the filter condition.
+components: ["gridview"]
 type: how-to
 page_title: Filtering Self-referencing Hierarchical RadGridView with Parent Row Visibility
 meta_title: Filtering Self-referencing Hierarchical RadGridView with Parent Row Visibility

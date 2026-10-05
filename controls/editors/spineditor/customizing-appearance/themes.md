@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadSpinEditor
 description: RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down control.
+components: ["spineditor"]
 slug: winforms/editors/spineditor/themes
 tags: spineditor
 published: True

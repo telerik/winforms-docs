@@ -2,6 +2,7 @@
 title: Supported Controls
 page_title: Supported Controls - Validation Provider
 description: RadValidationProvider can be used for validating editors derived from the RadEditorControl class 
+components: ["validationprovider"]
 slug: validation-provider-supported-controls
 tags: validation, provider
 published: True

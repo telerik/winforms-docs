@@ -1,6 +1,7 @@
 ---
 title: RadControls with no themes, RadControls with replaced ControlDefault theme
 description: RadControls with no themes, RadControls with replaced ControlDefault theme. Check it now!
+components: ["general"]
 type: how-to
 page_title: RadControls with no themes, RadControls with replaced ControlDefault theme
 slug: radcontrols-with-no-themes-radcontrols-with-replaced-controldefault-theme

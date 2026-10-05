@@ -1,6 +1,7 @@
 ---
 title: How to Add Weighted Average in RadPivotGrid  
 description: This article demonstrates how to add weighted average in RadPivotGrid.  
+components: ["pivotgrid"]
 type: how-to
 page_title: How to Add Weighted Average in RadPivotGrid    
 slug: add-weighted-average-in-pivotgrid

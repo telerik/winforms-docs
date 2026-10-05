@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms TrackBar
 description: Learn what are the design time options of WinForms TrackBar. 
+components: ["trackbar"]
 slug: winforms/track-and-status-controls/trackbar/design-time
 tags: trackbar
 published: True

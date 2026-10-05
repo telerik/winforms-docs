@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms DropDownButton Control
 description: WinForms DropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
+components: ["buttons"]
 slug: winforms/buttons/dropdownbutton/getting-started
 tags: dropdownbutton
 published: True
@@ -29,7 +30,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadDropDownButton
 

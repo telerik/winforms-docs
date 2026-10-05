@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadGridView
 description: This article shows the view definitions that are currently supported in RadgridView
+components: ["gridview"]
 slug: winforms/gridview/view-definitions/overview
 tags: overview
 published: True

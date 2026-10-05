@@ -2,6 +2,7 @@
 title: Working with ColumnChooser
 page_title: Working with ColumnChooser - WinForms GridView Control
 description: Learn how to use the Column Chooser to manage column visibility at run-time through drag-and-drop or checkbox selection in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/columns/working-with-columnchooser
 tags: working,with,columnchooser
 published: True

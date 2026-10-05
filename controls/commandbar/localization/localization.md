@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - UI for WinForms Documentation
 description: Localization
+components: ["commandbar"]
 slug: winforms/commandbar/localization/localization
 tags: localization
 published: True

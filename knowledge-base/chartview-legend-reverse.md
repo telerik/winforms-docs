@@ -1,6 +1,7 @@
 ---
 title: How to Reverse the Sequence of Legend Items
 description: Reverse the Sequence of Legend Items
+components: ["chartview"]
 type: how-to
 page_title: How to Reverse the Sequence of Legend Items
 slug: chartview-legend-reverse-order

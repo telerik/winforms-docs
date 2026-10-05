@@ -2,6 +2,7 @@
 title: Sample Database
 page_title: Sample Database - WinForms Scheduler Control
 description: Learn how a sample data base can be accessed to kick start your development with WinForms Scheduler.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/data-binding/sample-database
 tags: sample,database
 published: True

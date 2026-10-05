@@ -1,6 +1,7 @@
 ---
 title: RadTreeView LoadOnDemand with CRUD operations
 description: RadTreeView LoadOnDemand with CRUD operations. Check it now!
+components: ["treeview"]
 type: how-to
 page_title: RadTreeView LoadOnDemand with CRUD operations
 slug: radtreeview-loadondemand-with-crud-operations

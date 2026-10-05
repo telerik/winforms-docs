@@ -2,6 +2,7 @@
 title: Load On Demand
 page_title: Load On Demand - WinForms TreeView Control
 description: The Load On Demand feature in WinForms TreeView helps reducing performance and memory costs incurred when all nodes are loaded at once. 
+components: ["treeview"]
 slug: winforms/treeview/data-binding/load-on-demand
 tags: load,on,demand
 published: True

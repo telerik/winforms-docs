@@ -2,6 +2,7 @@
 title: Using PdfFormatProvider
 page_title: Using PdfFormatProvider - WinForms RichTextEditor Control
 description: PdfFormatProvider makes it easy to export RadDocument to PDF format, preserving the entire document structure and formatting in WinForms RichTextEditor.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/pdf/pdfformatprovider
 tags: import/export
 published: True

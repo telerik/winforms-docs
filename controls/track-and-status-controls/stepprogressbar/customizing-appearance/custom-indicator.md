@@ -2,6 +2,7 @@
 title: Custom Indicator 
 page_title: Custom Indicator- WinForms StepProgressBar Control
 description: WinForms StepProgressBar 
+components: ["stepprogressbar"]
 slug: stepprogressbar-customize-appearance-custom-indicator
 tags: stepprogressbar
 published: True

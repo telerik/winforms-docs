@@ -1,6 +1,7 @@
 ---
 title: Removing Appointment Shadow in RadScheduler for WinForms
 description: Learn how to eliminate the shadow effect from appointments in RadScheduler for WinForms.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to Remove Appointment Shadow in RadScheduler for WinForms
 slug: remove-appointment-shadow

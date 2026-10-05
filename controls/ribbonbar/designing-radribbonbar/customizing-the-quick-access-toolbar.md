@@ -2,6 +2,7 @@
 title: Customizing the Quick Access Toolbar
 page_title: Customizing the Quick Access Toolbar - RadRibbonBar
 description: The Quick Access Toolbar is an area at the top of the Telerik RadRibbonBar, above the tabs.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/getting-started/customizing-the-quick-access-toolbar
 tags: customizing,the,quick,access,toolbar
 published: True

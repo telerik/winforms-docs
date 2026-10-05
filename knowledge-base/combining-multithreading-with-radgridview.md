@@ -1,6 +1,7 @@
 ---
 title: Combining Multithreading with RadGridView
 description: Combining Multithreading with RadGridView. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Combining Multithreading with RadGridView
 slug: combining-multithreading-with-radgridview

@@ -2,6 +2,7 @@
 title: Step Progress Mode
 page_title: Step Progress Mode - WinForms StepProgressBar Control
 description: WinForms StepProgressBar Step Progress Mode
+components: ["stepprogressbar"]
 slug: stepprogressbar-features-progressmode
 tags: stepprogressbar, progressmode
 published: True

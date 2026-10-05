@@ -2,6 +2,7 @@
 title: Pinned Rows
 page_title: Pinned Rows - WinForms GridView Control
 description: WinForms GridView rows can be pinned so that the rows appear anchored to the top or bottom of the grid.
+components: ["gridview"]
 slug: winforms/gridview/rows/pinned-rows
 tags: pinned,rows
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - Appium
 description: We will explore how to use Appium, the Microsoft recommended open source test automation framework, with Telerik UI for WinForms.  
+components: ["general"]
 slug: geting-started
 tags: appium
 published: True

@@ -2,6 +2,7 @@
 title: Overview 
 page_title: ChartView  - ChartView
 description: RadChartView is a versatile charting component that offers drawing capabilities, user interaction and real-time updates. Its intuitive object model and public API allow complex charts to be easily setup either in design-time or through code.
+components: ["chartview"]
 slug: winforms/chartview/overview
 tags: chartview,
 published: True

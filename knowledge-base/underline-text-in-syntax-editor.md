@@ -1,6 +1,7 @@
 ---
 title: How to Achieve Underline Text in RadSyntaxEditor  
 description: This article demonstrates how to achieve underline text in RadSyntaxEditor
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Achieve Underline Text in RadSyntaxEditor      
 slug: underline-text-in-syntax-editor

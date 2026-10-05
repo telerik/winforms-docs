@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms BulletGraph Control
 description: WinForms BulletGraph control is a variation of linear gauge. It combines a number of indicators, as well as the data indicator into one control, which is light weight, easily customizable and straightforward to setup and use.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/bulletgraph/getting-started
 tags: getting,started
 published: True

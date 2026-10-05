@@ -2,6 +2,7 @@
 title: Creating a RadDock at Runtime
 page_title: Creating a RadDock at Runtime - WinForms Dock Control
 description: Learn how to create a WinForms RadDock a run time.
+components: ["dock"]
 slug: winforms/dock/object-model/creating-a-raddock-at-runtime
 tags: creating,a,raddock,at,runtime
 published: True

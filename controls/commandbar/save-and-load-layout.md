@@ -2,6 +2,7 @@
 title: Save and Load Layout
 page_title: Save and Load Layout - UI for WinForms Documentation
 description: RadCommandBar is a fully theme-able tool strip that provides unprecedented flexibility
+components: ["commandbar"]
 slug: winforms/commandbar/save-and-load-layout
 tags: save,and,load,layout
 published: True

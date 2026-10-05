@@ -2,6 +2,7 @@
 title: Tooltips
 page_title: Tooltips - WinForms TreeMap Control
 description: WinForms TreeMap shows tooltips for its data items showing the associated value.  
+components: ["treemap"]
 slug: winforms-treemap-tooltips
 tags: treemap, tooltips
 published: True

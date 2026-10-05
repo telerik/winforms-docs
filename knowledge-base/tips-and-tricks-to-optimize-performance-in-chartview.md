@@ -1,6 +1,7 @@
 ---
 title: Tips and Tricks to Optimize RadChartView's Performance    
 description: Learn how to optimize performance in WinForms ChartView. 
+components: ["chartview"]
 type: how-to
 page_title: Tips and Tricks to Optimize RadChartView's Performance 
 slug: tips-and-tricks-to-optimize-performance-in-chartview

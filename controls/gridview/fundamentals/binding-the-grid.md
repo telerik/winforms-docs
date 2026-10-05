@@ -2,6 +2,7 @@
 title: Binding the Grid
 page_title: Binding the Grid - WinForms GridView Control
 description: WinForms GridView supports the standard Windows Forms data binding model, so it will bind to a variety of data sources.
+components: ["gridview"]
 slug: winforms/gridview/fundamentals/binding-the-grid
 tags: binding,the,grid
 published: True

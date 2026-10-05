@@ -2,6 +2,7 @@
 title: Loading Predefined Themes
 page_title: Loading Predefined Themes - UI for WinForms Tools
 description: This article shows how one can extract and load the predefined themes.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/loading-predefined-themes
 tags: loading,predefined,themes
 published: True
@@ -11,7 +12,7 @@ previous_url: tools-visual-style-builder-working-with-visual-style-builder-loadi
 
 # Loading Predefined Themes
 
-One of the most exciting features of RadCotnrols for WinForms is that their appearance can be easily customized. Visual Style Builder is the tool that makes the process of customization effortless and pleasant. It allows Telerik customers to create brand new themes from scratch and also modify existing themes. More specifically, VSB provides the opportunity to load and customize a default Telerik theme. This tutorial illustrates how you can extract and load the default Telerik themes in the Visual Style Builder.
+One of the most exciting features of RadControls for WinForms is that their appearance can be easily customized. Visual Style Builder is the tool that makes the process of customization effortless and pleasant. It allows Telerik customers to create brand new themes from scratch and also modify existing themes. More specifically, VSB provides the opportunity to load and customize a default Telerik theme. This tutorial illustrates how you can extract and load the default Telerik themes in the Visual Style Builder.
 
 
 1\. Open the Visual Style Builder (VSB). You can achieve that through Start Button >> All Programs >> Telerik >> UI for Winforms [version] >> Tools >> Visual Style Builder.

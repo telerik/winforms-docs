@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - UI for WinForms Tools
 description: Visual Style Builder is an end-user application that allows fast and intuitive styling of all controls in the Windows Forms suite.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/getting-started
 tags: getting,started
 published: True
@@ -62,7 +63,7 @@ Having selected the ButtonFill element in the Elements grid, click on the "Creat
 
 ![tools-visual-style-builder-getting-started 005](images/tools-visual-style-builder-getting-started005.png)
 
-Give the repository item a key and a name as follows: `ButtonNormalFill`, `ButtonNormalFill`, and check the "Animated State Transition" checkbox to enable animated style transition for this repository item. Save the repository item by clicking OK and click on the "Create New Repository Item" button again. By following the same steps described above, crate another two fill repository items with office glass rect style and colors as follows: yellow and red. Name them `ButtonHoverFill ` and `ButtonPressedFill`. The repository should look as follows after creating all items:
+Give the repository item a key and a name as follows: `ButtonNormalFill`, `ButtonNormalFill`, and check the "Animated State Transition" checkbox to enable animated style transition for this repository item. Save the repository item by clicking OK and click on the "Create New Repository Item" button again. By following the same steps described above, create another two fill repository items with office glass rect style and colors as follows: yellow and red. Name them `ButtonHoverFill ` and `ButtonPressedFill`. The repository should look as follows after creating all items:
 
 ![tools-visual-style-builder-getting-started 006](images/tools-visual-style-builder-getting-started006.png)
 

@@ -1,6 +1,7 @@
 ---
 title: Emulate Cell Merge in RadGridView
 description: This article shows how you can adjust the page's width when the control is resized
+components: ["gridview"]
 type: how-to
 page_title: Emulate Cell Merge in RadGridView
 slug:  emulate-cell-merge-in-radgridview

@@ -1,6 +1,7 @@
 ---
 title: How to show different columns for child rows
 description: This article shows how you can show different columns for child rows
+components: ["gridview"]
 type: how-to
 page_title: How to Show Different Columns for Child Rows
 slug: gridview-different-columns-for-childrows

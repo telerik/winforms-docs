@@ -2,6 +2,7 @@
 title: Working with Ticks
 page_title: Working with ticks - WinForms RadialGauge Control
 description: RadialGaugeTicks are displayed next to the arc spanning the entire sweep angle.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-ticks
 tags: working,with,ticks
 published: True

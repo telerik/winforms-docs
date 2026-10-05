@@ -1,6 +1,7 @@
 ---
 title: Examine the GAC and remove old assemblies
 description: Examine the GAC and remove old assemblies
+components: ["general"]
 type: how-to
 page_title: Examine the GAC and remove old assemblies
 slug: radcontrols-examine-the-gac

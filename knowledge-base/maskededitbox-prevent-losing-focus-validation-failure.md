@@ -1,6 +1,7 @@
 ---
 title: Preventing RadMaskedEditBox from Losing Focus on Validation Failure
 description: Learn how to keep the focus on a RadMaskedEditBox for WinForms when the Email mask validation fails.
+components: ["maskededitbox"]
 type: how-to
 page_title: How to Keep Focus on RadMaskedEditBox with Email MaskType on Validation Failure
 slug: maskededitbox-prevent-losing-focus-validation-failure

@@ -1,6 +1,7 @@
 ---
 title: Determining Header Cell and its Resource ID in MouseDown Events in RadScheduler
 description: Learn how to get the RadScheduler header cell with a mouse click and obtain the resource ID.
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to get Header Cell and its Resource ID on mouse down in RadScheduler for WinForms
 slug: radscheduler-header-cell-click

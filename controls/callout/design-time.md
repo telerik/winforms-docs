@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Callout Control
 description: Get familiar with the design time options that the WinForms Callout offers.   
+components: ["callout"]
 slug: callout-design-time
 tags: callout
 published: True

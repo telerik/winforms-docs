@@ -2,6 +2,7 @@
 title: Settings
 page_title: Settings - WinForms RichTextEditor Control
 description: PdfFormatProvider allows for export of PDF documents and respectively export of WinForms RichTextEditor to Pdf. The export settings provide modification options.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/pdf/settings
 tags: import/export
 published: True

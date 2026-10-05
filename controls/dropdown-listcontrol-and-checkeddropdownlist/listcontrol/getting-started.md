@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms ListControl Control
 description: WinForms ListControl is the an alternative to the Microsoft ListBox control.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/getting-started
 tags: getting,started
 published: True

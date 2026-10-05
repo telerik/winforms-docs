@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadLabel
 description: RadLabel is a themeable alternative to the standard Windows Forms label control.
+components: ["label"]
 slug: winforms/panels-and-labels/label
 tags: label
 published: True

@@ -2,6 +2,7 @@
 title: Design Time 
 page_title: .NET Design Time
 description: Telerik UI for WinForms supports the Visual Studio .NET WinForms designer.
+components: ["general"]
 slug: core-design-time
 tags: designer, .net, winforms
 published: True
@@ -18,7 +19,7 @@ Telerik UI for WinForms fully supports the Visual Studio .NET WinForms designer.
 
 ## Requirements
 
-The design time assemblies in .NET are resolved via the installed in the project NuGet packages. This means that toolbox is populated from the Telerik UI controls added to the referenced Telerik NuGet package/s. In order use the designers in .NET, please make sure that the following requirements are met:
+The design time assemblies in .NET are resolved via the installed in the project NuGet packages. This means that toolbox is populated from the Telerik UI controls added to the referenced Telerik NuGet package/s. In order to use the designers in .NET, please make sure that the following requirements are met:
 
 *  **Visual Studio 2022 v17.0 and newer**
    

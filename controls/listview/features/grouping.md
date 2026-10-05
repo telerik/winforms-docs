@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping - WinForms ListView Control
 description: WinForms ListView supports both custom grouping and automatic grouping based on a certain property.
+components: ["listview"]
 slug: winforms/listview/features/grouping
 tags: grouping
 published: True

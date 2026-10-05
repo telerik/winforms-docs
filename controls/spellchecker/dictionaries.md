@@ -2,6 +2,7 @@
 title: Dictionaries
 page_title: Dictionaries - WinForms SpellChecker
 description: WinForms SpellChecker comes with one predefined dictionary that checks the English language. Check what dictionaries are available. 
+components: ["spellchecker"]
 slug: winforms/spellchecker/dictionaries
 tags: dictionaries
 published: True

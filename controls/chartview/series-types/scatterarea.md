@@ -2,6 +2,7 @@
 title: ScatterArea
 page_title: ScatterArea - ChartView
 description: ScatterAreaSeries plot their data using two numerical values. Once positioned on a plane the points are connected to form a line
+components: ["chartview"]
 slug: winforms/chartview-/series-types/scatterarea
 tags: scatterarea
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to use RadTitleBar on a standard MS Form/RadForm
 description: This article demonstrates how to use RadTitle on a standard MS Form/RadForm.
+components: ["titlebar"]
 type: how-to
 page_title: How to use RadTitleBar on a standard MS Form/RadForm
 slug: titlebar-on-form

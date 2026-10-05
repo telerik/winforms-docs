@@ -1,6 +1,7 @@
 ---
 title: Adjusting Scroll Speed in RadPdfViewer for WinForms
 description: Learn how to customize the vertical scroll speed in RadPdfViewer for WinForms for a faster navigation experience.
+components: ["pdfviewer"]
 type: how-to
 page_title: How to Increase Vertical Scroll Speed in RadPdfViewer for WinForms
 slug: pdfviewer-adjust-scroll-speed

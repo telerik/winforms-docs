@@ -1,6 +1,7 @@
 ---
 title: Close Application after Closing All RadTabbedForms
 description: This article demonstrates how to close the application when the last RadTabbedForm is closed.
+components: ["tabbedform"]
 type: how-to
 page_title: Close Application after Closing All RadTabbedForms
 slug: close-application-after-closing-the-last-tabbedform

@@ -2,6 +2,7 @@
 title: ToolTips
 page_title: ToolTips - Telerik Presentation Framework
 description: The Tooltip represents a small rectangular window that displays a brief description when the user hovers over control or an element.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/tooltips
 tags: radtooltip
 published: True

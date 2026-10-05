@@ -2,6 +2,7 @@
 title: Definition Types
 page_title: Definition Types - WinForms HeatMap Control
 description: Check our &quot;Definition Types&quot; documentation article for the RadHeatMap WinForms control.
+components: ["heatmap"]
 slug: heatmap-definition-types
 tags: heatmap, definition
 published: True

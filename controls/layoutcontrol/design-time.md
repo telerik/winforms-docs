@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms LayoutControl
 description: Get familiar with the design time options that WinForms LayoutControl offers.
+components: ["layoutcontrol"]
 slug: winforms/layoutcontrol/design-time
 tags: design,time
 published: True

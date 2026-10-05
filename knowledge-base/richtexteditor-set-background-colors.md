@@ -1,6 +1,7 @@
 ---
 title: Setting Document Background and Editor Background in UI for WinForms RichTextEditor
 description: Learn how to set the document background and the editor background in UI for WinForms RichTextEditor.
+components: ["richtexteditor"]
 type: how-to
 page_title: How to Change Document and Editor Background Colors in UI for WinForms RichTextEditor
 meta_title: How to Change Document and Editor Background Colors in UI for WinForms RichTextEditor

@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility)
 description: UI Automation Support (UI Accessibility)
+components: ["general"]
 slug: winforms/telerik-presentation-framework/ui-automation
 tags: ui,automation,support, accessibility
 published: True

@@ -2,6 +2,7 @@
 title: Hiding Child Tabs when no Data is Available
 page_title: Hiding Child Tabs when no Data is Available - WinForms GridView Control
 description: WinForms GridView offers the CellFormatting event which allows you to hide all child tabs when there is no data in them. Learn how to do it.
+components: ["gridview"]
 slug: winforms/gridview/cells/formatting-child-tabs
 tags: formatting,cells
 published: True

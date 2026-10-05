@@ -2,6 +2,7 @@
 title: Drag and Drop Using RadDragDropService
 page_title: Drag and Drop using RadDragDropService - WinForms Scheduler Control
 description: Learn the process of achieving drag and drop functionality from WinForms Scheduler to RadGridView and vice versa.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/drag-and-drop/drag-and-drop-using-raddragdropservice
 tags: drag,and,drop,using,raddragdropservice
 published: True

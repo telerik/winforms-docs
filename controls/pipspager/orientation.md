@@ -2,6 +2,7 @@
 title: Orientation
 page_title: Orientation - WinForms PipsPager Control
 description: This article shows the orientation of RadPipsPager control.
+components: ["pipspager"]
 slug: pipspager-orientation
 tags: pipspager, orientation
 published: True

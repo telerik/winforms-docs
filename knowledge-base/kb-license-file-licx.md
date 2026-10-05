@@ -1,6 +1,7 @@
 ---
 title: License file (licx)
 description: License file (licx)
+components: ["general"]
 page_title: License file (licx)
 type: troubleshooting
 slug: kb-license-file-licx

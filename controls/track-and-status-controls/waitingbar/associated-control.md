@@ -2,6 +2,7 @@
 title: Associated Control
 page_title: Associated Control - WinForms WaitingBar Control
 description: WinForms WaitingBar allows you to associate it to any control indicating its load time.
+components: ["waitingbar"]
 slug: winforms/track-and-status-controls/waitingbar/associated-control
 tags: control,element,associated, control
 published: True

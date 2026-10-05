@@ -2,6 +2,7 @@
 title: Binding to Data
 page_title: Binding to Data - UI for WinForms Documentation
 description: RadCardView is a powerful control providing means for displaying and editing data organized in a card layout.
+components: ["cardview"]
 slug: winforms/cardview/populating-with-data/binding-to-data
 tags: cardview/binding-to-data
 published: True
@@ -22,7 +23,7 @@ Data binding provides a way to bind the display of data in a __RadCardView__ to 
 
 A complete tutorial for connecting to the *Northwind* database from the Visual Studio designer in available in the [Getting Started]({%slug winforms/cardview/getting-started%}) article.
 
-## Data Binding Programatically
+## Data Binding Programmatically
 
 The example below will demonstrate how to bind __RadCardView__ to a collection of models. As a result the control will automatically create __CardViewItem__ objects for all public properties of the model.
 

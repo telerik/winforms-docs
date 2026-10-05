@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms AIPrompt Control
 description: Learn how to localize the built-in text and tooltips in the RadAIPrompt control.
+components: ["aiprompt"]
 slug: aiprompt-localization
 tags: aiprompt, localization
 published: True

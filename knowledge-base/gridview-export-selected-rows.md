@@ -1,6 +1,7 @@
 ---
 title: Export Selected Rows in RadGridView
 description: This article shows how to export only selected rows in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to export only selected rows in RadGridView.
 slug: gridview-export-selected-rows

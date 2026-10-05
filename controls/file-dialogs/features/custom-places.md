@@ -2,6 +2,7 @@
 title: Custom Places
 page_title: Custom Places - File Dialogs
 description: File Dialogs provide you with the option the specify a list of directories displayed above the Treeview navigation.
+components: ["filedialogs"]
 slug: file-dialogs-custom-places
 tags: filedialogs
 published: True

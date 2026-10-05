@@ -2,6 +2,7 @@
 title: Multiple Selection 
 page_title: Multiple Selection - RadMultiColumnComboBox
 description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+components: ["multicolumncombo"]
 slug: winforms/multicolumncombobox/how-to/multiple-selection
 tags: multicolumncombobox
 published: True

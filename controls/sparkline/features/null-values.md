@@ -2,6 +2,7 @@
 title: Null Values Support
 page_title: Null Values Support - WinForms Sparkline Control 
 description: The EmptyPointBehavior property controls what happens with null points in WinForms Sparkline.
+components: ["sparkline"]
 slug: radsparkline-null-values
 tags: sparkline
 published: True

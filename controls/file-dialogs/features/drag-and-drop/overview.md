@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Overview
+components: ["filedialogs"]
 slug: radfiledialogs-features-dragdrop-overview
 tags: features,dragdrop
 published: True

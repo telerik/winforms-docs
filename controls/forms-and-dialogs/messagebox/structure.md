@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms MessageBox
 description: Get familiar with the inner structure and organization of the elements which build the WinForms MessageBox. 
+components: ["messagebox"]
 slug: winforms/forms-and-dialogs/messagebox/structure
 tags: messagebox, structure
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Attach Telerik Source Code to Your Project
 description: This article demonstrates how to attach Telerik source code to your project
+components: ["general"]
 type: how-to
 page_title: How to Attach Telerik Source Code to Your Project 
 slug: attach-telerik-source-code-to-your-project

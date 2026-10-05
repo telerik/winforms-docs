@@ -2,6 +2,7 @@
 title: Properties, Methods, Events
 page_title: Properties, Methods, Events - UI for WinForms Documentation
 description: RadDropDownButton provides a menu-like interface open from a button. Each of the items of RadDropDownButton can be set to perform an action when clicked.
+components: ["buttons"]
 slug: winforms/buttons/dropdownbutton/properties-methods-events
 tags: dropdownbutton
 published: True

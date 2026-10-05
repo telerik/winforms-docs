@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Menu Control
 description: WinForms Menu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+components: ["menu"]
 slug: winforms/menus/menu/getting-started
 tags: getting,started
 published: True
@@ -30,7 +31,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadMenu
 

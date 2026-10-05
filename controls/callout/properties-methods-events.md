@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms Callout Control
 description: Get familiar with the public API that WinForms Callout offers.   
+components: ["callout"]
 slug: callout-properties-methods-events
 tags: callout
 published: True

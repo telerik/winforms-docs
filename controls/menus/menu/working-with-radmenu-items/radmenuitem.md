@@ -2,6 +2,7 @@
 title: RadMenuItem
 page_title: RadMenuItem - WinForms Menu Control
 description: Learn what menu items are supported in the WinForms Menu.
+components: ["menu"]
 slug: winforms/menus/menu/working-with-radmenu-items/radmenuitem
 tags: radmenuitem
 published: True
@@ -51,6 +52,11 @@ The **RadMenuItem** represents a standard menu item. Some of its properties incl
 |__ShowArrow__|Displays an arrow button on the drop-down menu. |
 |__StringAlignment__|Formats the alignment of the text string so it is positioned near, center, or far from the left border of the menu item. |
   
+
+## Sizing Menu Items
+
+Use the **AutoSizeMode** property to choose whether the item fits the available size, wraps around its children, or uses the automatic sizing behavior. If you need all items in a **RadMenu** to have the same height, use the **AllItemsEqualHeight** property on the owning **RadMenu**. For more information, see [Menu Item Height]({%slug winforms/menus/menu/working-with-radmenu-items/multi-line-menu-item-text%}).
+
 
 ## RadMenuComboItem
 

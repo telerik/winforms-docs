@@ -1,6 +1,7 @@
 ---
 title: Could not load file or assembly Telerik.WinControls.XmlSerializers
 description: Could not load file or assembly Telerik.WinControls.XmlSerializers. Check it now!
+components: ["general"]
 type: how-to
 page_title: Could not load file or assembly Telerik.WinControls.XmlSerializers
 slug: could-not-load-file-or-assembly-telerik-wincontrols-xmlserializers

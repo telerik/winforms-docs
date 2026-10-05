@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadMultiColumnComboBox
 description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+components: ["multicolumncombo"]
 slug: winforms/multicolumncombobox/styling-and-appearance/themes
 tags: themes
 published: True

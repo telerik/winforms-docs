@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadScheduler
 description: Telerik RadScheduler is a highly-customizable appointment presentation component that offers rich Outlook®-style functionality.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler
 tags: scheduler
 published: True

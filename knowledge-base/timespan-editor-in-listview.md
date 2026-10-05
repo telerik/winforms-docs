@@ -1,6 +1,7 @@
 ---
 title: TimeSpan editor in RadListView
 description: This article shows how you can create a timespan editor in RadListView.
+components: ["listview"]
 type: how-to
 page_title: How to Create a TimeSpan Editor in RadListView.
 slug: timespan-editor-in-listview

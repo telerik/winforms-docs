@@ -2,6 +2,7 @@
 title: Bounds
 page_title: Bounds - WinForms Map Control
 description: Get familiar with the ElevationType.Bounds and performing ElevationRequests in WinForms Map.
+components: ["map"]
 slug: winforms/map/providers/elevation/bounds
 tags: map, providers, elevation
 published: True

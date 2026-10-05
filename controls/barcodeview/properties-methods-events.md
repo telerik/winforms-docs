@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - BarcodeView
 description: RadBarcodeView is a set of components that can be used to create, show and read barcodes. 
+components: ["barcodeview"]
 slug: barcodeview-properties-methods-events
 tags: barcode, getting started
 published: True
@@ -27,8 +28,8 @@ position: 2
 
 |Method|Description|
 |----|----|
-|**ExportToImage()**|Exports the barcode with the current dimentions of the control.|
-|**ExportToImage(int width, int height)**|Layouts the barcode using the provided dimentions and exports it to an image.|
+|**ExportToImage()**|Exports the barcode with the current dimensions of the control.|
+|**ExportToImage(int width, int height)**|Layouts the barcode using the provided dimensions and exports it to an image.|
 |**ExportToImage(Stream stream, Size size)**| Layouts the barcode using the provided size and exports it to the specified stream.|
 |**ExportToImage(string filePath, Size size)**|Layouts the barcode using the provided size and exports it to the specified file location.|
 |**ExportToImage(Stream stream, Size size, ImageFormat imageFormat)**|Layouts the barcode using the provided size and exports it to the specified stream in the specified image format.|

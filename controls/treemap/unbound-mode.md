@@ -2,6 +2,7 @@
 title: Unbound Mode
 page_title: Unbound Mode - WinForms TreeMap Control
 description: Add items/groups to the WinForms TreeMap.   
+components: ["treemap"]
 slug: treemap-unbound-mode
 tags: treemap, unbound
 published: True

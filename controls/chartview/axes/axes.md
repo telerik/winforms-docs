@@ -2,6 +2,7 @@
 title: Overview
 page_title: Axes Overview - WinForms ChartView Control
 description: Each RadChartView area type uses a different set of axes to plot its data points. For example, Cartesian Area supports the following axes, Categorical, Linear, Logarithmic, DateTimeCategorical and DateTimeContinuous.
+components: ["chartview"]
 slug: winforms/chartview-/axes
 tags: axes
 published: True

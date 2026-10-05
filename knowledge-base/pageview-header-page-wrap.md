@@ -1,6 +1,7 @@
 ---
 title: How to Wrap Text in the PageView Page Tabs In StripView Mode
 description: Learn how to wrap text in the PageView Page Tabs in StripView mode.
+components: ["pageview"]
 type: how-to 
 page_title: How to Wrap Text in the PageView Page Tabs In StripView Mode
 slug: pageview-header-page-wrap

@@ -1,6 +1,7 @@
 ---
 title: How to Deal with Layout Issues in Visual Style Builder  
 description: Deal with VSB layout issues that prevent it from loading properly.     
+components: ["general"]
 type: troubleshooting
 page_title: How to Deal with Layout Issues in Visual Style Builder    
 slug: vsb-layout-problems

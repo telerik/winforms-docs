@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Callout Control
 description: Get started with the WinForms Callout and construct a custom notification hint with a UserControl.   
+components: ["callout"]
 slug: callout-getting-started
 tags: callout
 published: True

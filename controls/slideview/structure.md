@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms SlideView Control
 description: Get familiar with the internal elements structure of the WinForms SlideView control.
+components: ["slideview"]
 slug: slideview-structure
 tags: slideview, structure
 published: True

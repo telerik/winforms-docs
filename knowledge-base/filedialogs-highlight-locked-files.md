@@ -1,6 +1,7 @@
 ---
 title: How to Highlight Locked Files and Display Tooltip for these Files.
 description: Notify user that a file is used by another process.
+components: ["filedialogs"]
 type: how-to
 page_title: Highlight Locked Files and Display Tooltip 
 slug: filedialogs-highlight-locked-files

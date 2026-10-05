@@ -2,6 +2,7 @@
 title: Populating with data
 page_title: Populating with data - WinForms Diagram Control
 description: Learn how to define shapes and connections programmatically and how to load predefined layout by xml.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/populating-with-data
 tags: populating,with,data
 published: True

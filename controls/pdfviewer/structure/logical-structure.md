@@ -2,6 +2,7 @@
 title: Logical Structure
 page_title: Logical Structure - WinForms PdfViewer Control
 description: Get familiar with the visual as well as logical structure of the WinForms PdfViewer.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/structure/logical-structure
 tags: structure
 published: True

@@ -2,6 +2,7 @@
 title: Resizing, Moving, and Deleting Appointments
 page_title: Resizing, Moving, and Deleting Appointments - RadScheduler
 description: Resizing, Moving, and Deleting Appointments
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/end-user-functionality/resizing,-moving,-and-deleting-appointments
 tags: resizing,,moving,,and,deleting,appointments
 published: True

@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadButton
 description: UI Automation Support (UI Accessibility) for RadButton.   
+components: ["buttons"]
 slug: button-ui-automation
 tags: button,ui,automation
 published: True

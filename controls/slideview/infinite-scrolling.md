@@ -2,6 +2,7 @@
 title: Infinite Scrolling
 page_title: Infinite Scrolling - WinForms SlideView Control
 description: This article shows the infinite scrolling of SlideView control.
+components: ["slideview"]
 slug: slideview-infinite-scrolling
 tags: slideview, scrolling
 published: True

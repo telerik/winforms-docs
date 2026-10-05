@@ -2,6 +2,7 @@
 title: Section Columns
 page_title: Section Columns - WinForms RichTextEditor Control
 description: With the Section Columns feature, WinForms RichTextEditor allows you arrange the text in a Section into columns.
+components: ["richtexteditor"]
 slug: radrichtexteditor-ui-for-applying-rich-text-formatting-section-columns
 tags: section, column
 published: True

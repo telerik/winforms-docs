@@ -1,6 +1,7 @@
 ---
 title: Performance considerations
 description: Performance considerations. Check it now!
+components: ["general"]
 type: how-to
 page_title: Performance considerations
 slug: performance-considerations

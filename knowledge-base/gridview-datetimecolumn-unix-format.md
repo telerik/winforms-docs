@@ -1,6 +1,7 @@
 ---
 title: How to Show DateTime Values Stored in a UNIX Format with Filtering Still Working in RadGridView
 description: Learn how to show date time values stored in a UNIX format with filtering still working in the WinForms GridView.
+components: ["gridview"]
 type: how-to 
 page_title: How to Show DateTime Values Stored in a UNIX Format with Filtering Still Working in RadGridView
 slug: gridview-datetimecolumn-unix-format

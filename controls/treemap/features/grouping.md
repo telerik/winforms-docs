@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping - WinForms TreeMap Control
 description: Get familiar with the grouping functionality in the WinForms TreeMap's control.  
+components: ["treemap"]
 slug: winforms-treemap-grouping
 tags: treemap, grouping
 published: True

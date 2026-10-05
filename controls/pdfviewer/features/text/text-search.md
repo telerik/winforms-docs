@@ -2,6 +2,7 @@
 title: Text Search
 page_title: Text Search - WinForms PdfViewer Control
 description: WinForms PdfViewer supports search both through the UI and programmatically.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/text/text-search
 tags: text, search
 published: True

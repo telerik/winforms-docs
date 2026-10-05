@@ -1,6 +1,7 @@
 ---
 title: How to Move the Current Row with Arrow Keys while RadGridView is in Edit Mode
 description: How to move the current row with arrow keys while the WinForms GridView is in Edit Mode.
+components: ["gridview"]
 type: how-to
 page_title: How to Move the Current Row with Arrow Keys while RadGridView is in Edit Mode
 slug: move-current-row-with-arrow-keys-in-edit-mode

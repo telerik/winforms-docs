@@ -1,6 +1,7 @@
 ---
 title: Update RadProgressBar while a Long-Lasting Operation is Ongoing
 description: This article demonstrates how to update RadProgressBar while a long-lsting operation is ongoing
+components: ["progressbar"]
 type: how-to
 page_title: Update RadProgressBar while a Long-Lasting Operation is Ongoing
 slug: update-progressbar-while-a-long-lasting-operation-is-ongoing

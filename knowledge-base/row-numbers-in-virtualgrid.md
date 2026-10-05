@@ -1,6 +1,7 @@
 ---
 title: Row Numbers in RadVirtualGrid
 description: This article demonstrates how to display row numbers in RadVirtualGrid.
+components: ["virtualgrid"]
 type: how-to
 page_title: Row Numbers in RadVirtualGrid
 slug: row-numbers-in-virtualgrid

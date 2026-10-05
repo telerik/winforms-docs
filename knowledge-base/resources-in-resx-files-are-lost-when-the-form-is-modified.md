@@ -1,6 +1,7 @@
 ---
 title: Resources in resx files are lost when the form is modified
 description: Resources in resx files are lost when the form is modified
+components: ["general"]
 type: troubleshooting
 page_title: Resources in resx files are lost when the form is modified
 slug: resources-in-resx-files-are-lost-when-the-form-is-modified
@@ -25,3 +26,7 @@ The resx files of the Form are also used when the **Localizable** property of th
 ## Solution
 
 Store all manually defined strings (or custom resources) in the application resources. By default, this file is **Resources.resx** and is located in the **Properties** folder in your application.
+
+## See Also
+
+* [Using ComponentResourceManager Localization with Telerik UI for WinForms]({%slug using-componentresourcemanager-localization-in-winforms%})

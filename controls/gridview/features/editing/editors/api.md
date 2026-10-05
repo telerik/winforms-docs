@@ -2,6 +2,7 @@
 title: API
 page_title: API - RadGridView
 description: This article show the most commonly used properties and methods used with the editing process.
+components: ["gridview"]
 slug: winforms/gridview/editors/api
 tags: api
 published: True

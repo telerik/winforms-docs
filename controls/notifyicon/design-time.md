@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms NotifyIcon Control
 description: Get familiar with the design time options that the WinForms NotifyIcon offers.RadNotifyIcon control.
+components: ["notifyicon"]
 slug: notifyicon-design-time
 tags: notifyIcon, design
 published: True

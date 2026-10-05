@@ -1,6 +1,7 @@
 ---
 title: How to Delete Diagram Shapes with All Related Connections
 description: Learn how to delete shapes together with all related connections in the WinForms Diagram's Toolbox.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 type: how-to
 page_title: How to Delete Diagram Shapes with All Related Connections
 slug: delete-diagram-shapes-with-related-connections

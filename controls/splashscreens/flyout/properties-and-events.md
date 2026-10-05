@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties and Events - WinForms Flyout Screen
 description: Learn the most important properties for changing the Flyout Screen appearance and behavior.
+components: ["splashscreen"]
 slug: flyout-properties-events
 tags: properties,and,events
 published: True

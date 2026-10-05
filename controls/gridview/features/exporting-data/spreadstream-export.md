@@ -2,6 +2,7 @@
 title: Export to Excel with GridViewSpreadStreamExport
 page_title: Export to Excel with GridViewSpreadStreamExport - WinForms GridView Control
 description: WinForms GridView utilizes the RadSpreadStreamProcessing library to export grids that contain a significant amount of data.
+components: ["gridview"]
 slug: winforms/gridview/exporting-data/stream-export
 tags: spread,export,excel,xlsx
 published: True

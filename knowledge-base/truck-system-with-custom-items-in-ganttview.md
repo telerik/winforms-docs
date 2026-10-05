@@ -1,6 +1,7 @@
 ---
 title: How to Build a Truck System with Custom Task Elements in GanttView
 description: Learn how to achieve a truck system with custom task elements in the WinForms GanttView control.
+components: ["ganttview"]
 type: how-to 
 page_title: How to Build a Truck System with Custom Task Elements in GanttView
 slug: truck-system-with-custom-items-in-ganttview

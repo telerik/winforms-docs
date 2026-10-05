@@ -1,6 +1,7 @@
 ---
 title: Reorder tabbed documents in RadDock
 description: This article demonstrates how to reorder tabbed documents in RadDock
+components: ["dock"]
 type: how-to
 page_title: How to reorder tabbed documents in RadDock
 slug: reorder-tabbed-documents-in-raddock

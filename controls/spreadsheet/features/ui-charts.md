@@ -2,10 +2,11 @@
 title: Charts
 page_title: Charts - WinForms Spreadsheet Control
 description: Check our Charts documentation article for the WinForms Spreadsheet control.
+components: ["spreadsheet"]
 slug: radspreadsheet-features-ui-charts
 tags: chart
 published: True
-position: 0
+position: 1
 ---
 
 # Charts

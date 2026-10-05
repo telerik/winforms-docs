@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms RadialGauge Control
 description: Get familair with the inner structure and organization of the elements which build the WinForms RadialGauge control.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge/structure
 tags: structure
 published: True

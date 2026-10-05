@@ -2,6 +2,7 @@
 title: Settings
 page_title: PDF417 Settings - BarcodeView
 description: PDF417 is a stacked linear barcode symbol format used in a variety of applications, primarily transport, identification cards, and inventory management. 
+components: ["barcodeview"]
 slug: barcodeview-barcode-types-2d-barcodes-pdf417-settings 
 tags: barcode, pdf417
 published: True

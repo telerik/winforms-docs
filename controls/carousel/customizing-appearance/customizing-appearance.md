@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - WinForms Carousel Control
 description: Learn how one can change the WinForms Carousel's appearance. 
+components: ["carousel"]
 slug: winforms/carousel/customizing-appearance
 tags: appearance
 published: True 

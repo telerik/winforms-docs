@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadVirtualGrid
 description: This article shows how you can localize all strings used in RadVirtualGrid.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/localization/localization
 tags: localization
 published: True

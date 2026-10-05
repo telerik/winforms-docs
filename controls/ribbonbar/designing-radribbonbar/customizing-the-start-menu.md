@@ -2,6 +2,7 @@
 title: Customizing the Start Menu
 page_title: Customizing the Start Menu - RadRibbonBar
 description: The Start Menu is is displayed when you click on the Office Button in the upper left corner of the RadRibbonBar.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/getting-started/customizing-the-start-menu
 tags: customizing,the,start,menu
 published: True

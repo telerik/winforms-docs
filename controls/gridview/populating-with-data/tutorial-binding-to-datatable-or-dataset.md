@@ -2,6 +2,7 @@
 title: Tutorial Binding to MS Access DataTable/Database
 page_title: Tutorial Binding to MS Access DataTable/Database - WinForms GridView Control
 description: Learn how you can bind WinForms GridView to MS Access DataTable/Database.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/tutorial:-binding-to-datatable-or-dataset
 tags: tutorial,binding,to,datatable,or,dataset
 published: True

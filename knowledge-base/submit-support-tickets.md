@@ -1,6 +1,7 @@
 ---
 title: How to Get the Most Out of the Telerik UI for WinForms Support 
 description: This article shows how you can get the most out of the Telerik UI for WinForms support   
+components: ["gridview"]
 type: how-to
 page_title: How to Get the Most Out of the Telerik UI for WinForms Support      
 slug: submit-support-tickets

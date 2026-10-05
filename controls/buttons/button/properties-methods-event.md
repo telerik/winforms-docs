@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - WinForms BindingNavigator Control
 description: Learn the most important of the public API that the WinForms Button offers.
+components: ["buttons"]
 slug: winforms/buttons/button/properties,methods, events
 tags: button, properties, methods, events
 published: True

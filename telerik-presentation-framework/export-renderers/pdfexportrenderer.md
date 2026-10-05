@@ -2,6 +2,7 @@
 title: PdfExportRenderer
 page_title: PdfExportRenderer - Telerik Presentation Framework
 description: The PdfExportRenderer class gives you access to the exported document and provides you with the ability to change it prior saving.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/export-renderers/pdfexportrenderer
 tags: pdfexportrenderer
 published: True

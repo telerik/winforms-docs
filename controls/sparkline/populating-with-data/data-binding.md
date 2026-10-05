@@ -2,6 +2,7 @@
 title: Data-Binding
 page_title: Data-Binding - WinForms Sparkline Control
 description: The WinForms Sparkline control supports data-binding directly to IList, IListSource, IBindingList, etc. Learn how to populate it with data. 
+components: ["sparkline"]
 slug: radsparkline-data-binding
 tags: sparkline, data, binding
 published: True

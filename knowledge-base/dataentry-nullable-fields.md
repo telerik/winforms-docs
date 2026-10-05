@@ -1,6 +1,7 @@
 ---
 title: How to Use RadSpinEditor for Nullable Numeric Fields in RadDataEntry
 description: Learn how to replace the default editor in RadDataEntry with a RadSpinEditor
+components: ["dataentry"]
 type: how-to 
 page_title: How to Use RadSpinEditor for Nullable Numeric Fields in RadDataEntry
 slug: dataentry-nullable-fields

@@ -2,10 +2,11 @@
 title: Context Menu
 page_title: Context Menu
 description: Context Menu
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-worksheet-editor-context-menu
 tags: context,menu
 published: True
-position: 1
+position: 4
 ---
 
 # Context Menu

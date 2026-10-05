@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples - WinForms VirtualGrid Control
 description: Additional examples built on top of the WinForms VirtualGrid control.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/developer-focused-examples
 tags: developer, sdk, examples
 published: True

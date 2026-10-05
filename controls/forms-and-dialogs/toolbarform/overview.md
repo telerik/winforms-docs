@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadToolbarForm
 description: Overview
+components: ["toolbarform"]
 slug: radtoolbarform-overview
 tags: overview, toolbar, form
 published: True

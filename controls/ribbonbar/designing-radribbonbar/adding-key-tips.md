@@ -2,6 +2,7 @@
 title: Adding Key Tips
 page_title: Adding Key Tips - RadRibbonBar
 description: Key tips provide a way to add discoverable keyboard shortcuts to the items on the Telerik RadRibbonBar.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/getting-started/adding-key-tips
 tags: adding,key,tips
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms Callout Control
 description: WinForms Callout is like a tool tip with an arrow that can be used to display additional information, warnings, hints, or to highlight relevant data. 
+components: ["callout"]
 slug: callout-overview
 tags: callout
 published: True

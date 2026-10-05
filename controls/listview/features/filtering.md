@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering - WinForms ListView Control
 description: WinForms ListView allows filtering operations in all views.
+components: ["listview"]
 slug: winforms/listview/features/filtering
 tags: filtering
 published: True

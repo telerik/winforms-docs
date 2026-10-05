@@ -1,6 +1,7 @@
 ---
 title: Pan and Zoom Image Control
 description: This article demonstrates how to create a pan and zoom control
+components: ["imageeditor"]
 type: how-to
 page_title: Pan and Zoom Control
 slug: pan-and-zoom-image-control

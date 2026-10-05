@@ -1,6 +1,7 @@
 ---
 title: GridView loading images asynchronously 
 description: GridView loading images asynchronously . Check it now!
+components: ["gridview"]
 type: how-to
 page_title: GridView loading images asynchronously 
 slug: gridview-loading-images-asynchronously

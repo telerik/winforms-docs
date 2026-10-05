@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - WinForms TreeMap Control
 description: Learn how to customize the data items in the RadTreeMap WinForms control.
+components: ["treemap"]
 slug: customizing-appearance
 tags: treemap, customize, appearance, paint
 published: True

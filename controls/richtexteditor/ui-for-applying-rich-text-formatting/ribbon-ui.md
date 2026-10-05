@@ -2,6 +2,7 @@
 title: Ribbon UI
 page_title: Ribbon UI - WinForms RichTextEditor Control
 description: WinForms RichTextEditorRibbonUI is a ribbon control that has been wired to work with the API that RichTextEditor exposes.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui
 tags: ribbon,ui
 published: True

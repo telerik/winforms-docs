@@ -2,6 +2,7 @@
 title: Media Information
 page_title: Media Information - WinForms WebCam Control
 description: Learn about the connected devices and change the WinForms WebCam's device and video format based on this.   
+components: ["webcam"]
 slug: webcam-media-information
 tags: webcam
 published: True

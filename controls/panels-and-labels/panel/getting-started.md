@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Panel Control
 description: Learn how RadPanel can be added as a control either using the Visual Studio designer or be created programmatically 
+components: ["panel"]
 slug: winforms/panels-and-labels/panel/getting-started
 tags: getting started,radpanel
 published: True

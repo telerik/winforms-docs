@@ -2,6 +2,7 @@
 title: Validation
 page_title: Validation - WinForms DataEntry Control
 description: Learn how WinForms DataEntry validates the user input.
+components: ["dataentry"]
 slug: winforms/dataentry/validation
 tags: validation
 published: True

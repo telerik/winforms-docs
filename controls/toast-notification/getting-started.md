@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms ToastNotification
 description: WinForms ToastNotificationManager is built on the Windows' notification system, making it easier for our customers to create and manage notifications.  
+components: ["toastnotificationmanager"]
 slug: toast-notification-getting-started
 tags: toast notification
 published: True

@@ -2,6 +2,7 @@
 title: System Synchronization
 page_title: System Synchronization - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys. 
+components: ["virtualkeyboard"]
 slug: keyboard-system-synchronization
 tags: virtual, keyboard
 published: True

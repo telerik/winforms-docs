@@ -2,6 +2,7 @@
 title: Sizing Properties
 page_title: Sizing Properties - Telerik Presentation Framework
 description: This article shows the properties that can be used for changing or retrieving the layout size settings. 
+components: ["general"]
 slug: winforms/telerik-presentation-framework/layout/sizing-properties
 tags: sizing,properties
 published: True
@@ -60,7 +61,7 @@ The __BoundingRectangle__ property stores the bounds of an element relative to i
 
 ## ControlBoundingRectangle
 
-The __ConrolBoundingRectangle__ property stores the bounds of an element relative to the root of the element tree, i.e. the control hosting the element tree. The transformations applied to the element relative to the root of the element tree are stored in the __TotalTransformationMatrix__ property.
+The __ControlBoundingRectangle__ property stores the bounds of an element relative to the root of the element tree, i.e. the control hosting the element tree. The transformations applied to the element relative to the root of the element tree are stored in the __TotalTransformationMatrix__ property.
 
 ## DesiredSize
 

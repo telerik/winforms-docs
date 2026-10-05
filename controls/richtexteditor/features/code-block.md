@@ -2,6 +2,7 @@
 title: Code Block
 page_title: Code Block - WinForms RichTextEditor Control
 description: Code blocks in WinForms RichTextEditor allow users to add source code fragments to their document and using the existing functionality to format and style those fragments.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/code-block
 tags: code,block
 published: True

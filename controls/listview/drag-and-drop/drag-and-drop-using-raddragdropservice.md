@@ -2,6 +2,7 @@
 title: Drag and Drop using RadDragDropService
 page_title: Drag and Drop using RadDragDropService - WinForms ListView Control
 description: Learn how to achieve drag and drop functionality from WinForms ListView to WinForms GridView and vice versa.
+components: ["listview"]
 slug: winforms/listview/drag-and-drop/drag-and-drop-using-raddragdropservice
 tags: drag,and,drop,using,raddragdropservice
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Indicate RadTextBoxEditor in Grid Filter Cells
 description: Learn how to indicated RadTextBoxEditor in RadGridView's filter cells.
+components: ["gridview"]
 type: how-to 
 page_title: How to Indicate RadTextBoxEditor in Grid Filter Cells
 slug: indicate-textboxeditor-in-grid-filter-cell

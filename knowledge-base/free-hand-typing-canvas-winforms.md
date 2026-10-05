@@ -1,6 +1,7 @@
 ---
 title: Adding a Canvas for Free Hand Typing in WinForms Apps
 description: Learn how to implement a canvas that supports free hand typing in WinForms applications, using InkCanvas.
+components: ["general"]
 type: how-to
 page_title: Implementing Free Hand Typing Canvas in WinForms Applications
 slug: free-hand-typing-canvas-winforms

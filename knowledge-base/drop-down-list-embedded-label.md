@@ -1,6 +1,7 @@
 ---
 title: Show Embedded Label for RadDropDownList
 description: Learn how to enable the embedded label for the WinForms DropDownList.
+components: ["dropdownlist"]
 type: how-to 
 page_title: Show Embedded Label for RadDropDownList
 slug: drop-down-list-embedded-label

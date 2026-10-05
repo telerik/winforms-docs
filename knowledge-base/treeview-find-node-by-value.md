@@ -1,6 +1,7 @@
 ---
 title: Find a RadTreeNode by the Value
 description: This article demonstrates how to find a RadTreeNode by value
+components: ["treeview"]
 type: how-to
 page_title: How to find a RadTreeNode by the value
 slug: treeview-find-node-by-value

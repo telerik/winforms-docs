@@ -2,6 +2,7 @@
 title: Export to Excel via ExcelML Format
 page_title: Export to Excel via ExcelML Format - WinForms GridView Control
 description: WinForms GridView offers exportting to Excel using the ExcelML Format. This format can be read by MS Excel 2002 (MS Office XP) and above.
+components: ["gridview"]
 slug: winforms/gridview/exporting-data/export-to-excel-via-excelml-format
 tags: export,to,excel,via,excelml,format
 published: True

@@ -2,6 +2,7 @@
 title: GridViewTimeOnlyColumn (.NET Only)
 page_title: GridViewTimeOnlyColumn - WinForms GridView Control
 description: WinForms GridViewTimeOnlyColumn provides date entry and formatting for TimeOnly data type.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewtimeonlycolumn
 tags: gridviewtimeonlycolumn
 published: True

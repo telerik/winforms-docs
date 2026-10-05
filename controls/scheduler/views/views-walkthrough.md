@@ -2,6 +2,7 @@
 title: Views Walkthrough
 page_title: Views Walkthrough - WinForms Scheduler Control
 description: Learn how the scheduler view can be changed dynamically.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/views/views-walkthrough
 tags: views,walkthrough
 published: True

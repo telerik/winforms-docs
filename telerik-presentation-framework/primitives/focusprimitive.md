@@ -2,6 +2,7 @@
 title: FocusPrimitive
 page_title: FocusPrimitive - Telerik Presentation Framework
 description: FocusPrimitive supplies user interface cues that an element has received focus.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/primitives/focusprimitive
 tags: focusprimitive
 published: True

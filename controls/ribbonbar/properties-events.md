@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties Methods and Events - WinForms RibbonBar Control
 description: This article describes the more important properties and events of RadRibbonBar.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/properties-and-events
 tags: radribbonbar, properties, events
 published: True

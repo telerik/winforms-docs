@@ -2,6 +2,7 @@
 title: Funnel
 page_title: Funnel - ChartView
 description: Funnel
+components: ["chartview"]
 slug: winforms/chartview-/series-types/funnel
 tags: funnel
 published: True

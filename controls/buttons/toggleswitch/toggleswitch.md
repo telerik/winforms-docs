@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms ToggleSwitch Control
 description: RadToggleSwitch is a control designed to represent two states- e.g. true/false, On/Off, etc.
+components: ["buttons"]
 slug: winforms/buttons/toggleswitch
 tags: toggleswitch
 published: True

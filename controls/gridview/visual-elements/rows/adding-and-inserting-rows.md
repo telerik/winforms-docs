@@ -2,6 +2,7 @@
 title: Adding and Inserting Rows (Unbound Mode)
 page_title: Adding and Inserting Rows - WinForms GridView Control
 description: Learn how to add or insert rows in WinForms GridView at run time. 
+components: ["gridview"]
 slug: winforms/gridview/rows/adding-and-inserting-rows
 tags: adding,and,inserting,rows
 published: True

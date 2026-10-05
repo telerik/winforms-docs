@@ -1,6 +1,7 @@
 ---
 title: Create custom header when exporting RadGridView to PDF
 description: Create custom header when exporting RadGridView to PDF
+components: ["gridview"]
 type: how-to
 page_title: Create custom header when exporting RadGridView to PDF
 slug:  customize-pdf-export-header

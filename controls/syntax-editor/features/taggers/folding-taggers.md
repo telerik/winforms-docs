@@ -2,6 +2,7 @@
 title: Folding Taggers
 page_title: Folding Taggers - RadSyntaxEditor
 description: RadSyntaxEditor works with the underlying document with the help of taggers. 
+components: ["syntaxeditor"]
 slug: syntax-editor-folding-taggers
 tags: features, word, taggers
 published: True

@@ -2,6 +2,7 @@
 title: Export to CSV
 page_title: Export to CSV - WinForms GridView Control
 description: WinForms GridView offers the ExportToCSV exporter to export the data to a text file using the CSV format. 
+components: ["gridview"]
 slug: winforms/gridview/exporting-data/export-to-csv
 tags: export,to,csv
 published: True

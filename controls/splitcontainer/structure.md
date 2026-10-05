@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms SplitContainer
 description: Get familiar with the inner structure and organization of the elements which build the  WinForms SplitContainer control.
+components: ["splitcontainer"]
 slug: winforms/splitcontainer/structure
 tags: splitcontainer
 published: True

@@ -2,6 +2,7 @@
 title: Change the Editor to a Bound RadDropDownList
 page_title: Change the Editor to a Bound RadDropDownList - RadDataLayout
 description: This article shows how you can change the default editor to a bound RadDropDownList.
+components: ["datalayout"]
 slug: winforms/datalayout/change-the-editor-to-a-bound-raddropdownlist
 tags: change,the,editor,to,a,bound,raddropdownlist
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Panels and Transparency - Resizing
 description: Panels and Transparency - Resizing. Check it now!
+components: ["general"]
 type: how-to
 page_title: Panels and Transparency - Resizing
 slug: panels-and-transparency-resizing

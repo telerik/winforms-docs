@@ -1,6 +1,7 @@
 ---
 title: Custom Time Scale in RadScheduler
 description: An example demonstrating how to create a custom time scale in the RadScheduler control  
+components: ["scheduler,reminder"]
 type: how-to 
 page_title: How to Create a Five Minute Time Scale in RadScheduler
 slug: scheduler-custom-time-scale

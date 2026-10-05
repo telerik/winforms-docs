@@ -2,6 +2,7 @@
 title: Disable Audio Recording
 page_title: Disable Audio Recording - RadWebCam
 description: This article shows how to stop the audio recording when capturing a video.   
+components: ["webcam"]
 slug: webcam-mute-recording-audio
 tags: webcam
 published: True

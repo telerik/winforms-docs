@@ -1,6 +1,7 @@
 ---
 title: Collapsing SubPage Items in RadPageView Navigation Mode with Hierarchy
 description: Learn how to collapse all subpage items in RadPageView Navigation Mode with Hierarchy.
+components: ["pageview"]
 type: how-to
 page_title: How to Collapse SubPage Items in RadPageView Navigation Mode with Hierarchy
 slug: collapse-subpage-items-radpageview-navigation-mode-hierarchy

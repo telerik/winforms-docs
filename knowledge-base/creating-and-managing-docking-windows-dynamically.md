@@ -1,6 +1,7 @@
 ---
 title: Creating and managing docking windows dynamically
 description: Creating and managing docking windows dynamically. Check it now!
+components: ["dock"]
 type: how-to
 page_title: Creating and managing docking windows dynamically
 slug: creating-and-managing-docking-windows-dynamically

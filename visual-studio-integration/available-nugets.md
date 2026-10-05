@@ -2,6 +2,7 @@
 title: Available NuGet Packages
 page_title: Available NuGet Packages
 description: Telerik UI for WinForms provides a set of NuGet packages targeting different .NET versions.   
+components: ["general"]
 slug: winforms-available-nugets
 tags: install, nuget
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - Task Dialog
 description: RadTaskDialog is a themable alternative of the windows dialog boxes and the newly released TaskDialog for .NET 5.
+components: ["taskdialog"]
 slug: task-dialog-getting-started
 tags: task dialog
 published: True

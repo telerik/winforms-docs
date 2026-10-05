@@ -2,6 +2,7 @@
 title: Data Binding Basics
 page_title: Data Binding Basics - WinForms Diagram Control
 description: WinForms Diagram offers a flexible mechanism for data binding.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/data-binding/data-binding-basics
 tags: data,binding,basics
 published: True

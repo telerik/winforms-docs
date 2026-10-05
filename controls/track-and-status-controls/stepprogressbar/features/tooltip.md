@@ -2,6 +2,7 @@
 title: ToolTip
 page_title: ToolTip - WinForms StepProgressBar Control
 description: WinForms StepProgressBar 
+components: ["stepprogressbar"]
 slug: stepprogressbar-features-tooltip
 tags: stepprogressbar
 published: True

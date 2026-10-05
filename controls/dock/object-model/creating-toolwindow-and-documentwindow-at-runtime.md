@@ -2,6 +2,7 @@
 title: Creating ToolWindow and DocumentWindow at Runtime
 page_title: Creating ToolWindow and DocumentWindow at Runtime - WinForms Dock Control
 description: Learn how to create ToolWindows and DocumentWindows at runtime.
+components: ["dock"]
 slug: winforms/dock/object-model/creating-toolwindow-and-documentwindow-at-runtime
 tags: creating,toolwindow,and,documentwindow,at,runtime
 published: True

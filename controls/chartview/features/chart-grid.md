@@ -2,6 +2,7 @@
 title: Chart Grid
 page_title: Chart Grid - WinForms ChartView Control
 description: WinForms ChartView areas, which support axes, can render a grid that facilitate the process of determining the values of points afar from the axes. 
+components: ["chartview"]
 slug: winforms/chartview/features/chart-grid
 tags: chart,grid
 published: True

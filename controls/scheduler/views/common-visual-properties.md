@@ -2,6 +2,7 @@
 title: Common Visual Properties
 page_title: Common visual properties - Winforms Scheduler Control
 description: There are some properties which can modify the appearance of the appointments in RadScheduler and are common for all views.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/views/common-visual-properties
 tags: common,visual,properties
 published: True

@@ -2,6 +2,7 @@
 title: Copy/Paste/Cut
 page_title: Copy/Paste/Cut - RadGridView
 description: Describes how you can use the built-in Copy, Paste, Cut functionality.  
+components: ["gridview"]
 slug: winforms/gridview/cut-copy-paste
 tags: copy/paste/cut
 published: True

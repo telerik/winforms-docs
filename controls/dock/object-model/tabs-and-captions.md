@@ -2,6 +2,7 @@
 title: Tabs and Captions
 page_title: Tabs and Captions - WinForms Dock Control
 description: Describes the mostly used Tabs and Captions properties.
+components: ["dock"]
 slug: winforms/dock/object-model/tabs-and-captions
 tags: tabs,and,captions
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Shopping Cart Item for RadListView
 description: Custom implementation demonstrating how one can create a shopping cart item for RadListView. 
+components: ["listview"]
 type: how-to
 page_title: Shopping Cart Item for RadListView
 slug: listview-shopping-cart-item

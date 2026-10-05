@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - UI for WinForms Documentation
 description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
+components: ["checkedlistbox"]
 slug: winforms/checkedlistbox/structure
 tags: checkedlistbox
 published: True

@@ -2,6 +2,7 @@
 title: ToolWindow and DocumentWindow Properties and Methods
 page_title: ToolWindow and DocumentWindow Properties and Methods - WinForms Dock Control
 description: ToolWindow and DocumentWindow most used properties and methods.
+components: ["dock"]
 slug: winforms/dock/object-model/toolwindow-and-documentwindow-properties-and-methods
 tags: toolwindow,and,documentwindow,properties,and,methods
 published: True

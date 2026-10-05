@@ -1,6 +1,7 @@
 ---
 title: Create RadRadioButtonColumn in RadGridView
 description: Create RadRadioButtonColumn. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Create RadRadioButtonColumn in RadGridView
 slug: gridview-radiobuttoncolumn

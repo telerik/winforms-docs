@@ -1,6 +1,7 @@
 ---
 title: Filtering Indicators in GridView
 description: An example demonstrating how additional elements can be added to grid indicating the columns with applied filters
+components: ["gridview"]
 type: how-to
 page_title: How to add elements indicating the applied filters
 slug: filtering-indicators-in-gridview

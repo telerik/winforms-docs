@@ -1,6 +1,7 @@
 ---
 title: Show Summary Values for Collapsed Groups in RadGridView 
 description: This article demonstrates how show summary values inside collapsed group rows in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: Show Summary Values for Collapsed Groups in RadGridView 
 slug: group-rows-with-summary-values

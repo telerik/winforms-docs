@@ -2,6 +2,7 @@
 title: ImageShape
 page_title: ImageShape - Telerik Presentation Framework
 description: ImageShape
+components: ["general"]
 slug: winforms/telerik-presentation-framework/primitives/imageshape
 tags: imageshape
 published: True

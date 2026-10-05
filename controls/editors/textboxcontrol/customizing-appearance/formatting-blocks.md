@@ -2,6 +2,7 @@
 title: Formatting Blocks
 page_title: Formatting Blocks - RadTextBoxControl
 description: Formatting Blocks
+components: ["textboxcontrol"]
 slug: winforms/editors/textboxcontrol/formatting-blocks
 tags: formatting,blocks
 published: True

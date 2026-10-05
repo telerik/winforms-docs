@@ -2,6 +2,7 @@
 title: Bind to ICustomTypeProvider in .NET Framework 4.8 and .NET
 page_title: Bind to ICustomTypeProvider in .NET Framework 4.8 and .NET - RadPivotGrid
 description: Bind to ICustomTypeProvider in .NET Framework 4.8 and .NET
+components: ["pivotgrid"]
 slug: binding-to-icustomtypeprovider
 tags: icustomtypeprovider
 published: True

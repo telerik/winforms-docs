@@ -1,6 +1,7 @@
 ---
 title: Resizing an ActiveX control in RadForm
 description: Resizing an ActiveX control in RadForm. Check it now!
+components: ["form"]
 type: how-to
 page_title: Resizing an ActiveX control in RadForm
 slug: resizing-an-activex-control-in-radform

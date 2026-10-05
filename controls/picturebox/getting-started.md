@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms PictureBox Control
 description: WinForms PictureBox is a control used to display images in different formats. Powered by Telerik UI for WinForms vector images engine and supports both raster & vector (SVG) images.
+components: ["picturebox"]
 slug: radpicturebox-getting-started
 tags: getting-started
 published: True
@@ -29,7 +30,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadPictureBox
 
@@ -45,6 +46,16 @@ You can use the **DefaultSvgImage/DefaultImage** and **DefaultText** properties 
 
 <snippet id='picturebox-pictureboxgettingstarted-defaultimageandtext-cs' />
 <snippet id='picturebox-pictureboxgettingstarted-defaultimageandtext-vb' />
+
+To change the color of the default text, set the `ForeColor` property of the `NoPictureTextElement`:
+
+````C#
+this.radPictureBox1.PictureBoxElement.NoPictureTextElement.ForeColor = System.Drawing.Color.Red;
+````
+
+````VB.NET
+Me.radPictureBox1.PictureBoxElement.NoPictureTextElement.ForeColor = System.Drawing.Color.Red
+````
 
 
 

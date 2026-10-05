@@ -1,6 +1,7 @@
 ---
 title: Create an editable summary row.
 description: This article shows how to create an editable summary row.
+components: ["gridview"]
 type: how-to
 page_title: How to Create a Custom Editable Summary Row.
 slug: gridview-edit-summary-row

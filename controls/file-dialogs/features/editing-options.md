@@ -2,6 +2,7 @@
 title: Editing Options
 page_title: Editing Options - File Dialogs
 description: File Dialogs represent the three most commonly used file and folder manipulation dialogs
+components: ["filedialogs"]
 slug: file-dialogs-editing-options
 tags: filedialogs, editing, options
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Preventing Focus on RadGridView in WinForms
 description: Learn how to use a custom approach to prevent focus on RadGridView in WinForms.
+components: ["gridview"]
 type: how-to
 page_title: How to Stop RadGridView from Receiving Focus in WinForms
 slug: gridview-prevent-focus

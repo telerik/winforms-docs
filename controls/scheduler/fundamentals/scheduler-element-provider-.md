@@ -2,6 +2,7 @@
 title: Scheduler Element Provider 
 page_title: Scheduler Element Provider - WinForms Scheduler Control
 description: The SchedulerElementProvider class provides means for changing the default WinForms Scheduler elements.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/fundamentals/scheduler-element-provider-
 tags: scheduler,element,provider,
 published: True

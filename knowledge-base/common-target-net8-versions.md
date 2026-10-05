@@ -1,6 +1,7 @@
 ---
 title: Assemblies targeting Net80 are missing
 description: Assemblies targeting Net80 are missing.
+components: ["general"]
 type: troubleshooting
 page_title: Assemblies targeting Net80 are missing
 slug: common-target-net8-version

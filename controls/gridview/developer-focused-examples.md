@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples - WinForms GridView Control
 description: Additional examples built on top the WinForms GridView control.
+components: ["gridview"]
 slug: winforms/gridview/developer-focused-examples
 tags: developer, sdk, examples
 published: True

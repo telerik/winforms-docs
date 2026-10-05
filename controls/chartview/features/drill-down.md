@@ -2,6 +2,7 @@
 title: Drill Down
 page_title: Drill down - ChartView
 description: The drill down functionality of a chart allows users to click on a graphical element (bar, pie segment etc.), representing some data, in order to navigate to another view which contains different data than the first one.
+components: ["chartview"]
 slug: winforms/chartview-/features/drill-down
 tags: drill,down
 published: True

@@ -2,6 +2,7 @@
 title: Update Recently Used Fonts list
 page_title: Update Recently Used Fonts list
 description: Update Recently Used Fonts list
+components: ["fontdropdownlist"]
 slug: radfontdropdownlist-update-recently-used-font-list
 tags: drawing
 published: True

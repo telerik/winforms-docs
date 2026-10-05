@@ -2,6 +2,7 @@
 title: Custom Shapes
 page_title: Custom Shapes - Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/custom-shape
 tags: diamond-shape
 published: True
@@ -53,7 +54,7 @@ End Class
  
 {{endregion}} 
 
-Figure 1 shows the result from the above code. the shape is applied to a RadPanel.
+Figure 1 shows the result from the above code. The shape is applied to a RadPanel.
 
 >caption Figure 1: The cross shape.
 

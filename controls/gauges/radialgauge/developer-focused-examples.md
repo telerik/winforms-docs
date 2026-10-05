@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples - WinForms RadialGauge Control
 description: Additional examples built on top the Telerik UI for WinForms RadRadialGauge control.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge/developer-focused-examples
 tags: developer, sdk, examples
 published: True

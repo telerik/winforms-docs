@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms Chat Control
 description: The WinForms RadChat control provides rich conversational experience that goes beyond the natural language understanding and personality of your chatbot. 
+components: ["chat"]
 slug: winforms/chat/overview 
 tags: chat
 published: True

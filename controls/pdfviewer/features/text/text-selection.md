@@ -2,6 +2,7 @@
 title: Text Selection
 page_title: Text Selection - WinForms PdfViewer Control
 description: WinForms PdfViewer supports selection both through the UI and programmatically.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/text/text-selection
 tags: text,selection
 published: True

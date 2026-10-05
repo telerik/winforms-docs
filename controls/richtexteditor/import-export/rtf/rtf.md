@@ -2,6 +2,7 @@
 title: Rtf
 page_title: Rtf - RadRichTextEditor
 description: Rtf is a proprietary document file format developed by Microsoft for creating cross-platform documents and it is supported by RadRichTextEditor
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/rtf/rtf
 tags: import/export
 published: True

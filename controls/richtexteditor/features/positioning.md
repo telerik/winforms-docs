@@ -2,6 +2,7 @@
 title: Positioning
 page_title: Positioning - WinForms RichTextEditor Control
 description: The positioning feature in the WinForms RichTextEditor is used to navigate through document's content and to get information about the document's elements at a specific position.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/positioning
 tags: positioning
 published: True

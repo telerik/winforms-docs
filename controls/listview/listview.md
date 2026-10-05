@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms ListView Control
 description: WinForms ListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+components: ["listview"]
 slug: winforms/listview
 tags: listview
 published: True
@@ -77,5 +78,5 @@ You can review below the [Key Features]({%slug winforms/listview%}#key-features)
 
 * [Getting Started]({%slug winforms/listview/getting-started%})
 * [Structure]({%slug winforms/listview/structure%})
-* [Desing Time]({%slug winforms/listview/working-with-design-time/design-time%})
+* [Design Time]({%slug winforms/listview/working-with-design-time/design-time%})
 * [Demo](https://telerik-winforms-demos.s3.amazonaws.com/TelerikWinFormsExamplesLauncher.exe)

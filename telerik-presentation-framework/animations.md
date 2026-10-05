@@ -2,6 +2,7 @@
 title: Animations
 page_title: Animations - Telerik Presentation Framework
 description: Learn how you can animate any elements using the Telerik Presentation Framework.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/animations
 tags: animations
 published: True
@@ -19,7 +20,7 @@ Using the [Telerik Presentation Framework]({%slug winforms/telerik-presentation-
 
 * Next is the __end value__.
 
-* The forth argument takes the __number of frames__.
+* The fourth argument takes the __number of frames__.
 
 * And the last argument is the __time interval between frames__ in milliseconds
 

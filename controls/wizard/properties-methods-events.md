@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadWizard
 description: Events
+components: ["wizard"]
 slug: winforms/wizard/events
 tags: events
 published: True

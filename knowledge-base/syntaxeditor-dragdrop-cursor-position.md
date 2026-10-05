@@ -1,6 +1,7 @@
 ---
 title: Drag and Drop Text with Cursor Movement in RadSyntaxEditor for WinForms
 description: This article provides a solution for dragging and dropping text into RadSyntaxEditor control for WinForms while moving the cursor to the desired drop position.
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Drag and Drop Text with Cursor Movement in RadSyntaxEditor for WinForms
 slug: syntaxeditor-dragdrop-cursor-position

@@ -2,6 +2,7 @@
 title: Windows11 Themes Blending
 page_title: Windows11 Themes Blending - UI for WinForms Tools
 description: Color blending the Windows11 themes in the Visual Style Builder tool.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/windows11-themes-blending
 tags: color, blending, windows11
 published: True

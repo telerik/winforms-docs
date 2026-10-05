@@ -2,10 +2,11 @@
 title: Imagery sets
 page_title: Imagery sets - RadMap
 description: This article describes the BingRestMapProvdider imagery sets.
+components: ["map"]
 slug: map-bing-imagery-sets
 tags: map, providers
 published: True
-position: 1 
+position: 2 
 ---
 
 # Imagery sets

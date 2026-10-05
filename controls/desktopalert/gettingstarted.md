@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms DesktopAlert Control
 description: WinForms DesktopAlert component displays a small pop-up window on the screen to notify the user that a specific event has occurred in the application. 
+components: ["desktopalert"]
 slug: winforms/desktopalert/gettingstarted
 tags: gettingstarted
 published: True
@@ -34,7 +35,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadDesktopAlert
 

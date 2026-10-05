@@ -2,6 +2,7 @@
 title: KB Related Articles
 page_title: KB Related Articles - Telerik UI for WinForms
 description: Custom examples built on top of the Telerik UI for WinForms control.
+components: ["progressbar,rating,scrollbar,stepprogressbar,trackbar,waitingbar"]
 slug: track-and-status-controls-kb-related-articles
 tags: kb, sdk, examples
 position: 1000

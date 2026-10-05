@@ -2,6 +2,7 @@
 title: Understanding RadDock
 page_title: Understanding RadDock - WinForms Dock Control
 description: Learn what is WinForms RadDock and how it can be used. 
+components: ["dock"]
 slug: winforms/dock/architecture-and-features/understanding-raddock
 tags: understanding,raddock
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Load SVG Images in RadGridView Column
 description: Learn how to load vector images in the WinForms GridView. 
+components: ["gridview"]
 type: how-to
 page_title: How to Load SVG Images in RadGridView Column
 slug: svg-image-column-in-gridview

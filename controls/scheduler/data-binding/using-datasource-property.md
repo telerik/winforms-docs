@@ -2,6 +2,7 @@
 title: Using DataSource property
 page_title: Using DataSource property - WinForms Scheduler Control
 description: WinForms Scheduler offers DataSource property allowing you to bind to objects that inherit the base abstract SchedulerDataSource class.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/data-binding/using-datasource-property
 tags: using,datasource,property
 published: True

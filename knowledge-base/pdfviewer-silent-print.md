@@ -1,6 +1,7 @@
 ---
 title: PDF Silent Print
 description: This article shows ho you can print a pdf document without showing it to the user.
+components: ["pdfviewer"]
 type: how-to
 page_title: PDF Silent Print
 slug: pdfviewer-silent-print

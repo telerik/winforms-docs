@@ -1,6 +1,7 @@
 ---
 title: Live Data in RadVirtualGrid
 description: Learn how to display live data in the WinForms VirtualGrid. 
+components: ["virtualgrid"]
 type: how-to
 page_title: Live Data in RadVirtualGrid
 slug: live-data-in-virtualgrid

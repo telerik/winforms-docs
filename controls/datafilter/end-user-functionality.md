@@ -2,6 +2,7 @@
 title: End-user Functionality 
 page_title: End-user Functionality - WinForms DataFilter Control
 description: Learn how the end user can create filter expressions using WinForms DataFilter. 
+components: ["datafilter"]
 slug: winforms/datafilter/end-user-functionality
 tags: data, filter
 published: True

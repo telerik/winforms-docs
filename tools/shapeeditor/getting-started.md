@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - UI for WinForms Tools
 description: Getting Started with RadShapeEditor. This tutorial demonstrates modifying the shape of a RadButton.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/shapeeditor/getting-started
 tags: getting,started
 published: True

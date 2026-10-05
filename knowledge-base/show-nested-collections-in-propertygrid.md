@@ -1,6 +1,7 @@
 ---
 title: How to Show Nested Collections in RadPropertyGrid
 description: Learn how to copy the image stored in the cells in RadGridView
+components: ["propertygrid"]
 type: how-to
 page_title: How to Show Nested Collections in RadPropertyGrid
 slug: show-nested-collections-in-propertygrid

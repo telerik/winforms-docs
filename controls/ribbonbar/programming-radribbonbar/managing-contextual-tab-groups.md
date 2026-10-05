@@ -2,6 +2,7 @@
 title: Managing Contextual Tab Groups
 page_title: Managing Contextual Tab Groups - RadRibbonBar
 description: Managing Contextual Tab Groups
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/programming-radribbonbar/managing-contextual-tab-groups
 tags: managing,contextual,tab,groups
 published: True

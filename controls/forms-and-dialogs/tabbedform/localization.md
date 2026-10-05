@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
+components: ["tabbedform"]
 slug: radtabbedform-localization
 tags: radtabbedform
 published: True

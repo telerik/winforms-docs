@@ -2,6 +2,7 @@
 title: Switching Editors
 page_title: Switching Editors - RadCardView
 description: RadCardView is a control developed on top of Telerik Presentation Framework which provides a way for displaying and editing text data as well as performing layout modifications
+components: ["cardview"]
 slug: winforms/cardview/editors/switching-editors
 tags: switching editors
 published: True

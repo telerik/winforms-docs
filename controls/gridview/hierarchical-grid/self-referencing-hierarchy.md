@@ -2,6 +2,7 @@
 title: Self-Referencing Hierarchy
 page_title: Self-Referencing Hierarchy - WinForms GridView Control
 description: Learn how you can bind WinForms GridView to self-referencing hierarchy data.
+components: ["gridview"]
 slug: winforms/gridview/hierarchical-grid/self-referencing-hierarchy
 tags: self-referencing,hierarchy, treelist
 published: True

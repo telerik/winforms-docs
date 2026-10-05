@@ -2,6 +2,7 @@
 title: Appointment Styles
 page_title: Appointment Styles - WinForms Scheduler Control
 description: WinForms Scheduler comes with Modern styles for its appointments corresponding to the colors of the applied theme.
+components: ["scheduler,reminder"]
 slug: scheduler-appointment-styles
 tags: modern, color, style, appointment
 published: True

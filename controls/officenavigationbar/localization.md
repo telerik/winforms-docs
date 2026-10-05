@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms OfficeNavigationBar Control
 description: Learn how you can localize the strings used in WinForms OfficeNavigationBar.
+components: ["officenavigationbar"]
 slug: officenavigationbar-localization
 tags: localization
 published: True

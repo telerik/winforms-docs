@@ -1,6 +1,7 @@
 ---
 title: Edit or Delete a message using RadContextMenu
 description: Edit/Delete RadChat message using RadContextMenu
+components: ["chat"]
 type: how-to
 page_title: Edit or Delete a message using RadContextMenu
 slug:  chat-edit-delete-message

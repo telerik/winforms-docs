@@ -2,6 +2,7 @@
 title: Custom Items
 page_title: Custom Items
 description: RadChat is a control that provides conversational experience
+components: ["chat"]
 slug: winforms/chat/customizing-appearance/custom-items
 tags: chat
 published: True

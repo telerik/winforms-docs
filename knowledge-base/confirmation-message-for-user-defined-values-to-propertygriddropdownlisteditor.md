@@ -1,6 +1,7 @@
 ---
 title: How to Show Confirmation Message for User-Defined Values to PropertyGridDropDownListEditor
 description: This article shows how you can show a confirmation message for user-defined values to the PropertyGridDropDownListEditor.
+components: ["propertygrid"]
 type: how-to
 page_title: How to Show Confirmation Message for User-Defined Values to PropertyGridDropDownListEditor
 slug: confirmation-message-for-user-defined-values-to-propertygriddropdownlisteditor

@@ -2,6 +2,7 @@
 title: SparkAreaSeries
 page_title: SparkAreaSeries - WinForms Sparkline Control
 description: SparkAreaSeries plots its data points using CategoricalSparkDataPoints. learn how to fill it with data.
+components: ["sparkline"]
 slug: radsparkline-sparkareaseries
 tags: sparkline
 published: True

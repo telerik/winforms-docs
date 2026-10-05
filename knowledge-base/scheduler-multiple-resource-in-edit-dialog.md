@@ -1,6 +1,7 @@
 ---
 title: How to Display Multiple Resources in EditAppointmentDialog
 description: This article demonstrates how to provide UI for multiple resource in EditAppointmentDialog
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to Display Multiple Resources in EditAppointmentDialog
 slug: scheduler-multiple-resource-in-edit-dialog

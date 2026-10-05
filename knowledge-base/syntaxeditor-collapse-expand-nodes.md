@@ -1,6 +1,7 @@
 ---
 title: Collapsing and Expanding All Nodes in SyntaxEditor
 description: Learn the approach to collapse and expand all nodes in SyntaxEditor for UI for WinForms.
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Collapse and Expand Nodes in SyntaxEditor for WinForms
 meta_title: How to Collapse and Expand Nodes in SyntaxEditor for WinForms

@@ -1,6 +1,7 @@
 ---
 title: Customizing Filter Text for Enum and Bool Columns in RadGridView
 description: Learn how to customize the filter menu text for bool and enum columns in RadGridView for WinForms, replacing default values with user-friendly labels.
+components: ["gridview"]
 type: how-to
 page_title: How to Change Filter Menu Text for Bool and Enum Columns in RadGridView
 meta_title: Changing Filter Menu Text for Bool and Enum Columns in RadGridView

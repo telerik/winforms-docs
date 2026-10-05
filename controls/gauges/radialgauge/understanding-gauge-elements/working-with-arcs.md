@@ -2,6 +2,7 @@
 title: Working with Arcs
 page_title: Working with arcs - WinForms RadialGauge Control
 description: RadialGaugeArc is rendered as a continuous band spanning the entire sweep angle. The arc is also used as a basis for the placement of child elements, such as the tick marks and labels.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge/understanding-gauge-elements/working-with-arcs
 tags: working,with,arcs
 published: True

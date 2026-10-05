@@ -2,6 +2,7 @@
 title: Save and Load Layout
 page_title: Save and Load Layout - Virtual Keyboard
 description: RadVirtualKeyboard is a software component that allows the input of characters without the need for physical keys. 
+components: ["virtualkeyboard"]
 slug: keyboard-save-and-load-layout
 tags: virtual, keyboard
 published: True

@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms ListControl
 description: Learn how to populate WinForms ListControl with data at design time.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/design-time
 tags: design, time
 published: True

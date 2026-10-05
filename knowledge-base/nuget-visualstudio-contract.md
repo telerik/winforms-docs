@@ -1,6 +1,7 @@
 ---
 title: How To Deal with Exceptions Related to NuGet.VisualStudio.Contracts Version=5.11.3.1
 description: Upgrade Wizard fails with error Could not load file or assembly NuGet.VisualStudio.Contracts. 
+components: ["general"]
 type: how-to
 page_title: How To Deal with Exception related to NuGet.VisualStudio.Contracts Version=5.11.3.1
 slug: nuget-visualstudio-contract

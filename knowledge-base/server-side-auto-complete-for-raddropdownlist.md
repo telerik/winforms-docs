@@ -1,6 +1,7 @@
 ---
 title: Server side auto complete for RadDropDownList
 description: Server side auto complete for RadDropDownList. Check it now!
+components: ["dropdownlist"]
 type: how-to
 page_title: Server side auto complete for RadDropDownList
 slug: server-side-auto-complete-for-raddropdownlist

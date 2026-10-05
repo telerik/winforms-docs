@@ -1,6 +1,7 @@
 ---
 title: How to show tool tips when the cell's text doesn't fit
 description: This article demonstrates how to show tool tips when the cell's text doesn't fit the column
+components: ["gridview"]
 type: how-to
 page_title: How to show tool tips when the cell's text doesn't fit
 slug: show-tooltips-when-cell-text-does-not-fit

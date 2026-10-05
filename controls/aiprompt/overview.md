@@ -2,6 +2,7 @@
 title: Overview
 page_title: AIPrompt - Overview
 description: Check our &quot;Overview&quot; documentation article for the RadAIPrompt control.
+components: ["aiprompt"]
 slug: aiprompt-overview
 tags: AIPrompt
 published: True

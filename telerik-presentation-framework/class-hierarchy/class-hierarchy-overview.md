@@ -2,6 +2,7 @@
 title: Class Hierarchy Overview
 page_title: Class Hierarchy Overview - Telerik Presentation Framework
 description: The Class Hierarchy Overview illustrates a diagram which contains an abbreviated class diagram of the class inheritance starting with RadObject.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/class-hierarchy/class-hierarchy-overview
 tags: class,hierarchy,overview
 published: True
@@ -11,7 +12,7 @@ previous_url: tpf-class-hierarchy-overview
 
 # Class Hierarchy Overview
 
-The diagram below contains an abbreviated class diagram of the class inheritance starting with __RadObject__ and building up to __RadControl__. __RadProperty__ and __RadPropertyMetaData__ are not shown.
+The diagram below contains an abbreviated class diagram of the class inheritance starting with __RadObject__ and building up to __RadControl__. __RadProperty__ and __RadPropertyMetadata__ are not shown.
 
 ![Telerik UI for WinForms Telerik Presentation Framework class hierarchy diagram](images/tpf-class-hierarchy-overview001.png)
 

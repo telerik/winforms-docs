@@ -2,6 +2,7 @@
 title: Tiles Drag and Drop
 page_title: Tiles Drag and Drop - WinForms Panorama Control
 description: WinForms Panorama handles the whole drag and drop operation by its TileDragDropService.
+components: ["panorama"]
 slug: winforms/panorama/drag-and-drop
 tags: panorama
 published: True

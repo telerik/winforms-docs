@@ -2,6 +2,7 @@
 title: Load Data on Demand in Self-Referencing Hierarchy RadGrid
 page_title: Load Data on Demand in Self-Referencing Hierarchy RadGrid
 description: Learn how you load data on demand using self-referencing hierarchy in Telerik RadGridView.
+components: ["gridview"]
 slug: winforms/gridview/hierarchical-grid/load-on-demand-self-referencing-hierarchy
 tags: self-referencing,hierarchy, lazy, loading, data, on-demand
 published: True

@@ -2,6 +2,7 @@
 title: LinePrimitive
 page_title: LinePrimitive - Telerik Presentation Framework
 description: LinePrimitive is actually a variation of a filled rectangle and can display shadow.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/primitives/lineprimitive
 tags: lineprimitive
 published: True

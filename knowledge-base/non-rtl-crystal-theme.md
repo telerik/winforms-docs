@@ -2,6 +2,7 @@
 title: Non RTL Crystal Theme
 page_title: Non RTL Crystal Theme
 description: Non RTL Crystal Theme
+components: ["general"]
 slug: non-rtl-crystal-theme
 tags: common, crystal, theme, rtl
 published: True

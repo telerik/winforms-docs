@@ -2,6 +2,7 @@
 title: Using XamlFormatProvider
 page_title: Using XamlFormatProvider - WinForms RichTextEditor Control
 description: XamlFormatProvider makes it easy to import and export RadDocument to/from XAML format, preserving as much as possible of the document structure and formatting in WinForms RichTextEditor. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/xaml/xamlformatprovider
 tags: import/export
 published: True

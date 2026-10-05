@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection - RadGanttView
 description: The today indicator represents the current date and time in the graphical view of RadGanttView.
+components: ["ganttview"]
 slug: winforms/ganttview/ganttview-selection
 tags: selection
 published: True

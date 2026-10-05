@@ -1,6 +1,7 @@
 ---
 title: How to Check Incorrect Words in RadTextBox
 description: This article demonstrates how to check incorrect word in RadTextBox
+components: ["textbox"]
 type: how-to
 page_title: How to Filter a GridViewComboBoxColumn by DisplayMember 
 slug: how-to-check-incorrect-words-in-radtextbox

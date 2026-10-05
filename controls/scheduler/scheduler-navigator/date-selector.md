@@ -2,6 +2,7 @@
 title: Date Selector
 page_title: Date Selector - RadScheduler
 description: RadSchedulerNavigator offers a date selector where selecting a date inside the calendar will change the start date of the active view. 
+components: ["scheduler,reminder"]
 slug: scheduler-date-selector
 tags: date, selector
 published: True

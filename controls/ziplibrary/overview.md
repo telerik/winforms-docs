@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadZipLibrary
 description: With the Zip Library you can compress data like images, docx or pdf files and send them over the wire.
+components: ["general"]
 slug: radziplibrary-overview
 tags: overview
 published: False

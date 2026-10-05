@@ -2,6 +2,7 @@
 title: Settings
 page_title: Settings - WinForms RichTextEditor Control
 description: RtfFormatProvider allows for import of RTF documents and respectively export of WinForms RichTextEditor to RTF. 
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/import-export/rtf/settings
 tags: import/export
 published: True

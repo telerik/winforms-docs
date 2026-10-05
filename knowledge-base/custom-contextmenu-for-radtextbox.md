@@ -1,6 +1,7 @@
 ---
 title: How to Add Custom ContextMenu for RadTextBox
 description: Learn how to achieve a custom contextmenu for the WinForms RadTextBox.
+components: ["textbox"]
 type: how-to 
 page_title: How to Add Custom ContextMenu for RadTextBox
 slug: custom-contextmenu-for-radtextbox

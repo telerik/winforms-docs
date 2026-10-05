@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms PropertyGrid Control
 description: WinForms PropertyGrid for WinForms displays the properties of a given object in a user-friendly way allowing the end-user to edit these properties using our editors.
+components: ["propertygrid"]
 slug: winforms/propertygrid/getting-started
 tags: getting,started
 published: True

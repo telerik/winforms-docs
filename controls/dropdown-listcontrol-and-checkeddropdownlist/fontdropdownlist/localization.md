@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadFontDropDownList
 description: RadFontDropDownList represents a drop down list with built-in fonts that are installed on the system.   
+components: ["fontdropdownlist"]
 slug: winforms/editors/fontdropdownlist/localization
 tags: font,editor
 published: True

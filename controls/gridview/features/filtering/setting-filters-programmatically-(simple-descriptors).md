@@ -2,6 +2,7 @@
 title: Setting Filters Programmatically (simple descriptors)
 page_title: Setting Filters Programmatically (simple descriptors) - WinForms GridView Control
 description: Learn how to set filters programmatically (only simple descriptors) in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/filtering/setting-filters-programmatically-(simple-descriptors)
 tags: setting,filters,programmatically,(simple,descriptors)
 published: True

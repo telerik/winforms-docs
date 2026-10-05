@@ -1,6 +1,7 @@
 ---
 title: How to Access RadSpreadsheet's Editor  
 description: This article demonstrates how to access the editor in RadSpreadsheet 
+components: ["spreadsheet"]
 type: how-to
 page_title: How to Access RadSpreadsheet's Editor  
 slug: access-editor-in-spreadsheet

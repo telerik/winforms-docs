@@ -1,6 +1,7 @@
 ---
 title: Highlight Form Fields in RadPdfViewer
 description: Highlight Form Fields in RadPdfViewer
+components: ["pdfviewer"]
 type: how-to
 page_title: Highlight Form Fields in RadPdfViewer
 slug: pdfviewer-highlight-form-fields

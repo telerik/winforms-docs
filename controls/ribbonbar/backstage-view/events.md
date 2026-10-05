@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - RadRibbonBar
 description: There are various events to which you can subscribe and modify BackstageView’s behavior.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/overview/events
 tags: events
 published: True

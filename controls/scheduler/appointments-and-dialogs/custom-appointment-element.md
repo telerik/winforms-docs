@@ -2,6 +2,7 @@
 title: Custom Appointment Element
 page_title: Custom Appointment Element - RadScheduler
 description: This article demonstrates a sample approach how to create custom AppointmentElement 
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appointments-and-dialogs/custom-appointment-element
 tags: custom, appointment, element
 published: True

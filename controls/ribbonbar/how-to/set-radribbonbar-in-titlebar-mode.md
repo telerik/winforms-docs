@@ -2,6 +2,7 @@
 title: Set RadRibbonBar in Titlebar Mode
 page_title: Set RadRibbonBar in Titlebar Mode - RadRibbonBar
 description: RadRibbonBar can also be ser in title bar mode.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/how-to/set-radribbonbar-in-titlebar-mode
 tags: set,radribbonbar,in,titlebar,mode
 published: True

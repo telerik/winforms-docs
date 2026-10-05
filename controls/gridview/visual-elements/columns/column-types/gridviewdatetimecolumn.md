@@ -2,6 +2,7 @@
 title: GridViewDateTimeColumn
 page_title: GridViewDateTimeColumn - WinForms GridView Control
 description: WinForms GridViewDateTimeColumn provides date entry and formatting for DateTime data types.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewdatetimecolumn
 tags: gridviewdatetimecolumn
 published: True

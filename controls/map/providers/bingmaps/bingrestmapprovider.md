@@ -2,6 +2,7 @@
 title: BingRestMapProvider
 page_title: BingRestMapProvider - WinForms Map Control
 description: WinForms Map can visualize tile data from the Bing Maps REST service.
+components: ["map"]
 slug: winforms/map/providers/bingrestmapprovider
 tags: map, providers
 published: True

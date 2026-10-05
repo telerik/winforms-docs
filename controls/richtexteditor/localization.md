@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms RichTextEditor Control
 description: To change the default English localization provider in WinForms RichTextEditor, you should use the CurrentProvider static property of the RichTextBoxLocalizationProvider class.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor/localization
 tags: localization
 published: True

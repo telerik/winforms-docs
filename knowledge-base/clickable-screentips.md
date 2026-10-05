@@ -1,6 +1,7 @@
 ---
 title: Clickable Screentips in RadGridView
 description: This article shows how to achieve clickable screentips in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: Clickable Screentips in RadGridView
 slug: clickable-screentips

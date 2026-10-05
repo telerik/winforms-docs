@@ -2,6 +2,7 @@
 title: Resizing Rows Programmatically
 page_title: Resizing Rows Programmatically- RadVirtualGrid
 description: This article shows how you can resize the rows in RadVirtualGrid in the code.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/rows/resizing-rows-programmatically
 tags: virtualgrid, rows, resizing
 published: True

@@ -2,6 +2,7 @@
 title: Menu Designer
 page_title: Menu Designer - Winforms Menu
 description: Get familiar with the design time options that the WinForms Menu offers.
+components: ["menu"]
 slug: winforms/menus/menu/design-time/menu-designer
 tags: menu,designer
 published: True

@@ -2,6 +2,7 @@
 title: Download New Version
 page_title: Download New Version
 description: The Latest Version Acquirer tool automatically retrieves the freshest Telerik UI for WinForms distribution, available on the Telerik website.
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/visual-studio-extensions/latest-version-acquirer
 tags: automatic,latest,version,retrieval,acquirer
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to create GridViewMarkupEditorColumn
 description: This article demonstrates how to create a GridViewMarkupEditorColumn
+components: ["gridview"]
 type: how-to
 page_title: How to create GridViewMarkupEditorColumn
 slug: create-gridview-markupeditor-column

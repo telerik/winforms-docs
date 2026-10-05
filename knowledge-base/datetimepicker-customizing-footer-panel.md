@@ -1,6 +1,7 @@
 ---
 title: Customizing Close Button and Footer Panel in DateTimePicker for UI for WinForms
 description: Learn how to customize the Close Button and Footer Panel in the DateTimePicker for UI for WinForms, including steps to hide the resize bar and set colors.
+components: ["gridview"]
 type: how-to
 page_title: How to Customize Close Button and Footer Panel in DateTimePicker for UI for WinForms
 meta_title: How to Customize Close Button and Footer Panel in DateTimePicker for UI for WinForms

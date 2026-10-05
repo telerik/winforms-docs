@@ -2,6 +2,7 @@
 title: Layout
 page_title: Layout - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram-(beta)/features/layout
 tags: layout
 published: True

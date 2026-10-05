@@ -2,6 +2,7 @@
 title: Caret
 page_title: Caret - RadSyntaxEditor
 description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience
+components: ["syntaxeditor"]
 slug: syntax-editor-features-caret
 tags: caret
 published: True

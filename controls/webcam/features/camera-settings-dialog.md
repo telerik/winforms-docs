@@ -2,6 +2,7 @@
 title: Settings Dialog
 page_title: Settings Dialog - WinForms WebCam Control
 description: WinForms WebCam allows you to control the settings of the connected camera via the CameraSettingsDialog.
+components: ["webcam"]
 slug: camera-settings-dialog
 tags: webcam
 published: True

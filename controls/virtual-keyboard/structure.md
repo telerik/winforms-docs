@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Virtual Keyboard
 description: Get familiar with the inner structure and organization of the elements which build the WinForms VirtualKeyboard control. 
+components: ["virtualkeyboard"]
 slug: winforms-virtual-keyboard-structure
 tags: virtual, keyboard, form
 published: True

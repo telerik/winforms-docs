@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms WaitingBar Control
 description: WinForms WaitingBar is designed to indicate that a long-running operation with indeterminate length is undergoing.
+components: ["waitingbar"]
 slug: winforms/track-and-status-controls/waitingbar
 tags: waitingbar
 published: True

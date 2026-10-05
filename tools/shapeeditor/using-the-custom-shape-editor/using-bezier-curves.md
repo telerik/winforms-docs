@@ -2,6 +2,7 @@
 title: Using Bezier Curves
 page_title: Using Bezier Curves - UI for WinForms Tools
 description: This article describes how one can use Bezier Curves in RadShapeEditor.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/shapeeditor/using-the-custom-shape-editor/using-bezier-curves
 tags: using,bezier,curves
 published: True

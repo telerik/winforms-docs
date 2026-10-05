@@ -2,6 +2,7 @@
 title: GridViewCalculatorColumn
 page_title: GridViewCalculatorColumn - WinForms GridView Control
 description: GridViewCalculatorColumn allows WinForms GridView to edit numbers using popup with calculator.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewcalculatorcolumn
 tags: gridviewcalculatorcolumn
 published: True

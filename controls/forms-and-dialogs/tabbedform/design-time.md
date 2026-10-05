@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms TabbedForm
 description: Learn what are the design time options of the WinForms TabbedForm.  
+components: ["tabbedform"]
 slug: radtabbedform-design-time
 tags: radtabbedform
 published: True

@@ -2,6 +2,7 @@
 title: Formatting Group Header Row
 page_title: Formatting Group Header Row - WinForms GridView Control
 description: WinForms GridView offers the GroupSummaryEvaluate event to modify the header text of the group rows. 
+components: ["gridview"]
 slug: winforms/gridview/grouping/formatting-group-header-row
 tags: formatting,group,header,row
 published: True

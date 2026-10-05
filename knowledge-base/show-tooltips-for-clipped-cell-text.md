@@ -1,6 +1,7 @@
 ---
 title: Show Tooltips for Clipped Cell's Text
 description: This article demonstrates how show tooltips when the cell's text is clipped
+components: ["gridview"]
 type: how-to
 page_title: Show Tooltips for Clipped Cell's Text
 slug: show-tooltips-for-clipped-cell-text

@@ -2,6 +2,7 @@
 title: Drag and Drop in bound mode
 page_title: Drag and Drop in bound mode - WinForms ListView Control
 description: WinForms ListView allows achieving items drag and drop functionality in bound mode. Learn how to use the default service.
+components: ["listview"]
 slug: winforms/listview/drag-and-drop/drag-and-drop-in-bound-mode
 tags: drag,and,drop,in,bound,mode
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Difference between GridViewInfo.Rows and GridViewTemplate.Rows
 description: Difference between GridViewInfo.Rows and GridViewTemplate.Rows. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Difference between GridViewInfo.Rows and GridViewTemplate.Rows
 slug: difference-between-gridviewinfo-rows-and-gridviewtemplate-rows

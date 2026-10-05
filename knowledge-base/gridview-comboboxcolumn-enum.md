@@ -1,6 +1,7 @@
 ---
 title: Bind GridViewComboBoxColumn to Enum Type Property
 description: This article shows how to shows enum values in GridViewComboBoxColumn.
+components: ["gridview"]
 type: how-to
 page_title: How to shows enum values in GridViewComboBoxColumn.
 slug: gridview-comboboxcolumn-enum

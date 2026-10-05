@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms TreeView Control
 description: Learn which are the elements used for the nodes in WinForms TreeView, it shows the elements hierarchy as well.
+components: ["treeview"]
 slug: winforms/treeview/structure
 tags: treeview,structure
 published: True

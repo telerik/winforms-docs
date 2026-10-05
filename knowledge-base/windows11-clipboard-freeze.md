@@ -1,6 +1,7 @@
 ---
 title: Application Hangs When a Single GridView Cell is Copied in Windows 11
 description: Learn how to deal with the clipboard hanging when copying a cell in the WinForms GridView. 
+components: ["gridview"]
 type: how-to
 page_title: Application Hangs When a Single GridView Cell is Copied in Windows 11
 slug: windows11-clipboard-freeze

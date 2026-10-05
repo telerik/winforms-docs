@@ -2,6 +2,7 @@
 title: LayoutControlDragDropService
 page_title: LayoutControlDragDropService - WinForms LayoutControl
 description: WinForms LayoutControl allows you to add and arrange other controls in complex layouts by using LayoutControlDragDropService.
+components: ["layoutcontrol"]
 slug: winforms/layoutcontrol/layoutcontroldragdropservice
 tags: layoutcontrol
 published: True

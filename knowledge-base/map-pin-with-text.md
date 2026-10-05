@@ -1,6 +1,7 @@
 ---
 title: How to create a pin with text in RadMap
 description: An example demonstrating the MapPin class can be customized to support text.  
+components: ["map"]
 type: how-to
 page_title: How to create a pin with text in RadMap
 slug: map-pin-with-text

@@ -2,6 +2,7 @@
 title: KB Related Articles
 page_title: KB Related Articles - Telerik UI for WinForms
 description: Custom examples built on top of the Telerik UI for WinForms control.
+components: ["syntaxeditor"]
 slug: syntax-editor-kb-related-articles
 tags: kb, sdk, examples
 position: 1000
@@ -18,6 +19,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Add New Keyword to Existing Tagger]({%slug syntaxeditor-extend-default-tagger%})|
 |[Adjusting Mouse Wheel Scroll Step in SyntaxEditor for UI for WinForms]({%slug syntaxeditor-mouse-wheel-step%})|
 |[Conditional Intelliprompts in SyntaxEditor]({%slug conditional-intelliprompts-in-syntaxeditor%})|
+|[Create Markdown Tagger in RadSyntaxEditor]({%slug syntaxeditor-create-markdown-tagger%})|
 |[Drag and Drop Text with Cursor Movement in RadSyntaxEditor for WinForms]({%slug syntaxeditor-dragdrop-cursor-position%})|
 |[How to Achieve Multiple Highlight Rules in SyntaxEditor]({%slug multiple-highlight-rules%})|
 |[How to Achieve Underline Text in RadSyntaxEditor]({%slug underline-text-in-syntax-editor%})|

@@ -1,6 +1,7 @@
 ---
 title: Adding a Vertical Separator to RadMenuItem in RadMenu for WinForms
 description: Learn how to insert a vertical separator between menu items in RadMenu for WinForms applications.
+components: ["menu"]
 type: how-to
 page_title: How to Insert a Vertical Separator in RadMenu for WinForms
 slug: add-vertical-separator-radmenu-winforms

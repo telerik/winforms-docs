@@ -2,6 +2,7 @@
 title: Basic Sorting
 page_title: Basic Sorting - WinForms GridView Control
 description: Learn how you can use the built-in sorting functionality in WinForms GridView. 
+components: ["gridview"]
 slug: winforms/gridview/sorting/basic-sorting
 tags: basic,sorting
 published: True

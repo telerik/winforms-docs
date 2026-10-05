@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms CheckedListBox Control
 description: RadCheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
+components: ["checkedlistbox"]
 slug: winforms/checkedlistbox
 tags: checkedlistbox
 published: True

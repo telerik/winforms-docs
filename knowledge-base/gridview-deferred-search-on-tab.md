@@ -1,6 +1,7 @@
 ---
 title: RadGridView Deferred Search on Tab key 
 description: This article shows how you can trigger deferred search when pressing Tab key.
+components: ["gridview"]
 type: how-to
 page_title: How to trigger gridview deferred search when pressing Tab key 
 slug: gridview-deferred-search-on-tab

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - WinForms GridView Control
 description: Learn what events are fired when the user is performing a filtering operation in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/filtering/events
 tags: events
 published: True

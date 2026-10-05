@@ -2,6 +2,7 @@
 title: Custom Tiles
 page_title: Custom Tiles - WinForms Panorama Control
 description: WinForms Panorama supports creating custom tiles.
+components: ["panorama"]
 slug: winforms/panorama/custom-tiles
 tags: custom,tiles
 published: True

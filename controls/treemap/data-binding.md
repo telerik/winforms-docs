@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - WinForms TreeMap Control
 description: Bind the WinForms TreeMap either at design time or at run time.   
+components: ["treemap"]
 slug: treemap-data-binding
 tags: treemap, binding
 published: True

@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering - WinForms DropDownList Control
 description: WinForms DropDownList offers filtering functionality for its items.
+components: ["dropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/filtering
 tags: filtering
 published: True

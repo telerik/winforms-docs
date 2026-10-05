@@ -1,6 +1,7 @@
 ---
 title: PdfViewer get the clicked position on the page
 description: PdfViewer get the clicked position on the page
+components: ["pdfviewer"]
 type: how-to 
 page_title: PdfViewer get the clicked position on the page
 slug: pdfviewer-get-clicked-position

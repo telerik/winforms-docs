@@ -2,6 +2,7 @@
 title: Lasso Zoom
 page_title: Lasso Zoom - ChartView
 description: _RadChartView provides lasso zoom (zoom to selection) functionality by selecting a rectangle on the surface of the control and then zoom in automatically based on the selected Cartesian area
+components: ["chartview"]
 slug: winforms/chartview/features/lasso-zoom
 tags: lasso,selection
 published: True

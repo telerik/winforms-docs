@@ -2,6 +2,7 @@
 title: Properties, Events and Methods.
 page_title: Properties Events and Method - WinForms GanttView Control
 description: Get familiar with the most important properties of WinForms RadGanttView. 
+components: ["ganttview"]
 slug: winforms/ganttview/properties
 tags: properties,events,methods
 published: True

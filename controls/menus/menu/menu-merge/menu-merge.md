@@ -2,6 +2,7 @@
 title: Menu Merge
 page_title: Menu Merge - RadMenu
 description: RadMenu enables you to integrate attractive and flexible menus on Forms within your Windows applications.
+components: ["menu"]
 slug: winforms/menus/menu/menu-merge/menu-merge
 tags: menu,merge
 published: True

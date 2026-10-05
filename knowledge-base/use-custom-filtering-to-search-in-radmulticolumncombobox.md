@@ -1,6 +1,7 @@
 ---
 title: Use custom filtering to search in all columns of RadMultiColumnComboBox.
 description: Use custom filtering to search in all columns of RadMultiColumnComboBox.. Check it now!
+components: ["multicolumncombo"]
 type: how-to
 page_title: Use custom filtering to search in all columns of RadMultiColumnComboBox.
 slug: use-custom-filtering-to-search-in-radmulticolumncombobox

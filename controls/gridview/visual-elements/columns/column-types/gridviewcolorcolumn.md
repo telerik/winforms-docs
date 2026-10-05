@@ -2,6 +2,7 @@
 title: GridViewColorColumn
 page_title: GridViewColorColumn - WinForms GridView Control
 description: GridViewColorColumn allows WinForms GridView to edit colors using RadColorDialog.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewcolorcolumn
 tags: gridviewcolorcolumn
 published: True

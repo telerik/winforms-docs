@@ -1,6 +1,7 @@
 ---
 title: Customize GridViewCommandColumn 
 description: Customize GridViewCommandColumn 
+components: ["gridview"]
 type: how-to
 page_title: Customize GridViewCommandColumn 
 slug:  customize-gridviewcommandcolumn

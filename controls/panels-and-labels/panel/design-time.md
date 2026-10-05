@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Panel Control
 description: Get familiar with the design time capabilities of the WinForms Panel control.
+components: ["panel"]
 slug: winforms/panels-and-labels/panel/design-time
 tags: design time, smart tag
 published: True

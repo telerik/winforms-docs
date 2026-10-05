@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms SplitContainer Control
 description: WinForms SplitContainer is a layout control which allows you to add many container panels to a form, separated by splitter(s).
+components: ["splitcontainer"]
 slug: winforms/splitcontainer/getting-started
 tags: getting,started
 published: True

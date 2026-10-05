@@ -1,6 +1,7 @@
 ---
 title: Restore row values when row validation fails
 description: Restore row values when row validation fails. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Restore row values when row validation fails
 slug: restore-row-values-when-row-validation-fails

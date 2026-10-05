@@ -2,6 +2,7 @@
 title: Design time
 page_title: Design time - WinForms RadialGauge Control
 description: Get familiar with the design time options that the WinForms RadialGauge offers.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/radialgauge/design-time
 tags: design,time
 published: True

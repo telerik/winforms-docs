@@ -2,6 +2,7 @@
 title: Prompt Library
 page_title: Telerik UI for WinForms Prompt Library
 description: Explore the collection of prompts that you can use with the Telerik UI for WinForms AI Coding Assistant.
+components: ["general"]
 slug: ai-prompt-library
 tags: telerik,winforms,ai,coding assistant,prompt,library
 position: 4

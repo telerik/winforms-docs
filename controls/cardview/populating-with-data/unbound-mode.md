@@ -2,6 +2,7 @@
 title: Unbound Mode
 page_title: Unbound Mode - UI for WinForms Documentation
 description: RadCardView is a powerful control providing means for displaying and editing data organized in a card layout.
+components: ["cardview"]
 slug: winforms/cardview/populating-with-data/unbound-mode
 tags: cardview/unbound mode
 published: True
@@ -22,7 +23,7 @@ After you run the application, the result should be similar to the following ima
 >caption Figure 2: Added Items at Design Time
 ![WinForms RadCardView Added Items at Design Time](images/radcardview-populating-with-data003.png)
 
-## Populating Data Programatically
+## Populating Data Programmatically
 
 __RadCardView__ can also be set up to display data added at run-time. The following example will also demonstrate how custom grouping can be achieved. 
 

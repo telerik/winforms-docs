@@ -1,6 +1,7 @@
 ---
 title: How to apply a Glyph from the TelerikWebUI Font at Design Time
 description: This article shows how you can easily apply a glyph from the TelerikWebUI font at design time.
+components: ["general"]
 type: how-to
 page_title: How to apply a Glyph from the TelerikWebUI Font at Design Time
 slug: apply-glyphs-at-design-time

@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples - WinForms Map Control
 description: Additional examples built on top the Telerik UI for WinForms RadMap control.
+components: ["map"]
 slug: winforms/map/developer-focused-examples
 tags: developer, sdk, examples
 published: True

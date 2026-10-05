@@ -1,6 +1,7 @@
 ---
 title: How to order properties in RadDataEntry
 description: How to order properties in RadDataEntry
+components: ["dataentry"]
 type: how-to
 page_title: Properties order in DataEntry
 slug: dataentry-properties-order

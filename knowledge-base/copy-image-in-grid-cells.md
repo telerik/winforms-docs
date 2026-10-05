@@ -1,6 +1,7 @@
 ---
 title: How to Copy the Image in a GridView's Cell
 description: Learn how to copy the image stored in the cells in RadGridView
+components: ["gridview"]
 type: how-to
 page_title: How to Copy the Image in a GridView's Cell 
 slug: copy-image-in-grid-cells

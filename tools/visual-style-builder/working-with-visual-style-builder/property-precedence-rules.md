@@ -2,6 +2,7 @@
 title: Property Precedence Rules
 page_title: Property Precedence Rules - UI for WinForms Tools
 description: This article show the Property Precedence Rules used in Visual Style Builder. 
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules
 tags: property,precedence,rules
 published: True
@@ -33,7 +34,7 @@ There are three levels at which the properties can be applied:
 
 >note The properties that are not set in the repository item property grid (i.e. they do not have the square indicator) should not be considered as default property values. Only the property grid of the element itself shows the default values.
 >
-3. Additional level allowing you to tweak an element overriding the default values and the values set by a repository item. In some cases you may want to tweak an element that has an assigned repository item without creating a new repository item. In such situations, you should click on the element and directly tweak its properties. These settings will override the repository item’s settings. The the XML code in this case looks like this (assuming that the Red color is set directly on the element):
+3. Additional level allowing you to tweak an element overriding the default values and the values set by a repository item. In some cases you may want to tweak an element that has an assigned repository item without creating a new repository item. In such situations, you should click on the element and directly tweak its properties. These settings will override the repository item’s settings. The XML code in this case looks like this (assuming that the Red color is set directly on the element):
 
 ````XML
 <PropertySettingGroups>

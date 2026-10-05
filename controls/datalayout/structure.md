@@ -2,6 +2,7 @@
 title: Structure 
 page_title: Structure - WinForms DataLayout Control
 description: Get familiar with the WinForms DataLayout's elements structure.
+components: ["datalayout"]
 slug: winforms/datalayout/control-element-structure
 tags: control,element,structure,
 published: True

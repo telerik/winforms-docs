@@ -2,6 +2,7 @@
 title: Formatting Cells
 page_title: Formatting Cells - WinForms GridView Control
 description: WinForms GridView allows changing cells' styles in the formatting events due to the UI Virtualization. 
+components: ["gridview"]
 slug: winforms/gridview/cells/formatting-cells
 tags: formatting,cells
 published: True

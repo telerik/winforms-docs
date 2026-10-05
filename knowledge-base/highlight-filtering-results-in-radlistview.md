@@ -1,6 +1,7 @@
 ---
 title: Highlight Filtering Results in RadListView
 description: This article demonstrates how to highlight results when filtering in RadListView. 
+components: ["listview"]
 type: how-to
 page_title: Highlight Filtering Results in RadListView
 slug: highlight-filtering-results-in-radlistview

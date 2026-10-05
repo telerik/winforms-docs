@@ -1,6 +1,7 @@
 ---
 title: How to Confirm Appointment's Resizing in RadScheduler 
 description: Learn how to customize the resizing behavior in the WinForms Scheduler.  
+components: ["scheduler,reminder"]
 type: how-to
 page_title: How to Confirm Appointment's Resizing in RadScheduler    
 slug: custom-resizing-behavior-in-radscheduler

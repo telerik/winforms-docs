@@ -2,6 +2,7 @@
 title: Filtering
 page_title: Filtering - RadMultiColumnComboBox
 description: RadMultiColumnComboBox is a special case of combo box control with RadGridView integrated in its drop-down.
+components: ["multicolumncombo"]
 slug: winforms/multicolumncombobox/filtering
 tags: filtering
 published: True

@@ -2,6 +2,7 @@
 title: Binding to Generic Lists
 page_title: Binding to Generic Lists - WinForms GridView Control
 description: Learn how you can bind WinForms GridView to a generic List of business objects.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/binding-to-generic-lists
 tags: binding,to,generic,lists
 published: True

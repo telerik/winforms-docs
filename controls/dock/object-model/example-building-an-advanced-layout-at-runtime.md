@@ -2,6 +2,7 @@
 title: Building an Advanced Layout at Runtime
 page_title: Building an Advanced Layout at Runtime - WinForms Dock Control
 description: Learn how to build an advanced layout at runtime.
+components: ["dock"]
 slug: winforms/dock/object-model/example:-building-an-advanced-layout-at-runtime
 tags: example,building,an,advanced,layout,at,runtime
 published: True

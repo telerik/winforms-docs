@@ -2,6 +2,7 @@
 title: Create Printable Panel
 page_title: Create Printable Panel - Telerik Presentation Framework
 description: This example shows how you can implement printable panel which is useful when you want to print several controls at once.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/printing-support/how-to/create-prinatble-panel
 tags: create,prinatble,panel
 published: True

@@ -2,6 +2,7 @@
 title: Section
 page_title: Section - WinForms RichTextEditor Control
 description: Section class in WinForms RichTextEditor allows you to separate the content into sections. Sections are chunks of the document that can be displayed on one or several pages.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements/section
 tags: section
 published: True

@@ -2,6 +2,7 @@
 title: Custom Editors
 page_title: Custom Editors - RadDataFilter
 description: RadDataFilter allows you to build complex filter expressions based on the data and collection type of the source fields.  
+components: ["datafilter"]
 slug: winforms/datafilter/editing/custom-editors
 tags: data, filter
 published: True

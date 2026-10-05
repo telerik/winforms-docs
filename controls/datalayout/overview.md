@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms DataLayout Control
 description: The RadDataLayout control provides means for displaying data in a highly customizable layout by automatically creating the items and editors.
+components: ["datalayout"]
 slug: winforms/datalayout/overview
 tags: design,time
 published: True

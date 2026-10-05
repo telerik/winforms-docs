@@ -2,6 +2,7 @@
 title: Working with Resources
 page_title: Working with Resources - RadScheduler
 description: Working with Resources
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/data-binding/working-with-resources
 tags: working,with,resources
 published: True

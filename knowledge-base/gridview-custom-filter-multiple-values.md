@@ -1,6 +1,7 @@
 ---
 title: Filtering RadGridView by Multiple Values
 description: Learn how to filter the RadGridView control by multiple values without using the is in list option.
+components: ["gridview"]
 type: how-to
 page_title: Filtering GridView by Multiple Values in RadGridView for WinForms | Telerik UI for WinForms
 slug: gridview-custom-filter-multiple-values

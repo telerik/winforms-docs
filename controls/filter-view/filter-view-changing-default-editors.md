@@ -2,6 +2,7 @@
 title: Changing Default Editors
 page_title: Changing Default Editors - Filter View
 description: Change the default generated editors in the WinForms FilterView control.  
+components: ["filterview"]
 slug: filter-view-changing-default-editors
 tags: filter, view, editor, change
 published: True

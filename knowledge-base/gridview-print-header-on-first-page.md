@@ -1,6 +1,7 @@
 ---
 title: Print Header in RadGridView Only on the First Page  
 description: This article demonstrates how to  
+components: ["gridview"]
 type: how-to
 page_title: Hot to Print Header in RadGridView Only on the First Page     
 slug: gridview-print-header-on-first-page

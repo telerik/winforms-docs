@@ -2,6 +2,7 @@
 title: Adding groups
 page_title: Adding groups - WinForms ListView Control
 description: Items in WinForms ListView can be grouped conveniently into different groups.
+components: ["listview"]
 slug: winforms/listview/working-with-design-time/adding-groups
 tags: adding,groups
 published: True

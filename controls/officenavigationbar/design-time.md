@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms OfficeNavigationBar Control
 description: Get familiar with the design time options that the WinForms OfficeNavigationBar offers.   
+components: ["officenavigationbar"]
 slug: officenavigationbar-design-time
 tags: officenavigationbar
 published: True

@@ -2,6 +2,7 @@
 title: RadScrollablePanel
 page_title: Overview - WinForms ScrollablePanel Control
 description: WinForms ScrollablePanel is a variation of RadPanel, but customized to support themable scrollbars. 
+components: ["scrollablepanel"]
 slug: winforms/panels-and-labels/radscrollablepanel
 tags: radscrollablepanel
 published: True

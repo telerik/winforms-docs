@@ -2,6 +2,7 @@
 title: Resizing columns programmatically
 page_title: Resizing columns programmatically - RadGridView
 description: Set the columns size either manually or use the API to size the columns according to their content.
+components: ["gridview"]
 slug: winforms/gridview/columns/resizing-columns-programatically
 tags: resizing,columns,programmatically
 published: True

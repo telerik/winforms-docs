@@ -2,6 +2,7 @@
 title: Inspecting Properties
 page_title: Inspecting Properties - RadControlSpy
 description: This article shows how you can use the RadControlSpy to inspect 
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/controlspy/inspecting-properties
 tags: inspecting,properties
 published: True
@@ -26,7 +27,7 @@ Properties can be changed in real time and to control element appearance and beh
 |Method|Description|
 |----|----|
 |SetElementToSpy(RadElement elementToSpy)|Assigns the passed RadElement to RadControlSpy.|
-|SetControlToSpy(Control controlToSpy, bool expandTree)|Assigns the passed RadElement to RadControlSpy. The boolean flag controls whether three structure will be expanded.|
+|SetControlToSpy(Control controlToSpy, bool expandTree)|Assigns the passed RadElement to RadControlSpy. The boolean flag controls whether the tree structure will be expanded.|
 |SetControlToSpy(Control controlToSpy)|Assigns the passed control to RadControlSpy.|
 
 # See Also

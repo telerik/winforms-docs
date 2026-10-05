@@ -1,6 +1,7 @@
 ---
 title: “Check all” functionality in group rows
 description: “Check all” functionality in group rows. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: “Check all” functionality in group rows
 slug: check-all-functionality-in-group-rows

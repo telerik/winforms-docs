@@ -2,6 +2,7 @@
 title: RadMenuItem Events
 page_title: RadMenuItem Events - WinForms Menu Control
 description: Get familiar with the events that RadMenuItem offers.
+components: ["menu"]
 slug: winforms/menus/menu/working-with-radmenu-items/radmenuitem-events
 tags: radmenuitem,events
 published: True

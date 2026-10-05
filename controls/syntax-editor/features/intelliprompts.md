@@ -2,6 +2,7 @@
 title: IntelliPrompts
 page_title: IntelliPrompts - RadSyntaxEditor
 description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience
+components: ["syntaxeditor"]
 slug: syntax-editor-features-intelliprompts
 tags: features
 published: True

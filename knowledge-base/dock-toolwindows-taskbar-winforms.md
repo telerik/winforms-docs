@@ -1,6 +1,7 @@
 ---
 title: Display ToolWindows on the Taskbar in WinForms
 description: Learn how to make detached ToolWindows in your WinForms application visible on the taskbar.
+components: ["dock"]
 type: how-to
 page_title: How to Display ToolWindows on the Taskbar in WinForms
 slug: dock-toolwindows-taskbar-winforms

@@ -2,6 +2,7 @@
 title: Using the Overflow Grip
 page_title: Using the Overflow Grip - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+components: ["pageview"]
 slug: winforms/pageview/outlookview/using-the-overflow-grip
 tags: using,the,overflow,grip
 published: True

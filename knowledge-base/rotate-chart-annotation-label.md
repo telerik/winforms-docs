@@ -1,6 +1,7 @@
 ---
 title: How to Rotate Annotation's Label in ChartView
 description: This article demonstrates how to rotate the text for the annotation label in RadChartView.
+components: ["chartview"]
 type: how-to
 page_title: How to Rotate Annotation's Label in ChartView  
 slug: rotate-chart-annotation-label

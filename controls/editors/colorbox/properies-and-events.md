@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms ColorBox Control
 description: Get familiar with the public API of the WinForms ColorBox.
+components: ["colorbox"]
 slug: winforms/editors/colorbox/working-with-radcolorbox
 tags: working,with,radcolorbox
 published: True
@@ -16,7 +17,7 @@ previous_url: editors-color-box-working-with, editors/colorbox/working-with-radc
 |__ColorDialog__|Gets the RadColorDialog of this control.|
 |__ColorBoxElement__|Gets the RadColorBoxElement of this control.|
 |__Value__|Gets or sets the value of the editor.|
-|__ReadOnly__|Determines if users can input text directly into the text field..|
+|__ReadOnly__|Determines if users can input text directly into the text field.|
 |__TabStop__|Gets or sets a value indicating whether the user can give the focus to this control using the TAB key.|
 
 # Events

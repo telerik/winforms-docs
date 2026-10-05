@@ -1,6 +1,7 @@
 ---
 title: How to Customize the RichTextEditor's Context Menu items
 description: Learn how to customize the context menu items in the WinForms RichTextEditor.
+components: ["richtexteditor"]
 type: how-to 
 page_title: How to Customize the RichTextEditor's Context Menu items
 slug: customize-richtexteditor-context-menu

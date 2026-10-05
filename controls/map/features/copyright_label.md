@@ -2,6 +2,7 @@
 title: Copyright Label
 page_title: Copyright Label - RadMap
 description: Learn how to show Copyright Label in RadMap control.
+components: ["map"]
 slug: winforms/map/features/copyright
 tags: copyright, label, map, features
 published: True

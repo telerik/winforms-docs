@@ -2,6 +2,7 @@
 title: Footer
 page_title: Footer - WinForms Calendar Control
 description: WinForms Calendar supports footer/status area.
+components: ["calendar"]
 slug: winforms/calendar/customizing-appearance/footer
 tags: footer
 published: True

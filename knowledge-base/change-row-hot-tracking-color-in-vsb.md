@@ -1,6 +1,7 @@
 ---
 title: Change the row hot tracking color in RadGridView by using VSB
 description: This article demonstrates how you can change the row hot tracking color in RadGridView by using VSB
+components: ["gridview"]
 type: how-to
 page_title: Change the row hot tracking color in RadGridView by using VSB
 slug: change-row-hot-tracking-color-in-radgrid-by-using-vsb

@@ -2,6 +2,7 @@
 title: Prepare a HelpFunctions script
 page_title: Prepare a HelpFunctions script - TestComplete
 description: We will use TestComplete - functional automated testing platform developed by SmartBear Software to automate Telerik UI for WinForms Controls.  
+components: ["general"]
 slug: test-complete-prepare-a-help-functions-script
 tags: test-complete
 published: True

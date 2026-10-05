@@ -1,6 +1,7 @@
 ---
 title: Change default filter operator in RadVirtualGrid for WinForms
 description: Learn how to change the default filter operator in RadVirtualGrid
+components: ["virtualgrid"]
 type: how-to
 page_title: How to Change default filter operator in RadVirtualGrid
 slug: virtualgrid-change-default-filter-operator

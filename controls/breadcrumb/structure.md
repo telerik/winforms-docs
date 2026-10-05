@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms BreadCrumb Control
 description: Learn the internal elements structure of WinForms BreadCrumb.   
+components: ["breadcrumb"]
 slug: breadcrumb-structure
 tags: breadcrumb
 published: True

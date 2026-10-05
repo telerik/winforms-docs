@@ -2,6 +2,7 @@
 title: Appointment Title Formatter
 page_title: AppointmentTitleFormatter - RadScheduler
 description: Get familiar with the AppointmentTitleFormatter responsible for the text displayed in the WinForm's Scheduler appointments.
+components: ["scheduler,reminder"]
 slug: appointment-title-formatter
 tags: scheduler, title, format, appointment
 published: True

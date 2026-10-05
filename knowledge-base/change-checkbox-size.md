@@ -1,6 +1,7 @@
 ---
 title: How to Change the CheckBox's Size  
 description: Learn how to change the size of the WinForms CheckBox.  
+components: ["buttons"]
 type: how-to
 page_title: How to Change the CheckBox's Size   
 slug: change-checkbox-size

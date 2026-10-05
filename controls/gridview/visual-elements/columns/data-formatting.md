@@ -2,6 +2,7 @@
 title: Data Formatting
 page_title: Data Formatting - WinForms GridView Control
 description: WinForms GridView allows formatting the text of the cells according to your desired format. 
+components: ["gridview"]
 slug: winforms/gridview/columns/data-formatting
 tags: data,formatting
 published: True

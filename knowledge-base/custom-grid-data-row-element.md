@@ -1,6 +1,7 @@
 ---
 title: How to Create a Custom Data Row Element in RadGridView
 description: Learn how to create a custom data row element in the WinForms GridView that hosts an element stretched among the entire row.
+components: ["gridview"]
 type: how-to 
 page_title: How to Create a Custom Data Row Element in RadGridView
 slug: custom-grid-data-row-element

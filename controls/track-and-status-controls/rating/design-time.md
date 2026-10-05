@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Rating Control
 description: Get familiar with the design time options of the WinFormscontrol.
+components: ["rating"]
 slug: winforms/track-and-status-controls/rating/design-time
 tags: design,time
 published: True

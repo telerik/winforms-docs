@@ -2,6 +2,7 @@
 title: Popup
 page_title: Popup
 description: This article demonstrates the popup feature of the RadNotifyIcon. 
+components: ["notifyicon"]
 slug: radnotifyicon-features-popup
 tags: Popup,notifyicon
 position: 1

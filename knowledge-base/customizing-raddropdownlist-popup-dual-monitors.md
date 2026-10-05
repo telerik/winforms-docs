@@ -1,6 +1,7 @@
 ---
 title: Customizing RadDropDownList Pop-Up Location Across Dual Monitors in UI for WinForms
 description: Learn how to customize the pop-up location of RadDropDownList when stretched across two monitors in Telerik UI for WinForms.
+components: ["dropdownlist"]
 type: how-to
 page_title: Adjusting RadDropDownList Pop-Up Behavior on Dual Monitors
 slug: dropdownlist-popup-dual-monitors

@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - RadTrackBar
 description: RadTrackBar, sometimes called a slider control, can be used for navigating a large amount of information or for visually adjusting a numeric setting. 
+components: ["trackbar"]
 slug: winforms/track-and-status-controls/trackbar/themes
 tags: trackbar
 published: True

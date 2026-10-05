@@ -2,6 +2,7 @@
 title: Arranging DockWindows
 page_title: Arranging DockWindows - RadDock
 description: This article shows how you can arrange the windows at runtime.
+components: ["dock"]
 slug: winforms/dock/architecture-and-features/arranging-dockwindows
 tags: arranging,dockwindows
 published: True

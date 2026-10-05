@@ -2,6 +2,7 @@
 title: Working with Recurring Appointments
 page_title: Working with Recurring Appointments - WinForms Scheduler Control
 description: WinForms Scheduler supports recurring events on minutely, hourly, weekly, daily, monthly and yearly basis. Learn how to define them.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appointments-and-dialogs/working-with-recurring-appointments
 tags: working,with,recurring,appointments
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Adding a Selected Line Border in RadSyntaxEditor
 description: Learn how to draw a border that spans the entire width of the editor viewport around the selected line in the WinForms SyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Add a Selected Line Border in RadSyntaxEditor
 slug: syntaxeditor-selected-line-border

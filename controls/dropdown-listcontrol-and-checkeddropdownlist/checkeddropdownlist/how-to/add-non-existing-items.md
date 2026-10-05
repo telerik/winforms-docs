@@ -2,6 +2,7 @@
 title: Add non-existing Items
 page_title: Add non-existing Items - RadCheckedDropDownList
 description: RadCheckedDropDownList combines RadDropDownList and RadAutoCompleteBox in order to provide functionality to check items in the drop down area and tokenize them in the text area. 
+components: ["checkeddropdownlist"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/how-to/add-non-existing-items
 tags: add,non-existing,items
 published: True

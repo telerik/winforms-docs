@@ -2,6 +2,7 @@
 title: Hyperlink
 page_title: Hyperlink - WinForms RichTextEditor Control
 description: WinForms RichTextEditor supports having a hyperlink span several paragraphs and being able to embed all kinds of elements inside hyperlinks, e.g. images, tables, and table elements.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/hyperlink
 tags: hyperlink
 published: True

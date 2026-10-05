@@ -2,6 +2,7 @@
 title: Custom shapes
 page_title: Custom shapes - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications. 
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/custom-shapes
 tags: custom,shapes
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Enabling AutoScroll on Dragging RadDiagramShape in RadDiagram
 description: Learn how to enable autoscroll functionality for dragging RadDiagramShape into RadDiagram in UI for WinForms.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 type: how-to
 page_title: How to Enable AutoScroll During Dragging in RadDiagram
 meta_title: How to Enable AutoScroll During Dragging in RadDiagram

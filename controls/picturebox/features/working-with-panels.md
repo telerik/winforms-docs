@@ -2,6 +2,7 @@
 title: Working with panels
 page_title: Working with panels
 description: This article shows how to customize panels
+components: ["picturebox"]
 slug: radpicturebox-working-with-panels
 tags: working-with-panels
 published: True

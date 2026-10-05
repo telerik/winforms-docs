@@ -2,6 +2,7 @@
 title: Smart Tag
 page_title: Smart Tag - WinForms ChartView Control
 description: WinForms ChartView's design time allows you to use the Smart Tag to change the applied theme or navigate to the online documentation. The control supports design-time data binding and features a property builder.
+components: ["chartview"]
 slug: winforms/chartview/design-time/smart-tag
 tags: design,time
 published: True

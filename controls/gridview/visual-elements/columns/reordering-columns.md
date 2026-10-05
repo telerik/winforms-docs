@@ -2,6 +2,7 @@
 title: Reordering Columns
 page_title: Reordering Columns - WinForms GridView Control
 description: WinForms GridView supports column reordering by the user at run-time. 
+components: ["gridview"]
 slug: winforms/gridview/columns/reordering-columns
 tags: reordering,columns
 published: True

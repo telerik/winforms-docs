@@ -1,6 +1,7 @@
 ---
 title: Formatting Priority Order in RadGridView
 description: Learn how to show callout for the different steps in the WinForms Callout.
+components: ["gridview"]
 type: how-to 
 page_title: Formatting Priority Order in RadGridView
 slug: gridview-cells-rows-formatting-priority

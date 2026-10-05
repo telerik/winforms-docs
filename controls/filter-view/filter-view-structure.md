@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - Filter View
 description: Get familiar with the internal elements structure of the WinForms FilterView control.  
+components: ["filterview"]
 slug: filter-view-structure
 tags: filter, view
 published: True

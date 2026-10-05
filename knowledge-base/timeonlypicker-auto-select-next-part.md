@@ -1,6 +1,7 @@
 ---
 title: Applying AutoSelectNextPart Property to RadTimeOnlyPicker
 description: Learn how to access and apply the AutoSelectNextPart property in RadTimeOnlyPicker.
+components: ["timeonlypicker"]
 type: how-to
 page_title: Using AutoSelectNextPart Property in RadTimeOnlyPicker
 meta_title: Using AutoSelectNextPart Property in RadTimeOnlyPicker

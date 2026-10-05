@@ -2,6 +2,7 @@
 title: GridViewDateOnlyColumn (.NET Only)
 page_title: GridViewDateOnlyColumn - WinForms GridView Control
 description: WinForms GridViewDateOnlyColumn provides date entry and formatting for DateOnly data type.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewdateonlycolumn
 tags: gridviewdateonlycolumn
 published: True

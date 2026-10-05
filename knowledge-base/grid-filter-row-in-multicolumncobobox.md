@@ -1,6 +1,7 @@
 ---
 title: How to Use GridView Filter Row in RadMultiColumnCombobox
 description: Learn how to use the grid's filter row in RadMultiColumnCombobox.
+components: ["gridview"]
 type: how-to
 page_title: How to Use GridView Filter Row in RadMultiColumnCombobox
 slug: grid-filter-row-in-multicolumncobobox

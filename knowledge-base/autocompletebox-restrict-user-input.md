@@ -1,6 +1,7 @@
 ---
 title: Restricting User Typing in RadAutoCompleteBox
 description: Learn how to prevent users from typing in the RadAutoCompleteBox in UI for WinForms.
+components: ["autocompletebox"]
 type: how-to
 page_title: Prevent User Input in RadAutoCompleteBox in UI for WinForms
 meta_title: Prevent User Input in RadAutoCompleteBox in UI for WinForms

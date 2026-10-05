@@ -2,6 +2,7 @@
 title: Glyphs Reference Sheet
 page_title: Glyphs Reference Sheet
 description: This article lists all available glyphs from the TelerikWebUI font.
+components: ["general"]
 slug: tpf-glyphs-reference-sheet
 tags: glyphs,telerikwebui,office2016,fonts,foregrounds,text,icons,reference,sheet
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Move ListView Items Between Groups in Unbound Mode  
 description: Learn how to move items between groups in unbound WinForms ListView by using drag and drop functionality.
+components: ["listview"]
 type: how-to
 page_title: Move ListView Items Between Groups in Unbound Mode  
 slug: move-listview-items-between-groups-in-unbound-mode

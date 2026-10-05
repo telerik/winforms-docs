@@ -1,6 +1,7 @@
 ---
 title: Synchronize scrollbars in grid hierarchy levels
 description: This article shows how you can synchronize the scrollbars in the hierarchy level with the one in the master level in RadGridView/RadVirtualGrid.
+components: ["virtualgrid"]
 type: how-to
 page_title: Synchronize scrollbars in grid hierarchy levels
 slug: synchronize-scrollbars-in-hierarchy-levels

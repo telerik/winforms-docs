@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms HeatMap Control
 description: Check our &quot;Structure&quot; documentation article for the RadHeatMap WinForms control.
+components: ["heatmap"]
 slug: heatmap-structure
 tags: heatmap, structure
 published: True

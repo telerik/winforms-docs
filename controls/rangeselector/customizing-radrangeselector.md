@@ -2,6 +2,7 @@
 title: Customizing RadRangeSelector 
 page_title: Customizing RadRangeSelector  - RadRangeSelector
 description: Customizing RadRangeSelector 
+components: ["rangeselector"]
 slug: winforms/rangeselector/customizing-radrangeselector
 tags: customizing,radrangeselector,
 published: True

@@ -2,6 +2,7 @@
 title: Export Data in a Group to Excel
 page_title: Export Data in a Group to Excel - WinForms GridView Control
 description: Learn how to export the data in the selected group to Excel using a custom context menu option in the WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/exporting-data/export-data-in-a-group-to-excel
 tags: export,data,in,a,group,to,excel
 published: True

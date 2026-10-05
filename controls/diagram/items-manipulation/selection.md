@@ -2,6 +2,7 @@
 title: Selection
 page_title: Selection - RadDiagram
 description: RadDiagram offers flexible and interactive diagramming layouts for your rich data-visualization applications.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/items-manipulation/selection
 tags: selection
 published: True

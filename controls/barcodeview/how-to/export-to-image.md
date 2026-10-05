@@ -2,6 +2,7 @@
 title: Export to Image
 page_title: Export to Image - BarcodeView
 description: RadBarcode is a set of components that can be used to create, show and read barcodes. 
+components: ["barcodeview"]
 slug: barcodeview-export-to-image 
 tags: barcode
 published: True

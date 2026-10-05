@@ -2,6 +2,7 @@
 title: SchedulerPrintStyles
 page_title: SchedulerPrintStyles - RadScheduler
 description: Printing in RadScheduler is performed by objects of type SchedulerPrintStyle. SchedulerPrintStyle provides a set of options that define the date range of printing and the appearance of the printed pages.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/print-support/schedulerprintstyles
 tags: schedulerprintstyles
 published: True

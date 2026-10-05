@@ -2,6 +2,7 @@
 title: Binding to Hierarchical Data Automatically
 page_title: Binding to Hierarchical Data Automatically - WinForms GridView Control
 description: Learn how to automatically create a hierarchical WinForms GridView that displays arbitrary number of child levels. 
+components: ["gridview"]
 slug: winforms/gridview/hierarchical-grid/binding-to-hierarchical-data-automatically
 tags: binding,to,hierarchical,data,automatically
 published: True

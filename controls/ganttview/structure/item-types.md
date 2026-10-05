@@ -2,6 +2,7 @@
 title: Item types
 page_title: Item types - WinForms GanttView Control
 description: Get familiar with the three item types - summary item, task item and milestone item. 
+components: ["ganttview"]
 slug: winforms/ganttview/structure/item-types
 tags: item,types
 published: True

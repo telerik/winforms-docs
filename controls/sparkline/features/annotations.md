@@ -2,6 +2,7 @@
 title: Annotations
 page_title: Annotations - WinForms Sparkline Control
 description: The WinForms Sparkline control supports annotations. They represent visual elements that can be used to highlight certain areas on the plot area and denote significant values.
+components: ["sparkline"]
 slug: radsparkline-annotations
 tags: sparkline, annotations
 published: True

@@ -2,6 +2,7 @@
 title: Creating a RadPanel with Gradient Background
 page_title: Creating a RadPanel with Gradient Background - WinForms Panel Control
 description: Learn how the WinForms panel's back color can be changed to a selected gradient.
+components: ["panel"]
 slug: winforms/panels-and-labels/panel/creating-a-radpanel-with-gradient-background
 tags: creating,a,radpanel,with,gradient,background
 published: True

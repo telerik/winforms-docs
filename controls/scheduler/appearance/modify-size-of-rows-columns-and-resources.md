@@ -2,6 +2,7 @@
 title: Modify Size of Rows, Columns and Resources
 page_title: Modify Size of Rows, Columns and Resources - RadScheduler
 description: RadScheduler allows you to customize the size of the rows and the columns of the views where this is applicable.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appearance/modify-size-of-rows,-columns-and-resources
 tags: modify,size,of,rows,,columns,and,resources
 published: True

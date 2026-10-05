@@ -2,6 +2,7 @@
 title: Editing Nodes
 page_title: Editing Nodes - RadTreeView
 description: This article describes how one can edit the text or value of the nodes in RadTreeView.
+components: ["treeview"]
 slug: winforms/treeview/editing/editing-nodes
 tags: editing,nodes
 published: True

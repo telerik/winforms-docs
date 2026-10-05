@@ -1,6 +1,7 @@
 ---
 title: How to Achieve Rounded Shape and Rounded Border for RadTextBox
 description: Learn how to accomplish rounded shape and border in WinForms RadTextBox.
+components: ["editors"]
 type: how-to
 page_title: How to Achieve Rounded Shape and Border for RadTextBox
 slug: rounded-border

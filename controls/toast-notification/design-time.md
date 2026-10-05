@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Toast Notification
 description: Get familiar with the design time options that WinForms ToastNotificationManager offers.  
+components: ["toastnotificationmanager"]
 slug: toast-notification-design-time
 tags: toast notification
 published: True

@@ -2,6 +2,7 @@
 title: Keyboard Navigation
 page_title: Keyboard Navigation - WinForms Calendar Control
 description: WinForms Calendar supports keyboard navigation.
+components: ["calendar"]
 slug: winforms/calendar/customizing-behavior/keyboard-navigation
 tags: keyboard,navigation
 published: True

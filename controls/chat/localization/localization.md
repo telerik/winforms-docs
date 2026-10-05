@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - RadChat
 description: This article shows how you can localize all string used inside RadChat.
+components: ["chat"]
 slug: winforms/chat/localization/localization
 tags: localization
 published: True

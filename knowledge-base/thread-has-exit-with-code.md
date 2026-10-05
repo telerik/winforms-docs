@@ -1,6 +1,7 @@
 ---
 title: The thread has exited with code 0 (0x0) 
 description: Learn how to deal with The thread has exited with code 0 (0x0) in the Output window.
+components: ["dropdownlist"]
 type: how-to 
 page_title: The thread has exited with code 0 (0x0) 
 slug: thread-has-exit-with-code

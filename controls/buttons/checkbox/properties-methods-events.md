@@ -2,6 +2,7 @@
 title: Properties, Methods, Events
 page_title: Properties, Methods, Events - UI for WinForms Documentation
 description: RadCheckBox uses the Telerik Presentation Framework which enables rich experiences like advanced styling.
+components: ["buttons"]
 slug: winforms/buttons/checkbox/properties-methods-events
 tags: checkbox
 published: True
@@ -29,8 +30,8 @@ position: 4
 
 |Event|Description|
 |----|----|
-|CheckStateChanging|Occurs before the elements's state changes.|
-|CheckStateChanged|Occurs when the elemnts's state changes.|
+|CheckStateChanging|Occurs before the element's state changes.|
+|CheckStateChanged|Occurs when the element's state changes.|
         
 # See Also 
 

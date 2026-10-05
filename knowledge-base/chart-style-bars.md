@@ -1,6 +1,7 @@
 ---
 title: Change the color of bar depending on the value
 description: Change the color of bar depending on the value
+components: ["gridview"]
 type: how-to
 page_title: Change the color of bar depending on the value
 slug:  chart-style-bars

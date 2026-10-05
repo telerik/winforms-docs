@@ -2,6 +2,7 @@
 title: Chamfered Rect Shape
 page_title: Chamfered Rect Shape- Telerik Presentation Framework
 description: This article shows how you can create and use the supported shapes.
+components: ["general"]
 slug: winforms-telerik-presentation-framework-chamfered-rect-shape
 tags: chamfered, shape, rect
 published: True

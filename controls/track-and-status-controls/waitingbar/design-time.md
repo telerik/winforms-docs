@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms WaitingBar Control
 description: Get familiar with the design time options of WinForms WaitingBar.
+components: ["waitingbar"]
 slug: winforms/track-and-status-controls/wiating-bar/design-time
 tags: button, design-time
 published: True

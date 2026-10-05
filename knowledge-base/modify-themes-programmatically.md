@@ -1,6 +1,7 @@
 ---
 title: How to Modify Themes Programmatically
 description: Learn how to customize one of the built-in themes via code at run time.   
+components: ["general"]
 type: how-to
 page_title: How to Modify Themes Programmatically    
 slug: modify-themes-programmatically

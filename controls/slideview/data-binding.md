@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - WinForms SlideView Control
 description: Get started with the RadSlideView control.
+components: ["slideview"]
 slug: slideview-data-binding
 tags: slideview, bound
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Open DropDownList editor in RadGridView with a Single Click  
 description: This article demonstrates how to open drop down list editor with a single click.  
+components: ["gridview"]
 type: how-to
 page_title: How to Open DropDownList editor in RadGridView with a Single Click  
 slug: open-drop-down-editor-in-radgridview-with-a-single-click

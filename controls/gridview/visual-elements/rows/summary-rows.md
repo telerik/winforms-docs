@@ -2,6 +2,7 @@
 title: Summary Rows
 page_title: Summary Rows - WinForms GridView Control
 description: WinForms GridView offers summary rows which allow you to display aggregate information about the data (count, sum. avg).
+components: ["gridview"]
 slug: winforms/gridview/rows/summary-rows
 tags: summary,rows
 published: True

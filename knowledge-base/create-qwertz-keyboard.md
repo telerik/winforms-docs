@@ -1,6 +1,7 @@
 ---
 title: How to create QWERTZ keyboard
 description: This article demonstrates how to customize RadVirtualKeyboard
+components: ["virtualkeyboard"]
 type: how-to
 page_title: 
 slug: how-to-create-qwertz-keyboard

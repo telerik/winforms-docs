@@ -1,6 +1,7 @@
 ---
 title: Resolving Missing Telerik Menu and Controls in Visual Studio 2017
 description: This article provides step-by-step instructions for resolving the issue of missing Telerik menu and controls in Visual Studio 2017 after a recent update.
+components: ["general"]
 type: troubleshooting
 page_title: Missing Telerik Menu and Controls in Visual Studio 2017
 slug: missing-telerik-menu-controls-visual-studio-2017

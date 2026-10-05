@@ -2,6 +2,7 @@
 title: Drawing
 page_title: Drawing - WinForms ImageEditor Control
 description: WinForms ImageEditor supports drawing of text and shapes or drawing with a pen.
+components: ["imageeditor"]
 slug: radimageeditor-tools-drawing
 tags: drawing
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Using RadEditor for ASP.NET AJAX in a Windows application
 description: Using RadEditor for ASP.NET AJAX in a Windows application. Check it now!
+components: ["general"]
 type: how-to
 page_title: Using RadEditor for ASP.NET AJAX in a Windows application
 slug: using-radeditor-for-asp-net-ajax-in-a-windows-application

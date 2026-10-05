@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Clock Control
 description: Get familiar with the internal elements structure of WinForms Clock.
+components: ["clock"]
 slug: winforms/clock/structure
 tags: clock
 published: True

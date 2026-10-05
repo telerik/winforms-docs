@@ -2,6 +2,7 @@
 title: Binding to Self Referencing Data
 page_title: Binding to Self Referencing Data - WinForms TreeView Control
 description: Learn how you can bind WinForms TreeView to self referencing data.
+components: ["treeview"]
 slug: winforms/treeview/data-binding/binding-to-self-referencing-data
 tags: binding,to,self,referencing,data
 published: True

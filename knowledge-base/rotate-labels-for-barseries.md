@@ -1,6 +1,7 @@
 ---
 title: How to Rotate the Labels for BarSeries
 description: Learn how to rotate the labels for BarSeries int the WinForms Chart.
+components: ["chartview"]
 type: how-to 
 page_title: How to Rotate the Labels for BarSeries
 slug: rotate-labels-for-barseries

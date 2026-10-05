@@ -1,6 +1,7 @@
 ---
 title: How to Translate the Month Names in RadPivotGrid
 description: Learn how to translate the month names in the WinForms PivotGrid.
+components: ["pivotgrid"]
 type: how-to
 page_title: How to Translate the Month Names in RadPivotGrid
 slug: translate-month-names-in-pivotgrid

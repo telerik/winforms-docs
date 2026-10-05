@@ -2,6 +2,7 @@
 title: Auto-Size Entire Row Text
 page_title: Auto-Size Entire Row Text - RadGridView
 description: This article will explain how you can measure the entire row so the row height is constant while the users are scrolling horizontally.
+components: ["gridview"]
 slug: winforms/gridview/rows/how-to/auto-size
 tags: auto-size,rows
 published: True

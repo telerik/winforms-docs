@@ -1,6 +1,7 @@
 ---
 title: Creating a DropDownButton / SplitButton which shows the selected item’s text
 description: Creating a DropDownButton / SplitButton which shows the selected item’s text. Check it now!
+components: ["general"]
 type: how-to
 page_title: Creating a DropDownButton / SplitButton which shows the selected item’s text
 slug: creating-a-dropdownbutton-splitbutton-which-shows-the-selected-item-s-text

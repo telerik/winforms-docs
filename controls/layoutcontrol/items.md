@@ -2,6 +2,7 @@
 title: Items
 page_title: Items - WinForms LayoutControl
 description: Get familiar with the different types of items supported in WinForms LayoutControl.
+components: ["layoutcontrol"]
 slug: winforms/layoutcontrol/items
 tags: items
 published: True

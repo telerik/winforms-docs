@@ -2,6 +2,7 @@
 title: DeleteRecurringAppointmentDialog
 page_title: DeleteRecurringAppointmentDialog - RadScheduler
 description: DeleteRecurringAppointmentDialog is shown when you try to delete a recurring appointment.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/dialogs/deleterecurringappointmentdialog
 tags: scheduler
 published: True

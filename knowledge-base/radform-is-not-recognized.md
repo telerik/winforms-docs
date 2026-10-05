@@ -1,6 +1,7 @@
 ---
 title: RadForm is Not Recognized in Solution Explorer
 description: Learn how to deal with not recognized form in the project.
+components: ["form"]
 type: how-to
 page_title: RadForm is Not Recognized in Solution Explorer
 slug: radform-is-not-recognized

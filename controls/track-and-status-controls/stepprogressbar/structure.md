@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms StepProgressBar Control
 description: Get familiar with the internal elements structure of WinForms StepProgressBar. 
+components: ["stepprogressbar"]
 slug: stepprogressbar-structure
 tags: stepprogressbar, structure
 published: True

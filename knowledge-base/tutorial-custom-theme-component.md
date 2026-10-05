@@ -1,6 +1,7 @@
 ---
 title: Tutorial - Create a Custom Theme Component
 description: Learn how to create a custom theme component. 
+components: ["general"]
 type: how-to
 page_title: Tutorial - Create a Custom Theme Component
 slug: tutorial-custom-theme-component

@@ -2,6 +2,7 @@
 title: Element Hierarchy
 page_title: Element Hierarchy - RadVirtualGrid
 description: This article shows the elements used in RadVirtualGrid and how they are organized.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/cells/element-hierarchy
 tags: virtualgrid, element, hierarchy
 published: True

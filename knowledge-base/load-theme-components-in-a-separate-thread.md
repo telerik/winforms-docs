@@ -1,6 +1,7 @@
 ---
 title: Load theme components in a separate thread
 description: Load theme components in a separate thread. Check it now!
+components: ["general"]
 type: how-to
 page_title: Load theme components in a separate thread
 slug: load-theme-components-in-a-separate-thread

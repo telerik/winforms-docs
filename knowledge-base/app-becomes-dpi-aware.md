@@ -1,6 +1,7 @@
 ---
 title: App becomes DPI-aware at runtime
 description: App becomes DPI-aware at runtime
+components: ["general"]
 type: how-to
 page_title: App becomes DPI-aware at runtime
 slug: app-becomes-dpi-aware

@@ -1,6 +1,7 @@
 ---
 title: Things to keep in mind when inspecting your application's memory usage
 description: Things to keep in mind when inspecting your application's memory usage. Check it now!
+components: ["general"]
 type: how-to
 page_title: Things to keep in mind when inspecting your application's memory usage
 slug: things-to-keep-in-mind-when-inspecting-your-application-s-memory-usage

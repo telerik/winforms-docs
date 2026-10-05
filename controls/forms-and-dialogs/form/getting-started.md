@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Form
 description: Learn different ways to utilize the RadForm control.
+components: ["form"]
 slug: winforms/forms-and-dialogs/form/getting-started
 tags: getting,started
 published: True
@@ -32,7 +33,7 @@ Telerik.WinControls.UI
 TelerikCommon
 ````
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ### Adding RadForm to your Project
 

@@ -2,6 +2,7 @@
 title: GridViewCheckBoxColumn
 page_title: GridViewCheckBoxColumn - WinForms GridView Control
 description: GridViewCheckBoxColumn displays and allows editing of boolean data in WinForms GridView. The values are shown as check boxes.
+components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewcheckboxcolumn
 tags: gridviewcheckboxcolumn
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Annotations - UI for WinForms Documentation
 description: Annotations are visual elements that can be used to highlight certain areas on the plot area and denote significant values.
+components: ["chartview"]
 slug: winforms/chartview-/features/annotations
 tags: annotations
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Server Side Paging in Virtual Grid
 description: An example demonstrating how paging can be implemented in RadVirtualGrid fetching the data from an IQueryable object
+components: ["virtualgrid"]
 type: how-to
 page_title: How to implement paging by fetching data according to the current page index
 slug: server-side-paging-in-virtualgrid

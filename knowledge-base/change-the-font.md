@@ -1,6 +1,7 @@
 ---
 title: How to Change the Font of Telerik RadControls
 description: Get familiar with the Font settings of the Telerik Controls    
+components: ["general"]
 type: how-to
 page_title: How to Change the Font of Telerik RadControls   
 slug: change-the-font

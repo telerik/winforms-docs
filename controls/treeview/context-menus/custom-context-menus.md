@@ -2,6 +2,7 @@
 title: Custom Context Menus
 page_title: Custom Context Menus - RadTreeView
 description: Custom context menus can be added to a RadTreeView or to each individual node. 
+components: ["treeview"]
 slug: winforms/treeview/design-time/context-menus
 tags: context,menus
 published: True

@@ -2,6 +2,7 @@
 title: Appointment Factory
 page_title: Appointment Factory - WinForms Scheduler Control
 description: WinForms Scheduler uses a AppointmentFactory that is responsible for the creation of Appointment instances.
+components: ["scheduler,reminder"]
 slug: scheduler-appointment-factory
 tags: scheduler, appointment, factory
 published: True

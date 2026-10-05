@@ -2,6 +2,7 @@
 title: CalculationBehavior
 page_title: CalculationBehaviors - RadCalculator
 description: Learn how to create a custom function in the WinForms Calculator control.    
+components: ["calculator"]
 slug: calculator-calculationbehavior
 tags: calculator, calculation, behavior
 published: True

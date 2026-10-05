@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadLabel
 description: UI Automation Support (UI Accessibility) for RadLabel.   
+components: ["label"]
 slug: label-ui-automation
 tags: label,ui,automation
 published: True

@@ -2,6 +2,7 @@
 title: Overlay Icon
 page_title: Overlay Icon - Taskbar Button
 description: Overlay icons show change of status on the program's taskbar button icon.  
+components: ["taskbarbutton"]
 slug: taskbar-button-features-overlay-icon
 tags: taskbar, overlay, icon
 published: True

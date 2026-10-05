@@ -2,6 +2,7 @@
 title: Mouse Navigation
 page_title: Mouse Navigation - WinForms GanttView Control
 description: The user can use mouse commands to navigate in the WinForms GanttView.
+components: ["ganttview"]
 slug: winforms/ganttview-/usability/mouse-navigation
 tags: mouse,navigation
 published: True

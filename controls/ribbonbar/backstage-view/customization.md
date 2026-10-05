@@ -2,6 +2,7 @@
 title: Customization
 page_title: Customization - RadRibbonBar
 description: The appearance of the Backstage View can be customized by using one of the predefined themes.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/overview/customization
 tags: customization
 published: True

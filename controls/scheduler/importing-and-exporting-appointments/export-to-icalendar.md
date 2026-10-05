@@ -2,6 +2,7 @@
 title: Export to ICalendar
 page_title: Export to ICalendar - RadScheduler
 description: RadScheduler allows you to export appointments in the industry-standard ICalendar format. For that purpose you need to use the Export method of the RadScheduler class.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/importing-and-exporting-appointments/export-to-icalendar
 tags: export,to,icalendar
 published: True

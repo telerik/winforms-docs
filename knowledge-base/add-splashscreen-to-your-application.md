@@ -1,6 +1,7 @@
 ---
 title: Add SplashScreen to your application
 description: Add SplashScreen to your application. Check it now!
+components: ["splashscreen"]
 type: how-to
 page_title: Add SplashScreen to your application
 slug: add-splashscreen-to-your-application

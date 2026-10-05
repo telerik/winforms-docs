@@ -2,6 +2,7 @@
 title: Scrolling
 page_title: Scrolling - RadPanorama
 description: RadPanorama is a control that displays elements of type RadTileElement in a mosaic manner.
+components: ["panorama"]
 slug: winforms/panorama/scrolling
 tags: scrolling
 published: True

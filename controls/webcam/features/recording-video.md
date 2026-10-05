@@ -2,6 +2,7 @@
 title: Recording Video
 page_title: Recording Video - WinForms WebCam Control
 description: Learn how to start recording video in WinForms WebCam.    
+components: ["webcam"]
 slug: webcam-recording-video
 tags: webcam
 published: True

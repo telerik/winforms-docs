@@ -2,6 +2,7 @@
 title: Customizing Appearance
 page_title: Customizing Appearance - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
+components: ["tabbedform"]
 slug: radtabbedform-customizig-appearance
 tags: radtabbedform
 published: True

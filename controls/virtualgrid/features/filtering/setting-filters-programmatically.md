@@ -2,6 +2,7 @@
 title: Setting Filters Programmatically
 page_title: Filtering Overview - RadVirtualGrid
 description: This article shows you can create and add simple and composite filter descriptors in the code. 
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/filtering/setting-filters-programmatically
 tags: virtualgrid, filtering
 published: True

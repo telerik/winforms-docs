@@ -2,6 +2,7 @@
 title: Filtering Nodes
 page_title: Filtering Nodes - WinForms TreeView Control
 description: WinForsm TreeView supports filtering of its nodes according to their Text property.
+components: ["treeview"]
 slug: winforms/treeview/working-with-nodes/filtering-nodes
 tags: filtering,nodes
 published: True

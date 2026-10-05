@@ -1,6 +1,7 @@
 ---
 title: Resolving Visual Studio 2022 Crash with Telerik Extensions
 description: A guide on fixing crashes in Visual Studio 2022 caused by Telerik extensions by ensuring they are updated to the latest version.
+components: ["general"]
 type: troubleshooting
 page_title: How to Fix Visual Studio 2022 Crashes Caused by Outdated Telerik Extensions
 slug: resolve-visual-studio-2022-crash-telerik-extensions

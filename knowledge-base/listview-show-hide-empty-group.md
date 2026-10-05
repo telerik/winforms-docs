@@ -1,6 +1,7 @@
 ---
 title: How to show/hide empty groups in RadListView control.
 description: This article shows how you can show/hide empty groups.
+components: ["listview"]
 type: how-to
 page_title: How to Show/Hide Empty Groups in RadListView Control
 slug: listview-hide-empty-groups

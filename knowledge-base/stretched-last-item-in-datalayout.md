@@ -1,6 +1,7 @@
 ---
 title: Eliminate the Last Item's stretching in DataLayout
 description: This article shows how to handle the last item's vertical stretching in the WinForms DataLayout.
+components: ["datalayout"]
 type: how-to
 page_title: How to eliminate the Last Item's stretching in DataLayout.
 slug: stretched-last-item-in-datalayout

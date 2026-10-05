@@ -2,6 +2,7 @@
 title: Bookmarks (Outlines)
 page_title: Bookmarks (Outlines)
 description: Bookmarks (Outlines)
+components: ["pdfviewer"]
 slug: radpdfviewer-features-bookmarks
 tags: bookmarks, outlines
 published: True

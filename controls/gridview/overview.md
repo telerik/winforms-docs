@@ -2,6 +2,7 @@
 title: Overview
 page_title: GridView - RadGridView
 description: RadGridView is a grid component developed on top of Telerik Presentation Framework which provides a combination of performance, extensibility, and ease of use.
+components: ["gridview"]
 slug: winforms/gridview
 tags: gridview
 published: True
@@ -24,7 +25,7 @@ __RadGridView__ is a grid component developed on top of [Telerik Presentation Fr
 
 ## Key Features
 
-* __Easily customizable appearance and theming mechanis__: RadGridView offers four flexible methods for customizing its appearance: Themes, the UI Editor (DesignTime), Events, and Conditional Formatting. Each method has its specific use case, although they may overlap, providing developers with multiple options to fine-tune the look and feel of the control. Themes allow for global styling changes, while the UI editor simplifies design-time adjustments. Events enable dynamic appearance changes during runtime, and Conditional Formatting applies specific styles based on cell values or conditions. [Read more]({%slug winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance%})
+* __Easily customizable appearance and theming mechanism__: RadGridView offers four flexible methods for customizing its appearance: Themes, the UI Editor (DesignTime), Events, and Conditional Formatting. Each method has its specific use case, although they may overlap, providing developers with multiple options to fine-tune the look and feel of the control. Themes allow for global styling changes, while the UI editor simplifies design-time adjustments. Events enable dynamic appearance changes during runtime, and Conditional Formatting applies specific styles based on cell values or conditions. [Read more]({%slug winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance%})
 
 * __Outstanding Performance__: RadGridView delivers cell and row virtualization by utilizing container reuse and recycling, which further enhances grid performance and reduces memory footprint. [Read more]({%slug winforms/gridview/fundamentals/ui-virtualization%})
 

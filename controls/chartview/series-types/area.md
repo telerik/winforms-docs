@@ -2,6 +2,7 @@
 title: Area
 page_title: Area - ChartView
 description: As a derivative of Categorical series, AreaSeries plot their data points using category-value couples
+components: ["chartview"]
 slug: winforms/chartview-/series-types/area
 tags: area
 published: True

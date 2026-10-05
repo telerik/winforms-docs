@@ -1,6 +1,7 @@
 ---
 title: Paste Plain Text in RadRichTextBoxEditor
 description: Debugging with the source code allows you to examine the source and find the root of the issues
+components: ["richtexteditor"]
 type: how-to
 page_title: Paste Plain Text in RadRichTextBoxEditor
 slug: paste-plain-text

@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization
 description: UI Virtualization
+components: ["spreadsheet"]
 slug: radspreadsheet-ui-virtualization
 tags: ui,virtualization
 published: True

@@ -2,6 +2,7 @@
 title: Scheduler Cell Containers
 page_title: Scheduler Cell Containers - RadScheduler
 description: The cell containers in RadScheduler are the elements which contain cells and appointments. The cells and the appointments are dynamic elements which get recycled and updated under various conditions
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/views/scheduler-cell-containers
 tags: scheduler,cell,containers
 published: True

@@ -2,6 +2,7 @@
 title: Formatting Rows
 page_title: Formatting Rows - WinForms GridView Control
 description: Learn how to use the RowFormatting event to apply custom formatting to WinForms GridView's data rows.
+components: ["gridview"]
 slug: winforms/gridview/rows/formatting-rows
 tags: formatting,rows
 published: True

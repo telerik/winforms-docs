@@ -1,6 +1,7 @@
 ---
 title: Designer is Not Loading
 description: Learn how to deal with designer not loading in WinForms project.
+components: ["general"]
 type: how-to 
 page_title: Designer is Not Loading  
 slug: designer-not-loading

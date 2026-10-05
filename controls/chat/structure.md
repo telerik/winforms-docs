@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Chat Control
 description: Get familiar with the internal elements structure of WinForms Chat.
+components: ["chat"]
 slug: winforms/chat/structure 
 tags: chat
 published: True

@@ -2,6 +2,7 @@
 title: BorderPrimitive
 page_title: BorderPrimitive - Telerik Presentation Framework
 description: The BorderPrimitive class is responsible for drawing a border around an area on the screen.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/primitives/borderprimitive
 tags: borderprimitive
 published: True
@@ -17,7 +18,7 @@ The __BorderPrimitive__ class is responsible for drawing the border around an ar
 
 ![Telerik UI for WinForms BorderPrimitive SingleBorder example](images/tpf-primitives-borderprimitive002.png)
 
-All four sides of the border are drawn with the same properties except color. Color is controlled by the __GradientStyles__ property. To get all colors in the border to display the same, use the __GrandientStyles.Solid__ enumeration member. The example below displays a red, 3 pixel border box.
+All four sides of the border are drawn with the same properties except color. Color is controlled by the __GradientStyles__ property. To get all colors in the border to display the same, use the __GradientStyles.Solid__ enumeration member. The example below displays a red, 3 pixel border box.
 
 #### Creating a BorderPrimitive with SingleBorder
 

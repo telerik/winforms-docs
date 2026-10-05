@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms Map Control
 description: Get familiar with the internal elements structure of WinForms Map.
+components: ["map"]
 slug: winforms/map/structure
 tags: map, structure
 published: True

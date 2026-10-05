@@ -2,6 +2,7 @@
 title: Infinite Scrolling
 page_title: Infinite Scrolling - WinForms PipsPager Control
 description: This article shows the infinite scrolling of the RadPipsPager control.
+components: ["pipspager"]
 slug: pipspager-infinite-scrolling
 tags: pipspager, scrolling
 published: True

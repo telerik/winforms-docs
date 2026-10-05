@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms DataFilter Control
 description: Learn what are the item types and the elements used inside them. 
+components: ["datafilter"]
 slug: winforms/datafilter/structure
 tags: data, filter, structure
 published: True

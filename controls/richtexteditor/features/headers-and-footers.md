@@ -2,6 +2,7 @@
 title: Headers and Footers
 page_title: Headers and Footers - WinForms RichTextEditor Control
 description: WinForms RichTextEditor supports Headers and Footers in its document when in Paged layout mode.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/features/headers-and-footers
 tags: headers,and,footers
 published: True

@@ -2,6 +2,7 @@
 title: Troubleshooting Telerik NuGet
 page_title: Common issues that may occur when you use the Telerik NuGet server to install Telerik UI for WinForms packages
 description: Telerik NuGet Troubleshooting
+components: ["general"]
 slug: troubleshooting-nuget
 tags: long, nuget, package, installation
 published: True

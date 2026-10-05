@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties and Events - WinForms Overlay Screen
 description: Learn the most important properties for changing the Overlay Screen appearance and behavior.
+components: ["splashscreen"]
 slug: overlay-properties-events
 tags: properties,and,events
 published: True

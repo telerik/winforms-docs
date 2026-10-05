@@ -2,6 +2,7 @@
 title: Rigth-To-Left Support
 page_title: Rigth-To-Left Support - RadVirtualGrid
 description: RadVirtualGrid provides full support for right-to-left (RTL) language locales.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/localization/right-to-left-support
 tags: right-to-left-support
 published: True

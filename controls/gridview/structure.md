@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - RadGridView
 description: Get familiar with the internal elements structure of the WinForms GridView control.
+components: ["gridview"]
 slug: gridview-structure
 tags: gridview, structure
 published: True

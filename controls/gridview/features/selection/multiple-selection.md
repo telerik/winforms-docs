@@ -2,6 +2,7 @@
 title: Multiple Selection
 page_title: Multiple Selection - RadGridView
 description: RadGridView allows the user to select more than one item at a time from the displayed data.
+components: ["gridview"]
 slug: winforms/gridview/selection/multiple-selection
 tags: multiple,selection,lasso,selectionmode
 published: True

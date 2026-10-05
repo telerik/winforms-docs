@@ -2,6 +2,7 @@
 title: RadDocument
 page_title: RadDocument - WinForms RichTextEditor Control
 description: RadDocument is the root element for WinForms RadRichTextEditor's content. It holds the collection of Sections defined for the RadRichTextEditor's content.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements/raddocument
 tags: raddocument
 published: True

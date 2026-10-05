@@ -1,6 +1,7 @@
 ---
 title: How to migrate to new two columns menu
 description: How to migrate to new two columns menu. Check it now!
+components: ["applicationmenu"]
 type: how-to
 page_title: How to migrate to new two columns menu
 slug: how-to-migrate-to-new-two-columns-menu

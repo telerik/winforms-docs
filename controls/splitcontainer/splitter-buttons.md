@@ -2,6 +2,7 @@
 title: Splitter Buttons
 page_title: Splitter Buttons - RadSplitContainer
 description: The split panels can be collapsed to a particular direction via the splitter`s navigation buttons.
+components: ["splitcontainer"]
 slug: winforms/splitcontainer/splitter-buttons
 tags: splitcontainer,splitter-buttons
 published: True

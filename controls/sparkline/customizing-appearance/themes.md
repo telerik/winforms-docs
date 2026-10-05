@@ -2,6 +2,7 @@
 title: Themes
 page_title: RadSparkline Themes
 description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+components: ["sparkline"]
 slug: radsparkline-themes
 tags: sparkline
 published: True

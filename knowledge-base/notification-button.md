@@ -1,6 +1,7 @@
 ---
 title: Notification Button
 description: Notification Button. Check it now!
+components: ["buttons"]
 type: how-to
 page_title: Notification Button
 slug: notification-button

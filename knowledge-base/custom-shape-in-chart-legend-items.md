@@ -1,6 +1,7 @@
 ---
 title: Apply a Custom Shape to ChartView's Legend Items
 description: This article shows how you can apply a custom shape to chartview's legend items.
+components: ["chartview"]
 type: how-to
 page_title: How to apply a custom Shape to ChartView's legend items
 slug: custom-shape-in-chart-legend-items

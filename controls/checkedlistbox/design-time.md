@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms CheckedListBox Control
 description: WinForms CheckedListBox is an enhanced alternative to the standard Windows Forms checked list box control. 
+components: ["checkedlistbox"]
 slug: winforms/checkedlistbox/design-time
 tags: checkedlistbox
 published: True

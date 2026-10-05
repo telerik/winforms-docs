@@ -1,6 +1,7 @@
 ---
 title: How to Add Custom Items to RadDiagramRibbonBar
 description: Learn how to add custom items to the WinForms DiagramRibbonBar.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 type: how-to 
 page_title: How to Add Custom Items to RadDiagramRibbonBar
 slug: diagram-custom-items

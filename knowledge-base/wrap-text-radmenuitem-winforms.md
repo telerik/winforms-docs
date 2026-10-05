@@ -1,6 +1,7 @@
 ---
 title: Wrapping Text in RadMenu and RadDropDownButton Items in WinForms
 description: Learn how to wrap long text for items within RadMenu and RadDropDownButton in Telerik UI for WinForms to ensure text visibility.
+components: ["buttons"]
 type: how-to
 page_title: How to Wrap Text of RadMenuItem in Telerik UI for WinForms
 slug: menuitem-wrap-text

@@ -2,6 +2,7 @@
 title: Explorer Control
 page_title: Explorer Control - WinForms FileDialogs
 description: ExplorerControl is the view that presents the UI of the dialogs. When a dialog is opened its content is shown via this control.
+components: ["filedialogs"]
 slug: winforms/file-dialogs/dialog-controls/explorer-control
 tags: filedialogs, explorercontrol
 published: True

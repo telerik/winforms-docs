@@ -2,6 +2,7 @@
 title: Painting Rows
 page_title: Painting Rows - WinForms GridView Control
 description: Learn how you can paint directly in the rows using the RowPaint event in WinForms GridView . 
+components: ["gridview"]
 slug: winforms/gridview/rows/painting-rows
 tags: painting,rows
 published: True

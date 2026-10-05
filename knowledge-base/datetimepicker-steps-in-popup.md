@@ -1,6 +1,7 @@
 ---
 title: Specify the Minutes/Hours Step in DateTimePicker's Popup
 description: This article shows how to Specify the Minutes/Hours Step in the WinForms DateTimePicker's Popup.
+components: ["datetimepicker"]
 type: how-to
 page_title: How to specify the Minutes/Hours Step in DateTimePicker's Popup
 slug: datetimepicker-steps-in-popup

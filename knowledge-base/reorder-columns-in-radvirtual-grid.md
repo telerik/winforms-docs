@@ -1,6 +1,7 @@
 ---
 title: Reorder Columns in RadVirtualGrid
 description: This article demonstrates how to reorder the columns in RadVirtualGrid
+components: ["virtualgrid"]
 type: how-to
 page_title: Reorder Columns in RadVirtualGrid
 slug: reorder-columns-in-radvirtual-grid

@@ -2,6 +2,7 @@
 title: Crop
 page_title: Crop - WinForms ImageEditor Control
 description: WinForms ImageEditor supports image cropping functionality which allows you to adjust the size of the crop rectangle and accept the changes. 
+components: ["imageeditor"]
 slug: radimageeditor-tools-crop
 tags: cropping
 published: True

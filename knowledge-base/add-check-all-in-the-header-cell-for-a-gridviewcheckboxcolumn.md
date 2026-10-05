@@ -1,6 +1,7 @@
 ---
 title: Add Check All in the header cell for a GridViewCheckBoxColumn
 description: Add Check All in the header cell for a GridViewCheckBoxColumn. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Add Check All in the header cell for a GridViewCheckBoxColumn
 slug: add-check-all-in-the-header-cell-for-a-gridviewcheckboxcolumn

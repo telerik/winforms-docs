@@ -1,6 +1,7 @@
 ---
 title: How to show tooltip on disabled element in RibbonBar
 description: How to show tooltip on disabled element in RibbonBar
+components: ["ribbonbar"]
 type: how-to
 page_title: How to show tooltip on disabled element in RibbonBar
 slug: ribbon-disabled-tooltip

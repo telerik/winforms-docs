@@ -1,6 +1,7 @@
 ---
 title: RadPageView - create multiline strip element with RadCommandBar
 description: RadPageView - create multiline strip element with RadCommandBar. Check it now!
+components: ["pageview"]
 type: how-to
 page_title: RadPageView - create multiline strip element with RadCommandBar
 slug: radpageview---create-multiline-strip-element-with-radcommandbar

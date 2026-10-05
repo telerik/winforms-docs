@@ -2,6 +2,7 @@
 title: SparkLineSeries
 page_title: SparkLineSeries - WinForms Sparkline Control
 description: SparkLineSeries plot their CategoricalSparkDataPoint on Cartesian Area. Learn how you can create the line series.
+components: ["sparkline"]
 slug: radsparkline-sparklineseries
 tags: sparkline
 published: True

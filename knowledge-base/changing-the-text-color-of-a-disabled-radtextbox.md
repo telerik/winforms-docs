@@ -1,6 +1,7 @@
 ---
 title: Changing the text color of a disabled RadTextBox
 description: Changing the text color of a disabled RadTextBox. Check it now!
+components: ["treeview"]
 type: how-to
 page_title: Changing the text color of a disabled RadTextBox
 slug: changing-the-text-color-of-a-disabled-radtextbox

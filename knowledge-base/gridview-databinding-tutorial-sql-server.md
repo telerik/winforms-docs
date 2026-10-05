@@ -1,6 +1,7 @@
 ---
 title: How to Bind GridView to a Local SQL Server
 description: Learn how to bind the WinForms GridView to a local SQL server.
+components: ["gridview"]
 type: how-to 
 page_title: How to Bind GridView to a Local SQL Server 
 slug: gridview-databinding-tutorial-sql-server

@@ -2,6 +2,7 @@
 title: Events
 page_title: Events - WinForms GridView Control
 description: Learn what are the events fired along the editing process in the WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/editors/events
 tags: events
 published: True

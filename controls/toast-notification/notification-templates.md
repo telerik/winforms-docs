@@ -2,6 +2,7 @@
 title: Notification Templates
 page_title: Notification Templates - WinForms Toast Notification
 description: WinForms ToastNotificationManager offers built-in templates presenting different design. Get familiar with the offered layouts.  
+components: ["toastnotificationmanager"]
 slug: toast-notification-templates
 tags: toast notification
 published: True

@@ -2,6 +2,7 @@
 title: Binding to Object-relational Data
 page_title: Binding to Object-relational Data - WinForms TreeView Control
 description: WinForms TreeView has the ability to bind to related data of custom objects which have member collections of related objects.
+components: ["treeview"]
 slug: winforms/treeview/data-binding/binding-to-object-relational-data
 tags: binding,to,object-relational,data
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Task Card Edit Dialog  
 description: Learn how to achieve an edit dialog for the task cards in the WinForms TaskBoard.
+components: ["taskboard"]
 type: how-to
 page_title: Task Card Edit Dialog
 slug: task-board-edit-dialog

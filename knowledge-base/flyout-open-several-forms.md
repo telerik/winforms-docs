@@ -1,6 +1,7 @@
 ---
 title: How to open multiple flyout screens
 description: Learn how to open multiple flyout screens
+components: ["flyout"]
 type: how-to
 page_title: Open multiple flyout screens
 slug: flyout-open-several-screens

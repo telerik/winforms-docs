@@ -1,6 +1,7 @@
 ---
 title: Capturing Tab Keypress in RadTreeView for WinForms
 description: Learn how to capture the Tab keypress event in RadTreeView for WinForms by overriding the IsInputKey method.
+components: ["treeview"]
 type: how-to
 page_title: How to Capture Tab Key Press in RadTreeView for WinForms
 slug: capture-tab-keypress-radtreeview-winforms

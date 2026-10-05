@@ -2,10 +2,11 @@
 title: Data Validation
 page_title: Data Validation - WinForms Spreadsheet Control
 description: Data validation is a feature of WinForms Spreadsheet that helps you define restrictions on what data can be entered in a cell.
+components: ["spreadsheet"]
 slug: radspreadsheet-features-data-validation
 tags: data,validation
 published: True
-position: 4
+position: 8
 ---
 
 # Data Validation
@@ -30,7 +31,7 @@ The dialog contains two other tabs - one allowing to customize the input message
 
 Data Validation allows you to turn on the option to circle invalid data. This way you can always see if there is any invalid data in your document. You can toggle this option using the ribbon or through code.
 
-Figure 2 shows hot to turn the option on and the result when invalid data is present in the worksheet.
+Figure 2 shows how to turn the option on and the result when invalid data is present in the worksheet.
 
 >caption Figure 2: Circle Invalid Data
 

@@ -2,6 +2,7 @@
 title: EmptyMapProvider
 page_title: EmptyMapProvider - WinForms Map Control
 description: WinForms Map's EmptyMapProvider is a provider which doesn't connect to any real imagery services.
+components: ["map"]
 slug: winforms/map/providers/emptymapprovider
 tags: map, providers
 published: True

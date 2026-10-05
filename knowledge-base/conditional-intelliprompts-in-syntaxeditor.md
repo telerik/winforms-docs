@@ -1,6 +1,7 @@
 ---
 title: Conditional Intelliprompts in SyntaxEditor 
 description: This article demonstrates how to show intelliprompts according to the users' input in SyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to
 page_title: Conditional Intelliprompts in SyntaxEditor  
 slug: conditional-intelliprompts-in-syntaxeditor

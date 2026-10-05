@@ -2,6 +2,7 @@
 title: PivotGridPrintStyle
 page_title: PivotGridPrintStyle - RadPivotGrid
 description: PivotGridPrintStyle provides different properties and events you can use to modify the appearance of the printouts.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/printing-support/pivotgridprintstyle
 tags: pivotgridprintstyle
 published: True

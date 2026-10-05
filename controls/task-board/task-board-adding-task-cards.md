@@ -2,6 +2,7 @@
 title: Adding Task Cards
 page_title: Adding Task Cards - Task Board
 description: Create predefined task cards in the WinForms TaskBoard (Kanban) control.
+components: ["taskboard"]
 slug: task-board-adding-task-cards
 tags: task board, kanban, add, task, card
 published: True

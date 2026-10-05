@@ -1,6 +1,7 @@
 ---
 title: Prevent Column Dragging Over Pinned Columns in RadGridView for WinForms
 description: Learn how to restrict the reordering of RadGridView columns by preventing columns from being dragged over pinned columns.
+components: ["gridview"]
 type: how-to
 page_title: How to Restrict Column Dragging Over Pinned Columns in RadGridView for WinForms
 slug: gridview-prevent-column-drag-over-pinned

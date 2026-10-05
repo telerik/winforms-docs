@@ -2,6 +2,7 @@
 title: Keyboard Navigation
 page_title: Keyboard Navigation - RadTreeView
 description: This article shows how you can use the built-in keyboard navigation and search.
+components: ["treeview"]
 slug: winforms/treeview/usability/keyboard-navigation
 tags: keyboard,navigation
 published: True

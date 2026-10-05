@@ -2,6 +2,7 @@
 title: DetailListViewDragDropService
 page_title: DetailListViewDragDropService - WinForms ListView Control
 description: WinForms ListView supports DetailsView mode which allows columns rearranging by its DetailListViewDragDropService.
+components: ["listview"]
 slug: winforms/listview/drag-and-drop/detaillistviewdragdropservice
 tags: drag,and,drop,in,bound,mode
 published: True

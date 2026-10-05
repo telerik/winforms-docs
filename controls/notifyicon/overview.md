@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms NotifyIcon Control
 description: This article lists the main features of the RadNotifyIcon control.
+components: ["notifyicon"]
 slug: notifyicon-overview
 tags: notifyIcon
 published: True

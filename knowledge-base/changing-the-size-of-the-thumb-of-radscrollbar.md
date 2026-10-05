@@ -1,6 +1,7 @@
 ---
 title: Changing the size of the thumb of RadScrollBar
 description: Changing the size of the thumb of RadScrollBar. Check it now!
+components: ["general"]
 type: how-to
 page_title: Changing the size of the thumb of RadScrollBar
 slug: changing-the-size-of-the-thumb-of-radscrollbar

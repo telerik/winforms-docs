@@ -1,6 +1,7 @@
 ---
 title: Handle Toolbox Issues with .NET Core    
 description: Learn how to handle issues with the toolbox in .NET Core. 
+components: ["general"]
 type: how-to
 page_title: Handle Toolbox Issues with .NET Core   
 slug: toolbox-issues-with-net-core

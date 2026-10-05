@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Calendar Control
 description: WinForms Calendar supports all common features you would find in the standard Month Calendar control.
+components: ["calendar"]
 slug: winforms/calendar/getting-started
 tags: getting,started
 published: True
@@ -84,7 +85,7 @@ Run the application. Notice the three selected and the highlighted special day. 
 
 * [Adding Selected Dates]({%slug winforms/calendar/design-time-support/adding-selected-dates%})
 
-* [Adding Spacial Days]({%slug winforms/calendar/design-time-support/adding-special-days%})
+* [Adding Special Days]({%slug winforms/calendar/design-time-support/adding-special-days%})
 
 * [Properties and Events]({%slug winforms/calendar/important-events%})
 

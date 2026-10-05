@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms Clock Control
 description: WinForms Clock is a control which allows the developers to use it in their applications to display time to the users.
+components: ["clock"]
 slug: winforms/clock
 tags: clock
 published: True

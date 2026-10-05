@@ -2,6 +2,7 @@
 title: RadTrackBarElement
 page_title: RadTrackBarElement - Telerik Presentation Framework
 description: RadTrackBarElement contains the logic and user interface for RadTrackBar. 
+components: ["general"]
 slug: winforms/telerik-presentation-framework/elements/radtrackbarelement
 tags: radtrackbarelement
 published: True

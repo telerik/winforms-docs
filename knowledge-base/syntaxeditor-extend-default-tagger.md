@@ -1,6 +1,7 @@
 ---
 title: Add New Keyword to Existing Tagger
 description: This article demonstrates how to add new keyword to existing tagger
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Add New Keyword to Existing Tagger
 slug: syntaxeditor-extend-default-tagger

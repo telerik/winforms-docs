@@ -2,10 +2,11 @@
 title: Route
 page_title: Route - WinForms Map Control
 description: WinForms Map provides a unified route search architecture which uses functionality of the different routing services.
+components: ["map"]
 slug: winforms/map/providers/route
 tags: map, providers
 published: True
-position: 3 
+position: 5 
 ---
 
 # Route

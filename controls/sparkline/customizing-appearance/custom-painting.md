@@ -2,6 +2,7 @@
 title: Custom Painting
 page_title: Custom Painting - WinForms Sparkline Control
 description: The WinForms Sparkline control provides two event that allows to style any of the painted elements.
+components: ["sparkline"]
 slug: radsparkline-custom-painting
 tags: sparkline
 published: True

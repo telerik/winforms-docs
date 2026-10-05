@@ -1,6 +1,7 @@
 ---
 title: How to Export Each Grid Group on a Single Page
 description: This article demonstrates how to export each group on a single pdf page
+components: ["gridview"]
 type: how-to
 page_title: How to Export Each Grid Group on a Single Page
 slug: export-each-grid-group-in-a-single-pdf-page

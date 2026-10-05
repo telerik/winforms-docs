@@ -2,6 +2,7 @@
 title: Formatting Items
 page_title: Formatting Items - RadListControl
 description: RadListControl is the an alternative to the Microsoft ListBox control.
+components: ["listcontrol"]
 slug: winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/customizing-appearance/formatting-items
 tags: listcontrol
 published: True

@@ -1,6 +1,7 @@
 ---
 title: End Edit Mode When Navigating to Another Cell in RadGridView for WinForms
 description: Learn how to configure RadGridView to end cell editing when the user navigates to another cell, similar to the standard DataGridView behavior.
+components: ["gridview"]
 type: how-to
 page_title: How to End Editing on Cell Navigation in RadGridView for WinForms
 slug: end-editing-on-cell-navigation-radgridview-winforms

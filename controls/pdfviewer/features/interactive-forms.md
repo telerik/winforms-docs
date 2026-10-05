@@ -2,6 +2,7 @@
 title: Interactive Forms
 page_title: Interactive Forms - WinForms PdfViewer Control
 description: With WinForms PdfViewer, you can provide the end users the ability to show, fill and save documents containing interactive forms. 
+components: ["pdfviewer"]
 slug: radpdfviewer-features-interactive-forms
 tags: interactive, forms, filling
 published: True

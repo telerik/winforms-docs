@@ -2,6 +2,7 @@
 title: CultureInfo and RegionInfo Basics
 page_title: CultureInfo and RegionInfo Basics - WinForms Calendar Control
 description: WinForms Calendar provides full support for Globalization.
+components: ["calendar"]
 slug: winforms/calendar/localization/cultureinfo-and-regioninfo-basics
 tags: cultureinfo,and,regioninfo,basics
 published: True

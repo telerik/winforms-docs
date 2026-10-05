@@ -1,6 +1,7 @@
 ---
 title: Toolbox Error in a .NET Framework Project
 description: Learn how to deal with error after dragging a control from the toolbox and dropping it onto the form. 
+components: ["general"]
 type: how-to
 page_title: Toolbox Error in a .NET Framework Project
 slug: toolbox-error

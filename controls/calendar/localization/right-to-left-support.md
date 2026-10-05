@@ -2,6 +2,7 @@
 title: Right-To-Left Support
 page_title: Right-To-Left Support - WinForms Calendar Control
 description: WinForms Calendar offers full right-to-left support.
+components: ["calendar"]
 slug: winforms/calendar/localization/right-to-left-support
 tags: right-to-left,support
 published: True

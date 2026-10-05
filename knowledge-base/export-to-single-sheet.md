@@ -2,6 +2,7 @@
 title: Export two or more grids to a single sheet
 page_title: Export two or more grids to a single sheet
 description: Export two or more grids to a single sheet
+components: ["gridview"]
 slug: export-to-single-sheet
 tags: gridview, export, sheet
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Distinguishing between versions – Dev/Trial
 description: Distinguishing between versions – Dev/Trial. Check it now!
+components: ["general"]
 type: how-to
 page_title: Distinguishing between versions – Dev/Trial
 slug: distinguishing-between-versions-dev-trial

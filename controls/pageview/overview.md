@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadPageView
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+components: ["pageview"]
 slug: winforms/pageview
 tags: pageview
 published: True
@@ -38,7 +39,7 @@ Here are some of the key **RadPageView**'s aspects:
 
 * Myriad of features in *Strip View* mode such as animated scrolling, items fit mode, items alignment, item size mode plus much more.
 
-* Different View Modes to optiomize your layout: [StripView]({%slug winforms/pageview/stripview/getting-started%}), [OutlookView]({%slug winforms/pageview/outlookview%}), [ExplorerBarView]({%slug winforms/pageview/explorerbarview%}), [StackView]({%slug winforms/pageview/stackview%}), [BackstageView]({%slug winforms/pageview/getting-started%}), [OfficeNavigationBarView]({%slug pageview-officenavigationbar%}), [NavigationView]({%slug winforms/pageview/navigationview%})
+* Different View Modes to optimize your layout: [StripView]({%slug winforms/pageview/stripview/getting-started%}), [OutlookView]({%slug winforms/pageview/outlookview%}), [ExplorerBarView]({%slug winforms/pageview/explorerbarview%}), [StackView]({%slug winforms/pageview/stackview%}), [BackstageView]({%slug winforms/pageview/getting-started%}), [OfficeNavigationBarView]({%slug pageview-officenavigationbar%}), [NavigationView]({%slug winforms/pageview/navigationview%})
 
 * Pixel-perfect look and feel.
 

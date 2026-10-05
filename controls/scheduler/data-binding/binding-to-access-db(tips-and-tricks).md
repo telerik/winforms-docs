@@ -2,6 +2,7 @@
 title: Binding to Access DB(Tips and Tricks)
 page_title: Binding to Access DB(Tips and Tricks) - RadScheduler
 description: Binding, updating and synchronization of data retrieved from Access DB(Tips and Tricks)
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/data-binding/binding-to-access-db(tips-and-tricks)
 tags: binding,to,access,db(tips,and,tricks)
 published: True

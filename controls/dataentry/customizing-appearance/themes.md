@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - WinForms DataEntry Control
 description: Learn how one can customize the WinForms DataEntry's appearance in Visual Style Builder.
+components: ["dataentry"]
 slug: winforms/dataentry/themes
 tags: appearance, themes
 published: True

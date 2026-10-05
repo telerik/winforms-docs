@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms TreeMap Control
 description: Learn the design time capabilities of the WinForms TreeMap.  
+components: ["treemap"]
 slug: treemap-design-time
 tags: treemap, design
 published: True

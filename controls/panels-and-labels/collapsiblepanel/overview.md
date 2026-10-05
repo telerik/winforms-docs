@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadCollapsiblePanel
 description: RadCollapsiblePanel is an expandable panel which can host controls in its content area.
+components: ["collapsiblepanel"]
 slug: winforms/panels-and-labels/collapsiblepanel
 tags: collapsiblepanel
 published: True

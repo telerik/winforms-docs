@@ -1,6 +1,7 @@
 ---
 title: Adding a Right-Aligned Button Visible Across All RibbonTabs in RadRibbonBar
 description: Learn how to add a button or control that remains visible and right-aligned across all RibbonTabs in RadRibbonBar, even when the window is resized.
+components: ["ribbonbar"]
 type: how-to
 page_title: How to Add a Right-Aligned Button Across RibbonTabs in RadRibbonBar
 meta_title: How to Add a Right-Aligned Button Across RibbonTabs in RadRibbonBar

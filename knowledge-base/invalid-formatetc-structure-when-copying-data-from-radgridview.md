@@ -1,6 +1,7 @@
 ---
 title: How to Deal with Invalid FORMATETC structure Error when Copying Data from RadGridView
 description: Learn how to handle Invalid FORMATETC structure Error when Copying Data from the WinForms GridView. 
+components: ["gridview"]
 type: how-to
 page_title: How to Deal with Invalid FORMATETC structure Error when Copying Data from RadGridView
 slug: invalid-formatetc-structure-when-copying-data-from-radgridview

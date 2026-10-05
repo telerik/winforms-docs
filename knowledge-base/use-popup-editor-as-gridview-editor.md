@@ -1,6 +1,7 @@
 ---
 title: How to Use RadPopupEditor as a Custom Editor in RadGridView
 description: Learn how to use a RadPopupEditor as an editor in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Use RadPopupEditor as a Custom Editor in RadGridView
 slug: use-popup-editor-as-gridview-editor

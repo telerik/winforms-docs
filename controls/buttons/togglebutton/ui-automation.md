@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadToggleButton
 description: UI Automation Support (UI Accessibility) for RadToggleButton.   
+components: ["buttons"]
 slug: togglebutton-ui-automation
 tags: togglebutton,ui,automation
 published: True

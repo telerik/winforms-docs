@@ -1,6 +1,7 @@
 ---
 title: Enabling Drag and Drop with MultiSelect in RadTreeView
 description: Learn how to implement drag and drop functionality for multiple selected nodes in RadTreeView for WinForms.
+components: ["treeview"]
 type: how-to
 page_title: How to Enable Drag and Drop for MultiSelection in RadTreeView
 slug: treeview-drag-drop-preserve-multiselection

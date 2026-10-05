@@ -2,6 +2,7 @@
 title: Environment Variables
 page_title: Environment Variables - File Dialogs
 description: Enable environment variables in Telerik FileDialogs for WinForms to simplify file navigation and improve user workflows.
+components: ["filedialogs"]
 slug: file-dialogs-environment-variables
 tags: filedialogs
 published: True

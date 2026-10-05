@@ -2,6 +2,7 @@
 title: SeaLevel
 page_title: SeaLevel - WinForms Map Control
 description: ElevationType.SeaLevel ElevationRequest gets the offset of the geoid sea level Earth model from the ellipsoid Earth model at a set of latitude and longitude coordinates.
+components: ["map"]
 slug: winforms/map/providers/elevation/sealevel
 tags: map, providers, elevation
 published: True

@@ -2,6 +2,7 @@
 title: Unbound Mode
 page_title: Unbound Mode - WinForms SlideView Control
 description: Navigate the items in Unbound Mode for SlideView.
+components: ["slideview"]
 slug: slideview-unbound-mode
 tags: slideview, bound
 published: True

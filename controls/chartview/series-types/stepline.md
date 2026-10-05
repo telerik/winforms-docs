@@ -2,6 +2,7 @@
 title: Stepline
 page_title: Stepline - ChartView
 description: SteplineSeries plot their Categorical data points on Cartesian Area using one categorical and one numerical axis
+components: ["chartview"]
 slug: winforms/chartview-/series-types/stepline
 tags: stepline
 published: True

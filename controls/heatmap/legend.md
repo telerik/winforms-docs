@@ -2,6 +2,7 @@
 title: Legend
 page_title: Legend - WinForms HeatMap Control
 description: This article describes the legend options that the WinForms HeatMap offers.
+components: ["heatmap"]
 slug: heatmap-legend
 tags: heatmap, legend 
 published: True

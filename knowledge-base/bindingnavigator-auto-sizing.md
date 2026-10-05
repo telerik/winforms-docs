@@ -1,6 +1,7 @@
 ---
 title: Auto Sizing BindingNavigator when its content grows
 description: Learn how to make the RadBindingNavigator in UI for WinForms grow and shrink dynamically with its contents.
+components: ["bindingnavigator"]
 type: how-to
 page_title: Dynamically Adjust RadBindingNavigator Size
 meta_title: Dynamically Adjust RadBindingNavigator Size

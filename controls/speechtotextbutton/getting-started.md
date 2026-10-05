@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: SpeechToTextButton Documentation - Getting Started
 description: Get started with the Telerik UI for WinForms SpeechToTextButton control and add the control to your project.
+components: ["speechtotextbutton"]
 tags: speech to text, button, winforms, .net
 published: True
 position: 2

@@ -1,6 +1,7 @@
 ---
 title: Use GridComboBoxColumn with Custom Values - Telerik UI for WinForms - KB
 description: Use GridComboBoxColumn with Custom Values. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Use GridComboBoxColumn with Custom Values - Telerik UI for WinForms - KB
 slug: use-gridcomboboxcolumn-with-custom-values

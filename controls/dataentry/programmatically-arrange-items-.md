@@ -2,6 +2,7 @@
 title: Programmatically Arrange Items 
 page_title: Programmatically arrange items - WinForms DataEntry Control
 description: Learn how one can arrange the editors in WinForms DataEntry.
+components: ["dataentry"]
 slug: winforms/dataentry/programmatically-arrange-items-
 tags: programmatically,arrange,items,
 published: True

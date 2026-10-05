@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - Filter View
 description: Get familiar with the public API of the WinForms FilterView control.  
+components: ["filterview"]
 slug: filter-view-properties-methods-events
 tags: filter, view, editor, change
 published: True

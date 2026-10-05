@@ -2,6 +2,7 @@
 title: FAQ
 page_title: FAQ
 description: "Find answers to common questions about securing Telerik UI for WinForms controls, including how to report vulnerabilities, handle third-party dependencies, and receive security fixes."
+components: ["general"]
 slug: security-faq
 tags: telerik, winforms, security, wf
 published: True

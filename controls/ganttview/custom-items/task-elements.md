@@ -2,6 +2,7 @@
 title: Task Elements
 page_title: Task Elements - WinForms GanttView Control
 description: WinForms GanttView allows you to replace the standard task elements with custom ones.
+components: ["ganttview"]
 slug: winforms/ganttview/custom-items/task-elements
 tags: creating,custom,task,elements
 published: True

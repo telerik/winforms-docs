@@ -2,6 +2,7 @@
 title: Updating the Database with ADO.Net
 page_title: Updating the Database with ADO.Net - RadGridView
 description: This article shows how you used ADO.Net to update the database when the grid is changed.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/updating-the-database-with-ado.net
 tags: updating,the,database,with,ado.net
 published: True

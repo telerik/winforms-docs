@@ -2,6 +2,7 @@
 title: Customizing the Quick Access Menu
 page_title: Customizing the Quick Access Menu - RadRibbonBar
 description: Quick Access Toolbar is an area of RadRibbonBar above the tabs.
+components: ["ribbonbar"]
 slug: winforms/ribbonbar/programming-radribbonbar/customizing-the-quick-access-menu
 tags: customizing,the,quick,access,menu
 published: True

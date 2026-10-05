@@ -2,6 +2,7 @@
 title: Custom Annotations
 page_title: Custom Annotations - WinForms RichTextEditor Control
 description: WinForms RadRichTextEditor offers custom annotation ranges which provide an approach for extending the document model to serve specific purposes such as persisting semantic information in the document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements/annotations/custom-annotations
 tags: custom,annotations
 published: True

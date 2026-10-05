@@ -2,6 +2,7 @@
 title: Plot Band
 page_title: Plot band - UI for WinForms Documentation
 description: Plot band annotation is a stripe, crossing its corresponding axis, specified by the From and To  properties.
+components: ["chartview"]
 slug: winforms/chartview-/features/annotations/plot-band
 tags: plot,band
 published: True

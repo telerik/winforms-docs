@@ -2,6 +2,7 @@
 title: Telerik Reporting  
 page_title: Telerik Reporting - Integration with Telerik Products
 description: "Get started with Telerik ReportViewer and learn how to use it in WinForms application."
+components: ["general"]
 slug: telerik-reporting-overview
 tags: telerik,reporting, winforms, radform
 position: 1
@@ -60,7 +61,7 @@ If the application needs to be declared as DPI-aware, an additional element must
 
 ### Add ReportViewer to Windows Form Design Time
 
-You can add the Telerik ReportViewer to the Windows Forms by drag-droping it from the Visual Studio Toolbox.
+You can add the Telerik ReportViewer to the Windows Forms by drag-dropping it from the Visual Studio Toolbox.
 
 ![Visual Studio Toolbox with the Telerik ReportViewer being added to a Windows Form at design time](images/telerik_reporting_3.png) 
 

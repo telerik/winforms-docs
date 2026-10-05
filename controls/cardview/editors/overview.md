@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadCardView
 description: RadCardView supports editing of its content out of the box. This operation can be started by clicking with the mouse on the value of a particular item.
+components: ["cardview"]
 slug: winforms/cardview/editors/overview
 tags: overview editors
 published: True
@@ -70,6 +71,6 @@ The Following example demonstrates the __ItemValidating__ event handling integer
 
 # See Also
 
-* [Swithing Editors]({%slug winforms/cardview/editors/switching-editors%})
+* [Switching Editors]({%slug winforms/cardview/editors/switching-editors%})
 * [Custom Items]({%slug winforms/cardview/custom-items%})
 * [Formatting Items]({%slug winforms/cardviewview/customizing-appearance/formatting-items%})

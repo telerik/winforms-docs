@@ -2,6 +2,7 @@
 title: Formatting Appointments
 page_title: Formatting appointments - WinForms Scheduler Control
 description: Appointments appearance in WinForms Scheduler can be customized using the AppointmentFormatting event.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/appearance/formatting-appointments
 tags: formatting,appointments
 published: True

@@ -2,6 +2,7 @@
 title: Commands
 page_title: Commands - RadSyntaxEditor
 description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience
+components: ["syntaxeditor"]
 slug: syntax-editor-commands
 tags: syntax-editor
 published: True

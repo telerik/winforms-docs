@@ -2,6 +2,7 @@
 title: Rows vs ChildRows
 page_title: Rows vs ChildRows - RadGridView
 description: This article explains the difference between the ChildRows and Rows collections.
+components: ["gridview"]
 slug: winforms/gridview/rows/rows-vs-childrows
 tags: rows,vs,childrows
 published: True

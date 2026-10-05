@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview
 description: Visual Studio Extensions for Telerik UI for WinForms aim to help developers when creating WinForms Application with Telerik UI for WinForms.
+components: ["general"]
 slug: winforms-installation-deployment-and-distribution-visual-studio-extensions
 tags: overview
 published: True

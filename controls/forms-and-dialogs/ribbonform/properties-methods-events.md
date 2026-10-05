@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - RadRibbonForm
 description: RadRibbonForm control is designed to host a RadRibbonBar control and mimic the Microsoft Office 2007 UI form style.
+components: ["ribbonform"]
 slug: winforms/forms-and-dialogs/ribbonform/properties-methods-events
 tags: ribbonform
 published: True

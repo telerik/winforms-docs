@@ -2,6 +2,7 @@
 title: Overview
 meta_title: WinForms SpeechToTextButton Documentation - Overview
 description: Learn how the Telerik UI for WinForms SpeechToTextButton enables seamless speech-to-text conversion in your applications.
+components: ["speechtotextbutton"]
 tags: speech to text, button, winforms, .net
 published: True
 position: 0

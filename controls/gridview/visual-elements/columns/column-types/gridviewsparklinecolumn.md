@@ -2,6 +2,7 @@
 title: GridViewSparklineColumn
 page_title: GridViewSparklineColumn - WinForms GridView Control
 description: GridViewSparklineColumn allows a Sparkline chart to be displayed and edited in the WinForms GridView.
+components: ["gridview"]
 slug: gridview-columntypes-sparklinecolumn
 tags: gridviewsparklinecolumn
 published: True

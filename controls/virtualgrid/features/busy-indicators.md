@@ -2,6 +2,7 @@
 title: Busy Indicators
 page_title: Busy Indicators - WinForms VirtualGrid Control
 description: Learn how you can use the built-in busy indicators functionality in WinForms VirtualGrid.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/busy-indicators
 tags: virtualgrid, busy, indicators
 published: True

@@ -2,6 +2,7 @@
 title: Keyboard Support
 page_title: Keyboard Support - RadVirtualGrid
 description: This article shows which keys you can use to navigate and edit values in RadVirtualGrid.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/end-user-capabilities/keyboard-support
 tags: keyboard,support
 published: True

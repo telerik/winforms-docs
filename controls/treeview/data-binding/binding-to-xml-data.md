@@ -2,6 +2,7 @@
 title: Binding to XML Data
 page_title: Binding to XML Data - RadTreeView
 description: This article shows how you can load an XML file into DataSet and then bind RadTreeView to it. 
+components: ["treeview"]
 slug: winforms/treeview/data-binding/binding-to-xml-data
 tags: binding,to,xml,data
 published: True

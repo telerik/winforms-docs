@@ -2,6 +2,7 @@
 title: Expression Syntax and Operators
 page_title: Expression Syntax and Operators - WinForms GridView Control
 description: Learn the expression syntax rules, operators, constants, and formatting conventions used in RadExpressionEditor for WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/expression-editor/expression-syntax
 tags: expression,editor,syntax,operators
 published: True

@@ -2,6 +2,7 @@
 title: UI Virtualization
 page_title: UI Virtualization - WinForms GridView Control
 description: Learn how the UI Virtualization works in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/fundamentals/ui-virtualization
 tags: ui,virtualization
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Format the Time Separator in RadChat
 description: Learn how to specify the format for the time separator in the WinForms Chat.
+components: ["chat"]
 type: how-to 
 page_title: How to Format the Time Separator in RadChat
 slug: format-chat-time-separator

@@ -2,6 +2,7 @@
 title: Overview
 page_title: ShapeEditor - UI for WinForms Tools
 description: Each RadElement or RadItem can be shaped by setting the Shape property. The shape can be easily modified by using the ShapeEditor.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/shapeeditor
 tags: shapeeditor
 published: True

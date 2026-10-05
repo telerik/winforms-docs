@@ -1,6 +1,7 @@
 ---
 title: How to Upgrade Trial to Licensed Version
 description: This tutorial explains in details how to upgrade your Telerik trial to a licensed version.
+components: ["general"]
 type: how-to
 page_title: How to Upgrade Trial to Licensed Version
 slug: upgrade-trial-to-licensed-version

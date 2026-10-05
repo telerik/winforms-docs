@@ -1,6 +1,7 @@
 ---
 title: Disabling ContextMenu in RadPdfViewer for UI for WinForms
 description: Learn how to disable the ContextMenu in PdfViewer for UI for WinForms by removing the RadContextMenu property.
+components: ["pdfviewer"]
 type: how-to
 page_title: How to Remove ContextMenu in RadPdfViewer for WinForms
 meta_title: How to Remove ContextMenu in RadPdfViewer for WinForms

@@ -2,6 +2,7 @@
 title: Key Features
 page_title: Key Features - WinForms GridView Control
 description: Get familiar with the features supported in WinForms GridView out of the box. 
+components: ["gridview"]
 slug: winforms/gridview/fundamentals/key-features
 tags: key,features
 published: True

@@ -1,6 +1,7 @@
 ---
 title: Adding Execution Line Highlighting in RadSyntaxEditor
 description: Learn how to highlight a specific line with a background color and border to simulate an execution or debugger indicator in the WinForms SyntaxEditor.
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to Add Execution Line Highlighting in RadSyntaxEditor
 slug: syntaxeditor-execution-line-highlight

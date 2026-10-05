@@ -1,6 +1,7 @@
 ---
 title: RadControls for WinForms are not loaded at design-time
 description: RadControls for WinForms are not loaded at design-time. Check it now!
+components: ["general"]
 type: how-to
 page_title: RadControls for WinForms are not loaded at design-time
 slug: radcontrols-for-winforms-are-not-loaded-at-design-time

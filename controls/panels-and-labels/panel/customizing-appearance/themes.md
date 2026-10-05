@@ -2,6 +2,7 @@
 title: Themes
 page_title: Themes - WinForms Panel Control
 description: WinForms Panel's elements can be styled in Visual Style Builder. This article shows how you can change the header and footer back colors.
+components: ["panel"]
 slug: winforms/panels-and-labels/panel/customizing-appearance/themes
 tags: radpanel, appearance
 published: True

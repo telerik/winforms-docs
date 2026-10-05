@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting - RadVirtualGrid
 description: This article shows how the end user can perform a sort operation at runtime. 
+components: ["virtualgrid"]
 slug: winforms/vitualgrid/end-user-capabilities/sorting
 tags: sorting
 published: True

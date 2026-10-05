@@ -2,6 +2,7 @@
 title: Getting started
 page_title: Getting started - WinForms ListView Control
 description: WinForms ListView control is created as a result of the concord of the powerful data layer used by RadGridView and RadListControl, together with the outstanding Telerik Presentation Framework.
+components: ["listview"]
 slug: winforms/listview/getting-started
 tags: getting,started
 published: True
@@ -30,7 +31,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadListView
 
@@ -155,7 +156,7 @@ To add the grouping functionality, subscribe to the __SelectedIndexChanged__ eve
 
 
 
-8\. Lastly, lets subscribe ot the __TextChanged__ event of *commandBarTextBoxFilter*__CommandBarTextBox__. Here we will  add __FilterDescriptor__ according to the text entered in the text box:
+8\. Lastly, lets subscribe to the __TextChanged__ event of *commandBarTextBoxFilter*__CommandBarTextBox__. Here we will  add __FilterDescriptor__ according to the text entered in the text box:
 
 #### Handle filtering functionality
 

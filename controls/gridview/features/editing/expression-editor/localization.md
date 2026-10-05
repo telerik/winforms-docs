@@ -2,6 +2,7 @@
 title: Localization
 page_title: Localization - WinForms GridView Control
 description: Learn how to translate every string used in WinForms GridView to any desired language.
+components: ["gridview"]
 slug: winforms/gridview/expression-editor/localization
 tags: localization
 published: True

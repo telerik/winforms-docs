@@ -2,6 +2,7 @@
 title: Screen Tips
 page_title: Screen Tips - Telerik Presentation Framework
 description: Screen Tip is a UI feature which consists of a small window that appears when the mouse cursor is hovered over a particular element.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/screen-tips
 tags: screen tips
 published: True
@@ -16,7 +17,7 @@ __Screen Tip__ is a UI feature which consists of a small window that appears whe
 
 ![Telerik UI for WinForms RadGridView ScreenTip](images/tpf-screen-tip001.png)
 
-The __RadOffice2007ScreenTipElement__ is the screen tip that is currently available in the Telerik UI for WinForms suite.This screen tip contains 3 labels and a line which is used to separate the footer. Each label element can display an image as well. The following image shows the elements that are used inside this screen tip.
+The __RadOffice2007ScreenTipElement__ is the screen tip that is currently available in the Telerik UI for WinForms suite. This screen tip contains 3 labels and a line which is used to separate the footer. Each label element can display an image as well. The following image shows the elements that are used inside this screen tip.
 
 >caption Figure 2: RadOffice2007ScreenTipElement.
 

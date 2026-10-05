@@ -2,6 +2,7 @@
 title: ESRI Shapefile Reader
 page_title: ESRI Shapefile Reader - WinForms Map Control
 description: WinForms Map reads ESRI Shapefiles or simply shape files which are popular format for storing geographical data.
+components: ["map"]
 slug: winforms/map/file-readers/esri-shapefile-reader
 tags: map, providers
 published: True

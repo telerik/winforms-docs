@@ -2,6 +2,7 @@
 title: Transparency Tiles
 page_title: Transparency Tiles - RadMap
 description: Learn how to show transparent tile images in the RadMap control.
+components: ["map"]
 slug: winforms/map/features/transparency
 tags: transparency, map, features, azure, providers
 published: True

@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples - WinForms TreeView Control
 description: Additional examples built on top of the WinForms TreeView control.
+components: ["treeview"]
 slug: winforms/treeview/developer-focused-examples
 tags: developer, sdk, examples
 published: True

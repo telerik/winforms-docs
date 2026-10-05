@@ -1,6 +1,7 @@
 ---
 title: How to achieve transparency effect in Winforms cotrols
 description: This article demonstrates how you can make RadControls looks transparent
+components: ["panel"]
 type: how-to
 page_title: How to achieve trasparency effect in Winforms cotrols
 slug: transparency-effect-winforms-controls

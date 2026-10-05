@@ -2,6 +2,7 @@
 title: Conditional Formatting Cells
 page_title: Conditional Formatting Cells - WinForms GridView Control
 description: WinForms GridView allows changing the style of a cell using a specific formatting rule . Learn how to use the ConditionalFormattingObjects.
+components: ["gridview"]
 slug: winforms/gridview/cells/conditional-formatting-cells
 tags: conditional,formatting,cells
 published: True

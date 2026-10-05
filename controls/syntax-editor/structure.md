@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - RadSyntaxEditor
 description: RadSyntaxEditor is a useful text editor control which provides built-in syntax highlighting and code editing experience 
+components: ["syntaxeditor"]
 slug: syntax-editor-structure
 tags: syntax-editor
 published: True

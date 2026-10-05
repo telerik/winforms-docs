@@ -2,6 +2,7 @@
 title: Quick Actions
 page_title: Quick Actions - RadTabbedForm
 description:  RadTabbedForm allows to display tab items directly in the title bar  
+components: ["tabbedform"]
 slug: radtabbedform-quick-actions
 tags: radtabbedform
 published: True

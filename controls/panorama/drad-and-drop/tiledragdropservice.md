@@ -2,6 +2,7 @@
 title: TileDragDropService
 page_title: TileDragDropService - WinForms Panorama Control
 description: Get familiar with the TileDragDropService supported by WinForms Panorama.
+components: ["panorama"]
 slug: winforms/panorama/tiledragdropservice
 tags: panorama
 published: True

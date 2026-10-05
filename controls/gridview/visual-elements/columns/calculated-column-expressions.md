@@ -2,6 +2,7 @@
 title: Calculated Columns (Column Expressions)
 page_title: Calculated Columns (Column Expressions) - WinForms GridView Control
 description: Set the expression of the columns in the WinForms GridView to dynamically calculate the values shown in it.
+components: ["gridview"]
 slug: winforms/gridview/columns/calculated-columns-(column-expressions)
 tags: calculated,columns,(column,expressions)
 published: True

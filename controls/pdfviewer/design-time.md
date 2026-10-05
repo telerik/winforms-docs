@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms PdfViewer Control
 description: WinForms PdfViewer's Smart Tag allows you to change the applied theme or navigate to the online documentation.
+components: ["pdfviewer"]
 slug: winforms/pdfviewer/design-time
 tags: pdfviewer, design-time
 published: True

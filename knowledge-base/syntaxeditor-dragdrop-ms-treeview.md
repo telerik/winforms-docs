@@ -1,6 +1,7 @@
 ---
 title: How to DragDrop from MS TreeView to RadSyntaxEditor 
 description: This article demonstrates How to DragDrop from MS TreeView to RadSyntaxEditor
+components: ["syntaxeditor"]
 type: how-to
 page_title: How to DragDrop from MS TreeView to RadSyntaxEditor
 slug: syntaxeditor-dragdrop-ms-treeview

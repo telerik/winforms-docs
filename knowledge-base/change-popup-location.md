@@ -1,6 +1,7 @@
 ---
 title: Change popup default location
 description: This article shows how to change popup default location
+components: ["buttons"]
 type: how-to
 page_title: Change popup default location
 slug: change-popup-location

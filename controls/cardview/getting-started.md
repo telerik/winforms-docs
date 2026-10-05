@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms CardView Control
 description: WinForms CardView is a control developed on top of Telerik Presentation Framework which provides a way for displaying and editing text data as well as performing layout modifications
+components: ["cardview"]
 slug: winforms/cardview/getting-started
 tags: getting,started
 published: True
@@ -29,7 +30,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadCardView
 

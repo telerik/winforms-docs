@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms RangeSelector Control
 description: Get familiar with the inner structure and organization of the elements which build the WinForms RangeSelector control.
+components: ["rangeselector"]
 slug: winforms/rangeselector/structure
 tags: control,element,structure,
 published: True

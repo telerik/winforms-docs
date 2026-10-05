@@ -1,6 +1,7 @@
 ---
 title: Preserve Text Message History Per User 
 description: This article demonstrates how to preserve text message history per user in the WinForms Chat.
+components: ["chat"]
 type: how-to
 page_title: Preserve Text Message History Per User in RadChat
 slug: chat-preserve-user-text-message-history

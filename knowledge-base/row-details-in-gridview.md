@@ -1,6 +1,7 @@
 ---
 title: Show Row Details in RadGridView 
 description: This article demonstrates how show row details in the WinForms GridView.
+components: ["gridview"]
 type: how-to
 page_title: Show Row Details in RadGridView
 slug: row-details-in-gridview

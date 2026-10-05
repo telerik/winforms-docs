@@ -1,6 +1,7 @@
 ---
 title: 3D Bar Chart
 description: An example demonstrating how a stacked 3D bar chart can be implemented.  
+components: ["chartview"]
 type: how-to
 page_title: How to create a 3D stacked bar chart
 slug: chartview-3d-bar-chart

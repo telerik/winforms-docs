@@ -2,6 +2,7 @@
 title: Binding to ObservableCollection
 page_title: Binding to ObservableCollection - WinForms GridView Control
 description: Learn how you can bind WinForms GridView to an ObservableCollection.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/binding-to-observablecollection
 tags: binding,to,observablecollection
 published: True

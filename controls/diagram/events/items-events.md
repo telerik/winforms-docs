@@ -2,6 +2,7 @@
 title: Items Events
 page_title: Items Events - WinForms WinForms Control
 description: Learn the specific events exposed by the WinForms Diagram's items.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/events/items-events
 tags: items,events
 published: True

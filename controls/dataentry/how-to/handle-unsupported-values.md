@@ -2,6 +2,7 @@
 title: Handle Unsupported Values
 page_title: Handle unsupported values - RadDataEntry
 description: Handle unsupported values
+components: ["dataentry"]
 slug: winforms/dataentry/how-to/handle-unsupported-values
 tags: handle,unsupported,values
 published: True

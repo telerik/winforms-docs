@@ -1,6 +1,7 @@
 ---
 title: RadRibbonBar design time exception
 description: This article shows how you can resolve specific exception
+components: ["ribbonbar"]
 type: troubleshooting
 page_title:  RadRibbonBar design time exception
 slug: ribbonbar-design-time-exception

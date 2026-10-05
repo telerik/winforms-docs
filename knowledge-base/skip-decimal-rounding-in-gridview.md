@@ -1,6 +1,7 @@
 ---
 title: How to Skip Rounding Decimal Values in GridView
 description: Learn how to skip rounding numeric values in the WinForms GridView.
+components: ["gridview"]
 type: how-to 
 page_title: How to Skip Rounding Decimal Values in GridView 
 slug: skip-decimal-rounding-in-gridview

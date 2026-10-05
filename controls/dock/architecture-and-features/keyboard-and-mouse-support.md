@@ -2,6 +2,7 @@
 title: Keyboard And Mouse Support
 page_title: Keyboard And Mouse Support - RadDock
 description: This article shows the specific keyboard and mouse features. 
+components: ["dock"]
 slug: winforms/dock/architecture-and-features/keyboard-and-mouse-support
 tags: keyboard,and,mouse,support
 published: True

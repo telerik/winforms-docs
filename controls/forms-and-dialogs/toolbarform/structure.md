@@ -2,6 +2,7 @@
 title: Structure
 page_title: Structure - WinForms ToolbarForm
 description:  Get familiar with the internal elements structure of the WinForms ToolbarForm.  
+components: ["toolbarform"]
 slug: radtoolbarform-structure
 tags: radtoolbarform
 published: True
@@ -12,7 +13,7 @@ position: 1
 
 RadToolbarForm is a wrapper of the RadToolbarFormControl. The toolbar control is docked to Top and it is the sole child control of the RadToolbarForm. This article explains the inner structure of the RadToolbarFormControl.
 
->caption Figure 1: Elements of RadTabbedFormControl
+>caption Figure 1: Elements of RadToolbarFormControl
 
 ![WinForms RadToolbarForm Structure](images/winforms-radtoolbarform-structure.png)
 

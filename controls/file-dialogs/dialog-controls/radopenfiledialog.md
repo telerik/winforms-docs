@@ -2,6 +2,7 @@
 title: RadOpenFileDialog
 page_title: RadOpenFileDialog - WinForms FileDialogs
 description: WinForms OpenFileDialog is a modal dialog box that allows you to specify one or multiple file names to open.
+components: ["filedialogs"]
 slug: winforms/file-dialogs/dialog-controls/radopenfiledialog
 tags: filedialogs, radopenfiledialog
 published: True

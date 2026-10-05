@@ -2,6 +2,7 @@
 title: Logarithmic
 page_title: Logarithmic - ChartView
 description: Valid only in the context of Cartesian Area, Logarithmic axis can be used to plot any data that contains numerical values.
+components: ["chartview"]
 slug: winforms/chartview-/axes/logarithmic
 tags: logarithmic
 published: True

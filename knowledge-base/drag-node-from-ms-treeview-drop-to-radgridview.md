@@ -1,6 +1,7 @@
 ---
 title: How to Drag a Node from the MS TreeView and Drop it onto RadGridView
 description: How to achieve drag and drop functionality between a non-Telerik control like MS TreeView and the WinForms RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Drag a Node from the MS TreeView and Drop it onto RadGridView
 slug: drag-node-from-ms-treeview-drop-to-radgridview

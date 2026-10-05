@@ -1,6 +1,7 @@
 ---
 title: Simulate EKG signal in RadChartView  
 description: This article demonstrates how to simulate EKG signal in RadChartView 
+components: ["chartview"]
 type: how-to
 page_title: Simulate EKG line in ChartView
 slug: simulate-ekg-line-in-chartview

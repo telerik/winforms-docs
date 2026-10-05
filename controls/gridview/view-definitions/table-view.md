@@ -2,6 +2,7 @@
 title: Table View
 page_title: Table View - WinForms GridView Control
 description: WinForms GridView offers a default view where the data is presented like a table and you can reorder, hide and pin columns.
+components: ["gridview"]
 slug: winforms/gridview/view-definitions/table-view
 tags: table,view
 published: True

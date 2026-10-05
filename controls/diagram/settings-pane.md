@@ -2,6 +2,7 @@
 title: Settings Pane
 page_title: Settings Pane - WinForms Diagram Control
 description: SettingsPane control allows the users to examine and modify the settings of the diagramming items at run-time.
+components: ["diagram,diagramribbonbar,diagramtoolbox"]
 slug: winforms/diagram/settings-pane
 tags: settings,pane
 published: True

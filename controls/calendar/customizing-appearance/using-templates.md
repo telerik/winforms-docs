@@ -2,6 +2,7 @@
 title: Using Templates
 page_title: Using Templates - WinForms Calendar Control
 description: Learn how to use templates in WinForms Calendar.
+components: ["calendar"]
 slug: winforms/calendar/customizing-appearance/using-templates
 tags: using,templates
 published: True

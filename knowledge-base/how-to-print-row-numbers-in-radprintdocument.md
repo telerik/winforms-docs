@@ -1,6 +1,7 @@
 ---
 title: How to print row numbers in RadPrintDocument
 description: This article demonstrates how to print row numbers in RadPrintDocument
+components: ["gridview"]
 type: how-to
 page_title: 
 slug: how-to-print-row-numbers-in-radprintdocument

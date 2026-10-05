@@ -2,6 +2,7 @@
 title: Bindable Types
 page_title: Bindable Types - WinForms GridView Control
 description: Learn which types can be used as data source for WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/populating-with-data/bindable-types
 tags: bindable,types
 published: True

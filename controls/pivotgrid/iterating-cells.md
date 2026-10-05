@@ -2,6 +2,7 @@
 title: Iterating Cells
 page_title: Iterating Cells - RadPivotGrid
 description: Cells in RadPivotGrid can be iterated by retrieving its row and column groups.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/iterating-cells
 tags: iterating,cells
 published: True

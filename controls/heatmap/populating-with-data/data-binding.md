@@ -2,6 +2,7 @@
 title: Data Binding
 page_title: Data Binding - WinForms HeatMap Control
 description: Bind the WinForms HeatMap either at design time or at run time.   
+components: ["heatmap"]
 slug: heatmap-data-binding
 tags: heatmap, binding
 published: True

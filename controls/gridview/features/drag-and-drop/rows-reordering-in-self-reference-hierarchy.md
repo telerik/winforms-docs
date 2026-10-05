@@ -2,6 +2,7 @@
 title: Rows Reordering in Self-reference Hierarchy
 page_title: Rows Reordering in Self-reference Hierarchy - WinForms GridView Control
 description: WinForms GridView allows you implementing rows reordering in self-reference hierarchy. learn how to achieve it. 
+components: ["gridview"]
 slug: winforms/gridview/rows-reordering-in-self-reference-hierarchy
 tags: gridview
 published: True

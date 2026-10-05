@@ -1,6 +1,7 @@
 ---
 title: How to Anchor Controls
 description: Learn how to anchor controls in WinForms.
+components: ["general"]
 type: how-to 
 page_title: How to Anchor Controls
 slug: how-to-anchor-controls

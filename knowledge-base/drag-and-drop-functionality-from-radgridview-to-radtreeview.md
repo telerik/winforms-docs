@@ -1,6 +1,7 @@
 ---
 title: Drag and drop functionality from RadGridView to RadTreeView
 description: Drag and drop functionality from RadGridView to RadTreeView. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Drag and drop functionality from RadGridView to RadTreeView
 slug: drag-and-drop-functionality-from-radgridview-to-radtreeview

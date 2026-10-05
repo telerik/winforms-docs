@@ -1,6 +1,7 @@
 ---
 title: Disabling Task Resizing in RadGanttView for WinForms
 description: Learn how to disable the resizing of tasks in RadGanttView while still allowing drag and drop operations.
+components: ["ganttview"]
 type: how-to
 page_title: How to Disable Resizing of Tasks in RadGanttView for WinForms
 slug: ganttview-disable-resizing

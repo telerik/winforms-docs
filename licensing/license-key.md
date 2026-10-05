@@ -2,6 +2,7 @@
 title: Setting Up Your License Key
 page_title: Setting Up Your Telerik UI for WinForms License Key
 description: Learn how to download, install, and troubleshoot your Telerik UI for WinForms license key for local machines and Windows CI.
+components: ["general"]
 slug: license-key
 tags: WinForms,components,license,activate,download,key,telerik,
 position: 1
@@ -58,7 +59,7 @@ To install your Telerik license key by using the [Progress Control Panel](https:
 
 ### Installing a License Key with Telerik CLI
 
-Use [Telerik CLI]({%slug winforms/getting-started/telerik-cli%}#get-license-key) when you prefer a command-line workflow or want to download the license key without opening Visual Studio. The `telerik license get-key` command downloads the latest `telerik-license.txt` file to `%AppData%\Telerik` for the current user account.
+Use [Telerik CLI]({%slug telerik-cli%}#get-license-key) when you prefer a command-line workflow or want to download the license key without opening Visual Studio. The `telerik license get-key` command downloads the latest `telerik-license.txt` file to `%AppData%\Telerik` for the current user account.
 
 ## Manual License Key Installation
 

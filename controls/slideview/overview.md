@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms SlideView Control
 description: This article lists the main features of the RadSlideView control.
+components: ["slideview"]
 slug: slideview-overview
 tags: slideview
 published: True

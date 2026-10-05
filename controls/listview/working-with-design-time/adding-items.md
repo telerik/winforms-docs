@@ -2,6 +2,7 @@
 title: Adding items
 page_title: Adding items - WinForms ListView Control
 description: Adding items to WinForms ListView at design time is possible through the Items collection of the control.
+components: ["listview"]
 slug: winforms/listview/working-with-design-time/adding-items
 tags: adding,items
 published: True

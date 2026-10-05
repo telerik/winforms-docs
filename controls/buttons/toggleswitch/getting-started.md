@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms ToggleSwitch Control
 description: WinForms ToggleSwitch is a control designed to represent two states - e.g. true/false, On/Off, etc.
+components: ["buttons"]
 slug: winforms/buttons/toggleswitch/getting-started
 tags: getting,started
 published: True
@@ -30,7 +31,7 @@ When dragging and dropping a control from the Visual Studio (VS) Toolbox onto th
 * __Telerik.WinControls.UI__
 * __TelerikCommon__
 
-The Telerik UI for WinForms assemblies can be install by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
+The Telerik UI for WinForms assemblies can be installed by using one of the available [installation approaches]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%}). 
 
 ## Defining the RadToggleSwitch
 

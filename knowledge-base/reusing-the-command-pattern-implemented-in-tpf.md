@@ -1,6 +1,7 @@
 ---
 title: Reusing the command pattern implemented in TPF
 description: Reusing the command pattern implemented in TPF. Check it now!
+components: ["general"]
 type: how-to
 page_title: Reusing the command pattern implemented in TPF
 slug: reusing-the-command-pattern-implemented-in-tpf

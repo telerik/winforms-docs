@@ -2,6 +2,7 @@
 title: Resizing rows
 page_title: Resizing rows - RadGridView
 description: Discover how to resize rows in the Telerik GridView for WinForms, adjusting height dynamically to improve layout and readability.
+components: ["gridview"]
 slug: winforms/gridview/rows/resizing-rows
 tags: resizing,rows
 published: True

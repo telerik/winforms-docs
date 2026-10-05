@@ -2,6 +2,7 @@
 title: Style Property
 page_title: Style Property - WinForms GridView Control
 description: WinForms GridView offers the Style property to change the styles of each cell separately.
+components: ["gridview"]
 slug: winforms/gridview/cells/style
 tags: formatting,cells
 published: True

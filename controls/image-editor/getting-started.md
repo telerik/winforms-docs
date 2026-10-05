@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms ImageEditor Control
 description: WinForms ImageEditor encapsulates the entire image editing logic.
+components: ["imageeditor"]
 slug: radimageeditor-getting-started
 tags: getting,started
 published: True

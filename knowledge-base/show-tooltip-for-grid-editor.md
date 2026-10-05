@@ -1,6 +1,7 @@
 ---
 title: Show a Tooltip for the RadGridView's Editor  
 description: This article shows how you can show a tooltip for the RadGridView' editor  
+components: ["gridview"]
 type: how-to
 page_title: Show a Tooltip for the RadGridView's Editor    
 slug: show-tooltip-for-grid-editor

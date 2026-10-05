@@ -2,6 +2,7 @@
 title: Unbound Mode
 page_title: Unbound Mode - WinForms HeatMap Control
 description: Populate RadHeatMap control in unbound mode.
+components: ["heatmap"]
 slug: heatmap-unbound-mode
 tags: heatmap, unbound
 published: True

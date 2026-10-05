@@ -1,6 +1,7 @@
 ---
 title: Make your Telerik WinForms-enabled applications start instantly
 description: Make your Telerik WinForms-enabled applications start instantly. Check it now!
+components: ["general"]
 type: how-to
 page_title: Make your Telerik WinForms-enabled applications start instantly
 slug: make-your-telerik-winforms-enabled-applications-start-instantly

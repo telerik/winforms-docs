@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadPivotGrid
 description: Overview
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/save-load-layout/overview
 tags: save,and,load,layout
 published: True

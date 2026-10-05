@@ -2,6 +2,7 @@
 title: Iterating Cells
 page_title: Iterating Cells - WinForms GridView Control
 description: WinForms GridView allows you to iterate through the cells of each row using the __Cells__ collection of GridViewCellInfo.
+components: ["gridview"]
 slug: winforms/gridview/cells/iterating-cells
 tags: iterating,cells
 published: True

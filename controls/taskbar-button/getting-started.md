@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms Taskbar Button
 description: How to get started with the WinForms Taskbar Button.  
+components: ["taskbarbutton"]
 slug: taskbar-button-getting-started
 tags: taskbar,button,started,getting
 published: True

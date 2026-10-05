@@ -1,6 +1,7 @@
 ---
 title: Hide expand/collapse image in hierarchical RadGridView
 description: Hide expand/collapse image in hierarchical RadGridView. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: Hide expand/collapse image in hierarchical RadGridView
 slug: hide-expand-collapse-image-in-hierarchical-radgridview

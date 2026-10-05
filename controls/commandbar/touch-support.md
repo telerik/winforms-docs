@@ -2,6 +2,7 @@
 title: Touch Support
 page_title: Touch Support - UI for WinForms Documentation
 description: Touch Support
+components: ["commandbar"]
 slug: winforms/commandbar/touch-support
 tags: touch,support
 published: True

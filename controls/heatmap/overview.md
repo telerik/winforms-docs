@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - WinForms HeatMap Control
 description: Check our &quot;Overview&quot; documentation article for the RadHeatMap WinForms control.
+components: ["heatmap"]
 slug: heatmap-overview
 tags: heatmap, overview
 published: True

@@ -2,6 +2,7 @@
 title: Multi-Line Input Editor
 page_title: Multi-Line Input Editor - WinForms Chat Control
 description: Learn how the multi-line input editor in RadChat for WinForms auto-grows as users type and supports configurable line limits.
+components: ["chat"]
 slug: winforms/chat/features/multi-line-editor
 tags: chat, input, multiline, editor, radchat
 published: True

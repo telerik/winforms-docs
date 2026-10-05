@@ -2,6 +2,7 @@
 title: Plot Mode
 page_title: Plot Mode - ChartView
 description: The PlotMode property appears only in the Categorical, DateTimeCategorical and DateTimeContinuous axes.
+components: ["chartview"]
 slug: winforms/chartview-/axes/plot-mode
 tags: plot,mode
 published: True

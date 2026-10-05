@@ -2,6 +2,7 @@
 title: Spread Export
 page_title: Spread Export - RadPivotGrid
 description: This article will explain in detail the spread export abilities and will demonstrate how to use it.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/exporting-data/spread-export
 tags: spread,export
 published: True

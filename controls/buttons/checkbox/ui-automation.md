@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadCheckBox
 description: UI Automation Support (UI Accessibility) for RadCheckBox.   
+components: ["buttons"]
 slug: checkbox-ui-automation
 tags: checkbox,ui,automation
 published: True

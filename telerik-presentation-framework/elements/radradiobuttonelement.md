@@ -2,6 +2,7 @@
 title: RadRadioButtonElement
 page_title: RadRadioButtonElement - Telerik Presentation Framework
 description: RadRadioButtonlElement contains the logic and user interface for a single RadRadioButton.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/elements/radradiobuttonelement
 tags: radradiobuttonelement
 published: True
@@ -11,7 +12,7 @@ previous_url: tpf-elements-radradiobutton
 
 # RadRadioButtonElement
 
-__RadRadioButtonlElement__ contains the logic and user interface for a single RadRadioButton.
+__RadRadioButtonElement__ contains the logic and user interface for a single RadRadioButton.
 
 ![Telerik UI for WinForms RadRadioButtonElement example](images/tpf-elements-radradiobutton001.png)
 

@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events- RadBulletGraph
 description: The article lists the important properties, methods and events.
+components: ["radialgauge,lineargauge,bulletgraph"]
 slug: winforms/gauges/bulletgraph/properties
 tags: properties
 published: True

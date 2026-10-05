@@ -2,6 +2,7 @@
 title: Sorting
 page_title: Sorting - WinForms GridView Control
 description: WinForms GridView allows sorting by any column. The end-user can click on the header of the desired column to toggle between the sorting directions.
+components: ["gridview"]
 slug: winforms/gridview/end-user-capabilities/sorting
 tags: sorting
 published: True

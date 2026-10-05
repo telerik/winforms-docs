@@ -1,6 +1,7 @@
 ---
 title: How to print image from RadImageEditor
 description: This article demonstrates how to print image from RadImageEditor
+components: ["imageeditor"]
 type: how-to
 page_title: 
 slug: how-to-print-from-radimageeditor

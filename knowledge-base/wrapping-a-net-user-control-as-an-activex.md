@@ -1,6 +1,7 @@
 ---
 title: Wrapping a .NET user control as an ActiveX
 description: Wrapping a .NET user control as an ActiveX. Check it now!
+components: ["general"]
 type: how-to
 page_title: Wrapping a .NET user control as an ActiveX
 slug: wrapping-a-net-user-control-as-an-activex

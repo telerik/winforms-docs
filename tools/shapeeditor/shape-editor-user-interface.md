@@ -2,6 +2,7 @@
 title: Shape Editor User Interface
 page_title: Shape Editor User Interface - UI for WinForms Tools
 description: This article shows all elements of the Shape Editor User Interface.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/shapeeditor/shape-editor-user-interface
 tags: shape,editor,user,interface
 published: True
@@ -35,14 +36,14 @@ If you right-click a line the context menu allows you to Convert the line to a B
 
 # Property Grid
 
-The property grid allows you to edit the properties of the selected element. You can select points or lined in the shape editor.
+The property grid allows you to edit the properties of the selected element. You can select points or lines in the shape editor.
 
 >caption Figure 5: Property grid.
 ![tools-shapeeditor-the-custom-shape-editor-user-interface 005](images/tools-shapeeditor-the-custom-shape-editor-user-interface005.png)
 
 # Task Pane
 
-The task pane allows you to perform various actions. The bellow image shows the its functionality.
+The task pane allows you to perform various actions. The below image shows its functionality.
 
 >caption Figure 6: The Task pane.
 ![tools-shapeeditor-the-custom-shape-editor-user-interface 006](images/tools-shapeeditor-the-custom-shape-editor-user-interface006.png)

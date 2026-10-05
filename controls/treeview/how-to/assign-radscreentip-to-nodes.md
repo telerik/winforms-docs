@@ -2,6 +2,7 @@
 title: Assign RadScreenTip to nodes
 page_title: Assign RadScreenTip to nodes - RadTreeView
 description: This article shows how you can show RadScreenTip when each node in RadTreeView is hovered. 
+components: ["treeview"]
 slug: winforms/treeview/how-to/assign-radscreentip-to-nodes
 tags: assign,radscreentip,to,nodes
 published: True

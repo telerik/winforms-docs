@@ -1,6 +1,7 @@
 ---
 title: How to Create Custom AutoComplete Items in RadAutoCompleteBox
 description: Construct custom autocomplete items in WinForms RadAutoCompleteBox.
+components: ["autocompletebox"]
 type: how-to
 page_title: How to Create Custom AutoComplete Items in RadAutoCompleteBox
 slug: autocompletebox-with-custom-autocomplete-items

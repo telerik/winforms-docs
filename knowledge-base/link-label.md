@@ -1,6 +1,7 @@
 ---
 title: How to create RadLinkLabel
 description: This article demonstrates how to create RadLinkLabel
+components: ["label"]
 type: how-to
 page_title: How to create RadLinkLabel
 slug: link-label

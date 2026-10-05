@@ -2,6 +2,7 @@
 title: TreeViewDragDropService
 page_title: TreeViewDragDropService - WinForms TreeView Control
 description: WinForms TreeView handles the whole drag and drop operation by its TreeViewDragDropService. Get familiar with the public API it offers.
+components: ["treeview"]
 slug: winforms/treeview/drag-and-drop/treeviewdragdropservice
 tags: enabling,drag,and,drop
 published: True

@@ -2,6 +2,7 @@
 title: Iterating Rows
 page_title: Iterating Rows - WinForms GridView Control
 description: Learn how to iterate all rows in a regular and hierarchical WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/rows/iterating-rows
 tags: iterating,rows
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to Save/Load Layout with Custom Columns in RadGridView
 description: Learn how to properly save/load with custom columns in RadGridView.
+components: ["gridview"]
 type: how-to
 page_title: How to Save/Load Layout with Custom Columns in RadGridView
 slug: gridview-save-layout-with-custom-columns

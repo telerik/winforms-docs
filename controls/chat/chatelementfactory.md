@@ -2,6 +2,7 @@
 title: ChatElementFactory
 page_title: ChatElementFactory - Chat
 description: RadChat is a control that provides conversational experience
+components: ["chat"]
 slug: winforms/chat/chatelementfactory
 tags: chat
 published: True

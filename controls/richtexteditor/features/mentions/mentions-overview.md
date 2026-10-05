@@ -2,6 +2,7 @@
 title: Mentions Overview 
 page_title: Mentions (Suggestions) - RadRichTextEditor
 description: Check our Mentions (Suggestions) documentation article for the RadRichTextEditor control.
+components: ["richtexteditor"]
 slug: richtexteditor-features-mentions-overview
 tags: mentions, suggestions, autocomplete, automatic, docx, richtexteditor
 published: True

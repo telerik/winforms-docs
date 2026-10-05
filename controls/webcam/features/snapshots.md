@@ -2,6 +2,7 @@
 title: Snapshots
 page_title: Snapshots - WinForms WebCam Control
 description: WinForms WebCam allows you to snapshot the currently displayed video feed.   
+components: ["webcam"]
 slug: webcam-snapshots
 tags: webcam
 published: True

@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - RadDataLayout
 description: This article describes the design-time capabilities of RadDataLayout.
+components: ["datalayout"]
 slug: winforms/datalayout/design-time
 tags: design,time
 published: True

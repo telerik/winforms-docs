@@ -2,6 +2,7 @@
 title: Developer Focused Examples
 page_title: Developer Focused Examples - WinForms Scheduler Control
 description: Additional examples built on top of the WinForms Scheduler control.
+components: ["scheduler,reminder"]
 slug: winforms/scheduler/developer-focused-examples
 tags: developer, sdk, examples
 published: True

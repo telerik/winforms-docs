@@ -2,6 +2,7 @@
 title: Overview
 page_title: ControlSpy - RadControlSpy
 description: The Control Spy is a tool to let you examine the detailed internal structure of any RadElement.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/controlspy
 tags: controlspy
 published: True

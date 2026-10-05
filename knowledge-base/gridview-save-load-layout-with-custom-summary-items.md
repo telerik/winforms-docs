@@ -1,6 +1,7 @@
 ---
 title: How to Save/Load GridView's Layout with Custom Summary Items 
 description: This article demonstrates some tips how to save/load GridView's layout with custom summary items  
+components: ["gridview"]
 type: how-to
 page_title: How to Save/Load GridView's Layout with Custom Summary Items     
 slug: gridview-save-load-layout-with-custom-summary-items

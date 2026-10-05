@@ -1,11 +1,12 @@
 ---
 title: Versions Upgrade
 page_title: Versions Upgrade - Installation Deployment and Distribution
-description: Learn how you can deal with one of the most common errors, after installing a new version of Telrik UI for WinForms. 
+description: Learn how you can deal with one of the most common errors, after installing a new version of Telerik UI for WinForms. 
+components: ["general"]
 slug: winforms/installation-deployment-and-distribution/versions-upgrade
 tags: install,nuget
 published: False
-position: 4
+position: 9
 redirect_to: /knowledge-base/versions-upgrade
 ---
 

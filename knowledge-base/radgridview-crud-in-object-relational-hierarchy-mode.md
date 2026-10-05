@@ -1,6 +1,7 @@
 ---
 title: RadGridView CRUD in Object Relational Hierarchy Mode
 description: RadGridView CRUD in Object Relational Hierarchy Mode. Check it now!
+components: ["gridview"]
 type: how-to
 page_title: RadGridView CRUD in Object Relational Hierarchy Mode
 slug: radgridview-crud-in-object-relational-hierarchy-mode

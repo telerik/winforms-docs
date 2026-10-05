@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping - WinForms GridView Control
 description: Learn how the end user can use the built-in grouping functionality in Winforms GridView. 
+components: ["gridview"]
 slug: winforms/gridview/end-user-capabilities/grouping
 tags: grouping
 published: True

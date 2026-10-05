@@ -2,6 +2,7 @@
 title: Setting Groups Programmatically
 page_title: Setting Groups Programmatically - WinForms GridView Control
 description: WinForms GridView offers the GroupDescriptors collection to manipulate the grouping at run time.
+components: ["gridview"]
 slug: winforms/gridview/grouping/setting-groups-programmatically
 tags: setting,groups,programmatically
 published: True

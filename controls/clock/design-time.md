@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - WinForms Clock Control
 description: RadClock is a control which allows the developers to use it in their applications to display time to the users.
+components: ["clock"]
 slug: winforms/clock/design-time
 tags: clock
 published: True

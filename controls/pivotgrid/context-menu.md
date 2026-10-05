@@ -2,6 +2,7 @@
 title: Context Menu
 page_title: Context Menu - RadPivotGrid
 description: The article demonstrates how the context menu used by RadPivotGrid can be customized and new items added to it.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/context-menu
 tags: context, menu, custom, item
 published: True

@@ -2,6 +2,7 @@
 title: Overview
 page_title: Theme Manager - RadThemeManager
 description: This article shows what is RadThemeMenager and when it should be used.
+components: ["toolsforwinforms,visualstylebuilder,controlspy,shapeeditor,elementhierarchyeditor"]
 slug: winforms/tools/visual-style-builder/adding-custom-themes-to-your-application/theme-manager
 tags: load,themes,from,a,resource
 published: True

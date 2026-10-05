@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - Validation Provider
 description: RadValidationProvider is a component which provides data validation management for editors in bound and unbound mode. 
+components: ["validationprovider"]
 slug: validation-provider-properties-methods-events
 tags: validation, provider
 published: True

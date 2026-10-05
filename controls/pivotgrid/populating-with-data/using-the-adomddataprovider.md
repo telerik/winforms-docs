@@ -2,6 +2,7 @@
 title: Using the AdomdDataProvider
 page_title: Using the AdomdDataProvider - RadPivotGrid
 description: In this article we will show how to use AdomdDataProvider and use data from OLAP Cube for RadPivotGrid.
+components: ["pivotgrid"]
 slug: winforms/pivotgrid/populating-with-data/using-the-adomddataprovider
 tags: using,the,adomddataprovider
 published: True

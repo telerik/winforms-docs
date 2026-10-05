@@ -1,6 +1,7 @@
 ---
 title: Fill RadSpreadsheet with DataTable  
 description: This article demonstrates how to populate RadSpreadsheet with data records coming form a DataTable
+components: ["spreadsheet"]
 type: how-to
 page_title: How to Fill RadSpreadsheet with DataTable    
 slug: fill-spreadsheet-with-datatable

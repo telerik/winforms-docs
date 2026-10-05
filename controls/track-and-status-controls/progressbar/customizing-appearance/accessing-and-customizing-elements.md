@@ -2,6 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements - WinForms ProgressBar
 description: Learn how to access and customize elements either at design time, or at run time. 
+components: ["progressbar"]
 slug: winforms/track-and-status-controls/progressbar/accessing-and-customizing-elements
 tags: progressbar
 published: True

@@ -1,6 +1,7 @@
 ---
 title: How to use different custom nodes in RadTreeView
 description: How to use different custom node elements for the different levels in RadTreeView.
+components: ["treeview"]
 type: how-to
 page_title: How to use different custom nodes in RadTreeView
 slug: treeview-different-custom-nodes

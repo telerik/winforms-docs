@@ -1,6 +1,7 @@
 ---
 title: Exporting FloatingImage from RadSpreadsheet Worksheet
 description: Learn how to save an image from a RadSpreadsheet worksheet as a file.
+components: ["spreadsheet"]
 type: how-to
 page_title: How to Save a FloatingImage from RadSpreadsheet Worksheet as an Image File
 slug: radspreadsheet-export-floatingimage

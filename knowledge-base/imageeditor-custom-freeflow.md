@@ -1,6 +1,7 @@
 ---
 title: How to create custom FreeFlow shape
 description: This article shows how to create custom FreeFlow shape using GraphicsPath object
+components: ["imageeditor"]
 type: how-to
 page_title:  How to Create Custom FreeFlow shape using GraphicsPath Object
 slug: imageeditor-custom-freeflow

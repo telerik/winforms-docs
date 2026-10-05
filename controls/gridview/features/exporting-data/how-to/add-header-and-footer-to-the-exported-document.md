@@ -2,6 +2,7 @@
 title: Add Header and Footer to the Exported Document
 page_title: Add Header and Footer to the Exported Document - WinForms GridView Control
 description: Learn how you can add header and footer to your exported document in WinForms GridView.
+components: ["gridview"]
 slug: winforms/gridview/exporting-data/how-to/add-header-and-footer-to-the-exported-document
 tags: add,header,and,footer,to,the,exported,document
 published: True

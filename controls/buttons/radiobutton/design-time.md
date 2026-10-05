@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - UI for WinForms Documentation
 description: RadRadioButton replaces the WinForms RadioButton control and adds robust data binding, state management, and design options. 
+components: ["buttons"]
 slug: winforms/buttons/radiobutton/design-time
 tags: radiobutton
 published: True

@@ -2,6 +2,7 @@
 title: Drag and Drop
 page_title: Drag and Drop - WinForms GridView Control
 description: Learn how to perform a drag and drop operation between two WinForms GridView controls in bound mode. 
+components: ["gridview"]
 slug: winforms/gridview/rows/drag-and-drop
 tags: drag,and,drop
 published: True

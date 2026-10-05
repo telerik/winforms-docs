@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadSparkline
 description: The Sparkline control is an information graphic, which is characterized by small size, excellent performance
+components: ["sparkline"]
 slug: radsparkline-overview
 tags: sparkline
 published: True

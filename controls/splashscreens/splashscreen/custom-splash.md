@@ -2,6 +2,7 @@
 title: Customize Splash Content
 page_title: Customize Splash Content - SplashScreen
 description: Learn how to show a custom WinForms SplashScreen.
+components: ["splashscreen"]
 slug: splashscreen-custom-splash
 tags: splash, screen
 published: True

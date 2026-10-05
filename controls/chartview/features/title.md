@@ -2,6 +2,7 @@
 title: Title
 page_title: Title - ChartView
 description: Title
+components: ["chartview"]
 slug: winforms/chartview-/features/title
 tags: title
 published: True

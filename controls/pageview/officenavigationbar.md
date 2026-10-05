@@ -2,6 +2,7 @@
 title: OfficeNavigationBar View
 page_title: OfficeNavigationBar View- RadPageView
 description: RadPageView offers PageViewMode.**OfficeNavigationBar which exposes a separate control called RadOfficeNavigationBar.
+components: ["pageview"]
 slug: pageview-officenavigationbar
 tags: officenavigationbar
 published: True

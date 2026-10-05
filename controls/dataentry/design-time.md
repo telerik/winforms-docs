@@ -2,6 +2,7 @@
 title: Design Time
 page_title: Design Time - RadDataEntry
 description: This article described the design time capabilities of RadDataEntry.
+components: ["dataentry"]
 slug: winforms/dataentry/design-time
 tags: validation
 published: True

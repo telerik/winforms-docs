@@ -1,6 +1,7 @@
 ---
 title: Update the Text of Rad Label
 description: This article shows how you an dynamically update the text of RadLabel
+components: ["label"]
 type: how-to
 page_title: Update the Text of Rad Label
 slug: update-label-layout

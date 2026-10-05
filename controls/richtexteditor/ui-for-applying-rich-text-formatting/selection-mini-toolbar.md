@@ -2,6 +2,7 @@
 title: Selection Mini Toolbar
 page_title: Selection Mini Toolbar - WinForms RichTextEditor Control
 description: SelectionMiniToolBar is a floating toolbar that appears next to the current position after making a selection with the mouse in the document.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/ui-for-applying-rich-text-formatting/selection-mini-toolbar
 tags: selection,mini,toolbar
 published: True

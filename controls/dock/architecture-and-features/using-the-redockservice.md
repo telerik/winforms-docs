@@ -2,6 +2,7 @@
 title: Using the RedockService
 page_title: Using the RedockService - RadDock
 description: This article describes how you can use the RedockService.
+components: ["dock"]
 slug: winforms/dock/architecture-and-features/using-the-redockservice
 tags: using,the,redockservice
 published: True

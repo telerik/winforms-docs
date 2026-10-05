@@ -2,6 +2,7 @@
 title: RadControl Testing Considerations
 page_title: RadControl Testing Considerations - Telerik Presentation Framework
 description: Use RadControls without adding them to a form when you are writing tests.
+components: ["general"]
 slug: winforms/telerik-presentation-framework/layout/radcontrol-testing-considerations
 tags: radcontrol,testing,considerations
 published: True

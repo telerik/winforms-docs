@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - Taskbar Button
 description: Learn the most important of the public API that the WinForms RadTaskbarButton offers.
+components: ["taskbarbutton"]
 slug: taskbar-button-properties-methods-events
 tags: taskbar,button, properties,manager
 published: True

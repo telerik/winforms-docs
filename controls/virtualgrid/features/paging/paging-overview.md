@@ -2,6 +2,7 @@
 title: Overview
 page_title: Overview - RadVirtualGrid
 description: The data layer of RadVirtualGrid supports pagination of data natively.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/paging/paging-overview
 tags: virtualgrid, paging
 published: True

@@ -2,6 +2,7 @@
 title: Data Items
 page_title: Data Items - WinForms GanttView Control
 description: WinForms GanttView allows you to replace the standard data items with custom ones.
+components: ["ganttview"]
 slug: winforms/ganttview/custom-items/data-items
 tags: creating,custom,data, items
 published: True

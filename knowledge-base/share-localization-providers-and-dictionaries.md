@@ -1,6 +1,7 @@
 ---
 title: How to Share Localization Providers and Spell Checking Dictionaries
 description: Learn how to share localization providers and dictionaries for spell checking.
+components: ["general"]
 type: how-to 
 page_title: How to Share Localization Providers and SpellChecking Dictionaries
 slug: share-localization-providers-and-dictionaries

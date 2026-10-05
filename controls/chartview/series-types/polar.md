@@ -2,6 +2,7 @@
 title: Polar
 page_title: Polar - ChartView
 description: Polar series consists of a group of classes that plot data in radial plot area in polar coordinates
+components: ["chartview"]
 slug: winforms/chartview-/series-types/polar
 tags: polar
 published: True

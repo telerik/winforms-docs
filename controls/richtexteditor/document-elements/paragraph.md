@@ -2,6 +2,7 @@
 title: Paragraph
 page_title: Paragraph - WinForms RichTextEditor Control
 description: Get familiar with the the paragraph class in WinForms RichTextEditor that allows you to separate the content into paragraphs.
+components: ["richtexteditor"]
 slug: winforms/richtexteditor-/document-elements/paragraph
 tags: paragraph
 published: True

@@ -2,6 +2,7 @@
 title: Getting Started
 page_title: Getting Started - WinForms WebCam Control
 description: Learn how to create a sample application that contains a WinForms WebCam.   
+components: ["webcam"]
 slug: webcam-getting-started
 tags: webcam
 published: True

@@ -2,6 +2,7 @@
 title: Right-to-left support
 page_title: Right-to-left support - UI for WinForms Documentation
 description: Right-to-left support
+components: ["commandbar"]
 slug: winforms/commandbar/localization/right-to-left-support
 tags: right-to-left,support
 published: True

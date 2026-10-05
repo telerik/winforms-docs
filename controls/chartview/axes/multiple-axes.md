@@ -2,6 +2,7 @@
 title: Multiple axes
 page_title: Multiple axes - ChartView
 description: The Multi-Axes feature of RadChartView introduces a whole new realm of data visualization possibilities.
+components: ["chartview"]
 slug: winforms/chartview-/axes/multiple-axes
 tags: multiple,axes
 published: True

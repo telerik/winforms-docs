@@ -2,6 +2,7 @@
 title: Handle Add, Delete and Update of Rows
 page_title: Handle Add, Delete and Update of Rows - WinForms VirtualGrid Control
 description: Learn how you can handle Add, Delete and Update operations in WinForms VirtualGrid.
+components: ["virtualgrid"]
 slug: winforms/virtualgrid/working-with-data/handle-add-delete-update-of-rows
 tags: virtualgrid, data, add, delete, update
 published: True

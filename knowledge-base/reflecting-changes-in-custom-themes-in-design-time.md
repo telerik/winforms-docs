@@ -1,6 +1,7 @@
 ---
 title: Reflecting changes in custom themes in design time
 description: Reflecting changes in custom themes in design time. Check it now!
+components: ["general"]
 type: how-to
 page_title: Reflecting changes in custom themes in design time
 slug: reflecting-changes-in-custom-themes-in-design-time

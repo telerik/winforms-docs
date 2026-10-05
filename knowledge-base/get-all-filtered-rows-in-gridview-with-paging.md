@@ -1,6 +1,7 @@
 ---
 title: How to get all filtered rows in RadGridView with paging
 description: This article shows how you can extract all filtered rows in RadGridView when paging is enabled
+components: ["gridview"]
 type: how-to
 page_title: How to get all filtered rows in RadGridView with paging
 slug: get-all-filtered-rows-in-gridview-with-paging

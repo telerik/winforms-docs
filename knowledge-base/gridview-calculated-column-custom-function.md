@@ -1,6 +1,7 @@
 ---
 title: Create Custom Expression in Code
 description: This article shows how you can create a custom function for the RadGridView Calculated Column.
+components: ["gridview"]
 type: how-to
 page_title: How to Create Custom Expression in Code
 slug: gridview-calculated-column-custom-function

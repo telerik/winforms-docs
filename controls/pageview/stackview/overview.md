@@ -2,6 +2,7 @@
 title: Overview
 page_title: StackView - Stack View
 description: RadPageView is yet another great addition to the Telerik UI for WinForms suite. As the name implies, this control layouts pages of subcontrols in different views.
+components: ["pageview"]
 slug: winforms/pageview/stackview
 tags: stackview
 published: True

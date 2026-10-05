@@ -2,6 +2,7 @@
 title: Properties and Events
 page_title: Properties and Events - WinForms Calendar Control
 description: Get familiar the most important properties and events of RadCalendar.
+components: ["calendar"]
 slug: winforms/calendar/important-events
 tags: important,events
 published: True
@@ -15,12 +16,12 @@ previous_url: calendar-overview-important-events, calendar-overview-important-pr
 | ------ | ------ |
 | __AllowMultipleSelect__ |Enables multiple selection of items.|
 | __ShowNavigation__ |Gets or sets whether the navigation controls in the title section will be displayed.|
-| __FocusedDate__ |Gets or sets the value that is used by RadCalendar to determine the viewable area displayed.|
+| __FocusedDate__ |Gets or sets the value that is used by RadCalendar to determine the viewable area displayed. When synchronizing the visible view with __SelectedDate__, make sure the calendar is not read-only. The focused date is limited to the __RangeMinDate__ and __RangeMaxDate__ values.| 
 | __HeaderNavigationMode__ |Gets or sets the navigation mode that will be used when the user clicks on header element. By default its value is HeaderNavigationMode. *Popup* |
 | __MonthLayout__ |Specifies the number or rows and columns for the layout.|
 | __MonthStep__ |Gets or sets a value determining how many months will be in the popup of the calendar. Setting it to 12/24/36/etc will allow you to show years instead of months.|
-| __MultiViewColumns__ |Gets or sets the the count of columns to be displayed by a multi-month __CalendarView__ .|
-| __MultiViewRows__ |Gets or sets the the count of rows to be displayed by a multi-month __CalendarView__ .|
+| __MultiViewColumns__ |Gets or sets the count of columns to be displayed by a multi-month __CalendarView__ .|
+| __MultiViewRows__ |Gets or sets the count of rows to be displayed by a multi-month __CalendarView__ .|
 | __Orientation__ |Specifies the orientation of the view, whether (days, or weeks) are displayed in rows or columns.|
 | __RangeMaxDate__ |Gets or sets the maximum date valid for selection by Telerik RadCalendar.|
 | __RangeMinDate__ |Gets or sets the minimal date valid for selection by Telerik RadCalendar.|

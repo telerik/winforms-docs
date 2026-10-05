@@ -2,6 +2,7 @@
 title: Text and Value
 page_title: Text and Value - WinForms TreeView Control
 description: Text and Value store different information in bound and unbound mode for RadTreeView.
+components: ["treeview"]
 slug: treenode-text-value
 tags: treeview, nodes, text, value
 published: True

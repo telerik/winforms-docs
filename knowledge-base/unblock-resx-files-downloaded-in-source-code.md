@@ -1,6 +1,7 @@
 ---
 title: Unblock .resx Files Downloaded in Telerik WinForms Source Code
 description: This tutorial explains how to unblock .resx files downloaded in Telerik WinForms Source Code.
+components: ["general"]
 type: how-to
 page_title: How to Unblock .resx Files Downloaded in Telerik WinForms Source Code
 slug: unblock-resx-files-downloaded-in-source-code 

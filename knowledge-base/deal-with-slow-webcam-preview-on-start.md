@@ -1,6 +1,7 @@
 ---
 title: How to Deal with Slow WebCam Preview on Start
 description: Learn how to handle slow initial preview in the WinForms WebCam control.     
+components: ["webcam"]
 type: how-to
 page_title: How to Deal with Slow WebCam Preview on Start
 slug: deal-with-slow-webcam-preview-on-start

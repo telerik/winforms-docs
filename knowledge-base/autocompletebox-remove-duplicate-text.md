@@ -1,6 +1,7 @@
 ---
 title: Remove Non-Tokenized Text in RadAutoCompleteBox
 description: Learn how to configure RadAutoCompleteBox in UI for WinForms to prevent non-tokenized text from appearing.
+components: ["autocompletebox"]
 type: how-to
 page_title: Preventing Non-Tokenized Text in RadAutoCompleteBox
 meta_title: Preventing Non-Tokenized Text in RadAutoCompleteBox

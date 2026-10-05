@@ -2,6 +2,7 @@
 title: Grouping
 page_title: Grouping - RadPropertyGrid
 description: RadPropertyGrid allow grouping of the displayed items either by the Category attribute or by adding group descriptors.
+components: ["propertygrid"]
 slug: winforms/propertygrid/features/grouping
 tags: grouping
 published: True

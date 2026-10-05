@@ -2,6 +2,7 @@
 title: Accessing and Customizing Elements
 page_title: Accessing and Customizing Elements - WinForms Button Control
 description: WinForms Button allows accessing and customizing elements that can be performed either at design time, or at run time
+components: ["buttons"]
 slug: winforms/buttons/button/customizing-appearance/accessing-and-customizing-elements 
 tags: button, appearance
 published: True

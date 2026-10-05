@@ -1,6 +1,7 @@
 ---
 title: How to Embed RadRichTextEditor in GridView Cells
 description: Learn how to display and edit HTML text in WinForms GridView's cells.
+components: ["gridview"]
 type: how-to 
 page_title: How to Embed RadRichTextEditor in GridView Cells
 slug: embed-richtexteditor-in-grid-cells

@@ -2,6 +2,7 @@
 title: Properties, Methods and Events
 page_title: Properties, Methods and Events - Task Dialog
 description: RadTaskDialog is a themable alternative of the windows dialog boxes and the newly released TaskDialog for .NET 5.
+components: ["taskdialog"]
 slug: task-dialog-properties-methods-events
 tags: task dialog, api, properties, methods, events
 published: True

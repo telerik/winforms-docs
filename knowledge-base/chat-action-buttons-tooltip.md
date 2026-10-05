@@ -1,6 +1,7 @@
 ---
 title: Setting a Tooltip Text for Action Buttons in RadChat Toolbar
 description: Learn how to set tooltip text for action buttons in the toolbar of the RadChat control in UI for WinForms.
+components: ["chat"]
 type: how-to
 page_title: Adding Tooltip Text to Toolbar Buttons in RadChat for WinForms
 meta_title: Adding Tooltip Text to Toolbar Buttons in RadChat for WinForms

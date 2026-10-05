@@ -2,6 +2,7 @@
 title: UI Automation Support (UI Accessibility)
 page_title: UI Automation Support (UI Accessibility) - RadRepeatButton
 description: UI Automation Support (UI Accessibility) for RadRepeatButton.   
+components: ["buttons"]
 slug: repeatbutton-ui-automation
 tags: repeatbutton,ui,automation
 published: True
