@@ -8,7 +8,7 @@
                     ]
                 }
             ],
-			"properties": {"TargetFramework": "net48"},
+			"properties": {"TargetFramework": "net9.0"},
             "dest": "metadata",
             "filter": "filterConfig.yml"
   }]
