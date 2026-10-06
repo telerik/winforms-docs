@@ -37,6 +37,12 @@ The Telerik WinForms MCP Server is a local MCP server that is distributed throug
 		subTitle="Migration Workflow"
 		description="An automated migration workflow that converts existing Microsoft WinForms applications to use Telerik RadControls. It uses Microsoft Roslyn to parse and transform C# and VB.NET source code with full context awareness — mapping control types, properties, events, and enum values to their Telerik equivalents.">
 	</article-card>
+	<article-card
+		href="{%slug ai-upgrade-assistant%}"
+		title="Telerik MCP Upgrade Assistant"
+		subTitle="Migration Workflow"
+		description="This tool will help you analyze your existing WinForms projects for breaking changes when upgrading between Telerik UI for WinForms versions.">
+	</article-card>
 </article-card-container>
 
 ## Prerequisites
