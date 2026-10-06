@@ -4,11 +4,10 @@
                 {
                     "files": [
 							        "src/**.dll",
-							        "src/**.XML"
                     ]
                 }
             ],
-			"properties": {"TargetFramework": "net9.0"},
+			"allowCompilationErrors": true,
             "dest": "metadata",
             "filter": "filterConfig.yml"
   }]
