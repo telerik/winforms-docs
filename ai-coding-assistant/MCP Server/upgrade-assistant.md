@@ -6,6 +6,7 @@ components: ["general"]
 slug: ai-upgrade-assistant
 tags: telerik,winforms,ai,coding assistant,upgrade,migration,breaking changes,mcp
 position: 2
+tag: new
 ---
 
 # Telerik UI for WinForms MCP Upgrade Assistant

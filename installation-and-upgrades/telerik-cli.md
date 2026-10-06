@@ -254,6 +254,16 @@ You can use the `nuget config` command with the following options:
 telerik nuget config --scope project --path . --force
 ```
 
+## Analyze Breaking Changes When Upgrading
+
+To scan a Telerik UI for WinForms project for API breaking changes before upgrading to a newer version, use the `migrate analyze` command:
+
+```powershell
+telerik migrate analyze --product winforms --project ./MyWinFormsApp.csproj
+```
+
+The command reports every affected file, the exact line and column, and guidance on how to update the code. For more usage examples and output formats, see [Detecting Breaking Changes with the Telerik CLI migrate Command]({%slug telerik-cli-migrate-analyzer%}).
+
 ## Help
 
 To get help about the tool or a specific command in the Telerik CLI, use the `-h` option:
