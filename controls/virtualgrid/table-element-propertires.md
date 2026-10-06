@@ -23,6 +23,7 @@ This article list the properties exposed by the __RadVirtualGrid.TableElement__.
 |__EnableHotTracking__|Gets or sets a value indicating whether there is a visual indication for the row currently under the mouse.|
 |__FilterRowHeight__|Gets or sets the height of the filtering row.|
 |__NewRowHeight__| Gets or sets the height of the add new row.|
+|__AddNewRowPosition__|Gets or sets whether the add new row appears at the top or bottom of the grid.|
 |__HeaderRowHeight__|Gets or sets the height of the header row.|
 |__RowHeight__|Gets or sets the default height of data rows.|
 |__IndentColumnWidth__|Gets or sets the width of the indent column.|
@@ -32,4 +33,3 @@ This article list the properties exposed by the __RadVirtualGrid.TableElement__.
 |__ColumnWidth__|Gets or sets the default column width.|
 |__RowSpacing__| Gets or sets the space between the rows|
 |__CellSpacing__| Gets or sets the space between the columns|
- 
