@@ -3453,7 +3453,7 @@ redirects:
     type: Permanent
 -    
     from: "^/ai-coding-assistant/mcp-server-as-nuget$"
-    to: "/ai-coding-assistant/mcp-server"
+    to: "/ai-coding-assistant/mcp-server/mcp-server"
     type: Permanent
 -    
     from: "^/visual-studio-integration/install-using-nuget$"
@@ -3461,7 +3461,35 @@ redirects:
     type: Permanent
 -    
     from: "^/ai-coding-assistant/overview$"
-    to: "/ai-coding-assistant/mcp-server"
+    to: "/ai-coding-assistant/mcp-server/mcp-server"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/mcp-server$"
+    to: "/ai-coding-assistant/mcp-server/mcp-server"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/upgrade-assistant$"
+    to: "/ai-coding-assistant/mcp-server/upgrade-assistant"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/coding-assistant/overview$"
+    to: "/ai-coding-assistant/mcp-server/coding-assistant/overview"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/coding-assistant/prompt-library$"
+    to: "/ai-coding-assistant/mcp-server/coding-assistant/prompt-library"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/converter/converter$"
+    to: "/ai-coding-assistant/mcp-server/converter/converter"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/converter/converter-tools$"
+    to: "/ai-coding-assistant/mcp-server/converter/converter-tools"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/converter/converter-getting-started$"
+    to: "/ai-coding-assistant/mcp-server/converter/converter-getting-started"
     type: Permanent
 -
     from: "^/(barcode|bindingnavigator|buttons|calendar|cardview|carousel|chart|chartview|chat|checkedlistbox|clock|codedui|commandbar|dataentry|datafilter|datalayout|desktopalert|diagram|dock|dropdown-listcontrol-and-checkeddropdownlist|editors|forms-and-dialogs|ganttview|gauges|gridview|image-editor|layoutcontrol|listview|map|menus|multicolumncombobox|pageview|panels-and-labels|panorama|pdfprocessing|pdfviewer|pivotgrid|propertygrid|rangeselector|ribbonbar|richtexteditor|rotator|scheduler|shortcuts|spellchecker|splitcontainer|spreadprocessing|spreadsheet|spreadstreamprocessing|themes|track-and-status-controls|treeview|virtualgrid|wizard|wordsprocessing|ziplibrary)/(.*)$"

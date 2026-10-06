@@ -3,11 +3,34 @@
             "src": [
                 {
                     "files": [
-							        "src/**.dll",
-							        "src/**.XML"
+							        "src/RadControlSpy.dll",
+									"src/Telerik.WinControls.ChartView.dll",
+									"src/Telerik.WinControls.dll",
+									"src/Telerik.WinControls.GridView.dll",
+									"src/Telerik.WinControls.PdfViewer.dll",
+									"src/Telerik.WinControls.PivotGrid.dll",
+									"src/Telerik.WinControls.RadChart.dll",									
+							        "src/Telerik.WinControls.RadDiagram.dll",									
+							        "src/Telerik.WinControls.RadDock.dll",									
+							        "src/Telerik.WinControls.RadMap.dll",									
+							        "src/Telerik.WinControls.RadMarkupEditor.dll",
+							        "src/Telerik.WinControls.RadSpreadsheet.dll",
+							        "src/Telerik.WinControls.RadToastNotification.dll",
+							        "src/Telerik.WinControls.RadWebCam.dll",
+							        "src/Telerik.WinControls.RichTextEditor.dll",
+							        "src/Telerik.WinControls.Scheduler.dll",
+							        "src/Telerik.WinControls.SpellChecker.dll",
+							        "src/Telerik.WinControls.SyntaxEditor.dll",
+							        "src/Telerik.WinControls.UI.dll",
+							        "src/Telerik.Windows.MediaFoundation.dll",
+							        "src/Telerik.Windows.Zip.dll",
+							        "src/TelerikCommon.dll",
+							        "src/TelerikData.dll",
+							        "src/TelerikExport.dll",
                     ]
                 }
             ],
+			"allowCompilationErrors": true,
             "dest": "metadata",
             "filter": "filterConfig.yml"
   }]

@@ -1,5 +1,5 @@
 ---
-title: MCP Server Overview
+title: Overview
 page_title: Telerik WinForms MCP Server - Installation, Configuration, and Getting Started
 description: Install and configure the Telerik WinForms MCP Server for AI-powered code generation. Covers .NET 10 dnx and .NET 8/9 dotnet tool setup, .mcp.json configuration, Visual Studio and VS Code integration, license requirements, and troubleshooting.
 components: ["general"]
@@ -36,6 +36,12 @@ The Telerik WinForms MCP Server is a local MCP server that is distributed throug
 		title="Telerik Converter"
 		subTitle="Migration Workflow"
 		description="An automated migration workflow that converts existing Microsoft WinForms applications to use Telerik RadControls. It uses Microsoft Roslyn to parse and transform C# and VB.NET source code with full context awareness — mapping control types, properties, events, and enum values to their Telerik equivalents.">
+	</article-card>
+	<article-card
+		href="{%slug ai-upgrade-assistant%}"
+		title="Telerik MCP Upgrade Assistant"
+		subTitle="Migration Workflow"
+		description="This tool will help you analyze your existing WinForms projects for breaking changes when upgrading between Telerik UI for WinForms versions.">
 	</article-card>
 </article-card-container>
 
