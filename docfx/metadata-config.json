@@ -26,7 +26,7 @@
 							        "src/Telerik.Windows.Zip.dll",
 							        "src/TelerikCommon.dll",
 							        "src/TelerikData.dll",
-							        "src/TelerikExport.dll",
+							        "src/TelerikExport.dll"
                     ]
                 }
             ],
