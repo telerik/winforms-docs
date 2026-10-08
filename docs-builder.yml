@@ -1704,12 +1704,15 @@ meta:
   ai-coding-assistant/converter:
     title: Telerik Converter
     position: 4
-  ai-coding-assistant/coding-assistant:
+  ai-coding-assistant/MCP Server/coding-assistant:
     title: Telerik AI Coding Assistant
     position: 1
   ai-coding-assistant:
     title: AI Tools
-    position: 4
+    position: 4    
+  ai-coding-assistant/MCP Server/converter:
+    title: Telerik Converter
+    position: 0    
   licensing:
     title: Licensing
     position: 3

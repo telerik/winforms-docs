@@ -1,5 +1,5 @@
 ---
-title: AI Coding Assistant Overview
+title: Overview
 page_title: Telerik UI for WinForms AI Coding Assistant - Overview, Intended Use, Coverage, and Privacy
 description: Overview of the Telerik UI for WinForms AI Coding Assistant. Covers intended use cases, supported components and assemblies, code generation capabilities, privacy and data handling, recommendations, and integration.
 components: ["general"]

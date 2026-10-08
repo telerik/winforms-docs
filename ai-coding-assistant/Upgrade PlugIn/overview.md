@@ -6,6 +6,7 @@ components: ["general"]
 slug: ai-winforms-upgrade-plugin
 tags: telerik,winforms,upgrade plugin,github copilot cli,microsoft upgrade agent,version upgrade,control conversion,assembly to nuget,licensing
 published: True
+tag: new
 ---
 
 # Telerik WinForms Upgrade Plugin
