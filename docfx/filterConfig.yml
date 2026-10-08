@@ -122,6 +122,8 @@ apiRules:
 - exclude:
     uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs\.TableBorders(\..*)?$
 - exclude:
+    uidRegex: ^Telerik\.WinForms\.Documents\.FormatProviders\.Html\.Parsing\.HtmlParser(\..*)?$
+- exclude:
     uidRegex: ^Telerik\.WinForms\.RichTextEditor\.RichTextBoxUI\.Dialogs\.TableProperties(\..*)?$
 - exclude:
     uidRegex: ^Telerik\.WinForms\.Spreadsheet\.Media\.Imaging\.Zip(\..*)?$
