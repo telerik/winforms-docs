@@ -24,10 +24,29 @@ Before installing the plugin, make sure you have:
 
 ## Install the Plugin
 
-From the root of the plugin repository, run:
+Inside GitHub Copilot CLI install the Microsoft and Telerik marketplaces and Upgrade plugins:
+
+Add the Microsoft and Telerik marketplaces:
 
 ```bash
-copilot plugin install ./plugins/telerik-winforms-upgrade-plugin
+/plugin marketplace add microsoft/upgrade-agent-plugins
+/plugin marketplace add telerik/ai-plugins
+```
+
+Install the GitHub Copilot and Telerik Upgrade Plugins:
+```bash
+/plugin install upgrade-agent@upgrade-agent-plugins
+/plugin install telerik-winforms-upgrade-plugin@telerik-ai-plugins
+```
+
+Select the Upgrade agent:
+
+```/agent``` to select  ```Upgrade ```
+
+Prompt the agent: 
+
+```
+Upgrade my solution to .NET 10 and Telerik v2026.3.812
 ```
 
 ## Select a Telerik Modernization Scenario
