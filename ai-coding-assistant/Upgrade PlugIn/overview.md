@@ -24,7 +24,7 @@ Before installing the plugin, make sure you have:
 
 ## Install the Plugin
 
-Inside GitHub Copilot CLI install the Microsoft GitHub Copilot upgrade plugin:
+Inside GitHub Copilot CLI install the Microsoft and Telerik marketplaces and Upgrade plugins:
 
 Add the Microsoft and Telerik marketplaces:
 
