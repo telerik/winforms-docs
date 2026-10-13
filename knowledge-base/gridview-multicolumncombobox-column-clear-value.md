@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-When you clear the text in an editable **GridViewMultiComboBoxColumn** cell while filtering is enabled, the editor can move its current row to the first filtered result. This example uses a custom **RadMultiColumnComboBoxElement** editor to keep the cell empty until the user explicitly selects a row with the mouse or presses Enter.
+When you clear the text in an editable `GridViewMultiComboBoxColumn` cell while filtering is enabled, the editor can select the first filtered result. This example uses a custom `RadMultiColumnComboBoxElement` editor to keep the cell empty until you select a row with the mouse or press `Enter`.
 
 The data model must allow an empty value. This example uses a nullable `int?` for `Product.CategoryId`.
 
