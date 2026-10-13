@@ -27,9 +27,9 @@ The data model must allow an empty value. This example uses a nullable `int?` fo
 
 ## Solution
 
-The following example replaces the generated `CategoryId` column with a `GridViewMultiComboBoxColumn` and uses a custom editor to handle empty text. The `NullableMultiColumnComboBoxElement` clears the current row when its text becomes empty. While the text remains empty, its `CurrentRowChanging` handler cancels row changes unless the user explicitly selects a data row with the mouse or presses Enter. The event handlers are removed when editing ends so they do not remain attached after the edit session.
+The following example replaces the generated `CategoryId` column with a `GridViewMultiComboBoxColumn` and uses a custom editor to handle empty text. The `NullableMultiColumnComboBoxElement` clears the current row when its text becomes empty. While the text remains empty, its `CurrentRowChanging` handler cancels row changes unless the user explicitly selects a data row with the mouse or presses `Enter`. The event handlers are removed when editing ends so they do not remain attached after the edit session.
 
-After applying the example, clear a category cell and commit the edit. The cell should remain empty. Selecting a category from the popup with the mouse or Enter should set its value.
+After applying the example, clear a category cell and commit the edit. The cell must remain empty. Selecting a category from the popup with the mouse or pressing `Enter` sets its value.
 
 ```csharp
 using System;
