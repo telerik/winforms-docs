@@ -236,11 +236,11 @@ For large data sets or frequent updates, evaluate the update rate and data reten
         private void FillData()
         {
             BindingList<ChartBusinessObject> collection = new BindingList<ChartBusinessObject>();
-            this.lastDate = DateTime.Now;
+            this.lastDate = DateTime.Now.AddMilliseconds(-50 * this.timer.Interval);
 
             for (int i = 0; i < 50; i++)
             {
-                this.lastDate = this.lastDate.AddMilliseconds(200);
+                this.lastDate = this.lastDate.AddMilliseconds(this.timer.Interval);
                 collection.Add(this.CreateBusinessObject());
             }
 
