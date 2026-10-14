@@ -1,6 +1,6 @@
 ---
 title: Sort Group Rows and Data Rows Separately in RadGridView
-description: Learn how to control RadGridView group order separately from the order of data rows within each group, including numeric sorting for string-backed values.
+description: Learn how to control RadGridView group order separately from data-row order, including numeric sorting for string-backed values.
 components: ["gridview"]
 type: how-to
 page_title: Sort Group Rows and Data Rows Separately in RadGridView
