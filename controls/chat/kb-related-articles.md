@@ -28,6 +28,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Resizing and Wrapping Text in ChatCardAction for RadChat]({%slug chat-resize-wrap-text-cardaction%})|
 |[Reversed Order of Chat Messages]({%slug chat-messages-in-reversed-order%})|
 |[Setting a Tooltip Text for Action Buttons in RadChat Toolbar]({%slug chat-action-buttons-tooltip%})|
+|[Show Author Messages on the Left in RadChat]({%slug show-author-messages-on-the-left%})|
 
 ## See Also
 
