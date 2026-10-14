@@ -47,7 +47,7 @@ To order groups by a value from their rows, such as the lowest `Nr` in each grou
 
 For example, if the lowest `Nr` values are 1 for **Hardware**, 4 for **Services**, and 14 for **Software**, the group rows appear in that order, while the sort descriptor orders the rows within each group by `Nr`.
 
-**Learn more:** [Sorting Group Rows]({%slug winforms/gridview/grouping/sorting-group-rows%}) explains custom group ordering. The existing KB article [How to keep the sort order after grouping in RadGridView](https://docs.telerik.com/devtools/winforms/knowledge-base/sort-order-after-grouping-in-gridview) provides a comparer example.
+**Learn more:** [Sorting Group Rows]({%slug winforms/gridview/grouping/sorting-group-rows%}) explains custom group ordering. The existing KB article [How to keep the sort order after grouping in RadGridView]({%slug sort-order-after-grouping-in-gridview%}) provides a comparer example.
 
 ### Related Articles
 
