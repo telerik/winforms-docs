@@ -265,7 +265,7 @@ For large data sets or frequent updates, evaluate the update rate and data reten
                 count++;
             }
 
-            this.lastDate = this.lastDate.AddMilliseconds(200);
+            this.lastDate = DateTime.Now;
             this.Data.RemoveAt(0);
             this.Data.Add(this.CreateBusinessObject());
             this.UpdateMetrics();
