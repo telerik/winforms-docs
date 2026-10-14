@@ -1701,18 +1701,21 @@ meta:
   installation-and-upgrades/download-product-files:
     title: Download Product Files
     position: 6
-  ai-coding-assistant/converter:
-    title: Telerik Converter
-    position: 4
-  ai-coding-assistant/MCP Server/coding-assistant:
-    title: Telerik AI Coding Assistant
-    position: 1
-  ai-coding-assistant:
+  ai-tools:
     title: AI Tools
-    position: 4    
-  ai-coding-assistant/MCP Server/converter:
+    position: 4
+  ai-tools/mcp-server:
+    title: MCP Server
+    position: 0
+  ai-tools/mcp-server/coding-assistant:
+    title: Telerik AI Coding Assistant
+    position: 0
+  ai-tools/mcp-server/converter:
     title: Telerik Converter
-    position: 0    
+    position: 1
+  ai-tools/upgrade-plugin:
+    title: WinForms Upgrade Plugin
+    position: 1
   licensing:
     title: Licensing
     position: 3
@@ -3497,4 +3500,36 @@ redirects:
 -
     from: "^/(barcode|bindingnavigator|buttons|calendar|cardview|carousel|chart|chartview|chat|checkedlistbox|clock|codedui|commandbar|dataentry|datafilter|datalayout|desktopalert|diagram|dock|dropdown-listcontrol-and-checkeddropdownlist|editors|forms-and-dialogs|ganttview|gauges|gridview|image-editor|layoutcontrol|listview|map|menus|multicolumncombobox|pageview|panels-and-labels|panorama|pdfprocessing|pdfviewer|pivotgrid|propertygrid|rangeselector|ribbonbar|richtexteditor|rotator|scheduler|shortcuts|spellchecker|splitcontainer|spreadprocessing|spreadsheet|spreadstreamprocessing|themes|track-and-status-controls|treeview|virtualgrid|wizard|wordsprocessing|ziplibrary)/(.*)$"
     to: "/controls/$1/$2"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/mcp-server/mcp-server$"
+    to: "/ai-tools/mcp-server/overview"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/mcp-server/upgrade-assistant$"
+    to: "/ai-tools/mcp-server/upgrade-assistant"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/mcp-server/coding-assistant/overview$"
+    to: "/ai-tools/mcp-server/coding-assistant/overview"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/mcp-server/coding-assistant/prompt-library$"
+    to: "/ai-tools/mcp-server/coding-assistant/prompt-library"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/mcp-server/converter/converter$"
+    to: "/ai-tools/mcp-server/converter/overview"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/mcp-server/converter/converter-tools$"
+    to: "/ai-tools/mcp-server/converter/tools"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/mcp-server/converter/converter-getting-started$"
+    to: "/ai-tools/mcp-server/converter/getting-started"
+    type: Permanent
+-
+    from: "^/ai-coding-assistant/upgrade-plugin/overview$"
+    to: "/ai-tools/upgrade-plugin/overview"
     type: Permanent

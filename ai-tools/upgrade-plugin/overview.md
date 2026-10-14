@@ -1,5 +1,5 @@
 ---
-title: WinForms Upgrade Plugin
+title: Overview
 page_title: Telerik WinForms Upgrade Plugin for GitHub Copilot CLI
 description: Use the Telerik WinForms Upgrade Plugin with Microsoft's Upgrade Agent to upgrade Telerik versions, convert controls, migrate assembly references, and configure licensing.
 components: ["general"]
