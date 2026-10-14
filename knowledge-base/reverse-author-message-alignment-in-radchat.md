@@ -41,7 +41,7 @@ Place this code in the form constructor after `InitializeComponent()`. Add two a
             ChatTextMessage message3 = new ChatTextMessage("How are you?", author1, DateTime.Now.AddHours(3));
             this.radChat1.AddMessage(message3);
 
-            ChatTextMessage message4 = new ChatTextMessage("Fine. Thanks!", author2, DateTime.Now.AddHours(1).AddMinutes(10));
+            ChatTextMessage message4 = new ChatTextMessage("Fine. Thanks!", author2, DateTime.Now.AddHours(3).AddMinutes(10));
             this.radChat1.AddMessage(message4);
             this.radChat1.ItemFormatting += (s, e) =>
             {
