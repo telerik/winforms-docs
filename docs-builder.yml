@@ -1709,10 +1709,10 @@ meta:
     position: 0
   ai-tools/mcp-server/coding-assistant:
     title: Telerik AI Coding Assistant
-    position: 1
+    position: 0
   ai-tools/mcp-server/converter:
     title: Telerik Converter
-    position: 0
+    position: 1
   ai-tools/upgrade-plugin:
     title: WinForms Upgrade Plugin
     position: 1
