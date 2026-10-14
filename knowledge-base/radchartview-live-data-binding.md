@@ -91,7 +91,13 @@ For large data sets or frequent updates, evaluate the update rate and data reten
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            this.model.StartTimer(); 
+            this.model.StartTimer();
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            this.model.StopTimer();
+            base.OnFormClosed(e);
         }
     }
     public class LiveDataModel : INotifyPropertyChanged
