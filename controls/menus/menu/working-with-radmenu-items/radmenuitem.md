@@ -79,3 +79,4 @@ The __RadMenuSeparatorItem__ is used to add a horizontal line for visual separat
 * [Nesting Controls in Menu Items]({%slug winforms/menus/menu/working-with-radmenu-items/nesting-controls-in-menu-items%})	
 * [RadMenuItem Events]({%slug winforms/menus/menu/working-with-radmenu-items/radmenuitem-events%})	
 * [Assign Shortcuts to Menu Items]({%slug winforms/menus/menu/working-with-radmenu-items/assign-shortcuts-to-menu-items%})	
+* [Show Custom Checkbox Glyphs in RadMenuItem]({%slug radmenuitem-custom-checkbox-glyphs%})
