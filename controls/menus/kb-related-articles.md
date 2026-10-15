@@ -20,6 +20,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Distinguishing the Source Control of RadContextMenu]({%slug distinguishing-the-source-control-of-radcontextmenu%})|
 |[Highlight the Last Selected Menu Item In RadMenu]({%slug menu-highlight-last-click-item%})|
 |[How to migrate to new two columns menu]({%slug how-to-migrate-to-new-two-columns-menu%})|
+|[Show Custom Checkbox Glyphs in RadMenuItem]({%slug radmenuitem-custom-checkbox-glyphs%})|
 |[Removing the Icon Column in RadContextMenu for WinForms]({%slug contextmenu-remove-icon-column%})|
 |[Wrapping Text in RadMenu and RadDropDownButton Items in WinForms]({%slug menuitem-wrap-text%})|
 
