@@ -148,6 +148,7 @@ The following article list Knowledge Base articles related to this section of co
 |[Node drag and drop between RadTreeView and RadGridView]({%slug node-drag-and-drop-between-radtreeview-and-radgridview%})|
 |[Permanent editor in a filter cell]({%slug gridview-permaneneditor-in-filter-cell%})|
 |[Prevent Column Dragging Over Pinned Columns in RadGridView for WinForms]({%slug gridview-prevent-column-drag-over-pinned%})|
+|[Prevent RadGridView Custom Cell Overlap with RadButtonTextBox]({%slug radgridview-html-view-custom-cell-overlap%})|
 |[Preventing Focus on RadGridView in WinForms]({%slug gridview-prevent-focus%})|
 |[Print Header in RadGridView Only on the First Page]({%slug gridview-print-header-on-first-page%})|
 |[Printing RadGridView via Telerik Reporting]({%slug printing-radgridview-via-telerik-reporting%})|
