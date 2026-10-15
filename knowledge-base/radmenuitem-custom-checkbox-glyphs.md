@@ -50,13 +50,13 @@ public Form1()
 {
     InitializeComponent();
 
-    RadMenuItem monday= new RadMenuItem();
-    this.radDropDownButton1.Items.Add(monday);
-    RadMenuItem tuesday = new RadMenuItem();
-    this.radDropDownButton1.Items.Add(tuesday);
+    RadMenuItem saturday = new RadMenuItem();
+    this.radDropDownButton1.Items.Add(saturday);
+    RadMenuItem sunday = new RadMenuItem();
+    this.radDropDownButton1.Items.Add(sunday);
 
-    ConfigureCheckableItem(monday, "Saturday");
-    ConfigureCheckableItem(tuesday, "Sunday");
+    ConfigureCheckableItem(saturday, "Saturday");
+    ConfigureCheckableItem(sunday, "Sunday");
 
 }
 
