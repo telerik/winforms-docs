@@ -34,6 +34,7 @@ The following article list Knowledge Base articles related to this section of co
 |[How to Rotate Annotation's Label in ChartView]({%slug rotate-chart-annotation-label%})|
 |[How to Rotate the Labels for BarSeries]({%slug rotate-labels-for-barseries%})|
 |[Integrating PanZoom, TrackBall and LassoZoom Controllers in RadChartView]({%slug integrating-panzoom-trackball-and-lassozoom-controllers-in-radchartview%})|
+|[Live Data in RadChartView]({%slug radchartview-live-data-binding%})|
 |[Negative Area Chart]({%slug chartview-negetive-area%})|
 |[Populate RadChartView from Access Database]({%slug chartview-access-database%})|
 |[RadChartView Drag and Drop]({%slug radchartview-drag-and-drop%})|
