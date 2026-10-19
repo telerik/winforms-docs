@@ -51,10 +51,10 @@ For example, if the lowest `Nr` values are 1 for **Hardware**, 4 for **Services*
 
 ### Related Articles
 
-- [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})
-- [Setting Sorting Programmatically]({%slug winforms/gridview/sorting/setting-sorting-programmatically%})
-- [Custom Sorting]({%slug winforms/gridview/sorting/custom-sorting%})
-- [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
+* [Basic Sorting]({%slug winforms/gridview/sorting/basic-sorting%})
+* [Setting Sorting Programmatically]({%slug winforms/gridview/sorting/setting-sorting-programmatically%})
+* [Custom Sorting]({%slug winforms/gridview/sorting/custom-sorting%})
+* [Basic Grouping]({%slug winforms/gridview/grouping/basic-grouping%})
 - [Setting Groups Programmatically]({%slug winforms/gridview/grouping/setting-groups-programmatically%})
 - [Sorting Group Rows]({%slug winforms/gridview/grouping/sorting-group-rows%})
 - [How to keep the sort order after grouping in RadGridView](https://docs.telerik.com/devtools/winforms/knowledge-base/sort-order-after-grouping-in-gridview)
