@@ -43,6 +43,10 @@ markdown-replacements:
   - pattern: 'slug:(?!\/|\s)'
     replacement: 'slug://'
 
+nuclia-labels: 
+  - Documentation
+  - Knowledge Base
+
 meta:
   api:
     title: API Reference
