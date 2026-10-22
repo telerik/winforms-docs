@@ -16,7 +16,6 @@ img-max-width: 100%
 center-images: false
 table-layout: fixed
 enable-tabbed-code-blocks: true
-pdf-cover-png-path: ./images/pdf-cover.png
 gitLastCommitDateEnabled: true
 search-provider: nuclia
 
@@ -47,6 +46,10 @@ fileSources:
     meta:
       relativeUrl: https://www.telerik.com/products/winforms/documentation
       position: 1
+  images:
+    meta:
+      path: ./images
+      position: 2
 
 api-url-prefix: ''
 nuclia-labels: 
