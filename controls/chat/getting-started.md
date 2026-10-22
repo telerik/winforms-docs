@@ -11,7 +11,7 @@ position: 2
 
 # Getting Started with WinForms Chat
 
-This article will give you getting started experience with **RadChat**. 
+This article will give you getting started experience with **RadChat** control. 
 
 ## Adding Telerik Assemblies Using NuGet
 
