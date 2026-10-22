@@ -47,6 +47,14 @@ nuclia-labels:
   - Documentation
   - Knowledge Base
 
+fileSources:
+  meta:
+    path: .
+  api:
+    meta:
+      relativeUrl: https://www.telerik.com/products/winforms/documentation/api
+      position: 9999
+
 meta:
   api:
     title: API Reference
