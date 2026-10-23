@@ -66,9 +66,17 @@ Use [Telerik CLI]({%slug telerik-cli%}#get-license-key) when you prefer a comman
 Use manual installation when you need to control where the license file is stored, prepare a build agent, or work outside the Telerik productivity tools:
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
-1. Click the **Download License Key** button.
 
-    ![Download License Key button in the Telerik account](./images/download-license-key.png)
+1. Select the __Manual Setup__ tab in the tabstrip with the installation options.
+
+1. Click on the __Set Up License Key__ button.
+
+1. Check the instructions in the opened dialog and click on the __Download License Key__ button.
+
+1. Copy the downloaded `telerik-license.txt` license key file to one of the following locations:
+
+	* `%appdata%\Telerik\telerik-license.txt` to make it available for the current Windows user on the local machine.
+	* The project root folder to make it available only to that project.
 
 After you download `telerik-license.txt`, continue with the activation path that matches your project type.
 
@@ -173,7 +181,6 @@ Verify the following items before you continue troubleshooting:
 * The file is in `%AppData%\Telerik` for the build account or next to the `.csproj` file.
 * The build server uses the same Windows account and profile path where you copied the file.
 * You downloaded a new license key after a license renewal or a new purchase.
-
 
 ## Updating Your License Key
 
