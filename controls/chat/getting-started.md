@@ -19,7 +19,7 @@ To use `RadChat` when working with NuGet packages, install the `Telerik.UI.for.W
 
 Read more about NuGet installation in the [Install using NuGet Packages]({%slug winforms/nuget%}) article.
 
->tip With the 2025 Q1 release, the Telerik UI for WinForms has a new licensing mechanism. You can learn more about it [here]({%slug license-key%}).
+The speech-to-text button in the input area of the chat requires you to explicitly install the [Microsoft.Web.WebView2](https://www.nuget.org/packages/Microsoft.Web.WebView2] NuGet package. Without this dependency, the default speech recognizer of the button throws an exception when the button initializes.
 
 ## Adding Assembly References Manually
 
@@ -83,4 +83,3 @@ If the RadChat.**AutoAddUserMessages** property is set to *false* the message fr
 * [Deploy Telerik UI for WinForms Applications](https://docs.telerik.com/devtools/winforms/deployment-and-distribution/application-deployment)
 * [Telerik UI for WinForms Virtual Classroom(Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/17/telerik-ui-for-winforms)
 * [Telerik UI for WinForms License Agreement)](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s)
-
