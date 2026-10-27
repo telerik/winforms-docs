@@ -1,0 +1,1087 @@
+{
+  "title": "Telerik UI for WinForms documentation accessibility audit",
+  "issue": "https://github.com/telerik/winforms-docs/issues/918",
+  "audit_date": "2026-10-27",
+  "source_commit": "62e5c0af60744b8cb76454c3a3cb99952c99bded",
+  "repository_root": "/home/runner/work/winforms-docs/winforms-docs",
+  "guidance": "/home/runner/work/winforms-docs/winforms-docs/.github/skills/accessibility-doc-optimization/SKILL.md",
+  "scope": {
+    "included": [
+      "Markdown article structure, prose, links, tables, code presentation, callouts, and embedded content.",
+      "Text alternatives and contextual explanations for documentation assets referenced by articles.",
+      "Contributor-facing Markdown authoring guidance."
+    ],
+    "excluded": [
+      "Telerik WinForms runtime behavior and product accessibility capabilities.",
+      "Report, viewer, designer, or generated-report accessibility.",
+      "Product keyboard navigation, product screen reader support, and accuracy of product accessibility claims."
+    ],
+    "changes": "This deliverable records findings and recommendations only; it does not change articles, assets, rendering templates, or product code."
+  },
+  "methodology": {
+    "approach": [
+      "Inventory tracked .md files at the source commit using git ls-files '*.md'.",
+      "Scan all 3,116 article candidates across every content directory; exclude .github/**, _assetsApi/**, and README.md from article counts. Review README.md separately for contributor guidance.",
+      "Remove initial YAML front matter and skip fenced code before collecting source-pattern indicators. Track backtick and tilde fence lengths; ignore indented code when scanning non-fence content.",
+      "Collect ATX heading transitions, inline Markdown images, exact image-alt/basename matches, generic inline link labels, fenced code language labels, iframe tags, and literal <snippet inclusion lines.",
+      "Supplement the scan with pipe-table separator and empty-cell candidates, HTML table tags, same-line nested tables, designated and alternative callout markers, color/spatial vocabulary, and bare prose URLs. Mask inline code with a nonempty token for these supplemental checks so code-valued cells are not miscounted as empty.",
+      "Manually inspect candidate passages and surrounding content before recording detailed findings. Counts are search indicators, not independently confirmed violations for every matching article.",
+      "Apply the authoritative skill's eight weighted dimensions to representative articles. Keep severity, which describes user impact and remediation priority, separate from the numerical article score.",
+      "Supplement the skill with the requested embedded-media and screenshot-context checks, without changing its eight scoring weights."
+    ],
+    "limitations": [
+      "This is a repository-wide source-pattern survey with targeted manual review, not a line-by-line human audit of all 3,116 articles or a WCAG conformance certification.",
+      "The inventory includes tracked article candidates regardless of published front matter; it does not claim all candidates appear on the live site.",
+      "Pattern matching is not a full Markdown or Liquid parser. Reference-style images and links, multiline HTML, inline code, escaped syntax, Setext headings, and custom components require additional review.",
+      "Missing source H1 headings do not prove missing rendered page titles. Knowledge-base templates may inject a title; verify the generated outline before adding another H1.",
+      "No rendered-site, browser accessibility-tree, keyboard, screen reader, reflow, contrast, or documentation-player interaction testing was performed.",
+      "External snippet bodies are not available in this checkout. Only their inclusion syntax and surrounding authoring context were inspected.",
+      "Remote video captions, transcripts, audio descriptions, and player behavior were not inspected. A missing transcript link in Markdown is not proof that the remote video has no captions.",
+      "Only the weighted-average screenshot was visually inspected. Other asset findings concern their source alternatives and surrounding prose, not a claim that every visual detail was inspected.",
+      "Flesch-Kincaid readability was not calculated; plain-language findings are editorial observations with quoted examples, not measured reading-grade results.",
+      "A category with no confirmed finding is not certified accessible. In particular, decorative-image intent and rendered landmark semantics need follow-up.",
+      "The checked-in skill defines article scoring, not a corpus-scanning implementation. The source-pattern inventory is an audit-specific survey, and plain-language assessment remains manual."
+    ],
+    "severity_definitions": {
+      "Critical": "A verified, widespread barrier prevents understanding of essential documentation content.",
+      "High": "A significant documentation accessibility barrier requiring near-term remediation.",
+      "Medium": "Reduced accessibility or usability to address during regular maintenance.",
+      "Low": "A localized consistency or best-practice improvement."
+    },
+    "scoring_weights": {
+      "heading_structure": 0.2,
+      "alternative_text": 0.2,
+      "link_text_clarity": 0.15,
+      "table_accessibility": 0.1,
+      "plain_language": 0.15,
+      "formatting_independence": 0.1,
+      "callout_structure": 0.05,
+      "code_block_accessibility": 0.05
+    },
+    "scoring_policy": "Use scores from 1 to 5 and round the weighted sum to one decimal place. A 5 for a dimension whose construct is absent means no violation observed in that article, not proof of renderer support. Do not extrapolate these purposively selected article scores into a repository average."
+  },
+  "Executive Summary": {
+    "confirmed_findings": {
+      "total": 25,
+      "Critical": 0,
+      "High": 5,
+      "Medium": 17,
+      "Low": 3
+    },
+    "assessment": "Documentation accessibility is inconsistent at the source-authoring level. Many articles have useful headings, prose instructions, language-labeled examples, and named callouts, but recurring legacy patterns reduce nonvisual navigation and access to visual examples.",
+    "main_risk_areas": [
+      "Screenshot alternatives that identify a file or topic instead of conveying the demonstrated result.",
+      "Nested or layout-only tables that obscure reading order and cell relationships.",
+      "Repeated top-level related-links headings and skipped section levels.",
+      "Generic link labels and media without clearly linked text alternatives.",
+      "Long examples without a navigable reading guide and inconsistent semantic callouts."
+    ],
+    "most_common_observed_patterns": [
+      "1,626 article candidates contain an H1 labeled See Also.",
+      "994 article candidates contain at least one source ATX heading-level jump.",
+      "273 article candidates contain one of the scanned generic link labels.",
+      "158 article candidates contain image alt text exactly equal to the referenced image basename."
+    ],
+    "estimated_content_quality_maturity": "Developing: the repository has established metadata, reusable includes, callout conventions, and contributor instructions, but the reviewed guidance does not turn documentation accessibility into explicit acceptance checks. This is a qualitative source-authoring assessment, not a measured organizational maturity level.",
+    "critical_findings": "No Critical finding established. The audit found significant recurring barriers, but did not demonstrate widespread inability to understand essential content sufficient to justify that severity.",
+    "positive_examples": [
+      {
+        "file": "/home/runner/work/winforms-docs/winforms-docs/getting-started/first-steps.md",
+        "lines": [61, 89],
+        "observation": "Screenshots are accompanied by captions, action-oriented prose, and descriptions naming the selected template or installed package."
+      },
+      {
+        "file": "/home/runner/work/winforms-docs/winforms-docs/getting-started/video-onboarding.md",
+        "lines": [24, 32],
+        "observation": "Both embedded videos already have descriptive iframe titles and introductory text; retain these while adding text-alternative discovery."
+      },
+      {
+        "file": "/home/runner/work/winforms-docs/winforms-docs/controls/smartpastebutton/getting-started.md",
+        "lines": [107, 118],
+        "observation": "The member table has descriptive column headers, a lead-in, populated cells, and a complete important callout."
+      }
+    ]
+  },
+  "Immediate Action Required": [
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/dpi-support.md",
+      "severity": "High",
+      "number_of_findings": 4,
+      "finding_ids": ["A01", "A02", "A05", "A11"],
+      "risks": "Nested tables separate each state from its corresponding mode; screenshots are presented as table rows; the outline and generic links add navigation friction.",
+      "immediate_actions": [
+        "Flatten the manifest settings table into one setting/state/mode combination per row and label the currently empty header.",
+        "Replace the screenshot layout table with separately labeled figures and a textual comparison.",
+        "Repair the H1-to-H3 jump and demote See Also; replace generic link labels."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/knowledge-base/access-gridview-elements.md",
+      "severity": "High",
+      "number_of_findings": 2,
+      "finding_ids": ["A03", "A06"],
+      "risks": "The environment table has no header cells; the source outline skips levels and has no article H1.",
+      "immediate_actions": [
+        "Use a simple Field/Value table or a definition list for environment metadata.",
+        "Verify whether the page template supplies the H1; change the H4 example heading to an H3 under Description."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/controls/gridview/overview.md",
+      "severity": "High",
+      "number_of_findings": 2,
+      "finding_ids": ["A21", "A22"],
+      "risks": "Repeated Read more labels lead to distinct destinations; a video layout table has inconsistent column counts.",
+      "immediate_actions": [
+        "Replace repeated Read more labels with the relevant feature or task name.",
+        "Replace the video layout table with a descriptive link, summary, and verified text alternative."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+      "severity": "High",
+      "number_of_findings": 6,
+      "finding_ids": ["A04", "A07", "A08", "A11", "A19", "A23"],
+      "risks": "A video-and-thumbnail layout table has an empty header; screenshot alternatives are file identifiers; empty/skipped headings and generic links impede navigation.",
+      "immediate_actions": [
+        "Convert Related videos to a named link with a summary and discoverable text alternative.",
+        "Describe each screenshot's purpose; remove the empty heading and repair the code-section outline.",
+        "Expand SVG, VS, and DLL at first use and turn the escaped priority numbering into a real ordered list."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/installation-and-upgrades/install-using-nuget.md",
+      "severity": "High",
+      "number_of_findings": 3,
+      "finding_ids": ["A12", "A13", "A17"],
+      "risks": "The embedded video has no source title, a feed example has no language label, and an operational reminder uses an untyped quote.",
+      "immediate_actions": [
+        "Give the iframe a descriptive title and introduce the video as optional alongside the written installation steps.",
+        "Label the feed block text and convert the expiration reminder to the designated important callout syntax."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/knowledge-base/add-weighted-average-in-pivotgrid.md",
+      "severity": "Medium",
+      "number_of_findings": 2,
+      "finding_ids": ["A09", "A14"],
+      "risks": "A filename-style alternative omits the screenshot's numerical result; lengthy bilingual code blocks lack a section-by-section guide.",
+      "immediate_actions": [
+        "Describe the demonstrated totals in nearby text, including Sum(A)=14, Sum(B)=20, and the total ratio 0.70.",
+        "Add navigable subsections or a reading guide for data setup, calculated fields, and aggregation."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property.md",
+      "severity": "Medium",
+      "number_of_findings": 3,
+      "finding_ids": ["A08", "A11", "A16"],
+      "risks": "Two long file-identifier alternatives conceal the before/after purpose, a generic link obscures its destination, and an empty note marker disrupts callout structure.",
+      "immediate_actions": [
+        "Name the Hidden and Visible property states in the alternatives.",
+        "Use Property Precedence Rules as link text and remove the empty note marker."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/getting-started/video-onboarding.md",
+      "severity": "Medium",
+      "number_of_findings": 1,
+      "finding_ids": ["A15"],
+      "risks": "The page summarizes modules but does not point readers to transcripts or equivalent written lessons.",
+      "immediate_actions": [
+        "Map each module to its transcript or equivalent written tutorial and explain how to find verified captions."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/controls/chart/building-radcharts/data-binding-radchart.md",
+      "severity": "Medium",
+      "number_of_findings": 2,
+      "finding_ids": ["A07", "A10"],
+      "risks": "An empty heading has no navigable label, and identical ICollection labels point to different interface pages.",
+      "immediate_actions": [
+        "Remove the empty heading or replace it with a descriptive section name.",
+        "Align interface link text and destinations, using consistent labels for the same destination."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/testing/appium/getting-started.md",
+      "severity": "Medium",
+      "number_of_findings": 1,
+      "finding_ids": ["A23"],
+      "risks": "Escaped step numbers look like a procedure but do not form a semantic ordered list.",
+      "immediate_actions": [
+        "Use real ordered-list markers and indent each step's images, prose, and code so the whole procedure remains one navigable list."
+      ]
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/installation-and-upgrades/installation.md",
+      "severity": "Medium",
+      "number_of_findings": 1,
+      "finding_ids": ["A13"],
+      "risks": "Five unlabeled blocks mix shell commands with an XML fragment.",
+      "immediate_actions": [
+        "Identify the command shell in prose and tag command blocks accordingly; tag PackageReference as xml."
+      ]
+    }
+  ],
+  "Detailed Findings": [
+    {
+      "id": "A01",
+      "severity": "High",
+      "category": "Table accessibility: nested data and empty headers",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/dpi-support.md",
+          "lines": [46, 51],
+          "quote": "<th></th><th>Minimum Supported OS</th><th>States</th><th>DPI Mode</th>"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/dpi-support.md",
+          "lines": [48, 49],
+          "quote": "<td><table><tr><td>false</td></tr><tr><td>true</td></tr><tr><td>true/pm</td></tr></table></td>"
+        }
+      ],
+      "impact": "State values and their corresponding mode names occupy separate nested tables. Linear reading requires readers to remember positional relationships; the setting column has no name and bold setting names are not row headers.",
+      "recommended_remediation": "Use a flat table with Setting, Minimum supported OS, State, and DPI mode columns; repeat the setting and OS for each state/mode pair. Retain the existing lead-in and remove the empty row. If HTML remains necessary, use explicit header cells and scope.",
+      "example_correction": "| Setting | Minimum supported OS | State | DPI mode |\n| --- | --- | --- | --- |\n| dpiAware | Windows Vista | false | Unaware |\n| dpiAware | Windows Vista | true | System aware |"
+    },
+    {
+      "id": "A02",
+      "severity": "Medium",
+      "category": "Table accessibility: screenshot layout and visual comparison",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/dpi-support.md",
+          "lines": [22, 27],
+          "quote": "You can notice that the first image becomes blurry on 200% scaling, while the second one remains crisp and looks modern."
+        }
+      ],
+      "impact": "The one-column table contains two screenshots rather than comparative data. The alternatives name DPI support but do not distinguish the blurry and crisp examples; the prose depends on first/second visual ordering.",
+      "recommended_remediation": "Present labeled figures outside a table. Describe the demonstrated difference in text and use the same labels in the alternatives; do not make perceiving sharpness a prerequisite to understanding the comparison.",
+      "example_correction": "Comparison at 3840 × 2160 and 200% scaling: Example A demonstrates blurred bitmap-scaled text; Example B demonstrates crisp text. Label the corresponding images Example A and Example B."
+    },
+    {
+      "id": "A03",
+      "severity": "High",
+      "category": "Table accessibility: metadata without header cells",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/knowledge-base/access-gridview-elements.md",
+          "lines": [15, 28],
+          "quote": "<td>Product Version</td>"
+        }
+      ],
+      "impact": "All environment cells use td, so the source provides no header associations for Product Version, Product, or Author. Table navigation cannot rely on semantic label/value relationships.",
+      "recommended_remediation": "Prefer a definition list or bullet list for short metadata. If retaining a table, supply Field and Value column headers, or mark each label as th scope=\"row\" in HTML.",
+      "example_correction": "| Field | Value |\n| --- | --- |\n| Product Version | 2018.3.1016 |\n| Product | RadGridView for WinForms |"
+    },
+    {
+      "id": "A04",
+      "severity": "High",
+      "category": "Table accessibility: related-video layout",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [15, 17],
+          "quote": "| RELATED VIDEOS |  |"
+        }
+      ],
+      "impact": "A video link and thumbnail are positioned using table cells with an empty column header. This adds a meaningless table-navigation structure and an unhelpful image announcement.",
+      "recommended_remediation": "Use a Related videos section with a descriptive video link, a summary, and a transcript or equivalent written lesson. Remove an unnecessary thumbnail; mark it decorative only after confirming that its information is fully duplicated in text.",
+      "example_correction": "## Related videos\n\n[Applying themes at the control and form level](http://tv.telerik.com/watch/winforms/themes/radcontrols-winforms-theme) demonstrates the theme selection workflow. Add a verified transcript or equivalent written walkthrough link."
+    },
+    {
+      "id": "A05",
+      "severity": "Medium",
+      "category": "Heading structure: skipped levels and multiple top-level sections",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/dpi-support.md",
+          "lines": [12, 18],
+          "quote": "### DPI awareness"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/dpi-support.md",
+          "lines": [175, 175],
+          "quote": "# See Also"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/barcodeview/barcode-reader.md",
+          "lines": [29, 29],
+          "quote": "#### Decoding a barcode image"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/barcodeview/barcode-reader.md",
+          "lines": [68, 68],
+          "quote": "# See Also"
+        }
+      ],
+      "impact": "The outline moves directly from the article title to H3 or H4, and related links create a second H1. Heading-list navigation no longer reflects a consistent article/section hierarchy.",
+      "recommended_remediation": "Keep one article H1, use H2 for these main sections and See Also, and adjust subordinate headings without breaking existing fragment links.",
+      "example_correction": "## DPI awareness\n\n## See Also"
+    },
+    {
+      "id": "A06",
+      "severity": "Medium",
+      "category": "Heading structure: missing source title and skipped example level",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/knowledge-base/access-gridview-elements.md",
+          "lines": [11, 34],
+          "quote": "#### Access the elements by index"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/smartpastebutton/getting-started.md",
+          "lines": [10, 16],
+          "quote": "## Getting started with the SmartPasteButton"
+        }
+      ],
+      "impact": "Neither article has a source H1, and the knowledge-base example moves from H2 Description to H4. A source reader lacks the expected title-level entry point; the rendered H1 status remains unverified.",
+      "recommended_remediation": "Confirm the title-rendering contract per article type before adding an H1. Ensure exactly one rendered article H1 and change the example under Description to H3; avoid mass insertion of titles into knowledge-base pages.",
+      "example_correction": "### Access the elements by index"
+    },
+    {
+      "id": "A07",
+      "severity": "Medium",
+      "category": "Heading structure: empty and presentation-only headings",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [19, 19],
+          "quote": "## "
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [43, 47],
+          "quote": "#### Setting a default theme for the entire application"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/chart/building-radcharts/data-binding-radchart.md",
+          "lines": [16, 16],
+          "quote": "## "
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/aiprompt/overview.md",
+          "lines": [13, 14],
+          "quote": "#### WinForms AIPrompt component bridges the gap between an app and the next-generation AI language model applications."
+        }
+      ],
+      "impact": "Empty headings have no accessible label. The AIPrompt promotional sentence is styled as H4 directly after H1, and the theme example skips H3; both misuse structural levels for presentation.",
+      "recommended_remediation": "Remove empty headings or name genuine sections, turn the promotional sentence into ordinary prose, and use sequential levels for example sections.",
+      "example_correction": "# WinForms AIPrompt Overview\n\nThe WinForms AIPrompt component connects an application to an AI language model."
+    },
+    {
+      "id": "A08",
+      "severity": "Medium",
+      "category": "Alternative text quality: file identifiers instead of image purpose",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [27, 27],
+          "quote": "![themes-using-themes001](images/themes-using-themes001.png)"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [41, 41],
+          "quote": "![themes-using-themes002](images/themes-using-themes002.png)"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property.md",
+          "lines": [17, 22],
+          "quote": "![tools-visual-style-builder-working-with-visual-style-builder-precedence-example-visibility-property 001]"
+        }
+      ],
+      "impact": "Screen readers announce long hyphenated identifiers without explaining the selected state, action, or visual result. Nearby captions provide some context but do not make the identifiers useful alternatives.",
+      "recommended_remediation": "Inspect each screenshot and describe its purpose in context, complementing rather than repeating the caption. Preserve essential settings and results in prose; do not generate alternatives by replacing hyphens in filenames.",
+      "example_correction": "For the precedence example, describe the documented before/after states: 'BorderPrimitive Visibility is Hidden before overriding the default' and 'BorderPrimitive Visibility is Visible after overriding the default'. Verify these descriptions against the assets before applying them."
+    },
+    {
+      "id": "A09",
+      "severity": "Medium",
+      "category": "Alternative text quality: numerical screenshot result unavailable in text",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/knowledge-base/add-weighted-average-in-pivotgrid.md",
+          "lines": [21, 24],
+          "quote": "![add-weighted-average-in-pivotgrid001](images/add-weighted-average-in-pivotgrid001.png)"
+        }
+      ],
+      "asset": "/home/runner/work/winforms-docs/winforms-docs/knowledge-base/images/add-weighted-average-in-pivotgrid001.png",
+      "asset_observation": "The inspected screenshot shows a GrandTotal row with total Sum of A 14, total Sum of B 20, and Total Sum(A)/Sum(B) of MyCalculatedField 0.70.",
+      "impact": "The prose states the formula, but the file-identifier alternative does not convey the screenshot's demonstrated result. Readers unable to see the image cannot compare their output with that example.",
+      "recommended_remediation": "Add concise purpose-based alt text and a nearby textual result summary. If individual illustrated values are important, supply a small data table; do not imply that the randomized example always produces these exact numbers.",
+      "example_correction": "![Pivot table with the calculated Sum(A)/Sum(B) field](images/add-weighted-average-in-pivotgrid001.png)\n\nIn the illustrated data, the grand totals are A = 14 and B = 20, so the total calculated ratio is 14 / 20 = 0.70. Your generated data can differ."
+    },
+    {
+      "id": "A10",
+      "severity": "Medium",
+      "category": "Link text clarity: identical labels with different destinations",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/chart/building-radcharts/data-binding-radchart.md",
+          "lines": [25, 28],
+          "quote": "[ICollection](http://msdn2.microsoft.com/en-us/library/system.collections.ienumerable.aspx)"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/chart/building-radcharts/data-binding-radchart.md",
+          "lines": [28, 28],
+          "quote": "[ICollection](http://msdn2.microsoft.com/en-us/library/system.collections.icollection.aspx)"
+        }
+      ],
+      "impact": "The same ICollection label leads to two different interface paths, one labeled IEnumerable elsewhere in the article. A links list does not reliably communicate the destination.",
+      "recommended_remediation": "Make the interface label match the intended destination and use a consistent label for each destination. Verify the replacement destination during remediation; this finding does not assert remote link availability.",
+      "example_correction": "[ICollection](http://msdn2.microsoft.com/en-us/library/system.collections.icollection.aspx)"
+    },
+    {
+      "id": "A11",
+      "severity": "Medium",
+      "category": "Link text clarity: generic destination labels",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/dpi-support.md",
+          "lines": [141, 141],
+          "quote": "[this article](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element)"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [29, 29],
+          "quote": "[here]({%slug winforms-tpf-vector-images%})"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property.md",
+          "lines": [15, 15],
+          "quote": "[this article]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/property-precedence-rules%})"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/testing/just-mock/jm-tutorial.md",
+          "lines": [22, 22],
+          "quote": "[here](https://github.com/telerik/winforms-sdk/tree/master/Testing/JustMock)"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/barcodeview/barcode-reader.md",
+          "lines": [16, 16],
+          "quote": "[here]({%slug barcodeview-barcode-types-1d-barcodes %})"
+        }
+      ],
+      "impact": "Here and this article do not identify their destinations in a screen reader links list. Surrounding sentences sometimes provide context, so this is not a claim that every occurrence necessarily fails WCAG 2.4.4.",
+      "recommended_remediation": "Move the meaningful topic or action into the link text. Preserve slug syntax and destination behavior; normalize repeated labels only after resolving equivalent URLs and slugs.",
+      "example_correction": "More information is available in [Vector Images]({%slug winforms-tpf-vector-images%})."
+    },
+    {
+      "id": "A12",
+      "severity": "High",
+      "category": "Embedded content: unnamed video frame",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/installation-and-upgrades/install-using-nuget.md",
+          "lines": [14, 14],
+          "quote": "<iframe width=\"800\" height=\"400\" src=\"https://www.youtube.com/embed/c3m_BLMXNDk\" frameborder=\"0\""
+        }
+      ],
+      "impact": "The source supplies neither a title nor another frame-naming attribute. Assistive technology users may encounter an unnamed frame before the article introduction; a renderer-supplied name was not verified.",
+      "recommended_remediation": "Add a concise title identifying the video, put an introduction before the frame, and explicitly link the existing written installation steps as the non-video path. Verify whether those steps cover the video's substantive instructions; add a transcript or missing explanation if not.",
+      "example_correction": "Introduce the optional installation video, then add title=\"Install Telerik UI for WinForms using NuGet packages\" to the existing iframe. Link readers to the written installation sections on the same page."
+    },
+    {
+      "id": "A13",
+      "severity": "Medium",
+      "category": "Code block accessibility: absent language labels",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/installation-and-upgrades/installation.md",
+          "lines": [20, 36],
+          "quote": "\t```\n\tdotnet tool install -g Telerik.CLI\n\t```"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/installation-and-upgrades/installation.md",
+          "lines": [34, 36],
+          "quote": "<PackageReference Include=\"Telerik.UI.for.WinForms.AllControls\" Version=\"*\" />"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/installation-and-upgrades/install-using-nuget.md",
+          "lines": [42, 44],
+          "quote": "```\nhttps://nuget.telerik.com/v3/index.json\n```"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/getting-started/first-steps.md",
+          "lines": [29, 37],
+          "quote": "\t```\n\tdotnet tool install -g Telerik.CLI\n\t```"
+        }
+      ],
+      "impact": "Language-aware tools and readers cannot distinguish shell commands, XML, and literal text from fence metadata. The commands have surrounding instructions, so these are not findings of entirely unexplained code.",
+      "recommended_remediation": "Use xml for PackageReference, text for a literal URL, and an appropriate shell tag after identifying the intended shell in prose. Retain list indentation and explain expected results where they are not already described.",
+      "example_correction": "```xml\n<PackageReference Include=\"Telerik.UI.for.WinForms.AllControls\" Version=\"*\" />\n```"
+    },
+    {
+      "id": "A14",
+      "severity": "Medium",
+      "category": "Code block accessibility: long examples without a reading guide",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/knowledge-base/add-weighted-average-in-pivotgrid.md",
+          "lines": [37, 187],
+          "quote": "public class MyAggregateValue : AggregateValue"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/knowledge-base/add-weighted-average-in-pivotgrid.md",
+          "lines": [188, 323],
+          "quote": "Public Class MyAggregateValue"
+        }
+      ],
+      "impact": "The C# and VB.NET blocks span approximately 150 and 135 lines respectively. Introductory prose explains the concept, but readers must traverse complete setup and helper classes to locate the relevant accumulation and result calculation.",
+      "recommended_remediation": "Keep a complete copyable example, but precede it with a short reading guide or split it into labeled, explained stages: sample data, calculated field registration, accumulation, merging, and final ratio. Explain the expected outcome in prose without requiring syntax color.",
+      "example_correction": "Read the example in three parts: create the sample data and register the calculated field; accumulate and merge A and B in MyAggregateValue; return their ratio from GetValueOverride. Link these labels to real subsections if the example is split."
+    },
+    {
+      "id": "A15",
+      "severity": "Medium",
+      "category": "Embedded content: text alternatives are not discoverable from the article",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/getting-started/video-onboarding.md",
+          "lines": [24, 45],
+          "quote": "The [Telerik UI for WinForms technical online training](https://www.youtube.com/playlist?list=PLvmaC-XMqeBYZUfnE5_lSGtGAsEynVL4C) has an approximate duration of 2 hours"
+        }
+      ],
+      "impact": "The source has summaries, a playlist, and module labels but no transcript links or equivalent written-lesson mapping. Readers who cannot consume audiovisual content cannot identify an equivalent path from this article.",
+      "recommended_remediation": "Add a transcript or equivalent written tutorial link for each module and each overview video. Verify captions and essential visual descriptions on the remote media, then document where readers can find them; do not claim they are absent without checking.",
+      "example_correction": "For each chapter, list the video title, duration, transcript link, and equivalent written tutorial. Use actual verified destinations rather than placeholder links."
+    },
+    {
+      "id": "A16",
+      "severity": "Low",
+      "category": "Callout structure: empty marker",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/tools/visual-style-builder/working-with-visual-style-builder/precedence-example-visibility-property.md",
+          "lines": [24, 27],
+          "quote": ">note When we set the Visibility property to Visible, we override the default value and the repository item colors become visible.\n>note "
+        }
+      ],
+      "impact": "An empty note marker follows a complete note, leaving the intended callout boundary ambiguous for source readers and custom rendering.",
+      "recommended_remediation": "Remove the empty marker and stray quote line. Keep the existing self-contained note and make the general explanation a separate paragraph or a complete continuation using supported syntax.",
+      "example_correction": ">note Setting Visibility to Visible overrides the default value and makes the repository item colors visible."
+    },
+    {
+      "id": "A17",
+      "severity": "Medium",
+      "category": "Callout structure: operational reminder presented as an untyped quote",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/installation-and-upgrades/install-using-nuget.md",
+          "lines": [89, 89],
+          "quote": ">API keys expire after two years."
+        }
+      ],
+      "impact": "An account-maintenance reminder is expressed as a generic blockquote rather than the designated note/important pattern used elsewhere on the page. Its semantic type is not explicit in the source.",
+      "recommended_remediation": "Use the platform's important callout syntax with a complete action-oriented sentence. Preserve the existing technical information without assessing its correctness.",
+      "example_correction": ">important API keys expire after two years. Set a renewal reminder and record where each key is used."
+    },
+    {
+      "id": "A18",
+      "severity": "Medium",
+      "category": "Content accessibility: diagram-dependent spatial and color references",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/layout/clipping.md",
+          "lines": [15, 19],
+          "quote": "This means that only the area denoted by the rightmost hatched pattern is clipped. The area left visible is fully within the parent rectangle and is denoted by the thick light green line."
+        }
+      ],
+      "impact": "The article already states the general clipping rule, but these explanatory sentences identify specific diagram regions by position and appearance. The alternative names the overall diagram without giving equivalent region relationships.",
+      "recommended_remediation": "Explain the relationship in text before optionally mentioning the visual markers. Expand WPF at first use or link to a definition. This is a prose/diagram-equivalence issue, not a finding about clipping behavior.",
+      "example_correction": "The portion of the child outside the parent rectangle is clipped; the portion inside the parent rectangle remains visible. In the diagram, hatching marks the clipped region and a thick line marks the visible boundary."
+    },
+    {
+      "id": "A19",
+      "severity": "Medium",
+      "category": "Plain language: unexplained abbreviations",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [29, 29],
+          "quote": "SVG images"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [37, 45],
+          "quote": "VS Toolbox"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/security/overview.md",
+          "lines": [34, 34],
+          "quote": "SLO (in business days)"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/security/overview.md",
+          "lines": [56, 56],
+          "quote": "CVSS score"
+        }
+      ],
+      "impact": "Abbreviations are used without first-use expansions, increasing cognitive load for readers unfamiliar with the terminology. Familiarity should not be assumed merely because an article is technical.",
+      "recommended_remediation": "Expand abbreviations on first use and link specialized concepts to a glossary when helpful. Keep identifiers intact and do not expand acronyms mechanically inside code.",
+      "example_correction": "Use Scalable Vector Graphics (SVG), Visual Studio (VS), dynamic-link library (DLL), service-level objective (SLO), and Common Vulnerability Scoring System (CVSS) at first mention."
+    },
+    {
+      "id": "A20",
+      "severity": "Low",
+      "category": "Repository authoring guidance: accessibility checks are not explicit",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/README.md",
+          "lines": [56, 58],
+          "quote": "When adding content or making changes, please use only standard Markdown syntax"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/README.md",
+          "lines": [58, 58],
+          "quote": "The [documentation Wiki](https://github.com/telerik/winforms-docs/wiki) contains the latest authoring guidelines."
+        }
+      ],
+      "impact": "The checked-in contributor entry point asks for a visual preview and links to external guidance but does not give explicit accessibility acceptance criteria. The external wiki was not reviewed, so its contents are not characterized as missing.",
+      "recommended_remediation": "Add a short, version-controlled accessibility checklist linked to the authoritative skill and the existing authoring guidance. Require meaningful alternatives, logical outlines, descriptive links, simple tables, named callouts, and explained language-tagged code in reviews.",
+      "example_correction": "Before requesting review, check the heading outline, read image alternatives and links out of context, linearize tables, verify media text alternatives, and confirm that examples can be understood without syntax color."
+    },
+    {
+      "id": "A21",
+      "severity": "High",
+      "category": "Link text clarity: repeated generic labels across a feature catalogue",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/gridview/overview.md",
+          "lines": [28, 28],
+          "quote": "[Read more]({%slug winforms/gridview/styling-and-appearance/four-ways-to-customize-radgridview-appearance%})"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/gridview/overview.md",
+          "lines": [30, 30],
+          "quote": "[Read more]({%slug winforms/gridview/fundamentals/ui-virtualization%})"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/gridview/overview.md",
+          "lines": [38, 38],
+          "quote": "[Read more]({%slug winforms/gridview/filtering/basic-filtering%})"
+        }
+      ],
+      "impact": "A large feature catalogue repeatedly uses the same Read more label for different topics. Link-list navigation cannot distinguish the destinations without returning to each surrounding paragraph; this is more pervasive than an isolated generic link.",
+      "recommended_remediation": "Use the feature or linked task as the link label. Keep the introductory feature descriptions, but make each destination independently recognizable. This finding concerns documentation links, not the accessibility of any listed feature.",
+      "example_correction": "[GridView UI virtualization]({%slug winforms/gridview/fundamentals/ui-virtualization%})"
+    },
+    {
+      "id": "A22",
+      "severity": "Medium",
+      "category": "Table accessibility: inconsistent columns in a video layout table",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/gridview/overview.md",
+          "lines": [73, 75],
+          "quote": "| RELATED VIDEOS |  |\n|----|----|"
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/gridview/overview.md",
+          "lines": [75, 75],
+          "quote": "|[RadGridView for WinForms Webinar](https://www.telerik.com/videos/radgridview-for-winforms-webinar)|This video provides an in-depth overview of Telerik's RadGridView for WinForms|![Telerik UI for WinForms RadGridView webinar thumbnail for the component overview video](images/gridview-overview002.png)|"
+        }
+      ],
+      "impact": "The header and separator have two columns, while the content has three. Besides using a table for layout, the source leaves the thumbnail column without a corresponding header; rendering may discard or otherwise handle the excess cell.",
+      "recommended_remediation": "Replace the table with a Related videos section containing the named webinar link and its summary. Include a verified written alternative and omit a redundant thumbnail; do not rely on a particular renderer's recovery of malformed rows.",
+      "example_correction": "## Related videos\n\n[RadGridView for WinForms Webinar](https://www.telerik.com/videos/radgridview-for-winforms-webinar) provides an in-depth overview. Add a verified transcript or equivalent written overview link."
+    },
+    {
+      "id": "A23",
+      "severity": "Medium",
+      "category": "Color and formatting independence: visual numbering without list semantics",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/testing/appium/getting-started.md",
+          "lines": [16, 24],
+          "quote": "1\\. Run **WinAppDriver.exe** as an administrator and leave it running."
+        },
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+          "lines": [74, 80],
+          "quote": "1\\. ThemeResolutionService.**ControlDefaultThemeName** - globally sets default theme"
+        }
+      ],
+      "impact": "Escaping the period prevents Markdown from producing an ordered list. The visual sequence remains readable as text, but assistive technology users lose semantic list navigation and item-count information.",
+      "recommended_remediation": "Use unescaped ordered-list markers. Keep each step's explanatory prose, screenshots, and examples inside the list item with appropriate indentation; preserve the intended sequence.",
+      "example_correction": "1. Run **WinAppDriver.exe** as an administrator and leave it running.\n\n   Note its listening address for use in a later step."
+    },
+    {
+      "id": "A24",
+      "severity": "Medium",
+      "category": "Link text clarity: bare repository URLs",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/chartview/developer-focused-examples.md",
+          "lines": [18, 19],
+          "quote": "|[Negative Area Chart]({%slug chartview-negetive-area%})|https://github.com/telerik/winforms-sdk/tree/master/ChartView/NegativeAreaChart|"
+        }
+      ],
+      "impact": "Long source URLs are presented without destination-specific labels. If autolinked, they produce cumbersome link announcements; if not, they remain raw text rather than a clearly named example link.",
+      "recommended_remediation": "Wrap each repository URL in a label naming the example and distinguish it from the adjacent knowledge-base article link.",
+      "example_correction": "[Negative Area Chart SDK example](https://github.com/telerik/winforms-sdk/tree/master/ChartView/NegativeAreaChart)"
+    },
+    {
+      "id": "A25",
+      "severity": "Low",
+      "category": "Table accessibility: unexplained empty data cell",
+      "evidence": [
+        {
+          "file": "/home/runner/work/winforms-docs/winforms-docs/controls/chartview/developer-focused-examples.md",
+          "lines": [16, 20],
+          "quote": "|[Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})||"
+        }
+      ],
+      "impact": "The SDK Example cell is empty, leaving readers to infer whether an example is unavailable, omitted, or not applicable.",
+      "recommended_remediation": "Determine whether an example should be linked. If none is provided, state that explicitly rather than leaving the cell blank; do not invent a missing destination.",
+      "example_correction": "|[Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})|No SDK example listed|"
+    }
+  ],
+  "Repository-Wide Patterns": {
+    "inventory": {
+      "article_candidate_files": 3116,
+      "directories": {
+        "root_introduction": 1,
+        "ai-tools": 8,
+        "analytics": 1,
+        "controls": 2264,
+        "core": 7,
+        "deployment-and-distribution": 2,
+        "getting-started": 3,
+        "installation-and-upgrades": 17,
+        "integration-with-other-telerik-products": 2,
+        "knowledge-base": 599,
+        "licensing": 5,
+        "security": 2,
+        "styling-and-appearance": 14,
+        "telerik-presentation-framework": 115,
+        "testing": 18,
+        "tools": 38,
+        "visual-studio-integration": 20
+      },
+      "source_indicators": [
+        {"pattern": "More than one ATX H1", "occurrences": 1423, "affected_files": 1423},
+        {"pattern": "No ATX H1", "occurrences": 400, "affected_files": 400},
+        {"pattern": "H1 See Also", "occurrences": 1626, "affected_files": 1626},
+        {"pattern": "Downward heading jump greater than one level", "occurrences": 1358, "affected_files": 994},
+        {"pattern": "Inline Markdown image", "occurrences": 5352, "affected_files": 2218},
+        {"pattern": "Image alt exactly equals target basename", "occurrences": 272, "affected_files": 158},
+        {"pattern": "Generic inline link label", "occurrences": 370, "affected_files": 273},
+        {"pattern": "Fenced code block", "occurrences": 2569, "affected_files": 754},
+        {"pattern": "Fenced code block without a language label", "occurrences": 13, "affected_files": 6},
+        {"pattern": "Iframe element", "occurrences": 3, "affected_files": 2},
+        {"pattern": "Iframe without a source title attribute", "occurrences": 1, "affected_files": 1},
+        {"pattern": "External snippet inclusion line", "occurrences": 6340, "affected_files": 1199},
+        {"pattern": "Pipe-table separator line", "occurrences": 1345, "affected_files": 987},
+        {"pattern": "Pipe-table row with an empty-cell candidate", "occurrences": 222, "affected_files": 109},
+        {"pattern": "HTML table tag line", "occurrences": 71, "affected_files": 62},
+        {"pattern": "Multiple HTML table openings on one line", "occurrences": 2, "affected_files": 1},
+        {"pattern": "Designated callout marker line", "occurrences": 1389, "affected_files": 955},
+        {"pattern": "Empty callout marker line candidate", "occurrences": 15, "affected_files": 15},
+        {"pattern": "Alternative callout label candidate", "occurrences": 7, "affected_files": 7},
+        {"pattern": "Color or spatial vocabulary candidate line", "occurrences": 144, "affected_files": 81},
+        {"pattern": "Bare prose URL candidate line", "occurrences": 32, "affected_files": 24}
+      ],
+      "count_interpretation": [
+        "Counts are non-additive: the same article can match several indicators, and H1 See Also also includes articles without another H1.",
+        "Generic labels matched case-insensitive here, click here, this article, this link, read more, learn more, and more in inline Markdown links.",
+        "Image-basename equality is a narrow authoring-smell check, not a complete assessment of alt quality. Topic-only labels can still be insufficient without matching a filename.",
+        "No empty inline Markdown image alternatives were found by this scan. This does not establish that all image alternatives are meaningful, all HTML images are accessible, or no decorative alternatives are appropriate.",
+        "Potential HTML img matches inside inline code and URL/slug spelling differences were excluded from conclusions about missing alternatives or duplicate destinations.",
+        "Language-labeled text prompt blocks count as code fences for the skill's annotation check even when they are not executable.",
+        "The 6,340 snippet inclusion lines match literal <snippet tags, not slug links or Liquid includes; they do not represent 6,340 confirmed accessibility violations.",
+        "Supplemental table indicators count source lines, not unique tables. Empty-cell candidates require checking actual cell content, and multiple table openings on one line are only a narrow nested-table signal.",
+        "An empty callout marker can introduce content on a following line. Review its surrounding block before treating it as an empty admonition.",
+        "Designated callout markers match note, tip, important, warning, or caution after >; alternative-label candidates match plain or quoted Note:, Warning:, and Important: forms, including bold variants. Existing caution syntax is not itself a violation.",
+        "Color/spatial candidates match red, green, blue, yellow, orange, purple, hatched, rightmost, or leftmost. Named themes and explained color values are not automatically violations.",
+        "Bare prose URL candidates are counted after masking inline code, inline Markdown link/image constructs, and HTML tags. Malformed links and literal endpoints can still match, so review is required."
+      ]
+    },
+    "recurring_authoring_issues": [
+      {
+        "pattern": "Legacy related-links headings and example-heading levels",
+        "findings": ["A05", "A06", "A07"],
+        "bulk_remediation": "Audit the title-generation contract, then batch-review See Also level changes and heading jumps. Preserve public anchors and check custom code-caption rendering before changing example headings.",
+        "automation_suitability": "High for detection; human or renderer review is required for exceptions and structural corrections."
+      },
+      {
+        "pattern": "Filename or topic labels substituted for equivalent image information",
+        "findings": ["A08", "A09", "A18"],
+        "bulk_remediation": "Create a prioritized image-description backlog grouped by article family. Fix instructional and result-bearing figures first; review assets rather than generating alt from names.",
+        "automation_suitability": "Moderate for candidate detection, low for judging informational equivalence or decorative intent."
+      },
+      {
+        "pattern": "Legacy metadata, nested tables, and video layout tables",
+        "findings": ["A01", "A02", "A03", "A04", "A22", "A25"],
+        "bulk_remediation": "Replace repeated environment tables with a reviewed accessible pattern; replace Related videos layout tables with lists. Flatten nested data tables case by case.",
+        "automation_suitability": "High for detecting nested tables and absent header cells; semantic restructuring requires review."
+      },
+      {
+        "pattern": "Generic links copied into tutorials and callouts",
+        "findings": ["A10", "A11", "A21", "A24"],
+        "bulk_remediation": "Replace labels by the linked task or destination, including reusable licensing notices in getting-started articles. Resolve slugs and canonical URLs before comparing destinations.",
+        "automation_suitability": "High for generic-label detection; destination naming and equivalence require context."
+      },
+      {
+        "pattern": "Mixed code-presentation systems",
+        "findings": ["A13", "A14"],
+        "bulk_remediation": "Correct the small unlabeled-fence backlog, then review long examples and the rendered C#/VB snippet tabs. Do not flag external snippet includes as unlabeled Markdown fences.",
+        "automation_suitability": "High for local fence metadata; external snippet output and contextual explanations need integration and manual checks."
+      },
+      {
+        "pattern": "Media summaries without discoverable equivalent lessons",
+        "findings": ["A12", "A15"],
+        "bulk_remediation": "Maintain video-to-transcript/written-lesson mappings and verify existing caption availability before asserting gaps.",
+        "automation_suitability": "High for iframe title presence, moderate for alternative-link presence, low for caption and visual-description quality."
+      },
+      {
+        "pattern": "Inconsistent callout boundaries and undefined abbreviations",
+        "findings": ["A16", "A17", "A19", "A23"],
+        "bulk_remediation": "Normalize empty or untyped callout markers and introduce a small first-use glossary. Avoid rewriting identifiers and product names.",
+        "automation_suitability": "Moderate; use advisory rules and explicit exceptions rather than blanket rewrites."
+      }
+    ]
+  },
+  "Recommendations": {
+    "Immediate (0-30 days)": [
+      {
+        "owner": "Documentation maintainers",
+        "action": "Remediate High findings A01, A03, A04, A12, and A21; repair the associated article outlines and related image descriptions while those articles are open.",
+        "completion_check": "Review the generated table reading order, frame name, article heading list, and text alternatives with assistive technology or equivalent accessibility-tree inspection."
+      },
+      {
+        "owner": "Documentation and media owners",
+        "action": "Verify the three embedded videos' caption/transcript availability and map onboarding lessons to equivalent text. Fill confirmed gaps rather than treating remote media as automatically inaccessible.",
+        "completion_check": "Each embedded video has a purpose, a descriptive frame title, and a verified discoverable equivalent route to substantive information."
+      },
+      {
+        "owner": "Documentation platform owners",
+        "action": "Document whether article templates inject H1 headings and how snippet, callout, article-card, and caption extensions render.",
+        "completion_check": "Representative standard and knowledge-base pages have one rendered H1 and a logical outline without duplicate template/source titles."
+      },
+      {
+        "owner": "Documentation reviewers",
+        "action": "Adopt the proposed accessibility review checklist and fix the 13 unlabeled local fences after confirming the intended content language.",
+        "completion_check": "Changed examples identify their language or text format and remain copyable."
+      }
+    ],
+    "Short Term (1-3 months)": [
+      {
+        "owner": "Documentation maintainers",
+        "action": "Work through heading, link-label, image-description, and environment-table backlogs in small article-family batches.",
+        "completion_check": "Track confirmed fixes separately from raw search matches, protect existing anchors, and require human review of image equivalence."
+      },
+      {
+        "owner": "Documentation tooling owners",
+        "action": "Introduce changed-file Markdown validation with a baseline for legacy debt and explicit support for Liquid, slugs, four-backtick fences, snippets, and custom admonitions.",
+        "completion_check": "New or edited articles cannot introduce confirmed heading, generic-link, fence-language, table-header, or iframe-name regressions; known syntax is not misclassified."
+      },
+      {
+        "owner": "Documentation editors",
+        "action": "Add reading guides to long examples, replace visual-only references with named concepts, and define important abbreviations at first use.",
+        "completion_check": "A reader can follow each reviewed procedure without screenshots, color, positional instructions, or syntax highlighting."
+      }
+    ],
+    "Long Term (3+ months)": [
+      {
+        "owner": "Documentation platform and accessibility reviewers",
+        "action": "Extend the source audit with rendered documentation checks for headings, landmarks, table semantics, image alternatives, callouts, code tabs, and article cards.",
+        "completion_check": "Perform keyboard-only and screen reader documentation tasks, zoom/reflow and high-contrast checks on representative generated articles; do not test WinForms product behavior as part of this audit."
+      },
+      {
+        "owner": "Documentation leadership",
+        "action": "Schedule rotating human audits across article families and maintain an owned backlog of text-equivalence and media issues.",
+        "completion_check": "Publish coverage, confirmed severity, resolved findings, recurrence rate, and reviewed exceptions without converting a biased sample score into repository compliance."
+      },
+      {
+        "owner": "Documentation and media owners",
+        "action": "Make transcript, caption, visual-description, and written-alternative maintenance part of documentation asset publishing.",
+        "completion_check": "New media and substantive media updates receive an accessibility review alongside the linked article."
+      }
+    ]
+  },
+  "Authoring Guideline Improvements": {
+    "accessibility_guidance": [
+      "Use the authoritative skill's eight dimensions as the review rubric; supplement them with explicit media-alternative and screenshot-equivalence checks.",
+      "Treat severity as reader impact, not a direct translation of a rubric score. Record uncertainty about template and external-media behavior.",
+      "Teach authors to write the instruction and expected result first, then use an image as supporting evidence rather than the sole information source.",
+      "For complex diagrams, use concise alt text plus an adjacent full explanation. For decorative images, use an empty alternative only after confirming they convey no information."
+    ],
+    "markdown_authoring_standards": [
+      "Define one rendered article H1 and sequential section levels, with template-specific source rules. Do not use empty headings or headings solely for visual emphasis.",
+      "Require destination-specific link labels. Keep names consistent for the same destination, and distinguish downloads, videos, and external resources when relevant.",
+      "Use tables only for genuine data relationships. Supply meaningful headers, fill meaningful empty values explicitly, introduce complex data, and avoid nested tables.",
+      "Annotate every local fence, introduce its purpose, define placeholders, and explain the expected outcome. Keep long examples navigable and do not depend on syntax color.",
+      "Use the documentation platform's supported note, tip, important, warning, or caution conventions consistently. Confirm renderer support rather than blindly replacing existing supported types.",
+      "Replace manual checkmarks, spacing, and pseudo-lists with semantic Markdown lists where they express a list. Use names and relationships instead of above/below/left/right or color alone.",
+      "Prefer direct imperative steps and short sentences; expand acronyms on first use and link specialized terminology to definitions.",
+      "For media, require descriptive frame titles, introductory purpose, discoverable transcripts or equivalent written lessons, and verified captions/visual descriptions as appropriate."
+    ],
+    "documentation_review_process": [
+      "Review the heading outline and links list independently of visual layout.",
+      "Read an article with images hidden and verify that critical actions, values, and outcomes remain available.",
+      "Linearize tables and ensure label/value and state/result relationships still make sense.",
+      "Check the generated documentation, including custom snippets, code tabs, callouts, and cards; a generic Markdown preview is not sufficient.",
+      "Add periodic assistive technology review of documentation tasks and document exceptions with an owner and rationale."
+    ],
+    "contributor_instructions": [
+      "Add a concise accessibility checklist to the checked-in contributor entry point and link to maintained detailed guidance and the scoring skill.",
+      "Ask contributors to describe image purpose, expected example outcomes, and media alternatives in review requests.",
+      "Provide reviewed examples for standard articles, knowledge-base metadata, complex diagrams, code tabs, and media embeds.",
+      "State explicitly that documentation accessibility review does not certify the described product's accessibility."
+    ]
+  },
+  "Automation Opportunities": [
+    {
+      "check": "Markdown structure",
+      "suggested_tool": "A Markdown linter with MD001, MD025, MD041, and MD042-style rules plus a custom empty-heading check.",
+      "enforcement": "Start with changed-file checks and a documented legacy baseline. Configure H1 rules per renderer/template contract and keep skips within code samples out of heading checks.",
+      "human_review": "Check intended hierarchy, meaningful labels, rendered title injection, and public-anchor preservation.",
+      "related_findings": ["A05", "A06", "A07"]
+    },
+    {
+      "check": "Image alternatives",
+      "suggested_tool": "Markdown AST validation plus HTML inspection for missing alternatives; advisory checks for filename-like and generic alt text.",
+      "enforcement": "Flag absent alt attributes and review empty alternatives against explicitly decorative intent. Keep basename matches advisory; exclude HTML shown as sample code.",
+      "human_review": "Inspect the actual asset and adjacent text for equivalent information and avoid redundant captions.",
+      "related_findings": ["A08", "A09", "A18"]
+    },
+    {
+      "check": "Link clarity",
+      "suggested_tool": "Markdown AST rules for generic labels, URL-only prose links, and repeated label/destination mappings.",
+      "enforcement": "Normalize slug whitespace and canonical URLs before comparing destinations; exclude image syntax, code, and literal endpoints. Treat alternate labels for one destination as editorial candidates.",
+      "human_review": "Decide whether each link's purpose is meaningful and whether destination variants are equivalent.",
+      "related_findings": ["A10", "A11", "A21", "A24"]
+    },
+    {
+      "check": "Table semantics",
+      "suggested_tool": "Markdown table and rendered HTML validation for empty headers, absent th elements, and nested tables.",
+      "enforcement": "Require reviewed header associations and flag layout-only or excessive-width candidates for review rather than automatically converting data.",
+      "human_review": "Read tables linearly and confirm that row/column relationships, context, and meaningful empty values remain understandable.",
+      "related_findings": ["A01", "A02", "A03", "A04", "A22", "A25"]
+    },
+    {
+      "check": "Code presentation",
+      "suggested_tool": "MD040-style fence-language checks, block-length advisory thresholds, and documentation snippet-build validation.",
+      "enforcement": "Support three- and four-backtick fences, tilde fences, list indentation, and existing C#/VB.NET/XML tags. Validate generated snippet tabs separately from local fences.",
+      "human_review": "Check introductions, placeholder descriptions, reading guides, and expected outcomes; line count alone is not an accessibility failure.",
+      "related_findings": ["A13", "A14"]
+    },
+    {
+      "check": "Callouts and plain language",
+      "suggested_tool": "Custom admonition validation and an optional prose linter with a project glossary.",
+      "enforcement": "Flag empty markers and untyped operational notices. Use advisory checks for long sentences, unexplained abbreviations, and appearance-only references with code and terminology exceptions.",
+      "human_review": "Choose the correct callout severity and judge whether visual references have a complete textual explanation.",
+      "related_findings": ["A16", "A17", "A18", "A19", "A23"]
+    },
+    {
+      "check": "Media alternatives",
+      "suggested_tool": "HTML validation for iframe titles and a maintained media-alternative manifest or equivalent publishing metadata.",
+      "enforcement": "Require nonempty purpose-specific titles and a discoverable transcript or equivalent written lesson for new instructional media.",
+      "human_review": "Verify remote caption quality, visual information equivalence, and documentation-player keyboard usability; source text alone cannot establish these.",
+      "related_findings": ["A12", "A15"]
+    },
+    {
+      "check": "Rendered documentation accessibility",
+      "suggested_tool": "Axe-core or an equivalent documentation-page accessibility checker integrated with the actual documentation build.",
+      "enforcement": "Proposed follow-up only; no new dependencies or CI jobs are introduced by this audit. Scan representative generated pages and changed-page previews, including custom components.",
+      "human_review": "Use screen readers, keyboard-only reading tasks, zoom/reflow, and contrast checks to validate issues that automation cannot establish.",
+      "related_findings": ["A01", "A03", "A05", "A06", "A12"]
+    }
+  ],
+  "article_scores": [
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/telerik-presentation-framework/layout/clipping.md",
+      "overall_score": "3.7",
+      "dimensions": {
+        "heading_structure": {
+          "score": 3,
+          "rationale": "The title and See Also are both H1, although there is no deep section hierarchy.",
+          "violations": ["Line 21: See Also is a second H1 rather than a subordinate related-links section."]
+        },
+        "alternative_text": {
+          "score": 3,
+          "rationale": "The alternative identifies the diagram's topic but does not explain the regions referenced in the prose.",
+          "violations": ["Line 19: the diagram alternative omits which child region is clipped and which remains visible."]
+        },
+        "link_text_clarity": {
+          "score": 5,
+          "rationale": "Related links use their destination topics as labels.",
+          "violations": []
+        },
+        "table_accessibility": {
+          "score": 5,
+          "rationale": "The article contains no tables.",
+          "violations": []
+        },
+        "plain_language": {
+          "score": 3,
+          "rationale": "The opening paragraph is dense and uses WPF without expansion.",
+          "violations": ["Line 15: WPF is not expanded on first use and several concepts are packed into one paragraph."]
+        },
+        "formatting_independence": {
+          "score": 3,
+          "rationale": "The general rule is present, but region-specific explanation refers to visual position, hatching, and a light green line.",
+          "violations": ["Line 15: rightmost hatched pattern and thick light green line identify regions without an equivalent region-by-region explanation."]
+        },
+        "callout_structure": {
+          "score": 5,
+          "rationale": "The article contains no callouts.",
+          "violations": []
+        },
+        "code_block_accessibility": {
+          "score": 5,
+          "rationale": "The article contains no code blocks.",
+          "violations": []
+        }
+      }
+    },
+    {
+      "file": "/home/runner/work/winforms-docs/winforms-docs/styling-and-appearance/using-default-themes.md",
+      "overall_score": "2.1",
+      "dimensions": {
+        "heading_structure": {
+          "score": 1,
+          "rationale": "An empty heading, a skipped level, and a second H1 make the source outline inconsistent.",
+          "violations": ["Line 19: empty H2.", "Line 47: H4 follows H2 without an H3.", "Line 91: See Also is a second H1."]
+        },
+        "alternative_text": {
+          "score": 1,
+          "rationale": "All four image alternatives use filename-style identifiers rather than purpose-based descriptions.",
+          "violations": ["Lines 17, 27, 41, and 88: hyphenated identifiers and numeric suffixes do not describe the demonstrated action or state."]
+        },
+        "link_text_clarity": {
+          "score": 3,
+          "rationale": "Most links are descriptive, but one note links with here.",
+          "violations": ["Line 29: the Vector Images destination is labeled here."]
+        },
+        "table_accessibility": {
+          "score": 1,
+          "rationale": "The only table positions a video beside a thumbnail and has an empty column header.",
+          "violations": ["Lines 15-17: layout-only table with an unnamed thumbnail column."]
+        },
+        "plain_language": {
+          "score": 3,
+          "rationale": "The steps are generally understandable, but abbreviations and long explanatory paragraphs add cognitive load.",
+          "violations": ["Line 29: SVG is not expanded.", "Lines 37 and 45: VS and DLL are not expanded on first use."]
+        },
+        "formatting_independence": {
+          "score": 3,
+          "rationale": "The priority sequence uses visual numbering without semantic list markup.",
+          "violations": ["Lines 76-80: escaped periods turn the three priority entries into paragraphs rather than an ordered list."]
+        },
+        "callout_structure": {
+          "score": 3,
+          "rationale": "Note syntax is consistent, but four consecutive release-history notes interrupt the procedural flow.",
+          "violations": ["Lines 29-35: consecutive notes contain ordinary release-history material better grouped into normal prose or a version-history section."]
+        },
+        "code_block_accessibility": {
+          "score": 5,
+          "rationale": "Both language-labeled examples are introduced with prerequisite context and a heading describing the outcome.",
+          "violations": []
+        }
+      }
+    }
+  ]
+}
