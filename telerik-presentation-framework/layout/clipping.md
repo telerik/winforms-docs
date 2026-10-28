@@ -12,13 +12,19 @@ previous_url: tpf-layout-clipping
 
 # Clipping
 
-Clipping refers to leaving out certain areas of an element that fall outside of a specified clipping rectangle. Unlike WPF, which uses the arrange rectangle as the clipping rectangle, the Telerik Presentation Framework uses the parent rectangle. This means that only the area denoted by the rightmost hatched pattern is clipped. The area left visible is fully within the parent rectangle and is denoted by the thick light green line. Generally, the part of a child located outside of its parent bounds will be clipped if the __ClipDrawing__ property of the parent is set to true.
+Clipping hides the parts of an element that fall outside a specified clipping rectangle. Unlike Windows Presentation Foundation (WPF), which uses the arrange rectangle as the clipping rectangle, the Telerik Presentation Framework uses the parent rectangle. When the parent's `ClipDrawing` property is `true`, it clips the portion of a child that extends beyond the parent's bounds.
 
-The diagram below shows a child with size greater than the size allocated for its display in order to show the clipping policy implemented by the Telerik Presentation Framework.
+The diagram illustrates three related rectangles:
 
-![Telerik UI for WinForms Telerik Presentation Framework clipping diagram showing a child larger than its parent rectangle](images/tpf-layout-clipping001.png)
+* The **parent rectangle** defines the clipping boundary.
+* The **final rectangle for child arrange** is the space allocated to the child during layout. It is smaller than the child's desired size.
+* The **child desired size** extends beyond both the arrange rectangle and the parent's bounds.
 
-# See Also
+The portion of the child inside the parent remains visible, including the portion outside its arrange rectangle. Only the portion outside the parent is clipped. Visibility therefore depends on the parent's bounds, not on whether the child fits in its arrange rectangle.
+
+![Clipping diagram: a child exceeds its allocated arrange rectangle; its overlap with the parent remains visible, while its extension beyond the parent is clipped](images/tpf-layout-clipping001.png)
+
+## See Also
 * [Custom Layouts]({%slug winforms/telerik-presentation-framework/layout/custom-layouts%})
 
 * [Element Offset Calculations]({%slug winforms/telerik-presentation-framework/layout/element-offset-calculations%})
@@ -34,4 +40,3 @@ The diagram below shows a child with size greater than the size allocated for it
 * [RadControl Testing Considerations]({%slug winforms/telerik-presentation-framework/layout/radcontrol-testing-considerations%})
 
 * [Sample Arrange Stage Scenarios]({%slug winforms/telerik-presentation-framework/layout/sample-arrange-stage-scenarios%})
-

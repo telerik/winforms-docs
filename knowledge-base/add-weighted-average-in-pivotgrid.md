@@ -21,9 +21,11 @@ res_type: kb
 A common formula for finding the weighted average is the sum of all the variables multiplied by its weight, then divided by the sum of the weights. 
 For simplicity of the calculations, this article will introduce an approach how to add a field in RadPivotGrid that calculates **Sum(A)/Sum(B)** considering that **A** and **B** are numeric columns in the DataSource. 
  
-![add-weighted-average-in-pivotgrid001](images/add-weighted-average-in-pivotgrid001.png)
+![RadPivotGrid grouped by Category and Date, showing Sum of A, Sum of B, and the custom Sum(A) / Sum(B) aggregate for Cat0, Cat1, and GrandTotal](images/add-weighted-average-in-pivotgrid001.png)
 
- 
+In the screenshot, the GrandTotal row shows Sum of A = 14 and Sum of B = 20. The custom grand total is therefore 14 / 20 = 0.70. It divides the accumulated totals rather than averaging the displayed ratios. The sample generates random values, so your results can differ.
+
+For a weighted average, A must contain each value multiplied by its weight, and B must contain the corresponding weight. This sample demonstrates the ratio-of-sums calculation using randomly generated A and B values.
 
 ## Solution 
 
@@ -32,6 +34,19 @@ The default options in the **AggregateFunctions** enumeration allows you to defi
 The **AccumulateOverride** method is expected to accumulate the values, e.g. to sum the values. The **AccumulateOverride** in the aggregate class will be called asynchronously for each of the values extracted from the data source. Then, the **MergeOverride** method is responsible for merging the accumulated value with the values for any child aggregates they present should be.  
 
 To achieve a custom aggregate for **Sum(A)/Sum(B)**, we will need an empty [Calculated Field]({%slug winforms/pivotgrid/calculated-fields%})  in order to have access to the entire DataRow in the **AccumulateOverride** method of the custom **AggregateValue** which is necessary to achieve the desired result.
+
+### Code reading guide
+
+The C# and VB.NET examples implement the same four parts, in this order:
+
+1. The form constructor creates sample data, groups it by Category and Date, and registers the calculated field and aggregate descriptions. `StringFormat = "N2"` displays the ratio with two decimal places.
+2. `MyCalculatedField` provides the empty calculated field used to access each complete data row.
+3. `MyAggregateValue` maintains `sumA` and `sumB`. `AccumulateOverride` adds row values, `MergeOverride` combines child totals, and `GetValueOverride` returns their ratio. If `sumB` is zero, it returns zero.
+4. `MyAggregateFunction` creates aggregate values and supplies the display name and cloning behavior.
+
+### C# implementation
+
+The following C# example contains the form setup and all three custom classes:
  
 
 ````C#
@@ -185,6 +200,11 @@ public class MyAggregateFunction : NumericFormatAggregateFunction
  
  
 ````
+
+### VB.NET implementation
+
+The following VB.NET example contains the equivalent form setup and custom classes:
+
 ````VB.NET
 Private dt As DataTable = New DataTable()
 Private rand As Random = New Random()
@@ -322,8 +342,7 @@ End Class
 
 ```` 
 
-# See Also
+## See Also
 
 * [Custom Aggregation]({%slug winforms/pivotgrid/custom-aggregation%}) 
 * [Calculated Fields]({%slug winforms/pivotgrid/calculated-fields%}) 
-
