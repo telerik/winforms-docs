@@ -12,26 +12,19 @@ res_type: kb
 
 ## Environment
  
-<table>
-    <tr>
-        <td>Product Version</td>
-        <td>2018.3.1016</td>
-    </tr>
-    <tr>
-        <td>Product</td>
-        <td>RadGridView for WinForms</td>
-    </tr>
-    <tr>
-        <td>Author</td>
-        <td>Desislava Yordanova</td>
-    </tr>
-</table>
+| Field | Value |
+|---|---|
+| Product Version | 2018.3.1016 |
+| Product | RadGridView for WinForms |
+| Author | [Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova) |
 
 ## Description
 
 In version R3 2018 SP1 (2018.3.1016) we have introduced a new feature in RadGridView, displaying a [caption]({%slug winforms/gridview/caption%}). This requires a changing the element hierarchy and if you have existing code that accesses the elements by index (can be serialized at design time as well) you will get an exception. 
 
-#### Access the elements by index
+### Access the elements by index
+
+The following examples access `GroupPanelElement` through child collection indexes. These indexes depend on the element hierarchy.
 
 ````C#
 var groupPanel = this.radGridView1.GridViewElement.Children[0].Children[0].Children[0] as GroupPanelElement;
@@ -44,7 +37,9 @@ Dim groupPanel = TryCast(Me.radGridView1.GridViewElement.Children(0).Children(0)
 
 This causes exception because the index of the GroupPanelElement is no longer valid. One solution to this is to change the index to 1.
 
-Another solution is to use the property to access the element. For example:
+### Access an element by property
+
+Use the `GroupPanelElement` property to access the element without depending on its index:
 
 ````C#
 
@@ -57,7 +52,9 @@ Dim groupPanel = this.radGridView1.GridViewElement.GroupPanelElement
 
 ````
 
-If the is no property you can get the element by type by using the following method:
+### Access an element by type
+
+If there is no property, use `GetChildrenByType` to find the element by its type:
 
 ````C#
 
@@ -70,4 +67,3 @@ Dim groupPanel = Me.radGridView1.GridViewElement.GetChildrenByType(GetType(Group
 
 
 ````
-

@@ -13,8 +13,6 @@ previous_url: /help/winforms/chart-building-radcharts-data-binding-radchart.html
 
 
 
-## 
-
 Many business applications rely on database data, for example MS SQL, Oracle, MySQL, Access ODBC as well as XML data and business objects in multiple-tier scenarios.  RadChart allows automatic binding to all of these using either standard Microsoft supplied data source controls SqlDataSource, AccessDataSource, XmlDataSource and ObjectDataSource or any [DataSourceControl](http://msdn2.microsoft.com/en-us/library/system.web.ui.datasourcecontrol.aspx) implementation. The end result is shown in the chart immediately at design-time.
 
 You can also bind __RadChart__ to a data source that implements one of the following interfaces: 
@@ -22,7 +20,7 @@ You can also bind __RadChart__ to a data source that implements one of the foll
 * [IEnumerable](http://msdn2.microsoft.com/en-us/library/system.collections.ienumerable.aspx):  Supports simple iteration of a collection. See the MSDN article for more on [IEnumerable](http://msdn2.microsoft.com/en-us/library/system.collections.ienumerable.aspx). 
 
 
-* [ICollection](http://msdn2.microsoft.com/en-us/library/system.collections.ienumerable.aspx): Extends [IEnumerable](http://msdn2.microsoft.com/en-us/library/system.collections.ienumerable.aspx) and supports size, enumerator, and synchronization methods for collections. 
+* [ICollection](http://msdn2.microsoft.com/en-us/library/system.collections.icollection.aspx): Extends [IEnumerable](http://msdn2.microsoft.com/en-us/library/system.collections.ienumerable.aspx) and supports size, enumerator, and synchronization methods for collections. 
 
 
 * [IList](http://msdn2.microsoft.com/en-us/library/system.collections.ilist(VS.71).aspx): Extends [ICollection](http://msdn2.microsoft.com/en-us/library/system.collections.icollection.aspx) and is the base class for lists. 
