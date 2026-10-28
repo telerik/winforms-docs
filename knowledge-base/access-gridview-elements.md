@@ -16,7 +16,7 @@ res_type: kb
 |---|---|
 | Product Version | 2018.3.1016 |
 | Product | RadGridView for WinForms |
-| Author | Desislava Yordanova |
+| Author | [Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova) |
 
 ## Description
 
