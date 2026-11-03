@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Component Assistant Overview
 page_title: Telerik UI for WinForms Component Assistant - Overview, Intended Use, Coverage, and Privacy
 description: Overview of the Telerik UI for WinForms Component Assistant. Covers intended use cases, supported components and assemblies, code generation capabilities, privacy and data handling, recommendations, and integration.
 components: ["general"]

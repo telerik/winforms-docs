@@ -1726,6 +1726,9 @@ meta:
   ai-tools/agentic-ui-generator/component-assistant-prompt-library:
     title: Component Assistant - Prompt Library
     position: 1
+  ai-tools/agentic-ui-generator/converter:
+    title: Converter
+    position: 2
   ai-tools/agentic-ui-generator/upgrade-assistant:
     title: Upgrade Assistant
     position: 4  
