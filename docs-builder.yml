@@ -1717,18 +1717,21 @@ meta:
   ai-tools:
     title: AI Tools
     position: 4
-  ai-tools/mcp-server:
-    title: MCP Server
+  ai-tools/agentic-ui-generator:
+    title: Agentic UI Generator
     position: 0
-  ai-tools/mcp-server/coding-assistant:
-    title: Telerik AI Coding Assistant
+  ai-tools/agentic-ui-generator/component-assistant-overview:
+    title: Component Assistant
     position: 0
-  ai-tools/mcp-server/converter:
-    title: Telerik Converter
+  ai-tools/agentic-ui-generator/component-assistant-prompt-library:
+    title: Component Assistant - Prompt Library
     position: 1
+  ai-tools/agentic-ui-generator/upgrade-assistant:
+    title: Upgrade Assistant
+    position: 4  
   ai-tools/upgrade-plugin:
     title: WinForms Upgrade Plugin
-    position: 1
+    position: 3
   licensing:
     title: Licensing
     position: 3
