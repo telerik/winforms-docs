@@ -1,6 +1,6 @@
 ---
-title: Overview
-page_title: Telerik WinForms MCP Server - Installation, Configuration, and Getting Started
+title: Agentic UI Generator Overview
+page_title: Agentic UI Generator - Installation, Configuration, and Getting Started
 description: Install and configure the Telerik WinForms MCP Server for AI-powered code generation. Covers .NET 10 dnx and .NET 8/9 dotnet tool setup, .mcp.json configuration, Visual Studio and VS Code integration, license requirements, and troubleshooting.
 components: ["general"]
 slug: ai-mcp-server
@@ -8,9 +8,9 @@ tags: telerik,winforms,mcp,mcp server,installation,setup,configuration,.mcp.json
 position: 0
 ---
 
-# Telerik UI for WinForms AI Tools Overview
+# Agentic UI Generator Overview
 
-The Telerik UI for WinForms AI Tools are delivered through a single Model Context Protocol (MCP) server that connects your AI client to UI-generation capabilities and knowledge specific to Telerik UI for WinForms. From idea to implementation, you can use the MCP server to generate forms, configure components correctly, and reduce repetitive setup work.
+The Agentic UI Generator is delivered through a single Model Context Protocol (MCP) server that connects your AI client to UI-generation capabilities and knowledge specific to Telerik UI for WinForms. From idea to implementation, you can use the MCP server to generate forms, configure components correctly, and reduce repetitive setup work.
 
 # Getting Started with the Telerik MCP Server
 
@@ -26,7 +26,7 @@ The Telerik WinForms MCP Server is a local MCP server that is distributed throug
 
 <article-card-container>
 	<article-card
-		href="{%slug ai-prompt-library%}"
+		href="{%slug component-assistant-prompt-library%}"
 		title="Telerik AI Coding Assistant"
 		subTitle="Code Generation Feature"
 		description="An AI-powered code generation feature that provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs. Use it to generate forms, configure components, and reduce repetitive setup work.">
@@ -319,7 +319,7 @@ The following examples demonstrate useful prompts for the Telerik WinForms MCP S
 
 ## Number of Requests
 
-A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik WinForms AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited [number of requests per year]({%slug ai-overview%}#number-of-requests).
+A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik WinForms AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited [number of requests per year]({%slug ai-mcp-server%}#number-of-requests).
 
 ## Local AI Model Integration
 
@@ -333,4 +333,4 @@ This setup allows you to use the Telerik AI Coding Assistant without cloud-based
 
 ## See Also
 
-* [AI Coding Assistant Overview]({%slug ai-overview%})
+* [Component Assistant Overview]({%slug component-assistant-overview%})

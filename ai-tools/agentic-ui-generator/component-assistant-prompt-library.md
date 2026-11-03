@@ -1,10 +1,11 @@
 ---
 title: Prompt Library
 page_title: Telerik UI for WinForms Prompt Library
-description: Explore the collection of prompts that you can use with the Telerik UI for WinForms AI Coding Assistant.
+description: Explore the collection of prompts that you can use with the Telerik UI for WinForms Component Assistant.
 components: ["general"]
-slug: ai-prompt-library
-tags: telerik,winforms,ai,coding assistant,prompt,library
+slug: component-assistant-prompt-library
+previous_url: ai-prompt-library
+tags: telerik,winforms,ai,component assistant,prompt,library
 position: 4
 ---
 
@@ -12,7 +13,7 @@ position: 4
 
 Welcome to the Telerik UI for WinForms Prompt Library.
 
-The prompts provided here are intended and optimized for use with the Telerik UI for WinForms AI Coding Assistant [through the Telerik WinForms MCP Server]({%slug ai-mcp-server%}). They can help you kick start your app development and speed up the component configuration process.
+The prompts provided here are intended and optimized for use with the Telerik UI for WinForms Component Assistant [through the Telerik WinForms MCP Server]({%slug ai-mcp-server%}). They can help you kick start your app development and speed up the component configuration process.
 
 This collection of prompts is not exhaustive and the Telerik UI for WinForms team is constantly working on adding more prompts to the library.
 
@@ -22,14 +23,14 @@ All prompts in this library target the [Telerik WinForms MCP Server]({%slug ai-m
 
 1. Browse the prompt library to find a prompt that suits your needs.
 2. Copy the prompt text (including the `#telerik-winforms-assistant` handle).
-3. (Optional) Customize the prompt as needed for your specific use case but keep the `#telerik-winforms-assistant` handle.<br/>When modifying the prompts, make sure the changes comply with the [recommendations]({%slug ai-overview%}#recommendations) for the AI Coding Assistant.
+3. (Optional) Customize the prompt as needed for your specific use case but keep the `#telerik-winforms-assistant` handle.<br/>When modifying the prompts, make sure the changes comply with the [recommendations]({%slug component-assistant-overview%}#recommendations) for the Component Assistant.
 4. Run the prompt against the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}).
 
 >warning Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
 
 ## Assembly-Specific Prompts
 
-This section provides prompt ideas for the [currently supported assemblies]({%slug ai-overview%}).
+This section provides prompt ideas for the [currently supported assemblies]({%slug component-assistant-overview%}).
 
 ### WinControls.UI Assembly
 

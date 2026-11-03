@@ -67,4 +67,4 @@ The upgrade tool returns a structured report that includes:
 * [Telerik WinForms MCP Server]({%slug ai-mcp-server%})
 * [Telerik CLI]({%slug telerik-cli%})
 * [Telerik CLI Migrate Analyzer]({%slug telerik-cli-migrate-analyzer%})
-* [Telerik WinForms AI Coding Assistant Overview]({%slug ai-overview%})
+* [Telerik WinForms AI Component Assistant Overview]({%slug component-assistant-overview%})
