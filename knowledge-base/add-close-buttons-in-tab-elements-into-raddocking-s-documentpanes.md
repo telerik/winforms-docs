@@ -14,13 +14,13 @@ res_type: kb
 |Q3 2008 SP1|RadDock for WinForms|Martin Vassilev|Jan 14, 2009|
 
    
-**HOW-TO**  
+## How To
 Add close buttons in tab elements into RadDocking's DocumentPanes  
    
-**DESCRIPTION**  
+## Description
 DockingManager uses RadTabStrip to organize its DocumentPane elements. This allows adding custom items in the tab elements, similarly to the approach for RadTabStrip control. Adding close button for every tab is a common scenario, because this increase the usability.   
    
-**SOLUTION**  
+## Solution
 In order to place a RadButtonElement inside the tab elements, you should use their Children collection. In addition, a non-zero margin of the ImageAndTextLayoutPanel should be set. This will make enough room for the button element to be placed directly in the tab item, but not in the layout panel.  
 The Click event handler attached to the button element implements removing a DocumentPane from the DockingManager. This makes the button element behave as a close button..  
    

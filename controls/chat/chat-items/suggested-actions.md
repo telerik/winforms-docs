@@ -20,7 +20,7 @@ position: 4
 
 **SuggestedActionDataItem** is single action unit that can be added to a [ChatSuggestedActionsMessage]({%slug winforms/chat/chat-items/messages%}). Since R3 2019 you can use the __ShowScrollBar__ property in order to show the horizontal scrollbar. 
 
-#### Adding a SuggestedActionDataItem
+## Adding a SuggestedActionDataItem
 
 <snippet id='chat-suggested-actions-addsuggestedactions-cs'/>
 <snippet id='chat-suggested-actions-addsuggestedactions-vb'/>
@@ -29,7 +29,7 @@ position: 4
 
  
  
-# See Also
+## See Also
 
 * [Messages]({%slug winforms/chat/chat-items/messages%})
 * [Cards]({%slug winforms/chat/chat-items/cards%})

@@ -100,7 +100,7 @@ The supported keys are as follows:
  
  
 
-# See Also
+## See Also
 	
 * [Design Time]({%slug calculator-design-time%})	
 * [Getting Started]({%slug calculator-getting-started%})	

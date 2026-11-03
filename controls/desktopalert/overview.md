@@ -49,7 +49,7 @@ __RadDesktopAlert__ component displays a small pop-up window on the screen to n
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/desktopalert/designtime%})
 * [Getting Started]({%slug winforms/desktopalert/gettingstarted%})

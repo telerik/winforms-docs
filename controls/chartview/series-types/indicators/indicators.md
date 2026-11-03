@@ -16,7 +16,7 @@ RadChartView offers more than 20 of the most frequently used technical indicator
 
 Let's start with creating some meaningful data that will be used by both indicators 
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-indicators-indicatorscommondata-cs'/>
 <snippet id='chartview-indicators-indicatorscommondata-vb'/>
@@ -27,7 +27,7 @@ Let's start with creating some meaningful data that will be used by both indicat
 
 Each value of MA is the average of past __n__ days, where __n__ is a parameter defined by the __Period__ property. 
 
-#### Average Indicator
+### Average Indicator
 
 <snippet id='chartview-indicators-ma-cs'/>
 <snippet id='chartview-indicators-ma-vb'/>
@@ -49,7 +49,7 @@ The indicator consists of two bands that aim to provide a relative definition of
 
 * __K__ is defined by the StandardDeviations property. A typical value for K is 2. 
 
-#### Bollinger Indicator
+### Bollinger Indicator
 
 <snippet id='chartview-indicators-bands-cs'/>
 <snippet id='chartview-indicators-bands-vb'/>
@@ -59,7 +59,7 @@ The indicator consists of two bands that aim to provide a relative definition of
 >caption Figure 2: Bollinger Indicator
 ![WinForms RadChartView Bollinger Indicator](images/chartview-series-types-indicators002.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

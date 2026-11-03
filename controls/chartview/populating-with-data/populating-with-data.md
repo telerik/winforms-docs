@@ -45,7 +45,7 @@ The actual binding is performed on the desired __ChartSeries__ descendant. Here 
             
 __RadChartView__ can also be setup in unbound mode. This can be performed in the designer as well as at run-time by accessing the __DataPoints__ collection of each of the series. The articles dedicated to each of the series types includes a basic example for setting up the control in unbound mode: [Series Overview]({%slug winforms/chartview-/series-types%})
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Property Builder]({%slug winforms/chartview/design-time/property-builder%})

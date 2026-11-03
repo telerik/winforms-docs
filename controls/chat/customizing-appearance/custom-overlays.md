@@ -21,7 +21,7 @@ This article demonstrates a sample approach how to host a [RadMultiColumnComboBo
 
 To achieve this goal, you need to create a derivative of the **BaseChatItemOverlay** class:
 
-#### Constructing a custom overlay with RadMultiColumnComboBox
+## Constructing a custom overlay with RadMultiColumnComboBox
 
 <snippet id='chat-custom-overlays-customoverlay-cs'/>
 <snippet id='chat-custom-overlays-customoverlay-vb'/>
@@ -30,7 +30,7 @@ To achieve this goal, you need to create a derivative of the **BaseChatItemOverl
 
 Then, you just need to add your overlay to the **Chat UI** when it is necessary to present the user the options from which to choose:
 
-#### Adding a custom overlay to the Chat UI
+## Adding a custom overlay to the Chat UI
 
 <snippet id='chat-custom-overlays-useoverlay-cs'/>
 <snippet id='chat-custom-overlays-useoverlay-vb'/>
@@ -38,7 +38,7 @@ Then, you just need to add your overlay to the **Chat UI** when it is necessary 
 
 
 
-# See Also
+## See Also
 
 * [Overview]({%slug winforms/chat/overview%})
 * [Overlays]({%slug winforms/chat/chat-items/overlays%})

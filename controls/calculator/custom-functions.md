@@ -25,7 +25,7 @@ This article aims to show a sample approach how to create a custom function, |Ab
 
 
 
-# See Also
+## See Also
 	
 * [Design Time]({%slug calculator-design-time%})	
 * [Getting Started]({%slug calculator-getting-started%})	

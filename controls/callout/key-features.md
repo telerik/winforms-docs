@@ -57,7 +57,7 @@ CalloutAnimationManager offers the following public properties:
 |**CloseAnimationType**|Gets or sets the type of close animation.|
 |**CloseAnimationDuration**|Gets or sets the duration of close animation, in milliseconds.|
 
-#### Callout Animation Settings
+### Callout Animation Settings
 
 <snippet id='callout-key-features-animations-cs' />
 <snippet id='callout-key-features-animations-vb' />
@@ -68,7 +68,7 @@ CalloutAnimationManager offers the following public properties:
 
 ![WinForms RadCallout Animation](images/callout-key-features005.gif)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug callout-getting-started%})
 * [Design Time]({%slug callout-design-time%}) 

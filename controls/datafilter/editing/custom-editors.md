@@ -19,14 +19,14 @@ All editors inherit from **BaseInputEditor**. So, you have to inherit from this 
 
 ![WinForms RadDataFilter Replace the default editor with a custom editor](images/datafilter-custom-editors001.png)
 
-#### Custom editor
+## Custom editor
 
 <snippet id='datafilter-custom-editors-customeditor-cs' />
 <snippet id='datafilter-custom-editors-customeditor-vb' />
 
 
 
-# See Also
+## See Also
 
 * [Events]({%slug winforms/datafilter/editing/events%})	
 * [Default Editors]({%slug winforms/datafilter/editing/default-editors%})	

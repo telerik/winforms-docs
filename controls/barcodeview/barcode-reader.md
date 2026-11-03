@@ -26,7 +26,7 @@ The `Open Barcode` button lets the user choose an image path, to the image which
 
 The complete example is available in the Demo application >> BarcodeReader example.
 
-#### Decoding a barcode image
+## Decoding a barcode image
 
 <snippet id='barcodeview-barcode-reader-decoder-cs' />
 <snippet id='barcodeview-barcode-reader-decoder-vb' />
@@ -65,7 +65,7 @@ In addition, the following values can also be set:
 * **WidthModulated1D**: All width-modulated 1D barcodes (93 Extended included).
 * **HeightModulated1D**: All height-modulated 1D barcodes.
 
-# See Also
+## See Also
 
 * [Design Time]({%slug barcodeview-design-time%})
 * [Getting Started]({%slug barcodeview-getting-started%})

@@ -14,11 +14,11 @@ res_type: kb
 |Q1 2007 SP1|RadTreeView for WinForms|Iordan Pavlov|June 11, 2007| 
 
    
-**HOW-TO**
+## How To
 
 Highlight tree node text on edit  
   
-**SOLUTION**
+## Solution
 
 The following code allows for highlighting the node text,  and focus on begin edit. The ENTER key ends the edit mode:  
   

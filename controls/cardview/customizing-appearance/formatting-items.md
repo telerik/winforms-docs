@@ -22,7 +22,7 @@ The appearance of the visual items can be fully customized by handling the __Car
 >caption Figure 1: Formatting the Visual Item
 ![WinForms RadCardView Formatting the Visual Item](images/cardview-customizing-appearance-formatting-items001.png)
 
-#### Formatting the Visual Item
+### Formatting the Visual Item
 
 <snippet id='cardview-customizing-appearance-formatting-items-cardviewvisualitemformatting-cs'/>
 <snippet id='cardview-customizing-appearance-formatting-items-cardviewvisualitemformatting-vb'/>
@@ -36,7 +36,7 @@ By handling the __CardViewItemFormatting__ event each of the individual card vie
 >caption Figure 2: Formatting CardViewItem
 ![WinForms RadCardView Formatting CardViewItem](images/cardview-customizing-appearance-formatting-items002.png)
 
-#### Formatting CardViewItem
+### Formatting CardViewItem
 
 <snippet id='cardview-customizing-appearance-formatting-items-cardviewitemformatting-cs'/>
 <snippet id='cardview-customizing-appearance-formatting-items-cardviewitemformatting-vb'/>

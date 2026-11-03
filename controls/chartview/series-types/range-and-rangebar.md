@@ -20,7 +20,7 @@ The __Range__ series allows you to define range with each data point.
 
 You can use the following code to display a simple __RangeSeries__
 
-#### Initial Setup RangeSeries
+### Initial Setup RangeSeries
 
 <snippet id='chartview-range-and-rangebar-range-cs'/>
 <snippet id='chartview-range-and-rangebar-range-vb'/>
@@ -36,7 +36,7 @@ This series is visualized on the screen as separate rectangles representing each
 
 You can use the following code to display a simple RangeBarSeries 
 
-#### Initial Setup RangeBarSeries
+### Initial Setup RangeBarSeries
  
 <snippet id='chartview-range-and-rangebar-bar-cs'/>
 <snippet id='chartview-range-and-rangebar-bar-vb'/>
@@ -46,7 +46,7 @@ You can use the following code to display a simple RangeBarSeries
 >caption Figure 2: Initial Setup RangeBarSeries
 ![WinForms RadChartView Initial Setup Range Bar Series](images/chartview-series-types-range002.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

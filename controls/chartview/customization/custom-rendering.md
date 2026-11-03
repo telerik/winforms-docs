@@ -40,7 +40,7 @@ The following image illustrates the desired outcome:
 The starting point of the article is a form with one __RadChartView__ on it. In the form’s Load event handler create a __LineSeries__ instance and add categorical data points. The current example generates random values that fall in the range of 0 – 30. After adding the series to the __RadChartView.Series__ collection, set the __LabelFormat__ and __LabelFitMode__ of the __HorizontalAxis__ and __VerticalAxis__ properties of 
 the series to appropriate values. Further, subscribe to the __CreateRenderer__ of the chart and instantiate the __Renderer__ property of the event arguments to a new __CustomCartesianRederer__ instance. The __CreateRenderer__ event allows you to plug any custom implementation of chart renderer. Here is how your snippet should look like: 
 
-#### Add Points and Create A Custom Renderer
+## Add Points and Create A Custom Renderer
 
 <snippet id='chartview-custom-rendering-customrendererregion-cs'/>
 <snippet id='chartview-custom-rendering-customrendererregion-vb'/>
@@ -49,7 +49,7 @@ the series to appropriate values. Further, subscribe to the __CreateRenderer__ o
 
 Now you need to create a CustomCartesianRenderer class that inherits __CartesianRenderer__ and overrides the __Initialize__ method. This method creates and arranges draw parts responsible for the rendering of each __RadChartView__ segment. After calling the base method, the __DrawParts__ collection contains objects that know how to draw axes, labels, series etc. The particular draw part you would like to replace is of type __LineSeriesDrawPart__. Your code should be like the following: 
 
-#### Custom Renderer Class
+## Custom Renderer Class
 
 <snippet id='chartview-custom-rendering-customcartesianrendererregion-cs'/>
 <snippet id='chartview-custom-rendering-customcartesianrendererregion-vb'/>
@@ -58,7 +58,7 @@ Now you need to create a CustomCartesianRenderer class that inherits __Cartesian
 
 Let us further focus on the __CustomLineSeriesDrawPart__ implementation. To introduce custom rendering of the line you need to override the __DrawLine__ method and use the GraphicsPath object provided by the __GetLinePath__ method. In order to draw a path with gradient colors, you need to use a LinearGradientBrush and use its ColorBlend to set appropriate positions and colors. So, before we get to the CustomLineSeriesDrawPart class, let us create a class that will let us easily store Color-Position couples: 
 
-#### Color Storage
+## Color Storage
 
 <snippet id='chartview-custom-rendering-colorpositionblendregion-cs'/>
 <snippet id='chartview-custom-rendering-colorpositionblendregion-vb'/>
@@ -67,7 +67,7 @@ Let us further focus on the __CustomLineSeriesDrawPart__ implementation. To intr
 
 Getting back to the CustomLineSeriesDrawPart, you need to create a method which calculates the positions and colors that need to be assigned to the ColorBlend of the brush. Additionally, you have to calculate the color of the points that fall between two predefined values, e.g. if the input value is 16, the color should be one fifth orange and four fifths red. Further, you have to make sure that the line segments between each two consecutive points are colored properly, regardless of points’ values. For example, if a point with value 0 is followed by a point with value 30, you need to ensure that the line that connects them does not go from green to dark red directly, but contains also orange and red when it crosses 15 and 20, respectively. Here is one possible implementation of the above scenario: 
 
-#### DrawLine Method Implementation
+## DrawLine Method Implementation
 
 <snippet id='chartview-custom-rendering-customlineseriesdrawpartregion-cs'/>
 <snippet id='chartview-custom-rendering-customlineseriesdrawpartregion-vb'/>
@@ -80,7 +80,7 @@ After you compile the project, you should get a result similar to the screenshot
 >caption Figure 2: Rendering Implementation Result
 ![WinForms RadChartView Rendering Implementation Result](images/chartview-customization-custom-rendering002.png)
 
-# See Also
+## See Also
 
 * [Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

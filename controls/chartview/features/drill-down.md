@@ -21,7 +21,7 @@ The animation below demonstrates how from BarSeries showing sales for 10 years a
 
 To support this functionality a __DrillDownControler__ should be used: 
 
-#### Add Controller
+## Add Controller
 
 <snippet id='chartview-drill-down-drillcontroler-cs'/>
 <snippet id='chartview-drill-down-drillcontroler-vb'/>
@@ -30,7 +30,7 @@ To support this functionality a __DrillDownControler__ should be used:
 
 Then, you will need to add as many __ChartViews__ as you need. Each __ChartView__ represents different level of the drill operation. 
 
-#### Add Views
+## Add Views
 
 <snippet id='chartview-drill-down-addnewview-cs'/>
 <snippet id='chartview-drill-down-addnewview-vb'/>
@@ -42,7 +42,7 @@ Then, you will need to add as many __ChartViews__ as you need. Each __ChartView_
 
 To handle the different levels, the __Drill__ event should be used. Depending on the __Level__ provided in the event arguments, you can decide how to setup the View. In the example below, different data is represented for Years, Months and Days: 
 
-#### Drill Event
+## Drill Event
 
 <snippet id='chartview-drill-down-drillevent-cs'/>
 <snippet id='chartview-drill-down-drillevent-vb'/>
@@ -59,7 +59,7 @@ To make the example complete you should make few more steps:
 
 1\. First you should create __DrillDownDataInfo__ class which will contain two properties __Value__ and __Date__ and will implement the __INotifyPropertyChanged__ interface: 
 
-#### Data Object
+## Data Object
 
 <snippet id='chartview-drill-down-drilldowndatainfo-cs'/>
 <snippet id='chartview-drill-down-drilldowndatainfo-vb'/>
@@ -68,7 +68,7 @@ To make the example complete you should make few more steps:
 
 2\. Now you can use this class to create three binding lists. Each one will contain data for the chart view. These methods are used in the previously described Drill event handler. 
 
-#### Load Data
+## Load Data
 
 <snippet id='chartview-drill-down-loaddata-cs'/>
 <snippet id='chartview-drill-down-loaddata-vb'/>
@@ -80,7 +80,7 @@ To make the example complete you should make few more steps:
 
 3\. Finally you should initialize the chart by adding a series to it. Also the corresponding axes should be added. 
 
-#### Add Series
+## Add Series
 
 <snippet id='chartview-drill-down-databyyears-cs'/>
 <snippet id='chartview-drill-down-databyyears-vb'/>
@@ -90,7 +90,7 @@ To make the example complete you should make few more steps:
  
 Now you can examine how this functionality works by clicking a data point in the chart. You can use the additional buttons to drill up or drill to top.
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

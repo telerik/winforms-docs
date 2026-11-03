@@ -22,7 +22,7 @@ To localize __RadDock__ to display control text and messages in a specific langu
 
 Below is a sample implementation of a custom localization provider, which returns translations of the default values in English:
 
-#### Localizing RadDock Strings 
+## Localizing RadDock Strings 
 
 <snippet id='dock-localization-customprovider-cs' />
 <snippet id='dock-localization-customprovider-vb' />
@@ -32,7 +32,7 @@ Below is a sample implementation of a custom localization provider, which return
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
-#### Localizing RadDock Strings 
+## Localizing RadDock Strings 
 
 <snippet id='dock-localization-settingcustomprovider-cs' />
 <snippet id='dock-localization-settingcustomprovider-vb' />
@@ -42,6 +42,6 @@ To apply the custom localization provider, instantiate and assign it to the curr
  
 The code provided above illustrates the approach to be used to localize the __RadDock__ and is not intended as a full translation.
 
-# See Also
+## See Also
 
 * [Right-to-left support]({%slug winforms/dock/localization/right-to-left-support%})

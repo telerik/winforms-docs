@@ -55,7 +55,7 @@ Here is how the control's Smart Tag looks like:
 
 All of these properties are also available in the Properties window of Visual Studio.
 
-# See Also
+## See Also
 
 * [Property Builder]({%slug winforms/chartview/design-time/property-builder%})
 * [Getting Started]({%slug winforms/chartview/getting-started%})

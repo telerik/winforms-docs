@@ -16,7 +16,7 @@ position: 2
 >caption Figure 1: Selecting Data Points
 ![WinForms RadChartView Selecting Data Points](images/chartview-features-lasso-selection003.gif)
 
-#### Add Sample Data and a Controller
+## Add Sample Data and a Controller
 
 <snippet id='chartview-lasso-selection-setuplassoselection-cs'/>
 <snippet id='chartview-lasso-selection-setuplassoselection-vb'/>
@@ -25,7 +25,7 @@ position: 2
 
 The **LassoSelectionController** exposes a **LassoSelectedPointsChanged** event providing access to the data points within the bounds of the selection rectangle. In a scenario with multiple series, each of the series can be extracted from the **Presenter** property of the data point object   
 
-#### The LassoSelectedPointsChanged Event
+## The LassoSelectedPointsChanged Event
 
 <snippet id='chartview-lasso-selection-lassoselectedpointschangedevent-cs'/>
 <snippet id='chartview-lasso-selection-lassoselectedpointschangedevent-vb'/>
@@ -37,7 +37,7 @@ The **LassoSelectionController** exposes a **LassoSelectedPointsChanged** event 
 >caption Figure 2: Lasso and Zoom
 ![WinForms RadChartView Lasso and Zoom](images/chartview-features-lasso-selection004.gif)
 
-#### Lasso and Zoom Selection Controllers
+## Lasso and Zoom Selection Controllers
 
 <snippet id='chartview-lasso-selection-setuplassozoomcontrollers-cs'/>
 <snippet id='chartview-lasso-selection-setuplassozoomcontrollers-vb'/>
@@ -46,7 +46,7 @@ The **LassoSelectionController** exposes a **LassoSelectedPointsChanged** event 
 
 Using this approach you can zoom any area in the chart using the 0-100 percentage scale.
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

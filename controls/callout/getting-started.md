@@ -65,7 +65,7 @@ The following UserControl contains:
 
 5\. At design time double-click the **RadButton** that we added in step 1. Thus, its **Click** event handler will be generated. Now, when the button is clicked, the **RadCallout** will be shown:
 
-#### Showing the RadCallout
+### Showing the RadCallout
 
 <snippet id='callout-getting-started-showcallout-cs' />
 <snippet id='callout-getting-started-showcallout-vb' />
@@ -76,7 +76,7 @@ The following UserControl contains:
 
 7\. It is possible to force closing the callout when the user hits the close button in the header. For this purpose it is necessary to access the close button from the UserControl and handle its **Click** event:
 
-#### Closing the RadCallout
+### Closing the RadCallout
 
 <snippet id='callout-getting-started-closecallout-cs' />
 <snippet id='callout-getting-started-closecallout-vb' />
@@ -85,14 +85,14 @@ The following UserControl contains:
 
  
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug callout-getting-started%})
 * [Design Time]({%slug callout-structure%}) 
  
         
 
-## Telerik UI for WinForms Learning Resources
+### Telerik UI for WinForms Learning Resources
 * [Telerik UI for WinForms Callout Component](https://www.telerik.com/products/winforms/callout-control.aspx)
 * [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
 * [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)

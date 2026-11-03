@@ -21,7 +21,7 @@ As you can see on the following image, the planet that we touched is now selecte
 
 ![WinForms RadCarousel Touch Support Selection](images/carousel-touch-support002.png)
 
-# See Also
+## See Also
 
  * [Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)
  * [Customize Appearance]({%slug winforms/carousel/customizing-appearance%})

@@ -12,7 +12,7 @@ position: 0
 
 The Telerik UI for WinForms AI Tools are delivered through a single Model Context Protocol (MCP) server that connects your AI client to UI-generation capabilities and knowledge specific to Telerik UI for WinForms. From idea to implementation, you can use the MCP server to generate forms, configure components correctly, and reduce repetitive setup work.
 
-# Getting Started with the Telerik MCP Server
+## Getting Started with the Telerik MCP Server
 
 The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik UI for WinForms components.
 
@@ -20,7 +20,7 @@ This MCP server enables AI-powered IDEs and tools to generate more accurate, tai
 
 >tip The Telerik WinForms MCP Server works in **Chat**(**Ask**) and **Agent** modes.
 
-## Telerik UI for WinForms MCP Server Functionalities
+### Telerik UI for WinForms MCP Server Functionalities
 
 The Telerik WinForms MCP Server is a local MCP server that is distributed through the [Telerik.WinForms.MCP](https://www.nuget.org/packages/Telerik.WinForms.MCP) NuGet package. It provides the following specialized features. Click each card below for more details on each assistant:
 
@@ -45,7 +45,7 @@ The Telerik WinForms MCP Server is a local MCP server that is distributed throug
 	</article-card>
 </article-card-container>
 
-## Prerequisites
+### Prerequisites
 
 To use the **Telerik WinForms MCP Server** you need:
 
@@ -56,14 +56,14 @@ To use the **Telerik WinForms MCP Server** you need:
 * A WinForms application targeting modern .NET or classic .NET Framework.
 * A valid [Telerik license key]({%slug license-key%}).
 
-### Supported .NET Runtimes
+#### Supported .NET Runtimes
 
 | Target Runtime | Required SDK | Invocation Method | Notes |
 |----------------|--------------|-------------------|-------|
 | **.NET 10 (Recommended)** | .NET 10 SDK (Preview 6 or newer) | `dnx` dynamic execution | Simplest approach; no prior install step |
 | .NET 8 / .NET 9 | .NET 8 or .NET 9 SDK | Local dotnet tool (`telerik-winforms-assistant.exe`) | `dnx` not supported; install tool manually |
 
-## License Requirements
+### License Requirements
 
 Access to the Telerik MCP Server depends on your [Telerik license type](https://www.telerik.com/purchase/faq/licensing-purchasing):
 
@@ -77,11 +77,11 @@ Access to the Telerik MCP Server depends on your [Telerik license type](https://
 
 >tip All Telerik AI tools share a single request limit for your Telerik account. Requests made through the Telerik MCP server count against the same usage quota. When using the Telerik MCP server, one prompt may trigger several requests, depending on the prompt complexity.
 
-## How to Install the Telerik WinForms MCP Server
+### How to Install the Telerik WinForms MCP Server
 
 The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) is available as a NuGet package.
 
-### Install with Telerik CLI (Recommended)
+#### Install with Telerik CLI (Recommended)
 
 The easiest way to install and configure the Telerik WinForms MCP Server is through the [Telerik CLI]({%slug telerik-cli%}). A single command line sets up the MCP server for your IDE automatically:
 
@@ -91,13 +91,13 @@ telerik mcp config winforms
 
 This command automatically creates or updates the `.mcp.json` configuration file for all supported IDEs. You can also specify a target IDE with the `--ide` option (for example, `telerik mcp config winforms --ide vscode`). For more details, see [Telerik CLI - Install MCP Server]({%slug telerik-cli%}#install-mcp-server).
 
-### Install with .NET CLI Commands
+#### Install with .NET CLI Commands
 
 Another approach to install the Telerik WinForms MCP Server is to use .NET 10 or .NET 8/9 commands.
 
 Beginning with **.NET 10** it can be executed directly via the `dnx` command. For .NET 8 and .NET 9 (where `dnx` is not available) you can install it as a local dotnet tool and invoke its executable.
 
-## Summary of Installation Approaches
+### Summary of Installation Approaches
 
 | Aspect | .NET 8 / 9 | **.NET 10 (Recommended)** |
 |--------|------------|---------|
@@ -109,13 +109,13 @@ Beginning with **.NET 10** it can be executed directly via the `dnx` command. Fo
 | Update Version | Re-run tool install with `--version` or `tool update` | Handled by latest package resolved by `dnx` |
 | Offline Use | Requires prior tool install | Requires prior NuGet cache warm-up |
 
-### Server Installation
+#### Server Installation
 
-#### .NET 10 (Recommended)
+##### .NET 10 (Recommended)
 
 No manual install step is needed. The `dnx` command will download and execute the NuGet package on demand.
 
-#### .NET 8 / .NET 9
+##### .NET 8 / .NET 9
 
 Install the MCP server as a local tool in your solution root (or another chosen path):
 
@@ -131,9 +131,9 @@ dotnet tool update --tool-path ./.tools Telerik.WinForms.MCP
 
 This creates the executable at `./.tools/telerik-winforms-assistant.exe`.
 
-### Configure the MCP Server (.mcp.json)
+#### Configure the MCP Server (.mcp.json)
 
-#### .NET 10 Configuration (`.mcp.json`)
+##### .NET 10 Configuration (`.mcp.json`)
 
 Use these settings when configuring the server in your MCP client:
 
@@ -146,7 +146,7 @@ Use these settings when configuring the server in your MCP client:
 | Server Name | `telerik-winforms-assistant` (customizable) |
 
 
-#### .NET 8 / .NET 9 Configuration (`.mcp.json`)
+##### .NET 8 / .NET 9 Configuration (`.mcp.json`)
 
 Add a `.mcp.json` file to your solution root (or to `%USERPROFILE%` for global usage):
 
@@ -172,11 +172,11 @@ If you prefer embedding the license string directly:
 }
 ```
 
-### Configure MCP Server for a Specific Workspace
+#### Configure MCP Server for a Specific Workspace
 
 Add a `.mcp.json` file to your solution (root) folder. Choose the variant that matches your target .NET runtime:
 
-#### .NET 10 Example (using `dnx`)
+##### .NET 10 Example (using `dnx`)
 ```json
 {
   "servers": {
@@ -193,7 +193,7 @@ Add a `.mcp.json` file to your solution (root) folder. Choose the variant that m
 
 ```
 
-#### .NET 8 / .NET 9 Example
+##### .NET 8 / .NET 9 Example
 ```json
 {
   "servers": {
@@ -213,12 +213,12 @@ You may substitute `TELERIK_LICENSE` instead of `TELERIK_LICENSE_PATH` (see Lice
 After saving the file, restart Visual Studio and enable the `telerik-winforms-assistant` tool in the [Copilot Chat window's tool selection dropdown](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022#configuration-example-with-github-mcp-server).
 
 
-### Global Setup
+#### Global Setup
 
 To enable the server globally for all projects, add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`). The same distinction applies: use the executable path for .NET 8/9, or `dnx` for .NET 10.
 
 
-## License Configuration
+### License Configuration
 
 Add your [Telerik license key]({%slug license-key%}) as an environment parameter in your `mcp.json` file using one of these options:
 
@@ -242,13 +242,13 @@ The THE_PATH_TO_YOUR_LICENSE_FILE should point to the telerik-license.txt file, 
 
 > Option 1 is recommended unless you're sharing settings across different systems. Remember to [update your license key]({%slug license-key%}#updating-your-license-key) when necessary.
 
-## Visual Studio
+### Visual Studio
 
 For complete setup instructions, see [Use MCP servers in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers).
 
 > Early Visual Studio 17.14 versions require the Copilot Chat window to be open when opening a solution for the MCP server to work properly.
 
-### Workspace-Specific Setup in Visual Studio:
+#### Workspace-Specific Setup in Visual Studio:
 
 1. Add `.mcp.json` to your solution folder:
 
@@ -275,11 +275,11 @@ For complete setup instructions, see [Use MCP servers in Visual Studio](https://
 
 ![WinForms AI Assistance MCP Server](images/ai-mcp-server001.png)
 
-### Global Setup:
+#### Global Setup:
 
 Add the `.mcp.json` file to your user directory (`%USERPROFILE%`, e.g., `C:\Users\YourName\.mcp.json`).
 
-## Usage
+### Usage
 
 To use the Telerik MCP Server:
 
@@ -303,13 +303,13 @@ You can check the Output pane of Visual Studio for diagnostics information relat
 
 ![WinForms AI Assistance MCP Server](images/ai-mcp-server002.png)
 
-### Improving Server Usage
+#### Improving Server Usage
 
 To increase the likelihood of the Telerik MCP server being used, add custom instructions to your AI tool:
 - [GitHub Copilot custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot#about-repository-custom-instructions-for-github-copilot-chat)
 - [Cursor rules](https://docs.cursor.com/context/rules)
 
-### Sample Prompts
+#### Sample Prompts
 
 The following examples demonstrate useful prompts for the Telerik WinForms MCP Server:
 
@@ -317,11 +317,11 @@ The following examples demonstrate useful prompts for the Telerik WinForms MCP S
 * "`/telerikwinforms` Create a RadDropDownList showing a product list of 20 items. Include Product class and sample data."
 * "`/telerik` Build a RadListView with sorting and filtering capabilities."
 
-## Number of Requests
+### Number of Requests
 
 A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik WinForms AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited [number of requests per year]({%slug ai-overview%}#number-of-requests).
 
-## Local AI Model Integration
+### Local AI Model Integration
 
 You can use the Telerik WinForms MCP server with local large language models (LLMs):
 
@@ -331,6 +331,6 @@ You can use the Telerik WinForms MCP server with local large language models (LL
 
 This setup allows you to use the Telerik AI Coding Assistant without cloud-based AI models.
 
-## See Also
+### See Also
 
 * [AI Coding Assistant Overview]({%slug ai-overview%})

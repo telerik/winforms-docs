@@ -16,7 +16,7 @@ Binding to DataTable is quite easy with __RadChartView__. Once your table is cre
 
 Here is a sample demonstrating how to bind а [LineSeries]({%slug winforms/chartview-/series-types/line%}): 
 
-#### Binding to DataTable
+## Binding to DataTable
 
 <snippet id='chartview-binding-to-datatable-binding-cs'/>
 <snippet id='chartview-binding-to-datatable-binding-vb'/>
@@ -31,7 +31,7 @@ Adding, removing or modifying a record in the DataTable is automatically reflect
 >caption Figure 2: Modify Item
 ![WinForms RadChartView Modify Item](images/chartview-databinding-binding-to-datatable002.png)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Binding to BindingList]({%slug winforms/chartview-/populating-with-data/binding-to-bindinglist%})

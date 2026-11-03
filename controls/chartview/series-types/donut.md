@@ -14,7 +14,7 @@ previous_url: chartview-series-types-donut
 
 Similarly to Pie series, Donut series do not use axes. They visualize each data point as a slice with arc size directly proportional to the magnitude of the raw data point’s value. It is important to note that the donut series are valid only in the context of Pie AreaType. Donut pieces represent data in one dimension contrasting with the other series which represent data in two dimensions. Here is an example of how to create donut series populated with data: 
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-donut-donut-cs'/>
 <snippet id='chartview-donut-donut-vb'/>
@@ -28,7 +28,7 @@ DonutSeries can be customized using the following properties:
 
 * __Range:__ The property consists of two parameters __StartAngle__ and __SweepAngle__. __StartAngle__ sets the angle in degrees from which the drawing of the pie segments will begin. Note that pie slices are always rendered in clockwise direction. __SweepAngle__ determines if the chart will appear as a full circle or a partial circle. The snippet below illustrates DonutSeries how to set the __Range__ property: 
 
-#### AngleRange
+## AngleRange
 
 <snippet id='chartview-donut-donutanglerange-cs'/>
 <snippet id='chartview-donut-donutanglerange-vb'/>
@@ -46,7 +46,7 @@ DonutSeries can be customized using the following properties:
 
 Additionally, DonutSeries allows offsetting a pie segment from the rest of the slices. This is achieved through the __OffsetFromCenter__ property of the individual __PieDataPoint__. The following snippet demonstrates how to shift the first pie piece: 
 
-#### Donut Offset
+## Donut Offset
 
 <snippet id='chartview-donut-donutoffset-cs'/>
 <snippet id='chartview-donut-donutoffset-vb'/>
@@ -56,7 +56,7 @@ Additionally, DonutSeries allows offsetting a pie segment from the rest of the s
 >caption Figure 3: Donut Offset
 ![WinForms RadChartView Donut Offset](images/chartview-series-types-donut003.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

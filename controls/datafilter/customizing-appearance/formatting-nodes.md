@@ -24,7 +24,7 @@ Group nodes can be formatted to handle custom scenarios. The root node in the ex
 
 ![WinForms RadDataFilter Hidden Expander Item](images/datafilter-customizing-appearance-formatting-nodes001.png)
 
-#### Group Nodes
+### Group Nodes
 
 <snippet id='datafilter-formatting-nodes-groupnodes-cs' />
 <snippet id='datafilter-formatting-nodes-groupnodes-vb' />
@@ -39,7 +39,7 @@ The appearance of the expression nodes can also be modified to change their visu
 
 ![WinForms RadDataFilter Changed Back Color](images/datafilter-customizing-appearance-formatting-nodes002.png)
 
-#### Expression Nodes
+### Expression Nodes
 
 <snippet id='datafilter-formatting-nodes-expressionnodes-cs' />
 <snippet id='datafilter-formatting-nodes-expressionnodes-vb' />
@@ -54,7 +54,7 @@ The button responsible for adding a new expression can also be customized in a f
 
 ![WinForms RadDataFilter Add Button Text](images/datafilter-customizing-appearance-formatting-nodes003.png)
 
-#### Button Nodes
+### Button Nodes
 
 <snippet id='datafilter-formatting-nodes-addbutton-cs' />
 <snippet id='datafilter-formatting-nodes-addbutton-vb' />
@@ -69,7 +69,7 @@ Each of the nodes holding the expressions has three editor elements which can be
 
 ![WinForms RadDataFilter Add Button Text](images/datafilter-customizing-appearance-formatting-nodes004.png)
 
-#### Child Expression Elements
+### Child Expression Elements
 
 <snippet id='datafilter-formatting-nodes-childexpressionelements-cs' />
 <snippet id='datafilter-formatting-nodes-childexpressionelements-vb' />
@@ -77,7 +77,7 @@ Each of the nodes holding the expressions has three editor elements which can be
 
 
 
-# See Also
+## See Also
 
 * [Getting Started ]({%slug winforms/datafilter/getting-started%})
 * [Unbound Mode]({%slug winforms/datafilter/populating-with-data/unbound-mode%})	

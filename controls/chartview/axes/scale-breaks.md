@@ -19,7 +19,7 @@ The ScaleBreaks feature allows you to "break off" large chunks of the axis so th
 
 To add a scale break you show use the __ScaleBreaks__ collection of the axis. First, you need to create an __AxisScaleBreak__ item and set its __From__  and __To__ properties (you can set the __Name__ property as well):
 
-#### ScaleBreak Initial Setup
+## ScaleBreak Initial Setup
 
 <snippet id='chartview-scale-breaks-break1-cs'/>
 <snippet id='chartview-scale-breaks-break1-vb'/>
@@ -49,7 +49,7 @@ The following properties allows you to customize the scale breaks:
 
 The following example shows how you can set the scale breaks settings: 
 
-#### ScaleBreaks Settings
+### ScaleBreaks Settings
 
 <snippet id='chartview-scale-breaks-settings-cs'/>
 <snippet id='chartview-scale-breaks-settings-vb'/>
@@ -59,7 +59,7 @@ The following example shows how you can set the scale breaks settings:
 >caption Figure 2: ScaleBreaks Settings
 ![WinForms RadChartView ScaleBreaks Settings](images/chartview-axes-scale-breaks002.png)
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

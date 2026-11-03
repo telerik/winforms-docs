@@ -17,7 +17,7 @@ The below image shows the __RadCaroucel__ elements:
 
 ![WinForms RadCarousel Elements](images/carousel-structure001.png)
 
-# Elements Hierarchy
+## Elements Hierarchy
 
 __RadCarousel__ consist of the following elements: 
 
@@ -26,7 +26,7 @@ __RadCarousel__ consist of the following elements:
 
 ![WinForms RadCarousel Elements Hierarchy](images/carousel-structure002.png)
 
-# See Also
+## See Also
 
  * [Customize Appearance]({%slug winforms/carousel/customizing-appearance%})
  * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})

@@ -14,10 +14,10 @@ res_type: kb
 |Q2 2008|RadControls for WinForms|Nikolay Diyanov|Apr 03, 2008|
   
    
-**HOW TO**  
+## How To
 Add a control to the **GAC** (Global Assembly Cache)  
    
-**SOLUTION**
+## Solution
 To install a control to the GAC, you need to run the .NET command prompt (*Start &gt;&gt; Programs &gt;&gt; Microsoft VS.NET &gt;&gt; VS.NET Tools &gt;&gt; VS.NET prompt*) and start the gacutil.exe tool with **-i** parameter (install) and the full path to the control's DLL.  
    
 For example:  

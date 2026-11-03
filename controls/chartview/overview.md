@@ -146,34 +146,34 @@ Both chart types (pie and cartesian) have a controllers collection that accepts 
 ## Features
 __RadChartView__ provides a wide set of features.
 
-#### Scroll And Zoom
+### Scroll And Zoom
 __RadChartView__ provides zoom and scroll interactivity with the __ChartPanZoomController__ class.
 
-#### Lasso Selection
+### Lasso Selection
 This functionality is defined within the __LassoZoomController__ class and it allows the end use to lasso zoom (zoom to selection).
 
-#### Selection
+### Selection
 Selection behavior can also be added to the data points of the chart by using the __ChartSelectionController__.
 
-#### Tooltip
+### Tooltip
 Tooltip interactivity can be achieved by adding a __ChartTooltipController__ displaying arbitrary information about a particular data point.
 
-#### Trackball
+### Trackball
 The __ChartTrackballController__ can display a vertical line across the chart plot area and also to display little visual indicators (circles by default) at points where the trackball line crosses the visualization of a series object.
 
-#### Title and Legend
+### Title and Legend
 __RadChartView__ can display a title for the whole chart and different legends for each of the added series.
 
-#### Smart Labels
+### Smart Labels
 __DataPoint__ labels can be arranged in a way so that any possible overlaps be resolved automatically. 
 
-#### DrillDown
+### DrillDown
 The drill down functionality of a chart allows users to click on a graphical element (bar, pie segment etc.), representing some data, in order to navigate to another view which contains different data than the first one.
 
-#### Export
+### Export
 __RadChartView__ can be exported to a Bitmap image.
 
-#### Chart Grid
+### Chart Grid
 The chart may be optionally decorated with grid-like visuals which support horizontal and vertical lines, associated with axis ticks and horizontal and vertical stripes – the area between two adjacent ticks. Such visuals are available for both Cartesian and Polar coordinates via Cartesian Grid and Polar Grid respectively.
 
 
@@ -197,7 +197,7 @@ The chart may be optionally decorated with grid-like visuals which support horiz
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/chartview/design-time/smart-tag%})
 * [Property Builder]({%slug winforms/chartview/design-time/property-builder%})

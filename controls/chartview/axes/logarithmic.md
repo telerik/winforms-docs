@@ -38,7 +38,7 @@ Additionally, __LogarithmicAxis__ inherits all properties of the Axis class.
 
 Logarithmic axis is not added by default to Cartesian series. For this reason you will need to create an instance of the LogarithmicAxis class and assign it to the VerticalAxis property of the series, before it is added to the chart. Here is a sample snippet: 
 
-#### LogarithmicAxis Setup
+## LogarithmicAxis Setup
 
 <snippet id='chartview-logarithmic-axis-cs'/>
 <snippet id='chartview-logarithmic-axis-vb'/>
@@ -48,7 +48,7 @@ Logarithmic axis is not added by default to Cartesian series. For this reason yo
 >caption Figure 1: LogarithmicAxis Setup
 ![WinForms RadChartView LogarithmicAxis Setup](images/chartview-axes-logarithmic001.png)
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

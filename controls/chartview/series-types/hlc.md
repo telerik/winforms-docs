@@ -22,7 +22,7 @@ Here is how to read the values of an __Hlc__ point:
 
 Here is how to setup the __Hlc__ series: 
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-hlc-hlc-cs'/>
 <snippet id='chartview-hlc-hlc-vb'/>
@@ -32,7 +32,7 @@ Here is how to setup the __Hlc__ series:
 >caption Figure 1: Initial Setup 
 ![WinForms RadChartView Hlc Initial Setup](images/chartview-series-types-hlc002.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

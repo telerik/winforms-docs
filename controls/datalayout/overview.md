@@ -58,7 +58,7 @@ __RadDataLayout__ generates different editors depending on the type of the prope
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/datalayout/control-element-structure%})
  * [Getting Started]({%slug winforms/datalayout/getting-started%})

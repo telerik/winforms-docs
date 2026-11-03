@@ -29,14 +29,14 @@ The funnel series has several properties that control the way a chart's segments
 
 The following example shows how you can add funnel series in code. 
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-funnel-funnel-cs'/>
 <snippet id='chartview-funnel-funnel-vb'/>
 
 
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

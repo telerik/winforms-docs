@@ -25,7 +25,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 6. Change the BackColor:
    ![WinForms RadDataEntry Change the BackColor](images/dataentry-themes003.png)
 
-# See Also
+## See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
  * [Getting Started]({%slug  winforms/dataentry/getting-started%})

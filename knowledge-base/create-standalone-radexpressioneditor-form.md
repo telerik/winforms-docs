@@ -157,4 +157,4 @@ End If
 
 ````
 
->note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/Genral_All_Controls/StandaloneExpressionEditorForm).
+>note A complete solution in C# and VB.NET can be found in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/Genral_All_Controls/StandaloneExpressionEditorForm).

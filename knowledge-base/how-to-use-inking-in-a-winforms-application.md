@@ -14,15 +14,21 @@ res_type: kb
 |2017.2.502|RadGridView for WinForms|Dimitar Karamfilov|January 11, 2018|
 
 
+## Overview
+
 The below example demonstrates how one can use the **InkEdit** control which comes with the Microsoft Tablet PC Platform SDK, to enter data in RadGridView using a pen device.
 ![ink1](images/how-to-use-inking-in-a-winforms-application001.gif)  
   
+
+## Add the Ink Reference
 
 First, you need to add a reference to the Microsft.Ink.dll. This assembly is part of the Microsoft Tablet PC Platform SDK (1.7 is the latest version).
 
 Detailed information about the ink support in WinForms and WPF can be found in the following article: [https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/the-ink-object-model-windows-forms-and-com-versus-wpf#enabling-ink-in-an-application](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/the-ink-object-model-windows-forms-and-com-versus-wpf#enabling-ink-in-an-application)
 
 
+
+## Example
 
 Let’s start with the example.
 

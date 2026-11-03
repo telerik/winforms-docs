@@ -29,7 +29,7 @@ You can set the bezier path for the carousel using the Visual Studio designer.
 >
 
 
-# See Also
+## See Also
 
  * [RadCarousel Properties]({%slug winforms/carousel/properties%})
  * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})

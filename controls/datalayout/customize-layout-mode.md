@@ -39,7 +39,7 @@ The __DragOverlay__ is a separate control which is shown when the customize dial
 ![WinForms RadDataLayout DragOverlay](images/datalayout-customize-layout-mode003.png)
 
 
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/datalayout/control-element-structure%})
  * [Getting Started]({%slug winforms/datalayout/getting-started%})

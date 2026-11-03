@@ -19,7 +19,7 @@ This article demonstrates how to change the labels styles and text. The series l
 
 1\. In order this event to fire, you should set the __ShowLabels__ property to *true* for at least one series. For example, you can set this property for all series with the following code. 
 
-#### Show Labels
+## Show Labels
 
 <snippet id='chartview-formatting-series-labels-showlabels-cs'/>
 <snippet id='chartview-formatting-series-labels-showlabels-vb'/>
@@ -29,7 +29,7 @@ This article demonstrates how to change the labels styles and text. The series l
 
 2\. Now you can change the labels styles and text. 
 
-#### LabelFormatting Event
+## LabelFormatting Event
 
 <snippet id='chartview-formatting-series-labels-labelformatting-cs'/>
 <snippet id='chartview-formatting-series-labels-labelformatting-vb'/>
@@ -41,7 +41,7 @@ This article demonstrates how to change the labels styles and text. The series l
 >important The code for getting the current data point can depend on the used series type. For example if you use pie chart you should cast to __PiePointElement__ , and __PieDataPoint__ types.
 >
 
-# See Also
+## See Also
 
 * [Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

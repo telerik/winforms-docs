@@ -14,7 +14,7 @@ previous_url: chartview-series-types-polar
 
 __Polar series__ consists of a group of classes that plot data in radial plot area in polar coordinates. Valid only in the context of Polar AreaType, __Polar series__ have three implementations – __PolarLineSeries__, __PolarAreaSeries__ and __PolarPointSeries__. When working in unbound mode, the polar series are filled with PolarDataPoint objects which define __Angle__ and __Value__ properties which unambiguously determine a point's location in the polar coordinate system defined by the polar and numeric radial axes. Below is an example of RadPolarChart with different Polar series: 
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-polar-polarpointseries-cs'/>
 <snippet id='chartview-polar-polarpointseries-vb'/>
@@ -24,7 +24,7 @@ __Polar series__ consists of a group of classes that plot data in radial plot ar
 >caption Figure 1: Initial Setup
 ![WinForms RadChartView Polar Initial Setup](images/chartview-series-types-polar001.png)
 
-#### PolarLineSeries
+## PolarLineSeries
 
 <snippet id='chartview-polar-polarlineseries-cs'/>
 <snippet id='chartview-polar-polarlineseries-vb'/>
@@ -34,7 +34,7 @@ __Polar series__ consists of a group of classes that plot data in radial plot ar
 >caption Figure 2: PolarLineSeries
 ![WinForms RadChartView Polar Line Series](images/chartview-series-types-polar002.png) 
  
-#### PolarAreaSeries
+## PolarAreaSeries
 
 <snippet id='chartview-polar-polarareaseries-cs'/>
 <snippet id='chartview-polar-polarareaseries-vb'/>
@@ -54,7 +54,7 @@ Here are some of the important properties all __PolarSeries__ share:
 
 * __BorderWidth:__  The property indicates the width of the lines in PolarLineSeries and PolarAreaSeries.
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

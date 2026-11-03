@@ -36,7 +36,7 @@ position: 2
 * __Search__: Search the Telerik site for a given string.
 
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/diagram/structure%})
 * [Getting Started]({%slug winforms/diagram/getting-started%})

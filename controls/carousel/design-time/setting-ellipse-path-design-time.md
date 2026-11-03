@@ -39,7 +39,7 @@ You can revert the rotating direction (when __AutoLoop__ is set to __true__) by 
 
 You can drag the ellipse points over the whole designer area, i.e. you are not limited to the form only. 
 
-# See Also
+## See Also
 
  * [RadCarousel Properties]({%slug winforms/carousel/properties%})
  * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})

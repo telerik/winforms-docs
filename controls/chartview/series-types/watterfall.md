@@ -21,7 +21,7 @@ A Waterfall chart is useful for different types of quantitative analysis related
 
 The example above can be achieved with the following code snippet:  
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-watterfall-unboundmode-cs'/>
 <snippet id='chartview-watterfall-unboundmode-vb'/>
@@ -36,14 +36,14 @@ To achieve the same chart in a data bound mode you will need appropriate data an
 
 You need to set the standard databinding properties as well ([Binding to BindingList]({%slug winforms/chartview-/populating-with-data/binding-to-bindinglist%}) ValueMember, CategoryMember and DataSource). Here is an example: 
 
-#### Data Binding WaterFallSeries
+## Data Binding WaterFallSeries
 
 <snippet id='chartview-watterfall-databinding-cs'/>
 <snippet id='chartview-watterfall-databinding-vb'/>
 
 
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

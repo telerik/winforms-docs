@@ -16,7 +16,7 @@ Along with tooltip and pan/zoom controllers, __RadChartView__ provides a trackba
 
 In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example:
 
-#### Add Controller
+## Add Controller
 
 <snippet id='chartview-trackball-controller-cs'/>
 <snippet id='chartview-trackball-controller-vb'/>
@@ -25,7 +25,7 @@ In order to utilize this behavior users simply have to add it to the chart's __C
 
 The __ChartTrackballController__ will be added automatically if the __ShowTrackBall__ property of __RadChartView__ control is set to *true*: 
 
-#### Set Property
+## Set Property
 
 <snippet id='chartview-trackball-showtrackball-cs'/>
 <snippet id='chartview-trackball-showtrackball-vb'/>
@@ -34,7 +34,7 @@ The __ChartTrackballController__ will be added automatically if the __ShowTrackB
 
 A sample is shown below:
 
-#### Sample Setup
+## Sample Setup
 
 <snippet id='chartview-trackball-example-cs'/>
 <snippet id='chartview-trackball-example-vb'/>
@@ -94,7 +94,7 @@ A sample is shown below:
 ![WinForms RadChartView Customizing the Trackball](images/chartview-features-trackball002.png)
 
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

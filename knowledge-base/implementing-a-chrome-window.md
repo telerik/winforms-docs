@@ -14,10 +14,10 @@ res_type: kb
 |Q2 2008|RadControls for WinForms|Tsvetan Raikov|September 10, 2008|
 
   
-**HOW-TO**  
+## How To
  Implement a chrome window with RadControls for WinForms  
    
-**SOLUTION**
+## Solution
 To implement a chrome window follow the steps below:  
  
 1.Inherit your form from ShapedForm to control the shape, border and background color of the form:  

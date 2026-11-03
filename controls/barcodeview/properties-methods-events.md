@@ -18,13 +18,13 @@ position: 2
 |**Value**|Gets or sets the value that will be converted into a barcode.|
 |**Symbology**|Gets or sets the symbology that will be used to convert the value of this element into a visual barcode representation.|
 
-# RadBarcodeViewElement's Properties
+## RadBarcodeViewElement's Properties
 
 |Property|Description|
 |----|----|
 |**ElementFactory**|Gets or sets the element factory that is used to create the elements of the displayed barcode.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
@@ -35,7 +35,7 @@ position: 2
 |**ExportToImage(Stream stream, Size size, ImageFormat imageFormat)**|Layouts the barcode using the provided size and exports it to the specified stream in the specified image format.|
 |**ExportToImage(string filePath, Size size, ImageFormat imageFormat)**|Layouts the barcode using the provided size and exports it to the specified file location in the specified image format.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|

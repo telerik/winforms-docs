@@ -41,7 +41,7 @@ An article demonstrating how the currently visible part of map control can be ex
 
 The control will be set up with the **OpenStreetMapProvider** including a layer with pins.
 
-#### Initial Setup
+### Initial Setup
 
 {{source=..\SamplesCS\KnowledgeBase\RadMapExportImageForm.cs region=InitialSetup}} 
 {{source=..\SamplesVB\KnowledgeBase\RadMapExportImageForm.vb region=InitialSetup}}
@@ -140,4 +140,4 @@ End Sub
 >important As of **R2 2021** calling the **TranslateTransform** method for the **RadGdiGraphics** object is not necessary. For older versions, please make sure that the method is executed.
 
 
->tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/Map/RadMapToAnImage).  
+>tip A complete solution providing a C# and VB.NET project is available in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/Map/RadMapToAnImage).  

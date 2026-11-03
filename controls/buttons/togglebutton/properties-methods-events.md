@@ -25,13 +25,13 @@ position: 4
 |CheckState|Gets or sets the Check state. Check state enumeration defines the following values: *Uncheck*, *Indeterminate*, and *Check*|
 |IsThreeState|Gets or sets a Boolean value indicating where the button is checked|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |PerformClick|Generates a Click event for a button.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
@@ -43,7 +43,7 @@ position: 4
 >important Due to the specifics of the [simple data binding](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding(v=vs.110).aspx) we have introduced the __CheckStateChanging__ and __CheckStateChanged__ events together with the __CheckState__ property. These events and property provide the same functionality as the __ToggleStateChanged__, __ToggleStateChanging__ and the __ToggleState__ property, but give you the ability to simple data bind the control.
 >
 
-# See Also 
+## See Also 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtogglebutton.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtogglebutton.html#methods)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtogglebutton.html#events)

@@ -32,7 +32,7 @@ Select **RadCalculator** and click the small arrow on the top right position in 
 
 **Search**: Search in the forum for a given string.
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug calculator-getting-started%})
 * [Structure]({%slug calculator-structure%})

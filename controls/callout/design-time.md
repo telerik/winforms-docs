@@ -38,7 +38,7 @@ It is possible to associate any control available on the form. UserControls are 
 
 ![WinForms RadCallout Properties](images/callout-design-time002.png) 
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug callout-getting-started%})
 * [Structure]({%slug callout-structure%}) 

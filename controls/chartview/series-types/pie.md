@@ -14,7 +14,7 @@ previous_url: chartview-series-types-pie
 
 Unlike all other series, __PieSeries__ do not require axes. They visualize each data point as a pie slices with arc size directly proportional to the magnitude of the raw data point’s value. It is important to note that the pie series are valid only in the context of Pie AreaType. Pie slices represent data in one dimension contrasting with the other series which represent data in two dimensions. Here is an example of how to create a pie chart with pie series populated with data:
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-pie-pie-cs'/>
 <snippet id='chartview-pie-pie-vb'/>
@@ -46,7 +46,7 @@ __PieSeries__ can be customized using the following properties:
 
 Additionally, PieSeries allows offsetting a pie segment from the rest of the slices. This is achieved through the __OffsetFromCenter__ property of the individual PieDataPoint. The following snippet demonstrates how to shift the first pie piece: 
 
-#### Offset Segment
+## Offset Segment
 
 <snippet id='chartview-pie-offset-cs'/>
 <snippet id='chartview-pie-offset-vb'/>
@@ -56,7 +56,7 @@ Additionally, PieSeries allows offsetting a pie segment from the rest of the sli
 >caption Figure 3: Offset Segment
 ![WinForms RadChartView Pie Offset Segment](images/chartview-series-types-pie003.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

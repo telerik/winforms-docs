@@ -33,7 +33,7 @@ The __Smart Tag__ of __RadDock__ lets you quickly access common tasks like addin
 
     - __Search:__ Search the Telerik site for a given string.
 
-# See Also
+## See Also
 
 [Getting Started]({%slug winforms/dock/getting-started%})
 [Structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     

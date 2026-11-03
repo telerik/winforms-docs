@@ -34,7 +34,7 @@ In our particular case we dock a user control instance inside a __RadDock__ inst
 
 6\. Add a delegate and event to be surfaced by the **CalendarPanel** control when the date selection changes:
 	
-#### Setting up DateChanged Event 
+## Setting up DateChanged Event 
 
 <snippet id='dock-docking-a-usercontrol-with-custom-event-definingdelegates-cs' />
 <snippet id='dock-docking-a-usercontrol-with-custom-event-definingdelegates-vb' />
@@ -43,7 +43,7 @@ In our particular case we dock a user control instance inside a __RadDock__ inst
 
 In the __SelectionChanged__ event handler add the following code:
 
-#### Handling the RadCalendar SelectionChanged event 
+## Handling the RadCalendar SelectionChanged event 
 
 <snippet id='dock-docking-a-usercontrol-with-custom-event-handlingselectionchanged-cs' />
 <snippet id='dock-docking-a-usercontrol-with-custom-event-handlingselectionchanged-vb' />
@@ -56,7 +56,7 @@ In the __SelectionChanged__ event handler add the following code:
 
 9\. Dock the __CalendarPanel__ user control to __RadDock__ in the form's **Load** event handler using the following code snippet:
 	
-#### Docking CalendarPanel user control in RadDock 
+## Docking CalendarPanel user control in RadDock 
 
 <snippet id='dock-docking-a-usercontrol-with-custom-event-creatingcalendarpanel-cs' />
 <snippet id='dock-docking-a-usercontrol-with-custom-event-creatingcalendarpanel-vb' />
@@ -65,7 +65,7 @@ In the __SelectionChanged__ event handler add the following code:
  
 10\. Add an event handler for the CalendarPanel **DateChanged** event:
 	
-#### Handling the Custom DateChanged event 
+## Handling the Custom DateChanged event 
 
 <snippet id='dock-docking-a-usercontrol-with-custom-event-handlingdatechanged-cs' />
 <snippet id='dock-docking-a-usercontrol-with-custom-event-handlingdatechanged-vb' />
@@ -74,7 +74,7 @@ In the __SelectionChanged__ event handler add the following code:
  
 11\. Press __F5__ to run the application. Click the cells in the calendar to display the date in a message dialog. 
 
-# See Also
+## See Also
 * [Getting Started]({%slug winforms/dock/docking-usercontrols-and-forms/getting-started%})
 * [Docking Singleton Forms]({%slug winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms%})
 * [Get a HostWindow by its Content]({%slug winforms/dock/docking-usercontrols-and-forms/get-a-hostwindow-by-its-content%}) 

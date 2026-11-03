@@ -37,7 +37,7 @@ __RadCalenadar__ consists of the following elements:
 >caption The fast navigation popup.
 ![WinForms RadCalendar The Fast Navigation Popup](images/calendar-calendar-structure002.png)
 
-# Element Hierarchy
+## Element Hierarchy
 
 __RadCalendar__ uses the Telerik Presentation Framework which enables rich experiences like advanced styling and animations. Just like WPF it uses elements ordered in a visual tree called element hierarchy. This section describes the element hierarchy used in __RadCalendar__:
 
@@ -52,7 +52,7 @@ __RadCalendar__ uses the Telerik Presentation Framework which enables rich exper
 * __CalendarTableElement:__ Contains all the calendar cells.
 * __TitleElement:__ represents the calendar title.
 
-## See Also
+### See Also
 
 * [Properties and Events]({%slug winforms/calendar/important-events%})
 
