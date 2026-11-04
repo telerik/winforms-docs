@@ -15,16 +15,19 @@ position: 12
 
 In **R2 2017** we introduced built-in high DPI support in the Telerik UI for WinForms suite. This coincides with the HDPI improvements [Microsoft is bringing with .NET 4.7](https://blogs.msdn.microsoft.com/dotnet/2017/04/05/announcing-the-net-framework-4-7/) and the *Windows 10 Creators Update*. The best part is that Microsoft constantly improves the DPI support and provides HDPI improvements when announcing updates in the different frameworks. When using Telerik UI for WinForms, our clients can develop applications with automatic scaling for high DPI across various .NET versions (starting with .NET Framework 4.6.2 and up to the latest .NET). 
 
-### DPI awareness
+## DPI awareness
 
 To configure your application as DPI aware you need to mark it as such so the OS would know how to handle it. Desktop applications must tell Windows if they support DPI scaling. Furthermore, you can have DPI awareness per process or per thread. When an application is declared as DPI-aware, all RadControls will scale automatically their UI elements in accordance to the current DPI settings. Doing so, your desktop application can handle display scale factor (dots per inch, or DPI) changes dynamically, making the application looks crisp and clear on any display it is rendered on. The following blog post about [High DPI in WinForms](https://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-) provides in-depth knowledge about the DPI concept.
 
-Although it is a bit tricky to demonstrate HDPI support with a single image, here is an example with screen shots of the same application on two different monitors. You can notice that the first image becomes blurry on 200% scaling, while the second one remains crisp and looks modern.
+The following figures compare the same application without and with DPI awareness at a resolution of 3840 × 2160 and 200% scaling. Windows stretches the DPI-unaware application's bitmap, making text and controls blurry. The DPI-aware application scales its user interface for the display, keeping text and controls crisp.
 
-|Resolution: 3840 x 2160 - Scaling: 200%|
-|----|
-|![Telerik UI for WinForms application demonstrating DPI awareness](images/dpi-support001.png)|
-|![Telerik UI for WinForms controls displayed with DPI scaling support](images/dpi-support002.png)|
+>caption Figure 1: DPI-unaware application at 200% scaling
+
+![DPI Unaware Demo window with blurred ribbon text and control icons after bitmap stretching](images/dpi-support001.png)
+
+>caption Figure 2: DPI-aware application at 200% scaling
+
+![DPI Aware Demo window with crisp ribbon text and control icons scaled for the display](images/dpi-support002.png)
 
 >important To produce as good layout as possible when running your desktop application on monitors with different DPI scaling, it is important to have some thoughts in mind before you start designing the application. Please check [HDPI Tips and Tricks]({%slug hdpi-tips-and-tricks%}).
 
@@ -41,14 +44,17 @@ There are two main approaches to configure your application DPI-aware: using an 
 
 ### Application Manifest File
 
-The most common way to declare an application as DPI aware is through the application manifest file. There are two settings that you can use - **&lt;dpiAware&gt;** and **&lt;dpiAwareness&gt;**. Here is a small table that describes the different states that you can use with each setting:
+The most common way to declare an application as DPI aware is through the application manifest file. There are two settings that you can use: **&lt;dpiAware&gt;** and **&lt;dpiAwareness&gt;**. Each row in the following table maps one setting value to its DPI mode. The minimum OS column identifies when the manifest setting was introduced; individual modes can require a later Windows version, as described in [DPI awareness](#dpi-awareness).
 
-<table>
-<th></th><th>Minimum Supported OS</th><th>States</th><th>DPI Mode</th>
-<tr><td><b>&lt;dpiAware&gt;</b></td><td>Windows Vista</td><td><table><tr><td>false</td></tr><tr><td>true</td></tr><tr><td>true/pm</td></tr></table></td><td><table><tr><td>Unaware</td></tr><tr><td>System aware</td></tr><tr><td>Per-monitor aware</td></tr></table></td></tr>
-<tr><td><b>&lt;dpiAwareness&gt;</b></td><td>Windows 10, version 1607</td><td><table><tr><td>unaware</td></tr><tr><td>system</td></tr><tr><td>PerMonitor</td></tr><tr><td>PerMonitorV2</td></tr></table></td><td><table><tr><td>Unaware</td></tr><tr><td>System aware</td></tr><tr><td>Per-monitor aware</td></tr><tr><td>Per-monitor-v2 aware</td></tr></table></td></tr>
-<tr></tr>
-</table>
+| Manifest setting | Minimum OS for the setting | Value | DPI mode |
+|---|---|---|---|
+| `<dpiAware>` | Windows Vista | `false` | Unaware |
+| `<dpiAware>` | Windows Vista | `true` | System aware |
+| `<dpiAware>` | Windows Vista | `true/pm` | Per-monitor aware |
+| `<dpiAwareness>` | Windows 10, version 1607 | `unaware` | Unaware |
+| `<dpiAwareness>` | Windows 10, version 1607 | `system` | System aware |
+| `<dpiAwareness>` | Windows 10, version 1607 | `PerMonitor` | Per-monitor aware |
+| `<dpiAwareness>` | Windows 10, version 1607 | `PerMonitorV2` | Per-monitor-v2 aware |
 
 You can use both settings in the manifest file. If so, Windows 10, version 1607, will ignore <b>&lt;dpiAware&gt;</b> and use only the newer <b>&lt;dpiAwareness&gt;</b>. Older versions will ignore <b>&lt;dpiAwareness&gt;</b>. Here is how the manifest should look if you want to configure DPI awareness for different Windows versions.
 
@@ -97,7 +103,7 @@ You can use both settings in the manifest file. If so, Windows 10, version 1607,
 
 ### App.Config File
 
-Another way that was introduced for Windows Forms in .NET Framework 4.7 is using the **app.config** file. Microsoft added a new element to add different features to a Windows Forms app called [<System.Windows.Forms.ApplicationConfigurationSection>](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/winforms/). In order to use it you need to do the following:
+Another way that was introduced for Windows Forms in .NET Framework 4.7 is using the **app.config** file. Microsoft added a new element to add different features to a Windows Forms app called [`System.Windows.Forms.ApplicationConfigurationSection`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/winforms/). In order to use it you need to do the following:
 
 * Declare compatibility with Windows 10 in the **app.manifest** file:
 
@@ -138,11 +144,11 @@ static void Main()
 
 ````
 
-With the <System.Windows.Forms.ApplicationConfigurationSection> element you can set other DPI features as well. For more information you can check [this article](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element).
+With the `System.Windows.Forms.ApplicationConfigurationSection` element you can set other DPI features as well. For more information, see the [Windows Forms configuration element reference](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element).
 
 ### Native API 
 
-Even though it is not a common approach, there are several native API calls that can set awareness. Additional information is available in [this](https://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-#dpiAwareness) blog post.
+Even though it is not a common approach, there are several native API calls that can set awareness. For more information, see [Setting DPI awareness with native APIs](https://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-#dpiAwareness).
 
 ## High DPI support in an Application targeting .NET
 
@@ -172,7 +178,7 @@ With the **R2 2022** we have added some improvements to how our controls are sca
 * Scaling works in all .NET versions and DPI Awareness modes combinations except in .Net4 Framework. In this version, the scaling will not work in Microsoft Form.
 * Fixed various DPI-related scaling issues. 
 
-# See Also 
+## See Also 
 * [WinForms Scaling at Large DPI Settings–Is It Even Possible?](http://www.telerik.com/blogs/winforms-scaling-at-large-dpi-settings-is-it-even-possible-)
 * [HDPI Tips and Tricks]({%slug hdpi-tips-and-tricks%})
 * [App becomes DPI-aware at runtime]({%slug app-becomes-dpi-aware%})

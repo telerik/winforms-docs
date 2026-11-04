@@ -11,7 +11,9 @@ position: 2
 
 # Install using NuGet Packages
 
-<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+The following video introduces installation with NuGet packages. For written instructions instead of the video, choose an installation source from the list below and follow the corresponding section.
+
+<iframe width="800" height="400" src="https://www.youtube.com/embed/c3m_BLMXNDk" title="Install Telerik UI for WinForms using NuGet packages" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This article explains how to install the Telerik UI for WinForms suite using NuGet packages. You can obtain the NuGet packages in one of the following ways:
 
@@ -39,7 +41,7 @@ This is the recommended installation path for new development. Both Visual Studi
 
 This method allows you to install Telerik UI for WinForms packages directly from the official Telerik NuGet server. To use this approach, you need to configure Visual Studio to connect to the Telerik NuGet server (**https://nuget.telerik.com/v3/index.json**) as a package source.
 
-```
+```text
 https://nuget.telerik.com/v3/index.json
 ```
 
@@ -86,7 +88,7 @@ As the Telerik NuGet server requires authentication, the first step is to obtain
 
 1. Store the generated NuGet API key as you will need it in the next steps. Whenever you need to authenticate your system with the Telerik NuGet server, use `api-key` as the username and your generated API key as the password.
 
->API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
+>important API keys expire after two years. Telerik will send you an email when a key is about to expire, but we recommend that you set your own calendar reminder with information about where you used that key: file paths, project links, AzDO and GitHub Action variable names, and so on.
 
 ### Reset Stored Credentials
 
@@ -130,7 +132,7 @@ If you have previously stored credentials for the Telerik NuGet server, you need
 
 	![Visual Studio NuGet Package Manager showing Telerik UI for WinForms packages for multiple target frameworks](images/installation-deployment-and-distribution-install-using-nuget008.png)
 
-# See Also
+## See Also
 
 * [Installing On Your Computer]({%slug winforms/installation-deployment-and-distribution/installing-on-your-computer%})
 * [How to Upgrade a Telerik UI for WinForms Project]({%slug how-to-upgrade-a-project%})
