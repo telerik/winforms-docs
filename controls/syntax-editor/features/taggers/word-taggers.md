@@ -39,7 +39,7 @@ The **WordTaggerBase** class exposes the following virtual methods:
 
 By inheriting the **WordTaggerBase** class you can create a tagger for your own custom language and specify custom words to be assigned to the list of available classification types. You can also define your own classification types if the default ones are not sufficient for you.
 
-A practical example of how to define a tagger for your own custom language can be found [Custom Language example]({%slug syntax-editor-custom-language%}).
+A practical example of how to define a tagger for your own custom language can be found in the [Custom Language example]({%slug syntax-editor-custom-language%}).
 
 
 
