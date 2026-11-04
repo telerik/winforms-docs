@@ -1717,7 +1717,7 @@ meta:
   ai-tools:
     title: AI Tools
     position: 4
-    ai-tools/overview:
+  ai-tools/overview:
     title: Overview
     position: 0
   ai-tools/agentic-ui-generator:
