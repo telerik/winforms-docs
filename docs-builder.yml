@@ -1717,9 +1717,12 @@ meta:
   ai-tools:
     title: AI Tools
     position: 4
+    ai-tools/overview:
+    title: Overview
+    position: 0
   ai-tools/agentic-ui-generator:
     title: Agentic UI Generator
-    position: 0
+    position: 1
   ai-tools/agentic-ui-generator/component-assistant-overview:
     title: Component Assistant
     position: 0
