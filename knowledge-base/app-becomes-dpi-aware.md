@@ -18,7 +18,7 @@ Your application becomes smaller when exporting data or it is using cross platfo
 
 There are two approaches in this case. 
 
-1\. Make your application DPI aware explicitly - with this approach your app will look smaller when started. It will not look blurry on HDPI displays. Detailed information is available [DPI Support]({%slug winforms/telerik-presentation-framework/dpi-support%}).
+1\. Make your application DPI aware explicitly - with this approach your app will look smaller when started. It will not look blurry on HDPI displays. Detailed information is available in [DPI Support]({%slug winforms/telerik-presentation-framework/dpi-support%}).
 
 2\. Make your application DPI unaware - this approach works only on Windows 10. If you intend to use your application on machines where the DPI scaling is larger than 100 percent, you should explicitly set the application to be DPI-unaware:
 
