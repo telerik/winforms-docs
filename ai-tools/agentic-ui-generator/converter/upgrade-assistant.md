@@ -5,7 +5,7 @@ description: Learn how to use the telerik_upgrade_assistant tool from the Teleri
 components: ["general"]
 slug: ai-upgrade-assistant
 tags: telerik,winforms,ai,coding assistant,upgrade,migration,breaking changes,mcp
-position: 2
+position: 4
 ---
 
 # Telerik UI for WinForms MCP Upgrade Assistant

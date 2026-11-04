@@ -12,6 +12,31 @@ position: 0
 
 The Agentic UI Generator is delivered through a single Model Context Protocol (MCP) server that connects your AI client to UI-generation capabilities and knowledge specific to Telerik UI for WinForms. From idea to implementation, you can use the MCP server to generate forms, configure components correctly, and reduce repetitive setup work.
 
+## Agentic UI Generator Functionalities
+
+The Agentic UI Generator is a local MCP server that is distributed through the [Telerik.WinForms.MCP](https://www.nuget.org/packages/Telerik.WinForms.MCP) NuGet package. It provides the following specialized features. Click each card below for more details on each assistant:
+
+<article-card-container>
+	<article-card
+		href="{%slug component-assistant-prompt-library%}"
+		title="Component Assistant"
+		subTitle="Code Generation Feature"
+		description="An AI-powered code generation feature that provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs. Use it to generate forms, configure components, and reduce repetitive setup work.">
+	</article-card>
+	<article-card
+		href="{%slug converter%}"
+		title="Converter"
+		subTitle="Migration Workflow"
+		description="An automated migration workflow that converts existing Microsoft WinForms applications to use Telerik RadControls. It uses Microsoft Roslyn to parse and transform C# and VB.NET source code with full context awareness — mapping control types, properties, events, and enum values to their Telerik equivalents.">
+	</article-card>
+	<article-card
+		href="{%slug ai-upgrade-assistant%}"
+		title="Upgrade Assistant"
+		subTitle="Migration Workflow"
+		description="This tool will help you analyze your existing WinForms projects for breaking changes when upgrading between Telerik UI for WinForms versions.">
+	</article-card>
+</article-card-container>
+
 # Getting Started with the Telerik MCP Server
 
 The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextprotocol.io/introduction) enhances your AI-powered development experience by providing specialized context about Telerik UI for WinForms components.
@@ -19,31 +44,6 @@ The Telerik WinForms [MCP (Model Context Protocol) Server](https://modelcontextp
 This MCP server enables AI-powered IDEs and tools to generate more accurate, tailored code that leverages [Telerik UI for WinForms components](https://docs.telerik.com/devtools/winforms/introduction) and APIs. You can ask complex questions about Telerik components, request specific implementations, and generate comprehensive code solutions.
 
 >tip The Telerik WinForms MCP Server works in **Chat**(**Ask**) and **Agent** modes.
-
-## Telerik UI for WinForms MCP Server Functionalities
-
-The Telerik WinForms MCP Server is a local MCP server that is distributed through the [Telerik.WinForms.MCP](https://www.nuget.org/packages/Telerik.WinForms.MCP) NuGet package. It provides the following specialized features. Click each card below for more details on each assistant:
-
-<article-card-container>
-	<article-card
-		href="{%slug component-assistant-prompt-library%}"
-		title="Telerik AI Coding Assistant"
-		subTitle="Code Generation Feature"
-		description="An AI-powered code generation feature that provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs. Use it to generate forms, configure components, and reduce repetitive setup work.">
-	</article-card>
-	<article-card
-		href="{%slug converter%}"
-		title="Telerik Converter"
-		subTitle="Migration Workflow"
-		description="An automated migration workflow that converts existing Microsoft WinForms applications to use Telerik RadControls. It uses Microsoft Roslyn to parse and transform C# and VB.NET source code with full context awareness — mapping control types, properties, events, and enum values to their Telerik equivalents.">
-	</article-card>
-	<article-card
-		href="{%slug ai-upgrade-assistant%}"
-		title="Telerik MCP Upgrade Assistant"
-		subTitle="Migration Workflow"
-		description="This tool will help you analyze your existing WinForms projects for breaking changes when upgrading between Telerik UI for WinForms versions.">
-	</article-card>
-</article-card-container>
 
 ## Prerequisites
 
@@ -69,11 +69,11 @@ Access to the Telerik MCP Server depends on your [Telerik license type](https://
 
 | License Type | AI Coding Assistant | Details |
 |---|---|---|
-| **Subscription License** | Yes | A Subscription is the primary license that grants full access to the AI Coding Assistant. It includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day. Best for ongoing and high-volume usage. |
+| **Subscription License** | Yes | A Subscription is the primary license that grants full access to the Component Assistant. It includes a virtually unlimited number of requests, with a fair use threshold of 300 requests per day. Best for ongoing and high-volume usage. |
 | **Trial License** | Yes | Trial access is designed for evaluating the feature before purchasing. Reactivating the same trial for a new release does not grant additional requests. |
-| **Perpetual License** | No* | Perpetual license holders have no access to the AI Coding Assistant. Start a [30-day trial](https://www.telerik.com/try/ui-for-winforms) or convert Perpetual license to a Subscription license. |
+| **Perpetual License** | No* | Perpetual license holders have no access to the Component Assistant. Start a [30-day trial](https://www.telerik.com/try/ui-for-winforms) or convert Perpetual license to a Subscription license. |
 
-<small>*\* Perpetual license holders can access the AI Coding Assistant through a [30-day AI Tools trial](https://www.telerik.com/try/ui-for-winforms) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms). After the trial expires, access is no longer available unless the Perpetual license is converted to a Subscription license.*</small>
+<small>*\* Perpetual license holders can access to all AI tools through a [30-day AI Tools trial](https://www.telerik.com/try/ui-for-winforms) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms). After the trial expires, access is no longer available unless the Perpetual license is converted to a Subscription license.*</small>
 
 >tip All Telerik AI tools share a single request limit for your Telerik account. Requests made through the Telerik MCP server count against the same usage quota. When using the Telerik MCP server, one prompt may trigger several requests, depending on the prompt complexity.
 

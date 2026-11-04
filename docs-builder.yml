@@ -1728,10 +1728,7 @@ meta:
     position: 1
   ai-tools/agentic-ui-generator/converter:
     title: Converter
-    position: 2
-  ai-tools/agentic-ui-generator/upgrade-assistant:
-    title: Upgrade Assistant
-    position: 4  
+    position: 2 
   ai-tools/upgrade-plugin:
     title: WinForms Upgrade Plugin
     position: 3
