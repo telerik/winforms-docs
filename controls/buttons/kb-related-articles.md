@@ -16,6 +16,7 @@ The following article list Knowledge Base articles related to this section of co
 
 |KB Article|
 |----|
+|[Adding a Shadow Beneath RadButton Text]({%slug button-text-shadow%})|
 |[Change popup default location]({%slug change-popup-location%})|
 |[Change the Color of Focus Cue Border for RadCheckBox]({%slug customize-focus-cues-of-radcheckbox%})|
 |[Creating a DropDownButton / SplitButton which shows the selected item’s text]({%slug creating-a-dropdownbutton-splitbutton-which-shows-the-selected-item-s-text%})|
