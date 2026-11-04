@@ -52,7 +52,7 @@ __RadCalendar__ uses the Telerik Presentation Framework which enables rich exper
 * __CalendarTableElement:__ Contains all the calendar cells.
 * __TitleElement:__ represents the calendar title.
 
-### See Also
+## See Also
 
 * [Properties and Events]({%slug winforms/calendar/important-events%})
 
