@@ -1724,7 +1724,7 @@ meta:
     title: Component Assistant
     position: 0
   ai-tools/agentic-ui-generator/component-assistant-prompt-library:
-    title: Component Assistant - Prompt Library
+    title: Prompt Library
     position: 1
   ai-tools/agentic-ui-generator/converter:
     title: Converter

@@ -3,7 +3,8 @@ title: Agentic UI Generator Overview
 page_title: Agentic UI Generator - Installation, Configuration, and Getting Started
 description: Install and configure the Telerik WinForms MCP Server for AI-powered code generation. Covers .NET 10 dnx and .NET 8/9 dotnet tool setup, .mcp.json configuration, Visual Studio and VS Code integration, license requirements, and troubleshooting.
 components: ["general"]
-slug: ai-mcp-server
+slug: agentic-ui-generator-overview
+previous_url: ai-mcp-server
 tags: telerik,winforms,mcp,mcp server,installation,setup,configuration,.mcp.json,dnx,dotnet tool,visual studio,vs code,license,NuGet,getting started
 position: 0
 ---
@@ -18,7 +19,7 @@ The Agentic UI Generator is a local MCP server that is distributed through the [
 
 <article-card-container>
 	<article-card
-		href="{%slug component-assistant-prompt-library%}"
+		href="{%slug prompt-library%}"
 		title="Component Assistant"
 		subTitle="Code Generation Feature"
 		description="An AI-powered code generation feature that provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs. Use it to generate forms, configure components, and reduce repetitive setup work.">
@@ -319,7 +320,7 @@ The following examples demonstrate useful prompts for the Telerik WinForms MCP S
 
 ## Number of Requests
 
-A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik WinForms AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited [number of requests per year]({%slug ai-mcp-server%}#number-of-requests).
+A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) is recommended in order to use the Telerik WinForms AI Coding Assistant without restrictions. Perpetual license holders and trial users can make a limited [number of requests per year]({%slug agentic-ui-generator-overview%}#number-of-requests).
 
 ## Local AI Model Integration
 

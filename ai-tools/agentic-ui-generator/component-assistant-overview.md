@@ -11,13 +11,13 @@ position: 0
 
 # Getting Started with the Component Assistant
 
-The Component Assistant is an AI-powered code generation tool integrated in the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs.
+The Component Assistant is an AI-powered code generation tool integrated in the [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}). It provides specialized context to AI models, enabling them to produce higher-quality code samples using Telerik UI for WinForms components and APIs.
 
-> To start using Component Assistant, set up the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}).
+> To start using Component Assistant, set up the [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}).
 
 ## Available Tools in Component Assistant
 
-The Component Assistant is integrated in the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}).
+The Component Assistant is integrated in the [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}).
 
 The major features of the Component Assistant are listed in the table below.
 
@@ -71,11 +71,11 @@ Data Usage:
  Data Storage:
 * Prompts and context are anonymized and stored only for statistical analysis and troubleshooting.
 * No association between prompts and your Telerik user account.
-* Usage metrics are collected to ensure [license compliance]({%slug ai-mcp-server%}#license-requirements).
+* Usage metrics are collected to ensure [license compliance]({%slug agentic-ui-generator-overview%}#license-requirements).
 
 > Make sure also to review the terms and privacy policies of your selected AI model and AI client.
 
 ## Next Steps
 
-* Configure the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) with an MCP-enabled client
-* Review the [Telerik UI for WinForms prompt library]({%slug component-assistant-prompt-library%})
+* Configure the [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}) with an MCP-enabled client
+* Review the [Telerik UI for WinForms prompt library]({%slug prompt-library%})

@@ -109,7 +109,7 @@ Returns instructions for configuring a Telerik theme in the application. The AI 
 
 ### Tool: telerik_winforms_assistant
 
-The conversion workflow integrates excellently with the existing general-purpose [Telerik AI coding assistant tool]({%slug ai-mcp-server%}). The AI agent uses this tool to ask about Telerik UI for WinForms features, components, and APIs. In the context of migration, the agent calls this tool to research alternatives for properties or events that were removed during conversion (items listed in the `itemsToReview` array).
+The conversion workflow integrates excellently with the existing general-purpose [Telerik AI coding assistant tool]({%slug agentic-ui-generator-overview%}). The AI agent uses this tool to ask about Telerik UI for WinForms features, components, and APIs. In the context of migration, the agent calls this tool to research alternatives for properties or events that were removed during conversion (items listed in the `itemsToReview` array).
 
 **Parameters:**
 
@@ -252,7 +252,7 @@ The following file types do not require conversion:
 
 ## Usage Example
 
-To migrate a WinForms application, open your project in an MCP-compatible IDE (such as Visual Studio or VS Code with Copilot), ensure the [Telerik WinForms MCP server is configured]({%slug ai-mcp-server%}), and prompt the AI agent to migrate this WinForms application to Telerik UI for WinForms. 
+To migrate a WinForms application, open your project in an MCP-compatible IDE (such as Visual Studio or VS Code with Copilot), ensure the [Telerik WinForms MCP server is configured]({%slug agentic-ui-generator-overview%}), and prompt the AI agent to migrate this WinForms application to Telerik UI for WinForms. 
 
 > For a complete step-by-step walkthrough, see [Getting Started with the Telerik WinForms Converter]({%slug converter-getting-started%}).
 
@@ -291,4 +291,4 @@ The MCP server also exposes template resources that the AI agent (or you) can re
 
 * [Telerik WinForms Converter Overview]({%slug converter%})
 * [Getting Started with the WinForms Converter]({%slug converter-getting-started%})
-* [Configure the Telerik WinForms MCP Server]({%slug ai-mcp-server%})
+* [Configure the Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%})
