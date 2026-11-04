@@ -1,12 +1,12 @@
 ---
-title: Prompt Library
+title: Component Assistant Prompt Library
 page_title: Telerik UI for WinForms Prompt Library
 description: Explore the collection of prompts that you can use with the Telerik UI for WinForms Component Assistant.
 components: ["general"]
 slug: component-assistant-prompt-library
 previous_url: ai-prompt-library
 tags: telerik,winforms,ai,component assistant,prompt,library
-position: 4
+position: 1
 ---
 
 # Telerik UI for WinForms Prompt Library
