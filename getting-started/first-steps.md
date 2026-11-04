@@ -123,7 +123,7 @@ Me.Controls.Add(radGridView1)
 
 <article-card-container>
     <article-card
-        href="{%slug ai-mcp-server%}"
+        href="{%slug agentic-ui-generator-overview%}"
         src="images/chat_light_large.svg"
         darkSrc="images/chat_dark_large.svg"
         title="Telerik AI Coding Assistant"

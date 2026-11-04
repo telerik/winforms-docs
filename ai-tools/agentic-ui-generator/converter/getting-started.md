@@ -15,7 +15,7 @@ This article walks you through migrating an existing Microsoft WinForms applicat
 
 ## Step 0: Check the Prerequisites
 
-Before you start, ensure you have the following [Converter prerequisites]({%slug converter%}#prerequisites) and [configure the MCP server]({%slug ai-mcp-server%}) on your side. The section below shows the Visual Studio-specific configuration:
+Before you start, ensure you have the following [Converter prerequisites]({%slug converter%}#prerequisites) and [configure the MCP server]({%slug agentic-ui-generator-overview%}) on your side. The section below shows the Visual Studio-specific configuration:
 
 ### Configure MCP server in Visual Studio
 
@@ -184,4 +184,4 @@ The following table lists common issues during migration:
 
 * [Telerik WinForms Converter Overview]({%slug converter%})
 * [Converter MCP Tools, Prompts, and Engine Reference]({%slug converter-tools%})
-* [Configure the Telerik WinForms MCP Server]({%slug ai-mcp-server%})
+* [Configure the Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%})
