@@ -97,7 +97,7 @@ __AllowHide:__ This property determines whether the column is allowed to be move
 
 __VisibleInColumnChooser:__ By setting this property for each column you determine whether the column will be visible in the Column Chooser when dragged to it. By default this property is set to *true* for all columns:
 
-#### Determines if the specified column is going to be visible in the column chooser dialog
+### Determines if the specified column is going to be visible in the column chooser dialog
 
 <snippet id='gridview-workingwithcolumnchooser-visibleincolumnchooser-cs' />
 <snippet id='gridview-workingwithcolumnchooser-visibleincolumnchooser-vb' />
