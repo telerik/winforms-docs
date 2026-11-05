@@ -41,7 +41,7 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 
 * __LayoutControlSeparatorItem:__ By default this item shows only a single line, however you can customize its __Thickness__ and __BackColor__.
 
-#### Customize Separator Item
+### Customize Separator Item
 
 <snippet id='layoutcontrol-customizelayoutcontrol-separator-cs' />
 <snippet id='layoutcontrol-customizelayoutcontrol-separator-vb' />
@@ -50,7 +50,7 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 
 * __LayoutControlSplitterItem:__ By default this element does not draw its fill. The following snippet shows how you can change its __BackColor__ and __Thickness__.
 
-#### Customize Splitter Item
+### Customize Splitter Item
 
 <snippet id='layoutcontrol-customizelayoutcontrol-splitter-cs' />
 <snippet id='layoutcontrol-customizelayoutcontrol-splitter-vb' />
@@ -59,7 +59,7 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 
 * __LayoutControlGroupItem:__ The following code shows how you can access and customize the group item header.
 
-#### Customize Group Header
+### Customize Group Header
 
 <snippet id='layoutcontrol-customizelayoutcontrol-group-cs' />
 <snippet id='layoutcontrol-customizelayoutcontrol-group-vb' />
@@ -68,7 +68,7 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 
 * __LayoutControlTabbedGroup:__ This item gives you access to the underlying TabStrip, this way you can customize its appearance.
 
-#### Customize Tabs
+### Customize Tabs
 
 <snippet id='layoutcontrol-customizelayoutcontrol-tab-cs' />
 <snippet id='layoutcontrol-customizelayoutcontrol-tab-vb' />
