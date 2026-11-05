@@ -105,7 +105,7 @@ __RadDropDownList__ internally uses auto-complete helpers to perform the auto-co
 
 \* __AutoCompleteAppendHelper__:  it is created when the __AutoCompleteMode__ property is set to AutoCompleteMode.*Append* or AutoCompleteMode.*SuggestAppend*. The __LimitToList__ property controls whether the user is blocked to enter invalid string in the editable part.
 
-#### Limit the user to enter only valid values 
+### Limit the user to enter only valid values
 
 <snippet id='dropdownlist-auto-complete-autoclimittolist-cs' />
 <snippet id='dropdownlist-auto-complete-autoclimittolist-vb' />
