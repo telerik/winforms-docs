@@ -55,7 +55,7 @@ __RadDropDownList__ provides out of the box functionality for programmatically s
 
 ![WinForms RadDropDownList Scroll to Active Item](images/dropdown-and-listcontrol-dropdownlist-scrolling003.gif)
 
-#### Scroll to Active Item 
+### Scroll to Active Item
 
 <snippet id='dropdownlist-scrolling-scrolltoactiveitem-cs' />
 <snippet id='dropdownlist-scrolling-scrolltoactiveitem-vb' />
