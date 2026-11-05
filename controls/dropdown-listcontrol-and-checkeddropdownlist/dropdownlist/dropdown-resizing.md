@@ -40,7 +40,7 @@ The __SizingMode__ enumeration has the following members:
 
 ![WinForms RadDropDownList SizingMode RightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing002.png)
 
-#### SizingMode.RightBottom 
+### SizingMode.RightBottom
 
 <snippet id='dropdownlist-dropdown-resizing-rightbottom-cs' />
 <snippet id='dropdownlist-dropdown-resizing-rightbottom-vb' />
@@ -55,7 +55,7 @@ The __SizingMode__ enumeration has the following members:
 
 ![WinForms RadDropDownList SizingMode UpDown](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing003.png)
 
-#### SizingMode.UpDown 
+### SizingMode.UpDown
 
 <snippet id='dropdownlist-dropdown-resizing-updown-cs' />
 <snippet id='dropdownlist-dropdown-resizing-updown-vb' />
@@ -70,7 +70,7 @@ The __SizingMode__ enumeration has the following members:
 
 ![WinForms RadDropDownList SizingMode UpDownAndRightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing004.png)
 
-#### SizingMode.UpDownAndRightBottom 
+### SizingMode.UpDownAndRightBottom
 
 <snippet id='dropdownlist-dropdown-resizing-updownandrightbottom-cs' />
 <snippet id='dropdownlist-dropdown-resizing-updownandrightbottom-vb' />
