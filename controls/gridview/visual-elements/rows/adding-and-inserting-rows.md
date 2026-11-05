@@ -53,7 +53,7 @@ End Sub
 ````
 The RadGridView.Rows.__AddNew()__ method adds an empty row and allows the user to enter a value for each column cells’:
 
-#### Add an empty row
+### Add an empty row
 
 <snippet id='gridview-addingandinsertingrows-addnewrow-cs' />
 <snippet id='gridview-addingandinsertingrows-addnewrow-vb' />
@@ -88,7 +88,7 @@ You can also add rows by creating an instance of __GridViewDataRowInfo__ and add
 
 Rows can be inserted at a specified position by using the __Insert__ method of the __Rows__ collection. Below you can see an example of this functionality:
 
-#### Insert a GridViewDataRowInfo
+### Insert a GridViewDataRowInfo
 
 <snippet id='gridview-addingandinsertingrows-insertrow-cs' />
 <snippet id='gridview-addingandinsertingrows-insertrow-vb' />

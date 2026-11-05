@@ -32,7 +32,7 @@ __Initialize ExportToCSV object__
 
 Before running export to CSV, you have to initialize the ExportToCSV class. The constructor takes one parameter: the RadGridView that will be exported:
 
-####  ExportToCSV initialization
+###  ExportToCSV initialization
 
 <snippet id='gridview-exporttocsv1-exporttocsvinitialization-cs' />
 <snippet id='gridview-exporttocsv1-exporttocsvinitialization-vb' />
@@ -79,7 +79,7 @@ Exporting data to CSV file is done through the RunExport method of the `ExportTo
 
 * fileName: the name of the exported file
 
-####  Export to CVS format
+###  Export to CVS format
 
 <snippet id='gridview-exporttocsv1-exporttocsvformat-cs' />
 <snippet id='gridview-exporttocsv1-exporttocsvformat-vb' />
@@ -90,7 +90,7 @@ __CSVCellFormating event__
 
 It gives access to a single cell’s element that allows you to replace the actual value for every cell related to the exported RadGridView:
 
-#### Handling the CSVCellFormatting event
+### Handling the CSVCellFormatting event
 
 <snippet id='gridview-exporttocsv1-handlingthecsvcellformattingevent-cs' />
 <snippet id='gridview-exporttocsv1-handlingthecsvcellformattingevent-vb' />

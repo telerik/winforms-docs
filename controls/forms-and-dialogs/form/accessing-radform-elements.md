@@ -18,7 +18,7 @@ The __RadForm__ is build of a __RadFormTitleBarElement__, __FormBorderPrimitive_
 
 The __RadFormTitleBarElement__ is positioned on the top of the form and its default behavior is to display an icon, text, and the help, minimize, maximize/restore and close buttons. You can access the __RadFormTitleBarElement__ the following way:
 
-#### Accessing RadForm elements 
+### Accessing RadForm elements
 
 <snippet id='form-form1-accessingradformelements-cs' />
 <snippet id='form-form1-accessingradformelements-vb' />
@@ -38,7 +38,7 @@ The __RadFormTitleBarElement__ is positioned on the top of the form and its defa
 
 You can easily extend the __RadFormTitleBarElement__ 's functionality by adding new elements to its hierarchy. The following code snippet demonstrated how to add a __RadButtonElement__ before the minimize button in the __RadFormTitleBarElement__:
 
-#### Adding new button to the title bar 
+### Adding new button to the title bar
 
 <snippet id='form-form1-addingnewbuttontothetitlebar-cs' />
 <snippet id='form-form1-addingnewbuttontothetitlebar-vb' />
@@ -54,7 +54,7 @@ The border of a __RadForm__ control is composed of two border primitives which, 
 
 The __FormBorderPrimitive__ represents the outer thin border that surrounds a __RadForm__ control. The following code snippet demonstrates how to modify the color of this primitive:
 
-#### Accessing the FormBorderPrimitive 
+### Accessing the FormBorderPrimitive
 
 <snippet id='form-form1-accessingtheformborderprimitive-cs' />
 <snippet id='form-form1-accessingtheformborderprimitive-vb' />
@@ -72,7 +72,7 @@ The __FormImageBorderPrimitive__ represents the inner thick border that starts f
 
 The following code snippet demonstrates how to set the __BackColor__ of the __FormImageBorderPrimitive__ which is painted when no images are defined:
 
-#### Accessing the FormImageBorderPrimitive 
+### Accessing the FormImageBorderPrimitive
 
 <snippet id='form-form1-accessingtheformimageborderprimitive-cs' />
 <snippet id='form-form1-accessingtheformimageborderprimitive-vb' />

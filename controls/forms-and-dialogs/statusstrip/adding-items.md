@@ -10,6 +10,8 @@ position: 4
 previous_url: forms-and-dialogs-statusstrip-working-with-radstatusstrip-items, winforms/forms-and-dialogs/statusstrip/working-with-radstatusstrip-items
 ---
 
+# Adding Items
+
 This article demonstrates what items can be added to __RadStatusStrip__ either at design time or at run time. 
  
 ## Item Element Types
@@ -56,14 +58,14 @@ Add items at run time by creating __RadElement__ instances and adding them to th
 
 ![WinForms RadStatusStrip Run Time](images/forms-and-dialogs-statusstrip-working-with-radstatusstrip-items002.png)
 
-#### Adding Elements to RadStatusStrip 
+### Adding Elements to RadStatusStrip
 
 <snippet id='statusstrip-statusstrip1-addingelementstoradstatusstrip-cs' />
 <snippet id='statusstrip-statusstrip1-addingelementstoradstatusstrip-vb' />
 
 
 
-# See Also
+## See Also
 
 * [Properties and Events]({%slug winforms/forms-and-dialogs/statusstrip/properties-events%})	
 * [Getting Started]({%slug winforms/forms-and-dialogs/statusstrip/gettingstarted%})	

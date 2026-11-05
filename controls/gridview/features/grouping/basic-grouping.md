@@ -35,7 +35,7 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 ![Telerik UI for WinForms RadGridView showing data grouped by several fields in the grouping panel](images/gridview-grouping-basic-grouping001.png)
 
 
-#### Setting grouping properties
+## Setting grouping properties
 
 <snippet id='gridview-grouping-settinggroupingproperties-cs' />
 <snippet id='gridview-grouping-settinggroupingproperties-vb' />
@@ -44,7 +44,7 @@ The example below allows GroupDescriptors to be added programmatically, but doe
 
 You can hide the __GroupPanel__ using the following code:
 
-#### Hide the group panel
+### Hide the group panel
 
 <snippet id='gridview-grouping-hidethegrouppanel-cs' />
 <snippet id='gridview-grouping-hidethegrouppanel-vb' />

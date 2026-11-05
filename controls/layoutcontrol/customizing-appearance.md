@@ -18,7 +18,7 @@ This article demonstrates how you can customize the appearance of the __RadLayou
 
 You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  properties to customize the drag and drop preview rectangle fill and stroke.
 
-#### Setting Fill and Stroke
+### Setting Fill and Stroke
 
 <snippet id='layoutcontrol-customizelayoutcontrol-fillstroke-cs' />
 <snippet id='layoutcontrol-customizelayoutcontrol-fillstroke-vb' />
@@ -32,7 +32,7 @@ You can use the __PreviewRectangleFill__ and __PreviewRectangleStroke__  propert
 
 * __LayoutControlLabelItem:__ The following snipped shows how you can change the font and the __BackColor__ of this item.
 
-#### Change BackColor and Font
+### Change BackColor and Font
 
 <snippet id='layoutcontrol-customizelayoutcontrol-labelitem-cs' />
 <snippet id='layoutcontrol-customizelayoutcontrol-labelitem-vb' />

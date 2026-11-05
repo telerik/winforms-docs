@@ -13,7 +13,7 @@ position: 0
 
 The drag and drop feature of the file dialogs allows you to grab items (file and folders) and move them to a different location. The feature supports copy and move operations and it is enabled by default. 
 
-#### Figure 1: Drag-Drop Files
+## Figure 1: Drag-Drop Files
 
 ![WinForms RadFileDialogs DragDrop Overview Source](images/filedialogs-drag-drop-overview001.png) ![WinForms RadFile-Dialogs DragDrop Overview Target](images/filedialogs-drag-drop-overview002.png)
 
@@ -31,7 +31,7 @@ Dragging an item to another drive will copy it there. To change the operation yo
 
 To enable or disable the feature you can use the __IsDragDropEnabled__ property of the file dialog.
 
-#### Example 1: Disabling drag and drop
+### Example 1: Disabling drag and drop
 
 ````C#
 

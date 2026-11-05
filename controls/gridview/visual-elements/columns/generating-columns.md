@@ -26,7 +26,7 @@ Auto-generation of columns means that when you set the __DataSource__ property o
 
 However, if you wish to prevent the creation of a column for it, use the __System.ComponentModel.BrowsableAttribute__, as it is shown in the sample below:
 
-#### Automatic column generation
+### Automatic column generation
 
 <snippet id='gridview-generatingcolumns-autogeneratecolumns-cs' />
 <snippet id='gridview-generatingcolumns-autogeneratecolumns-vb' />
@@ -41,7 +41,7 @@ And here is the result:
 
 Setting the __AutoGenerateColumns__ property to *false* allows the developer to add unbound or bound columns from the data source. Columns are added to using the __Columns__ collection of a template. While the type of auto-generated columns is strictly defined by the data layer, manually added columns are defined by the developer. When defining a column you are able to choose between [several column types]({%slug winforms/gridview/columns/column-types/gridviewdatacolumn%})
 
-#### Adding Columns in Code at Run Time
+### Adding Columns in Code at Run Time
 
 <snippet id='gridview-generatingcolumns2-manualcolumngeneration-cs' />
 <snippet id='gridview-generatingcolumns2-manualcolumngeneration-vb' />

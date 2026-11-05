@@ -27,7 +27,7 @@ The **AllowColumnChooser** property determines whether the ColumnChooser is avai
 
 End-users can access the Column Chooser through the grid's context menu by right-clicking on any column header and selecting **"Column Chooser"** from the menu. Alternatively, developers can show the Column Chooser programmatically.
 
-#### Show ColumnChooser Programmatically
+### Show ColumnChooser Programmatically
 
 ````C#
 radGridView1.ShowColumnChooser();
@@ -90,7 +90,7 @@ __AllowColumnChooser:__ This property determines whether the Column Chooser is a
 
 __AllowHide:__ This property determines whether the column is allowed to be moved to the Column Chooser. By default this property is set to *true* for all columns 
 
-#### Determines if the specified column is allowed to be dragged to the column chooser dialog
+### Determines if the specified column is allowed to be dragged to the column chooser dialog
 
 <snippet id='gridview-workingwithcolumnchooser-allowhide-cs' />
 <snippet id='gridview-workingwithcolumnchooser-allowhide-vb' />

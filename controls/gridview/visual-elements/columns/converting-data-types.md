@@ -20,7 +20,7 @@ For instance, instead of using [GridViewTextBoxColumn]({%slug winforms/gridview/
 
 As a quick example, let’s say that we want to convert char values Y and N to ToggleState values ToggleState.On and ToggleState.Off. To do this we will need to implement the ToggelStateConverter class that converts these values:
 
-#### ToggleState converter
+### ToggleState converter
 
 <snippet id='gridview-convertingdatatypes-converttypes-cs' />
 <snippet id='gridview-convertingdatatypes-converttypes-vb' />
@@ -33,7 +33,7 @@ __Setting the DataTypeConverter property of the column__
 
 The first approach to apply type converters is to create the desired column and assign its DataTypeConverter property. This approach is handy when you using non-business objects (such as  DataTable) or your business objects’ properties  do not have TypeConverterAttribute applied.
 
-#### Applying TypeConverter
+### Applying TypeConverter
 
 <snippet id='gridview-convertingdatatypes-applyingtypeconverters-cs' />
 <snippet id='gridview-convertingdatatypes-applyingtypeconverters-vb' />
@@ -51,7 +51,7 @@ The second way to add type converters is to use the __TypeConverterAttribute__, 
 
 The RadGridView’s conversation layer can handle null values. You can specify the default value that is committed to the source if the cell value is changed to null. GridViewDataColumn’s __DataSourceNullValue__ property can be set using the following code snippet:
 
-#### Handling null values
+### Handling null values
 
 <snippet id='gridview-convertingdatatypes-handlingnullvalues-cs' />
 <snippet id='gridview-convertingdatatypes-handlingnullvalues-vb' />
@@ -63,7 +63,7 @@ The type converter can be used when the column is sorted as well. To enable this
 >caution You should consider that the column can contain null values and handle this in the custom type converter class as well. The following code snipped shows a custom float type converter that handles null values:
 >
 
-#### Handling null values when sorting
+### Handling null values when sorting
 
 <snippet id='gridview-convertingdatatypes-float-cs' />
 <snippet id='gridview-convertingdatatypes-float-vb' />
