@@ -14,10 +14,10 @@ res_type: kb
 |Q2 2007|RadRibbonBar for WinForms|Iordan Pavlov|May 23, 2007|
 
  
-**HOW-TO**   
+## How To
 Adding a WinForms control to a Ribbon Bar  
    
-**SOLUTION**  
+## Solution
 Any Windows Forms control can be added to a Ribbon Bar. That can be done easily by using **RadHostItem**.   
    
 For example a Windows Forms DateTimePicker can be added to a Ribbon Bar with the following piece of code:   

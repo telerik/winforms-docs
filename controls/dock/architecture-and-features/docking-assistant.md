@@ -40,7 +40,7 @@ To un-tab a **ToolWindow**, drag the **ToolWindow** tab into a docking contain
 
 ![WinForms RadDock un-tab ToolWindow](images/dock-architecture-and-features-docking-assistant003.gif)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/dock/getting-started%})
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     

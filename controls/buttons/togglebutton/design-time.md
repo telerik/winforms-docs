@@ -33,6 +33,6 @@ Select __RadToggleButton__ and click the small arrow on the top right position i
 
 * __Search__: Search the Telerik site for a given string.
 
-# See Also
+## See Also
 * [Using default themes]({%slug winforms/themes/using-default-themes%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

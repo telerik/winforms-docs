@@ -28,7 +28,7 @@ The __CarouselPath__ property defines the route that the carousel items will be 
 
 * __InitialAngle__ , __FinalAngle__: The starting and ending number of degrees of the arc that defines the ellipse.  For example an __InitialAngle__ of zero and a __FinalAngle__ of 360 describes a complete ellipse.
 
-#### Defining ellipse path
+### Defining ellipse path
 
 <snippet id='carousel-using-radcarousel-carousel-path-definingellipsepath-cs'/>
 <snippet id='carousel-using-radcarousel-carousel-path-definingellipsepath-vb'/>
@@ -53,7 +53,7 @@ __Defining bezier path__
  
 
 
-# See Also
+## See Also
 
  * [RadCarousel Properties]({%slug winforms/carousel/properties%})
  * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})

@@ -19,7 +19,7 @@ __RadDiagram__ is capable of performing drag and drop operation using the native
 
 In order to achieve the desired result the MouseDown, MouseMove and MouseUp events need to be handled in the first diagram. The drag operation will be started in the handler of the MouseMove event. The second diagram instance needs to be subscribed to the DragEnter and DragDrop events.
 
-#### Subscribe to Events
+## Subscribe to Events
 
 <snippet id='diagram-ole-drag-and-drop-subscribeevents-cs'/>
 <snippet id='diagram-ole-drag-and-drop-subscribeevents-vb'/>
@@ -32,14 +32,14 @@ For the purpose of the example we will define a grid model object storing inform
 
 __RadDiagram__ will accept the dragged data only if it is dropped on the diagram element. The __PreviewDragDrop__ event handler will be responsible for reading the data and transforming it to a shape.
 
-#### Drag and Drop Events
+### Drag and Drop Events
 
 <snippet id='diagram-ole-drag-and-drop-handleevents-cs'/>
 <snippet id='diagram-ole-drag-and-drop-handleevents-vb'/>
 
 
 
-# See Also
+## See Also
 
 * [RadGridView]({%slug winforms/gridview%})
 * [Populating with Data]({%slug winforms/diagram/populating-with-data%})

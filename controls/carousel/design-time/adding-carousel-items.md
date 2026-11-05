@@ -36,7 +36,7 @@ The __Smart Tag__ of __RadCarousel__ lets you quickly access common tasks involv
 * __Search:__ Search the Telerik site for a given string.
 
 
-# See Also
+## See Also
 
  * [RadCarousel Properties]({%slug winforms/carousel/properties%})
  * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})

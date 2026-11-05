@@ -14,11 +14,11 @@ res_type: kb
 |Q2 2008|RadControls for WinForms|Dimitar Kapitanov|Sep 15, 2008| 
 
    
-**HOW-TO**
+## How To
 
 Wrap a .NET user control in an ActiveX class  
    
-**SOLUTION**
+## Solution
 
 Let's create a very simple example that includes a label and a button inside of a user control. When the button is clicked, the code in the Click event handler changes the text of the label.   
    
@@ -28,7 +28,7 @@ Create a new solution that includes a Windows Forms application (to test the fun
 ![wrapping-a-net-user-control-as-an-activex001](images/wrapping-a-net-user-control-as-an-activex001.jpg)
    
  
-**Setting up the library project**
+### Setting up the library project
 Open the library's **Property Settings** window and select the **Application **tab. You should see an *“Assembly Information…”* button - click on it and it will open a dialog form with various assembly settings.
  
 You will see a checkbox named *“Make assembly COM-visible”*. The checkbox must be checked. Also you will see a GUID field. It is used to set the ID of the typelib if this project is exposed to COM.
@@ -36,13 +36,13 @@ You will see a checkbox named *“Make assembly COM-visible”*. The checkbox mu
 ![wrapping-a-net-user-control-as-an-activex002](images/wrapping-a-net-user-control-as-an-activex002.jpg)
  
 
-**Setting up the build**  
+### Setting up the build
 If you want automatic registration of the freshly created ActiveX wrapper you should check the *“Register for COM interop”* checkbox in the **Build **tab of the settings form. It runs Regasm.exe after every build to register the types with COM (which you probably shouldn't do until you're stable because your COM GUIDs will change whenever you change the methods unless you specify GUIDs explicitly, so your registry could end up with a lot of registration junk for versions that will never be used): 
 
 ![wrapping-a-net-user-control-as-an-activex003](images/wrapping-a-net-user-control-as-an-activex003.jpg)
  
  
-**Signing the project**  
+### Signing the project
  If you're using VB.NET, you also need a strong named assembly. This is considered a good practice and it is good to do it for the C# project as well:
  
 ![wrapping-a-net-user-control-as-an-activex004](images/wrapping-a-net-user-control-as-an-activex004.jpg)
@@ -126,17 +126,17 @@ public static void UnregisterClass(string key)
 The methods have predefined names (RegisterClass and UnregisterClass) and should be marked respectively with the ComRegisterFunction/ComUnregisterFunction attributes. Here we register the category of the ActiveX as a UI control.
  
  
-**Testing the ActiveX control**
+### Testing the ActiveX control
  
 You can do so by using the tstcon32.exe tool (ActiveXControlTestContainer) that is provided with your Visual Studio installation. You can invoke it easily through the Visual Studio Command Prompt which has all variables and paths preset correctly.
 
  
-**Unlocking locked assemblies**
+### Unlocking locked assemblies
  
 You can end up with locked assemblies due to the tstcon32 test. What you can do is use a file unlock utility to kill the locking process. Then you could unregister the COM interface using the Regasm.exe /unregister option and then delete the file.
  
  
-**The sample project**  
+### The sample project
    
  You can find [here](https://github.com/telerik/winforms-sdk/tree/master/ActiveXTest) a sample project which follows the above approach. The UserControl has RadPanelBar, RadLabel and RadButton on it.
 

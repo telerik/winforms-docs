@@ -21,6 +21,6 @@ If you need to customize any of the **RadDiagram** shapes/connections you can us
 
 
  
-# See Also
+## See Also
 
 * [Custom shapes]({%slug winforms/diagram/custom-shapes%})

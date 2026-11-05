@@ -152,5 +152,5 @@ End Sub
 
 ````
 
->note The complete examples in C# and VB can be downloaded by clicking the following [link](https://github.com/telerik/winforms-sdk/tree/master/PageView/MultilinePageView).
+>note The complete examples in C# and VB can be downloaded by clicking the following [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/PageView/MultilinePageView).
 

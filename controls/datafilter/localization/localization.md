@@ -21,7 +21,7 @@ To localize **RadDataFilter** to display control text and messages in a specific
 
 Below is a sample implementation of an English localization provider:
 
-#### Localizing RadDataFilter Strings
+## Localizing RadDataFilter Strings
 
 <snippet id='datafilter-localization-mylocalizationprovider-cs' />
 <snippet id='datafilter-localization-mylocalizationprovider-vb' />
@@ -30,7 +30,7 @@ Below is a sample implementation of an English localization provider:
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider: 
 
-#### Assigning the Current Localization Provider
+## Assigning the Current Localization Provider
 
 <snippet id='datafilter-localization-applylocalizationprovider-cs' />
 <snippet id='datafilter-localization-applylocalizationprovider-vb' />
@@ -39,6 +39,6 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 The code provided above illustrates the approach to be used to localize the **RadDataFilter** and is not intended as a full translation.
 
-# See Also
+## See Also
 
 * [Rigth-To-Left Support]({%slug winforms/datafilter/right-to-left%})	

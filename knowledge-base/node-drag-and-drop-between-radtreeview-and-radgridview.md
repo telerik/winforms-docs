@@ -14,11 +14,11 @@ res_type: kb
 |Q2 2012|RadTreeView for WinForms|Svetlin Ralchev|May 11, 2012|
 
    
-**PROBLEM**  
+## Problem
    
 **RadTreeView** allows drag and drop between two different instances of **RadTreeView** out of the box. However, it does not support out of the box drag and drop of a node to a data cell in **RadGridView** and this is what we will look at in this article.  
    
-**SOLUTION**  
+## Solution
    
 In order to implement this feature, we need to handle the **PreviewDragOver** and **PreviewDragDrop** events of the **TreeViewDragDropService**. The steps below demonstrates how you can achieve the desired scenario:  
    
@@ -98,5 +98,5 @@ End Sub
 
 ````
 
->note You can download a complete VB and C# project from the following [link](https://github.com/telerik/winforms-sdk/tree/master/TreeView/TreeViewDragDropToGrid). 
+>note You can download a complete VB and C# project from the following [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/TreeView/TreeViewDragDropToGrid). 
 

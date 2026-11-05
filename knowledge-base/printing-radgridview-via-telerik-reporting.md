@@ -14,11 +14,11 @@ res_type: kb
 |Q2 2008|RadGridView for WinForms|Martin Vasilev|05/10/2008|
  
  
-**HOW-TO**
+## How To
  
 Generate a report based on RadGridView, and using the export capabilities of Telerik Reporting.
  
-**DESCRIPTION**
+## Description
  
 In [this code SDK project](https://github.com/telerik/winforms-sdk/tree/master/GridView/RadGridReportingLite) could be found a simple example that demonstrate how to easily export a single-level hierarchy RadGridView in a Telerik Reporting report. The report can then be printed or exported in a variety of formats.   
 
@@ -54,7 +54,7 @@ bool UseGridColors – Controls whether the report uses the header colors from R
  
 *ReportFormShow(IWin32Window owner, RadGridView radGridView)* - generate and show the report.  
    
-**SOLUTION**
+## Solution
  
 1. Add a reference to RadGridReportingLite.dll in your project (the library project could be find in [our GitHub SDK repository](https://github.com/telerik/winforms-sdk/tree/master/GridView/RadGridReportingLite).
 2. Create an instance of RadGridReport:   

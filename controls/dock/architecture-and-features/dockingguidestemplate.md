@@ -60,7 +60,7 @@ As you can see in the code snippet, we are setting the __DockingHintBackColor__ 
 
 ![WinForms RadDock DockingHintBackColor and DockingHintBorderColor](images/dock-architecture-and-features-docking-guides-template015.png)
 
-# See Also
+## See Also
 
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
 * [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})

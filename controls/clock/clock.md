@@ -50,7 +50,7 @@ __RadClock__ is a control which allows the developers to use it in their applica
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/clock/structure%})
 * [Getting Started]({%slug winforms/clock/getting-started%})

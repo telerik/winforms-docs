@@ -25,7 +25,7 @@ position: 9
 |**ShowMessagesOnOneSide**|Gets or sets whether messages will be displayed aligned to only one side of the chat window or on both.|
 |**TimeSeparatorInterval**|Gets or sets the time interval between messages that will trigger the automatic addition of a time separator. If set to TimeSpan.Zero, no time separators will be added.|
 
-# RadChatElement's Properties
+## RadChatElement's Properties
 
 |Property|Description|
 |------|------|
@@ -53,7 +53,7 @@ position: 9
 |**IsMoreButtonVisible**|Gets or sets a value indicating whether the More button is visible.|
 |**MaxVisibleAttachments**|Gets or sets the maximum number of visible attachment rows before scrolling.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|
@@ -64,9 +64,9 @@ position: 9
 |**RemoveFromReply**|Removes a specific message from the current multi-reply list.|
 |**CancelReply**|Cancels the current reply operation and hides the reply preview.|
 
-# Events
+## Events
 
-## RadChat Events
+### RadChat Events
 
 |Event|Description|
 |------|------|
@@ -79,7 +79,7 @@ position: 9
 |**AttachmentActionRequested**|Occurs when the user invokes an attachment action (Download or Share) on a chat message. Set Handled to true to suppress the default behavior.|
 |**AttachedFilesChanged**|Occurs after the prompt input attached files collection changes (file added or removed).|
 
-## RadChatElement Events
+### RadChatElement Events
 
 |Event|Description|
 |------|------|
@@ -91,7 +91,7 @@ position: 9
 |**MessageEdited**|Occurs when a message has been edited.|
 |**MessageDeleted**|Occurs when a message has been deleted.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radchat.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radchat.html#methods)

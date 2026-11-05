@@ -17,7 +17,7 @@ You can access and modify the style for different elements in __RadDataEntry__ b
 
 ![WinForms RadDataLayout Element Hierarchy Editor](images/datalayout-customizing-appearance001.png)   
 
-# Changing the styles of the underlying items and controls
+## Changing the styles of the underlying items and controls
 
 The following snippet shows how you access the underlying controls and change their style:
 
@@ -31,7 +31,7 @@ The following snippet shows how you access the underlying controls and change th
 
 ![WinForms RadDataLayout Change the Items Styles](images/datalayout-customizing-appearance002.png)   
 
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/datalayout/control-element-structure%})
  * [Getting Started]({%slug winforms/datalayout/getting-started%})

@@ -42,7 +42,7 @@ When a **ToolWindow** is auto-hidden, it has a default size of (200, 200). Howev
 >note RadDock memorizes the size of an Auto-hide window set by the user at run time. I.e. when a user sets a ToolWindow to Auto-hide, then re-sizes the Auto-hide window by a mouse drag and drop operation, then docks and then sets the ToolWindow back to Auto-hide, the new Auto-hide window will have the size set by the user's mouse drag and drop operation.
 >
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/dock/getting-started%})
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     

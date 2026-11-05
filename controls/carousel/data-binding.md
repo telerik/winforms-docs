@@ -28,7 +28,7 @@ The example below creates a generic list of an object called "Feature". "Feature
 
 ![WinForms RadCarousel Data Binding Example](images/carousel-using-radcorousel-carousel-data-binding001.png)
 
-#### The Features Object
+### The Features Object
 
 <snippet id='carousel-data-binding-creategenericlistclass-cs'/>
 <snippet id='carousel-data-binding-creategenericlistclass-vb'/>
@@ -36,7 +36,7 @@ The example below creates a generic list of an object called "Feature". "Feature
  
 
 
-#### Binding RadCarousel to Generic List
+### Binding RadCarousel to Generic List
 
 <snippet id='carousel-data-binding-bindingcarousel-cs'/>
 <snippet id='carousel-data-binding-bindingcarousel-vb'/>
@@ -44,7 +44,7 @@ The example below creates a generic list of an object called "Feature". "Feature
  
 
 
-# See Also
+## See Also
 
  * [Customize Appearance]({%slug winforms/carousel/customizing-appearance%})
  * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})

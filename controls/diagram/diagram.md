@@ -90,7 +90,7 @@ Here is a list with short descriptions of the top-of-the-line features of __RadD
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/diagram/structure%})
 * [Design Time]({%slug winforms/diagram/design-time%})

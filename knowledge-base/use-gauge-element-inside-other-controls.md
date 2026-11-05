@@ -131,6 +131,6 @@ End Sub
 
 ````
 
->note A complete sample application on VB and C# can be found [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/UseGaugeElementInRadGridView).
+>note A complete sample application on VB and C# can be found in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/GridView/UseGaugeElementInRadGridView).
 
 

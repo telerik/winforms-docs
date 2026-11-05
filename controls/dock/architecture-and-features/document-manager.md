@@ -20,7 +20,7 @@ This property allows you to get the currently active document among the document
 
 ![WinForms RadDock ActiveDocument](images/raddock-document-manager001.png)        
 
-#### Get the active DocumentWindow\ToolWindow 
+### Get the active DocumentWindow\ToolWindow 
 <snippet id='dock-document-manager-activewindows-cs' />
 <snippet id='dock-document-manager-activewindows-vb' />
 
@@ -30,7 +30,7 @@ This property allows you to get the currently active document among the document
  
 Determines whether the currently active document's **Text** will be displayed in bold Font in its corresponding TabItem. The **ActiveDocument** in the screenshot below is *DocumentWindow2*, but its text is not bold due to setting the __BoldActiveDocument__ to *false*: 
 
-#### Use the __BoldActiveDocument__ property
+### Use the __BoldActiveDocument__ property
 
 <snippet id='dock-document-manager-boldactive-cs' />
 <snippet id='dock-document-manager-boldactive-vb' />
@@ -41,7 +41,7 @@ Determines whether the currently active document's **Text** will be displayed i
 
 Gets or sets the insert order to be used when adding new documents. By default, the insert order is set to *InFront* and the behavior resembles the behavior of VisualStudio. The screenshot below shows what happens after three clicks on the **Add Document** button when __DocumentInsertOrder__ is set to *Default* or *InFront*: 
 
-#### Set the __DocumentInsertOrder__ property
+### Set the __DocumentInsertOrder__ property
 
 <snippet id='dock-document-manager-insertorderinfront-cs' />
 <snippet id='dock-document-manager-insertorderinfront-vb' />
@@ -54,7 +54,7 @@ Gets or sets the insert order to be used when adding new documents. By default, 
 
 The other available option for this property is *ToBack.* The behavior of **DocumentTabStrip** in this case resembles the behavior of most web browsers. The screenshot below demonstrates what happens after three clicks on the **AddDocument** button: 
 
-#### Use the *ToBack* insert order
+### Use the *ToBack* insert order
 
 <snippet id='dock-document-manager-insertordertoback-cs' />
 <snippet id='dock-document-manager-insertordertoback-vb' />
@@ -65,7 +65,7 @@ The other available option for this property is *ToBack.* The behavior of **Docu
 
 ![WinForms RadDock New Document windows are inserted after the first window](images/dock-architecture-and-features-document-manager003.png) 
 
-#### ActiveDocumentMenuSortOrder
+### ActiveDocumentMenuSortOrder
 
 This property is an enumeration that Gets or sets the order of the document menu items that appear in the drop-down list. By default, they are alphabetically ordered. This property exposes the following values:
 
@@ -88,7 +88,7 @@ Me.RadDock1.DocumentManager.ActiveDocumentMenuSortOrder = ActiveDocumentMenuSort
 
 ![WinForms RadDock ActiveDocumentMenuSortOrder](images/dock-architecture-and-features-document-manager004.png) 
       
-# See Also
+## See Also
 
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
 * [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})

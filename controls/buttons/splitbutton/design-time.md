@@ -55,6 +55,6 @@ In the property grid you will find many of the standard control properties, incl
 * Use __CheckOnClick__ to toggle a check mark next to a __RadMenuItem__. This property is appropriate to use when the item doesn't contain sub items.
 
 
-# See Also
+## See Also
 * [Using default themes]({%slug winforms/themes/using-default-themes%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

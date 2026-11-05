@@ -23,6 +23,6 @@ position: 1
 |----|----|
 |![WinForms RadDataFilter RightToLeft No](images/datafilter-localization-right-to-left-support001.png)|![WinForms RadDataFilter RightToLeft Yes](images/datafilter-localization-right-to-left-support002.png)|
 
-# See Also
+## See Also
 
 * [Localization]({%slug winforms/datafilter/localization%})	

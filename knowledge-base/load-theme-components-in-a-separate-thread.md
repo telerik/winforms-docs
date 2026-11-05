@@ -90,7 +90,7 @@ In this case we get an average timespan of 890 ms. This result compared to the 1
  
 ![Telerik UI for WinForms application with the Office2007Black theme loaded after background theme initialization.](/Images/office2007blackthemeloaded.png)
    
->note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/ThemeLoader).  
+>note A complete solution in C# and VB.NET can be found in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/ThemeLoader).  
 
 
 

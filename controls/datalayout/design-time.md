@@ -47,7 +47,7 @@ The selection glyph is an arrow that is shown when a control in the layout panel
 
 ![WinForms RadDataLayout Selection Glyph](images/datalayout-design-time005.png)
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug winforms/datalayout/getting-started%})
 

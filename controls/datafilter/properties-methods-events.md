@@ -37,13 +37,13 @@ The **DataFilterCriteriaElement** class also defines three static properties res
 * DataFilterCriteriaElement.**DefaultOperatorWidth**: default width of the operator element. 
 * DataFilterCriteriaElement.**DefaultValueWidth**: default width of the value element.
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |**ApplyFilter**|Forces the filter to be applied to the source collection.|
 
-# RadDataFilterElement's Methods
+## RadDataFilterElement's Methods
 
 |Method|Description|
 |----|----|
@@ -56,7 +56,7 @@ The **DataFilterCriteriaElement** class also defines three static properties res
 |**GetEditorType(Type valueType)**|Returns the relevant editor by the specified type.|
 |**GetFieldType(string propertyName)**|Returns the relevant editor for the specified field.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
@@ -74,7 +74,7 @@ The **DataFilterCriteriaElement** class also defines three static properties res
 
 >note Note that **RadDataFilter** is a derivative of **RadTreeView**. Properties, methods and events relevant for **RadTreeView** can be used in **RadDataFilter** as well.
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddatafilter.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddatafilter.html#methods)

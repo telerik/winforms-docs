@@ -14,10 +14,10 @@ res_type: kb
 |Q1 2007|RadControls for WinForms|Dimitar Kapitanov|Feb. 22, 2007| 
 
   
-**HOW-TO**  
+## How To
  Use RadControls for WinForms inside a WinForms validation process  
    
-**SOLUTION**  
+## Solution
 All controls provided in the RadControls for WinForms suite support the validation handling, provided by windows forms. The validation mechanism in WinForms is somewhat cumbersome, too simple for most cases, and not very well implemented, however when properly used it allows to accomplish different validation scenarios.  
    
 We have a simple example in our Quick Start Framework application that we will explain in more detail here. In this demonstration we will use a RadTabStrip control that has its **CausesValidation** property set to **true**, and a textbox which has a “non empty” condition – this means that the textbox will validate to false if left empty.   

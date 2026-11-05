@@ -46,7 +46,7 @@ previous_url: /devtools/winforms/desktopalert/desktopalert-customizations
 ![WinForms RadDesktopAlert Properties Methods Events](images/desktopalert-properties-methods-events001.png)
  
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
@@ -54,7 +54,7 @@ previous_url: /devtools/winforms/desktopalert/desktopalert-customizations
 |__Hide__|Hides the alert pop up from the screen.|
 |__ResetLocationModifier__|Resets the explicit location modifier. In other words, if the user has modified the location of the alert's pop up, the __DesktopAlertManager__ will not consider it when rearranging the visible alerts. This method will reset the explicit location modifier and thus the __DesktopAlertManager__ will continue managing the location of the alert according to its location settings.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
@@ -64,7 +64,7 @@ previous_url: /devtools/winforms/desktopalert/desktopalert-customizations
 |__Closed__|Fires when the alert's pop up was closed.|
 
 
-# See Also 
+## See Also 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddesktopalert.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddesktopalert.html#methods)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddesktopalert.html#events)

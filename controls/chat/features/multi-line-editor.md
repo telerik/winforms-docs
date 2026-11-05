@@ -28,7 +28,7 @@ The multi-line input editor in __RadChat__ provides the following behaviors:
 
 The `MaxInputLines` property on the `InputTextBox` element controls how many lines the editor displays before showing a scrollbar. The default value is 5.
 
-#### __Setting the maximum input lines__
+### __Setting the maximum input lines__
 
 ````C#
 ChatInputTextBoxElement inputBox = (ChatInputTextBoxElement)this.radChat1.ChatElement.InputTextBox;
@@ -43,7 +43,7 @@ Setting `MaxInputLines` to 1 effectively disables auto-grow and keeps the input 
 
 You can also access this property through the `PromptInputElement`:
 
-#### __Setting maximum input lines via PromptInputElement__
+### __Setting maximum input lines via PromptInputElement__
 
 ````C#
 this.radChat1.ChatElement.PromptInputElement.MaxInputLines = 10;
@@ -66,7 +66,7 @@ The multi-line editor uses the following keyboard shortcuts:
 
 The input text box is exposed as a `RadTextBoxElement` through the `RadChat.ChatElement.InputTextBox` property. The underlying implementation is the `ChatInputTextBoxElement` class which extends `RadTextBoxElement` with auto-grow capabilities.
 
-#### __Accessing and customizing the input text box__
+### __Accessing and customizing the input text box__
 
 ````C#
 RadTextBoxElement inputTextBox = this.radChat1.ChatElement.InputTextBox;

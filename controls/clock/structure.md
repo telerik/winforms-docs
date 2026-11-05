@@ -22,7 +22,7 @@ position: 1
 
 ![WinForms RadClock Structure](images/clock-structure002.png)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/clock/design-time%})
 * [Getting Started]({%slug winforms/clock/getting-started%})

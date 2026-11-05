@@ -14,7 +14,7 @@ previous_url: chartview-series-types-stepline
 
 __SteplineSeries__ plot their Categorical data points on Cartesian Area using one categorical and one numerical axis. Points are connected with two straight lines one horizontal and one vertical with an 90° angle between them. Here is how to set up two stepline series:
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-stepline-initialize-cs'/>
 <snippet id='chartview-stepline-initialize-vb'/>
@@ -43,7 +43,7 @@ The essential properties of SteplineSeries are:
 >caption Figure 4: Stack100
 ![WinForms RadChartView Stepline Stack00](images/chartview-series-types-stepline003.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

@@ -23,7 +23,7 @@ __Ohlc__ and __Candlestick__ series are indeed two alternative ways to visualize
 
 Here is how to setup Ohlc series: 
 
-#### Initial Setup OhlcSeries
+## Initial Setup OhlcSeries
 
 <snippet id='chartview-ohlc-and-candlestick-ohlc-cs'/>
 <snippet id='chartview-ohlc-and-candlestick-ohlc-vb'/>
@@ -35,7 +35,7 @@ Here is how to setup Ohlc series:
 
 Here is how to setup Candlestick series:
 
-#### Initial Setup CandlestickSeries
+## Initial Setup CandlestickSeries
 
 <snippet id='chartview-ohlc-and-candlestick-candlestick-cs'/>
 <snippet id='chartview-ohlc-and-candlestick-candlestick-vb'/>
@@ -45,7 +45,7 @@ Here is how to setup Candlestick series:
 >caption Figure 2: Initial Setup CandlestickSeries
 ![WinForms RadChartView Initial Setup CandlestickSeries](images/chartview-series-types-ohlc-and-candlestick004.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

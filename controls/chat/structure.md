@@ -60,7 +60,7 @@ This article will get you familiar with the internal elements structure of **Rad
  3. **FlightCardAirportInfo** - represents a single flight information element.
  4. **LightVisualElement** - represents a single text/image element in the card.
 
-# See Also
+## See Also
 
 * [Overview]({%slug winforms/chat/overview%})
 * [Getting Started]({%slug winforms/chat/getting-started%})

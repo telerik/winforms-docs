@@ -29,14 +29,14 @@ Below is a sample implementation of an English localization provider:
 
 To apply the custom localization provider, instantiate and assign it to the current localization provider:
 
-#### Assigning the Current Localization Provider
+## Assigning the Current Localization Provider
 
 <snippet id='datalayout-localization-setprovider-cs' />
 <snippet id='datalayout-localization-setprovider-vb' />
 
 
 
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/datalayout/control-element-structure%})
  * [Getting Started]({%slug winforms/datalayout/getting-started%})

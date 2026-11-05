@@ -14,7 +14,7 @@ previous_url: chartview-series-types-line
 
 __LineSeries__ plot their Categorical data points on Cartesian Area using one categorical and one numerical axis. Points are connected with either straight lines or large smooth curves (Spline). Here is how to set up two line series: 
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-line-line-cs'/>
 <snippet id='chartview-line-line-vb'/>
@@ -41,7 +41,7 @@ The essential properties of __LineSeries__ are:
 >caption Figure 2: Combine Mode
 ![WinForms RadChartView Line Combine Mode](images/chartview-series-types-line002.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

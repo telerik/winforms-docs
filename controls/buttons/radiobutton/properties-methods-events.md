@@ -26,14 +26,14 @@ position: 4
 
 >note **AutoCheck** property is available as of R3 2023. When the **RadRadioButton** is part of a group and the **AutoCheck** property is set to *true*, this ensures that only one radio button is checked at a given time. If the **AutoCheck** property is set to *false*, the group of buttons will not act as a mutually exclusive group and the **IsChecked** property should be updated in code.
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |__PerformClick__|Generates a Click event for a radio button.||
 
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
@@ -45,7 +45,7 @@ position: 4
 >important Due to the specifics of the [simple data binding](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding(v=vs.110).aspx) we have introduced the __CheckStateChanging__ and __CheckStateChanged__ events together with the __CheckState__ property. These events and property provide the same functionality as the __ToggleStateChanged__, __ToggleStateChanging__ and the __ToggleState__ property, but give you the ability to simple data bind the control.
 >
 
-# See Also 
+## See Also 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radradiobutton.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radradiobutton.html#methods)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radtogglebutton.html#events)

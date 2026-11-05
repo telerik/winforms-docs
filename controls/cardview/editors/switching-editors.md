@@ -18,14 +18,14 @@ The following example shows how you can change the editor type:
 >caption Figure 1: Changed Editors
 ![WinForms RadCardView Changed Editors](images/cardview-editors-switching-editors001.gif)
 
-#### Changing Editor Type
+## Changing Editor Type
 
 <snippet id='cardview-editors-switching-editors-changingeditortype-cs'/>
 <snippet id='cardview-editors-switching-editors-changingeditortype-vb'/>
 
 
 
-# See Also
+## See Also
 
 * [Editors Overview]({%slug winforms/cardview/editors/overview%})
 * [Custom Items]({%slug winforms/cardview/custom-items%})

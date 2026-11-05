@@ -157,4 +157,4 @@ Here is the workflow of the sample application:
    
 So, this is it. Now you can be safe that the end-users will not try to End Task your applications, since the UI will no longer seem frozen.
 
->note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/Genral_All_Controls/IndicatingOperations).
+>note A complete solution in C# and VB.NET can be found in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/Genral_All_Controls/IndicatingOperations).

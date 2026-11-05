@@ -14,7 +14,7 @@ previous_url: chartview-series-types-bubble
 
 __BubbleSeries__ are used to visualize data points as points with coordinates and size defined by their items' values. You might think of a Bubble chart as a variation of the Scatter chart, in which the data points are replaced with bubbles. 
 
-#### Initial Setup
+## Initial Setup
  
 <snippet id='chartview-bubble-bubble-cs'/>
 <snippet id='chartview-bubble-bubble-vb'/>
@@ -38,7 +38,7 @@ Here are some of the important properties of __BubbleSeries__:
 
 * __AutoScaleMaxWidth:__ The maximum size in pixels of a single bubble when __AutoScale__ is *true*.
             
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

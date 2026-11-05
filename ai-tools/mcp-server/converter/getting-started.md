@@ -77,14 +77,14 @@ Open the AI chat in 'Agent' mode and use one of the pre-built prompts from the M
 
 **Migrate the entire project (directly applies changes, each converted file is backed up as a .bak file before being overwritten):**
 
-```
+```text
 Migrate this WinForms application to Telerik UI for WinForms. Use the Telerik MCP tools to guide each step — start with telerik_get_migration_plan and follow its workflow. Try to preserve all existing functionality. Do not guess package names, do not create stub controls, do not batch-convert files.
 
 ```
 
 **Migrate with a dry run (preview changes before applying, takes more time and consumes more resources):**
 
-```
+```text
 Migrate this WinForms application to Telerik UI for WinForms. Use the Telerik MCP tools to guide each step — start with telerik_get_migration_plan and follow its workflow. Try to preserve all existing functionality. Do not guess package names, do not create stub controls, do not batch-convert files. Use dryRun mode when calling telerik_convert_file so I can review each file's changes before they are applied.
 
 ```
@@ -160,11 +160,11 @@ At the end, you will have the WinForms app converted to use Telerik UI for WinFo
 
 Below you can see the result after conversion completes:
 
-#### Before conversion (Microsoft WinForms):
+### Before conversion (Microsoft WinForms):
 
 ![Microsoft WinForms application before migration to Telerik UI for WinForms controls](images/converter-app-before.png)
 
-#### After conversion (Telerik UI for WinForms):
+### After conversion (Telerik UI for WinForms):
 
 ![Telerik UI for WinForms application after migration from Microsoft WinForms controls](images/converter-app-after.png)
 

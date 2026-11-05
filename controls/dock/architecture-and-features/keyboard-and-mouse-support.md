@@ -23,7 +23,7 @@ __Esc:__ Cancels a drag operation, but does not revert to the initial state. I.
 
 __Double click:__ Double-clicking the title bar of a **ToolWindow** un-docks the panel so that it floats. Double-clicking the title bar of a floating window maximizes the **ToolWindow**.
 
-# See Also
+## See Also
 
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
 * [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})

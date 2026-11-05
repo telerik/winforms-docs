@@ -36,7 +36,7 @@ CTAControlName: Calculator
 |**ValueChanging**|Fired when the display value is about to be changed.|
 |**ValueChanged**|Fired when the displayed value has been changed.|
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug calculator-getting-started%})
 * [Design Time]({%slug calculator-design-time%})

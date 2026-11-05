@@ -31,7 +31,7 @@ The attachment system uses the `PromptInputAttachedFile` class as the data model
 
 File upload is available through the **More** button in the input area. To show the **More** button, set the `IsMoreButtonVisible` property to `true`:
 
-#### __Showing the More button to enable file upload__
+### __Showing the More button to enable file upload__
 
 ````C#
 this.radChat1.IsMoreButtonVisible = true;
@@ -48,7 +48,7 @@ The **Plus** button provides two default actions: **Attach File** (all file type
 
 You can add files to the input area programmatically through the `AttachedFiles` collection on the `PromptInputElement`:
 
-#### __Adding a file attachment programmatically__
+### __Adding a file attachment programmatically__
 
 ````C#
 PromptInputAttachedFile file = new PromptInputAttachedFile(new System.IO.FileInfo(@"C:\Documents\report.pdf"));
@@ -61,7 +61,7 @@ Me.RadChat1.ChatElement.PromptInputElement.AttachedFiles.Add(file)
 
 You can also create a `PromptInputAttachedFile` manually by setting the `FileName`, `FileSize`, and `GetFileStream` properties:
 
-#### __Creating an attachment from a stream__
+### __Creating an attachment from a stream__
 
 ````C#
 PromptInputAttachedFile file = new PromptInputAttachedFile();
@@ -86,7 +86,7 @@ When files are attached, they appear in the `PromptInputAttachedFilesElement` ar
 
 The `MaxVisibleAttachments` property controls how many attachment rows are visible before the area becomes scrollable:
 
-#### __Setting the maximum visible attachments__
+### __Setting the maximum visible attachments__
 
 ````C#
 this.radChat1.MaxVisibleAttachments = 5;
@@ -101,7 +101,7 @@ The default value is 3.
 
 When the user presses **Send** (or `Enter`), __RadChat__ creates a `ChatTextMessage` that includes both the typed text and the attached files. The `ChatTextMessage` constructor accepts an optional `IEnumerable<PromptInputAttachedFile>` parameter:
 
-#### __Creating a message with attachments programmatically__
+### __Creating a message with attachments programmatically__
 
 ````C#
 List<PromptInputAttachedFile> files = new List<PromptInputAttachedFile>

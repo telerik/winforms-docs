@@ -33,7 +33,7 @@ Here is what __CartesianPlotBandAnnotation__ looks like:
 >caption Figure 1: CartesianPlotBandAnnotation
 ![WinForms RadChartView Cartesian Plot Band Annotation](images/chartview-annotations-plotband-annotations001.png)
 
-#### Plot Band Annotation Setup
+### Plot Band Annotation Setup
 
 <snippet id='chartview-plot-band-cartesianplotband-cs'/>
 <snippet id='chartview-plot-band-cartesianplotband-vb'/>
@@ -59,7 +59,7 @@ Here is what __PolarAxisPlotBandAnnotation__ looks like:
 >caption Figure 2: PolarAxisPlotBandAnnotation
 ![WinForms RadChartView Polar Axis Plot Band Annotation](images/chartview-annotations-plotband-annotations002.png)
 
-#### Polar Axis Annotation
+### Polar Axis Annotation
 
 <snippet id='chartview-plot-band-polarplotband-cs'/>
 <snippet id='chartview-plot-band-polarplotband-vb'/>
@@ -81,7 +81,7 @@ A plot band starting from *180* degrees and ending in *270* degrees will look li
 >caption Figure 3: RadialAxisPlotBandAnnotation
 ![WinForms RadChartView Radial Axis Plot Band Annotation](images/chartview-annotations-plotband-annotations003.png)
 
-#### Radial Axis Annotations
+### Radial Axis Annotations
 
 <snippet id='chartview-plot-band-radialplotband1-cs'/>
 <snippet id='chartview-plot-band-radialplotband1-vb'/>
@@ -93,7 +93,7 @@ If you wonder how to annotate the bigger segment from the image above, then you 
 >caption Figure 3: Annotated Bigger Segment
 ![WinForms RadChartView Annotated Bigger Segment](images/chartview-annotations-plotband-annotations004.png)
 
-#### Define Bigger Segment
+### Define Bigger Segment
 
 <snippet id='chartview-plot-band-radialplotband2-cs'/>
 <snippet id='chartview-plot-band-radialplotband2-vb'/>
@@ -106,7 +106,7 @@ Properties:
 
 * __To__ (of type object): Tthe ending point for the plot band. When the Radial axis is __NumericRadialAxis__ a numeric value is expected and when it is a __CategoricalRadialAxis__ - a category.
 
-# See Also
+## See Also
 
 * [Annotations]({%slug winforms/chartview-/features/annotations%})
 * [Axes]({%slug winforms/chartview-/axes%})

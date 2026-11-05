@@ -19,7 +19,7 @@ __RadChartView__ can be associated with a __RadRangeSelector__ control. This int
 Detailed information on how __RadRangeSelector__ can be setup to be associated with __RadChartView__ is available in the following section of our documentation: [RadRangeSelector]({%slug winforms/rangeselector/overview%}).
 
 
-# See Also
+## See Also
 * [RadRangeSelector]({%slug winforms/rangeselector/overview%}) 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})

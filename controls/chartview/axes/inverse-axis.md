@@ -18,7 +18,7 @@ The __IsInverse__ property of the abstract __LineAxis__ class determines whether
 
 This example will demosntrate the depths of crude oil wells in the period between 1988 and 2008.
 
-#### Axis Inversion
+### Axis Inversion
 
 <snippet id='chartview-inverse-axis-inverse-axis-cs'/>
 <snippet id='chartview-inverse-axis-inverse-axis-vb'/>
@@ -28,7 +28,7 @@ This example will demosntrate the depths of crude oil wells in the period betwee
 >caption Figure 1: Inverse Axis
 ![WinForms RadChartView Inverse Axis](images/chartview-axes-inverse-axis001.png)
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

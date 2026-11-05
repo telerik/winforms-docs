@@ -31,7 +31,7 @@ Here is what __CartesianGridLineAnnotation__ looks like:
 >caption Figure 1: CartesianGridLineAnnotation
 ![WinForms RadChartView Cartesian Grid Line Annotation](images/chartview-annotations-gridline-annotations001.png)
 
-#### Cartesian Grid Line Setup
+### Cartesian Grid Line Setup
 
 <snippet id='chartview-grid-line-cartesiangridline-cs'/>
 <snippet id='chartview-grid-line-cartesiangridline-vb'/>
@@ -57,7 +57,7 @@ Here is what __PolarAxisGridLineAnnotation__ looks like:
 >caption Figure 2: PolarAxisGridLineAnnotation
 ![WinForms RadChartView Polar Axis Grid Line Annotation](images/chartview-annotations-gridline-annotations002.png)
 
-#### Plar Grid Line Setup
+### Plar Grid Line Setup
 
 <snippet id='chartview-grid-line-polargridline-cs'/>
 <snippet id='chartview-grid-line-polargridline-vb'/>
@@ -86,7 +86,7 @@ Property:
 
 * __Value__ (of type object): Specifies the location on the Radial axis, where the grid line will cross. When the Radial axis is __NumericRadialAxis__ a numeric value is expected and when it is a __CategoricalRadialAxis__ - a category
             
-# See Also
+## See Also
 
 * [Annotations]({%slug winforms/chartview-/features/annotations%})
 * [Axes]({%slug winforms/chartview-/axes%})

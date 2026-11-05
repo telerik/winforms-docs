@@ -46,7 +46,7 @@ The chart series also have a mechanism for combining data points that reside in 
 
 * __Stack100:__ Presents the values of one series as a percentage of the other series.
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

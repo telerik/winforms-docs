@@ -17,7 +17,7 @@ position: 5
 |---|---|
 |__ShowColumnHeaders__|Gets or sets a value indicating whether the column headers are visible.|
 |__MasterView__|Gets the top-most GridViewInfo level of the grid. This class contains logical information about visual presentation of flat tabular data in RadGridView.|
-|__ChildRows__|This collection contains the Rows that currently visible in the grid. More information is  available [here]({%slug winforms/gridview/rows/rows-vs-childrows%})|
+|__ChildRows__|This collection contains the Rows that currently visible in the grid. More information is available in [Rows vs. ChildRows]({%slug winforms/gridview/rows/rows-vs-childrows%})|
 |__IsCurrentRowDirty__|Gets a value indicating whether the current row has changes that are not committed.|
 |__StandardTab__|Gets or sets a value indicating whether the TAB key moves the focus to the next control in the tab order rather than moving focus to the next cell in the control.|
 |__EnterKeyMode__|Gets or sets value specifying the behavior when the user presses Enter.|
@@ -135,5 +135,5 @@ The following table list the properties exposed by __RadGridView.TableElement__:
 
 __Begin/End Update__
 
-The Begin/End Update block should be used when a repeated operation that affects grid layout is performed several times. This block will suspend the grid layout and it will be updated only once when the EndUpdate method is called. An example is available [here]({%slug winforms/gridview/cells/accessing-cells%})
+The Begin/End Update block should be used when a repeated operation that affects grid layout is performed several times. This block will suspend the grid layout and it will be updated only once when the EndUpdate method is called. An example is available [Accessing Cells]({%slug winforms/gridview/cells/accessing-cells%})
 

@@ -19,21 +19,21 @@ position: 4
 |CheckState|  Gets or sets the CheckState. CheckState enumeration defines the following values:  *Unchecked*, *Checked*, and *Indeterminate*.|
 
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |PerformClick|Generates a Click event for a check box.|
 
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
 |CheckStateChanging|Occurs before the element's state changes.|
 |CheckStateChanged|Occurs when the element's state changes.|
         
-# See Also 
+## See Also 
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcheckbox.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcheckbox.html#methods)

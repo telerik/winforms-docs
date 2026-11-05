@@ -14,7 +14,7 @@ previous_url: chartview-series-types-scatter
 
 Unlike Categorical series, __ScatterSeries__ plots its data upon two numerical axes. Scatter series identify the position of each __ScatterDataPoint__ using two numerical values - *XValue* and *YValue* for the horizontal and vertical axes respectively, just like in the typical Cartesian coordinate system. Here is how to create two ScatterSeries and populate them manually:
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-scatter-scatter-cs'/>
 <snippet id='chartview-scatter-scatter-vb'/>
@@ -34,7 +34,7 @@ __ScatterSeries__ have few important properties:
 
 * __Shape:__ To change the shape of a series points use the Shape property of the series 
 
-#### Custom Shape
+## Custom Shape
 
 <snippet id='chartview-scatter-shape-cs'/>
 <snippet id='chartview-scatter-shape-vb'/>
@@ -44,7 +44,7 @@ __ScatterSeries__ have few important properties:
 >caption Figure 2: Custom Shape
 ![WinForms RadChartView Scatter Custom Shape](images/chartview-series-types-scatter002.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

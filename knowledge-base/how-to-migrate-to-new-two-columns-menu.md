@@ -14,11 +14,11 @@ res_type: kb
 |Q2 2008|RadMenu and RadApplicationMenu for WinForms|Peter Petrov||
 
    
-**HOW-TO**:  
+## How To
 
 Migrate a two columns RadMenu to the new ApplicationMenu (available from Q2 2008).  
    
-**SOLUTION:**
+## Solution
 Change the type menu type (issually Designer.cs or Designer.vb) **RadDropDownButtonElement** to **RadApplicationMenuButtonElement.**  
 
 The items should be added not via **RadApplicationMenuDropDown.RightColumnItems**  

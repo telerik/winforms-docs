@@ -25,7 +25,7 @@ The following example demonstrates how you can hide the **Close** options from t
  
 Let's get the **ContextMenuService** and subscribe to its **ContextMenuDisplaying** event:
 
-#### Getting the ContextMenuService 
+### Getting the ContextMenuService 
 
 <snippet id='dock-using-the-contextmenuservice-gettingcontextmenuservice-cs' />
 <snippet id='dock-using-the-contextmenuservice-gettingcontextmenuservice-vb' />
@@ -34,7 +34,7 @@ Let's get the **ContextMenuService** and subscribe to its **ContextMenuDisplayi
 
 Then, hide the 'Close' options in the **ContextMenuDisplaying** event handler:
 
-#### Hiding the 'close' menu items 
+### Hiding the 'close' menu items 
 
 <snippet id='dock-using-the-contextmenuservice-handlingcontextmenudisplaying-cs' />
 <snippet id='dock-using-the-contextmenuservice-handlingcontextmenudisplaying-vb' />
@@ -63,7 +63,7 @@ You can notice in the code snippet above that we are using the __Name__ property
 |Hide|Hidden|
 | *Document Name* |ActivateWindow|
 
-# See Also
+## See Also
 
 [Getting Started]({%slug winforms/dock/getting-started%})
 [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%}) 

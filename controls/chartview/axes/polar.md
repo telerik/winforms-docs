@@ -22,7 +22,7 @@ The __PolarAxis__ is special axis rendered as a fixed line in a system of polar 
 
 Polar axis is created by default when you add Polar or Radar series to the Polar Area of __RadChartView__. Here is how to set the MajorStep and Maximum properties of a Polar axis:
 
-#### PolarAxis Setup
+## PolarAxis Setup
 
 <snippet id='chartview-polar-axis-cs'/>
 <snippet id='chartview-polar-axis-vb'/>
@@ -32,7 +32,7 @@ Polar axis is created by default when you add Polar or Radar series to the Polar
 >caption Figure 1: PolarAxis Setup
 ![WinForms RadChartView PolarAxis Setup](images/chartview-axes-polar001.png) 
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})
