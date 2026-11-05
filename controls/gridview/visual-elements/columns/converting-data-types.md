@@ -42,7 +42,7 @@ __Applying System.ComponentModel.TypeConverterAttribute to the incompatible prop
 
 The second way to add type converters is to use the __TypeConverterAttribute__, which allows you to specify the TypeConverter for any property in your business object. When you set it as a data source for RadGridView, you create GridViewCheckBoxColumn instead of GridViewTextBoxColumn. This approach is handy when you are creating your own business objects with TypeConverter attribute applied.
 
-#### Custom class with TypeConverter attribute
+### Custom class with TypeConverter attribute
 
 <snippet id='gridview-convertingdatatypes-classproduct-cs' />
 <snippet id='gridview-convertingdatatypes-classproduct-vb' />
