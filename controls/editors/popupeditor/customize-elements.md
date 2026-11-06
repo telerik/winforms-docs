@@ -16,7 +16,7 @@ previous_url: editors-popupeditor-customize-elements
 
 You can access the text box by using the __TextBoxElement__ property. This allows you to change any property specific to the text box. For example the following code snippet shows how you can change the __Font__ and the __ForeColor__:
 
-#### Customize TextBoxElement 
+### Customize TextBoxElement
 
 <snippet id='editors-popupeditorcode-textbox-cs' />
 <snippet id='editors-popupeditorcode-textbox-vb' />
@@ -32,7 +32,7 @@ You can access the text box by using the __TextBoxElement__ property. This allow
 The arrow button can be accessed via the __ArrowButtonElement__ property. The following example shows how you can access and set the __BackColor__ of the button:
 
 
-#### Set arrow button BackColor 
+### Set arrow button BackColor
 
 <snippet id='editors-popupeditorcode-button-cs' />
 <snippet id='editors-popupeditorcode-button-vb' />
@@ -47,7 +47,7 @@ The arrow button can be accessed via the __ArrowButtonElement__ property. The fo
 
 The popup can be access with the __Popup__ property. This gives you access to all public popup properties and elements. For example you can change the __BackColor__ of the popup like this:
 
-#### Change Popup BackColor
+### Change Popup BackColor
 
 <snippet id='editors-popupeditorcode-dropdown-cs' />
 <snippet id='editors-popupeditorcode-dropdown-vb' />

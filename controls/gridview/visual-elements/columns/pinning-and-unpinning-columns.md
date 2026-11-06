@@ -16,7 +16,7 @@ previous_url: gridview-columns-pinning-and-unpinning-columns
 
 Columns in RadGridView can be pinned which will result in the pinned columns being anchored to the left or right side of the grid. To pin a particular column, set its __IsPinned__ property of the __Columns collection item__ to *True* (*False* if you want to unpin it). This will pin the column to the left side of RadGridView. In order to change the position where the column should be pinned you have to use the __PinPosition__ property of the particular column and choose a value from the provided enumeration. The code block below shows pinning the third column (called "FirstName") in the RadGridView:
 
-#### Pinning a single columns
+### Pinning a single columns
 
 <snippet id='gridview-pinningandunpinningcolumns-pinningcolumns-cs' />
 <snippet id='gridview-pinningandunpinningcolumns-pinningcolumns-vb' />
@@ -29,7 +29,7 @@ Columns in RadGridView can be pinned which will result in the pinned columns bei
 
 Multiple column pinning is also possible. Simply set either the __IsPinned__ property or the __PinPosition__ property for all columns that you want to pin: 
 
-#### Pinning multiple columns
+### Pinning multiple columns
 
 <snippet id='gridview-pinningandunpinningcolumns-pinmultiplecolumns-cs' />
 <snippet id='gridview-pinningandunpinningcolumns-pinmultiplecolumns-vb' />
