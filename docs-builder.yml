@@ -3476,45 +3476,45 @@ redirects:
     from: "^/help/winforms/overview$"
     to: "/introduction"
     type: Permanent
--    
+-
     from: "^/ai-coding-assistant/mcp-server-as-nuget$"
-  to: "/agentic-ui-generator-overview"
+    to: "/agentic-ui-generator-overview"
     type: Permanent
--    
+-
     from: "^/visual-studio-integration/install-using-nuget$"
     to: "/installation-and-upgrades/install-using-nuget"
     type: Permanent
--    
+-
     from: "^/ai-coding-assistant/overview$"
-  to: "/ai-tools"
+    to: "/ai-tools"
     type: Permanent
 -
     from: "^/ai-coding-assistant/mcp-server$"
-  to: "/agentic-ui-generator-overview"
+    to: "/agentic-ui-generator-overview"
     type: Permanent
 -
     from: "^/ai-coding-assistant/upgrade-assistant$"
-  to: "/ai-upgrade-assistant"
+    to: "/ai-upgrade-assistant"
     type: Permanent
 -
     from: "^/ai-coding-assistant/coding-assistant/overview$"
-  to: "/component-assistant-overview"
+    to: "/component-assistant-overview"
     type: Permanent
 -
     from: "^/ai-coding-assistant/coding-assistant/prompt-library$"
-  to: "/prompt-library"
+    to: "/prompt-library"
     type: Permanent
 -
     from: "^/ai-coding-assistant/converter/converter$"
-  to: "/converter"
+    to: "/converter"
     type: Permanent
 -
     from: "^/ai-coding-assistant/converter/converter-tools$"
-  to: "/converter-tools"
+    to: "/converter-tools"
     type: Permanent
 -
     from: "^/ai-coding-assistant/converter/converter-getting-started$"
-  to: "/converter-getting-started"
+    to: "/converter-getting-started"
     type: Permanent
 -
     from: "^/(barcode|bindingnavigator|buttons|calendar|cardview|carousel|chart|chartview|chat|checkedlistbox|clock|codedui|commandbar|dataentry|datafilter|datalayout|desktopalert|diagram|dock|dropdown-listcontrol-and-checkeddropdownlist|editors|forms-and-dialogs|ganttview|gauges|gridview|image-editor|layoutcontrol|listview|map|menus|multicolumncombobox|pageview|panels-and-labels|panorama|pdfprocessing|pdfviewer|pivotgrid|propertygrid|rangeselector|ribbonbar|richtexteditor|rotator|scheduler|shortcuts|spellchecker|splitcontainer|spreadprocessing|spreadsheet|spreadstreamprocessing|themes|track-and-status-controls|treeview|virtualgrid|wizard|wordsprocessing|ziplibrary)/(.*)$"
@@ -3522,33 +3522,33 @@ redirects:
     type: Permanent
 -
     from: "^/ai-coding-assistant/mcp-server/mcp-server$"
-  to: "/agentic-ui-generator-overview"
+    to: "/agentic-ui-generator-overview"
     type: Permanent
 -
     from: "^/ai-coding-assistant/mcp-server/upgrade-assistant$"
-  to: "/ai-upgrade-assistant"
+    to: "/ai-upgrade-assistant"
     type: Permanent
 -
     from: "^/ai-coding-assistant/mcp-server/coding-assistant/overview$"
-  to: "/component-assistant-overview"
+    to: "/component-assistant-overview"
     type: Permanent
 -
     from: "^/ai-coding-assistant/mcp-server/coding-assistant/prompt-library$"
-  to: "/prompt-library"
+    to: "/prompt-library"
     type: Permanent
 -
     from: "^/ai-coding-assistant/mcp-server/converter/converter$"
-  to: "/converter"
+    to: "/converter"
     type: Permanent
 -
     from: "^/ai-coding-assistant/mcp-server/converter/converter-tools$"
-  to: "/converter-tools"
+    to: "/converter-tools"
     type: Permanent
 -
     from: "^/ai-coding-assistant/mcp-server/converter/converter-getting-started$"
-  to: "/converter-getting-started"
+    to: "/converter-getting-started"
     type: Permanent
 -
     from: "^/ai-coding-assistant/upgrade-plugin/overview$"
-  to: "/ai-winforms-upgrade-plugin"
+    to: "/ai-winforms-upgrade-plugin"
     type: Permanent
