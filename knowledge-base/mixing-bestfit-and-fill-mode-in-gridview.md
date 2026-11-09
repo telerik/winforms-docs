@@ -13,49 +13,50 @@ res_type: kb
 
 
 ## Environment
-|Product Version|Product|Author|
-|----|----|----|
-|2021.1.223|RadGridView for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
+
+Product: **Progress® Telerik® UI for WinForms** (`RadGridView`), version 2021.1.223. Author: [Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova).
 
 ## Description
 
-**RadGridView** supports two ways of [auto sizing the columns]({%slug winforms/gridview/columns/resizing-columns-programatically%}):
+The `RadGridView` supports two approaches to [sizing columns automatically]({%slug winforms/gridview/columns/resizing-columns-programatically%}):
 
-- **AutoSizeColumnsMode**: columns can automatically fill the entire width of the grid. Just set the **AutoSizeColumnsMode** property of the desired template to GridViewAutoSizeColumnsMode.**Fill**.
+* `AutoSizeColumnsMode` - Columns can fill the grid's width automatically. Set this property on the desired template to `GridViewAutoSizeColumnsMode.Fill`.
 
-- **Best fit**: the column widths can be set to fit its content by using the GridViewTemplate.**BestFitColumns(BestFitColumnMode mode)** or GridViewDataColumn.**BestFit** methods. This mode distributes algorithm that attempts to fit in the header text and column data for all visible rows.  
+* *Best fit* - Set column widths to fit their content by using `GridViewTemplate.BestFitColumns(BestFitColumnMode mode)` or the `GridViewDataColumn.BestFit` methods. The best-fit algorithm considers the header text and data in all visible rows.
 
-The **BestFitColumnMode** controls which cells participate in the calculations for the space required to fit the text. These are the available modes:
+The `BestFitColumnMode` determines which cells the best-fit calculation considers. The available modes are:
 
-* BestFitColumnMode.**None** - The column's width does not adjust automatically.
+* `BestFitColumnMode.None` - The column width does not adjust automatically.
 
-* BestFitColumnMode.**AllCells** - The column's width adjusts to fit the contents of all cells in the control.
+* `BestFitColumnMode.AllCells` - The column width adjusts to fit the contents of all cells in the control.
 
-* BestFitColumnMode.**DisplayedDataCells** - The column's width adjusts to fit the contents of the displayed data cells.
+* `BestFitColumnMode.DisplayedDataCells` - The column width adjusts to fit the contents of the displayed data cells.
 
-* BestFitColumnMode.**HeaderCells** - The column's width adjusts to fit the contents of the header cell.
+* `BestFitColumnMode.HeaderCells` - The column width adjusts to fit the contents of the header cell.
 
-* BestFitColumnMode.**FilterCells** - The column's width adjusts to fit the contents of the filter cell.
+* `BestFitColumnMode.FilterCells` - The column width adjusts to fit the contents of the filter cell.
 
-* BestFitColumnMode.**SummaryRowCells** - The column's width adjusts to fit the contents of the summary row cell.
+* `BestFitColumnMode.SummaryRowCells` - The column width adjusts to fit the contents of the summary row cell.
 
-* BestFitColumnMode.**SystemCells** - The column's width adjusts to fit the contents of the system cells.
+* `BestFitColumnMode.SystemCells` - The column width adjusts to fit the contents of the system cells.
 
-* BestFitColumnMode.**DisplayedCells** - The column's width adjusts to fit the contents of the displayed cells.
+* `BestFitColumnMode.DisplayedCells` - The column width adjusts to fit the contents of the displayed cells.
 
-Mixing the two ways is not possible as they follow different principle for sizing. However, this article demonstrates a sample approach how to best-fit the columns considering the columns' headers and adjust the last column's width so that it fills the available space. 
+You cannot use both built-in sizing modes at the same time because they follow different sizing rules. The approach below best-fits columns based on their headers, then adjusts the last column to fill the remaining space.
 
-![mixing-bestfit-and-fill-mode-in-gridview001](images/mixing-bestfit-and-fill-mode-in-gridview001.gif)
+The animation shows the last column filling the grid after the other columns are sized to fit their headers.
+
+![RadGridView columns sized to fit their headers, with the last column filling the remaining grid width](images/mixing-bestfit-and-fill-mode-in-gridview001.gif)
 
 ## Solution
 
-You can best fit the columns and manually adjust the last column's width according to the remaining space. Thus, you can simulate best fitting the columns and filling the grid's width. It is necessary to subscribe to the RadGridView.**SizeChanged** event and recalculate the last column's width.
- 
+To simulate both behaviors, best-fit the columns and adjust the last column's width to use the remaining space. Subscribe to the `RadGridView.SizeChanged` event. Recalculate the last column's width whenever the grid changes size.
 
- 
+The following C# and VB.NET fragments belong in the `RadForm1` form class and reference the `categoriesTableAdapter`, `nwindDataSet`, `categoriesBindingSource`, and `radGridView1` fields.
+
 ````C#
 private void RadForm1_Load(object sender, EventArgs e)
-{ 
+{
     this.categoriesTableAdapter.Fill(this.nwindDataSet.Categories);
     this.radGridView1.DataSource = this.categoriesBindingSource;
 
@@ -76,11 +77,11 @@ private void AdjustLastColumnSize()
     for (var index = 0; index <= this.radGridView1.Columns.Count - 2; index++)
         totalColumnsWidth = totalColumnsWidth + this.radGridView1.Columns[index].Width;
 
-    var calculatedLastColWidth = this.radGridView1.Width - totalColumnsWidth - 
+    var calculatedLastColWidth = this.radGridView1.Width - totalColumnsWidth -
         this.radGridView1.TableElement.RowHeaderColumnWidth - this.radGridView1.TableElement.VScrollBar.Size.Width;
     if (calculatedLastColWidth > 0)
     {
-        this.radGridView1.Columns.Last().Width = calculatedLastColWidth - 5; 
+        this.radGridView1.Columns.Last().Width = calculatedLastColWidth - 5;
     }
 }
 
@@ -116,9 +117,7 @@ End Sub
 
 ````
 
-# See Also
+## See Also
 
 * [Extend the Last Visible Column to Fill the Grid Width When Grouped]({%slug extend-last-visible-column-fill-width-grouped-gridview%})
-* [Resizing columns programmatically]({%slug winforms/gridview/columns/resizing-columns-programatically%})  
-
-
+* [Resizing columns programmatically]({%slug winforms/gridview/columns/resizing-columns-programatically%})
