@@ -12,20 +12,21 @@ position: 0
 
 Telerik UI for WinForms provides a set of AI-powered tools that bring Telerik-specific context and automation into your AI-enabled IDEs and workflows. Use them to generate UI, configure components correctly, migrate existing applications, and upgrade between Telerik versions.
 
-<article-card-container>
-	<article-card
-		href="{%slug agentic-ui-generator-overview%}"
-		title="Agentic UI Generator"
-		subTitle="MCP Server"
-		description="A local Model Context Protocol (MCP) server that connects your AI client to Telerik UI for WinForms knowledge. It includes the Component Assistant for code generation, the Converter for migrating Microsoft WinForms applications, and the Upgrade Assistant for analyzing breaking changes.">
-	</article-card>
-	<article-card
-		href="{%slug ai-winforms-upgrade-plugin%}"
-		title="Upgrade Plugin"
-		subTitle="GitHub Copilot CLI"
-		description="A plugin that extends Microsoft's Upgrade Agent in GitHub Copilot CLI with Telerik-specific modernization workflows for upgrading Telerik versions, converting controls, migrating assembly references to NuGet, and setting up licensing.">
-	</article-card>
-</article-card-container>
+## AI Tools for Development
+
+You can use the following AI tools for developement in Telerik UI for WinForms suite:
+
+## Agentic UI Generator (MCP Server)
+
+The [Agentic UI Generator]({%slug agentic-ui-generator-overview%}) is a local Model Context Protocol (MCP) server that connects your AI client to Telerik UI for WinForms knowledge. It includes the Component Assistant for code generation, the Converter for migrating Microsoft WinForms applications, and the Upgrade Assistant for analyzing breaking changes.
+
+## Upgrade Plugin (GitHub Copilot CLI)
+
+The [Upgrade Plugin]({%slug ai-winforms-upgrade-plugin%}) extends Microsoft's Upgrade Agent in GitHub Copilot CLI with Telerik-specific modernization workflows for upgrading Telerik versions, converting controls, migrating assembly references to NuGet, and setting up licensing.
+
+## License Requirements
+
+The Telerik UI for WinForms AI Tools are available with an active DevCraft or Telerik UI for WinForms subscription or trial license. Perpetual license holders can evaluate the AI tools with a [30-day AI Tools trial](https://www.telerik.com/try/ui-for-winforms) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms).
 
 ## See Also
 
