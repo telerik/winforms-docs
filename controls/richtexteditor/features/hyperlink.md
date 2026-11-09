@@ -12,27 +12,25 @@ previous_url: richtexteditor-features-hyperlink
 
 # Hyperlink
 
-The following functionality is supported in the __RadRichTextEditor__:
+Progress® Telerik® UI for WinForms `RadRichTextEditor` supports these hyperlink features:
 
-* having a hyperlink span several paragraphs;
+* Hyperlinks can span several paragraphs.
+* Hyperlinks can contain elements such as images, tables, and table elements.
+* Hyperlinks can target bookmarks in the document.
 
-* being able to embed all kinds of elements inside hyperlinks, e.g. images, tables, and table elements;
+Use the [`HyperlinkInfo`](#hyperlinkinfo) and [`HyperlinkRangeStart` and `HyperlinkRangeEnd`](#hyperlinkrangestart-and-hyperlinkrangeend) classes to work with hyperlinks.
 
-* making bookmarks in the document the targets of hyperlinks.
-
-The classes that encapsulate the functionality of hyperlinks are [HyperlinkInfo](#hyperlinkinfo),[HyperlinkRangeStart and HyperlinkRangeEnd](#hyperlinkrangestart-and-hyperlinkrangeend).      
-
-[Other customization options](#other-customization-options) include setting the tooltip format and detecting the click of hyperlinks.
+[Other customization options](#other-customization-options) let you set the tooltip format and detect hyperlink clicks.
       
 ## HyperlinkInfo
 
-More often than not, you would only need to use objects of type **HyperlinkInfo**. **HyperlinkInfo** objects have the following properties:
+Most often, use `HyperlinkInfo` objects. These objects have the following properties:
 
-* **IsAnchor** - a Boolean property determining if the hyperlink points to a URL or a bookmark;
+* `IsAnchor` - Determines whether the hyperlink points to a URL or a bookmark.
 
-* **NavigateUri** - the URI of the hyperlink;
+* `NavigateUri` - Stores the hyperlink URI.
 
-* **Target** - determines if the link should be opened in another window (if set to HyperlinkTargets.*Blank*) or in the same frame (HyperlinkTargets.*Self*).
+* `Target` - Determines whether the link opens in another window (`HyperlinkTargets.Blank`) or in the same frame (`HyperlinkTargets.Self`).
 
 For example, a link to our site can be inserted in the document programmatically as follows:
 
@@ -41,24 +39,24 @@ For example, a link to our site can be inserted in the document programmatically
 
 
 
-A link to a bookmark is inserted by specifying the bookmark's name as **NavigateUri** and setting the **IsAnchor** property to *true*:
+A link to a bookmark uses the bookmark name as `NavigateUri` and sets `IsAnchor` to `true`:
 
 <snippet id='richtexteditor-hyperlinkcode-remove-cs' />
 <snippet id='richtexteditor-hyperlinkcode-remove-vb' />
 
 
 
-You can also use the overloaded methods for inserting a hyperlink:
+You can also use these overloaded methods to insert a hyperlink:
 
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, string hyperlinkText, StyleDefinition hyperlinkStyle) - insert a hyperlink using a custom style, different from the default blue font color and single underline;
+* `public void InsertHyperlink(HyperlinkInfo hyperlinkInfo, string hyperlinkText, StyleDefinition hyperlinkStyle)` - Inserts a hyperlink with a custom style instead of the default blue font color and single underline.
             
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, IEnumerable&lt;Inline&gt; inlines) - insert a hyperlink which spans several different adjacent inlines, e.g. part of the hyperlink text is bold or there is an image inside the hyperlink;            
+* `public void InsertHyperlink(HyperlinkInfo hyperlinkInfo, IEnumerable<Inline> inlines)` - Inserts a hyperlink that spans adjacent inlines, such as bold text or an image.
 
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo) - create a hyperlink from the currently selected part of the document;
+* `public void InsertHyperlink(HyperlinkInfo hyperlinkInfo)` - Creates a hyperlink from the selected part of the document.
             
-* public void __InsertHyperlink__(HyperlinkInfo hyperlinkInfo, StyleDefinition hyperlinkStyle) - create a hyperlink from the currently selected part of the document and change the style of the text to the style passed as second argument.
+* `public void InsertHyperlink(HyperlinkInfo hyperlinkInfo, StyleDefinition hyperlinkStyle)` - Creates a hyperlink from the selected part of the document and applies the specified style.
 
-Removing a hyperlink (and keeping the part of the document that the hyperlink spanned) can be done by positioning the caret in the hyperlink and invoking:
+To remove a hyperlink while keeping its content, place the caret in the hyperlink and call:
 
 <snippet id='richtexteditor-hyperlinkcode-remove-cs' />
 <snippet id='richtexteditor-hyperlinkcode-remove-vb' />
@@ -67,22 +65,22 @@ Removing a hyperlink (and keeping the part of the document that the hyperlink sp
 
 ## HyperlinkRangeStart and HyperlinkRangeEnd
 
-**HyperlinkRangeStart** and **HyperlinkRangeEnd** are **Inline** DocumentElements and can be added to the inlines of a document, if you are building the contents of a **RadDocument** in code-behind.
+`HyperlinkRangeStart` and `HyperlinkRangeEnd` are `Inline` document elements. Add them to a document's inlines when you build a `RadDocument` in code.
         
-Here is an example that creates a document with a hyperlink spanning several paragraphs, including an image in one of the paragraphs:
+The following example creates a document with a hyperlink that spans several paragraphs and includes an image:
 
 <snippet id='richtexteditor-hyperlinkcode-startend-cs' />
 <snippet id='richtexteditor-hyperlinkcode-startend-vb' />
 
 
 
-The result (`Ctrl` + `Click` to follow):
+The following image shows a hyperlink that spans several paragraphs and contains an image. Hold `Ctrl` and click the hyperlink to follow it.
 
-![WinForms RadRichTextEditor Hyperlink Review](images/richtexteditor-features-hyperlink001.png)
+![Hyperlink spanning several paragraphs with an image embedded in the linked text](images/richtexteditor-features-hyperlink001.png)
 
-You will also need to use **HyperlinkRangeStart** and **HyperlinkRangeEnd**, if you are using hyperlinks for the implementation of custom logic and want to get all hyperlinks from the document, manipulate the properties of the **HyperlinkInfo** or the whole part of the document that is included in the hyperlink.
+Use `HyperlinkRangeStart` and `HyperlinkRangeEnd` when implementing custom hyperlink logic to retrieve document hyperlinks or modify their `HyperlinkInfo` properties or content.
         
-For instance, here is how you can delete all hyperlinks in the document and replace them with some text:
+The following example deletes all hyperlinks in the document and replaces them with text:
 
 <snippet id='richtexteditor-hyperlinkcode-delete-cs' />
 <snippet id='richtexteditor-hyperlinkcode-delete-vb' />
@@ -91,36 +89,37 @@ For instance, here is how you can delete all hyperlinks in the document and repl
 
 ## Other Customization Options
 
-### ToolTip
+The following options control hyperlink tooltip text and navigation.
 
-By default, hyperlinks take a fixed string as a tooltip. The default format is:
+### Setting the Tooltip Format
 
->note "{0}{1} to follow link" - The first parameter is the URL, and the second is "Ctrl + Click" which is taken from the localization file.  
->
+By default, hyperlinks use a fixed tooltip string. The default format is:
 
-You have control over it using the __HyperlinkToolTipFormatString__ of **RadRichTextEditor**, which will set the format for all hyperlinks in the document.
+>note The default format is `"{0}{1} to follow link"`. The first placeholder represents the URL, and the second represents "Ctrl + Click" from the localization file.
+
+Set `HyperlinkToolTipFormatString` on `RadRichTextEditor` to change the format for all hyperlinks in the document.
         
-### HyperlinkClicked event
+### Handling Hyperlink Clicks
 
-When a hyperlink is clicked, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, that you have clicked, e.g. a **Span**, an **Image**, **InlineUIContainer**, etc. The __HyperlinkClickedEventArgs__ provides the possibility either to cancel or replace the navigation action. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecured address or from starting a local process.
+When a user clicks a hyperlink, `RadRichTextEditor` raises the `HyperlinkClicked` event. The sender is the clicked document element, such as a `Span`, `Image`, or `InlineUIContainer`. `HyperlinkClickedEventArgs` lets you cancel or replace the navigation action. Use the event to validate the hyperlink and prevent navigation to an unsecured address or the start of a local process.
 
-With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be canceled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
+Starting with 2024 Q3 (2024.3.924), hyperlinks open only valid and trusted addresses by default. To cancel navigation, set `Handled` to `true` or `IsTrustedUrl` to `false` on `HyperlinkClickedEventArgs`.
 
-Here is an example of using the HyperlinkClicked event prompting that the clicked hyperlink might be unsafe and allows to cancel the navigation process upon receiving the end user confirmation:
+Here is an example of using the `HyperlinkClicked` event prompting that the clicked hyperlink might be unsafe and allows to cancel the navigation process upon receiving the end user confirmation:
 
 <snippet id='richtexteditor-hyperlinkcode-hyperlinkclickedevent-cs' />
 <snippet id='richtexteditor-hyperlinkcode-hyperlinkclickedevent-vb' />
 
 
 
-### HyperlinkNavigationMode
+### Configuring Hyperlink Navigation
 
-The __HyperlinkNavigationMode__ allows you to control what action should trigger the opening of a hyperlink. The possible options are:
+The `HyperlinkNavigationMode` property controls what action triggers hyperlink navigation. It supports these options:
 
-* **CtrlClick**: Triggers the hyperlink when users hold the Ctrl key and click on the hyperlink.
-* **Click**: Triggers the hyperlink when users click on the hyperlink.
+* `CtrlClick` - Triggers the hyperlink when users hold `Ctrl` and click the hyperlink.
+* `Click` - Triggers the hyperlink when users click the hyperlink.
 
-Below is demonstrated how to change the default hyperlink navigation mode:
+The following example changes the default hyperlink navigation mode:
 
 <snippet id='richtexteditor-hyperlinkcode-hyperlinkmode-cs' />
 <snippet id='richtexteditor-hyperlinkcode-hyperlinkmode-vb' />
