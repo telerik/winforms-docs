@@ -37,7 +37,7 @@ This article lists the supported features by **RadDomainUpDown**:
 
 * **Navigation**: The predefined set of items can be navigated by using the arrow buttons, the up and down arrow keys or by double clicking in the editor. The **Wrap** property determines if the selected item will revert to first item after reaching the last item and vice versa while navigating the list. The **SelectNextOnDoubleClick** property controls whether to rotate items on double click in the edit box part. 
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/editors/domainupdown/getting-started%})
 * [Structure]({%slug winforms/editors/domainupdown/structure%})

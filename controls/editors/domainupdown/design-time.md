@@ -39,7 +39,7 @@ Select **RadDomainUpDown** and click the small arrow on the top right position i
 * __Search:__ Search the Telerik site for a given string. 
 
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/editors/domainupdown/structure%}) 
 * [Getting Started]({%slug winforms/editors/domainupdown/getting-started%}) 

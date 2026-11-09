@@ -39,7 +39,7 @@ Select **RadButtonTextBox** and click the small arrow on the top right position 
 * __Search:__ Search the Telerik site for a given string.
 
        
-# See Also
+## See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 * [Using default themes]({%slug winforms/themes/using-default-themes%})

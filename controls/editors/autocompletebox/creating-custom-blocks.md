@@ -45,7 +45,7 @@ The following image demonstrates the final result:
 ![WinForms RadAutoCompleteBox Creating Custom Blocks](images/editors-autocompletebox-creating-custom-blocks001.png)
 
 
-# See Also
+## See Also
 
 * [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%}) 
 * [Element Structure and Document Object Model]({%slug winforms/editors/autocompletebox/element-structure-and-document-object-model%})

@@ -59,7 +59,7 @@ Here is the result. As you can see, the form that contains the **RadDock** manag
 
 ![WinForms RadDock FloatingWindow Theme](images/dock-object-model-customizing-floating-windows003.png)
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

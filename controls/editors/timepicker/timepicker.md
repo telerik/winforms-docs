@@ -52,7 +52,7 @@ __RadTimePicker__ control allows the end user to enter a time value to the edita
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/editors/timepicker/structure%})
 * [Properties and Events]({%slug winforms/editors/timepicker/properties-and-events%})

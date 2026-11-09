@@ -51,7 +51,7 @@ __RadDateTimePicker__ allows interactive selection of dates using a drop down ca
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/datetimepicker/designtime%})
 * [Free Form Date Time Parsing]({%slug winforms/editors/datetimepicker/free-form-date-time-parsing%})

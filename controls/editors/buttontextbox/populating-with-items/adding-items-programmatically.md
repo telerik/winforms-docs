@@ -38,7 +38,7 @@ The following code snippet demonstrates how to add programmatically different ty
 
 
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/buttontextbox/populating-with-data/design-time%})
 

@@ -72,7 +72,7 @@ So, we need to follow another approach. What we need to do is to globally define
 
 
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

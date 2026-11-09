@@ -44,7 +44,7 @@ RadSpinEditor is a themable alternative to the standard Windows Numeric Up Down 
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/editors/spineditor/getting-started%})
 * [Structure]({%slug winforms/editors/spineditor/structure%})

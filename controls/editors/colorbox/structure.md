@@ -22,13 +22,13 @@ The bellow image shows the structure of __RadColorBox__.
 * __ColrPickerButtonElement:__ Opens the color dialog where the user can choose the desired color. 
 
 
-# Elements hierarchy
+## Elements hierarchy
 
 >caption Figure 2: The RadColorBox elements hierarchy.
 
 ![WinForms RadColorBox Elements Hierarchy](images/colorbox-structure002.png)
 
-# See Also
+## See Also
  
 * [Design Time]({%slug winforms/editors/design-time%})
 * [Getting Started]({%slug winforms/editors/colorbox/getting-started%})

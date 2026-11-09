@@ -32,7 +32,7 @@ Here is how the control's Smart Tag looks like:
 
 All of these properties are also available in the Properties window of Visual Studio.
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/editors/browseeditor/structure%})
 * [Getting Started]({%slug winforms/editors/browseeditor/getting-started%})

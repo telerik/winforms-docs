@@ -57,7 +57,7 @@ You have two additional properties: __DescriptionFont__ and __DescriptionText__ 
 
 ![WinForms RadCheckedDropDownList DescriptionTextCheckedListDataItem's properties](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-design-time007.png)
 
-# See Also
+## See Also
 
 * [Adding Items Programmatically]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data/adding-items-programmatically%})
 * [Data Binding]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data/data-binding%})

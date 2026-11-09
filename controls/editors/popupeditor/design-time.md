@@ -18,7 +18,7 @@ The control allows building the drop down layout at design time. For the purpose
 
 ![WinForms RadPopupEditor Sample Layout Design Time](images/editors-popupeditor-design-time002.png)
 
-# Smart Tag
+## Smart Tag
 
 >caption Figure 2: RadPopupEditor Smart Tag
 
@@ -33,7 +33,7 @@ The control allows building the drop down layout at design time. For the purpose
 * __Search:__ Search the Telerik site for a given string.
 
 
-# See Also
+## See Also
 
  * [PopupContainer]({%slug winforms/editors/popupeditor/popupcontainer%})
 
