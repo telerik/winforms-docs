@@ -12,10 +12,6 @@ position: 0
 
 Telerik UI for WinForms provides a set of AI-powered tools that bring Telerik-specific context and automation into your AI-enabled IDEs and workflows. Use them to generate UI, configure components correctly, migrate existing applications, and upgrade between Telerik versions.
 
-## AI Tools for Development
-
-You can use the following AI tools for developement in Telerik UI for WinForms suite:
-
 ## Agentic UI Generator (MCP Server)
 
 The [Agentic UI Generator]({%slug agentic-ui-generator-overview%}) is a local Model Context Protocol (MCP) server that connects your AI client to Telerik UI for WinForms knowledge. It includes the Component Assistant for code generation, the Converter for migrating Microsoft WinForms applications, and the Upgrade Assistant for analyzing breaking changes.
