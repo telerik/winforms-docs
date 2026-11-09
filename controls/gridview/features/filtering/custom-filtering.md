@@ -12,55 +12,59 @@ previous_url: gridview-filtering-custom-filtering
 
 # Custom Filtering
 
-Custom filtering is a flexible mechanism for filtering **RadGridView** rows by using custom logic. It has a higher priority than the applied **FilterDescriptors** (added either by code or using the filtering row).
+Progress® Telerik® UI for WinForms custom filtering lets you apply custom logic to `RadGridView` rows. It takes precedence over filter descriptors added in code or through the filtering row.
 
-Custom filtering is applied if user filtering is enabled using __EnableFiltering__ or GridViewTemplate.__EnableFiltering__ properties. By default, filtering is disabled at all levels.
+Custom filtering runs only when filtering is enabled through the `EnableFiltering` or `GridViewTemplate.EnableFiltering` properties. By default, filtering is disabled at all levels.
 
-**RadGridView** provides two mechanisms for custom filtering:
+`RadGridView` provides two mechanisms for custom filtering:
 
-* Handling the **CustomFiltering** event.
+* Handling the `CustomFiltering` event.
 
-* Replacing the **RadGridView** filtering mechanism by providing a custom __FilterPredicate__.
+* Replacing the `RadGridView` filtering mechanism by providing a custom `FilterPredicate`.
 
-## Using the CustomFiltering event
+## Using the CustomFiltering Event
 
-The **CustomFiltering** event is fired when the custom filtering is enabled. It allows you to control whether a row is visible or not when the filtering is handled.
+The `CustomFiltering` event fires when custom filtering is enabled. It lets you control whether a row appears in the filtering results.
 
-The arguments of the **CustomFiltering** event provide the following properties:        
+The `CustomFiltering` event arguments provide the following properties:
 
-* __Template__ – the template that holds the rows where filtering is applied
+* `Template`&mdash;The template that holds the rows where filtering is applied
 
-* __Row__ – the row to be filtered
+* `Row`&mdash;The row to be filtered
 
-* __Visible__ – defines if the row is visible or hidden from the filtering results
+* `Visible`&mdash;Defines whether the row appears in the filtering results
 
-* __Handled__ – defines whether the row is processed by the custom algorithm or by the applied filter descriptors
+* `Handled`&mdash;Defines whether the custom algorithm or the applied filter descriptors process the row
 
-The following example demonstrates how to hide all **RadGridView** rows that contain a value less than 30 for the `UnitPrice` column. The added __FilterDescriptor__ for the **UnitPrice** column in this example is not considered when defining which rows to hide. All **RadGridView** rows are processed from the custom logic in the __CustomFiltering__ event handler.
+The following example shows how to hide rows with a `UnitPrice` value below 30. The added `FilterDescriptor` for `UnitPrice` does not affect which rows the custom logic hides.
 
 <snippet id='gridview-customfiltering-usingcustomfiltering-cs' />
 <snippet id='gridview-customfiltering-usingcustomfiltering-vb' />
 <snippet id='gridview-customfiltering-usingcustomfiltering1-cs' />
 <snippet id='gridview-customfiltering-usingcustomfiltering1-vb' />
 
-![WinForms RadGridView CustomFiltering Event](images/gridview-filtering-custom-filtering001.png)
+>caption Rows with UnitPrice values below 30 are hidden by the custom filtering logic
 
-The following example demonstrates how you can use the __Handled__ property of the __CustomFiltering__ event arguments. We will hide all rows that have their **UnitPrice** less than "30" and **ProductName** not starting with "Ch". In addition, there is a __FilterDescriptor__  that will hide rows containing values less than "1" in the `UnitsInStock` column.
+![RadGridView with the UnitPrice filter row and visible product rows](images/gridview-filtering-custom-filtering001.png)
+
+The following example shows how to use the `Handled` property of the `CustomFiltering` event arguments. It hides rows where `UnitPrice` is less than 30 and `ProductName` does not start with "Ch". A `FilterDescriptor` also hides rows where `UnitsInStock` is less than 1.
 
 <snippet id='gridview-customfiltering1-usingcustomfilteringplushandled-cs' />
 <snippet id='gridview-customfiltering1-usingcustomfilteringplushandled-vb' />
 <snippet id='gridview-customfiltering1-usingcustomfilteringplushandled1-cs' />
 <snippet id='gridview-customfiltering1-usingcustomfilteringplushandled1-vb' />
 
-![WinForms RadGridView Custom Filtering Event](images/gridview-filtering-custom-filtering002.png)
+>caption Rows that pass the custom event logic and the UnitsInStock filter remain visible
 
->important In order to determine more easily whether a row is visible or not in the **CustomFiltering** event when the grid is filtered by several columns, you can use the MasterTemplate.DataView.**FilterEvaluate** method. This method accepts a **FilterDescriptor** and a row as parameters and returns a boolean value indicating whether the row will be visible or not according to the passed **FilterDescriptor**. Thus, you can combine the custom logic for a certain column and evaluate the default one for the rest of the column's filters.
+![RadGridView product rows after applying the event logic and stock filter](images/gridview-filtering-custom-filtering002.png)
 
-## Implementing filtering mechanism using FilterPredicate
+>important To determine whether a row is visible when the grid is filtered by several columns, use the `MasterTemplate.DataView.FilterEvaluate` method in the `CustomFiltering` event. The method accepts a `FilterDescriptor` and a row, then returns whether the row is visible according to that descriptor. You can combine custom logic for one column with the default evaluation of filters on other columns.
 
-You can replace the filtering mechanism in RadGridView with a custom one, by setting the __FilterPredicate__  of the GridViewTemplate.
+## Implementing Filtering Mechanism Using FilterPredicate
 
-The following example demonstrates how to use a custom filtering mechanism in RadGridView to hide all RadGridView rows which that have UnitPrice less than 30:
+Replace the `RadGridView` filtering mechanism with a custom one by setting `FilterPredicate` on `GridViewTemplate`.
+
+The following example shows how to use custom filtering in `RadGridView` to hide rows where `UnitPrice` is less than 30:
 
 <snippet id='gridview-customfiltering-usingfilterpredicate-cs' />
 <snippet id='gridview-customfiltering-usingfilterpredicate-vb' />
@@ -83,4 +87,3 @@ The following example demonstrates how to use a custom filtering mechanism in Ra
 * [Put a filter cell into edit mode programmatically]({%slug winforms/gridview/filtering/put-a-filter-cell-into-edit-mode-programmatically%})
 
 * [Setting Filters Programmatically (composite descriptors)]({%slug winforms/gridview/filtering/setting-filters-programmatically-(composite-descriptors)%})
-
