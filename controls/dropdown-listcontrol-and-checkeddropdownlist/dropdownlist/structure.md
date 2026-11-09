@@ -39,7 +39,7 @@ This article describes the inner structure and organization of the elements whic
 1. __SizeGripElement__: Resizes the drop down element.
 
 
-# See Also
+## See Also
 
 * [RadControlSpy]({%slug winforms/tools/controlspy%})
             

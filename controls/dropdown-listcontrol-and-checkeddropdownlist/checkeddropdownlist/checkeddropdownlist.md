@@ -42,7 +42,7 @@ __RadCheckedDropDownList__ combines [RadDropDownList]({%slug winforms/dropdown-l
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started%})
 * [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/design-time%})

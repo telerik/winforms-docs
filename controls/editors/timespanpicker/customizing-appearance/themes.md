@@ -17,6 +17,6 @@ __RadTimeSpanPicker__ does not have dedicated theming because it is built from e
 * [RadListControl Themes]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/accessing-and-customizing-elements/themes%})
 
 
-# See Also
+## See Also
 
 * [Customizing Appearance]({%slug radtimespanpicker-customizing-appearance%})

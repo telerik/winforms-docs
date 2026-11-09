@@ -21,14 +21,14 @@ The bellow image shows the structure of RadSpinEditor.
 * __Up/Down Buttons:__ Used for increasing/decreasing the value.
 
  
-# Elements hierarchy
+## Elements hierarchy
 
 >caption Figure 2: The RadSpinEditor Elements Hierarchy
 
 ![WinForms RadSpinEditor Elements Hierarchy](images/spineditor-structure002.png)
 
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/editors/spineditor/getting-started%})
 * [Properties and Events]({%slug winforms/editors/spineditor/working-with-radspineditor%})

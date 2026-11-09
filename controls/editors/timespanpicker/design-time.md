@@ -23,7 +23,7 @@ position: 2
 * __Search:__ Search the Telerik site for a given string.
 
 
-# See Also
+## See Also
 
 * [Structure]({%slug radtimespanpicker-structure%})
 * [Properties Methods and Events]({%slug radtimespanpicker-properties%})

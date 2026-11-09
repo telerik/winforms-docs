@@ -22,6 +22,6 @@ You can easily change the styles of the border in the `Element Hierarchy Editor`
 ![WinForms RadColorBox Customizing Appearance](images/colorbox-customizing appearance001.png)
 
 
-# See Also
+## See Also
 
 * [Themes]({%slug winforms/editors/themes%})

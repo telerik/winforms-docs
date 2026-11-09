@@ -60,7 +60,7 @@ Each editing operation raises the __TextChanging__ and __TextChanged__ events. N
 
 
 
-# See Also
+## See Also
 
 * [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})

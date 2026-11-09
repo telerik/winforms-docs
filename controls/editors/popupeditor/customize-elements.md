@@ -58,6 +58,6 @@ The popup can be access with the __Popup__ property. This gives you access to al
 
 ![WinForms RadPopupEditor Change Popup BackColor](images/editors-popupeditor-customize-elements003.png)
 
-# See Also
+## See Also
 
  * [Properties, Events and Methods]({%slug winforms/editors/popupeditor/properties,-events-and-methods%})

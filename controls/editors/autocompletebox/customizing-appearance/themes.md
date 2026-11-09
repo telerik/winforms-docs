@@ -28,7 +28,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 >note The following article shows how you can use the new theme: [Using Custom Themes]({%slug winforms/themes/using-custom-themes%}).
 
  
-# See Also
+## See Also
 
 * [Customize Fill and Border]({%slug winforms/editors/autocompletebox/fill-and-border%})
 * [Formatting Blocks]({%slug winforms/editors/autocompletebox/formatting-blocks%})

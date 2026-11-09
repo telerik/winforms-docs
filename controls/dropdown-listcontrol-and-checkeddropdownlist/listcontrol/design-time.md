@@ -39,7 +39,7 @@ Select __RadListControl__ and click the small arrow on the top right position in
 
 * __Search__: Search the Telerik site for a given string.
         
-# See Also
+## See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 * [Using default themes]({%slug winforms/themes/using-default-themes%})

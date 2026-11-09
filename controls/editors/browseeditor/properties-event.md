@@ -19,7 +19,7 @@ position: 6
 |Value|Gets or sets the value of the editor|
 |ReadOnly|Determines if users can input text directly into the text field|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
@@ -28,7 +28,7 @@ position: 6
 |ValueChanged|Fires after the editor`s value is changed|
 |ReadOnlyChanged|Fires when the ReadOnly property value is changed|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbrowseeditor.html#properties)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbrowseeditor.html#events)

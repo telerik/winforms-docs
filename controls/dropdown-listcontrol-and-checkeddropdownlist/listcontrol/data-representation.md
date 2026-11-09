@@ -38,7 +38,7 @@ Once we have the custom data item with the additional information, we can convin
  
 With this in place we have modified __RadListControl__ to use our type of logical objects which will provide the ability to display custom visual elements, a checkbox for example, in the visual representation of the data items. The next topic describes how to extend the visual items and how to provide the visual synchronization of the additional properties defined for the data item.
 
-# See Also
+## See Also
 
 * [Overview]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%})
 * [RadProperty]({%slug winforms/telerik-presentation-framework/class-hierarchy/radproperty%})

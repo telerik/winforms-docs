@@ -25,7 +25,7 @@ The __Smart Tag__ of __RadColorBox__ lets you quickly access common tasks involv
 * __Search:__ Search the Telerik site for a given string.
 
 
-# See Also
+## See Also
 
 * [Add Themes]({%slug winforms/themes/using-default-themes%})
 * [Getting Started]({%slug winforms/editors/colorbox/getting-started%})

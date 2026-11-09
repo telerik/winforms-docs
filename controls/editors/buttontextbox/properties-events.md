@@ -18,14 +18,14 @@ position: 6
 |**ShowTextBox**|Shows/hides the inner text box.|
 |**DefaultElementsSpacing**|Gets or set the default space between the elements.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----| 
 |**ItemClicked**|Fires when an item is clicked.|
 
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbuttontextbox.html#properties)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbuttontextbox.html#events)

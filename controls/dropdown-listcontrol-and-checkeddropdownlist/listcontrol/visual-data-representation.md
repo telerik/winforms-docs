@@ -42,7 +42,7 @@ Once we have created a custom visual item, we need to subscribe to the __Creatin
 
 This is all there is to it, with that infrastructure in place users can create just about any visual representation of the data that __RadListControl__ is bound to or filled with in unbound mode. 
 
-# See Also
+## See Also
 
 * [Overview]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol%})
 * [Data Representation]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/data-representation%})

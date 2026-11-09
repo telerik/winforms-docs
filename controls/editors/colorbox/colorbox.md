@@ -49,7 +49,7 @@ The main purpose of the control is to allow the user to select a color from a [c
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/design-time%})
 * [Getting Started]({%slug winforms/editors/colorbox/getting-started%})
