@@ -12,7 +12,7 @@ previous_url: tpf-html-like-text-formatting
 
 # HTML-like Text Formatting
 
-Use HTML-like text formatting to display styled text in Telerik UI for WinForms controls that render text through the Telerik Presentation Framework (TPF). Start the text value with the `<html>` tag, and then apply supported tags to control font styling, links, lists, paragraphs, and images.
+Use HTML-like text formatting to display styled text in controls in **Progress® Telerik® UI for WinForms**. These controls render text through the Telerik Presentation Framework (TPF). Start the text value with the `<html>` tag, and then apply supported tags to control font styling, links, lists, paragraphs, and images.
 
 ## Related Video
 
@@ -22,9 +22,9 @@ Use HTML-like text formatting to display styled text in Telerik UI for WinForms 
 
 ## How HTML-like Text Formatting Works
 
-TPF extends the text primitive that Telerik UI for WinForms controls use to render text. As a result, many Telerik controls can display rich text by parsing a limited set of HTML-like tags. This formatting engine is intended for styled text output. It is not a full HTML or CSS renderer.
+TPF extends the text primitive that Telerik UI for WinForms controls use to render text. Many controls parse a limited set of HTML-like tags to display rich text. The formatting engine supports styled text, not full HTML or CSS.
 
->note As of R1 2021, HTML-like formatting supports [custom fonts](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/custom-fonts).
+>note Starting with R1 2021, HTML-like formatting supports [custom fonts](https://docs.telerik.com/devtools/winforms/telerik-presentation-framework/custom-fonts).
 
 To enable HTML-like formatting:
 
@@ -39,6 +39,8 @@ The following example shows the minimum required structure:
 ````
 
 ## Supported Tags
+
+The following table lists the supported HTML-like tags and their purposes:
 
 | Tag | End Tag | Description |
 | ------ | ------ | ------ |
@@ -159,7 +161,7 @@ The image path can point to an embedded resource or to a file on disk. To specif
 To specify a file on disk, provide the full path, for example `src="C:\some path\image.png"`, or use `~` to refer to the current directory, for example `src="~\some path\image.gif"`. All image formats supported by the .NET `Image` class are supported by the `<img>` tag.
             
 
-## RadMarkupEditor specifics
+## RadMarkupEditor Specifics
 
 `RadMarkupEditor` and `TextPrimitive` share much of the same formatting model, but they do not support exactly the same tags. `TextPrimitive` also supports several non-standard tags.
         
@@ -305,4 +307,3 @@ End Function
 - [Microsoft Active Accessibility Support]({%slug winforms/telerik-presentation-framework/microsoft-active-accessibility-support%})
 - [Override Theme Settings at Run Time]({%slug winforms/telerik-presentation-framework/override-theme-settings-at-run-time%})
 - [RadMarkupDialog]({%slug winforms/telerik-presentation-framework/radmarkupdialog%})
-
