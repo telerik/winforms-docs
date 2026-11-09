@@ -12,25 +12,23 @@ previous_url: forms-and-dialogs-messagebox-localization
 
 # Localization
 
-__RadMessageBox__ provides localization of its buttons text via __RadMessageLocalizationProvider__:
+The Progress® Telerik® UI for WinForms `RadMessageBox` uses `RadMessageLocalizationProvider` to localize its button text.
 
-1\. Start by creating a descendant of the __RadGridLocalizationSettings__ class. Then, override the __GetLocalizedString(string id)__ method, and in its implementation, provide a translation for the label and user messages. If one is not provided, the default value will be returned - this is guaranteed by the call to the base __GetLocalizedString__ method in the default clause of the switch statement. 
+## Configuring the Localization Provider
 
-#### Creating a custom localization provider 
+To provide custom button text, follow these steps:
 
-<snippet id='messagebox-messagebox1-localizationprovider-cs' />
-<snippet id='messagebox-messagebox1-localizationprovider-vb' />
+1. Create a descendant of the `RadGridLocalizationSettings` class and override the `GetLocalizedString(string id)` method. Provide translations for labels and user messages. If a translation is not provided, the default value is returned because the default switch clause calls the base method:
 
- 
- 
-2\. To apply the custom localization provider, instantiate and assign it to the current localization provider:
+   <snippet id='messagebox-messagebox1-localizationprovider-cs' />
+   <snippet id='messagebox-messagebox1-localizationprovider-vb' />
 
-#### Setting the custom localization provider to RadMessageBox 
+2. Instantiate the custom localization provider and assign it as the current localization provider:
 
-<snippet id='messagebox-messagebox1-settingthelocalizationprovider-cs' />
-<snippet id='messagebox-messagebox1-settingthelocalizationprovider-vb' />
+   <snippet id='messagebox-messagebox1-settingthelocalizationprovider-cs' />
+   <snippet id='messagebox-messagebox1-settingthelocalizationprovider-vb' />
 
- 
+## See Also
 
-
-
+* [MessageBox Overview]({%slug winforms/forms-and-dialogs/messagebox%})
+* [MessageBox Structure]({%slug winforms/forms-and-dialogs/messagebox/structure%})
