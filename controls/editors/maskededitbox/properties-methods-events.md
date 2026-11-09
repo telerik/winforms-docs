@@ -38,7 +38,7 @@ position: 10
 |__CharacterCasing__|Gets or sets a value indicating whether the RadTextBox control modifies the case of characters as they are typed|
 |__Culture__|Gets or sets the current culture associated to the RadMasedkEditBox|
 
-# RadMaskedEditBoxElement's Properties
+## RadMaskedEditBoxElement's Properties
 
 |Property|Description|
 |------|------|
@@ -55,7 +55,7 @@ position: 10
 |**IncludePrompt**|Gets or sets whether or not prompt characters are displayed in the label text.|
 |**EnableNullValueInput**|Gets or set a value indicating whether end users can set the value to NULL. This can be achieved by pressing Ctrl + Del or Ctrl + 0 key combinations.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |------|------|
@@ -63,7 +63,7 @@ position: 10
 |__ClearUndo__|Clears information about the most recent operation from the undo buffer of the text box|
 |__SelectAll__|selects the whole text|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|
@@ -75,7 +75,7 @@ position: 10
 |__MultilineChanged__|Occurs when the value of the __Multiline__ property has changed|
 |__TextAlignChanged__|Occurs when the value of the TextAlign property has changed|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radmaskededitbox.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radmaskededitbox.html#methods)

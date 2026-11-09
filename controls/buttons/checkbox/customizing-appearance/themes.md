@@ -31,6 +31,6 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 1. Now, you can apply your custom theme to __RadCheckBox__ by using the demonstrated approach in the following link: [Using custom themes]({%slug winforms/themes/using-custom-themes%})
 
-# See Also 
+## See Also 
 * [Getting Started with VisualStyleBuilder]({%slug winforms/tools/visual-style-builder/getting-started%})
 * [Working With Repository Items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%})

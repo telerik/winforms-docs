@@ -62,7 +62,7 @@ RadCalendar provides built in internationalization support to build world-ready 
 
 See the article [Introduction to International Applications Based on .NET Framework](http://msdn2.microsoft.com/en-us/library/t18274tk(vs.80).aspx) for an overview of internationalization in general. 
 
-# See Also
+## See Also
 
 * [CultureInfo and RegionInfo Basics]({%slug winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics%})
 * [Date Formats]({%slug winforms/editors/datetimepicker/internationalization/date-formats%})

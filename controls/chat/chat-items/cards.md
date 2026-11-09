@@ -25,7 +25,7 @@ Depending on the information that is presented, the cards can be one of the foll
 
 ![WinForms RadChat Chat Image Card Element](images/chat-items-cards001.png) 
 
-#### Adding a ChatImageCardElement programmatically
+### Adding a ChatImageCardElement programmatically
 
 <snippet id='chat-cards-imagecard-cs'/>
 <snippet id='chat-cards-imagecard-vb'/>
@@ -40,7 +40,7 @@ Depending on the information that is presented, the cards can be one of the foll
 
 ![WinForms RadChat Chat Product Card Element](images/chat-items-cards002.png) 
 
-#### Adding a ChatProductCardElement programmatically
+### Adding a ChatProductCardElement programmatically
 
 <snippet id='chat-cards-productcard-cs'/>
 <snippet id='chat-cards-productcard-vb'/>
@@ -55,7 +55,7 @@ Depending on the information that is presented, the cards can be one of the foll
 
 ![WinForms RadChat Chat Weather Card Element](images/chat-items-cards003.png) 
 
-#### Adding a ChatWeatherCardElement programmatically
+### Adding a ChatWeatherCardElement programmatically
 
 <snippet id='chat-cards-weathercard-cs'/>
 <snippet id='chat-cards-weathercard-vb'/>
@@ -70,7 +70,7 @@ Depending on the information that is presented, the cards can be one of the foll
 
 ![WinForms RadChat Chat Flight Card Element](images/chat-items-cards004.png) 
 
-#### Adding a ChatFlightCardElement programmatically
+### Adding a ChatFlightCardElement programmatically
 
 <snippet id='chat-cards-flightcard-cs'/>
 <snippet id='chat-cards-flightcard-vb'/>
@@ -87,7 +87,7 @@ The above examples demonstrates how to add the different card types in a simple 
 
 Each card allows you to add a certain action that can be handled:
 
-#### Adding ChatCardActions
+### Adding ChatCardActions
 
 <snippet id='chat-cards-cardactions-cs'/>
 <snippet id='chat-cards-cardactions-vb'/>
@@ -96,7 +96,7 @@ Each card allows you to add a certain action that can be handled:
 
 The RadChat.**CardActionClicked** event is fired once a user clicks on the action's text. The **CardActionEventArgs** gives you access to the **ChatCardAction** and user's data. 
 
-#### Handling ChatCardActions
+### Handling ChatCardActions
 
 <snippet id='chat-cards-handleaction-cs'/>
 <snippet id='chat-cards-handleaction-vb'/>
@@ -108,7 +108,7 @@ The RadChat.**CardActionClicked** event is fired once a user clicks on the actio
 ![WinForms RadChat Handling Chat Card Actions](images/chat-items-cards006.gif) 
 
  
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/chat/structure%})
 * [Getting Started]({%slug winforms/chat/getting-started%})

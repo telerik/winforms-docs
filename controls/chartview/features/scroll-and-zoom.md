@@ -14,7 +14,7 @@ previous_url: chartview-features-scroll-and-zoom
 
 __RadChartView__ provides zoom and scroll interactivity with the __ChartPanZoomController__ class. It is very simple to use and allows users to zoom in the chart plot area when are there is a dense area of data points that can not be seen clearly at the normal chart scale. The scroll functionality allows moving the visible area of the chart. In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection and specify the zoom mode. For example: 
 
-#### ChartPanZoomController Setup
+## ChartPanZoomController Setup
 
 <snippet id='chartview-scroll-and-zoom-controller-cs'/>
 <snippet id='chartview-scroll-and-zoom-controller-vb'/>
@@ -26,7 +26,7 @@ __RadChartView__ provides zoom and scroll interactivity with the __ChartPanZoomC
 
 The __ChartPanAndZoomController__ will be added automatically if the __ShowPanZoom__ property of RadChartView control is set to *true*. In this case the PanZoomMode is Horizontal (by default): 
 
-#### Add Using the Property
+## Add Using the Property
 
 <snippet id='chartview-scroll-and-zoom-showpanzoom-cs'/>
 <snippet id='chartview-scroll-and-zoom-showpanzoom-vb'/>
@@ -38,7 +38,7 @@ The __PanZoomMode__ property allow developers to restrict zooming. Setting eithe
 >caption Figure 1: Initial Chart
 ![WinForms RadChartView Scroll Zoom Initial Chart](images/chartview-features-scroll-and-zoom001.png)
 
-#### Zooming
+## Zooming
 
 <snippet id='chartview-scroll-and-zoom-zoom-cs'/>
 <snippet id='chartview-scroll-and-zoom-zoom-vb'/>
@@ -48,7 +48,7 @@ The __PanZoomMode__ property allow developers to restrict zooming. Setting eithe
 >caption Figure 2: Zooming
 ![WinForms RadChartView Zooming](images/chartview-features-scroll-and-zoom002.png)
 
-#### Panning
+## Panning
 
 Panning with 300 pixels: 
 
@@ -64,14 +64,14 @@ The zoom factor can be controlled using __Ctrl+MouseWheel__ for zoom in and zoom
 
 >note The currently applied *Zoom* and *Pan* factors can be obtained from the **IChartView** object.
 
-#### Current Zoom and Pan
+## Current Zoom and Pan
 
 <snippet id='chartview-scroll-and-zoom-currentzoompan-cs'/>
 <snippet id='chartview-scroll-and-zoom-currentzoompan-vb'/>
 
 
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

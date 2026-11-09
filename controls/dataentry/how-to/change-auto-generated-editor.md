@@ -29,14 +29,14 @@ In the following example it will be demonstrated how to change default editor wi
 
 1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items.
 
-#### Data Object            
+## Data Object            
 
 <snippet id='dataentry-getting-started-empl1-cs'/>
 <snippet id='dataentry-getting-started-empl1-vb'/>
 
 
 
-#### Data Binding
+## Data Binding
 
 <snippet id='dataentry-getting-started-bind1-cs'/>
 <snippet id='dataentry-getting-started-bind1-vb'/>
@@ -56,7 +56,7 @@ In the following example it will be demonstrated how to change default editor wi
 
 3\. To achieve working binding for this new editor we should subscribe to the *BindingCreated* event where we will subscribe to the *Parse* event of the Binding object. You can read more about *Format* and *Parse* events of Binding object and why we should use them [here](http://msdn.microsoft.com/en-us/library/system.windows.forms.binding_events%28v=vs.110%29.aspx).
 
-#### Subscribe to Parse Event
+## Subscribe to Parse Event
 
 <snippet id='dataentry-change-auto-generated-editor-bindingcreated-cs'/>
 <snippet id='dataentry-change-auto-generated-editor-bindingcreated-vb'/>
@@ -76,7 +76,7 @@ The spin editor is created with the default settings for __Minimum/Maximum, Deci
 
 
 
-# See Also
+## See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
  * [Getting Started]({%slug  winforms/dataentry/getting-started%})

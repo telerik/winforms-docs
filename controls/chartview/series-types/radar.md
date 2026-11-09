@@ -14,7 +14,7 @@ previous_url: chartview-series-types-radar
 
 The radar chart is a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. As a derivative of PolarSeries, __RadarSeries__ are valid only the context of Polar AreaType. RadChartView supports the following RadarSeries implementations out of the box: __RadarPointSeries__, __RadarLineSeries__ and __RadarAreaSeries__. Below are three snippets that illustrate how to set up each of these series: 
 
-#### Initial Setup RadarPointSeries
+## Initial Setup RadarPointSeries
 
 <snippet id='chartview-radar-radarpointseries-cs'/>
 <snippet id='chartview-radar-radarpointseries-vb'/>
@@ -24,7 +24,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 >caption Figure 1: Initial Setup RadarPointSeries
 ![WinForms RadChartView Initial Setup Radar Point Series](images/chartview-series-types-radar001.png)  
 
-#### Initial Setup RadarLineSeries
+## Initial Setup RadarLineSeries
 
 <snippet id='chartview-radar-radarlineseries-cs'/>
 <snippet id='chartview-radar-radarlineseries-vb'/>
@@ -34,7 +34,7 @@ The radar chart is a two-dimensional chart of three or more quantitative variabl
 >caption Figure 2: Initial Setup RadarLineSeries
 ![WinForms RadChartView Initial Setup Radar Line Series](images/chartview-series-types-radar002.png) 
 
-#### Initial Setup RadarAreaSeries
+## Initial Setup RadarAreaSeries
 
 <snippet id='chartview-radar-radarareaseries-cs'/>
 <snippet id='chartview-radar-radarareaseries-vb'/>
@@ -58,7 +58,7 @@ Here are some of the important properties all __PolarSeries__ share:
 
 When you have __RadarLineSeries__ or __RadarAreaSeries__ you can set the Spline property and smoth the values transition (the SplineTension property): 
 
-#### Spline Settings
+### Spline Settings
 
 <snippet id='chartview-radar-spline-cs'/>
 <snippet id='chartview-radar-spline-vb'/>
@@ -68,7 +68,7 @@ When you have __RadarLineSeries__ or __RadarAreaSeries__ you can set the Spline 
 >caption Figure 4: Spline Settings
 ![WinForms RadChartView Spline Settings](images/chartview-series-types-radar004.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

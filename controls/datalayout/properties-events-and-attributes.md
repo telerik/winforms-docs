@@ -59,7 +59,7 @@ __RadDataLayout__ has support for several attributes that can be used to change 
 
 ![WinForms RadDataLayout Model With Attributes](images/datalayout-properties-event-and-attributes001.png)
 
-#### Using attributes.
+### Using attributes.
 
 <snippet id='datalayout-properties-events-and-attributes-modelwithattributes-cs' />
 <snippet id='datalayout-properties-events-and-attributes-modelwithattributes-vb' />
@@ -67,7 +67,7 @@ __RadDataLayout__ has support for several attributes that can be used to change 
 
 
 
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/datalayout/control-element-structure%})
  * [Getting Started]({%slug winforms/datalayout/getting-started%})

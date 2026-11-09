@@ -32,7 +32,7 @@ As of **R2 2024 RadChartView** offers four new palettes: *Crystal*, *VisualStudi
 
 To apply one of these predefined palettes all you have to do is execute the following line of code:
 
-#### Apply a Palette
+## Apply a Palette
 
 <snippet id='chartview-palettes-palette-cs'/>
 <snippet id='chartview-palettes-palette-vb'/>
@@ -51,7 +51,7 @@ Here is how two of the palettes look like in action:
 
 The predefined palettes consist of 8 palette entries which are applied to the series in a cyclic order. The first series is drawn with the colors from the first palette entry the second series is drawn with the colors form the second palette entry… the ninth series is drawn with the colors form the first palette entry and so on. If you would like to apply a palette entry specifically to a series you can do so using either one of the following line of code: 
 
-#### Specific Palette Entry
+## Specific Palette Entry
 
 <snippet id='chartview-palettes-sample-cs'/>
 <snippet id='chartview-palettes-sample-vb'/>
@@ -60,14 +60,14 @@ The predefined palettes consist of 8 palette entries which are applied to the se
 
 Predefined palettes cannot be edited , however, you can define your own palettes by inheriting from __ChartPalette__ and creating a collection of palette entries. Here is an example: 
 
-#### Create a Custom Palette
+## Create a Custom Palette
 
 <snippet id='chartview-palettes-custompalette-cs'/>
 <snippet id='chartview-palettes-custompalette-vb'/>
 
 
 
-#### Apply a Custom Palette
+## Apply a Custom Palette
 
 <snippet id='chartview-palettes-setcustompalette-cs'/>
 <snippet id='chartview-palettes-setcustompalette-vb'/>
@@ -78,7 +78,7 @@ Predefined palettes cannot be edited , however, you can define your own palettes
 
 ![WinForms RadChartView Custom Palette](images/chartview-customization-palettes005.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})

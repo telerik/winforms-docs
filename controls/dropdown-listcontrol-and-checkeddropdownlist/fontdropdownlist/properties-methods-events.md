@@ -20,14 +20,14 @@ position: 3
 |**RecentlyUsedItemsCount**|This property controls the number of items displayed in the *Recently Used Fonts* group.|
 |**ShowRecentlyUsedFonts**|This property shows/hides the *Recently Used Fonts* group.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----| 
 |**SelectedFontChanged**|Fires when the selected font is changed.|
 |**PreviewFontChanged**|Fires when the hovered font is changed.|
 
-# RadFontPopupEditorElement's Properties
+## RadFontPopupEditorElement's Properties
 
 |Property|Description|
 |----|----| 
@@ -35,7 +35,7 @@ position: 3
 |**AllFontsItemText**|Allows you to localize the text of the All Fonts group.|
 |**RecentlyUsedItemText**|Allows you to localize the text of the Recently Used group.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radfontdropdownlist.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radfontdropdownlist.html#methods)

@@ -17,14 +17,14 @@ The names behind each of the descriptor items are extracted from the data-bound 
 
 ![WinForms RadDataFilter Custom Display Names](images/datafilter-customizing-appearance-custom-display-names001.png)
 
-#### PropertyDisplayNameNeeded Event
+## PropertyDisplayNameNeeded Event
 
 <snippet id='datafilter-custom-display-names-customdisplaynames-cs' />
 <snippet id='datafilter-custom-display-names-customdisplaynames-vb' />
 
 
 
-# See Also
+## See Also
 
 * [Getting Started ]({%slug winforms/datafilter/getting-started%})
 * [Unbound Mode]({%slug winforms/datafilter/populating-with-data/unbound-mode%})	

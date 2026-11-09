@@ -27,7 +27,7 @@ This article will show the internal elements structure of __RadCheckedListBox__ 
 2. __SimpleListViewContainer__: represents the view container.
 3. __RadScrollBarElement__: represents the scroll bar.
 
-# Structure of ListViewType.IconsView
+## Structure of ListViewType.IconsView
 
 >caption Figure 3: ListViewType.IconsView's elements hierarchy
 
@@ -42,7 +42,7 @@ This article will show the internal elements structure of __RadCheckedListBox__ 
 2. __IconListViewContainer__: represents the view container.
 3. __RadScrollBarElement__: represents the scroll bar.
 
-# Structure of ListViewType.DetailsView
+## Structure of ListViewType.DetailsView
 
 >caption Figure 5: RadCheckedListBox's structure in ListViewType.DetailsView
 

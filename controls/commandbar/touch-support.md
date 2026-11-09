@@ -22,6 +22,6 @@ To drag a strip, perform a drag operation started at the he beginning of the des
 
 Here is the result of dragging the top strip to the right![WinForms RadCommandBar Touch Support Example](images/commandbar-touch-support002.png)
 
-# See Also
+## See Also
 
  * [Windows Touch Gestures](http://msdn.microsoft.com/en-us/library/windows/desktop/dd940543(v=vs.85).aspx)

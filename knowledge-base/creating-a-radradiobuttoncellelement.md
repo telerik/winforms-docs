@@ -14,11 +14,11 @@ res_type: kb
 |Q1 2012 SP1|RadGridView for WinForms|Nikolay Diyanov|May 23, 2012|
 
   
-**PROBLEM**  
+## Problem
    
 The purpose of this article is to demonstrate how you can create a custom cell or more specifically - RadRadioButtonCellElement. The key principles in this article are valid for every custom cell element that you will want to create, not only for RadRadioButtonCellElement.  
    
-**SOLUTION**  
+## Solution
    
  
 ![RadRadioButtonCellElement](images/creating-a-radradiobuttoncellelement001.png)

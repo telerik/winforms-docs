@@ -43,7 +43,7 @@ previous_url: calendar-overview-important-events, calendar-overview-important-pr
 |__CellVerticalSpacing__| Gets or sets the vertical spacing between the calendar cells.|
 |__CellHorizontalSpacing__ | Gets or sets the horizontal spacing between the calendar cells.|
 
-# Events
+## Events
 
 |Event|Description|
 |---|---|

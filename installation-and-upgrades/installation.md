@@ -19,19 +19,19 @@ To set up the environment needed to start development with Telerik UI for WinFor
 
 1. Open any terminal and install the Telerik CLI.
 
-	```
+	```shell
 	dotnet tool install -g Telerik.CLI
 	```
 	
 1. Call the `telerik setup winforms` command in the terminal.
 
-	```
+	```shell
 	telerik setup winforms
 	```
 
 1. Use the __NuGet Package Manager__ to install the needed Telerik packages. For example, `Telerik.UI.for.WinForms.AllControls`.
 
-	```
+	```xml
 	<PackageReference Include="Telerik.UI.for.WinForms.AllControls" Version="*" />
 	```
 
@@ -41,7 +41,7 @@ To set up the environment needed to start development with Telerik UI for WinFor
 
 To download and install a Telerik license key, you can use the `telerik license get-key` command.
 
-```
+```shell
 telerik license get-key
 ```
 
@@ -53,7 +53,7 @@ telerik license get-key
 
 To automatically configure the Telerik NuGet feed, you can use the `telerik nuget config` command. This adds a package source in the NuGet.config file that points to `https://nuget.telerik.com/v3/index.json`.
 
-```
+```shell
 telerik nuget config
 ```
 

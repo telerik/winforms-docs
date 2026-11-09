@@ -24,7 +24,7 @@ __RadDataEntry__ generates content item for each public property that can be edi
 
 The validation label does not have any text by default. It is designed to be used in cases where users want to show some additional information.
         
-# See Also
+## See Also
 
  * [Getting Started]({%slug  winforms/dataentry/getting-started%})
  * [Properties, events and attributes]({%slug  winforms/dataentry/properties,-events-and-attributes%})

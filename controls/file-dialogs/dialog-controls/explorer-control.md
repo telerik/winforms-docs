@@ -19,7 +19,7 @@ The **ExplorerControl** element can be used as a stand-alone control, thus allow
 
 ![WinForms RadFileDialogs ExplorerControl](images/file-dialogs-explorer-control001.png) 
 
-####  Example 1: Define explorer control
+##  Example 1: Define explorer control
 
 ````C#
 
@@ -84,7 +84,7 @@ The control can work in two modes - the first one allows you to select folders a
 
 >important Changing the **IsFolderBrowser** property during runtime is not supported. The property is respected only during initializing of the ExplorerControl.
 
-####  Example 2: Allow selecting folders only 
+###  Example 2: Allow selecting folders only
 
 ````C#
 
@@ -107,7 +107,7 @@ To get the selected files or folders you can use the **SelectedFileName**, **Sel
 
 >important The difference between **SelectedFileNames** and **SelectedSafeFileNames** is that the first collection contains the full paths of the files/folders. And the second collection contains only the names (safe names) of the files/folders.
 
-####  Example 3: Getting the first item from the selected files/folders
+###  Example 3: Getting the first item from the selected files/folders
 
 ````C#
 
@@ -139,7 +139,7 @@ explorerControl.MultiSelect  = True
 
 In order to filter the **ExplorerControl**, you can set its **Filter** and **FilterIndex** properties. **Example 5** demonstrates how you can filter the image files.
 
-####  Example 5: Filtering ExplorerControl
+###  Example 5: Filtering ExplorerControl
 
 ````C#
 

@@ -55,7 +55,7 @@ For the need of the validation process we made two events (__ItemValidating, Ite
 
 In this tutorial we also used an error provider to show error icon next to the editors. You can read more about Microsoft Error provider here - [ErrorProvider Class](http://msdn.microsoft.com/en-us/library/system.windows.forms.errorprovider%28v=vs.110%29.aspx)
 
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/datalayout/control-element-structure%})
  * [Getting Started]({%slug winforms/datalayout/getting-started%})

@@ -44,7 +44,7 @@ The CalloutForm.**Shape** property allows setting any [ElementShape]({%slug winf
 
 The following code snippet demonstrates how to apply one of the predefined [ElementShapes]({%slug winforms/telerik-presentation-framework/shapes%}) that the Telerik Presentation Framework offers.
 
-#### Custom Predefined Shape
+### Custom Predefined Shape
 
 <snippet id='callout-shapes-predefinedcustomshape-cs' />
 <snippet id='callout-shapes-predefinedcustomshape-vb' />
@@ -54,7 +54,7 @@ The following code snippet demonstrates how to apply one of the predefined [Elem
 Since the default callout shapes are defined as **CalloutElementShape**, you can create a derivative of the **PathElementShape** class and override 
 the **CreatePath(Rectangle bounds)** method. Thus, you can construct any custom shape that you need. The following two examples demonstrate how to create a Cloud and Kaboom shapes for RadCallout.
 
-#### Cloud Shape
+### Cloud Shape
 
 <snippet id='callout-shapes-cloudshape-cs' />
 <snippet id='callout-shapes-cloudshape-vb' />
@@ -65,7 +65,7 @@ the **CreatePath(Rectangle bounds)** method. Thus, you can construct any custom 
 
 ![WinForms RadCallout Custom Cloud Shape](images/callout-shapes003.png)
 
-#### Kaboom Shape
+### Kaboom Shape
 
 <snippet id='callout-shapes-kaboomshape-cs' />
 <snippet id='callout-shapes-kaboomshape-vb' />
@@ -83,7 +83,7 @@ The last needed step is to apply the custom shape to the CalloutForm:
 
 
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug callout-getting-started%})
 * [Design Time]({%slug callout-design-time%})

@@ -48,6 +48,6 @@ Determines character encoding used to encode the barcode contents. By default it
 
 
 
-# See Also
+## See Also
 
 * [Encoding](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding?view=netcore-3.1)

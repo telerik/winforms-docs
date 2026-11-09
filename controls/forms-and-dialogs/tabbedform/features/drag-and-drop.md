@@ -20,7 +20,7 @@ position: 0
 
 >important The tabbed control is added to the form in its **Shown** event. If the **TabbedFormControl** property of the form is accessed before showing it, it will return *null*.
 
-#### RadTabbedFormDragDropService
+### RadTabbedFormDragDropService
 
 <snippet id='tabbedform-tabbedformcode-dragdropservice-cs' />
 <snippet id='tabbedform-tabbedformcode-dragdropservice-vb' />
@@ -60,7 +60,7 @@ There are three drag modes that are currently supported:
 * __Preview:__ the tab is moved after the mouse is released.
 * __None:__ the drag and drop functionality is disabled.
 
-#### Setting the Drag Drop Mode
+### Setting the Drag Drop Mode
 
 <snippet id='tabbedform-tabbedformcode-dragdropmode-cs' />
 <snippet id='tabbedform-tabbedformcode-dragdropmode-vb' />

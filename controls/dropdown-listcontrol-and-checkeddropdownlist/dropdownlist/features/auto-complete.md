@@ -28,7 +28,7 @@ The RadDropDownList.__AutoCompleteMode__ property controls auto-complete behavio
  
 ![WinForms RadDropDownList AutoCompleteMode None](images/dropdown-and-listcontrol-dropdownlist-autocompleate001.png)
 
-#### AutoCompleteMode.None 
+### AutoCompleteMode.None
 
 <snippet id='dropdownlist-auto-complete-autocnone-cs' />
 <snippet id='dropdownlist-auto-complete-autocnone-vb' />
@@ -85,7 +85,7 @@ __RadDropDownList__ internally uses auto-complete helpers to perform the auto-co
 
 * __SuggestMode__: determines whether the items are auto-completed considering whether the text starts with or contains the searched text.
                 
-#### SuggestMode.Contains 
+### SuggestMode.Contains
 
 <snippet id='dropdownlist-auto-complete-autocsuggestmode-cs' />
 <snippet id='dropdownlist-auto-complete-autocsuggestmode-vb' />
@@ -105,7 +105,7 @@ __RadDropDownList__ internally uses auto-complete helpers to perform the auto-co
 
 \* __AutoCompleteAppendHelper__:  it is created when the __AutoCompleteMode__ property is set to AutoCompleteMode.*Append* or AutoCompleteMode.*SuggestAppend*. The __LimitToList__ property controls whether the user is blocked to enter invalid string in the editable part.
 
-#### Limit the user to enter only valid values 
+### Limit the user to enter only valid values
 
 <snippet id='dropdownlist-auto-complete-autoclimittolist-cs' />
 <snippet id='dropdownlist-auto-complete-autoclimittolist-vb' />
@@ -117,7 +117,7 @@ __RadDropDownList__ internally uses auto-complete helpers to perform the auto-co
 
 By default, the items displayed in the __AutoCompleteSuggestHelper__’s pop-up are sorted alphabetically. The following example demonstrates how to manipulate the sort order considering the item’s Text.__Length__ property:
 
-#### Custom comparer 
+### Custom comparer
 
 <snippet id='dropdownlist-auto-complete-customcomparer-cs' />
 <snippet id='dropdownlist-auto-complete-customcomparer-vb' />

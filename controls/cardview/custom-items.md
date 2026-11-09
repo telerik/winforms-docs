@@ -22,14 +22,14 @@ This can be done by making use of the __CardViewItemCreating__ event. The follow
 
 First let's create our custom items:
 
-#### Creating Custom CardViewItem
+### Creating Custom CardViewItem
 
 <snippet id='cardview-custom-items-customcardviewitem-cs'/>
 <snippet id='cardview-custom-items-customcardviewitem-vb'/>
 
 
 
-#### Creating Custom CardViewEditorItem
+### Creating Custom CardViewEditorItem
 
 <snippet id='cardview-custom-items-customcardvieweditoritem-cs'/>
 <snippet id='cardview-custom-items-customcardvieweditoritem-vb'/>
@@ -38,14 +38,14 @@ First let's create our custom items:
 
 Back in our form we need to populate some sample data for the checkboxes as well as subscribe and handle the __CardViewItemCreating__ event. For the purpose of this example we are data binding the control to the SofiaCarRental database which is available in the installation folder of the suite.
 
-#### Use the custom item
+### Use the custom item
 
 <snippet id='cardview-custom-items-cardviewform-cs'/>
 <snippet id='cardview-custom-items-cardviewform-vb'/>
 
 
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/cardview/structure%})
 * [Design Time]({%slug winforms/cardview/design-time%})

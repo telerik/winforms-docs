@@ -36,7 +36,7 @@ Additionally, DateTimeCategoricalAxis inherits all properties of the Axis class.
 
 DateTimeCategorical axis is not added by default to Cartesian series. For this reason you will need to create an instance of the DateTimeCategoricalAxis class and assign it to the HorizontalAxis property of the series, before series is added to the chart. Here is a sample snippet: 
 
-#### DateTimeCategoricalAxis Setup
+### DateTimeCategoricalAxis Setup
 
 <snippet id='chartview-datetime-datetimecategoricalaxis-cs'/>
 <snippet id='chartview-datetime-datetimecategoricalaxis-vb'/>
@@ -72,7 +72,7 @@ Additionally, DateTimeContinuousAxis inherits all properties of the Axis class.
 
 DateTimeContinuous axis is not added by default to Cartesian series. For this reason you will need to create an instance of the DateTimeContinuousAxis class and assign it to the HorizontalAxis property of the series, before series is added to the chart. Here is a sample snippet: 
 
-#### DateTimeContinuousAxis Setup
+### DateTimeContinuousAxis Setup
 
 <snippet id='chartview-datetime-datetimecontinuousaxis-cs'/>
 <snippet id='chartview-datetime-datetimecontinuousaxis-vb'/>
@@ -82,7 +82,7 @@ DateTimeContinuous axis is not added by default to Cartesian series. For this re
 >caption Figure 2: DateTimeContinuousAxis Setup Setup
 ![WinForms RadChartView DateTimeContinuousAxis Setup](images/chartview-axes-datetimel002.png)
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

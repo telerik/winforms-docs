@@ -11,7 +11,8 @@ CTAControlName: AIPrompt
 ---
 
 # WinForms AIPrompt Overview
-#### WinForms AIPrompt component bridges the gap between an app and the next-generation AI language model applications.
+
+WinForms AIPrompt component bridges the gap between an app and the next-generation AI language model applications.
 
 The AIPrompt component allows you to write prompts and execute predefined commands as well as look and interact with the output from the AI. Use the AIPrompt to provide your users with pre-determined ways to interact with a trained language model of your choice.
 
@@ -30,7 +31,7 @@ The AIPrompt component allows you to write prompts and execute predefined comman
 ## Key Features
 
 * __Views__: The component provides different views that you can include in it. This allows the users to have more control over when interacting with the AIPrompt.
-* __Prompt button__: The AIPrompt component provides the ability to display it as a button, which when interacted with, will display the prompt. To learn more about the AIPrompt button, check this [article]({%slug aiprompt-prompt-button%}).
+* __Prompt button__: The AIPrompt component provides the ability to display it as a button, which when interacted with, will display the prompt. To learn more, see [AIPrompt Button]({%slug aiprompt-prompt-button%}).
 * __Events__: The control exposes two events that give you the ability to populate the different views of the component. 
 
 ## Telerik UI for WinForms Learning Resources

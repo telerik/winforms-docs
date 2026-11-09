@@ -20,7 +20,7 @@ Building complex filter expressions is a breeze with __RadDataFilter__. The cont
 
 ![WinForms RadDataFilter Overview](images/data-filter-overview001.png)
 
-### Key features:
+## Key features:
 
 * __Intuitive Expression Building:__  With the extremely intuitive UI, **RadDataFilter** is very user-friendly. Select your filter options with a simple point-and-click. The control allows specifying expressions based on the  fields available in the data source. You can build complex expressions on multiple fields with *And*/*Or* operators and myriad of filter functions.
 
@@ -46,7 +46,7 @@ Building complex filter expressions is a breeze with __RadDataFilter__. The cont
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/datafilter/getting-started%})
 * [Design Time]({%slug winforms/datafilter/design-time%})

@@ -29,7 +29,7 @@ The Ctrl keyboard combinations supported by the **RadTextBoxControl** are listed
 |Ctrl+A|Select all the text.|
 
 
-# See Also
+## See Also
 
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
 * [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})

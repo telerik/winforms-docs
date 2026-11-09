@@ -20,7 +20,7 @@ The selection in __RadListControl__ is determined by the __SelectionMode__ prope
  
 >note There is **ActiveItem** property that gets or sets the active item. The **ActiveItem** is relevant only for **MultiSimple** and **MultiExtended** selection modes.
 
-#### Set the selection mode
+## Set the selection mode
 
 <snippet id='listcontrol-selection-selectionmode-cs' />
 <snippet id='listcontrol-selection-selectionmode-vb' />
@@ -31,7 +31,7 @@ The selection in __RadListControl__ is determined by the __SelectionMode__ prope
 
 In order to select an item programmatically you should use the **SelectedItem** property. You can select an item by index as well by using the **SelectedIndex** property. If you want to select an item by its value you can use the **SelectedValue** property. When usng the **SelectedValue** property a linear search is performed to find a data item that has the same value in its **Value** property.
 
-#### Select items programmatically 
+### Select items programmatically
 
 <snippet id='listcontrol-selection-selectitems-cs' />
 <snippet id='listcontrol-selection-selectitems-vb' />

@@ -14,10 +14,10 @@ res_type: kb
 |Q2 2008|RadDock for WinForms|Angel Kanchev|August 07, 2008| 
 
  
-**HOW-TO**       
+## How To
 How to have full control over the layout of the docking manager in design-time.  
  
-**SOLUTION**
+## Solution
 
 Select the **DockingManager** and from its **ActionList** choose "Show Advanced Layout Designer...".  
 It opens a Fully functional docking, which works the same way as in run-time:  

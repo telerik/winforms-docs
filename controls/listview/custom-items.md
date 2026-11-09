@@ -25,7 +25,7 @@ This can be done by making use of the __VisualItemCreating__ event. The followin
 
 First let's create a custom visual item by inheriting from the __SimpleListViewVisualItem__ class:
 
-#### Creating custom item
+### Creating custom item
 
 <snippet id='listview-listviewcustomitems-customitem-cs' />
 <snippet id='listview-listviewcustomitems-customitem-vb' />
@@ -49,7 +49,7 @@ To use the newly created items, you should handle the __VisualItemCreating__ eve
 
 We should create a custom visual item inheriting the __IconListViewVisualItem__. The following example demonstrates how to add custom elements to the IconListViewVisualItem.__Children__ collection:
 
-#### Creating custom item
+### Creating custom item
 
 <snippet id='listview-listviewcustomitems-customiconlistviewvisualitem-cs' />
 <snippet id='listview-listviewcustomitems-customiconlistviewvisualitem-vb' />

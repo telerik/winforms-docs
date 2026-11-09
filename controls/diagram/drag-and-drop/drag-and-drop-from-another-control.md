@@ -21,7 +21,7 @@ This article will demonstrate how you can create shapes in __RadDiagram__ after 
 
 The drag and drop behavior in __RadGridView__ is controlled by a service class. We are going to start this service when performing a mouse down operation on a certain row in the grid. In order to execute our custom logic we also need a custom row behavior  class responsible for handling the user actions. We can change the default row behavior and subscribe to the service events in the form`s constuctor.
 
-#### Setup RadGridView
+### Setup RadGridView
 
 <snippet id='diagram-drag-and-drop-from-another-control-setupgrid-cs'/>
 <snippet id='diagram-drag-and-drop-from-another-control-setupgrid-vb'/>
@@ -30,7 +30,7 @@ The drag and drop behavior in __RadGridView__ is controlled by a service class. 
 
 For the purpose of the example we will define a grid model object storing information about the shapes.
 
-#### Grid Helpers
+### Grid Helpers
 
 <snippet id='diagram-drag-and-drop-from-another-control-helperclasses-cs'/>
 <snippet id='diagram-drag-and-drop-from-another-control-helperclasses-vb'/>
@@ -41,14 +41,14 @@ For the purpose of the example we will define a grid model object storing inform
 
 __RadDiagram__ will accept the dragged data only if it is dropped on the diagram element. The __PreviewDragDrop__ event handler will be responsible for reading the data and transforming it to a shape.
 
-#### Drag and Drop Events
+### Drag and Drop Events
 
 <snippet id='diagram-drag-and-drop-from-another-control-handleevents-cs'/>
 <snippet id='diagram-drag-and-drop-from-another-control-handleevents-vb'/>
 
 
 
-# See Also
+## See Also
 
 * [RadGridView]({%slug winforms/gridview%})
 * [Populating with Data]({%slug winforms/diagram/populating-with-data%})

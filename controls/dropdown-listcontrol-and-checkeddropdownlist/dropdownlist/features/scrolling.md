@@ -22,7 +22,7 @@ This feature ensures that the control is ready for modern touch-screen applicati
 
 ![WinForms RadDropDownList Enable Kinetic Scrolling](images/dropdown-and-listcontrol-dropdownlist-scrolling001.gif)
 
-#### Enabling Kinetic Scrolling 
+### Enabling Kinetic Scrolling
 
 <snippet id='dropdownlist-scrolling-kineticscrolling-cs' />
 <snippet id='dropdownlist-scrolling-kineticscrolling-vb' />
@@ -43,7 +43,7 @@ __RadDropDownList__ provides out of the box functionality for programmatically s
 
 ![WinForms RadDropDownList Scroll to Item](images/dropdown-and-listcontrol-dropdownlist-scrolling002.gif)
 
-#### Scroll to Item 
+### Scroll to Item
 
 <snippet id='dropdownlist-scrolling-scrolltoitem-cs' />
 <snippet id='dropdownlist-scrolling-scrolltoitem-vb' />
@@ -55,7 +55,7 @@ __RadDropDownList__ provides out of the box functionality for programmatically s
 
 ![WinForms RadDropDownList Scroll to Active Item](images/dropdown-and-listcontrol-dropdownlist-scrolling003.gif)
 
-#### Scroll to Active Item 
+### Scroll to Active Item
 
 <snippet id='dropdownlist-scrolling-scrolltoactiveitem-cs' />
 <snippet id='dropdownlist-scrolling-scrolltoactiveitem-vb' />
@@ -80,7 +80,7 @@ The __ListElement__ contained in the popup of __RadDropDownList__ supports three
 
 ![WinForms RadDropDownList Discrete Scrolling](images/dropdown-and-listcontrol-dropdownlist-scrolling004.gif)
 
-#### Discrete Scrolling 
+### Discrete Scrolling
 
 <snippet id='dropdownlist-scrolling-discretescrolling-cs' />
 <snippet id='dropdownlist-scrolling-discretescrolling-vb' />

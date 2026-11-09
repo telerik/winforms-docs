@@ -44,7 +44,7 @@ __RadCheckedListBox__ is an enhanced alternative to the standard Windows Forms c
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/checkedlistbox/getting-started%})
 * [Structure]({%slug winforms/checkedlistbox/structure%})

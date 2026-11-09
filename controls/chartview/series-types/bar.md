@@ -14,7 +14,7 @@ previous_url: chartview-series-types-bar
 
 __BarSeries__ are used to visualize data points as bar blocks where the height of each bar denotes the magnitude of its value. As a descendant of Categorical series, Bars require one categorical and one numerical axis. The following snippet demonstrates how to manually populate two __BarSeries__: 
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-bar-bar-cs'/>
 <snippet id='chartview-bar-bar-vb'/>
@@ -40,7 +40,7 @@ __BarSeries__ could be customized using the following properties:
 
 * __GapLength__: A property exposed by both __CategoricalAxis__ and __DateTimeContinuousAxis__, which controls the distance between bar groups as percent. Note that the value should be between 0 and 1, where a value of 0 means that a bar would take the entire space between two ticks, while a value of 1 means the bar will have zero width as all the space should appear as gap. Here is how to set the GapLength.
 
-#### Setting GapLength
+## Setting GapLength
 
 <snippet id='chartview-bar-gaplength-cs'/>
 <snippet id='chartview-bar-gaplength-vb'/>
@@ -59,7 +59,7 @@ The following image demonstrates how different values of the __GapLength__ prope
 
 To achieve this add four __BarSeries__ and set the __StackGroupKey__ property of two of them to 1.
             
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

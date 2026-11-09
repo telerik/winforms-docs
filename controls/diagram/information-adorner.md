@@ -54,7 +54,7 @@ Now, you should apply the custom __ItemInformationAdorner__ to __DiagramElement_
 
 ![WinForms RadDiagram Custom Information Adorner](images/diagram-information-adorner002.gif)
 
-# See Also
+## See Also
 
 * [RibbonUI]({%slug winforms/diagram/ribbonui%})	
 * [Settings Pane]({%slug winforms/diagram/settings-pane%})	

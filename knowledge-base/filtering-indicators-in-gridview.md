@@ -39,7 +39,7 @@ The animation below demonstrates the end result in **RadGridView**.
 
 1\. Create a custom **GridFilterCellElement** and initialize a **RadButtonElement** in it. The layout of the cell will also need adjustments so the **ArrangeOverride** method of the cell will need customizations. The click event of the button will be responsible for removing the filter and the button`s visibility will by synced in the **SetContentCore** method.
  
-#### Custom GridFilterCellElement
+### Custom GridFilterCellElement
 
 {{source=..\SamplesCS\KnowledgeBase\FilteringIndicatorsForm.cs region=CustomGridFilterCellElement}} 
 {{source=..\SamplesVB\KnowledgeBase\FilteringIndicatorsForm.vb region=CustomGridFilterCellElement}}
@@ -380,4 +380,4 @@ End Class
 
 {{endregion}} 
 
->tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/FilterinIngIndicatorsInGridView).
+>tip A complete solution providing a C# and VB.NET project is available in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/GridView/FilterinIngIndicatorsInGridView).

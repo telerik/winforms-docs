@@ -27,7 +27,7 @@ When you press the `OK` button, a new message will be automatically added with t
 
 ![WinForms RadChat Calendar Overlay Sample](images/chat-items-overlays001.gif) 
 
-#### Adding a ChatCalendarOverlay
+### Adding a ChatCalendarOverlay
 
 <snippet id='chat-overlays-addcalendaroverlay-cs'/>
 <snippet id='chat-overlays-addcalendaroverlay-vb'/>
@@ -44,7 +44,7 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 
 ![WinForms RadChat DateTime Overlay Sample](images/chat-items-overlays002.gif) 
 
-#### Adding a ChatDateTimeOverlay
+### Adding a ChatDateTimeOverlay
 
 <snippet id='chat-overlays-adddatetimeoverlay-cs'/>
 <snippet id='chat-overlays-adddatetimeoverlay-vb'/>
@@ -59,7 +59,7 @@ You have access to the calendar itself by the ChatCalendarOverlay.**Calendar** p
 
 ![WinForms RadChat List Overlay Sample](images/chat-items-overlays003.gif) 
 
-#### Adding a ChatListOverlay
+### Adding a ChatListOverlay
 
 <snippet id='chat-overlays-addlistoverlay-cs'/>
 <snippet id='chat-overlays-addlistoverlay-vb'/>
@@ -76,7 +76,7 @@ You have access to the list view by the ChatListOverlay.**ListView** property.
 
 ![WinForms RadChat Time Overlay Sample](images/chat-items-overlays004.gif) 
 
-#### Adding a ChatTimeOverlay
+### Adding a ChatTimeOverlay
 
 <snippet id='chat-overlays-addtimeoverlay-cs'/>
 <snippet id='chat-overlays-addtimeoverlay-vb'/>
@@ -84,7 +84,7 @@ You have access to the list view by the ChatListOverlay.**ListView** property.
 
 
  
-# See Also
+## See Also
 
 * [Messages]({%slug winforms/chat/chat-items/messages%})
 * [Cards]({%slug winforms/chat/chat-items/cards%})

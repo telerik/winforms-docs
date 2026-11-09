@@ -20,21 +20,21 @@ In order to add custom menu items to the default context menu, you should create
 >caption Figure 1: Modified Context Menu
 ![WinForms RadChartView Modified Context Menu](images/modifying-the-default-context-menu001.png)
 
-#### Subscribe to Event
+### Subscribe to Event
 
 <snippet id='chartview-modifying-the-default-context-menu-subscribetoevent-cs'/>
 <snippet id='chartview-modifying-the-default-context-menu-subscribetoevent-vb'/>
 
 
 
-#### Handle Event
+### Handle Event
 
 <snippet id='chartview-modifying-the-default-context-menu-handleevent-cs'/>
 <snippet id='chartview-modifying-the-default-context-menu-handleevent-vb'/>
 
 
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

@@ -112,5 +112,5 @@ That’s it! Now when we click on a cell of GridViewComboBoxColumn to turn it in
  
 ![Telerik UI for WinForms RadGridViewComboBoxColumn custom cell editor with additional elements shown in edit mode.](/images/ComplexEditor.png)
    
->note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/CustomCellEditor).
+>note A complete solution in C# and VB.NET can be found in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/GridView/CustomCellEditor).
 

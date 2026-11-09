@@ -18,7 +18,7 @@ The new docking framework introduces service-based semantic, which allows for gr
 
 A running drag-and-drop operation (DDO) may be easily canceled by either pressing `Esc` or manually, by calling the following method:
 
-#### Canceling Drag-and-drop operation 
+### Canceling Drag-and-drop operation 
  
 
 <snippet id='dock-using-the-dragdropservice-cancellingservice-cs' />
@@ -34,7 +34,7 @@ The service can operate in two modes: *Immediate* and *Preview*. The *Immediate*
  
 You can switch between *Preview* and *Immediate* modes by setting the __DragDropMode__ property of **RadDock**:
 
-#### Setting DragDropMode 
+### Setting DragDropMode 
  
 <snippet id='dock-using-the-dragdropservice-dragdropmode-cs' />
 <snippet id='dock-using-the-dragdropservice-dragdropmode-vb' />
@@ -45,7 +45,7 @@ You can switch between *Preview* and *Immediate* modes by setting the __DragDro
 
 The service may be told which dock states are allowed to be hit-tested. For example, we may exclude any floating window from hit-testing by simply specifying the following:
 
-#### Setting AllowedStates 
+### Setting AllowedStates 
 
 <snippet id='dock-using-the-dragdropservice-dragdropallowedstates-cs' />
 <snippet id='dock-using-the-dragdropservice-dragdropallowedstates-vb' />
@@ -72,7 +72,7 @@ The service may be told which dock states are allowed to be hit-tested. For exam
 
 The following example demonstrates how to allow only DockPosition.*Bottom* for the **MainDocumentContainer**:
 
-#### Handling DragDropService events 
+### Handling DragDropService events 
 
 <snippet id='dock-using-the-dragdropservice-initdragdropevents-cs' />
 <snippet id='dock-using-the-dragdropservice-initdragdropevents-vb' />
@@ -87,7 +87,7 @@ The following example demonstrates how to allow only DockPosition.*Bottom* for t
 
 The service may be told which edges of the owning **RadDock** instance are allowed for dock operation. The following example demonstrates how to set only left and right edges as allowed:
 
-#### Setting AllowedDockManagerEdges 
+### Setting AllowedDockManagerEdges 
 
 <snippet id='dock-using-the-dragdropservice-initdragdropproperties-cs' />
 <snippet id='dock-using-the-dragdropservice-initdragdropproperties-vb' />
@@ -98,7 +98,7 @@ The service may be told which edges of the owning **RadDock** instance are allow
 
 ![WinForms RadDock Only DockPositionLeft and DockPositionRight are available](images/dock-architecture-and-features-using-the-dragdropservice002.png)
 
-# See Also
+## See Also
 
 [Getting Started]({%slug winforms/dock/getting-started%})
 [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%}) 

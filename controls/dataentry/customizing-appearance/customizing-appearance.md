@@ -25,7 +25,7 @@ You can access and modify the style for different elements in __RadDataEntry__ b
 
 The following snippet show how you can customize the RadDataEntry styles at runtime. 
 
-#### Change Border Color
+### Change Border Color
 
 <snippet id='dataentry-customizing-appearance-setbordercolor-cs'/>
 <snippet id='dataentry-customizing-appearance-setbordercolor-vb'/>
@@ -40,7 +40,7 @@ The following snippet show how you can customize the RadDataEntry styles at runt
 
 The following snippet shows how you access the underlying controls and change the their styles:
 
-#### Set Labels ForeColor
+### Set Labels ForeColor
 
 <snippet id='dataentry-customizing-appearance-labelcolor-cs'/>
 <snippet id='dataentry-customizing-appearance-labelcolor-vb'/>
@@ -66,7 +66,7 @@ The following code snippets represent how to change the BackColor property of Va
 
 ![WinForms RadDataEntry Set Validaton Panel BackColor](images/dataentry-customizing-appearance004.png)  
 
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/dataentry/control-element-structure%})
  * [Getting Started]({%slug winforms/dataentry/getting-started%})

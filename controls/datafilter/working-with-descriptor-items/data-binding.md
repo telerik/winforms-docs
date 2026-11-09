@@ -37,7 +37,7 @@ Then, if you open the *RadDataFilter Design Time Editor*, you can select the des
 
 It is possible to set the **DataSource** property programmatically as well.
 
-#### Setting DataSource at run time
+### Setting DataSource at run time
 
 <snippet id='datafilter-data-binding-boundmode-cs' />
 <snippet id='datafilter-data-binding-boundmode-vb' />
@@ -50,7 +50,7 @@ After setting the **DataSource** property, the **Descriptors** collection is fil
 
 ![WinForms RadDataFilter RadDataFilter bound at run time](images/datafilter-bound-mode004.png)
 
-# See Also
+## See Also
 
 * [Unbound Mode]({%slug winforms/datafilter/populating-with-data/unbound-mode%})	
 * [Getting Started ]({%slug winforms/datafilter/getting-started%})

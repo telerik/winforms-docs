@@ -66,7 +66,7 @@ The __ToolWindow__ context menu has commands that allow the panel to be __Floati
 
 ![WinForms RadDock ToowWindow context menu](images/dock-architecture-and-features-understanding-raddock005.png)
 
-# See Also
+## See Also
 
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     
 * [Using the ContextMenuService]({%slug winforms/dock/architecture-and-features/using-the-contextmenuservice%})

@@ -20,7 +20,7 @@ The following example demonstrates how to do that:
 
 1\. In the __BindingCreating__ event of the control you can tell which property to bind the field to. Here you should bind the "DateTime" field from the data source to the "NullableValue" property of __RadDateTimePicker__ (as it supports *null* values).
 
-#### Map Nullable Property
+## Map Nullable Property
 
 <snippet id='dataentry-handle-unsupported-values-bindingcreating-cs'/>
 <snippet id='dataentry-handle-unsupported-values-bindingcreating-vb'/>
@@ -30,7 +30,7 @@ The following example demonstrates how to do that:
 
 2\. Then in the __BindingCreated__ event you will enable the binding formatting and will subscribe to its __Format__ event.  
 
-#### Enable Formatting
+## Enable Formatting
 
 <snippet id='dataentry-handle-unsupported-values-bindingcreated-cs'/>
 <snippet id='dataentry-handle-unsupported-values-bindingcreated-vb'/>
@@ -40,14 +40,14 @@ The following example demonstrates how to do that:
 
 3\. At the end we just need to interpret the *DBNull*  values as *null* values:
 
-#### Evaluate DBNull
+## Evaluate DBNull
 
 <snippet id='dataentry-handle-unsupported-values-format-cs'/>
 <snippet id='dataentry-handle-unsupported-values-format-vb'/>
 
 
 
-# See Also
+## See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
  * [Getting Started]({%slug  winforms/dataentry/getting-started%})

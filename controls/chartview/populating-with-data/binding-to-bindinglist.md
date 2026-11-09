@@ -24,7 +24,7 @@ BindingList is a generic list type, that provides additional control over list i
 
 In order to allow __RadChartView__ to automatically reflect changes in the data source, your object should implement the INotifyPropertyChanged interface: 
 
-#### Binding to BindingList
+## Binding to BindingList
 
 <snippet id='chartview-binding-to-bindinglist-customclass-cs'/>
 <snippet id='chartview-binding-to-bindinglist-customclass-vb'/>
@@ -36,7 +36,7 @@ In order to allow __RadChartView__ to automatically reflect changes in the data 
 
 Once the interface is implemented and your collection implement IBindingList, just like the BindingList does, changes are automatically reflected. Here is a sample of adding a new record: 
 
-#### Add Item
+## Add Item
 
 <snippet id='chartview-binding-to-bindinglist-addingnewrecord-cs'/>
 <snippet id='chartview-binding-to-bindinglist-addingnewrecord-vb'/>
@@ -46,7 +46,7 @@ Once the interface is implemented and your collection implement IBindingList, ju
 >caption Figure 2: Reflect Object Changes
 ![WinForms RadChartView Reflect Object Changes](images/chartview-databinding-binding-to-bindinglist002.png)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/chartview/getting-started%})
 * [Binding to DataTable]({%slug winforms/chartview-/populating-with-data/binding-to-datatable%})

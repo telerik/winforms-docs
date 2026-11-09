@@ -26,7 +26,7 @@ __RadDataLayout__ generates content item for each public property that can be ed
 
 The *Validation label* does not have any text by default. It is designed to be used in cases where users want to show some additional information. 
 
-# See Also
+## See Also
 
  * [Localization]({%slug winforms/datalayout/localization%})
  * [Getting Started]({%slug winforms/datalayout/getting-started%})

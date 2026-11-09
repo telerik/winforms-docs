@@ -22,7 +22,7 @@ The __RadDropDownList.DropDownStyle__ property determines if the text area at th
 
 ![WinForms RadDropDownList DropDownList](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle002.png)
 
-#### Setting DropDownStyle 
+## Setting DropDownStyle
 
 <snippet id='dropdownlist-dropdownstyle-dropdownstyle-cs' />
 <snippet id='dropdownlist-dropdownstyle-dropdownstyle-vb' />
@@ -31,7 +31,7 @@ The __RadDropDownList.DropDownStyle__ property determines if the text area at th
 
 When __RadDropDownList__ is set to *RadDropDownStyle.DropDownList* one can control if an image will be displayed in the editor:         
 
-#### Image in Editor 
+### Image in Editor
 
 <snippet id='dropdownlist-dropdownstyle-imageineditor-cs' />
 <snippet id='dropdownlist-dropdownstyle-imageineditor-vb' />
@@ -46,7 +46,7 @@ This section describes how user defined values can be added to the data source p
 
 ![WinForms RadDropDownList Adding User Defined Values](images/dropdown-and-listcontrol-dropdownlist-dropdownstyle003.gif)
 
-#### Initial Set Up 
+### Initial Set Up
 
 <snippet id='dropdownlist-dropdownstyle-initialsetup-cs' />
 <snippet id='dropdownlist-dropdownstyle-initialsetup-vb' />
@@ -62,6 +62,5 @@ Now we need to handle the event, perform the required checks and update our data
 
 
 
-# See Also
+## See Also
 * [Indicating Focus in RadDropDownList]({%slug dropdownlist-style-indicating-focus%})
-

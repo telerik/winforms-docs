@@ -16,7 +16,7 @@ To create a __RadDock__ in code, construct a __RadDock__, set properties and add
 
 ![WinForms RadDock Creating a RadDock at Runtime](images/dock-object-model-creating-a-raddock-at-runtime001.png)
 
-#### Creating a simple RadDock instance 
+## Creating a simple RadDock instance 
 
 <snippet id='dock-creating-a-raddock-at-runtime-creatingdock-cs' />
 <snippet id='dock-creating-a-raddock-at-runtime-creatingdock-vb' />
@@ -26,7 +26,7 @@ To create a __RadDock__ in code, construct a __RadDock__, set properties and add
 >caution You cannot set the DockPosition of the ToolWindow to Fill, unless you specify a target ToolWindow. If you try to set the DockPosition of a ToolWindow to Fill when there is no target ToolWindow, we throw an exception since a ToolWindow cannot fill RadDock entirely. This behavior is by design and it is the same as it is in Visual Studio. If you want to have a ToolWindow occupying RadDock entirely, you should dock it to a side (left/right/top/bottom) and set MainDocumentContainerVisible to false.
 >
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Accessing DockWindows]({%slug winforms/dock/object-model/accessing-dockwindows%})

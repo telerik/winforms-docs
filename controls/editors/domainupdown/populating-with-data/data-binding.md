@@ -126,7 +126,7 @@ You can bind **RadDomainUpDown** programmatically as well. The following code sn
 
 ![WinForms RadDomainUpDown Bound at Run Time](images/domainupdown-populating-with-data-data-binding004.gif)
 
-# See Also
+## See Also
 
 * [Populating with Data at Design Time]({%slug winforms/editors/domainupdown/populating-with-data/design-time%})
 * [Adding Items Programmatically]({%slug winforms/editors/domainupdown/populating-with-data/adding-items-programmatically%})

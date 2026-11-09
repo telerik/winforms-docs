@@ -23,6 +23,6 @@ Create a custom **GridDataCellElement** and in its **SetContentCore** method sta
    
 ![gridview-loading-images-asynchronously001](images/gridview-loading-images-asynchronously001.png)  
    
->note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/GridViewWithAsyncImageDownload).
+>note A complete solution in C# and VB.NET can be found in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/GridView/GridViewWithAsyncImageDownload).
 
 

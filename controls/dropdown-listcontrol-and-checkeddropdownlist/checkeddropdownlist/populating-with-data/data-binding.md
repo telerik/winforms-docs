@@ -76,7 +76,7 @@ Now drag a __RadCheckedDropDownList__ to the form and a __RadButton__. The butto
 
 ![WinForms RadCheckedDropDownList RadCheckedDropDownList bound at Run time](images/dropdown-and-listcontrol-checkeddropdownlist-populating-with-data-data-binding004.gif)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data/design-time%})
 * [Adding Items Programmatically]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/populating-with-data/adding-items-programmatically%})

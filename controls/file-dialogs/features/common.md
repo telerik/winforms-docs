@@ -24,7 +24,7 @@ This articles shows the features shared between all file dialogs controls -  **R
 
 All the dialog controls expose an **InitialDirectory** property that determines the directory that will be opened when the dialog shows.
         
-####  Example 1: Setting initial directory
+###  Example 1: Setting initial directory
 
 ````C#
 
@@ -45,7 +45,7 @@ Dim dr As DialogResult = saveFileDialog.ShowDialog()
 
 All the dialog controls expose an **InitialSelectedLayout** property that determines the initial layout of the list with the files.
 
-####  Example 2: Setting initial layout 
+###  Example 2: Setting initial layout
 
 ````C#
 RadSaveFileDialog saveFileDialog = new RadSaveFileDialog();
@@ -114,7 +114,7 @@ Trying to change the file extension prompts the message box shown in Figure 4:
 
 By default the main pane with the files/folders and the navigation tree are synced and when you navigate through the folders the selection in the tree navigation pane will also be updated. To disable this you can set the **ExpandToCurrentDirectory** property of the dialog to *False*.
 
-####  Example 3: Disabling the automatic expanding to current directory  
+###  Example 3: Disabling the automatic expanding to current directory
 
 ````C#
 RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
@@ -136,7 +136,7 @@ Dim dr As DialogResult = openFileDialog.ShowDialog()
 
 By default the file dialogs don't show hidden files and folders. To show them you can set the **ShowHiddenFiles** property of the corresponding file dialog control to *True*.
 
-####  Example 4:  
+###  Example 4:
 
 ````C#
 RadOpenFileDialog openFileDialog = new RadOpenFileDialog(); 

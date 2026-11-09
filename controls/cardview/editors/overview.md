@@ -13,7 +13,7 @@ position: 0
 
 __RadCardView__ supports editing of its content out of the box. This operation can be started by clicking with the mouse on the value of a particular item. This functionality is controlled by the __AllowEdit__ property and by default it is set to *true*.
 
-#### Disable Editing
+## Disable Editing
 
 <snippet id='cardview-editors-overview-allowedit-cs'/>
 <snippet id='cardview-editors-overview-allowedit-vb'/>
@@ -51,7 +51,7 @@ When an item is brought out of edit mode, the following steps are performed:
 
 The Following example demonstrates the __ItemValidating__ event handling integer values: 
             
-#### Data Validation
+### Data Validation
 
 <snippet id='cardview-editors-overview-datavalidation-cs'/>
 <snippet id='cardview-editors-overview-datavalidation-vb'/>
@@ -69,7 +69,7 @@ The Following example demonstrates the __ItemValidating__ event handling integer
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Switching Editors]({%slug winforms/cardview/editors/switching-editors%})
 * [Custom Items]({%slug winforms/cardview/custom-items%})

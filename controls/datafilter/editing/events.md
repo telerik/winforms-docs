@@ -46,7 +46,7 @@ The following code snippet demonstrates how to replace the default editor with a
 
 ![WinForms RadDataFilter Replace default editor with drop down](images/datafilter-events001.png)
 
-#### Replace and customize the default editor
+### Replace and customize the default editor
 
 <snippet id='datafilter-events-customizeeditor-cs' />
 <snippet id='datafilter-events-customizeeditor-vb' />
@@ -69,7 +69,7 @@ Both editors, field and filter type are TreeViewDropDownListEditor and if you ne
 
 The RadDataFilter.**Edited** event occurs after the filter node is edited.
 
-# See Also
+## See Also
 
 * [Custom Editors]({%slug winforms/datafilter/editing/custom-editors%})	
 * [Default Editors]({%slug winforms/datafilter/editing/default-editors%})	

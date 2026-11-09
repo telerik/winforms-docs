@@ -103,6 +103,6 @@ Here is how to change the BackColor of the FooterPanel:
 
 ![WinForms RadDateTimePicker Customize Button Panel](images/editors-timepicker-customization008.png)
 
-# See Also
+## See Also
 
 [Themes]({%slug editors/timepicker/themes%})

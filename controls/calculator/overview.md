@@ -51,7 +51,7 @@ CTAControlName: Calculator
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Structure]({%slug calculator-structure%})	
 * [Design Time]({%slug calculator-design-time%})	

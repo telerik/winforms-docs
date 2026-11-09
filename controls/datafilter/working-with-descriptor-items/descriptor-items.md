@@ -44,7 +44,7 @@ You can find in the table below all available filter operators for the common ty
 The following article shows how you can manually add __DataFilterDescriptorItem__: [Unbound Mode]({%slug winforms/datafilter/populating-with-data/unbound-mode%})
 
 
-# DataFilterComboDescriptorItem
+## DataFilterComboDescriptorItem
 
 This item is auto-generated only if the data type of the underling field is of type "enum". If you want to use such item for a other data field you need to add it manually. This can be achieved at design time or by adding the item in the code. In both cases you need to specify the fooling properties:
 
@@ -75,6 +75,6 @@ When this is done you can add new expression item and choose from the list:
 
 ![WinForms RadDataFilter DataFilterComboDescriptorItem at Runtime](images/datafilter-combo-descriptor-item002.png)
 
-# See Also
+## See Also
 
 * [Data Binding]({%slug winforms/datafilter/populating-with-data/data-binding%})

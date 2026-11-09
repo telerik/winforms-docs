@@ -33,7 +33,7 @@ The following example shows how to create a chart with two series sharing their 
 >caption Figure 1: One Common Axis
 ![WinForms RadChartView One Common Axis](images/chartview-axes-multiple-axes002.png)
 
-#### One Common Axis
+### One Common Axis
 
 <snippet id='chartview-multiple-axes-setuponecommonaxis-cs'/>
 <snippet id='chartview-multiple-axes-setuponecommonaxis-vb'/>
@@ -50,7 +50,7 @@ If you need series to have different axes but still plot them on one chart view 
 >caption Figure 3: Two Sides
 ![WinForms RadChartView Two Sides](images/chartview-axes-multiple-axes004.png)
 
-#### Setup Four Axes
+### Setup Four Axes
 
 <snippet id='chartview-multiple-axes-setuptwoseriesfouraxes-cs'/>
 <snippet id='chartview-multiple-axes-setuptwoseriesfouraxes-vb'/>
@@ -69,7 +69,7 @@ Mixing the above two modes:
 
 
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

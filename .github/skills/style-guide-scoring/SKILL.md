@@ -10,9 +10,11 @@ You are an expert technical documentation reviewer. Evaluate the provided markdo
 
 ## Source
 
-Use the scoring rules defined in this skill as the default source of truth. Do not read `C:\HelpMigration\tech-docs-style-guide` unless the prompt explicitly instructs you to consult that folder or a specific file in it.
+Use the scoring rules defined in this skill as the default source of truth. The full style guide is maintained in the Telerik organization's [tech-docs-style-guide repository](https://github.com/telerik/tech-docs-style-guide) for optional deeper review. Do not require a local folder or clone.
 
-The full style guide lives at `C:\HelpMigration\tech-docs-style-guide` for optional deeper review only. When the prompt explicitly requires it, read only the specific source file or files needed for the requested check instead of scanning the whole folder.
+When the prompt explicitly requires the full guide, fetch only the specific source files needed for the requested check from that repository's default branch (currently `master`) using the GitHub API, `gh`, or web tools. The filenames cited in this skill, such as `metadata.md` and `titles-and-headings.md`, are relative to the repository root. For example, read `metadata.md` at https://github.com/telerik/tech-docs-style-guide/blob/master/metadata.md. Do not scan the whole repository.
+
+If remote access fails or a required file is missing, report the limitation explicitly. Do not silently fall back to a local folder or claim to have reviewed source files that were not retrieved. Scores based only on this skill's embedded rules must be identified as such when the requested deeper review could not be completed.
 
 ## Additional Guide Coverage
 
@@ -24,7 +26,7 @@ Only apply artifact-specific checks when the article actually contains that arti
 * Vocabulary and terminology (`vocabulary.md`, `brandnames.md`, `click-tap-select.md`, `personal-pronouns.md`): Prefer `checkbox`; use `click X` and `tap X`; use `hover over` as the verb and `hover` or `hovering` as the noun or adjective; prefer `unavailable` over `disabled` or `grayed out` for irrelevant UI state; use `earlier` and `later` for versions; use `starting with` instead of `since` or `as of` for version introductions; preserve official company, product, and third-party spelling; prefer gender-neutral pronouns or rewrite to avoid unnecessary gendering.
 * Programming language display names: In prose, headings, and code-block labels (tab headers, bold introductions), always write **C#** and **VB.NET**. Do not use alternative forms such as "csharp", "CSharp", "C Sharp", "vb", "VB", "Visual Basic", or "VB.Net". The fenced-code-block language tag must also follow this rule: use ` ```C# ` and ` ```VB.NET ` instead of ` ```csharp ` or ` ```vb `.
 * Links and cross-references (`cross-references.md`): Use descriptive anchor text that explains the destination or purpose. Vary repeated anchor text when citing the same resource often. Paraphrase internal documentation titles instead of quoting them exactly. Cite exact external resource titles and authors. When HTML syntax is available, prefer opening external links in a new tab.
-* Images, tables, and captions (`screenshots.md`, `tables-figures-code.md`): Require descriptive alt text for images. Captions, when used, should be bold, descriptive, in sentence case, and positioned before the element. Do not leave table cells blank; use `N/A`, `Not applicable`, or `None` when needed. Flag screenshots that expose sensitive data or visibly ignore default/light UI guidance.
+* Images, tables, and captions (`screenshots.md`, `tables-figures-code.md`): Every image requires descriptive alt text and a meaningful sentence or exact `>caption` block immediately before it. Image captions use sentence case, never standalone bold text or headings; this overrides other caption styling for images. Table/code captions may remain bold, descriptive, in sentence case, and before the element. Do not leave table cells blank; use `N/A`, `Not applicable`, or `None` when needed. Flag screenshots that expose sensitive data or visibly ignore default/light UI guidance.
 
 ---
 
@@ -34,6 +36,23 @@ Score each dimension from **1 (poor) to 5 (excellent)**. Provide a numeric score
 
 When a rule from the "Additional Guide Coverage" section applies, score it under the closest existing dimension instead of inventing a new output field.
 
+Report violations with their locations and proposed corrections without editing during review-only scoring. An affected dimension cannot receive a perfect score, and a weighted score does not waive an unresolved required correction.
+
+## WinForms Repository Precedence
+
+Use the applicable nested skills under
+`../telerik-documentation-style-guide/` before the generic checks below.
+The [metadata skill](../telerik-documentation-style-guide/style-metadata-links/SKILL.md)
+protects all existing frontmatter unless edits to named fields are authorized,
+uses `page_title`, permits short navigation titles, and preserves historical
+slash-separated slugs and redirects. A standard H1 need not repeat the sidebar
+title verbatim. Existing `previous_url` values need not start with `/`.
+Use 120-150 characters for new or authorized descriptions; report existing
+defects without changing protected fields. The local link rules permit exact
+article titles, repeated accurate anchors, and renderer-controlled new tabs.
+Apply these overrides to both scores and violation lists. Preserve the existing
+`C#` and `VB.NET` language-display and fence-label rule.
+
 ### 1. Metadata & Front Matter — weight 15 %
 
 Source: `metadata.md`
@@ -42,25 +61,28 @@ Source: `metadata.md`
 |---|---|
 | YAML front matter present | Article starts with `---` block |
 | `title` field | Present and non-empty |
-| `meta_title` or `page_title` | Present; ≤ 70 characters recommended |
-| `description` | Present; **must be 100–150 characters (hard limit — never exceed 150)** |
-| `slug` | Present and URL-safe (lowercase, hyphens only) |
+| `page_title` | Present; concise and descriptive, following neighboring WinForms pages |
+| `description` | Present; **120–150 characters**; report defects without editing protected metadata |
+| `slug` | Present, unique, and stable; historical slash-separated WinForms identifiers are valid |
 | Meta title quality | Front-loads the article topic/context; uses clear dash-separated parts when needed; includes component or product context when applicable |
-| Meta description quality | Accurate, specific, action-oriented, and non-templated; must be 100–150 characters with no exceptions; avoids filler and generic phrases |
+| Meta description quality | Accurate, specific, and non-templated; 120–150 characters; avoids filler and generic phrases |
 | Redirect metadata when applicable | `previous_url` is present when the article clearly represents moved, renamed, or redirected content |
 
 ### 2. Titles and Headings — weight 15 %
 
 Source: `titles-and-headings.md`
 
+Apply the article-type and hierarchy guidance in the [structure skill](../telerik-documentation-style-guide/style-structure/SKILL.md). Recommend one H1 when a standard article lacks it; demote additional H1s according to hierarchy. Remove or convert KB H1s, never add one. These repository rules take precedence over conflicting external heading guidance.
+
 | Check | Pass condition |
 |---|---|
-| Single H1 | Exactly one `#` heading in the article |
+| Standard-article H1 count | Exactly one H1 in a standard article; flag missing and multiple H1s |
+| KB H1 prohibition | No H1 in any KB article; never add one and flag existing H1s for removal or conversion |
 | Title case | Nouns, verbs, adjectives, adverbs, pronouns, subordinating conjunctions capitalized; coordinating conjunctions (`and`, `but`, `or`), articles (`a`, `an`, `the`), prepositions (`at`, `on`, `in`, …) lowercased unless first/last word |
 | Heading hierarchy | No skipped levels (e.g., H2 directly to H4) |
 | Parallel same-level headings | All siblings share the same grammatical form |
 | Subheading coverage | At least two subheadings per heading section (when content warrants) |
-| No trailing punctuation in headings | Headings do not end with `.`, `!`, or `?` (commas are allowed) |
+| No trailing punctuation in headings | Headings do not end with `.`, `!`, or `?`, except FAQ questions, which require a question mark |
 | Drop unnecessary articles | Articles are omitted where meaning stays clear |
 | No metaphors or API member names in conceptual headings | Headings describe the user goal; avoid metaphors and object types, methods, or events outside API-reference contexts |
 | Useful bridge text before subheadings | Content between a heading and its first subheading adds context instead of filler |
@@ -111,6 +133,8 @@ Source: `basic-rules-and-guidelines.md`, `using-simple-non-ambiguous-language.md
 
 Source: `element-formatting.md`, `tables-figures-code.md`, `screenshots.md`
 
+Use the [formatting skill](../telerik-documentation-style-guide/style-formatting/SKILL.md) for image-introduction examples and remediation. Replace image-only headings or bold labels with a meaningful sentence or exact `>caption` block immediately before the image; preserve sufficient introductions and genuine section headings.
+
 | Check | Pass condition |
 |---|---|
 | UI elements in bold | Button names, menu items, tabs, dialog boxes wrapped in `**…**` |
@@ -121,7 +145,9 @@ Source: `element-formatting.md`, `tables-figures-code.md`, `screenshots.md`
 | Command-line formatting | Command references use monospace; command examples distinguish verbatim parts from variable placeholders where practical |
 | Commands not used as verbs | Avoids phrasing such as `` `cd` to the folder `` |
 | UI navigation paths | Menu or toolbar sequences use bold UI labels separated by `>` with spaces |
-| Captions and alt text when present | Images include meaningful alt text; captions are bold, descriptive, sentence case, and placed before the element |
+| Image introductions and alt text | Every image has meaningful alt text and a meaningful sentence or exact `>caption` block immediately before it; preserve sufficient introductions |
+| No heading or bold image labels | No image-only heading, standalone bold introduction, or redundant heading/caption pair; replace such labels with a sentence or caption during authorized fixes |
+| Non-image captions when present | Table/code captions are bold, descriptive, sentence case, and placed before the element; this does not apply to images |
 
 ### 6. Lists — weight 10 %
 
@@ -167,10 +193,10 @@ Source: `basic-rules-and-guidelines.md`, `cross-references.md`, `tables-figures-
 | Introductory paragraph | Article begins with 1–2 sentences describing the subject and its context |
 | See Also / Next Steps section | Article ends with a navigational section (optional but recommended) |
 | Short articles | No excessive scrolling required; single topic per article |
-| Topic introduction via subheadings | Each substantial new aspect is introduced with a subheading for readability and orientation |
+| Topic introduction via subheadings | Each substantial new aspect is introduced with a subheading for readability and orientation; headings must not serve solely as image introductions |
 | Feature-focused scope | Prefers one feature/topic per article instead of mixing unrelated features |
 | Descriptive cross-references | Links explain the destination or purpose clearly; external references identify the resource precisely |
-| Media and table completeness when present | Figures/tables/screenshots include a caption or lead-in sentence when needed, table cells are not blank, and visible screenshots avoid sensitive/confidential data |
+| Media and table completeness when present | Every image has an approved introduction immediately before it; tables have lead-ins when needed, cells are not blank, and screenshots avoid sensitive/confidential data |
 
 ---
 

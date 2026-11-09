@@ -14,14 +14,14 @@ previous_url: datalayout-save-load-layout
 
 __RadDataLayout__ allows changes at runtime. The control can export/import its layout which is stored in Xml format. This funtionality can be utilized by calling the __SaveLayout__ and __LoadLayout__ methods.
 
-#### Save the layout.
+## Save the layout.
 
 <snippet id='datalayout-save-load-layout-savelayout-cs' />
 <snippet id='datalayout-save-load-layout-savelayout-vb' />
 
 
 
-#### Load the Layout
+## Load the Layout
 
 <snippet id='datalayout-save-load-layout-loadlayout-cs' />
 <snippet id='datalayout-save-load-layout-loadlayout-vb' />
@@ -30,7 +30,7 @@ __RadDataLayout__ allows changes at runtime. The control can export/import its l
 
 The layout can be saved/loaded with the [customize dialog]({%slug winforms/datalayout/customize-layout-mode%}) as well.
         
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/datalayout/control-element-structure%})
  * [Getting Started]({%slug winforms/datalayout/getting-started%})

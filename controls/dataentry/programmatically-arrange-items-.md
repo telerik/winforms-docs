@@ -16,14 +16,14 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items.
 
-#### Data Object
+## Data Object
 
 <snippet id='dataentry-getting-started-empl1-cs'/>
 <snippet id='dataentry-getting-started-empl1-vb'/>
 
 
 
-#### Data Binding 
+## Data Binding 
 
 <snippet id='dataentry-getting-started-bind1-cs'/>
 <snippet id='dataentry-getting-started-bind1-vb'/>
@@ -36,7 +36,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 2\. To arrange the items we will subscribe to the *ItemInitialized* event of __RadDataEntry__. This event is triggered when an item is initialized, so it is suitable to introduce changes.
 
-#### Special Arrangement
+## Special Arrangement
 
 <snippet id='dataentry-programmatically-arrange-items-iteminitialized-cs'/>
 <snippet id='dataentry-programmatically-arrange-items-iteminitialized-vb'/>
@@ -47,7 +47,7 @@ Items in __RadDataEntry__ can be arranged both at design time and run time. At d
 
 ![WinForms RadDataEntry The whole name is now displayed in the first row](images/dataentry-overview-programmatically-arrange-items002.png)
 
-# See Also
+## See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
  * [Getting Started]({%slug  winforms/dataentry/getting-started%})

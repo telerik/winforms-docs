@@ -16,7 +16,7 @@ __RadChartView__ allows you to easily change the axes labels text by using a cus
 
 ## Example 1: Changing the labels' texts to more human readable ones
 
-#### Label Format
+### Label Format
 
 <snippet id='chartview-custom-labels-text-formatprovider-cs'/>
 <snippet id='chartview-custom-labels-text-formatprovider-vb'/>
@@ -25,7 +25,7 @@ __RadChartView__ allows you to easily change the axes labels text by using a cus
 
 Then you can just change the horizontal axis __LabelFormatProvider__ by using the corresponding property. 
 
-#### Assign Format Provider
+### Assign Format Provider
 
 <snippet id='chartview-custom-labels-text-propertychange-cs'/>
 <snippet id='chartview-custom-labels-text-propertychange-vb'/>
@@ -37,7 +37,7 @@ Then you can just change the horizontal axis __LabelFormatProvider__ by using th
 
 ##  Example 2: Showing the date part of a label only on day changes 
 
-#### DateTime Format Provider
+### DateTime Format Provider
 
 <snippet id='chartview-custom-labels-text-formatprovider2-cs'/>
 <snippet id='chartview-custom-labels-text-formatprovider2-vb'/>
@@ -46,7 +46,7 @@ Then you can just change the horizontal axis __LabelFormatProvider__ by using th
 
 Again you can just change the horizontal axis __LabelFormatProvider__ by using the corresponding property.  
 
-#### Assign DateTime Format Provider
+### Assign DateTime Format Provider
 
 <snippet id='chartview-custom-labels-text-propertychange2-cs'/>
 <snippet id='chartview-custom-labels-text-propertychange2-vb'/>
@@ -59,7 +59,7 @@ Again you can just change the horizontal axis __LabelFormatProvider__ by using t
 >note The above provider implementation is applicable only to axes working with __DateTime__ objects  ( __DateTimeContinuousAxis__ and __DateTimeCategoricalAxis__ ).
 >
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})

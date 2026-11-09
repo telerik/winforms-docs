@@ -14,7 +14,7 @@ previous_url: chartview-features-smart-labels
 
 __RadChartView__ provides a built-in mechanism for resolving labels overlapping with the __SmartLabelsController__. You can add the controller to the __Controllers__ collection of __RadChartView__ and it will optimize the arrangement of the labels in a way that there will be less overlaps.
 
-#### Add Controller
+## Add Controller
 
 <snippet id='chartview-smart-labels-addsmartlabelscontroller-cs'/>
 <snippet id='chartview-smart-labels-addsmartlabelscontroller-vb'/>
@@ -23,7 +23,7 @@ __RadChartView__ provides a built-in mechanism for resolving labels overlapping 
 
 Alternatively, you can leave __RadChartView__ do this for you by setting the __ShowSmartLabels__ property: 
 
-#### Set Property
+## Set Property
 
 <snippet id='chartview-smart-labels-enablesmartlabels-cs'/>
 <snippet id='chartview-smart-labels-enablesmartlabels-vb'/>
@@ -53,11 +53,11 @@ __RadChartView__’s __SmartLabelsController__ uses strategies specific to diffe
 >caption Figure 6: With Smart Labels
 ![WinForms RadChartView Point Series With Smart Labels](images/chartview-features-smart-labels006.png)
 
-# Custom labels strategy
+## Custom labels strategy
 
 In a specific scenario you may need to control the labels' position. For this purpose, create a derivative of the __SmartLabelsStrategyBase__ class and override its __CalculateLocations__ method. Then, you should use this custom logic in the __SmartLabelsController__. You can find below a sample code snippet demonstrating how you can position the labels in the top part of the chart:
 
-#### Custom SmartLabelsStrategy 
+### Custom SmartLabelsStrategy 
 
 <snippet id='chartview-smart-labels-customsmartlabelsstrategy-cs'/>
 <snippet id='chartview-smart-labels-customsmartlabelsstrategy-vb'/>
@@ -67,7 +67,7 @@ In a specific scenario you may need to control the labels' position. For this pu
 
 You must apply the custom __SmartLabelsController__ to __RadChartView__:
 
-#### Apply custom strategy
+### Apply custom strategy
 
 <snippet id='chartview-smart-labels-applycustomstrategy-cs'/>
 <snippet id='chartview-smart-labels-applycustomstrategy-vb'/>
@@ -85,7 +85,7 @@ After the **R3 2018 SP1** release, the custom strategy can be applied after sett
 |----|----|
 |![WinForms RadChartView Without Custom Smart Label Stategy](images/chartview-features-smart-labels007.png)|![WinForms RadChartView With Custom Smart Label Stategy](images/chartview-features-smart-labels008.png)|
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

@@ -10,6 +10,18 @@ You are an expert in accessibility standards and inclusive technical writing. Ev
 
 Score each dimension from **1 (poor) to 5 (excellent)**, provide a rationale (≤ 2 sentences), and list specific violations (empty array if none). Compute a weighted overall score at the end.
 
+Report violations with their locations and proposed corrections without editing during review-only scoring. An affected dimension cannot receive a perfect score, and a weighted score does not waive an unresolved required correction.
+
+## WinForms Repository Precedence
+
+Apply the local [structure](../telerik-documentation-style-guide/style-structure/SKILL.md),
+[formatting](../telerik-documentation-style-guide/style-formatting/SKILL.md),
+and [metadata](../telerik-documentation-style-guide/style-metadata-links/SKILL.md)
+rules before assigning scores or violations. KB articles have no authored H1;
+standard articles have one. Use exact `C#` and `VB.NET` code labels and preserve
+paired examples and local snippet references. Do not equate documentation
+accessibility scoring with tested accessibility of the WinForms control.
+
 ---
 
 ## Why Accessibility Matters for Documentation
@@ -31,18 +43,21 @@ Documentation that is not accessible excludes readers who use screen readers, ke
 
 Screen readers expose a heading outline to users for non-linear navigation. Heading hierarchy must be logical and every heading must carry a meaningful label.
 
+Use the [structure skill](../telerik-documentation-style-guide/style-structure/SKILL.md) for article-type classification and hierarchy-preserving heading corrections. Recommend one H1 for a standard article missing it; never recommend an H1 for KB content.
+
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| Single H1 | Exactly one `#` heading per article | Two or more H1 headings |
+| Standard-article H1 count | Exactly one H1 in a standard article | Missing H1 or two or more H1s; demote additional H1s according to hierarchy |
+| KB H1 prohibition | No H1 in any KB article; top-level H2 sections are valid | Any KB H1; recommend removal or conversion, never add an H1 |
 | No skipped heading levels | Hierarchy is sequential: `##` → `###`, never `##` → `####` | H2 followed immediately by H4 |
 | Headings are descriptive | Each heading conveys the section content; a screen reader user can navigate by heading outline alone | `## More Info`, `## Section 2`, `## Details` |
 | Headings are not used for visual emphasis | Bold text or callout-style phrasing is not dressed up as a heading | A short promotional sentence marked as `###` to appear prominent |
 | No empty headings | Every heading is followed by content before the next heading of equal or deeper level | Heading followed immediately by the next same-level heading with no body content |
 
 **Scoring guide:**
-- 5: Single H1, no skipped levels, all headings descriptive, no empty headings.
+- 5: Exactly one H1 in standard articles or none in KB articles, no skipped levels, all headings descriptive, no empty headings.
 - 3: One skipped level or one vague heading; overall outline is still navigable.
-- 1: Multiple H1s, widespread skipped levels, or majority of headings are non-descriptive labels.
+- 1: Invalid article-type H1 count, widespread skipped levels, or majority of headings are non-descriptive labels.
 
 ---
 
@@ -50,8 +65,12 @@ Screen readers expose a heading outline to users for non-linear navigation. Head
 
 Every non-decorative image must have an `alt` attribute that communicates equivalent information to readers who cannot see the image.
 
+Every image also requires an approved introduction immediately before it. This is a repository requirement separate from alt text; captions do not replace text alternatives. Use the [formatting skill](../telerik-documentation-style-guide/style-formatting/SKILL.md) for introduction examples and remediation that preserves sufficient introductions and genuine section headings.
+
 | Check | Pass condition | Violation examples |
 |---|---|---|
+| Image introduction present and adjacent | Each image has a meaningful introductory sentence or exact `>caption` block immediately before it | Unintroduced image, introduction elsewhere, or explanation only after the image |
+| No heading or bold image labels | No image-only heading, standalone bold introduction, or redundant heading/caption pair | `### Data Source Configuration` or `**Data Source Configuration**` used as the introduction; replace with a sentence or caption |
 | All images have alt text | No image uses an empty `alt=""` unless it is explicitly decorative | `![](image.png)`, `![image001](image.png)` |
 | Alt text is meaningful | Alt text describes what the image shows or its purpose in context, not its file name or a generic label | `alt="screenshot"`, `alt="image1"`, `alt="logo"` |
 | Alt text is not redundant | Alt text does not repeat the immediately surrounding caption or paragraph verbatim | Caption already says "Welcome wizard step 1" and alt text says the same phrase |
@@ -59,8 +78,8 @@ Every non-decorative image must have an `alt` attribute that communicates equiva
 | Decorative images are explicitly marked | Images that add no information use `alt=""` to signal decoration | A purely decorative divider image with a descriptive alt text that distracts assistive technology |
 
 **Scoring guide:**
-- 5: All images have meaningful, appropriately detailed alt text; decorative images are correctly marked.
-- 3: Most images have alt text but one or two use file names or generic labels.
+- 5: All images have approved adjacent introductions and meaningful, appropriately detailed alt text; decorative images are correctly marked.
+- 3: Most images have good alt text and introductions, but one or two introductions are missing/invalid or alt values are generic.
 - 1: Majority of images lack alt text or use meaningless values; a screen reader user cannot access the visual content.
 
 ---
@@ -164,7 +183,7 @@ Code blocks must be annotated so that syntax-highlighting tools, screen reader e
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| Language tag on every fenced code block | Every ` ``` ` fence specifies a language: ` ```csharp `, ` ```bash `, ` ```json `, etc. | ` ``` ` with no language tag |
+| Language tag on every fenced code block | Every fence specifies a language, using `C#` and `VB.NET` for application code and `bash` or `json` where appropriate | A fence with no language tag |
 | Code is introduced in surrounding prose | At least one sentence before each block describes what it does or what it contains | Code block dropped in with no introductory sentence |
 | Variable placeholders are clearly distinguished | Placeholders use a consistent notation such as `<placeholder>` or `[placeholder]` so readers know what to substitute | A code block containing `YOUR_API_KEY` mixed with literal values, with no explanation |
 | Commands show expected outcome when relevant | For CLI commands, the expected output or result is shown or described | `dotnet run` with no indication of whether the command succeeds silently or prints output |

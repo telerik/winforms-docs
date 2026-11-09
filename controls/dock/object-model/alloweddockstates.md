@@ -14,7 +14,7 @@ previous_url: dock-object-model-allowed-dock-states
  
 __AllowedDockState__ property gives you the ability to determine the available dock states per **ToolWindow**. There are several options for this properties which can be combined by bitwise operations. For example:
 
-#### Allow two states only.
+## Allow two states only.
 
 <snippet id='dock-alloweddockstates-alloweddockstate-cs' />
 <snippet id='dock-alloweddockstates-alloweddockstate-vb' />
@@ -27,7 +27,7 @@ This automatically will remove the caption buttons that may be responsible for a
 
 The following setting will disable the __Floating__ option:
 
-#### Disable the floating dock state
+## Disable the floating dock state
 
 <snippet id='dock-alloweddockstates-notfloating-cs' />
 <snippet id='dock-alloweddockstates-notfloating-vb' />
@@ -37,7 +37,7 @@ The following setting will disable the __Floating__ option:
 
 ![WinForms RadDock Disable the Floating Dock State](images/dock-object-model-allowed-dock-states002.png)
 
-# See Also
+## See Also
 
 * [Accessing DockWindows]({%slug winforms/dock/object-model/accessing-dockwindows%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

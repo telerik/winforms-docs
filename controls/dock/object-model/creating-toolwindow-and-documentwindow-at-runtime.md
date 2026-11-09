@@ -16,7 +16,7 @@ previous_url: dock-object-model-creating-toolwindow-and-documentwindow-at-runtim
 
 To create a new __ToolWindow__, construct a __ToolWindow__ instance, set properties and call the __DockWindow()__ method, passing a reference to the __ToolWindow__ and a __DockPosition__ enumeration value.
 
-#### Creating a ToolWindow 
+### Creating a ToolWindow
 
 <snippet id='dock-creating-toolwindow-and-documentwindow-at-runtime-creatingtoolwindow-cs' />
 <snippet id='dock-creating-toolwindow-and-documentwindow-at-runtime-creatingtoolwindow-vb' />
@@ -27,7 +27,7 @@ To create a new __ToolWindow__, construct a __ToolWindow__ instance, set proper
 
 To create a __DocumentWindow__, construct an instance of __DocumentWindow__, assign properties and call the __AddDocument__ method, passing the __DocumentWindow__ instance.
 
-#### Creating a DocumentWindow 
+### Creating a DocumentWindow
 
 <snippet id='dock-creating-toolwindow-and-documentwindow-at-runtime-creatingdocumentwindow-cs' />
 <snippet id='dock-creating-toolwindow-and-documentwindow-at-runtime-creatingdocumentwindow-vb' />
@@ -40,7 +40,7 @@ The following example creates multiple panels and document panes at runtime.
 
 ![WinForms RadDock Creating Multiple ToolWindow and DocumentWindow at Runtime](images/dock-object-model-creating-toolwindow-and-documentwindow-at-runtime001.png)
 
-#### Creating ToolWindows and DocumentWindows 
+### Creating ToolWindows and DocumentWindows
 
 <snippet id='dock-creating-toolwindow-and-documentwindow-at-runtime-wininitialization-cs' />
 <snippet id='dock-creating-toolwindow-and-documentwindow-at-runtime-wininitialization-vb' />
@@ -72,7 +72,7 @@ So, we need to follow another approach. What we need to do is to globally define
 
 
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

@@ -19,7 +19,7 @@ Formatting __RadCheckedDropDownList__ is easy and can be separated in two parts:
 
 In order to customize the editable area, you must subscribe to the __TextBlockFormatting__ event and modify the properties of the __TokenizedTextBlockElement__:
 
-#### Subscribe to TextBlockFormatting 
+### Subscribe to TextBlockFormatting
 
 <snippet id='checkeddropdownlist-customization-textblockformattingsubscribe-cs' />
 <snippet id='checkeddropdownlist-customization-textblockformattingsubscribe-vb' />
@@ -42,7 +42,7 @@ In order to customize the editable area, you must subscribe to the __TextBlockFo
 
 Customizing the drop down items is similar. Subscribe to the __VisualListItemFormatting__ event:
 
-#### Subscribe to VisualListItemFormatting 
+### Subscribe to VisualListItemFormatting
 
 <snippet id='checkeddropdownlist-customization-visuallistitemformattingsubscribe-cs' />
 <snippet id='checkeddropdownlist-customization-visuallistitemformattingsubscribe-vb' />

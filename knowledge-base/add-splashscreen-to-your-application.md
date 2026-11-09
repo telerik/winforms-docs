@@ -185,4 +185,4 @@ End Module
 
 ````   
 
->note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/SplashScreen).
+>note A complete solution in C# and VB.NET can be found in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/SplashScreen).

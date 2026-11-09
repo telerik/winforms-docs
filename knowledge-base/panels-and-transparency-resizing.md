@@ -14,14 +14,14 @@ res_type: kb
 |Q2 2008|RadControls for WinForms|Nikolay Diyanov|Dec 4, 2008| 
  
  
-**PROBLEM**  
+## Problem
    
 When you have Panel, TableLayoutPanel or FlowLayoutPanel with transparent BackColor and gradient background, your scenario might include resizing these panels. However, you will notice undesired flickering while resizing.  
    
-**HOW-TO**  
+## How To
 Overcome the issue with the flickering panels on resize.  
    
-**SOLUTION**  
+## Solution
 
 In order to reduce the flickering, you should make your own panels' descendant classes. Then, in the constructor of the inherited class, you should set the [**DoubleBuffer**](http://msdn.microsoft.com/en-us/library/b367a457.aspx) to *true*:  
 

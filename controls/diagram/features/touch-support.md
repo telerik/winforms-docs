@@ -28,6 +28,6 @@ __RadDiagram__ touch support is controlled through the __EnableGestures__ proper
 |Tap and Move|Drags selected RadDiagramItem/s|
 |Tap, Hold and Move|Rectangle Selection|
 
-# See Also
+## See Also
 
  * [Touch Support]({%slug winforms/telerik-presentation-framework/touch-support%})

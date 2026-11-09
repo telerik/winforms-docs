@@ -46,7 +46,7 @@ The custom functionality will be achieved with the help of special **RadSpinEdit
 * Add a new **LeadingZero** property.
 * Override the **CreateSpinElement** and return a custom type inheriting the **RadSpinElement** class.
 
-#### Custom Spin Editor Control
+### Custom Spin Editor Control
 
 {{source=..\SamplesCS\KnowledgeBase\CustomDisplayTextForm.cs region=CustomRadSpinEditor}} 
 {{source=..\SamplesVB\KnowledgeBase\CustomDisplayTextForm.vb region=CustomRadSpinEditor}}
@@ -306,4 +306,4 @@ End Class
 
 3\. Build the project. The custom control should be displayed in the toolbox in Visual Studio. The newly introduced properties can be set straight from the designer.
 
->tip A complete solution providing a C# and VB.NET project is available [here](https://github.com/telerik/winforms-sdk/tree/master/SpinEditor/CustomDisplayText).
+>tip A complete solution providing a C# and VB.NET project is available in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/SpinEditor/CustomDisplayText).

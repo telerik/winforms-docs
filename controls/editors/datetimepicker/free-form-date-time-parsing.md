@@ -23,7 +23,7 @@ You can read more about this parsing logic [here]({%slug winforms/editors/masked
 
 
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/datetimepicker/designtime%})
 * [MaskDateTimeProvider]({%slug winforms/editors/maskeddatetimeprovider%})

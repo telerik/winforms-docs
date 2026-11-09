@@ -46,4 +46,4 @@ End Sub
 
 The example uses the **Categories** and the **Products** tables of the NorthWind database.   
 
->note A complete solution in C# and VB.NET can be found [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/Master-detail%20with%20two%20grids).
+>note A complete solution in C# and VB.NET can be found in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/GridView/Master-detail%20with%20two%20grids).

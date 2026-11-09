@@ -40,7 +40,7 @@ The both approaches produce same result:
 ![WinForms RadAutoCompleteBox Select Text](images/editors-autocompletebox-caret-positioning-and-selection001.png)
 
 
-# See Also
+## See Also
  
 * [Creating Custom Blocks]({%slug winforms/editors/autocompletebox/creating-custom-blocks%})
 * [Element Structure and Document Object Model]({%slug winforms/editors/autocompletebox/element-structure-and-document-object-model%})

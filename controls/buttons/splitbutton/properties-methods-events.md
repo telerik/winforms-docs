@@ -23,14 +23,14 @@ position: 4
 |__ShowArrow__|Gets or sets a value indicating whether the arrow is shown||
 |__Items__|Gets or set the __RadItemOwnerCollection__ that stores the drop down items||
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |__ShowDropDown__|Shows the pop up with items|
 |__HideDropDown__|Hides the pop up with items|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
@@ -39,7 +39,7 @@ position: 4
 |__DropDownClosed__|Occurs when the drop down is closed|
 
 
-# See Also 
+## See Also 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radsplitbutton.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radsplitbutton.html#methods)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radsplitbutton.html#events)

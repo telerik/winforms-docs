@@ -19,7 +19,7 @@ In this example, we will showcase the usage of the CategoricalDefinition to illu
 
 >note RadHeatMap supports __Empty Values__. In situations where you don't have a specific value for a particular category, you can indicate it by using the special object double.NaN. When a category is marked with double.NaN, the RadHeatMap control will visualize it with **no** color. This visual representation helps to indicate the absence of a value for that specific category. Thus, when using a dark theme, the empty cells remain dark, when using light themes, the empty cells remain light.
 
-#### __Example 1: Categorical Definition__
+### __Example 1: Categorical Definition__
 <snippet id='heatmap-heatmapdatabinding-unboundmode_categoricaldefinition-cs' />
 <snippet id='heatmap-heatmapdatabinding-unboundmode_categoricaldefinition-vb' />
 
@@ -35,7 +35,7 @@ To populate the heatmap with data, we add HeatMapItem objects to the "Items" col
 
 >note The only difference between the Horizontal and Vertical definitions is that for the horizontal definition, each item gets a row, while for the vertical – it's a column.
 
-#### __Example 2: Horizontal Definition__
+### __Example 2: Horizontal Definition__
 <snippet id='heatmap-heatmapdatabinding-unboundmode_horizontaldefinition-cs' />
 <snippet id='heatmap-heatmapdatabinding-unboundmode_horizontaldefinition-vb' />
 

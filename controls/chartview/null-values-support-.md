@@ -14,7 +14,7 @@ previous_url: chartview-null-values-support
 
 __RadChartView__ supports empty values in the series. In general empty values means missing Y value for a particular X value.
 
-#### Data Containing Null
+## Data Containing Null
 
 <snippet id='chartview-null-values-support-nullvalues-cs'/>
 <snippet id='chartview-null-values-support-nullvalues-vb'/>
@@ -33,7 +33,7 @@ The empty X value is skipped from drawing. NullValues is supported only for Cart
 >caution In VB.NET one should be careful when using the *nullable* value types. Unless the object is not explicitly set as *nullable* its value will be implicitly cast to the default value for the data type. 
 >
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})

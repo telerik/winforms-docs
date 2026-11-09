@@ -14,13 +14,13 @@ res_type: kb
 |Q2 2007|RadControls for WinForms|Angel Kanchev|August 13, 2007|
  
  
-**HOW-TO**   
+## How To
 Create a DropDownButton / SplitButton which shows the selected item’s text  
    
-**DESCRIPTION**  
+## Description
 This KB article describes a way to show a DropDownButton item’s text in the button itself, after the item has been clicked. It also applies to the SplitButton control.  
    
-**SOLUTION**  
+## Solution
  
 1. Subscribe to the **Click** event for all menu items in the DropDownButton that have no subitems.
 2. Subscribe for **Load** and **FormClose** events of the Form and fill them like this:  

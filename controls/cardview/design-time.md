@@ -47,7 +47,7 @@ The short video below demonstrates how columns can be set up at design-time and 
 
 * __Search__: Search the Telerik website for a given string.
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/cardview/getting-started%})
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

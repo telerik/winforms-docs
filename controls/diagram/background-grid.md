@@ -17,7 +17,7 @@ You can control the background settings of the diagramming surface through the f
 
 * __IsBackgroundSurfaceVisible__: a boolean property that determines whether the background surface of the __RadDiagram__  should be displayed. Its default value is *true*. 
 
-#### Set IsBackgroundSurfaceVisible
+## Set IsBackgroundSurfaceVisible
 
 <snippet id='diagram-background-grid-isbackgroundsurfacevisible-cs' />
 <snippet id='diagram-background-grid-isbackgroundsurfacevisible-vb' />
@@ -30,7 +30,7 @@ You can control the background settings of the diagramming surface through the f
 
 * __Background__: this property is of type *Brush* and it controls the fill of the __RadDiagram__ background.
 
-#### Set Background         
+## Set Background         
 
 <snippet id='diagram-background-grid-background-cs' />
 <snippet id='diagram-background-grid-background-vb' />
@@ -49,7 +49,7 @@ You can access the __BackgroundGrid__ properties:
 
 ![WinForms RadDiagram CellSize](images/diagram-backgroundgrid004.png)
 
-#### Set CellSize 
+## Set CellSize 
  
 <snippet id='diagram-background-grid-cellsize-cs' />
 <snippet id='diagram-background-grid-cellsize-vb' />
@@ -63,7 +63,7 @@ You can access the __BackgroundGrid__ properties:
 
 ![WinForms RadDiagram LineStroke](images/diagram-backgroundgrid005.png)  
 
-#### Set LineStroke
+## Set LineStroke
 
 <snippet id='diagram-background-grid-linestroke-cs' />
 <snippet id='diagram-background-grid-linestroke-vb' />
@@ -77,14 +77,14 @@ You can access the __BackgroundGrid__ properties:
 
 ![WinForms RadDiagram LineStrokeThickness](images/diagram-backgroundgrid006.png) 
 
-#### Set LineStrokeThickness
+## Set LineStrokeThickness
 
 <snippet id='diagram-background-grid-linestrokethickness-cs' />
 <snippet id='diagram-background-grid-linestrokethickness-vb' />
 
 
 
-# See Also
+## See Also
 
 * [RibbonUI]({%slug winforms/diagram/ribbonui%})	
 * [Settings Pane]({%slug winforms/diagram/settings-pane%})	

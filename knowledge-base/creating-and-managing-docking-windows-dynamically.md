@@ -15,11 +15,11 @@ res_type: kb
  
  
    
-**HOW-TO**    
+## How To
 Create and manage docking windows dynamically  
    
  
-**SOLUTION**
+## Solution
 A basic problem related to DockingManager is how to restore saved dock layout and it's content of inner controls hosted in DockPanel and DocumentPane windows.  
    
 The solution is to restore dynamically the windows using the GUID provided for the IDockable window from its **ID** - property:
