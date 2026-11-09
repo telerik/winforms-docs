@@ -105,7 +105,7 @@ Exporting data to Excel is done through the __RunExport__ method of __ExportToEx
 
 Consider the code sample below:
 
-#### Export to Excel in ExcelML format
+### Export to Excel in ExcelML format
 
 <snippet id='gridview-exporttoexcelviaexcelimlformat-runexport-cs' />
 <snippet id='gridview-exporttoexcelviaexcelimlformat-runexport-vb' />
@@ -116,7 +116,7 @@ There are two properties in **GridViewDataColumn** object: **ExcelExportType** a
 
 Here is an example for a date time formatting:
 
-#### Fomatting dates
+### Fomatting dates
 
 <snippet id='gridview-exporttoexcelviaexcelimlformat-formattingcodes-cs' />
 <snippet id='gridview-exporttoexcelviaexcelimlformat-formattingcodes-vb' />
@@ -127,7 +127,7 @@ The __ExcelCellFormating__ event:
         
 It gives you access to a single cell’s  __SingleStyleElement__ that allows you to make additional formatting (adding border, setting alignment, text font, colors, changing cell value, etc.) for every excel cell related to the exported **RadGridView**:
 
-#### Handling the ExcelCellFormatting event
+### Handling the ExcelCellFormatting event
 
 <snippet id='gridview-exporttoexcelviaexcelimlformat-excelcellformatting-cs' />
 <snippet id='gridview-exporttoexcelviaexcelimlformat-excelcellformatting-vb' />

@@ -29,7 +29,7 @@ The table below shows what you can do with the buttons in the title bar:
 |![WinForms RadDock ButtonGroup ToolWindows](images/raddock-advanced-layout-designer006.png)| You can remove ToolWindows by clicking the red button in the windows list.|
 |![WinForms RadDock ButtonGroup Shows Current Layout](images/raddock-advanced-layout-designer007.png) | The main area shows the current layout. Here you can arrange the windows by simply dragging them to the desired position. | 
 
-# See Also
+## See Also
 
 [Getting Started]({%slug winforms/dock/getting-started%})
 [Structure]({%slug winforms/dock/architecture-and-features/understanding-raddock%})     

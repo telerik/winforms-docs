@@ -29,7 +29,7 @@ At Progress, we work diligently to identify and fix security vulnerabilities in 
 
 ### For Security Researchers
 
-We value the contributions of security researchers and ethical hackers. If a researcher identifies a potential vulnerability, they can submit it via our [Bugcrowd](https://bugcrowd.com/engagements/devtools-vdp) platform. We aim to meet the following response times:
+We value the contributions of security researchers and ethical hackers. If a researcher identifies a potential vulnerability, they can submit it via our [Bugcrowd](https://bugcrowd.com/engagements/devtools-vdp) platform. We aim to meet the following service-level objectives (SLOs) for response times:
 
 | Type of Response | SLO (in business days) |
 |------------------|------------------------|
@@ -53,7 +53,7 @@ We actively manage the following strategies to mitigate risks:
 
 Our primary goal is to prevent security issues before product delivery. We use the following prevention techniques:
 
-- **Internal Logging**: Every potential security issue is logged, researched, tested, and verified. Issues deemed valid are assessed using a CVSS score, with critical issues prioritized.
+- **Internal Logging**: Every potential security issue is logged, researched, tested, and verified. Issues deemed valid are assessed using a Common Vulnerability Scoring System (CVSS) score, with critical issues prioritized.
 - **Third-Party Static Analysis Testing**: We utilize some of the leading security scanning tools in the market to scan for vulnerabilities in our software code. Regular scans are conducted, and results are reviewed to address vulnerabilities and mitigate false positives.
 
 

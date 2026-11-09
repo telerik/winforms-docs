@@ -42,14 +42,14 @@ The chat toolbar, input text box, prompt input element, and reply preview elemen
 * RadChat.ChatElement.**PromptInputElement** — the prompt input element providing text entry, attached files, speech-to-text, and send capabilities.
 * RadChat.ChatElement.**ReplyPreviewElement** — the reply preview element shown above the input area when replying to a message.
 
-# ItemFormatting Event
+## ItemFormatting Event
 
 The **ItemFormatting** event can be used to access and change the styling of the message item elements.
 
 >note Due to the UI virtualization, the event needs to be handled with an *if-else* statement so that the applied settings are reset for elements which will not be customized. 
 >
 
-#### Customizing The Main Item Elements
+### Customizing The Main Item Elements
 
 <snippet id='chat-accessing-and-customizing-elements-radchatitemformatting-cs'/>
 <snippet id='chat-accessing-and-customizing-elements-radchatitemformatting-vb'/>
@@ -68,7 +68,7 @@ The **ItemFormatting** event can be used to access and change the styling of the
 
 ![WinForms RadChat Carousel Item Sample](images/chat-formatting003.png)
 
-#### Customizing the Child Items
+### Customizing the Child Items
 
 <snippet id='chat-accessing-and-customizing-elements-itemformattingcildren-cs'/>
 <snippet id='chat-accessing-and-customizing-elements-itemformattingcildren-vb'/>
@@ -78,7 +78,7 @@ The **ItemFormatting** event can be used to access and change the styling of the
 >caption Figure 4: Customizing the Child Elements
 
 ![WinForms RadChat Customizing the Child Elements](images/chat-formatting004.png)
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/chat/structure%})
 * [Getting Started]({%slug winforms/chat/getting-started%})

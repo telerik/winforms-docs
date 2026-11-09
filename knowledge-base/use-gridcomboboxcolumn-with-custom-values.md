@@ -20,7 +20,7 @@ By default you can only select values from the drop down with **GridViewComboBox
 
 ## Solution  
   
-#### Figure1. The final result.   
+**Figure 1. The final result.**  
 ![GridViewComboxColumnCustomValue](images/gridviewcomboxcolumncustomvalue.gif)
 
 To achieve this functionality, you should create a custom editor which returns the text of the combo box editor. In addition, you should create a custom cell element and override the **SetContent** method. This is necessary because by default the cell is looking for the proper value in the editor data source.
@@ -142,6 +142,5 @@ End Sub
 
 ````
 
->note The complete examples in C# and VB can be downloaded by clicking the following [link](https://github.com/telerik/winforms-sdk/blob/master/GridView/GridViewComboxColumnCustomValue/description.md).
-
+>note The complete examples in C# and VB can be downloaded by clicking the following [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/blob/master/GridView/GridViewComboxColumnCustomValue/description.md).
 

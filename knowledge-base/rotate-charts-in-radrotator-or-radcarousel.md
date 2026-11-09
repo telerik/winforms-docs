@@ -14,10 +14,10 @@ res_type: kb
 |Q2 2008|RadControls for WinForms|Martin Vassilev|9/15/2008|
  
   
-**HOW-TO**
+## How To
 Rotate a custom RadChart object by using RadRotator or RadCarousel and preserve all visual efects that hold out this controls.  
    
-**SOLUTION**
+## Solution
 Even though it is very easy to add RadChart directly by using RadHostItem, RadRotator and RadCarousel performs much better with images and/or other windowless RadItems. This is why the more suitable approach here would be to convert the charts into images and then to add these in the rotator wrapped in RadImageItems. This way the slideshow can also take advantage of the slide animation features of the RadRotator control.  
 
 ````C#

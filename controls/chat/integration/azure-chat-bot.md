@@ -154,7 +154,7 @@ With this our journey concludes. All the steps and code to have a working chat b
 
 ![WinForms RadChat Azure Chat Bot Sample](images/chat-integration-azure-chat-bot005.png)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/chat/structure%})
 * [Getting Started]({%slug winforms/chat/getting-started%})

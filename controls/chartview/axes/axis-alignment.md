@@ -22,7 +22,7 @@ The __StartPositionAxis__ and the __StartPositionValue__ properties of the abstr
 
 This example sets offset of the horizontal axis along the vertical axis. 
 
-#### One Axis Offset
+### One Axis Offset
 
 <snippet id='chartview-axis-alignment-one-axis-offset-cs'/>
 <snippet id='chartview-axis-alignment-one-axis-offset-vb'/>
@@ -36,7 +36,7 @@ This example sets offset of the horizontal axis along the vertical axis.
 
 This example sets offset offset of the two axes of the __RadChartView__. 
 
-#### Two Axis Offset
+### Two Axis Offset
 
 <snippet id='chartview-axis-alignment-two-axes-offset-cs'/>
 <snippet id='chartview-axis-alignment-two-axes-offset-vb'/>
@@ -47,7 +47,7 @@ This example sets offset offset of the two axes of the __RadChartView__.
 ![WinForms RadChartView Two Axis Offset](images/chartview-axes-axis-alignment002.png)
 
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

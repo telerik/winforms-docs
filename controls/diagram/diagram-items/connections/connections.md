@@ -164,7 +164,7 @@ You can get or set the z-order rendering behavior of the RadDiagramConnection th
 
 You can get the bounds of a __RadDiagramConnection__ through the __Bounds__ property. It is of type __Rect__ and it describes the width, height and location of the connection's bounds.
 
-# See Also
+## See Also
  
 * [ContainerShapes]({%slug winforms/diagram/diagram-items/containershapes%})	 
 * [Shapes]({%slug winforms/diagram/diagram-items/shapes%})

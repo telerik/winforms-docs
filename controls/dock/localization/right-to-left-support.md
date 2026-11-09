@@ -21,6 +21,6 @@ You can present the content of your dock instance in a right-to-left direction b
 
 ![WinForms RadDock Right-to-Left Support](images/dock-localization-rtl001.png)
 
-# See Also
+## See Also
 
 * [Localization]({%slug winforms/dock/localization/localization%})

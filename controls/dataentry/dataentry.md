@@ -63,7 +63,7 @@ In addition __RadDataEntry__ allows manual setting and customization of editors 
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
  * [Getting Started]({%slug  winforms/dataentry/getting-started%})

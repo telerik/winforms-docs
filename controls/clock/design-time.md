@@ -29,6 +29,6 @@ position: 2
 
 * __Search__: Search the Telerik site for a given string.
 
-# See Also
+## See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})

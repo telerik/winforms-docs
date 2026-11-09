@@ -10,6 +10,19 @@ You are an expert in both technical documentation and large language model (LLM)
 
 Score each dimension from **1 (poor) to 5 (excellent)**, provide a rationale (≤ 2 sentences), and list specific violations (empty array if none). Compute a weighted overall score at the end.
 
+Report violations with their locations and proposed corrections without editing during review-only scoring. An affected dimension cannot receive a perfect score, and a weighted score does not waive an unresolved required correction.
+
+## WinForms Repository Precedence
+
+Apply the local [structure](../telerik-documentation-style-guide/style-structure/SKILL.md),
+[formatting](../telerik-documentation-style-guide/style-formatting/SKILL.md),
+and [metadata](../telerik-documentation-style-guide/style-metadata-links/SKILL.md)
+rules to both scores and violation lists. KB articles have no authored H1;
+standard articles have one. Use exact `C#` and `VB.NET` labels, preserve paired
+examples and snippet placeholders, and resolve referenced source from the
+repository's `snippets` directory. Do not penalize verified placeholders merely
+because the code is stored separately or duplicate shared source into articles.
+
 ---
 
 ## Why LLM Readability Matters
@@ -30,8 +43,12 @@ The rules below are designed to prevent those failure modes.
 
 **Goal:** Every section should be independently understandable and carry a meaningful label.
 
+Use the [structure skill](../telerik-documentation-style-guide/style-structure/SKILL.md) for article-type classification and hierarchy-preserving heading corrections. Recommend one H1 for a standard article missing it; never recommend an H1 for KB content.
+
 | Check | Pass condition | Violation examples |
 |---|---|---|
+| Standard-article H1 count | Exactly one H1 in a standard article | Missing H1 or multiple H1s |
+| KB H1 prohibition | No H1 in a KB article; H2 is a valid starting level | Any KB H1 or a recommendation to add one |
 | Single-topic sections | Each `##`/`###` section covers exactly one concept | Section mixes installation steps with conceptual background |
 | Heading labels are descriptive | Headings convey the section content, not just a label | `## More Info`, `## Details`, `## Notes` |
 | No orphaned content | Every paragraph belongs under a heading | Content before the first `##` heading (other than the intro) |
@@ -39,7 +56,7 @@ The rules below are designed to prevent those failure modes.
 | No skipped heading levels | Levels are sequential (`##` → `###`, never `##` → `####`) | H2 directly followed by H4 |
 
 **Scoring guide:**
-- 5: All sections are single-topic, headings are descriptive, hierarchy is logical.
+- 5: Article-type H1 count is correct, all sections are single-topic, headings are descriptive, hierarchy is logical.
 - 3: Minor issues — one or two vague headings or mixed-topic sections.
 - 1: Flat structure or majority of sections violate one or more checks.
 
@@ -71,7 +88,7 @@ The rules below are designed to prevent those failure modes.
 | Check | Pass condition | Violation examples |
 |---|---|---|
 | No synonym churn | One term per concept throughout the article | "component" / "widget" / "control" used interchangeably |
-| No mixed-case for the same term | Term casing is consistent | "DataGrid" vs "data grid" vs "datagrid" in prose |
+| No mixed-case for the same term | Term casing is consistent | "RadGridView" vs "data grid" vs "gridview" in prose |
 | Code and prose align | The term used in prose matches the identifier in code blocks | Prose says "click the Button" but code references `<TelerikButton>` with no mapping |
 | No redefinition | A term is not reused for two different concepts | "handler" means both event handler and HTTP handler in the same article |
 
@@ -88,7 +105,7 @@ The rules below are designed to prevent those failure modes.
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| Language tag on every fence | ` ```csharp `, ` ```ts `, ` ```yaml `, etc. | ` ``` ` with no language |
+| Language tag on every fence | `C#`, `VB.NET`, `yaml`, or another language appropriate to the example | A fence with no language |
 | Code is complete or clearly partial | Snippet either compiles/runs or is annotated as partial with `// ...` | Unannounced mid-function snippet that omits necessary context |
 | Surrounding prose explains the code | At least one sentence before the block describes what it does | Code block dropped in with no introduction |
 | Identifiers match the prose | Variable/class names in code match the names discussed above the block | Prose says `UserService` but code uses `userSvc` without explanation |
@@ -159,15 +176,20 @@ The rules below are designed to prevent those failure modes.
 
 **Goal:** Formatting conveys semantic meaning, not decoration. LLMs must infer semantics from formatting.
 
+Use the [formatting skill](../telerik-documentation-style-guide/style-formatting/SKILL.md) for image-introduction examples and remediation that preserves sufficient introductions and genuine section headings.
+
 | Check | Pass condition | Violation examples |
 |---|---|---|
+| Image introduction present and adjacent | Every image has a meaningful sentence or exact `>caption` block immediately before it | Unintroduced image, distant introduction, or text only after the image |
+| No heading or bold image introductions | Image-only headings and standalone bold labels are replaced with a sentence or caption during authorized fixes | `### Data Source Configuration` or `**Data Source Configuration**` immediately before an image |
+| No redundant heading/caption pair | A caption is not paired with a heading used solely to label the same image | Image-only heading followed by `>caption` and the image |
 | Bold marks UI elements or key terms only | `**…**` used for UI labels and introduced terms, not general emphasis | `**Note that** you must restart` (emphasis, not a UI label) |
 | Inline code marks exact identifiers | `` `…` `` used for code, file names, and system values — not regular words | `` `simply` `` or `` `important` `` styled as code for visual effect |
 | Callouts use a consistent pattern | Notes, warnings, tips use a consistent block format (`> **Note:**`) | Mixing `> Note:`, `**Note:**`, `NOTE:`, and plain paragraphs |
 | No all-caps for emphasis | Capitalized words used only for acronyms or proper names | `Do NOT run this command` — `NOT` in all-caps for stress |
 
 **Scoring guide:**
-- 5: Formatting is semantically consistent; a model can reliably infer meaning from marks.
+- 5: Formatting is semantically consistent, every image has an approved adjacent introduction, and a model can reliably infer meaning from marks.
 - 3: Occasional bold-for-emphasis or mixed callout styles.
 - 1: Formatting is used decoratively; semantic meaning cannot be inferred reliably.
 

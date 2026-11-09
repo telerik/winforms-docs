@@ -14,7 +14,7 @@ previous_url: chartview-features-tooltip
 
 __RadChartView__ provides a tooltip interactivity  with the __ChartTooltipController__ class and can be used to visualize arbitrary information related to a data point. If the user hovers directly over a data point, the tooltip will display information for this particular data point, otherwise it will display information for the closest data point to the hold location.In order to utilize this behavior users simply have to add it to the chart's __Controllers__ collection. For example: 
 
-#### Add Controller
+## Add Controller
 
 <snippet id='chartview-tooltip-controller-cs'/>
 <snippet id='chartview-tooltip-controller-vb'/>
@@ -23,7 +23,7 @@ __RadChartView__ provides a tooltip interactivity  with the __ChartTooltipContro
 
 The __ChartTooltipController__ will be added automatically if the __ShowToolTip__ property of __RadChartView__ control is set to *true*: 
 
-#### Set Property
+## Set Property
 
 <snippet id='chartview-tooltip-showtooltip-cs'/>
 <snippet id='chartview-tooltip-showtooltip-vb'/>
@@ -32,7 +32,7 @@ The __ChartTooltipController__ will be added automatically if the __ShowToolTip_
 
 A sample is shown below: 
 
-#### Sample Setup
+## Sample Setup
 
 <snippet id='chartview-tooltip-example-cs'/>
 <snippet id='chartview-tooltip-example-vb'/>
@@ -44,14 +44,14 @@ A sample is shown below:
 
 The __ChartTooltipController__ also exposes a tooltip event. The event handler is a suitable place for changing the precalculated text.
 
-#### Subscribe to Event
+## Subscribe to Event
 
 <snippet id='chartview-tooltip-datapointtooltiptextneeded-cs'/>
 <snippet id='chartview-tooltip-datapointtooltiptextneeded-vb'/>
 
 
 
-#### Change ToolTip`s Text
+## Change ToolTip`s Text
 
 <snippet id='chartview-tooltip-changetext-cs'/>
 <snippet id='chartview-tooltip-changetext-vb'/>
@@ -61,7 +61,7 @@ The __ChartTooltipController__ also exposes a tooltip event. The event handler i
 >caption Figure 2: Modified ToolTip
 ![WinForms RadChartView Modified ToolTip](images/chartview-features-tooltips002.png)
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

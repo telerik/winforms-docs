@@ -36,7 +36,7 @@ The second mode is “Bound mode” where you provide data to __RadChartView__ f
 The third section allows you to setup different options like grid, axes labels, series labels and the interactive features of __RadChartView__ like the pan and zoom, trackball, title and legend. 
 ![WinForms RadChartView Appearance Section](images/chartview-propety-builder004.png)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/chartview/design-time/smart-tag%})
 * [Getting Started]({%slug winforms/chartview/getting-started%})

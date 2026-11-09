@@ -14,10 +14,10 @@ res_type: kb
 |Q1 2007|RadControls for WinForms|Angel Kanchev|Feb 9, 2007|
 
 
-**HOW-TO**  
+## How To
 Change the size of the thumb (aka scroll box) of RadScrolBar  
    
-**SOLUTION**
+## Solution
 The thumb length is expressed by its height for vertical scroll bars, or its width for horizontal scroll bars:  
 
 ![Fig. 1 Thumb length and area](images/ThumbLength.JPG)

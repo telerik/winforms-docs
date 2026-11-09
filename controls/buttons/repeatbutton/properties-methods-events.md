@@ -25,13 +25,13 @@ position: 4
 |__UseMnemonic__|Determines whether the button can be clicked by using mnemonic characters|
  
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |PerformClick|Generates a Click event for a button|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
@@ -39,7 +39,7 @@ position: 4
 |__Click__|Occurs when the control is clicked|
  
 
-# See Also 
+## See Also 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radrepeatbutton.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radrepeatbutton.html#methods)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radrepeatbutton.html#events)

@@ -18,7 +18,7 @@ This article shows how you can change the back color of the control at design ti
     ![WinForms RadDateTimePicker Customizing Appearance](images/editors-datetimepicker-customizing-appearance001.png)
 
 
-# See Also
+## See Also
 
 * [Customize Calendar]({%slug winforms/editors/datetimepicker/how-to/customize-radcalendar-programmatically%})
 * [Themes]({%slug winforms/editors/datetimepicker/themes%})

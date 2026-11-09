@@ -19,7 +19,7 @@ position: 4
  
 The below sample code demonstrates how to add a toolbar action that inserts an image selected from the File Explorer:
 
-#### Adding ToolbarActionDataItem
+## Adding ToolbarActionDataItem
 
 <snippet id='chat-toolbar-toolbar-cs' />
 <snippet id='chat-toolbar-toolbar-vb' />
@@ -28,7 +28,7 @@ The below sample code demonstrates how to add a toolbar action that inserts an i
 
 ![WinForms RadChat Inserting an image from a toolbar action](images/chat-items-toolbar001.gif) 
 
-# See Also
+## See Also
 
 * [Overview]({%slug winforms/chat/overview%})
 * [Messages]({%slug winforms/chat/chat-items/messages%})

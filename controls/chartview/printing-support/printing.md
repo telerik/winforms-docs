@@ -22,22 +22,22 @@ __RadChartView__ provides printing support, which allows you to print the chart 
 
 __RadChartView__ has two public methods available for printing - __Print__ and __PrintPreview__. The first method will directly send a print job to the default printer. This method has one overload available which can show a system PrintDialog with the available printers and their options.
 
-#### Direct Printing
+## Direct Printing
 
 <snippet id='chartview-printing-print-cs'/>
 <snippet id='chartview-printing-print-vb'/>
 
-#### Print with Dialog
+## Print with Dialog
 
 <snippet id='chartview-printing-printdialog-cs'/>
 <snippet id='chartview-printing-printdialog-vb'/>
 
-#### Print Preview
+## Print Preview
 
 <snippet id='chartview-printing-printpreview-cs'/>
 <snippet id='chartview-printing-printpreview-vb'/>
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})

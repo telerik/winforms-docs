@@ -16,7 +16,7 @@ __RadChartView__ provides lasso zoom (zoom to selection) functionality by select
 
 First let’s start by adding some data points to the __RadChartView__ and __LassoZoomController__: 
 
-#### Add Controller
+## Add Controller
 
 <snippet id='chartview-lasso-zoom-addcontroller-cs'/>
 <snippet id='chartview-lasso-zoom-addcontroller-vb'/>
@@ -38,7 +38,7 @@ And the chart will automatically zoom to the selected area:
 
 __LassoZoomController__ supports zoom and pan functionality programmatically via the *ZoomAndPan*  method, which allows specifying the exact *from* and *to* percentage. The following code will zoom the first half of the chart: 
 
-#### Zoom and Pan
+## Zoom and Pan
 
 <snippet id='chartview-lasso-zoom-zoomfirst-cs'/>
 <snippet id='chartview-lasso-zoom-zoomfirst-vb'/>
@@ -52,7 +52,7 @@ Using this approach you can zoom any area in the chart using the 0-100 percentag
 
 >note The controllers added in **RadChartView** are invoked in the order at which they have been added. In case a **LassoZoomController** is to be used together with a **LassoSelectionController**, the selection controller needs to be added first. 
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

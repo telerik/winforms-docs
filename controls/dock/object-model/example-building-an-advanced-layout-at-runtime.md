@@ -120,7 +120,7 @@ However, you may not want to have any documents. In this case, set the __MainDoc
 
 ![WinForms RadDock Hiding the Main DocumentContainer ](images/dock-object-model-example-building-an-advanced-layout-at-runtime011.png)
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

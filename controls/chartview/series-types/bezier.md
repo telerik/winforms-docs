@@ -14,7 +14,7 @@ previous_url: chartview-series-types-bezier
 
 The Bezier chart displays a series of points on a curved line.  Two "control points" determine the position and amount of curvature in the line between end points.
 
-#### Initial Setup
+## Initial Setup
  
 <snippet id='chartview-bezier-bezier-cs'/>
 <snippet id='chartview-bezier-bezier-vb'/>
@@ -38,7 +38,7 @@ Here are some of the important properties of __BezierSeries__:
 
 * __YValueMember:__ If a DataSource is set, the property determines the name of the field that holds the YValue.
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

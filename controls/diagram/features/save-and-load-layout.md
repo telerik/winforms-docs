@@ -17,7 +17,7 @@ Here is a sample demonstrating how you can save the layout to a file:
 
 ## Save Layout
 
-#### Save Layout
+### Save Layout
 
 <snippet id='diagram-save-and-load-layout-savelayout-cs'/>
 <snippet id='diagram-save-and-load-layout-savelayout-vb'/>
@@ -30,7 +30,7 @@ Here is a sample demonstrating how you can save the layout to a file:
 
 Here is a sample demonstrating how you can load the layout from a file:
 
-#### Load Layout
+### Load Layout
 
 <snippet id='diagram-save-and-load-layout-loadlayout-cs'/>
 <snippet id='diagram-save-and-load-layout-loadlayout-vb'/>

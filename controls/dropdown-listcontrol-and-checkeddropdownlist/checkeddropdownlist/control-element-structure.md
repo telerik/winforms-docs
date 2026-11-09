@@ -29,7 +29,7 @@ This article describes the inner structure and organization of the elements whic
   1.2. __RadDropDownListArrowButtonElement__: Expands the RadListElement.
  
 
-# See Also
+## See Also
 
 * [RadControlSpy]({%slug winforms/tools/controlspy%})
 * [Getting Started]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started%})

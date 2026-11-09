@@ -152,7 +152,7 @@ You can easily customize the visual appearance of the __RadDiagramShape__ by usi
 
 ![WinForms RadDiagram StrokeThickness](images/diagram-diagram-items-shapes007.png)
 
-# See Also
+## See Also
  
 * [ContainerShapes]({%slug winforms/diagram/diagram-items/containershapes%})	
 * [Connections]({%slug winforms/diagram/diagram-items/connections%})	

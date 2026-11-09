@@ -37,7 +37,7 @@ You need to implement the following methods in order to receive trace events fro
 
 Once you've created your implementation of the interface in accordance to your provider of choice you need to set the static TraceMonitor.**AnalyticsMonitor** property as per the example below.
 
-#### ITraceMonitor Instance
+### ITraceMonitor Instance
 
 {{source=..\SamplesCS\Analytics\AnalyticsForm.cs region=ITraceMonitorInstance}} 
 {{source=..\SamplesVB\Analytics\AnalyticsForm.vb region=ITraceMonitorInstance}}
@@ -58,7 +58,7 @@ ControlTraceMonitor.AnalyticsMonitor = New CustomAnalitycsMonitor()
 
 Each control has analytics enabled by default, on control basis analytics can be disabled by setting the control`s **EnableAnalytics** property to *false*. Having analytics enabled, all one needs to do to start tracing the application usage is to set the **AnalyticsName** property for each control. Note that the value which is set will be used in the dashboard.
 
-#### Set AnalyticsName
+### Set AnalyticsName
 
 {{source=..\SamplesCS\Analytics\AnalyticsForm.cs region=SetAnalyticsName}} 
 {{source=..\SamplesVB\Analytics\AnalyticsForm.vb region=SetAnalyticsName}}
@@ -80,7 +80,7 @@ Me.RadButton1.AnalyticsName = "Save Button"
 
 You can then go to the dashboard of your analytics provider, where you will find information and statistics for the registered features for different periods of time.
 
-#### Disable Analytics
+### Disable Analytics
 
 {{source=..\SamplesCS\Analytics\AnalyticsForm.cs region=DisableAnalytics}} 
 {{source=..\SamplesVB\Analytics\AnalyticsForm.vb region=DisableAnalytics}}

@@ -14,10 +14,10 @@ res_type: kb
 |Q1 2009|RadControls for WinForms|Martin Vassilev|Feb, 11, 2009| 
 
    
-**HOW-TO**  
+## How To
 Add a custom theme for RadMessageBox dialog.  
    
-**SOLUTION**
+## Solution
 
 Considering the fact that RadMessageBox is build on RadControl elements, the process of creating a theme is the same as it is for every Telerik control. The easiest way to make and apply a theme is:  
  

@@ -27,7 +27,7 @@ Additionally, __CategoricalRadialAxis__ inherits all properties of the [Axis cla
 
 CategoricalRadial axis is added automatically when you add RadarPoint, RadarLine or RadarArea series to RadChartView. The following example illustrates that once you add a Radar series, you are able to get the CategoricalRadial axis using the RadialAxis property of the RadarSeries instance: 
 
-#### CategoricalRadialAxis Setup
+### CategoricalRadialAxis Setup
 
 <snippet id='chartview-radial-radialcategoricalaxis-cs'/>
 <snippet id='chartview-radial-radialcategoricalaxis-vb'/>
@@ -51,7 +51,7 @@ Additionally, NumericRadialAxis inherits all properties of the [Axis class.]({%s
 
 NumericRadial axis is added automatically when you add __PolarPoint__, __PolarLine__ or __PolarArea__ series to __RadChartView__. The following example illustrates that once you add a Polar series, you are able to get the NumericRadial axis using the __RadialAxis__ property of the __PolarSeries__ instance: 
 
-#### NumericRadialAxis Setup
+### NumericRadialAxis Setup
 
 <snippet id='chartview-radial-radialnumericalaxis-cs'/>
 <snippet id='chartview-radial-radialnumericalaxis-vb'/>
@@ -61,7 +61,7 @@ NumericRadial axis is added automatically when you add __PolarPoint__, __PolarLi
 >caption Figure 1: NumericRadialAxis Setup
 ![WinForms RadChartView NumericRadialAxis Setup](images/chartview-axes-radial002.png)
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

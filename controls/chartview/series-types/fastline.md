@@ -16,7 +16,7 @@ __FastLineSeries__ is inheriting the default line series but the performance is 
 
 The following code snipped shows how you can add __FastLineSeries__ to __RadChartView__.
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-fastline-fast-cs'/>
 <snippet id='chartview-fastline-fast-vb'/>
@@ -27,7 +27,7 @@ The following code snipped shows how you can add __FastLineSeries__ to __RadChar
 
 ![WinForms RadChartView FastLine Initial Setup](images/chartview-series-types-line004.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

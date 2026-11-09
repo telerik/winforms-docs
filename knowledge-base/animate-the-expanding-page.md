@@ -13,13 +13,13 @@ res_type: kb
 |----|----|----|----|
 |2015.1.225|RadPageView for WinForms|Dimitar Karamfilov|March 19, 2015|
 
-**Problem**  
+## Problem
 This article demonstrates how you can change the current page when a page is hovered and how you can animate the page expanding.  
  
  
 ![PageViewAnimation001](images/animate-the-expanding-page001.gif)  
    
-**Solution**  
+## Solution
 Firstly, you should create a new project and add a **RadPageView** to the form. Additionally, set the view mode to **ExplorerBar** and add some pages. The form should look like this:  
  
  
@@ -146,5 +146,5 @@ End Sub
 
 ````
  
->note You can download a VB and C# project from the following [link](https://github.com/telerik/winforms-sdk/tree/master/PageView/PageViewAnimation).
+>note You can download a VB and C# project from the following [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/PageView/PageViewAnimation).
 

@@ -42,7 +42,7 @@ To resize a **ToolTabStrip**/**DocumentTabStrip** container, click the splitter 
 
 ![WinForms RadDock Resizing Panels](images/dock-architecture-and-features-arranging-dockwindows002.gif)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/dock/getting-started%})
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     

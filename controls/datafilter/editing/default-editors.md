@@ -27,7 +27,7 @@ The default editor for the field name element and for the operator element is **
 
 >note In *R1 2017* **DataFilterCheckboxEditor** was used for Boolean properties. Now, a permanent check box is displayed and the value filter node element doesn't enter in edit mode. 
 
-# See Also
+## See Also
 
 * [Events]({%slug winforms/datafilter/editing/events%})	
 * [Custom Editors]({%slug winforms/datafilter/editing/custom-editors%})	

@@ -40,9 +40,9 @@ position: 5
 |Grip|Gets or sets the RadCommandBarGrip element of the strip.|
 |OverflowButton|Gets or sets the RadCommandBarOverflowButton element of the strip.|
 
-# Events
+## Events
 
-## CommandBar
+### CommandBar
 
 |Event|Description|
 |----|----|
@@ -53,7 +53,7 @@ position: 5
 |FloatingStripCreated|Occurs when a floating strip is created.|
 |FloatingStripDocked|Occurs when a floating strip is docked.|
 
-## CommandBarStripElement
+### CommandBarStripElement
 
 |Event|Description|
 |----|----|

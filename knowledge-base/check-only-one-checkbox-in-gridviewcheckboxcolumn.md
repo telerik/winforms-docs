@@ -14,11 +14,11 @@ res_type: kb
 |Q3 2009 SP1|RadGridView for WinForms|Nikolay Diyanov|Jan 13, 2009|
  
 
-**INTRODUCTION**  
+## Introduction
    
 By default, GridViewCheckBoxColumn allows for multiple checked checkboxes. However, in certain cases you may want to use it as a kind of RadioButton column - i.e. allow the user to check only one checkbox at a time.  
    
-**SOLUTION**  
+## Solution
 
 In order to implement the desired requirement, first subscribe to the ValueChanged event and then execute the following code snippet in the ValueChanged event handler:  
    

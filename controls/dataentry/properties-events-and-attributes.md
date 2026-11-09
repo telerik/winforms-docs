@@ -18,7 +18,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 * The most important property of __RadDataEntry__ is __DataSource__. Through this property user can set the business object or a collection of objects that should be editing. When this property is set __RadDataEntry__ generates editors for each public property which does not have its __Browsable__ attribute set to *false.* 
 
-#### RadDataEntry Binding.
+### RadDataEntry Binding.
 
 <snippet id='dataentry-getting-started-bind1-cs'/>
 <snippet id='dataentry-getting-started-bind1-vb'/>
@@ -31,7 +31,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 * The __ColumnCount__ property controls the amount of columns that __RadDataEntry__ will use to arrange generated controls. Default value is 1 
  
-#### Set the Columns Count.
+### Set the Columns Count.
 
 <snippet id='dataentry-properties-events-and-attributes-numberofcolumns-cs'/>
 <snippet id='dataentry-properties-events-and-attributes-numberofcolumns-vb'/>
@@ -44,7 +44,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 * The __FitToParentWidth__ property controls whether the generated editors should fit their width to width of the __RadDataEntry__. Default Value is *false*. 
 
-#### Set FitToParentWidth Property.
+### Set FitToParentWidth Property.
 
 <snippet id='dataentry-properties-events-and-attributes-fittoparentwidth-cs'/>
 <snippet id='dataentry-properties-events-and-attributes-fittoparentwidth-vb'/>
@@ -57,7 +57,7 @@ The main purpose of __RadDataEntry__ is to generate editors according to the obj
 
 * The __ShowValidationPanel__ property controls the visibility of validation panel. Please note that this property will change the visibility of panel if only there are controls inside it. By default this panel is disabled.
             
-#### Setup the Validation Panel.
+### Setup the Validation Panel.
 
 <snippet id='dataentry-properties-events-and-attributes-showvalidationpanel-cs'/>
 <snippet id='dataentry-properties-events-and-attributes-showvalidationpanel-vb'/>
@@ -149,7 +149,7 @@ With the __Browsable__ attribute users can easily control which properties shoul
 
 >note The **Browsable** attribute set to *false* will make the property on which it is used not bindable. This will prevent other controls which use the [CurrencyManager](https://msdn.microsoft.com/en-us/library/system.windows.forms.currencymanager(v=vs.110).aspx) for extracting properties to bind to such a class. A suitable solution for this scenario is to leave the property **Browsable** set to *true* and handle the **RadDataEntry**.*ItemInitializing* setting the e.Cancel property to *true* for items which need to hidden in **RadDataEntry**.  
 
-#### Set The Browsable Attribute. 
+### Set The Browsable Attribute. 
 
 <snippet id='dataentry-properties-events-and-attributes-browsable-cs'/>
 <snippet id='dataentry-properties-events-and-attributes-browsable-vb'/>
@@ -159,7 +159,7 @@ With the __Browsable__ attribute users can easily control which properties shoul
 
 The __DisplayName__ attribute defines what text should be displayed in the label that is associated with the editor. 
 
-#### Set The DisplayName Attribute.
+### Set The DisplayName Attribute.
 
 <snippet id='dataentry-properties-events-and-attributes-displayname-cs'/>
 <snippet id='dataentry-properties-events-and-attributes-displayname-vb'/>
@@ -171,14 +171,14 @@ The __DisplayName__ attribute defines what text should be displayed in the label
 
 With __RadRange__ attribute users can define range that can be used into validation process. This attribute is provided in validation events. 
 
-#### Set The RadRange Attribute
+### Set The RadRange Attribute
 
 <snippet id='dataentry-properties-events-and-attributes-radrange-cs'/>
 <snippet id='dataentry-properties-events-and-attributes-radrange-vb'/>
 
  
 
-# See Also
+## See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
  * [Getting Started]({%slug  winforms/dataentry/getting-started%})

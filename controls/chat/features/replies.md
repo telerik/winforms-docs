@@ -30,7 +30,7 @@ Replies are stored in the `ChatMessage.ReplyToMessages` collection. Each message
 
 The reply functionality is controlled by the `EnableReplies` property on __RadChat__. By default, replies are enabled.
 
-#### __Disabling the reply functionality__
+### __Disabling the reply functionality__
 
 ````C#
 this.radChat1.EnableReplies = false;
@@ -45,7 +45,7 @@ When `EnableReplies` is set to `false`, the **Reply with quote** context menu it
 
 Users can start a reply through the message context menu. You can also start a reply programmatically using the `StartReply` method on `RadChatElement`:
 
-#### __Starting a reply programmatically__
+### __Starting a reply programmatically__
 
 ````C#
 ChatMessage messageToReply = this.radChat1.ChatElement.MessagesViewElement.Items[0].Message;
@@ -64,7 +64,7 @@ The `StartReply` method returns `true` if the message was successfully added to 
 
 __RadChat__ supports replying to multiple messages at once. The `MaxReplyMessages` property controls the maximum number of messages that can be quoted in a single reply. The default value is 5.
 
-#### __Configuring multi-message replies__
+### __Configuring multi-message replies__
 
 ````C#
 this.radChat1.ChatElement.MaxReplyMessages = 3;
@@ -79,7 +79,7 @@ When `MaxReplyMessages` is set to 1, each new reply replaces the previous one in
 
 The user can cancel the reply by clicking the close button on the reply preview element. You can also cancel or modify replies programmatically:
 
-#### __Canceling and removing replies programmatically__
+### __Canceling and removing replies programmatically__
 
 ````C#
 // Cancel the entire reply operation
@@ -132,7 +132,7 @@ The following events are available on `RadChatElement` for monitoring reply acti
 | ReplyCancelled | Raised when the reply operation is cancelled. |
 | ReplyBubbleClicked | Raised when the user clicks a reply bubble in a sent message, allowing navigation to the original message. |
 
-#### __Handling the ReplyStarted event__
+### __Handling the ReplyStarted event__
 
 ````C#
 this.radChat1.ChatElement.ReplyStarted += this.OnReplyStarted;
@@ -154,7 +154,7 @@ End Sub
 
 You can create a message that is a reply to another message by populating the `ReplyToMessages` collection:
 
-#### __Creating a reply message programmatically__
+### __Creating a reply message programmatically__
 
 ````C#
 ChatTextMessage originalMessage = new ChatTextMessage("What time is the meeting?", otherAuthor, DateTime.Now.AddMinutes(-5));

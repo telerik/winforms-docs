@@ -10,6 +10,22 @@ You are an expert in technical documentation SEO and content discoverability. Ev
 
 Score each dimension from **1 (poor) to 5 (excellent)**, provide a rationale (≤ 2 sentences), and list specific violations (empty array if none). Compute a weighted overall score at the end.
 
+Report violations with their locations and proposed corrections without editing during review-only scoring. An affected dimension cannot receive a perfect score, and a weighted score does not waive an unresolved required correction.
+
+## WinForms Repository Precedence
+
+Apply the local [metadata](../telerik-documentation-style-guide/style-metadata-links/SKILL.md),
+[structure](../telerik-documentation-style-guide/style-structure/SKILL.md),
+and [formatting](../telerik-documentation-style-guide/style-formatting/SKILL.md)
+rules to scores and violation lists. Existing metadata is protected unless
+edits to named fields are explicitly authorized. Score defects honestly and
+report proposed corrections without treating scores as permission to edit.
+Use `page_title`, accept short navigation labels and historical slash-separated
+slugs, and never add an H1 to a KB article. Concise KB answers are not defective
+solely for having fewer than 300 words; do not pad them. Use exact `C#` and
+`VB.NET` labels for application examples. These rules override conflicting
+generic checks below.
+
 ---
 
 ## Why SEO Readiness Matters for Documentation
@@ -45,20 +61,20 @@ The scoring dimensions below cover both traditional technical SEO (dimensions 1�
 
 ### 1. Title and Meta Title Optimization — weight 15 %
 
-Source rules: front matter `title` and `meta_title` / `page_title` fields.
+Source rules: front matter `title` and `page_title` fields.
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| `meta_title` / `page_title` is present | Field exists in front matter | Field is absent |
-| Primary keyword appears early in `meta_title` | The most specific term (component + feature + product) leads the value, e.g. `"Grid Data Binding - Kendo UI for jQuery"` | `"Kendo UI for jQuery - Grid Data Binding"` (product leads instead of topic) |
-| `meta_title` length is 40–70 characters | Within the range Google displays without truncation | 25 characters (too short) or 90 characters (truncated in SERPs) |
-| `title` (sidebar nav) is distinct and descriptive | Not a generic label shared by sibling articles | Multiple articles all titled `"Overview"` or `"Introduction"` without qualifier |
-| No keyword stuffing | Title reads naturally; keywords appear once, not repeated | `"Grid Grid DataGrid Kendo Grid Overview"` |
+| `page_title` is present | Field exists in front matter | Field is absent |
+| Topic is clear in `page_title` | The control and task are identifiable, following neighboring WinForms pages | SEO title promises a different task |
+| `page_title` length is appropriate | Prefer concise, descriptive titles; 40-70 characters is guidance, not a display guarantee | Verbose or uninformative title |
+| `title` suits navigation | Short labels such as Overview or Getting Started are valid in their control's navigation context | Navigation title misidentifies the article |
+| No keyword stuffing | Title reads naturally; keywords appear once, not repeated | `"Grid Grid RadGridView Telerik WinForms Grid Overview"` |
 
 **Scoring guide:**
-- 5: Keyword-leading `meta_title`, 40–70 chars, distinct across sibling articles.
-- 3: `meta_title` present but generic or slightly out of range.
-- 1: `meta_title` absent or a duplicate of other articles.
+- 5: Descriptive `page_title`, clear control/task, and appropriate navigation title.
+- 3: Title is present but weakly describes the task.
+- 1: SEO title is absent or misleading.
 
 ---
 
@@ -69,14 +85,14 @@ Source rules: front matter `description` field.
 | Check | Pass condition | Violation examples |
 |---|---|---|
 | `description` is present | Field exists in front matter | Field is absent |
-| Length is 100–150 characters (hard limit — never exceed 150) | Fits Google's display window without truncation while providing sufficient context | 60 chars (too short, wastes SERP space) or 160 chars (exceeds the 150-character cap) |
+| Length is 120–150 characters | Meets the local description standard; display in search results is not guaranteed | Short or overlong description; report without editing protected metadata |
 | Describes the specific outcome or task | Answers "what will the reader learn or accomplish?" | `"This article is about the Grid component"` — states subject, not value |
 | Contains the primary keyword naturally | Core term appears in the description without stuffing | Description never mentions the component or feature name |
 | Unique across sibling articles | No two articles share the same description | Two feature articles both say `"Configures the Grid component"` |
 | Includes an implicit call to action | Phrased to invite the click, e.g. "Learn how to…", "Discover…", "Find out…" | Flat declarative sentence with no engagement signal |
 
 **Scoring guide:**
-- 5: 100–150 chars, task-oriented, keyword-natural, unique, click-inviting.
+- 5: 120–150 chars, task-oriented, keyword-natural, and unique.
 - 3: Present and unique but too short/long or purely declarative.
 - 1: Absent or a copy of another article's description.
 
@@ -86,23 +102,27 @@ Source rules: front matter `description` field.
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| Primary keyword in H1 | The article's main term appears in the single `#` heading | H1 is a generic label like `"Overview"` |
+| Primary keyword in the article title | Standard articles include the main term in their single H1; KB articles use the metadata title and opening text without adding an H1 | Generic standard H1 or KB metadata title; adding an H1 to a KB article |
 | Primary keyword in the first paragraph | Core term used within the opening 50 words | Feature is first mentioned midway through the article |
 | Secondary keywords in H2 headings | Related terms and long-tail variants appear in `##` headings | All H2 headings are generic (`"Setup"`, `"Options"`, `"Example"`) without qualifying context |
 | Natural keyword density | Primary term appears several times in body text without forced repetition | Keyword appears once in 1500 words (too sparse) or 20 times in 500 words (stuffed) |
 | LSI / semantic terms present | Synonyms and closely related terms are used naturally in body text | Article about `"data binding"` never uses `"connect"`, `"fetch"`, `"source"`, `"remote data"` |
 
 **Scoring guide:**
-- 5: Keyword in H1 and opening paragraph; secondary keywords in H2s; natural density.
-- 3: Keyword in H1 but absent from first paragraph or H2 headings.
-- 1: H1 is generic; primary term rarely or never appears in the body.
+- 5: Keyword in the standard H1 or KB metadata title and opening paragraph; secondary keywords in meaningful H2s; natural density.
+- 3: Keyword in the applicable title but absent from the first paragraph or relevant topical headings.
+- 1: Applicable title is generic; primary term rarely or never appears in the body. A KB article's lack of H1 is not a defect.
 
 ---
 
 ### 4. Content Depth and Completeness — weight 10 %
 
+Use the [formatting skill](../telerik-documentation-style-guide/style-formatting/SKILL.md) for image-introduction examples and remediation that preserves sufficient introductions and genuine section headings.
+
 | Check | Pass condition | Violation examples |
 |---|---|---|
+| Image introduction present and adjacent | Every image has a meaningful sentence or exact `>caption` block immediately before it | Missing introduction or explanation only after the image |
+| No heading or bold image introductions | No image-only heading, standalone bold label, or redundant heading/caption pair | `### Data Source Configuration` or `**Data Source Configuration**` used as an image introduction; replace with a sentence or caption |
 | Minimum viable length | Article body is at least 300 words (thin content is a ranking signal) | 150-word stub with no examples |
 | Covers the topic end-to-end | Introduction, concept explanation, setup/usage, examples, and next steps are all present when relevant | Article jumps straight to code with no explanation of what the feature does |
 | Concrete examples | At least one code block or screenshot illustrates the key concept | Pure prose with no demonstrated usage |
@@ -110,7 +130,7 @@ Source rules: front matter `description` field.
 | No excessive duplication with sibling articles | Unique value not replicated verbatim in other articles | Introduction paragraph copy-pasted across multiple articles |
 
 **Scoring guide:**
-- 5: ≥ 300 words, full coverage, concrete examples, unique value.
+- 5: ≥ 300 words, full coverage, concrete examples with approved adjacent image introductions, unique value.
 - 3: Adequate length and examples but missing one major section.
 - 1: Thin, incomplete, or heavily duplicated.
 
@@ -120,16 +140,20 @@ Source rules: front matter `description` field.
 
 Google extracts featured snippets and `People Also Ask` answers from well-structured heading/content pairs.
 
+Use the [structure skill](../telerik-documentation-style-guide/style-structure/SKILL.md) for article-type classification and hierarchy-preserving heading corrections. Its no-H1 rule for KB content takes precedence over SEO recommendations.
+
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| H2/H3 headings are question-like or task-like | Headings mirror common search queries, e.g. `"How to Enable Paging"`, `"What Is Virtual Scrolling"` | Generic headings: `"Paging"`, `"Scrolling"` |
+| Standard-article H1 count | Exactly one H1 in a standard article | Missing or multiple H1s; recommend a missing H1 or demote additional H1s according to hierarchy |
+| KB H1 prohibition | No H1 in a KB article; top-level H2 sections are valid | Any KB H1; recommend removal or conversion, never addition |
+| H2/H3 headings are question-like or task-like where appropriate | Topical headings mirror common search queries; required KB labels such as Symptoms, Cause, and Resolution remain valid | Generic topical headings with no context; do not rewrite required KB labels solely for keywords |
 | Answer immediately follows the heading | The first sentence under a heading directly answers or defines the heading topic | Heading is followed by a lengthy preamble before the actual answer |
 | Lists and tables are used for enumerable facts | Step-by-step procedures use numbered lists; option sets use tables | Steps described as dense paragraphs |
 | Definition pattern for concept articles | Concept heading followed by a one-sentence definition (ideal for featured snippet extraction) | Concept introduced indirectly through examples only |
 | No heading-only sections | Every heading has at least one substantive paragraph or list beneath it | Heading followed immediately by another heading |
 
 **Scoring guide:**
-- 5: Headings are query-like; answers are immediate; lists/tables used correctly.
+- 5: Article-type H1 count is correct; topical headings are query-like or use required KB labels; answers are immediate; lists/tables used correctly.
 - 3: Some headings are query-like; answers sometimes delayed.
 - 1: All headings are generic labels; no snippet-friendly structure.
 
@@ -158,8 +182,8 @@ Google extracts featured snippets and `People Also Ask` answers from well-struct
 |---|---|---|
 | `slug` is present | Field exists in front matter | Field is absent |
 | Slug is descriptive and keyword-bearing | Slug reflects the article topic, e.g. `grid-remote-data-binding` | `article-123`, `page1`, `untitled` |
-| Slug uses lowercase and hyphens only | No uppercase, underscores, or spaces | `Grid_RemoteData`, `GridRemoteDataBinding` |
-| Slug length is reasonable | 3–6 words / 30–60 characters | Single-word slugs (`grid`) or very long slugs (`kendo-ui-for-jquery-grid-component-remote-data-binding-with-odata`) |
+| Slug follows local conventions | Preserve historical identifiers, including `winforms/gridview/getting-started`; new values match neighbors | Mechanically changing a working slash-separated slug |
+| Slug is stable and purposeful | Resolves uniquely to the intended article; no fixed word or character count | Duplicate or misleading identifier |
 | No keyword stuffing in slug | Each meaningful word appears once | `grid-grid-data-binding-grid` |
 
 **Scoring guide:**
@@ -175,14 +199,14 @@ Markdown content is often rendered by static-site generators or documentation pl
 
 | Check | Pass condition | Violation examples |
 |---|---|---|
-| `description` is a complete, standalone sentence | Can be used verbatim as the `description` in a JSON-LD `Article` object | Fragment: `"Grid data binding options."` |
+| `description` is a complete, standalone sentence | Can be used verbatim as the `description` in a JSON-LD `Article` object | Fragment: `"Data Grid data binding options."` |
 | Code examples are delimited with language tags | Enables platform to render `SoftwareSourceCode` structured data | Fenced blocks with no language |
 | Step-by-step procedures use numbered lists | Enables extraction as `HowTo` structured data | Procedures written as paragraphs |
 | FAQ-like sections use heading + answer pattern | Enables extraction as `FAQPage` structured data | Q&A embedded in prose with no distinguishing structure |
-| `title` matches H1 exactly (or differs only in casing) | Signals content coherence to crawlers | `title: "Overview"` but H1 is `"Grid Component Overview"` |
+| Title and body describe the same topic | Standard H1 and navigation `title` share the topic without requiring identical wording; KB metadata title and body align without a source H1 | Title promises a different task from the body; adding an H1 to align a KB title |
 
 **Scoring guide:**
-- 5: Description is a full sentence; code blocks labeled; steps numbered; title matches H1.
+- 5: Description is a full sentence; code blocks labeled; steps numbered; title and body topic align under the article-type H1 rules.
 - 3: Most checks pass but one or two structured-data signals are missing.
 - 1: Multiple missing signals; article is difficult to annotate with structured data.
 

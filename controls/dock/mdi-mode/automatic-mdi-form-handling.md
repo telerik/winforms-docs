@@ -23,7 +23,7 @@ To configure your MDI application to use this feature:
 
 2\. Drop a __RadDock__ onto the parent form and set the __AutoDetectMdiChildren__ property to *true*. You may also want to set the __RadDock.Dock__ property to __Fill__ to get the best use of space on the form.
 	
-#### Configuring the Parent Form 
+## Configuring the Parent Form 
 
 <snippet id='dock-automatic-mdi-form-handling-initialization-cs' />
 <snippet id='dock-automatic-mdi-form-handling-initialization-vb' />
@@ -49,7 +49,7 @@ This property allows you to determine the default type of the **DockWindows** th
  
 However, you can set the default type to **ToolWindow**:
 
-#### Setting the default DockWindow type for MDI children forms  
+### Setting the default DockWindow type for MDI children forms  
 
 <snippet id='dock-automatic-mdi-form-handling-mdichildrendocktype-cs' />
 <snippet id='dock-automatic-mdi-form-handling-mdichildrendocktype-vb' />
@@ -78,7 +78,7 @@ This chain of events allows you to encapsulate all your business logic in the re
 
 The __CloseAllWindows__ returns a bool value which indicates if the operation is successful (it will return *true* if all child windows are closed). This is allowing you to keep the main form opened if some of the MDI children cannot be closed for the moment. You can use the method as follows:       
 
-#### Using the CloseAllWindows method. 
+### Using the CloseAllWindows method. 
 <snippet id='dock-automatic-mdi-form-handling-closing-cs' />
 <snippet id='dock-automatic-mdi-form-handling-closing-vb' />
 
@@ -88,4 +88,4 @@ The __CloseAllWindows__ returns a bool value which indicates if the operation is
 
 A popular scenario for many applications is the use of singleton forms, where the end-user can show one type of form once only and where closing the form would mean just hiding it which saves its state for further showing and manipulation. This scenario is popular in context of MDI as well. However, the architecture and chain of events in __RadDock__ do not allow such a feature in the MDI case. Therefore, if you have such a requirement for your application, you need to remove the MDI functionality from it and use the standard approach of docking of controls/forms. One of the benefits that come with this approach concerns the overhead of the MDI approach. On one hand, you have the .NET **MdiClient** created and attached to the main form and on the other hand, you have our __RadDock__ that snoops on the notifications from the MDI Client. If it captures new forms added, it internally creates **HostWindows**, adds the forms to the **HostWindows**, and adds **HostWindows** to the **MainDocumentContainer**. 
 
-For more information about the non-MDI approach, please refer to [this article]({%slug winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms%})
+For more information about the non-MDI approach, please refer to [Docking Singleton Forms]({%slug winforms/dock/docking-usercontrols-and-forms/docking-singleton-forms%})

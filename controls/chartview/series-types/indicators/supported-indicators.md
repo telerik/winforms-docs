@@ -92,7 +92,7 @@ The article provides a brief description and a list of the important properties 
 
 * __Bollinger Bands__ consists of two bands that aim to provide a relative definition of high and low. The indicator uses a simple __Moving Average__ as a starting point and forms its two bands using the following formulas: Upper band: MA + (N-period standard deviation * K)Lower band: MA – (N-period standard deviation * K)N is defined by the Period property. A typical value for N is 20.K is defined by the StandardDeviations property. A typical value for K is 2.
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

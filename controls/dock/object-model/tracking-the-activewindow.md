@@ -32,7 +32,7 @@ In certain scenarios you may need to track the moment the __ActiveWindow__ of __
 
 Considering the same scenario, where the currently active window is `toolWindow2`, activating the `toolWindow1` will first fire **ActiveWindowChanging** and if it is not canceled, **ActiveWindowChanged** will be fired. There, the __DockWindow__ property from the event arguments will return `toolWindow1`. In this case, you may also use __RadDock.ActiveWindow__ that will also return `toolWindow1`.
         
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

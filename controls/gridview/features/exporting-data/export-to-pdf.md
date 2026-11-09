@@ -205,7 +205,7 @@ __Initialization__
 
 Before running export to PDF, you have to initialize the __ExportToPDF__ class. The constructor takes one parameter: __RadGridView__ which will be exported: 
 
-####  ExportToPDF initialization
+###  ExportToPDF initialization
 
 <snippet id='gridview-exporttopdf1-exporttopdfinitialization-cs' />
 <snippet id='gridview-exporttopdf1-exporttopdfinitialization-vb' />
@@ -339,7 +339,7 @@ Exporting data to PDF is done through the __RunExport__ method of ExportToPDF ob
 
 Consider the code sample below:
 
-####  Exporting to PDF format
+###  Exporting to PDF format
 
 <snippet id='gridview-exporttopdf1-exportingtopdfformat-cs' />
 <snippet id='gridview-exporttopdf1-exportingtopdfformat-vb' />
@@ -348,7 +348,7 @@ Consider the code sample below:
 
 __HTMLCellFormating__ event: Since the the export process first renders RadGridView in XHTML format you can use the event which comes from ExportToHTML class: __HTMLCellFormatting__.  It gives access to a single cell  HTML element that allows you to make additional formatting for every HTML cell related to the exported RadGridView:
 
-####  Handling the HTMLCellFormatting event
+###  Handling the HTMLCellFormatting event
 
 <snippet id='gridview-exporttopdf1-hanglinghtmlcellformattingevent-cs' />
 <snippet id='gridview-exporttopdf1-hanglinghtmlcellformattingevent-vb' />

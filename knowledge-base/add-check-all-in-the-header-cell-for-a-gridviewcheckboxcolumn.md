@@ -14,15 +14,15 @@ res_type: kb
 |Q2 2013|RadGridView for WinForms|Martin Vassilev|August 14, 2013|
  
 
-**HOW TO**  
+## How To
 Add a check box element in the header cell for **GridViewCheckBoxColumn**. Implement check/uncheck functionality.  
 
 >note In the latest Telerik versions **GridViewCheckBoxColumn** offers **EnableHeaderCheckBox** property out of the box.
    
-**DESCRIPTION**  
+## Description
 It is a very common scenario to use an check box column in RadGridView that allows to end user to mark RadGridView's rows for some operations. It is a valuable feature to have a "check/uncheck all" functionality integrated in the header.   
    
-**SOLUTION**
+## Solution
 In order to get the desired functionality, you can create and use a custom header cell. Add a check box element in the custom cell and implement **ToggleStateChanged** and the **ValueChanged** event. Then, create a column which uses the custom header cell.  
    
 ````C#
@@ -280,4 +280,4 @@ End Class
 
 ````
 
->note You can download a complete VB and C# project from the following [link](https://github.com/telerik/winforms-sdk/tree/master/GridView/CheckBoxInHeader).
+>note You can download a complete VB and C# project from the following [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/GridView/CheckBoxInHeader).

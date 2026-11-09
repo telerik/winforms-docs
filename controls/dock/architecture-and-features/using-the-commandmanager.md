@@ -39,7 +39,7 @@ The above code specifies the **SHIFT+A+S** as a valid key combination that will 
 
 The completely transparent object model of the command manager allows you to create and register completely custom command and associate it with the desired key combination. The following code demonstrates how to create custom command that floats the currently active tool window and is associated with the **CTRL+F** shortcut:
 
-#### Define the custom command class 
+### Define the custom command class 
 
 <snippet id='dock-using-the-commandmanager-raddockcommand-cs' />
 <snippet id='dock-using-the-commandmanager-raddockcommand-vb' />
@@ -47,7 +47,7 @@ The completely transparent object model of the command manager allows you to cre
  
 
 
-#### Register the custom command 
+### Register the custom command 
 
 <snippet id='dock-using-the-commandmanager-registercustomcommand-cs' />
 <snippet id='dock-using-the-commandmanager-registercustomcommand-vb' />
@@ -58,7 +58,7 @@ The completely transparent object model of the command manager allows you to cre
  
 You may easily disable the command manager, using its __Enabled__ property. Alternatively, you may either clear all commands or clear any shortcut associated with these commands.
 
-# See Also
+## See Also
 
 [Getting Started]({%slug winforms/dock/getting-started%})
 [Understanding RadDock]({%slug winforms/dock/architecture-and-features/understanding-raddock%}) 

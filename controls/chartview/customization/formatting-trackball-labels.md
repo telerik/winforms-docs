@@ -19,7 +19,7 @@ This article demonstrates how to customize the trackball labels text and styles.
 
 1\. You should subscribe to the __TextNeeded__ event and add the __ChartTrackballController__ to the chart as follows. 
 
-#### Add Controller
+## Add Controller
 
 <snippet id='chartview-formatting-trackball-labels-trackball-cs'/>
 <snippet id='chartview-formatting-trackball-labels-trackball-vb'/>
@@ -28,7 +28,7 @@ This article demonstrates how to customize the trackball labels text and styles.
 
 2\. Now, you can use the __TextNeeded__ and change any properties you desire. 
 
-#### Handle TextNeeded
+## Handle TextNeeded
 	
 <snippet id='chartview-formatting-trackball-labels-textneeded-cs'/>
 <snippet id='chartview-formatting-trackball-labels-textneeded-vb'/>
@@ -38,7 +38,7 @@ This article demonstrates how to customize the trackball labels text and styles.
 >important The code for getting the current data point can depend on the used series type. For example if you use scatter chart, you should use __ScatterDataPoint__ type.
 >
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Axes]({%slug winforms/chartview-/axes%})

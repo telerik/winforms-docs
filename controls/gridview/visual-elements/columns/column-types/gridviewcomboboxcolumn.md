@@ -48,7 +48,7 @@ The useful methods for **GridViewComboBoxColumn** are:
 
 ![Telerik UI for WinForms RadGridView showing a GridViewComboBoxColumn with predefined values in a drop-down list](images/gridview-columns-gridviewcomboboxcolumn001.png)
 
-#### Adding and binding GridViewComboBoxColumn
+## Adding and binding GridViewComboBoxColumn
 
 <snippet id='gridview-gridviewcomboboxcolumn1-addcomboboxcolumn-cs' />
 <snippet id='gridview-gridviewcomboboxcolumn1-addcomboboxcolumn-vb' />
@@ -57,7 +57,7 @@ The useful methods for **GridViewComboBoxColumn** are:
 
 The displayed text in a cell can be retrieved by calling the __GetLookupValue__ on the __GridViewComboBoxColumn__. 
 
-#### Get Cell Text
+### Get Cell Text
 
 <snippet id='gridview-gridviewcomboboxcolumn1-getlookupvalue-cs' />
 <snippet id='gridview-gridviewcomboboxcolumn1-getlookupvalue-vb' />
@@ -66,7 +66,7 @@ The displayed text in a cell can be retrieved by calling the __GetLookupValue__ 
 
 In order to access the __RadDropDownListEditor__, you should subscribe to the __CellEditorInitialized__ event of __RadGridView__. This event is fired when the initialization of an editor is done. The __EditorElement__ property of the __RadDropDownListEditor__ gives you access to the __RadDropDownListEditorElement__ which allows you to apply various customizations to the editor's element:
 
-#### Modify the DropDownList editor
+### Modify the DropDownList editor
 
 <snippet id='gridview-gridviewcomboboxcolumn1-modifythecomboboxeditor-cs' />
 <snippet id='gridview-gridviewcomboboxcolumn1-modifythecomboboxeditor-vb' />
@@ -75,7 +75,7 @@ In order to access the __RadDropDownListEditor__, you should subscribe to the _
 
 The following example demonstrates a case where the combo box is bound to a column with string values in the data source. In this case the __DisplayMember__ and __ValueMember__ properties are the same, and you need just an array of strings as a data source to the ComboBoxColumn (those strings should be equal to the possible values in the data source):
 
-#### Bind to array of string
+### Bind to array of string
 
 <snippet id='gridview-gridviewcomboboxcolumn1-bindtoarray-cs' />
 <snippet id='gridview-gridviewcomboboxcolumn1-bindtoarray-vb' />
@@ -88,7 +88,7 @@ The example below extends the previous sample, where we bound the combo column t
 
 2\.Next, the grid columns are created and mapped to the data base columns. Note that you have to define a __separate__ data source for each of your combo box columns different form the one of your grid. This separate data sources have helper function, the actual data for your combobox columns is still in your grid data source as it is for any other type of column (e.g. decimal column). The data source for the first combo column is a string array (from the previous example) and for the second combo column is a __BindingList__. The **BindingList** consists of objects having properties for your value and display members. In the sample code below, __Id__ is the __ValueMember__ and __MyString__ is the ___DisplayMember___. The *"Another ComboBox column"* in the grid data source is of type __int__ and our custom object has a property of type __int__. So in order to link the data source field to our custom object integer field, we have set the __ValueMember__ to __"Id"__. You may use a **DataTable** in the same way like the **BindingList**.
 
-#### Binding to collection of custom object
+### Binding to collection of custom object
 
 <snippet id='gridview-gridviewcomboboxcolumn2-bindtoobject-cs' />
 <snippet id='gridview-gridviewcomboboxcolumn2-bindtoobject-vb' />
@@ -97,7 +97,7 @@ The example below extends the previous sample, where we bound the combo column t
 
 You have to handle the **EditorRequired** event. This event is fired every time when an editor needs to be shown. A sample code demonstrating this technique:
 
-####  Customizing DropDownList editors in RadGridView
+###  Customizing DropDownList editors in RadGridView
 
 <snippet id='gridview-gridviewcomboboxcolumn3-customizedropdownlisteditor-cs' />
 <snippet id='gridview-gridviewcomboboxcolumn3-customizedropdownlisteditor-vb' />
@@ -137,4 +137,3 @@ You can check the following SDK project which demonstrates how you can use the G
 * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
 
 * [Display Text for Invalid Values in GridView's Combobox Column]({%slug display-text-for-invalid-values-in-grid-combobox-column%})
-

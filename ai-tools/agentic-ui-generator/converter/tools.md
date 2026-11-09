@@ -13,7 +13,7 @@ position: 3
 
 The Telerik WinForms MCP server exposes the following migration-specific tools for the converter. The AI agent calls these tools automatically in a sequence when you prompt it to migrate your application. You do not call the tools manually — the AI agent manages the workflow for you.
 
-### Tool: telerik_get_migration_plan
+## Tool: telerik_get_migration_plan
 
 It is the starting point for migration. Returns the recommended migration workflow, critical rules, and anti-patterns to avoid. The AI agent calls this tool first before starting any migration.
 
@@ -26,7 +26,7 @@ It is the starting point for migration. Returns the recommended migration workfl
 * File ordering guidance and a list of files to skip (`.resx`, `.resources`, `.settings`).
 * Error handling guidance for conversion failures, build failures, and designer errors.
 
-### Tool: telerik_analyze_project
+## Tool: telerik_analyze_project
 
 Analyzes a `.csproj` file to determine target framework, project style, and existing Telerik references. The AI agent calls this tool once at the start of the conversion.
 
@@ -46,7 +46,7 @@ Analyzes a `.csproj` file to determine target framework, project style, and exis
 * Whether a `packages.config` file exists.
 * Recommendations based on the analysis (e.g., migrate to SDK-style, add the AllControls NuGet package).
 
-### Tool: telerik_add_package_reference
+## Tool: telerik_add_package_reference
 
 Returns the correct way to add the `Telerik.UI.for.WinForms.AllControls` NuGet package based on the project analysis. For Classic-style .NET Framework projects, this tool can directly modify the `.csproj` file to add the package reference.
 
@@ -67,7 +67,7 @@ Returns the correct way to add the `Telerik.UI.for.WinForms.AllControls` NuGet p
 * Telerik NuGet source configuration (URL, setup instructions, and a sample `NuGet.config` template).
 * Warnings and notes (e.g., authentication requirements, .NET Framework-specific notes).
 
-### Tool: telerik_convert_file
+## Tool: telerik_convert_file
 
 The core conversion tool. Converts a C# or VB.NET file from Microsoft WinForms controls to Telerik equivalents using the Roslyn-based converter engine.
 
@@ -96,7 +96,7 @@ The core conversion tool. Converts a C# or VB.NET file from Microsoft WinForms c
 * Warnings (if any).
 * In dry-run mode: the full list of changes with line numbers, original source lines, and converted source lines.
 
-### Tool: telerik_get_theme_setup
+## Tool: telerik_get_theme_setup
 
 Returns instructions for configuring a Telerik theme in the application. The AI agent calls this tool after all forms have been converted.
 
@@ -107,7 +107,7 @@ Returns instructions for configuring a Telerik theme in the application. The AI 
 * Sample `App.config` and `Program.cs` snippets.
 * A list of available themes (e.g., `Fluent`, `FluentDark`).
 
-### Tool: telerik_winforms_assistant
+## Tool: telerik_winforms_assistant
 
 The conversion workflow integrates excellently with the existing general-purpose [Telerik AI coding assistant tool]({%slug agentic-ui-generator-overview%}). The AI agent uses this tool to ask about Telerik UI for WinForms features, components, and APIs. In the context of migration, the agent calls this tool to research alternatives for properties or events that were removed during conversion (items listed in the `itemsToReview` array).
 
@@ -267,13 +267,13 @@ The AI agent will:
 
 To convert a single file:
 
-```
+```text
 #telerik-winforms-assistant Convert this file to Telerik UI for WinForms controls
 ```
 
 To perform a dry run (review changes before applying):
 
-```
+```text
 #telerik-winforms-assistant Migrate this WinForms application to Telerik UI for WinForms using dry run mode
 ```
 

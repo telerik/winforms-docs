@@ -30,7 +30,7 @@ This article demonstrates how to customize the default theme of **RadDock**:
 
 1. Now, you can apply your custom theme to __RadDock__ by using the approach demonstrated in the following link: [Using custom themes]({%slug winforms/themes/using-custom-themes%})
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/dock/getting-started%})
  

@@ -19,6 +19,6 @@ You can easily change the styles of the border in the `Element Hierarchy Editor`
     ![WinForms RadButtonTextBox Customizing Appearance](images/radtextbox-customizing-appearance001.png)
 
 
-# See Also
+## See Also
 
 * [Themes]({%slug winforms/editors/textbox/themes%})

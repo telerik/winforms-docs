@@ -14,7 +14,7 @@ previous_url: chartview-series-types-scatter-area
 
 __ScatterAreaSeries__ plot their data using two numerical values. Once positioned on a plane the points are connected to form a line. Further, the area enclosed by this line and the categorical axis is filled. Below is a sample snippet that demonstrates how to set up two ScaterArea series: 
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-scatterarea-area-cs'/>
 <snippet id='chartview-scatterarea-area-vb'/>
@@ -38,7 +38,7 @@ The following list shows the most important properties of the __ScaterAreaSeries
 
 * __StrokeMode:__ This property controls what part of the area border should be marked with line.
 
-#### Set StrokeMode
+### Set StrokeMode
 
 <snippet id='chartview-scatterarea-stroke-cs'/>
 <snippet id='chartview-scatterarea-stroke-vb'/>
@@ -48,7 +48,7 @@ The following list shows the most important properties of the __ScaterAreaSeries
 >caption Figure 2: Stroke Mode
 ![WinForms RadChartView ScatterArea Stroke Mode](images/chartview-series-scatterarea002.png) 
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

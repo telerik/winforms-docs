@@ -31,7 +31,7 @@ This article shows what you can achieve using the smart tag of RadDataEntry.
 
 * __Dock in Parent Container:__ This option allows you to easily dock the RadDataEnty. 
 
-# See Also
+## See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 * [Structure]({%slug  winforms/dataentry/control-element-structure%})

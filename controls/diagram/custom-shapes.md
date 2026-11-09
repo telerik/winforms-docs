@@ -40,6 +40,6 @@ This will display the [Custom Shape Editor]({%slug winforms/tools/shapeeditor/us
         
 ![WinForms RadDiagram Custom Shape using Editor](images/diagram-custom-shapes003.png)
 
-# See Also
+## See Also
 
 * [ShapeEditor Tool]({%slug winforms/tools/shapeeditor%})

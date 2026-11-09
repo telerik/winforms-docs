@@ -52,7 +52,7 @@ The rest of the help articles in this section describe in more detail the logica
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/getting-started%})
         

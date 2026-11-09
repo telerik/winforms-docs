@@ -32,7 +32,7 @@ By default one cannot add values that are not contained in the popup when GridVi
 
 Firs you need to add a custom editor, this way you can override the __Value__ property and return the text when no value is selected.
 
-#### Use Custom editor
+### Use Custom editor
 
 {{source=..\SamplesCS\KnowledgeBase\CustomComboBoxColumn.cs region=CustomEditor}} 
 {{source=..\SamplesVB\KnowledgeBase\CustomComboBoxColumn.vb region=CustomEditor}}
@@ -171,4 +171,4 @@ End Class
 
 {{endregion}}
 
-That is all now you will be able to add any value in the GridViewComBoxColumn. A complete Visual Studio solution is available [here](https://github.com/telerik/winforms-sdk/tree/master/GridView/CustomValuesInGridViewComboBoxColumn). 
+That is all now you will be able to add any value in the GridViewComBoxColumn. A complete Visual Studio solution is available in the [Telerik WinForms SDK example on GitHub](https://github.com/telerik/winforms-sdk/tree/master/GridView/CustomValuesInGridViewComboBoxColumn). 

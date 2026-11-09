@@ -14,13 +14,13 @@ res_type: kb
 |Q3 2007|RadTextBox for WinForms|Angel Kanchev|Nov 28, 2007|
 
    
-**HOW-TO**
+## How To
 Change the height of **RadTextBox**.  
    
-**DESCRIPTION**  
+## Description
 As a rule, textboxes can always be stretched horizontally. However, vertical stretching is not always possible. This article shows how to adjust the height of **RadTextBox**.  
    
-**SOLUTION**  
+## Solution
 The height is affected by the **Multiline** property:  
    
  

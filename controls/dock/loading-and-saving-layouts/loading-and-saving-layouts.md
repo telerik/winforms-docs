@@ -18,7 +18,7 @@ __RadDock__ provides methods to save and load layouts. A layout records the size
 
 To save a layout, call the __RadDock.SaveToXML__ method:
 
-#### SaveToXml 
+### SaveToXml 
 
 <snippet id='dock-loading-and-saving-layouts-savelayout-cs' />
 <snippet id='dock-loading-and-saving-layouts-savelayout-vb' />
@@ -37,7 +37,7 @@ You can use the __DockWindowSerializing__ event to exclude windows from the save
 
 To load a layout, call the __RadDock.LoadFromXML__ method:
 
-#### LoadFromXml 
+### LoadFromXml 
 
 <snippet id='dock-loading-and-saving-layouts-loadlayout-cs' />
 <snippet id='dock-loading-and-saving-layouts-loadlayout-vb' />
@@ -50,7 +50,7 @@ To load a layout, call the __RadDock.LoadFromXML__ method:
 | ------ | ------ |
 |[Saving and Loading RadDock for WinForms Layouts](http://www.telerik.com/videos/winforms/saving-and-loading-raddock-for-winforms-layouts) In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|![WinForms RadDock Save Load Tutorial](images/dock-loading-and-saving-layouts001.png)|
 
-# See Also
+## See Also
 
 * [Tutorial Saving and Loading Layout and Content]({%slug winforms/dock/loading-and-saving-layouts/tutorial:-saving-and-loading-layout-and-content%})  
 

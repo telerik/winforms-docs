@@ -19,11 +19,11 @@ Code that has to interact with an external resource like a database or a web ser
 
 This tutorial will walk you through the process of creating unit tests with [JustMock](https://www.telerik.com/products/mocking.aspx) for a project that uses the most commonly used control from the Telerik UI for WinForms suite, a.k.a. **RadGridView**.
 
->note The complete sample project from this tutorial is available in our SDK repository [here](https://github.com/telerik/winforms-sdk/tree/master/Testing/JustMock). 
+>note The complete [JustMock tutorial sample project](https://github.com/telerik/winforms-sdk/tree/master/Testing/JustMock) is available in our SDK repository.
 
 Let's start with details about the project's setup and what we have implemented:
 
-#### Sample Form's Setup
+## Sample Form's Setup
 
 ````C#
 

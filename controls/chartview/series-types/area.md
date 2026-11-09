@@ -14,7 +14,7 @@ previous_url: chartview-series-types-area
 
 As a derivative of __Categorical__ series, __AreaSeries__ plot their data points using category-value couples. Once positioned on a plane the points are connected to form a line. Further, the area enclosed by this line and the categorical axis is filled. Below is a sample snippet that demonstrates how to set up two __AreaSeries__:
 
-#### Initial Setup
+## Initial Setup
 
 <snippet id='chartview-area-area-cs'/>
 <snippet id='chartview-area-area-vb'/>
@@ -39,7 +39,7 @@ The essential properties of AreaSeries coincide with these of LineSeries:
 >caption Figure 2: Combine Mode
 ![WinForms RadChartView Area Combine Mode](images/chartview-series-types-area002.png)
 
-# See Also
+## See Also
 
 * [Series Types]({%slug winforms/chartview-/series-types%})
 * [Populating with Data]({%slug winforms/chartview-/populating-with-data%})

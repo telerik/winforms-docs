@@ -60,7 +60,7 @@ Key Features:
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
 * [Caret Positioning and Selection]({%slug winforms/editors/autocompletebox/caret-positioning-and-selection%})
 * [Creating Custom Blocks]({%slug winforms/editors/autocompletebox/creating-custom-blocks%})

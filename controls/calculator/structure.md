@@ -37,7 +37,7 @@ This article describes the inner structure and organization of the elements whic
 ![WinForms RadCalculator Elements Hierarchy](images/calculator-structure002.png)
  
 
-# See Also
+## See Also
 	
 * [Design Time]({%slug calculator-design-time%})	
 * [Getting Started]({%slug calculator-getting-started%})	

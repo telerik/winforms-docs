@@ -36,7 +36,7 @@ Additionally, LinearAxis inherits all properties of the Axis class.
 
 Here is how to set properties of the LinearAxes: 
 
-#### LinearAxis Setup
+## LinearAxis Setup
 
 <snippet id='chartview-linear-axis-cs'/>
 <snippet id='chartview-linear-axis-vb'/>
@@ -46,7 +46,7 @@ Here is how to set properties of the LinearAxes:
 >caption Figure 1: LinearAxis Setup
 ![WinForms RadChartView LinearAxis Setup](images/chartview-axes-linear001.png)
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

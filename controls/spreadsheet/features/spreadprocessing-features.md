@@ -25,7 +25,7 @@ Hyperlinks enable quick access to web pages, places in the workbook or email add
 
 ![WinForms RadSpreadsheet Hyperlink dialog](images/radspreadsheet-features-spreadprocessing-features002.gif) 
 
-Additional information how to manipulate hyperlinks is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/hyperlink). 
+Additional information how to manipulate hyperlinks is available in [the Hyperlinks documentation](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/hyperlink). 
 
 >note The Hyperlink dialog can be triggered by the **RadSpreadsheetRibbonBar** as well. It is necessary to select the **Insert** tab and press the **Hyperlink** button.
 
@@ -44,4 +44,4 @@ You can easily add an image via the **RadSpreadsheetRibbonBar**. It is necessary
 ![WinForms RadSpreadsheet Insert image](images/radspreadsheet-features-spreadprocessing-features004.png) 
 
 
-Additional information how to manipulate images is available [here](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images). 
+Additional information how to manipulate images is available in [the Images documentation](https://docs.telerik.com/devtools/document-processing/libraries/radspreadprocessing/features/shapes-and-images). 

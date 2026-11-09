@@ -46,7 +46,7 @@ __RadCarousel__ is a navigation control that animates a series of elements eithe
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
 
-# See Also
+## See Also
 
  * [Structure]({%slug winforms/carousel/structure%})
  * [Getting Started]({%slug winforms/carousel/getting-started%})

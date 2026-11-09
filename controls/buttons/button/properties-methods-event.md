@@ -22,20 +22,20 @@ position: 4
 |BackColor|Gets or sets the background color of the button control|
 |DisplayStyle|Specifies the options for display of image and text primitives in the element|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----|
 |PerformClick()|Generates a Click event for a button.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----|
 |Click|Occurs when the control is clicked|
 |MouseClick|Occurs when the control is clicked by the mouse|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbutton.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radbutton.html#methods)

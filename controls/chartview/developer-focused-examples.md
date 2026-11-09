@@ -15,9 +15,9 @@ Additional demos for some of the Telerik UI for Winforms controls are available 
 
 |KB Article|SDK Example|
 |------|------|
-|[Negative Area Chart]({%slug chartview-negetive-area%})|https://github.com/telerik/winforms-sdk/tree/master/ChartView/NegativeAreaChart|
-|[3D Bar Chart]({%slug chartview-3d-bar-chart%})|https://github.com/telerik/winforms-sdk/tree/master/ChartView/3DBarChart|
-|[Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})||
+|[Negative Area Chart]({%slug chartview-negetive-area%})|[Negative Area Chart SDK example](https://github.com/telerik/winforms-sdk/tree/master/ChartView/NegativeAreaChart)|
+|[3D Bar Chart]({%slug chartview-3d-bar-chart%})|[3D Bar Chart SDK example](https://github.com/telerik/winforms-sdk/tree/master/ChartView/3DBarChart)|
+|[Summary Labels on Stacked Bars]({%slug chartview-summary-labels-stacked-bars%})|No SDK example listed|
 
 ## See Also
 

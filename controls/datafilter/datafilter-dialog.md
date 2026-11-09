@@ -17,7 +17,7 @@ position: 5
 
 You can find below a sample code snippet how to show the filter dialog and get its expression after the dialog is closed:
 
-#### Showing the RadDataFilterDialog
+## Showing the RadDataFilterDialog
 
 <snippet id='datafilter-datafilter-dialog-filterdialog-cs' />
 <snippet id='datafilter-datafilter-dialog-filterdialog-vb' />
@@ -26,7 +26,7 @@ You can find below a sample code snippet how to show the filter dialog and get i
 
 If you need to customize the performed action on one of the buttons in the filter dialog you can create a derivative of the **RadDataFilterDialog** and override the **OnOKButtonClick**, **OnCancelButtonClick** or **OnApplyButtonClick** methods.
 
-# See Also
+## See Also
 
 * [Properties, Methods and Events]({%slug winforms/datafilter/properties-methods-events%})	
 * [Getting Started]({%slug winforms/datafilter/getting-started%})	

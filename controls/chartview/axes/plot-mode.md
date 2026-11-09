@@ -22,7 +22,7 @@ The __PlotMode__ property appears only in the __Categorical__, __DateTimeCategor
 
 The following example creates a CategoricalAxis and assigns it to a BarSeries before the series is added to the RadChartView. If the HorizontalAxis property of the series is assigned at the moment of inserting it in the Series collection, the chart will use the axis determined by the property. Alternatively, if the property is null, the chart will create and assign a default axis. The following snippet sets the PlotMode of the horizontalAxis to BetweenTicks and the GapLength to 0.3. Mode information on the GapLength can be found under the [Series Types / BarSeries article.]({%slug winforms/chartview-/series-types/bar%})
 
-#### BetweenTicks PlotMode
+## BetweenTicks PlotMode
 
 <snippet id='chartview-plot-mode-axis-cs'/>
 <snippet id='chartview-plot-mode-axis-vb'/>
@@ -34,7 +34,7 @@ The following example creates a CategoricalAxis and assigns it to a BarSeries be
 
 You can always change the PlotMode property, even if the CategoricalAxis was auto-generated, using the Get() method of the Axes collection. The following snippet changes the PlotMode to OnTicks: 
 
-#### OnTicks PlotMode
+## OnTicks PlotMode
 
 <snippet id='chartview-plot-mode-axis2-cs'/>
 <snippet id='chartview-plot-mode-axis2-vb'/>
@@ -46,7 +46,7 @@ You can always change the PlotMode property, even if the CategoricalAxis was aut
 
 Using the aforementioned approach you can set the PlotMode property to OnTicksPadded: 
 
-#### OnTicksPadded PlotMode
+## OnTicksPadded PlotMode
 
 <snippet id='chartview-plot-mode-axis3-cs'/>
 <snippet id='chartview-plot-mode-axis3-vb'/>
@@ -56,7 +56,7 @@ Using the aforementioned approach you can set the PlotMode property to OnTicksPa
 >caption Figure 3: OnTicksPadded PlotMode
 ![WinForms RadChartView OnTicksPadded PlotMode](images/chartview-axes-plot-mode003.png)
 
-# See Also
+## See Also
 
 * [Axes]({%slug winforms/chartview-/axes%})
 * [Series Types]({%slug winforms/chartview-/series-types%})

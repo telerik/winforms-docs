@@ -14,11 +14,11 @@ res_type: kb
 |Q2 2010|RadGridView for WinForms|Nikolay Diyanov|Oct 7, 2010| 
  
    
-**HOW-TO**  
+## How To
 
 Iterate through RadGridView Rows.  
    
-**SOLUTION**
+## Solution
 
 When you want to iterate through the rows of your RadGridView, you should use either **RadGridView.Rows** or **RadGridView.MasterTemplate.Rows** collection. Both are references to the actual rows collection, bound to the underlying data, and processed by grid's automatic filtering, grouping, and sorting features.  
    

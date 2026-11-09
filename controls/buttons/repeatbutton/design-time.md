@@ -31,7 +31,7 @@ To start using __RadRepeatButton__ just drag it from the toolbox and drop it at 
 
 * __Search__: Search the Telerik site for a given string.
 
-# See Also
+## See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 * [Using default themes]({%slug winforms/themes/using-default-themes%})

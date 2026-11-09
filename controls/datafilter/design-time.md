@@ -64,7 +64,7 @@ After you already have some **DataFilterDescriptorItems**, you can add a *Group*
 ![WinForms RadDataFilter Logical operator](images/datafilter-design-time006.png) 
 
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/datafilter/getting-started%})	
 * [Structure]({%slug winforms/datafilter/structure%})	

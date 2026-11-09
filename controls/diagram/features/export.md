@@ -16,7 +16,7 @@ This article describes the __RadDiagram__ export to image feature.
 
 The __RadDiagram__ framework provides a method for exporting its current state to an image file. You can control the type of the created image.
 
-# ExportToImage method
+## ExportToImage method
 
 The RadDiagram.__ExportToImage()__ method allows you to export the diagram to an image. It returns an Image which can be saved in the desired type.
 
@@ -29,7 +29,7 @@ Alternatively, you can use the __RadDiagramRibbonBar__ and its *Export* button:
 
 ![WinForms RadDiagram RadDiagramRibbonBar Export](images/diagram-features-export001.png)
 
-#### The exported image is illustrated below
+### The exported image is illustrated below
 
 ![WinForms RadDiagram Exported Image](images/diagram-features-export002.png)
 

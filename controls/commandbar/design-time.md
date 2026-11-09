@@ -109,7 +109,7 @@ Alternatively, follow these steps to edit items:
 
 ![WinForms RadCommandBar CommandBarStripElement Collection Editor](images/commandbar-design-time008.png)
 
-# See Also
+## See Also
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 * [Using default themes]({%slug winforms/themes/using-default-themes%})

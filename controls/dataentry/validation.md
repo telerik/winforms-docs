@@ -16,7 +16,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 1\. For the purpose of this tutorial, we will create a new class Employee with a couple of exposed properties. By binding __RadDataEntry__ to object from this type we will generate several items: 
 
-#### DataObject
+## DataObject
 
 <snippet id='dataentry-getting-started-empl1-cs'/>
 <snippet id='dataentry-getting-started-empl1-vb'/>
@@ -25,7 +25,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
  
 
-#### Data Binding
+## Data Binding
 
 <snippet id='dataentry-getting-started-bind1-cs'/>
 <snippet id='dataentry-getting-started-bind1-vb'/>
@@ -48,7 +48,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 3\. Subscribe to the __ItemValidated__ event of __RadDataEntry__:
 
-#### Data Validation
+## Data Validation
 
 <snippet id='dataentry-validation-itemvalidated-cs'/>
 <snippet id='dataentry-validation-itemvalidated-vb'/>
@@ -61,7 +61,7 @@ For the need of validation process we made two events (__ItemValidating, ItemVal
 
 In this tutorial we also used and Error provider to show error icon next to the editors. You can read more about Microsoft Error provider here - [ErrorProvider Class](http://msdn.microsoft.com/en-us/library/system.windows.forms.errorprovider%28v=vs.110%29.aspx)
 
-# See Also
+## See Also
 
  * [Structure]({%slug  winforms/dataentry/control-element-structure%})
  * [Getting Started]({%slug  winforms/dataentry/getting-started%})

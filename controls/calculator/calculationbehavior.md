@@ -33,7 +33,7 @@ It offers a convenient public API that can be used for any customization purpose
 
 
 
-# See Also
+## See Also
 	
 * [Design Time]({%slug calculator-design-time%})	
 * [Getting Started]({%slug calculator-getting-started%})	

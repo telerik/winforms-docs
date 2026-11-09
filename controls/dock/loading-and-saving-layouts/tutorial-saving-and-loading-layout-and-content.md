@@ -76,6 +76,6 @@ As a result we get the layout shown on the screenshot below:
 | ------ | ------ |
 |[Saving and Loading RadDock for WinForms Layouts](http://www.telerik.com/videos/winforms/saving-and-loading-raddock-for-winforms-layouts) In this video, you will learn how to use the simple XML serialization features of RadDock for WinForms to easily save and load RadDock layouts. (Runtime: 07:03)|![WinForms RadDock Save Load Layouts Tutorial](images/dock-loading-and-saving-layouts001.png)|
 
-# See Also
+## See Also
 
 * [Loading And Saving Layouts]({%slug winforms/dock/loading-and-saving-layouts/loading-and-saving-layouts%})

@@ -55,7 +55,7 @@ The example below demonstrates creating an elliptical path and populating the ca
 
 ![WinForms RadCarousel Getting Started](images/carousel-getting-started001.gif)
 
-# See Also
+## See Also
 
  * [RadCarousel Properties]({%slug winforms/carousel/properties%})
  * [Working with items]({%slug  winforms/carousel/using-radcarousel/carousel-items%})
@@ -64,7 +64,7 @@ The example below demonstrates creating an elliptical path and populating the ca
 
 
 
-## Telerik UI for WinForms Learning Resources
+### Telerik UI for WinForms Learning Resources
 * [Telerik UI for WinForms Carousel Component](https://www.telerik.com/products/winforms/carousel.aspx)
 * [Getting Started with Telerik UI for WinForms Components](https://docs.telerik.com/devtools/winforms/getting-started/first-steps)
 * [Telerik UI for WinForms Setup](https://docs.telerik.com/devtools/winforms/installation-and-upgrades/installing-on-your-computer)

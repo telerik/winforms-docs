@@ -92,7 +92,7 @@ This section describes the FloatinWindows specific properties.
 >note The snapping functionality can be enabled/disabled by using the __EnableFloatingWindowSnapping__ property of __RadDock__.
 >
 
-# See Also
+## See Also
 
 * [Customizing Floating Windows]({%slug winforms/dock/object-model/customizing-floating-windows%})
 * [Using the CommandManager]({%slug winforms/dock/architecture-and-features/using-the-commandmanager%})     

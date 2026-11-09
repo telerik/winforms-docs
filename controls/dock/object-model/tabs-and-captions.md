@@ -87,7 +87,7 @@ __RadDock__ exposes several properties which allow you to have full control over
 
 ![WinForms RadDock Showing Close Buttons](images/dock-object-model-tabs-and-captions006.png)
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

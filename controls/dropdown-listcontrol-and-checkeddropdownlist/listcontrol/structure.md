@@ -26,7 +26,7 @@ This article describes the inner structure and organization of the elements whic
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1 RadListVisualItem  
   1.2 RadScrollBar  
 
-# See Also
+## See Also
 
 * [RadControlSpy]({%slug winforms/tools/controlspy%})
             
