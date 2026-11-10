@@ -14,7 +14,9 @@ res_type: kb
 
 ## Environment
 
-Product: **Progress® Telerik® UI for WinForms** (`RadGridView`), version 2021.1.223. Author: [Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova).
+|Product Version|Product|Author|
+|----|----|----|
+|2021.1.223|RadGridView for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
 
 ## Description
 
