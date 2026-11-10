@@ -64,7 +64,7 @@ The following image shows the **Conditional Formatting** option in the header ce
 
 ![RadGridView header-cell context menu with the Conditional Formatting option](images/gridview-rows-conditional-formatting-rows002.png)
 
-The following image shows the Conditional Formatting Rules Manager.
+The following image shows the **Conditional Formatting Rules Manager**.
 
 ![WinForms RadGridView Conditional Formatting Rules Manager](images/gridview-rows-conditional-formatting-rows003.png)
 
