@@ -26,7 +26,7 @@ You can assign a `RadContextMenu` instance to an individual node without a `RadC
 
 5. Drag another `RadContextMenu` onto the form and add several `RadMenuItems` to it.
 
-6. Open the **RadTreeView Property Builder**. For each desired node, set its `ContextMenu` property to the second `RadContextMenu` instance.
+6. Open the **RadTreeView Property Builder** and add at least one root node. For each desired node, set its `ContextMenu` property to the second `RadContextMenu` instance.
 
 7. Run the project. Right-click a `RadTreeNode` to display its context menu. Right-click elsewhere on the `RadTreeView` to display the first context menu. The image shows both menus.
     
