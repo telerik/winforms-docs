@@ -60,7 +60,7 @@ This example uses the same condition as the [cell formatting example]({%slug win
 
 `RadGridView` includes a dialog that end users can use to create formatting objects. Open the dialog from a header cell's context menu. Handle the `ConditionalFormattingFormShown` event to access and customize the dialog.
 
-The following image shows the conditional formatting option in the header cell's context menu.
+The following image shows the **Conditional Formatting** option in the header cell's context menu.
 
 ![RadGridView header-cell context menu with the Conditional Formatting option](images/gridview-rows-conditional-formatting-rows002.png)
 
