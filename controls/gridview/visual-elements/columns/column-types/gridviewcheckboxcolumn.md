@@ -58,7 +58,7 @@ The `EditMode` property controls when the editor submits its value to the cell. 
 |`EnableHeaderCheckBox`|Gets or sets whether to show a checkbox in the header cell.|
 |`Checked`|Gets whether the checkbox in the header cell is checked.|
 |`ShouldCheckDataRows`|Determines whether the header checkbox is synchronized with the data cells.|
-|`EditMode`|Determines whether a checkbox value is submitted immediately (`OnValueChange`) or when the current cell changes or the grid is validated (`OnCellChangeOrValidating`).|
+|`EditMode`|Determines whether a checkbox value is submitted immediately (`OnValueChange`) or when the current cell changes or the grid is validated (`OnValidate`).|
 |`HeaderCheckBoxPosition`|Controls the position of the checkbox and text. Possible values are `Left`, `Right`, and `Center`.|
 |`HeaderCheckBoxAlignmentProperty`|Controls the checkbox alignment relative to the text.|
 |`CheckFilteredRows`|Gets or sets whether the header checkbox checks hidden rows.|
