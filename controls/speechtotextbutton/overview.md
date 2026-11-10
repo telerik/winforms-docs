@@ -27,7 +27,7 @@ To use the SpeechToTextButton in your application, ensure the following requirem
 * **Telerik UI for WinForms**: Install the suite and use a valid license.
 * **Internet connection**: Provide an active internet connection when using the default online speech recognizer.
 * **Microphone access**: Provide the application permission to use a functioning microphone or other audio input device.
-* **Default speech recognizer**: The default recognizer uses the Web Speech API through WebView2. Install the `Microsoft.Web.WebView2` NuGet package, or implement a custom recognizer to use another service.
+* **Default speech recognizer**: The default recognizer uses the Web Speech API through WebView2. For this recognizer, install the `Microsoft.Web.WebView2` NuGet package and ensure the WebView2 Runtime is installed on the target machine. Alternatively, implement a custom recognizer to use another service.
 
 ## Key Functionality and Features
 
