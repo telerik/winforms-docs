@@ -18,7 +18,7 @@ The Progress® Telerik® UI for WinForms `RadMessageBox` uses `RadMessageLocaliz
 
 To provide custom button text, follow these steps:
 
-1. Create a descendant of the `RadGridLocalizationSettings` class and override the `GetLocalizedString(string id)` method. Provide translations for labels and user messages. If a translation is not provided, the default value is returned because the default switch clause calls the base method:
+1. Create a descendant of the `RadMessageLocalizationProvider` class and override the `GetLocalizedString(string id)` method. Provide translations for labels and user messages. If a translation is not provided, the default value is returned because the default switch clause calls the base method:
 
    <snippet id='messagebox-messagebox1-localizationprovider-cs' />
    <snippet id='messagebox-messagebox1-localizationprovider-vb' />
