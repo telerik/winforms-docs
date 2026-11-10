@@ -9,7 +9,7 @@ tags: buttons, radbutton, text, shadow, shadowsettings, rendering
 res_type: kb
 ---
 
-# Adding a Shadow Beneath RadButton Text
+## Adding a Shadow Beneath RadButton Text
 
 ## Environment
 
