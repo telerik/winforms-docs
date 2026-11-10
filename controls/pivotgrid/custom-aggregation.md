@@ -50,7 +50,7 @@ Assign the custom function to the `AggregateFunction` property of a `PropertyAgg
 
 
 
->important When you add calculated fields in code-behind, set the `ItemsSource` of `LocalDataSourceProvider` after you add all calculated fields. Alternatively, include the `ItemsSource` assignment in the code between the `BeginInit` and `EndInit` methods, or in a `using DeferRefresh() { ... }` section.
+>important When you add calculated fields in code-behind, set the `ItemsSource` of `LocalDataSourceProvider` after you add all calculated fields. Alternatively, wrap both the calculated-field additions and the `ItemsSource` assignment in the same `BeginInit`/`EndInit` block or a `using` block that calls `DeferRefresh()` on the provider.
 >
 
 >caption Figure 3: Calculated Field in RadPivotGrid
