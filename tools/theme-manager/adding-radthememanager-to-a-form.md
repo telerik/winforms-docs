@@ -12,7 +12,7 @@ previous_url: tools-visual-style-builder-adding-custom-themes-to-your-applicatio
 
 # Adding RadThemeManager to a Form
 
-Progress® Telerik® UI for WinForms `RadThemeManager` is a nonvisual component that manages the connection between themes (stored in XML files) and Telerik controls on your form. To apply a theme to a control, the form containing the control must also contain a `RadThemeManager`.
+Progress® Telerik® UI for WinForms `RadThemeManager` is a nonvisual component that manages the connection between themes (stored in XML files) and Telerik controls on your form. Add a `RadThemeManager` to your form to configure XML theme loading in the designer.
 
 There are two ways to add a `RadThemeManager` to your form:
 
