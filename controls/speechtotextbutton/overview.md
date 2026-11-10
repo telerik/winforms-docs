@@ -14,7 +14,7 @@ CTAControlName: SpeechToTextButton
 
 The `RadSpeechToTextButton` control in Progress® Telerik® UI for WinForms lets users enter text by speaking.
 
-The default recognizer uses the Web Speech API through WebView2 to process microphone input and raises the `SpeechRecognized` event with the recognized text.
+When the user clicks the button, the control activates a speech recognition service, listens for voice input, and transcribes the recognized speech into text. The recognized text can then be displayed in a text field, processed by your application logic, or used to trigger specific actions based on voice commands.
 
 The image shows the SpeechToTextButton with a prompt to turn voice into text.
 
