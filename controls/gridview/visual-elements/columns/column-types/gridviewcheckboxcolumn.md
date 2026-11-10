@@ -12,66 +12,66 @@ previous_url: gridview-columns-gridviewcheckboxcolumn, gridview-editors-howto-ch
 
 # GridViewCheckBoxColumn
 
-__GridViewCheckBoxColumn__ displays and allows editing of boolean data. The values are shown as check boxes and allow the user to set or clear the check boxes to toggle the underlying boolean data values. __GridViewCheckBoxColumn__ inherits from __GridViewDataColumn.__
+In **Progress® Telerik® UI for WinForms**, `GridViewCheckBoxColumn` displays and lets users edit Boolean data in `RadGridView`. Checkboxes let users set or clear the underlying Boolean values. `GridViewCheckBoxColumn` inherits from `GridViewDataColumn`.
 
-**GridViewCheckBoxColumn displaying boolean values as check boxes**
+The following screenshot shows `GridViewCheckBoxColumn` displaying Boolean values as checkboxes.
 
 ![Telerik UI for WinForms RadGridView showing a GridViewCheckBoxColumn with boolean values displayed as check boxes](images/gridview-columns-gridviewcheckboxcolumn001.png)
 
-#### Create and add GridViewCheckBoxColumn
+## Adding a GridViewCheckBoxColumn
 
 <snippet id='gridview-gridviewcheckboxcolumn1-addcheckboxcolumn-cs' />
 <snippet id='gridview-gridviewcheckboxcolumn1-addcheckboxcolumn-vb' />
 
-The column has also a built-in functionality for checking all check boxes in it, via check box placed in the column header cell. By setting the __EnableHeaderCheckBox__ property to *true* you will enable the embedded in the header cell **RadCheckBoxElement**. 
+The column can display a checkbox in its header cell to check all checkboxes in the column. Set the `EnableHeaderCheckBox` property to `true` to show the embedded `RadCheckBoxElement`.
 
 <snippet id='gridview-gridviewcheckboxcolumn1-enableheadercheckbox-cs' />
 <snippet id='gridview-gridviewcheckboxcolumn1-enableheadercheckbox-vb' />
 
-## ValueChanged event
+## ValueChanged Event
 
-__ValueChanged__ event can be used in particular about check box state change. You have to check the active editor type as in the example below:
+Use the `ValueChanged` event to handle a checkbox state change. Check the active editor type, as shown in the examples:
 
 <snippet id='gridview-gridviewcheckboxcolumn1-valuechanged-cs' />
 <snippet id='gridview-gridviewcheckboxcolumn1-valuechanged-vb' />
 
-## HeaderCellToggleStateChanged event
+## HeaderCellToggleStateChanged Event
 
-To handle the toggle state change of the embedded check box in the header cell you should use the __HeaderCellToggleStateChanged__ event of RadGridView.
+Use the `HeaderCellToggleStateChanged` event of `RadGridView` to handle changes to the header checkbox's toggle state.
 
 <snippet id='gridview-gridviewcheckboxcolumn1-headercelltogglestatechanged-cs' />
 <snippet id='gridview-gridviewcheckboxcolumn1-headercelltogglestatechanged-vb' />
 
 ## EditMode
 
-The __EditMode__ property controls when the value of the editor will be submitted to the cell. By default, the current behavior is kept (*OnValidate*) and the value will be submitted only when the current cell changes or the grid looses focus. The new value (*OnValueChange*) will submit the value immediately after the editor value changes.
+The `EditMode` property controls when the editor submits its value to the cell. By default, the value is submitted when the current cell changes or the grid loses focus (`OnValidate`). Set `EditMode` to `OnValueChange` to submit the value immediately after it changes.
 
 <snippet id='gridview-gridviewcheckboxcolumn1-editmode-cs' />
 <snippet id='gridview-gridviewcheckboxcolumn1-editmode-vb' />
 
-## GridViewCheckBoxColumn's Properties 
+## GridViewCheckBoxColumn Properties
 
 |Property|Description|
 |----|----|
-|**ThreeState**|Gets or sets a value indicating whether to use a three state check-box.|
-|**DataType**|Gets or sets a value indicating the column's data type.|
-|**EnableHeaderCheckBox**|Gets or sets a value indicating whether to show embedded check-box in header cell.|
-|**Checked**|Gets a value indicating whether the check-box in header cell checked.|
-|**ShouldCheckDataRows**|This property determines whether the check-box in the header cell will be synced with the data cells.|
-|**EditMode**|This property determines whether changing a value of a check box will immediately be send to the cell (OnValueChange) or when the current cell is changed or the grid is being validated (OnCellChangeOrValidating).|
-|**HeaderCheckBoxPosition**|Controls the position of the checkbox and the text, possible values are Left, Right and Center.|
-|**HeaderCheckBoxAlignmentProperty**|Controls the alignment of the checkbox to the Text.|
-|**CheckFilteredRows**|Gets or sets a value indicating if the hidden rows will be checked by the header check-box.|
+|`ThreeState`|Gets or sets whether to use a three-state checkbox.|
+|`DataType`|Gets or sets the column's data type.|
+|`EnableHeaderCheckBox`|Gets or sets whether to show a checkbox in the header cell.|
+|`Checked`|Gets whether the checkbox in the header cell is checked.|
+|`ShouldCheckDataRows`|Determines whether the header checkbox is synchronized with the data cells.|
+|`EditMode`|Determines whether a checkbox value is submitted immediately (`OnValueChange`) or when the current cell changes or the grid is validated (`OnValidate`).|
+|`HeaderCheckBoxPosition`|Controls the position of the checkbox and text. Possible values are `Left`, `Right`, and `Center`.|
+|`HeaderCheckBoxAlignmentProperty`|Controls the checkbox alignment relative to the text.|
+|`CheckFilteredRows`|Gets or sets whether the header checkbox checks hidden rows.|
 
-**Compare header checkbox position and alignment settings**
+The following table compares the header checkbox position and alignment settings.
 
-|HeaderCheckBoxPosition/HeaderCheckBoxAlignment|Result|
+|`HeaderCheckBoxPosition`/`HeaderCheckBoxAlignment`|Result|
 |----|----|
-|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleLeft|![Telerik UI for WinForms RadGridView showing a header checkbox aligned to the left with the checkbox positioned on the right](images/gridview-columns-gridviewcheckboxcolumn002.png)|
-|HeaderCheckBoxPosition = HorizontalAlignment.Right & HeaderCheckBoxAlignment = ContentAlignment.MiddleRight|![Telerik UI for WinForms RadGridView showing a header checkbox aligned to the right with the checkbox positioned on the right](images/gridview-columns-gridviewcheckboxcolumn003.png)|
+|`HeaderCheckBoxPosition` = `HorizontalAlignment.Right` & `HeaderCheckBoxAlignment` = `ContentAlignment.MiddleLeft`|The following image shows this setting: ![Telerik UI for WinForms RadGridView showing a header checkbox aligned to the left with the checkbox positioned on the right](images/gridview-columns-gridviewcheckboxcolumn002.png)|
+|`HeaderCheckBoxPosition` = `HorizontalAlignment.Right` & `HeaderCheckBoxAlignment` = `ContentAlignment.MiddleRight`|The following image shows this setting: ![Telerik UI for WinForms RadGridView showing a header checkbox aligned to the right with the checkbox positioned on the right](images/gridview-columns-gridviewcheckboxcolumn003.png)|
 
 
-# See Also
+## See Also
 
 * [How to Convert a GridViewCheckBoxColumn to a Custom ToggleSwitch Column]({%slug convert-checkboxcolumn-to-toggleswitchcolumn%})
 
@@ -92,4 +92,3 @@ The __EditMode__ property controls when the value of the editor will be submitte
 * [GridViewHyperlinkColumn]({%slug winforms/gridview/columns/column-types/gridviewhyperlinkcolumn%})
 
 * [GridViewSparklineColumn]({%slug gridview-columntypes-sparklinecolumn%})
-
