@@ -54,7 +54,7 @@ The animation shows the last column filling the grid after the other columns are
 
 To simulate both behaviors, best-fit the columns and adjust the last column's width to use the remaining space. Subscribe to the `RadGridView.SizeChanged` event. Recalculate the last column's width whenever the grid changes size.
 
-The following C# and VB.NET fragments belong in the `RadForm1` form class and reference the `categoriesTableAdapter`, `nwindDataSet`, `categoriesBindingSource`, and `radGridView1` fields.
+The following C# and VB.NET fragments belong in the `RadForm1` form class and reference the `categoriesTableAdapter`, `nwindDataSet`, `categoriesBindingSource`, and `radGridView1` fields. In C#, connect the form's `Load` event to `RadForm1_Load` in the designer, or add `this.Load += RadForm1_Load;` after `InitializeComponent()` if the event is not already connected. The VB.NET fragment connects this event through `Handles MyBase.Load`.
 
 ````C#
 private void RadForm1_Load(object sender, EventArgs e)
