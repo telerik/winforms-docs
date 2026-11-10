@@ -12,16 +12,16 @@ previous_url: dropdown-and-listcontrol-dropdownlist-filtering
 
 # Filtering
 
-__RadDropDownList__ supports filtering of its items. In order to apply a filter, you should set the __Filter__ property of __RadDropDownList__ to a predicate that will be called for every data item in order to determine if the item will be visible.
+`RadDropDownList` in Progress® Telerik® UI for WinForms supports filtering. To apply a filter, set the `Filter` property to a predicate. The control evaluates the predicate for each data item to determine whether to display it.
 
-#### Filter 
+## Filter
 
 <snippet id='dropdownlist-filtering-filter-cs' />
 <snippet id='dropdownlist-filtering-filter-vb' />
 
  
 
-#### Filtering predicate 
+## Filtering Predicate
 
 <snippet id='dropdownlist-filtering-filteringpredicate-cs' />
 <snippet id='dropdownlist-filtering-filteringpredicate-vb' />
@@ -29,15 +29,15 @@ __RadDropDownList__ supports filtering of its items. In order to apply a filter,
  
  
 
-If you apply the above filter to a __RadDropDownList__ that is bound to the Northwind.__Customers__ table you will obtain the following result:
+When you apply this filter to a `RadDropDownList` bound to the `Northwind.Customers` table, the control displays the following result:
         
 >caption Figure 1: Filter
 
-![WinForms RadDropDownList Filter](images/dropdown-and-listcontrol-dropdownlist-filtering001.png)
+![RadDropDownList dropdown showing customer names with Laurence Lebihan selected](images/dropdown-and-listcontrol-dropdownlist-filtering001.png)
 
-Another option to filter the items is to specify the __FilterExpression__ property.
+You can also filter items by setting the `FilterExpression` property.
 
-#### FilteringExpression 
+## Filtering Expression
 
 <snippet id='dropdownlist-filtering-filteringexpression-cs' />
 <snippet id='dropdownlist-filtering-filteringexpression-vb' />
@@ -48,6 +48,10 @@ Another option to filter the items is to specify the __FilterExpression__ proper
 
 ![WinForms RadDropDownList FilteringExpression](images/dropdown-and-listcontrol-dropdownlist-filtering002.png)
 
->note The __IsFilterActive__ property gets a value indicating whether there is a __Filter__ or __FilterExpression__ set.
->
+>note The `IsFilterActive` property indicates whether the `Filter` or `FilterExpression` property has a value.
 
+## See Also
+
+* [Configure auto-completion in RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/auto-complete%})
+* [Sort RadDropDownList items]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/sorting%})
+* [Configure selection in RadDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/dropdownlist/selection%})
