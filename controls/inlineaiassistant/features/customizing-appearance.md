@@ -26,7 +26,6 @@ this.assistant.NullText = "Ask AI to edit the selected text...";
 this.assistant.PopupWidth = 520;
 this.assistant.ResponseMaxHeight = 300;
 ```
-
 ```VB.NET
 Me.assistant.NullText = "Ask AI to edit the selected text..."
 Me.assistant.PopupWidth = 520
@@ -60,7 +59,6 @@ response.GradientStyle = GradientStyles.Solid;
 response.BackColor = Color.WhiteSmoke;
 response.ResponseTextElement.ForeColor = Color.DarkGreen;
 ```
-
 ```VB.NET
 Dim response As InlineAIAssistantResponseElement = Me.assistant.InlineAIAssistantElement.ResponseElement
 response.DrawFill = True

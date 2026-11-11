@@ -6,7 +6,7 @@ components: ["inlineaiassistant"]
 slug: inlineaiassistant-getting-started
 tags: winforms,inlineaiassistant,radinlineaiassistant,getting-started,installation,prompt,commands,streaming,cancellation
 published: True
-position: 3
+position: 4
 ---
 
 # Getting Started with WinForms Inline AI Assistant
@@ -122,7 +122,6 @@ public class InlineAssistantForm : Form
 	}
 }
 ```
-
 ```VB.NET
 Imports System
 Imports System.ComponentModel
@@ -218,7 +217,6 @@ e.AppendResponse("First part of the response. ");
 e.AppendResponse("Remaining response text.");
 e.CompleteResponse();
 ```
-
 ```VB.NET
 e.AppendResponse("First part of the response. ")
 e.AppendResponse("Remaining response text.")
@@ -234,7 +232,6 @@ For an existing `RadRichTextEditor` named `radRichTextEditor1`, assign the assis
 ```C#
 this.radRichTextEditor1.InlineAIAssistant = this.assistant;
 ```
-
 ```VB.NET
 Me.radRichTextEditor1.InlineAIAssistant = Me.assistant
 ```

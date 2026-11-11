@@ -54,7 +54,6 @@ toneGroup.Commands.Add(new InlineAIAssistantCommand
 });
 this.assistant.Commands.Add(toneGroup);
 ```
-
 ```VB.NET
 Me.assistant.Commands.Clear()
 Me.assistant.Commands.Add(New InlineAIAssistantCommand With {
@@ -87,7 +86,6 @@ For example, the following handler adds an output constraint to each command. Re
 ```C#
 this.assistant.CommandExecuting += this.OnCommandExecuting;
 ```
-
 ```VB.NET
 AddHandler Me.assistant.CommandExecuting, AddressOf Me.OnCommandExecuting
 ```
@@ -100,7 +98,6 @@ private void OnCommandExecuting(object sender, InlineAIAssistantCommandEventArgs
     e.Prompt += " Return only the edited text, without an explanation.";
 }
 ```
-
 ```VB.NET
 Private Sub OnCommandExecuting(sender As Object, e As InlineAIAssistantCommandEventArgs)
     e.Prompt &= " Return only the edited text, without an explanation."

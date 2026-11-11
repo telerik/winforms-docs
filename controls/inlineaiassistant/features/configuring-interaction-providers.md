@@ -30,7 +30,6 @@ The following code assumes an existing `assistant` field and a `RadTextBox` name
 ```C#
 this.assistant.AttachTo(this.radTextBox1);
 ```
-
 ```VB.NET
 Me.assistant.AttachTo(Me.radTextBox1)
 ```
@@ -51,7 +50,6 @@ The following assumes an existing editor named `radRichTextEditor1`. Add the edi
 this.radRichTextEditor1.InlineAIAssistant = this.assistant;
 this.radRichTextEditor1.IsInlineAIAssistantEnabled = true;
 ```
-
 ```VB.NET
 Me.radRichTextEditor1.InlineAIAssistant = Me.assistant
 Me.radRichTextEditor1.IsInlineAIAssistantEnabled = True

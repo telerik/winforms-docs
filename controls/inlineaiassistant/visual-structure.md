@@ -6,7 +6,7 @@ components: ["inlineaiassistant"]
 slug: inlineaiassistant-visual-structure
 tags: winforms,inlineaiassistant,radinlineaiassistant,visual-structure,elements,popup,prompt,response
 published: True
-position: 10
+position: 2
 ---
 
 # Inline AI Assistant Visual Structure

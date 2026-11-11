@@ -51,7 +51,6 @@ The following example allows opening only when text is selected. It assumes an e
 ```C#
 this.assistant.Opening += this.OnAssistantOpening;
 ```
-
 ```VB.NET
 AddHandler Me.assistant.Opening, AddressOf Me.OnAssistantOpening
 ```
@@ -64,7 +63,6 @@ private void OnAssistantOpening(object sender, InlineAIAssistantOpeningEventArgs
     e.Cancel = string.IsNullOrEmpty(e.SelectedText);
 }
 ```
-
 ```VB.NET
 Private Sub OnAssistantOpening(sender As Object, e As InlineAIAssistantOpeningEventArgs)
     e.Cancel = String.IsNullOrEmpty(e.SelectedText)
@@ -90,7 +88,6 @@ The selected command's `Executed` event signals submission, not completion of th
 ```C#
 this.assistant.ResponseActionExecuting += this.OnResponseActionExecuting;
 ```
-
 ```VB.NET
 AddHandler Me.assistant.ResponseActionExecuting, AddressOf Me.OnResponseActionExecuting
 ```
@@ -107,7 +104,6 @@ private void OnResponseActionExecuting(
     }
 }
 ```
-
 ```VB.NET
 Private Sub OnResponseActionExecuting(
     sender As Object, e As InlineAIAssistantResponseActionEventArgs)

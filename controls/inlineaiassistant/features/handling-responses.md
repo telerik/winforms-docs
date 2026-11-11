@@ -27,7 +27,6 @@ private void OnPromptRequest(object sender, InlineAIAssistantPromptRequestEventA
     e.SetResponse("This is a local sample response.");
 }
 ```
-
 ```VB.NET
 Private Sub OnPromptRequest(sender As Object, e As InlineAIAssistantPromptRequestEventArgs)
     e.SetResponse("This is a local sample response.")
@@ -70,7 +69,6 @@ private async void OnPromptRequest(object sender, InlineAIAssistantPromptRequest
     }
 }
 ```
-
 ```VB.NET
 Private Async Sub OnPromptRequest(sender As Object, e As InlineAIAssistantPromptRequestEventArgs)
     Try

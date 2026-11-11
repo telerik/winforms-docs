@@ -6,7 +6,7 @@ components: ["inlineaiassistant"]
 slug: inlineaiassistant-properties
 tags: winforms,inlineaiassistant,radinlineaiassistant,properties,methods,events,prompt,streaming,cancellation
 published: True
-position: 4
+position: 5
 ---
 
 # WinForms Inline AI Assistant Properties, Methods, and Events

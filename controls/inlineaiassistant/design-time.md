@@ -6,7 +6,7 @@ components: ["inlineaiassistant"]
 slug: inlineaiassistant-design-time
 tags: winforms,inlineaiassistant,radinlineaiassistant,designer,visual-studio,smart-tag,commands,placeholder
 published: True
-position: 2
+position: 3
 ---
 
 # WinForms Inline AI Assistant Design Time
