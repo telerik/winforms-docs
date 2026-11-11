@@ -90,4 +90,4 @@ For direct attachments, `Detach` requests that the popup close and removes the a
 
 * [Getting Started]({%slug inlineaiassistant-getting-started%})
 * [Handling Responses]({%slug inlineaiassistant-handling-responses%})
-* [Events]({%slug inlineaiassistant-events%})
+* [Events]({%slug inlineaiassistant-properties%}#events)

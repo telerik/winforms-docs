@@ -24,7 +24,7 @@ The Telerik UI for WinForms `RadInlineAIAssistant` component displays a prompt p
 * **[Complete and streamed responses]({%slug inlineaiassistant-handling-responses%})**: Supply a complete response or append chunks while the request is processing.
 * **Response actions**: Insert the response at the caret, replace selected text, or discard the response and continue prompting. The interaction provider determines whether insertion and replacement are available.
 * **Request cancellation**: Pass the request's cancellation token to your service. Request-specific response methods ignore updates from requests that are no longer active.
-* **[Popup customization]({%slug inlineaiassistant-customizing-appearance%})**: Configure the prompt placeholder, popup width, response height, and theme. Use the [events]({%slug inlineaiassistant-events%}) to control opening, closing, and response actions.
+* **[Popup customization]({%slug inlineaiassistant-customizing-appearance%})**: Configure the prompt placeholder, popup width, response height, and theme. Use the [events]({%slug inlineaiassistant-properties%}#events) to control opening, closing, and response actions.
 
 See [Getting Started]({%slug inlineaiassistant-getting-started%}) for a working example and [Properties, Methods, and Events]({%slug inlineaiassistant-properties%}) for the component API.
 
@@ -55,4 +55,3 @@ Use the event data's `SetResponse` method for a complete response, or `AppendRes
 * [Configuring Commands]({%slug inlineaiassistant-configuring-commands%})
 * [Handling Responses]({%slug inlineaiassistant-handling-responses%})
 * [Customizing Appearance]({%slug inlineaiassistant-customizing-appearance%})
-* [Events]({%slug inlineaiassistant-events%})

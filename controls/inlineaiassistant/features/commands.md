@@ -115,5 +115,5 @@ Insert and Replace request that the popup close after editing the host. Discard 
 ## See Also
 
 * [Getting Started]({%slug inlineaiassistant-getting-started%})
-* [Events]({%slug inlineaiassistant-events%})
+* [Events]({%slug inlineaiassistant-properties%}#events)
 * [Visual Structure]({%slug inlineaiassistant-visual-structure%})

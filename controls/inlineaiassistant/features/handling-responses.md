@@ -118,4 +118,4 @@ Setting the component's `ResponseText` directly cancels the current request and 
 
 * [Getting Started]({%slug inlineaiassistant-getting-started%})
 * [Configuring Commands]({%slug inlineaiassistant-configuring-commands%})
-* [Events]({%slug inlineaiassistant-events%})
+* [Events]({%slug inlineaiassistant-properties%}#events)
