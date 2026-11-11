@@ -233,31 +233,6 @@ Example output:
 }
 ```
 
-
-
-
-## Set Up Telerik NuGet Feed
-
-To [add the Telerik NuGet server to your package sources]({%slug winforms/nuget%}), use the `nuget config` command:
-
-```powershell
-telerik nuget config
-```
-
-By default, the `nuget config` command updates your [global `NuGet.Config` file](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior). The newly added Telerik NuGet feed name is `TelerikNuGetV3`. The command generates a new API key that you can delete and revoke from the [API Keys page in your Telerik account](https://www.telerik.com/account/downloads/api-keys).
-
-> Telerik NuGet API keys expire in two years.
-
-You can use the `nuget config` command with the following options:
-
-* `--scope project` and `--path` that points to the folder that contains the `NuGet.Config` file to modify. The default `--scope` value is `user`.
-* `--api-key` to provide an existing Telerik NuGet API key inline, otherwise the CLI generates a new one.
-* `--force` to overwrite any existing Telerik credentials in the `NuGet.Config` file.
-
-```powershell
-telerik nuget config --scope project --path . --force
-```
-
 ## Create Telerik WinForms App
 
 To create a [new WinForms app that includes Telerik UI for WinForms]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation%}) with the help of the [Telerik UI for WinForms project templates]({%slug winforms/visual-studio-templates%}), use the `create` command:
@@ -293,6 +268,28 @@ The package installs the following project templates:
 10. WinForms Desktop Outlook App (VB)
 11. WinForms Desktop Word-Inspired App (C#)
 12. WinForms Desktop Word-Inspired App (VB)
+
+## Set Up Telerik NuGet Feed
+
+To [add the Telerik NuGet server to your package sources]({%slug winforms/nuget%}), use the `nuget config` command:
+
+```powershell
+telerik nuget config
+```
+
+By default, the `nuget config` command updates your [global `NuGet.Config` file](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior). The newly added Telerik NuGet feed name is `TelerikNuGetV3`. The command generates a new API key that you can delete and revoke from the [API Keys page in your Telerik account](https://www.telerik.com/account/downloads/api-keys).
+
+> Telerik NuGet API keys expire in two years.
+
+You can use the `nuget config` command with the following options:
+
+* `--scope project` and `--path` that points to the folder that contains the `NuGet.Config` file to modify. The default `--scope` value is `user`.
+* `--api-key` to provide an existing Telerik NuGet API key inline, otherwise the CLI generates a new one.
+* `--force` to overwrite any existing Telerik credentials in the `NuGet.Config` file.
+
+```powershell
+telerik nuget config --scope project --path . --force
+```
 
 ## Analyze Breaking Changes When Upgrading
 
