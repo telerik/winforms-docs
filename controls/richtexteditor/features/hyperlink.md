@@ -104,7 +104,11 @@ You have control over it using the __HyperlinkToolTipFormatString__ of **RadRich
 
 When a hyperlink is clicked, the __HyperlinkClicked__ event of __RadRichTextEditor__ is fired. The sender of the event is the document element, that you have clicked, e.g. a **Span**, an **Image**, **InlineUIContainer**, etc. The __HyperlinkClickedEventArgs__ provides the possibility either to cancel or replace the navigation action. This is helpful when you need to validate the clicked hyperlink and prevent it from navigating to an unsecured address or from starting a local process.
 
-With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. The hyperlink navigation can be canceled by either setting the __Handled__ property of the HyperlinkClickedEventArgs to _true_ or __IsTrustedUrl__ to _false_.
+Since 2024 Q3 (2024.3.924), external-link navigation validates the destination before opening it. External links must pass both `HyperlinkHelper.ValidateLinkPattern` and `HyperlinkHelper.ValidateLinkScheme`; the default schemes are absolute `http`, `https`, and `mailto`. This external-link validation predates the shared hyperlink event integration.
+
+`Telerik.WinForms.Documents.Model.HyperlinkClickedEventArgs` inherits `URL`, `Handled`, and `IsTrustedUrl` from `Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs` and retains `HyperlinkTarget`. Set `IsTrustedUrl` to `true` only after applying application-specific destination checks. Set `Handled` to `true` to suppress or replace navigation.
+
+After the local event, an unhandled request reaches `HyperlinkHelper.HyperlinkClicked`, where a global policy can also change the trust state. See [shared hyperlink validation]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#shared-hyperlink-validation) for both checks and [handling links across controls]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#handling-links-across-controls) for a global approval example.
 
 Here is an example of using the HyperlinkClicked event prompting that the clicked hyperlink might be unsafe and allows to cancel the navigation process upon receiving the end user confirmation:
 

@@ -119,17 +119,16 @@ The code from **Example 1** shows how to disable the messages appearing when the
 * **ActivePresenterChanged**: Occurs when the active presenter is changed.
 
 * **HyperlinkClicked**: Occurs when a hyperlink in the document gets clicked. The event allows you to either cancel or replace the navigation logic. HyperlinkClicked event can be used as a confirmation from the end-user whether to proceed or not with opening a hyperlink due to security reasons.
-  With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. 
-  The hyperlink navigation can be canceled by either setting the __Handled__ property of the `HyperlinkClickedEventArgs` to _true_ or __IsTrustedUrl__ to _false_.
-  The __CellIndex__ property of `HyperlinkClickedEventArgs` gets the index of the cell that contains the hyperlink.
+	External-link validation has existed since 2024 Q3 (2024.3.924); it is not newly introduced by the shared hyperlink event integration. External destinations must pass both `HyperlinkHelper.ValidateLinkPattern` and `HyperlinkHelper.ValidateLinkScheme`, with absolute `http`, `https`, and `mailto` URIs allowed by default.
 
+	The worksheet editor's `RadWorksheetEditor.HyperlinkClicked` event uses `Telerik.WinForms.Controls.Spreadsheet.Worksheets.MouseHandlers.SpreadsheetHyperlinkClickedEventArgs`. These arguments inherit `URL`, `Handled`, and `IsTrustedUrl` from `Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs` and expose `CellIndex`, the cell containing the hyperlink.
+
+	Set `IsTrustedUrl` to `true` only after validating a destination against application policy. Set `Handled` to `true` to suppress or replace navigation. Unhandled requests reach `HyperlinkHelper.HyperlinkClicked` after local handling. See [shared hyperlink validation]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#shared-hyperlink-validation) and [handling links across controls]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#handling-links-across-controls) for the default allowlist and a global approval example.
 
 #### Example 4: Using the HyperlinkClicked event to implement confirmation for the clicked links in the document
 
 <snippet id='spreadsheet-events-hyperlinkclickedevent-cs' />
 <snippet id='spreadsheet-events-hyperlinkclickedevent-vb' />
-
-
 
 >The events related to selection in RadSpreadsheet are described in the [Working with UI Selection]({%slug radspreadsheet-ui-working-with-selection%}) topic.
 

@@ -11,7 +11,7 @@ position: 0
 
 # Annotations
 
-__RadPdfViewer__ supports link annotations, which means that if you open a PDF file that includes hyperlinks to absolute URIs, you can click them and have a window open, and navigate to the respective address. In addition, if there are links pointing to bookmarks in the same document, the view port will be scrolled to the destination specified in the link.
+__RadPdfViewer__ supports link annotations. External URI annotations open only when the destination passes both link-format and URI-scheme validation, or an application handler explicitly approves it. The default allowed schemes are `http`, `https`, and `mailto`. Links pointing to destinations in the same PDF document scroll the viewport internally.
 
 The current API includes the following members, which allow customization of the default behavior or implementation of custom logic:
 
@@ -24,7 +24,11 @@ The current API includes the following members, which allow customization of the
 
 
 
-* __HyperlinkClicked__ event of RadPdfViewer: This event is similar to AnnotationClicked, but it is raised only when you click on the hyperlink type annotations. It allows you to cancel the navigation to the associated URI or to modify the click action. The HyperlinkClickedEventArgs gives access to the URL, which can be manually checked if it is trusted. With the 2024 Q3 (2024.3.924), the default navigation behavior of the hyperlinks is to automatically open only valid and trusted addresses. If needed, the navigation can be canceled by either setting the __Handled__ property of the event args to _true_ or the __IsTrustedUrl__ property to _false_. Below is an example of using this event to prompt that the clicked hyperlink might be unsafe and provide the opportunity to cancel the navigation process upon receiving the end user confirmation:
+* `RadPdfViewer.HyperlinkClicked` is raised for URI annotation navigation. It uses `Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs`, which exposes `URL`, `IsTrustedUrl`, and `Handled`. Set `IsTrustedUrl` to `true` only after applying your own destination validation. Set `Handled` to `true` to replace or suppress navigation.
+
+If the local event leaves the request unhandled, `HyperlinkHelper.HyperlinkClicked` runs next. An unhandled request whose final `IsTrustedUrl` is `false` displays the localized invalid-link message. Setting `Handled` to `true` suppresses both the launch and the message. FTP, file/UNC, OneNote, and custom-protocol destinations are not automatically approved. See [shared hyperlink validation]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#shared-hyperlink-validation) for the default policy and [handling links across controls]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#handling-links-across-controls) for a global approval example.
+
+The following example prompts the user before continuing navigation:
 
 #### HyperlinkClicked Event Handler 
 

@@ -96,7 +96,7 @@ The __RadRichTextEditor__ control raises the following specific events:
 		- __Handled__: Get or set a value indicating whether the event is handled.
 		- __HyperlinkTarget__: Gets the target hyperlink. 
 		- __URL__: Gets the URL of the hyperlink.
-		- __IsTrustedUrl__: Gets a value tha indicates if the URL passes the validation. If the URL is not trusted, the hyperlink will not be opened. Set this property to true to open the hyperlink. For more information see [Hyperlink]({%slug winforms/richtexteditor-/features/hyperlink%}) article.
+		- `IsTrustedUrl`: Gets or sets whether navigation is permitted. Set it to `true` only after application-specific validation. Internal bookmark links are trusted by default. Unhandled requests reach `HyperlinkHelper.HyperlinkClicked` after the local event, so set `Handled` to `true` to suppress navigation definitively. See [RichTextEditor hyperlinks]({%slug winforms/richtexteditor-/features/hyperlink%}) and [shared hyperlink validation]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#shared-hyperlink-validation).
                 
 * __IsReadOnlyChanged__ - occurs when __IsReadOnly__ value has changed. The event handler receives two arguments:
             
@@ -121,6 +121,6 @@ The __RadRichTextEditor__ control raises the following specific events:
 * __BeforeSaveFile__ -  occurs before the file is saved, before the save file dialog is shown. Subscribe to this event to customize the SaveFileDialog properties (like FileName, Title, Filter, InitialDirectory, etc.) before it is displayed to the user. Allows to be canceled by setting e.Cancel to true.
 
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug winforms/richtexteditor-/getting-started%})

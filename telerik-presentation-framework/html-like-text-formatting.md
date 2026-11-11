@@ -223,6 +223,101 @@ The hyperlink colors are controlled by these static properties:
 
 ![Telerik UI for WinForms RadLabel showing multiple hyperlinks rendered with HTML-like text formatting](images/tpf-html-like-text-formatting003.png)
 
+## Controlling Hyperlink Navigation
+
+Links in TPF HTML-formatted text require both `HyperlinkHelper.ValidateLinkPattern` and `HyperlinkHelper.ValidateLinkScheme` before automatic navigation. Only absolute `http`, `https`, and `mailto` URIs are accepted by default. In markup, use an explicit scheme such as `href=https://www.telerik.com`; the bare `www.` addresses in the formatting example above are not absolute URIs and are not automatically opened.
+
+`Telerik.WinControls.TextPrimitiveUtils.FormattedTextBlock.HyperlinkClicked` provides a local hook before navigation. Its `Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs` exposes `URL`, `IsTrustedUrl`, and `Handled`. If the local event does not handle the request, `HyperlinkHelper.HyperlinkClicked` runs next. Only an unhandled request whose final trust state is `true` is launched.
+
+The following code runs after `radLabel1` has been initialized and its formatted text has been assigned. It approves only an exact application-controlled custom-protocol destination. Ensure that the registered protocol handler is trusted.
+
+__Approving a Destination in One Formatted Text Block__
+
+```C#
+var htmlText = this.radLabel1.LabelElement.LabelText.Impl
+    as Telerik.WinControls.Primitives.TextPrimitiveHtmlImpl;
+if (htmlText != null)
+{
+    htmlText.TextBlock.HyperlinkClicked += (sender, e) =>
+    {
+        if (string.Equals(e.URL, "contoso-help://help/start",
+            System.StringComparison.Ordinal))
+        {
+            e.IsTrustedUrl = true;
+        }
+    };
+}
+```
+
+Set `Handled` to `true` instead when application code handles or rejects the request. The subscription applies to that text block instance; if text changes recreate the block, register the handler on the new block or use the shared event described below.
+
+>important Applications that rely on formatted-text links opening FTP URLs, UNC/file paths, OneNote links, or custom protocols must explicitly handle or approve those destinations.
+
+## Shared Hyperlink Validation
+
+`Telerik.WinControls.HyperlinkHelper` provides the shared hyperlink API used by TPF formatted text and participating Telerik UI for WinForms controls. Its validation methods serve different purposes:
+
+| Method | Validation |
+|---|---|
+| `ValidateLinkPattern(string)` | Recognizes link formats, including HTTP/HTTPS, FTP, `mailto`, UNC paths, OneNote links, addresses starting with `www.`, and email addresses. |
+| `ValidateLinkScheme(string)` | Requires an absolute URI whose scheme is `http`, `https`, or `mailto`. |
+
+Default external navigation requires both checks to return `true`. Passing `ValidateLinkPattern` alone does not mean that a link will open. An FTP URL, for example, can pass the pattern check but fail the scheme check.
+
+__Checking a Destination Against the Default Policy__
+
+```C#
+string destination = "https://example.com/help";
+bool passesDefaultValidation =
+    Telerik.WinControls.HyperlinkHelper.ValidateLinkPattern(destination) &&
+    Telerik.WinControls.HyperlinkHelper.ValidateLinkScheme(destination);
+```
+
+## Handling Links Across Controls
+
+Subscribe to the static `HyperlinkHelper.HyperlinkClicked` event to handle requests across participating controls. Its `Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs` provides `URL`, `IsTrustedUrl`, and `Handled`. The destination property is named `URL`, not `Url`.
+
+Local handlers run first. A locally handled request does not reach the shared event. An unhandled request can reach it even when `IsTrustedUrl` is `false`, allowing an application to approve an otherwise blocked destination. Set `IsTrustedUrl` to `true` only after checking the destination against your application's policy. Setting it to `false` alone does not prevent a later handler from changing it back to `true`.
+
+__Approving an Application Destination Globally__
+
+```C#
+using System;
+using System.Windows.Forms;
+using Telerik.WinControls;
+using Telerik.WinControls.Hyperlinks;
+
+public class MainForm : Form
+{
+    public MainForm()
+    {
+        HyperlinkHelper.HyperlinkClicked += this.OnHyperlinkClicked;
+    }
+
+    private void OnHyperlinkClicked(object sender, HyperlinkClickedEventArgs e)
+    {
+        if (string.Equals(e.URL, "contoso-help://help/start", StringComparison.Ordinal))
+        {
+            e.IsTrustedUrl = true;
+        }
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing)
+        {
+            HyperlinkHelper.HyperlinkClicked -= this.OnHyperlinkClicked;
+        }
+
+        base.Dispose(disposing);
+    }
+}
+```
+
+Leaving `Handled` as `false` allows the originating control to navigate after checking the final trust state. If your application performs navigation itself, set `Handled` to `true` to prevent a second launch. To reject a request definitively, set `Handled` to `true` without launching anything. Never approve every destination unconditionally or use `ValidateLinkPattern` alone as your approval policy.
+
+The shared event receives unhandled requests from GridView hyperlink columns, RadMap's HTML renderer, RadPdfViewer URI annotations, RichTextEditor, and Spreadsheet. GridView uses `HyperlinkOpeningEventArgs.Cancel` for local cancellation; setting it to `true` stops the request before the shared event. 
+
 ## Detect the Clicked Hyperlink
 
 If a `RadLabel` contains multiple hyperlinks, you can detect which one the user clicked. The example below inspects the `TextPrimitiveHtmlImpl.TextBlock.Lines` collection and finds the `FormattedText` instance under the mouse pointer.
