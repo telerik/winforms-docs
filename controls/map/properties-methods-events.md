@@ -46,7 +46,17 @@ position: 6
 |------|------|
 |__SelectionChanged__|Occurs when a user clicks on a visual element in the layers.|
 
-# See Also
+## Handling HTML Hyperlinks
+
+External links rendered by RadMap's HTML renderer must pass both `HyperlinkHelper.ValidateLinkPattern` and `HyperlinkHelper.ValidateLinkScheme`. Default automatic navigation accepts absolute `http`, `https`, and `mailto` URIs. FTP, file/UNC, OneNote, and custom-protocol targets are blocked unless application code explicitly approves them.
+
+The HTML renderer's `LinkClicked` event uses `TheArtOfDev.HtmlRenderer.Core.Entities.HtmlLinkClickedEventArgs`. Read `Link` to inspect the destination, set `IsTrustedUrl` to `true` only after application-specific validation, or set `Handled` to `true` to suppress or replace navigation. This is a renderer event, not an event on `RadMap` itself.
+
+Unhandled external-link requests then reach `HyperlinkHelper.HyperlinkClicked`. The shared event provides a cross-control approval hook without requiring access to the HTML container. HTML links to `#anchor` destinations scroll within the rendered content instead of launching an external URI. See [shared hyperlink validation]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#shared-hyperlink-validation) for both checks and the default allowlist, and [handling links across controls]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#handling-links-across-controls) for a global approval example.
+
+>important HTML-rendered external links that previously launched FTP URLs, UNC/file paths, OneNote links, or custom protocols are now blocked by default. Validate and explicitly approve an application destination with `IsTrustedUrl`, or handle the request and set `Handled` to `true`. Internal `#anchor` navigation is unchanged.
+
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radmap.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radmap.html#methods)
