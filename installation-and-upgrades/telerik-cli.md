@@ -25,6 +25,7 @@ The following table lists all Telerik CLI commands with their purpose and usage.
 | `dotnet tool install -g Telerik.CLI` | Installs the Telerik CLI as a .NET global tool. | Run once to install the CLI on your machine. |
 | `dotnet tool update -g Telerik.CLI` | Updates the Telerik CLI to the latest version. | Run periodically to get the latest features and fixes. |
 | `telerik setup winforms` | Runs the full Telerik developer-machine setup in one command. | Run to authenticate, configure the Telerik NuGet feed, download your license key, and register the Telerik MCP server configuration. |
+| `telerik create winforms` | Creates a new Telerik UI for WinForms project. | Run to create a WinForms app from a Telerik project template. |
 | `telerik nuget config` | Configures the Telerik NuGet server to your package sources. | Run to set up the `https://nuget.telerik.com/v3/index.json` feed in your NuGet configuration. |
 | `telerik license get-key` | Downloads your Telerik license key and saves it as `telerik-license.txt`. | Run to download your license key file. |
 | `telerik mcp config` | Installs and configures the Telerik MCP Server for your IDE. | Run to set up AI coding assistance in Visual Studio, VS Code, or Cursor. |
@@ -232,6 +233,9 @@ Example output:
 }
 ```
 
+
+
+
 ## Set Up Telerik NuGet Feed
 
 To [add the Telerik NuGet server to your package sources]({%slug winforms/nuget%}), use the `nuget config` command:
@@ -253,6 +257,42 @@ You can use the `nuget config` command with the following options:
 ```powershell
 telerik nuget config --scope project --path . --force
 ```
+
+## Create Telerik WinForms App
+
+To create a [new WinForms app that includes Telerik UI for WinForms]({%slug winforms/installation-deployment-and-distribution/visual-studio-extensions/project-creation%}) with the help of the [Telerik UI for WinForms project templates]({%slug winforms/visual-studio-templates%}), use the `create` command:
+
+```powershell
+telerik create winforms
+```
+
+Use the `--interactive` option to be prompted for the project settings, including the project name and template.
+
+The `create` command creates a new project using Telerik UI for WinForms project templates. For details about the available templates, see [Visual Studio Templates]({%slug winforms/visual-studio-templates%}).
+
+### Project Templates
+
+The [Telerik.WinForms.Templates NuGet package](https://www.nuget.org/packages/Telerik.WinForms.Templates) is available at [NuGet.org](https://www.nuget.org/) and provides the standard [Visual Studio project templates]({%slug winforms/visual-studio-templates%}) with a pre-configured Telerik UI for WinForms library. By default, the Telerik.WinForms.Templates NuGet package is installed during the execution of the Telerik.CLI `setup` command. 
+
+To install the templates separately, use the `dotnet new install` command:
+
+```powershell
+dotnet new install Telerik.WinForms.Templates
+```
+The package installs the following project templates:
+
+1. WinForms Desktop Blank App (C#)
+2. WinForms Desktop Blank App (VB)
+3. WinForms Desktop Calendar App (C#)
+4. WinForms Desktop Calendar App (VB)
+5. WinForms Desktop Excel App (C#)
+6. WinForms Desktop Excel App (VB)
+7. WinForms Desktop Mail App (C#)
+8. WinForms Desktop Mail App (VB)
+9. WinForms Desktop Outlook App (C#)
+10. WinForms Desktop Outlook App (VB)
+11. WinForms Desktop Word-Inspired App (C#)
+12. WinForms Desktop Word-Inspired App (VB)
 
 ## Analyze Breaking Changes When Upgrading
 
