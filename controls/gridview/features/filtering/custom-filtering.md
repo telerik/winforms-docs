@@ -54,7 +54,7 @@ The following example demonstrates how you can use the __Handled__ property of t
 
 ![WinForms RadGridView Custom Filtering Event](images/gridview-filtering-custom-filtering002.png)
 
->important In order to determine more easily whether a row is visible or not in the **CustomFiltering** event when the grid is filtered by several columns, you can use the MasterTemplate.DataView.**FilterEvaluate** method. This method accepts a **FilterDescriptor** and a row as parameters and returns a boolean value indicating whether the row will be visible or not according to the passed **FilterDescriptor**. Thus, you can combine the custom logic for a certain column and evaluate the default one for the rest of the column's filters.
+>important In order to determine more easily whether a row is visible or not in the **CustomFiltering** event when the grid is filtered by several columns, you can use the MasterTemplate.DataView.**FilterEvaluate** method. This method accepts a **FilterDescriptor** and a row as parameters and returns a boolean value indicating whether the row will be visible or not according to the passed **FilterDescriptor**. Thus, you can combine the custom logic for a certain column and evaluate the default one for the rest of the column's filters. `FilterEvaluate` creates its own registry containing the built-in functions and aggregates. Custom functions registered in `ExpressionContext.Context` are not available when this method evaluates a filter expression. See [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%}) for the built-in function list and registry behavior.
 
 ## Implementing filtering mechanism using FilterPredicate
 

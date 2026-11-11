@@ -12,8 +12,10 @@ previous_url: treeview-working-with-nodes-filtering
 
 # Filtering Nodes
 
-RadTreeView supports filtering of its nodes according to their __Text__ property. In order to apply a filter, you should set the __Filter__ property to the desired text value. 
-        
+RadTreeView supports filtering of its nodes according to their __Text__ property. In order to apply a filter, you should set the __Filter__ property to the desired text value.
+
+When you use expression-based filtering with `FilterDescriptors`, function calls are resolved through the shared `ExpressionContext.Context`. See the [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%}) for the built-in functions and custom function registration behavior.
+
 For example, if we have this RadTreeView instance:
 
 ![WinForms RadTreeView Filtering Nodes](images/treeview-working-with-nodes-filtering001.png)
