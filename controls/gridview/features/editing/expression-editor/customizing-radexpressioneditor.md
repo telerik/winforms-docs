@@ -14,7 +14,11 @@ previous_url: gridview-expressioneditor-cutomizing-radexpressioneditor
 
 ## Creating custom expression functions
 
-Although Telerik provides a large number of predefined functions, some scenarios require additional functionality. You can create a custom expression method for use in `RadExpressionEditor` or as a value of the `Expression` property. To do that, create a class that inherits from the `ExpressionContext` class:
+Although Telerik provides a large number of predefined functions, some scenarios require additional functionality. You can create a custom expression method for use in `RadExpressionEditor` or as a value of the `Expression` property. The parameterless `ExpressionContext()` constructor has been removed. A custom context subclass must pass an `ExpressionFunctionRegistry` to its base constructor.
+
+Use `ExpressionFunctionRegistry.CreateWithBuiltInFunctions()` to retain the built-in functions and aggregates, or `ExpressionFunctionRegistry.CreateEmpty()` to start without any functions or aggregates. Register methods on the context with `AddGlobalFunction`, and methods invoked on expression values with `AddInstanceFunction`. Registration uses the public method's exact parameter types. For example, register a method that accepts a `string` with `typeof(string)`; methods such as `object.GetType()` are not automatically exposed as expression functions.
+
+The following C# and VB examples create a registry with the built-ins, register a custom global `Pi()` function, and pass the registry to the base constructor:
 
 <snippet id='gridview-customfunctions-customfunction-cs' />
 <snippet id='gridview-customfunctions-customfunction-vb' />
@@ -28,6 +32,8 @@ Then you can use the new expression method:
 
 <snippet id='gridview-customfunctions-settingexpression-cs' />
 <snippet id='gridview-customfunctions-settingexpression-vb' />
+
+The shared context is used by GridView expressions, TreeView filter descriptors, and shared collection-view expression filtering and evaluation. `RadCollectionView.FilterEvaluate` and `RadValidationProvider` rule evaluation create their own built-in registries, so custom functions registered in the shared context are not available in those paths.
 
 ## Customizing the functions list
 

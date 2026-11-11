@@ -23,6 +23,8 @@ position: 4
 
 **RadValidationRule** requires the following properties to be set in order to define a validation logic for a single control:
 
+Rule expressions can use the registered built-in functions. `RadValidationProvider` creates a separate built-in registry when it evaluates a rule; custom functions registered in `ExpressionContext.Context` are not used for validation.
+
 * **AutoToolTip**: a boolean value indicating whether a tool tip will be shown when the validation fails. 
 * **Controls**: a collection that contains all controls to which this rule is applied, e.g. you can use one rule for multiple controls.
 * **Operator**: specifies the operator to be used for the validation logic. It is of type [FilterOperator](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.data.filteroperator.html). Hence, similar to the filter operator, you can use the same validation operators.

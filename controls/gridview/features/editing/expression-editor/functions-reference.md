@@ -17,6 +17,18 @@ position: 4
 > All functions are case-insensitive. `SUM()`, `Sum()`, and `sum()` are equivalent.
 >
 
+## Function Registration and Expression Contexts
+
+The expression engine invokes only functions registered in the active `ExpressionContext`. It no longer discovers and invokes arbitrary public methods on the context or on expression values. An unregistered function call fails during expression evaluation. This applies to expression columns, filtering, conditional formatting, aggregate summaries, and other WinForms features that use data expressions.
+
+The default `ExpressionContext.Context` and contexts returned by `ExpressionContext.GetContext(threadId)` include the built-in functions and aggregates. Use `ExpressionFunctionRegistry.CreateWithBuiltInFunctions()` to create a registry that includes them, or `ExpressionFunctionRegistry.CreateEmpty()` to start with neither. Custom context methods must be registered with `AddGlobalFunction`; custom methods called on a value must be registered with `AddInstanceFunction`. Registration resolves a public instance method by its exact parameter types. For example, a method that accepts `string` must be registered with `typeof(string)`, not `typeof(object)`. Methods such as `object.GetType()` are not automatically exposed as expression functions.
+
+Global functions and receiver calls are distinct. `TRIM(value)` is a registered global function; `value.Trim()` is not enabled by default. The built-in receiver calls are `string.ToUpper()`, `string.ToLower()`, and `DateTime.ToShortDateString()`.
+
+GridView expressions, TreeView filter descriptors, and shared collection-view expression filtering and evaluation used by `RadListView`, `RadListControl`, and `RadPropertyGrid` use the shared `ExpressionContext.Context`. Two paths create their own built-in registries instead: `RadCollectionView.FilterEvaluate` and `RadValidationProvider` rule evaluation. Registering a function in the shared context does not make it available in those two paths.
+
+For a C# and VB migration example that creates a registry, registers a custom function, and assigns a custom context, see [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%}).
+
 ## Text Functions
 
 Text functions perform string manipulation operations.
@@ -61,6 +73,8 @@ Aggregate functions compute a single value from a column across all rows. Pass a
 | `COUNT` | `COUNT([ColumnName])` | int | Returns the number of values in the specified column. |
 | `FIRST` | `FIRST([ColumnName])` | varies | Returns the first value in the specified column. |
 | `LAST` | `LAST([ColumnName])` | varies | Returns the last value in the specified column. |
+| `STDEV` | `STDEV([ColumnName])` | numeric | Returns the standard deviation of values in the specified column. |
+| `VAR` | `VAR([ColumnName])` | numeric | Returns the variance of values in the specified column. |
 
 **Examples:**
 
@@ -154,6 +168,8 @@ These functions return the difference between two dates in the specified unit.
 | `ABS` | `ABS(Value)` | numeric | Returns the absolute value of a number. |
 | `CEILING` | `CEILING(Value)` | numeric | Returns the smallest integer greater than or equal to the specified number. |
 | `FLOOR` | `FLOOR(Value)` | numeric | Returns the largest integer less than or equal to the specified number. |
+| `MAX` | `MAX(Value1, Value2)` | object | Returns the larger of two values. For the aggregate, use `MAX([ColumnName])` as listed in [Aggregate Functions](#aggregate-functions). |
+| `MIN` | `MIN(Value1, Value2)` | object | Returns the smaller of two values. For the aggregate, use `MIN([ColumnName])` as listed in [Aggregate Functions](#aggregate-functions). |
 | `ROUND` | `ROUND(Value)` | decimal | Rounds the value to the nearest integer. |
 | `SIGN` | `SIGN(Value)` | int | Returns +1, 0, or -1 indicating the sign of the number. |
 | `SQRT` | `SQRT(Value)` | double | Returns the square root of a number. |
