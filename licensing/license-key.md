@@ -10,9 +10,9 @@ position: 1
 
 # Setting Up Your Telerik UI for WinForms License Key
 
-Starting with Q1 2025, Telerik UI for WinForms requires activation through a trial or commercial license key. The recommended activation path is to use the `Telerik.Licensing` NuGet package together with a `telerik-license.txt` license key file. Use the script-key approach only when package-based activation is not possible or when you work in exceptional scenarios that rely on direct assembly references, such as some plug-ins, add-ins, isolated class libraries, or similar host-constrained solutions. If the license is missing or invalid, builds show [license activation errors and warnings]({%slug license-errors-warnings%}), and running applications may display watermarks or banners.
+Starting with Q1 2025, Progress® Telerik® UI for WinForms requires a trial or commercial license key for activation. Use the `Telerik.Licensing` NuGet package with a `telerik-license.txt` license key file for the recommended activation path. Use a script key only when package-based activation is not possible or a host constraint requires direct assembly references. Examples include some plug-ins, add-ins, and isolated class libraries. A missing or invalid key causes [license activation errors and warnings]({%slug license-errors-warnings%}), and running applications may display watermarks or banners.
 
-## Choose the Right Activation Method
+## Choosing the Right Activation Method
 
 Before you copy the license key or update your build pipeline, identify how your project consumes Telerik UI for WinForms:
 
@@ -29,12 +29,12 @@ To download a license key for Telerik UI for WinForms, you must have either a de
 
 Depending on your development environment and preferences, you can install your license key in either of the following ways:
 
-* [Automatic installation](#automatic-license-key-installation): Suitable for local Windows development with Telerik productivity tools such as the Visual Studio extensions and the Progress Control Panel.
-* [Manual installation](#manual-license-key-installation): Suitable for build servers, locked-down environments, trial users, and teams that prefer to manage files directly.
+* [Automatic installation](#installing-a-license-key-automatically): Suitable for local Windows development with Telerik productivity tools such as the Visual Studio extensions and the Progress Control Panel.
+* [Manual installation](#installing-a-license-key-manually): Suitable for build servers, locked-down environments, trial users, and teams that prefer to manage files directly.
 
-After you download the license key, prefer the [NuGet-based activation path](#activate-nuget-based-telerik-ui-for-winforms-projects) unless your project explicitly cannot use it.
+After you download the license key, prefer the [NuGet-based activation path](#activating-nuget-based-telerik-ui-for-winforms-projects) unless your project explicitly cannot use it.
 
-## Automatic License Key Installation
+## Installing a License Key Automatically
 
 To download and install your Telerik license key automatically, use one of the following Telerik tools or workflows. They store the license key in `%AppData%\Telerik` for the current Windows user account and make it available to NuGet-based Telerik UI for WinForms projects that build under that account.
 
@@ -48,7 +48,7 @@ To install your license key by using the [Telerik UI for WinForms Visual Studio 
 1. Go to **Extensions > Telerik > Licensing > Download Key**.
 
     ![Visual Studio menu path for downloading a Telerik license key](./images/install-license-key-VS-extensions.png)
-1. You might be asked to enter your Telerik credentials to log into your [Telerik account](https://www.telerik.com/account/).
+1. You might need to enter your Telerik credentials to log in to your [Telerik account](https://www.telerik.com/account/).
 
 The Visual Studio extension automatically downloads the license key file to your home directory (`%AppData%\Telerik`), which activates NuGet-based Telerik WinForms projects for the current Windows user account.
 
@@ -61,17 +61,17 @@ To install your Telerik license key by using the [Progress Control Panel](https:
 
 Use [Telerik CLI]({%slug telerik-cli%}#get-license-key) when you prefer a command-line workflow or want to download the license key without opening Visual Studio. The `telerik license get-key` command downloads the latest `telerik-license.txt` file to `%AppData%\Telerik` for the current user account.
 
-## Manual License Key Installation
+## Installing a License Key Manually
 
 Use manual installation when you need to control where the license file is stored, prepare a build agent, or work outside the Telerik productivity tools:
 
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 
-1. Select the __Manual Setup__ tab in the tabstrip with the installation options.
+1. Select the **Manual Setup** tab in the tabstrip with the installation options.
 
-1. Click on the __Set Up License Key__ button.
+1. Click the **Set Up License Key** button.
 
-1. Check the instructions in the opened dialog and click on the __Download License Key__ button.
+1. Read the instructions in the dialog, then click the **Download License Key** button.
 
 1. Copy the downloaded `telerik-license.txt` license key file to one of the following locations:
 
@@ -80,13 +80,13 @@ Use manual installation when you need to control where the license file is store
 
 After you download `telerik-license.txt`, continue with the activation path that matches your project type.
 
-In most cases, that means continuing with the [NuGet-based activation path](#activate-nuget-based-telerik-ui-for-winforms-projects). Use the script-key path only when your project cannot use `Telerik.Licensing`.
+In most cases, that means continuing with the [NuGet-based activation path](#activating-nuget-based-telerik-ui-for-winforms-projects). Use the script-key path only when your project cannot use `Telerik.Licensing`.
 
-## Activate NuGet-Based Telerik UI for WinForms Projects
+## Activating NuGet-Based Telerik UI for WinForms Projects
 
 This is the recommended activation path for Telerik UI for WinForms projects. Use it whenever the project can install the `Telerik.Licensing` NuGet package:
 
-1. Install or restore the `Telerik.Licensing` NuGet package from [NuGet.org](https://www.nuget.org/) in each Telerik UI for WinForms project that you build. It will add the **Telerik.Licensing.Runtime** assembly in your project, which is required to activate the WinForms controls.
+1. Install or restore the `Telerik.Licensing` NuGet package from [NuGet.org](https://www.nuget.org/) in each Telerik UI for WinForms project that you build. It will add the `Telerik.Licensing.Runtime` assembly in your project, which is required to activate the WinForms controls.
 1. Copy the [downloaded Telerik license key file](#downloading-the-license-key) `telerik-license.txt` file to one of the following locations:
 
     * For Windows: `%AppData%\Telerik\telerik-license.txt`
@@ -99,9 +99,9 @@ When you build the project, the `Telerik.Licensing` NuGet package automatically 
 
 >important Prefer this package-based activation model for new and existing projects whenever possible. Use the script-key approach only when the project cannot use `Telerik.Licensing` or must stay on a direct-assembly model for a special integration scenario.
 
->note If your project does not use NuGet packages, use the script-key approach described in [Installing a License Key in Projects by Using Telerik Assembly References (without NuGet packages)](#installing-a-license-key-in-projects-by-using-telerik-assembly-references-without-nuget-packages).
+>note If your project does not use NuGet packages, use the script-key approach described in [Installing a License Key in Projects by Using Telerik Assembly References (Without NuGet Packages)](#installing-a-license-key-in-projects-by-using-telerik-assembly-references-without-nuget-packages).
 
-## Use a License Key on a Windows Build Server or CI Agent
+## Using a License Key on a Windows Build Server or CI Agent
 
 For Windows continuous integration (CI), continue to use the package-based activation path. The critical detail is the Windows account that runs the build. The license file must exist for that account before restore and build start:
 
@@ -109,11 +109,11 @@ For Windows continuous integration (CI), continue to use the package-based activ
 1. Before the build, create `%AppData%\Telerik` for the build account and write `telerik-license.txt` to that folder. If you want per-project activation instead, copy the file next to the `.csproj` file.
 1. Restore NuGet packages and build the project or solution.
 
-The following article explains in detail how to set up the license key for use in CI/CD environments:  [Adding Your License Key to CI/CD Services]({%slug add-license-to-ci-cd%}).
+The following article explains in detail how to set up the license key for use in CI/CD environments: [Adding Your License Key to CI/CD Services]({%slug add-license-to-ci-cd%}).
 
 >important On self-hosted agents and Windows services, copy `telerik-license.txt` to the `%AppData%` profile of the account that actually runs the build. A license file in the profile of the user who configured the machine does not activate builds that run under a different account.
 
-## Installing a License Key in Projects by Using Telerik Assembly References (without NuGet packages)
+## Installing a License Key in Projects by Using Telerik Assembly References (Without NuGet Packages)
 
 Use this approach only as an alternative when the project references Telerik assemblies directly and does not use NuGet packages, or when package-based activation is not feasible because of a special hosting or integration constraint. In this model, a shared `telerik-license.txt` file in `%AppData%\Telerik` does not activate the project. Each project must compile a script key into the assembly.
 
@@ -122,15 +122,15 @@ Typical reasons to use this approach include solutions that must stay on assembl
 If you add the Telerik components to your project by referencing Telerik assemblies directly, add the license as a code snippet:
 
 1. Go to the [License Keys page](https://www.telerik.com/account/your-licenses/license-keys) in your Telerik account.
-1. Click the __View Script Keys__ button.
-1. In the dropdown menu, select __Progress® Telerik® UI for WinForms__.
+1. Click the **View Script Keys** button.
+1. In the dropdown menu, select **Progress® Telerik® UI for WinForms**.
 
     ![View Script Keys option for Progress Telerik UI for WinForms](./images/download-script-key.png)
 
-1. In the Script Key window, copy the C# or VB script license key. The code snippet contains the `EvidenceAttribute` assembly attribute that holds your license information.
+1. In the Script Key window, copy the C# or VB.NET script license key. The code snippet contains the `EvidenceAttribute` assembly attribute that holds your license information.
 
     * For C#: Copy the C# code snippet into a new file, for example, `TelerikLicense.cs`.
-    * For VB: Copy the VB code snippet into a new file, for example, `TelerikLicense.vb`.
+    * For VB.NET: Copy the VB.NET code snippet into a new file, for example, `TelerikLicense.vb`.
 
 1. Add the `TelerikLicense.cs` or `TelerikLicense.vb` file to each project that must compile the license.
 
@@ -138,23 +138,23 @@ If you add the Telerik components to your project by referencing Telerik assembl
 
 The following example shows a `TelerikLicense.cs` file that contains one script key:
 
-```csharp
-[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WINFORMS-script-key-here")] 
+```C#
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WINFORMS-script-key-here")]
 ```
 
 If you use multiple Telerik products in the same application, such as WPF, Telerik Document Processing, or Telerik Reporting, add script keys for all products that you use.
 
 The following example shows multiple script keys in the same file:
 
-```csharp
-[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WPF-script-key-here")] 
-[assembly: global::Telerik.Licensing.EvidenceAttribute("your-Document-Processing-script-key-here")] 
-[assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")]     
+```C#
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-WPF-script-key-here")]
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-Document-Processing-script-key-here")]
+[assembly: global::Telerik.Licensing.EvidenceAttribute("your-REPORTING-script-key-here")]
 ```
 
 >warning Do not publish the license key code snippet in publicly accessible repositories. This is your personal license key.
 
-## Troubleshoot Common License Key Problems
+## Troubleshooting Common License Key Problems
 
 Use the following checks when a project still reports that no license key was found.
 
@@ -184,7 +184,7 @@ Verify the following items before you continue troubleshooting:
 
 ## Updating Your License Key
 
-Whenever you purchase a new Telerik UI for WinForms license or renew an existing one, always [download a new license key](#downloading-the-license-key), either automatically or manually. The new license key includes information about all previous license purchases. Once you have the new license key, use it to [activate NuGet-based Telerik UI for WinForms projects](#activate-nuget-based-telerik-ui-for-winforms-projects) or to update the script key that your non-NuGet projects compile.
+Whenever you purchase a new Telerik UI for WinForms license or renew an existing one, always [download a new license key](#downloading-the-license-key), either automatically or manually. The new license key includes information about all previous license purchases. Once you have the new license key, use it to [activate NuGet-based Telerik UI for WinForms projects](#activating-nuget-based-telerik-ui-for-winforms-projects) or to update the script key that your non-NuGet projects compile.
 
 ## See Also
 
