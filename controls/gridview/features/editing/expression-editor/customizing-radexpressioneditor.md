@@ -34,12 +34,8 @@ Then you can use the new expression method:
 
 #### Using the custom function
 
-```C#
-this.radGridView1.Columns["CustomExpression"].Expression = "ROUND(PI() * POWER(Radius, 2) + Decimal)";
-```
-```VB.NET
-Me.radGridView1.Columns("CustomExpression").Expression = "ROUND(PI() * POWER(Radius, 2) + Decimal)"
-```
+<snippet id='gridview-customfunctions-settingexpression-cs' />
+<snippet id='gridview-customfunctions-settingexpression-vb' />
 
 These examples assume that `radGridView1` has a column named `CustomExpression` and that the custom context has been assigned to `ExpressionContext.Context` as shown above.
 
