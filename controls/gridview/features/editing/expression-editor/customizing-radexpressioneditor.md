@@ -22,60 +22,13 @@ The following C# and VB examples create a registry with the built-ins, register 
 
 #### Creating a custom expression context
 
-```C#
-using System;
-using Telerik.Data.Expressions;
-
-public class CustomExpressionContext : ExpressionContext
-{
-	public CustomExpressionContext() : base(CreateRegistry())
-	{
-	}
-
-	public double Pi()
-	{
-		return Math.PI;
-	}
-
-	private static ExpressionFunctionRegistry CreateRegistry()
-	{
-		ExpressionFunctionRegistry registry = ExpressionFunctionRegistry.CreateWithBuiltInFunctions();
-		registry.AddGlobalFunction(typeof(CustomExpressionContext), "Pi", Type.EmptyTypes);
-		return registry;
-	}
-}
-```
-```VB.NET
-Imports System
-Imports Telerik.Data.Expressions
-
-Public Class CustomExpressionContext
-	Inherits ExpressionContext
-
-	Public Sub New()
-		MyBase.New(CreateRegistry())
-	End Sub
-
-	Public Function Pi() As Double
-		Return Math.PI
-	End Function
-
-	Private Shared Function CreateRegistry() As ExpressionFunctionRegistry
-		Dim registry As ExpressionFunctionRegistry = ExpressionFunctionRegistry.CreateWithBuiltInFunctions()
-		registry.AddGlobalFunction(GetType(CustomExpressionContext), "Pi", Type.EmptyTypes)
-		Return registry
-	End Function
-End Class
-```
+<snippet id='gridview-customfunctions-customfunction-cs' />
+<snippet id='gridview-customfunctions-customfunction-vb' />
 
 Before evaluating expressions, assign the custom context to the static `ExpressionContext.Context` property:
 
-```C#
-ExpressionContext.Context = new CustomExpressionContext();
-```
-```VB.NET
-ExpressionContext.Context = New CustomExpressionContext()
-```
+<snippet id='gridview-customfunctions-settingcustom-cs' />
+<snippet id='gridview-customfunctions-settingcustom-vb' />
 
 Then you can use the new expression method:
 
