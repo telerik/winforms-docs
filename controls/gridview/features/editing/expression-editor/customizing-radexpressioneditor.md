@@ -22,71 +22,20 @@ The following C# and VB examples create a registry with the built-ins, register 
 
 #### Creating a custom expression context
 
-```C#
-using System;
-using Telerik.Data.Expressions;
-
-public class CustomExpressionContext : ExpressionContext
-{
-	public CustomExpressionContext() : base(CreateRegistry())
-	{
-	}
-
-	public double Pi()
-	{
-		return Math.PI;
-	}
-
-	private static ExpressionFunctionRegistry CreateRegistry()
-	{
-		ExpressionFunctionRegistry registry = ExpressionFunctionRegistry.CreateWithBuiltInFunctions();
-		registry.AddGlobalFunction(typeof(CustomExpressionContext), "Pi", Type.EmptyTypes);
-		return registry;
-	}
-}
-```
-```VB.NET
-Imports System
-Imports Telerik.Data.Expressions
-
-Public Class CustomExpressionContext
-	Inherits ExpressionContext
-
-	Public Sub New()
-		MyBase.New(CreateRegistry())
-	End Sub
-
-	Public Function Pi() As Double
-		Return Math.PI
-	End Function
-
-	Private Shared Function CreateRegistry() As ExpressionFunctionRegistry
-		Dim registry As ExpressionFunctionRegistry = ExpressionFunctionRegistry.CreateWithBuiltInFunctions()
-		registry.AddGlobalFunction(GetType(CustomExpressionContext), "Pi", Type.EmptyTypes)
-		Return registry
-	End Function
-End Class
-```
+<snippet id='gridview-customfunctions-customfunction-cs' />
+<snippet id='gridview-customfunctions-customfunction-vb' />
 
 Before evaluating expressions, assign the custom context to the static `ExpressionContext.Context` property:
 
-```C#
-ExpressionContext.Context = new CustomExpressionContext();
-```
-```VB.NET
-ExpressionContext.Context = New CustomExpressionContext()
-```
+<snippet id='gridview-customfunctions-settingcustom-cs' />
+<snippet id='gridview-customfunctions-settingcustom-vb' />
 
 Then you can use the new expression method:
 
 #### Using the custom function
 
-```C#
-this.radGridView1.Columns["CustomExpression"].Expression = "ROUND(PI() * POWER(Radius, 2) + Decimal)";
-```
-```VB.NET
-Me.radGridView1.Columns("CustomExpression").Expression = "ROUND(PI() * POWER(Radius, 2) + Decimal)"
-```
+<snippet id='gridview-customfunctions-settingexpression-cs' />
+<snippet id='gridview-customfunctions-settingexpression-vb' />
 
 These examples assume that `radGridView1` has a column named `CustomExpression` and that the custom context has been assigned to `ExpressionContext.Context` as shown above.
 
