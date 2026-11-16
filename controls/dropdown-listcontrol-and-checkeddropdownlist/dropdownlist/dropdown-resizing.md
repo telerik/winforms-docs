@@ -26,7 +26,7 @@ The __SizingMode__ enumeration has the following members:
 
 ![WinForms RadDropDownList SizingMode None](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing001.png)
 
-#### SizingMode.None 
+### SizingMode.None
 
 <snippet id='dropdownlist-dropdown-resizing-none-cs' />
 <snippet id='dropdownlist-dropdown-resizing-none-vb' />
@@ -40,7 +40,7 @@ The __SizingMode__ enumeration has the following members:
 
 ![WinForms RadDropDownList SizingMode RightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing002.png)
 
-#### SizingMode.RightBottom 
+### SizingMode.RightBottom
 
 <snippet id='dropdownlist-dropdown-resizing-rightbottom-cs' />
 <snippet id='dropdownlist-dropdown-resizing-rightbottom-vb' />
@@ -55,7 +55,7 @@ The __SizingMode__ enumeration has the following members:
 
 ![WinForms RadDropDownList SizingMode UpDown](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing003.png)
 
-#### SizingMode.UpDown 
+### SizingMode.UpDown
 
 <snippet id='dropdownlist-dropdown-resizing-updown-cs' />
 <snippet id='dropdownlist-dropdown-resizing-updown-vb' />
@@ -70,7 +70,7 @@ The __SizingMode__ enumeration has the following members:
 
 ![WinForms RadDropDownList SizingMode UpDownAndRightBottom](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing004.png)
 
-#### SizingMode.UpDownAndRightBottom 
+### SizingMode.UpDownAndRightBottom
 
 <snippet id='dropdownlist-dropdown-resizing-updownandrightbottom-cs' />
 <snippet id='dropdownlist-dropdown-resizing-updownandrightbottom-vb' />
@@ -87,7 +87,7 @@ You can specify a fixed height or width of the drop-down by setting the __DropDo
 
 ![WinForms RadDropDownList DropDownHeight](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing005.png)
 
-#### DropDownHeight 
+### DropDownHeight
 
 <snippet id='dropdownlist-dropdown-resizing-dropdownheight-cs' />
 <snippet id='dropdownlist-dropdown-resizing-dropdownheight-vb' />
@@ -125,7 +125,7 @@ You can set the __DropDownMinSize__ property in order to specify the exact minim
 
 The following example demonstrates a sample approach how to handle the RadDropDownList.__PopupOpening__ event and achieve auto size functionality for the pop up in __RadDropDownList__:
 
-#### Auto size drop down 
+### Auto size drop down
 
 <snippet id='dropdownlist-dropdown-resizing-autosizedropdown-cs' />
 <snippet id='dropdownlist-dropdown-resizing-autosizedropdown-vb' />
@@ -144,7 +144,7 @@ By default, __RadDropDownList__ displays 6 items in the pop-up. In case you need
 
 ![WinForms RadDropDownList DefaultItemsCountInDropDown](images/dropdown-and-listcontrol-dropdownlist-dropdown-resizing008.png)
 
-#### DefaultItemsCountInDropDown 
+### DefaultItemsCountInDropDown
 
 <snippet id='dropdownlist-dropdown-resizing-defaultitemscountindropdown-cs' />
 <snippet id='dropdownlist-dropdown-resizing-defaultitemscountindropdown-vb' />

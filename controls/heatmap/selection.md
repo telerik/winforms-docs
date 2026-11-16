@@ -29,20 +29,20 @@ In addition to these properties, the RadHeatMap control also provides two events
 
 * __SelectedCellIndexChanged__: This event is triggered when the index of the selected cell changes. It allows you to respond to changes for the current selected cell and perform any necessary actions or updates.
 
-#### __Example 1: Modify Selected Cell__
+## __Example 1: Modify Selected Cell__
 <snippet id='heatmap-heatmapdatabinding-selection_border-cs' />
 <snippet id='heatmap-heatmapdatabinding-selection_border-vb' />
 
 
 
-#### __Figure 1: RadHeatMap with customize selection border__
+### __Figure 1: RadHeatMap with customize selection border__
 ![WinForms RadHeatMap Selection](images/heatmap-selection01.png)
 
 ## Set Selected Cell Programmatically
 
 We can set the selected cell through the __SelectedCellIndex__ property.
 
-#### __Example 2: Programmatic Selection__
+### __Example 2: Programmatic Selection__
 <snippet id='heatmap-heatmapdatabinding-selectedcellindex-cs' />
 <snippet id='heatmap-heatmapdatabinding-selectedcellindex-vb' />
 
@@ -70,4 +70,3 @@ In addition, the RadHeatMap control also provides an event that will be raised w
 * [Structure]({%slug heatmap-structure%})
 * [Getting Started]({%slug heatmap-getting-started%})
 * [Data Binding]({%slug heatmap-data-binding%})
-

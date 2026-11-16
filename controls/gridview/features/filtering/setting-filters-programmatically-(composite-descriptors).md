@@ -16,7 +16,7 @@ previous_url: gridview-filtering-setting-filters-programmatically-composite-desc
 
 To filter a single data field by multiple values, you have to use the __CompositeFilterDescriptor__ object. It contains a collection of filter descriptors objects and the logical operator for that filters.
 
-#### Setting composite filter descriptors
+### Setting composite filter descriptors
 
 <snippet id='gridview-filtering-settingcompositefilterdescriptors-cs' />
 <snippet id='gridview-filtering-settingcompositefilterdescriptors-vb' />
@@ -33,7 +33,7 @@ Result of the above example using *__Or__* logical operator:
 
 The composite filters allow you to create more complex filtering expressions. Such a complex filtering expression might include filters for multiple fields combined with different logical operators, like __(UnitsOnOrder= 0 AND (UnitsInStock> 100 OR ProductName.StartsWith(“G”)))__.
 
-#### Setting complex composite filter descriptors
+### Setting complex composite filter descriptors
 
 <snippet id='gridview-filtering-settingcomplexcompositefilterdescriptors-cs' />
 <snippet id='gridview-filtering-settingcomplexcompositefilterdescriptors-vb' />
@@ -42,7 +42,7 @@ The composite filters allow you to create more complex filtering expressions. Su
 
 The following example shows how you can add descriptors that will be reflected in the [Excel-like]({%slug winforms/gridview/filtering/excel-like-filtering%}) filter popup.
 
-#### Setting filters for Excel-like filtering
+### Setting filters for Excel-like filtering
 
 <snippet id='gridview-filtering-excel-cs' />
 <snippet id='gridview-filtering-excel-vb' />

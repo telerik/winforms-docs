@@ -57,7 +57,7 @@ As you can see, we are also setting the __Padding__ of the buttons. This allows 
 
 This is it! Now you have a good-looking RadTextBox with buttons!
 
-# See Also
+## See Also
 
 * [Properties]({%slug winforms/editors/textbox/programming-radtextbox%})
 * [Design Time]({%slug winforms/editors/textbox/designtime%})

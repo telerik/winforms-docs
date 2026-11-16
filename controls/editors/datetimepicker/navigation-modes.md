@@ -28,7 +28,7 @@ The embedded __RadCalendar__ has `HeaderNavigationMode` property, which determin
 
 ![WinForms RadDateTimePicker Value Property](images/editors-datetimepicker-navigation-modes002.gif)
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/datetimepicker/designtime%})
 * [Free Form Date Time Parsing]({%slug winforms/editors/datetimepicker/free-form-date-time-parsing%})

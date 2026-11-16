@@ -24,7 +24,7 @@ To show the dialog call its **ShowDialog** method. If a valid file is opened whe
 >important Note that when the **ShowDialog** method is called the UI of the host application will freeze until the dialog closes.
 
 
-####  Example 1: Show an open file dialog 
+###  Example 1: Show an open file dialog
 
 <snippet id='file-dialogs-radopenfiledialog-openfiledialogexample-cs' />
 <snippet id='file-dialogs-radopenfiledialog-openfiledialogexample-vb' />
@@ -35,7 +35,7 @@ To show the dialog call its **ShowDialog** method. If a valid file is opened whe
 
 You can open a read-only file stream for the selected file using the OpenFile method. Or alternatively you can use the **FileName** and **FileNames** properties and open the file manually.
 
-####  Example 2: Open a file stream 
+###  Example 2: Open a file stream
 
 <snippet id='file-dialogs-radopenfiledialog-openfilestreamexample-cs' />
 <snippet id='file-dialogs-radopenfiledialog-openfilestreamexample-vb' />
@@ -46,7 +46,7 @@ You can open a read-only file stream for the selected file using the OpenFile me
 
 The dialog supports single and multiple selection modes. By default, you can select only one file at a time. To alter this you can set the **Multiselect** property of **RadOpenFileDialog** to *True*.
 
-####  Example 3: Enable multiple selection 
+###  Example 3: Enable multiple selection
 
 <snippet id='file-dialogs-radopenfiledialog-multipleselectionexample-cs' />
 <snippet id='file-dialogs-radopenfiledialog-multipleselectionexample-vb' />
@@ -64,7 +64,7 @@ You can get the paths of the selected files via the **FileName** and **FileNames
 You can get only the name of the selected files, without the full path, via the **SafeFileNames** collection property.
 
 
-####  Example 4: Get the selected file names
+###  Example 4: Get the selected file names
 
 <snippet id='file-dialogs-radopenfiledialog-selectedfilenames-cs' />
 <snippet id='file-dialogs-radopenfiledialog-selectedfilenames-vb' />
@@ -77,7 +77,7 @@ The **FileName** property can be set manually. This will change the value displa
 
 You can save the last used directory by setting the **RestoreDirectory** property of the **RadOpenFileDialog**. After setting this property to *True* and opening a file the **InitialDirectory** of this **RadOpenFileDialog** instance will be set to the parent folder of the opened file.
 
-####  Example 5: Set RestoreDirectory property
+###  Example 5: Set RestoreDirectory property
 
 <snippet id='file-dialogs-radopenfiledialog-restoredirectorypropertyexample-cs' />
 <snippet id='file-dialogs-radopenfiledialog-restoredirectorypropertyexample-vb' />
@@ -93,7 +93,7 @@ You can save the last used directory by setting the **RestoreDirectory** propert
 
 You can display a checkbox to control whether the file should be opened in readonly mode with the **ShowReadOnly** property of the **RadOpenFileDialog**. You can control the state of that checkbox by using the **ReadOnlyChecked** property of the **RadOpenFileDialog**.
 
-####  Example 6: Enabling the ReadOnly CheckBox
+###  Example 6: Enabling the ReadOnly CheckBox
 
 <snippet id='file-dialogs-radopenfiledialog-enablingreadonlycheckboxexample-cs' />
 <snippet id='file-dialogs-radopenfiledialog-enablingreadonlycheckboxexample-vb' />
@@ -108,7 +108,7 @@ You can display a checkbox to control whether the file should be opened in reado
 
 **RadOpenFileDialog** exposes a **DereferenceLinks** property indicating whether a file dialog returns the location of the file referenced by a shortcut or the location of the actual shortcut file (with the .lnk extension).
 
-####  Example 7: Using the DereferenceLinks property
+###  Example 7: Using the DereferenceLinks property
 
 <snippet id='file-dialogs-radopenfiledialog-usingdereferencelinkspropertyexample-cs' />
 <snippet id='file-dialogs-radopenfiledialog-usingdereferencelinkspropertyexample-vb' />

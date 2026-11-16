@@ -58,6 +58,6 @@ The following steps demonstrates how to populate two **RadListControls** with it
 ![WinForms RadListControl Drag and Drop in Bound Mode](images/listcontrol-listcontroldragdropservice002.gif)
 
 
-# See Also
+## See Also
 
 * [RadDragDropService]({%slug winforms/telerik-presentation-framework/raddragdropservice%})	

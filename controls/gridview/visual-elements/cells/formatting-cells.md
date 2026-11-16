@@ -22,7 +22,7 @@ Due to the UI virtualization in **RadGridView**, cell elements are created only 
 
 The __CellFormatting__ event is used to access and change the styles of the *data* cells including the *new row cells*. For example, the code sample below changes the **ForeColor** in a particular column:
 
-#### Changing the data cells font color
+### Changing the data cells font color
 
 <snippet id='gridview-formattingcells-cellformattingexample1-cs' />
 <snippet id='gridview-formattingcells-cellformattingexample1-vb' />
@@ -41,7 +41,7 @@ This is an advanced example of using **CellFormatting** event to highlight certa
 
 ![Telerik UI for WinForms RadGridView showing conditional cell background formatting based on a checkbox value in the same row](images/gridview-cells-formatting-cells002.png)
 
-#### Formatting cells 
+### Formatting cells
 
 <snippet id='gridview-formattingcells-cellformattingexample2-cs' />
 <snippet id='gridview-formattingcells-cellformattingexample2-vb' />
@@ -56,7 +56,7 @@ The __ViewCellFormatting__ event is fired for all cells. So if you want to forma
 
 For example, to change the font of the header cells and the group cells use the following code:
 
-####  Formatting non-data rows
+###  Formatting non-data rows
 
 <snippet id='gridview-formattingcells-viewcellformatting1-cs' />
 <snippet id='gridview-formattingcells-viewcellformatting1-vb' />

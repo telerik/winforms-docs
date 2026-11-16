@@ -34,7 +34,7 @@ You can see where to find each control in Visual Style Builder on the image belo
 
 ![WinForms RadCheckedDropDownList ThemeResolutionService ApplyThemeToControlTree](images/dropdown-and-listcontrol-checkeddropdownlist-theming002.png)
 
-# See Also 
+## See Also 
 
 * [Getting Started with VisualStyleBuilder]({%slug winforms/tools/visual-style-builder/getting-started%})
 * [Working With Repository Items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%})

@@ -47,7 +47,7 @@ You can access the selected text through the __SelectedText__ property. To selec
 
 Note that you can use the __CaretIndex__ property to move the caret at specified position and clear the selection.
 		
-# See Also
+## See Also
 
 * [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
 * [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})

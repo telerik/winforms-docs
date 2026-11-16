@@ -5,13 +5,12 @@ description: Learn how to use the telerik_upgrade_assistant tool from the Teleri
 components: ["general"]
 slug: ai-upgrade-assistant
 tags: telerik,winforms,ai,coding assistant,upgrade,migration,breaking changes,mcp
-position: 2
-tag: new
+position: 4
 ---
 
 # Telerik UI for WinForms MCP Upgrade Assistant
 
-The `telerik_upgrade_assistant` tool is part of the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}). It helps you analyze your existing WinForms projects for breaking changes when upgrading between Telerik UI for WinForms versions.
+The `telerik_upgrade_assistant` tool is part of the [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}). It helps you analyze your existing WinForms projects for breaking changes when upgrading between Telerik UI for WinForms versions.
 
 The tool integrates with the [Telerik CLI]({%slug telerik-cli%}) (`telerik migrate analyze` command) and returns structured findings to the AI model, which can then interpret and apply the necessary code fixes automatically.
 
@@ -19,7 +18,7 @@ The tool integrates with the [Telerik CLI]({%slug telerik-cli%}) (`telerik migra
 
 To use the upgrade tool, you need:
 
-* The [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) installed and configured.
+* The [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}) installed and configured.
 * The [Telerik CLI]({%slug telerik-cli%}) global .NET tool. If not already installed, the upgrade tool will detect this and prompt you to install it automatically.
 * A WinForms project (`.csproj`) that references Telerik UI for WinForms assemblies.
 
@@ -32,7 +31,7 @@ To analyze your WinForms project for Telerik-related upgrade issues, follow thes
 
 1. Open your WinForms solution in Visual Studio or Visual Studio Code.
 2. Open the **Copilot Chat** window.
-3. Make sure the `telerik-winforms-assistant` MCP tool is enabled in the Copilot Chat tool selection dropdown. For setup instructions, see [Getting Started with Telerik WinForms MCP Server]({%slug ai-mcp-server%}).
+3. Make sure the `telerik-winforms-assistant` MCP tool is enabled in the Copilot Chat tool selection dropdown. For setup instructions, see [Getting Started with Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}).
 
 ![Telerik WinForms Assistant](images/ai-upgrade-tool_01.png)
 
@@ -64,7 +63,7 @@ The upgrade tool returns a structured report that includes:
 
 ## See Also
 
-* [Telerik WinForms MCP Server]({%slug ai-mcp-server%})
+* [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%})
 * [Telerik CLI]({%slug telerik-cli%})
 * [Telerik CLI Migrate Analyzer]({%slug telerik-cli-migrate-analyzer%})
-* [Telerik WinForms AI Coding Assistant Overview]({%slug ai-overview%})
+* [Telerik WinForms AI Component Assistant Overview]({%slug component-assistant-overview%})

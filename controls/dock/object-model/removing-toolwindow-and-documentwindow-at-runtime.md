@@ -34,7 +34,7 @@ __DocumentWindow__: If you do not set the __CloseAction__ for a **DocumentWindow
 
 __ToolWindow__: If you do not set the __CloseAction__ for a **ToolWindow** and you close the **ToolWindow** from the UI, this window is closed with __CloseAction__ set to *Hide*, i.e. the **ToolWindow** is not disposed and you can reuse it later.
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

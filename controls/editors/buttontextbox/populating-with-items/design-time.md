@@ -31,6 +31,6 @@ Another possibility to open the editor is via the **LeftButtonItems** and **Righ
 
 You can add several item types: **RadButtonElement**, **RadToggleButtonElement**, **RadRepeatButtonElement**, **RadCheckBoxElement**, **RadImageButtonElement**, **RadRadioButtonElement**, **RadDropDownButtonElement**, **RadSplitButtonElement**, **CommandBarSeparator**, **RadToggleSwitchElement**. The *RadItem Collection Editor* allows you to manipulate the respective properties of the element that you have added at design time. Once, the desired button elements are added, you can subscribe to the **Click** event (or any other event) via the *Properties* section in Visual Studio. 
 
-# See Also
+## See Also
 
 * [Adding Items Programmatically]({%slug winforms/editors/buttontextbox/populating-with-data/adding-items-programmatically%})

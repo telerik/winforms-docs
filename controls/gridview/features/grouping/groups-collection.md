@@ -14,26 +14,26 @@ previous_url: gridview-grouping-groups-collection
 
 When a group is created it is added to the *Groups* collection of the corresponding template. You can access the groups collection in the following way:
 
-#### Accessing groups
+## Accessing groups
 
 <snippet id='gridview-grouping-accessgroups-cs' />
 <snippet id='gridview-grouping-accessgroups-vb' />
 
 You can expand and collapse groups programmatically. The code blocks below demonstrates how you can expand and collapse the first group in the *Groups* collection.
 
-#### Expanding groups
+### Expanding groups
 
 <snippet id='gridview-grouping-expandgroups-cs' />
 <snippet id='gridview-grouping-expandgroups-vb' />
 
-#### Collapse groups
+### Collapse groups
 
 <snippet id='gridview-grouping-collapsegroups-cs' />
 <snippet id='gridview-grouping-collapsegroups-vb' />
 
 You can use __AllowGroup__ property of each column to indicate whether the user will be able to group by this column or not. The default value is *true*.
 
-#### Allow groups
+### Allow groups
 
 <snippet id='gridview-grouping-allowgroup-cs' />
 <snippet id='gridview-grouping-allowgroup-vb' />
@@ -42,7 +42,7 @@ You can use __AllowGroup__ property of each column to indicate whether the user
 
 DataGroup collections have hierarchical structure. One or more group levels could be created. Properties of the DataGroup give access to its *Level*, *Parent* and *Child* groups:
 
-#### Accessing parent/child groups
+### Accessing parent/child groups
 
 <snippet id='gridview-grouping-accessingparentchildgroups-cs' />
 <snippet id='gridview-grouping-accessingparentchildgroups-vb' />
@@ -70,4 +70,3 @@ The header row of a group (*GridViewGroupRowInfo*) can be accessed using the __G
 * [Sorting group rows]({%slug winforms/gridview/grouping/sorting-group-rows%})
 
 * [Using Grouping Expressions]({%slug winforms/gridview/grouping/using-grouping-expressions%})
-

@@ -40,7 +40,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
 
 The code provided above illustrates the approach to be used to localize the __RadTimePicker__ and is not intended as a full translation.
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/editors/timepicker/structure%})
 * [Properties and Events]({%slug winforms/editors/timepicker/properties-and-events%})

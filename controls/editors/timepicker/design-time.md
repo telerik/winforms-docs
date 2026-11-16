@@ -24,7 +24,7 @@ The __Smart Tag__ of __RadTimePicker__ lets you quickly access common tasks invo
 * __Learning Center:__ Navigate to the Telerik help, code library projects or support forum.
 * __Search:__ Search the Telerik site for a given string.
 
-# See Also
+## See Also
 
 * [Add Themes]({%slug winforms/themes/using-default-themes%})
 * [Structure]({%slug winforms/editors/timepicker/structure%})

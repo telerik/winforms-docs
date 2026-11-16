@@ -24,7 +24,7 @@ To show the dialog call its **ShowDialog** method. If a valid file is selected w
 >important Note that when the **ShowDialog** method is called the UI of the host application will freeze until the dialog closes.
 
 
-####  Example 1: Show a save file dialog
+###  Example 1: Show a save file dialog
 
 <snippet id='file-dialogs-radsavefiledialog-savefiledialogexample-cs' />
 <snippet id='file-dialogs-radsavefiledialog-savefiledialogexample-vb' />
@@ -35,7 +35,7 @@ To show the dialog call its **ShowDialog** method. If a valid file is selected w
 
 You can open a read-write file stream for the selected file using the **OpenFile** method. Or alternatively you can use the **FileName** property and open the file manually.
 
-####  Example 2: Open a file stream
+###  Example 2: Open a file stream
 
 <snippet id='file-dialogs-radopenfiledialog-openfilestreamexample-cs' />
 <snippet id='file-dialogs-radopenfiledialog-openfilestreamexample-vb' />
@@ -48,7 +48,7 @@ You can get the path of the selected file via the **FileName** property (see Exa
 
 The **FileName** property can be set manually. This will change the value displayed in the selected file autocomplete box area. Note that setting this won't change the selected item in the list with the files.
 
-####  Example 3: Set the file name 
+###  Example 3: Set the file name
 
 <snippet id='file-dialogs-radsavefiledialog-setfilenameexample-cs' />
 <snippet id='file-dialogs-radsavefiledialog-setfilenameexample-vb' />

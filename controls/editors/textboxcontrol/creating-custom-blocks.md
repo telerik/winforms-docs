@@ -49,7 +49,7 @@ Finally, the __Text__ property should be set:
 
 ![WinForms RadTextBoxControl The "here" word is replaced with a button](images/editors-textboxcontrol-creatng-custom-blocks001.png)
 
-# See Also
+## See Also
 
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
 * [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})

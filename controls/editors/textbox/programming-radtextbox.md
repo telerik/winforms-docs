@@ -68,7 +68,7 @@ Since R2 2021 **RadTextBox** supports embedded labels. The embedded label shows 
 The speed is an integer between 1 and 10 (slowest) with default value 8.
 
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/textbox/designtime%})
 * [Structure]({%slug winforms/editors/textbox/control-element-structure%})

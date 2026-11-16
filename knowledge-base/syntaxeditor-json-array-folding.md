@@ -9,7 +9,7 @@ tags: syntaxeditor, json, array, list, collapse, folding, squarebracketfoldingta
 res_type: kb
 ---
 
-# Enabling JSON Array Folding in RadSyntaxEditor
+## Enabling JSON Array Folding in RadSyntaxEditor
 
 ## Environment
 

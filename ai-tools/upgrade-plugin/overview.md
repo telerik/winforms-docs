@@ -13,7 +13,7 @@ tag: new
 
 The Telerik WinForms Upgrade Plugin extends Microsoft's Upgrade Agent in GitHub Copilot CLI with Telerik-specific modernization workflows. It provides selectable scenarios for upgrading Telerik UI for WinForms, converting standard Microsoft WinForms controls, migrating Telerik assembly references to NuGet packages, and setting up licensing. It also injects Telerik guidance into Microsoft's .NET upgrade scenarios.
 
-This plugin is separate from the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) and its `telerik_upgrade_assistant` tool. The plugin works with GitHub Copilot CLI and Microsoft's Upgrade Agent.
+This plugin is separate from the [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}) and its `telerik_upgrade_assistant` tool. The plugin works with GitHub Copilot CLI and Microsoft's Upgrade Agent.
 
 ## Prerequisites
 

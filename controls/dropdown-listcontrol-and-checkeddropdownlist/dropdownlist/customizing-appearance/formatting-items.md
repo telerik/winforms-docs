@@ -23,7 +23,7 @@ Items appearance in __RadDropDownList__ can be customized by making use of the _
 
 ![WinForms RadDropDownList Formatting Items in Drop Down](images/dropdown-and-listcontrol-dropdownlist-customizing-items001.png)
 
-#### Customize selected item appearance 
+### Customize selected item appearance
 
 <snippet id='dropdownlist-formatting-items-customizeitems-cs' />
 <snippet id='dropdownlist-formatting-items-customizeitems-vb' />
@@ -34,7 +34,7 @@ Items appearance in __RadDropDownList__ can be customized by making use of the _
 
 In order to customize the auto complete pop-up, you should subscribe to the __VisualItemFormatting__ event of the __AutoCompleteSuggestHelper__. 
 
-#### Subscribe to the VisualItemFormatting event of the auto complete popup
+### Subscribe to the VisualItemFormatting event of the auto complete popup
 
 <snippet id='dropdownlist-formatting-items-event-cs' />
 <snippet id='dropdownlist-formatting-items-event-vb' />

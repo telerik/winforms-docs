@@ -56,7 +56,7 @@ Here is how the control will look like, after the modifications:
 
 ![WinForms RadDateTimePicker Getting Started](images/editors-timepicker-getting-started.png)
 
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/editors/timepicker/structure%})
 * [Properties and Events]({%slug winforms/editors/timepicker/properties-and-events%})

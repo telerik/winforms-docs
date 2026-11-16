@@ -38,7 +38,7 @@ The Clear and Today buttons of the calendar are located in its footer. The foote
 
 ![WinForms RadDateTimePicker Show Clear Today Buttons](images/datetimepicker-calendar-footer002.png)
 
-# See Also
+## See Also
 
 * [Customizing Appearance]({%slug winforms/editors/datetimepicker/customizing-appearance%})
 * [Themes]({%slug winforms/editors/datetimepicker/themes%})

@@ -19,7 +19,7 @@ You can easily change the styles of the border and the BackColor in the `Element
     ![WinForms RadTextBoxControl Customizing Appearance](images/editors-textboxcontrol-customizing-appearance001.png)
 
 
-# See Also
+## See Also
 
 * [Themes]({%slug winforms/editors/radtextboxcontrol/themes%})
 * [Formatting]({%slug winforms/editors/textboxcontrol/formatting-blocks%})

@@ -13,6 +13,6 @@ position: 14
 
 Since R1 2017 RadMaskedEditBox supports entering null values. To enable this functionality you need to set the __EnableNullValueInput__ property. Once this is enabled you can use  __Ctrl + Delete__ or __Ctrl + 0__ to clear the value in the editor.  
 
-# See Also 
+## See Also 
 
 * [Properties, Methods and Events]({%slug winforms/editors/maskededitbox/properties-methods-and-events%})

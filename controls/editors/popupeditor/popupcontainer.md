@@ -18,7 +18,7 @@ __RadPopupContainer__ is a simple scrollable panel which is used with __RadPopup
 
 ![WinForms RadPopupEditor RadPopupContainer](images/editors-popupeditor-radpopupcontainer001.png)
 
-# See Also
+## See Also
 
  * [RadScrollablePanel]({%slug winforms/panels-and-labels/radscrollablepanel%})
 

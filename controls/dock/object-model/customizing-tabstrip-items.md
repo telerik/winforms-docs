@@ -90,7 +90,7 @@ Here is the outcome of the code above:
 
 ![WinForms RadDock DocumentTabStrip Multi Line Row Layout](images/dock-object-model-customizing-tabstrip-items003.png)
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

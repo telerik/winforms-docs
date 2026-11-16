@@ -59,7 +59,7 @@ You can create your own gauge's style programmatically from the scratch by addin
 >caption Figure 3: Programmatically Added Items
 ![WinForms RadRadialGauge Programmatically Added Items](images/radialgauge-getting-started003.png)
 
-#### Add Items
+### Add Items
 
 <snippet id='gauges-radialgaugegettingstarted-additemsprogrammatically-cs' />
 <snippet id='gauges-radialgaugegettingstarted-additemsprogrammatically-vb' />
@@ -71,7 +71,7 @@ Drag a __RadRadialGauge__ from the Toolbox and drop it onto the form. The gauge 
 >caption Figure 4: Additional Element
 ![WinForms RadRadialGauge Additional Element](images/radialgauge-getting-started004.gif) 
 
-#### Additional Element
+### Additional Element
 
 <snippet id='gauges-radialgaugegettingstarted-advancedexample-cs' />
 <snippet id='gauges-radialgaugegettingstarted-advancedexample-vb' />
@@ -83,7 +83,7 @@ The following code snippet is purposed to demonstrate how to create a simple clo
 >caption Figure 5: Clock
 ![WinForms RadRadialGauge Clock](images/radialgauge-getting-started005.gif) 
 
-#### Clock
+### Clock
 
 <snippet id='gauges-radialgaugegettingstarted-clock-cs' />
 <snippet id='gauges-radialgaugegettingstarted-clock-vb' />

@@ -65,7 +65,7 @@ The table below shows a list of patterns that can be combined to create custo
 
 
 
-# See Also
+## See Also
 
 * [CultureInfo and RegionInfo Basics]({%slug winforms/editors/datetimepicker/internationalization/cultureinfo-and-regioninfo-basics%})
 * [Internationalization]({%slug winforms/editors/datetimepicker/internationalization/internationalization%})

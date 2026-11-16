@@ -32,7 +32,7 @@ The main and most important difference between __RadTextBox__ and __RadTextBoxCo
 |-|Customizible AutoComplete with data binding|
 
 
-# See Also
+## See Also
 
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
 * [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})

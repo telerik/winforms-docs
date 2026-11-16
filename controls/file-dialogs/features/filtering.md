@@ -25,7 +25,7 @@ The string set to the **Filter** property is parsed in a strict way. So when par
 
 To set a filter for the **RadOpenFileDialog** dialog you can set the **Filter** property. When this property is not set the drop-down will not appear.
 
-####  Example 1: Set Filter property of RadOpenFileDialog 
+###  Example 1: Set Filter property of RadOpenFileDialog
 
 ````C#
 RadOpenFileDialog openFileDialog = new RadOpenFileDialog();
@@ -61,7 +61,7 @@ To set a filter for the **RadSaveFileDialog** dialog you can set the **Filter** 
 
 >important Note that the **Filter** property does not only filter the files in the main pane but also determines the type of the file which will be saved.
 
-####  Example 2: Set Filter property of RadSaveFileDialog 
+###  Example 2: Set Filter property of RadSaveFileDialog
 
 ````C#
 RadSaveFileDialog saveFileDialog = new RadSaveFileDialog(); 

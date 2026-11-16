@@ -20,7 +20,7 @@ previous_url: editors-color-box-working-with, editors/colorbox/working-with-radc
 |__ReadOnly__|Determines if users can input text directly into the text field.|
 |__TabStop__|Gets or sets a value indicating whether the user can give the focus to this control using the TAB key.|
 
-# Events
+## Events
 
 |Event|Description|
 |------|------|
@@ -37,7 +37,7 @@ The __ValueChanging__ event fires before the value is changed and allows you to 
 
 
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcolorbox.html#properties)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcolorbox.html#events)

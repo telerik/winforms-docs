@@ -133,7 +133,7 @@ Exporting data to HTML is done through the __RunExport__ method. This method acc
 
 Consider the code sample below:
 
-#### Export to HTML format
+### Export to HTML format
 
 <snippet id='gridview-exporttohtml1-exporttohtmlformat-cs' />
 <snippet id='gridview-exporttohtml1-exporttohtmlformat-vb' />
@@ -142,7 +142,7 @@ Consider the code sample below:
 
 1\. __HTMLCellFormating:__ It gives access to a single cell’s HTML element that allows you to make additional formatting for every HTML cell related to the exported RadGridView: 
 
-####  Handling the HTMLCellFormatting event
+###  Handling the HTMLCellFormatting event
 
 <snippet id='gridview-exporttohtml1-handlinghtmlcellformattingevent-cs' />
 <snippet id='gridview-exporttohtml1-handlinghtmlcellformattingevent-vb' />

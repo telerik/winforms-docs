@@ -26,7 +26,7 @@ You can add these item types to the **RadButtonTextBox** either at design time v
 |**CommandBarSeparator**|![WinForms RadButtonTextBox CommandBarSeparator](images/buttontextbox-items-type009.png)|
 |**RadToggleSwitchElement**|![WinForms RadButtonTextBox RadToggleSwitchElement](images/buttontextbox-items-type010.png)|
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/buttontextbox/populating-with-data/design-time%})
 * [Adding Items Programmatically]({%slug winforms/editors/buttontextbox/populating-with-data/adding-items-programmatically%})

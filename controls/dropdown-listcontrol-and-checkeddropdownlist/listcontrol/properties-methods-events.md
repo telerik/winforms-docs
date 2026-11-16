@@ -45,7 +45,7 @@ position: 5
 |__SuspendItemsChangeEvents__|Gets or sets a value that indicates if this RadListControl will stop firing the ItemsChanging and ItemsChanged events.|
 |__SuspendSelectionEvents__|Gets or sets a value that determines whether to stop the selection events from firing. These are SelectedIndexChanged, SelectedIndexChanging and SelectedValueChanged.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----| 
@@ -62,7 +62,7 @@ position: 5
 |__FindStringNonWrapping(string s)__|Searches for an item in the same manner as FindString() but does not start from the beginning when the end of the Items collection is reached.|
 |__FindStringNonWrapping(string s, int startIndex)__|Searches for an item from a certain index in the same manner as FindString() but does not start from the beginning when the end of the Items collection is reached.|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----| 
@@ -77,7 +77,7 @@ position: 5
 |__SelectedItemsChanged__|This event fires when the SelectedItems collection changes.|
 |__SelectedItemsChanging__|This event fires before the SelectedItems collection changes.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radlistcontrol.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radlistcontrol.html#methods)

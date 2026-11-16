@@ -29,7 +29,7 @@ __RadDropDownList__ supports three types of selection modes:
 
 ![WinForms RadDropDownList MutiExtended Selection Mode](images/dropdown-and-listcontrol-dropdownlist-selection001.png)
 
-#### Setting a Selection Mode 
+### Setting a Selection Mode
 
 <snippet id='dropdownlist-selection-multiextendedselection-cs' />
 <snippet id='dropdownlist-selection-multiextendedselection-vb' />
@@ -44,7 +44,7 @@ __RadDropDownList__ can automatically select the next item when a double click i
 
 ![WinForms RadDropDownList Select Next Item](images/dropdown-and-listcontrol-dropdownlist-selection002.gif)
 
-#### Next Item Selection 
+### Next Item Selection
 
 <snippet id='dropdownlist-selection-nextitemselection-cs' />
 <snippet id='dropdownlist-selection-nextitemselection-vb' />

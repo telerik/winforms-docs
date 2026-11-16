@@ -39,7 +39,7 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="CheckedListBox" href="slug:winforms/checkedlistbox"></IntroTableAnchor>
             <IntroTableAnchor title="DataEntry" href="slug:winforms/dataentry"></IntroTableAnchor>
             <IntroTableAnchor title="DataLayout" href="slug:winforms/datalayout/overview"></IntroTableAnchor>
-            <IntroTableAnchor title="GridView" href="slug:winforms/gridview" tag="updated"></IntroTableAnchor>
+            <IntroTableAnchor title="GridView" href="slug:winforms/gridview"></IntroTableAnchor>
             <IntroTableAnchor title="ListControl" href="slug:winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol"></IntroTableAnchor>
             <IntroTableAnchor title="ListView" href="slug:winforms/listview"></IntroTableAnchor>
             <IntroTableAnchor title="PivotGrid" href="slug:winforms/pivotgrid"></IntroTableAnchor>
@@ -77,11 +77,12 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="Buttons" href="slug:winforms/buttons/button"></IntroTableAnchor>
             <IntroTableAnchor title="Carousel" href="slug:winforms/carousel"></IntroTableAnchor>
             <IntroTableAnchor title="Chat UI" href="slug:winforms/chat/overview"></IntroTableAnchor>
+            <IntroTableAnchor title="InlineAIAssistant" href="slug:inlineaiassistant-overview" tag="new"></IntroTableAnchor>
             <IntroTableAnchor title="Label" href="slug:winforms/panels-and-labels/label"></IntroTableAnchor>
             <IntroTableAnchor title="ProgressBar" href="slug:winforms/track-and-status-controls/progressbar"></IntroTableAnchor>
             <IntroTableAnchor title="Rating" href="slug:winforms/track-and-status-controls/rating"></IntroTableAnchor>
             <IntroTableAnchor title="Rotator" href="slug:winforms/rotator"></IntroTableAnchor>
-			<IntroTableAnchor title="SmartPasteButton" href="slug:smartpastebutton-overview" tag="new"></IntroTableAnchor>
+			<IntroTableAnchor title="SmartPasteButton" href="slug:smartpastebutton-overview"></IntroTableAnchor>
             <IntroTableAnchor title="SpeechToTextButton" href="slug:speechtotextbutton-overview"></IntroTableAnchor>
             <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TrackBar" href="slug:winforms/track-and-status-controls/trackbar"></IntroTableAnchor>
@@ -138,7 +139,7 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="MultiColumnComboBox" href="slug:winforms/multicolumncombobox"></IntroTableAnchor>
             <IntroTableAnchor title="PopupEditor" href="slug:winforms/editors/popupeditor"></IntroTableAnchor>
             <IntroTableAnchor title="SpinEditor" href="slug:winforms/editors/spineditor"></IntroTableAnchor>
-            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview" tag="updated"></IntroTableAnchor>
+            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TextBox" href="slug:winforms/editors/textbox"></IntroTableAnchor>
             <IntroTableAnchor title="TimeOnlyPicker (.NET Only)" href="slug:editors-timeonlypicker-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TimePicker" href="slug:winforms/editors/timepicker"></IntroTableAnchor>
@@ -200,7 +201,7 @@ The control catalog is grouped by common application scenarios. Start with the c
 Telerik UI for WinForms is a commercial UI library. You are welcomed to evaluate
 a fully-functional 30-day trial that unlocks every control and gives you direct access to technical support from the people who build the product.
 
-When you're ready to move forward, please purchase a [Telerik UI for WinForms Subscription license](https://www.telerik.com/purchase/individual/winforms.aspx). This keeps your team current and supported: acess to every new release, priority technical support, and the [AI Coding Assistant]({%slug ai-overview%}) are included for as long as your subscription is active.
+When you're ready to move forward, please purchase a [Telerik UI for WinForms Subscription license](https://www.telerik.com/purchase/individual/winforms.aspx). This keeps your team current and supported: acess to every new release, priority technical support, and the [AI Coding Assistant]({%slug component-assistant-overview%}) are included for as long as your subscription is active.
 
 Take a moment to review the [license agreement](https://www.telerik.com/purchase/license-agreement/winforms-dlw-s) so your deployment is fully compliant from day one.
 
@@ -212,7 +213,7 @@ Telerik products, including Telerik UI for WinForms, are classified as `EAR99` f
 
 Pick the support channel that matches the kind of help you need:
 
-* **Code and implementation guidance** — Ask the [Telerik UI for WinForms AI Coding Assistant]({%slug ai-overview%}) for example code and product-specific recommendations.
+* **Code and implementation guidance** — Ask the [Telerik UI for WinForms AI Coding Assistant]({%slug component-assistant-overview%}) for example code and product-specific recommendations.
 * **Technical issues** — Submit a case through the [Telerik support ticket system](https://www.telerik.com/account/support-tickets?pid=523&supcId=daf62541-57e0-b84c-8b5e-da9851c61873&fbp=false) to get direct help from the product team.
 * **Community discussions and general questions** — Join the [Telerik UI for WinForms community forums](https://www.telerik.com/forums/winforms).
 * **Feature requests and known issues** — Check the [WinForms feedback portal](https://feedback.telerik.com/winforms) to track planned work and vote on ideas.

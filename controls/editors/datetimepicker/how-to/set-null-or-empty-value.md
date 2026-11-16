@@ -39,7 +39,7 @@ When the __NullDate__ property value is equal to the control value no text will 
 
 
 
-# See Also
+## See Also
 
 [Design Time]({%slug winforms/editors/datetimepicker/designtime%})
 [Free Form Date Time Parsing]({%slug winforms/editors/datetimepicker/free-form-date-time-parsing%})

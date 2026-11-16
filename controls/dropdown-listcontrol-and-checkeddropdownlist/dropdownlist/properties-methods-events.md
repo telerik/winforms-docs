@@ -60,7 +60,7 @@ position: 4
 |__IsFilterActive__|Gets a value indicating whether there is a Filter or FilterExpression set.|
 |__ReadOnly__|Gets or sets a value indicating whether the drop down list is read only.|
 
-# Methods
+## Methods
 
 |Method|Description|
 |----|----| 
@@ -74,7 +74,7 @@ position: 4
 |__BeginUpdate__|Calls BeginUpdate at the beginning of a block that makes many modifications in the GUI|
 |__EndUpdate__|Calls EndUpdate at the end of a block that makes many modifications in the GUI|
 
-# Events
+## Events
 
 |Event|Description|
 |----|----| 
@@ -92,7 +92,7 @@ position: 4
 |__SortStyleChanged__|This event fires when the SortStyle property changes.|
 |__VisualListItemFormatting__|The VisualItemFormatting event fires whenever a property of a visible data item changes and whenever a visual item is associated with a new data item. During scrolling for example.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddropdownlist.html#properties)
 * [Methods](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.raddropdownlist.html#methods)

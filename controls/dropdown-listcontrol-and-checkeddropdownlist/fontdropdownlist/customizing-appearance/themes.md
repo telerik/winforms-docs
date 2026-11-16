@@ -35,7 +35,7 @@ This help article will demonstrate a step by step tutorial how to customize the 
 
 ![WinForms RadFontDropDownList Customize Elements](images/fontdropdownlist-customizing-appearance-themes003.png)
 
-# See Also 
+## See Also 
 
 * [Getting Started with VisualStyleBuilder]({%slug winforms/tools/visual-style-builder/getting-started%})
 * [Working With Repository Items]({%slug winforms/tools/visual-style-builder/working-with-visual-style-builder/working-with-repository-items%})

@@ -97,7 +97,7 @@ Here is the result of the above code:
 
 ![WinForms RadTextBoxControl Customize DropDown](images/editors-textboxcontrol-autocomplete003.png)
 
-# See Also
+## See Also
 
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
 * [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})

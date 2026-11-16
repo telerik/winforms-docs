@@ -59,7 +59,7 @@ You have two additional properties: __DescriptionFont__ and __DescriptionText__ 
 
 ![WinForms RadListControl DescriptionTextListDataItem's Properties](images/dropdown-and-listcontrol-listcontrol-populating-with-data-design-time007.png)
 
-# See Also
+## See Also
 
 * [Adding Items Programmatically]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/adding-items-programmatically%})
 * [Data Binding]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol/populating-with-data/data-binding%})

@@ -17,7 +17,7 @@ __RadListControl__ can filter which items to be currently visible by using the _
 
 The __Filter__ property accepts a predicate method that can be used for arbitrary filtering conditions. The __FilterExpession__ property accepts a string following a special syntax that describes which items should be visible. The __Filter__ property is used like this:
 
-#### Filtering method body 
+### Filtering method body
 
 <snippet id='listcontrol-filtering-filteringmethod-cs' />
 <snippet id='listcontrol-filtering-filteringmethod-vb' />
@@ -41,7 +41,7 @@ Setting the __Filter__ property will start a filtering operation which will call
 
 Another option to filter the items is to specify the FilterExpression property.
 
-#### Setting the FilterExpression property 
+### Setting the FilterExpression property
 
 <snippet id='listcontrol-filtering-expression-cs' />
 <snippet id='listcontrol-filtering-expression-vb' />

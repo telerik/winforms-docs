@@ -41,7 +41,7 @@ previous_url: editors-timepicker-structure-properties-and-events
 |__ValueChanged__|occurs when the value is changed.|
 | __TimeCellFormatting__|occurs when a cell is being created/shown. Used for formatting the cell’s appearance.|
  
-# See Also
+## See Also
 
 * [Structure]({%slug winforms/editors/timepicker/structure%})
 * [Localization]({%slug winforms/editors/timepicker/localization%})

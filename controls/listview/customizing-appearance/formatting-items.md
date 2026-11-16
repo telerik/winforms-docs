@@ -24,7 +24,7 @@ Items appearance in __RadListView__ can be customized by making use of the __Vis
 
 ![WinForms RadListView Customizing items in the VisualItemFormatting event](images/listview-formatting-items001.png)
 
-#### Customizing items when using the VisualItemFormatting event
+### Customizing items when using the VisualItemFormatting event
 
 <snippet id='listview-listviewformattingitems-visualitemformatting-cs' />
 <snippet id='listview-listviewformattingitems-visualitemformatting-vb' />
@@ -43,7 +43,7 @@ Let’s assume that the __RadListView__ is bound to the *Products* table from th
 
 ![WinForms RadListView Customizing cells when using the CellFormatting event](images/listview-formatting-items002.png)
 
-#### Customizing cells when using the CellFormatting event
+### Customizing cells when using the CellFormatting event
 
 <snippet id='listview-listviewformattingitems-cellformatting-cs' />
 <snippet id='listview-listviewformattingitems-cellformatting-vb' />

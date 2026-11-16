@@ -23,7 +23,7 @@ __RadTextBoxElement__ is created for the purpose of reusability, as it is not a
 
 * The most important node is __RadTextBoxItem__ which *hosts* the __standard__.NET TextBox control. 
 
-# See Also
+## See Also
 
 * [Properties]({%slug winforms/editors/textbox/programming-radtextbox%})
 * [Design Time]({%slug winforms/editors/textbox/designtime%})

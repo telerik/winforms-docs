@@ -26,7 +26,7 @@ The tabs can be pinned to the left or right. This will freeze them and they will
 
 First you need to show the pin button. Set the **ShowTabPinButton** property to *true*. Set the pin position as well.
 
-#### Show Pin Button
+### Show Pin Button
 
 <snippet id='tabbedform-tabbedformcode-pinprop-cs' />
 <snippet id='tabbedform-tabbedformcode-pinprop-vb' />
@@ -42,7 +42,7 @@ First you need to show the pin button. Set the **ShowTabPinButton** property to 
 
 You can use the following code to pin a tab.
 
-#### Pin with code
+### Pin with code
 
 
 <snippet id='tabbedform-tabbedformcode-pintab-cs' />

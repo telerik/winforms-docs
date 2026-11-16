@@ -48,7 +48,7 @@ previous_url: dropdown-and-listcontrol-checkedropdownlist-properties-and-events
 |__Owner__|Gets the owner RadListElement.|
 |__Selected__|Gets or sets a value that indicates if this item is selected. Setting this property will cause the selection events of the owner list control to fire if there is one.|
 
-# See Also
+## See Also
 
 * [Properties](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcheckeddropdownlist.html#properties)
 * [Events](https://docs.telerik.com/devtools/winforms/api/telerik.wincontrols.ui.radcheckeddropdownlist.html#events)

@@ -38,6 +38,6 @@ Here is the result.
 
 ![WinForms RadTimeSpanPicker Formating Items](images/radtimespanpicker-appearance002.png)
 
-# See Also
+## See Also
 
 *[Themes]({%slug radtimespanpicker-themes%})

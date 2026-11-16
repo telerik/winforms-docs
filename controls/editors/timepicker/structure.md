@@ -16,19 +16,19 @@ The following image demonstrates the structure of __RadTimePicker__ control, whi
 >caption Figure 1: RadTimePicker elements structure. 
 ![WinForms RadDateTimePicker Elements Structure](images/editors-timepicker-structure001.png)
 
-# Elements Hierarchy
+## Elements Hierarchy
 
 >caption Figure 2: The Elements hierarchy of RadTimePicker.
 ![WinForms RadDateTimePicker Elements Hierarchy]images/editors-timepicker-structure002.png)
 
 
-# PopupContentElement Hierarchy 
+## PopupContentElement Hierarchy 
 
 >caption Figure 3: The hierarchy of the popup element.
 
 ![WinForms RadDateTimePicker PopupContentElement Hierarchy](images/editors-timepicker-structure003.png)
 
-# See Also
+## See Also
 
 * [Properties and Events]({%slug winforms/editors/timepicker/properties-and-events%})
 * [Localization]({%slug winforms/editors/timepicker/localization%})

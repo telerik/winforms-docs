@@ -36,7 +36,7 @@ The following code spinet demonstrates how one can access and use the provider:
 The __MaskProviderCreated__ event will be fired each time when new provider instance is created. For example when the MaskType is changed.
 
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/datetimepicker/designtime%})
 * [Free Form Date Time Parsing]({%slug winforms/editors/datetimepicker/free-form-date-time-parsing%})

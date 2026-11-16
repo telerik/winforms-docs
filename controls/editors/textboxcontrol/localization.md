@@ -85,7 +85,7 @@ To apply the custom localization provider, instantiate and assign it to the cur
  TextBoxControlLocalizationProvider.CurrentProvider = New CustomTextBoxControlLocalizationProvider()
 
 ````
-# See Also
+## See Also
 
 * [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})

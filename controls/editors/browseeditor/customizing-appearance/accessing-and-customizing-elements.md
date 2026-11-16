@@ -36,7 +36,7 @@ You can customize the nested elements at run time as well:
 
 
 
-# See Also 
+## See Also 
 
 * [Element Hierarchy Editor]({%slug winforms/tools/element-hierarchy-editor%})
 * [Themes]({%slug winforms/browseeditor/customizing-appearance/themes%})

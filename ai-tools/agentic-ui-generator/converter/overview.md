@@ -11,7 +11,7 @@ position: 0
 
 # Telerik UI for WinForms Converter
 
-The Telerik UI for WinForms Converter is an automated migration tool that converts existing Microsoft WinForms applications to use Telerik UI for WinForms controls. The converter is integrated into the [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) and works with AI-powered IDEs such as Visual Studio and Visual Studio Code to guide you through the entire migration process.
+The Telerik UI for WinForms Converter is an automated migration tool that converts existing Microsoft WinForms applications to use Telerik UI for WinForms controls. The converter is integrated into the [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}) and works with AI-powered IDEs such as Visual Studio and Visual Studio Code to guide you through the entire migration process.
 
 The converter uses Microsoft Roslyn — the .NET compiler platform — to parse, analyze, and transform your C# and VB.NET source code. Unlike simple find-and-replace or regex approaches, Roslyn provides a full understanding of the code structure through Abstract Syntax Trees (ASTs), enabling accurate, context-aware transformations.
 
@@ -24,12 +24,12 @@ To use the Telerik UI for WinForms Converter, you need:
 * An active [Telerik user account](https://www.telerik.com/account/).
 * A Telerik [Subscription license](https://www.telerik.com/purchase/faq/licensing-purchasing) or a [Telerik UI for WinForms trial](https://www.telerik.com/try/ui-for-winforms).
 * An MCP-compatible IDE — Visual Studio with Copilot or VS Code with GitHub Copilot Agent mode.
-* A configured [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) with the server name `telerik-winforms-assistant`.
+* A configured [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}) with the server name `telerik-winforms-assistant`.
 * A connection established to the [Telerik NuGet server](https://nuget.telerik.com/v3/index.json).
 * A WinForms application that uses Microsoft WinForms controls. It can be either .NET Framework or .NET project.
 * Preferably, have the [Telerik.UI.for.WinForms.AllControls](https://www.nuget.org/packages/Telerik.UI.for.WinForms.AllControls) NuGet package installed.
 
->note A Subscription license and a configured [Telerik WinForms MCP Server]({%slug ai-mcp-server%}) are required.
+>note A Subscription license and a configured [Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%}) are required.
 
 ## How It Works
 
@@ -104,4 +104,4 @@ The converter implements several safety measures:
 
 * [Getting Started with the WinForms Converter]({%slug converter-getting-started%})
 * [Converter MCP Tools, Prompts, and Engine Reference]({%slug converter-tools%})
-* [Configure the Telerik WinForms MCP Server]({%slug ai-mcp-server%})
+* [Configure the Telerik WinForms MCP Server]({%slug agentic-ui-generator-overview%})

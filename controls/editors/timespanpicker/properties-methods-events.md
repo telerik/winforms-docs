@@ -34,7 +34,7 @@ position: 3
 |**TextAlign**|Gets or sets the horizontal alignment of the text.|
  
 
-# Events 
+## Events 
 
 |__Event__|__Description__|
 |---|---|
@@ -46,7 +46,7 @@ position: 3
 |__PopupClosed__|Occurs when the pop-up is closed.|
 
 
-# See Also
+## See Also
 
  * [Getting Started]({%slug radtimespanpicker-getting-started%})
 

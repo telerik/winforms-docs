@@ -45,7 +45,7 @@ The result is shown below. Just with a single click of the up arrow key, we incr
 
 ![WinForms RadDateTimePicker Tweak Increment Step](images/editors-maskededitbox-how-to-tweak-increment-step001.gif)
 
-# See Also
+## See Also
 
 [Design Time]({%slug winforms/editors/datetimepicker/designtime%})
 [Free Form Date Time Parsing]({%slug winforms/editors/datetimepicker/free-form-date-time-parsing%})

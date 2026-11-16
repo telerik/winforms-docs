@@ -27,7 +27,7 @@ Figure 2 shows the elements used in RadDateTimePicker.
 ![WinForms RadDateTimePicker Elements Hierarchy](images/editors-datetimepicker-structure002.png)
 
 
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/datetimepicker/designtime%})
 * [Free Form Date Time Parsing]({%slug winforms/editors/datetimepicker/free-form-date-time-parsing%})

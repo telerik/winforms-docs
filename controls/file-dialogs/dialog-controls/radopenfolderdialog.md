@@ -23,7 +23,7 @@ To show the dialog call its **ShowDialog** method. If a valid folder is opened w
 
 >important Note that when the **ShowDialog** method is called the UI of the host application will freeze until the dialog closes.
 
-####  Example 1: Show a open folder dialog 
+###  Example 1: Show a open folder dialog
 
 <snippet id='file-dialogs-radopenfolderdialog-openfolderdialogexample-cs' />
 <snippet id='file-dialogs-radopenfolderdialog-openfolderdialogexample-vb' />
@@ -34,7 +34,7 @@ To show the dialog call its **ShowDialog** method. If a valid folder is opened w
 
 The dialog supports single and multiple selection modes. By default, you can select only one folder at a time. To alter this you can set the **Multiselect** property of **RadOpenFolderDialog** to *True*.
 
-####  Example 2: Multiple selection
+###  Example 2: Multiple selection
 
 <snippet id='file-dialogs-radopenfolderdialog-multipleselection-cs' />
 <snippet id='file-dialogs-radopenfolderdialog-multipleselection-vb' />
@@ -51,7 +51,7 @@ You can get the paths of the selected folders via the **FileName** and **FileNam
 
 You can get only the name of the selected folders, without the full path, via the **SafeFileNames** collection property.
 
-####  Example 3: Get the selected folder names
+###  Example 3: Get the selected folder names
 
 <snippet id='file-dialogs-radopenfolderdialog-selectedfoldernames-cs' />
 <snippet id='file-dialogs-radopenfolderdialog-selectedfoldernames-vb' />
@@ -62,7 +62,7 @@ You can get only the name of the selected folders, without the full path, via th
 
 You can save the last used directory by setting the **RestoreDirectory** property of the **RadOpenFolderDialog**. 
 
-####  Example 4: Set RestoreDirectory property
+###  Example 4: Set RestoreDirectory property
 
 <snippet id='file-dialogs-radopenfolderdialog-restoredirectoryproperty-cs' />
 <snippet id='file-dialogs-radopenfolderdialog-restoredirectoryproperty-vb' />

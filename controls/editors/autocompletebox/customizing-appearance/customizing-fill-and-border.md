@@ -19,7 +19,7 @@ You can easily customize the fill and border in the `Element Hierarchy editor`. 
     ![WinForms RadAutoCompleteBox Customize Fill and Border](images/editors-autocompletebox-fill-and-border001.png)
 
 
-# See Also
+## See Also
 
 * [Themes]({%slug winforms/editors/autocompletebox/themes%})
 * [Formatting Blocks]({%slug winforms/editors/autocompletebox/formatting-blocks%})

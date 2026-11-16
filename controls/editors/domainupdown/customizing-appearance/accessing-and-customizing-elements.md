@@ -49,7 +49,7 @@ You can customize the nested elements at run time as well:
     Me.radDomainUpDown1.DomainUpDownElement.EditableElement.BorderGradientStyle = Telerik.WinControls.GradientStyles.Solid
 
 ````
-# See Also
+## See Also
 
 * [Design Time]({%slug winforms/editors/domainupdown/design-time%}) 
 * [Getting Started]({%slug winforms/editors/domainupdown/getting-started%}) 

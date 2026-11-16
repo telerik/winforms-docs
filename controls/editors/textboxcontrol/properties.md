@@ -74,7 +74,7 @@ The speed is an integer between 1 and 10 (slowest) with default value 8.
 
 >note As of R2 2021 the default **Height** for **RadTextBoxControl** is changed to 22px.
 
-# Events
+## Events
 
 |__Event__|__Description__|
 |---|---|
@@ -85,7 +85,7 @@ The speed is an integer between 1 and 10 (slowest) with default value 8.
 |__CreateTextBlock__|Occurs when an instance of ITextBlock instance is created.|
 |__ContextMenuOpening__|Occurs before the default context menu is opened.|
  
-# See Also
+## See Also
 
 * [AutoComplete]({%slug winforms/editors/textboxcontrol/autocomplete%})
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})

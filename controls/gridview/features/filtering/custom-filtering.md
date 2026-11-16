@@ -58,7 +58,7 @@ The following example shows how to use the `Handled` property of the `CustomFilt
 
 ![RadGridView product rows after applying the event logic and stock filter](images/gridview-filtering-custom-filtering002.png)
 
->important To determine whether a row is visible when the grid is filtered by several columns, use the `MasterTemplate.DataView.FilterEvaluate` method in the `CustomFiltering` event. The method accepts a `FilterDescriptor` and a row, then returns whether the row is visible according to that descriptor. You can combine custom logic for one column with the default evaluation of filters on other columns.
+>important In order to determine more easily whether a row is visible or not in the **CustomFiltering** event when the grid is filtered by several columns, you can use the MasterTemplate.DataView.**FilterEvaluate** method. This method accepts a **FilterDescriptor** and a row as parameters and returns a boolean value indicating whether the row will be visible or not according to the passed **FilterDescriptor**. Thus, you can combine the custom logic for a certain column and evaluate the default one for the rest of the column's filters. `FilterEvaluate` creates its own registry containing the built-in functions and aggregates. Custom functions registered in `ExpressionContext.Context` are not available when this method evaluates a filter expression. See [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%}) for the built-in function list and registry behavior.
 
 ## Implementing Filtering Mechanism Using FilterPredicate
 

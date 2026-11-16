@@ -26,7 +26,7 @@ RadGridView displays several images to indicate the status of a row:
 
 You can change the images using the properties shown below:
 
-#### Changing the current row image
+### Changing the current row image
 
 <snippet id='gridview-changingthecurrentrowindicator-changethecurrentrowimage-cs' />
 <snippet id='gridview-changingthecurrentrowindicator-changethecurrentrowimage-vb' />
@@ -35,7 +35,7 @@ You can change the images using the properties shown below:
 
 The following code snippet demonstrates how to set an image for a certain column:
 
-#### Set an image in a column header
+### Set an image in a column header
 
 <snippet id='gridview-changingthecurrentrowindicator-setcolumnheaderimage-cs' />
 <snippet id='gridview-changingthecurrentrowindicator-setcolumnheaderimage-vb' />

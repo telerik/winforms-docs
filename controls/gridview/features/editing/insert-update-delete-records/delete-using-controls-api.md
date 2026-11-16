@@ -16,7 +16,7 @@ previous_url: gridview-insert-update-delete-records-insert-update-delete-using-c
 
 Two general approaches in adding new rows exist. The first one is to add rows directly into the data source assigned to the grid (see [RadGridView data binding]({%slug winforms/gridview/populating-with-data/databinding-radgridview%})). The second approach is to use the __Add__ method of the __Rows__ collection.
 
-#### Adding rows to the rows collection
+### Adding rows to the rows collection
 
 <snippet id='gridview-insertupdatedeleterecords-addingtotherowscollection-cs' />
 <snippet id='gridview-insertupdatedeleterecords-addingtotherowscollection-vb' />
@@ -27,7 +27,7 @@ The data in a row can be updated by assigning the new value to the __GridViewCel
 
 Before the value is set __Validating__ event is fired. This event could be __canceled__ to prevent updating the value in the cell. After the value update __Validated__ event is fired.
 
-#### Assigning value to a cell
+### Assigning value to a cell
 
 <snippet id='gridview-insertupdatedeleterecords-assigningacellvalue-cs' />
 <snippet id='gridview-insertupdatedeleterecords-assigningacellvalue-vb' />
@@ -36,7 +36,7 @@ Before the value is set __Validating__ event is fired. This event could be __can
 
 To delete row call __GridViewRowCollection.Remove__(GridViewRowInfo value) or __GridViewRowCollection.RemoveAt__(rowIndex).
 
-#### Removing a row from the rows collection
+### Removing a row from the rows collection
 
 <snippet id='gridview-insertupdatedeleterecords-removingarowfromtherowscollection-cs' />
 <snippet id='gridview-insertupdatedeleterecords-removingarowfromtherowscollection-vb' />

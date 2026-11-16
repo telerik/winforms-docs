@@ -40,6 +40,6 @@ Select __RadCheckedDropDownList__ and click the small arrow on the top right pos
 
 * __Search__: Search the Telerik site for a given string.            
 
-# See Also
+## See Also
 
 * [Getting Started]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/getting-started%})

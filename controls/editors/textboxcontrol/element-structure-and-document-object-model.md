@@ -27,7 +27,7 @@ The visual element structure of the `RadTextBoxControlElement` is presented on t
 
 Depending on how content of the editor is changed, one or more instances of __ITextBlock__ can be merged into a single instance.
 		
-# See Also
+## See Also
 
 * [Caret positioning and selection]({%slug winforms/editors/textboxcontrol/caret-positioning-and-selection%})
 * [Creating custom blocks]({%slug winforms/editors/textboxcontrol/creating-custom-blocks%})

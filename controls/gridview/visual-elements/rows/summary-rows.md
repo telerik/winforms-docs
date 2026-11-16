@@ -76,7 +76,7 @@ The following example demonstrates how to add several summary items to a summary
 
 ## Using an AggregateExpression
 
-The next example demonstrates how to use __AggregateExpression__ to calculate an average value by excluding the __Max__ and __Min__ values:
+The next example demonstrates how to use __AggregateExpression__ to calculate an average value by excluding the __Max__ and __Min__ values. Aggregate expressions can use the built-in aggregate functions listed in the [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%}), including `STDEV` and `VAR`.
 
 <snippet id='gridview-summaryrows-aggregateexpression-cs' />
 <snippet id='gridview-summaryrows-aggregateexpression-vb' />

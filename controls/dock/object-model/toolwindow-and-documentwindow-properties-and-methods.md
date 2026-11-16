@@ -51,7 +51,7 @@ __ToolWindow__ and __DocumentWindow__ both implement the same interfaces, such a
 
  
 
-# See Also
+## See Also
 
 * [AllowedDockStates]({%slug winforms/dock/object-model/alloweddockstates%})
 * [Creating a RadDock at Runtime]({%slug winforms/dock/object-model/creating-a-raddock-at-runtime%})

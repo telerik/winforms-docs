@@ -22,7 +22,7 @@ Sorting can be performed programmatically by adding descriptors to the RadGridVi
 
 To enable sorting you need to set the __EnableSorting__ property of the desired template.
 
-#### Enable Sorting
+### Enable Sorting
 
 <snippet id='gridview-sorting-enablesorting-cs' />
 <snippet id='gridview-sorting-enablesorting-vb' />
@@ -40,7 +40,7 @@ The __PropertyName__ property defines the property, by which the data will be so
 
 **RadGridView** supports sorting by one or more columns. The bellow example shows how you can sort by 2 columns.
 
-#### Sorting by Two Columns
+### Sorting by Two Columns
 
 <snippet id='gridview-sorting-sortingbytwoormorecolumns-cs' />
 <snippet id='gridview-sorting-sortingbytwoormorecolumns-vb' />
