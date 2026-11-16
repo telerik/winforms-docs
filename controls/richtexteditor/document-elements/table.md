@@ -108,6 +108,11 @@ __RadRichTextEditor__ exposes a rich API, which allows you to use various method
 * __MergeTableCells__ - merges the currently selected cells.
             
 
+By default, a table uses the `TableLayoutMode.AutoFit` layout mode, which sizes columns to fit their content and the available table width.
+
+To set preferred column widths, set the table's `LayoutMode` to `TableLayoutMode.Fixed` and call `Table.SetGridColumnWidth()` for each column. Pass a `TableWidthUnit` that uses `TableWidthUnitType.Percent` to specify a percentage of the width available to the table during layout.
+
+
 ## Formatting a Table via the Built-in UI
 
 You can enable the user to modify a table via the built-in UI of the __RadRichTextEditor__. This is done by using the __RadRichTextEditorRibbonUI__, which exposes a __Table Tools__ contextual menu with two tabs –  __Design__ and __Layout__. They expose UI buttons for all API methods used for formatting and modifying a table. To learn more about how to use the __RadRichTextEditorRibbonUI__ read  [this topic]({%slug winforms/richtexteditor-/ui-for-applying-rich-text-formatting/ribbon-ui%}). 
@@ -124,4 +129,3 @@ Additionally, the built-in context menu of the __RadRichTextEditor__ gives the u
 
 >tip To wire these dialogs to your own UI you can use the __ShowTablePropertiesDialog()__ method of __RadRichTextEditor__ or the __ShowTablePropertiesCommand__ method.
 >
-
