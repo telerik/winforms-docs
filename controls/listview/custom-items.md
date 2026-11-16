@@ -10,92 +10,94 @@ position: 11
 previous_url: listview-custom-items
 ---
 
-# Custom items
- 
-__RadListView__ allows you to create and use your own custom visual items. This article demonstrates how to achieve it.
-	    
+# Custom Items
 
-## Custom items in ListView ViewType
+Use the `RadListView` control in **Progress® Telerik® UI for WinForms** to create custom visual items in `ListView` and `IconsView`, and custom cells in `DetailsView`.
 
-This can be done by making use of the __VisualItemCreating__ event. The following example demonstrates creating a visual item with two buttons in it.
 
->caption Figure 1: Custom SimpleListViewVisualItem
+## Custom Items in ListView View Type
+
+Use the `VisualItemCreating` event to create a visual item with two buttons, as shown in the following example.
+
+>caption Figure 1: Custom `SimpleListViewVisualItem`
 
 ![Telerik UI for WinForms RadListView showing a custom SimpleListViewVisualItem with two embedded buttons](images/listview-custom-items001.png)
 
-First let's create a custom visual item by inheriting from the __SimpleListViewVisualItem__ class:
+### Creating Custom Items
 
-### Creating custom item
+Create a custom visual item by inheriting from `SimpleListViewVisualItem`:
 
 <snippet id='listview-listviewcustomitems-customitem-cs' />
 <snippet id='listview-listviewcustomitems-customitem-vb' />
 
+### Using Custom Items
 
-
-To use the newly created items, you should handle the __VisualItemCreating__ event as shown below:
-
-#### Use the Custom Item
+Handle the `VisualItemCreating` event to use the custom items:
 
 <snippet id='listview-listviewcustomitems-usecustomitem-cs' />
 <snippet id='listview-listviewcustomitems-usecustomitem-vb' />
 
 
 
-## Custom items in IconsView ViewType
+## Custom Items in IconsView View Type
 
->caption Figure 2: Custom IconListViewVisualItem
+>caption Figure 2: Custom `IconListViewVisualItem`
 
 ![Telerik UI for WinForms RadListView showing a custom IconListViewVisualItem with additional child elements](images/listview-custom-items003.png)
 
-We should create a custom visual item inheriting the __IconListViewVisualItem__. The following example demonstrates how to add custom elements to the IconListViewVisualItem.__Children__ collection:
+Create a custom visual item that inherits from `IconListViewVisualItem`. Add custom elements to the `Children` collection, as shown in the following examples.
 
-### Creating custom item
+### Creating Custom Items
 
 <snippet id='listview-listviewcustomitems-customiconlistviewvisualitem-cs' />
 <snippet id='listview-listviewcustomitems-customiconlistviewvisualitem-vb' />
 
 
 
-To use the newly created item, you should subscribe to the __VisualItemCreating__ event and replace the default item with your custom one: 
+### Using Custom Items
+
+Subscribe to the `VisualItemCreating` event and replace the default item with the custom item:
 
 <snippet id='listview-listviewcustomitems-usecustomiconitem-cs' />
 <snippet id='listview-listviewcustomitems-usecustomiconitem-vb' />
 
 
 
-## Custom Items in DetailsView ViewType
+## Custom Items in DetailsView View Type
 
-Since the *DetailsView* provides a grid-like interface, it displays a cell for each data field. In order to create custom cells you need to subscribe to the __CellCreating__ event and replace the default __DetailListViewDataCellElement__ with your own cell implementation.
+In `DetailsView`, `RadListView` displays a cell for each data field. To create custom cells, subscribe to the `CellCreating` event and replace the default `DetailListViewDataCellElement` with a custom cell.
 
->caption Figure 3: Custom DetailListViewDataCellElement
+>caption Figure 3: Custom `DetailListViewDataCellElement`
 
 ![Telerik UI for WinForms RadListView DetailsView showing a custom DetailListViewDataCellElement with an embedded button](images/listview-custom-items002.png)
 
-First let's populate __RadListView__ with items and set its __ViewType__ property to *DetailsView*:
+Populate `RadListView` with items and set its `ViewType` property to `DetailsView`:
 
 <snippet id='listview-listviewcustomitems-filldata-cs' />
 <snippet id='listview-listviewcustomitems-filldata-vb' />
 
 
 
-Now let`s create our custom cell element containing a __RadButtonElement__. Additionally, we should inherit the __DetailListViewDataCellElement__ class:
+Create a custom cell element that contains a `RadButtonElement` and inherits from `DetailListViewDataCellElement`:
 
 <snippet id='listview-listviewcustomitems-customcell-cs' />
 <snippet id='listview-listviewcustomitems-customcell-vb' />
 
 
 
-Due to the virtualization mechanism of the RadListView control, the default cell of the control is compatible with all columns. When the control is scrolled, the default cell could override the custom one. To apply the custom cell when the control is scrolled is necessary to create another __DetailListViewDataCellElement__ which is not compatible with your custom item.
+Due to the virtualization mechanism of the RadListView control, the default cell of the control is compatible with all columns. When the control is scrolled, the default cell could override the custom one. To apply the custom cell when the control is scrolled is necessary to create another `DetailListViewDataCellElement` which is not compatible with your custom item.
 
 <snippet id='listview-listviewcustomitems-defaultcell-cs' />
 <snippet id='listview-listviewcustomitems-defaultcell-vb' />
 
 
 
-Finally, we should handle the __CellCreating__ event and substitute the default cell element with our own or return the default cell for the other columns:
+Finally, handle the `CellCreating` event. Replace the default cell element with the custom cell, or return the default cell for the other columns:
 
 <snippet id='listview-listviewcustomitems-replacecell-cs' />
 <snippet id='listview-listviewcustomitems-replacecell-vb' />
 
+## See Also
 
-
+* [RadListView view types]({%slug winforms/listview/views%})
+* [RadListView developer-focused examples]({%slug winforms/listview/developer-focused-examples%})

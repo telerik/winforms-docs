@@ -1,7 +1,7 @@
 ---
 title: GridViewHyperlinkColumn
 page_title: GridViewHyperlinkColumn - WinForms GridView Control
-description: GridViewHyperlinkColumn allows WinForms GridView to display, format, edit and open hyperlinks as well as run executable files.
+description: GridViewHyperlinkColumn displays, formats, edits, and securely opens hyperlinks in WinForms GridView, with validation and customizable navigation events.
 components: ["gridview"]
 slug: winforms/gridview/columns/column-types/gridviewhyperlinkcolumn
 tags: gridviewhyperlinkcolumn
@@ -12,7 +12,7 @@ previous_url: gridview-columns-gridviewhyperlinkcolumn
 
 # GridViewHyperlinkColumn
 
-__GridViewHyperlinkColumn__ allows __RadGridView__ to display, format, edit and open hyperlinks as well as run executable files. The default editor of the column is __RadTextBoxEditor__.
+__GridViewHyperlinkColumn__ allows __RadGridView__ to display, format, edit, and open hyperlinks. Default navigation requires both link-format validation and an absolute `http`, `https`, or `mailto` URI. Executables, file paths, and other schemes are not opened automatically. The default editor of the column is __RadTextBoxEditor__.
 
 Here is how to create and populate __GridViewHyperlinkColumn__:
 
@@ -23,7 +23,7 @@ Here is how to create and populate __GridViewHyperlinkColumn__:
 
 ## Behavior customization
 
-You can choose the action to open hyperlink or run executable using the __HyperlinkOpenAction__ property of the column. It is an enumeration with the following members:
+You can choose the mouse action that requests hyperlink navigation using the `HyperlinkOpenAction` property of the column. This setting does not bypass destination validation. It is an enumeration with the following members:
 
 * __SingleClick:__ opens the hyperlink on single mouse click
 
@@ -64,12 +64,33 @@ Here are the __GridViewHyperlinkColumn__ specific events:
 
 * __HyperlinkOpened:__ event which is raised after opening the link.
 
+`HyperlinkOpeningEventArgs.IsTrustedUrl` is initialized from `HyperlinkHelper.ValidateLinkPattern` and `HyperlinkHelper.ValidateLinkScheme`. Set it to `true` only after checking `e.Hyperlink` against your application's approved destinations. Set `e.Cancel` to `true` to stop the request before the shared `HyperlinkHelper.HyperlinkClicked` event is raised. The shared handler can approve an untrusted request or suppress default navigation with `Handled`.
+
+__Approving a Specific Application Link__
+
+```C#
+this.radGridView1.HyperlinkOpening += (sender, e) =>
+{
+	if (string.Equals(e.Hyperlink, "contoso-help://help/start",
+		System.StringComparison.Ordinal))
+	{
+		e.IsTrustedUrl = true;
+	}
+};
+```
+
+This example permits only the exact application-controlled destination. Ensure that its registered protocol handler is trusted. Other requests keep their default trust state. A blocked or canceled request does not mark the cell visited and does not raise `HyperlinkOpened`. For both validation checks and the default scheme allowlist, see [shared hyperlink validation]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#shared-hyperlink-validation). For a cross-control approval example, see [handling links across controls]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#handling-links-across-controls).
+
+>important Hyperlink cells no longer automatically launch executables, file/UNC paths, FTP URLs, OneNote links, or custom protocols. Applications that previously relied on this behavior must explicitly handle or approve the destination. `HyperlinkOpenAction` controls the click gesture, not permission to open the target.
+
 The following example demonstrates how to replace the default **GridViewTextBoxColumn** with a **GridViewHyperlinkColumn** which stores emails. When an email hyperlink is clicked, a mail message is opened in the default Mail application:
 
 <snippet id='gridview-gridviewhyperlinkcolumn1-emailcolumn-cs' />
 <snippet id='gridview-gridviewhyperlinkcolumn1-emailcolumn-vb' />
 
-# See Also
+## See Also
+
+* [Shared Hyperlink Validation]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#shared-hyperlink-validation)
 
 * [GridViewBrowseColumn]({%slug winforms/gridview/columns/column-types/gridviewbrowsecolumn%})
 

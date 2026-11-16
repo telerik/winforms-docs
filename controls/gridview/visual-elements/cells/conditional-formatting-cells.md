@@ -59,7 +59,7 @@ The example below detects when a value in the second column `UnitPrice` has a va
 
 ## Expression-based formatting objects
 
-The expression-based formatting objects apply to the cells/rows according to the defined __Expression__. It provides high flexibility to the formatting mechanism. The __Expression__ could refer to data from more than one column. Its result should be Boolean.
+The expression-based formatting objects apply to the cells/rows according to the defined __Expression__. It provides high flexibility to the formatting mechanism. The __Expression__ could refer to data from more than one column. Its result should be Boolean. Function calls must be available in the active expression context; see [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%}) for the built-in functions and custom registration behavior.
 
 In order to validate an expression, it is suitable to use the [Expression editor]({%slug winforms/gridview/expression-editor%}).
 

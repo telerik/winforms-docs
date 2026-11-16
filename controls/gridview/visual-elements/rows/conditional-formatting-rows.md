@@ -12,45 +12,45 @@ previous_url: gridview-rows-conditional-formatting-rows
 
 # Conditional Formatting Rows
 
-Cells and rows can be styled based on data conditions using the __ConditionalFormattingObject__. Setup the condition in the constructor for the __ConditionalFormattingObject__. The constructor parameters are:
+In Progress® Telerik® UI for WinForms, you can use the `ConditionalFormattingObject` class to style cells and rows based on data conditions. Set a condition in its constructor. The constructor parameters are:
 
-* The name of the condition. 
+* The name of the condition.
 
-* A __ConditionTypes__ enumeration value: Equal, NotEqual, StartsWith, EndsWith, Contains, DoesNotContain, Greater, GreaterOrEqual, Less, LessOrEqual, Between, NotBetween.
+* A `ConditionTypes` enumeration value: `Equal`, `NotEqual`, `StartsWith`, `EndsWith`, `Contains`, `DoesNotContain`, `Greater`, `GreaterOrEqual`, `Less`, `LessOrEqual`, `Between`, or `NotBetween`.
 
 * A string for the first value used to test the condition.
 
 * A string for the second value used to test the condition.
 
-* An "ApplyToRow" boolean that if true allows you to format the entire row that the cell appears in.
+* An `ApplyToRow` Boolean that, when set to `true`, formats the entire row that contains the cell.
 
-The __ConditionalFormattingObject__ also contains formatting properties for the cell, row and text alignment. 
+The `ConditionalFormattingObject` also contains the following formatting properties for the cell, row, and text alignment:
 
-* __CellBackColor:__ Sets the background color for the cell.
+* `CellBackColor`: Sets the background color for the cell.
         
 
-* __CellForeColor:__ Sets the cell text font color.
+* `CellForeColor`: Sets the cell text font color.
         
 
-* __CellFont:__ Sets the cell text font.
+* `CellFont`: Sets the cell text font.
         
 
-* __RowBackColor:__ Sets the background color for the entire row that the cell appears in.
+* `RowBackColor`: Sets the background color for the entire row that contains the cell.
         
 
-* __RowForeColor:__ Sets the cell text font color for the entire row that the cell appears in.
+* `RowForeColor`: Sets the cell text font color for the entire row that contains the cell.
         
 
-* __RowFont:__ Sets the cell text font for the entire row that the cell appears in.
+* `RowFont`: Sets the cell text font for the entire row that contains the cell.
         
 
-* __TextAlignment__ is a __ContentAlignment__ enumeration value that can be __TopLeft__, __TopCenter__, __TopRight__, __MiddleLeft__, __MiddleCenter__, __MiddleRight__, __BottomLeft__, __BottomCenter__ and __BottomRight__.
+* `TextAlignment` is a `ContentAlignment` enumeration value that can be `TopLeft`, `TopCenter`, `TopRight`, `MiddleLeft`, `MiddleCenter`, `MiddleRight`, `BottomLeft`, `BottomCenter`, or `BottomRight`.
 
 ## Conditional Formatting Rows
 
-This example looks for the same condition as the [cell formatting example]({%slug winforms/gridview/cells/conditional-formatting-cells%}). The difference is that the last parameter ("ApplyToRow") passed to the __ConditionalFormattingObject__ is set to *true*, allowing the __RowBackColor__ property to be recognized.
+This example uses the same condition as the [cell formatting example]({%slug winforms/gridview/cells/conditional-formatting-cells%}). Setting the `ApplyToRow` parameter to `true` lets the `RowBackColor` property format the entire row. The following image shows the matching rows highlighted.
 
-![WinForms RadGridView Conditional Formatting Rows](images/gridview-rows-conditional-formatting-rows001.png)
+![RadGridView with product rows highlighted by conditional formatting](images/gridview-rows-conditional-formatting-rows001.png)
 
 <snippet id='gridview-conditionalformattingrows-conditionalformatting-cs' />
 <snippet id='gridview-conditionalformattingrows-conditionalformatting-vb' />
@@ -58,16 +58,20 @@ This example looks for the same condition as the [cell formatting example]({%slu
 >caution The declarative nature of Conditional Formatting limits the situations in which it can be used. While the provided functionality covers most scenarios, there are situations in which you will need to use [events]({%slug winforms/gridview/rows/formatting-rows%}).
 >
 
-**RadGridView** provides a convenient form which the end user could use to create formatting objects. You can show the form by using the header cells' context menu. To access and customize the dialog, you can use the **ConditionalFormattingFormShown** event. :
+`RadGridView` includes a dialog that end users can use to create formatting objects. Open the dialog from a header cell's context menu. Handle the `ConditionalFormattingFormShown` event to access and customize the dialog.
 
-![WinForms RadGridView Condi Formatting Option](images/gridview-rows-conditional-formatting-rows002.png)
+The following image shows the **Conditional Formatting** option in the header cell's context menu.
+
+![RadGridView header-cell context menu with the Conditional Formatting option](images/gridview-rows-conditional-formatting-rows002.png)
+
+The following image shows the **Conditional Formatting Rules Manager**.
 
 ![WinForms RadGridView Conditional Formatting Rules Manager](images/gridview-rows-conditional-formatting-rows003.png)
 
-# See Also
+## See Also
 * [Adding and Inserting Rows]({%slug winforms/gridview/rows/adding-and-inserting-rows%})
 
-* [Creating custom rows]({%slug winforms/gridview/rows/creating-custom-rows%})
+* [Creating Custom Rows]({%slug winforms/gridview/rows/creating-custom-rows%})
 
 * [Drag and Drop]({%slug winforms/gridview/rows/drag-and-drop%})
 
@@ -80,4 +84,3 @@ This example looks for the same condition as the [cell formatting example]({%slu
 * [New Row]({%slug winforms/gridview/rows/new-row%})
 
 * [Painting Rows]({%slug winforms/gridview/rows/painting-rows%})
-
