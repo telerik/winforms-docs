@@ -11,25 +11,31 @@ res_type: kb
 ---
 
 ## Environment
- 
+
+The following table lists the product version and control covered by this article:
+
 |Product Version|Product|Author|
 |----|----|----|
 |2019.2.618|RadCheckedDropDownList for WinForms|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
- 
+
 
 ## Description
 
-**RadCheckedDropDownList** combines **RadDropDownList** and **RadAutoCompleteBox** in order to provide functionality to check multiple items in the drop down area and tokenize them in the text area. By design, the check boxes are shown only for the popup which is shown when the user clicks the arrow button.
+In Progress® Telerik® UI for WinForms, `RadCheckedDropDownList` combines `RadDropDownList` and `RadAutoCompleteBox`. It lets you check multiple items in the dropdown area and tokenize them in the text area. By design, checkboxes appear only in the popup that opens when you click the arrow button.
 
-![autocomplete-items-with-checkbox-in-checkeddropdownlist001](images/autocomplete-items-with-checkbox-in-checkeddropdownlist001.gif)
+![RadCheckedDropDownList popup opened by the arrow button, with checkboxes for multiple selection](images/autocomplete-items-with-checkbox-in-checkeddropdownlist001.gif)
 
-A common requirement is to show check boxes in the auto-complete pop up as well.
+A common requirement is to show checkboxes in the auto-complete popup as well.
 
-## Solution 
+## Solution
 
-It is necessary to create a derivative of **RadListVisualItem** and add a **RadCheckBoxElement** to its **Children** collection. Handle the RadCheckedAutoCompleteBoxListElement.**CreatingVisualItem** event to replace the default auto-complete items with the custom one. In order to keep the auto-complete pop up opened when an item is clicked in order to allow multiple items selection, it requires subscribing to the **PopupClosing** and **MouseDown** events of the **RadTextBoxAutoCompleteDropDown**. A sample approach is demonstrated in the following code snippet which result is illustrated in the following gif file:
+Create a class derived from `RadListVisualItem` and add a `RadCheckBoxElement` to its `Children` collection. Handle the `CreatingVisualItem` event of `RadCheckedAutoCompleteBoxListElement` to replace the default auto-complete items with the custom visual item. To keep the auto-complete popup open when you click an item and allow multiple selections, subscribe to the `PopupClosing`, `MouseDown`, and `PopupClosed` events of `RadTextBoxAutoCompleteDropDown`. The following code shows one approach:
 
-![autocomplete-items-with-checkbox-in-checkeddropdownlist002](images/autocomplete-items-with-checkbox-in-checkeddropdownlist002.gif)
+The following animation shows the result of this approach. The code below demonstrates one implementation.
+
+>caption Auto-complete items with checkboxes in the popup.
+
+![RadCheckedDropDownList auto-complete popup with checkboxes for item selection](images/autocomplete-items-with-checkbox-in-checkeddropdownlist002.gif)
 
 
 ````C#
@@ -196,13 +202,13 @@ It is necessary to create a derivative of **RadListVisualItem** and add a **RadC
     
 ````
 
->note This is just a sample approach and it may not cover all possible cases. Feel free to extend this solution in a way which suits your custom requirements best.
+>note This sample approach may not cover every case. Extend it to fit your requirements.
 
 
-# See Also
+## See Also
 
- * [CheckedDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist%})
- * [AutoComplete modes]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/autocompletemodes%}) 
+* [CheckedDropDownList]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist%})
+* [AutoComplete modes]({%slug winforms/dropdown-listcontrol-and-checkeddropdownlist/checkeddropdownlist/autocompletemodes%})
 
 
 
