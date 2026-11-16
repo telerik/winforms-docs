@@ -39,7 +39,7 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="CheckedListBox" href="slug:winforms/checkedlistbox"></IntroTableAnchor>
             <IntroTableAnchor title="DataEntry" href="slug:winforms/dataentry"></IntroTableAnchor>
             <IntroTableAnchor title="DataLayout" href="slug:winforms/datalayout/overview"></IntroTableAnchor>
-            <IntroTableAnchor title="GridView" href="slug:winforms/gridview" tag="updated"></IntroTableAnchor>
+            <IntroTableAnchor title="GridView" href="slug:winforms/gridview"></IntroTableAnchor>
             <IntroTableAnchor title="ListControl" href="slug:winforms/dropdown-listcontrol-and-checkeddropdownlist/listcontrol"></IntroTableAnchor>
             <IntroTableAnchor title="ListView" href="slug:winforms/listview"></IntroTableAnchor>
             <IntroTableAnchor title="PivotGrid" href="slug:winforms/pivotgrid"></IntroTableAnchor>
@@ -77,11 +77,12 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="Buttons" href="slug:winforms/buttons/button"></IntroTableAnchor>
             <IntroTableAnchor title="Carousel" href="slug:winforms/carousel"></IntroTableAnchor>
             <IntroTableAnchor title="Chat UI" href="slug:winforms/chat/overview"></IntroTableAnchor>
+            <IntroTableAnchor title="InlineAIAssistant" href="slug:inlineaiassistant-overview" tag="new"></IntroTableAnchor>
             <IntroTableAnchor title="Label" href="slug:winforms/panels-and-labels/label"></IntroTableAnchor>
             <IntroTableAnchor title="ProgressBar" href="slug:winforms/track-and-status-controls/progressbar"></IntroTableAnchor>
             <IntroTableAnchor title="Rating" href="slug:winforms/track-and-status-controls/rating"></IntroTableAnchor>
             <IntroTableAnchor title="Rotator" href="slug:winforms/rotator"></IntroTableAnchor>
-			<IntroTableAnchor title="SmartPasteButton" href="slug:smartpastebutton-overview" tag="new"></IntroTableAnchor>
+			<IntroTableAnchor title="SmartPasteButton" href="slug:smartpastebutton-overview"></IntroTableAnchor>
             <IntroTableAnchor title="SpeechToTextButton" href="slug:speechtotextbutton-overview"></IntroTableAnchor>
             <IntroTableAnchor title="StepProgressBar" href="slug:stepprogressbar-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TrackBar" href="slug:winforms/track-and-status-controls/trackbar"></IntroTableAnchor>
@@ -138,7 +139,7 @@ The control catalog is grouped by common application scenarios. Start with the c
             <IntroTableAnchor title="MultiColumnComboBox" href="slug:winforms/multicolumncombobox"></IntroTableAnchor>
             <IntroTableAnchor title="PopupEditor" href="slug:winforms/editors/popupeditor"></IntroTableAnchor>
             <IntroTableAnchor title="SpinEditor" href="slug:winforms/editors/spineditor"></IntroTableAnchor>
-            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview" tag="updated"></IntroTableAnchor>
+            <IntroTableAnchor title="Spreadsheet" href="slug:radspreadsheet-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TextBox" href="slug:winforms/editors/textbox"></IntroTableAnchor>
             <IntroTableAnchor title="TimeOnlyPicker (.NET Only)" href="slug:editors-timeonlypicker-overview"></IntroTableAnchor>
             <IntroTableAnchor title="TimePicker" href="slug:winforms/editors/timepicker"></IntroTableAnchor>

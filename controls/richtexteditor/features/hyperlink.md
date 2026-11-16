@@ -103,7 +103,11 @@ Set `HyperlinkToolTipFormatString` on `RadRichTextEditor` to change the format f
 
 When a user clicks a hyperlink, `RadRichTextEditor` raises the `HyperlinkClicked` event. The sender is the clicked document element, such as a `Span`, `Image`, or `InlineUIContainer`. `HyperlinkClickedEventArgs` lets you cancel or replace the navigation action. Use the event to validate the hyperlink and prevent navigation to an unsecured address or the start of a local process.
 
-Starting with 2024 Q3 (2024.3.924), hyperlinks open only valid and trusted addresses by default. To cancel navigation, set `Handled` to `true` or `IsTrustedUrl` to `false` on `HyperlinkClickedEventArgs`.
+Since 2024 Q3 (2024.3.924), external-link navigation validates the destination before opening it. External links must pass both `HyperlinkHelper.ValidateLinkPattern` and `HyperlinkHelper.ValidateLinkScheme`; the default schemes are absolute `http`, `https`, and `mailto`. This external-link validation predates the shared hyperlink event integration.
+
+`Telerik.WinForms.Documents.Model.HyperlinkClickedEventArgs` inherits `URL`, `Handled`, and `IsTrustedUrl` from `Telerik.WinControls.Hyperlinks.HyperlinkClickedEventArgs` and retains `HyperlinkTarget`. Set `IsTrustedUrl` to `true` only after applying application-specific destination checks. Set `Handled` to `true` to suppress or replace navigation.
+
+After the local event, an unhandled request reaches `HyperlinkHelper.HyperlinkClicked`, where a global policy can also change the trust state. See [shared hyperlink validation]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#shared-hyperlink-validation) for both checks and [handling links across controls]({%slug winforms/telerik-presentation-framework/html-like-text-formatting%}#handling-links-across-controls) for a global approval example.
 
 Here is an example of using the `HyperlinkClicked` event prompting that the clicked hyperlink might be unsafe and allows to cancel the navigation process upon receiving the end user confirmation:
 

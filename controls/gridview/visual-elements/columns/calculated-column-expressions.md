@@ -57,7 +57,7 @@ __Example 3:__
 
 ## Custom functions
 
-The following article shows how you can create custom functions: [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%}).
+Expressions can call only built-in functions or methods registered with the active expression context. For the built-in function list and migration details, see [Functions Reference]({%slug winforms/gridview/expression-editor/functions-reference%}) and [Customizing RadExpressionEditor]({%slug winforms/gridview/expression-editor/customizing-radexpressioneditor%}).
 
 ## Advanced usage
 

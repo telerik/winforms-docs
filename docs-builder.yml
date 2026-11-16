@@ -873,7 +873,7 @@ meta:
     position: 9
   controls/layoutcontrol:
     title: LayoutControl
-    position: 270
+    position: 271
   controls/image-editor/features:
     title: Features
     position: 3
@@ -1750,6 +1750,12 @@ meta:
   getting-started/explore-control-features:
     title: Explore Tools and Features
     position: 2
+  controls/inlineaiassistant:
+    title: Inline AI Assistant
+    position: 270
+  controls/inlineaiassistant/features:
+    title: Features
+    position: 99
 
 redirects: 
 -
