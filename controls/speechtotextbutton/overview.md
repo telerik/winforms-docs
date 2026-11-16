@@ -12,33 +12,35 @@ CTAControlName: SpeechToTextButton
 
 # WinForms SpeechToTextButton Overview
 
-The **RadSpeechToTextButton** is a UI component that enables users to convert spoken words into text using online speech recognition services. Speech-to-text functionality enhances user experience by providing hands-free data entry, accessibility enhancements, and enabling natural interaction via voice command with applications. 
+The `RadSpeechToTextButton` control in Progress® Telerik® UI for WinForms lets users enter text by speaking.
 
 When the user clicks the button, the control activates a speech recognition service, listens for voice input, and transcribes the recognized speech into text. The recognized text can then be displayed in a text field, processed by your application logic, or used to trigger specific actions based on voice commands.
 
-![SpeechToTextButton Overview](images/speechtotextbutton-overview.png)
+The image shows the SpeechToTextButton with a prompt to turn voice into text.
+
+![SpeechToTextButton with a microphone icon and a prompt to turn voice into text](images/speechtotextbutton-overview.png)
 
 ## Prerequisites
 
 To use the SpeechToTextButton in your application, ensure the following requirements are met:
 
-* **Telerik UI for WinForms**: A valid license and installation of Telerik UI for WinForms.
-* **Internet Connection**: Active internet connectivity is required as the control uses online speech recognition services.
-* **Microphone Access**: A functioning microphone or audio input device, with appropriate permissions granted to the application.
-* **Speech Recognition Service**: By default, the control uses  **Microsoft.Web.WebView2 Services**. You need to configure the service endpoint or implement a custom recognizer for other services.
+* **Telerik UI for WinForms**: Install the suite and use a valid license.
+* **Internet connection**: Provide an active internet connection when using the default online speech recognizer.
+* **Microphone access**: Provide the application permission to use a functioning microphone or other audio input device.
+* **Default speech recognizer**: The default recognizer uses the Web Speech API through WebView2. For this recognizer, install the `Microsoft.Web.WebView2` NuGet package and ensure the WebView2 Runtime is installed on the target machine. Alternatively, implement a custom recognizer to use another service.
 
 ## Key Functionality and Features
 
-The RadSpeechToTextButton provides the following functionality and features:
+The `RadSpeechToTextButton` provides these features:
 
-* **[Speech Recognition]({%slug speechtotextbutton-getting-started%})**: Converts spoken words to text using the WebView2 Speech API.
+* **[Speech Recognition]({%slug speechtotextbutton-getting-started%})**: Converts spoken words to text using the Web Speech API through WebView2.
 * **[Continuous Recognition]({%slug speechtotextbutton-getting-started%}#continuous-vs-one-time-recognition)**: Supports continuous listening mode for extended dictation sessions or one-time recognition for short commands. 
 * **[Real-time Transcription]({%slug speechtotextbutton-getting-started%})**: Delivers recognition results as the user speaks.
-* **[State Management]({%slug speechtotextbutton-states%})**: Provides visual feedback and programmatic access to the recognizer's current state.
-* **[Event Handling]({%slug speechtotextbutton-events%})**: Offers a comprehensive event model for capturing recognized text and tracking state changes.
-* **[Language Configuration]({%slug speechtotextbutton-getting-started%}#language-support)**: The SpeechToTextButton allows you to set the language for speech recognition, ensuring accurate transcription of spoken words into text.
-* **[Custom Speech Recognizer]({%slug speechtotextbutton-custom-recognizer%})**: Allows integration with third-party speech recognition services by implementing a custom recognizer interface.
-* **[Styling and Appearance]({%slug speechtotextbutton-appearance%})**: Full customization support through the Telerik theming system, allowing you to adjust colors, borders, and visual properties.
+* **[State Management]({%slug speechtotextbutton-states%})**: Provides visual feedback and access to the recognizer's current state.
+* **[Event Handling]({%slug speechtotextbutton-events%})**: Provides events for capturing recognized text and tracking state changes.
+* **[Language Configuration]({%slug speechtotextbutton-getting-started%}#language-support)**: Lets you set the language used for speech recognition.
+* **[Custom Speech Recognizer]({%slug speechtotextbutton-custom-recognizer%})**: Integrates third-party speech recognition services through a custom recognizer.
+* **[Styling and Appearance]({%slug speechtotextbutton-appearance%})**: Lets you customize visual elements and use appearance options inherited from `RadButton`.
 
 ## Next Steps
 
@@ -62,4 +64,3 @@ The RadSpeechToTextButton provides the following functionality and features:
 * [Telerik UI for WinForms Code Library](https://www.telerik.com/support/code-library/winforms)
 * [Telerik UI for WinForms Support](https://www.telerik.com/support/winforms)
 * [What’s New in Telerik UI for WinForms](https://www.telerik.com/support/whats-new/winforms)
-
